@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>My Website</title>
-</head>
-<body>
-    <h1>Welcome to My Website</h1>
-    <p>This is my first GitHub Pages site!</p>
-</body>
-</html>
-
+<title>Say it to me!</title>
+<link rel="stylesheet" href="http://cheeaun.github.com/cacss/ca.min.css">
+<style>
+body{
+	text-align: center;
+}
+input, button{
+	font-size: 2em;
+	width: 70%;
+	margin: 0 0 1em;
+	padding: .2em;
+}
+</style>
+<h1>Say it to me!</h1>
+<form id="say-form">
+	<input value="Awesome" id="say-text">
+	<button id="say-button">Say!</button>
+</form>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script>
+var audioTagSupport = !!(document.createElement('audio').canPlayType);
+$('#say-form').submit(function(){
+	if (!audioTagSupport) return false;
+	var text = $.trim($('#say-text').val());
+	if (text == '') return false;
+	var audio = document.createElement('audio');
+	audio.setAttribute('src', 'http://translate.google.com/translate_tts?tl=en&q=' + encodeURIComponent(text));
+	audio.load();
+	audio.play();
+	return false;
+});
