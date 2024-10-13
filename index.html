@@ -21,6 +21,7 @@ input, button{
 var audioTagSupport = !!(document.createElement('audio').canPlayType);
 	$(document).ready(function(){
 $('#say-form').submit(function(){
+	console.log("Form submitted!");
 	if (!audioTagSupport) return false;
 	var text = $.trim($('#say-text').val());
 	if (text == '') return false;
