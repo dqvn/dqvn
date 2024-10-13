@@ -19,6 +19,7 @@ input, button{
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script>
 var audioTagSupport = !!(document.createElement('audio').canPlayType);
+	$(document).ready(function(){
 $('#say-form').submit(function(){
 	if (!audioTagSupport) return false;
 	var text = $.trim($('#say-text').val());
@@ -31,3 +32,4 @@ $('#say-form').submit(function(){
 	audio.play();
 	return false;
 });
+	});
