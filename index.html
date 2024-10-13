@@ -24,7 +24,9 @@ $('#say-form').submit(function(){
 	var text = $.trim($('#say-text').val());
 	if (text == '') return false;
 	var audio = document.createElement('audio');
-	audio.setAttribute('src', 'http://translate.google.com/translate_tts?tl=en&q=' + encodeURIComponent(text));
+	// https://translate.google.com/translate_tts?&client=tw-ob&tl=nl&q=mijn
+	// https://translate.google.com/translate_tts?tl=en&q=
+	audio.setAttribute('src', 'https://translate.google.com/translate_tts?&client=tw-ob&tl=nl&q=' + encodeURIComponent(text));
 	audio.load();
 	audio.play();
 	return false;
