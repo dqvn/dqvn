@@ -23,7 +23,7 @@ loadJsonData('https://dqvn.github.io/dqvn/ch03.json', function(jsonData) {
     row.innerHTML = `
     <td>${index+1}</td>
     <td><span class="dutch-word" data-index="${index}" onclick="speakText('${word.dutch}')">${word.dutch}</span></td>
-    <td>${word.english}</td>
+    <td><span onclick="speakEngText('${word.english}')">${word.english}</span></td>
     <td>${word.vietnamese}</td>
   `;
     tableBody.appendChild(row);
@@ -54,6 +54,12 @@ function speakText(text) {
   } else {
     document.getElementById('tts-name').innerHTML = 'Mobile TTS'; //JSON.stringify(window.speechSynthesis.getVoices());
   }
+  window.speechSynthesis.speak(speech);
+}
+
+function speakEngText(text) {
+  speech.text = text;
+  speech.lang = 'en-EN';
   window.speechSynthesis.speak(speech);
 }
 
