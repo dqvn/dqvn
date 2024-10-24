@@ -23,21 +23,11 @@ loadJsonData('https://dqvn.github.io/dqvn/ch03.json', function(jsonData) {
   jsonData.forEach((word, index) => {
     const row = document.createElement('tr');
     row.innerHTML = `
-    <td><span class="dutch-word" data-index="${index}">${word.dutch}</span></td>
+    <td><span class="dutch-word" data-index="${index}" onclick="speakText('${word.dutch}')">${word.dutch}</span></td>
     <td>${word.english}</td>
     <td>${word.vietnamese}</td>
   `;
     tableBody.appendChild(row);
-  });
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    const dutchWords = document.querySelectorAll('.dutch-word');
-    dutchWords.forEach(word => {
-      word.addEventListener('click', function() {
-        const textToSpeak = this.textContent;
-        speakText(textToSpeak);
-      });
-    });
   });
 });
 
