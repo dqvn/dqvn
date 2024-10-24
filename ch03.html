@@ -193,6 +193,16 @@
     </table>
 
     <script>
+
+        const synthesis = window.speechSynthesis;
+        let voices = [];
+
+        // Get the list of voices
+        synthesis.getVoices().forEach(voice => {
+            voices.push(voice);
+            console.log(voice);
+        });
+
         function speakText(text) {
             const speech = new SpeechSynthesisUtterance();
             speech.text = text;
