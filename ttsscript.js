@@ -1,5 +1,16 @@
-// Call the function to load the JSON data
 var jsonData = {};
+
+// Find the "Google Nederlands" voice for nl-NL
+const googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
+  return voice.name === 'Google Nederlands' && voice.lang === 'nl-NL';
+});
+
+const speech = new SpeechSynthesisUtterance();
+speech.lang = 'nl-NL';
+speech.volume = 1;
+speech.rate = 0.8;
+speech.pitch = 1;
+speech.voice = googleNederlandsVoice; // Set the voice
 
 // create a table body element
 const tableBody = document.getElementById('word-list-body');
@@ -18,6 +29,16 @@ loadJsonData('https://dqvn.github.io/dqvn/ch03.json', function(jsonData) {
   `;
     tableBody.appendChild(row);
   });
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const dutchWords = document.querySelectorAll('.dutch-word');
+    dutchWords.forEach(word => {
+      word.addEventListener('click', function() {
+        const textToSpeak = this.textContent;
+        speakText(textToSpeak);
+      });
+    });
+  });
 });
 
 // add event listener to each Dutch word span
@@ -30,10 +51,9 @@ document.querySelectorAll('.dutch-word').forEach((span) => {
 });
 
 // function to speak the word using Web SpeechSynthesis API
-function speakWord(word) {
-  const utterance = new SpeechSynthesisUtterance(word);
-  utterance.lang = 'nl-NL'; // set language to Dutch
-  speechSynthesis.speak(utterance);
+function speakText(text) {
+  speech.text = text;
+  window.speechSynthesis.speak(speech);
 }
 
 function loadJsonData(filename, callback) {
