@@ -1,4 +1,5 @@
 var jsonData = {};
+var googleNederlandsVoice;
 
 const speech = new SpeechSynthesisUtterance();
 speech.lang = 'nl-NL';
@@ -31,10 +32,12 @@ loadJsonData('https://dqvn.github.io/dqvn/ch03.json', function(jsonData) {
 function speakText(text) {
 
   // Find the "Google Nederlands" voice for nl-NL
-  var googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
-    return voice.name === 'Google Nederlands' && voice.lang === 'nl-NL';
-    //return (voice.name === 'Google Nederlands' && voice.lang === 'nl-NL') || voice.lang === 'nl-NL';
-  });
+  if (!googleNederlandsVoice) {
+    googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
+      return voice.name === 'Google Nederlands' && voice.lang === 'nl-NL';
+      //return (voice.name === 'Google Nederlands' && voice.lang === 'nl-NL') || voice.lang === 'nl-NL';
+    });
+  }
 
   if (!googleNederlandsVoice) {
     googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
@@ -42,10 +45,7 @@ function speakText(text) {
     });
   }
 
-  // console.log(googleNederlandsVoice);
-  // if (googleNederlandsVoice!== null) {
-  //   alert(JSON.stringify(googleNederlandsVoice, null, 2));
-  // }
+  console.log(googleNederlandsVoice);
 
   speech.text = text;
   if (googleNederlandsVoice) {
