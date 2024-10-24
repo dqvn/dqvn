@@ -48,7 +48,9 @@ function speakText(text) {
   // }
 
   speech.text = text;
-  speech.voice = googleNederlandsVoice // Set the voice
+  if (googleNederlandsVoice) {
+    speech.voice = googleNederlandsVoice // Set the voice
+  }
   window.speechSynthesis.speak(speech);
 }
 
