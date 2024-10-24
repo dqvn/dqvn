@@ -37,6 +37,7 @@ function speakText(text) {
   });
 
   console.log(googleNederlandsVoice);
+  alert(googleNederlandsVoice);
 
   speech.text = text;
   speech.voice = googleNederlandsVoice // Set the voice
