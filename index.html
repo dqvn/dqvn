@@ -1,32 +1,24 @@
 <!DOCTYPE html>
-<title>Say it to me!</title>
-<link rel="stylesheet" href="http://cheeaun.github.com/cacss/ca.min.css">
-<style>
-body{
-	text-align: center;
-}
-input, button{
-	font-size: 2em;
-	width: 70%;
-	margin: 0 0 1em;
-	padding: .2em;
-}
-</style>
-<h1>Say it to me!</h1>
-<form id="say-form">
-	<input value="Awesome" id="say-text">
-	<button id="say-button">Say!</button>
-</form>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script>
-var audioTagSupport = !!(document.createElement('audio').canPlayType);
-$('#say-form').submit(function(){
-	if (!audioTagSupport) return false;
-	var text = $.trim($('#say-text').val());
-	if (text == '') return false;
-	var audio = document.createElement('audio');
-	audio.setAttribute('src', 'http://translate.google.com/translate_tts?tl=en&q=' + encodeURIComponent(text));
-	audio.load();
-	audio.play();
-	return false;
-});
+<html>
+<head>
+    <title>Text to Speech Demo</title>
+</head>
+<body>
+    <h2>Text to Speech Demo</h2>
+    <input type="text" id="text-to-speak" placeholder="Enter text to speak">
+    <button onclick="speakText()">Speak</button>
+
+    <script>
+        function speakText() {
+            const text = document.getElementById("text-to-speak").value;
+            const speech = new SpeechSynthesisUtterance();
+            speech.text = text;
+            speech.lang = 'en-US'; // Language set to US English
+            speech.volume = 1; // Volume (0.0 to 1.0)
+            speech.rate = 1; // Speed (0.5 to 2.0)
+            speech.pitch = 1; // Pitch (0.0 to 2.0)
+            window.speechSynthesis.speak(speech);
+        }
+    </script>
+</body>
+</html>
