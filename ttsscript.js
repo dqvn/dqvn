@@ -36,7 +36,7 @@ function speakText(text) {
     return (voice.name === 'Google Nederlands' && voice.lang === 'nl-NL') || voice.lang === 'nl-NL';
   });
 
-  console.log(googleNederlandsVoice.name);
+  console.log(googleNederlandsVoice);
   alert(googleNederlandsVoice.name);
 
   speech.text = text;
