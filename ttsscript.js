@@ -1,10 +1,5 @@
 var jsonData = {};
 
-// Find the "Google Nederlands" voice for nl-NL
-const googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
-  return voice.name === 'Google Nederlands' && voice.lang === 'nl-NL';
-});
-
 const speech = new SpeechSynthesisUtterance();
 speech.lang = 'nl-NL';
 speech.volume = 1;
@@ -42,8 +37,18 @@ document.querySelectorAll('.dutch-word').forEach((span) => {
 
 // function to speak the word using Web SpeechSynthesis API
 function speakText(text) {
+
+  // Find the "Google Nederlands" voice for nl-NL
+  // const googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
+  //   return voice.name === 'Google Nederlands' && voice.lang === 'nl-NL';
+  // });
+
+  console.log(googleNederlandsVoice);
+
   speech.text = text;
-  speech.voice = googleNederlandsVoice; // Set the voice
+  speech.voice = window.speechSynthesis.getVoices().find(voice => {
+    return voice.name === 'Google Nederlands' && voice.lang === 'nl-NL';
+  }); // Set the voice
   window.speechSynthesis.speak(speech);
 }
 
