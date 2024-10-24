@@ -51,6 +51,8 @@ function speakText(text) {
   if (googleNederlandsVoice) {
     speech.voice = googleNederlandsVoice; // Set the voice
     document.getElementById('tts-name').innerHTML = googleNederlandsVoice.name; // show name of TTS
+  } else {
+    document.getElementById('tts-name').innerHTML = JSON.stringify(window.speechSynthesis.getVoices(), null, 2);
   }
   window.speechSynthesis.speak(speech);
 }
