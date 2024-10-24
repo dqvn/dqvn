@@ -1,8 +1,10 @@
 var jsonData = {};
 var googleNederlandsVoice;
+const TTSName = 'Google Nederlands';
+const TTSLang = 'nl-NL';
 
 const speech = new SpeechSynthesisUtterance();
-speech.lang = 'nl-NL';
+speech.lang = TTSLang;
 speech.volume = 1;
 speech.rate = 0.8;
 speech.pitch = 1;
@@ -30,22 +32,20 @@ loadJsonData('https://dqvn.github.io/dqvn/ch03.json', function(jsonData) {
 
 // function to speak the word using Web SpeechSynthesis API
 function speakText(text) {
-
   // Find the "Google Nederlands" voice for nl-NL
   if (!googleNederlandsVoice) {
     googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
-      return voice.name === 'Google Nederlands' && voice.lang === 'nl-NL';
-      //return (voice.name === 'Google Nederlands' && voice.lang === 'nl-NL') || voice.lang === 'nl-NL';
+      return voice.name === TTSName && voice.lang === TTSLang;
     });
   }
 
   if (!googleNederlandsVoice) {
     googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
-      return voice.lang === 'nl-NL';
+      return voice.lang === TTSLang;
     });
   }
 
-  console.log(googleNederlandsVoice);
+  // console.log(googleNederlandsVoice);
 
   speech.text = text;
   if (googleNederlandsVoice) {
