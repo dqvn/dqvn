@@ -27,29 +27,19 @@ loadJsonData('https://dqvn.github.io/dqvn/ch03.json', function(jsonData) {
   });
 });
 
-// add event listener to each Dutch word span
-document.querySelectorAll('.dutch-word').forEach((span) => {
-  span.addEventListener('click', (e) => {
-    const index = e.target.dataset.index;
-    const word = jsonData[index].dutch;
-    speakWord(word);
-  });
-});
-
 // function to speak the word using Web SpeechSynthesis API
 function speakText(text) {
 
   // Find the "Google Nederlands" voice for nl-NL
-  // const googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
-  //   return voice.name === 'Google Nederlands' && voice.lang === 'nl-NL';
-  // });
+  const googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
+    //return voice.name === 'Google Nederlands' && voice.lang === 'nl-NL';
+    return (voice.name === 'Google Nederlands' && voice.lang === 'nl-NL') || voice.lang === 'nl-NL';
+  });
 
-  // console.log(googleNederlandsVoice);
+  console.log(googleNederlandsVoice);
 
   speech.text = text;
-  speech.voice = window.speechSynthesis.getVoices().find(voice => {
-    return voice.name === 'Google Nederlands' && voice.lang === 'nl-NL';
-  }); // Set the voice
+  speech.voice = googleNederlandsVoice // Set the voice
   window.speechSynthesis.speak(speech);
 }
 
