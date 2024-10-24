@@ -1,0 +1,46 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.dutch-word {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00698f;
+    /* blue-ish color */
+    cursor: pointer;
+    /* change cursor to a hand pointer on hover */
+    text-decoration: none;
+    border-bottom: 1px dotted #ccc;
+    /* dotted underline on hover */
+    transition: color 0.2s ease-in-out;
+    /* smooth color transition */
+}
+
+.dutch-word:hover {
+    color: #003d5c;
+    /* darker blue-ish color on hover */
+    border-bottom: 1px solid #ccc;
+    /* solid underline on hover */
+}
+
+.dutch-word:focus {
+    outline: none;
+    /* remove default focus outline */
+    box-shadow: 0 0 5px #ccc;
+    /* add a soft box shadow on focus */
+}
+
+#tts-name::before {
+    content: "\f1e5";
+    /* Font Awesome speak icon */
+    font-family: "FontAwesome";
+    margin-right: 5px;
+}
