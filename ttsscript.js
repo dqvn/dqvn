@@ -43,7 +43,9 @@ function speakText(text) {
   }
 
   console.log(googleNederlandsVoice);
-  alert(googleNederlandsVoice.name);
+  if (googleNederlandsVoice!== null) {
+    alert(JSON.stringify(googleNederlandsVoice, null, 2));
+  }
 
   speech.text = text;
   speech.voice = googleNederlandsVoice // Set the voice
