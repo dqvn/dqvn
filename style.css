@@ -39,8 +39,6 @@ td {
 }
 
 #tts-name::before {
-    content: "\f1e5";
-    /* Font Awesome speak icon */
-    font-family: "FontAwesome";
+    content: "\1F50A"; /* Unicode speak icon */
     margin-right: 5px;
 }
