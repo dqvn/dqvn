@@ -42,10 +42,10 @@ function speakText(text) {
     });
   }
 
-  console.log(googleNederlandsVoice);
-  if (googleNederlandsVoice!== null) {
-    alert(JSON.stringify(googleNederlandsVoice, null, 2));
-  }
+  // console.log(googleNederlandsVoice);
+  // if (googleNederlandsVoice!== null) {
+  //   alert(JSON.stringify(googleNederlandsVoice, null, 2));
+  // }
 
   speech.text = text;
   speech.voice = googleNederlandsVoice // Set the voice
