@@ -5,10 +5,10 @@ var jsonData = {};
 const tableBody = document.getElementById('word-list-body');
 
 
-loadJsonData('words.json', function(jsonData) {
+loadJsonData('https://dqvn.github.io/dqvn/ch03.json', function(jsonData) {
   console.log(jsonData);
   
-// loop through the JSON data and create table rows
+  // loop through the JSON data and create table rows
   jsonData.forEach((word, index) => {
     const row = document.createElement('tr');
     row.innerHTML = `
@@ -19,9 +19,6 @@ loadJsonData('words.json', function(jsonData) {
     tableBody.appendChild(row);
   });
 });
-
-
-
 
 // add event listener to each Dutch word span
 document.querySelectorAll('.dutch-word').forEach((span) => {
