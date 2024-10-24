@@ -194,26 +194,23 @@
 
     <script>
 
-        const synthesis = window.speechSynthesis;
-        let voices = [];
-
-        // Get the list of voices
-        synthesis.getVoices().forEach(voice => {
-            voices.push(voice);
-            console.log(voice);
-        });
-
         function speakText(text) {
+            // Find the "Google Nederlands" voice for nl-NL
+            const googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
+                return voice.name === 'Google Nederlands' && voice.lang === 'nl-NL';
+            });
+
             const speech = new SpeechSynthesisUtterance();
             speech.text = text;
             speech.lang = 'nl-NL';
             speech.volume = 1;
             speech.rate = 0.8;
             speech.pitch = 1;
+            speech.voice = googleNederlandsVoice; // Set the voice
             window.speechSynthesis.speak(speech);
-            window.speechSynthesis.getVoices().forEach(voice => {
-                console.log(voice);
-            });
+            // window.speechSynthesis.getVoices().forEach(voice => {
+            //     //console.log(voice);
+            // });
         }
     </script>
 </body>
