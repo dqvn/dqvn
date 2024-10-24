@@ -52,7 +52,7 @@ function speakText(text) {
     speech.voice = googleNederlandsVoice; // Set the voice
     document.getElementById('tts-name').innerHTML = googleNederlandsVoice.name; // show name of TTS
   } else {
-    document.getElementById('tts-name').innerHTML = JSON.stringify(window.speechSynthesis.getVoices(), null, 2);
+    document.getElementById('tts-name').innerHTML = JSON.stringify(window.speechSynthesis.getVoices());
   }
   window.speechSynthesis.speak(speech);
 }
