@@ -39,9 +39,9 @@ document.querySelectorAll('.dutch-word').forEach((span) => {
 function speakText(text) {
 
   // Find the "Google Nederlands" voice for nl-NL
-  // const googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
-  //   return voice.name === 'Google Nederlands' && voice.lang === 'nl-NL';
-  // });
+  const googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
+    return voice.name === 'Google Nederlands' && voice.lang === 'nl-NL';
+  });
 
   console.log(googleNederlandsVoice);
 
