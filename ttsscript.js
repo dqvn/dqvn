@@ -10,7 +10,7 @@ speech.lang = 'nl-NL';
 speech.volume = 1;
 speech.rate = 0.8;
 speech.pitch = 1;
-speech.voice = googleNederlandsVoice; // Set the voice
+
 
 // create a table body element
 const tableBody = document.getElementById('word-list-body');
@@ -43,6 +43,7 @@ document.querySelectorAll('.dutch-word').forEach((span) => {
 // function to speak the word using Web SpeechSynthesis API
 function speakText(text) {
   speech.text = text;
+  speech.voice = googleNederlandsVoice; // Set the voice
   window.speechSynthesis.speak(speech);
 }
 
