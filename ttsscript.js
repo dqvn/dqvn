@@ -31,10 +31,16 @@ loadJsonData('https://dqvn.github.io/dqvn/ch03.json', function(jsonData) {
 function speakText(text) {
 
   // Find the "Google Nederlands" voice for nl-NL
-  const googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
-    //return voice.name === 'Google Nederlands' && voice.lang === 'nl-NL';
-    return (voice.name === 'Google Nederlands' && voice.lang === 'nl-NL') || voice.lang === 'nl-NL';
+  var googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
+    return voice.name === 'Google Nederlands' && voice.lang === 'nl-NL';
+    //return (voice.name === 'Google Nederlands' && voice.lang === 'nl-NL') || voice.lang === 'nl-NL';
   });
+
+  if (!googleNederlandsVoice) {
+    googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
+      return voice.lang === 'nl-NL';
+    });
+  }
 
   console.log(googleNederlandsVoice);
   alert(googleNederlandsVoice.name);
