@@ -39,11 +39,11 @@ document.querySelectorAll('.dutch-word').forEach((span) => {
 function speakText(text) {
 
   // Find the "Google Nederlands" voice for nl-NL
-  const googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
-    return voice.name === 'Google Nederlands' && voice.lang === 'nl-NL';
-  });
+  // const googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
+  //   return voice.name === 'Google Nederlands' && voice.lang === 'nl-NL';
+  // });
 
-  console.log(googleNederlandsVoice);
+  // console.log(googleNederlandsVoice);
 
   speech.text = text;
   speech.voice = window.speechSynthesis.getVoices().find(voice => {
