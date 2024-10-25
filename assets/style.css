@@ -232,3 +232,7 @@ td:last-child {
     height: 100vh;
     /* or any other height value */
 }
+
+#chapter {
+    color: white;
+}
