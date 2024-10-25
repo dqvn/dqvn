@@ -44,6 +44,7 @@ h1 {
     overflow-y: auto;
     height: 100vh;
     /* or any other height value */
+    overflow-x: hidden;
 }
 
 table {
@@ -131,17 +132,6 @@ td:last-child {
 }
 
 /* Left Menu */
-/* .left-menu {
-    float: left;
-    width: 160px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3px);
-    margin-left: 5px;
-} */
-
 .left-menu {
     float: left;
     width: 160px;
@@ -191,6 +181,7 @@ td:last-child {
     margin-left: 15px;
     border-collapse: collapse;
     font-size: 16px;
+    overflow-x: hidden; /* Add this to hide the horizontal scrollbar */
 }
 
 #word-list th {
