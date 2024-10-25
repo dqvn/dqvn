@@ -81,6 +81,7 @@ td:last-child {
     content: "\1F50A";
     /* Unicode speak icon */
     margin-right: 5px;
+    margin-left: 5px;
 }
 
 /* Left Menu */
