@@ -40,6 +40,12 @@ h1 {
     color: #00698f;
 }
 
+.table-container {
+    overflow-y: auto;
+    height: 100vh;
+    /* or any other height value */
+}
+
 table {
     border-collapse: collapse;
     width: 100%;
@@ -205,9 +211,12 @@ td:last-child {
 }
 
 #word-list thead {
+    position: sticky;
+    top: 0;
     background-color: #333;
+    border-bottom: 1px solid #ddd;
     color: #fff;
-}
+  }
 
 #word-list tbody tr:nth-child(even) {
     background-color: #f9f9f9;
@@ -225,12 +234,6 @@ td:last-child {
 
 .container {
     overflow-y: auto;
-}
-
-.table-container {
-    overflow-y: auto;
-    height: 100vh;
-    /* or any other height value */
 }
 
 #chapter {
