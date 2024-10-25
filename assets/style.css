@@ -123,8 +123,8 @@ td:last-child {
 /* Left Menu */
 .left-menu {
     float: left;
-    width: 150px;
-    padding: 15px;
+    width: 160px;
+    padding: 10px;
     /*background-color: #f0f0f0;*/
     border: 1px solid #ddd;
     border-radius: 5px;
