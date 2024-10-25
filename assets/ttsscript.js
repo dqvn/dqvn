@@ -31,7 +31,9 @@ fileNames.forEach((fileName) => {
   listItem.addEventListener("click", () => {
     // load new content when file is selected
     console.log("loadContent: " + fileName + ".json");
-    loadJsonData(fileName, reloadTable)
+    loadJsonData(fileName, reloadTable);
+    // update on going chapter
+    document.getElementById('chapter').innerHTML = "(You are learning on the " + fileName + ")";
   });
   fileList.appendChild(listItem);
 });
