@@ -4,7 +4,7 @@ const TTSName = 'Google Nederlands';
 const TTSLang = 'nl-NL';
 
 // assume you have an array of filenames
-const fileNames = ["ch03.json", "file2.json"];
+const fileNames = ["ch03", "file2"];
 
 const speech = new SpeechSynthesisUtterance();
 speech.lang = TTSLang;
