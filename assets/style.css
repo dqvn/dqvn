@@ -19,8 +19,8 @@ body {
 }
 
 header {
-    background-color: #f0f0f0;
-    /* Light gray background */
+    /*background-color: #f0f0f0;
+     Light gray background */
     padding: 20px;
     /* Add some padding */
     text-align: center;
@@ -31,7 +31,7 @@ header {
     /* Ensure padding doesn't increase element width */
     margin-bottom: 20px;
     /* Add some margin to separate the header from the next element */
-    backdrop-filter: blur(10px); /* Add this to blur the background image */
+    backdrop-filter: blur(3px);
 }
 
 h1 {
@@ -124,11 +124,11 @@ td:last-child {
     float: left;
     width: 150px;
     padding: 15px;
-    background-color: #f0f0f0;
+    /*background-color: #f0f0f0;*/
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px); /* Add this to blur the background image */
+    backdrop-filter: blur(3px);
 }
 
 .left-menu h4 {
