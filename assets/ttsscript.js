@@ -1,12 +1,10 @@
 const TTSName = 'Google Nederlands';
 const TTSLang = 'nl-NL';
 const TTSLangENG = 'en-US';
+const fileNames = ["ch01", "ch03", "ch02"];
 
 var jsonData = {};
 var googleNederlandsVoice;
-
-// assume you have an array of filenames
-const fileNames = ["ch01", "ch03"];
 
 const speech = new SpeechSynthesisUtterance();
 speech.lang = TTSLang;
@@ -23,6 +21,20 @@ speechENG.pitch = 1;
 // create a table body element
 const tableBody = document.getElementById('word-list-body');
 const hideMeaningCheckbox = document.getElementById('hide-meaning');
+
+// create file list
+const fileList = document.getElementById("file-list");
+fileNames.sort();
+fileNames.forEach((fileName) => {
+  const listItem = document.createElement("li");
+  listItem.textContent = fileName;
+  listItem.addEventListener("click", () => {
+    // load new content when file is selected
+    console.log("loadContent: " + fileName + ".json");
+    loadJsonData(fileName, reloadTable)
+  });
+  fileList.appendChild(listItem);
+});
 
 // init data
 loadJsonData('ch03', reloadTable);
@@ -59,19 +71,6 @@ function speakEngText(text) {
   speechENG.text = text;
   window.speechSynthesis.speak(speechENG);
 }
-
-// create file list
-const fileList = document.getElementById("file-list");
-fileNames.forEach((fileName) => {
-  const listItem = document.createElement("li");
-  listItem.textContent = fileName;
-  listItem.addEventListener("click", () => {
-    // load new content when file is selected
-    console.log("loadContent: " + fileName + ".json");
-    loadJsonData(fileName, reloadTable)
-  });
-  fileList.appendChild(listItem);
-});
 
 // read dutch words in json file
 function loadJsonData(filename, callback) {
