@@ -52,6 +52,20 @@ function speakEngText(text) {
   window.speechSynthesis.speak(speech);
 }
 
+// create file list
+const fileList = document.getElementById("file-list");
+fileNames.forEach((fileName) => {
+  const listItem = document.createElement("li");
+  listItem.textContent = fileName;
+  listItem.addEventListener("click", () => {
+    // load new content when file is selected
+    console.log("loadContent: " + fileName + ".json");
+    loadJsonData(fileName, reloadTable)
+  });
+  fileList.appendChild(listItem);
+});
+
+// read dutch words in json file
 function loadJsonData(filename, callback) {
   var xhr = new XMLHttpRequest();
   var filePath = filename + ".json";
@@ -67,32 +81,19 @@ function loadJsonData(filename, callback) {
   xhr.send();
 }
 
-// create file list
-const fileList = document.getElementById("file-list");
-fileNames.forEach((fileName) => {
-  const listItem = document.createElement("li");
-  listItem.textContent = fileName;
-  listItem.addEventListener("click", () => {
-    // load new content when file is selected
-    console.log("loadContent: " + fileName + ".json");
-    loadJsonData(fileName, reloadTable)
-  });
-  fileList.appendChild(listItem);
-});
-
-
-// function reloadTable(jsonData) {
-//   console.log(jsonData);
+// generate the table with jsonData
+function reloadTable(jsonData) {
+  console.log(jsonData);
   
-//   // loop through the JSON data and create table rows
-//   jsonData.forEach((word, index) => {
-//     const row = document.createElement('tr');
-//     row.innerHTML = `
-//     <td>${index+1}</td>
-//     <td><span class="dutch-word" data-index="${index}" onclick="speakText('${word.dutch}')">${word.dutch}</span></td>
-//     <td><span onclick="speakEngText('${word.english}')">${word.english}</span></td>
-//     <td>${word.vietnamese}</td>
-//   `;
-//     tableBody.appendChild(row);
-//   });
-// }
+  // loop through the JSON data and create table rows
+  jsonData.forEach((word, index) => {
+    const row = document.createElement('tr');
+    row.innerHTML = `
+    <td>${index+1}</td>
+    <td><span class="dutch-word" data-index="${index}" onclick="speakText('${word.dutch}')">${word.dutch}</span></td>
+    <td><span onclick="speakEngText('${word.english}')">${word.english}</span></td>
+    <td>${word.vietnamese}</td>
+  `;
+    tableBody.appendChild(row);
+  });
+}
