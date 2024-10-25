@@ -99,8 +99,8 @@ function reloadTable(jsonData) {
     const row = document.createElement('tr');
     row.innerHTML = `
     <td>${index + 1}</td>
-    <td><span class="dutch-word" data-index="${index}" onclick="speakText('${word.dutch}')">${word.dutch}</span></td>
-    <td><span class="hide-text" onclick="speakEngText('${word.english}')">${word.english}</span></td>
+    <td onclick="speakText('${word.dutch}')"><span class="dutch-word" data-index="${index}">${word.dutch}</span></td>
+    <td onclick="speakEngText('${word.english}')"><span class="hide-text">${word.english}</span></td>
     <td><span class="hide-text">${word.vietnamese}</span></td>
   `;
     tableBody.appendChild(row);
