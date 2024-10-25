@@ -1,11 +1,12 @@
-var jsonData = {};
-var googleNederlandsVoice;
 const TTSName = 'Google Nederlands';
 const TTSLang = 'nl-NL';
 const TTSLangENG = 'en-US';
 
+var jsonData = {};
+var googleNederlandsVoice;
+
 // assume you have an array of filenames
-const fileNames = ["ch01","ch03"];
+const fileNames = ["ch01", "ch03"];
 
 const speech = new SpeechSynthesisUtterance();
 speech.lang = TTSLang;
@@ -18,6 +19,25 @@ speechENG.lang = TTSLangENG;
 speechENG.volume = 1;
 speechENG.rate = 0.9;
 speechENG.pitch = 1;
+
+// Get the checkbox and the elements with the hide-text class
+const hideMeaningCheckbox = document.getElementById('hide-meaning');
+const hideTextElements = document.querySelectorAll('.hide-text');
+
+// Add an event listener to the checkbox
+hideMeaningCheckbox.addEventListener('change', () => {
+  // If the checkbox is checked, hide the text
+  if (hideMeaningCheckbox.checked) {
+    hideTextElements.forEach((element) => {
+      element.style.display = 'none';
+    });
+  } else {
+    // If the checkbox is not checked, show the text
+    hideTextElements.forEach((element) => {
+      element.style.display = 'initial';
+    });
+  }
+});
 
 
 // create a table body element
@@ -99,8 +119,8 @@ function reloadTable(jsonData) {
     row.innerHTML = `
     <td>${index+1}</td>
     <td><span class="dutch-word" data-index="${index}" onclick="speakText('${word.dutch}')">${word.dutch}</span></td>
-    <td><span onclick="speakEngText('${word.english}')">${word.english}</span></td>
-    <td>${word.vietnamese}</td>
+    <td><span class="hide-text" onclick="speakEngText('${word.english}')">${word.english}</span></td>
+    <td><span class="hide-text">${word.vietnamese}</span></td>
   `;
     tableBody.appendChild(row);
   });
