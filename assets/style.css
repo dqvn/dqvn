@@ -42,9 +42,9 @@ h1 {
 
 .table-container {
     overflow-y: auto;
-    height: 350px; /*100vh;*/
-    /* or any other height value */
-    overflow-y: hidden;
+    height: 550px; /*100vh;*/
+    /* or any other height value 
+    overflow-y: hidden;*/
 }
 
 table {
