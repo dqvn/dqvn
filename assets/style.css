@@ -43,7 +43,7 @@ h1 {
 .table-container {
     overflow-y: auto;
     height: 85vh;
-    width: 85%;
+    width: calc(100% - 250px);
 }
 
 table {
