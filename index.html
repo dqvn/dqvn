@@ -11,35 +11,39 @@
   <header>
     <h1>Learning Dutch words</h1>
   </header>
-  
-  <div class="left-menu">
-    <div class="spacer">
-      <h4>Setting:</h4>
-      <div id="tts-name"></div>
-      <!-- Add the checkbox -->
-      <input type="checkbox" id="hide-meaning" />
-      <label for="hide-meaning">Meaning</label>
+  <div class="container">
+    <div class="left-menu">
+      <div class="spacer">
+        <h4>Setting:</h4>
+        <div id="tts-name"></div>
+        <!-- Add the checkbox -->
+        <input type="checkbox" id="hide-meaning" />
+        <label for="hide-meaning">Meaning</label>
+      </div>
+      <div class="spacer">
+        <h4>Lession:</h4>
+        <ul id="file-list">
+          <!-- file list will be inserted here -->
+        </ul>
+      </div>
     </div>
-    <div class="spacer">
-      <h4>Lession:</h4>
-      <ul id="file-list">
-        <!-- file list will be inserted here -->
-      </ul>
+
+    <div class="table-container">
+      <table id="word-list">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Dutch</th>
+            <th>English</th>
+            <th>Vietnamese</th>
+          </tr>
+        </thead>
+        <tbody id="word-list-body">
+          <!-- data will be inserted here -->
+        </tbody>
+      </table>
     </div>
   </div>
-  <table id="word-list">
-    <thead>
-      <tr>
-        <th>No.</th>
-        <th>Dutch</th>
-        <th>English</th>
-        <th>Vietnamese</th>
-      </tr>
-    </thead>
-    <tbody id="word-list-body">
-      <!-- data will be inserted here -->
-    </tbody>
-  </table>
   <script src="assets/ttsscript.js"></script>
   <br /><br /><br /><br /><br />
 </body>

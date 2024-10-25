@@ -35,7 +35,7 @@ header {
 }
 
 h1 {
-    margin: 0; 
+    margin: 0;
     /* Remove default margin */
     color: #00698f;
 }
@@ -55,10 +55,14 @@ td {
     word-wrap: break-word;
     /* Add this to wrap text when it exceeds the column width */
 
-    position: relative; /* Add this to create a new stacking context */
-    z-index: 1; /* Add this to bring the text to the front */
-    background-color: rgba(255, 255, 255, 0.7); /* Add this to create a semi-transparent background */
-    backdrop-filter: blur(0px); /* Add this to blur the background image */
+    position: relative;
+    /* Add this to create a new stacking context */
+    z-index: 1;
+    /* Add this to bring the text to the front */
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Add this to create a semi-transparent background */
+    backdrop-filter: blur(0px);
+    /* Add this to blur the background image */
 }
 
 th:first-child,
@@ -203,4 +207,29 @@ td:last-child {
 .spacer {
     margin-bottom: 20px;
     color: #00698f;
+}
+
+.container {
+    overflow-y: auto;
+}
+
+.left-menu {
+    float: left;
+    width: 160px;
+    padding: 10px;
+    /* background-color: #f0f0f0; */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    margin-left: 5px;
+    position: sticky;
+    top: 0;
+    height: fit-content;
+}
+
+.table-container {
+    overflow-y: auto;
+    height: 100vh;
+    /* or any other height value */
 }
