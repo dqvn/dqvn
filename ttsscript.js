@@ -16,22 +16,8 @@ speech.pitch = 1;
 // create a table body element
 const tableBody = document.getElementById('word-list-body');
 
-
-loadJsonData('ch03.json', function(jsonData) {
-  console.log(jsonData);
-  
-  // loop through the JSON data and create table rows
-  jsonData.forEach((word, index) => {
-    const row = document.createElement('tr');
-    row.innerHTML = `
-    <td>${index+1}</td>
-    <td><span class="dutch-word" data-index="${index}" onclick="speakText('${word.dutch}')">${word.dutch}</span></td>
-    <td><span onclick="speakEngText('${word.english}')">${word.english}</span></td>
-    <td>${word.vietnamese}</td>
-  `;
-    tableBody.appendChild(row);
-  });
-});
+// init data
+loadJsonData('ch03', reloadTable);
 
 // function to speak the word using Web SpeechSynthesis API
 function speakText(text) {
@@ -68,7 +54,7 @@ function speakEngText(text) {
 
 function loadJsonData(filename, callback) {
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', filename, true);
+  xhr.open('GET', filename + '.json', true);
   xhr.onload = function() {
     if (xhr.status === 200) {
       var data = JSON.parse(xhr.responseText);
@@ -88,21 +74,24 @@ fileNames.forEach((fileName) => {
   listItem.addEventListener("click", () => {
     // load new content when file is selected
     console.log("loadContent: " + fileName + '.json');
-    loadJsonData(fileName + '.json', function (jsonData) {
-      console.log(jsonData);
-
-      // loop through the JSON data and create table rows
-      jsonData.forEach((word, index) => {
-        const row = document.createElement('tr');
-        row.innerHTML = `
-        <td>${index + 1}</td>
-        <td><span class="dutch-word" data-index="${index}" onclick="speakText('${word.dutch}')">${word.dutch}</span></td>
-        <td><span onclick="speakEngText('${word.english}')">${word.english}</span></td>
-        <td>${word.vietnamese}</td>
-      `;
-        tableBody.appendChild(row);
-      });
-    });
+    loadJsonData(fileName, reloadTable)
   });
   fileList.appendChild(listItem);
 });
+
+
+// function reloadTable(jsonData) {
+//   console.log(jsonData);
+  
+//   // loop through the JSON data and create table rows
+//   jsonData.forEach((word, index) => {
+//     const row = document.createElement('tr');
+//     row.innerHTML = `
+//     <td>${index+1}</td>
+//     <td><span class="dutch-word" data-index="${index}" onclick="speakText('${word.dutch}')">${word.dutch}</span></td>
+//     <td><span onclick="speakEngText('${word.english}')">${word.english}</span></td>
+//     <td>${word.vietnamese}</td>
+//   `;
+//     tableBody.appendChild(row);
+//   });
+// }
