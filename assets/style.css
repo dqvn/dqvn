@@ -37,7 +37,7 @@ header {
 h1 {
     margin: 0; 
     /* Remove default margin */
-    color: #d9d9d9;
+    color: #3e8ebd;
 }
 
 table {
@@ -151,7 +151,7 @@ td:last-child {
     padding: 5px;
     border-bottom: 1px solid #ccc;
     cursor: pointer;
-    color: #62eee4;
+    color: #3e8ebd;
 }
 
 .left-menu li:hover {
@@ -200,4 +200,5 @@ td:last-child {
 
 .spacer {
     margin-bottom: 20px;
+    color: #3e8ebd;
 }
