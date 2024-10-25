@@ -1,4 +1,4 @@
-table {
+/* table {
     border-collapse: collapse;
     width: 100%;
 }
@@ -8,6 +8,45 @@ td {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: left;
+} */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    /* Add this to prevent columns from resizing based on content */
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    word-wrap: break-word;
+    /* Add this to wrap text when it exceeds the column width */
+}
+
+th:first-child,
+td:first-child {
+    width: 30px;
+    /* Set the width of the first column to 30px */
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 50%;
+    /* Set the width of the second column to 50% */
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 20%;
+    /* Set the width of the third column to 20% */
+}
+
+th:last-child,
+td:last-child {
+    width: auto;
+    /* Set the width of the last column to auto (will take up remaining space) */
 }
 
 .dutch-word {
