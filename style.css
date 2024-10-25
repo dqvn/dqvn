@@ -81,9 +81,10 @@ td {
 
 /* Table */
 #word-list {
-    float: right;
-    width: 70%;
+    float: left;
     margin-left: 20px;
+    width: calc(100% - 220px);
+    /* calculate the width dynamically */
     border-collapse: collapse;
     font-size: 16px;
 }
