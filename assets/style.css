@@ -155,7 +155,8 @@ td:last-child {
 }
 
 .left-menu li:hover {
-    background-color: #e0e0e0;
+    background-color: transparent;
+    border-bottom: 2px solid #e0e0e0;
 }
 
 /* Table */
