@@ -156,3 +156,7 @@ td:last-child {
 #word-list tbody tr:hover {
     background-color: #e0e0e0;
 }
+
+.spacer {
+    margin-bottom: 20px;
+}
