@@ -80,7 +80,7 @@ td:last-child {
 #tts-name::before {
     content: "\1F50A";
     /* Unicode speak icon */
-    margin-right: 5px;
+    margin-right: 3px;
     margin-left: 5px;
 }
 
