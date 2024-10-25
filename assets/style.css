@@ -196,7 +196,8 @@ td:last-child {
 }
 
 #word-list tbody tr:hover {
-    background-color: #e0e0e0;
+    /* background-color: #e0e0e0; */
+    color: #233d91;
 }
 
 .spacer {
