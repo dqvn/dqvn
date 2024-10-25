@@ -1,8 +1,4 @@
-/* table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
+/* 
 th,
 td {
     border: 1px solid #ddd;
@@ -130,7 +126,7 @@ td:last-child {
 }
 
 #word-list th {
-    background-color: #333;
+    background-color: #5270af;
     color: #fff;
     padding: 10px;
     border: 1px solid #ddd;
