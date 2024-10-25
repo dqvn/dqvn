@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <title>Text to Speech Demo</title>
+</head>
+<body>
+    <h2>Text to Speech Demo</h2>
+    <input type="text" id="text-to-speak" placeholder="Enter English text to speak">
+    <button onclick="speakText()">Speak</button>
+	<br/>
+	<input type="text" id="text-to-speak-nl" placeholder="Enter Nederland to speak">
+    <button onclick="speakNlText()">Speak</button>
+
+    <script>
+        function speakText() {
+            const text = document.getElementById("text-to-speak").value;
+            const speech = new SpeechSynthesisUtterance();
+            speech.text = text;
+            speech.lang = 'en-US'; // Language set to US English
+            speech.volume = 1; // Volume (0.0 to 1.0)
+            speech.rate = 1; // Speed (0.5 to 2.0)
+            speech.pitch = 1; // Pitch (0.0 to 2.0)
+            window.speechSynthesis.speak(speech);
+        }
+
+		function speakNlText() {
+            const text = document.getElementById("text-to-speak-nl").value;
+            const speech = new SpeechSynthesisUtterance();
+            speech.text = text;
+            speech.lang = 'nl-NL'; // Language set to nl-NL
+            speech.volume = 1; // Volume (0.0 to 1.0)
+            speech.rate = 0.8; // Speed (0.5 to 2.0)
+            speech.pitch = 1; // Pitch (0.0 to 2.0)
+            window.speechSynthesis.speak(speech);
+        }
+    </script>
+</body>
+</html>
