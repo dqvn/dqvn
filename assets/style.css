@@ -167,6 +167,11 @@ td:last-child {
     border-bottom: 1px solid #ccc;
     cursor: pointer;
     color: #00698f;
+
+    background-color: #f0f0f0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .left-menu li:hover {
