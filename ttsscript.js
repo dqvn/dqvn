@@ -106,6 +106,9 @@ function reloadTable(jsonData) {
     tableBody.appendChild(row);
   });
 
+  // reset the hide-meaning box
+  document.getElementById('hide-meaning').checked = false;
+  
   // Get the checkbox and the elements with the hide-text class
   var hideTextElements = document.querySelectorAll('.hide-text');
 
