@@ -54,7 +54,8 @@ function speakEngText(text) {
 
 function loadJsonData(filename, callback) {
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', filename + '.json', true);
+  var filePath = filename + ".json";
+  xhr.open('GET', filePath, true);
   xhr.onload = function() {
     if (xhr.status === 200) {
       var data = JSON.parse(xhr.responseText);
@@ -73,7 +74,7 @@ fileNames.forEach((fileName) => {
   listItem.textContent = fileName;
   listItem.addEventListener("click", () => {
     // load new content when file is selected
-    console.log("loadContent: " + fileName + '.json');
+    console.log("loadContent: " + fileName + ".json");
     loadJsonData(fileName, reloadTable)
   });
   fileList.appendChild(listItem);
