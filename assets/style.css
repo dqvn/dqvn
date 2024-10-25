@@ -29,7 +29,7 @@ header {
     /* Take full width */
     box-sizing: border-box;
     /* Ensure padding doesn't increase element width */
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     /* Add some margin to separate the header from the next element */
     backdrop-filter: blur(3px);
 }
