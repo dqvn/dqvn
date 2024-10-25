@@ -97,6 +97,7 @@ td:last-child {
 
 .left-menu h4 {
     margin-top: 0;
+    margin-bottom: 10px;
     font-weight: bold;
     font-size: 18px;
     color: #333;
@@ -109,8 +110,8 @@ td:last-child {
 }
 
 .left-menu li {
-    margin-bottom: 10px;
-    padding: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
     border-bottom: 1px solid #ccc;
     cursor: pointer;
 }
