@@ -6,8 +6,8 @@ body {
     height: 100%;
     min-height: 100vh;
     /* Ensure the content area is at least as tall as the viewport */
-    min-width: 100vw;
-    /* Ensure the content area is at least as wide as the viewport */
+    /* min-width: 100vw;
+    Ensure the content area is at least as wide as the viewport */
 }
 
 body {
