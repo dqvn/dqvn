@@ -68,7 +68,7 @@ fileNames.forEach((fileName) => {
 // read dutch words in json file
 function loadJsonData(filename, callback) {
   var xhr = new XMLHttpRequest();
-  var filePath = filename + ".json";
+  var filePath = "data/" + filename + ".json";
   xhr.open('GET', filePath, true);
   xhr.onload = function() {
     if (xhr.status === 200) {
