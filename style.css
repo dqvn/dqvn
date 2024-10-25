@@ -47,8 +47,8 @@ td {
 /* Left Menu */
 .left-menu {
     float: left;
-    width: 200px;
-    padding: 20px;
+    width: 120px;
+    padding: 15px;
     background-color: #f0f0f0;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -82,8 +82,8 @@ td {
 /* Table */
 #word-list {
     float: left;
-    width: 70%;
-    margin-left: 20px;
+    width: calc(100% - 200px);
+    margin-left: 15px;
     border-collapse: collapse;
     font-size: 16px;
 }
