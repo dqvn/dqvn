@@ -42,9 +42,9 @@ h1 {
 
 .table-container {
     overflow-y: auto;
-    height: 100vh;
+    height: 350px; /*100vh;*/
     /* or any other height value */
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 table {
@@ -181,7 +181,7 @@ td:last-child {
     margin-left: 15px;
     border-collapse: collapse;
     font-size: 16px;
-    overflow-x: hidden; /* Add this to hide the horizontal scrollbar */
+    overflow-y: hidden; /* Add this to hide the horizontal scrollbar */
 }
 
 #word-list th {
