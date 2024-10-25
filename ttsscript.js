@@ -17,7 +17,7 @@ speech.pitch = 1;
 const tableBody = document.getElementById('word-list-body');
 
 
-loadJsonData('https://dqvn.github.io/dqvn/ch03.json', function(jsonData) {
+loadJsonData('ch03.json', function(jsonData) {//https://dqvn.github.io/dqvn/
   console.log(jsonData);
   
   // loop through the JSON data and create table rows
