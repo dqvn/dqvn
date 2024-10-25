@@ -10,16 +10,19 @@
 <body>
   <h1>Dutch Word List</h1>
   <div class="left-menu">
-    <!-- Add the checkbox -->
-    <h4>Setting:</h4>
-    <input type="checkbox" id="hide-meaning" />
-    <label for="hide-meaning">Hide Meaning</label>
-    <h5 id="tts-name"></h5>
-    <span></span>
-    <h4>Lession:</h4>
-    <ul id="file-list">
-      <!-- file list will be inserted here -->
-    </ul>
+    <div style="margin-bottom: 20px;">
+      <h4>Setting:</h4>
+      <h5 id="tts-name"></h5>
+      <!-- Add the checkbox -->
+      <input type="checkbox" id="hide-meaning" />
+      <label for="hide-meaning">Hide Meaning</label>
+    </div>
+    <div style="margin-bottom: 20px;">
+      <h4>Lession:</h4>
+      <ul id="file-list">
+        <!-- file list will be inserted here -->
+      </ul>
+    </div>
   </div>
   <table id="word-list">
     <thead>
@@ -35,7 +38,7 @@
     </tbody>
   </table>
   <script src="ttsscript.js"></script>
-  <br/><br/><br/><br/><br/>
+  <br /><br /><br /><br /><br />
 </body>
 
 </html>
