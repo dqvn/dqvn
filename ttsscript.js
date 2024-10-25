@@ -4,7 +4,7 @@ const TTSName = 'Google Nederlands';
 const TTSLang = 'nl-NL';
 
 // assume you have an array of filenames
-const fileNames = ["file1.json", "file2.json", "file3.json"];
+const fileNames = ["ch03.json", "file2.json"];
 
 const speech = new SpeechSynthesisUtterance();
 speech.lang = TTSLang;
@@ -17,7 +17,7 @@ speech.pitch = 1;
 const tableBody = document.getElementById('word-list-body');
 
 
-loadJsonData('ch03.json', function(jsonData) {//https://dqvn.github.io/dqvn/
+loadJsonData('ch03.json', function(jsonData) {
   console.log(jsonData);
   
   // loop through the JSON data and create table rows
