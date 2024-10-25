@@ -20,28 +20,9 @@ speechENG.volume = 1;
 speechENG.rate = 0.9;
 speechENG.pitch = 1;
 
-// Get the checkbox and the elements with the hide-text class
-const hideMeaningCheckbox = document.getElementById('hide-meaning');
-const hideTextElements = document.querySelectorAll('.hide-text');
-
-// Add an event listener to the checkbox
-hideMeaningCheckbox.addEventListener('change', () => {
-  // If the checkbox is checked, hide the text
-  if (hideMeaningCheckbox.checked) {
-    hideTextElements.forEach((element) => {
-      element.style.display = 'none';
-    });
-  } else {
-    // If the checkbox is not checked, show the text
-    hideTextElements.forEach((element) => {
-      element.style.display = 'initial';
-    });
-  }
-});
-
-
 // create a table body element
 const tableBody = document.getElementById('word-list-body');
+const hideMeaningCheckbox = document.getElementById('hide-meaning');
 
 // init data
 loadJsonData('ch03', reloadTable);
@@ -109,7 +90,7 @@ function loadJsonData(filename, callback) {
 }
 
 // generate the table with jsonData
-function reloadTable(jsonData) {  
+function reloadTable(jsonData) {
   // clear old data
   tableBody.innerHTML = "";
 
@@ -117,11 +98,29 @@ function reloadTable(jsonData) {
   jsonData.forEach((word, index) => {
     const row = document.createElement('tr');
     row.innerHTML = `
-    <td>${index+1}</td>
+    <td>${index + 1}</td>
     <td><span class="dutch-word" data-index="${index}" onclick="speakText('${word.dutch}')">${word.dutch}</span></td>
     <td><span class="hide-text" onclick="speakEngText('${word.english}')">${word.english}</span></td>
     <td><span class="hide-text">${word.vietnamese}</span></td>
   `;
     tableBody.appendChild(row);
+  });
+
+  // Get the checkbox and the elements with the hide-text class
+  var hideTextElements = document.querySelectorAll('.hide-text');
+
+  // Add an event listener to the checkbox
+  hideMeaningCheckbox.addEventListener('change', () => {
+    // If the checkbox is checked, hide the text
+    if (hideMeaningCheckbox.checked) {
+      hideTextElements.forEach((element) => {
+        element.style.display = 'none';
+      });
+    } else {
+      // If the checkbox is not checked, show the text
+      hideTextElements.forEach((element) => {
+        element.style.display = 'initial';
+      });
+    }
   });
 }
