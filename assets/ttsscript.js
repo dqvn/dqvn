@@ -22,6 +22,10 @@ speechENG.pitch = 1;
 const tableBody = document.getElementById('word-list-body');
 const hideMeaningCheckbox = document.getElementById('hide-meaning');
 
+// set footer year
+const year = document.getElementById('year');
+year.textContent = new Date().getFullYear();
+
 // create file list
 const fileList = document.getElementById("file-list");
 fileNames.sort();
