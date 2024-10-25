@@ -2,6 +2,7 @@ var jsonData = {};
 var googleNederlandsVoice;
 const TTSName = 'Google Nederlands';
 const TTSLang = 'nl-NL';
+const TTSLangENG = 'en-US';
 
 // assume you have an array of filenames
 const fileNames = ["ch01","ch03"];
@@ -11,6 +12,12 @@ speech.lang = TTSLang;
 speech.volume = 1;
 speech.rate = 0.8;
 speech.pitch = 1;
+
+const speechENG = new SpeechSynthesisUtterance();
+speechENG.lang = TTSLangENG;
+speechENG.volume = 1;
+speechENG.rate = 0.9;
+speechENG.pitch = 1;
 
 
 // create a table body element
@@ -41,15 +48,15 @@ function speakText(text) {
     speech.voice = googleNederlandsVoice; // Set the voice
     document.getElementById('tts-name').innerHTML = googleNederlandsVoice.name; // show name of TTS
   } else {
-    document.getElementById('tts-name').innerHTML = 'Mobile TTS'; //JSON.stringify(window.speechSynthesis.getVoices());
+    document.getElementById('tts-name').innerHTML = 'Mobile TTS';
   }
   window.speechSynthesis.speak(speech);
 }
 
+// function to speak English the word using Web SpeechSynthesis API
 function speakEngText(text) {
-  speech.text = text;
-  speech.lang = 'en-EN';
-  window.speechSynthesis.speak(speech);
+  speechENG.text = text;
+  window.speechSynthesis.speak(speechENG);
 }
 
 // create file list
@@ -82,9 +89,7 @@ function loadJsonData(filename, callback) {
 }
 
 // generate the table with jsonData
-function reloadTable(jsonData) {
-  console.log(jsonData);
-  
+function reloadTable(jsonData) {  
   // clear old data
   tableBody.innerHTML = "";
 
