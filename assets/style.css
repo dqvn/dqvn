@@ -57,8 +57,8 @@ td {
 
     position: relative; /* Add this to create a new stacking context */
     z-index: 1; /* Add this to bring the text to the front */
-    background-color: rgba(255, 255, 255, 0.8); /* Add this to create a semi-transparent background */
-    backdrop-filter: blur(10px); /* Add this to blur the background image */
+    background-color: rgba(255, 255, 255, 0.7); /* Add this to create a semi-transparent background */
+    backdrop-filter: blur(0px); /* Add this to blur the background image */
 }
 
 th:first-child,
