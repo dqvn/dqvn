@@ -1,7 +1,7 @@
 const TTSName = 'Google Nederlands';
 const TTSLang = 'nl-NL';
 const TTSLangENG = 'en-US';
-const fileNames = ["ch01", "ch03", "ch02"];
+const fileNames = ["ch01", "ch03", "ch02", "ch04", "ch05", "ch06", "ch07"];
 
 var jsonData = {};
 var googleNederlandsVoice;
