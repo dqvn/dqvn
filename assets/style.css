@@ -42,7 +42,7 @@ h1 {
 
 .table-container {
     overflow-y: auto;
-    height: 100vh;
+    height: 85vh;
 }
 
 table {
