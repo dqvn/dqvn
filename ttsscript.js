@@ -85,6 +85,9 @@ function loadJsonData(filename, callback) {
 function reloadTable(jsonData) {
   console.log(jsonData);
   
+  // clear old data
+  tableBody.innerHTML = "";
+
   // loop through the JSON data and create table rows
   jsonData.forEach((word, index) => {
     const row = document.createElement('tr');
