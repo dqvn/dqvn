@@ -37,7 +37,7 @@ fileNames.forEach((fileName) => {
     console.log("loadContent: " + fileName + ".json");
     loadJsonData(fileName, reloadTable);
     // update on going chapter
-    document.getElementById('chapter').innerHTML = "(You are learning on the " + fileName + ")";
+    document.getElementById('chapter').innerHTML = "(You are learning in " + fileName + ")";
   });
   fileList.appendChild(listItem);
 });
