@@ -78,7 +78,7 @@ function loadJsonData(filename, callback) {
   var xhr = new XMLHttpRequest();
   var filePath = "data/" + filename + ".json";
   xhr.open('GET', filePath, true);
-  xhr.onload = function() {
+  xhr.onload = function () {
     if (xhr.status === 200) {
       var data = JSON.parse(xhr.responseText);
       callback(data);
@@ -108,7 +108,7 @@ function reloadTable(jsonData) {
 
   // reset the hide-meaning box
   document.getElementById('hide-meaning').checked = false;
-  
+
   // Get the checkbox and the elements with the hide-text class
   var hideTextElements = document.querySelectorAll('.hide-text');
 
