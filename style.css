@@ -39,6 +39,81 @@ td {
 }
 
 #tts-name::before {
-    content: "\1F50A"; /* Unicode speak icon */
+    content: "\1F50A";
+    /* Unicode speak icon */
     margin-right: 5px;
+}
+
+/* Left Menu */
+.left-menu {
+    float: left;
+    width: 200px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-menu h4 {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+.left-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left-menu li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.left-menu li:hover {
+    background-color: #e0e0e0;
+}
+
+/* Table */
+#word-list {
+    float: right;
+    width: 70%;
+    margin-left: 20px;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+#word-list th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#word-list td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#word-list th,
+#word-list td {
+    text-align: left;
+}
+
+#word-list thead {
+    background-color: #333;
+    color: #fff;
+}
+
+#word-list tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#word-list tbody tr:hover {
+    background-color: #e0e0e0;
 }
