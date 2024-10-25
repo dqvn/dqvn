@@ -26,24 +26,29 @@ const hideMeaningCheckbox = document.getElementById('hide-meaning');
 const year = document.getElementById('year');
 year.textContent = new Date().getFullYear();
 
-// create file list
-const fileList = document.getElementById("file-list");
-fileNames.sort();
-fileNames.forEach((fileName) => {
-  const listItem = document.createElement("li");
-  listItem.textContent = fileName;
-  listItem.addEventListener("click", () => {
-    // load new content when file is selected
-    console.log("loadContent: " + fileName + ".json");
-    loadJsonData(fileName, reloadTable);
-    // update on going chapter
-    document.getElementById('chapter').innerHTML = "(You are learning in " + fileName + ")";
-  });
-  fileList.appendChild(listItem);
-});
+// create list of lesson
+createLeftMenu();
 
 // init data
 loadJsonData('ch03', reloadTable);
+
+function createLeftMenu() {
+  // create file list
+  var fileList = document.getElementById("file-list");
+  fileNames.sort();
+  fileNames.forEach((fileName) => {
+    const listItem = document.createElement("li");
+    listItem.textContent = fileName;
+    listItem.addEventListener("click", () => {
+      // load new content when file is selected
+      console.log("loadContent: " + fileName + ".json");
+      loadJsonData(fileName, reloadTable);
+      // update on going chapter
+      document.getElementById('chapter').innerHTML = "(You are learning in " + fileName + ")";
+    });
+    fileList.appendChild(listItem);
+  });
+}
 
 // function to speak the word using Web SpeechSynthesis API
 function speakText(text) {
