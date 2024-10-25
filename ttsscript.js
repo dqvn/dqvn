@@ -87,37 +87,22 @@ fileNames.forEach((fileName) => {
   listItem.textContent = fileName;
   listItem.addEventListener("click", () => {
     // load new content when file is selected
-    // loadContent(fileName);
-    console.log("loadContent...");
+    console.log("loadContent: " + fileName + '.json');
+    loadJsonData(fileName + '.json', function (jsonData) {
+      console.log(jsonData);
+
+      // loop through the JSON data and create table rows
+      jsonData.forEach((word, index) => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+        <td>${index + 1}</td>
+        <td><span class="dutch-word" data-index="${index}" onclick="speakText('${word.dutch}')">${word.dutch}</span></td>
+        <td><span onclick="speakEngText('${word.english}')">${word.english}</span></td>
+        <td>${word.vietnamese}</td>
+      `;
+        tableBody.appendChild(row);
+      });
+    });
   });
   fileList.appendChild(listItem);
 });
-
-// load initial content
-loadContent(fileNames[0]);
-
-// function to load new content
-function loadContent(fileName) {
-  // assume you have a function to load data from file
-  const data = loadDataFromFile(fileName);
-  const wordListBody = document.getElementById("word-list-body");
-  wordListBody.innerHTML = "";
-  data.forEach((word) => {
-    const row = document.createElement("tr");
-    const cells = [
-      document.createElement("td"),
-      document.createElement("td"),
-      document.createElement("td"),
-      document.createElement("td"),
-    ];
-    cells[0].textContent = word.no;
-    cells[1].textContent = word.dutch;
-    cells[2].textContent = word.english;
-    cells[3].textContent = word.vietnamese;
-    row.appendChild(cells[0]);
-    row.appendChild(cells[1]);
-    row.appendChild(cells[2]);
-    row.appendChild(cells[3]);
-    wordListBody.appendChild(row);
-  });
-}
