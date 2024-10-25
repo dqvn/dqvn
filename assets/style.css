@@ -1,10 +1,28 @@
-/* 
-th,
-td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-} */
+body {
+    margin: 0;
+    /* Remove default margin */
+}
+
+header {
+    background-color: #f0f0f0;
+    /* Light gray background */
+    padding: 20px;
+    /* Add some padding */
+    text-align: center;
+    /* Center the text inside the header */
+    width: 100%;
+    /* Take full width */
+    box-sizing: border-box;
+    /* Ensure padding doesn't increase element width */
+    margin-bottom: 20px;
+    /* Add some margin to separate the header from the next element */
+}
+
+h1 {
+    margin: 0;
+    /* Remove default margin */
+}
+
 table {
     border-collapse: collapse;
     width: 100%;
