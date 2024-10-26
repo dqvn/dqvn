@@ -160,7 +160,7 @@ function reloadTable(jsonData) {
     tableBody.appendChild(row);
   });
   // add empty row
-  for (let i = 0; i < 40; i++) {
+  for (let i = 0; i < 100; i++) {
     const row = document.createElement('tr');
     row.innerHTML = `
     <td></td>
