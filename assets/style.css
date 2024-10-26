@@ -363,7 +363,7 @@ button:hover {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #333;
+    background-color: #1cb508;;
     cursor: pointer;
 }
 
@@ -371,12 +371,12 @@ button:hover {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #333;
+    background-color: #1cb508;;
     cursor: pointer;
 }
 
 #volume-value {
     font-size: 16px;
     font-weight: bold;
-    color: #333;
+    color: #1cb508;
 }
