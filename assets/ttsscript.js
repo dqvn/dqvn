@@ -2,6 +2,8 @@ const TTSName = 'Google Nederlands';
 const TTSLang = 'nl-NL';
 const TTSLangENG = 'en-US';
 const fileNames = ["ch01", "ch03", "ch02", "ch04", "ch05", "ch06", "ch07", "ch08", "ch09", "ch10"];
+const INTERVAL_TIME = 3000;
+let wordList = [];
 
 var jsonData = {};
 var googleNederlandsVoice;
@@ -26,11 +28,24 @@ const hideMeaningCheckbox = document.getElementById('hide-meaning');
 const year = document.getElementById('year');
 year.textContent = new Date().getFullYear();
 
+// play button
+const playStopButton = document.getElementById('playStopButton');
+let isPlaying = false;
+let currentInterval = null;
+
+playStopButton.addEventListener('click', () => {
+  if (!isPlaying) {
+    startSpelling();
+  } else {
+    stopSpelling();
+  }
+});
+
 // create list of lesson
 createLeftMenu();
 
 // init data
-loadJsonData('ch03', reloadTable);
+loadJsonData('ch04', reloadTable);
 
 function createLeftMenu() {
   // create file list
@@ -91,6 +106,7 @@ function loadJsonData(filename, callback) {
   xhr.onload = function () {
     if (xhr.status === 200) {
       var data = JSON.parse(xhr.responseText);
+      wordList = data;
       callback(data);
     } else {
       console.log('Error loading JSON');
@@ -136,4 +152,23 @@ function reloadTable(jsonData) {
       });
     }
   });
+}
+
+function startSpelling() {
+  isPlaying = true;
+  playStopButton.textContent = 'Stop';
+  spellNextWord();
+}
+
+function stopSpelling() {
+  isPlaying = false;
+  playStopButton.textContent = 'Play';
+  clearInterval(currentInterval);
+}
+
+function spellNextWord() {
+  const randomIndex = Math.floor(Math.random() * wordList.length);
+  const word = wordList[randomIndex].dutch;
+  speakText(word);
+  currentInterval = setTimeout(spellNextWord, INTERVAL_TIME); // 3000ms = 3 seconds
 }
