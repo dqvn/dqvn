@@ -170,7 +170,12 @@ function spellNextWord() {
   const randomIndex = Math.floor(Math.random() * wordList.length);
   const wordNL = wordList[randomIndex].dutch;
   const wordEN = wordList[randomIndex].english;
-  speakText(wordNL);
+  const rowToScroll = tableBody.children[randomIndex];
+
+  // Scroll the row to the top of the screen
+  rowToScroll.scrollIntoView({ block:'start' });
+
+  // speakText(wordNL);
   //setTimeout(speakEngText(wordEN), INTERVAL_TIME);
   currentInterval = setTimeout(spellNextWord, INTERVAL_TIME); // 3000ms = 3 seconds
 }
