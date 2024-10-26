@@ -175,7 +175,8 @@ function spellNextWord() {
   // Scroll the row to the top of the screen
   rowToScroll.scrollIntoView({ block:'start' });
 
-  // speakText(wordNL);
+  speakText(wordNL);
+  
   //setTimeout(speakEngText(wordEN), INTERVAL_TIME);
   currentInterval = setTimeout(spellNextWord, INTERVAL_TIME); // 3000ms = 3 seconds
 }
