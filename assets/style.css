@@ -299,6 +299,8 @@ button:hover {
     /* green */
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
+    margin-top: 15px;
+    margin-left: 55px;
 }
 
 .play-stop-button:hover {
@@ -332,8 +334,6 @@ button:hover {
     color: #fff;
     /* white */
     transition: opacity 0.3s ease-in-out;
-    margin-top: 15px;
-    margin-left: 55px;
 }
 
 .play-stop-button.playing span {
