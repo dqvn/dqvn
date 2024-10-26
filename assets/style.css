@@ -182,10 +182,12 @@ td:last-child {
 /* Table */
 #word-list {
     float: left;
-    width: 100%;/* calc(100% - 100px) */
+    width: 100%;
+    /* calc(100% - 100px) */
     border-collapse: collapse;
     font-size: 16px;
-    overflow-y: hidden; /* Add this to hide the horizontal scrollbar */
+    overflow-y: hidden;
+    /* Add this to hide the horizontal scrollbar */
 }
 
 #word-list th {
@@ -211,7 +213,7 @@ td:last-child {
     background-color: #333;
     border-bottom: 1px solid #ddd;
     color: #fff;
-  }
+}
 
 #word-list tbody tr:nth-child(even) {
     background-color: #f9f9f9;
@@ -285,4 +287,53 @@ button {
 
 button:hover {
     background-color: #ddd;
+}
+
+.play-stop-button {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    /* green */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.play-stop-button:hover {
+    background-color: #3e8e41;
+    /* darker green */
+}
+
+.play-stop-button.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    /* white */
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.play-stop-button.playing.icon {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.play-stop-button span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: #fff;
+    /* white */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.play-stop-button.playing span {
+    opacity: 0;
 }
