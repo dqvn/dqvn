@@ -337,3 +337,13 @@ button:hover {
 .play-stop-button.playing span {
     opacity: 0;
 }
+
+.play-stop-button::before {
+    content: "\25B6";
+    /* Play icon */
+}
+
+.play-stop-button.playing::before {
+    content: "\25A0";
+    /* Stop icon */
+}
