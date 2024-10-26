@@ -98,7 +98,18 @@ function speakText(text) {
     document.getElementById('tts-name').innerHTML = 'Mobile TTS';
   }
   speech.volume = volumeControl.value / 100;
-  window.speechSynthesis.speak(speech);
+  //window.speechSynthesis.speak(speech);
+  try {
+    window.speechSynthesis.speak(speech);
+  } catch (error) {
+    if (error.name === 'NotAllowedError') {
+      console.error('Speech synthesis is not allowed:', error);
+    } else if (error.name === 'NotSupportedError') {
+      console.error('Speech synthesis is not supported:', error);
+    } else {
+      console.error('Error speaking text:', error);
+    }
+  }
 }
 
 // function to speak English the word using Web SpeechSynthesis API
@@ -142,7 +153,7 @@ function reloadTable(jsonData) {
     tableBody.appendChild(row);
   });
   // add empty row
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 40; i++) {
     const row = document.createElement('tr');
     row.innerHTML = `
     <td></td>
