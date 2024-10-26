@@ -2,7 +2,7 @@ const TTSName = 'Google Nederlands';
 const TTSLang = 'nl-NL';
 const TTSLangENG = 'en-US';
 const fileNames = ["ch01", "ch03", "ch02", "ch04", "ch05", "ch06", "ch07", "ch08", "ch09", "ch10"];
-const INTERVAL_TIME = 3000;
+const INTERVAL_TIME = 5000;
 let wordList = [];
 
 var jsonData = {};
@@ -176,7 +176,7 @@ function spellNextWord() {
   rowToScroll.scrollIntoView({ block:'start' });
 
   speakText(wordNL);
-  
+
   //setTimeout(speakEngText(wordEN), INTERVAL_TIME);
-  currentInterval = setTimeout(spellNextWord, INTERVAL_TIME); // 3000ms = 3 seconds
+  currentInterval = setTimeout(spellNextWord, INTERVAL_TIME); // 5000ms = 5 seconds
 }
