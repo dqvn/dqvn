@@ -33,7 +33,7 @@ year.textContent = new Date().getFullYear();
 // Add volumn control
 volumeControl.addEventListener('input', () => {
   const volumeValue = volumeControl.value;
-  document.getElementById('volume-value').textContent = `${volumeValue/100}`;
+  document.getElementById('volume-value').textContent = `${volumeValue}%`;
 });
 
 // play button
