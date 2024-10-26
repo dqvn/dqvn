@@ -168,7 +168,9 @@ function stopSpelling() {
 
 function spellNextWord() {
   const randomIndex = Math.floor(Math.random() * wordList.length);
-  const word = wordList[randomIndex].dutch;
-  speakText(word);
+  const wordNL = wordList[randomIndex].dutch;
+  const wordEN = wordList[randomIndex].english;
+  speakText(wordNL);
+  //setTimeout(speakEngText(wordEN), INTERVAL_TIME);
   currentInterval = setTimeout(spellNextWord, INTERVAL_TIME); // 3000ms = 3 seconds
 }
