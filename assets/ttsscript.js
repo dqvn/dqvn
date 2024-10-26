@@ -156,15 +156,13 @@ function reloadTable(jsonData) {
 
 function startSpelling() {
   isPlaying = true;
-  //playStopButton.innerHTML = '<div class="icon"></div><span>Stop</span>';
-  playStopButton.classList.add('playing');
+  playStopButton.innerHTML = '<div class="icon"></div><span>Stop</span>';
   spellNextWord();
 }
 
 function stopSpelling() {
   isPlaying = false;
-  //playStopButton.innerHTML = '<div class="icon"></div><span>Play</span>';
-  playStopButton.classList.remove('playing');
+  playStopButton.innerHTML = '<div class="icon"></div><span>Play</span>';
   clearInterval(currentInterval);
 }
 
