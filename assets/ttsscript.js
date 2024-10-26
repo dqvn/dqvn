@@ -2,7 +2,7 @@ const TTSName = 'Google Nederlands';
 const TTSLang = 'nl-NL';
 const TTSLangENG = 'en-US';
 const fileNames = ["ch01", "ch03", "ch02", "ch04", "ch05", "ch06", "ch07", "ch08", "ch09", "ch10"];
-const INTERVAL_TIME = 5000;
+const INTERVAL_TIME = 8000;
 let wordList = [];
 
 var jsonData = {};
