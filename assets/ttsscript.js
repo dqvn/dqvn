@@ -55,6 +55,18 @@ createLeftMenu();
 // init data
 loadJsonData('ch04', reloadTable);
 
+// Enable NoSleep
+document.addEventListener('DOMContentLoaded', function() {
+  var noSleep = new NoSleep();
+  // Enable wake lock.
+  // (The `enable` method must be wrapped in a user input event handler for Android.)
+  document.addEventListener('click', function enableNoSleep() {
+    noSleep.enable();
+    document.removeEventListener('click', enableNoSleep, false);
+  }, false);
+});
+
+// Functions
 function createLeftMenu() {
   // create file list
   var fileList = document.getElementById("file-list");
