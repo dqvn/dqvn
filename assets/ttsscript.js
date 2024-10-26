@@ -165,6 +165,12 @@ function reloadTable(jsonData) {
   });
 }
 
+// Add volumn control
+volumeControl.addEventListener('input', () => {
+  const volumeValue = volumeControl.value;
+  document.getElementById('volume-value').textContent = `${volumeValue}%`;
+});
+
 function startSpelling() {
   isPlaying = true;
   playStopButton.innerHTML = '<div class="icon"></div><span>Stop</span>';
