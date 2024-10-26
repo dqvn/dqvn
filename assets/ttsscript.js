@@ -130,6 +130,10 @@ function reloadTable(jsonData) {
     <td><span class="hide-text">${word.vietnamese}</span></td>
   `;
     tableBody.appendChild(row);
+    for (let i = 0; i < 50; i++) {
+      const row = document.createElement('tr');
+      tableBody.appendChild(row);
+    }
   });
 
   // reset the hide-meaning box
