@@ -24,9 +24,18 @@ speechENG.pitch = 1;
 const tableBody = document.getElementById('word-list-body');
 const hideMeaningCheckbox = document.getElementById('hide-meaning');
 
+const volumeControl = document.getElementById('volume-control');
+const volumeValue = volumeControl.value;
+
 // set footer year
 const year = document.getElementById('year');
 year.textContent = new Date().getFullYear();
+
+// Add volumn control
+volumeControl.addEventListener('input', () => {
+  const volumeValue = volumeControl.value;
+  document.getElementById('volume-value').textContent = `${volumeValue}%`;
+});
 
 // play button
 const playStopButton = document.getElementById('playStopButton');
@@ -164,12 +173,6 @@ function reloadTable(jsonData) {
     }
   });
 }
-
-// Add volumn control
-volumeControl.addEventListener('input', () => {
-  const volumeValue = volumeControl.value;
-  document.getElementById('volume-value').textContent = `${volumeValue}%`;
-});
 
 function startSpelling() {
   isPlaying = true;
