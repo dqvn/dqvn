@@ -299,7 +299,7 @@ button:hover {
     /* green */
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
-    margin-left: 55px;
+    /* margin-left: 55px; */
 }
 
 .play-stop-button:hover {
@@ -347,9 +347,9 @@ button:hover {
 }
 
 #volume-control {
-    width: 100%;
+    width: 50%;
     height: 5px;
-    margin-right: 10px;
+    margin-right: 5px;
     border-radius: 5px;
     background-color: #ccc;
     -webkit-appearance: none;
