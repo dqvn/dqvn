@@ -97,12 +97,14 @@ function speakText(text) {
   } else {
     document.getElementById('tts-name').innerHTML = 'Mobile TTS';
   }
+  speech.volume = volumeControl.value / 100;
   window.speechSynthesis.speak(speech);
 }
 
 // function to speak English the word using Web SpeechSynthesis API
 function speakEngText(text) {
   speechENG.text = text;
+  speechENG.volume = volumeControl.value / 100;
   window.speechSynthesis.speak(speechENG);
 }
 
