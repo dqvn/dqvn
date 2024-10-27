@@ -22,8 +22,8 @@ volumeControl.addEventListener('input', () => {
 
 // play button
 const playStopButton = document.getElementById('playStopButton');
-let isPlaying = false;
-let currentInterval = null;
+var isPlaying = false;
+var currentInterval = null;
 
 playStopButton.addEventListener('click', () => {
   if (!isPlaying) {
@@ -213,5 +213,8 @@ function spellNextWord() {
   speakText(wordNL);
 
   //setTimeout(speakEngText(wordEN), INTERVAL_TIME);
-  currentInterval = setTimeout(spellNextWord, INTERVAL_TIME); // 5000ms = 5 seconds
+  if (isPlaying) {
+    setTimeout(spellNextWord, INTERVAL_TIME); // 5000ms = 5 seconds
+  }
+  // currentInterval = setTimeout(spellNextWord, INTERVAL_TIME); // 5000ms = 5 seconds
 }
