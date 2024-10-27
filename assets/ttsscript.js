@@ -3,26 +3,16 @@ const TTSLang = 'nl-NL';
 const TTSLangENG = 'en-US';
 const fileNames = ["ch01", "ch03", "ch02", "ch04", "ch05", "ch06", "ch07", "ch08", "ch09", "ch10"];
 const INTERVAL_TIME = 8000;
-let wordList = [];
-
-var jsonData = {};
-var googleNederlandsVoice;
-
-const speechENG = new SpeechSynthesisUtterance();
-speechENG.lang = TTSLangENG;
-speechENG.volume = 1;
-speechENG.rate = 0.9;
-speechENG.pitch = 1;
 
 // create a table body element
 const tableBody = document.getElementById('word-list-body');
 const hideMeaningCheckbox = document.getElementById('hide-meaning');
-
 const volumeControl = document.getElementById('volume-control');
-
-// set footer year
 const year = document.getElementById('year');
-year.textContent = new Date().getFullYear();
+
+var wordList = [];
+var jsonData = {};
+var googleNederlandsVoice;
 
 // Add volumn control
 volumeControl.addEventListener('input', () => {
@@ -49,13 +39,18 @@ createLeftMenu();
 // init data
 loadJsonData('ch04', reloadTable);
 
+// set footer year
+year.textContent = new Date().getFullYear();
+
 // Enable NoSleep
 document.addEventListener('DOMContentLoaded', function() {
   var noSleep = new NoSleep();
   noSleep.enable();
 });
 
-// Functions
+// ========================
+// =       Functions      =
+// ========================
 function createLeftMenu() {
   // create file list
   var fileList = document.getElementById("file-list");
