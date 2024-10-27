@@ -92,16 +92,36 @@ function speakText(text) {
       speech.voice = googleNederlandsVoice; // Set the voice
       document.getElementById('tts-name').innerHTML = googleNederlandsVoice.name; // show name of TTS
     } else {
-      speech.voice = window.speechSynthesis.getVoices()[0];
-      document.getElementById('tts-name').innerHTML = 'Mobile TTS';
+      const availableVoices = window.speechSynthesis.getVoices();
+      if (availableVoices.length > 0) {
+        speech.voice = availableVoices[0]; // Or select a specific voice by language, etc.
+      } else {
+        document.getElementById('tts-name').innerHTML = 'No voices available!';
+        console.error("No voices available!");
+        return;
+      }
     }
     speech.lang = TTSLang;
     speech.volume = 1;
     speech.rate = 0.8;
     speech.pitch = 1;
     speech.text = text;
-    speech.volume = parseFloat(volumeControl.value / 100).toPrecision(2);
+    speech.volume = volumeControl.value / 100;
+    speech.onerror = (event) => {
+      console.error("Speech synthesis error:", event.error);
+    };
+    // Wait for voices to load before attempting to speak
+    window.speechSynthesis.onvoiceschanged = () => {
+      voicesLoaded = true;
+      console.log("Voices loaded:", window.speechSynthesis.getVoices());
+
+      // If you have text and volume ready at this point, you can call speak here:
+      speak("Voices loaded", 50);
+    };
+
     window.speechSynthesis.speak(speech);
+    // Optional: Add an event listener to detect errors
+    
   } catch (error) {
     if (error.name === 'NotAllowedError') {
       console.error('Speech synthesis is not allowed:', error);
@@ -117,7 +137,7 @@ function speakText(text) {
 function speakEngText(text) {
   const speechENG = new SpeechSynthesisUtterance();
   speechENG.text = text;
-  speechENG.volume = parseFloat(volumeControl.value / 100).toPrecision(2);
+  speechENG.volume = volumeControl.value / 100;
   speechENG.voice = window.speechSynthesis.getVoices()[0];
   window.speechSynthesis.speak(speechENG);
 }
