@@ -32,6 +32,7 @@ header {
     margin-bottom: 0px;
     /* Add some margin to separate the header from the next element */
     backdrop-filter: blur(3px);
+    text-shadow: 0px 0px 10px white, 0px 0px 7px white;
 }
 
 h1 {
