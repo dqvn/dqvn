@@ -228,6 +228,7 @@ td:last-child {
 .spacer {
     margin-bottom: 20px;
     color: #00698f;
+    text-shadow: 0px 0px 10px white, 0px 0px 7px white;
 }
 
 .container {
