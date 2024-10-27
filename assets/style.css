@@ -109,6 +109,7 @@ td:last-child {
     transition: color 0.2s ease-in-out;
     /* smooth color transition */
     text-shadow: 0px 0px 10px white, 0px 0px 7px white;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .dutch-word:hover {
