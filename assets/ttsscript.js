@@ -43,7 +43,7 @@ loadJsonData('ch04', reloadTable);
 year.textContent = new Date().getFullYear();
 
 // Enable NoSleep
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   var noSleep = new NoSleep();
   noSleep.enable();
 });
@@ -71,6 +71,13 @@ function createLeftMenu() {
 
 // function to speak the word using Web SpeechSynthesis API
 function speakText(text) {
+  const availableVoices = window.speechSynthesis.getVoices();
+  if (availableVoices.length <= 0) {
+    document.getElementById('tts-name').innerHTML = 'No voices available!';
+    console.error("No voices available!");
+    return;
+  }
+
   // Find the "Google Nederlands" voice for nl-NL
   if (!googleNederlandsVoice) {
     googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
@@ -91,16 +98,8 @@ function speakText(text) {
     if (googleNederlandsVoice) {
       speech.voice = googleNederlandsVoice; // Set the voice
       document.getElementById('tts-name').innerHTML = googleNederlandsVoice.name; // show name of TTS
-    } else {
-      const availableVoices = window.speechSynthesis.getVoices();
-      if (availableVoices.length > 0) {
-        speech.voice = availableVoices[0]; // Or select a specific voice by language, etc.
-      } else {
-        document.getElementById('tts-name').innerHTML = 'No voices available!';
-        console.error("No voices available!");
-        return;
-      }
     }
+
     speech.lang = TTSLang;
     speech.volume = 1;
     speech.rate = 0.8;
@@ -121,7 +120,7 @@ function speakText(text) {
 
     window.speechSynthesis.speak(speech);
     // Optional: Add an event listener to detect errors
-    
+
   } catch (error) {
     if (error.name === 'NotAllowedError') {
       console.error('Speech synthesis is not allowed:', error);
@@ -228,7 +227,7 @@ function spellNextWord() {
   const rowToScroll = tableBody.children[randomIndex];
 
   // Scroll the row to the top of the screen
-  rowToScroll.scrollIntoView({ block:'start' });
+  rowToScroll.scrollIntoView({ block: 'start' });
 
   speakText(wordNL);
 
