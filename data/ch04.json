@@ -1,7 +1,7 @@
 [
-    {"dutch": "\\&apos;s avonds", "english": "in the evening", "vietnamese": "vào buổi tối"},
-    {"dutch": "\\&apos;s middags", "english": "in the afternoon", "vietnamese": "vào buổi chiều"},
-    {"dutch": "\\&apos;s morgens", "english": "in the morning", "vietnamese": "vào buổi sáng"},
+    {"dutch": "s avonds", "english": "in the evening", "vietnamese": "vào buổi tối"},
+    {"dutch": "s middags", "english": "in the afternoon", "vietnamese": "vào buổi chiều"},
+    {"dutch": "s morgens", "english": "in the morning", "vietnamese": "vào buổi sáng"},
     {"dutch": "aankleden (zich -)", "english": "to get dressed", "vietnamese": "để mặc quần áo"},
     {"dutch": "aantrekken", "english": "to put on", "vietnamese": "để mặc"},
     {"dutch": "afspreken", "english": "to make an appointment", "vietnamese": "để đặt lịch hẹn"},
