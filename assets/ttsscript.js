@@ -8,12 +8,6 @@ let wordList = [];
 var jsonData = {};
 var googleNederlandsVoice;
 
-const speech = new SpeechSynthesisUtterance();
-speech.lang = TTSLang;
-speech.volume = 1;
-speech.rate = 0.8;
-speech.pitch = 1;
-
 const speechENG = new SpeechSynthesisUtterance();
 speechENG.lang = TTSLangENG;
 speechENG.volume = 1;
@@ -97,18 +91,21 @@ function speakText(text) {
 
   // console.log(googleNederlandsVoice);
 
-  
-  if (googleNederlandsVoice) {
-    speech.voice = googleNederlandsVoice; // Set the voice
-    document.getElementById('tts-name').innerHTML = googleNederlandsVoice.name; // show name of TTS
-  } else {
-    speech.voice = window.speechSynthesis.getVoices()[0];
-    document.getElementById('tts-name').innerHTML = 'Mobile TTS';
-  }
-
   try {
+    const speech = new SpeechSynthesisUtterance();
+    if (googleNederlandsVoice) {
+      speech.voice = googleNederlandsVoice; // Set the voice
+      document.getElementById('tts-name').innerHTML = googleNederlandsVoice.name; // show name of TTS
+    } else {
+      speech.voice = window.speechSynthesis.getVoices()[0];
+      document.getElementById('tts-name').innerHTML = 'Mobile TTS';
+    }
+    speech.lang = TTSLang;
+    speech.volume = 1;
+    speech.rate = 0.8;
+    speech.pitch = 1;
     speech.text = text;
-    speech.volume = parseFloat(volumeControl.value / 100).toPrecision(2); // volumeControl.value / 100;
+    speech.volume = parseFloat(volumeControl.value / 100).toPrecision(2);
     window.speechSynthesis.speak(speech);
   } catch (error) {
     if (error.name === 'NotAllowedError') {
@@ -123,8 +120,10 @@ function speakText(text) {
 
 // function to speak English the word using Web SpeechSynthesis API
 function speakEngText(text) {
+  const speechENG = new SpeechSynthesisUtterance();
   speechENG.text = text;
-  speechENG.volume = volumeControl.value / 100;
+  speechENG.volume = parseFloat(volumeControl.value / 100).toPrecision(2);
+  speechENG.voice = window.speechSynthesis.getVoices()[0];
   window.speechSynthesis.speak(speechENG);
 }
 
