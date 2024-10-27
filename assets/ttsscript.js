@@ -97,16 +97,18 @@ function speakText(text) {
 
   // console.log(googleNederlandsVoice);
 
-  speech.text = text;
+  
   if (googleNederlandsVoice) {
     speech.voice = googleNederlandsVoice; // Set the voice
     document.getElementById('tts-name').innerHTML = googleNederlandsVoice.name; // show name of TTS
   } else {
+    speech.voice = window.speechSynthesis.getVoices()[0];
     document.getElementById('tts-name').innerHTML = 'Mobile TTS';
   }
-  speech.volume = volumeControl.value / 100;
-  //window.speechSynthesis.speak(speech);
+
   try {
+    speech.text = text;
+    speech.volume = parseFloat(volumeControl.value / 100).toPrecision(2); // volumeControl.value / 100;
     window.speechSynthesis.speak(speech);
   } catch (error) {
     if (error.name === 'NotAllowedError') {
