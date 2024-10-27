@@ -109,14 +109,12 @@ function speakText(text) {
     speech.onerror = (event) => {
       console.error("Speech synthesis error:", event.error);
     };
-    // Wait for voices to load before attempting to speak
-    window.speechSynthesis.onvoiceschanged = () => {
-      voicesLoaded = true;
-      console.log("Voices loaded:", window.speechSynthesis.getVoices());
-
-      // If you have text and volume ready at this point, you can call speak here:
-      speak("Voices loaded", 50);
-    };
+    // Check if speech synthesis is already speaking
+    if (window.speechSynthesis.speaking) {
+      console.log("Interrupting current speech.");
+      window.speechSynthesis.cancel(); // Cancel any ongoing speech
+      window.speechSynthesis.resume();
+    }
 
     window.speechSynthesis.speak(speech);
     // Optional: Add an event listener to detect errors
