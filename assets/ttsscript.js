@@ -113,9 +113,8 @@ function speakText(text) {
     if (window.speechSynthesis.speaking) {
       console.log("Interrupting current speech.");
       window.speechSynthesis.cancel(); // Cancel any ongoing speech
-      window.speechSynthesis.resume();
     }
-
+    window.speechSynthesis.resume();
     window.speechSynthesis.speak(speech);
     // Optional: Add an event listener to detect errors
 
