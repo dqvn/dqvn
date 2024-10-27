@@ -214,7 +214,7 @@ function spellNextWord() {
 
   //setTimeout(speakEngText(wordEN), INTERVAL_TIME);
   if (isPlaying) {
-    setTimeout(spellNextWord, INTERVAL_TIME); // 5000ms = 5 seconds
+    currentInterval = setTimeout(spellNextWord, INTERVAL_TIME); // 5000ms = 5 seconds
   }
   // currentInterval = setTimeout(spellNextWord, INTERVAL_TIME); // 5000ms = 5 seconds
 }
