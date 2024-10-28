@@ -218,7 +218,8 @@ function stopSpelling() {
 }
 
 function spellNextWord() {
-  const randomIndex = Math.floor(Math.random() * wordList.length);
+  // const randomIndex = Math.floor(Math.random() * wordList.length);
+  const randomIndex = getRandomNumberCSPRNG(0, wordList.length);
   const wordNL = wordList[randomIndex].dutch;
   const wordEN = wordList[randomIndex].english;
   const rowToScroll = tableBody.children[randomIndex];
@@ -233,4 +234,11 @@ function spellNextWord() {
     currentInterval = setTimeout(spellNextWord, INTERVAL_TIME); // 5000ms = 5 seconds
   }
   // currentInterval = setTimeout(spellNextWord, INTERVAL_TIME); // 5000ms = 5 seconds
+}
+
+function getRandomNumberCSPRNG(min, max) {
+  const array = new Uint32Array(1);
+  window.crypto.getRandomValues(array);
+  const randomNumber = (array[0] % (max - min + 1)) + min;
+  return randomNumber;
 }
