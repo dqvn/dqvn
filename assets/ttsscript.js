@@ -219,7 +219,7 @@ function stopSpelling() {
 
 function spellNextWord() {
   // const randomIndex = Math.floor(Math.random() * wordList.length);
-  const randomIndex = getRandomNumberCSPRNG(0, wordList.length);
+  const randomIndex = getRandomNumberCSPRNG(0, wordList.length - 1);
   const wordNL = wordList[randomIndex].dutch;
   const wordEN = wordList[randomIndex].english;
   const rowToScroll = tableBody.children[randomIndex];
