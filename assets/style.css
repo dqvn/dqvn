@@ -57,7 +57,7 @@ table {
 th,
 td {
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 8px;
     text-align: left;
     word-wrap: break-word;
     /* Add this to wrap text when it exceeds the column width */
@@ -74,13 +74,13 @@ td {
 
 th:first-child,
 td:first-child {
-    width: 30px;
+    width: 38px;
     /* Set the width of the first column to 30px */
 }
 
 th:nth-child(2),
 td:nth-child(2) {
-    width: 50%;
+    width: 45%;
     /* Set the width of the second column to 50% */
 }
 
