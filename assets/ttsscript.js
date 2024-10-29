@@ -10,6 +10,7 @@ const hideMeaningCheckbox = document.getElementById('hide-meaning');
 const volumeControl = document.getElementById('volume-control');
 const year = document.getElementById('year');
 
+const recentNumbers = [];
 var wordList = [];
 var jsonData = {};
 var googleNederlandsVoice;
@@ -219,10 +220,16 @@ function stopSpelling() {
 
 function spellNextWord() {
   // const randomIndex = Math.floor(Math.random() * wordList.length);
-  const randomIndex = getRandomNumberCSPRNG(0, wordList.length - 1);
+  const randomIndex = getNewRandomNumberCSPRNG(0, wordList.length - 1, recentNumbers);
   const wordNL = wordList[randomIndex].dutch;
   const wordEN = wordList[randomIndex].english;
   const rowToScroll = tableBody.children[randomIndex];
+
+  // improving the balance rate of random numbers
+  recentNumbers.push(randomNumber);
+  if (recentNumbers.length > wordList.length) {
+    recentNumbers.shift();
+  }
 
   // Scroll the row to the top of the screen
   rowToScroll.scrollIntoView({ block: 'start' });
@@ -240,5 +247,15 @@ function getRandomNumberCSPRNG(min, max) {
   const array = new Uint32Array(1);
   window.crypto.getRandomValues(array);
   const randomNumber = (array[0] % (max - min + 1)) + min;
+  return randomNumber;
+}
+
+function getNewRandomNumberCSPRNG(min, max, recentNumbers) {
+  const array = new Uint32Array(1);
+  let randomNumber;
+  do {
+    window.crypto.getRandomValues(array);
+    randomNumber = (array[0] % (max - min + 1)) + min;
+  } while (recentNumbers.includes(randomNumber));
   return randomNumber;
 }
