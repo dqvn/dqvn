@@ -226,7 +226,7 @@ function spellNextWord() {
   const rowToScroll = tableBody.children[randomIndex];
 
   // improving the balance rate of random numbers
-  recentNumbers.push(randomNumber);
+  recentNumbers.push(randomIndex);
   if (recentNumbers.length > wordList.length) {
     recentNumbers.shift();
   }
