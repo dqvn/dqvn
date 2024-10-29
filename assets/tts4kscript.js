@@ -222,8 +222,7 @@ function stopSpelling() {
 function spellNextWord() {
   // const randomIndex = Math.floor(Math.random() * wordList.length);
   const randomIndex = getNewRandomNumberCSPRNG(0, wordList.length - 1, recentNumbers);
-  const wordNL = wordList[randomIndex].dutch;
-  const wordEN = wordList[randomIndex].english;
+  const wordEN = wordList[randomIndex].eng;
   const rowToScroll = tableBody.children[randomIndex];
 
   // improving the balance rate of random numbers
@@ -235,9 +234,8 @@ function spellNextWord() {
   // Scroll the row to the top of the screen
   rowToScroll.scrollIntoView({ block: 'start' });
 
-  speakText(wordNL);
+  speakEngText(wordEN);
 
-  //setTimeout(speakEngText(wordEN), INTERVAL_TIME);
   if (isPlaying) {
     currentInterval = setTimeout(spellNextWord, INTERVAL_TIME); // 5000ms = 5 seconds
   }
