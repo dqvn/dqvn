@@ -228,7 +228,7 @@ function spellNextWord() {
 
   // improving the balance rate of random numbers
   recentNumbers.push(randomIndex);
-  if (recentNumbers.length > wordList.length) {
+  if (recentNumbers.length > (wordList.length*0.9)) {
     recentNumbers.shift();
   }
 
