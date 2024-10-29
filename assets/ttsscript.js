@@ -159,6 +159,7 @@ function loadJsonData(filename, callback) {
 // generate the table with jsonData
 function reloadTable(jsonData) {
   // clear old data
+  recentNumbers.length = 0;
   tableBody.innerHTML = "";
 
   // loop through the JSON data and create table rows
