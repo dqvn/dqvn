@@ -13,6 +13,22 @@
     <h1>Learning Dutch Words</h1>
     <h3 id="chapter"></h3>
   </header>
+  <div id="popup" style="display: none;">
+    <h2>English Meaning Game</h2>
+    <p id="word"></p>
+    <p id="meaning"></p>
+    <p id="options"></p>
+    <input type="radio" id="option1" name="option">
+    <label for="option1" id="option1-label"></label>
+    <input type="radio" id="option2" name="option">
+    <label for="option2" id="option2-label"></label>
+    <input type="radio" id="option3" name="option">
+    <label for="option3" id="option3-label"></label>
+    <input type="radio" id="option4" name="option">
+    <label for="option4" id="option4-label"></label>
+    <button id="submit-button">Submit</button>
+  </div>
+  <p id="result"></p>
   <div class="container div-with-scrollbar">
     <div class="left-menu">
       <div class="spacer">
@@ -30,6 +46,8 @@
           <input type="range" id="volume-control" min="0" max="100" value="50">
           <span id="volume-value">50%</span>
         </div>
+        <!-- Add simple game -->
+        <button id="start-button">Start Game</button>
       </div>
       <div class="spacer">
         <h4>Lesson:</h4>
@@ -61,6 +79,7 @@
     &copy; <span id="year"></span> Quang, Nguyen Dang | <a href="mailto:dqvn2002@gmail.com">dqvn2002@gmail.com</a>
   </footer>
   <script src="assets/ttsscript.js"></script>
+  <script src="assets/game.js"></script>
 </body>
 
 </html>
