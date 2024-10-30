@@ -2,12 +2,13 @@ let currentWordIndex = 0;
 let correctCount = 0;
 let data = [];
 
-document.getElementById("start-button").addEventListener("click", startGame(wordList));
+document.getElementById("start-button").addEventListener("click", startGame());
 
-function startGame(wordlist) {
+function startGame() {
   currentWordIndex = 0;
   correctCount = 0;
   data = wordlist;
+  console.log(wordList);
   document.getElementById("result").innerHTML = "";
   document.getElementById("popup").style.display = "block";
   showWord();
