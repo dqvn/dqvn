@@ -134,6 +134,7 @@ function speakText(text) {
 function speakEngText(text) {
   const speechENG = new SpeechSynthesisUtterance();
   speechENG.text = text;
+  speechENG.rate = 0.8;
   speechENG.volume = volumeControl.value / 100;
   speechENG.voice = window.speechSynthesis.getVoices()[0];
   // Check if speech synthesis is already speaking
