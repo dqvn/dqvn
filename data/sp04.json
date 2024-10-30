@@ -1,0 +1,14 @@
+[
+    {"dutch": "Beginnen", "english": "begin", "vietnamese": "bắt đầu"},
+    {"dutch": "eindigen", "english": "end", "vietnamese": "kết thúc"},
+    {"dutch": "over", "english": "over", "vietnamese": "qua"},
+    {"dutch": "daarna", "english": "afterwards", "vietnamese": "sau đó"},
+    {"dutch": "vervolgens", "english": "then", "vietnamese": "sau đó"},
+    {"dutch": "ten slotte", "english": "finally", "vietnamese": "cuối cùng"},
+    {"dutch": "de letter", "english": "the letter", "vietnamese": "chữ cái"},
+    {"dutch": "het woord", "english": "the word", "vietnamese": "từ"},
+    {"dutch": "de zin", "english": "the sentence", "vietnamese": "câu"},
+    {"dutch": "de oefening", "english": "the exercise", "vietnamese": "bài tập"},
+    {"dutch": "nieuw", "english": "new", "vietnamese": "mới"},
+    {"dutch": "oud", "english": "old", "vietnamese": "cũ"}
+]
