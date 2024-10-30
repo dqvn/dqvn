@@ -10,10 +10,10 @@ function startGame() {
   console.log(wordList);
   document.getElementById("result").innerHTML = "";
   document.getElementById("popup").style.display = "block";
-  showWord();
+  showWord(wordlist);
 }
 
-function showWord() {
+function showWord(wordlist) {
   const word = wordlist[currentWordIndex];
   document.getElementById("word").innerHTML = word.dutch;
   const options = [word.english,...getRandomOptions(wordlist, word.english)];
