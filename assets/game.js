@@ -10,13 +10,13 @@ function startGame() {
   console.log(wordList);
   document.getElementById("result").innerHTML = "";
   document.getElementById("popup").style.display = "block";
-  showWord(wordList);
+  showWord();
 }
 
-function showWord(wordlist) {
-  const word = wordlist[currentWordIndex];
+function showWord() {
+  const word = wordList[currentWordIndex];
   document.getElementById("word").innerHTML = word.dutch;
-  const options = [word.english,...getRandomOptions(wordlist, word.english)];
+  const options = [word.english,...getRandomOptions(wordList, word.english)];
   document.getElementById("options").innerHTML = "";
   for (let i = 0; i < options.length; i++) {
     const option = document.createElement("p");
@@ -26,12 +26,12 @@ function showWord(wordlist) {
   document.getElementById("meaning").innerHTML = "";
 }
 
-function getRandomOptions(wordlist, correctOption) {
+function getRandomOptions(wordList, correctOption) {
   const options = [];
   while (options.length < 4) {
-    const randomIndex = Math.floor(Math.random() * wordlist.length);
-    if (wordlist[randomIndex].english!== correctOption &&!options.includes(wordlist[randomIndex].english)) {
-      options.push(wordlist[randomIndex].english);
+    const randomIndex = Math.floor(Math.random() * wordList.length);
+    if (wordList[randomIndex].english!== correctOption &&!options.includes(wordList[randomIndex].english)) {
+      options.push(wordList[randomIndex].english);
     }
   }
   return options;
