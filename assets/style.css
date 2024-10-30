@@ -147,7 +147,20 @@ td:last-child {
     margin-right: 15px;
     position: sticky;
     top: 0;
-    height: fit-content;
+    /* height: fit-content; */
+    height: 800px; /* fixed height */
+    overflow-y: auto; /* enable scrollbar */
+    scrollbar-width: thin; /* modern scrollbar style */
+    &::-webkit-scrollbar {
+        width: 6px; /* scrollbar width */
+        height: 6px; /* scrollbar height */
+        background-color: #f0f0f0; /* scrollbar background color */
+        border: 1px solid #ddd; /* scrollbar border */
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #ccc; /* scrollbar thumb color */
+        border-radius: 5px; /* scrollbar thumb border radius */
+    }
 }
 
 .left-menu h4 {
