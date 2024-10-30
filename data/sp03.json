@@ -1,0 +1,18 @@
+[
+    {"dutch": "eerste", "english": "first", "vietnamese": "thứ nhất"},
+    {"dutch": "tweede", "english": "second", "vietnamese": "thứ hai"},
+    {"dutch": "derde", "english": "third", "vietnamese": "thứ ba"},
+    {"dutch": "vierde", "english": "fourth", "vietnamese": "thứ tư"},
+    {"dutch": "vijfde", "english": "fifth", "vietnamese": "thứ năm"},
+    {"dutch": "zesde", "english": "sixth", "vietnamese": "thứ sáu"},
+    {"dutch": "zevende", "english": "seventh", "vietnamese": "thứ bảy"},
+    {"dutch": "achtste", "english": "eighth", "vietnamese": "thứ tám"},
+    {"dutch": "negende", "english": "ninth", "vietnamese": "thứ chín"},
+    {"dutch": "tiende", "english": "tenth", "vietnamese": "thứ mười"},
+    {"dutch": "laatste", "english": "last", "vietnamese": "cuối cùng"},
+    {"dutch": "rechts", "english": "right", "vietnamese": "phải"},
+    {"dutch": "links", "english": "left", "vietnamese": "trái"},
+    {"dutch": "de gang", "english": "the hallway", "vietnamese": "hành lang"},
+    {"dutch": "bij", "english": "at", "vietnamese": "tại"},
+    {"dutch": "zoeken", "english": "search", "vietnamese": "tìm kiếm"}
+]

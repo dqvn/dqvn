@@ -1,0 +1,17 @@
+[
+    {"dutch": "lezen", "english": "read", "vietnamese": "đọc"},
+    {"dutch": "schrijven", "english": "write", "vietnamese": "viết"},
+    {"dutch": "begrijpen", "english": "understand", "vietnamese": "hiểu"},
+    {"dutch": "leren", "english": "learn", "vietnamese": "học"},
+    {"dutch": "herhalen", "english": "repeat", "vietnamese": "nhắc lại"},
+    {"dutch": "naar", "english": "to", "vietnamese": "đến"},
+    {"dutch": "de les", "english": "the lesson", "vietnamese": "bài học"},
+    {"dutch": "de klas", "english": "the class", "vietnamese": "lớp học"},
+    {"dutch": "het bord", "english": "the board", "vietnamese": "bảng"},
+    {"dutch": "de stift", "english": "the marker", "vietnamese": "bút lông"},
+    {"dutch": "de stoel", "english": "the chair", "vietnamese": "ghế"},
+    {"dutch": "de bank", "english": "the bench", "vietnamese": "ghế dài"},
+    {"dutch": "de computer", "english": "the computer", "vietnamese": "máy tính"},
+    {"dutch": "de cursus", "english": "the course", "vietnamese": "khóa học"},
+    {"dutch": "de school", "english": "the school", "vietnamese": "trường học"}
+]
