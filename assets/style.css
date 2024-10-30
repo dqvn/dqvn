@@ -147,8 +147,7 @@ td:last-child {
     margin-right: 15px;
     position: sticky;
     top: 0;
-    /* height: fit-content; */
-    height: 800px; /* fixed height */
+    height: fit-content;
 }
 
 .left-menu h4 {
