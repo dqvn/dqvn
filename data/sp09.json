@@ -1,0 +1,22 @@
+[
+    {"dutch": "de ochtend", "english": "the morning", "vietnamese": "buổi sáng"},
+    {"dutch": "de middag", "english": "the afternoon", "vietnamese": "buổi chiều"},
+    {"dutch": "de avond", "english": "the evening", "vietnamese": "buổi tối"},
+    {"dutch": "de nacht", "english": "the night", "vietnamese": "ban đêm"},
+    {"dutch": "het café", "english": "the café", "vietnamese": "quán cà phê"},
+    {"dutch": "de week", "english": "the week", "vietnamese": "tuần"},
+    {"dutch": "de dag", "english": "the day", "vietnamese": "ngày"},
+    {"dutch": "maandag", "english": "Monday", "vietnamese": "thứ hai"},
+    {"dutch": "dinsdag", "english": "Tuesday", "vietnamese": "thứ ba"},
+    {"dutch": "woensdag", "english": "Wednesday", "vietnamese": "thứ tư"},
+    {"dutch": "donderdag", "english": "Thursday", "vietnamese": "thứ năm"},
+    {"dutch": "vrijdag", "english": "Friday", "vietnamese": "thứ sáu"},
+    {"dutch": "zaterdag", "english": "Saturday", "vietnamese": "thứ bảy"},
+    {"dutch": "zondag", "english": "Sunday", "vietnamese": "chủ nhật"},
+    {"dutch": "tot", "english": "until", "vietnamese": "đến"},
+    {"dutch": "misschien", "english": "maybe", "vietnamese": "có thể"},
+    {"dutch": "hoi", "english": "hi", "vietnamese": "chào"},
+    {"dutch": "hei", "english": "hey", "vietnamese": "chào"},
+    {"dutch": "volgende", "english": "next", "vietnamese": "tiếp theo"},
+    {"dutch": "gedaan", "english": "done", "vietnamese": "xong"}
+]

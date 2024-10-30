@@ -1,0 +1,17 @@
+[
+    {"dutch": "de vriend", "english": "the friend (male)", "vietnamese": "bạn (nam)"},
+    {"dutch": "de vriendin", "english": "the friend (female)", "vietnamese": "bạn (nữ)"},
+    {"dutch": "de collega", "english": "the colleague", "vietnamese": "đồng nghiệp"},
+    {"dutch": "de familie", "english": "the family", "vietnamese": "gia đình"},
+    {"dutch": "waarom", "english": "why", "vietnamese": "tại sao"},
+    {"dutch": "om te", "english": "in order to", "vietnamese": "để"},
+    {"dutch": "leuk", "english": "fun", "vietnamese": "vui"},
+    {"dutch": "saai", "english": "boring", "vietnamese": "chán"},
+    {"dutch": "middernacht", "english": "midnight", "vietnamese": "nửa đêm"},
+    {"dutch": "s ochtends", "english": "in the morning", "vietnamese": "vào buổi sáng"},
+    {"dutch": "s morgens", "english": "in the morning", "vietnamese": "vào buổi sáng"},
+    {"dutch": "s middags", "english": "in the afternoon", "vietnamese": "vào buổi chiều"},
+    {"dutch": "s avonds", "english": "in the evening", "vietnamese": "vào buổi tối"},
+    {"dutch": "s nachts", "english": "at night", "vietnamese": "vào ban đêm"},
+    {"dutch": "bellen", "english": "call", "vietnamese": "gọi điện"}
+]
