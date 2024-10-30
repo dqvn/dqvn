@@ -136,6 +136,12 @@ function speakEngText(text) {
   speechENG.text = text;
   speechENG.volume = volumeControl.value / 100;
   speechENG.voice = window.speechSynthesis.getVoices()[0];
+  // Check if speech synthesis is already speaking
+  if (window.speechSynthesis.speaking) {
+    console.log("Interrupting current speech.");
+    window.speechSynthesis.cancel(); // Cancel any ongoing speech
+  }
+  window.speechSynthesis.resume();
   window.speechSynthesis.speak(speechENG);
 }
 
