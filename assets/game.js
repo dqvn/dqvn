@@ -2,12 +2,11 @@ let currentWordIndex = 0;
 let correctCount = 0;
 let data = [];
 
-document.getElementById("start-button").addEventListener("click", startGame());
+document.getElementById("start-button").addEventListener("click", startGame123());
 
 function startGame123() {
   currentWordIndex = 0;
   correctCount = 0;
-  data = wordlist;
   console.log(wordList);
   document.getElementById("result").innerHTML = "";
   document.getElementById("popup").style.display = "block";
@@ -15,9 +14,9 @@ function startGame123() {
 }
 
 function showWord() {
-  const word = data[currentWordIndex];
+  const word = wordlist[currentWordIndex];
   document.getElementById("word").innerHTML = word.dutch;
-  const options = [word.english,...getRandomOptions(data, word.english)];
+  const options = [word.english,...getRandomOptions(wordlist, word.english)];
   document.getElementById("options").innerHTML = "";
   for (let i = 0; i < options.length; i++) {
     const option = document.createElement("p");
@@ -27,12 +26,12 @@ function showWord() {
   document.getElementById("meaning").innerHTML = "";
 }
 
-function getRandomOptions(data, correctOption) {
+function getRandomOptions(wordlist, correctOption) {
   const options = [];
   while (options.length < 4) {
-    const randomIndex = Math.floor(Math.random() * data.length);
-    if (data[randomIndex].english!== correctOption &&!options.includes(data[randomIndex].english)) {
-      options.push(data[randomIndex].english);
+    const randomIndex = Math.floor(Math.random() * wordlist.length);
+    if (wordlist[randomIndex].english!== correctOption &&!options.includes(wordlist[randomIndex].english)) {
+      options.push(wordlist[randomIndex].english);
     }
   }
   return options;
@@ -54,8 +53,8 @@ function submitAnswer() {
     alert("Incorrect. The correct answer is " + correctOption);
   }
   currentWordIndex++;
-  if (currentWordIndex >= data.length) {
-    document.getElementById("result").innerHTML = "Game over! You got " + correctCount + " out of " + data.length + " correct";
+  if (currentWordIndex >= wordlist.length) {
+    document.getElementById("result").innerHTML = "Game over! You got " + correctCount + " out of " + wordlist.length + " correct";
     document.getElementById("popup").style.display = "none";
   } else {
     showWord();
