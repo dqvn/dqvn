@@ -2,9 +2,9 @@ let currentWordIndex = 0;
 let correctCount = 0;
 let data = [];
 
-document.getElementById("start-button").addEventListener("click", startGame123());
+document.getElementById("start-button").addEventListener("click", startGame);
 
-function startGame123() {
+function startGame() {
   currentWordIndex = 0;
   correctCount = 0;
   console.log(wordList);
