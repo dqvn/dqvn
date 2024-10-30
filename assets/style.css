@@ -148,7 +148,7 @@ td:last-child {
     position: sticky;
     top: 0;
     /* height: fit-content; */
-    height: 500px; /* fixed height */
+    height: 800px; /* fixed height */
 }
 
 .left-menu h4 {
@@ -181,6 +181,10 @@ td:last-child {
 .left-menu li:hover {
     background-color: transparent;
     border-bottom: 2px solid #e0e0e0;
+}
+
+.file-container {
+    height: 600px;
 }
 
 /* Table */
