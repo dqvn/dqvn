@@ -1,6 +1,6 @@
 let currentWordIndex = 0;
 let correctCount = 0;
-const data = [];
+let data = [];
 
 document.getElementById("start-button").addEventListener("click", startGame(wordList));
 
