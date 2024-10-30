@@ -4,7 +4,7 @@ let data = [];
 
 document.getElementById("start-button").addEventListener("click", startGame());
 
-function startGame() {
+function startGame123() {
   currentWordIndex = 0;
   correctCount = 0;
   data = wordlist;
