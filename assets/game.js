@@ -10,7 +10,7 @@ function startGame() {
   console.log(wordList);
   document.getElementById("result").innerHTML = "";
   document.getElementById("popup").style.display = "block";
-  showWord(wordlist);
+  showWord(wordList);
 }
 
 function showWord(wordlist) {
