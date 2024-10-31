@@ -1,0 +1,21 @@
+[
+    {"dutch": "het cijfer", "english": "the number", "vietnamese": "số"},
+    {"dutch": "het getal", "english": "the digit", "vietnamese": "chữ số"},
+    {"dutch": "de leerkracht", "english": "the teacher", "vietnamese": "giáo viên"},
+    {"dutch": "nul", "english": "zero", "vietnamese": "không"},
+    {"dutch": "dertig", "english": "thirty", "vietnamese": "ba mươi"},
+    {"dutch": "veertig", "english": "forty", "vietnamese": "bốn mươi"},
+    {"dutch": "vijftig", "english": "fifty", "vietnamese": "năm mươi"},
+    {"dutch": "zestig", "english": "sixty", "vietnamese": "sáu mươi"},
+    {"dutch": "zeventig", "english": "seventy", "vietnamese": "bảy mươi"},
+    {"dutch": "tachtig", "english": "eighty", "vietnamese": "tám mươi"},
+    {"dutch": "negentig", "english": "ninety", "vietnamese": "chín mươi"},
+    {"dutch": "honderd", "english": "hundred", "vietnamese": "một trăm"},
+    {"dutch": "een miljoen", "english": "one million", "vietnamese": "một triệu"},
+    {"dutch": "een miljard", "english": "one billion", "vietnamese": "một tỷ"},
+    {"dutch": "maal", "english": "times", "vietnamese": "nhân"},
+    {"dutch": "gedeeld door", "english": "divided by", "vietnamese": "chia cho"},
+    {"dutch": "ongeveer", "english": "approximately", "vietnamese": "khoảng"},
+    {"dutch": "zou / zouden", "english": "would", "vietnamese": "sẽ"},
+    {"dutch": "weten", "english": "know", "vietnamese": "biết"}
+]

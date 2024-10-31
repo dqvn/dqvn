@@ -1,0 +1,21 @@
+[
+    {"dutch": "de verhuurder", "english": "the landlord", "vietnamese": "chủ nhà"},
+    {"dutch": "de huurder", "english": "the tenant", "vietnamese": "người thuê nhà"},
+    {"dutch": "de huur", "english": "the rent", "vietnamese": "tiền thuê"},
+    {"dutch": "de klant", "english": "the customer", "vietnamese": "khách hàng"},
+    {"dutch": "Italiaans", "english": "Italian", "vietnamese": "tiếng Ý"},
+    {"dutch": "Russisch", "english": "Russian", "vietnamese": "tiếng Nga"},
+    {"dutch": "Arabisch", "english": "Arabic", "vietnamese": "tiếng Ả Rập"},
+    {"dutch": "Mexico", "english": "Mexico", "vietnamese": "Mexico"},
+    {"dutch": "Oostenrijk", "english": "Austria", "vietnamese": "Áo"},
+    {"dutch": "Brazilië", "english": "Brazil", "vietnamese": "Brazil"},
+    {"dutch": "Italië", "english": "Italy", "vietnamese": "Ý"},
+    {"dutch": "Rusland", "english": "Russia", "vietnamese": "Nga"},
+    {"dutch": "Egypte", "english": "Egypt", "vietnamese": "Ai Cập"},
+    {"dutch": "Nederlandstalig", "english": "Dutch-speaking", "vietnamese": "nói tiếng Hà Lan"},
+    {"dutch": "aan", "english": "to", "vietnamese": "đến"},
+    {"dutch": "verhuren", "english": "rent out", "vietnamese": "cho thuê"},
+    {"dutch": "verkopen", "english": "sell", "vietnamese": "bán"},
+    {"dutch": "helpen", "english": "help", "vietnamese": "giúp đỡ"},
+    {"dutch": "verbeteren", "english": "improve", "vietnamese": "cải thiện"}
+]

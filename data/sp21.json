@@ -1,0 +1,20 @@
+[
+    {"dutch": "de kamer", "english": "the room", "vietnamese": "phòng"},
+    {"dutch": "de slaapkamer", "english": "the bedroom", "vietnamese": "phòng ngủ"},
+    {"dutch": "de badkamer", "english": "the bathroom", "vietnamese": "phòng tắm"},
+    {"dutch": "het salon", "english": "the living room", "vietnamese": "phòng khách"},
+    {"dutch": "de living", "english": "the living room", "vietnamese": "phòng khách"},
+    {"dutch": "de keuken", "english": "the kitchen", "vietnamese": "nhà bếp"},
+    {"dutch": "het wc", "english": "the toilet", "vietnamese": "nhà vệ sinh"},
+    {"dutch": "het toilet", "english": "the toilet", "vietnamese": "nhà vệ sinh"},
+    {"dutch": "de garage", "english": "the garage", "vietnamese": "nhà để xe"},
+    {"dutch": "de buurt", "english": "the neighborhood", "vietnamese": "khu phố"},
+    {"dutch": "niets", "english": "nothing", "vietnamese": "không có gì"},
+    {"dutch": "iets", "english": "something", "vietnamese": "một cái gì đó"},
+    {"dutch": "alles", "english": "everything", "vietnamese": "mọi thứ"},
+    {"dutch": "ver", "english": "far", "vietnamese": "xa"},
+    {"dutch": "vinden", "english": "find", "vietnamese": "tìm thấy"},
+    {"dutch": "nodig hebben", "english": "need", "vietnamese": "cần"},
+    {"dutch": "huren", "english": "rent", "vietnamese": "thuê"},
+    {"dutch": "kopen", "english": "buy", "vietnamese": "mua"}
+]
