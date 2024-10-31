@@ -1,0 +1,23 @@
+[
+    {"dutch": "het geld", "english": "the money", "vietnamese": "tiền"},
+    {"dutch": "de rekening", "english": "the bill", "vietnamese": "hóa đơn"},
+    {"dutch": "de rest", "english": "the rest", "vietnamese": "phần còn lại"},
+    {"dutch": "de kaart", "english": "the card", "vietnamese": "thẻ"},
+    {"dutch": "de kredietkaart", "english": "the credit card", "vietnamese": "thẻ tín dụng"},
+    {"dutch": "de komma", "english": "the comma", "vietnamese": "dấu phẩy"},
+    {"dutch": "de cent", "english": "the cent", "vietnamese": "xu"},
+    {"dutch": "apart", "english": "separate", "vietnamese": "riêng biệt"},
+    {"dutch": "samen", "english": "together", "vietnamese": "cùng nhau"},
+    {"dutch": "weer", "english": "again", "vietnamese": "lại"},
+    {"dutch": "alweer", "english": "again", "vietnamese": "lại nữa"},
+    {"dutch": "me / mij", "english": "me", "vietnamese": "tôi"},
+    {"dutch": "je / jou", "english": "you (informal)", "vietnamese": "bạn"},
+    {"dutch": "hem", "english": "him", "vietnamese": "anh ấy"},
+    {"dutch": "haar", "english": "her", "vietnamese": "cô ấy"},
+    {"dutch": "ons", "english": "us", "vietnamese": "chúng tôi"},
+    {"dutch": "jullie", "english": "you (plural)", "vietnamese": "các bạn"},
+    {"dutch": "hen", "english": "them", "vietnamese": "họ"},
+    {"dutch": "geven", "english": "give", "vietnamese": "cho"},
+    {"dutch": "betalen", "english": "pay", "vietnamese": "trả tiền"},
+    {"dutch": "houden", "english": "keep", "vietnamese": "giữ"}
+]

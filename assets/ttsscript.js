@@ -1,7 +1,7 @@
 const TTSName = 'Google Nederlands';
 const TTSLang = 'nl-NL';
 const TTSLangENG = 'en-US';
-const fileNames = ["ch01", "ch03", "ch02", "ch04", "ch05", "ch06", "ch07", "ch08", "ch09", "ch10", "sp02", "sp03", "sp04", "sp05", "sp06", "sp07", "sp08", "sp09", "sp10", "sp11", "sp12", "sp13", "sp14", "sp15"];
+const fileNames = ["ch01", "ch03", "ch02", "ch04", "ch05", "ch06", "ch07", "ch08", "ch09", "ch10", "sp02", "sp03", "sp04", "sp05", "sp06", "sp07", "sp08", "sp09", "sp10", "sp11", "sp12", "sp13", "sp14", "sp15", "sp16", "sp17", "sp18", "sp19", "sp20", "sp21", "sp22", "sp23"];
 const INTERVAL_TIME = 8000;
 
 // create a table body element
