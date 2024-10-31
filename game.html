@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dutch-English Vocabulary Game</title>
+<style>
+  #game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #options button {
+    margin: 10px;
+    padding: 8px 16px;
+  }
+</style>
+</head>
+<body>
+
+<div id="game-container">
+  <h1>Dutch-English Vocabulary Game</h1>
+  <div id="question"></div>
+  <div id="options"></div>
+  <div id="result"></div>
+</div>
+
+<script>
+const data = [
+    {"dutch": "lezen", "english": "read", "vietnamese": "đọc"},
+    {"dutch": "schrijven", "english": "write", "vietnamese": "viết"},
+    {"dutch": "begrijpen", "english": "understand", "vietnamese": "hiểu"},
+    {"dutch": "leren", "english": "learn", "vietnamese": "học"},
+    {"dutch": "herhalen", "english": "repeat", "vietnamese": "nhắc lại"},
+    {"dutch": "naar", "english": "to", "vietnamese": "đến"},
+    {"dutch": "de les", "english": "the lesson", "vietnamese": "bài học"},
+    {"dutch": "de klas", "english": "the class", "vietnamese": "lớp học"},
+    {"dutch": "het bord", "english": "the board", "vietnamese": "bảng"},
+    {"dutch": "de stift", "english": "the marker", "vietnamese": "bút lông"},
+    {"dutch": "de stoel", "english": "the chair", "vietnamese": "ghế"},
+    {"dutch": "de bank", "english": "the bench", "vietnamese": "ghế dài"},
+    {"dutch": "de computer", "english": "the computer", "vietnamese": "máy tính"},
+    {"dutch": "de cursus", "english": "the course", "vietnamese": "khóa học"},
+    {"dutch": "de school", "english": "the school", "vietnamese": "trường học"}
+];
+
+let correctAnswers = 0;
+let currentWordIndex = 0;
+
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+function showQuestion() {
+  if (currentWordIndex < 10 && currentWordIndex < data.length) {
+    const currentWord = data[currentWordIndex];
+
+    const options = [currentWord.english];
+    while (options.length < 5) {
+      const randomIndex = Math.floor(Math.random() * data.length);
+      const randomOption = data[randomIndex].english;
+      if (!options.includes(randomOption)) {
+        options.push(randomOption);
+      }
+    }
+    shuffle(options);
+
+    const questionDiv = document.getElementById('question');
+    const optionsDiv = document.getElementById('options');
+
+    questionDiv.textContent = `What is the English meaning of "${currentWord.dutch}"?`;
+    optionsDiv.innerHTML = ""; 
+
+    options.forEach((option, index) => {
+        const button = document.createElement('button');
+        button.textContent = option;
+        button.onclick = () => checkAnswer(option, currentWord.english);
+        optionsDiv.appendChild(button);
+    });
+
+  } else {
+    showResult();
+  }
+}
+
+function checkAnswer(selectedOption, correctAnswer) {
+  if (selectedOption === correctAnswer) {
+    correctAnswers++;
+    document.getElementById('result').textContent = "Correct!";
+  } else {
+    document.getElementById('result').textContent = `Incorrect. The correct answer is ${correctAnswer}.`;
+  }
+
+  currentWordIndex++;
+  setTimeout(showQuestion, 1000); 
+}
+
+function showResult() {
+    document.getElementById('result').textContent = `Game over! You got ${correctAnswers} out of ${Math.min(10, data.length)} correct.`;
+    document.getElementById('question').textContent = ''; 
+    document.getElementById('options').innerHTML = '';  
+
+}
+
+showQuestion();
+</script>
+
+</body>
+</html>
