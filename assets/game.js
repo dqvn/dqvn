@@ -86,6 +86,5 @@ function getRandomData(listData, count) {
         const randomIndex = Math.floor(Math.random() * listData.length);
         randomData.push(listData[randomIndex]);
     }
-    console.log(randomData);
     return randomData;
 }
