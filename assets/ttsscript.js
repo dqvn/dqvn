@@ -77,6 +77,13 @@ function createLeftMenu() {
 
 // function to speak the word using Web SpeechSynthesis API
 function speakText(text) {
+  // Check if speech synthesis is already speaking
+  if (window.speechSynthesis.speaking) {
+    console.log("Interrupting current speech.");
+    window.speechSynthesis.cancel(); // Cancel any ongoing speech
+  }
+  window.speechSynthesis.resume();
+  
   const availableVoices = window.speechSynthesis.getVoices();
   if (availableVoices.length <= 0) {
     document.getElementById('tts-name').innerHTML = 'No voices available!';
@@ -115,12 +122,7 @@ function speakText(text) {
     speech.onerror = (event) => {
       console.error("Speech synthesis error:", event.error);
     };
-    // Check if speech synthesis is already speaking
-    if (window.speechSynthesis.speaking) {
-      console.log("Interrupting current speech.");
-      window.speechSynthesis.cancel(); // Cancel any ongoing speech
-    }
-    window.speechSynthesis.resume();
+    
     window.speechSynthesis.speak(speech);
     // Optional: Add an event listener to detect errors
 
