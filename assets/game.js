@@ -32,6 +32,7 @@ function showQuestion() {
         titleDiv.textContent = `Dutch word: "${currentWord.dutch}"?`;
         questionDiv.textContent = `What is the English meaning of "${currentWord.dutch}"?`;
         optionsDiv.innerHTML = "";
+        speakText(currentWord.dutch);
 
         options.forEach((option, index) => {
             const button = document.createElement('button');
