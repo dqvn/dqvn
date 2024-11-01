@@ -57,7 +57,7 @@ function checkAnswer(selectedOption, correctAnswer) {
     }
 
     currentWordIndex++;
-    setTimeout(showQuestion, 1000);
+    setTimeout(showQuestion, 3000);
 }
 
 function showResult() {
