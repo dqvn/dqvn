@@ -417,7 +417,7 @@ button:hover {
 }
 
 #game-container>* {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     /* Add space between each item */
 }
 
