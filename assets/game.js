@@ -27,7 +27,9 @@ function showQuestion() {
 
         const questionDiv = document.getElementById('question');
         const optionsDiv = document.getElementById('options');
+        const titleDiv = document.getElementById('game-container').querySelector('h1');
 
+        titleDiv.textContent = `Dutch word: "${currentWord.dutch}"?`;
         questionDiv.textContent = `What is the English meaning of "${currentWord.dutch}"?`;
         optionsDiv.innerHTML = "";
 
