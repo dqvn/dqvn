@@ -19,7 +19,7 @@ function showQuestion() {
         const currentWord = data[currentWordIndex];
 
         const options = [currentWord.english];
-        while (options.length < 5) {
+        while (options.length < 10) {
             const randomIndex = Math.floor(Math.random() * data.length);
             const randomOption = data[randomIndex].english;
             if (!options.includes(randomOption)) {
