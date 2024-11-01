@@ -49,6 +49,11 @@ document.addEventListener('DOMContentLoaded', function () {
   noSleep.enable();
 });
 
+// Show Game Play button
+document.getElementById('start-button').addEventListener('click', () => {
+  showQuestion();
+});
+
 // ========================
 // =       Functions      =
 // ========================
