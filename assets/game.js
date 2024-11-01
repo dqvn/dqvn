@@ -1,5 +1,6 @@
 let correctAnswers = 0;
 let currentWordIndex = 0;
+let data = [];
 
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -10,7 +11,7 @@ function shuffle(array) {
 
 function showQuestion() {
     document.getElementById('popup').style.display = 'flex';
-    let data = wordList;
+    data = wordList;
     if (currentWordIndex < 10 && currentWordIndex < data.length) {
         const currentWord = data[currentWordIndex];
 
