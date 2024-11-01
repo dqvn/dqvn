@@ -9,6 +9,7 @@ function shuffle(array) {
 }
 
 function showQuestion() {
+    document.getElementById('popup').style.display = 'flex';
     if (currentWordIndex < 10 && currentWordIndex < data.length) {
         const currentWord = data[currentWordIndex];
 
