@@ -1,6 +1,7 @@
 let correctAnswers = 0;
 let currentWordIndex = 0;
 let data = [];
+let maxNumber = 15;
 
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -11,8 +12,7 @@ function shuffle(array) {
 
 function showQuestion() {
     document.getElementById('popup').style.display = 'flex';
-    
-    const maxNumber = Math.min(15, wordList.length);
+    maxNumber = Math.min(15, wordList.length);
     data = getRandomData(wordList, maxNumber);
 
     if (currentWordIndex < maxNumber && currentWordIndex < data.length) {
@@ -66,7 +66,7 @@ function checkAnswer(selectedOption, correctAnswer) {
 }
 
 function showResult() {
-    document.getElementById('result').textContent = `Game over! You got ${correctAnswers} out of ${Math.min(10, data.length)} correct.`;
+    document.getElementById('result').textContent = `Game over! You got ${correctAnswers} out of ${maxNumber} correct.`;
     document.getElementById('question').textContent = '';
     document.getElementById('options').innerHTML = '';
     let intervalId = setInterval(() => {
