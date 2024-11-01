@@ -59,7 +59,13 @@ function showResult() {
     document.getElementById('result').textContent = `Game over! You got ${correctAnswers} out of ${Math.min(10, data.length)} correct.`;
     document.getElementById('question').textContent = '';
     document.getElementById('options').innerHTML = '';
-
+    let intervalId = setInterval(() => {
+        document.getElementById('popup').style.display = 'none';
+        data = [];
+        correctAnswers = 0;
+        currentWordIndex = 0;
+        clearInterval(intervalId);
+    }, 3000);
 }
 
 // Function to get 10 random items from data
