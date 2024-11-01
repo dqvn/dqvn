@@ -43,7 +43,7 @@ function showQuestion() {
             const button = document.createElement('button');
             button.textContent = option;
             button.onclick = () => checkAnswer(option, currentWord.english);
-            optionsDiv.appendChild(button);
+            optionsDiv.appendChild(button); //
         });
 
     } else {
