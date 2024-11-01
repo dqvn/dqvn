@@ -11,7 +11,7 @@ function shuffle(array) {
 
 function showQuestion() {
     document.getElementById('popup').style.display = 'flex';
-    data = wordList;
+    data = getRandomData(wordList, 10); // Get 10 random items from data
     if (currentWordIndex < 10 && currentWordIndex < data.length) {
         const currentWord = data[currentWordIndex];
 
@@ -60,4 +60,15 @@ function showResult() {
     document.getElementById('question').textContent = '';
     document.getElementById('options').innerHTML = '';
 
+}
+
+// Function to get 10 random items from data
+function getRandomData(listData, count) {
+    const randomData = [];
+    for (let i = 0; i < count; i++) {
+        const randomIndex = Math.floor(Math.random() * listData.length);
+        randomData.push(listData[randomIndex]);
+    }
+    console.log(randomData);
+    return randomData;
 }
