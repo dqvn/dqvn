@@ -353,7 +353,7 @@ button:hover {
 .volume-control-container {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 1px;
 }
 
 #volume-control {
