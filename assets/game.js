@@ -11,8 +11,11 @@ function shuffle(array) {
 
 function showQuestion() {
     document.getElementById('popup').style.display = 'flex';
-    data = getRandomData(wordList, 10); // Get 10 random items from data
-    if (currentWordIndex < 10 && currentWordIndex < data.length) {
+    
+    const maxNumber = Math.min(15, wordList.length);
+    data = getRandomData(wordList, maxNumber);
+
+    if (currentWordIndex < maxNumber && currentWordIndex < data.length) {
         const currentWord = data[currentWordIndex];
 
         const options = [currentWord.english];
