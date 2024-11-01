@@ -31,10 +31,12 @@ function showQuestion() {
         const questionDiv = document.getElementById('question');
         const optionsDiv = document.getElementById('options');
         const titleDiv = document.getElementById('game-container').querySelector('h1');
+        const resultDiv = document.getElementById('result');
 
         titleDiv.textContent = `Dutch word: "${currentWord.dutch}"?`;
         questionDiv.textContent = `What is the English meaning of "${currentWord.dutch}"?`;
         optionsDiv.innerHTML = "";
+        resultDiv.textContent = "";
         speakText(currentWord.dutch);
 
         options.forEach((option, index) => {
