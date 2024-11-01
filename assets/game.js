@@ -80,14 +80,6 @@ function showResult() {
 }
 
 // Function to get 10 random items from data
-// function getRandomData(listData, count) {
-//     const randomData = [];
-//     for (let i = 0; i < count; i++) {
-//         const randomIndex = Math.floor(Math.random() * listData.length);
-//         randomData.push(listData[randomIndex]);
-//     }
-//     return randomData;
-// }
 function getRandomData(listData, count) {
     const randomData = [];
     const selectedIndices = new Set();
