@@ -83,7 +83,7 @@ function speakText(text) {
     window.speechSynthesis.cancel(); // Cancel any ongoing speech
   }
   window.speechSynthesis.resume();
-  
+
   const availableVoices = window.speechSynthesis.getVoices();
   if (availableVoices.length <= 0) {
     document.getElementById('tts-name').innerHTML = 'No voices available!';
@@ -141,6 +141,7 @@ function speakText(text) {
 function speakEngText(text) {
   const speechENG = new SpeechSynthesisUtterance();
   speechENG.text = text;
+  speechENG.rate = 0.9;
   speechENG.volume = volumeControl.value / 100;
   speechENG.voice = window.speechSynthesis.getVoices()[0];
   window.speechSynthesis.speak(speechENG);
