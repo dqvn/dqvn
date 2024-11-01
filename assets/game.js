@@ -49,9 +49,11 @@ function showQuestion() {
 function checkAnswer(selectedOption, correctAnswer) {
     if (selectedOption === correctAnswer) {
         correctAnswers++;
+        speakEngText("Correct");
         document.getElementById('result').textContent = "Correct!";
     } else {
         document.getElementById('result').textContent = `Incorrect. The correct answer is ${correctAnswer}.`;
+        speakEngText("Incorrect. The correct answer is " + correctAnswer);
     }
 
     currentWordIndex++;
