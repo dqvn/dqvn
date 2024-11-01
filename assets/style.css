@@ -416,6 +416,11 @@ button:hover {
     align-items: center;
 }
 
+#game-container>* {
+    margin-bottom: 10px;
+    /* Add space between each item */
+}
+
 #options button {
     margin: 10px;
     padding: 8px 16px;
