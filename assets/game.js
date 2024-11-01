@@ -66,6 +66,7 @@ function showResult() {
         data = [];
         correctAnswers = 0;
         currentWordIndex = 0;
+        document.getElementById('result').textContent = "Let's go!!!";
         clearInterval(intervalId);
     }, 3000);
 }
