@@ -90,6 +90,11 @@ function showResult() {
 function getRandomData(listData, count) {
     const randomData = [];
     const selectedIndices = new Set();
+    // check if recentGames covered more than count
+    if (listData.length - recentGames.length < count) {
+        recentGames = []; // reset the recentGames
+    }
+
     while (randomData.length < count) {
         const randomIndex = Math.floor(Math.random() * listData.length);
         if (!selectedIndices.has(randomIndex) && !recentGames.includes(listData[randomIndex])) {
