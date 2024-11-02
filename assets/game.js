@@ -45,7 +45,7 @@ function showQuestion() {
         options.forEach((option, index) => {
             const button = document.createElement('button');
             button.textContent = option;
-            button.onclick = () => checkAnswer(option, currentWord.english);
+            button.onclick = () => checkAnswer(option, currentWord.english, currentWord.index);
             optionsDiv.appendChild(button); //
         });
 
@@ -57,9 +57,12 @@ function showQuestion() {
 function checkAnswer(selectedOption, correctAnswer) {
     if (selectedOption === correctAnswer) {
         correctAnswers++;
+        recentGames.push(correctAnswer);
         speakEngText("Correct: " + correctAnswer);
         document.getElementById('result').textContent = "Correct!";
     } else {
+        // Remove all items that match "Game 2"
+        recentGames = recentGames.filter(game => game!== correctAnswer);
         document.getElementById('result').textContent = `Incorrect. The correct answer is ${correctAnswer}.`;
         speakEngText("Incorrect. The correct answer is " + correctAnswer);
     }
@@ -88,8 +91,8 @@ function getRandomData(listData, count) {
     const randomData = [];
     const selectedIndices = new Set();
     while (randomData.length < count) {
-        const randomIndex = getNewRandomNumberCSPRNG(0, listData.length - 1, recentGames); // Math.floor(Math.random() * listData.length);
-        if (!selectedIndices.has(randomIndex)) {
+        const randomIndex = Math.floor(Math.random() * listData.length);
+        if (!selectedIndices.has(randomIndex) && !recentGames.includes(listData[randomIndex])) {
             randomData.push(listData[randomIndex]);
             selectedIndices.add(randomIndex);
         }
