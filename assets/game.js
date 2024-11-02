@@ -1,6 +1,7 @@
 let correctAnswers = 0;
 let currentWordIndex = 0;
 let data = [];
+const recentGames = [];
 let maxNumber = 15;
 
 function shuffle(array) {
@@ -87,7 +88,7 @@ function getRandomData(listData, count) {
     const randomData = [];
     const selectedIndices = new Set();
     while (randomData.length < count) {
-        const randomIndex = Math.floor(Math.random() * listData.length);
+        const randomIndex = getNewRandomNumberCSPRNG(0, listData.length - 1, recentGames); // Math.floor(Math.random() * listData.length);
         if (!selectedIndices.has(randomIndex)) {
             randomData.push(listData[randomIndex]);
             selectedIndices.add(randomIndex);
