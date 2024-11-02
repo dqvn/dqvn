@@ -1,7 +1,7 @@
 let correctAnswers = 0;
 let currentWordIndex = 0;
 let data = [];
-const recentGames = [];
+let recentGames = [];
 let maxNumber = 15;
 
 function shuffle(array) {
