@@ -13,7 +13,7 @@ function shuffle(array) {
 function showQuestion() {
     document.getElementById('popup').style.display = 'flex';
     maxNumber = Math.min(15, wordList.length);
-    data = getRandomData(wordList, maxNumber);
+    data = data || getRandomData(wordList, maxNumber);
 
     if (currentWordIndex < maxNumber && currentWordIndex < data.length) {
         const currentWord = data[currentWordIndex];
