@@ -68,6 +68,7 @@ function checkAnswer(selectedOption, correctAnswer) {
 }
 
 function showResult() {
+    document.getElementById('game-container').querySelector('h1').textContent = 'The game is finished!';
     document.getElementById('result').textContent = `Game over! You got ${correctAnswers} out of ${maxNumber} correct.`;
     document.getElementById('question').textContent = '';
     document.getElementById('options').innerHTML = '';
