@@ -38,7 +38,7 @@ playStopButton.addEventListener('click', () => {
 createLeftMenu();
 
 // init data
-loadJsonData('ch04', reloadTable);
+loadJsonData('ch05', reloadTable);
 
 // set footer year
 year.textContent = new Date().getFullYear();
