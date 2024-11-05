@@ -75,7 +75,7 @@ function showQuestion() {
     options.forEach((option, index) => {
         const button = document.createElement('button');
         button.textContent = option;
-        button.onclick = () => checkAnswer(option, currentWord.english);
+        button.onclick = () => checkAnswer(option, currentWord.english, button);
         optionsDiv.appendChild(button);
     });
 
@@ -84,7 +84,8 @@ function showQuestion() {
   }
 }
 
-function checkAnswer(selectedOption, correctAnswer) {
+function checkAnswer(selectedOption, correctAnswer, button) {
+  button.disabled = true;
   if (selectedOption === correctAnswer) {
     correctAnswers++;
     document.getElementById('result').textContent = "Correct!";
@@ -93,7 +94,8 @@ function checkAnswer(selectedOption, correctAnswer) {
   }
 
   currentWordIndex++;
-  setTimeout(showQuestion, 1000); 
+  setTimeout(showQuestion, 1000);
+  button.disabled = false;
 }
 
 function showResult() {
