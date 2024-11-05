@@ -58,11 +58,15 @@ function checkAnswer(selectedOption, correctAnswer) {
     if (selectedOption === correctAnswer) {
         correctAnswers++;
         recentGames.push(correctAnswer);
+        // remove duplicate words
+        recentGames = recentGames.filter((item, index, self) => {
+            return index === self.indexOf(item);
+        });
         speakEngText("Correct: " + correctAnswer);
         document.getElementById('result').textContent = "Correct!";
     } else {
         // Remove all items that match "Game 2"
-        recentGames = recentGames.filter(game => game!== correctAnswer);
+        recentGames = recentGames.filter(game => game !== correctAnswer);
         document.getElementById('result').textContent = `Incorrect. The correct answer is ${correctAnswer}.`;
         speakEngText("Incorrect. The correct answer is " + correctAnswer);
     }
