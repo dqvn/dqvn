@@ -45,7 +45,7 @@ function showQuestion() {
         options.forEach((option, index) => {
             const button = document.createElement('button');
             button.textContent = option;
-            button.onclick = () => checkAnswer(option, currentWord.english, currentWord.index, button);
+            button.onclick = () => checkAnswer(option, currentWord.english, currentWord.index);
             optionsDiv.appendChild(button); //
         });
 
@@ -54,8 +54,8 @@ function showQuestion() {
     }
 }
 
-function checkAnswer(selectedOption, correctAnswer, button) {
-    button.disabled = true;
+function checkAnswer(selectedOption, correctAnswer) {
+    document.querySelectorAll('#options button').forEach(button => button.disabled = true);
     if (selectedOption === correctAnswer) {
         correctAnswers++;
         recentGames.push(correctAnswer);
@@ -70,7 +70,7 @@ function checkAnswer(selectedOption, correctAnswer, button) {
 
     currentWordIndex++;
     setTimeout(showQuestion, 3000);
-    button.disabled = false;
+    document.querySelectorAll('#options button').forEach(button => button.disabled = false);
 }
 
 function showResult() {
