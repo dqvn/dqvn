@@ -55,7 +55,6 @@ function showQuestion() {
 }
 
 function checkAnswer(selectedOption, correctAnswer) {
-    document.querySelectorAll('#options button').forEach(button => button.disabled = true);
     if (selectedOption === correctAnswer) {
         correctAnswers++;
         recentGames.push(correctAnswer);
@@ -70,7 +69,6 @@ function checkAnswer(selectedOption, correctAnswer) {
 
     currentWordIndex++;
     setTimeout(showQuestion, 3000);
-    document.querySelectorAll('#options button').forEach(button => button.disabled = false);
 }
 
 function showResult() {
