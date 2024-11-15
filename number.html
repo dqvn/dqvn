@@ -72,18 +72,18 @@
             }, {once: true});
 
 
-            // // Vietnamese TTS 
-            // const synth = window.speechSynthesis;
-            // const utterance = new SpeechSynthesisUtterance(randomNumber.toString());
-            // utterance.lang = 'vi-VN'; 
-            // synth.speak(utterance);
+            // Vietnamese TTS 
+            const synth = window.speechSynthesis;
+            const utterance = new SpeechSynthesisUtterance(randomNumber.toString());
+            utterance.lang = 'vi-VN'; 
+            synth.speak(utterance);
             // Delay TTS by 5 seconds using setTimeout
-            setTimeout(() => {
-                const synth = window.speechSynthesis;
-                const utterance = new SpeechSynthesisUtterance(randomNumber.toString());
-                utterance.lang = 'vi-VN';
-                synth.speak(utterance);
-            }, 3000); // 5000 milliseconds = 5 seconds
+            // setTimeout(() => {
+            //     const synth = window.speechSynthesis;
+            //     const utterance = new SpeechSynthesisUtterance(randomNumber.toString());
+            //     utterance.lang = 'vi-VN';
+            //     synth.speak(utterance);
+            // }, 3000); // 5000 milliseconds = 5 seconds
 
         }
 
