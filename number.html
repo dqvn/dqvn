@@ -17,9 +17,9 @@
         }
 
         #number-display {
-            font-size: 150px;
+            font-size: 220px;
             color: #3498db; 
-            margin-bottom: 20px;
+            margin-bottom: 50px;
             -webkit-text-stroke: 2px white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
@@ -72,14 +72,18 @@
             }, {once: true});
 
 
-            // Vietnamese TTS 
+            // // Vietnamese TTS 
+            // const synth = window.speechSynthesis;
+            // const utterance = new SpeechSynthesisUtterance(randomNumber.toString());
+            // utterance.lang = 'vi-VN'; 
+            // synth.speak(utterance);
+            // Delay TTS by 5 seconds using setTimeout
             setTimeout(() => {
                 const synth = window.speechSynthesis;
                 const utterance = new SpeechSynthesisUtterance(randomNumber.toString());
-                utterance.lang = 'vi-VN'; 
+                utterance.lang = 'vi-VN';
                 synth.speak(utterance);
-            }, 5000);
-            
+            }, 3000); // 5000 milliseconds = 5 seconds
 
         }
 
