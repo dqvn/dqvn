@@ -17,7 +17,7 @@
         }
 
         #number-display {
-            font-size: 120px;
+            font-size: 150px;
             color: #3498db; 
             margin-bottom: 20px;
             -webkit-text-stroke: 2px white;
@@ -73,10 +73,13 @@
 
 
             // Vietnamese TTS 
-            const synth = window.speechSynthesis;
-            const utterance = new SpeechSynthesisUtterance(randomNumber.toString());
-            utterance.lang = 'vi-VN'; 
-            synth.speak(utterance);
+            setTimeout(() => {
+                const synth = window.speechSynthesis;
+                const utterance = new SpeechSynthesisUtterance(randomNumber.toString());
+                utterance.lang = 'vi-VN'; 
+                synth.speak(utterance);
+            }, 5000);
+            
 
         }
 
