@@ -1,0 +1,15 @@
+[
+    {"dutch": "de laan", "english": "the avenue", "vietnamese": "đại lộ"},
+    {"dutch": "de weg", "english": "the road", "vietnamese": "con đường"},
+    {"dutch": "de snelweg", "english": "the highway", "vietnamese": "đường cao tốc"},
+    {"dutch": "de koning", "english": "the king", "vietnamese": "vị vua"},
+    {"dutch": "beleefd", "english": "polite", "vietnamese": "lịch sự"},
+    {"dutch": "snel", "english": "fast", "vietnamese": "nhanh"},
+    {"dutch": "traag", "english": "slow", "vietnamese": "chậm"},
+    {"dutch": "mogelijk", "english": "possible", "vietnamese": "có thể"},
+    {"dutch": "beste", "english": "best", "vietnamese": "tốt nhất"},
+    {"dutch": "met vriendelijke groeten", "english": "with kind regards", "vietnamese": "trân trọng"},
+    {"dutch": "groetjes", "english": "greetings", "vietnamese": "chào"},
+    {"dutch": "terug", "english": "back", "vietnamese": "trở lại"},
+    {"dutch": "denken", "english": "think", "vietnamese": "nghĩ"}
+]

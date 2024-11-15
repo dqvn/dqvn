@@ -1,0 +1,19 @@
+[
+    {"dutch": "de tegenwoordige tijd", "english": "the present tense", "vietnamese": "thì hiện tại"},
+    {"dutch": "de klinker (-s)", "english": "the vowel", "vietnamese": "nguyên âm"},
+    {"dutch": "de medeklinker (-s)", "english": "the consonant", "vietnamese": "phụ âm"},
+    {"dutch": "de uitspraak", "english": "the pronunciation", "vietnamese": "cách phát âm"},
+    {"dutch": "lang", "english": "long", "vietnamese": "dài"},
+    {"dutch": "kort", "english": "short", "vietnamese": "ngắn"},
+    {"dutch": "tegenwoordig", "english": "currently", "vietnamese": "hiện nay"},
+    {"dutch": "het kind (-eren)", "english": "the child", "vietnamese": "đứa trẻ"},
+    {"dutch": "het kinderboek (-en)", "english": "the children's book", "vietnamese": "sách trẻ em"},
+    {"dutch": "de jongvolwassene (-n)", "english": "the young adult", "vietnamese": "thanh niên"},
+    {"dutch": "de volwassene (-n)", "english": "the adult", "vietnamese": "người lớn"},
+    {"dutch": "de persoon (-sonen)", "english": "the person", "vietnamese": "người"},
+    {"dutch": "het niveau (-s)", "english": "the level", "vietnamese": "cấp độ"},
+    {"dutch": "jong", "english": "young", "vietnamese": "trẻ"},
+    {"dutch": "oud", "english": "old", "vietnamese": "già"},
+    {"dutch": "als", "english": "if", "vietnamese": "nếu"},
+    {"dutch": "inderdaad", "english": "indeed", "vietnamese": "thật vậy"}
+]

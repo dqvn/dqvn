@@ -1,0 +1,18 @@
+[
+    {"dutch": "het verleden", "english": "the past", "vietnamese": "quá khứ"},
+    {"dutch": "de toekomst", "english": "the future", "vietnamese": "tương lai"},
+    {"dutch": "eergisteren", "english": "the day before yesterday", "vietnamese": "hôm kia"},
+    {"dutch": "gisteren", "english": "yesterday", "vietnamese": "hôm qua"},
+    {"dutch": "vandaag", "english": "today", "vietnamese": "hôm nay"},
+    {"dutch": "morgen", "english": "tomorrow", "vietnamese": "ngày mai"},
+    {"dutch": "overmorgen", "english": "the day after tomorrow", "vietnamese": "ngày kia"},
+    {"dutch": "daarnet", "english": "just now", "vietnamese": "vừa mới"},
+    {"dutch": "straks", "english": "later", "vietnamese": "sau đó"},
+    {"dutch": "geleden", "english": "ago", "vietnamese": "trước"},
+    {"dutch": "vorige", "english": "previous", "vietnamese": "trước"},
+    {"dutch": "perfect", "english": "perfect", "vietnamese": "hoàn hảo"},
+    {"dutch": "was, waren", "english": "was, were", "vietnamese": "đã"},
+    {"dutch": "had, hadden", "english": "had", "vietnamese": "đã có"},
+    {"dutch": "veranderen", "english": "change", "vietnamese": "thay đổi"},
+    {"dutch": "mogen", "english": "may", "vietnamese": "có thể"}
+]

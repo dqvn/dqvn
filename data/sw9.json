@@ -1,0 +1,15 @@
+[
+    {"dutch": "de comparatief", "english": "the comparative", "vietnamese": "so sánh"},
+    {"dutch": "gratis", "english": "free", "vietnamese": "miễn phí"},
+    {"dutch": "kosteloos", "english": "costless", "vietnamese": "không tốn phí"},
+    {"dutch": "zo'n", "english": "such a", "vietnamese": "như vậy"},
+    {"dutch": "min of meer", "english": "more or less", "vietnamese": "hơn hoặc kém"},
+    {"dutch": "precies", "english": "exactly", "vietnamese": "chính xác"},
+    {"dutch": "exact", "english": "exact", "vietnamese": "chính xác"},
+    {"dutch": "laat, later", "english": "late, later", "vietnamese": "muộn, sau"},
+    {"dutch": "vroeg, vroeger", "english": "early, earlier", "vietnamese": "sớm, trước đây"},
+    {"dutch": "beter", "english": "better", "vietnamese": "tốt hơn"},
+    {"dutch": "liever", "english": "preferably", "vietnamese": "thích hơn"},
+    {"dutch": "worden", "english": "to become", "vietnamese": "trở thành"},
+    {"dutch": "blijven", "english": "to stay", "vietnamese": "ở lại"}
+]
