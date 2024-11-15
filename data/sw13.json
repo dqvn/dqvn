@@ -1,0 +1,19 @@
+[
+    {"dutch": "de werken", "english": "the works", "vietnamese": "các tác phẩm"},
+    {"dutch": "de werkzaamheid (-heden)", "english": "the activity (-ies)", "vietnamese": "hoạt động (-s)"},
+    {"dutch": "de omleiding (-en)", "english": "the detour (-s)", "vietnamese": "đường vòng (-s)"},
+    {"dutch": "het plein (-en)", "english": "the square (-s)", "vietnamese": "quảng trường (-s)"},
+    {"dutch": "het dorp (-en)", "english": "the village (-s)", "vietnamese": "làng (-s)"},
+    {"dutch": "de brug (-gen)", "english": "the bridge (-s)", "vietnamese": "cây cầu (-s)"},
+    {"dutch": "de richting (-en)", "english": "the direction (-s)", "vietnamese": "hướng (-s)"},
+    {"dutch": "de cirkel (-s)", "english": "the circle (-s)", "vietnamese": "hình tròn (-s)"},
+    {"dutch": "het vierkant (-en)", "english": "the square (-s)", "vietnamese": "hình vuông (-s)"},
+    {"dutch": "de kant (-en)", "english": "the side (-s)", "vietnamese": "bên (-s)"},
+    {"dutch": "linksaf, rechtsaf", "english": "left, right", "vietnamese": "trái, phải"},
+    {"dutch": "rechtdoor", "english": "straight ahead", "vietnamese": "đi thẳng"},
+    {"dutch": "rond", "english": "around", "vietnamese": "quanh"},
+    {"dutch": "daarom", "english": "therefore", "vietnamese": "do đó"},
+    {"dutch": "langs", "english": "along", "vietnamese": "dọc theo"},
+    {"dutch": "passeren", "english": "to pass", "vietnamese": "vượt qua"},
+    {"dutch": "draaien", "english": "to turn", "vietnamese": "quay"}
+]
