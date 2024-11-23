@@ -1,0 +1,15 @@
+[
+    {"dutch": "het perfectum", "english": "the perfect tense", "vietnamese": "thì hoàn thành"},
+    {"dutch": "het imperfectum", "english": "the imperfect tense", "vietnamese": "thì không hoàn thành"},
+    {"dutch": "de actie (-s)", "english": "the action(s)", "vietnamese": "hành động"},
+    {"dutch": "de beschrijving (-en)", "english": "the description(s)", "vietnamese": "sự miêu tả"},
+    {"dutch": "het participium", "english": "the participle", "vietnamese": "phân từ"},
+    {"dutch": "eer", "english": "honor", "vietnamese": "danh dự"},
+    {"dutch": "eerder", "english": "earlier", "vietnamese": "sớm hơn"},
+    {"dutch": "nogal", "english": "rather", "vietnamese": "khá"},
+    {"dutch": "voorbij", "english": "past", "vietnamese": "quá khứ"},
+    {"dutch": "wassen", "english": "(to) wash", "vietnamese": "(để) rửa"},
+    {"dutch": "beschrijven", "english": "(to) describe", "vietnamese": "(để) miêu tả"},
+    {"dutch": "de soort", "english": "the kind/type", "vietnamese": "loại"},
+    {"dutch": "anders", "english": "different", "vietnamese": "khác"}
+]

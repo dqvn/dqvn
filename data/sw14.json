@@ -1,0 +1,22 @@
+[
+    {"dutch": "de opinie (-s)", "english": "the opinion (-s)", "vietnamese": "ý kiến (-s)"},
+    {"dutch": "de kilometer (-s)", "english": "the kilometer (-s)", "vietnamese": "kilômét (-s)"},
+    {"dutch": "de meter (-s)", "english": "the meter (-s)", "vietnamese": "mét (-s)"},
+    {"dutch": "de snelheid (-heden)", "english": "the speed (-s)", "vietnamese": "tốc độ (-s)"},
+    {"dutch": "de controle (-s)", "english": "the control (-s)", "vietnamese": "kiểm soát (-s)"},
+    {"dutch": "de politie", "english": "the police", "vietnamese": "cảnh sát"},
+    {"dutch": "de boete (-s)", "english": "the fine (-s)", "vietnamese": "tiền phạt (-s)"},
+    {"dutch": "de straf (-fen)", "english": "the punishment (-s)", "vietnamese": "hình phạt (-s)"},
+    {"dutch": "per", "english": "per", "vietnamese": "mỗi"},
+    {"dutch": "langzaam", "english": "slow", "vietnamese": "chậm"},
+    {"dutch": "straffen", "english": "to punish", "vietnamese": "trừng phạt"},
+    {"dutch": "overal", "english": "everywhere", "vietnamese": "tất cả mọi nơi"},
+    {"dutch": "ergens", "english": "somewhere", "vietnamese": "ở đâu đó"},
+    {"dutch": "nergens", "english": "nowhere", "vietnamese": "không ở đâu hết"},
+    {"dutch": "iedereen", "english": "everyone", "vietnamese": "mọi người"},
+    {"dutch": "iemand", "english": "someone", "vietnamese": "một ai đó"},
+    {"dutch": "niemand", "english": "no one", "vietnamese": "không ai hết"},
+    {"dutch": "alles", "english": "everything", "vietnamese": "mọi thứ"},
+    {"dutch": "iets", "english": "something", "vietnamese": "một cái gì đó"},
+    {"dutch": "niets", "english": "nothing", "vietnamese": "không có gì"}
+]

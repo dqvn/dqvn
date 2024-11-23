@@ -1,0 +1,19 @@
+[
+    {"dutch": "de hand (-en)", "english": "the hand(s)", "vietnamese": "bàn tay"},
+    {"dutch": "de betekenis (-sen)", "english": "the meaning(s)", "vietnamese": "ý nghĩa"},
+    {"dutch": "de bedoeling (-en)", "english": "the intention(s)", "vietnamese": "ý định"},
+    {"dutch": "het noorden", "english": "the north", "vietnamese": "phía bắc"},
+    {"dutch": "het zuiden", "english": "the south", "vietnamese": "phía nam"},
+    {"dutch": "het westen", "english": "the west", "vietnamese": "phía tây"},
+    {"dutch": "het oosten", "english": "the east", "vietnamese": "phía đông"},
+    {"dutch": "het woordenboek (-en)", "english": "the dictionary (dictionaries)", "vietnamese": "từ điển"},
+    {"dutch": "het Chinees", "english": "the Chinese", "vietnamese": "tiếng Trung"},
+    {"dutch": "noord", "english": "north", "vietnamese": "bắc"},
+    {"dutch": "zuid", "english": "south", "vietnamese": "nam"},
+    {"dutch": "west", "english": "west", "vietnamese": "tây"},
+    {"dutch": "oost", "english": "east", "vietnamese": "đông"},
+    {"dutch": "betekenen", "english": "(to) mean", "vietnamese": "(để) có nghĩa là"},
+    {"dutch": "bedoelen", "english": "(to) intend", "vietnamese": "(để) có ý định"},
+    {"dutch": "snappen", "english": "(to) understand", "vietnamese": "(để) hiểu"},
+    {"dutch": "verstaan", "english": "(to) comprehend", "vietnamese": "(để) hiểu"}
+]

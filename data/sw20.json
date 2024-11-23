@@ -1,0 +1,19 @@
+[
+    {"dutch": "de moordenaar (-s)", "english": "the murderer(s)", "vietnamese": "kẻ giết người"},
+    {"dutch": "het pistool (-olen)", "english": "the gun(s)", "vietnamese": "súng"},
+    {"dutch": "het wapen (-s)", "english": "the weapon(s)", "vietnamese": "vũ khí"},
+    {"dutch": "de dood", "english": "the death", "vietnamese": "cái chết"},
+    {"dutch": "de dode (-n)", "english": "the dead (person/people)", "vietnamese": "người chết"},
+    {"dutch": "de moord (-en)", "english": "the murder(s)", "vietnamese": "vụ giết người"},
+    {"dutch": "de gevangenis (-sen)", "english": "the prison(s)", "vietnamese": "nhà tù"},
+    {"dutch": "dood", "english": "dead", "vietnamese": "chết"},
+    {"dutch": "raak", "english": "(to) hit", "vietnamese": "(để) đánh trúng"},
+    {"dutch": "bekend, onbekend", "english": "known, unknown", "vietnamese": "biết, không biết"},
+    {"dutch": "schuldig, onschuldig", "english": "guilty, innocent", "vietnamese": "có tội, vô tội"},
+    {"dutch": "onmogelijk", "english": "impossible", "vietnamese": "không thể"},
+    {"dutch": "alsof", "english": "(as) if", "vietnamese": "(như) nếu"},
+    {"dutch": "vertellen", "english": "(to) tell", "vietnamese": "(để) kể"},
+    {"dutch": "vermoorden", "english": "(to) murder", "vietnamese": "(để) giết người"},
+    {"dutch": "schieten", "english": "(to) shoot", "vietnamese": "(để) bắn"},
+    {"dutch": "doden", "english": "(to) kill", "vietnamese": "(để) giết"}
+]

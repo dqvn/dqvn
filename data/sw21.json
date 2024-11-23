@@ -1,0 +1,21 @@
+[
+    {"dutch": "de dame (-s)", "english": "the lady (ladies)", "vietnamese": "quý bà"},
+    {"dutch": "de heer (heren)", "english": "the gentleman (gentlemen)", "vietnamese": "quý ông"},
+    {"dutch": "de jongen (-s)", "english": "the boy(s)", "vietnamese": "cậu bé"},
+    {"dutch": "het meisje (-s)", "english": "the girl(s)", "vietnamese": "cô gái"},
+    {"dutch": "de meid (-en)", "english": "the maid(s)", "vietnamese": "người hầu gái"},
+    {"dutch": "de deur (-en)", "english": "the door(s)", "vietnamese": "cửa"},
+    {"dutch": "de diminutief (-ven)", "english": "the diminutive(s)", "vietnamese": "dạng nhỏ"},
+    {"dutch": "de liefde (-s)", "english": "the love(s)", "vietnamese": "tình yêu"},
+    {"dutch": "het hart (-en)", "english": "the heart(s)", "vietnamese": "trái tim"},
+    {"dutch": "het lief", "english": "the sweetheart", "vietnamese": "người yêu"},
+    {"dutch": "de schat (-ten)", "english": "the treasure(s)", "vietnamese": "kho báu"},
+    {"dutch": "de lieverd", "english": "the darling", "vietnamese": "người yêu dấu"},
+    {"dutch": "de uitdrukking (-en)", "english": "the expression(s)", "vietnamese": "biểu hiện"},
+    {"dutch": "jammer", "english": "pity", "vietnamese": "đáng tiếc"},
+    {"dutch": "helaas", "english": "unfortunately", "vietnamese": "thật không may"},
+    {"dutch": "open", "english": "open", "vietnamese": "mở"},
+    {"dutch": "brengen", "english": "(to) bring", "vietnamese": "(để) mang"},
+    {"dutch": "openen", "english": "(to) open", "vietnamese": "(để) mở"},
+    {"dutch": "sluiten", "english": "(to) close", "vietnamese": "(để) đóng"}
+]
