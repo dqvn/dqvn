@@ -1,8 +1,8 @@
 const TTSName = 'Google Nederlands';
 const TTSLang = 'nl-NL';
 const TTSLangENG = 'en-US';
-const fileNames = ["ch01", "ch03", "ch02", "ch04", "ch05", "ch06", "ch07", "ch08", "ch09", "ch10", "sp02", "sp03", 
-  "sp04", "sp05", "sp06", "sp07", "sp08", "sp09", "sp10", "sp11", "sp12", "sp13", "sp14", "sp15", "sp16", "sp17", "sp18", 
+const fileNames = ["ch01", "ch03", "ch02", "ch04", "ch05", "ch06", "ch07", "ch08", "ch09", "ch10", "sp02", "sp03",
+  "sp04", "sp05", "sp06", "sp07", "sp08", "sp09", "sp10", "sp11", "sp12", "sp13", "sp14", "sp15", "sp16", "sp17", "sp18",
   "sp19", "sp20", "sp21", "sp22", "sp23", "sp24", "sp25", "sp26", "sp27", "sw234", "sw56", "sw78", "sw9", "sw1011", "sw12", "sw13",
   "sw14", "sw15", "sw16", "sw17", "sw18", "sw19", "sw20", "sw21", "sw22", "sw23", "sw24", "sw25", "sw26", "sw27", "sw28", "sw29", "sw30"];
 const INTERVAL_TIME = 8000;
@@ -64,18 +64,31 @@ function createLeftMenu() {
   // create file list
   var fileList = document.getElementById("file-list");
   fileNames.sort();
-  fileNames.forEach((fileName) => {
-    const listItem = document.createElement("li");
-    listItem.textContent = fileName;
-    listItem.addEventListener("click", () => {
-      // load new content when file is selected
-      console.log("loadContent: " + fileName + ".json");
-      loadJsonData(fileName, reloadTable);
-      // update on going chapter
-      document.getElementById('chapter').innerHTML = "(You are learning in " + fileName + ")";
-    });
-    fileList.appendChild(listItem);
+  // fileNames.forEach((fileName) => {
+  //   const listItem = document.createElement("li");
+  //   listItem.textContent = fileName;
+  //   listItem.addEventListener("click", () => {
+  //     // load new content when file is selected
+  //     console.log("loadContent: " + fileName + ".json");
+  //     loadJsonData(fileName, reloadTable);
+  //     // update on going chapter
+  //     document.getElementById('chapter').innerHTML = "(You are learning in " + fileName + ")";
+  //   });
+  //   fileList.appendChild(listItem);
+  // });
+  const filelistContainer = document.getElementById('file-list');
+  const groupedFiles = {};
+  fileNames.forEach(file => {
+    const groupKey = file.substring(0, 2);
+    if (!groupedFiles[groupKey]) {
+      groupedFiles[groupKey] = [];
+    }
+    groupedFiles[groupKey].push(file);
   });
+
+  for (const groupKey in groupedFiles) {
+    filelistContainer.appendChild(createGroup(groupKey, groupedFiles[groupKey]));
+  }
 }
 
 // function to speak the word using Web SpeechSynthesis API
@@ -125,7 +138,7 @@ function speakText(text) {
     speech.onerror = (event) => {
       console.error("Speech synthesis error:", event.error);
     };
-    
+
     window.speechSynthesis.speak(speech);
     // Optional: Add an event listener to detect errors
 
@@ -239,7 +252,7 @@ function spellNextWord() {
 
   // improving the balance rate of random numbers
   recentNumbers.push(randomIndex);
-  if (recentNumbers.length > (wordList.length*0.9)) {
+  if (recentNumbers.length > (wordList.length * 0.9)) {
     recentNumbers.shift();
   }
 
@@ -287,23 +300,14 @@ function createGroup(groupKey, files) {
   files.forEach(file => {
     const fileItem = document.createElement('li');
     fileItem.textContent = file;
+    fileItem.addEventListener("click", () => {
+      loadJsonData(file, reloadTable);
+      // update on going chapter
+      document.getElementById('chapter').innerHTML = "(You are learning in " + file + ")";
+    });
     nestedList.appendChild(fileItem);
   });
   groupElement.appendChild(groupTitle);
   groupElement.appendChild(nestedList);
   return groupElement;
-}
-
-const filelistContainer = document.getElementById('file-list');
-const groupedFiles = {};
-fileNames.forEach(file => {
-  const groupKey = file.substring(0, 2);
-  if (!groupedFiles[groupKey]) {
-    groupedFiles[groupKey] = [];
-  }
-  groupedFiles[groupKey].push(file);
-});
-
-for (const groupKey in groupedFiles) {
-  filelistContainer.appendChild(createGroup(groupKey, groupedFiles[groupKey]));
 }
