@@ -459,3 +459,18 @@ button:hover {
     font-size: 24px;
     color: #fff;
 }
+
+.file-container .group-title {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.file-container .nested-list {
+    display: none;
+    /* Initially hidden */
+    margin-left: 20px;
+}
+
+.file-container .nested-list.open {
+    display: block;
+}
