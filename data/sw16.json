@@ -1,0 +1,10 @@
+[
+    {"dutch": "de fictie", "english": "the fiction", "vietnamese": "hư cấu"},
+    {"dutch": "de non-fictie", "english": "the non-fiction", "vietnamese": "phi hư cấu"},
+    {"dutch": "de verdieping (-en)", "english": "the floor (-s)", "vietnamese": "tầng (-s)"},
+    {"dutch": "het gelijkvloers", "english": "the ground floor", "vietnamese": "tầng trệt"},
+    {"dutch": "het bezoek (-en)", "english": "the visit (-s)", "vietnamese": "cuộc thăm (-s)"},
+    {"dutch": "boven", "english": "above", "vietnamese": "trên"},
+    {"dutch": "beneden", "english": "below", "vietnamese": "dưới"},
+    {"dutch": "bezoeken", "english": "to visit", "vietnamese": "thăm"}
+]
