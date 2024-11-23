@@ -179,8 +179,8 @@ td:last-child {
 }
 
 .left-menu li:hover {
-    background-color: transparent;
-    border-bottom: 2px solid #e0e0e0;
+    background-color: #1cb508;
+    border-bottom: 3px solid #e0e0e0;
 }
 
 .file-container {
