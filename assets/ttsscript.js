@@ -289,7 +289,15 @@ function createGroup(groupKey, files) {
   const groupElement = document.createElement('li');
   const groupTitle = document.createElement('div');
   groupTitle.classList.add('group-title');
-  groupTitle.textContent = groupKey;
+  if (groupKey == "ch") {
+    groupTitle.textContent = "Dutch Class #1";
+  } else if (groupKey == "sp") {
+    groupTitle.textContent = "Learn Dutch #2";
+  } else if (groupKey == "sw") {
+    groupTitle.textContent = "Learn Dutch #3";
+  } else {
+    groupTitle.textContent = groupKey;
+  }
   groupTitle.addEventListener('click', () => {
     const nestedList = groupElement.querySelector('.nested-list');
     nestedList.classList.toggle('open');
