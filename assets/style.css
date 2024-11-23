@@ -179,9 +179,7 @@ td:last-child {
 }
 
 .left-menu li:hover {
-    background-color: #1cb508;
-    border-bottom: 3px solid #e0e0e0;
-    font-weight: bold;
+    border-bottom: 3px solid #1cb508;
 }
 
 .file-container {
