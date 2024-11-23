@@ -271,3 +271,39 @@ function getNewRandomNumberCSPRNG(min, max, recentNumbers) {
   } while (recentNumbers.includes(randomNumber));
   return randomNumber;
 }
+
+function createGroup(groupKey, files) {
+  const groupElement = document.createElement('li');
+  const groupTitle = document.createElement('div');
+  groupTitle.classList.add('group-title');
+  groupTitle.textContent = groupKey;
+  groupTitle.addEventListener('click', () => {
+    const nestedList = groupElement.querySelector('.nested-list');
+    nestedList.classList.toggle('open');
+  });
+
+  const nestedList = document.createElement('ul');
+  nestedList.classList.add('nested-list');
+  files.forEach(file => {
+    const fileItem = document.createElement('li');
+    fileItem.textContent = file;
+    nestedList.appendChild(fileItem);
+  });
+  groupElement.appendChild(groupTitle);
+  groupElement.appendChild(nestedList);
+  return groupElement;
+}
+
+const filelistContainer = document.getElementById('file-list');
+const groupedFiles = {};
+fileNames.forEach(file => {
+  const groupKey = file.substring(0, 2);
+  if (!groupedFiles[groupKey]) {
+    groupedFiles[groupKey] = [];
+  }
+  groupedFiles[groupKey].push(file);
+});
+
+for (const groupKey in groupedFiles) {
+  filelistContainer.appendChild(createGroup(groupKey, groupedFiles[groupKey]));
+}
