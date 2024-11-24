@@ -180,6 +180,7 @@ td:last-child {
 
 .left-menu li:hover {
     border-bottom: 3px solid #1cb508;
+    color: #1cb508;
 }
 
 .file-container {
