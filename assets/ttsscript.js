@@ -285,7 +285,7 @@ function createGroup(groupKey, files) {
   groupTitle.classList.add('group-title');
 
   // mapping the defined groupKey if existed
-  groupTitle.textContent = groupTitles.get(groupKey) || groupKey;
+  groupTitle.textContent = GROUP_TITLES.get(groupKey) || groupKey;
 
   groupTitle.addEventListener('click', () => {
     // Close all other open nested lists
