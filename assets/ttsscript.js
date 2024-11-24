@@ -298,7 +298,13 @@ function createGroup(groupKey, files) {
   } else {
     groupTitle.textContent = groupKey;
   }
+
   groupTitle.addEventListener('click', () => {
+    // Close all other open nested lists
+    const allNestedLists = document.querySelectorAll('.nested-list');
+    allNestedLists.forEach(list => list.classList.remove('open'));
+
+    // Open the clicked nested list
     const nestedList = groupElement.querySelector('.nested-list');
     nestedList.classList.toggle('open');
   });
