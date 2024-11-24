@@ -7,6 +7,12 @@ const fileNames = ["ch01", "ch03", "ch02", "ch04", "ch05", "ch06", "ch07", "ch08
   "sw14", "sw15", "sw16", "sw17", "sw18", "sw19", "sw20", "sw21", "sw22", "sw23", "sw24", "sw25", "sw26", "sw27", "sw28", "sw29", "sw30"];
 const INTERVAL_TIME = 8000;
 
+const GROUP_TITLES = new Map([
+  ["ch", "Dutch Class #1"],
+  ["sp", "Learn Dutch #2"],
+  ["sw", "Learn Dutch #3"],
+]);
+
 // create a table body element
 const tableBody = document.getElementById('word-list-body');
 const hideMeaningCheckbox = document.getElementById('hide-meaning');
@@ -64,18 +70,7 @@ function createLeftMenu() {
   // create file list
   var fileList = document.getElementById("file-list");
   fileNames.sort();
-  // fileNames.forEach((fileName) => {
-  //   const listItem = document.createElement("li");
-  //   listItem.textContent = fileName;
-  //   listItem.addEventListener("click", () => {
-  //     // load new content when file is selected
-  //     console.log("loadContent: " + fileName + ".json");
-  //     loadJsonData(fileName, reloadTable);
-  //     // update on going chapter
-  //     document.getElementById('chapter').innerHTML = "(You are learning in " + fileName + ")";
-  //   });
-  //   fileList.appendChild(listItem);
-  // });
+
   const filelistContainer = document.getElementById('file-list');
   const groupedFiles = {};
   fileNames.forEach(file => {
@@ -265,7 +260,6 @@ function spellNextWord() {
   if (isPlaying) {
     currentInterval = setTimeout(spellNextWord, INTERVAL_TIME); // 5000ms = 5 seconds
   }
-  // currentInterval = setTimeout(spellNextWord, INTERVAL_TIME); // 5000ms = 5 seconds
 }
 
 function getRandomNumberCSPRNG(min, max) {
@@ -289,15 +283,9 @@ function createGroup(groupKey, files) {
   const groupElement = document.createElement('li');
   const groupTitle = document.createElement('div');
   groupTitle.classList.add('group-title');
-  if (groupKey == "ch") {
-    groupTitle.textContent = "Dutch Class #1";
-  } else if (groupKey == "sp") {
-    groupTitle.textContent = "Learn Dutch #2";
-  } else if (groupKey == "sw") {
-    groupTitle.textContent = "Learn Dutch #3";
-  } else {
-    groupTitle.textContent = groupKey;
-  }
+
+  // mapping the defined groupKey if existed
+  groupTitle.textContent = groupTitles.get(groupKey) || groupKey;
 
   groupTitle.addEventListener('click', () => {
     // Close all other open nested lists
