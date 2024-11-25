@@ -1,7 +1,7 @@
 const TTSName = 'Google Nederlands';
 const TTSLang = 'nl-NL';
 const TTSLangENG = 'en-US';
-const fileNames = ["ch01", "ch03", "ch02", "ch04", "ch05", "ch06", "ch07", "ch08", "ch09", "ch10", "sp02", "sp03",
+const fileNames = ["ch00", "ch01", "ch03", "ch02", "ch04", "ch05", "ch06", "ch07", "ch08", "ch09", "ch10", "sp02", "sp03",
   "sp04", "sp05", "sp06", "sp07", "sp08", "sp09", "sp10", "sp11", "sp12", "sp13", "sp14", "sp15", "sp16", "sp17", "sp18",
   "sp19", "sp20", "sp21", "sp22", "sp23", "sp24", "sp25", "sp26", "sp27", "sw234", "sw56", "sw78", "sw9", "sw1011", "sw12", "sw13",
   "sw14", "sw15", "sw16", "sw17", "sw18", "sw19", "sw20", "sw21", "sw22", "sw23", "sw24", "sw25", "sw26", "sw27", "sw28", "sw29", "sw30"];
