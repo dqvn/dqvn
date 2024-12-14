@@ -1,0 +1,22 @@
+[
+    {"dutch": "het voetbal", "english": "the football", "vietnamese": "bóng đá"},
+    {"dutch": "het wielrennen", "english": "the cycling", "vietnamese": "đua xe đạp"},
+    {"dutch": "de lijn (-en)", "english": "the line (lines)", "vietnamese": "đường kẻ (những đường kẻ)"},
+    {"dutch": "de ruimte (-s)", "english": "the space (spaces)", "vietnamese": "không gian (những không gian)"},
+    {"dutch": "de aarde", "english": "the earth", "vietnamese": "trái đất"},
+    {"dutch": "het bed (-den)", "english": "the bed (beds)", "vietnamese": "giường (những giường)"},
+    {"dutch": "het doel (-en)", "english": "the goal (goals)", "vietnamese": "mục tiêu (những mục tiêu)"},
+    {"dutch": "het doelpunt (-en)", "english": "the goal (goals)", "vietnamese": "bàn thắng (những bàn thắng)"},
+    {"dutch": "vooruit", "english": "forward", "vietnamese": "phía trước"},
+    {"dutch": "achteruit", "english": "backward", "vietnamese": "phía sau"},
+    {"dutch": "vrij", "english": "free", "vietnamese": "tự do"},
+    {"dutch": "fantastisch", "english": "fantastic", "vietnamese": "tuyệt vời"},
+    {"dutch": "geweldig", "english": "great", "vietnamese": "tuyệt vời"},
+    {"dutch": "kwijt", "english": "lost", "vietnamese": "mất"},
+    {"dutch": "wakker", "english": "awake", "vietnamese": "tỉnh táo"},
+    {"dutch": "moe", "english": "tired", "vietnamese": "mệt mỏi"},
+    {"dutch": "beschermen (beschermd)", "english": "to protect (protected)", "vietnamese": "bảo vệ (đã bảo vệ)"},
+    {"dutch": "slapen (geslapen)", "english": "to sleep (slept)", "vietnamese": "ngủ (đã ngủ)"},
+    {"dutch": "scoren (gescoord)", "english": "to score (scored)", "vietnamese": "ghi bàn (đã ghi bàn)"},
+    {"dutch": "pakken (gepakt)", "english": "to grab (grabbed)", "vietnamese": "lấy (đã lấy)"}
+  ]

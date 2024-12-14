@@ -1,0 +1,15 @@
+[
+    {"dutch": "de zaak (zaken)", "english": "the case (cases)", "vietnamese": "vụ việc (những vụ việc)"},
+    {"dutch": "de agent (-en)", "english": "the agent (agents)", "vietnamese": "đặc vụ (những đặc vụ)"},
+    {"dutch": "bezig", "english": "busy", "vietnamese": "bận rộn"},
+    {"dutch": "sinds", "english": "since", "vietnamese": "kể từ"},
+    {"dutch": "missen (gemist)", "english": "to miss (missed)", "vietnamese": "nhớ (đã nhớ)"},
+    {"dutch": "redden (gered)", "english": "to save (saved)", "vietnamese": "cứu (đã cứu)"},
+    {"dutch": "sterven (gestorven)", "english": "to die (died)", "vietnamese": "chết (đã chết)"},
+    {"dutch": "opbellen (opgebeld)", "english": "to call (called)", "vietnamese": "gọi điện (đã gọi điện)"},
+    {"dutch": "reizen (gereisd)", "english": "to travel (traveled)", "vietnamese": "du lịch (đã du lịch)"},
+    {"dutch": "sluiten", "english": "to close", "vietnamese": "đóng"},
+    {"dutch": "verliezen", "english": "to lose", "vietnamese": "mất"},
+    {"dutch": "moeten", "english": "must", "vietnamese": "phải"},
+    {"dutch": "mogen", "english": "may", "vietnamese": "có thể"}
+  ]

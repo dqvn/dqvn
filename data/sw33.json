@@ -1,0 +1,18 @@
+[
+    {"dutch": "de wedstrijd (-en)", "english": "the match (matches)", "vietnamese": "trận đấu (những trận đấu)"},
+    {"dutch": "het basketbal", "english": "the basketball", "vietnamese": "bóng rổ"},
+    {"dutch": "de bal (-len)", "english": "the ball (balls)", "vietnamese": "quả bóng (những quả bóng)"},
+    {"dutch": "het team (-s)", "english": "the team (teams)", "vietnamese": "đội (những đội)"},
+    {"dutch": "de bank (-en)", "english": "the bench (benches)", "vietnamese": "ghế dài (những ghế dài)"},
+    {"dutch": "de rust", "english": "the rest", "vietnamese": "nghỉ ngơi"},
+    {"dutch": "sterk", "english": "strong", "vietnamese": "mạnh mẽ"},
+    {"dutch": "zwak", "english": "weak", "vietnamese": "yếu"},
+    {"dutch": "tegen", "english": "against", "vietnamese": "chống lại"},
+    {"dutch": "lopen (gelopen)", "english": "to walk (walked)", "vietnamese": "đi bộ (đã đi bộ)"},
+    {"dutch": "rennen (gerend)", "english": "to run (ran)", "vietnamese": "chạy (đã chạy)"},
+    {"dutch": "winnen (gewonnen)", "english": "to win (won)", "vietnamese": "thắng (đã thắng)"},
+    {"dutch": "verliezen (verloren)", "english": "to lose (lost)", "vietnamese": "thua (đã thua)"},
+    {"dutch": "rusten (gerust)", "english": "to rest (rested)", "vietnamese": "nghỉ ngơi (đã nghỉ ngơi)"},
+    {"dutch": "duren (geduurd)", "english": "to last (lasted)", "vietnamese": "kéo dài (đã kéo dài)"},
+    {"dutch": "stappen (gestapt)", "english": "to step (stepped)", "vietnamese": "bước (đã bước)"}
+  ]

@@ -1,0 +1,14 @@
+[
+    {"dutch": "het onderzoek (-en)", "english": "the research (researches)", "vietnamese": "nghiên cứu (những nghiên cứu)"},
+    {"dutch": "het hotel (-s)", "english": "the hotel (hotels)", "vietnamese": "khách sạn (những khách sạn)"},
+    {"dutch": "de reis (reizen)", "english": "the trip (trips)", "vietnamese": "chuyến đi (những chuyến đi)"},
+    {"dutch": "de vlucht (-en)", "english": "the flight (flights)", "vietnamese": "chuyến bay (những chuyến bay)"},
+    {"dutch": "lekker", "english": "delicious", "vietnamese": "ngon"},
+    {"dutch": "vol", "english": "full", "vietnamese": "đầy"},
+    {"dutch": "leeg", "english": "empty", "vietnamese": "trống rỗng"},
+    {"dutch": "noch", "english": "neither", "vietnamese": "không"},
+    {"dutch": "mezelf, jezelf, zichzelf, uzelf, onszelf", "english": "myself, yourself, himself/herself, yourself (formal), ourselves", "vietnamese": "bản thân tôi, bản thân bạn, bản thân anh ấy/cô ấy, bản thân bạn (trang trọng), bản thân chúng tôi"},
+    {"dutch": "onderzoeken, onderzocht, onderzocht", "english": "to research, researched, researched", "vietnamese": "nghiên cứu, đã nghiên cứu, đã nghiên cứu"},
+    {"dutch": "zorgen, zorgde, gezorgd", "english": "to care, cared, cared", "vietnamese": "chăm sóc, đã chăm sóc, đã chăm sóc"},
+    {"dutch": "vliegen, vloog, gevlogen", "english": "to fly, flew, flown", "vietnamese": "bay, đã bay, đã bay"}
+  ]
