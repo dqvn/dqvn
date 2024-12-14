@@ -1,0 +1,19 @@
+[
+    {"dutch": "de pil (-len)", "english": "the pill (pills)", "vietnamese": "viên thuốc (những viên thuốc)"},
+    {"dutch": "het medicament (-en)", "english": "the medication (medications)", "vietnamese": "thuốc (những loại thuốc)"},
+    {"dutch": "het voorschrift (-en)", "english": "the prescription (prescriptions)", "vietnamese": "đơn thuốc (những đơn thuốc)"},
+    {"dutch": "het doktersbriefje (-s)", "english": "the doctor's note (doctor's notes)", "vietnamese": "giấy khám bệnh (những giấy khám bệnh)"},
+    {"dutch": "de apotheek (apotheken)", "english": "the pharmacy (pharmacies)", "vietnamese": "nhà thuốc (những nhà thuốc)"},
+    {"dutch": "de koorts", "english": "the fever", "vietnamese": "sốt"},
+    {"dutch": "de ziekte (-s)", "english": "the illness (illnesses)", "vietnamese": "bệnh (những bệnh)"},
+    {"dutch": "de verkoudheid (verkoudheden)", "english": "the cold (colds)", "vietnamese": "cảm lạnh (những cảm lạnh)"},
+    {"dutch": "de griep", "english": "the flu", "vietnamese": "cúm"},
+    {"dutch": "ziek", "english": "sick", "vietnamese": "ốm"},
+    {"dutch": "aanraken (participium later)", "english": "to touch (participle later)", "vietnamese": "chạm (phân từ sau)"},
+    {"dutch": "raken (geraakt)", "english": "to hit (hit)", "vietnamese": "đánh (đã đánh)"},
+    {"dutch": "kneuzen (gekneusd)", "english": "to bruise (bruised)", "vietnamese": "bầm tím (đã bầm tím)"},
+    {"dutch": "breken (gebroken)", "english": "to break (broken)", "vietnamese": "gãy (đã gãy)"},
+    {"dutch": "niezen (geniesd)", "english": "to sneeze (sneezed)", "vietnamese": "hắt hơi (đã hắt hơi)"},
+    {"dutch": "hoesten (gehoest)", "english": "to cough (coughed)", "vietnamese": "ho (đã ho)"},
+    {"dutch": "lijken (geleken)", "english": "to seem (seemed)", "vietnamese": "dường như (đã dường như)"}
+  ]
