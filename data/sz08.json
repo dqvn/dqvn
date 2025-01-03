@@ -1,0 +1,22 @@
+[
+    {"dutch":"de drank (-en)","english":"the drink (drinks)","vietnamese":"đồ uống (các đồ uống)"},
+    {"dutch":"de keuze (-s, -n)","english":"the choice (choices)","vietnamese":"sự lựa chọn (các sự lựa chọn)"},
+    {"dutch":"de keus (keuzen)","english":"the choice (choices)","vietnamese":"sự lựa chọn (các sự lựa chọn)"},
+    {"dutch":"de verkiezing (-en)","english":"the election (elections)","vietnamese":"cuộc bầu cử (các cuộc bầu cử)"},
+    {"dutch":"de kiezer (-s)","english":"the voter (voters)","vietnamese":"cử tri (các cử tri)"},
+    {"dutch":"het detail (-s)","english":"the detail (details)","vietnamese":"chi tiết (các chi tiết)"},
+    {"dutch":"kiezen","english":"to choose","vietnamese":"chọn"},
+    {"dutch":"koos","english":"chose","vietnamese":"đã chọn"},
+    {"dutch":"gekozen","english":"has chosen","vietnamese":"đã chọn"},
+    {"dutch":"verkiezen","english":"to prefer","vietnamese":"ưa thích"},
+    {"dutch":"verkoos","english":"preferred","vietnamese":"đã ưa thích"},
+    {"dutch":"verkozen","english":"has preferred","vietnamese":"đã ưa thích"},
+    {"dutch":"bekijken","english":"to look at","vietnamese":"xem xét"},
+    {"dutch":"bekeek","english":"looked at","vietnamese":"đã xem xét"},
+    {"dutch":"bekeken","english":"has looked at","vietnamese":"đã xem xét"},
+    {"dutch":"beluisteren","english":"to listen to","vietnamese":"nghe"},
+    {"dutch":"beluisterde","english":"listened to","vietnamese":"đã nghe"},
+    {"dutch":"beluisterd","english":"has listened to","vietnamese":"đã nghe"},
+    {"dutch":"bedenken","english":"to think of","vietnamese":"nghĩ ra"},
+    {"dutch":"bedacht","english":"thought of","vietnamese":"đã nghĩ ra"}
+  ]
