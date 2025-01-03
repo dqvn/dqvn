@@ -7,13 +7,14 @@ const fileNames = ["ch00", "ch01", "ch03", "ch02", "ch04", "ch05", "ch06", "ch07
   "sw14", "sw15", "sw16", "sw17", "sw18", "sw19", "sw20", "sw21", "sw22", "sw23", "sw24", "sw25", "sw26", "sw27", "sw28", "sw29", "sw30",
   "sw31", "sw32", "sw33", "sw34", "sw35", "sw36", "sw37", "sw38", "sw39", "sw40", 
   "sw41", "sw42", "sw43", "sw44", "sw45", "sw46", "sw47", "sw48", "sw49", "sw50", 
-  "sw51", "sw52"];
+  "sw51", "sw52", "sz02", "sz03"];
 const INTERVAL_TIME = 8000;
 
 const GROUP_TITLES = new Map([
   ["ch", "Dutch Class #1"],
   ["sp", "Learn Dutch #2"],
   ["sw", "Learn Dutch #3"],
+  ["sz", "Learn Dutch #4"],
 ]);
 
 // create a table body element
