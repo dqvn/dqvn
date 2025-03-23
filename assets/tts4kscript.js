@@ -1,7 +1,7 @@
 const TTSName = 'Google Nederlands';
 const TTSLang = 'nl-NL';
 const TTSLangENG = 'en-US';
-const fileNames = ["4000"];
+const fileNames = ["4000", "pn_th"];
 const INTERVAL_TIME = 12000;
 
 // create a table body element
