@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dutch Word List</title>
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/dutch.ico">
+  <script src="assets/NoSleep.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Learning Pronunciation English Words</h1>
+    <h3 id="chapter"></h3>
+  </header>
+  <div class="container div-with-scrollbar">
+    <div class="left-menu">
+      <div class="spacer">
+        <h4>Setting:</h4>
+        <div id="tts-name"></div>
+        <!-- Add the checkbox -->
+        <input type="checkbox" id="hide-meaning" />
+        <label for="hide-meaning">Hide meaning</label>
+        <!-- add Volumn & Play button -->
+        <div class="volume-control-container">
+          <button class="play-stop-button" id="playStopButton">
+            <div class="icon"></div>
+            <span>Play</span>
+          </button>
+          <input type="range" id="volume-control" min="0" max="100" value="50">
+          <span id="volume-value">50%</span>
+        </div>
+      </div>
+      <div class="spacer">
+        <h4>Lesson:</h4>
+        <ul id="file-list">
+          <!-- file list will be inserted here -->
+        </ul>
+      </div>
+    </div>
+
+    <div class="table-container div-with-scrollbar">
+      <table id="word-list">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Word</th>
+            <th>Meaning</th>
+            <th>Vietnamese</th>
+          </tr>
+        </thead>
+        <tbody id="word-list-body">
+          <!-- data will be inserted here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <footer>
+    &copy; <span id="year"></span> Quang, Nguyen Dang | <a href="mailto:dqvn2002@gmail.com">dqvn2002@gmail.com</a>
+  </footer>
+  <script src="assets/tts4kscript.js"></script>
+</body>
+
+</html>
