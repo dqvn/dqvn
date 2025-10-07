@@ -101,7 +101,7 @@ td:nth-child(4) {
 
 th:last-child,
 td:last-child {
-    width: 150px;
+    width: 100px;
     /* Set the width of the last column to auto (will take up remaining space) */
 }
 
