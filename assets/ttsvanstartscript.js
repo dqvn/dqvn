@@ -74,12 +74,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // 🌟 Optional: Change the button icon/text 🌟
             if (container.classList.contains('menu-hidden')) {
                 // Menu is hidden, show an icon to reveal it (e.g., right arrow)
-                buttonIcon.textContent = '&#x25B6;'; // Right arrow (▶)
+                buttonIcon.innerHTML = '&#x25B6;'; // Right arrow (▶)
                 // You might also want to move the button if it's placed inside the left-menu
                 toggleButton.setAttribute('aria-expanded', 'false');
             } else {
                 // Menu is visible, show an icon to hide it (e.g., hamburger or left arrow)
-                buttonIcon.textContent = '&#9776;'; // Hamburger (☰)
+                buttonIcon.innerHTML = '&#9776;'; // Hamburger (☰)
                 toggleButton.setAttribute('aria-expanded', 'true');
             }
         });
