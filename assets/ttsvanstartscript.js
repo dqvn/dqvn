@@ -183,6 +183,7 @@ function reloadTable(jsonData) {
     <td>${index + 1}</td>
     <td onclick="speakText('${word.dutch}')"><span class="dutch-word" data-index="${index}">${word.dutch}</span></td>
     <td onclick="speakEngText('${word.english}')"><span class="hide-text">${word.english}</span></td>
+    <td onclick="speakText('${word.dutchsentence}')"><span class="hide-text">${word.dutchsentence}</span><span class="hide-text">${word.englishtranslate}</span></td>
     <td><span class="hide-text">${word.vietnamese}</span></td>
   `;
     tableBody.appendChild(row);
@@ -191,6 +192,7 @@ function reloadTable(jsonData) {
   for (let i = 0; i < 100; i++) {
     const row = document.createElement('tr');
     row.innerHTML = `
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
