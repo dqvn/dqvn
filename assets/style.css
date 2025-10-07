@@ -87,7 +87,14 @@ td:nth-child(2) {
 
 th:nth-child(3),
 td:nth-child(3) {
-    width: 200px;
+    width: 10%;
+    /* 20%; */
+    /* Set the width of the third column to 20% */
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 20%;
     /* 20%; */
     /* Set the width of the third column to 20% */
 }
