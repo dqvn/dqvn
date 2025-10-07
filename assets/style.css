@@ -87,21 +87,21 @@ td:nth-child(2) {
 
 th:nth-child(3),
 td:nth-child(3) {
-    width: 120px;
+    width: 150px;
     /* 20%; */
     /* Set the width of the third column to 20% */
 }
 
 th:nth-child(4),
 td:nth-child(4) {
-    width: 20%;
+    width: auto;
     /* 20%; */
     /* Set the width of the fourth column to 20% */
 }
 
 th:last-child,
 td:last-child {
-    width: auto;
+    width: 150px;
     /* Set the width of the last column to auto (will take up remaining space) */
 }
 
