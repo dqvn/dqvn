@@ -42,12 +42,23 @@ function showQuestion() {
         resultDiv.textContent = "";
         speakText(currentWord.dutch);
 
+        const frag = document.createDocumentFragment();
+
         options.forEach((option, index) => {
             const button = document.createElement('button');
             button.textContent = option;
             button.onclick = () => checkAnswer(option, currentWord.english, currentWord.index);
-            optionsDiv.appendChild(button); //
+
+            frag.appendChild(button);
+
+            // Add <br> between buttons, but not after the last one
+            if (index < options.length - 1) {
+                frag.appendChild(document.createElement('br'));
+            }
+
         });
+
+        optionsDiv.appendChild(frag);
 
     } else {
         showResult();
