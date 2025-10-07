@@ -59,6 +59,36 @@ document.getElementById('start-button').addEventListener('click', () => {
   showQuestion();
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.getElementById('toggle-menu-button');
+    const container = document.querySelector('.container'); // Get the main container
+
+    // Optional: Get the icon to change it (e.g., from a hamburger to an X or an arrow)
+    const buttonIcon = toggleButton.querySelector('.icon');
+
+    if (toggleButton && container) {
+        toggleButton.addEventListener('click', () => {
+            // Toggle the 'menu-hidden' class on the container
+            container.classList.toggle('menu-hidden');
+
+            // 🌟 Optional: Change the button icon/text 🌟
+            if (container.classList.contains('menu-hidden')) {
+                // Menu is hidden, show an icon to reveal it (e.g., right arrow)
+                buttonIcon.textContent = '&#x25B6;'; // Right arrow (▶)
+                // You might also want to move the button if it's placed inside the left-menu
+                toggleButton.setAttribute('aria-expanded', 'false');
+            } else {
+                // Menu is visible, show an icon to hide it (e.g., hamburger or left arrow)
+                buttonIcon.textContent = '&#9776;'; // Hamburger (☰)
+                toggleButton.setAttribute('aria-expanded', 'true');
+            }
+        });
+        
+        // Initial state: set the aria attribute
+        toggleButton.setAttribute('aria-expanded', 'true'); 
+    }
+});
+
 // ========================
 // =       Functions      =
 // ========================
