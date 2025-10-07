@@ -74,14 +74,14 @@ td {
 
 th:first-child,
 td:first-child {
-    width: 38px;
+    width: 30px;
     /* Set the width of the first column to 30px */
 }
 
 th:nth-child(2),
 td:nth-child(2) {
-    width: 45%;
-    /* Set the width of the second column to 50% */
+    width: 35%;
+    /* Set the width of the second column to 35% */
 }
 
 th:nth-child(3),
@@ -89,6 +89,13 @@ td:nth-child(3) {
     width: 200px;
     /* 20%; */
     /* Set the width of the third column to 20% */
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+    width: 350px;
+    /* 20%; */
+    /* Set the width of the fourth column to 20% */
 }
 
 th:last-child,
