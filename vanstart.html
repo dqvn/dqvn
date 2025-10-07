@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dutch Word List</title>
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/dutch.ico">
+  <script src="assets/NoSleep.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Learning Dutch Words</h1>
+    <h3 id="chapter"></h3>
+  </header>
+  <div id="popup" style="display: none;">
+    <div id="game-container">
+      <h1>Dutch-English Vocabulary Game</h1>
+      <div id="question"></div>
+      <div id="options"></div>
+      <div id="result"></div>
+    </div>
+  </div>
+  <div class="container div-with-scrollbar">
+    <div class="left-menu">
+      <div class="spacer">
+        <h4>Setting:</h4>
+        <div id="tts-name"></div>
+        <!-- Add the checkbox -->
+        <input type="checkbox" id="hide-meaning" />
+        <label for="hide-meaning">Hide meaning</label>
+        <!-- add Volumn & Play button -->
+        <div class="volume-control-container">
+          <button class="play-stop-button" id="playStopButton">
+            <div class="icon"></div>
+            <span>Play</span>
+          </button>
+          <input type="range" id="volume-control" min="0" max="100" value="50">
+          <span id="volume-value">50%</span>
+        </div>
+        <!-- Add simple game -->
+        <button id="start-button" class="start-button">
+          <span class="button-text">Start Game</span>
+          <i class="fas fa-play"></i>
+        </button>
+      </div>
+      <div class="spacer">
+        <h4>Dutch Courses:</h4>
+        <div class="file-container div-with-scrollbar">
+          <ul id="file-list">
+            <!-- file list will be inserted here -->
+          </ul>
+      </div>
+      </div>
+    </div>
+
+    <div class="table-container div-with-scrollbar">
+      <table id="word-list">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Dutch</th>
+            <th>English</th>
+            <th>Vietnamese</th>
+          </tr>
+        </thead>
+        <tbody id="word-list-body">
+          <!-- data will be inserted here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <footer>
+    &copy; <span id="year"></span> Quang, Nguyen Dang | <a href="mailto:dqvn2002@gmail.com">dqvn2002@gmail.com</a>
+  </footer>
+  <script src="assets/ttsvanstartscript.js"></script>
+  <script src="assets/game.js"></script>
+</body>
+
+</html>
