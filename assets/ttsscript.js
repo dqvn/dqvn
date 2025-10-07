@@ -8,6 +8,7 @@ const fileNames = ["ch00", "ch01", "ch03", "ch02", "ch04", "ch05", "ch06", "ch07
   "sw31", "sw32", "sw33", "sw34", "sw35", "sw36", "sw37", "sw38", "sw39", "sw40", 
   "sw41", "sw42", "sw43", "sw44", "sw45", "sw46", "sw47", "sw48", "sw49", "sw50", 
   "sw51", "sw52", "sz02", "sz03", "sz04", "sz05", "sz06", "sz07", "sz08", "sz09", "sz10", "sz11", "sz12", "sz13", "sz14", "sz15", "sz16", "sz17", "sz18", "sz19"];
+let currentPage = localStorage.getItem('curPage') || fileNames[0];
 const INTERVAL_TIME = 8000;
 
 const GROUP_TITLES = new Map([
@@ -51,7 +52,7 @@ playStopButton.addEventListener('click', () => {
 createLeftMenu();
 
 // init data
-loadJsonData('ch05', reloadTable);
+loadJsonData(currentPage, reloadTable);
 
 // set footer year
 year.textContent = new Date().getFullYear();
@@ -164,6 +165,7 @@ function speakEngText(text) {
 
 // read dutch words in json file
 function loadJsonData(filename, callback) {
+  localStorage.setItem('curPage', filename);
   var xhr = new XMLHttpRequest();
   var filePath = "data/" + filename + ".json";
   xhr.open('GET', filePath, true);
