@@ -1,0 +1,765 @@
+[
+  {
+    "dutch": "het advies, adviezen",
+    "english": "the advice, pieces of advice",
+    "vietnamese": "lời khuyên, những lời khuyên",
+    "dutchsentence": "Ik heb haar advies gevraagd over de nieuwe baan.",
+    "englishtranslate": "I asked her for advice about the new job."
+  },
+  {
+    "dutch": "het avondeten",
+    "english": "dinner, supper",
+    "vietnamese": "bữa tối",
+    "dutchsentence": "Wat eten we vanavond als avondeten?",
+    "englishtranslate": "What are we having for dinner tonight?"
+  },
+  {
+    "dutch": "het biertje, biertjes",
+    "english": "the beer, beers (small/casual)",
+    "vietnamese": "cốc bia (nhỏ), những cốc bia",
+    "dutchsentence": "Zullen we een biertje drinken op het terras?",
+    "englishtranslate": "Shall we have a beer on the terrace?"
+  },
+  {
+    "dutch": "het bericht, berichten",
+    "english": "the message, messages; the news",
+    "vietnamese": "tin nhắn, những tin nhắn; tin tức",
+    "dutchsentence": "Ik heb zojuist een bericht ontvangen van mijn vriend.",
+    "englishtranslate": "I just received a message from my friend."
+  },
+  {
+    "dutch": "de boodschap",
+    "english": "the message, errand",
+    "vietnamese": "thông điệp, việc vặt/việc mua sắm",
+    "dutchsentence": "Ik moet naar de supermarkt voor de boodschappen.",
+    "englishtranslate": "I have to go to the supermarket for groceries (the errands/shopping)."
+  },
+  {
+    "dutch": "het broodje, broodjes",
+    "english": "the sandwich, sandwiches (small bread roll)",
+    "vietnamese": "bánh mì (cuộn) nhỏ, những chiếc bánh mì nhỏ",
+    "dutchsentence": "Hij bestelt een broodje kaas voor de lunch.",
+    "englishtranslate": "He is ordering a cheese sandwich for lunch."
+  },
+  {
+    "dutch": "het dessert, desserts",
+    "english": "the dessert, desserts",
+    "vietnamese": "món tráng miệng, những món tráng miệng",
+    "dutchsentence": "Welk dessert wil je na het hoofdgerecht?",
+    "englishtranslate": "Which dessert do you want after the main course?"
+  },
+  {
+    "dutch": "de e-mail, e-mails",
+    "english": "the email, emails",
+    "vietnamese": "thư điện tử, những thư điện tử",
+    "dutchsentence": "Kun je mij de notulen van de vergadering in een e-mail sturen?",
+    "englishtranslate": "Can you send me the minutes of the meeting in an email?"
+  },
+  {
+    "dutch": "het examen, examens",
+    "english": "the exam, exams",
+    "vietnamese": "kỳ thi, những kỳ thi",
+    "dutchsentence": "Ik moet hard studeren voor het eindexamen.",
+    "englishtranslate": "I have to study hard for the final exam."
+  },
+  {
+    "dutch": "de garage, garages",
+    "english": "the garage, garages",
+    "vietnamese": "gara, những gara",
+    "dutchsentence": "Mijn auto staat in de garage voor reparatie.",
+    "englishtranslate": "My car is at the garage for repair."
+  },
+  {
+    "dutch": "het geld",
+    "english": "the money",
+    "vietnamese": "tiền",
+    "dutchsentence": "Heb je genoeg geld om de rekening te betalen?",
+    "englishtranslate": "Do you have enough money to pay the bill?"
+  },
+  {
+    "dutch": "het gesprek, gesprekken",
+    "english": "the conversation, conversations; the talk, talks",
+    "vietnamese": "cuộc trò chuyện, những cuộc trò chuyện",
+    "dutchsentence": "We hadden een interessant gesprek over reizen.",
+    "englishtranslate": "We had an interesting conversation about travel."
+  },
+  {
+    "dutch": "de hoek, hoeken",
+    "english": "the corner, corners; the angle, angles",
+    "vietnamese": "góc, những góc",
+    "dutchsentence": "Het restaurant bevindt zich op de hoek van de straat.",
+    "englishtranslate": "The restaurant is located on the corner of the street."
+  },
+  {
+    "dutch": "het hoofdgerecht, de hoofdgerechten",
+    "english": "the main course, main courses",
+    "vietnamese": "món chính, những món chính",
+    "dutchsentence": "Ik heb het hoofdgerecht met vis gekozen.",
+    "englishtranslate": "I chose the main course with fish."
+  },
+  {
+    "dutch": "de informatie",
+    "english": "the information",
+    "vietnamese": "thông tin",
+    "dutchsentence": "De informatie is te vinden op onze website.",
+    "englishtranslate": "The information can be found on our website."
+  },
+  {
+    "dutch": "de keuze, keuzes",
+    "english": "the choice, choices",
+    "vietnamese": "sự lựa chọn, những sự lựa chọn",
+    "dutchsentence": "Dat is een moeilijke keuze om te maken.",
+    "englishtranslate": "That is a difficult choice to make."
+  },
+  {
+    "dutch": "de lunch",
+    "english": "the lunch",
+    "vietnamese": "bữa trưa",
+    "dutchsentence": "Zullen we samen lunchen morgen?",
+    "englishtranslate": "Shall we have lunch together tomorrow?"
+  },
+  {
+    "dutch": "het lunchcafé, lunchcafés",
+    "english": "the lunch cafe, lunch cafes",
+    "vietnamese": "quán cà phê trưa, những quán cà phê trưa",
+    "dutchsentence": "We gaan naar een gezellig lunchcafé in het centrum.",
+    "englishtranslate": "We are going to a cozy lunch cafe downtown."
+  },
+  {
+    "dutch": "de menukaart, menukaarten",
+    "english": "the menu, menus",
+    "vietnamese": "thực đơn, những thực đơn",
+    "dutchsentence": "De ober gaf ons de menukaart.",
+    "englishtranslate": "The waiter gave us the menu."
+  },
+  {
+    "dutch": "de ober, obers",
+    "english": "the waiter, waiters",
+    "vietnamese": "người phục vụ (nam), những người phục vụ (nam)",
+    "dutchsentence": "De ober bracht onze drankjes naar de tafel.",
+    "englishtranslate": "The waiter brought our drinks to the table."
+  },
+  {
+    "dutch": "het ontbijt",
+    "english": "the breakfast",
+    "vietnamese": "bữa sáng",
+    "dutchsentence": "Ik eet altijd brood met kaas als ontbijt.",
+    "englishtranslate": "I always eat bread with cheese for breakfast."
+  },
+  {
+    "dutch": "de persoon, personen",
+    "english": "the person, people/persons",
+    "vietnamese": "người, những người",
+    "dutchsentence": "Er zijn vier personen in de wachtkamer.",
+    "englishtranslate": "There are four people in the waiting room."
+  },
+  {
+    "dutch": "het plan, plannen",
+    "english": "the plan, plans",
+    "vietnamese": "kế hoạch, những kế hoạch",
+    "dutchsentence": "Wat is je plan voor de komende vakantie?",
+    "englishtranslate": "What is your plan for the upcoming vacation?"
+  },
+  {
+    "dutch": "het praatje, praatjes",
+    "english": "the small talk, chat, chats",
+    "vietnamese": "cuộc nói chuyện ngắn, những cuộc nói chuyện ngắn",
+    "dutchsentence": "We maakten een kort praatje met de buren.",
+    "englishtranslate": "We made a short chat with the neighbors."
+  },
+  {
+    "dutch": "de rekening, rekeningen",
+    "english": "the bill/check, bills/checks; the account, accounts",
+    "vietnamese": "hóa đơn, những hóa đơn; tài khoản",
+    "dutchsentence": "Mag ik alstublieft de rekening?",
+    "englishtranslate": "May I have the bill, please?"
+  },
+  {
+    "dutch": "de rest",
+    "english": "the rest (of something)",
+    "vietnamese": "phần còn lại",
+    "dutchsentence": "Ik neem de rest van de soep mee naar huis.",
+    "englishtranslate": "I'm taking the rest of the soup home."
+  },
+  {
+    "dutch": "het restaurant, restaurants",
+    "english": "the restaurant, restaurants",
+    "vietnamese": "nhà hàng, những nhà hàng",
+    "dutchsentence": "We hebben gereserveerd in een nieuw restaurant.",
+    "englishtranslate": "We made a reservation at a new restaurant."
+  },
+  {
+    "dutch": "het schilderij, schilderijen",
+    "english": "the painting, paintings",
+    "vietnamese": "bức tranh, những bức tranh",
+    "dutchsentence": "Het schilderij aan de muur is erg mooi.",
+    "englishtranslate": "The painting on the wall is very beautiful."
+  },
+  {
+    "dutch": "de sfeer",
+    "english": "the atmosphere, ambiance",
+    "vietnamese": "không khí, bầu không khí",
+    "dutchsentence": "De sfeer in het café is heel gezellig.",
+    "englishtranslate": "The atmosphere in the café is very cozy."
+  },
+  {
+    "dutch": "de sleutel, sleutels",
+    "english": "the key, keys",
+    "vietnamese": "chìa khóa, những chiếc chìa khóa",
+    "dutchsentence": "Ik kan mijn huissleutel nergens vinden.",
+    "englishtranslate": "I can't find my house key anywhere."
+  },
+  {
+    "dutch": "de snackbar, snackbars",
+    "english": "the snack bar, snack bars",
+    "vietnamese": "quán ăn vặt, những quán ăn vặt",
+    "dutchsentence": "We halen patat bij de snackbar.",
+    "englishtranslate": "We are getting fries at the snack bar."
+  },
+  {
+    "dutch": "de sociale media",
+    "english": "the social media",
+    "vietnamese": "mạng xã hội",
+    "dutchsentence": "Zij deelt haar foto's op sociale media.",
+    "englishtranslate": "She shares her photos on social media."
+  },
+  {
+    "dutch": "het spelletje, spelletjes",
+    "english": "the game, games (diminutive/casual)",
+    "vietnamese": "trò chơi, những trò chơi",
+    "dutchsentence": "Zullen we een spelletje spelen vanavond?",
+    "englishtranslate": "Shall we play a game tonight?"
+  },
+  {
+    "dutch": "de tandarts, tandartsen",
+    "english": "the dentist, dentists",
+    "vietnamese": "nha sĩ, những nha sĩ",
+    "dutchsentence": "Ik heb morgen een afspraak bij de tandarts.",
+    "englishtranslate": "I have an appointment at the dentist tomorrow."
+  },
+  {
+    "dutch": "de tas, tassen",
+    "english": "the bag, bags; the purse, purses",
+    "vietnamese": "cái túi, những cái túi",
+    "dutchsentence": "Vergeet je tas met boeken niet mee te nemen.",
+    "englishtranslate": "Don't forget to take your bag with books."
+  },
+  {
+    "dutch": "de telefoon, telefoons",
+    "english": "the telephone, telephones; the phone, phones",
+    "vietnamese": "điện thoại, những chiếc điện thoại",
+    "dutchsentence": "Mijn telefoon is leeg, ik moet hem opladen.",
+    "englishtranslate": "My phone is dead, I have to charge it."
+  },
+  {
+    "dutch": "het telefoongesprek, telefoongesprekken",
+    "english": "the phone call, phone calls",
+    "vietnamese": "cuộc gọi điện thoại, những cuộc gọi điện thoại",
+    "dutchsentence": "Het telefoongesprek duurde langer dan een uur.",
+    "englishtranslate": "The phone call lasted longer than an hour."
+  },
+  {
+    "dutch": "het terras, terrassen",
+    "english": "the terrace, terraces; the outdoor seating area",
+    "vietnamese": "sân thượng, những sân thượng; khu vực ngoài trời",
+    "dutchsentence": "Zullen we op het terras gaan zitten?",
+    "englishtranslate": "Shall we sit on the terrace?"
+  },
+  {
+    "dutch": "de vakantie, vakanties",
+    "english": "the holiday, holidays; the vacation, vacations",
+    "vietnamese": "kỳ nghỉ, những kỳ nghỉ",
+    "dutchsentence": "Ik kijk uit naar mijn vakantie in Spanje.",
+    "englishtranslate": "I am looking forward to my holiday in Spain."
+  },
+  {
+    "dutch": "het toetje, toetjes",
+    "english": "the dessert, desserts (casual)",
+    "vietnamese": "món tráng miệng (thân mật), những món tráng miệng",
+    "dutchsentence": "Na het eten krijgen de kinderen een toetje.",
+    "englishtranslate": "After eating, the children will get a dessert."
+  },
+  {
+    "dutch": "de toets, toetsen",
+    "english": "the test, tests; the key, keys (on a keyboard/piano)",
+    "vietnamese": "bài kiểm tra, những bài kiểm tra; phím, những phím",
+    "dutchsentence": "We hebben morgen een belangrijke toets geschiedenis.",
+    "englishtranslate": "We have an important history test tomorrow."
+  },
+  {
+    "dutch": "trek",
+    "english": "appetite, hunger",
+    "vietnamese": "cơn thèm ăn, đói",
+    "dutchsentence": "Ik heb enorme trek in een hamburger.",
+    "englishtranslate": "I have an enormous appetite/craving for a hamburger."
+  },
+  {
+    "dutch": "het verhaal, verhalen",
+    "english": "the story, stories",
+    "vietnamese": "câu chuyện, những câu chuyện",
+    "dutchsentence": "Hij vertelt een spannend verhaal over zijn reis.",
+    "englishtranslate": "He is telling an exciting story about his trip."
+  },
+  {
+    "dutch": "het voetbalveld, voetbalvelden",
+    "english": "the football field, football fields (soccer)",
+    "vietnamese": "sân bóng đá, những sân bóng đá",
+    "dutchsentence": "De kinderen spelen op het voetbalveld achter school.",
+    "englishtranslate": "The children are playing on the soccer field behind the school."
+  },
+  {
+    "dutch": "het voorgerecht, de voorgerechten",
+    "english": "the starter, starters; the appetizer, appetizers",
+    "vietnamese": "món khai vị, những món khai vị",
+    "dutchsentence": "Als voorgerecht neem ik de tomatensoep.",
+    "englishtranslate": "For a starter, I'll take the tomato soup."
+  },
+  {
+    "dutch": "het weer",
+    "english": "the weather",
+    "vietnamese": "thời tiết",
+    "dutchsentence": "Het weer is vandaag erg mooi met veel zon.",
+    "englishtranslate": "The weather today is very beautiful with a lot of sun."
+  },
+  {
+    "dutch": "zin",
+    "english": "desire, mood (for something); sense; sentence",
+    "vietnamese": "mong muốn, tâm trạng; câu",
+    "dutchsentence": "Ik heb zin in koffie en taart.",
+    "englishtranslate": "I have a desire/feel like having coffee and cake."
+  },
+  {
+    "dutch": "aanraden",
+    "english": "to recommend, to advise",
+    "vietnamese": "khuyên, giới thiệu",
+    "dutchsentence": "Welk restaurant zou jij aanraden?",
+    "englishtranslate": "Which restaurant would you recommend?"
+  },
+  {
+    "dutch": "barbecueën",
+    "english": "to barbecue, to grill",
+    "vietnamese": "nướng thịt (ngoài trời)",
+    "dutchsentence": "We gaan dit weekend barbecueën in de tuin.",
+    "englishtranslate": "We are going to barbecue in the garden this weekend."
+  },
+  {
+    "dutch": "bestellen",
+    "english": "to order (food, goods, etc.)",
+    "vietnamese": "đặt hàng, gọi món",
+    "dutchsentence": "Ze willen graag hun drankjes bestellen.",
+    "englishtranslate": "They would like to order their drinks."
+  },
+  {
+    "dutch": "bewaren",
+    "english": "to keep, to store, to save",
+    "vietnamese": "giữ, lưu trữ",
+    "dutchsentence": "Je kunt deze informatie het beste bewaren.",
+    "englishtranslate": "It's best to keep/store this information."
+  },
+  {
+    "dutch": "delen",
+    "english": "to share, to divide",
+    "vietnamese": "chia sẻ, chia",
+    "dutchsentence": "Zullen we de pizza delen?",
+    "englishtranslate": "Shall we share the pizza?"
+  },
+  {
+    "dutch": "doorgaan",
+    "english": "to continue, to go on",
+    "vietnamese": "tiếp tục",
+    "dutchsentence": "We moeten doorgaan met het project.",
+    "englishtranslate": "We must continue with the project."
+  },
+  {
+    "dutch": "doorgeven",
+    "english": "to pass on, to hand over",
+    "vietnamese": "chuyển đi, chuyển giao",
+    "dutchsentence": "Kun je het zout even doorgeven?",
+    "englishtranslate": "Can you pass the salt, please?"
+  },
+  {
+    "dutch": "eten",
+    "english": "to eat; the food",
+    "vietnamese": "ăn; thức ăn",
+    "dutchsentence": "Wat ga je vanavond eten?",
+    "englishtranslate": "What are you going to eat tonight?"
+  },
+  {
+    "dutch": "gebruikt, gebruiken",
+    "english": "used, to use",
+    "vietnamese": "đã dùng, sử dụng",
+    "dutchsentence": "Heb je de auto gebruikt gisteren?",
+    "englishtranslate": "Did you use the car yesterday?"
+  },
+  {
+    "dutch": "gegeten, eten",
+    "english": "eaten, to eat",
+    "vietnamese": "đã ăn, ăn",
+    "dutchsentence": "We hebben gisteravond gegeten bij een Italiaan.",
+    "englishtranslate": "We ate at an Italian place last night."
+  },
+  {
+    "dutch": "gehoord, horen",
+    "english": "heard, to hear",
+    "vietnamese": "đã nghe, nghe",
+    "dutchsentence": "Ik heb het nieuws op de radio gehoord.",
+    "englishtranslate": "I heard the news on the radio."
+  },
+  {
+    "dutch": "gesmaakt, smaken",
+    "english": "tasted (good), to taste (like)",
+    "vietnamese": "đã có hương vị, có hương vị",
+    "dutchsentence": "Het eten heeft me goed gesmaakt.",
+    "englishtranslate": "The food tasted good to me (I enjoyed the food)."
+  },
+  {
+    "dutch": "kiezen",
+    "english": "to choose, to select",
+    "vietnamese": "chọn",
+    "dutchsentence": "Wat voor toetje ga je kiezen?",
+    "englishtranslate": "What kind of dessert are you going to choose?"
+  },
+  {
+    "dutch": "klinkt, klinken",
+    "english": "sounds, to sound (like)",
+    "vietnamese": "nghe có vẻ, vang lên",
+    "dutchsentence": "Dat klinkt als een goed plan.",
+    "englishtranslate": "That sounds like a good plan."
+  },
+  {
+    "dutch": "koken",
+    "english": "to cook, to boil",
+    "vietnamese": "nấu ăn",
+    "dutchsentence": "Zij houdt erg van koken.",
+    "englishtranslate": "She really likes to cook."
+  },
+  {
+    "dutch": "laat, laten",
+    "english": "lets, to let/allow; to have (something done)",
+    "vietnamese": "để, cho phép",
+    "dutchsentence": "Laat me je helpen met die tas.",
+    "englishtranslate": "Let me help you with that bag."
+  },
+  {
+    "dutch": "meegaan",
+    "english": "to go along, to join",
+    "vietnamese": "đi cùng, đi theo",
+    "dutchsentence": "Wil je met ons meegaan naar de film?",
+    "englishtranslate": "Do you want to go with us to the movie?"
+  },
+  {
+    "dutch": "picknicken",
+    "english": "to picnic",
+    "vietnamese": "đi dã ngoại",
+    "dutchsentence": "Als het mooi weer is, gaan we picknicken in het park.",
+    "englishtranslate": "If the weather is nice, we will go picnicking in the park."
+  },
+  {
+    "dutch": "regent, regenen",
+    "english": "rains, to rain",
+    "vietnamese": "mưa, trời mưa",
+    "dutchsentence": "Het regent nu, dus we blijven binnen.",
+    "englishtranslate": "It's raining now, so we are staying inside."
+  },
+  {
+    "dutch": "reserveren",
+    "english": "to reserve, to book",
+    "vietnamese": "đặt trước, dự trữ",
+    "dutchsentence": "Heb je een tafel gereserveerd in het restaurant?",
+    "englishtranslate": "Did you reserve a table at the restaurant?"
+  },
+  {
+    "dutch": "roepen",
+    "english": "to call, to shout",
+    "vietnamese": "gọi, la hét",
+    "dutchsentence": "Ze hoorde iemand haar naam roepen.",
+    "englishtranslate": "She heard someone call her name."
+  },
+  {
+    "dutch": "smaakt, smaken",
+    "english": "tastes, to taste (like)",
+    "vietnamese": "có vị, nếm",
+    "dutchsentence": "De soep smaakt erg goed.",
+    "englishtranslate": "The soup tastes very good."
+  },
+  {
+    "dutch": "stuurt, sturen",
+    "english": "sends, to send",
+    "vietnamese": "gửi, chuyển",
+    "dutchsentence": "Zij stuurt me een e-mail met de details.",
+    "englishtranslate": "She is sending me an email with the details."
+  },
+  {
+    "dutch": "telefoneren",
+    "english": "to telephone, to make a call",
+    "vietnamese": "gọi điện thoại",
+    "dutchsentence": "Ik moet even telefoneren met de tandarts.",
+    "englishtranslate": "I need to make a phone call to the dentist."
+  },
+  {
+    "dutch": "terugbelt, terugbellen",
+    "english": "calls back, to call back",
+    "vietnamese": "gọi lại, gọi điện thoại lại",
+    "dutchsentence": "Ik ben even bezet, maar ik bel je zo terug.",
+    "englishtranslate": "I'm busy for a moment, but I'll call you back soon."
+  },
+  {
+    "dutch": "uitkomen",
+    "english": "to come out, to turn out, to be released",
+    "vietnamese": "ra ngoài, hóa ra, được phát hành",
+    "dutchsentence": "Hopelijk komen we snel uit op een datum voor de vergadering.",
+    "englishtranslate": "Hopefully, we will quickly land on a date for the meeting (find a suitable date)."
+  },
+  {
+    "dutch": "vergeet, vergeten",
+    "english": "forgets, to forget",
+    "vietnamese": "quên, lãng quên",
+    "dutchsentence": "Vergeet je je portemonnee niet?",
+    "englishtranslate": "Don't you forget your wallet?"
+  },
+  {
+    "dutch": "vertelt, vertellen",
+    "english": "tells, to tell",
+    "vietnamese": "kể, nói",
+    "dutchsentence": "Hij vertelt een grap tijdens het gesprek.",
+    "englishtranslate": "He tells a joke during the conversation."
+  },
+  {
+    "dutch": "met",
+    "english": "with",
+    "vietnamese": "với, bằng",
+    "dutchsentence": "Ik ga met de trein naar de stad.",
+    "englishtranslate": "I'm going to the city by train."
+  },
+  {
+    "dutch": "na",
+    "english": "after",
+    "vietnamese": "sau",
+    "dutchsentence": "Na het werk ga ik naar huis.",
+    "englishtranslate": "After work, I'm going home."
+  },
+  {
+    "dutch": "naast",
+    "english": "next to, beside",
+    "vietnamese": "bên cạnh",
+    "dutchsentence": "Zij zit naast mij in de klas.",
+    "englishtranslate": "She is sitting next to me in class."
+  },
+  {
+    "dutch": "op",
+    "english": "on, at",
+    "vietnamese": "trên, tại",
+    "dutchsentence": "Het boek ligt op tafel.",
+    "englishtranslate": "The book is on the table."
+  },
+  {
+    "dutch": "over",
+    "english": "about, over, across",
+    "vietnamese": "về, qua, trên",
+    "dutchsentence": "We praten over het weekend.",
+    "englishtranslate": "We are talking about the weekend."
+  },
+  {
+    "dutch": "tussen",
+    "english": "between, among",
+    "vietnamese": "giữa",
+    "dutchsentence": "Het huis ligt tussen twee bomen.",
+    "englishtranslate": "The house is between two trees."
+  },
+  {
+    "dutch": "benieuwd",
+    "english": "curious, wondering",
+    "vietnamese": "tò mò, muốn biết",
+    "dutchsentence": "Ik ben benieuwd naar het resultaat van de toets.",
+    "englishtranslate": "I am curious about the result of the test."
+  },
+  {
+    "dutch": "beschikbaar",
+    "english": " available",
+    "vietnamese": "có sẵn",
+    "dutchsentence": "Is er nog een tafel beschikbaar in het restaurant?",
+    "englishtranslate": "Is there still a table available in the restaurant?"
+  },
+  {
+    "dutch": "bereikbaar",
+    "english": "reachable, accessible",
+    "vietnamese": "có thể liên lạc được, có thể đến được",
+    "dutchsentence": "Ik ben de hele dag bereikbaar via mijn telefoon.",
+    "englishtranslate": "I am reachable all day via my phone."
+  },
+  {
+    "dutch": "kapot",
+    "english": "broken, out of order",
+    "vietnamese": "hỏng, bị vỡ",
+    "dutchsentence": "Mijn telefoon is kapot gevallen.",
+    "englishtranslate": "My phone fell and broke."
+  },
+  {
+    "dutch": "moe",
+    "english": "tired",
+    "vietnamese": "mệt mỏi",
+    "dutchsentence": "Na een lange werkdag ben ik erg moe.",
+    "englishtranslate": "After a long workday, I am very tired."
+  },
+  {
+    "dutch": "negatief",
+    "english": "negative",
+    "vietnamese": "tiêu cực",
+    "dutchsentence": "Helaas was de uitslag van de test negatief.",
+    "englishtranslate": "Unfortunately, the result of the test was negative."
+  },
+  {
+    "dutch": "gesloten",
+    "english": "closed",
+    "vietnamese": "đóng cửa",
+    "dutchsentence": "De winkel is op zondag gesloten.",
+    "englishtranslate": "The shop is closed on Sunday."
+  },
+  {
+    "dutch": "positief",
+    "english": "positive",
+    "vietnamese": "tích cực",
+    "dutchsentence": "Het gesprek verliep erg positief.",
+    "englishtranslate": "The conversation went very positively."
+  },
+  {
+    "dutch": "privé",
+    "english": "private",
+    "vietnamese": "riêng tư, cá nhân",
+    "dutchsentence": "Dit is een privé-aangelegenheid.",
+    "englishtranslate": "This is a private matter."
+  },
+  {
+    "dutch": "spannend",
+    "english": "exciting, thrilling, suspenseful",
+    "vietnamese": "hấp dẫn, thú vị",
+    "dutchsentence": "Dat was een heel spannend verhaal.",
+    "englishtranslate": "That was a very exciting story."
+  },
+  {
+    "dutch": "verrukkelijk",
+    "english": "delicious, delightful",
+    "vietnamese": "ngon tuyệt, thú vị",
+    "dutchsentence": "Het dessert was verrukkelijk.",
+    "englishtranslate": "The dessert was delicious."
+  },
+  {
+    "dutch": "zalig",
+    "english": "blissful, wonderful, delicious (informal)",
+    "vietnamese": "tuyệt vời, ngon",
+    "dutchsentence": "Die vakantie was zalig.",
+    "englishtranslate": "That holiday was blissful/wonderful."
+  },
+  {
+    "dutch": "groeten",
+    "english": "to greet; greetings",
+    "vietnamese": "chào hỏi; lời chào",
+    "dutchsentence": "Hij stuurde zijn groeten aan de familie.",
+    "englishtranslate": "He sent his greetings to the family."
+  },
+  {
+    "dutch": "smakelijk",
+    "english": "tasty; appetizing (in 'eet smakelijk' = enjoy your meal)",
+    "vietnamese": "ngon miệng",
+    "dutchsentence": "Eet smakelijk!",
+    "englishtranslate": "Enjoy your meal! (Eat appetizingly!)"
+  },
+  {
+    "dutch": "en",
+    "english": "and",
+    "vietnamese": "và",
+    "dutchsentence": "Ik wil koffie en thee.",
+    "englishtranslate": "I want coffee and tea."
+  },
+  {
+    "dutch": "of",
+    "english": "or",
+    "vietnamese": "hoặc",
+    "dutchsentence": "Wil je water of sap?",
+    "englishtranslate": "Do you want water or juice?"
+  },
+  {
+    "dutch": "maar",
+    "english": "but",
+    "vietnamese": "nhưng",
+    "dutchsentence": "Ik wil wel gaan, maar ik ben moe.",
+    "englishtranslate": "I want to go, but I am tired."
+  },
+  {
+    "dutch": "want",
+    "english": "because (reason)",
+    "vietnamese": "vì, bởi vì",
+    "dutchsentence": "We moeten snel zijn, want de winkel sluit.",
+    "englishtranslate": "We have to be fast, because the shop is closing."
+  },
+  {
+    "dutch": "dus",
+    "english": "so, therefore",
+    "vietnamese": "vì vậy, cho nên",
+    "dutchsentence": "Het regent, dus ik neem een paraplu mee.",
+    "englishtranslate": "It's raining, so I'm bringing an umbrella."
+  },
+  {
+    "dutch": "dat",
+    "english": "that (conjunction, demonstrative pronoun)",
+    "vietnamese": "rằng, điều đó, cái đó",
+    "dutchsentence": "Ik weet dat je komt.",
+    "englishtranslate": "I know that you are coming."
+  },
+  {
+    "dutch": "omdat",
+    "english": "because (subordinate clause)",
+    "vietnamese": "bởi vì",
+    "dutchsentence": "Ik blijf thuis, omdat ik ziek ben.",
+    "englishtranslate": "I'm staying home, because I am sick."
+  },
+  {
+    "dutch": "als",
+    "english": "if, when, as",
+    "vietnamese": "nếu, khi, như là",
+    "dutchsentence": "Als het morgen mooi weer is, gaan we picknicken.",
+    "englishtranslate": "If the weather is nice tomorrow, we will go picnicking."
+  },
+  {
+    "dutch": "aanstaande",
+    "english": "next, upcoming, forthcoming",
+    "vietnamese": "sắp tới, tới",
+    "dutchsentence": "Aanstaande vrijdag hebben we de vergadering.",
+    "englishtranslate": "Next Friday, we have the meeting."
+  },
+  {
+    "dutch": "inderdaad",
+    "english": "indeed, certainly",
+    "vietnamese": "thật vậy, quả thật",
+    "dutchsentence": "Het is inderdaad een goede film.",
+    "englishtranslate": "It is indeed a good movie."
+  },
+  {
+    "dutch": "klaar",
+    "english": "ready, finished",
+    "vietnamese": "sẵn sàng, hoàn thành",
+    "dutchsentence": "Ben je al klaar met je werk?",
+    "englishtranslate": "Are you ready with your work yet?"
+  },
+  {
+    "dutch": "komend(e)",
+    "english": "coming, next",
+    "vietnamese": "sắp tới, đến",
+    "dutchsentence": "In de komende week moet ik veel studeren.",
+    "englishtranslate": "In the coming week, I have to study a lot."
+  },
+  {
+    "dutch": "kwijt",
+    "english": "lost (something), got rid of",
+    "vietnamese": "mất",
+    "dutchsentence": "Ik ben mijn sleutels kwijt.",
+    "englishtranslate": "I have lost my keys."
+  },
+  {
+    "dutch": "volgende",
+    "english": "next, following",
+    "vietnamese": "tiếp theo, sau",
+    "dutchsentence": "Tot volgende week!",
+    "englishtranslate": "See you next week!"
+  }
+]

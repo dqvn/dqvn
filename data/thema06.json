@@ -1,0 +1,877 @@
+[
+  {
+    "dutch": "de aanvraag, aanvragen",
+    "english": "the application, applications; the request, requests",
+    "vietnamese": "đơn yêu cầu, những đơn yêu cầu",
+    "dutchsentence": "Je moet een aanvraag indienen voor het rijbewijs.",
+    "englishtranslate": "You have to submit an application for the driving license."
+  },
+  {
+    "dutch": "het abonnement, abonnementen",
+    "english": "the subscription, subscriptions",
+    "vietnamese": "gói đăng ký, những gói đăng ký",
+    "dutchsentence": "Ik heb een abonnement op dit tijdschrift.",
+    "englishtranslate": "I have a subscription to this magazine."
+  },
+  {
+    "dutch": "de automaat, automaten",
+    "english": "the vending machine, vending machines; the automatic machine",
+    "vietnamese": "máy tự động, những máy tự động",
+    "dutchsentence": "Haal een beker koffie uit de automaat.",
+    "englishtranslate": "Get a cup of coffee from the vending machine."
+  },
+  {
+    "dutch": "de beker, bekers",
+    "english": "the cup, cups; the mug, mugs; the beaker, beakers",
+    "vietnamese": "cái cốc, những cái cốc",
+    "dutchsentence": "Deze beker is van plastic.",
+    "englishtranslate": "This cup is made of plastic."
+  },
+  {
+    "dutch": "de bezine",
+    "english": "the petrol, the gasoline",
+    "vietnamese": "xăng dầu",
+    "dutchsentence": "We moeten bezine tanken voor de reis.",
+    "englishtranslate": "We need to refuel/get petrol for the trip."
+  },
+  {
+    "dutch": "de boot, boten",
+    "english": "the boat, boats",
+    "vietnamese": "chiếc thuyền, những chiếc thuyền",
+    "dutchsentence": "We gaan varen met een kleine boot.",
+    "englishtranslate": "We are going sailing with a small boat."
+  },
+  {
+    "dutch": "de brommer, brommers",
+    "english": "the moped, mopeds; the scooter, scooters",
+    "vietnamese": "xe máy, những chiếc xe máy (nhỏ/ga)",
+    "dutchsentence": "Hij gaat met zijn brommer naar zijn werk.",
+    "englishtranslate": "He goes to work with his moped."
+  },
+  {
+    "dutch": "het dagretour, dagretours",
+    "english": "the day return ticket, day return tickets",
+    "vietnamese": "vé khứ hồi trong ngày, những vé khứ hồi trong ngày",
+    "dutchsentence": "Een dagretour naar Amsterdam is erg voordelig.",
+    "englishtranslate": "A day return ticket to Amsterdam is very affordable."
+  },
+  {
+    "dutch": "het deel, delen",
+    "english": "the part, parts; the share, shares",
+    "vietnamese": "phần, những phần",
+    "dutchsentence": "Ik heb een deel van de taart gekregen.",
+    "englishtranslate": "I received a part of the cake."
+  },
+  {
+    "dutch": "de diefstal, diefstallen",
+    "english": "the theft, thefts",
+    "vietnamese": "vụ trộm cắp, những vụ trộm cắp",
+    "dutchsentence": "De diefstal van mijn fiets is bij de politie gemeld.",
+    "englishtranslate": "The theft of my bicycle has been reported to the police."
+  },
+  {
+    "dutch": "het dorp, dorpen",
+    "english": "the village, villages",
+    "vietnamese": "ngôi làng, những ngôi làng",
+    "dutchsentence": "Zij woont in een klein dorp buiten de stad.",
+    "englishtranslate": "She lives in a small village outside the city."
+  },
+  {
+    "dutch": "het drankje, drankjes",
+    "english": "the drink, drinks",
+    "vietnamese": "đồ uống, những đồ uống",
+    "dutchsentence": "Zou je nog een drankje willen bestellen?",
+    "englishtranslate": "Would you like to order another drink?"
+  },
+  {
+    "dutch": "de excursie, excursies",
+    "english": "the excursion, excursions; the field trip, field trips",
+    "vietnamese": "chuyến tham quan, những chuyến tham quan",
+    "dutchsentence": "Morgen gaan we op excursie naar een museum.",
+    "englishtranslate": "Tomorrow we are going on an excursion to a museum."
+  },
+  {
+    "dutch": "de fietstocht, fietstochten",
+    "english": "the bike ride, bike rides; the cycling trip, cycling trips",
+    "vietnamese": "chuyến đi xe đạp, những chuyến đi xe đạp",
+    "dutchsentence": "We hebben een lange fietstocht gemaakt langs de kust.",
+    "englishtranslate": "We took a long bike ride along the coast."
+  },
+  {
+    "dutch": "de file, files",
+    "english": "the traffic jam, traffic jams",
+    "vietnamese": "ùn tắc giao thông, những ùn tắc giao thông",
+    "dutchsentence": "Er staat een lange file op de snelweg.",
+    "englishtranslate": "There is a long traffic jam on the highway."
+  },
+  {
+    "dutch": "de halte, haltes",
+    "english": "the stop, stops (bus, tram); the halt, halts",
+    "vietnamese": "điểm dừng, những điểm dừng",
+    "dutchsentence": "De bus stopt bij de volgende halte.",
+    "englishtranslate": "The bus stops at the next stop."
+  },
+  {
+    "dutch": "de handbagage",
+    "english": "the hand luggage, the carry-on baggage",
+    "vietnamese": "hành lý xách tay",
+    "dutchsentence": "Je mag één stuk handbagage meenemen in het vliegtuig.",
+    "englishtranslate": "You are allowed to bring one piece of hand luggage on the airplane."
+  },
+  {
+    "dutch": "de informatie",
+    "english": "the information",
+    "vietnamese": "thông tin",
+    "dutchsentence": "De informatie over de vlucht is duidelijk.",
+    "englishtranslate": "The information about the flight is clear."
+  },
+  {
+    "dutch": "de informatiebalie",
+    "english": "the information desk, the service counter",
+    "vietnamese": "quầy thông tin",
+    "dutchsentence": "U kunt met uw vragen terecht bij de informatiebalie.",
+    "englishtranslate": "You can go to the information desk with your questions."
+  },
+  {
+    "dutch": "de ingang, ingangen",
+    "english": "the entrance, entrances",
+    "vietnamese": "lối vào, những lối vào",
+    "dutchsentence": "De ingang van het station is aan de zijkant.",
+    "englishtranslate": "The entrance to the station is on the side."
+  },
+  {
+    "dutch": "het instructiefilmpje",
+    "english": "the instruction video (diminutive)",
+    "vietnamese": "video hướng dẫn",
+    "dutchsentence": "Bekijk het instructiefilmpje om te zien hoe het werkt.",
+    "englishtranslate": "Watch the instruction video to see how it works."
+  },
+  {
+    "dutch": "de koffer, koffers",
+    "english": "the suitcase, suitcases; the trunk, trunks",
+    "vietnamese": "cái vali, những cái vali",
+    "dutchsentence": "Ik heb mijn koffer gepakt voor de vakantie.",
+    "englishtranslate": "I packed my suitcase for the holiday."
+  },
+  {
+    "dutch": "de keuring, keuringen",
+    "english": "the inspection, inspections; the check-up, check-ups",
+    "vietnamese": "việc kiểm tra, những việc kiểm tra",
+    "dutchsentence": "De auto moet een jaarlijkse keuring ondergaan.",
+    "englishtranslate": "The car must undergo an annual inspection."
+  },
+  {
+    "dutch": "de lijn, lijnen",
+    "english": "the line, lines",
+    "vietnamese": "tuyến, những tuyến; đường, những đường",
+    "dutchsentence": "Welke metrolijn gaat naar het centrum?",
+    "englishtranslate": "Which metro line goes to the center?"
+  },
+  {
+    "dutch": "de metro, metro’s",
+    "english": "the subway, subways; the metro, metros",
+    "vietnamese": "tàu điện ngầm, những tàu điện ngầm",
+    "dutchsentence": "De metro is een snel vervoermiddel in de stad.",
+    "englishtranslate": "The metro is a fast means of transport in the city."
+  },
+  {
+    "dutch": "de motor, motoren",
+    "english": "the motorcycle, motorcycles; the engine, engines",
+    "vietnamese": "xe máy, những chiếc xe máy; động cơ, những động cơ",
+    "dutchsentence": "Zijn motor heeft een onderhoudsbeurt nodig.",
+    "englishtranslate": "His motorcycle/engine needs maintenance."
+  },
+  {
+    "dutch": "de opleiding, opleidingen",
+    "english": "the education, training, studies, courses",
+    "vietnamese": "khóa học, những khóa học; đào tạo",
+    "dutchsentence": "Ik doe een opleiding tot leraar.",
+    "englishtranslate": "I am doing a training to become a teacher."
+  },
+  {
+    "dutch": "de pas, passen",
+    "english": "the pass, passes; the card, cards",
+    "vietnamese": "thẻ, những thẻ; giấy phép, những giấy phép",
+    "dutchsentence": "Vergeet je OV-chipkaart (OV-pas) niet in te checken.",
+    "englishtranslate": "Don't forget to check in with your public transport card (OV-pass)."
+  },
+  {
+    "dutch": "de pasfoto, pasfoto’s",
+    "english": "the passport photo, passport photos",
+    "vietnamese": "ảnh hộ chiếu, những ảnh hộ chiếu",
+    "dutchsentence": "Je hebt twee pasfoto's nodig voor de aanvraag.",
+    "englishtranslate": "You need two passport photos for the application."
+  },
+  {
+    "dutch": "de paspoortcontrole",
+    "english": "the passport control",
+    "vietnamese": "kiểm soát hộ chiếu",
+    "dutchsentence": "Na de paspoortcontrole loop je naar de gate.",
+    "englishtranslate": "After the passport control, you walk to the gate."
+  },
+  {
+    "dutch": "het perron, perrons",
+    "english": "the platform, platforms (train)",
+    "vietnamese": "sân ga, những sân ga",
+    "dutchsentence": "De trein naar Utrecht vertrekt van perron 7.",
+    "englishtranslate": "The train to Utrecht departs from platform 7."
+  },
+  {
+    "dutch": "de pech",
+    "english": "the bad luck, the breakdown (car)",
+    "vietnamese": "vận rủi, sự cố",
+    "dutchsentence": "We hadden pech met de auto onderweg.",
+    "englishtranslate": "We had bad luck/a breakdown with the car on the way."
+  },
+  {
+    "dutch": "de rondvaart, rondvaarten",
+    "english": "the boat tour, boat tours; the cruise, cruises",
+    "vietnamese": "chuyến tham quan bằng thuyền, những chuyến tham quan bằng thuyền",
+    "dutchsentence": "Een rondvaart door de grachten van Amsterdam is erg populair.",
+    "englishtranslate": "A boat tour through the canals of Amsterdam is very popular."
+  },
+  {
+    "dutch": "het rijbewijs, rijbewijzen",
+    "english": "the driving license, driving licenses",
+    "vietnamese": "giấy phép lái xe, những giấy phép lái xe",
+    "dutchsentence": "Je moet je rijbewijs tonen bij de huur van een auto.",
+    "englishtranslate": "You must show your driving license when renting a car."
+  },
+  {
+    "dutch": "het saldo, saldo’s",
+    "english": "the balance, balances (account)",
+    "vietnamese": "số dư, những số dư",
+    "dutchsentence": "Controleer je saldo op de OV-chipkaart.",
+    "englishtranslate": "Check your balance on the public transport card."
+  },
+  {
+    "dutch": "de servicebalie",
+    "english": "the service desk, the service counter",
+    "vietnamese": "quầy dịch vụ",
+    "dutchsentence": "Je kunt je klacht melden bij de servicebalie.",
+    "englishtranslate": "You can report your complaint at the service desk."
+  },
+  {
+    "dutch": "de soort, soorten",
+    "english": "the type, types; the kind, kinds; the species, species",
+    "vietnamese": "loại, những loại",
+    "dutchsentence": "Wat voor soort koffie wil je?",
+    "englishtranslate": "What type of coffee do you want?"
+  },
+  {
+    "dutch": "de spits",
+    "english": "the rush hour, the peak hour",
+    "vietnamese": "giờ cao điểm",
+    "dutchsentence": "Probeer de spits te vermijden als je met de auto gaat.",
+    "englishtranslate": "Try to avoid rush hour if you go by car."
+  },
+  {
+    "dutch": "het spoor, sporen",
+    "english": "the track, tracks (train); the trace, traces; the lane, lanes",
+    "vietnamese": "đường ray, những đường ray; dấu vết",
+    "dutchsentence": "De trein rijdt op spoor 5.",
+    "englishtranslate": "The train is traveling on track 5."
+  },
+  {
+    "dutch": "de stad, steden",
+    "english": "the city, cities; the town, towns",
+    "vietnamese": "thành phố, những thành phố",
+    "dutchsentence": "Amsterdam is de grootste stad van Nederland.",
+    "englishtranslate": "Amsterdam is the largest city in the Netherlands."
+  },
+  {
+    "dutch": "het plein, pleinen",
+    "english": "the square, squares (city)",
+    "vietnamese": "quảng trường, những quảng trường",
+    "dutchsentence": "We ontmoeten elkaar op het centrale plein.",
+    "englishtranslate": "We will meet on the central square."
+  },
+  {
+    "dutch": "de stalling, stallingen",
+    "english": "the storage, storages; the shelter, shelters (for bikes, etc.)",
+    "vietnamese": "chỗ để xe, những chỗ để xe",
+    "dutchsentence": "Je kunt je fiets in de overdekte stalling zetten.",
+    "englishtranslate": "You can put your bike in the covered storage/shelter."
+  },
+  {
+    "dutch": "de taxi, taxi’s",
+    "english": "the taxi, taxis",
+    "vietnamese": "xe taxi, những chiếc xe taxi",
+    "dutchsentence": "We nemen een taxi naar het vliegveld.",
+    "englishtranslate": "We are taking a taxi to the airport."
+  },
+  {
+    "dutch": "het traject, trajecten",
+    "english": "the route, routes; the stretch, stretches (of road/track)",
+    "vietnamese": "tuyến đường, những tuyến đường",
+    "dutchsentence": "Het traject van de trein is gewijzigd.",
+    "englishtranslate": "The route of the train has been changed."
+  },
+  {
+    "dutch": "de tram, trams",
+    "english": "the tram, trams; the streetcar, streetcars",
+    "vietnamese": "xe điện, những chiếc xe điện",
+    "dutchsentence": "De tram is vaak sneller dan de bus in de stad.",
+    "englishtranslate": "The tram is often faster than the bus in the city."
+  },
+  {
+    "dutch": "de trein, treinen",
+    "english": "the train, trains",
+    "vietnamese": "tàu hỏa, những tàu hỏa",
+    "dutchsentence": "Ik reis altijd met de trein naar mijn werk.",
+    "englishtranslate": "I always travel to work by train."
+  },
+  {
+    "dutch": "het uitje, uitjes",
+    "english": "the outing, outings; the trip, trips",
+    "vietnamese": "chuyến đi chơi, những chuyến đi chơi",
+    "dutchsentence": "We plannen een leuk uitje voor het weekend.",
+    "englishtranslate": "We are planning a nice outing for the weekend."
+  },
+  {
+    "dutch": "het verschil, verschillen",
+    "english": "the difference, differences",
+    "vietnamese": "sự khác biệt, những sự khác biệt",
+    "dutchsentence": "Er is een groot verschil tussen deze twee opties.",
+    "englishtranslate": "There is a big difference between these two options."
+  },
+  {
+    "dutch": "de vertrekhal, vertrekhallen",
+    "english": "the departure hall, departure halls",
+    "vietnamese": "sảnh khởi hành, những sảnh khởi hành",
+    "dutchsentence": "We ontmoeten elkaar in de vertrekhal.",
+    "englishtranslate": "We will meet in the departure hall."
+  },
+  {
+    "dutch": "het vervoersbewijs",
+    "english": "the travel ticket, the transport ticket",
+    "vietnamese": "vé đi lại",
+    "dutchsentence": "Je hebt een geldig vervoersbewijs nodig in de trein.",
+    "englishtranslate": "You need a valid travel ticket on the train."
+  },
+  {
+    "dutch": "het vervoermiddel",
+    "english": "the means of transport, the vehicle",
+    "vietnamese": "phương tiện giao thông",
+    "dutchsentence": "De fiets is een populair vervoermiddel in Nederland.",
+    "englishtranslate": "The bicycle is a popular means of transport in the Netherlands."
+  },
+  {
+    "dutch": "het vliegtuig, vliegtuigen",
+    "english": "the airplane, airplanes; the plane, planes",
+    "vietnamese": "máy bay, những chiếc máy bay",
+    "dutchsentence": "Ik reis met het vliegtuig naar mijn bestemming.",
+    "englishtranslate": "I am traveling to my destination by plane."
+  },
+  {
+    "dutch": "de vlucht, vluchten",
+    "english": "the flight, flights",
+    "vietnamese": "chuyến bay, những chuyến bay",
+    "dutchsentence": "De vlucht is vertraagd vanwege het weer.",
+    "englishtranslate": "The flight is delayed due to the weather."
+  },
+  {
+    "dutch": "het wachtwoord, wachtwoorden",
+    "english": "the password, passwords",
+    "vietnamese": "mật khẩu, những mật khẩu",
+    "dutchsentence": "Vergeet je wachtwoord niet regelmatig te veranderen.",
+    "englishtranslate": "Don't forget to change your password regularly."
+  },
+  {
+    "dutch": "de wandeling, wandelingen",
+    "english": "the walk, walks; the stroll, strolls",
+    "vietnamese": "cuộc đi dạo, những cuộc đi dạo",
+    "dutchsentence": "We maken een lange wandeling door het bos.",
+    "englishtranslate": "We are taking a long walk through the forest."
+  },
+  {
+    "dutch": "de wereld",
+    "english": "the world",
+    "vietnamese": "thế giới",
+    "dutchsentence": "We willen graag de wereld rondreizen.",
+    "englishtranslate": "We would like to travel around the world."
+  },
+  {
+    "dutch": "aangekomen, aankomen",
+    "english": "arrived, to arrive; to gain weight",
+    "vietnamese": "đã đến, đến nơi",
+    "dutchsentence": "Wanneer ben je aangekomen op het station?",
+    "englishtranslate": "When did you arrive at the station?"
+  },
+  {
+    "dutch": "activeren",
+    "english": "to activate, to enable",
+    "vietnamese": "kích hoạt",
+    "dutchsentence": "Je moet de pas eerst online activeren.",
+    "englishtranslate": "You must first activate the card online."
+  },
+  {
+    "dutch": "bekijken",
+    "english": "to look at, to view, to watch",
+    "vietnamese": "xem, nhìn",
+    "dutchsentence": "Zullen we het instructiefilmpje bekijken?",
+    "englishtranslate": "Shall we watch the instruction video?"
+  },
+  {
+    "dutch": "boeken",
+    "english": "to book, to reserve; the books",
+    "vietnamese": "đặt trước; sách",
+    "dutchsentence": "Ik wil graag een vlucht naar Parijs boeken.",
+    "englishtranslate": "I would like to book a flight to Paris."
+  },
+  {
+    "dutch": "duurt, duren",
+    "english": "lasts, to last, to take (time)",
+    "vietnamese": "kéo dài, mất (thời gian)",
+    "dutchsentence": "Hoe lang duurt de reis met de trein?",
+    "englishtranslate": "How long does the journey by train take/last?"
+  },
+  {
+    "dutch": "fietsen",
+    "english": "to cycle, to bike; the bicycles",
+    "vietnamese": "đi xe đạp",
+    "dutchsentence": "In Nederland gaan veel mensen fietsen naar hun werk.",
+    "englishtranslate": "In the Netherlands, many people cycle to work."
+  },
+  {
+    "dutch": "inchecken",
+    "english": "to check in",
+    "vietnamese": "làm thủ tục (bay, khách sạn); quét thẻ (giao thông)",
+    "dutchsentence": "Vergeet niet in te checken met je pas.",
+    "englishtranslate": "Don't forget to check in with your pass."
+  },
+  {
+    "dutch": "installeren",
+    "english": "to install",
+    "vietnamese": "cài đặt",
+    "dutchsentence": "Je moet de software eerst installeren op je computer.",
+    "englishtranslate": "You must first install the software on your computer."
+  },
+  {
+    "dutch": "intikken",
+    "english": "to type in, to key in",
+    "vietnamese": "gõ vào",
+    "dutchsentence": "Je moet het wachtwoord intikken om in te loggen.",
+    "englishtranslate": "You must type in the password to log in."
+  },
+  {
+    "dutch": "invoeren",
+    "english": "to enter, to import",
+    "vietnamese": "nhập vào",
+    "dutchsentence": "Je moet de code invoeren in de automaat.",
+    "englishtranslate": "You must enter the code into the machine."
+  },
+  {
+    "dutch": "klikken",
+    "english": "to click",
+    "vietnamese": "nhấp chuột",
+    "dutchsentence": "Klik op de knop om verder te gaan.",
+    "englishtranslate": "Click on the button to continue."
+  },
+  {
+    "dutch": "opladen",
+    "english": "to charge (battery); to load (cargo)",
+    "vietnamese": "sạc, nạp",
+    "dutchsentence": "Ik moet mijn telefoon opladen.",
+    "englishtranslate": "I need to charge my phone."
+  },
+  {
+    "dutch": "opletten",
+    "english": "to pay attention, to watch out",
+    "vietnamese": "chú ý, cẩn thận",
+    "dutchsentence": "Je moet goed opletten in het verkeer.",
+    "englishtranslate": "You must pay close attention in traffic."
+  },
+  {
+    "dutch": "openen",
+    "english": "to open",
+    "vietnamese": "mở",
+    "dutchsentence": "Kun je het raam openen?",
+    "englishtranslate": "Can you open the window?"
+  },
+  {
+    "dutch": "parkeren",
+    "english": "to park",
+    "vietnamese": "đỗ xe",
+    "dutchsentence": "Je kunt hier gratis parkeren.",
+    "englishtranslate": "You can park here for free."
+  },
+  {
+    "dutch": "plannen",
+    "english": "to plan; the plans",
+    "vietnamese": "lập kế hoạch; những kế hoạch",
+    "dutchsentence": "We moeten de vakantie goed plannen.",
+    "englishtranslate": "We need to plan the holiday well."
+  },
+  {
+    "dutch": "overstappen",
+    "english": "to transfer, to change (transport)",
+    "vietnamese": "chuyển (xe, tàu)",
+    "dutchsentence": "Je moet overstappen in Utrecht om naar Amsterdam te gaan.",
+    "englishtranslate": "You have to transfer in Utrecht to go to Amsterdam."
+  },
+  {
+    "dutch": "reizen",
+    "english": "to travel; the journeys",
+    "vietnamese": "đi du lịch; những chuyến đi",
+    "dutchsentence": "Zij houdt van reizen naar verre landen.",
+    "englishtranslate": "She loves traveling to distant countries."
+  },
+  {
+    "dutch": "storten",
+    "english": "to deposit (money); to pour, to fall (rain)",
+    "vietnamese": "gửi tiền; đổ",
+    "dutchsentence": "Je kunt geld storten bij de automaat.",
+    "englishtranslate": "You can deposit money at the machine."
+  },
+  {
+    "dutch": "tanken",
+    "english": "to refuel, to get petrol/gas",
+    "vietnamese": "đổ xăng",
+    "dutchsentence": "We moeten snel tanken, want de bezine is bijna op.",
+    "englishtranslate": "We need to refuel quickly, because the petrol is almost finished."
+  },
+  {
+    "dutch": "uitchecken",
+    "english": "to check out",
+    "vietnamese": "trả phòng (khách sạn); quét thẻ (giao thông)",
+    "dutchsentence": "Vergeet niet uit te checken bij de poortjes op het perron.",
+    "englishtranslate": "Don't forget to check out at the gates on the platform."
+  },
+  {
+    "dutch": "varen",
+    "english": "to sail, to boat",
+    "vietnamese": "chèo thuyền, đi thuyền",
+    "dutchsentence": "We gaan een stukje varen op de rivier.",
+    "englishtranslate": "We are going to sail a little bit on the river."
+  },
+  {
+    "dutch": "verliezen",
+    "english": "to lose; the losses",
+    "vietnamese": "mất, thua",
+    "dutchsentence": "Ik hoop mijn koffer niet te verliezen op het vliegveld.",
+    "englishtranslate": "I hope not to lose my suitcase at the airport."
+  },
+  {
+    "dutch": "verzekerd, verzekeren",
+    "english": "insured, to insure",
+    "vietnamese": "được bảo hiểm, bảo hiểm",
+    "dutchsentence": "Ben je verzekerd tegen diefstal van je brommer?",
+    "englishtranslate": "Are you insured against the theft of your moped?"
+  },
+  {
+    "dutch": "vliegen",
+    "english": "to fly",
+    "vietnamese": "bay",
+    "dutchsentence": "We gaan met het vliegtuig vliegen naar het buitenland.",
+    "englishtranslate": "We are going to fly abroad by plane."
+  },
+  {
+    "dutch": "door",
+    "english": "through, by",
+    "vietnamese": "xuyên qua, bởi",
+    "dutchsentence": "De trein rijdt door de tunnel.",
+    "englishtranslate": "The train is driving through the tunnel."
+  },
+  {
+    "dutch": "tegenover",
+    "english": "opposite, across from",
+    "vietnamese": "đối diện",
+    "dutchsentence": "De bushalte is tegenover het restaurant.",
+    "englishtranslate": "The bus stop is opposite the restaurant."
+  },
+  {
+    "dutch": "automatisch",
+    "english": "automatic(ally)",
+    "vietnamese": "tự động",
+    "dutchsentence": "Het licht gaat automatisch aan als je binnenkomt.",
+    "englishtranslate": "The light turns on automatically when you enter."
+  },
+  {
+    "dutch": "duidelijk",
+    "english": "clear, clearly",
+    "vietnamese": "rõ ràng, minh bạch",
+    "dutchsentence": "De instructies zijn heel duidelijk.",
+    "englishtranslate": "The instructions are very clear."
+  },
+  {
+    "dutch": "elektrische",
+    "english": "electric",
+    "vietnamese": "điện",
+    "dutchsentence": "Hij heeft een elektrische fiets gekocht.",
+    "englishtranslate": "He bought an electric bicycle."
+  },
+  {
+    "dutch": "inbegrepen",
+    "english": "included",
+    "vietnamese": "bao gồm",
+    "dutchsentence": "Het ontbijt is inbegrepen bij de prijs van de kamer.",
+    "englishtranslate": "Breakfast is included in the room price."
+  },
+  {
+    "dutch": "openbaar",
+    "english": "public",
+    "vietnamese": "công cộng",
+    "dutchsentence": "Het openbaar vervoer is in de spits erg druk.",
+    "englishtranslate": "Public transport is very busy during rush hour."
+  },
+  {
+    "dutch": "overdekt",
+    "english": "covered (roofed)",
+    "vietnamese": "có mái che",
+    "dutchsentence": "Er is een overdekte stalling voor de brommers.",
+    "englishtranslate": "There is a covered shelter for the mopeds."
+  },
+  {
+    "dutch": "rechtstreekse",
+    "english": "direct, straight (adjective)",
+    "vietnamese": "trực tiếp",
+    "dutchsentence": "Is er een rechtstreekse trein naar het vliegveld?",
+    "englishtranslate": "Is there a direct train to the airport?"
+  },
+  {
+    "dutch": "voordelig",
+    "english": "advantageous, affordable, good value",
+    "vietnamese": "có lợi, giá cả phải chăng",
+    "dutchsentence": "Dat dagretour is een voordelige optie.",
+    "englishtranslate": "That day return ticket is an affordable option."
+  },
+  {
+    "dutch": "dienst",
+    "english": "service, duty; in service",
+    "vietnamese": "dịch vụ, nhiệm vụ; đang hoạt động",
+    "dutchsentence": "De trein is buiten dienst door een technisch probleem.",
+    "englishtranslate": "The train is out of service due to a technical problem."
+  },
+  {
+    "dutch": "hartelijk",
+    "english": "cordial, hearty; welcome",
+    "vietnamese": "nồng nhiệt, chân thành",
+    "dutchsentence": "Hartelijk dank voor je hulp.",
+    "englishtranslate": "Hearty thanks for your help."
+  },
+  {
+    "dutch": "afgelopen",
+    "english": "finished, over, past",
+    "vietnamese": "đã kết thúc, đã qua",
+    "dutchsentence": "De vakantie is helaas afgelopen.",
+    "englishtranslate": "The holiday is unfortunately over/finished."
+  },
+  {
+    "dutch": "anders",
+    "english": "different, otherwise",
+    "vietnamese": "khác, nếu không thì",
+    "dutchsentence": "Ik wil graag een ander broodje bestellen.",
+    "englishtranslate": "I would like to order a different sandwich."
+  },
+  {
+    "dutch": "aparte",
+    "english": "separate, distinct",
+    "vietnamese": "riêng biệt",
+    "dutchsentence": "Ze willen graag twee aparte hoofdgerechten.",
+    "englishtranslate": "They would like two separate main courses."
+  },
+  {
+    "dutch": "beide",
+    "english": "both",
+    "vietnamese": "cả hai",
+    "dutchsentence": "Beide opties zijn geschikt.",
+    "englishtranslate": "Both options are suitable."
+  },
+  {
+    "dutch": "bijna",
+    "english": "almost, nearly",
+    "vietnamese": "gần như, gần",
+    "dutchsentence": "Ik ben bijna klaar met mijn werk.",
+    "englishtranslate": "I am almost finished with my work."
+  },
+  {
+    "dutch": "dezelfde",
+    "english": "the same (one)",
+    "vietnamese": "cùng một, y hệt",
+    "dutchsentence": "Hij heeft dezelfde auto als ik.",
+    "englishtranslate": "He has the same car as me."
+  },
+  {
+    "dutch": "dichtbij",
+    "english": "nearby, close",
+    "vietnamese": "gần, gần đó",
+    "dutchsentence": "Woon je dichtbij het station?",
+    "englishtranslate": "Do you live close to the station?"
+  },
+  {
+    "dutch": "echt",
+    "english": "really, truly; real",
+    "vietnamese": "thực sự, thật",
+    "dutchsentence": "Het weer is echt prachtig vandaag.",
+    "englishtranslate": "The weather is really beautiful today."
+  },
+  {
+    "dutch": "eenmalig",
+    "english": "one-time, single (adjective/adverb)",
+    "vietnamese": "một lần",
+    "dutchsentence": "Dit is een eenmalige aanbieding.",
+    "englishtranslate": "This is a one-time offer."
+  },
+  {
+    "dutch": "eigen",
+    "english": "own, private",
+    "vietnamese": "của riêng",
+    "dutchsentence": "Iedereen heeft zijn eigen mening.",
+    "englishtranslate": "Everyone has their own opinion."
+  },
+  {
+    "dutch": "elkaar",
+    "english": "each other, one another",
+    "vietnamese": "nhau, lẫn nhau",
+    "dutchsentence": "Ze hebben elkaar al lang niet meer gezien.",
+    "englishtranslate": "They haven't seen each other for a long time."
+  },
+  {
+    "dutch": "elke",
+    "english": "every, each",
+    "vietnamese": "mỗi, mọi",
+    "dutchsentence": "Ik ga elke dag naar de sportschool.",
+    "englishtranslate": "I go to the gym every day."
+  },
+  {
+    "dutch": "ergens",
+    "english": "somewhere, anywhere",
+    "vietnamese": "ở đâu đó",
+    "dutchsentence": "Ik heb mijn sleutels ergens neergelegd.",
+    "englishtranslate": "I put my keys down somewhere."
+  },
+  {
+    "dutch": "genoeg",
+    "english": "enough, sufficient",
+    "vietnamese": "đủ",
+    "dutchsentence": "Heb je genoeg geld voor de rekening?",
+    "englishtranslate": "Do you have enough money for the bill?"
+  },
+  {
+    "dutch": "geschikt",
+    "english": "suitable, appropriate",
+    "vietnamese": "phù hợp",
+    "dutchsentence": "Dit is een geschikte plek om te picknicken.",
+    "englishtranslate": "This is a suitable place for a picnic."
+  },
+  {
+    "dutch": "gewoon",
+    "english": "just, simply; normal, usual",
+    "vietnamese": "chỉ, đơn giản; bình thường",
+    "dutchsentence": "Ik drink gewoon een glas water.",
+    "englishtranslate": "I'm just drinking a glass of water."
+  },
+  {
+    "dutch": "gisteren",
+    "english": "yesterday",
+    "vietnamese": "hôm qua",
+    "dutchsentence": "Gisteren regende het de hele dag.",
+    "englishtranslate": "It rained all day yesterday."
+  },
+  {
+    "dutch": "gratis",
+    "english": "free (of charge)",
+    "vietnamese": "miễn phí",
+    "dutchsentence": "Je kunt de informatie gratis downloaden.",
+    "englishtranslate": "You can download the information for free."
+  },
+  {
+    "dutch": "handig",
+    "english": "handy, useful, convenient",
+    "vietnamese": "tiện dụng, hữu ích",
+    "dutchsentence": "Die app is heel handig voor onderweg.",
+    "englishtranslate": "That app is very handy/useful on the way."
+  },
+  {
+    "dutch": "iemand",
+    "english": "someone, somebody",
+    "vietnamese": "ai đó",
+    "dutchsentence": "Heeft iemand mijn tas gezien?",
+    "englishtranslate": "Has someone seen my bag?"
+  },
+  {
+    "dutch": "lopend",
+    "english": "running, walking; current",
+    "vietnamese": "đang chạy, đang đi bộ",
+    "dutchsentence": "Hij heeft een lopend abonnement bij de sportschool.",
+    "englishtranslate": "He has a current subscription at the gym."
+  },
+  {
+    "dutch": "mogelijk",
+    "english": "possible, possibly",
+    "vietnamese": "có thể",
+    "dutchsentence": "Is het mogelijk om een taxi te bellen?",
+    "englishtranslate": "Is it possible to call a taxi?"
+  },
+  {
+    "dutch": "naartoe",
+    "english": "to it, towards it (often after a location)",
+    "vietnamese": "đến đó, về phía đó",
+    "dutchsentence": "Waar ga je naartoe met de trein?",
+    "englishtranslate": "Where are you going (to) with the train?"
+  },
+  {
+    "dutch": "niks",
+    "english": "nothing, naught (informal)",
+    "vietnamese": "không có gì",
+    "dutchsentence": "Ik heb niks gehoord over de vergadering.",
+    "englishtranslate": "I heard nothing about the meeting."
+  },
+  {
+    "dutch": "onderweg",
+    "english": "on the way, en route",
+    "vietnamese": "trên đường đi",
+    "dutchsentence": "We waren onderweg toen de file begon.",
+    "englishtranslate": "We were on the way when the traffic jam started."
+  },
+  {
+    "dutch": "opnieuw",
+    "english": "again, once more",
+    "vietnamese": "lại lần nữa",
+    "dutchsentence": "Je moet het wachtwoord opnieuw intikken.",
+    "englishtranslate": "You must type in the password again."
+  },
+  {
+    "dutch": "regelmatig",
+    "english": "regularly, often",
+    "vietnamese": "thường xuyên, đều đặn",
+    "dutchsentence": "Ik ga regelmatig op pad met mijn motor.",
+    "englishtranslate": "I regularly go out with my motorcycle."
+  },
+  {
+    "dutch": "slechts",
+    "english": "only, merely",
+    "vietnamese": "chỉ, vỏn vẹn",
+    "dutchsentence": "Er zijn slechts twee plaatsen beschikbaar.",
+    "englishtranslate": "There are only two places available."
+  },
+  {
+    "dutch": "tussendoor",
+    "english": "in between (times), meanwhile",
+    "vietnamese": "trong khoảng thời gian đó, trong lúc đó",
+    "dutchsentence": "Ik drink even koffie tussendoor het werk.",
+    "englishtranslate": "I am drinking coffee in between work."
+  },
+  {
+    "dutch": "verschillende",
+    "english": "various, different (plural)",
+    "vietnamese": "khác nhau, nhiều loại",
+    "dutchsentence": "Er zijn verschillende soorten drankjes.",
+    "englishtranslate": "There are different types of drinks."
+  },
+  {
+    "dutch": "volgende",
+    "english": "next, following",
+    "vietnamese": "tiếp theo",
+    "dutchsentence": "Op de volgende halte moet je uitchecken.",
+    "englishtranslate": "You must check out at the next stop."
+  },
+  {
+    "dutch": "vorige",
+    "english": "previous, last (adjective)",
+    "vietnamese": "trước, trước đây",
+    "dutchsentence": "De vorige keer hadden we meer geluk met het weer.",
+    "englishtranslate": "The previous time we had more luck with the weather."
+  }
+]

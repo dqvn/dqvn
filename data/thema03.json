@@ -1,0 +1,1185 @@
+[
+  {
+    "dutch": "de afspraak, afspraken",
+    "english": "the appointment, appointments",
+    "vietnamese": "cuộc hẹn, cuộc gặp",
+    "dutchsentence": "Ik heb een afspraak bij de tandarts.",
+    "englishtranslate": "I have an appointment at the dentist."
+  },
+  {
+    "dutch": "de agenda, agenda’s",
+    "english": "the agenda / planner",
+    "vietnamese": "sổ tay, lịch làm việc",
+    "dutchsentence": "Schrijf het in je agenda.",
+    "englishtranslate": "Write it down in your planner."
+  },
+  {
+    "dutch": "de baan, banen",
+    "english": "the job, jobs",
+    "vietnamese": "công việc, nghề nghiệp",
+    "dutchsentence": "Ik zoek een nieuwe baan.",
+    "englishtranslate": "I am looking for a new job."
+  },
+  {
+    "dutch": "het bezoek",
+    "english": "the visit",
+    "vietnamese": "chuyến thăm, sự viếng thăm",
+    "dutchsentence": "Wij krijgen bezoek van vrienden.",
+    "englishtranslate": "We are getting a visit from friends."
+  },
+  {
+    "dutch": "de bibliotheek, bibliotheken",
+    "english": "the library, libraries",
+    "vietnamese": "thư viện",
+    "dutchsentence": "Ik ga naar de bibliotheek om te studeren.",
+    "englishtranslate": "I am going to the library to study."
+  },
+  {
+    "dutch": "de bioscoop, bioscopen",
+    "english": "the cinema, cinemas",
+    "vietnamese": "rạp chiếu phim",
+    "dutchsentence": "Zullen we naar de bioscoop gaan?",
+    "englishtranslate": "Shall we go to the cinema?"
+  },
+  {
+    "dutch": "het bos, bossen",
+    "english": "the forest, forests",
+    "vietnamese": "rừng, khu rừng",
+    "dutchsentence": "We wandelen in het bos.",
+    "englishtranslate": "We are walking in the forest."
+  },
+  {
+    "dutch": "de buur, buren",
+    "english": "the neighbour, neighbours",
+    "vietnamese": "hàng xóm",
+    "dutchsentence": "De buren zijn aardige mensen.",
+    "englishtranslate": "The neighbours are nice people."
+  },
+  {
+    "dutch": "de buurman, buurmannen",
+    "english": "the male neighbour, male neighbours",
+    "vietnamese": "người hàng xóm (nam)",
+    "dutchsentence": "Mijn buurman is op vakantie.",
+    "englishtranslate": "My male neighbour is on holiday."
+  },
+  {
+    "dutch": "de buurvrouw, buurvrouwen",
+    "english": "the female neighbour, female neighbours",
+    "vietnamese": "người hàng xóm (nữ)",
+    "dutchsentence": "De buurvrouw heeft een hond.",
+    "englishtranslate": "The female neighbour has a dog."
+  },
+  {
+    "dutch": "de collega, collega’s",
+    "english": "the colleague, colleagues",
+    "vietnamese": "đồng nghiệp",
+    "dutchsentence": "Ik werk samen met mijn collega’s.",
+    "englishtranslate": "I work together with my colleagues."
+  },
+  {
+    "dutch": "het contact, contacten",
+    "english": "the contact, contacts",
+    "vietnamese": "sự liên lạc, các mối liên hệ",
+    "dutchsentence": "Ik heb veel contacten via mijn werk.",
+    "englishtranslate": "I have many contacts through my work."
+  },
+  {
+    "dutch": "de discotheek, discotheken",
+    "english": "the discotheque / nightclub",
+    "vietnamese": "quán bar, vũ trường",
+    "dutchsentence": "Zij gaan vaak naar de discotheek.",
+    "englishtranslate": "They often go to the nightclub."
+  },
+  {
+    "dutch": "de dierentuin, dierentuinen",
+    "english": "the zoo, zoos",
+    "vietnamese": "sở thú",
+    "dutchsentence": "De kinderen willen naar de dierentuin.",
+    "englishtranslate": "The children want to go to the zoo."
+  },
+  {
+    "dutch": "de douche, douches",
+    "english": "the shower, showers",
+    "vietnamese": "vòi sen, phòng tắm",
+    "dutchsentence": "De douche is stuk.",
+    "englishtranslate": "The shower is broken."
+  },
+  {
+    "dutch": "de fiets, fietsen",
+    "english": "the bicycle, bicycles",
+    "vietnamese": "xe đạp",
+    "dutchsentence": "Mijn fiets staat bij het station.",
+    "englishtranslate": "My bicycle is at the station."
+  },
+  {
+    "dutch": "de film, films",
+    "english": "the film, films",
+    "vietnamese": "bộ phim",
+    "dutchsentence": "We kijken een leuke film.",
+    "englishtranslate": "We are watching a fun film."
+  },
+  {
+    "dutch": "de hond, honden",
+    "english": "the dog, dogs",
+    "vietnamese": "con chó",
+    "dutchsentence": "De hond is in het park.",
+    "englishtranslate": "The dog is in the park."
+  },
+  {
+    "dutch": "het idee",
+    "english": "the idea",
+    "vietnamese": "ý tưởng",
+    "dutchsentence": "Wat een goed idee!",
+    "englishtranslate": "What a good idea!"
+  },
+  {
+    "dutch": "de informatie",
+    "english": "the information",
+    "vietnamese": "thông tin",
+    "dutchsentence": "We hebben meer informatie nodig.",
+    "englishtranslate": "We need more information."
+  },
+  {
+    "dutch": "de kennis, kennissen",
+    "english": "the acquaintance, acquaintances",
+    "vietnamese": "người quen",
+    "dutchsentence": "Ik heb veel kennissen in de stad.",
+    "englishtranslate": "I have many acquaintances in the city."
+  },
+  {
+    "dutch": "het kind, kinderen",
+    "english": "the child, children",
+    "vietnamese": "đứa trẻ, con cái",
+    "dutchsentence": "Ze heeft twee kinderen.",
+    "englishtranslate": "She has two children."
+  },
+  {
+    "dutch": "de krant, kranten",
+    "english": "the newspaper, newspapers",
+    "vietnamese": "tờ báo",
+    "dutchsentence": "Ik lees de krant in de ochtend.",
+    "englishtranslate": "I read the newspaper in the morning."
+  },
+  {
+    "dutch": "de leiding",
+    "english": "the leadership, the management",
+    "vietnamese": "sự lãnh đạo, ban quản lý",
+    "dutchsentence": "Hij heeft de leiding over het team.",
+    "englishtranslate": "He has the leadership over the team."
+  },
+  {
+    "dutch": "de liefde, liefdes",
+    "english": "the love, loves",
+    "vietnamese": "tình yêu",
+    "dutchsentence": "Liefde is belangrijk in het leven.",
+    "englishtranslate": "Love is important in life."
+  },
+  {
+    "dutch": "de man, mannen",
+    "english": "the man, men / the husband",
+    "vietnamese": "người đàn ông / chồng",
+    "dutchsentence": "Mijn man werkt hard.",
+    "englishtranslate": "My husband works hard."
+  },
+  {
+    "dutch": "de medecursist, medecursisten",
+    "english": "the fellow course participant",
+    "vietnamese": "bạn học cùng khóa",
+    "dutchsentence": "Ik leer veel van mijn medecursisten.",
+    "englishtranslate": "I learn a lot from my fellow course participants."
+  },
+  {
+    "dutch": "de medewerker, medewerkers",
+    "english": "the employee, employees / staff member",
+    "vietnamese": "nhân viên, đồng nghiệp",
+    "dutchsentence": "De medewerkers zijn erg behulpzaam.",
+    "englishtranslate": "The employees are very helpful."
+  },
+  {
+    "dutch": "de middag, middagen",
+    "english": "the afternoon, afternoons",
+    "vietnamese": "buổi chiều",
+    "dutchsentence": "Ik werk elke middag.",
+    "englishtranslate": "I work every afternoon."
+  },
+  {
+    "dutch": "de morgen, morgens",
+    "english": "the morning, mornings",
+    "vietnamese": "buổi sáng",
+    "dutchsentence": "Morgen ga ik vroeg opstaan.",
+    "englishtranslate": "Tomorrow I will get up early."
+  },
+  {
+    "dutch": "het muziekcentrum, muziekcentra",
+    "english": "the music center",
+    "vietnamese": "trung tâm âm nhạc",
+    "dutchsentence": "We bezoeken het nieuwe muziekcentrum.",
+    "englishtranslate": "We are visiting the new music center."
+  },
+  {
+    "dutch": "het museum",
+    "english": "the museum",
+    "vietnamese": "bảo tàng",
+    "dutchsentence": "Het museum is op zondag open.",
+    "englishtranslate": "The museum is open on Sunday."
+  },
+  {
+    "dutch": "de nacht, nachten",
+    "english": "the night, nights",
+    "vietnamese": "ban đêm",
+    "dutchsentence": "Ik werk vaak in de nacht.",
+    "englishtranslate": "I often work at night."
+  },
+  {
+    "dutch": "de ochtend, ochtenden",
+    "english": "the morning, mornings",
+    "vietnamese": "buổi sáng",
+    "dutchsentence": "In de ochtend drink ik koffie.",
+    "englishtranslate": "In the morning I drink coffee."
+  },
+  {
+    "dutch": "het park, parken",
+    "english": "the park, parks",
+    "vietnamese": "công viên",
+    "dutchsentence": "Het is lekker weer om naar het park te gaan.",
+    "englishtranslate": "The weather is nice to go to the park."
+  },
+  {
+    "dutch": "de reis, reizen",
+    "english": "the trip, trips / journey",
+    "vietnamese": "chuyến đi, hành trình",
+    "dutchsentence": "De reis naar huis duurt lang.",
+    "englishtranslate": "The journey home takes a long time."
+  },
+  {
+    "dutch": "de relatie, relaties",
+    "english": "the relationship, relationships",
+    "vietnamese": "mối quan hệ",
+    "dutchsentence": "Zij hebben een goede relatie.",
+    "englishtranslate": "They have a good relationship."
+  },
+  {
+    "dutch": "de rondleiding, rondleidingen",
+    "english": "the guided tour, guided tours",
+    "vietnamese": "chuyến tham quan có hướng dẫn",
+    "dutchsentence": "We krijgen een rondleiding door het museum.",
+    "englishtranslate": "We are getting a guided tour through the museum."
+  },
+  {
+    "dutch": "de speeltuin, speeltuinen",
+    "english": "the playground, playgrounds",
+    "vietnamese": "sân chơi",
+    "dutchsentence": "De kinderen spelen in de speeltuin.",
+    "englishtranslate": "The children are playing in the playground."
+  },
+  {
+    "dutch": "het stadion, stadions",
+    "english": "the stadium, stadiums",
+    "vietnamese": "sân vận động",
+    "dutchsentence": "We gaan naar een wedstrijd in het stadion.",
+    "englishtranslate": "We are going to a match in the stadium."
+  },
+  {
+    "dutch": "het team, teams",
+    "english": "the team, teams",
+    "vietnamese": "đội, nhóm",
+    "dutchsentence": "Zij is lid van een sportteam.",
+    "englishtranslate": "She is a member of a sports team."
+  },
+  {
+    "dutch": "het theater, theaters",
+    "english": "the theater, theaters",
+    "vietnamese": "nhà hát",
+    "dutchsentence": "We bezoeken een theaterstuk.",
+    "englishtranslate": "We are visiting a theater play."
+  },
+  {
+    "dutch": "het uur, uren",
+    "english": "the hour, hours",
+    "vietnamese": "giờ",
+    "dutchsentence": "De afspraak duurt een uur.",
+    "englishtranslate": "The appointment lasts an hour."
+  },
+  {
+    "dutch": "de verjaardag, verjaardagen",
+    "english": "the birthday, birthdays",
+    "vietnamese": "sinh nhật",
+    "dutchsentence": "Mijn verjaardag is in juli.",
+    "englishtranslate": "My birthday is in July."
+  },
+  {
+    "dutch": "de vriend, vrienden",
+    "english": "the friend, friends (male or mixed)",
+    "vietnamese": "người bạn (nam)",
+    "dutchsentence": "Hij gaat met zijn vrienden uit.",
+    "englishtranslate": "He is going out with his friends."
+  },
+  {
+    "dutch": "de vriendin, vriendinnen",
+    "english": "the friend, friends (female) / girlfriend",
+    "vietnamese": "người bạn (nữ) / bạn gái",
+    "dutchsentence": "Zij is mijn beste vriendin.",
+    "englishtranslate": "She is my best friend."
+  },
+  {
+    "dutch": "de vrouw, vrouwen",
+    "english": "the woman, women / the wife",
+    "vietnamese": "người phụ nữ / vợ",
+    "dutchsentence": "Mijn vrouw werkt in het ziekenhuis.",
+    "englishtranslate": "My wife works in the hospital."
+  },
+  {
+    "dutch": "het werk",
+    "english": "the work, job",
+    "vietnamese": "công việc, nơi làm việc",
+    "dutchsentence": "Ik moet om 9 uur op mijn werk zijn.",
+    "englishtranslate": "I have to be at my work at 9 o'clock."
+  },
+  {
+    "dutch": "het winkelcentrum, winkelcentra",
+    "english": "the shopping center",
+    "vietnamese": "trung tâm mua sắm",
+    "dutchsentence": "We gaan zaterdag naar het winkelcentrum.",
+    "englishtranslate": "We are going to the shopping center on Saturday."
+  },
+  {
+    "dutch": "het ziekenhuis, ziekenhuizen",
+    "english": "the hospital, hospitals",
+    "vietnamese": "bệnh viện",
+    "dutchsentence": "Hij ligt in het ziekenhuis.",
+    "englishtranslate": "He is in the hospital."
+  },
+  {
+    "dutch": "het zwembad, zwembaden",
+    "english": "the swimming pool, swimming pools",
+    "vietnamese": "hồ bơi",
+    "dutchsentence": "In de zomer ga ik naar het zwembad.",
+    "englishtranslate": "In the summer I go to the swimming pool."
+  },
+  {
+    "dutch": "de broer, broers",
+    "english": "the brother, brothers",
+    "vietnamese": "anh trai, em trai",
+    "dutchsentence": "Ik heb één broer en één zus.",
+    "englishtranslate": "I have one brother and one sister."
+  },
+  {
+    "dutch": "de dochter, dochters",
+    "english": "the daughter, daughters",
+    "vietnamese": "con gái",
+    "dutchsentence": "Mijn dochter is student.",
+    "englishtranslate": "My daughter is a student."
+  },
+  {
+    "dutch": "de echtgenoot, echtgenoten",
+    "english": "the husband, husbands",
+    "vietnamese": "chồng",
+    "dutchsentence": "Haar echtgenoot werkt in het buitenland.",
+    "englishtranslate": "Her husband works abroad."
+  },
+  {
+    "dutch": "de echtgenote, echtgenotes",
+    "english": "the wife, wives",
+    "vietnamese": "vợ",
+    "dutchsentence": "Mijn echtgenote is verpleegster.",
+    "englishtranslate": "My wife is a nurse."
+  },
+  {
+    "dutch": "de familie, families",
+    "english": "the family, families",
+    "vietnamese": "gia đình (dòng họ)",
+    "dutchsentence": "De hele familie komt op bezoek.",
+    "englishtranslate": "The whole family is coming to visit."
+  },
+  {
+    "dutch": "het gezin, gezinnen",
+    "english": "the family (nuclear/household)",
+    "vietnamese": "gia đình (hạt nhân)",
+    "dutchsentence": "Het gezin Jansen bestaat uit vier personen.",
+    "englishtranslate": "The Jansen family consists of four people."
+  },
+  {
+    "dutch": "de grootmoeder, grootmoeders",
+    "english": "the grandmother, grandmothers",
+    "vietnamese": "bà (nội/ngoại)",
+    "dutchsentence": "Mijn grootmoeder is 80 jaar oud.",
+    "englishtranslate": "My grandmother is 80 years old."
+  },
+  {
+    "dutch": "de grootvader, grootvaders",
+    "english": "the grandfather, grandfathers",
+    "vietnamese": "ông (nội/ngoại)",
+    "dutchsentence": "De grootvader vertelt een verhaal.",
+    "englishtranslate": "The grandfather tells a story."
+  },
+  {
+    "dutch": "de kleindochter, kleindochters",
+    "english": "the granddaughter, granddaughters",
+    "vietnamese": "cháu gái",
+    "dutchsentence": "Mijn kleindochter is heel lief.",
+    "englishtranslate": "My granddaughter is very sweet."
+  },
+  {
+    "dutch": "de kleinzoon, kleinzoons",
+    "english": "the grandson, grandsons",
+    "vietnamese": "cháu trai",
+    "dutchsentence": "De kleinzoon speelt in de tuin.",
+    "englishtranslate": "The grandson is playing in the garden."
+  },
+  {
+    "dutch": "de moeder, moeders",
+    "english": "the mother, mothers",
+    "vietnamese": "mẹ",
+    "dutchsentence": "Mijn moeder is verpleegster.",
+    "englishtranslate": "My mother is a nurse."
+  },
+  {
+    "dutch": "de neef, neven",
+    "english": "the cousin (male) / nephew (older term)",
+    "vietnamese": "anh em họ (nam) / cháu trai",
+    "dutchsentence": "Mijn neef woont in Amsterdam.",
+    "englishtranslate": "My cousin (male) lives in Amsterdam."
+  },
+  {
+    "dutch": "het neefje, neefjes",
+    "english": "the nephew / young male cousin",
+    "vietnamese": "cháu trai",
+    "dutchsentence": "Mijn neefje is pas 5 jaar oud.",
+    "englishtranslate": "My nephew is only 5 years old."
+  },
+  {
+    "dutch": "de nicht, nichten",
+    "english": "the cousin (female) / niece (older term)",
+    "vietnamese": "chị em họ (nữ) / cháu gái",
+    "dutchsentence": "Ik ga uit eten met mijn nicht.",
+    "englishtranslate": "I'm going out to eat with my cousin (female)."
+  },
+  {
+    "dutch": "het nichtje, nichtjes",
+    "english": "the niece / young female cousin",
+    "vietnamese": "cháu gái",
+    "dutchsentence": "Mijn nichtje heeft een hond.",
+    "englishtranslate": "My niece has a dog."
+  },
+  {
+    "dutch": "de oma, oma’s",
+    "english": "the grandma, grandmas",
+    "vietnamese": "bà (thân mật)",
+    "dutchsentence": "Oma komt op bezoek.",
+    "englishtranslate": "Grandma is coming to visit."
+  },
+  {
+    "dutch": "de oom, ooms",
+    "english": "the uncle, uncles",
+    "vietnamese": "chú, bác, cậu",
+    "dutchsentence": "Mijn oom heeft een auto.",
+    "englishtranslate": "My uncle has a car."
+  },
+  {
+    "dutch": "de opa, opa’s",
+    "english": "the grandpa, grandpas",
+    "vietnamese": "ông (thân mật)",
+    "dutchsentence": "Mijn opa leest de krant.",
+    "englishtranslate": "My grandpa reads the newspaper."
+  },
+  {
+    "dutch": "de overgrootmoeder, overgrootmoeders",
+    "english": "the great-grandmother",
+    "vietnamese": "bà cố",
+    "dutchsentence": "Mijn overgrootmoeder is 100 geworden.",
+    "englishtranslate": "My great-grandmother turned 100."
+  },
+  {
+    "dutch": "de overgrootvader, overgrootvaders",
+    "english": "the great-grandfather",
+    "vietnamese": "ông cố",
+    "dutchsentence": "De overgrootvader leefde in de oorlog.",
+    "englishtranslate": "The great-grandfather lived during the war."
+  },
+  {
+    "dutch": "de schoondochter, schoondochters",
+    "english": "the daughter-in-law",
+    "vietnamese": "con dâu",
+    "dutchsentence": "Mijn schoondochter kookt heel goed.",
+    "englishtranslate": "My daughter-in-law cooks very well."
+  },
+  {
+    "dutch": "de schoonmoeder, schoonmoeders",
+    "english": "the mother-in-law",
+    "vietnamese": "mẹ chồng, mẹ vợ",
+    "dutchsentence": "Ik ga op bezoek bij mijn schoonmoeder.",
+    "englishtranslate": "I am going to visit my mother-in-law."
+  },
+  {
+    "dutch": "de schoonvader, schoonvaders",
+    "english": "the father-in-law",
+    "vietnamese": "cha chồng, cha vợ",
+    "dutchsentence": "Mijn schoonvader is met pensioen.",
+    "englishtranslate": "My father-in-law is retired."
+  },
+  {
+    "dutch": "de schoonzoon, schoonzonen",
+    "english": "the son-in-law",
+    "vietnamese": "con rể",
+    "dutchsentence": "De schoonzoon helpt met het huiswerk.",
+    "englishtranslate": "The son-in-law helps with the homework."
+  },
+  {
+    "dutch": "de schoonzus, schoonzussen",
+    "english": "the sister-in-law",
+    "vietnamese": "chị dâu, em dâu, chị/em vợ/chồng",
+    "dutchsentence": "Mijn schoonzus woont in het buitenland.",
+    "englishtranslate": "My sister-in-law lives abroad."
+  },
+  {
+    "dutch": "de tante, tantes",
+    "english": "the aunt, aunts",
+    "vietnamese": "cô, dì, thím, bác gái",
+    "dutchsentence": "Mijn tante heeft een verjaardag.",
+    "englishtranslate": "My aunt has a birthday."
+  },
+  {
+    "dutch": "de vader, vaders",
+    "english": "the father, fathers",
+    "vietnamese": "cha, bố",
+    "dutchsentence": "Mijn vader is 65 jaar oud.",
+    "englishtranslate": "My father is 65 years old."
+  },
+  {
+    "dutch": "de zus, zussen",
+    "english": "the sister, sisters",
+    "vietnamese": "chị gái, em gái",
+    "dutchsentence": "Mijn zus woont in een andere stad.",
+    "englishtranslate": "My sister lives in another city."
+  },
+  {
+    "dutch": "de zwager, zwagers",
+    "english": "the brother-in-law",
+    "vietnamese": "anh rể, em rể, anh/em vợ/chồng",
+    "dutchsentence": "Ik ga met mijn zwager naar het stadion.",
+    "englishtranslate": "I'm going to the stadium with my brother-in-law."
+  },
+  {
+    "dutch": "de zoon, zoons",
+    "english": "the son, sons",
+    "vietnamese": "con trai",
+    "dutchsentence": "Mijn zoon speelt graag buiten.",
+    "englishtranslate": "My son likes to play outside."
+  },
+  {
+    "dutch": "afspreken",
+    "english": "to arrange to meet, to make an appointment",
+    "vietnamese": "hẹn gặp, sắp xếp cuộc hẹn",
+    "dutchsentence": "We moeten volgende week afspreken.",
+    "englishtranslate": "We need to arrange to meet next week."
+  },
+  {
+    "dutch": "barbecueën",
+    "english": "to barbecue",
+    "vietnamese": "nướng thịt ngoài trời",
+    "dutchsentence": "We gaan in de zomer barbecueën.",
+    "englishtranslate": "We are going to barbecue in the summer."
+  },
+  {
+    "dutch": "belt, bellen",
+    "english": "calls, to call / phone",
+    "vietnamese": "gọi điện - để gọi điện",
+    "dutchsentence": "Zij belt haar moeder elke dag.",
+    "englishtranslate": "She calls her mother every day."
+  },
+  {
+    "dutch": "bezoeken",
+    "english": "to visit",
+    "vietnamese": "thăm, viếng thăm",
+    "dutchsentence": "Ik bezoek mijn grootouders op zondag.",
+    "englishtranslate": "I visit my grandparents on Sunday."
+  },
+  {
+    "dutch": "boodschappen doen",
+    "english": "to do groceries / shopping",
+    "vietnamese": "đi chợ, mua sắm",
+    "dutchsentence": "We moeten vandaag boodschappen doen.",
+    "englishtranslate": "We have to do groceries today."
+  },
+  {
+    "dutch": "contact hebben",
+    "english": "to have contact",
+    "vietnamese": "có liên hệ, giữ liên lạc",
+    "dutchsentence": "Ik heb contact met mijn oude collega’s.",
+    "englishtranslate": "I have contact with my old colleagues."
+  },
+  {
+    "dutch": "douchen",
+    "english": "to shower",
+    "vietnamese": "tắm vòi sen",
+    "dutchsentence": "Ik douche altijd in de ochtend.",
+    "englishtranslate": "I always shower in the morning."
+  },
+  {
+    "dutch": "geloven",
+    "english": "to believe",
+    "vietnamese": "tin, tin tưởng",
+    "dutchsentence": "Ik geloof in jou.",
+    "englishtranslate": "I believe in you."
+  },
+  {
+    "dutch": "informatie geven",
+    "english": "to give information",
+    "vietnamese": "cung cấp thông tin",
+    "dutchsentence": "De medewerker kan u informatie geven.",
+    "englishtranslate": "The employee can give you information."
+  },
+  {
+    "dutch": "kennen",
+    "english": "to know (a person/place)",
+    "vietnamese": "biết, quen biết",
+    "dutchsentence": "Ik ken die man van het werk.",
+    "englishtranslate": "I know that man from work."
+  },
+  {
+    "dutch": "kijken",
+    "english": "to look, to watch",
+    "vietnamese": "nhìn, xem",
+    "dutchsentence": "Wil je een film kijken?",
+    "englishtranslate": "Do you want to watch a film?"
+  },
+  {
+    "dutch": "koken",
+    "english": "to cook",
+    "vietnamese": "nấu ăn",
+    "dutchsentence": "Mijn vader kookt vanavond.",
+    "englishtranslate": "My father is cooking tonight."
+  },
+  {
+    "dutch": "krijgen",
+    "english": "to get, to receive",
+    "vietnamese": "nhận, được",
+    "dutchsentence": "Wij krijgen veel cadeaus voor onze verjaardag.",
+    "englishtranslate": "We get many presents for our birthday."
+  },
+  {
+    "dutch": "leiding geven aan",
+    "english": "to lead, to manage",
+    "vietnamese": "lãnh đạo, quản lý",
+    "dutchsentence": "Zij geeft leiding aan een team van vijf mensen.",
+    "englishtranslate": "She leads a team of five people."
+  },
+  {
+    "dutch": "lezen",
+    "english": "to read",
+    "vietnamese": "đọc",
+    "dutchsentence": "Wat voor krant lees je?",
+    "englishtranslate": "What kind of newspaper do you read?"
+  },
+  {
+    "dutch": "lunchen",
+    "english": "to have lunch",
+    "vietnamese": "ăn trưa",
+    "dutchsentence": "Wij lunchen om 12 uur.",
+    "englishtranslate": "We have lunch at 12 o'clock."
+  },
+  {
+    "dutch": "mailen",
+    "english": "to email",
+    "vietnamese": "gửi email",
+    "dutchsentence": "Ik zal je de informatie mailen.",
+    "englishtranslate": "I will email you the information."
+  },
+  {
+    "dutch": "maken",
+    "english": "to make",
+    "vietnamese": "làm, tạo ra",
+    "dutchsentence": "We maken plannen voor de reis.",
+    "englishtranslate": "We are making plans for the trip."
+  },
+  {
+    "dutch": "missen",
+    "english": "to miss",
+    "vietnamese": "nhớ, bỏ lỡ",
+    "dutchsentence": "Ik mis mijn familie in Vietnam.",
+    "englishtranslate": "I miss my family in Vietnam."
+  },
+  {
+    "dutch": "nemen",
+    "english": "to take",
+    "vietnamese": "lấy, nắm, chọn",
+    "dutchsentence": "We nemen de bus naar de stad.",
+    "englishtranslate": "We take the bus to the city."
+  },
+  {
+    "dutch": "omgaan met",
+    "english": "to deal with, to interact with",
+    "vietnamese": "đối phó với, giao tiếp với",
+    "dutchsentence": "Hij kan goed omgaan met stress.",
+    "englishtranslate": "He can deal well with stress."
+  },
+  {
+    "dutch": "ontbijten",
+    "english": "to have breakfast",
+    "vietnamese": "ăn sáng",
+    "dutchsentence": "Wat eet je meestal als je ontbijt?",
+    "englishtranslate": "What do you usually eat when you have breakfast?"
+  },
+  {
+    "dutch": "op bezoek gaan",
+    "english": "to go on a visit, to visit",
+    "vietnamese": "đi thăm",
+    "dutchsentence": "We gaan op bezoek bij mijn tante.",
+    "englishtranslate": "We are going to visit my aunt."
+  },
+  {
+    "dutch": "opbellen",
+    "english": "to call up, to phone",
+    "vietnamese": "gọi điện thoại",
+    "dutchsentence": "Zou je me morgen opbellen?",
+    "englishtranslate": "Would you call me tomorrow?"
+  },
+  {
+    "dutch": "organiseren",
+    "english": "to organize",
+    "vietnamese": "tổ chức",
+    "dutchsentence": "We organiseren een feest voor zijn verjaardag.",
+    "englishtranslate": "We are organizing a party for his birthday."
+  },
+  {
+    "dutch": "praten",
+    "english": "to talk",
+    "vietnamese": "nói chuyện, trò chuyện",
+    "dutchsentence": "We praten over de film.",
+    "englishtranslate": "We are talking about the film."
+  },
+  {
+    "dutch": "schaatsen",
+    "english": "to skate, to ice skate",
+    "vietnamese": "trượt băng",
+    "dutchsentence": "In de winter gaan we schaatsen.",
+    "englishtranslate": "In the winter we go ice skating."
+  },
+  {
+    "dutch": "skiën",
+    "english": "to ski",
+    "vietnamese": "trượt tuyết",
+    "dutchsentence": "Ik ga graag skiën in de bergen.",
+    "englishtranslate": "I like to go skiing in the mountains."
+  },
+  {
+    "dutch": "televisie kijken",
+    "english": "to watch television",
+    "vietnamese": "xem ti vi",
+    "dutchsentence": "We kijken elke avond televisie.",
+    "englishtranslate": "We watch television every evening."
+  },
+  {
+    "dutch": "varen",
+    "english": "to sail, to boat",
+    "vietnamese": "chèo thuyền, đi thuyền",
+    "dutchsentence": "We gaan varen op het meer.",
+    "englishtranslate": "We are going boating on the lake."
+  },
+  {
+    "dutch": "verliefd worden",
+    "english": "to fall in love",
+    "vietnamese": "phải lòng, yêu",
+    "dutchsentence": "Zij is verliefd geworden op haar collega.",
+    "englishtranslate": "She has fallen in love with her colleague."
+  },
+  {
+    "dutch": "vieren",
+    "english": "to celebrate",
+    "vietnamese": "tổ chức, ăn mừng",
+    "dutchsentence": "Wij vieren Pasen met de familie.",
+    "englishtranslate": "We celebrate Easter with the family."
+  },
+  {
+    "dutch": "voelen",
+    "english": "to feel",
+    "vietnamese": "cảm thấy",
+    "dutchsentence": "Ik voel me niet zo goed.",
+    "englishtranslate": "I don't feel so good."
+  },
+  {
+    "dutch": "wandelen",
+    "english": "to walk, to hike",
+    "vietnamese": "đi dạo, đi bộ",
+    "dutchsentence": "We wandelen in het bos.",
+    "englishtranslate": "We are walking in the forest."
+  },
+  {
+    "dutch": "werken",
+    "english": "to work",
+    "vietnamese": "làm việc",
+    "dutchsentence": "Waar werk jij?",
+    "englishtranslate": "Where do you work?"
+  },
+  {
+    "dutch": "bij",
+    "english": "at, near, with",
+    "vietnamese": "ở, gần, cùng với",
+    "dutchsentence": "Ik werk bij een groot bedrijf.",
+    "englishtranslate": "I work at a large company."
+  },
+  {
+    "dutch": "om",
+    "english": "around, at (time)",
+    "vietnamese": "khoảng, vào lúc",
+    "dutchsentence": "De bioscoop begint om acht uur.",
+    "englishtranslate": "The cinema starts at eight o'clock."
+  },
+  {
+    "dutch": "op",
+    "english": "on, at",
+    "vietnamese": "trên, tại",
+    "dutchsentence": "Op zaterdag ben ik vrij.",
+    "englishtranslate": "On Saturday I am free."
+  },
+  {
+    "dutch": "af en toe",
+    "english": "now and then, occasionally",
+    "vietnamese": "thỉnh thoảng, đôi khi",
+    "dutchsentence": "Ik sport af en toe in het park.",
+    "englishtranslate": "I exercise now and then in the park."
+  },
+  {
+    "dutch": "even",
+    "english": "just for a moment",
+    "vietnamese": "một lát, một chút",
+    "dutchsentence": "Wacht even op mij.",
+    "englishtranslate": "Wait for me for just a moment."
+  },
+  {
+    "dutch": "nooit",
+    "english": "never",
+    "vietnamese": "không bao giờ",
+    "dutchsentence": "Ik ga nooit naar de discotheek.",
+    "englishtranslate": "I never go to the nightclub."
+  },
+  {
+    "dutch": "pas",
+    "english": "just, only (recently)",
+    "vietnamese": "vừa mới, chỉ",
+    "dutchsentence": "Ik ben pas geboren in 2000.",
+    "englishtranslate": "I was only born in 2000."
+  },
+  {
+    "dutch": "sinds",
+    "english": "since",
+    "vietnamese": "kể từ",
+    "dutchsentence": "Ik woon hier sinds vorig jaar.",
+    "englishtranslate": "I have been living here since last year."
+  },
+  {
+    "dutch": "soms",
+    "english": "sometimes",
+    "vietnamese": "thỉnh thoảng",
+    "dutchsentence": "Soms regent het in de zomer.",
+    "englishtranslate": "Sometimes it rains in the summer."
+  },
+  {
+    "dutch": "vorig",
+    "english": "last (previous)",
+    "vietnamese": "trước, vừa qua",
+    "dutchsentence": "Vorig jaar was ik op reis.",
+    "englishtranslate": "Last year I was on a trip."
+  },
+  {
+    "dutch": "eerst",
+    "english": "first",
+    "vietnamese": "trước tiên, đầu tiên",
+    "dutchsentence": "Eerst ontbijten, dan douchen.",
+    "englishtranslate": "First breakfast, then shower."
+  },
+  {
+    "dutch": "daarna",
+    "english": "afterwards, then",
+    "vietnamese": "sau đó",
+    "dutchsentence": "We gaan winkelen, en daarna lunchen.",
+    "englishtranslate": "We are going shopping, and afterwards lunch."
+  },
+  {
+    "dutch": "dan",
+    "english": "then",
+    "vietnamese": "sau đó, thế thì",
+    "dutchsentence": "Als het regent, dan gaan we naar het museum.",
+    "englishtranslate": "If it rains, then we go to the museum."
+  },
+  {
+    "dutch": "maandag",
+    "english": "Monday",
+    "vietnamese": "thứ Hai",
+    "dutchsentence": "Maandag begin ik met mijn nieuwe baan.",
+    "englishtranslate": "Monday I start my new job."
+  },
+  {
+    "dutch": "dinsdag",
+    "english": "Tuesday",
+    "vietnamese": "thứ Ba",
+    "dutchsentence": "Dinsdag hebben we een afspraak.",
+    "englishtranslate": "Tuesday we have an appointment."
+  },
+  {
+    "dutch": "woensdag",
+    "english": "Wednesday",
+    "vietnamese": "thứ Tư",
+    "dutchsentence": "Op woensdag werk ik thuis.",
+    "englishtranslate": "On Wednesday I work from home."
+  },
+  {
+    "dutch": "donderdag",
+    "english": "Thursday",
+    "vietnamese": "thứ Năm",
+    "dutchsentence": "Ik moet donderdag boodschappen doen.",
+    "englishtranslate": "I have to do groceries on Thursday."
+  },
+  {
+    "dutch": "vrijdag",
+    "english": "Friday",
+    "vietnamese": "thứ Sáu",
+    "dutchsentence": "Vrijdag is mijn laatste werkdag.",
+    "englishtranslate": "Friday is my last working day."
+  },
+  {
+    "dutch": "zaterdag",
+    "english": "Saturday",
+    "vietnamese": "thứ Bảy",
+    "dutchsentence": "Zaterdag gaan we naar het park.",
+    "englishtranslate": "Saturday we are going to the park."
+  },
+  {
+    "dutch": "zondag",
+    "english": "Sunday",
+    "vietnamese": "Chủ Nhật",
+    "dutchsentence": "Zondag is een rustdag.",
+    "englishtranslate": "Sunday is a day of rest."
+  },
+  {
+    "dutch": "de lente",
+    "english": "the spring",
+    "vietnamese": "mùa xuân",
+    "dutchsentence": "De lente is mijn favoriete seizoen.",
+    "englishtranslate": "Spring is my favourite season."
+  },
+  {
+    "dutch": "de zomer",
+    "english": "the summer",
+    "vietnamese": "mùa hè",
+    "dutchsentence": "In de zomer gaan we naar het strand.",
+    "englishtranslate": "In the summer we go to the beach."
+  },
+  {
+    "dutch": "de herfst",
+    "english": "the autumn / fall",
+    "vietnamese": "mùa thu",
+    "dutchsentence": "In de herfst vallen de bladeren.",
+    "englishtranslate": "In the autumn the leaves fall."
+  },
+  {
+    "dutch": "de winter",
+    "english": "the winter",
+    "vietnamese": "mùa đông",
+    "dutchsentence": "Ik ski graag in de winter.",
+    "englishtranslate": "I like to ski in the winter."
+  },
+  {
+    "dutch": "aardig",
+    "english": "nice, kind",
+    "vietnamese": "tử tế, tốt bụng",
+    "dutchsentence": "Mijn collega is een aardige man.",
+    "englishtranslate": "My colleague is a kind man."
+  },
+  {
+    "dutch": "alleen",
+    "english": "alone",
+    "vietnamese": "một mình",
+    "dutchsentence": "Ik woon alleen in dit huis.",
+    "englishtranslate": "I live alone in this house."
+  },
+  {
+    "dutch": "bijvoorbeeld",
+    "english": "for example",
+    "vietnamese": "ví dụ",
+    "dutchsentence": "Ik hou van sporten, bijvoorbeeld fietsen.",
+    "englishtranslate": "I love sports, for example cycling."
+  },
+  {
+    "dutch": "druk",
+    "english": "busy, crowded",
+    "vietnamese": "bận rộn, đông đúc",
+    "dutchsentence": "Ik heb het erg druk met werk.",
+    "englishtranslate": "I am very busy with work."
+  },
+  {
+    "dutch": "eigenlijk",
+    "english": "actually, really",
+    "vietnamese": "thực ra, trên thực tế",
+    "dutchsentence": "Eigenlijk wil ik niet gaan.",
+    "englishtranslate": "Actually, I don't want to go."
+  },
+  {
+    "dutch": "elkaar",
+    "english": "each other",
+    "vietnamese": "nhau",
+    "dutchsentence": "Ze houden van elkaar.",
+    "englishtranslate": "They love each other."
+  },
+  {
+    "dutch": "geboren",
+    "english": "born",
+    "vietnamese": "sinh ra",
+    "dutchsentence": "Ik ben geboren in Vietnam.",
+    "englishtranslate": "I was born in Vietnam."
+  },
+  {
+    "dutch": "geen",
+    "english": "no, not any (negation of a noun)",
+    "vietnamese": "không có",
+    "dutchsentence": "Ik heb geen broers of zussen.",
+    "englishtranslate": "I have no brothers or sisters."
+  },
+  {
+    "dutch": "geleden",
+    "english": "ago",
+    "vietnamese": "trước đây",
+    "dutchsentence": "Twee jaar geleden was ik hier ook.",
+    "englishtranslate": "Two years ago I was here too."
+  },
+  {
+    "dutch": "gelukkig",
+    "english": "happy, fortunately",
+    "vietnamese": "hạnh phúc, may mắn thay",
+    "dutchsentence": "Ik ben gelukkig met mijn gezin.",
+    "englishtranslate": "I am happy with my family."
+  },
+  {
+    "dutch": "gescheiden",
+    "english": "divorced",
+    "vietnamese": "ly hôn",
+    "dutchsentence": "Mijn ouders zijn gescheiden.",
+    "englishtranslate": "My parents are divorced."
+  },
+  {
+    "dutch": "getrouwd",
+    "english": "married",
+    "vietnamese": "kết hôn",
+    "dutchsentence": "Zij is getrouwd met een Nederlander.",
+    "englishtranslate": "She is married to a Dutchman."
+  },
+  {
+    "dutch": "gezellig",
+    "english": "cozy, pleasant, fun",
+    "vietnamese": "ấm cúng, dễ chịu, vui vẻ",
+    "dutchsentence": "Het was een gezellige avond.",
+    "englishtranslate": "It was a pleasant evening."
+  },
+  {
+    "dutch": "hard",
+    "english": "hard, fast",
+    "vietnamese": "chăm chỉ, nhanh",
+    "dutchsentence": "Ik moet hard werken.",
+    "englishtranslate": "I have to work hard."
+  },
+  {
+    "dutch": "ideale",
+    "english": "ideal",
+    "vietnamese": "lý tưởng",
+    "dutchsentence": "Dit is de ideale plek voor een afspraak.",
+    "englishtranslate": "This is the ideal place for an appointment."
+  },
+  {
+    "dutch": "interessant",
+    "english": "interesting",
+    "vietnamese": "thú vị",
+    "dutchsentence": "Het museum is erg interessant.",
+    "englishtranslate": "The museum is very interesting."
+  },
+  {
+    "dutch": "leuk",
+    "english": "fun, nice",
+    "vietnamese": "vui, hay, tuyệt",
+    "dutchsentence": "Dat is een leuk idee!",
+    "englishtranslate": "That is a fun idea!"
+  },
+  {
+    "dutch": "maar",
+    "english": "but",
+    "vietnamese": "nhưng",
+    "dutchsentence": "Ik wil graag gaan, maar ik heb geen tijd.",
+    "englishtranslate": "I would like to go, but I don't have time."
+  },
+  {
+    "dutch": "niet",
+    "english": "not",
+    "vietnamese": "không",
+    "dutchsentence": "Ik ben niet getrouwd.",
+    "englishtranslate": "I am not married."
+  },
+  {
+    "dutch": "overleden",
+    "english": "deceased, passed away",
+    "vietnamese": "đã mất, qua đời",
+    "dutchsentence": "Mijn opa is vorig jaar overleden.",
+    "englishtranslate": "My grandpa passed away last year."
+  },
+  {
+    "dutch": "paar",
+    "english": "pair, a couple of",
+    "vietnamese": "đôi, vài",
+    "dutchsentence": "Ik heb een paar vrienden in de buurt.",
+    "englishtranslate": "I have a couple of friends in the neighborhood."
+  },
+  {
+    "dutch": "samen",
+    "english": "together",
+    "vietnamese": "cùng nhau",
+    "dutchsentence": "We gaan samen naar de bioscoop.",
+    "englishtranslate": "We are going to the cinema together."
+  },
+  {
+    "dutch": "spontaan",
+    "english": "spontaneous",
+    "vietnamese": "tự phát, ngẫu hứng",
+    "dutchsentence": "Zij is een spontane vrouw.",
+    "englishtranslate": "She is a spontaneous woman."
+  },
+  {
+    "dutch": "tijdje",
+    "english": "a while, a short time",
+    "vietnamese": "một lúc, một thời gian ngắn",
+    "dutchsentence": "Ik ben hier al een tijdje.",
+    "englishtranslate": "I have been here for a while already."
+  },
+  {
+    "dutch": "verliefd",
+    "english": "in love",
+    "vietnamese": "đang yêu",
+    "dutchsentence": "Hij is verliefd op haar.",
+    "englishtranslate": "He is in love with her."
+  },
+  {
+    "dutch": "vol",
+    "english": "full",
+    "vietnamese": "đầy",
+    "dutchsentence": "Mijn agenda is vol.",
+    "englishtranslate": "My planner is full."
+  },
+  {
+    "dutch": "vooral",
+    "english": "especially, mainly",
+    "vietnamese": "đặc biệt, chủ yếu",
+    "dutchsentence": "Ik hou vooral van de herfst.",
+    "englishtranslate": "I especially love the autumn."
+  },
+  {
+    "dutch": "wel",
+    "english": "indeed, certainly (opposite of 'niet')",
+    "vietnamese": "quả thật, chắc chắn là",
+    "dutchsentence": "Ik heb wel een broer, maar geen zus.",
+    "englishtranslate": "I do have a brother, but no sister."
+  },
+  {
+    "dutch": "ziek",
+    "english": "sick, ill",
+    "vietnamese": "ốm, bệnh",
+    "dutchsentence": "Ik ben ziek en kan niet werken.",
+    "englishtranslate": "I am sick and cannot work."
+  }
+]

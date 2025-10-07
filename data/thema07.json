@@ -1,0 +1,1416 @@
+[
+  {
+    "dutch": "het aanrecht, aanrechten",
+    "english": "kitchen counter",
+    "vietnamese": "bàn bếp, quầy bếp",
+    "dutchsentence": "Zet de vuile borden op het aanrecht.",
+    "englishtranslate": "Put the dirty plates on the kitchen counter."
+  },
+  {
+    "dutch": "de achtertuin, achtertuinen",
+    "english": "backyard",
+    "vietnamese": "sân sau, vườn sau",
+    "dutchsentence": "We hebben een kleine tafel in de achtertuin.",
+    "englishtranslate": "We have a small table in the backyard."
+  },
+  {
+    "dutch": "de activiteit, activiteiten",
+    "english": "the activity",
+    "vietnamese": "hoạt động",
+    "dutchsentence": "Zwemmen is een gezonde activiteit.",
+    "englishtranslate": "Swimming is a healthy activity."
+  },
+  {
+    "dutch": "de afzuigkap, afzuigkappen",
+    "english": "the exhaust hood/extractor fan",
+    "vietnamese": "máy hút mùi, quạt thông gió",
+    "dutchsentence": "De afzuigkap boven het fornuis moet schoongemaakt worden.",
+    "englishtranslate": "The exhaust hood above the stove needs to be cleaned."
+  },
+  {
+    "dutch": "het apparaat, apparaten",
+    "english": "the appliance/device",
+    "vietnamese": "thiết bị, dụng cụ",
+    "dutchsentence": "Dit nieuwe apparaat maakt koken makkelijker.",
+    "englishtranslate": "This new appliance makes cooking easier."
+  },
+  {
+    "dutch": "het bad, baden",
+    "english": "the bath/bathtub",
+    "vietnamese": "bồn tắm, cái bồn tắm",
+    "dutchsentence": "Na het werk neem ik graag een warm bad.",
+    "englishtranslate": "After work, I like to take a warm bath."
+  },
+  {
+    "dutch": "de badkamer, badkamers",
+    "english": "the bathroom",
+    "vietnamese": "phòng tắm",
+    "dutchsentence": "De badkamer is op de eerste verdieping.",
+    "englishtranslate": "The bathroom is on the first floor."
+  },
+  {
+    "dutch": "het balkon, balkons",
+    "english": "the balcony",
+    "vietnamese": "ban công",
+    "dutchsentence": "Er staat een plant op het balkon.",
+    "englishtranslate": "There is a plant on the balcony."
+  },
+  {
+    "dutch": "de band, banden",
+    "english": "the tire/band",
+    "vietnamese": "lốp xe, băng (nhóm)",
+    "dutchsentence": "Mijn fiets heeft een lekke band.",
+    "englishtranslate": "My bike has a flat tire."
+  },
+  {
+    "dutch": "de bank, banken",
+    "english": "the couch/sofa or bank (financial)",
+    "vietnamese": "ghế sofa / ngân hàng",
+    "dutchsentence": "Ik ga naar de bank om mijn cheque te storten.",
+    "englishtranslate": "I went to the bank to deposit my check."
+  },
+  {
+    "dutch": "het bed, bedden",
+    "english": "the bed",
+    "vietnamese": "giường",
+    "dutchsentence": "Elke ochtend moet ik mijn bed opmaken.",
+    "englishtranslate": "Every morning I have to make my bed."
+  },
+  {
+    "dutch": "de boerderij, boerderijen",
+    "english": "the farm",
+    "vietnamese": "trang trại, nông trại",
+    "dutchsentence": "Mijn oom heeft een boerderij met koeien.",
+    "englishtranslate": "My uncle has a farm with cows."
+  },
+  {
+    "dutch": "het bureau, bureaus",
+    "english": "the desk/office",
+    "vietnamese": "bàn làm việc, văn phòng",
+    "dutchsentence": "Er ligt een boek op het bureau.",
+    "englishtranslate": "There is a book on the desk."
+  },
+  {
+    "dutch": "het dak, daken",
+    "english": "the roof",
+    "vietnamese": "mái nhà",
+    "dutchsentence": "Het dak is gemaakt van rode pannen.",
+    "englishtranslate": "The roof is made of red tiles."
+  },
+  {
+    "dutch": "het dekbed, dekbedden",
+    "english": "the duvet/comforter",
+    "vietnamese": "chăn, chăn lông vũ",
+    "dutchsentence": "Ik heb een nieuw, warm dekbed gekocht.",
+    "englishtranslate": "I bought a new, warm duvet."
+  },
+  {
+    "dutch": "de deur, deuren",
+    "english": "the door",
+    "vietnamese": "cửa ra vào, cánh cửa",
+    "dutchsentence": "Ik deed de deur open om te vertrekken.",
+    "englishtranslate": "I opened the door to leave."
+  },
+  {
+    "dutch": "de droger, drogers",
+    "english": "the dryer (clothes)",
+    "vietnamese": "máy sấy quần áo",
+    "dutchsentence": "De was is klaar en gaat in de droger.",
+    "englishtranslate": "The laundry is finished and goes into the dryer."
+  },
+  {
+    "dutch": "het droomhuis, droomhuizen",
+    "english": "the dream house",
+    "vietnamese": "ngôi nhà mơ ước",
+    "dutchsentence": "Dit huis aan het strand is mijn droomhuis.",
+    "englishtranslate": "This house on the beach is my dream house."
+  },
+  {
+    "dutch": "het dubbel glas",
+    "english": "the double glazing",
+    "vietnamese": "kính đôi, kính hai lớp",
+    "dutchsentence": "Onze woning heeft dubbel glas voor betere isolatie.",
+    "englishtranslate": "Our house has double glazing for better insulation."
+  },
+  {
+    "dutch": "de eengezinswoning",
+    "english": "the single-family house",
+    "vietnamese": "nhà biệt lập, nhà một gia đình",
+    "dutchsentence": "We wonen in een gezellige eengezinswoning.",
+    "englishtranslate": "We live in a cozy single-family house."
+  },
+  {
+    "dutch": "de eettafel, eettafels",
+    "english": "the dining table",
+    "vietnamese": "bàn ăn",
+    "dutchsentence": "De hele familie zit aan de eettafel.",
+    "englishtranslate": "The whole family is sitting at the dining table."
+  },
+  {
+    "dutch": "het examen, examens",
+    "english": "the exam",
+    "vietnamese": "kỳ thi, bài thi",
+    "dutchsentence": "Volgende week heb ik een moeilijk examen.",
+    "englishtranslate": "Next week I have a difficult exam."
+  },
+  {
+    "dutch": "de flat, flats",
+    "english": "the apartment/flat",
+    "vietnamese": "căn hộ, chung cư",
+    "dutchsentence": "We wonen op de bovenste verdieping van een flat.",
+    "englishtranslate": "We live on the top floor of an apartment."
+  },
+  {
+    "dutch": "het fornuis, fornuizen",
+    "english": "the stove/cooker",
+    "vietnamese": "bếp nấu, lò nấu",
+    "dutchsentence": "Het fornuis is oud en moet vervangen worden.",
+    "englishtranslate": "The stove is old and needs to be replaced."
+  },
+  {
+    "dutch": "het gordijn, gordijnen",
+    "english": "the curtain",
+    "vietnamese": "rèm cửa, màn cửa",
+    "dutchsentence": "Doe de gordijnen dicht, het is donker buiten.",
+    "englishtranslate": "Close the curtains, it's dark outside."
+  },
+  {
+    "dutch": "het grachtenpand, grachtenpanden",
+    "english": "the canal house",
+    "vietnamese": "nhà bên kênh đào",
+    "dutchsentence": "In Amsterdam staan veel mooie grachtenpanden.",
+    "englishtranslate": "There are many beautiful canal houses in Amsterdam."
+  },
+  {
+    "dutch": "de hal, hallen",
+    "english": "the hall/entrance",
+    "vietnamese": "hành lang, sảnh vào",
+    "dutchsentence": "Laat je jas achter in de hal.",
+    "englishtranslate": "Leave your coat in the hall."
+  },
+  {
+    "dutch": "de huur",
+    "english": "the rent",
+    "vietnamese": "tiền thuê nhà",
+    "dutchsentence": "De huur van dit appartement is betaalbaar.",
+    "englishtranslate": "The rent for this apartment is affordable."
+  },
+  {
+    "dutch": "de hond, honden",
+    "english": "the dog",
+    "vietnamese": "chó",
+    "dutchsentence": "Onze hond slaapt graag in de woonkamer.",
+    "englishtranslate": "Our dog likes to sleep in the living room."
+  },
+  {
+    "dutch": "het huishouden",
+    "english": "the household/housework",
+    "vietnamese": "việc nhà, gia đình",
+    "dutchsentence": "We delen het huishouden in ons huis.",
+    "englishtranslate": "We share the housework in our house."
+  },
+  {
+    "dutch": "de hypotheek, hypotheken",
+    "english": "the mortgage",
+    "vietnamese": "khoản vay thế chấp",
+    "dutchsentence": "We hebben een hypotheek afgesloten bij de bank.",
+    "englishtranslate": "We took out a mortgage with the bank."
+  },
+  {
+    "dutch": "de indeling, indelingen",
+    "english": "the layout/arrangement",
+    "vietnamese": "bố cục, sự sắp xếp",
+    "dutchsentence": "De indeling van de keuken is heel praktisch.",
+    "englishtranslate": "The layout of the kitchen is very practical."
+  },
+  {
+    "dutch": "het journaal, journaals",
+    "english": "the news bulletin",
+    "vietnamese": "bản tin thời sự, chương trình tin tức",
+    "dutchsentence": "Ik kijk elke avond naar het journaal op televisie.",
+    "englishtranslate": "I watch the news bulletin on television every evening."
+  },
+  {
+    "dutch": "de kant, kanten",
+    "english": "the side/edge",
+    "vietnamese": "mặt, phía, bên",
+    "dutchsentence": "Aan de andere kant van de straat is een park.",
+    "englishtranslate": "There is a park on the other side of the street."
+  },
+  {
+    "dutch": "de kast, kasten",
+    "english": "the closet/cupboard/wardrobe",
+    "vietnamese": "tủ, cái tủ",
+    "dutchsentence": "Mijn kleren hangen in de kast in de slaapkamer.",
+    "englishtranslate": "My clothes are hanging in the closet in the bedroom."
+  },
+  {
+    "dutch": "de kat, katten",
+    "english": "the cat",
+    "vietnamese": "mèo",
+    "dutchsentence": "Onze kat slaapt de hele dag.",
+    "englishtranslate": "Our cat sleeps all day."
+  },
+  {
+    "dutch": "de kelder, kelders",
+    "english": "the cellar/basement",
+    "vietnamese": "tầng hầm, hầm rượu",
+    "dutchsentence": "We bewaren oude spullen in de kelder.",
+    "englishtranslate": "We store old things in the basement."
+  },
+  {
+    "dutch": "de keuken, keukens",
+    "english": "the kitchen",
+    "vietnamese": "nhà bếp",
+    "dutchsentence": "De keuken is onlangs gerenoveerd.",
+    "englishtranslate": "The kitchen was recently renovated."
+  },
+  {
+    "dutch": "de kip, kippen",
+    "english": "the chicken",
+    "vietnamese": "gà, con gà",
+    "dutchsentence": "De kip loopt rond op de boerderij.",
+    "englishtranslate": "The chicken walks around on the farm."
+  },
+  {
+    "dutch": "de klas, klassen",
+    "english": "the class/classroom",
+    "vietnamese": "lớp học, phòng học",
+    "dutchsentence": "Er zitten twintig leerlingen in de klas.",
+    "englishtranslate": "There are twenty students in the class."
+  },
+  {
+    "dutch": "het kleed, kleden",
+    "english": "the rug/carpet",
+    "vietnamese": "tấm thảm, thảm trải sàn",
+    "dutchsentence": "Er ligt een mooi kleed onder de eettafel.",
+    "englishtranslate": "There is a beautiful rug under the dining table."
+  },
+  {
+    "dutch": "de koelkast, koelkasten",
+    "english": "the refrigerator/fridge",
+    "vietnamese": "tủ lạnh",
+    "dutchsentence": "De melk staat in de koelkast.",
+    "englishtranslate": "The milk is in the fridge."
+  },
+  {
+    "dutch": "het kopje, kopjes",
+    "english": "the cup",
+    "vietnamese": "cái tách, cái cốc",
+    "dutchsentence": "Wil je een kopje koffie?",
+    "englishtranslate": "Do you want a cup of coffee?"
+  },
+  {
+    "dutch": "de kraan, kranen",
+    "english": "the tap/faucet/crane",
+    "vietnamese": "vòi nước / cần cẩu",
+    "dutchsentence": "De kraan in de keuken lekt.",
+    "englishtranslate": "The tap in the kitchen is leaking."
+  },
+  {
+    "dutch": "het kussen, kussens",
+    "english": "the pillow/cushion",
+    "vietnamese": "cái gối",
+    "dutchsentence": "Ik heb een zacht kussen nodig om goed te slapen.",
+    "englishtranslate": "I need a soft pillow to sleep well."
+  },
+  {
+    "dutch": "de lamp, lampen",
+    "english": "the lamp/light",
+    "vietnamese": "đèn, bóng đèn",
+    "dutchsentence": "De lamp in de woonkamer is kapot.",
+    "englishtranslate": "The lamp in the living room is broken."
+  },
+  {
+    "dutch": "de last",
+    "english": "the burden/trouble",
+    "vietnamese": "gánh nặng, sự phiền toái",
+    "dutchsentence": "De verhuizing was een grote last.",
+    "englishtranslate": "The move was a big burden."
+  },
+  {
+    "dutch": "het ligbad, ligbaden",
+    "english": "the bathtub (for lying down)",
+    "vietnamese": "bồn tắm nằm",
+    "dutchsentence": "Onze nieuwe badkamer heeft een groot ligbad.",
+    "englishtranslate": "Our new bathroom has a large bathtub."
+  },
+  {
+    "dutch": "de loopafstand",
+    "english": "the walking distance",
+    "vietnamese": "khoảng cách đi bộ",
+    "dutchsentence": "De supermarkt is op loopafstand van ons huis.",
+    "englishtranslate": "The supermarket is within walking distance of our house."
+  },
+  {
+    "dutch": "de magnetron, magnetrons",
+    "english": "the microwave",
+    "vietnamese": "lò vi sóng",
+    "dutchsentence": "Ik warm mijn lunch op in de magnetron.",
+    "englishtranslate": "I warm up my lunch in the microwave."
+  },
+  {
+    "dutch": "de makelaar, makelaars",
+    "english": "the real estate agent",
+    "vietnamese": "nhà môi giới bất động sản",
+    "dutchsentence": "De makelaar helpt ons met het verkopen van ons huis.",
+    "englishtranslate": "The real estate agent is helping us sell our house."
+  },
+  {
+    "dutch": "de moestuin, moestuinen",
+    "english": "the vegetable garden",
+    "vietnamese": "vườn rau, vườn trồng rau",
+    "dutchsentence": "We verbouwen onze eigen groenten in de moestuin.",
+    "englishtranslate": "We grow our own vegetables in the vegetable garden."
+  },
+  {
+    "dutch": "het nachtkastje, nachtkastjes",
+    "english": "the nightstand/bedside table",
+    "vietnamese": "bàn cạnh giường",
+    "dutchsentence": "Mijn wekker staat op het nachtkastje.",
+    "englishtranslate": "My alarm clock is on the nightstand."
+  },
+  {
+    "dutch": "de natuur",
+    "english": "the nature",
+    "vietnamese": "thiên nhiên",
+    "dutchsentence": "Ik geniet van de rust in de natuur.",
+    "englishtranslate": "I enjoy the peace in nature."
+  },
+  {
+    "dutch": "de nieuwbouw",
+    "english": "the new construction/development",
+    "vietnamese": "công trình xây dựng mới",
+    "dutchsentence": "Er komt een nieuwbouwproject in onze wijk.",
+    "englishtranslate": "There will be a new construction project in our neighborhood."
+  },
+  {
+    "dutch": "het ongeluk, ongelukken",
+    "english": "the accident/misfortune",
+    "vietnamese": "tai nạn, điều không may",
+    "dutchsentence": "Er is een ongeluk gebeurd op de snelweg.",
+    "englishtranslate": "An accident happened on the highway."
+  },
+  {
+    "dutch": "de oven, ovens",
+    "english": "the oven",
+    "vietnamese": "lò nướng, lò sưởi",
+    "dutchsentence": "Ik bak brood in de oven.",
+    "englishtranslate": "I bake bread in the oven."
+  },
+  {
+    "dutch": "de plaats, plaatsen",
+    "english": "the place/town/seat",
+    "vietnamese": "nơi chốn, địa điểm, ghế",
+    "dutchsentence": "Amsterdam is een mooie plaats om te wonen.",
+    "englishtranslate": "Amsterdam is a beautiful place to live."
+  },
+  {
+    "dutch": "het raam, ramen",
+    "english": "the window",
+    "vietnamese": "cửa sổ",
+    "dutchsentence": "Het raam is open om frisse lucht binnen te laten.",
+    "englishtranslate": "The window is open to let in fresh air."
+  },
+  {
+    "dutch": "de rente, rentes",
+    "english": "the interest (rate)",
+    "vietnamese": "lãi suất",
+    "dutchsentence": "De rente op spaargeld is erg laag.",
+    "englishtranslate": "The interest rate on savings is very low."
+  },
+  {
+    "dutch": "het rijexamen, rijexamens",
+    "english": "the driving test",
+    "vietnamese": "kỳ thi lái xe",
+    "dutchsentence": "Ik hoop dat ik slaag voor mijn rijexamen.",
+    "englishtranslate": "I hope I pass my driving test."
+  },
+  {
+    "dutch": "het rijtjeshuis, rijtjeshuizen",
+    "english": "the terraced house",
+    "vietnamese": "nhà liền kề",
+    "dutchsentence": "Veel mensen in Nederland wonen in een rijtjeshuis.",
+    "englishtranslate": "Many people in the Netherlands live in a terraced house."
+  },
+  {
+    "dutch": "De sauna, sauna’s",
+    "english": "the sauna",
+    "vietnamese": "phòng xông hơi, tắm hơi",
+    "dutchsentence": "Hij ging naar de sauna om te ontspannen en zijn lichaam te verfrissen.",
+    "englishtranslate": "He went to the sauna to relax and refresh his body."
+  },
+  {
+    "dutch": "het schema, schema’s",
+    "english": "the schedule/plan",
+    "vietnamese": "lịch trình, kế hoạch, biểu đồ",
+    "dutchsentence": "Het schema voor de week is erg druk.",
+    "englishtranslate": "The schedule for the week is very busy."
+  },
+  {
+    "dutch": "het schilderij, schilderijen",
+    "english": "the painting",
+    "vietnamese": "bức tranh, tranh vẽ",
+    "dutchsentence": "Ze heeft een nieuw schilderij aan de muur gehangen.",
+    "englishtranslate": "She hung a new painting on the wall."
+  },
+  {
+    "dutch": "de schoorsteen, schoorstenen",
+    "english": "the chimney",
+    "vietnamese": "ống khói",
+    "dutchsentence": "Rook komt uit de schoorsteen van het huis.",
+    "englishtranslate": "Smoke comes out of the chimney of the house."
+  },
+  {
+    "dutch": "de schuur, schuren",
+    "english": "the shed/barn",
+    "vietnamese": "nhà kho, chuồng",
+    "dutchsentence": "De fietsen staan in de schuur in de tuin.",
+    "englishtranslate": "The bicycles are in the shed in the garden."
+  },
+  {
+    "dutch": "de slaapkamer, slaapkamers",
+    "english": "the bedroom",
+    "vietnamese": "phòng ngủ",
+    "dutchsentence": "Er zijn drie slaapkamers in het huis.",
+    "englishtranslate": "There are three bedrooms in the house."
+  },
+  {
+    "dutch": "de speeltuin, speeltuinen",
+    "english": "the playground",
+    "vietnamese": "sân chơi",
+    "dutchsentence": "De kinderen spelen in de speeltuin.",
+    "englishtranslate": "The children are playing in the playground."
+  },
+  {
+    "dutch": "de spiegel, spiegels",
+    "english": "the mirror",
+    "vietnamese": "cái gương",
+    "dutchsentence": "Ik keek in de spiegel voordat ik wegging.",
+    "englishtranslate": "I looked in the mirror before I left."
+  },
+  {
+    "dutch": "de stoel, stoelen",
+    "english": "the chair",
+    "vietnamese": "cái ghế",
+    "dutchsentence": "Er staat een comfortabele stoel bij het bureau.",
+    "englishtranslate": "There is a comfortable chair at the desk."
+  },
+  {
+    "dutch": "het strand, stranden",
+    "english": "the beach",
+    "vietnamese": "bãi biển, bãi cát",
+    "dutchsentence": "We gaan in de zomer naar het strand.",
+    "englishtranslate": "We go to the beach in the summer."
+  },
+  {
+    "dutch": "de studeerkamer, studeerkamers",
+    "english": "the study/office (room)",
+    "vietnamese": "phòng học, phòng làm việc",
+    "dutchsentence": "Mijn man werkt in de studeerkamer thuis.",
+    "englishtranslate": "My husband works in the study at home."
+  },
+  {
+    "dutch": "de student, studenten",
+    "english": "the student",
+    "vietnamese": "sinh viên, học sinh",
+    "dutchsentence": "Hij is een hardwerkende student aan de universiteit.",
+    "englishtranslate": "He is a hard-working student at the university."
+  },
+  {
+    "dutch": "de studentenkamer",
+    "english": "the student room",
+    "vietnamese": "phòng sinh viên",
+    "dutchsentence": "Mijn dochter huurt een kleine studentenkamer in de stad.",
+    "englishtranslate": "My daughter rents a small student room in the city."
+  },
+  {
+    "dutch": "de tafel, tafels",
+    "english": "the table",
+    "vietnamese": "cái bàn",
+    "dutchsentence": "Zet de borden op de tafel, alsjeblieft.",
+    "englishtranslate": "Put the plates on the table, please."
+  },
+  {
+    "dutch": "het tapijt, tapijten",
+    "english": "the carpet (wall-to-wall)",
+    "vietnamese": "thảm trải nhà",
+    "dutchsentence": "Er ligt een zacht tapijt in de slaapkamer.",
+    "englishtranslate": "There is a soft carpet in the bedroom."
+  },
+  {
+    "dutch": "de tekening, tekeningen",
+    "english": "the drawing/sketch",
+    "vietnamese": "bản vẽ, bức vẽ",
+    "dutchsentence": "De architect heeft een mooie tekening van het huis gemaakt.",
+    "englishtranslate": "The architect made a beautiful drawing of the house."
+  },
+  {
+    "dutch": "de televisie, televisies",
+    "english": "the television",
+    "vietnamese": "vô tuyến, TV",
+    "dutchsentence": "Zet de televisie aan voor het nieuws.",
+    "englishtranslate": "Turn on the television for the news."
+  },
+  {
+    "dutch": "de tv, tv’s",
+    "english": "the TV",
+    "vietnamese": "TV, ti vi",
+    "dutchsentence": "De tv hangt aan de muur in de woonkamer.",
+    "englishtranslate": "The TV is hanging on the wall in the living room."
+  },
+  {
+    "dutch": "de theepot, theepotten",
+    "english": "the teapot",
+    "vietnamese": "ấm trà",
+    "dutchsentence": "Zet de theepot op tafel, alstublieft.",
+    "englishtranslate": "Put the teapot on the table, please."
+  },
+  {
+    "dutch": "het toilet, toiletten",
+    "english": "the toilet/restroom",
+    "vietnamese": "nhà vệ sinh, bồn cầu",
+    "dutchsentence": "Het toilet is naast de badkamer.",
+    "englishtranslate": "The toilet is next to the bathroom."
+  },
+  {
+    "dutch": "de wc, wc’s",
+    "english": "the toilet/WC",
+    "vietnamese": "nhà vệ sinh, bồn cầu",
+    "dutchsentence": "Waar is de wc, alstublieft?",
+    "englishtranslate": "Where is the toilet, please?"
+  },
+  {
+    "dutch": "de trap, trappen",
+    "english": "the stairs/staircase",
+    "vietnamese": "cầu thang",
+    "dutchsentence": "De trap naar zolder is steil.",
+    "englishtranslate": "The stairs to the attic are steep."
+  },
+  {
+    "dutch": "de tuin, tuinen",
+    "english": "the garden/yard",
+    "vietnamese": "khu vườn",
+    "dutchsentence": "We hebben een grote tuin met veel bloemen.",
+    "englishtranslate": "We have a large garden with many flowers."
+  },
+  {
+    "dutch": "de twee-onder-een-kap woning",
+    "english": "the semi-detached house",
+    "vietnamese": "nhà song lập",
+    "dutchsentence": "Ze kochten een mooie twee-onder-een-kap woning buiten de stad.",
+    "englishtranslate": "They bought a beautiful semi-detached house outside the city."
+  },
+  {
+    "dutch": "het type, types",
+    "english": "the type/kind",
+    "vietnamese": "loại, kiểu",
+    "dutchsentence": "Welk type huis zoek je?",
+    "englishtranslate": "What type of house are you looking for?"
+  },
+  {
+    "dutch": "de uitbouw",
+    "english": "the extension/addition",
+    "vietnamese": "phần mở rộng, phần nối thêm",
+    "dutchsentence": "Ze zijn bezig met de uitbouw van de keuken.",
+    "englishtranslate": "They are working on the extension of the kitchen."
+  },
+  {
+    "dutch": "het uitzicht, uitzichten",
+    "english": "the view",
+    "vietnamese": "cảnh quan, tầm nhìn",
+    "dutchsentence": "Het uitzicht vanuit het raam is prachtig.",
+    "englishtranslate": "The view from the window is beautiful."
+  },
+  {
+    "dutch": "de vaas, vazen",
+    "english": "the vase",
+    "vietnamese": "bình hoa, lọ hoa",
+    "dutchsentence": "Zet de bloemen in de vaas op de tafel.",
+    "englishtranslate": "Put the flowers in the vase on the table."
+  },
+  {
+    "dutch": "de vaatwasser, vaatwassers",
+    "english": "the dishwasher",
+    "vietnamese": "máy rửa chén",
+    "dutchsentence": "De vaatwasser is vol, ik zet hem aan.",
+    "englishtranslate": "The dishwasher is full, I'm turning it on."
+  },
+  {
+    "dutch": "de verwarming",
+    "english": "the heating",
+    "vietnamese": "hệ thống sưởi",
+    "dutchsentence": "Zet de verwarming hoger, het is koud.",
+    "englishtranslate": "Turn up the heating, it's cold."
+  },
+  {
+    "dutch": "de voorziening, voorzieningen",
+    "english": "the facility/amenity",
+    "vietnamese": "tiện nghi, cơ sở vật chất",
+    "dutchsentence": "Er zijn veel voorzieningen in de buurt, zoals winkels en scholen.",
+    "englishtranslate": "There are many amenities nearby, like shops and schools."
+  },
+  {
+    "dutch": "de vuilniszak, vuilniszakken",
+    "english": "the garbage bag",
+    "vietnamese": "túi rác",
+    "dutchsentence": "De vuilniszak is vol, we moeten hem weggooien.",
+    "englishtranslate": "The garbage bag is full, we need to throw it away."
+  },
+  {
+    "dutch": "het warmtepompsysteem",
+    "english": "the heat pump system",
+    "vietnamese": "hệ thống bơm nhiệt",
+    "dutchsentence": "Een warmtepompsysteem is duurzaam voor het verwarmen van een huis.",
+    "englishtranslate": "A heat pump system is sustainable for heating a house."
+  },
+  {
+    "dutch": "de wasmachine, wasmachines",
+    "english": "the washing machine",
+    "vietnamese": "máy giặt",
+    "dutchsentence": "De wasmachine staat in de kelder.",
+    "englishtranslate": "The washing machine is in the basement."
+  },
+  {
+    "dutch": "de wastafel, wastafels",
+    "english": "the sink/washbasin",
+    "vietnamese": "bồn rửa mặt",
+    "dutchsentence": "Was je handen bij de wastafel.",
+    "englishtranslate": "Wash your hands at the sink."
+  },
+  {
+    "dutch": "de wekker, wekkers",
+    "english": "the alarm clock",
+    "vietnamese": "đồng hồ báo thức",
+    "dutchsentence": "De wekker gaat om zeven uur af.",
+    "englishtranslate": "The alarm clock goes off at seven o'clock."
+  },
+  {
+    "dutch": "de werkkamer, werkkamers",
+    "english": "the office/study (room)",
+    "vietnamese": "phòng làm việc",
+    "dutchsentence": "Hij heeft een aparte werkkamer om thuis te kunnen werken.",
+    "englishtranslate": "He has a separate office to be able to work from home."
+  },
+  {
+    "dutch": "de woning, woningen",
+    "english": "the house/dwelling",
+    "vietnamese": "ngôi nhà, chỗ ở",
+    "dutchsentence": "Ze hebben een nieuwe woning in een rustige buurt gevonden.",
+    "englishtranslate": "They found a new house in a quiet neighborhood."
+  },
+  {
+    "dutch": "de woonkamer, woonkamers",
+    "english": "the living room",
+    "vietnamese": "phòng khách",
+    "dutchsentence": "De familie kijkt tv in de woonkamer.",
+    "englishtranslate": "The family is watching TV in the living room."
+  },
+  {
+    "dutch": "de zolder, zolders",
+    "english": "the attic",
+    "vietnamese": "gác mái, tầng áp mái",
+    "dutchsentence": "We bewaren kerstversiering op de zolder.",
+    "englishtranslate": "We store Christmas decorations in the attic."
+  },
+  {
+    "dutch": "het zonnepaneel, zonnepanelen",
+    "english": "the solar panel",
+    "vietnamese": "tấm pin mặt trời",
+    "dutchsentence": "Zonnepanelen zijn goed voor het milieu.",
+    "englishtranslate": "Solar panels are good for the environment."
+  },
+  {
+    "dutch": "het zwembad, zwembaden",
+    "english": "the swimming pool",
+    "vietnamese": "hồ bơi, bể bơi",
+    "dutchsentence": "In de zomer zwemmen we in het zwembad.",
+    "englishtranslate": "We swim in the swimming pool in the summer."
+  },
+  {
+    "dutch": "aandoen",
+    "english": "to put on (clothes)/to turn on (light)",
+    "vietnamese": "mặc vào / bật (đèn)",
+    "dutchsentence": "Ik moet mijn jas aandoen, het is koud buiten.",
+    "englishtranslate": "I have to put on my coat, it's cold outside."
+  },
+  {
+    "dutch": "aanzetten",
+    "english": "to turn on/to switch on",
+    "vietnamese": "bật, mở",
+    "dutchsentence": "Kun je de televisie aanzetten, alsjeblieft?",
+    "englishtranslate": "Can you turn on the television, please?"
+  },
+  {
+    "dutch": "bakken",
+    "english": "to bake/to fry",
+    "vietnamese": "nướng / chiên, rán",
+    "dutchsentence": "Ik ga vandaag brood bakken.",
+    "englishtranslate": "I'm going to bake bread today."
+  },
+  {
+    "dutch": "Begonnen, beginnen",
+    "english": "started, to begin/start",
+    "vietnamese": "bắt đầu",
+    "dutchsentence": "We beginnen om negen uur met de activiteit.",
+    "englishtranslate": "We start the activity at nine o'clock."
+  },
+  {
+    "dutch": "behangen",
+    "english": "to wallpaper",
+    "vietnamese": "dán giấy dán tường",
+    "dutchsentence": "We gaan de woonkamer behangen met nieuw behang.",
+    "englishtranslate": "We are going to wallpaper the living room with new wallpaper."
+  },
+  {
+    "dutch": "beleven",
+    "english": "to experience/to live through",
+    "vietnamese": "trải nghiệm, sống qua",
+    "dutchsentence": "Ze heeft veel mooie momenten beleefd in haar leven.",
+    "englishtranslate": "She has experienced many beautiful moments in her life."
+  },
+  {
+    "dutch": "dekken",
+    "english": "to cover/to set (the table)",
+    "vietnamese": "che phủ / dọn (bàn ăn)",
+    "dutchsentence": "Wil je de tafel dekken voor het avondeten?",
+    "englishtranslate": "Will you set the table for dinner?"
+  },
+  {
+    "dutch": "dichtdoen",
+    "english": "to close",
+    "vietnamese": "đóng lại",
+    "dutchsentence": "Vergeet niet de deur dicht te doen als je weggaat.",
+    "englishtranslate": "Don't forget to close the door when you leave."
+  },
+  {
+    "dutch": "eruit zien",
+    "english": "to look (like)/to appear",
+    "vietnamese": "trông như, có vẻ ngoài",
+    "dutchsentence": "Het huis ziet er erg oud uit.",
+    "englishtranslate": "The house looks very old."
+  },
+  {
+    "dutch": "ervaren",
+    "english": "to experience (verb)/experienced (adj)",
+    "vietnamese": "trải nghiệm / có kinh nghiệm",
+    "dutchsentence": "Ik heb veel stress ervaren tijdens het examen.",
+    "englishtranslate": "I experienced a lot of stress during the exam."
+  },
+  {
+    "dutch": "gebeurd, gebeuren",
+    "english": "happened, to happen",
+    "vietnamese": "xảy ra",
+    "dutchsentence": "Er is een ongeluk gebeurd bij de ingang.",
+    "englishtranslate": "An accident happened at the entrance."
+  },
+  {
+    "dutch": "gebleven, blijven",
+    "english": "stayed, to stay/remain",
+    "vietnamese": "ở lại",
+    "dutchsentence": "Ze is thuis gebleven omdat ze ziek was.",
+    "englishtranslate": "She stayed home because she was sick."
+  },
+  {
+    "dutch": "gedaald, dalen",
+    "english": "decreased/fallen, to decrease/fall",
+    "vietnamese": "giảm xuống, hạ thấp",
+    "dutchsentence": "De temperatuur is gedaald tot onder nul.",
+    "englishtranslate": "The temperature has dropped below zero."
+  },
+  {
+    "dutch": "gegaan, gaan",
+    "english": "gone, to go",
+    "vietnamese": "đi",
+    "dutchsentence": "Ik ben gisteren naar de bank gegaan.",
+    "englishtranslate": "I went to the bank yesterday."
+  },
+  {
+    "dutch": "gekomen, komen",
+    "english": "come, to come",
+    "vietnamese": "đến, tới",
+    "dutchsentence": "Wanneer ben je thuis gekomen?",
+    "englishtranslate": "When did you come home?"
+  },
+  {
+    "dutch": "genieten van",
+    "english": "to enjoy (of)",
+    "vietnamese": "thưởng thức, tận hưởng",
+    "dutchsentence": "Wij genieten van de rustige natuur in ons weekendhuis.",
+    "englishtranslate": "We enjoy the peaceful nature at our weekend house."
+  },
+  {
+    "dutch": "geslaagd, slagen",
+    "english": "passed, to pass (a test/exam)",
+    "vietnamese": "đậu, thành công",
+    "dutchsentence": "Hij is geslaagd voor zijn rijexamen.",
+    "englishtranslate": "He passed his driving test."
+  },
+  {
+    "dutch": "gestegen, stijgen",
+    "english": "risen, to rise/increase",
+    "vietnamese": "tăng lên, leo lên",
+    "dutchsentence": "De huizenprijzen zijn de laatste jaren gestegen.",
+    "englishtranslate": "Housing prices have risen in recent years."
+  },
+  {
+    "dutch": "gestopt, stoppen",
+    "english": "stopped, to stop",
+    "vietnamese": "dừng lại, ngừng",
+    "dutchsentence": "Hij is gestopt met roken voor zijn gezondheid.",
+    "englishtranslate": "He stopped smoking for his health."
+  },
+  {
+    "dutch": "getrouwd, trouwen",
+    "english": "married, to marry",
+    "vietnamese": "kết hôn, cưới",
+    "dutchsentence": "Ze zijn vorig jaar getrouwd in het stadhuis.",
+    "englishtranslate": "They got married last year at the town hall."
+  },
+  {
+    "dutch": "geweest zijn",
+    "english": "have been, to be (past participle)",
+    "vietnamese": "đã từng, đã ở",
+    "dutchsentence": "Ik ben in Amsterdam geweest, het is een mooie stad.",
+    "englishtranslate": "I have been to Amsterdam, it is a beautiful city."
+  },
+  {
+    "dutch": "geworden, worden",
+    "english": "become, to become",
+    "vietnamese": "trở thành, được",
+    "dutchsentence": "Hij is makelaar geworden na zijn studie.",
+    "englishtranslate": "He became a real estate agent after his studies."
+  },
+  {
+    "dutch": "gezakt, zakken",
+    "english": "failed (an exam)/dropped, to fail/drop",
+    "vietnamese": "trượt (kỳ thi) / giảm, rơi xuống",
+    "dutchsentence": "Ze is helaas gezakt voor haar rijexamen.",
+    "englishtranslate": "Unfortunately, she failed her driving test."
+  },
+  {
+    "dutch": "hangt, hangen",
+    "english": "hangs, to hang",
+    "vietnamese": "treo, mắc",
+    "dutchsentence": "Het schilderij hangt boven de bank.",
+    "englishtranslate": "The painting is hanging above the couch."
+  },
+  {
+    "dutch": "herhalen",
+    "english": "to repeat",
+    "vietnamese": "nhắc lại, lặp lại",
+    "dutchsentence": "Kun je die zin nog een keer herhalen, alsjeblieft?",
+    "englishtranslate": "Can you repeat that sentence one more time, please?"
+  },
+  {
+    "dutch": "hoop, hopen",
+    "english": "hope, to hope",
+    "vietnamese": "hi vọng",
+    "dutchsentence": "Ik hoop dat we binnenkort verhuizen.",
+    "englishtranslate": "I hope we move soon."
+  },
+  {
+    "dutch": "houden van",
+    "english": "to love/to be fond of",
+    "vietnamese": "yêu, thích",
+    "dutchsentence": "Ik houd van mijn hond, hij is zo lief.",
+    "englishtranslate": "I love my dog, he is so sweet."
+  },
+  {
+    "dutch": "isoleren",
+    "english": "to insulate/to isolate",
+    "vietnamese": "cách nhiệt, cách ly",
+    "dutchsentence": "We moeten de zolder beter isoleren tegen de kou.",
+    "englishtranslate": "We need to better insulate the attic against the cold."
+  },
+  {
+    "dutch": "klussen",
+    "english": "to do odd jobs/DIY",
+    "vietnamese": "làm việc vặt, sửa chữa nhỏ",
+    "dutchsentence": "Ik ben dit weekend aan het klussen in de schuur.",
+    "englishtranslate": "I am doing DIY jobs in the shed this weekend."
+  },
+  {
+    "dutch": "lappen",
+    "english": "to clean (windows)/to patch",
+    "vietnamese": "lau chùi (cửa sổ) / vá",
+    "dutchsentence": "Ik moet de ramen lappen, ze zijn erg vies.",
+    "englishtranslate": "I need to clean the windows, they are very dirty."
+  },
+  {
+    "dutch": "ligt, liggen",
+    "english": "lies, to lie/be situated",
+    "vietnamese": "nằm, ở, đặt",
+    "dutchsentence": "De stad ligt aan het strand, vlak bij de zee.",
+    "englishtranslate": "The city is situated on the beach, close to the sea."
+  },
+  {
+    "dutch": "logeren",
+    "english": "to stay (as a guest)",
+    "vietnamese": "ở trọ, nghỉ lại",
+    "dutchsentence": "Mijn neefjes komen dit weekend bij ons logeren.",
+    "englishtranslate": "My nephews are coming to stay with us this weekend."
+  },
+  {
+    "dutch": "loop, lopen",
+    "english": "walk, to walk/run",
+    "vietnamese": "đi bộ / chạy",
+    "dutchsentence": "Hij loopt elke ochtend naar zijn werk.",
+    "englishtranslate": "He walks to his work every morning."
+  },
+  {
+    "dutch": "opendoen",
+    "english": "to open (a door, etc.)",
+    "vietnamese": "mở ra",
+    "dutchsentence": "Kun je het raam opendoen? Het is warm hier.",
+    "englishtranslate": "Can you open the window? It's warm here."
+  },
+  {
+    "dutch": "opknappen",
+    "english": "to renovate/to cheer up",
+    "vietnamese": "sửa chữa, cải tạo / vui lên",
+    "dutchsentence": "We gaan de badkamer opknappen volgend jaar.",
+    "englishtranslate": "We are going to renovate the bathroom next year."
+  },
+  {
+    "dutch": "opmaken",
+    "english": "to put on make-up/to make (a bed)",
+    "vietnamese": "trang điểm / dọn (giường)",
+    "dutchsentence": "Vergeet je bed niet op te maken voordat je weggaat.",
+    "englishtranslate": "Don't forget to make your bed before you leave."
+  },
+  {
+    "dutch": "opruimen",
+    "english": "to clean up/to tidy up",
+    "vietnamese": "dọn dẹp, sắp xếp",
+    "dutchsentence": "Ik moet de woonkamer opruimen, het is een chaos.",
+    "englishtranslate": "I have to tidy up the living room, it's a mess."
+  },
+  {
+    "dutch": "poetsen",
+    "english": "to clean/to polish/to brush",
+    "vietnamese": "lau chùi, đánh bóng, đánh răng",
+    "dutchsentence": "Ik moet mijn tanden poetsen voor het slapengaan.",
+    "englishtranslate": "I have to brush my teeth before going to sleep."
+  },
+  {
+    "dutch": "renoveren",
+    "english": "to renovate",
+    "vietnamese": "cải tạo, đổi mới",
+    "dutchsentence": "We gaan de keuken en badkamer renoveren.",
+    "englishtranslate": "We are going to renovate the kitchen and bathroom."
+  },
+  {
+    "dutch": "repareren",
+    "english": "to repair/to fix",
+    "vietnamese": "sửa chữa",
+    "dutchsentence": "De loodgieter komt de lekkende kraan repareren.",
+    "englishtranslate": "The plumber is coming to repair the leaking tap."
+  },
+  {
+    "dutch": "roken",
+    "english": "to smoke",
+    "vietnamese": "hút thuốc",
+    "dutchsentence": "Roken is niet toegestaan in dit gebouw.",
+    "englishtranslate": "Smoking is not allowed in this building."
+  },
+  {
+    "dutch": "samenwonen",
+    "english": "to live together",
+    "vietnamese": "sống chung",
+    "dutchsentence": "Mijn vriend en ik gaan volgend jaar samenwonen.",
+    "englishtranslate": "My boyfriend and I are going to live together next year."
+  },
+  {
+    "dutch": "schoonmaken",
+    "english": "to clean",
+    "vietnamese": "lau chùi, dọn dẹp",
+    "dutchsentence": "Elke zaterdag moet ik het huis schoonmaken.",
+    "englishtranslate": "Every Saturday I have to clean the house."
+  },
+  {
+    "dutch": "schilderen",
+    "english": "to paint",
+    "vietnamese": "sơn / vẽ (tranh)",
+    "dutchsentence": "We gaan de muren van de slaapkamer schilderen.",
+    "englishtranslate": "We are going to paint the bedroom walls."
+  },
+  {
+    "dutch": "staan",
+    "english": "to stand/to be (situated)",
+    "vietnamese": "đứng, ở, đặt",
+    "dutchsentence": "De lamp staat op de tafel.",
+    "englishtranslate": "The lamp is standing/situated on the table."
+  },
+  {
+    "dutch": "stofzuigen",
+    "english": "to vacuum clean",
+    "vietnamese": "hút bụi",
+    "dutchsentence": "Stofzuig je de woonkamer even, alsjeblieft?",
+    "englishtranslate": "Can you vacuum the living room, please?"
+  },
+  {
+    "dutch": "strijken",
+    "english": "to iron",
+    "vietnamese": "ủi, là (quần áo)",
+    "dutchsentence": "Ik moet mijn overhemden strijken voor morgen.",
+    "englishtranslate": "I need to iron my shirts for tomorrow."
+  },
+  {
+    "dutch": "studeren",
+    "english": "to study",
+    "vietnamese": "học, nghiên cứu",
+    "dutchsentence": "Ze studeert in de studeerkamer voor haar examen.",
+    "englishtranslate": "She is studying in the study room for her exam."
+  },
+  {
+    "dutch": "tekenen",
+    "english": "to draw/to sign",
+    "vietnamese": "vẽ / ký",
+    "dutchsentence": "De kinderen tekenen een huis met een grote tuin.",
+    "englishtranslate": "The children are drawing a house with a big garden."
+  },
+  {
+    "dutch": "tuinieren",
+    "english": "to garden",
+    "vietnamese": "làm vườn",
+    "dutchsentence": "Mijn hobby is tuinieren in de achtertuin.",
+    "englishtranslate": "My hobby is gardening in the backyard."
+  },
+  {
+    "dutch": "uitdoen",
+    "english": "to take off (clothes)/to turn off (light)",
+    "vietnamese": "cởi ra / tắt (đèn)",
+    "dutchsentence": "Doe je schoenen uit als je binnenkomt.",
+    "englishtranslate": "Take off your shoes when you come in."
+  },
+  {
+    "dutch": "uitzetten",
+    "english": "to turn off/to switch off",
+    "vietnamese": "tắt",
+    "dutchsentence": "Vergeet de lichten niet uit te zetten als je weggaat.",
+    "englishtranslate": "Don't forget to turn off the lights when you leave."
+  },
+  {
+    "dutch": "veranderd, veranderen",
+    "english": "changed, to change",
+    "vietnamese": "thay đổi",
+    "dutchsentence": "Mijn werkschema is onlangs veranderd.",
+    "englishtranslate": "My work schedule has recently changed."
+  },
+  {
+    "dutch": "verbouwen",
+    "english": "to renovate/to rebuild/to grow (crops)",
+    "vietnamese": "cải tạo, xây dựng lại / trồng trọt",
+    "dutchsentence": "We gaan het huis verbouwen om meer ruimte te creëren.",
+    "englishtranslate": "We are going to renovate the house to create more space."
+  },
+  {
+    "dutch": "verdienen",
+    "english": "to earn/to deserve",
+    "vietnamese": "kiếm tiền / xứng đáng",
+    "dutchsentence": "Hij verdient veel geld met zijn werk als makelaar.",
+    "englishtranslate": "He earns a lot of money with his work as a real estate agent."
+  },
+  {
+    "dutch": "verhuisd, verhuizen",
+    "english": "moved, to move (house)",
+    "vietnamese": "chuyển nhà",
+    "dutchsentence": "Ze zijn vorige maand naar een nieuw rijtjeshuis verhuisd.",
+    "englishtranslate": "They moved to a new terraced house last month."
+  },
+  {
+    "dutch": "verhuren",
+    "english": "to rent out/to lease",
+    "vietnamese": "cho thuê",
+    "dutchsentence": "Ze wil haar studentenkamer verhuren tijdens de zomer.",
+    "englishtranslate": "She wants to rent out her student room during the summer."
+  },
+  {
+    "dutch": "verkopen",
+    "english": "to sell",
+    "vietnamese": "bán",
+    "dutchsentence": "We hopen ons huis snel te verkopen.",
+    "englishtranslate": "We hope to sell our house quickly."
+  },
+  {
+    "dutch": "verliezen",
+    "english": "to lose",
+    "vietnamese": "mất, thua",
+    "dutchsentence": "Ik wil mijn sleutels niet verliezen.",
+    "englishtranslate": "I don't want to lose my keys."
+  },
+  {
+    "dutch": "vertellen",
+    "english": "to tell",
+    "vietnamese": "kể, nói",
+    "dutchsentence": "Kun je mij een verhaal vertellen over je droomhuis?",
+    "englishtranslate": "Can you tell me a story about your dream house?"
+  },
+  {
+    "dutch": "voorzien",
+    "english": "to provide/to supply",
+    "vietnamese": "cung cấp, trang bị",
+    "dutchsentence": "Het huis is voorzien van alle moderne voorzieningen.",
+    "englishtranslate": "The house is provided with all modern amenities."
+  },
+  {
+    "dutch": "wonen",
+    "english": "to live/to reside",
+    "vietnamese": "sống, ở",
+    "dutchsentence": "Wij wonen al tien jaar in deze woning.",
+    "englishtranslate": "We have been living in this house for ten years."
+  },
+  {
+    "dutch": "zich herinneren",
+    "english": "to remember",
+    "vietnamese": "nhớ, hồi tưởng",
+    "dutchsentence": "Ik kan me de indeling van dat huis niet goed herinneren.",
+    "englishtranslate": "I can't clearly remember the layout of that house."
+  },
+  {
+    "dutch": "zitten",
+    "english": "to sit/to be (situated)",
+    "vietnamese": "ngồi, ở, nằm",
+    "dutchsentence": "De student zit in de klas te studeren.",
+    "englishtranslate": "The student is sitting in the class studying."
+  },
+  {
+    "dutch": "aan",
+    "english": "on/at/turned on",
+    "vietnamese": "trên / ở / bật (lên)",
+    "dutchsentence": "De lamp is aan, je kunt lezen.",
+    "englishtranslate": "The lamp is on, you can read."
+  },
+  {
+    "dutch": "achter",
+    "english": "behind/after",
+    "vietnamese": "phía sau, sau",
+    "dutchsentence": "De hond zit achter de bank verstopt.",
+    "englishtranslate": "The dog is hiding behind the couch."
+  },
+  {
+    "dutch": "boven",
+    "english": "above/upstairs",
+    "vietnamese": "bên trên, tầng trên",
+    "dutchsentence": "De slaapkamer is boven, op de eerste verdieping.",
+    "englishtranslate": "The bedroom is upstairs, on the first floor."
+  },
+  {
+    "dutch": "naast",
+    "english": "next to/beside",
+    "vietnamese": "bên cạnh",
+    "dutchsentence": "De stoel staat naast de tafel.",
+    "englishtranslate": "The chair is next to the table."
+  },
+  {
+    "dutch": "onder",
+    "english": "under/below",
+    "vietnamese": "dưới, bên dưới",
+    "dutchsentence": "De kat ligt onder het bed te slapen.",
+    "englishtranslate": "The cat is sleeping under the bed."
+  },
+  {
+    "dutch": "op",
+    "english": "on/on top of/at",
+    "vietnamese": "trên, ở",
+    "dutchsentence": "De boeken liggen op het bureau.",
+    "englishtranslate": "The books are lying on the desk."
+  },
+  {
+    "dutch": "open",
+    "english": "open (adj)",
+    "vietnamese": "mở",
+    "dutchsentence": "Het raam is open, er komt frisse lucht binnen.",
+    "englishtranslate": "The window is open, fresh air is coming in."
+  },
+  {
+    "dutch": "per",
+    "english": "per/by (means of)",
+    "vietnamese": "mỗi / bằng (phương tiện)",
+    "dutchsentence": "De huur is 800 euro per maand.",
+    "englishtranslate": "The rent is 800 euros per month."
+  },
+  {
+    "dutch": "tegen",
+    "english": "against/towards (a time)",
+    "vietnamese": "chống lại / vào khoảng (thời gian)",
+    "dutchsentence": "De ladder staat tegen de schuur.",
+    "englishtranslate": "The ladder is standing against the shed."
+  },
+  {
+    "dutch": "tegenover",
+    "english": "opposite/across from",
+    "vietnamese": "đối diện",
+    "dutchsentence": "Ze wonen tegenover het park.",
+    "englishtranslate": "They live opposite the park."
+  },
+  {
+    "dutch": "tussen",
+    "english": "between/among",
+    "vietnamese": "giữa",
+    "dutchsentence": "De bank staat tussen de stoelen.",
+    "englishtranslate": "The couch is standing between the chairs."
+  },
+  {
+    "dutch": "vanaf",
+    "english": "from/starting from",
+    "vietnamese": "từ, bắt đầu từ",
+    "dutchsentence": "Vanaf morgen zijn we aan het verbouwen.",
+    "englishtranslate": "Starting tomorrow, we are renovating."
+  },
+  {
+    "dutch": "via",
+    "english": "via/through",
+    "vietnamese": "qua, thông qua",
+    "dutchsentence": "We hebben het huis via een makelaar gevonden.",
+    "englishtranslate": "We found the house via a real estate agent."
+  },
+  {
+    "dutch": "voor",
+    "english": "in front of/before/for",
+    "vietnamese": "trước / cho",
+    "dutchsentence": "De auto staat voor de woning geparkeerd.",
+    "englishtranslate": "The car is parked in front of the house."
+  },
+  {
+    "dutch": "belangrijk",
+    "english": "important",
+    "vietnamese": "quan trọng",
+    "dutchsentence": "Het is belangrijk dat je op tijd aankomt.",
+    "englishtranslate": "It is important that you arrive on time."
+  },
+  {
+    "dutch": "blij",
+    "english": "glad/happy",
+    "vietnamese": "vui mừng, hạnh phúc",
+    "dutchsentence": "Ik ben erg blij dat je hier bent.",
+    "englishtranslate": "I am very glad that you are here."
+  },
+  {
+    "dutch": "duurzaam",
+    "english": "sustainable/durable",
+    "vietnamese": "bền vững, lâu bền",
+    "dutchsentence": "Zonnepanelen zijn een duurzame oplossing.",
+    "englishtranslate": "Solar panels are a sustainable solution."
+  },
+  {
+    "dutch": "gedeelde",
+    "english": "shared",
+    "vietnamese": "chia sẻ, chung",
+    "dutchsentence": "Dit is een gedeelde badkamer voor alle studenten.",
+    "englishtranslate": "This is a shared bathroom for all the students."
+  },
+  {
+    "dutch": "minimaal",
+    "english": "minimal/minimum",
+    "vietnamese": "tối thiểu",
+    "dutchsentence": "Je hebt minimaal twee jaar ervaring nodig.",
+    "englishtranslate": "You need a minimum of two years of experience."
+  },
+  {
+    "dutch": "prachtig",
+    "english": "beautiful/magnificent",
+    "vietnamese": "tuyệt đẹp, lộng lẫy",
+    "dutchsentence": "Het uitzicht op de natuur is prachtig.",
+    "englishtranslate": "The view of nature is beautiful."
+  },
+  {
+    "dutch": "rond",
+    "english": "round/around",
+    "vietnamese": "tròn / xung quanh",
+    "dutchsentence": "We lopen rond het huis om de tuin te bekijken.",
+    "englishtranslate": "We walk around the house to look at the garden."
+  },
+  {
+    "dutch": "ruim",
+    "english": "spacious/ample",
+    "vietnamese": "rộng rãi, lớn",
+    "dutchsentence": "De woonkamer is erg ruim, perfect voor een bank.",
+    "englishtranslate": "The living room is very spacious, perfect for a couch."
+  },
+  {
+    "dutch": "rustige",
+    "english": "quiet/peaceful",
+    "vietnamese": "yên tĩnh, thanh bình",
+    "dutchsentence": "We wonen in een rustige buurt buiten de stad.",
+    "englishtranslate": "We live in a quiet neighborhood outside the city."
+  },
+  {
+    "dutch": "vrijstaand",
+    "english": "detached (house)",
+    "vietnamese": "nhà biệt lập",
+    "dutchsentence": "Mijn droomhuis is een groot, vrijstaand huis.",
+    "englishtranslate": "My dream house is a large, detached house."
+  },
+  {
+    "dutch": "weinig",
+    "english": "little/few",
+    "vietnamese": "ít",
+    "dutchsentence": "Er is weinig verkeer in onze straat.",
+    "englishtranslate": "There is little traffic on our street."
+  },
+  {
+    "dutch": "alle",
+    "english": "all/every",
+    "vietnamese": "tất cả, mọi",
+    "dutchsentence": "Ze waren allemaal aanwezig bij de activiteit.",
+    "englishtranslate": "They were all present at the activity."
+  },
+  {
+    "dutch": "binnenkort",
+    "english": "soon/shortly",
+    "vietnamese": "sắp tới, chẳng bao lâu",
+    "dutchsentence": "Hij komt binnenkort bij ons logeren.",
+    "englishtranslate": "He is coming to stay with us soon."
+  },
+  {
+    "dutch": "enzovoort",
+    "english": "and so on/etc.",
+    "vietnamese": "và vân vân, và những thứ khác",
+    "dutchsentence": "We kochten meubels, een bank, stoelen, enzovoort.",
+    "englishtranslate": "We bought furniture, a couch, chairs, and so on."
+  },
+  {
+    "dutch": "extra",
+    "english": "extra",
+    "vietnamese": "thêm, phụ",
+    "dutchsentence": "Heb je een extra kussen voor mij?",
+    "englishtranslate": "Do you have an extra pillow for me?"
+  },
+  {
+    "dutch": "heel",
+    "english": "very/whole/entire",
+    "vietnamese": "rất / toàn bộ",
+    "dutchsentence": "Het is een heel groot huis.",
+    "englishtranslate": "It is a very large house."
+  },
+  {
+    "dutch": "hetzelfde",
+    "english": "the same",
+    "vietnamese": "giống nhau, như nhau",
+    "dutchsentence": "Alle huizen in dit rijtje zijn hetzelfde type.",
+    "englishtranslate": "All the houses in this row are the same type."
+  },
+  {
+    "dutch": "hopelijk",
+    "english": "hopefully",
+    "vietnamese": "hi vọng rằng, mong là",
+    "dutchsentence": "Hopelijk slaag ik voor het examen volgende week.",
+    "englishtranslate": "Hopefully, I will pass the exam next week."
+  },
+  {
+    "dutch": "te huur",
+    "english": "for rent",
+    "vietnamese": "cho thuê",
+    "dutchsentence": "Dit appartement staat te huur vanaf volgende maand.",
+    "englishtranslate": "This apartment is for rent starting next month."
+  },
+  {
+    "dutch": "zelf",
+    "english": "self/myself, yourself, etc.",
+    "vietnamese": "tự (mình)",
+    "dutchsentence": "Ik heb het schilderij zelf gemaakt.",
+    "englishtranslate": "I made the painting myself."
+  }
+]

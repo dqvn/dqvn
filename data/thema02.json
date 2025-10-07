@@ -1,0 +1,961 @@
+[
+  {
+    "dutch": "het aanvraagformulier",
+    "english": "the application form",
+    "vietnamese": "đơn đăng ký, mẫu đơn xin",
+    "dutchsentence": "U moet het aanvraagformulier invullen.",
+    "englishtranslate": "You must fill in the application form."
+  },
+  {
+    "dutch": "het adres - adressen",
+    "english": "the address - addresses",
+    "vietnamese": "địa chỉ - các địa chỉ",
+    "dutchsentence": "Wat is uw huidige adres?",
+    "englishtranslate": "What is your current address?"
+  },
+  {
+    "dutch": "het afhaalbewijs",
+    "english": "the collection slip/receipt",
+    "vietnamese": "phiếu nhận, biên lai lấy hàng",
+    "dutchsentence": "Vergeet het afhaalbewijs niet.",
+    "englishtranslate": "Don't forget the collection slip."
+  },
+  {
+    "dutch": "de auto - auto’s",
+    "english": "the car - cars",
+    "vietnamese": "xe hơi - những chiếc xe hơi",
+    "dutchsentence": "Ik ga met de auto naar mijn werk.",
+    "englishtranslate": "I go to work by car."
+  },
+  {
+    "dutch": "de balie – balies",
+    "english": "the counter - counters / desks",
+    "vietnamese": "quầy, bàn tiếp tân",
+    "dutchsentence": "U kunt zich melden bij de balie.",
+    "englishtranslate": "You can report to the counter/desk."
+  },
+  {
+    "dutch": "het boek - boeken",
+    "english": "the book - books",
+    "vietnamese": "quyển sách - những quyển sách",
+    "dutchsentence": "Dit is een goed boek.",
+    "englishtranslate": "This is a good book."
+  },
+  {
+    "dutch": "de burgerlijke staat",
+    "english": "the marital status",
+    "vietnamese": "tình trạng hôn nhân",
+    "dutchsentence": "Wat is uw burgerlijke staat?",
+    "englishtranslate": "What is your marital status?"
+  },
+  {
+    "dutch": "het burgerservicenummer - burgerservicenummers",
+    "english": "the Citizen Service Number (BSN)",
+    "vietnamese": "Mã số Dịch vụ Công dân (BSN)",
+    "dutchsentence": "U moet uw burgerservicenummer invullen.",
+    "englishtranslate": "You must fill in your Citizen Service Number."
+  },
+  {
+    "dutch": "de buurt - buurten",
+    "english": "the neighborhood - neighborhoods",
+    "vietnamese": "khu phố - các khu phố",
+    "dutchsentence": "Ik woon in een gezellige buurt.",
+    "englishtranslate": "I live in a pleasant neighborhood."
+  },
+  {
+    "dutch": "het centrum - centrums, centra",
+    "english": "the center - centers",
+    "vietnamese": "trung tâm - các trung tâm",
+    "dutchsentence": "De school ligt in het centrum van de stad.",
+    "englishtranslate": "The school is located in the center of the city."
+  },
+  {
+    "dutch": "de cursist - cursisten",
+    "english": "the course participant - participants",
+    "vietnamese": "học viên khóa học - các học viên",
+    "dutchsentence": "De cursisten luisteren naar de docent.",
+    "englishtranslate": "The course participants listen to the teacher."
+  },
+  {
+    "dutch": "het cursusboek - cursusboeken",
+    "english": "the course book - course books",
+    "vietnamese": "sách giáo trình - các sách giáo trình",
+    "dutchsentence": "Heb je je cursusboek bij je?",
+    "englishtranslate": "Do you have your course book with you?"
+  },
+  {
+    "dutch": "de fiets - fietsen",
+    "english": "the bicycle - bicycles",
+    "vietnamese": "xe đạp - những chiếc xe đạp",
+    "dutchsentence": "In Nederland gebruikt men de fiets veel.",
+    "englishtranslate": "In the Netherlands, people use the bicycle a lot."
+  },
+  {
+    "dutch": "het formulier - formulieren",
+    "english": "the form - forms",
+    "vietnamese": "mẫu đơn - các mẫu đơn",
+    "dutchsentence": "Wilt u dit formulier invullen?",
+    "englishtranslate": "Would you fill in this form?"
+  },
+  {
+    "dutch": "de geboortedatum - geboortedatums",
+    "english": "the date of birth - dates of birth",
+    "vietnamese": "ngày sinh - các ngày sinh",
+    "dutchsentence": "Schrijf hier uw geboortedatum.",
+    "englishtranslate": "Write your date of birth here."
+  },
+  {
+    "dutch": "de gemeente - gemeenten",
+    "english": "the municipality - municipalities",
+    "vietnamese": "đô thị, khu tự quản",
+    "dutchsentence": "U moet zich inschrijven bij de gemeente.",
+    "englishtranslate": "You must register with the municipality."
+  },
+  {
+    "dutch": "het getal - getallen",
+    "english": "the number - numbers (digit)",
+    "vietnamese": "con số, chữ số",
+    "dutchsentence": "Het getal 7 is mijn geluksgetal.",
+    "englishtranslate": "The number 7 is my lucky number."
+  },
+  {
+    "dutch": "de handtekening - handtekeningen",
+    "english": "the signature - signatures",
+    "vietnamese": "chữ ký - các chữ ký",
+    "dutchsentence": "Zet uw handtekening onderaan.",
+    "englishtranslate": "Put your signature at the bottom."
+  },
+  {
+    "dutch": "de heer - heren",
+    "english": "the gentleman / Mr. - gentlemen",
+    "vietnamese": "ông, quý ông",
+    "dutchsentence": "Dit is de heer Jansen.",
+    "englishtranslate": "This is Mr. Jansen."
+  },
+  {
+    "dutch": "het huis - huizen",
+    "english": "the house - houses",
+    "vietnamese": "căn nhà - những căn nhà",
+    "dutchsentence": "Mijn huis is niet groot.",
+    "englishtranslate": "My house is not big."
+  },
+  {
+    "dutch": "het huiswerk",
+    "english": "the homework",
+    "vietnamese": "bài tập về nhà",
+    "dutchsentence": "Ik moet veel huiswerk maken.",
+    "englishtranslate": "I have to do a lot of homework."
+  },
+  {
+    "dutch": "de hulp",
+    "english": "the help",
+    "vietnamese": "sự giúp đỡ",
+    "dutchsentence": "Ik heb uw hulp nodig.",
+    "englishtranslate": "I need your help."
+  },
+  {
+    "dutch": "het identiteitsbewijs - identiteitsbewijzen",
+    "english": "the proof of identity - proofs of identity",
+    "vietnamese": "giấy tờ tùy thân",
+    "dutchsentence": "Laat uw identiteitsbewijs zien.",
+    "englishtranslate": "Show your proof of identity."
+  },
+  {
+    "dutch": "de inschrijving - inschrijvingen",
+    "english": "the registration - registrations",
+    "vietnamese": "sự đăng ký - các đăng ký",
+    "dutchsentence": "De inschrijving is nu gesloten.",
+    "englishtranslate": "The registration is now closed."
+  },
+  {
+    "dutch": "de kamer - kamers",
+    "english": "the room - rooms",
+    "vietnamese": "căn phòng - những căn phòng",
+    "dutchsentence": "Ik zoek een kamer in de stad.",
+    "englishtranslate": "I am looking for a room in the city."
+  },
+  {
+    "dutch": "de kantine - kantines",
+    "english": "the canteen - canteens",
+    "vietnamese": "căng tin, nhà ăn",
+    "dutchsentence": "We lunchen in de kantine.",
+    "englishtranslate": "We have lunch in the canteen."
+  },
+  {
+    "dutch": "de keer",
+    "english": "the time (instance)",
+    "vietnamese": "lần, lượt",
+    "dutchsentence": "Ik ben één keer in Amerika geweest.",
+    "englishtranslate": "I have been to America one time."
+  },
+  {
+    "dutch": "de kopie - kopieën",
+    "english": "the copy - copies",
+    "vietnamese": "bản sao - các bản sao",
+    "dutchsentence": "Heeft u een kopie van uw paspoort?",
+    "englishtranslate": "Do you have a copy of your passport?"
+  },
+  {
+    "dutch": "het legitimatiebewijs - legitimatiebewijzen",
+    "english": "the ID / identification - IDs",
+    "vietnamese": "giấy tờ tùy thân",
+    "dutchsentence": "Een paspoort is een legitimatiebewijs.",
+    "englishtranslate": "A passport is an identification document."
+  },
+  {
+    "dutch": "de meneer",
+    "english": "the mister, gentleman",
+    "vietnamese": "ông, ngài",
+    "dutchsentence": "Dag meneer, hoe gaat het?",
+    "englishtranslate": "Hello mister, how are you?"
+  },
+  {
+    "dutch": "de Nederlander",
+    "english": "the Dutchman / Dutch person",
+    "vietnamese": "người Hà Lan",
+    "dutchsentence": "Hij is een Nederlander.",
+    "englishtranslate": "He is a Dutchman."
+  },
+  {
+    "dutch": "het nummer - nummers",
+    "english": "the number - numbers",
+    "vietnamese": "số - các số",
+    "dutchsentence": "Bel dit nummer als u vragen heeft.",
+    "englishtranslate": "Call this number if you have questions."
+  },
+  {
+    "dutch": "het pakketje - pakketjes",
+    "english": "the small package - small packages",
+    "vietnamese": "bưu kiện nhỏ - các bưu kiện nhỏ",
+    "dutchsentence": "Er ligt een pakketje voor u klaar.",
+    "englishtranslate": "There is a small package ready for you."
+  },
+  {
+    "dutch": "het paspoort - paspoorten",
+    "english": "the passport - passports",
+    "vietnamese": "hộ chiếu - các hộ chiếu",
+    "dutchsentence": "Ik heb mijn paspoort nodig.",
+    "englishtranslate": "I need my passport."
+  },
+  {
+    "dutch": "de persoonsgegevens",
+    "english": "the personal data",
+    "vietnamese": "dữ liệu cá nhân, thông tin cá nhân",
+    "dutchsentence": "Uw persoonsgegevens zijn vertrouwelijk.",
+    "englishtranslate": "Your personal data is confidential."
+  },
+  {
+    "dutch": "de postcode - postcodes",
+    "english": "the postcode - postcodes",
+    "vietnamese": "mã bưu điện - các mã bưu điện",
+    "dutchsentence": "Wat is de postcode van dit adres?",
+    "englishtranslate": "What is the postcode of this address?"
+  },
+  {
+    "dutch": "de receptie - recepties",
+    "english": "the reception desk - reception desks",
+    "vietnamese": "quầy tiếp tân",
+    "dutchsentence": "De receptie is op de eerste verdieping.",
+    "englishtranslate": "The reception is on the first floor."
+  },
+  {
+    "dutch": "het rijbewijs - rijbewijzen",
+    "english": "the driving license - driving licenses",
+    "vietnamese": "giấy phép lái xe - các giấy phép lái xe",
+    "dutchsentence": "Ik moet mijn rijbewijs verlengen.",
+    "englishtranslate": "I have to renew my driving license."
+  },
+  {
+    "dutch": "de school - scholen",
+    "english": "the school - schools",
+    "vietnamese": "trường học - các trường học",
+    "dutchsentence": "Mijn kinderen gaan naar school.",
+    "englishtranslate": "My children go to school."
+  },
+  {
+    "dutch": "het telefoonnummer - telefoonnummers",
+    "english": "the telephone number - telephone numbers",
+    "vietnamese": "số điện thoại - các số điện thoại",
+    "dutchsentence": "Wat is uw telefoonnummer?",
+    "englishtranslate": "What is your telephone number?"
+  },
+  {
+    "dutch": "de tijd - tijden",
+    "english": "the time - times (period)",
+    "vietnamese": "thời gian - các thời điểm",
+    "dutchsentence": "Ik heb geen tijd nu.",
+    "englishtranslate": "I don't have time now."
+  },
+  {
+    "dutch": "het uur - uren",
+    "english": "the hour - hours",
+    "vietnamese": "giờ - các giờ",
+    "dutchsentence": "De les duurt twee uur.",
+    "englishtranslate": "The lesson lasts two hours."
+  },
+  {
+    "dutch": "de vriend - vrienden",
+    "english": "the friend - friends (male or mixed)",
+    "vietnamese": "người bạn - những người bạn",
+    "dutchsentence": "Hij is mijn beste vriend.",
+    "englishtranslate": "He is my best friend."
+  },
+  {
+    "dutch": "de woonplaats - woonplaatsen",
+    "english": "the place of residence - places of residence",
+    "vietnamese": "nơi cư trú - các nơi cư trú",
+    "dutchsentence": "Mijn woonplaats is Utrecht.",
+    "englishtranslate": "My place of residence is Utrecht."
+  },
+  {
+    "dutch": "de week - weken",
+    "english": "the week - weeks",
+    "vietnamese": "tuần - các tuần",
+    "dutchsentence": "Ik werk vijf dagen in de week.",
+    "englishtranslate": "I work five days a week."
+  },
+  {
+    "dutch": "de zaterdag - zaterdagen",
+    "english": "the Saturday - Saturdays",
+    "vietnamese": "thứ Bảy - các ngày thứ Bảy",
+    "dutchsentence": "Op zaterdag ben ik vrij.",
+    "englishtranslate": "On Saturday I am free."
+  },
+  {
+    "dutch": "De zaterdagmiddag - zaterdagmiddagen",
+    "english": "the Saturday afternoon - Saturday afternoons",
+    "vietnamese": "chiều thứ Bảy - các chiều thứ Bảy",
+    "dutchsentence": "We gaan winkelen op zaterdagmiddag.",
+    "englishtranslate": "We are going shopping on Saturday afternoon."
+  },
+  {
+    "dutch": "afhalen",
+    "english": "to collect, to pick up",
+    "vietnamese": "lấy, nhận, đến lấy",
+    "dutchsentence": "U kunt het pakketje morgen afhalen.",
+    "englishtranslate": "You can collect the package tomorrow."
+  },
+  {
+    "dutch": "begrijp - begrijpen",
+    "english": "understand - to understand",
+    "vietnamese": "hiểu - để hiểu",
+    "dutchsentence": "Ik begrijp de vraag niet.",
+    "englishtranslate": "I don't understand the question."
+  },
+  {
+    "dutch": "brengen",
+    "english": "to bring, to take (to a place)",
+    "vietnamese": "mang đến, đưa đến",
+    "dutchsentence": "Ik zal het boek naar de balie brengen.",
+    "englishtranslate": "I will bring the book to the counter."
+  },
+  {
+    "dutch": "de bus nemen",
+    "english": "to take the bus",
+    "vietnamese": "đi xe buýt",
+    "dutchsentence": "Ik moet de bus nemen om op school te komen.",
+    "englishtranslate": "I have to take the bus to get to school."
+  },
+  {
+    "dutch": "drinken",
+    "english": "to drink",
+    "vietnamese": "uống",
+    "dutchsentence": "Wat wilt u drinken?",
+    "englishtranslate": "What would you like to drink?"
+  },
+  {
+    "dutch": "doen",
+    "english": "to do",
+    "vietnamese": "làm",
+    "dutchsentence": "Wat gaat u vandaag doen?",
+    "englishtranslate": "What are you going to do today?"
+  },
+  {
+    "dutch": "fietsen",
+    "english": "to cycle, to bike",
+    "vietnamese": "đạp xe",
+    "dutchsentence": "Ik fiets elke dag naar mijn werk.",
+    "englishtranslate": "I cycle to work every day."
+  },
+  {
+    "dutch": "ga - gaan",
+    "english": "go - to go",
+    "vietnamese": "đi - để đi",
+    "dutchsentence": "Waar ga je heen?",
+    "englishtranslate": "Where are you going?"
+  },
+  {
+    "dutch": "gedaan - doen",
+    "english": "done - to do (past participle and infinitive)",
+    "vietnamese": "đã làm - để làm",
+    "dutchsentence": "Ik heb mijn huiswerk gedaan.",
+    "englishtranslate": "I have done my homework."
+  },
+  {
+    "dutch": "hebben",
+    "english": "to have",
+    "vietnamese": "có",
+    "dutchsentence": "Wij hebben tijd.",
+    "englishtranslate": "We have time."
+  },
+  {
+    "dutch": "hebt - hebben",
+    "english": "have (you informal) - to have",
+    "vietnamese": "có (bạn thân mật) - để có",
+    "dutchsentence": "Jij hebt een nieuwe fiets.",
+    "englishtranslate": "You have a new bicycle."
+  },
+  {
+    "dutch": "huiswerk maken",
+    "english": "to do homework",
+    "vietnamese": "làm bài tập về nhà",
+    "dutchsentence": "De kinderen moeten huiswerk maken.",
+    "englishtranslate": "The children have to do homework."
+  },
+  {
+    "dutch": "ingevuld - invullen",
+    "english": "filled in - to fill in (past participle and infinitive)",
+    "vietnamese": "đã điền - để điền vào",
+    "dutchsentence": "Heeft u het formulier ingevuld?",
+    "englishtranslate": "Have you filled in the form?"
+  },
+  {
+    "dutch": "invullen",
+    "english": "to fill in",
+    "vietnamese": "điền vào",
+    "dutchsentence": "U moet uw naam invullen.",
+    "englishtranslate": "You must fill in your name."
+  },
+  {
+    "dutch": "zich inschrijven",
+    "english": "to register (oneself)",
+    "vietnamese": "đăng ký (cho bản thân)",
+    "dutchsentence": "Ik wil mij inschrijven voor de cursus.",
+    "englishtranslate": "I want to register for the course."
+  },
+  {
+    "dutch": "kan - kunnen",
+    "english": "can - to be able to",
+    "vietnamese": "có thể - để có thể",
+    "dutchsentence": "Ik kan goed Nederlands spreken.",
+    "englishtranslate": "I can speak Dutch well."
+  },
+  {
+    "dutch": "kijken",
+    "english": "to look, to watch",
+    "vietnamese": "nhìn, xem",
+    "dutchsentence": "Kijk naar de balie.",
+    "englishtranslate": "Look at the counter."
+  },
+  {
+    "dutch": "krijgt - krijgen",
+    "english": "gets - to get, to receive",
+    "vietnamese": "nhận được - để nhận",
+    "dutchsentence": "Hij krijgt morgen zijn paspoort.",
+    "englishtranslate": "He gets his passport tomorrow."
+  },
+  {
+    "dutch": "kunnen",
+    "english": "can, to be able to",
+    "vietnamese": "có thể",
+    "dutchsentence": "Kunnen wij dit hier afhalen?",
+    "englishtranslate": "Can we pick this up here?"
+  },
+  {
+    "dutch": "ligt - liggen",
+    "english": "lies - to lie, to be located",
+    "vietnamese": "nằm - để nằm, tọa lạc",
+    "dutchsentence": "Het boek ligt op tafel.",
+    "englishtranslate": "The book is lying on the table."
+  },
+  {
+    "dutch": "luisteren",
+    "english": "to listen",
+    "vietnamese": "nghe, lắng nghe",
+    "dutchsentence": "Luister naar de instructies.",
+    "englishtranslate": "Listen to the instructions."
+  },
+  {
+    "dutch": "lunchen",
+    "english": "to have lunch",
+    "vietnamese": "ăn trưa",
+    "dutchsentence": "We gaan om twaalf uur lunchen.",
+    "englishtranslate": "We are going to have lunch at twelve o'clock."
+  },
+  {
+    "dutch": "maken",
+    "english": "to make, to do (e.g., homework)",
+    "vietnamese": "làm, tạo ra",
+    "dutchsentence": "Ik moet een kopie maken van het paspoort.",
+    "englishtranslate": "I have to make a copy of the passport."
+  },
+  {
+    "dutch": "moet - moeten",
+    "english": "must - to must, to have to",
+    "vietnamese": "phải - để phải",
+    "dutchsentence": "U moet hier wachten.",
+    "englishtranslate": "You must wait here."
+  },
+  {
+    "dutch": "muziek luisteren",
+    "english": "to listen to music",
+    "vietnamese": "nghe nhạc",
+    "dutchsentence": "Ik luister graag naar muziek.",
+    "englishtranslate": "I like to listen to music."
+  },
+  {
+    "dutch": "nodig hebben",
+    "english": "to need",
+    "vietnamese": "cần",
+    "dutchsentence": "Ik heb een nieuwe pen nodig.",
+    "englishtranslate": "I need a new pen."
+  },
+  {
+    "dutch": "noteer - noteren",
+    "english": "note down - to note down",
+    "vietnamese": "ghi chú - để ghi chú",
+    "dutchsentence": "Noteer het nummer in uw boek.",
+    "englishtranslate": "Note down the number in your book."
+  },
+  {
+    "dutch": "noteren",
+    "english": "to note down",
+    "vietnamese": "ghi chú",
+    "dutchsentence": "Kunt u dit adres noteren?",
+    "englishtranslate": "Can you note down this address?"
+  },
+  {
+    "dutch": "oefenen",
+    "english": "to practice",
+    "vietnamese": "luyện tập",
+    "dutchsentence": "We gaan oefenen met de dialoog.",
+    "englishtranslate": "We are going to practice with the dialogue."
+  },
+  {
+    "dutch": "ontbijten",
+    "english": "to have breakfast",
+    "vietnamese": "ăn sáng",
+    "dutchsentence": "Ik ontbijt altijd om 7 uur.",
+    "englishtranslate": "I always have breakfast at 7 o'clock."
+  },
+  {
+    "dutch": "pakt - pakken",
+    "english": "takes/grabs - to take/grab",
+    "vietnamese": "lấy, nắm - để lấy, để nắm",
+    "dutchsentence": "Hij pakt de sleutels uit zijn tas.",
+    "englishtranslate": "He takes the keys out of his bag."
+  },
+  {
+    "dutch": "slapen",
+    "english": "to sleep",
+    "vietnamese": "ngủ",
+    "dutchsentence": "Ik ga vroeg slapen.",
+    "englishtranslate": "I go to sleep early."
+  },
+  {
+    "dutch": "sporten",
+    "english": "to exercise, to do sports",
+    "vietnamese": "tập thể thao",
+    "dutchsentence": "Ik sport twee keer per week.",
+    "englishtranslate": "I exercise twice a week."
+  },
+  {
+    "dutch": "spreken",
+    "english": "to speak",
+    "vietnamese": "nói",
+    "dutchsentence": "De docent kan vier talen spreken.",
+    "englishtranslate": "The teacher can speak four languages."
+  },
+  {
+    "dutch": "tanden poetsen",
+    "english": "to brush teeth",
+    "vietnamese": "đánh răng",
+    "dutchsentence": "Je moet je tanden poetsen voor het slapen.",
+    "englishtranslate": "You must brush your teeth before sleeping."
+  },
+  {
+    "dutch": "televisie kijken",
+    "english": "to watch television",
+    "vietnamese": "xem ti vi",
+    "dutchsentence": "Zij kijkt graag televisie in de avond.",
+    "englishtranslate": "She likes to watch television in the evening."
+  },
+  {
+    "dutch": "terugkomen",
+    "english": "to come back, to return",
+    "vietnamese": "quay lại, trở về",
+    "dutchsentence": "Wanneer komt u terug?",
+    "englishtranslate": "When are you coming back?"
+  },
+  {
+    "dutch": "versturen",
+    "english": "to send, to dispatch",
+    "vietnamese": "gửi đi",
+    "dutchsentence": "Ik moet een pakketje versturen.",
+    "englishtranslate": "I have to send a small package."
+  },
+  {
+    "dutch": "wachten",
+    "english": "to wait",
+    "vietnamese": "chờ đợi",
+    "dutchsentence": "U moet even wachten bij de receptie.",
+    "englishtranslate": "You must wait a moment at the reception."
+  },
+  {
+    "dutch": "werken",
+    "english": "to work",
+    "vietnamese": "làm việc",
+    "dutchsentence": "Hij werkt in een fabriek.",
+    "englishtranslate": "He works in a factory."
+  },
+  {
+    "dutch": "zeg - zeggen",
+    "english": "say - to say",
+    "vietnamese": "nói - để nói",
+    "dutchsentence": "Zegt u dat nog eens?",
+    "englishtranslate": "Could you say that again?"
+  },
+  {
+    "dutch": "zetten",
+    "english": "to put, to set",
+    "vietnamese": "đặt, để",
+    "dutchsentence": "Zet het glas op tafel.",
+    "englishtranslate": "Put the glass on the table."
+  },
+  {
+    "dutch": "zien",
+    "english": "to see",
+    "vietnamese": "thấy, nhìn",
+    "dutchsentence": "Ik zie je morgen.",
+    "englishtranslate": "I will see you tomorrow."
+  },
+  {
+    "dutch": "bij",
+    "english": "at, near, with",
+    "vietnamese": "ở, gần, cùng với",
+    "dutchsentence": "Ik woon bij mijn ouders.",
+    "englishtranslate": "I live with my parents."
+  },
+  {
+    "dutch": "binnen",
+    "english": "inside, within",
+    "vietnamese": "bên trong, trong vòng",
+    "dutchsentence": "Het pakketje is binnen een week klaar.",
+    "englishtranslate": "The package will be ready within a week."
+  },
+  {
+    "dutch": "in",
+    "english": "in, into",
+    "vietnamese": "trong, vào",
+    "dutchsentence": "Ik woon in Utrecht.",
+    "englishtranslate": "I live in Utrecht."
+  },
+  {
+    "dutch": "om",
+    "english": "around, at (time)",
+    "vietnamese": "khoảng, vào lúc",
+    "dutchsentence": "De les begint om negen uur.",
+    "englishtranslate": "The lesson starts at nine o'clock."
+  },
+  {
+    "dutch": "op",
+    "english": "on, at",
+    "vietnamese": "trên, tại",
+    "dutchsentence": "Mijn telefoon ligt op de balie.",
+    "englishtranslate": "My phone is on the counter."
+  },
+  {
+    "dutch": "voor",
+    "english": "for, before",
+    "vietnamese": "cho, trước",
+    "dutchsentence": "Dit cadeau is voor jou.",
+    "englishtranslate": "This present is for you."
+  },
+  {
+    "dutch": "alstublieft",
+    "english": "please / here you are (formal)",
+    "vietnamese": "xin vui lòng / của quý vị đây (lịch sự)",
+    "dutchsentence": "Wilt u mij helpen, alstublieft?",
+    "englishtranslate": "Would you help me, please?"
+  },
+  {
+    "dutch": "bedankt",
+    "english": "thanks",
+    "vietnamese": "cảm ơn",
+    "dutchsentence": "Bedankt voor uw hulp!",
+    "englishtranslate": "Thanks for your help!"
+  },
+  {
+    "dutch": "goedemiddag",
+    "english": "good afternoon",
+    "vietnamese": "chào buổi chiều",
+    "dutchsentence": "Goedemiddag! Wat kan ik voor u doen?",
+    "englishtranslate": "Good afternoon! What can I do for you?"
+  },
+  {
+    "dutch": "momentje",
+    "english": "just a moment",
+    "vietnamese": "chờ một lát",
+    "dutchsentence": "Een momentje, ik zoek het even op.",
+    "englishtranslate": "Just a moment, I will look it up quickly."
+  },
+  {
+    "dutch": "ziens (tot ziens)",
+    "english": "goodbye (see you)",
+    "vietnamese": "tạm biệt, hẹn gặp lại",
+    "dutchsentence": "Tot ziens, fijne dag!",
+    "englishtranslate": "Goodbye, have a nice day!"
+  },
+  {
+    "dutch": "Haar",
+    "english": "her (possessive)",
+    "vietnamese": "của cô ấy",
+    "dutchsentence": "Dat is haar tas.",
+    "englishtranslate": "That is her bag."
+  },
+  {
+    "dutch": "hun",
+    "english": "their (possessive) / them (object)",
+    "vietnamese": "của họ / họ (tân ngữ)",
+    "dutchsentence": "Dit is hun huis.",
+    "englishtranslate": "This is their house."
+  },
+  {
+    "dutch": "jouw",
+    "english": "your (possessive, informal singular)",
+    "vietnamese": "của bạn (thân mật, số ít)",
+    "dutchsentence": "Is dit jouw boek?",
+    "englishtranslate": "Is this your book?"
+  },
+  {
+    "dutch": "jullie",
+    "english": "your (possessive, informal plural) / you (plural)",
+    "vietnamese": "của các bạn / các bạn",
+    "dutchsentence": "Dat is jullie auto.",
+    "englishtranslate": "That is your (plural) car."
+  },
+  {
+    "dutch": "mijn",
+    "english": "my",
+    "vietnamese": "của tôi",
+    "dutchsentence": "Mijn paspoort is geldig.",
+    "englishtranslate": "My passport is valid."
+  },
+  {
+    "dutch": "ons",
+    "english": "our (possessive, 'het' word) / us (object)",
+    "vietnamese": "của chúng tôi ('het') / chúng tôi (tân ngữ)",
+    "dutchsentence": "Dat is ons huis.",
+    "englishtranslate": "That is our house."
+  },
+  {
+    "dutch": "onze",
+    "english": "our (possessive, 'de' word or plural)",
+    "vietnamese": "của chúng tôi ('de' hoặc số nhiều)",
+    "dutchsentence": "Dit zijn onze boeken.",
+    "englishtranslate": "These are our books."
+  },
+  {
+    "dutch": "uw",
+    "english": "your (possessive, formal singular/plural)",
+    "vietnamese": "của quý vị (lịch sự)",
+    "dutchsentence": "Wat is uw telefoonnummer?",
+    "englishtranslate": "What is your telephone number?"
+  },
+  {
+    "dutch": "zijn",
+    "english": "his (possessive)",
+    "vietnamese": "của anh ấy",
+    "dutchsentence": "Dit is zijn rijbewijs.",
+    "englishtranslate": "This is his driving license."
+  },
+  {
+    "dutch": "alleenstaand",
+    "english": "single (marital status)",
+    "vietnamese": "độc thân",
+    "dutchsentence": "Mijn burgerlijke staat is alleenstaand.",
+    "englishtranslate": "My marital status is single."
+  },
+  {
+    "dutch": "alvast",
+    "english": "already / in advance",
+    "vietnamese": "rồi, trước",
+    "dutchsentence": "Alvast bedankt voor de hulp.",
+    "englishtranslate": "Thanks in advance for the help."
+  },
+  {
+    "dutch": "blij",
+    "english": "happy, glad",
+    "vietnamese": "vui, mừng",
+    "dutchsentence": "Ik ben blij dat je er bent.",
+    "englishtranslate": "I am happy that you are here."
+  },
+  {
+    "dutch": "dan",
+    "english": "then",
+    "vietnamese": "sau đó, thế thì",
+    "dutchsentence": "Eerst lunchen, en dan werken.",
+    "englishtranslate": "First lunch, and then work."
+  },
+  {
+    "dutch": "dus",
+    "english": "so, therefore",
+    "vietnamese": "vì vậy, do đó",
+    "dutchsentence": "Ik ben ziek, dus ik ga niet.",
+    "englishtranslate": "I am sick, so I am not going."
+  },
+  {
+    "dutch": "een",
+    "english": "a, an / one",
+    "vietnamese": "một",
+    "dutchsentence": "Ik heb een auto nodig.",
+    "englishtranslate": "I need a car."
+  },
+  {
+    "dutch": "eerst",
+    "english": "first",
+    "vietnamese": "trước tiên, đầu tiên",
+    "dutchsentence": "U moet eerst dit formulier invullen.",
+    "englishtranslate": "You must first fill in this form."
+  },
+  {
+    "dutch": "even",
+    "english": "just (for a short time), a moment",
+    "vietnamese": "một lát, một chút",
+    "dutchsentence": "Kunt u even wachten?",
+    "englishtranslate": "Can you wait for a moment?"
+  },
+  {
+    "dutch": "gehuwd",
+    "english": "married (marital status)",
+    "vietnamese": "đã kết hôn",
+    "dutchsentence": "Op het formulier staat 'gehuwd'.",
+    "englishtranslate": "It says 'married' on the form."
+  },
+  {
+    "dutch": "geldig",
+    "english": " valid",
+    "vietnamese": "có giá trị",
+    "dutchsentence": "Is uw paspoort nog geldig?",
+    "englishtranslate": "Is your passport still valid?"
+  },
+  {
+    "dutch": "getrouwd",
+    "english": "married",
+    "vietnamese": "đã kết hôn",
+    "dutchsentence": "Zij zijn al tien jaar getrouwd.",
+    "englishtranslate": "They have been married for ten years already."
+  },
+  {
+    "dutch": "graag",
+    "english": "with pleasure, gladly",
+    "vietnamese": "vui lòng, rất muốn",
+    "dutchsentence": "Ik wil graag een kopie van mijn paspoort.",
+    "englishtranslate": "I would like a copy of my passport."
+  },
+  {
+    "dutch": "hier",
+    "english": "here",
+    "vietnamese": "ở đây",
+    "dutchsentence": "Zet uw handtekening hier.",
+    "englishtranslate": "Put your signature here."
+  },
+  {
+    "dutch": "makkelijk",
+    "english": "easy",
+    "vietnamese": "dễ dàng",
+    "dutchsentence": "Dit is een makkelijke oefening.",
+    "englishtranslate": "This is an easy exercise."
+  },
+  {
+    "dutch": "meer",
+    "english": "more",
+    "vietnamese": "hơn, nữa",
+    "dutchsentence": "Wilt u meer koffie?",
+    "englishtranslate": "Would you like more coffee?"
+  },
+  {
+    "dutch": "mobiele",
+    "english": "mobile",
+    "vietnamese": "di động",
+    "dutchsentence": "Wat is uw mobiele nummer?",
+    "englishtranslate": "What is your mobile number?"
+  },
+  {
+    "dutch": "moeilijk",
+    "english": "difficult",
+    "vietnamese": "khó",
+    "dutchsentence": "De Nederlandse taal is soms moeilijk.",
+    "englishtranslate": "The Dutch language is sometimes difficult."
+  },
+  {
+    "dutch": "nieuwe",
+    "english": "new",
+    "vietnamese": "mới",
+    "dutchsentence": "Ik heb een nieuwe telefoon.",
+    "englishtranslate": "I have a new phone."
+  },
+  {
+    "dutch": "ons (pronoun)",
+    "english": "us (object)",
+    "vietnamese": "chúng tôi (tân ngữ)",
+    "dutchsentence": "De docent helpt ons.",
+    "englishtranslate": "The teacher helps us."
+  },
+  {
+    "dutch": "orde",
+    "english": "order (in good shape)",
+    "vietnamese": "trật tự, ngăn nắp",
+    "dutchsentence": "Alles is in orde.",
+    "englishtranslate": "Everything is in order (fine)."
+  },
+  {
+    "dutch": "persoonlijke",
+    "english": "personal",
+    "vietnamese": "cá nhân",
+    "dutchsentence": "Dit zijn persoonlijke gegevens.",
+    "englishtranslate": "This is personal data."
+  },
+  {
+    "dutch": "samenwonend",
+    "english": "cohabiting (living together, not married)",
+    "vietnamese": "sống chung (không kết hôn)",
+    "dutchsentence": "Zijn burgerlijke staat is 'samenwonend'.",
+    "englishtranslate": "His marital status is 'cohabiting'."
+  },
+  {
+    "dutch": "slecht",
+    "english": "bad",
+    "vietnamese": "tệ, xấu",
+    "dutchsentence": "Ik voel me slecht vandaag.",
+    "englishtranslate": "I feel bad today."
+  },
+  {
+    "dutch": "thuis",
+    "english": "home (at home)",
+    "vietnamese": "ở nhà",
+    "dutchsentence": "Ik werk vandaag thuis.",
+    "englishtranslate": "I work from home today."
+  },
+  {
+    "dutch": "vanavond",
+    "english": "tonight",
+    "vietnamese": "tối nay",
+    "dutchsentence": "Wat gaan we vanavond eten?",
+    "englishtranslate": "What are we going to eat tonight?"
+  },
+  {
+    "dutch": "veel",
+    "english": "much, many, a lot",
+    "vietnamese": "nhiều",
+    "dutchsentence": "Ik heb veel boeken.",
+    "englishtranslate": "I have many books."
+  },
+  {
+    "dutch": "wanneer",
+    "english": "when",
+    "vietnamese": "khi nào",
+    "dutchsentence": "Wanneer begint de les?",
+    "englishtranslate": "When does the lesson begin?"
+  }
+]

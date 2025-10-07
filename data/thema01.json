@@ -1,31 +1,828 @@
 [
-  {"dutch": "waar","english": "where","vietnamese": "ở đâu","dutch_sentence": "Waar woon jij?","english_translate": "Where do you live?"},
-  {"dutch": "wat","english": "what","vietnamese": "cái gì","dutch_sentence": "Wat is dat?","english_translate": "What is that?"},
-  {"dutch": "welk","english": "what","vietnamese": "cái nào","dutch_sentence": "Welk boek lees je?","english_translate": "Which book are you reading?"},
-  {"dutch": "welke","english": "which","vietnamese": "cái nào","dutch_sentence": "Welke kleur wil je?","english_translate": "Which color do you want?"},
-  {"dutch": "wie","english": "who","vietnamese": "ai","dutch_sentence": "Wie is dat?","english_translate": "Who is that?"},
-  {"dutch": "hoe","english": "how","vietnamese": "như thế nào","dutch_sentence": "Hoe gaat het?","english_translate": "How are you?"},
-  {"dutch": "de bus","english": "bus","vietnamese": "xe buýt","dutch_sentence": "Ik neem de bus naar school.","english_translate": "I take the bus to school."},
-  {"dutch": "de computer","english": "computer","vietnamese": "máy tính","dutch_sentence": "De computer is nieuw.","english_translate": "The computer is new."},
-  {"dutch": "de foto","english": "photo","vietnamese": "ảnh","dutch_sentence": "Ik maak een foto van jou.","english_translate": "I take a photo of you."},
-  {"dutch": "de koffie","english": "coffee","vietnamese": "cà phê","dutch_sentence": "Ik drink koffie in de ochtend.","english_translate": "I drink coffee in the morning."},
-  {"dutch": "het land","english": "country","vietnamese": "quốc gia","dutch_sentence": "Nederland is een mooi land.","english_translate": "The Netherlands is a beautiful country."},
-  {"dutch": "de plaats","english": "place (town/city)","vietnamese": "nơi","dutch_sentence": "Welke plaats woon je?","english_translate": "Which place do you live in?"},
-  {"dutch": "de straat","english": "street","vietnamese": "đường phố","dutch_sentence": "Ik woon in deze straat.","english_translate": "I live on this street."},
-  {"dutch": "de thee","english": "tea","vietnamese": "trà","dutch_sentence": "Wil je thee drinken?","english_translate": "Do you want to drink tea?"},
-  {"dutch": "de naam","english": "name","vietnamese": "tên","dutch_sentence": "Wat is jouw naam?","english_translate": "What is your name?"},
-  {"dutch": "de voornaam","english": "first name","vietnamese": "tên gọi","dutch_sentence": "Mijn voornaam is Anna.","english_translate": "My first name is Anna."},
-  {"dutch": "de achternaam","english": "surname","vietnamese": "họ","dutch_sentence": "Wat is je achternaam?","english_translate": "What is your surname?"},
-  {"dutch": "de vraag","english": "question","vietnamese": "câu hỏi","dutch_sentence": "Ik heb een vraag voor jou.","english_translate": "I have a question for you."},
-  {"dutch": "het antwoord","english": "answer","vietnamese": "câu trả lời","dutch_sentence": "Wat is het antwoord?","english_translate": "What is the answer?"},
-  {"dutch": "de cursus","english": "course","vietnamese": "khóa học","dutch_sentence": "Ik volg een Nederlandse cursus.","english_translate": "I am taking a Dutch course."},
-  {"dutch": "de dag","english": "day","vietnamese": "ngày","dutch_sentence": "Vandaag is een mooie dag.","english_translate": "Today is a beautiful day."},
-  {"dutch": "de dialoog","english": "dialogue","vietnamese": "cuộc đối thoại","dutch_sentence": "Lees de dialoog in het boek.","english_translate": "Read the dialogue in the book."},
-  {"dutch": "de informatie","english": "information","vietnamese": "thông tin","dutch_sentence": "Ik heb informatie nodig.","english_translate": "I need information."},
-  {"dutch": "de oefening","english": "exercise","vietnamese": "bài tập","dutch_sentence": "Maak de oefening op pagina 10.","english_translate": "Do the exercise on page 10."},
-  {"dutch": "de pauze","english": "break","vietnamese": "giờ nghỉ","dutch_sentence": "We hebben pauze om 10 uur.","english_translate": "We have a break at 10 o'clock."},
-  {"dutch": "het probleem","english": "problem","vietnamese": "vấn đề","dutch_sentence": "Ik heb een probleem met mijn computer.","english_translate": "I have a problem with my computer."},
-  {"dutch": "het werk","english": "work","vietnamese": "công việc","dutch_sentence": "Ik ga naar mijn werk.","english_translate": "I am going to my work."},
-  {"dutch": "het woord","english": "word","vietnamese": "từ","dutch_sentence": "Wat betekent dit woord?","english_translate": "What does this word mean?"},
-  {"dutch": "het Nederlands","english": "Dutch","vietnamese": "tiếng Hà Lan","dutch_sentence": "Ik leer Nederlands.","english_translate": "I am learning Dutch."}
+  {
+    "dutch": "waar",
+    "english": "where",
+    "vietnamese": "ở đâu, chỗ nào",
+    "dutchsentence": "Waar is het station?",
+    "englishtranslate": "Where is the station?"
+  },
+  {
+    "dutch": "wat",
+    "english": "what",
+    "vietnamese": "cái gì, điều gì",
+    "dutchsentence": "Wat is uw naam?",
+    "englishtranslate": "What is your name?"
+  },
+  {
+    "dutch": "welk",
+    "english": "which (for 'het' words)",
+    "vietnamese": "nào, cái nào (dùng cho 'het')",
+    "dutchsentence": "Welk boek is van jou?",
+    "englishtranslate": "Which book is yours?"
+  },
+  {
+    "dutch": "welke",
+    "english": "which (for 'de' words and plural)",
+    "vietnamese": "nào, cái nào (dùng cho 'de' và số nhiều)",
+    "dutchsentence": "Welke taal spreekt u?",
+    "englishtranslate": "Which language do you speak?"
+  },
+  {
+    "dutch": "wie",
+    "english": "who",
+    "vietnamese": "ai",
+    "dutchsentence": "Wie is die man?",
+    "englishtranslate": "Who is that man?"
+  },
+  {
+    "dutch": "hoe",
+    "english": "how",
+    "vietnamese": "làm sao, như thế nào",
+    "dutchsentence": "Hoe gaat het?",
+    "englishtranslate": "How are you?"
+  },
+  {
+    "dutch": "de bus - bussen",
+    "english": "the bus - buses",
+    "vietnamese": "xe buýt - những chiếc xe buýt",
+    "dutchsentence": "De bus komt zo.",
+    "englishtranslate": "The bus is coming soon."
+  },
+  {
+    "dutch": "de computer - computers",
+    "english": "the computer - computers",
+    "vietnamese": "máy tính - những chiếc máy tính",
+    "dutchsentence": "Ik heb een nieuwe computer.",
+    "englishtranslate": "I have a new computer."
+  },
+  {
+    "dutch": "de foto - foto’s",
+    "english": "the photo - photos",
+    "vietnamese": "ảnh - những bức ảnh",
+    "dutchsentence": "Kijk, hier is een foto van mijn familie.",
+    "englishtranslate": "Look, here is a photo of my family."
+  },
+  {
+    "dutch": "de koffie",
+    "english": "the coffee",
+    "vietnamese": "cà phê",
+    "dutchsentence": "Wilt u een kopje koffie?",
+    "englishtranslate": "Would you like a cup of coffee?"
+  },
+  {
+    "dutch": "het land - landen",
+    "english": "the country - countries",
+    "vietnamese": "đất nước - các quốc gia",
+    "dutchsentence": "Nederland is een mooi land.",
+    "englishtranslate": "The Netherlands is a beautiful country."
+  },
+  {
+    "dutch": "de plaats - plaatsen",
+    "english": "the place / town - places / towns",
+    "vietnamese": "địa điểm / thị trấn - các địa điểm / thị trấn",
+    "dutchsentence": "Wat is uw woonplaats?",
+    "englishtranslate": "What is your place of residence (town)?"
+  },
+  {
+    "dutch": "de straat - straten",
+    "english": "the street - streets",
+    "vietnamese": "đường phố - những con đường",
+    "dutchsentence": "Mijn huis is in deze straat.",
+    "englishtranslate": "My house is on this street."
+  },
+  {
+    "dutch": "de thee",
+    "english": "the tea",
+    "vietnamese": "trà",
+    "dutchsentence": "Ik drink liever thee dan koffie.",
+    "englishtranslate": "I prefer to drink tea rather than coffee."
+  },
+  {
+    "dutch": "de naam - namen",
+    "english": "the name - names",
+    "vietnamese": "tên - các tên",
+    "dutchsentence": "Wat is uw volledige naam?",
+    "englishtranslate": "What is your full name?"
+  },
+  {
+    "dutch": "de voornaam - voornamen",
+    "english": "the first name - first names",
+    "vietnamese": "tên riêng - các tên riêng",
+    "dutchsentence": "Mijn voornaam is Jan.",
+    "englishtranslate": "My first name is Jan."
+  },
+  {
+    "dutch": "de achternaam - achternamen",
+    "english": "the surname - surnames",
+    "vietnamese": "họ - các họ",
+    "dutchsentence": "Schrijf hier uw achternaam.",
+    "englishtranslate": "Write your surname here."
+  },
+  {
+    "dutch": "de vraag - vragen",
+    "english": "the question - questions",
+    "vietnamese": "câu hỏi - những câu hỏi",
+    "dutchsentence": "Heeft u een vraag?",
+    "englishtranslate": "Do you have a question?"
+  },
+  {
+    "dutch": "het antwoord - antwoorden",
+    "english": "the answer - answers",
+    "vietnamese": "câu trả lời - các câu trả lời",
+    "dutchsentence": "Ik weet het antwoord niet.",
+    "englishtranslate": "I don't know the answer."
+  },
+  {
+    "dutch": "de cursus - cursussen",
+    "english": "the course - courses",
+    "vietnamese": "khóa học - các khóa học",
+    "dutchsentence": "Ik volg een cursus Nederlands.",
+    "englishtranslate": "I am taking a Dutch course."
+  },
+  {
+    "dutch": "de dag - dagen",
+    "english": "the day - days",
+    "vietnamese": "ngày - những ngày",
+    "dutchsentence": "Vandaag is een mooie dag.",
+    "englishtranslate": "Today is a beautiful day."
+  },
+  {
+    "dutch": "de dialoog - dialogen",
+    "english": "the dialogue - dialogues",
+    "vietnamese": "cuộc đối thoại - các cuộc đối thoại",
+    "dutchsentence": "Lees de dialoog in het boek.",
+    "englishtranslate": "Read the dialogue in the book."
+  },
+  {
+    "dutch": "de informatie",
+    "english": "the information",
+    "vietnamese": "thông tin",
+    "dutchsentence": "Waar kan ik informatie vinden?",
+    "englishtranslate": "Where can I find information?"
+  },
+  {
+    "dutch": "de oefening - oefeningen",
+    "english": "the exercise - exercises",
+    "vietnamese": "bài tập - các bài tập",
+    "dutchsentence": "Maak oefening drie af.",
+    "englishtranslate": "Finish exercise three."
+  },
+  {
+    "dutch": "de pauze - pauzes",
+    "english": "the break - breaks",
+    "vietnamese": "giờ nghỉ - các giờ nghỉ",
+    "dutchsentence": "We hebben nu een korte pauze.",
+    "englishtranslate": "We have a short break now."
+  },
+  {
+    "dutch": "het probleem - problemen",
+    "english": "the problem - problems",
+    "vietnamese": "vấn đề - các vấn đề",
+    "dutchsentence": "Dat is geen probleem.",
+    "englishtranslate": "That is not a problem."
+  },
+  {
+    "dutch": "het werk",
+    "english": "the work / job",
+    "vietnamese": "công việc, việc làm",
+    "dutchsentence": "Ik ga naar mijn werk.",
+    "englishtranslate": "I am going to my work."
+  },
+  {
+    "dutch": "het woord - woorden",
+    "english": "the word - words",
+    "vietnamese": "từ - các từ",
+    "dutchsentence": "Wat betekent dit woord?",
+    "englishtranslate": "What does this word mean?"
+  },
+  {
+    "dutch": "het Nederlands",
+    "english": "the Dutch language",
+    "vietnamese": "tiếng Hà Lan",
+    "dutchsentence": "Ik leer Nederlands spreken.",
+    "englishtranslate": "I am learning to speak Dutch."
+  },
+  {
+    "dutch": "de persoon - personen",
+    "english": "the person - people",
+    "vietnamese": "người - những người",
+    "dutchsentence": "Er zijn veel personen in de klas.",
+    "englishtranslate": "There are many people in the class."
+  },
+  {
+    "dutch": "de buurman - buurmannen",
+    "english": "the neighbour (male) - neighbours (male)",
+    "vietnamese": "người hàng xóm (nam) - những người hàng xóm (nam)",
+    "dutchsentence": "Mijn buurman heet Peter.",
+    "englishtranslate": "My neighbour is called Peter."
+  },
+  {
+    "dutch": "de docent - docenten",
+    "english": "the teacher - teachers",
+    "vietnamese": "giáo viên - các giáo viên",
+    "dutchsentence": "De docent legt het uit.",
+    "englishtranslate": "The teacher explains it."
+  },
+  {
+    "dutch": "ik",
+    "english": "I",
+    "vietnamese": "tôi",
+    "dutchsentence": "Ik kom uit Vietnam.",
+    "englishtranslate": "I come from Vietnam."
+  },
+  {
+    "dutch": "jij, je",
+    "english": "you (singular, informal)",
+    "vietnamese": "bạn (số ít, thân mật)",
+    "dutchsentence": "Jij bent mijn vriend.",
+    "englishtranslate": "You are my friend."
+  },
+  {
+    "dutch": "u",
+    "english": "you (singular/plural, formal)",
+    "vietnamese": "ông/bà/quý vị (lịch sự)",
+    "dutchsentence": "Spreekt u Engels?",
+    "englishtranslate": "Do you speak English?"
+  },
+  {
+    "dutch": "hij",
+    "english": "he",
+    "vietnamese": "anh ấy, ông ấy",
+    "dutchsentence": "Hij woont in Amsterdam.",
+    "englishtranslate": "He lives in Amsterdam."
+  },
+  {
+    "dutch": "zij, ze (singular)",
+    "english": "she",
+    "vietnamese": "cô ấy, bà ấy",
+    "dutchsentence": "Zij is een student.",
+    "englishtranslate": "She is a student."
+  },
+  {
+    "dutch": "zij, ze (plural)",
+    "english": "they",
+    "vietnamese": "họ",
+    "dutchsentence": "Zij komen morgen.",
+    "englishtranslate": "They are coming tomorrow."
+  },
+  {
+    "dutch": "wij, we",
+    "english": "we",
+    "vietnamese": "chúng tôi, chúng ta",
+    "dutchsentence": "Wij leren veel.",
+    "englishtranslate": "We learn a lot."
+  },
+  {
+    "dutch": "jullie",
+    "english": "you (plural, informal)",
+    "vietnamese": "các bạn, các anh chị",
+    "dutchsentence": "Wat doen jullie?",
+    "englishtranslate": "What are you (plural) doing?"
+  },
+  {
+    "dutch": "jou",
+    "english": "you (object, informal)",
+    "vietnamese": "bạn (tân ngữ, thân mật)",
+    "dutchsentence": "Ik zie jou morgen.",
+    "englishtranslate": "I will see you tomorrow."
+  },
+  {
+    "dutch": "mij, me",
+    "english": "me (object, informal)",
+    "vietnamese": "tôi (tân ngữ)",
+    "dutchsentence": "Geef mij dat boek.",
+    "englishtranslate": "Give me that book."
+  },
+  {
+    "dutch": "mijn",
+    "english": "my",
+    "vietnamese": "của tôi",
+    "dutchsentence": "Dit is mijn huis.",
+    "englishtranslate": "This is my house."
+  },
+  {
+    "dutch": "beantwoorden",
+    "english": "to answer",
+    "vietnamese": "trả lời",
+    "dutchsentence": "Ik moet de vraag beantwoorden.",
+    "englishtranslate": "I have to answer the question."
+  },
+  {
+    "dutch": "begroeten",
+    "english": "to greet",
+    "vietnamese": "chào hỏi",
+    "dutchsentence": "Wij begroeten de docent.",
+    "englishtranslate": "We greet the teacher."
+  },
+  {
+    "dutch": "zijn - ben, bent, is, zijn",
+    "english": "to be - am, are, is, are",
+    "vietnamese": "là, thì, ở (động từ 'to be')",
+    "dutchsentence": "Ik ben leraar.",
+    "englishtranslate": "I am a teacher."
+  },
+  {
+    "dutch": "gaan - ga, gaat, gaan",
+    "english": "to go - go, goes, go",
+    "vietnamese": "đi",
+    "dutchsentence": "Wij gaan naar huis.",
+    "englishtranslate": "We are going home."
+  },
+  {
+    "dutch": "geven",
+    "english": "to give",
+    "vietnamese": "cho, tặng",
+    "dutchsentence": "Kun je me een pen geven?",
+    "englishtranslate": "Can you give me a pen?"
+  },
+  {
+    "dutch": "hebben - heb, hebt, heeft, hebben",
+    "english": "to have - have, has, have",
+    "vietnamese": "có (động từ 'to have')",
+    "dutchsentence": "Zij heeft een auto.",
+    "englishtranslate": "She has a car."
+  },
+  {
+    "dutch": "heten",
+    "english": "to be called",
+    "vietnamese": "tên là, được gọi là",
+    "dutchsentence": "Ik heet David.",
+    "englishtranslate": "I am called David."
+  },
+  {
+    "dutch": "helpen",
+    "english": "to help",
+    "vietnamese": "giúp đỡ",
+    "dutchsentence": "Kunt u mij helpen?",
+    "englishtranslate": "Can you help me?"
+  },
+  {
+    "dutch": "kennen",
+    "english": "to know (a person, place)",
+    "vietnamese": "biết, quen (người, nơi chốn)",
+    "dutchsentence": "Ik ken die man niet.",
+    "englishtranslate": "I don't know that man."
+  },
+  {
+    "dutch": "kennismaken",
+    "english": "to get acquainted / meet",
+    "vietnamese": "làm quen",
+    "dutchsentence": "Leuk om kennis te maken.",
+    "englishtranslate": "Nice to meet you (get acquainted)."
+  },
+  {
+    "dutch": "kiezen",
+    "english": "to choose",
+    "vietnamese": "chọn, lựa chọn",
+    "dutchsentence": "Welke kleur moet ik kiezen?",
+    "englishtranslate": "Which color should I choose?"
+  },
+  {
+    "dutch": "kijken",
+    "english": "to look, to watch",
+    "vietnamese": "nhìn, xem",
+    "dutchsentence": "Wij kijken naar de film.",
+    "englishtranslate": "We are watching the movie."
+  },
+  {
+    "dutch": "komen - kom, komt, komen",
+    "english": "to come - come, comes, come",
+    "vietnamese": "đến",
+    "dutchsentence": "Wanneer komt u?",
+    "englishtranslate": "When are you coming?"
+  },
+  {
+    "dutch": "kunnen - kan, kunt, kan, kunnen",
+    "english": "can, to be able to",
+    "vietnamese": "có thể, có khả năng",
+    "dutchsentence": "Ik kan niet goed zingen.",
+    "englishtranslate": "I can't sing well."
+  },
+  {
+    "dutch": "lezen",
+    "english": "to read",
+    "vietnamese": "đọc",
+    "dutchsentence": "Lees de tekst goed.",
+    "englishtranslate": "Read the text well."
+  },
+  {
+    "dutch": "meelezen",
+    "english": "to read along",
+    "vietnamese": "đọc theo",
+    "dutchsentence": "Wilt u meelezen in het boek?",
+    "englishtranslate": "Would you like to read along in the book?"
+  },
+  {
+    "dutch": "luisteren",
+    "english": "to listen",
+    "vietnamese": "nghe, lắng nghe",
+    "dutchsentence": "Luister naar de docent.",
+    "englishtranslate": "Listen to the teacher."
+  },
+  {
+    "dutch": "Mogen - mag, mogen",
+    "english": "may, to be allowed to",
+    "vietnamese": "được phép, có thể",
+    "dutchsentence": "Mag ik hier zitten?",
+    "englishtranslate": "May I sit here?"
+  },
+  {
+    "dutch": "ontmoeten",
+    "english": "to meet",
+    "vietnamese": "gặp gỡ",
+    "dutchsentence": "Ik wil mijn vrienden ontmoeten.",
+    "englishtranslate": "I want to meet my friends."
+  },
+  {
+    "dutch": "schrijven",
+    "english": "to write",
+    "vietnamese": "viết",
+    "dutchsentence": "Zij schrijft een brief.",
+    "englishtranslate": "She is writing a letter."
+  },
+  {
+    "dutch": "spreken",
+    "english": "to speak",
+    "vietnamese": "nói",
+    "dutchsentence": "Spreekt u Nederlands?",
+    "englishtranslate": "Do you speak Dutch?"
+  },
+  {
+    "dutch": "vragen",
+    "english": "to ask",
+    "vietnamese": "hỏi",
+    "dutchsentence": "Ik wil iets vragen.",
+    "englishtranslate": "I want to ask something."
+  },
+  {
+    "dutch": "invullen",
+    "english": "to fill in (a form)",
+    "vietnamese": "điền vào",
+    "dutchsentence": "Kunt u dit formulier invullen?",
+    "englishtranslate": "Can you fill in this form?"
+  },
+  {
+    "dutch": "willen - wil, wilt, wil, willen",
+    "english": "to want - want, wants, want",
+    "vietnamese": "muốn",
+    "dutchsentence": "Wij willen graag thee.",
+    "englishtranslate": "We would like tea."
+  },
+  {
+    "dutch": "wonen",
+    "english": "to live, to reside",
+    "vietnamese": "sống, cư trú",
+    "dutchsentence": "Waar woont u nu?",
+    "englishtranslate": "Where do you live now?"
+  },
+  {
+    "dutch": "in",
+    "english": "in, into",
+    "vietnamese": "trong, vào",
+    "dutchsentence": "De boeken zijn in de tas.",
+    "englishtranslate": "The books are in the bag."
+  },
+  {
+    "dutch": "met",
+    "english": "with",
+    "vietnamese": "với",
+    "dutchsentence": "Ik ga met de bus.",
+    "englishtranslate": "I go by bus (with the bus)."
+  },
+  {
+    "dutch": "op",
+    "english": "on, at, upon",
+    "vietnamese": "trên, tại",
+    "dutchsentence": "Het boek ligt op tafel.",
+    "englishtranslate": "The book is on the table."
+  },
+  {
+    "dutch": "tot",
+    "english": "until, to, up to",
+    "vietnamese": "cho đến, tới",
+    "dutchsentence": "Ik werk van negen tot vijf.",
+    "englishtranslate": "I work from nine until five."
+  },
+  {
+    "dutch": "uit",
+    "english": "out of, from (a place)",
+    "vietnamese": "ra khỏi, từ (một nơi)",
+    "dutchsentence": "Ik kom uit Nederland.",
+    "englishtranslate": "I come from the Netherlands."
+  },
+  {
+    "dutch": "van",
+    "english": "of, from (origin, possession)",
+    "vietnamese": "của, từ (nguồn gốc, sở hữu)",
+    "dutchsentence": "Dit is de tas van Peter.",
+    "englishtranslate": "This is Peter's bag (the bag of Peter)."
+  },
+  {
+    "dutch": "naar",
+    "english": "to, towards",
+    "vietnamese": "đến, về phía",
+    "dutchsentence": "We gaan naar de supermarkt.",
+    "englishtranslate": "We are going to the supermarket."
+  },
+  {
+    "dutch": "hallo",
+    "english": "hello",
+    "vietnamese": "xin chào",
+    "dutchsentence": "Hallo, hoe gaat het?",
+    "englishtranslate": "Hello, how are you?"
+  },
+  {
+    "dutch": "hoi",
+    "english": "hi (informal)",
+    "vietnamese": "chào (thân mật)",
+    "dutchsentence": "Hoi, lang niet gezien!",
+    "englishtranslate": "Hi, long time no see!"
+  },
+  {
+    "dutch": "ha",
+    "english": "hi, hey (very informal)",
+    "vietnamese": "chào (rất thân mật)",
+    "dutchsentence": "Ha, ben je er ook?",
+    "englishtranslate": "Hey, are you here too?"
+  },
+  {
+    "dutch": "goedemorgen",
+    "english": "good morning",
+    "vietnamese": "chào buổi sáng",
+    "dutchsentence": "Goedemorgen allemaal!",
+    "englishtranslate": "Good morning everyone!"
+  },
+  {
+    "dutch": "goedemiddag",
+    "english": "good afternoon",
+    "vietnamese": "chào buổi chiều",
+    "dutchsentence": "Goedemiddag, welkom!",
+    "englishtranslate": "Good afternoon, welcome!"
+  },
+  {
+    "dutch": "goedenavond",
+    "english": "good evening",
+    "vietnamese": "chào buổi tối",
+    "dutchsentence": "Goedenavond, heeft u gereserveerd?",
+    "englishtranslate": "Good evening, do you have a reservation?"
+  },
+  {
+    "dutch": "bedankt",
+    "english": "thanks",
+    "vietnamese": "cảm ơn",
+    "dutchsentence": "Bedankt voor de hulp.",
+    "englishtranslate": "Thanks for the help."
+  },
+  {
+    "dutch": "dank je",
+    "english": "thank you (informal)",
+    "vietnamese": "cảm ơn bạn (thân mật)",
+    "dutchsentence": "Dank je voor het cadeau.",
+    "englishtranslate": "Thank you for the gift."
+  },
+  {
+    "dutch": "doeg",
+    "english": "bye (informal)",
+    "vietnamese": "tạm biệt (thân mật)",
+    "dutchsentence": "Ik ga nu, doeg!",
+    "englishtranslate": "I'm leaving now, bye!"
+  },
+  {
+    "dutch": "doei",
+    "english": "bye (informal)",
+    "vietnamese": "tạm biệt (thân mật)",
+    "dutchsentence": "Doei, tot morgen!",
+    "englishtranslate": "Bye, see you tomorrow!"
+  },
+  {
+    "dutch": "fijn weekend!",
+    "english": "nice weekend!",
+    "vietnamese": "cuối tuần vui vẻ!",
+    "dutchsentence": "Alvast fijn weekend!",
+    "englishtranslate": "Nice weekend in advance!"
+  },
+  {
+    "dutch": "fijne dag!",
+    "english": "nice day!",
+    "vietnamese": "chúc một ngày tốt lành!",
+    "dutchsentence": "Tot ziens en fijne dag!",
+    "englishtranslate": "Goodbye and nice day!"
+  },
+  {
+    "dutch": "goed weekend!",
+    "english": "good weekend!",
+    "vietnamese": "cuối tuần tốt lành!",
+    "dutchsentence": "Ik wens je een goed weekend!",
+    "englishtranslate": "I wish you a good weekend!"
+  },
+  {
+    "dutch": "ja",
+    "english": "yes",
+    "vietnamese": "vâng, dạ, có",
+    "dutchsentence": "Ja, dat is goed.",
+    "englishtranslate": "Yes, that is fine."
+  },
+  {
+    "dutch": "ja hoor",
+    "english": "yes (certainly, sure)",
+    "vietnamese": "vâng, chắc chắn rồi",
+    "dutchsentence": "Kan ik u helpen? Ja hoor!",
+    "englishtranslate": "Can I help you? Yes, certainly!"
+  },
+  {
+    "dutch": "nee",
+    "english": "no",
+    "vietnamese": "không",
+    "dutchsentence": "Nee, dat klopt niet.",
+    "englishtranslate": "No, that is not correct."
+  },
+  {
+    "dutch": "leuk!",
+    "english": "nice! fun! great!",
+    "vietnamese": "tuyệt vời!, vui!",
+    "dutchsentence": "Wat leuk om je te zien!",
+    "englishtranslate": "How nice to see you!"
+  },
+  {
+    "dutch": "natuurlijk",
+    "english": "naturally, of course",
+    "vietnamese": "tất nhiên, dĩ nhiên",
+    "dutchsentence": "Natuurlijk help ik je.",
+    "englishtranslate": "Of course I will help you."
+  },
+  {
+    "dutch": "oké",
+    "english": "okay",
+    "vietnamese": "được rồi, ok",
+    "dutchsentence": "Is het oké voor jou?",
+    "englishtranslate": "Is it okay for you?"
+  },
+  {
+    "dutch": "prima",
+    "english": "fine, excellent",
+    "vietnamese": "tốt, tuyệt vời",
+    "dutchsentence": "Het eten was prima.",
+    "englishtranslate": "The food was fine (excellent)."
+  },
+  {
+    "dutch": "sorry",
+    "english": "sorry",
+    "vietnamese": "xin lỗi",
+    "dutchsentence": "Sorry, ik ben te laat.",
+    "englishtranslate": "Sorry, I am late."
+  },
+  {
+    "dutch": "tot zo!",
+    "english": "see you soon (in a moment)!",
+    "vietnamese": "gặp lại lát nữa!",
+    "dutchsentence": "Ik kom zo terug, tot zo!",
+    "englishtranslate": "I'll be right back, see you soon!"
+  },
+  {
+    "dutch": "tot straks!",
+    "english": "see you later (today)!",
+    "vietnamese": "gặp lại lát nữa (trong ngày)!",
+    "dutchsentence": "We spreken elkaar straks weer, tot straks!",
+    "englishtranslate": "We'll talk again later, see you later!"
+  },
+  {
+    "dutch": "tot dan!",
+    "english": "see you then!",
+    "vietnamese": "gặp lại khi đó!",
+    "dutchsentence": "We zien elkaar om vijf uur, tot dan!",
+    "englishtranslate": "We'll see each other at five o'clock, see you then!"
+  },
+  {
+    "dutch": "nou, sterkte",
+    "english": "well, good luck / all the best (when facing a challenge)",
+    "vietnamese": "chà, chúc may mắn / mọi điều tốt lành",
+    "dutchsentence": "Je hebt morgen een examen, nou, sterkte!",
+    "englishtranslate": "You have an exam tomorrow, well, good luck!"
+  },
+  {
+    "dutch": "oh, vervelend",
+    "english": "oh, annoying / too bad / unpleasant",
+    "vietnamese": "ồ, phiền phức / thật tệ",
+    "dutchsentence": "Mijn tas is weg. Oh, vervelend.",
+    "englishtranslate": "My bag is gone. Oh, too bad."
+  },
+  {
+    "dutch": "welkom!",
+    "english": "welcome!",
+    "vietnamese": "chào mừng!",
+    "dutchsentence": "Welkom in Nederland!",
+    "englishtranslate": "Welcome to the Netherlands!"
+  },
+  {
+    "dutch": "de",
+    "english": "the (definite article, 'de' words)",
+    "vietnamese": "cái, chiếc, con (mạo từ xác định cho 'de')",
+    "dutchsentence": "De docent is hier.",
+    "englishtranslate": "The teacher is here."
+  },
+  {
+    "dutch": "het",
+    "english": "the (definite article, 'het' words)",
+    "vietnamese": "cái, chiếc, con (mạo từ xác định cho 'het')",
+    "dutchsentence": "Het huis is groot.",
+    "englishtranslate": "The house is big."
+  },
+  {
+    "dutch": "allemaal",
+    "english": "all, all of them",
+    "vietnamese": "tất cả, tất cả mọi người",
+    "dutchsentence": "Jullie zijn allemaal uitgenodigd.",
+    "englishtranslate": "All of you are invited."
+  },
+  {
+    "dutch": "alles",
+    "english": "everything",
+    "vietnamese": "mọi thứ",
+    "dutchsentence": "Alles is klaar.",
+    "englishtranslate": "Everything is ready."
+  },
+  {
+    "dutch": "en",
+    "english": "and",
+    "vietnamese": "và",
+    "dutchsentence": "Ik drink thee en koffie.",
+    "englishtranslate": "I drink tea and coffee."
+  },
+  {
+    "dutch": "geen",
+    "english": "no, not any (negation of a noun)",
+    "vietnamese": "không có, không phải",
+    "dutchsentence": "Ik heb geen tijd.",
+    "englishtranslate": "I have no time."
+  },
+  {
+    "dutch": "graag",
+    "english": "gladly, with pleasure",
+    "vietnamese": "vui lòng, rất muốn",
+    "dutchsentence": "Ik wil graag een kop koffie.",
+    "englishtranslate": "I would gladly (like to) have a cup of coffee."
+  },
+  {
+    "dutch": "hè",
+    "english": "right? / isn't it? (confirmation tag)",
+    "vietnamese": "nhỉ? đúng không?",
+    "dutchsentence": "Het is mooi weer, hè?",
+    "englishtranslate": "The weather is nice, right?"
+  },
+  {
+    "dutch": "Nederland",
+    "english": "The Netherlands",
+    "vietnamese": "Hà Lan",
+    "dutchsentence": "Ik woon in Nederland.",
+    "englishtranslate": "I live in the Netherlands."
+  },
+  {
+    "dutch": "ook",
+    "english": "also, too",
+    "vietnamese": "cũng, nữa",
+    "dutchsentence": "Ik spreek ook Engels.",
+    "englishtranslate": "I also speak English."
+  },
+  {
+    "dutch": "vandaan",
+    "english": "from (used with 'waar' or 'hier')",
+    "vietnamese": "từ, đến từ",
+    "dutchsentence": "Waar komt u vandaan?",
+    "englishtranslate": "Where do you come from?"
+  },
+  {
+    "dutch": "verkouden",
+    "english": "to have a cold",
+    "vietnamese": "cảm lạnh",
+    "dutchsentence": "Ik ben verkouden.",
+    "englishtranslate": "I have a cold."
+  },
+  {
+    "dutch": "vrij",
+    "english": "free (not working)",
+    "vietnamese": "rảnh, tự do",
+    "dutchsentence": "Ik ben vandaag vrij.",
+    "englishtranslate": "I am free today."
+  },
+  {
+    "dutch": "wel",
+    "english": "indeed, certainly (opposite of 'niet')",
+    "vietnamese": "quả thật, chắc chắn là",
+    "dutchsentence": "Ik spreek wel Nederlands.",
+    "englishtranslate": "I do speak Dutch (in contradiction to a suggestion that I don't)."
+  },
+  {
+    "dutch": "nu",
+    "english": "now",
+    "vietnamese": "bây giờ",
+    "dutchsentence": "Wat doet u nu?",
+    "englishtranslate": "What are you doing now?"
+  },
+  {
+    "dutch": "vandaag",
+    "english": "today",
+    "vietnamese": "hôm nay",
+    "dutchsentence": "Wat gaan we vandaag doen?",
+    "englishtranslate": "What are we going to do today?"
+  }
 ]

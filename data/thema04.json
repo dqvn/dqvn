@@ -1,0 +1,1262 @@
+[
+  {
+    "dutch": "de aanbieding, aanbiedingen",
+    "english": "the offer, offers / special deals",
+    "vietnamese": "chương trình khuyến mãi, ưu đãi",
+    "dutchsentence": "Er zijn deze week veel aanbiedingen in de supermarkt.",
+    "englishtranslate": "There are many offers in the supermarket this week."
+  },
+  {
+    "dutch": "de aankoop, aankopen",
+    "english": "the purchase, purchases",
+    "vietnamese": "việc mua, món hàng đã mua",
+    "dutchsentence": "U kunt de aankoop binnen 30 dagen ruilen.",
+    "englishtranslate": "You can exchange the purchase within 30 days."
+  },
+  {
+    "dutch": "de afdeling, afdelingen",
+    "english": "the department, departments",
+    "vietnamese": "gian hàng, bộ phận",
+    "dutchsentence": "De kleding is op de tweede afdeling.",
+    "englishtranslate": "The clothing is in the second department."
+  },
+  {
+    "dutch": "de balie, balies",
+    "english": "the counter, desks",
+    "vietnamese": "quầy, bàn tiếp tân",
+    "dutchsentence": "U kunt de formulieren inleveren bij de balie.",
+    "englishtranslate": "You can hand in the forms at the counter."
+  },
+  {
+    "dutch": "de baliemedewerker, baliemedewerkers",
+    "english": "the counter employee, counter employees",
+    "vietnamese": "nhân viên quầy",
+    "dutchsentence": "De baliemedewerker helpt mij met de inschrijving.",
+    "englishtranslate": "The counter employee is helping me with the registration."
+  },
+  {
+    "dutch": "het bedrijf, bedrijven",
+    "english": "the company, companies",
+    "vietnamese": "công ty, doanh nghiệp",
+    "dutchsentence": "Mijn man werkt bij een groot bedrijf.",
+    "englishtranslate": "My husband works at a large company."
+  },
+  {
+    "dutch": "bij aankoop van ...",
+    "english": "upon purchase of ...",
+    "vietnamese": "khi mua ...",
+    "dutchsentence": "U krijgt een korting bij aankoop van twee flessen.",
+    "englishtranslate": "You get a discount upon purchase of two bottles."
+  },
+  {
+    "dutch": "de boodschap, boodschappen",
+    "english": "the groceries / errand, messages",
+    "vietnamese": "thực phẩm, việc vặt",
+    "dutchsentence": "Ik ga elke zaterdag boodschappen doen.",
+    "englishtranslate": "I go grocery shopping every Saturday."
+  },
+  {
+    "dutch": "het boodschappenlijstje",
+    "english": "the shopping list / grocery list",
+    "vietnamese": "danh sách đi chợ",
+    "dutchsentence": "Vergeet je boodschappenlijstje niet.",
+    "englishtranslate": "Don't forget your shopping list."
+  },
+  {
+    "dutch": "de bos bloemen",
+    "english": "the bunch of flowers",
+    "vietnamese": "bó hoa",
+    "dutchsentence": "Ik koop een mooie bos bloemen voor mijn vrouw.",
+    "englishtranslate": "I'm buying a beautiful bunch of flowers for my wife."
+  },
+  {
+    "dutch": "de bouwmarkt, bouwmarkten",
+    "english": "the hardware store, hardware stores",
+    "vietnamese": "cửa hàng vật liệu xây dựng",
+    "dutchsentence": "We moeten naar de bouwmarkt voor verf.",
+    "englishtranslate": "We have to go to the hardware store for paint."
+  },
+  {
+    "dutch": "het briefje, briefjes",
+    "english": "the note, notes / small bill (money)",
+    "vietnamese": "tờ giấy, tờ tiền nhỏ",
+    "dutchsentence": "Kan ik betalen met een briefje van 50 euro?",
+    "englishtranslate": "Can I pay with a 50 euro bill?"
+  },
+  {
+    "dutch": "de buurt, buurten",
+    "english": "the neighborhood, neighborhoods",
+    "vietnamese": "khu phố, vùng lân cận",
+    "dutchsentence": "De supermarkt is in de buurt.",
+    "englishtranslate": "The supermarket is in the neighborhood."
+  },
+  {
+    "dutch": "het café, cafés",
+    "english": "the café, pubs / bars",
+    "vietnamese": "quán cà phê, quán bar",
+    "dutchsentence": "Na het werk gaan we naar het café.",
+    "englishtranslate": "After work we go to the café/pub."
+  },
+  {
+    "dutch": "de delicatesse, delicatessen",
+    "english": "the delicacy, delicacies",
+    "vietnamese": "món ăn ngon, đặc sản",
+    "dutchsentence": "Deze winkel verkoopt dure delicatessen.",
+    "englishtranslate": "This shop sells expensive delicacies."
+  },
+  {
+    "dutch": "de diepvries",
+    "english": "the freezer / frozen food section",
+    "vietnamese": "ngăn đông lạnh, thực phẩm đông lạnh",
+    "dutchsentence": "Het ijs ligt in de diepvries.",
+    "englishtranslate": "The ice cream is in the freezer."
+  },
+  {
+    "dutch": "het einde",
+    "english": "the end",
+    "vietnamese": "sự kết thúc",
+    "dutchsentence": "Aan het einde van de straat is een rotonde.",
+    "englishtranslate": "At the end of the street is a roundabout."
+  },
+  {
+    "dutch": "de etage, etages",
+    "english": "the floor, floors (of a building)",
+    "vietnamese": "tầng (của tòa nhà)",
+    "dutchsentence": "De herenkleding is op de derde etage.",
+    "englishtranslate": "The men's clothing is on the third floor."
+  },
+  {
+    "dutch": "de euro, euro’s",
+    "english": "the euro, euros",
+    "vietnamese": "đồng euro",
+    "dutchsentence": "Dit kost 10 euro.",
+    "englishtranslate": "This costs 10 euros."
+  },
+  {
+    "dutch": "de fabriek, fabrieken",
+    "english": "the factory, factories",
+    "vietnamese": "nhà máy, xí nghiệp",
+    "dutchsentence": "Hij werkt al twintig jaar in die fabriek.",
+    "englishtranslate": "He has been working in that factory for twenty years."
+  },
+  {
+    "dutch": "de fles, flessen",
+    "english": "the bottle, bottles",
+    "vietnamese": "chai, lọ",
+    "dutchsentence": "Ik heb twee flessen water gekocht.",
+    "englishtranslate": "I bought two bottles of water."
+  },
+  {
+    "dutch": "de gang, gangen",
+    "english": "the aisle, aisles / corridor",
+    "vietnamese": "lối đi, hành lang",
+    "dutchsentence": "U moet de vierde gang volgen.",
+    "englishtranslate": "You must follow the fourth aisle."
+  },
+  {
+    "dutch": "het gemeentehuis",
+    "english": "the city hall / municipal office",
+    "vietnamese": "tòa thị chính, trụ sở ủy ban nhân dân",
+    "dutchsentence": "De inschrijving gebeurt in het gemeentehuis.",
+    "englishtranslate": "The registration takes place in the city hall."
+  },
+  {
+    "dutch": "het gewicht",
+    "english": "the weight",
+    "vietnamese": "trọng lượng, cân nặng",
+    "dutchsentence": "Wat is het gewicht van dit pakketje?",
+    "englishtranslate": "What is the weight of this small package?"
+  },
+  {
+    "dutch": "het glas, glazen",
+    "english": "the glass, glasses",
+    "vietnamese": "cái ly, cốc",
+    "dutchsentence": "Mag ik een glas water, alstublieft?",
+    "englishtranslate": "May I have a glass of water, please?"
+  },
+  {
+    "dutch": "de gram, het gram",
+    "english": "the gram, the grams",
+    "vietnamese": "gam",
+    "dutchsentence": "Ik wil graag 200 gram kaas.",
+    "englishtranslate": "I would like 200 grams of cheese."
+  },
+  {
+    "dutch": "het identiteitsbewijs",
+    "english": "the proof of identity / ID",
+    "vietnamese": "giấy tờ tùy thân",
+    "dutchsentence": "Heeft u uw identiteitsbewijs bij u?",
+    "englishtranslate": "Do you have your ID with you?"
+  },
+  {
+    "dutch": "het kantoor, kantoren",
+    "english": "the office, offices",
+    "vietnamese": "văn phòng",
+    "dutchsentence": "Mijn kantoor is op de vierde verdieping.",
+    "englishtranslate": "My office is on the fourth floor."
+  },
+  {
+    "dutch": "de kassa, kassa’s",
+    "english": "the cash register, cash registers",
+    "vietnamese": "máy tính tiền, quầy thanh toán",
+    "dutchsentence": "U kunt afrekenen bij kassa 3.",
+    "englishtranslate": "You can pay at cash register 3."
+  },
+  {
+    "dutch": "de keus, keuzes",
+    "english": "the choice, choices",
+    "vietnamese": "sự lựa chọn, sự chọn lựa",
+    "dutchsentence": "Er is veel keus in deze winkel.",
+    "englishtranslate": "There is a lot of choice in this shop."
+  },
+  {
+    "dutch": "de kilo",
+    "english": "the kilogram, the kilograms",
+    "vietnamese": "kilogram (ký)",
+    "dutchsentence": "Ik wil graag een halve kilo appels.",
+    "englishtranslate": "I would like half a kilo of apples."
+  },
+  {
+    "dutch": "de klant, klanten",
+    "english": "the customer, customers",
+    "vietnamese": "khách hàng",
+    "dutchsentence": "De klant is koning.",
+    "englishtranslate": "The customer is king."
+  },
+  {
+    "dutch": "de kledingwinkel, kledingwinkels",
+    "english": "the clothing store, clothing stores",
+    "vietnamese": "cửa hàng quần áo",
+    "dutchsentence": "Ik koop mijn kleding in een kledingwinkel.",
+    "englishtranslate": "I buy my clothes in a clothing store."
+  },
+  {
+    "dutch": "de kledingzaak, kledingzaken",
+    "english": "the clothing shop, clothing shops",
+    "vietnamese": "cửa hàng quần áo",
+    "dutchsentence": "De kledingzaak heeft mooie jassen.",
+    "englishtranslate": "The clothing shop has beautiful coats."
+  },
+  {
+    "dutch": "de korting, kortingen",
+    "english": "the discount, discounts",
+    "vietnamese": "sự giảm giá, chiết khấu",
+    "dutchsentence": "U krijgt 10% korting op dit product.",
+    "englishtranslate": "You get a 10% discount on this product."
+  },
+  {
+    "dutch": "de kraam, kramen",
+    "english": "the stall, stalls (market)",
+    "vietnamese": "quầy hàng, sạp hàng",
+    "dutchsentence": "De groentekraam is de beste van de markt.",
+    "englishtranslate": "The vegetable stall is the best on the market."
+  },
+  {
+    "dutch": "de kruising, kruisingen",
+    "english": "the intersection, intersections",
+    "vietnamese": "ngã tư, giao lộ",
+    "dutchsentence": "Bij de kruising moet u linksaf slaan.",
+    "englishtranslate": "At the intersection you must turn left."
+  },
+  {
+    "dutch": "het kruispunt, kruispunten",
+    "english": "the crossroad, crossroads",
+    "vietnamese": "ngã tư, giao lộ",
+    "dutchsentence": "Het kruispunt is erg druk.",
+    "englishtranslate": "The crossroad is very busy."
+  },
+  {
+    "dutch": "de laptop, laptops",
+    "english": "the laptop, laptops",
+    "vietnamese": "máy tính xách tay",
+    "dutchsentence": "Ik heb een nieuwe laptop nodig.",
+    "englishtranslate": "I need a new laptop."
+  },
+  {
+    "dutch": "de lift, liften",
+    "english": "the elevator, elevators / lift",
+    "vietnamese": "thang máy",
+    "dutchsentence": "Neem de lift naar de tweede verdieping.",
+    "englishtranslate": "Take the elevator to the second floor."
+  },
+  {
+    "dutch": "de maat, maten",
+    "english": "the size, sizes",
+    "vietnamese": "kích cỡ, số đo",
+    "dutchsentence": "Welke maat schoenen heeft u?",
+    "englishtranslate": "What size shoes do you have?"
+  },
+  {
+    "dutch": "het magazijn, magazijnen",
+    "english": "the warehouse, warehouses / storage room",
+    "vietnamese": "kho hàng",
+    "dutchsentence": "We hebben de producten in het magazijn.",
+    "englishtranslate": "We have the products in the warehouse."
+  },
+  {
+    "dutch": "de markt, markten",
+    "english": "the market, markets",
+    "vietnamese": "chợ",
+    "dutchsentence": "De markt is elke zaterdag open.",
+    "englishtranslate": "The market is open every Saturday."
+  },
+  {
+    "dutch": "de meneer",
+    "english": "the mister, gentleman",
+    "vietnamese": "ông, ngài",
+    "dutchsentence": "Dag meneer, kan ik u helpen?",
+    "englishtranslate": "Hello mister, can I help you?"
+  },
+  {
+    "dutch": "de mevrouw",
+    "english": "the madam, lady",
+    "vietnamese": "bà, cô",
+    "dutchsentence": "Goedendag mevrouw, hier is uw bestelling.",
+    "englishtranslate": "Good day madam, here is your order."
+  },
+  {
+    "dutch": "het ons",
+    "english": "the ounce (approx. 100 grams)",
+    "vietnamese": "lạng (khoảng 100 gram)",
+    "dutchsentence": "Ik wil graag een ons vlees.",
+    "englishtranslate": "I would like 100 grams of meat."
+  },
+  {
+    "dutch": "het pad, paden",
+    "english": "the path, paths / aisle",
+    "vietnamese": "lối đi, con đường",
+    "dutchsentence": "Volg dit pad tot het einde.",
+    "englishtranslate": "Follow this path until the end."
+  },
+  {
+    "dutch": "de parkeerplaats, parkeerplaatsen",
+    "english": "the parking space, parking spaces",
+    "vietnamese": "chỗ đỗ xe",
+    "dutchsentence": "Er is een parkeerplaats bij de supermarkt.",
+    "englishtranslate": "There is a parking space at the supermarket."
+  },
+  {
+    "dutch": "het parkeerterrein, parkeerterreinen",
+    "english": "the parking lot, parking lots",
+    "vietnamese": "bãi đỗ xe",
+    "dutchsentence": "Het parkeerterrein is vol.",
+    "englishtranslate": "The parking lot is full."
+  },
+  {
+    "dutch": "de paskamer, paskamers",
+    "english": "the fitting room, fitting rooms",
+    "vietnamese": "phòng thử đồ",
+    "dutchsentence": "Waar zijn de paskamers?",
+    "englishtranslate": "Where are the fitting rooms?"
+  },
+  {
+    "dutch": "de pinpas, pinpassen",
+    "english": "the debit card, debit cards",
+    "vietnamese": "thẻ ghi nợ",
+    "dutchsentence": "U kunt met pinpas betalen.",
+    "englishtranslate": "You can pay with a debit card."
+  },
+  {
+    "dutch": "het pond",
+    "english": "the pound (approx. 500 grams)",
+    "vietnamese": "nửa ký (khoảng 500 gram)",
+    "dutchsentence": "Mag ik een pond appels alstublieft?",
+    "englishtranslate": "May I have half a kilo of apples, please?"
+  },
+  {
+    "dutch": "de prijs, prijzen",
+    "english": "the price, prices",
+    "vietnamese": "giá, chi phí",
+    "dutchsentence": "Wat is de prijs van deze fles?",
+    "englishtranslate": "What is the price of this bottle?"
+  },
+  {
+    "dutch": "de reclame, reclames",
+    "english": "the advertisement, advertisements / commercials",
+    "vietnamese": "quảng cáo",
+    "dutchsentence": "Ik kijk vaak naar reclames in de krant.",
+    "englishtranslate": "I often look at advertisements in the newspaper."
+  },
+  {
+    "dutch": "de roltrap, roltrappen",
+    "english": "the escalator, escalators",
+    "vietnamese": "thang cuốn",
+    "dutchsentence": "Neem de roltrap naar de volgende etage.",
+    "englishtranslate": "Take the escalator to the next floor."
+  },
+  {
+    "dutch": "de rotonde, rotondes",
+    "english": "the roundabout, roundabouts",
+    "vietnamese": "vòng xuyến",
+    "dutchsentence": "Bij de rotonde gaat u rechtdoor.",
+    "englishtranslate": "At the roundabout, you go straight ahead."
+  },
+  {
+    "dutch": "de schoenenzaak, schoenenzaken",
+    "english": "the shoe store, shoe stores",
+    "vietnamese": "cửa hàng giày",
+    "dutchsentence": "Ik heb een nieuwe schoenenzaak gevonden.",
+    "englishtranslate": "I have found a new shoe store."
+  },
+  {
+    "dutch": "het seizoen, seizoenen",
+    "english": "the season, seasons",
+    "vietnamese": "mùa",
+    "dutchsentence": "Het is het seizoen voor verse aardbeien.",
+    "englishtranslate": "It is the season for fresh strawberries."
+  },
+  {
+    "dutch": "de slijterij, slijterijen",
+    "english": "the liquor store, liquor stores",
+    "vietnamese": "cửa hàng rượu mạnh",
+    "dutchsentence": "De slijterij heeft veel soorten wijn.",
+    "englishtranslate": "The liquor store has many kinds of wine."
+  },
+  {
+    "dutch": "het station, stations",
+    "english": "the station, stations",
+    "vietnamese": "nhà ga",
+    "dutchsentence": "Ik ga met de trein vanaf het station.",
+    "englishtranslate": "I am going by train from the station."
+  },
+  {
+    "dutch": "het stoplicht, stoplichten",
+    "english": "the traffic light, traffic lights",
+    "vietnamese": "đèn giao thông",
+    "dutchsentence": "U moet wachten voor het rode stoplicht.",
+    "englishtranslate": "You must wait for the red traffic light."
+  },
+  {
+    "dutch": "de straat, straten",
+    "english": "the street, streets",
+    "vietnamese": "đường phố",
+    "dutchsentence": "Ik woon in een rustige straat.",
+    "englishtranslate": "I live on a quiet street."
+  },
+  {
+    "dutch": "de supermarkt, supermarkten",
+    "english": "the supermarket, supermarkets",
+    "vietnamese": "siêu thị",
+    "dutchsentence": "Ik koop mijn boodschappen in de supermarkt.",
+    "englishtranslate": "I buy my groceries in the supermarket."
+  },
+  {
+    "dutch": "het tasje, tasjes",
+    "english": "the small bag, small bags (shopping)",
+    "vietnamese": "túi nhỏ, giỏ nhỏ",
+    "dutchsentence": "Wil u een tasje bij de kassa?",
+    "englishtranslate": "Would you like a small bag at the cash register?"
+  },
+  {
+    "dutch": "de uitverkoop",
+    "english": "the sale, clearance",
+    "vietnamese": "đợt giảm giá, thanh lý",
+    "dutchsentence": "Er is nu uitverkoop in de kledingwinkel.",
+    "englishtranslate": "There is a sale now in the clothing store."
+  },
+  {
+    "dutch": "de verdieping, verdiepingen",
+    "english": "the floor, floors (of a building)",
+    "vietnamese": "tầng (của tòa nhà)",
+    "dutchsentence": "De paskamers zijn op de eerste verdieping.",
+    "englishtranslate": "The fitting rooms are on the first floor."
+  },
+  {
+    "dutch": "de voorraad, voorraden",
+    "english": "the stock, supplies",
+    "vietnamese": "hàng tồn kho, nguồn cung cấp",
+    "dutchsentence": "Dit product is niet meer op voorraad.",
+    "englishtranslate": "This product is no longer in stock."
+  },
+  {
+    "dutch": "het warenhuis, de warenhuizen",
+    "english": "the department store, department stores",
+    "vietnamese": "cửa hàng bách hóa",
+    "dutchsentence": "We gaan naar een groot warenhuis in de stad.",
+    "englishtranslate": "We are going to a large department store in the city."
+  },
+  {
+    "dutch": "de weg, wegen",
+    "english": "the road, roads / way",
+    "vietnamese": "con đường, đường đi",
+    "dutchsentence": "Dit is de weg naar het station.",
+    "englishtranslate": "This is the road to the station."
+  },
+  {
+    "dutch": "het winkelcentrum, winkelcentrums",
+    "english": "the shopping center, shopping centers",
+    "vietnamese": "trung tâm mua sắm",
+    "dutchsentence": "Het winkelcentrum is vandaag open tot 9 uur.",
+    "englishtranslate": "The shopping center is open until 9 o'clock today."
+  },
+  {
+    "dutch": "afrekenen",
+    "english": "to pay, to check out",
+    "vietnamese": "thanh toán, tính tiền",
+    "dutchsentence": "U kunt hier afrekenen.",
+    "englishtranslate": "You can check out here."
+  },
+  {
+    "dutch": "betalen",
+    "english": "to pay",
+    "vietnamese": "trả tiền, thanh toán",
+    "dutchsentence": "Hoe wilt u betalen, contant of met pinpas?",
+    "englishtranslate": "How would you like to pay, cash or with debit card?"
+  },
+  {
+    "dutch": "herhalen",
+    "english": "to repeat",
+    "vietnamese": "lặp lại",
+    "dutchsentence": "Kunt u dat herhalen, alstublieft?",
+    "englishtranslate": "Can you repeat that, please?"
+  },
+  {
+    "dutch": "inschrijven",
+    "english": "to register, to enroll",
+    "vietnamese": "đăng ký",
+    "dutchsentence": "U moet zich inschrijven bij de balie.",
+    "englishtranslate": "You must register at the counter."
+  },
+  {
+    "dutch": "kijk - kijken",
+    "english": "look - to look, to watch",
+    "vietnamese": "nhìn - để nhìn, xem",
+    "dutchsentence": "Kijk, hier is de korting.",
+    "englishtranslate": "Look, here is the discount."
+  },
+  {
+    "dutch": "kopen",
+    "english": "to buy",
+    "vietnamese": "mua",
+    "dutchsentence": "Ik wil graag een nieuwe broek kopen.",
+    "englishtranslate": "I would like to buy new trousers."
+  },
+  {
+    "dutch": "krijgt – krijgen",
+    "english": "gets – to get, to receive",
+    "vietnamese": "nhận được - để nhận",
+    "dutchsentence": "U krijgt bij deze aankoop 20% korting.",
+    "englishtranslate": "You get a 20% discount with this purchase."
+  },
+  {
+    "dutch": "loopt - lopen",
+    "english": "walks - to walk, to run",
+    "vietnamese": "đi bộ - để đi bộ",
+    "dutchsentence": "Zij loopt door de straat.",
+    "englishtranslate": "She is walking through the street."
+  },
+  {
+    "dutch": "parkeren",
+    "english": "to park",
+    "vietnamese": "đỗ xe",
+    "dutchsentence": "Waar kan ik mijn auto parkeren?",
+    "englishtranslate": "Where can I park my car?"
+  },
+  {
+    "dutch": "passen",
+    "english": "to fit, to try on (clothes)",
+    "vietnamese": "thử (quần áo)",
+    "dutchsentence": "Ik wil deze schoenen graag even passen.",
+    "englishtranslate": "I would like to try on these shoes for a moment."
+  },
+  {
+    "dutch": "pinnen",
+    "english": "to pay with a debit card (pin)",
+    "vietnamese": "thanh toán bằng thẻ ghi nợ",
+    "dutchsentence": "Mag ik pinnen, alstublieft?",
+    "englishtranslate": "May I pay by debit card, please?"
+  },
+  {
+    "dutch": "probeert - proberen",
+    "english": "tries - to try",
+    "vietnamese": "cố gắng - để cố gắng",
+    "dutchsentence": "Hij probeert een nieuwe maat broek.",
+    "englishtranslate": "He is trying a new size of trousers."
+  },
+  {
+    "dutch": "rijdt - rijden",
+    "english": "drives - to drive, to ride",
+    "vietnamese": "lái xe - để lái xe",
+    "dutchsentence": "De bus rijdt rechtdoor bij het stoplicht.",
+    "englishtranslate": "The bus drives straight ahead at the traffic light."
+  },
+  {
+    "dutch": "rondkijken",
+    "english": "to look around",
+    "vietnamese": "nhìn xung quanh",
+    "dutchsentence": "Ik wil graag even rondkijken in de winkel.",
+    "englishtranslate": "I would like to look around the shop for a moment."
+  },
+  {
+    "dutch": "staan",
+    "english": "to stand, to be located",
+    "vietnamese": "đứng, nằm ở",
+    "dutchsentence": "De bloemen staan in de kraam op de markt.",
+    "englishtranslate": "The flowers are located in the stall at the market."
+  },
+  {
+    "dutch": "volg - volgen",
+    "english": "follow - to follow",
+    "vietnamese": "theo dõi - để theo dõi",
+    "dutchsentence": "Volg de pijlen naar de uitverkoop.",
+    "englishtranslate": "Follow the arrows to the sale."
+  },
+  {
+    "dutch": "ziet - zien",
+    "english": "sees - to see",
+    "vietnamese": "thấy - để thấy",
+    "dutchsentence": "Ziet u de afdeling met diepvriesproducten?",
+    "englishtranslate": "Do you see the department with frozen products?"
+  },
+  {
+    "dutch": "zitten",
+    "english": "to sit, to be located (of things)",
+    "vietnamese": "ngồi, nằm ở",
+    "dutchsentence": "De sleutels zitten in mijn tasje.",
+    "englishtranslate": "The keys are in my small bag."
+  },
+  {
+    "dutch": "zoekt - zoeken",
+    "english": "searches - to search, to look for",
+    "vietnamese": "tìm kiếm - để tìm kiếm",
+    "dutchsentence": "Ik zoek een schoenenzaak in de buurt.",
+    "englishtranslate": "I am looking for a shoe store in the neighborhood."
+  },
+  {
+    "dutch": "achter",
+    "english": "behind",
+    "vietnamese": "ở phía sau",
+    "dutchsentence": "De paskamers zijn achter de kassa.",
+    "englishtranslate": "The fitting rooms are behind the cash register."
+  },
+  {
+    "dutch": "in de buurt",
+    "english": "nearby, in the neighborhood",
+    "vietnamese": "ở gần, trong khu vực lân cận",
+    "dutchsentence": "Is er een café in de buurt?",
+    "englishtranslate": "Is there a café nearby?"
+  },
+  {
+    "dutch": "na",
+    "english": "after",
+    "vietnamese": "sau",
+    "dutchsentence": "Na de rotonde gaat u rechtsaf.",
+    "englishtranslate": "After the roundabout you turn right."
+  },
+  {
+    "dutch": "naar beneden",
+    "english": "down, downwards",
+    "vietnamese": "xuống, đi xuống",
+    "dutchsentence": "We gaan met de lift naar beneden.",
+    "englishtranslate": "We are going down with the elevator."
+  },
+  {
+    "dutch": "naar boven",
+    "english": "up, upwards",
+    "vietnamese": "lên, đi lên",
+    "dutchsentence": "U moet naar boven naar de afdeling dameskleding.",
+    "englishtranslate": "You must go up to the women's clothing department."
+  },
+  {
+    "dutch": "op",
+    "english": "on, at",
+    "vietnamese": "trên, tại",
+    "dutchsentence": "De kassa is op de begane grond.",
+    "englishtranslate": "The cash register is on the ground floor."
+  },
+  {
+    "dutch": "per stuk",
+    "english": "per piece, individually",
+    "vietnamese": "mỗi cái, từng món",
+    "dutchsentence": "De flessen zijn €2 per stuk.",
+    "englishtranslate": "The bottles are €2 per piece."
+  },
+  {
+    "dutch": "breed, brede",
+    "english": "wide, broad",
+    "vietnamese": "rộng",
+    "dutchsentence": "Dit is een brede straat.",
+    "englishtranslate": "This is a wide street."
+  },
+  {
+    "dutch": "dik, dikke",
+    "english": "thick, fat",
+    "vietnamese": "dày, mập",
+    "dutchsentence": "Deze jas is te dik voor de zomer.",
+    "englishtranslate": "This coat is too thick for the summer."
+  },
+  {
+    "dutch": "donker, donkere",
+    "english": "dark",
+    "vietnamese": "tối, sẫm màu",
+    "dutchsentence": "Ik hou van donkere kleuren.",
+    "englishtranslate": "I like dark colors."
+  },
+  {
+    "dutch": "droog, droge",
+    "english": "dry",
+    "vietnamese": "khô",
+    "dutchsentence": "Het is belangrijk om uw fruit droog te bewaren.",
+    "englishtranslate": "It's important to keep your fruit dry."
+  },
+  {
+    "dutch": "dun, dunne",
+    "english": "thin, skinny",
+    "vietnamese": "mỏng, gầy",
+    "dutchsentence": "Ik heb een dunne trui nodig.",
+    "englishtranslate": "I need a thin sweater."
+  },
+  {
+    "dutch": "duur, dure",
+    "english": "expensive",
+    "vietnamese": "đắt",
+    "dutchsentence": "Dit is een dure aankoop.",
+    "englishtranslate": "This is an expensive purchase."
+  },
+  {
+    "dutch": "fijn, fijne",
+    "english": "nice, fine",
+    "vietnamese": "tuyệt vời, tốt",
+    "dutchsentence": "Ik wens u een fijne dag.",
+    "englishtranslate": "I wish you a nice day."
+  },
+  {
+    "dutch": "gezond, gezonde",
+    "english": "healthy",
+    "vietnamese": "khỏe mạnh, có lợi cho sức khỏe",
+    "dutchsentence": "Groenten en fruit zijn gezond.",
+    "englishtranslate": "Vegetables and fruit are healthy."
+  },
+  {
+    "dutch": "goedkoop, goedkope",
+    "english": "cheap, inexpensive",
+    "vietnamese": "rẻ",
+    "dutchsentence": "Ik zoek iets goedkoop.",
+    "englishtranslate": "I am looking for something cheap."
+  },
+  {
+    "dutch": "goud, gouden",
+    "english": "gold, golden",
+    "vietnamese": "vàng, bằng vàng",
+    "dutchsentence": "Ze draagt een gouden ring.",
+    "englishtranslate": "She wears a gold ring."
+  },
+  {
+    "dutch": "gratis",
+    "english": "free (of charge)",
+    "vietnamese": "miễn phí",
+    "dutchsentence": "U krijgt een tasje gratis.",
+    "englishtranslate": "You get a small bag for free."
+  },
+  {
+    "dutch": "groot, grote",
+    "english": "big, large",
+    "vietnamese": "to, lớn",
+    "dutchsentence": "We hebben een groot warenhuis in de stad.",
+    "englishtranslate": "We have a large department store in the city."
+  },
+  {
+    "dutch": "hard, harde",
+    "english": "hard, firm",
+    "vietnamese": "cứng, khó khăn",
+    "dutchsentence": "Deze kaas is te hard.",
+    "englishtranslate": "This cheese is too hard/firm."
+  },
+  {
+    "dutch": "hoog, hoge",
+    "english": "high, tall",
+    "vietnamese": "cao",
+    "dutchsentence": "Dit gebouw is erg hoog.",
+    "englishtranslate": "This building is very high."
+  },
+  {
+    "dutch": "houdbaar, houdbare",
+    "english": "long-life, storable",
+    "vietnamese": "có thể bảo quản được, lâu hỏng",
+    "dutchsentence": "Controleer de houdbare datum op de verpakking.",
+    "englishtranslate": "Check the shelf life date on the packaging."
+  },
+  {
+    "dutch": "jong, jonge",
+    "english": "young",
+    "vietnamese": "trẻ",
+    "dutchsentence": "De baliemedewerker is een jonge vrouw.",
+    "englishtranslate": "The counter employee is a young woman."
+  },
+  {
+    "dutch": "kort, korte",
+    "english": "short",
+    "vietnamese": "ngắn",
+    "dutchsentence": "De rok is te kort.",
+    "englishtranslate": "The skirt is too short."
+  },
+  {
+    "dutch": "koud, koude",
+    "english": "cold",
+    "vietnamese": "lạnh",
+    "dutchsentence": "Wilt u een koude of warme drank?",
+    "englishtranslate": "Would you like a cold or warm drink?"
+  },
+  {
+    "dutch": "laag, lage",
+    "english": "low",
+    "vietnamese": "thấp",
+    "dutchsentence": "Dit product heeft een lage prijs.",
+    "englishtranslate": "This product has a low price."
+  },
+  {
+    "dutch": "lang, lange",
+    "english": "long, tall",
+    "vietnamese": "dài, cao",
+    "dutchsentence": "De straat is erg lang.",
+    "englishtranslate": "The street is very long."
+  },
+  {
+    "dutch": "leeg, lege",
+    "english": "empty",
+    "vietnamese": "trống, rỗng",
+    "dutchsentence": "De fles is leeg.",
+    "englishtranslate": "The bottle is empty."
+  },
+  {
+    "dutch": "lekker, lekkere",
+    "english": "tasty, nice",
+    "vietnamese": "ngon, dễ chịu",
+    "dutchsentence": "Deze appels zijn heel lekker.",
+    "englishtranslate": "These apples are very tasty."
+  },
+  {
+    "dutch": "lelijk, lelijke",
+    "english": "ugly",
+    "vietnamese": "xấu xí",
+    "dutchsentence": "Ik vind die schoenen lelijk.",
+    "englishtranslate": "I find those shoes ugly."
+  },
+  {
+    "dutch": "licht, lichte",
+    "english": "light (weight or color)",
+    "vietnamese": "nhẹ, sáng",
+    "dutchsentence": "Deze laptop is erg licht.",
+    "englishtranslate": "This laptop is very light."
+  },
+  {
+    "dutch": "makkelijk, makkelijke",
+    "english": "easy",
+    "vietnamese": "dễ dàng",
+    "dutchsentence": "Het is een makkelijke weg naar de markt.",
+    "englishtranslate": "It is an easy road to the market."
+  },
+  {
+    "dutch": "ongezond, ongezonde",
+    "english": "unhealthy",
+    "vietnamese": "không có lợi cho sức khỏe",
+    "dutchsentence": "Te veel suiker is ongezond.",
+    "englishtranslate": "Too much sugar is unhealthy."
+  },
+  {
+    "dutch": "oud, oude",
+    "english": "old",
+    "vietnamese": "cũ, già",
+    "dutchsentence": "Dit is een oude jas.",
+    "englishtranslate": "This is an old coat."
+  },
+  {
+    "dutch": "moeilijk, moeilijke",
+    "english": "difficult, hard",
+    "vietnamese": "khó",
+    "dutchsentence": "Dit is een moeilijke opgave.",
+    "englishtranslate": "This is a difficult task."
+  },
+  {
+    "dutch": "mooi, mooie",
+    "english": "beautiful, nice",
+    "vietnamese": "đẹp",
+    "dutchsentence": "Wat een mooie bloemen!",
+    "englishtranslate": "What beautiful flowers!"
+  },
+  {
+    "dutch": "nieuw, nieuwe",
+    "english": "new",
+    "vietnamese": "mới",
+    "dutchsentence": "Ik heb een nieuwe laptop gekocht.",
+    "englishtranslate": "I bought a new laptop."
+  },
+  {
+    "dutch": "rot, rotte",
+    "english": "rotten",
+    "vietnamese": "thối, hỏng",
+    "dutchsentence": "De appels zijn rot.",
+    "englishtranslate": "The apples are rotten."
+  },
+  {
+    "dutch": "sappig, sappige",
+    "english": "juicy",
+    "vietnamese": "mọng nước",
+    "dutchsentence": "Deze peren zijn sappig en zoet.",
+    "englishtranslate": "These pears are juicy and sweet."
+  },
+  {
+    "dutch": "slecht, slechte",
+    "english": "bad",
+    "vietnamese": "tệ, xấu",
+    "dutchsentence": "Dit is een slechte weg.",
+    "englishtranslate": "This is a bad road."
+  },
+  {
+    "dutch": "smal, smalle",
+    "english": "narrow",
+    "vietnamese": "hẹp",
+    "dutchsentence": "De gang is erg smal.",
+    "englishtranslate": "The aisle is very narrow."
+  },
+  {
+    "dutch": "snel, snelle",
+    "english": "fast, quick",
+    "vietnamese": "nhanh",
+    "dutchsentence": "Dit is een snelle lift.",
+    "englishtranslate": "This is a fast elevator."
+  },
+  {
+    "dutch": "ver, verre",
+    "english": "far",
+    "vietnamese": "xa",
+    "dutchsentence": "Het warenhuis is ver weg.",
+    "englishtranslate": "The department store is far away."
+  },
+  {
+    "dutch": "vers, verse",
+    "english": "fresh",
+    "vietnamese": "tươi, tươi sống",
+    "dutchsentence": "Ik koop graag verse groenten op de markt.",
+    "englishtranslate": "I like to buy fresh vegetables at the market."
+  },
+  {
+    "dutch": "vies, vieze",
+    "english": "dirty, disgusting",
+    "vietnamese": "bẩn, ghê tởm",
+    "dutchsentence": "De vloer in de winkel is vies.",
+    "englishtranslate": "The floor in the shop is dirty."
+  },
+  {
+    "dutch": "vol, volle",
+    "english": "full",
+    "vietnamese": "đầy",
+    "dutchsentence": "De parkeerplaats is vol.",
+    "englishtranslate": "The parking lot is full."
+  },
+  {
+    "dutch": "warm, warme",
+    "english": "warm",
+    "vietnamese": "ấm, nóng",
+    "dutchsentence": "Het is warm in de paskamers.",
+    "englishtranslate": "It is warm in the fitting rooms."
+  },
+  {
+    "dutch": "zacht, zachte",
+    "english": "soft",
+    "vietnamese": "mềm",
+    "dutchsentence": "Dit is een zachte trui.",
+    "englishtranslate": "This is a soft sweater."
+  },
+  {
+    "dutch": "zilver, zilveren",
+    "english": "silver, silvery",
+    "vietnamese": "bạc, bằng bạc",
+    "dutchsentence": "Ze heeft een zilveren ketting.",
+    "englishtranslate": "She has a silver necklace."
+  },
+  {
+    "dutch": "zoet, zoete",
+    "english": "sweet",
+    "vietnamese": "ngọt",
+    "dutchsentence": "De taart is erg zoet.",
+    "englishtranslate": "The cake is very sweet."
+  },
+  {
+    "dutch": "zuur, zure",
+    "english": "sour",
+    "vietnamese": "chua",
+    "dutchsentence": "Deze citroenen zijn zuur.",
+    "englishtranslate": "These lemons are sour."
+  },
+  {
+    "dutch": "zwaar, zware",
+    "english": "heavy",
+    "vietnamese": "nặng",
+    "dutchsentence": "Dit pakketje is erg zwaar.",
+    "englishtranslate": "This small package is very heavy."
+  },
+  {
+    "dutch": "links",
+    "english": "left",
+    "vietnamese": "trái, bên trái",
+    "dutchsentence": "U moet naar links kijken.",
+    "englishtranslate": "You must look to the left."
+  },
+  {
+    "dutch": "linksaf",
+    "english": "left turn",
+    "vietnamese": "rẽ trái",
+    "dutchsentence": "Bij het stoplicht gaat u linksaf.",
+    "englishtranslate": "At the traffic light, you turn left."
+  },
+  {
+    "dutch": "de linkerhand",
+    "english": "the left hand",
+    "vietnamese": "tay trái",
+    "dutchsentence": "Houd het tasje in uw linkerhand.",
+    "englishtranslate": "Hold the small bag in your left hand."
+  },
+  {
+    "dutch": "de linkerkant",
+    "english": "the left side",
+    "vietnamese": "bên trái",
+    "dutchsentence": "De kledingwinkel is aan de linkerkant.",
+    "englishtranslate": "The clothing store is on the left side."
+  },
+  {
+    "dutch": "de rechterhand",
+    "english": "the right hand",
+    "vietnamese": "tay phải",
+    "dutchsentence": "U betaalt met uw rechterhand.",
+    "englishtranslate": "You pay with your right hand."
+  },
+  {
+    "dutch": "de rechterkant",
+    "english": "the right side",
+    "vietnamese": "bên phải",
+    "dutchsentence": "De lift is aan de rechterkant.",
+    "englishtranslate": "The elevator is on the right side."
+  },
+  {
+    "dutch": "rechts",
+    "english": "right",
+    "vietnamese": "phải, bên phải",
+    "dutchsentence": "De kassa is rechts van de balie.",
+    "englishtranslate": "The cash register is to the right of the counter."
+  },
+  {
+    "dutch": "rechtsaf",
+    "english": "right turn",
+    "vietnamese": "rẽ phải",
+    "dutchsentence": "Na de rotonde gaat u rechtsaf.",
+    "englishtranslate": "After the roundabout, you turn right."
+  },
+  {
+    "dutch": "rechtdoor",
+    "english": "straight ahead",
+    "vietnamese": "đi thẳng",
+    "dutchsentence": "U moet rechtdoor lopen.",
+    "englishtranslate": "You must walk straight ahead."
+  },
+  {
+    "dutch": "hoor",
+    "english": "hear / expression of surprise/confirmation (listen)",
+    "vietnamese": "nghe / biểu thị sự ngạc nhiên/xác nhận",
+    "dutchsentence": "Ja hoor, dat is geen probleem.",
+    "englishtranslate": "Yes indeed, that's no problem."
+  },
+  {
+    "dutch": "jammer",
+    "english": "a shame, too bad",
+    "vietnamese": "tiếc, đáng tiếc",
+    "dutchsentence": "Wat jammer dat het product niet op voorraad is.",
+    "englishtranslate": "What a shame that the product is not in stock."
+  },
+  {
+    "dutch": "klopt",
+    "english": "correct, that's right",
+    "vietnamese": "đúng, chính xác",
+    "dutchsentence": "Het klopt, dat is de prijs.",
+    "englishtranslate": "That's right, that's the price."
+  },
+  {
+    "dutch": "natuurlijk",
+    "english": "naturally, of course",
+    "vietnamese": "tất nhiên, dĩ nhiên",
+    "dutchsentence": "Natuurlijk help ik u graag!",
+    "englishtranslate": "Of course I'd love to help you!"
+  },
+  {
+    "dutch": "plezier",
+    "english": "pleasure, fun",
+    "vietnamese": "niềm vui",
+    "dutchsentence": "Veel plezier met uw aankoop!",
+    "englishtranslate": "Have fun with your purchase!"
+  },
+  {
+    "dutch": "spijt",
+    "english": "regret",
+    "vietnamese": "hối tiếc, ân hận",
+    "dutchsentence": "Het spijt me, we hebben dit niet meer.",
+    "englishtranslate": "I'm sorry, we don't have this anymore."
+  },
+  {
+    "dutch": "ziens",
+    "english": "seeing (in 'tot ziens' - goodbye)",
+    "vietnamese": "gặp lại",
+    "dutchsentence": "Tot ziens bij de slijterij!",
+    "englishtranslate": "See you at the liquor store!"
+  },
+  {
+    "dutch": "alstublieft",
+    "english": "please / here you are (formal)",
+    "vietnamese": "xin vui lòng / của quý vị đây",
+    "dutchsentence": "Hier is uw korting, alstublieft.",
+    "englishtranslate": "Here is your discount, here you are."
+  },
+  {
+    "dutch": "andere",
+    "english": "other, different",
+    "vietnamese": "khác",
+    "dutchsentence": "Heeft u nog andere maten?",
+    "englishtranslate": "Do you have any other sizes?"
+  },
+  {
+    "dutch": "begane grond",
+    "english": "ground floor",
+    "vietnamese": "tầng trệt",
+    "dutchsentence": "De schoenenzaak is op de begane grond.",
+    "englishtranslate": "The shoe store is on the ground floor."
+  },
+  {
+    "dutch": "beurt",
+    "english": "turn (in a sequence)",
+    "vietnamese": "lượt, phiên",
+    "dutchsentence": "Het is uw beurt om af te rekenen.",
+    "englishtranslate": "It is your turn to pay."
+  },
+  {
+    "dutch": "binnen",
+    "english": "inside, within",
+    "vietnamese": "bên trong, trong vòng",
+    "dutchsentence": "U kunt binnen pinnen.",
+    "englishtranslate": "You can pay by debit card inside."
+  },
+  {
+    "dutch": "buiten",
+    "english": "outside",
+    "vietnamese": "bên ngoài",
+    "dutchsentence": "De kramen staan buiten op de markt.",
+    "englishtranslate": "The stalls are outside at the market."
+  },
+  {
+    "dutch": "contant",
+    "english": "cash",
+    "vietnamese": "tiền mặt",
+    "dutchsentence": "Wilt u contant betalen?",
+    "englishtranslate": "Would you like to pay cash?"
+  },
+  {
+    "dutch": "daar",
+    "english": "there",
+    "vietnamese": "ở đó, chỗ đó",
+    "dutchsentence": "De lift is daar, aan de rechterkant.",
+    "englishtranslate": "The elevator is there, on the right side."
+  },
+  {
+    "dutch": "elkaar",
+    "english": "each other",
+    "vietnamese": "nhau",
+    "dutchsentence": "Ze zien elkaar op de markt.",
+    "englishtranslate": "They see each other at the market."
+  },
+  {
+    "dutch": "gang",
+    "english": "aisle, corridor, way",
+    "vietnamese": "lối đi, hành lang",
+    "dutchsentence": "Volg de gang naar de paskamers.",
+    "englishtranslate": "Follow the corridor to the fitting rooms."
+  },
+  {
+    "dutch": "gepast",
+    "english": "exact (money)",
+    "vietnamese": "vừa đủ (tiền)",
+    "dutchsentence": "Heeft u gepast geld, alstublieft?",
+    "englishtranslate": "Do you have the exact change, please?"
+  },
+  {
+    "dutch": "graag",
+    "english": "gladly, with pleasure",
+    "vietnamese": "rất muốn, sẵn lòng",
+    "dutchsentence": "Ik wil graag een kilo aardappels.",
+    "englishtranslate": "I would gladly like one kilo of potatoes."
+  },
+  {
+    "dutch": "graag",
+    "english": "please (as a response)",
+    "vietnamese": "xin mời, vâng",
+    "dutchsentence": "Wilt u dit tasje? Graag.",
+    "englishtranslate": "Would you like this small bag? Yes, please."
+  },
+  {
+    "dutch": "helaas",
+    "english": "unfortunately",
+    "vietnamese": "thật không may",
+    "dutchsentence": "Helaas is het warenhuis gesloten.",
+    "englishtranslate": "Unfortunately, the department store is closed."
+  },
+  {
+    "dutch": "helemaal",
+    "english": "completely, entirely",
+    "vietnamese": "hoàn toàn",
+    "dutchsentence": "U heeft helemaal gelijk.",
+    "englishtranslate": "You are completely right."
+  },
+  {
+    "dutch": "hetzelfde",
+    "english": "the same",
+    "vietnamese": "cùng một thứ, giống nhau",
+    "dutchsentence": "Ik wil hetzelfde, alstublieft.",
+    "englishtranslate": "I would like the same, please."
+  },
+  {
+    "dutch": "hier",
+    "english": "here",
+    "vietnamese": "ở đây",
+    "dutchsentence": "U kunt hier afrekenen.",
+    "englishtranslate": "You can check out here."
+  },
+  {
+    "dutch": "iets anders",
+    "english": "something else",
+    "vietnamese": "cái gì khác",
+    "dutchsentence": "Wilt u nog iets anders?",
+    "englishtranslate": "Would you like anything else?"
+  },
+  {
+    "dutch": "kleiner",
+    "english": "smaller",
+    "vietnamese": "nhỏ hơn",
+    "dutchsentence": "Ik zoek een maat kleiner.",
+    "englishtranslate": "I am looking for a smaller size."
+  },
+  {
+    "dutch": "misschien",
+    "english": "maybe, perhaps",
+    "vietnamese": "có lẽ, có thể",
+    "dutchsentence": "Misschien ga ik morgen naar de bouwmarkt.",
+    "englishtranslate": "Maybe I will go to the hardware store tomorrow."
+  },
+  {
+    "dutch": "nog",
+    "english": "still, yet, more",
+    "vietnamese": "vẫn, thêm nữa",
+    "dutchsentence": "Wilt u nog iets drinken?",
+    "englishtranslate": "Would you like something more to drink?"
+  },
+  {
+    "dutch": "speciaals",
+    "english": "something special",
+    "vietnamese": "cái gì đặc biệt",
+    "dutchsentence": "Zoekt u iets speciaals?",
+    "englishtranslate": "Are you looking for something special?"
+  },
+  {
+    "dutch": "sorry",
+    "english": "sorry",
+    "vietnamese": "xin lỗi",
+    "dutchsentence": "Sorry, ik heb geen contant geld.",
+    "englishtranslate": "Sorry, I don't have any cash."
+  }
+]
