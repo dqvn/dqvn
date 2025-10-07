@@ -42,7 +42,7 @@ playStopButton.addEventListener('click', () => {
 createLeftMenu();
 
 // init data
-loadJsonData('ch05', reloadTable);
+loadJsonData('thema01', reloadTable);
 
 // set footer year
 year.textContent = new Date().getFullYear();
@@ -183,7 +183,7 @@ function reloadTable(jsonData) {
     <td>${index + 1}</td>
     <td onclick="speakText('${word.dutch}')"><span class="dutch-word" data-index="${index}">${word.dutch}</span></td>
     <td onclick="speakEngText('${word.english}')"><span class="hide-text">${word.english}</span></td>
-    <td onclick="speakText('${word.dutchsentence}')"><span class="hide-text">${word.dutchsentence}</span><span class="hide-text">${word.englishtranslate}</span></td>
+    <td onclick="speakText('${word.dutchsentence}')"><span class="hide-text">${word.dutchsentence}<br/>${word.englishtranslate}</span></td>
     <td><span class="hide-text">${word.vietnamese}</span></td>
   `;
     tableBody.appendChild(row);
