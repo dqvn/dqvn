@@ -1,0 +1,814 @@
+[
+  {
+    "dutch": "de achtergrond",
+    "english": "the background",
+    "vietnamese": "phông nền, bối cảnh",
+    "dutchsentence": "Op de achtergrond van de foto zie je de bergen.",
+    "englishtranslate": "In the background of the photo, you see the mountains."
+  },
+  {
+    "dutch": "het alarmnummer",
+    "english": "the emergency number",
+    "vietnamese": "số điện thoại khẩn cấp",
+    "dutchsentence": "Bel onmiddellijk het alarmnummer bij brand.",
+    "englishtranslate": "Call the emergency number immediately in case of fire."
+  },
+  {
+    "dutch": "de apotheek, apotheken",
+    "english": "the pharmacy, pharmacies",
+    "vietnamese": "nhà thuốc, tiệm thuốc",
+    "dutchsentence": "Ik moet naar de apotheek om mijn medicijnen op te halen.",
+    "englishtranslate": "I have to go to the pharmacy to pick up my medicine."
+  },
+  {
+    "dutch": "de balans",
+    "english": "the balance",
+    "vietnamese": "sự cân bằng, cán cân",
+    "dutchsentence": "Het is belangrijk om een goede balans te vinden tussen werk en privé.",
+    "englishtranslate": "It is important to find a good balance between work and private life."
+  },
+  {
+    "dutch": "de bijsluiter, bijsluiters",
+    "english": "the patient information leaflet, leaflets",
+    "vietnamese": "tờ hướng dẫn sử dụng (thuốc)",
+    "dutchsentence": "Lees de bijsluiter goed voordat u het geneesmiddel inneemt.",
+    "englishtranslate": "Read the patient information leaflet carefully before taking the medicine."
+  },
+  {
+    "dutch": "de bijwerking, bijwerkingen",
+    "english": "the side effect, side effects",
+    "vietnamese": "tác dụng phụ",
+    "dutchsentence": "Hoofdpijn kan een bijwerking van dit medicijn zijn.",
+    "englishtranslate": "Headache can be a side effect of this medicine."
+  },
+  {
+    "dutch": "de crème, crèmes",
+    "english": "the cream, creams",
+    "vietnamese": "kem (bôi), kem (tươi)",
+    "dutchsentence": "Breng de crème twee keer per dag aan op de droge huid.",
+    "englishtranslate": "Apply the cream to the dry skin twice a day."
+  },
+  {
+    "dutch": "de diëtist, diëtisten",
+    "english": "the dietitian, dietitians",
+    "vietnamese": "chuyên gia dinh dưỡng",
+    "dutchsentence": "De diëtist hielp me met het opstellen van een gezond dieet.",
+    "englishtranslate": "The dietitian helped me with setting up a healthy diet."
+  },
+  {
+    "dutch": "de droger, drogers",
+    "english": "the dryer, dryers",
+    "vietnamese": "máy sấy (quần áo)",
+    "dutchsentence": "De was is droog; haal het uit de droger.",
+    "englishtranslate": "The laundry is dry; take it out of the dryer."
+  },
+  {
+    "dutch": "de drogist, drogisten",
+    "english": "the drugstore, drugstores (non-prescription items)",
+    "vietnamese": "cửa hàng tạp hóa/mỹ phẩm (không bán thuốc theo toa)",
+    "dutchsentence": "Je kunt een tandenborstel kopen bij de drogist.",
+    "englishtranslate": "You can buy a toothbrush at the drugstore."
+  },
+  {
+    "dutch": "de energie",
+    "english": "the energy",
+    "vietnamese": "năng lượng",
+    "dutchsentence": "Ik heb veel energie nodig voor deze lange werkdag.",
+    "englishtranslate": "I need a lot of energy for this long workday."
+  },
+  {
+    "dutch": "de eeuw, eeuwen",
+    "english": "the century, centuries",
+    "vietnamese": "thế kỷ",
+    "dutchsentence": "De 21e eeuw is de huidige eeuw.",
+    "englishtranslate": "The 21st century is the current century."
+  },
+  {
+    "dutch": "de geest",
+    "english": "the mind/spirit",
+    "vietnamese": "tinh thần, linh hồn, trí óc",
+    "dutchsentence": "Een gezonde geest in een gezond lichaam.",
+    "englishtranslate": "A healthy mind in a healthy body."
+  },
+  {
+    "dutch": "het geneesmiddel, geneesmiddelen",
+    "english": "the medicine/remedy, medicines/remedies",
+    "vietnamese": "thuốc, dược phẩm",
+    "dutchsentence": "Dit geneesmiddel helpt tegen de pijn.",
+    "englishtranslate": "This medicine helps against the pain."
+  },
+  {
+    "dutch": "de griep",
+    "english": "the flu",
+    "vietnamese": "bệnh cúm",
+    "dutchsentence": "Ik heb de griep en moet in bed blijven.",
+    "englishtranslate": "I have the flu and must stay in bed."
+  },
+  {
+    "dutch": "de gezondheid",
+    "english": "the health",
+    "vietnamese": "sức khỏe",
+    "dutchsentence": "Gezonde voeding is belangrijk voor een goede gezondheid.",
+    "englishtranslate": "Healthy food is important for good health."
+  },
+  {
+    "dutch": "de huisartsenpraktijk",
+    "english": "the general practitioner's practice (GP's office)",
+    "vietnamese": "phòng khám bác sĩ đa khoa/phòng khám gia đình",
+    "dutchsentence": "Je kunt bellen naar de huisartsenpraktijk voor een afspraak.",
+    "englishtranslate": "You can call the GP's practice for an appointment."
+  },
+  {
+    "dutch": "de journalist, journalisten",
+    "english": "the journalist, journalists",
+    "vietnamese": "nhà báo, phóng viên",
+    "dutchsentence": "De journalist schreef een artikel voor de krant.",
+    "englishtranslate": "The journalist wrote an article for the newspaper."
+  },
+  {
+    "dutch": "de pijn",
+    "english": "the pain/ache",
+    "vietnamese": "cơn đau",
+    "dutchsentence": "Ik heb veel pijn aan mijn been.",
+    "englishtranslate": "I have a lot of pain in my leg."
+  },
+  {
+    "dutch": "de kam, kammen",
+    "english": "the comb, combs",
+    "vietnamese": "cái lược",
+    "dutchsentence": "Gebruik een kam om je haar te ontwarren.",
+    "englishtranslate": "Use a comb to detangle your hair."
+  },
+  {
+    "dutch": "de kappers, kappers",
+    "english": "the hairdresser's/barber's (singular is 'de kapper')",
+    "vietnamese": "thợ cắt tóc (nghề nghiệp, danh từ số ít là 'de kapper')",
+    "dutchsentence": "De kappers in deze salon zijn erg goed.",
+    "englishtranslate": "The hairdressers in this salon are very good."
+  },
+  {
+    "dutch": "de klacht, klachten",
+    "english": "the complaint, complaints",
+    "vietnamese": "lời than phiền, triệu chứng (bệnh)",
+    "dutchsentence": "Mijn voornaamste klacht is hoofdpijn.",
+    "englishtranslate": "My main complaint is a headache."
+  },
+  {
+    "dutch": "de koorts",
+    "english": "the fever",
+    "vietnamese": "cơn sốt",
+    "dutchsentence": "De patiënt heeft hoge koorts.",
+    "englishtranslate": "The patient has a high fever."
+  },
+  {
+    "dutch": "het klimaat",
+    "english": "the climate",
+    "vietnamese": "khí hậu",
+    "dutchsentence": "Het klimaat is de afgelopen jaren sterk veranderd.",
+    "englishtranslate": "The climate has changed greatly in recent years."
+  },
+  {
+    "dutch": "de krant, kranten",
+    "english": "the newspaper, newspapers",
+    "vietnamese": "tờ báo",
+    "dutchsentence": "Ik lees elke ochtend de krant.",
+    "englishtranslate": "I read the newspaper every morning."
+  },
+  {
+    "dutch": "de kunstenaar",
+    "english": "the artist",
+    "vietnamese": "nghệ sĩ, họa sĩ",
+    "dutchsentence": "De kunstenaar exposeert zijn nieuwe schilderijen.",
+    "englishtranslate": "The artist is exhibiting his new paintings."
+  },
+  {
+    "dutch": "het landschap",
+    "english": "the landscape",
+    "vietnamese": "phong cảnh, cảnh quan",
+    "dutchsentence": "Het landschap in de bergen is prachtig.",
+    "englishtranslate": "The landscape in the mountains is beautiful."
+  },
+  {
+    "dutch": "de levensstijl",
+    "english": "the lifestyle",
+    "vietnamese": "lối sống, phong cách sống",
+    "dutchsentence": "Een gezonde levensstijl omvat sport en goede voeding.",
+    "englishtranslate": "A healthy lifestyle includes sports and good nutrition."
+  },
+  {
+    "dutch": "het lichaam, lichamen",
+    "english": "the body, bodies",
+    "vietnamese": "cơ thể",
+    "dutchsentence": "Zorg goed voor je lichaam door gezond te eten.",
+    "englishtranslate": "Take good care of your body by eating healthily."
+  },
+  {
+    "dutch": "de massage, massages",
+    "english": "the massage, massages",
+    "vietnamese": "sự xoa bóp, mát-xa",
+    "dutchsentence": "Ik heb een ontspannende massage gehad.",
+    "englishtranslate": "I had a relaxing massage."
+  },
+  {
+    "dutch": "het medicijn, medicijnen",
+    "english": "the medicine, medicines",
+    "vietnamese": "thuốc, dược phẩm",
+    "dutchsentence": "U moet dit medicijn drie keer per dag innemen.",
+    "englishtranslate": "You must take this medicine three times a day."
+  },
+  {
+    "dutch": "het nagelschaartje, nagelschaartjes",
+    "english": "the nail scissors",
+    "vietnamese": "cây kéo cắt móng tay",
+    "dutchsentence": "Ik gebruik een nagelschaartje om mijn nagels te knippen.",
+    "englishtranslate": "I use nail scissors to cut my nails."
+  },
+  {
+    "dutch": "de nagelstudio",
+    "english": "the nail salon",
+    "vietnamese": "tiệm làm móng",
+    "dutchsentence": "Ze gaat elke maand naar de nagelstudio voor een manicure.",
+    "englishtranslate": "She goes to the nail salon every month for a manicure."
+  },
+  {
+    "dutch": "de nagelvijl, nagelvijlen",
+    "english": "the nail file, nail files",
+    "vietnamese": "cây dũa móng tay",
+    "dutchsentence": "Heeft u een nagelvijl? Ik heb een nagel gebroken.",
+    "englishtranslate": "Do you have a nail file? I broke a nail."
+  },
+  {
+    "dutch": "de ontspanning",
+    "english": "the relaxation",
+    "vietnamese": "sự thư giãn",
+    "dutchsentence": "Yoga is goed voor de ontspanning.",
+    "englishtranslate": "Yoga is good for relaxation."
+  },
+  {
+    "dutch": "de oorlog, oorlogen",
+    "english": "the war, wars",
+    "vietnamese": "chiến tranh",
+    "dutchsentence": "De oorlog had grote gevolgen voor het land.",
+    "englishtranslate": "The war had major consequences for the country."
+  },
+  {
+    "dutch": "de pedicure",
+    "english": "the pedicure",
+    "vietnamese": "sự chăm sóc móng chân",
+    "dutchsentence": "Een pedicure is goed voor de verzorging van je voeten.",
+    "englishtranslate": "A pedicure is good for the care of your feet."
+  },
+  {
+    "dutch": "de praktijk",
+    "english": "the practice (e.g., GP's practice/office or the actual doing of something)",
+    "vietnamese": "phòng mạch, thực tiễn",
+    "dutchsentence": "De dokter werkt in een groepspraktijk.",
+    "englishtranslate": "The doctor works in a group practice."
+  },
+  {
+    "dutch": "het recept",
+    "english": "the prescription/recipe",
+    "vietnamese": "đơn thuốc, công thức nấu ăn",
+    "dutchsentence": "De dokter schreef een nieuw recept voor me uit.",
+    "englishtranslate": "The doctor wrote a new prescription for me."
+  },
+  {
+    "dutch": "de rust",
+    "english": "the rest/calmness",
+    "vietnamese": "sự nghỉ ngơi, sự yên tĩnh",
+    "dutchsentence": "Na een lange dag heb ik behoefte aan rust.",
+    "englishtranslate": "After a long day, I need some rest."
+  },
+  {
+    "dutch": "de sauna",
+    "english": "the sauna",
+    "vietnamese": "phòng tắm hơi (sauna)",
+    "dutchsentence": "De sauna is heel ontspannend na het sporten.",
+    "englishtranslate": "The sauna is very relaxing after exercising."
+  },
+  {
+    "dutch": "de schoonheidssalon",
+    "english": "the beauty salon",
+    "vietnamese": "thẩm mỹ viện, salon làm đẹp",
+    "dutchsentence": "Ze heeft een afspraak gemaakt bij de schoonheidssalon.",
+    "englishtranslate": "She made an appointment at the beauty salon."
+  },
+  {
+    "dutch": "de shampoo",
+    "english": "the shampoo",
+    "vietnamese": "dầu gội đầu",
+    "dutchsentence": "Vergeet de shampoo niet mee te nemen naar de douche.",
+    "englishtranslate": "Don't forget to take the shampoo with you to the shower."
+  },
+  {
+    "dutch": "de snee",
+    "english": "the cut (wound)",
+    "vietnamese": "vết cắt",
+    "dutchsentence": "Ik heb een kleine snee in mijn vinger.",
+    "englishtranslate": "I have a small cut on my finger."
+  },
+  {
+    "dutch": "de tandenborstel, tandenborstels",
+    "english": "the toothbrush, toothbrushes",
+    "vietnamese": "bàn chải đánh răng",
+    "dutchsentence": "Ik gebruik een elektrische tandenborstel.",
+    "englishtranslate": "I use an electric toothbrush."
+  },
+  {
+    "dutch": "de tandpasta, tandpasta’s",
+    "english": "the toothpaste, toothpastes",
+    "vietnamese": "kem đánh răng",
+    "dutchsentence": "Is er nog tandpasta in huis?",
+    "englishtranslate": "Is there any toothpaste left in the house?"
+  },
+  {
+    "dutch": "de verandering, veranderingen",
+    "english": "the change, changes",
+    "vietnamese": "sự thay đổi",
+    "dutchsentence": "Er zijn grote veranderingen in het beleid aangekondigd.",
+    "englishtranslate": "Major changes in policy have been announced."
+  },
+  {
+    "dutch": "de verblijfsvergunning",
+    "english": "the residence permit",
+    "vietnamese": "giấy phép cư trú",
+    "dutchsentence": "Hij heeft een aanvraag ingediend voor een verblijfsvergunning.",
+    "englishtranslate": "He has submitted an application for a residence permit."
+  },
+  {
+    "dutch": "de verhoging",
+    "english": "the increase/elevation/high temperature",
+    "vietnamese": "sự tăng lên, nhiệt độ cao (sốt nhẹ)",
+    "dutchsentence": "Ik heb geen koorts, maar wel een lichte verhoging.",
+    "englishtranslate": "I don't have a fever, but I do have a slight high temperature."
+  },
+  {
+    "dutch": "het voordeel, voordelen",
+    "english": "the advantage, advantages",
+    "vietnamese": "lợi ích, ưu điểm",
+    "dutchsentence": "Het grote voordeel is dat het dichtbij is.",
+    "englishtranslate": "The big advantage is that it is nearby."
+  },
+  {
+    "dutch": "de wasmachine, wasmachines",
+    "english": "the washing machine, washing machines",
+    "vietnamese": "máy giặt",
+    "dutchsentence": "De wasmachine is kapot en moet gerepareerd worden.",
+    "englishtranslate": "The washing machine is broken and needs to be repaired."
+  },
+  {
+    "dutch": "het zeer",
+    "english": "the hurt/soreness/ache",
+    "vietnamese": "vết đau, sự đau đớn",
+    "dutchsentence": "De wond doet zeer.",
+    "englishtranslate": "The wound hurts."
+  },
+  {
+    "dutch": "het ziekenhuis, ziekenhuizen",
+    "english": "the hospital, hospitals",
+    "vietnamese": "bệnh viện",
+    "dutchsentence": "Hij moest naar het ziekenhuis voor een operatie.",
+    "englishtranslate": "He had to go to the hospital for an operation."
+  },
+  {
+    "dutch": "de zonnebank, zonnebanken",
+    "english": "the sunbed, sunbeds",
+    "vietnamese": "giường tắm nắng (nhân tạo)",
+    "dutchsentence": "Regelmatig gebruik van de zonnebank kan schadelijk zijn.",
+    "englishtranslate": "Regular use of the sunbed can be harmful."
+  },
+  {
+    "dutch": "de zorgverlener",
+    "english": "the healthcare provider",
+    "vietnamese": "nhà cung cấp dịch vụ chăm sóc sức khỏe",
+    "dutchsentence": "Een huisarts is een belangrijke zorgverlener.",
+    "englishtranslate": "A general practitioner is an important healthcare provider."
+  },
+  {
+    "dutch": "aandoen",
+    "english": "to put on (clothes)/to switch on",
+    "vietnamese": "mặc vào, bật lên",
+    "dutchsentence": "Wil je je jas aandoen? Het is koud buiten.",
+    "englishtranslate": "Do you want to put on your coat? It is cold outside."
+  },
+  {
+    "dutch": "aantrekken",
+    "english": "to put on (clothes)/to attract",
+    "vietnamese": "mặc vào, thu hút",
+    "dutchsentence": "Ik ga mijn nieuwe schoenen aantrekken.",
+    "englishtranslate": "I am going to put on my new shoes."
+  },
+  {
+    "dutch": "achterlaten",
+    "english": "to leave behind",
+    "vietnamese": "để lại, bỏ lại",
+    "dutchsentence": "Vergeet niet je sleutels achter te laten bij de receptie.",
+    "englishtranslate": "Don't forget to leave your keys at the reception."
+  },
+  {
+    "dutch": "ademen",
+    "english": "to breathe",
+    "vietnamese": "thở",
+    "dutchsentence": "Hij kon nauwelijks ademen door de rook.",
+    "englishtranslate": "He could barely breathe because of the smoke."
+  },
+  {
+    "dutch": "afmaken",
+    "english": "to finish/to complete",
+    "vietnamese": "hoàn thành, kết thúc",
+    "dutchsentence": "Je moet eerst je huiswerk afmaken voordat je gaat spelen.",
+    "englishtranslate": "You must first finish your homework before you go play."
+  },
+  {
+    "dutch": "afzeggen",
+    "english": "to cancel (an appointment)",
+    "vietnamese": "hủy (cuộc hẹn)",
+    "dutchsentence": "Ik moest mijn afspraak bij de kapper afzeggen.",
+    "englishtranslate": "I had to cancel my appointment at the hairdresser."
+  },
+  {
+    "dutch": "annuleren",
+    "english": "to cancel (a reservation/booking)",
+    "vietnamese": "hủy bỏ (đặt chỗ, chuyến đi)",
+    "dutchsentence": "We moesten de vlucht naar Parijs annuleren.",
+    "englishtranslate": "We had to cancel the flight to Paris."
+  },
+  {
+    "dutch": "betekenen",
+    "english": "to mean/to signify",
+    "vietnamese": "có nghĩa là, biểu thị",
+    "dutchsentence": "Wat betekent dit woord in het Vietnamees?",
+    "englishtranslate": "What does this word mean in Vietnamese?"
+  },
+  {
+    "dutch": "bevatten",
+    "english": "to contain/to comprise",
+    "vietnamese": "chứa đựng, bao gồm",
+    "dutchsentence": "Dit product bevat geen kunstmatige kleurstoffen.",
+    "englishtranslate": "This product does not contain artificial colorings."
+  },
+  {
+    "dutch": "dichtdoen",
+    "english": "to close",
+    "vietnamese": "đóng lại",
+    "dutchsentence": "Wil je het raam dichtdoen? Het is koud.",
+    "englishtranslate": "Would you close the window? It is cold."
+  },
+  {
+    "dutch": "genezen",
+    "english": "to cure/to heal/to recover",
+    "vietnamese": "chữa lành, khỏi bệnh",
+    "dutchsentence": "Hopelijk zal hij snel genezen van zijn ziekte.",
+    "englishtranslate": "Hopefully, he will quickly recover from his illness."
+  },
+  {
+    "dutch": "heersen",
+    "english": "to rule/to prevail/to dominate",
+    "vietnamese": "thống trị, phổ biến (bệnh tật, không khí)",
+    "dutchsentence": "Er heerst een griepepidemie in de stad.",
+    "englishtranslate": "A flu epidemic is prevailing in the city."
+  },
+  {
+    "dutch": "herstellen",
+    "english": "to recover/to restore/to repair",
+    "vietnamese": "hồi phục, sửa chữa",
+    "dutchsentence": "Het duurt even voordat je volledig herstelt van zo'n operatie.",
+    "englishtranslate": "It takes a while before you fully recover from such an operation."
+  },
+  {
+    "dutch": "hoesten",
+    "english": "to cough",
+    "vietnamese": "ho",
+    "dutchsentence": "Hij hoest al de hele nacht.",
+    "englishtranslate": "He has been coughing all night long."
+  },
+  {
+    "dutch": "innemen",
+    "english": "to take (medicine)/to occupy",
+    "vietnamese": "uống, dùng (thuốc), chiếm",
+    "dutchsentence": "U moet dit medicijn innemen na de maaltijd.",
+    "englishtranslate": "You must take this medicine after the meal."
+  },
+  {
+    "dutch": "inschrijven",
+    "english": "to register/to enroll",
+    "vietnamese": "đăng ký, ghi danh",
+    "dutchsentence": "Je moet je inschrijven bij de gemeente als je hier woont.",
+    "englishtranslate": "You have to register with the municipality if you live here."
+  },
+  {
+    "dutch": "lijken op",
+    "english": "to resemble/to look like",
+    "vietnamese": "giống như, trông giống",
+    "dutchsentence": "Zij lijkt erg op haar moeder.",
+    "englishtranslate": "She looks very much like her mother."
+  },
+  {
+    "dutch": "meedoen",
+    "english": "to participate/to join in",
+    "vietnamese": "tham gia",
+    "dutchsentence": "Wil je meedoen met het spel?",
+    "englishtranslate": "Do you want to join in the game?"
+  },
+  {
+    "dutch": "meenemen",
+    "english": "to take along/to bring along",
+    "vietnamese": "mang theo",
+    "dutchsentence": "Vergeet je paraplu niet mee te nemen, het gaat regenen.",
+    "englishtranslate": "Don't forget to take your umbrella, it's going to rain."
+  },
+  {
+    "dutch": "onderzoeken",
+    "english": "to examine/to investigate",
+    "vietnamese": "khám bệnh, điều tra, nghiên cứu",
+    "dutchsentence": "De dokter zal de patiënt onderzoeken.",
+    "englishtranslate": "The doctor will examine the patient."
+  },
+  {
+    "dutch": "ontvangen",
+    "english": "to receive/to welcome",
+    "vietnamese": "nhận, tiếp đón",
+    "dutchsentence": "Ik heb een brief van de gemeente ontvangen.",
+    "englishtranslate": "I have received a letter from the municipality."
+  },
+  {
+    "dutch": "opendoen",
+    "english": "to open (a door, window, etc.)",
+    "vietnamese": "mở ra",
+    "dutchsentence": "Wil je de deur opendoen voor de gasten?",
+    "englishtranslate": "Would you open the door for the guests?"
+  },
+  {
+    "dutch": "ophalen",
+    "english": "to pick up/to collect",
+    "vietnamese": "đón, lấy",
+    "dutchsentence": "Ik moet mijn kinderen ophalen van school.",
+    "englishtranslate": "I have to pick up my children from school."
+  },
+  {
+    "dutch": "opgroeien",
+    "english": "to grow up",
+    "vietnamese": "lớn lên, trưởng thành",
+    "dutchsentence": "Ik ben opgegroeid in een klein dorp.",
+    "englishtranslate": "I grew up in a small village."
+  },
+  {
+    "dutch": "opnemen",
+    "english": "to admit (to a hospital)/to record/to answer (a phone)",
+    "vietnamese": "nhập viện, ghi âm, nhấc máy (điện thoại)",
+    "dutchsentence": "De dokter besloot de patiënt in het ziekenhuis op te nemen.",
+    "englishtranslate": "The doctor decided to admit the patient to the hospital."
+  },
+  {
+    "dutch": "opruimen",
+    "english": "to tidy up/to clean up",
+    "vietnamese": "dọn dẹp",
+    "dutchsentence": "Ruim je kamer op voordat je gaat spelen.",
+    "englishtranslate": "Tidy up your room before you go play."
+  },
+  {
+    "dutch": "overnemen",
+    "english": "to take over/to adopt (a habit)",
+    "vietnamese": "tiếp quản, tiếp nhận",
+    "dutchsentence": "Ze gaat het bedrijf van haar vader overnemen.",
+    "englishtranslate": "She is going to take over her father's company."
+  },
+  {
+    "dutch": "strijken",
+    "english": "to iron",
+    "vietnamese": "ủi (quần áo)",
+    "dutchsentence": "Ik moet mijn overhemden nog strijken.",
+    "englishtranslate": "I still have to iron my shirts."
+  },
+  {
+    "dutch": "uitdoen",
+    "english": "to take off (clothes)/to switch off (light)",
+    "vietnamese": "cởi ra, tắt đi",
+    "dutchsentence": "Wil je je schoenen uitdoen voordat je naar binnen gaat?",
+    "englishtranslate": "Would you take off your shoes before you go inside?"
+  },
+  {
+    "dutch": "uitgaan",
+    "english": "to go out (for entertainment)/to go out (light, fire)",
+    "vietnamese": "đi chơi, đi ra ngoài, tắt (đèn, lửa)",
+    "dutchsentence": "Wij gaan vanavond uit eten en daarna naar de bioscoop.",
+    "englishtranslate": "We are going out for dinner tonight and then to the cinema."
+  },
+  {
+    "dutch": "uitnodigen",
+    "english": "to invite",
+    "vietnamese": "mời",
+    "dutchsentence": "Ik heb al mijn vrienden uitgenodigd voor mijn feestje.",
+    "englishtranslate": "I have invited all my friends to my party."
+  },
+  {
+    "dutch": "uitslapen",
+    "english": "to sleep in",
+    "vietnamese": "ngủ nướng",
+    "dutchsentence": "Morgen is het weekend, dus ik kan uitslapen.",
+    "englishtranslate": "Tomorrow is the weekend, so I can sleep in."
+  },
+  {
+    "dutch": "uitstappen",
+    "english": "to get off/to step out (of a vehicle)",
+    "vietnamese": "xuống xe",
+    "dutchsentence": "U moet bij de volgende halte uitstappen.",
+    "englishtranslate": "You must get off at the next stop."
+  },
+  {
+    "dutch": "uitzetten",
+    "english": "to turn off/to switch off",
+    "vietnamese": "tắt đi",
+    "dutchsentence": "Wil je de televisie uitzetten als je weggaat?",
+    "englishtranslate": "Would you turn off the television when you leave?"
+  },
+  {
+    "dutch": "verplaatsen",
+    "english": "to move/to relocate/to postpone",
+    "vietnamese": "di chuyển, dời lại",
+    "dutchsentence": "We moeten de vergadering verplaatsen naar volgende week.",
+    "englishtranslate": "We have to postpone the meeting until next week."
+  },
+  {
+    "dutch": "vluchten",
+    "english": "to flee/to escape",
+    "vietnamese": "chạy trốn, trốn thoát",
+    "dutchsentence": "De familie moest vluchten voor de oorlog.",
+    "englishtranslate": "The family had to flee from the war."
+  },
+  {
+    "dutch": "zorgen voor",
+    "english": "to take care of/to provide for",
+    "vietnamese": "chăm sóc, lo liệu",
+    "dutchsentence": "Wie zorgt er voor de kinderen als je weg bent?",
+    "englishtranslate": "Who takes care of the children when you are away?"
+  },
+  {
+    "dutch": "van",
+    "english": "of/from",
+    "vietnamese": "của, từ",
+    "dutchsentence": "Dit is de tas van mijn zus.",
+    "englishtranslate": "This is my sister's bag."
+  },
+  {
+    "dutch": "sinds",
+    "english": "since",
+    "vietnamese": "kể từ khi",
+    "dutchsentence": "Ik woon hier sinds 2020.",
+    "englishtranslate": "I have lived here since 2020."
+  },
+  {
+    "dutch": "bijzonder",
+    "english": "special/extraordinary/particular",
+    "vietnamese": "đặc biệt, phi thường, riêng biệt",
+    "dutchsentence": "Dat is een bijzonder talent.",
+    "englishtranslate": "That is a special talent."
+  },
+  {
+    "dutch": "gebroken",
+    "english": "broken",
+    "vietnamese": "bị gãy, bị vỡ",
+    "dutchsentence": "Ze heeft een gebroken been.",
+    "englishtranslate": "She has a broken leg."
+  },
+  {
+    "dutch": "gespannen",
+    "english": "tense/stressed",
+    "vietnamese": "căng thẳng",
+    "dutchsentence": "Ik voel me erg gespannen voor het examen.",
+    "englishtranslate": "I feel very tense for the exam."
+  },
+  {
+    "dutch": "lastig",
+    "english": "difficult/annoying/troublesome",
+    "vietnamese": "khó khăn, phiền phức",
+    "dutchsentence": "Het is een lastige situatie.",
+    "englishtranslate": "It is a difficult situation."
+  },
+  {
+    "dutch": "misselijk",
+    "english": "nauseous",
+    "vietnamese": "buồn nôn",
+    "dutchsentence": "Ik ben misselijk en moet overgeven.",
+    "englishtranslate": "I am nauseous and need to vomit."
+  },
+  {
+    "dutch": "moe",
+    "english": "tired",
+    "vietnamese": "mệt mỏi",
+    "dutchsentence": "Na het harde werk ben ik erg moe.",
+    "englishtranslate": "After the hard work, I am very tired."
+  },
+  {
+    "dutch": "tevreden",
+    "english": "satisfied/content",
+    "vietnamese": "hài lòng",
+    "dutchsentence": "Ik ben tevreden met het resultaat.",
+    "englishtranslate": "I am satisfied with the result."
+  },
+  {
+    "dutch": "verbrand",
+    "english": "burnt/sunburnt",
+    "vietnamese": "bị cháy, bị rám nắng/bỏng nắng",
+    "dutchsentence": "Pas op dat je huid niet verbrandt in de zon.",
+    "englishtranslate": "Be careful that your skin doesn't get sunburnt."
+  },
+  {
+    "dutch": "verkouden",
+    "english": "to have a cold",
+    "vietnamese": "bị cảm lạnh",
+    "dutchsentence": "Ik ben verkouden en heb een zere keel.",
+    "englishtranslate": "I have a cold and a sore throat."
+  },
+  {
+    "dutch": "kritisch",
+    "english": "critical",
+    "vietnamese": "phê phán, mang tính phê bình",
+    "dutchsentence": "Je moet kritisch denken over wat je leest.",
+    "englishtranslate": "You must think critically about what you read."
+  },
+  {
+    "dutch": "veilig",
+    "english": " safe/secure",
+    "vietnamese": "an toàn",
+    "dutchsentence": "Is het veilig om hier 's avonds te lopen?",
+    "englishtranslate": "Is it safe to walk here in the evening?"
+  },
+  {
+    "dutch": "vrolijk",
+    "english": "cheerful/happy",
+    "vietnamese": "vui vẻ, tươi tắn",
+    "dutchsentence": "Ze is altijd heel vrolijk en lacht veel.",
+    "englishtranslate": "She is always very cheerful and laughs a lot."
+  },
+  {
+    "dutch": "beterschap",
+    "english": "get well soon/speedy recovery",
+    "vietnamese": "chúc mau khỏe",
+    "dutchsentence": "Ik wens je beterschap na de operatie.",
+    "englishtranslate": "I wish you a speedy recovery after the operation."
+  },
+  {
+    "dutch": "natuurlijk",
+    "english": "naturally/of course",
+    "vietnamese": "tất nhiên, tự nhiên",
+    "dutchsentence": "Natuurlijk help ik je met je verhuizing.",
+    "englishtranslate": "Of course, I will help you with your move."
+  },
+  {
+    "dutch": "gelukkig",
+    "english": "fortunately/happily",
+    "vietnamese": "may mắn thay, hạnh phúc",
+    "dutchsentence": "Gelukkig had ik mijn paraplu meegenomen, want het begon te regenen.",
+    "englishtranslate": "Fortunately, I had brought my umbrella, because it started to rain."
+  },
+  {
+    "dutch": "keihard",
+    "english": "very hard/extremely hard",
+    "vietnamese": "cực kỳ chăm chỉ, rất cứng",
+    "dutchsentence": "Ze heeft keihard gewerkt voor dit project.",
+    "englishtranslate": "She worked extremely hard for this project."
+  },
+  {
+    "dutch": "minstens",
+    "english": "at least",
+    "vietnamese": "ít nhất",
+    "dutchsentence": "Je moet minstens acht uur slapen per nacht.",
+    "englishtranslate": "You must sleep at least eight hours per night."
+  },
+  {
+    "dutch": "regelmatig",
+    "english": "regularly",
+    "vietnamese": "thường xuyên, đều đặn",
+    "dutchsentence": "Ik sport regelmatig om fit te blijven.",
+    "englishtranslate": "I exercise regularly to stay fit."
+  },
+  {
+    "dutch": "toen",
+    "english": "then/when (past event)",
+    "vietnamese": "sau đó, khi (quá khứ)",
+    "dutchsentence": "Toen ik jong was, woonde ik in Amsterdam.",
+    "englishtranslate": "When I was young, I lived in Amsterdam."
+  },
+  {
+    "dutch": "voldoende",
+    "english": "sufficient/enough",
+    "vietnamese": "đủ, đầy đủ",
+    "dutchsentence": "Zorg ervoor dat je voldoende water drinkt.",
+    "englishtranslate": "Make sure you drink enough water."
+  },
+  {
+    "dutch": "vroeger",
+    "english": "formerly/in the past/earlier",
+    "vietnamese": "trước đây, ngày xưa, sớm hơn",
+    "dutchsentence": "Vroeger speelden kinderen altijd buiten.",
+    "englishtranslate": "In the past, children always played outside."
+  },
+  {
+    "dutch": "waarschijnlijk",
+    "english": "probably",
+    "vietnamese": "có lẽ, có thể",
+    "dutchsentence": "Het gaat waarschijnlijk morgen regenen.",
+    "englishtranslate": "It will probably rain tomorrow."
+  }
+]
