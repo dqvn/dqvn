@@ -218,7 +218,7 @@ function reloadTable(jsonData) {
     <td>${index + 1}</td>
     <td onclick="speakText('${word.dutch}')"><span class="dutch-word" data-index="${index}">${word.dutch}</span></td>
     <td onclick="speakEngText('${word.english}')"><span class="hide-text">${word.english}</span></td>
-    <td onclick="speakText('${word.dutchsentence}')"><span>${word.dutchsentence}</span><br/><span class="hide-text" style="color: #3f3838ff; opacity: 0.6;">${word.englishtranslate}</span></td>
+    <td onclick="speakText('${word.dutchsentence}')"><span>${word.dutchsentence}</span><br/><span class="hide-text" style="color: #3f3838ff; opacity: 0.3;">${word.englishtranslate}</span></td>
     <td><span class="hide-text">${word.vietnamese}</span></td>
   `;
     tableBody.appendChild(row);
