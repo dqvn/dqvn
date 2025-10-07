@@ -152,7 +152,7 @@ function speakText(text) {
 
     speech.lang = TTSLang;
     speech.volume = 1;
-    speech.rate = 0.8;
+    speech.rate = 0.7;
     speech.pitch = 1;
     speech.text = text;
     speech.volume = volumeControl.value / 100;
