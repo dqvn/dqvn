@@ -1,1862 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dutch Storytime - Learn Languages Through Stories</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Dutch Stories for Kids!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Comic Sans MS', 'Chalkboard SE', cursive, sans-serif;
+        /* General Styling */
+        :root {
+            --primary-color: #FF6B6B; /* Coral Red */
+            --secondary-color: #4ECDC4; /* Teal */
+            --accent-color: #FFD93D; /* Yellow */
+            --text-color: #4a4a4a;
+            --bg-color: #F7FFF7;
+            --white: #FFFFFF;
         }
 
-        :root {
-            --primary: #FF6B8B;
-            --secondary: #6A67CE;
-            --accent: #FFD166;
-            --light: #F9F7FE;
-            --dark: #4A4A72;
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
         body {
-            background: linear-gradient(135deg, #FF6B8B, #6A67CE);
-            min-height: 100vh;
-            display: flex;
-            color: var(--dark);
-            overflow-x: hidden;
+            font-family: 'Nunito', sans-serif;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            overflow: hidden; /* Prevents scrollbars from the full-page background */
         }
 
-        .background-image {
+        /* Background Image Styling */
+        #background-container {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
+            z-index: -1;
             background-size: cover;
             background-position: center;
-            opacity: 0.15;
-            z-index: -1;
-            transition: background-image 1s ease;
+            background-repeat: no-repeat;
+            transition: background-image 1s ease-in-out, filter 1s ease-in-out;
+            /* Start with a slight blur for effect */
+            filter: brightness(0.9) blur(3px);
+        }
+        
+        #background-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.1); /* A subtle dark overlay to help text stand out */
+            z-index: 0;
         }
 
-        .container {
-            display: flex;
-            width: 100%;
-            max-width: 1400px;
-            margin: 20px auto;
-            background-color: rgba(255, 255, 255, 0.95);
-            border-radius: 25px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
-            height: calc(100vh - 40px);
+        /* Main App Container */
+        .story-app {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            grid-template-rows: 1fr auto;
+            height: 100vh;
+            width: 100vw;
         }
 
-        .sidebar {
-            width: 280px;
-            background: linear-gradient(to bottom, var(--secondary), #8A84E8);
+        /* Left Side Menu */
+        #story-menu {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            background-color: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
             padding: 20px;
             overflow-y: auto;
-            color: white;
-            border-right: 5px solid var(--accent);
+            border-right: 5px solid var(--accent-color);
         }
 
-        .sidebar-header {
+        #story-menu h2 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            font-weight: 800;
             text-align: center;
             margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 3px dashed var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #story-menu h2 .fa-book-open {
+            margin-right: 10px;
         }
 
-        .sidebar-header h1 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-            color: var(--accent);
-            text-shadow: 2px 2px 0 var(--dark);
+        #story-menu ul {
+            list-style-type: none;
         }
 
-        .sidebar-header p {
-            font-size: 1rem;
-            opacity: 0.9;
-        }
-
-        .stories-list {
-            list-style: none;
-        }
-
-        .story-item {
-            background-color: rgba(255, 255, 255, 0.2);
+        #story-menu li a {
+            display: block;
+            padding: 15px 20px;
             margin-bottom: 12px;
-            padding: 15px;
-            border-radius: 15px;
-            cursor: pointer;
+            text-decoration: none;
+            color: var(--text-color);
+            background-color: var(--white);
+            border-radius: 12px;
+            font-size: 1.2rem;
+            font-weight: bold;
             transition: all 0.3s ease;
-            border: 2px solid transparent;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 5px solid transparent;
         }
 
-        .story-item:hover {
-            background-color: rgba(255, 255, 255, 0.3);
+        #story-menu li a:hover {
+            transform: translateY(-3px) translateX(5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        #story-menu li a.active {
+            background-color: var(--primary-color);
+            color: var(--white);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            border-left: 5px solid var(--accent-color);
             transform: translateX(5px);
         }
 
-        .story-item.active {
-            background-color: var(--accent);
-            color: var(--dark);
-            border-color: white;
-            font-weight: bold;
-        }
-
-        .story-title {
-            font-size: 1.1rem;
-            margin-bottom: 5px;
-        }
-
-        .story-info {
-            font-size: 0.85rem;
-            opacity: 0.8;
-        }
-
-        .main-content {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            padding: 30px;
+        /* Story Content Area */
+        #story-content {
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
             overflow-y: auto;
+            padding: 50px;
+            background-color: rgba(247, 255, 247, 0.75); /* Slightly transparent background for readability */
+            backdrop-filter: blur(5px);
         }
 
-        .story-header {
-            text-align: center;
+        #story-content-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            opacity: 0; /* Start hidden for fade-in effect */
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+        
+        #story-content-inner.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #story-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
             margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 3px dotted var(--primary);
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
 
-        .story-header h2 {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+        .story-text-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            font-size: 1.4rem;
+            line-height: 1.8;
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
         }
 
-        .language-tabs {
+        .story-column h3 {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+        
+        .story-column h3.english-title {
+            color: var(--primary-color);
+            border-bottom-color: var(--primary-color);
+        }
+
+        /* Bottom Control Bar */
+        #controls {
+            grid-column: 1 / 3;
+            grid-row: 2 / 3;
             display: flex;
             justify-content: center;
-            gap: 10px;
-            margin-top: 15px;
+            align-items: center;
+            padding: 15px;
+            background-color: var(--white);
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+            z-index: 10;
         }
 
-        .language-tab {
-            padding: 8px 20px;
-            border-radius: 20px;
-            background-color: var(--light);
+        .control-button {
+            background: none;
+            border: none;
             cursor: pointer;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
+            font-size: 2.5rem;
+            margin: 0 25px;
+            color: var(--secondary-color);
+            transition: all 0.2s ease;
         }
 
-        .language-tab.active {
-            background-color: var(--primary);
-            color: white;
-            border-color: var(--accent);
+        .control-button:hover {
+            color: var(--primary-color);
+            transform: scale(1.1);
         }
 
-        .story-content {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
+        #play-pause-btn .fa-pause {
+            display: none;
         }
-
-        .language-content {
-            background-color: white;
-            padding: 25px;
-            border-radius: 20px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            border-left: 5px solid var(--secondary);
-            /* display: none; */
-        }
-
-        .language-content.active {
-            display: block;
-            animation: fadeIn 0.5s ease;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .language-content h3 {
-            color: var(--secondary);
-            margin-bottom: 15px;
+        
+        #speed-btn {
             font-size: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .language-content h3 i {
-            color: var(--primary);
-        }
-
-        .story-text {
-            font-size: 1.25rem;
-            line-height: 1.6;
-            color: var(--dark);
-        }
-
-        .controls {
-            background-color: white;
-            padding: 20px;
-            border-radius: 20px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .play-btn {
+            font-weight: bold;
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            border-radius: 50%;
             width: 60px;
             height: 60px;
-            border-radius: 50%;
-            background-color: var(--primary);
-            color: white;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 1.5rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            border: none;
-            box-shadow: 0 5px 15px rgba(255, 107, 139, 0.4);
-        }
-
-        .play-btn:hover {
-            transform: scale(1.1);
-            background-color: #FF5277;
-        }
-
-        .speed-control {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            flex: 1;
-        }
-
-        .speed-control label {
-            font-weight: bold;
-            color: var(--dark);
-        }
-
-        .speed-slider {
-            flex: 1;
-            -webkit-appearance: none;
-            height: 10px;
-            border-radius: 5px;
-            background: linear-gradient(to right, var(--primary), var(--secondary));
-            outline: none;
-        }
-
-        .speed-slider::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            background: var(--accent);
-            cursor: pointer;
-            border: 3px solid white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
-
-        .character {
-            position: absolute;
-            bottom: 20px;
-            right: 30px;
-            font-size: 120px;
-            z-index: 5;
-            filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
-        }
-
-        .language-flag {
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        @media (max-width: 900px) {
-            .container {
-                flex-direction: column;
-                height: auto;
-            }
-
-            .sidebar {
-                width: 100%;
-                max-height: 300px;
-            }
-
-            .character {
-                display: none;
-            }
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
     </style>
 </head>
-
 <body>
-    <div class="background-image" id="backgroundImage"></div>
 
-    <div class="container">
-        <div class="sidebar">
-            <div class="sidebar-header">
-                <h1><i class="fas fa-book-open"></i> Dutch Storytime</h1>
-                <p>Learn Dutch through fun stories!</p>
-            </div>
+    <div id="background-container"></div>
 
-            <ul class="stories-list" id="storiesList">
-                <!-- Stories will be populated by JavaScript -->
-            </ul>
-        </div>
+    <div class="story-app">
+        <nav id="story-menu">
+            <h2><i class="fas fa-book-open"></i> Verhalen</h2>
+            <ul id="story-list">
+                </ul>
+        </nav>
 
-        <div class="main-content">
-            <div class="story-header">
-                <h2 id="storyTitle">Select a Story</h2>
-            </div>
-
-            <div class="story-content">
-                <div class="language-content active" id="dutchContent">
-                    <!-- <h3><i class="fas fa-language"></i> Dutch Story</h3> -->
-                    <div class="story-text" id="dutchText">
-                        Select a story from the left menu to begin reading and listening.
+        <main id="story-content">
+            <div id="story-content-inner">
+                <h1 id="story-title"></h1>
+                <div class="story-text-container">
+                    <div class="story-column" id="dutch-story">
+                        <h3>Nederlands</h3>
+                        <p id="dutch-text"></p>
                     </div>
-                </div>
-
-                <div class="language-content" id="englishContent">
-                    <!-- <h3><i class="fas fa-language"></i> English Story</h3> -->
-                    <div class="story-text" id="englishText">
-                        Select a story from the left menu to see the English story.
+                    <div class="story-column" id="english-story">
+                        <h3 class="english-title">English</h3>
+                        <p id="english-text"></p>
                     </div>
                 </div>
             </div>
+        </main>
 
-            <div class="controls">
-                <button class="play-btn" id="playButton">
-                    <i class="fas fa-play"></i>
-                </button>
-
-                <div class="speed-control">
-                    <label for="speedSlider"><i class="fas fa-tachometer-alt"></i> Speed:</label>
-                    <input type="range" min="0.5" max="2" step="0.1" value="1" class="speed-slider" id="speedSlider">
-                    <span id="speedValue">1.0x</span>
-                </div>
-            </div>
+        <div id="controls">
+            <button class="control-button" id="play-pause-btn" title="Play/Pause">
+                <i class="fas fa-play"></i>
+                <i class="fas fa-pause"></i>
+            </button>
+            <button class="control-button" id="speed-btn" title="Change Speed">1x</button>
         </div>
-
-        <div class="character" id="storyCharacter">🐰</div>
     </div>
 
     <script>
-        // LocalStorage Keys
-        const STORAGE_KEYS = {
-            CURRENT_STORY: 'currentReadingStory',
-            READING_PROGRESS: 'storyReadingProgress',
-            SPEECH_SETTINGS: 'speechSettings',
-            FAVORITES: 'favoriteStories'
-        };
-
-        // Sample stories data
-        const stories = [
+        // --- STORY DATA ---
+        // Full JSON array of Dutch stories for 3-6 year olds.
+        // The 'image_query' is used to find a relevant background image automatically.
+        const storiesData = [
             {
-                id: 1,
-                title: "De Kleine Kat",
-                titleEn: "The Little Cat",
-                content_nl: "Er was eens een kleine kat. Zijn naam was Toby. Toby was heel nieuwsgierig. Hij hield van avontuur. Op een dag zag Toby een grote boom. De boom was heel hoog. Toby klom in de boom. Maar toen kon hij niet meer naar beneden. Toby was bang. Hij begon te miauwen. Een klein meisje hoorde Toby. Ze hielp hem uit de boom. Toby was heel blij. Hij gaf het meisje een kopstoot. Ze werden de beste vrienden.",
-                content_en: "Once upon a time, there was a little cat. His name was Toby. Toby was very curious. He loved adventure. One day, Toby saw a big tree. The tree was very tall. Toby climbed the tree. But then he couldn't get down. Toby was scared. He started to meow. A little girl heard Toby. She helped him out of the tree. Toby was very happy. He gave the girl a head bump. They became best friends.",
-                image_query: "cute kitten tree adventure",
-                character: "🐱"
+                "title": "De Drie Kleine Biggetjes",
+                "dutch_content": "Er waren eens drie kleine biggetjes die het huis van hun moeder verlieten om hun eigen huis te bouwen. Het eerste biggetje bouwde een huis van stro. Het tweede biggetje bouwde een huis van takjes. Het derde biggetje bouwde een huis van stenen. De grote boze wolf kwam en blies het huis van stro en het huis van takjes om, maar hij kon het huis van stenen niet omblazen.",
+                "english_content": "Once upon a time, there were three little pigs who left their mother's house to build their own. The first little pig built a house of straw. The second little pig built a house of sticks. The third little pig built a house of bricks. The big bad wolf came and blew down the house of straw and the house of sticks, but he could not blow down the house of bricks.",
+                "image_query": "three little pigs fairy tale art"
             },
             {
-                id: 2,
-                title: "De Dierenpicknick",
-                titleEn: "The Animal Picnic",
-                content_nl: "Op een zonnige dag besloot Konijn een picknick te organiseren. Hij nodigde al zijn vrienden uit: Eekhoorn, Egel, Muis en Vogel. Iedereen bracht iets lekkers mee. Konijn bracht wortels. Eekhoorn bracht noten. Egel bracht bessen. Muis bracht kaas. En Vogel bracht zaden. Ze speelden spelletjes en zongen liedjes. Het was een geweldige dag. Toen de zon onderging, waren alle dieren moe maar gelukkig. Ze beloofden snel weer een picknick te houden.",
-                content_en: "On a sunny day, Rabbit decided to organize a picnic. He invited all his friends: Squirrel, Hedgehog, Mouse and Bird. Everyone brought something tasty. Rabbit brought carrots. Squirrel brought nuts. Hedgehog brought berries. Mouse brought cheese. And Bird brought seeds. They played games and sang songs. It was a wonderful day. When the sun went down, all the animals were tired but happy. They promised to have another picnic soon.",
-                image_query: "animal forest picnic",
-                character: "🐰"
+                "title": "Roodkapje",
+                "dutch_content": "Een klein meisje genaamd Roodkapje moest een mand met eten naar haar zieke oma brengen. In het bos ontmoette ze een wolf. De wolf vroeg waar ze naartoe ging en hij haastte zich naar het huis van oma. Hij at oma op, deed haar kleren aan en wachtte in bed op Roodkapje. Gelukkig redde een jager Roodkapje en haar oma.",
+                "english_content": "A little girl named Little Red Riding Hood had to bring a basket of food to her sick grandmother. In the forest, she met a wolf. The wolf asked where she was going and he hurried to grandmother's house. He ate grandmother, put on her clothes, and waited in bed for Little Red Riding Hood. Luckily, a hunter saved Little Red Riding Hood and her grandmother.",
+                "image_query": "little red riding hood walking in a magical forest"
             },
             {
-                id: 3,
-                title: "De Regendans",
-                titleEn: "The Rain Dance",
-                content_nl: "Het was een hele warme dag. De bloemen hingen hun hoofd. De dieren waren dorstig. Toen had Kikker een idee. 'Laten we een regendans doen!' zei hij. Alle dieren keken verbaasd. 'Een regendans?' vroeg Eend. 'Ja!' zei Kikker. Hij begon te dansen. Eerst aarzelden de andere dieren, maar toen deden ze allemaal mee. Ze dansten en zongen. En weet je wat? Er vielen druppels! Eerst een paar, toen meer en meer. Het regende! De dieren juichten. De bloemen stonden weer rechtop. Iedereen was blij.",
-                content_en: "It was a very hot day. The flowers were drooping. The animals were thirsty. Then Frog had an idea. 'Let's do a rain dance!' he said. All the animals looked surprised. 'A rain dance?' asked Duck. 'Yes!' said Frog. He started to dance. At first the other animals hesitated, but then they all joined in. They danced and sang. And you know what? Drops started falling! First a few, then more and more. It rained! The animals cheered. The flowers stood up straight again. Everyone was happy.",
-                image_query: "frog rain dance animals",
-                character: "🐸"
+                "title": "Goudlokje en de Drie Beren",
+                "dutch_content": "Goudlokje was een meisje dat een huisje in het bos vond. Ze ging naar binnen en zag drie kommen pap. Ze at de pap die precies goed was. Ze probeerde drie stoelen en zat op de stoel die precies goed was, maar die brak. Ze ging naar boven en sliep in het bed dat precies goed was. Toen kwamen de drie beren thuis en vonden haar.",
+                "english_content": "Goldilocks was a girl who found a cottage in the woods. She went inside and saw three bowls of porridge. She ate the porridge that was just right. She tried three chairs and sat in the one that was just right, but it broke. She went upstairs and slept in the bed that was just right. Then the three bears came home and found her.",
+                "image_query": "storybook cottage in the woods"
             },
             {
-                id: 4,
-                title: "Het Verdwaalde Lammetje",
-                titleEn: "The Lost Lamb",
-                content_nl: "Lammetje Lola was nieuwsgierig. Ze wilde de wereld verkennen. Terwijl haar moeder sliep, liep Lola weg. Ze liep door het veld. Ze liep langs de beek. Ze liep het bos in. Toen werd het donker. Lola was verdwaald. Ze begon te huilen. 'Mama! Mama!' riep ze. Een wijze uil hoorde haar. 'Ik help je,' zei de uil. Hij vloog hoog en zag de kudde. Hij wees Lola de weg. Lola rende terug naar haar moeder. Ze beloofde nooit meer alleen weg te lopen.",
-                content_en: "Lamb Lola was curious. She wanted to explore the world. While her mother was sleeping, Lola walked away. She walked through the field. She walked along the stream. She walked into the forest. Then it got dark. Lola was lost. She started to cry. 'Mama! Mama!' she called. A wise owl heard her. 'I'll help you,' said the owl. He flew high and saw the flock. He showed Lola the way. Lola ran back to her mother. She promised never to walk away alone again.",
-                image_query: "little lamb farm",
-                character: "🐑"
+                "title": "Het Lelijke Eendje",
+                "dutch_content": "Op een boerderij werd een eendje geboren dat er anders uitzag dan zijn broertjes en zusjes. Iedereen pestte hem en noemde hem lelijk. Verdrietig liep hij weg. Na een lange, koude winter zag hij zijn spiegelbeeld in het water. Hij was niet langer een lelijk eendje, maar een prachtige zwaan.",
+                "english_content": "On a farm, a duckling was born who looked different from his brothers and sisters. Everyone teased him and called him ugly. Sadly, he ran away. After a long, cold winter, he saw his reflection in the water. He was no longer an ugly duckling, but a beautiful swan.",
+                "image_query": "beautiful white swan on a lake at sunrise"
             },
             {
-                id: 5,
-                title: "De Kleine Trein",
-                titleEn: "The Little Train",
-                content_nl: "Er was een kleine trein. Zijn naam was Thomas. Thomas wilde graag helpen. Op een dag moest Thomas naar de andere kant van de berg. De berg was heel steil. 'Ik denk niet dat ik het kan,' zei Thomas. 'Je kunt het!' zeiden zijn vrienden. Thomas nam een diepe adem. 'Ik denk dat ik kan, ik denk dat ik kan,' zei hij. En hij begon te klimmen. Langzaam maar zeker klom Thomas de berg op. Toen hij boven was, was iedereen trots. Thomas had het gedaan!",
-                content_en: "There was a little train. His name was Thomas. Thomas really wanted to help. One day, Thomas had to go to the other side of the mountain. The mountain was very steep. 'I don't think I can do it,' said Thomas. 'You can!' said his friends. Thomas took a deep breath. 'I think I can, I think I can,' he said. And he started to climb. Slowly but surely, Thomas climbed the mountain. When he reached the top, everyone was proud. Thomas had done it!",
-                image_query: "little train mountain",
-                character: "🚂"
-            },
-            {
-                "id": 1,
-                "group": 1,
-                "title": "De Kleine Kat",
-                "titleEn": "The Little Cat",
-                "content_nl": "Er was eens een kleine kat. Zijn naam was Toby. Toby was heel nieuwsgierig. Hij hield van avontuur. Op een dag zag Toby een grote boom. De boom was heel hoog. Toby klom in de boom. Maar toen kon hij niet meer naar beneden. Toby was bang. Hij begon te miauwen. Een klein meisje hoorde Toby. Ze hielp hem uit de boom. Toby was heel blij. Hij gaf het meisje een kopstoot. Ze werden de beste vrienden.",
-                "content_en": "Once upon a time, there was a little cat. His name was Toby. Toby was very curious. He loved adventure. One day, Toby saw a big tree. The tree was very tall. Toby climbed the tree. But then he couldn't get down. Toby was scared. He started to meow. A little girl heard Toby. She helped him out of the tree. Toby was very happy. He gave the girl a head bump. They became best friends.",
-                "image_query": "cute kitten tree adventure",
-                "character": "🐱"
-            },
-            {
-                "id": 2,
-                "group": 1,
-                "title": "De Dierenpicknick",
-                "titleEn": "The Animal Picnic",
-                "content_nl": "Op een zonnige dag besloot Konijn een picknick te organiseren. Hij nodigde al zijn vrienden uit: Eekhoorn, Egel, Muis en Vogel. Iedereen bracht iets lekkers mee. Konijn bracht wortels. Eekhoorn bracht noten. Egel bracht bessen. Muis bracht kaas. En Vogel bracht zaden. Ze speelden spelletjes en zongen liedjes. Het was een geweldige dag. Toen de zon onderging, waren alle dieren moe maar gelukkig. Ze beloofden snel weer een picknick te houden.",
-                "content_en": "On a sunny day, Rabbit decided to organize a picnic. He invited all his friends: Squirrel, Hedgehog, Mouse and Bird. Everyone brought something tasty. Rabbit brought carrots. Squirrel brought nuts. Hedgehog brought berries. Mouse brought cheese. And Bird brought seeds. They played games and sang songs. It was a wonderful day. When the sun went down, all the animals were tired but happy. They promised to have another picnic soon.",
-                "image_query": "animal forest picnic",
-                "character": "🐰"
-            },
-            {
-                "id": 3,
-                "group": 1,
-                "title": "De Regendans",
-                "titleEn": "The Rain Dance",
-                "content_nl": "Het was een hele warme dag. De bloemen hingen hun hoofd. De dieren waren dorstig. Toen had Kikker een idee. 'Laten we een regendans doen!' zei hij. Alle dieren keken verbaasd. 'Een regendans?' vroeg Eend. 'Ja!' zei Kikker. Hij begon te dansen. Eerst aarzelden de andere dieren, maar toen deden ze allemaal mee. Ze dansten en zongen. En weet je wat? Er vielen druppels! Eerst een paar, toen meer en meer. Het regende! De dieren juichten. De bloemen stonden weer rechtop. Iedereen was blij.",
-                "content_en": "It was a very hot day. The flowers were drooping. The animals were thirsty. Then Frog had an idea. 'Let's do a rain dance!' he said. All the animals looked surprised. 'A rain dance?' asked Duck. 'Yes!' said Frog. He started to dance. At first the other animals hesitated, but then they all joined in. They danced and sang. And you know what? Drops started falling! First a few, then more and more. It rained! The animals cheered. The flowers stood up straight again. Everyone was happy.",
-                "image_query": "frog rain dance animals",
-                "character": "🐸"
-            },
-            {
-                "id": 4,
-                "group": 1,
-                "title": "Het Verdwaalde Lammetje",
-                "titleEn": "The Lost Lamb",
-                "content_nl": "Lammetje Lola was nieuwsgierig. Ze wilde de wereld verkennen. Terwijl haar moeder sliep, liep Lola weg. Ze liep door het veld. Ze liep langs de beek. Ze liep het bos in. Toen werd het donker. Lola was verdwaald. Ze begon te huilen. 'Mama! Mama!' riep ze. Een wijze uil hoorde haar. 'Ik help je,' zei de uil. Hij vloog hoog en zag de kudde. Hij wees Lola de weg. Lola rende terug naar haar moeder. Ze beloofde nooit meer alleen weg te lopen.",
-                "content_en": "Lamb Lola was curious. She wanted to explore the world. While her mother was sleeping, Lola walked away. She walked through the field. She walked along the stream. She walked into the forest. Then it got dark. Lola was lost. She started to cry. 'Mama! Mama!' she called. A wise owl heard her. 'I'll help you,' said the owl. He flew high and saw the flock. He showed Lola the way. Lola ran back to her mother. She promised never to walk away alone again.",
-                "image_query": "little lamb farm",
-                "character": "🐑"
-            },
-            {
-                "id": 5,
-                "group": 1,
-                "title": "De Kleine Trein",
-                "titleEn": "The Little Train",
-                "content_nl": "Er was een kleine trein. Zijn naam was Thomas. Thomas wilde graag helpen. Op een dag moest Thomas naar de andere kant van de berg. De berg was heel steil. 'Ik denk niet dat ik het kan,' zei Thomas. 'Je kunt het!' zeiden zijn vrienden. Thomas nam een diepe adem. 'Ik denk dat ik kan, ik denk dat ik kan,' zei hij. En hij begon te klimmen. Langzaam maar zeker klom Thomas de berg op. Toen hij boven was, was iedereen trots. Thomas had het gedaan!",
-                "content_en": "There was a little train. His name was Thomas. Thomas really wanted to help. One day, Thomas had to go to the other side of the mountain. The mountain was very steep. 'I don't think I can do it,' said Thomas. 'You can!' said his friends. Thomas took a deep breath. 'I think I can, I think I can,' he said. And he started to climb. Slowly but surely, Thomas climbed the mountain. When he reached the top, everyone was proud. Thomas had done it!",
-                "image_query": "little train mountain",
-                "character": "🚂"
-            },
-            {
-                "id": 6,
-                "group": 1,
-                "title": "De Kleine Zeemeermin",
-                "titleEn": "The Little Mermaid",
-                "content_nl": "Diep in de zee woonde een kleine zeemeermin. Haar naam was Marijn. Marijn hield van zingen. Elke dag zong ze voor de vissen. Op een dag hoorde een dolfijn haar zingen. Hij was zo onder de indruk dat hij alle zeedieren bijeen riep. Ze organiseerden een groot concert. Marijn zong het mooiste lied dat de oceaan ooit had gehoord. Alle dieren dansten en juichten. Vanaf die dag werd Marijn de zangeres van de zee genoemd.",
-                "content_en": "Deep in the sea lived a little mermaid. Her name was Marijn. Marijn loved singing. Every day she sang for the fish. One day a dolphin heard her singing. He was so impressed that he gathered all the sea creatures. They organized a big concert. Marijn sang the most beautiful song the ocean had ever heard. All the animals danced and cheered. From that day on, Marijn was called the singer of the sea.",
-                "image_query": "little mermaid ocean",
-                "character": "🧜‍♀️"
-            },
-            {
-                "id": 7,
-                "group": 1,
-                "title": "De Grote Ballon",
-                "titleEn": "The Big Balloon",
-                "content_nl": "Lotte kreeg een grote rode ballon. De ballon was zo groot als haar hoofd. Ze hield stevig vast aan het touwtje. Maar toen liet ze per ongeluk los! De ballon vloog de lucht in. Lotte keek ernaar terwijl hij hoger en hoger vloog. De ballon vloog over de huizen. Hij vloog over de bomen. Uiteindelijk verdween hij achter een wolk. Lotte was een beetje verdrietig, maar toen beloofde haar vader een nieuwe ballon te kopen.",
-                "content_en": "Lotte got a big red balloon. The balloon was as big as her head. She held tightly to the string. But then she accidentally let go! The balloon flew into the air. Lotte watched as it flew higher and higher. The balloon flew over the houses. It flew over the trees. Finally it disappeared behind a cloud. Lotte was a little sad, but then her father promised to buy a new balloon.",
-                "image_query": "red balloon flying sky",
-                "character": "🎈"
-            },
-            {
-                "id": 8,
-                "group": 1,
-                "title": "De Sneeuwpop",
-                "titleEn": "The Snowman",
-                "content_nl": "Het had gesneeuwd! Overal lag een dikke witte deken. Tim en Lisa gingen naar buiten. Ze rolden drie sneeuwballen. Een grote, een middelgrote en een kleine. Ze stapelden ze op elkaar. Ze gaven de sneeuwpop een wortel als neus. Twee steentjes werden zijn ogen. Een oude hoed en een sjaal maakten hem af. De sneeuwpop glimlachte naar hen. De volgende dag was de zon gaan schijnen. De sneeuwpop begon te smelten. Tim en Lisa waren verdrietig, maar ze wisten dat ze volgend jaar weer een sneeuwpop konden maken.",
-                "content_en": "It had snowed! Everywhere lay a thick white blanket. Tim and Lisa went outside. They rolled three snowballs. A big one, a medium one and a small one. They stacked them on top of each other. They gave the snowman a carrot for a nose. Two stones became his eyes. An old hat and a scarf finished him. The snowman smiled at them. The next day the sun came out. The snowman began to melt. Tim and Lisa were sad, but they knew they could make another snowman next year.",
-                "image_query": "snowman winter children",
-                "character": "⛄"
-            },
-            {
-                "id": 9,
-                "group": 1,
-                "title": "De Kleine Rups",
-                "titleEn": "The Little Caterpillar",
-                "content_nl": "Er was een kleine rups. Hij heet Rupsje Nooitgenoeg. Elke dag at hij veel bladeren. Hij at één appel op maandag. Twee peren op dinsdag. Drie pruimen op woensdag. Vier aardbeien op donderdag. En vijf sinaasappels op vrijdag. Hij werd steeds dikker. Toen bouwde hij een cocon. Hij bleef heel lang in de cocon. Op een dag kwam hij eruit. Hij was veranderd! Hij had mooie vleugels. Hij was een vlinder geworden! Hij vloog de tuin in, blij en vrij.",
-                "content_en": "There was a little caterpillar. His name was Hungry Caterpillar. Every day he ate many leaves. He ate one apple on Monday. Two pears on Tuesday. Three plums on Wednesday. Four strawberries on Thursday. And five oranges on Friday. He kept getting fatter. Then he built a cocoon. He stayed in the cocoon for a long time. One day he came out. He had changed! He had beautiful wings. He had become a butterfly! He flew into the garden, happy and free.",
-                "image_query": "caterpillar butterfly transformation",
-                "character": "🐛"
-            },
-            {
-                "id": 10,
-                "group": 1,
-                "title": "De Drie Geitjes",
-                "titleEn": "The Three Goats",
-                "content_nl": "Er waren eens drie geitjes. Ze heetten Klein, Middel en Groot. Ze moesten een brug oversteken. Onder de brug woonde een groot troll. Klein Geitje ging eerst. Trip trap, trip trap. 'Wie loopt er over mijn brug?' brulde de troll. 'Ik ben Klein Geitje,' zei hij. 'Ik ga naar de andere kant om gras te eten.' 'Nee, ik ga je opeten!' zei de troll. 'Eet mij niet! Middel Geitje is groter,' zei Klein Geitje. De troll liet hem gaan. Hetzelfde gebeurde met Middel Geitje. Toen kwam Groot Geitje. Toen de troll verscheen, duwde Groot Geitje hem van de brug af. De drie geitjes waren veilig en aten heerlijk gras.",
-                "content_en": "Once upon a time there were three goats. They were called Small, Medium and Large. They had to cross a bridge. Under the bridge lived a big troll. Small Goat went first. Trip trap, trip trap. 'Who's walking on my bridge?' roared the troll. 'I am Small Goat,' he said. 'I'm going to the other side to eat grass.' 'No, I'm going to eat you!' said the troll. 'Don't eat me! Medium Goat is bigger,' said Small Goat. The troll let him go. The same happened with Medium Goat. Then came Large Goat. When the troll appeared, Large Goat pushed him off the bridge. The three goats were safe and ate delicious grass.",
-                "image_query": "three goats bridge troll",
-                "character": "🐐"
-            },
-            {
-                "id": 11,
-                "group": 1,
-                "title": "De Kleine Mol",
-                "titleEn": "The Little Mole",
-                "content_nl": "Molletje woonde onder de grond. Hij hield van graven. Op een dag groef hij een lange gang. Hij groef en groef. Toen kwam hij boven de grond. Wat zag hij daar? Een prachtige tuin! Er waren bloemen in alle kleuren. Er vlogen vlinders. Molletje was zo blij. Hij besloot elke dag even naar boven te komen om de mooie tuin te bekijken. Maar hij hield ook van zijn holletje onder de grond. Dat was zijn thuis.",
-                "content_en": "Little Mole lived underground. He loved digging. One day he dug a long tunnel. He dug and dug. Then he came above ground. What did he see there? A beautiful garden! There were flowers in all colors. Butterflies were flying. Little Mole was so happy. He decided to come up every day to look at the beautiful garden. But he also loved his little burrow underground. That was his home.",
-                "image_query": "mole garden digging",
-                "character": "🦡"
-            },
-            {
-                "id": 12,
-                "group": 1,
-                "title": "De Kleine Tractor",
-                "titleEn": "The Little Tractor",
-                "content_nl": "Op de boerderij stond een kleine tractor. Zijn naam was Trekker. Trekker wilde graag helpen. Maar hij was te klein voor het zware werk. De grote tractors lachten hem uit. Op een dag moest er een pakketje naar de andere kant van de boerderij gebracht worden. Het was te klein voor de grote tractors. Maar perfect voor Trekker! Hij bracht het pakketje snel en veilig. Iedereen was trots op Trekker. Vanaf die dag kreeg hij speciale klusjes.",
-                "content_en": "On the farm stood a little tractor. His name was Tractor. Tractor really wanted to help. But he was too small for the heavy work. The big tractors laughed at him. One day a package had to be delivered to the other side of the farm. It was too small for the big tractors. But perfect for Tractor! He delivered the package quickly and safely. Everyone was proud of Tractor. From that day on he got special jobs.",
-                "image_query": "little tractor farm",
-                "character": "🚜"
-            },
-            {
-                "id": 13,
-                "group": 1,
-                "title": "De Verdwaalde Beer",
-                "titleEn": "The Lost Bear",
-                "content_nl": "Beertje Bruno was verdwaald in het bos. Hij zocht zijn grot. Overal zag hij bomen, maar geen grot. Hij was moe en hongerig. Toen hoorde hij een geluid. Het was Konijn. 'Waarom huil je?' vroeg Konijn. 'Ik ben verdwaald,' zei Bruno. 'Ik weet waar je grot is!' zei Konijn. Konijn wees Bruno de weg. Samen liepen ze naar de grot. Bruno's mama stond voor de grot. Ze was zo blij Bruno terug te zien. Bruno bedankte Konijn en nodigde hem uit voor honing.",
-                "content_en": "Little Bear Bruno was lost in the forest. He was looking for his cave. Everywhere he saw trees, but no cave. He was tired and hungry. Then he heard a sound. It was Rabbit. 'Why are you crying?' asked Rabbit. 'I'm lost,' said Bruno. 'I know where your cave is!' said Rabbit. Rabbit showed Bruno the way. Together they walked to the cave. Bruno's mom was standing in front of the cave. She was so happy to see Bruno again. Bruno thanked Rabbit and invited him for honey.",
-                "image_query": "lost bear forest",
-                "character": "🐻"
-            },
-            {
-                "id": 14,
-                "group": 1,
-                "title": "De Kleine Slak",
-                "titleEn": "The Little Snail",
-                "content_nl": "Slakje Sam was langzaam. Heel langzaam. Alle andere dieren waren sneller. Op een dag was er een wedstrijd. Wie kon als eerste bij de grote eik komen? Haas rende snel. Schildpad liep gestaag. Maar Sam was het langzaamst. Iedereen lachte. Maar Sam gaf niet op. Hij kroop en kroop. Uren later kwam hij aan bij de eik. Iedereen was al weg. Maar Sam was trots. Hij had het gehaald! Soms is doorzettingsvermogen belangrijker dan snelheid.",
-                "content_en": "Little Snail Sam was slow. Very slow. All the other animals were faster. One day there was a race. Who could reach the big oak tree first? Hare ran fast. Tortoise walked steadily. But Sam was the slowest. Everyone laughed. But Sam didn't give up. He crawled and crawled. Hours later he arrived at the oak tree. Everyone was already gone. But Sam was proud. He had made it! Sometimes perseverance is more important than speed.",
-                "image_query": "snail race slow",
-                "character": "🐌"
-            },
-            {
-                "id": 15,
-                "group": 1,
-                "title": "De Kleine Visser",
-                "titleEn": "The Little Fisherman",
-                "content_nl": "Jantje ging vissen met zijn vader. Hij kreeg een kleine hengel. Ze gingen naar de vijver. Jantje gooide zijn lijn uit. Hij wachtte en wachtte. Toen voelde hij een ruk! Hij trok aan de hengel. Er zat een vis aan! Maar de vis was heel klein. 'Laat hem maar gaan,' zei zijn vader. 'Hij moet nog groeien.' Jantje liet de vis vrij. De vis spartelde blij weg. Jantje ving die dag geen vis meer, maar hij was toch blij.",
-                "content_en": "Jantje went fishing with his father. He got a small fishing rod. They went to the pond. Jantje cast his line. He waited and waited. Then he felt a tug! He pulled on the rod. There was a fish on it! But the fish was very small. 'Let him go,' said his father. 'He still needs to grow.' Jantje released the fish. The fish swam away happily. Jantje didn't catch any more fish that day, but he was still happy.",
-                "image_query": "little boy fishing pond",
-                "character": "🎣"
-            },
-            {
-                "id": 16,
-                "group": 1,
-                "title": "De Kleine Bakker",
-                "titleEn": "The Little Baker",
-                "content_nl": "Lena hielp haar oma met bakken. Ze maakten koekjes. Eerst mengden ze de bloem, suiker en boter. Toen braken ze een ei. Lena roerde het deeg. Toen rolde ze het deeg uit. Ze gebruikte vormpjes: een ster, een hart en een maan. Ze legde de koekjes op de bakplaat. Toen gingen ze in de oven. Het huis rook heerlijk! Toen de koekjes klaar waren, proefden ze er een. Mmmm, lekker! Lena gaf een koekje aan iedereen.",
-                "content_en": "Lena helped her grandmother with baking. They made cookies. First they mixed the flour, sugar and butter. Then they broke an egg. Lena stirred the dough. Then she rolled out the dough. She used cookie cutters: a star, a heart and a moon. She placed the cookies on the baking sheet. Then they went into the oven. The house smelled delicious! When the cookies were ready, they tasted one. Mmmm, delicious! Lena gave a cookie to everyone.",
-                "image_query": "child baking cookies kitchen",
-                "character": "🍪"
-            },
-            {
-                "id": 17,
-                "group": 1,
-                "title": "De Kleine Brandweerman",
-                "titleEn": "The Little Firefighter",
-                "content_nl": "Tom wilde brandweerman worden. Hij had een brandweerhelm en een speelgoedbrandweerauto. Op een dag zag hij een kat in een boom. De kat kon niet naar beneden. Tom rende naar huis. Hij haalde een ladder. Voorzichtig zette hij de ladder tegen de boom. Hij klom omhoog. Hij pakte de kat voorzichtig vast. Hij bracht de kat naar beneden. De kat spinde blij. Toms moeder zei: 'Je bent een echte held!' Tom was trots.",
-                "content_en": "Tom wanted to be a firefighter. He had a firefighter helmet and a toy fire truck. One day he saw a cat in a tree. The cat couldn't get down. Tom ran home. He got a ladder. Carefully he placed the ladder against the tree. He climbed up. He carefully grabbed the cat. He brought the cat down. The cat purred happily. Tom's mother said: 'You're a real hero!' Tom was proud.",
-                "image_query": "child firefighter cat rescue",
-                "character": "👨‍🚒"
-            },
-            {
-                "id": 18,
-                "group": 1,
-                "title": "De Kleine Zwaan",
-                "titleEn": "The Little Swan",
-                "content_nl": "Zwaantje Zara woonde in de vijver. Ze was anders dan de andere zwanen. Haar veren waren nog grijs. De andere zwanen waren wit. Zara voelde zich verdrietig. Maar haar moeder zei: 'Wacht maar af.' Elke dag zwom Zara in de vijver. Elke dag at ze lekker eten. Toen gebeurde er iets wonderbaarlijks. Haar grijze veren werden wit! Ze was net zo mooi als de andere zwanen. Zara was zo blij. Ze danste op het water.",
-                "content_en": "Little Swan Zara lived in the pond. She was different from the other swans. Her feathers were still gray. The other swans were white. Zara felt sad. But her mother said: 'Just wait.' Every day Zara swam in the pond. Every day she ate delicious food. Then something miraculous happened. Her gray feathers turned white! She was just as beautiful as the other swans. Zara was so happy. She danced on the water.",
-                "image_query": "baby swan pond water",
-                "character": "🦢"
-            },
-            {
-                "id": 19,
-                "group": 1,
-                "title": "De Kleine Boerderij",
-                "titleEn": "The Little Farm",
-                "content_nl": "Op de boerderij van boer Kees woonden veel dieren. Er was een koe die melk gaf. Er was een kip die eieren legde. Er was een schaap met zachte wol. En er was een varken dat in de modder speelde. Elke ochtend verzorgde boer Kees de dieren. Hij gaf ze eten en drinken. De dieren waren blij. Ze gaven boer Kees alles wat hij nodig had. Het was een gelukkige boerderij.",
-                "content_en": "On farmer Kees' farm lived many animals. There was a cow that gave milk. There was a chicken that laid eggs. There was a sheep with soft wool. And there was a pig that played in the mud. Every morning farmer Kees took care of the animals. He gave them food and water. The animals were happy. They gave farmer Kees everything he needed. It was a happy farm.",
-                "image_query": "farm animals barn",
-                "character": "🚜"
-            },
-            {
-                "id": 20,
-                "group": 1,
-                "title": "De Kleine Ster",
-                "titleEn": "The Little Star",
-                "content_nl": "Er was een kleine ster aan de hemel. Haar naam was Stella. Stella wilde graag schitteren zoals de andere sterren. Maar ze was nog klein en haar licht was zwak. Elke nacht probeerde ze harder te schijnen. Toen kreeg ze een idee. Ze nodigde alle kleine sterretjes uit. Samen vormden ze een groep. Samen scheen hun licht heel fel. Ze vormden een prachtig sterrenbeeld. Iedereen keek naar hen. Stella was trots. Samen waren ze sterk.",
-                "content_en": "There was a little star in the sky. Her name was Stella. Stella wanted to shine like the other stars. But she was still small and her light was weak. Every night she tried to shine brighter. Then she got an idea. She invited all the little stars. Together they formed a group. Together their light shone very brightly. They formed a beautiful constellation. Everyone looked at them. Stella was proud. Together they were strong.",
-                "image_query": "little stars night sky",
-                "character": "⭐"
-            },
-            {
-                "id": 21,
-                "group": 2,
-                "title": "De Kleine Ruimtevaarder",
-                "titleEn": "The Little Astronaut",
-                "content_nl": "Lucas droomde ervan om naar de maan te gaan. Hij bouwde een raket van karton. Met zijn hond als copiloot telde hij af: 'Drie, twee, één, start!' Hij stelde zich voor dat hij door de sterren vloog. Hij zag de aarde van veraf. Het was zo mooi! Toen landde hij op de maan. Hij zette een vlaggetje neer. Toen hij terugkwam, vertelde hij zijn ouders over zijn avontuur. Ze glimlachten en zeiden: 'Misschien word je later echt astronaut!'",
-                "content_en": "Lucas dreamed of going to the moon. He built a rocket out of cardboard. With his dog as co-pilot he counted down: 'Three, two, one, blast off!' He imagined flying through the stars. He saw the earth from afar. It was so beautiful! Then he landed on the moon. He planted a little flag. When he returned, he told his parents about his adventure. They smiled and said: 'Maybe you'll become a real astronaut someday!'",
-                "image_query": "child astronaut cardboard rocket",
-                "character": "🚀"
-            },
-            {
-                "id": 22,
-                "group": 2,
-                "title": "De Magische Toverstaf",
-                "titleEn": "The Magic Wand",
-                "content_nl": "Emma vond een glinsterende stok in de tuin. 'Dit is een toverstaf!' dacht ze. Ze zwaaide ermee en zei: 'Abracadabra!' Tot haar verbazing veranderden de bloemen van kleur. Ze probeerde het nog eens. 'Ik wil dat de vogels komen zingen.' En werkelijk, de vogels kwamen. Emma ontdekte dat haar toverstaf echte magie had. Maar de echte magie was haar verbeelding. Ze bracht uren door met het verzinnen van nieuwe spreuken.",
-                "content_en": "Emma found a glittering stick in the garden. 'This is a magic wand!' she thought. She waved it and said: 'Abracadabra!' To her amazement, the flowers changed color. She tried again. 'I want the birds to come sing.' And truly, the birds came. Emma discovered that her wand had real magic. But the real magic was her imagination. She spent hours inventing new spells.",
-                "image_query": "magic wand sparkling garden",
-                "character": "✨"
-            },
-            {
-                "id": 23,
-                "group": 2,
-                "title": "De Verdwenen Sleutels",
-                "titleEn": "The Missing Keys",
-                "content_nl": "Oma kon haar sleutels niet vinden. Ze zocht overal: in de keuken, in de woonkamer, zelfs in de tuin. Toen besloot haar kleindochtje Lisa te helpen. Lisa dacht na: 'Waar was oma gisteren?' Ze liep naar de boekenkast. Daar lagen de sleutels, verstopt tussen de boeken. Oma was zo blij! 'Je bent een echte detective,' zei ze. Lisa kreeg een extra koekje als beloning.",
-                "content_en": "Grandma couldn't find her keys. She searched everywhere: in the kitchen, in the living room, even in the garden. Then her granddaughter Lisa decided to help. Lisa thought: 'Where was grandma yesterday?' She walked to the bookcase. There lay the keys, hidden between the books. Grandma was so happy! 'You're a real detective,' she said. Lisa got an extra cookie as a reward.",
-                "image_query": "grandmother keys detective child",
-                "character": "🔑"
-            },
-            {
-                "id": 24,
-                "group": 2,
-                "title": "De Zingende Vogel",
-                "titleEn": "The Singing Bird",
-                "content_nl": "Elke ochtend zong een klein vogeltje voor het raam van Jip. Het liedje was zo vrolijk dat Jip er altijd van moest glimlachen. Op een dag was het vogeltje weg. Jip was verdrietig. Hij legde wat zaadjes op de vensterbank. De volgende dag kwam het vogeltje terug! Het at de zaadjes en zong het mooiste liedje ooit. Jip beloofde elke dag zaadjes te leggen.",
-                "content_en": "Every morning a little bird sang outside Jip's window. The song was so cheerful that Jip always had to smile. One day the bird was gone. Jip was sad. He put some seeds on the windowsill. The next day the bird returned! It ate the seeds and sang the most beautiful song ever. Jip promised to put out seeds every day.",
-                "image_query": "singing bird window child",
-                "character": "🐦"
-            },
-            {
-                "id": 25,
-                "group": 2,
-                "title": "De Grote Schatkaart",
-                "titleEn": "The Big Treasure Map",
-                "content_nl": "Tim en Saar vonden een oude kaart in de zolder. Het was een schatkaart! Vol spanning volgden ze de aanwijzingen. Eerst naar de grote eik. Dan naar de rode steen. Toen naar het oude hek. Daar groeven ze een gat. En wat vonden ze? Een doos vol met glinsterende stenen en een brief van hun opa: 'Voor mijn lieve kleinkinderen.' Het was de mooiste schat ooit.",
-                "content_en": "Tim and Saar found an old map in the attic. It was a treasure map! Full of excitement they followed the clues. First to the big oak tree. Then to the red stone. Then to the old fence. There they dug a hole. And what did they find? A box full of glittering stones and a letter from their grandfather: 'For my dear grandchildren.' It was the most beautiful treasure ever.",
-                "image_query": "treasure map children digging",
-                "character": "🗺️"
-            },
-            {
-                "id": 26,
-                "group": 2,
-                "title": "De Kleine Kok",
-                "titleEn": "The Little Chef",
-                "content_nl": "Lotte wilde spaghetti maken voor haar familie. Ze snijdde de tomaten, de ui en de knoflook. Ze roerde in de pan. Het rook heerlijk! Toen voegde ze de kruiden toe. Iedereen aan tafel proefde ervan. 'Lekker!' zei papa. 'Heerlijk!' zei mama. Lotte was trots. Ze besloot vaker te koken. Wie weet werd ze later een beroemde kok.",
-                "content_en": "Lotte wanted to make spaghetti for her family. She chopped the tomatoes, the onion and the garlic. She stirred in the pan. It smelled delicious! Then she added the herbs. Everyone at the table tasted it. 'Tasty!' said dad. 'Delicious!' said mom. Lotte was proud. She decided to cook more often. Who knows, maybe she would become a famous chef later.",
-                "image_query": "child cooking spaghetti kitchen",
-                "character": "👨‍🍳"
-            },
-            {
-                "id": 27,
-                "group": 2,
-                "title": "De Verdwaalde Pinguïn",
-                "titleEn": "The Lost Penguin",
-                "content_nl": "Piet de pinguïn was verdwaald. Hij hoorde bij een groep, maar nu was hij alleen. Het was koud en hij was bang. Toen zag hij een ijsbeer. 'Help,' zei Piet. 'Ik ben verdwaald.' De ijsbeer wees de weg. 'Volg de sterren,' zei hij. Piet keek naar de hemel. Hij zag het sterrenbeeld dat zijn familie altijd volgde. Hij rende zo snel als hij kon en vond zijn groep terug. Wat was hij blij!",
-                "content_en": "Piet the penguin was lost. He belonged to a group, but now he was alone. It was cold and he was scared. Then he saw a polar bear. 'Help,' said Piet. 'I'm lost.' The polar bear showed the way. 'Follow the stars,' he said. Piet looked at the sky. He saw the constellation that his family always followed. He ran as fast as he could and found his group again. How happy he was!",
-                "image_query": "lost penguin snow ice",
-                "character": "🐧"
-            },
-            {
-                "id": 28,
-                "group": 2,
-                "title": "De Kleine Tuinman",
-                "titleEn": "The Little Gardener",
-                "content_nl": "Sem kreeg zaadjes van zijn oma. Hij maakte een mooi plekje in de tuin. Hij plantte de zaadjes en gaf ze water. Elke dag keek hij of er al iets groeide. Na een week zag hij kleine groene sprietjes. Hij verzorgde ze goed. Na een maand stonden er prachtige zonnebloemen! Sem plukte er een voor zijn oma. Ze was er heel blij mee.",
-                "content_en": "Sem got seeds from his grandmother. He made a nice spot in the garden. He planted the seeds and watered them. Every day he checked if anything was growing. After a week he saw little green sprouts. He took good care of them. After a month there were beautiful sunflowers! Sem picked one for his grandmother. She was very happy with it.",
-                "image_query": "child gardening sunflowers",
-                "character": "🌻"
-            },
-            {
-                "id": 29,
-                "group": 2,
-                "title": "De Dromenvanger",
-                "titleEn": "The Dream Catcher",
-                "content_nl": "Mila had vaak enge dromen. Haar oma maakte een dromenvanger voor haar. 'Deze vangt de enge dromen,' legde oma uit. 'Alleen de mooie dromen komen erdoor.' Mila hing de dromenvanger boven haar bed. Die nacht droomde ze over vliegen over bloemenvelden. Geen enge dromen meer! Mila sliep heerlijk en werd wakker met een glimlach.",
-                "content_en": "Mila often had scary dreams. Her grandmother made a dream catcher for her. 'This catches the scary dreams,' grandma explained. 'Only the beautiful dreams come through.' Mila hung the dream catcher above her bed. That night she dreamed about flying over flower fields. No more scary dreams! Mila slept wonderfully and woke up with a smile.",
-                "image_query": "dream catcher child bedroom",
-                "character": "🌙"
-            },
-            {
-                "id": 30,
-                "group": 2,
-                "title": "De Kleine Uitvinder",
-                "titleEn": "The Little Inventor",
-                "content_nl": "Bram hield van uitvinden. Hij maakte een machine die sokken sorteerde. Toen een robot die de tafel afruimde. Zijn beste uitvinding was een paraplu die muziek speelde. Op een regenachtige dag testte hij hem uit. De buren hoorden de vrolijke muziek en kwamen kijken. Iedereen vond het geweldig! Bram kreeg het idee om meer muzikale uitvindingen te maken.",
-                "content_en": "Bram loved inventing. He made a machine that sorted socks. Then a robot that cleared the table. His best invention was an umbrella that played music. On a rainy day he tested it out. The neighbors heard the cheerful music and came to look. Everyone thought it was great! Bram got the idea to make more musical inventions.",
-                "image_query": "child inventor gadgets",
-                "character": "🔧"
-            },
-            {
-                "id": 31,
-                "group": 2,
-                "title": "De Prinses en de Draak",
-                "titleEn": "The Princess and the Dragon",
-                "content_nl": "Prinses Lina was niet zoals andere prinsessen. Ze wilde avonturen beleven. Op een dag ontmoette ze een draak. Maar de draak was niet eng. Hij was eenzaam. Lina en de draak werden vrienden. Samen vlogen ze over het kasteel. De koning en koningin waren eerst bang, maar zagen dat de draak lief was. De draak mocht in de tuin wonen. Lina had eindelijk een echte vriend.",
-                "content_en": "Princess Lina wasn't like other princesses. She wanted to have adventures. One day she met a dragon. But the dragon wasn't scary. He was lonely. Lina and the dragon became friends. Together they flew over the castle. The king and queen were scared at first, but saw that the dragon was kind. The dragon was allowed to live in the garden. Lina finally had a real friend.",
-                "image_query": "princess friendly dragon",
-                "character": "🐲"
-            },
-            {
-                "id": 32,
-                "group": 2,
-                "title": "De Kleine Dirigent",
-                "titleEn": "The Little Conductor",
-                "content_nl": "Kees hield van muziek. Hij luisterde naar het radio-orkest en deed alsof hij dirigeerde. Zijn ouders zagen dit en kochten hem een echt dirigeerstokje. Op een dag mocht hij meedoen met de muziekschool. Hij dirigeerde de andere kinderen. Het klonk geweldig! De juf zei: 'Je bent een natuurlijk talent!' Kees droomde ervan om later een beroemde dirigent te worden.",
-                "content_en": "Kees loved music. He listened to the radio orchestra and pretended to conduct. His parents saw this and bought him a real conductor's baton. One day he was allowed to participate with the music school. He conducted the other children. It sounded amazing! The teacher said: 'You're a natural talent!' Kees dreamed of becoming a famous conductor later.",
-                "image_query": "child conducting orchestra",
-                "character": "🎼"
-            },
-            {
-                "id": 33,
-                "group": 2,
-                "title": "De Geheime Club",
-                "titleEn": "The Secret Club",
-                "content_nl": "Vier vrienden maakten een geheime club. Hun clubhuis was in een oude boomhut. Ze hadden speciale wachtwoorden en geheime handdrukken. Samen losten ze mysteries op. Op een dag vonden ze een verdwenen kat. Een andere keer hielpen ze een oude man zijn bril zoeken. Ze waren niet zomaar vrienden - ze waren avonturiers! En hun club werd beroemd in de buurt.",
-                "content_en": "Four friends made a secret club. Their clubhouse was in an old treehouse. They had special passwords and secret handshakes. Together they solved mysteries. One day they found a missing cat. Another time they helped an old man find his glasses. They weren't just friends - they were adventurers! And their club became famous in the neighborhood.",
-                "image_query": "children treehouse secret club",
-                "character": "🕵️"
-            },
-            {
-                "id": 34,
-                "group": 2,
-                "title": "De Dansende Bladeren",
-                "titleEn": "The Dancing Leaves",
-                "content_nl": "In de herfst dansten de bladeren in de wind. Sara keek ernaar en wilde meedoen. Ze draaide en sprong tussen de vallende bladeren. Haar hondje blafte vrolijk en rende mee. Samen maakten ze hun eigen herfstdans. De buren keken toe en klapten. Het werd een jaarlijkse traditie. Elke herfst danste Sara met de bladeren.",
-                "content_en": "In autumn the leaves danced in the wind. Sara watched and wanted to join. She twirled and jumped among the falling leaves. Her little dog barked happily and ran along. Together they made their own autumn dance. The neighbors watched and clapped. It became an annual tradition. Every autumn Sara danced with the leaves.",
-                "image_query": "child dancing autumn leaves",
-                "character": "🍂"
-            },
-            {
-                "id": 35,
-                "group": 2,
-                "title": "De Kleine Bibliothecaris",
-                "titleEn": "The Little Librarian",
-                "content_nl": "Noortje hield van boeken. Ze organiseerde haar eigen bibliotheek thuis. Ze gaf elk boek een nummer en maakte pasjes voor haar vrienden. Op een dag kwam de echte bibliothecaris langs. Ze was onder de indruk! Ze nodigde Noortje uit om te helpen in de echte bibliotheek. Noortje sorteerde boeken en hielp kinderen. Het was de beste dag ooit!",
-                "content_en": "Noortje loved books. She organized her own library at home. She gave each book a number and made cards for her friends. One day the real librarian came by. She was impressed! She invited Noortje to help in the real library. Noortje sorted books and helped children. It was the best day ever!",
-                "image_query": "child library books organization",
-                "character": "📚"
-            },
-            {
-                "id": 36,
-                "group": 2,
-                "title": "De Verdwenen Kleuren",
-                "titleEn": "The Missing Colors",
-                "content_nl": "Op een dag waren alle kleuren verdwenen. Alles was grijs en saai. Luna besluit de kleuren te zoeken. Ze vond rood in een roos, blauw in de lucht, geel in de zon en groen in het gras. Met haar toverkwast bracht ze de kleuren terug naar de wereld. Alles werd weer vrolijk en helder. Luna werd de heldin van het kleurenrijk.",
-                "content_en": "One day all the colors disappeared. Everything was gray and boring. Luna decided to search for the colors. She found red in a rose, blue in the sky, yellow in the sun and green in the grass. With her magic brush she brought the colors back to the world. Everything became cheerful and bright again. Luna became the heroine of the color kingdom.",
-                "image_query": "magic brush colors rainbow",
-                "character": "🎨"
-            },
-            {
-                "id": 37,
-                "group": 2,
-                "title": "De Kleine Zeiler",
-                "titleEn": "The Little Sailor",
-                "content_nl": "Finn bouwde een boot van takken en bladeren. Hij zeilde ermee op de vijver in het park. De wind blies zijn boot naar de overkant. Onderweg redde hij een mier die in het water was gevallen. Toen hielp hij een veertje dat vastzat. Toen hij aan de overkant kwam, voelde hij zich als een echte kapitein. Zijn boot had zijn eerste reis volbracht!",
-                "content_en": "Finn built a boat from sticks and leaves. He sailed it on the pond in the park. The wind blew his boat to the other side. Along the way he saved an ant that had fallen in the water. Then he helped a feather that was stuck. When he reached the other side, he felt like a real captain. His boat had completed its first voyage!",
-                "image_query": "child sailing stick boat",
-                "character": "⛵"
-            },
-            {
-                "id": 38,
-                "group": 2,
-                "title": "De Tijdmachine",
-                "titleEn": "The Time Machine",
-                "content_nl": "Jasper vond een oude doos in het schuurtje. Het was een tijdmachine! Hij drukte op een knop en vloog door de tijd. Hij zag dinosaurussen, ridders en zelfs de toekomst. Maar de beste tijd was zijn eigen tijd. Toen hij terugkwam, gaf hij zijn familie een knuffel. Hij besefte hoe bijzonder het nu is.",
-                "content_en": "Jasper found an old box in the shed. It was a time machine! He pressed a button and flew through time. He saw dinosaurs, knights and even the future. But the best time was his own time. When he returned, he gave his family a hug. He realized how special the present is.",
-                "image_query": "time machine child adventure",
-                "character": "⏰"
-            },
-            {
-                "id": 39,
-                "group": 2,
-                "title": "De Vriendelijke Reus",
-                "titleEn": "The Friendly Giant",
-                "content_nl": "Er woonde een reus in de bergen. Iedereen was bang voor hem. Maar een klein meisje genaamd Lieke was niet bang. Ze bracht hem koekjes. De reus was eenzaam en blij met het bezoek. Hij bleek heel aardig te zijn. Samen speelden ze verstoppertje. De reus kon zich natuurlijk niet goed verstoppen, maar ze hadden veel plezier. Soms is vriendschap groter dan angst.",
-                "content_en": "A giant lived in the mountains. Everyone was afraid of him. But a little girl named Lieke wasn't afraid. She brought him cookies. The giant was lonely and happy with the visit. He turned out to be very kind. Together they played hide and seek. The giant couldn't hide well of course, but they had lots of fun. Sometimes friendship is bigger than fear.",
-                "image_query": "friendly giant mountains",
-                "character": "👣"
-            },
-            {
-                "id": 40,
-                "group": 2,
-                "title": "De Sterrenwachter",
-                "titleEn": "The Star Watcher",
-                "content_nl": "Ravi hield van sterren kijken. Elke avond zat hij in de tuin met zijn telescoop. Hij kende alle sterrenbeelden. Op een nacht zag hij een nieuwe ster. Hij vertelde het aan de sterrenwacht. Het bleek een echte ontdekking te zijn! Ze noemden de ster 'Ravi's Ster'. Nu kijkt hij elke nacht naar zijn eigen ster en glimlacht.",
-                "content_en": "Ravi loved stargazing. Every evening he sat in the garden with his telescope. He knew all the constellations. One night he saw a new star. He told the observatory. It turned out to be a real discovery! They named the star 'Ravi's Star'. Now he looks at his own star every night and smiles.",
-                "image_query": "child telescope stars night",
-                "character": "🔭"
-            },
-            {
-                "id": 41,
-                "group": 3,
-                "title": "De Verdwenen Melodie",
-                "titleEn": "The Lost Melody",
-                "content_nl": "In het Muziekwoud kon iedereen zingen, totdat op een dag de melodie verdween. De vogels zongen niet meer, de beekjes kabbelden zonder geluid. Een klein meisje genaamd Lotte ontdekte dat de Grote Muziekspin haar web had verloren. Samen met de dieren van het woud weefden ze een nieuw web van draden gemaakt van zonlicht en dauw. Toen de spin terugkeerde en op het web speelde, vulde het woud zich weer met de mooiste klanken. Lotte leerde dat muziek overal om ons heen is, als we maar goed luisteren.",
-                "content_en": "In the Music Forest, everyone could sing, until one day the melody disappeared. The birds no longer sang, the streams babbled without sound. A little girl named Lotte discovered that the Great Music Spider had lost her web. Together with the forest animals, they wove a new web made of threads of sunlight and dew. When the spider returned and played on the web, the forest filled again with the most beautiful sounds. Lotte learned that music is all around us, if we just listen carefully.",
-                "image_query": "magical forest music spider web",
-                "character": "🕸️"
-            },
-            {
-                "id": 42,
-                "group": 3,
-                "title": "Het Geheim van de Oude Eik",
-                "titleEn": "The Secret of the Old Oak",
-                "content_nl": "Al honderden jaren stond de Oude Eik in het midden van het dorp. Kinderen fluisterden dat er een geheim in schuilging. Op een zomerdag vond Finn een kleine, glinsterende sleutel tussen de wortels. De sleutel leidde hem naar een verborgen deur in de stam. Binnen ontdekte hij een bibliotheek vol met verhalen die de boom door de jaren heen had gehoord. Finn begon de verhalen te lezen en te delen, en zo werd hij de verteller van het dorp, die ervoor zorgde dat geen enkel verhaal ooit vergeten zou worden.",
-                "content_en": "For hundreds of years, the Old Oak stood in the center of the village. Children whispered that a secret was hidden within it. On a summer day, Finn found a small, glittering key among the roots. The key led him to a hidden door in the trunk. Inside, he discovered a library full of stories the tree had heard over the years. Finn began reading and sharing the stories, and so he became the village storyteller, ensuring that no story would ever be forgotten.",
-                "image_query": "ancient oak tree secret door library",
-                "character": "🌳"
-            },
-            {
-                "id": 43,
-                "group": 3,
-                "title": "De Dag dat de Zon Vergat op te Komen",
-                "titleEn": "The Day the Sun Forgot to Rise",
-                "content_nl": "Op een ochtend werd het niet licht. De zon was vergeten op te komen! De wereld bleef donker en stil. Luna, een meisje met een hart vol moed, besloot naar de zon toe te reizen. Ze klom op de hoogste berg en zong het lied dat haar oma haar had geleerd - een lied over licht en hoop. Ver weg hoorde de zon het zingen en schaamde zich. Snel steeg hij op, en zijn stralen omhelsden Luna. Sinds die dag weet iedereen dat zelfs in de donkerste tijden, een liedje van hoop licht kan brengen.",
-                "content_en": "One morning, it didn't get light. The sun had forgotten to rise! The world remained dark and quiet. Luna, a girl with a heart full of courage, decided to travel to the sun. She climbed the highest mountain and sang the song her grandmother had taught her - a song about light and hope. Far away, the sun heard the singing and felt ashamed. Quickly he rose, and his rays embraced Luna. Since that day, everyone knows that even in the darkest times, a song of hope can bring light.",
-                "image_query": "dark morning child singing to sun",
-                "character": "🌄"
-            },
-            {
-                "id": 44,
-                "group": 3,
-                "title": "De Wolkenwever",
-                "titleEn": "The Cloud Weaver",
-                "content_nl": "Hoog boven de aarde woonde een oude wolkenwever. Haar naam was Celeste en ze weefde de wolken aan de hemel. Maar ze was eenzaam. Op een dag liet ze een wolk in de vorm van een eenhoorn naar beneden zweven. Een kind genaamd Sam zag het en tekende een hartje in de lucht. Celeste was zo blij dat ze een regenboog weefde als antwoord. Sindsdien speelden Sam en Celeste elke dag samen, waarbij Sam tekeningen maakte en Celeste ze in wolken en kleuren aan de hemel toverde.",
-                "content_en": "High above the earth lived an old cloud weaver. Her name was Celeste and she wove the clouds in the sky. But she was lonely. One day, she let a cloud shaped like a unicorn float down. A child named Sam saw it and drew a heart in the air. Celeste was so happy that she wove a rainbow as a response. Since then, Sam and Celeste played together every day, with Sam making drawings and Celeste magically turning them into clouds and colors in the sky.",
-                "image_query": "cloud shapes sky rainbow magic",
-                "character": "☁️"
-            },
-            {
-                "id": 45,
-                "group": 3,
-                "title": "Het Maanlicht Festival",
-                "titleEn": "The Moonlight Festival",
-                "content_nl": "Elke volle maan hielden de nachtdieren een festival in het bos. Maar deze maand was de maan bedekt door wolken. Het konijn, de uil, de vleermuis en de vos waren verdrietig. Toen bedacht het vuurvliegje een plan: alle vuurvliegjes verzamelden zich en vormden samen een glinsterende, kunstmatige maan. Het festival kon doorgaan! De dieren dansten de hele nacht in het zachte, sprankelende licht, en ze besloten dat het Maanlicht Festival voortaan het 'Vuurvliegjesfeest' zou heten.",
-                "content_en": "Every full moon, the nocturnal animals held a festival in the forest. But this month, the moon was covered by clouds. The rabbit, the owl, the bat, and the fox were sad. Then the firefly came up with a plan: all the fireflies gathered together and formed a glittering, artificial moon. The festival could continue! The animals danced all night in the soft, sparkling light, and they decided that the Moonlight Festival would now be called the 'Firefly Festival'.",
-                "image_query": "nocturnal animals firefly moon festival",
-                "character": "🦉"
-            },
-            {
-                "id": 46,
-                "group": 3,
-                "title": "De Spiegel van de Zee",
-                "titleEn": "The Mirror of the Sea",
-                "content_nl": "Er wordt gezegd dat de zee op een stille dag de hemel weerspiegelt. Maar de jonge zeemeermin Kora ontdekte dat de zee ook gevoelens weerspiegelt. Als ze blij was, dansten de golven vrolijk. Als ze verdrietig was, werd de zee grijs en kalm. Op een dag ontmoette ze een eenzame visserjongen aan de kust. Zijn verdriet maakte de zee ruw. Kora zong voor hem, en langzaam klaarde de zee op. Ze leerden dat vriendschap de mooiste weerspiegeling is.",
-                "content_en": "It is said that on a calm day, the sea reflects the sky. But the young mermaid Kora discovered that the sea also reflects feelings. When she was happy, the waves danced joyfully. When she was sad, the sea became gray and calm. One day, she met a lonely fisherman's boy on the shore. His sadness made the sea rough. Kora sang for him, and slowly the sea cleared up. They learned that friendship is the most beautiful reflection.",
-                "image_query": "mermaid ocean reflection emotions",
-                "character": "🧜‍♀️"
-            },
-            {
-                "id": 47,
-                "group": 3,
-                "title": "De Klokkenmaker en de Tijd",
-                "titleEn": "The Clockmaker and Time",
-                "content_nl": "Meneer Horloge was een klokkenmaker die in een huis vol tikken en slagen woonde. Hij kon tijd repareren, maar hij kon hem niet laten stoppen. Op een dag vroeg een kind hem: 'Kun je de tijd ook langzamer laten gaan voor de leuke momenten?' Meneer Horloge dacht na. Hij kon de klokken niet veranderen, maar hij leerde het kind wel om aandachtig te zijn. 'Als je echt kijkt, ruikt, proeft en luistert,' zei hij, 'dan rek je de tijd van binnen.' Het kind probeerde het en ontdekte dat een middag in de tuin een eeuwigheid kon lijken.",
-                "content_en": "Mr. Watch was a clockmaker who lived in a house full of ticks and chimes. He could repair time, but he couldn't make it stop. One day, a child asked him: 'Can you also make time go slower for the fun moments?' Mr. Watch thought. He couldn't change the clocks, but he did teach the child to be mindful. 'If you really look, smell, taste, and listen,' he said, 'then you stretch time from within.' The child tried it and discovered that an afternoon in the garden could feel like an eternity.",
-                "image_query": "old clockmaker workshop time",
-                "character": "⏳"
-            },
-            {
-                "id": 48,
-                "group": 3,
-                "title": "Het Fluisterende Moeras",
-                "titleEn": "The Whispering Swamp",
-                "content_nl": "Iedereen waarschuwde voor het Fluisterende Moeras. Ze zeiden dat het gevaarlijk was. Maar nieuwsgierige Elin hoorde niet de enge fluisteringen waar anderen over spraken; ze hoorde verdriet. Ze volgde het geluid en vond een eenzame, oude watergeest wier tranen het moeras hadden gevormd. Elin luisterde naar zijn verhalen over vergeten tijden. Met elke herinnering die hij deelde, werd het water helderder. Uiteindelijk, bevrijd van zijn eenzaamheid, veranderde de geest in een mist en dreef weg, en het moeras werd een heldere vijver vol leven.",
-                "content_en": "Everyone warned about the Whispering Swamp. They said it was dangerous. But curious Elin didn't hear the scary whispers others talked about; she heard sadness. She followed the sound and found a lonely, old water spirit whose tears had formed the swamp. Elin listened to his stories of forgotten times. With every memory he shared, the water became clearer. Finally, freed from his loneliness, the spirit turned into a mist and drifted away, and the swamp became a clear pond full of life.",
-                "image_query": "mysterious swamp water spirit",
-                "character": "🌫️"
-            },
-            {
-                "id": 49,
-                "group": 3,
-                "title": "De Schaduwdief",
-                "titleEn": "The Shadow Thief",
-                "content_nl": "Plotseling had niemand meer een schaduw. Ze waren allemaal gestolen! De straten zagen er vreemd en plat uit zonder de donkere metgezellen. Leo, die altijd met zijn schaduw voetbalde, was vastberaden om ze terug te halen. Hij volgde een spoor van lichtvlekken naar een grot, waar een klein, bang wezentje genaamd Umbra zat te huilen. Umbra was koud en had de schaduwen meegenomen voor warmte. Leo gaf hem zijn trui en legde uit dat vriendschap warmer is dan welke schaduw dan ook. Blij bracht Umbra alle schaduwen terug.",
-                "content_en": "Suddenly, no one had a shadow anymore. They had all been stolen! The streets looked strange and flat without the dark companions. Leo, who always played soccer with his shadow, was determined to get them back. He followed a trail of light spots to a cave, where a small, scared creature named Umbra was crying. Umbra was cold and had taken the shadows for warmth. Leo gave him his sweater and explained that friendship is warmer than any shadow. Happily, Umbra returned all the shadows.",
-                "image_query": "missing shadows cave creature",
-                "character": "👤"
-            },
-            {
-                "id": 50,
-                "group": 3,
-                "title": "De Tuin van Vergeten Dingen",
-                "titleEn": "The Garden of Forgotten Things",
-                "content_nl": "Achter het oude hek lag een tuin waar vergeten dingen groeiden: een perenboom van verloren glimlachjes, rozen van 'alsjeblieft' en 'dankjewel', en klimop van niet-gegeven knuffels. De tuinman, Opa Herinnering, verzorgde ze treurig. Toen een kind genaamd Tess per ongeluk de tuin binnenwandelde, plukte ze een 'dankjewel'-roos en gaf hem aan de oude man. Hij glimlachte, en onmiddellijk bloeide de hele tuin op. Tess begon elke dag iets uit de tuin te halen en het aan iemand te geven, en langzaam werd de tuin kleiner maar de wereld vriendelijker.",
-                "content_en": "Behind the old gate lay a garden where forgotten things grew: a pear tree of lost smiles, roses of 'please' and 'thank you', and ivy of hugs not given. The gardener, Grandpa Memory, tended to them sadly. When a child named Tess accidentally wandered into the garden, she picked a 'thank you' rose and gave it to the old man. He smiled, and immediately the whole garden bloomed. Tess started taking something from the garden every day and giving it to someone, and slowly the garden became smaller but the world kinder.",
-                "image_query": "magical garden forgotten memories",
-                "character": "🏵️"
-            },
-            {
-                "id": 51,
-                "group": 3,
-                "title": "De Nacht dat de Sterren Dachten",
-                "titleEn": "The Night the Stars Dreamed",
-                "content_nl": "Sterren slapen nooit, maar ze dromen wel. Op een bijzondere nacht vielen de dromen van de sterren naar de aarde als zacht, glinsterend stof. Mensen die sliepen, droomden de dromen van de sterren: dromen van verre galaxies, van het begin der tijden, van pure lichtheid. Toen de ochtend kwam, voelde iedereen zich een beetje magischer, alsof ze een geheim met het universum deelden. En hoewel ze zich de dromen niet meer precies herinnerden, bleef het gevoel van verwondering hun hele leven bij hen.",
-                "content_en": "Stars never sleep, but they do dream. On a special night, the dreams of the stars fell to earth as soft, glittering dust. People who were sleeping dreamed the dreams of the stars: dreams of distant galaxies, of the beginning of time, of pure lightness. When morning came, everyone felt a bit more magical, as if they shared a secret with the universe. And although they couldn't quite remember the dreams anymore, the feeling of wonder stayed with them for their entire lives.",
-                "image_query": "starry night dream dust magic",
-                "character": "🌠"
-            },
-            {
-                "id": 52,
-                "group": 3,
-                "title": "De Brievenbus voor de Maan",
-                "titleEn": "The Mailbox for the Moon",
-                "content_nl": "Er stond een oude, blauwe brievenbus aan het einde van de straat waar niemand post in deed. Op een dag zag Liam zijn zusje een tekening voor de maan in de bus stoppen. 'Die komt nooit aan,' zei hij. Maar 's nachts kwam de Maanpostbode - een gevleugelde wezentje - de post ophalen. Liam schreef een brief met zijn grootste wens: dat zijn opa, die ver weg woonde, minder eenzaam zou zijn. Een week later kreeg zijn opa onverwacht bezoek van buren die kaartjes wilden spelen. Liam wist niet zeker of het de maan was, maar hij bleef brieven sturen.",
-                "content_en": "There was an old, blue mailbox at the end of the street where no one mailed letters. One day, Liam saw his little sister put a drawing for the moon in the box. 'That will never arrive,' he said. But at night, the Moon Mail Carrier - a winged creature - came to collect the mail. Liam wrote a letter with his biggest wish: that his grandfather, who lived far away, would be less lonely. A week later, his grandfather unexpectedly got a visit from neighbors who wanted to play cards. Liam wasn't sure if it was the moon, but he kept sending letters.",
-                "image_query": "magical mailbox moon letters",
-                "character": "📮"
-            },
-            {
-                "id": 53,
-                "group": 3,
-                "title": "De Wind die Wilde Blijven",
-                "titleEn": "The Wind That Wanted to Stay",
-                "content_nl": "De Wind was altijd onderweg. Hij raasde door steden, suisde door bossen, maar kon nooit ergens blijven. Op een dag voelde hij zich moe. Hij zag een huis waar een kind viool speelde. De muziek was zo mooi dat de Wind wilde blijven. Hij probeerde door de kieren naar binnen, maar dat maaide alleen de papieren op. Toen kreeg hij een idee. Hij blies zachtjes door de open raam, om de gordijnen te laten dansen op de maat van de muziek. Het kind glimlachte en speelde verder. De Wind was niet langer een voorbijganger; hij was nu een danspartner.",
-                "content_en": "The Wind was always on the move. He rushed through cities, whispered through forests, but could never stay anywhere. One day he felt tired. He saw a house where a child was playing the violin. The music was so beautiful that the Wind wanted to stay. He tried to get in through the cracks, but that only scattered the papers. Then he got an idea. He blew softly through the open window, making the curtains dance to the rhythm of the music. The child smiled and played on. The Wind was no longer a passerby; he was now a dance partner.",
-                "image_query": "wind dancing curtains music",
-                "character": "💨"
-            },
-            {
-                "id": 54,
-                "group": 3,
-                "title": "Het Huis dat Ademde",
-                "titleEn": "The House That Breathed",
-                "content_nl": "Het huis van Oma Blom was anders. De vloer knarste niet, hij zuchtte tevreden. De ramen krasten niet, ze knipperen slaperig. Toen Oma Blom op reis ging, kwam haar kleindochter Mila logeren. Het huis was stil en triest zonder zijn bewoner. Mila begreep het niet. Ze zong de liedjes die haar oma zong, ze bakte de koekjes die haar oma bakte. Langzaam begon het huis weer te ademen, eerst voorzichtig, toen diep en vredig. Het huis had een nieuw hart gevonden om voor te zorgen.",
-                "content_en": "Grandma Blom's house was different. The floor didn't creak, it sighed contentedly. The windows didn't scratch, they blinked sleepily. When Grandma Blom went on a trip, her granddaughter Mila came to stay. The house was quiet and sad without its occupant. Mila didn't understand. She sang the songs her grandmother sang, she baked the cookies her grandmother baked. Slowly the house began to breathe again, first cautiously, then deeply and peacefully. The house had found a new heart to care for.",
-                "image_query": "living breathing magical house",
-                "character": "🏠"
-            },
-            {
-                "id": 55,
-                "group": 3,
-                "title": "De Stilte van de Sneeuw",
-                "titleEn": "The Silence of the Snow",
-                "content_nl": "De eerste sneeuw van het jaar viel, en daarmee kwam een diepe stilte. Alles dempte. Een jongen genaamd Kris vond de stilte eng. Maar zijn grootvader nam hem mee naar buiten en zei: 'Luister.' Kris luisterde echt. Hij hoorde de vlokken zachtjes landen, het kreunen van een tak onder het gewicht, de verre roep van een vogel. Het was niet de afwezigheid van geluid, het was een nieuw soort geluid. Kris leerde dat stilte niet leeg is, maar vol van kleine, delicate geluiden die je alleen kunt horen als je heel aandachtig bent.",
-                "content_en": "The first snow of the year fell, and with it came a deep silence. Everything was muffled. A boy named Kris found the silence scary. But his grandfather took him outside and said: 'Listen.' Kris really listened. He heard the flakes landing softly, the groan of a branch under the weight, the distant call of a bird. It wasn't the absence of sound, it was a new kind of sound. Kris learned that silence is not empty, but full of small, delicate sounds that you can only hear if you are very attentive.",
-                "image_query": "snowfall quiet forest listening",
-                "character": "❄️"
-            },
-            {
-                "id": 56,
-                "group": 3,
-                "title": "De Kaarsenmaker van de Dromen",
-                "titleEn": "The Candle Maker of Dreams",
-                "content_nl": "In een klein winkeltje maakte een oude vrouw kaarsen. Maar dit waren geen gewone kaarsen. Elke kaars bevatte een droom. Een groene kaars met een bosgeur droomde van avontuur. Een blauwe kaars die naar de zee rook, droomde van reizen. Een kind kocht een kleine, gele kaars die naar honing rook. Die nacht, toen de kaars brandde, droomde het kind van een zonnige dag in een veld vol bloemen en bijen. De volgende ochtend voelde het kind zich zo vrolijk alsof de droom werkelijkheid was geweest.",
-                "content_en": "In a small shop, an old woman made candles. But these were not ordinary candles. Each candle contained a dream. A green candle with a forest scent dreamed of adventure. A blue candle that smelled of the sea dreamed of travel. A child bought a small, yellow candle that smelled of honey. That night, when the candle burned, the child dreamed of a sunny day in a field full of flowers and bees. The next morning, the child felt so cheerful as if the dream had been real.",
-                "image_query": "magical dream candles shop",
-                "character": "🕯️"
-            },
-            {
-                "id": 57,
-                "group": 3,
-                "title": "De Rivier die Achteruit Stroomde",
-                "titleEn": "The River That Flowed Backwards",
-                "content_nl": "Ineens stroomde de rivier door het dorp achteruit. Vissen zwommen verward, bootjes voeren de verkeerde kant op. De wijze vrouw van het dorp zei dat de rivier heimwee had naar zijn bron hoog in de bergen. Een meisje genaamd Anouk bood aan om de rivier te begeleiden. Ze liep langs de oever, zachtjes zingend over de bergen en de sneeuw. De rivier leek te luisteren, en langzaam, heel langzaam, draaide hij zich weer om en stroomde naar zee, tevreden met de herinnering aan zijn thuis.",
-                "content_en": "Suddenly, the river through the village flowed backwards. Fish swam confused, little boats sailed the wrong way. The wise woman of the village said the river was homesick for its source high in the mountains. A girl named Anouk offered to guide the river. She walked along the bank, softly singing about the mountains and the snow. The river seemed to listen, and slowly, very slowly, it turned around again and flowed towards the sea, content with the memory of its home.",
-                "image_query": "river flowing backwards magic",
-                "character": "🌊"
-            },
-            {
-                "id": 58,
-                "group": 3,
-                "title": "De Verzamelaar van Geuren",
-                "titleEn": "The Collector of Scents",
-                "content_nl": "Er woonde een man die geuren verzamelde in glazen potjes. Hij had de geur van versgebakken brood, van regen op warme stenen, van oude boeken. Op een dag verloor hij zijn reukzin. Hij was ontroostbaar. Een kind dat vaak naar zijn verzameling kwam kijken, had een idee. Ze opende de potjes één voor één en beschreef de geuren in zulke levendige details dat de man ze bijna kon ruiken. 'De geur van versgebakken brood,' zei ze, 'is als een warme deken voor je neus.' De man ontdekte dat herinneringen aan geuren bijna net zo zoet waren als de geuren zelf.",
-                "content_en": "There lived a man who collected scents in glass jars. He had the smell of freshly baked bread, of rain on warm stones, of old books. One day, he lost his sense of smell. He was inconsolable. A child who often came to look at his collection had an idea. She opened the jars one by one and described the scents in such vivid detail that the man could almost smell them. 'The smell of freshly baked bread,' she said, 'is like a warm blanket for your nose.' The man discovered that memories of scents were almost as sweet as the scents themselves.",
-                "image_query": "glass jars scent collection memory",
-                "character": "🧴"
-            },
-            {
-                "id": 59,
-                "group": 3,
-                "title": "Het Meisje en de Maansteen",
-                "titleEn": "The Girl and the Moonstone",
-                "content_nl": "Tijdens een maansverduistering vond een meisje genaamd Nova een steen die zacht gloeide. Het was een maansteen. Wanneer ze hem vasthield, kon ze de gedachten van nachtdieren horen: de uil die zich afvroeg waarom de muis zo hard rende, de vos die droomde van druiven. Maar ze hoorde ook de eenzaamheid van de maan zelf. Nova klom op het hoogste punt en hield de steen omhoog, zodat de maan zijn licht kon teruggeven. De steen stopte met gloeien, maar Nova's hart gloeide nu met het besef dat alles en iedereen met elkaar verbonden is.",
-                "content_en": "During a lunar eclipse, a girl named Nova found a stone that glowed softly. It was a moonstone. When she held it, she could hear the thoughts of nocturnal animals: the owl wondering why the mouse ran so fast, the fox dreaming of grapes. But she also heard the loneliness of the moon itself. Nova climbed to the highest point and held the stone up, so the moon could take its light back. The stone stopped glowing, but Nova's heart now glowed with the realization that everything and everyone is connected.",
-                "image_query": "moonstone glowing night connection",
-                "character": "💎"
-            },
-            {
-                "id": 60,
-                "group": 3,
-                "title": "De Laatste Draak van de Herfst",
-                "titleEn": "The Last Dragon of Autumn",
-                "content_nl": "Diep in het herfstbos leefde een draak die niet vuur spuwde, maar bladeren. Zijn adem verkleurde het groen naar goud, oranje en rood. Maar hij was oud en eenzaam, de laatste van zijn soort. Een kind genaamd Bram ontdekte hem. In plaats van bang te zijn, was Bram gefascineerd. Hij bracht de draak appels, en de draak liet Bram op zijn rug zitten terwijl hij over het bos vloog, een regen van kleur achterlatend. Toen de winter kwam, viel de draak in slaap, maar Bram wist dat hij in de herfst weer zou ontwaken, klaar om de wereld opnieuw kleur te geven.",
-                "content_en": "Deep in the autumn forest lived a dragon that didn't breathe fire, but leaves. His breath turned the green to gold, orange, and red. But he was old and lonely, the last of his kind. A child named Bram discovered him. Instead of being scared, Bram was fascinated. He brought the dragon apples, and the dragon let Bram ride on his back as he flew over the forest, leaving a rain of color behind. When winter came, the dragon fell asleep, but Bram knew he would awaken again in the autumn, ready to color the world once more.",
-                "image_query": "autumn dragon colorful leaves",
-                "character": "🐉"
-            },
-            {
-                "id": 61,
-                "group": 4,
-                "title": "De Zee van Vergeten Herinneringen",
-                "titleEn": "The Sea of Forgotten Memories",
-                "content_nl": "Aan de rand van de wereld lag een zee waar vergeten herinneringen naartoe drijven. Opa's verjaardagswens van vorig jaar, de smaak van de eerste aardbei van de zomer, het gevoel van trots toen je leerde fietsen - ze dobberden daar allemaal als kleine, glinsterende bootjes. Een meisje genaamd Elara bouwde een boot van dromen en zeilde de zee op. Ze vond haar eigen vergeten lach en bracht hem terug naar huis. Sindsdien bezoekt ze de zee regelmatig, niet om herinneringen terug te halen, maar om te zorgen dat ze nooit helemaal verloren gaan.",
-                "content_en": "At the edge of the world lay a sea where forgotten memories drift. Grandpa's birthday wish from last year, the taste of the first strawberry of summer, the feeling of pride when you learned to ride a bike - they all floated there like small, glittering boats. A girl named Elara built a boat of dreams and sailed the sea. She found her own forgotten laugh and brought it back home. Since then, she visits the sea regularly, not to retrieve memories, but to make sure they never get completely lost.",
-                "image_query": "sea of memories glowing boats",
-                "character": "🌊"
-            },
-            {
-                "id": 62,
-                "group": 4,
-                "title": "De Klokken van de Eeuwigheid",
-                "titleEn": "The Bells of Eternity",
-                "content_nl": "In de toren van de oude stad hingen klokken die niet de uren sloegen, maar de momenten. Elke bel vertegenwoordigde een kostbaar moment: de eerste keer dat je je naam schreef, het moment dat je besefte dat je van iemand hield, de seconde waarin je een groot geheim ontdekte. De klokkenluider was een oude man die zorgde dat geen enkel belangrijk moment onopgemerkt voorbij zou gaan. Op een dag nam hij een jongen genaamd Finn mee naar de toren en leerde hem luisteren naar de subtiele geluiden van zijn eigen leven, zodat hij nooit meer een kostbaar moment zou missen.",
-                "content_en": "In the tower of the old city hung bells that didn't strike the hours, but the moments. Each bell represented a precious moment: the first time you wrote your name, the moment you realized you loved someone, the second you discovered a great secret. The bell ringer was an old man who made sure no important moment would pass unnoticed. One day, he took a boy named Finn to the tower and taught him to listen to the subtle sounds of his own life, so he would never miss a precious moment again.",
-                "image_query": "ancient clock tower moments",
-                "character": "🔔"
-            },
-            {
-                "id": 63,
-                "group": 4,
-                "title": "Het Theater van de Schaduwen",
-                "titleEn": "The Theater of Shadows",
-                "content_nl": "Achter het gordijn van de nacht speelde zich elke avond een schaduwtheater af. De schaduwen van bomen werden dansers, de schaduw van een vogel werd een vliegende draak, en de schaduw van een kind dat in bed lag werd een ontdekkingsreiziger in dromenland. Een meisje genaamd Lina bleef een nacht wakker om de voorstelling te zien. Ze ontdekte dat haar eigen schaduw de hoofdrol speelde in een avontuur dat ze nooit had durven dromen. De volgende ochtend voelde ze zich moediger dan ooit tevoren.",
-                "content_en": "Behind the curtain of the night, a shadow theater performed every evening. The shadows of trees became dancers, the shadow of a bird became a flying dragon, and the shadow of a child lying in bed became an explorer in dreamland. A girl named Lina stayed awake one night to watch the performance. She discovered that her own shadow played the lead role in an adventure she had never dared to dream. The next morning, she felt braver than ever before.",
-                "image_query": "shadow theater night performance",
-                "character": "🎭"
-            },
-            {
-                "id": 64,
-                "group": 4,
-                "title": "De Bibliotheek van Ongelezen Verhalen",
-                "titleEn": "The Library of Unread Stories",
-                "content_nl": "Diep onder de grond lag een bibliotheek vol met verhalen die nooit waren gelezen. Er waren verhalen over helden die nooit werden bewonderd, over grappen die nooit werden gelachen, over mysteries die nooit werden opgelost. Een jongen genaamd Kees vond per ongeluk de ingang. Hij begon de verhalen te lezen en ze hardop voor te lezen aan de lege stoelen. Tot zijn verbazing verschenen er schimmen die kwamen luisteren - de geesten van de personages die eindelijk hun publiek vonden. Kees werd de verteller van de verloren verhalen.",
-                "content_en": "Deep underground lay a library full of stories that had never been read. There were stories about heroes who were never admired, about jokes that were never laughed at, about mysteries that were never solved. A boy named Kees accidentally found the entrance. He started reading the stories and reading them aloud to the empty chairs. To his amazement, shadows appeared to listen - the ghosts of the characters who finally found their audience. Kees became the storyteller of the lost stories.",
-                "image_query": "underground library ghost stories",
-                "character": "📖"
-            },
-            {
-                "id": 65,
-                "group": 4,
-                "title": "De Schilder van de Seizoenen",
-                "titleEn": "The Painter of Seasons",
-                "content_en": "High in the mountains lived an old painter who changed the colors of the world with his brushes. In spring he painted with pastel colors, in summer with bright, vibrant tones, in autumn with warm gold and red, and in winter with soft whites and blues. One year he fell ill and couldn't paint. The seasons stood still. A girl named Fleur, who loved to draw, climbed the mountain. Together they mixed the colors, and Fleur learned that every season has its own beauty and that change is part of life's wonderful rhythm.",
-                "content_nl": "Hoog in de bergen woonde een oude schilder die de kleuren van de wereld veranderde met zijn penselen. In de lente schilderde hij met pastelkleuren, in de zomer met heldere, levendige tinten, in de herfst met warm goud en rood, en in de winter met zachte witten en blauwen. Op een jaar werd hij ziek en kon niet schilderen. De seizoenen stonden stil. Een meisje genaamd Fleur, dat graag tekende, klom de berg op. Samen mengden ze de kleuren, en Fleur leerde dat elk seizoen zijn eigen schoonheid heeft en dat verandering hoort bij het wonderlijke ritme van het leven.",
-                "image_query": "season painter mountain colors",
-                "character": "🎨"
-            },
-            {
-                "id": 66,
-                "group": 4,
-                "title": "De Stad van Gefluisterde Wensen",
-                "titleEn": "The City of Whispered Wishes",
-                "content_nl": "Er was een stad waar wensen niet hardop werden uitgesproken, maar werden gefluisterd tegen de muren van oude gebouwen. De stenen absorbeerden de wensen en gaven ze langzaam vrij in de vorm van kleine wonderen. Een wens voor vriendschap zorgde ervoor dat twee eenzame mensen elkaar ontmoetten in de bibliotheek. Een wens voor moed maakte dat een verlegen kind zijn hand opstelde in de klas. Een nieuwkomer in de stad genaamd Sam leerde de taal van het fluisteren en ontdekte dat de grootste wensen vaak de zachtst worden uitgesproken.",
-                "content_en": "There was a city where wishes weren't spoken aloud, but whispered against the walls of old buildings. The stones absorbed the wishes and slowly released them in the form of small miracles. A wish for friendship caused two lonely people to meet in the library. A wish for courage made a shy child raise their hand in class. A newcomer to the city named Sam learned the language of whispering and discovered that the greatest wishes are often spoken the softest.",
-                "image_query": "ancient city whispering walls",
-                "character": "🏛️"
-            },
-            {
-                "id": 67,
-                "group": 4,
-                "title": "De Wever van Droomtapijten",
-                "titleEn": "The Weaver of Dream Carpets",
-                "content_nl": "In een werkplaats vol kleurrijke draden weefde een oude vrouw tapijten waar je op kon dromen. Elk tapijt vertelde een verhaal: eentje over vliegende olifanten, een ander over onderwatersteden, weer een ander over zoete luchtsnoepjes. Kinderen kwamen naar haar toe met hun diepste verlangens, en zij weefde ze in haar tapijten. Op een dag kwam een kind dat niet kon dromen. De oude vrouw weefde een speciaal tapijt met de draden van maanlicht en kinderlachen. Die nacht, voor het eerst, droomde het kind in levendige kleuren.",
-                "content_en": "In a workshop full of colorful threads, an old woman wove carpets you could dream on. Each carpet told a story: one about flying elephants, another about underwater cities, yet another about sweet air candies. Children came to her with their deepest desires, and she wove them into her carpets. One day, a child came who couldn't dream. The old woman wove a special carpet with threads of moonlight and children's laughter. That night, for the first time, the child dreamed in vivid colors.",
-                "image_query": "magic carpet weaving dreams",
-                "character": "🧵"
-            },
-            {
-                "id": 68,
-                "group": 4,
-                "title": "De Brug van Gefluisterde Waarheden",
-                "titleEn": "The Bridge of Whispered Truths",
-                "content_nl": "Over de rivier van onuitgesproken gedachten lag een brug waarop mensen alleen de waarheid konden spreken. Niet de grote, levensveranderende waarheden, maar de kleine, tedere waarheden: 'Ik mis je,' 'Dat deed pijn,' 'Ik ben trots op je.' Een ruzie tussen twee vrienden werd er beëindigd toen ze allebei toegaven dat ze de ander misten. Een vader en zoon vonden elkaar daar weer toen de zoon zei: 'Ik wou dat we meer tijd samen hadden.' De brug leerde iedereen dat de kleinste waarheden vaak de zwaarste zijn om te dragen, en de belangrijkste om te delen.",
-                "content_en": "Over the river of unspoken thoughts lay a bridge where people could only speak the truth. Not the big, life-changing truths, but the small, tender truths: 'I miss you,' 'That hurt,' 'I'm proud of you.' An argument between two friends ended there when they both admitted they missed each other. A father and son found each other there again when the son said: 'I wish we had more time together.' The bridge taught everyone that the smallest truths are often the heaviest to carry, and the most important to share.",
-                "image_query": "magical bridge truth speaking",
-                "character": "🌉"
-            },
-            {
-                "id": 69,
-                "group": 4,
-                "title": "De Nachtelijke Tuinman",
-                "titleEn": "The Night Gardener",
-                "content_nl": "Terwijl de stad sliep, werkte de Nachtelijke Tuinman. Hij plantte geen bloemen, maar groeide dromen. Met een gieter vol sterrenlicht en een schep gemaakt van maansteen, zorgde hij ervoor dat elke slapende ziel iets moois kon dromen. Voor het angstige kind plantte hij dromen van moed, voor het eenzame kind dromen van vriendschap. Op een nacht ontdekte een wakend kind hem. In plaats van weg te rennen, gaf de Tuinman het kind een zaadje. 'Plant dit in je hart,' zei hij, 'en je zult altijd mooie dromen hebben.'",
-                "content_en": "While the city slept, the Night Gardener worked. He didn't plant flowers, but grew dreams. With a watering can full of starlight and a shovel made of moonstone, he made sure every sleeping soul could dream something beautiful. For the anxious child he planted dreams of courage, for the lonely child dreams of friendship. One night, a waking child discovered him. Instead of running away, the Gardener gave the child a seed. 'Plant this in your heart,' he said, 'and you will always have beautiful dreams.'",
-                "image_query": "night gardener planting dreams",
-                "character": "🌌"
-            },
-            {
-                "id": 70,
-                "group": 4,
-                "title": "De Orkest van Verloren Geluiden",
-                "titleEn": "The Orchestra of Lost Sounds",
-                "content_nl": "Er bestond een orkest dat alleen speelde met geluiden die waren verdwenen: het geritsel van een uitgestorven vlinder, het gelach van een vergeten grap, het geklater van een gedempte beek. De dirigent was een dove man die de trillingen van de muziek kon voelen. Een meisje genaamd Sofie, dat haar stem had verloren na een ziekte, vond het orkest. Ze leerde dat stilte ook muziek kan zijn, en dat sommige geluiden zo kostbaar zijn dat ze alleen in je hart blijven klinken. Toen ze terugkeerde naar huis, kon ze weer zingen - niet met haar stem, maar met haar ziel.",
-                "content_en": "There existed an orchestra that only played with sounds that had disappeared: the rustle of an extinct butterfly, the laughter of a forgotten joke, the babbling of a silenced stream. The conductor was a deaf man who could feel the vibrations of the music. A girl named Sofie, who had lost her voice after an illness, found the orchestra. She learned that silence can also be music, and that some sounds are so precious that they only continue to sound in your heart. When she returned home, she could sing again - not with her voice, but with her soul.",
-                "image_query": "orchester lost sounds magic",
-                "character": "🎻"
-            },
-            {
-                "id": 71,
-                "group": 4,
-                "title": "De Kaart van Onontdekte Landen",
-                "titleEn": "The Map of Undiscovered Lands",
-                "content_nl": "In een antieke winkel vond een jongen genaamd Levi een kaart die niet bestaande landen toonde: het Eiland van Verloren Sokken, de Bergen van Onuitgesproken Excuses, het Woud van Vergeten Beloftes. Met zijn hond als metgezel reisde hij naar deze plaatsen. In het Woud van Vergeten Beloftes vond hij zijn eigen belofte om zijn zusje te leren fietsen. Hij nam het mee naar huis en hield het diezelfde dag. Levi leerde dat sommige landen alleen bestaan tot je ze ontdekt, en dat beloften magisch worden wanneer je ze houdt.",
-                "content_en": "In an antique shop, a boy named Levi found a map that showed non-existent countries: the Island of Lost Socks, the Mountains of Unspoken Apologies, the Forest of Forgotten Promises. With his dog as companion, he traveled to these places. In the Forest of Forgotten Promises, he found his own promise to teach his little sister to ride a bike. He took it home and kept it that same day. Levi learned that some lands only exist until you discover them, and that promises become magical when you keep them.",
-                "image_query": "magical map imaginary lands",
-                "character": "🗺️"
-            },
-            {
-                "id": 72,
-                "group": 4,
-                "title": "De Bewaker van de Drempel",
-                "titleEn": "The Keeper of the Threshold",
-                "content_nl": "Tussen wakend en slapend, tussen echt en ingebeeld, staat een oude bewaker. Hij bewaakt de drempel tussen werelden. Kinderen die bijna in slaap vallen, zien hem soms. Hij bepaalt welke dromen door mogen en welke gedachten moeten wachten. Op een nacht ontmoette een meisje genaamd Nora hem. Ze smeekte om een droom over haar overleden hond. De bewaker, meestal streng, was ontroerd. 'Sommige liefdes zijn te sterk voor drempels,' zei hij zacht, en liet haar door. Die nacht rende Nora door groene velden met haar hond, en ze wist dat sommige banden nooit breken.",
-                "content_en": "Between waking and sleeping, between real and imagined, stands an old keeper. He guards the threshold between worlds. Children who are almost asleep sometimes see him. He decides which dreams may pass and which thoughts must wait. One night, a girl named Nora met him. She begged for a dream about her deceased dog. The keeper, usually strict, was moved. 'Some loves are too strong for thresholds,' he said softly, and let her pass. That night, Nora ran through green fields with her dog, and she knew that some bonds never break.",
-                "image_query": "threshold guardian dream world",
-                "character": "🚪"
-            },
-            {
-                "id": 73,
-                "group": 4,
-                "title": "De Rivier van Tijd",
-                "titleEn": "The River of Time",
-                "content_nl": "Er stroomt een rivier waarvan het water niet van plaats naar plaats stroomt, maar van toen naar nu. Je kunt er herinneringen in zien voorbijdrijven: je vierde verjaardag, de eerste schooldag, de kerst dat het sneeuwde. Een oude vrouw genaamd Oma Annet leerde haar kleindochter Mara hoe ze voorzichtig een herinnering uit de rivier kon scheppen om hem opnieuw te beleven. Maar ze waarschuwde: 'Drink niet te veel, want het heden is waar het leven echt plaatsvindt.' Mara leerde de balans tussen herinnering koesteren en in het nu leven.",
-                "content_en": "There flows a river whose water doesn't flow from place to place, but from then to now. You can see memories floating by: your fourth birthday, the first day of school, the Christmas it snowed. An old woman named Grandma Annet taught her granddaughter Mara how to carefully scoop a memory from the river to relive it. But she warned: 'Don't drink too much, because the present is where life really happens.' Mara learned the balance between cherishing memory and living in the now.",
-                "image_query": "river of time memories flowing",
-                "character": "⏳"
-            },
-            {
-                "id": 74,
-                "group": 4,
-                "title": "De Smid van Sterren",
-                "titleEn": "The Blacksmith of Stars",
-                "content_nl": "Diep in het universum staat een smidse waar sterren worden gemaakt. De smid hamerde op gloeiende gaswolken tot ze helder werden, en gaf elke ster een speciale eigenschap: de ene kreeg de kracht om wensen te vervullen, de andere om de weg te wijzen, weer een andere om troost te bieden. Op een nacht mocht een kind genaamd Raf de smidse bezoeken. Hij mocht zelf een kleine ster smeden - eentje die nooit zou vergeten te schijnen voor wie het moeilijk heeft. Sindsdien kijkt Raf elke nacht naar zijn ster en weet dat hij er nooit alleen voor staat.",
-                "content_en": "Deep in the universe stands a forge where stars are made. The blacksmith hammered on glowing gas clouds until they became bright, and gave each star a special quality: one got the power to grant wishes, another to show the way, yet another to offer comfort. One night, a child named Raf was allowed to visit the forge. He was allowed to forge a small star himself - one that would never forget to shine for those having a hard time. Since then, Raf looks at his star every night and knows he never has to face things alone.",
-                "image_query": "star forge universe creation",
-                "character": "⭐"
-            },
-            {
-                "id": 75,
-                "group": 4,
-                "title": "De Spiegel die Toekomsten Toont",
-                "titleEn": "The Mirror That Shows Futures",
-                "content_nl": "In een vergeten kamer stond een spiegel die niet je reflectie toonde, maar mogelijke toekomsten. Je kon zien wie je zou worden als je doorzet, als je vergeeft, als je droomt. Een meisje genaamd Eline keek in de spiegel en zag tientallen versies van zichzelf: een arts, een ontdekkingsreiziger, een leraar, een moeder. In eerste instantie was ze overweldigd, maar toen besefte ze: de spiegel toonde niet wat ze moest worden, maar wat ze kon worden. De keuze was aan haar. Ze liep weg met een hart vol mogelijkheden in plaats van angst.",
-                "content_en": "In a forgotten room stood a mirror that didn't show your reflection, but possible futures. You could see who you would become if you persevere, if you forgive, if you dream. A girl named Eline looked in the mirror and saw dozens of versions of herself: a doctor, an explorer, a teacher, a mother. At first she was overwhelmed, but then she realized: the mirror didn't show what she had to become, but what she could become. The choice was hers. She walked away with a heart full of possibilities instead of fear.",
-                "image_query": "magic mirror future visions",
-                "character": "🔮"
-            },
-            {
-                "id": 76,
-                "group": 4,
-                "title": "De Bewaarplaats van Moed",
-                "titleEn": "The Vault of Courage",
-                "content_nl": "Onder de oudste boom van het land lag een bewaarplaats waar moed werd opgeslagen. Niet de grote, dramatische moed van helden, maar de kleine, dagelijkse moed: de moed om sorry te zeggen, om iets nieuws te proberen, om alleen te zijn, om nee te zeggen. Toen een kind genaamd Bas zijn moed leek te verliezen voor een schoolvoorstelling, bracht zijn grootvader hem naar de boom. 'Neem een beetje moed,' zei hij. Bas nam een snufje en stopte het in zijn zak. Tijdens de voorstelling voelde hij het tintelen in zijn zak, en hij speelde zijn rol perfect.",
-                "content_en": "Under the oldest tree in the land lay a vault where courage was stored. Not the big, dramatic courage of heroes, but the small, daily courage: the courage to say sorry, to try something new, to be alone, to say no. When a child named Bas seemed to lose his courage for a school play, his grandfather brought him to the tree. 'Take a little courage,' he said. Bas took a pinch and put it in his pocket. During the play, he felt it tingling in his pocket, and he performed his role perfectly.",
-                "image_query": "courage vault ancient tree",
-                "character": "💪"
-            },
-            {
-                "id": 77,
-                "group": 4,
-                "title": "De Tuin der Tranen",
-                "titleEn": "The Garden of Tears",
-                "content_nl": "Er was een geheime tuin waar tranen werden verzameld en geplant. Tranen van verdriet werden zilveren bloemen, tranen van vreugde werden gouden klokjes, tranen van trots werden robijnrode rozen. De tuinman, een zachtaardige reus, zorgde voor elke plant. Een meisje genaamd Fien, dat vaak huilde, vond de tuin. In plaats van zich te schamen voor haar tranen, bracht ze ze naar de tuin. Ze zag hoe haar tranen van eenzaamheid veranderden in blauwe irissen die troost boden aan andere eenzame zielen. Ze leerde dat tranen niet zwak maken, maar verbinden.",
-                "content_en": "There was a secret garden where tears were collected and planted. Tears of sadness became silver flowers, tears of joy became golden bells, tears of pride became ruby red roses. The gardener, a gentle giant, cared for each plant. A girl named Fien, who often cried, found the garden. Instead of being ashamed of her tears, she brought them to the garden. She saw how her tears of loneliness turned into blue irises that offered comfort to other lonely souls. She learned that tears don't make you weak, but connect.",
-                "image_query": "garden of tears magical flowers",
-                "character": "💧"
-            },
-            {
-                "id": 78,
-                "group": 4,
-                "title": "De Brug tussen Harten",
-                "titleEn": "The Bridge Between Hearts",
-                "content_nl": "Tussen elke twee mensen die van elkaar houden, bestaat een onzichtbare brug. Soms, als de band bijzonder sterk is, kun je hem bijna zien - een glinsterende, trillende verbinding. Twee zusjes die ruzie hadden gehad, voelden hun brug bijna breken. Maar de jongste zus zei 'sorry', en onmiddellijk werd de brug sterker dan ooit. Ze besloten nooit meer zo lang boos te blijven, want ze wisten nu dat elke brug onderhoud nodig heeft, vooral de onzichtbare.",
-                "content_en": "Between every two people who love each other, there exists an invisible bridge. Sometimes, when the bond is particularly strong, you can almost see it - a glittering, vibrating connection. Two sisters who had been fighting felt their bridge almost break. But the younger sister said 'sorry', and immediately the bridge became stronger than ever. They decided never to stay angry for so long again, because they now knew that every bridge needs maintenance, especially the invisible ones.",
-                "image_query": "invisible bridge heart connection",
-                "character": "💖"
-            },
-            {
-                "id": 79,
-                "group": 4,
-                "title": "De Bewaker van de Stilte",
-                "titleEn": "The Keeper of Silence",
-                "content_nl": "In een wereld vol lawaai bewaakte een oude vrouw de laatste plekken van echte stilte. Niet de stilte van eenzaamheid, maar de stilte van vrede. Ze bewaarde de stilte van een besneeuwd bos, de stilte net voor zonsopgang, de stilte van een bibliotheek. Mensen kwamen naar haar toe om te leren luisteren naar de stilte. Een druk kind genaamd Jip leerde dat in de stilte je je eigen hart kunt horen kloppen, je eigen gedachten kunt horden dansen, en dat soms het belangrijkste wat je kunt zeggen, niets is.",
-                "content_en": "In a world full of noise, an old woman guarded the last places of real silence. Not the silence of loneliness, but the silence of peace. She guarded the silence of a snow-covered forest, the silence just before sunrise, the silence of a library. People came to her to learn to listen to the silence. A busy child named Jip learned that in the silence you can hear your own heart beat, hear your own thoughts dance, and that sometimes the most important thing you can say is nothing.",
-                "image_query": "keeper of silence peaceful",
-                "character": "🤫"
-            },
-            {
-                "id": 80,
-                "group": 4,
-                "title": "De Drager van Verhalen",
-                "titleEn": "The Bearer of Stories",
-                "content_nl": "Er liep een man door de wereld die geen bezittingen droeg, maar verhalen. In zijn jaszakken zaten avonturen, in zijn hoed zat romantiek, in zijn schoenen zaten mysteries. Waar hij ook ging, deelde hij zijn verhalen. Een kind zonder verhalen ontmoette hem. De man gaf het kind een klein verhaal over een mus die leerde zingen. Het kind koesterde het verhaal, vertelde het door, en ontdekte dat het groeide met elke vertelling. Toen de man vertrok, liet hij het kind achter met een hart vol verhalen en het besef dat het nu zelf een drager van verhalen was.",
-                "content_en": "There walked a man through the world who carried no possessions, but stories. In his coat pockets were adventures, in his hat was romance, in his shoes were mysteries. Wherever he went, he shared his stories. A child without stories met him. The man gave the child a small story about a sparrow that learned to sing. The child cherished the story, told it on, and discovered that it grew with every telling. When the man left, he left the child behind with a heart full of stories and the realization that it was now itself a bearer of stories.",
-                "image_query": "storyteller traveling tales",
-                "character": "📜"
-            },
-            {
-                "id": 81,
-                "group": 5,
-                "title": "Het Laatste Licht van de Oude Vuurtoren",
-                "titleEn": "The Last Light of the Old Lighthouse",
-                "content_nl": "Op een rotsachtige kust stond een eeuwenoude vuurtoren wiens licht bijna was gedoofd. De oude vuurtorenwachter, meneer Hemels, was de enige die wist dat het licht niet door elektriciteit werd gevoed, maar door hoop. Toen een stormachtige nacht aanbrak en een klein bootje in problemen kwam, verzamelden de dorpsbewoners zich aan de voet van de toren. Samen zongen ze liedjes van moed en herinnering, en hun collectieve hoop deed het licht herleven, feller dan ooit tevoren, waardoor het bootje veilig naar de kust werd geleid.",
-                "content_en": "On a rocky coast stood a centuries-old lighthouse whose light had almost gone out. The old lighthouse keeper, Mr. Hemels, was the only one who knew that the light was not powered by electricity, but by hope. When a stormy night fell and a small boat got into trouble, the villagers gathered at the foot of the tower. Together they sang songs of courage and memory, and their collective hope revived the light, brighter than ever before, guiding the boat safely to shore.",
-                "image_query": "old lighthouse storm hope",
-                "character": "💡"
-            },
-            {
-                "id": 82,
-                "group": 5,
-                "title": "De Klokkenmaker en het Eeuwige Nu",
-                "titleEn": "The Clockmaker and the Eternal Now",
-                "content_nl": "Meester Horloge kon elk uurwerk repareren, behalve zijn eigen hart. Sinds zijn vrouw was overleden, leek de tijd voor hem stil te staan. Op een dag kwam een kind zijn winkel binnen, verdwaald en in tranen. Terwijl de meester het kind hielp, tikten de klokken weer, eerst aarzelend, toen zeker. Hij besefte dat tijd niet lineair is, maar een rivier waarin liefde eeuwig stroomt. Het kind vond zijn ouders terug, en de meester vond de moed om opnieuw te leven in het 'nu', wetende dat liefde nooit echt verdwijnt.",
-                "content_en": "Master Watch could repair any timepiece, except his own heart. Since his wife had passed away, time seemed to stand still for him. One day, a child entered his shop, lost and in tears. As the master helped the child, the clocks ticked again, first hesitantly, then surely. He realized that time is not linear, but a river in which love flows eternally. The child found his parents, and the master found the courage to live again in the 'now', knowing that love never truly disappears.",
-                "image_query": "clockmaker workshop healing time",
-                "character": "⏰"
-            },
-            {
-                "id": 83,
-                "group": 5,
-                "title": "De Stemmen van het Oude Woud",
-                "titleEn": "The Voices of the Ancient Forest",
-                "content_nl": "Het oude woud sprak, maar alleen zij die konden luisteren hoorden het. Elke boom had een verhaal: de eik vertelde over ridders, de berk over verliefde stelletjes, de den over eenzame winters. Toen houthakkers het woud bedreigden, werd het stil. Een boswachtersdochter, Lina, hoorde het verdriet. Ze leerde de dorpsbewoners naar de bomen te luisteren. Samen beschermden ze het woud, niet uit plicht, maar uit respect voor de wijsheid die er woonde. Het woud bloeide weer op, en zijn verhalen werden rijker dan ooit.",
-                "content_en": "The ancient forest spoke, but only those who could listen heard it. Every tree had a story: the oak told of knights, the birch of lovers, the pine of lonely winters. When loggers threatened the forest, it fell silent. A ranger's daughter, Lina, heard the sorrow. She taught the villagers to listen to the trees. Together they protected the forest, not out of duty, but out of respect for the wisdom that lived there. The forest flourished again, and its stories became richer than ever.",
-                "image_query": "ancient forest talking trees",
-                "character": "🌳"
-            },
-            {
-                "id": 84,
-                "group": 5,
-                "title": "De Dans van de Seizoenen",
-                "titleEn": "The Dance of the Seasons",
-                "content_nl": "De vier seizoenen waren geen krachten van de natuur, maar dansers in een eeuwige voorstelling. Lente danste met bloemen in haar haar, Zomer met zonlicht in haar ogen, Herfst met bladeren aan haar jurk, en Winter met sneeuw in zijn wake. Toen Herfst verdrietig werd omdat haar dans betekende dat de bladeren vielen, leerde Lente haar dat elk einde een nieuw begin is. Hun dans werd een symbool van de cyclus van het leven, en de wereld leerde dat schoonheid te vinden is in elke fase, zelfs in het loslaten.",
-                "content_en": "The four seasons were not forces of nature, but dancers in an eternal performance. Spring danced with flowers in her hair, Summer with sunlight in her eyes, Autumn with leaves on her dress, and Winter with snow in his wake. When Autumn became sad because her dance meant the leaves were falling, Spring taught her that every ending is a new beginning. Their dance became a symbol of the cycle of life, and the world learned that beauty can be found in every phase, even in letting go.",
-                "image_query": "season dancers nature cycle",
-                "character": "🍂"
-            },
-            {
-                "id": 85,
-                "group": 5,
-                "title": "De Schaduw van de Vergeten Maan",
-                "titleEn": "The Shadow of the Forgotten Moon",
-                "content_nl": "Er was eens een tweede maan, zo delicaat dat hij alleen zichtbaar was voor wie echt keek. Maar de wereld werd drukker en vergat naar hem te kijken. Hij begon te vervagen. Een astronoom die herinnerde hoe zijn grootvader over de maan vertelde, verzamelde kinderen om verhalen te delen over de vergeten maan. Hun collectieve herinnering en verwondering maakten de maan weer zichtbaar, niet aan de hemel, maar in de harten van allen die geloven in de magie die net buiten het zicht verborgen ligt.",
-                "content_en": "There was once a second moon, so delicate that it was only visible to those who truly looked. But the world grew busier and forgot to look at it. It began to fade. An astronomer who remembered his grandfather's stories about the moon gathered children to share stories about the forgotten moon. Their collective memory and wonder made the moon visible again, not in the sky, but in the hearts of all who believe in the magic hidden just out of sight.",
-                "image_query": "second moon memory magic",
-                "character": "🌙"
-            },
-            {
-                "id": 86,
-                "group": 5,
-                "title": "De Rivier die Herinneringen Droeg",
-                "titleEn": "The River That Carried Memories",
-                "content_nl": "De rivier stroomde niet alleen water, maar ook de herinneringen van iedereen die haar ooit had aangeraakt. Een oude vrouw leerde haar kleindochter hoe ze voorzichtig een herinnering uit het water kon scheppen. Ze vonden er een van de eerste stapjes van de grootmoeder, de lach van de overgrootvader. Maar ze leerden ook herinneringen terug te geven, zodat de rivier nooit zou opdrogen. De rivier werd een levend archief van liefde, en het meisje leerde dat herinneringen gedeeld moeten worden om echt te leven.",
-                "content_en": "The river carried not only water, but also the memories of everyone who had ever touched it. An old woman taught her granddaughter how to carefully scoop a memory from the water. They found one of the grandmother's first steps, the laughter of the great-grandfather. But they also learned to return memories, so the river would never run dry. The river became a living archive of love, and the girl learned that memories must be shared to truly live.",
-                "image_query": "river flowing memories liquid",
-                "character": "🌊"
-            },
-            {
-                "id": 87,
-                "group": 5,
-                "title": "De Stilte voor de Storm",
-                "titleEn": "The Silence Before the Storm",
-                "content_nl": "Er was een dorp dat de stilte voor een storm kon horen - niet de afwezigheid van geluid, maar een diepe, wijze stilte die waarschuwde en voorbereidde. De jongste dochter van het dorp, Kira, was de enige die de stilte kon interpreteren. Ze hoorde niet alleen de komende regen, maar ook de onuitgesproken zorgen van de dorpsbewoners. Door te luisteren kon ze hen helpen voordat problemen ontstonden. Het dorp leerde dat de diepste wijsheid vaak niet wordt gesproken, maar gehoord in de ruimte tussen de woorden.",
-                "content_en": "There was a village that could hear the silence before a storm - not the absence of sound, but a deep, wise silence that warned and prepared. The village's youngest daughter, Kira, was the only one who could interpret the silence. She heard not only the coming rain, but also the unspoken worries of the villagers. By listening, she could help them before problems arose. The village learned that the deepest wisdom is often not spoken, but heard in the space between words.",
-                "image_query": "silent village before storm",
-                "character": "🌪️"
-            },
-            {
-                "id": 88,
-                "group": 5,
-                "title": "De Dromen van de Oude Stad",
-                "titleEn": "The Dreams of the Old City",
-                "content_nl": "De oude stad droomde, en haar dromen kwamen tot leven in de vorm van lichtjes die dansten op de muren, echo's die door steegjes fladderden, en schaduwen die verhalen vertelden. Een weesjongen genaamd Elias ontdekte dat hij de dromen van de stad kon sturen. Hij gaf haar dromen van vreugde, en de stad bloeide op. Toen hij verdrietig was, droomde de stad mee. Ze leerden van elkaar dat zelfs de oudste zielen jong kunnen blijven zolang er iemand is die met hen droomt.",
-                "content_en": "The old city dreamed, and its dreams came to life in the form of lights dancing on the walls, echoes fluttering through alleys, and shadows telling stories. An orphan boy named Elias discovered he could steer the city's dreams. He gave it dreams of joy, and the city flourished. When he was sad, the city dreamed along. They learned from each other that even the oldest souls can stay young as long as there is someone to dream with them.",
-                "image_query": "ancient city dreaming lights",
-                "character": "🏰"
-            },
-            {
-                "id": 89,
-                "group": 5,
-                "title": "De Laatste Trein naar de Sterren",
-                "titleEn": "The Last Train to the Stars",
-                "content_nl": "Er reed een trein die alleen 's nachts verscheen, wanneer de wereld sliep. Hij bracht geen passagiers naar steden, maar naar hun diepste dromen. De conducteur was een oude man die elke reis bijhield in een logboek van hoop. Op een nacht stapte een meisje aan boord dat haar vermogen om te dromen had verloren. De trein bracht haar naar de plek waar verloren dromen wachten om gevonden te worden. Ze keerde terug niet met één droom, maar met het besef dat ze zelf een trein was, klaar om anderen naar hun dromen te brengen.",
-                "content_en": "A train ran that only appeared at night, when the world slept. It didn't carry passengers to cities, but to their deepest dreams. The conductor was an old man who recorded every journey in a logbook of hope. One night, a girl boarded who had lost her ability to dream. The train took her to the place where lost dreams wait to be found. She returned not with one dream, but with the realization that she herself was a train, ready to carry others to their dreams.",
-                "image_query": "magical train night stars",
-                "character": "🚂"
-            },
-            {
-                "id": 90,
-                "group": 5,
-                "title": "De Tuin van Oneindige Mogelijkheden",
-                "titleEn": "The Garden of Infinite Possibilities",
-                "content_nl": "Verborgen achter een gewoon hek lag een tuin waar elke bloem een mogelijkheid vertegenwoordigde. Er waren rozen van 'wat als ik had doorgezet', madeliefjes van 'misschien morgen', en zonnebloemen van 'stel je voor'. Een twijfelende kunstenaar vond de tuin en plukte een knop van 'ik kan het'. De knop bloeide in zijn hand, en hij schilderde zijn meesterwerk. De tuin leerde hem dat mogelijkheden overal zijn, maar ze moeten worden geplukt en gekoesterd om te bloeien.",
-                "content_en": "Hidden behind an ordinary fence lay a garden where every flower represented a possibility. There were roses of 'what if I had persevered', daisies of 'maybe tomorrow', and sunflowers of 'imagine'. A doubting artist found the garden and picked a bud of 'I can do it'. The bud bloomed in his hand, and he painted his masterpiece. The garden taught him that possibilities are everywhere, but they must be picked and nurtured to bloom.",
-                "image_query": "garden possibilities flowering",
-                "character": "🌷"
-            },
-            {
-                "id": 91,
-                "group": 5,
-                "title": "De Echo van de Bergen",
-                "titleEn": "The Echo of the Mountains",
-                "content_nl": "De bergen echoden niet alleen geluiden, maar ook emoties. Een verdrietige kreet zou dagen later terugkeren als een troostende stem. Een vreugdevol gelach zou weerklinken als een bemoedigende lach. Een herder leerde zijn dochter naar de echo's te luisteren. Ze ontdekten dat de bergen geen woorden herhaalden, maar de essentie van wat werd gevoeld. Ze leerden het geheim: spreek alleen waarheid naar de bergen, want wat je uitzendt, zal uiteindelijk naar je terugkeren.",
-                "content_en": "The mountains echoed not only sounds, but also emotions. A sad cry would return days later as a comforting voice. A joyful laugh would resound as an encouraging chuckle. A shepherd taught his daughter to listen to the echoes. They discovered that the mountains didn't repeat words, but the essence of what was felt. They learned the secret: only speak truth to the mountains, for what you send out will eventually return to you.",
-                "image_query": "mountain echo emotional",
-                "character": "🏔️"
-            },
-            {
-                "id": 92,
-                "group": 5,
-                "title": "Het Geheim van de Vallende Ster",
-                "titleEn": "The Secret of the Falling Star",
-                "content_nl": "Vallende sterren waren geen stenen die verbrandden, maar sterren die naar de aarde kwamen om een laatste wens te vervullen voordat ze uitgingen. Een eenzame ster genaamd Lumina daalde neer in een tuin. In plaats van een wens te vragen, luisterde ze naar de verhalen van de aardbewoners. Haar licht groeide met elke gedeelde ervaring. Ze ontdekte dat het vervullen van wensen niet ging over magie, maar over verbinding. Toen ze vertrok, liet ze niet een vervulde wens achter, maar een gemeenschap die had geleerd naar elkaar te luisteren.",
-                "content_en": "Falling stars weren't stones burning up, but stars coming to earth to grant one last wish before going out. A lonely star named Lumina descended into a garden. Instead of asking for a wish, she listened to the stories of the earthlings. Her light grew with every shared experience. She discovered that granting wishes wasn't about magic, but about connection. When she left, she didn't leave behind a fulfilled wish, but a community that had learned to listen to each other.",
-                "image_query": "falling star listening garden",
-                "character": "🌠"
-            },
-            {
-                "id": 93,
-                "group": 5,
-                "title": "De Dansende Lichten van het Noorden",
-                "titleEn": "The Dancing Lights of the North",
-                "content_nl": "Het noorderlicht danste niet zomaar; het vertoonde de dromen van de aarde. Groen voor hoop, paars voor mysterie, roze voor liefde. Een Inuit-gemeenschap beschermde het geheim generaties lang. Toen een onderzoeker kwam om het licht te 'bestuderen', leidde een kind hem naar de oudste van het dorp. In plaats van uitleg gaf de oude man hem een dag stilte. In die stilte hoorde de onderzoeker het licht zingen, en hij begreep: sommige wonderen moeten worden gevoeld, niet begrepen. Hij liet zijn apparatuur achter en danste mee.",
-                "content_en": "The northern lights didn't just dance; they displayed the dreams of the earth. Green for hope, purple for mystery, pink for love. An Inuit community protected the secret for generations. When a researcher came to 'study' the light, a child led him to the village elder. Instead of explanation, the old man gave him a day of silence. In that silence, the researcher heard the light singing, and he understood: some wonders must be felt, not understood. He left his equipment behind and danced along.",
-                "image_query": "northern lights dancing dreams",
-                "character": "✨"
-            },
-            {
-                "id": 94,
-                "group": 5,
-                "title": "De Zingende Stenen van de Woestijn",
-                "titleEn": "The Singing Stones of the Desert",
-                "content_nl": "In de hete woestijn lagen stenen die zongen wanneer de wind door hun poriën blies. Elke steen had een ander lied: sommige zongen over oase-dromen, andere over karavaan-avonturen. Een bedoeïenenmeisje leerde de liedjes van haar grootmoeder. Toen een storm de oriëntatiepunten wegvaagde, zong ze de stenen wakker. Hun gezang wees de stam veilig naar water. De stenen leerden de stam dat zelfs in de schijnbaar levenloze woestijn, er altijd muziek is voor wie weet te luisteren.",
-                "content_en": "In the hot desert lay stones that sang when the wind blew through their pores. Each stone had a different song: some sang about oasis dreams, others about caravan adventures. A Bedouin girl learned the songs from her grandmother. When a storm wiped away the landmarks, she woke the stones with her singing. Their singing safely guided the tribe to water. The stones taught the tribe that even in the seemingly lifeless desert, there is always music for those who know how to listen.",
-                "image_query": "desert singing stones wind",
-                "character": "🎵"
-            },
-            {
-                "id": 95,
-                "group": 5,
-                "title": "De Spiegel van de Ziel",
-                "titleEn": "The Mirror of the Soul",
-                "content_nl": "Er was een spiegel die niet je uiterlijk toonde, maar de staat van je ziel. Sommigen zagen een tuin in volle bloei, anderen een woestijn, weer anderen een bouwplaats. Een man die altijd perfect probeerde te zijn, zag een bevroren meer. Een kind dat gewoon zichzelf was, zag een speeltuin. De spiegel leerde de man dat groei niet gaat over perfectie, maar over authenticiteit. Hij liet zijn masker vallen, en langzaam dooide het meer, onthullende levendige vissen van vreugde en stromen van creativiteit.",
-                "content_en": "There was a mirror that didn't show your appearance, but the state of your soul. Some saw a garden in full bloom, others a desert, yet others a construction site. A man who always tried to be perfect saw a frozen lake. A child who was simply themselves saw a playground. The mirror taught the man that growth isn't about perfection, but about authenticity. He dropped his mask, and slowly the lake thawed, revealing vibrant fish of joy and streams of creativity.",
-                "image_query": "soul mirror reflection inner",
-                "character": "🪞"
-            },
-            {
-                "id": 96,
-                "group": 5,
-                "title": "De Rivier van Vergeten Talen",
-                "titleEn": "The River of Forgotten Languages",
-                "content_nl": "Er stroomde een rivier waarvan het water was samengesteld uit vergeten woorden en uitgestorven talen. Een linguïst ontdekte de rivier en hoorde de echo's van oude verhalen, wijsheden en liederen. In plaats van ze op te schrijven, leerde hij de dorpskinderen naar het water te luisteren. Samen vonden ze niet alleen woorden, maar de ziel van culturen die waren verdwenen. De rivier leerde hen dat taal niet alleen communicatie is, maar de drager van gehele werelden, en dat elke verloren taal een ster is die dooft in de kosmos van de mensheid.",
-                "content_en": "A river flowed whose water was composed of forgotten words and extinct languages. A linguist discovered the river and heard echoes of ancient stories, wisdoms, and songs. Instead of writing them down, he taught the village children to listen to the water. Together they found not only words, but the soul of cultures that had disappeared. The river taught them that language is not just communication, but the carrier of entire worlds, and that every lost language is a star going out in the cosmos of humanity.",
-                "image_query": "river forgotten languages flow",
-                "character": "🗣️"
-            },
-            {
-                "id": 97,
-                "group": 5,
-                "title": "De Klokken van de Verloren Tijd",
-                "titleEn": "The Bells of Lost Time",
-                "content_nl": "In een verborgen klokkentomer hingen klokken die de uren sloegen die mensen hadden verspild aan zorgen, spijt en angst. Elke slag was een herinnering aan een moment dat niet ten volle was geleefd. Een oude klokkenluider leerde een jong meisje hoe ze de klokken kon resetten door in het heden te leven. Samen transformeerden ze verspilde uren in momenten van bewustzijn. De klokken begonnen niet langer te slaan uit spijt, maar uit viering van het 'nu', en hun geluid veranderde van somber naar hoopvol.",
-                "content_en": "In a hidden bell tower hung bells that struck the hours people had wasted on worries, regrets, and fears. Each chime was a reminder of a moment not fully lived. An old bell-ringer taught a young girl how to reset the clocks by living in the present. Together they transformed wasted hours into moments of awareness. The bells no longer chimed out of regret, but in celebration of the 'now', and their sound changed from gloomy to hopeful.",
-                "image_query": "bell tower time present",
-                "character": "🔔"
-            },
-            {
-                "id": 98,
-                "group": 5,
-                "title": "De Droomvangers van de Stad",
-                "titleEn": "The Dream Catchers of the City",
-                "content_nl": "In een bruisende stad waar dromen vaak verloren gingen in het lawaai, weefde een groep kinderen droomvangers van afval: oude tramkaartjes, verloren sleutels, verfrommelde briefjes. Elke vanger verzamelde niet nachtmerries, maar verloren hoop en vergeten ambities. Ze hingen ze op aan lantaarnpalen. Langzaam veranderde de sfeer van de stad. Mensen begonnen weer te dromen, niet grote, onrealistische dromen, maar kleine, haalbare hoopjes die, wanneer verzameld, de hele stad transformeerden.",
-                "content_en": "In a bustling city where dreams often got lost in the noise, a group of children wove dream catchers from trash: old tram tickets, lost keys, crumpled notes. Each catcher collected not nightmares, but lost hope and forgotten ambitions. They hung them on lampposts. Slowly the city's atmosphere changed. People began to dream again, not big, unrealistic dreams, but small, achievable hopes that, when collected, transformed the entire city.",
-                "image_query": "urban dream catchers city",
-                "character": "🌃"
-            },
-            {
-                "id": 99,
-                "group": 5,
-                "title": "De Bibliotheek van Onbeschreven Boeken",
-                "titleEn": "The Library of Unwritten Books",
-                "content_nl": "Er bestond een bibliotheek vol met boeken die nooit waren geschreven. Elke blanco pagina pulseerde met potentieel. Een schrijver met writer's block vond de bibliotheek en raakte in paniek bij al die leegte. Een kind dat met hem meereisde, pakte een boek en begon te tekenen. De pagina's vulden zich niet met woorden, maar met ervaringen. De schrijver begreep: verhalen hoeven niet perfect te zijn; ze moeten worden geleefd. Hij verliet de bibliotheek niet met een manuscript, maar met de moed om zijn eigen verhaal te leven.",
-                "content_en": "There existed a library full of books that had never been written. Every blank page pulsed with potential. A writer with writer's block found the library and panicked at all the emptiness. A child traveling with him picked up a book and started drawing. The pages filled not with words, but with experiences. The writer understood: stories don't need to be perfect; they need to be lived. He left the library not with a manuscript, but with the courage to live his own story.",
-                "image_query": "library unwritten books blank",
-                "character": "📚"
-            },
-            {
-                "id": 100,
-                "group": 5,
-                "title": "Het Laatste Verhaal van de Oude Verteller",
-                "titleEn": "The Last Story of the Old Storyteller",
-                "content_nl": "De oude verteller wist dat hij zijn laatste avond beleefde. In plaats van een verhaal te vertellen, nodigde hij de dorpskinderen uit om zijn verhalen te leven. Ze dansten het verhaal van de vier winden, zongen het lied van de regenboog, en speelden het spel van de seizoenen. Toen de ochtend aanbrak, was de verteller verdwenen, maar zijn verhalen leefden voort in de lachende kinderen, in de dansende bomen, in de zingende beek. Ze ontdekten dat het beste verhaal niet wordt verteld, maar geleefd, en dat elke generatie de pen oppakt waar de vorige hem neerlegde.",
-                "content_en": "The old storyteller knew he was living his final evening. Instead of telling a story, he invited the village children to live his stories. They danced the story of the four winds, sang the song of the rainbow, and played the game of the seasons. When morning broke, the storyteller was gone, but his stories lived on in the laughing children, in the dancing trees, in the singing stream. They discovered that the best story is not told, but lived, and that every generation picks up the pen where the previous one laid it down.",
-                "image_query": "old storyteller children legacy",
-                "character": "📖"
+                "title": "De Kikkerprins",
+                "dutch_content": "Een prinses liet haar gouden bal in een put vallen. Een kikker zei dat hij de bal zou halen als zij zijn vriendin wilde zijn. De prinses beloofde het, maar rende weg toen ze de bal terug had. De kikker volgde haar naar het kasteel. Haar vader, de koning, zei dat ze haar belofte moest houden. Met tegenzin kuste ze de kikker, die in een knappe prins veranderde.",
+                "english_content": "A princess dropped her golden ball into a well. A frog said he would get the ball if she would be his friend. The princess promised, but ran away when she got the ball back. The frog followed her to the castle. Her father, the king, said she must keep her promise. Reluctantly, she kissed the frog, who turned into a handsome prince.",
+                "image_query": "fantasy frog prince with a crown by a well"
             }
         ];
 
-        // DOM Elements
-        const backgroundImage = document.getElementById('backgroundImage');
-        const storiesList = document.getElementById('storiesList');
-        const storyTitle = document.getElementById('storyTitle');
-        const dutchText = document.getElementById('dutchText');
-        const englishText = document.getElementById('englishText');
-        const stopButton = document.getElementById('stopButton');
-        const speedSlider = document.getElementById('speedSlider');
-        const speedValue = document.getElementById('speedValue');
-        const languageTabs = document.querySelectorAll('.language-tab');
-        const languageContents = document.querySelectorAll('.language-content');
-        const storyCharacter = document.getElementById('storyCharacter');
+        // --- DOM ELEMENTS ---
+        const storyList = document.getElementById('story-list');
+        const storyTitle = document.getElementById('story-title');
+        const dutchText = document.getElementById('dutch-text');
+        const englishText = document.getElementById('english-text');
+        const backgroundContainer = document.getElementById('background-container');
+        const storyContentInner = document.getElementById('story-content-inner');
+        const playPauseBtn = document.getElementById('play-pause-btn');
+        const speedBtn = document.getElementById('speed-btn');
+        const playIcon = playPauseBtn.querySelector('.fa-play');
+        const pauseIcon = playPauseBtn.querySelector('.fa-pause');
 
-        // Speech Synthesis
-        const synth = window.speechSynthesis;
-        let utterance = null;
+        // --- APP STATE ---
+        let currentStoryIndex = 0;
         let isPlaying = false;
-        let currentStory = null;
+        let playbackSpeed = 1;
+        const speeds = [1, 1.25, 1.5, 0.75];
 
-        // Save current story to localStorage
-        function saveCurrentStory(story) {
-            try {
-                localStorage.setItem(STORAGE_KEYS.CURRENT_STORY, JSON.stringify(story));
-                console.log('Story saved to localStorage:', story.title);
-            } catch (error) {
-                console.error('Error saving story to localStorage:', error);
-            }
+        // --- WEB SPEECH API SETUP ---
+        let utterance = new SpeechSynthesisUtterance();
+        utterance.lang = 'nl-NL'; // Set language to Dutch
+        
+        utterance.onend = () => {
+            isPlaying = false;
+            updatePlayPauseIcon();
+        };
+
+        // --- FUNCTIONS ---
+
+        /**
+         * Populates the left menu with story titles.
+         */
+        function populateMenu() {
+            storyList.innerHTML = storiesData.map((story, index) => `
+                <li>
+                    <a href="#" data-index="${index}">${story.title}</a>
+                </li>
+            `).join('');
         }
 
-        // Load current story from localStorage
-        function loadCurrentStory() {
-            try {
-                const savedStory = localStorage.getItem(STORAGE_KEYS.CURRENT_STORY);
-                if (savedStory) {
-                    const story = JSON.parse(savedStory);
-                    console.log('Loaded story from localStorage:', story.title);
-                    return story;
-                }
-            } catch (error) {
-                console.error('Error loading story from localStorage:', error);
-            }
-            return null;
-        }
+        /**
+         * Displays a story based on its index.
+         * @param {number} index - The index of the story to show.
+         */
+        function showStory(index) {
+            speechSynthesis.cancel();
+            isPlaying = false;
+            updatePlayPauseIcon();
+            
+            currentStoryIndex = index;
+            const story = storiesData[index];
 
-        // Save reading progress
-        function saveReadingProgress(storyId, progress) {
-            try {
-                const progressData = {
-                    storyId: storyId,
-                    progress: progress,
-                    timestamp: new Date().toISOString()
-                };
-                localStorage.setItem(STORAGE_KEYS.READING_PROGRESS, JSON.stringify(progressData));
-            } catch (error) {
-                console.error('Error saving reading progress:', error);
-            }
-        }
+            // --- Fade out old content ---
+            storyContentInner.classList.remove('visible');
 
-        // Load reading progress
-        function loadReadingProgress(storyId) {
-            try {
-                const progressData = localStorage.getItem(STORAGE_KEYS.READING_PROGRESS);
-                if (progressData) {
-                    const data = JSON.parse(progressData);
-                    if (data.storyId === storyId) {
-                        return data.progress;
-                    }
-                }
-            } catch (error) {
-                console.error('Error loading reading progress:', error);
-            }
-            return 0;
-        }
-
-        // Save speech settings
-        function saveSpeechSettings(settings) {
-            try {
-                localStorage.setItem(STORAGE_KEYS.SPEECH_SETTINGS, JSON.stringify(settings));
-            } catch (error) {
-                console.error('Error saving speech settings:', error);
-            }
-        }
-
-        // Load speech settings
-        function loadSpeechSettings() {
-            try {
-                const settings = localStorage.getItem(STORAGE_KEYS.SPEECH_SETTINGS);
-                if (settings) {
-                    return JSON.parse(settings);
-                }
-            } catch (error) {
-                console.error('Error loading speech settings:', error);
-            }
-            return {
-                rate: 1,
-                pitch: 1.2,
-                volume: 0.8
+            // --- Set new background image ---
+            // This uses Unsplash Source to get a high-quality, full-size image based on the query.
+            // It's a reliable and free way to get dynamic backgrounds.
+            const imageUrl = `https://source.unsplash.com/1920x1080/?${encodeURIComponent(story.image_query)}`;
+            
+            // Preload the image to prevent flickering
+            const img = new Image();
+            img.src = imageUrl;
+            img.onload = () => {
+                backgroundContainer.style.backgroundImage = `url('${imageUrl}')`;
+                // Remove blur effect once the image is loaded for a nice transition
+                backgroundContainer.style.filter = 'brightness(0.9) blur(0px)';
             };
+
+
+            // --- Wait for fade out, then update and fade in new content ---
+            setTimeout(() => {
+                storyTitle.textContent = story.title;
+                dutchText.textContent = story.dutch_content;
+                englishText.textContent = story.english_content;
+
+                storyContentInner.classList.add('visible');
+            }, 300); // Should match CSS transition duration
+
+            // Update active class in menu
+            document.querySelectorAll('#story-list a').forEach(a => a.classList.remove('active'));
+            document.querySelector(`#story-list a[data-index="${index}"]`).classList.add('active');
         }
-
-        // Toggle favorite story
-        function toggleFavorite(storyId) {
-            try {
-                const favorites = getFavorites();
-                const index = favorites.indexOf(storyId);
-
-                if (index > -1) {
-                    favorites.splice(index, 1);
-                } else {
-                    favorites.push(storyId);
-                }
-
-                localStorage.setItem(STORAGE_KEYS.FAVORITES, JSON.stringify(favorites));
-                return index === -1; // Returns true if added to favorites
-            } catch (error) {
-                console.error('Error toggling favorite:', error);
-                return false;
-            }
-        }
-
-        // Get favorite stories
-        function getFavorites() {
-            try {
-                const favorites = localStorage.getItem(STORAGE_KEYS.FAVORITES);
-                return favorites ? JSON.parse(favorites) : [];
-            } catch (error) {
-                console.error('Error getting favorites:', error);
-                return [];
-            }
-        }
-
-        // Check if story is favorite
-        function isFavorite(storyId) {
-            const favorites = getFavorites();
-            return favorites.includes(storyId);
-        }
-
-        // Clear all story data (for testing/reset)
-        function clearStoryData() {
-            try {
-                localStorage.removeItem(STORAGE_KEYS.CURRENT_STORY);
-                localStorage.removeItem(STORAGE_KEYS.READING_PROGRESS);
-                localStorage.removeItem(STORAGE_KEYS.SPEECH_SETTINGS);
-                localStorage.removeItem(STORAGE_KEYS.FAVORITES);
-                console.log('All story data cleared from localStorage');
-            } catch (error) {
-                console.error('Error clearing story data:', error);
-            }
-        }
-
-        // Modified loadStory function with localStorage integration
-        function loadStory(story) {
-            currentStory = story;
-
-            // Save to localStorage
-            saveCurrentStory(story);
-
-            // Update UI
-            storyTitle.textContent = `${story.title} / ${story.titleEn}`;
-            dutchText.textContent = story.content_nl;
-            englishText.textContent = story.content_en;
-            storyCharacter.textContent = story.character;
-
-            // Load reading progress
-            const progress = loadReadingProgress(story.id);
-            if (progress > 0) {
-                // You could implement a progress indicator here
-                console.log(`Resuming from progress: ${progress}%`);
-            }
-
-            // Update background image
-            updateBackgroundImage(story.image_query);
-
-            // Reset speech synthesis
-            if (isPlaying) {
-                synth.cancel();
+        
+        /**
+         * Handles clicks on the play/pause button.
+         */
+        function togglePlayPause() {
+            if (speechSynthesis.speaking && !speechSynthesis.paused) {
+                speechSynthesis.pause();
                 isPlaying = false;
-                playButton.innerHTML = '<i class="fas fa-play"></i>';
-            }
-
-            // Set up speech synthesis
-            setupSpeech();
-
-            // Update favorite button state
-            updateFavoriteButton(story.id);
-        }
-
-        // Update favorite button appearance
-        function updateFavoriteButton(storyId) {
-            const favoriteBtn = document.getElementById('favoriteButton');
-            if (favoriteBtn) {
-                if (isFavorite(storyId)) {
-                    favoriteBtn.innerHTML = '<i class="fas fa-heart"></i>';
-                    favoriteBtn.classList.add('favorite-active');
+            } else {
+                if (speechSynthesis.paused) {
+                    speechSynthesis.resume();
                 } else {
-                    favoriteBtn.innerHTML = '<i class="far fa-heart"></i>';
-                    favoriteBtn.classList.remove('favorite-active');
+                    utterance.text = storiesData[currentStoryIndex].dutch_content;
+                    utterance.rate = playbackSpeed;
+                    speechSynthesis.speak(utterance);
                 }
-            }
-        }
-
-        // Modified speech setup with settings from localStorage
-        function setupSpeech() {
-            if (!currentStory) return;
-
-            const settings = loadSpeechSettings();
-
-            utterance = new SpeechSynthesisUtterance(currentStory.content_nl);
-            utterance.lang = 'nl-NL';
-            utterance.rate = settings.rate;
-            utterance.pitch = settings.pitch;
-            utterance.volume = settings.volume;
-
-            utterance.onstart = () => {
                 isPlaying = true;
-                playButton.innerHTML = '<i class="fas fa-pause"></i>';
-                playButton.disabled = false;
-                // pauseButton.disabled = false;
-            };
-
-            utterance.onend = () => {
-                isPlaying = false;
-                playButton.innerHTML = '<i class="fas fa-play"></i>';
-                // Save completion progress
-                saveReadingProgress(currentStory.id, 100);
-            };
-
-            utterance.onerror = () => {
-                isPlaying = false;
-                playButton.innerHTML = '<i class="fas fa-play"></i>';
-            };
-
-            // Track progress
-            utterance.onboundary = (event) => {
-                if (event.name === 'sentence') {
-                    const progress = (event.charIndex / currentStory.content_nl.length) * 100;
-                    saveReadingProgress(currentStory.id, progress);
-
-                    // Update progress bar if exists
-                    const progressBar = document.getElementById('progressBar');
-                    if (progressBar) {
-                        progressBar.style.width = `${progress}%`;
-                    }
-                }
-            };
+            }
+            updatePlayPauseIcon();
         }
 
-        // Modified speed control with localStorage
-        function updateSpeed() {
-            const speed = speedSlider.value;
-            speedValue.textContent = `${speed}x`;
-
-            if (utterance) {
-                utterance.rate = parseFloat(speed);
-
-                // Save settings
-                const settings = loadSpeechSettings();
-                settings.rate = parseFloat(speed);
-                saveSpeechSettings(settings);
-            }
-
-            // If currently playing, restart with new speed
+        /**
+         * Updates the play/pause icon based on the isPlaying state.
+         */
+        function updatePlayPauseIcon() {
             if (isPlaying) {
-                synth.cancel();
-                synth.speak(utterance);
+                playIcon.style.display = 'none';
+                pauseIcon.style.display = 'inline';
+            } else {
+                playIcon.style.display = 'inline';
+                pauseIcon.style.display = 'none';
             }
         }
 
-        // Initialize with saved data
-        function init() {
-            // Load stories list
-            loadStoriesList();
+        /**
+         * Cycles through playback speeds.
+         */
+        function changeSpeed() {
+            const currentSpeedIndex = speeds.indexOf(playbackSpeed);
+            const nextSpeedIndex = (currentSpeedIndex + 1) % speeds.length;
+            playbackSpeed = speeds[nextSpeedIndex];
+            speedBtn.textContent = `${playbackSpeed}x`;
+            
+            // If currently speaking, update the rate immediately
+            if (speechSynthesis.speaking) {
+                utterance.rate = playbackSpeed;
+                // Restart to apply the new speed
+                speechSynthesis.cancel();
+                speechSynthesis.speak(utterance);
+                isPlaying = true;
+                updatePlayPauseIcon();
+            }
+        }
 
-            // Try to load last read story
-            const savedStory = loadCurrentStory();
-            if (savedStory) {
-                // Find the story in our stories array
-                const story = stories.find(s => s.id === savedStory.id);
-                if (story) {
-                    loadStory(story);
+        // --- EVENT LISTENERS ---
 
-                    // Update active story in sidebar
-                    document.querySelectorAll('.story-item').forEach(item => {
-                        item.classList.remove('active');
-                        if (parseInt(item.dataset.storyId) === story.id) {
-                            item.classList.add('active');
-                        }
-                    });
+        storyList.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                e.preventDefault();
+                const index = parseInt(e.target.dataset.index, 10);
+                if (index !== currentStoryIndex) {
+                   showStory(index);
                 }
-            }
-
-            // Load speech settings
-            const settings = loadSpeechSettings();
-            speedSlider.value = settings.rate;
-            speedValue.textContent = `${settings.rate}x`;
-
-            // Set up event listeners
-            setupEventListeners();
-        }
-
-        // Add to your existing event listeners setup
-        function setupEventListeners() {
-            playButton.addEventListener('click', togglePlayback);
-            speedSlider.addEventListener('input', updateSpeed);
-
-            languageTabs.forEach(tab => {
-                tab.addEventListener('click', () => {
-                    const lang = tab.getAttribute('data-lang');
-                    switchLanguage(lang);
-                });
-            });
-
-            // Add favorite button event listener if you add one
-            const favoriteBtn = document.getElementById('favoriteButton');
-            if (favoriteBtn) {
-                favoriteBtn.addEventListener('click', () => {
-                    if (currentStory) {
-                        const added = toggleFavorite(currentStory.id);
-                        updateFavoriteButton(currentStory.id);
-                        // Show some feedback
-                        showNotification(added ? 'Added to favorites!' : 'Removed from favorites');
-                    }
-                });
-            }
-        }
-
-        // Utility function for notifications
-        function showNotification(message) {
-            // You can implement a toast notification here
-            console.log(message);
-        }
-
-        // Initialize the app when the page loads
-        window.addEventListener('load', init);
-
-        // Also save when leaving the page
-        window.addEventListener('beforeunload', () => {
-            if (currentStory && utterance) {
-                saveCurrentStory(currentStory);
             }
         });
+        
+        playPauseBtn.addEventListener('click', togglePlayPause);
+        speedBtn.addEventListener('click', changeSpeed);
 
-        // Load stories into the sidebar
-        function loadStoriesList() {
-            storiesList.innerHTML = '';
+        // --- INITIALIZE APP ---
+        document.addEventListener('DOMContentLoaded', () => {
+            populateMenu();
+            showStory(0); // Show the first story by default
+        });
 
-            stories.forEach(story => {
-                const storyItem = document.createElement('li');
-                storyItem.className = 'story-item';
-                storyItem.innerHTML = `
-                    <div class="story-title">${story.id}. ${story.title}</div>
-                    <div class="story-info">${story.titleEn}</div>
-                `;
-
-                storyItem.addEventListener('click', () => {
-                    // Remove active class from all items
-                    document.querySelectorAll('.story-item').forEach(item => {
-                        item.classList.remove('active');
-                    });
-
-                    // Add active class to clicked item
-                    storyItem.classList.add('active');
-
-                    // Load the story
-                    loadStory(story);
-                });
-
-                storiesList.appendChild(storyItem);
-            });
-        }
-
-        // Update background image based on story
-        function updateBackgroundImage(query) {
-            // In a real application, you would use the Google Images API here
-            // For this demo, we'll use a set of predefined images based on the query
-            const imageMap = {
-                "cute kitten tree adventure": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-                "animal forest picnic": "https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-                "frog rain dance animals": "https://images.unsplash.com/photo-1551103782-8ab07afd45c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-                "little lamb farm": "https://images.unsplash.com/photo-1504595403659-9088ce801e29?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-                "little train mountain": "https://images.unsplash.com/photo-1605493666700-0716438e655c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
-            };
-
-            const imageUrl = imageMap[query] || "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80";
-            backgroundImage.style.backgroundImage = `url('${imageUrl}')`;
-        }
-
-        // Toggle play/pause
-        function togglePlayback() {
-            if (!currentStory) {
-                alert("Please select a story first!");
-                return;
-            }
-
-            if (isPlaying) {
-                synth.pause();
-                isPlaying = false;
-                playButton.innerHTML = '<i class="fas fa-play"></i>';
-            } else {
-                if (synth.speaking && synth.paused) {
-                    synth.resume();
-                } else {
-                    setupSpeech();
-                    synth.speak(utterance);
-                }
-                isPlaying = true;
-                playButton.innerHTML = '<i class="fas fa-pause"></i>';
-            }
-        }
-
-        // Switch between Dutch and English content
-        function switchLanguage(lang) {
-            // Update tabs
-            languageTabs.forEach(tab => {
-                if (tab.getAttribute('data-lang') === lang) {
-                    tab.classList.add('active');
-                } else {
-                    tab.classList.remove('active');
-                }
-            });
-
-            // Update content
-            languageContents.forEach(content => {
-                if (content.id === `${lang}Content`) {
-                    content.classList.add('active');
-                } else {
-                    content.classList.remove('active');
-                }
-            });
-        }
-
-        // Initialize the app when the page loads
-        window.addEventListener('load', init);
     </script>
 </body>
-
 </html>
