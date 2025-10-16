@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Taalverhalen (3–6 jaar) – Nederlands & Engels</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Nunito:wght@400;600;700&display=swap" />
+  <style>
+    :root{
+      --bg: #f9fbff;
+      --ink: #1b1b1f;
+      --muted: #586380;
+      --brand: #ff6b6b;
+      --brand-2: #6c5ce7;
+      --brand-3: #00c2ff;
+      --brand-4: #ffd166;
+      --card: rgba(255,255,255,0.88);
+      --glass: rgba(255,255,255,0.72);
+      --shadow: 0 10px 30px rgba(0,0,0,0.12);
+      --radius: 18px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: 'Nunito', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--ink);
+      background: var(--bg);
+      overflow:hidden;
+    }
+
+    /* Full-page background image per story */
+    .bg{
+      position:fixed; inset:0;
+      background-size:cover;
+      background-position:center;
+      filter: saturate(1.05) contrast(1.05);
+      transition: background-image 600ms ease;
+    }
+    /* Soft gradient overlay for readability */
+    .bg::after{
+      content:"";
+      position:absolute; inset:0;
+      background: radial-gradient(60% 70% at 50% 20%, rgba(255,255,255,0.7), rgba(255,255,255,0.5) 40%, rgba(255,255,255,0.25) 70%, rgba(0,0,0,0.15) 100%);
+      pointer-events:none;
+    }
+
+    header{
+      position: relative;
+      z-index:2;
+      display:flex; align-items:center; gap:16px;
+      padding:16px 20px;
+    }
+    .logo{
+      width:44px; height:44px; border-radius:12px;
+      display:grid; place-items:center; font-weight:900;
+      color:#fff;
+      background: conic-gradient(from 180deg, var(--brand), var(--brand-2), var(--brand-3), var(--brand-4), var(--brand));
+      box-shadow: var(--shadow);
+      font-family: 'Baloo 2', cursive;
+    }
+    h1{
+      font-family:'Baloo 2', cursive; margin:0;
+      font-size: clamp(22px, 2.4vw, 30px);
+      letter-spacing:.3px;
+    }
+    .subtitle{color:var(--muted); font-size:14px; margin-left:auto}
+    .search-wrap{
+      margin-left:auto; display:flex; gap:10px; align-items:center;
+      background:var(--glass); padding:6px 10px; border-radius:999px; box-shadow:var(--shadow);
+    }
+    .search-wrap input{
+      border:none; outline:none; background:transparent; min-width:160px;
+      font-size:14px;
+    }
+    .layout{
+      position:relative; z-index:1;
+      display:grid; grid-template-columns: 310px 1fr;
+      gap:16px;
+      height: calc(100% - 84px);
+      padding:10px 18px 90px 18px;
+    }
+
+    aside{
+      background:var(--glass); border-radius:var(--radius);
+      padding:12px; overflow:auto; box-shadow:var(--shadow);
+      backdrop-filter: blur(6px);
+    }
+    .story-item{
+      border:none; display:block; width:100%;
+      text-align:left; padding:12px 12px;
+      border-radius:14px; background:rgba(255,255,255,0.8);
+      margin:6px 0; cursor:pointer; transition:transform .05s;
+      font-weight:700; font-family:'Baloo 2', cursive;
+      outline: none;
+    }
+    .story-item:focus{box-shadow:0 0 0 3px rgba(108,92,231,0.35)}
+    .story-item:hover{transform:translateY(-1px)}
+    .story-item[aria-current="true"]{
+      background: linear-gradient(90deg, rgba(255,107,107,0.9), rgba(108,92,231,0.9));
+      color:white;
+    }
+
+    main{
+      background:var(--card); border-radius:var(--radius);
+      box-shadow:var(--shadow); overflow:auto; padding:18px;
+      backdrop-filter: blur(6px);
+    }
+    .story-header{
+      display:flex; align-items:center; gap:12px; flex-wrap: wrap;
+    }
+    .badge{
+      padding:6px 10px; border-radius:999px; font-weight:700; color:white;
+      background: linear-gradient(90deg, var(--brand-3), var(--brand-2));
+      font-size:12px;
+    }
+    .story-title{
+      font-family:'Baloo 2', cursive;
+      font-size: clamp(22px, 2.3vw, 30px); margin: 8px 0 2px 0;
+    }
+    .tools{margin-left:auto; display:flex; gap:8px; flex-wrap:wrap}
+    .tiny-btn{
+      border:none; padding:8px 12px; border-radius:12px; cursor:pointer; font-weight:700;
+      background:#fff; box-shadow:var(--shadow);
+    }
+    .tiny-btn:hover{filter:brightness(0.97)}
+    .link{color:var(--brand-2); text-decoration: none; font-weight:800}
+
+    .columns{
+      display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-top:12px;
+    }
+    .panel{
+      background:#fff; border-radius:14px; padding:14px; box-shadow:var(--shadow);
+      min-height: 180px;
+    }
+    .panel h3{
+      margin:0 0 8px 0; font-size:18px; color:var(--muted)
+    }
+    .panel p{margin:0 0 10px 0; line-height:1.55; font-size:18px}
+    .panel p span.sentence{
+      display:block; margin:6px 0;
+    }
+
+    @media (max-width: 960px){
+      .layout{grid-template-columns: 1fr; padding-bottom: 120px;}
+      aside{height:220px}
+      .columns{grid-template-columns: 1fr}
+    }
+
+    footer.player{
+      position:fixed; left:0; right:0; bottom:0; z-index:10;
+      padding:10px 14px;
+      display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+      background: linear-gradient(90deg, rgba(255,255,255,0.96), rgba(255,255,255,0.9));
+      box-shadow: 0 -10px 30px rgba(0,0,0,0.12);
+      backdrop-filter: blur(8px);
+    }
+    .btn{
+      border:none; padding:12px 16px; border-radius:14px; cursor:pointer;
+      font-weight:800; color:white;
+      background: linear-gradient(90deg, var(--brand), var(--brand-2));
+      box-shadow: var(--shadow);
+    }
+    .btn.secondary{background: linear-gradient(90deg, var(--brand-3), var(--brand-4)); color:#222}
+    .btn.ghost{background:#fff; color:#222}
+    .btn:disabled{opacity:.6; cursor:not-allowed}
+    .speed{
+      display:flex; align-items:center; gap:10px; margin-left:auto; font-weight:700
+    }
+    .speed input{width:180px}
+    .playing-dot{
+      width:12px; height:12px; border-radius:50%;
+      background: var(--brand-2);
+      box-shadow: 0 0 0 6px rgba(108,92,231,0.2);
+      animation: pulse 1.6s infinite ease-in-out;
+    }
+    @keyframes pulse{
+      0% {transform:scale(1)}
+      50%{transform:scale(1.18)}
+      100%{transform:scale(1)}
+    }
+  </style>
+</head>
+<body>
+  <div class="bg" id="bg"></div>
+
+  <header>
+    <div class="logo" aria-hidden="true">Aa</div>
+    <div>
+      <h1>Taalverhalen voor Kleuters</h1>
+      <div class="subtitle">Leeftijd 3–6 • Nederlands & Engels • Luister & Lees</div>
+    </div>
+    <div class="search-wrap" role="search">
+      <span style="font-weight:900;color:#555">🔎</span>
+      <input id="search" type="search" placeholder="Zoek titel of thema..." aria-label="Zoek verhalen">
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside id="menu" aria-label="Verhalenlijst"></aside>
+    <main id="content" aria-live="polite" aria-atomic="true">
+      <!-- Story content will render here -->
+    </main>
+  </div>
+
+  <footer class="player" aria-label="Speler">
+    <button class="btn" id="play-nl" title="Speel Nederlands">▶️ NL</button>
+    <button class="btn" id="play-en" title="Play English">▶️ EN</button>
+    <button class="btn secondary" id="play-both" title="Speel beide talen">⏯️ NL → EN</button>
+    <button class="btn ghost" id="pause" title="Pauzeer/Doorgaan">⏸️ Pauze/Verder</button>
+    <button class="btn ghost" id="stop" title="Stop">⏹️ Stop</button>
+
+    <div class="speed">
+      🔉 Snelheid
+      <input type="range" id="rate" min="0.6" max="1.4" step="0.1" value="1">
+      <span id="rateVal">1.0×</span>
+      <div id="playingDot" class="playing-dot" style="display:none"></div>
+    </div>
+  </footer>
+
+  <script>
+  // =============================
+  // STORIES JSON (Dutch + English)
+  // =============================
+  const STORIES = [
+    {
+      id: "zon-en-wolk",
+      title: "De zon en de wolk",
+      tags: ["weer","zon","wolk","dag"],
+      nl: [
+        "De zon is warm.",
+        "Een wolk komt langs.",
+        "\"Hallo,\" zegt de zon.",
+        "\"Hallo,\" zegt de wolk.",
+        "Ze spelen verstoppertje.",
+        "Soms schijnt de zon.",
+        "Soms is het even koel.",
+        "Samen maken ze een mooie dag."
+      ],
+      en: [
+        "The sun is warm.",
+        "A cloud floats by.",
+        "\"Hello,\" says the sun.",
+        "\"Hello,\" says the cloud.",
+        "They play hide-and-seek.",
+        "Sometimes the sun shines.",
+        "Sometimes it is cool for a moment.",
+        "Together they make a lovely day."
+      ],
+      bgImage: "https://source.unsplash.com/1600x900/?sun,clouds,sky,kids",
+      imageSearchUrl: "https://www.google.com/search?tbm=isch&q=zon+en+wolk+illustratie"
+    },
+    {
+      id: "kleine-konijn",
+      title: "Het kleine konijn",
+      tags: ["dier","konijn","vrienden"],
+      nl: [
+        "Een klein konijn huppelt in het gras.",
+        "Het konijn vindt een zoete wortel.",
+        "\"Deel je mee?\" vraagt een vriend.",
+        "\"Ja!\" zegt het konijn blij.",
+        "Ze knabbelen samen en lachen.",
+        "De zon gaat langzaam naar bed.",
+        "Het konijn zwaait: \"Tot morgen!\""
+      ],
+      en: [
+        "A little rabbit hops in the grass.",
+        "The rabbit finds a sweet carrot.",
+        "\"Will you share?\" a friend asks.",
+        "\"Yes!\" says the rabbit happily.",
+        "They nibble together and giggle.",
+        "The sun slowly goes to bed.",
+        "The rabbit waves: \"See you tomorrow!\""
+      ],
+      bgImage: "https://source.unsplash.com/1600x900/?rabbit,meadow,cute",
+      imageSearchUrl: "https://www.google.com/search?tbm=isch&q=konijn+illustratie+kleuter"
+    },
+    {
+      id: "rode-bal",
+      title: "De rode bal",
+      tags: ["spel","bal","kleur"],
+      nl: [
+        "Op het plein rolt een rode bal.",
+        "Ik geef de bal een zachte tik.",
+        "De bal springt hoog en \"poink\"!",
+        "Een hondje blaft en wil mee spelen.",
+        "We wachten en delen om de beurt.",
+        "Iedereen lacht. De bal lacht mee."
+      ],
+      en: [
+        "On the square a red ball rolls.",
+        "I give the ball a gentle tap.",
+        "The ball jumps high and \"boing\"!",
+        "A little dog barks and wants to play.",
+        "We wait and take turns.",
+        "Everyone laughs. The ball laughs too."
+      ],
+      bgImage: "https://source.unsplash.com/1600x900/?red,ball,playground",
+      imageSearchUrl: "https://www.google.com/search?tbm=isch&q=rode+bal+illustratie"
+    },
+    {
+      id: "dappere-eend",
+      title: "De dappere eend",
+      tags: ["dier","water","moed"],
+      nl: [
+        "Er ligt een grote plas op het pad.",
+        "Een kleine eend kijkt en \"kwak\".",
+        "De eend stapt dapper in het water.",
+        "De kuikens volgen in een rij.",
+        "Plens, plons! Spetterpret voor iedereen.",
+        "De zon droogt hun veren warm."
+      ],
+      en: [
+        "There is a big puddle on the path.",
+        "A little duck looks and \"quack\".",
+        "The duck steps bravely into the water.",
+        "The ducklings follow in a line.",
+        "Splash, splish! Water fun for everyone.",
+        "The sun dries their feathers warm."
+      ],
+      bgImage: "https://source.unsplash.com/1600x900/?duck,pond,ducklings",
+      imageSearchUrl: "https://www.google.com/search?tbm=isch&q=eend+kuikens+illustratie"
+    },
+    {
+      id: "trein-naar-zee",
+      title: "De trein naar de zee",
+      tags: ["trein","zee","reis"],
+      nl: [
+        "We stappen in de trein. Tjoek tjoek!",
+        "Buiten zien we koeien en bloemen.",
+        "De lucht ruikt zout. De zee is dichtbij.",
+        "Op het strand bouwen we een kasteel.",
+        "De golven klappen en zeggen \"hallo\".",
+        "We zwaaien naar de zon en gaan naar huis."
+      ],
+      en: [
+        "We get on the train. Choo choo!",
+        "Outside we see cows and flowers.",
+        "The air smells salty. The sea is near.",
+        "On the beach we build a castle.",
+        "The waves clap and say \"hello\".",
+        "We wave to the sun and go home."
+      ],
+      bgImage: "https://source.unsplash.com/1600x900/?train,sea,beach",
+      imageSearchUrl: "https://www.google.com/search?tbm=isch&q=trein+naar+zee+illustratie"
+    },
+    {
+      id: "slapende-beer",
+      title: "De slapende beer",
+      tags: ["dier","bos","rust"],
+      nl: [
+        "De beer gaapt. \"Aaaaah.\"",
+        "Hij vindt een zachte grot.",
+        "De maan fluistert: \"Slaap maar.\"",
+        "De beer droomt van zoete honing.",
+        "Kleine sterren wiegen de nacht.",
+        "Morgen wordt de beer weer wakker."
+      ],
+      en: [
+        "The bear yawns. \"Aaaaah.\"",
+        "He finds a soft cave.",
+        "The moon whispers: \"Sleep now.\"",
+        "The bear dreams of sweet honey.",
+        "Little stars rock the night.",
+        "Tomorrow the bear wakes again."
+      ],
+      bgImage: "https://source.unsplash.com/1600x900/?bear,forest,night,stars",
+      imageSearchUrl: "https://www.google.com/search?tbm=isch&q=slapende+beer+illustratie"
+    },
+    {
+      id: "regenboogsoep",
+      title: "Regenboogsoep",
+      tags: ["eten","kleuren","pret"],
+      nl: [
+        "We zetten een pan op het fornuis.",
+        "Rood: een tomaat. Oranje: een wortel.",
+        "Geel: maïs. Groen: doperwtjes.",
+        "Paars: een aardappel met schil.",
+        "We roeren en roepen: \"Hiep hiep, soep!\"",
+        "De soep smaakt naar vrolijkheid."
+      ],
+      en: [
+        "We put a pot on the stove.",
+        "Red: a tomato. Orange: a carrot.",
+        "Yellow: corn. Green: peas.",
+        "Purple: a potato with skin.",
+        "We stir and shout: \"Hip hip, soup!\"",
+        "The soup tastes like happiness."
+      ],
+      bgImage: "https://source.unsplash.com/1600x900/?soup,vegetables,colorful",
+      imageSearchUrl: "https://www.google.com/search?tbm=isch&q=regenboog+soep+illustratie"
+    },
+    {
+      id: "vlieger-wind",
+      title: "De vlieger in de wind",
+      tags: ["spel","buiten","wind"],
+      nl: [
+        "De wind waait zacht over het veld.",
+        "Mijn vlieger danst in de lucht.",
+        "\"Hoger!\" roep ik. De staart wapperd.",
+        "Een vogel vliegt even mee.",
+        "We rennen, lachen en draaien rond.",
+        "De vlieger zegt: \"Wat een fijne dag!\""
+      ],
+      en: [
+        "The wind blows softly over the field.",
+        "My kite dances in the sky.",
+        "\"Higher!\" I shout. The tail flutters.",
+        "A bird flies along for a moment.",
+        "We run, laugh, and spin around.",
+        "The kite says: \"What a lovely day!\""
+      ],
+      bgImage: "https://source.unsplash.com/1600x900/?kite,wind,field",
+      imageSearchUrl: "https://www.google.com/search?tbm=isch&q=vlieger+kind+illustratie"
+    },
+    {
+      id: "grote-schoen",
+      title: "De grote schoen",
+      tags: ["grappig","huis","voorwerp"],
+      nl: [
+        "In het park staat een grote schoen.",
+        "Ik klop. Tok tok! Niemand thuis.",
+        "Ik kijk naar binnen. Wat een plek!",
+        "We spelen huisje in de schoen.",
+        "De veters zijn slingers vandaag.",
+        "We zeggen: \"Dag schoen, tot gauw!\""
+      ],
+      en: [
+        "In the park there is a big shoe.",
+        "I knock. Knock knock! Nobody home.",
+        "I look inside. What a place!",
+        "We play house in the shoe.",
+        "The laces are garlands today.",
+        "We say: \"Bye shoe, see you soon!\""
+      ],
+      bgImage: "https://source.unsplash.com/1600x900/?shoe,park,play",
+      imageSearchUrl: "https://www.google.com/search?tbm=isch&q=huisje+in+een+schoen+illustratie"
+    },
+    {
+      id: "vriendjes-bos",
+      title: "Vriendjes in het bos",
+      tags: ["bos","dieren","vrienden"],
+      nl: [
+        "We lopen op het zachte bos-pad.",
+        "Een eekhoorn zwaait met zijn staart.",
+        "Een uil zegt: \"Oehoe!\" van boven.",
+        "We delen een appel met elkaar.",
+        "Het bos ruikt naar mos en zon.",
+        "We geven de bomen een knuffel."
+      ],
+      en: [
+        "We walk on the soft forest path.",
+        "A squirrel waves its tail.",
+        "An owl says: \"Hoo-hoo!\" from above.",
+        "We share an apple together.",
+        "The forest smells like moss and sun.",
+        "We give the trees a hug."
+      ],
+      bgImage: "https://source.unsplash.com/1600x900/?forest,kids,animals",
+      imageSearchUrl: "https://www.google.com/search?tbm=isch&q=kinderen+in+het+bos+illustratie"
+    },
+    {
+      id: "kleine-robot",
+      title: "De kleine robot",
+      tags: ["techniek","vrienden","fantasie"],
+      nl: [
+        "Klik klik! De kleine robot wordt wakker.",
+        "Hij zegt: \"Beep! Goedemorgen, vriend.\"",
+        "We bouwen torens van blokken.",
+        "De robot telt: één, twee, drie!",
+        "Zijn lichtje knippert blij.",
+        "Aan het eind zegt hij: \"Tot morgen!\""
+      ],
+      en: [
+        "Click click! The little robot wakes up.",
+        "He says: \"Beep! Good morning, friend.\"",
+        "We build towers of blocks.",
+        "The robot counts: one, two, three!",
+        "His little light blinks happily.",
+        "At the end he says: \"See you tomorrow!\""
+      ],
+      bgImage: "https://source.unsplash.com/1600x900/?robot,toy,kids",
+      imageSearchUrl: "https://www.google.com/search?tbm=isch&q=kleine+robot+illustratie+kind"
+    },
+    {
+      id: "maan-zegt-hallo",
+      title: "De maan zegt hallo",
+      tags: ["nacht","maan","rust"],
+      nl: [
+        "De lucht wordt donker en stil.",
+        "De maan klimt omhoog en glimlacht.",
+        "\"Hallo,\" fluistert de maan zacht.",
+        "Sterren knipperen als kleine lampjes.",
+        "We trekken de deken tot onze kin.",
+        "Slaap zacht. Morgen komt weer licht."
+      ],
+      en: [
+        "The sky grows dark and quiet.",
+        "The moon climbs up and smiles.",
+        "\"Hello,\" the moon whispers softly.",
+        "Stars twinkle like tiny lights.",
+        "We pull the blanket to our chin.",
+        "Sleep well. Tomorrow brings light again."
+      ],
+      bgImage: "https://source.unsplash.com/1600x900/?moon,night,stars,bedtime",
+      imageSearchUrl: "https://www.google.com/search?tbm=isch&q=maan+nacht+illustratie+kind"
+    }
+  ];
+
+  
+// =========
+  // UI State
+  // =========
+  const els = {
+    menu: document.getElementById('menu'),
+    content: document.getElementById('content'),
+    bg: document.getElementById('bg'),
+    search: document.getElementById('search'),
+    playNL: document.getElementById('play-nl'),
+    playEN: document.getElementById('play-en'),
+    playBoth: document.getElementById('play-both'),
+    pause: document.getElementById('pause'),
+    stop: document.getElementById('stop'),
+    rate: document.getElementById('rate'),
+    rateVal: document.getElementById('rateVal'),
+    playingDot: document.getElementById('playingDot'),
+  };
+
+  let currentId = localStorage.getItem('story.currentId') || STORIES[0].id;
+  let speech = {
+    voices: [],
+    currentUtterance: null,
+    queue: [],
+    isPaused: false
+  };
+
+  // ===========================================
+  // 🔄 RANDOM BACKGROUND FROM imageSearchUrl
+  // ===========================================
+  // We parse the Google Images 'q' term and use Unsplash Source
+  // to retrieve a random image for those keywords.
+  // We cache one random pick per story until the user clicks Shuffle.
+
+  function extractKeywordsFromSearchUrl(story){
+    try{
+      if (!story.imageSearchUrl) return null;
+      const u = new URL(story.imageSearchUrl);
+      const q = u.searchParams.get('q') || '';
+      if (!q) return null;
+      // Convert + to space, decode URI, drop generic words that may skew results
+      let terms = decodeURIComponent(q.replace(/\+/g, ' ')).trim();
+      terms = terms
+        .replace(/\b(illustratie|illustraties|tekening|plaatje|kind(eren)?|kleuter(s)?)\b/gi, '')
+        .replace(/\s{2,}/g, ' ')
+        .trim();
+      return terms || null;
+    }catch(e){
+      return null;
+    }
+  }
+
+  function buildUnsplashRandomUrl(keywords){
+    // Use comma-separated terms to broaden results; add a random signature to bypass cache
+    const q = keywords.split(/\s*,\s*|\s+/).filter(Boolean).join(',');
+    const sig = Math.floor(Math.random() * 1e9);
+    return `https://source.unsplash.com/1600x900/?${encodeURIComponent(q)}&sig=${sig}`;
+  }
+
+  function getPersistedRandomBg(storyId){
+    return localStorage.getItem(`story.randbg.${storyId}`);
+  }
+  function setPersistedRandomBg(storyId, url){
+    localStorage.setItem(`story.randbg.${storyId}`, url);
+  }
+  function clearPersistedRandomBg(storyId){
+    localStorage.removeItem(`story.randbg.${storyId}`);
+  }
+
+  async function resolveRandomBackground(story, {forceNew=false} = {}){
+    // If the user has manually set a specific bg override, use that first
+    const manualOverride = localStorage.getItem(`story.bg.${story.id}`);
+    if (manualOverride && !forceNew){
+      return manualOverride;
+    }
+
+    // Persisted random for this story?
+    if (!forceNew){
+      const saved = getPersistedRandomBg(story.id);
+      if (saved) return saved;
+    }
+
+    // Derive keywords from imageSearchUrl; if absent, fall back to tags/title
+    const fromUrl = extractKeywordsFromSearchUrl(story);
+    const fallbackKeywords = (story.tags && story.tags.join(' ')) || story.title || 'kids';
+    const keywords = (fromUrl || fallbackKeywords).trim() || 'kids';
+
+    // Build Unsplash Source random URL
+    const randomUrl = buildUnsplashRandomUrl(keywords);
+
+    // Optionally, we could "preload" to ensure it's valid before applying.
+    // We'll attempt a HEAD fetch; if blocked, just use the URL (Unsplash Source usually handles it).
+    try{
+      // Not all browsers allow HEAD for cross-origin; this is best-effort.
+      await fetch(randomUrl, {method:'HEAD', mode:'no-cors'});
+    }catch(e){/* ignore */}
+    setPersistedRandomBg(story.id, randomUrl);
+    return randomUrl;
+  }
+
+  function applyBackground(url){
+    els.bg.style.backgroundImage = `url('${url}')`;
+  }
+
+  async function updateBackgroundForStory(story, {forceNew=false, preferDefault=false} = {}){
+    if (preferDefault && story.bgImage){
+      clearPersistedRandomBg(story.id);
+      applyBackground(story.bgImage);
+      return;
+    }
+    const url = await resolveRandomBackground(story, {forceNew});
+    applyBackground(url);
+  }
+
+  // =================
+  // Render Functions
+  // =================
+  function renderMenu(filter = "") {
+    els.menu.innerHTML = "";
+    const q = filter.trim().toLowerCase();
+
+    STORIES.forEach(story => {
+      const hay = (story.title + " " + (story.tags || []).join(" ")).toLowerCase();
+      if (q && !hay.includes(q)) return;
+
+      const btn = document.createElement('button');
+      btn.className = 'story-item';
+      btn.textContent = story.title;
+      btn.setAttribute('data-id', story.id);
+      btn.setAttribute('aria-current', story.id === currentId ? 'true' : 'false');
+      btn.addEventListener('click', () => selectStory(story.id));
+      els.menu.appendChild(btn);
+    });
+
+    if (!els.menu.children.length){
+      const p = document.createElement('p');
+      p.textContent = "Geen resultaten. Probeer een ander woord.";
+      els.menu.appendChild(p);
+    }
+  }
+
+  function sentencesToHTML(lines){
+    return lines.map(s => `<span class="sentence">${escapeHtml(s)}</span>`).join("");
+  }
+
+  function escapeHtml(s) {
+    return s.replace(/[&<>"']/g, (m) => ({
+      '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+    }[m]));
+  }
+
+  async function renderStory(id){
+    const story = STORIES.find(s => s.id === id) || STORIES[0];
+
+    els.content.innerHTML = `
+      <div class="story-header">
+        <span class="badge">Leeftijd 3–6</span>
+        <h2 class="story-title">${escapeHtml(story.title)}</h2>
+        <div class="tools">
+          ${story.imageSearchUrl}🔍 Vind achtergrond (Google Afbeeldingen)</a>
+          <button class="tiny-btn" id="shuffle-bg" title="Nieuwe willekeurige achtergrond">🎲 Shuffle achtergrond</button>
+          <button class="tiny-btn" id="reset-bg" title="Herstel standaard achtergrond">↩️ Standaard achtergrond</button>
+        </div>
+      </div>
+
+      <div class="columns">
+        <section class="panel" aria-label="Verhaal in het Nederlands">
+          <h3>Nederlands</h3>
+          <div>${sentencesToHTML(story.nl)}</div>
+        </section>
+        <section class="panel" aria-label="Story in English">
+          <h3>English</h3>
+          <div>${sentencesToHTML(story.en)}</div>
+        </section>
+      </div>
+    `;
+
+    // ✅ Apply (or resolve) random background for this story
+    await updateBackgroundForStory(story);
+
+    // Buttons
+    const shuffleBtn = document.getElementById('shuffle-bg');
+    const resetBtn = document.getElementById('reset-bg');
+
+    shuffleBtn.addEventListener('click', async () => {
+      // Force a new random background and persist it
+      clearPersistedRandomBg(story.id);
+      await updateBackgroundForStory(story, {forceNew:true});
+    });
+
+    resetBtn.addEventListener('click', async () => {
+      // Use the original static bg and forget random pick
+      await updateBackgroundForStory(story, {preferDefault:true});
+    });
+
+    // Set aria-current on menu
+    [...els.menu.querySelectorAll('.story-item')].forEach(b => {
+      b.setAttribute('aria-current', b.getAttribute('data-id') === story.id ? 'true' : 'false');
+    });
+  }
+
+  function selectStory(id){
+    currentId = id;
+    localStorage.setItem('story.currentId', id);
+    renderStory(id);
+    stopSpeech();
+  }
+
+  // ============
+  // Search hook
+  // ============
+  els.search.addEventListener('input', (e) => {
+    renderMenu(e.target.value);
+  });
+
+  // ==================
+  // Text-to-Speech API
+  // ==================
+  function loadVoices(){
+    let voices = window.speechSynthesis.getVoices();
+    if (voices && voices.length){
+      speech.voices = voices;
+      return;
+    }
+    // If empty, wait for event
+    window.speechSynthesis.onvoiceschanged = () => {
+      speech.voices = window.speechSynthesis.getVoices() || [];
+    };
+  }
+
+  function findVoice(langPrefix){
+    const vExact = speech.voices.find(v => v.lang && v.lang.toLowerCase().startsWith(langPrefix.toLowerCase()));
+    if (vExact) return vExact;
+    if (langPrefix.startsWith('nl')) {
+      const anyDutch = speech.voices.find(v => v.lang && v.lang.toLowerCase().includes('nl'));
+      if (anyDutch) return anyDutch;
+    }
+    if (langPrefix.startsWith('en')) {
+      const anyEnglish = speech.voices.find(v => v.lang && v.lang.toLowerCase().includes('en'));
+      if (anyEnglish) return anyEnglish;
+    }
+    return null;
+  }
+
+  function speakText(lines, langCode){
+    stopSpeech();
+    const rate = parseFloat(els.rate.value || "1");
+    const voice = findVoice(langCode) || null;
+
+    const queue = lines.map((line) => {
+      const u = new SpeechSynthesisUtterance(line);
+      u.lang = voice?.lang || langCode;
+      u.voice = voice || null;
+      u.rate = rate;
+      u.pitch = 1;
+      u.onstart = () => setPlaying(true);
+      u.onend = () => {
+        if (speech.queue.length === 0 && window.speechSynthesis.pending === false) {
+          setPlaying(false);
+        }
+      };
+      return u;
+    });
+
+    speech.queue = queue.slice();
+    playQueue();
+  }
+
+  function speakBoth(nlLines, enLines){
+    stopSpeech();
+    const rate = parseFloat(els.rate.value || "1");
+    const nlVoice = findVoice('nl') || null;
+    const enVoice = findVoice('en') || null;
+
+    const makeUtts = (lines, v, lang) => lines.map(line => {
+      const u = new SpeechSynthesisUtterance(line);
+      u.lang = v?.lang || lang;
+      u.voice = v || null;
+      u.rate = rate; u.pitch = 1;
+      u.onstart = () => setPlaying(true);
+      u.onend = () => {
+        if (speech.queue.length === 0 && window.speechSynthesis.pending === false) {
+          setPlaying(false);
+        }
+      };
+      return u;
+    });
+
+    speech.queue = [
+      ...makeUtts(nlLines, nlVoice, 'nl-NL'),
+      ...makeUtts(enLines, enVoice, 'en-US')
+    ];
+    playQueue();
+  }
+
+  function playQueue(){
+    if (!speech.queue.length) return;
+    const next = speech.queue.shift();
+    speech.currentUtterance = next;
+    window.speechSynthesis.speak(next);
+  }
+
+  function pauseOrResume(){
+    if (window.speechSynthesis.speaking && !speech.isPaused){
+      window.speechSynthesis.pause();
+      speech.isPaused = true;
+      setPlaying(false);
+    } else if (speech.isPaused){
+      window.speechSynthesis.resume();
+      speech.isPaused = false;
+      setPlaying(true);
+    }
+  }
+
+  function stopSpeech(){
+    window.speechSynthesis.cancel();
+    speech.queue = [];
+    speech.currentUtterance = null;
+    speech.isPaused = false;
+    setPlaying(false);
+  }
+
+  function setPlaying(isPlaying){
+    els.playingDot.style.display = isPlaying ? 'inline-block' : 'none';
+  }
+
+  // Player events
+  els.playNL.addEventListener('click', () => {
+    const story = STORIES.find(s => s.id === currentId);
+    speakText(story.nl, 'nl-NL');
+  });
+  els.playEN.addEventListener('click', () => {
+    const story = STORIES.find(s => s.id === currentId);
+    speakText(story.en, 'en-US');
+  });
+  els.playBoth.addEventListener('click', () => {
+    const story = STORIES.find(s => s.id === currentId);
+    speakBoth(story.nl, story.en);
+  });
+  els.pause.addEventListener('click', pauseOrResume);
+  els.stop.addEventListener('click', stopSpeech);
+
+  // Speed control
+  const savedRate = localStorage.getItem('story.rate');
+  if (savedRate) els.rate.value = savedRate;
+  els.rateVal.textContent = `${parseFloat(els.rate.value).toFixed(1)}×`;
+  els.rate.addEventListener('input', () => {
+    els.rateVal.textContent = `${parseFloat(els.rate.value).toFixed(1)}×`;
+    localStorage.setItem('story.rate', els.rate.value);
+  });
+
+  // Init
+  function init(){
+    loadVoices();
+    renderMenu();
+    renderStory(currentId);
+
+    // When TTS finishes one utterance, auto-play next
+    window.speechSynthesis.addEventListener('end', () => {
+      if (speech.queue.length > 0) playQueue();
+    });
+  }
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) setPlaying(false);
+  });
+  window.addEventListener('load', init);
+  </script>
+</body>
+</html>

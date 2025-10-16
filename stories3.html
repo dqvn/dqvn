@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Time with Background Images</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .story-container {
+            width: 90%;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3;
+            z-index: 1;
+            transition: opacity 1s ease;
+        }
+        
+        .content {
+            position: relative;
+            z-index: 2;
+            padding: 30px;
+        }
+        
+        h1 {
+            color: #5d3fd3;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .story-text {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 30px;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        button {
+            background-color: #5d3fd3;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        button:hover {
+            background-color: #7a5af5;
+            transform: translateY(-2px);
+        }
+        
+        button:active {
+            transform: translateY(1px);
+        }
+        
+        .image-search {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        input {
+            flex: 1;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 50px;
+            font-size: 1rem;
+            outline: none;
+        }
+        
+        input:focus {
+            border-color: #5d3fd3;
+        }
+        
+        .image-gallery {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        
+        .thumbnail {
+            width: 100px;
+            height: 80px;
+            border-radius: 10px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .thumbnail:hover {
+            transform: scale(1.1);
+        }
+        
+        .thumbnail.active {
+            border-color: #5d3fd3;
+        }
+        
+        .audio-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .progress-bar {
+            flex: 1;
+            height: 8px;
+            background-color: #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .progress {
+            height: 100%;
+            background-color: #5d3fd3;
+            width: 0%;
+            transition: width 0.1s linear;
+        }
+        
+        .volume-control {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .story-character {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 100px;
+            height: 100px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 3;
+        }
+        
+        @media (max-width: 600px) {
+            .controls {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            button {
+                width: 100%;
+            }
+            
+            .image-search {
+                flex-direction: column;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .story-text {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="story-container">
+        <div class="background-image" id="backgroundImage"></div>
+        <div class="content">
+            <h1>The Magical Forest Adventure</h1>
+            
+            <div class="image-search">
+                <input type="text" id="imageSearch" placeholder="Search for background images...">
+                <button id="searchButton">Search</button>
+            </div>
+            
+            <div class="image-gallery" id="imageGallery"></div>
+            
+            <div class="story-text" id="storyText">
+                Once upon a time, in a magical forest filled with sparkling streams and talking animals, lived a curious little rabbit named Rosie. She loved exploring new paths and meeting new friends. One sunny morning, Rosie decided to venture deeper into the forest than she had ever gone before. As she hopped along the winding path, she noticed colorful flowers that seemed to glow with a soft light. Suddenly, she heard a faint cry for help coming from behind a large oak tree. It was a tiny fairy with a broken wing! "Don't worry," said Rosie bravely, "I'll help you get home." And so began their wonderful adventure through the enchanted forest...
+            </div>
+            
+            <div class="controls">
+                <button id="playButton">Play Story</button>
+                <button id="pauseButton">Pause</button>
+                <button id="restartButton">Restart</button>
+            </div>
+            
+            <div class="audio-controls">
+                <div class="progress-bar">
+                    <div class="progress" id="progressBar"></div>
+                </div>
+                <div class="volume-control">
+                    <span>🔊</span>
+                    <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="0.7">
+                </div>
+            </div>
+        </div>
+        
+        <div class="story-character" id="storyCharacter"></div>
+    </div>
+
+    <script>
+        // DOM Elements
+        const backgroundImage = document.getElementById('backgroundImage');
+        const imageSearch = document.getElementById('imageSearch');
+        const searchButton = document.getElementById('searchButton');
+        const imageGallery = document.getElementById('imageGallery');
+        const storyText = document.getElementById('storyText');
+        const playButton = document.getElementById('playButton');
+        const pauseButton = document.getElementById('pauseButton');
+        const restartButton = document.getElementById('restartButton');
+        const progressBar = document.getElementById('progressBar');
+        const volumeControl = document.getElementById('volumeControl');
+        const storyCharacter = document.getElementById('storyCharacter');
+
+        // Speech Synthesis
+        const synth = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+
+        // Sample images for demonstration (in a real app, you'd fetch from Google Images API)
+        const sampleImages = [
+            'https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+            'https://images.unsplash.com/photo-1504006833117-8886a355efbf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+            'https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+            'https://images.unsplash.com/photo-1476820865390-c52aeebb9891?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+            'https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+        ];
+
+        // Character images
+        const characters = [
+            '🐰', '🦊', '🐻', '🐸', '🦄'
+        ];
+
+        // Initialize
+        function init() {
+            // Set initial background
+            backgroundImage.style.backgroundImage = `url('${sampleImages[0]}')`;
+            
+            // Load image gallery
+            loadImageGallery();
+            
+            // Set random character
+            const randomCharacter = characters[Math.floor(Math.random() * characters.length)];
+            storyCharacter.textContent = randomCharacter;
+            storyCharacter.style.fontSize = '80px';
+            
+            // Set up event listeners
+            searchButton.addEventListener('click', searchImages);
+            imageSearch.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') searchImages();
+            });
+            
+            playButton.addEventListener('click', playStory);
+            pauseButton.addEventListener('click', pauseStory);
+            restartButton.addEventListener('click', restartStory);
+            volumeControl.addEventListener('input', updateVolume);
+            
+            // Set up speech synthesis
+            setupSpeech();
+        }
+
+        // Load image gallery with sample images
+        function loadImageGallery() {
+            imageGallery.innerHTML = '';
+            sampleImages.forEach((img, index) => {
+                const thumbnail = document.createElement('img');
+                thumbnail.src = img;
+                thumbnail.alt = `Background ${index + 1}`;
+                thumbnail.classList.add('thumbnail');
+                if (index === 0) thumbnail.classList.add('active');
+                
+                thumbnail.addEventListener('click', () => {
+                    // Remove active class from all thumbnails
+                    document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+                    // Add active class to clicked thumbnail
+                    thumbnail.classList.add('active');
+                    // Set as background
+                    backgroundImage.style.backgroundImage = `url('${img}')`;
+                });
+                
+                imageGallery.appendChild(thumbnail);
+            });
+        }
+
+        // Search for images (simulated)
+        function searchImages() {
+            const query = imageSearch.value.trim();
+            if (!query) return;
+            
+            // In a real implementation, you would call Google Images API here
+            // For this demo, we'll just show an alert and add a placeholder
+            alert(`In a real application, this would search for: "${query}"`);
+            
+            // Add a placeholder image to the gallery
+            const placeholderImg = 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';
+            
+            const thumbnail = document.createElement('img');
+            thumbnail.src = placeholderImg;
+            thumbnail.alt = `Search result for ${query}`;
+            thumbnail.classList.add('thumbnail');
+            
+            thumbnail.addEventListener('click', () => {
+                document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+                thumbnail.classList.add('active');
+                backgroundImage.style.backgroundImage = `url('${placeholderImg}')`;
+            });
+            
+            imageGallery.appendChild(thumbnail);
+            imageGallery.scrollLeft = imageGallery.scrollWidth;
+        }
+
+        // Set up speech synthesis
+        function setupSpeech() {
+            utterance = new SpeechSynthesisUtterance(storyText.textContent);
+            utterance.rate = 0.9;
+            utterance.pitch = 1.2;
+            utterance.volume = volumeControl.value;
+            
+            utterance.onstart = () => {
+                isPlaying = true;
+                playButton.disabled = true;
+                pauseButton.disabled = false;
+            };
+            
+            utterance.onend = () => {
+                isPlaying = false;
+                playButton.disabled = false;
+                pauseButton.disabled = true;
+                progressBar.style.width = '100%';
+            };
+            
+            utterance.onboundary = (event) => {
+                if (event.name === 'sentence') {
+                    // Update progress
+                    const progress = (event.charIndex / storyText.textContent.length) * 100;
+                    progressBar.style.width = `${progress}%`;
+                    
+                    // Change background occasionally
+                    if (Math.random() > 0.7) {
+                        const randomIndex = Math.floor(Math.random() * sampleImages.length);
+                        backgroundImage.style.backgroundImage = `url('${sampleImages[randomIndex]}')`;
+                        
+                        // Update active thumbnail
+                        document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+                        document.querySelectorAll('.thumbnail')[randomIndex].classList.add('active');
+                    }
+                }
+            };
+        }
+
+        // Play the story
+        function playStory() {
+            if (isPlaying) return;
+            
+            if (synth.speaking && synth.paused) {
+                synth.resume();
+            } else {
+                synth.speak(utterance);
+            }
+            
+            isPlaying = true;
+            playButton.disabled = true;
+            pauseButton.disabled = false;
+        }
+
+        // Pause the story
+        function pauseStory() {
+            if (synth.speaking && !synth.paused) {
+                synth.pause();
+                isPlaying = false;
+                playButton.disabled = false;
+                pauseButton.disabled = true;
+            }
+        }
+
+        // Restart the story
+        function restartStory() {
+            synth.cancel();
+            isPlaying = false;
+            playButton.disabled = false;
+            pauseButton.disabled = true;
+            progressBar.style.width = '0%';
+            
+            // Reset background to first image
+            backgroundImage.style.backgroundImage = `url('${sampleImages[0]}')`;
+            document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.thumbnail')[0].classList.add('active');
+            
+            setupSpeech();
+        }
+
+        // Update volume
+        function updateVolume() {
+            if (utterance) {
+                utterance.volume = volumeControl.value;
+            }
+        }
+
+        // Initialize the application
+        window.addEventListener('load', init);
+    </script>
+</body>
+</html>
