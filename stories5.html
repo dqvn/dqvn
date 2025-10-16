@@ -366,6 +366,14 @@
     </div>
 
     <script>
+        // LocalStorage Keys
+        const STORAGE_KEYS = {
+            CURRENT_STORY: 'currentReadingStory',
+            READING_PROGRESS: 'storyReadingProgress',
+            SPEECH_SETTINGS: 'speechSettings',
+            FAVORITES: 'favoriteStories'
+        };
+
         // Sample stories data
         const stories = [
             {
@@ -1421,7 +1429,7 @@
         const storyTitle = document.getElementById('storyTitle');
         const dutchText = document.getElementById('dutchText');
         const englishText = document.getElementById('englishText');
-        const playButton = document.getElementById('playButton');
+        const stopButton = document.getElementById('stopButton');
         const speedSlider = document.getElementById('speedSlider');
         const speedValue = document.getElementById('speedValue');
         const languageTabs = document.querySelectorAll('.language-tab');
@@ -1434,12 +1442,289 @@
         let isPlaying = false;
         let currentStory = null;
 
-        // Initialize the application
+        // Save current story to localStorage
+        function saveCurrentStory(story) {
+            try {
+                localStorage.setItem(STORAGE_KEYS.CURRENT_STORY, JSON.stringify(story));
+                console.log('Story saved to localStorage:', story.title);
+            } catch (error) {
+                console.error('Error saving story to localStorage:', error);
+            }
+        }
+
+        // Load current story from localStorage
+        function loadCurrentStory() {
+            try {
+                const savedStory = localStorage.getItem(STORAGE_KEYS.CURRENT_STORY);
+                if (savedStory) {
+                    const story = JSON.parse(savedStory);
+                    console.log('Loaded story from localStorage:', story.title);
+                    return story;
+                }
+            } catch (error) {
+                console.error('Error loading story from localStorage:', error);
+            }
+            return null;
+        }
+
+        // Save reading progress
+        function saveReadingProgress(storyId, progress) {
+            try {
+                const progressData = {
+                    storyId: storyId,
+                    progress: progress,
+                    timestamp: new Date().toISOString()
+                };
+                localStorage.setItem(STORAGE_KEYS.READING_PROGRESS, JSON.stringify(progressData));
+            } catch (error) {
+                console.error('Error saving reading progress:', error);
+            }
+        }
+
+        // Load reading progress
+        function loadReadingProgress(storyId) {
+            try {
+                const progressData = localStorage.getItem(STORAGE_KEYS.READING_PROGRESS);
+                if (progressData) {
+                    const data = JSON.parse(progressData);
+                    if (data.storyId === storyId) {
+                        return data.progress;
+                    }
+                }
+            } catch (error) {
+                console.error('Error loading reading progress:', error);
+            }
+            return 0;
+        }
+
+        // Save speech settings
+        function saveSpeechSettings(settings) {
+            try {
+                localStorage.setItem(STORAGE_KEYS.SPEECH_SETTINGS, JSON.stringify(settings));
+            } catch (error) {
+                console.error('Error saving speech settings:', error);
+            }
+        }
+
+        // Load speech settings
+        function loadSpeechSettings() {
+            try {
+                const settings = localStorage.getItem(STORAGE_KEYS.SPEECH_SETTINGS);
+                if (settings) {
+                    return JSON.parse(settings);
+                }
+            } catch (error) {
+                console.error('Error loading speech settings:', error);
+            }
+            return {
+                rate: 1,
+                pitch: 1.2,
+                volume: 0.8
+            };
+        }
+
+        // Toggle favorite story
+        function toggleFavorite(storyId) {
+            try {
+                const favorites = getFavorites();
+                const index = favorites.indexOf(storyId);
+
+                if (index > -1) {
+                    favorites.splice(index, 1);
+                } else {
+                    favorites.push(storyId);
+                }
+
+                localStorage.setItem(STORAGE_KEYS.FAVORITES, JSON.stringify(favorites));
+                return index === -1; // Returns true if added to favorites
+            } catch (error) {
+                console.error('Error toggling favorite:', error);
+                return false;
+            }
+        }
+
+        // Get favorite stories
+        function getFavorites() {
+            try {
+                const favorites = localStorage.getItem(STORAGE_KEYS.FAVORITES);
+                return favorites ? JSON.parse(favorites) : [];
+            } catch (error) {
+                console.error('Error getting favorites:', error);
+                return [];
+            }
+        }
+
+        // Check if story is favorite
+        function isFavorite(storyId) {
+            const favorites = getFavorites();
+            return favorites.includes(storyId);
+        }
+
+        // Clear all story data (for testing/reset)
+        function clearStoryData() {
+            try {
+                localStorage.removeItem(STORAGE_KEYS.CURRENT_STORY);
+                localStorage.removeItem(STORAGE_KEYS.READING_PROGRESS);
+                localStorage.removeItem(STORAGE_KEYS.SPEECH_SETTINGS);
+                localStorage.removeItem(STORAGE_KEYS.FAVORITES);
+                console.log('All story data cleared from localStorage');
+            } catch (error) {
+                console.error('Error clearing story data:', error);
+            }
+        }
+
+        // Modified loadStory function with localStorage integration
+        function loadStory(story) {
+            currentStory = story;
+
+            // Save to localStorage
+            saveCurrentStory(story);
+
+            // Update UI
+            storyTitle.textContent = `${story.title} / ${story.titleEn}`;
+            dutchText.textContent = story.content_nl;
+            englishText.textContent = story.content_en;
+            storyCharacter.textContent = story.character;
+
+            // Load reading progress
+            const progress = loadReadingProgress(story.id);
+            if (progress > 0) {
+                // You could implement a progress indicator here
+                console.log(`Resuming from progress: ${progress}%`);
+            }
+
+            // Update background image
+            updateBackgroundImage(story.image_query);
+
+            // Reset speech synthesis
+            if (isPlaying) {
+                synth.cancel();
+                isPlaying = false;
+                playButton.innerHTML = '<i class="fas fa-play"></i>';
+            }
+
+            // Set up speech synthesis
+            setupSpeech();
+
+            // Update favorite button state
+            updateFavoriteButton(story.id);
+        }
+
+        // Update favorite button appearance
+        function updateFavoriteButton(storyId) {
+            const favoriteBtn = document.getElementById('favoriteButton');
+            if (favoriteBtn) {
+                if (isFavorite(storyId)) {
+                    favoriteBtn.innerHTML = '<i class="fas fa-heart"></i>';
+                    favoriteBtn.classList.add('favorite-active');
+                } else {
+                    favoriteBtn.innerHTML = '<i class="far fa-heart"></i>';
+                    favoriteBtn.classList.remove('favorite-active');
+                }
+            }
+        }
+
+        // Modified speech setup with settings from localStorage
+        function setupSpeech() {
+            if (!currentStory) return;
+
+            const settings = loadSpeechSettings();
+
+            utterance = new SpeechSynthesisUtterance(currentStory.content_nl);
+            utterance.lang = 'nl-NL';
+            utterance.rate = settings.rate;
+            utterance.pitch = settings.pitch;
+            utterance.volume = settings.volume;
+
+            utterance.onstart = () => {
+                isPlaying = true;
+                playButton.innerHTML = '<i class="fas fa-pause"></i>';
+                playButton.disabled = false;
+                // pauseButton.disabled = false;
+            };
+
+            utterance.onend = () => {
+                isPlaying = false;
+                playButton.innerHTML = '<i class="fas fa-play"></i>';
+                // Save completion progress
+                saveReadingProgress(currentStory.id, 100);
+            };
+
+            utterance.onerror = () => {
+                isPlaying = false;
+                playButton.innerHTML = '<i class="fas fa-play"></i>';
+            };
+
+            // Track progress
+            utterance.onboundary = (event) => {
+                if (event.name === 'sentence') {
+                    const progress = (event.charIndex / currentStory.content_nl.length) * 100;
+                    saveReadingProgress(currentStory.id, progress);
+
+                    // Update progress bar if exists
+                    const progressBar = document.getElementById('progressBar');
+                    if (progressBar) {
+                        progressBar.style.width = `${progress}%`;
+                    }
+                }
+            };
+        }
+
+        // Modified speed control with localStorage
+        function updateSpeed() {
+            const speed = speedSlider.value;
+            speedValue.textContent = `${speed}x`;
+
+            if (utterance) {
+                utterance.rate = parseFloat(speed);
+
+                // Save settings
+                const settings = loadSpeechSettings();
+                settings.rate = parseFloat(speed);
+                saveSpeechSettings(settings);
+            }
+
+            // If currently playing, restart with new speed
+            if (isPlaying) {
+                synth.cancel();
+                synth.speak(utterance);
+            }
+        }
+
+        // Initialize with saved data
         function init() {
             // Load stories list
             loadStoriesList();
 
+            // Try to load last read story
+            const savedStory = loadCurrentStory();
+            if (savedStory) {
+                // Find the story in our stories array
+                const story = stories.find(s => s.id === savedStory.id);
+                if (story) {
+                    loadStory(story);
+
+                    // Update active story in sidebar
+                    document.querySelectorAll('.story-item').forEach(item => {
+                        item.classList.remove('active');
+                        if (parseInt(item.dataset.storyId) === story.id) {
+                            item.classList.add('active');
+                        }
+                    });
+                }
+            }
+
+            // Load speech settings
+            const settings = loadSpeechSettings();
+            speedSlider.value = settings.rate;
+            speedValue.textContent = `${settings.rate}x`;
+
             // Set up event listeners
+            setupEventListeners();
+        }
+
+        // Add to your existing event listeners setup
+        function setupEventListeners() {
             playButton.addEventListener('click', togglePlayback);
             speedSlider.addEventListener('input', updateSpeed);
 
@@ -1450,9 +1735,35 @@
                 });
             });
 
-            // Set initial background
-            backgroundImage.style.backgroundImage = "url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')";
+            // Add favorite button event listener if you add one
+            const favoriteBtn = document.getElementById('favoriteButton');
+            if (favoriteBtn) {
+                favoriteBtn.addEventListener('click', () => {
+                    if (currentStory) {
+                        const added = toggleFavorite(currentStory.id);
+                        updateFavoriteButton(currentStory.id);
+                        // Show some feedback
+                        showNotification(added ? 'Added to favorites!' : 'Removed from favorites');
+                    }
+                });
+            }
         }
+
+        // Utility function for notifications
+        function showNotification(message) {
+            // You can implement a toast notification here
+            console.log(message);
+        }
+
+        // Initialize the app when the page loads
+        window.addEventListener('load', init);
+
+        // Also save when leaving the page
+        window.addEventListener('beforeunload', () => {
+            if (currentStory && utterance) {
+                saveCurrentStory(currentStory);
+            }
+        });
 
         // Load stories into the sidebar
         function loadStoriesList() {
@@ -1477,42 +1788,10 @@
 
                     // Load the story
                     loadStory(story);
-                    localStorage.setItem('currentStory', story);
                 });
 
                 storiesList.appendChild(storyItem);
             });
-            let currentStory = localStorage.getItem('currentStory') || stories[0];
-            loadStory(currentStory);
-        }
-
-        // Load a story into the main content area
-        function loadStory(story) {
-            currentStory = story;
-
-            // Update story title
-            storyTitle.textContent = `${story.title} / ${story.titleEn}`;
-
-            // Update story content
-            dutchText.textContent = story.content_nl;
-            englishText.textContent = story.content_en;
-
-            // Update character
-            storyCharacter.textContent = story.character;
-
-            // Update background image (in a real app, you would fetch from Google Images API)
-            // For demo purposes, we'll use a placeholder approach
-            updateBackgroundImage(story.image_query);
-
-            // Reset speech synthesis
-            if (isPlaying) {
-                synth.cancel();
-                isPlaying = false;
-                playButton.innerHTML = '<i class="fas fa-play"></i>';
-            }
-
-            // Set up speech synthesis for the new story
-            setupSpeech();
         }
 
         // Update background image based on story
@@ -1529,32 +1808,6 @@
 
             const imageUrl = imageMap[query] || "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80";
             backgroundImage.style.backgroundImage = `url('${imageUrl}')`;
-        }
-
-        // Set up speech synthesis for the current story
-        function setupSpeech() {
-            if (!currentStory) return;
-
-            utterance = new SpeechSynthesisUtterance(currentStory.content_nl);
-            utterance.lang = 'nl-NL';
-            utterance.rate = parseFloat(speedSlider.value);
-            utterance.pitch = 1.2;
-            utterance.volume = 0.8;
-
-            utterance.onstart = () => {
-                isPlaying = true;
-                playButton.innerHTML = '<i class="fas fa-pause"></i>';
-            };
-
-            utterance.onend = () => {
-                isPlaying = false;
-                playButton.innerHTML = '<i class="fas fa-play"></i>';
-            };
-
-            utterance.onerror = () => {
-                isPlaying = false;
-                playButton.innerHTML = '<i class="fas fa-play"></i>';
-            };
         }
 
         // Toggle play/pause
@@ -1577,22 +1830,6 @@
                 }
                 isPlaying = true;
                 playButton.innerHTML = '<i class="fas fa-pause"></i>';
-            }
-        }
-
-        // Update speech speed
-        function updateSpeed() {
-            const speed = speedSlider.value;
-            speedValue.textContent = `${speed}x`;
-
-            if (utterance) {
-                utterance.rate = parseFloat(speed);
-            }
-
-            // If currently playing, restart with new speed
-            if (isPlaying) {
-                synth.cancel();
-                synth.speak(utterance);
             }
         }
 
