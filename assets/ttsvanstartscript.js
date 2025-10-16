@@ -3,7 +3,7 @@ const TTSLang = 'nl-NL';
 const TTSLangENG = 'en-US';
 const fileNames = ["thema01", "thema02", "thema03", "thema04", "thema05", "thema06", "thema07", "thema08"];
 let currentPage = localStorage.getItem('currentPage') || fileNames[0];
-const INTERVAL_TIME = 8000;
+const INTERVAL_TIME = 12000;
 
 const GROUP_TITLES = new Map([
   ["thema", "Van Start #1"]
@@ -275,6 +275,7 @@ function spellNextWord() {
   const randomIndex = getNewRandomNumberCSPRNG(0, wordList.length - 1, recentNumbers);
   const wordNL = wordList[randomIndex].dutch;
   const wordEN = wordList[randomIndex].english;
+  const sample = wordList[randomIndex].dutchsentence;
   const rowToScroll = tableBody.children[randomIndex];
 
   // improving the balance rate of random numbers
@@ -287,6 +288,10 @@ function spellNextWord() {
   rowToScroll.scrollIntoView({ block: 'start' });
 
   speakText(wordNL);
+  // pause 2 seconds
+  setTimeout(() => {
+    speakText(sample);
+  }, 2000);
 
   //setTimeout(speakEngText(wordEN), INTERVAL_TIME);
   if (isPlaying) {
