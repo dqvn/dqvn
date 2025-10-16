@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dutch Stories for Kids!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* General Styling */
+        :root {
+            --primary-color: #FF6B6B; /* Coral Red */
+            --secondary-color: #4ECDC4; /* Teal */
+            --accent-color: #FFD93D; /* Yellow */
+            --text-color: #4a4a4a;
+            --bg-color: #F7FFF7;
+            --white: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            overflow: hidden; /* Prevents scrollbars from the full-page background */
+        }
+
+        /* Background Image Styling */
+        #background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-image 1s ease-in-out, filter 1s ease-in-out;
+            /* Start with a slight blur for effect */
+            filter: brightness(0.9) blur(3px);
+        }
+        
+        #background-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.1); /* A subtle dark overlay to help text stand out */
+            z-index: 0;
+        }
+
+        /* Main App Container */
+        .story-app {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            grid-template-rows: 1fr auto;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* Left Side Menu */
+        #story-menu {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            background-color: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            overflow-y: auto;
+            border-right: 5px solid var(--accent-color);
+        }
+
+        #story-menu h2 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #story-menu h2 .fa-book-open {
+            margin-right: 10px;
+        }
+
+        #story-menu ul {
+            list-style-type: none;
+        }
+
+        #story-menu li a {
+            display: block;
+            padding: 15px 20px;
+            margin-bottom: 12px;
+            text-decoration: none;
+            color: var(--text-color);
+            background-color: var(--white);
+            border-radius: 12px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 5px solid transparent;
+        }
+
+        #story-menu li a:hover {
+            transform: translateY(-3px) translateX(5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        #story-menu li a.active {
+            background-color: var(--primary-color);
+            color: var(--white);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            border-left: 5px solid var(--accent-color);
+            transform: translateX(5px);
+        }
+
+        /* Story Content Area */
+        #story-content {
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
+            overflow-y: auto;
+            padding: 50px;
+            background-color: rgba(247, 255, 247, 0.75); /* Slightly transparent background for readability */
+            backdrop-filter: blur(5px);
+        }
+
+        #story-content-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            opacity: 0; /* Start hidden for fade-in effect */
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+        
+        #story-content-inner.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #story-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .story-text-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            font-size: 1.4rem;
+            line-height: 1.8;
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .story-column h3 {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+        
+        .story-column h3.english-title {
+            color: var(--primary-color);
+            border-bottom-color: var(--primary-color);
+        }
+
+        /* Bottom Control Bar */
+        #controls {
+            grid-column: 1 / 3;
+            grid-row: 2 / 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            background-color: var(--white);
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+            z-index: 10;
+        }
+
+        .control-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 2.5rem;
+            margin: 0 25px;
+            color: var(--secondary-color);
+            transition: all 0.2s ease;
+        }
+
+        .control-button:hover {
+            color: var(--primary-color);
+            transform: scale(1.1);
+        }
+
+        #play-pause-btn .fa-pause {
+            display: none;
+        }
+        
+        #speed-btn {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="background-container"></div>
+
+    <div class="story-app">
+        <nav id="story-menu">
+            <h2><i class="fas fa-book-open"></i> Verhalen</h2>
+            <ul id="story-list">
+                </ul>
+        </nav>
+
+        <main id="story-content">
+            <div id="story-content-inner">
+                <h1 id="story-title"></h1>
+                <div class="story-text-container">
+                    <div class="story-column" id="dutch-story">
+                        <h3>Nederlands</h3>
+                        <p id="dutch-text"></p>
+                    </div>
+                    <div class="story-column" id="english-story">
+                        <h3 class="english-title">English</h3>
+                        <p id="english-text"></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div id="controls">
+            <button class="control-button" id="play-pause-btn" title="Play/Pause">
+                <i class="fas fa-play"></i>
+                <i class="fas fa-pause"></i>
+            </button>
+            <button class="control-button" id="speed-btn" title="Change Speed">1x</button>
+        </div>
+    </div>
+
+    <script>
+        // --- STORY DATA ---
+        // Full JSON array of Dutch stories for 3-6 year olds.
+        // The 'image_query' is used to find a relevant background image automatically.
+        const storiesData = [
+            {
+                "title": "De Drie Kleine Biggetjes",
+                "dutch_content": "Er waren eens drie kleine biggetjes die het huis van hun moeder verlieten om hun eigen huis te bouwen. Het eerste biggetje bouwde een huis van stro. Het tweede biggetje bouwde een huis van takjes. Het derde biggetje bouwde een huis van stenen. De grote boze wolf kwam en blies het huis van stro en het huis van takjes om, maar hij kon het huis van stenen niet omblazen.",
+                "english_content": "Once upon a time, there were three little pigs who left their mother's house to build their own. The first little pig built a house of straw. The second little pig built a house of sticks. The third little pig built a house of bricks. The big bad wolf came and blew down the house of straw and the house of sticks, but he could not blow down the house of bricks.",
+                "image_query": "three little pigs fairy tale art"
+            },
+            {
+                "title": "Roodkapje",
+                "dutch_content": "Een klein meisje genaamd Roodkapje moest een mand met eten naar haar zieke oma brengen. In het bos ontmoette ze een wolf. De wolf vroeg waar ze naartoe ging en hij haastte zich naar het huis van oma. Hij at oma op, deed haar kleren aan en wachtte in bed op Roodkapje. Gelukkig redde een jager Roodkapje en haar oma.",
+                "english_content": "A little girl named Little Red Riding Hood had to bring a basket of food to her sick grandmother. In the forest, she met a wolf. The wolf asked where she was going and he hurried to grandmother's house. He ate grandmother, put on her clothes, and waited in bed for Little Red Riding Hood. Luckily, a hunter saved Little Red Riding Hood and her grandmother.",
+                "image_query": "little red riding hood walking in a magical forest"
+            },
+            {
+                "title": "Goudlokje en de Drie Beren",
+                "dutch_content": "Goudlokje was een meisje dat een huisje in het bos vond. Ze ging naar binnen en zag drie kommen pap. Ze at de pap die precies goed was. Ze probeerde drie stoelen en zat op de stoel die precies goed was, maar die brak. Ze ging naar boven en sliep in het bed dat precies goed was. Toen kwamen de drie beren thuis en vonden haar.",
+                "english_content": "Goldilocks was a girl who found a cottage in the woods. She went inside and saw three bowls of porridge. She ate the porridge that was just right. She tried three chairs and sat in the one that was just right, but it broke. She went upstairs and slept in the bed that was just right. Then the three bears came home and found her.",
+                "image_query": "storybook cottage in the woods"
+            },
+            {
+                "title": "Het Lelijke Eendje",
+                "dutch_content": "Op een boerderij werd een eendje geboren dat er anders uitzag dan zijn broertjes en zusjes. Iedereen pestte hem en noemde hem lelijk. Verdrietig liep hij weg. Na een lange, koude winter zag hij zijn spiegelbeeld in het water. Hij was niet langer een lelijk eendje, maar een prachtige zwaan.",
+                "english_content": "On a farm, a duckling was born who looked different from his brothers and sisters. Everyone teased him and called him ugly. Sadly, he ran away. After a long, cold winter, he saw his reflection in the water. He was no longer an ugly duckling, but a beautiful swan.",
+                "image_query": "beautiful white swan on a lake at sunrise"
+            },
+            {
+                "title": "De Kikkerprins",
+                "dutch_content": "Een prinses liet haar gouden bal in een put vallen. Een kikker zei dat hij de bal zou halen als zij zijn vriendin wilde zijn. De prinses beloofde het, maar rende weg toen ze de bal terug had. De kikker volgde haar naar het kasteel. Haar vader, de koning, zei dat ze haar belofte moest houden. Met tegenzin kuste ze de kikker, die in een knappe prins veranderde.",
+                "english_content": "A princess dropped her golden ball into a well. A frog said he would get the ball if she would be his friend. The princess promised, but ran away when she got the ball back. The frog followed her to the castle. Her father, the king, said she must keep her promise. Reluctantly, she kissed the frog, who turned into a handsome prince.",
+                "image_query": "fantasy frog prince with a crown by a well"
+            }
+        ];
+
+        // --- DOM ELEMENTS ---
+        const storyList = document.getElementById('story-list');
+        const storyTitle = document.getElementById('story-title');
+        const dutchText = document.getElementById('dutch-text');
+        const englishText = document.getElementById('english-text');
+        const backgroundContainer = document.getElementById('background-container');
+        const storyContentInner = document.getElementById('story-content-inner');
+        const playPauseBtn = document.getElementById('play-pause-btn');
+        const speedBtn = document.getElementById('speed-btn');
+        const playIcon = playPauseBtn.querySelector('.fa-play');
+        const pauseIcon = playPauseBtn.querySelector('.fa-pause');
+
+        // --- APP STATE ---
+        let currentStoryIndex = 0;
+        let isPlaying = false;
+        let playbackSpeed = 1;
+        const speeds = [1, 1.25, 1.5, 0.75];
+
+        // --- WEB SPEECH API SETUP ---
+        let utterance = new SpeechSynthesisUtterance();
+        utterance.lang = 'nl-NL'; // Set language to Dutch
+        
+        utterance.onend = () => {
+            isPlaying = false;
+            updatePlayPauseIcon();
+        };
+
+        // --- FUNCTIONS ---
+
+        /**
+         * Populates the left menu with story titles.
+         */
+        function populateMenu() {
+            storyList.innerHTML = storiesData.map((story, index) => `
+                <li>
+                    <a href="#" data-index="${index}">${story.title}</a>
+                </li>
+            `).join('');
+        }
+
+        /**
+         * Displays a story based on its index.
+         * @param {number} index - The index of the story to show.
+         */
+        function showStory(index) {
+            speechSynthesis.cancel();
+            isPlaying = false;
+            updatePlayPauseIcon();
+            
+            currentStoryIndex = index;
+            const story = storiesData[index];
+
+            // --- Fade out old content ---
+            storyContentInner.classList.remove('visible');
+
+            // --- Set new background image ---
+            // This uses Unsplash Source to get a high-quality, full-size image based on the query.
+            // It's a reliable and free way to get dynamic backgrounds.
+            const imageUrl = `https://source.unsplash.com/1920x1080/?${encodeURIComponent(story.image_query)}`;
+            
+            // Preload the image to prevent flickering
+            const img = new Image();
+            img.src = imageUrl;
+            img.onload = () => {
+                backgroundContainer.style.backgroundImage = `url('${imageUrl}')`;
+                // Remove blur effect once the image is loaded for a nice transition
+                backgroundContainer.style.filter = 'brightness(0.9) blur(0px)';
+            };
+
+
+            // --- Wait for fade out, then update and fade in new content ---
+            setTimeout(() => {
+                storyTitle.textContent = story.title;
+                dutchText.textContent = story.dutch_content;
+                englishText.textContent = story.english_content;
+
+                storyContentInner.classList.add('visible');
+            }, 300); // Should match CSS transition duration
+
+            // Update active class in menu
+            document.querySelectorAll('#story-list a').forEach(a => a.classList.remove('active'));
+            document.querySelector(`#story-list a[data-index="${index}"]`).classList.add('active');
+        }
+        
+        /**
+         * Handles clicks on the play/pause button.
+         */
+        function togglePlayPause() {
+            if (speechSynthesis.speaking && !speechSynthesis.paused) {
+                speechSynthesis.pause();
+                isPlaying = false;
+            } else {
+                if (speechSynthesis.paused) {
+                    speechSynthesis.resume();
+                } else {
+                    utterance.text = storiesData[currentStoryIndex].dutch_content;
+                    utterance.rate = playbackSpeed;
+                    speechSynthesis.speak(utterance);
+                }
+                isPlaying = true;
+            }
+            updatePlayPauseIcon();
+        }
+
+        /**
+         * Updates the play/pause icon based on the isPlaying state.
+         */
+        function updatePlayPauseIcon() {
+            if (isPlaying) {
+                playIcon.style.display = 'none';
+                pauseIcon.style.display = 'inline';
+            } else {
+                playIcon.style.display = 'inline';
+                pauseIcon.style.display = 'none';
+            }
+        }
+
+        /**
+         * Cycles through playback speeds.
+         */
+        function changeSpeed() {
+            const currentSpeedIndex = speeds.indexOf(playbackSpeed);
+            const nextSpeedIndex = (currentSpeedIndex + 1) % speeds.length;
+            playbackSpeed = speeds[nextSpeedIndex];
+            speedBtn.textContent = `${playbackSpeed}x`;
+            
+            // If currently speaking, update the rate immediately
+            if (speechSynthesis.speaking) {
+                utterance.rate = playbackSpeed;
+                // Restart to apply the new speed
+                speechSynthesis.cancel();
+                speechSynthesis.speak(utterance);
+                isPlaying = true;
+                updatePlayPauseIcon();
+            }
+        }
+
+        // --- EVENT LISTENERS ---
+
+        storyList.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                e.preventDefault();
+                const index = parseInt(e.target.dataset.index, 10);
+                if (index !== currentStoryIndex) {
+                   showStory(index);
+                }
+            }
+        });
+        
+        playPauseBtn.addEventListener('click', togglePlayPause);
+        speedBtn.addEventListener('click', changeSpeed);
+
+        // --- INITIALIZE APP ---
+        document.addEventListener('DOMContentLoaded', () => {
+            populateMenu();
+            showStory(0); // Show the first story by default
+        });
+
+    </script>
+</body>
+</html>

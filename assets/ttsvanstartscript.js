@@ -6,7 +6,7 @@ let currentPage = localStorage.getItem('currentPage') || fileNames[0];
 const INTERVAL_TIME = 15000;
 
 const GROUP_TITLES = new Map([
-  ["thema", "Van Start #1"]
+  ["th", "Van Start #1"]
 ]);
 
 // create a table body element
@@ -44,6 +44,7 @@ createLeftMenu();
 
 // init data
 loadJsonData(currentPage, reloadTable);
+document.getElementById('chapter').innerHTML = "(" + currentPage + ")";
 
 // set footer year
 year.textContent = new Date().getFullYear();
@@ -342,7 +343,7 @@ function createGroup(groupKey, files) {
     fileItem.addEventListener("click", () => {
       loadJsonData(file, reloadTable);
       // update on going chapter
-      document.getElementById('chapter').innerHTML = "(You are learning in " + file + ")";
+      document.getElementById('chapter').innerHTML = "(" + file + ")";
     });
     nestedList.appendChild(fileItem);
   });
