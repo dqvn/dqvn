@@ -37,7 +37,8 @@ function showQuestion() {
         const resultDiv = document.getElementById('result');
 
         titleDiv.textContent = `Dutch word: "${currentWord.dutch}"?`;
-        questionDiv.textContent = `[${currentWordIndex + 1}/${maxNumber}] - What is the English meaning of "${currentWord.dutch}"?`;
+        questionDiv.textContent = `{${currentWord.dutchsentence}}
+        [${currentWordIndex + 1}/${maxNumber}] - What is the English meaning of "${currentWord.dutch}"?`;
         optionsDiv.innerHTML = "";
         resultDiv.textContent = "";
         speakText(currentWord.dutch);
