@@ -39,7 +39,12 @@ function showQuestion() {
 
         titleDiv.textContent = `Dutch word: "${currentWord.dutch}"?`;
         questionDiv.textContent = `[${currentWordIndex + 1}/${maxNumber}] - What is the English meaning of "${currentWord.dutch}"?`;
-        if (sentenceDiv) sentenceDiv.textContent = `${currentWord.dutchsentence}`;
+        if (sentenceDiv) {
+            sentenceDiv.textContent = `${currentWord.dutchsentence}`;
+            sentenceDiv.onclick = () => {
+                speakText(currentWord.dutchsentence);
+            };
+        }
         optionsDiv.innerHTML = "";
         resultDiv.textContent = "";
         speakText(currentWord.dutch);
