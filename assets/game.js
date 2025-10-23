@@ -37,8 +37,8 @@ function showQuestion() {
         const titleDiv = document.getElementById('game-container').querySelector('h1');
         const resultDiv = document.getElementById('result');
 
-        titleDiv.textContent = `Dutch word: "${currentWord.dutch}"?`;
-        questionDiv.textContent = `[${currentWordIndex + 1}/${maxNumber}] - What is the English meaning of "${currentWord.dutch}"?`;
+        titleDiv.textContent = `${currentWord.dutch}`;
+        questionDiv.textContent = `[${currentWordIndex + 1} / ${maxNumber}]`;
         if (sentenceDiv) {
             sentenceDiv.textContent = `${currentWord.dutchsentence}`;
             sentenceDiv.onclick = () => {
