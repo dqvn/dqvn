@@ -32,13 +32,14 @@ function showQuestion() {
         shuffle(options);
 
         const questionDiv = document.getElementById('question');
+        const sentenceDiv = document.getElementById('sentence');
         const optionsDiv = document.getElementById('options');
         const titleDiv = document.getElementById('game-container').querySelector('h1');
         const resultDiv = document.getElementById('result');
 
         titleDiv.textContent = `Dutch word: "${currentWord.dutch}"?`;
         questionDiv.textContent = `[${currentWordIndex + 1}/${maxNumber}] - What is the English meaning of "${currentWord.dutch}"?`;
-        questionDiv.appendChild(document.createElement('br')).appendChild(document.createTextNode(`Sentence: "${currentWord.dutchsentence}"`));
+        if (sentenceDiv) sentenceDiv.textContent = `Sentence: "${currentWord.dutchsentence}"`;
         optionsDiv.innerHTML = "";
         resultDiv.textContent = "";
         speakText(currentWord.dutch);
