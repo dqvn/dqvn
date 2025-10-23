@@ -487,22 +487,28 @@ button:hover {
 /* HIDE MENU */
 /* Basic layout adjustments for the container */
 .container {
-    display: flex; /* Makes the left-menu and table-container sit side-by-side */
-    gap: 10px; /* Space between the menu and table */
-    position: relative; /* Needed for positioning the absolute button */
+    display: flex;
+    /* Makes the left-menu and table-container sit side-by-side */
+    gap: 10px;
+    /* Space between the menu and table */
+    position: relative;
+    /* Needed for positioning the absolute button */
 }
 
 .left-menu {
     /* Set an initial width and make sure it doesn't shrink */
-    width: 300px; 
+    width: 300px;
     flex-shrink: 0;
-    transition: transform 0.3s ease, width 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease, width 0.3s ease;
+    /* Smooth transition */
     /* ... other existing left-menu styles ... */
 }
 
 .table-container {
-    flex-grow: 1; /* Allows the table to take up the remaining space */
-    transition: width 0.3s ease; /* Smooth transition */
+    flex-grow: 1;
+    /* Allows the table to take up the remaining space */
+    transition: width 0.3s ease;
+    /* Smooth transition */
     /* ... other existing table-container styles ... */
 }
 
@@ -511,7 +517,8 @@ button:hover {
     /* You can use transform to slide it out, or set width to 0 and overflow: hidden */
     /* Example: Sliding out to the left */
     transform: translateX(-100%);
-    width: 0; /* Ensures content doesn't wrap/show when using transform */
+    width: 0;
+    /* Ensures content doesn't wrap/show when using transform */
     padding: 0;
     margin-right: 0;
 }
@@ -525,12 +532,16 @@ button:hover {
 /* 🌟 BUTTON STYLING 🌟 */
 .toggle-menu-button {
     position: absolute;
-    top: 10px; /* Adjust as needed */
-    left: 10px; /* Adjust as needed */
-    z-index: 100; /* Ensure it's on top of other elements */
+    top: 10px;
+    /* Adjust as needed */
+    left: 10px;
+    /* Adjust as needed */
+    z-index: 100;
+    /* Ensure it's on top of other elements */
     padding: 5px 10px;
     cursor: pointer;
-    background-color: #3498db; /* Example color */
+    background-color: #3498db;
+    /* Example color */
     color: white;
     border: none;
     border-radius: 5px;
@@ -541,5 +552,13 @@ button:hover {
 
 /* Move the button when the menu is hidden (so it stays visible) */
 .container.menu-hidden .toggle-menu-button {
-    left: 10px; /* Keep it near the edge of the screen/container */
+    left: 10px;
+    /* Keep it near the edge of the screen/container */
+}
+
+.sentence-example {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1rem;
 }
