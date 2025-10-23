@@ -48,7 +48,7 @@ function showQuestion() {
         optionsDiv.innerHTML = "";
         resultDiv.textContent = "";
         speakText(currentWord.dutch);
-        speakText(currentWord.dutchsentence);
+        setTimeout(() => speakText(currentWord.dutchsentence), 2000);
 
         const frag = document.createDocumentFragment();
 
