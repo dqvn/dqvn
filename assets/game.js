@@ -39,7 +39,7 @@ function showQuestion() {
 
         titleDiv.textContent = `Dutch word: "${currentWord.dutch}"?`;
         questionDiv.textContent = `[${currentWordIndex + 1}/${maxNumber}] - What is the English meaning of "${currentWord.dutch}"?`;
-        if (sentenceDiv) sentenceDiv.textContent = `Sentence: "${currentWord.dutchsentence}"`;
+        if (sentenceDiv) sentenceDiv.textContent = `${currentWord.dutchsentence}`;
         optionsDiv.innerHTML = "";
         resultDiv.textContent = "";
         speakText(currentWord.dutch);
@@ -102,26 +102,6 @@ function showResult() {
         clearInterval(intervalId);
     }, 3000);
 }
-
-// // Function to get 10 random items from data
-// function getRandomData(listData, count) {
-//     const randomData = [];
-//     const selectedIndices = new Set();
-//     // check if recentGames covered more than count
-//     if (listData.length - recentGames.length < count) {
-//         recentGames = []; // reset the recentGames
-//     }
-
-//     while (randomData.length < count) {
-//         const randomIndex = Math.floor(Math.random() * listData.length);
-//         if (!selectedIndices.has(randomIndex) && !recentGames.includes(listData[randomIndex])) {
-//             randomData.push(listData[randomIndex]);
-//             selectedIndices.add(randomIndex);
-//         }
-//     }
-//     return randomData;
-// }
-
 
 function getRandomData(listData, count) {
   const randomData = [];
