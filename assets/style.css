@@ -601,7 +601,7 @@ button:hover {
 }
 
 .highlighted-row {
-  background-color: #ffeb3b; /* Bright yellow background */
-  color: #000; /* Black text for contrast */
-  font-weight: bold;
+  background-color: #ffeb3b !important; /* Bright yellow background */
+  color: #000 !important; /* Black text for contrast */
+  font-weight: bold !important;
 }
