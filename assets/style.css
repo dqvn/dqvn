@@ -113,7 +113,7 @@ td:last-child {
     cursor: pointer;
     /* change cursor to a hand pointer on hover */
     text-decoration: none;
-    border-bottom: 1px dotted #ccc;
+    /* border-bottom: 1px dotted #ccc; */
     /* dotted underline on hover */
     transition: color 0.2s ease-in-out;
     /* smooth color transition */
@@ -124,7 +124,7 @@ td:last-child {
 .dutch-word:hover {
     color: #003d5c;
     /* darker blue-ish color on hover */
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px dotted #ccc;
     /* solid underline on hover */
 }
 
