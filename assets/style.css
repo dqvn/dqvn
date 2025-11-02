@@ -146,6 +146,8 @@ td:last-child {
 .left-menu {
     float: left;
     width: 160px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, width 0.3s ease;
     padding: 10px;
     /* background-color: #f0f0f0; */
     border: 1px solid #ddd;
@@ -488,15 +490,6 @@ button:hover {
     /* Space between the menu and table */
     position: relative;
     /* Needed for positioning the absolute button */
-}
-
-.left-menu {
-    /* Set an initial width and make sure it doesn't shrink */
-    width: 300px;
-    flex-shrink: 0;
-    transition: transform 0.3s ease, width 0.3s ease;
-    /* Smooth transition */
-    /* ... other existing left-menu styles ... */
 }
 
 .table-container {
