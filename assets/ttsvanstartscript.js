@@ -292,10 +292,10 @@ function spellNextWord() {
   });
   
   // Scroll the row to the top of the screen
-  rowToScrollMain.scrollIntoView({ block: 'start' });
+  rowToScroll.scrollIntoView({ block: 'start' });
   
   // Add highlight to the selected row
-  rowToScroll.classList.add('highlighted-row');
+  rowToScrollMain.classList.add('highlighted-row');
 
   speakText(wordNL);
   // pause 2 seconds
