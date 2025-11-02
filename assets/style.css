@@ -42,9 +42,14 @@ h1 {
 }
 
 .table-container {
+    flex-grow: 1;
+    /* Allows the table to take up the remaining space */
+    transition: width 0.3s ease;
+    /* Smooth transition */
     overflow-y: auto;
     height: 85vh;
     width: calc(100% - 250px);
+    z-index: 10; 
 }
 
 table {
@@ -159,6 +164,7 @@ td:last-child {
     position: sticky;
     top: 0;
     height: fit-content;
+    z-index: 1; 
 }
 
 .left-menu h4 {
@@ -490,14 +496,6 @@ button:hover {
     /* Space between the menu and table */
     position: relative;
     /* Needed for positioning the absolute button */
-}
-
-.table-container {
-    flex-grow: 1;
-    /* Allows the table to take up the remaining space */
-    transition: width 0.3s ease;
-    /* Smooth transition */
-    /* ... other existing table-container styles ... */
 }
 
 /* 🌟 CLASS TO HIDE THE MENU 🌟 */
