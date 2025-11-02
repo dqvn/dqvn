@@ -606,4 +606,5 @@ button:hover {
   font-weight: bold !important;
   height: 100px !important;                         /* Double typical row height */
   line-height: 2 !important;                       /* Optional: improves vertical spacing */
+  opacity: 1 !important;                /* Ensures full visibility */
 }
