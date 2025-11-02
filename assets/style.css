@@ -599,3 +599,9 @@ button:hover {
     outline: 2px solid #667eea;
     outline-offset: 2px;
 }
+
+.highlighted-row {
+  background-color: #ffeb3b; /* Bright yellow background */
+  color: #000; /* Black text for contrast */
+  font-weight: bold;
+}
