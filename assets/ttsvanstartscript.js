@@ -278,6 +278,7 @@ function spellNextWord() {
   const wordEN = wordList[randomIndex].english;
   const sample = wordList[randomIndex].dutchsentence;
   const rowToScroll = tableBody.children[randomIndex - 1];
+  const rowToScrollMain = tableBody.children[randomIndex];
 
   // improving the balance rate of random numbers
   recentNumbers.push(randomIndex);
@@ -285,8 +286,16 @@ function spellNextWord() {
     recentNumbers.shift();
   }
 
+  // Remove highlight from any previously highlighted row
+  Array.from(tableBody.children).forEach(row => {
+    row.classList.remove('highlighted-row');
+  });
+  
   // Scroll the row to the top of the screen
   rowToScroll.scrollIntoView({ block: 'start' });
+  
+  // Add highlight to the selected row
+  rowToScrollMain.classList.add('highlighted-row');
 
   speakText(wordNL);
   // pause 2 seconds
