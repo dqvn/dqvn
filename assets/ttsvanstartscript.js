@@ -1,4 +1,4 @@
-const TTSName = 'Microsoft Colette Online (Natural)'; 
+const TTSName = 'nl-NL-Wavenet-A'; 
 // 'Google Nederlands';
 const TTSLang = 'nl-NL';
 const TTSLangENG = 'en-US';
