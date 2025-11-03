@@ -1,4 +1,5 @@
-const TTSName = 'Google Nederlands';
+const TTSName = 'Microsoft Colette Online (Natural)'; 
+// 'Google Nederlands';
 const TTSLang = 'nl-NL';
 const TTSLangENG = 'en-US';
 const fileNames = ["thema01", "thema02", "thema03", "thema04", "thema05", "thema06", "thema07", "thema08"];
