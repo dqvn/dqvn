@@ -9,7 +9,7 @@ const fileNames = ["ch00", "ch01", "ch03", "ch02", "ch04", "ch05", "ch06", "ch07
   "sw41", "sw42", "sw43", "sw44", "sw45", "sw46", "sw47", "sw48", "sw49", "sw50", 
   "sw51", "sw52", "sz02", "sz03", "sz04", "sz05", "sz06", "sz07", "sz08", "sz09", "sz10", "sz11", "sz12", "sz13", "sz14", "sz15", "sz16", "sz17", "sz18", "sz19"];
 let currentPage = localStorage.getItem('curPage') || fileNames[0];
-const INTERVAL_TIME = 8000;
+const INTERVAL_TIME = 12000;
 
 const GROUP_TITLES = new Map([
   ["ch", "Dutch Class #1"],
@@ -283,7 +283,7 @@ function spellNextWord() {
   const wordNL = wordList[randomIndex].dutch;
   const wordEN = wordList[randomIndex].english;
   const sample = wordList[randomIndex].dutchsentence;
-  const rowToScroll = tableBody.children[randomIndex - 1];
+  const rowToScroll = tableBody.children[randomIndex === 0 ? 0 : randomIndex - 1];
   const rowToScrollMain = tableBody.children[randomIndex];
 
   // improving the balance rate of random numbers

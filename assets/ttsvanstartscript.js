@@ -274,7 +274,7 @@ function spellNextWord() {
   const wordNL = wordList[randomIndex].dutch;
   const wordEN = wordList[randomIndex].english;
   const sample = wordList[randomIndex].dutchsentence;
-  const rowToScroll = tableBody.children[randomIndex - 1];
+  const rowToScroll = tableBody.children[randomIndex === 0 ? 0 : randomIndex - 1];
   const rowToScrollMain = tableBody.children[randomIndex];
 
   // improving the balance rate of random numbers
