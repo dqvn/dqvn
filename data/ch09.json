@@ -1,78 +1,534 @@
 [
-    {"dutch": "aardappelpuree, de", "english": "mashed potatoes, the", "vietnamese": "khoai tây nghiền"},
-    {"dutch": "aardbei, de", "english": "strawberry, the", "vietnamese": "dâu tây"},
-    {"dutch": "achterkant, de", "english": "back, the", "vietnamese": "phía sau"},
-    {"dutch": "afrekenen", "english": "to pay, to settle the bill", "vietnamese": "thanh toán, thanh toán hóa đơn"},
-    {"dutch": "alleen", "english": "alone", "vietnamese": "một mình"},
-    {"dutch": "allemaal", "english": "all / everything", "vietnamese": "tất cả mọi thứ"},
-    {"dutch": "beleefd", "english": "polite", "vietnamese": "lịch sự"},
-    {"dutch": "bestellen", "english": "to order", "vietnamese": "để đặt hàng"},
-    {"dutch": "biefstuk, de", "english": "steak, the", "vietnamese": "bít tết"},
-    {"dutch": "boter, de", "english": "butter, the", "vietnamese": "bơ"},
-    {"dutch": "champignon, de", "english": "mushroom, the", "vietnamese": "nấm"},
-    {"dutch": "chocolademousse, de", "english": "chocolate mousse, the", "vietnamese": "mousse sô cô la"},
-    {"dutch": "echt", "english": "really", "vietnamese": "thực sự"},
-    {"dutch": "eetcafé, het", "english": "pub that serves meals, the", "vietnamese": "quán ăn"},
-    {"dutch": "favoriet", "english": "favourite", "vietnamese": "yêu thích"},
-    {"dutch": "fles, de", "english": "bottle, the", "vietnamese": "chai"},
-    {"dutch": "fooi, de", "english": "tip, the", "vietnamese": "tiền boa"},
-    {"dutch": "friet, de", "english": "French fries, the", "vietnamese": "khoai tây chiên"},
-    {"dutch": "garnaal, de", "english": "shrimp, the", "vietnamese": "tôm"},
-    {"dutch": "gebakken", "english": "baked", "vietnamese": "nướng"},
-    {"dutch": "geitenkaas, de", "english": "goat cheese, the", "vietnamese": "phô mai dê"},
-    {"dutch": "geloven", "english": "to believe", "vietnamese": "tin tưởng"},
-    {"dutch": "gerookt", "english": "smoked", "vietnamese": "hun khói"},
-    {"dutch": "gezond", "english": "healthy", "vietnamese": "lành mạnh"},
-    {"dutch": "hoofdgerecht, het", "english": "main course, the", "vietnamese": "món chính"},
-    {"dutch": "interessant", "english": "interesting", "vietnamese": "thú vị"},
-    {"dutch": "jurk, de", "english": "dress, the", "vietnamese": "váy"},
-    {"dutch": "kaasplankje, het", "english": "assorted cheese, the", "vietnamese": "phô mai hỗn hợp"},
-    {"dutch": "keuze, de", "english": "choice, the", "vietnamese": "sự lựa chọn"},
-    {"dutch": "kip, de", "english": "chicken, the", "vietnamese": "gà"},
-    {"dutch": "klant, de", "english": "customer, the", "vietnamese": "khách hàng"},
-    {"dutch": "kletsen", "english": "to chat", "vietnamese": "tán gẫu"},
-    {"dutch": "kreeft, de", "english": "lobster, the", "vietnamese": "tôm hùm"},
-    {"dutch": "kroket, de", "english": "croquette, the", "vietnamese": "bánh croquette"},
-    {"dutch": "kruidenboter, de", "english": "herb butter, the", "vietnamese": "bơ thảo mộc"},
-    {"dutch": "letten op", "english": "to pay attention", "vietnamese": "chú ý"},
-    {"dutch": "menukaart, de", "english": "menu, the", "vietnamese": "thực đơn"},
-    {"dutch": "nagerecht, het", "english": "dessert, the", "vietnamese": "món tráng miệng"},
-    {"dutch": "ober, de", "english": "waiter, the", "vietnamese": "bồi bàn"},
-    {"dutch": "of zo", "english": "or something like that", "vietnamese": "hoặc gì đó tương tự"},
-    {"dutch": "omdraaien", "english": "to turn", "vietnamese": "quay lại"},
-    {"dutch": "ongezond", "english": "unhealthy", "vietnamese": "không lành mạnh"},
-    {"dutch": "onopvallend", "english": "inconspicuous", "vietnamese": "kín đáo"},
-    {"dutch": "opdracht, de", "english": "assignment, the", "vietnamese": "nhiệm vụ"},
-    {"dutch": "opmaken (zich -)", "english": "to put on make-up", "vietnamese": "trang điểm"},
-    {"dutch": "Parmezaanse kaas, de", "english": "parmesan cheese, the", "vietnamese": "phô mai parmesan"},
-    {"dutch": "pinda, de", "english": "peanut, the", "vietnamese": "đậu phộng"},
-    {"dutch": "plotseling", "english": "suddenly", "vietnamese": "đột ngột"},
-    {"dutch": "prinses, de", "english": "princess, the", "vietnamese": "công chúa"},
-    {"dutch": "pudding, de", "english": "pudding, the", "vietnamese": "bánh pudding"},
-    {"dutch": "rekening, de", "english": "bill, the", "vietnamese": "hóa đơn"},
-    {"dutch": "rest, de", "english": "rest, the", "vietnamese": "phần còn lại"},
-    {"dutch": "roerbakken", "english": "to stir fry", "vietnamese": "xào"},
-    {"dutch": "roomsaus, de", "english": "cream sauce, the", "vietnamese": "sốt kem"},
-    {"dutch": "rundvlees, het", "english": "beef, the", "vietnamese": "thịt bò"},
-    {"dutch": "serveerster, de", "english": "waitress, the", "vietnamese": "nữ bồi bàn"},
-    {"dutch": "slagroom, de", "english": "whipped cream, the", "vietnamese": "kem đánh"},
-    {"dutch": "smaken", "english": "to taste", "vietnamese": "nếm"},
-    {"dutch": "stil", "english": "quiet", "vietnamese": "yên tĩnh"},
-    {"dutch": "taart, de", "english": "pie, cake, the", "vietnamese": "bánh"},
-    {"dutch": "tap, de", "english": "bar, the", "vietnamese": "quầy bar"},
-    {"dutch": "terugweg, de", "english": "way back, the", "vietnamese": "đường về"},
-    {"dutch": "tip, de", "english": "helpful hint, the", "vietnamese": "mẹo hữu ích"},
-    {"dutch": "tomatensoep, de", "english": "tomato soup, the", "vietnamese": "súp cà chua"},
-    {"dutch": "tonijn, de", "english": "tuna, the", "vietnamese": "cá ngừ"},
-    {"dutch": "uit eten gaan", "english": "to go out for dinner", "vietnamese": "đi ăn tối"},
-    {"dutch": "van alles en nog wat", "english": "all sorts of things and more", "vietnamese": "mọi thứ và nhiều hơn nữa"},
-    {"dutch": "varkensvlees, het", "english": "pork, the", "vietnamese": "thịt heo"},
-    {"dutch": "vegetarisch", "english": "vegetarian", "vietnamese": "ăn chay"},
-    {"dutch": "vies", "english": "not tasty / dirty", "vietnamese": "không ngon / bẩn"},
-    {"dutch": "voorgerecht, het", "english": "starter, the", "vietnamese": "món khai vị"},
-    {"dutch": "vrucht, de", "english": "fruit, the", "vietnamese": "trái cây"},
-    {"dutch": "weer", "english": "again", "vietnamese": "lại"},
-    {"dutch": "wens, de", "english": "wish, the", "vietnamese": "mong muốn"},
-    {"dutch": "zalig", "english": "delicious", "vietnamese": "ngon"},
-    {"dutch": "zalm, de", "english": "salmon, the", "vietnamese": "cá hồi"}
+  {
+    "dutch": "aardappelpuree, de",
+    "english": "mashed potatoes, the",
+    "vietnamese": "khoai tây nghiền",
+    "dutchsentence": "Ik heb aardappelpuree als bijgerecht besteld.",
+    "englishtranslate": "I ordered mashed potatoes as a side dish."
+  },
+  {
+    "dutch": "aardbei, de",
+    "english": "strawberry, the",
+    "vietnamese": "dâu tây",
+    "dutchsentence": "De taart met aardbeien is heerlijk.",
+    "englishtranslate": "The cake with strawberries is delicious."
+  },
+  {
+    "dutch": "achterkant, de",
+    "english": "back, the / backside, the",
+    "vietnamese": "phía sau",
+    "dutchsentence": "De ober stond aan de achterkant van de tap.",
+    "englishtranslate": "The waiter was standing at the back of the bar."
+  },
+  {
+    "dutch": "afrekenen",
+    "english": "to pay, to settle the bill",
+    "vietnamese": "thanh toán, thanh toán hóa đơn",
+    "dutchsentence": "Mag ik alstublieft afrekenen?",
+    "englishtranslate": "May I please pay/settle the bill?"
+  },
+  {
+    "dutch": "alleen",
+    "english": "alone",
+    "vietnamese": "một mình",
+    "dutchsentence": "Zij ging alleen uit eten.",
+    "englishtranslate": "She went out for dinner alone."
+  },
+  {
+    "dutch": "allemaal",
+    "english": "all / everything / everyone",
+    "vietnamese": "tất cả mọi thứ",
+    "dutchsentence": "Hadden jullie het allemaal naar je zin?",
+    "englishtranslate": "Did everyone enjoy themselves?"
+  },
+  {
+    "dutch": "beleefd",
+    "english": "polite",
+    "vietnamese": "lịch sự",
+    "dutchsentence": "De serveerster was erg beleefd.",
+    "englishtranslate": "The waitress was very polite."
+  },
+  {
+    "dutch": "bestellen",
+    "english": "to order",
+    "vietnamese": "để đặt hàng",
+    "dutchsentence": "Wat wilt u bestellen als hoofdgerecht?",
+    "englishtranslate": "What would you like to order as a main course?"
+  },
+  {
+    "dutch": "biefstuk, de",
+    "english": "steak, the",
+    "vietnamese": "bít tết",
+    "dutchsentence": "De biefstuk met roomsaus is zalig.",
+    "englishtranslate": "The steak with cream sauce is delicious (wonderful)."
+  },
+  {
+    "dutch": "boter, de",
+    "english": "butter, the",
+    "vietnamese": "bơ",
+    "dutchsentence": "Zou ik wat extra boter mogen?",
+    "englishtranslate": "May I have some extra butter?"
+  },
+  {
+    "dutch": "champignon, de",
+    "english": "mushroom, the",
+    "vietnamese": "nấm",
+    "dutchsentence": "De soep heeft veel champignons.",
+    "englishtranslate": "The soup has many mushrooms."
+  },
+  {
+    "dutch": "chocolademousse, de",
+    "english": "chocolate mousse, the",
+    "vietnamese": "mousse sô cô la",
+    "dutchsentence": "Ik kies de chocolademousse als nagerecht.",
+    "englishtranslate": "I choose the chocolate mousse as dessert."
+  },
+  {
+    "dutch": "echt",
+    "english": "really",
+    "vietnamese": "thực sự",
+    "dutchsentence": "De taart was echt vies.",
+    "englishtranslate": "The cake was really not tasty/dirty."
+  },
+  {
+    "dutch": "eetcafé, het",
+    "english": "pub that serves meals, the / casual restaurant, the",
+    "vietnamese": "quán ăn",
+    "dutchsentence": "We gaan vanavond naar een gezellig eetcafé.",
+    "englishtranslate": "We are going to a cozy pub/casual restaurant tonight."
+  },
+  {
+    "dutch": "favoriet",
+    "english": "favourite",
+    "vietnamese": "yêu thích",
+    "dutchsentence": "Mijn favoriete nagerecht is pudding.",
+    "englishtranslate": "My favourite dessert is pudding."
+  },
+  {
+    "dutch": "fles, de",
+    "english": "bottle, the",
+    "vietnamese": "chai",
+    "dutchsentence": "We bestellen een fles water.",
+    "englishtranslate": "We are ordering a bottle of water."
+  },
+  {
+    "dutch": "fooi, de",
+    "english": "tip, the (money)",
+    "vietnamese": "tiền boa",
+    "dutchsentence": "Laat je een fooi achter voor de ober?",
+    "englishtranslate": "Are you leaving a tip for the waiter?"
+  },
+  {
+    "dutch": "friet, de",
+    "english": "French fries, the (Dutch style)",
+    "vietnamese": "khoai tây chiên",
+    "dutchsentence": "Ik eet mijn biefstuk met friet.",
+    "englishtranslate": "I eat my steak with French fries."
+  },
+  {
+    "dutch": "garnaal, de",
+    "english": "shrimp, the / prawn, the",
+    "vietnamese": "tôm",
+    "dutchsentence": "De garnalen zijn gerookt en erg lekker.",
+    "englishtranslate": "The shrimps are smoked and very tasty."
+  },
+  {
+    "dutch": "gebakken",
+    "english": "baked / fried",
+    "vietnamese": "nướng",
+    "dutchsentence": "De aardappelen zijn lekker gebakken.",
+    "englishtranslate": "The potatoes are nicely baked/fried."
+  },
+  {
+    "dutch": "geitenkaas, de",
+    "english": "goat cheese, the",
+    "vietnamese": "phô mai dê",
+    "dutchsentence": "Ik heb een salade met geitenkaas.",
+    "englishtranslate": "I have a salad with goat cheese."
+  },
+  {
+    "dutch": "geloven",
+    "english": "to believe",
+    "vietnamese": "tin tưởng",
+    "dutchsentence": "Ik kan niet geloven hoe goed het smaakt.",
+    "englishtranslate": "I cannot believe how good it tastes."
+  },
+  {
+    "dutch": "gerookt",
+    "english": "smoked",
+    "vietnamese": "hun khói",
+    "dutchsentence": "Gerookte zalm is mijn favoriete vis.",
+    "englishtranslate": "Smoked salmon is my favourite fish."
+  },
+  {
+    "dutch": "gezond",
+    "english": "healthy",
+    "vietnamese": "lành mạnh",
+    "dutchsentence": "Een maaltijd met groenten is gezond.",
+    "englishtranslate": "A meal with vegetables is healthy."
+  },
+  {
+    "dutch": "hoofdgerecht, het",
+    "english": "main course, the",
+    "vietnamese": "món chính",
+    "dutchsentence": "Het hoofdgerecht is kip met friet.",
+    "englishtranslate": "The main course is chicken with fries."
+  },
+  {
+    "dutch": "interessant",
+    "english": "interesting",
+    "vietnamese": "thú vị",
+    "dutchsentence": "De menukaart heeft interessante keuzes.",
+    "englishtranslate": "The menu has interesting choices."
+  },
+  {
+    "dutch": "jurk, de",
+    "english": "dress, the",
+    "vietnamese": "váy",
+    "dutchsentence": "Zij draagt een mooie jurk in het restaurant.",
+    "englishtranslate": "She is wearing a beautiful dress in the restaurant."
+  },
+  {
+    "dutch": "kaasplankje, het",
+    "english": "assorted cheese, the / cheese board, the",
+    "vietnamese": "phô mai hỗn hợp",
+    "dutchsentence": "We bestellen het kaasplankje als afsluiter.",
+    "englishtranslate": "We are ordering the cheese board as a finish."
+  },
+  {
+    "dutch": "keuze, de",
+    "english": "choice, the",
+    "vietnamese": "sự lựa chọn",
+    "dutchsentence": "Er is veel keuze op de menukaart.",
+    "englishtranslate": "There is a lot of choice on the menu."
+  },
+  {
+    "dutch": "kip, de",
+    "english": "chicken, the",
+    "vietnamese": "gà",
+    "dutchsentence": "De kip is roergebakken met groenten.",
+    "englishtranslate": "The chicken is stir-fried with vegetables."
+  },
+  {
+    "dutch": "klant, de",
+    "english": "customer, the",
+    "vietnamese": "khách hàng",
+    "dutchsentence": "De klant vraagt naar de rekening.",
+    "englishtranslate": "The customer asks for the bill."
+  },
+  {
+    "dutch": "kletsen",
+    "english": "to chat",
+    "vietnamese": "tán gẫu",
+    "dutchsentence": "We zaten uren gezellig te kletsen.",
+    "englishtranslate": "We were chatting cozily for hours."
+  },
+  {
+    "dutch": "kreeft, de",
+    "english": "lobster, the",
+    "vietnamese": "tôm hùm",
+    "dutchsentence": "Kreeft is erg duur, maar lekker.",
+    "englishtranslate": "Lobster is very expensive, but tasty."
+  },
+  {
+    "dutch": "kroket, de",
+    "english": "croquette, the",
+    "vietnamese": "bánh croquette",
+    "dutchsentence": "Een kroket is een typisch Nederlands tussendoortje.",
+    "englishtranslate": "A croquette is a typical Dutch snack."
+  },
+  {
+    "dutch": "kruidenboter, de",
+    "english": "herb butter, the",
+    "vietnamese": "bơ thảo mộc",
+    "dutchsentence": "Eet je brood met kruidenboter.",
+    "englishtranslate": "Eat your bread with herb butter."
+  },
+  {
+    "dutch": "letten op",
+    "english": "to pay attention",
+    "vietnamese": "chú ý",
+    "dutchsentence": "U moet goed letten op de allergenen.",
+    "englishtranslate": "You must pay close attention to the allergens."
+  },
+  {
+    "dutch": "menukaart, de",
+    "english": "menu, the",
+    "vietnamese": "thực đơn",
+    "dutchsentence": "De menukaart ligt op de tafel.",
+    "englishtranslate": "The menu is on the table."
+  },
+  {
+    "dutch": "nagerecht, het",
+    "english": "dessert, the",
+    "vietnamese": "món tráng miệng",
+    "dutchsentence": "Wat is het nagerecht van de dag?",
+    "englishtranslate": "What is the dessert of the day?"
+  },
+  {
+    "dutch": "ober, de",
+    "english": "waiter, the",
+    "vietnamese": "bồi bàn",
+    "dutchsentence": "We wenken de ober voor de rekening.",
+    "englishtranslate": "We wave to the waiter for the bill."
+  },
+  {
+    "dutch": "of zo",
+    "english": "or something like that",
+    "vietnamese": "hoặc gì đó tương tự",
+    "dutchsentence": "Wil je een biefstuk of zo?",
+    "englishtranslate": "Do you want a steak or something like that?"
+  },
+  {
+    "dutch": "omdraaien",
+    "english": "to turn (around)",
+    "vietnamese": "quay lại",
+    "dutchsentence": "Je moet de menukaart omdraaien voor de nagerechten.",
+    "englishtranslate": "You need to turn the menu (over) for the desserts."
+  },
+  {
+    "dutch": "ongezond",
+    "english": "unhealthy",
+    "vietnamese": "không lành mạnh",
+    "dutchsentence": "Friet eten is ongezond, maar lekker.",
+    "englishtranslate": "Eating fries is unhealthy, but tasty."
+  },
+  {
+    "dutch": "onopvallend",
+    "english": "inconspicuous / subtle",
+    "vietnamese": "kín đáo",
+    "dutchsentence": "Hij probeerde onopvallend de serveerster te roepen.",
+    "englishtranslate": "He tried to call the waitress inconspicuously/subtly."
+  },
+  {
+    "dutch": "opdracht, de",
+    "english": "assignment, the / task, the",
+    "vietnamese": "nhiệm vụ",
+    "dutchsentence": "Het was een lastige opdracht om alleen uit eten te gaan.",
+    "englishtranslate": "It was a difficult assignment to go out for dinner alone."
+  },
+  {
+    "dutch": "opmaken (zich -)",
+    "english": "to put on make-up",
+    "vietnamese": "trang điểm",
+    "dutchsentence": "Ze maakte zich op voor het etentje.",
+    "englishtranslate": "She put on make-up for the dinner."
+  },
+  {
+    "dutch": "Parmezaanse kaas, de",
+    "english": "parmesan cheese, the",
+    "vietnamese": "phô mai parmesan",
+    "dutchsentence": "De pasta is met Parmezaanse kaas.",
+    "englishtranslate": "The pasta is with Parmesan cheese."
+  },
+  {
+    "dutch": "pinda, de",
+    "english": "peanut, the",
+    "vietnamese": "đậu phộng",
+    "dutchsentence": "Ik ben allergisch voor pinda's.",
+    "englishtranslate": "I am allergic to peanuts."
+  },
+  {
+    "dutch": "plotseling",
+    "english": "suddenly",
+    "vietnamese": "đột ngột",
+    "dutchsentence": "Plotseling ging de muziek aan.",
+    "englishtranslate": "Suddenly the music turned on."
+  },
+  {
+    "dutch": "prinses, de",
+    "english": "princess, the",
+    "vietnamese": "công chúa",
+    "dutchsentence": "Ze voelde zich een prinses in haar nieuwe jurk.",
+    "englishtranslate": "She felt like a princess in her new dress."
+  },
+  {
+    "dutch": "pudding, de",
+    "english": "pudding, the",
+    "vietnamese": "bánh pudding",
+    "dutchsentence": "De pudding is met slagroom.",
+    "englishtranslate": "The pudding is with whipped cream."
+  },
+  {
+    "dutch": "rekening, de",
+    "english": "bill, the",
+    "vietnamese": "hóa đơn",
+    "dutchsentence": "De rekening was hoger dan verwacht.",
+    "englishtranslate": "The bill was higher than expected."
+  },
+  {
+    "dutch": "rest, de",
+    "english": "rest, the (remainder)",
+    "vietnamese": "phần còn lại",
+    "dutchsentence": "De ober mag de rest van de fooi houden.",
+    "englishtranslate": "The waiter may keep the rest of the tip."
+  },
+  {
+    "dutch": "roerbakken",
+    "english": "to stir fry",
+    "vietnamese": "xào",
+    "dutchsentence": "Wij roerbakken meestal varkensvlees.",
+    "englishtranslate": "We usually stir fry pork."
+  },
+  {
+    "dutch": "roomsaus, de",
+    "english": "cream sauce, the",
+    "vietnamese": "sốt kem",
+    "dutchsentence": "De roomsaus past goed bij de biefstuk.",
+    "englishtranslate": "The cream sauce goes well with the steak."
+  },
+  {
+    "dutch": "rundvlees, het",
+    "english": "beef, the",
+    "vietnamese": "thịt bò",
+    "dutchsentence": "Rundvlees is rood vlees.",
+    "englishtranslate": "Beef is red meat."
+  },
+  {
+    "dutch": "serveerster, de",
+    "english": "waitress, the",
+    "vietnamese": "nữ bồi bàn",
+    "dutchsentence": "De serveerster nam de bestelling op.",
+    "englishtranslate": "The waitress took the order."
+  },
+  {
+    "dutch": "slagroom, de",
+    "english": "whipped cream, the",
+    "vietnamese": "kem đánh",
+    "dutchsentence": "Mag ik slagroom bij mijn chocolademousse?",
+    "englishtranslate": "May I have whipped cream with my chocolate mousse?"
+  },
+  {
+    "dutch": "smaken",
+    "english": "to taste",
+    "vietnamese": "nếm",
+    "dutchsentence": "Het eten smaakte erg goed.",
+    "englishtranslate": "The food tasted very good."
+  },
+  {
+    "dutch": "stil",
+    "english": "quiet",
+    "vietnamese": "yên tĩnh",
+    "dutchsentence": "Het was stil in het restaurant.",
+    "englishtranslate": "It was quiet in the restaurant."
+  },
+  {
+    "dutch": "taart, de",
+    "english": "pie, cake, the",
+    "vietnamese": "bánh",
+    "dutchsentence": "Ik heb nog een stuk taart over.",
+    "englishtranslate": "I still have a piece of cake left."
+  },
+  {
+    "dutch": "tap, de",
+    "english": "bar, the (where drinks are served)",
+    "vietnamese": "quầy bar",
+    "dutchsentence": "Ik bestel mijn drankje direct aan de tap.",
+    "englishtranslate": "I order my drink directly at the bar."
+  },
+  {
+    "dutch": "terugweg, de",
+    "english": "way back, the",
+    "vietnamese": "đường về",
+    "dutchsentence": "Op de terugweg kletsten we over het eten.",
+    "englishtranslate": "On the way back we chatted about the food."
+  },
+  {
+    "dutch": "tip, de",
+    "english": "helpful hint, the",
+    "vietnamese": "mẹo hữu ích",
+    "dutchsentence": "De serveerster gaf ons een goede tip.",
+    "englishtranslate": "The waitress gave us a good helpful hint."
+  },
+  {
+    "dutch": "tomatensoep, de",
+    "english": "tomato soup, the",
+    "vietnamese": "súp cà chua",
+    "dutchsentence": "Tomatensoep is een goed voorgerecht.",
+    "englishtranslate": "Tomato soup is a good starter."
+  },
+  {
+    "dutch": "tonijn, de",
+    "english": "tuna, the",
+    "vietnamese": "cá ngừ",
+    "dutchsentence": "De salade is met tonijn en olijven.",
+    "englishtranslate": "The salad is with tuna and olives."
+  },
+  {
+    "dutch": "uit eten gaan",
+    "english": "to go out for dinner",
+    "vietnamese": "đi ăn tối",
+    "dutchsentence": "We gaan volgende week weer uit eten.",
+    "englishtranslate": "We are going out for dinner again next week."
+  },
+  {
+    "dutch": "van alles en nog wat",
+    "english": "all sorts of things and more",
+    "vietnamese": "mọi thứ và nhiều hơn nữa",
+    "dutchsentence": "We bestelden van alles en nog wat van de kaart.",
+    "englishtranslate": "We ordered all sorts of things and more from the menu."
+  },
+  {
+    "dutch": "varkensvlees, het",
+    "english": "pork, the",
+    "vietnamese": "thịt heo",
+    "dutchsentence": "Ik eet liever rundvlees dan varkensvlees.",
+    "englishtranslate": "I prefer eating beef over pork."
+  },
+  {
+    "dutch": "vegetarisch",
+    "english": "vegetarian",
+    "vietnamese": "ăn chay",
+    "dutchsentence": "Is dit hoofdgerecht vegetarisch?",
+    "englishtranslate": "Is this main course vegetarian?"
+  },
+  {
+    "dutch": "vies",
+    "english": "not tasty / dirty",
+    "vietnamese": "không ngon / bẩn",
+    "dutchsentence": "De tafel was vies, maar het eten was goed.",
+    "englishtranslate": "The table was dirty, but the food was good."
+  },
+  {
+    "dutch": "voorgerecht, het",
+    "english": "starter, the / appetizer, the",
+    "vietnamese": "món khai vị",
+    "dutchsentence": "De tomatensoep is het voorgerecht.",
+    "englishtranslate": "The tomato soup is the starter/appetizer."
+  },
+  {
+    "dutch": "vrucht, de",
+    "english": "fruit, the",
+    "vietnamese": "trái cây",
+    "dutchsentence": "Aardbeien zijn mijn favoriete vrucht.",
+    "englishtranslate": "Strawberries are my favourite fruit."
+  },
+  {
+    "dutch": "weer",
+    "english": "again",
+    "vietnamese": "lại",
+    "dutchsentence": "Gaan we weer uit eten bij dat eetcafé?",
+    "englishtranslate": "Are we going out for dinner again at that pub/restaurant?"
+  },
+  {
+    "dutch": "wens, de",
+    "english": "wish, the",
+    "vietnamese": "mong muốn",
+    "dutchsentence": "Wat is uw grootste wens voor het nagerecht?",
+    "englishtranslate": "What is your biggest wish for the dessert?"
+  },
+  {
+    "dutch": "zalig",
+    "english": "delicious / wonderful",
+    "vietnamese": "ngon",
+    "dutchsentence": "De chocolademousse was zalig.",
+    "englishtranslate": "The chocolate mousse was delicious/wonderful."
+  },
+  {
+    "dutch": "zalm, de",
+    "english": "salmon, the",
+    "vietnamese": "cá hồi",
+    "dutchsentence": "De gerookte zalm is het voorgerecht.",
+    "englishtranslate": "The smoked salmon is the starter."
+  }
 ]

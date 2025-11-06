@@ -1,113 +1,779 @@
 [
-    {"dutch": "aankomen", "english": "to arrive", "vietnamese": "đến nơi"},
-    {"dutch": "aankomsttijd, de", "english": "arrival time, the", "vietnamese": "thời gian đến"},
-    {"dutch": "aanstaande", "english": "coming", "vietnamese": "sắp tới"},
-    {"dutch": "als", "english": "when / as / if", "vietnamese": "khi / như / nếu"},
-    {"dutch": "bad, het", "english": "bath, the", "vietnamese": "bồn tắm"},
-    {"dutch": "bedoelen", "english": "to mean", "vietnamese": "có nghĩa là"},
-    {"dutch": "bedrag, het", "english": "amount, the", "vietnamese": "số tiền"},
-    {"dutch": "beeldscherm, het", "english": "screen, the", "vietnamese": "màn hình"},
-    {"dutch": "bellen", "english": "to call (on the phone)", "vietnamese": "gọi điện thoại"},
-    {"dutch": "betaalpas, de", "english": "bank card, the", "vietnamese": "thẻ ngân hàng"},
-    {"dutch": "bezoek, het", "english": "visit, the", "vietnamese": "chuyến thăm"},
-    {"dutch": "bushalte, de", "english": "bus stop, the", "vietnamese": "trạm xe buýt"},
-    {"dutch": "centrum, het", "english": "centre, the", "vietnamese": "trung tâm"},
-    {"dutch": "chauffeur, de", "english": "driver, the", "vietnamese": "tài xế"},
-    {"dutch": "conducteur, de", "english": "driver, the", "vietnamese": "tài xế"},
-    {"dutch": "contant", "english": "cash", "vietnamese": "tiền mặt"},
-    {"dutch": "dicht bij", "english": "close to", "vietnamese": "gần"},
-    {"dutch": "duren", "english": "to take / to last for", "vietnamese": "mất / kéo dài"},
-    {"dutch": "duur", "english": "expensive", "vietnamese": "đắt"},
-    {"dutch": "eerst", "english": "first", "vietnamese": "đầu tiên"},
-    {"dutch": "eigenlijk", "english": "actually", "vietnamese": "thực ra"},
-    {"dutch": "enkeltje, het", "english": "single ticket, the", "vietnamese": "vé một chiều"},
-    {"dutch": "geen dank", "english": "don’t mention it", "vietnamese": "không có gì"},
-    {"dutch": "geld, het", "english": "money, the", "vietnamese": "tiền"},
-    {"dutch": "goedemorgen", "english": "good morning", "vietnamese": "chào buổi sáng"},
-    {"dutch": "honger hebben", "english": "to be hungry", "vietnamese": "đói"},
-    {"dutch": "honger, de", "english": "hunger, the", "vietnamese": "cơn đói"},
-    {"dutch": "horen", "english": "to hear", "vietnamese": "nghe"},
-    {"dutch": "hotel, het", "english": "hotel, the", "vietnamese": "khách sạn"},
-    {"dutch": "houden", "english": "to hold", "vietnamese": "giữ"},
-    {"dutch": "inchecken", "english": "to check in", "vietnamese": "làm thủ tục"},
-    {"dutch": "informatie, de", "english": "information, the", "vietnamese": "thông tin"},
-    {"dutch": "inpakken", "english": "to pack", "vietnamese": "đóng gói"},
-    {"dutch": "instappen", "english": "to get in", "vietnamese": "lên xe"},
-    {"dutch": "insteken", "english": "to put in", "vietnamese": "đưa vào"},
-    {"dutch": "instructie, de", "english": "instructions, the", "vietnamese": "hướng dẫn"},
-    {"dutch": "invoeren", "english": "to enter", "vietnamese": "nhập vào"},
-    {"dutch": "kaartlezer, de", "english": "card reader, the", "vietnamese": "đầu đọc thẻ"},
-    {"dutch": "kamer, de", "english": "room, the", "vietnamese": "phòng"},
-    {"dutch": "kapot", "english": "broken", "vietnamese": "hỏng"},
-    {"dutch": "knippen", "english": "to cut", "vietnamese": "cắt"},
-    {"dutch": "koffer, de", "english": "suitcase, the", "vietnamese": "vali"},
-    {"dutch": "kwam (komen)", "english": "came (to come)", "vietnamese": "đã đến (đến)"},
-    {"dutch": "korting, de", "english": "discount, the", "vietnamese": "giảm giá"},
-    {"dutch": "kwijt", "english": "lost", "vietnamese": "mất"},
-    {"dutch": "leggen", "english": "to lay", "vietnamese": "đặt"},
-    {"dutch": "kiezen", "english": "to choose", "vietnamese": "chọn"},
-    {"dutch": "luxe", "english": "luxurious", "vietnamese": "sang trọng"},
-    {"dutch": "makkelijk", "english": "easy", "vietnamese": "dễ dàng"},
-    {"dutch": "medewerker, de", "english": "employee, the", "vietnamese": "nhân viên"},
-    {"dutch": "medewerker reisbureau, de", "english": "travel agent, the", "vietnamese": "đại lý du lịch"},
-    {"dutch": "missen", "english": "to miss", "vietnamese": "bỏ lỡ"},
-    {"dutch": "normaal", "english": "usually", "vietnamese": "thường"},
-    {"dutch": "noteren", "english": "to note down", "vietnamese": "ghi chú"},
-    {"dutch": "omdat", "english": "because", "vietnamese": "bởi vì"},
-    {"dutch": "onder", "english": "under", "vietnamese": "dưới"},
-    {"dutch": "ophalen", "english": "to pick up / to fetch", "vietnamese": "đón / lấy"},
-    {"dutch": "opladen", "english": "to upload", "vietnamese": "tải lên"},
-    {"dutch": "oplossing, de", "english": "solution, the", "vietnamese": "giải pháp"},
-    {"dutch": "overstappen", "english": "to change", "vietnamese": "đổi"},
-    {"dutch": "ov-chipkaart, de", "english": "public transport card, the", "vietnamese": "thẻ giao thông công cộng"},
-    {"dutch": "perron, het", "english": "platform, the", "vietnamese": "sân ga"},
-    {"dutch": "plannen", "english": "to plan", "vietnamese": "lên kế hoạch"},
-    {"dutch": "plezier, het", "english": "fun, the", "vietnamese": "niềm vui"},
-    {"dutch": "postkantoor, het", "english": "post office, the", "vietnamese": "bưu điện"},
-    {"dutch": "probleem, het", "english": "problem, the", "vietnamese": "vấn đề"},
-    {"dutch": "reis, de", "english": "trip, the", "vietnamese": "chuyến đi"},
-    {"dutch": "reisbureau, het", "english": "travel agency", "vietnamese": "công ty du lịch"},
-    {"dutch": "reiziger, de", "english": "passenger, the", "vietnamese": "hành khách"},
-    {"dutch": "reserveren", "english": "to make a reservation", "vietnamese": "đặt chỗ"},
-    {"dutch": "retourtje, het", "english": "return ticket, the", "vietnamese": "vé khứ hồi"},
-    {"dutch": "schrikken", "english": "to be startled", "vietnamese": "giật mình"},
-    {"dutch": "schoof (schuiven)", "english": "shoved (to shove, to move)", "vietnamese": "bị xô đẩy (để xô đẩy, để di chuyển)"},
-    {"dutch": "selecteren", "english": "to select", "vietnamese": "để chọn"},
-    {"dutch": "snappen", "english": "to understand", "vietnamese": "để hiểu"},
-    {"dutch": "spoor, het", "english": "track, the", "vietnamese": "đường ray"},
-    {"dutch": "station, het", "english": "station, the", "vietnamese": "trạm"},
-    {"dutch": "stoel, de", "english": "chair, the", "vietnamese": "ghế"},
-    {"dutch": "tafel, de", "english": "table, the", "vietnamese": "bàn"},
-    {"dutch": "taxi, de", "english": "taxi, the", "vietnamese": "xe tắc xi"},
-    {"dutch": "tegenover", "english": "across from", "vietnamese": "đối diện với"},
-    {"dutch": "telefoon, de", "english": "telephone, the", "vietnamese": "điện thoại"},
-    {"dutch": "terug", "english": "back", "vietnamese": "trở lại"},
-    {"dutch": "toilet, het", "english": "toilet, the", "vietnamese": "nhà vệ sinh"},
-    {"dutch": "tot slot", "english": "finally", "vietnamese": "cuối cùng"},
-    {"dutch": "trein, de", "english": "train, the", "vietnamese": "tàu hỏa"},
-    {"dutch": "treinkaartje, het", "english": "train ticket, the", "vietnamese": "vé tàu"},
-    {"dutch": "tweepersoons", "english": "two persons", "vietnamese": "hai người"},
-    {"dutch": "uitchecken", "english": "to check out", "vietnamese": "trả phòng"},
-    {"dutch": "uitnemen", "english": "to take out", "vietnamese": "lấy ra"},
-    {"dutch": "uitstappen", "english": "to get out", "vietnamese": "ra ngoài"},
-    {"dutch": "vaak", "english": "often", "vietnamese": "thường xuyên"},
-    {"dutch": "vandaag", "english": "today", "vietnamese": "hôm nay"},
-    {"dutch": "verder", "english": "then / further", "vietnamese": "sau đó / thêm nữa"},
-    {"dutch": "vertraging, de", "english": "delay, the", "vietnamese": "sự chậm trễ"},
-    {"dutch": "vertrekken", "english": "to leave", "vietnamese": "rời đi"},
-    {"dutch": "vertrektijd, de", "english": "departure time, the", "vietnamese": "thời gian khởi hành"},
-    {"dutch": "vervolgens", "english": "next", "vietnamese": "tiếp theo"},
-    {"dutch": "vliegen", "english": "to fly", "vietnamese": "bay"},
-    {"dutch": "vliegtuig, het", "english": "airplane, the", "vietnamese": "máy bay"},
-    {"dutch": "vol", "english": "full", "vietnamese": "đầy"},
-    {"dutch": "volgen", "english": "to follow", "vietnamese": "theo dõi"},
-    {"dutch": "volgend", "english": "next", "vietnamese": "tiếp theo"},
-    {"dutch": "waarom", "english": "why", "vietnamese": "tại sao"},
-    {"dutch": "wachten", "english": "to wait", "vietnamese": "chờ đợi"},
-    {"dutch": "wc, de", "english": "toilet, the", "vietnamese": "nhà vệ sinh"},
-    {"dutch": "weleens", "english": "ever", "vietnamese": "bao giờ"},
-    {"dutch": "weten", "english": "to know", "vietnamese": "biết"},
-    {"dutch": "zetten", "english": "to put", "vietnamese": "đặt"},
-    {"dutch": "zat (zitten)", "english": "sat (to sit)", "vietnamese": "ngồi (ngồi)"},
-    {"dutch": "zonder", "english": "without", "vietnamese": "không có"}
+  {
+    "dutch": "aankomen",
+    "english": "to arrive",
+    "vietnamese": "đến nơi",
+    "dutchsentence": "Wanneer zal de trein in Rotterdam aankomen?",
+    "englishtranslate": "When will the train arrive in Rotterdam?"
+  },
+  {
+    "dutch": "aankomsttijd, de",
+    "english": "arrival time, the",
+    "vietnamese": "thời gian đến",
+    "dutchsentence": "Kunt u mij de aankomsttijd geven?",
+    "englishtranslate": "Can you give me the arrival time?"
+  },
+  {
+    "dutch": "aanstaande",
+    "english": "coming (next)",
+    "vietnamese": "sắp tới",
+    "dutchsentence": "Aanstaande vrijdag gaan we naar Amsterdam.",
+    "englishtranslate": "Next Friday we are going to Amsterdam."
+  },
+  {
+    "dutch": "als",
+    "english": "when / as / if",
+    "vietnamese": "khi / như / nếu",
+    "dutchsentence": "Bel me als je bent aangekomen.",
+    "englishtranslate": "Call me when you have arrived."
+  },
+  {
+    "dutch": "bad, het",
+    "english": "bath, the",
+    "vietnamese": "bồn tắm",
+    "dutchsentence": "De hotelkamer heeft een bad.",
+    "englishtranslate": "The hotel room has a bath."
+  },
+  {
+    "dutch": "bedoelen",
+    "english": "to mean",
+    "vietnamese": "có nghĩa là",
+    "dutchsentence": "Wat bedoel je precies?",
+    "englishtranslate": "What exactly do you mean?"
+  },
+  {
+    "dutch": "bedrag, het",
+    "english": "amount, the",
+    "vietnamese": "số tiền",
+    "dutchsentence": "Voer het bedrag in dat u wilt pinnen.",
+    "englishtranslate": "Enter the amount you wish to pay by card."
+  },
+  {
+    "dutch": "beeldscherm, het",
+    "english": "screen, the",
+    "vietnamese": "màn hình",
+    "dutchsentence": "Kijk naar het beeldscherm voor de vertrektijden.",
+    "englishtranslate": "Look at the screen for the departure times."
+  },
+  {
+    "dutch": "bellen",
+    "english": "to call (on the phone)",
+    "vietnamese": "gọi điện thoại",
+    "dutchsentence": "Ik zal je vanavond bellen.",
+    "englishtranslate": "I will call you tonight."
+  },
+  {
+    "dutch": "betaalpas, de",
+    "english": "bank card, the / debit card, the",
+    "vietnamese": "thẻ ngân hàng",
+    "dutchsentence": "U kunt betalen met een betaalpas.",
+    "englishtranslate": "You can pay with a bank card."
+  },
+  {
+    "dutch": "bezoek, het",
+    "english": "visit, the",
+    "vietnamese": "chuyến thăm",
+    "dutchsentence": "Mijn bezoek aan het museum was kort.",
+    "englishtranslate": "My visit to the museum was short."
+  },
+  {
+    "dutch": "bushalte, de",
+    "english": "bus stop, the",
+    "vietnamese": "trạm xe buýt",
+    "dutchsentence": "De bushalte is dicht bij het hotel.",
+    "englishtranslate": "The bus stop is close to the hotel."
+  },
+  {
+    "dutch": "centrum, het",
+    "english": "centre, the / downtown, the",
+    "vietnamese": "trung tâm",
+    "dutchsentence": "De bus rijdt naar het centrum van de stad.",
+    "englishtranslate": "The bus goes to the city centre."
+  },
+  {
+    "dutch": "chauffeur, de",
+    "english": "driver, the",
+    "vietnamese": "tài xế",
+    "dutchsentence": "De buschauffeur was erg vriendelijk.",
+    "englishtranslate": "The bus driver was very friendly."
+  },
+  {
+    "dutch": "conducteur, de",
+    "english": "conductor, the (for trains/trams)",
+    "vietnamese": "tài xế",
+    "dutchsentence": "De conducteur controleert de treinkaartjes.",
+    "englishtranslate": "The conductor checks the train tickets."
+  },
+  {
+    "dutch": "contant",
+    "english": "cash",
+    "vietnamese": "tiền mặt",
+    "dutchsentence": "Ik heb niet genoeg contant geld bij me.",
+    "englishtranslate": "I don't have enough cash with me."
+  },
+  {
+    "dutch": "dicht bij",
+    "english": "close to",
+    "vietnamese": "gần",
+    "dutchsentence": "Woon je dicht bij het station?",
+    "englishtranslate": "Do you live close to the station?"
+  },
+  {
+    "dutch": "duren",
+    "english": "to take / to last for",
+    "vietnamese": "mất / kéo dài",
+    "dutchsentence": "Hoe lang zal de reis duren?",
+    "englishtranslate": "How long will the trip take/last?"
+  },
+  {
+    "dutch": "duur",
+    "english": "expensive",
+    "vietnamese": "đắt",
+    "dutchsentence": "Dat hotel is te duur voor ons.",
+    "englishtranslate": "That hotel is too expensive for us."
+  },
+  {
+    "dutch": "eerst",
+    "english": "first",
+    "vietnamese": "đầu tiên",
+    "dutchsentence": "U moet eerst uw kaart inchecken.",
+    "englishtranslate": "You must check in your card first."
+  },
+  {
+    "dutch": "eigenlijk",
+    "english": "actually",
+    "vietnamese": "thực ra",
+    "dutchsentence": "Eigenlijk had ik geen honger.",
+    "englishtranslate": "Actually, I wasn't hungry."
+  },
+  {
+    "dutch": "enkeltje, het",
+    "english": "single ticket, the / one-way ticket, the",
+    "vietnamese": "vé một chiều",
+    "dutchsentence": "Ik wil graag een enkeltje naar Utrecht.",
+    "englishtranslate": "I would like a single ticket to Utrecht."
+  },
+  {
+    "dutch": "geen dank",
+    "english": "don’t mention it / you're welcome",
+    "vietnamese": "không có gì",
+    "dutchsentence": "Dank je wel voor de hulp! — Geen dank.",
+    "englishtranslate": "Thank you for the help! — You're welcome/Don't mention it."
+  },
+  {
+    "dutch": "geld, het",
+    "english": "money, the",
+    "vietnamese": "tiền",
+    "dutchsentence": "Heeft u genoeg geld meegebracht?",
+    "englishtranslate": "Did you bring enough money?"
+  },
+  {
+    "dutch": "goedemorgen",
+    "english": "good morning",
+    "vietnamese": "chào buổi sáng",
+    "dutchsentence": "Goedemorgen, kan ik u helpen?",
+    "englishtranslate": "Good morning, can I help you?"
+  },
+  {
+    "dutch": "honger hebben",
+    "english": "to be hungry",
+    "vietnamese": "đói",
+    "dutchsentence": "Ik heb enorme honger na de reis.",
+    "englishtranslate": "I am terribly hungry after the trip."
+  },
+  {
+    "dutch": "honger, de",
+    "english": "hunger, the",
+    "vietnamese": "cơn đói",
+    "dutchsentence": "Mijn honger is verdwenen.",
+    "englishtranslate": "My hunger has disappeared."
+  },
+  {
+    "dutch": "horen",
+    "english": "to hear",
+    "vietnamese": "nghe",
+    "dutchsentence": "Ik hoor de trein aankomen.",
+    "englishtranslate": "I hear the train arriving."
+  },
+  {
+    "dutch": "hotel, het",
+    "english": "hotel, the",
+    "vietnamese": "khách sạn",
+    "dutchsentence": "We verblijven in een luxe hotel.",
+    "englishtranslate": "We are staying in a luxurious hotel."
+  },
+  {
+    "dutch": "houden",
+    "english": "to hold / to keep",
+    "vietnamese": "giữ",
+    "dutchsentence": "U moet uw ticket goed houden.",
+    "englishtranslate": "You must keep your ticket safe."
+  },
+  {
+    "dutch": "inchecken",
+    "english": "to check in (transport/hotel)",
+    "vietnamese": "làm thủ tục",
+    "dutchsentence": "Vergeet niet in te checken bij de poortjes.",
+    "englishtranslate": "Don't forget to check in at the gates."
+  },
+  {
+    "dutch": "informatie, de",
+    "english": "information, the",
+    "vietnamese": "thông tin",
+    "dutchsentence": "Waar kan ik informatie over de vertraging krijgen?",
+    "englishtranslate": "Where can I get information about the delay?"
+  },
+  {
+    "dutch": "inpakken",
+    "english": "to pack",
+    "vietnamese": "đóng gói",
+    "dutchsentence": "Ik moet mijn koffer nog inpakken.",
+    "englishtranslate": "I still need to pack my suitcase."
+  },
+  {
+    "dutch": "instappen",
+    "english": "to get in / to board",
+    "vietnamese": "lên xe",
+    "dutchsentence": "De trein staat klaar, u kunt instappen.",
+    "englishtranslate": "The train is ready, you can board/get in."
+  },
+  {
+    "dutch": "insteken",
+    "english": "to put in / to insert",
+    "vietnamese": "đưa vào",
+    "dutchsentence": "U moet uw kaart in de kaartlezer insteken.",
+    "englishtranslate": "You must insert your card into the card reader."
+  },
+  {
+    "dutch": "instructie, de",
+    "english": "instructions, the",
+    "vietnamese": "hướng dẫn",
+    "dutchsentence": "Volg de instructies op het beeldscherm.",
+    "englishtranslate": "Follow the instructions on the screen."
+  },
+  {
+    "dutch": "invoeren",
+    "english": "to enter",
+    "vietnamese": "nhập vào",
+    "dutchsentence": "U moet de pincode invoeren.",
+    "englishtranslate": "You must enter the PIN code."
+  },
+  {
+    "dutch": "kaartlezer, de",
+    "english": "card reader, the",
+    "vietnamese": "đầu đọc thẻ",
+    "dutchsentence": "De kaartlezer is kapot.",
+    "englishtranslate": "The card reader is broken."
+  },
+  {
+    "dutch": "kamer, de",
+    "english": "room, the",
+    "vietnamese": "phòng",
+    "dutchsentence": "We hebben kamer 103 gereserveerd.",
+    "englishtranslate": "We reserved room 103."
+  },
+  {
+    "dutch": "kapot",
+    "english": "broken",
+    "vietnamese": "hỏng",
+    "dutchsentence": "De lift is helaas kapot.",
+    "englishtranslate": "Unfortunately, the elevator is broken."
+  },
+  {
+    "dutch": "knippen",
+    "english": "to cut (ticket/hair)",
+    "vietnamese": "cắt",
+    "dutchsentence": "De conducteur knipte mijn treinkaartje.",
+    "englishtranslate": "The conductor cut/clipped my train ticket."
+  },
+  {
+    "dutch": "koffer, de",
+    "english": "suitcase, the",
+    "vietnamese": "vali",
+    "dutchsentence": "Mijn koffer is erg zwaar.",
+    "englishtranslate": "My suitcase is very heavy."
+  },
+  {
+    "dutch": "kwam (komen)",
+    "english": "came (to come)",
+    "vietnamese": "đã đến (đến)",
+    "dutchsentence": "Hij kwam gisteren bij mij op bezoek.",
+    "englishtranslate": "He came to visit me yesterday."
+  },
+  {
+    "dutch": "korting, de",
+    "english": "discount, the",
+    "vietnamese": "giảm giá",
+    "dutchsentence": "Heeft u recht op korting?",
+    "englishtranslate": "Are you entitled to a discount?"
+  },
+  {
+    "dutch": "kwijt",
+    "english": "lost",
+    "vietnamese": "mất",
+    "dutchsentence": "Ik ben mijn OV-chipkaart kwijt.",
+    "englishtranslate": "I have lost my public transport card."
+  },
+  {
+    "dutch": "leggen",
+    "english": "to lay / to put (horizontally)",
+    "vietnamese": "đặt",
+    "dutchsentence": "Zij legt haar koffer onder de tafel.",
+    "englishtranslate": "She lays/puts her suitcase under the table."
+  },
+  {
+    "dutch": "kiezen",
+    "english": "to choose",
+    "vietnamese": "chọn",
+    "dutchsentence": "U kunt de taal kiezen op het beeldscherm.",
+    "englishtranslate": "You can choose the language on the screen."
+  },
+  {
+    "dutch": "luxe",
+    "english": "luxurious",
+    "vietnamese": "sang trọng",
+    "dutchsentence": "Dit is een erg luxe hotel.",
+    "englishtranslate": "This is a very luxurious hotel."
+  },
+  {
+    "dutch": "makkelijk",
+    "english": "easy",
+    "vietnamese": "dễ dàng",
+    "dutchsentence": "De reis was makkelijker dan ik dacht.",
+    "englishtranslate": "The trip was easier than I thought."
+  },
+  {
+    "dutch": "medewerker, de",
+    "english": "employee, the / staff member, the",
+    "vietnamese": "nhân viên",
+    "dutchsentence": "Een medewerker van het hotel helpt ons.",
+    "englishtranslate": "A staff member of the hotel is helping us."
+  },
+  {
+    "dutch": "medewerker reisbureau, de",
+    "english": "travel agent, the",
+    "vietnamese": "đại lý du lịch",
+    "dutchsentence": "De medewerker van het reisbureau boekte de vlucht.",
+    "englishtranslate": "The travel agent booked the flight."
+  },
+  {
+    "dutch": "missen",
+    "english": "to miss",
+    "vietnamese": "bỏ lỡ",
+    "dutchsentence": "We zullen de trein missen door de vertraging.",
+    "englishtranslate": "We will miss the train because of the delay."
+  },
+  {
+    "dutch": "normaal",
+    "english": "usually / normally",
+    "vietnamese": "thường",
+    "dutchsentence": "Normaal vertrekt de trein op tijd.",
+    "englishtranslate": "Normally the train departs on time."
+  },
+  {
+    "dutch": "noteren",
+    "english": "to note down",
+    "vietnamese": "ghi chú",
+    "dutchsentence": "De receptionist noteerde onze namen.",
+    "englishtranslate": "The receptionist noted down our names."
+  },
+  {
+    "dutch": "omdat",
+    "english": "because",
+    "vietnamese": "bởi vì",
+    "dutchsentence": "We nemen de taxi omdat de bus te laat is.",
+    "englishtranslate": "We are taking the taxi because the bus is too late."
+  },
+  {
+    "dutch": "onder",
+    "english": "under",
+    "vietnamese": "dưới",
+    "dutchsentence": "Zet je koffer onder je stoel.",
+    "englishtranslate": "Put your suitcase under your chair."
+  },
+  {
+    "dutch": "ophalen",
+    "english": "to pick up / to fetch",
+    "vietnamese": "đón / lấy",
+    "dutchsentence": "Mijn broer komt me ophalen van het station.",
+    "englishtranslate": "My brother is coming to pick me up from the station."
+  },
+  {
+    "dutch": "opladen",
+    "english": "to upload / to charge (a card)",
+    "vietnamese": "tải lên",
+    "dutchsentence": "U kunt hier uw OV-chipkaart opladen.",
+    "englishtranslate": "You can charge your public transport card here."
+  },
+  {
+    "dutch": "oplossing, de",
+    "english": "solution, the",
+    "vietnamese": "giải pháp",
+    "dutchsentence": "We zoeken een snelle oplossing voor het probleem.",
+    "englishtranslate": "We are looking for a quick solution to the problem."
+  },
+  {
+    "dutch": "overstappen",
+    "english": "to change (trains/buses)",
+    "vietnamese": "đổi",
+    "dutchsentence": "In Utrecht moet u overstappen.",
+    "englishtranslate": "You have to change trains/buses in Utrecht."
+  },
+  {
+    "dutch": "ov-chipkaart, de",
+    "english": "public transport card, the",
+    "vietnamese": "thẻ giao thông công cộng",
+    "dutchsentence": "Ik check in met mijn OV-chipkaart.",
+    "englishtranslate": "I check in with my public transport card."
+  },
+  {
+    "dutch": "perron, het",
+    "english": "platform, the",
+    "vietnamese": "sân ga",
+    "dutchsentence": "De trein naar Den Haag vertrekt van perron 5.",
+    "englishtranslate": "The train to The Hague departs from platform 5."
+  },
+  {
+    "dutch": "plannen",
+    "english": "to plan",
+    "vietnamese": "lên kế hoạch",
+    "dutchsentence": "We moeten de reis goed plannen.",
+    "englishtranslate": "We have to plan the trip well."
+  },
+  {
+    "dutch": "plezier, het",
+    "english": "fun, the / pleasure, the",
+    "vietnamese": "niềm vui",
+    "dutchsentence": "Veel plezier met uw reis!",
+    "englishtranslate": "Have fun on your trip!"
+  },
+  {
+    "dutch": "postkantoor, het",
+    "english": "post office, the",
+    "vietnamese": "bưu điện",
+    "dutchsentence": "Het postkantoor is tegenover het station.",
+    "englishtranslate": "The post office is across from the station."
+  },
+  {
+    "dutch": "probleem, het",
+    "english": "problem, the",
+    "vietnamese": "vấn đề",
+    "dutchsentence": "Is er een probleem met mijn ticket?",
+    "englishtranslate": "Is there a problem with my ticket?"
+  },
+  {
+    "dutch": "reis, de",
+    "english": "trip, the / journey, the",
+    "vietnamese": "chuyến đi",
+    "dutchsentence": "De reis duurde vier uur.",
+    "englishtranslate": "The trip/journey took four hours."
+  },
+  {
+    "dutch": "reisbureau, het",
+    "english": "travel agency, the",
+    "vietnamese": "công ty du lịch",
+    "dutchsentence": "Het reisbureau heeft ons geholpen met boeken.",
+    "englishtranslate": "The travel agency helped us with booking."
+  },
+  {
+    "dutch": "reiziger, de",
+    "english": "passenger, the / traveller, the",
+    "vietnamese": "hành khách",
+    "dutchsentence": "Elke reiziger moet inchecken.",
+    "englishtranslate": "Every passenger/traveller must check in."
+  },
+  {
+    "dutch": "reserveren",
+    "english": "to make a reservation",
+    "vietnamese": "đặt chỗ",
+    "dutchsentence": "Ik wil graag een kamer reserveren.",
+    "englishtranslate": "I would like to make a reservation for a room."
+  },
+  {
+    "dutch": "retourtje, het",
+    "english": "return ticket, the",
+    "vietnamese": "vé khứ hồi",
+    "dutchsentence": "Ik koop een retourtje naar Groningen.",
+    "englishtranslate": "I am buying a return ticket to Groningen."
+  },
+  {
+    "dutch": "schrikken",
+    "english": "to be startled",
+    "vietnamese": "giật mình",
+    "dutchsentence": "Ik schrok van het harde geluid.",
+    "englishtranslate": "I was startled by the loud noise."
+  },
+  {
+    "dutch": "schoof (schuiven)",
+    "english": "shoved (to shove, to move)",
+    "vietnamese": "bị xô đẩy (để xô đẩy, để di chuyển)",
+    "dutchsentence": "Hij schoof zijn stoel naar de tafel.",
+    "englishtranslate": "He shoved/moved his chair towards the table."
+  },
+  {
+    "dutch": "selecteren",
+    "english": "to select",
+    "vietnamese": "để chọn",
+    "dutchsentence": "Selecteer de bestemming op het scherm.",
+    "englishtranslate": "Select the destination on the screen."
+  },
+  {
+    "dutch": "snappen",
+    "english": "to understand (informal)",
+    "vietnamese": "để hiểu",
+    "dutchsentence": "Snap je wat de conducteur bedoelt?",
+    "englishtranslate": "Do you understand what the conductor means?"
+  },
+  {
+    "dutch": "spoor, het",
+    "english": "track, the",
+    "vietnamese": "đường ray",
+    "dutchsentence": "De trein komt aan op spoor 3.",
+    "englishtranslate": "The train arrives on track 3."
+  },
+  {
+    "dutch": "station, het",
+    "english": "station, the",
+    "vietnamese": "trạm",
+    "dutchsentence": "We zijn op het Centraal Station.",
+    "englishtranslate": "We are at the Central Station."
+  },
+  {
+    "dutch": "stoel, de",
+    "english": "chair, the / seat, the",
+    "vietnamese": "ghế",
+    "dutchsentence": "Is deze stoel vrij?",
+    "englishtranslate": "Is this seat free?"
+  },
+  {
+    "dutch": "tafel, de",
+    "english": "table, the",
+    "vietnamese": "bàn",
+    "dutchsentence": "Zet de koffer naast de tafel.",
+    "englishtranslate": "Put the suitcase next to the table."
+  },
+  {
+    "dutch": "taxi, de",
+    "english": "taxi, the",
+    "vietnamese": "xe tắc xi",
+    "dutchsentence": "We nemen een taxi naar het vliegveld.",
+    "englishtranslate": "We are taking a taxi to the airport."
+  },
+  {
+    "dutch": "tegenover",
+    "english": "across from / opposite",
+    "vietnamese": "đối diện với",
+    "dutchsentence": "Het hotel ligt tegenover het park.",
+    "englishtranslate": "The hotel is across from the park."
+  },
+  {
+    "dutch": "telefoon, de",
+    "english": "telephone, the",
+    "vietnamese": "điện thoại",
+    "dutchsentence": "Ik heb geen bereik op mijn telefoon.",
+    "englishtranslate": "I have no reception on my telephone."
+  },
+  {
+    "dutch": "terug",
+    "english": "back",
+    "vietnamese": "trở lại",
+    "dutchsentence": "Wanneer kom je terug van je reis?",
+    "englishtranslate": "When are you coming back from your trip?"
+  },
+  {
+    "dutch": "toilet, het",
+    "english": "toilet, the",
+    "vietnamese": "nhà vệ sinh",
+    "dutchsentence": "Waar is het dichtstbijzijnde toilet?",
+    "englishtranslate": "Where is the nearest toilet?"
+  },
+  {
+    "dutch": "tot slot",
+    "english": "finally",
+    "vietnamese": "cuối cùng",
+    "dutchsentence": "Tot slot moet u op 'OK' drukken.",
+    "englishtranslate": "Finally, you must press 'OK'."
+  },
+  {
+    "dutch": "trein, de",
+    "english": "train, the",
+    "vietnamese": "tàu hỏa",
+    "dutchsentence": "De trein heeft vertraging.",
+    "englishtranslate": "The train has a delay."
+  },
+  {
+    "dutch": "treinkaartje, het",
+    "english": "train ticket, the",
+    "vietnamese": "vé tàu",
+    "dutchsentence": "Heeft u een geldig treinkaartje?",
+    "englishtranslate": "Do you have a valid train ticket?"
+  },
+  {
+    "dutch": "tweepersoons",
+    "english": "two persons / double",
+    "vietnamese": "hai người",
+    "dutchsentence": "We willen een tweepersoonskamer.",
+    "englishtranslate": "We want a double room (two persons)."
+  },
+  {
+    "dutch": "uitchecken",
+    "english": "to check out (transport/hotel)",
+    "vietnamese": "trả phòng",
+    "dutchsentence": "Vergeet niet uit te checken bij het station.",
+    "englishtranslate": "Don't forget to check out at the station."
+  },
+  {
+    "dutch": "uitnemen",
+    "english": "to take out",
+    "vietnamese": "lấy ra",
+    "dutchsentence": "U kunt uw kaart nu uitnemen.",
+    "englishtranslate": "You can take out your card now."
+  },
+  {
+    "dutch": "uitstappen",
+    "english": "to get out / to alight",
+    "vietnamese": "ra ngoài",
+    "dutchsentence": "We moeten bij de volgende halte uitstappen.",
+    "englishtranslate": "We have to get out/alight at the next stop."
+  },
+  {
+    "dutch": "vaak",
+    "english": "often",
+    "vietnamese": "thường xuyên",
+    "dutchsentence": "Hij reist vaak met de trein.",
+    "englishtranslate": "He often travels by train."
+  },
+  {
+    "dutch": "vandaag",
+    "english": "today",
+    "vietnamese": "hôm nay",
+    "dutchsentence": "De bus rijdt vandaag volgens een aangepaste dienstregeling.",
+    "englishtranslate": "The bus runs on an adjusted schedule today."
+  },
+  {
+    "dutch": "verder",
+    "english": "then / further",
+    "vietnamese": "sau đó / thêm nữa",
+    "dutchsentence": "Heeft u verder nog vragen?",
+    "englishtranslate": "Do you have any further questions?"
+  },
+  {
+    "dutch": "vertraging, de",
+    "english": "delay, the",
+    "vietnamese": "sự chậm trễ",
+    "dutchsentence": "Door de vertraging missen we onze aansluiting.",
+    "englishtranslate": "Because of the delay, we will miss our connection."
+  },
+  {
+    "dutch": "vertrekken",
+    "english": "to leave / to depart",
+    "vietnamese": "rời đi",
+    "dutchsentence": "De trein zal over vijf minuten vertrekken.",
+    "englishtranslate": "The train will depart in five minutes."
+  },
+  {
+    "dutch": "vertrektijd, de",
+    "english": "departure time, the",
+    "vietnamese": "thời gian khởi hành",
+    "dutchsentence": "Controleer de vertrektijd op het bord.",
+    "englishtranslate": "Check the departure time on the board."
+  },
+  {
+    "dutch": "vervolgens",
+    "english": "next / subsequently",
+    "vietnamese": "tiếp theo",
+    "dutchsentence": "Eerst betalen, vervolgens kunt u uitchecken.",
+    "englishtranslate": "First pay, next you can check out."
+  },
+  {
+    "dutch": "vliegen",
+    "english": "to fly",
+    "vietnamese": "bay",
+    "dutchsentence": "Ik hou niet van vliegen.",
+    "englishtranslate": "I don't like to fly."
+  },
+  {
+    "dutch": "vliegtuig, het",
+    "english": "airplane, the",
+    "vietnamese": "máy bay",
+    "dutchsentence": "Het vliegtuig heeft vertraging.",
+    "englishtranslate": "The airplane has a delay."
+  },
+  {
+    "dutch": "vol",
+    "english": "full",
+    "vietnamese": "đầy",
+    "dutchsentence": "De bus zit helemaal vol.",
+    "englishtranslate": "The bus is completely full."
+  },
+  {
+    "dutch": "volgen",
+    "english": "to follow",
+    "vietnamese": "theo dõi",
+    "dutchsentence": "U moet de gele borden volgen.",
+    "englishtranslate": "You must follow the yellow signs."
+  },
+  {
+    "dutch": "volgend",
+    "english": "next / following",
+    "vietnamese": "tiếp theo",
+    "dutchsentence": "De volgende bus komt over tien minuten.",
+    "englishtranslate": "The next bus is coming in ten minutes."
+  },
+  {
+    "dutch": "waarom",
+    "english": "why",
+    "vietnamese": "tại sao",
+    "dutchsentence": "Waarom heeft de trein vertraging?",
+    "englishtranslate": "Why is the train delayed?"
+  },
+  {
+    "dutch": "wachten",
+    "english": "to wait",
+    "vietnamese": "chờ đợi",
+    "dutchsentence": "We moeten wachten op het perron.",
+    "englishtranslate": "We have to wait on the platform."
+  },
+  {
+    "dutch": "wc, de",
+    "english": "toilet, the (informal)",
+    "vietnamese": "nhà vệ sinh",
+    "dutchsentence": "Ik moet naar de wc.",
+    "englishtranslate": "I need to go to the toilet."
+  },
+  {
+    "dutch": "weleens",
+    "english": "ever (at some point)",
+    "vietnamese": "bao giờ",
+    "dutchsentence": "Bent u weleens in New York geweest?",
+    "englishtranslate": "Have you ever been to New York?"
+  },
+  {
+    "dutch": "weten",
+    "english": "to know",
+    "vietnamese": "biết",
+    "dutchsentence": "Weet u het nummer van de bus?",
+    "englishtranslate": "Do you know the number of the bus?"
+  },
+  {
+    "dutch": "zetten",
+    "english": "to put (vertically or place)",
+    "vietnamese": "đặt",
+    "dutchsentence": "Zet de koffers op de grond.",
+    "englishtranslate": "Put the suitcases on the floor."
+  },
+  {
+    "dutch": "zat (zitten)",
+    "english": "sat (to sit)",
+    "vietnamese": "ngồi (ngồi)",
+    "dutchsentence": "Ik zat op mijn stoel te wachten.",
+    "englishtranslate": "I was sitting on my chair waiting."
+  },
+  {
+    "dutch": "zonder",
+    "english": "without",
+    "vietnamese": "không có",
+    "dutchsentence": "U mag niet reizen zonder geldig ticket.",
+    "englishtranslate": "You may not travel without a valid ticket."
+  }
 ]

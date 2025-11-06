@@ -1,106 +1,730 @@
 [
-    {"dutch": "s avonds", "english": "in the evening", "vietnamese": "vào buổi tối"},
-    {"dutch": "s middags", "english": "in the afternoon", "vietnamese": "vào buổi chiều"},
-    {"dutch": "s morgens", "english": "in the morning", "vietnamese": "vào buổi sáng"},
-    {"dutch": "aankleden (zich -)", "english": "to get dressed", "vietnamese": "để mặc quần áo"},
-    {"dutch": "aantrekken", "english": "to put on", "vietnamese": "để mặc"},
-    {"dutch": "afspreken", "english": "to make an appointment", "vietnamese": "để đặt lịch hẹn"},
-    {"dutch": "afwassen", "english": "to wash the dishes", "vietnamese": "để rửa chén"},
-    {"dutch": "agenda, de", "english": "agenda, the", "vietnamese": "chương trình nghị sự"},
-    {"dutch": "avond, de", "english": "evening, the", "vietnamese": "buổi tối"},
-    {"dutch": "bed, het", "english": "bed, the", "vietnamese": "giường"},
-    {"dutch": "beginnen", "english": "to begin", "vietnamese": "bắt đầu"},
-    {"dutch": "bij", "english": "at", "vietnamese": "tại"},
-    {"dutch": "boterham, de", "english": "sandwich, slice of bread, the", "vietnamese": "bánh mì sandwich, lát bánh mì"},
-    {"dutch": "bovendien", "english": "moreover", "vietnamese": "hơn nữa"},
-    {"dutch": "broek, de", "english": "trousers, the", "vietnamese": "quần"},
-    {"dutch": "bruin", "english": "brown", "vietnamese": "nâu"},
-    {"dutch": "college, het", "english": "lecture, the", "vietnamese": "bài giảng"},
-    {"dutch": "computer, de", "english": "computer, the", "vietnamese": "máy tính"},
-    {"dutch": "computerspelletje, het", "english": "computer game, the", "vietnamese": "trò chơi máy tính"},
-    {"dutch": "daarna", "english": "after that", "vietnamese": "sau đó"},
-    {"dutch": "dag, de", "english": "day, the", "vietnamese": "ngày"},
-    {"dutch": "dan", "english": "then", "vietnamese": "sau đó"},
-    {"dutch": "dinsdag", "english": "Tuesday", "vietnamese": "thứ ba"},
-    {"dutch": "donderdag", "english": "Thursday", "vietnamese": "thứ năm"},
-    {"dutch": "douche, de", "english": "shower, the", "vietnamese": "vòi hoa sen"},
-    {"dutch": "douchen", "english": "to shower", "vietnamese": "tắm"},
-    {"dutch": "eruitzien", "english": "to resemble, to look like", "vietnamese": "giống, trông giống như"},
-    {"dutch": "eten, het", "english": "food, the / meal, the", "vietnamese": "thức ăn / bữa ăn"},
-    {"dutch": "gek", "english": "crazy", "vietnamese": "điên"},
-    {"dutch": "gewoon", "english": "just / normal", "vietnamese": "chỉ / bình thường"},
-    {"dutch": "haasten (zich -)", "english": "to hurry", "vietnamese": "vội vàng"},
-    {"dutch": "half", "english": "half", "vietnamese": "một nửa"},
-    {"dutch": "hardlopen", "english": "to run", "vietnamese": "chạy"},
-    {"dutch": "hond, de", "english": "dog, the", "vietnamese": "chó"},
-    {"dutch": "intelligent", "english": "intelligent", "vietnamese": "thông minh"},
-    {"dutch": "irritant", "english": "irritating", "vietnamese": "khó chịu"},
-    {"dutch": "juist", "english": "correct", "vietnamese": "đúng"},
-    {"dutch": "kat, de", "english": "cat, the", "vietnamese": "mèo"},
-    {"dutch": "klok, de", "english": "clock, the", "vietnamese": "đồng hồ"},
-    {"dutch": "knap", "english": "handsome", "vietnamese": "đẹp trai"},
-    {"dutch": "kop, de", "english": "cup, the", "vietnamese": "cốc"},
-    {"dutch": "krul, de", "english": "curl, the", "vietnamese": "lọn tóc"},
-    {"dutch": "kwart", "english": "quarter", "vietnamese": "một phần tư"},
-    {"dutch": "laat", "english": "late", "vietnamese": "muộn"},
-    {"dutch": "leren", "english": "to learn / to teach", "vietnamese": "học / dạy"},
-    {"dutch": "lief", "english": "sweet, nice", "vietnamese": "ngọt ngào, tốt"},
-    {"dutch": "lunchen", "english": "to have lunch", "vietnamese": "ăn trưa"},
-    {"dutch": "maandag", "english": "Monday", "vietnamese": "thứ hai"},
-    {"dutch": "middag, de", "english": "afternoon, the", "vietnamese": "buổi chiều"},
-    {"dutch": "misschien", "english": "maybe", "vietnamese": "có thể"},
-    {"dutch": "morgen, de", "english": "morning, the", "vietnamese": "buổi sáng"},
-    {"dutch": "naar", "english": "to, towards", "vietnamese": "đến, về phía"},
-    {"dutch": "nemen", "english": "to take", "vietnamese": "lấy"},
-    {"dutch": "nieuws, het", "english": "news, the", "vietnamese": "tin tức"},
-    {"dutch": "ochtend, de", "english": "morning, the", "vietnamese": "buổi sáng"},
-    {"dutch": "ontbijten", "english": "to have breakfast", "vietnamese": "ăn sáng"},
-    {"dutch": "opendoen", "english": "to open up", "vietnamese": "mở ra"},
-    {"dutch": "opstaan", "english": "to get up / to stand up", "vietnamese": "dậy / đứng dậy"},
-    {"dutch": "over", "english": "after", "vietnamese": "sau"},
-    {"dutch": "parkeren", "english": "to park", "vietnamese": "đỗ xe"},
-    {"dutch": "pas", "english": "only", "vietnamese": "chỉ"},
-    {"dutch": "pasta, de", "english": "pasta, the", "vietnamese": "mì ống"},
-    {"dutch": "prikken", "english": "to prick", "vietnamese": "châm"},
-    {"dutch": "puist, de", "english": "pimple, the", "vietnamese": "mụn"},
-    {"dutch": "raam, het", "english": "window, the", "vietnamese": "cửa sổ"},
-    {"dutch": "om", "english": "at", "vietnamese": "tại"},
-    {"dutch": "restaurant, het", "english": "restaurant, the", "vietnamese": "nhà hàng"},
-    {"dutch": "scheren (zich -)", "english": "to shave", "vietnamese": "cạo râu"},
-    {"dutch": "schoonmaakmiddel, het", "english": "cleaning agent, the", "vietnamese": "chất tẩy rửa"},
-    {"dutch": "schoonmaken", "english": "to clean", "vietnamese": "làm sạch"},
-    {"dutch": "T-shirt, het", "english": "T-shirt, the", "vietnamese": "áo phông"},
-    {"dutch": "uitgaan", "english": "to go out", "vietnamese": "đi ra ngoài"},
-    {"dutch": "uitlaten (de hond -)", "english": "to walk the dog", "vietnamese": "dắt chó đi dạo"},
-    {"dutch": "uitslapen", "english": "to sleep late", "vietnamese": "ngủ muộn"},
-    {"dutch": "universiteit, de", "english": "university, the", "vietnamese": "đại học"},
-    {"dutch": "soms", "english": "sometimes", "vietnamese": "đôi khi"},
-    {"dutch": "sporten", "english": "to go sporting, to exercise", "vietnamese": "đi thể thao, tập thể dục"},
-    {"dutch": "stof, het", "english": "dust, the", "vietnamese": "bụi"},
-    {"dutch": "tandenpoetsen", "english": "to brush one’s teeth", "vietnamese": "đánh răng"},
-    {"dutch": "televisie, de", "english": "television, the", "vietnamese": "truyền hình"},
-    {"dutch": "thee, de", "english": "tea, the", "vietnamese": "trà"},
-    {"dutch": "toch", "english": "anyway / nevertheless", "vietnamese": "dù sao / tuy nhiên"},
-    {"dutch": "tomatensaus, de", "english": "tomato sauce, the", "vietnamese": "sốt cà chua"},
-    {"dutch": "uur, het", "english": "hour, the", "vietnamese": "giờ"},
-    {"dutch": "verliefd", "english": "in love", "vietnamese": "yêu"},
-    {"dutch": "vet", "english": "greasy / fat", "vietnamese": "dầu mỡ / béo"},
-    {"dutch": "voor", "english": "before, to", "vietnamese": "trước, đến"},
-    {"dutch": "voorstellen (zich -)", "english": "to introduce", "vietnamese": "giới thiệu"},
-    {"dutch": "vriend, de", "english": "friend, the", "vietnamese": "bạn"},
-    {"dutch": "vrijdag", "english": "Friday", "vietnamese": "thứ sáu"},
-    {"dutch": "vroeg", "english": "early", "vietnamese": "sớm"},
-    {"dutch": "wassen (zich -)", "english": "to wash", "vietnamese": "rửa"},
-    {"dutch": "water, het", "english": "water, the", "vietnamese": "nước"},
-    {"dutch": "week, de", "english": "week, the", "vietnamese": "tuần"},
-    {"dutch": "werk, het", "english": "work, the", "vietnamese": "công việc"},
-    {"dutch": "willen", "english": "want", "vietnamese": "muốn"},
-    {"dutch": "woensdag", "english": "Wednesday", "vietnamese": "thứ tư"},
-    {"dutch": "zaterdag", "english": "Saturday", "vietnamese": "thứ bảy"},
-    {"dutch": "zeep, de", "english": "soap, the", "vietnamese": "xà phòng"},
-    {"dutch": "zelfs", "english": "even", "vietnamese": "thậm chí"},
-    {"dutch": "wanneer", "english": "when", "vietnamese": "khi nào"},
-    {"dutch": "ziekenhuis, het", "english": "hospital, the", "vietnamese": "bệnh viện"},
-    {"dutch": "zondag", "english": "Sunday", "vietnamese": "chủ nhật"},
-    {"dutch": "zullen", "english": "shall", "vietnamese": "sẽ"}
+  {
+    "dutch": "s avonds",
+    "english": "in the evening",
+    "vietnamese": "vào buổi tối",
+    "dutchsentence": "s Avonds kijken we vaak een film.",
+    "englishtranslate": "In the evening we often watch a movie."
+  },
+  {
+    "dutch": "s middags",
+    "english": "in the afternoon",
+    "vietnamese": "vào buổi chiều",
+    "dutchsentence": "Ze werkt s middags van twaalf tot vijf.",
+    "englishtranslate": "She works in the afternoon from twelve to five."
+  },
+  {
+    "dutch": "s morgens",
+    "english": "in the morning",
+    "vietnamese": "vào buổi sáng",
+    "dutchsentence": "s Morgens sta ik om half zeven op.",
+    "englishtranslate": "In the morning I get up at half past six."
+  },
+  {
+    "dutch": "aankleden (zich -)",
+    "english": "to get dressed",
+    "vietnamese": "để mặc quần áo",
+    "dutchsentence": "Na het douchen moet ik me aankleden.",
+    "englishtranslate": "After showering I have to get dressed."
+  },
+  {
+    "dutch": "aantrekken",
+    "english": "to put on",
+    "vietnamese": "để mặc",
+    "dutchsentence": "Ik trek mijn jas aan want het is koud.",
+    "englishtranslate": "I am putting on my coat because it is cold."
+  },
+  {
+    "dutch": "afspreken",
+    "english": "to make an appointment",
+    "vietnamese": "để đặt lịch hẹn",
+    "dutchsentence": "We moeten snel een keer afspreken.",
+    "englishtranslate": "We need to make an appointment soon."
+  },
+  {
+    "dutch": "afwassen",
+    "english": "to wash the dishes",
+    "vietnamese": "để rửa chén",
+    "dutchsentence": "Wie gaat er vanavond afwassen?",
+    "englishtranslate": "Who is going to wash the dishes tonight?"
+  },
+  {
+    "dutch": "agenda, de",
+    "english": "agenda, the",
+    "vietnamese": "chương trình nghị sự",
+    "dutchsentence": "Zet het in je agenda, anders vergeet je het.",
+    "englishtranslate": "Put it in your agenda, otherwise you will forget it."
+  },
+  {
+    "dutch": "avond, de",
+    "english": "evening, the",
+    "vietnamese": "buổi tối",
+    "dutchsentence": "De avond is mijn favoriete deel van de dag.",
+    "englishtranslate": "The evening is my favorite part of the day."
+  },
+  {
+    "dutch": "bed, het",
+    "english": "bed, the",
+    "vietnamese": "giường",
+    "dutchsentence": "Ik ga vroeg naar bed.",
+    "englishtranslate": "I am going to bed early."
+  },
+  {
+    "dutch": "beginnen",
+    "english": "to begin",
+    "vietnamese": "bắt đầu",
+    "dutchsentence": "De les zal om negen uur beginnen.",
+    "englishtranslate": "The lesson will begin at nine oclock."
+  },
+  {
+    "dutch": "bij",
+    "english": "at",
+    "vietnamese": "tại",
+    "dutchsentence": "Ik eet bij mijn oma.",
+    "englishtranslate": "I am eating at my grandmothers."
+  },
+  {
+    "dutch": "boterham, de",
+    "english": "sandwich, slice of bread, the",
+    "vietnamese": "bánh mì sandwich, lát bánh mì",
+    "dutchsentence": "Ik eet twee boterhammen met kaas.",
+    "englishtranslate": "I eat two slices of bread with cheese."
+  },
+  {
+    "dutch": "bovendien",
+    "english": "moreover",
+    "vietnamese": "hơn nữa",
+    "dutchsentence": "Het is koud en bovendien regent het.",
+    "englishtranslate": "It is cold, and moreover it is raining."
+  },
+  {
+    "dutch": "broek, de",
+    "english": "trousers, the",
+    "vietnamese": "quần",
+    "dutchsentence": "Mijn nieuwe broek is te lang.",
+    "englishtranslate": "My new trousers are too long."
+  },
+  {
+    "dutch": "bruin",
+    "english": "brown",
+    "vietnamese": "nâu",
+    "dutchsentence": "Hij heeft mooie bruine ogen.",
+    "englishtranslate": "He has beautiful brown eyes."
+  },
+  {
+    "dutch": "college, het",
+    "english": "lecture, the",
+    "vietnamese": "bài giảng",
+    "dutchsentence": "Het college over geschiedenis was interessant.",
+    "englishtranslate": "The lecture about history was interesting."
+  },
+  {
+    "dutch": "computer, de",
+    "english": "computer, the",
+    "vietnamese": "máy tính",
+    "dutchsentence": "Ik heb een nieuwe computer gekocht.",
+    "englishtranslate": "I bought a new computer."
+  },
+  {
+    "dutch": "computerspelletje, het",
+    "english": "computer game, the",
+    "vietnamese": "trò chơi máy tính",
+    "dutchsentence": "Hij speelt graag een computerspelletje in zijn vrije tijd.",
+    "englishtranslate": "He likes to play a computer game in his free time."
+  },
+  {
+    "dutch": "daarna",
+    "english": "after that",
+    "vietnamese": "sau đó",
+    "dutchsentence": "Eerst lunchen we, daarna gaan we winkelen.",
+    "englishtranslate": "First we have lunch, after that we go shopping."
+  },
+  {
+    "dutch": "dag, de",
+    "english": "day, the",
+    "vietnamese": "ngày",
+    "dutchsentence": "Het is vandaag een mooie dag.",
+    "englishtranslate": "It is a beautiful day today."
+  },
+  {
+    "dutch": "dan",
+    "english": "then",
+    "vietnamese": "sau đó",
+    "dutchsentence": "Ik eet, en dan ga ik naar huis.",
+    "englishtranslate": "I eat, and then I go home."
+  },
+  {
+    "dutch": "dinsdag",
+    "english": "Tuesday",
+    "vietnamese": "thứ ba",
+    "dutchsentence": "Op dinsdag heb ik les.",
+    "englishtranslate": "On Tuesday I have class."
+  },
+  {
+    "dutch": "donderdag",
+    "english": "Thursday",
+    "vietnamese": "thứ năm",
+    "dutchsentence": "We gaan donderdag uit eten.",
+    "englishtranslate": "We are going out for dinner on Thursday."
+  },
+  {
+    "dutch": "douche, de",
+    "english": "shower, the",
+    "vietnamese": "vòi hoa sen",
+    "dutchsentence": "De douche is kapot.",
+    "englishtranslate": "The shower is broken."
+  },
+  {
+    "dutch": "douchen",
+    "english": "to shower",
+    "vietnamese": "tắm",
+    "dutchsentence": "Ik moet eerst douchen voor ik naar mijn werk ga.",
+    "englishtranslate": "I must shower before I go to work."
+  },
+  {
+    "dutch": "eruitzien",
+    "english": "to resemble, to look like",
+    "vietnamese": "giống, trông giống như",
+    "dutchsentence": "Hoe ziet de dief eruit?",
+    "englishtranslate": "What does the thief look like?"
+  },
+  {
+    "dutch": "eten, het",
+    "english": "food, the / meal, the",
+    "vietnamese": "thức ăn / bữa ăn",
+    "dutchsentence": "Het eten in dit restaurant is heerlijk.",
+    "englishtranslate": "The food/meal in this restaurant is delicious."
+  },
+  {
+    "dutch": "gek",
+    "english": "crazy",
+    "vietnamese": "điên",
+    "dutchsentence": "Dat is een gek idee!",
+    "englishtranslate": "That is a crazy idea!"
+  },
+  {
+    "dutch": "gewoon",
+    "english": "just / normal",
+    "vietnamese": "chỉ / bình thường",
+    "dutchsentence": "Ik wil gewoon even rust.",
+    "englishtranslate": "I just want some peace and quiet."
+  },
+  {
+    "dutch": "haasten (zich -)",
+    "english": "to hurry",
+    "vietnamese": "vội vàng",
+    "dutchsentence": "Je hoeft je niet te haasten.",
+    "englishtranslate": "You dont need to hurry."
+  },
+  {
+    "dutch": "half",
+    "english": "half",
+    "vietnamese": "một nửa",
+    "dutchsentence": "Het is nu half drie.",
+    "englishtranslate": "It is half past two now."
+  },
+  {
+    "dutch": "hardlopen",
+    "english": "to run",
+    "vietnamese": "chạy",
+    "dutchsentence": "Ze gaat twee keer per week hardlopen.",
+    "englishtranslate": "She goes running twice a week."
+  },
+  {
+    "dutch": "hond, de",
+    "english": "dog, the",
+    "vietnamese": "chó",
+    "dutchsentence": "De hond speelt in de tuin.",
+    "englishtranslate": "The dog is playing in the garden."
+  },
+  {
+    "dutch": "intelligent",
+    "english": "intelligent",
+    "vietnamese": "thông minh",
+    "dutchsentence": "Mijn professor is erg intelligent.",
+    "englishtranslate": "My professor is very intelligent."
+  },
+  {
+    "dutch": "irritant",
+    "english": "irritating",
+    "vietnamese": "khó chịu",
+    "dutchsentence": "Dat geluid is heel irritant.",
+    "englishtranslate": "That noise is very irritating."
+  },
+  {
+    "dutch": "juist",
+    "english": "correct",
+    "vietnamese": "đúng",
+    "dutchsentence": "Het antwoord is juist.",
+    "englishtranslate": "The answer is correct."
+  },
+  {
+    "dutch": "kat, de",
+    "english": "cat, the",
+    "vietnamese": "mèo",
+    "dutchsentence": "De kat slaapt op de bank.",
+    "englishtranslate": "The cat is sleeping on the couch."
+  },
+  {
+    "dutch": "klok, de",
+    "english": "clock, the",
+    "vietnamese": "đồng hồ",
+    "dutchsentence": "Kijk op de klok, het is al laat!",
+    "englishtranslate": "Look at the clock, it is already late!"
+  },
+  {
+    "dutch": "knap",
+    "english": "handsome",
+    "vietnamese": "đẹp trai",
+    "dutchsentence": "Hij is een knappe man.",
+    "englishtranslate": "He is a handsome man."
+  },
+  {
+    "dutch": "kop, de",
+    "english": "cup, the",
+    "vietnamese": "cốc",
+    "dutchsentence": "Mag ik een kop thee?",
+    "englishtranslate": "May I have a cup of tea?"
+  },
+  {
+    "dutch": "krul, de",
+    "english": "curl, the",
+    "vietnamese": "lọn tóc",
+    "dutchsentence": "Zijn haar zit vol met krullen.",
+    "englishtranslate": "His hair is full of curls."
+  },
+  {
+    "dutch": "kwart",
+    "english": "quarter",
+    "vietnamese": "một phần tư",
+    "dutchsentence": "Het is kwart voor negen.",
+    "englishtranslate": "It is a quarter to nine."
+  },
+  {
+    "dutch": "laat",
+    "english": "late",
+    "vietnamese": "muộn",
+    "dutchsentence": "Ik ben te laat voor de vergadering.",
+    "englishtranslate": "I am too late for the meeting."
+  },
+  {
+    "dutch": "leren",
+    "english": "to learn / to teach",
+    "vietnamese": "học / dạy",
+    "dutchsentence": "Ik wil Spaans leren.",
+    "englishtranslate": "I want to learn Spanish."
+  },
+  {
+    "dutch": "lief",
+    "english": "sweet, nice",
+    "vietnamese": "ngọt ngào, tốt",
+    "dutchsentence": "Wat lief dat je me helpt.",
+    "englishtranslate": "How sweet/nice of you to help me."
+  },
+  {
+    "dutch": "lunchen",
+    "english": "to have lunch",
+    "vietnamese": "ăn trưa",
+    "dutchsentence": "We lunchen meestal om twaalf uur.",
+    "englishtranslate": "We usually have lunch at twelve oclock."
+  },
+  {
+    "dutch": "maandag",
+    "english": "Monday",
+    "vietnamese": "thứ hai",
+    "dutchsentence": "Op maandag begint de werkweek.",
+    "englishtranslate": "On Monday the work week begins."
+  },
+  {
+    "dutch": "middag, de",
+    "english": "afternoon, the",
+    "vietnamese": "buổi chiều",
+    "dutchsentence": "We zien elkaar in de middag.",
+    "englishtranslate": "We will see each other in the afternoon."
+  },
+  {
+    "dutch": "misschien",
+    "english": "maybe",
+    "vietnamese": "có thể",
+    "dutchsentence": "Misschien ga ik morgen naar de bioscoop.",
+    "englishtranslate": "Maybe I will go to the cinema tomorrow."
+  },
+  {
+    "dutch": "morgen, de",
+    "english": "morning, the",
+    "vietnamese": "buổi sáng",
+    "dutchsentence": "In de morgen drink ik koffie.",
+    "englishtranslate": "In the morning I drink coffee."
+  },
+  {
+    "dutch": "naar",
+    "english": "to, towards",
+    "vietnamese": "đến, về phía",
+    "dutchsentence": "We gaan naar het strand.",
+    "englishtranslate": "We are going to the beach."
+  },
+  {
+    "dutch": "nemen",
+    "english": "to take",
+    "vietnamese": "lấy",
+    "dutchsentence": "Zal ik de trein nemen?",
+    "englishtranslate": "Shall I take the train?"
+  },
+  {
+    "dutch": "nieuws, het",
+    "english": "news, the",
+    "vietnamese": "tin tức",
+    "dutchsentence": "Ik lees elke dag het nieuws.",
+    "englishtranslate": "I read the news every day."
+  },
+  {
+    "dutch": "ochtend, de",
+    "english": "morning, the",
+    "vietnamese": "buổi sáng",
+    "dutchsentence": "De ochtend is koud.",
+    "englishtranslate": "The morning is cold."
+  },
+  {
+    "dutch": "ontbijten",
+    "english": "to have breakfast",
+    "vietnamese": "ăn sáng",
+    "dutchsentence": "Zij ontbijt met yoghurt en fruit.",
+    "englishtranslate": "She has breakfast with yogurt and fruit."
+  },
+  {
+    "dutch": "opendoen",
+    "english": "to open up",
+    "vietnamese": "mở ra",
+    "dutchsentence": "Kan je de deur opendoen, alsjeblieft?",
+    "englishtranslate": "Can you open up the door, please?"
+  },
+  {
+    "dutch": "opstaan",
+    "english": "to get up / to stand up",
+    "vietnamese": "dậy / đứng dậy",
+    "dutchsentence": "Ik moet vroeg opstaan voor mijn werk.",
+    "englishtranslate": "I have to get up early for my work."
+  },
+  {
+    "dutch": "over",
+    "english": "after",
+    "vietnamese": "sau",
+    "dutchsentence": "Het is tien over half zeven.",
+    "englishtranslate": "It is ten past half past six (7:10)."
+  },
+  {
+    "dutch": "parkeren",
+    "english": "to park",
+    "vietnamese": "đỗ xe",
+    "dutchsentence": "Je mag hier niet parkeren.",
+    "englishtranslate": "You are not allowed to park here."
+  },
+  {
+    "dutch": "pas",
+    "english": "only",
+    "vietnamese": "chỉ",
+    "dutchsentence": "Hij kwam pas na middernacht thuis.",
+    "englishtranslate": "He only came home after midnight."
+  },
+  {
+    "dutch": "pasta, de",
+    "english": "pasta, the",
+    "vietnamese": "mì ống",
+    "dutchsentence": "Ik eet vanavond pasta met tomatensaus.",
+    "englishtranslate": "I am eating pasta with tomato sauce tonight."
+  },
+  {
+    "dutch": "prikken",
+    "english": "to prick",
+    "vietnamese": "châm",
+    "dutchsentence": "De muggen prikken mij altijd.",
+    "englishtranslate": "The mosquitoes always prick/sting me."
+  },
+  {
+    "dutch": "puist, de",
+    "english": "pimple, the",
+    "vietnamese": "mụn",
+    "dutchsentence": "Ik heb een puist op mijn neus.",
+    "englishtranslate": "I have a pimple on my nose."
+  },
+  {
+    "dutch": "raam, het",
+    "english": "window, the",
+    "vietnamese": "cửa sổ",
+    "dutchsentence": "Kan je het raam openen?",
+    "englishtranslate": "Can you open the window?"
+  },
+  {
+    "dutch": "om",
+    "english": "at",
+    "vietnamese": "tại",
+    "dutchsentence": "We ontmoeten elkaar om vier uur.",
+    "englishtranslate": "We will meet at four oclock."
+  },
+  {
+    "dutch": "restaurant, het",
+    "english": "restaurant, the",
+    "vietnamese": "nhà hàng",
+    "dutchsentence": "We gaan in dat nieuwe restaurant eten.",
+    "englishtranslate": "We are going to eat in that new restaurant."
+  },
+  {
+    "dutch": "scheren (zich -)",
+    "english": "to shave",
+    "vietnamese": "cạo râu",
+    "dutchsentence": "Hij scheert zich elke ochtend.",
+    "englishtranslate": "He shaves every morning."
+  },
+  {
+    "dutch": "schoonmaakmiddel, het",
+    "english": "cleaning agent, the",
+    "vietnamese": "chất tẩy rửa",
+    "dutchsentence": "We hebben nieuw schoonmaakmiddel nodig.",
+    "englishtranslate": "We need new cleaning agent."
+  },
+  {
+    "dutch": "schoonmaken",
+    "english": "to clean",
+    "vietnamese": "làm sạch",
+    "dutchsentence": "Ik moet het huis schoonmaken.",
+    "englishtranslate": "I need to clean the house."
+  },
+  {
+    "dutch": "T-shirt, het",
+    "english": "T-shirt, the",
+    "vietnamese": "áo phông",
+    "dutchsentence": "Ik heb een rood T-shirt gekocht.",
+    "englishtranslate": "I bought a red T-shirt."
+  },
+  {
+    "dutch": "uitgaan",
+    "english": "to go out",
+    "vietnamese": "đi ra ngoài",
+    "dutchsentence": "We willen zaterdagavond uitgaan.",
+    "englishtranslate": "We want to go out on Saturday evening."
+  },
+  {
+    "dutch": "uitlaten (de hond -)",
+    "english": "to walk the dog",
+    "vietnamese": "dắt chó đi dạo",
+    "dutchsentence": "Ik moet de hond uitlaten.",
+    "englishtranslate": "I have to walk the dog."
+  },
+  {
+    "dutch": "uitslapen",
+    "english": "to sleep late",
+    "vietnamese": "ngủ muộn",
+    "dutchsentence": "In het weekend kan ik lekker uitslapen.",
+    "englishtranslate": "On the weekend I can sleep late comfortably."
+  },
+  {
+    "dutch": "universiteit, de",
+    "english": "university, the",
+    "vietnamese": "đại học",
+    "dutchsentence": "Zij studeert aan de universiteit van Leiden.",
+    "englishtranslate": "She studies at the University of Leiden."
+  },
+  {
+    "dutch": "soms",
+    "english": "sometimes",
+    "vietnamese": "đôi khi",
+    "dutchsentence": "Ik eet soms pizza.",
+    "englishtranslate": "I sometimes eat pizza."
+  },
+  {
+    "dutch": "sporten",
+    "english": "to go sporting, to exercise",
+    "vietnamese": "đi thể thao, tập thể dục",
+    "dutchsentence": "Ik ga drie keer per week sporten.",
+    "englishtranslate": "I go exercising three times a week."
+  },
+  {
+    "dutch": "stof, het",
+    "english": "dust, the",
+    "vietnamese": "bụi",
+    "dutchsentence": "Er ligt veel stof op de meubels.",
+    "englishtranslate": "There is a lot of dust on the furniture."
+  },
+  {
+    "dutch": "tandenpoetsen",
+    "english": "to brush one’s teeth",
+    "vietnamese": "đánh răng",
+    "dutchsentence": "Vergeet niet je tanden te poetsen.",
+    "englishtranslate": "Dont forget to brush your teeth."
+  },
+  {
+    "dutch": "televisie, de",
+    "english": "television, the",
+    "vietnamese": "truyền hình",
+    "dutchsentence": "Zet de televisie aan, alsjeblieft.",
+    "englishtranslate": "Turn on the television, please."
+  },
+  {
+    "dutch": "thee, de",
+    "english": "tea, the",
+    "vietnamese": "trà",
+    "dutchsentence": "Ik drink liever thee dan koffie.",
+    "englishtranslate": "I prefer to drink tea than coffee."
+  },
+  {
+    "dutch": "toch",
+    "english": "anyway / nevertheless",
+    "vietnamese": "dù sao / tuy nhiên",
+    "dutchsentence": "Het regende, maar we gingen toch naar buiten.",
+    "englishtranslate": "It was raining, but we went outside anyway."
+  },
+  {
+    "dutch": "tomatensaus, de",
+    "english": "tomato sauce, the",
+    "vietnamese": "sốt cà chua",
+    "dutchsentence": "Deze pasta heeft veel tomatensaus nodig.",
+    "englishtranslate": "This pasta needs a lot of tomato sauce."
+  },
+  {
+    "dutch": "uur, het",
+    "english": "hour, the",
+    "vietnamese": "giờ",
+    "dutchsentence": "De film duurt twee uur.",
+    "englishtranslate": "The movie lasts two hours."
+  },
+  {
+    "dutch": "verliefd",
+    "english": "in love",
+    "vietnamese": "yêu",
+    "dutchsentence": "Hij is verliefd op zijn collega.",
+    "englishtranslate": "He is in love with his colleague."
+  },
+  {
+    "dutch": "vet",
+    "english": "greasy / fat",
+    "vietnamese": "dầu mỡ / béo",
+    "dutchsentence": "Dit eten is te vet voor mij.",
+    "englishtranslate": "This food is too greasy for me."
+  },
+  {
+    "dutch": "voor",
+    "english": "before, to",
+    "vietnamese": "trước, đến",
+    "dutchsentence": "Ik moet voor het avondeten thuiskomen.",
+    "englishtranslate": "I have to come home before dinner."
+  },
+  {
+    "dutch": "voorstellen (zich -)",
+    "english": "to introduce",
+    "vietnamese": "giới thiệu",
+    "dutchsentence": "Mag ik me even voorstellen?",
+    "englishtranslate": "May I introduce myself quickly?"
+  },
+  {
+    "dutch": "vriend, de",
+    "english": "friend, the",
+    "vietnamese": "bạn",
+    "dutchsentence": "Mijn vriend komt me ophalen.",
+    "englishtranslate": "My friend (male) is coming to pick me up."
+  },
+  {
+    "dutch": "vrijdag",
+    "english": "Friday",
+    "vietnamese": "thứ sáu",
+    "dutchsentence": "Vrijdag is mijn laatste werkdag van de week.",
+    "englishtranslate": "Friday is my last working day of the week."
+  },
+  {
+    "dutch": "vroeg",
+    "english": "early",
+    "vietnamese": "sớm",
+    "dutchsentence": "Ik sta altijd vroeg op.",
+    "englishtranslate": "I always get up early."
+  },
+  {
+    "dutch": "wassen (zich -)",
+    "english": "to wash",
+    "vietnamese": "rửa",
+    "dutchsentence": "Ik ga me wassen na de training.",
+    "englishtranslate": "I am going to wash (myself) after the training."
+  },
+  {
+    "dutch": "water, het",
+    "english": "water, the",
+    "vietnamese": "nước",
+    "dutchsentence": "Drink je genoeg water?",
+    "englishtranslate": "Are you drinking enough water?"
+  },
+  {
+    "dutch": "week, de",
+    "english": "week, the",
+    "vietnamese": "tuần",
+    "dutchsentence": "De week heeft zeven dagen.",
+    "englishtranslate": "The week has seven days."
+  },
+  {
+    "dutch": "werk, het",
+    "english": "work, the",
+    "vietnamese": "công việc",
+    "dutchsentence": "Ik ben moe van het werk.",
+    "englishtranslate": "I am tired from work."
+  },
+  {
+    "dutch": "willen",
+    "english": "want",
+    "vietnamese": "muốn",
+    "dutchsentence": "Wat wil je eten vanavond?",
+    "englishtranslate": "What do you want to eat tonight?"
+  },
+  {
+    "dutch": "woensdag",
+    "english": "Wednesday",
+    "vietnamese": "thứ tư",
+    "dutchsentence": "Mijn vrije dag is op woensdag.",
+    "englishtranslate": "My day off is on Wednesday."
+  },
+  {
+    "dutch": "zaterdag",
+    "english": "Saturday",
+    "vietnamese": "thứ bảy",
+    "dutchsentence": "Zaterdag gaan we naar het strand.",
+    "englishtranslate": "We are going to the beach on Saturday."
+  },
+  {
+    "dutch": "zeep, de",
+    "english": "soap, the",
+    "vietnamese": "xà phòng",
+    "dutchsentence": "Ik heb nieuwe zeep nodig.",
+    "englishtranslate": "I need new soap."
+  },
+  {
+    "dutch": "zelfs",
+    "english": "even",
+    "vietnamese": "thậm chí",
+    "dutchsentence": "Hij was zelfs op tijd voor de les.",
+    "englishtranslate": "He was even on time for class."
+  },
+  {
+    "dutch": "wanneer",
+    "english": "when",
+    "vietnamese": "khi nào",
+    "dutchsentence": "Wanneer kom je terug?",
+    "englishtranslate": "When are you coming back?"
+  },
+  {
+    "dutch": "ziekenhuis, het",
+    "english": "hospital, the",
+    "vietnamese": "bệnh viện",
+    "dutchsentence": "Hij ligt in het ziekenhuis.",
+    "englishtranslate": "He is in the hospital."
+  },
+  {
+    "dutch": "zondag",
+    "english": "Sunday",
+    "vietnamese": "chủ nhật",
+    "dutchsentence": "Zondag is een rustdag.",
+    "englishtranslate": "Sunday is a day of rest."
+  },
+  {
+    "dutch": "zullen",
+    "english": "shall",
+    "vietnamese": "sẽ",
+    "dutchsentence": "Zullen we gaan wandelen?",
+    "englishtranslate": "Shall we go for a walk?"
+  }
 ]

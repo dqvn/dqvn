@@ -1,80 +1,548 @@
 [
-    {"dutch": "adres, het", "english": "address, the", "vietnamese": "địa chỉ"},
-    {"dutch": "auto, de", "english": "car, the", "vietnamese": "xe ô tô"},
-    {"dutch": "begeleiden", "english": "to accompany", "vietnamese": "đồng hành"},
-    {"dutch": "best wel", "english": "quite", "vietnamese": "khá"},
-    {"dutch": "bewegen", "english": "to move", "vietnamese": "di chuyển"},
-    {"dutch": "blauw", "english": "blue", "vietnamese": "xanh"},
-    {"dutch": "blijven", "english": "to stay", "vietnamese": "ở lại"},
-    {"dutch": "boek, het", "english": "book, the", "vietnamese": "sách"},
-    {"dutch": "boodschappen doen", "english": "to do grocery shopping", "vietnamese": "đi mua sắm hàng tạp hóa"},
-    {"dutch": "brief, de", "english": "letter, the", "vietnamese": "chữ cái"},
-    {"dutch": "buurman, de", "english": "neighbour, the", "vietnamese": "người hàng xóm"},
-    {"dutch": "danken", "english": "to thank", "vietnamese": "cảm ơn"},
-    {"dutch": "dansen", "english": "to dance", "vietnamese": "nhảy múa"},
-    {"dutch": "dansles, de", "english": "dancing lesson, the", "vietnamese": "bài học nhảy múa"},
-    {"dutch": "deur, de", "english": "door, the", "vietnamese": "cửa"},
-    {"dutch": "drinken", "english": "to drink", "vietnamese": "uống"},
-    {"dutch": "ei, het", "english": "egg, the", "vietnamese": "trứng"},
-    {"dutch": "erg", "english": "terrible / very", "vietnamese": "khủng khiếp / rất"},
-    {"dutch": "eten", "english": "to eat", "vietnamese": "ăn"},
-    {"dutch": "fietsen", "english": "to cycle", "vietnamese": "đạp xe"},
-    {"dutch": "film, de", "english": "movie, the", "vietnamese": "phim"},
-    {"dutch": "gauw", "english": "soon", "vietnamese": "sớm"},
-    {"dutch": "geluk, het", "english": "luck, the / happiness, the", "vietnamese": "may mắn / hạnh phúc"},
-    {"dutch": "gitaar, de", "english": "guitar, the", "vietnamese": "đàn guitar"},
-    {"dutch": "graag", "english": "to like to do, please", "vietnamese": "thích làm, vui lòng"},
-    {"dutch": "ha", "english": "hi", "vietnamese": "chào"},
-    {"dutch": "hobby, de", "english": "hobby, the", "vietnamese": "sở thích"},
-    {"dutch": "houden van", "english": "to love", "vietnamese": "yêu"},
-    {"dutch": "huisnummer, het", "english": "house number, the", "vietnamese": "số nhà"},
-    {"dutch": "ieder", "english": "every", "vietnamese": "mỗi"},
-    {"dutch": "iedereen", "english": "everybody", "vietnamese": "mọi người"},
-    {"dutch": "joggen", "english": "to jog", "vietnamese": "chạy bộ"},
-    {"dutch": "keer, de", "english": "time, the", "vietnamese": "thời gian"},
-    {"dutch": "keuken, de", "english": "kitchen, the", "vietnamese": "nhà bếp"},
-    {"dutch": "kleur, de", "english": "colour, the", "vietnamese": "màu sắc"},
-    {"dutch": "koffie, de", "english": "coffee, the", "vietnamese": "cà phê"},
-    {"dutch": "koken", "english": "to cook", "vietnamese": "nấu ăn"},
-    {"dutch": "kosten", "english": "to cost", "vietnamese": "chi phí"},
-    {"dutch": "kou, de", "english": "cold, the", "vietnamese": "lạnh"},
-    {"dutch": "leeftijd, de", "english": "age, the", "vietnamese": "tuổi"},
-    {"dutch": "meegaan", "english": "to join", "vietnamese": "tham gia"},
-    {"dutch": "meestal", "english": "most of the time", "vietnamese": "hầu hết thời gian"},
-    {"dutch": "mooi", "english": "beautiful", "vietnamese": "đẹp"},
-    {"dutch": "morgen", "english": "tomorrow", "vietnamese": "ngày mai"},
-    {"dutch": "muis, de", "english": "mouse, the", "vietnamese": "chuột"},
-    {"dutch": "muziek, de", "english": "music, the", "vietnamese": "âm nhạc"},
-    {"dutch": "na", "english": "after", "vietnamese": "sau"},
-    {"dutch": "neus, de", "english": "nose, the", "vietnamese": "mũi"},
-    {"dutch": "niets", "english": "nothing", "vietnamese": "không có gì"},
-    {"dutch": "nooit", "english": "never", "vietnamese": "không bao giờ"},
-    {"dutch": "nummer, het", "english": "number, the", "vietnamese": "số"},
-    {"dutch": "ons", "english": "us", "vietnamese": "chúng tôi"},
-    {"dutch": "pianospelen", "english": "to play the piano", "vietnamese": "chơi piano"},
-    {"dutch": "postcode, de", "english": "postal code, the", "vietnamese": "mã bưu điện"},
-    {"dutch": "reizen", "english": "to travel", "vietnamese": "du lịch"},
-    {"dutch": "rennen", "english": "to run", "vietnamese": "chạy"},
-    {"dutch": "skypen", "english": "to Skype", "vietnamese": "gọi Skype"},
-    {"dutch": "spelen", "english": "to play", "vietnamese": "chơi"},
-    {"dutch": "tarief, het", "english": "price, the", "vietnamese": "giá"},
-    {"dutch": "tennissen", "english": "to play tennis", "vietnamese": "chơi tennis"},
-    {"dutch": "thuisblijven", "english": "to stay at home", "vietnamese": "ở nhà"},
-    {"dutch": "tijd, de", "english": "time, the", "vietnamese": "thời gian"},
-    {"dutch": "vanavond", "english": "this evening, tonight", "vietnamese": "tối nay"},
-    {"dutch": "vanmiddag", "english": "this afternoon", "vietnamese": "chiều nay"},
-    {"dutch": "veel", "english": "a lot, much", "vietnamese": "nhiều"},
-    {"dutch": "vinden", "english": "to find", "vietnamese": "tìm thấy"},
-    {"dutch": "vis, de", "english": "fish, the", "vietnamese": "cá"},
-    {"dutch": "vissen", "english": "to fish", "vietnamese": "câu cá"},
-    {"dutch": "voetballen", "english": "to play soccer", "vietnamese": "chơi bóng đá"},
-    {"dutch": "volleyballen", "english": "to play volleyball", "vietnamese": "chơi bóng chuyền"},
-    {"dutch": "vreselijk", "english": "awful", "vietnamese": "kinh khủng"},
-    {"dutch": "vrij", "english": "free", "vietnamese": "tự do"},
-    {"dutch": "vrouw, de", "english": "woman, the", "vietnamese": "phụ nữ"},
-    {"dutch": "wandelen", "english": "to walk / to hike", "vietnamese": "đi bộ / đi bộ đường dài"},
-    {"dutch": "wat", "english": "what", "vietnamese": "cái gì"},
-    {"dutch": "weekend, het", "english": "weekend, the", "vietnamese": "cuối tuần"},
-    {"dutch": "zin hebben", "english": "to feel like", "vietnamese": "để cảm thấy như"},
-    {"dutch": "zwemmen", "english": "to swim", "vietnamese": "bơi"}
+  {
+    "dutch": "adres, het",
+    "english": "address, the",
+    "vietnamese": "địa chỉ",
+    "dutchsentence": "Wat is het adres van het museum?",
+    "englishtranslate": "What is the address of the museum?"
+  },
+  {
+    "dutch": "auto, de",
+    "english": "car, the",
+    "vietnamese": "xe ô tô",
+    "dutchsentence": "De auto is erg snel.",
+    "englishtranslate": "The car is very fast."
+  },
+  {
+    "dutch": "begeleiden",
+    "english": "to accompany",
+    "vietnamese": "đồng hành",
+    "dutchsentence": "Zij zal de groep begeleiden.",
+    "englishtranslate": "She will accompany the group."
+  },
+  {
+    "dutch": "best wel",
+    "english": "quite",
+    "vietnamese": "khá",
+    "dutchsentence": "Het is best wel koud buiten.",
+    "englishtranslate": "It is quite cold outside."
+  },
+  {
+    "dutch": "bewegen",
+    "english": "to move",
+    "vietnamese": "di chuyển",
+    "dutchsentence": "Je moet meer bewegen voor je gezondheid.",
+    "englishtranslate": "You need to move more for your health."
+  },
+  {
+    "dutch": "blauw",
+    "english": "blue",
+    "vietnamese": "xanh",
+    "dutchsentence": "Mijn favoriete kleur is blauw.",
+    "englishtranslate": "My favorite color is blue."
+  },
+  {
+    "dutch": "blijven",
+    "english": "to stay",
+    "vietnamese": "ở lại",
+    "dutchsentence": "Ik wil graag een week blijven.",
+    "englishtranslate": "I would like to stay for a week."
+  },
+  {
+    "dutch": "boek, het",
+    "english": "book, the",
+    "vietnamese": "sách",
+    "dutchsentence": "Ik lees een spannend boek.",
+    "englishtranslate": "I am reading an exciting book."
+  },
+  {
+    "dutch": "boodschappen doen",
+    "english": "to do grocery shopping",
+    "vietnamese": "đi mua sắm hàng tạp hóa",
+    "dutchsentence": "Ik moet boodschappen doen voor het avondeten.",
+    "englishtranslate": "I need to do grocery shopping for dinner."
+  },
+  {
+    "dutch": "brief, de",
+    "english": "letter, the",
+    "vietnamese": "chữ cái",
+    "dutchsentence": "Ik heb een brief van mijn broer gekregen.",
+    "englishtranslate": "I received a letter from my brother."
+  },
+  {
+    "dutch": "buurman, de",
+    "english": "neighbour, the",
+    "vietnamese": "người hàng xóm",
+    "dutchsentence": "Mijn buurman is erg aardig.",
+    "englishtranslate": "My neighbour (male) is very nice."
+  },
+  {
+    "dutch": "danken",
+    "english": "to thank",
+    "vietnamese": "cảm ơn",
+    "dutchsentence": "Ik wil je danken voor je hulp.",
+    "englishtranslate": "I want to thank you for your help."
+  },
+  {
+    "dutch": "dansen",
+    "english": "to dance",
+    "vietnamese": "nhảy múa",
+    "dutchsentence": "Wij houden van dansen in de club.",
+    "englishtranslate": "We love to dance in the club."
+  },
+  {
+    "dutch": "dansles, de",
+    "english": "dancing lesson, the",
+    "vietnamese": "bài học nhảy múa",
+    "dutchsentence": "Ze gaat elke week naar dansles.",
+    "englishtranslate": "She goes to dancing lessons every week."
+  },
+  {
+    "dutch": "deur, de",
+    "english": "door, the",
+    "vietnamese": "cửa",
+    "dutchsentence": "De deur is open, kom binnen.",
+    "englishtranslate": "The door is open, come in."
+  },
+  {
+    "dutch": "drinken",
+    "english": "to drink",
+    "vietnamese": "uống",
+    "dutchsentence": "Wat wil je drinken?",
+    "englishtranslate": "What do you want to drink?"
+  },
+  {
+    "dutch": "ei, het",
+    "english": "egg, the",
+    "vietnamese": "trứng",
+    "dutchsentence": "Ik eet een ei bij het ontbijt.",
+    "englishtranslate": "I eat an egg for breakfast."
+  },
+  {
+    "dutch": "erg",
+    "english": "terrible / very",
+    "vietnamese": "khủng khiếp / rất",
+    "dutchsentence": "De soep is erg heet.",
+    "englishtranslate": "The soup is very hot."
+  },
+  {
+    "dutch": "eten",
+    "english": "to eat",
+    "vietnamese": "ăn",
+    "dutchsentence": "Wat gaan we vanavond eten?",
+    "englishtranslate": "What are we going to eat tonight?"
+  },
+  {
+    "dutch": "fietsen",
+    "english": "to cycle",
+    "vietnamese": "đạp xe",
+    "dutchsentence": "Wij gaan in het weekend fietsen.",
+    "englishtranslate": "We are going cycling on the weekend."
+  },
+  {
+    "dutch": "film, de",
+    "english": "movie, the",
+    "vietnamese": "phim",
+    "dutchsentence": "Heb je die nieuwe film al gezien?",
+    "englishtranslate": "Have you seen that new movie yet?"
+  },
+  {
+    "dutch": "gauw",
+    "english": "soon",
+    "vietnamese": "sớm",
+    "dutchsentence": "Tot gauw!",
+    "englishtranslate": "See you soon!"
+  },
+  {
+    "dutch": "geluk, het",
+    "english": "luck, the / happiness, the",
+    "vietnamese": "may mắn / hạnh phúc",
+    "dutchsentence": "Ik wens je veel geluk met je examen.",
+    "englishtranslate": "I wish you much luck with your exam."
+  },
+  {
+    "dutch": "gitaar, de",
+    "english": "guitar, the",
+    "vietnamese": "đàn guitar",
+    "dutchsentence": "Kan je gitaar spelen?",
+    "englishtranslate": "Can you play the guitar?"
+  },
+  {
+    "dutch": "graag",
+    "english": "to like to do, please",
+    "vietnamese": "thích làm, vui lòng",
+    "dutchsentence": "Ik drink graag water.",
+    "englishtranslate": "I like to drink water."
+  },
+  {
+    "dutch": "ha",
+    "english": "hi",
+    "vietnamese": "chào",
+    "dutchsentence": "Ha, hoe gaat het met je?",
+    "englishtranslate": "Hi, how are you doing?"
+  },
+  {
+    "dutch": "hobby, de",
+    "english": "hobby, the",
+    "vietnamese": "sở thích",
+    "dutchsentence": "Mijn hobby is lezen.",
+    "englishtranslate": "My hobby is reading."
+  },
+  {
+    "dutch": "houden van",
+    "english": "to love",
+    "vietnamese": "yêu",
+    "dutchsentence": "Ik houd van mijn familie.",
+    "englishtranslate": "I love my family."
+  },
+  {
+    "dutch": "huisnummer, het",
+    "english": "house number, the",
+    "vietnamese": "số nhà",
+    "dutchsentence": "Wat is je huisnummer?",
+    "englishtranslate": "What is your house number?"
+  },
+  {
+    "dutch": "ieder",
+    "english": "every",
+    "vietnamese": "mỗi",
+    "dutchsentence": "Ieder kind heeft een cadeau gekregen.",
+    "englishtranslate": "Every child received a gift."
+  },
+  {
+    "dutch": "iedereen",
+    "english": "everybody",
+    "vietnamese": "mọi người",
+    "dutchsentence": "Iedereen is uitgenodigd voor het feest.",
+    "englishtranslate": "Everybody is invited to the party."
+  },
+  {
+    "dutch": "joggen",
+    "english": "to jog",
+    "vietnamese": "chạy bộ",
+    "dutchsentence": "Ik ga elke ochtend joggen.",
+    "englishtranslate": "I go jogging every morning."
+  },
+  {
+    "dutch": "keer, de",
+    "english": "time, the",
+    "vietnamese": "thời gian",
+    "dutchsentence": "De eerste keer was moeilijk.",
+    "englishtranslate": "The first time was difficult."
+  },
+  {
+    "dutch": "keuken, de",
+    "english": "kitchen, the",
+    "vietnamese": "nhà bếp",
+    "dutchsentence": "De keuken is pas gerenoveerd.",
+    "englishtranslate": "The kitchen has just been renovated."
+  },
+  {
+    "dutch": "kleur, de",
+    "english": "colour, the",
+    "vietnamese": "màu sắc",
+    "dutchsentence": "Wat is je favoriete kleur?",
+    "englishtranslate": "What is your favorite color?"
+  },
+  {
+    "dutch": "koffie, de",
+    "english": "coffee, the",
+    "vietnamese": "cà phê",
+    "dutchsentence": "Ik drink twee koppen koffie per dag.",
+    "englishtranslate": "I drink two cups of coffee a day."
+  },
+  {
+    "dutch": "koken",
+    "english": "to cook",
+    "vietnamese": "nấu ăn",
+    "dutchsentence": "Zij kookt graag Italiaans.",
+    "englishtranslate": "She likes to cook Italian food."
+  },
+  {
+    "dutch": "kosten",
+    "english": "to cost",
+    "vietnamese": "chi phí",
+    "dutchsentence": "Hoeveel kosten die schoenen?",
+    "englishtranslate": "How much do those shoes cost?"
+  },
+  {
+    "dutch": "kou, de",
+    "english": "cold, the",
+    "vietnamese": "lạnh",
+    "dutchsentence": "Ik hou niet van de kou.",
+    "englishtranslate": "I don't like the cold."
+  },
+  {
+    "dutch": "leeftijd, de",
+    "english": "age, the",
+    "vietnamese": "tuổi",
+    "dutchsentence": "Wat is de leeftijd van jouw zus?",
+    "englishtranslate": "What is your sister's age?"
+  },
+  {
+    "dutch": "meegaan",
+    "english": "to join",
+    "vietnamese": "tham gia",
+    "dutchsentence": "Ga je met ons mee naar het park?",
+    "englishtranslate": "Are you joining us to go to the park?"
+  },
+  {
+    "dutch": "meestal",
+    "english": "most of the time",
+    "vietnamese": "hầu hết thời gian",
+    "dutchsentence": "Ik ben meestal thuis in het weekend.",
+    "englishtranslate": "I am home most of the time on the weekend."
+  },
+  {
+    "dutch": "mooi",
+    "english": "beautiful",
+    "vietnamese": "đẹp",
+    "dutchsentence": "Ze heeft een mooie jurk aan.",
+    "englishtranslate": "She is wearing a beautiful dress."
+  },
+  {
+    "dutch": "morgen",
+    "english": "tomorrow",
+    "vietnamese": "ngày mai",
+    "dutchsentence": "Morgen ga ik naar de stad.",
+    "englishtranslate": "Tomorrow I am going to the city."
+  },
+  {
+    "dutch": "muis, de",
+    "english": "mouse, the",
+    "vietnamese": "chuột",
+    "dutchsentence": "De kat jaagt op de muis.",
+    "englishtranslate": "The cat is chasing the mouse."
+  },
+  {
+    "dutch": "muziek, de",
+    "english": "music, the",
+    "vietnamese": "âm nhạc",
+    "dutchsentence": "Luister je graag naar klassieke muziek?",
+    "englishtranslate": "Do you like listening to classical music?"
+  },
+  {
+    "dutch": "na",
+    "english": "after",
+    "vietnamese": "sau",
+    "dutchsentence": "Na het werk ga ik sporten.",
+    "englishtranslate": "After work I am going to exercise."
+  },
+  {
+    "dutch": "neus, de",
+    "english": "nose, the",
+    "vietnamese": "mũi",
+    "dutchsentence": "Hij heeft een grote neus.",
+    "englishtranslate": "He has a big nose."
+  },
+  {
+    "dutch": "niets",
+    "english": "nothing",
+    "vietnamese": "không có gì",
+    "dutchsentence": "Er is niets interessants op tv.",
+    "englishtranslate": "There is nothing interesting on TV."
+  },
+  {
+    "dutch": "nooit",
+    "english": "never",
+    "vietnamese": "không bao giờ",
+    "dutchsentence": "Ik ben nog nooit in Azië geweest.",
+    "englishtranslate": "I have never been to Asia."
+  },
+  {
+    "dutch": "nummer, het",
+    "english": "number, the",
+    "vietnamese": "số",
+    "dutchsentence": "Mijn geluksnummer is zeven.",
+    "englishtranslate": "My lucky number is seven."
+  },
+  {
+    "dutch": "ons",
+    "english": "us",
+    "vietnamese": "chúng tôi",
+    "dutchsentence": "Kun je ons helpen?",
+    "englishtranslate": "Can you help us?"
+  },
+  {
+    "dutch": "pianospelen",
+    "english": "to play the piano",
+    "vietnamese": "chơi piano",
+    "dutchsentence": "Zij kan heel goed pianospelen.",
+    "englishtranslate": "She can play the piano very well."
+  },
+  {
+    "dutch": "postcode, de",
+    "english": "postal code, the",
+    "vietnamese": "mã bưu điện",
+    "dutchsentence": "Wat is de postcode van Amsterdam?",
+    "englishtranslate": "What is the postal code of Amsterdam?"
+  },
+  {
+    "dutch": "reizen",
+    "english": "to travel",
+    "vietnamese": "du lịch",
+    "dutchsentence": "Wij willen graag de hele wereld rond reizen.",
+    "englishtranslate": "We would like to travel all over the world."
+  },
+  {
+    "dutch": "rennen",
+    "english": "to run",
+    "vietnamese": "chạy",
+    "dutchsentence": "Ik kan snel rennen.",
+    "englishtranslate": "I can run fast."
+  },
+  {
+    "dutch": "skypen",
+    "english": "to Skype",
+    "vietnamese": "gọi Skype",
+    "dutchsentence": "Laten we vanavond skypen met elkaar.",
+    "englishtranslate": "Let's Skype with each other tonight."
+  },
+  {
+    "dutch": "spelen",
+    "english": "to play",
+    "vietnamese": "chơi",
+    "dutchsentence": "De kinderen spelen in de tuin.",
+    "englishtranslate": "The children are playing in the garden."
+  },
+  {
+    "dutch": "tarief, het",
+    "english": "price, the",
+    "vietnamese": "giá",
+    "dutchsentence": "Het tarief voor de les is €20.",
+    "englishtranslate": "The price for the lesson is €20."
+  },
+  {
+    "dutch": "tennissen",
+    "english": "to play tennis",
+    "vietnamese": "chơi tennis",
+    "dutchsentence": "Ik ga graag tennissen in het weekend.",
+    "englishtranslate": "I like to play tennis on the weekend."
+  },
+  {
+    "dutch": "thuisblijven",
+    "english": "to stay at home",
+    "vietnamese": "ở nhà",
+    "dutchsentence": "Ik wil liever thuisblijven dan uitgaan.",
+    "englishtranslate": "I prefer to stay at home rather than go out."
+  },
+  {
+    "dutch": "tijd, de",
+    "english": "time, the",
+    "vietnamese": "thời gian",
+    "dutchsentence": "Ik heb geen tijd voor een hobby.",
+    "englishtranslate": "I don't have time for a hobby."
+  },
+  {
+    "dutch": "vanavond",
+    "english": "this evening, tonight",
+    "vietnamese": "tối nay",
+    "dutchsentence": "Wat eten we vanavond?",
+    "englishtranslate": "What are we eating tonight?"
+  },
+  {
+    "dutch": "vanmiddag",
+    "english": "this afternoon",
+    "vietnamese": "chiều nay",
+    "dutchsentence": "Ik ga vanmiddag naar de tandarts.",
+    "englishtranslate": "I'm going to the dentist this afternoon."
+  },
+  {
+    "dutch": "veel",
+    "english": "a lot, much",
+    "vietnamese": "nhiều",
+    "dutchsentence": "Bedankt voor je hulp, heel veel!",
+    "englishtranslate": "Thank you for your help, a lot!"
+  },
+  {
+    "dutch": "vinden",
+    "english": "to find",
+    "vietnamese": "tìm thấy",
+    "dutchsentence": "Ik kan mijn sleutels niet vinden.",
+    "englishtranslate": "I cannot find my keys."
+  },
+  {
+    "dutch": "vis, de",
+    "english": "fish, the",
+    "vietnamese": "cá",
+    "dutchsentence": "De vis zwemt in de zee.",
+    "englishtranslate": "The fish swims in the sea."
+  },
+  {
+    "dutch": "vissen",
+    "english": "to fish",
+    "vietnamese": "câu cá",
+    "dutchsentence": "Mijn opa gaat graag vissen.",
+    "englishtranslate": "My grandfather likes to fish."
+  },
+  {
+    "dutch": "voetballen",
+    "english": "to play soccer",
+    "vietnamese": "chơi bóng đá",
+    "dutchsentence": "Laten we vanmiddag voetballen!",
+    "englishtranslate": "Let's play soccer this afternoon!"
+  },
+  {
+    "dutch": "volleyballen",
+    "english": "to play volleyball",
+    "vietnamese": "chơi bóng chuyền",
+    "dutchsentence": "Zij volleyballen elke dinsdagavond.",
+    "englishtranslate": "They play volleyball every Tuesday evening."
+  },
+  {
+    "dutch": "vreselijk",
+    "english": "awful",
+    "vietnamese": "kinh khủng",
+    "dutchsentence": "Het weer is vreselijk vandaag.",
+    "englishtranslate": "The weather is awful today."
+  },
+  {
+    "dutch": "vrij",
+    "english": "free",
+    "vietnamese": "tự do",
+    "dutchsentence": "Ben je morgenmiddag vrij?",
+    "englishtranslate": "Are you free tomorrow afternoon?"
+  },
+  {
+    "dutch": "vrouw, de",
+    "english": "woman, the",
+    "vietnamese": "phụ nữ",
+    "dutchsentence": "De vrouw leest een krant.",
+    "englishtranslate": "The woman is reading a newspaper."
+  },
+  {
+    "dutch": "wandelen",
+    "english": "to walk / to hike",
+    "vietnamese": "đi bộ / đi bộ đường dài",
+    "dutchsentence": "Zullen we samen gaan wandelen in het bos?",
+    "englishtranslate": "Shall we go walking/hiking together in the forest?"
+  },
+  {
+    "dutch": "wat",
+    "english": "what",
+    "vietnamese": "cái gì",
+    "dutchsentence": "Wat is er gebeurd?",
+    "englishtranslate": "What happened?"
+  },
+  {
+    "dutch": "weekend, het",
+    "english": "weekend, the",
+    "vietnamese": "cuối tuần",
+    "dutchsentence": "Wat ga je doen dit weekend?",
+    "englishtranslate": "What are you going to do this weekend?"
+  },
+  {
+    "dutch": "zin hebben",
+    "english": "to feel like",
+    "vietnamese": "để cảm thấy như",
+    "dutchsentence": "Ik heb zin in een kop thee.",
+    "englishtranslate": "I feel like having a cup of tea."
+  },
+  {
+    "dutch": "zwemmen",
+    "english": "to swim",
+    "vietnamese": "bơi",
+    "dutchsentence": "In de zomer ga ik elke dag zwemmen.",
+    "englishtranslate": "In the summer I go swimming every day."
+  }
 ]
