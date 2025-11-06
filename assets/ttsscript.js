@@ -53,6 +53,7 @@ createLeftMenu();
 
 // init data
 loadJsonData(currentPage, reloadTable);
+document.getElementById('chapter').innerHTML = "(" + currentPage + ")";
 
 // set footer year
 year.textContent = new Date().getFullYear();
@@ -66,6 +67,36 @@ document.addEventListener('DOMContentLoaded', function () {
 // Show Game Play button
 document.getElementById('start-button').addEventListener('click', () => {
   showQuestion();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.getElementById('toggle-menu-button');
+    const container = document.querySelector('.container'); // Get the main container
+
+    // Optional: Get the icon to change it (e.g., from a hamburger to an X or an arrow)
+    const buttonIcon = toggleButton.querySelector('.icon');
+
+    if (toggleButton && container) {
+        toggleButton.addEventListener('click', () => {
+            // Toggle the 'menu-hidden' class on the container
+            container.classList.toggle('menu-hidden');
+
+            // 🌟 Optional: Change the button icon/text 🌟
+            if (container.classList.contains('menu-hidden')) {
+                // Menu is hidden, show an icon to reveal it (e.g., right arrow)
+                buttonIcon.innerHTML = '▶'; // Right arrow (▶)
+                // You might also want to move the button if it's placed inside the left-menu
+                toggleButton.setAttribute('aria-expanded', 'false');
+            } else {
+                // Menu is visible, show an icon to hide it (e.g., hamburger or left arrow)
+                buttonIcon.innerHTML = '☰'; // Hamburger (☰)
+                toggleButton.setAttribute('aria-expanded', 'true');
+            }
+        });
+        
+        // Initial state: set the aria attribute
+        toggleButton.setAttribute('aria-expanded', 'true'); 
+    }
 });
 
 // ========================
@@ -194,6 +225,7 @@ function reloadTable(jsonData) {
     <td>${index + 1}</td>
     <td onclick="speakText('${word.dutch}')"><span class="dutch-word" data-index="${index}">${word.dutch}</span></td>
     <td onclick="speakEngText('${word.english}')"><span class="hide-text">${word.english}</span></td>
+    <td onclick="speakText('${word.dutchsentence}')"><span>${word.dutchsentence}</span><br/><span class="hide-text" style="color: #3f3838ff; opacity: 0.3;">${word.englishtranslate}</span></td>
     <td><span class="hide-text">${word.vietnamese}</span></td>
   `;
     tableBody.appendChild(row);
@@ -202,6 +234,7 @@ function reloadTable(jsonData) {
   for (let i = 0; i < 100; i++) {
     const row = document.createElement('tr');
     row.innerHTML = `
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -249,7 +282,9 @@ function spellNextWord() {
   const randomIndex = getNewRandomNumberCSPRNG(0, wordList.length - 1, recentNumbers);
   const wordNL = wordList[randomIndex].dutch;
   const wordEN = wordList[randomIndex].english;
-  const rowToScroll = tableBody.children[randomIndex];
+  const sample = wordList[randomIndex].dutchsentence;
+  const rowToScroll = tableBody.children[randomIndex - 1];
+  const rowToScrollMain = tableBody.children[randomIndex];
 
   // improving the balance rate of random numbers
   recentNumbers.push(randomIndex);
@@ -257,10 +292,22 @@ function spellNextWord() {
     recentNumbers.shift();
   }
 
+  // Remove highlight from any previously highlighted row
+  Array.from(tableBody.children).forEach(row => {
+    row.classList.remove('highlighted-row');
+  });
+
   // Scroll the row to the top of the screen
   rowToScroll.scrollIntoView({ block: 'start' });
+  
+  // Add highlight to the selected row
+  rowToScrollMain.classList.add('highlighted-row');
 
   speakText(wordNL);
+  // pause 2 seconds
+  setTimeout(() => {
+    speakText(sample);
+  }, 3500);
 
   //setTimeout(speakEngText(wordEN), INTERVAL_TIME);
   if (isPlaying) {
