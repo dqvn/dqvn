@@ -1,24 +1,156 @@
 [
-    {"dutch": "de orde", "english": "the order", "vietnamese": "trật tự"},
-    {"dutch": "de chaos", "english": "the chaos", "vietnamese": "hỗn loạn"},
-    {"dutch": "het bloed", "english": "the blood", "vietnamese": "máu"},
-    {"dutch": "de situatie (-s)", "english": "the situation (situations)", "vietnamese": "tình huống (những tình huống)"},
-    {"dutch": "de pijn", "english": "the pain", "vietnamese": "đau đớn"},
-    {"dutch": "het lichaam (lichamen)", "english": "the body (bodies)", "vietnamese": "cơ thể (những cơ thể)"},
-    {"dutch": "het gezicht (-en)", "english": "the face (faces)", "vietnamese": "khuôn mặt (những khuôn mặt)"},
-    {"dutch": "het hoofd (-en)", "english": "the head (heads)", "vietnamese": "đầu (những cái đầu)"},
-    {"dutch": "de kop (-pen)", "english": "the head (heads)", "vietnamese": "đầu (những cái đầu)"},
-    {"dutch": "de mond (-en)", "english": "the mouth (mouths)", "vietnamese": "miệng (những cái miệng)"},
-    {"dutch": "het oog (ogen)", "english": "the eye (eyes)", "vietnamese": "mắt (những con mắt)"},
-    {"dutch": "het oor (oren)", "english": "the ear (ears)", "vietnamese": "tai (những cái tai)"},
-    {"dutch": "de neus (neuzen)", "english": "the nose (noses)", "vietnamese": "(những cái mũi)"},
-    {"dutch": "de arm (-en)","english":"the arm (arms)","vietnamese":"cánh tay (những cánh tay)"},
-    {"dutch":"de rug (-gen)","english":"the back (backs)","vietnamese":"lưng (những cái lưng)"},
-    {"dutch":"de buik (-en)","english":"the belly (bellies)","vietnamese":"bụng (những cái bụng)"},
-    {"dutch":"de schouder (-s)","english":"the shoulder (shoulders)","vietnamese":"vai (những cái vai)"},
-    {"dutch":"de pols (-en)","english":"the wrist (wrists)","vietnamese":"cổ tay (những cổ tay)"},
-    {"dutch":"de voet (-en)","english":"the foot (feet)","vietnamese":"bàn chân (những bàn chân)"},
-    {"dutch":"het been (benen)","english":"the leg (legs)","vietnamese":"chân (những cái chân)"},
-    {"dutch":"tonen (getoond)","english":"to show (shown)","vietnamese":"hiển thị, đã hiển thị"},
-    {"dutch":"trekken (getrokken)","english":"to pull, pulled","vietnamese":"kéo, đã kéo"}
-  ]
+    {
+        "dutch": "de orde",
+        "english": "the order",
+        "vietnamese": "trật tự",
+        "dutchsentence": "Na de chaos herstelde de politie de orde.",
+        "englishtranslate": "After the chaos, the police restored order."
+    },
+    {
+        "dutch": "de chaos",
+        "english": "the chaos",
+        "vietnamese": "hỗn loạn",
+        "dutchsentence": "De storm veroorzaakte overal chaos in de stad.",
+        "englishtranslate": "The storm caused chaos everywhere in the city."
+    },
+    {
+        "dutch": "het bloed",
+        "english": "the blood",
+        "vietnamese": "máu",
+        "dutchsentence": "Er stroomde bloed uit de kleine wond.",
+        "englishtranslate": "Blood flowed from the small wound."
+    },
+    {
+        "dutch": "de situatie (-s)",
+        "english": "the situation (situations)",
+        "vietnamese": "tình huống (những tình huống)",
+        "dutchsentence": "De economische situatie is de laatste tijd verbeterd.",
+        "englishtranslate": "The economic situation has improved lately."
+    },
+    {
+        "dutch": "de pijn",
+        "english": "the pain",
+        "vietnamese": "đau đớn",
+        "dutchsentence": "Ik heb erge pijn in mijn rug.",
+        "englishtranslate": "I have severe pain in my back."
+    },
+    {
+        "dutch": "het lichaam (lichamen)",
+        "english": "the body (bodies)",
+        "vietnamese": "cơ thể (những cơ thể)",
+        "dutchsentence": "Het menselijk lichaam heeft veel water nodig.",
+        "englishtranslate": "The human body needs a lot of water."
+    },
+    {
+        "dutch": "het gezicht (-en)",
+        "english": "the face (faces)",
+        "vietnamese": "khuôn mặt (những khuôn mặt)",
+        "dutchsentence": "Zijn gezicht werd rood van schaamte.",
+        "englishtranslate": "His face turned red with shame."
+    },
+    {
+        "dutch": "het hoofd (-en)",
+        "english": "the head (heads)",
+        "vietnamese": "đầu (những cái đầu)",
+        "dutchsentence": "Ik heb hoofdpijn; mijn hoofd doet pijn.",
+        "englishtranslate": "I have a headache; my head hurts."
+    },
+    {
+        "dutch": "de kop (-pen)",
+        "english": "the head (heads)",
+        "vietnamese": "đầu (những cái đầu)",
+        "dutchsentence": "Deze uitdrukking wordt vaker gebruikt voor dieren, zoals 'een hond z'n kop'.",
+        "englishtranslate": "This expression is used more often for animals, such as 'a dog's head'."
+    },
+    {
+        "dutch": "de mond (-en)",
+        "english": "the mouth (mouths)",
+        "vietnamese": "miệng (những cái miệng)",
+        "dutchsentence": "Houd je mond gesloten tijdens de les.",
+        "englishtranslate": "Keep your mouth closed during the lesson."
+    },
+    {
+        "dutch": "het oog (ogen)",
+        "english": "the eye (eyes)",
+        "vietnamese": "mắt (những con mắt)",
+        "dutchsentence": "Ze heeft helderblauwe ogen.",
+        "englishtranslate": "She has bright blue eyes."
+    },
+    {
+        "dutch": "het oor (oren)",
+        "english": "the ear (ears)",
+        "vietnamese": "tai (những cái tai)",
+        "dutchsentence": "Ik kan niet goed horen met mijn linkeroor.",
+        "englishtranslate": "I cannot hear well with my left ear."
+    },
+    {
+        "dutch": "de neus (neuzen)",
+        "english": "the nose (noses)",
+        "vietnamese": "(những cái mũi)",
+        "dutchsentence": "Ik heb een verstopte neus door de verkoudheid.",
+        "englishtranslate": "I have a stuffy nose because of the cold."
+    },
+    {
+        "dutch": "de arm (-en)",
+        "english": "the arm (arms)",
+        "vietnamese": "cánh tay (những cánh tay)",
+        "dutchsentence": "Zij heeft een sterke arm na al dat sporten.",
+        "englishtranslate": "She has a strong arm after all that exercise."
+    },
+    {
+        "dutch": "de rug (-gen)",
+        "english": "the back (backs)",
+        "vietnamese": "lưng (những cái lưng)",
+        "dutchsentence": "Ik heb mijn rug bezeerd toen ik viel.",
+        "englishtranslate": "I hurt my back when I fell."
+    },
+    {
+        "dutch": "de buik (-en)",
+        "english": "the belly (bellies)",
+        "vietnamese": "bụng (những cái bụng)",
+        "dutchsentence": "Mijn buik rommelt, ik heb honger.",
+        "englishtranslate": "My belly is rumbling, I'm hungry."
+    },
+    {
+        "dutch": "de schouder (-s)",
+        "english": "the shoulder (shoulders)",
+        "vietnamese": "vai (những cái vai)",
+        "dutchsentence": "Draag de tas over je schouder.",
+        "englishtranslate": "Carry the bag over your shoulder."
+    },
+    {
+        "dutch": "de pols (-en)",
+        "english": "the wrist (wrists)",
+        "vietnamese": "cổ tay (những cổ tay)",
+        "dutchsentence": "Zij draagt een mooi horloge om haar pols.",
+        "englishtranslate": "She wears a beautiful watch on her wrist."
+    },
+    {
+        "dutch": "de voet (-en)",
+        "english": "the foot (feet)",
+        "vietnamese": "bàn chân (những bàn chân)",
+        "dutchsentence": "Ik heb de hele dag op mijn voeten gestaan.",
+        "englishtranslate": "I stood on my feet all day."
+    },
+    {
+        "dutch": "het been (benen)",
+        "english": "the leg (legs)",
+        "vietnamese": "chân (những cái chân)",
+        "dutchsentence": "Hij brak zijn been tijdens het skiën.",
+        "englishtranslate": "He broke his leg while skiing."
+    },
+    {
+        "dutch": "tonen (getoond)",
+        "english": "to show (shown)",
+        "vietnamese": "hiển thị, đã hiển thị",
+        "dutchsentence": "Kun je mij tonen hoe dat werkt?",
+        "englishtranslate": "Can you show me how that works?"
+    },
+    {
+        "dutch": "trekken (getrokken)",
+        "english": "to pull, pulled",
+        "vietnamese": "kéo, đã kéo",
+        "dutchsentence": "Trek hard aan het touw om de bel te luiden.",
+        "englishtranslate": "Pull hard on the rope to ring the bell."
+    }
+]

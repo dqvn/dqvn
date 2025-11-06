@@ -1,10 +1,58 @@
 [
-    {"dutch": "de manier (-en)", "english": "the way (-s)", "vietnamese": "cách (-s)"},
-    {"dutch": "de gewoonte (-s of -n)", "english": "the habit (-s)", "vietnamese": "thói quen (-s)"},
-    {"dutch": "gewoon", "english": "ordinary", "vietnamese": "bình thường"},
-    {"dutch": "genoeg", "english": "enough", "vietnamese": "đủ"},
-    {"dutch": "eindelijk", "english": "finally", "vietnamese": "cuối cùng"},
-    {"dutch": "komaan", "english": "come on", "vietnamese": "đi nào"},
-    {"dutch": "allez / alé", "english": "come on / come on", "vietnamese": "đi nào"},
-    {"dutch": "laten", "english": "to let", "vietnamese": "để"}
+    {
+        "dutch": "de manier (-en)",
+        "english": "the way (-s)",
+        "vietnamese": "cách (-s)",
+        "dutchsentence": "Dit is de beste manier om het probleem op te lossen.",
+        "englishtranslate": "This is the best way to solve the problem."
+    },
+    {
+        "dutch": "de gewoonte (-s of -n)",
+        "english": "the habit (-s)",
+        "vietnamese": "thói quen (-s)",
+        "dutchsentence": "Vroeg opstaan is een goede gewoonte.",
+        "englishtranslate": "Getting up early is a good habit."
+    },
+    {
+        "dutch": "gewoon",
+        "english": "ordinary",
+        "vietnamese": "bình thường",
+        "dutchsentence": "Het is een heel gewone dag vandaag.",
+        "englishtranslate": "It is a very ordinary day today."
+    },
+    {
+        "dutch": "genoeg",
+        "english": "enough",
+        "vietnamese": "đủ",
+        "dutchsentence": "Heb je genoeg gegeten?",
+        "englishtranslate": "Have you eaten enough?"
+    },
+    {
+        "dutch": "eindelijk",
+        "english": "finally",
+        "vietnamese": "cuối cùng",
+        "dutchsentence": "Eindelijk is het weekend!",
+        "englishtranslate": "Finally it is the weekend!"
+    },
+    {
+        "dutch": "komaan",
+        "english": "come on",
+        "vietnamese": "đi nào",
+        "dutchsentence": "Komaan, we moeten opschieten!",
+        "englishtranslate": "Come on, we have to hurry up!"
+    },
+    {
+        "dutch": "allez / alé",
+        "english": "come on / come on",
+        "vietnamese": "đi nào",
+        "dutchsentence": "Allez, nog één keer proberen!",
+        "englishtranslate": "Come on (allez), try one more time!"
+    },
+    {
+        "dutch": "laten",
+        "english": "to let",
+        "vietnamese": "để",
+        "dutchsentence": "Laat me je helpen met die zware tas.",
+        "englishtranslate": "Let me help you with that heavy bag."
+    }
 ]

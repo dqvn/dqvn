@@ -1,16 +1,100 @@
 [
-    {"dutch": "de prijs (prijzen)", "english": "the price (prices)", "vietnamese": "giá (những giá)"},
-    {"dutch": "de meester (-s)", "english": "the master (masters)", "vietnamese": "bậc thầy (những bậc thầy)"},
-    {"dutch": "het geheim (-en)", "english": "the secret (secrets)", "vietnamese": "bí mật (những bí mật)"},
-    {"dutch": "gek", "english": "crazy", "vietnamese": "điên"},
-    {"dutch": "degene", "english": "the one", "vietnamese": "người đó"},
-    {"dutch": "waard", "english": "worth", "vietnamese": "giá trị"},
-    {"dutch": "zodat", "english": "so that", "vietnamese": "để mà"},
-    {"dutch": "zomaar", "english": "just like that", "vietnamese": "chỉ như vậy"},
-    {"dutch": "zoiets", "english": "something like that", "vietnamese": "cái gì đó như vậy"},
-    {"dutch": "ooit", "english": "ever", "vietnamese": "bao giờ"},
-    {"dutch": "uitleggen, legde uit, uitgelegd", "english": "to explain, explained, explained", "vietnamese": "giải thích, đã giải thích, đã giải thích"},
-    {"dutch": "schelen, scheelde, gescheeld", "english": "to matter, mattered, mattered", "vietnamese": "quan trọng, đã quan trọng, đã quan trọng"},
-    {"dutch": "bestaan, bestond, bestaan", "english": "to exist, existed, existed", "vietnamese": "tồn tại, đã tồn tại, đã tồn tại"},
-    {"dutch": "dromen, droomde, gedroomd", "english": "to dream, dreamed, dreamed", "vietnamese": "mơ, đã mơ, đã mơ"}
-  ]
+    {
+        "dutch": "de prijs (prijzen)",
+        "english": "the price (prices)",
+        "vietnamese": "giá (những giá)",
+        "dutchsentence": "Wat is de prijs van deze jas?",
+        "englishtranslate": "What is the price of this coat?"
+    },
+    {
+        "dutch": "de meester (-s)",
+        "english": "the master (masters)",
+        "vietnamese": "bậc thầy (những bậc thầy)",
+        "dutchsentence": "Hij is een meester in de schilderkunst.",
+        "englishtranslate": "He is a master of painting (art)."
+    },
+    {
+        "dutch": "het geheim (-en)",
+        "english": "the secret (secrets)",
+        "vietnamese": "bí mật (những bí mật)",
+        "dutchsentence": "Ik kan je een groot geheim vertellen.",
+        "englishtranslate": "I can tell you a big secret."
+    },
+    {
+        "dutch": "gek",
+        "english": "crazy",
+        "vietnamese": "điên",
+        "dutchsentence": "Hij gedroeg zich een beetje gek op het feest.",
+        "englishtranslate": "He behaved a little crazy at the party."
+    },
+    {
+        "dutch": "degene",
+        "english": "the one",
+        "vietnamese": "người đó",
+        "dutchsentence": "Degene die het werk doet, krijgt de beloning.",
+        "englishtranslate": "The one who does the work gets the reward."
+    },
+    {
+        "dutch": "waard",
+        "english": "worth",
+        "vietnamese": "giá trị",
+        "dutchsentence": "Dat oude horloge is veel geld waard.",
+        "englishtranslate": "That old watch is worth a lot of money."
+    },
+    {
+        "dutch": "zodat",
+        "english": "so that",
+        "vietnamese": "để mà",
+        "dutchsentence": "Ik studeer hard, zodat ik mijn examen haal.",
+        "englishtranslate": "I study hard, so that I pass my exam."
+    },
+    {
+        "dutch": "zomaar",
+        "english": "just like that",
+        "vietnamese": "chỉ như vậy",
+        "dutchsentence": "Je kunt niet zomaar inbreken in een huis.",
+        "englishtranslate": "You can't just break into a house just like that."
+    },
+    {
+        "dutch": "zoiets",
+        "english": "something like that",
+        "vietnamese": "cái gì đó như vậy",
+        "dutchsentence": "Er gebeurde zoiets vreemds gisteren.",
+        "englishtranslate": "Something like that strange happened yesterday."
+    },
+    {
+        "dutch": "ooit",
+        "english": "ever",
+        "vietnamese": "bao giờ",
+        "dutchsentence": "Ben je ooit in Afrika geweest?",
+        "englishtranslate": "Have you ever been to Africa?"
+    },
+    {
+        "dutch": "uitleggen, legde uit, uitgelegd",
+        "english": "to explain, explained, explained",
+        "vietnamese": "giải thích, đã giải thích, đã giải thích",
+        "dutchsentence": "Kan je die moeilijke som aan mij uitleggen?",
+        "englishtranslate": "Can you explain that difficult sum to me?"
+    },
+    {
+        "dutch": "schelen, scheelde, gescheeld",
+        "english": "to matter, mattered, mattered",
+        "vietnamese": "quan trọng, đã quan trọng, đã quan trọng",
+        "dutchsentence": "Het scheelt me niets wat ze denken.",
+        "englishtranslate": "It doesn't matter to me what they think."
+    },
+    {
+        "dutch": "bestaan, bestond, bestaan",
+        "english": "to exist, existed, existed",
+        "vietnamese": "tồn tại, đã tồn tại, đã tồn tại",
+        "dutchsentence": "Wij geloven dat er buitenaards leven moet bestaan.",
+        "englishtranslate": "We believe that alien life must exist."
+    },
+    {
+        "dutch": "dromen, droomde, gedroomd",
+        "english": "to dream, dreamed, dreamed",
+        "vietnamese": "mơ, đã mơ, đã mơ",
+        "dutchsentence": "Ik heb vannacht heel raar gedroomd over vliegende auto's.",
+        "englishtranslate": "I dreamed very strangely last night about flying cars."
+    }
+]

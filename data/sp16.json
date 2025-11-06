@@ -1,21 +1,139 @@
 [
-    {"dutch": "het cijfer", "english": "the number", "vietnamese": "số"},
-    {"dutch": "het getal", "english": "the digit", "vietnamese": "chữ số"},
-    {"dutch": "de leerkracht", "english": "the teacher", "vietnamese": "giáo viên"},
-    {"dutch": "nul", "english": "zero", "vietnamese": "không"},
-    {"dutch": "dertig", "english": "thirty", "vietnamese": "ba mươi"},
-    {"dutch": "veertig", "english": "forty", "vietnamese": "bốn mươi"},
-    {"dutch": "vijftig", "english": "fifty", "vietnamese": "năm mươi"},
-    {"dutch": "zestig", "english": "sixty", "vietnamese": "sáu mươi"},
-    {"dutch": "zeventig", "english": "seventy", "vietnamese": "bảy mươi"},
-    {"dutch": "tachtig", "english": "eighty", "vietnamese": "tám mươi"},
-    {"dutch": "negentig", "english": "ninety", "vietnamese": "chín mươi"},
-    {"dutch": "honderd", "english": "hundred", "vietnamese": "một trăm"},
-    {"dutch": "een miljoen", "english": "one million", "vietnamese": "một triệu"},
-    {"dutch": "een miljard", "english": "one billion", "vietnamese": "một tỷ"},
-    {"dutch": "maal", "english": "times", "vietnamese": "nhân"},
-    {"dutch": "gedeeld door", "english": "divided by", "vietnamese": "chia cho"},
-    {"dutch": "ongeveer", "english": "approximately", "vietnamese": "khoảng"},
-    {"dutch": "zou / zouden", "english": "would", "vietnamese": "sẽ"},
-    {"dutch": "weten", "english": "know", "vietnamese": "biết"}
+  {
+    "dutch": "cijfer, het",
+    "english": "the number / the figure / the grade (school)",
+    "vietnamese": "số / điểm",
+    "dutchsentence": "Welk cijfer heb je gekregen voor de test?",
+    "englishtranslate": "Which grade/number did you receive for the test?"
+  },
+  {
+    "dutch": "getal, het",
+    "english": "the digit / the number",
+    "vietnamese": "chữ số",
+    "dutchsentence": "Het getal duizend is groot.",
+    "englishtranslate": "The number one thousand is big."
+  },
+  {
+    "dutch": "leerkracht, de",
+    "english": "the teacher",
+    "vietnamese": "giáo viên",
+    "dutchsentence": "De leerkracht vraagt ons om te oefenen.",
+    "englishtranslate": "The teacher asks us to practice."
+  },
+  {
+    "dutch": "nul",
+    "english": "zero",
+    "vietnamese": "không",
+    "dutchsentence": "Nul maal twee is nul.",
+    "englishtranslate": "Zero times two is zero."
+  },
+  {
+    "dutch": "dertig",
+    "english": "thirty",
+    "vietnamese": "ba mươi",
+    "dutchsentence": "Ik ben dertig jaar oud.",
+    "englishtranslate": "I am thirty years old."
+  },
+  {
+    "dutch": "veertig",
+    "english": "forty",
+    "vietnamese": "bốn mươi",
+    "dutchsentence": "Mijn vader is ongeveer veertig.",
+    "englishtranslate": "My father is approximately forty."
+  },
+  {
+    "dutch": "vijftig",
+    "english": "fifty",
+    "vietnamese": "năm mươi",
+    "dutchsentence": "De cursus kost vijftig euro.",
+    "englishtranslate": "The course costs fifty euros."
+  },
+  {
+    "dutch": "zestig",
+    "english": "sixty",
+    "vietnamese": "sáu mươi",
+    "dutchsentence": "Twee maal dertig is zestig.",
+    "englishtranslate": "Two times thirty is sixty."
+  },
+  {
+    "dutch": "zeventig",
+    "english": "seventy",
+    "vietnamese": "bảy mươi",
+    "dutchsentence": "Hij is ongeveer zeventig jaar.",
+    "englishtranslate": "He is approximately seventy years old."
+  },
+  {
+    "dutch": "tachtig",
+    "english": "eighty",
+    "vietnamese": "tám mươi",
+    "dutchsentence": "Het duurt tachtig minuten.",
+    "englishtranslate": "It lasts/takes eighty minutes."
+  },
+  {
+    "dutch": "negentig",
+    "english": "ninety",
+    "vietnamese": "chín mươi",
+    "dutchsentence": "Honderd min tien is negentig.",
+    "englishtranslate": "One hundred minus ten is ninety."
+  },
+  {
+    "dutch": "honderd",
+    "english": "hundred",
+    "vietnamese": "một trăm",
+    "dutchsentence": "Dat ding kost honderd euro.",
+    "englishtranslate": "That thing costs one hundred euros."
+  },
+  {
+    "dutch": "miljoen, een",
+    "english": "one million",
+    "vietnamese": "một triệu",
+    "dutchsentence": "Het bedrijf is ongeveer een miljoen waard.",
+    "englishtranslate": "The company is worth about one million.",
+    "notes": "Used here as a noun."
+  },
+  {
+    "dutch": "miljard, een",
+    "english": "one billion",
+    "vietnamese": "một tỷ",
+    "dutchsentence": "Dat is een miljard keer groter.",
+    "englishtranslate": "That is a billion times bigger.",
+    "notes": "Used here as a noun."
+  },
+  {
+    "dutch": "maal",
+    "english": "times (multiplication)",
+    "vietnamese": "nhân",
+    "dutchsentence": "Drie maal vier is twaalf.",
+    "englishtranslate": "Three times four is twelve."
+  },
+  {
+    "dutch": "gedeeld door",
+    "english": "divided by",
+    "vietnamese": "chia cho",
+    "dutchsentence": "Tien gedeeld door twee is vijf.",
+    "englishtranslate": "Ten divided by two is five."
+  },
+  {
+    "dutch": "ongeveer",
+    "english": "approximately / about",
+    "vietnamese": "khoảng",
+    "dutchsentence": "Ik kom ongeveer om vier uur.",
+    "englishtranslate": "I am coming approximately at four o'clock."
+  },
+  {
+    "dutch": "zou / zouden",
+    "english": "would (auxiliary verb)",
+    "vietnamese": "sẽ",
+    "dutchsentence": "Ik zou je willen vragen om hulp.",
+    "englishtranslate": "I would like to ask you for help.",
+    "notes": "Used to express condition or desire (modal verb)."
+  },
+  {
+    "dutch": "weten",
+    "english": "to know (a fact/information)",
+    "vietnamese": "biết",
+    "dutchsentence": "Weet je hoe je deze oefening moet doen?",
+    "englishtranslate": "Do you know how to do this exercise?",
+    "notes": "Different from *kennen* (to know a person/place)."
+  }
 ]

@@ -1,8 +1,44 @@
 [
-    {"dutch":"de prins (-en)","english":"the prince (princes)","vietnamese":"hoàng tử (các hoàng tử)"},
-    {"dutch":"de prinses (-sen)","english":"the princess (princesses)","vietnamese":"công chúa (các công chúa)"},
-    {"dutch":"de periode (-s)","english":"the period (periods)","vietnamese":"giai đoạn (các giai đoạn)"},
-    {"dutch":"de reclame","english":"the advertisement","vietnamese":"quảng cáo"},
-    {"dutch":"onlangs","english":"recently","vietnamese":"gần đây"},
-    {"dutch":"nauwelijks","english":"barely","vietnamese":"hầu như không"}
-  ]
+    {
+        "dutch": "de prins (-en)",
+        "english": "the prince (princes)",
+        "vietnamese": "hoàng tử (các hoàng tử)",
+        "dutchsentence": "De prins van Wales is de troonopvolger.",
+        "englishtranslate": "The prince of Wales is the heir apparent."
+    },
+    {
+        "dutch": "de prinses (-sen)",
+        "english": "the princess (princesses)",
+        "vietnamese": "công chúa (các công chúa)",
+        "dutchsentence": "De kleine prinses droeg een mooie jurk.",
+        "englishtranslate": "The little princess wore a beautiful dress."
+    },
+    {
+        "dutch": "de periode (-s)",
+        "english": "the period (periods) / the time span",
+        "vietnamese": "giai đoạn (các giai đoạn)",
+        "dutchsentence": "Tijdens deze periode waren de winkels gesloten.",
+        "englishtranslate": "During this period, the shops were closed."
+    },
+    {
+        "dutch": "de reclame",
+        "english": "the advertisement / the advertising",
+        "vietnamese": "quảng cáo",
+        "dutchsentence": "Er is te veel reclame op televisie tegenwoordig.",
+        "englishtranslate": "There is too much advertising on television nowadays."
+    },
+    {
+        "dutch": "onlangs",
+        "english": "recently",
+        "vietnamese": "gần đây",
+        "dutchsentence": "Onlangs heb ik een nieuwe computer gekocht.",
+        "englishtranslate": "I recently bought a new computer."
+    },
+    {
+        "dutch": "nauwelijks",
+        "english": "barely / scarcely",
+        "vietnamese": "hầu như không",
+        "dutchsentence": "Ik heb nauwelijks geslapen vannacht.",
+        "englishtranslate": "I barely slept last night."
+    }
+]

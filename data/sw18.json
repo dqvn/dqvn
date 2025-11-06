@@ -1,10 +1,58 @@
 [
-    {"dutch": "het procent (-en)", "english": "the percent (-s)", "vietnamese": "phần trăm (-s)"},
-    {"dutch": "de film (-s)", "english": "the film (-s)", "vietnamese": "phim (-s)"},
-    {"dutch": "de video (-s)", "english": "the video (-s)", "vietnamese": "video (-s)"},
-    {"dutch": "heel", "english": "very", "vietnamese": "rất"},
-    {"dutch": "speciaal", "english": "special", "vietnamese": "đặc biệt"},
-    {"dutch": "pardon", "english": "pardon", "vietnamese": "xin lỗi"},
-    {"dutch": "excuseer", "english": "excuse me", "vietnamese": "xin lỗi"},
-    {"dutch": "niks", "english": "nothing", "vietnamese": "không có gì"}
+    {
+        "dutch": "het procent (-en)",
+        "english": "the percent (-s)",
+        "vietnamese": "phần trăm (-s)",
+        "dutchsentence": "Tien procent van de studenten was afwezig.",
+        "englishtranslate": "Ten percent of the students were absent."
+    },
+    {
+        "dutch": "de film (-s)",
+        "english": "the film (-s)",
+        "vietnamese": "phim (-s)",
+        "dutchsentence": "Heb je die nieuwe film al gezien in de bioscoop?",
+        "englishtranslate": "Have you seen that new film in the cinema yet?"
+    },
+    {
+        "dutch": "de video (-s)",
+        "english": "the video (-s)",
+        "vietnamese": "video (-s)",
+        "dutchsentence": "De video over de vogels was erg informatief.",
+        "englishtranslate": "The video about the birds was very informative."
+    },
+    {
+        "dutch": "heel",
+        "english": "very",
+        "vietnamese": "rất",
+        "dutchsentence": "Het was een heel warme dag.",
+        "englishtranslate": "It was a very warm day."
+    },
+    {
+        "dutch": "speciaal",
+        "english": "special",
+        "vietnamese": "đặc biệt",
+        "dutchsentence": "Ze kreeg een speciaal cadeau voor haar verjaardag.",
+        "englishtranslate": "She received a special gift for her birthday."
+    },
+    {
+        "dutch": "pardon",
+        "english": "pardon",
+        "vietnamese": "xin lỗi",
+        "dutchsentence": "Pardon, zou u dat alstublieft willen herhalen?",
+        "englishtranslate": "Pardon, would you please repeat that?"
+    },
+    {
+        "dutch": "excuseer",
+        "english": "excuse me",
+        "vietnamese": "xin lỗi",
+        "dutchsentence": "Excuseer, mag ik er even langs?",
+        "englishtranslate": "Excuse me, may I pass through?"
+    },
+    {
+        "dutch": "niks",
+        "english": "nothing",
+        "vietnamese": "không có gì",
+        "dutchsentence": "Maak je geen zorgen, er is niks aan de hand.",
+        "englishtranslate": "Don't worry, there's nothing going on (nothing is wrong)."
+    }
 ]

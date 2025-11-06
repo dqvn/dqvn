@@ -1,7 +1,39 @@
 [
-    {"dutch": "de herhaling", "english": "the repetition", "vietnamese": "sự lặp lại"},
-    {"dutch": "de woning", "english": "the dwelling", "vietnamese": "nhà ở"},
-    {"dutch": "zo", "english": "so", "vietnamese": "như vậy"},
-    {"dutch": "zoals", "english": "as", "vietnamese": "như"},
-    {"dutch": "welkom", "english": "welcome", "vietnamese": "chào mừng"}
+  {
+    "dutch": "herhaling, de",
+    "english": "the repetition / the review",
+    "vietnamese": "sự lặp lại / ôn tập",
+    "dutchsentence": "Herhaling is belangrijk voor het leren.",
+    "englishtranslate": "Repetition is important for learning."
+  },
+  {
+    "dutch": "woning, de",
+    "english": "the dwelling / the residence",
+    "vietnamese": "nhà ở",
+    "dutchsentence": "Het appartement is een mooie woning.",
+    "englishtranslate": "The apartment is a beautiful dwelling (residence)."
+  },
+  {
+    "dutch": "zo",
+    "english": "so / like this / such a",
+    "vietnamese": "như vậy",
+    "dutchsentence": "Het is zo goed dat je mee komt.",
+    "englishtranslate": "It is so good that you are coming along."
+  },
+  {
+    "dutch": "zoals",
+    "english": "as / such as / like",
+    "vietnamese": "như",
+    "dutchsentence": "Ik werk zoals een verhuurder.",
+    "englishtranslate": "I work as a landlord.",
+    "notes": "Used to denote comparison or function."
+  },
+  {
+    "dutch": "welkom",
+    "english": "welcome",
+    "vietnamese": "chào mừng",
+    "dutchsentence": "Welkom in onze nieuwe woning!",
+    "englishtranslate": "Welcome to our new dwelling!",
+    "notes": "Often used with *zijn* or as an exclamation."
+  }
 ]

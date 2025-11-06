@@ -1,11 +1,65 @@
 [
-    {"dutch": "het voorbeeld", "english": "the example", "vietnamese": "ví dụ"},
-    {"dutch": "de grammatica", "english": "the grammar", "vietnamese": "ngữ pháp"},
-    {"dutch": "de regel", "english": "the rule", "vietnamese": "quy tắc"},
-    {"dutch": "de uitzondering", "english": "the exception", "vietnamese": "ngoại lệ"},
-    {"dutch": "meer", "english": "more", "vietnamese": "nhiều hơn"},
-    {"dutch": "minder", "english": "less", "vietnamese": "ít hơn"},
-    {"dutch": "opnieuw", "english": "again", "vietnamese": "lại"},
-    {"dutch": "bijvoorbeeld", "english": "for example", "vietnamese": "ví dụ"},
-    {"dutch": "te", "english": "too", "vietnamese": "quá"}
+  {
+    "dutch": "voorbeeld, het",
+    "english": "the example",
+    "vietnamese": "ví dụ",
+    "dutchsentence": "Kan je een voorbeeld van deze regel geven?",
+    "englishtranslate": "Can you give an example of this rule?"
+  },
+  {
+    "dutch": "grammatica, de",
+    "english": "the grammar",
+    "vietnamese": "ngữ pháp",
+    "dutchsentence": "De grammatica van het Nederlands is moeilijk.",
+    "englishtranslate": "The grammar of Dutch is difficult."
+  },
+  {
+    "dutch": "regel, de",
+    "english": "the rule",
+    "vietnamese": "quy tắc",
+    "dutchsentence": "Er zijn veel regels om te leren.",
+    "englishtranslate": "There are many rules to learn."
+  },
+  {
+    "dutch": "uitzondering, de",
+    "english": "the exception",
+    "vietnamese": "ngoại lệ",
+    "dutchsentence": "Deze regel heeft een uitzondering.",
+    "englishtranslate": "This rule has an exception."
+  },
+  {
+    "dutch": "meer",
+    "english": "more",
+    "vietnamese": "nhiều hơn",
+    "dutchsentence": "Ik wil meer oefenen met schrijven.",
+    "englishtranslate": "I want to practice writing more."
+  },
+  {
+    "dutch": "minder",
+    "english": "less / fewer",
+    "vietnamese": "ít hơn",
+    "dutchsentence": "Ik heb minder tijd dan jij.",
+    "englishtranslate": "I have less time than you."
+  },
+  {
+    "dutch": "opnieuw",
+    "english": "again / anew",
+    "vietnamese": "lại",
+    "dutchsentence": "We moeten deze oefening opnieuw doen.",
+    "englishtranslate": "We must do this exercise again."
+  },
+  {
+    "dutch": "bijvoorbeeld",
+    "english": "for example",
+    "vietnamese": "ví dụ",
+    "dutchsentence": "Ik wil meer eten, bijvoorbeeld brood.",
+    "englishtranslate": "I want to eat more, for example bread."
+  },
+  {
+    "dutch": "te",
+    "english": "too (adverb of degree)",
+    "vietnamese": "quá",
+    "dutchsentence": "Het is te moeilijk om nu te begrijpen.",
+    "englishtranslate": "It is too difficult to understand now."
+  }
 ]

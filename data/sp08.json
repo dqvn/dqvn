@@ -1,14 +1,88 @@
 [
-    {"dutch": "het bedrijf", "english": "the company", "vietnamese": "công ty"},
-    {"dutch": "de taalschool", "english": "the language school", "vietnamese": "trường ngôn ngữ"},
-    {"dutch": "de taal", "english": "the language", "vietnamese": "ngôn ngữ"},
-    {"dutch": "het transport", "english": "the transport", "vietnamese": "vận chuyển"},
-    {"dutch": "het ziekenhuis", "english": "the hospital", "vietnamese": "bệnh viện"},
-    {"dutch": "het restaurant", "english": "the restaurant", "vietnamese": "nhà hàng"},
-    {"dutch": "het bureau", "english": "the office", "vietnamese": "văn phòng"},
-    {"dutch": "de bakkerij", "english": "the bakery", "vietnamese": "tiệm bánh"},
-    {"dutch": "de slagerij", "english": "the butcher shop", "vietnamese": "tiệm thịt"},
-    {"dutch": "de tuin", "english": "the garden", "vietnamese": "vườn"},
-    {"dutch": "het pensioen", "english": "the pension", "vietnamese": "lương hưu"},
-    {"dutch": "thuis", "english": "home", "vietnamese": "nhà"}
+  {
+    "dutch": "bedrijf, het",
+    "english": "the company / the firm",
+    "vietnamese": "công ty",
+    "dutchsentence": "Mijn baas werkt in dit bedrijf.",
+    "englishtranslate": "My boss works in this company."
+  },
+  {
+    "dutch": "taalschool, de",
+    "english": "the language school",
+    "vietnamese": "trường ngôn ngữ",
+    "dutchsentence": "Ik studeer Nederlands bij de taalschool.",
+    "englishtranslate": "I study Dutch at the language school."
+  },
+  {
+    "dutch": "taal, de",
+    "english": "the language",
+    "vietnamese": "ngôn ngữ",
+    "dutchsentence": "Welke taal spreek je?",
+    "englishtranslate": "Which language do you speak?"
+  },
+  {
+    "dutch": "transport, het",
+    "english": "the transport / the transportation",
+    "vietnamese": "vận chuyển",
+    "dutchsentence": "Het bedrijf doet transport van goederen.",
+    "englishtranslate": "The company does transport of goods."
+  },
+  {
+    "dutch": "ziekenhuis, het",
+    "english": "the hospital",
+    "vietnamese": "bệnh viện",
+    "dutchsentence": "De dokter werkt in het ziekenhuis.",
+    "englishtranslate": "The doctor works in the hospital."
+  },
+  {
+    "dutch": "restaurant, het",
+    "english": "the restaurant",
+    "vietnamese": "nhà hàng",
+    "dutchsentence": "We gaan uit eten in het restaurant.",
+    "englishtranslate": "We are going out for dinner in the restaurant."
+  },
+  {
+    "dutch": "bureau, het",
+    "english": "the office / the desk",
+    "vietnamese": "văn phòng",
+    "dutchsentence": "De secretaresse zit op het bureau.",
+    "englishtranslate": "The secretary is sitting at the office/desk."
+  },
+  {
+    "dutch": "bakkerij, de",
+    "english": "the bakery",
+    "vietnamese": "tiệm bánh",
+    "dutchsentence": "De bakker werkt in de bakkerij.",
+    "englishtranslate": "The baker works in the bakery."
+  },
+  {
+    "dutch": "slagerij, de",
+    "english": "the butcher shop",
+    "vietnamese": "tiệm thịt",
+    "dutchsentence": "De slager verkoopt vlees bij de slagerij.",
+    "englishtranslate": "The butcher sells meat at the butcher shop."
+  },
+  {
+    "dutch": "tuin, de",
+    "english": "the garden",
+    "vietnamese": "vườn",
+    "dutchsentence": "De tuinier werkt in de tuin.",
+    "englishtranslate": "The gardener works in the garden."
+  },
+  {
+    "dutch": "pensioen, het",
+    "english": "the pension / retirement",
+    "vietnamese": "lương hưu",
+    "dutchsentence": "Mijn oma gaat binnenkort met pensioen.",
+    "englishtranslate": "My grandmother is going into retirement soon.",
+    "notes": "Met pensioen gaan (to go into retirement)"
+  },
+  {
+    "dutch": "thuis",
+    "english": "home (adverb of location)",
+    "vietnamese": "nhà",
+    "dutchsentence": "Ik ben thuis aan het oefenen.",
+    "englishtranslate": "I am practicing at home.",
+    "notes": "Thuis is an adverb. Naar huis (to home/homewards)."
+  }
 ]

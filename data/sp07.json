@@ -1,17 +1,107 @@
 [
-    {"dutch": "de televisie", "english": "the television", "vietnamese": "tivi"},
-    {"dutch": "de tv", "english": "the TV", "vietnamese": "tivi"},
-    {"dutch": "de muziek", "english": "the music", "vietnamese": "âm nhạc"},
-    {"dutch": "wel", "english": "well", "vietnamese": "tốt"},
-    {"dutch": "men", "english": "one", "vietnamese": "người ta"},
-    {"dutch": "studeren", "english": "study", "vietnamese": "học"},
-    {"dutch": "vragen", "english": "ask", "vietnamese": "hỏi"},
-    {"dutch": "antwoorden", "english": "answer", "vietnamese": "trả lời"},
-    {"dutch": "oefenen", "english": "practice", "vietnamese": "luyện tập"},
-    {"dutch": "luisteren", "english": "listen", "vietnamese": "nghe"},
-    {"dutch": "horen", "english": "hear", "vietnamese": "nghe thấy"},
-    {"dutch": "kijken", "english": "look", "vietnamese": "nhìn"},
-    {"dutch": "zien", "english": "see", "vietnamese": "thấy"},
-    {"dutch": "praten", "english": "talk", "vietnamese": "nói chuyện"},
-    {"dutch": "zeggen", "english": "say", "vietnamese": "nói"}
+  {
+    "dutch": "televisie, de",
+    "english": "the television",
+    "vietnamese": "tivi",
+    "dutchsentence": "Ik kijk televisie in de pauze.",
+    "englishtranslate": "I watch television during the break."
+  },
+  {
+    "dutch": "tv, de",
+    "english": "the TV",
+    "vietnamese": "tivi",
+    "dutchsentence": "De tv is nieuw en hoog.",
+    "englishtranslate": "The TV is new and high."
+  },
+  {
+    "dutch": "muziek, de",
+    "english": "the music",
+    "vietnamese": "âm nhạc",
+    "dutchsentence": "Ik luister naar muziek tijdens het werken.",
+    "englishtranslate": "I listen to music while working."
+  },
+  {
+    "dutch": "wel",
+    "english": "well / indeed / yes (contrasting)",
+    "vietnamese": "tốt / thực sự",
+    "dutchsentence": "Ik hoor wel de muziek!",
+    "englishtranslate": "I do indeed hear the music!"
+  },
+  {
+    "dutch": "men",
+    "english": "one / people (impersonal pronoun)",
+    "vietnamese": "người ta",
+    "dutchsentence": "Men zegt dat studeren moeilijk is.",
+    "englishtranslate": "One/people say that studying is difficult."
+  },
+  {
+    "dutch": "studeren",
+    "english": "to study",
+    "vietnamese": "học",
+    "dutchsentence": "Waar studeer je?",
+    "englishtranslate": "Where do you study?"
+  },
+  {
+    "dutch": "vragen",
+    "english": "to ask",
+    "vietnamese": "hỏi",
+    "dutchsentence": "Ik wil je iets vragen.",
+    "englishtranslate": "I want to ask you something."
+  },
+  {
+    "dutch": "antwoorden",
+    "english": "to answer",
+    "vietnamese": "trả lời",
+    "dutchsentence": "Kun je antwoorden op de vraag?",
+    "englishtranslate": "Can you answer the question?"
+  },
+  {
+    "dutch": "oefenen",
+    "english": "to practice",
+    "vietnamese": "luyện tập",
+    "dutchsentence": "We moeten oefenen met deze zinnen.",
+    "englishtranslate": "We have to practice with these sentences."
+  },
+  {
+    "dutch": "luisteren",
+    "english": "to listen",
+    "vietnamese": "nghe",
+    "dutchsentence": "Luister naar de leraar.",
+    "englishtranslate": "Listen to the teacher."
+  },
+  {
+    "dutch": "horen",
+    "english": "to hear",
+    "vietnamese": "nghe thấy",
+    "dutchsentence": "Hoor je die muziek op de gang?",
+    "englishtranslate": "Do you hear that music in the hallway?"
+  },
+  {
+    "dutch": "kijken",
+    "english": "to look / to watch (actively)",
+    "vietnamese": "nhìn",
+    "dutchsentence": "Waar kijk je naar?",
+    "englishtranslate": "What are you looking at?"
+  },
+  {
+    "dutch": "zien",
+    "english": "to see (passively)",
+    "vietnamese": "thấy",
+    "dutchsentence": "Zie je de letter op het bord?",
+    "englishtranslate": "Do you see the letter on the board?"
+  },
+  {
+    "dutch": "praten",
+    "english": "to talk / to speak",
+    "vietnamese": "nói chuyện",
+    "dutchsentence": "Ze praten over hun werk.",
+    "englishtranslate": "They talk about their work."
+  },
+  {
+    "dutch": "zeggen",
+    "english": "to say",
+    "vietnamese": "nói",
+    "dutchsentence": "Wat zeg je?",
+    "englishtranslate": "What are you saying?"
+  }
 ]

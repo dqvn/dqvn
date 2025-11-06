@@ -1,22 +1,144 @@
 [
-  {"dutch": "de ober", "english": "the waiter", "vietnamese": "người phục vụ nam"},
-  {"dutch": "de serveuse", "english": "the waitress", "vietnamese": "người phục vụ nữ"},
-  {"dutch": "de wijn", "english": "the wine", "vietnamese": "rượu vang"},
-  {"dutch": "de mens", "english": "the human", "vietnamese": "con người"},
-  {"dutch": "het ding", "english": "the thing", "vietnamese": "đồ vật"},
-  {"dutch": "de kleur", "english": "the color", "vietnamese": "màu sắc"},
-  {"dutch": "rood", "english": "red", "vietnamese": "màu đỏ"},
-  {"dutch": "wit", "english": "white", "vietnamese": "màu trắng"},
-  {"dutch": "zwart", "english": "black", "vietnamese": "màu đen"},
-  {"dutch": "groen", "english": "green", "vietnamese": "màu xanh lá cây"},
-  {"dutch": "geel", "english": "yellow", "vietnamese": "màu vàng"},
-  {"dutch": "blauw", "english": "blue", "vietnamese": "màu xanh dương"},
-  {"dutch": "oranje", "english": "orange", "vietnamese": "màu cam"},
-  {"dutch": "bruin", "english": "brown", "vietnamese": "màu nâu"},
-  {"dutch": "paars", "english": "purple", "vietnamese": "màu tím"},
-  {"dutch": "roze", "english": "pink", "vietnamese": "màu hồng"},
-  {"dutch": "door", "english": "through", "vietnamese": "qua"},
-  {"dutch": "ieder, iedere", "english": "each", "vietnamese": "mỗi"},
-  {"dutch": "elk, elke", "english": "every", "vietnamese": "mỗi"},
-  {"dutch": "vaak", "english": "often", "vietnamese": "thường xuyên"}
+  {
+    "dutch": "ober, de",
+    "english": "the waiter",
+    "vietnamese": "người phục vụ nam",
+    "dutchsentence": "De ober brengt ons de wijn.",
+    "englishtranslate": "The waiter brings us the wine."
+  },
+  {
+    "dutch": "serveuse, de",
+    "english": "the waitress",
+    "vietnamese": "người phục vụ nữ",
+    "dutchsentence": "De serveuse werkt in het restaurant.",
+    "englishtranslate": "The waitress works in the restaurant."
+  },
+  {
+    "dutch": "wijn, de",
+    "english": "the wine",
+    "vietnamese": "rượu vang",
+    "dutchsentence": "Wil je rode wijn of witte wijn?",
+    "englishtranslate": "Do you want red wine or white wine?"
+  },
+  {
+    "dutch": "mens, de",
+    "english": "the human / the person",
+    "vietnamese": "con người",
+    "dutchsentence": "Ieder mens heeft een hart.",
+    "englishtranslate": "Every human/person has a heart."
+  },
+  {
+    "dutch": "ding, het",
+    "english": "the thing",
+    "vietnamese": "đồ vật",
+    "dutchsentence": "Wat is dat kleine ding op het bureau?",
+    "englishtranslate": "What is that small thing on the desk?"
+  },
+  {
+    "dutch": "kleur, de",
+    "english": "the color",
+    "vietnamese": "màu sắc",
+    "dutchsentence": "Mijn favoriete kleur is blauw.",
+    "englishtranslate": "My favourite color is blue."
+  },
+  {
+    "dutch": "rood",
+    "english": "red",
+    "vietnamese": "màu đỏ",
+    "dutchsentence": "Ik draag een rode rok.",
+    "englishtranslate": "I am wearing a red skirt."
+  },
+  {
+    "dutch": "wit",
+    "english": "white",
+    "vietnamese": "màu trắng",
+    "dutchsentence": "Ik heb witte schoenen gekocht.",
+    "englishtranslate": "I have bought white shoes."
+  },
+  {
+    "dutch": "zwart",
+    "english": "black",
+    "vietnamese": "màu đen",
+    "dutchsentence": "Hij draagt vaak zwarte kleren.",
+    "englishtranslate": "He often wears black clothes."
+  },
+  {
+    "dutch": "groen",
+    "english": "green",
+    "vietnamese": "màu xanh lá cây",
+    "dutchsentence": "De tuin is groen in de lente.",
+    "englishtranslate": "The garden is green in the spring."
+  },
+  {
+    "dutch": "geel",
+    "english": "yellow",
+    "vietnamese": "màu vàng",
+    "dutchsentence": "De zon is geel.",
+    "englishtranslate": "The sun is yellow."
+  },
+  {
+    "dutch": "blauw",
+    "english": "blue",
+    "vietnamese": "màu xanh dương",
+    "dutchsentence": "Zijn ogen zijn blauw.",
+    "englishtranslate": "His eyes are blue."
+  },
+  {
+    "dutch": "oranje",
+    "english": "orange",
+    "vietnamese": "màu cam",
+    "dutchsentence": "Oranje is de nationale kleur.",
+    "englishtranslate": "Orange is the national color."
+  },
+  {
+    "dutch": "bruin",
+    "english": "brown",
+    "vietnamese": "màu nâu",
+    "dutchsentence": "Mijn tas is bruin en oud.",
+    "englishtranslate": "My bag is brown and old."
+  },
+  {
+    "dutch": "paars",
+    "english": "purple",
+    "vietnamese": "màu tím",
+    "dutchsentence": "Ik zie paarse bloemen in de tuin.",
+    "englishtranslate": "I see purple flowers in the garden."
+  },
+  {
+    "dutch": "roze",
+    "english": "pink",
+    "vietnamese": "màu hồng",
+    "dutchsentence": "Ze draagt een roze t-shirt.",
+    "englishtranslate": "She is wearing a pink t-shirt."
+  },
+  {
+    "dutch": "door",
+    "english": "through / by",
+    "vietnamese": "qua",
+    "dutchsentence": "We lopen door de gang naar buiten.",
+    "englishtranslate": "We walk through the hallway to outside."
+  },
+  {
+    "dutch": "ieder, iedere",
+    "english": "each / every (used with *de* and *het* words)",
+    "vietnamese": "mỗi",
+    "dutchsentence": "Iedere student moet leren.",
+    "englishtranslate": "Every student must learn.",
+    "notes": "*Ieder* for *het* words, *iedere* for *de* words."
+  },
+  {
+    "dutch": "elk, elke",
+    "english": "each / every (used with *de* and *het* words, often interchangeable with *ieder/iedere* in speech)",
+    "vietnamese": "mỗi",
+    "dutchsentence": "Elk woord in de lijst is belangrijk.",
+    "englishtranslate": "Every word in the list is important.",
+    "notes": "*Elk* for *het* words, *elke* for *de* words."
+  },
+  {
+    "dutch": "vaak",
+    "english": "often / frequently",
+    "vietnamese": "thường xuyên",
+    "dutchsentence": "Ik lees vaak artikelen op die website.",
+    "englishtranslate": "I often read articles on that website."
+  }
 ]

@@ -1,23 +1,149 @@
 [
-    {"dutch": "het spel (-len)", "english": "the game (games)", "vietnamese": "trò chơi (những trò chơi)"},
-    {"dutch": "scheidbaar", "english": "separable", "vietnamese": "có thể tách rời"},
-    {"dutch": "zelf", "english": "self", "vietnamese": "bản thân"},
-    {"dutch": "binnenkomen (binnengekomen)", "english": "to enter (entered)", "vietnamese": "vào (đã vào)"},
-    {"dutch": "opgeven (opgegeven)", "english": "to give up (given up)", "vietnamese": "bỏ cuộc (đã bỏ cuộc)"},
-    {"dutch": "krijgen", "english": "to get", "vietnamese": "nhận"},
-    {"dutch": "kijken", "english": "to look", "vietnamese": "nhìn"},
-    {"dutch": "rijden", "english": "to drive", "vietnamese": "lái xe"},
-    {"dutch": "blijven", "english": "to stay", "vietnamese": "ở lại"},
-    {"dutch": "beschrijven", "english": "to describe", "vietnamese": "mô tả"},
-    {"dutch": "bewijzen", "english": "to prove", "vietnamese": "chứng minh"},
-    {"dutch": "lijken", "english": "to seem", "vietnamese": "dường như"},
-    {"dutch": "houden", "english": "to hold", "vietnamese": "giữ"},
-    {"dutch": "helpen", "english": "to help", "vietnamese": "giúp đỡ"},
-    {"dutch": "vallen", "english": "to fall", "vietnamese": "ngã"},
-    {"dutch": "laten", "english": "to let", "vietnamese": "để"},
-    {"dutch": "lopen", "english": "to walk", "vietnamese": "đi bộ"},
-    {"dutch": "slapen", "english": "to sleep", "vietnamese": "ngủ"},
-    {"dutch": "sterven", "english": "to die", "vietnamese": "chết"},
-    {"dutch": "worden", "english": "to become", "vietnamese": "trở thành"},
-    {"dutch": "vriezen", "english": "to freeze", "vietnamese": "đóng băng"}
-  ]
+    {
+        "dutch": "het spel (-len)",
+        "english": "the game (games)",
+        "vietnamese": "trò chơi (những trò chơi)",
+        "dutchsentence": "Wie heeft het spel gewonnen gisteren?",
+        "englishtranslate": "Who won the game yesterday?"
+    },
+    {
+        "dutch": "scheidbaar",
+        "english": "separable",
+        "vietnamese": "có thể tách rời",
+        "dutchsentence": "Veel samengestelde werkwoorden zijn scheidbaar.",
+        "englishtranslate": "Many compound verbs are separable."
+    },
+    {
+        "dutch": "zelf",
+        "english": "self",
+        "vietnamese": "bản thân",
+        "dutchsentence": "Ik heb het huiswerk zelf gedaan.",
+        "englishtranslate": "I did the homework myself."
+    },
+    {
+        "dutch": "binnenkomen (binnengekomen)",
+        "english": "to enter (entered)",
+        "vietnamese": "vào (đã vào)",
+        "dutchsentence": "Je mag hier niet binnenkomen zonder uitnodiging.",
+        "englishtranslate": "You may not enter here without an invitation."
+    },
+    {
+        "dutch": "opgeven (opgegeven)",
+        "english": "to give up (given up)",
+        "vietnamese": "bỏ cuộc (đã bỏ cuộc)",
+        "dutchsentence": "Je moet nooit opgeven, ook al is het moeilijk.",
+        "englishtranslate": "You must never give up, even if it is difficult."
+    },
+    {
+        "dutch": "krijgen",
+        "english": "to get",
+        "vietnamese": "nhận",
+        "dutchsentence": "Ik hoop dat ik een cadeau krijg voor mijn verjaardag.",
+        "englishtranslate": "I hope that I get a gift for my birthday."
+    },
+    {
+        "dutch": "kijken",
+        "english": "to look",
+        "vietnamese": "nhìn",
+        "dutchsentence": "Kijk uit naar de rode auto die voorbij rijdt.",
+        "englishtranslate": "Look out for the red car driving past."
+    },
+    {
+        "dutch": "rijden",
+        "english": "to drive",
+        "vietnamese": "lái xe",
+        "dutchsentence": "Zij kan heel goed auto rijden.",
+        "englishtranslate": "She can drive a car very well."
+    },
+    {
+        "dutch": "blijven",
+        "english": "to stay",
+        "vietnamese": "ở lại",
+        "dutchsentence": "We blijven dit weekend thuis vanwege de regen.",
+        "englishtranslate": "We are staying home this weekend because of the rain."
+    },
+    {
+        "dutch": "beschrijven",
+        "english": "to describe",
+        "vietnamese": "mô tả",
+        "dutchsentence": "Kan je de film beschrijven die je gisteren zag?",
+        "englishtranslate": "Can you describe the movie you saw yesterday?"
+    },
+    {
+        "dutch": "bewijzen",
+        "english": "to prove",
+        "vietnamese": "chứng minh",
+        "dutchsentence": "Hij probeerde de theorie met experimenten te bewijzen.",
+        "englishtranslate": "He tried to prove the theory with experiments."
+    },
+    {
+        "dutch": "lijken",
+        "english": "to seem",
+        "vietnamese": "dường như",
+        "dutchsentence": "Hij lijkt erg moe te zijn na de lange vlucht.",
+        "englishtranslate": "He seems to be very tired after the long flight."
+    },
+    {
+        "dutch": "houden",
+        "english": "to hold",
+        "vietnamese": "giữ",
+        "dutchsentence": "Zou je deze tas even voor mij willen houden?",
+        "englishtranslate": "Would you like to hold this bag for me for a moment?"
+    },
+    {
+        "dutch": "helpen",
+        "english": "to help",
+        "vietnamese": "giúp đỡ",
+        "dutchsentence": "Kan iemand mij helpen met deze zware dozen?",
+        "englishtranslate": "Can someone help me with these heavy boxes?"
+    },
+    {
+        "dutch": "vallen",
+        "english": "to fall",
+        "vietnamese": "ngã",
+        "dutchsentence": "Pas op dat je niet van de trap valt.",
+        "englishtranslate": "Be careful not to fall down the stairs."
+    },
+    {
+        "dutch": "laten",
+        "english": "to let",
+        "vietnamese": "để",
+        "dutchsentence": "Laat me weten wanneer je aankomt.",
+        "englishtranslate": "Let me know when you arrive."
+    },
+    {
+        "dutch": "lopen",
+        "english": "to walk",
+        "vietnamese": "đi bộ",
+        "dutchsentence": "We lopen elke ochtend naar de bakker.",
+        "englishtranslate": "We walk to the baker's every morning."
+    },
+    {
+        "dutch": "slapen",
+        "english": "to sleep",
+        "vietnamese": "ngủ",
+        "dutchsentence": "Ik heb vannacht maar vijf uur geslapen.",
+        "englishtranslate": "I only slept five hours last night."
+    },
+    {
+        "dutch": "sterven",
+        "english": "to die",
+        "vietnamese": "chết",
+        "dutchsentence": "De oude boom dreigt te sterven door de droogte.",
+        "englishtranslate": "The old tree threatens to die because of the drought."
+    },
+    {
+        "dutch": "worden",
+        "english": "to become",
+        "vietnamese": "trở thành",
+        "dutchsentence": "Wat wil je later worden als je groot bent?",
+        "englishtranslate": "What do you want to become later when you are grown up?"
+    },
+    {
+        "dutch": "vriezen",
+        "english": "to freeze",
+        "vietnamese": "đóng băng",
+        "dutchsentence": "Het heeft de hele nacht gevroren, dus pas op voor gladheid.",
+        "englishtranslate": "It has frozen all night, so watch out for slickness."
+    }
+]

@@ -1,7 +1,37 @@
 [
-    {"dutch":"eentje","english":"one","vietnamese":"một"},
-    {"dutch":"direct","english":"direct","vietnamese":"trực tiếp"},
-    {"dutch":"onmiddellijk","english":"immediately","vietnamese":"ngay lập tức"},
-    {"dutch":"dadelijk","english":"immediately","vietnamese":"ngay lập tức"},
-    {"dutch":"eenvoudig","english":"simple","vietnamese":"đơn giản"}
-  ]
+    {
+        "dutch": "eentje",
+        "english": "one (diminutive/informal)",
+        "vietnamese": "một",
+        "dutchsentence": "Wil je een koekje? Ik heb er nog eentje.",
+        "englishtranslate": "Do you want a cookie? I still have one (little one)."
+    },
+    {
+        "dutch": "direct",
+        "english": "direct / immediately",
+        "vietnamese": "trực tiếp",
+        "dutchsentence": "Zij komt direct uit het werk naar het feest.",
+        "englishtranslate": "She comes directly from work to the party."
+    },
+    {
+        "dutch": "onmiddellijk",
+        "english": "immediately",
+        "vietnamese": "ngay lập tức",
+        "dutchsentence": "Je moet onmiddellijk reageren op dit bericht.",
+        "englishtranslate": "You must react immediately to this message."
+    },
+    {
+        "dutch": "dadelijk",
+        "english": "immediately / shortly",
+        "vietnamese": "ngay lập tức",
+        "dutchsentence": "Ik kom dadelijk bij je terug, wacht even.",
+        "englishtranslate": "I'll get back to you immediately (in a moment), wait a bit."
+    },
+    {
+        "dutch": "eenvoudig",
+        "english": "simple",
+        "vietnamese": "đơn giản",
+        "dutchsentence": "Dit recept is heel eenvoudig te maken.",
+        "englishtranslate": "This recipe is very simple to make."
+    }
+]

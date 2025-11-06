@@ -1,17 +1,107 @@
 [
-    {"dutch": "de vriend", "english": "the friend (male)", "vietnamese": "bạn (nam)"},
-    {"dutch": "de vriendin", "english": "the friend (female)", "vietnamese": "bạn (nữ)"},
-    {"dutch": "de collega", "english": "the colleague", "vietnamese": "đồng nghiệp"},
-    {"dutch": "de familie", "english": "the family", "vietnamese": "gia đình"},
-    {"dutch": "waarom", "english": "why", "vietnamese": "tại sao"},
-    {"dutch": "om te", "english": "in order to", "vietnamese": "để"},
-    {"dutch": "leuk", "english": "fun", "vietnamese": "vui"},
-    {"dutch": "saai", "english": "boring", "vietnamese": "chán"},
-    {"dutch": "middernacht", "english": "midnight", "vietnamese": "nửa đêm"},
-    {"dutch": "s ochtends", "english": "in the morning", "vietnamese": "vào buổi sáng"},
-    {"dutch": "s morgens", "english": "in the morning", "vietnamese": "vào buổi sáng"},
-    {"dutch": "s middags", "english": "in the afternoon", "vietnamese": "vào buổi chiều"},
-    {"dutch": "s avonds", "english": "in the evening", "vietnamese": "vào buổi tối"},
-    {"dutch": "s nachts", "english": "at night", "vietnamese": "vào ban đêm"},
-    {"dutch": "bellen", "english": "call", "vietnamese": "gọi điện"}
+  {
+    "dutch": "vriend, de",
+    "english": "the friend (male)",
+    "vietnamese": "bạn (nam)",
+    "dutchsentence": "Mijn vriend en ik werken bij hetzelfde bedrijf.",
+    "englishtranslate": "My friend and I work at the same company."
+  },
+  {
+    "dutch": "vriendin, de",
+    "english": "the friend (female)",
+    "vietnamese": "bạn (nữ)",
+    "dutchsentence": "Ze gaat uit eten met haar vriendin.",
+    "englishtranslate": "She is going out for dinner with her friend (female)."
+  },
+  {
+    "dutch": "collega, de",
+    "english": "the colleague",
+    "vietnamese": "đồng nghiệp",
+    "dutchsentence": "Mijn collega helpt me met dit moeilijke werk.",
+    "englishtranslate": "My colleague helps me with this difficult work."
+  },
+  {
+    "dutch": "familie, de",
+    "english": "the family",
+    "vietnamese": "gia đình",
+    "dutchsentence": "Familie is altijd het belangrijkste.",
+    "englishtranslate": "Family is always the most important thing."
+  },
+  {
+    "dutch": "waarom",
+    "english": "why",
+    "vietnamese": "tại sao",
+    "dutchsentence": "Waarom studeer je Nederlands?",
+    "englishtranslate": "Why are you studying Dutch?"
+  },
+  {
+    "dutch": "om te",
+    "english": "in order to",
+    "vietnamese": "để",
+    "dutchsentence": "Ik leer om te kunnen werken als manager.",
+    "englishtranslate": "I am learning in order to be able to work as a manager."
+  },
+  {
+    "dutch": "leuk",
+    "english": "fun / nice / enjoyable",
+    "vietnamese": "vui",
+    "dutchsentence": "Chatten met elkaar is leuk.",
+    "englishtranslate": "Chatting with each other is fun/enjoyable."
+  },
+  {
+    "dutch": "saai",
+    "english": "boring",
+    "vietnamese": "chán",
+    "dutchsentence": "Dit boek is saai om te lezen.",
+    "englishtranslate": "This book is boring to read."
+  },
+  {
+    "dutch": "middernacht",
+    "english": "midnight",
+    "vietnamese": "nửa đêm",
+    "dutchsentence": "De laatste sms kreeg ik rond middernacht.",
+    "englishtranslate": "I received the last text message around midnight."
+  },
+  {
+    "dutch": "s ochtends",
+    "english": "in the morning",
+    "vietnamese": "vào buổi sáng",
+    "dutchsentence": "Ik drink koffie 's ochtends vroeg.",
+    "englishtranslate": "I drink coffee early in the morning."
+  },
+  {
+    "dutch": "s morgens",
+    "english": "in the morning",
+    "vietnamese": "vào buổi sáng",
+    "dutchsentence": "'s morgens begin ik met mijn werk.",
+    "englishtranslate": "In the morning I start my work."
+  },
+  {
+    "dutch": "s middags",
+    "english": "in the afternoon",
+    "vietnamese": "vào buổi chiều",
+    "dutchsentence": "'s middags hebben we pauze.",
+    "englishtranslate": "In the afternoon we have a break."
+  },
+  {
+    "dutch": "s avonds",
+    "english": "in the evening",
+    "vietnamese": "vào buổi tối",
+    "dutchsentence": "Zij kijkt tv 's avonds.",
+    "englishtranslate": "She watches TV in the evening."
+  },
+  {
+    "dutch": "s nachts",
+    "english": "at night",
+    "vietnamese": "vào ban đêm",
+    "dutchsentence": "'s nachts is het rustig in het ziekenhuis.",
+    "englishtranslate": "At night it is quiet in the hospital."
+  },
+  {
+    "dutch": "bellen",
+    "english": "to call (by phone)",
+    "vietnamese": "gọi điện",
+    "dutchsentence": "Wil je me bellen in de ochtend?",
+    "englishtranslate": "Do you want to call me in the morning?"
+  }
 ]

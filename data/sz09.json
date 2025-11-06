@@ -1,16 +1,100 @@
 [
-    {"dutch":"de cocktail (-s)","english":"the cocktail (cocktails)","vietnamese":"cocktail (các cocktail)"},
-    {"dutch":"de citroen (-en)","english":"the lemon (lemons)","vietnamese":"quả chanh (các quả chanh)"},
-    {"dutch":"het fruit","english":"the fruit","vietnamese":"trái cây"},
-    {"dutch":"de disco ('s)","english":"the disco (discos)","vietnamese":"vũ trường (các vũ trường)"},
-    {"dutch":"logisch","english":"logical","vietnamese":"hợp lý"},
-    {"dutch":"uitgaan","english":"to go out","vietnamese":"đi ra ngoài"},
-    {"dutch":"ging uit","english":"went out","vietnamese":"đã đi ra ngoài"},
-    {"dutch":"uitgegaan (met zijn)","english":"has gone out (with his)","vietnamese":"đã đi ra ngoài (với anh ấy)"},
-    {"dutch":"aannemen","english":"to assume","vietnamese":"giả định"},
-    {"dutch":"nam aan","english":"assumed","vietnamese":"đã giả định"},
-    {"dutch":"aangenomen","english":"has assumed","vietnamese":"đã giả định"},
-    {"dutch":"ervan uitgaan","english":"to assume","vietnamese":"giả định"},
-    {"dutch":"ging ervan uit","english":"assumed","vietnamese":"đã giả định"},
-    {"dutch":"zijn ervan uitgegaan","english":"has assumed","vietnamese":"đã giả định (QKHT)"}
-  ]
+    {
+        "dutch": "de cocktail (-s)",
+        "english": "the cocktail (cocktails)",
+        "vietnamese": "cocktail (các cocktail)",
+        "dutchsentence": "Ik bestel een verfrissende cocktail met veel ijs.",
+        "englishtranslate": "I am ordering a refreshing cocktail with a lot of ice."
+    },
+    {
+        "dutch": "de citroen (-en)",
+        "english": "the lemon (lemons)",
+        "vietnamese": "quả chanh (các quả chanh)",
+        "dutchsentence": "Kan ik een schijfje citroen in mijn thee krijgen?",
+        "englishtranslate": "Can I get a slice of lemon in my tea?"
+    },
+    {
+        "dutch": "het fruit",
+        "english": "the fruit",
+        "vietnamese": "trái cây",
+        "dutchsentence": "Het is belangrijk om elke dag vers fruit te eten.",
+        "englishtranslate": "It is important to eat fresh fruit every day."
+    },
+    {
+        "dutch": "de disco ('s)",
+        "english": "the disco (discos)",
+        "vietnamese": "vũ trường (các vũ trường)",
+        "dutchsentence": "We gingen dansen in de nieuwe disco in het centrum.",
+        "englishtranslate": "We went dancing in the new disco downtown."
+    },
+    {
+        "dutch": "logisch",
+        "english": "logical",
+        "vietnamese": "hợp lý",
+        "dutchsentence": "Het is logisch dat je moe bent na zo'n lange werkdag.",
+        "englishtranslate": "It is logical that you are tired after such a long workday."
+    },
+    {
+        "dutch": "uitgaan",
+        "english": "to go out",
+        "vietnamese": "đi ra ngoài",
+        "dutchsentence": "Wil je vanavond uitgaan, of thuisblijven?",
+        "englishtranslate": "Do you want to go out tonight, or stay home?"
+    },
+    {
+        "dutch": "ging uit",
+        "english": "went out",
+        "vietnamese": "đã đi ra ngoài",
+        "dutchsentence": "Vrijdag ging ze uit met haar vrienden.",
+        "englishtranslate": "She went out with her friends on Friday."
+    },
+    {
+        "dutch": "uitgegaan (met zijn)",
+        "english": "has gone out (with his)",
+        "vietnamese": "đã đi ra ngoài (với anh ấy)",
+        "dutchsentence": "Ben je gisteravond uitgegaan?",
+        "englishtranslate": "Have you gone out last night?"
+    },
+    {
+        "dutch": "aannemen",
+        "english": "to assume",
+        "vietnamese": "giả định",
+        "dutchsentence": "Je moet niet aannemen dat het antwoord 'ja' is.",
+        "englishtranslate": "You should not assume that the answer is 'yes'."
+    },
+    {
+        "dutch": "nam aan",
+        "english": "assumed",
+        "vietnamese": "đã giả định",
+        "dutchsentence": "Ik nam aan dat je de instructies had gelezen.",
+        "englishtranslate": "I assumed that you had read the instructions."
+    },
+    {
+        "dutch": "aangenomen",
+        "english": "has assumed",
+        "vietnamese": "đã giả định",
+        "dutchsentence": "We hebben aangenomen dat hij de beste kandidaat was.",
+        "englishtranslate": "We have assumed that he was the best candidate."
+    },
+    {
+        "dutch": "ervan uitgaan",
+        "english": "to assume",
+        "vietnamese": "giả định",
+        "dutchsentence": "We kunnen ervan uitgaan dat het project op tijd klaar is.",
+        "englishtranslate": "We can assume that the project will be finished on time."
+    },
+    {
+        "dutch": "ging ervan uit",
+        "english": "assumed",
+        "vietnamese": "đã giả định",
+        "dutchsentence": "Iedereen ging ervan uit dat zij de winnaar zou zijn.",
+        "englishtranslate": "Everyone assumed that she would be the winner."
+    },
+    {
+        "dutch": "zijn ervan uitgegaan",
+        "english": "has assumed",
+        "vietnamese": "đã giả định (QKHT)",
+        "dutchsentence": "Zij zijn ervan uitgegaan dat wij het al wisten.",
+        "englishtranslate": "They have assumed that we already knew it."
+    }
+]

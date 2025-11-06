@@ -1,20 +1,128 @@
 [
-    {"dutch": "de baan (banen)", "english": "the job (jobs)", "vietnamese": "công việc (các công việc)"},
-    {"dutch": "de radio ('s)", "english": "the radio (-s)", "vietnamese": "đài radio (-s)"},
-    {"dutch": "het weer", "english": "the weather", "vietnamese": "thời tiết"},
-    {"dutch": "het ongeval (-len)", "english": "the accident (-s)", "vietnamese": "tai nạn (-s)"},
-    {"dutch": "het ongeluk (-ken)", "english": "the mishap (-s)", "vietnamese": "sự cố (-s)"},
-    {"dutch": "het gevaar (gevaren)", "english": "the danger (-s)", "vietnamese": "mối nguy hiểm (-s)"},
-    {"dutch": "de veiligheid (-heden)", "english": "the safety (-ies)", "vietnamese": "sự an toàn (-s)"},
-    {"dutch": "de graad (graden)", "english": "the degree (-s)", "vietnamese": "độ (-s)"},
-    {"dutch": "het dier (-en)", "english": "the animal (-s)", "vietnamese": "động vật (-s)"},
-    {"dutch": "de regen", "english": "the rain", "vietnamese": "mưa"},
-    {"dutch": "heel", "english": "very", "vietnamese": "rất"},
-    {"dutch": "voorzichtig", "english": "careful", "vietnamese": "cẩn thận"},
-    {"dutch": "glad", "english": "slippery", "vietnamese": "trơn"},
-    {"dutch": "gevaarlijk", "english": "dangerous", "vietnamese": "nguy hiểm"},
-    {"dutch": "veilig", "english": "safe", "vietnamese": "an toàn"},
-    {"dutch": "regenen", "english": "to rain", "vietnamese": "mưa"},
-    {"dutch": "vriezen", "english": "to freeze", "vietnamese": "đóng băng"},
-    {"dutch": "vallen", "english": "to fall", "vietnamese": "rơi"}
+    {
+        "dutch": "de baan (banen)",
+        "english": "the job (jobs)",
+        "vietnamese": "công việc (các công việc)",
+        "dutchsentence": "Ik heb een nieuwe baan gevonden in Amsterdam.",
+        "englishtranslate": "I have found a new job in Amsterdam."
+    },
+    {
+        "dutch": "de radio ('s)",
+        "english": "the radio (-s)",
+        "vietnamese": "đài radio (-s)",
+        "dutchsentence": "Luister naar de radio voor de verkeersinformatie.",
+        "englishtranslate": "Listen to the radio for the traffic information."
+    },
+    {
+        "dutch": "het weer",
+        "english": "the weather",
+        "vietnamese": "thời tiết",
+        "dutchsentence": "Het weer is koud en nat vandaag.",
+        "englishtranslate": "The weather is cold and wet today."
+    },
+    {
+        "dutch": "het ongeval (-len)",
+        "english": "the accident (-s)",
+        "vietnamese": "tai nạn (-s)",
+        "dutchsentence": "Er was een ernstig ongeval op de snelweg.",
+        "englishtranslate": "There was a serious accident on the highway."
+    },
+    {
+        "dutch": "het ongeluk (-ken)",
+        "english": "the mishap (-s)",
+        "vietnamese": "sự cố (-s)",
+        "dutchsentence": "Gelukkig was het maar een klein ongelukje.",
+        "englishtranslate": "Fortunately, it was only a small mishap (accident)."
+    },
+    {
+        "dutch": "het gevaar (gevaren)",
+        "english": "the danger (-s)",
+        "vietnamese": "mối nguy hiểm (-s)",
+        "dutchsentence": "Rijden met alcohol is een groot gevaar.",
+        "englishtranslate": "Driving with alcohol is a great danger."
+    },
+    {
+        "dutch": "de veiligheid (-heden)",
+        "english": "the safety (-ies)",
+        "vietnamese": "sự an toàn (-s)",
+        "dutchsentence": "Veiligheid op het werk is essentieel.",
+        "englishtranslate": "Safety at work is essential."
+    },
+    {
+        "dutch": "de graad (graden)",
+        "english": "the degree (-s)",
+        "vietnamese": "độ (-s)",
+        "dutchsentence": "Het is slechts twee graden boven nul.",
+        "englishtranslate": "It is only two degrees above zero."
+    },
+    {
+        "dutch": "het dier (-en)",
+        "english": "the animal (-s)",
+        "vietnamese": "động vật (-s)",
+        "dutchsentence": "Dit is een wild dier.",
+        "englishtranslate": "This is a wild animal."
+    },
+    {
+        "dutch": "de regen",
+        "english": "the rain",
+        "vietnamese": "mưa",
+        "dutchsentence": "Door de regen zijn de wegen nat.",
+        "englishtranslate": "Because of the rain, the roads are wet."
+    },
+    {
+        "dutch": "heel",
+        "english": "very",
+        "vietnamese": "rất",
+        "dutchsentence": "Het is vandaag heel koud buiten.",
+        "englishtranslate": "It is very cold outside today."
+    },
+    {
+        "dutch": "voorzichtig",
+        "english": "careful",
+        "vietnamese": "cẩn thận",
+        "dutchsentence": "Wees voorzichtig met die glazen!",
+        "englishtranslate": "Be careful with those glasses!"
+    },
+    {
+        "dutch": "glad",
+        "english": "slippery",
+        "vietnamese": "trơn",
+        "dutchsentence": "Let op, de vloer is glad.",
+        "englishtranslate": "Watch out, the floor is slippery."
+    },
+    {
+        "dutch": "gevaarlijk",
+        "english": "dangerous",
+        "vietnamese": "nguy hiểm",
+        "dutchsentence": "Deze straat is gevaarlijk voor fietsers.",
+        "englishtranslate": "This street is dangerous for cyclists."
+    },
+    {
+        "dutch": "veilig",
+        "english": "safe",
+        "vietnamese": "an toàn",
+        "dutchsentence": "De kinderen zijn veilig thuis.",
+        "englishtranslate": "The children are safely home."
+    },
+    {
+        "dutch": "regenen",
+        "english": "to rain",
+        "vietnamese": "mưa",
+        "dutchsentence": "Het gaat de hele avond regenen.",
+        "englishtranslate": "It is going to rain the whole evening."
+    },
+    {
+        "dutch": "vriezen",
+        "english": "to freeze",
+        "vietnamese": "đóng băng",
+        "dutchsentence": "Het kan vannacht gaan vriezen.",
+        "englishtranslate": "It might freeze tonight."
+    },
+    {
+        "dutch": "vallen",
+        "english": "to fall",
+        "vietnamese": "rơi",
+        "dutchsentence": "Kijk uit dat je niet valt!",
+        "englishtranslate": "Watch out that you don't fall!"
+    }
 ]

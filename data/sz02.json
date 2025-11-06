@@ -1,7 +1,37 @@
 [
-{"dutch":"het adverbium","english":"the adverb","vietnamese":"trạng từ"},
-{"dutch":"het ticket (-s)","english":"the ticket (tickets)","vietnamese":"vé (các vé)"},
-{"dutch":"recent","english":"recent","vietnamese":"gần đây"},
-{"dutch":"vooraf","english":"beforehand","vietnamese":"trước"},
-{"dutch":"achteraf","english":"afterwards","vietnamese":"sau đó"}
+    {
+        "dutch": "het adverbium",
+        "english": "the adverb",
+        "vietnamese": "trạng từ",
+        "dutchsentence": "Het woord 'snel' in de zin is een adverbium.",
+        "englishtranslate": "The word 'snel' (fast) in the sentence is an adverb."
+    },
+    {
+        "dutch": "het ticket (-s)",
+        "english": "the ticket (tickets)",
+        "vietnamese": "vé (các vé)",
+        "dutchsentence": "Heb je al een ticket gekocht voor het concert?",
+        "englishtranslate": "Have you already bought a ticket for the concert?"
+    },
+    {
+        "dutch": "recent",
+        "english": "recent",
+        "vietnamese": "gần đây",
+        "dutchsentence": "Dit is een recent onderzoek over de klimaatverandering.",
+        "englishtranslate": "This is a recent study on climate change."
+    },
+    {
+        "dutch": "vooraf",
+        "english": "beforehand",
+        "vietnamese": "trước",
+        "dutchsentence": "Je moet vooraf reserveren als je zeker wilt zijn van een tafel.",
+        "englishtranslate": "You must reserve beforehand if you want to be sure of a table."
+    },
+    {
+        "dutch": "achteraf",
+        "english": "afterwards",
+        "vietnamese": "sau đó",
+        "dutchsentence": "We gaan nu eten en achteraf drinken we koffie.",
+        "englishtranslate": "We're going to eat now and afterwards we'll drink coffee."
+    }
 ]

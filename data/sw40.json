@@ -1,22 +1,142 @@
 [
-    {"dutch": "de verkoop (verkopen)", "english": "the sale (sales)", "vietnamese": "bán (những lần bán)"},
-    {"dutch": "het bewijs (bewijzen)", "english": "the proof (proofs)", "vietnamese": "bằng chứng (những bằng chứng)"},
-    {"dutch": "de camera ('s)", "english": "the camera (cameras)", "vietnamese": "máy ảnh (những máy ảnh)"},
-    {"dutch": "de reden (-en)", "english": "the reason (reasons)", "vietnamese": "lý do (những lý do)"},
-    {"dutch": "het geval (-len)", "english": "the case (cases)", "vietnamese": "trường hợp (những trường hợp)"},
-    {"dutch": "zoveel", "english": "so much", "vietnamese": "nhiều"},
-    {"dutch": "tuurlijk", "english": "of course", "vietnamese": "tất nhiên"},
-    {"dutch": "absoluut", "english": "absolutely", "vietnamese": "chắc chắn"},
-    {"dutch": "hoeven te", "english": "need to", "vietnamese": "cần phải"},
-    {"dutch": "bewijzen (bewezen)", "english": "to prove (proved)", "vietnamese": "chứng minh (đã chứng minh)"},
-    {"dutch": "kopen", "english": "to buy", "vietnamese": "mua"},
-    {"dutch": "verkopen", "english": "to sell", "vietnamese": "bán"},
-    {"dutch": "staan", "english": "to stand", "vietnamese": "đứng"},
-    {"dutch": "bezoeken", "english": "to visit", "vietnamese": "thăm"},
-    {"dutch": "vechten", "english": "to fight", "vietnamese": "đánh nhau"},
-    {"dutch": "verstaan", "english": "to understand", "vietnamese": "hiểu"},
-    {"dutch": "winnen", "english": "to win", "vietnamese": "thắng"},
-    {"dutch": "trekken", "english": "to pull", "vietnamese": "kéo"},
-    {"dutch": "gaan", "english": "to go", "vietnamese": "đi"},
-    {"dutch": "hangen", "english": "to hang", "vietnamese": "treo"}
-  ]
+    {
+        "dutch": "de verkoop (verkopen)",
+        "english": "the sale (sales)",
+        "vietnamese": "bán (những lần bán)",
+        "dutchsentence": "De verkoop van het huis ging erg snel.",
+        "englishtranslate": "The sale of the house went very quickly."
+    },
+    {
+        "dutch": "het bewijs (bewijzen)",
+        "english": "the proof (proofs)",
+        "vietnamese": "bằng chứng (những bằng chứng)",
+        "dutchsentence": "Heeft u bewijs voor uw bewering?",
+        "englishtranslate": "Do you have proof for your claim?"
+    },
+    {
+        "dutch": "de camera ('s)",
+        "english": "the camera (cameras)",
+        "vietnamese": "máy ảnh (những máy ảnh)",
+        "dutchsentence": "Ik heb een nieuwe camera gekocht om foto's te maken.",
+        "englishtranslate": "I bought a new camera to take photos."
+    },
+    {
+        "dutch": "de reden (-en)",
+        "english": "the reason (reasons)",
+        "vietnamese": "lý do (những lý do)",
+        "dutchsentence": "Wat is de reden dat je te laat bent?",
+        "englishtranslate": "What is the reason that you are late?"
+    },
+    {
+        "dutch": "het geval (-len)",
+        "english": "the case (cases)",
+        "vietnamese": "trường hợp (những trường hợp)",
+        "dutchsentence": "In geval van nood belt u 112.",
+        "englishtranslate": "In case of emergency, you call 112."
+    },
+    {
+        "dutch": "zoveel",
+        "english": "so much",
+        "vietnamese": "nhiều",
+        "dutchsentence": "Waarom maak je je zorgen over zoveel details?",
+        "englishtranslate": "Why do you worry about so many details?"
+    },
+    {
+        "dutch": "tuurlijk",
+        "english": "of course",
+        "vietnamese": "tất nhiên",
+        "dutchsentence": "Tuurlijk, ik help je graag!",
+        "englishtranslate": "Of course, I'd love to help you!"
+    },
+    {
+        "dutch": "absoluut",
+        "english": "absolutely",
+        "vietnamese": "chắc chắn",
+        "dutchsentence": "Dat is absoluut het beste restaurant in de stad.",
+        "englishtranslate": "That is absolutely the best restaurant in the city."
+    },
+    {
+        "dutch": "hoeven te",
+        "english": "need to",
+        "vietnamese": "cần phải",
+        "dutchsentence": "Je hoeft me niet te bellen, ik kom vanzelf.",
+        "englishtranslate": "You don't need to call me, I'll come myself."
+    },
+    {
+        "dutch": "bewijzen (bewezen)",
+        "english": "to prove (proved)",
+        "vietnamese": "chứng minh (đã chứng minh)",
+        "dutchsentence": "Hij kon zijn onschuld bewijzen met de videobeelden.",
+        "englishtranslate": "He could prove his innocence with the video footage."
+    },
+    {
+        "dutch": "kopen",
+        "english": "to buy",
+        "vietnamese": "mua",
+        "dutchsentence": "Ik wil graag een nieuw paar schoenen kopen.",
+        "englishtranslate": "I would like to buy a new pair of shoes."
+    },
+    {
+        "dutch": "verkopen",
+        "english": "to sell",
+        "vietnamese": "bán",
+        "dutchsentence": "Zij besloten hun oude auto te verkopen.",
+        "englishtranslate": "They decided to sell their old car."
+    },
+    {
+        "dutch": "staan",
+        "english": "to stand",
+        "vietnamese": "đứng",
+        "dutchsentence": "De stoel staat in de hoek van de kamer.",
+        "englishtranslate": "The chair is standing (located) in the corner of the room."
+    },
+    {
+        "dutch": "bezoeken",
+        "english": "to visit",
+        "vietnamese": "thăm",
+        "dutchsentence": "We gaan volgende week onze familie bezoeken.",
+        "englishtranslate": "We are going to visit our family next week."
+    },
+    {
+        "dutch": "vechten",
+        "english": "to fight",
+        "vietnamese": "đánh nhau",
+        "dutchsentence": "De kinderen waren aan het vechten om het speelgoed.",
+        "englishtranslate": "The children were fighting over the toy."
+    },
+    {
+        "dutch": "verstaan",
+        "english": "to understand",
+        "vietnamese": "hiểu",
+        "dutchsentence": "Ik kan je niet goed verstaan door het lawaai.",
+        "englishtranslate": "I cannot understand you well because of the noise."
+    },
+    {
+        "dutch": "winnen",
+        "english": "to win",
+        "vietnamese": "thắng",
+        "dutchsentence": "Iedereen wil de loterij winnen.",
+        "englishtranslate": "Everyone wants to win the lottery."
+    },
+    {
+        "dutch": "trekken",
+        "english": "to pull",
+        "vietnamese": "kéo",
+        "dutchsentence": "Trek de deur naar je toe om hem te openen.",
+        "englishtranslate": "Pull the door towards you to open it."
+    },
+    {
+        "dutch": "gaan",
+        "english": "to go",
+        "vietnamese": "đi",
+        "dutchsentence": "We gaan vanavond naar de bioscoop.",
+        "englishtranslate": "We are going to the cinema tonight."
+    },
+    {
+        "dutch": "hangen",
+        "english": "to hang",
+        "vietnamese": "treo",
+        "dutchsentence": "De jas hangt aan de kapstok.",
+        "englishtranslate": "The coat is hanging on the coat rack."
+    }
+]

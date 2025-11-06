@@ -1,21 +1,135 @@
 [
-    {"dutch": "de verhuurder", "english": "the landlord", "vietnamese": "chủ nhà"},
-    {"dutch": "de huurder", "english": "the tenant", "vietnamese": "người thuê nhà"},
-    {"dutch": "de huur", "english": "the rent", "vietnamese": "tiền thuê"},
-    {"dutch": "de klant", "english": "the customer", "vietnamese": "khách hàng"},
-    {"dutch": "Italiaans", "english": "Italian", "vietnamese": "tiếng Ý"},
-    {"dutch": "Russisch", "english": "Russian", "vietnamese": "tiếng Nga"},
-    {"dutch": "Arabisch", "english": "Arabic", "vietnamese": "tiếng Ả Rập"},
-    {"dutch": "Mexico", "english": "Mexico", "vietnamese": "Mexico"},
-    {"dutch": "Oostenrijk", "english": "Austria", "vietnamese": "Áo"},
-    {"dutch": "Brazilië", "english": "Brazil", "vietnamese": "Brazil"},
-    {"dutch": "Italië", "english": "Italy", "vietnamese": "Ý"},
-    {"dutch": "Rusland", "english": "Russia", "vietnamese": "Nga"},
-    {"dutch": "Egypte", "english": "Egypt", "vietnamese": "Ai Cập"},
-    {"dutch": "Nederlandstalig", "english": "Dutch-speaking", "vietnamese": "nói tiếng Hà Lan"},
-    {"dutch": "aan", "english": "to", "vietnamese": "đến"},
-    {"dutch": "verhuren", "english": "rent out", "vietnamese": "cho thuê"},
-    {"dutch": "verkopen", "english": "sell", "vietnamese": "bán"},
-    {"dutch": "helpen", "english": "help", "vietnamese": "giúp đỡ"},
-    {"dutch": "verbeteren", "english": "improve", "vietnamese": "cải thiện"}
+  {
+    "dutch": "verhuurder, de",
+    "english": "the landlord",
+    "vietnamese": "chủ nhà",
+    "dutchsentence": "De verhuurder wil de huur verbeteren.",
+    "englishtranslate": "The landlord wants to improve the rent."
+  },
+  {
+    "dutch": "huurder, de",
+    "english": "the tenant",
+    "vietnamese": "người thuê nhà",
+    "dutchsentence": "De huurder betaalt de huur elke maand.",
+    "englishtranslate": "The tenant pays the rent every month."
+  },
+  {
+    "dutch": "huur, de",
+    "english": "the rent",
+    "vietnamese": "tiền thuê",
+    "dutchsentence": "De huur van mijn appartement is duur.",
+    "englishtranslate": "The rent of my apartment is expensive."
+  },
+  {
+    "dutch": "klant, de",
+    "english": "the customer",
+    "vietnamese": "khách hàng",
+    "dutchsentence": "De klant wil Italiaans eten.",
+    "englishtranslate": "The customer wants to eat Italian food."
+  },
+  {
+    "dutch": "Italiaans",
+    "english": "Italian / Italian language",
+    "vietnamese": "tiếng Ý",
+    "dutchsentence": "Ik spreek een beetje Italiaans.",
+    "englishtranslate": "I speak a little Italian."
+  },
+  {
+    "dutch": "Russisch",
+    "english": "Russian / Russian language",
+    "vietnamese": "tiếng Nga",
+    "dutchsentence": "Russisch is een moeilijke taal.",
+    "englishtranslate": "Russian is a difficult language."
+  },
+  {
+    "dutch": "Arabisch",
+    "english": "Arabic / Arabic language",
+    "vietnamese": "tiếng Ả Rập",
+    "dutchsentence": "Leer je ook Arabisch op de taalschool?",
+    "englishtranslate": "Are you also learning Arabic at the language school?"
+  },
+  {
+    "dutch": "Mexico",
+    "english": "Mexico",
+    "vietnamese": "Mexico",
+    "dutchsentence": "Wij zullen naar Mexico reizen in de zomer.",
+    "englishtranslate": "We will travel to Mexico in the summer."
+  },
+  {
+    "dutch": "Oostenrijk",
+    "english": "Austria",
+    "vietnamese": "Áo",
+    "dutchsentence": "Oostenrijk is beroemd om zijn bergen.",
+    "englishtranslate": "Austria is famous for its mountains."
+  },
+  {
+    "dutch": "Brazilië",
+    "english": "Brazil",
+    "vietnamese": "Brazil",
+    "dutchsentence": "De vriendin van mijn collega komt uit Brazilië.",
+    "englishtranslate": "The friend of my colleague comes from Brazil."
+  },
+  {
+    "dutch": "Italië",
+    "english": "Italy",
+    "vietnamese": "Ý",
+    "dutchsentence": "Ik ga volgend jaar naar Italië.",
+    "englishtranslate": "I am going to Italy next year."
+  },
+  {
+    "dutch": "Rusland",
+    "english": "Russia",
+    "vietnamese": "Nga",
+    "dutchsentence": "Rusland is een groot land.",
+    "englishtranslate": "Russia is a large country."
+  },
+  {
+    "dutch": "Egypte",
+    "english": "Egypt",
+    "vietnamese": "Ai Cập",
+    "dutchsentence": "Heb je ooit Egypte bezocht?",
+    "englishtranslate": "Have you ever visited Egypt?"
+  },
+  {
+    "dutch": "Nederlandstalig",
+    "english": "Dutch-speaking",
+    "vietnamese": "nói tiếng Hà Lan",
+    "dutchsentence": "We zijn nu in een Nederlandstalig gebied.",
+    "englishtranslate": "We are now in a Dutch-speaking area."
+  },
+  {
+    "dutch": "aan",
+    "english": "to / on / at",
+    "vietnamese": "đến / trên",
+    "dutchsentence": "Ik geef het aan hem.",
+    "englishtranslate": "I give it to him."
+  },
+  {
+    "dutch": "verhuren",
+    "english": "to rent out",
+    "vietnamese": "cho thuê",
+    "dutchsentence": "De verhuurder wil het appartement verhuren.",
+    "englishtranslate": "The landlord wants to rent out the apartment."
+  },
+  {
+    "dutch": "verkopen",
+    "english": "to sell",
+    "vietnamese": "bán",
+    "dutchsentence": "De bakker verkoopt brood.",
+    "englishtranslate": "The baker sells bread."
+  },
+  {
+    "dutch": "helpen",
+    "english": "to help",
+    "vietnamese": "giúp đỡ",
+    "dutchsentence": "Kan je mij alsjeblieft helpen?",
+    "englishtranslate": "Can you please help me?"
+  },
+  {
+    "dutch": "verbeteren",
+    "english": "to improve",
+    "vietnamese": "cải thiện",
+    "dutchsentence": "Ik wil mijn Nederlands verbeteren.",
+    "englishtranslate": "I want to improve my Dutch."
+  }
 ]

@@ -1,19 +1,121 @@
 [
-{"dutch": "de brief (brieven)", "english": "the letter (letters)", "vietnamese": "lá thư (những lá thư)"},
-{"dutch": "het papier (-en)", "english": "the paper (papers)", "vietnamese": "giấy (những tờ giấy)"},
-{"dutch": "de groet (-en)", "english": "the greeting (greetings)", "vietnamese": "lời chào (những lời chào)"},
-{"dutch": "de jas (-sen)", "english": "the coat (coats)", "vietnamese": "áo khoác (những áo khoác)"},
-{"dutch": "de bijlage (-s)", "english": "the attachment (attachments)", "vietnamese": "tệp đính kèm (những tệp đính kèm)"},
-{"dutch": "digitaal", "english": "digital", "vietnamese": "kỹ thuật số"},
-{"dutch": "lief", "english": "sweet", "vietnamese": "ngọt ngào"},
-{"dutch": "alvast", "english": "already", "vietnamese": "đã"},
-{"dutch": "vergeten, vergeten (met zijn)", "english": "to forget, forgotten (with to be)", "vietnamese": "quên, đã quên (với là)"},
-{"dutch": "zeggen", "english": "to say", "vietnamese": "nói"},
-{"dutch": "vragen", "english": "to ask", "vietnamese": "hỏi"},
-{"dutch": "komen", "english": "to come", "vietnamese": "đến"},
-{"dutch": "spreken", "english": "to speak", "vietnamese": "nói chuyện"},
-{"dutch": "hebben", "english": "to have", "vietnamese": "có"},
-{"dutch": "zijn", "english": "to be", "vietnamese": "là"},
-{"dutch": "lezen", "english": "to read", "vietnamese": "đọc"},
-{"dutch": "zien", "english": "to see", "vietnamese": "nhìn"}
+    {
+        "dutch": "de brief (brieven)",
+        "english": "the letter (letters)",
+        "vietnamese": "lá thư (những lá thư)",
+        "dutchsentence": "Ik heb een brief naar mijn grootouders gestuurd.",
+        "englishtranslate": "I sent a letter to my grandparents."
+    },
+    {
+        "dutch": "het papier (-en)",
+        "english": "the paper (papers)",
+        "vietnamese": "giấy (những tờ giấy)",
+        "dutchsentence": "Kun je mij een stuk papier geven?",
+        "englishtranslate": "Can you give me a piece of paper?"
+    },
+    {
+        "dutch": "de groet (-en)",
+        "english": "the greeting (greetings)",
+        "vietnamese": "lời chào (những lời chào)",
+        "dutchsentence": "De groet 'Hallo' is erg gebruikelijk.",
+        "englishtranslate": "The greeting 'Hello' is very common."
+    },
+    {
+        "dutch": "de jas (-sen)",
+        "english": "the coat (coats)",
+        "vietnamese": "áo khoác (những áo khoác)",
+        "dutchsentence": "Het is koud, dus trek je jas aan.",
+        "englishtranslate": "It is cold, so put on your coat."
+    },
+    {
+        "dutch": "de bijlage (-s)",
+        "english": "the attachment (attachments)",
+        "vietnamese": "tệp đính kèm (những tệp đính kèm)",
+        "dutchsentence": "Open de bijlage in de e-mail om het verslag te lezen.",
+        "englishtranslate": "Open the attachment in the email to read the report."
+    },
+    {
+        "dutch": "digitaal",
+        "english": "digital",
+        "vietnamese": "kỹ thuật số",
+        "dutchsentence": "Veel documenten worden nu digitaal opgeslagen.",
+        "englishtranslate": "Many documents are now stored digitally."
+    },
+    {
+        "dutch": "lief",
+        "english": "sweet",
+        "vietnamese": "ngọt ngào",
+        "dutchsentence": "Wat lief dat je mij helpt!",
+        "englishtranslate": "How sweet that you are helping me!"
+    },
+    {
+        "dutch": "alvast",
+        "english": "already",
+        "vietnamese": "đã",
+        "dutchsentence": "Alvast bedankt voor uw hulp!",
+        "englishtranslate": "Thank you already (in advance) for your help!"
+    },
+    {
+        "dutch": "vergeten, vergeten (met zijn)",
+        "english": "to forget, forgotten (with to be)",
+        "vietnamese": "quên, đã quên (với là)",
+        "dutchsentence": "Oei, ik ben mijn sleutels vergeten.",
+        "englishtranslate": "Oops, I have forgotten my keys."
+    },
+    {
+        "dutch": "zeggen",
+        "english": "to say",
+        "vietnamese": "nói",
+        "dutchsentence": "Wat wilde je net zeggen?",
+        "englishtranslate": "What did you just want to say?"
+    },
+    {
+        "dutch": "vragen",
+        "english": "to ask",
+        "vietnamese": "hỏi",
+        "dutchsentence": "Je mag me alles vragen wat je wilt weten.",
+        "englishtranslate": "You may ask me anything you want to know."
+    },
+    {
+        "dutch": "komen",
+        "english": "to come",
+        "vietnamese": "đến",
+        "dutchsentence": "Kun je morgen naar het feest komen?",
+        "englishtranslate": "Can you come to the party tomorrow?"
+    },
+    {
+        "dutch": "spreken",
+        "english": "to speak",
+        "vietnamese": "nói chuyện",
+        "dutchsentence": "Zij spreekt drie talen vloeiend.",
+        "englishtranslate": "She speaks three languages fluently."
+    },
+    {
+        "dutch": "hebben",
+        "english": "to have",
+        "vietnamese": "có",
+        "dutchsentence": "Ik heb een nieuwe telefoon gekocht.",
+        "englishtranslate": "I have bought a new phone."
+    },
+    {
+        "dutch": "zijn",
+        "english": "to be",
+        "vietnamese": "là",
+        "dutchsentence": "Zij is mijn beste vriendin.",
+        "englishtranslate": "She is my best friend."
+    },
+    {
+        "dutch": "lezen",
+        "english": "to read",
+        "vietnamese": "đọc",
+        "dutchsentence": "Ik hou ervan om 's avonds een boek te lezen.",
+        "englishtranslate": "I love to read a book in the evening."
+    },
+    {
+        "dutch": "zien",
+        "english": "to see",
+        "vietnamese": "nhìn",
+        "dutchsentence": "Kun je de bergen vanaf hier zien?",
+        "englishtranslate": "Can you see the mountains from here?"
+    }
 ]

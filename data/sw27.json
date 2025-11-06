@@ -1,15 +1,93 @@
 [
-    {"dutch": "het perfectum", "english": "the perfect tense", "vietnamese": "thì hoàn thành"},
-    {"dutch": "het imperfectum", "english": "the imperfect tense", "vietnamese": "thì không hoàn thành"},
-    {"dutch": "de actie (-s)", "english": "the action(s)", "vietnamese": "hành động"},
-    {"dutch": "de beschrijving (-en)", "english": "the description(s)", "vietnamese": "sự miêu tả"},
-    {"dutch": "het participium", "english": "the participle", "vietnamese": "phân từ"},
-    {"dutch": "eer", "english": "honor", "vietnamese": "danh dự"},
-    {"dutch": "eerder", "english": "earlier", "vietnamese": "sớm hơn"},
-    {"dutch": "nogal", "english": "rather", "vietnamese": "khá"},
-    {"dutch": "voorbij", "english": "past", "vietnamese": "quá khứ"},
-    {"dutch": "wassen", "english": "(to) wash", "vietnamese": "(để) rửa"},
-    {"dutch": "beschrijven", "english": "(to) describe", "vietnamese": "(để) miêu tả"},
-    {"dutch": "de soort", "english": "the kind/type", "vietnamese": "loại"},
-    {"dutch": "anders", "english": "different", "vietnamese": "khác"}
+    {
+        "dutch": "het perfectum",
+        "english": "the perfect tense",
+        "vietnamese": "thì hoàn thành",
+        "dutchsentence": "Het perfectum wordt gebruikt voor voltooide acties in het verleden.",
+        "englishtranslate": "The perfect tense is used for finished actions in the past."
+    },
+    {
+        "dutch": "het imperfectum",
+        "english": "the imperfect tense",
+        "vietnamese": "thì không hoàn thành",
+        "dutchsentence": "Het imperfectum is de eenvoudige verleden tijd.",
+        "englishtranslate": "The imperfect tense is the simple past tense."
+    },
+    {
+        "dutch": "de actie (-s)",
+        "english": "the action(s)",
+        "vietnamese": "hành động",
+        "dutchsentence": "De actie van de film was erg snel.",
+        "englishtranslate": "The action of the movie was very fast."
+    },
+    {
+        "dutch": "de beschrijving (-en)",
+        "english": "the description(s)",
+        "vietnamese": "sự miêu tả",
+        "dutchsentence": "De beschrijving van het huis klopte perfect.",
+        "englishtranslate": "The description of the house was perfectly correct."
+    },
+    {
+        "dutch": "het participium",
+        "english": "the participle",
+        "vietnamese": "phân từ",
+        "dutchsentence": "In het perfectum gebruiken we het voltooid deelwoord (participium).",
+        "englishtranslate": "In the perfect tense, we use the past participle."
+    },
+    {
+        "dutch": "eer",
+        "english": "honor",
+        "vietnamese": "danh dự",
+        "dutchsentence": "Het is een grote eer om deze prijs te ontvangen.",
+        "englishtranslate": "It is a great honor to receive this prize."
+    },
+    {
+        "dutch": "eerder",
+        "english": "earlier",
+        "vietnamese": "sớm hơn",
+        "dutchsentence": "Ik ben vandaag eerder naar huis gegaan.",
+        "englishtranslate": "I went home earlier today."
+    },
+    {
+        "dutch": "nogal",
+        "english": "rather",
+        "vietnamese": "khá",
+        "dutchsentence": "Het is nogal koud buiten, dus kleed je warm aan.",
+        "englishtranslate": "It is rather cold outside, so dress warmly."
+    },
+    {
+        "dutch": "voorbij",
+        "english": "past",
+        "vietnamese": "quá khứ",
+        "dutchsentence": "De tijd van wachten is nu voorbij.",
+        "englishtranslate": "The time of waiting is now past (over)."
+    },
+    {
+        "dutch": "wassen",
+        "english": "(to) wash",
+        "vietnamese": "(để) rửa",
+        "dutchsentence": "Vergeet je handen niet te wassen voor het eten.",
+        "englishtranslate": "Don't forget to wash your hands before eating."
+    },
+    {
+        "dutch": "beschrijven",
+        "english": "(to) describe",
+        "vietnamese": "(để) miêu tả",
+        "dutchsentence": "Kun je de man beschrijven die je zag?",
+        "englishtranslate": "Can you describe the man you saw?"
+    },
+    {
+        "dutch": "de soort",
+        "english": "the kind/type",
+        "vietnamese": "loại",
+        "dutchsentence": "Wat voor soort muziek luister je graag?",
+        "englishtranslate": "What kind of music do you like to listen to?"
+    },
+    {
+        "dutch": "anders",
+        "english": "different",
+        "vietnamese": "khác",
+        "dutchsentence": "Wil je nog iets anders drinken?",
+        "englishtranslate": "Do you want anything else (different) to drink?"
+    }
 ]

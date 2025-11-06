@@ -1,14 +1,86 @@
 [
-    {"dutch": "het onderzoek (-en)", "english": "the research (researches)", "vietnamese": "nghiên cứu (những nghiên cứu)"},
-    {"dutch": "het hotel (-s)", "english": "the hotel (hotels)", "vietnamese": "khách sạn (những khách sạn)"},
-    {"dutch": "de reis (reizen)", "english": "the trip (trips)", "vietnamese": "chuyến đi (những chuyến đi)"},
-    {"dutch": "de vlucht (-en)", "english": "the flight (flights)", "vietnamese": "chuyến bay (những chuyến bay)"},
-    {"dutch": "lekker", "english": "delicious", "vietnamese": "ngon"},
-    {"dutch": "vol", "english": "full", "vietnamese": "đầy"},
-    {"dutch": "leeg", "english": "empty", "vietnamese": "trống rỗng"},
-    {"dutch": "noch", "english": "neither", "vietnamese": "không"},
-    {"dutch": "mezelf, jezelf, zichzelf, uzelf, onszelf", "english": "myself, yourself, himself/herself, yourself (formal), ourselves", "vietnamese": "bản thân tôi, bản thân bạn, bản thân anh ấy/cô ấy, bản thân bạn (trang trọng), bản thân chúng tôi"},
-    {"dutch": "onderzoeken, onderzocht, onderzocht", "english": "to research, researched, researched", "vietnamese": "nghiên cứu, đã nghiên cứu, đã nghiên cứu"},
-    {"dutch": "zorgen, zorgde, gezorgd", "english": "to care, cared, cared", "vietnamese": "chăm sóc, đã chăm sóc, đã chăm sóc"},
-    {"dutch": "vliegen, vloog, gevlogen", "english": "to fly, flew, flown", "vietnamese": "bay, đã bay, đã bay"}
-  ]
+    {
+        "dutch": "het onderzoek (-en)",
+        "english": "the research (researches)",
+        "vietnamese": "nghiên cứu (những nghiên cứu)",
+        "dutchsentence": "Het onderzoek naar de nieuwe ziekte is veelbelovend.",
+        "englishtranslate": "The research into the new illness is promising."
+    },
+    {
+        "dutch": "het hotel (-s)",
+        "english": "the hotel (hotels)",
+        "vietnamese": "khách sạn (những khách sạn)",
+        "dutchsentence": "We verblijven in een mooi hotel aan het strand.",
+        "englishtranslate": "We are staying in a beautiful hotel on the beach."
+    },
+    {
+        "dutch": "de reis (reizen)",
+        "english": "the trip (trips)",
+        "vietnamese": "chuyến đi (những chuyến đi)",
+        "dutchsentence": "De reis naar de bergen was lang, maar de moeite waard.",
+        "englishtranslate": "The trip to the mountains was long, but worth the effort."
+    },
+    {
+        "dutch": "de vlucht (-en)",
+        "english": "the flight (flights)",
+        "vietnamese": "chuyến bay (những chuyến bay)",
+        "dutchsentence": "Onze vlucht is een uur vertraagd.",
+        "englishtranslate": "Our flight is delayed by one hour."
+    },
+    {
+        "dutch": "lekker",
+        "english": "delicious",
+        "vietnamese": "ngon",
+        "dutchsentence": "Dit broodje met kaas is erg lekker.",
+        "englishtranslate": "This sandwich with cheese is very delicious."
+    },
+    {
+        "dutch": "vol",
+        "english": "full",
+        "vietnamese": "đầy",
+        "dutchsentence": "De bioscoopzaal was vol met mensen.",
+        "englishtranslate": "The cinema hall was full of people."
+    },
+    {
+        "dutch": "leeg",
+        "english": "empty",
+        "vietnamese": "trống rỗng",
+        "dutchsentence": "De fles is leeg, ik moet een nieuwe kopen.",
+        "englishtranslate": "The bottle is empty, I need to buy a new one."
+    },
+    {
+        "dutch": "noch",
+        "english": "neither",
+        "vietnamese": "không",
+        "dutchsentence": "Hij heeft noch tijd, noch geld voor een vakantie.",
+        "englishtranslate": "He has neither time nor money for a holiday."
+    },
+    {
+        "dutch": "mezelf, jezelf, zichzelf, uzelf, onszelf",
+        "english": "myself, yourself, himself/herself, yourself (formal), ourselves",
+        "vietnamese": "bản thân tôi, bản thân bạn, bản thân anh ấy/cô ấy, bản thân bạn (trang trọng), bản thân chúng tôi",
+        "dutchsentence": "Hij heeft zichzelf bezeerd tijdens het sporten.",
+        "englishtranslate": "He hurt himself while exercising."
+    },
+    {
+        "dutch": "onderzoeken, onderzocht, onderzocht",
+        "english": "to research, researched, researched",
+        "vietnamese": "nghiên cứu, đã nghiên cứu, đã nghiên cứu",
+        "dutchsentence": "De wetenschappers onderzoeken de oorzaak van het probleem.",
+        "englishtranslate": "The scientists are researching the cause of the problem."
+    },
+    {
+        "dutch": "zorgen, zorgde, gezorgd",
+        "english": "to care, cared, cared",
+        "vietnamese": "chăm sóc, đã chăm sóc, đã chăm sóc",
+        "dutchsentence": "Zij zorgt goed voor haar zieke moeder.",
+        "englishtranslate": "She cares well for her sick mother."
+    },
+    {
+        "dutch": "vliegen, vloog, gevlogen",
+        "english": "to fly, flew, flown",
+        "vietnamese": "bay, đã bay, đã bay",
+        "dutchsentence": "De vogels vliegen in de winter naar het zuiden.",
+        "englishtranslate": "The birds fly south in the winter."
+    }
+]

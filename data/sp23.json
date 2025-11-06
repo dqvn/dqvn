@@ -1,16 +1,100 @@
 [
-    {"dutch": "de doos", "english": "the box", "vietnamese": "hộp"},
-    {"dutch": "het potlood", "english": "the pencil", "vietnamese": "bút chì"},
-    {"dutch": "het antoniem", "english": "the antonym", "vietnamese": "từ trái nghĩa"},
-    {"dutch": "het synoniem", "english": "the synonym", "vietnamese": "từ đồng nghĩa"},
-    {"dutch": "tussen", "english": "between", "vietnamese": "giữa"},
-    {"dutch": "dicht", "english": "close", "vietnamese": "đóng"},
-    {"dutch": "dichtbij / dicht bij", "english": "near", "vietnamese": "gần"},
-    {"dutch": "buiten", "english": "outside", "vietnamese": "bên ngoài"},
-    {"dutch": "enkele", "english": "some", "vietnamese": "một vài"},
-    {"dutch": "een paar", "english": "a few", "vietnamese": "một vài"},
-    {"dutch": "nemen", "english": "take", "vietnamese": "lấy"},
-    {"dutch": "staan", "english": "stand", "vietnamese": "đứng"},
-    {"dutch": "liggen", "english": "lie", "vietnamese": "nằm"},
-    {"dutch": "hangen", "english": "hang", "vietnamese": "treo"}
+  {
+    "dutch": "doos, de",
+    "english": "the box",
+    "vietnamese": "hộp",
+    "dutchsentence": "Het potlood ligt in de doos.",
+    "englishtranslate": "The pencil lies in the box."
+  },
+  {
+    "dutch": "potlood, het",
+    "english": "the pencil",
+    "vietnamese": "bút chì",
+    "dutchsentence": "Kan je mij een potlood geven?",
+    "englishtranslate": "Can you give me a pencil?"
+  },
+  {
+    "dutch": "antoniem, het",
+    "english": "the antonym",
+    "vietnamese": "từ trái nghĩa",
+    "dutchsentence": "Het antoniem van groot is klein.",
+    "englishtranslate": "The antonym of big is small."
+  },
+  {
+    "dutch": "synoniem, het",
+    "english": "the synonym",
+    "vietnamese": "từ đồng nghĩa",
+    "dutchsentence": "Het synoniem voor gemakkelijk is eenvoudig.",
+    "englishtranslate": "The synonym for easy is simple."
+  },
+  {
+    "dutch": "tussen",
+    "english": "between / among",
+    "vietnamese": "giữa",
+    "dutchsentence": "De kaart ligt tussen de boeken.",
+    "englishtranslate": "The card lies between the books."
+  },
+  {
+    "dutch": "dicht",
+    "english": "closed / close (adj)",
+    "vietnamese": "đóng / gần",
+    "dutchsentence": "De winkel is dicht op zondag.",
+    "englishtranslate": "The shop is closed on Sunday."
+  },
+  {
+    "dutch": "dichtbij / dicht bij",
+    "english": "near / close to",
+    "vietnamese": "gần",
+    "dutchsentence": "Ik woon dichtbij de universiteit.",
+    "englishtranslate": "I live near the university."
+  },
+  {
+    "dutch": "buiten",
+    "english": "outside",
+    "vietnamese": "bên ngoài",
+    "dutchsentence": "De kinderen spelen buiten.",
+    "englishtranslate": "The children are playing outside."
+  },
+  {
+    "dutch": "enkele",
+    "english": "some / single",
+    "vietnamese": "một vài",
+    "dutchsentence": "Er zijn enkele fouten in jouw antwoord.",
+    "englishtranslate": "There are some mistakes in your answer."
+  },
+  {
+    "dutch": "een paar",
+    "english": "a few / a couple",
+    "vietnamese": "một vài",
+    "dutchsentence": "Ik heb een paar vragen voor de leerkracht.",
+    "englishtranslate": "I have a few questions for the teacher."
+  },
+  {
+    "dutch": "nemen",
+    "english": "to take",
+    "vietnamese": "lấy",
+    "dutchsentence": "Neem een taxi naar het station.",
+    "englishtranslate": "Take a taxi to the station."
+  },
+  {
+    "dutch": "staan",
+    "english": "to stand",
+    "vietnamese": "đứng",
+    "dutchsentence": "De beker staat op de tafel.",
+    "englishtranslate": "The cup is standing on the table."
+  },
+  {
+    "dutch": "liggen",
+    "english": "to lie / to be located (horizontally)",
+    "vietnamese": "nằm",
+    "dutchsentence": "De stad ligt dichtbij de zee.",
+    "englishtranslate": "The city is located near the sea."
+  },
+  {
+    "dutch": "hangen",
+    "english": "to hang",
+    "vietnamese": "treo",
+    "dutchsentence": "De jas hangt in de gang.",
+    "englishtranslate": "The coat is hanging in the hallway."
+  }
 ]

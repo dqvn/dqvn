@@ -1,18 +1,116 @@
 [
-    {"dutch": "het verleden", "english": "the past", "vietnamese": "quá khứ"},
-    {"dutch": "de toekomst", "english": "the future", "vietnamese": "tương lai"},
-    {"dutch": "eergisteren", "english": "the day before yesterday", "vietnamese": "hôm kia"},
-    {"dutch": "gisteren", "english": "yesterday", "vietnamese": "hôm qua"},
-    {"dutch": "vandaag", "english": "today", "vietnamese": "hôm nay"},
-    {"dutch": "morgen", "english": "tomorrow", "vietnamese": "ngày mai"},
-    {"dutch": "overmorgen", "english": "the day after tomorrow", "vietnamese": "ngày kia"},
-    {"dutch": "daarnet", "english": "just now", "vietnamese": "vừa mới"},
-    {"dutch": "straks", "english": "later", "vietnamese": "sau đó"},
-    {"dutch": "geleden", "english": "ago", "vietnamese": "trước"},
-    {"dutch": "vorige", "english": "previous", "vietnamese": "trước"},
-    {"dutch": "perfect", "english": "perfect", "vietnamese": "hoàn hảo"},
-    {"dutch": "was, waren", "english": "was, were", "vietnamese": "đã"},
-    {"dutch": "had, hadden", "english": "had", "vietnamese": "đã có"},
-    {"dutch": "veranderen", "english": "change", "vietnamese": "thay đổi"},
-    {"dutch": "mogen", "english": "may", "vietnamese": "có thể"}
+  {
+    "dutch": "verleden, het",
+    "english": "the past",
+    "vietnamese": "quá khứ",
+    "dutchsentence": "Het verleden kan je niet veranderen.",
+    "englishtranslate": "You cannot change the past."
+  },
+  {
+    "dutch": "toekomst, de",
+    "english": "the future",
+    "vietnamese": "tương lai",
+    "dutchsentence": "Ik denk vaak aan de toekomst.",
+    "englishtranslate": "I often think about the future."
+  },
+  {
+    "dutch": "eergisteren",
+    "english": "the day before yesterday",
+    "vietnamese": "hôm kia",
+    "dutchsentence": "Eergisteren was ik op vakantie.",
+    "englishtranslate": "The day before yesterday I was on holiday."
+  },
+  {
+    "dutch": "gisteren",
+    "english": "yesterday",
+    "vietnamese": "hôm qua",
+    "dutchsentence": "Gisteren heb ik mijn huiswerk gedaan.",
+    "englishtranslate": "Yesterday I did my homework."
+  },
+  {
+    "dutch": "vandaag",
+    "english": "today",
+    "vietnamese": "hôm nay",
+    "dutchsentence": "Vandaag is het vrijdag.",
+    "englishtranslate": "Today it is Friday."
+  },
+  {
+    "dutch": "morgen",
+    "english": "tomorrow",
+    "vietnamese": "ngày mai",
+    "dutchsentence": "Morgen zullen we afspreken.",
+    "englishtranslate": "Tomorrow we will arrange to meet."
+  },
+  {
+    "dutch": "overmorgen",
+    "english": "the day after tomorrow",
+    "vietnamese": "ngày kia",
+    "dutchsentence": "Overmorgen gaan we naar de stad.",
+    "englishtranslate": "The day after tomorrow we are going to the city."
+  },
+  {
+    "dutch": "daarnet",
+    "english": "just now (a short time ago)",
+    "vietnamese": "vừa mới",
+    "dutchsentence": "Hij is daarnet vertrokken.",
+    "englishtranslate": "He left just now (recently)."
+  },
+  {
+    "dutch": "straks",
+    "english": "later (soon)",
+    "vietnamese": "sau đó",
+    "dutchsentence": "We gaan straks eten.",
+    "englishtranslate": "We are going to eat later (soon).",
+    "notes": "Implies 'in a bit' or 'shortly'."
+  },
+  {
+    "dutch": "geleden",
+    "english": "ago",
+    "vietnamese": "trước",
+    "dutchsentence": "Ik zag hem een week geleden.",
+    "englishtranslate": "I saw him a week ago."
+  },
+  {
+    "dutch": "vorige",
+    "english": "previous / last",
+    "vietnamese": "trước",
+    "dutchsentence": "De vorige vraag was te moeilijk.",
+    "englishtranslate": "The previous/last question was too difficult."
+  },
+  {
+    "dutch": "perfect",
+    "english": "perfect / the perfect tense (grammar)",
+    "vietnamese": "hoàn hảo",
+    "dutchsentence": "Je Nederlands is perfect.",
+    "englishtranslate": "Your Dutch is perfect."
+  },
+  {
+    "dutch": "was, waren",
+    "english": "was, were (past tense of *zijn*)",
+    "vietnamese": "đã",
+    "dutchsentence": "Ik was thuis en zij waren weg.",
+    "englishtranslate": "I was at home and they were away."
+  },
+  {
+    "dutch": "had, hadden",
+    "english": "had (past tense of *hebben*)",
+    "vietnamese": "đã có",
+    "dutchsentence": "Wij hadden veel vragen over de toets.",
+    "englishtranslate": "We had many questions about the test."
+  },
+  {
+    "dutch": "veranderen",
+    "english": "to change",
+    "vietnamese": "thay đổi",
+    "dutchsentence": "Ze wil haar baan veranderen.",
+    "englishtranslate": "She wants to change her job."
+  },
+  {
+    "dutch": "mogen",
+    "english": "may / to be allowed to",
+    "vietnamese": "có thể",
+    "dutchsentence": "Mogen we nu naar huis gaan?",
+    "englishtranslate": "May we go home now?",
+    "notes": "Used to express permission."
+  }
 ]

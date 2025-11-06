@@ -1,20 +1,128 @@
 [
-    {"dutch": "de waarheid (waarheden)", "english": "the truth (truths)", "vietnamese": "sự thật (những sự thật)"},
-    {"dutch": "de leugen (-s)", "english": "the lie (lies)", "vietnamese": "lời nói dối (những lời nói dối)"},
-    {"dutch": "het excuus (excuses)", "english": "the excuse (excuses)", "vietnamese": "lời xin lỗi (những lời xin lỗi)"},
-    {"dutch": "het spijt me", "english": "I'm sorry", "vietnamese": "tôi xin lỗi"},
-    {"dutch": "nadat", "english": "after", "vietnamese": "sau khi"},
-    {"dutch": "voordat", "english": "before", "vietnamese": "trước khi"},
-    {"dutch": "daarvoor", "english": "before that", "vietnamese": "trước đó"},
-    {"dutch": "halen (gehaald)", "english": "to fetch (fetched)", "vietnamese": "lấy (đã lấy)"},
-    {"dutch": "geven", "english": "to give", "vietnamese": "cho"},
-    {"dutch": "nemen", "english": "to take", "vietnamese": "lấy"},
-    {"dutch": "liggen", "english": "to lie", "vietnamese": "nằm"},
-    {"dutch": "denken", "english": "to think", "vietnamese": "nghĩ"},
-    {"dutch": "zitten", "english": "to sit", "vietnamese": "ngồi"},
-    {"dutch": "brengen", "english": "to bring", "vietnamese": "mang"},
-    {"dutch": "lachen", "english": "to laugh", "vietnamese": "cười"},
-    {"dutch": "wassen", "english": "to wash", "vietnamese": "rửa"},
-    {"dutch": "vergeten", "english": "to forget", "vietnamese": "quên"},
-    {"dutch": "breken", "english": "to break", "vietnamese": "gãy"}
-  ]
+    {
+        "dutch": "de waarheid (waarheden)",
+        "english": "the truth (truths)",
+        "vietnamese": "sự thật (những sự thật)",
+        "dutchsentence": "Vertel me alsjeblieft de hele waarheid.",
+        "englishtranslate": "Please tell me the whole truth."
+    },
+    {
+        "dutch": "de leugen (-s)",
+        "english": "the lie (lies)",
+        "vietnamese": "lời nói dối (những lời nói dối)",
+        "dutchsentence": "Het is nooit goed om een leugen te vertellen.",
+        "englishtranslate": "It is never good to tell a lie."
+    },
+    {
+        "dutch": "het excuus (excuses)",
+        "english": "the excuse (excuses)",
+        "vietnamese": "lời xin lỗi (những lời xin lỗi)",
+        "dutchsentence": "Ik heb geen goed excuus voor mijn late komst.",
+        "englishtranslate": "I don't have a good excuse for my late arrival."
+    },
+    {
+        "dutch": "het spijt me",
+        "english": "I'm sorry",
+        "vietnamese": "tôi xin lỗi",
+        "dutchsentence": "Het spijt me dat ik je heb laten wachten.",
+        "englishtranslate": "I'm sorry that I made you wait."
+    },
+    {
+        "dutch": "nadat",
+        "english": "after",
+        "vietnamese": "sau khi",
+        "dutchsentence": "Nadat we gegeten hadden, gingen we wandelen.",
+        "englishtranslate": "After we had eaten, we went for a walk."
+    },
+    {
+        "dutch": "voordat",
+        "english": "before",
+        "vietnamese": "trước khi",
+        "dutchsentence": "Drink water voordat je gaat slapen.",
+        "englishtranslate": "Drink water before you go to sleep."
+    },
+    {
+        "dutch": "daarvoor",
+        "english": "before that",
+        "vietnamese": "trước đó",
+        "dutchsentence": "Ik heb hem gisteren ontmoet, en daarvoor kende ik hem niet.",
+        "englishtranslate": "I met him yesterday, and before that, I didn't know him."
+    },
+    {
+        "dutch": "halen (gehaald)",
+        "english": "to fetch (fetched)",
+        "vietnamese": "lấy (đã lấy)",
+        "dutchsentence": "Kan je even de post uit de brievenbus halen?",
+        "englishtranslate": "Can you quickly fetch the mail from the mailbox?"
+    },
+    {
+        "dutch": "geven",
+        "english": "to give",
+        "vietnamese": "cho",
+        "dutchsentence": "Zou je me het zout even willen geven?",
+        "englishtranslate": "Would you like to give me the salt for a moment?"
+    },
+    {
+        "dutch": "nemen",
+        "english": "to take",
+        "vietnamese": "lấy",
+        "dutchsentence": "Ik neem de trein van negen uur.",
+        "englishtranslate": "I'll take the nine o'clock train."
+    },
+    {
+        "dutch": "liggen",
+        "english": "to lie",
+        "vietnamese": "nằm",
+        "dutchsentence": "Het boek ligt op tafel, niet op de stoel.",
+        "englishtranslate": "The book is lying on the table, not on the chair."
+    },
+    {
+        "dutch": "denken",
+        "english": "to think",
+        "vietnamese": "nghĩ",
+        "dutchsentence": "Wat denk je van dit nieuwe plan?",
+        "englishtranslate": "What do you think of this new plan?"
+    },
+    {
+        "dutch": "zitten",
+        "english": "to sit",
+        "vietnamese": "ngồi",
+        "dutchsentence": "We zitten in de keuken te praten.",
+        "englishtranslate": "We are sitting in the kitchen talking."
+    },
+    {
+        "dutch": "brengen",
+        "english": "to bring",
+        "vietnamese": "mang",
+        "dutchsentence": "Ik zal de taart naar het feest brengen.",
+        "englishtranslate": "I will bring the cake to the party."
+    },
+    {
+        "dutch": "lachen",
+        "english": "to laugh",
+        "vietnamese": "cười",
+        "dutchsentence": "Ze moest hard lachen om de grap.",
+        "englishtranslate": "She had to laugh hard at the joke."
+    },
+    {
+        "dutch": "wassen",
+        "english": "to wash",
+        "vietnamese": "rửa",
+        "dutchsentence": "Je moet je auto nodig wassen.",
+        "englishtranslate": "You really need to wash your car."
+    },
+    {
+        "dutch": "vergeten",
+        "english": "to forget",
+        "vietnamese": "quên",
+        "dutchsentence": "Probeer niet te vergeten mij een bericht te sturen.",
+        "englishtranslate": "Try not to forget to send me a message."
+    },
+    {
+        "dutch": "breken",
+        "english": "to break",
+        "vietnamese": "gãy",
+        "dutchsentence": "Het kan breken als je het laat vallen.",
+        "englishtranslate": "It can break if you drop it."
+    }
+]

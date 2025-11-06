@@ -1,21 +1,135 @@
 [
-    {"dutch": "het verhaal (verhalen)", "english": "the story (stories)", "vietnamese": "câu chuyện (các câu chuyện)"},
-    {"dutch": "de drugs", "english": "the drugs", "vietnamese": "ma túy"},
-    {"dutch": "de oorlog (-en)", "english": "the war (-s)", "vietnamese": "chiến tranh (-s)"},
-    {"dutch": "de groep (-en)", "english": "the group (-s)", "vietnamese": "nhóm (-s)"},
-    {"dutch": "de president (-en)", "english": "the president (-s)", "vietnamese": "tổng thống (-s)"},
-    {"dutch": "de hulp", "english": "the help", "vietnamese": "sự giúp đỡ"},
-    {"dutch": "de inhoud", "english": "the content", "vietnamese": "nội dung"},
-    {"dutch": "de generaal (-ralen)", "english": "the general (-s)", "vietnamese": "tướng (-s)"},
-    {"dutch": "het leger (-s)", "english": "the army (-s)", "vietnamese": "quân đội (-s)"},
-    {"dutch": "de boot (boten)", "english": "the boat (-s)", "vietnamese": "thuyền (-s)"},
-    {"dutch": "de kapitein (-s)", "english": "the captain (-s)", "vietnamese": "thuyền trưởng (-s)"},
-    {"dutch": "het schip (schepen)", "english": "the ship (-s)", "vietnamese": "tàu (-s)"},
-    {"dutch": "het conflict (-en)", "english": "the conflict (-s)", "vietnamese": "xung đột (-s)"},
-    {"dutch": "de wereld (-en)", "english": "the world (-s)", "vietnamese": "thế giới (-s)"},
-    {"dutch": "de minister (-s)", "english": "the minister (-s)", "vietnamese": "bộ trưởng (-s)"},
-    {"dutch": "de koning (-en)", "english": "the king (-s)", "vietnamese": "vua (-s)"},
-    {"dutch": "de koningin (-nen)", "english": "the queen (-s)", "vietnamese": "nữ hoàng (-s)"},
-    {"dutch": "vechten", "english": "to fight", "vietnamese": "đánh nhau"},
-    {"dutch": "gebeuren", "english": "to happen", "vietnamese": "xảy ra"}
+    {
+        "dutch": "het verhaal (verhalen)",
+        "english": "the story (stories)",
+        "vietnamese": "câu chuyện (các câu chuyện)",
+        "dutchsentence": "Het verhaal in dit boek is erg ontroerend.",
+        "englishtranslate": "The story in this book is very moving."
+    },
+    {
+        "dutch": "de drugs",
+        "english": "the drugs",
+        "vietnamese": "ma túy",
+        "dutchsentence": "De politie heeft een grote hoeveelheid drugs in beslag genomen.",
+        "englishtranslate": "The police confiscated a large quantity of drugs."
+    },
+    {
+        "dutch": "de oorlog (-en)",
+        "english": "the war (-s)",
+        "vietnamese": "chiến tranh (-s)",
+        "dutchsentence": "Niemand wil een nieuwe oorlog.",
+        "englishtranslate": "Nobody wants a new war."
+    },
+    {
+        "dutch": "de groep (-en)",
+        "english": "the group (-s)",
+        "vietnamese": "nhóm (-s)",
+        "dutchsentence": "De studenten vormden een groep om samen te studeren.",
+        "englishtranslate": "The students formed a group to study together."
+    },
+    {
+        "dutch": "de president (-en)",
+        "english": "the president (-s)",
+        "vietnamese": "tổng thống (-s)",
+        "dutchsentence": "De president hield een toespraak over de economie.",
+        "englishtranslate": "The president held a speech about the economy."
+    },
+    {
+        "dutch": "de hulp",
+        "english": "the help",
+        "vietnamese": "sự giúp đỡ",
+        "dutchsentence": "Vraag om hulp als je het niet begrijpt.",
+        "englishtranslate": "Ask for help if you don't understand it."
+    },
+    {
+        "dutch": "de inhoud",
+        "english": "the content",
+        "vietnamese": "nội dung",
+        "dutchsentence": "De inhoud van de presentatie was duidelijk.",
+        "englishtranslate": "The content of the presentation was clear."
+    },
+    {
+        "dutch": "de generaal (-ralen)",
+        "english": "the general (-s)",
+        "vietnamese": "tướng (-s)",
+        "dutchsentence": "De generaal leidde de troepen naar de overwinning.",
+        "englishtranslate": "The general led the troops to victory."
+    },
+    {
+        "dutch": "het leger (-s)",
+        "english": "the army (-s)",
+        "vietnamese": "quân đội (-s)",
+        "dutchsentence": "Zij diende drie jaar in het leger.",
+        "englishtranslate": "She served three years in the army."
+    },
+    {
+        "dutch": "de boot (boten)",
+        "english": "the boat (-s)",
+        "vietnamese": "thuyền (-s)",
+        "dutchsentence": "We gingen met een kleine boot het meer op.",
+        "englishtranslate": "We went out on the lake with a small boat."
+    },
+    {
+        "dutch": "de kapitein (-s)",
+        "english": "the captain (-s)",
+        "vietnamese": "thuyền trưởng (-s)",
+        "dutchsentence": "De kapitein stond aan het roer van het schip.",
+        "englishtranslate": "The captain was at the helm of the ship."
+    },
+    {
+        "dutch": "het schip (schepen)",
+        "english": "the ship (-s)",
+        "vietnamese": "tàu (-s)",
+        "dutchsentence": "Het schip vaart richting de haven.",
+        "englishtranslate": "The ship is sailing towards the harbor."
+    },
+    {
+        "dutch": "het conflict (-en)",
+        "english": "the conflict (-s)",
+        "vietnamese": "xung đột (-s)",
+        "dutchsentence": "Er is een conflict ontstaan tussen de buren.",
+        "englishtranslate": "A conflict arose between the neighbors."
+    },
+    {
+        "dutch": "de wereld (-en)",
+        "english": "the world (-s)",
+        "vietnamese": "thế giới (-s)",
+        "dutchsentence": "De wereld is een kleine plek.",
+        "englishtranslate": "The world is a small place."
+    },
+    {
+        "dutch": "de minister (-s)",
+        "english": "the minister (-s)",
+        "vietnamese": "bộ trưởng (-s)",
+        "dutchsentence": "De minister van Financiën presenteerde de begroting.",
+        "englishtranslate": "The Minister of Finance presented the budget."
+    },
+    {
+        "dutch": "de koning (-en)",
+        "english": "the king (-s)",
+        "vietnamese": "vua (-s)",
+        "dutchsentence": "De koning bezocht de stad vorig jaar.",
+        "englishtranslate": "The king visited the city last year."
+    },
+    {
+        "dutch": "de koningin (-nen)",
+        "english": "the queen (-s)",
+        "vietnamese": "nữ hoàng (-s)",
+        "dutchsentence": "De koningin droeg een mooie kroon.",
+        "englishtranslate": "The queen wore a beautiful crown."
+    },
+    {
+        "dutch": "vechten",
+        "english": "to fight",
+        "vietnamese": "đánh nhau",
+        "dutchsentence": "Ze besloten niet meer te vechten over de regels.",
+        "englishtranslate": "They decided not to fight over the rules anymore."
+    },
+    {
+        "dutch": "gebeuren",
+        "english": "to happen",
+        "vietnamese": "xảy ra",
+        "dutchsentence": "Wat gaat er nu gebeuren?",
+        "englishtranslate": "What is going to happen now?"
+    }
 ]

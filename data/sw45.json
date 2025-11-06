@@ -1,12 +1,72 @@
 [
-    {"dutch": "de grond (-en)", "english": "the ground (grounds)", "vietnamese": "mặt đất (những mặt đất)"},
-    {"dutch": "enige", "english": "only", "vietnamese": "duy nhất"},
-    {"dutch": "vreselijk", "english": "terrible", "vietnamese": "kinh khủng"},
-    {"dutch": "erg", "english": "very", "vietnamese": "rất"},
-    {"dutch": "arm", "english": "poor", "vietnamese": "nghèo"},
-    {"dutch": "rijk", "english": "rich", "vietnamese": "giàu"},
-    {"dutch": "ene", "english": "one", "vietnamese": "một"},
-    {"dutch": "neer", "english": "down", "vietnamese": "xuống"},
-    {"dutch": "dr", "english": "doctor", "vietnamese": "bác sĩ"},
-    {"dutch": "enkele", "english": "some", "vietnamese": "một vài"}
-  ]
+    {
+        "dutch": "de grond (-en)",
+        "english": "the ground (grounds)",
+        "vietnamese": "mặt đất (những mặt đất)",
+        "dutchsentence": "De bal viel op de grond.",
+        "englishtranslate": "The ball fell onto the ground."
+    },
+    {
+        "dutch": "enige",
+        "english": "only",
+        "vietnamese": "duy nhất",
+        "dutchsentence": "Dit is de enige manier om het te doen.",
+        "englishtranslate": "This is the only way to do it."
+    },
+    {
+        "dutch": "vreselijk",
+        "english": "terrible",
+        "vietnamese": "kinh khủng",
+        "dutchsentence": "Het weer was vreselijk tijdens onze vakantie.",
+        "englishtranslate": "The weather was terrible during our holiday."
+    },
+    {
+        "dutch": "erg",
+        "english": "very",
+        "vietnamese": "rất",
+        "dutchsentence": "Ik ben erg blij met dit resultaat.",
+        "englishtranslate": "I am very happy with this result."
+    },
+    {
+        "dutch": "arm",
+        "english": "poor",
+        "vietnamese": "nghèo",
+        "dutchsentence": "Het is jammer dat zoveel mensen arm zijn.",
+        "englishtranslate": "It is a shame that so many people are poor."
+    },
+    {
+        "dutch": "rijk",
+        "english": "rich",
+        "vietnamese": "giàu",
+        "dutchsentence": "Hij droomt ervan om op een dag rijk te zijn.",
+        "englishtranslate": "He dreams of being rich one day."
+    },
+    {
+        "dutch": "ene",
+        "english": "one",
+        "vietnamese": "một",
+        "dutchsentence": "De ene keer gaat het goed, de andere keer niet.",
+        "englishtranslate": "One time it goes well, the other time not."
+    },
+    {
+        "dutch": "neer",
+        "english": "down",
+        "vietnamese": "xuống",
+        "dutchsentence": "Zet de beker neer op de tafel.",
+        "englishtranslate": "Put the cup down on the table."
+    },
+    {
+        "dutch": "dr",
+        "english": "doctor",
+        "vietnamese": "bác sĩ",
+        "dutchsentence": "Ik heb een afspraak met Dr. Jansen.",
+        "englishtranslate": "I have an appointment with Dr. Jansen."
+    },
+    {
+        "dutch": "enkele",
+        "english": "some",
+        "vietnamese": "một vài",
+        "dutchsentence": "Er waren slechts enkele mensen aanwezig.",
+        "englishtranslate": "There were only some (a few) people present."
+    }
+]

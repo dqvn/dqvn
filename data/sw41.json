@@ -1,21 +1,135 @@
 [
-    {"dutch": "de temperatuur (temperaturen)", "english": "the temperature (temperatures)", "vietnamese": "nhiệt độ (những nhiệt độ)"},
-    {"dutch": "de sleutel (-s)", "english": "the key (keys)", "vietnamese": "chìa khóa (những chìa khóa)"},
-    {"dutch": "de kleren", "english": "the clothes", "vietnamese": "quần áo"},
-    {"dutch": "koud", "english": "cold", "vietnamese": "lạnh"},
-    {"dutch": "warm", "english": "warm", "vietnamese": "ấm"},
-    {"dutch": "hoog", "english": "high", "vietnamese": "cao"},
-    {"dutch": "laag", "english": "low", "vietnamese": "thấp"},
-    {"dutch": "omhoog", "english": "up", "vietnamese": "lên"},
-    {"dutch": "omlaag", "english": "down", "vietnamese": "xuống"},
-    {"dutch": "slechts", "english": "only", "vietnamese": "chỉ"},
-    {"dutch": "allebei", "english": "both", "vietnamese": "cả hai"},
-    {"dutch": "beide(n)", "english": "both", "vietnamese": "cả hai"},
-    {"dutch": "allen", "english": "all", "vietnamese": "tất cả"},
-    {"dutch": "enkel", "english": "single", "vietnamese": "đơn"},
-    {"dutch": "alle", "english": "all", "vietnamese": "tất cả"},
-    {"dutch": "weten", "english": "to know", "vietnamese": "biết"},
-    {"dutch": "schrijven", "english": "to write", "vietnamese": "viết"},
-    {"dutch": "begrijpen", "english": "to understand", "vietnamese": "hiểu"},
-    {"dutch": "doen", "english": "to do", "vietnamese": "làm"}
-  ]
+    {
+        "dutch": "de temperatuur (temperaturen)",
+        "english": "the temperature (temperatures)",
+        "vietnamese": "nhiệt độ (những nhiệt độ)",
+        "dutchsentence": "De temperatuur is vandaag boven de 25 graden.",
+        "englishtranslate": "The temperature is above 25 degrees today."
+    },
+    {
+        "dutch": "de sleutel (-s)",
+        "english": "the key (keys)",
+        "vietnamese": "chìa khóa (những chìa khóa)",
+        "dutchsentence": "Waar heb ik mijn huissleutel gelaten?",
+        "englishtranslate": "Where did I leave my house key?"
+    },
+    {
+        "dutch": "de kleren",
+        "english": "the clothes",
+        "vietnamese": "quần áo",
+        "dutchsentence": "Ik moet schone kleren uit de kast halen.",
+        "englishtranslate": "I need to get clean clothes from the closet."
+    },
+    {
+        "dutch": "koud",
+        "english": "cold",
+        "vietnamese": "lạnh",
+        "dutchsentence": "Het is koud buiten, dus doe een jas aan.",
+        "englishtranslate": "It is cold outside, so put on a coat."
+    },
+    {
+        "dutch": "warm",
+        "english": "warm",
+        "vietnamese": "ấm",
+        "dutchsentence": "De soep is lekker warm en klaar om te eten.",
+        "englishtranslate": "The soup is nice and warm and ready to eat."
+    },
+    {
+        "dutch": "hoog",
+        "english": "high",
+        "vietnamese": "cao",
+        "dutchsentence": "Het gebouw is erg hoog, met twintig verdiepingen.",
+        "englishtranslate": "The building is very high, with twenty floors."
+    },
+    {
+        "dutch": "laag",
+        "english": "low",
+        "vietnamese": "thấp",
+        "dutchsentence": "De muur is te laag om veilig te zijn.",
+        "englishtranslate": "The wall is too low to be safe."
+    },
+    {
+        "dutch": "omhoog",
+        "english": "up",
+        "vietnamese": "lên",
+        "dutchsentence": "Kijk eens omhoog naar de wolken.",
+        "englishtranslate": "Look up at the clouds."
+    },
+    {
+        "dutch": "omlaag",
+        "english": "down",
+        "vietnamese": "xuống",
+        "dutchsentence": "Zet de temperatuur een beetje omlaag.",
+        "englishtranslate": "Turn the temperature down a bit."
+    },
+    {
+        "dutch": "slechts",
+        "english": "only",
+        "vietnamese": "chỉ",
+        "dutchsentence": "Er waren slechts twee mensen op het feest.",
+        "englishtranslate": "There were only two people at the party."
+    },
+    {
+        "dutch": "allebei",
+        "english": "both",
+        "vietnamese": "cả hai",
+        "dutchsentence": "Ze hebben allebei besloten om thuis te blijven.",
+        "englishtranslate": "They both decided to stay home."
+    },
+    {
+        "dutch": "beide(n)",
+        "english": "both",
+        "vietnamese": "cả hai",
+        "dutchsentence": "Ik heb beide boeken gelezen.",
+        "englishtranslate": "I have read both books."
+    },
+    {
+        "dutch": "allen",
+        "english": "all",
+        "vietnamese": "tất cả",
+        "dutchsentence": "Ze groette hen allen persoonlijk.",
+        "englishtranslate": "She greeted all of them personally."
+    },
+    {
+        "dutch": "enkel",
+        "english": "single",
+        "vietnamese": "đơn",
+        "dutchsentence": "Ik had maar een enkel ticket voor het concert.",
+        "englishtranslate": "I only had a single ticket for the concert."
+    },
+    {
+        "dutch": "alle",
+        "english": "all",
+        "vietnamese": "tất cả",
+        "dutchsentence": "Alle studenten moeten het examen afleggen.",
+        "englishtranslate": "All students must take the exam."
+    },
+    {
+        "dutch": "weten",
+        "english": "to know",
+        "vietnamese": "biết",
+        "dutchsentence": "Wist je dat hij al getrouwd is?",
+        "englishtranslate": "Did you know that he is already married?"
+    },
+    {
+        "dutch": "schrijven",
+        "english": "to write",
+        "vietnamese": "viết",
+        "dutchsentence": "Kun je een brief naar de burgemeester schrijven?",
+        "englishtranslate": "Can you write a letter to the mayor?"
+    },
+    {
+        "dutch": "begrijpen",
+        "english": "to understand",
+        "vietnamese": "hiểu",
+        "dutchsentence": "Ik begrijp niet wat je bedoelt.",
+        "englishtranslate": "I don't understand what you mean."
+    },
+    {
+        "dutch": "doen",
+        "english": "to do",
+        "vietnamese": "làm",
+        "dutchsentence": "Wat moet ik nu doen om te helpen?",
+        "englishtranslate": "What should I do now to help?"
+    }
+]

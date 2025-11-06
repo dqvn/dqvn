@@ -1,13 +1,81 @@
 [
-    {"dutch": "de hobby", "english": "the hobby", "vietnamese": "sở thích"},
-    {"dutch": "de sport", "english": "the sport", "vietnamese": "thể thao"},
-    {"dutch": "het weekend", "english": "the weekend", "vietnamese": "cuối tuần"},
-    {"dutch": "het concert", "english": "the concert", "vietnamese": "buổi hòa nhạc"},
-    {"dutch": "de dialoog", "english": "the dialogue", "vietnamese": "cuộc đối thoại"},
-    {"dutch": "interessant", "english": "interesting", "vietnamese": "thú vị"},
-    {"dutch": "graag", "english": "gladly", "vietnamese": "vui lòng"},
-    {"dutch": "spelen", "english": "play", "vietnamese": "chơi"},
-    {"dutch": "sporten", "english": "do sports", "vietnamese": "tập thể thao"},
-    {"dutch": "houden van", "english": "love", "vietnamese": "yêu thích"},
-    {"dutch": "koken", "english": "cook", "vietnamese": "nấu ăn"}
+  {
+    "dutch": "hobby, de",
+    "english": "the hobby",
+    "vietnamese": "sở thích",
+    "dutchsentence": "Wat is jouw favoriete hobby?",
+    "englishtranslate": "What is your favourite hobby?"
+  },
+  {
+    "dutch": "sport, de",
+    "english": "the sport",
+    "vietnamese": "thể thao",
+    "dutchsentence": "Hij houdt van sport en spelen.",
+    "englishtranslate": "He loves sports and playing."
+  },
+  {
+    "dutch": "weekend, het",
+    "english": "the weekend",
+    "vietnamese": "cuối tuần",
+    "dutchsentence": "Wat zullen we doen dit weekend?",
+    "englishtranslate": "What shall we do this weekend?"
+  },
+  {
+    "dutch": "concert, het",
+    "english": "the concert",
+    "vietnamese": "buổi hòa nhạc",
+    "dutchsentence": "Ik ga volgende maand naar een concert.",
+    "englishtranslate": "I am going to a concert next month."
+  },
+  {
+    "dutch": "dialoog, de",
+    "english": "the dialogue",
+    "vietnamese": "cuộc đối thoại",
+    "dutchsentence": "We moeten deze dialoog oefenen.",
+    "englishtranslate": "We must practice this dialogue."
+  },
+  {
+    "dutch": "interessant",
+    "english": "interesting",
+    "vietnamese": "thú vị",
+    "dutchsentence": "Dit artikel is erg interessant.",
+    "englishtranslate": "This article is very interesting."
+  },
+  {
+    "dutch": "graag",
+    "english": "gladly / like to / willingly",
+    "vietnamese": "vui lòng",
+    "dutchsentence": "Ik drink graag koffie.",
+    "englishtranslate": "I like to drink coffee (lit. I drink coffee gladly).",
+    "notes": "Used to express preference."
+  },
+  {
+    "dutch": "spelen",
+    "english": "to play",
+    "vietnamese": "chơi",
+    "dutchsentence": "Ze spelen soms buiten.",
+    "englishtranslate": "They play sometimes outside."
+  },
+  {
+    "dutch": "sporten",
+    "english": "to do sports / to exercise",
+    "vietnamese": "tập thể thao",
+    "dutchsentence": "Ik ga drie keer per week sporten.",
+    "englishtranslate": "I go three times per week to do sports/exercise."
+  },
+  {
+    "dutch": "houden van",
+    "english": "to love / to be fond of",
+    "vietnamese": "yêu thích",
+    "dutchsentence": "Wij houden van koken en eten.",
+    "englishtranslate": "We love cooking and eating.",
+    "notes": "Often used to express a strong liking."
+  },
+  {
+    "dutch": "koken",
+    "english": "to cook",
+    "vietnamese": "nấu ăn",
+    "dutchsentence": "Mijn moeder kan erg goed koken.",
+    "englishtranslate": "My mother can cook very well."
+  }
 ]

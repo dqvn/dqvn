@@ -1,22 +1,142 @@
 [
-    {"dutch": "de opinie (-s)", "english": "the opinion (-s)", "vietnamese": "ý kiến (-s)"},
-    {"dutch": "de kilometer (-s)", "english": "the kilometer (-s)", "vietnamese": "kilômét (-s)"},
-    {"dutch": "de meter (-s)", "english": "the meter (-s)", "vietnamese": "mét (-s)"},
-    {"dutch": "de snelheid (-heden)", "english": "the speed (-s)", "vietnamese": "tốc độ (-s)"},
-    {"dutch": "de controle (-s)", "english": "the control (-s)", "vietnamese": "kiểm soát (-s)"},
-    {"dutch": "de politie", "english": "the police", "vietnamese": "cảnh sát"},
-    {"dutch": "de boete (-s)", "english": "the fine (-s)", "vietnamese": "tiền phạt (-s)"},
-    {"dutch": "de straf (-fen)", "english": "the punishment (-s)", "vietnamese": "hình phạt (-s)"},
-    {"dutch": "per", "english": "per", "vietnamese": "mỗi"},
-    {"dutch": "langzaam", "english": "slow", "vietnamese": "chậm"},
-    {"dutch": "straffen", "english": "to punish", "vietnamese": "trừng phạt"},
-    {"dutch": "overal", "english": "everywhere", "vietnamese": "tất cả mọi nơi"},
-    {"dutch": "ergens", "english": "somewhere", "vietnamese": "ở đâu đó"},
-    {"dutch": "nergens", "english": "nowhere", "vietnamese": "không ở đâu hết"},
-    {"dutch": "iedereen", "english": "everyone", "vietnamese": "mọi người"},
-    {"dutch": "iemand", "english": "someone", "vietnamese": "một ai đó"},
-    {"dutch": "niemand", "english": "no one", "vietnamese": "không ai hết"},
-    {"dutch": "alles", "english": "everything", "vietnamese": "mọi thứ"},
-    {"dutch": "iets", "english": "something", "vietnamese": "một cái gì đó"},
-    {"dutch": "niets", "english": "nothing", "vietnamese": "không có gì"}
+    {
+        "dutch": "de opinie (-s)",
+        "english": "the opinion (-s)",
+        "vietnamese": "ý kiến (-s)",
+        "dutchsentence": "Mijn opinie is dat we meer moeten oefenen.",
+        "englishtranslate": "My opinion is that we should practice more."
+    },
+    {
+        "dutch": "de kilometer (-s)",
+        "english": "the kilometer (-s)",
+        "vietnamese": "kilômét (-s)",
+        "dutchsentence": "Het is nog vijf kilometer naar huis.",
+        "englishtranslate": "It is still five kilometers home."
+    },
+    {
+        "dutch": "de meter (-s)",
+        "english": "the meter (-s)",
+        "vietnamese": "mét (-s)",
+        "dutchsentence": "De tafel is anderhalve meter lang.",
+        "englishtranslate": "The table is one and a half meters long."
+    },
+    {
+        "dutch": "de snelheid (-heden)",
+        "english": "the speed (-s)",
+        "vietnamese": "tốc độ (-s)",
+        "dutchsentence": "Je moet de snelheid verminderen in de bebouwde kom.",
+        "englishtranslate": "You have to reduce the speed in the built-up area."
+    },
+    {
+        "dutch": "de controle (-s)",
+        "english": "the control (-s)",
+        "vietnamese": "kiểm soát (-s)",
+        "dutchsentence": "De politie deed een snelheidscontrole.",
+        "englishtranslate": "The police carried out a speed control (check)."
+    },
+    {
+        "dutch": "de politie",
+        "english": "the police",
+        "vietnamese": "cảnh sát",
+        "dutchsentence": "De politie arriveerde snel bij het ongeluk.",
+        "englishtranslate": "The police arrived quickly at the accident."
+    },
+    {
+        "dutch": "de boete (-s)",
+        "english": "the fine (-s)",
+        "vietnamese": "tiền phạt (-s)",
+        "dutchsentence": "Ik heb een hoge boete gekregen voor te snel rijden.",
+        "englishtranslate": "I received a high fine for speeding."
+    },
+    {
+        "dutch": "de straf (-fen)",
+        "english": "the punishment (-s)",
+        "vietnamese": "hình phạt (-s)",
+        "dutchsentence": "De rechter heeft een zware straf opgelegd.",
+        "englishtranslate": "The judge imposed a severe punishment."
+    },
+    {
+        "dutch": "per",
+        "english": "per",
+        "vietnamese": "mỗi",
+        "dutchsentence": "We rijden honderd kilometer per uur.",
+        "englishtranslate": "We are driving one hundred kilometers per hour."
+    },
+    {
+        "dutch": "langzaam",
+        "english": "slow",
+        "vietnamese": "chậm",
+        "dutchsentence": "De trein rijdt erg langzaam vanwege de mist.",
+        "englishtranslate": "The train is driving very slowly because of the fog."
+    },
+    {
+        "dutch": "straffen",
+        "english": "to punish",
+        "vietnamese": "trừng phạt",
+        "dutchsentence": "De leraar moet de student straffen voor valsspelen.",
+        "englishtranslate": "The teacher has to punish the student for cheating."
+    },
+    {
+        "dutch": "overal",
+        "english": "everywhere",
+        "vietnamese": "tất cả mọi nơi",
+        "dutchsentence": "Er liggen boeken overal in de kamer.",
+        "englishtranslate": "There are books everywhere in the room."
+    },
+    {
+        "dutch": "ergens",
+        "english": "somewhere",
+        "vietnamese": "ở đâu đó",
+        "dutchsentence": "Ik heb mijn sleutels ergens neergelegd.",
+        "englishtranslate": "I put my keys down somewhere."
+    },
+    {
+        "dutch": "nergens",
+        "english": "nowhere",
+        "vietnamese": "không ở đâu hết",
+        "dutchsentence": "Ik kan mijn bril nergens vinden.",
+        "englishtranslate": "I can't find my glasses nowhere (anywhere)."
+    },
+    {
+        "dutch": "iedereen",
+        "english": "everyone",
+        "vietnamese": "mọi người",
+        "dutchsentence": "Iedereen was blij met het resultaat.",
+        "englishtranslate": "Everyone was happy with the result."
+    },
+    {
+        "dutch": "iemand",
+        "english": "someone",
+        "vietnamese": "một ai đó",
+        "dutchsentence": "Heeft iemand de telefoon gezien?",
+        "englishtranslate": "Has someone seen the phone?"
+    },
+    {
+        "dutch": "niemand",
+        "english": "no one",
+        "vietnamese": "không ai hết",
+        "dutchsentence": "Niemand kon het antwoord geven.",
+        "englishtranslate": "No one could give the answer."
+    },
+    {
+        "dutch": "alles",
+        "english": "everything",
+        "vietnamese": "mọi thứ",
+        "dutchsentence": "Ik heb alles geleerd voor de test.",
+        "englishtranslate": "I have learned everything for the test."
+    },
+    {
+        "dutch": "iets",
+        "english": "something",
+        "vietnamese": "một cái gì đó",
+        "dutchsentence": "Wil je iets drinken?",
+        "englishtranslate": "Do you want something to drink?"
+    },
+    {
+        "dutch": "niets",
+        "english": "nothing",
+        "vietnamese": "không có gì",
+        "dutchsentence": "Ik heb niets te doen vandaag.",
+        "englishtranslate": "I have nothing to do today."
+    }
 ]

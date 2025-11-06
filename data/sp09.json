@@ -1,22 +1,144 @@
 [
-    {"dutch": "de ochtend", "english": "the morning", "vietnamese": "buổi sáng"},
-    {"dutch": "de middag", "english": "the afternoon", "vietnamese": "buổi chiều"},
-    {"dutch": "de avond", "english": "the evening", "vietnamese": "buổi tối"},
-    {"dutch": "de nacht", "english": "the night", "vietnamese": "ban đêm"},
-    {"dutch": "het café", "english": "the café", "vietnamese": "quán cà phê"},
-    {"dutch": "de week", "english": "the week", "vietnamese": "tuần"},
-    {"dutch": "de dag", "english": "the day", "vietnamese": "ngày"},
-    {"dutch": "maandag", "english": "Monday", "vietnamese": "thứ hai"},
-    {"dutch": "dinsdag", "english": "Tuesday", "vietnamese": "thứ ba"},
-    {"dutch": "woensdag", "english": "Wednesday", "vietnamese": "thứ tư"},
-    {"dutch": "donderdag", "english": "Thursday", "vietnamese": "thứ năm"},
-    {"dutch": "vrijdag", "english": "Friday", "vietnamese": "thứ sáu"},
-    {"dutch": "zaterdag", "english": "Saturday", "vietnamese": "thứ bảy"},
-    {"dutch": "zondag", "english": "Sunday", "vietnamese": "chủ nhật"},
-    {"dutch": "tot", "english": "until", "vietnamese": "đến"},
-    {"dutch": "misschien", "english": "maybe", "vietnamese": "có thể"},
-    {"dutch": "hoi", "english": "hi", "vietnamese": "chào"},
-    {"dutch": "hei", "english": "hey", "vietnamese": "chào"},
-    {"dutch": "volgende", "english": "next", "vietnamese": "tiếp theo"},
-    {"dutch": "gedaan", "english": "done", "vietnamese": "xong"}
+  {
+    "dutch": "ochtend, de",
+    "english": "the morning",
+    "vietnamese": "buổi sáng",
+    "dutchsentence": "Ik werk in de ochtend.",
+    "englishtranslate": "I work in the morning."
+  },
+  {
+    "dutch": "middag, de",
+    "english": "the afternoon",
+    "vietnamese": "buổi chiều",
+    "dutchsentence": "De cursus is in de middag tot vijf uur.",
+    "englishtranslate": "The course is in the afternoon until five o'clock."
+  },
+  {
+    "dutch": "avond, de",
+    "english": "the evening",
+    "vietnamese": "buổi tối",
+    "dutchsentence": "Misschien gaan we uit eten in de avond.",
+    "englishtranslate": "Maybe we will go out for dinner in the evening."
+  },
+  {
+    "dutch": "nacht, de",
+    "english": "the night",
+    "vietnamese": "ban đêm",
+    "dutchsentence": "Ik slaap in de nacht.",
+    "englishtranslate": "I sleep during the night."
+  },
+  {
+    "dutch": "café, het",
+    "english": "the café / the pub",
+    "vietnamese": "quán cà phê",
+    "dutchsentence": "Laten we in het café een kopje koffie drinken.",
+    "englishtranslate": "Let's drink a cup of coffee in the café."
+  },
+  {
+    "dutch": "week, de",
+    "english": "the week",
+    "vietnamese": "tuần",
+    "dutchsentence": "De volgende week beginnen we opnieuw.",
+    "englishtranslate": "We start again next week."
+  },
+  {
+    "dutch": "dag, de",
+    "english": "the day",
+    "vietnamese": "ngày",
+    "dutchsentence": "Welke dag is het vandaag?",
+    "englishtranslate": "Which day is it today?"
+  },
+  {
+    "dutch": "maandag",
+    "english": "Monday",
+    "vietnamese": "thứ hai",
+    "dutchsentence": "Op maandag begin ik met werken.",
+    "englishtranslate": "On Monday I start working."
+  },
+  {
+    "dutch": "dinsdag",
+    "english": "Tuesday",
+    "vietnamese": "thứ ba",
+    "dutchsentence": "Dinsdag is de tweede dag van de week.",
+    "englishtranslate": "Tuesday is the second day of the week."
+  },
+  {
+    "dutch": "woensdag",
+    "english": "Wednesday",
+    "vietnamese": "thứ tư",
+    "dutchsentence": "Woensdag is de derde dag.",
+    "englishtranslate": "Wednesday is the third day."
+  },
+  {
+    "dutch": "donderdag",
+    "english": "Thursday",
+    "vietnamese": "thứ năm",
+    "dutchsentence": "Ik heb les op donderdag en vrijdag.",
+    "englishtranslate": "I have lessons on Thursday and Friday."
+  },
+  {
+    "dutch": "vrijdag",
+    "english": "Friday",
+    "vietnamese": "thứ sáu",
+    "dutchsentence": "Vrijdag is de laatste werkdag.",
+    "englishtranslate": "Friday is the last workday."
+  },
+  {
+    "dutch": "zaterdag",
+    "english": "Saturday",
+    "vietnamese": "thứ bảy",
+    "dutchsentence": "Zaterdag en zondag zijn het weekend.",
+    "englishtranslate": "Saturday and Sunday are the weekend."
+  },
+  {
+    "dutch": "zondag",
+    "english": "Sunday",
+    "vietnamese": "chủ nhật",
+    "dutchsentence": "Wat doe je op zondag?",
+    "englishtranslate": "What do you do on Sunday?"
+  },
+  {
+    "dutch": "tot",
+    "english": "until / to (e.g., tot ziens - until seeing you)",
+    "vietnamese": "đến",
+    "dutchsentence": "Ik werk van acht tot vier.",
+    "englishtranslate": "I work from eight until four."
+  },
+  {
+    "dutch": "misschien",
+    "english": "maybe / perhaps",
+    "vietnamese": "có thể",
+    "dutchsentence": "Misschien gaan we naar het café.",
+    "englishtranslate": "Maybe we will go to the café."
+  },
+  {
+    "dutch": "hoi",
+    "english": "hi (informal)",
+    "vietnamese": "chào",
+    "dutchsentence": "Hoi, hoe gaat het?",
+    "englishtranslate": "Hi, how is it going?",
+    "notes": "Used when greeting someone."
+  },
+  {
+    "dutch": "hei",
+    "english": "hey (informal)",
+    "vietnamese": "chào",
+    "dutchsentence": "Hei, ik zie je volgende week!",
+    "englishtranslate": "Hey, I see you next week!",
+    "notes": "Used when greeting or getting attention."
+  },
+  {
+    "dutch": "volgende",
+    "english": "next",
+    "vietnamese": "tiếp theo",
+    "dutchsentence": "De volgende dag gaan we naar de taalschool.",
+    "englishtranslate": "The next day we will go to the language school."
+  },
+  {
+    "dutch": "gedaan",
+    "english": "done / finished (past participle of *doen*)",
+    "vietnamese": "xong",
+    "dutchsentence": "Het werk is gedaan.",
+    "englishtranslate": "The work is done/finished."
+  }
 ]

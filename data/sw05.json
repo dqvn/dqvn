@@ -1,20 +1,128 @@
 [
-    {"dutch": "de cultuur (culturen)", "english": "the culture", "vietnamese": "văn hóa"},
-    {"dutch": "de infinitief (-ven)", "english": "the infinitive", "vietnamese": "động từ nguyên thể"},
-    {"dutch": "het substantief (-ven)", "english": "the noun", "vietnamese": "danh từ"},
-    {"dutch": "de bioscoop (-copen)", "english": "the cinema", "vietnamese": "rạp chiếu phim"},
-    {"dutch": "het theater (-s)", "english": "the theater", "vietnamese": "nhà hát"},
-    {"dutch": "het festival (-s)", "english": "the festival", "vietnamese": "lễ hội"},
-    {"dutch": "het museum (musea)", "english": "the museum", "vietnamese": "bảo tàng"},
-    {"dutch": "de bibliotheek (-heken)", "english": "the library", "vietnamese": "thư viện"},
-    {"dutch": "het plan (-nnen)", "english": "the plan", "vietnamese": "kế hoạch"},
-    {"dutch": "de tip (-s)", "english": "the tip", "vietnamese": "mẹo"},
-    {"dutch": "het advies (-zen)", "english": "the advice", "vietnamese": "lời khuyên"},
-    {"dutch": "de aandacht", "english": "the attention", "vietnamese": "sự chú ý"},
-    {"dutch": "de concentratie (-s)", "english": "the concentration", "vietnamese": "sự tập trung"},
-    {"dutch": "geconcentreerd", "english": "concentrated", "vietnamese": "tập trung"},
-    {"dutch": "aandachtig", "english": "attentively", "vietnamese": "chú ý"},
-    {"dutch": "buiten", "english": "outside", "vietnamese": "bên ngoài"},
-    {"dutch": "binnen", "english": "inside", "vietnamese": "bên trong"},
-    {"dutch": "gebruiken", "english": "use", "vietnamese": "sử dụng"}
+    {
+        "dutch": "de cultuur (culturen)",
+        "english": "the culture",
+        "vietnamese": "văn hóa",
+        "dutchsentence": "Ik vind de Nederlandse cultuur interessant.",
+        "englishtranslate": "I find the Dutch culture interesting."
+    },
+    {
+        "dutch": "de infinitief (-ven)",
+        "english": "the infinitive",
+        "vietnamese": "động từ nguyên thể",
+        "dutchsentence": "Het werkwoord 'lopen' is een infinitief.",
+        "englishtranslate": "The verb 'lopen' is an infinitive."
+    },
+    {
+        "dutch": "het substantief (-ven)",
+        "english": "the noun",
+        "vietnamese": "danh từ",
+        "dutchsentence": "Een substantief is een ander woord voor een zelfstandig naamwoord.",
+        "englishtranslate": "A noun is another word for a substantive (noun)."
+    },
+    {
+        "dutch": "de bioscoop (-copen)",
+        "english": "the cinema",
+        "vietnamese": "rạp chiếu phim",
+        "dutchsentence": "Zullen we vanavond naar de bioscoop gaan?",
+        "englishtranslate": "Shall we go to the cinema tonight?"
+    },
+    {
+        "dutch": "het theater (-s)",
+        "english": "the theater",
+        "vietnamese": "nhà hát",
+        "dutchsentence": "Er is een mooi theater in het centrum.",
+        "englishtranslate": "There is a beautiful theater in the city center."
+    },
+    {
+        "dutch": "het festival (-s)",
+        "english": "the festival",
+        "vietnamese": "lễ hội",
+        "dutchsentence": "Het muziekfestival was erg druk.",
+        "englishtranslate": "The music festival was very crowded."
+    },
+    {
+        "dutch": "het museum (musea)",
+        "english": "the museum",
+        "vietnamese": "bảo tàng",
+        "dutchsentence": "Morgen bezoeken we het Rijksmuseum.",
+        "englishtranslate": "Tomorrow we will visit the Rijksmuseum."
+    },
+    {
+        "dutch": "de bibliotheek (-heken)",
+        "english": "the library",
+        "vietnamese": "thư viện",
+        "dutchsentence": "Ik ga een boek lenen bij de bibliotheek.",
+        "englishtranslate": "I'm going to borrow a book from the library."
+    },
+    {
+        "dutch": "het plan (-nnen)",
+        "english": "the plan",
+        "vietnamese": "kế hoạch",
+        "dutchsentence": "Wat is je plan voor het weekend?",
+        "englishtranslate": "What is your plan for the weekend?"
+    },
+    {
+        "dutch": "de tip (-s)",
+        "english": "the tip",
+        "vietnamese": "mẹo",
+        "dutchsentence": "Heb je nog een tip om sneller te leren?",
+        "englishtranslate": "Do you have another tip for learning faster?"
+    },
+    {
+        "dutch": "het advies (-zen)",
+        "english": "the advice",
+        "vietnamese": "lời khuyên",
+        "dutchsentence": "Bedankt voor het goede advies!",
+        "englishtranslate": "Thank you for the good advice!"
+    },
+    {
+        "dutch": "de aandacht",
+        "english": "the attention",
+        "vietnamese": "sự chú ý",
+        "dutchsentence": "Geef je volledige aandacht aan de les.",
+        "englishtranslate": "Give your full attention to the lesson."
+    },
+    {
+        "dutch": "de concentratie (-s)",
+        "english": "the concentration",
+        "vietnamese": "sự tập trung",
+        "dutchsentence": "Mijn concentratie is slecht vandaag.",
+        "englishtranslate": "My concentration is bad today."
+    },
+    {
+        "dutch": "geconcentreerd",
+        "english": "concentrated",
+        "vietnamese": "tập trung",
+        "dutchsentence": "Hij werkt geconcentreerd in de stilteruimte.",
+        "englishtranslate": "He works concentrated in the quiet room."
+    },
+    {
+        "dutch": "aandachtig",
+        "english": "attentively",
+        "vietnamese": "chú ý",
+        "dutchsentence": "De studenten luisteren aandachtig naar de leraar.",
+        "englishtranslate": "The students listen attentively to the teacher."
+    },
+    {
+        "dutch": "buiten",
+        "english": "outside",
+        "vietnamese": "bên ngoài",
+        "dutchsentence": "Het is warm buiten vandaag.",
+        "englishtranslate": "It is warm outside today."
+    },
+    {
+        "dutch": "binnen",
+        "english": "inside",
+        "vietnamese": "bên trong",
+        "dutchsentence": "Blijf binnen, het regent.",
+        "englishtranslate": "Stay inside, it's raining."
+    },
+    {
+        "dutch": "gebruiken",
+        "english": "use",
+        "vietnamese": "sử dụng",
+        "dutchsentence": "Ik wil de Nederlandse grammatica correct gebruiken.",
+        "englishtranslate": "I want to use the Dutch grammar correctly."
+    }
 ]

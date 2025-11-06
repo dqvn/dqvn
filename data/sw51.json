@@ -1,16 +1,100 @@
 [
-    {"dutch": "de winkel (-s)", "english": "the shop (shops)", "vietnamese": "cửa hàng (những cửa hàng)"},
-    {"dutch": "de zak (-ken)", "english": "the bag (bags)", "vietnamese": "túi (những túi)"},
-    {"dutch": "het spul (-len)", "english": "the stuff (stuffs)", "vietnamese": "đồ đạc (những đồ đạc)"},
-    {"dutch": "de kracht (-en)", "english": "the strength (strengths)", "vietnamese": "sức mạnh (những sức mạnh)"},
-    {"dutch": "de macht", "english": "the power", "vietnamese": "quyền lực"},
-    {"dutch": "de wet (-ten)", "english": "the law (laws)", "vietnamese": "luật (những luật)"},
-    {"dutch": "de geest (-en)", "english": "the spirit (spirits)", "vietnamese": "tinh thần (những tinh thần)"},
-    {"dutch": "de ziel (-en)", "english": "the soul (souls)", "vietnamese": "linh hồn (những linh hồn)"},
-    {"dutch": "zolang", "english": "as long as", "vietnamese": "miễn là"},
-    {"dutch": "totdat", "english": "until", "vietnamese": "cho đến khi"},
-    {"dutch": "zwaar", "english": "heavy", "vietnamese": "nặng"},
-    {"dutch": "licht", "english": "light", "vietnamese": "nhẹ"},
-    {"dutch": "dragen, droeg, gedragen", "english": "to carry, carried, carried", "vietnamese": "mang, đã mang, đã mang"},
-    {"dutch": "slaan, sloeg, geslagen", "english": "to hit, hit, hit", "vietnamese": "đánh, đã đánh, đã đánh"}
-  ]
+    {
+        "dutch": "de winkel (-s)",
+        "english": "the shop (shops)",
+        "vietnamese": "cửa hàng (những cửa hàng)",
+        "dutchsentence": "Ik moet naar de winkel om brood te kopen.",
+        "englishtranslate": "I have to go to the shop to buy bread."
+    },
+    {
+        "dutch": "de zak (-ken)",
+        "english": "the bag (bags)",
+        "vietnamese": "túi (những túi)",
+        "dutchsentence": "Deze zak is te zwaar om alleen te dragen.",
+        "englishtranslate": "This bag is too heavy to carry alone."
+    },
+    {
+        "dutch": "het spul (-len)",
+        "english": "the stuff (stuffs)",
+        "vietnamese": "đồ đạc (những đồ đạc)",
+        "dutchsentence": "Al dat spul moet uit de garage.",
+        "englishtranslate": "All that stuff has to come out of the garage."
+    },
+    {
+        "dutch": "de kracht (-en)",
+        "english": "the strength (strengths)",
+        "vietnamese": "sức mạnh (những sức mạnh)",
+        "dutchsentence": "Hij heeft de kracht om dit gewicht op te tillen.",
+        "englishtranslate": "He has the strength to lift this weight."
+    },
+    {
+        "dutch": "de macht",
+        "english": "the power",
+        "vietnamese": "quyền lực",
+        "dutchsentence": "De politieke macht van de koning is beperkt.",
+        "englishtranslate": "The political power of the king is limited."
+    },
+    {
+        "dutch": "de wet (-ten)",
+        "english": "the law (laws)",
+        "vietnamese": "luật (những luật)",
+        "dutchsentence": "Volgens de wet is dit verboden.",
+        "englishtranslate": "According to the law, this is forbidden."
+    },
+    {
+        "dutch": "de geest (-en)",
+        "english": "the spirit (spirits)",
+        "vietnamese": "tinh thần (những tinh thần)",
+        "dutchsentence": "Hij heeft een sterke geest en geeft niet op.",
+        "englishtranslate": "He has a strong spirit and doesn't give up."
+    },
+    {
+        "dutch": "de ziel (-en)",
+        "english": "the soul (souls)",
+        "vietnamese": "linh hồn (những linh hồn)",
+        "dutchsentence": "Zij gelooft dat de ziel onsterfelijk is.",
+        "englishtranslate": "She believes that the soul is immortal."
+    },
+    {
+        "dutch": "zolang",
+        "english": "as long as",
+        "vietnamese": "miễn là",
+        "dutchsentence": "Zolang ik leef, zal ik je steunen.",
+        "englishtranslate": "As long as I live, I will support you."
+    },
+    {
+        "dutch": "totdat",
+        "english": "until",
+        "vietnamese": "cho đến khi",
+        "dutchsentence": "We blijven hier totdat het donker wordt.",
+        "englishtranslate": "We will stay here until it gets dark."
+    },
+    {
+        "dutch": "zwaar",
+        "english": "heavy",
+        "vietnamese": "nặng",
+        "dutchsentence": "Die doos met boeken is erg zwaar.",
+        "englishtranslate": "That box of books is very heavy."
+    },
+    {
+        "dutch": "licht",
+        "english": "light",
+        "vietnamese": "nhẹ",
+        "dutchsentence": "Dit is een lichte trui, perfect voor de lente.",
+        "englishtranslate": "This is a light sweater, perfect for spring."
+    },
+    {
+        "dutch": "dragen, droeg, gedragen",
+        "english": "to carry, carried, carried",
+        "vietnamese": "mang, đã mang, đã mang",
+        "dutchsentence": "Kan je deze boodschappen voor mij dragen?",
+        "englishtranslate": "Can you carry these groceries for me?"
+    },
+    {
+        "dutch": "slaan, sloeg, geslagen",
+        "english": "to hit, hit, hit",
+        "vietnamese": "đánh, đã đánh, đã đánh",
+        "dutchsentence": "Hij sloeg de bal over de omheining.",
+        "englishtranslate": "He hit the ball over the fence."
+    }
+]

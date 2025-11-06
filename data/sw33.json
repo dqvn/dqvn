@@ -1,18 +1,114 @@
 [
-    {"dutch": "de wedstrijd (-en)", "english": "the match (matches)", "vietnamese": "trận đấu (những trận đấu)"},
-    {"dutch": "het basketbal", "english": "the basketball", "vietnamese": "bóng rổ"},
-    {"dutch": "de bal (-len)", "english": "the ball (balls)", "vietnamese": "quả bóng (những quả bóng)"},
-    {"dutch": "het team (-s)", "english": "the team (teams)", "vietnamese": "đội (những đội)"},
-    {"dutch": "de bank (-en)", "english": "the bench (benches)", "vietnamese": "ghế dài (những ghế dài)"},
-    {"dutch": "de rust", "english": "the rest", "vietnamese": "nghỉ ngơi"},
-    {"dutch": "sterk", "english": "strong", "vietnamese": "mạnh mẽ"},
-    {"dutch": "zwak", "english": "weak", "vietnamese": "yếu"},
-    {"dutch": "tegen", "english": "against", "vietnamese": "chống lại"},
-    {"dutch": "lopen (gelopen)", "english": "to walk (walked)", "vietnamese": "đi bộ (đã đi bộ)"},
-    {"dutch": "rennen (gerend)", "english": "to run (ran)", "vietnamese": "chạy (đã chạy)"},
-    {"dutch": "winnen (gewonnen)", "english": "to win (won)", "vietnamese": "thắng (đã thắng)"},
-    {"dutch": "verliezen (verloren)", "english": "to lose (lost)", "vietnamese": "thua (đã thua)"},
-    {"dutch": "rusten (gerust)", "english": "to rest (rested)", "vietnamese": "nghỉ ngơi (đã nghỉ ngơi)"},
-    {"dutch": "duren (geduurd)", "english": "to last (lasted)", "vietnamese": "kéo dài (đã kéo dài)"},
-    {"dutch": "stappen (gestapt)", "english": "to step (stepped)", "vietnamese": "bước (đã bước)"}
-  ]
+    {
+        "dutch": "de wedstrijd (-en)",
+        "english": "the match (matches)",
+        "vietnamese": "trận đấu (những trận đấu)",
+        "dutchsentence": "De voetbalwedstrijd was erg spannend tot de laatste minuut.",
+        "englishtranslate": "The football match was very exciting until the last minute."
+    },
+    {
+        "dutch": "het basketbal",
+        "english": "the basketball",
+        "vietnamese": "bóng rổ",
+        "dutchsentence": "Basketbal is een snelle en dynamische sport.",
+        "englishtranslate": "Basketball is a fast and dynamic sport."
+    },
+    {
+        "dutch": "de bal (-len)",
+        "english": "the ball (balls)",
+        "vietnamese": "quả bóng (những quả bóng)",
+        "dutchsentence": "De kinderen spelen met een rode bal in de tuin.",
+        "englishtranslate": "The children are playing with a red ball in the garden."
+    },
+    {
+        "dutch": "het team (-s)",
+        "english": "the team (teams)",
+        "vietnamese": "đội (những đội)",
+        "dutchsentence": "Ons team heeft de finale gewonnen.",
+        "englishtranslate": "Our team won the final."
+    },
+    {
+        "dutch": "de bank (-en)",
+        "english": "the bench (benches)",
+        "vietnamese": "ghế dài (những ghế dài)",
+        "dutchsentence": "De coach vroeg de speler om op de bank te zitten.",
+        "englishtranslate": "The coach asked the player to sit on the bench."
+    },
+    {
+        "dutch": "de rust",
+        "english": "the rest",
+        "vietnamese": "nghỉ ngơi",
+        "dutchsentence": "Na de eerste helft was het tijd voor de rust.",
+        "englishtranslate": "After the first half, it was time for the rest (half-time)."
+    },
+    {
+        "dutch": "sterk",
+        "english": "strong",
+        "vietnamese": "mạnh mẽ",
+        "dutchsentence": "Hij is erg sterk en kan zware dingen tillen.",
+        "englishtranslate": "He is very strong and can lift heavy things."
+    },
+    {
+        "dutch": "zwak",
+        "english": "weak",
+        "vietnamese": "yếu",
+        "dutchsentence": "De batterij is zwak en moet vervangen worden.",
+        "englishtranslate": "The battery is weak and needs to be replaced."
+    },
+    {
+        "dutch": "tegen",
+        "english": "against",
+        "vietnamese": "chống lại",
+        "dutchsentence": "We spelen morgen tegen het beste team.",
+        "englishtranslate": "We are playing against the best team tomorrow."
+    },
+    {
+        "dutch": "lopen (gelopen)",
+        "english": "to walk (walked)",
+        "vietnamese": "đi bộ (đã đi bộ)",
+        "dutchsentence": "Ik loop elke dag een uur in het bos.",
+        "englishtranslate": "I walk in the forest for an hour every day."
+    },
+    {
+        "dutch": "rennen (gerend)",
+        "english": "to run (ran)",
+        "vietnamese": "chạy (đã chạy)",
+        "dutchsentence": "We moesten rennen om de trein te halen.",
+        "englishtranslate": "We had to run to catch the train."
+    },
+    {
+        "dutch": "winnen (gewonnen)",
+        "english": "to win (won)",
+        "vietnamese": "thắng (đã thắng)",
+        "dutchsentence": "Ze hopen de wedstrijd te winnen.",
+        "englishtranslate": "They hope to win the match."
+    },
+    {
+        "dutch": "verliezen (verloren)",
+        "english": "to lose (lost)",
+        "vietnamese": "thua (đã thua)",
+        "dutchsentence": "Niemand wil de competitie verliezen.",
+        "englishtranslate": "Nobody wants to lose the competition."
+    },
+    {
+        "dutch": "rusten (gerust)",
+        "english": "to rest (rested)",
+        "vietnamese": "nghỉ ngơi (đã nghỉ ngơi)",
+        "dutchsentence": "Je moet goed rusten na zo'n lange werkdag.",
+        "englishtranslate": "You must rest well after such a long workday."
+    },
+    {
+        "dutch": "duren (geduurd)",
+        "english": "to last (lasted)",
+        "vietnamese": "kéo dài (đã kéo dài)",
+        "dutchsentence": "De vergadering duurde langer dan verwacht.",
+        "englishtranslate": "The meeting lasted longer than expected."
+    },
+    {
+        "dutch": "stappen (gestapt)",
+        "english": "to step (stepped)",
+        "vietnamese": "bước (đã bước)",
+        "dutchsentence": "Hij stapte in de bus op het laatste moment.",
+        "englishtranslate": "He stepped onto the bus at the last moment."
+    }
+]

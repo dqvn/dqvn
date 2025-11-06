@@ -1,14 +1,86 @@
 [
-    {"dutch": "het gebouw (-en)", "english": "the building(s)", "vietnamese": "tòa nhà"},
-    {"dutch": "het openingsuur (uren)", "english": "the opening hour(s)", "vietnamese": "giờ mở cửa"},
-    {"dutch": "de opening (-en)", "english": "the opening(s)", "vietnamese": "sự khai trương"},
-    {"dutch": "de grap (-pen)", "english": "the joke(s)", "vietnamese": "trò đùa"},
-    {"dutch": "prachtig", "english": "beautiful", "vietnamese": "đẹp"},
-    {"dutch": "grappig", "english": "funny", "vietnamese": "vui nhộn"},
-    {"dutch": "trouwens", "english": "by the way", "vietnamese": "nhân tiện"},
-    {"dutch": "net", "english": "just", "vietnamese": "vừa mới"},
-    {"dutch": "proper", "english": "clean", "vietnamese": "sạch sẽ"},
-    {"dutch": "pas", "english": "just", "vietnamese": "vừa mới"},
-    {"dutch": "vuil", "english": "dirty", "vietnamese": "bẩn"},
-    {"dutch": "lachen", "english": "(to) laugh", "vietnamese": "(để) cười"}
+    {
+        "dutch": "het gebouw (-en)",
+        "english": "the building(s)",
+        "vietnamese": "tòa nhà",
+        "dutchsentence": "Het nieuwe gebouw is erg hoog.",
+        "englishtranslate": "The new building is very tall."
+    },
+    {
+        "dutch": "het openingsuur (uren)",
+        "english": "the opening hour(s)",
+        "vietnamese": "giờ mở cửa",
+        "dutchsentence": "Wat zijn de openingsuren van de winkel?",
+        "englishtranslate": "What are the opening hours of the store?"
+    },
+    {
+        "dutch": "de opening (-en)",
+        "english": "the opening(s)",
+        "vietnamese": "sự khai trương",
+        "dutchsentence": "We zijn uitgenodigd voor de opening van het restaurant.",
+        "englishtranslate": "We are invited to the opening of the restaurant."
+    },
+    {
+        "dutch": "de grap (-pen)",
+        "english": "the joke(s)",
+        "vietnamese": "trò đùa",
+        "dutchsentence": "Hij vertelde een grappige grap op het feest.",
+        "englishtranslate": "He told a funny joke at the party."
+    },
+    {
+        "dutch": "prachtig",
+        "english": "beautiful",
+        "vietnamese": "đẹp",
+        "dutchsentence": "Wat een prachtig uitzicht over de stad!",
+        "englishtranslate": "What a beautiful view over the city!"
+    },
+    {
+        "dutch": "grappig",
+        "english": "funny",
+        "vietnamese": "vui nhộn",
+        "dutchsentence": "De komiek was erg grappig.",
+        "englishtranslate": "The comedian was very funny."
+    },
+    {
+        "dutch": "trouwens",
+        "english": "by the way",
+        "vietnamese": "nhân tiện",
+        "dutchsentence": "Trouwens, heb je Jan nog gesproken?",
+        "englishtranslate": "By the way, did you talk to Jan?"
+    },
+    {
+        "dutch": "net",
+        "english": "just",
+        "vietnamese": "vừa mới",
+        "dutchsentence": "Ik heb net een bericht van haar gekregen.",
+        "englishtranslate": "I just received a message from her."
+    },
+    {
+        "dutch": "proper",
+        "english": "clean",
+        "vietnamese": "sạch sẽ",
+        "dutchsentence": "De badkamer is weer helemaal proper.",
+        "englishtranslate": "The bathroom is completely clean again."
+    },
+    {
+        "dutch": "pas",
+        "english": "just",
+        "vietnamese": "vừa mới",
+        "dutchsentence": "Zij is pas gisteren aangekomen.",
+        "englishtranslate": "She just arrived yesterday."
+    },
+    {
+        "dutch": "vuil",
+        "english": "dirty",
+        "vietnamese": "bẩn",
+        "dutchsentence": "De kleren in de wasmand zijn erg vuil.",
+        "englishtranslate": "The clothes in the laundry basket are very dirty."
+    },
+    {
+        "dutch": "lachen",
+        "english": "(to) laugh",
+        "vietnamese": "(để) cười",
+        "dutchsentence": "We moesten erg lachen om zijn domme fout.",
+        "englishtranslate": "We had to laugh a lot at his stupid mistake."
+    }
 ]

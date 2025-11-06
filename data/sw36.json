@@ -1,19 +1,121 @@
 [
-    {"dutch": "de pil (-len)", "english": "the pill (pills)", "vietnamese": "viên thuốc (những viên thuốc)"},
-    {"dutch": "het medicament (-en)", "english": "the medication (medications)", "vietnamese": "thuốc (những loại thuốc)"},
-    {"dutch": "het voorschrift (-en)", "english": "the prescription (prescriptions)", "vietnamese": "đơn thuốc (những đơn thuốc)"},
-    {"dutch": "het doktersbriefje (-s)", "english": "the doctor's note (doctor's notes)", "vietnamese": "giấy khám bệnh (những giấy khám bệnh)"},
-    {"dutch": "de apotheek (apotheken)", "english": "the pharmacy (pharmacies)", "vietnamese": "nhà thuốc (những nhà thuốc)"},
-    {"dutch": "de koorts", "english": "the fever", "vietnamese": "sốt"},
-    {"dutch": "de ziekte (-s)", "english": "the illness (illnesses)", "vietnamese": "bệnh (những bệnh)"},
-    {"dutch": "de verkoudheid (verkoudheden)", "english": "the cold (colds)", "vietnamese": "cảm lạnh (những cảm lạnh)"},
-    {"dutch": "de griep", "english": "the flu", "vietnamese": "cúm"},
-    {"dutch": "ziek", "english": "sick", "vietnamese": "ốm"},
-    {"dutch": "aanraken (participium later)", "english": "to touch (participle later)", "vietnamese": "chạm (phân từ sau)"},
-    {"dutch": "raken (geraakt)", "english": "to hit (hit)", "vietnamese": "đánh (đã đánh)"},
-    {"dutch": "kneuzen (gekneusd)", "english": "to bruise (bruised)", "vietnamese": "bầm tím (đã bầm tím)"},
-    {"dutch": "breken (gebroken)", "english": "to break (broken)", "vietnamese": "gãy (đã gãy)"},
-    {"dutch": "niezen (geniesd)", "english": "to sneeze (sneezed)", "vietnamese": "hắt hơi (đã hắt hơi)"},
-    {"dutch": "hoesten (gehoest)", "english": "to cough (coughed)", "vietnamese": "ho (đã ho)"},
-    {"dutch": "lijken (geleken)", "english": "to seem (seemed)", "vietnamese": "dường như (đã dường như)"}
-  ]
+    {
+        "dutch": "de pil (-len)",
+        "english": "the pill (pills)",
+        "vietnamese": "viên thuốc (những viên thuốc)",
+        "dutchsentence": "Je moet deze pil één keer per dag innemen.",
+        "englishtranslate": "You must take this pill once a day."
+    },
+    {
+        "dutch": "het medicament (-en)",
+        "english": "the medication (medications)",
+        "vietnamese": "thuốc (những loại thuốc)",
+        "dutchsentence": "Het medicament moet de pijn verzachten.",
+        "englishtranslate": "The medication must relieve the pain."
+    },
+    {
+        "dutch": "het voorschrift (-en)",
+        "english": "the prescription (prescriptions)",
+        "vietnamese": "đơn thuốc (những đơn thuốc)",
+        "dutchsentence": "De dokter schreef een nieuw voorschrift uit.",
+        "englishtranslate": "The doctor wrote a new prescription."
+    },
+    {
+        "dutch": "het doktersbriefje (-s)",
+        "english": "the doctor's note (doctor's notes)",
+        "vietnamese": "giấy khám bệnh (những giấy khám bệnh)",
+        "dutchsentence": "Hij heeft een doktersbriefje voor zijn werk nodig.",
+        "englishtranslate": "He needs a doctor's note for his work."
+    },
+    {
+        "dutch": "de apotheek (apotheken)",
+        "english": "the pharmacy (pharmacies)",
+        "vietnamese": "nhà thuốc (những nhà thuốc)",
+        "dutchsentence": "Ik ga naar de apotheek om mijn medicijnen te halen.",
+        "englishtranslate": "I am going to the pharmacy to get my medicines."
+    },
+    {
+        "dutch": "de koorts",
+        "english": "the fever",
+        "vietnamese": "sốt",
+        "dutchsentence": "Het kind heeft hoge koorts en moet in bed blijven.",
+        "englishtranslate": "The child has a high fever and must stay in bed."
+    },
+    {
+        "dutch": "de ziekte (-s)",
+        "english": "the illness (illnesses)",
+        "vietnamese": "bệnh (những bệnh)",
+        "dutchsentence": "Zij lijdt aan een zeldzame ziekte.",
+        "englishtranslate": "She suffers from a rare illness."
+    },
+    {
+        "dutch": "de verkoudheid (verkoudheden)",
+        "english": "the cold (colds)",
+        "vietnamese": "cảm lạnh (những cảm lạnh)",
+        "dutchsentence": "Met deze verkoudheid kan ik niet goed slapen.",
+        "englishtranslate": "With this cold, I cannot sleep well."
+    },
+    {
+        "dutch": "de griep",
+        "english": "the flu",
+        "vietnamese": "cúm",
+        "dutchsentence": "Ik heb al twee weken de griep en voel me zwak.",
+        "englishtranslate": "I have had the flu for two weeks already and feel weak."
+    },
+    {
+        "dutch": "ziek",
+        "english": "sick",
+        "vietnamese": "ốm",
+        "dutchsentence": "Ze is te ziek om vandaag naar school te gaan.",
+        "englishtranslate": "She is too sick to go to school today."
+    },
+    {
+        "dutch": "aanraken (participium later)",
+        "english": "to touch (participle later)",
+        "vietnamese": "chạm (phân từ sau)",
+        "dutchsentence": "Raak het hete fornuis niet aan!",
+        "englishtranslate": "Do not touch the hot stove!"
+    },
+    {
+        "dutch": "raken (geraakt)",
+        "english": "to hit (hit)",
+        "vietnamese": "đánh (đã đánh)",
+        "dutchsentence": "De bal raakte het raam en brak het glas.",
+        "englishtranslate": "The ball hit the window and broke the glass."
+    },
+    {
+        "dutch": "kneuzen (gekneusd)",
+        "english": "to bruise (bruised)",
+        "vietnamese": "bầm tím (đã bầm tím)",
+        "dutchsentence": "Ik ben gevallen en heb mijn knie gekneusd.",
+        "englishtranslate": "I fell and bruised my knee."
+    },
+    {
+        "dutch": "breken (gebroken)",
+        "english": "to break (broken)",
+        "vietnamese": "gãy (đã gãy)",
+        "dutchsentence": "Pas op dat je de vaas niet breekt.",
+        "englishtranslate": "Be careful not to break the vase."
+    },
+    {
+        "dutch": "niezen (geniesd)",
+        "english": "to sneeze (sneezed)",
+        "vietnamese": "hắt hơi (đã hắt hơi)",
+        "dutchsentence": "Ik moet de hele tijd niezen door de pollen.",
+        "englishtranslate": "I have to sneeze all the time because of the pollen."
+    },
+    {
+        "dutch": "hoesten (gehoest)",
+        "english": "to cough (coughed)",
+        "vietnamese": "ho (đã ho)",
+        "dutchsentence": "Hij begon te hoesten door de rook.",
+        "englishtranslate": "He started to cough because of the smoke."
+    },
+    {
+        "dutch": "lijken (geleken)",
+        "english": "to seem (seemed)",
+        "vietnamese": "dường như (đã dường như)",
+        "dutchsentence": "Het lijkt erop dat het gaat regenen.",
+        "englishtranslate": "It seems like it is going to rain."
+    }
+]

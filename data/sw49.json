@@ -1,15 +1,93 @@
 [
-    {"dutch": "het broodje (-s)", "english": "the sandwich (sandwiches)", "vietnamese": "bánh mì (những bánh mì)"},
-    {"dutch": "het geluk", "english": "the luck", "vietnamese": "may mắn"},
-    {"dutch": "de stem (-men)", "english": "the voice (voices)", "vietnamese": "giọng nói (những giọng nói)"},
-    {"dutch": "de kaas (kazen)", "english": "the cheese (cheeses)", "vietnamese": "phô mai (những phô mai)"},
-    {"dutch": "het gat (-en)", "english": "the hole (holes)", "vietnamese": "lỗ (những lỗ)"},
-    {"dutch": "de onzin", "english": "the nonsense", "vietnamese": "vô lý"},
-    {"dutch": "luid", "english": "loud", "vietnamese": "to"},
-    {"dutch": "zacht", "english": "soft", "vietnamese": "mềm"},
-    {"dutch": "hard", "english": "hard", "vietnamese": "cứng"},
-    {"dutch": "zelfs", "english": "even", "vietnamese": "thậm chí"},
-    {"dutch": "gelijk hebben", "english": "to be right", "vietnamese": "đúng"},
-    {"dutch": "zich haasten, haastte zich, zich gehaast", "english": "to hurry, hurried, hurried", "vietnamese": "vội vàng, đã vội vàng, đã vội vàng"},
-    {"dutch": "bestellen, bestelde, besteld", "english": "to order, ordered, ordered", "vietnamese": "đặt hàng, đã đặt hàng, đã đặt hàng"}
-  ]
+    {
+        "dutch": "het broodje (-s)",
+        "english": "the sandwich (sandwiches)",
+        "vietnamese": "bánh mì (những bánh mì)",
+        "dutchsentence": "Ik heb een broodje met ham en kaas besteld.",
+        "englishtranslate": "I ordered a sandwich with ham and cheese."
+    },
+    {
+        "dutch": "het geluk",
+        "english": "the luck",
+        "vietnamese": "may mắn",
+        "dutchsentence": "Ik wens je veel geluk met je nieuwe baan.",
+        "englishtranslate": "I wish you much luck with your new job."
+    },
+    {
+        "dutch": "de stem (-men)",
+        "english": "the voice (voices)",
+        "vietnamese": "giọng nói (những giọng nói)",
+        "dutchsentence": "Haar stem klonk luid en duidelijk.",
+        "englishtranslate": "Her voice sounded loud and clear."
+    },
+    {
+        "dutch": "de kaas (kazen)",
+        "english": "the cheese (cheeses)",
+        "vietnamese": "phô mai (những phô mai)",
+        "dutchsentence": "Holland is bekend om zijn lekkere kaas.",
+        "englishtranslate": "Holland is famous for its delicious cheese."
+    },
+    {
+        "dutch": "het gat (-en)",
+        "english": "the hole (holes)",
+        "vietnamese": "lỗ (những lỗ)",
+        "dutchsentence": "Er zit een groot gat in mijn sok.",
+        "englishtranslate": "There is a big hole in my sock."
+    },
+    {
+        "dutch": "de onzin",
+        "english": "the nonsense",
+        "vietnamese": "vô lý",
+        "dutchsentence": "Wat je zegt, is totale onzin.",
+        "englishtranslate": "What you are saying is total nonsense."
+    },
+    {
+        "dutch": "luid",
+        "english": "loud",
+        "vietnamese": "to",
+        "dutchsentence": "De muziek in de club was veel te luid.",
+        "englishtranslate": "The music in the club was much too loud."
+    },
+    {
+        "dutch": "zacht",
+        "english": "soft",
+        "vietnamese": "mềm",
+        "dutchsentence": "De deken is heel zacht en warm.",
+        "englishtranslate": "The blanket is very soft and warm."
+    },
+    {
+        "dutch": "hard",
+        "english": "hard",
+        "vietnamese": "cứng",
+        "dutchsentence": "Deze tafel is van hard hout gemaakt.",
+        "englishtranslate": "This table is made of hard wood."
+    },
+    {
+        "dutch": "zelfs",
+        "english": "even",
+        "vietnamese": "thậm chí",
+        "dutchsentence": "Zelfs met goed weer bleven we binnen.",
+        "englishtranslate": "Even with good weather, we stayed inside."
+    },
+    {
+        "dutch": "gelijk hebben",
+        "english": "to be right",
+        "vietnamese": "đúng",
+        "dutchsentence": "Ik moet toegeven dat je gelijk hebt.",
+        "englishtranslate": "I must admit that you are right."
+    },
+    {
+        "dutch": "zich haasten, haastte zich, zich gehaast",
+        "english": "to hurry, hurried, hurried",
+        "vietnamese": "vội vàng, đã vội vàng, đã vội vàng",
+        "dutchsentence": "We moeten ons haasten om de trein niet te missen.",
+        "englishtranslate": "We must hurry not to miss the train."
+    },
+    {
+        "dutch": "bestellen, bestelde, besteld",
+        "english": "to order, ordered, ordered",
+        "vietnamese": "đặt hàng, đã đặt hàng, đã đặt hàng",
+        "dutchsentence": "Wat wil je bestellen voor het avondeten?",
+        "englishtranslate": "What do you want to order for dinner?"
+    }
+]

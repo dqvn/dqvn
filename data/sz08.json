@@ -1,22 +1,142 @@
 [
-    {"dutch":"de drank (-en)","english":"the drink (drinks)","vietnamese":"đồ uống (các đồ uống)"},
-    {"dutch":"de keuze (-s, -n)","english":"the choice (choices)","vietnamese":"sự lựa chọn (các sự lựa chọn)"},
-    {"dutch":"de keus (keuzen)","english":"the choice (choices)","vietnamese":"sự lựa chọn (các sự lựa chọn)"},
-    {"dutch":"de verkiezing (-en)","english":"the election (elections)","vietnamese":"cuộc bầu cử (các cuộc bầu cử)"},
-    {"dutch":"de kiezer (-s)","english":"the voter (voters)","vietnamese":"cử tri (các cử tri)"},
-    {"dutch":"het detail (-s)","english":"the detail (details)","vietnamese":"chi tiết (các chi tiết)"},
-    {"dutch":"kiezen","english":"to choose","vietnamese":"chọn"},
-    {"dutch":"koos","english":"chose","vietnamese":"đã chọn"},
-    {"dutch":"gekozen","english":"has chosen","vietnamese":"đã chọn"},
-    {"dutch":"verkiezen","english":"to prefer","vietnamese":"ưa thích"},
-    {"dutch":"verkoos","english":"preferred","vietnamese":"đã ưa thích"},
-    {"dutch":"verkozen","english":"has preferred","vietnamese":"đã ưa thích"},
-    {"dutch":"bekijken","english":"to look at","vietnamese":"xem xét"},
-    {"dutch":"bekeek","english":"looked at","vietnamese":"đã xem xét"},
-    {"dutch":"bekeken","english":"has looked at","vietnamese":"đã xem xét"},
-    {"dutch":"beluisteren","english":"to listen to","vietnamese":"nghe"},
-    {"dutch":"beluisterde","english":"listened to","vietnamese":"đã nghe"},
-    {"dutch":"beluisterd","english":"has listened to","vietnamese":"đã nghe"},
-    {"dutch":"bedenken","english":"to think of","vietnamese":"nghĩ ra"},
-    {"dutch":"bedacht","english":"thought of","vietnamese":"đã nghĩ ra"}
-  ]
+    {
+        "dutch": "de drank (-en)",
+        "english": "the drink (drinks)",
+        "vietnamese": "đồ uống (các đồ uống)",
+        "dutchsentence": "Welke drank wil je bij je eten?",
+        "englishtranslate": "Which drink do you want with your meal?"
+    },
+    {
+        "dutch": "de keuze (-s, -n)",
+        "english": "the choice (choices)",
+        "vietnamese": "sự lựa chọn (các sự lựa chọn)",
+        "dutchsentence": "Het maken van deze keuze was erg moeilijk.",
+        "englishtranslate": "Making this choice was very difficult."
+    },
+    {
+        "dutch": "de keus (keuzen)",
+        "english": "the choice (choices)",
+        "vietnamese": "sự lựa chọn (các sự lựa chọn)",
+        "dutchsentence": "De keus is aan jou; wat wil je doen?",
+        "englishtranslate": "The choice is yours; what do you want to do?"
+    },
+    {
+        "dutch": "de verkiezing (-en)",
+        "english": "the election (elections)",
+        "vietnamese": "cuộc bầu cử (các cuộc bầu cử)",
+        "dutchsentence": "De verkiezingen vinden volgend jaar plaats.",
+        "englishtranslate": "The elections will take place next year."
+    },
+    {
+        "dutch": "de kiezer (-s)",
+        "english": "the voter (voters)",
+        "vietnamese": "cử tri (các cử tri)",
+        "dutchsentence": "Elke kiezer heeft het recht om te stemmen.",
+        "englishtranslate": "Every voter has the right to vote."
+    },
+    {
+        "dutch": "het detail (-s)",
+        "english": "the detail (details)",
+        "vietnamese": "chi tiết (các chi tiết)",
+        "dutchsentence": "Ze bespraken alle details van het contract.",
+        "englishtranslate": "They discussed all the details of the contract."
+    },
+    {
+        "dutch": "kiezen",
+        "english": "to choose",
+        "vietnamese": "chọn",
+        "dutchsentence": "Je mag zelf kiezen welk cadeau je wilt.",
+        "englishtranslate": "You may choose yourself which gift you want."
+    },
+    {
+        "dutch": "koos",
+        "english": "chose",
+        "vietnamese": "đã chọn",
+        "dutchsentence": "Ze koos het rode shirt in plaats van het blauwe.",
+        "englishtranslate": "She chose the red shirt instead of the blue one."
+    },
+    {
+        "dutch": "gekozen",
+        "english": "has chosen",
+        "vietnamese": "đã chọn",
+        "dutchsentence": "Hij heeft gekozen voor een carrière in de muziek.",
+        "englishtranslate": "He has chosen a career in music."
+    },
+    {
+        "dutch": "verkiezen",
+        "english": "to prefer",
+        "vietnamese": "ưa thích",
+        "dutchsentence": "Ik verkies koffie boven thee.",
+        "englishtranslate": "I prefer coffee over tea."
+    },
+    {
+        "dutch": "verkoos",
+        "english": "preferred",
+        "vietnamese": "đã ưa thích",
+        "dutchsentence": "De meeste mensen verkozen de eerste optie.",
+        "englishtranslate": "Most people preferred the first option."
+    },
+    {
+        "dutch": "verkozen",
+        "english": "has preferred",
+        "vietnamese": "đã ưa thích",
+        "dutchsentence": "Ze heeft altijd rust verkozen boven drukte.",
+        "englishtranslate": "She has always preferred quietness over busyness."
+    },
+    {
+        "dutch": "bekijken",
+        "english": "to look at",
+        "vietnamese": "xem xét",
+        "dutchsentence": "Laten we de situatie vanuit alle hoeken bekijken.",
+        "englishtranslate": "Let's look at the situation from all angles."
+    },
+    {
+        "dutch": "bekeek",
+        "english": "looked at",
+        "vietnamese": "đã xem xét",
+        "dutchsentence": "Zij bekeek de schilderijen in het museum.",
+        "englishtranslate": "She looked at the paintings in the museum."
+    },
+    {
+        "dutch": "bekeken",
+        "english": "has looked at",
+        "vietnamese": "đã xem xét",
+        "dutchsentence": "Hij heeft alle documenten nauwkeurig bekeken.",
+        "englishtranslate": "He has looked at all the documents carefully."
+    },
+    {
+        "dutch": "beluisteren",
+        "english": "to listen to",
+        "vietnamese": "nghe",
+        "dutchsentence": "Beluister het nieuwe album van de band.",
+        "englishtranslate": "Listen to the band's new album."
+    },
+    {
+        "dutch": "beluisterde",
+        "english": "listened to",
+        "vietnamese": "đã nghe",
+        "dutchsentence": "De jury beluisterde de muzikale prestaties.",
+        "englishtranslate": "The jury listened to the musical performances."
+    },
+    {
+        "dutch": "beluisterd",
+        "english": "has listened to",
+        "vietnamese": "đã nghe",
+        "dutchsentence": "Ik heb het hele interview beluisterd.",
+        "englishtranslate": "I have listened to the entire interview."
+    },
+    {
+        "dutch": "bedenken",
+        "english": "to think of",
+        "vietnamese": "nghĩ ra",
+        "dutchsentence": "Ik moet nog een goed excuus bedenken.",
+        "englishtranslate": "I still need to think of a good excuse."
+    },
+    {
+        "dutch": "bedacht",
+        "english": "thought of",
+        "vietnamese": "đã nghĩ ra",
+        "dutchsentence": "Hij bedacht een briljant plan om het probleem op te lossen.",
+        "englishtranslate": "He thought of a brilliant plan to solve the problem."
+    }
+]

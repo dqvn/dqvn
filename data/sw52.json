@@ -1,16 +1,100 @@
 [
-    {"dutch": "de belofte (-s)", "english": "the promise (promises)", "vietnamese": "lời hứa (những lời hứa)"},
-    {"dutch": "de schuld (-en)", "english": "the debt (debts)", "vietnamese": "nợ (những khoản nợ)"},
-    {"dutch": "de show (-s)", "english": "the show (shows)", "vietnamese": "buổi diễn (những buổi diễn)"},
-    {"dutch": "het teken (-s)", "english": "the sign (signs)", "vietnamese": "dấu hiệu (những dấu hiệu)"},
-    {"dutch": "de band (-en)", "english": "the band (bands)", "vietnamese": "ban nhạc (những ban nhạc)"},
-    {"dutch": "de gedachte (-n)", "english": "the thought (thoughts)", "vietnamese": "suy nghĩ (những suy nghĩ)"},
-    {"dutch": "rot", "english": "rotten", "vietnamese": "thối rữa"},
-    {"dutch": "vooral", "english": "especially", "vietnamese": "đặc biệt"},
-    {"dutch": "zover", "english": "so far", "vietnamese": "cho đến nay"},
-    {"dutch": "wegwezen", "english": "get out", "vietnamese": "ra ngoài"},
-    {"dutch": "gefeliciteerd", "english": "congratulations", "vietnamese": "chúc mừng"},
-    {"dutch": "geboren", "english": "born", "vietnamese": "sinh ra"},
-    {"dutch": "dansen, danste, gedanst", "english": "to dance, danced, danced", "vietnamese": "nhảy, đã nhảy, đã nhảy"},
-    {"dutch": "zweren, zwoor, gezworen", "english": "to swear, swore, sworn", "vietnamese": "thề, đã thề, đã thề"}
-  ]
+    {
+        "dutch": "de belofte (-s)",
+        "english": "the promise (promises)",
+        "vietnamese": "lời hứa (những lời hứa)",
+        "dutchsentence": "Hij heeft zijn belofte om te komen waargemaakt.",
+        "englishtranslate": "He kept his promise to come."
+    },
+    {
+        "dutch": "de schuld (-en)",
+        "english": "the debt (debts)",
+        "vietnamese": "nợ (những khoản nợ)",
+        "dutchsentence": "Het bedrijf heeft een grote schuld bij de bank.",
+        "englishtranslate": "The company has a large debt to the bank."
+    },
+    {
+        "dutch": "de show (-s)",
+        "english": "the show (shows)",
+        "vietnamese": "buổi diễn (những buổi diễn)",
+        "dutchsentence": "De show in het theater was erg indrukwekkend.",
+        "englishtranslate": "The show in the theater was very impressive."
+    },
+    {
+        "dutch": "het teken (-s)",
+        "english": "the sign (signs)",
+        "vietnamese": "dấu hiệu (những dấu hiệu)",
+        "dutchsentence": "Dit is een teken dat we de goede kant op gaan.",
+        "englishtranslate": "This is a sign that we are going the right way."
+    },
+    {
+        "dutch": "de band (-en)",
+        "english": "the band (bands)",
+        "vietnamese": "ban nhạc (những ban nhạc)",
+        "dutchsentence": "Onze favoriete band treedt vanavond op.",
+        "englishtranslate": "Our favourite band is performing tonight."
+    },
+    {
+        "dutch": "de gedachte (-n)",
+        "english": "the thought (thoughts)",
+        "vietnamese": "suy nghĩ (những suy nghĩ)",
+        "dutchsentence": "Ik kan mijn gedachten niet ordenen.",
+        "englishtranslate": "I can't organize my thoughts."
+    },
+    {
+        "dutch": "rot",
+        "english": "rotten",
+        "vietnamese": "thối rữa",
+        "dutchsentence": "De appels zijn rot en kunnen niet meer gegeten worden.",
+        "englishtranslate": "The apples are rotten and cannot be eaten anymore."
+    },
+    {
+        "dutch": "vooral",
+        "english": "especially",
+        "vietnamese": "đặc biệt",
+        "dutchsentence": "Ik vind de stad vooral 's avonds mooi.",
+        "englishtranslate": "I find the city especially beautiful in the evening."
+    },
+    {
+        "dutch": "zover",
+        "english": "so far",
+        "vietnamese": "cho đến nay",
+        "dutchsentence": "Zover is de planning in orde.",
+        "englishtranslate": "So far, the planning is in order."
+    },
+    {
+        "dutch": "wegwezen",
+        "english": "get out",
+        "vietnamese": "ra ngoài",
+        "dutchsentence": "Wegwezen hier! Het is gevaarlijk.",
+        "englishtranslate": "Get out of here! It is dangerous."
+    },
+    {
+        "dutch": "gefeliciteerd",
+        "english": "congratulations",
+        "vietnamese": "chúc mừng",
+        "dutchsentence": "Gefeliciteerd met je nieuwe huis!",
+        "englishtranslate": "Congratulations on your new house!"
+    },
+    {
+        "dutch": "geboren",
+        "english": "born",
+        "vietnamese": "sinh ra",
+        "dutchsentence": "Zij is geboren op 10 mei 1990.",
+        "englishtranslate": "She was born on May 10, 1990."
+    },
+    {
+        "dutch": "dansen, danste, gedanst",
+        "english": "to dance, danced, danced",
+        "vietnamese": "nhảy, đã nhảy, đã nhảy",
+        "dutchsentence": "We hebben de hele nacht gedanst op de bruiloft.",
+        "englishtranslate": "We danced the whole night at the wedding."
+    },
+    {
+        "dutch": "zweren, zwoor, gezworen",
+        "english": "to swear, swore, sworn",
+        "vietnamese": "thề, đã thề, đã thề",
+        "dutchsentence": "Ik zweer dat ik de waarheid zal vertellen.",
+        "englishtranslate": "I swear that I will tell the truth."
+    }
+]

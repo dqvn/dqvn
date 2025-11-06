@@ -1,21 +1,135 @@
 [
-    {"dutch": "het plezier", "english": "the pleasure", "vietnamese": "niềm vui"},
-    {"dutch": "de knie (knieën)", "english": "the knee (knees)", "vietnamese": "đầu gối (những đầu gối)"},
-    {"dutch": "de oplossing (-en)", "english": "the solution (solutions)", "vietnamese": "giải pháp (những giải pháp)"},
-    {"dutch": "het zand", "english": "the sand", "vietnamese": "cát"},
-    {"dutch": "de zee", "english": "the sea", "vietnamese": "biển"},
-    {"dutch": "de honger", "english": "the hunger", "vietnamese": "đói"},
-    {"dutch": "de/het idee", "english": "the idea", "vietnamese": "ý tưởng"},
-    {"dutch": "het eind", "english": "the end", "vietnamese": "kết thúc"},
-    {"dutch": "helemaal", "english": "completely", "vietnamese": "hoàn toàn"},
-    {"dutch": "totaal", "english": "totally", "vietnamese": "tổng cộng"},
-    {"dutch": "oplossen (opgelost)", "english": "to solve (solved)", "vietnamese": "giải quyết (đã giải quyết)"},
-    {"dutch": "steken (gestoken)", "english": "to stab (stabbed)", "vietnamese": "đâm (đã đâm)"},
-    {"dutch": "zetten (gezet)", "english": "to put (put)", "vietnamese": "đặt (đã đặt)"},
-    {"dutch": "steken", "english": "to stab", "vietnamese": "đâm"},
-    {"dutch": "eten", "english": "to eat", "vietnamese": "ăn"},
-    {"dutch": "drinken", "english": "to drink", "vietnamese": "uống"},
-    {"dutch": "zoeken", "english": "to search", "vietnamese": "tìm kiếm"},
-    {"dutch": "beginnen", "english": "to begin", "vietnamese": "bắt đầu"},
-    {"dutch": "vinden", "english": "to find", "vietnamese": "tìm thấy"}
-  ]
+    {
+        "dutch": "het plezier",
+        "english": "the pleasure",
+        "vietnamese": "niềm vui",
+        "dutchsentence": "Ik heb veel plezier gehad op jouw feestje.",
+        "englishtranslate": "I had a lot of pleasure (fun) at your party."
+    },
+    {
+        "dutch": "de knie (knieën)",
+        "english": "the knee (knees)",
+        "vietnamese": "đầu gối (những đầu gối)",
+        "dutchsentence": "Na de val had ze pijn aan haar knie.",
+        "englishtranslate": "After the fall, she had pain in her knee."
+    },
+    {
+        "dutch": "de oplossing (-en)",
+        "english": "the solution (solutions)",
+        "vietnamese": "giải pháp (những giải pháp)",
+        "dutchsentence": "De leraar vond snel een oplossing voor het probleem.",
+        "englishtranslate": "The teacher quickly found a solution to the problem."
+    },
+    {
+        "dutch": "het zand",
+        "english": "the sand",
+        "vietnamese": "cát",
+        "dutchsentence": "De kinderen speelden met zand op het strand.",
+        "englishtranslate": "The children played with sand on the beach."
+    },
+    {
+        "dutch": "de zee",
+        "english": "the sea",
+        "vietnamese": "biển",
+        "dutchsentence": "We gaan in de zomer zwemmen in de zee.",
+        "englishtranslate": "We are going swimming in the sea in the summer."
+    },
+    {
+        "dutch": "de honger",
+        "english": "the hunger",
+        "vietnamese": "đói",
+        "dutchsentence": "Mijn honger is zo groot, ik wil nu eten.",
+        "englishtranslate": "My hunger is so great, I want to eat now."
+    },
+    {
+        "dutch": "de/het idee",
+        "english": "the idea",
+        "vietnamese": "ý tưởng",
+        "dutchsentence": "Dat is een geweldig idee voor het project!",
+        "englishtranslate": "That is a great idea for the project!"
+    },
+    {
+        "dutch": "het eind",
+        "english": "the end",
+        "vietnamese": "kết thúc",
+        "dutchsentence": "Aan het eind van de dag gaan we naar huis.",
+        "englishtranslate": "We will go home at the end of the day."
+    },
+    {
+        "dutch": "helemaal",
+        "english": "completely",
+        "vietnamese": "hoàn toàn",
+        "dutchsentence": "Ik ben het helemaal met je eens.",
+        "englishtranslate": "I completely agree with you."
+    },
+    {
+        "dutch": "totaal",
+        "english": "totally",
+        "vietnamese": "tổng cộng",
+        "dutchsentence": "Het totale bedrag is driehonderd euro.",
+        "englishtranslate": "The total amount is three hundred euros."
+    },
+    {
+        "dutch": "oplossen (opgelost)",
+        "english": "to solve (solved)",
+        "vietnamese": "giải quyết (đã giải quyết)",
+        "dutchsentence": "We moeten dit probleem zo snel mogelijk oplossen.",
+        "englishtranslate": "We must solve this problem as quickly as possible."
+    },
+    {
+        "dutch": "steken (gestoken)",
+        "english": "to stab (stabbed)",
+        "vietnamese": "đâm (đã đâm)",
+        "dutchsentence": "Pas op, want die plant steekt.",
+        "englishtranslate": "Be careful, because that plant stabs (pricks)."
+    },
+    {
+        "dutch": "zetten (gezet)",
+        "english": "to put (put)",
+        "vietnamese": "đặt (đã đặt)",
+        "dutchsentence": "Zet de kopjes alsjeblieft in de kast.",
+        "englishtranslate": "Please put the cups in the cupboard."
+    },
+    {
+        "dutch": "steken",
+        "english": "to stab",
+        "vietnamese": "đâm",
+        "dutchsentence": "De bij zal je steken als je hem probeert te pakken.",
+        "englishtranslate": "The bee will sting (stab) you if you try to grab it."
+    },
+    {
+        "dutch": "eten",
+        "english": "to eat",
+        "vietnamese": "ăn",
+        "dutchsentence": "Wat gaan we vanavond eten?",
+        "englishtranslate": "What are we going to eat tonight?"
+    },
+    {
+        "dutch": "drinken",
+        "english": "to drink",
+        "vietnamese": "uống",
+        "dutchsentence": "Ik drink graag een kopje thee in de ochtend.",
+        "englishtranslate": "I like to drink a cup of tea in the morning."
+    },
+    {
+        "dutch": "zoeken",
+        "english": "to search",
+        "vietnamese": "tìm kiếm",
+        "dutchsentence": "Ben je nog steeds naar je bril aan het zoeken?",
+        "englishtranslate": "Are you still searching for your glasses?"
+    },
+    {
+        "dutch": "beginnen",
+        "english": "to begin",
+        "vietnamese": "bắt đầu",
+        "dutchsentence": "De les zal over tien minuten beginnen.",
+        "englishtranslate": "The class will begin in ten minutes."
+    },
+    {
+        "dutch": "vinden",
+        "english": "to find",
+        "vietnamese": "tìm thấy",
+        "dutchsentence": "Ik kan mijn sleutels nergens vinden.",
+        "englishtranslate": "I can't find my keys anywhere."
+    }
+]

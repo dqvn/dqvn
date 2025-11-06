@@ -1,23 +1,152 @@
 [
-    {"dutch": "het geld", "english": "the money", "vietnamese": "tiền"},
-    {"dutch": "de rekening", "english": "the bill", "vietnamese": "hóa đơn"},
-    {"dutch": "de rest", "english": "the rest", "vietnamese": "phần còn lại"},
-    {"dutch": "de kaart", "english": "the card", "vietnamese": "thẻ"},
-    {"dutch": "de kredietkaart", "english": "the credit card", "vietnamese": "thẻ tín dụng"},
-    {"dutch": "de komma", "english": "the comma", "vietnamese": "dấu phẩy"},
-    {"dutch": "de cent", "english": "the cent", "vietnamese": "xu"},
-    {"dutch": "apart", "english": "separate", "vietnamese": "riêng biệt"},
-    {"dutch": "samen", "english": "together", "vietnamese": "cùng nhau"},
-    {"dutch": "weer", "english": "again", "vietnamese": "lại"},
-    {"dutch": "alweer", "english": "again", "vietnamese": "lại nữa"},
-    {"dutch": "me / mij", "english": "me", "vietnamese": "tôi"},
-    {"dutch": "je / jou", "english": "you (informal)", "vietnamese": "bạn"},
-    {"dutch": "hem", "english": "him", "vietnamese": "anh ấy"},
-    {"dutch": "haar", "english": "her", "vietnamese": "cô ấy"},
-    {"dutch": "ons", "english": "us", "vietnamese": "chúng tôi"},
-    {"dutch": "jullie", "english": "you (plural)", "vietnamese": "các bạn"},
-    {"dutch": "hen", "english": "them", "vietnamese": "họ"},
-    {"dutch": "geven", "english": "give", "vietnamese": "cho"},
-    {"dutch": "betalen", "english": "pay", "vietnamese": "trả tiền"},
-    {"dutch": "houden", "english": "keep", "vietnamese": "giữ"}
+  {
+    "dutch": "geld, het",
+    "english": "the money",
+    "vietnamese": "tiền",
+    "dutchsentence": "Heb je genoeg geld om de rekening te betalen?",
+    "englishtranslate": "Do you have enough money to pay the bill?"
+  },
+  {
+    "dutch": "rekening, de",
+    "english": "the bill / the check",
+    "vietnamese": "hóa đơn",
+    "dutchsentence": "Kunnen we apart betalen? We zullen de rekening delen.",
+    "englishtranslate": "Can we pay separately? We will share the bill."
+  },
+  {
+    "dutch": "rest, de",
+    "english": "the rest / the remainder",
+    "vietnamese": "phần còn lại",
+    "dutchsentence": "U kunt de rest houden (als fooi).",
+    "englishtranslate": "You can keep the rest (as a tip)."
+  },
+  {
+    "dutch": "kaart, de",
+    "english": "the card / the map",
+    "vietnamese": "thẻ",
+    "dutchsentence": "Mag ik met de kaart betalen?",
+    "englishtranslate": "May I pay with card?"
+  },
+  {
+    "dutch": "kredietkaart, de",
+    "english": "the credit card",
+    "vietnamese": "thẻ tín dụng",
+    "dutchsentence": "Ik betaal met mijn kredietkaart.",
+    "englishtranslate": "I am paying with my credit card."
+  },
+  {
+    "dutch": "komma, de",
+    "english": "the comma / the decimal point",
+    "vietnamese": "dấu phẩy",
+    "dutchsentence": "Het cijfer na de komma is acht.",
+    "englishtranslate": "The digit after the decimal point is eight."
+  },
+  {
+    "dutch": "cent, de",
+    "english": "the cent",
+    "vietnamese": "xu",
+    "dutchsentence": "Het kost twee euro en vijftig cent.",
+    "englishtranslate": "It costs two euros and fifty cents."
+  },
+  {
+    "dutch": "apart",
+    "english": "separate / separately",
+    "vietnamese": "riêng biệt",
+    "dutchsentence": "Willen jullie apart betalen?",
+    "englishtranslate": "Do you (plural) want to pay separately?"
+  },
+  {
+    "dutch": "samen",
+    "english": "together",
+    "vietnamese": "cùng nhau",
+    "dutchsentence": "We gaan samen naar het concert.",
+    "englishtranslate": "We are going together to the concert."
+  },
+  {
+    "dutch": "weer",
+    "english": "again",
+    "vietnamese": "lại",
+    "dutchsentence": "Je moet de oefening weer doen.",
+    "englishtranslate": "You must do the exercise again."
+  },
+  {
+    "dutch": "alweer",
+    "english": "again (often implying repetition or impatience)",
+    "vietnamese": "lại nữa",
+    "dutchsentence": "O nee, alweer te laat!",
+    "englishtranslate": "Oh no, too late again!",
+    "notes": "Similar to *weer*, but stronger/more impatient."
+  },
+  {
+    "dutch": "me / mij",
+    "english": "me (unstressed/stressed object pronoun)",
+    "vietnamese": "tôi",
+    "dutchsentence": "Geef mij de rekening alstublieft.",
+    "englishtranslate": "Give me the bill please."
+  },
+  {
+    "dutch": "je / jou",
+    "english": "you (informal object pronoun)",
+    "vietnamese": "bạn",
+    "dutchsentence": "De leerkracht vraagt het aan jou.",
+    "englishtranslate": "The teacher asks it to you."
+  },
+  {
+    "dutch": "hem",
+    "english": "him (object pronoun)",
+    "vietnamese": "anh ấy",
+    "dutchsentence": "Ik zie hem morgen opnieuw.",
+    "englishtranslate": "I see him again tomorrow."
+  },
+  {
+    "dutch": "haar",
+    "english": "her (object pronoun)",
+    "vietnamese": "cô ấy",
+    "dutchsentence": "Hij belt haar 's avonds.",
+    "englishtranslate": "He calls her in the evening."
+  },
+  {
+    "dutch": "ons",
+    "english": "us (object pronoun)",
+    "vietnamese": "chúng tôi",
+    "dutchsentence": "Zij zullen ons een bericht sturen.",
+    "englishtranslate": "They will send us a message."
+  },
+  {
+    "dutch": "jullie",
+    "english": "you (plural object pronoun)",
+    "vietnamese": "các bạn",
+    "dutchsentence": "De baas wil jullie spreken.",
+    "englishtranslate": "The boss wants to speak to you (plural)."
+  },
+  {
+    "dutch": "hen",
+    "english": "them (object pronoun, formal/after preposition)",
+    "vietnamese": "họ",
+    "dutchsentence": "Ik heb het aan hen gegeven.",
+    "englishtranslate": "I have given it to them.",
+    "notes": "Often used as *ze* (unstressed) or *hun* (indirect object) in spoken Dutch."
+  },
+  {
+    "dutch": "geven",
+    "english": "to give",
+    "vietnamese": "cho",
+    "dutchsentence": "Kan je mij een voorbeeld geven?",
+    "englishtranslate": "Can you give me an example?"
+  },
+  {
+    "dutch": "betalen",
+    "english": "to pay",
+    "vietnamese": "trả tiền",
+    "dutchsentence": "Ik moet de rekening betalen voor ons eten.",
+    "englishtranslate": "I must pay the bill for our food."
+  },
+  {
+    "dutch": "houden",
+    "english": "to keep",
+    "vietnamese": "giữ",
+    "dutchsentence": "Hou dat geld maar zelf.",
+    "englishtranslate": "Keep that money yourself (just keep it).",
+    "notes": "Also part of *houden van* (to love/be fond of)."
+  }
 ]

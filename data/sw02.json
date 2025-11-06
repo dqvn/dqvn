@@ -1,16 +1,100 @@
 [
-    {"dutch": "de werkdag (-en)", "english": "the workday", "vietnamese": "ngày làm việc"},
-    {"dutch": "de zon (-nen)", "english": "the sun", "vietnamese": "mặt trời"},
-    {"dutch": "iedereen", "english": "everyone", "vietnamese": "mọi người"},
-    {"dutch": "niemand", "english": "nobody", "vietnamese": "không ai"},
-    {"dutch": "iemand", "english": "someone", "vietnamese": "một ai đó"},
-    {"dutch": "noemen", "english": "name", "vietnamese": "gọi tên"},
-    {"dutch": "de taalles (-ssen)", "english": "the language lesson", "vietnamese": "bài học ngôn ngữ"},
-    {"dutch": "het dialect (-en)", "english": "the dialect", "vietnamese": "địa phương"},
-    {"dutch": "het accent (-en)", "english": "the accent", "vietnamese": "giọng"},
-    {"dutch": "veel te", "english": "too much", "vietnamese": "quá nhiều"},
-    {"dutch": "velen", "english": "many", "vietnamese": "nhiều người"},
-    {"dutch": "het werkwoord (-en)", "english": "the verb", "vietnamese": "động từ"},
-    {"dutch": "modale werkwoorden", "english": "modal verbs", "vietnamese": "động từ khiếm khuyết"},
-    {"dutch": "volgen", "english": "follow", "vietnamese": "theo dõi"}
+    {
+        "dutch": "de werkdag (-en)",
+        "english": "the workday",
+        "vietnamese": "ngày làm việc",
+        "dutchsentence": "Mijn werkdag is lang.",
+        "englishtranslate": "My workday is long."
+    },
+    {
+        "dutch": "de zon (-nen)",
+        "english": "the sun",
+        "vietnamese": "mặt trời",
+        "dutchsentence": "Ik zie de zon.",
+        "englishtranslate": "I see the sun."
+    },
+    {
+        "dutch": "iedereen",
+        "english": "everyone",
+        "vietnamese": "mọi người",
+        "dutchsentence": "Hallo iedereen, hoe gaat het?",
+        "englishtranslate": "Hello everyone, how are you?"
+    },
+    {
+        "dutch": "niemand",
+        "english": "nobody",
+        "vietnamese": "không ai",
+        "dutchsentence": "Ik heb het nog niemand verteld.",
+        "englishtranslate": "I haven't told anyone yet."
+    },
+    {
+        "dutch": "iemand",
+        "english": "someone",
+        "vietnamese": "một ai đó",
+        "dutchsentence": "Is er iemand thuis?",
+        "englishtranslate": "Is someone home?"
+    },
+    {
+        "dutch": "noemen",
+        "english": "name",
+        "vietnamese": "gọi tên",
+        "dutchsentence": "Ik kan vele redenen noemen.",
+        "englishtranslate": "I can name many reasons."
+    },
+    {
+        "dutch": "de taalles (-ssen)",
+        "english": "the language lesson",
+        "vietnamese": "bài học ngôn ngữ",
+        "dutchsentence": "Tony geeft taalles aan vluchtelingen.",
+        "englishtranslate": "Tony gives language lessons to refugees."
+    },
+    {
+        "dutch": "het dialect (-en)",
+        "english": "the dialect",
+        "vietnamese": "địa phương",
+        "dutchsentence": "Het dialect in Maastricht is heel speciaal.",
+        "englishtranslate": "The dialect in Maastricht is very special."
+    },
+    {
+        "dutch": "het accent (-en)",
+        "english": "the accent",
+        "vietnamese": "giọng",
+        "dutchsentence": "Het verschil is het accent.",
+        "englishtranslate": "The difference is the accent."
+    },
+    {
+        "dutch": "veel te",
+        "english": "too much",
+        "vietnamese": "quá nhiều",
+        "dutchsentence": "Dat is veel te weinig.",
+        "englishtranslate": "That is far too little."
+    },
+    {
+        "dutch": "velen",
+        "english": "many",
+        "vietnamese": "nhiều người",
+        "dutchsentence": "Voor velen is dit moeilijk.",
+        "englishtranslate": "For many, this is difficult."
+    },
+    {
+        "dutch": "het werkwoord (-en)",
+        "english": "the verb",
+        "vietnamese": "động từ",
+        "dutchsentence": "Het werkwoord staat altijd vooraan.",
+        "englishtranslate": "The verb is always at the front."
+    },
+    {
+        "dutch": "modale werkwoorden",
+        "english": "modal verbs",
+        "vietnamese": "động từ khiếm khuyết",
+        "dutchsentence": "Wij moeten modale werkwoorden leren.",
+        "englishtranslate": "We have to learn modal verbs."
+    },
+    {
+        "dutch": "volgen",
+        "english": "follow",
+        "vietnamese": "theo dõi",
+        "dutchsentence": "Als er één schaap over de dam is, volgen er meer.",
+        "englishtranslate": "If one sheep is over the dam, more will follow. (Proverb, similar to 'follow like sheep')"
+    }
 ]

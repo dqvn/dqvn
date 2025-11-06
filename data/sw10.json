@@ -1,29 +1,191 @@
 [
-    {"dutch": "het deel (delen)", "english": "the part (parts)", "vietnamese": "phần (các phần)"},
-    {"dutch": "de cake (-s)", "english": "the cake (-s)", "vietnamese": "bánh (-s)"},
-    {"dutch": "het verschil (-len)", "english": "the difference (-s)", "vietnamese": "sự khác biệt (-s)"},
-    {"dutch": "rustig", "english": "calm", "vietnamese": "yên tĩnh"},
-    {"dutch": "druk", "english": "busy", "vietnamese": "bận rộn"},
-    {"dutch": "verschillend", "english": "different", "vietnamese": "khác nhau"},
-    {"dutch": "even", "english": "even", "vietnamese": "đều"},
-    {"dutch": "de superlatief (-ven)", "english": "the superlative (-s)", "vietnamese": "so sánh nhất (-s)"},
-    {"dutch": "de motor (-s)", "english": "the motor (-s)", "vietnamese": "động cơ (-s)"},
-    {"dutch": "de benzine", "english": "the gasoline", "vietnamese": "xăng"},
-    {"dutch": "de diesel", "english": "the diesel", "vietnamese": "diesel"},
-    {"dutch": "de elektriciteit", "english": "the electricity", "vietnamese": "điện"},
-    {"dutch": "de brandstof (-fen)", "english": "the fuel (-s)", "vietnamese": "nhiên liệu (-s)"},
-    {"dutch": "de oplader (-s)", "english": "the charger (-s)", "vietnamese": "bộ sạc (-s)"},
-    {"dutch": "elektrisch", "english": "electric", "vietnamese": "điện"},
-    {"dutch": "eigen", "english": "own", "vietnamese": "của riêng"},
-    {"dutch": "makkelijk", "english": "easy", "vietnamese": "dễ"},
-    {"dutch": "simpel", "english": "simple", "vietnamese": "đơn giản"},
-    {"dutch": "meeste", "english": "most", "vietnamese": "nhiều nhất"},
-    {"dutch": "beste", "english": "best", "vietnamese": "tốt nhất"},
-    {"dutch": "weinig", "english": "few", "vietnamese": "ít"},
-    {"dutch": "minste", "english": "least", "vietnamese": "ít nhất"},
-    {"dutch": "opladen", "english": "to charge", "vietnamese": "sạc"},
-    {"dutch": "De superlatief:", "english": "The superlative:", "vietnamese": "So sánh nhất:"},
-    {"dutch": "adjectief + st(e)", "english": "adjective + est", "vietnamese": "tính từ + nhất"},
-    {"dutch": "de grootste auto", "english": "the biggest car", "vietnamese": "chiếc xe lớn nhất"},
-    {"dutch": "het kleinste boek", "english": "the smallest book", "vietnamese": "cuốn sách nhỏ nhất"}
+    {
+        "dutch": "het deel (delen)",
+        "english": "the part (parts)",
+        "vietnamese": "phần (các phần)",
+        "dutchsentence": "Dit is het laatste deel van de cursus.",
+        "englishtranslate": "This is the last part of the course."
+    },
+    {
+        "dutch": "de cake (-s)",
+        "english": "the cake (-s)",
+        "vietnamese": "bánh (-s)",
+        "dutchsentence": "Zou je een stukje van die cake willen?",
+        "englishtranslate": "Would you like a piece of that cake?"
+    },
+    {
+        "dutch": "het verschil (-len)",
+        "english": "the difference (-s)",
+        "vietnamese": "sự khác biệt (-s)",
+        "dutchsentence": "Wat is het verschil tussen die twee woorden?",
+        "englishtranslate": "What is the difference between those two words?"
+    },
+    {
+        "dutch": "rustig",
+        "english": "calm",
+        "vietnamese": "yên tĩnh",
+        "dutchsentence": "De zee is vandaag erg rustig.",
+        "englishtranslate": "The sea is very calm today."
+    },
+    {
+        "dutch": "druk",
+        "english": "busy",
+        "vietnamese": "bận rộn",
+        "dutchsentence": "Het is druk in de supermarkt.",
+        "englishtranslate": "It is busy in the supermarket."
+    },
+    {
+        "dutch": "verschillend",
+        "english": "different",
+        "vietnamese": "khác nhau",
+        "dutchsentence": "Wij hebben verschillende meningen over dat onderwerp.",
+        "englishtranslate": "We have different opinions about that subject."
+    },
+    {
+        "dutch": "even",
+        "english": "even",
+        "vietnamese": "đều",
+        "dutchsentence": "We moeten de taken even verdelen.",
+        "englishtranslate": "We have to divide the tasks equally."
+    },
+    {
+        "dutch": "de superlatief (-ven)",
+        "english": "the superlative (-s)",
+        "vietnamese": "so sánh nhất (-s)",
+        "dutchsentence": "De superlatief is de hoogste graad van vergelijking.",
+        "englishtranslate": "The superlative is the highest degree of comparison."
+    },
+    {
+        "dutch": "de motor (-s)",
+        "english": "the motor (-s)",
+        "vietnamese": "động cơ (-s)",
+        "dutchsentence": "De motor van mijn auto is kapot.",
+        "englishtranslate": "The engine of my car is broken."
+    },
+    {
+        "dutch": "de benzine",
+        "english": "the gasoline",
+        "vietnamese": "xăng",
+        "dutchsentence": "Moeten we benzine tanken?",
+        "englishtranslate": "Do we need to get gasoline?"
+    },
+    {
+        "dutch": "de diesel",
+        "english": "the diesel",
+        "vietnamese": "diesel",
+        "dutchsentence": "Mijn vrachtwagen rijdt op diesel.",
+        "englishtranslate": "My truck runs on diesel."
+    },
+    {
+        "dutch": "de elektriciteit",
+        "english": "the electricity",
+        "vietnamese": "điện",
+        "dutchsentence": "We hebben elektriciteit nodig voor de machine.",
+        "englishtranslate": "We need electricity for the machine."
+    },
+    {
+        "dutch": "de brandstof (-fen)",
+        "english": "the fuel (-s)",
+        "vietnamese": "nhiên liệu (-s)",
+        "dutchsentence": "Zonne-energie is een schone brandstof.",
+        "englishtranslate": "Solar energy is a clean fuel."
+    },
+    {
+        "dutch": "de oplader (-s)",
+        "english": "the charger (-s)",
+        "vietnamese": "bộ sạc (-s)",
+        "dutchsentence": "Waar is de oplader van mijn telefoon?",
+        "englishtranslate": "Where is my phone charger?"
+    },
+    {
+        "dutch": "elektrisch",
+        "english": "electric",
+        "vietnamese": "điện",
+        "dutchsentence": "Elektrische auto's zijn populair.",
+        "englishtranslate": "Electric cars are popular."
+    },
+    {
+        "dutch": "eigen",
+        "english": "own",
+        "vietnamese": "của riêng",
+        "dutchsentence": "Iedereen heeft zijn eigen mening.",
+        "englishtranslate": "Everyone has their own opinion."
+    },
+    {
+        "dutch": "makkelijk",
+        "english": "easy",
+        "vietnamese": "dễ",
+        "dutchsentence": "Deze oefening is heel makkelijk.",
+        "englishtranslate": "This exercise is very easy."
+    },
+    {
+        "dutch": "simpel",
+        "english": "simple",
+        "vietnamese": "đơn giản",
+        "dutchsentence": "De oplossing is simpeler dan je denkt.",
+        "englishtranslate": "The solution is simpler than you think."
+    },
+    {
+        "dutch": "meeste",
+        "english": "most",
+        "vietnamese": "nhiều nhất",
+        "dutchsentence": "De meeste mensen zijn het ermee eens.",
+        "englishtranslate": "Most people agree with it."
+    },
+    {
+        "dutch": "beste",
+        "english": "best",
+        "vietnamese": "tốt nhất",
+        "dutchsentence": "Dit is het beste restaurant van de stad.",
+        "englishtranslate": "This is the best restaurant in the city."
+    },
+    {
+        "dutch": "weinig",
+        "english": "few",
+        "vietnamese": "ít",
+        "dutchsentence": "Er zijn weinig fouten in de tekst.",
+        "englishtranslate": "There are few mistakes in the text."
+    },
+    {
+        "dutch": "minste",
+        "english": "least",
+        "vietnamese": "ít nhất",
+        "dutchsentence": "Dat is de minste zorg.",
+        "englishtranslate": "That is the least concern."
+    },
+    {
+        "dutch": "opladen",
+        "english": "to charge",
+        "vietnamese": "sạc",
+        "dutchsentence": "Ik moet mijn telefoon opladen.",
+        "englishtranslate": "I have to charge my phone."
+    },
+    {
+        "dutch": "De superlatief:",
+        "english": "The superlative:",
+        "vietnamese": "So sánh nhất:",
+        "dutchsentence": "De superlatief is de hoogste trap van vergelijking.",
+        "englishtranslate": "The superlative is the highest degree of comparison."
+    },
+    {
+        "dutch": "adjectief + st(e)",
+        "english": "adjective + est",
+        "vietnamese": "tính từ + nhất",
+        "dutchsentence": "Het toevoegen van 'st(e)' vormt de superlatief.",
+        "englishtranslate": "Adding 'st(e)' forms the superlative."
+    },
+    {
+        "dutch": "de grootste auto",
+        "english": "the biggest car",
+        "vietnamese": "chiếc xe lớn nhất",
+        "dutchsentence": "Mijn vader heeft de grootste auto van de straat.",
+        "englishtranslate": "My father has the biggest car on the street."
+    },
+    {
+        "dutch": "het kleinste boek",
+        "english": "the smallest book",
+        "vietnamese": "cuốn sách nhỏ nhất",
+        "dutchsentence": "Dit is het kleinste boekje dat ik ooit heb gezien.",
+        "englishtranslate": "This is the smallest booklet I have ever seen."
+    }
 ]

@@ -1,15 +1,93 @@
 [
-    {"dutch": "de zaak (zaken)", "english": "the case (cases)", "vietnamese": "vụ việc (những vụ việc)"},
-    {"dutch": "de agent (-en)", "english": "the agent (agents)", "vietnamese": "đặc vụ (những đặc vụ)"},
-    {"dutch": "bezig", "english": "busy", "vietnamese": "bận rộn"},
-    {"dutch": "sinds", "english": "since", "vietnamese": "kể từ"},
-    {"dutch": "missen (gemist)", "english": "to miss (missed)", "vietnamese": "nhớ (đã nhớ)"},
-    {"dutch": "redden (gered)", "english": "to save (saved)", "vietnamese": "cứu (đã cứu)"},
-    {"dutch": "sterven (gestorven)", "english": "to die (died)", "vietnamese": "chết (đã chết)"},
-    {"dutch": "opbellen (opgebeld)", "english": "to call (called)", "vietnamese": "gọi điện (đã gọi điện)"},
-    {"dutch": "reizen (gereisd)", "english": "to travel (traveled)", "vietnamese": "du lịch (đã du lịch)"},
-    {"dutch": "sluiten", "english": "to close", "vietnamese": "đóng"},
-    {"dutch": "verliezen", "english": "to lose", "vietnamese": "mất"},
-    {"dutch": "moeten", "english": "must", "vietnamese": "phải"},
-    {"dutch": "mogen", "english": "may", "vietnamese": "có thể"}
-  ]
+    {
+        "dutch": "de zaak (zaken)",
+        "english": "the case (cases)",
+        "vietnamese": "vụ việc (những vụ việc)",
+        "dutchsentence": "De detective werkt aan een gecompliceerde zaak.",
+        "englishtranslate": "The detective is working on a complicated case."
+    },
+    {
+        "dutch": "de agent (-en)",
+        "english": "the agent (agents)",
+        "vietnamese": "đặc vụ (những đặc vụ)",
+        "dutchsentence": "De politieagent vroeg om mijn identiteitskaart.",
+        "englishtranslate": "The police agent (officer) asked for my ID card."
+    },
+    {
+        "dutch": "bezig",
+        "english": "busy",
+        "vietnamese": "bận rộn",
+        "dutchsentence": "Ik ben momenteel bezig met een belangrijk project.",
+        "englishtranslate": "I am currently busy with an important project."
+    },
+    {
+        "dutch": "sinds",
+        "english": "since",
+        "vietnamese": "kể từ",
+        "dutchsentence": "Ik woon in Nederland sinds 2018.",
+        "englishtranslate": "I have lived in the Netherlands since 2018."
+    },
+    {
+        "dutch": "missen (gemist)",
+        "english": "to miss (missed)",
+        "vietnamese": "nhớ (đã nhớ)",
+        "dutchsentence": "Ik mis mijn familie als ik in het buitenland ben.",
+        "englishtranslate": "I miss my family when I am abroad."
+    },
+    {
+        "dutch": "redden (gered)",
+        "english": "to save (saved)",
+        "vietnamese": "cứu (đã cứu)",
+        "dutchsentence": "De brandweer kon het kind uit het brandende huis redden.",
+        "englishtranslate": "The fire department was able to save the child from the burning house."
+    },
+    {
+        "dutch": "sterven (gestorven)",
+        "english": "to die (died)",
+        "vietnamese": "chết (đã chết)",
+        "dutchsentence": "De bloemen sterven als ze geen water krijgen.",
+        "englishtranslate": "The flowers die if they don't get water."
+    },
+    {
+        "dutch": "opbellen (opgebeld)",
+        "english": "to call (called)",
+        "vietnamese": "gọi điện (đã gọi điện)",
+        "dutchsentence": "Ik zal je vanavond nog even opbellen.",
+        "englishtranslate": "I will call you up (by phone) tonight."
+    },
+    {
+        "dutch": "reizen (gereisd)",
+        "english": "to travel (traveled)",
+        "vietnamese": "du lịch (đã du lịch)",
+        "dutchsentence": "Wij reizen volgend jaar naar Azië.",
+        "englishtranslate": "We are traveling to Asia next year."
+    },
+    {
+        "dutch": "sluiten",
+        "english": "to close",
+        "vietnamese": "đóng",
+        "dutchsentence": "Vergeet de ramen niet te sluiten als je weggaat.",
+        "englishtranslate": "Don't forget to close the windows when you leave."
+    },
+    {
+        "dutch": "verliezen",
+        "english": "to lose",
+        "vietnamese": "mất",
+        "dutchsentence": "Pas op dat je je sleutels niet verliest.",
+        "englishtranslate": "Be careful not to lose your keys."
+    },
+    {
+        "dutch": "moeten",
+        "english": "must",
+        "vietnamese": "phải",
+        "dutchsentence": "Je moet dit medicijn drie keer per dag nemen.",
+        "englishtranslate": "You must take this medicine three times a day."
+    },
+    {
+        "dutch": "mogen",
+        "english": "may",
+        "vietnamese": "có thể",
+        "dutchsentence": "Mogen we alsjeblieft even pauze nemen?",
+        "englishtranslate": "May we please take a break for a moment?"
+    }
+]
