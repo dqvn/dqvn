@@ -1,18 +1,114 @@
 [
-    {"dutch": "eerste", "english": "first", "vietnamese": "thứ nhất"},
-    {"dutch": "tweede", "english": "second", "vietnamese": "thứ hai"},
-    {"dutch": "derde", "english": "third", "vietnamese": "thứ ba"},
-    {"dutch": "vierde", "english": "fourth", "vietnamese": "thứ tư"},
-    {"dutch": "vijfde", "english": "fifth", "vietnamese": "thứ năm"},
-    {"dutch": "zesde", "english": "sixth", "vietnamese": "thứ sáu"},
-    {"dutch": "zevende", "english": "seventh", "vietnamese": "thứ bảy"},
-    {"dutch": "achtste", "english": "eighth", "vietnamese": "thứ tám"},
-    {"dutch": "negende", "english": "ninth", "vietnamese": "thứ chín"},
-    {"dutch": "tiende", "english": "tenth", "vietnamese": "thứ mười"},
-    {"dutch": "laatste", "english": "last", "vietnamese": "cuối cùng"},
-    {"dutch": "rechts", "english": "right", "vietnamese": "phải"},
-    {"dutch": "links", "english": "left", "vietnamese": "trái"},
-    {"dutch": "de gang", "english": "the hallway", "vietnamese": "hành lang"},
-    {"dutch": "bij", "english": "at", "vietnamese": "tại"},
-    {"dutch": "zoeken", "english": "search", "vietnamese": "tìm kiếm"}
+  {
+    "dutch": "eerste",
+    "english": "first",
+    "vietnamese": "thứ nhất",
+    "dutchsentence": "Dit is de eerste les van de dag.",
+    "englishtranslate": "This is the first lesson of the day."
+  },
+  {
+    "dutch": "tweede",
+    "english": "second",
+    "vietnamese": "thứ hai",
+    "dutchsentence": "Mijn stoel is de tweede van rechts.",
+    "englishtranslate": "My chair is the second from the right."
+  },
+  {
+    "dutch": "derde",
+    "english": "third",
+    "vietnamese": "thứ ba",
+    "dutchsentence": "De derde student zit links van mij.",
+    "englishtranslate": "The third student is sitting left of me."
+  },
+  {
+    "dutch": "vierde",
+    "english": "fourth",
+    "vietnamese": "thứ tư",
+    "dutchsentence": "Ze zijn al vierde in de rij.",
+    "englishtranslate": "They are already fourth in line."
+  },
+  {
+    "dutch": "vijfde",
+    "english": "fifth",
+    "vietnamese": "thứ năm",
+    "dutchsentence": "Het vijfde kledingstuk is mijn favoriet.",
+    "englishtranslate": "The fifth article of clothing is my favourite."
+  },
+  {
+    "dutch": "zesde",
+    "english": "sixth",
+    "vietnamese": "thứ sáu",
+    "dutchsentence": "Ik heb het zesde hoofdstuk gelezen.",
+    "englishtranslate": "I have read the sixth chapter."
+  },
+  {
+    "dutch": "zevende",
+    "english": "seventh",
+    "vietnamese": "thứ bảy",
+    "dutchsentence": "De zevende deur is rechts in de gang.",
+    "englishtranslate": "The seventh door is on the right in the hallway."
+  },
+  {
+    "dutch": "achtste",
+    "english": "eighth",
+    "vietnamese": "thứ tám",
+    "dutchsentence": "Zij won de achtste plek in de race.",
+    "englishtranslate": "She won the eighth place in the race."
+  },
+  {
+    "dutch": "negende",
+    "english": "ninth",
+    "vietnamese": "thứ chín",
+    "dutchsentence": "Hij woont op de negende verdieping.",
+    "englishtranslate": "He lives on the ninth floor."
+  },
+  {
+    "dutch": "tiende",
+    "english": "tenth",
+    "vietnamese": "thứ mười",
+    "dutchsentence": "Dit is de tiende keer dat ik het herhaal.",
+    "englishtranslate": "This is the tenth time I'm repeating it."
+  },
+  {
+    "dutch": "laatste",
+    "english": "last",
+    "vietnamese": "cuối cùng",
+    "dutchsentence": "Dit is de laatste les van de cursus.",
+    "englishtranslate": "This is the last lesson of the course."
+  },
+  {
+    "dutch": "rechts",
+    "english": "right",
+    "vietnamese": "phải",
+    "dutchsentence": "De paskamer is rechtsaf.",
+    "englishtranslate": "The fitting room is right (turn right)."
+  },
+  {
+    "dutch": "links",
+    "english": "left",
+    "vietnamese": "trái",
+    "dutchsentence": "Ga links de gang in.",
+    "englishtranslate": "Go left into the hallway."
+  },
+  {
+    "dutch": "gang, de",
+    "english": "the hallway / the corridor",
+    "vietnamese": "hành lang",
+    "dutchsentence": "Het bord hangt bij de gang.",
+    "englishtranslate": "The board hangs at the hallway."
+  },
+  {
+    "dutch": "bij",
+    "english": "at / near / with",
+    "vietnamese": "tại",
+    "dutchsentence": "Zijn bank staat bij de computer.",
+    "englishtranslate": "His desk is near/at the computer."
+  },
+  {
+    "dutch": "zoeken",
+    "english": "to search / to look for",
+    "vietnamese": "tìm kiếm",
+    "dutchsentence": "Ik moet mijn stift zoeken.",
+    "englishtranslate": "I have to look for my marker."
+  }
 ]

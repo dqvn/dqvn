@@ -1,17 +1,112 @@
 [
-    {"dutch": "het huis", "english": "the house", "vietnamese": "ngôi nhà"},
-    {"dutch": "het appartement", "english": "the apartment", "vietnamese": "căn hộ"},
-    {"dutch": "de studio", "english": "the studio", "vietnamese": "phòng thu"},
-    {"dutch": "het internet", "english": "the internet", "vietnamese": "mạng internet"},
-    {"dutch": "de imperatief", "english": "the imperative", "vietnamese": "mệnh lệnh"},
-    {"dutch": "echt", "english": "real", "vietnamese": "thật"},
-    {"dutch": "weg", "english": "away", "vietnamese": "đi"},
-    {"dutch": "alleen", "english": "alone", "vietnamese": "một mình"},
-    {"dutch": "toch", "english": "still", "vietnamese": "vẫn"},
-    {"dutch": "al", "english": "already", "vietnamese": "đã"},
-    {"dutch": "nog", "english": "still", "vietnamese": "vẫn"},
-    {"dutch": "eens", "english": "once", "vietnamese": "một lần"},
-    {"dutch": "goedkoop", "english": "cheap", "vietnamese": "rẻ"},
-    {"dutch": "duur", "english": "expensive", "vietnamese": "đắt"},
-    {"dutch": "wonen", "english": "live", "vietnamese": "sống"}
+  {
+    "dutch": "huis, het",
+    "english": "the house",
+    "vietnamese": "ngôi nhà",
+    "dutchsentence": "Ik woon in een groot huis.",
+    "englishtranslate": "I live in a large house."
+  },
+  {
+    "dutch": "appartement, het",
+    "english": "the apartment",
+    "vietnamese": "căn hộ",
+    "dutchsentence": "Mijn collega woont in een klein appartement.",
+    "englishtranslate": "My colleague lives in a small apartment."
+  },
+  {
+    "dutch": "studio, de",
+    "english": "the studio (apartment/room)",
+    "vietnamese": "phòng thu",
+    "dutchsentence": "De studio is goedkoop, maar erg klein.",
+    "englishtranslate": "The studio is cheap, but very small."
+  },
+  {
+    "dutch": "internet, het",
+    "english": "the internet",
+    "vietnamese": "mạng internet",
+    "dutchsentence": "Het internet is vaak kapot hier.",
+    "englishtranslate": "The internet is often broken here."
+  },
+  {
+    "dutch": "imperatief, de",
+    "english": "the imperative (grammar)",
+    "vietnamese": "mệnh lệnh",
+    "dutchsentence": "De imperatief gebruik je om iets te vragen.",
+    "englishtranslate": "You use the imperative to ask something.",
+    "notes": "Used here in a grammatical context."
+  },
+  {
+    "dutch": "echt",
+    "english": "real / truly / really",
+    "vietnamese": "thật",
+    "dutchsentence": "Is dat echt jouw nieuwe auto?",
+    "englishtranslate": "Is that really your new car?"
+  },
+  {
+    "dutch": "weg",
+    "english": "away / gone",
+    "vietnamese": "đi",
+    "dutchsentence": "Zij is weg naar het werk.",
+    "englishtranslate": "She is away to work.",
+    "notes": "Often used with forms of *zijn* (to be) or *gaan* (to go)."
+  },
+  {
+    "dutch": "alleen",
+    "english": "alone / only",
+    "vietnamese": "một mình",
+    "dutchsentence": "Hij woont alleen in het appartement.",
+    "englishtranslate": "He lives alone in the apartment."
+  },
+  {
+    "dutch": "toch",
+    "english": "still / nevertheless / yet",
+    "vietnamese": "vẫn",
+    "dutchsentence": "Het regent, maar ik ga toch naar buiten.",
+    "englishtranslate": "It is raining, but I am going outside still.",
+    "notes": "Often used to express contrast or surprise."
+  },
+  {
+    "dutch": "al",
+    "english": "already",
+    "vietnamese": "đã",
+    "dutchsentence": "Het is al middernacht.",
+    "englishtranslate": "It is already midnight."
+  },
+  {
+    "dutch": "nog",
+    "english": "still / yet / some more",
+    "vietnamese": "vẫn",
+    "dutchsentence": "Wil je nog een kopje koffie?",
+    "englishtranslate": "Do you still want another cup of coffee (Do you want some more coffee)?",
+    "notes": "Opposite of *al*."
+  },
+  {
+    "dutch": "eens",
+    "english": "once (one time) / agree",
+    "vietnamese": "một lần",
+    "dutchsentence": "Probeer het eens opnieuw!",
+    "englishtranslate": "Try it once again!",
+    "notes": "Often used as a softening particle: *kijk eens* (take a look)."
+  },
+  {
+    "dutch": "goedkoop",
+    "english": "cheap",
+    "vietnamese": "rẻ",
+    "dutchsentence": "Dit boek is erg goedkoop.",
+    "englishtranslate": "This book is very cheap."
+  },
+  {
+    "dutch": "duur",
+    "english": "expensive",
+    "vietnamese": "đắt",
+    "dutchsentence": "De huur van het appartement is te duur.",
+    "englishtranslate": "The rent of the apartment is too expensive."
+  },
+  {
+    "dutch": "wonen",
+    "english": "to live / to reside",
+    "vietnamese": "sống",
+    "dutchsentence": "Waar woon je nu?",
+    "englishtranslate": "Where do you live now?"
+  }
 ]

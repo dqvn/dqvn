@@ -1,6 +1,30 @@
 [
-    {"dutch":"de sfeer (sferen)","english":"the atmosphere","vietnamese":"bầu không khí"},
-    {"dutch":"de mening (-en)","english":"the opinion (opinions)","vietnamese":"ý kiến (các ý kiến)"},
-    {"dutch":"redelijk","english":"reasonable","vietnamese":"hợp lý"},
-    {"dutch":"officieel","english":"official","vietnamese":"chính thức"}
-  ]
+    {
+        "dutch": "de sfeer (sferen)",
+        "english": "the atmosphere",
+        "vietnamese": "bầu không khí",
+        "dutchsentence": "De sfeer op het feest was erg ontspannen.",
+        "englishtranslate": "The atmosphere at the party was very relaxed."
+    },
+    {
+        "dutch": "de mening (-en)",
+        "english": "the opinion (opinions)",
+        "vietnamese": "ý kiến (các ý kiến)",
+        "dutchsentence": "Wat is jouw mening over dit nieuwe plan?",
+        "englishtranslate": "What is your opinion about this new plan?"
+    },
+    {
+        "dutch": "redelijk",
+        "english": "reasonable",
+        "vietnamese": "hợp lý",
+        "dutchsentence": "De prijs van de huur is redelijk voor dit appartement.",
+        "englishtranslate": "The price of the rent is reasonable for this apartment."
+    },
+    {
+        "dutch": "officieel",
+        "english": "official",
+        "vietnamese": "chính thức",
+        "dutchsentence": "Dit is de officiële website van de overheid.",
+        "englishtranslate": "This is the official website of the government."
+    }
+]

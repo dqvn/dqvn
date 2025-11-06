@@ -1,19 +1,121 @@
 [
-    {"dutch": "de tegenwoordige tijd", "english": "the present tense", "vietnamese": "thì hiện tại"},
-    {"dutch": "de klinker (-s)", "english": "the vowel", "vietnamese": "nguyên âm"},
-    {"dutch": "de medeklinker (-s)", "english": "the consonant", "vietnamese": "phụ âm"},
-    {"dutch": "de uitspraak", "english": "the pronunciation", "vietnamese": "cách phát âm"},
-    {"dutch": "lang", "english": "long", "vietnamese": "dài"},
-    {"dutch": "kort", "english": "short", "vietnamese": "ngắn"},
-    {"dutch": "tegenwoordig", "english": "currently", "vietnamese": "hiện nay"},
-    {"dutch": "het kind (-eren)", "english": "the child", "vietnamese": "đứa trẻ"},
-    {"dutch": "het kinderboek (-en)", "english": "the children's book", "vietnamese": "sách trẻ em"},
-    {"dutch": "de jongvolwassene (-n)", "english": "the young adult", "vietnamese": "thanh niên"},
-    {"dutch": "de volwassene (-n)", "english": "the adult", "vietnamese": "người lớn"},
-    {"dutch": "de persoon (-sonen)", "english": "the person", "vietnamese": "người"},
-    {"dutch": "het niveau (-s)", "english": "the level", "vietnamese": "cấp độ"},
-    {"dutch": "jong", "english": "young", "vietnamese": "trẻ"},
-    {"dutch": "oud", "english": "old", "vietnamese": "già"},
-    {"dutch": "als", "english": "if", "vietnamese": "nếu"},
-    {"dutch": "inderdaad", "english": "indeed", "vietnamese": "thật vậy"}
+    {
+        "dutch": "de tegenwoordige tijd",
+        "english": "the present tense",
+        "vietnamese": "thì hiện tại",
+        "dutchsentence": "De meeste zinnen staan in de tegenwoordige tijd.",
+        "englishtranslate": "Most sentences are in the present tense."
+    },
+    {
+        "dutch": "de klinker (-s)",
+        "english": "the vowel",
+        "vietnamese": "nguyên âm",
+        "dutchsentence": "De 'a' en de 'o' zijn klinkers.",
+        "englishtranslate": "The 'a' and the 'o' are vowels."
+    },
+    {
+        "dutch": "de medeklinker (-s)",
+        "english": "the consonant",
+        "vietnamese": "phụ âm",
+        "dutchsentence": "De 'b' en de 'p' zijn medeklinkers.",
+        "englishtranslate": "The 'b' and the 'p' are consonants."
+    },
+    {
+        "dutch": "de uitspraak",
+        "english": "the pronunciation",
+        "vietnamese": "cách phát âm",
+        "dutchsentence": "De uitspraak van het woord is moeilijk.",
+        "englishtranslate": "The pronunciation of the word is difficult."
+    },
+    {
+        "dutch": "lang",
+        "english": "long",
+        "vietnamese": "dài",
+        "dutchsentence": "Mijn haar is erg lang.",
+        "englishtranslate": "My hair is very long."
+    },
+    {
+        "dutch": "kort",
+        "english": "short",
+        "vietnamese": "ngắn",
+        "dutchsentence": "De pauze is te kort.",
+        "englishtranslate": "The break is too short."
+    },
+    {
+        "dutch": "tegenwoordig",
+        "english": "currently",
+        "vietnamese": "hiện nay",
+        "dutchsentence": "Tegenwoordig leer ik Spaans.",
+        "englishtranslate": "Currently, I am learning Spanish."
+    },
+    {
+        "dutch": "het kind (-eren)",
+        "english": "the child",
+        "vietnamese": "đứa trẻ",
+        "dutchsentence": "Het kind speelt in de tuin.",
+        "englishtranslate": "The child is playing in the garden."
+    },
+    {
+        "dutch": "het kinderboek (-en)",
+        "english": "the children's book",
+        "vietnamese": "sách trẻ em",
+        "dutchsentence": "Lezen uit een kinderboek is goed voor beginners.",
+        "englishtranslate": "Reading from a children's book is good for beginners."
+    },
+    {
+        "dutch": "de jongvolwassene (-n)",
+        "english": "the young adult",
+        "vietnamese": "thanh niên",
+        "dutchsentence": "Dit boek is speciaal voor jongvolwassenen geschreven.",
+        "englishtranslate": "This book is specifically written for young adults."
+    },
+    {
+        "dutch": "de volwassene (-n)",
+        "english": "the adult",
+        "vietnamese": "người lớn",
+        "dutchsentence": "Als volwassene heb je veel verantwoordelijkheden.",
+        "englishtranslate": "As an adult, you have many responsibilities."
+    },
+    {
+        "dutch": "de persoon (-sonen)",
+        "english": "the person",
+        "vietnamese": "người",
+        "dutchsentence": "Wie is die persoon daar?",
+        "englishtranslate": "Who is that person there?"
+    },
+    {
+        "dutch": "het niveau (-s)",
+        "english": "the level",
+        "vietnamese": "cấp độ",
+        "dutchsentence": "Ik wil niveau B2 bereiken.",
+        "englishtranslate": "I want to reach level B2."
+    },
+    {
+        "dutch": "jong",
+        "english": "young",
+        "vietnamese": "trẻ",
+        "dutchsentence": "Mijn neefje is nog erg jong.",
+        "englishtranslate": "My nephew is still very young."
+    },
+    {
+        "dutch": "oud",
+        "english": "old",
+        "vietnamese": "già",
+        "dutchsentence": "Het huis is heel oud.",
+        "englishtranslate": "The house is very old."
+    },
+    {
+        "dutch": "als",
+        "english": "if",
+        "vietnamese": "nếu",
+        "dutchsentence": "Als het regent, blijven we thuis.",
+        "englishtranslate": "If it rains, we'll stay home."
+    },
+    {
+        "dutch": "inderdaad",
+        "english": "indeed",
+        "vietnamese": "thật vậy",
+        "dutchsentence": "Dat is inderdaad een goed idee.",
+        "englishtranslate": "That is indeed a good idea."
+    }
 ]

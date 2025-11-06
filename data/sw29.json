@@ -1,17 +1,107 @@
 [
-    {"dutch": "het tussenwoord (-en)", "english": "the interjection(s)", "vietnamese": "thán từ"},
-    {"dutch": "het feit (-en)", "english": "the fact(s)", "vietnamese": "sự thật"},
-    {"dutch": "de hemel", "english": "the heaven", "vietnamese": "thiên đường"},
-    {"dutch": "de hel", "english": "the hell", "vietnamese": "địa ngục"},
-    {"dutch": "God", "english": "God", "vietnamese": "Chúa"},
-    {"dutch": "Jezus", "english": "Jesus", "vietnamese": "Giêsu"},
-    {"dutch": "Katholiek", "english": "Catholic", "vietnamese": "Công giáo"},
-    {"dutch": "Protestants", "english": "Protestant", "vietnamese": "Tin lành"},
-    {"dutch": "toe", "english": "to", "vietnamese": "đến"},
-    {"dutch": "eigenlijk", "english": "actually", "vietnamese": "thực ra"},
-    {"dutch": "in feite", "english": "in fact", "vietnamese": "thực tế"},
-    {"dutch": "nietwaar", "english": "isn't it", "vietnamese": "phải không"},
-    {"dutch": "afgelopen", "english": "finished", "vietnamese": "kết thúc"},
-    {"dutch": "geloven, geloofd", "english": "(to) believe, believed", "vietnamese": "(để) tin, đã tin"},
-    {"dutch": "beloven, beloofd", "english": "(to) promise, promised", "vietnamese": "(để) hứa, đã hứa"}
+    {
+        "dutch": "het tussenwoord (-en)",
+        "english": "the interjection(s)",
+        "vietnamese": "thán từ",
+        "dutchsentence": "Het tussenwoord 'oeps' drukt een verrassing uit.",
+        "englishtranslate": "The interjection 'oops' expresses a surprise."
+    },
+    {
+        "dutch": "het feit (-en)",
+        "english": "the fact(s)",
+        "vietnamese": "sự thật",
+        "dutchsentence": "Het is een feit dat de aarde rond is.",
+        "englishtranslate": "It is a fact that the earth is round."
+    },
+    {
+        "dutch": "de hemel",
+        "english": "the heaven",
+        "vietnamese": "thiên đường",
+        "dutchsentence": "In de hemel is er vrede, zeggen ze.",
+        "englishtranslate": "There is peace in heaven, they say."
+    },
+    {
+        "dutch": "de hel",
+        "english": "the hell",
+        "vietnamese": "địa ngục",
+        "dutchsentence": "Zij geloven in het bestaan van de hel.",
+        "englishtranslate": "They believe in the existence of hell."
+    },
+    {
+        "dutch": "God",
+        "english": "God",
+        "vietnamese": "Chúa",
+        "dutchsentence": "Zij bidden elke zondag tot God.",
+        "englishtranslate": "They pray to God every Sunday."
+    },
+    {
+        "dutch": "Jezus",
+        "english": "Jesus",
+        "vietnamese": "Giêsu",
+        "dutchsentence": "Jezus Christus is de centrale figuur in het Christendom.",
+        "englishtranslate": "Jesus Christ is the central figure in Christianity."
+    },
+    {
+        "dutch": "Katholiek",
+        "english": "Catholic",
+        "vietnamese": "Công giáo",
+        "dutchsentence": "Hij is opgevoed in een Katholieke familie.",
+        "englishtranslate": "He was raised in a Catholic family."
+    },
+    {
+        "dutch": "Protestants",
+        "english": "Protestant",
+        "vietnamese": "Tin lành",
+        "dutchsentence": "De meeste mensen in dit gebied zijn Protestants.",
+        "englishtranslate": "Most people in this area are Protestant."
+    },
+    {
+        "dutch": "toe",
+        "english": "to",
+        "vietnamese": "đến",
+        "dutchsentence": "Doe de deur toe alsjeblieft.",
+        "englishtranslate": "Close the door, please (often used as 'closed')."
+    },
+    {
+        "dutch": "eigenlijk",
+        "english": "actually",
+        "vietnamese": "thực ra",
+        "dutchsentence": "Wat bedoel je eigenlijk met die opmerking?",
+        "englishtranslate": "What do you actually mean by that remark?"
+    },
+    {
+        "dutch": "in feite",
+        "english": "in fact",
+        "vietnamese": "thực tế",
+        "dutchsentence": "In feite is het heel gemakkelijk om te doen.",
+        "englishtranslate": "In fact, it is very easy to do."
+    },
+    {
+        "dutch": "nietwaar",
+        "english": "isn't it",
+        "vietnamese": "phải không",
+        "dutchsentence": "Het is vandaag lekker weer, nietwaar?",
+        "englishtranslate": "The weather is nice today, isn't it?"
+    },
+    {
+        "dutch": "afgelopen",
+        "english": "finished",
+        "vietnamese": "kết thúc",
+        "dutchsentence": "De wedstrijd is afgelopen, en we hebben gewonnen!",
+        "englishtranslate": "The match is finished, and we have won!"
+    },
+    {
+        "dutch": "geloven, geloofd",
+        "english": "(to) believe, believed",
+        "vietnamese": "(để) tin, đã tin",
+        "dutchsentence": "Ik kan niet geloven wat er gebeurd is.",
+        "englishtranslate": "I cannot believe what happened."
+    },
+    {
+        "dutch": "beloven, beloofd",
+        "english": "(to) promise, promised",
+        "vietnamese": "(để) hứa, đã hứa",
+        "dutchsentence": "Zij beloofde dat ze op tijd zou zijn.",
+        "englishtranslate": "She promised that she would be on time."
+    }
 ]

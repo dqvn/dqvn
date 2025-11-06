@@ -1,11 +1,65 @@
 [
-    {"dutch":"het gezelschap","english":"the company","vietnamese":"công ty"},
-    {"dutch":"de ingang (-en)","english":"the entrance (entrances)","vietnamese":"lối vào (các lối vào)"},
-    {"dutch":"de uitgang (-en)","english":"the exit (exits)","vietnamese":"lối ra (các lối ra)"},
-    {"dutch":"het park (-en)","english":"the park (parks)","vietnamese":"công viên (các công viên)"},
-    {"dutch":"m'n","english":"my","vietnamese":"của tôi"},
-    {"dutch":"gezellig","english":"cozy","vietnamese":"ấm cúng"},
-    {"dutch":"parkeren","english":"to park","vietnamese":"đỗ xe"},
-    {"dutch":"parkeerde","english":"parked","vietnamese":"đã đỗ xe"},
-    {"dutch":"geparkeerd","english":"has parked","vietnamese":"đã đỗ xe"}
-  ]
+    {
+        "dutch": "het gezelschap",
+        "english": "the company (social) / the fellowship",
+        "vietnamese": "công ty (xã giao)",
+        "dutchsentence": "Het was een gezelschap van acht mensen aan tafel.",
+        "englishtranslate": "It was a company (group) of eight people at the table."
+    },
+    {
+        "dutch": "de ingang (-en)",
+        "english": "the entrance (entrances)",
+        "vietnamese": "lối vào (các lối vào)",
+        "dutchsentence": "De ingang van het gebouw bevindt zich aan de achterkant.",
+        "englishtranslate": "The entrance of the building is located at the back."
+    },
+    {
+        "dutch": "de uitgang (-en)",
+        "english": "the exit (exits)",
+        "vietnamese": "lối ra (các lối ra)",
+        "dutchsentence": "Waar is de nooduitgang in deze ruimte?",
+        "englishtranslate": "Where is the emergency exit in this room?"
+    },
+    {
+        "dutch": "het park (-en)",
+        "english": "the park (parks)",
+        "vietnamese": "công viên (các công viên)",
+        "dutchsentence": "We gaan wandelen in het park dit weekend.",
+        "englishtranslate": "We are going for a walk in the park this weekend."
+    },
+    {
+        "dutch": "m'n",
+        "english": "my (shortened form of 'mijn')",
+        "vietnamese": "của tôi",
+        "dutchsentence": "M'n fiets is gestolen gisteren.",
+        "englishtranslate": "My bike was stolen yesterday."
+    },
+    {
+        "dutch": "gezellig",
+        "english": "cozy / pleasant / convivial",
+        "vietnamese": "ấm cúng",
+        "dutchsentence": "Wat is het gezellig bij jullie thuis!",
+        "englishtranslate": "It is so cozy/pleasant at your house!"
+    },
+    {
+        "dutch": "parkeren",
+        "english": "to park",
+        "vietnamese": "đỗ xe",
+        "dutchsentence": "Je kunt hier niet parkeren zonder vergunning.",
+        "englishtranslate": "You cannot park here without a permit."
+    },
+    {
+        "dutch": "parkeerde",
+        "english": "parked",
+        "vietnamese": "đã đỗ xe",
+        "dutchsentence": "Hij parkeerde de auto in de garage.",
+        "englishtranslate": "He parked the car in the garage."
+    },
+    {
+        "dutch": "geparkeerd",
+        "english": "has parked",
+        "vietnamese": "đã đỗ xe",
+        "dutchsentence": "Waar heb je de auto geparkeerd?",
+        "englishtranslate": "Where have you parked the car?"
+    }
+]

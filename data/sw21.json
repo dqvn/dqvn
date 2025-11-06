@@ -1,21 +1,135 @@
 [
-    {"dutch": "de dame (-s)", "english": "the lady (ladies)", "vietnamese": "quý bà"},
-    {"dutch": "de heer (heren)", "english": "the gentleman (gentlemen)", "vietnamese": "quý ông"},
-    {"dutch": "de jongen (-s)", "english": "the boy(s)", "vietnamese": "cậu bé"},
-    {"dutch": "het meisje (-s)", "english": "the girl(s)", "vietnamese": "cô gái"},
-    {"dutch": "de meid (-en)", "english": "the maid(s)", "vietnamese": "người hầu gái"},
-    {"dutch": "de deur (-en)", "english": "the door(s)", "vietnamese": "cửa"},
-    {"dutch": "de diminutief (-ven)", "english": "the diminutive(s)", "vietnamese": "dạng nhỏ"},
-    {"dutch": "de liefde (-s)", "english": "the love(s)", "vietnamese": "tình yêu"},
-    {"dutch": "het hart (-en)", "english": "the heart(s)", "vietnamese": "trái tim"},
-    {"dutch": "het lief", "english": "the sweetheart", "vietnamese": "người yêu"},
-    {"dutch": "de schat (-ten)", "english": "the treasure(s)", "vietnamese": "kho báu"},
-    {"dutch": "de lieverd", "english": "the darling", "vietnamese": "người yêu dấu"},
-    {"dutch": "de uitdrukking (-en)", "english": "the expression(s)", "vietnamese": "biểu hiện"},
-    {"dutch": "jammer", "english": "pity", "vietnamese": "đáng tiếc"},
-    {"dutch": "helaas", "english": "unfortunately", "vietnamese": "thật không may"},
-    {"dutch": "open", "english": "open", "vietnamese": "mở"},
-    {"dutch": "brengen", "english": "(to) bring", "vietnamese": "(để) mang"},
-    {"dutch": "openen", "english": "(to) open", "vietnamese": "(để) mở"},
-    {"dutch": "sluiten", "english": "(to) close", "vietnamese": "(để) đóng"}
+    {
+        "dutch": "de dame (-s)",
+        "english": "the lady (ladies)",
+        "vietnamese": "quý bà",
+        "dutchsentence": "De dame in de rode jurk lacht vriendelijk.",
+        "englishtranslate": "The lady in the red dress smiles kindly."
+    },
+    {
+        "dutch": "de heer (heren)",
+        "english": "the gentleman (gentlemen)",
+        "vietnamese": "quý ông",
+        "dutchsentence": "De heer heeft al een kop koffie besteld.",
+        "englishtranslate": "The gentleman has already ordered a cup of coffee."
+    },
+    {
+        "dutch": "de jongen (-s)",
+        "english": "the boy(s)",
+        "vietnamese": "cậu bé",
+        "dutchsentence": "De jongen speelt met zijn bal in het park.",
+        "englishtranslate": "The boy is playing with his ball in the park."
+    },
+    {
+        "dutch": "het meisje (-s)",
+        "english": "the girl(s)",
+        "vietnamese": "cô gái",
+        "dutchsentence": "Het meisje zingt een liedje voor haar moeder.",
+        "englishtranslate": "The girl is singing a song for her mother."
+    },
+    {
+        "dutch": "de meid (-en)",
+        "english": "the maid(s)",
+        "vietnamese": "người hầu gái",
+        "dutchsentence": "De meid hielp de familie met het huishouden.",
+        "englishtranslate": "The maid helped the family with the household."
+    },
+    {
+        "dutch": "de deur (-en)",
+        "english": "the door(s)",
+        "vietnamese": "cửa",
+        "dutchsentence": "De voordeur is van hout gemaakt.",
+        "englishtranslate": "The front door is made of wood."
+    },
+    {
+        "dutch": "de diminutief (-ven)",
+        "english": "the diminutive(s)",
+        "vietnamese": "dạng nhỏ",
+        "dutchsentence": "Het woord 'huisje' is een diminutief van 'huis'.",
+        "englishtranslate": "The word 'huisje' is a diminutive of 'huis'."
+    },
+    {
+        "dutch": "de liefde (-s)",
+        "english": "the love(s)",
+        "vietnamese": "tình yêu",
+        "dutchsentence": "Liefde is het belangrijkste in het leven.",
+        "englishtranslate": "Love is the most important thing in life."
+    },
+    {
+        "dutch": "het hart (-en)",
+        "english": "the heart(s)",
+        "vietnamese": "trái tim",
+        "dutchsentence": "Mijn hart klopt snel als ik ren.",
+        "englishtranslate": "My heart beats fast when I run."
+    },
+    {
+        "dutch": "het lief",
+        "english": "the sweetheart",
+        "vietnamese": "người yêu",
+        "dutchsentence": "Mijn lief en ik gaan op vakantie naar Italië.",
+        "englishtranslate": "My sweetheart and I are going on holiday to Italy."
+    },
+    {
+        "dutch": "de schat (-ten)",
+        "english": "the treasure(s)",
+        "vietnamese": "kho báu",
+        "dutchsentence": "De oude piraat zocht naar de verborgen schat.",
+        "englishtranslate": "The old pirate searched for the hidden treasure."
+    },
+    {
+        "dutch": "de lieverd",
+        "english": "the darling",
+        "vietnamese": "người yêu dấu",
+        "dutchsentence": "Kom hier, lieverd, en geef me een knuffel.",
+        "englishtranslate": "Come here, darling, and give me a hug."
+    },
+    {
+        "dutch": "de uitdrukking (-en)",
+        "english": "the expression(s)",
+        "vietnamese": "biểu hiện",
+        "dutchsentence": "Dat is een vreemde uitdrukking in het Nederlands.",
+        "englishtranslate": "That is a strange expression in Dutch."
+    },
+    {
+        "dutch": "jammer",
+        "english": "pity",
+        "vietnamese": "đáng tiếc",
+        "dutchsentence": "Wat jammer dat je niet naar het feest kon komen.",
+        "englishtranslate": "What a pity that you couldn't come to the party."
+    },
+    {
+        "dutch": "helaas",
+        "english": "unfortunately",
+        "vietnamese": "thật không may",
+        "dutchsentence": "Helaas is de winkel al gesloten.",
+        "englishtranslate": "Unfortunately, the store is already closed."
+    },
+    {
+        "dutch": "open",
+        "english": "open",
+        "vietnamese": "mở",
+        "dutchsentence": "De deur van de garage staat open.",
+        "englishtranslate": "The garage door is open."
+    },
+    {
+        "dutch": "brengen",
+        "english": "(to) bring",
+        "vietnamese": "(để) mang",
+        "dutchsentence": "Wil je me een glas water brengen?",
+        "englishtranslate": "Would you bring me a glass of water?"
+    },
+    {
+        "dutch": "openen",
+        "english": "(to) open",
+        "vietnamese": "(để) mở",
+        "dutchsentence": "De winkel zal morgen om negen uur openen.",
+        "englishtranslate": "The store will open at nine o'clock tomorrow."
+    },
+    {
+        "dutch": "sluiten",
+        "english": "(to) close",
+        "vietnamese": "(để) đóng",
+        "dutchsentence": "Vergeet niet de ramen te sluiten als je weggaat.",
+        "englishtranslate": "Don't forget to close the windows when you leave."
+    }
 ]

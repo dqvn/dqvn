@@ -1,23 +1,149 @@
 [
-    {"dutch":"de woordenschat","english":"the vocabulary","vietnamese":"từ vựng"},
-    {"dutch":"de uitdaging (-en)","english":"the challenge (challenges)","vietnamese":"thử thách (các thử thách)"},
-    {"dutch":"de gsm ('s)","english":"the mobile phone (mobile phones)","vietnamese":"điện thoại di động (các điện thoại di động)"},
-    {"dutch":"de yoga","english":"the yoga","vietnamese":"yoga"},
-    {"dutch":"de leeftijd (-en)","english":"the age (ages)","vietnamese":"tuổi (các tuổi)"},
-    {"dutch":"de voeding","english":"the nutrition","vietnamese":"dinh dưỡng"},
-    {"dutch":"de hoop","english":"the hope","vietnamese":"hy vọng"},
-    {"dutch":"fit","english":"fit","vietnamese":"khỏe mạnh"},
-    {"dutch":"toevallig","english":"coincidentally","vietnamese":"tình cờ"},
-    {"dutch":"uitbreiden","english":"to expand","vietnamese":"mở rộng"},
-    {"dutch":"breidde uit","english":"expanded","vietnamese":"đã mở rộng"},
-    {"dutch":"uitgebreid","english":"has expanded","vietnamese":"đã mở rộng"},
-    {"dutch":"leggen, legde, gelegd","english":"to lay, laid, has laid","vietnamese":"đặt, đã đặt, đã đặt"},
-    {"dutch":"deconnecteren","english":"to disconnect","vietnamese":"ngắt kết nối"},
-    {"dutch":"deconnecteerde","english":"disconnected","vietnamese":"đã ngắt kết nối"},
-    {"dutch":"gedeconnecteerd","english":"has disconnected","vietnamese":"đã ngắt kết nối"},
-    {"dutch":"verbinden","english":"to connect","vietnamese":"kết nối"},
-    {"dutch":"verbonden","english":"connected","vietnamese":"đã kết nối"},
-    {"dutch":"overbrengen","english":"to transfer","vietnamese":"chuyển"},
-    {"dutch":"bracht over","english":"transferred","vietnamese":"đã chuyển"},
-    {"dutch":"overgebracht","english":"has transferred","vietnamese":"đã chuyển"}
-  ]
+    {
+        "dutch": "de woordenschat",
+        "english": "the vocabulary",
+        "vietnamese": "từ vựng",
+        "dutchsentence": "Ik wil mijn woordenschat in het Nederlands uitbreiden.",
+        "englishtranslate": "I want to expand my vocabulary in Dutch."
+    },
+    {
+        "dutch": "de uitdaging (-en)",
+        "english": "the challenge (challenges)",
+        "vietnamese": "thử thách (các thử thách)",
+        "dutchsentence": "Het leren van een nieuwe taal is een grote uitdaging.",
+        "englishtranslate": "Learning a new language is a big challenge."
+    },
+    {
+        "dutch": "de gsm ('s)",
+        "english": "the mobile phone (mobile phones) (Belgian Dutch/dated)",
+        "vietnamese": "điện thoại di động (các điện thoại di động)",
+        "dutchsentence": "Ik heb mijn gsm thuis laten liggen.",
+        "englishtranslate": "I left my mobile phone at home."
+    },
+    {
+        "dutch": "de yoga",
+        "english": "the yoga",
+        "vietnamese": "yoga",
+        "dutchsentence": "Yoga helpt mij om te ontspannen na het werk.",
+        "englishtranslate": "Yoga helps me to relax after work."
+    },
+    {
+        "dutch": "de leeftijd (-en)",
+        "english": "the age (ages)",
+        "vietnamese": "tuổi (các tuổi)",
+        "dutchsentence": "Wat is de gemiddelde leeftijd van de deelnemers?",
+        "englishtranslate": "What is the average age of the participants?"
+    },
+    {
+        "dutch": "de voeding",
+        "english": "the nutrition / the food",
+        "vietnamese": "dinh dưỡng",
+        "dutchsentence": "Gezonde voeding is belangrijk voor een fit lichaam.",
+        "englishtranslate": "Healthy nutrition is important for a fit body."
+    },
+    {
+        "dutch": "de hoop",
+        "english": "the hope",
+        "vietnamese": "hy vọng",
+        "dutchsentence": "Er is altijd hoop op een betere toekomst.",
+        "englishtranslate": "There is always hope for a better future."
+    },
+    {
+        "dutch": "fit",
+        "english": "fit",
+        "vietnamese": "khỏe mạnh",
+        "dutchsentence": "Ik voel me erg fit sinds ik meer sport.",
+        "englishtranslate": "I feel very fit since I started exercising more."
+    },
+    {
+        "dutch": "toevallig",
+        "english": "coincidentally / by chance",
+        "vietnamese": "tình cờ",
+        "dutchsentence": "Zij kwamen elkaar toevallig tegen in de supermarkt.",
+        "englishtranslate": "They coincidentally ran into each other in the supermarket."
+    },
+    {
+        "dutch": "uitbreiden",
+        "english": "to expand",
+        "vietnamese": "mở rộng",
+        "dutchsentence": "Het bedrijf wil zijn activiteiten naar het buitenland uitbreiden.",
+        "englishtranslate": "The company wants to expand its activities abroad."
+    },
+    {
+        "dutch": "breidde uit",
+        "english": "expanded",
+        "vietnamese": "đã mở rộng",
+        "dutchsentence": "De winkel breidde de collectie vorig jaar uit.",
+        "englishtranslate": "The store expanded the collection last year."
+    },
+    {
+        "dutch": "uitgebreid",
+        "english": "has expanded",
+        "vietnamese": "đã mở rộng",
+        "dutchsentence": "Het is een uitgebreid verslag van de gebeurtenissen.",
+        "englishtranslate": "It is an extensive (expanded) report of the events."
+    },
+    {
+        "dutch": "leggen, legde, gelegd",
+        "english": "to lay, laid, has laid",
+        "vietnamese": "đặt, đã đặt, đã đặt",
+        "dutchsentence": "Kun je de boeken op de tafel leggen?",
+        "englishtranslate": "Can you lay the books on the table?"
+    },
+    {
+        "dutch": "deconnecteren",
+        "english": "to disconnect",
+        "vietnamese": "ngắt kết nối",
+        "dutchsentence": "Je moet de stekker deconnecteren voor je het apparaat schoonmaakt.",
+        "englishtranslate": "You must disconnect the plug before cleaning the device."
+    },
+    {
+        "dutch": "deconnecteerde",
+        "english": "disconnected",
+        "vietnamese": "đã ngắt kết nối",
+        "dutchsentence": "De technicus deconnecteerde de oude server.",
+        "englishtranslate": "The technician disconnected the old server."
+    },
+    {
+        "dutch": "gedeconnecteerd",
+        "english": "has disconnected",
+        "vietnamese": "đã ngắt kết nối",
+        "dutchsentence": "De internetverbinding is gedeconnecteerd.",
+        "englishtranslate": "The internet connection has disconnected."
+    },
+    {
+        "dutch": "verbinden (verbond, verbonden)",
+        "english": "to connect / to join / to bind",
+        "vietnamese": "kết nối",
+        "dutchsentence": "Dit project zal verschillende afdelingen met elkaar verbinden.",
+        "englishtranslate": "This project will connect different departments with each other."
+    },
+    {
+        "dutch": "verbonden (verbonden, verbonden)",
+        "english": "connected / joined / bound (past participle and past tense of weak form)",
+        "vietnamese": "đã kết nối",
+        "dutchsentence": "Zij zijn nauw met elkaar verbonden door hun werk.",
+        "englishtranslate": "They are closely connected by their work."
+    },
+    {
+        "dutch": "overbrengen (bracht over, overgebracht)",
+        "english": "to transfer / to convey",
+        "vietnamese": "chuyển",
+        "dutchsentence": "De boodschap moet duidelijk aan alle medewerkers worden overgebracht.",
+        "englishtranslate": "The message must be clearly conveyed to all employees."
+    },
+    {
+        "dutch": "bracht over",
+        "english": "transferred / conveyed",
+        "vietnamese": "đã chuyển",
+        "dutchsentence": "De directeur bracht zijn excuses over aan de klant.",
+        "englishtranslate": "The director conveyed his apologies to the customer."
+    },
+    {
+        "dutch": "overgebracht",
+        "english": "has transferred / has conveyed",
+        "vietnamese": "đã chuyển",
+        "dutchsentence": "Het geld is succesvol naar een andere rekening overgebracht.",
+        "englishtranslate": "The money has been successfully transferred to another account."
+    }
+]

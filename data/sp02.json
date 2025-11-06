@@ -1,17 +1,107 @@
 [
-    {"dutch": "lezen", "english": "read", "vietnamese": "đọc"},
-    {"dutch": "schrijven", "english": "write", "vietnamese": "viết"},
-    {"dutch": "begrijpen", "english": "understand", "vietnamese": "hiểu"},
-    {"dutch": "leren", "english": "learn", "vietnamese": "học"},
-    {"dutch": "herhalen", "english": "repeat", "vietnamese": "nhắc lại"},
-    {"dutch": "naar", "english": "to", "vietnamese": "đến"},
-    {"dutch": "de les", "english": "the lesson", "vietnamese": "bài học"},
-    {"dutch": "de klas", "english": "the class", "vietnamese": "lớp học"},
-    {"dutch": "het bord", "english": "the board", "vietnamese": "bảng"},
-    {"dutch": "de stift", "english": "the marker", "vietnamese": "bút lông"},
-    {"dutch": "de stoel", "english": "the chair", "vietnamese": "ghế"},
-    {"dutch": "de bank", "english": "the bench", "vietnamese": "ghế dài"},
-    {"dutch": "de computer", "english": "the computer", "vietnamese": "máy tính"},
-    {"dutch": "de cursus", "english": "the course", "vietnamese": "khóa học"},
-    {"dutch": "de school", "english": "the school", "vietnamese": "trường học"}
+  {
+    "dutch": "lezen",
+    "english": "to read",
+    "vietnamese": "đọc",
+    "dutchsentence": "Ik moet dit boek lezen voor de cursus.",
+    "englishtranslate": "I have to read this book for the course."
+  },
+  {
+    "dutch": "schrijven",
+    "english": "to write",
+    "vietnamese": "viết",
+    "dutchsentence": "Schrijf de antwoorden op het bord.",
+    "englishtranslate": "Write the answers on the board."
+  },
+  {
+    "dutch": "begrijpen",
+    "english": "to understand",
+    "vietnamese": "hiểu",
+    "dutchsentence": "Begrijp je de les goed?",
+    "englishtranslate": "Do you understand the lesson well?"
+  },
+  {
+    "dutch": "leren",
+    "english": "to learn",
+    "vietnamese": "học",
+    "dutchsentence": "We leren elke dag nieuwe woorden.",
+    "englishtranslate": "We learn new words every day."
+  },
+  {
+    "dutch": "herhalen",
+    "english": "to repeat",
+    "vietnamese": "nhắc lại",
+    "dutchsentence": "Kun je die zin herhalen, alsjeblieft?",
+    "englishtranslate": "Can you repeat that sentence, please?"
+  },
+  {
+    "dutch": "naar",
+    "english": "to",
+    "vietnamese": "đến",
+    "dutchsentence": "Ik ga naar de klas.",
+    "englishtranslate": "I am going to the class."
+  },
+  {
+    "dutch": "les, de",
+    "english": "the lesson",
+    "vietnamese": "bài học",
+    "dutchsentence": "De les begint om negen uur.",
+    "englishtranslate": "The lesson starts at nine o'clock."
+  },
+  {
+    "dutch": "klas, de",
+    "english": "the class / the classroom",
+    "vietnamese": "lớp học",
+    "dutchsentence": "Zij zitten in dezelfde klas.",
+    "englishtranslate": "They are in the same class/classroom."
+  },
+  {
+    "dutch": "bord, het",
+    "english": "the board",
+    "vietnamese": "bảng",
+    "dutchsentence": "De leraar schrijft op het bord met een stift.",
+    "englishtranslate": "The teacher writes on the board with a marker."
+  },
+  {
+    "dutch": "stift, de",
+    "english": "the marker",
+    "vietnamese": "bút lông",
+    "dutchsentence": "Heb je een rode stift om te schrijven?",
+    "englishtranslate": "Do you have a red marker to write with?"
+  },
+  {
+    "dutch": "stoel, de",
+    "english": "the chair",
+    "vietnamese": "ghế",
+    "dutchsentence": "Ga op die stoel zitten.",
+    "englishtranslate": "Go sit on that chair."
+  },
+  {
+    "dutch": "bank, de",
+    "english": "the bench / the desk (in a school setting)",
+    "vietnamese": "ghế dài / bàn học",
+    "dutchsentence": "De studenten zitten achter de banken.",
+    "englishtranslate": "The students are sitting behind the desks/benches."
+  },
+  {
+    "dutch": "computer, de",
+    "english": "the computer",
+    "vietnamese": "máy tính",
+    "dutchsentence": "Ik gebruik de computer om mijn huiswerk te maken.",
+    "englishtranslate": "I use the computer to do my homework."
+  },
+  {
+    "dutch": "cursus, de",
+    "english": "the course",
+    "vietnamese": "khóa học",
+    "dutchsentence": "De cursus Nederlands is erg interessant.",
+    "englishtranslate": "The Dutch course is very interesting."
+  },
+  {
+    "dutch": "school, de",
+    "english": "the school",
+    "vietnamese": "trường học",
+    "dutchsentence": "Zij gaan elke dag naar school.",
+    "englishtranslate": "They go to school every day."
+  }
 ]

@@ -1,10 +1,58 @@
 [
-    {"dutch": "de fictie", "english": "the fiction", "vietnamese": "hư cấu"},
-    {"dutch": "de non-fictie", "english": "the non-fiction", "vietnamese": "phi hư cấu"},
-    {"dutch": "de verdieping (-en)", "english": "the floor (-s)", "vietnamese": "tầng (-s)"},
-    {"dutch": "het gelijkvloers", "english": "the ground floor", "vietnamese": "tầng trệt"},
-    {"dutch": "het bezoek (-en)", "english": "the visit (-s)", "vietnamese": "cuộc thăm (-s)"},
-    {"dutch": "boven", "english": "above", "vietnamese": "trên"},
-    {"dutch": "beneden", "english": "below", "vietnamese": "dưới"},
-    {"dutch": "bezoeken", "english": "to visit", "vietnamese": "thăm"}
+    {
+        "dutch": "de fictie",
+        "english": "the fiction",
+        "vietnamese": "hư cấu",
+        "dutchsentence": "Ik lees graag fictie om te ontsnappen aan de realiteit.",
+        "englishtranslate": "I like to read fiction to escape reality."
+    },
+    {
+        "dutch": "de non-fictie",
+        "english": "the non-fiction",
+        "vietnamese": "phi hư cấu",
+        "dutchsentence": "Non-fictieboeken geven je feitelijke informatie.",
+        "englishtranslate": "Non-fiction books give you factual information."
+    },
+    {
+        "dutch": "de verdieping (-en)",
+        "english": "the floor (-s)",
+        "vietnamese": "tầng (-s)",
+        "dutchsentence": "Onze afdeling zit op de derde verdieping.",
+        "englishtranslate": "Our department is on the third floor."
+    },
+    {
+        "dutch": "het gelijkvloers",
+        "english": "the ground floor",
+        "vietnamese": "tầng trệt",
+        "dutchsentence": "De receptie bevindt zich op het gelijkvloers.",
+        "englishtranslate": "The reception is located on the ground floor."
+    },
+    {
+        "dutch": "het bezoek (-en)",
+        "english": "the visit (-s)",
+        "vietnamese": "cuộc thăm (-s)",
+        "dutchsentence": "Het bezoek aan het museum was erg leerzaam.",
+        "englishtranslate": "The visit to the museum was very educational."
+    },
+    {
+        "dutch": "boven",
+        "english": "above",
+        "vietnamese": "trên",
+        "dutchsentence": "Mijn slaapkamer is boven.",
+        "englishtranslate": "My bedroom is upstairs (above)."
+    },
+    {
+        "dutch": "beneden",
+        "english": "below",
+        "vietnamese": "dưới",
+        "dutchsentence": "We gaan beneden eten in de keuken.",
+        "englishtranslate": "We are going to eat downstairs (below) in the kitchen."
+    },
+    {
+        "dutch": "bezoeken",
+        "english": "to visit",
+        "vietnamese": "thăm",
+        "dutchsentence": "Ik wil mijn familie volgend weekend bezoeken.",
+        "englishtranslate": "I want to visit my family next weekend."
+    }
 ]

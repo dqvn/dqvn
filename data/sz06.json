@@ -1,23 +1,149 @@
 [
-    {"dutch":"de glimlach (-en)","english":"the smile (smiles)","vietnamese":"nụ cười (các nụ cười)"},
-    {"dutch":"de verandering (-en)","english":"the change (changes)","vietnamese":"sự thay đổi (các sự thay đổi)"},
-    {"dutch":"de vriendschap (-pen)","english":"the friendship (friendships)","vietnamese":"tình bạn (các tình bạn)"},
-    {"dutch":"het publiek","english":"the public","vietnamese":"công chúng"},
-    {"dutch":"persoonlijk","english":"personal","vietnamese":"cá nhân"},
-    {"dutch":"publiek","english":"public","vietnamese":"công cộng"},
-    {"dutch":"romantisch","english":"romantic","vietnamese":"lãng mạn"},
-    {"dutch":"vriendschappelijk","english":"friendly","vietnamese":"thân thiện"},
-    {"dutch":"schattig","english":"cute","vietnamese":"dễ thương"},
-    {"dutch":"meenemen","english":"to take along","vietnamese":"mang theo"},
-    {"dutch":"nam mee","english":"took along","vietnamese":"đã mang theo"},
-    {"dutch":"heeft meegenomen","english":"has taken along","vietnamese":"đã mang theo"},
-    {"dutch":"publiceren","english":"to publish","vietnamese":"xuất bản"},
-    {"dutch":"publiceerde","english":"published","vietnamese":"đã xuất bản"},
-    {"dutch":"heeft gepubliceerd","english":"has published","vietnamese":"đã xuất bản"},
-    {"dutch":"meegaan","english":"to go along","vietnamese":"đi cùng"},
-    {"dutch":"ging mee","english":"went along","vietnamese":"đã đi cùng"},
-    {"dutch":"is meegegaan","english":"has gone along","vietnamese":"đã đi cùng"},
-    {"dutch":"glimlachen","english":"to smile","vietnamese":"mỉm cười"},
-    {"dutch":"glimlachte","english":"smiled","vietnamese":"đã mỉm cười"},
-    {"dutch":"heeft geglimlacht","english":"has smiled","vietnamese":"đã mỉm cười"}
-  ]
+    {
+        "dutch": "de glimlach (-en)",
+        "english": "the smile (smiles)",
+        "vietnamese": "nụ cười (các nụ cười)",
+        "dutchsentence": "Zijn glimlach maakte iedereen blij.",
+        "englishtranslate": "His smile made everyone happy."
+    },
+    {
+        "dutch": "de verandering (-en)",
+        "english": "the change (changes)",
+        "vietnamese": "sự thay đổi (các sự thay đổi)",
+        "dutchsentence": "De verandering van het beleid heeft invloed op iedereen.",
+        "englishtranslate": "The change in policy affects everyone."
+    },
+    {
+        "dutch": "de vriendschap (-pen)",
+        "english": "the friendship (friendships)",
+        "vietnamese": "tình bạn (các tình bạn)",
+        "dutchsentence": "Onze vriendschap duurt al meer dan twintig jaar.",
+        "englishtranslate": "Our friendship has lasted for more than twenty years."
+    },
+    {
+        "dutch": "het publiek",
+        "english": "the public",
+        "vietnamese": "công chúng",
+        "dutchsentence": "Het publiek klapte enthousiast voor de artiest.",
+        "englishtranslate": "The public clapped enthusiastically for the artist."
+    },
+    {
+        "dutch": "persoonlijk",
+        "english": "personal",
+        "vietnamese": "cá nhân",
+        "dutchsentence": "Dit is een persoonlijke brief, alleen voor jou.",
+        "englishtranslate": "This is a personal letter, only for you."
+    },
+    {
+        "dutch": "publiek",
+        "english": "public",
+        "vietnamese": "công cộng",
+        "dutchsentence": "Het park is publiek terrein, iedereen mag er komen.",
+        "englishtranslate": "The park is public property, everyone can go there."
+    },
+    {
+        "dutch": "romantisch",
+        "english": "romantic",
+        "vietnamese": "lãng mạn",
+        "dutchsentence": "Zij had een romantisch diner bij kaarslicht.",
+        "englishtranslate": "She had a romantic dinner by candlelight."
+    },
+    {
+        "dutch": "vriendschappelijk",
+        "english": "friendly",
+        "vietnamese": "thân thiện",
+        "dutchsentence": "Het was een vriendschappelijke wedstrijd zonder veel druk.",
+        "englishtranslate": "It was a friendly match without much pressure."
+    },
+    {
+        "dutch": "schattig",
+        "english": "cute",
+        "vietnamese": "dễ thương",
+        "dutchsentence": "De puppy is zo schattig met zijn grote ogen.",
+        "englishtranslate": "The puppy is so cute with its big eyes."
+    },
+    {
+        "dutch": "meenemen",
+        "english": "to take along",
+        "vietnamese": "mang theo",
+        "dutchsentence": "Zal ik wat drinken meenemen naar het feest?",
+        "englishtranslate": "Shall I take some drinks along to the party?"
+    },
+    {
+        "dutch": "nam mee",
+        "english": "took along",
+        "vietnamese": "đã mang theo",
+        "dutchsentence": "Hij nam een cadeautje mee voor zijn gastheer.",
+        "englishtranslate": "He took a gift along for his host."
+    },
+    {
+        "dutch": "heeft meegenomen",
+        "english": "has taken along",
+        "vietnamese": "đã mang theo",
+        "dutchsentence": "Wie heeft de taart meegenomen?",
+        "englishtranslate": "Who has taken the cake along?"
+    },
+    {
+        "dutch": "publiceren",
+        "english": "to publish",
+        "vietnamese": "xuất bản",
+        "dutchsentence": "De auteur wilde het boek snel publiceren.",
+        "englishtranslate": "The author wanted to publish the book quickly."
+    },
+    {
+        "dutch": "publiceerde",
+        "english": "published",
+        "vietnamese": "đã xuất bản",
+        "dutchsentence": "De krant publiceerde de resultaten gisteren.",
+        "englishtranslate": "The newspaper published the results yesterday."
+    },
+    {
+        "dutch": "heeft gepubliceerd",
+        "english": "has published",
+        "vietnamese": "đã xuất bản",
+        "dutchsentence": "De organisatie heeft een nieuw rapport gepubliceerd.",
+        "englishtranslate": "The organization has published a new report."
+    },
+    {
+        "dutch": "meegaan",
+        "english": "to go along",
+        "vietnamese": "đi cùng",
+        "dutchsentence": "Wil je met ons meegaan naar de film?",
+        "englishtranslate": "Do you want to go along with us to the movie?"
+    },
+    {
+        "dutch": "ging mee",
+        "english": "went along",
+        "vietnamese": "đã đi cùng",
+        "dutchsentence": "Zij ging mee naar de tentoonstelling.",
+        "englishtranslate": "She went along to the exhibition."
+    },
+    {
+        "dutch": "is meegegaan",
+        "english": "has gone along",
+        "vietnamese": "đã đi cùng",
+        "dutchsentence": "Hij is met zijn vrienden meegegaan naar het strand.",
+        "englishtranslate": "He has gone along with his friends to the beach."
+    },
+    {
+        "dutch": "glimlachen",
+        "english": "to smile",
+        "vietnamese": "mỉm cười",
+        "dutchsentence": "Ze begon te glimlachen toen ze hem zag.",
+        "englishtranslate": "She started to smile when she saw him."
+    },
+    {
+        "dutch": "glimlachte",
+        "english": "smiled",
+        "vietnamese": "đã mỉm cười",
+        "dutchsentence": "De leraar glimlachte naar de studenten.",
+        "englishtranslate": "The teacher smiled at the students."
+    },
+    {
+        "dutch": "heeft geglimlacht",
+        "english": "has smiled",
+        "vietnamese": "đã mỉm cười",
+        "dutchsentence": "Hij heeft de hele dag geglimlacht.",
+        "englishtranslate": "He has smiled the whole day."
+    }
+]

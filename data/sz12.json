@@ -1,24 +1,156 @@
 [
-    {"dutch":"het aantal (-len)","english":"the number (numbers)","vietnamese":"số lượng (các số lượng)"},
-    {"dutch":"de beweging (-en)","english":"the movement (movements)","vietnamese":"chuyển động (các chuyển động)"},
-    {"dutch":"de lounge (-s)","english":"the lounge (lounges)","vietnamese":"phòng chờ (các phòng chờ)"},
-    {"dutch":"de wandeling (-en)","english":"the walk (walks)","vietnamese":"cuộc đi bộ (các cuộc đi bộ)"},
-    {"dutch":"de stap (-pen)","english":"the step (steps)","vietnamese":"bước (các bước)"},
-    {"dutch":"de verzameling (-en)","english":"the collection (collections)","vietnamese":"bộ sưu tập (các bộ sưu tập)"},
-    {"dutch":"de postzegel (-s)","english":"the stamp (stamps)","vietnamese":"tem (các tem)"},
-    {"dutch":"de slaap","english":"the sleep","vietnamese":"giấc ngủ"},
-    {"dutch":"het belang (-en)","english":"the importance (importances)","vietnamese":"tầm quan trọng (các tầm quan trọng)"},
-    {"dutch":"de impact","english":"the impact","vietnamese":"tác động"},
-    {"dutch":"het effect (-en)","english":"the effect (effects)","vietnamese":"hiệu ứng (các hiệu ứng)"},
-    {"dutch":"het orgaan (organen)","english":"the organ (organs)","vietnamese":"cơ quan (các cơ quan)"},
-    {"dutch":"in plaats van","english":"instead of","vietnamese":"thay vì"},
-    {"dutch":"handig","english":"handy","vietnamese":"tiện lợi"},
-    {"dutch":"voldoende","english":"sufficient","vietnamese":"đủ"},
-    {"dutch":"vliegen","english":"to fly","vietnamese":"bay"},
-    {"dutch":"bewegen","english":"to move","vietnamese":"di chuyển"},
-    {"dutch":"stilstaan","english":"to stand still","vietnamese":"đứng yên"},
-    {"dutch":"wandelen","english":"to walk","vietnamese":"đi bộ"},
-    {"dutch":"verzamelen","english":"to collect","vietnamese":"thu thập"},
-    {"dutch":"onderschatten","english":"to underestimate","vietnamese":"đánh giá thấp"},
-    {"dutch":"overschatten","english":"to overestimate","vietnamese":"đánh giá quá cao"}
-  ]
+    {
+        "dutch": "het aantal (-len)",
+        "english": "the number (numbers) / the amount",
+        "vietnamese": "số lượng (các số lượng)",
+        "dutchsentence": "Het aantal studenten is dit jaar toegenomen.",
+        "englishtranslate": "The number of students has increased this year."
+    },
+    {
+        "dutch": "de beweging (-en)",
+        "english": "the movement (movements)",
+        "vietnamese": "chuyển động (các chuyển động)",
+        "dutchsentence": "Er is veel beweging in de financiële markt.",
+        "englishtranslate": "There is a lot of movement in the financial market."
+    },
+    {
+        "dutch": "de lounge (-s)",
+        "english": "the lounge (lounges)",
+        "vietnamese": "phòng chờ (các phòng chờ)",
+        "dutchsentence": "We wachten in de lounge tot onze vlucht vertrekt.",
+        "englishtranslate": "We are waiting in the lounge until our flight departs."
+    },
+    {
+        "dutch": "de wandeling (-en)",
+        "english": "the walk (walks)",
+        "vietnamese": "cuộc đi bộ (các cuộc đi bộ)",
+        "dutchsentence": "Een lange wandeling in de natuur is erg ontspannend.",
+        "englishtranslate": "A long walk in nature is very relaxing."
+    },
+    {
+        "dutch": "de stap (-pen)",
+        "english": "the step (steps)",
+        "vietnamese": "bước (các bước)",
+        "dutchsentence": "Zet de volgende stap om je doel te bereiken.",
+        "englishtranslate": "Take the next step to reach your goal."
+    },
+    {
+        "dutch": "de verzameling (-en)",
+        "english": "the collection (collections)",
+        "vietnamese": "bộ sưu tập (các bộ sưu tập)",
+        "dutchsentence": "Zij heeft een grote verzameling oude boeken.",
+        "englishtranslate": "She has a large collection of old books."
+    },
+    {
+        "dutch": "de postzegel (-s)",
+        "english": "the stamp (stamps)",
+        "vietnamese": "tem (các tem)",
+        "dutchsentence": "Deze postzegel is erg zeldzaam en waardevol.",
+        "englishtranslate": "This stamp is very rare and valuable."
+    },
+    {
+        "dutch": "de slaap",
+        "english": "the sleep",
+        "vietnamese": "giấc ngủ",
+        "dutchsentence": "Ik heb vannacht maar vier uur slaap gehad.",
+        "englishtranslate": "I only got four hours of sleep last night."
+    },
+    {
+        "dutch": "het belang (-en)",
+        "english": "the importance (importances) / the interest",
+        "vietnamese": "tầm quan trọng (các tầm quan trọng)",
+        "dutchsentence": "Hij heeft veel belang bij het succes van dit project.",
+        "englishtranslate": "He has a lot of interest/stake in the success of this project."
+    },
+    {
+        "dutch": "de impact",
+        "english": "the impact",
+        "vietnamese": "tác động",
+        "dutchsentence": "De crisis heeft een enorme impact op de economie.",
+        "englishtranslate": "The crisis has an enormous impact on the economy."
+    },
+    {
+        "dutch": "het effect (-en)",
+        "english": "the effect (effects)",
+        "vietnamese": "hiệu ứng (các hiệu ứng)",
+        "dutchsentence": "Het medicijn heeft een onmiddellijk effect op de pijn.",
+        "englishtranslate": "The medicine has an immediate effect on the pain."
+    },
+    {
+        "dutch": "het orgaan (organen)",
+        "english": "the organ (organs)",
+        "vietnamese": "cơ quan (các cơ quan)",
+        "dutchsentence": "Het hart is een vitaal orgaan in het menselijk lichaam.",
+        "englishtranslate": "The heart is a vital organ in the human body."
+    },
+    {
+        "dutch": "in plaats van",
+        "english": "instead of",
+        "vietnamese": "thay vì",
+        "dutchsentence": "Zij kocht thee in plaats van koffie.",
+        "englishtranslate": "She bought tea instead of coffee."
+    },
+    {
+        "dutch": "handig",
+        "english": "handy / useful / clever",
+        "vietnamese": "tiện lợi",
+        "dutchsentence": "Het is handig om een notitieboekje bij je te hebben.",
+        "englishtranslate": "It is handy to have a notebook with you."
+    },
+    {
+        "dutch": "voldoende",
+        "english": "sufficient",
+        "vietnamese": "đủ",
+        "dutchsentence": "Er is voldoende tijd om de opdracht af te maken.",
+        "englishtranslate": "There is sufficient time to finish the assignment."
+    },
+    {
+        "dutch": "vliegen (vloog, gevlogen)",
+        "english": "to fly",
+        "vietnamese": "bay",
+        "dutchsentence": "De vogel vloog snel weg toen hij de kat zag.",
+        "englishtranslate": "The bird flew away quickly when it saw the cat."
+    },
+    {
+        "dutch": "bewegen (bewoog, bewogen)",
+        "english": "to move",
+        "vietnamese": "di chuyển",
+        "dutchsentence": "Het is belangrijk om elke dag minstens een beetje te bewegen.",
+        "englishtranslate": "It is important to move at least a little bit every day."
+    },
+    {
+        "dutch": "stilstaan (stond stil, stilgestaan)",
+        "english": "to stand still",
+        "vietnamese": "đứng yên",
+        "dutchsentence": "De auto stond stil voor het rode licht.",
+        "englishtranslate": "The car stood still before the red light."
+    },
+    {
+        "dutch": "wandelen (wandelde, gewandeld)",
+        "english": "to walk",
+        "vietnamese": "đi bộ",
+        "dutchsentence": "We hebben gisteren uren gewandeld in het bos.",
+        "englishtranslate": "We walked for hours in the forest yesterday."
+    },
+    {
+        "dutch": "verzamelen (verzamelde, verzameld)",
+        "english": "to collect",
+        "vietnamese": "thu thập",
+        "dutchsentence": "Zij verzamelt al jaren antieke poppen.",
+        "englishtranslate": "She has been collecting antique dolls for years."
+    },
+    {
+        "dutch": "onderschatten (onderschatte, onderschat)",
+        "english": "to underestimate",
+        "vietnamese": "đánh giá thấp",
+        "dutchsentence": "Je moet de kracht van je tegenstander niet onderschatten.",
+        "englishtranslate": "You should not underestimate the strength of your opponent."
+    },
+    {
+        "dutch": "overschatten (overschatte, overschat)",
+        "english": "to overestimate",
+        "vietnamese": "đánh giá quá cao",
+        "dutchsentence": "Hij heeft zijn eigen capaciteiten overschat.",
+        "englishtranslate": "He has overestimated his own capabilities."
+    }
+]

@@ -1,20 +1,129 @@
 [
-    {"dutch": "de kamer", "english": "the room", "vietnamese": "phòng"},
-    {"dutch": "de slaapkamer", "english": "the bedroom", "vietnamese": "phòng ngủ"},
-    {"dutch": "de badkamer", "english": "the bathroom", "vietnamese": "phòng tắm"},
-    {"dutch": "het salon", "english": "the living room", "vietnamese": "phòng khách"},
-    {"dutch": "de living", "english": "the living room", "vietnamese": "phòng khách"},
-    {"dutch": "de keuken", "english": "the kitchen", "vietnamese": "nhà bếp"},
-    {"dutch": "het wc", "english": "the toilet", "vietnamese": "nhà vệ sinh"},
-    {"dutch": "het toilet", "english": "the toilet", "vietnamese": "nhà vệ sinh"},
-    {"dutch": "de garage", "english": "the garage", "vietnamese": "nhà để xe"},
-    {"dutch": "de buurt", "english": "the neighborhood", "vietnamese": "khu phố"},
-    {"dutch": "niets", "english": "nothing", "vietnamese": "không có gì"},
-    {"dutch": "iets", "english": "something", "vietnamese": "một cái gì đó"},
-    {"dutch": "alles", "english": "everything", "vietnamese": "mọi thứ"},
-    {"dutch": "ver", "english": "far", "vietnamese": "xa"},
-    {"dutch": "vinden", "english": "find", "vietnamese": "tìm thấy"},
-    {"dutch": "nodig hebben", "english": "need", "vietnamese": "cần"},
-    {"dutch": "huren", "english": "rent", "vietnamese": "thuê"},
-    {"dutch": "kopen", "english": "buy", "vietnamese": "mua"}
+  {
+    "dutch": "kamer, de",
+    "english": "the room",
+    "vietnamese": "phòng",
+    "dutchsentence": "Het appartement heeft drie kamers.",
+    "englishtranslate": "The apartment has three rooms."
+  },
+  {
+    "dutch": "slaapkamer, de",
+    "english": "the bedroom",
+    "vietnamese": "phòng ngủ",
+    "dutchsentence": "De slaapkamer is aan de achterkant van het huis.",
+    "englishtranslate": "The bedroom is at the back of the house."
+  },
+  {
+    "dutch": "badkamer, de",
+    "english": "the bathroom",
+    "vietnamese": "phòng tắm",
+    "dutchsentence": "De badkamer is vrij groot.",
+    "englishtranslate": "The bathroom is quite large."
+  },
+  {
+    "dutch": "salon, het",
+    "english": "the living room",
+    "vietnamese": "phòng khách",
+    "dutchsentence": "We kijken tv in het salon 's avonds.",
+    "englishtranslate": "We watch TV in the living room in the evening."
+  },
+  {
+    "dutch": "living, de",
+    "english": "the living room (alternative)",
+    "vietnamese": "phòng khách",
+    "dutchsentence": "Zet de stoelen in de living.",
+    "englishtranslate": "Put the chairs in the living room."
+  },
+  {
+    "dutch": "keuken, de",
+    "english": "the kitchen",
+    "vietnamese": "nhà bếp",
+    "dutchsentence": "Zij houdt van koken in haar nieuwe keuken.",
+    "englishtranslate": "She loves cooking in her new kitchen."
+  },
+  {
+    "dutch": "wc, het",
+    "english": "the toilet (informal)",
+    "vietnamese": "nhà vệ sinh",
+    "dutchsentence": "Waar is het wc?",
+    "englishtranslate": "Where is the toilet?"
+  },
+  {
+    "dutch": "toilet, het",
+    "english": "the toilet (formal)",
+    "vietnamese": "nhà vệ sinh",
+    "dutchsentence": "Het toilet is bezet.",
+    "englishtranslate": "The toilet is occupied."
+  },
+  {
+    "dutch": "garage, de",
+    "english": "the garage",
+    "vietnamese": "nhà để xe",
+    "dutchsentence": "De auto staat in de garage.",
+    "englishtranslate": "The car is in the garage."
+  },
+  {
+    "dutch": "buurt, de",
+    "english": "the neighborhood",
+    "vietnamese": "khu phố",
+    "dutchsentence": "Dit is een rustige buurt om te wonen.",
+    "englishtranslate": "This is a quiet neighborhood to live in."
+  },
+  {
+    "dutch": "niets",
+    "english": "nothing",
+    "vietnamese": "không có gì",
+    "dutchsentence": "Ik heb niets nodig.",
+    "englishtranslate": "I need nothing."
+  },
+  {
+    "dutch": "iets",
+    "english": "something",
+    "vietnamese": "một cái gì đó",
+    "dutchsentence": "Ik wil je iets geven.",
+    "englishtranslate": "I want to give you something."
+  },
+  {
+    "dutch": "alles",
+    "english": "everything",
+    "vietnamese": "mọi thứ",
+    "dutchsentence": "Wij hebben alles gedaan.",
+    "englishtranslate": "We have done everything."
+  },
+  {
+    "dutch": "ver",
+    "english": "far",
+    "vietnamese": "xa",
+    "dutchsentence": "De universiteit is ver van hier.",
+    "englishtranslate": "The university is far from here."
+  },
+  {
+    "dutch": "vinden",
+    "english": "to find / to think (opinion)",
+    "vietnamese": "tìm thấy",
+    "dutchsentence": "Wat vind je van deze buurt?",
+    "englishtranslate": "What do you think of this neighborhood?",
+    "notes": "Meaning 'to find' or 'to have an opinion'."
+  },
+  {
+    "dutch": "nodig hebben",
+    "english": "to need",
+    "vietnamese": "cần",
+    "dutchsentence": "Ik heb jouw hulp nodig.",
+    "englishtranslate": "I need your help."
+  },
+  {
+    "dutch": "huren",
+    "english": "to rent",
+    "vietnamese": "thuê",
+    "dutchsentence": "Wij willen een appartement huren.",
+    "englishtranslate": "We want to rent an apartment."
+  },
+  {
+    "dutch": "kopen",
+    "english": "to buy",
+    "vietnamese": "mua",
+    "dutchsentence": "Zij gaat een huis kopen.",
+    "englishtranslate": "She is going to buy a house."
+  }
 ]

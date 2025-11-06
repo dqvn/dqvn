@@ -1,20 +1,128 @@
 [
-    {"dutch": "kunnen", "english": "can", "vietnamese": "có thể"},
-    {"dutch": "willen", "english": "to want", "vietnamese": "muốn"},
-    {"dutch": "aflopen", "english": "to end", "vietnamese": "kết thúc"},
-    {"dutch": "herhalen", "english": "to repeat", "vietnamese": "lặp lại"},
-    {"dutch": "betalen", "english": "to pay", "vietnamese": "trả tiền"},
-    {"dutch": "verhuren", "english": "to rent", "vietnamese": "cho thuê"},
-    {"dutch": "verbeteren", "english": "to improve", "vietnamese": "cải thiện"},
-    {"dutch": "veranderen", "english": "to change", "vietnamese": "thay đổi"},
-    {"dutch": "gebruiken", "english": "to use", "vietnamese": "sử dụng"},
-    {"dutch": "gebeuren", "english": "to happen", "vietnamese": "xảy ra"},
-    {"dutch": "vertellen", "english": "to tell", "vietnamese": "kể"},
-    {"dutch": "vermoorden", "english": "to murder", "vietnamese": "giết"},
-    {"dutch": "betekenen", "english": "to mean", "vietnamese": "có nghĩa là"},
-    {"dutch": "bedoelen", "english": "to mean", "vietnamese": "có nghĩa là"},
-    {"dutch": "ontmoeten", "english": "to meet", "vietnamese": "gặp"},
-    {"dutch": "beloven", "english": "to promise", "vietnamese": "hứa"},
-    {"dutch": "geloven", "english": "to believe", "vietnamese": "tin tưởng"},
-    {"dutch": "lukken", "english": "to succeed", "vietnamese": "thành công"}
-  ]
+    {
+        "dutch": "kunnen",
+        "english": "can",
+        "vietnamese": "có thể",
+        "dutchsentence": "Ik kan je nu helpen met die dozen.",
+        "englishtranslate": "I can help you now with those boxes."
+    },
+    {
+        "dutch": "willen",
+        "english": "to want",
+        "vietnamese": "muốn",
+        "dutchsentence": "Wij willen volgend jaar op vakantie naar Italië.",
+        "englishtranslate": "We want to go on vacation to Italy next year."
+    },
+    {
+        "dutch": "aflopen",
+        "english": "to end",
+        "vietnamese": "kết thúc",
+        "dutchsentence": "De bijeenkomst zal over een uur aflopen.",
+        "englishtranslate": "The meeting will end in an hour."
+    },
+    {
+        "dutch": "herhalen",
+        "english": "to repeat",
+        "vietnamese": "lặp lại",
+        "dutchsentence": "Zou u uw vraag alstublieft kunnen herhalen?",
+        "englishtranslate": "Could you please repeat your question?"
+    },
+    {
+        "dutch": "betalen",
+        "english": "to pay",
+        "vietnamese": "trả tiền",
+        "dutchsentence": "Vergeet niet de rekening te betalen voor de deadline.",
+        "englishtranslate": "Don't forget to pay the bill before the deadline."
+    },
+    {
+        "dutch": "verhuren",
+        "english": "to rent",
+        "vietnamese": "cho thuê",
+        "dutchsentence": "Zij verhuren een appartement aan de rand van de stad.",
+        "englishtranslate": "They rent out an apartment on the edge of the city."
+    },
+    {
+        "dutch": "verbeteren",
+        "english": "to improve",
+        "vietnamese": "cải thiện",
+        "dutchsentence": "Ik moet mijn grammatica verbeteren om beter Nederlands te spreken.",
+        "englishtranslate": "I need to improve my grammar to speak Dutch better."
+    },
+    {
+        "dutch": "veranderen",
+        "english": "to change",
+        "vietnamese": "thay đổi",
+        "dutchsentence": "Het weer kan snel veranderen in de bergen.",
+        "englishtranslate": "The weather can change quickly in the mountains."
+    },
+    {
+        "dutch": "gebruiken",
+        "english": "to use",
+        "vietnamese": "sử dụng",
+        "dutchsentence": "Je kunt mijn laptop gebruiken als je wilt.",
+        "englishtranslate": "You can use my laptop if you want."
+    },
+    {
+        "dutch": "gebeuren",
+        "english": "to happen",
+        "vietnamese": "xảy ra",
+        "dutchsentence": "Wat is er precies gebeurd bij het ongeval?",
+        "englishtranslate": "What exactly happened at the accident?"
+    },
+    {
+        "dutch": "vertellen",
+        "english": "to tell",
+        "vietnamese": "kể",
+        "dutchsentence": "Kun je me vertellen hoe ik bij het station kom?",
+        "englishtranslate": "Can you tell me how to get to the station?"
+    },
+    {
+        "dutch": "vermoorden",
+        "english": "to murder",
+        "vietnamese": "giết",
+        "dutchsentence": "De misdaad werd onderzocht als moord (vermoorden).",
+        "englishtranslate": "The crime was investigated as murder (to murder)."
+    },
+    {
+        "dutch": "betekenen",
+        "english": "to mean",
+        "vietnamese": "có nghĩa là",
+        "dutchsentence": "Wat betekent dat woord in het Engels?",
+        "englishtranslate": "What does that word mean in English?"
+    },
+    {
+        "dutch": "bedoelen",
+        "english": "to mean",
+        "vietnamese": "có nghĩa là",
+        "dutchsentence": "Ik begrijp niet wat je bedoelt met die opmerking.",
+        "englishtranslate": "I don't understand what you mean with that remark."
+    },
+    {
+        "dutch": "ontmoeten",
+        "english": "to meet",
+        "vietnamese": "gặp",
+        "dutchsentence": "We zullen elkaar volgende week in het park ontmoeten.",
+        "englishtranslate": "We will meet each other in the park next week."
+    },
+    {
+        "dutch": "beloven",
+        "english": "to promise",
+        "vietnamese": "hứa",
+        "dutchsentence": "Ik beloof dat ik op tijd zal zijn.",
+        "englishtranslate": "I promise that I will be on time."
+    },
+    {
+        "dutch": "geloven",
+        "english": "to believe",
+        "vietnamese": "tin tưởng",
+        "dutchsentence": "Geloof je echt in spoken?",
+        "englishtranslate": "Do you really believe in ghosts?"
+    },
+    {
+        "dutch": "lukken",
+        "english": "to succeed",
+        "vietnamese": "thành công",
+        "dutchsentence": "Het is me gelukt om de puzzel op te lossen.",
+        "englishtranslate": "I succeeded in solving the puzzle."
+    }
+]

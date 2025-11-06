@@ -1,19 +1,121 @@
 [
-    {"dutch": "de hand (-en)", "english": "the hand(s)", "vietnamese": "bàn tay"},
-    {"dutch": "de betekenis (-sen)", "english": "the meaning(s)", "vietnamese": "ý nghĩa"},
-    {"dutch": "de bedoeling (-en)", "english": "the intention(s)", "vietnamese": "ý định"},
-    {"dutch": "het noorden", "english": "the north", "vietnamese": "phía bắc"},
-    {"dutch": "het zuiden", "english": "the south", "vietnamese": "phía nam"},
-    {"dutch": "het westen", "english": "the west", "vietnamese": "phía tây"},
-    {"dutch": "het oosten", "english": "the east", "vietnamese": "phía đông"},
-    {"dutch": "het woordenboek (-en)", "english": "the dictionary (dictionaries)", "vietnamese": "từ điển"},
-    {"dutch": "het Chinees", "english": "the Chinese", "vietnamese": "tiếng Trung"},
-    {"dutch": "noord", "english": "north", "vietnamese": "bắc"},
-    {"dutch": "zuid", "english": "south", "vietnamese": "nam"},
-    {"dutch": "west", "english": "west", "vietnamese": "tây"},
-    {"dutch": "oost", "english": "east", "vietnamese": "đông"},
-    {"dutch": "betekenen", "english": "(to) mean", "vietnamese": "(để) có nghĩa là"},
-    {"dutch": "bedoelen", "english": "(to) intend", "vietnamese": "(để) có ý định"},
-    {"dutch": "snappen", "english": "(to) understand", "vietnamese": "(để) hiểu"},
-    {"dutch": "verstaan", "english": "(to) comprehend", "vietnamese": "(để) hiểu"}
+    {
+        "dutch": "de hand (-en)",
+        "english": "the hand(s)",
+        "vietnamese": "bàn tay",
+        "dutchsentence": "Geef me je hand, dan help ik je.",
+        "englishtranslate": "Give me your hand, then I will help you."
+    },
+    {
+        "dutch": "de betekenis (-sen)",
+        "english": "the meaning(s)",
+        "vietnamese": "ý nghĩa",
+        "dutchsentence": "Wat is de betekenis van dat symbool?",
+        "englishtranslate": "What is the meaning of that symbol?"
+    },
+    {
+        "dutch": "de bedoeling (-en)",
+        "english": "the intention(s)",
+        "vietnamese": "ý định",
+        "dutchsentence": "Mijn bedoeling was om te helpen, niet om te storen.",
+        "englishtranslate": "My intention was to help, not to disturb."
+    },
+    {
+        "dutch": "het noorden",
+        "english": "the north",
+        "vietnamese": "phía bắc",
+        "dutchsentence": "We wonen in het noorden van het land.",
+        "englishtranslate": "We live in the north of the country."
+    },
+    {
+        "dutch": "het zuiden",
+        "english": "the south",
+        "vietnamese": "phía nam",
+        "dutchsentence": "In het zuiden is het vaak warmer.",
+        "englishtranslate": "It is often warmer in the south."
+    },
+    {
+        "dutch": "het westen",
+        "english": "the west",
+        "vietnamese": "phía tây",
+        "dutchsentence": "De zon gaat onder in het westen.",
+        "englishtranslate": "The sun sets in the west."
+    },
+    {
+        "dutch": "het oosten",
+        "english": "the east",
+        "vietnamese": "phía đông",
+        "dutchsentence": "De wind komt uit het oosten.",
+        "englishtranslate": "The wind comes from the east."
+    },
+    {
+        "dutch": "het woordenboek (-en)",
+        "english": "the dictionary (dictionaries)",
+        "vietnamese": "từ điển",
+        "dutchsentence": "Ik heb een woordenboek nodig om deze zin te vertalen.",
+        "englishtranslate": "I need a dictionary to translate this sentence."
+    },
+    {
+        "dutch": "het Chinees",
+        "english": "the Chinese",
+        "vietnamese": "tiếng Trung",
+        "dutchsentence": "Zij spreekt vloeiend Chinees.",
+        "englishtranslate": "She speaks Chinese fluently."
+    },
+    {
+        "dutch": "noord",
+        "english": "north",
+        "vietnamese": "bắc",
+        "dutchsentence": "We rijden richting het noorden.",
+        "englishtranslate": "We are driving towards the north."
+    },
+    {
+        "dutch": "zuid",
+        "english": "south",
+        "vietnamese": "nam",
+        "dutchsentence": "De wind waait uit zuidelijke richting.",
+        "englishtranslate": "The wind is blowing from the south direction."
+    },
+    {
+        "dutch": "west",
+        "english": "west",
+        "vietnamese": "tây",
+        "dutchsentence": "De wijk ligt ten westen van het centrum.",
+        "englishtranslate": "The neighborhood is located west of the center."
+    },
+    {
+        "dutch": "oost",
+        "english": "east",
+        "vietnamese": "đông",
+        "dutchsentence": "De zon komt op in het oosten.",
+        "englishtranslate": "The sun rises in the east."
+    },
+    {
+        "dutch": "betekenen",
+        "english": "(to) mean",
+        "vietnamese": "(để) có nghĩa là",
+        "dutchsentence": "Wat betekenen deze nieuwe regels voor ons?",
+        "englishtranslate": "What do these new rules mean for us?"
+    },
+    {
+        "dutch": "bedoelen",
+        "english": "(to) intend",
+        "vietnamese": "(để) có ý định",
+        "dutchsentence": "Wat bedoel je precies met die opmerking?",
+        "englishtranslate": "What exactly do you mean (intend) with that remark?"
+    },
+    {
+        "dutch": "snappen",
+        "english": "(to) understand",
+        "vietnamese": "(để) hiểu",
+        "dutchsentence": "Ik snap de grammatica nu veel beter.",
+        "englishtranslate": "I understand the grammar much better now."
+    },
+    {
+        "dutch": "verstaan",
+        "english": "(to) comprehend",
+        "vietnamese": "(để) hiểu",
+        "dutchsentence": "Ik versta niet wat je zegt, de muziek is te luid.",
+        "englishtranslate": "I don't comprehend (hear/understand) what you are saying, the music is too loud."
+    }
 ]

@@ -1,19 +1,121 @@
 [
-    {"dutch": "de werken", "english": "the works", "vietnamese": "các tác phẩm"},
-    {"dutch": "de werkzaamheid (-heden)", "english": "the activity (-ies)", "vietnamese": "hoạt động (-s)"},
-    {"dutch": "de omleiding (-en)", "english": "the detour (-s)", "vietnamese": "đường vòng (-s)"},
-    {"dutch": "het plein (-en)", "english": "the square (-s)", "vietnamese": "quảng trường (-s)"},
-    {"dutch": "het dorp (-en)", "english": "the village (-s)", "vietnamese": "làng (-s)"},
-    {"dutch": "de brug (-gen)", "english": "the bridge (-s)", "vietnamese": "cây cầu (-s)"},
-    {"dutch": "de richting (-en)", "english": "the direction (-s)", "vietnamese": "hướng (-s)"},
-    {"dutch": "de cirkel (-s)", "english": "the circle (-s)", "vietnamese": "hình tròn (-s)"},
-    {"dutch": "het vierkant (-en)", "english": "the square (-s)", "vietnamese": "hình vuông (-s)"},
-    {"dutch": "de kant (-en)", "english": "the side (-s)", "vietnamese": "bên (-s)"},
-    {"dutch": "linksaf, rechtsaf", "english": "left, right", "vietnamese": "trái, phải"},
-    {"dutch": "rechtdoor", "english": "straight ahead", "vietnamese": "đi thẳng"},
-    {"dutch": "rond", "english": "around", "vietnamese": "quanh"},
-    {"dutch": "daarom", "english": "therefore", "vietnamese": "do đó"},
-    {"dutch": "langs", "english": "along", "vietnamese": "dọc theo"},
-    {"dutch": "passeren", "english": "to pass", "vietnamese": "vượt qua"},
-    {"dutch": "draaien", "english": "to turn", "vietnamese": "quay đầu"}
+    {
+        "dutch": "de werken",
+        "english": "the works",
+        "vietnamese": "các tác phẩm",
+        "dutchsentence": "Door de werken is de weg afgesloten.",
+        "englishtranslate": "The road is closed due to the works (construction)."
+    },
+    {
+        "dutch": "de werkzaamheid (-heden)",
+        "english": "the activity (-ies)",
+        "vietnamese": "hoạt động (-s)",
+        "dutchsentence": "De werkzaamheden duren een week.",
+        "englishtranslate": "The activities (works/tasks) will take a week."
+    },
+    {
+        "dutch": "de omleiding (-en)",
+        "english": "the detour (-s)",
+        "vietnamese": "đường vòng (-s)",
+        "dutchsentence": "Volg de omleiding naar de snelweg.",
+        "englishtranslate": "Follow the detour to the highway."
+    },
+    {
+        "dutch": "het plein (-en)",
+        "english": "the square (-s)",
+        "vietnamese": "quảng trường (-s)",
+        "dutchsentence": "Het centrale plein is erg gezellig.",
+        "englishtranslate": "The central square is very cozy/pleasant."
+    },
+    {
+        "dutch": "het dorp (-en)",
+        "english": "the village (-s)",
+        "vietnamese": "làng (-s)",
+        "dutchsentence": "Ik woon in een klein dorp buiten de stad.",
+        "englishtranslate": "I live in a small village outside the city."
+    },
+    {
+        "dutch": "de brug (-gen)",
+        "english": "the bridge (-s)",
+        "vietnamese": "cây cầu (-s)",
+        "dutchsentence": "We moeten over de brug om bij het kasteel te komen.",
+        "englishtranslate": "We have to go over the bridge to get to the castle."
+    },
+    {
+        "dutch": "de richting (-en)",
+        "english": "the direction (-s)",
+        "vietnamese": "hướng (-s)",
+        "dutchsentence": "Welke richting moeten we op?",
+        "englishtranslate": "Which direction should we go in?"
+    },
+    {
+        "dutch": "de cirkel (-s)",
+        "english": "the circle (-s)",
+        "vietnamese": "hình tròn (-s)",
+        "dutchsentence": "Teken een cirkel op het bord.",
+        "englishtranslate": "Draw a circle on the board."
+    },
+    {
+        "dutch": "het vierkant (-en)",
+        "english": "the square (-s)",
+        "vietnamese": "hình vuông (-s)",
+        "dutchsentence": "Het vierkant heeft vier gelijke zijden.",
+        "englishtranslate": "The square has four equal sides."
+    },
+    {
+        "dutch": "de kant (-en)",
+        "english": "the side (-s)",
+        "vietnamese": "bên (-s)",
+        "dutchsentence": "Loop aan de rechterkant van de weg.",
+        "englishtranslate": "Walk on the right side of the road."
+    },
+    {
+        "dutch": "linksaf, rechtsaf",
+        "english": "left, right",
+        "vietnamese": "trái, phải",
+        "dutchsentence": "Bij het stoplicht moet je linksaf slaan.",
+        "englishtranslate": "At the traffic light, you have to turn left."
+    },
+    {
+        "dutch": "rechtdoor",
+        "english": "straight ahead",
+        "vietnamese": "đi thẳng",
+        "dutchsentence": "Blijf twee kilometer rechtdoor rijden.",
+        "englishtranslate": "Keep driving straight ahead for two kilometers."
+    },
+    {
+        "dutch": "rond",
+        "english": "around",
+        "vietnamese": "quanh",
+        "dutchsentence": "Loop rond de kerk.",
+        "englishtranslate": "Walk around the church."
+    },
+    {
+        "dutch": "daarom",
+        "english": "therefore",
+        "vietnamese": "do đó",
+        "dutchsentence": "Het regent, daarom neem ik mijn paraplu mee.",
+        "englishtranslate": "It is raining, therefore I am taking my umbrella with me."
+    },
+    {
+        "dutch": "langs",
+        "english": "along",
+        "vietnamese": "dọc theo",
+        "dutchsentence": "We fietsen langs de rivier.",
+        "englishtranslate": "We are cycling along the river."
+    },
+    {
+        "dutch": "passeren",
+        "english": "to pass",
+        "vietnamese": "vượt qua",
+        "dutchsentence": "Ik moet de auto voor me passeren.",
+        "englishtranslate": "I have to pass the car in front of me."
+    },
+    {
+        "dutch": "draaien",
+        "english": "to turn",
+        "vietnamese": "quay đầu",
+        "dutchsentence": "Draai je om en kijk naar de deur.",
+        "englishtranslate": "Turn around and look at the door."
+    }
 ]

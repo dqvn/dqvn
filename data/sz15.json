@@ -1,25 +1,163 @@
 [
-    {"dutch":"de indruk (-ken)","english":"the impression (impressions)","vietnamese":"ấn tượng (các ấn tượng)"},
-    {"dutch":"de ervaring","english":"the experience","vietnamese":"kinh nghiệm"},
-    {"dutch":"het gesprek (-ken)","english":"the conversation (conversations)","vietnamese":"cuộc trò chuyện (các cuộc trò chuyện)"},
-    {"dutch":"het zout","english":"the salt","vietnamese":"muối"},
-    {"dutch":"de smaak (smaken)","english":"the taste (tastes)","vietnamese":"hương vị (các hương vị)"},
-    {"dutch":"fel","english":"bright","vietnamese":"sáng"},
-    {"dutch":"donker","english":"dark","vietnamese":"tối"},
-    {"dutch":"zout","english":"salty","vietnamese":"mặn"},
-    {"dutch":"zuur","english":"sour","vietnamese":"chua"},
-    {"dutch":"zoet","english":"sweet","vietnamese":"ngọt"},
-    {"dutch":"bitter","english":"bitter","vietnamese":"đắng"},
-    {"dutch":"elders","english":"elsewhere","vietnamese":"nơi khác"},
-    {"dutch":"blijkbaar","english":"apparently","vietnamese":"hình như"},
-    {"dutch":"smakelijk","english":"tasty","vietnamese":"ngon"},
-    {"dutch":"blijken","english":"to appear","vietnamese":"xuất hiện"},
-    {"dutch":"bleek","english":"appeared","vietnamese":"đã xuất hiện"},
-    {"dutch":"gebleken (met zijn)","english":"has appeared (with his)","vietnamese":"đã xuất hiện (với anh ấy)"},
-    {"dutch":"proeven","english":"to taste","vietnamese":"nếm"},
-    {"dutch":"proefde","english":"tasted","vietnamese":"đã nếm"},
-    {"dutch":"geproefd","english":"has tasted","vietnamese":"đã nếm"},
-    {"dutch":"smaken","english":"to taste","vietnamese":"nếm"},
-    {"dutch":"smaakte","english":"tasted","vietnamese":"đã nếm"},
-    {"dutch":"gesmaakt","english":"has tasted","vietnamese":"đã nếm"}
-  ]
+    {
+        "dutch": "de indruk (-ken)",
+        "english": "the impression (impressions)",
+        "vietnamese": "ấn tượng (các ấn tượng)",
+        "dutchsentence": "Hij maakte een goede indruk tijdens het sollicitatiegesprek.",
+        "englishtranslate": "He made a good impression during the job interview."
+    },
+    {
+        "dutch": "de ervaring",
+        "english": "the experience",
+        "vietnamese": "kinh nghiệm",
+        "dutchsentence": "Je hebt veel ervaring nodig voor deze baan.",
+        "englishtranslate": "You need a lot of experience for this job."
+    },
+    {
+        "dutch": "het gesprek (-ken)",
+        "english": "the conversation (conversations)",
+        "vietnamese": "cuộc trò chuyện (các cuộc trò chuyện)",
+        "dutchsentence": "Het was een interessant gesprek over politiek.",
+        "englishtranslate": "It was an interesting conversation about politics."
+    },
+    {
+        "dutch": "het zout",
+        "english": "the salt",
+        "vietnamese": "muối",
+        "dutchsentence": "Er zit te veel zout in de soep.",
+        "englishtranslate": "There is too much salt in the soup."
+    },
+    {
+        "dutch": "de smaak (smaken)",
+        "english": "the taste (tastes) / the flavor",
+        "vietnamese": "hương vị (các hương vị)",
+        "dutchsentence": "Deze wijn heeft een fruitige smaak.",
+        "englishtranslate": "This wine has a fruity taste."
+    },
+    {
+        "dutch": "fel",
+        "english": "bright (color/light) / fierce",
+        "vietnamese": "sáng",
+        "dutchsentence": "Ze droeg een felle gele jas die opviel.",
+        "englishtranslate": "She wore a bright yellow coat that stood out."
+    },
+    {
+        "dutch": "donker",
+        "english": "dark",
+        "vietnamese": "tối",
+        "dutchsentence": "Het is al donker buiten, doe het licht aan.",
+        "englishtranslate": "It is already dark outside, turn on the light."
+    },
+    {
+        "dutch": "zout",
+        "english": "salty",
+        "vietnamese": "mặn",
+        "dutchsentence": "De zeewater is heel zout.",
+        "englishtranslate": "The seawater is very salty."
+    },
+    {
+        "dutch": "zuur",
+        "english": "sour",
+        "vietnamese": "chua",
+        "dutchsentence": "De citroenen zijn te zuur voor mij.",
+        "englishtranslate": "The lemons are too sour for me."
+    },
+    {
+        "dutch": "zoet",
+        "english": "sweet",
+        "vietnamese": "ngọt",
+        "dutchsentence": "Dit dessert is heerlijk zoet.",
+        "englishtranslate": "This dessert is deliciously sweet."
+    },
+    {
+        "dutch": "bitter",
+        "english": "bitter",
+        "vietnamese": "đắng",
+        "dutchsentence": "Ik drink mijn koffie graag bitter.",
+        "englishtranslate": "I like to drink my coffee bitter."
+    },
+    {
+        "dutch": "elders",
+        "english": "elsewhere",
+        "vietnamese": "nơi khác",
+        "dutchsentence": "Hij is hier niet; hij is elders aan het werk.",
+        "englishtranslate": "He is not here; he is working elsewhere."
+    },
+    {
+        "dutch": "blijkbaar",
+        "english": "apparently",
+        "vietnamese": "hình như",
+        "dutchsentence": "Blijkbaar zijn ze gisteren al vertrokken.",
+        "englishtranslate": "Apparently they already left yesterday."
+    },
+    {
+        "dutch": "smakelijk",
+        "english": "tasty / appetizing",
+        "vietnamese": "ngon",
+        "dutchsentence": "De soep ruikt erg smakelijk.",
+        "englishtranslate": "The soup smells very appetizing."
+    },
+    {
+        "dutch": "blijken",
+        "english": "to appear / to turn out",
+        "vietnamese": "xuất hiện",
+        "dutchsentence": "Het zal later blijken of het waar is.",
+        "englishtranslate": "It will later turn out whether it is true."
+    },
+    {
+        "dutch": "bleek",
+        "english": "appeared / turned out",
+        "vietnamese": "đã xuất hiện",
+        "dutchsentence": "Het bleek een misverstand te zijn.",
+        "englishtranslate": "It turned out to be a misunderstanding."
+    },
+    {
+        "dutch": "gebleken (met zijn)",
+        "english": "has appeared / has turned out",
+        "vietnamese": "đã xuất hiện (với anh ấy)",
+        "dutchsentence": "Uit onderzoek is gebleken dat het product veilig is.",
+        "englishtranslate": "It has turned out from research that the product is safe."
+    },
+    {
+        "dutch": "proeven",
+        "english": "to taste / to sample",
+        "vietnamese": "nếm",
+        "dutchsentence": "Zou je dit gerecht even willen proeven?",
+        "englishtranslate": "Would you like to taste this dish for a moment?"
+    },
+    {
+        "dutch": "proefde",
+        "english": "tasted / sampled",
+        "vietnamese": "đã nếm",
+        "dutchsentence": "De chef-kok proefde de saus voordat hij hem serveerde.",
+        "englishtranslate": "The chef tasted the sauce before serving it."
+    },
+    {
+        "dutch": "geproefd",
+        "english": "has tasted / has sampled",
+        "vietnamese": "đã nếm",
+        "dutchsentence": "Ik heb nog nooit zoiets lekkers geproefd.",
+        "englishtranslate": "I have never tasted something so delicious."
+    },
+    {
+        "dutch": "smaken",
+        "english": "to taste (impersonal verb)",
+        "vietnamese": "nếm",
+        "dutchsentence": "De pasta smaakte prima, maar miste wat zout.",
+        "englishtranslate": "The pasta tasted fine, but lacked some salt."
+    },
+    {
+        "dutch": "smaakte",
+        "english": "tasted (impersonal verb)",
+        "vietnamese": "đã nếm",
+        "dutchsentence": "Hoe smaakte de wijn die je gisteren dronk?",
+        "englishtranslate": "How did the wine you drank yesterday taste?"
+    },
+    {
+        "dutch": "gesmaakt",
+        "english": "has tasted (impersonal verb)",
+        "vietnamese": "đã nếm",
+        "dutchsentence": "Heeft het eten u gesmaakt?",
+        "englishtranslate": "Did the food taste good to you? (Formal/Polite: Has the food tasted to you?)"
+    }
+]

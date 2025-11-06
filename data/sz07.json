@@ -1,12 +1,72 @@
 [
-    {"dutch":"de bevalling (-en)","english":"the delivery (deliveries)","vietnamese":"sự sinh nở (các sự sinh nở)"},
-    {"dutch":"het programma ('s)","english":"the program (programs)","vietnamese":"chương trình (các chương trình)"},
-    {"dutch":"dikwijls","english":"often","vietnamese":"thường xuyên"},
-    {"dutch":"zich afvragen","english":"to wonder","vietnamese":"tự hỏi"},
-    {"dutch":"vroeg zich af","english":"wondered","vietnamese":"đã tự hỏi"},
-    {"dutch":"zich afgevraagd","english":"has wondered","vietnamese":"đã tự hỏi"},
-    {"dutch":"bevallen","english":"to give birth","vietnamese":"sinh con"},
-    {"dutch":"beviel","english":"gave birth","vietnamese":"đã sinh con"},
-    {"dutch":"zich bevallen","english":"to please oneself","vietnamese":"tự làm hài lòng"},
-    {"dutch":"op zoek zijn","english":"to be looking for","vietnamese":"đang tìm kiếm"}
-  ]
+    {
+        "dutch": "de bevalling (-en)",
+        "english": "the delivery (deliveries)",
+        "vietnamese": "sự sinh nở (các sự sinh nở)",
+        "dutchsentence": "De bevalling van de baby duurde erg lang.",
+        "englishtranslate": "The delivery of the baby took very long."
+    },
+    {
+        "dutch": "het programma ('s)",
+        "english": "the program (programs)",
+        "vietnamese": "chương trình (các chương trình)",
+        "dutchsentence": "Welk televisieprogramma kijk je het liefst?",
+        "englishtranslate": "Which television program do you prefer watching?"
+    },
+    {
+        "dutch": "dikwijls",
+        "english": "often",
+        "vietnamese": "thường xuyên",
+        "dutchsentence": "Ik bezoek mijn grootouders dikwijls in het weekend.",
+        "englishtranslate": "I often visit my grandparents on the weekend."
+    },
+    {
+        "dutch": "zich afvragen",
+        "english": "to wonder",
+        "vietnamese": "tự hỏi",
+        "dutchsentence": "Ik vraag me af wat hij van plan is.",
+        "englishtranslate": "I wonder what he is planning."
+    },
+    {
+        "dutch": "vroeg zich af",
+        "english": "wondered",
+        "vietnamese": "đã tự hỏi",
+        "dutchsentence": "Hij vroeg zich af waarom niemand op tijd was.",
+        "englishtranslate": "He wondered why no one was on time."
+    },
+    {
+        "dutch": "zich afgevraagd",
+        "english": "has wondered",
+        "vietnamese": "đã tự hỏi",
+        "dutchsentence": "Zij heeft zich afgevraagd of ze de juiste beslissing nam.",
+        "englishtranslate": "She has wondered if she made the right decision."
+    },
+    {
+        "dutch": "bevallen",
+        "english": "to give birth",
+        "vietnamese": "sinh con",
+        "dutchsentence": "Zij gaat in de lente bevallen van een tweeling.",
+        "englishtranslate": "She is going to give birth to twins in the spring."
+    },
+    {
+        "dutch": "beviel",
+        "english": "gave birth",
+        "vietnamese": "đã sinh con",
+        "dutchsentence": "De koe beviel van een gezond kalf.",
+        "englishtranslate": "The cow gave birth to a healthy calf."
+    },
+    {
+        "dutch": "zich bevallen",
+        "english": "to please oneself",
+        "vietnamese": "tự làm hài lòng",
+        "dutchsentence": "Die stad bevalt me enorm, ik voel me er thuis.",
+        "englishtranslate": "I really like (please myself in) that city, I feel at home there."
+    },
+    {
+        "dutch": "op zoek zijn",
+        "english": "to be looking for",
+        "vietnamese": "đang tìm kiếm",
+        "dutchsentence": "Ben je nog steeds op zoek naar een nieuwe baan?",
+        "englishtranslate": "Are you still looking for a new job?"
+    }
+]

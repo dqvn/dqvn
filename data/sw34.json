@@ -1,22 +1,142 @@
 [
-    {"dutch": "het voetbal", "english": "the football", "vietnamese": "bóng đá"},
-    {"dutch": "het wielrennen", "english": "the cycling", "vietnamese": "đua xe đạp"},
-    {"dutch": "de lijn (-en)", "english": "the line (lines)", "vietnamese": "đường kẻ (những đường kẻ)"},
-    {"dutch": "de ruimte (-s)", "english": "the space (spaces)", "vietnamese": "không gian (những không gian)"},
-    {"dutch": "de aarde", "english": "the earth", "vietnamese": "trái đất"},
-    {"dutch": "het bed (-den)", "english": "the bed (beds)", "vietnamese": "giường (những giường)"},
-    {"dutch": "het doel (-en)", "english": "the goal (goals)", "vietnamese": "mục tiêu (những mục tiêu)"},
-    {"dutch": "het doelpunt (-en)", "english": "the goal (goals)", "vietnamese": "bàn thắng (những bàn thắng)"},
-    {"dutch": "vooruit", "english": "forward", "vietnamese": "phía trước"},
-    {"dutch": "achteruit", "english": "backward", "vietnamese": "phía sau"},
-    {"dutch": "vrij", "english": "free", "vietnamese": "tự do"},
-    {"dutch": "fantastisch", "english": "fantastic", "vietnamese": "tuyệt vời"},
-    {"dutch": "geweldig", "english": "great", "vietnamese": "tuyệt vời"},
-    {"dutch": "kwijt", "english": "lost", "vietnamese": "mất"},
-    {"dutch": "wakker", "english": "awake", "vietnamese": "tỉnh táo"},
-    {"dutch": "moe", "english": "tired", "vietnamese": "mệt mỏi"},
-    {"dutch": "beschermen (beschermd)", "english": "to protect (protected)", "vietnamese": "bảo vệ (đã bảo vệ)"},
-    {"dutch": "slapen (geslapen)", "english": "to sleep (slept)", "vietnamese": "ngủ (đã ngủ)"},
-    {"dutch": "scoren (gescoord)", "english": "to score (scored)", "vietnamese": "ghi bàn (đã ghi bàn)"},
-    {"dutch": "pakken (gepakt)", "english": "to grab (grabbed)", "vietnamese": "lấy (đã lấy)"}
-  ]
+    {
+        "dutch": "het voetbal",
+        "english": "the football",
+        "vietnamese": "bóng đá",
+        "dutchsentence": "Voetbal is de populairste sport ter wereld.",
+        "englishtranslate": "Football is the most popular sport in the world."
+    },
+    {
+        "dutch": "het wielrennen",
+        "english": "the cycling",
+        "vietnamese": "đua xe đạp",
+        "dutchsentence": "In de zomer kijken veel mensen naar het wielrennen.",
+        "englishtranslate": "In the summer, many people watch the cycling."
+    },
+    {
+        "dutch": "de lijn (-en)",
+        "english": "the line (lines)",
+        "vietnamese": "đường kẻ (những đường kẻ)",
+        "dutchsentence": "Blijf binnen de lijnen tijdens het spel.",
+        "englishtranslate": "Stay within the lines during the game."
+    },
+    {
+        "dutch": "de ruimte (-s)",
+        "english": "the space (spaces)",
+        "vietnamese": "không gian (những không gian)",
+        "dutchsentence": "Er is te weinig ruimte in deze kleine kamer.",
+        "englishtranslate": "There is too little space in this small room."
+    },
+    {
+        "dutch": "de aarde",
+        "english": "the earth",
+        "vietnamese": "trái đất",
+        "dutchsentence": "De aarde draait om de zon.",
+        "englishtranslate": "The earth revolves around the sun."
+    },
+    {
+        "dutch": "het bed (-den)",
+        "english": "the bed (beds)",
+        "vietnamese": "giường (những giường)",
+        "dutchsentence": "Ik ga vroeg naar bed, want ik ben moe.",
+        "englishtranslate": "I'm going to bed early because I'm tired."
+    },
+    {
+        "dutch": "het doel (-en)",
+        "english": "the goal (goals)",
+        "vietnamese": "mục tiêu (những mục tiêu)",
+        "dutchsentence": "Mijn doel is om volgend jaar Nederlands te spreken.",
+        "englishtranslate": "My goal is to speak Dutch next year."
+    },
+    {
+        "dutch": "het doelpunt (-en)",
+        "english": "the goal (goals)",
+        "vietnamese": "bàn thắng (những bàn thắng)",
+        "dutchsentence": "Hij scoorde een fantastisch doelpunt in de laatste minuut.",
+        "englishtranslate": "He scored a fantastic goal in the last minute."
+    },
+    {
+        "dutch": "vooruit",
+        "english": "forward",
+        "vietnamese": "phía trước",
+        "dutchsentence": "Kijk vooruit als je aan het rijden bent.",
+        "englishtranslate": "Look forward when you are driving."
+    },
+    {
+        "dutch": "achteruit",
+        "english": "backward",
+        "vietnamese": "phía sau",
+        "dutchsentence": "Rij alsjeblieft heel langzaam achteruit.",
+        "englishtranslate": "Please drive backward very slowly."
+    },
+    {
+        "dutch": "vrij",
+        "english": "free",
+        "vietnamese": "tự do",
+        "dutchsentence": "Morgen ben ik de hele dag vrij van werk.",
+        "englishtranslate": "Tomorrow I am free from work the whole day."
+    },
+    {
+        "dutch": "fantastisch",
+        "english": "fantastic",
+        "vietnamese": "tuyệt vời",
+        "dutchsentence": "Het concert was absoluut fantastisch!",
+        "englishtranslate": "The concert was absolutely fantastic!"
+    },
+    {
+        "dutch": "geweldig",
+        "english": "great",
+        "vietnamese": "tuyệt vời",
+        "dutchsentence": "Wat een geweldig idee heb je!",
+        "englishtranslate": "What a great idea you have!"
+    },
+    {
+        "dutch": "kwijt",
+        "english": "lost",
+        "vietnamese": "mất",
+        "dutchsentence": "Ik ben mijn portemonnee kwijt op de trein.",
+        "englishtranslate": "I have lost my wallet on the train."
+    },
+    {
+        "dutch": "wakker",
+        "english": "awake",
+        "vietnamese": "tỉnh táo",
+        "dutchsentence": "Ik was de hele nacht wakker door het lawaai.",
+        "englishtranslate": "I was awake the whole night because of the noise."
+    },
+    {
+        "dutch": "moe",
+        "english": "tired",
+        "vietnamese": "mệt mỏi",
+        "dutchsentence": "Na de lange wandeling was ik erg moe.",
+        "englishtranslate": "After the long walk, I was very tired."
+    },
+    {
+        "dutch": "beschermen (beschermd)",
+        "english": "to protect (protected)",
+        "vietnamese": "bảo vệ (đã bảo vệ)",
+        "dutchsentence": "De soldaten beschermen de stad tegen de vijand.",
+        "englishtranslate": "The soldiers protect the city against the enemy."
+    },
+    {
+        "dutch": "slapen (geslapen)",
+        "english": "to sleep (slept)",
+        "vietnamese": "ngủ (đã ngủ)",
+        "dutchsentence": "De baby slaapt al drie uur lang.",
+        "englishtranslate": "The baby has been sleeping for three hours already."
+    },
+    {
+        "dutch": "scoren (gescoord)",
+        "english": "to score (scored)",
+        "vietnamese": "ghi bàn (đã ghi bàn)",
+        "dutchsentence": "Wie gaat er nu scoren? ",
+        "englishtranslate": "Who is going to score now?"
+    },
+    {
+        "dutch": "pakken (gepakt)",
+        "english": "to grab (grabbed)",
+        "vietnamese": "lấy (đã lấy)",
+        "dutchsentence": "Ik moet mijn sleutels en jas pakken voordat ik vertrek.",
+        "englishtranslate": "I need to grab my keys and coat before I leave."
+    }
+]

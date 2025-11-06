@@ -1,11 +1,67 @@
 [
-    {"dutch": "de presentatie", "english": "the presentation", "vietnamese": "bài thuyết trình"},
-    {"dutch": "de tekst", "english": "the text", "vietnamese": "văn bản"},
-    {"dutch": "mee", "english": "with", "vietnamese": "cùng"},
-    {"dutch": "stil", "english": "quiet", "vietnamese": "yên tĩnh"},
-    {"dutch": "luidop", "english": "loudly", "vietnamese": "to tiếng"},
-    {"dutch": "maken", "english": "make", "vietnamese": "làm"},
-    {"dutch": "invullen", "english": "fill in", "vietnamese": "điền vào"},
-    {"dutch": "vragen stellen", "english": "ask questions", "vietnamese": "đặt câu hỏi"},
-    {"dutch": "rijden", "english": "drive", "vietnamese": "lái"}
+  {
+    "dutch": "presentatie, de",
+    "english": "the presentation",
+    "vietnamese": "bài thuyết trình",
+    "dutchsentence": "De studenten maken een presentatie over Nederland.",
+    "englishtranslate": "The students are making a presentation about the Netherlands."
+  },
+  {
+    "dutch": "tekst, de",
+    "english": "the text",
+    "vietnamese": "văn bản",
+    "dutchsentence": "Lees de tekst luidop.",
+    "englishtranslate": "Read the text out loud."
+  },
+  {
+    "dutch": "mee",
+    "english": "with / along",
+    "vietnamese": "cùng",
+    "dutchsentence": "Ga je mee naar het concert?",
+    "englishtranslate": "Are you coming along to the concert?",
+    "notes": "Often used in combination with motion verbs (gaan, komen, nemen)."
+  },
+  {
+    "dutch": "stil",
+    "english": "quiet / silent / still",
+    "vietnamese": "yên tĩnh",
+    "dutchsentence": "Het is stil in de klas.",
+    "englishtranslate": "It is quiet in the classroom."
+  },
+  {
+    "dutch": "luidop",
+    "english": "loudly / out loud",
+    "vietnamese": "to tiếng",
+    "dutchsentence": "Lees de zinnen luidop voor.",
+    "englishtranslate": "Read the sentences out loud.",
+    "notes": "Often used with reading/speaking."
+  },
+  {
+    "dutch": "maken",
+    "english": "to make / to do",
+    "vietnamese": "làm",
+    "dutchsentence": "Wij maken altijd ons huiswerk.",
+    "englishtranslate": "We always do our homework."
+  },
+  {
+    "dutch": "invullen",
+    "english": "to fill in",
+    "vietnamese": "điền vào",
+    "dutchsentence": "Kan je de blanco ruimtes invullen?",
+    "englishtranslate": "Can you fill in the blank spaces?"
+  },
+  {
+    "dutch": "vragen stellen",
+    "english": "to ask questions",
+    "vietnamese": "đặt câu hỏi",
+    "dutchsentence": "Als je iets niet begrijpt, moet je vragen stellen.",
+    "englishtranslate": "If you don't understand something, you must ask questions."
+  },
+  {
+    "dutch": "rijden",
+    "english": "to drive",
+    "vietnamese": "lái",
+    "dutchsentence": "Hij rijdt graag met de auto op de snelweg.",
+    "englishtranslate": "He likes to drive with the car on the highway."
+  }
 ]

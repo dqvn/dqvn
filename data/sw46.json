@@ -1,12 +1,72 @@
 [
-    {"dutch": "het contact (-en)", "english": "the contact (contacts)", "vietnamese": "liên lạc (những liên lạc)"},
-    {"dutch": "het feest (-en)", "english": "the party (parties)", "vietnamese": "bữa tiệc (những bữa tiệc)"},
-    {"dutch": "de dienst (-en)", "english": "the service (services)", "vietnamese": "dịch vụ (những dịch vụ)"},
-    {"dutch": "de hond (-en)", "english": "the dog (dogs)", "vietnamese": "chó (những con chó)"},
-    {"dutch": "eerlijk", "english": "honest", "vietnamese": "thật thà"},
-    {"dutch": "zodra", "english": "as soon as", "vietnamese": "ngay khi"},
-    {"dutch": "steeds", "english": "always", "vietnamese": "luôn luôn"},
-    {"dutch": "allemaal", "english": "all", "vietnamese": "tất cả"},
-    {"dutch": "menen (meende, gemeend)", "english": "to mean", "vietnamese": "có ý"},
-    {"dutch": "klinken (klonk, geklonken)", "english": "to sound", "vietnamese": "nghe"}
-  ]
+    {
+        "dutch": "het contact (-en)",
+        "english": "the contact (contacts)",
+        "vietnamese": "liên lạc (những liên lạc)",
+        "dutchsentence": "Houd je contact met je oude vrienden?",
+        "englishtranslate": "Do you maintain contact with your old friends?"
+    },
+    {
+        "dutch": "het feest (-en)",
+        "english": "the party (parties)",
+        "vietnamese": "bữa tiệc (những bữa tiệc)",
+        "dutchsentence": "Het was een geweldig feest met veel muziek.",
+        "englishtranslate": "It was a great party with lots of music."
+    },
+    {
+        "dutch": "de dienst (-en)",
+        "english": "the service (services)",
+        "vietnamese": "dịch vụ (những dịch vụ)",
+        "dutchsentence": "De klantenservice van dit bedrijf is uitstekend.",
+        "englishtranslate": "The customer service of this company is excellent."
+    },
+    {
+        "dutch": "de hond (-en)",
+        "english": "the dog (dogs)",
+        "vietnamese": "chó (những con chó)",
+        "dutchsentence": "Onze hond is erg speels en vriendelijk.",
+        "englishtranslate": "Our dog is very playful and friendly."
+    },
+    {
+        "dutch": "eerlijk",
+        "english": "honest",
+        "vietnamese": "thật thà",
+        "dutchsentence": "Je moet altijd eerlijk zijn over wat er is gebeurd.",
+        "englishtranslate": "You must always be honest about what happened."
+    },
+    {
+        "dutch": "zodra",
+        "english": "as soon as",
+        "vietnamese": "ngay khi",
+        "dutchsentence": "Ik bel je zodra ik thuis ben.",
+        "englishtranslate": "I will call you as soon as I am home."
+    },
+    {
+        "dutch": "steeds",
+        "english": "always",
+        "vietnamese": "luôn luôn",
+        "dutchsentence": "Zij komt steeds te laat voor de afspraken.",
+        "englishtranslate": "She is always late for appointments (often in a critical sense)."
+    },
+    {
+        "dutch": "allemaal",
+        "english": "all",
+        "vietnamese": "tất cả",
+        "dutchsentence": "Ze waren allemaal uitgenodigd voor de bruiloft.",
+        "englishtranslate": "They were all invited to the wedding."
+    },
+    {
+        "dutch": "menen (meende, gemeend)",
+        "english": "to mean",
+        "vietnamese": "có ý",
+        "dutchsentence": "Meen je dat of maak je een grap?",
+        "englishtranslate": "Do you mean that, or are you joking?"
+    },
+    {
+        "dutch": "klinken (klonk, geklonken)",
+        "english": "to sound",
+        "vietnamese": "nghe",
+        "dutchsentence": "Dat klinkt als een uitstekend plan!",
+        "englishtranslate": "That sounds like an excellent plan!"
+    }
+]

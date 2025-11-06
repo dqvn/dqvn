@@ -1,16 +1,100 @@
 [
-    {"dutch": "de universiteit", "english": "the university", "vietnamese": "trường đại học"},
-    {"dutch": "het begin", "english": "the beginning", "vietnamese": "sự bắt đầu"},
-    {"dutch": "het huiswerk", "english": "the homework", "vietnamese": "bài tập về nhà"},
-    {"dutch": "het einde", "english": "the end", "vietnamese": "kết thúc"},
-    {"dutch": "de toets", "english": "the test", "vietnamese": "bài kiểm tra"},
-    {"dutch": "de test", "english": "the test", "vietnamese": "bài kiểm tra"},
-    {"dutch": "het examen", "english": "the exam", "vietnamese": "kỳ thi"},
-    {"dutch": "de quiz", "english": "the quiz", "vietnamese": "bài kiểm tra ngắn"},
-    {"dutch": "de vraag", "english": "the question", "vietnamese": "câu hỏi"},
-    {"dutch": "het antwoord", "english": "the answer", "vietnamese": "câu trả lời"},
-    {"dutch": "belangrijk", "english": "important", "vietnamese": "quan trọng"},
-    {"dutch": "juist", "english": "correct", "vietnamese": "đúng"},
-    {"dutch": "fout", "english": "wrong", "vietnamese": "sai"},
-    {"dutch": "normaal", "english": "normal", "vietnamese": "bình thường"}
+  {
+    "dutch": "universiteit, de",
+    "english": "the university",
+    "vietnamese": "trường đại học",
+    "dutchsentence": "Ik ga studeren aan de universiteit volgend jaar.",
+    "englishtranslate": "I am going to study at the university next year."
+  },
+  {
+    "dutch": "begin, het",
+    "english": "the beginning",
+    "vietnamese": "sự bắt đầu",
+    "dutchsentence": "In het begin was de grammatica moeilijk.",
+    "englishtranslate": "In the beginning the grammar was difficult."
+  },
+  {
+    "dutch": "huiswerk, het",
+    "english": "the homework",
+    "vietnamese": "bài tập về nhà",
+    "dutchsentence": "De leerkracht geeft ons veel huiswerk.",
+    "englishtranslate": "The teacher gives us a lot of homework."
+  },
+  {
+    "dutch": "einde, het",
+    "english": "the end",
+    "vietnamese": "kết thúc",
+    "dutchsentence": "Het einde van de les is om vier uur.",
+    "englishtranslate": "The end of the lesson is at four o'clock."
+  },
+  {
+    "dutch": "toets, de",
+    "english": "the test / the quiz (shorter)",
+    "vietnamese": "bài kiểm tra",
+    "dutchsentence": "We hebben een korte toets over de woorden.",
+    "englishtranslate": "We have a short test about the words."
+  },
+  {
+    "dutch": "test, de",
+    "english": "the test",
+    "vietnamese": "bài kiểm tra",
+    "dutchsentence": "De test was gemakkelijk.",
+    "englishtranslate": "The test was easy."
+  },
+  {
+    "dutch": "examen, het",
+    "english": "the exam (longer/formal)",
+    "vietnamese": "kỳ thi",
+    "dutchsentence": "Na het examen gaan we op vakantie.",
+    "englishtranslate": "After the exam we go on holiday."
+  },
+  {
+    "dutch": "quiz, de",
+    "english": "the quiz",
+    "vietnamese": "bài kiểm tra ngắn",
+    "dutchsentence": "De quiz bestaat uit tien vragen.",
+    "englishtranslate": "The quiz consists of ten questions."
+  },
+  {
+    "dutch": "vraag, de",
+    "english": "the question",
+    "vietnamese": "câu hỏi",
+    "dutchsentence": "Ik heb een belangrijke vraag voor jou.",
+    "englishtranslate": "I have an important question for you."
+  },
+  {
+    "dutch": "antwoord, het",
+    "english": "the answer",
+    "vietnamese": "câu trả lời",
+    "dutchsentence": "Wat is het juiste antwoord op de vraag?",
+    "englishtranslate": "What is the correct answer to the question?"
+  },
+  {
+    "dutch": "belangrijk",
+    "english": "important",
+    "vietnamese": "quan trọng",
+    "dutchsentence": "Het is belangrijk om Nederlands te oefenen.",
+    "englishtranslate": "It is important to practice Dutch."
+  },
+  {
+    "dutch": "juist",
+    "english": "correct / right",
+    "vietnamese": "đúng",
+    "dutchsentence": "Dit antwoord is juist.",
+    "englishtranslate": "This answer is correct."
+  },
+  {
+    "dutch": "fout",
+    "english": "wrong / incorrect",
+    "vietnamese": "sai",
+    "dutchsentence": "Dat is een fout antwoord.",
+    "englishtranslate": "That is an incorrect answer."
+  },
+  {
+    "dutch": "normaal",
+    "english": "normal",
+    "vietnamese": "bình thường",
+    "dutchsentence": "Het is normaal dat het moeilijk is in het begin.",
+    "englishtranslate": "It is normal that it is difficult in the beginning."
+  }
 ]

@@ -1,12 +1,72 @@
 [
-    {"dutch":"de gemeente (-s)","english":"the municipality","vietnamese":"đô thị (một ngôi làng)"},
-    {"dutch":"het gemeentehuis","english":"the town hall","vietnamese":"tòa thị chính"},
-    {"dutch":"de administratie (-s)","english":"the administration","vietnamese":"quản lý (các quản lý)"},
-    {"dutch":"de directeur (-s)","english":"the director","vietnamese":"giám đốc (các giám đốc)"},
-    {"dutch":"de liter (-s)","english":"the liter (liters)","vietnamese":"lít (các lít)"},
-    {"dutch":"het papierwerk","english":"the paperwork","vietnamese":"giấy tờ"},
-    {"dutch":"begrijpelijk","english":"understandable","vietnamese":"có thể hiểu được"},
-    {"dutch":"opstaan","english":"to get up","vietnamese":"dậy"},
-    {"dutch":"stond op","english":"got up","vietnamese":"đã dậy"},
-    {"dutch":"opgestaan (met zijn)","english":"gotten up (with his)","vietnamese":"đã thức dậy (với anh ấy)"}
-  ]
+    {
+        "dutch": "de gemeente (-s)",
+        "english": "the municipality",
+        "vietnamese": "đô thị (một ngôi làng)",
+        "dutchsentence": "Onze gemeente werkt hard aan nieuwe fietspaden.",
+        "englishtranslate": "Our municipality is working hard on new bike paths."
+    },
+    {
+        "dutch": "het gemeentehuis",
+        "english": "the town hall",
+        "vietnamese": "tòa thị chính",
+        "dutchsentence": "Je kunt je nieuwe paspoort ophalen bij het gemeentehuis.",
+        "englishtranslate": "You can pick up your new passport at the town hall."
+    },
+    {
+        "dutch": "de administratie (-s)",
+        "english": "the administration",
+        "vietnamese": "quản lý (các quản lý)",
+        "dutchsentence": "De administratie van het bedrijf is erg efficiënt.",
+        "englishtranslate": "The administration of the company is very efficient."
+    },
+    {
+        "dutch": "de directeur (-s)",
+        "english": "the director",
+        "vietnamese": "giám đốc (các giám đốc)",
+        "dutchsentence": "De directeur heeft vandaag een belangrijke vergadering.",
+        "englishtranslate": "The director has an important meeting today."
+    },
+    {
+        "dutch": "de liter (-s)",
+        "english": "the liter (liters)",
+        "vietnamese": "lít (các lít)",
+        "dutchsentence": "Ik heb twee liter melk nodig voor dit recept.",
+        "englishtranslate": "I need two liters of milk for this recipe."
+    },
+    {
+        "dutch": "het papierwerk",
+        "english": "the paperwork",
+        "vietnamese": "giấy tờ",
+        "dutchsentence": "Er is veel papierwerk te doen voor de belastingaangifte.",
+        "englishtranslate": "There is a lot of paperwork to do for the tax declaration."
+    },
+    {
+        "dutch": "begrijpelijk",
+        "english": "understandable",
+        "vietnamese": "có thể hiểu được",
+        "dutchsentence": "Het is begrijpelijk dat je boos bent over de situatie.",
+        "englishtranslate": "It is understandable that you are angry about the situation."
+    },
+    {
+        "dutch": "opstaan",
+        "english": "to get up",
+        "vietnamese": "dậy",
+        "dutchsentence": "Ik moet morgen vroeg opstaan voor mijn werk.",
+        "englishtranslate": "I have to get up early tomorrow for my work."
+    },
+    {
+        "dutch": "stond op",
+        "english": "got up",
+        "vietnamese": "đã dậy",
+        "dutchsentence": "Gisteren stond ik pas om negen uur op.",
+        "englishtranslate": "Yesterday I only got up at nine o'clock."
+    },
+    {
+        "dutch": "opgestaan (met zijn)",
+        "english": "gotten up (with his)",
+        "vietnamese": "đã thức dậy (với anh ấy)",
+        "dutchsentence": "Ben je al opgestaan?",
+        "englishtranslate": "Have you gotten up already?"
+    }
+]

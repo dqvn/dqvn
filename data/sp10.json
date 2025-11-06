@@ -1,24 +1,156 @@
 [
-    {"dutch": "het bericht", "english": "the message", "vietnamese": "tin nhắn"},
-    {"dutch": "de sms", "english": "the SMS", "vietnamese": "tin nhắn"},
-    {"dutch": "de link", "english": "the link", "vietnamese": "liên kết"},
-    {"dutch": "de website", "english": "the website", "vietnamese": "trang web"},
-    {"dutch": "het artikel", "english": "the article", "vietnamese": "bài báo"},
-    {"dutch": "de foto", "english": "the photo", "vietnamese": "ảnh"},
-    {"dutch": "de keer", "english": "the time", "vietnamese": "lần"},
-    {"dutch": "groot", "english": "big", "vietnamese": "lớn"},
-    {"dutch": "klein", "english": "small", "vietnamese": "nhỏ"},
-    {"dutch": "moeilijk", "english": "difficult", "vietnamese": "khó"},
-    {"dutch": "gemakkelijk", "english": "easy", "vietnamese": "dễ"},
-    {"dutch": "mooi", "english": "beautiful", "vietnamese": "đẹp"},
-    {"dutch": "lelijk", "english": "ugly", "vietnamese": "xấu"},
-    {"dutch": "altijd", "english": "always", "vietnamese": "luôn luôn"},
-    {"dutch": "meestal", "english": "usually", "vietnamese": "thường xuyên"},
-    {"dutch": "soms", "english": "sometimes", "vietnamese": "thỉnh thoảng"},
-    {"dutch": "zelden", "english": "rarely", "vietnamese": "hiếm khi"},
-    {"dutch": "nooit", "english": "never", "vietnamese": "không bao giờ"},
-    {"dutch": "elkaar", "english": "each other", "vietnamese": "nhau"},
-    {"dutch": "natuurlijk", "english": "of course", "vietnamese": "tất nhiên"},
-    {"dutch": "eten", "english": "eat", "vietnamese": "ăn"},
-    {"dutch": "chatten", "english": "chat", "vietnamese": "trò chuyện"}
+  {
+    "dutch": "bericht, het",
+    "english": "the message",
+    "vietnamese": "tin nhắn",
+    "dutchsentence": "Ik heb een bericht op mijn smartphone gekregen.",
+    "englishtranslate": "I received a message on my smartphone."
+  },
+  {
+    "dutch": "sms, de",
+    "english": "the SMS / the text message",
+    "vietnamese": "tin nhắn",
+    "dutchsentence": "Wil je mij een sms sturen?",
+    "englishtranslate": "Would you like to send me an SMS/text message?"
+  },
+  {
+    "dutch": "link, de",
+    "english": "the link",
+    "vietnamese": "liên kết",
+    "dutchsentence": "Klik op de link om het artikel te lezen.",
+    "englishtranslate": "Click on the link to read the article."
+  },
+  {
+    "dutch": "website, de",
+    "english": "the website",
+    "vietnamese": "trang web",
+    "dutchsentence": "Wat is de website van het bedrijf?",
+    "englishtranslate": "What is the website of the company?"
+  },
+  {
+    "dutch": "artikel, het",
+    "english": "the article",
+    "vietnamese": "bài báo",
+    "dutchsentence": "Dit artikel is moeilijk te begrijpen.",
+    "englishtranslate": "This article is difficult to understand."
+  },
+  {
+    "dutch": "foto, de",
+    "english": "the photo",
+    "vietnamese": "ảnh",
+    "dutchsentence": "Deze foto is heel mooi.",
+    "englishtranslate": "This photo is very beautiful."
+  },
+  {
+    "dutch": "keer, de",
+    "english": "the time (occurrence)",
+    "vietnamese": "lần",
+    "dutchsentence": "Dit is de eerste keer dat ik hier ben.",
+    "englishtranslate": "This is the first time I am here."
+  },
+  {
+    "dutch": "groot",
+    "english": "big / large",
+    "vietnamese": "lớn",
+    "dutchsentence": "Mijn huis is groot, maar de tuin is klein.",
+    "englishtranslate": "My house is big, but the garden is small."
+  },
+  {
+    "dutch": "klein",
+    "english": "small / little",
+    "vietnamese": "nhỏ",
+    "dutchsentence": "Ik heb een kleine computer op mijn bureau.",
+    "englishtranslate": "I have a small computer on my desk/office."
+  },
+  {
+    "dutch": "moeilijk",
+    "english": "difficult / hard",
+    "vietnamese": "khó",
+    "dutchsentence": "Die oefening is moeilijk, maar niet onmogelijk.",
+    "englishtranslate": "That exercise is difficult, but not impossible."
+  },
+  {
+    "dutch": "gemakkelijk",
+    "english": "easy",
+    "vietnamese": "dễ",
+    "dutchsentence": "Deze taal is gemakkelijk om te leren.",
+    "englishtranslate": "This language is easy to learn."
+  },
+  {
+    "dutch": "mooi",
+    "english": "beautiful / nice / pretty",
+    "vietnamese": "đẹp",
+    "dutchsentence": "Ze heeft een mooie rok.",
+    "englishtranslate": "She has a beautiful/nice skirt."
+  },
+  {
+    "dutch": "lelijk",
+    "english": "ugly",
+    "vietnamese": "xấu",
+    "dutchsentence": "Die oude kleren zijn lelijk.",
+    "englishtranslate": "Those old clothes are ugly."
+  },
+  {
+    "dutch": "altijd",
+    "english": "always",
+    "vietnamese": "luôn luôn",
+    "dutchsentence": "Hij is altijd thuis in de avond.",
+    "englishtranslate": "He is always at home in the evening."
+  },
+  {
+    "dutch": "meestal",
+    "english": "usually / mostly",
+    "vietnamese": "thường xuyên",
+    "dutchsentence": "Wij chatten meestal in de middag.",
+    "englishtranslate": "We usually chat in the afternoon."
+  },
+  {
+    "dutch": "soms",
+    "english": "sometimes",
+    "vietnamese": "thỉnh thoảng",
+    "dutchsentence": "Soms ga ik naar het café.",
+    "englishtranslate": "Sometimes I go to the café."
+  },
+  {
+    "dutch": "zelden",
+    "english": "rarely",
+    "vietnamese": "hiếm khi",
+    "dutchsentence": "Ik zie hem zelden.",
+    "englishtranslate": "I rarely see him."
+  },
+  {
+    "dutch": "nooit",
+    "english": "never",
+    "vietnamese": "không bao giờ",
+    "dutchsentence": "Ik eet nooit vlees.",
+    "englishtranslate": "I never eat meat."
+  },
+  {
+    "dutch": "elkaar",
+    "english": "each other / one another",
+    "vietnamese": "nhau",
+    "dutchsentence": "Wij zien elkaar volgende week.",
+    "englishtranslate": "We see each other next week."
+  },
+  {
+    "dutch": "natuurlijk",
+    "english": "of course / naturally",
+    "vietnamese": "tất nhiên",
+    "dutchsentence": "Natuurlijk wil ik dat doen!",
+    "englishtranslate": "Of course I want to do that!"
+  },
+  {
+    "dutch": "eten",
+    "english": "to eat",
+    "vietnamese": "ăn",
+    "dutchsentence": "Wat wil je eten vanavond?",
+    "englishtranslate": "What do you want to eat tonight?"
+  },
+  {
+    "dutch": "chatten",
+    "english": "to chat",
+    "vietnamese": "trò chuyện",
+    "dutchsentence": "Laten we chatten over de cursus.",
+    "englishtranslate": "Let's chat about the course."
+  }
 ]

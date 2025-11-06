@@ -1,7 +1,37 @@
 [
-    {"dutch":"de beurt (-en)","english":"the turn (turns)","vietnamese":"lượt (các lượt)"},
-    {"dutch":"de dorst","english":"the thirst","vietnamese":"cơn khát"},
-    {"dutch":"de rij (-en)","english":"the row (rows)","vietnamese":"hàng (các hàng)"},
-    {"dutch":"de file (-s)","english":"the traffic jam (traffic jams)","vietnamese":"kẹt xe (các kẹt xe)"},
-    {"dutch":"bijzonder","english":"special","vietnamese":"đặc biệt"}
-  ]
+    {
+        "dutch": "de beurt (-en)",
+        "english": "the turn (turns)",
+        "vietnamese": "lượt (các lượt)",
+        "dutchsentence": "Het is jouw beurt om de afwas te doen.",
+        "englishtranslate": "It is your turn to do the dishes."
+    },
+    {
+        "dutch": "de dorst",
+        "english": "the thirst",
+        "vietnamese": "cơn khát",
+        "dutchsentence": "Ik heb erge dorst na al dat sporten.",
+        "englishtranslate": "I have terrible thirst (I'm very thirsty) after all that exercise."
+    },
+    {
+        "dutch": "de rij (-en)",
+        "english": "the row (rows) / the queue",
+        "vietnamese": "hàng (các hàng)",
+        "dutchsentence": "Je moet in de rij staan om een kaartje te kopen.",
+        "englishtranslate": "You have to stand in the queue to buy a ticket."
+    },
+    {
+        "dutch": "de file (-s)",
+        "english": "the traffic jam (traffic jams)",
+        "vietnamese": "kẹt xe (các kẹt xe)",
+        "dutchsentence": "Er staat een lange file op de snelweg door een ongeluk.",
+        "englishtranslate": "There is a long traffic jam on the highway due to an accident."
+    },
+    {
+        "dutch": "bijzonder",
+        "english": "special / particular",
+        "vietnamese": "đặc biệt",
+        "dutchsentence": "Dit is een bijzonder moment voor ons allemaal.",
+        "englishtranslate": "This is a special moment for all of us."
+    }
+]

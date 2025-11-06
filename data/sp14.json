@@ -1,30 +1,200 @@
 [
-    {"dutch": "de prepositie", "english": "the preposition", "vietnamese": "giới từ"},
-    {"dutch": "het voorzetsel", "english": "the preposition", "vietnamese": "giới từ"},
-    {"dutch": "de tijd", "english": "the time", "vietnamese": "thời gian"},
-    {"dutch": "de plaats", "english": "the place", "vietnamese": "địa điểm"},
-    {"dutch": "de maand", "english": "the month", "vietnamese": "tháng"},
-    {"dutch": "het jaar", "english": "the year", "vietnamese": "năm"},
-    {"dutch": "het seizoen", "english": "the season", "vietnamese": "mùa"},
-    {"dutch": "de zomer", "english": "the summer", "vietnamese": "mùa hè"},
-    {"dutch": "de herfst", "english": "the autumn", "vietnamese": "mùa thu"},
-    {"dutch": "de winter", "english": "the winter", "vietnamese": "mùa đông"},
-    {"dutch": "de lente", "english": "the spring", "vietnamese": "mùa xuân"},
-    {"dutch": "januari", "english": "January", "vietnamese": "tháng Một / Tháng Giêng"},
-    {"dutch": "februari", "english": "February", "vietnamese": "tháng Hai"},
-    {"dutch": "maart", "english": "March", "vietnamese": "tháng Ba"},
-    {"dutch": "april", "english": "April", "vietnamese": "tháng Tư"},
-    {"dutch": "mei", "english": "May", "vietnamese": "tháng Năm"},
-    {"dutch": "juni", "english": "June", "vietnamese": "tháng Sáu"},
-    {"dutch": "juli", "english": "July", "vietnamese": "tháng Bảy"},
-    {"dutch": "augustus", "english": "August", "vietnamese": "tháng Tám"},
-    {"dutch": "september", "english": "September", "vietnamese": "tháng Chín"},
-    {"dutch": "oktober", "english": "October", "vietnamese": "tháng Mười"},
-    {"dutch": "november", "english": "November", "vietnamese": "tháng Mười Một"},
-    {"dutch": "december", "english": "December", "vietnamese": "tháng Mười Hai"},
-    {"dutch": "vanaf", "english": "from", "vietnamese": "từ"},
-    {"dutch": "tijdens", "english": "during", "vietnamese": "trong suốt"},
-    {"dutch": "na", "english": "after", "vietnamese": "sau"},
-    {"dutch": "binnen", "english": "within", "vietnamese": "trong vòng"},
-    {"dutch": "duizend", "english": "thousand", "vietnamese": "nghìn"}
-  ]
+  {
+    "dutch": "prepositie, de",
+    "english": "the preposition",
+    "vietnamese": "giới từ",
+    "dutchsentence": "De prepositie staat bijvoorbeeld voor een woord.",
+    "englishtranslate": "The preposition stands for example before a word."
+  },
+  {
+    "dutch": "voorzetsel, het",
+    "english": "the preposition",
+    "vietnamese": "giới từ",
+    "dutchsentence": "Het voorzetsel is een ander woord voor prepositie.",
+    "englishtranslate": "The preposition is an other/different word for preposition."
+  },
+  {
+    "dutch": "tijd, de",
+    "english": "the time",
+    "vietnamese": "thời gian",
+    "dutchsentence": "Ik heb weinig tijd.",
+    "englishtranslate": "I have little time."
+  },
+  {
+    "dutch": "plaats, de",
+    "english": "the place / the location",
+    "vietnamese": "địa điểm",
+    "dutchsentence": "Dit is een mooie plaats om te wonen.",
+    "englishtranslate": "This is a beautiful place to live."
+  },
+  {
+    "dutch": "maand, de",
+    "english": "the month",
+    "vietnamese": "tháng",
+    "dutchsentence": "De cursus begint in de volgende maand.",
+    "englishtranslate": "The course starts next month."
+  },
+  {
+    "dutch": "jaar, het",
+    "english": "the year",
+    "vietnamese": "năm",
+    "dutchsentence": "Volgend jaar gaan we naar Spanje.",
+    "englishtranslate": "Next year we will go to Spain."
+  },
+  {
+    "dutch": "seizoen, het",
+    "english": "the season",
+    "vietnamese": "mùa",
+    "dutchsentence": "Wat is jouw favoriete seizoen?",
+    "englishtranslate": "What is your favourite season?"
+  },
+  {
+    "dutch": "zomer, de",
+    "english": "the summer",
+    "vietnamese": "mùa hè",
+    "dutchsentence": "Het is warm in de zomer.",
+    "englishtranslate": "It is warm in the summer."
+  },
+  {
+    "dutch": "herfst, de",
+    "english": "the autumn / the fall",
+    "vietnamese": "mùa thu",
+    "dutchsentence": "Na de zomer komt de herfst.",
+    "englishtranslate": "After summer comes autumn."
+  },
+  {
+    "dutch": "winter, de",
+    "english": "the winter",
+    "vietnamese": "mùa đông",
+    "dutchsentence": "In de winter is het koud.",
+    "englishtranslate": "It is cold in the winter."
+  },
+  {
+    "dutch": "lente, de",
+    "english": "the spring",
+    "vietnamese": "mùa xuân",
+    "dutchsentence": "De lente is het eerste seizoen van het jaar.",
+    "englishtranslate": "The spring is the first season of the year."
+  },
+  {
+    "dutch": "januari",
+    "english": "January",
+    "vietnamese": "tháng Một / Tháng Giêng",
+    "dutchsentence": "Januari is een koude maand.",
+    "englishtranslate": "January is a cold month."
+  },
+  {
+    "dutch": "februari",
+    "english": "February",
+    "vietnamese": "tháng Hai",
+    "dutchsentence": "Februari is de tweede maand.",
+    "englishtranslate": "February is the second month."
+  },
+  {
+    "dutch": "maart",
+    "english": "March",
+    "vietnamese": "tháng Ba",
+    "dutchsentence": "De lente begint in maart.",
+    "englishtranslate": "Spring starts in March."
+  },
+  {
+    "dutch": "april",
+    "english": "April",
+    "vietnamese": "tháng Tư",
+    "dutchsentence": "Mijn verjaardag is in april.",
+    "englishtranslate": "My birthday is in April."
+  },
+  {
+    "dutch": "mei",
+    "english": "May",
+    "vietnamese": "tháng Năm",
+    "dutchsentence": "Mei is een mooie maand.",
+    "englishtranslate": "May is a beautiful month."
+  },
+  {
+    "dutch": "juni",
+    "english": "June",
+    "vietnamese": "tháng Sáu",
+    "dutchsentence": "De zomer begint in juni.",
+    "englishtranslate": "Summer starts in June."
+  },
+  {
+    "dutch": "juli",
+    "english": "July",
+    "vietnamese": "tháng Bảy",
+    "dutchsentence": "We gaan op vakantie in juli.",
+    "englishtranslate": "We go on holiday in July."
+  },
+  {
+    "dutch": "augustus",
+    "english": "August",
+    "vietnamese": "tháng Tám",
+    "dutchsentence": "Juli en augustus zijn de warmste maanden.",
+    "englishtranslate": "July and August are the warmest months."
+  },
+  {
+    "dutch": "september",
+    "english": "September",
+    "vietnamese": "tháng Chín",
+    "dutchsentence": "Het schooljaar begint in september.",
+    "englishtranslate": "The school year starts in September."
+  },
+  {
+    "dutch": "oktober",
+    "english": "October",
+    "vietnamese": "tháng Mười",
+    "dutchsentence": "Het is vaak regenachtig in oktober.",
+    "englishtranslate": "It is often rainy in October."
+  },
+  {
+    "dutch": "november",
+    "english": "November",
+    "vietnamese": "tháng Mười Một",
+    "dutchsentence": "November en december zijn donkere maanden.",
+    "englishtranslate": "November and December are dark months."
+  },
+  {
+    "dutch": "december",
+    "english": "December",
+    "vietnamese": "tháng Mười Hai",
+    "dutchsentence": "De winter begint in december.",
+    "englishtranslate": "The winter starts in December."
+  },
+  {
+    "dutch": "vanaf",
+    "english": "from / starting from",
+    "vietnamese": "từ",
+    "dutchsentence": "Vanaf morgen gaan we opnieuw oefenen.",
+    "englishtranslate": "From tomorrow we will start practicing again.",
+    "notes": "Used to denote a starting point in time/space."
+  },
+  {
+    "dutch": "tijdens",
+    "english": "during",
+    "vietnamese": "trong suốt",
+    "dutchsentence": "Tijdens de les mogen we niet praten.",
+    "englishtranslate": "During the lesson we are not allowed to talk."
+  },
+  {
+    "dutch": "na",
+    "english": "after",
+    "vietnamese": "sau",
+    "dutchsentence": "Na de pauze gaan we door.",
+    "englishtranslate": "After the break we continue.",
+    "notes": "The *naar* from 'naar de les' is different from the preposition *na*."
+  },
+  {
+    "dutch": "binnen",
+    "english": "within / inside",
+    "vietnamese": "trong vòng",
+    "dutchsentence": "Binnen een week zullen we afspreken.",
+    "englishtranslate": "Within a week we will arrange to meet."
+  },
+  {
+    "dutch": "duizend",
+    "english": "thousand",
+    "vietnamese": "nghìn",
+    "dutchsentence": "Het is meer dan duizend euro.",
+    "englishtranslate": "It is more than a thousand euros."
+  }
+]

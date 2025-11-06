@@ -1,13 +1,79 @@
 [
-    {"dutch": "de aflevering (-en)", "english": "the episode(s)", "vietnamese": "tập phim"},
-    {"dutch": "de serie (-s)", "english": "the series", "vietnamese": "loạt phim"},
-    {"dutch": "de informatie", "english": "the information", "vietnamese": "thông tin"},
-    {"dutch": "sommige", "english": "some", "vietnamese": "một số"},
-    {"dutch": "duidelijk", "english": "clear", "vietnamese": "rõ ràng"},
-    {"dutch": "klaar", "english": "ready", "vietnamese": "sẵn sàng"},
-    {"dutch": "af", "english": "finished", "vietnamese": "hoàn thành"},
-    {"dutch": "volgens", "english": "according to", "vietnamese": "theo"},
-    {"dutch": "stoppen", "english": "(to) stop", "vietnamese": "(để) dừng lại"},
-    {"dutch": "gooien", "english": "(to) throw", "vietnamese": "(để) ném"},
-    {"dutch": "proberen te", "english": "(to) try to", "vietnamese": "(để) cố gắng"}
+    {
+        "dutch": "de aflevering (-en)",
+        "english": "the episode(s)",
+        "vietnamese": "tập phim",
+        "dutchsentence": "De laatste aflevering van de serie was erg spannend.",
+        "englishtranslate": "The last episode of the series was very exciting."
+    },
+    {
+        "dutch": "de serie (-s)",
+        "english": "the series",
+        "vietnamese": "loạt phim",
+        "dutchsentence": "Ik ben momenteel een nieuwe serie aan het kijken.",
+        "englishtranslate": "I am currently watching a new series."
+    },
+    {
+        "dutch": "de informatie",
+        "english": "the information",
+        "vietnamese": "thông tin",
+        "dutchsentence": "De politie heeft meer informatie nodig over de verdachte.",
+        "englishtranslate": "The police need more information about the suspect."
+    },
+    {
+        "dutch": "sommige",
+        "english": "some",
+        "vietnamese": "một số",
+        "dutchsentence": "Sommige mensen begrijpen de regels niet.",
+        "englishtranslate": "Some people don't understand the rules."
+    },
+    {
+        "dutch": "duidelijk",
+        "english": "clear",
+        "vietnamese": "rõ ràng",
+        "dutchsentence": "Het antwoord is nu heel duidelijk.",
+        "englishtranslate": "The answer is very clear now."
+    },
+    {
+        "dutch": "klaar",
+        "english": "ready",
+        "vietnamese": "sẵn sàng",
+        "dutchsentence": "Zijn jullie klaar om te vertrekken?",
+        "englishtranslate": "Are you ready to leave?"
+    },
+    {
+        "dutch": "af",
+        "english": "finished",
+        "vietnamese": "hoàn thành",
+        "dutchsentence": "Mijn huiswerk is eindelijk af.",
+        "englishtranslate": "My homework is finally finished."
+    },
+    {
+        "dutch": "volgens",
+        "english": "according to",
+        "vietnamese": "theo",
+        "dutchsentence": "Volgens de weersvoorspelling gaat het morgen regenen.",
+        "englishtranslate": "According to the weather forecast, it will rain tomorrow."
+    },
+    {
+        "dutch": "stoppen",
+        "english": "(to) stop",
+        "vietnamese": "(để) dừng lại",
+        "dutchsentence": "Je moet stoppen met roken.",
+        "englishtranslate": "You must stop smoking."
+    },
+    {
+        "dutch": "gooien",
+        "english": "(to) throw",
+        "vietnamese": "(để) ném",
+        "dutchsentence": "Hij gaat de bal heel ver gooien.",
+        "englishtranslate": "He is going to throw the ball very far."
+    },
+    {
+        "dutch": "proberen te",
+        "english": "(to) try to",
+        "vietnamese": "(để) cố gắng",
+        "dutchsentence": "Ik ga proberen op tijd te komen.",
+        "englishtranslate": "I'm going to try to be on time."
+    }
 ]

@@ -1,18 +1,114 @@
 [
-    {"dutch":"de teleurstelling (-en)","english":"the disappointment (disappointments)","vietnamese":"sự thất vọng (các sự thất vọng)"},
-    {"dutch":"de druk","english":"the pressure","vietnamese":"áp lực"},
-    {"dutch":"de club (-s)","english":"the club (clubs)","vietnamese":"câu lạc bộ (các câu lạc bộ)"},
-    {"dutch":"de knop (-pen)","english":"the button (buttons)","vietnamese":"nút (các nút)"},
-    {"dutch":"de steun","english":"the support","vietnamese":"sự hỗ trợ"},
-    {"dutch":"de passief","english":"the passive","vietnamese":"thụ động"},
-    {"dutch":"positief","english":"positive","vietnamese":"tích cực"},
-    {"dutch":"negatief","english":"negative","vietnamese":"tiêu cực"},
-    {"dutch":"passief","english":"passive","vietnamese":"thụ động"},
-    {"dutch":"actief","english":"active","vietnamese":"chủ động"},
-    {"dutch":"steunen","english":"to support","vietnamese":"hỗ trợ"},
-    {"dutch":"steunde","english":"supported","vietnamese":"đã hỗ trợ"},
-    {"dutch":"gesteund","english":"has supported","vietnamese":"đã hỗ trợ"},
-    {"dutch":"drukken","english":"to press","vietnamese":"nhấn"},
-    {"dutch":"drukte","english":"pressed","vietnamese":"đã nhấn"},
-    {"dutch":"gedrukt","english":"has pressed","vietnamese":"đã nhấn"}
-  ]
+    {
+        "dutch": "de teleurstelling (-en)",
+        "english": "the disappointment (disappointments)",
+        "vietnamese": "sự thất vọng (các sự thất vọng)",
+        "dutchsentence": "De annulering van het concert was een grote teleurstelling.",
+        "englishtranslate": "The cancellation of the concert was a great disappointment."
+    },
+    {
+        "dutch": "de druk",
+        "english": "the pressure",
+        "vietnamese": "áp lực",
+        "dutchsentence": "Er staat veel druk op de leiding om snel een beslissing te nemen.",
+        "englishtranslate": "There is a lot of pressure on the management to make a decision quickly."
+    },
+    {
+        "dutch": "de club (-s)",
+        "english": "the club (clubs)",
+        "vietnamese": "câu lạc bộ (các câu lạc bộ)",
+        "dutchsentence": "Hij is lid van de lokale voetbalclub.",
+        "englishtranslate": "He is a member of the local football club."
+    },
+    {
+        "dutch": "de knop (-pen)",
+        "english": "the button (buttons) / the knob",
+        "vietnamese": "nút (các nút)",
+        "dutchsentence": "Druk op de rode knop om het apparaat uit te schakelen.",
+        "englishtranslate": "Press the red button to switch off the device."
+    },
+    {
+        "dutch": "de steun",
+        "english": "the support",
+        "vietnamese": "sự hỗ trợ",
+        "dutchsentence": "We hebben veel steun van de gemeenschap gekregen.",
+        "englishtranslate": "We have received a lot of support from the community."
+    },
+    {
+        "dutch": "de passief",
+        "english": "the passive (grammar term)",
+        "vietnamese": "thụ động",
+        "dutchsentence": "In de zin 'de bal wordt geschopt' staat het werkwoord in de passief.",
+        "englishtranslate": "In the sentence 'the ball is being kicked', the verb is in the passive."
+    },
+    {
+        "dutch": "positief",
+        "english": "positive",
+        "vietnamese": "tích cực",
+        "dutchsentence": "We moeten altijd een positieve houding aannemen.",
+        "englishtranslate": "We must always adopt a positive attitude."
+    },
+    {
+        "dutch": "negatief",
+        "english": "negative",
+        "vietnamese": "tiêu cực",
+        "dutchsentence": "Zijn negatieve commentaar hielp niemand.",
+        "englishtranslate": "His negative comment helped no one."
+    },
+    {
+        "dutch": "passief",
+        "english": "passive",
+        "vietnamese": "thụ động",
+        "dutchsentence": "Hij is erg passief en neemt zelden initiatief.",
+        "englishtranslate": "He is very passive and rarely takes initiative."
+    },
+    {
+        "dutch": "actief",
+        "english": "active",
+        "vietnamese": "chủ động",
+        "dutchsentence": "Je moet actief deelnemen aan de discussie.",
+        "englishtranslate": "You must participate actively in the discussion."
+    },
+    {
+        "dutch": "steunen (steunde, gesteund)",
+        "english": "to support",
+        "vietnamese": "hỗ trợ",
+        "dutchsentence": "De overheid wil kleine bedrijven steunen.",
+        "englishtranslate": "The government wants to support small businesses."
+    },
+    {
+        "dutch": "steunde",
+        "english": "supported",
+        "vietnamese": "đã hỗ trợ",
+        "dutchsentence": "Iedereen steunde het voorstel van de directeur.",
+        "englishtranslate": "Everyone supported the director's proposal."
+    },
+    {
+        "dutch": "gesteund",
+        "english": "has supported",
+        "vietnamese": "đã hỗ trợ",
+        "dutchsentence": "Het project is financieel gesteund door de bank.",
+        "englishtranslate": "The project has been financially supported by the bank."
+    },
+    {
+        "dutch": "drukken (drukte, gedrukt)",
+        "english": "to press / to print",
+        "vietnamese": "nhấn",
+        "dutchsentence": "Je moet harder op die knop drukken.",
+        "englishtranslate": "You need to press that button harder."
+    },
+    {
+        "dutch": "drukte",
+        "english": "pressed / printed (past tense)",
+        "vietnamese": "đã nhấn",
+        "dutchsentence": "Hij drukte op de deurbel en wachtte af.",
+        "englishtranslate": "He pressed the doorbell and waited."
+    },
+    {
+        "dutch": "gedrukt",
+        "english": "has pressed / has printed (past participle)",
+        "vietnamese": "đã nhấn",
+        "dutchsentence": "De boeken zijn al gedrukt en klaar voor verzending.",
+        "englishtranslate": "The books have already been printed and are ready for shipping."
+    }
+]

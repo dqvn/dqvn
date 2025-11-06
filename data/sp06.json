@@ -1,14 +1,87 @@
 [
-    {"dutch": "de app / de applicatie", "english": "the app / the application", "vietnamese": "ứng dụng"},
-    {"dutch": "de smartphone", "english": "the smartphone", "vietnamese": "điện thoại thông minh"},
-    {"dutch": "de pauze", "english": "the break", "vietnamese": "giờ nghỉ"},
-    {"dutch": "de lijst", "english": "the list", "vietnamese": "danh sách"},
-    {"dutch": "het moment / momentje", "english": "the moment", "vietnamese": "khoảnh khắc"},
-    {"dutch": "de e-mail", "english": "the email", "vietnamese": "thư điện tử"},
-    {"dutch": "zeker", "english": "sure", "vietnamese": "chắc chắn"},
-    {"dutch": "veel", "english": "a lot", "vietnamese": "nhiều"},
-    {"dutch": "weinig", "english": "few", "vietnamese": "ít"},
-    {"dutch": "sturen", "english": "send", "vietnamese": "gửi"},
-    {"dutch": "krijgen", "english": "receive", "vietnamese": "nhận"},
-    {"dutch": "waar kom je vandaan", "english": "where are you from", "vietnamese": "bạn đến từ đâu"}
+  {
+    "dutch": "app, de / applicatie, de",
+    "english": "the app / the application",
+    "vietnamese": "ứng dụng",
+    "dutchsentence": "Ik heb een nieuwe applicatie op mijn smartphone.",
+    "englishtranslate": "I have a new application on my smartphone."
+  },
+  {
+    "dutch": "smartphone, de",
+    "english": "the smartphone",
+    "vietnamese": "điện thoại thông minh",
+    "dutchsentence": "Ik gebruik mijn smartphone om e-mail te sturen.",
+    "englishtranslate": "I use my smartphone to send email."
+  },
+  {
+    "dutch": "pauze, de",
+    "english": "the break",
+    "vietnamese": "giờ nghỉ",
+    "dutchsentence": "In de pauze drinken we koffie.",
+    "englishtranslate": "In the break we drink coffee."
+  },
+  {
+    "dutch": "lijst, de",
+    "english": "the list",
+    "vietnamese": "danh sách",
+    "dutchsentence": "Dit is de laatste lijst met woorden.",
+    "englishtranslate": "This is the last list of words."
+  },
+  {
+    "dutch": "moment, het / momentje",
+    "english": "the moment / just a moment",
+    "vietnamese": "khoảnh khắc",
+    "dutchsentence": "Wacht even, momentje alstublieft.",
+    "englishtranslate": "Wait a minute, just a moment please."
+  },
+  {
+    "dutch": "e-mail, de",
+    "english": "the email",
+    "vietnamese": "thư điện tử",
+    "dutchsentence": "Heb je mijn e-mail gekregen?",
+    "englishtranslate": "Did you receive my email?"
+  },
+  {
+    "dutch": "zeker",
+    "english": "sure / certainly / certainly",
+    "vietnamese": "chắc chắn",
+    "dutchsentence": "Ik kom zeker naar de les.",
+    "englishtranslate": "I am sure to come to the lesson."
+  },
+  {
+    "dutch": "veel",
+    "english": "a lot / many / much",
+    "vietnamese": "nhiều",
+    "dutchsentence": "Ik heb veel nieuwe kleren.",
+    "englishtranslate": "I have a lot of new clothes."
+  },
+  {
+    "dutch": "weinig",
+    "english": "few / little",
+    "vietnamese": "ít",
+    "dutchsentence": "We hebben weinig tijd voor de oefening.",
+    "englishtranslate": "We have little time for the exercise."
+  },
+  {
+    "dutch": "sturen",
+    "english": "to send",
+    "vietnamese": "gửi",
+    "dutchsentence": "Wil je me de lijst sturen?",
+    "englishtranslate": "Would you like to send me the list?"
+  },
+  {
+    "dutch": "krijgen",
+    "english": "to receive / to get",
+    "vietnamese": "nhận",
+    "dutchsentence": "Wat krijg je voor je verjaardag?",
+    "englishtranslate": "What are you getting for your birthday?"
+  },
+  {
+    "dutch": "waar kom je vandaan",
+    "english": "where are you from",
+    "vietnamese": "bạn đến từ đâu",
+    "dutchsentence": "Waar kom je vandaan, als ik vragen mag?",
+    "englishtranslate": "Where are you from, if I may ask?",
+    "notes": "Used as an idiom/fixed expression."
+  }
 ]

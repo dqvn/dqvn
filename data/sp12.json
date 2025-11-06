@@ -1,17 +1,110 @@
 [
-    {"dutch": "kapot", "english": "broken", "vietnamese": "hỏng"},
-    {"dutch": "wel", "english": "well", "vietnamese": "tốt"},
-    {"dutch": "mijn", "english": "my", "vietnamese": "của tôi"},
-    {"dutch": "jouw", "english": "your (informal)", "vietnamese": "của bạn"},
-    {"dutch": "uw", "english": "your (formal)", "vietnamese": "của ngài"},
-    {"dutch": "zijn", "english": "his", "vietnamese": "của anh ấy"},
-    {"dutch": "haar", "english": "her", "vietnamese": "của cô ấy"},
-    {"dutch": "ons / onze", "english": "our", "vietnamese": "của chúng tôi"},
-    {"dutch": "jullie", "english": "your (plural)", "vietnamese": "của các bạn"},
-    {"dutch": "hun", "english": "their", "vietnamese": "của họ"},
-    {"dutch": "want", "english": "because", "vietnamese": "bởi vì"},
-    {"dutch": "te laat", "english": "too late", "vietnamese": "quá muộn"},
-    {"dutch": "zullen", "english": "will", "vietnamese": "sẽ"},
-    {"dutch": "wachten", "english": "wait", "vietnamese": "chờ đợi"},
-    {"dutch": "afspreken", "english": "arrange", "vietnamese": "hẹn gặp"}
+  {
+    "dutch": "kapot",
+    "english": "broken / broken down",
+    "vietnamese": "hỏng",
+    "dutchsentence": "Mijn smartphone is kapot.",
+    "englishtranslate": "My smartphone is broken."
+  },
+  {
+    "dutch": "wel",
+    "english": "well / indeed (adverb)",
+    "vietnamese": "tốt",
+    "dutchsentence": "Het gaat wel, bedankt.",
+    "englishtranslate": "It is going well, thanks.",
+    "notes": "Used here as an adverb meaning 'well'."
+  },
+  {
+    "dutch": "mijn",
+    "english": "my",
+    "vietnamese": "của tôi",
+    "dutchsentence": "Mijn vriendin heet Lisa.",
+    "englishtranslate": "My friend (female) is called Lisa."
+  },
+  {
+    "dutch": "jouw",
+    "english": "your (informal/singular)",
+    "vietnamese": "của bạn",
+    "dutchsentence": "Is dat jouw nieuwe jas?",
+    "englishtranslate": "Is that your new coat?"
+  },
+  {
+    "dutch": "uw",
+    "english": "your (formal/singular or plural)",
+    "vietnamese": "của ngài",
+    "dutchsentence": "Wat is uw beroep, meneer?",
+    "englishtranslate": "What is your profession, sir?"
+  },
+  {
+    "dutch": "zijn",
+    "english": "his",
+    "vietnamese": "của anh ấy",
+    "dutchsentence": "Zijn collega werkt in het bureau.",
+    "englishtranslate": "His colleague works in the office."
+  },
+  {
+    "dutch": "haar",
+    "english": "her",
+    "vietnamese": "của cô ấy",
+    "dutchsentence": "Haar familie woont in Groningen.",
+    "englishtranslate": "Her family lives in Groningen."
+  },
+  {
+    "dutch": "ons / onze",
+    "english": "our",
+    "vietnamese": "của chúng tôi",
+    "dutchsentence": "Ons huis is groot; onze tuin is klein.",
+    "englishtranslate": "Our house is big; our garden is small.",
+    "notes": "Ons for 'het' words, onze for 'de' words."
+  },
+  {
+    "dutch": "jullie",
+    "english": "your (informal/plural)",
+    "vietnamese": "của các bạn",
+    "dutchsentence": "Is dat jullie auto?",
+    "englishtranslate": "Is that your (plural) car?"
+  },
+  {
+    "dutch": "hun",
+    "english": "their",
+    "vietnamese": "của họ",
+    "dutchsentence": "Hun bedrijf doet transport.",
+    "englishtranslate": "Their company does transport."
+  },
+  {
+    "dutch": "want",
+    "english": "because (coordinating conjunction)",
+    "vietnamese": "bởi vì",
+    "dutchsentence": "Ik moet gaan, want het is al te laat.",
+    "englishtranslate": "I must go, because it is already too late."
+  },
+  {
+    "dutch": "te laat",
+    "english": "too late",
+    "vietnamese": "quá muộn",
+    "dutchsentence": "Het is te laat om nog te bellen.",
+    "englishtranslate": "It is too late to still call."
+  },
+  {
+    "dutch": "zullen",
+    "english": "will / shall (auxiliary verb)",
+    "vietnamese": "sẽ",
+    "dutchsentence": "Wij zullen morgen afspreken bij het café.",
+    "englishtranslate": "We will arrange to meet at the café tomorrow.",
+    "notes": "Often used to form the future tense."
+  },
+  {
+    "dutch": "wachten",
+    "english": "to wait",
+    "vietnamese": "chờ đợi",
+    "dutchsentence": "Kun je even op mij wachten?",
+    "englishtranslate": "Can you wait for me for a moment?"
+  },
+  {
+    "dutch": "afspreken",
+    "english": "to arrange / to arrange to meet",
+    "vietnamese": "hẹn gặp",
+    "dutchsentence": "Laat ons afspreken volgende week op dinsdag.",
+    "englishtranslate": "Let us arrange to meet next week on Tuesday."
+  }
 ]

@@ -1,15 +1,93 @@
 [
-    {"dutch": "de comparatief", "english": "the comparative", "vietnamese": "so sánh"},
-    {"dutch": "gratis", "english": "free", "vietnamese": "miễn phí"},
-    {"dutch": "kosteloos", "english": "costless", "vietnamese": "không tốn phí"},
-    {"dutch": "zo'n", "english": "such a", "vietnamese": "như vậy"},
-    {"dutch": "min of meer", "english": "more or less", "vietnamese": "hơn hoặc kém"},
-    {"dutch": "precies", "english": "exactly", "vietnamese": "chính xác"},
-    {"dutch": "exact", "english": "exact", "vietnamese": "chính xác"},
-    {"dutch": "laat, later", "english": "late, later", "vietnamese": "muộn, sau"},
-    {"dutch": "vroeg, vroeger", "english": "early, earlier", "vietnamese": "sớm, trước đây"},
-    {"dutch": "beter", "english": "better", "vietnamese": "tốt hơn"},
-    {"dutch": "liever", "english": "preferably", "vietnamese": "thích hơn"},
-    {"dutch": "worden", "english": "to become", "vietnamese": "trở thành"},
-    {"dutch": "blijven", "english": "to stay", "vietnamese": "ở lại"}
+    {
+        "dutch": "de comparatief",
+        "english": "the comparative",
+        "vietnamese": "so sánh",
+        "dutchsentence": "De comparatief wordt gebruikt om dingen te vergelijken.",
+        "englishtranslate": "The comparative is used to compare things."
+    },
+    {
+        "dutch": "gratis",
+        "english": "free",
+        "vietnamese": "miễn phí",
+        "dutchsentence": "Het is vandaag gratis parkeren.",
+        "englishtranslate": "Parking is free today."
+    },
+    {
+        "dutch": "kosteloos",
+        "english": "costless",
+        "vietnamese": "không tốn phí",
+        "dutchsentence": "U kunt de app kosteloos downloaden.",
+        "englishtranslate": "You can download the app costlessly (for free)."
+    },
+    {
+        "dutch": "zo'n",
+        "english": "such a",
+        "vietnamese": "như vậy",
+        "dutchsentence": "Ik heb nog nooit zo'n mooie film gezien.",
+        "englishtranslate": "I have never seen such a beautiful film."
+    },
+    {
+        "dutch": "min of meer",
+        "english": "more or less",
+        "vietnamese": "hơn hoặc kém",
+        "dutchsentence": "De prijs is min of meer hetzelfde als vorig jaar.",
+        "englishtranslate": "The price is more or less the same as last year."
+    },
+    {
+        "dutch": "precies",
+        "english": "exactly",
+        "vietnamese": "chính xác",
+        "dutchsentence": "Dit is precies wat ik nodig had.",
+        "englishtranslate": "This is exactly what I needed."
+    },
+    {
+        "dutch": "exact",
+        "english": "exact",
+        "vietnamese": "chính xác",
+        "dutchsentence": "We weten de exacte tijd van aankomst niet.",
+        "englishtranslate": "We do not know the exact time of arrival."
+    },
+    {
+        "dutch": "laat, later",
+        "english": "late, later",
+        "vietnamese": "muộn, sau",
+        "dutchsentence": "We waren te laat, maar we komen later terug.",
+        "englishtranslate": "We were too late, but we will come back later."
+    },
+    {
+        "dutch": "vroeg, vroeger",
+        "english": "early, earlier",
+        "vietnamese": "sớm, trước đây",
+        "dutchsentence": "Ik sta graag vroeg op; vroeger sliep ik langer.",
+        "englishtranslate": "I like getting up early; earlier I slept longer."
+    },
+    {
+        "dutch": "beter",
+        "english": "better",
+        "vietnamese": "tốt hơn",
+        "dutchsentence": "Je kunt het beter morgen proberen.",
+        "englishtranslate": "You'd better try it tomorrow."
+    },
+    {
+        "dutch": "liever",
+        "english": "preferably",
+        "vietnamese": "thích hơn",
+        "dutchsentence": "Ik drink liever thee dan koffie.",
+        "englishtranslate": "I'd prefer (rather drink) tea than coffee."
+    },
+    {
+        "dutch": "worden",
+        "english": "to become",
+        "vietnamese": "trở thành",
+        "dutchsentence": "Hij wil leraar worden.",
+        "englishtranslate": "He wants to become a teacher."
+    },
+    {
+        "dutch": "blijven",
+        "english": "to stay",
+        "vietnamese": "ở lại",
+        "dutchsentence": "Zullen we nog even blijven?",
+        "englishtranslate": "Shall we stay for a little while longer?"
+    }
 ]

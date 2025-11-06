@@ -1,22 +1,142 @@
 [
-    {"dutch": "het beroep", "english": "the profession", "vietnamese": "nghề nghiệp"},
-    {"dutch": "het werk", "english": "the work", "vietnamese": "công việc"},
-    {"dutch": "de job", "english": "the job", "vietnamese": "công việc"},
-    {"dutch": "de dokter", "english": "the doctor", "vietnamese": "bác sĩ"},
-    {"dutch": "de kok", "english": "the cook", "vietnamese": "đầu bếp"},
-    {"dutch": "de secretaris / secretaresse", "english": "the secretary", "vietnamese": "thư ký"},
-    {"dutch": "de receptionist / receptioniste", "english": "the receptionist", "vietnamese": "lễ tân"},
-    {"dutch": "de verkoper", "english": "the seller", "vietnamese": "người bán hàng"},
-    {"dutch": "de manager", "english": "the manager", "vietnamese": "quản lý"},
-    {"dutch": "de baas", "english": "the boss", "vietnamese": "ông chủ"},
-    {"dutch": "de ingenieur", "english": "the engineer", "vietnamese": "kỹ sư"},
-    {"dutch": "de chauffeur", "english": "the driver", "vietnamese": "tài xế"},
-    {"dutch": "de postbode", "english": "the postman", "vietnamese": "người đưa thư"},
-    {"dutch": "de bakker", "english": "the baker", "vietnamese": "thợ làm bánh"},
-    {"dutch": "de slager", "english": "the butcher", "vietnamese": "người bán thịt"},
-    {"dutch": "de tuinier", "english": "the gardener", "vietnamese": "người làm vườn"},
-    {"dutch": "werken (als)", "english": "work (as)", "vietnamese": "làm việc (như)"},
-    {"dutch": "doen", "english": "do", "vietnamese": "làm"},
-    {"dutch": "dezelfde / hetzelfde", "english": "the same", "vietnamese": "giống nhau"},
-    {"dutch": "ander", "english": "other", "vietnamese": "khác"}
+  {
+    "dutch": "beroep, het",
+    "english": "the profession / the occupation",
+    "vietnamese": "nghề nghiệp",
+    "dutchsentence": "Wat is jouw beroep?",
+    "englishtranslate": "What is your profession?"
+  },
+  {
+    "dutch": "werk, het",
+    "english": "the work",
+    "vietnamese": "công việc",
+    "dutchsentence": "Ik moet veel werk doen vandaag.",
+    "englishtranslate": "I have to do a lot of work today."
+  },
+  {
+    "dutch": "job, de",
+    "english": "the job",
+    "vietnamese": "công việc",
+    "dutchsentence": "Zij heeft een nieuwe job gevonden.",
+    "englishtranslate": "She has found a new job."
+  },
+  {
+    "dutch": "dokter, de",
+    "english": "the doctor",
+    "vietnamese": "bác sĩ",
+    "dutchsentence": "De dokter werkt in het ziekenhuis.",
+    "englishtranslate": "The doctor works in the hospital."
+  },
+  {
+    "dutch": "kok, de",
+    "english": "the cook / the chef",
+    "vietnamese": "đầu bếp",
+    "dutchsentence": "De kok maakt het heerlijke eten.",
+    "englishtranslate": "The cook makes the delicious food."
+  },
+  {
+    "dutch": "secretaris, de / secretaresse, de",
+    "english": "the secretary (male/female)",
+    "vietnamese": "thư ký",
+    "dutchsentence": "De secretaresse beantwoordt de telefoon.",
+    "englishtranslate": "The secretary (female) answers the phone."
+  },
+  {
+    "dutch": "receptionist, de / receptioniste, de",
+    "english": "the receptionist (male/female)",
+    "vietnamese": "lễ tân",
+    "dutchsentence": "De receptioniste is erg beleefd.",
+    "englishtranslate": "The receptionist (female) is very polite."
+  },
+  {
+    "dutch": "verkoper, de",
+    "english": "the seller / the salesman",
+    "vietnamese": "người bán hàng",
+    "dutchsentence": "De verkoper verkoopt kleren.",
+    "englishtranslate": "The seller/salesman sells clothes."
+  },
+  {
+    "dutch": "manager, de",
+    "english": "the manager",
+    "vietnamese": "quản lý",
+    "dutchsentence": "De manager is mijn baas.",
+    "englishtranslate": "The manager is my boss."
+  },
+  {
+    "dutch": "baas, de",
+    "english": "the boss",
+    "vietnamese": "ông chủ",
+    "dutchsentence": "Mijn baas is een aardige kerel.",
+    "englishtranslate": "My boss is a nice guy/lad."
+  },
+  {
+    "dutch": "ingenieur, de",
+    "english": "the engineer",
+    "vietnamese": "kỹ sư",
+    "dutchsentence": "De ingenieur werkt aan nieuwe modellen.",
+    "englishtranslate": "The engineer works on new models."
+  },
+  {
+    "dutch": "chauffeur, de",
+    "english": "the driver",
+    "vietnamese": "tài xế",
+    "dutchsentence": "De chauffeur rijdt de bus.",
+    "englishtranslate": "The driver drives the bus."
+  },
+  {
+    "dutch": "postbode, de",
+    "english": "the postman",
+    "vietnamese": "người đưa thư",
+    "dutchsentence": "De postbode komt elke dag bij ons.",
+    "englishtranslate": "The postman comes to us every day."
+  },
+  {
+    "dutch": "bakker, de",
+    "english": "the baker",
+    "vietnamese": "thợ làm bánh",
+    "dutchsentence": "De bakker verkoopt taart en brood.",
+    "englishtranslate": "The baker sells cake and bread."
+  },
+  {
+    "dutch": "slager, de",
+    "english": "the butcher",
+    "vietnamese": "người bán thịt",
+    "dutchsentence": "De slager verkoopt rundvlees.",
+    "englishtranslate": "The butcher sells beef."
+  },
+  {
+    "dutch": "tuinier, de",
+    "english": "the gardener",
+    "vietnamese": "người làm vườn",
+    "dutchsentence": "De tuinier werkt in de natuur.",
+    "englishtranslate": "The gardener works in nature."
+  },
+  {
+    "dutch": "werken (als)",
+    "english": "to work (as)",
+    "vietnamese": "làm việc (như)",
+    "dutchsentence": "Ik werk als ingenieur.",
+    "englishtranslate": "I work as an engineer."
+  },
+  {
+    "dutch": "doen",
+    "english": "to do",
+    "vietnamese": "làm",
+    "dutchsentence": "Wat doe je voor werk?",
+    "englishtranslate": "What do you do for work?"
+  },
+  {
+    "dutch": "dezelfde / hetzelfde",
+    "english": "the same",
+    "vietnamese": "giống nhau",
+    "dutchsentence": "Wij hebben hetzelfde beroep.",
+    "englishtranslate": "We have the same profession."
+  },
+  {
+    "dutch": "ander",
+    "english": "other / different",
+    "vietnamese": "khác",
+    "dutchsentence": "Wil je een ander kledingstuk passen?",
+    "englishtranslate": "Do you want to try on an other/different article of clothing?"
+  }
 ]
