@@ -1,5 +1,4 @@
-const TTSName = 'nl-NL-Wavenet-A'; 
-// 'Google Nederlands';
+const TTSName = 'Google Nederlands';
 const TTSLang = 'nl-NL';
 const TTSLangENG = 'en-US';
 const fileNames = ["thema01", "thema02", "thema03", "thema04", "thema05", "thema06", "thema07", "thema08"];
@@ -154,7 +153,7 @@ function speakText(text) {
 
     speech.lang = TTSLang;
     speech.volume = 1;
-    speech.rate = 0.7;
+    speech.rate = 0.8;
     speech.pitch = 1;
     speech.text = text;
     speech.volume = volumeControl.value / 100;
@@ -188,10 +187,7 @@ function speakEngText(text) {
 
 // read dutch words in json file
 function loadJsonData(filename, callback) {
-  
   localStorage.setItem('currentPage', filename);
-  console.log('Page changed to:', filename);
-
   var xhr = new XMLHttpRequest();
   var filePath = "data/" + filename + ".json";
   xhr.open('GET', filePath, true);
