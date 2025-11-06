@@ -1,98 +1,618 @@
 [
-    {"dutch": "aan de hand", "english": "the matter", "vietnamese": "vấn đề"},
-    {"dutch": "advies, het", "english": "advice, the", "vietnamese": "lời khuyên"},
-    {"dutch": "afwerken", "english": "to finish", "vietnamese": "kết thúc"},
-    {"dutch": "benieuwd", "english": "curious", "vietnamese": "tò mò"},
-    {"dutch": "binnenkort", "english": "soon", "vietnamese": "sớm"},
-    {"dutch": "bloes, de / blouse, de", "english": "blouse, the", "vietnamese": "áo blouse"},
-    {"dutch": "bretels, de", "english": "suspenders, the", "vietnamese": "dây đeo quần"},
-    {"dutch": "dansvloer, de", "english": "dance floor, the", "vietnamese": "sàn nhảy"},
-    {"dutch": "ding, het", "english": "thing, the / item, the", "vietnamese": "vật / mục"},
-    {"dutch": "dragen", "english": "to wear", "vietnamese": "mặc"},
-    {"dutch": "driedelig", "english": "three-piece", "vietnamese": "ba mảnh"},
-    {"dutch": "eerlijk", "english": "honest", "vietnamese": "trung thực"},
-    {"dutch": "even", "english": "momentarily", "vietnamese": "tạm thời"},
-    {"dutch": "familielid, het", "english": "family member, the", "vietnamese": "thành viên gia đình"},
-    {"dutch": "feestelijk", "english": "festive", "vietnamese": "lễ hội"},
-    {"dutch": "geel", "english": "yellow", "vietnamese": "vàng"},
-    {"dutch": "geur, de", "english": "smell, the", "vietnamese": "mùi"},
-    {"dutch": "grijs", "english": "grey", "vietnamese": "xám"},
-    {"dutch": "handschoen, de", "english": "glove, the", "vietnamese": "găng tay"},
-    {"dutch": "hoek, de", "english": "corner, the", "vietnamese": "góc"},
-    {"dutch": "hoofd, het", "english": "head, the", "vietnamese": "đầu"},
-    {"dutch": "hoog", "english": "high", "vietnamese": "cao"},
-    {"dutch": "hulp, de", "english": "help, the", "vietnamese": "giúp đỡ"},
-    {"dutch": "jammer genoeg", "english": "unfortunately", "vietnamese": "thật không may"},
-    {"dutch": "kennen", "english": "to know", "vietnamese": "biết"},
-    {"dutch": "kerel, de", "english": "lad, the", "vietnamese": "chàng trai"},
-    {"dutch": "keurig", "english": "trim and neat", "vietnamese": "gọn gàng"},
-    {"dutch": "kast, de", "english": "cupboard, the", "vietnamese": "tủ"},
-    {"dutch": "kledingstuk, het", "english": "article of clothing, the", "vietnamese": "quần áo"},
-    {"dutch": "kleren, de", "english": "clothes, the", "vietnamese": "quần áo"},
-    {"dutch": "laars, de", "english": "boot, the", "vietnamese": "ủng"},
-    {"dutch": "kwaliteit, de", "english": "quality, the", "vietnamese": "chất lượng"},
-    {"dutch": "lenen", "english": "to borrow", "vietnamese": "mượn"},
-    {"dutch": "losschieten", "english": "to get loose", "vietnamese": "lỏng ra"},
-    {"dutch": "maat, de", "english": "size, the", "vietnamese": "kích thước"},
-    {"dutch": "mager", "english": "thin", "vietnamese": "gầy"},
-    {"dutch": "maillot, de", "english": "tights, the", "vietnamese": "quần tất"},
-    {"dutch": "meid, de", "english": "girl, the", "vietnamese": "cô gái"},
-    {"dutch": "merk, het", "english": "brand, the", "vietnamese": "thương hiệu"},
-    {"dutch": "model, het", "english": "model, the", "vietnamese": "mô hình"},
-    {"dutch": "moeilijk", "english": "difficult", "vietnamese": "khó khăn"},
-    {"dutch": "mouw, de", "english": "sleeve, the", "vietnamese": "tay áo"},
-    {"dutch": "muts, de", "english": "cap, the", "vietnamese": "mũ"},
-    {"dutch": "nadenken", "english": "to think about it", "vietnamese": "suy nghĩ về nó"},
-    {"dutch": "onderbroek, de", "english": "underpants, the", "vietnamese": "quần lót"},
-    {"dutch": "ontwerper, de", "english": "designer, the", "vietnamese": "nhà thiết kế"},
-    {"dutch": "onwennig", "english": "uneasy", "vietnamese": "không thoải mái"},
-    {"dutch": "oranje", "english": "orange", "vietnamese": "màu cam"},
-    {"dutch": "overhemd, het", "english": "shirt, the", "vietnamese": "áo sơ mi"},
-    {"dutch": "paar, het", "english": "pair, the", "vietnamese": "đôi"},
-    {"dutch": "pak, het", "english": "suit, the", "vietnamese": "bộ đồ"},
-    {"dutch": "paskamer, de", "english": "fitting room, the", "vietnamese": "phòng thử đồ"},
-    {"dutch": "passen", "english": "to try, to fit", "vietnamese": "thử, vừa"},
-    {"dutch": "pet, de", "english": "cap, the", "vietnamese": "mũ lưỡi trai"},
-    {"dutch": "proberen", "english": "to try", "vietnamese": "thử"},
-    {"dutch": "rand, de", "english": "brim, the", "vietnamese": "vành"},
-    {"dutch": "riem, de", "english": "belt, the", "vietnamese": "dây nịt"},
-    {"dutch": "rok, de", "english": "skirt, the", "vietnamese": "váy"},
-    {"dutch": "rondkijken", "english": "to look around", "vietnamese": "nhìn xung quanh"},
-    {"dutch": "ruiken", "english": "to smell", "vietnamese": "ngửi"},
-    {"dutch": "roze", "english": "pink", "vietnamese": "hồng"},
-    {"dutch": "sjaal, de", "english": "scarf, the", "vietnamese": "khăn quàng cổ"},
-    {"dutch": "smoking, de", "english": "tuxedo, the", "vietnamese": "áo tuxedo"},
-    {"dutch": "sok, de", "english": "sock, the", "vietnamese": "tất"},
-    {"dutch": "spijkerbroek, de", "english": "jeans, the", "vietnamese": "quần jeans"},
-    {"dutch": "springen", "english": "to snap / to jump", "vietnamese": "bật / nhảy"},
-    {"dutch": "staan", "english": "to suit", "vietnamese": "phù hợp"},
-    {"dutch": "strak", "english": "tight", "vietnamese": "chặt"},
-    {"dutch": "teen, de", "english": "toe, the", "vietnamese": "ngón chân"},
-    {"dutch": "tenminste", "english": "at least", "vietnamese": "ít nhất"},
-    {"dutch": "tevoorschijn komen", "english": "to appear", "vietnamese": "xuất hiện"},
-    {"dutch": "uitleggen", "english": "to explain", "vietnamese": "giải thích"},
-    {"dutch": "uitzoeken", "english": "to choose, to select", "vietnamese": "để chọn, để chọn"},
-    {"dutch": "verkopen", "english": "to sell", "vietnamese": "để bán"},
-    {"dutch": "uitleggen", "english": "to explain", "vietnamese": "để giải thích"},
-    {"dutch": "tevoorschijn komen", "english": "to appear", "vietnamese": "xuất hiện"},
-    {"dutch": "tenminste", "english": "at least", "vietnamese": "ít nhất"},
-    {"dutch": "staan", "english": "to suit", "vietnamese": "phù hợp"},
-    {"dutch": "strak", "english": "tight", "vietnamese": "chặt chẽ"},
-    {"dutch": "teen, de", "english": "toe, the", "vietnamese": "ngón chân"},
-    {"dutch": "springen", "english": "to snap / to jump", "vietnamese": "bật / nhảy"},
-    {"dutch": "spijkerbroek, de", "english": "jeans, the", "vietnamese": "quần jeans"},
-    {"dutch": "verkoper, de", "english": "salesman, the", "vietnamese": "nhân viên bán hàng"},
-    {"dutch": "vest, het", "english": "cardigan, the", "vietnamese": "áo len đan"},
-    {"dutch": "veter, de", "english": "shoelace, the", "vietnamese": "dây giày"},
-    {"dutch": "V-hals, de", "english": "V-neck, the", "vietnamese": "cổ chữ V"},
-    {"dutch": "vloer, de", "english": "floor, the", "vietnamese": "sàn nhà"},
-    {"dutch": "vluchten", "english": "to flee", "vietnamese": "chạy trốn"},
-    {"dutch": "voelen (zich -)", "english": "to feel", "vietnamese": "cảm thấy"},
-    {"dutch": "waterdicht", "english": "waterproof", "vietnamese": "không thấm nước"},
-    {"dutch": "weg", "english": "away", "vietnamese": "xa"},
-    {"dutch": "zacht", "english": "soft", "vietnamese": "mềm"},
-    {"dutch": "zelf", "english": "yourself", "vietnamese": "bản thân"},
-    {"dutch": "zijde, de", "english": "silk, the", "vietnamese": "lụa"},
-    {"dutch": "zitten", "english": "to fit / to sit", "vietnamese": "vừa / ngồi"},
-    {"dutch": "zoiets", "english": "something like this", "vietnamese": "cái gì đó như thế này"}
+  {
+    "dutch": "aan de hand",
+    "english": "the matter / going on",
+    "vietnamese": "vấn đề",
+    "dutchsentence": "Wat is er aan de hand met die kerel?",
+    "englishtranslate": "What is the matter with that guy?"
+  },
+  {
+    "dutch": "advies, het",
+    "english": "advice, the",
+    "vietnamese": "lời khuyên",
+    "dutchsentence": "Ik heb advies nodig over deze kleren.",
+    "englishtranslate": "I need advice about these clothes."
+  },
+  {
+    "dutch": "afwerken",
+    "english": "to finish / to complete",
+    "vietnamese": "kết thúc",
+    "dutchsentence": "Hij moet zijn driedelig pak afwerken met bretels.",
+    "englishtranslate": "He has to finish his three-piece suit with suspenders."
+  },
+  {
+    "dutch": "benieuwd",
+    "english": "curious",
+    "vietnamese": "tò mò",
+    "dutchsentence": "Ik ben benieuwd hoe de jurk je staat.",
+    "englishtranslate": "I'm curious how the dress suits you."
+  },
+  {
+    "dutch": "binnenkort",
+    "english": "soon",
+    "vietnamese": "sớm",
+    "dutchsentence": "Binnenkort moeten we nieuwe laarzen kopen.",
+    "englishtranslate": "Soon we have to buy new boots."
+  },
+  {
+    "dutch": "bloes, de / blouse, de",
+    "english": "blouse, the",
+    "vietnamese": "áo blouse",
+    "dutchsentence": "Zij draagt een mooie roze blouse.",
+    "englishtranslate": "She is wearing a beautiful pink blouse."
+  },
+  {
+    "dutch": "bretels, de",
+    "english": "suspenders, the",
+    "vietnamese": "dây đeo quần",
+    "dutchsentence": "Bretels staan keurig bij een pak.",
+    "englishtranslate": "Suspenders look neat with a suit."
+  },
+  {
+    "dutch": "dansvloer, de",
+    "english": "dance floor, the",
+    "vietnamese": "sàn nhảy",
+    "dutchsentence": "Ze vluchtten weg van de drukke dansvloer.",
+    "englishtranslate": "They fled away from the crowded dance floor."
+  },
+  {
+    "dutch": "ding, het",
+    "english": "thing, the / item, the",
+    "vietnamese": "vật / mục",
+    "dutchsentence": "Dit kledingstuk is een zacht ding.",
+    "englishtranslate": "This article of clothing is a soft thing."
+  },
+  {
+    "dutch": "dragen",
+    "english": "to wear",
+    "vietnamese": "mặc",
+    "dutchsentence": "Welke kleur overhemd wil je dragen?",
+    "englishtranslate": "Which color shirt do you want to wear?"
+  },
+  {
+    "dutch": "driedelig",
+    "english": "three-piece",
+    "vietnamese": "ba mảnh",
+    "dutchsentence": "Hij heeft een driedelig pak gekocht.",
+    "englishtranslate": "He bought a three-piece suit."
+  },
+  {
+    "dutch": "eerlijk",
+    "english": "honest",
+    "vietnamese": "trung thực",
+    "dutchsentence": "Om eerlijk te zijn, staat het je niet goed.",
+    "englishtranslate": "To be honest, it doesn't suit you."
+  },
+  {
+    "dutch": "even",
+    "english": "momentarily / just (for a moment)",
+    "vietnamese": "tạm thời",
+    "dutchsentence": "Ik wil deze broek even passen.",
+    "englishtranslate": "I want to try these pants on momentarily/just for a moment."
+  },
+  {
+    "dutch": "familielid, het",
+    "english": "family member, the",
+    "vietnamese": "thành viên gia đình",
+    "dutchsentence": "Ik ken alle familielieden van de bruid.",
+    "englishtranslate": "I know all the family members of the bride."
+  },
+  {
+    "dutch": "feestelijk",
+    "english": "festive",
+    "vietnamese": "lễ hội",
+    "dutchsentence": "Zij draagt een feestelijke jurk.",
+    "englishtranslate": "She is wearing a festive dress."
+  },
+  {
+    "dutch": "geel",
+    "english": "yellow",
+    "vietnamese": "vàng",
+    "dutchsentence": "Ik heb een gele sjaal nodig.",
+    "englishtranslate": "I need a yellow scarf."
+  },
+  {
+    "dutch": "geur, de",
+    "english": "smell, the / scent, the",
+    "vietnamese": "mùi",
+    "dutchsentence": "Wat is die lekkere geur?",
+    "englishtranslate": "What is that nice smell/scent?"
+  },
+  {
+    "dutch": "grijs",
+    "english": "grey",
+    "vietnamese": "xám",
+    "dutchsentence": "De jas is grijs, maar het vest is oranje.",
+    "englishtranslate": "The jacket is grey, but the cardigan is orange."
+  },
+  {
+    "dutch": "handschoen, de",
+    "english": "glove, the",
+    "vietnamese": "găng tay",
+    "dutchsentence": "Zij kocht een paar handschoenen.",
+    "englishtranslate": "She bought a pair of gloves."
+  },
+  {
+    "dutch": "hoek, de",
+    "english": "corner, the",
+    "vietnamese": "góc",
+    "dutchsentence": "De paskamer is in de hoek van de winkel.",
+    "englishtranslate": "The fitting room is in the corner of the shop."
+  },
+  {
+    "dutch": "hoofd, het",
+    "english": "head, the",
+    "vietnamese": "đầu",
+    "dutchsentence": "Ik heb een muts op mijn hoofd.",
+    "englishtranslate": "I have a cap/beanie on my head."
+  },
+  {
+    "dutch": "hoog",
+    "english": "high",
+    "vietnamese": "cao",
+    "dutchsentence": "Zij draagt schoenen met hoge hakken.",
+    "englishtranslate": "She is wearing shoes with high heels."
+  },
+  {
+    "dutch": "hulp, de",
+    "english": "help, the",
+    "vietnamese": "giúp đỡ",
+    "dutchsentence": "Ik kan je wel wat hulp gebruiken bij het uitzoeken.",
+    "englishtranslate": "I could use some help with choosing/selecting."
+  },
+  {
+    "dutch": "jammer genoeg",
+    "english": "unfortunately",
+    "vietnamese": "thật không may",
+    "dutchsentence": "Jammer genoeg past de maat niet.",
+    "englishtranslate": "Unfortunately, the size doesn't fit."
+  },
+  {
+    "dutch": "kennen",
+    "english": "to know (a person, place)",
+    "vietnamese": "biết",
+    "dutchsentence": "Kennen jullie de ontwerper van deze jurk?",
+    "englishtranslate": "Do you know the designer of this dress?"
+  },
+  {
+    "dutch": "kerel, de",
+    "english": "lad, the / guy, the (informal)",
+    "vietnamese": "chàng trai",
+    "dutchsentence": "Die magere kerel draagt een smoking.",
+    "englishtranslate": "That thin guy is wearing a tuxedo."
+  },
+  {
+    "dutch": "keurig",
+    "english": "trim and neat / proper",
+    "vietnamese": "gọn gàng",
+    "dutchsentence": "Hij ziet er altijd heel keurig uit.",
+    "englishtranslate": "He always looks very trim and neat."
+  },
+  {
+    "dutch": "kast, de",
+    "english": "cupboard, the / closet, the",
+    "vietnamese": "tủ",
+    "dutchsentence": "Mijn kleren liggen in de kast.",
+    "englishtranslate": "My clothes are in the cupboard/closet."
+  },
+  {
+    "dutch": "kledingstuk, het",
+    "english": "article of clothing, the / garment, the",
+    "vietnamese": "quần áo",
+    "dutchsentence": "Dit is een moeilijk te wassen kledingstuk.",
+    "englishtranslate": "This is a difficult article of clothing to wash."
+  },
+  {
+    "dutch": "kleren, de",
+    "english": "clothes, the",
+    "vietnamese": "quần áo",
+    "dutchsentence": "Koop je vaak nieuwe kleren?",
+    "englishtranslate": "Do you often buy new clothes?"
+  },
+  {
+    "dutch": "laars, de",
+    "english": "boot, the",
+    "vietnamese": "ủng",
+    "dutchsentence": "Dit zijn waterdichte laarzen.",
+    "englishtranslate": "These are waterproof boots."
+  },
+  {
+    "dutch": "kwaliteit, de",
+    "english": "quality, the",
+    "vietnamese": "chất lượng",
+    "dutchsentence": "De kwaliteit van deze zijde is erg hoog.",
+    "englishtranslate": "The quality of this silk is very high."
+  },
+  {
+    "dutch": "lenen",
+    "english": "to borrow / to lend",
+    "vietnamese": "mượn",
+    "dutchsentence": "Mag ik je riem even lenen?",
+    "englishtranslate": "May I borrow your belt for a moment?"
+  },
+  {
+    "dutch": "losschieten",
+    "english": "to get loose / to come undone",
+    "vietnamese": "lỏng ra",
+    "dutchsentence": "Mijn bretels schoten plotseling los.",
+    "englishtranslate": "My suspenders suddenly came loose/undone."
+  },
+  {
+    "dutch": "maat, de",
+    "english": "size, the",
+    "vietnamese": "kích thước",
+    "dutchsentence": "Wat is je maat voor deze spijkerbroek?",
+    "englishtranslate": "What is your size for these jeans?"
+  },
+  {
+    "dutch": "mager",
+    "english": "thin / skinny",
+    "vietnamese": "gầy",
+    "dutchsentence": "Hij is mager, dus zijn pak zit strak.",
+    "englishtranslate": "He is thin, so his suit fits tightly."
+  },
+  {
+    "dutch": "maillot, de",
+    "english": "tights, the",
+    "vietnamese": "quần tất",
+    "dutchsentence": "Je draagt een maillot onder de rok.",
+    "englishtranslate": "You wear tights under the skirt."
+  },
+  {
+    "dutch": "meid, de",
+    "english": "girl, the (informal)",
+    "vietnamese": "cô gái",
+    "dutchsentence": "Kijk, die meid draagt een gele jurk!",
+    "englishtranslate": "Look, that girl is wearing a yellow dress!"
+  },
+  {
+    "dutch": "merk, het",
+    "english": "brand, the",
+    "vietnamese": "thương hiệu",
+    "dutchsentence": "Wat is het merk van dit overhemd?",
+    "englishtranslate": "What is the brand of this shirt?"
+  },
+  {
+    "dutch": "model, het",
+    "english": "model, the / style, the",
+    "vietnamese": "mô hình",
+    "dutchsentence": "Dit model laars is erg populair.",
+    "englishtranslate": "This model/style of boot is very popular."
+  },
+  {
+    "dutch": "moeilijk",
+    "english": "difficult",
+    "vietnamese": "khó khăn",
+    "dutchsentence": "Het is moeilijk om een goede riem uit te zoeken.",
+    "englishtranslate": "It is difficult to choose a good belt."
+  },
+  {
+    "dutch": "mouw, de",
+    "english": "sleeve, the",
+    "vietnamese": "tay áo",
+    "dutchsentence": "De mouw van de bloes is te lang.",
+    "englishtranslate": "The sleeve of the blouse is too long."
+  },
+  {
+    "dutch": "muts, de",
+    "english": "cap, the / beanie, the",
+    "vietnamese": "mũ",
+    "dutchsentence": "Hij draagt een oranje muts.",
+    "englishtranslate": "He is wearing an orange cap/beanie."
+  },
+  {
+    "dutch": "nadenken",
+    "english": "to think about it",
+    "vietnamese": "suy nghĩ về nó",
+    "dutchsentence": "Ik moet er even over nadenken.",
+    "englishtranslate": "I need to think about it for a moment."
+  },
+  {
+    "dutch": "onderbroek, de",
+    "english": "underpants, the",
+    "vietnamese": "quần lót",
+    "dutchsentence": "Je onderbroek zit niet lekker.",
+    "englishtranslate": "Your underpants don't fit comfortably."
+  },
+  {
+    "dutch": "ontwerper, de",
+    "english": "designer, the",
+    "vietnamese": "nhà thiết kế",
+    "dutchsentence": "Wie is de ontwerper van deze smoking?",
+    "englishtranslate": "Who is the designer of this tuxedo?"
+  },
+  {
+    "dutch": "onwennig",
+    "english": "uneasy / unfamiliar",
+    "vietnamese": "không thoải mái",
+    "dutchsentence": "Ik voelde me onwennig in zo'n duur kledingstuk.",
+    "englishtranslate": "I felt uneasy in such an expensive garment."
+  },
+  {
+    "dutch": "oranje",
+    "english": "orange",
+    "vietnamese": "màu cam",
+    "dutchsentence": "Zijn overhemd is fel oranje.",
+    "englishtranslate": "His shirt is bright orange."
+  },
+  {
+    "dutch": "overhemd, het",
+    "english": "shirt, the (collared/dress shirt)",
+    "vietnamese": "áo sơ mi",
+    "dutchsentence": "Ik heb een nieuw overhemd gekocht.",
+    "englishtranslate": "I bought a new shirt."
+  },
+  {
+    "dutch": "paar, het",
+    "english": "pair, the",
+    "vietnamese": "đôi",
+    "dutchsentence": "Een paar sokken is zoek.",
+    "englishtranslate": "A pair of socks is missing."
+  },
+  {
+    "dutch": "pak, het",
+    "english": "suit, the",
+    "vietnamese": "bộ đồ",
+    "dutchsentence": "Hij moet een net pak dragen naar de bruiloft.",
+    "englishtranslate": "He has to wear a neat suit to the wedding."
+  },
+  {
+    "dutch": "paskamer, de",
+    "english": "fitting room, the",
+    "vietnamese": "phòng thử đồ",
+    "dutchsentence": "Waar is de paskamer?",
+    "englishtranslate": "Where is the fitting room?"
+  },
+  {
+    "dutch": "passen",
+    "english": "to try (on) / to fit",
+    "vietnamese": "thử, vừa",
+    "dutchsentence": "Je moet de schoenen eerst passen.",
+    "englishtranslate": "You have to try on the shoes first."
+  },
+  {
+    "dutch": "pet, de",
+    "english": "cap, the (with a brim)",
+    "vietnamese": "mũ lưỡi trai",
+    "dutchsentence": "De pet heeft een brede rand.",
+    "englishtranslate": "The cap has a wide brim."
+  },
+  {
+    "dutch": "proberen",
+    "english": "to try (to attempt)",
+    "vietnamese": "thử",
+    "dutchsentence": "Ik ga proberen deze broek te passen.",
+    "englishtranslate": "I am going to try to try on these pants."
+  },
+  {
+    "dutch": "rand, de",
+    "english": "brim, the / edge, the",
+    "vietnamese": "vành",
+    "dutchsentence": "Er zit een gele rand aan de muts.",
+    "englishtranslate": "There is a yellow brim/edge on the cap/beanie."
+  },
+  {
+    "dutch": "riem, de",
+    "english": "belt, the",
+    "vietnamese": "dây nịt",
+    "dutchsentence": "Mijn riem is te strak.",
+    "englishtranslate": "My belt is too tight."
+  },
+  {
+    "dutch": "rok, de",
+    "english": "skirt, the",
+    "vietnamese": "váy",
+    "dutchsentence": "De rok is van zijde.",
+    "englishtranslate": "The skirt is made of silk."
+  },
+  {
+    "dutch": "rondkijken",
+    "english": "to look around",
+    "vietnamese": "nhìn xung quanh",
+    "dutchsentence": "Ik wil even rustig rondkijken.",
+    "englishtranslate": "I just want to look around quietly for a moment."
+  },
+  {
+    "dutch": "ruiken",
+    "english": "to smell",
+    "vietnamese": "ngửi",
+    "dutchsentence": "Dit overhemd ruikt naar de feestelijke geur.",
+    "englishtranslate": "This shirt smells of the festive scent."
+  },
+  {
+    "dutch": "roze",
+    "english": "pink",
+    "vietnamese": "hồng",
+    "dutchsentence": "Zij kocht een roze maillot.",
+    "englishtranslate": "She bought pink tights."
+  },
+  {
+    "dutch": "sjaal, de",
+    "english": "scarf, the",
+    "vietnamese": "khăn quàng cổ",
+    "dutchsentence": "Ik draag een warme sjaal.",
+    "englishtranslate": "I am wearing a warm scarf."
+  },
+  {
+    "dutch": "smoking, de",
+    "english": "tuxedo, the",
+    "vietnamese": "áo tuxedo",
+    "dutchsentence": "Hij huurde een smoking voor de gelegenheid.",
+    "englishtranslate": "He rented a tuxedo for the occasion."
+  },
+  {
+    "dutch": "sok, de",
+    "english": "sock, the",
+    "vietnamese": "tất",
+    "dutchsentence": "Je hebt een gat in je sok bij je teen.",
+    "englishtranslate": "You have a hole in your sock near your toe."
+  },
+  {
+    "dutch": "spijkerbroek, de",
+    "english": "jeans, the / denim trousers, the",
+    "vietnamese": "quần jeans",
+    "dutchsentence": "Mijn spijkerbroek zit te strak.",
+    "englishtranslate": "My jeans are too tight."
+  },
+  {
+    "dutch": "springen",
+    "english": "to snap / to jump",
+    "vietnamese": "bật / nhảy",
+    "dutchsentence": "Mijn veter is gesprongen.",
+    "englishtranslate": "My shoelace has snapped."
+  },
+  {
+    "dutch": "staan",
+    "english": "to suit / to look good on",
+    "vietnamese": "phù hợp",
+    "dutchsentence": "De grijze kleur staat je goed.",
+    "englishtranslate": "The grey color suits you well."
+  },
+  {
+    "dutch": "strak",
+    "english": "tight",
+    "vietnamese": "chặt",
+    "dutchsentence": "De mouwen van het vest zijn strak.",
+    "englishtranslate": "The sleeves of the cardigan are tight."
+  },
+  {
+    "dutch": "teen, de",
+    "english": "toe, the",
+    "vietnamese": "ngón chân",
+    "dutchsentence": "Mijn tenen doen pijn in deze schoenen.",
+    "englishtranslate": "My toes hurt in these shoes."
+  },
+  {
+    "dutch": "tenminste",
+    "english": "at least",
+    "vietnamese": "ít nhất",
+    "dutchsentence": "Dit kledingstuk is tenminste waterdicht.",
+    "englishtranslate": "At least this garment is waterproof."
+  },
+  {
+    "dutch": "tevoorschijn komen",
+    "english": "to appear / to come out",
+    "vietnamese": "xuất hiện",
+    "dutchsentence": "De meid zag de verkoper plotseling tevoorschijn komen.",
+    "englishtranslate": "The girl suddenly saw the salesman appear/come out."
+  },
+  {
+    "dutch": "uitleggen",
+    "english": "to explain",
+    "vietnamese": "giải thích",
+    "dutchsentence": "De verkoper kan het model uitleggen.",
+    "englishtranslate": "The salesman can explain the style/model."
+  },
+  {
+    "dutch": "uitzoeken",
+    "english": "to choose, to select",
+    "vietnamese": "để chọn, để chọn",
+    "dutchsentence": "Het is moeilijk om een pak uit te zoeken.",
+    "englishtranslate": "It is difficult to choose/select a suit."
+  },
+  {
+    "dutch": "verkopen",
+    "english": "to sell",
+    "vietnamese": "để bán",
+    "dutchsentence": "Ze verkopen dat merk hier niet.",
+    "englishtranslate": "They don't sell that brand here."
+  },
+  {
+    "dutch": "verkoper, de",
+    "english": "salesman, the",
+    "vietnamese": "nhân viên bán hàng",
+    "dutchsentence": "De verkoper hielp me in de paskamer.",
+    "englishtranslate": "The salesman helped me in the fitting room."
+  },
+  {
+    "dutch": "vest, het",
+    "english": "cardigan, the / jacket, the",
+    "vietnamese": "áo len đan",
+    "dutchsentence": "Trek je vest aan, het is koud.",
+    "englishtranslate": "Put on your cardigan/jacket, it is cold."
+  },
+  {
+    "dutch": "veter, de",
+    "english": "shoelace, the",
+    "vietnamese": "dây giày",
+    "dutchsentence": "Mijn veter is los.",
+    "englishtranslate": "My shoelace is loose."
+  },
+  {
+    "dutch": "V-hals, de",
+    "english": "V-neck, the",
+    "vietnamese": "cổ chữ V",
+    "dutchsentence": "De trui heeft een V-hals.",
+    "englishtranslate": "The sweater has a V-neck."
+  },
+  {
+    "dutch": "vloer, de",
+    "english": "floor, the",
+    "vietnamese": "sàn nhà",
+    "dutchsentence": "Op de dansvloer is het druk.",
+    "englishtranslate": "It is crowded on the dance floor."
+  },
+  {
+    "dutch": "vluchten",
+    "english": "to flee",
+    "vietnamese": "chạy trốn",
+    "dutchsentence": "Zij probeerde de menigte te ontvluchten.",
+    "englishtranslate": "She tried to flee the crowd."
+  },
+  {
+    "dutch": "voelen (zich -)",
+    "english": "to feel",
+    "vietnamese": "cảm thấy",
+    "dutchsentence": "Ik voel me onwennig in dit pak.",
+    "englishtranslate": "I feel uneasy in this suit."
+  },
+  {
+    "dutch": "waterdicht",
+    "english": "waterproof",
+    "vietnamese": "không thấm nước",
+    "dutchsentence": "Zijn deze laarzen waterdicht?",
+    "englishtranslate": "Are these boots waterproof?"
+  },
+  {
+    "dutch": "weg",
+    "english": "away",
+    "vietnamese": "xa",
+    "dutchsentence": "Loop snel weg van de ruzie.",
+    "englishtranslate": "Walk quickly away from the quarrel."
+  },
+  {
+    "dutch": "zacht",
+    "english": "soft",
+    "vietnamese": "mềm",
+    "dutchsentence": "De zijde voelt zacht aan.",
+    "englishtranslate": "The silk feels soft."
+  },
+  {
+    "dutch": "zelf",
+    "english": "yourself",
+    "vietnamese": "bản thân",
+    "dutchsentence": "Je kunt de kleren zelf proberen uit te zoeken.",
+    "englishtranslate": "You can try to choose/select the clothes yourself."
+  },
+  {
+    "dutch": "zijde, de",
+    "english": "silk, the",
+    "vietnamese": "lụa",
+    "dutchsentence": "De jurk is gemaakt van pure zijde.",
+    "englishtranslate": "The dress is made of pure silk."
+  },
+  {
+    "dutch": "zitten",
+    "english": "to fit / to sit",
+    "vietnamese": "vừa / ngồi",
+    "dutchsentence": "De spijkerbroek zit goed.",
+    "englishtranslate": "The jeans fit well."
+  },
+  {
+    "dutch": "zoiets",
+    "english": "something like this / such a thing",
+    "vietnamese": "cái gì đó như thế này",
+    "dutchsentence": "Heb je zoiets als een smoking nodig?",
+    "englishtranslate": "Do you need something like a tuxedo?"
+  }
 ]

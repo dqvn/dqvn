@@ -1,140 +1,968 @@
 [
-    {"dutch": "aanbieding, de", "english": "offer, the", "vietnamese": "đề nghị"},
-    {"dutch": "afwasmiddel, het", "english": "dishwashing detergent, the", "vietnamese": "nước rửa chén"},
-    {"dutch": "alle", "english": "all", "vietnamese": "tất cả"},
-    {"dutch": "appel, de", "english": "apple, the", "vietnamese": "quả táo"},
-    {"dutch": "april", "english": "April", "vietnamese": "tháng tư"},
-    {"dutch": "augustus", "english": "August", "vietnamese": "tháng tám"},
-    {"dutch": "begrijpen", "english": "to understand", "vietnamese": "hiểu"},
-    {"dutch": "bekendstaan om", "english": "to be known for", "vietnamese": "được biết đến với"},
-    {"dutch": "betalen", "english": "to pay", "vietnamese": "trả tiền"},
-    {"dutch": "bier, het", "english": "beer, the", "vietnamese": "bia"},
-    {"dutch": "bijna", "english": "almost", "vietnamese": "gần như"},
-    {"dutch": "blik, het", "english": "can, the", "vietnamese": "lon"},
-    {"dutch": "boodschap, de", "english": "grocery, the / message, the", "vietnamese": "hàng tạp hóa / tin nhắn"},
-    {"dutch": "boon, de", "english": "bean, the", "vietnamese": "đậu"},
-    {"dutch": "broccoli, de", "english": "broccoli, the", "vietnamese": "bông cải xanh"},
-    {"dutch": "brood, het", "english": "bread, the", "vietnamese": "bánh mì"},
-    {"dutch": "chips, de", "english": "potato chips, the", "vietnamese": "khoai tây chiên"},
-    {"dutch": "chocola, de", "english": "chocolate, the", "vietnamese": "sô cô la"},
-    {"dutch": "cola, de", "english": "coca cola, the", "vietnamese": "coca cola"},
-    {"dutch": "december", "english": "December", "vietnamese": "tháng mười hai"},
-    {"dutch": "derde", "english": "third", "vietnamese": "thứ ba"},
-    {"dutch": "diepvries, de", "english": "freezer, the", "vietnamese": "tủ đông"},
-    {"dutch": "eerste", "english": "first", "vietnamese": "đầu tiên"},
-    {"dutch": "februari", "english": "February", "vietnamese": "tháng hai"},
-    {"dutch": "feest, het", "english": "party, the", "vietnamese": "bữa tiệc"},
-    {"dutch": "fijn", "english": "nice", "vietnamese": "tốt"},
-    {"dutch": "frisdrank, de", "english": "soft drink, the", "vietnamese": "nước ngọt"},
-    {"dutch": "fruit, het", "english": "fruit, the", "vietnamese": "trái cây"},
-    {"dutch": "ga uw gang", "english": "go ahead", "vietnamese": "đi trước"},
-    {"dutch": "gang, de", "english": "corridor, hall, the", "vietnamese": "hành lang"},
-    {"dutch": "gewicht, het", "english": "weight, the", "vietnamese": "trọng lượng"},
-    {"dutch": "gram, het", "english": "gram, the", "vietnamese": "gam"},
-    {"dutch": "gratis", "english": "for free", "vietnamese": "miễn phí"},
-    {"dutch": "groente, de", "english": "vegetable, the", "vietnamese": "rau"},
-    {"dutch": "groot", "english": "big", "vietnamese": "lớn"},
-    {"dutch": "hagelslag, de", "english": "chocolate sprinkles, the", "vietnamese": "kẹo rắc sô cô la"},
-    {"dutch": "helpen", "english": "to help", "vietnamese": "giúp đỡ"},
-    {"dutch": "huishoudartikel, het", "english": "household product, the", "vietnamese": "sản phẩm gia dụng"},
-    {"dutch": "ijs, het", "english": "ice cream, the", "vietnamese": "kem"},
-    {"dutch": "ingang, de", "english": "entrance, the", "vietnamese": "lối vào"},
-    {"dutch": "jam, de", "english": "marmalade, jam, the", "vietnamese": "mứt"},
-    {"dutch": "januari", "english": "January", "vietnamese": "tháng một"},
-    {"dutch": "jarig", "english": "having your birthday", "vietnamese": "sinh nhật của bạn"},
-    {"dutch": "jong belegen kaas, de", "english": "young matured cheese, the", "vietnamese": "phô mai chín trẻ"},
-    {"dutch": "jonge kaas, de", "english": "young cheese, the", "vietnamese": "phô mai trẻ"},
-    {"dutch": "juli", "english": "July", "vietnamese": "tháng bảy"},
-    {"dutch": "juni", "english": "June", "vietnamese": "tháng sáu"},
-    {"dutch": "kaas, de", "english": "cheese, the", "vietnamese": "phô mai"},
-    {"dutch": "kassa, de", "english": "cash register, the", "vietnamese": "máy tính tiền"},
-    {"dutch": "kilo, de", "english": "kilo, the", "vietnamese": "kí lô"},
-    {"dutch": "koekje, het", "english": "cookie, the", "vietnamese": "bánh quy"},
-    {"dutch": "komkommer, de", "english": "cucumber, the", "vietnamese": "dưa chuột"},
-    {"dutch": "kopen", "english": "to buy", "vietnamese": "mua"},
-    {"dutch": "kortingskaart, de", "english": "discount card, the", "vietnamese": "thẻ giảm giá"},
-    {"dutch": "krat, het", "english": "crate, the", "vietnamese": "thùng"},
-    {"dutch": "lekker", "english": "nice, good, tasty", "vietnamese": "ngon"},
-    {"dutch": "liever", "english": "rather", "vietnamese": "thà"},
-    {"dutch": "liggen", "english": "to be located", "vietnamese": "nằm"},
-    {"dutch": "lijstje, het", "english": "list, the", "vietnamese": "danh sách"},
-    {"dutch": "links", "english": "left", "vietnamese": "trái"},
-    {"dutch": "liter, de", "english": "litre, the", "vietnamese": "lít"},
-    {"dutch": "maart", "english": "March", "vietnamese": "tháng ba"},
-    {"dutch": "mais, de", "english": "corn, the", "vietnamese": "ngô"},
-    {"dutch": "markt, de", "english": "market, the", "vietnamese": "chợ"},
-    {"dutch": "meenemen", "english": "to take along", "vietnamese": "mang theo"},
-    {"dutch": "meer", "english": "more", "vietnamese": "nhiều hơn"},
-    {"dutch": "meergranenbrood, het", "english": "multi grain bread, the", "vietnamese": "bánh mì đa hạt"},
-    {"dutch": "mei", "english": "May", "vietnamese": "tháng năm"},
-    {"dutch": "melk, de", "english": "milk, the", "vietnamese": "sữa"},
-    {"dutch": "muesli, de", "english": "muesli, the", "vietnamese": "ngũ cốc"},
-    {"dutch": "naast", "english": "next to", "vietnamese": "bên cạnh"},
-    {"dutch": "november", "english": "November", "vietnamese": "tháng mười một"},
-    {"dutch": "oktober", "english": "October", "vietnamese": "Tháng 10"},
-    {"dutch": "ons, het", "english": "100 grams", "vietnamese": "100 gram"},
-    {"dutch": "oogst, de", "english": "harvest, the", "vietnamese": "thu hoạch"},
-    {"dutch": "open", "english": "open", "vietnamese": "mở"},
-    {"dutch": "oude kaas, de", "english": "old cheese, the", "vietnamese": "phô mai cũ"},
-    {"dutch": "over", "english": "about", "vietnamese": "về"},
-    {"dutch": "pannenkoek, de", "english": "pancake, the", "vietnamese": "bánh kếp"},
-    {"dutch": "paprika, de", "english": "capsicum, pepper, the", "vietnamese": "ớt chuông, hạt tiêu"},
-    {"dutch": "pardon", "english": "excuse me, sorry", "vietnamese": "xin lỗi"},
-    {"dutch": "peer, de", "english": "pear, the", "vietnamese": "quả lê"},
-    {"dutch": "per", "english": "per", "vietnamese": "mỗi"},
-    {"dutch": "pinnen", "english": "to pay by card", "vietnamese": "thanh toán bằng thẻ"},
-    {"dutch": "pizza, de", "english": "pizza, the", "vietnamese": "bánh pizza"},
-    {"dutch": "plastic zak, de", "english": "plastic bag, the", "vietnamese": "túi nhựa"},
-    {"dutch": "pond, het", "english": "half a kilo (500 grams)", "vietnamese": "nửa ký (500 gram)"},
-    {"dutch": "portemonnee, de", "english": "wallet, the", "vietnamese": "ví"},
-    {"dutch": "prijs, de", "english": "price, the", "vietnamese": "giá"},
-    {"dutch": "rechts", "english": "right", "vietnamese": "phải"},
-    {"dutch": "rijst, de", "english": "rice, the", "vietnamese": "gạo"},
-    {"dutch": "rol, de", "english": "roll, the", "vietnamese": "cuộn"},
-    {"dutch": "rood", "english": "red", "vietnamese": "đỏ"},
-    {"dutch": "rundergehakt, het", "english": "minced beef, the", "vietnamese": "thịt bò băm"},
-    {"dutch": "saai", "english": "boring", "vietnamese": "nhàm chán"},
-    {"dutch": "saus, de", "english": "sauce, the", "vietnamese": "nước sốt"},
-    {"dutch": "september", "english": "September", "vietnamese": "Tháng 9"},
-    {"dutch": "sinas, de", "english": "orange soda, the", "vietnamese": "nước cam có ga"},
-    {"dutch": "sla, de", "english": "lettuce, the", "vietnamese": "rau diếp"},
-    {"dutch": "snack, de", "english": "snack, the", "vietnamese": "đồ ăn nhẹ"},
-    {"dutch": "soep, de", "english": "soup, the", "vietnamese": "súp"},
-    {"dutch": "sommige", "english": "some", "vietnamese": "một số"},
-    {"dutch": "spaghetti, de", "english": "spaghetti, the", "vietnamese": "mì Ý"},
-    {"dutch": "speculaas, de", "english": "ginger cookie, the", "vietnamese": "bánh quy gừng"},
-    {"dutch": "spek, het", "english": "bacon, the", "vietnamese": "thịt xông khói"},
-    {"dutch": "stokbrood, het", "english": "French bread, the", "vietnamese": "bánh mì Pháp"},
-    {"dutch": "straks", "english": "later", "vietnamese": "sau"},
-    {"dutch": "stuk, het", "english": "piece, the", "vietnamese": "miếng"},
-    {"dutch": "supermarkt, de", "english": "supermarket, the", "vietnamese": "siêu thị"},
-    {"dutch": "tas, de", "english": "bag, the", "vietnamese": "túi"},
-    {"dutch": "tasje, het", "english": "little bag, the", "vietnamese": "túi nhỏ"},
-    {"dutch": "toiletpapier, het", "english": "toilet paper, the", "vietnamese": "giấy vệ sinh"},
-    {"dutch": "tomaat, de", "english": "tomato, the", "vietnamese": "cà chua"},
-    {"dutch": "tot", "english": "till", "vietnamese": "đến"},
-    {"dutch": "totaal", "english": "total", "vietnamese": "tổng cộng"},
-    {"dutch": "tweede", "english": "second", "vietnamese": "thứ hai"},
-    {"dutch": "uitgang, de", "english": "exit, the", "vietnamese": "lối ra"},
-    {"dutch": "uitnodiging, de", "english": "invitation, the", "vietnamese": "lời mời"},
-    {"dutch": "vanaf", "english": "starting at", "vietnamese": "bắt đầu từ"},
-    {"dutch": "vergeten", "english": "to forget", "vietnamese": "quên"},
-    {"dutch": "vierde", "english": "fourth", "vietnamese": "thứ tư"},
-    {"dutch": "vlees, het", "english": "meat, the", "vietnamese": "thịt"},
-    {"dutch": "vleeswaren, de", "english": "meat products, the", "vietnamese": "sản phẩm thịt"},
-    {"dutch": "vijfde", "english": "fifth", "vietnamese": "thứ năm"},
-    {"dutch": "vla, de", "english": "custard, pudding, the", "vietnamese": "bánh trứng, bánh pudding"},
-    {"dutch": "volkorenbrood, het", "english": "whole wheat bread, the", "vietnamese": "bánh mì nguyên cám"},
-    {"dutch": "wasmiddel, het", "english": "detergent, the", "vietnamese": "chất tẩy rửa"},
-    {"dutch": "wasverzachter, de", "english": "wash softener, the", "vietnamese": "chất làm mềm vải"},
-    {"dutch": "wegen", "english": "to weigh", "vietnamese": "cân"},
-    {"dutch": "wijn, de", "english": "wine, the", "vietnamese": "rượu vang"},
-    {"dutch": "winkel, de", "english": "shop, the", "vietnamese": "cửa hàng"},
-    {"dutch": "worden", "english": "to become", "vietnamese": "trở thành"},
-    {"dutch": "worst, de", "english": "sausage, the", "vietnamese": "xúc xích"},
-    {"dutch": "wortel, de", "english": "carrot, the", "vietnamese": "cà rốt"},
-    {"dutch": "yoghurt, de", "english": "yoghurt, the", "vietnamese": "sữa chua"},
-    {"dutch": "zak, de", "english": "bag, the", "vietnamese": "túi"},
-    {"dutch": "zuivel, de", "english": "dairy products, the", "vietnamese": "sản phẩm từ sữa"},
-    {"dutch": "zwaar", "english": "heavy", "vietnamese": "nặng"}
+  {
+    "dutch": "aanbieding, de",
+    "english": "offer, the / special deal, the",
+    "vietnamese": "đề nghị",
+    "dutchsentence": "Deze week is de koffie in de aanbieding.",
+    "englishtranslate": "This week the coffee is on special offer."
+  },
+  {
+    "dutch": "afwasmiddel, het",
+    "english": "dishwashing detergent, the",
+    "vietnamese": "nước rửa chén",
+    "dutchsentence": "Het afwasmiddel is bijna op.",
+    "englishtranslate": "The dishwashing detergent is almost finished."
+  },
+  {
+    "dutch": "alle",
+    "english": "all",
+    "vietnamese": "tất cả",
+    "dutchsentence": "Alle groenten zijn vers.",
+    "englishtranslate": "All the vegetables are fresh."
+  },
+  {
+    "dutch": "appel, de",
+    "english": "apple, the",
+    "vietnamese": "quả táo",
+    "dutchsentence": "Ik koop een kilo rode appels.",
+    "englishtranslate": "I am buying a kilo of red apples."
+  },
+  {
+    "dutch": "april",
+    "english": "April",
+    "vietnamese": "tháng tư",
+    "dutchsentence": "Mijn verjaardag is in april.",
+    "englishtranslate": "My birthday is in April."
+  },
+  {
+    "dutch": "augustus",
+    "english": "August",
+    "vietnamese": "tháng tám",
+    "dutchsentence": "Het is warm weer in augustus.",
+    "englishtranslate": "It is warm weather in August."
+  },
+  {
+    "dutch": "begrijpen",
+    "english": "to understand",
+    "vietnamese": "hiểu",
+    "dutchsentence": "Ik begrijp de instructies niet.",
+    "englishtranslate": "I don't understand the instructions."
+  },
+  {
+    "dutch": "bekendstaan om",
+    "english": "to be known for",
+    "vietnamese": "được biết đến với",
+    "dutchsentence": "Dit restaurant staat bekend om zijn pizza's.",
+    "englishtranslate": "This restaurant is known for its pizzas."
+  },
+  {
+    "dutch": "betalen",
+    "english": "to pay",
+    "vietnamese": "trả tiền",
+    "dutchsentence": "Hoe wilt u betalen, contant of met de kaart?",
+    "englishtranslate": "How would you like to pay, cash or by card?"
+  },
+  {
+    "dutch": "bier, het",
+    "english": "beer, the",
+    "vietnamese": "bia",
+    "dutchsentence": "Wil je een koud biertje?",
+    "englishtranslate": "Do you want a cold beer?"
+  },
+  {
+    "dutch": "bijna",
+    "english": "almost",
+    "vietnamese": "gần như",
+    "dutchsentence": "Het is bijna etenstijd.",
+    "englishtranslate": "It is almost dinner time."
+  },
+  {
+    "dutch": "blik, het",
+    "english": "can, the / tin, the",
+    "vietnamese": "lon",
+    "dutchsentence": "Er staat een blik tomaten in de kast.",
+    "englishtranslate": "There is a can of tomatoes in the cupboard."
+  },
+  {
+    "dutch": "boodschap, de",
+    "english": "grocery, the / message, the",
+    "vietnamese": "hàng tạp hóa / tin nhắn",
+    "dutchsentence": "Ik moet boodschappen doen.",
+    "englishtranslate": "I have to do groceries."
+  },
+  {
+    "dutch": "boon, de",
+    "english": "bean, the",
+    "vietnamese": "đậu",
+    "dutchsentence": "Groene bonen zijn gezond.",
+    "englishtranslate": "Green beans are healthy."
+  },
+  {
+    "dutch": "broccoli, de",
+    "english": "broccoli, the",
+    "vietnamese": "bông cải xanh",
+    "dutchsentence": "Broccoli is mijn favoriete groente.",
+    "englishtranslate": "Broccoli is my favorite vegetable."
+  },
+  {
+    "dutch": "brood, het",
+    "english": "bread, the",
+    "vietnamese": "bánh mì",
+    "dutchsentence": "Dit brood is vandaag vers gebakken.",
+    "englishtranslate": "This bread was freshly baked today."
+  },
+  {
+    "dutch": "chips, de",
+    "english": "potato chips, the / crisps, the",
+    "vietnamese": "khoai tây chiên",
+    "dutchsentence": "Wil je een zak chips bij de film?",
+    "englishtranslate": "Do you want a bag of chips with the movie?"
+  },
+  {
+    "dutch": "chocola, de",
+    "english": "chocolate, the",
+    "vietnamese": "sô cô la",
+    "dutchsentence": "Zwarte chocola is minder zoet.",
+    "englishtranslate": "Dark chocolate is less sweet."
+  },
+  {
+    "dutch": "cola, de",
+    "english": "coca cola, the",
+    "vietnamese": "coca cola",
+    "dutchsentence": "Ik drink liever cola dan sinas.",
+    "englishtranslate": "I prefer to drink cola rather than orange soda."
+  },
+  {
+    "dutch": "december",
+    "english": "December",
+    "vietnamese": "tháng mười hai",
+    "dutchsentence": "Kerstmis is in december.",
+    "englishtranslate": "Christmas is in December."
+  },
+  {
+    "dutch": "derde",
+    "english": "third",
+    "vietnamese": "thứ ba",
+    "dutchsentence": "Zij is de derde in de rij.",
+    "englishtranslate": "She is the third in line."
+  },
+  {
+    "dutch": "diepvries, de",
+    "english": "freezer, the / frozen food section, the",
+    "vietnamese": "tủ đông",
+    "dutchsentence": "De pizza's liggen in de diepvries.",
+    "englishtranslate": "The pizzas are in the freezer/frozen food section."
+  },
+  {
+    "dutch": "eerste",
+    "english": "first",
+    "vietnamese": "đầu tiên",
+    "dutchsentence": "Dit is mijn eerste keer hier.",
+    "englishtranslate": "This is my first time here."
+  },
+  {
+    "dutch": "februari",
+    "english": "February",
+    "vietnamese": "tháng hai",
+    "dutchsentence": "Februari heeft maar 28 dagen.",
+    "englishtranslate": "February only has 28 days."
+  },
+  {
+    "dutch": "feest, het",
+    "english": "party, the",
+    "vietnamese": "bữa tiệc",
+    "dutchsentence": "We geven een groot feest in juni.",
+    "englishtranslate": "We are throwing a big party in June."
+  },
+  {
+    "dutch": "fijn",
+    "english": "nice, fine",
+    "vietnamese": "tốt",
+    "dutchsentence": "Een fijne dag nog!",
+    "englishtranslate": "Have a nice day!"
+  },
+  {
+    "dutch": "frisdrank, de",
+    "english": "soft drink, the",
+    "vietnamese": "nước ngọt",
+    "dutchsentence": "Ik drink geen alcohol, alleen frisdrank.",
+    "englishtranslate": "I don't drink alcohol, only soft drinks."
+  },
+  {
+    "dutch": "fruit, het",
+    "english": "fruit, the",
+    "vietnamese": "trái cây",
+    "dutchsentence": "Eet genoeg fruit en groente.",
+    "englishtranslate": "Eat enough fruit and vegetables."
+  },
+  {
+    "dutch": "ga uw gang",
+    "english": "go ahead",
+    "vietnamese": "đi trước",
+    "dutchsentence": "Ga uw gang, u was voor mij aan de beurt.",
+    "englishtranslate": "Go ahead, it was your turn before me."
+  },
+  {
+    "dutch": "gang, de",
+    "english": "corridor, hall, the / aisle, the",
+    "vietnamese": "hành lang",
+    "dutchsentence": "De zuivelproducten liggen in de derde gang.",
+    "englishtranslate": "The dairy products are in the third aisle."
+  },
+  {
+    "dutch": "gewicht, het",
+    "english": "weight, the",
+    "vietnamese": "trọng lượng",
+    "dutchsentence": "Wat is het gewicht van deze zak rijst?",
+    "englishtranslate": "What is the weight of this bag of rice?"
+  },
+  {
+    "dutch": "gram, het",
+    "english": "gram, the",
+    "vietnamese": "gam",
+    "dutchsentence": "Ik wil graag 200 gram rundergehakt.",
+    "englishtranslate": "I would like 200 grams of minced beef."
+  },
+  {
+    "dutch": "gratis",
+    "english": "for free",
+    "vietnamese": "miễn phí",
+    "dutchsentence": "Vandaag krijg je dit tasje gratis.",
+    "englishtranslate": "Today you get this little bag for free."
+  },
+  {
+    "dutch": "groente, de",
+    "english": "vegetable, the",
+    "vietnamese": "rau",
+    "dutchsentence": "Er liggen veel verschillende groenten op de markt.",
+    "englishtranslate": "There are many different vegetables at the market."
+  },
+  {
+    "dutch": "groot",
+    "english": "big",
+    "vietnamese": "lớn",
+    "dutchsentence": "Is dat een grote of een kleine tas?",
+    "englishtranslate": "Is that a big or a small bag?"
+  },
+  {
+    "dutch": "hagelslag, de",
+    "english": "chocolate sprinkles, the",
+    "vietnamese": "kẹo rắc sô cô la",
+    "dutchsentence": "Veel Nederlanders eten hagelslag op brood.",
+    "englishtranslate": "Many Dutch people eat chocolate sprinkles on bread."
+  },
+  {
+    "dutch": "helpen",
+    "english": "to help",
+    "vietnamese": "giúp đỡ",
+    "dutchsentence": "Kan ik u ergens mee helpen?",
+    "englishtranslate": "Can I help you with anything?"
+  },
+  {
+    "dutch": "huishoudartikel, het",
+    "english": "household product, the / household item, the",
+    "vietnamese": "sản phẩm gia dụng",
+    "dutchsentence": "Deze winkel verkoopt veel huishoudartikelen.",
+    "englishtranslate": "This shop sells many household products."
+  },
+  {
+    "dutch": "ijs, het",
+    "english": "ice cream, the",
+    "vietnamese": "kem",
+    "dutchsentence": "Ik wil een grote beker ijs.",
+    "englishtranslate": "I want a large cup of ice cream."
+  },
+  {
+    "dutch": "ingang, de",
+    "english": "entrance, the",
+    "vietnamese": "lối vào",
+    "dutchsentence": "De ingang is aan de rechterkant.",
+    "englishtranslate": "The entrance is on the right side."
+  },
+  {
+    "dutch": "jam, de",
+    "english": "marmalade, jam, the",
+    "vietnamese": "mứt",
+    "dutchsentence": "Ik eet graag aardbeienjam op mijn brood.",
+    "englishtranslate": "I like to eat strawberry jam on my bread."
+  },
+  {
+    "dutch": "januari",
+    "english": "January",
+    "vietnamese": "tháng một",
+    "dutchsentence": "Het is vaak koud in januari.",
+    "englishtranslate": "It is often cold in January."
+  },
+  {
+    "dutch": "jarig",
+    "english": "having your birthday",
+    "vietnamese": "sinh nhật của bạn",
+    "dutchsentence": "Mijn dochter is volgende week jarig.",
+    "englishtranslate": "My daughter is having her birthday next week."
+  },
+  {
+    "dutch": "jong belegen kaas, de",
+    "english": "young matured cheese, the",
+    "vietnamese": "phô mai chín trẻ",
+    "dutchsentence": "Ik neem een stuk jong belegen kaas.",
+    "englishtranslate": "I'll take a piece of young matured cheese."
+  },
+  {
+    "dutch": "jonge kaas, de",
+    "english": "young cheese, the",
+    "vietnamese": "phô mai trẻ",
+    "dutchsentence": "Jonge kaas is zacht van smaak.",
+    "englishtranslate": "Young cheese has a mild flavour."
+  },
+  {
+    "dutch": "juli",
+    "english": "July",
+    "vietnamese": "tháng bảy",
+    "dutchsentence": "De zomer is op zijn hoogtepunt in juli.",
+    "englishtranslate": "Summer is at its peak in July."
+  },
+  {
+    "dutch": "juni",
+    "english": "June",
+    "vietnamese": "tháng sáu",
+    "dutchsentence": "In juni beginnen de schoolvakanties.",
+    "englishtranslate": "School holidays begin in June."
+  },
+  {
+    "dutch": "kaas, de",
+    "english": "cheese, the",
+    "vietnamese": "phô mai",
+    "dutchsentence": "Nederland is beroemd om zijn kaas.",
+    "englishtranslate": "The Netherlands is famous for its cheese."
+  },
+  {
+    "dutch": "kassa, de",
+    "english": "cash register, the / checkout, the",
+    "vietnamese": "máy tính tiền",
+    "dutchsentence": "U kunt bij kassa drie betalen.",
+    "englishtranslate": "You can pay at cash register three."
+  },
+  {
+    "dutch": "kilo, de",
+    "english": "kilo, the",
+    "vietnamese": "kí lô",
+    "dutchsentence": "Dit weegt precies één kilo.",
+    "englishtranslate": "This weighs exactly one kilo."
+  },
+  {
+    "dutch": "koekje, het",
+    "english": "cookie, the",
+    "vietnamese": "bánh quy",
+    "dutchsentence": "Ik neem een koekje bij de thee.",
+    "englishtranslate": "I will take a cookie with the tea."
+  },
+  {
+    "dutch": "komkommer, de",
+    "english": "cucumber, the",
+    "vietnamese": "dưa chuột",
+    "dutchsentence": "Een komkommer is erg verfrissend.",
+    "englishtranslate": "A cucumber is very refreshing."
+  },
+  {
+    "dutch": "kopen",
+    "english": "to buy",
+    "vietnamese": "mua",
+    "dutchsentence": "Waar kan ik goedkoop fruit kopen?",
+    "englishtranslate": "Where can I buy cheap fruit?"
+  },
+  {
+    "dutch": "kortingskaart, de",
+    "english": "discount card, the",
+    "vietnamese": "thẻ giảm giá",
+    "dutchsentence": "Heeft u een kortingskaart?",
+    "englishtranslate": "Do you have a discount card?"
+  },
+  {
+    "dutch": "krat, het",
+    "english": "crate, the",
+    "vietnamese": "thùng",
+    "dutchsentence": "Ik neem een krat bier mee.",
+    "englishtranslate": "I will take a crate of beer with me."
+  },
+  {
+    "dutch": "lekker",
+    "english": "nice, good, tasty",
+    "vietnamese": "ngon",
+    "dutchsentence": "Wat een lekker broodje!",
+    "englishtranslate": "What a tasty sandwich!"
+  },
+  {
+    "dutch": "liever",
+    "english": "rather",
+    "vietnamese": "thà",
+    "dutchsentence": "Ik drink liever wijn dan bier.",
+    "englishtranslate": "I would rather drink wine than beer."
+  },
+  {
+    "dutch": "liggen",
+    "english": "to be located",
+    "vietnamese": "nằm",
+    "dutchsentence": "De tomaten liggen naast de paprika's.",
+    "englishtranslate": "The tomatoes are located next to the peppers."
+  },
+  {
+    "dutch": "lijstje, het",
+    "english": "list, the",
+    "vietnamese": "danh sách",
+    "dutchsentence": "Ik heb een lijstje gemaakt voor de boodschappen.",
+    "englishtranslate": "I made a list for the groceries."
+  },
+  {
+    "dutch": "links",
+    "english": "left",
+    "vietnamese": "trái",
+    "dutchsentence": "De kassa is links van de uitgang.",
+    "englishtranslate": "The cash register is to the left of the exit."
+  },
+  {
+    "dutch": "liter, de",
+    "english": "litre, the",
+    "vietnamese": "lít",
+    "dutchsentence": "Een liter melk, alstublieft.",
+    "englishtranslate": "One litre of milk, please."
+  },
+  {
+    "dutch": "maart",
+    "english": "March",
+    "vietnamese": "tháng ba",
+    "dutchsentence": "In maart begint de lente.",
+    "englishtranslate": "Spring begins in March."
+  },
+  {
+    "dutch": "mais, de",
+    "english": "corn, the",
+    "vietnamese": "ngô",
+    "dutchsentence": "Ik hou van mais op mijn pizza.",
+    "englishtranslate": "I love corn on my pizza."
+  },
+  {
+    "dutch": "markt, de",
+    "english": "market, the",
+    "vietnamese": "chợ",
+    "dutchsentence": "We kopen groenten op de markt.",
+    "englishtranslate": "We buy vegetables at the market."
+  },
+  {
+    "dutch": "meenemen",
+    "english": "to take along",
+    "vietnamese": "mang theo",
+    "dutchsentence": "Vergeet je tas niet mee te nemen.",
+    "englishtranslate": "Don't forget to take your bag along."
+  },
+  {
+    "dutch": "meer",
+    "english": "more",
+    "vietnamese": "nhiều hơn",
+    "dutchsentence": "Wil je meer thee?",
+    "englishtranslate": "Do you want more tea?"
+  },
+  {
+    "dutch": "meergranenbrood, het",
+    "english": "multi grain bread, the",
+    "vietnamese": "bánh mì đa hạt",
+    "dutchsentence": "Ik koop altijd meergranenbrood voor het ontbijt.",
+    "englishtranslate": "I always buy multi grain bread for breakfast."
+  },
+  {
+    "dutch": "mei",
+    "english": "May",
+    "vietnamese": "tháng năm",
+    "dutchsentence": "Mei is een mooie lentemaand.",
+    "englishtranslate": "May is a beautiful spring month."
+  },
+  {
+    "dutch": "melk, de",
+    "english": "milk, the",
+    "vietnamese": "sữa",
+    "dutchsentence": "Ik drink elke ochtend een glas melk.",
+    "englishtranslate": "I drink a glass of milk every morning."
+  },
+  {
+    "dutch": "muesli, de",
+    "english": "muesli, the",
+    "vietnamese": "ngũ cốc",
+    "dutchsentence": "Muesli met yoghurt is een gezond ontbijt.",
+    "englishtranslate": "Muesli with yogurt is a healthy breakfast."
+  },
+  {
+    "dutch": "naast",
+    "english": "next to",
+    "vietnamese": "bên cạnh",
+    "dutchsentence": "De supermarkt is naast de bakkerij.",
+    "englishtranslate": "The supermarket is next to the bakery."
+  },
+  {
+    "dutch": "november",
+    "english": "November",
+    "vietnamese": "tháng mười một",
+    "dutchsentence": "Het is vaak grijs en nat in november.",
+    "englishtranslate": "It is often grey and wet in November."
+  },
+  {
+    "dutch": "oktober",
+    "english": "October",
+    "vietnamese": "Tháng 10",
+    "dutchsentence": "In oktober vallen de bladeren van de bomen.",
+    "englishtranslate": "In October the leaves fall from the trees."
+  },
+  {
+    "dutch": "ons, het",
+    "english": "100 grams",
+    "vietnamese": "100 gram",
+    "dutchsentence": "Ik wil graag een ons oude kaas.",
+    "englishtranslate": "I would like 100 grams (an 'ons') of old cheese."
+  },
+  {
+    "dutch": "oogst, de",
+    "english": "harvest, the",
+    "vietnamese": "thu hoạch",
+    "dutchsentence": "De oogst van dit jaar is erg goed.",
+    "englishtranslate": "This year's harvest is very good."
+  },
+  {
+    "dutch": "open",
+    "english": "open",
+    "vietnamese": "mở",
+    "dutchsentence": "De winkel is open tot zes uur.",
+    "englishtranslate": "The shop is open until six o'clock."
+  },
+  {
+    "dutch": "oude kaas, de",
+    "english": "old cheese, the",
+    "vietnamese": "phô mai cũ",
+    "dutchsentence": "Oude kaas heeft een sterke smaak.",
+    "englishtranslate": "Old cheese has a strong flavour."
+  },
+  {
+    "dutch": "over",
+    "english": "about",
+    "vietnamese": "về",
+    "dutchsentence": "Dit boek gaat over de geschiedenis van kaas.",
+    "englishtranslate": "This book is about the history of cheese."
+  },
+  {
+    "dutch": "pannenkoek, de",
+    "english": "pancake, the",
+    "vietnamese": "bánh kếp",
+    "dutchsentence": "We eten vanavond pannenkoeken.",
+    "englishtranslate": "We are eating pancakes tonight."
+  },
+  {
+    "dutch": "paprika, de",
+    "english": "capsicum, pepper, the",
+    "vietnamese": "ớt chuông, hạt tiêu",
+    "dutchsentence": "Ik wil een gele en een rode paprika.",
+    "englishtranslate": "I want a yellow and a red capsicum/pepper."
+  },
+  {
+    "dutch": "pardon",
+    "english": "excuse me, sorry",
+    "vietnamese": "xin lỗi",
+    "dutchsentence": "Pardon, waar is de zuivelafdeling?",
+    "englishtranslate": "Excuse me, where is the dairy section?"
+  },
+  {
+    "dutch": "peer, de",
+    "english": "pear, the",
+    "vietnamese": "quả lê",
+    "dutchsentence": "Een rijpe peer is heerlijk zoet.",
+    "englishtranslate": "A ripe pear is deliciously sweet."
+  },
+  {
+    "dutch": "per",
+    "english": "per",
+    "vietnamese": "mỗi",
+    "dutchsentence": "De appels kosten 2 euro per kilo.",
+    "englishtranslate": "The apples cost 2 euros per kilo."
+  },
+  {
+    "dutch": "pinnen",
+    "english": "to pay by card",
+    "vietnamese": "thanh toán bằng thẻ",
+    "dutchsentence": "Kan ik hier pinnen?",
+    "englishtranslate": "Can I pay by card here?"
+  },
+  {
+    "dutch": "pizza, de",
+    "english": "pizza, the",
+    "vietnamese": "bánh pizza",
+    "dutchsentence": "We bestellen een pizza met veel kaas.",
+    "englishtranslate": "We are ordering a pizza with a lot of cheese."
+  },
+  {
+    "dutch": "plastic zak, de",
+    "english": "plastic bag, the",
+    "vietnamese": "túi nhựa",
+    "dutchsentence": "Ik heb een plastic zak voor de groenten nodig.",
+    "englishtranslate": "I need a plastic bag for the vegetables."
+  },
+  {
+    "dutch": "pond, het",
+    "english": "half a kilo (500 grams)",
+    "vietnamese": "nửa ký (500 gram)",
+    "dutchsentence": "Een pond gehakt, alstublieft.",
+    "englishtranslate": "Half a kilo (500 grams) of minced meat, please."
+  },
+  {
+    "dutch": "portemonnee, de",
+    "english": "wallet, the / purse, the",
+    "vietnamese": "ví",
+    "dutchsentence": "Ik heb mijn portemonnee vergeten.",
+    "englishtranslate": "I forgot my wallet."
+  },
+  {
+    "dutch": "prijs, de",
+    "english": "price, the",
+    "vietnamese": "giá",
+    "dutchsentence": "Wat is de prijs van deze wijn?",
+    "englishtranslate": "What is the price of this wine?"
+  },
+  {
+    "dutch": "rechts",
+    "english": "right",
+    "vietnamese": "phải",
+    "dutchsentence": "U moet de gang naar rechts nemen.",
+    "englishtranslate": "You must take the aisle to the right."
+  },
+  {
+    "dutch": "rijst, de",
+    "english": "rice, the",
+    "vietnamese": "gạo",
+    "dutchsentence": "We eten rijst met kip.",
+    "englishtranslate": "We are eating rice with chicken."
+  },
+  {
+    "dutch": "rol, de",
+    "english": "roll, the",
+    "vietnamese": "cuộn",
+    "dutchsentence": "Er staat een rol toiletpapier op de plank.",
+    "englishtranslate": "There is a roll of toilet paper on the shelf."
+  },
+  {
+    "dutch": "rood",
+    "english": "red",
+    "vietnamese": "đỏ",
+    "dutchsentence": "Ik draag mijn rode T-shirt.",
+    "englishtranslate": "I am wearing my red T-shirt."
+  },
+  {
+    "dutch": "rundergehakt, het",
+    "english": "minced beef, the",
+    "vietnamese": "thịt bò băm",
+    "dutchsentence": "Rundergehakt is goedkoper dan biefstuk.",
+    "englishtranslate": "Minced beef is cheaper than steak."
+  },
+  {
+    "dutch": "saai",
+    "english": "boring",
+    "vietnamese": "nhàm chán",
+    "dutchsentence": "Ik vind dat soort films saai.",
+    "englishtranslate": "I find those kinds of movies boring."
+  },
+  {
+    "dutch": "saus, de",
+    "english": "sauce, the",
+    "vietnamese": "nước sốt",
+    "dutchsentence": "Welke saus wil je bij de pasta?",
+    "englishtranslate": "Which sauce do you want with the pasta?"
+  },
+  {
+    "dutch": "september",
+    "english": "September",
+    "vietnamese": "Tháng 9",
+    "dutchsentence": "In september gaan de scholen weer beginnen.",
+    "englishtranslate": "In September the schools will start again."
+  },
+  {
+    "dutch": "sinas, de",
+    "english": "orange soda, the",
+    "vietnamese": "nước cam có ga",
+    "dutchsentence": "Sinas is een populaire frisdrank.",
+    "englishtranslate": "Orange soda is a popular soft drink."
+  },
+  {
+    "dutch": "sla, de",
+    "english": "lettuce, the",
+    "vietnamese": "rau diếp",
+    "dutchsentence": "Ik maak een salade met sla en tomaat.",
+    "englishtranslate": "I am making a salad with lettuce and tomato."
+  },
+  {
+    "dutch": "snack, de",
+    "english": "snack, the",
+    "vietnamese": "đồ ăn nhẹ",
+    "dutchsentence": "We kopen een snack voor onderweg.",
+    "englishtranslate": "We are buying a snack for on the go."
+  },
+  {
+    "dutch": "soep, de",
+    "english": "soup, the",
+    "vietnamese": "súp",
+    "dutchsentence": "In de winter eet ik graag warme soep.",
+    "englishtranslate": "In winter I like to eat warm soup."
+  },
+  {
+    "dutch": "sommige",
+    "english": "some",
+    "vietnamese": "một số",
+    "dutchsentence": "Sommige mensen houden niet van kaas.",
+    "englishtranslate": "Some people don't like cheese."
+  },
+  {
+    "dutch": "spaghetti, de",
+    "english": "spaghetti, the",
+    "vietnamese": "mì Ý",
+    "dutchsentence": "Spaghetti is makkelijk te maken.",
+    "englishtranslate": "Spaghetti is easy to make."
+  },
+  {
+    "dutch": "speculaas, de",
+    "english": "ginger cookie, the / speculoos, the",
+    "vietnamese": "bánh quy gừng",
+    "dutchsentence": "Speculaas is typisch Nederlands.",
+    "englishtranslate": "Speculoos (ginger cookie) is typically Dutch."
+  },
+  {
+    "dutch": "spek, het",
+    "english": "bacon, the",
+    "vietnamese": "thịt xông khói",
+    "dutchsentence": "Ik eet eieren met spek.",
+    "englishtranslate": "I eat eggs with bacon."
+  },
+  {
+    "dutch": "stokbrood, het",
+    "english": "French bread, the / baguette, the",
+    "vietnamese": "bánh mì Pháp",
+    "dutchsentence": "We kopen een stokbrood voor bij de soep.",
+    "englishtranslate": "We are buying a baguette for the soup."
+  },
+  {
+    "dutch": "straks",
+    "english": "later (soon)",
+    "vietnamese": "sau",
+    "dutchsentence": "Ik ga straks de hond uitlaten.",
+    "englishtranslate": "I will walk the dog later (soon)."
+  },
+  {
+    "dutch": "stuk, het",
+    "english": "piece, the",
+    "vietnamese": "miếng",
+    "dutchsentence": "Mag ik een klein stukje taart?",
+    "englishtranslate": "May I have a small piece of cake?"
+  },
+  {
+    "dutch": "supermarkt, de",
+    "english": "supermarket, the",
+    "vietnamese": "siêu thị",
+    "dutchsentence": "De supermarkt is om de hoek.",
+    "englishtranslate": "The supermarket is around the corner."
+  },
+  {
+    "dutch": "tas, de",
+    "english": "bag, the",
+    "vietnamese": "túi",
+    "dutchsentence": "Ik heb een boodschappentas nodig.",
+    "englishtranslate": "I need a shopping bag."
+  },
+  {
+    "dutch": "tasje, het",
+    "english": "little bag, the",
+    "vietnamese": "túi nhỏ",
+    "dutchsentence": "Wilt u een plastic tasje voor 10 cent?",
+    "englishtranslate": "Would you like a small plastic bag for 10 cents?"
+  },
+  {
+    "dutch": "toiletpapier, het",
+    "english": "toilet paper, the",
+    "vietnamese": "giấy vệ sinh",
+    "dutchsentence": "We moeten nieuw toiletpapier kopen.",
+    "englishtranslate": "We need to buy new toilet paper."
+  },
+  {
+    "dutch": "tomaat, de",
+    "english": "tomato, the",
+    "vietnamese": "cà chua",
+    "dutchsentence": "Deze tomaten zijn heel rood en rijp.",
+    "englishtranslate": "These tomatoes are very red and ripe."
+  },
+  {
+    "dutch": "tot",
+    "english": "till / until",
+    "vietnamese": "đến",
+    "dutchsentence": "Ik ben hier tot vijf uur.",
+    "englishtranslate": "I am here till five o'clock."
+  },
+  {
+    "dutch": "totaal",
+    "english": "total",
+    "vietnamese": "tổng cộng",
+    "dutchsentence": "Het totale bedrag is 15 euro.",
+    "englishtranslate": "The total amount is 15 euros."
+  },
+  {
+    "dutch": "tweede",
+    "english": "second",
+    "vietnamese": "thứ hai",
+    "dutchsentence": "Dit is de tweede keer dat ik hier ben.",
+    "englishtranslate": "This is the second time I am here."
+  },
+  {
+    "dutch": "uitgang, de",
+    "english": "exit, the",
+    "vietnamese": "lối ra",
+    "dutchsentence": "De uitgang is daar, naast de kassa.",
+    "englishtranslate": "The exit is there, next to the cash register."
+  },
+  {
+    "dutch": "uitnodiging, de",
+    "english": "invitation, the",
+    "vietnamese": "lời mời",
+    "dutchsentence": "Heb je de uitnodiging voor het feest al verstuurd?",
+    "englishtranslate": "Have you already sent the invitation for the party?"
+  },
+  {
+    "dutch": "vanaf",
+    "english": "starting at / from",
+    "vietnamese": "bắt đầu từ",
+    "dutchsentence": "De korting is geldig vanaf maandag.",
+    "englishtranslate": "The discount is valid starting on Monday."
+  },
+  {
+    "dutch": "vergeten",
+    "english": "to forget",
+    "vietnamese": "quên",
+    "dutchsentence": "Ik ben mijn portemonnee vergeten.",
+    "englishtranslate": "I forgot my wallet."
+  },
+  {
+    "dutch": "vierde",
+    "english": "fourth",
+    "vietnamese": "thứ tư",
+    "dutchsentence": "Zij zit in de vierde klas.",
+    "englishtranslate": "She is in the fourth grade/class."
+  },
+  {
+    "dutch": "vlees, het",
+    "english": "meat, the",
+    "vietnamese": "thịt",
+    "dutchsentence": "Eet jij vaak vlees?",
+    "englishtranslate": "Do you often eat meat?"
+  },
+  {
+    "dutch": "vleeswaren, de",
+    "english": "meat products, the / cold cuts, the",
+    "vietnamese": "sản phẩm thịt",
+    "dutchsentence": "De vleeswaren liggen bij de kaas.",
+    "englishtranslate": "The meat products/cold cuts are located near the cheese."
+  },
+  {
+    "dutch": "vijfde",
+    "english": "fifth",
+    "vietnamese": "thứ năm",
+    "dutchsentence": "Dit is het vijfde huis in de straat.",
+    "englishtranslate": "This is the fifth house on the street."
+  },
+  {
+    "dutch": "vla, de",
+    "english": "custard, pudding, the",
+    "vietnamese": "bánh trứng, bánh pudding",
+    "dutchsentence": "Chocoladevla is erg populair bij kinderen.",
+    "englishtranslate": "Chocolate custard/pudding is very popular with children."
+  },
+  {
+    "dutch": "volkorenbrood, het",
+    "english": "whole wheat bread, the",
+    "vietnamese": "bánh mì nguyên cám",
+    "dutchsentence": "Volkorenbrood is gezonder dan witbrood.",
+    "englishtranslate": "Whole wheat bread is healthier than white bread."
+  },
+  {
+    "dutch": "wasmiddel, het",
+    "english": "detergent, the",
+    "vietnamese": "chất tẩy rửa",
+    "dutchsentence": "Er is een aanbieding op wasmiddel.",
+    "englishtranslate": "There is a special offer on detergent."
+  },
+  {
+    "dutch": "wasverzachter, de",
+    "english": "wash softener, the / fabric softener, the",
+    "vietnamese": "chất làm mềm vải",
+    "dutchsentence": "Gebruik je wasverzachter voor de handdoeken?",
+    "englishtranslate": "Do you use fabric softener for the towels?"
+  },
+  {
+    "dutch": "wegen",
+    "english": "to weigh",
+    "vietnamese": "cân",
+    "dutchsentence": "Je moet de appels eerst wegen.",
+    "englishtranslate": "You must weigh the apples first."
+  },
+  {
+    "dutch": "wijn, de",
+    "english": "wine, the",
+    "vietnamese": "rượu vang",
+    "dutchsentence": "Welke wijn past goed bij vis?",
+    "englishtranslate": "Which wine pairs well with fish?"
+  },
+  {
+    "dutch": "winkel, de",
+    "english": "shop, the",
+    "vietnamese": "cửa hàng",
+    "dutchsentence": "Deze winkel is elke dag open.",
+    "englishtranslate": "This shop is open every day."
+  },
+  {
+    "dutch": "worden",
+    "english": "to become",
+    "vietnamese": "trở thành",
+    "dutchsentence": "Ik wil graag arts worden.",
+    "englishtranslate": "I would like to become a doctor."
+  },
+  {
+    "dutch": "worst, de",
+    "english": "sausage, the",
+    "vietnamese": "xúc xích",
+    "dutchsentence": "De rookworst is erg populair in de winter.",
+    "englishtranslate": "The smoked sausage is very popular in winter."
+  },
+  {
+    "dutch": "wortel, de",
+    "english": "carrot, the",
+    "vietnamese": "cà rốt",
+    "dutchsentence": "Konijnen houden van wortels.",
+    "englishtranslate": "Rabbits love carrots."
+  },
+  {
+    "dutch": "yoghurt, de",
+    "english": "yoghurt, the",
+    "vietnamese": "sữa chua",
+    "dutchsentence": "Naturel yoghurt is gezond.",
+    "englishtranslate": "Natural yogurt is healthy."
+  },
+  {
+    "dutch": "zak, de",
+    "english": "bag, the",
+    "vietnamese": "túi",
+    "dutchsentence": "Een zak aardappelen, alstublieft.",
+    "englishtranslate": "A bag of potatoes, please."
+  },
+  {
+    "dutch": "zuivel, de",
+    "english": "dairy products, the",
+    "vietnamese": "sản phẩm từ sữa",
+    "dutchsentence": "Zuivel moet in de koelkast bewaard worden.",
+    "englishtranslate": "Dairy products must be stored in the refrigerator."
+  },
+  {
+    "dutch": "zwaar",
+    "english": "heavy",
+    "vietnamese": "nặng",
+    "dutchsentence": "Deze tas is te zwaar.",
+    "englishtranslate": "This bag is too heavy."
+  }
 ]

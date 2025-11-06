@@ -1,99 +1,681 @@
 [
-    {"dutch": "voet", "english": "foot", "vietnamese": "chân"},
-    {"dutch": "jammer", "english": "unfortunately / a pity", "vietnamese": "thật không may là một điều đáng tiếc"},
-    {"dutch": "jong", "english": "young", "vietnamese": "trẻ"},
-    {"dutch": "kind, het", "english": "child, the", "vietnamese": "đứa trẻ"},
-    {"dutch": "klein", "english": "small", "vietnamese": "nhỏ"},
-    {"dutch": "kort", "english": "short", "vietnamese": "thấp"},
-    {"dutch": "krullend", "english": "curly", "vietnamese": "xoăn"},
-    {"dutch": "lang", "english": "long", "vietnamese": "dài"},
-    {"dutch": "langzaam", "english": "slow(ly)", "vietnamese": "chậm"},
-    {"dutch": "leven", "english": "to live", "vietnamese": "để sống"},
-    {"dutch": "lijken op", "english": "to resemble", "vietnamese": "giống"},
-    {"dutch": "logeren", "english": "to stay over", "vietnamese": "ở lại"},
-    {"dutch": "lui", "english": "lazy", "vietnamese": "lười biếng"},
-    {"dutch": "mensen, de", "english": "people, the", "vietnamese": "người"},
-    {"dutch": "natuurlijk", "english": "of course", "vietnamese": "tất nhiên"},
-    {"dutch": "neef, de", "english": "nephew, the / cousin, the", "vietnamese": "cháu trai / anh em họ"},
-    {"dutch": "netjes", "english": "decent", "vietnamese": "đàng hoàng"},
-    {"dutch": "nicht, de", "english": "niece, the / female cousin, the", "vietnamese": "cháu gái / chị em họ"},
-    {"dutch": "nog", "english": "yet / still / further", "vietnamese": "vẫn / thêm nữa"},
-    {"dutch": "normaal", "english": "normal", "vietnamese": "bình thường"},
-    {"dutch": "nuchter", "english": "down-to-earth", "vietnamese": "thực tế"},
-    {"dutch": "of", "english": "or", "vietnamese": "hoặc"},
-    {"dutch": "oma, de", "english": "grandmother, the", "vietnamese": "bà"},
-    {"dutch": "ongeduldig", "english": "impatient", "vietnamese": "thiếu kiên nhẫn"},
-    {"dutch": "ongeveer", "english": "approximately", "vietnamese": "khoảng"},
-    {"dutch": "onzeker", "english": "uncertain", "vietnamese": "không chắc chắn"},
-    {"dutch": "oog, het", "english": "eye, the", "vietnamese": "mắt"},
-    {"dutch": "oom, de", "english": "uncle, the", "vietnamese": "chú"},
-    {"dutch": "opa, de", "english": "grandfather, the", "vietnamese": "ông"},
-    {"dutch": "optimistisch", "english": "optimistic", "vietnamese": "lạc quan"},
-    {"dutch": "oud", "english": "old", "vietnamese": "già"},
-    {"dutch": "overleden", "english": "deceased", "vietnamese": "đã qua đời"},
-    {"dutch": "pessimistisch", "english": "pessimistic", "vietnamese": "bi quan"},
-    {"dutch": "postuur, het", "english": "posture, the", "vietnamese": "tư thế"},
-    {"dutch": "precies", "english": "precise, exactly", "vietnamese": "chính xác"},
-    {"dutch": "realistisch", "english": "realistic", "vietnamese": "thực tế"},
-    {"dutch": "romantisch", "english": "romantic", "vietnamese": "lãng mạn"},
-    {"dutch": "rustig", "english": "quiet", "vietnamese": "yên tĩnh"},
-    {"dutch": "aardig", "english": "nice, friendly", "vietnamese": "tốt bụng"},
-    {"dutch": "altijd", "english": "always", "vietnamese": "luôn luôn"},
-    {"dutch": "baard, de", "english": "beard, the", "vietnamese": "râu"},
-    {"dutch": "beroep, het", "english": "profession, the", "vietnamese": "nghề nghiệp"},
-    {"dutch": "beschrijven", "english": "to describe", "vietnamese": "mô tả"},
-    {"dutch": "bijvoorbeeld", "english": "for example", "vietnamese": "ví dụ"},
-    {"dutch": "blond", "english": "blond", "vietnamese": "vàng"},
-    {"dutch": "bril, de", "english": "glasses, the", "vietnamese": "kính"},
-    {"dutch": "broer, de", "english": "brother, the", "vietnamese": "anh trai"},
-    {"dutch": "clown, de", "english": "clown, the", "vietnamese": "chú hề"},
-    {"dutch": "denken", "english": "to think", "vietnamese": "nghĩ"},
-    {"dutch": "dezelfde", "english": "the same", "vietnamese": "giống nhau"},
-    {"dutch": "dief, de", "english": "thief, the", "vietnamese": "kẻ trộm"},
-    {"dutch": "dik", "english": "thick", "vietnamese": "dày"},
-    {"dutch": "dochter, de", "english": "daughter, the", "vietnamese": "con gái"},
-    {"dutch": "dom", "english": "stupid", "vietnamese": "ngu ngốc"},
-    {"dutch": "dood", "english": "dead", "vietnamese": "chết"},
-    {"dutch": "druk", "english": "busy", "vietnamese": "bận rộn"},
-    {"dutch": "dun", "english": "thin", "vietnamese": "mỏng"},
-    {"dutch": "elkaar", "english": "each other", "vietnamese": "nhau"},
-    {"dutch": "emotioneel", "english": "emotional", "vietnamese": "cảm xúc"},
-    {"dutch": "familie, de", "english": "family, the", "vietnamese": "gia đình"},
-    {"dutch": "fiets, de", "english": "bicycle, the", "vietnamese": "xe đạp"},
-    {"dutch": "geduldig", "english": "patient", "vietnamese": "kiên nhẫn"},
-    {"dutch": "gelukkig", "english": "luckily / happy", "vietnamese": "may mắn / hạnh phúc"},
-    {"dutch": "gemeen", "english": "mean", "vietnamese": "xấu tính"},
-    {"dutch": "gescheiden", "english": "divorced", "vietnamese": "ly hôn"},
-    {"dutch": "gespierd", "english": "muscular", "vietnamese": "cơ bắp"},
-    {"dutch": "gestolen", "english": "stolen", "vietnamese": "bị đánh cắp"},
-    {"dutch": "getrouwd", "english": "married", "vietnamese": "kết hôn"},
-    {"dutch": "grappig", "english": "funny", "vietnamese": "vui nhộn"},
-    {"dutch": "groen", "english": "green", "vietnamese": "xanh lá cây"},
-    {"dutch": "haar, het", "english": "hair, the", "vietnamese": "tóc"},
-    {"dutch": "helemaal", "english": "totally", "vietnamese": "hoàn toàn"},
-    {"dutch": "herhalen", "english": "to repeat", "vietnamese": "lặp lại"},
-    {"dutch": "iemand", "english": "somebody", "vietnamese": "ai đó"},
-    {"dutch": "ijverig", "english": "diligent", "vietnamese": "chăm chỉ"},
-    {"dutch": "schoonzus, de", "english": "sister-in-law, the", "vietnamese": "chị dâu"},
-    {"dutch": "snel", "english": "fast, quickly", "vietnamese": "nhanh chóng"},
-    {"dutch": "snor, de", "english": "mustache, the", "vietnamese": "ria mép"},
-    {"dutch": "somber", "english": "miserable", "vietnamese": "cùng khổ"},
-    {"dutch": "sportief", "english": "sporty", "vietnamese": "thể thao"},
-    {"dutch": "stamboom, de", "english": "family tree, the", "vietnamese": "cây gia phả"},
-    {"dutch": "sterk", "english": "strong", "vietnamese": "mạnh"},
-    {"dutch": "tante, de", "english": "aunt, the", "vietnamese": "dì"},
-    {"dutch": "tegenovergestelde, het", "english": "opposite, the", "vietnamese": "ngược lại"},
-    {"dutch": "topsporter, de", "english": "professional athlete, the", "vietnamese": "vận động viên chuyên nghiệp"},
-    {"dutch": "uiterlijk, het", "english": "appearance, the", "vietnamese": "ngoại hình"},
-    {"dutch": "uitspraak, de", "english": "pronunciation, the", "vietnamese": "phát âm"},
-    {"dutch": "vader, de", "english": "father, the", "vietnamese": "cha"},
-    {"dutch": "vrolijk", "english": "gay, cheerful", "vietnamese": "vui vẻ"},
-    {"dutch": "want", "english": "because", "vietnamese": "bởi vì"},
-    {"dutch": "wegfietsen", "english": "to bike away", "vietnamese": "đi xe đạp"},
-    {"dutch": "wisselen", "english": "to change", "vietnamese": "thay đổi"},
-    {"dutch": "zelfverzekerd", "english": "confident", "vietnamese": "tự tin"},
-    {"dutch": "zoon, de", "english": "son, the", "vietnamese": "con trai"},
-    {"dutch": "zus, de", "english": "sister, the", "vietnamese": "chị gái"},
-    {"dutch": "zwager, de", "english": "brother-in-law, the", "vietnamese": "anh rể"},
-    {"dutch": "zwart", "english": "black", "vietnamese": "đen"}
+  {
+    "dutch": "voet, de",
+    "english": "foot, the",
+    "vietnamese": "chân",
+    "dutchsentence": "Mijn voet doet pijn na het rennen.",
+    "englishtranslate": "My foot hurts after running."
+  },
+  {
+    "dutch": "jammer",
+    "english": "unfortunately / a pity",
+    "vietnamese": "thật không may là một điều đáng tiếc",
+    "dutchsentence": "Wat jammer dat je niet kunt komen.",
+    "englishtranslate": "What a pity that you can't come."
+  },
+  {
+    "dutch": "jong",
+    "english": "young",
+    "vietnamese": "trẻ",
+    "dutchsentence": "Ze is nog erg jong.",
+    "englishtranslate": "She is still very young."
+  },
+  {
+    "dutch": "kind, het",
+    "english": "child, the",
+    "vietnamese": "đứa trẻ",
+    "dutchsentence": "Het kind speelt met een bal.",
+    "englishtranslate": "The child is playing with a ball."
+  },
+  {
+    "dutch": "klein",
+    "english": "small",
+    "vietnamese": "nhỏ",
+    "dutchsentence": "Mijn appartement is klein maar gezellig.",
+    "englishtranslate": "My apartment is small but cozy."
+  },
+  {
+    "dutch": "kort",
+    "english": "short",
+    "vietnamese": "thấp",
+    "dutchsentence": "Hij heeft kort haar.",
+    "englishtranslate": "He has short hair."
+  },
+  {
+    "dutch": "krullend",
+    "english": "curly",
+    "vietnamese": "xoăn",
+    "dutchsentence": "Ze heeft prachtig krullend haar.",
+    "englishtranslate": "She has beautiful curly hair."
+  },
+  {
+    "dutch": "lang",
+    "english": "long",
+    "vietnamese": "dài",
+    "dutchsentence": "Deze film duurt erg lang.",
+    "englishtranslate": "This movie lasts very long."
+  },
+  {
+    "dutch": "langzaam",
+    "english": "slow(ly)",
+    "vietnamese": "chậm",
+    "dutchsentence": "De bus rijdt erg langzaam.",
+    "englishtranslate": "The bus is driving very slowly."
+  },
+  {
+    "dutch": "leven",
+    "english": "to live",
+    "vietnamese": "để sống",
+    "dutchsentence": "Ik wil in het buitenland leven.",
+    "englishtranslate": "I want to live abroad."
+  },
+  {
+    "dutch": "lijken op",
+    "english": "to resemble",
+    "vietnamese": "giống",
+    "dutchsentence": "Hij lijkt op zijn vader.",
+    "englishtranslate": "He resembles his father."
+  },
+  {
+    "dutch": "logeren",
+    "english": "to stay over",
+    "vietnamese": "ở lại",
+    "dutchsentence": "Mijn neef komt dit weekend logeren.",
+    "englishtranslate": "My nephew is coming to stay over this weekend."
+  },
+  {
+    "dutch": "lui",
+    "english": "lazy",
+    "vietnamese": "lười biếng",
+    "dutchsentence": "Op zondag ben ik graag lui.",
+    "englishtranslate": "On Sunday I like to be lazy."
+  },
+  {
+    "dutch": "mensen, de",
+    "english": "people, the",
+    "vietnamese": "người",
+    "dutchsentence": "Er zijn veel mensen in het park.",
+    "englishtranslate": "There are many people in the park."
+  },
+  {
+    "dutch": "natuurlijk",
+    "english": "of course",
+    "vietnamese": "tất nhiên",
+    "dutchsentence": "Natuurlijk kun je mijn auto lenen.",
+    "englishtranslate": "Of course you can borrow my car."
+  },
+  {
+    "dutch": "neef, de",
+    "english": "nephew, the / cousin, the",
+    "vietnamese": "cháu trai / anh em họ",
+    "dutchsentence": "Mijn neef is student.",
+    "englishtranslate": "My nephew/male cousin is a student."
+  },
+  {
+    "dutch": "netjes",
+    "english": "decent, neat",
+    "vietnamese": "đàng hoàng",
+    "dutchsentence": "Hij kleedt zich altijd netjes.",
+    "englishtranslate": "He always dresses neatly/decently."
+  },
+  {
+    "dutch": "nicht, de",
+    "english": "niece, the / female cousin, the",
+    "vietnamese": "cháu gái / chị em họ",
+    "dutchsentence": "Mijn nicht woont in Duitsland.",
+    "englishtranslate": "My niece/female cousin lives in Germany."
+  },
+  {
+    "dutch": "nog",
+    "english": "yet / still / further",
+    "vietnamese": "vẫn / thêm nữa",
+    "dutchsentence": "Heb je nog iets nodig?",
+    "englishtranslate": "Do you still need anything?"
+  },
+  {
+    "dutch": "normaal",
+    "english": "normal",
+    "vietnamese": "bình thường",
+    "dutchsentence": "Dat is een normale reactie.",
+    "englishtranslate": "That is a normal reaction."
+  },
+  {
+    "dutch": "nuchter",
+    "english": "down-to-earth",
+    "vietnamese": "thực tế",
+    "dutchsentence": "Zij is een erg nuchtere persoon.",
+    "englishtranslate": "She is a very down-to-earth person."
+  },
+  {
+    "dutch": "of",
+    "english": "or",
+    "vietnamese": "hoặc",
+    "dutchsentence": "Wil je koffie of thee?",
+    "englishtranslate": "Do you want coffee or tea?"
+  },
+  {
+    "dutch": "oma, de",
+    "english": "grandmother, the",
+    "vietnamese": "bà",
+    "dutchsentence": "Mijn oma bakt heerlijke koekjes.",
+    "englishtranslate": "My grandmother bakes delicious cookies."
+  },
+  {
+    "dutch": "ongeduldig",
+    "english": "impatient",
+    "vietnamese": "thiếu kiên nhẫn",
+    "dutchsentence": "Hij is een ongeduldig persoon.",
+    "englishtranslate": "He is an impatient person."
+  },
+  {
+    "dutch": "ongeveer",
+    "english": "approximately",
+    "vietnamese": "khoảng",
+    "dutchsentence": "De reis duurt ongeveer twee uur.",
+    "englishtranslate": "The trip lasts approximately two hours."
+  },
+  {
+    "dutch": "onzeker",
+    "english": "uncertain",
+    "vietnamese": "không chắc chắn",
+    "dutchsentence": "Ze voelt zich onzeker over haar presentatie.",
+    "englishtranslate": "She feels uncertain about her presentation."
+  },
+  {
+    "dutch": "oog, het",
+    "english": "eye, the",
+    "vietnamese": "mắt",
+    "dutchsentence": "Ze heeft groene ogen.",
+    "englishtranslate": "She has green eyes."
+  },
+  {
+    "dutch": "oom, de",
+    "english": "uncle, the",
+    "vietnamese": "chú",
+    "dutchsentence": "Mijn oom werkt in de stad.",
+    "englishtranslate": "My uncle works in the city."
+  },
+  {
+    "dutch": "opa, de",
+    "english": "grandfather, the",
+    "vietnamese": "ông",
+    "dutchsentence": "Mijn opa vertelt leuke verhalen.",
+    "englishtranslate": "My grandfather tells nice stories."
+  },
+  {
+    "dutch": "optimistisch",
+    "english": "optimistic",
+    "vietnamese": "lạc quan",
+    "dutchsentence": "Ik ben meestal optimistisch over de toekomst.",
+    "englishtranslate": "I am usually optimistic about the future."
+  },
+  {
+    "dutch": "oud",
+    "english": "old",
+    "vietnamese": "già",
+    "dutchsentence": "Hoe oud ben je?",
+    "englishtranslate": "How old are you?"
+  },
+  {
+    "dutch": "overleden",
+    "english": "deceased",
+    "vietnamese": "đã qua đời",
+    "dutchsentence": "Zijn grootmoeder is vorig jaar overleden.",
+    "englishtranslate": "His grandmother passed away last year (is deceased)."
+  },
+  {
+    "dutch": "pessimistisch",
+    "english": "pessimistic",
+    "vietnamese": "bi quan",
+    "dutchsentence": "Probeer niet te pessimistisch te zijn.",
+    "englishtranslate": "Try not to be too pessimistic."
+  },
+  {
+    "dutch": "postuur, het",
+    "english": "posture, the",
+    "vietnamese": "tư thế",
+    "dutchsentence": "Hij heeft een sterk postuur.",
+    "englishtranslate": "He has a strong build (posture)."
+  },
+  {
+    "dutch": "precies",
+    "english": "precise, exactly",
+    "vietnamese": "chính xác",
+    "dutchsentence": "Dat is precies wat ik bedoel.",
+    "englishtranslate": "That is exactly what I mean."
+  },
+  {
+    "dutch": "realistisch",
+    "english": "realistic",
+    "vietnamese": "thực tế",
+    "dutchsentence": "Je moet realistisch zijn over je kansen.",
+    "englishtranslate": "You have to be realistic about your chances."
+  },
+  {
+    "dutch": "romantisch",
+    "english": "romantic",
+    "vietnamese": "lãng mạn",
+    "dutchsentence": "Hij is een heel romantisch type.",
+    "englishtranslate": "He is a very romantic type."
+  },
+  {
+    "dutch": "rustig",
+    "english": "quiet",
+    "vietnamese": "yên tĩnh",
+    "dutchsentence": "Blijf rustig en adem diep in.",
+    "englishtranslate": "Stay quiet (calm) and breathe deeply."
+  },
+  {
+    "dutch": "aardig",
+    "english": "nice, friendly",
+    "vietnamese": "tốt bụng",
+    "dutchsentence": "Mijn buren zijn erg aardig.",
+    "englishtranslate": "My neighbors are very nice/friendly."
+  },
+  {
+    "dutch": "altijd",
+    "english": "always",
+    "vietnamese": "luôn luôn",
+    "dutchsentence": "Zij komt altijd te laat.",
+    "englishtranslate": "She is always late."
+  },
+  {
+    "dutch": "baard, de",
+    "english": "beard, the",
+    "vietnamese": "râu",
+    "dutchsentence": "Hij laat zijn baard groeien.",
+    "englishtranslate": "He is growing his beard."
+  },
+  {
+    "dutch": "beroep, het",
+    "english": "profession, the",
+    "vietnamese": "nghề nghiệp",
+    "dutchsentence": "Wat is jouw beroep?",
+    "englishtranslate": "What is your profession?"
+  },
+  {
+    "dutch": "beschrijven",
+    "english": "to describe",
+    "vietnamese": "mô tả",
+    "dutchsentence": "Kun je het schilderij beschrijven?",
+    "englishtranslate": "Can you describe the painting?"
+  },
+  {
+    "dutch": "bijvoorbeeld",
+    "english": "for example",
+    "vietnamese": "ví dụ",
+    "dutchsentence": "Ik heb veel hobby's, bijvoorbeeld koken.",
+    "englishtranslate": "I have many hobbies, for example cooking."
+  },
+  {
+    "dutch": "blond",
+    "english": "blond",
+    "vietnamese": "vàng",
+    "dutchsentence": "De kinderen hebben allebei blond haar.",
+    "englishtranslate": "The children both have blond hair."
+  },
+  {
+    "dutch": "bril, de",
+    "english": "glasses, the",
+    "vietnamese": "kính",
+    "dutchsentence": "Ik draag een bril om te lezen.",
+    "englishtranslate": "I wear glasses to read."
+  },
+  {
+    "dutch": "broer, de",
+    "english": "brother, the",
+    "vietnamese": "anh trai",
+    "dutchsentence": "Mijn oudere broer woont in Engeland.",
+    "englishtranslate": "My older brother lives in England."
+  },
+  {
+    "dutch": "clown, de",
+    "english": "clown, the",
+    "vietnamese": "chú hề",
+    "dutchsentence": "De clown maakte de kinderen aan het lachen.",
+    "englishtranslate": "The clown made the children laugh."
+  },
+  {
+    "dutch": "denken",
+    "english": "to think",
+    "vietnamese": "nghĩ",
+    "dutchsentence": "Ik denk dat we gelijk hebben.",
+    "englishtranslate": "I think we are right."
+  },
+  {
+    "dutch": "dezelfde",
+    "english": "the same",
+    "vietnamese": "giống nhau",
+    "dutchsentence": "Wij hebben dezelfde trui.",
+    "englishtranslate": "We have the same sweater."
+  },
+  {
+    "dutch": "dief, de",
+    "english": "thief, the",
+    "vietnamese": "kẻ trộm",
+    "dutchsentence": "De dief is gisteravond ontsnapt.",
+    "englishtranslate": "The thief escaped last night."
+  },
+  {
+    "dutch": "dik",
+    "english": "thick",
+    "vietnamese": "dày",
+    "dutchsentence": "Dit boek is erg dik.",
+    "englishtranslate": "This book is very thick."
+  },
+  {
+    "dutch": "dochter, de",
+    "english": "daughter, the",
+    "vietnamese": "con gái",
+    "dutchsentence": "Mijn dochter gaat naar de middelbare school.",
+    "englishtranslate": "My daughter goes to high school."
+  },
+  {
+    "dutch": "dom",
+    "english": "stupid",
+    "vietnamese": "ngu ngốc",
+    "dutchsentence": "Dat was een domme fout.",
+    "englishtranslate": "That was a stupid mistake."
+  },
+  {
+    "dutch": "dood",
+    "english": "dead",
+    "vietnamese": "chết",
+    "dutchsentence": "De plant in de keuken is dood.",
+    "englishtranslate": "The plant in the kitchen is dead."
+  },
+  {
+    "dutch": "druk",
+    "english": "busy",
+    "vietnamese": "bận rộn",
+    "dutchsentence": "Ik heb het erg druk met werk.",
+    "englishtranslate": "I am very busy with work."
+  },
+  {
+    "dutch": "dun",
+    "english": "thin",
+    "vietnamese": "mỏng",
+    "dutchsentence": "Zij is een dunne, sportieve vrouw.",
+    "englishtranslate": "She is a thin, sporty woman."
+  },
+  {
+    "dutch": "elkaar",
+    "english": "each other",
+    "vietnamese": "nhau",
+    "dutchsentence": "We kennen elkaar al lang.",
+    "englishtranslate": "We have known each other for a long time."
+  },
+  {
+    "dutch": "emotioneel",
+    "english": "emotional",
+    "vietnamese": "cảm xúc",
+    "dutchsentence": "Hij is erg emotioneel na de film.",
+    "englishtranslate": "He is very emotional after the movie."
+  },
+  {
+    "dutch": "familie, de",
+    "english": "family, the",
+    "vietnamese": "gia đình",
+    "dutchsentence": "Mijn familie is erg belangrijk voor me.",
+    "englishtranslate": "My family is very important to me."
+  },
+  {
+    "dutch": "fiets, de",
+    "english": "bicycle, the",
+    "vietnamese": "xe đạp",
+    "dutchsentence": "Ik ga met de fiets naar mijn werk.",
+    "englishtranslate": "I go to work by bicycle."
+  },
+  {
+    "dutch": "geduldig",
+    "english": "patient",
+    "vietnamese": "kiên nhẫn",
+    "dutchsentence": "De docent is heel geduldig.",
+    "englishtranslate": "The teacher is very patient."
+  },
+  {
+    "dutch": "gelukkig",
+    "english": "luckily / happy",
+    "vietnamese": "may mắn / hạnh phúc",
+    "dutchsentence": "Ze zijn erg gelukkig samen.",
+    "englishtranslate": "They are very happy together."
+  },
+  {
+    "dutch": "gemeen",
+    "english": "mean",
+    "vietnamese": "xấu tính",
+    "dutchsentence": "Het is gemeen om zo te praten.",
+    "englishtranslate": "It is mean to talk like that."
+  },
+  {
+    "dutch": "gescheiden",
+    "english": "divorced",
+    "vietnamese": "ly hôn",
+    "dutchsentence": "Mijn ouders zijn vorig jaar gescheiden.",
+    "englishtranslate": "My parents got divorced last year."
+  },
+  {
+    "dutch": "gespierd",
+    "english": "muscular",
+    "vietnamese": "cơ bắp",
+    "dutchsentence": "Hij heeft brede schouders en is gespierd.",
+    "englishtranslate": "He has broad shoulders and is muscular."
+  },
+  {
+    "dutch": "gestolen",
+    "english": "stolen",
+    "vietnamese": "bị đánh cắp",
+    "dutchsentence": "Mijn telefoon is gestolen.",
+    "englishtranslate": "My phone has been stolen."
+  },
+  {
+    "dutch": "getrouwd",
+    "english": "married",
+    "vietnamese": "kết hôn",
+    "dutchsentence": "Zij zijn al tien jaar getrouwd.",
+    "englishtranslate": "They have been married for ten years."
+  },
+  {
+    "dutch": "grappig",
+    "english": "funny",
+    "vietnamese": "vui nhộn",
+    "dutchsentence": "Die mop was erg grappig.",
+    "englishtranslate": "That joke was very funny."
+  },
+  {
+    "dutch": "groen",
+    "english": "green",
+    "vietnamese": "xanh lá cây",
+    "dutchsentence": "De bladeren aan de boom zijn groen.",
+    "englishtranslate": "The leaves on the tree are green."
+  },
+  {
+    "dutch": "haar, het",
+    "english": "hair, the",
+    "vietnamese": "tóc",
+    "dutchsentence": "Ze heeft lang, donker haar.",
+    "englishtranslate": "She has long, dark hair."
+  },
+  {
+    "dutch": "helemaal",
+    "english": "totally",
+    "vietnamese": "hoàn toàn",
+    "dutchsentence": "Ik ben het helemaal met je eens.",
+    "englishtranslate": "I totally agree with you."
+  },
+  {
+    "dutch": "herhalen",
+    "english": "to repeat",
+    "vietnamese": "lặp lại",
+    "dutchsentence": "Kunt u die zin herhalen, alstublieft?",
+    "englishtranslate": "Could you repeat that sentence, please?"
+  },
+  {
+    "dutch": "iemand",
+    "english": "somebody",
+    "vietnamese": "ai đó",
+    "dutchsentence": "Is er iemand thuis?",
+    "englishtranslate": "Is somebody home?"
+  },
+  {
+    "dutch": "ijverig",
+    "english": "diligent",
+    "vietnamese": "chăm chỉ",
+    "dutchsentence": "Hij is een zeer ijverige student.",
+    "englishtranslate": "He is a very diligent student."
+  },
+  {
+    "dutch": "schoonzus, de",
+    "english": "sister-in-law, the",
+    "vietnamese": "chị dâu",
+    "dutchsentence": "Mijn schoonzus is in het ziekenhuis.",
+    "englishtranslate": "My sister-in-law is in the hospital."
+  },
+  {
+    "dutch": "snel",
+    "english": "fast, quickly",
+    "vietnamese": "nhanh chóng",
+    "dutchsentence": "Je moet sneller werken.",
+    "englishtranslate": "You need to work faster/more quickly."
+  },
+  {
+    "dutch": "snor, de",
+    "english": "mustache, the",
+    "vietnamese": "ria mép",
+    "dutchsentence": "De man heeft een grote snor.",
+    "englishtranslate": "The man has a large mustache."
+  },
+  {
+    "dutch": "somber",
+    "english": "miserable",
+    "vietnamese": "cùng khổ",
+    "dutchsentence": "Het sombere weer past bij mijn humeur.",
+    "englishtranslate": "The miserable weather suits my mood."
+  },
+  {
+    "dutch": "sportief",
+    "english": "sporty",
+    "vietnamese": "thể thao",
+    "dutchsentence": "Zij is erg sportief en fit.",
+    "englishtranslate": "She is very sporty and fit."
+  },
+  {
+    "dutch": "stamboom, de",
+    "english": "family tree, the",
+    "vietnamese": "cây gia phả",
+    "dutchsentence": "We hebben een stamboom van de familie gemaakt.",
+    "englishtranslate": "We made a family tree."
+  },
+  {
+    "dutch": "sterk",
+    "english": "strong",
+    "vietnamese": "mạnh",
+    "dutchsentence": "Mijn broer is sterk, hij kan veel tillen.",
+    "englishtranslate": "My brother is strong, he can lift a lot."
+  },
+  {
+    "dutch": "tante, de",
+    "english": "aunt, the",
+    "vietnamese": "dì",
+    "dutchsentence": "Mijn tante komt op bezoek.",
+    "englishtranslate": "My aunt is coming to visit."
+  },
+  {
+    "dutch": "tegenovergestelde, het",
+    "english": "opposite, the",
+    "vietnamese": "ngược lại",
+    "dutchsentence": "Het tegenovergestelde van 'snel' is 'langzaam'.",
+    "englishtranslate": "The opposite of 'fast' is 'slow'."
+  },
+  {
+    "dutch": "topsporter, de",
+    "english": "professional athlete, the",
+    "vietnamese": "vận động viên chuyên nghiệp",
+    "dutchsentence": "Als topsporter traint ze elke dag.",
+    "englishtranslate": "As a professional athlete, she trains every day."
+  },
+  {
+    "dutch": "uiterlijk, het",
+    "english": "appearance, the",
+    "vietnamese": "ngoại hình",
+    "dutchsentence": "Het uiterlijk is niet het belangrijkst.",
+    "englishtranslate": "The appearance is not the most important thing."
+  },
+  {
+    "dutch": "uitspraak, de",
+    "english": "pronunciation, the",
+    "vietnamese": "phát âm",
+    "dutchsentence": "Zijn uitspraak van het Nederlands is goed.",
+    "englishtranslate": "His pronunciation of Dutch is good."
+  },
+  {
+    "dutch": "vader, de",
+    "english": "father, the",
+    "vietnamese": "cha",
+    "dutchsentence": "Mijn vader is al met pensioen.",
+    "englishtranslate": "My father is already retired."
+  },
+  {
+    "dutch": "vrolijk",
+    "english": "gay, cheerful",
+    "vietnamese": "vui vẻ",
+    "dutchsentence": "Ze heeft altijd een vrolijk humeur.",
+    "englishtranslate": "She always has a cheerful mood."
+  },
+  {
+    "dutch": "want",
+    "english": "because",
+    "vietnamese": "bởi vì",
+    "dutchsentence": "Ik ga niet, want ik ben ziek.",
+    "englishtranslate": "I am not going, because I am sick."
+  },
+  {
+    "dutch": "wegfietsen",
+    "english": "to bike away",
+    "vietnamese": "đi xe đạp",
+    "dutchsentence": "Na het gesprek fietste hij weg.",
+    "englishtranslate": "After the conversation, he biked away."
+  },
+  {
+    "dutch": "wisselen",
+    "english": "to change",
+    "vietnamese": "thay đổi",
+    "dutchsentence": "Ik moet mijn geld wisselen voor euro's.",
+    "englishtranslate": "I need to change my money for euros."
+  },
+  {
+    "dutch": "zelfverzekerd",
+    "english": "confident",
+    "vietnamese": "tự tin",
+    "dutchsentence": "Hij komt heel zelfverzekerd over.",
+    "englishtranslate": "He comes across as very confident."
+  },
+  {
+    "dutch": "zoon, de",
+    "english": "son, the",
+    "vietnamese": "con trai",
+    "dutchsentence": "Onze zoon studeert architectuur.",
+    "englishtranslate": "Our son is studying architecture."
+  },
+  {
+    "dutch": "zus, de",
+    "english": "sister, the",
+    "vietnamese": "chị gái",
+    "dutchsentence": "Ik heb één zus en twee broers.",
+    "englishtranslate": "I have one sister and two brothers."
+  },
+  {
+    "dutch": "zwager, de",
+    "english": "brother-in-law, the",
+    "vietnamese": "anh rể",
+    "dutchsentence": "Mijn zwager werkt als leraar.",
+    "englishtranslate": "My brother-in-law works as a teacher."
+  },
+  {
+    "dutch": "zwart",
+    "english": "black",
+    "vietnamese": "đen",
+    "dutchsentence": "Zij draagt vaak zwarte kleding.",
+    "englishtranslate": "She often wears black clothing."
+  }
 ]

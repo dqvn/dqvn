@@ -1,74 +1,506 @@
 [
-    {"dutch": "afgelopen", "english": "last", "vietnamese": "cuối cùng"},
-    {"dutch": "aflopen", "english": "to finish", "vietnamese": "kết thúc"},
-    {"dutch": "bankpas, de", "english": "cash card, the", "vietnamese": "thẻ rút tiền"},
-    {"dutch": "bedenken", "english": "to think", "vietnamese": "suy nghĩ"},
-    {"dutch": "beestje, het", "english": "little animal, the", "vietnamese": "con vật nhỏ"},
-    {"dutch": "berg, de", "english": "mountain, the", "vietnamese": "núi"},
-    {"dutch": "bezichtigen", "english": "to view", "vietnamese": "xem"},
-    {"dutch": "bezoeken", "english": "to visit", "vietnamese": "đến thăm"},
-    {"dutch": "bikini, de", "english": "bikini, the", "vietnamese": "áo tắm hai mảnh"},
-    {"dutch": "boeken", "english": "to book", "vietnamese": "đặt chỗ"},
-    {"dutch": "boot, de", "english": "boat, the", "vietnamese": "thuyền"},
-    {"dutch": "buren, de", "english": "neighbours, the", "vietnamese": "hàng xóm"},
-    {"dutch": "dromen", "english": "to dream", "vietnamese": "mơ"},
-    {"dutch": "eerder", "english": "before", "vietnamese": "trước"},
-    {"dutch": "eergisteren", "english": "day before yesterday, the", "vietnamese": "hôm kia"},
-    {"dutch": "eindelijk", "english": "finally", "vietnamese": "cuối cùng"},
-    {"dutch": "excursie, de", "english": "excursion, the", "vietnamese": "chuyến tham quan"},
-    {"dutch": "fantastisch", "english": "fantastic", "vietnamese": "tuyệt vời"},
-    {"dutch": "foto, de", "english": "photograph, the", "vietnamese": "bức ảnh"},
-    {"dutch": "geleden", "english": "ago", "vietnamese": "trước đây"},
-    {"dutch": "gisteravond", "english": "yesterday evening", "vietnamese": "tối qua"},
-    {"dutch": "gisteren", "english": "yesterday", "vietnamese": "hôm qua"},
-    {"dutch": "heerlijk", "english": "delicious, lovely, wonderful", "vietnamese": "ngon, đáng yêu, tuyệt vời"},
-    {"dutch": "ijsje, het", "english": "ice cream", "vietnamese": "kem"},
-    {"dutch": "insmeren", "english": "to grease / to rub on", "vietnamese": "bôi"},
-    {"dutch": "irriteren", "english": "to irritate", "vietnamese": "gây khó chịu"},
-    {"dutch": "kerk, de", "english": "church, the", "vietnamese": "nhà thờ"},
-    {"dutch": "klimmen", "english": "to climb", "vietnamese": "leo"},
-    {"dutch": "lol, de", "english": "fun, the", "vietnamese": "niềm vui"},
-    {"dutch": "museum, het", "english": "museum, the", "vietnamese": "bảo tàng"},
-    {"dutch": "nacht, de", "english": "night, the", "vietnamese": "đêm"},
-    {"dutch": "natuur, de", "english": "nature, the", "vietnamese": "thiên nhiên"},
-    {"dutch": "nodig", "english": "necessary", "vietnamese": "cần thiết"},
-    {"dutch": "olijf, de", "english": "olive, the", "vietnamese": "ô liu"},
-    {"dutch": "onvoorzichtig", "english": "careless", "vietnamese": "bất cẩn"},
-    {"dutch": "opruimen", "english": "to tidy up", "vietnamese": "dọn dẹp"},
-    {"dutch": "paar, het", "english": "couple, the", "vietnamese": "cặp đôi"},
-    {"dutch": "pakken", "english": "to pack", "vietnamese": "đóng gói"},
-    {"dutch": "paspoort, het", "english": "passport, the", "vietnamese": "hộ chiếu"},
-    {"dutch": "rit, de", "english": "trip, the", "vietnamese": "chuyến đi"},
-    {"dutch": "ruzie, de", "english": "quarrel, the", "vietnamese": "cãi nhau"},
-    {"dutch": "schaatsen", "english": "to ice skate", "vietnamese": "trượt băng"},
-    {"dutch": "school, de", "english": "school, the", "vietnamese": "trường học"},
-    {"dutch": "slapen", "english": "to sleep", "vietnamese": "ngủ"},
-    {"dutch": "souvenir, het", "english": "souvenir, the", "vietnamese": "quà lưu niệm"},
-    {"dutch": "strand, het", "english": "beach, the", "vietnamese": "bãi biển"},
-    {"dutch": "stress, de", "english": "stress, the", "vietnamese": "căng thẳng"},
-    {"dutch": "stressvol", "english": "stressful", "vietnamese": "căng thẳng"},
-    {"dutch": "strijken", "english": "to iron", "vietnamese": "ủi"},
-    {"dutch": "tent, de", "english": "tent, the", "vietnamese": "lều"},
-    {"dutch": "trouwens", "english": "by the way", "vietnamese": "nhân tiện"},
-    {"dutch": "trui, de", "english": "jumper, the", "vietnamese": "áo len"},
-    {"dutch": "vakantie, de", "english": "holidays, the", "vietnamese": "kỳ nghỉ"},
-    {"dutch": "vakantiebestemming, de", "english": "holiday destination, the", "vietnamese": "điểm đến kỳ nghỉ"},
-    {"dutch": "van tevoren", "english": "beforehand", "vietnamese": "trước"},
-    {"dutch": "vanmorgen", "english": "this morning", "vietnamese": "sáng nay"},
-    {"dutch": "vannacht", "english": "last night", "vietnamese": "đêm qua"},
-    {"dutch": "varen", "english": "to travel by boat", "vietnamese": "đi thuyền"},
-    {"dutch": "verbranden", "english": "to get a sunburn", "vietnamese": "bị cháy nắng"},
-    {"dutch": "vermaken (zich -)", "english": "to enjoy oneself", "vietnamese": "tận hưởng"},
-    {"dutch": "vermoeiend", "english": "tiring", "vietnamese": "mệt mỏi"},
-    {"dutch": "vorig", "english": "last", "vietnamese": "trước"},
-    {"dutch": "waarschuwen", "english": "to warn", "vietnamese": "cảnh báo"},
-    {"dutch": "wakker", "english": "awake", "vietnamese": "tỉnh táo"},
-    {"dutch": "wennen", "english": "to get used to", "vietnamese": "quen với"},
-    {"dutch": "winkelen", "english": "to shop", "vietnamese": "mua sắm"},
-    {"dutch": "zee, de", "english": "sea, the", "vietnamese": "biển"},
-    {"dutch": "zomer, de", "english": "summer, the", "vietnamese": "mùa hè"},
-    {"dutch": "zonnebrandcrème, de", "english": "sun tan lotion, the", "vietnamese": "kem chống nắng"},
-    {"dutch": "zonnen", "english": "to sunbathe", "vietnamese": "tắm nắng"},
-    {"dutch": "zwembad, het", "english": "swimming pool, the", "vietnamese": "hồ bơi"},
-    {"dutch": "zwembroek, de", "english": "bathing trunks, the", "vietnamese": "quần bơi"}
+  {
+    "dutch": "afgelopen",
+    "english": "last (past)",
+    "vietnamese": "cuối cùng (đã qua)",
+    "dutchsentence": "Afgelopen zomer waren we op vakantie in Spanje.",
+    "englishtranslate": "Last summer we were on holiday in Spain."
+  },
+  {
+    "dutch": "aflopen",
+    "english": "to finish / to end (a time period)",
+    "vietnamese": "kết thúc",
+    "dutchsentence": "Onze vakantie zal volgende week aflopen.",
+    "englishtranslate": "Our holiday will end next week."
+  },
+  {
+    "dutch": "bankpas, de",
+    "english": "cash card, the / bank card, the",
+    "vietnamese": "thẻ rút tiền",
+    "dutchsentence": "Heb je je bankpas meegenomen?",
+    "englishtranslate": "Did you bring your bank card?"
+  },
+  {
+    "dutch": "bedenken",
+    "english": "to think (up) / to devise",
+    "vietnamese": "suy nghĩ",
+    "dutchsentence": "Ik moet bedenken wat we morgen gaan doen.",
+    "englishtranslate": "I have to think up what we are going to do tomorrow."
+  },
+  {
+    "dutch": "beestje, het",
+    "english": "little animal, the / bug, the",
+    "vietnamese": "con vật nhỏ",
+    "dutchsentence": "Er was een klein beestje in mijn tent.",
+    "englishtranslate": "There was a little bug/animal in my tent."
+  },
+  {
+    "dutch": "berg, de",
+    "english": "mountain, the",
+    "vietnamese": "núi",
+    "dutchsentence": "We gaan de berg beklimmen.",
+    "englishtranslate": "We are going to climb the mountain."
+  },
+  {
+    "dutch": "bezichtigen",
+    "english": "to view / to sightsee",
+    "vietnamese": "xem",
+    "dutchsentence": "We willen de oude kerk bezichtigen.",
+    "englishtranslate": "We want to view/sightsee the old church."
+  },
+  {
+    "dutch": "bezoeken",
+    "english": "to visit",
+    "vietnamese": "đến thăm",
+    "dutchsentence": "We gaan het museum bezoeken.",
+    "englishtranslate": "We are going to visit the museum."
+  },
+  {
+    "dutch": "bikini, de",
+    "english": "bikini, the",
+    "vietnamese": "áo tắm hai mảnh",
+    "dutchsentence": "Ze droeg een nieuwe bikini op het strand.",
+    "englishtranslate": "She wore a new bikini on the beach."
+  },
+  {
+    "dutch": "boeken",
+    "english": "to book",
+    "vietnamese": "đặt chỗ",
+    "dutchsentence": "We hebben de reis gisteren geboekt.",
+    "englishtranslate": "We booked the trip yesterday."
+  },
+  {
+    "dutch": "boot, de",
+    "english": "boat, the",
+    "vietnamese": "thuyền",
+    "dutchsentence": "We gaan met de boot de zee op.",
+    "englishtranslate": "We are going out to sea by boat."
+  },
+  {
+    "dutch": "buren, de",
+    "english": "neighbours, the",
+    "vietnamese": "hàng xóm",
+    "dutchsentence": "Onze buren waren ook op vakantie.",
+    "englishtranslate": "Our neighbours were also on holiday."
+  },
+  {
+    "dutch": "dromen",
+    "english": "to dream",
+    "vietnamese": "mơ",
+    "dutchsentence": "Ik droomde vannacht over de bergen.",
+    "englishtranslate": "I dreamt about the mountains last night."
+  },
+  {
+    "dutch": "eerder",
+    "english": "before / earlier",
+    "vietnamese": "trước",
+    "dutchsentence": "Ik sta nu eerder op dan eerst.",
+    "englishtranslate": "I get up earlier now than before."
+  },
+  {
+    "dutch": "eergisteren",
+    "english": "day before yesterday, the",
+    "vietnamese": "hôm kia",
+    "dutchsentence": "Eergisteren begon de excursie.",
+    "englishtranslate": "The excursion started the day before yesterday."
+  },
+  {
+    "dutch": "eindelijk",
+    "english": "finally",
+    "vietnamese": "cuối cùng",
+    "dutchsentence": "Eindelijk zijn we op onze vakantiebestemming!",
+    "englishtranslate": "Finally, we are at our holiday destination!"
+  },
+  {
+    "dutch": "excursie, de",
+    "english": "excursion, the",
+    "vietnamese": "chuyến tham quan",
+    "dutchsentence": "De excursie naar de natuur was fantastisch.",
+    "englishtranslate": "The excursion to nature was fantastic."
+  },
+  {
+    "dutch": "fantastisch",
+    "english": "fantastic",
+    "vietnamese": "tuyệt vời",
+    "dutchsentence": "Het was een fantastische vakantie.",
+    "englishtranslate": "It was a fantastic holiday."
+  },
+  {
+    "dutch": "foto, de",
+    "english": "photograph, the",
+    "vietnamese": "bức ảnh",
+    "dutchsentence": "Zij maakte veel foto’s van de zee.",
+    "englishtranslate": "She took many photographs of the sea."
+  },
+  {
+    "dutch": "geleden",
+    "english": "ago",
+    "vietnamese": "trước đây",
+    "dutchsentence": "Ik zag hem twee weken geleden.",
+    "englishtranslate": "I saw him two weeks ago."
+  },
+  {
+    "dutch": "gisteravond",
+    "english": "yesterday evening",
+    "vietnamese": "tối qua",
+    "dutchsentence": "Gisteravond waren we wakker tot laat.",
+    "englishtranslate": "Yesterday evening we were awake until late."
+  },
+  {
+    "dutch": "gisteren",
+    "english": "yesterday",
+    "vietnamese": "hôm qua",
+    "dutchsentence": "Gisteren regende het de hele dag.",
+    "englishtranslate": "Yesterday it rained all day."
+  },
+  {
+    "dutch": "heerlijk",
+    "english": "delicious, lovely, wonderful",
+    "vietnamese": "ngon, đáng yêu, tuyệt vời",
+    "dutchsentence": "Het was heerlijk weer op het strand.",
+    "englishtranslate": "The weather on the beach was lovely/wonderful."
+  },
+  {
+    "dutch": "ijsje, het",
+    "english": "ice cream, the",
+    "vietnamese": "kem",
+    "dutchsentence": "Zullen we een ijsje kopen?",
+    "englishtranslate": "Shall we buy an ice cream?"
+  },
+  {
+    "dutch": "insmeren",
+    "english": "to rub on / to lather (sunscreen)",
+    "vietnamese": "bôi",
+    "dutchsentence": "Vergeet je niet in te smeren met zonnebrandcrème.",
+    "englishtranslate": "Don't forget to rub on sunscreen."
+  },
+  {
+    "dutch": "irriteren",
+    "english": "to irritate",
+    "vietnamese": "gây khó chịu",
+    "dutchsentence": "Het constante lawaai irriteert mij.",
+    "englishtranslate": "The constant noise irritates me."
+  },
+  {
+    "dutch": "kerk, de",
+    "english": "church, the",
+    "vietnamese": "nhà thờ",
+    "dutchsentence": "In dit dorp staat een oude kerk.",
+    "englishtranslate": "There is an old church in this village."
+  },
+  {
+    "dutch": "klimmen",
+    "english": "to climb",
+    "vietnamese": "leo",
+    "dutchsentence": "Zij kunnen goed klimmen in de bergen.",
+    "englishtranslate": "They can climb well in the mountains."
+  },
+  {
+    "dutch": "lol, de",
+    "english": "fun, the (informal)",
+    "vietnamese": "niềm vui",
+    "dutchsentence": "We hebben veel lol gehad op de boot.",
+    "englishtranslate": "We had a lot of fun on the boat."
+  },
+  {
+    "dutch": "museum, het",
+    "english": "museum, the",
+    "vietnamese": "bảo tàng",
+    "dutchsentence": "Het museum is elke dag open.",
+    "englishtranslate": "The museum is open every day."
+  },
+  {
+    "dutch": "nacht, de",
+    "english": "night, the",
+    "vietnamese": "đêm",
+    "dutchsentence": "We slapen acht uur per nacht.",
+    "englishtranslate": "We sleep eight hours per night."
+  },
+  {
+    "dutch": "natuur, de",
+    "english": "nature, the",
+    "vietnamese": "thiên nhiên",
+    "dutchsentence": "We houden van wandelen in de natuur.",
+    "englishtranslate": "We like walking in nature."
+  },
+  {
+    "dutch": "nodig",
+    "english": "necessary",
+    "vietnamese": "cần thiết",
+    "dutchsentence": "Hebben we nog zonnebrandcrème nodig?",
+    "englishtranslate": "Do we still need sunscreen?"
+  },
+  {
+    "dutch": "olijf, de",
+    "english": "olive, the",
+    "vietnamese": "ô liu",
+    "dutchsentence": "Ik lust geen olijven.",
+    "englishtranslate": "I don't like olives."
+  },
+  {
+    "dutch": "onvoorzichtig",
+    "english": "careless",
+    "vietnamese": "bất cẩn",
+    "dutchsentence": "Je was onvoorzichtig met je bankpas.",
+    "englishtranslate": "You were careless with your bank card."
+  },
+  {
+    "dutch": "opruimen",
+    "english": "to tidy up",
+    "vietnamese": "dọn dẹp",
+    "dutchsentence": "Na de vakantie moet ik mijn koffers opruimen.",
+    "englishtranslate": "After the holiday I have to tidy up my suitcases."
+  },
+  {
+    "dutch": "paar, het",
+    "english": "couple, the",
+    "vietnamese": "cặp đôi",
+    "dutchsentence": "Een leuk paar wandelschoenen is nodig voor de bergen.",
+    "englishtranslate": "A nice pair of hiking boots is necessary for the mountains."
+  },
+  {
+    "dutch": "pakken",
+    "english": "to pack",
+    "vietnamese": "đóng gói",
+    "dutchsentence": "Heb je je zwembroek gepakt?",
+    "englishtranslate": "Did you pack your bathing trunks?"
+  },
+  {
+    "dutch": "paspoort, het",
+    "english": "passport, the",
+    "vietnamese": "hộ chiếu",
+    "dutchsentence": "Zonder paspoort kun je niet reizen.",
+    "englishtranslate": "You cannot travel without a passport."
+  },
+  {
+    "dutch": "rit, de",
+    "english": "trip, the / ride, the",
+    "vietnamese": "chuyến đi",
+    "dutchsentence": "De rit met de boot was erg vermoeiend.",
+    "englishtranslate": "The trip/ride by boat was very tiring."
+  },
+  {
+    "dutch": "ruzie, de",
+    "english": "quarrel, the",
+    "vietnamese": "cãi nhau",
+    "dutchsentence": "Het stel had ruzie over de vakantiebestemming.",
+    "englishtranslate": "The couple had a quarrel about the holiday destination."
+  },
+  {
+    "dutch": "schaatsen",
+    "english": "to ice skate",
+    "vietnamese": "trượt băng",
+    "dutchsentence": "In de winter gaan we schaatsen.",
+    "englishtranslate": "In the winter we go ice skating."
+  },
+  {
+    "dutch": "school, de",
+    "english": "school, the",
+    "vietnamese": "trường học",
+    "dutchsentence": "De school is gesloten wegens de vakantie.",
+    "englishtranslate": "The school is closed because of the holiday."
+  },
+  {
+    "dutch": "slapen",
+    "english": "to sleep",
+    "vietnamese": "ngủ",
+    "dutchsentence": "Ik heb vannacht heel goed geslapen.",
+    "englishtranslate": "I slept very well last night."
+  },
+  {
+    "dutch": "souvenir, het",
+    "english": "souvenir, the",
+    "vietnamese": "quà lưu niệm",
+    "dutchsentence": "Ik kocht een souvenir voor mijn buren.",
+    "englishtranslate": "I bought a souvenir for my neighbours."
+  },
+  {
+    "dutch": "strand, het",
+    "english": "beach, the",
+    "vietnamese": "bãi biển",
+    "dutchsentence": "We lagen de hele dag op het strand.",
+    "englishtranslate": "We lay on the beach all day."
+  },
+  {
+    "dutch": "stress, de",
+    "english": "stress, the",
+    "vietnamese": "căng thẳng",
+    "dutchsentence": "Ik heb veel stress van mijn werk.",
+    "englishtranslate": "I have a lot of stress from my work."
+  },
+  {
+    "dutch": "stressvol",
+    "english": "stressful",
+    "vietnamese": "căng thẳng",
+    "dutchsentence": "Dit was een stressvolle week op school.",
+    "englishtranslate": "This was a stressful week at school."
+  },
+  {
+    "dutch": "strijken",
+    "english": "to iron",
+    "vietnamese": "ủi",
+    "dutchsentence": "Ik moet al mijn kleren nog strijken.",
+    "englishtranslate": "I still need to iron all my clothes."
+  },
+  {
+    "dutch": "tent, de",
+    "english": "tent, the",
+    "vietnamese": "lều",
+    "dutchsentence": "We sliepen in een tent op de camping.",
+    "englishtranslate": "We slept in a tent at the campsite."
+  },
+  {
+    "dutch": "trouwens",
+    "english": "by the way",
+    "vietnamese": "nhân tiện",
+    "dutchsentence": "Trouwens, heb je je paspoort al gepakt?",
+    "englishtranslate": "By the way, did you already pack your passport?"
+  },
+  {
+    "dutch": "trui, de",
+    "english": "jumper, the / sweater, the",
+    "vietnamese": "áo len",
+    "dutchsentence": "Neem een warme trui mee naar de bergen.",
+    "englishtranslate": "Bring a warm jumper/sweater to the mountains."
+  },
+  {
+    "dutch": "vakantie, de",
+    "english": "holidays, the / vacation, the",
+    "vietnamese": "kỳ nghỉ",
+    "dutchsentence": "Wanneer begint jullie vakantie?",
+    "englishtranslate": "When do your holidays/vacation start?"
+  },
+  {
+    "dutch": "vakantiebestemming, de",
+    "english": "holiday destination, the",
+    "vietnamese": "điểm đến kỳ nghỉ",
+    "dutchsentence": "Italië is een populaire vakantiebestemming.",
+    "englishtranslate": "Italy is a popular holiday destination."
+  },
+  {
+    "dutch": "van tevoren",
+    "english": "beforehand / in advance",
+    "vietnamese": "trước",
+    "dutchsentence": "Je moet van tevoren je hotel boeken.",
+    "englishtranslate": "You must book your hotel beforehand/in advance."
+  },
+  {
+    "dutch": "vanmorgen",
+    "english": "this morning",
+    "vietnamese": "sáng nay",
+    "dutchsentence": "Vanmorgen zijn we wakker geworden van de zon.",
+    "englishtranslate": "This morning we woke up from the sun."
+  },
+  {
+    "dutch": "vannacht",
+    "english": "last night",
+    "vietnamese": "đêm qua",
+    "dutchsentence": "Ik heb vannacht slecht geslapen.",
+    "englishtranslate": "I slept badly last night."
+  },
+  {
+    "dutch": "varen",
+    "english": "to travel by boat / to sail",
+    "vietnamese": "đi thuyền",
+    "dutchsentence": "We gaan een uur varen op de rivier.",
+    "englishtranslate": "We are going to sail/travel by boat for an hour on the river."
+  },
+  {
+    "dutch": "verbranden",
+    "english": "to get a sunburn",
+    "vietnamese": "bị cháy nắng",
+    "dutchsentence": "Pas op, je kunt gemakkelijk verbranden in de zon.",
+    "englishtranslate": "Be careful, you can easily get a sunburn in the sun."
+  },
+  {
+    "dutch": "vermaken (zich -)",
+    "english": "to enjoy oneself",
+    "vietnamese": "tận hưởng",
+    "dutchsentence": "We vermaken ons goed op het strand.",
+    "englishtranslate": "We are enjoying ourselves well on the beach."
+  },
+  {
+    "dutch": "vermoeiend",
+    "english": "tiring",
+    "vietnamese": "mệt mỏi",
+    "dutchsentence": "De klim naar de berg was erg vermoeiend.",
+    "englishtranslate": "The climb to the mountain was very tiring."
+  },
+  {
+    "dutch": "vorig",
+    "english": "last (previous)",
+    "vietnamese": "trước",
+    "dutchsentence": "Vorig jaar reisden we naar Azië.",
+    "englishtranslate": "Last year we travelled to Asia."
+  },
+  {
+    "dutch": "waarschuwen",
+    "english": "to warn",
+    "vietnamese": "cảnh báo",
+    "dutchsentence": "Ik heb je gewaarschuwd voor de zon.",
+    "englishtranslate": "I warned you about the sun."
+  },
+  {
+    "dutch": "wakker",
+    "english": "awake",
+    "vietnamese": "tỉnh táo",
+    "dutchsentence": "Was je vannacht wakker van het geluid?",
+    "englishtranslate": "Were you awake last night from the noise?"
+  },
+  {
+    "dutch": "wennen",
+    "english": "to get used to",
+    "vietnamese": "quen với",
+    "dutchsentence": "Het kost tijd om aan een nieuwe plek te wennen.",
+    "englishtranslate": "It takes time to get used to a new place."
+  },
+  {
+    "dutch": "winkelen",
+    "english": "to shop",
+    "vietnamese": "mua sắm",
+    "dutchsentence": "We gaan winkelen voor souvenirs.",
+    "englishtranslate": "We are going shopping for souvenirs."
+  },
+  {
+    "dutch": "zee, de",
+    "english": "sea, the",
+    "vietnamese": "biển",
+    "dutchsentence": "De zee is heel blauw vandaag.",
+    "englishtranslate": "The sea is very blue today."
+  },
+  {
+    "dutch": "zomer, de",
+    "english": "summer, the",
+    "vietnamese": "mùa hè",
+    "dutchsentence": "Ik hou van de zomer.",
+    "englishtranslate": "I love the summer."
+  },
+  {
+    "dutch": "zonnebrandcrème, de",
+    "english": "sun tan lotion, the / sunscreen, the",
+    "vietnamese": "kem chống nắng",
+    "dutchsentence": "Smeer je in met zonnebrandcrème.",
+    "englishtranslate": "Rub yourself with sun tan lotion/sunscreen."
+  },
+  {
+    "dutch": "zonnen",
+    "english": "to sunbathe",
+    "vietnamese": "tắm nắng",
+    "dutchsentence": "Zij ligt graag te zonnen op het strand.",
+    "englishtranslate": "She likes to sunbathe on the beach."
+  },
+  {
+    "dutch": "zwembad, het",
+    "english": "swimming pool, the",
+    "vietnamese": "hồ bơi",
+    "dutchsentence": "Het hotel heeft een groot zwembad.",
+    "englishtranslate": "The hotel has a large swimming pool."
+  },
+  {
+    "dutch": "zwembroek, de",
+    "english": "bathing trunks, the",
+    "vietnamese": "quần bơi",
+    "dutchsentence": "Vergeet je zwembroek niet voor het zwembad.",
+    "englishtranslate": "Don't forget your bathing trunks for the swimming pool."
+  }
 ]
