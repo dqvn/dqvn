@@ -17,14 +17,17 @@
     <div id="game-container">
       <h1>Dutch-English Vocabulary Game</h1>
       <div id="question"></div>
+      <div id="sentence" class="sentence-example"></div>
       <div id="options"></div>
       <div id="result"></div>
     </div>
   </div>
   <div class="container div-with-scrollbar">
+    <button id="toggle-menu-button" class="toggle-menu-button">
+        <span class="icon">&#9776;</span> </button>
     <div class="left-menu">
       <div class="spacer">
-        <h4>Setting:</h4>
+        <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setting:</h4>
         <div id="tts-name"></div>
         <!-- Add the checkbox -->
         <input type="checkbox" id="hide-meaning" />
@@ -62,6 +65,7 @@
             <th>No.</th>
             <th>Dutch</th>
             <th>English</th>
+            <th>Sample</th>
             <th>Vietnamese</th>
           </tr>
         </thead>
