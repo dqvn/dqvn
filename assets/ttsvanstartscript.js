@@ -113,10 +113,25 @@ function createLeftMenu() {
   }
 }
 
-function getVoiceByNameAndLang(targetName, targetLang) {
+
+function getPreferredVoice() {
   const voices = window.speechSynthesis.getVoices();
-  return voices.find(voice => voice.name.includes(targetName) && voice.lang === targetLang);
+
+  // Try to find Microsoft Colette Online (Natural)
+  let preferredVoice = voices.find(voice =>
+    voice.name.includes("Microsoft Colette Online") && voice.lang === "nl-NL"
+  );
+
+  // If not found, fall back to Google Nederlands
+  if (!preferredVoice) {
+    preferredVoice = voices.find(voice =>
+      voice.name.includes("Google Nederlands") && voice.lang === "nl-NL"
+    );
+  }
+
+  return preferredVoice;
 }
+
 
 // function to speak the word using Web SpeechSynthesis API
 function speakText(text) {
@@ -148,7 +163,7 @@ function speakText(text) {
   // }
   
   window.speechSynthesis.onvoiceschanged = () => {
-    googleNederlandsVoice = getVoiceByNameAndLang("Microsoft Colette Online", "nl-NL");
+    googleNederlandsVoice = getPreferredVoice();
     console.log("Loaded voice:", voice);
   };
 
