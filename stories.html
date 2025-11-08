@@ -1624,6 +1624,26 @@
             }
         }
 
+        
+function getDutchVoice() {
+  const voices = window.speechSynthesis.getVoices();
+
+  // Try Microsoft Colette Online (Natural)
+  let selectedVoice = voices.find(voice =>
+    voice.name.includes("Microsoft Colette Online") && voice.lang === "nl-NL"
+  );
+
+  // Fallback to Google Nederlands
+  if (!selectedVoice) {
+    selectedVoice = voices.find(voice =>
+      voice.name.includes("Google Nederlands") && voice.lang === "nl-NL"
+    );
+  }
+
+  return selectedVoice;
+}
+
+        
         // Modified speech setup with settings from localStorage
         function setupSpeech() {
             if (!currentStory) return;
@@ -1631,6 +1651,9 @@
             const settings = loadSpeechSettings();
 
             utterance = new SpeechSynthesisUtterance(currentStory.content_nl);
+            
+            utterance.voice = getDutchVoice();
+
             utterance.lang = 'nl-NL';
             utterance.rate = settings.rate;
             utterance.pitch = settings.pitch;
