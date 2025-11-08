@@ -122,6 +122,13 @@ function createLeftMenu() {
   }
 }
 
+
+function getVoiceByNameAndLang(targetName, targetLang) {
+  const voices = window.speechSynthesis.getVoices();
+  return voices.find(voice => voice.name.includes(targetName) && voice.lang === targetLang);
+}
+
+
 // function to speak the word using Web SpeechSynthesis API
 function speakText(text) {
   // Check if speech synthesis is already speaking
@@ -138,18 +145,25 @@ function speakText(text) {
     return;
   }
 
-  // Find the "Google Nederlands" voice for nl-NL
-  if (!googleNederlandsVoice) {
-    googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
-      return voice.name === TTSName && voice.lang === TTSLang;
-    });
-  }
+  // // Find the "Google Nederlands" voice for nl-NL
+  // if (!googleNederlandsVoice) {
+  //   googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
+  //     return voice.name === TTSName && voice.lang === TTSLang;
+  //   });
+  // }
 
-  if (!googleNederlandsVoice) {
-    googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
-      return voice.lang === TTSLang;
-    });
-  }
+  // if (!googleNederlandsVoice) {
+  //   googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
+  //     return voice.lang === TTSLang;
+  //   });
+  // }
+
+  
+  window.speechSynthesis.onvoiceschanged = () => {
+    googleNederlandsVoice = getVoiceByNameAndLang("Microsoft Colette Online", "nl-NL");
+    console.log("Loaded voice:", voice);
+  };
+
 
   // console.log(googleNederlandsVoice);
 
@@ -366,3 +380,8 @@ function createGroup(groupKey, files) {
   groupElement.appendChild(nestedList);
   return groupElement;
 }
+
+  window.speechSynthesis.onvoiceschanged = () => {
+    googleNederlandsVoice = getVoiceByNameAndLang("Microsoft Colette Online", "nl-NL");
+    console.log("Loaded voice:", voice);
+  };
