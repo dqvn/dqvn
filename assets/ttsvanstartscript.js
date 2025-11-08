@@ -384,6 +384,6 @@ function createGroup(groupKey, files) {
   return groupElement;
 }
 window.speechSynthesis.onvoiceschanged = () => {
-    googleNederlandsVoice = getVoiceByNameAndLang("Microsoft Colette Online", "nl-NL");
+    googleNederlandsVoice = getPreferredVoice();
     console.log("Loaded voice:", voice);
 };
