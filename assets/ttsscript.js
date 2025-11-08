@@ -398,5 +398,5 @@ function createGroup(groupKey, files) {
 
   window.speechSynthesis.onvoiceschanged = () => {
     googleNederlandsVoice = getPreferredVoice();
-    console.log("Loaded voice:", voice);
+    console.log("Loaded voice:", googleNederlandsVoice);
   };
