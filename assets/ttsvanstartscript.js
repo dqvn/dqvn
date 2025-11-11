@@ -129,6 +129,12 @@ function getPreferredVoice() {
     );
   }
 
+  if (!preferredVoice) {
+    preferredVoice = voices.find(voice =>
+      voice.lang === "nl-NL"
+    );
+  }
+
   return preferredVoice;
 }
 
