@@ -155,18 +155,18 @@ function speakText(text) {
     return;
   }
 
-  // // Find the "Google Nederlands" voice for nl-NL
-  // if (!googleNederlandsVoice) {
-  //   googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
-  //     return voice.name === TTSName && voice.lang === TTSLang;
-  //   });
-  // }
+  // Find the "Google Nederlands" voice for nl-NL
+  if (!googleNederlandsVoice) {
+    googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
+      return voice.name === TTSName && voice.lang === TTSLang;
+    });
+  }
 
-  // if (!googleNederlandsVoice) {
-  //   googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
-  //     return voice.lang === TTSLang;
-  //   });
-  // }
+  if (!googleNederlandsVoice) {
+    googleNederlandsVoice = window.speechSynthesis.getVoices().find(voice => {
+      return voice.lang === TTSLang;
+    });
+  }
   
   window.speechSynthesis.onvoiceschanged = () => {
     googleNederlandsVoice = getPreferredVoice();
