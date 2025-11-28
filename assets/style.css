@@ -32,6 +32,19 @@ header {
     margin-bottom: 0px;
     /* Add some margin to separate the header from the next element */
     backdrop-filter: blur(3px);
+    /* 2. Create the mask */
+    /* The linear-gradient goes from opaque white (100% visibility) at the top */
+    /* to transparent black (0% visibility) at the bottom. */
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      white 20%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      white 20%,
+      transparent 100%
+    );
     text-shadow: 0px 0px 10px white, 0px 0px 7px white;
 }
 
