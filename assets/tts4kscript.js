@@ -105,7 +105,7 @@ function speakText(text) {
     speech.volume = 1;
     speech.rate = 0.8;
     speech.pitch = 1;
-    speech.text = text;
+    speech.text = text.replaceAll("'", "");
     speech.volume = volumeControl.value / 100;
     speech.onerror = (event) => {
       console.error("Speech synthesis error:", event.error);
