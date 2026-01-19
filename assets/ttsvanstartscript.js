@@ -187,7 +187,7 @@ function speakText(text) {
     speech.volume = 1;
     speech.rate = 0.8;
     speech.pitch = 1;
-    speech.text = text;
+    speech.text = text.replaceAll("'", "");
     speech.volume = volumeControl.value / 100;
     speech.onerror = (event) => {
       console.error("Speech synthesis error:", event.error);
@@ -210,7 +210,7 @@ function speakText(text) {
 // function to speak English the word using Web SpeechSynthesis API
 function speakEngText(text) {
   const speechENG = new SpeechSynthesisUtterance();
-  speechENG.text = text;
+  speechENG.text = text.replaceAll("'", "");
   speechENG.rate = 0.9;
   speechENG.volume = volumeControl.value / 100;
   speechENG.voice = window.speechSynthesis.getVoices()[0];
