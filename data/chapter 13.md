@@ -252,7 +252,7 @@ Một số từ vựng xuất hiện trong Unit 13:
 # **TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words (Continuation)
 
-| Dutch Word     | English Meaning | Dutch Sentence Sample                    | English Translation                  |
+| Dutch Word     | Meaning | Dutch Sentence Sample                    | English Translation                  |
 | -------------- | --------------- | ---------------------------------------- | ------------------------------------ |
 | ananas, de     | pineapple       | Ik koop een verse ananas.                | I buy a fresh pineapple.             |
 | asperge, de    | asparagus       | Asperges zijn in het voorjaar populair.  | Asparagus is popular in spring.      |

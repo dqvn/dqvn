@@ -180,7 +180,7 @@ Ví dụ:
 # **TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words (Continuation)
 
-| Dutch Word    | English Meaning     | Dutch Sentence Sample                | English Translation                   |
+| Dutch Word    | Meaning     | Dutch Sentence Sample                | English Translation                   |
 | ------------- | ------------------- | ------------------------------------ | ------------------------------------- |
 | aardig        | nice, friendly      | De buurman is heel aardig.           | The neighbor is very friendly.        |
 | advocaat, de  | lawyer              | De advocaat spreekt met zijn cliënt. | The lawyer speaks with his client.    |

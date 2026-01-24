@@ -237,7 +237,7 @@ Nếu bạn muốn, mình có thể **tạo toàn bộ bài tập Unit 3 dạng 
 # **TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words (Continuation)
 
-| Dutch Word  | English Meaning  | Dutch Sentence Sample               | English Translation                   |
+| Dutch Word  | Meaning  | Dutch Sentence Sample               | English Translation                   |
 | ----------- | ---------------- | ----------------------------------- | ------------------------------------- |
 | beroep, het | profession       | Wat is jouw beroep?                 | What is your profession?              |
 | betalen     | to pay           | Ik ga bij de kassa betalen.         | I am going to pay at the checkout.    |

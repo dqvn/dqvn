@@ -229,7 +229,7 @@ Một số từ xuất hiện trong chương:
 # **TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words (Continuation)
 
-| Dutch Word   | English Meaning | Dutch Sentence Sample                          | English Translation                         |
+| Dutch Word   | Meaning | Dutch Sentence Sample                          | English Translation                         |
 | ------------ | --------------- | ---------------------------------------------- | ------------------------------------------- |
 | azijn, de    | vinegar         | Ik doe een beetje azijn in de salade.          | I add a little vinegar to the salad.        |
 | beneden      | downstairs      | De woonkamer is beneden.                       | The living room is downstairs.              |

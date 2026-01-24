@@ -192,7 +192,7 @@ Ví dụ:
 # **X. TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words
 
-| Dutch Word       | English Meaning | Dutch Sentence Sample                     | English Translation                     |
+| Dutch Word       | Meaning | Dutch Sentence Sample                     | English Translation                     |
 | ---------------- | --------------- | ----------------------------------------- | --------------------------------------- |
 | bakken           | to bake         | Ik ga een taart bakken.                   | I am going to bake a cake.              |
 | bal, de          | ball            | De bal rolt weg.                          | The ball rolls away.                    |

@@ -199,7 +199,7 @@ Một số từ được nêu trong bài:
 # **TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words (Continuation)
 
-| Dutch Word       | English Meaning    | Dutch Sentence Sample                           | English Translation                        |
+| Dutch Word       | Meaning    | Dutch Sentence Sample                           | English Translation                        |
 | ---------------- | ------------------ | ----------------------------------------------- | ------------------------------------------ |
 | bedoelen         | to mean            | Wat bedoel je daarmee?                          | What do you mean by that?                  |
 | brug, de         | bridge             | De brug over de rivier is oud.                  | The bridge over the river is old.          |

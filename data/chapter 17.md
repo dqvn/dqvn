@@ -300,7 +300,7 @@ Ví dụ:
 # **TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words (Continuation)
 
-| Dutch Word  | English Meaning | Dutch Sentence Sample                 | English Translation                 |
+| Dutch Word  | Meaning | Dutch Sentence Sample                 | English Translation                 |
 | ----------- | --------------- | ------------------------------------- | ----------------------------------- |
 | dronken     | drunk           | Hij was gisteravond dronken.          | He was drunk last night.            |
 | jammer      | too bad         | Het is jammer dat je niet kunt komen. | It’s too bad you can’t come.        |
