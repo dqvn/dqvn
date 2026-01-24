@@ -248,3 +248,23 @@ Một số từ vựng xuất hiện trong Unit 13:
     *   nog niet / niet meer / geen … meer
     *   er + niet (bắt buộc)
     *   wel (phủ định ngược chiều)
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word     | English Meaning | Dutch Sentence Sample                    | English Translation                  |
+| -------------- | --------------- | ---------------------------------------- | ------------------------------------ |
+| ananas, de     | pineapple       | Ik koop een verse ananas.                | I buy a fresh pineapple.             |
+| asperge, de    | asparagus       | Asperges zijn in het voorjaar populair.  | Asparagus is popular in spring.      |
+| boot, de       | boat            | De boot ligt in de haven.                | The boat is in the harbor.           |
+| contant        | cash            | Je kunt hier alleen contant betalen.     | You can pay only with cash here.     |
+| duur           | expensive       | Deze jas is te duur voor mij.            | This coat is too expensive for me.   |
+| formulier, het | form            | Vul dit formulier alstublieft in.        | Please fill out this form.           |
+| gracht, de     | canal           | Amsterdam heeft veel mooie grachten.     | Amsterdam has many beautiful canals. |
+| invullen       | to fill out     | Ik moet mijn naam invullen.              | I have to fill in my name.           |
+| moeilijk       | difficult       | Deze oefening is erg moeilijk.           | This exercise is very difficult.     |
+| olijf, de      | olive           | Ik eet graag groene olijven.             | I like eating green olives.          |
+| perzik, de     | peach           | De perzik is zacht en zoet.              | The peach is soft and sweet.         |
+| proefwerk, het | test            | Morgen hebben we een proefwerk wiskunde. | Tomorrow we have a math test.        |
+| taal, de       | language        | Nederlands is een interessante taal.     | Dutch is an interesting language.    |
+| ziek           | sick            | Ik voel me vandaag ziek.                 | I feel sick today.                   |

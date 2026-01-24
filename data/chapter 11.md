@@ -217,3 +217,20 @@ Một số ví dụ xuất hiện trong bài tập Unit 11 (các trang từ ph�
 ### ✔ Comparative: -er; superlative: het -st(e)
 
 ### ✔ Superlative trước danh từ → phải có -e
+
+
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word    | English Meaning | Dutch Sentence Sample                         | English Translation                         |
+| ------------- | --------------- | --------------------------------------------- | ------------------------------------------- |
+| aantrekken    | to put on       | Ik trek mijn jas aan.                         | I put on my coat.                           |
+| afmaken       | to finish       | Ik moet mijn huiswerk afmaken.                | I need to finish my homework.               |
+| leerling, de  | student / pupil | De leerling maakt een oefening.               | The student does an exercise.               |
+| medicijn, het | medicine        | Je moet dit medicijn twee keer per dag nemen. | You must take this medicine twice a day.    |
+| oversteken    | to cross        | Kijk goed voordat je de straat oversteekt.    | Look carefully before you cross the street. |
+| slapen        | to sleep        | Ik slaap acht uur per nacht.                  | I sleep eight hours per night.              |
+| slecht        | bad             | Het weer is vandaag slecht.                   | The weather is bad today.                   |
+| wedstrijd, de | match / game    | De wedstrijd begint om drie uur.              | The match starts at three o’clock.          |
+| wiskunde, de  | math            | Wiskunde is mijn favoriete vak.               | Math is my favorite subject.                |

@@ -193,3 +193,34 @@ Một số từ được nêu trong bài:
 *   Đi với tính từ → luôn luôn + **-e**
 *   dit/dat có thể đại diện cho ý tưởng / câu
 *   dat có thể là **liên từ** “rằng”
+
+
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word       | English Meaning    | Dutch Sentence Sample                           | English Translation                        |
+| ---------------- | ------------------ | ----------------------------------------------- | ------------------------------------------ |
+| bedoelen         | to mean            | Wat bedoel je daarmee?                          | What do you mean by that?                  |
+| brug, de         | bridge             | De brug over de rivier is oud.                  | The bridge over the river is old.          |
+| gat, het         | hole               | Er zit een gat in mijn broek.                   | There is a hole in my pants.               |
+| gesloten         | closed             | De winkel is op maandag gesloten.               | The shop is closed on Mondays.             |
+| inpakken         | to pack            | Ik moet mijn koffer inpakken.                   | I need to pack my suitcase.                |
+| kapot            | broken             | Mijn telefoon is kapot gevallen.                | My phone fell and broke.                   |
+| koud             | cold               | Het water is erg koud.                          | The water is very cold.                    |
+| lelijk           | ugly               | Dat gebouw is echt lelijk.                      | That building is really ugly.              |
+| luchtbed, het    | air mattress       | We slapen op een luchtbed tijdens het kamperen. | We sleep on an air mattress while camping. |
+| mager            | skinny             | Hij is erg mager geworden.                      | He has become very skinny.                 |
+| muziek, de       | music              | Ik luister graag naar muziek.                   | I like listening to music.                 |
+| opblazen         | to inflate         | Kun je de bal voor me opblazen?                 | Can you inflate the ball for me?           |
+| slaapzak, de     | sleeping bag       | Mijn slaapzak ligt in de tent.                  | My sleeping bag is in the tent.            |
+| spullen, de      | stuff / belongings | Mijn spullen liggen in de kast.                 | My stuff is in the closet.                 |
+| stadhuis, het    | town hall          | We trouwen in het stadhuis.                     | We are getting married in the town hall.   |
+| stok, de         | stick / pole       | Hij loopt met een stok.                         | He walks with a stick.                     |
+| toren, de        | tower              | De toren is honderd meter hoog.                 | The tower is one hundred meters tall.      |
+| uitkijken        | to watch out       | Kijk uit voor de auto!                          | Watch out for the car!                     |
+| verte, de        | distance           | In de verte zie ik bergen.                      | In the distance I see mountains.           |
+| vesting, de      | fortress           | De oude vesting is een museum.                  | The old fortress is a museum.              |
+| vlooienmarkt, de | flea market        | We kochten boeken op de vlooienmarkt.           | We bought books at the flea market.        |
+| voetganger, de   | pedestrian         | De voetganger steekt de straat over.            | The pedestrian crosses the street.         |
+| waar             | true               | Dat is helemaal waar.                           | That is completely true.                   |
