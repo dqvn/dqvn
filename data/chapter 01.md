@@ -190,17 +190,41 @@ Ví dụ:
 ***
 
 # **X. TỪ VỰNG MỚI TRONG UNIT 1**
+## 📘 Glossary of New Words
 
-Một số từ chính:
+| Dutch Word       | English Meaning | Dutch Sentence Sample                     | English Translation                     |
+| ---------------- | --------------- | ----------------------------------------- | --------------------------------------- |
+| bakken           | to bake         | Ik ga een taart bakken.                   | I am going to bake a cake.              |
+| bal, de          | ball            | De bal rolt weg.                          | The ball rolls away.                    |
+| banketbakker, de | pastry chef     | De banketbakker maakt heerlijke taartjes. | The pastry chef makes delicious cakes.  |
+| bed, het         | bed             | Het kind ligt in het bed.                 | The child is lying in the bed.          |
+| bom, de          | bomb            | De bom maakte een groot geluid.           | The bomb made a loud noise.             |
+| boom, de         | tree            | De boom staat in de tuin.                 | The tree stands in the garden.          |
+| doos, de         | box             | Ik stop het speelgoed in de doos.         | I put the toys in the box.              |
+| eenentwintig     | twenty‑one      | Zij heeft eenentwintig boeken.            | She has twenty‑one books.               |
+| eenvoudig        | simple          | Het antwoord is heel eenvoudig.           | The answer is very simple.              |
+| fantastisch      | fantastic       | Dat was een fantastische dag!             | That was a fantastic day!               |
+| herfstweer, het  | fall weather    | Het herfstweer is vandaag koud en nat.    | The fall weather is cold and wet today. |
+| les, de          | lesson          | De les begint om negen uur.               | The lesson starts at nine o’clock.      |
+| lezen            | to read         | Ik lees elke avond een boek.              | I read a book every evening.            |
+| lokomotief, de   | engine          | De lokomotief trekt de trein.             | The engine pulls the train.             |
+| lopen            | to walk         | We lopen naar school.                     | We walk to school.                      |
+| naam, de         | name            | Wat is jouw naam?                         | What is your name?                      |
+| nemen            | to take         | Ik neem een glas water.                   | I take a glass of water.                |
+| pak, het         | suit / package  | Hij draagt een blauw pak.                 | He is wearing a blue suit.              |
+| raaf             | raven           | De raaf vliegt hoog in de lucht.          | The raven flies high in the sky.        |
+| raden            | to guess        | Kun jij raden wat ik denk?                | Can you guess what I’m thinking?        |
+| regenjas, de     | raincoat        | Ik trek mijn regenjas aan.                | I put on my raincoat.                   |
+| schrijven        | to write        | Hij leert schrijven op school.            | He learns to write at school.           |
+| schuur, de       | shed / barn     | De fietsen staan in de schuur.            | The bikes are in the shed.              |
+| spelen           | to play         | De kinderen spelen in het park.           | The children play in the park.          |
+| telefoneren      | to phone        | Ik moet naar mijn moeder telefoneren.     | I need to call my mother.               |
+| theekopje, het   | tea cup         | Het theekopje is halfvol.                 | The tea cup is half full.               |
+| vallen           | to fall         | Pas op, je kunt vallen!                   | Be careful, you might fall!             |
+| woonkamer, de    | living room     | We zitten samen in de woonkamer.          | We sit together in the living room.     |
+| zeggen           | to say          | Wat wil je zeggen?                        | What do you want to say?                |
+| zetten           | to put / set    | Ik zet het glas op tafel.                 | I put the glass on the table.           |
 
-*   **bakken** – nướng
-*   **bal** – quả bóng
-*   **theekopje** – tách trà
-*   **regenjas** – áo mưa
-*   **lopen** – đi bộ
-*   **schrijven** – viết
-*   **nemen** – lấy
-*   …
 
 ***
 
