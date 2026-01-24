@@ -166,3 +166,33 @@ Ví dụ:
 ### ✔ với tính từ → luôn **-e**
 
 ### ✔ wat voor = loại nào?
+
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word      | English Meaning | Dutch Sentence Sample                           | English Translation                     |
+| --------------- | --------------- | ----------------------------------------------- | --------------------------------------- |
+| afwassen        | to do dishes    | Ik ga de borden afwassen.                       | I am going to do the dishes.            |
+| baan, de        | job             | Hij heeft een nieuwe baan gevonden.             | He found a new job.                     |
+| bezorgen        | to deliver      | De postbode bezorgt het pakket.                 | The mailman delivers the package.       |
+| bloem, de       | flower          | Zij koopt een mooie bloem.                      | She buys a beautiful flower.            |
+| boven           | upstairs        | De slaapkamer is boven.                         | The bedroom is upstairs.                |
+| brengen         | to bring        | Ik breng de kinderen naar school.               | I bring the children to school.         |
+| bruid, de       | bride           | De bruid draagt een witte jurk.                 | The bride wears a white dress.          |
+| buiten          | outside         | Het is koud buiten.                             | It is cold outside.                     |
+| daarna          | afterwards      | We eten en daarna gaan we wandelen.             | We eat and afterwards we go for a walk. |
+| droog           | dry             | De was is nog niet droog.                       | The laundry is not dry yet.             |
+| feest, het      | party           | Het feest begint om acht uur.                   | The party starts at eight o’clock.      |
+| groeten         | to greet        | Ik groet mijn buren elke ochtend.               | I greet my neighbors every morning.     |
+| haar, het       | hair            | Haar haar is heel lang.                         | Her hair is very long.                  |
+| hoofdstuk, het  | chapter         | Ik lees het laatste hoofdstuk.                  | I am reading the last chapter.          |
+| kijken          | to look         | Kijk eens naar die foto.                        | Look at that picture.                   |
+| legen           | to empty        | Ik leeg de prullenbak.                          | I empty the trash bin.                  |
+| mondkapje, het  | mask            | In het ziekenhuis moet je een mondkapje dragen. | In the hospital you must wear a mask.   |
+| lippenstift, de | lipstick        | Zij doet lippenstift op.                        | She puts on lipstick.                   |
+| oefening, de    | exercise        | Deze oefening is moeilijk.                      | This exercise is difficult.             |
+| rekening, de    | account         | Ik controleer mijn bankrekening.                | I check my bank account.                |
+| strijken        | to iron         | Ik moet mijn shirt strijken.                    | I need to iron my shirt.                |
+| tanken          | to get gas      | We moeten nog tanken voor de reis.              | We still need to get gas for the trip.  |
+| wachten         | to wait         | Ik wacht op de bus.                             | I am waiting for the bus.               |

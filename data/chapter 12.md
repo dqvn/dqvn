@@ -269,3 +269,21 @@ Một số câu tiêu biểu:
 *   Dùng 12h khi nói, 24h khi viết
 *   Trạng từ thời gian: nu, straks, al, pas, toen…
 *   Các phần của ngày có dạng **’s morgens/’s avonds…**
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word      | English Meaning  | Dutch Sentence Sample                              | English Translation                             |
+| --------------- | ---------------- | -------------------------------------------------- | ----------------------------------------------- |
+| haasten         | to hurry         | Ik moet me haasten om op tijd te zijn.             | I have to hurry to be on time.                  |
+| jemig           | geez / wow       | Jemig, wat een grote hond!                         | Geez, what a big dog!                           |
+| ontbijt, het    | breakfast        | Ik eet yoghurt als ontbijt.                        | I eat yogurt for breakfast.                     |
+| opereren        | to operate       | De chirurg gaat de patiënt opereren.               | The surgeon is going to operate on the patient. |
+| opschieten      | to hurry up      | Kun je een beetje opschieten?                      | Can you hurry up a bit?                         |
+| opstaan         | to get up        | Ik sta elke dag om zeven uur op.                   | I get up every day at seven o’clock.            |
+| rustig          | easy / quiet     | Blijf rustig, het komt goed.                       | Stay calm, it will be fine.                     |
+| tandarts, de    | dentist          | Ik ga morgen naar de tandarts.                     | I’m going to the dentist tomorrow.              |
+| vergadering, de | meeting          | We hebben een belangrijke vergadering om tien uur. | We have an important meeting at ten.            |
+| wakker          | awake            | Ik ben al een uur wakker.                          | I’ve been awake for an hour.                    |
+| weleens         | ever / sometimes | Ga je weleens naar het museum?                     | Do you ever go to the museum?                   |
+| worden          | to become        | Zij wil dokter worden.                             | She wants to become a doctor.                   |

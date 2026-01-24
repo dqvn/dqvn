@@ -169,3 +169,28 @@ Các câu trong bài luyện:
 ### ✔ đại từ sở hữu + tính từ → luôn + **-e**
 
 ### ✔ phân biệt: **jou (tân ngữ)** ≠ **jouw (sở hữu)**
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word      | English Meaning | Dutch Sentence Sample                     | English Translation                        |
+| --------------- | --------------- | ----------------------------------------- | ------------------------------------------ |
+| achterop        | on the back     | De tas zit achterop de fiets.             | The bag is on the back of the bike.        |
+| beddengoed, het | bedding         | Ik moet het beddengoed wassen.            | I need to wash the bedding.                |
+| cijfer, het     | digit / grade   | Ik kreeg een goed cijfer voor de toets.   | I got a good grade for the test.           |
+| eindexamen, het | final exam      | Zij maakt dit jaar haar eindexamen.       | She is taking her final exam this year.    |
+| fijn            | fine / nice     | Het is fijn om je weer te zien.           | It’s nice to see you again.                |
+| gaaf            | great           | Dat is een gaaf idee!                     | That's a great idea!                       |
+| gras, het       | grass           | Het gras in de tuin is lang.              | The grass in the garden is long.           |
+| huishoudelijk   | household       | Ik doe vandaag huishoudelijke taken.      | I’m doing household chores today.          |
+| huwelijk, het   | marriage        | Hun huwelijk is in juni.                  | Their marriage is in June.                 |
+| klasgenoot, de  | classmate       | Mijn klasgenoot helpt me met de opdracht. | My classmate helps me with the assignment. |
+| lachen          | to laugh        | We moesten hard lachen om die grap.       | We had to laugh hard at that joke.         |
+| maaier, de      | mower           | De maaier staat in de schuur.             | The mower is in the shed.                  |
+| naast           | next to         | Ik zit naast mijn vriend.                 | I sit next to my friend.                   |
+| pakken          | to grab         | Ik pak een glas water.                    | I grab a glass of water.                   |
+| sok, de         | sock            | Mijn sok heeft een gat.                   | My sock has a hole.                        |
+| verliefd        | in love         | Hij is verliefd op haar.                  | He is in love with her.                    |
+| verschonen      | to change (bed) | Ik ga het bed verschonen.                 | I’m going to change the bed.               |
+| vork, de        | fork            | De vork ligt naast het bord.              | The fork is next to the plate.             |
+| zaak, de        | business        | Hij heeft een eigen zaak in de stad.      | He has his own business in the city.       |
