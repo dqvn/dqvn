@@ -269,3 +269,27 @@ Dùng cho cả người & vật, đứng **sau** danh từ.
 ### ✔ velén / sommigen / enkelen → chỉ người
 
 ### ✔ helft = một nửa
+
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word     | English Meaning   | Dutch Sentence Sample              | English Translation                      |
+| -------------- | ----------------- | ---------------------------------- | ---------------------------------------- |
+| bezoeker, de   | visitor           | Elke bezoeker moet zich aanmelden. | Every visitor must register.             |
+| champignon, de | mushroom          | Ik koop champignons voor de soep.  | I buy mushrooms for the soup.            |
+| doelpunt, het  | goal              | Hij scoort het winnende doelpunt.  | He scores the winning goal.              |
+| gratis         | free              | De entree is vandaag gratis.       | The entrance is free today.              |
+| jurk, de       | dress             | Zij draagt een mooie jurk.         | She is wearing a beautiful dress.        |
+| kelner, de     | waiter            | De kelner brengt het eten.         | The waiter brings the food.              |
+| klas, de       | class / grade     | Onze klas gaat op excursie.        | Our class is going on a field trip.      |
+| mens, de       | human / person    | Elke mens heeft rust nodig.        | Every human needs rest.                  |
+| naaien         | to sew            | Mijn oma kan heel goed naaien.     | My grandmother can sew very well.        |
+| naald, de      | needle            | Pas op, de naald is scherp.        | Be careful, the needle is sharp.         |
+| rijles, de     | driving lesson    | Ik heb morgen mijn eerste rijles.  | I have my first driving lesson tomorrow. |
+| rits, de       | zipper            | De rits van mijn jas zit vast.     | The zipper of my coat is stuck.          |
+| stelen         | to steal          | Hij probeert een fiets te stelen.  | He tries to steal a bike.                |
+| stof, de       | material / fabric | Deze stof is zacht en warm.        | This fabric is soft and warm.            |
+| trouwen        | to marry          | Ze willen volgend jaar trouwen.    | They want to get married next year.      |
+| vieren         | to celebrate      | We vieren zijn verjaardag thuis.   | We celebrate his birthday at home.       |
+| winkel, de     | shop              | De winkel opent om negen uur.      | The shop opens at nine o’clock.          |
