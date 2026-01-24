@@ -172,3 +172,25 @@ Unit 24 giúp bạn:
 *   Hiểu 3 chức năng cốt lõi của *er*
 *   Tránh lỗi sai phổ biến (dùng *er* sai vị trí hoặc sai loại)
 *   Áp dụng thành thạo trong câu hỏi, câu trả lời, mô tả số lượng, nơi chốn
+
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word    | Meaning     | Dutch Sentence Sample                        | English Translation                                |
+| ------------- | ------------------- | -------------------------------------------- | -------------------------------------------------- |
+| allerlei      | various             | In de winkel verkopen ze allerlei producten. | In the shop they sell various products.            |
+| asbak, de     | ashtray             | De asbak staat op het balkon.                | The ashtray is on the balcony.                     |
+| berk, de      | birch               | De berk in de tuin is heel hoog.             | The birch tree in the garden is very tall.         |
+| fluitist, de  | flute player        | De fluitist speelt een mooi stuk muziek.     | The flute player plays a beautiful piece of music. |
+| frisdrank, de | non‑alcoholic drink | Ik bestel een glas frisdrank.                | I order a glass of soft drink.                     |
+| hartstikke    | incredibly          | Het is hartstikke koud buiten.               | It is incredibly cold outside.                     |
+| hok, het      | coop / cage / pen   | De kippen zitten in het hok.                 | The chickens are in the coop.                      |
+| kelder, de    | basement            | De wijn ligt in de kelder.                   | The wine is in the basement.                       |
+| mensa, de     | student dining hall | We eten vanavond in de mensa.                | We are eating in the student dining hall tonight.  |
+| nood, de      | emergency           | In geval van nood bel 112.                   | In case of emergency, call 112.                    |
+| orkest, het   | orchestra           | Het orkest speelt klassieke muziek.          | The orchestra plays classical music.               |
+| soort, de/het | kind / type / sort  | Welke soort kaas wil je?                     | What kind of cheese do you want?                   |
+| tonijn, de    | tuna                | Ik koop een blik tonijn.                     | I buy a can of tuna.                               |
+| uitgang, de   | exit                | De uitgang is aan de andere kant.            | The exit is on the other side.                     |
+| zaal, de   | hall                | De vergadering is in de grote zaal.            | The meeting is in the main hall.                     |

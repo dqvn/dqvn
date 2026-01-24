@@ -211,3 +211,50 @@ Diminutives cực kỳ quan trọng vì:
 | Ngữ nghĩa | không chỉ nghĩa “nhỏ” → còn thân mật, giảm nhẹ, lịch sự |
 | Văn hóa   | dùng rất thường xuyên trong giao tiếp Hà Lan            |
 | Bài tập   | chuyển đổi, nhận diện, áp dụng trong ngữ cảnh văn hóa   |
+
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word      | Meaning      | Dutch Sentence Sample                    | English Translation                         |
+| --------------- | -------------------- | ---------------------------------------- | ------------------------------------------- |
+| aanbieding, de  | special offer        | Deze koffie is vandaag in de aanbieding. | This coffee is on special offer today.      |
+| aap, de         | monkey               | De aap klimt in de boom.                 | The monkey climbs in the tree.              |
+| alsof           | as if                | Hij doet alsof hij niets weet.           | He acts as if he knows nothing.             |
+| bewoner, de     | resident             | Elke bewoner heeft een eigen sleutel.    | Each resident has their own key.            |
+| bezem, de       | broom                | Ik veeg de vloer met een bezem.          | I sweep the floor with a broom.             |
+| bord, het       | plate                | Het bord staat op tafel.                 | The plate is on the table.                  |
+| bos, het        | forest               | We wandelen door het bos.                | We walk through the forest.                 |
+| dekken          | to set (the table)   | Wil je de tafel dekken?                  | Will you set the table?                     |
+| deur, de        | door                 | De deur is open.                         | The door is open.                           |
+| donzen          | down (feathers)      | Ik gebruik een donzen dekbed.            | I use a down duvet.                         |
+| dutten          | to nap               | Ik ga even dutten op de bank.            | I'm going to take a short nap on the couch. |
+| dwalen          | to roam / wander     | We dwalen door de oude straatjes.        | We wander through the old streets.          |
+| emmer, de       | bucket               | De emmer is vol water.                   | The bucket is full of water.                |
+| engel, de       | angel                | Het kind was verkleed als engel.         | The child was dressed as an angel.          |
+| hap, de         | bite                 | Neem een hap van de appel.               | Take a bite of the apple.                   |
+| hoed, de        | hat                  | Hij draagt een grote hoed.               | He wears a big hat.                         |
+| kleuter, de     | toddler              | De kleuter speelt met blokken.           | The toddler plays with blocks.              |
+| kring, de       | circle               | We zitten in een kring.                  | We sit in a circle.                         |
+| kuiken, het     | chick                | Het kuiken is net uit het ei gekomen.    | The chick has just hatched.                 |
+| la, de          | drawer               | De sokken liggen in de la.               | The socks are in the drawer.                |
+| lepel, de       | spoon                | Je hebt een lepel nodig voor de soep.    | You need a spoon for the soup.              |
+| mes, het        | knife                | Het mes is scherp.                       | The knife is sharp.                         |
+| moe             | tired                | Ik ben moe na een lange dag.             | I am tired after a long day.                |
+| noot, de        | nut                  | Ik eet graag noten als snack.            | I like eating nuts as a snack.              |
+| om              | around               | We lopen om het huis heen.               | We walk around the house.                   |
+| oorbel, de      | earring              | Ze draagt gouden oorbellen.              | She wears gold earrings.                    |
+| paard, het      | horse                | Het paard rent door het veld.            | The horse runs through the field.           |
+| paraplu, de     | umbrella             | Neem een paraplu mee, het gaat regenen.  | Bring an umbrella, it's going to rain.      |
+| parasol, de     | parasol              | We zitten onder de parasol.              | We sit under the parasol.                   |
+| pepermunt, de   | peppermint           | Wil je een pepermuntje?                  | Do you want a peppermint?                   |
+| piesen          | to pee               | Het kind moet piesen.                    | The child needs to pee.                     |
+| poep, de        | poop                 | De baby heeft poep in de luier.          | The baby has poop in the diaper.            |
+| ruiken          | to smell             | Ruik je die heerlijke geur?              | Do you smell that lovely scent?             |
+| schattig        | adorable             | Dat hondje is zo schattig!               | That puppy is so adorable!                  |
+| schuit, de      | barge                | De schuit vaart door de gracht.          | The barge sails through the canal.          |
+| snoepen         | to snack (on sweets) | De kinderen snoepen te veel.             | The children snack on sweets too much.      |
+| sperzieboon, de | green bean           | Ik kook sperziebonen voor het diner.     | I cook green beans for dinner.              |
+| wagen, de       | wagon / cart         | De wagen staat voor het huis.            | The wagon is in front of the house.         |
+| zakdoek, de     | handkerchief         | Heb je een zakdoek voor me?              | Do you have a handkerchief for me?          |
+| zijde, de       | silk                 | De blouse is gemaakt van zijde.          | The blouse is made of silk.                 |
