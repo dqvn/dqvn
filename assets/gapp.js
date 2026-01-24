@@ -170,7 +170,7 @@ function extractTitleFromMd(md) {
   }
   for (const line of lines) {
     const m = line.match(/^#\s+(.+)/);
-    if (m) return m[1].trim().replace('*', '');
+    if (m) return m[1].trim().replace(/\*/g, '');
   }
   return '';
 }
