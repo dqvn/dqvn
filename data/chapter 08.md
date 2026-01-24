@@ -263,3 +263,31 @@ Một loạt câu hỏi thực tế:
 ### ✔ waarvandaan = from where
 
 ### ✔ waarheen = (to) where
+
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word  | English Meaning | Dutch Sentence Sample                | English Translation                     |
+| ----------- | --------------- | ------------------------------------ | --------------------------------------- |
+| balkon, het | balcony         | We drinken koffie op het balkon.     | We drink coffee on the balcony.         |
+| boer, de    | farmer          | De boer werkt elke dag op het land.  | The farmer works on the land every day. |
+| delen       | to share        | Zullen we de pizza delen?            | Shall we share the pizza?               |
+| dier, het   | animal          | Het dier slaapt in de zon.           | The animal sleeps in the sun.           |
+| duren       | to last         | De film duurt twee uur.              | The movie lasts two hours.              |
+| enkel       | single          | Ik koop een enkel brood.             | I buy a single loaf of bread.           |
+| geboren     | born            | Ik ben in Vietnam geboren.           | I was born in Vietnam.                  |
+| huren       | to rent         | We huren een appartement in de stad. | We rent an apartment in the city.       |
+| kleur, de   | color           | Welke kleur vind jij mooi?           | Which color do you like?                |
+| komijn, de  | cumin           | Ik voeg komijn toe aan de curry.     | I add cumin to the curry.               |
+| lijn, de    | line            | Trek een rechte lijn.                | Draw a straight line.                   |
+| maat, de    | size            | Welke maat draag je?                 | What size do you wear?                  |
+| ongeveer    | approximately   | Het kost ongeveer tien euro.         | It costs approximately ten euros.       |
+| reis, de    | trip / travel   | De reis naar Parijs was leuk.        | The trip to Paris was fun.              |
+| rit, de     | ride            | De rit duurde maar tien minuten.     | The ride lasted only ten minutes.       |
+| spoor, het  | track           | De trein vertrekt van spoor vier.    | The train leaves from track four.       |
+| vertrekken  | to depart       | De bus vertrekt om half acht.        | The bus departs at seven-thirty.        |
+| vet, het    | fat / grease    | Er zit veel vet in dit vlees.        | There is a lot of fat in this meat.     |
+| vierkant    | square          | De tafel heeft een vierkante vorm.   | The table has a square shape.           |
+| zuur        | sour / tart     | De citroen smaakt zuur.              | The lemon tastes sour.                  |
+| zwaar       | heavy           | De tas is te zwaar om te dragen.     | The bag is too heavy to carry.          |
