@@ -295,3 +295,15 @@ Ví dụ:
 *   “Er” có 3 chức năng cực quan trọng.
 *   Trật tự: **Time – Manner – Place**.
 *   Adverb tương tác mạnh với **niet/geen** trong phủ định.
+
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word  | English Meaning | Dutch Sentence Sample                 | English Translation                 |
+| ----------- | --------------- | ------------------------------------- | ----------------------------------- |
+| dronken     | drunk           | Hij was gisteravond dronken.          | He was drunk last night.            |
+| jammer      | too bad         | Het is jammer dat je niet kunt komen. | It’s too bad you can’t come.        |
+| klinken     | to sound        | Dat klinkt als een goed idee.         | That sounds like a good idea.       |
+| uitverkocht | sold out        | Het concert is helemaal uitverkocht.  | The concert is completely sold out. |
+| zingen      | to sing         | Zij zingt heel mooi.                  | She sings very beautifully.         |

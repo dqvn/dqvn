@@ -242,3 +242,18 @@ Công thức:
 *   **Hij heeft het niet gezien.**
 *   **Peter is gaan voetballen.**
 *   **Karin heeft Sanne helpen koken.**
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word | English Meaning       | Dutch Sentence Sample                       | English Translation                       |
+| ---------- | --------------------- | ------------------------------------------- | ----------------------------------------- |
+| aanmelden  | to register           | Je moet je online aanmelden voor de cursus. | You must register online for the course.  |
+| breien     | to knit               | Mijn oma breidt een warme trui.             | My grandmother knits a warm sweater.      |
+| breken     | to break              | Pas op, het glas kan breken.                | Be careful, the glass can break.          |
+| fluiten    | to whistle            | Hij fluit een vrolijk liedje.               | He whistles a cheerful tune.              |
+| schieten   | to shoot              | De speler schiet de bal in het doel.        | The player shoots the ball into the goal. |
+| stijgen    | to rise               | De temperatuur stijgt vandaag.              | The temperature rises today.              |
+| stinken    | to stink              | De vuilnisbak begint te stinken.            | The trash can is starting to stink.       |
+| taak, de   | task                  | Ik heb een belangrijke taak op mijn werk.   | I have an important task at work.         |
+| zalig      | blissful / delightful | We hadden een zalige vakantie.              | We had a blissful holiday.                |

@@ -224,3 +224,25 @@ Một số từ xuất hiện trong chương:
 *   Particles = sắc thái: *even, eens, maar, toch, nou*.
 *   Separable verbs → prefix ra cuối câu.
 *   Dùng nhiều nhất trong nấu ăn & hướng dẫn.
+
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word   | English Meaning | Dutch Sentence Sample                          | English Translation                         |
+| ------------ | --------------- | ---------------------------------------------- | ------------------------------------------- |
+| azijn, de    | vinegar         | Ik doe een beetje azijn in de salade.          | I add a little vinegar to the salad.        |
+| beneden      | downstairs      | De woonkamer is beneden.                       | The living room is downstairs.              |
+| dille, de    | dill            | Ik gebruik dille in de saus.                   | I use dill in the sauce.                    |
+| doperwt, de  | pea             | Doperwten zijn lekker bij aardappels.          | Peas taste good with potatoes.              |
+| gaar         | done / cooked   | Het vlees is gaar.                             | The meat is cooked.                         |
+| handdoek, de | towel           | Ik neem een schone handdoek.                   | I take a clean towel.                       |
+| jenever, de  | gin             | Jenever is een traditionele Nederlandse drank. | Gin is a traditional Dutch drink.           |
+| olie, de     | oil             | Doe een beetje olie in de pan.                 | Put a little oil in the pan.                |
+| plak, de     | slice           | Ik neem een plak kaas.                         | I take a slice of cheese.                   |
+| saus, de     | sauce           | De pasta is lekker met tomatensaus.            | The pasta is tasty with tomato sauce.       |
+| stevig       | solid / firm    | Het bed voelt stevig aan.                      | The bed feels firm.                         |
+| uitdoen      | to turn off     | Doe het licht uit als je weggaat.              | Turn off the light when you leave.          |
+| vuil         | dirty           | De vloer is vuil, ik moet schoonmaken.         | The floor is dirty, I need to clean.        |
+| worst, de    | sausage         | Hij eet brood met worst.                       | He eats bread with sausage.                 |
+| zeuren       | to nag          | Zeurt hij weer over hetzelfde probleem?        | Is he nagging again about the same problem? |
