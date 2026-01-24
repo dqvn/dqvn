@@ -164,3 +164,5 @@ Kiểm tra khả năng nhận biết giống của danh từ và đặt đúng �
 | spruitje, het | Brussels sprout         | Sommige kinderen lusten geen spruitjes.           | Some children don’t like Brussels sprouts.          |
 | strand, het   | beach                   | We gaan morgen naar het strand.                   | We are going to the beach tomorrow.                 |
 | verrot        | rotten / rotten through | De appels in de mand zijn verrot.                 | The apples in the basket are rotten.                |
+
+

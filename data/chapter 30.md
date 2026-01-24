@@ -233,3 +233,28 @@ Ví dụ từ sách:
 *   Động từ tách: “niet” đứng trước tiền tố
 *   Câu phụ: “niet” trước nhóm động từ
 *   Phủ định mệnh đề khác nhau tạo nghĩa khác nhau
+
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word    | English Meaning | Dutch Sentence Sample                           | English Translation                              |
+| ------------- | --------------- | ----------------------------------------------- | ------------------------------------------------ |
+| acteur, de    | actor           | De acteur speelt in een nieuwe film.            | The actor acts in a new movie.                   |
+| benzine, de   | gasoline        | De auto heeft bijna geen benzine meer.          | The car is almost out of gasoline.               |
+| blijven       | to stay         | Ik blijf vandaag thuis.                         | I am staying home today.                         |
+| brief, de     | letter          | Ik schrijf een brief aan mijn moeder.           | I write a letter to my mother.                   |
+| cadeau, het   | present / gift  | Ik krijg een mooi cadeau voor mijn verjaardag.  | I receive a nice gift for my birthday.           |
+| durven        | to dare         | Ik durf niet van de hoge duikplank te springen. | I don't dare to jump from the high diving board. |
+| geloven       | to believe      | Ik geloof wat je zegt.                          | I believe what you say.                          |
+| hoewel        | although        | Hoewel het regent, gaan we wandelen.            | Although it’s raining, we are going for a walk.  |
+| laars, de     | boot            | Mijn laars zit vol modder.                      | My boot is full of mud.                          |
+| omdat         | because         | Ik ga vroeg naar bed omdat ik moe ben.          | I go to bed early because I am tired.            |
+| peper, de     | pepper          | Ik voeg een beetje peper toe aan de soep.       | I add a little pepper to the soup.               |
+| regenen       | to rain         | Het begint te regenen.                          | It’s starting to rain.                           |
+| sinds         | ever since      | Ik woon hier sinds 2020.                        | I have lived here since 2020.                    |
+| spa, de       | mineral water   | Ik bestel een glas spa rood.                    | I order a glass of sparkling mineral water.      |
+| sturen        | to send         | Ik stuur je later een bericht.                  | I’ll send you a message later.                   |
+| teleurgesteld | disappointed    | Ik ben teleurgesteld in het resultaat.          | I am disappointed in the result.                 |
+| toen          | when (past)     | Toen ik jong was, speelde ik elke dag buiten.   | When I was young, I played outside every day.    |
+| verhuizen     | to move         | We gaan volgende maand verhuizen.               | We are moving next month.                        |
