@@ -197,3 +197,33 @@ Ví dụ:
 ### ✔ hem/het/ze không bao giờ đứng đầu câu
 
 ### ✔ đứng đầu → thay bằng die/dat
+
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word   | English Meaning       | Dutch Sentence Sample                      | English Translation                           |
+| ------------ | --------------------- | ------------------------------------------ | --------------------------------------------- |
+| biefstuk, de | steak                 | Ik bestel een biefstuk in het restaurant.  | I order a steak in the restaurant.            |
+| bioscoop, de | cinema                | We gaan vanavond naar de bioscoop.         | We are going to the cinema tonight.           |
+| boor, de     | drill                 | Hij gebruikt een boor om een gat te maken. | He uses a drill to make a hole.               |
+| bril, de     | glasses               | Mijn bril ligt op de tafel.                | My glasses are on the table.                  |
+| buurman, de  | neighbor              | Mijn buurman helpt mij met de tuin.        | My neighbor helps me with the garden.         |
+| gang, de     | corridor              | De schoenen staan in de gang.              | The shoes are in the corridor.                |
+| kaart, de    | card / ticket / menu  | Mag ik de kaart zien, alstublieft?         | May I see the menu, please?                   |
+| kast, de     | closet / cabinet      | De handdoeken liggen in de kast.           | The towels are in the closet.                 |
+| leuk         | fun / nice            | Het feest was heel leuk.                   | The party was very fun.                       |
+| lijken       | to seem / appear      | Dat lijkt een goed idee.                   | That seems like a good idea.                  |
+| meubel, het  | furniture             | Dit is een nieuw meubel voor de woonkamer. | This is new furniture for the living room.    |
+| mossel, de   | mussel                | We eten mosselen met friet.                | We eat mussels with fries.                    |
+| paskamer, de | fitting room          | De paskamer is achterin de winkel.         | The fitting room is at the back of the store. |
+| proberen     | to try                | Ik probeer de jas aan.                     | I try on the coat.                            |
+| proeven      | to taste              | Wil je de soep proeven?                    | Do you want to taste the soup?                |
+| schaatsen    | to skate              | In de winter gaan we schaatsen.            | In the winter we go skating.                  |
+| schotel, de  | dish                  | Dit is mijn favoriete schotel.             | This is my favorite dish.                     |
+| stoppen      | to put / stick / stop | Ik stop de sleutels in mijn tas.           | I put the keys in my bag.                     |
+| tas, de      | bag                   | Mijn tas is zwaar vandaag.                 | My bag is heavy today.                        |
+| uitmaken     | to differ / matter    | Het maakt niet uit.                        | It doesn’t matter.                            |
+| uitstekend   | excellent             | De service was uitstekend.                 | The service was excellent.                    |
+| vergeten     | to forget             | Ik ben mijn afspraak vergeten.             | I forgot my appointment.                      |
+| vertellen    | to tell               | Kun je me het verhaal vertellen?           | Can you tell me the story?                    |
