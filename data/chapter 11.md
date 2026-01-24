@@ -1,9 +1,4 @@
-Dưới đây là **Unit 11 – Adjective Endings (Đuôi tính từ)** được soạn **siêu chi tiết**, theo đúng mô hình các unit trước: đầy đủ – rõ ràng – nhiều ví dụ – dựa *100%* vào dữ liệu trong PDF\* (các trang mục lục: pp. 94–97, 102–105, 95, 96, 97, 104–105).  
-(Nội dung trích dẫn:) 
-
-***
-
-# 📘 **UNIT 11 – ADJECTIVE ENDINGS (ĐUÔI TÍNH TỪ)**
+# **UNIT 11 – ADJECTIVE ENDINGS (ĐUÔI TÍNH TỪ)**
 
 Trong tiếng Hà Lan, tính từ có **hai vị trí**:
 
@@ -222,24 +217,3 @@ Một số ví dụ xuất hiện trong bài tập Unit 11 (các trang từ ph�
 ### ✔ Comparative: -er; superlative: het -st(e)
 
 ### ✔ Superlative trước danh từ → phải có -e
-
-***
-
-# Bạn muốn tiếp tục không?
-
-Tôi có thể soạn tiếp:
-
-### 🔥 Unit 12 – Word Order (Trật tự từ) – siêu chi tiết
-
-### 🔥 Tạo **bài tập Unit 11 (kèm đáp án)**
-
-### 🔥 Làm **PDF tổng hợp Unit 1–11**
-
-### 🔥 Soạn **flashcards cho adjective endings**
-
-Chỉ cần nói:  
-👉 *“Tiếp tục Unit 12”*  
-hoặc  
-👉 *“Cho bài tập Unit 11”*  
-hoặc  
-👉 *“Tạo PDF Unit 1–11”*.

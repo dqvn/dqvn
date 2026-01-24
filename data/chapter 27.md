@@ -1,4 +1,4 @@
-# 📘 **UNIT 27 – SUBORDINATING CONJUNCTIONS & COMPLEX SENTENCES**
+# **UNIT 27 – SUBORDINATING CONJUNCTIONS & COMPLEX SENTENCES**
 
 (Unit 27 tập trung vào **liên từ phụ thuộc**, **mệnh đề phụ**, **trật tự động từ**, và **mệnh đề quan hệ**.)
 

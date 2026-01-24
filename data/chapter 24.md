@@ -1,4 +1,4 @@
-# 📘 **UNIT 24 – THE ADVERB *ER***
+# **UNIT 24 – THE ADVERB *ER***
 
 (*er* = một trong những yếu tố NGỮ PHÁP QUAN TRỌNG NHẤT trong tiếng Hà Lan)
 

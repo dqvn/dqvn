@@ -1,4 +1,4 @@
-# 📘 **UNIT 23 – DIMINUTIVES (DANH TỪ GIẢM NHẸ / THU NHỎ)**
+# **UNIT 23 – DIMINUTIVES (DANH TỪ GIẢM NHẸ / THU NHỎ)**
 
 Diminutives (những từ thu nhỏ, thân mật, đáng yêu) là **một đặc trưng ngữ pháp – văn hóa rất mạnh của tiếng Hà Lan**.  
 Tài liệu mô tả rõ **quy tắc hình thành**, **ngoại lệ**, **ngữ nghĩa**, và **cách dùng trong đời sống**.

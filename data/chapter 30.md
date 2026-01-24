@@ -1,4 +1,4 @@
-# 📘 **UNIT 30 – NEGATIVES II (PHỦ ĐỊNH NÂNG CAO TRONG TIẾNG HÀ LAN)**
+# **UNIT 30 – NEGATIVES II (PHỦ ĐỊNH NÂNG CAO TRONG TIẾNG HÀ LAN)**
 
 Unit 30 là chương **nâng cao nhất** về phủ định, đi sâu vào:
 
