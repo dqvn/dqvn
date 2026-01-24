@@ -1,0 +1,101 @@
+
+<!doctype html>
+<html lang="vi" data-theme="system">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>Ngữ pháp tiếng Hà Lan – A2 (VI → NL)</title>
+
+  <!-- Styles -->
+  <link rel="preload" href="assets/gstyles.css" as="style">
+  <link rel="stylesheet" href="assets/gstyles.css">
+
+  <!-- Icons -->
+  <link rel="icon" href="data:,">
+
+  <!-- External libs (client-only, CDN) -->
+  <!-- Marked: parse Markdown -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js" defer></script>
+  <!-- DOMPurify: sanitize HTML -->
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.7/dist/purify.min.js" defer></script>
+  <!-- Highlight.js: syntax highlight (nếu có khối code) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.10.0/styles/atom-one-dark.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.10.0/lib/common.min.js" defer></script>
+
+  <!-- App -->
+  <script src="assets/gapp.js" type="module" defer></script>
+</head>
+<body>
+  <!-- Top App Bar -->
+  <header class="app-header" role="banner">
+    <button id="btnSidebar" class="icon-btn" aria-label="Mở/Đóng danh sách chương" title="Danh sách chương (Alt+L)">
+      ☰
+    </button>
+    <h1 class="app-title">Ngữ pháp tiếng Hà Lan – A2</h1>
+    <div class="header-actions">
+      <div class="search-wrap">
+        <input id="searchInput" type="search" placeholder="Tìm kiếm trong giáo trình…" aria-label="Tìm kiếm">
+        <button id="clearSearch" class="icon-btn" title="Xóa tìm kiếm">✕</button>
+      </div>
+      <div class="divider"></div>
+      <button id="btnFontMinus" class="icon-btn" title="Giảm cỡ chữ (Alt+-)" aria-label="Giảm cỡ chữ">A−</button>
+      <button id="btnFontPlus" class="icon-btn" title="Tăng cỡ chữ (Alt+=)" aria-label="Tăng cỡ chữ">A+</button>
+      <div class="divider"></div>
+      <button id="btnTheme" class="icon-btn" title="Chuyển chủ đề (Alt+T)" aria-label="Chuyển chủ đề">🌓</button>
+    </div>
+  </header>
+
+  <!-- Progress bar -->
+  <div class="reading-progress" aria-hidden="true">
+    <div class="reading-progress__bar" id="readingProgress"></div>
+  </div>
+
+  <!-- Main layout -->
+  <div class="layout">
+    <!-- Sidebar: Chapter list + Filters -->
+    <aside id="sidebar" class="sidebar" aria-label="Danh sách chương">
+      <div class="sidebar-header">
+        <strong>Mục lục</strong>
+        <div class="sidebar-filters">
+          <label><input type="checkbox" id="filterUnread"> Chưa đọc</label>
+          <label><input type="checkbox" id="filterComplete"> Đã hoàn thành</label>
+        </div>
+      </div>
+      <nav id="chapterList" class="chapter-list" role="navigation" aria-label="Danh sách chương"></nav>
+      <footer class="sidebar-footer">
+        <button id="btnResetProgress" class="text-btn" title="Xóa trạng thái đọc">↺ Reset tiến độ</button>
+      </footer>
+    </aside>
+
+    <!-- Content -->
+    <main id="main" class="main" role="main">
+      <article id="content" class="content" aria-live="polite">
+        <div class="empty-state">
+          <h2>Chào mừng!</h2>
+          <p>Chọn một chương ở bên trái để bắt đầu học. Bạn có thể tìm kiếm toàn bộ nội dung bằng khung tìm ở góc phải trên.</p>
+          <p>Nếu có tệp <code>media/chapters.json</code>, ứng dụng sẽ dùng nó. Nếu không, ứng dụng sẽ tự dò <code>chapter 01.md</code> → <code>chapter 99.md</code> (hoặc theo cấu hình).</p>
+        </div>
+      </article>
+
+      <!-- On this page / TOC -->
+      <aside id="toc" class="toc" aria-label="Mục lục trong trang">
+        <div class="toc__title">Trong chương này</div>
+        <nav id="tocList"></nav>
+      </aside>
+    </main>
+  </div>
+
+  <!-- Bottom actions -->
+  <footer class="bottom-bar">
+    <div class="bottom-left">
+      <button id="btnPrev" class="pill-btn" title="Chương trước (Alt+←)">← Trước</button>
+      <button id="btnNext" class="pill-btn" title="Chương sau (Alt+→)">Sau →</button>
+    </div>
+    <div class="bottom-right">
+      <button id="btnCopyLink" class="pill-btn" title="Sao chép liên kết chương hiện tại">🔗 Copy link</button>
+      <button id="btnPrint" class="pill-btn" title="Bản in sạch">🖨️ In</button>
+    </div>
+  </footer>
+</body>
+</html>
