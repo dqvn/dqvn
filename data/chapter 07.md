@@ -1,9 +1,4 @@
-Dưới đây là **Unit 7 – Plurals (Số nhiều)** được biên soạn **siêu chi tiết**, theo đúng mô hình bạn đã yêu cầu ở các Unit trước: rõ ràng – hệ thống – dễ học – đầy ví dụ tiếng Hà Lan.  
-(Toàn bộ nội dung được lấy trực tiếp từ PDF của bạn. )
-
-***
-
-# 📘 **UNIT 7 – THE PLURAL OF NOUNS (SỐ NHIỀU)**
+# **UNIT 7 – THE PLURAL OF NOUNS (SỐ NHIỀU)**
 
 Tiếng Hà Lan có 2 cách tạo số nhiều chính: **-s** và **-en**. Tuy nhiên, các quy tắc chính tả làm cho chủ đề này trở nên phức tạp. Unit 7 tách các nhóm cụ thể để học chính xác và tránh nhầm nghĩa.
 
@@ -252,24 +247,3 @@ Các từ số nhiều xuất hiện:
 ### ✔ -heid → -heden
 
 ### ✔ Từ Latinh: catalogi/catalogussen, musea/museums
-
-***
-
-# Bạn muốn gì tiếp theo?
-
-Tôi có thể:
-
-### 🔥 Soạn **Unit 8 – Questions & Question Words (Câu hỏi & Từ hỏi) – siêu chi tiết**
-
-### 🔥 Tạo **bài tập luyện Unit 7 (kèm đáp án)**
-
-### 🔥 Tạo **Poster PDF tổng hợp về PLURALS**
-
-### 🔥 Tạo **Flashcards phân biệt -s, -en, đặc biệt, bất quy tắc**
-
-Chỉ cần nói:  
-👉 *“Tiếp tục Unit 8”*  
-hoặc  
-👉 *“Cho bài tập Unit 7”*  
-hoặc  
-👉 *“Tạo PDF Unit 7”*.
