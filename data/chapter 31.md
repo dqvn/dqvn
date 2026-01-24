@@ -256,3 +256,15 @@ Câu kiểm tra dấu phẩy, apostrof, viết số,…
 *   **Question mark**: không dùng trong câu hỏi gián tiếp.
 *   **Quotation marks**: ’ ’ cho trích dẫn; “ ” cho hội thoại.
 *   **Inversion**: không có dấu phẩy sau trạng ngữ thời gian ở đầu câu.
+
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word | Meaning | Dutch Sentence Sample                                 | English Translation                                      |
+| ---------- | --------------- | ----------------------------------------------------- | -------------------------------------------------------- |
+| duurzaam   | sustainable     | We willen duurzamer leven en minder afval produceren. | We want to live more sustainably and produce less waste. |
+| parkeren   | to park         | Je kunt de auto hier parkeren.                        | You can park the car here.                               |
+| prachtig   | beautiful       | Wat een prachtig uitzicht!                            | What a beautiful view!                                   |
+| rijk       | rich            | Hij is rijk geworden door zijn bedrijf.               | He became rich through his company.                      |
+| vermoeiend | tiresome        | Het was een lange en vermoeiende dag.                 | It was a long and tiresome day.                          |
