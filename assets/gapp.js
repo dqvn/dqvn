@@ -9,7 +9,7 @@
  */
 
 const CONFIG = {
-  mediaDir: 'media',
+  mediaDir: 'data',
   chapterPrefix: 'chapter ',
   chapterExt: '.md',
   pad: 2,              // "01", "02"
