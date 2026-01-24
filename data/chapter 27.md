@@ -153,7 +153,7 @@ Kiểm tra khả năng nhận biết giống của danh từ và đặt đúng �
 # **TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words (Continuation)
 
-| Dutch Word    | English Meaning         | Dutch Sentence Sample                             | English Translation                                 |
+| Dutch Word    | Meaning         | Dutch Sentence Sample                             | English Translation                                 |
 | ------------- | ----------------------- | ------------------------------------------------- | --------------------------------------------------- |
 | afstuderen    | to graduate             | Hij gaat dit jaar afstuderen aan de universiteit. | He will graduate from the university this year.     |
 | dak, het      | roof                    | Er ligt sneeuw op het dak.                        | There is snow on the roof.                          |
