@@ -1,4 +1,4 @@
-# 📘 **APPENDIX III – STRONG & IRREGULAR VERBS (ĐỘNG TỪ BẤT QUY TẮC & ĐỘNG TỪ MẠNH)**
+# **APPENDIX III – STRONG & IRREGULAR VERBS (ĐỘNG TỪ BẤT QUY TẮC & ĐỘNG TỪ MẠNH)**
 
 Appendix III là bảng tổng hợp TẤT CẢ động từ mạnh (strong verbs) và động từ bất quy tắc trong tiếng Hà Lan theo cấu trúc:
 

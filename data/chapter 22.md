@@ -1,4 +1,4 @@
-# 📘 **UNIT 22 – REFLEXIVE VERBS (ĐỘNG TỪ PHẢN THÂN)**
+# **UNIT 22 – REFLEXIVE VERBS (ĐỘNG TỪ PHẢN THÂN)**
 
 Động từ phản thân trong tiếng Hà Lan là những động từ mà chủ ngữ **tác động lên chính nó**, dùng **đại từ phản thân** (reflexive pronouns).
 

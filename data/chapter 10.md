@@ -1,4 +1,4 @@
-# 📘 **UNIT 10 – DEMONSTRATIVE PRONOUNS (ĐẠI TỪ CHỈ ĐỊNH)**
+# **UNIT 10 – DEMONSTRATIVE PRONOUNS (ĐẠI TỪ CHỈ ĐỊNH)**
 
 Trong tiếng Hà Lan, đại từ chỉ định đóng vai trò quan trọng trong việc chỉ ra **người/vật ở gần hay xa**, và chúng phải **đi theo giống của danh từ**.
 

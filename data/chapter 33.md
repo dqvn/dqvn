@@ -1,4 +1,4 @@
-# 📘 **APPENDIX II – PRONOUNS (ĐẠI TỪ TRONG TIẾNG HÀ LAN)**
+# **APPENDIX II – PRONOUNS (ĐẠI TỪ TRONG TIẾNG HÀ LAN)**
 
 Appendix II là phụ lục cực kỳ quan trọng, liệt kê **tất cả đại từ** trong tiếng Hà Lan:
 

@@ -1,4 +1,4 @@
-# 📘 **UNIT 26 – INFINITIVE CONSTRUCTIONS**
+# **UNIT 26 – INFINITIVE CONSTRUCTIONS**
 
 (Động từ + nguyên mẫu, với/không “te”, các cấu trúc kéo dài, mục đích, cảm giác, nhận thức, causative, modal…)
 

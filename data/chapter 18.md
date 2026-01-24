@@ -1,4 +1,4 @@
-# 🇳🇱 **UNIT 18 – REFLEXIVE VERBS (zich + werkwoord)**
+# **UNIT 18 – REFLEXIVE VERBS (zich + werkwoord)**
 
 # 📘 *Tính từ phản thân – bảng đầy đủ, quy tắc, vị trí, ngoại lệ, ví dụ & bài tập*
 

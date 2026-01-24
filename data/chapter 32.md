@@ -1,4 +1,4 @@
-# 📘 **APPENDIX I – PRONUNCIATION (PHÁT ÂM TIẾNG HÀ LAN)**
+# **APPENDIX I – PRONUNCIATION (PHÁT ÂM TIẾNG HÀ LAN)**
 
 Appendix I cung cấp toàn bộ hệ thống phát âm tiếng Hà Lan: **nguyên âm đơn (monophthongs)**, **nguyên âm đôi (diphthongs)**, **phụ âm**, **trọng âm**, **âm schwa**, **accent**, **trema**, và **biến thể vùng miền**.
 

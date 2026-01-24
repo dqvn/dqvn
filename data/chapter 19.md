@@ -1,4 +1,4 @@
-# 🇳🇱 **UNIT 19 – IMPERATIEF (THÌ MỆNH LỆNH TRONG TIẾNG HÀ LAN)**
+# **UNIT 19 – IMPERATIEF (THÌ MỆNH LỆNH TRONG TIẾNG HÀ LAN)**
 
 # 📘 *Đầy đủ quy tắc – ngoại lệ – particles – ví dụ – bài tập mẫu*
 
