@@ -234,3 +234,41 @@ Nếu bạn muốn, mình có thể **tạo toàn bộ bài tập Unit 3 dạng 
 | đặc biệt: gaan/zien/doen                     | ik ga, jij gaat       |
 | chính tả gốc quyết định chia                 | speel vs. spel        |
 
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word  | English Meaning  | Dutch Sentence Sample               | English Translation                   |
+| ----------- | ---------------- | ----------------------------------- | ------------------------------------- |
+| beroep, het | profession       | Wat is jouw beroep?                 | What is your profession?              |
+| betalen     | to pay           | Ik ga bij de kassa betalen.         | I am going to pay at the checkout.    |
+| bezoeken    | to visit         | We bezoeken onze vrienden morgen.   | We are visiting our friends tomorrow. |
+| blauw       | blue             | Zij draagt een blauwe jas.          | She is wearing a blue coat.           |
+| elk(e)      | each / every     | Elke dag leer ik nieuwe woorden.    | Every day I learn new words.          |
+| geld, het   | money            | Ik heb niet genoeg geld.            | I don’t have enough money.            |
+| groot       | big              | Het huis is heel groot.             | The house is very big.                |
+| hond, de    | dog              | De hond blaft hard.                 | The dog barks loudly.                 |
+| jaar, het   | year             | Hij woont hier al een jaar.         | He has lived here for a year.         |
+| kaas, de    | cheese           | Ik koop een stuk kaas.              | I buy a piece of cheese.              |
+| kant, de    | side             | Aan welke kant is de winkel?        | On which side is the shop?            |
+| keer, de    | time / occasion  | Deze keer doe ik het goed.          | This time I will do it right.         |
+| klein       | small            | De kamer is klein maar gezellig.    | The room is small but cozy.           |
+| kopen       | to buy           | Ik wil een nieuwe jas kopen.        | I want to buy a new coat.             |
+| kraam, de   | stand / stall    | De fruitkraam is op de markt.       | The fruit stand is at the market.     |
+| krijgen     | to get / receive | Ik krijg een cadeau van mijn oom.   | I receive a gift from my uncle.       |
+| leven       | to live          | Zij leven in een mooi dorp.         | They live in a beautiful village.     |
+| ook         | also             | Ik wil ook koffie.                  | I also want coffee.                   |
+| oom, de     | uncle            | Mijn oom komt op bezoek.            | My uncle is coming to visit.          |
+| oud         | old              | Dit huis is honderd jaar oud.       | This house is a hundred years old.    |
+| passen      | to fit           | De schoenen passen niet goed.       | The shoes don’t fit well.             |
+| reizen      | to travel        | We reizen volgend jaar naar Italië. | We are traveling to Italy next year.  |
+| snijden     | to cut           | Ik snijd het brood met een mes.     | I cut the bread with a knife.         |
+| stuk, het   | piece            | Wil je een stuk taart?              | Do you want a piece of cake?          |
+| tante, de   | aunt             | Mijn tante woont in Rotterdam.      | My aunt lives in Rotterdam.           |
+| terras, het | terrace / patio  | We drinken koffie op het terras.    | We drink coffee on the terrace.       |
+| uit         | out / from       | Ik kom uit Nederland.               | I come from the Netherlands.          |
+| volgend(e)  | next             | Volgende week begint de cursus.     | Next week the course begins.          |
+| vragen      | to ask           | Ik wil iets vragen.                 | I want to ask something.              |
+| week, de    | week             | Ik werk veertig uur per week.       | I work forty hours per week.          |
+| wegen       | to weigh         | De kaas weegt een kilo.             | The cheese weighs one kilo.           |
+| zeggen      | to say           | Wat wilde je zeggen?                | What did you want to say?             |
+| zwemmen     | to swim          | Wij zwemmen elke zondag.            | We swim every Sunday.                 |

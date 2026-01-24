@@ -189,7 +189,7 @@ Ví dụ:
 
 ***
 
-# **X. TỪ VỰNG MỚI TRONG UNIT 1**
+# **X. TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words
 
 | Dutch Word       | English Meaning | Dutch Sentence Sample                     | English Translation                     |

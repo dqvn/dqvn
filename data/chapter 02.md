@@ -177,7 +177,7 @@ Ví dụ:
 | Các bạn           | jullie   |                     |
 | Họ                | zij / ze |                     |
 
-# **TỪ VỰNG MỚI TRONG UNIT 2**
+# **TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words (Continuation)
 
 | Dutch Word    | English Meaning     | Dutch Sentence Sample                | English Translation                   |
