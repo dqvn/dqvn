@@ -238,7 +238,7 @@ Ví dụ từ sách:
 # **TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words (Continuation)
 
-| Dutch Word    | English Meaning | Dutch Sentence Sample                           | English Translation                              |
+| Dutch Word    | Meaning | Dutch Sentence Sample                           | English Translation                              |
 | ------------- | --------------- | ----------------------------------------------- | ------------------------------------------------ |
 | acteur, de    | actor           | De acteur speelt in een nieuwe film.            | The actor acts in a new movie.                   |
 | benzine, de   | gasoline        | De auto heeft bijna geen benzine meer.          | The car is almost out of gasoline.               |

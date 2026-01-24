@@ -200,7 +200,7 @@ Bài tập yêu cầu người học sửa:
 # **TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words (Continuation)
 
-| Dutch Word      | English Meaning | Dutch Sentence Sample                           | English Translation                               |
+| Dutch Word      | Meaning | Dutch Sentence Sample                           | English Translation                               |
 | --------------- | --------------- | ----------------------------------------------- | ------------------------------------------------- |
 | afvragen, zich  | to wonder       | Ik vraag me af of hij komt.                     | I wonder if he is coming.                         |
 | bezoekuur, het  | visiting hour   | Het bezoekuur in het ziekenhuis is om vier uur. | Visiting hour at the hospital is at four o’clock. |
