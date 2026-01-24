@@ -209,3 +209,22 @@ Các từ xuất hiện trong phần bài tập & chú thích:
 *   Bao gồm **tất cả loại giới từ**: vị trí, thời gian, hướng, nguyên nhân, sở hữu, phương tiện, quan điểm.
 *   Giải thích sâu **double prepositions** và **postpositions**.
 *   Có hệ thống bài tập luyện cực đầy đủ (25.1–25.5).
+
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word       | Meaning    | Dutch Sentence Sample                    | English Translation                      |
+| ---------------- | ------------------ | ---------------------------------------- | ---------------------------------------- |
+| afdeling, de     | department         | Ik werk op de IT‑afdeling.               | I work in the IT department.             |
+| bevroren         | frozen             | Het meer is bevroren in de winter.       | The lake is frozen in the winter.        |
+| hek, het         | fence              | De hond springt over het hek.            | The dog jumps over the fence.            |
+| klimmen          | to climb           | De kinderen klimmen in de boom.          | The children climb in the tree.          |
+| nat              | wet                | Mijn jas is helemaal nat van de regen.   | My coat is completely wet from the rain. |
+| oproepen         | to call / summon   | De dokter roept de volgende patiënt op.  | The doctor calls the next patient.       |
+| plek, de         | place / spot       | Dit is een mooie plek voor een picknick. | This is a nice spot for a picnic.        |
+| röntgen          | x‑ray              | De arts maakt een röntgen van mijn arm.  | The doctor takes an x‑ray of my arm.     |
+| verbaasd         | astonished         | Ik ben verbaasd over het resultaat.      | I am astonished by the result.           |
+| verpleegster, de | nurse              | De verpleegster helpt de patiënt.        | The nurse helps the patient.             |
+| wal, de          | shore / embankment | We wandelen langs de wal van de rivier.  | We walk along the riverbank.             |
+| zwak             | weak               | Hij voelt zich zwak na de griep.         | He feels weak after the flu.             |

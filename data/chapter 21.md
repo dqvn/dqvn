@@ -194,3 +194,34 @@ Ví dụ có trong tài liệu:
 ### ✔ Các động từ tách/không tách tuân theo quy tắc chia nhưng khác nhau về vị trí tiền tố.
 
 ### ✔ Modal verbs có dạng quá khứ riêng biệt.
+
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word        | Meaning     | Dutch Sentence Sample                         | English Translation                                 |
+| ----------------- | ------------------- | --------------------------------------------- | --------------------------------------------------- |
+| bekend            | known               | Hij is bekend in het dorp.                    | He is well-known in the village.                    |
+| belasting, de     | tax                 | We moeten elk jaar belasting betalen.         | We have to pay taxes every year.                    |
+| beweren           | to maintain / argue | Hij beweert dat hij gelijk heeft.             | He argues that he is right.                         |
+| blaffen           | to bark             | De hond blaft de hele nacht.                  | The dog barks all night.                            |
+| dorp, het         | village             | Het dorp ligt midden in het bos.              | The village is located in the middle of the forest. |
+| drogen            | to dry              | Ik laat de kleren buiten drogen.              | I let the clothes dry outside.                      |
+| gooien            | to throw            | Gooi de bal naar mij!                         | Throw the ball to me!                               |
+| inbreken          | to break in / rob   | Er is vannacht ingebroken in het huis.        | The house was broken into last night.               |
+| kamperen          | to camp             | We gaan deze zomer kamperen.                  | We are going camping this summer.                   |
+| kostbaar          | valuable            | Dit horloge is heel kostbaar.                 | This watch is very valuable.                        |
+| kwaad             | angry               | Hij is kwaad omdat hij te laat was.           | He is angry because he was late.                    |
+| lenen             | to lend / borrow    | Mag ik jouw pen lenen?                        | May I borrow your pen?                              |
+| namelijk          | namely              | Ik ga vroeg weg, namelijk om zes uur.         | I'm leaving early, namely at six o’clock.           |
+| opsteken          | to light            | Hij steekt een kaars op.                      | He lights a candle.                                 |
+| overslaan         | to skip             | Laten we dit hoofdstuk overslaan.             | Let’s skip this chapter.                            |
+| redelijk          | reasonable          | De prijs is heel redelijk.                    | The price is very reasonable.                       |
+| slot, het         | lock                | Het slot van de deur is kapot.                | The lock of the door is broken.                     |
+| uitstallen        | to display          | De winkel stalt nieuwe producten uit.         | The shop displays new products.                     |
+| voorbijganger, de | passerby            | Een voorbijganger hielp mij de weg te vinden. | A passerby helped me find the way.                  |
+| voorwerp, het     | object              | Wat is dit vreemde voorwerp?                  | What is this strange object?                        |
+| waarschuwen       | to warn             | Ik wil je waarschuwen voor de gladde weg.     | I want to warn you about the slippery road.         |
+| weg               | away / gone         | De kat is weg.                                | The cat is gone.                                    |
+| zakgeld, het      | allowance           | Kinderen krijgen soms zakgeld per week.       | Children sometimes receive weekly allowance.        |
+| zonder            | without             | Ik drink thee zonder suiker.                  | I drink tea without sugar.                          |

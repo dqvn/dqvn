@@ -149,3 +149,18 @@ Kiểm tra khả năng nhận biết giống của danh từ và đặt đúng �
 *   *Omdat* = vì (chủ quan), *doordat* = vì (khách quan).
 *   Mệnh đề quan hệ dùng **die/dat**, động từ cuối.
 *   Đảo ngữ khi mệnh đề phụ đứng đầu câu.
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word    | English Meaning         | Dutch Sentence Sample                             | English Translation                                 |
+| ------------- | ----------------------- | ------------------------------------------------- | --------------------------------------------------- |
+| afstuderen    | to graduate             | Hij gaat dit jaar afstuderen aan de universiteit. | He will graduate from the university this year.     |
+| dak, het      | roof                    | Er ligt sneeuw op het dak.                        | There is snow on the roof.                          |
+| instorten     | to collapse             | Het oude gebouw is ingestort.                     | The old building has collapsed.                     |
+| kort          | short                   | De film is heel kort, maar leuk.                  | The movie is very short but fun.                    |
+| logeren       | to stay over            | We logeren dit weekend bij vrienden.              | We are staying over at friends' place this weekend. |
+| luisteren     | to listen               | Kun je even luisteren naar wat ik zeg?            | Can you listen to what I’m saying?                  |
+| spruitje, het | Brussels sprout         | Sommige kinderen lusten geen spruitjes.           | Some children don’t like Brussels sprouts.          |
+| strand, het   | beach                   | We gaan morgen naar het strand.                   | We are going to the beach tomorrow.                 |
+| verrot        | rotten / rotten through | De appels in de mand zijn verrot.                 | The apples in the basket are rotten.                |

@@ -232,3 +232,21 @@ Unit 26 dạy bạn:
 *   *laten* = khiến ai làm gì
 *   *zien/horen* = tri giác
 *   *schijnen/lijken/blijken* = khả năng/chắc chắn
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word   | Meaning | Dutch Sentence Sample                     | English Translation                      |
+| ------------ | --------------- | ----------------------------------------- | ---------------------------------------- |
+| beroemd      | famous          | Hij is een beroemd acteur.                | He is a famous actor.                    |
+| besluiten    | to decide       | We besluiten morgen wat we gaan doen.     | We will decide tomorrow what we will do. |
+| bloed, het   | blood           | De arts neemt een beetje bloed af.        | The doctor takes a little blood.         |
+| horen        | to hear         | Ik kan je niet goed horen.                | I can’t hear you well.                   |
+| jeugd, de    | youth           | In mijn jeugd speelde ik veel buiten.     | In my youth I played outside a lot.      |
+| onweer, het  | thunderstorm    | Er komt vanavond onweer.                  | A thunderstorm is coming tonight.        |
+| opladen      | to charge       | Ik moet mijn telefoon opladen.            | I need to charge my phone.               |
+| rector, de   | principal       | De rector spreekt met de studenten.       | The principal speaks with the students.  |
+| slap         | weak            | Ik voel me slap na het sporten.           | I feel weak after exercising.            |
+| tegenwoordig | these days      | Tegenwoordig werkt bijna iedereen online. | These days almost everyone works online. |
+| vervelend    | annoying        | Het is vervelend dat hij weer te laat is. | It’s annoying that he is late again.     |
+| zanger, de   | singer          | De zanger heeft een prachtige stem.       | The singer has a beautiful voice.        |

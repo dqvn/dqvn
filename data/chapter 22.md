@@ -191,3 +191,20 @@ Ví dụ:
 | Vị trí đại từ              | trong hoofdzin và bijzin                   |
 | Thành ngữ phản thân        | 4 cụm cụ thể                               |
 | Bài tập                    | kiểm tra chia động từ, đại từ, mệnh đề phụ |
+
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word       | Meaning           | Dutch Sentence Sample                        | English Translation                  |
+| ---------------- | ------------------------- | -------------------------------------------- | ------------------------------------ |
+| bang             | afraid                    | Ik ben bang voor spinnen.                    | I am afraid of spiders.              |
+| graat, de        | bone (fish bone)          | Pas op voor een graat in de vis.             | Watch out for a bone in the fish.    |
+| herinneren       | to remember               | Ik kan me dat niet goed herinneren.          | I can’t remember that well.          |
+| salaris, het     | salary                    | Hij krijgt elke maand zijn salaris.          | He receives his salary every month.  |
+| sterrenkunde, de | astronomy                 | Sterrenkunde is een interessante wetenschap. | Astronomy is an interesting science. |
+| verbazen         | to amaze                  | Het resultaat verbaast me.                   | The result amazes me.                |
+| verheugen (zich) | to look forward / rejoice | Ik verheug me op de vakantie.                | I am looking forward to the holiday. |
+| voelen           | to feel                   | Ik voel me vandaag beter.                    | I feel better today.                 |
+| vreemd           | strange                   | Dat is een vreemd verhaal.                   | That is a strange story.             |
+| zakken           | to sink / drop            | De boot begint te zakken.                    | The boat begins to sink.             |
