@@ -190,3 +190,25 @@ kleiner, groter, minst, meer, grootst, minder, vaakst/meest, oudste, jonger, kle
 
 *   Attributive → thường có -e
 *   Predicate → không có -e
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word   | English Meaning | Dutch Sentence Sample                    | English Translation                         |
+| ------------ | --------------- | ---------------------------------------- | ------------------------------------------- |
+| allemaal     | all (of them)   | Ze zijn allemaal klaar om te vertrekken. | They are all ready to leave.                |
+| anders       | different       | Dit restaurant is anders dan de rest.    | This restaurant is different from the rest. |
+| hoog         | high            | De toren is heel hoog.                   | The tower is very high.                     |
+| iedereen     | everyone        | Iedereen is welkom op het feest.         | Everyone is welcome at the party.           |
+| lang         | long            | De film duurt heel lang.                 | The movie lasts very long.                  |
+| leeftijd, de | age             | Wat is jouw leeftijd?                    | What is your age?                           |
+| lief         | sweet           | Wat een lief kind!                       | What a sweet child!                         |
+| neus, de     | nose            | Mijn neus is verstopt.                   | My nose is blocked.                         |
+| oog, het     | eye             | Hij heeft blauwe ogen.                   | He has blue eyes.                           |
+| puistje, het | pimple          | Ik heb een puistje op mijn kin.          | I have a pimple on my chin.                 |
+| ruiken       | to smell        | De bloemen ruiken heerlijk.              | The flowers smell wonderful.                |
+| sterk        | strong          | Zij is fysiek heel sterk.                | She is physically very strong.              |
+| stom         | stupid          | Dat was een stomme fout.                 | That was a stupid mistake.                  |
+| weg, de      | way / road      | We volgen de weg naar het strand.        | We follow the road to the beach.            |
+| zacht        | soft            | Het kussen is heel zacht.                | The pillow is very soft.                    |
+| zoet         | sweet           | De aardbeien zijn erg zoet.              | The strawberries are very sweet.            |

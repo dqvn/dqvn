@@ -220,3 +220,31 @@ Các mẫu tiêu biểu:
 *   Imperative: *Was je!*
 *   Perfect: *Ik heb me …*
 *   Dạng nhấn mạnh: **zichzelf**
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word  | English Meaning              | Dutch Sentence Sample                          | English Translation                        |
+| ----------- | ---------------------------- | ---------------------------------------------- | ------------------------------------------ |
+| aanbieden   | to offer                     | Hij wil mij hulp aanbieden.                    | He wants to offer me help.                 |
+| aankleden   | to dress                     | Ik moet me nog aankleden.                      | I still need to get dressed.               |
+| aankomen    | to arrive                    | De trein komt om tien uur aan.                 | The train arrives at ten.                  |
+| bewerken    | to process / edit            | Ik moet de foto's nog bewerken.                | I still need to edit the photos.           |
+| doorwerken  | to work on / to keep working | We moeten doorwerken om op tijd klaar te zijn. | We must keep working to be ready on time.  |
+| instappen   | to get on / to get in        | Stap in de bus, hij vertrekt zo.               | Get on the bus, it leaves soon.            |
+| keuren      | to test / sample / approve   | De monteur keurt de auto.                      | The mechanic inspects the car.             |
+| kwijt       | lost                         | Ik ben mijn sleutels kwijt.                    | I lost my keys.                            |
+| langskomen  | to stop by                   | Kun je morgen even langskomen?                 | Can you stop by tomorrow?                  |
+| meewerken   | to cooperate                 | Iedereen moet meewerken aan het project.       | Everyone must cooperate on the project.    |
+| mop, de     | joke                         | Hij vertelt een grappige mop.                  | He tells a funny joke.                     |
+| onthouden   | to remember                  | Ik kan zijn naam niet onthouden.               | I can’t remember his name.                 |
+| ontnemen    | to take away                 | De politie heeft zijn rijbewijs ontnomen.      | The police took away his driver’s license. |
+| ontwerpen   | to design                    | Zij ontwerpt haar eigen kleding.               | She designs her own clothing.              |
+| opnemen     | to record / take             | Ik ga het gesprek opnemen.                     | I am going to record the conversation.     |
+| regel, de   | rule                         | Er is een nieuwe regel op school.              | There is a new rule at school.             |
+| tegenwerken | to work against              | Hij werkt het plan tegen.                      | He works against the plan.                 |
+| uitgeven    | to spend                     | Ik wil niet te veel geld uitgeven.             | I don't want to spend too much money.      |
+| uitstappen  | to get off                   | We moeten bij de volgende halte uitstappen.    | We have to get off at the next stop.       |
+| uittrekken  | to take off (clothes)        | Ik trek mijn schoenen uit.                     | I take off my shoes.                       |
+| verbieden   | to prohibit                  | Roken is hier verboden.                        | Smoking is prohibited here.                |
+| verfilmen   | to film / adapt to film      | Ze willen het boek verfilmen.                  | They want to adapt the book into a film.   |
