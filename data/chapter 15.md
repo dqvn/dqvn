@@ -249,7 +249,7 @@ Bao gồm:
 # **TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words (Continuation)
 
-| Dutch Word      | English Meaning         | Dutch Sentence Sample                     | English Translation                          |
+| Dutch Word      | Meaning         | Dutch Sentence Sample                     | English Translation                          |
 | --------------- | ----------------------- | ----------------------------------------- | -------------------------------------------- |
 | aantrekkelijk   | attractive              | Het huis heeft een aantrekkelijke prijs.  | The house has an attractive price.           |
 | achter          | behind                  | De tuin ligt achter het huis.             | The garden is behind the house.              |

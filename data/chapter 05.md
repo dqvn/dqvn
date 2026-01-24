@@ -202,7 +202,7 @@ Ví dụ:
 # **TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words (Continuation)
 
-| Dutch Word   | English Meaning       | Dutch Sentence Sample                      | English Translation                           |
+| Dutch Word   | Meaning       | Dutch Sentence Sample                      | English Translation                           |
 | ------------ | --------------------- | ------------------------------------------ | --------------------------------------------- |
 | biefstuk, de | steak                 | Ik bestel een biefstuk in het restaurant.  | I order a steak in the restaurant.            |
 | bioscoop, de | cinema                | We gaan vanavond naar de bioscoop.         | We are going to the cinema tonight.           |

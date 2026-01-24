@@ -268,7 +268,7 @@ Một loạt câu hỏi thực tế:
 # **TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words (Continuation)
 
-| Dutch Word  | English Meaning | Dutch Sentence Sample                | English Translation                     |
+| Dutch Word  | Meaning | Dutch Sentence Sample                | English Translation                     |
 | ----------- | --------------- | ------------------------------------ | --------------------------------------- |
 | balkon, het | balcony         | We drinken koffie op het balkon.     | We drink coffee on the balcony.         |
 | boer, de    | farmer          | De boer werkt elke dag op het land.  | The farmer works on the land every day. |

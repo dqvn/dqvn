@@ -241,7 +241,7 @@ Ví dụ:
 # **TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words (Continuation)
 
-| Dutch Word       | English Meaning  | Dutch Sentence Sample                       | English Translation                               |
+| Dutch Word       | Meaning  | Dutch Sentence Sample                       | English Translation                               |
 | ---------------- | ---------------- | ------------------------------------------- | ------------------------------------------------- |
 | aardappel, de    | potato           | Ik koop aardappels voor het diner.          | I buy potatoes for dinner.                        |
 | afspraak, de     | appointment      | Ik heb een afspraak bij de dokter.          | I have an appointment at the doctor.              |

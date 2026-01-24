@@ -171,7 +171,7 @@ Ví dụ:
 # **TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words (Continuation)
 
-| Dutch Word      | English Meaning | Dutch Sentence Sample                           | English Translation                     |
+| Dutch Word      | Meaning | Dutch Sentence Sample                           | English Translation                     |
 | --------------- | --------------- | ----------------------------------------------- | --------------------------------------- |
 | afwassen        | to do dishes    | Ik ga de borden afwassen.                       | I am going to do the dishes.            |
 | baan, de        | job             | Hij heeft een nieuwe baan gevonden.             | He found a new job.                     |

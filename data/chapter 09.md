@@ -173,7 +173,7 @@ Các câu trong bài luyện:
 # **TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words (Continuation)
 
-| Dutch Word      | English Meaning | Dutch Sentence Sample                     | English Translation                        |
+| Dutch Word      | Meaning | Dutch Sentence Sample                     | English Translation                        |
 | --------------- | --------------- | ----------------------------------------- | ------------------------------------------ |
 | achterop        | on the back     | De tas zit achterop de fiets.             | The bag is on the back of the bike.        |
 | beddengoed, het | bedding         | Ik moet het beddengoed wassen.            | I need to wash the bedding.                |

@@ -223,7 +223,7 @@ Một số ví dụ xuất hiện trong bài tập Unit 11 (các trang từ ph�
 # **TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words (Continuation)
 
-| Dutch Word    | English Meaning | Dutch Sentence Sample                         | English Translation                         |
+| Dutch Word    | Meaning | Dutch Sentence Sample                         | English Translation                         |
 | ------------- | --------------- | --------------------------------------------- | ------------------------------------------- |
 | aantrekken    | to put on       | Ik trek mijn jas aan.                         | I put on my coat.                           |
 | afmaken       | to finish       | Ik moet mijn huiswerk afmaken.                | I need to finish my homework.               |

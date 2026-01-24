@@ -274,7 +274,7 @@ Dùng cho cả người & vật, đứng **sau** danh từ.
 # **TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words (Continuation)
 
-| Dutch Word     | English Meaning   | Dutch Sentence Sample              | English Translation                      |
+| Dutch Word     | Meaning   | Dutch Sentence Sample              | English Translation                      |
 | -------------- | ----------------- | ---------------------------------- | ---------------------------------------- |
 | bezoeker, de   | visitor           | Elke bezoeker moet zich aanmelden. | Every visitor must register.             |
 | champignon, de | mushroom          | Ik koop champignons voor de soep.  | I buy mushrooms for the soup.            |

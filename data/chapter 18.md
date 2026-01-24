@@ -224,7 +224,7 @@ Các mẫu tiêu biểu:
 # **TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words (Continuation)
 
-| Dutch Word  | English Meaning              | Dutch Sentence Sample                          | English Translation                        |
+| Dutch Word  | Meaning              | Dutch Sentence Sample                          | English Translation                        |
 | ----------- | ---------------------------- | ---------------------------------------------- | ------------------------------------------ |
 | aanbieden   | to offer                     | Hij wil mij hulp aanbieden.                    | He wants to offer me help.                 |
 | aankleden   | to dress                     | Ik moet me nog aankleden.                      | I still need to get dressed.               |

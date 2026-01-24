@@ -252,7 +252,7 @@ Các từ số nhiều xuất hiện:
 # **TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words (Continuation)
 
-| Dutch Word     | English Meaning       | Dutch Sentence Sample                 | English Translation                      |
+| Dutch Word     | Meaning       | Dutch Sentence Sample                 | English Translation                      |
 | -------------- | --------------------- | ------------------------------------- | ---------------------------------------- |
 | aardbei, de    | strawberry            | Ik eet yoghurt met aardbeien.         | I eat yogurt with strawberries.          |
 | afhalen        | to take off / pick up | Ik ga mijn pakket afhalen.            | I’m going to pick up my package.         |

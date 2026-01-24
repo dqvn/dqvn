@@ -194,7 +194,7 @@ kleiner, groter, minst, meer, grootst, minder, vaakst/meest, oudste, jonger, kle
 # **TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words (Continuation)
 
-| Dutch Word   | English Meaning | Dutch Sentence Sample                    | English Translation                         |
+| Dutch Word   | Meaning | Dutch Sentence Sample                    | English Translation                         |
 | ------------ | --------------- | ---------------------------------------- | ------------------------------------------- |
 | allemaal     | all (of them)   | Ze zijn allemaal klaar om te vertrekken. | They are all ready to leave.                |
 | anders       | different       | Dit restaurant is anders dan de rest.    | This restaurant is different from the rest. |

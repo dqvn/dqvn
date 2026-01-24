@@ -273,7 +273,7 @@ Một số câu tiêu biểu:
 # **TỪ VỰNG MỚI**
 ## 📘 Glossary of New Words (Continuation)
 
-| Dutch Word      | English Meaning  | Dutch Sentence Sample                              | English Translation                             |
+| Dutch Word      | Meaning  | Dutch Sentence Sample                              | English Translation                             |
 | --------------- | ---------------- | -------------------------------------------------- | ----------------------------------------------- |
 | haasten         | to hurry         | Ik moet me haasten om op tijd te zijn.             | I have to hurry to be on time.                  |
 | jemig           | geez / wow       | Jemig, wat een grote hond!                         | Geez, what a big dog!                           |
