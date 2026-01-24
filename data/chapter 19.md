@@ -1,9 +1,3 @@
-Dưới đây là **GIÁO TRÌNH SIÊU CHI TIẾT – UNIT 19: IMPERATIVE (MỆNH LỆNH)**, được tổng hợp 100% dựa trên nội dung tìm được trong file PDF.  
-Tôi đã tập hợp tất cả thông tin rải rác liên quan đến Unit 19, bao gồm: công thức, ngoại lệ, particles, chính tả, bài tập và từ vựng mới.  
-(Nguồn trích dẫn được ghi cuối mỗi mục.)
-
-***
-
 # 🇳🇱 **UNIT 19 – IMPERATIEF (THÌ MỆNH LỆNH TRONG TIẾNG HÀ LAN)**
 
 # 📘 *Đầy đủ quy tắc – ngoại lệ – particles – ví dụ – bài tập mẫu*
@@ -230,19 +224,3 @@ Một số từ xuất hiện trong chương:
 *   Particles = sắc thái: *even, eens, maar, toch, nou*.
 *   Separable verbs → prefix ra cuối câu.
 *   Dùng nhiều nhất trong nấu ăn & hướng dẫn.
-
-***
-
-# Bạn muốn tôi tạo gì tiếp theo?
-
-Tôi có thể:
-
-### ✔ Làm file PDF tóm tắt Unit 19
-
-### ✔ Tạo bộ bài tập mới dựa theo format sách
-
-### ✔ Làm mindmap trực quan về imperatief & particles
-
-### ✔ Tạo câu ví dụ mới kèm dịch để bạn luyện
-
-Chỉ cần nói cho tôi biết!

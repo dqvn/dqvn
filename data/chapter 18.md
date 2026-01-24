@@ -1,8 +1,3 @@
-Dưới đây là **GIÁO TRÌNH SIÊU CHI TIẾT – UNIT 18: REFLEXIVE VERBS (WEDERKERENDE WERKWOORDEN)**, tổng hợp chính xác **toàn bộ nội dung liên quan đến động từ phản thân** trong tài liệu.  
-Tất cả thông tin đều được trích dẫn đầy đủ từ các đoạn chứa Unit 18.
-
-***
-
 # 🇳🇱 **UNIT 18 – REFLEXIVE VERBS (zich + werkwoord)**
 
 # 📘 *Tính từ phản thân – bảng đầy đủ, quy tắc, vị trí, ngoại lệ, ví dụ & bài tập*
@@ -225,19 +220,3 @@ Các mẫu tiêu biểu:
 *   Imperative: *Was je!*
 *   Perfect: *Ik heb me …*
 *   Dạng nhấn mạnh: **zichzelf**
-
-***
-
-# Bạn muốn tôi làm gì tiếp theo?
-
-Tôi có thể:
-
-### ✔ Tạo bảng PDF tóm tắt Unit 18
-
-### ✔ Làm bài tập luyện từ Unit 18 kèm đáp án
-
-### ✔ Làm bảng visual reflexive pronouns đẹp – dễ học
-
-### ✔ Tạo flashcards cho tất cả động từ phản thân
-
-Chỉ cần nói cho tôi biết!

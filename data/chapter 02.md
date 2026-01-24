@@ -1,4 +1,4 @@
-# 🇳🇱 **UNIT 2 – ĐẠI TỪ CHỦ NGỮ (SUBJECT PRONOUNS)**
+# **UNIT 2 – ĐẠI TỪ CHỦ NGỮ (SUBJECT PRONOUNS)**
 
 *(Giáo trình tiếng Việt biên soạn lại – chi tiết như Unit 1)*
 

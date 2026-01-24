@@ -1,4 +1,4 @@
-# 🇳🇱 **UNIT 1 – CHÍNH TẢ TIẾNG HÀ LAN (SPELLING IN DUTCH)**
+# **UNIT 1 – CHÍNH TẢ TIẾNG HÀ LAN (SPELLING IN DUTCH)**
 
 *(Giáo trình tiếng Việt biên soạn lại – đầy đủ & siêu chi tiết)*    
 
