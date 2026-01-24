@@ -197,3 +197,16 @@ Bài tập yêu cầu người học sửa:
 *   Động từ trong mệnh đề phụ **luôn đứng cuối**
 *   Không đảo ngữ trong câu hỏi gián tiếp
 
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word      | English Meaning | Dutch Sentence Sample                           | English Translation                               |
+| --------------- | --------------- | ----------------------------------------------- | ------------------------------------------------- |
+| afvragen, zich  | to wonder       | Ik vraag me af of hij komt.                     | I wonder if he is coming.                         |
+| bezoekuur, het  | visiting hour   | Het bezoekuur in het ziekenhuis is om vier uur. | Visiting hour at the hospital is at four o’clock. |
+| fotograferen    | to photograph   | Ik fotografeer de zonsondergang.                | I photograph the sunset.                          |
+| missen          | to miss         | Ik mis mijn familie.                            | I miss my family.                                 |
+| postzegel, de   | stamp           | Ik plak een postzegel op de brief.              | I put a stamp on the letter.                      |
+| schilderij, het | painting        | Het schilderij hangt aan de muur.               | The painting hangs on the wall.                   |
+| sluiten         | to close        | De winkel sluit om zes uur.                     | The store closes at six.                          |
+| ziekenhuis, het | hospital        | Hij ligt in het ziekenhuis.                     | He is in the hospital.                            |

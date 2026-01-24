@@ -230,3 +230,18 @@ Ví dụ:
 *   mệnh đề quan hệ → động từ cuối
 *   có/không dấu phẩy = phân biệt giải thích hay giới hạn
 *   bài tập 28.1–28.5 giúp phân biệt subject/object & chọn đại từ đúng
+
+
+# **TỪ VỰNG MỚI**
+## 📘 Glossary of New Words (Continuation)
+
+| Dutch Word   | Meaning  | Dutch Sentence Sample                  | English Translation               |
+| ------------ | ---------------- | -------------------------------------- | --------------------------------- |
+| belachelijk  | ridiculous       | Dat idee is echt belachelijk.          | That idea is really ridiculous.   |
+| blonderen    | to bleach (hair) | Zij wil haar haar blonderen.           | She wants to bleach her hair.     |
+| noemen       | to name / call   | Hoe noem je dit in het Nederlands?     | What do you call this in Dutch?   |
+| plaatje, het | picture / image  | Ik zie een mooi plaatje in het boek.   | I see a nice picture in the book. |
+| recept, het  | recipe           | Ik volg het recept stap voor stap.     | I follow the recipe step by step. |
+| snappen      | to understand    | Ik snap niet wat je bedoelt.           | I don’t understand what you mean. |
+| trimmer, de  | groomer          | De trimmer knipt het haar van de hond. | The groomer trims the dog’s hair. |
+| vent, de     | chap / guy       | Die vent is best aardig.               | That guy is quite nice.           |
