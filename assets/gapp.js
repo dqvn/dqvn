@@ -2,7 +2,7 @@
 /* SPA – Quản lý chương Markdown cho người học tiếng Hà Lan (A2)
  * Tác giả: Bạn & M365 Copilot
  * Tính năng:
- * - Ưu tiên dùng media/chapters.json nếu tồn tại
+ * - Ưu tiên dùng data/chapters.json nếu tồn tại
  * - Nếu không có, dò tự động: chapter 01.md → chapter 99.md (configurable)
  * - Giao diện hiện đại: Sidebar, TOC, tìm kiếm, đánh dấu hoàn thành, lưu tiến độ
  * - Markdown rendering: Marked + DOMPurify, highlight.js
