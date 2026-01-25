@@ -746,6 +746,7 @@ function attachTTSForWordsAndSentencesInTables() {
 
       // 2) Dutch Sentence Sample (ô này có thể chỉ 1 câu, đảm bảo sẽ có 🔊)
       if (idxSentence >= 0 && cells[idxSentence]) {
+         attachSpeakForDutchWordCell(cells[idxSentence]); // gắn 🔊 cho từ NL trong ô mẫu câu
         // Nếu bộ xử lý câu NL tổng quát chưa chạm vào ô, thì xử lý riêng
         if (cells[idxSentence].dataset.ttsProcessed !== '1') {
           processContainerForSentences(cells[idxSentence]); // tái dùng hàm tách câu NL
