@@ -63,7 +63,7 @@ Không nhấn = dùng trong câu bình thường, tự nhiên.
 | ---------- | ---- | ----------------------------------------- |
 | je         | jij  | **Waar woon jij?** (nhấn mạnh “còn bạn?”) |
 | ze         | zij  | **Hoe heet zij?**                         |
-| we         | wij  | **Wij** komen uit Utrecht.                |
+| we         | wij  | **Wij komen uit Utrecht.**                |
 
 Ví dụ đối chiếu:
 
