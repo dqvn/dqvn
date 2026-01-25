@@ -11,7 +11,7 @@ Unit này là một trong những chủ điểm quan trọng nhất trong tiến
 
 # 1️⃣ **PREDICATIVE ADJECTIVE – KHÔNG BAO GIỜ CÓ -E**
 
-Khi tính từ đứng sau động từ “be / become / remain”:  
+Khi tính từ đứng sau động từ “zijn, worden, blijven”:  
 ✔ **Không bao giờ** thêm đuôi **-e**.
 
 ### Ví dụ:
