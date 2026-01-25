@@ -1,4 +1,4 @@
-# 📘 **UNIT 5 – OBJECT PRONOUNS (ĐẠI TỪ TÂN NGỮ)**
+# **UNIT 5 – OBJECT PRONOUNS (ĐẠI TỪ TÂN NGỮ)**
 
 Đại từ tân ngữ (làm tân ngữ trực tiếp/gián tiếp) là phần cực quan trọng trong mọi câu tiếng Hà Lan. Đặc biệt tiếng Hà Lan có 3 đại từ tân ngữ cho ngôi **thứ 3 số nhiều** – điểm mà người học hay nhầm.
 

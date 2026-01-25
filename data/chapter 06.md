@@ -1,4 +1,4 @@
-# 📘 **UNIT 6 – NUMBERS & MEASURES (SỐ & ĐƠN VỊ)**
+# **UNIT 6 – NUMBERS & MEASURES (SỐ & ĐƠN VỊ)**
 
 Unit này bao phủ toàn bộ hệ thống số đếm, số thứ tự, cách đọc ngày tháng, tiền tệ, đo lường, và số từ không xác định trong tiếng Hà Lan — đây là một trong những Unit có tính ứng dụng **cao nhất** trong đời sống.
 

@@ -1,4 +1,4 @@
-# 📘 **UNIT 4 – ARTICLES & NOUNS (MẠO TỪ & DANH TỪ)**
+# **UNIT 4 – ARTICLES & NOUNS (MẠO TỪ & DANH TỪ)**
 
 Tiếng Hà Lan có hệ thống mạo từ khá phức tạp vì danh từ được chia thành hai “giống ngữ pháp”: **de** và **het**. Bạn *bắt buộc* phải học từ vựng luôn kèm mạo từ.
 
