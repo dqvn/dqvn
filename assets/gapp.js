@@ -746,7 +746,6 @@ function attachTTSForWordsAndSentencesInTables() {
 
       // 2) Dutch Sentence Sample (ô này có thể chỉ 1 câu, đảm bảo sẽ có 🔊)
       if (idxSentence >= 0 && cells[idxSentence]) {
-         attachSpeakForDutchWordCell(cells[idxSentence]); // gắn 🔊 cho từ NL trong ô mẫu câu
         // Nếu bộ xử lý câu NL tổng quát chưa chạm vào ô, thì xử lý riêng
         if (cells[idxSentence].dataset.ttsProcessed !== '1') {
           processContainerForSentences(cells[idxSentence]); // tái dùng hàm tách câu NL
@@ -845,66 +844,82 @@ function isDutchWord(word) {
 
 
 // Tách text node thành câu, nhận diện NL, bọc span + nút 🔊
-function processContainerForSentences(container) {
-  const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, {
-    acceptNode(node) {
-      if (!node.nodeValue) return NodeFilter.FILTER_REJECT;
-      const text = node.nodeValue.trim();
-      if (!text) return NodeFilter.FILTER_REJECT;
-      if (node.parentElement && node.parentElement.closest('code, kbd, samp')) return NodeFilter.FILTER_REJECT;
-      return NodeFilter.FILTER_ACCEPT;
-    }
+function attachTTSForWordsAndSentencesInTables() {
+  const tables = els.content.querySelectorAll('table');
+  tables.forEach(table => {
+    // Xác định header
+    const headerCells = table.querySelectorAll('thead th, tbody tr:first-child th, tbody tr:first-child td');
+    if (!headerCells.length) return;
+
+    // Tìm index cột Word / Sentence Sample
+    let idxWord = -1, idxSentence = -1;
+
+    headerCells.forEach((cell, i) => {
+      const h = (cell.textContent || '').trim().toLowerCase();
+
+      if (idxWord < 0 && /dutch\s*word/.test(h)) idxWord = i;
+      if (idxWord < 0 && /(từ|tu)\s*tiếng\s*hà\s*lan/.test(h)) idxWord = i;
+
+      if (idxSentence < 0 && /dutch\s*sentence\s*sample/.test(h)) idxSentence = i;
+      if (idxSentence < 0 && /(ví dụ|mẫu câu|câu mẫu)/.test(h)) idxSentence = i;
+    });
+
+    const hasThead = !!table.querySelector('thead');
+    const rows = table.querySelectorAll('tbody tr');
+
+    rows.forEach((tr, rowIndex) => {
+      if (!hasThead && rowIndex === 0) return; // bỏ hàng header nếu không có thead
+
+      const cells = tr.querySelectorAll('td, th');
+
+      // 1) Dutch Word
+      if (idxWord >= 0 && cells[idxWord]) {
+        attachSpeakForDutchWordCell(cells[idxWord]);
+      }
+
+      // 2) Dutch Sentence Sample
+      if (idxSentence >= 0 && cells[idxSentence]) {
+        const cell = cells[idxSentence];
+
+        // Nếu chưa xử lý, tiến hành tách câu + gắn nút
+        if (cell.dataset.ttsProcessed !== '1') {
+          processContainerForSentences(cell);
+          cell.dataset.ttsProcessed = '1';
+        }
+
+        // Nếu sau khi xử lý mà vẫn chưa có câu NL nào (do heuristic),
+        // nhưng bạn muốn **bắt buộc** có nút cho toàn bộ nội dung cell (vì chắc chắn là NL),
+        // thì có thể fallback ép bọc toàn bộ làm 1 câu:
+        if (!cell.querySelector('.nl-sentence')) {
+          const text = (cell.textContent || '').trim();
+          if (text) {
+            const span = document.createElement('span');
+            span.className = 'nl-sentence';
+            span.textContent = text;
+
+            const btn = document.createElement('button');
+            btn.className = 'speak-btn';
+            btn.title = 'Đọc câu tiếng Hà Lan này';
+            btn.setAttribute('aria-label', 'Đọc câu tiếng Hà Lan');
+            btn.textContent = '🔊';
+            btn.addEventListener('click', (e) => {
+              e.stopPropagation();
+              stopSpeaking();
+              const u = utteranceFor(span.textContent || '', span);
+              speechSynthesis.speak(u);
+            });
+
+            cell.textContent = '';
+            cell.appendChild(span);
+            cell.appendChild(document.createTextNode(' '));
+            cell.appendChild(btn);
+          }
+        }
+      }
+    });
   });
-
-  const textNodes = [];
-  let n; while (n = walker.nextNode()) textNodes.push(n);
-
-  for (const tNode of textNodes) {
-    const raw = tNode.nodeValue;
-    const segments = splitToSentences(raw); // [{text, isSentence}]
-    if (segments.length <= 1) continue;
-
-    const frag = document.createDocumentFragment();
-    for (const seg of segments) {
-      const piece = seg.text;
-      if (!seg.isSentence) {
-        frag.appendChild(document.createTextNode(piece));
-        continue;
-      }
-
-      const trimmed = piece.trim();
-      if (!isDutchSentence(trimmed)) {
-        frag.appendChild(document.createTextNode(piece));
-        continue;
-      }
-
-      const span = document.createElement('span');
-      span.className = 'nl-sentence';
-      span.textContent = trimmed;
-
-      // giữ khoảng trắng cuối segment (nếu có nhiều khoảng trắng)
-      const m = piece.match(/(\s+)$/);
-      const trailingWs = m ? m[1] : '';
-
-      const btn = document.createElement('button');
-      btn.className = 'speak-btn';
-      btn.title = 'Đọc câu tiếng Hà Lan này';
-      btn.setAttribute('aria-label', 'Đọc câu tiếng Hà Lan');
-      btn.textContent = '🔊';
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        stopSpeaking();
-        const u = utteranceFor(span.textContent || '', span);
-        speechSynthesis.speak(u);
-      });
-
-      frag.appendChild(span);
-      frag.appendChild(btn);
-      if (trailingWs) frag.appendChild(document.createTextNode(trailingWs));
-    }
-    tNode.parentNode.replaceChild(frag, tNode);
-  }
 }
+
 
 // Tách câu: ưu tiên Intl.Segmenter (chính xác), fallback regex
 function splitToSentences(text) {
