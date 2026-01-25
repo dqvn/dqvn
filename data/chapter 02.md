@@ -67,8 +67,8 @@ Không nhấn = dùng trong câu bình thường, tự nhiên.
 
 Ví dụ đối chiếu:
 
-*   **Ik woon in Olst. Waar woon *jij*?** (hỏi nhấn mạnh)
-*   **Woon *je* ook in Olst?** (không nhấn)    
+*   **Ik woon in Olst. Waar woon jij?** (hỏi nhấn mạnh)
+*   **Woon je ook in Olst?** (không nhấn)    
 
 ***
 
