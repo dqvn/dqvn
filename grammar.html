@@ -1,6 +1,6 @@
-
 <!doctype html>
 <html lang="vi" data-theme="system">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
@@ -26,6 +26,7 @@
   <!-- App -->
   <script src="assets/gapp.js" type="module" defer></script>
 </head>
+
 <body>
   <!-- Top App Bar -->
   <header class="app-header" role="banner">
@@ -45,6 +46,28 @@
       <button id="btnTheme" class="icon-btn" title="Chuyển chủ đề (Alt+T)" aria-label="Chuyển chủ đề">🌓</button>
     </div>
   </header>
+
+  <!-- TTS Control Bar -->
+  <section class="tts-bar" aria-label="Điều khiển đọc to (TTS)">
+    <div class="tts-controls">
+      <label>Giọng:
+        <select id="ttsVoice" aria-label="Chọn giọng đọc"></select>
+      </label>
+      <label>Tốc độ:
+        <input id="ttsRate" type="range" min="0.7" max="1.4" step="0.05" aria-label="Tốc độ đọc">
+        <span id="ttsRateVal" class="tts-val"></span>
+      </label>
+      <label>Cao độ:
+        <input id="ttsPitch" type="range" min="0.8" max="1.4" step="0.05" aria-label="Cao độ đọc">
+        <span id="ttsPitchVal" class="tts-val"></span>
+      </label>
+    </div>
+    <div class="tts-actions">
+      <button id="ttsPlayAll" class="pill-btn" title="Đọc tất cả câu NL trong chương">▶️ Đọc tất cả</button>
+      <button id="ttsPause" class="pill-btn" title="Tạm dừng / Tiếp tục">⏯️ Tạm dừng/Tiếp tục</button>
+      <button id="ttsStop" class="pill-btn" title="Dừng đọc">⏹️ Dừng</button>
+    </div>
+  </section>
 
   <!-- Progress bar -->
   <div class="reading-progress" aria-hidden="true">
@@ -73,8 +96,12 @@
       <article id="content" class="content" aria-live="polite">
         <div class="empty-state">
           <h2>Chào mừng!</h2>
-          <p>Chọn một chương ở bên trái để bắt đầu học. Bạn có thể tìm kiếm toàn bộ nội dung bằng khung tìm ở góc phải trên.</p>
-          <p>Nếu có tệp <code>media/chapters.json</code>, ứng dụng sẽ dùng nó. Nếu không, ứng dụng sẽ tự dò <code>chapter 01.md</code> → <code>chapter 99.md</code> (hoặc theo cấu hình).</p>
+          <p>Chọn một chương ở bên trái để bắt đầu học. Bạn có thể tìm kiếm toàn bộ nội dung bằng khung tìm ở góc phải
+            trên.</p>
+          <p>Nếu có tệp <code>media/chapters.json</code>, ứng dụng sẽ dùng nó. Nếu không, ứng dụng sẽ tự dò
+            <code>chapter 01.md</code> → <code>chapter 99.md</code> (hoặc theo cấu hình).</p>
+          <p>Giờ đây bạn có thể <strong>nghe TTS tiếng Hà Lan</strong> cho các câu ví dụ (🔊 cạnh từng câu NL).</p>
+          <p>Chúc bạn học vui vẻ! 🎉</p>
         </div>
       </article>
 
@@ -99,4 +126,5 @@
     </div>
   </footer>
 </body>
+
 </html>

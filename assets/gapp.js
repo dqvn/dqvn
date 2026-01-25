@@ -20,6 +20,16 @@ const CONFIG = {
   defaultFontPx: 18,
   minFontPx: 14,
   maxFontPx: 22,
+  tts: {
+    lang: 'nl-NL',
+    defaultRate: 1.0,
+    defaultPitch: 1.0,
+    storage: {
+      voiceURI: 'a2:tts:voiceURI',
+      rate: 'a2:tts:rate',
+      pitch: 'a2:tts:pitch'
+    }
+  },
   storage: {
     lastChapter: 'a2:lastChapter',
     scrollMap: 'a2:scrollByFile',
@@ -57,6 +67,16 @@ const els = {
   btnPrint: document.getElementById('btnPrint'),
 
   readingProgress: document.getElementById('readingProgress'),
+
+  // TTS controls
+  ttsVoice: document.getElementById('ttsVoice'),
+  ttsRate: document.getElementById('ttsRate'),
+  ttsPitch: document.getElementById('ttsPitch'),
+  ttsRateVal: document.getElementById('ttsRateVal'),
+  ttsPitchVal: document.getElementById('ttsPitchVal'),
+  ttsPlayAll: document.getElementById('ttsPlayAll'),
+  ttsPause: document.getElementById('ttsPause'),
+  ttsStop: document.getElementById('ttsStop'),
 };
 
 let state = {
@@ -64,7 +84,12 @@ let state = {
   indexLoaded: false,
   searchIndex: /** @type {{file:string,title:string,content:string}[]} */([]),
   currentIdx: -1,
-  scrolling: false, // guard for restoring scroll
+  // scrolling: false, // guard for restoring scroll
+  // TTS runtime
+  voices: [],
+  ttsQueue: [],
+  ttsPlaying: false,
+  ttsPaused: false,
 };
 
 // ---------- Utils ----------
@@ -188,7 +213,7 @@ function renderChapterList() {
     if (completeOnly && !isCompleted) return;
 
     const item = document.createElement('div');
-    item.className = `chapter-item ${isCompleted ? 'completed': ''}`;
+    item.className = `chapter-item ${isCompleted ? 'completed' : ''}`;
     item.tabIndex = 0;
     item.setAttribute('role', 'button');
     item.setAttribute('aria-label', ch.title);
@@ -265,6 +290,9 @@ async function openChapter(idx, { fromPopState = false } = {}) {
 
   // Xây TOC theo headings
   buildTOC();
+
+  // Gắn nút 🔊 cho MỌI câu tiếng Hà Lan (không đọc nguyên file)
+  attachTTSForAllDutchSentences();
 
   // Lưu chapter cuối
   saveLS(CONFIG.storage.lastChapter, ch.file);
@@ -381,7 +409,7 @@ async function buildSearchIndex() {
       const md = await res.text();
       const text = mdToPlain(md);
       arr.push({ file: ch.file, title: ch.title, content: text });
-    } catch {}
+    } catch { }
   }
   state.searchIndex = arr;
   state.indexLoaded = true;
@@ -434,7 +462,7 @@ function renderSearchResults(results, q) {
   results.forEach(r => {
     const isCompleted = completed.has(r.file);
     const item = document.createElement('div');
-    item.className = `chapter-item ${isCompleted ? 'completed': ''}`;
+    item.className = `chapter-item ${isCompleted ? 'completed' : ''}`;
     item.tabIndex = 0;
 
     const title = document.createElement('div');
@@ -532,7 +560,7 @@ function slugify(str) {
     .trim().replace(/\s+/g, '-');
 }
 function escapeHtml(s) {
-  return (s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  return (s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
 function escapeRegExp(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -557,6 +585,298 @@ function handleInitialRoute() {
   if (targetIdx >= 0) openChapter(targetIdx, { fromPopState: true });
 }
 
+// ==================== TTS (Web Speech API – câu NL) ====================
+function initTTS() {
+  function loadVoices() {
+    state.voices = window.speechSynthesis?.getVoices?.() || [];
+    const nlVoices = state.voices.filter(v => (v.lang || '').toLowerCase().startsWith('nl'));
+    const all = nlVoices.length ? nlVoices : state.voices;
+
+    els.ttsVoice.innerHTML = '';
+    for (const v of all) {
+      const opt = document.createElement('option');
+      opt.value = v.voiceURI;
+      opt.textContent = `${v.name} (${v.lang})${v.default ? ' • default' : ''}`;
+      els.ttsVoice.appendChild(opt);
+    }
+
+    const savedVoice = loadLS(CONFIG.tts.storage.voiceURI, null);
+    if (savedVoice && [...els.ttsVoice.options].some(o => o.value === savedVoice)) {
+      els.ttsVoice.value = savedVoice;
+    } else {
+      const firstNL = [...els.ttsVoice.options].find(o => /nl/i.test(o.textContent));
+      if (firstNL) els.ttsVoice.value = firstNL.value;
+    }
+  }
+
+  loadVoices();
+  if (typeof speechSynthesis !== 'undefined') {
+    speechSynthesis.onvoiceschanged = loadVoices;
+  }
+
+  const savedRate = loadLS(CONFIG.tts.storage.rate, CONFIG.tts.defaultRate);
+  const savedPitch = loadLS(CONFIG.tts.storage.pitch, CONFIG.tts.defaultPitch);
+  els.ttsRate.value = String(savedRate);
+  els.ttsPitch.value = String(savedPitch);
+  els.ttsRateVal.textContent = Number(savedRate).toFixed(2);
+  els.ttsPitchVal.textContent = Number(savedPitch).toFixed(2);
+
+  els.ttsVoice.addEventListener('change', () => saveLS(CONFIG.tts.storage.voiceURI, els.ttsVoice.value));
+  els.ttsRate.addEventListener('input', () => {
+    els.ttsRateVal.textContent = Number(els.ttsRate.value).toFixed(2);
+    saveLS(CONFIG.tts.storage.rate, Number(els.ttsRate.value));
+  });
+  els.ttsPitch.addEventListener('input', () => {
+    els.ttsPitchVal.textContent = Number(els.ttsPitch.value).toFixed(2);
+    saveLS(CONFIG.tts.storage.pitch, Number(els.ttsPitch.value));
+  });
+
+  els.ttsPlayAll.addEventListener('click', () => speakAllInPage());
+  els.ttsPause.addEventListener('click', () => togglePause());
+  els.ttsStop.addEventListener('click', () => stopSpeaking());
+}
+function getSelectedVoice() {
+  const uri = els.ttsVoice.value;
+  const byURI = state.voices.find(v => v.voiceURI === uri);
+  if (byURI) return byURI;
+  const nl = state.voices.find(v => (v.lang || '').toLowerCase().startsWith('nl'));
+  if (nl) return nl;
+  return state.voices[0] || null;
+}
+function utteranceFor(text, nodeForHighlight) {
+  const u = new SpeechSynthesisUtterance(text);
+  const v = getSelectedVoice();
+  if (v) u.voice = v;
+  u.lang = v?.lang || CONFIG.tts.lang;
+  u.rate = Number(els.ttsRate.value || CONFIG.tts.defaultRate);
+  u.pitch = Number(els.ttsPitch.value || CONFIG.tts.defaultPitch);
+
+  u.onstart = () => {
+    if (nodeForHighlight) nodeForHighlight.classList.add('speaking');
+    nodeForHighlight?.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    state.ttsPlaying = true;
+  };
+  u.onend = () => {
+    if (nodeForHighlight) nodeForHighlight.classList.remove('speaking');
+    if (state.ttsQueue.length) {
+      const next = state.ttsQueue.shift();
+      speechSynthesis.speak(next);
+    } else {
+      state.ttsPlaying = false; state.ttsPaused = false;
+    }
+  };
+  u.onerror = () => {
+    if (nodeForHighlight) nodeForHighlight.classList.remove('speaking');
+    state.ttsPlaying = false; state.ttsPaused = false;
+  };
+  return u;
+}
+function stopSpeaking() {
+  try { speechSynthesis.cancel(); } catch { }
+  state.ttsQueue = [];
+  state.ttsPlaying = false;
+  state.ttsPaused = false;
+  els.content.querySelectorAll('.speaking').forEach(el => el.classList.remove('speaking'));
+}
+function togglePause() {
+  if (!speechSynthesis) return;
+  if (speechSynthesis.speaking && !speechSynthesis.paused) {
+    speechSynthesis.pause(); state.ttsPaused = true;
+  } else if (speechSynthesis.paused) {
+    speechSynthesis.resume(); state.ttsPaused = false;
+  }
+}
+
+// === Gắn TTS cho MỌI câu NL trong trang ===
+function attachTTSForAllDutchSentences() {
+  stopSpeaking();
+
+  const selectors = [
+    'p', 'li', 'blockquote',
+    'td', 'th',
+    'h1', 'h2', 'h3', 'h4'
+  ].join(',');
+
+  const containers = els.content.querySelectorAll(selectors);
+  containers.forEach(container => {
+    if (container.closest('pre, code')) return;
+    if (container.dataset.ttsProcessed === '1') return;
+    processContainerForSentences(container);
+    container.dataset.ttsProcessed = '1';
+  });
+}
+
+// Tách text node thành câu, nhận diện NL, bọc span + nút 🔊
+function processContainerForSentences(container) {
+  const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, {
+    acceptNode(node) {
+      if (!node.nodeValue) return NodeFilter.FILTER_REJECT;
+      const text = node.nodeValue.trim();
+      if (!text) return NodeFilter.FILTER_REJECT;
+      if (node.parentElement && node.parentElement.closest('code, kbd, samp')) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
+    }
+  });
+
+  const textNodes = [];
+  let n; while (n = walker.nextNode()) textNodes.push(n);
+
+  for (const tNode of textNodes) {
+    const raw = tNode.nodeValue;
+    const segments = splitToSentences(raw); // [{text, isSentence}]
+    if (segments.length <= 1) continue;
+
+    const frag = document.createDocumentFragment();
+    for (const seg of segments) {
+      const piece = seg.text;
+      if (!seg.isSentence) {
+        frag.appendChild(document.createTextNode(piece));
+        continue;
+      }
+
+      const trimmed = piece.trim();
+      if (!isDutchSentence(trimmed)) {
+        frag.appendChild(document.createTextNode(piece));
+        continue;
+      }
+
+      const span = document.createElement('span');
+      span.className = 'nl-sentence';
+      span.textContent = trimmed;
+
+      // giữ khoảng trắng cuối segment (nếu có nhiều khoảng trắng)
+      const m = piece.match(/(\s+)$/);
+      const trailingWs = m ? m[1] : '';
+
+      const btn = document.createElement('button');
+      btn.className = 'speak-btn';
+      btn.title = 'Đọc câu tiếng Hà Lan này';
+      btn.setAttribute('aria-label', 'Đọc câu tiếng Hà Lan');
+      btn.textContent = '🔊';
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        stopSpeaking();
+        const u = utteranceFor(span.textContent || '', span);
+        speechSynthesis.speak(u);
+      });
+
+      frag.appendChild(span);
+      frag.appendChild(btn);
+      if (trailingWs) frag.appendChild(document.createTextNode(trailingWs));
+    }
+    tNode.parentNode.replaceChild(frag, tNode);
+  }
+}
+
+// Tách câu: ưu tiên Intl.Segmenter (chính xác), fallback regex
+function splitToSentences(text) {
+  if (!text) return [{ text, isSentence: false }];
+
+  if ('Intl' in window && 'Segmenter' in Intl) {
+    try {
+      const seg = new Intl.Segmenter('nl', { granularity: 'sentence' });
+      const parts = Array.from(seg.segment(text));
+      return parts.map(p => ({
+        text: p.segment,
+        isSentence: /[\.!?…]['")\]]*\s*$/.test(p.segment.trim()) || p.isWordLike === false
+      }));
+    } catch { }
+  }
+
+  const out = [];
+  let last = 0;
+  const rx = /([\.!?…]['")\]]*\s+)/g;
+  let m;
+  while ((m = rx.exec(text)) !== null) {
+    const end = m.index + m[0].length;
+    out.push({ text: text.slice(last, end), isSentence: true });
+    last = end;
+  }
+  if (last < text.length) out.push({ text: text.slice(last), isSentence: false });
+  return out;
+}
+
+// Heuristic nhận diện câu tiếng Hà Lan
+function isDutchSentence(sentence) {
+  const s = (sentence || '').trim();
+  if (s.length < 4) return false;
+  if (!/[\.!?…]['")\]]*$/.test(s)) return false;
+  if (!/\s/.test(s)) return false;
+
+  const nl = scoreDutch(s);
+  const en = scoreEnglish(s);
+  return nl >= 2 && (nl - en) >= 1;
+}
+
+function tokenizeWords(s) {
+  return (s.toLowerCase().match(/[a-zà-ÿ]+/gi) || []);
+}
+function scoreDutch(s) {
+  const words = tokenizeWords(s);
+  if (!words.length) return 0;
+  let score = 0;
+
+  const NL_FUNCTION = new Set([
+    'ik', 'jij', 'je', 'hij', 'zij', 'ze', 'wij', 'we', 'jullie', 'u',
+    'mij', 'me', 'jou', 'hem', 'haar', 'ons', 'hun', 'hen', 'u',
+    'die', 'dat', 'dit', 'deze',
+    'een', 'de', 'het',
+    'niet', 'geen', 'ook', 'al', 'toch', 'nog', 'wel', 'maar',
+    'en', 'of', 'want', 'omdat', 'dus', 'dat', 'als', 'terwijl', 'nadat', 'voordat',
+    'voor', 'naar', 'bij', 'met', 'op', 'aan', 'van', 'uit', 'over', 'onder', 'achter', 'tegen', 'door', 'tussen', 'om',
+    'hier', 'daar', 'waar', 'wanneer', 'hoe', 'waarom', 'welke'
+  ]);
+  const NL_VERBS = new Set([
+    'ben', 'bent', 'is', 'zijn', 'was', 'waren', 'geweest',
+    'heb', 'hebt', 'heeft', 'hebben', 'had', 'hadden', 'gehad',
+    'doe', 'doet', 'doen', 'deed', 'deden', 'gedaan',
+    'zal', 'zult', 'zullen', 'zou', 'zouden',
+    'kan', 'kunt', 'kunnen', 'kon', 'konden', 'gekund',
+    'moet', 'moeten', 'moest', 'moesten', 'gemoeten',
+    'wil', 'wilt', 'willen', 'wou', 'wouden', 'gewild',
+    'mag', 'mogen', 'mocht', 'mochten', 'gemogen'
+  ]);
+  const NL_SUFFIX = [/en$/, /t$/, /(de|te|den|ten|dt)$/];
+
+  for (const w of words) {
+    if (NL_FUNCTION.has(w) || NL_VERBS.has(w)) score += 2;
+    else if (NL_SUFFIX.some(rx => rx.test(w)) && w.length > 3) score += 1;
+  }
+
+  if (/\b(heb|hebt|heeft|hebben|ben|bent|is|zijn)\b\s+\bge[a-z]{2,}\b/i.test(s)) score += 2;
+  return score;
+}
+function scoreEnglish(s) {
+  const words = tokenizeWords(s);
+  if (!words.length) return 0;
+  let score = 0;
+  const EN_COMMON = new Set([
+    'the', 'is', 'are', 'am', 'was', 'were', 'a', 'an', 'and', 'or', 'but',
+    'not', 'no', 'do', 'does', 'did', 'have', 'has', 'had',
+    'will', 'would', 'can', 'could', 'should', 'shall', 'may', 'might', 'must',
+    'to', 'for', 'in', 'on', 'at', 'with', 'from', 'by', 'of'
+  ]);
+  for (const w of words) if (EN_COMMON.has(w)) score += 1;
+  return score;
+}
+
+// Đọc tất cả câu NL theo thứ tự hiển thị
+function speakAllInPage() {
+  stopSpeaking();
+  const nodes = els.content.querySelectorAll('.nl-sentence');
+  state.ttsQueue = [];
+  nodes.forEach(node => {
+    const t = (node.textContent || '').trim();
+    if (t) state.ttsQueue.push(utteranceFor(t, node));
+  });
+  if (state.ttsQueue.length) {
+    const first = state.ttsQueue.shift();
+    speechSynthesis.speak(first);
+  } else {
+    toast('Không tìm thấy câu tiếng Hà Lan trong chương này.');
+  }
+}
+
 // ---------- Bootstrap ----------
 (async function init() {
   initThemeAndFont();
@@ -564,6 +884,13 @@ function handleInitialRoute() {
   initReadingProgress();
   initSearch();
   applyListFiltersEvents();
+
+  if ('speechSynthesis' in window && 'SpeechSynthesisUtterance' in window) {
+    initTTS();
+  } else {
+    console.warn('Trình duyệt không hỗ trợ Web Speech API (TTS).');
+    document.querySelector('.tts-bar')?.remove();
+  }
 
   // Load chapters
   let chapters = await tryLoadManifest();
