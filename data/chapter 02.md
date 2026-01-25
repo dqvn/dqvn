@@ -89,8 +89,8 @@ Ví dụ đối chiếu:
 
 Ví dụ:
 
-*   **Mag ik *u* iets vragen?** – Tôi có thể hỏi ông/bà điều gì không?
-*   **Zegt *u* het maar.** – Xin mời nói ạ.    
+*   **Mag ik u iets vragen?** – Tôi có thể hỏi ông/bà điều gì không?
+*   **Zegt u het maar.** – Xin mời nói ạ.    
 
 Lưu ý:  
 Mặc dù **u** có thể chỉ nhiều người, động từ **luôn chia như số ít**.
