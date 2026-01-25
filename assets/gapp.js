@@ -293,7 +293,7 @@ async function openChapter(idx, { fromPopState = false } = {}) {
 
   // Gắn nút 🔊 cho MỌI câu tiếng Hà Lan (không đọc nguyên file)
   attachTTSForAllDutchSentences();
-  attachTTSForWordsAndSentencesInTables();
+  attachTTSForWordsAndSentencesInTables1();
 
   // Lưu chapter cuối
   saveLS(CONFIG.storage.lastChapter, ch.file);
@@ -707,6 +707,119 @@ function attachTTSForAllDutchSentences() {
   });
 }
 
+
+// Tách text node thành câu, nhận diện NL, bọc span + nút 🔊 (đã fix đơn-câu)
+function processContainerForSentences(container) {
+  const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, {
+    acceptNode(node) {
+      if (!node.nodeValue) return NodeFilter.FILTER_REJECT;
+      const text = node.nodeValue.trim();
+      if (!text) return NodeFilter.FILTER_REJECT;
+      // Bỏ qua mọi text nằm trong code/kbd/samp
+      if (node.parentElement && node.parentElement.closest('code, kbd, samp')) {
+        return NodeFilter.FILTER_REJECT;
+      }
+      return NodeFilter.FILTER_ACCEPT;
+    }
+  });
+
+  const textNodes = [];
+  let n;
+  while ((n = walker.nextNode())) textNodes.push(n);
+
+  for (const tNode of textNodes) {
+    const raw = tNode.nodeValue;
+    const segments = splitToSentences(raw); // [{ text, isSentence }]
+
+    // --- XỬ LÝ TRƯỜNG HỢP CHỈ CÓ 1 SEGMENT (1 CÂU DUY NHẤT) ---
+    if (segments.length === 1) {
+      const only = segments[0];
+      // Nếu không phải 1 câu hoàn chỉnh → bỏ qua
+      if (!only.isSentence || !isDutchSentence(only.text.trim())) {
+        continue;
+      }
+
+      // Bọc câu + nút 🔊
+      const span = document.createElement('span');
+      span.className = 'nl-sentence';
+      span.textContent = only.text.trim();
+
+      const btn = document.createElement('button');
+      btn.className = 'speak-btn';
+      btn.title = 'Đọc câu tiếng Hà Lan này';
+      btn.setAttribute('aria-label', 'Đọc câu tiếng Hà Lan');
+      btn.textContent = '🔊';
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        stopSpeaking();
+        const u = utteranceFor(span.textContent || '', span);
+        speechSynthesis.speak(u);
+      });
+
+      const frag = document.createDocumentFragment();
+      frag.appendChild(span);
+      frag.appendChild(btn);
+
+      // Giữ khoảng trắng ở cuối text gốc (nếu có)
+      const tail = raw.match(/(\s+)$/);
+      if (tail) frag.appendChild(document.createTextNode(tail[1]));
+
+      tNode.parentNode.replaceChild(frag, tNode);
+      continue;
+    }
+    // --- HẾT XỬ LÝ TRƯỜNG HỢP 1 CÂU ---
+
+    // Các trường hợp có >1 câu (giữ nguyên logic tách & gắn từng câu)
+    if (segments.length <= 1) continue;
+
+    const frag = document.createDocumentFragment();
+    for (const seg of segments) {
+      const piece = seg.text;
+
+      if (!seg.isSentence) {
+        // Đoạn không kết thúc câu → để nguyên
+        frag.appendChild(document.createTextNode(piece));
+        continue;
+      }
+
+      const trimmed = piece.trim();
+      if (!isDutchSentence(trimmed)) {
+        // Không nhận là NL → để nguyên
+        frag.appendChild(document.createTextNode(piece));
+        continue;
+      }
+
+      // Là câu NL → bọc + nút 🔊
+      const span = document.createElement('span');
+      span.className = 'nl-sentence';
+      span.textContent = trimmed;
+
+      // Giữ khoảng trắng cuối segment (nếu có)
+      const m = piece.match(/(\s+)$/);
+      const trailingWs = m ? m[1] : '';
+
+      const btn = document.createElement('button');
+      btn.className = 'speak-btn';
+      btn.title = 'Đọc câu tiếng Hà Lan này';
+      btn.setAttribute('aria-label', 'Đọc câu tiếng Hà Lan');
+      btn.textContent = '🔊';
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        stopSpeaking();
+        const u = utteranceFor(span.textContent || '', span);
+        speechSynthesis.speak(u);
+      });
+
+      frag.appendChild(span);
+      frag.appendChild(btn);
+      if (trailingWs) frag.appendChild(document.createTextNode(trailingWs));
+    }
+
+    tNode.parentNode.replaceChild(frag, tNode);
+  }
+}
+
+
 // === NEW: Gắn TTS cho cột "Dutch Word" & "Dutch Sentence Sample" trong bảng
 function attachTTSForWordsAndSentencesInTables() {
   const tables = els.content.querySelectorAll('table');
@@ -842,9 +955,8 @@ function isDutchWord(word) {
   return true;
 }
 
-
 // Tách text node thành câu, nhận diện NL, bọc span + nút 🔊
-function attachTTSForWordsAndSentencesInTables() {
+function attachTTSForWordsAndSentencesInTables1() {
   const tables = els.content.querySelectorAll('table');
   tables.forEach(table => {
     // Xác định header
