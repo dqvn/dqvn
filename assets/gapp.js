@@ -805,7 +805,7 @@ function isDutchSentence(sentence) {
 
   const nl = scoreDutch(s);
   const en = scoreEnglish(s);
-  return nl >= 2 && (nl - en) >= 1;
+  return nl >= 1; // && (nl - en) >= 1;
 }
 
 function tokenizeWords(s) {
