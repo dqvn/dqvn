@@ -657,7 +657,7 @@ button:hover {
 /* 3. The Left Side (The Story/Question) */
 #question {
     flex: 1;            /* Takes up proportional space */
-    min-width: 300px;   /* Won't get too squished */
+    min-width: 250px;   /* Won't get too squished */
     background: #f8fafc;
     padding: 20px;
     border-radius: 12px;
