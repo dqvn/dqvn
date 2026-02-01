@@ -664,7 +664,7 @@ button:hover {
 }
 
 /* 4. The Right Side (The Logic/Game) */
-#sentence, #options, #result {
+#sentence, #options, #result, #progress {
     flex: 1;
     min-width: 300px;
 }
