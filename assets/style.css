@@ -650,7 +650,8 @@ button:hover {
 #game-container h1 {
     width: 100%; /* Force header to take full width */
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    margin-top: 50px;
 }
 
 /* 3. The Left Side (The Story/Question) */
@@ -674,10 +675,4 @@ button:hover {
     font-style: italic;
     margin-bottom: 15px;
     color: #4a5568;
-}
-
-#options {
-    display: flex;
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 10px;
 }
