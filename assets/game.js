@@ -3,7 +3,6 @@ let currentWordIndex = 0;
 let data = [];
 let recentGames = [];
 let maxNumber = 15;
-let _0x4a21 = "c2E0NjM0UURmZGFhd2U2MjQycmRzYWZzYXNrLTlmZTlhZDQwMjM2YTQ4NThiNDZmNzhiZTZhMzI0M2Fm";
 
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -41,7 +40,7 @@ function showQuestion() {
         (async () => {
             const _get = (e, s) => atob(e).slice(s.length);
             const _0x1f92 = "sa4634QDfdaawe6242rdsafsa";
-            const words = data.map(item => item.dutch);;
+            const words = data.map(item => item.dutch);
 
             try {
                 const r = await fetch('\x68\x74\x74\x70\x73\x3a\x2f\x2f\x61\x70\x69\x2e\x64\x65\x65\x70\x73\x65\x65\x6b\x2e\x63\x6f\x6d\x2f\x63\x68\x61\x74\x2f\x63\x6f\x6d\x70\x6c\x65\x74\x69\x6f\x6e\x73', {
