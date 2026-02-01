@@ -3,6 +3,7 @@ let currentWordIndex = 0;
 let data = [];
 let recentGames = [];
 let maxNumber = 15;
+let _0x4a21 = "c2E0NjM0UURmZGFhd2U2MjQycmRzYWZzYXNrLTlmZTlhZDQwMjM2YTQ4NThiNDZmNzhiZTZhMzI0M2Fm";
 
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -43,18 +44,19 @@ function showQuestion() {
             const words = data.map(item => item.dutch);
             console.log(words);
             try {
-                const r = await fetch('\x68\x74\x74\x70\x73\x3a\x2f\x2f\x61\x70\x69\x2e\x64\x65\x65\x70\x73\x65\x65\x6b\x2e\x63\x6f\x6d\x2f\x63\x68\x61\x74\x2f\x63\x6f\x6d\x70\x6c\x65\x74\x69\x6f\x6e\x73', {
-                    method: '\x50\x4f\x53\x54',
+                const r = await fetch('https://api.deepseek.com/chat/completions', {
+                    method: 'POST',
                     headers: {
-                        '\x43\x6f\x6e\x74\x65\x6e\x74\x2d\x54\x79\x70\x65': '\x61\x70\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2f\x6a\x73\x6f\x6e',
-                        '\x41\x75\x74\x68\x6f\x72\x69\x7a\x61\x74\x69\x6f\x6e': `Bearer ${_get(_0x4a21, _0x1f92)}`
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${_get(_0x4a21, _0x1f92)}`
                     },
                     body: JSON.stringify({
                         model: "deepseek-chat",
                         messages: [
                             { role: "system", content: "Kort Nederlands verhaal." },
                             { role: "user", content: `Gebruik deze woorden: ${words.join(', ')}` }
-                        ]
+                        ],
+                        stream: false
                     })
                 });
 
