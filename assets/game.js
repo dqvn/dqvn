@@ -3,7 +3,25 @@ let currentWordIndex = 0;
 let data = [];
 let recentGames = [];
 let maxNumber = 15;
-let _0x4a21 = "c2E0NjM0UURmZGFhd2U2MjQycmRzYWZzYXNrLTlmZTlhZDQwMjM2YTQ4NThiNDZmNzhiZTZhMzI0M2Fm";
+
+async function generateStoryFromPuter(dataObjects) {
+    // 1. Convert objects to a simple list of Dutch words
+    const words = dataObjects.map(item => item.dutch.split(',')[0].trim());
+    
+    // 2. Call Puter AI (No API key or fetch headers needed!)
+    try {
+        const response = await puter.ai.chat(
+            `Schrijf een kort Nederlands verhaal van 3 zinnen met deze woorden: ${words.join(', ')}`,
+            { model: 'gpt-4o-mini' } // You can also use 'claude-3-5-sonnet' or 'deepseek-chat'
+        );
+
+        // 3. Puter returns the message object directly
+        console.log("Verhaal:", response.message.content);
+        return response.message.content;
+    } catch (error) {
+        console.error("Fout bij het genereren:", error);
+    }
+}
 
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -37,39 +55,14 @@ function showQuestion() {
         const optionsDiv = document.getElementById('options');
         const titleDiv = document.getElementById('game-container').querySelector('h1');
         const resultDiv = document.getElementById('result');
-        console.log(currentWord);
-        (async () => {
-            const _get = (e, s) => atob(e).slice(s.length);
-            const _0x1f92 = "sa4634QDfdaawe6242rdsafsa";
-            const words = data.map(item => item.dutch);
-            console.log(words);
-            try {
-                const r = await fetch('https://api.deepseek.com/chat/completions', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Authorization': `Bearer ${_get(_0x4a21, _0x1f92)}`
-                    },
-                    body: JSON.stringify({
-                        model: "deepseek-chat",
-                        messages: [
-                            { role: "system", content: "Kort Nederlands verhaal." },
-                            { role: "user", content: `Gebruik deze woorden: ${words.join(', ')}` }
-                        ],
-                        stream: false
-                    })
-                });
 
-                const d = await r.json();
-                console.log(d.choices[0].message.content);
-                questionDiv.textContent = `[${currentWordIndex + 1} / ${maxNumber}] <br/> ${d.choices[0].message.content}`;
-            } catch (e) {
-                console.error("\x45\x72\x72\x6f\x72");
-            }
-        })();
-
-        titleDiv.textContent = `${currentWord.dutch}`;
+        const verhaal = generateStoryFromPuter(data);
+        console.log(verhaal);
         // questionDiv.textContent = `[${currentWordIndex + 1} / ${maxNumber}]`;
+        questionDiv.textContent = `[${currentWordIndex + 1} / ${maxNumber}] <br/> ${verhaal}`;
+        
+        titleDiv.textContent = `${currentWord.dutch}`;
+        
         if (sentenceDiv) {
             sentenceDiv.textContent = `${currentWord.dutchsentence}`;
             sentenceDiv.onclick = () => {
