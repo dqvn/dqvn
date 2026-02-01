@@ -11,7 +11,7 @@ async function generateStoryFromPuter(dataObjects, questionDiv) {
     // 2. Call Puter AI (No API key or fetch headers needed!)
     try {
         const response = await puter.ai.chat(
-            `Schrijf een kort Nederlands verhaal van 3 zinnen met deze woorden: ${words.join(', ')}`,
+            `Schrijf een kort Nederlands verhaal van 5 zinnen met deze woorden: ${words.join(', ')}`,
             { model: 'gpt-5-nano' } // You can also use 'claude-3-5-sonnet' or 'deepseek-chat' or "gpt-4o-mini"
         );
 
