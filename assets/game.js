@@ -17,7 +17,8 @@ async function generateStoryFromPuter(dataObjects, questionDiv, currentWordIndex
 
         // 3. Puter returns the message object directly
         console.log("Verhaal:", response.message.content);
-        questionDiv.textContent = `[${currentWordIndex + 1} / ${maxNumber}] ${response.message.content}`;
+        // questionDiv.textContent = `[${currentWordIndex + 1} / ${maxNumber}] ${response.message.content}`;
+        questionDiv.innerHTML = `<span class="counter">[${currentWordIndex + 1} / ${maxNumber}]</span>${response.message.content}`;
     } catch (error) {
         console.error("Fout bij het genereren:", error);
     }
