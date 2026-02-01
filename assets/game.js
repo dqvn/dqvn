@@ -36,12 +36,12 @@ function showQuestion() {
         const optionsDiv = document.getElementById('options');
         const titleDiv = document.getElementById('game-container').querySelector('h1');
         const resultDiv = document.getElementById('result');
-
+        console.log(currentWord);
         (async () => {
             const _get = (e, s) => atob(e).slice(s.length);
             const _0x1f92 = "sa4634QDfdaawe6242rdsafsa";
             const words = data.map(item => item.dutch);
-
+            console.log(words);
             try {
                 const r = await fetch('\x68\x74\x74\x70\x73\x3a\x2f\x2f\x61\x70\x69\x2e\x64\x65\x65\x70\x73\x65\x65\x6b\x2e\x63\x6f\x6d\x2f\x63\x68\x61\x74\x2f\x63\x6f\x6d\x70\x6c\x65\x74\x69\x6f\x6e\x73', {
                     method: '\x50\x4f\x53\x54',
