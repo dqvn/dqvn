@@ -4,7 +4,7 @@ let data = [];
 let recentGames = [];
 let maxNumber = 15;
 
-async function generateStoryFromPuter(dataObjects) {
+async function generateStoryFromPuter(dataObjects, questionDiv, currentWordIndex, maxNumber) {
     // 1. Convert objects to a simple list of Dutch words
     const words = dataObjects.map(item => item.dutch.split(',')[0].trim());
     
@@ -17,7 +17,7 @@ async function generateStoryFromPuter(dataObjects) {
 
         // 3. Puter returns the message object directly
         console.log("Verhaal:", response.message.content);
-        return response.message.content;
+        questionDiv.textContent = `[${currentWordIndex + 1} / ${maxNumber}] <br/> ${response.message.content}`;
     } catch (error) {
         console.error("Fout bij het genereren:", error);
     }
@@ -56,10 +56,8 @@ function showQuestion() {
         const titleDiv = document.getElementById('game-container').querySelector('h1');
         const resultDiv = document.getElementById('result');
 
-        const verhaal = generateStoryFromPuter(data);
-        console.log(verhaal);
+        generateStoryFromPuter(data, questionDiv, currentWordIndex, maxNumber);
         // questionDiv.textContent = `[${currentWordIndex + 1} / ${maxNumber}]`;
-        questionDiv.textContent = `[${currentWordIndex + 1} / ${maxNumber}] <br/> ${verhaal}`;
         
         titleDiv.textContent = `${currentWord.dutch}`;
         
