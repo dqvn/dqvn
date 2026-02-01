@@ -12,7 +12,7 @@ async function generateStoryFromPuter(dataObjects, questionDiv) {
     try {
         const response = await puter.ai.chat(
             `Schrijf een kort Nederlands verhaal van 5 zinnen met deze woorden: ${words.join(', ')}`,
-            { model: 'gpt-5-nano' } // You can also use 'claude-3-5-sonnet' or 'deepseek-chat' or "gpt-4o-mini"
+            { model: 'gpt-5.2' } // You can also use 'claude-3-5-sonnet' or 'deepseek-chat' or "gpt-4o-mini"
         );
 
         // 3. Puter returns the message object directly
