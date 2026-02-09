@@ -176,7 +176,79 @@ Ví dụ:
 *   **dure jurk** (chiếc váy đắt)
 
 ***
+Dưới đây là bản tóm tắt các chủ điểm ngữ pháp cốt lõi mà bạn cần nắm chắc để làm chủ tiếng Hà Lan cơ bản:
 
+### 1. Quy tắc Chia Động từ Thì Hiện tại (Stam + Tuit)
+
+Đây là "xương sống" của câu. Bạn cần tìm được **Stam** (Gốc động từ) bằng cách lấy **Nguyên mẫu - "en"**.
+
+* **Quy tắc chung:**
+* **Ik:** Stam (ví dụ: *ik werk, ik woon*)
+* **Jij/Hij/Zij/U:** Stam + **t** (ví dụ: *jij werkt, hij woont*)
+* **Wij/Jullie/Zij:** Giữ nguyên dạng nguyên mẫu (ví dụ: *wij werken, zij wonen*)
+
+
+* **Lưu ý đặc biệt:**
+* Nếu Stam đã kết thúc bằng **-t**, không thêm **-t** nữa (*ik heet*  *jij heet*).
+* Trong câu hỏi đảo ngữ với **jij**, động từ mất chữ **t** (*Werk jij?*).
+
+
+
+---
+
+### 2. Quy tắc Chính tả "Vàng" (Spelling)
+
+Người Hà Lan rất khắt khe trong việc giữ nguyên cách phát âm (nguyên âm dài/ngắn).
+
+* **Gấp đôi nguyên âm:** Khi Stam đứng một mình hoặc thêm -t, nếu là âm dài thì phải viết 2 chữ cái (*lezen  ik lees; eten  ik eet*).
+* **Bớt một nguyên âm:** Khi chuyển về nguyên mẫu, nếu âm tiết mở thì chỉ viết 1 chữ cái (*woon  wonen*).
+* **Biến đổi phụ âm cuối:** Một từ không bao giờ kết thúc bằng **v** hoặc **z**.
+* **v** chuyển thành **f** (*blijven  ik blijf*).
+* **z** chuyển thành **s** (*lezen  ik lees*).
+
+
+
+---
+
+### 3. Đại từ Tân ngữ (Objectpronomen)
+
+Khi đại từ không làm chủ ngữ mà là đối tượng nhận hành động (như trong bài tập hình ảnh bạn đã làm):
+
+* *ik  **mij/me***
+* *jij  **jou/je***
+* *hij  **hem***
+* *zij  **haar***
+* *wij  **ons***
+* *zij (số nhiều)  **hen/ze***
+
+---
+
+### 4. Cấu trúc câu và Đảo ngữ (Inversie)
+
+Tiếng Hà Lan tuân theo quy tắc **V2** (Động từ luôn đứng ở vị trí thứ 2).
+
+* **Câu xuôi:** Chủ ngữ + Động từ + ... (*Je werkt bij ons.*)
+* **Câu đảo ngữ:** Khi đưa trạng ngữ lên đầu để nhấn mạnh, Chủ ngữ và Động từ đổi chỗ cho nhau (*Bij ons werk je.*)
+* **Câu hỏi:** Động từ đảo lên đầu câu (*Werk jij?*)
+
+---
+
+### 5. Mạo từ và Danh từ (De/Het)
+
+* **De:** Dùng cho danh từ giống đực, giống cái và **tất cả danh từ số nhiều**.
+* **Het:** Dùng cho danh từ giống trung và **tất cả danh từ giảm nhẹ (đuôi -je)** như *het meisje, het chocolaatje*.
+
+---
+
+### 6. Động từ chỉ trạng thái (Staan, Liggen, Zitten)
+
+Thay vì chỉ dùng "is" (thì/là/ở), người Hà Lan dùng các động từ này để mô tả tư thế của vật:
+
+* **Staan:** Vật đứng hoặc có bánh xe (*de auto staat, de plant groeit/staat*).
+* **Liggen:** Vật nằm bẹt (*het boek ligt*).
+* **Zitten:** Vật ở bên trong cái gì đó (*het geld zit in de portemonnee*).
+
+***
 # **IX. BÀI TẬP TRONG UNIT 1 (TÓM TẮT NỘI DUNG)**
 
 (Tất cả bài tập đều nằm trong tài liệu, bạn có thể luyện thêm)
