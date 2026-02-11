@@ -155,7 +155,7 @@ async function tryLoadManifest() {
 async function scanChapters() {
   const found = [];
   const concurrency = 6;
-  let i = 1;
+  let i = 0;
 
   async function worker() {
     while (i <= CONFIG.maxScan) {
