@@ -1,4 +1,4 @@
-# 🌟 **LỘ TRÌNH NGỮ PHÁP TIẾNG HÀ LAN A2 – ROADMAP HOÀN CHỈNH**
+# **LỘ TRÌNH NGỮ PHÁP TIẾNG HÀ LAN A2 – ROADMAP HOÀN CHỈNH**
 
 ## ✔ Tổng quan về mục tiêu A2
 
