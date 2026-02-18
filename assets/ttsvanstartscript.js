@@ -1,12 +1,15 @@
 const TTSName = 'Google Nederlands';
 const TTSLang = 'nl-NL';
 const TTSLangENG = 'en-US';
-const fileNames = ["thema01", "thema02", "thema03", "thema04", "thema05", "thema06", "thema07", "thema08"];
+const fileNames = ["thema01", "thema02", "thema03", "thema04", "thema05", "thema06", "thema07", "thema08",
+  "core01", "core02", "core03", "core04", "core05", "core06", "core07", "core08", "core09", "core10"
+];
 let currentPage = localStorage.getItem('currentPage') || fileNames[0];
 const INTERVAL_TIME = 15000;
 
 const GROUP_TITLES = new Map([
-  ["th", "Van Start #1"]
+  ["th", "Van Start #1"],
+  ["co", "Core 2000"]
 ]);
 
 // create a table body element

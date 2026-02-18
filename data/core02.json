@@ -1,0 +1,1388 @@
+[
+  {
+    "dutch": "krab",
+    "english": "crab",
+    "vietnamese": "con cua",
+    "dutchsentence": "Twee krabben lopen over een rots.",
+    "englishtranslate": "Two crabs are walking on a rock."
+  },
+  {
+    "dutch": "schildpad",
+    "english": "turtle",
+    "vietnamese": "con rùa",
+    "dutchsentence": "De zeeschildpad zwemt in de zee.",
+    "englishtranslate": "The sea turtle is swimming in the sea."
+  },
+  {
+    "dutch": "helikopter",
+    "english": "helicopter",
+    "vietnamese": "trực thăng",
+    "dutchsentence": "De directeur reist naar het werk per helikopter.",
+    "englishtranslate": "The CEO travels to work by helicopter."
+  },
+  {
+    "dutch": "zwart",
+    "english": "black",
+    "vietnamese": "màu đen",
+    "dutchsentence": "Ik heb mijn koffie graag zwart.",
+    "englishtranslate": "I like my coffee black."
+  },
+  {
+    "dutch": "bruin",
+    "english": "brown",
+    "vietnamese": "màu nâu",
+    "dutchsentence": "Deze schoenen zijn bruin.",
+    "englishtranslate": "These shoes are brown."
+  },
+  {
+    "dutch": "grijs",
+    "english": "gray",
+    "vietnamese": "màu xám",
+    "dutchsentence": "Je hebt een grijze haar.",
+    "englishtranslate": "You have a gray hair."
+  },
+  {
+    "dutch": "rusten",
+    "english": "rest",
+    "vietnamese": "nghỉ ngơi",
+    "dutchsentence": "De varkens rusten in de zon.",
+    "englishtranslate": "The pigs are resting in the sun."
+  },
+  {
+    "dutch": "horen",
+    "english": "hear",
+    "vietnamese": "nghe",
+    "dutchsentence": "Ik kan je niet goed horen.",
+    "englishtranslate": "I cannot hear you clearly."
+  },
+  {
+    "dutch": "willen",
+    "english": "want",
+    "vietnamese": "muốn",
+    "dutchsentence": "De kantoorbedienden willen de donut.",
+    "englishtranslate": "The office workers want the doughnut."
+  },
+  {
+    "dutch": "smerig",
+    "english": "disgusting",
+    "vietnamese": "kinh tởm / bẩn thỉu",
+    "dutchsentence": "Ja, het is smerig.",
+    "englishtranslate": "Yes, it’s disgusting."
+  },
+  {
+    "dutch": "elf",
+    "english": "eleven",
+    "vietnamese": "số mười một",
+    "dutchsentence": "Om elf uur uitchecken alstublieft.",
+    "englishtranslate": "Check out at eleven o’clock, please."
+  },
+  {
+    "dutch": "twaalf",
+    "english": "twelve",
+    "vietnamese": "số mười hai",
+    "dutchsentence": "Ze heeft twaalf jaar in dat appartement gewoond.",
+    "englishtranslate": "She lived in that apartment for twelve years."
+  },
+  {
+    "dutch": "dertien",
+    "english": "thirteen",
+    "vietnamese": "số mười ba",
+    "dutchsentence": "Ik ben dertien jaar oud.",
+    "englishtranslate": "She is thirteen years old."
+  },
+  {
+    "dutch": "e-mail",
+    "english": "e-mail",
+    "vietnamese": "thư điện tử",
+    "dutchsentence": "een e-mail schrijven naar mijn Nederlandse vrienden",
+    "englishtranslate": "write an email to my Dutch friends"
+  },
+  {
+    "dutch": "mobiele telefoon",
+    "english": "cellular phone",
+    "vietnamese": "điện thoại di động",
+    "dutchsentence": "Met een mobiele telefoon kun je van bijna overal vandaan bellen.",
+    "englishtranslate": "With a cellular phone, you can make calls from almost anywhere."
+  },
+  {
+    "dutch": "sms",
+    "english": "text message",
+    "vietnamese": "tin nhắn văn bản",
+    "dutchsentence": "Ze maakte contact met me via een sms.",
+    "englishtranslate": "She contacted me via text message."
+  },
+  {
+    "dutch": "mond",
+    "english": "mouth",
+    "vietnamese": "miệng",
+    "dutchsentence": "De vrouw heeft een grote mond.",
+    "englishtranslate": "The woman has a big mouth."
+  },
+  {
+    "dutch": "wang",
+    "english": "cheek",
+    "vietnamese": "má",
+    "dutchsentence": "Haar wangen zijn erg rood.",
+    "englishtranslate": "Her cheeks are very red."
+  },
+  {
+    "dutch": "neus",
+    "english": "nose",
+    "vietnamese": "mũi",
+    "dutchsentence": "Mijn neus zit verstopt.",
+    "englishtranslate": "My nose is stuffy."
+  },
+  {
+    "dutch": "schrift",
+    "english": "notebook",
+    "vietnamese": "vở / sổ tay",
+    "dutchsentence": "Verkopen ze schriften in die winkel?",
+    "englishtranslate": "Do they sell notebooks at that store?"
+  },
+  {
+    "dutch": "potlood",
+    "english": "pencil",
+    "vietnamese": "bút chì",
+    "dutchsentence": "Op de vensterbank liggen een potlood en een pen.",
+    "englishtranslate": "A pencil and a pen are on the windowsill."
+  },
+  {
+    "dutch": "gum",
+    "english": "eraser",
+    "vietnamese": "cục tẩy",
+    "dutchsentence": "Mag ik je gum gebruiken?",
+    "englishtranslate": "Can I use your eraser?"
+  },
+  {
+    "dutch": "wit",
+    "english": "white",
+    "vietnamese": "màu trắng",
+    "dutchsentence": "Het witte konijn eet een wortel.",
+    "englishtranslate": "The white rabbit eats a carrot."
+  },
+  {
+    "dutch": "rood",
+    "english": "red",
+    "vietnamese": "màu đỏ",
+    "dutchsentence": "De appels zijn rood.",
+    "englishtranslate": "The apples are red."
+  },
+  {
+    "dutch": "groen",
+    "english": "green",
+    "vietnamese": "màu xanh lá cây",
+    "dutchsentence": "Het groene gras ruikt fris.",
+    "englishtranslate": "The green grass smells fresh."
+  },
+  {
+    "dutch": "afmaken",
+    "english": "finish",
+    "vietnamese": "hoàn thành / kết thúc",
+    "dutchsentence": "Heb je je huiswerk afgemaakt?",
+    "englishtranslate": "Did you finish your homework?"
+  },
+  {
+    "dutch": "beginnen",
+    "english": "start",
+    "vietnamese": "bắt đầu",
+    "dutchsentence": "Ik kan mijn dag niet beginnen zonder een kopje koffie.",
+    "englishtranslate": "I can’t start my day without a cup of coffee."
+  },
+  {
+    "dutch": "worden",
+    "english": "become",
+    "vietnamese": "trở nên / trở thành",
+    "dutchsentence": "Ik had maar een jaar nodig om er vloeiend in te worden.",
+    "englishtranslate": "It took me only one year to become fluent."
+  },
+  {
+    "dutch": "veertien",
+    "english": "fourteen",
+    "vietnamese": "số mười bốn",
+    "dutchsentence": "Hij is veertien jaar oud.",
+    "englishtranslate": "He’s fourteen years old."
+  },
+  {
+    "dutch": "vijftien",
+    "english": "fifteen",
+    "vietnamese": "số mười lăm",
+    "dutchsentence": "Wacht voor vijftien minuten op me.",
+    "englishtranslate": "Wait for me for fifteen minutes."
+  },
+  {
+    "dutch": "zestien",
+    "english": "sixteen",
+    "vietnamese": "số mười sáu",
+    "dutchsentence": "We hebben zestien minuten.",
+    "englishtranslate": "We have sixteen minutes."
+  },
+  {
+    "dutch": "telefoon",
+    "english": "telephone",
+    "vietnamese": "điện thoại",
+    "dutchsentence": "De telefoon gaat over.",
+    "englishtranslate": "The telephone is ringing."
+  },
+  {
+    "dutch": "oog",
+    "english": "eye",
+    "vietnamese": "mắt",
+    "dutchsentence": "Mijn ogen zijn droog.",
+    "englishtranslate": "My eyes are dry."
+  },
+  {
+    "dutch": "tanden",
+    "english": "teeth",
+    "vietnamese": "răng",
+    "dutchsentence": "Heb je je tanden gepoetst?",
+    "englishtranslate": "Did you brush your teeth?"
+  },
+  {
+    "dutch": "lip",
+    "english": "lip",
+    "vietnamese": "môi",
+    "dutchsentence": "De onderlip is groer dan de bovenlip.",
+    "englishtranslate": "The lower lip is bigger than the upper lip."
+  },
+  {
+    "dutch": "kopieermachine",
+    "english": "copy machine",
+    "vietnamese": "máy photocopy",
+    "dutchsentence": "Kan ik de kopieermachine gebruiken?",
+    "englishtranslate": "Can I use the copy machine?"
+  },
+  {
+    "dutch": "bureau",
+    "english": "desk",
+    "vietnamese": "bàn làm việc",
+    "dutchsentence": "Dat bureau is te groot voor dit kleine kantoor.",
+    "englishtranslate": "That desk is too big for this small office."
+  },
+  {
+    "dutch": "boek",
+    "english": "book",
+    "vietnamese": "quyển sách",
+    "dutchsentence": "Lees het boek waar je het meest van genoot nog een keer.",
+    "englishtranslate": "Read the book you enjoyed most again."
+  },
+  {
+    "dutch": "pen",
+    "english": "pen",
+    "vietnamese": "bút mực",
+    "dutchsentence": "Ik heb een blauwe pen.",
+    "englishtranslate": "I have a blue pen."
+  },
+  {
+    "dutch": "postkantoor",
+    "english": "post office",
+    "vietnamese": "bưu điện",
+    "dutchsentence": "Waar is het postkantoor?",
+    "englishtranslate": "Where is the post office?"
+  },
+  {
+    "dutch": "bibliotheek",
+    "english": "library",
+    "vietnamese": "thư viện",
+    "dutchsentence": "Ik studeer in de bibliotheek.",
+    "englishtranslate": "I am studying at the library."
+  },
+  {
+    "dutch": "supermarkt",
+    "english": "supermarket",
+    "vietnamese": "siêu thị",
+    "dutchsentence": "Deze supermarkt is erg goedkoop.",
+    "englishtranslate": "This supermarket is very cheap."
+  },
+  {
+    "dutch": "helpen",
+    "english": "help",
+    "vietnamese": "giúp đỡ",
+    "dutchsentence": "Ik denk niet dat ik je kan helpen.",
+    "englishtranslate": "I do not think I can help you."
+  },
+  {
+    "dutch": "leren",
+    "english": "learn",
+    "vietnamese": "học",
+    "dutchsentence": "Denk in de taal die je wilt leren.",
+    "englishtranslate": "Think in the language you want to learn."
+  },
+  {
+    "dutch": "bewegen",
+    "english": "move",
+    "vietnamese": "di chuyển / cử động",
+    "dutchsentence": "De alligators bewegen zich langzaam door het water.",
+    "englishtranslate": "The alligators are slowly moving through the water."
+  },
+  {
+    "dutch": "zeventien",
+    "english": "seventeen",
+    "vietnamese": "số mười bảy",
+    "dutchsentence": "Zijn dochter is zeventien jaar oud.",
+    "englishtranslate": "His daughter is seventeen years old."
+  },
+  {
+    "dutch": "achttien",
+    "english": "eighteen",
+    "vietnamese": "số mười tám",
+    "dutchsentence": "Ik ben achttien jaar oud.",
+    "englishtranslate": "I’m eighteen years old."
+  },
+  {
+    "dutch": "negentien",
+    "english": "nineteen",
+    "vietnamese": "số mười chín",
+    "dutchsentence": "Er zijn hier negentien boeken.",
+    "englishtranslate": "There are nineteen books here."
+  },
+  {
+    "dutch": "twintig",
+    "english": "twenty",
+    "vietnamese": "số hai mươi",
+    "dutchsentence": "De cd kost twintig dollar.",
+    "englishtranslate": "The CD costs twenty dollars."
+  },
+  {
+    "dutch": "nek",
+    "english": "neck",
+    "vietnamese": "cổ",
+    "dutchsentence": "Ik heb pijn in mijn nek.",
+    "englishtranslate": "I’ve got a pain in my neck."
+  },
+  {
+    "dutch": "gezicht",
+    "english": "face",
+    "vietnamese": "khuôn mặt",
+    "dutchsentence": "De vrouw wast haar gezicht.",
+    "englishtranslate": "The woman is washing her face."
+  },
+  {
+    "dutch": "oor",
+    "english": "ear",
+    "vietnamese": "tai",
+    "dutchsentence": "Ik heb twee oren.",
+    "englishtranslate": "I have two ears."
+  },
+  {
+    "dutch": "haar",
+    "english": "hair",
+    "vietnamese": "tóc",
+    "dutchsentence": "Ik zou graag mijn haar willen kleuren.",
+    "englishtranslate": "I would like to dye my hair."
+  },
+  {
+    "dutch": "berg",
+    "english": "mountain",
+    "vietnamese": "núi",
+    "dutchsentence": "De man rijdt met zijn fiets de berg af.",
+    "englishtranslate": "The man is riding his bike down the mountain."
+  },
+  {
+    "dutch": "strand",
+    "english": "beach",
+    "vietnamese": "bãi biển",
+    "dutchsentence": "Er is een kustwacht op het strand.",
+    "englishtranslate": "There’s a lifeguard at the beach."
+  },
+  {
+    "dutch": "regenwoud",
+    "english": "rainforest",
+    "vietnamese": "rừng nhiệt đới",
+    "dutchsentence": "Veel medicijnen van tegenwoordig komen van planten gevonden in het regenwoud.",
+    "englishtranslate": "Many modern medicines come from plants found in the rainforest."
+  },
+  {
+    "dutch": "eiland",
+    "english": "island",
+    "vietnamese": "hòn đảo",
+    "dutchsentence": "Aruba is een mooi eiland.",
+    "englishtranslate": "Aruba is a beautiful island."
+  },
+  {
+    "dutch": "woordenboek",
+    "english": "dictionary",
+    "vietnamese": "từ điển",
+    "dutchsentence": "Hou je woordenboek bij de hand om je woordenschat te verbeteren.",
+    "englishtranslate": "Have your dictionary ready to help improve your Vocabulary."
+  },
+  {
+    "dutch": "blauw",
+    "english": "blue",
+    "vietnamese": "màu xanh dương",
+    "dutchsentence": "De badkamer heeft een blauwe deur.",
+    "englishtranslate": "The bathroom has a blue door."
+  },
+  {
+    "dutch": "geel",
+    "english": "yellow",
+    "vietnamese": "màu vàng",
+    "dutchsentence": "Nederlandse treinen zijn geel en blauw.",
+    "englishtranslate": "Dutch trains are yellow and blue."
+  },
+  {
+    "dutch": "oranje",
+    "english": "orange",
+    "vietnamese": "màu cam",
+    "dutchsentence": "Oranje is de kleur van Nederland.",
+    "englishtranslate": "Orange is the color of the Netherlands."
+  },
+  {
+    "dutch": "kleur",
+    "english": "color",
+    "vietnamese": "màu sắc",
+    "dutchsentence": "Ik heb de verkeerde kleur.",
+    "englishtranslate": "I got the wrong color."
+  },
+  {
+    "dutch": "saai",
+    "english": "boring",
+    "vietnamese": "nhàm chán",
+    "dutchsentence": "Mijn werk is saai",
+    "englishtranslate": "My job is boring."
+  },
+  {
+    "dutch": "boeiend",
+    "english": "exciting",
+    "vietnamese": "thú vị / hào hứng",
+    "dutchsentence": "De film was erg boeiend.",
+    "englishtranslate": "The movie was very exciting."
+  },
+  {
+    "dutch": "belangrijk",
+    "english": "important",
+    "vietnamese": "quan trọng",
+    "dutchsentence": "Familie is niet een belangrijk ding. Het is alles.",
+    "englishtranslate": "Family is not an important thing. It’s everything."
+  },
+  {
+    "dutch": "creditcard",
+    "english": "credit card",
+    "vietnamese": "thẻ tín dụng",
+    "dutchsentence": "Accepteert u ook creditcards?",
+    "englishtranslate": "Do you take credit card?"
+  },
+  {
+    "dutch": "sleutel",
+    "english": "key",
+    "vietnamese": "chìa khóa",
+    "dutchsentence": "Welke sleutel moet ik gebruiken?",
+    "englishtranslate": "Which key should I use?"
+  },
+  {
+    "dutch": "rijbewijs",
+    "english": "driver’s license",
+    "vietnamese": "bằng lái xe",
+    "dutchsentence": "Nederlanders hebben een speciaal rijbewijs nodig als ze een auto met caravan willen besturen.",
+    "englishtranslate": "Dutch people need to have a special driver’s license if they want to drive a car that tows a caravan."
+  },
+  {
+    "dutch": "bos",
+    "english": "forest",
+    "vietnamese": "rừng",
+    "dutchsentence": "De wasbeer eet pinda’s in het bos.",
+    "englishtranslate": "The raccoon is eating peanuts in the forest."
+  },
+  {
+    "dutch": "rivier",
+    "english": "river",
+    "vietnamese": "con sông",
+    "dutchsentence": "De bruine beer is aan het rennen in de rivier.",
+    "englishtranslate": "The brown bear is running in the river."
+  },
+  {
+    "dutch": "oceaan",
+    "english": "ocean",
+    "vietnamese": "đại dương",
+    "dutchsentence": "De zon gaat achter de blauwe oceaan onder.",
+    "englishtranslate": "The sun sets behind the blue ocean."
+  },
+  {
+    "dutch": "meer",
+    "english": "lake",
+    "vietnamese": "hồ nước",
+    "dutchsentence": "De zwaan is aan het zwemmen in het meer.",
+    "englishtranslate": "The swan is swimming in the lake."
+  },
+  {
+    "dutch": "document",
+    "english": "document",
+    "vietnamese": "tài liệu",
+    "dutchsentence": "Als je me niet zo snel mogelijk de documenten brengt ben je ontslagen.",
+    "englishtranslate": "If you don’t bring me the documents as soon as possible, you’re fired."
+  },
+  {
+    "dutch": "computer",
+    "english": "computer",
+    "vietnamese": "máy tính",
+    "dutchsentence": "Ik zet mijn computer aan.",
+    "englishtranslate": "I turn on my computer."
+  },
+  {
+    "dutch": "fax",
+    "english": "fax machine",
+    "vietnamese": "máy fax",
+    "dutchsentence": "Heb je een fax?",
+    "englishtranslate": "Do you have a fax machine?"
+  },
+  {
+    "dutch": "printer",
+    "english": "printer",
+    "vietnamese": "máy in",
+    "dutchsentence": "De printer in het kantoor is kapot.",
+    "englishtranslate": "The printer at the office is broken."
+  },
+  {
+    "dutch": "vulpotlood",
+    "english": "mechanical pencil",
+    "vietnamese": "bút chì kim",
+    "dutchsentence": "Het rode vulpotlood heeft een groene gum.",
+    "englishtranslate": "The red mechanical pencil has a green eraser."
+  },
+  {
+    "dutch": "liniaal",
+    "english": "ruler",
+    "vietnamese": "thước kẻ",
+    "dutchsentence": "Ik gebruik een liniaal om lijntjes te trekken.",
+    "englishtranslate": "I use ruler to draw lines."
+  },
+  {
+    "dutch": "viltstift",
+    "english": "marker",
+    "vietnamese": "bút dạ / bút lông",
+    "dutchsentence": "Er zit bijna geen inkt meer in de viltstift.",
+    "englishtranslate": "The marker is running low on ink."
+  },
+  {
+    "dutch": "bank",
+    "english": "bank",
+    "vietnamese": "ngân hàng",
+    "dutchsentence": "Zij werkt bij de bank.",
+    "englishtranslate": "She works at a bank."
+  },
+  {
+    "dutch": "gemakswinkel",
+    "english": "convenience store",
+    "vietnamese": "cửa hàng tiện lợi",
+    "dutchsentence": "De gemakswinkel is 24 uur open.",
+    "englishtranslate": "The convenience store is open 24 hours."
+  },
+  {
+    "dutch": "ziekenhuis",
+    "english": "hospital",
+    "vietnamese": "bệnh viện",
+    "dutchsentence": "Een dokter werkt in een ziekenhuis.",
+    "englishtranslate": "A doctor works in a hospital."
+  },
+  {
+    "dutch": "portemonnee",
+    "english": "wallet",
+    "vietnamese": "ví tiền",
+    "dutchsentence": "Zijn portemonnee was een paar dagen geleden op het treinstation gestolen.",
+    "englishtranslate": "His wallet was stolen in the train station a couple of months ago."
+  },
+  {
+    "dutch": "handtas",
+    "english": "purse",
+    "vietnamese": "túi xách",
+    "dutchsentence": "Dit is een grote handtas.",
+    "englishtranslate": "This is a big purse."
+  },
+  {
+    "dutch": "bestelling",
+    "english": "order",
+    "vietnamese": "đơn hàng",
+    "dutchsentence": "Bevestig de bestelling.",
+    "englishtranslate": "Confirm the order."
+  },
+  {
+    "dutch": "veld",
+    "english": "field",
+    "vietnamese": "cánh đồng",
+    "dutchsentence": "De boer is in het korenveld.",
+    "englishtranslate": "The farmer is in the wheat field."
+  },
+  {
+    "dutch": "woestijn",
+    "english": "desert",
+    "vietnamese": "sa mạc",
+    "dutchsentence": "De kamelen lopen in de woestijn.",
+    "englishtranslate": "The camels are walking in the desert."
+  },
+  {
+    "dutch": "baas",
+    "english": "boss",
+    "vietnamese": "ông chủ / sếp",
+    "dutchsentence": "Mijn baas is irritant.",
+    "englishtranslate": "My boss is annoying."
+  },
+  {
+    "dutch": "kantoor",
+    "english": "office",
+    "vietnamese": "văn phòng",
+    "dutchsentence": "Ik woon vlakbij mijn kantoor.",
+    "englishtranslate": "I live near my office."
+  },
+  {
+    "dutch": "collega",
+    "english": "coworker",
+    "vietnamese": "đồng nghiệp",
+    "dutchsentence": "Ik zou graag met mijn collega willen praten wat betreft het incident van afgelopen maandag.",
+    "englishtranslate": "I would like to talk to my coworker regarding last Monday’s incident."
+  },
+  {
+    "dutch": "vergadering",
+    "english": "meeting",
+    "vietnamese": "cuộc họp",
+    "dutchsentence": "Ik woon een vergadering bij.",
+    "englishtranslate": "I attend a meeting."
+  },
+  {
+    "dutch": "politiebureau",
+    "english": "police station",
+    "vietnamese": "đồn cảnh sát",
+    "dutchsentence": "De politieauto’s staan buiten het politiebureau geparkeerd.",
+    "englishtranslate": "The police cars are parked outside the police station."
+  },
+  {
+    "dutch": "apotheek",
+    "english": "pharmacy",
+    "vietnamese": "hiệu thuốc",
+    "dutchsentence": "Is er een apotheek in de buurt?",
+    "englishtranslate": "Is there a pharmacy nearby?"
+  },
+  {
+    "dutch": "bakkerij",
+    "english": "bakery",
+    "vietnamese": "tiệm bánh",
+    "dutchsentence": "Ze gaat elke zondag met haar kinderen naar de bakkerij.",
+    "englishtranslate": "She goes to the bakery every Sunday with her kids."
+  },
+  {
+    "dutch": "filmtheater",
+    "english": "movie theater",
+    "vietnamese": "rạp chiếu phim",
+    "dutchsentence": "Naar welk filmtheater wil je gaan?",
+    "englishtranslate": "Which movie theater do you want to visit?"
+  },
+  {
+    "dutch": "onderhandeling",
+    "english": "negotiation",
+    "vietnamese": "sự đàm phán",
+    "dutchsentence": "Na een onderhandeling van twee jaar kwamen de twee landen eindelijk tot een overeenstemming.",
+    "englishtranslate": "After two years of negotiation, the two countries were finally able to come to an agreement."
+  },
+  {
+    "dutch": "contract",
+    "english": "contract",
+    "vietnamese": "hợp đồng",
+    "dutchsentence": "Teken niets voor je het contract grondig hebt doorgelezen.",
+    "englishtranslate": "Don’t sign anything before you have read the contract thoroughly."
+  },
+  {
+    "dutch": "zaken",
+    "english": "business",
+    "vietnamese": "kinh doanh",
+    "dutchsentence": "De bank is op zondag niet open voor zaken.",
+    "englishtranslate": "The bank is not open for business on Sundays."
+  },
+  {
+    "dutch": "deal",
+    "english": "deal",
+    "vietnamese": "thỏa thuận",
+    "dutchsentence": "We hebben een deal.",
+    "englishtranslate": "We have a deal."
+  },
+  {
+    "dutch": "druk",
+    "english": "busy",
+    "vietnamese": "bận rộn",
+    "dutchsentence": "Deze week heb ik het druk.",
+    "englishtranslate": "This week I am busy."
+  },
+  {
+    "dutch": "ernstig",
+    "english": "serious",
+    "vietnamese": "nghiêm trọng",
+    "dutchsentence": "Depressie is een zeer ernstige mentale ziekte.",
+    "englishtranslate": "Depression is a very serious mental illness."
+  },
+  {
+    "dutch": "moe",
+    "english": "tired",
+    "vietnamese": "mệt mỏi",
+    "dutchsentence": "Bedankt, maar ik ben erg moe.",
+    "englishtranslate": "Thanks, but I’m really tired."
+  },
+  {
+    "dutch": "meerdere",
+    "english": "superior",
+    "vietnamese": "cấp trên",
+    "dutchsentence": "Ik moet elke ochtend aan mijn meerdere rapporteren.",
+    "englishtranslate": "I have to report to my superior every morning."
+  },
+  {
+    "dutch": "bedrijf",
+    "english": "company",
+    "vietnamese": "công ty",
+    "dutchsentence": "Dat bedrijf is een prima werkgever.",
+    "englishtranslate": "That company is a fine employer."
+  },
+  {
+    "dutch": "salaris",
+    "english": "salary",
+    "vietnamese": "tiền lương",
+    "dutchsentence": "Hoeveel bedraagt het salaris?",
+    "englishtranslate": "How much is the salary?"
+  },
+  {
+    "dutch": "radio",
+    "english": "radio",
+    "vietnamese": "đài phát thanh / radio",
+    "dutchsentence": "Voordat ik ga slapen luister ik graag naar de radio.",
+    "englishtranslate": "I like to listen to the radio before going to sleep."
+  },
+  {
+    "dutch": "televisie",
+    "english": "television",
+    "vietnamese": "vô tuyến / tivi",
+    "dutchsentence": "‘s Avonds kijk ik graag naar de televisie.",
+    "englishtranslate": "In the evening I like to watch television."
+  },
+  {
+    "dutch": "Internet",
+    "english": "Internet",
+    "vietnamese": "mạng Internet",
+    "dutchsentence": "Hoe lang heb je geïnternet?",
+    "englishtranslate": "How long did you use the internet?"
+  },
+  {
+    "dutch": "krant",
+    "english": "newspaper",
+    "vietnamese": "tờ báo",
+    "dutchsentence": "Wij bewaren veel oude kranten.",
+    "englishtranslate": "We conserve many old newspapers."
+  },
+  {
+    "dutch": "nieuwszender",
+    "english": "news channel",
+    "vietnamese": "kênh tin tức",
+    "dutchsentence": "s Avonds zet ik de nieuwszender aan.",
+    "englishtranslate": "I turn on the news channel in the evening."
+  },
+  {
+    "dutch": "muziekinstrument",
+    "english": "musical instrument",
+    "vietnamese": "nhạc cụ",
+    "dutchsentence": "Kun je een muziekinstrument spelen?",
+    "englishtranslate": "Can you play a musical instrument?"
+  },
+  {
+    "dutch": "schilderij",
+    "english": "painting",
+    "vietnamese": "bức tranh",
+    "dutchsentence": "In het museum hangen veel schilderijen.",
+    "englishtranslate": "There are many paintings in the museum."
+  },
+  {
+    "dutch": "theater",
+    "english": "theater",
+    "vietnamese": "nhà hát",
+    "dutchsentence": "We hebben voor vrijdagavond twee kaartjes voor het theater.",
+    "englishtranslate": "We have tickets to the theater for this Friday night."
+  },
+  {
+    "dutch": "musical",
+    "english": "musical",
+    "vietnamese": "nhạc kịch",
+    "dutchsentence": "Een musical kan een verhaal vertellen met liedjes.",
+    "englishtranslate": "A musical can tell a story with songs."
+  },
+  {
+    "dutch": "opera",
+    "english": "opera",
+    "vietnamese": "nhạc kịch opera",
+    "dutchsentence": "Dit is het mooiste gedeelte van deze opera.",
+    "englishtranslate": "This is the nicest part of this opera."
+  },
+  {
+    "dutch": "ontspannen",
+    "english": "relax",
+    "vietnamese": "thư giãn",
+    "dutchsentence": "Vissen is een ontspannen hobby.",
+    "englishtranslate": "Fishing is a relaxing hobby."
+  },
+  {
+    "dutch": "whiteboard",
+    "english": "whiteboard",
+    "vietnamese": "bảng trắng",
+    "dutchsentence": "Een whiteboard is een perfecte manier om een visuele demonstratie te geven.",
+    "englishtranslate": "A whiteboard is a perfect means to demonstrate something visually."
+  },
+  {
+    "dutch": "schoolbord",
+    "english": "blackboard",
+    "vietnamese": "bảng đen",
+    "dutchsentence": "Wis het schoolbord uit.",
+    "englishtranslate": "Erase the blackboard."
+  },
+  {
+    "dutch": "toets",
+    "english": "test",
+    "vietnamese": "bài kiểm tra",
+    "dutchsentence": "De toets van woensdag zal moeilijk zijn.",
+    "englishtranslate": "Wednesday’s test will be difficult."
+  },
+  {
+    "dutch": "studieboek",
+    "english": "textbook",
+    "vietnamese": "sách giáo khoa",
+    "dutchsentence": "Open alstublieft uw studieboek en ga naar pagina tien.",
+    "englishtranslate": "Please open your textbook to page ten."
+  },
+  {
+    "dutch": "voorkant",
+    "english": "front",
+    "vietnamese": "phía trước",
+    "dutchsentence": "Zet het bord aan de voorkant van het gebouw.",
+    "englishtranslate": "Put the sign on the front of the building."
+  },
+  {
+    "dutch": "baan",
+    "english": "job",
+    "vietnamese": "công việc / nghề nghiệp",
+    "dutchsentence": "Ik ben vorig jaar met deze baan begonnen.",
+    "englishtranslate": "I started this job last year."
+  },
+  {
+    "dutch": "president",
+    "english": "president",
+    "vietnamese": "tổng thống",
+    "dutchsentence": "Hij is de president.",
+    "englishtranslate": "He is the president."
+  },
+  {
+    "dutch": "industrie",
+    "english": "industry",
+    "vietnamese": "ngành công nghiệp",
+    "dutchsentence": "Industrieën moet hun afval verminderen.",
+    "englishtranslate": "Industries need to reduce their wastes."
+  },
+  {
+    "dutch": "riem",
+    "english": "belt",
+    "vietnamese": "thắt lưng",
+    "dutchsentence": "De persoon draagt een riem.",
+    "englishtranslate": "The person is wearing a belt."
+  },
+  {
+    "dutch": "munt",
+    "english": "coin",
+    "vietnamese": "tiền xu",
+    "dutchsentence": "Een 1 cent muntstuk is erg licht.",
+    "englishtranslate": "One cent coins are very light."
+  },
+  {
+    "dutch": "geld",
+    "english": "money",
+    "vietnamese": "tiền bạc",
+    "dutchsentence": "Hij vroeg om geld.",
+    "englishtranslate": "He asked for money."
+  },
+  {
+    "dutch": "bankpas",
+    "english": "debit card",
+    "vietnamese": "thẻ ghi nợ",
+    "dutchsentence": "Debitcards halen direct geld van de rekening van de rekeninghouder.",
+    "englishtranslate": "Debit cards directly withdraw funds from the holder’s account."
+  },
+  {
+    "dutch": "rekening",
+    "english": "bill",
+    "vietnamese": "hóa đơn",
+    "dutchsentence": "Hij kreeg het eindelijk voor elkaar om al zijn rekeningen te betalen.",
+    "englishtranslate": "He finally managed to pay all his bills."
+  },
+  {
+    "dutch": "fotografie",
+    "english": "photography",
+    "vietnamese": "nhiếp ảnh",
+    "dutchsentence": "Studeer je fotografie?",
+    "englishtranslate": "Are you studying photography?"
+  },
+  {
+    "dutch": "uittrekken",
+    "english": "take off",
+    "vietnamese": "cởi ra",
+    "dutchsentence": "Trek voor je naar bed gaat je schoenen uit.",
+    "englishtranslate": "Take off your shoes before you go to bed."
+  },
+  {
+    "dutch": "slaapkamer",
+    "english": "bedroom",
+    "vietnamese": "phòng ngủ",
+    "dutchsentence": "Helaas valt er niet veel licht in onze slaapkamer.",
+    "englishtranslate": "Unfortunately, we don’t get a lot of light into our bedroom."
+  },
+  {
+    "dutch": "keuken",
+    "english": "kitchen",
+    "vietnamese": "nhà bếp",
+    "dutchsentence": "Ik heb de keuken schoongemaakt.",
+    "englishtranslate": "I cleaned up the kitchen."
+  },
+  {
+    "dutch": "badkamer",
+    "english": "bathroom",
+    "vietnamese": "phòng tắm",
+    "dutchsentence": "De badkamer heeft een blauwe deur.",
+    "englishtranslate": "The bathroom has a blue door."
+  },
+  {
+    "dutch": "afstuderen",
+    "english": "graduation",
+    "vietnamese": "lễ tốt nghiệp",
+    "dutchsentence": "Je bent uitgenodigd voor mijn zus haar afstuderen.",
+    "englishtranslate": "You are invited to my sister’s graduation."
+  },
+  {
+    "dutch": "promotie",
+    "english": "promotion",
+    "vietnamese": "sự thăng tiến / thăng chức",
+    "dutchsentence": "Ze was een vriendin van me tot ik die promotie kreeg in plaats van haar.",
+    "englishtranslate": "She was a friend of mine until I got the promotion instead of her."
+  },
+  {
+    "dutch": "jubileum",
+    "english": "anniversary",
+    "vietnamese": "lễ kỷ niệm",
+    "dutchsentence": "Ik heb ons jubileum aangeven op de kalender.",
+    "englishtranslate": "I marked our anniversary on the calendar."
+  },
+  {
+    "dutch": "begrafenis",
+    "english": "funeral",
+    "vietnamese": "đám tang",
+    "dutchsentence": "Er zijn verschillende gebruiken die worden toegepast bij begrafenissen.",
+    "englishtranslate": "There are many different customs associated with funerals."
+  },
+  {
+    "dutch": "trouwerij",
+    "english": "wedding",
+    "vietnamese": "đám cưới",
+    "dutchsentence": "Er zijn een groot aantal trouwerijen in juni.",
+    "englishtranslate": "There are a large number of weddings in June."
+  },
+  {
+    "dutch": "uitleggen",
+    "english": "explain",
+    "vietnamese": "giải thích",
+    "dutchsentence": "Kun je het antwoord uitleggen?",
+    "englishtranslate": "Can you explain the answer?"
+  },
+  {
+    "dutch": "terug",
+    "english": "back",
+    "vietnamese": "trở lại / quay lại",
+    "dutchsentence": "Ik moet nu teruggaan!",
+    "englishtranslate": "I have to go back now!"
+  },
+  {
+    "dutch": "oost",
+    "english": "east",
+    "vietnamese": "hướng đông",
+    "dutchsentence": "De zon komt op in het oosten.",
+    "englishtranslate": "The sun rises in the east."
+  },
+  {
+    "dutch": "stropdas",
+    "english": "necktie",
+    "vietnamese": "cà vạt",
+    "dutchsentence": "Als je je stropdas niet fatsoenlijk knoopt, zie je er uit als een slons.",
+    "englishtranslate": "If you don’t tie your necktie properly, you will look like a slob."
+  },
+  {
+    "dutch": "pak",
+    "english": "suit",
+    "vietnamese": "bộ com-lê",
+    "dutchsentence": "Behalve de baas draagt iedereen op kantoor een pak.",
+    "englishtranslate": "Everyone at the office wears a suit, except the boss."
+  },
+  {
+    "dutch": "sneaker",
+    "english": "sneaker",
+    "vietnamese": "giày thể thao",
+    "dutchsentence": "De sneakers zijn rood, wit, grijs.",
+    "englishtranslate": "The sneakers are red, white, and gray."
+  },
+  {
+    "dutch": "eenentwintig",
+    "english": "twenty-one",
+    "vietnamese": "số hai mươi mốt",
+    "dutchsentence": "Het gebouw heeft eenentwintig verdiepingen.",
+    "englishtranslate": "The building has twenty-one stories."
+  },
+  {
+    "dutch": "tweeëntwintig",
+    "english": "twenty-two",
+    "vietnamese": "số hai mươi hai",
+    "dutchsentence": "Haar favoriete nummer is tweeëntwintig.",
+    "englishtranslate": "Twenty-two is her favorite number."
+  },
+  {
+    "dutch": "drieëndertig",
+    "english": "thirty-three",
+    "vietnamese": "số ba mươi ba",
+    "dutchsentence": "Dit boek heeft drieëndertig paginas.",
+    "englishtranslate": "This book has thirty-three pages."
+  },
+  {
+    "dutch": "vierenveertig",
+    "english": "forty-four",
+    "vietnamese": "số bốn mươi tư",
+    "dutchsentence": "Ik heb dit jaar vierenveertig examens.",
+    "englishtranslate": "I’ll have forty-four exams this year."
+  },
+  {
+    "dutch": "vijfenvijftig",
+    "english": "fifty-five",
+    "vietnamese": "số năm mươi lăm",
+    "dutchsentence": "Vijfenvijftig centimeter is gelijk aan 21.65 inches.",
+    "englishtranslate": "Fifty five centimeters is equal to 21.65 inches."
+  },
+  {
+    "dutch": "student",
+    "english": "student",
+    "vietnamese": "sinh viên",
+    "dutchsentence": "Ze is een studente aan de universiteit.",
+    "englishtranslate": "She is a university student."
+  },
+  {
+    "dutch": "kijken",
+    "english": "watch",
+    "vietnamese": "xem / quan sát",
+    "dutchsentence": "De toeristen kijken naar de zonsondergang.",
+    "englishtranslate": "The tourists watch the sunset."
+  },
+  {
+    "dutch": "klaslokaal",
+    "english": "classroom",
+    "vietnamese": "lớp học",
+    "dutchsentence": "Je vindt ze tegenover het klaslokaal.",
+    "englishtranslate": "You will find them across from the classroom."
+  },
+  {
+    "dutch": "school",
+    "english": "school",
+    "vietnamese": "trường học",
+    "dutchsentence": "Ik ben op weg naar school.",
+    "englishtranslate": "I’m on my way to school."
+  },
+  {
+    "dutch": "schoolstoel",
+    "english": "school chair",
+    "vietnamese": "ghế học sinh",
+    "dutchsentence": "Ik kocht een kussen voor mijn schoolstoel.",
+    "englishtranslate": "I bought a cushion for my school chair."
+  },
+  {
+    "dutch": "schoolbureau",
+    "english": "school desk",
+    "vietnamese": "bàn học",
+    "dutchsentence": "De stoel zit vast aan de schoolbureau.",
+    "englishtranslate": "The chair is attached to the school desk."
+  },
+  {
+    "dutch": "surfen op het internet",
+    "english": "surf the internet",
+    "vietnamese": "lướt mạng",
+    "dutchsentence": "Elke avond voor ik ga slapen surf ik op het internet.",
+    "englishtranslate": "I surf the internet every night before bed."
+  },
+  {
+    "dutch": "noorden",
+    "english": "north",
+    "vietnamese": "hướng bắc",
+    "dutchsentence": "Een kompas wijst altijd naar het noorden.",
+    "englishtranslate": "A compass always points north."
+  },
+  {
+    "dutch": "terugbrengen",
+    "english": "return",
+    "vietnamese": "trả lại",
+    "dutchsentence": "Wanneer moet ik het terugbrengen?",
+    "englishtranslate": "When must I return it?"
+  },
+  {
+    "dutch": "een bad nemen",
+    "english": "bathe",
+    "vietnamese": "tắm bồn",
+    "dutchsentence": "s Avonds gelijk na het werk neem ik graag een bad.",
+    "englishtranslate": "I like to bathe in the evening just after work."
+  },
+  {
+    "dutch": "slapen",
+    "english": "sleep",
+    "vietnamese": "ngủ",
+    "dutchsentence": "Je moet tenminste acht uur per nacht slapen.",
+    "englishtranslate": "You should sleep at least eight hours every night."
+  },
+  {
+    "dutch": "zuiden",
+    "english": "south",
+    "vietnamese": "hướng nam",
+    "dutchsentence": "Carnaval wordt gevierd in het zuiden van Nederland.",
+    "englishtranslate": "Carnaval is celebrated in the south of the Netherlands."
+  },
+  {
+    "dutch": "pyjama",
+    "english": "pajamas",
+    "vietnamese": "bộ đồ ngủ / pijama",
+    "dutchsentence": "De jongen draagt een pyjama.",
+    "englishtranslate": "The boy is wearing pajamas."
+  },
+  {
+    "dutch": "beha",
+    "english": "brassiere",
+    "vietnamese": "áo lót nữ / áo nịt ngực",
+    "dutchsentence": "witte beha",
+    "englishtranslate": "white brassiere"
+  },
+  {
+    "dutch": "wakker worden",
+    "english": "wake up",
+    "vietnamese": "thức dậy",
+    "dutchsentence": "Ik heb een alarm nodig om me te helpen bij het wakker worden.",
+    "englishtranslate": "I need an alarm to help me wake up."
+  },
+  {
+    "dutch": "pendelen",
+    "english": "commute",
+    "vietnamese": "đi làm xa / đi lại giữa nhà và nơi làm",
+    "dutchsentence": "De mensen pendelen met de trein naar het werk.",
+    "englishtranslate": "The people are commuting to work by train."
+  },
+  {
+    "dutch": "eten",
+    "english": "eat",
+    "vietnamese": "ăn",
+    "dutchsentence": "Als schoolkinderen thuiskomen, eten ze vaak een tussendoortje.",
+    "englishtranslate": "When school kids come home, they often eat a snack."
+  },
+  {
+    "dutch": "kunst",
+    "english": "art",
+    "vietnamese": "nghệ thuật",
+    "dutchsentence": "Hou je van kunst?",
+    "englishtranslate": "Do you like art?"
+  },
+  {
+    "dutch": "literatuur",
+    "english": "literature",
+    "vietnamese": "văn học",
+    "dutchsentence": "De Odyssee is een klassiek stuk uit de literatuur.",
+    "englishtranslate": "The Odyssey is a classic piece of literature."
+  },
+  {
+    "dutch": "film",
+    "english": "movie",
+    "vietnamese": "phim",
+    "dutchsentence": "Die film is gewoon geweldig.",
+    "englishtranslate": "That movie is just great."
+  },
+  {
+    "dutch": "muziek",
+    "english": "music",
+    "vietnamese": "âm nhạc",
+    "dutchsentence": "Nee, ik hou niet van klassieke muziek.",
+    "englishtranslate": "No, I don’t like classical music."
+  },
+  {
+    "dutch": "antwoord",
+    "english": "answer",
+    "vietnamese": "câu trả lời",
+    "dutchsentence": "Hij weet het antwoord.",
+    "englishtranslate": "He knows the answer."
+  },
+  {
+    "dutch": "lesgeven",
+    "english": "teach",
+    "vietnamese": "dạy học",
+    "dutchsentence": "Ze geeft les op de universiteit.",
+    "englishtranslate": "She teaches at the university."
+  },
+  {
+    "dutch": "vragen",
+    "english": "ask",
+    "vietnamese": "hỏi",
+    "dutchsentence": "Als je vragen hebt, stel me die dan nu.",
+    "englishtranslate": "If you have any questions, please ask me now."
+  },
+  {
+    "dutch": "dichtdoen",
+    "english": "close",
+    "vietnamese": "đóng / khép lại",
+    "dutchsentence": "Kun je dat raam alsjeblieft dichtdoen?",
+    "englishtranslate": "Can you close that window, please?"
+  },
+  {
+    "dutch": "geboorte",
+    "english": "birth",
+    "vietnamese": "sự sinh ra / ngày sinh",
+    "dutchsentence": "Wat is uw geboortedatum?",
+    "englishtranslate": "What’s your date of birth?"
+  },
+  {
+    "dutch": "werken",
+    "english": "work",
+    "vietnamese": "làm việc",
+    "dutchsentence": "Ambtenaren werken altijd met formulieren.",
+    "englishtranslate": "Civil servants always work with forms."
+  },
+  {
+    "dutch": "aandoen",
+    "english": "turn on",
+    "vietnamese": "bật (đèn/thiết bị)",
+    "dutchsentence": "De man doet het licht aan.",
+    "englishtranslate": "The man turned on the light."
+  },
+  {
+    "dutch": "uitschakelen",
+    "english": "turn off",
+    "vietnamese": "tắt (đèn/thiết bị)",
+    "dutchsentence": "de lichten uitdoen",
+    "englishtranslate": "turn off the lights"
+  },
+  {
+    "dutch": "uit eten",
+    "english": "eat out",
+    "vietnamese": "ăn ngoài",
+    "dutchsentence": "Ik heb zin om uit eten te gaan vanavond.",
+    "englishtranslate": "I feel like eating out tonight."
+  },
+  {
+    "dutch": "bijwonen",
+    "english": "attend",
+    "vietnamese": "tham dự",
+    "dutchsentence": "Ik woon een vergadering bij.",
+    "englishtranslate": "I attend a meeting."
+  },
+  {
+    "dutch": "westen",
+    "english": "west",
+    "vietnamese": "hướng tây",
+    "dutchsentence": "De zon gaat onder in het westen.",
+    "englishtranslate": "The sun sets in the west."
+  },
+  {
+    "dutch": "poetsen",
+    "english": "brush",
+    "vietnamese": "chải / đánh (răng)",
+    "dutchsentence": "Het is belangrijk om twee keer per dag je tanden te poetsen.",
+    "englishtranslate": "It is very important to brush your teeth twice a day."
+  },
+  {
+    "dutch": "douchen",
+    "english": "shower",
+    "vietnamese": "tắm vòi sen",
+    "dutchsentence": "De man is aan het douchen.",
+    "englishtranslate": "The man is showering."
+  },
+  {
+    "dutch": "wassen",
+    "english": "wash",
+    "vietnamese": "rửa / giặt",
+    "dutchsentence": "De vrouw is haar gezicht aan het wassen.",
+    "englishtranslate": "The woman is washing her face."
+  },
+  {
+    "dutch": "vertrekken",
+    "english": "leave",
+    "vietnamese": "rời đi / khởi hành",
+    "dutchsentence": "Vanwege stormachtig weer vertrekken er geen vluchten.",
+    "englishtranslate": "There are no flights leaving due to the stormy weather."
+  },
+  {
+    "dutch": "cheque",
+    "english": "check",
+    "vietnamese": "séc",
+    "dutchsentence": "Kan ik met een cheque betalen?",
+    "englishtranslate": "Can I pay by check?"
+  },
+  {
+    "dutch": "zesenzestig",
+    "english": "sixty-six",
+    "vietnamese": "số sáu mươi sáu",
+    "dutchsentence": "Ik heb zesenzestig minuten gerend.",
+    "englishtranslate": "I ran for sixty-six minutes."
+  },
+  {
+    "dutch": "zevenenzeventig",
+    "english": "seventy-seven",
+    "vietnamese": "số bảy mươi bảy",
+    "dutchsentence": "Zijn huisnummer is zevenenzeventig.",
+    "englishtranslate": "His door number is seventy-seven."
+  },
+  {
+    "dutch": "achtentachtig",
+    "english": "eighty-eight",
+    "vietnamese": "số tám mươi tám",
+    "dutchsentence": "Het bedrijf heeft achtentachtig werknemers.",
+    "englishtranslate": "The company has eighty-eight employees."
+  },
+  {
+    "dutch": "negenennegentig",
+    "english": "ninety-nine",
+    "vietnamese": "số chín mươi chín",
+    "dutchsentence": "Mijn vader heeft negenennegentig stropdassen.",
+    "englishtranslate": "My father owns ninety-nine ties."
+  },
+  {
+    "dutch": "honderd",
+    "english": "one hundred",
+    "vietnamese": "một trăm",
+    "dutchsentence": "Hij heeft honderd jaar geleefd.",
+    "englishtranslate": "He has lived one hundred years."
+  },
+  {
+    "dutch": "woonkamer",
+    "english": "living room",
+    "vietnamese": "phòng khách",
+    "dutchsentence": "We proberen wat ruimte in de woonkamer te creëren.",
+    "englishtranslate": "We are trying to create some space in the living room."
+  },
+  {
+    "dutch": "eetkamer",
+    "english": "dining room",
+    "vietnamese": "phòng ăn",
+    "dutchsentence": "Eettafel in de eetkamer.",
+    "englishtranslate": "Dinner table in the dining room."
+  },
+  {
+    "dutch": "gang",
+    "english": "hallway",
+    "vietnamese": "hành lang",
+    "dutchsentence": "De badkamer is aan het einde van de gang.",
+    "englishtranslate": "The bathroom is at the end of the hallway."
+  },
+  {
+    "dutch": "appartement",
+    "english": "apartment",
+    "vietnamese": "căn hộ",
+    "dutchsentence": "Ik heb een klein appartement in New York City.",
+    "englishtranslate": "I have a small apartment in New York City."
+  },
+  {
+    "dutch": "huis",
+    "english": "house",
+    "vietnamese": "ngôi nhà",
+    "dutchsentence": "Waar is het huis?",
+    "englishtranslate": "Where is the house?"
+  },
+  {
+    "dutch": "trainen",
+    "english": "exercise",
+    "vietnamese": "tập thể dục / rèn luyện",
+    "dutchsentence": "Ik ga elke dag naar buiten om te trainen.",
+    "englishtranslate": "I go out to exercise every day."
+  }
+]
