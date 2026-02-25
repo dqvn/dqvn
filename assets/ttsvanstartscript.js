@@ -251,7 +251,7 @@ function reloadTable(jsonData) {
     <td>${index + 1}</td>
     <td onclick="speakText('${word.dutch?.replace(/'/g, "")}')"><span class="dutch-word" data-index="${index}">${word.dutch}</span></td>
     <td onclick="speakEngText('${word.english?.replace(/'/g, "")}')"><span class="hide-text">${word.english}</span></td>
-    <td onclick="speakText('${word.dutchsentence?.replace(/'/g, "")}')"><span>${word.dutchsentence}</span><br/><span class="hide-text" style="color: #3f3838ff; opacity: 0.3;">${word.englishtranslate} /${word.pronunciation?.ipa || ""} - ${word.pronunciation?.phonetic || ""}</span></td>
+    <td onclick="speakText('${word.dutchsentence?.replace(/'/g, "")}')"><span>/${word.pronunciation?.ipa || ""} ~ ${word.pronunciation?.phonetic || ""} <br/> ${word.dutchsentence}</span><br/><span class="hide-text" style="color: #3f3838ff; opacity: 0.3;">${word.englishtranslate}</span></td>
     <td><span class="hide-text">${word.vietnamese?.replace(/'/g, "")}</span></td>
   `;
     tableBody.appendChild(row);
