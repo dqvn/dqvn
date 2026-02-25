@@ -4,1259 +4,1979 @@
     "english": "the offer, offers / special deals",
     "vietnamese": "chương trình khuyến mãi, ưu đãi",
     "dutchsentence": "Er zijn deze week veel aanbiedingen in de supermarkt.",
-    "englishtranslate": "There are many offers in the supermarket this week."
+    "englishtranslate": "There are many offers in the supermarket this week.",
+    "pronunciation": {
+      "ipa": "də 'aːn.bi.dɪŋ, 'aːn.bi.dɪ.ŋə(n)",
+      "phonetic": "duh AHN-bee-ding, AHN-bee-ding-uh(n)"
+    }
   },
   {
     "dutch": "de aankoop, aankopen",
     "english": "the purchase, purchases",
     "vietnamese": "việc mua, món hàng đã mua",
     "dutchsentence": "U kunt de aankoop binnen 30 dagen ruilen.",
-    "englishtranslate": "You can exchange the purchase within 30 days."
+    "englishtranslate": "You can exchange the purchase within 30 days.",
+    "pronunciation": {
+      "ipa": "də 'aːn.koːp, 'aːn.koː.pə(n)",
+      "phonetic": "duh AHN-kohp, AHN-koh-puh(n)"
+    }
   },
   {
     "dutch": "de afdeling, afdelingen",
     "english": "the department, departments",
     "vietnamese": "gian hàng, bộ phận",
     "dutchsentence": "De kleding is op de tweede afdeling.",
-    "englishtranslate": "The clothing is in the second department."
+    "englishtranslate": "The clothing is in the second department.",
+    "pronunciation": {
+      "ipa": "də 'ɑf.deː.lɪŋ, 'ɑf.deː.lɪ.ŋə(n)",
+      "phonetic": "duh AHF-day-ling, AHF-day-ling-uh(n)"
+    }
   },
   {
     "dutch": "de balie, balies",
     "english": "the counter, desks",
     "vietnamese": "quầy, bàn tiếp tân",
     "dutchsentence": "U kunt de formulieren inleveren bij de balie.",
-    "englishtranslate": "You can hand in the forms at the counter."
+    "englishtranslate": "You can hand in the forms at the counter.",
+    "pronunciation": {
+      "ipa": "də 'baː.li, 'baː.li:s",
+      "phonetic": "duh BAH-lee, BAH-lees"
+    }
   },
   {
     "dutch": "de baliemedewerker, baliemedewerkers",
     "english": "the counter employee, counter employees",
     "vietnamese": "nhân viên quầy",
     "dutchsentence": "De baliemedewerker helpt mij met de inschrijving.",
-    "englishtranslate": "The counter employee is helping me with the registration."
+    "englishtranslate": "The counter employee is helping me with the registration.",
+    "pronunciation": {
+      "ipa": "də 'baː.li.meː.dəˌʋɛr.kər, 'baː.li.meː.dəˌʋɛr.kərs",
+      "phonetic": "duh BAH-lee-may-duh-wair-kur, BAH-lee-may-duh-wair-kurs"
+    }
   },
   {
     "dutch": "het bedrijf, bedrijven",
     "english": "the company, companies",
     "vietnamese": "công ty, doanh nghiệp",
     "dutchsentence": "Mijn man werkt bij een groot bedrijf.",
-    "englishtranslate": "My husband works at a large company."
+    "englishtranslate": "My husband works at a large company.",
+    "pronunciation": {
+      "ipa": "ət bə'drɛif, bə'drɛi.və(n)",
+      "phonetic": "uht buh-DREYF, buh-DREY-vuh(n)"
+    }
   },
   {
     "dutch": "bij aankoop van ...",
     "english": "upon purchase of ...",
     "vietnamese": "khi mua ...",
     "dutchsentence": "U krijgt een korting bij aankoop van twee flessen.",
-    "englishtranslate": "You get a discount upon purchase of two bottles."
+    "englishtranslate": "You get a discount upon purchase of two bottles.",
+    "pronunciation": {
+      "ipa": "bɛi 'aːn.koːp vɑn",
+      "phonetic": "bay AHN-kohp vahn"
+    }
   },
   {
     "dutch": "de boodschap, boodschappen",
     "english": "the groceries / errand, messages",
     "vietnamese": "thực phẩm, việc vặt",
     "dutchsentence": "Ik ga elke zaterdag boodschappen doen.",
-    "englishtranslate": "I go grocery shopping every Saturday."
+    "englishtranslate": "I go grocery shopping every Saturday.",
+    "pronunciation": {
+      "ipa": "də 'boːt.sxɑp, 'boːt.sxɑ.pə(n)",
+      "phonetic": "duh BOHT-skhahp, BOHT-skhah-puh(n)"
+    }
   },
   {
     "dutch": "het boodschappenlijstje",
     "english": "the shopping list / grocery list",
     "vietnamese": "danh sách đi chợ",
     "dutchsentence": "Vergeet je boodschappenlijstje niet.",
-    "englishtranslate": "Don't forget your shopping list."
+    "englishtranslate": "Don't forget your shopping list.",
+    "pronunciation": {
+      "ipa": "ət 'boːt.sxɑ.pəˌlɛi.stjə",
+      "phonetic": "uht BOHT-skhah-puh-lay-styuh"
+    }
   },
   {
     "dutch": "de bos bloemen",
     "english": "the bunch of flowers",
     "vietnamese": "bó hoa",
     "dutchsentence": "Ik koop een mooie bos bloemen voor mijn vrouw.",
-    "englishtranslate": "I'm buying a beautiful bunch of flowers for my wife."
+    "englishtranslate": "I'm buying a beautiful bunch of flowers for my wife.",
+    "pronunciation": {
+      "ipa": "də bɔs 'blu.mə(n)",
+      "phonetic": "duh baws BLOO-muh(n)"
+    }
   },
   {
     "dutch": "de bouwmarkt, bouwmarkten",
     "english": "the hardware store, hardware stores",
     "vietnamese": "cửa hàng vật liệu xây dựng",
     "dutchsentence": "We moeten naar de bouwmarkt voor verf.",
-    "englishtranslate": "We have to go to the hardware store for paint."
+    "englishtranslate": "We have to go to the hardware store for paint.",
+    "pronunciation": {
+      "ipa": "də 'bɑu.mɑrkt, 'bɑu.mɑrk.tə(n)",
+      "phonetic": "duh BOW-markt, BOW-mark-tuh(n)"
+    }
   },
   {
     "dutch": "het briefje, briefjes",
     "english": "the note, notes / small bill (money)",
     "vietnamese": "tờ giấy, tờ tiền nhỏ",
     "dutchsentence": "Kan ik betalen met een briefje van 50 euro?",
-    "englishtranslate": "Can I pay with a 50 euro bill?"
+    "englishtranslate": "Can I pay with a 50 euro bill?",
+    "pronunciation": {
+      "ipa": "ət 'bri.fjə, 'bri.fjəs",
+      "phonetic": "uht BREE-fyuh, BREE-fyuhs"
+    }
   },
   {
     "dutch": "de buurt, buurten",
     "english": "the neighborhood, neighborhoods",
     "vietnamese": "khu phố, vùng lân cận",
     "dutchsentence": "De supermarkt is in de buurt.",
-    "englishtranslate": "The supermarket is in the neighborhood."
+    "englishtranslate": "The supermarket is in the neighborhood.",
+    "pronunciation": {
+      "ipa": "də byːrt, 'byːr.tə(n)",
+      "phonetic": "duh bewrt, BEWR-tuh(n)"
+    }
   },
   {
     "dutch": "het café, cafés",
     "english": "the café, pubs / bars",
     "vietnamese": "quán cà phê, quán bar",
     "dutchsentence": "Na het werk gaan we naar het café.",
-    "englishtranslate": "After work we go to the café/pub."
+    "englishtranslate": "After work we go to the café/pub.",
+    "pronunciation": {
+      "ipa": "ət kɑ'feː, kɑ'feːs",
+      "phonetic": "uht kah-FAY, kah-FAYS"
+    }
   },
   {
     "dutch": "de delicatesse, delicatessen",
     "english": "the delicacy, delicacies",
     "vietnamese": "món ăn ngon, đặc sản",
     "dutchsentence": "Deze winkel verkoopt dure delicatessen.",
-    "englishtranslate": "This shop sells expensive delicacies."
+    "englishtranslate": "This shop sells expensive delicacies.",
+    "pronunciation": {
+      "ipa": "də ˌdeː.li.kɑˈtɛ.sə, ˌdeː.li.kɑˈtɛ.sə(n)",
+      "phonetic": "duh day-lee-kah-TESS-uh, day-lee-kah-TESS-uh(n)"
+    }
   },
   {
     "dutch": "de diepvries",
     "english": "the freezer / frozen food section",
     "vietnamese": "ngăn đông lạnh, thực phẩm đông lạnh",
     "dutchsentence": "Het ijs ligt in de diepvries.",
-    "englishtranslate": "The ice cream is in the freezer."
+    "englishtranslate": "The ice cream is in the freezer.",
+    "pronunciation": {
+      "ipa": "də 'dip.fri:s",
+      "phonetic": "duh DEEP-freece"
+    }
   },
   {
     "dutch": "het einde",
     "english": "the end",
     "vietnamese": "sự kết thúc",
     "dutchsentence": "Aan het einde van de straat is een rotonde.",
-    "englishtranslate": "At the end of the street is a roundabout."
+    "englishtranslate": "At the end of the street is a roundabout.",
+    "pronunciation": {
+      "ipa": "ət 'ɛi̯n.də",
+      "phonetic": "uht AYN-duh"
+    }
   },
   {
     "dutch": "de etage, etages",
     "english": "the floor, floors (of a building)",
     "vietnamese": "tầng (của tòa nhà)",
     "dutchsentence": "De herenkleding is op de derde etage.",
-    "englishtranslate": "The men's clothing is on the third floor."
+    "englishtranslate": "The men's clothing is on the third floor.",
+    "pronunciation": {
+      "ipa": "də eɪ'tɑː.ʒə, eɪ'tɑː.ʒəs",
+      "phonetic": "duh ay-TAH-zhuh, ay-TAH-zhuhs"
+    }
   },
   {
     "dutch": "de euro, euro’s",
     "english": "the euro, euros",
     "vietnamese": "đồng euro",
     "dutchsentence": "Dit kost 10 euro.",
-    "englishtranslate": "This costs 10 euros."
+    "englishtranslate": "This costs 10 euros.",
+    "pronunciation": {
+      "ipa": "də 'øː.roː, 'øː.roːs",
+      "phonetic": "duh UH-roh, UH-rohs"
+    }
   },
   {
     "dutch": "de fabriek, fabrieken",
     "english": "the factory, factories",
     "vietnamese": "nhà máy, xí nghiệp",
     "dutchsentence": "Hij werkt al twintig jaar in die fabriek.",
-    "englishtranslate": "He has been working in that factory for twenty years."
+    "englishtranslate": "He has been working in that factory for twenty years.",
+    "pronunciation": {
+      "ipa": "də fɑ'brik, fɑ'bri.kə(n)",
+      "phonetic": "duh fah-BREEK, fah-BREE-kuh(n)"
+    }
   },
   {
     "dutch": "de fles, flessen",
     "english": "the bottle, bottles",
     "vietnamese": "chai, lọ",
     "dutchsentence": "Ik heb twee flessen water gekocht.",
-    "englishtranslate": "I bought two bottles of water."
+    "englishtranslate": "I bought two bottles of water.",
+    "pronunciation": {
+      "ipa": "də flɛs, 'flɛ.sə(n)",
+      "phonetic": "duh fles, FLESS-uh(n)"
+    }
   },
   {
     "dutch": "de gang, gangen",
     "english": "the aisle, aisles / corridor",
     "vietnamese": "lối đi, hành lang",
     "dutchsentence": "U moet de vierde gang volgen.",
-    "englishtranslate": "You must follow the fourth aisle."
+    "englishtranslate": "You must follow the fourth aisle.",
+    "pronunciation": {
+      "ipa": "də xɑŋ, 'xɑ.ŋə(n)",
+      "phonetic": "duh khahng, KHAH-nguh(n)"
+    }
   },
   {
     "dutch": "het gemeentehuis",
     "english": "the city hall / municipal office",
     "vietnamese": "tòa thị chính, trụ sở ủy ban nhân dân",
     "dutchsentence": "De inschrijving gebeurt in het gemeentehuis.",
-    "englishtranslate": "The registration takes place in the city hall."
+    "englishtranslate": "The registration takes place in the city hall.",
+    "pronunciation": {
+      "ipa": "ət ɣə'meːn.təˌɦœys",
+      "phonetic": "uht khuh-MAYN-tuh-hoys"
+    }
   },
   {
     "dutch": "het gewicht",
     "english": "the weight",
     "vietnamese": "trọng lượng, cân nặng",
     "dutchsentence": "Wat is het gewicht van dit pakketje?",
-    "englishtranslate": "What is the weight of this small package?"
+    "englishtranslate": "What is the weight of this small package?",
+    "pronunciation": {
+      "ipa": "ət ɣə'ʋɪxt",
+      "phonetic": "uht khuh-WIKHT"
+    }
   },
   {
     "dutch": "het glas, glazen",
     "english": "the glass, glasses",
     "vietnamese": "cái ly, cốc",
     "dutchsentence": "Mag ik een glas water, alstublieft?",
-    "englishtranslate": "May I have a glass of water, please?"
+    "englishtranslate": "May I have a glass of water, please?",
+    "pronunciation": {
+      "ipa": "ət ɣlɑs, 'ɣlaː.zə(n)",
+      "phonetic": "uht khlahs, KHLAA-zuh(n)"
+    }
   },
   {
     "dutch": "de gram, het gram",
     "english": "the gram, the grams",
     "vietnamese": "gam",
     "dutchsentence": "Ik wil graag 200 gram kaas.",
-    "englishtranslate": "I would like 200 grams of cheese."
+    "englishtranslate": "I would like 200 grams of cheese.",
+    "pronunciation": {
+      "ipa": "də ɣrɑm, ət ɣrɑm",
+      "phonetic": "dukh rahm, uht khrahm"
+    }
   },
   {
     "dutch": "het identiteitsbewijs",
     "english": "the proof of identity / ID",
     "vietnamese": "giấy tờ tùy thân",
     "dutchsentence": "Heeft u uw identiteitsbewijs bij u?",
-    "englishtranslate": "Do you have your ID with you?"
+    "englishtranslate": "Do you have your ID with you?",
+    "pronunciation": {
+      "ipa": "ət i.dɛn.tiˈtɛits.bəˌʋɛis",
+      "phonetic": "uht ee-den-tee-TAYTS-buh-wice"
+    }
   },
   {
     "dutch": "het kantoor, kantoren",
     "english": "the office, offices",
     "vietnamese": "văn phòng",
     "dutchsentence": "Mijn kantoor is op de vierde verdieping.",
-    "englishtranslate": "My office is on the fourth floor."
+    "englishtranslate": "My office is on the fourth floor.",
+    "pronunciation": {
+      "ipa": "ət kɑnˈtoːr, kɑnˈtoː.rə(n)",
+      "phonetic": "uht kahn-TOHR, kahn-TOH-ruh(n)"
+    }
   },
   {
     "dutch": "de kassa, kassa’s",
     "english": "the cash register, cash registers",
     "vietnamese": "máy tính tiền, quầy thanh toán",
     "dutchsentence": "U kunt afrekenen bij kassa 3.",
-    "englishtranslate": "You can pay at cash register 3."
+    "englishtranslate": "You can pay at cash register 3.",
+    "pronunciation": {
+      "ipa": "də 'kɑ.sɑ, 'kɑ.sɑs",
+      "phonetic": "duh KAH-sah, KAH-sahs"
+    }
   },
   {
     "dutch": "de keus, keuzes",
     "english": "the choice, choices",
     "vietnamese": "sự lựa chọn, sự chọn lựa",
     "dutchsentence": "Er is veel keus in deze winkel.",
-    "englishtranslate": "There is a lot of choice in this shop."
+    "englishtranslate": "There is a lot of choice in this shop.",
+    "pronunciation": {
+      "ipa": "də køːs, 'køː.zəs",
+      "phonetic": "duh kuhs, KUH-zuhs"
+    }
   },
   {
     "dutch": "de kilo",
     "english": "the kilogram, the kilograms",
     "vietnamese": "kilogram (ký)",
     "dutchsentence": "Ik wil graag een halve kilo appels.",
-    "englishtranslate": "I would like half a kilo of apples."
+    "englishtranslate": "I would like half a kilo of apples.",
+    "pronunciation": {
+      "ipa": "də 'ki.loː",
+      "phonetic": "duh KEE-loh"
+    }
   },
   {
     "dutch": "de klant, klanten",
     "english": "the customer, customers",
     "vietnamese": "khách hàng",
     "dutchsentence": "De klant is koning.",
-    "englishtranslate": "The customer is king."
+    "englishtranslate": "The customer is king.",
+    "pronunciation": {
+      "ipa": "də klɑnt, 'klɑn.tə(n)",
+      "phonetic": "duh klahnt, KLAHN-tuh(n)"
+    }
   },
   {
     "dutch": "de kledingwinkel, kledingwinkels",
     "english": "the clothing store, clothing stores",
     "vietnamese": "cửa hàng quần áo",
     "dutchsentence": "Ik koop mijn kleding in een kledingwinkel.",
-    "englishtranslate": "I buy my clothes in a clothing store."
+    "englishtranslate": "I buy my clothes in a clothing store.",
+    "pronunciation": {
+      "ipa": "də 'kleː.dɪŋˌʋɪŋ.kəl, 'kleː.dɪŋˌʋɪŋ.kəls",
+      "phonetic": "duh KLAY-ding-wing-kul, KLAY-ding-wing-kuls"
+    }
   },
   {
     "dutch": "de kledingzaak, kledingzaken",
     "english": "the clothing shop, clothing shops",
     "vietnamese": "cửa hàng quần áo",
     "dutchsentence": "De kledingzaak heeft mooie jassen.",
-    "englishtranslate": "The clothing shop has beautiful coats."
+    "englishtranslate": "The clothing shop has beautiful coats.",
+    "pronunciation": {
+      "ipa": "də 'kleː.dɪŋˌzaːk, 'kleː.dɪŋˌzaː.kə(n)",
+      "phonetic": "duh KLAY-ding-zahk, KLAY-ding-zah-kuh(n)"
+    }
   },
   {
     "dutch": "de korting, kortingen",
     "english": "the discount, discounts",
     "vietnamese": "sự giảm giá, chiết khấu",
     "dutchsentence": "U krijgt 10% korting op dit product.",
-    "englishtranslate": "You get a 10% discount on this product."
+    "englishtranslate": "You get a 10% discount on this product.",
+    "pronunciation": {
+      "ipa": "də 'kɔr.tɪŋ, 'kɔr.tɪ.ŋə(n)",
+      "phonetic": "duh KOR-ting, KOR-ting-uh(n)"
+    }
   },
   {
     "dutch": "de kraam, kramen",
     "english": "the stall, stalls (market)",
     "vietnamese": "quầy hàng, sạp hàng",
     "dutchsentence": "De groentekraam is de beste van de markt.",
-    "englishtranslate": "The vegetable stall is the best on the market."
+    "englishtranslate": "The vegetable stall is the best on the market.",
+    "pronunciation": {
+      "ipa": "də kraːm, 'kraː.mə(n)",
+      "phonetic": "duh krahm, KRAH-muh(n)"
+    }
   },
   {
     "dutch": "de kruising, kruisingen",
     "english": "the intersection, intersections",
     "vietnamese": "ngã tư, giao lộ",
     "dutchsentence": "Bij de kruising moet u linksaf slaan.",
-    "englishtranslate": "At the intersection you must turn left."
+    "englishtranslate": "At the intersection you must turn left.",
+    "pronunciation": {
+      "ipa": "də 'krœy.sɪŋ, 'krœy.sɪ.ŋə(n)",
+      "phonetic": "duh KROY-sing, KROY-sing-uh(n)"
+    }
   },
   {
     "dutch": "het kruispunt, kruispunten",
     "english": "the crossroad, crossroads",
     "vietnamese": "ngã tư, giao lộ",
     "dutchsentence": "Het kruispunt is erg druk.",
-    "englishtranslate": "The crossroad is very busy."
+    "englishtranslate": "The crossroad is very busy.",
+    "pronunciation": {
+      "ipa": "ət 'krœy.spʏnt, 'krœy.spʏn.tə(n)",
+      "phonetic": "uht KROY-spunt, KROY-spun-tuh(n)"
+    }
   },
   {
     "dutch": "de laptop, laptops",
     "english": "the laptop, laptops",
     "vietnamese": "máy tính xách tay",
     "dutchsentence": "Ik heb een nieuwe laptop nodig.",
-    "englishtranslate": "I need a new laptop."
+    "englishtranslate": "I need a new laptop.",
+    "pronunciation": {
+      "ipa": "də 'lɛp.tɔp, 'lɛp.tɔps",
+      "phonetic": "duh LEP-top, LEP-tops"
+    }
   },
   {
     "dutch": "de lift, liften",
     "english": "the elevator, elevators / lift",
     "vietnamese": "thang máy",
     "dutchsentence": "Neem de lift naar de tweede verdieping.",
-    "englishtranslate": "Take the elevator to the second floor."
+    "englishtranslate": "Take the elevator to the second floor.",
+    "pronunciation": {
+      "ipa": "də lɪft, 'lɪf.tə(n)",
+      "phonetic": "duh lift, LIF-tuh(n)"
+    }
   },
   {
     "dutch": "de maat, maten",
     "english": "the size, sizes",
     "vietnamese": "kích cỡ, số đo",
     "dutchsentence": "Welke maat schoenen heeft u?",
-    "englishtranslate": "What size shoes do you have?"
+    "englishtranslate": "What size shoes do you have?",
+    "pronunciation": {
+      "ipa": "də maːt, 'maː.tə(n)",
+      "phonetic": "duh maht, MAH-tuh(n)"
+    }
   },
   {
     "dutch": "het magazijn, magazijnen",
     "english": "the warehouse, warehouses / storage room",
     "vietnamese": "kho hàng",
     "dutchsentence": "We hebben de producten in het magazijn.",
-    "englishtranslate": "We have the products in the warehouse."
+    "englishtranslate": "We have the products in the warehouse.",
+    "pronunciation": {
+      "ipa": "ət ˌmɑ.ɣɑˈzɛi̯n, ˌmɑ.ɣɑˈzɛi̯.nə(n)",
+      "phonetic": "uht mah-khah-ZAYN, mah-khah-ZAY-nuh(n)"
+    }
   },
   {
     "dutch": "de markt, markten",
     "english": "the market, markets",
     "vietnamese": "chợ",
     "dutchsentence": "De markt is elke zaterdag open.",
-    "englishtranslate": "The market is open every Saturday."
+    "englishtranslate": "The market is open every Saturday.",
+    "pronunciation": {
+      "ipa": "də mɑrkt, 'mɑrk.tə(n)",
+      "phonetic": "duh markt, MARK-tuh(n)"
+    }
   },
   {
     "dutch": "de meneer",
     "english": "the mister, gentleman",
     "vietnamese": "ông, ngài",
     "dutchsentence": "Dag meneer, kan ik u helpen?",
-    "englishtranslate": "Hello mister, can I help you?"
+    "englishtranslate": "Hello mister, can I help you?",
+    "pronunciation": {
+      "ipa": "də mə'neːr",
+      "phonetic": "duh muh-NAIR"
+    }
   },
   {
     "dutch": "de mevrouw",
     "english": "the madam, lady",
     "vietnamese": "bà, cô",
     "dutchsentence": "Goedendag mevrouw, hier is uw bestelling.",
-    "englishtranslate": "Good day madam, here is your order."
+    "englishtranslate": "Good day madam, here is your order.",
+    "pronunciation": {
+      "ipa": "də mə'vrɑu",
+      "phonetic": "duh muh-VROW"
+    }
   },
   {
     "dutch": "het ons",
     "english": "the ounce (approx. 100 grams)",
     "vietnamese": "lạng (khoảng 100 gram)",
     "dutchsentence": "Ik wil graag een ons vlees.",
-    "englishtranslate": "I would like 100 grams of meat."
+    "englishtranslate": "I would like 100 grams of meat.",
+    "pronunciation": {
+      "ipa": "ət ɔns",
+      "phonetic": "uht awnts"
+    }
   },
   {
     "dutch": "het pad, paden",
     "english": "the path, paths / aisle",
     "vietnamese": "lối đi, con đường",
     "dutchsentence": "Volg dit pad tot het einde.",
-    "englishtranslate": "Follow this path until the end."
+    "englishtranslate": "Follow this path until the end.",
+    "pronunciation": {
+      "ipa": "ət pɑt, 'paː.də(n)",
+      "phonetic": "uht paht, PAH-duh(n)"
+    }
   },
   {
     "dutch": "de parkeerplaats, parkeerplaatsen",
     "english": "the parking space, parking spaces",
     "vietnamese": "chỗ đỗ xe",
     "dutchsentence": "Er is een parkeerplaats bij de supermarkt.",
-    "englishtranslate": "There is a parking space at the supermarket."
+    "englishtranslate": "There is a parking space at the supermarket.",
+    "pronunciation": {
+      "ipa": "də pɑr'keːr.plaːts, pɑr'keːr.plaːt.sə(n)",
+      "phonetic": "duh par-KAIR-plahts, par-KAIR-plaht-suh(n)"
+    }
   },
   {
     "dutch": "het parkeerterrein, parkeerterreinen",
     "english": "the parking lot, parking lots",
     "vietnamese": "bãi đỗ xe",
     "dutchsentence": "Het parkeerterrein is vol.",
-    "englishtranslate": "The parking lot is full."
+    "englishtranslate": "The parking lot is full.",
+    "pronunciation": {
+      "ipa": "ət pɑr'keːr.təˌrɛi̯n, pɑr'keːr.təˌrɛi̯.nə(n)",
+      "phonetic": "uht par-KAIR-tuh-rain, par-KAIR-tuh-rai-nuh(n)"
+    }
   },
   {
     "dutch": "de paskamer, paskamers",
     "english": "the fitting room, fitting rooms",
     "vietnamese": "phòng thử đồ",
     "dutchsentence": "Waar zijn de paskamers?",
-    "englishtranslate": "Where are the fitting rooms?"
+    "englishtranslate": "Where are the fitting rooms?",
+    "pronunciation": {
+      "ipa": "də 'pɑs.kaː.mər, 'pɑs.kaː.mərs",
+      "phonetic": "duh PAHS-kah-mur, PAHS-kah-murs"
+    }
   },
   {
     "dutch": "de pinpas, pinpassen",
     "english": "the debit card, debit cards",
     "vietnamese": "thẻ ghi nợ",
     "dutchsentence": "U kunt met pinpas betalen.",
-    "englishtranslate": "You can pay with a debit card."
+    "englishtranslate": "You can pay with a debit card.",
+    "pronunciation": {
+      "ipa": "də 'pɪn.pɑs, 'pɪn.pɑ.sə(n)",
+      "phonetic": "duh PIN-pahs, PIN-pah-suh(n)"
+    }
   },
   {
     "dutch": "het pond",
     "english": "the pound (approx. 500 grams)",
     "vietnamese": "nửa ký (khoảng 500 gram)",
     "dutchsentence": "Mag ik een pond appels alstublieft?",
-    "englishtranslate": "May I have half a kilo of apples, please?"
+    "englishtranslate": "May I have half a kilo of apples, please?",
+    "pronunciation": {
+      "ipa": "ət pɔnt",
+      "phonetic": "uht pohnt"
+    }
   },
   {
     "dutch": "de prijs, prijzen",
     "english": "the price, prices",
     "vietnamese": "giá, chi phí",
     "dutchsentence": "Wat is de prijs van deze fles?",
-    "englishtranslate": "What is the price of this bottle?"
+    "englishtranslate": "What is the price of this bottle?",
+    "pronunciation": {
+      "ipa": "də prɛis, 'prɛi.zə(n)",
+      "phonetic": "duh pricess, PRICE-uh(n)"
+    }
   },
   {
     "dutch": "de reclame, reclames",
     "english": "the advertisement, advertisements / commercials",
     "vietnamese": "quảng cáo",
     "dutchsentence": "Ik kijk vaak naar reclames in de krant.",
-    "englishtranslate": "I often look at advertisements in the newspaper."
+    "englishtranslate": "I often look at advertisements in the newspaper.",
+    "pronunciation": {
+      "ipa": "də rə'klaː.mə, rə'klaː.məs",
+      "phonetic": "duh ruh-KLAH-muh, ruh-KLAH-muhs"
+    }
   },
   {
     "dutch": "de roltrap, roltrappen",
     "english": "the escalator, escalators",
     "vietnamese": "thang cuốn",
     "dutchsentence": "Neem de roltrap naar de volgende etage.",
-    "englishtranslate": "Take the escalator to the next floor."
+    "englishtranslate": "Take the escalator to the next floor.",
+    "pronunciation": {
+      "ipa": "də 'rɔl.trɑp, 'rɔl.trɑ.pə(n)",
+      "phonetic": "duh ROL-trahp, ROL-trah-puh(n)"
+    }
   },
   {
     "dutch": "de rotonde, rotondes",
     "english": "the roundabout, roundabouts",
     "vietnamese": "vòng xuyến",
     "dutchsentence": "Bij de rotonde gaat u rechtdoor.",
-    "englishtranslate": "At the roundabout, you go straight ahead."
+    "englishtranslate": "At the roundabout, you go straight ahead.",
+    "pronunciation": {
+      "ipa": "də roʊ'tɔn.də, roʊ'tɔn.dəs",
+      "phonetic": "duh roh-TON-duh, roh-TON-duhs"
+    }
   },
   {
     "dutch": "de schoenenzaak, schoenenzaken",
     "english": "the shoe store, shoe stores",
     "vietnamese": "cửa hàng giày",
     "dutchsentence": "Ik heb een nieuwe schoenenzaak gevonden.",
-    "englishtranslate": "I have found a new shoe store."
+    "englishtranslate": "I have found a new shoe store.",
+    "pronunciation": {
+      "ipa": "də 'sxu.nə.zaːk, 'sxu.nə.zaː.kə(n)",
+      "phonetic": "duh SKHOO-nuh-zahk, SKHOO-nuh-zah-kuh(n)"
+    }
   },
   {
     "dutch": "het seizoen, seizoenen",
     "english": "the season, seasons",
     "vietnamese": "mùa",
     "dutchsentence": "Het is het seizoen voor verse aardbeien.",
-    "englishtranslate": "It is the season for fresh strawberries."
+    "englishtranslate": "It is the season for fresh strawberries.",
+    "pronunciation": {
+      "ipa": "ət sɛi̯'zun, sɛi̯'zu.nə(n)",
+      "phonetic": "uht say-ZOON, say-ZOO-nuh(n)"
+    }
   },
   {
     "dutch": "de slijterij, slijterijen",
     "english": "the liquor store, liquor stores",
     "vietnamese": "cửa hàng rượu mạnh",
     "dutchsentence": "De slijterij heeft veel soorten wijn.",
-    "englishtranslate": "The liquor store has many kinds of wine."
+    "englishtranslate": "The liquor store has many kinds of wine.",
+    "pronunciation": {
+      "ipa": "də ˌslɛi̯.təˈrɛi̯, ˌslɛi̯.təˈrɛi̯.jə(n)",
+      "phonetic": "duh slay-tuh-RAY, slay-tuh-RAY-yuh(n)"
+    }
   },
   {
     "dutch": "het station, stations",
     "english": "the station, stations",
     "vietnamese": "nhà ga",
     "dutchsentence": "Ik ga met de trein vanaf het station.",
-    "englishtranslate": "I am going by train from the station."
+    "englishtranslate": "I am going by train from the station.",
+    "pronunciation": {
+      "ipa": "ət stɑ'ʃɔn, stɑ'ʃɔns",
+      "phonetic": "uht stah-SHAWN, stah-SHAWNS"
+    }
   },
   {
     "dutch": "het stoplicht, stoplichten",
     "english": "the traffic light, traffic lights",
     "vietnamese": "đèn giao thông",
     "dutchsentence": "U moet wachten voor het rode stoplicht.",
-    "englishtranslate": "You must wait for the red traffic light."
+    "englishtranslate": "You must wait for the red traffic light.",
+    "pronunciation": {
+      "ipa": "ət 'stɔp.lɪxt, 'stɔp.lɪx.tə(n)",
+      "phonetic": "uht STOP-likht, STOP-likh-tuh(n)"
+    }
   },
   {
     "dutch": "de straat, straten",
     "english": "the street, streets",
     "vietnamese": "đường phố",
     "dutchsentence": "Ik woon in een rustige straat.",
-    "englishtranslate": "I live on a quiet street."
+    "englishtranslate": "I live on a quiet street.",
+    "pronunciation": {
+      "ipa": "də straːt, 'straː.tə(n)",
+      "phonetic": "duh straht, STRAH-tuh(n)"
+    }
   },
   {
     "dutch": "de supermarkt, supermarkten",
     "english": "the supermarket, supermarkets",
     "vietnamese": "siêu thị",
     "dutchsentence": "Ik koop mijn boodschappen in de supermarkt.",
-    "englishtranslate": "I buy my groceries in the supermarket."
+    "englishtranslate": "I buy my groceries in the supermarket.",
+    "pronunciation": {
+      "ipa": "də 'sypər.mɑrkt, 'sypər.mɑrk.tə(n)",
+      "phonetic": "duh SEW-per-markt, SEW-per-mark-tuh(n)"
+    }
   },
   {
     "dutch": "het tasje, tasjes",
     "english": "the small bag, small bags (shopping)",
     "vietnamese": "túi nhỏ, giỏ nhỏ",
     "dutchsentence": "Wil u een tasje bij de kassa?",
-    "englishtranslate": "Would you like a small bag at the cash register?"
+    "englishtranslate": "Would you like a small bag at the cash register?",
+    "pronunciation": {
+      "ipa": "ət 'tɑ.ʃə, 'tɑ.ʃəs",
+      "phonetic": "uht TAH-shuh, TAH-shuhs"
+    }
   },
   {
     "dutch": "de uitverkoop",
     "english": "the sale, clearance",
     "vietnamese": "đợt giảm giá, thanh lý",
     "dutchsentence": "Er is nu uitverkoop in de kledingwinkel.",
-    "englishtranslate": "There is a sale now in the clothing store."
+    "englishtranslate": "There is a sale now in the clothing store.",
+    "pronunciation": {
+      "ipa": "də 'œyt.vər.koːp",
+      "phonetic": "duh OYT-vur-kohp"
+    }
   },
   {
     "dutch": "de verdieping, verdiepingen",
     "english": "the floor, floors (of a building)",
     "vietnamese": "tầng (của tòa nhà)",
     "dutchsentence": "De paskamers zijn op de eerste verdieping.",
-    "englishtranslate": "The fitting rooms are on the first floor."
+    "englishtranslate": "The fitting rooms are on the first floor.",
+    "pronunciation": {
+      "ipa": "də vər'di.pɪŋ, vər'di.pɪ.ŋə(n)",
+      "phonetic": "duh vur-DEE-ping, vur-DEE-ping-uh(n)"
+    }
   },
   {
     "dutch": "de voorraad, voorraden",
     "english": "the stock, supplies",
     "vietnamese": "hàng tồn kho, nguồn cung cấp",
     "dutchsentence": "Dit product is niet meer op voorraad.",
-    "englishtranslate": "This product is no longer in stock."
+    "englishtranslate": "This product is no longer in stock.",
+    "pronunciation": {
+      "ipa": "də 'voːr.raːt, 'voːr.raː.də(n)",
+      "phonetic": "duh VOHR-raht, VOHR-rah-duh(n)"
+    }
   },
   {
     "dutch": "het warenhuis, de warenhuizen",
     "english": "the department store, department stores",
     "vietnamese": "cửa hàng bách hóa",
     "dutchsentence": "We gaan naar een groot warenhuis in de stad.",
-    "englishtranslate": "We are going to a large department store in the city."
+    "englishtranslate": "We are going to a large department store in the city.",
+    "pronunciation": {
+      "ipa": "ət 'ʋaː.rən.ɦœys, də 'ʋaː.rən.ɦœy.zə(n)",
+      "phonetic": "uht VAH-run-hoys, duh VAH-run-hoy-zuh(n)"
+    }
   },
   {
     "dutch": "de weg, wegen",
     "english": "the road, roads / way",
     "vietnamese": "con đường, đường đi",
     "dutchsentence": "Dit is de weg naar het station.",
-    "englishtranslate": "This is the road to the station."
+    "englishtranslate": "This is the road to the station.",
+    "pronunciation": {
+      "ipa": "də ʋɛx, 'ʋeː.ɣə(n)",
+      "phonetic": "duh wekh, VAY-khuh(n)"
+    }
   },
   {
     "dutch": "het winkelcentrum, winkelcentrums",
     "english": "the shopping center, shopping centers",
     "vietnamese": "trung tâm mua sắm",
     "dutchsentence": "Het winkelcentrum is vandaag open tot 9 uur.",
-    "englishtranslate": "The shopping center is open until 9 o'clock today."
+    "englishtranslate": "The shopping center is open until 9 o'clock today.",
+    "pronunciation": {
+      "ipa": "ət 'ʋɪŋ.kəl.sɛn.trʏm, 'ʋɪŋ.kəl.sɛn.trʏms",
+      "phonetic": "uht WING-kul-sen-trum, WING-kul-sen-trums"
+    }
   },
   {
     "dutch": "afrekenen",
     "english": "to pay, to check out",
     "vietnamese": "thanh toán, tính tiền",
     "dutchsentence": "U kunt hier afrekenen.",
-    "englishtranslate": "You can check out here."
+    "englishtranslate": "You can check out here.",
+    "pronunciation": {
+      "ipa": "'ɑf.reː.kə.nə(n)",
+      "phonetic": "AHF-ray-kuh-nuh(n)"
+    }
   },
   {
     "dutch": "betalen",
     "english": "to pay",
     "vietnamese": "trả tiền, thanh toán",
     "dutchsentence": "Hoe wilt u betalen, contant of met pinpas?",
-    "englishtranslate": "How would you like to pay, cash or with debit card?"
+    "englishtranslate": "How would you like to pay, cash or with debit card?",
+    "pronunciation": {
+      "ipa": "bə'taː.lə(n)",
+      "phonetic": "buh-TAH-luh(n)"
+    }
   },
   {
     "dutch": "herhalen",
     "english": "to repeat",
     "vietnamese": "lặp lại",
     "dutchsentence": "Kunt u dat herhalen, alstublieft?",
-    "englishtranslate": "Can you repeat that, please?"
+    "englishtranslate": "Can you repeat that, please?",
+    "pronunciation": {
+      "ipa": "ɦɛr'ɦaː.lə(n)",
+      "phonetic": "hair-HAH-luh(n)"
+    }
   },
   {
     "dutch": "inschrijven",
     "english": "to register, to enroll",
     "vietnamese": "đăng ký",
     "dutchsentence": "U moet zich inschrijven bij de balie.",
-    "englishtranslate": "You must register at the counter."
+    "englishtranslate": "You must register at the counter.",
+    "pronunciation": {
+      "ipa": "'ɪn.sxrɛi.və(n)",
+      "phonetic": "IN-skhray-vuh(n)"
+    }
   },
   {
     "dutch": "kijk - kijken",
     "english": "look - to look, to watch",
     "vietnamese": "nhìn - để nhìn, xem",
     "dutchsentence": "Kijk, hier is de korting.",
-    "englishtranslate": "Look, here is the discount."
+    "englishtranslate": "Look, here is the discount.",
+    "pronunciation": {
+      "ipa": "kɛik - 'kɛi.kə(n)",
+      "phonetic": "kike - KAY-kuh(n)"
+    }
   },
   {
     "dutch": "kopen",
     "english": "to buy",
     "vietnamese": "mua",
     "dutchsentence": "Ik wil graag een nieuwe broek kopen.",
-    "englishtranslate": "I would like to buy new trousers."
+    "englishtranslate": "I would like to buy new trousers.",
+    "pronunciation": {
+      "ipa": "'koː.pə(n)",
+      "phonetic": "KOH-puh(n)"
+    }
   },
   {
     "dutch": "krijgt – krijgen",
     "english": "gets – to get, to receive",
     "vietnamese": "nhận được - để nhận",
     "dutchsentence": "U krijgt bij deze aankoop 20% korting.",
-    "englishtranslate": "You get a 20% discount with this purchase."
+    "englishtranslate": "You get a 20% discount with this purchase.",
+    "pronunciation": {
+      "ipa": "krɛixt - 'krɛi.ɣə(n)",
+      "phonetic": "kraykht - KRAY-khuh(n)"
+    }
   },
   {
     "dutch": "loopt - lopen",
     "english": "walks - to walk, to run",
     "vietnamese": "đi bộ - để đi bộ",
     "dutchsentence": "Zij loopt door de straat.",
-    "englishtranslate": "She is walking through the street."
+    "englishtranslate": "She is walking through the street.",
+    "pronunciation": {
+      "ipa": "loːpt - 'loː.pə(n)",
+      "phonetic": "lohpt - LOH-puh(n)"
+    }
   },
   {
     "dutch": "parkeren",
     "english": "to park",
     "vietnamese": "đỗ xe",
     "dutchsentence": "Waar kan ik mijn auto parkeren?",
-    "englishtranslate": "Where can I park my car?"
+    "englishtranslate": "Where can I park my car?",
+    "pronunciation": {
+      "ipa": "pɑr'keː.rə(n)",
+      "phonetic": "par-KAY-ruh(n)"
+    }
   },
   {
     "dutch": "passen",
     "english": "to fit, to try on (clothes)",
     "vietnamese": "thử (quần áo)",
     "dutchsentence": "Ik wil deze schoenen graag even passen.",
-    "englishtranslate": "I would like to try on these shoes for a moment."
+    "englishtranslate": "I would like to try on these shoes for a moment.",
+    "pronunciation": {
+      "ipa": "'pɑ.sə(n)",
+      "phonetic": "PAH-suh(n)"
+    }
   },
   {
     "dutch": "pinnen",
     "english": "to pay with a debit card (pin)",
     "vietnamese": "thanh toán bằng thẻ ghi nợ",
     "dutchsentence": "Mag ik pinnen, alstublieft?",
-    "englishtranslate": "May I pay by debit card, please?"
+    "englishtranslate": "May I pay by debit card, please?",
+    "pronunciation": {
+      "ipa": "'pɪ.nə(n)",
+      "phonetic": "PI-nuh(n)"
+    }
   },
   {
     "dutch": "probeert - proberen",
     "english": "tries - to try",
     "vietnamese": "cố gắng - để cố gắng",
     "dutchsentence": "Hij probeert een nieuwe maat broek.",
-    "englishtranslate": "He is trying a new size of trousers."
+    "englishtranslate": "He is trying a new size of trousers.",
+    "pronunciation": {
+      "ipa": "proʊ'beːrt - proʊ'beː.rə(n)",
+      "phonetic": "proh-BAIRT - proh-BAY-ruh(n)"
+    }
   },
   {
     "dutch": "rijdt - rijden",
     "english": "drives - to drive, to ride",
     "vietnamese": "lái xe - để lái xe",
     "dutchsentence": "De bus rijdt rechtdoor bij het stoplicht.",
-    "englishtranslate": "The bus drives straight ahead at the traffic light."
+    "englishtranslate": "The bus drives straight ahead at the traffic light.",
+    "pronunciation": {
+      "ipa": "rɛit - 'rɛi.də(n)",
+      "phonetic": "rate - RAY-duh(n)"
+    }
   },
   {
     "dutch": "rondkijken",
     "english": "to look around",
     "vietnamese": "nhìn xung quanh",
     "dutchsentence": "Ik wil graag even rondkijken in de winkel.",
-    "englishtranslate": "I would like to look around the shop for a moment."
+    "englishtranslate": "I would like to look around the shop for a moment.",
+    "pronunciation": {
+      "ipa": "'rɔnt.kɛi.kə(n)",
+      "phonetic": "RONT-kay-kuh(n)"
+    }
   },
   {
     "dutch": "staan",
     "english": "to stand, to be located",
     "vietnamese": "đứng, nằm ở",
     "dutchsentence": "De bloemen staan in de kraam op de markt.",
-    "englishtranslate": "The flowers are located in the stall at the market."
+    "englishtranslate": "The flowers are located in the stall at the market.",
+    "pronunciation": {
+      "ipa": "staːn",
+      "phonetic": "stahn"
+    }
   },
   {
     "dutch": "volg - volgen",
     "english": "follow - to follow",
     "vietnamese": "theo dõi - để theo dõi",
     "dutchsentence": "Volg de pijlen naar de uitverkoop.",
-    "englishtranslate": "Follow the arrows to the sale."
+    "englishtranslate": "Follow the arrows to the sale.",
+    "pronunciation": {
+      "ipa": "vɔlx - 'vɔl.ɣə(n)",
+      "phonetic": "volkh - VOL-khuh(n)"
+    }
   },
   {
     "dutch": "ziet - zien",
     "english": "sees - to see",
     "vietnamese": "thấy - để thấy",
     "dutchsentence": "Ziet u de afdeling met diepvriesproducten?",
-    "englishtranslate": "Do you see the department with frozen products?"
+    "englishtranslate": "Do you see the department with frozen products?",
+    "pronunciation": {
+      "ipa": "zit - zin",
+      "phonetic": "zeet - zeen"
+    }
   },
   {
     "dutch": "zitten",
     "english": "to sit, to be located (of things)",
     "vietnamese": "ngồi, nằm ở",
     "dutchsentence": "De sleutels zitten in mijn tasje.",
-    "englishtranslate": "The keys are in my small bag."
+    "englishtranslate": "The keys are in my small bag.",
+    "pronunciation": {
+      "ipa": "'zɪ.tə(n)",
+      "phonetic": "ZI-tuh(n)"
+    }
   },
   {
     "dutch": "zoekt - zoeken",
     "english": "searches - to search, to look for",
     "vietnamese": "tìm kiếm - để tìm kiếm",
     "dutchsentence": "Ik zoek een schoenenzaak in de buurt.",
-    "englishtranslate": "I am looking for a shoe store in the neighborhood."
+    "englishtranslate": "I am looking for a shoe store in the neighborhood.",
+    "pronunciation": {
+      "ipa": "zukt - 'zu.kə(n)",
+      "phonetic": "zookt - ZOO-kuh(n)"
+    }
   },
   {
     "dutch": "achter",
     "english": "behind",
     "vietnamese": "ở phía sau",
     "dutchsentence": "De paskamers zijn achter de kassa.",
-    "englishtranslate": "The fitting rooms are behind the cash register."
+    "englishtranslate": "The fitting rooms are behind the cash register.",
+    "pronunciation": {
+      "ipa": "'ɑx.tər",
+      "phonetic": "AKH-tur"
+    }
   },
   {
     "dutch": "in de buurt",
     "english": "nearby, in the neighborhood",
     "vietnamese": "ở gần, trong khu vực lân cận",
     "dutchsentence": "Is er een café in de buurt?",
-    "englishtranslate": "Is there a café nearby?"
+    "englishtranslate": "Is there a café nearby?",
+    "pronunciation": {
+      "ipa": "ɪn də byːrt",
+      "phonetic": "in duh bewrt"
+    }
   },
   {
     "dutch": "na",
     "english": "after",
     "vietnamese": "sau",
     "dutchsentence": "Na de rotonde gaat u rechtsaf.",
-    "englishtranslate": "After the roundabout you turn right."
+    "englishtranslate": "After the roundabout you turn right.",
+    "pronunciation": {
+      "ipa": "naː",
+      "phonetic": "nah"
+    }
   },
   {
     "dutch": "naar beneden",
     "english": "down, downwards",
     "vietnamese": "xuống, đi xuống",
     "dutchsentence": "We gaan met de lift naar beneden.",
-    "englishtranslate": "We are going down with the elevator."
+    "englishtranslate": "We are going down with the elevator.",
+    "pronunciation": {
+      "ipa": "naːr bə'neː.də(n)",
+      "phonetic": "nahr buh-NAY-duh(n)"
+    }
   },
   {
     "dutch": "naar boven",
     "english": "up, upwards",
     "vietnamese": "lên, đi lên",
     "dutchsentence": "U moet naar boven naar de afdeling dameskleding.",
-    "englishtranslate": "You must go up to the women's clothing department."
+    "englishtranslate": "You must go up to the women's clothing department.",
+    "pronunciation": {
+      "ipa": "naːr 'boː.və(n)",
+      "phonetic": "nahr BOH-vuh(n)"
+    }
   },
   {
     "dutch": "op",
     "english": "on, at",
     "vietnamese": "trên, tại",
     "dutchsentence": "De kassa is op de begane grond.",
-    "englishtranslate": "The cash register is on the ground floor."
+    "englishtranslate": "The cash register is on the ground floor.",
+    "pronunciation": {
+      "ipa": "ɔp",
+      "phonetic": "awp"
+    }
   },
   {
     "dutch": "per stuk",
     "english": "per piece, individually",
     "vietnamese": "mỗi cái, từng món",
     "dutchsentence": "De flessen zijn €2 per stuk.",
-    "englishtranslate": "The bottles are €2 per piece."
+    "englishtranslate": "The bottles are €2 per piece.",
+    "pronunciation": {
+      "ipa": "pɛr stʏk",
+      "phonetic": "pair stook"
+    }
   },
   {
     "dutch": "breed, brede",
     "english": "wide, broad",
     "vietnamese": "rộng",
     "dutchsentence": "Dit is een brede straat.",
-    "englishtranslate": "This is a wide street."
+    "englishtranslate": "This is a wide street.",
+    "pronunciation": {
+      "ipa": "breːt, 'breː.də",
+      "phonetic": "brayt, BRAY-duh"
+    }
   },
   {
     "dutch": "dik, dikke",
     "english": "thick, fat",
     "vietnamese": "dày, mập",
     "dutchsentence": "Deze jas is te dik voor de zomer.",
-    "englishtranslate": "This coat is too thick for the summer."
+    "englishtranslate": "This coat is too thick for the summer.",
+    "pronunciation": {
+      "ipa": "dɪk, 'dɪ.kə",
+      "phonetic": "dik, DI-kuh"
+    }
   },
   {
     "dutch": "donker, donkere",
     "english": "dark",
     "vietnamese": "tối, sẫm màu",
     "dutchsentence": "Ik hou van donkere kleuren.",
-    "englishtranslate": "I like dark colors."
+    "englishtranslate": "I like dark colors.",
+    "pronunciation": {
+      "ipa": "'dɔŋ.kər, 'dɔŋ.kə.rə",
+      "phonetic": "DONG-kur, DONG-kuh-ruh"
+    }
   },
   {
     "dutch": "droog, droge",
     "english": "dry",
     "vietnamese": "khô",
     "dutchsentence": "Het is belangrijk om uw fruit droog te bewaren.",
-    "englishtranslate": "It's important to keep your fruit dry."
+    "englishtranslate": "It's important to keep your fruit dry.",
+    "pronunciation": {
+      "ipa": "droːx, 'droː.ɣə",
+      "phonetic": "drohkh, DROH-khuh"
+    }
   },
   {
     "dutch": "dun, dunne",
     "english": "thin, skinny",
     "vietnamese": "mỏng, gầy",
     "dutchsentence": "Ik heb een dunne trui nodig.",
-    "englishtranslate": "I need a thin sweater."
+    "englishtranslate": "I need a thin sweater.",
+    "pronunciation": {
+      "ipa": "dʏn, 'dʏ.nə",
+      "phonetic": "dun, DU-nuh"
+    }
   },
   {
     "dutch": "duur, dure",
     "english": "expensive",
     "vietnamese": "đắt",
     "dutchsentence": "Dit is een dure aankoop.",
-    "englishtranslate": "This is an expensive purchase."
+    "englishtranslate": "This is an expensive purchase.",
+    "pronunciation": {
+      "ipa": "dyːr, 'dyː.rə",
+      "phonetic": "dewur, DEW-ruh"
+    }
   },
   {
     "dutch": "fijn, fijne",
     "english": "nice, fine",
     "vietnamese": "tuyệt vời, tốt",
     "dutchsentence": "Ik wens u een fijne dag.",
-    "englishtranslate": "I wish you a nice day."
+    "englishtranslate": "I wish you a nice day.",
+    "pronunciation": {
+      "ipa": "fɛin, 'fɛi.nə",
+      "phonetic": "fayn, FAY-nuh"
+    }
   },
   {
     "dutch": "gezond, gezonde",
     "english": "healthy",
     "vietnamese": "khỏe mạnh, có lợi cho sức khỏe",
     "dutchsentence": "Groenten en fruit zijn gezond.",
-    "englishtranslate": "Vegetables and fruit are healthy."
+    "englishtranslate": "Vegetables and fruit are healthy.",
+    "pronunciation": {
+      "ipa": "ɣə'zɔnt, ɣə'zɔn.də",
+      "phonetic": "khuh-ZONT, khuh-ZON-duh"
+    }
   },
   {
     "dutch": "goedkoop, goedkope",
     "english": "cheap, inexpensive",
     "vietnamese": "rẻ",
     "dutchsentence": "Ik zoek iets goedkoop.",
-    "englishtranslate": "I am looking for something cheap."
+    "englishtranslate": "I am looking for something cheap.",
+    "pronunciation": {
+      "ipa": "'ɣut.koːp, 'ɣut.koː.pə",
+      "phonetic": "KHOOT-kohp, KHOOT-koh-puh"
+    }
   },
   {
     "dutch": "goud, gouden",
     "english": "gold, golden",
     "vietnamese": "vàng, bằng vàng",
     "dutchsentence": "Ze draagt een gouden ring.",
-    "englishtranslate": "She wears a gold ring."
+    "englishtranslate": "She wears a gold ring.",
+    "pronunciation": {
+      "ipa": "ɣɑut, 'ɣɑu.də(n)",
+      "phonetic": "khowt, KHOW-duh(n)"
+    }
   },
   {
     "dutch": "gratis",
     "english": "free (of charge)",
     "vietnamese": "miễn phí",
     "dutchsentence": "U krijgt een tasje gratis.",
-    "englishtranslate": "You get a small bag for free."
+    "englishtranslate": "You get a small bag for free.",
+    "pronunciation": {
+      "ipa": "'ɣraː.tɪs",
+      "phonetic": "KRAH-tis"
+    }
   },
   {
     "dutch": "groot, grote",
     "english": "big, large",
     "vietnamese": "to, lớn",
     "dutchsentence": "We hebben een groot warenhuis in de stad.",
-    "englishtranslate": "We have a large department store in the city."
+    "englishtranslate": "We have a large department store in the city.",
+    "pronunciation": {
+      "ipa": "ɣroːt, 'ɣroː.tə",
+      "phonetic": "khroht, KROH-tuh"
+    }
   },
   {
     "dutch": "hard, harde",
     "english": "hard, firm",
     "vietnamese": "cứng, khó khăn",
     "dutchsentence": "Deze kaas is te hard.",
-    "englishtranslate": "This cheese is too hard/firm."
+    "englishtranslate": "This cheese is too hard/firm.",
+    "pronunciation": {
+      "ipa": "hɑrt, 'hɑr.də",
+      "phonetic": "hahrt, HAR-duh"
+    }
   },
   {
     "dutch": "hoog, hoge",
     "english": "high, tall",
     "vietnamese": "cao",
     "dutchsentence": "Dit gebouw is erg hoog.",
-    "englishtranslate": "This building is very high."
+    "englishtranslate": "This building is very high.",
+    "pronunciation": {
+      "ipa": "hoːx, 'hoː.ɣə",
+      "phonetic": "hohkh, HOH-khuh"
+    }
   },
   {
     "dutch": "houdbaar, houdbare",
     "english": "long-life, storable",
     "vietnamese": "có thể bảo quản được, lâu hỏng",
     "dutchsentence": "Controleer de houdbare datum op de verpakking.",
-    "englishtranslate": "Check the shelf life date on the packaging."
+    "englishtranslate": "Check the shelf life date on the packaging.",
+    "pronunciation": {
+      "ipa": "'ɦɑut.baːr, 'ɦɑut.baː.rə",
+      "phonetic": "HOWT-bahr, HOWT-bah-ruh"
+    }
   },
   {
     "dutch": "jong, jonge",
     "english": "young",
     "vietnamese": "trẻ",
     "dutchsentence": "De baliemedewerker is een jonge vrouw.",
-    "englishtranslate": "The counter employee is a young woman."
+    "englishtranslate": "The counter employee is a young woman.",
+    "pronunciation": {
+      "ipa": "jɔŋ, 'jɔ.ŋə",
+      "phonetic": "yong, YONG-uh"
+    }
   },
   {
     "dutch": "kort, korte",
     "english": "short",
     "vietnamese": "ngắn",
     "dutchsentence": "De rok is te kort.",
-    "englishtranslate": "The skirt is too short."
+    "englishtranslate": "The skirt is too short.",
+    "pronunciation": {
+      "ipa": "kɔrt, 'kɔr.tə",
+      "phonetic": "kort, KOR-tuh"
+    }
   },
   {
     "dutch": "koud, koude",
     "english": "cold",
     "vietnamese": "lạnh",
     "dutchsentence": "Wilt u een koude of warme drank?",
-    "englishtranslate": "Would you like a cold or warm drink?"
+    "englishtranslate": "Would you like a cold or warm drink?",
+    "pronunciation": {
+      "ipa": "kɑut, 'kɑu.də",
+      "phonetic": "kowt, KOW-duh"
+    }
   },
   {
     "dutch": "laag, lage",
     "english": "low",
     "vietnamese": "thấp",
     "dutchsentence": "Dit product heeft een lage prijs.",
-    "englishtranslate": "This product has a low price."
+    "englishtranslate": "This product has a low price.",
+    "pronunciation": {
+      "ipa": "laːx, 'laː.ɣə",
+      "phonetic": "lahkh, LAH-khuh"
+    }
   },
   {
     "dutch": "lang, lange",
     "english": "long, tall",
     "vietnamese": "dài, cao",
     "dutchsentence": "De straat is erg lang.",
-    "englishtranslate": "The street is very long."
+    "englishtranslate": "The street is very long.",
+    "pronunciation": {
+      "ipa": "lɑŋ, 'lɑ.ŋə",
+      "phonetic": "lahng, LAH-nguh"
+    }
   },
   {
     "dutch": "leeg, lege",
     "english": "empty",
     "vietnamese": "trống, rỗng",
     "dutchsentence": "De fles is leeg.",
-    "englishtranslate": "The bottle is empty."
+    "englishtranslate": "The bottle is empty.",
+    "pronunciation": {
+      "ipa": "leːx, 'leː.ɣə",
+      "phonetic": "laykh, LAY-khuh"
+    }
   },
   {
     "dutch": "lekker, lekkere",
     "english": "tasty, nice",
     "vietnamese": "ngon, dễ chịu",
     "dutchsentence": "Deze appels zijn heel lekker.",
-    "englishtranslate": "These apples are very tasty."
+    "englishtranslate": "These apples are very tasty.",
+    "pronunciation": {
+      "ipa": "'lɛ.kər, 'lɛ.kə.rə",
+      "phonetic": "LEK-ur, LEK-uh-ruh"
+    }
   },
   {
     "dutch": "lelijk, lelijke",
     "english": "ugly",
     "vietnamese": "xấu xí",
     "dutchsentence": "Ik vind die schoenen lelijk.",
-    "englishtranslate": "I find those shoes ugly."
+    "englishtranslate": "I find those shoes ugly.",
+    "pronunciation": {
+      "ipa": "'leː.lək, 'leː.lə.kə",
+      "phonetic": "LAY-luk, LAY-luh-kuh"
+    }
   },
   {
     "dutch": "licht, lichte",
     "english": "light (weight or color)",
     "vietnamese": "nhẹ, sáng",
     "dutchsentence": "Deze laptop is erg licht.",
-    "englishtranslate": "This laptop is very light."
+    "englishtranslate": "This laptop is very light.",
+    "pronunciation": {
+      "ipa": "lɪxt, 'lɪx.tə",
+      "phonetic": "likht, LIKH-tuh"
+    }
   },
   {
     "dutch": "makkelijk, makkelijke",
     "english": "easy",
     "vietnamese": "dễ dàng",
     "dutchsentence": "Het is een makkelijke weg naar de markt.",
-    "englishtranslate": "It is an easy road to the market."
+    "englishtranslate": "It is an easy road to the market.",
+    "pronunciation": {
+      "ipa": "'mɑ.kə.lək, 'mɑ.kə.lə.kə",
+      "phonetic": "MAH-kuh-luk, MAH-kuh-luh-kuh"
+    }
   },
   {
     "dutch": "ongezond, ongezonde",
     "english": "unhealthy",
     "vietnamese": "không có lợi cho sức khỏe",
     "dutchsentence": "Te veel suiker is ongezond.",
-    "englishtranslate": "Too much sugar is unhealthy."
+    "englishtranslate": "Too much sugar is unhealthy.",
+    "pronunciation": {
+      "ipa": "ˌɔn.ɣə'zɔnt, ˌɔn.ɣə'zɔn.də",
+      "phonetic": "on-khuh-ZONT, on-khuh-ZON-duh"
+    }
   },
   {
     "dutch": "oud, oude",
     "english": "old",
     "vietnamese": "cũ, già",
     "dutchsentence": "Dit is een oude jas.",
-    "englishtranslate": "This is an old coat."
+    "englishtranslate": "This is an old coat.",
+    "pronunciation": {
+      "ipa": "ɑut, 'ɑu.də",
+      "phonetic": "owt, OW-duh"
+    }
   },
   {
     "dutch": "moeilijk, moeilijke",
     "english": "difficult, hard",
     "vietnamese": "khó",
     "dutchsentence": "Dit is een moeilijke opgave.",
-    "englishtranslate": "This is a difficult task."
+    "englishtranslate": "This is a difficult task.",
+    "pronunciation": {
+      "ipa": "'mu.jə.lək, 'mu.jə.lə.kə",
+      "phonetic": "MOO-yuh-luk, MOO-yuh-luh-kuh"
+    }
   },
   {
     "dutch": "mooi, mooie",
     "english": "beautiful, nice",
     "vietnamese": "đẹp",
     "dutchsentence": "Wat een mooie bloemen!",
-    "englishtranslate": "What beautiful flowers!"
+    "englishtranslate": "What beautiful flowers!",
+    "pronunciation": {
+      "ipa": "moːi, 'moːi.jə",
+      "phonetic": "moy, MOY-yuh"
+    }
   },
   {
     "dutch": "nieuw, nieuwe",
     "english": "new",
     "vietnamese": "mới",
     "dutchsentence": "Ik heb een nieuwe laptop gekocht.",
-    "englishtranslate": "I bought a new laptop."
+    "englishtranslate": "I bought a new laptop.",
+    "pronunciation": {
+      "ipa": "niu, 'niu.ʋə",
+      "phonetic": "nyoo, NYOO-wuh"
+    }
   },
   {
     "dutch": "rot, rotte",
     "english": "rotten",
     "vietnamese": "thối, hỏng",
     "dutchsentence": "De appels zijn rot.",
-    "englishtranslate": "The apples are rotten."
+    "englishtranslate": "The apples are rotten.",
+    "pronunciation": {
+      "ipa": "rɔt, 'rɔ.tə",
+      "phonetic": "rot, RO-tuh"
+    }
   },
   {
     "dutch": "sappig, sappige",
     "english": "juicy",
     "vietnamese": "mọng nước",
     "dutchsentence": "Deze peren zijn sappig en zoet.",
-    "englishtranslate": "These pears are juicy and sweet."
+    "englishtranslate": "These pears are juicy and sweet.",
+    "pronunciation": {
+      "ipa": "'sɑ.pəx, 'sɑ.pə.ɣə",
+      "phonetic": "SAH-pukh, SAH-puh-khuh"
+    }
   },
   {
     "dutch": "slecht, slechte",
     "english": "bad",
     "vietnamese": "tệ, xấu",
     "dutchsentence": "Dit is een slechte weg.",
-    "englishtranslate": "This is a bad road."
+    "englishtranslate": "This is a bad road.",
+    "pronunciation": {
+      "ipa": "slɛxt, 'slɛx.tə",
+      "phonetic": "slekht, SLEKH-tuh"
+    }
   },
   {
     "dutch": "smal, smalle",
     "english": "narrow",
     "vietnamese": "hẹp",
     "dutchsentence": "De gang is erg smal.",
-    "englishtranslate": "The aisle is very narrow."
+    "englishtranslate": "The aisle is very narrow.",
+    "pronunciation": {
+      "ipa": "smɑl, 'smɑ.lə",
+      "phonetic": "smahl, SMAH-luh"
+    }
   },
   {
     "dutch": "snel, snelle",
     "english": "fast, quick",
     "vietnamese": "nhanh",
     "dutchsentence": "Dit is een snelle lift.",
-    "englishtranslate": "This is a fast elevator."
+    "englishtranslate": "This is a fast elevator.",
+    "pronunciation": {
+      "ipa": "snɛl, 'snɛ.lə",
+      "phonetic": "snel, SNEH-luh"
+    }
   },
   {
     "dutch": "ver, verre",
     "english": "far",
     "vietnamese": "xa",
     "dutchsentence": "Het warenhuis is ver weg.",
-    "englishtranslate": "The department store is far away."
+    "englishtranslate": "The department store is far away.",
+    "pronunciation": {
+      "ipa": "vɛr, 'vɛ.rə",
+      "phonetic": "vair, VAY-ruh"
+    }
   },
   {
     "dutch": "vers, verse",
     "english": "fresh",
     "vietnamese": "tươi, tươi sống",
     "dutchsentence": "Ik koop graag verse groenten op de markt.",
-    "englishtranslate": "I like to buy fresh vegetables at the market."
+    "englishtranslate": "I like to buy fresh vegetables at the market.",
+    "pronunciation": {
+      "ipa": "vɛrs, 'vɛr.sə",
+      "phonetic": "vairs, VAIR-suh"
+    }
   },
   {
     "dutch": "vies, vieze",
     "english": "dirty, disgusting",
     "vietnamese": "bẩn, ghê tởm",
     "dutchsentence": "De vloer in de winkel is vies.",
-    "englishtranslate": "The floor in the shop is dirty."
+    "englishtranslate": "The floor in the shop is dirty.",
+    "pronunciation": {
+      "ipa": "vis, 'vi.zə",
+      "phonetic": "vees, VEE-zuh"
+    }
   },
   {
     "dutch": "vol, volle",
     "english": "full",
     "vietnamese": "đầy",
     "dutchsentence": "De parkeerplaats is vol.",
-    "englishtranslate": "The parking lot is full."
+    "englishtranslate": "The parking lot is full.",
+    "pronunciation": {
+      "ipa": "vɔl, 'vɔ.lə",
+      "phonetic": "vol, VO-luh"
+    }
   },
   {
     "dutch": "warm, warme",
     "english": "warm",
     "vietnamese": "ấm, nóng",
     "dutchsentence": "Het is warm in de paskamers.",
-    "englishtranslate": "It is warm in the fitting rooms."
+    "englishtranslate": "It is warm in the fitting rooms.",
+    "pronunciation": {
+      "ipa": "ʋɑrm, 'ʋɑr.mə",
+      "phonetic": "wahrm, WAR-muh"
+    }
   },
   {
     "dutch": "zacht, zachte",
     "english": "soft",
     "vietnamese": "mềm",
     "dutchsentence": "Dit is een zachte trui.",
-    "englishtranslate": "This is a soft sweater."
+    "englishtranslate": "This is a soft sweater.",
+    "pronunciation": {
+      "ipa": "zɑxt, 'zɑx.tə",
+      "phonetic": "zakht, ZAKH-tuh"
+    }
   },
   {
     "dutch": "zilver, zilveren",
     "english": "silver, silvery",
     "vietnamese": "bạc, bằng bạc",
     "dutchsentence": "Ze heeft een zilveren ketting.",
-    "englishtranslate": "She has a silver necklace."
+    "englishtranslate": "She has a silver necklace.",
+    "pronunciation": {
+      "ipa": "'zɪl.vər, 'zɪl.və.rə(n)",
+      "phonetic": "ZIL-vur, ZIL-vuh-ruh(n)"
+    }
   },
   {
     "dutch": "zoet, zoete",
     "english": "sweet",
     "vietnamese": "ngọt",
     "dutchsentence": "De taart is erg zoet.",
-    "englishtranslate": "The cake is very sweet."
+    "englishtranslate": "The cake is very sweet.",
+    "pronunciation": {
+      "ipa": "zut, 'zu.tə",
+      "phonetic": "zoot, ZOO-tuh"
+    }
   },
   {
     "dutch": "zuur, zure",
     "english": "sour",
     "vietnamese": "chua",
     "dutchsentence": "Deze citroenen zijn zuur.",
-    "englishtranslate": "These lemons are sour."
+    "englishtranslate": "These lemons are sour.",
+    "pronunciation": {
+      "ipa": "zyːr, 'zyː.rə",
+      "phonetic": "zewr, ZEW-ruh"
+    }
   },
   {
     "dutch": "zwaar, zware",
     "english": "heavy",
     "vietnamese": "nặng",
     "dutchsentence": "Dit pakketje is erg zwaar.",
-    "englishtranslate": "This small package is very heavy."
+    "englishtranslate": "This small package is very heavy.",
+    "pronunciation": {
+      "ipa": "zʋaːr, 'zʋaː.rə",
+      "phonetic": "zwahr, ZWAH-ruh"
+    }
   },
   {
     "dutch": "links",
     "english": "left",
     "vietnamese": "trái, bên trái",
     "dutchsentence": "U moet naar links kijken.",
-    "englishtranslate": "You must look to the left."
+    "englishtranslate": "You must look to the left.",
+    "pronunciation": {
+      "ipa": "lɪŋks",
+      "phonetic": "links"
+    }
   },
   {
     "dutch": "linksaf",
     "english": "left turn",
     "vietnamese": "rẽ trái",
     "dutchsentence": "Bij het stoplicht gaat u linksaf.",
-    "englishtranslate": "At the traffic light, you turn left."
+    "englishtranslate": "At the traffic light, you turn left.",
+    "pronunciation": {
+      "ipa": "'lɪŋks.ɑf",
+      "phonetic": "LINKS-ahf"
+    }
   },
   {
     "dutch": "de linkerhand",
     "english": "the left hand",
     "vietnamese": "tay trái",
     "dutchsentence": "Houd het tasje in uw linkerhand.",
-    "englishtranslate": "Hold the small bag in your left hand."
+    "englishtranslate": "Hold the small bag in your left hand.",
+    "pronunciation": {
+      "ipa": "də 'lɪŋ.kər.ɦɑnt",
+      "phonetic": "duh LING-kur-hahnt"
+    }
   },
   {
     "dutch": "de linkerkant",
     "english": "the left side",
     "vietnamese": "bên trái",
     "dutchsentence": "De kledingwinkel is aan de linkerkant.",
-    "englishtranslate": "The clothing store is on the left side."
+    "englishtranslate": "The clothing store is on the left side.",
+    "pronunciation": {
+      "ipa": "də 'lɪŋ.kər.kɑnt",
+      "phonetic": "duh LING-kur-kahnt"
+    }
   },
   {
     "dutch": "de rechterhand",
     "english": "the right hand",
     "vietnamese": "tay phải",
     "dutchsentence": "U betaalt met uw rechterhand.",
-    "englishtranslate": "You pay with your right hand."
+    "englishtranslate": "You pay with your right hand.",
+    "pronunciation": {
+      "ipa": "də 'rɛx.tər.ɦɑnt",
+      "phonetic": "duh REKH-tur-hahnt"
+    }
   },
   {
     "dutch": "de rechterkant",
     "english": "the right side",
     "vietnamese": "bên phải",
     "dutchsentence": "De lift is aan de rechterkant.",
-    "englishtranslate": "The elevator is on the right side."
+    "englishtranslate": "The elevator is on the right side.",
+    "pronunciation": {
+      "ipa": "də 'rɛx.tər.kɑnt",
+      "phonetic": "duh REKH-tur-kahnt"
+    }
   },
   {
     "dutch": "rechts",
     "english": "right",
     "vietnamese": "phải, bên phải",
     "dutchsentence": "De kassa is rechts van de balie.",
-    "englishtranslate": "The cash register is to the right of the counter."
+    "englishtranslate": "The cash register is to the right of the counter.",
+    "pronunciation": {
+      "ipa": "rɛxts",
+      "phonetic": "rekhts"
+    }
   },
   {
     "dutch": "rechtsaf",
     "english": "right turn",
     "vietnamese": "rẽ phải",
     "dutchsentence": "Na de rotonde gaat u rechtsaf.",
-    "englishtranslate": "After the roundabout, you turn right."
+    "englishtranslate": "After the roundabout, you turn right.",
+    "pronunciation": {
+      "ipa": "'rɛxts.ɑf",
+      "phonetic": "REKHTS-ahf"
+    }
   },
   {
     "dutch": "rechtdoor",
     "english": "straight ahead",
     "vietnamese": "đi thẳng",
     "dutchsentence": "U moet rechtdoor lopen.",
-    "englishtranslate": "You must walk straight ahead."
+    "englishtranslate": "You must walk straight ahead.",
+    "pronunciation": {
+      "ipa": "rɛxt'doːr",
+      "phonetic": "rekht-DOHR"
+    }
   },
   {
     "dutch": "hoor",
     "english": "hear / expression of surprise/confirmation (listen)",
     "vietnamese": "nghe / biểu thị sự ngạc nhiên/xác nhận",
     "dutchsentence": "Ja hoor, dat is geen probleem.",
-    "englishtranslate": "Yes indeed, that's no problem."
+    "englishtranslate": "Yes indeed, that's no problem.",
+    "pronunciation": {
+      "ipa": "ɦoːr",
+      "phonetic": "hohr"
+    }
   },
   {
     "dutch": "jammer",
     "english": "a shame, too bad",
     "vietnamese": "tiếc, đáng tiếc",
     "dutchsentence": "Wat jammer dat het product niet op voorraad is.",
-    "englishtranslate": "What a shame that the product is not in stock."
+    "englishtranslate": "What a shame that the product is not in stock.",
+    "pronunciation": {
+      "ipa": "'jɑ.mər",
+      "phonetic": "YAH-mur"
+    }
   },
   {
     "dutch": "klopt",
     "english": "correct, that's right",
     "vietnamese": "đúng, chính xác",
     "dutchsentence": "Het klopt, dat is de prijs.",
-    "englishtranslate": "That's right, that's the price."
+    "englishtranslate": "That's right, that's the price.",
+    "pronunciation": {
+      "ipa": "klɔpt",
+      "phonetic": "klopt"
+    }
   },
   {
     "dutch": "natuurlijk",
     "english": "naturally, of course",
     "vietnamese": "tất nhiên, dĩ nhiên",
     "dutchsentence": "Natuurlijk help ik u graag!",
-    "englishtranslate": "Of course I'd love to help you!"
+    "englishtranslate": "Of course I'd love to help you!",
+    "pronunciation": {
+      "ipa": "naː'tyːr.lək",
+      "phonetic": "nah-TEWR-luk"
+    }
   },
   {
     "dutch": "plezier",
     "english": "pleasure, fun",
     "vietnamese": "niềm vui",
     "dutchsentence": "Veel plezier met uw aankoop!",
-    "englishtranslate": "Have fun with your purchase!"
+    "englishtranslate": "Have fun with your purchase!",
+    "pronunciation": {
+      "ipa": "plə'ziːr",
+      "phonetic": "pluh-ZEER"
+    }
   },
   {
     "dutch": "spijt",
     "english": "regret",
     "vietnamese": "hối tiếc, ân hận",
     "dutchsentence": "Het spijt me, we hebben dit niet meer.",
-    "englishtranslate": "I'm sorry, we don't have this anymore."
+    "englishtranslate": "I'm sorry, we don't have this anymore.",
+    "pronunciation": {
+      "ipa": "spɛit",
+      "phonetic": "spayt"
+    }
   },
   {
     "dutch": "ziens",
     "english": "seeing (in 'tot ziens' - goodbye)",
     "vietnamese": "gặp lại",
     "dutchsentence": "Tot ziens bij de slijterij!",
-    "englishtranslate": "See you at the liquor store!"
+    "englishtranslate": "See you at the liquor store!",
+    "pronunciation": {
+      "ipa": "zins",
+      "phonetic": "zeens"
+    }
   },
   {
     "dutch": "alstublieft",
     "english": "please / here you are (formal)",
     "vietnamese": "xin vui lòng / của quý vị đây",
     "dutchsentence": "Hier is uw korting, alstublieft.",
-    "englishtranslate": "Here is your discount, here you are."
+    "englishtranslate": "Here is your discount, here you are.",
+    "pronunciation": {
+      "ipa": "ˌɑl.styˈblift",
+      "phonetic": "ahl-stew-BLEEFT"
+    }
   },
   {
     "dutch": "andere",
     "english": "other, different",
     "vietnamese": "khác",
     "dutchsentence": "Heeft u nog andere maten?",
-    "englishtranslate": "Do you have any other sizes?"
+    "englishtranslate": "Do you have any other sizes?",
+    "pronunciation": {
+      "ipa": "'ɑn.də.rə",
+      "phonetic": "AHN-duh-ruh"
+    }
   },
   {
     "dutch": "begane grond",
     "english": "ground floor",
     "vietnamese": "tầng trệt",
     "dutchsentence": "De schoenenzaak is op de begane grond.",
-    "englishtranslate": "The shoe store is on the ground floor."
+    "englishtranslate": "The shoe store is on the ground floor.",
+    "pronunciation": {
+      "ipa": "bə'ɣaː.nə ɣrɔnt",
+      "phonetic": "buh-KHAH-nuh khrohnt"
+    }
   },
   {
     "dutch": "beurt",
     "english": "turn (in a sequence)",
     "vietnamese": "lượt, phiên",
     "dutchsentence": "Het is uw beurt om af te rekenen.",
-    "englishtranslate": "It is your turn to pay."
+    "englishtranslate": "It is your turn to pay.",
+    "pronunciation": {
+      "ipa": "bøːrt",
+      "phonetic": "buhrt"
+    }
   },
   {
     "dutch": "binnen",
     "english": "inside, within",
     "vietnamese": "bên trong, trong vòng",
     "dutchsentence": "U kunt binnen pinnen.",
-    "englishtranslate": "You can pay by debit card inside."
+    "englishtranslate": "You can pay by debit card inside.",
+    "pronunciation": {
+      "ipa": "'bɪ.nə(n)",
+      "phonetic": "BI-nuh(n)"
+    }
   },
   {
     "dutch": "buiten",
     "english": "outside",
     "vietnamese": "bên ngoài",
     "dutchsentence": "De kramen staan buiten op de markt.",
-    "englishtranslate": "The stalls are outside at the market."
+    "englishtranslate": "The stalls are outside at the market.",
+    "pronunciation": {
+      "ipa": "'bœy.tə(n)",
+      "phonetic": "BOY-tuh(n)"
+    }
   },
   {
     "dutch": "contant",
     "english": "cash",
     "vietnamese": "tiền mặt",
     "dutchsentence": "Wilt u contant betalen?",
-    "englishtranslate": "Would you like to pay cash?"
+    "englishtranslate": "Would you like to pay cash?",
+    "pronunciation": {
+      "ipa": "kɔn'tɑnt",
+      "phonetic": "kon-TAHNT"
+    }
   },
   {
     "dutch": "daar",
     "english": "there",
     "vietnamese": "ở đó, chỗ đó",
     "dutchsentence": "De lift is daar, aan de rechterkant.",
-    "englishtranslate": "The elevator is there, on the right side."
+    "englishtranslate": "The elevator is there, on the right side.",
+    "pronunciation": {
+      "ipa": "daːr",
+      "phonetic": "dahr"
+    }
   },
   {
     "dutch": "elkaar",
     "english": "each other",
     "vietnamese": "nhau",
     "dutchsentence": "Ze zien elkaar op de markt.",
-    "englishtranslate": "They see each other at the market."
+    "englishtranslate": "They see each other at the market.",
+    "pronunciation": {
+      "ipa": "ɛl'kaːr",
+      "phonetic": "el-KAHR"
+    }
   },
   {
     "dutch": "gang",
     "english": "aisle, corridor, way",
     "vietnamese": "lối đi, hành lang",
     "dutchsentence": "Volg de gang naar de paskamers.",
-    "englishtranslate": "Follow the corridor to the fitting rooms."
+    "englishtranslate": "Follow the corridor to the fitting rooms.",
+    "pronunciation": {
+      "ipa": "xɑŋ",
+      "phonetic": "khahng"
+    }
   },
   {
     "dutch": "gepast",
     "english": "exact (money)",
     "vietnamese": "vừa đủ (tiền)",
     "dutchsentence": "Heeft u gepast geld, alstublieft?",
-    "englishtranslate": "Do you have the exact change, please?"
+    "englishtranslate": "Do you have the exact change, please?",
+    "pronunciation": {
+      "ipa": "ɣə'pɑst",
+      "phonetic": "khuh-PAHST"
+    }
   },
   {
     "dutch": "graag",
     "english": "gladly, with pleasure",
     "vietnamese": "rất muốn, sẵn lòng",
     "dutchsentence": "Ik wil graag een kilo aardappels.",
-    "englishtranslate": "I would gladly like one kilo of potatoes."
+    "englishtranslate": "I would gladly like one kilo of potatoes.",
+    "pronunciation": {
+      "ipa": "ɣraːx",
+      "phonetic": "khrahkh"
+    }
   },
   {
     "dutch": "graag",
     "english": "please (as a response)",
     "vietnamese": "xin mời, vâng",
     "dutchsentence": "Wilt u dit tasje? Graag.",
-    "englishtranslate": "Would you like this small bag? Yes, please."
+    "englishtranslate": "Would you like this small bag? Yes, please.",
+    "pronunciation": {
+      "ipa": "ɣraːx",
+      "phonetic": "khrahkh"
+    }
   },
   {
     "dutch": "helaas",
     "english": "unfortunately",
     "vietnamese": "thật không may",
     "dutchsentence": "Helaas is het warenhuis gesloten.",
-    "englishtranslate": "Unfortunately, the department store is closed."
+    "englishtranslate": "Unfortunately, the department store is closed.",
+    "pronunciation": {
+      "ipa": "ɦeɪ'laːs",
+      "phonetic": "hay-LAHS"
+    }
   },
   {
     "dutch": "helemaal",
     "english": "completely, entirely",
     "vietnamese": "hoàn toàn",
     "dutchsentence": "U heeft helemaal gelijk.",
-    "englishtranslate": "You are completely right."
+    "englishtranslate": "You are completely right.",
+    "pronunciation": {
+      "ipa": "ˌɦeː.lə'maːl",
+      "phonetic": "hay-luh-MAHL"
+    }
   },
   {
     "dutch": "hetzelfde",
     "english": "the same",
     "vietnamese": "cùng một thứ, giống nhau",
     "dutchsentence": "Ik wil hetzelfde, alstublieft.",
-    "englishtranslate": "I would like the same, please."
+    "englishtranslate": "I would like the same, please.",
+    "pronunciation": {
+      "ipa": "ət'sɛlfdə",
+      "phonetic": "uht-SELF-duh"
+    }
   },
   {
     "dutch": "hier",
     "english": "here",
     "vietnamese": "ở đây",
     "dutchsentence": "U kunt hier afrekenen.",
-    "englishtranslate": "You can check out here."
+    "englishtranslate": "You can check out here.",
+    "pronunciation": {
+      "ipa": "ɦiːr",
+      "phonetic": "heer"
+    }
   },
   {
     "dutch": "iets anders",
     "english": "something else",
     "vietnamese": "cái gì khác",
     "dutchsentence": "Wilt u nog iets anders?",
-    "englishtranslate": "Would you like anything else?"
+    "englishtranslate": "Would you like anything else?",
+    "pronunciation": {
+      "ipa": "its 'ɑn.dərs",
+      "phonetic": "eets AHN-durs"
+    }
   },
   {
     "dutch": "kleiner",
     "english": "smaller",
     "vietnamese": "nhỏ hơn",
     "dutchsentence": "Ik zoek een maat kleiner.",
-    "englishtranslate": "I am looking for a smaller size."
+    "englishtranslate": "I am looking for a smaller size.",
+    "pronunciation": {
+      "ipa": "'klɛi.nər",
+      "phonetic": "KLAY-nur"
+    }
   },
   {
     "dutch": "misschien",
     "english": "maybe, perhaps",
     "vietnamese": "có lẽ, có thể",
     "dutchsentence": "Misschien ga ik morgen naar de bouwmarkt.",
-    "englishtranslate": "Maybe I will go to the hardware store tomorrow."
+    "englishtranslate": "Maybe I will go to the hardware store tomorrow.",
+    "pronunciation": {
+      "ipa": "mɪ'sxin",
+      "phonetic": "mi-SKHEEN"
+    }
   },
   {
     "dutch": "nog",
     "english": "still, yet, more",
     "vietnamese": "vẫn, thêm nữa",
     "dutchsentence": "Wilt u nog iets drinken?",
-    "englishtranslate": "Would you like something more to drink?"
+    "englishtranslate": "Would you like something more to drink?",
+    "pronunciation": {
+      "ipa": "nɔx",
+      "phonetic": "nokh"
+    }
   },
   {
     "dutch": "speciaals",
     "english": "something special",
     "vietnamese": "cái gì đặc biệt",
     "dutchsentence": "Zoekt u iets speciaals?",
-    "englishtranslate": "Are you looking for something special?"
+    "englishtranslate": "Are you looking for something special?",
+    "pronunciation": {
+      "ipa": "speɪˈʃaːls",
+      "phonetic": "spay-SHAHLS"
+    }
   },
   {
     "dutch": "sorry",
     "english": "sorry",
     "vietnamese": "xin lỗi",
     "dutchsentence": "Sorry, ik heb geen contant geld.",
-    "englishtranslate": "Sorry, I don't have any cash."
+    "englishtranslate": "Sorry, I don't have any cash.",
+    "pronunciation": {
+      "ipa": "'sɔ.ri",
+      "phonetic": "SO-ree"
+    }
   }
 ]
