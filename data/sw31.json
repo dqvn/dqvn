@@ -3,6 +3,7 @@
         "dutch": "de advocaat (advocaten)",
         "english": "the lawyer (lawyers)",
         "vietnamese": "luật sư (các luật sư)",
+        "pronunciation": { "ipa": "də ˌɑtfoːˈkaːt", "phonetic": "du at-fo-kaht" },
         "dutchsentence": "De advocaat verdedigde zijn cliënt in de rechtbank.",
         "englishtranslate": "The lawyer defended his client in court."
     },
@@ -10,6 +11,7 @@
         "dutch": "het succes (-sen)",
         "english": "the success (successes)",
         "vietnamese": "thành công (những thành công)",
+        "pronunciation": { "ipa": "ət sʏkˈsɛs", "phonetic": "ut suk-ses" },
         "dutchsentence": "De nieuwe onderneming was een groot succes.",
         "englishtranslate": "The new enterprise was a great success."
     },
@@ -17,6 +19,7 @@
         "dutch": "behalve",
         "english": "except",
         "vietnamese": "ngoại trừ",
+        "pronunciation": { "ipa": "bəˈɦɑlvə", "phonetic": "bu-hal-vuh" },
         "dutchsentence": "Iedereen was aanwezig, behalve Jan.",
         "englishtranslate": "Everyone was present, except Jan."
     },
@@ -24,6 +27,7 @@
         "dutch": "prima",
         "english": "fine",
         "vietnamese": "tốt",
+        "pronunciation": { "ipa": "ˈprimaː", "phonetic": "pree-mah" },
         "dutchsentence": "Het eten was prima, dank je wel.",
         "englishtranslate": "The food was fine, thank you."
     },
@@ -31,6 +35,7 @@
         "dutch": "hoezo",
         "english": "how come",
         "vietnamese": "tại sao",
+        "pronunciation": { "ipa": "ɦuˈzoː", "phonetic": "hoo-zoh" },
         "dutchsentence": "Je gaat niet mee? Hoezo niet?",
         "englishtranslate": "You're not coming along? How come (why not)?"
     },
@@ -38,6 +43,7 @@
         "dutch": "vast",
         "english": "fixed",
         "vietnamese": "cố định",
+        "pronunciation": { "ipa": "vɑst", "phonetic": "vast" },
         "dutchsentence": "Zorg ervoor dat de plank goed vast zit.",
         "englishtranslate": "Make sure the shelf is fixed properly."
     },
@@ -45,6 +51,7 @@
         "dutch": "los",
         "english": "loose",
         "vietnamese": "lỏng",
+        "pronunciation": { "ipa": "lɔs", "phonetic": "los" },
         "dutchsentence": "De knop van mijn jas zit los.",
         "englishtranslate": "The button on my coat is loose."
     },
@@ -52,6 +59,7 @@
         "dutch": "aardig",
         "english": "nice",
         "vietnamese": "tốt bụng",
+        "pronunciation": { "ipa": "ˈaːrdəx", "phonetic": "ahr-dukh" },
         "dutchsentence": "Dat is een aardige opmerking van jou.",
         "englishtranslate": "That is a nice (kind) remark from you."
     },
@@ -59,6 +67,7 @@
         "dutch": "vriendelijk",
         "english": "friendly",
         "vietnamese": "thân thiện",
+        "pronunciation": { "ipa": "ˈvrimdələk", "phonetic": "vreen-du-luk" },
         "dutchsentence": "Ze is altijd erg vriendelijk tegen iedereen.",
         "englishtranslate": "She is always very friendly to everyone."
     },
@@ -66,6 +75,7 @@
         "dutch": "jawel",
         "english": "yes",
         "vietnamese": "vâng",
+        "pronunciation": { "ipa": "jaːˈʋɛl", "phonetic": "yah-vel" },
         "dutchsentence": "Je hebt het huiswerk niet gedaan! Jawel, dat heb ik wel!",
         "englishtranslate": "You didn't do the homework! Yes (I did), I did!"
     },
@@ -73,6 +83,7 @@
         "dutch": "tot ziens",
         "english": "goodbye",
         "vietnamese": "tạm biệt",
+        "pronunciation": { "ipa": "tɔt ziːns", "phonetic": "tot zeens" },
         "dutchsentence": "Ik ga nu, tot ziens morgen!",
         "englishtranslate": "I am leaving now, goodbye (until we see each other again) tomorrow!"
     },
@@ -80,6 +91,7 @@
         "dutch": "correct",
         "english": "correct",
         "vietnamese": "đúng",
+        "pronunciation": { "ipa": "kɔˈrɛkt", "phonetic": "ko-rekt" },
         "dutchsentence": "Het antwoord is correct; goed gedaan!",
         "englishtranslate": "The answer is correct; well done!"
     },
@@ -87,6 +99,7 @@
         "dutch": "kennen, gekend",
         "english": "to know, known",
         "vietnamese": "biết, đã biết",
+        "pronunciation": { "ipa": "ˈkɛnə(n)", "phonetic": "ken-un" },
         "dutchsentence": "Ik ken die man van de universiteit.",
         "englishtranslate": "I know that man from the university."
     },
@@ -94,6 +107,7 @@
         "dutch": "kloppen, geklopt",
         "english": "to knock, knocked",
         "vietnamese": "gõ, đã gõ",
+        "pronunciation": { "ipa": "ˈklɔpə(n)", "phonetic": "klop-un" },
         "dutchsentence": "Er klopt iemand op de deur.",
         "englishtranslate": "Someone is knocking on the door."
     }

@@ -3,6 +3,7 @@
         "dutch": "het verhaal (verhalen)",
         "english": "the story (stories)",
         "vietnamese": "câu chuyện (các câu chuyện)",
+        "pronunciation": { "ipa": "ət vərˈɦaːl", "phonetic": "ut vur-hahl" },
         "dutchsentence": "Het verhaal in dit boek is erg ontroerend.",
         "englishtranslate": "The story in this book is very moving."
     },
@@ -10,6 +11,7 @@
         "dutch": "de drugs",
         "english": "the drugs",
         "vietnamese": "ma túy",
+        "pronunciation": { "ipa": "də drʏks", "phonetic": "du druks" },
         "dutchsentence": "De politie heeft een grote hoeveelheid drugs in beslag genomen.",
         "englishtranslate": "The police confiscated a large quantity of drugs."
     },
@@ -17,6 +19,7 @@
         "dutch": "de oorlog (-en)",
         "english": "the war (-s)",
         "vietnamese": "chiến tranh (-s)",
+        "pronunciation": { "ipa": "də ˈoːrlɔx", "phonetic": "du ohr-lokh" },
         "dutchsentence": "Niemand wil een nieuwe oorlog.",
         "englishtranslate": "Nobody wants a new war."
     },
@@ -24,6 +27,7 @@
         "dutch": "de groep (-en)",
         "english": "the group (-s)",
         "vietnamese": "nhóm (-s)",
+        "pronunciation": { "ipa": "də xrup", "phonetic": "du khroop" },
         "dutchsentence": "De studenten vormden een groep om samen te studeren.",
         "englishtranslate": "The students formed a group to study together."
     },
@@ -31,6 +35,7 @@
         "dutch": "de president (-en)",
         "english": "the president (-s)",
         "vietnamese": "tổng thống (-s)",
+        "pronunciation": { "ipa": "də preːziˈdɛnt", "phonetic": "du pray-zee-dent" },
         "dutchsentence": "De president hield een toespraak over de economie.",
         "englishtranslate": "The president held a speech about the economy."
     },
@@ -38,6 +43,7 @@
         "dutch": "de hulp",
         "english": "the help",
         "vietnamese": "sự giúp đỡ",
+        "pronunciation": { "ipa": "də ɦʏlp", "phonetic": "du hulp" },
         "dutchsentence": "Vraag om hulp als je het niet begrijpt.",
         "englishtranslate": "Ask for help if you don't understand it."
     },
@@ -45,6 +51,7 @@
         "dutch": "de inhoud",
         "english": "the content",
         "vietnamese": "nội dung",
+        "pronunciation": { "ipa": "də ˈɪnɦʌut", "phonetic": "du in-hout" },
         "dutchsentence": "De inhoud van de presentatie was duidelijk.",
         "englishtranslate": "The content of the presentation was clear."
     },
@@ -52,6 +59,7 @@
         "dutch": "de generaal (-ralen)",
         "english": "the general (-s)",
         "vietnamese": "tướng (-s)",
+        "pronunciation": { "ipa": "də xeːnəˈraːl", "phonetic": "du khay-nu-rahl" },
         "dutchsentence": "De generaal leidde de troepen naar de overwinning.",
         "englishtranslate": "The general led the troops to victory."
     },
@@ -59,6 +67,7 @@
         "dutch": "het leger (-s)",
         "english": "the army (-s)",
         "vietnamese": "quân đội (-s)",
+        "pronunciation": { "ipa": "ət ˈleːxər", "phonetic": "ut lay-khur" },
         "dutchsentence": "Zij diende drie jaar in het leger.",
         "englishtranslate": "She served three years in the army."
     },
@@ -66,6 +75,7 @@
         "dutch": "de boot (boten)",
         "english": "the boat (-s)",
         "vietnamese": "thuyền (-s)",
+        "pronunciation": { "ipa": "də boːt", "phonetic": "du boht" },
         "dutchsentence": "We gingen met een kleine boot het meer op.",
         "englishtranslate": "We went out on the lake with a small boat."
     },
@@ -73,6 +83,7 @@
         "dutch": "de kapitein (-s)",
         "english": "the captain (-s)",
         "vietnamese": "thuyền trưởng (-s)",
+        "pronunciation": { "ipa": "də kɑpiˈtɛin", "phonetic": "du kah-pee-tine" },
         "dutchsentence": "De kapitein stond aan het roer van het schip.",
         "englishtranslate": "The captain was at the helm of the ship."
     },
@@ -80,6 +91,7 @@
         "dutch": "het schip (schepen)",
         "english": "the ship (-s)",
         "vietnamese": "tàu (-s)",
+        "pronunciation": { "ipa": "ət sxɪp", "phonetic": "ut skhip" },
         "dutchsentence": "Het schip vaart richting de haven.",
         "englishtranslate": "The ship is sailing towards the harbor."
     },
@@ -87,6 +99,7 @@
         "dutch": "het conflict (-en)",
         "english": "the conflict (-s)",
         "vietnamese": "xung đột (-s)",
+        "pronunciation": { "ipa": "ət kɔnˈflɪkt", "phonetic": "ut kon-flikt" },
         "dutchsentence": "Er is een conflict ontstaan tussen de buren.",
         "englishtranslate": "A conflict arose between the neighbors."
     },
@@ -94,6 +107,7 @@
         "dutch": "de wereld (-en)",
         "english": "the world (-s)",
         "vietnamese": "thế giới (-s)",
+        "pronunciation": { "ipa": "də ˈʋeːrəlt", "phonetic": "du vay-rult" },
         "dutchsentence": "De wereld is een kleine plek.",
         "englishtranslate": "The world is a small place."
     },
@@ -101,6 +115,7 @@
         "dutch": "de minister (-s)",
         "english": "the minister (-s)",
         "vietnamese": "bộ trưởng (-s)",
+        "pronunciation": { "ipa": "də miˈnɪstər", "phonetic": "du mee-nis-tur" },
         "dutchsentence": "De minister van Financiën presenteerde de begroting.",
         "englishtranslate": "The Minister of Finance presented the budget."
     },
@@ -108,6 +123,7 @@
         "dutch": "de koning (-en)",
         "english": "the king (-s)",
         "vietnamese": "vua (-s)",
+        "pronunciation": { "ipa": "də ˈkoːnɪŋ", "phonetic": "du koh-ning" },
         "dutchsentence": "De koning bezocht de stad vorig jaar.",
         "englishtranslate": "The king visited the city last year."
     },
@@ -115,6 +131,7 @@
         "dutch": "de koningin (-nen)",
         "english": "the queen (-s)",
         "vietnamese": "nữ hoàng (-s)",
+        "pronunciation": { "ipa": "də ˈkoːnɪŋɪn", "phonetic": "du koh-ning-in" },
         "dutchsentence": "De koningin droeg een mooie kroon.",
         "englishtranslate": "The queen wore a beautiful crown."
     },
@@ -122,6 +139,7 @@
         "dutch": "vechten",
         "english": "to fight",
         "vietnamese": "đánh nhau",
+        "pronunciation": { "ipa": "ˈvɛxtə(n)", "phonetic": "vekh-tun" },
         "dutchsentence": "Ze besloten niet meer te vechten over de regels.",
         "englishtranslate": "They decided not to fight over the rules anymore."
     },
@@ -129,6 +147,7 @@
         "dutch": "gebeuren",
         "english": "to happen",
         "vietnamese": "xảy ra",
+        "pronunciation": { "ipa": "xəˈbøːrə(n)", "phonetic": "khu-bur-un" },
         "dutchsentence": "Wat gaat er nu gebeuren?",
         "englishtranslate": "What is going to happen now?"
     }

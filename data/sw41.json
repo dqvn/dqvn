@@ -3,6 +3,7 @@
         "dutch": "de temperatuur (temperaturen)",
         "english": "the temperature (temperatures)",
         "vietnamese": "nhiệt độ (những nhiệt độ)",
+        "pronunciation": { "ipa": "də tɛmpəraːˈtyːr", "phonetic": "du tem-puh-rah-tuur" },
         "dutchsentence": "De temperatuur is vandaag boven de 25 graden.",
         "englishtranslate": "The temperature is above 25 degrees today."
     },
@@ -10,6 +11,7 @@
         "dutch": "de sleutel (-s)",
         "english": "the key (keys)",
         "vietnamese": "chìa khóa (những chìa khóa)",
+        "pronunciation": { "ipa": "də ˈsløːtəl", "phonetic": "du slu-tul" },
         "dutchsentence": "Waar heb ik mijn huissleutel gelaten?",
         "englishtranslate": "Where did I leave my house key?"
     },
@@ -17,6 +19,7 @@
         "dutch": "de kleren",
         "english": "the clothes",
         "vietnamese": "quần áo",
+        "pronunciation": { "ipa": "də ˈkleːrə(n)", "phonetic": "du klay-run" },
         "dutchsentence": "Ik moet schone kleren uit de kast halen.",
         "englishtranslate": "I need to get clean clothes from the closet."
     },
@@ -24,6 +27,7 @@
         "dutch": "koud",
         "english": "cold",
         "vietnamese": "lạnh",
+        "pronunciation": { "ipa": "kʌut", "phonetic": "kowt" },
         "dutchsentence": "Het is koud buiten, dus doe een jas aan.",
         "englishtranslate": "It is cold outside, so put on a coat."
     },
@@ -31,6 +35,7 @@
         "dutch": "warm",
         "english": "warm",
         "vietnamese": "ấm",
+        "pronunciation": { "ipa": "ʋɑrm", "phonetic": "varm" },
         "dutchsentence": "De soep is lekker warm en klaar om te eten.",
         "englishtranslate": "The soup is nice and warm and ready to eat."
     },
@@ -38,6 +43,7 @@
         "dutch": "hoog",
         "english": "high",
         "vietnamese": "cao",
+        "pronunciation": { "ipa": "ɦoːx", "phonetic": "hoh-kh" },
         "dutchsentence": "Het gebouw is erg hoog, met twintig verdiepingen.",
         "englishtranslate": "The building is very high, with twenty floors."
     },
@@ -45,6 +51,7 @@
         "dutch": "laag",
         "english": "low",
         "vietnamese": "thấp",
+        "pronunciation": { "ipa": "laːx", "phonetic": "lah-kh" },
         "dutchsentence": "De muur is te laag om veilig te zijn.",
         "englishtranslate": "The wall is too low to be safe."
     },
@@ -52,6 +59,7 @@
         "dutch": "omhoog",
         "english": "up",
         "vietnamese": "lên",
+        "pronunciation": { "ipa": "ɔmˈɦoːx", "phonetic": "om-hoh-kh" },
         "dutchsentence": "Kijk eens omhoog naar de wolken.",
         "englishtranslate": "Look up at the clouds."
     },
@@ -59,6 +67,7 @@
         "dutch": "omlaag",
         "english": "down",
         "vietnamese": "xuống",
+        "pronunciation": { "ipa": "ɔmˈlaːx", "phonetic": "om-lah-kh" },
         "dutchsentence": "Zet de temperatuur een beetje omlaag.",
         "englishtranslate": "Turn the temperature down a bit."
     },
@@ -66,6 +75,7 @@
         "dutch": "slechts",
         "english": "only",
         "vietnamese": "chỉ",
+        "pronunciation": { "ipa": "slɛxts", "phonetic": "slekhts" },
         "dutchsentence": "Er waren slechts twee mensen op het feest.",
         "englishtranslate": "There were only two people at the party."
     },
@@ -73,6 +83,7 @@
         "dutch": "allebei",
         "english": "both",
         "vietnamese": "cả hai",
+        "pronunciation": { "ipa": "ˌɑləˈbɛi", "phonetic": "al-u-by" },
         "dutchsentence": "Ze hebben allebei besloten om thuis te blijven.",
         "englishtranslate": "They both decided to stay home."
     },
@@ -80,6 +91,7 @@
         "dutch": "beide(n)",
         "english": "both",
         "vietnamese": "cả hai",
+        "pronunciation": { "ipa": "ˈbɛidə(n)", "phonetic": "by-dun" },
         "dutchsentence": "Ik heb beide boeken gelezen.",
         "englishtranslate": "I have read both books."
     },
@@ -87,6 +99,7 @@
         "dutch": "allen",
         "english": "all",
         "vietnamese": "tất cả",
+        "pronunciation": { "ipa": "ˈɑlə(n)", "phonetic": "al-un" },
         "dutchsentence": "Ze groette hen allen persoonlijk.",
         "englishtranslate": "She greeted all of them personally."
     },
@@ -94,6 +107,7 @@
         "dutch": "enkel",
         "english": "single",
         "vietnamese": "đơn",
+        "pronunciation": { "ipa": "ˈɛŋkəl", "phonetic": "eng-kul" },
         "dutchsentence": "Ik had maar een enkel ticket voor het concert.",
         "englishtranslate": "I only had a single ticket for the concert."
     },
@@ -101,6 +115,7 @@
         "dutch": "alle",
         "english": "all",
         "vietnamese": "tất cả",
+        "pronunciation": { "ipa": "ˈɑlə", "phonetic": "al-u" },
         "dutchsentence": "Alle studenten moeten het examen afleggen.",
         "englishtranslate": "All students must take the exam."
     },
@@ -108,6 +123,7 @@
         "dutch": "weten",
         "english": "to know",
         "vietnamese": "biết",
+        "pronunciation": { "ipa": "ˈʋeːtə(n)", "phonetic": "vay-tun" },
         "dutchsentence": "Wist je dat hij al getrouwd is?",
         "englishtranslate": "Did you know that he is already married?"
     },
@@ -115,6 +131,7 @@
         "dutch": "schrijven",
         "english": "to write",
         "vietnamese": "viết",
+        "pronunciation": { "ipa": "ˈsxrɛivə(n)", "phonetic": "skhry-vun" },
         "dutchsentence": "Kun je een brief naar de burgemeester schrijven?",
         "englishtranslate": "Can you write a letter to the mayor?"
     },
@@ -122,6 +139,7 @@
         "dutch": "begrijpen",
         "english": "to understand",
         "vietnamese": "hiểu",
+        "pronunciation": { "ipa": "bəˈɣrɛipə(n)", "phonetic": "bu-khry-pun" },
         "dutchsentence": "Ik begrijp niet wat je bedoelt.",
         "englishtranslate": "I don't understand what you mean."
     },
@@ -129,6 +147,7 @@
         "dutch": "doen",
         "english": "to do",
         "vietnamese": "làm",
+        "pronunciation": { "ipa": "dun", "phonetic": "doon" },
         "dutchsentence": "Wat moet ik nu doen om te helpen?",
         "englishtranslate": "What should I do now to help?"
     }

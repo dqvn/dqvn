@@ -3,6 +3,7 @@
         "dutch": "de verkoop (verkopen)",
         "english": "the sale (sales)",
         "vietnamese": "bán (những lần bán)",
+        "pronunciation": { "ipa": "də vərˈkoːp", "phonetic": "du vur-kohp" },
         "dutchsentence": "De verkoop van het huis ging erg snel.",
         "englishtranslate": "The sale of the house went very quickly."
     },
@@ -10,6 +11,7 @@
         "dutch": "het bewijs (bewijzen)",
         "english": "the proof (proofs)",
         "vietnamese": "bằng chứng (những bằng chứng)",
+        "pronunciation": { "ipa": "ət bəˈʋɛis", "phonetic": "ut bu-vise" },
         "dutchsentence": "Heeft u bewijs voor uw bewering?",
         "englishtranslate": "Do you have proof for your claim?"
     },
@@ -17,6 +19,7 @@
         "dutch": "de camera ('s)",
         "english": "the camera (cameras)",
         "vietnamese": "máy ảnh (những máy ảnh)",
+        "pronunciation": { "ipa": "də ˈkaːmeːraː", "phonetic": "du kah-may-rah" },
         "dutchsentence": "Ik heb een nieuwe camera gekocht om foto's te maken.",
         "englishtranslate": "I bought a new camera to take photos."
     },
@@ -24,6 +27,7 @@
         "dutch": "de reden (-en)",
         "english": "the reason (reasons)",
         "vietnamese": "lý do (những lý do)",
+        "pronunciation": { "ipa": "də ˈreːdə(n)", "phonetic": "du ray-dun" },
         "dutchsentence": "Wat is de reden dat je te laat bent?",
         "englishtranslate": "What is the reason that you are late?"
     },
@@ -31,6 +35,7 @@
         "dutch": "het geval (-len)",
         "english": "the case (cases)",
         "vietnamese": "trường hợp (những trường hợp)",
+        "pronunciation": { "ipa": "ət xəˈvɑl", "phonetic": "ut khuh-vahl" },
         "dutchsentence": "In geval van nood belt u 112.",
         "englishtranslate": "In case of emergency, you call 112."
     },
@@ -38,6 +43,7 @@
         "dutch": "zoveel",
         "english": "so much",
         "vietnamese": "nhiều",
+        "pronunciation": { "ipa": "zoːˈveːl", "phonetic": "zoh-vayl" },
         "dutchsentence": "Waarom maak je je zorgen over zoveel details?",
         "englishtranslate": "Why do you worry about so many details?"
     },
@@ -45,6 +51,7 @@
         "dutch": "tuurlijk",
         "english": "of course",
         "vietnamese": "tất nhiên",
+        "pronunciation": { "ipa": "ˈtyːrlək", "phonetic": "tuur-luk" },
         "dutchsentence": "Tuurlijk, ik help je graag!",
         "englishtranslate": "Of course, I'd love to help you!"
     },
@@ -52,6 +59,7 @@
         "dutch": "absoluut",
         "english": "absolutely",
         "vietnamese": "chắc chắn",
+        "pronunciation": { "ipa": "ɑpsoːˈlyt", "phonetic": "ap-so-luut" },
         "dutchsentence": "Dat is absoluut het beste restaurant in de stad.",
         "englishtranslate": "That is absolutely the best restaurant in the city."
     },
@@ -59,6 +67,7 @@
         "dutch": "hoeven te",
         "english": "need to",
         "vietnamese": "cần phải",
+        "pronunciation": { "ipa": "ˈɦuvə(n) tə", "phonetic": "hoo-vun tu" },
         "dutchsentence": "Je hoeft me niet te bellen, ik kom vanzelf.",
         "englishtranslate": "You don't need to call me, I'll come myself."
     },
@@ -66,6 +75,7 @@
         "dutch": "bewijzen (bewezen)",
         "english": "to prove (proved)",
         "vietnamese": "chứng minh (đã chứng minh)",
+        "pronunciation": { "ipa": "bəˈʋɛizə(n)", "phonetic": "bu-vize-un" },
         "dutchsentence": "Hij kon zijn onschuld bewijzen met de videobeelden.",
         "englishtranslate": "He could prove his innocence with the video footage."
     },
@@ -73,6 +83,7 @@
         "dutch": "kopen",
         "english": "to buy",
         "vietnamese": "mua",
+        "pronunciation": { "ipa": "ˈkoːpə(n)", "phonetic": "koh-pun" },
         "dutchsentence": "Ik wil graag een nieuw paar schoenen kopen.",
         "englishtranslate": "I would like to buy a new pair of shoes."
     },
@@ -80,6 +91,7 @@
         "dutch": "verkopen",
         "english": "to sell",
         "vietnamese": "bán",
+        "pronunciation": { "ipa": "vərˈkoːpə(n)", "phonetic": "vur-koh-pun" },
         "dutchsentence": "Zij besloten hun oude auto te verkopen.",
         "englishtranslate": "They decided to sell their old car."
     },
@@ -87,6 +99,7 @@
         "dutch": "staan",
         "english": "to stand",
         "vietnamese": "đứng",
+        "pronunciation": { "ipa": "staːn", "phonetic": "stahn" },
         "dutchsentence": "De stoel staat in de hoek van de kamer.",
         "englishtranslate": "The chair is standing (located) in the corner of the room."
     },
@@ -94,6 +107,7 @@
         "dutch": "bezoeken",
         "english": "to visit",
         "vietnamese": "thăm",
+        "pronunciation": { "ipa": "bəˈzukə(n)", "phonetic": "bu-zoo-kun" },
         "dutchsentence": "We gaan volgende week onze familie bezoeken.",
         "englishtranslate": "We are going to visit our family next week."
     },
@@ -101,6 +115,7 @@
         "dutch": "vechten",
         "english": "to fight",
         "vietnamese": "đánh nhau",
+        "pronunciation": { "ipa": "ˈvɛxtə(n)", "phonetic": "vekht-un" },
         "dutchsentence": "De kinderen waren aan het vechten om het speelgoed.",
         "englishtranslate": "The children were fighting over the toy."
     },
@@ -108,6 +123,7 @@
         "dutch": "verstaan",
         "english": "to understand",
         "vietnamese": "hiểu",
+        "pronunciation": { "ipa": "vərˈstaːn", "phonetic": "vur-stahn" },
         "dutchsentence": "Ik kan je niet goed verstaan door het lawaai.",
         "englishtranslate": "I cannot understand you well because of the noise."
     },
@@ -115,6 +131,7 @@
         "dutch": "winnen",
         "english": "to win",
         "vietnamese": "thắng",
+        "pronunciation": { "ipa": "ˈʋɪnə(n)", "phonetic": "vin-un" },
         "dutchsentence": "Iedereen wil de loterij winnen.",
         "englishtranslate": "Everyone wants to win the lottery."
     },
@@ -122,6 +139,7 @@
         "dutch": "trekken",
         "english": "to pull",
         "vietnamese": "kéo",
+        "pronunciation": { "ipa": "ˈtrɛkə(n)", "phonetic": "trek-un" },
         "dutchsentence": "Trek de deur naar je toe om hem te openen.",
         "englishtranslate": "Pull the door towards you to open it."
     },
@@ -129,6 +147,7 @@
         "dutch": "gaan",
         "english": "to go",
         "vietnamese": "đi",
+        "pronunciation": { "ipa": "xaːn", "phonetic": "khahn" },
         "dutchsentence": "We gaan vanavond naar de bioscoop.",
         "englishtranslate": "We are going to the cinema tonight."
     },
@@ -136,6 +155,7 @@
         "dutch": "hangen",
         "english": "to hang",
         "vietnamese": "treo",
+        "pronunciation": { "ipa": "ˈɦɑŋə(n)", "phonetic": "hang-un" },
         "dutchsentence": "De jas hangt aan de kapstok.",
         "englishtranslate": "The coat is hanging on the coat rack."
     }

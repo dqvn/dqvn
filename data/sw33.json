@@ -3,6 +3,7 @@
         "dutch": "de wedstrijd (-en)",
         "english": "the match (matches)",
         "vietnamese": "trận đấu (những trận đấu)",
+        "pronunciation": { "ipa": "də ˈʋɛtstrɛit", "phonetic": "du vet-strit" },
         "dutchsentence": "De voetbalwedstrijd was erg spannend tot de laatste minuut.",
         "englishtranslate": "The football match was very exciting until the last minute."
     },
@@ -10,6 +11,7 @@
         "dutch": "het basketbal",
         "english": "the basketball",
         "vietnamese": "bóng rổ",
+        "pronunciation": { "ipa": "ət ˈbɑskətbɑl", "phonetic": "ut bas-kut-bal" },
         "dutchsentence": "Basketbal is een snelle en dynamische sport.",
         "englishtranslate": "Basketball is a fast and dynamic sport."
     },
@@ -17,6 +19,7 @@
         "dutch": "de bal (-len)",
         "english": "the ball (balls)",
         "vietnamese": "quả bóng (những quả bóng)",
+        "pronunciation": { "ipa": "də bɑl", "phonetic": "du bal" },
         "dutchsentence": "De kinderen spelen met een rode bal in de tuin.",
         "englishtranslate": "The children are playing with a red ball in the garden."
     },
@@ -24,6 +27,7 @@
         "dutch": "het team (-s)",
         "english": "the team (teams)",
         "vietnamese": "đội (những đội)",
+        "pronunciation": { "ipa": "ət tim", "phonetic": "ut teem" },
         "dutchsentence": "Ons team heeft de finale gewonnen.",
         "englishtranslate": "Our team won the final."
     },
@@ -31,6 +35,7 @@
         "dutch": "de bank (-en)",
         "english": "the bench (benches)",
         "vietnamese": "ghế dài (những ghế dài)",
+        "pronunciation": { "ipa": "də bɑŋk", "phonetic": "du bank" },
         "dutchsentence": "De coach vroeg de speler om op de bank te zitten.",
         "englishtranslate": "The coach asked the player to sit on the bench."
     },
@@ -38,6 +43,7 @@
         "dutch": "de rust",
         "english": "the rest",
         "vietnamese": "nghỉ ngơi",
+        "pronunciation": { "ipa": "də rʏst", "phonetic": "du rust" },
         "dutchsentence": "Na de eerste helft was het tijd voor de rust.",
         "englishtranslate": "After the first half, it was time for the rest (half-time)."
     },
@@ -45,6 +51,7 @@
         "dutch": "sterk",
         "english": "strong",
         "vietnamese": "mạnh mẽ",
+        "pronunciation": { "ipa": "stɛrk", "phonetic": "sterk" },
         "dutchsentence": "Hij is erg sterk en kan zware dingen tillen.",
         "englishtranslate": "He is very strong and can lift heavy things."
     },
@@ -52,6 +59,7 @@
         "dutch": "zwak",
         "english": "weak",
         "vietnamese": "yếu",
+        "pronunciation": { "ipa": "zʋɑk", "phonetic": "zwak" },
         "dutchsentence": "De batterij is zwak en moet vervangen worden.",
         "englishtranslate": "The battery is weak and needs to be replaced."
     },
@@ -59,6 +67,7 @@
         "dutch": "tegen",
         "english": "against",
         "vietnamese": "chống lại",
+        "pronunciation": { "ipa": "ˈteːɣə(n)", "phonetic": "tay-khun" },
         "dutchsentence": "We spelen morgen tegen het beste team.",
         "englishtranslate": "We are playing against the best team tomorrow."
     },
@@ -66,6 +75,7 @@
         "dutch": "lopen (gelopen)",
         "english": "to walk (walked)",
         "vietnamese": "đi bộ (đã đi bộ)",
+        "pronunciation": { "ipa": "ˈloːpə(n)", "phonetic": "low-pun" },
         "dutchsentence": "Ik loop elke dag een uur in het bos.",
         "englishtranslate": "I walk in the forest for an hour every day."
     },
@@ -73,6 +83,7 @@
         "dutch": "rennen (gerend)",
         "english": "to run (ran)",
         "vietnamese": "chạy (đã chạy)",
+        "pronunciation": { "ipa": "ˈrɛnə(n)", "phonetic": "ren-un" },
         "dutchsentence": "We moesten rennen om de trein te halen.",
         "englishtranslate": "We had to run to catch the train."
     },
@@ -80,6 +91,7 @@
         "dutch": "winnen (gewonnen)",
         "english": "to win (won)",
         "vietnamese": "thắng (đã thắng)",
+        "pronunciation": { "ipa": "ˈʋɪnə(n)", "phonetic": "vin-un" },
         "dutchsentence": "Ze hopen de wedstrijd te winnen.",
         "englishtranslate": "They hope to win the match."
     },
@@ -87,6 +99,7 @@
         "dutch": "verliezen (verloren)",
         "english": "to lose (lost)",
         "vietnamese": "thua (đã thua)",
+        "pronunciation": { "ipa": "vərˈlizə(n)", "phonetic": "vur-lee-zun" },
         "dutchsentence": "Niemand wil de competitie verliezen.",
         "englishtranslate": "Nobody wants to lose the competition."
     },
@@ -94,6 +107,7 @@
         "dutch": "rusten (gerust)",
         "english": "to rest (rested)",
         "vietnamese": "nghỉ ngơi (đã nghỉ ngơi)",
+        "pronunciation": { "ipa": "ˈrʏstə(n)", "phonetic": "rus-tun" },
         "dutchsentence": "Je moet goed rusten na zo'n lange werkdag.",
         "englishtranslate": "You must rest well after such a long workday."
     },
@@ -101,6 +115,7 @@
         "dutch": "duren (geduurd)",
         "english": "to last (lasted)",
         "vietnamese": "kéo dài (đã kéo dài)",
+        "pronunciation": { "ipa": "ˈdyːrə(n)", "phonetic": "du-run" },
         "dutchsentence": "De vergadering duurde langer dan verwacht.",
         "englishtranslate": "The meeting lasted longer than expected."
     },
@@ -108,6 +123,7 @@
         "dutch": "stappen (gestapt)",
         "english": "to step (stepped)",
         "vietnamese": "bước (đã bước)",
+        "pronunciation": { "ipa": "ˈstɑpə(n)", "phonetic": "stap-un" },
         "dutchsentence": "Hij stapte in de bus op het laatste moment.",
         "englishtranslate": "He stepped onto the bus at the last moment."
     }

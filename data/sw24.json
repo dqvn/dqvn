@@ -3,6 +3,7 @@
         "dutch": "de aflevering (-en)",
         "english": "the episode(s)",
         "vietnamese": "tập phim",
+        "pronunciation": { "ipa": "də ˈɑfleːvərɪŋ", "phonetic": "du af-lay-vuh-ring" },
         "dutchsentence": "De laatste aflevering van de serie was erg spannend.",
         "englishtranslate": "The last episode of the series was very exciting."
     },
@@ -10,6 +11,7 @@
         "dutch": "de serie (-s)",
         "english": "the series",
         "vietnamese": "loạt phim",
+        "pronunciation": { "ipa": "də ˈseːri", "phonetic": "du say-ree" },
         "dutchsentence": "Ik ben momenteel een nieuwe serie aan het kijken.",
         "englishtranslate": "I am currently watching a new series."
     },
@@ -17,6 +19,7 @@
         "dutch": "de informatie",
         "english": "the information",
         "vietnamese": "thông tin",
+        "pronunciation": { "ipa": "də ˌɪnfɔrˈmaːtsi", "phonetic": "du in-for-mah-tsee" },
         "dutchsentence": "De politie heeft meer informatie nodig over de verdachte.",
         "englishtranslate": "The police need more information about the suspect."
     },
@@ -24,6 +27,7 @@
         "dutch": "sommige",
         "english": "some",
         "vietnamese": "một số",
+        "pronunciation": { "ipa": "ˈsɔməɣə", "phonetic": "som-mu-khuh" },
         "dutchsentence": "Sommige mensen begrijpen de regels niet.",
         "englishtranslate": "Some people don't understand the rules."
     },
@@ -31,6 +35,7 @@
         "dutch": "duidelijk",
         "english": "clear",
         "vietnamese": "rõ ràng",
+        "pronunciation": { "ipa": "ˈdœydələk", "phonetic": "dou-duh-luk" },
         "dutchsentence": "Het antwoord is nu heel duidelijk.",
         "englishtranslate": "The answer is very clear now."
     },
@@ -38,6 +43,7 @@
         "dutch": "klaar",
         "english": "ready",
         "vietnamese": "sẵn sàng",
+        "pronunciation": { "ipa": "klaːr", "phonetic": "klahr" },
         "dutchsentence": "Zijn jullie klaar om te vertrekken?",
         "englishtranslate": "Are you ready to leave?"
     },
@@ -45,6 +51,7 @@
         "dutch": "af",
         "english": "finished",
         "vietnamese": "hoàn thành",
+        "pronunciation": { "ipa": "ɑf", "phonetic": "af" },
         "dutchsentence": "Mijn huiswerk is eindelijk af.",
         "englishtranslate": "My homework is finally finished."
     },
@@ -52,6 +59,7 @@
         "dutch": "volgens",
         "english": "according to",
         "vietnamese": "theo",
+        "pronunciation": { "ipa": "ˈvɔlxəns", "phonetic": "vol-khuns" },
         "dutchsentence": "Volgens de weersvoorspelling gaat het morgen regenen.",
         "englishtranslate": "According to the weather forecast, it will rain tomorrow."
     },
@@ -59,6 +67,7 @@
         "dutch": "stoppen",
         "english": "(to) stop",
         "vietnamese": "(để) dừng lại",
+        "pronunciation": { "ipa": "ˈstɔpə(n)", "phonetic": "stop-un" },
         "dutchsentence": "Je moet stoppen met roken.",
         "englishtranslate": "You must stop smoking."
     },
@@ -66,6 +75,7 @@
         "dutch": "gooien",
         "english": "(to) throw",
         "vietnamese": "(để) ném",
+        "pronunciation": { "ipa": "ˈxoːjə(n)", "phonetic": "kho-yun" },
         "dutchsentence": "Hij gaat de bal heel ver gooien.",
         "englishtranslate": "He is going to throw the ball very far."
     },
@@ -73,6 +83,7 @@
         "dutch": "proberen te",
         "english": "(to) try to",
         "vietnamese": "(để) cố gắng",
+        "pronunciation": { "ipa": "proːˈbeːrə(n) tə", "phonetic": "pro-bay-run tuh" },
         "dutchsentence": "Ik ga proberen op tijd te komen.",
         "englishtranslate": "I'm going to try to be on time."
     }
