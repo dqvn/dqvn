@@ -1,0 +1,1090 @@
+[
+  {
+    "dutch": "aanduiden",
+    "english": "to point out, indicate",
+    "vietnamese": "chỉ ra, biểu thị",
+    "dutchsentence": "Kunt u op de kaart aanduiden waar u woont?",
+    "englishtranslate": "Can you point out on the map where you live?",
+    "pronunciation": { "ipa": "ˈaːndœydə(n)", "phonetic": "aan-douy-dun" }
+  },
+  {
+    "dutch": "aanrecht, het",
+    "english": "kitchen counter, the",
+    "vietnamese": "bệ bếp, bồn rửa bát",
+    "dutchsentence": "Het aanrecht staat vol met vuile vaat.",
+    "englishtranslate": "The kitchen counter is full of dirty dishes.",
+    "pronunciation": { "ipa": "ˈaːnrɛxt", "phonetic": "aan-rekht" }
+  },
+  {
+    "dutch": "aantal, het",
+    "english": "number, the",
+    "vietnamese": "số lượng",
+    "dutchsentence": "Het aantal studenten in de klas is twintig.",
+    "englishtranslate": "The number of students in the class is twenty.",
+    "pronunciation": { "ipa": "ˈaːntɑl", "phonetic": "aan-tal" }
+  },
+  {
+    "dutch": "afhangen van",
+    "english": "to depend on",
+    "vietnamese": "phụ thuộc vào",
+    "dutchsentence": "Onze vakantie gaat afhangen van het weer.",
+    "englishtranslate": "Our holiday is going to depend on the weather.",
+    "pronunciation": { "ipa": "ˈɑfɦɑŋə(n) vɑn", "phonetic": "af-hang-un van" }
+  },
+  {
+    "dutch": "al",
+    "english": "already",
+    "vietnamese": "đã, rồi",
+    "dutchsentence": "Ben je nu al klaar met je huiswerk?",
+    "englishtranslate": "Are you already finished with your homework now?",
+    "pronunciation": { "ipa": "ɑl", "phonetic": "al" }
+  },
+  {
+    "dutch": "algemeen",
+    "english": "general",
+    "vietnamese": "chung, phổ biến",
+    "dutchsentence": "Over het algemeen ben ik erg tevreden.",
+    "englishtranslate": "In general, I am very satisfied.",
+    "pronunciation": { "ipa": "ˌɑlɣəˈmeːn", "phonetic": "al-khuh-mayn" }
+  },
+  {
+    "dutch": "aluminium, het",
+    "english": "aluminium, the",
+    "vietnamese": "nhôm",
+    "dutchsentence": "Deze ladder is gemaakt van licht aluminium.",
+    "englishtranslate": "This ladder is made of light aluminium.",
+    "pronunciation": { "ipa": "ˌalyˈminijʏm", "phonetic": "ah-lu-mee-nee-yum" }
+  },
+  {
+    "dutch": "antiek",
+    "english": "antique",
+    "vietnamese": "đồ cổ",
+    "dutchsentence": "Mijn oma heeft veel antiek meubilair in huis.",
+    "englishtranslate": "My grandmother has a lot of antique furniture in her house.",
+    "pronunciation": { "ipa": "ɑnˈtik", "phonetic": "an-teek" }
+  },
+  {
+    "dutch": "bad, het",
+    "english": "bathtub, the",
+    "vietnamese": "bồn tắm",
+    "dutchsentence": "Ik lig graag een uur in een warm bad.",
+    "englishtranslate": "I like lying in a warm bathtub for an hour.",
+    "pronunciation": { "ipa": "bɑt", "phonetic": "bat" }
+  },
+  {
+    "dutch": "bankstel, het",
+    "english": "sofa and chairs, the",
+    "vietnamese": "bộ bàn ghế sofa",
+    "dutchsentence": "We hebben een nieuw leren bankstel gekocht.",
+    "englishtranslate": "We bought a new leather sofa set.",
+    "pronunciation": { "ipa": "ˈbɑŋkstɛl", "phonetic": "bank-stel" }
+  },
+  {
+    "dutch": "bepaald",
+    "english": "particular",
+    "vietnamese": "nhất định, cụ thể",
+    "dutchsentence": "Op een bepaald moment moesten we weg.",
+    "englishtranslate": "At a particular moment, we had to leave.",
+    "pronunciation": { "ipa": "bəˈpaːlt", "phonetic": "buh-paalt" }
+  },
+  {
+    "dutch": "beton, het",
+    "english": "concrete, the",
+    "vietnamese": "bê tông",
+    "dutchsentence": "De muren van de garage zijn van beton.",
+    "englishtranslate": "The walls of the garage are made of concrete.",
+    "pronunciation": { "ipa": "bəˈtɔn", "phonetic": "buh-ton" }
+  },
+  {
+    "dutch": "bevolking, de",
+    "english": "population, the",
+    "vietnamese": "dân số",
+    "dutchsentence": "De bevolking van Nederland blijft groeien.",
+    "englishtranslate": "The population of the Netherlands continues to grow.",
+    "pronunciation": { "ipa": "bəˈvɔlkɪŋ", "phonetic": "buh-vol-king" }
+  },
+  {
+    "dutch": "bijzonder",
+    "english": "special",
+    "vietnamese": "đặc biệt",
+    "dutchsentence": "Dit is een bijzonder schilderij.",
+    "englishtranslate": "This is a special painting.",
+    "pronunciation": { "ipa": "bəˈzɔndər", "phonetic": "buh-zon-dur" }
+  },
+  {
+    "dutch": "boekenkast, de",
+    "english": "bookcase, the",
+    "vietnamese": "tủ sách",
+    "dutchsentence": "Mijn boekenkast staat helemaal vol.",
+    "englishtranslate": "My bookcase is completely full.",
+    "pronunciation": { "ipa": "ˈbukənˌkɑst", "phonetic": "boo-kun-kast" }
+  },
+  {
+    "dutch": "bouwmarkt, de",
+    "english": "do-it-yourself shop, the",
+    "vietnamese": "cửa hàng vật liệu xây dựng",
+    "dutchsentence": "Ik moet naar de bouwmarkt voor nieuwe verf.",
+    "englishtranslate": "I have to go to the DIY shop for new paint.",
+    "pronunciation": { "ipa": "ˈbʌumɑrkt", "phonetic": "bow-markt" }
+  },
+  {
+    "dutch": "buitenlands",
+    "english": "foreign",
+    "vietnamese": "nước ngoài",
+    "dutchsentence": "Zij spreekt drie buitenlandse talen.",
+    "englishtranslate": "She speaks three foreign languages.",
+    "pronunciation": { "ipa": "ˈbœytənlɑnts", "phonetic": "bouy-tun-lants" }
+  },
+  {
+    "dutch": "bureaustoel, de",
+    "english": "office chair, the",
+    "vietnamese": "ghế văn phòng",
+    "dutchsentence": "Deze bureaustoel zit erg comfortabel.",
+    "englishtranslate": "This office chair is very comfortable.",
+    "pronunciation": { "ipa": "byˈroːˌstul", "phonetic": "bu-ro-stool" }
+  },
+  {
+    "dutch": "cijfer, het",
+    "english": "digit, the",
+    "vietnamese": "con số, điểm số",
+    "dutchsentence": "Mijn pincode bestaat uit vier cijfers.",
+    "englishtranslate": "My PIN consists of four digits.",
+    "pronunciation": { "ipa": "ˈsɛifər", "phonetic": "sy-fur" }
+  },
+  {
+    "dutch": "comfortabel",
+    "english": "comfortable",
+    "vietnamese": "thoải mái, tiện nghi",
+    "dutchsentence": "Het hotel was luxe en comfortabel.",
+    "englishtranslate": "The hotel was luxurious and comfortable.",
+    "pronunciation": { "ipa": "kɔmfɔrˈtaːbəl", "phonetic": "kom-for-taa-bul" }
+  },
+  {
+    "dutch": "contrast, het",
+    "english": "contrast, the",
+    "vietnamese": "sự tương phản",
+    "dutchsentence": "Er is een groot contrast tussen zwart en wit.",
+    "englishtranslate": "There is a large contrast between black and white.",
+    "pronunciation": { "ipa": "kɔnˈtrɑst", "phonetic": "kon-trast" }
+  },
+  {
+    "dutch": "dakterras, het",
+    "english": "roof terrace, the",
+    "vietnamese": "sân thượng",
+    "dutchsentence": "Vanaf het dakterras heb je een mooi uitzicht.",
+    "englishtranslate": "From the roof terrace you have a beautiful view.",
+    "pronunciation": { "ipa": "ˈdɑktɛˌrɑs", "phonetic": "dak-te-ras" }
+  },
+  {
+    "dutch": "dekbedovertrek, het",
+    "english": "quilt cover, the",
+    "vietnamese": "vỏ chăn",
+    "dutchsentence": "Ik heb een nieuw dekbedovertrek met bloemen.",
+    "englishtranslate": "I have a new quilt cover with flowers.",
+    "pronunciation": { "ipa": "ˈdɛkbɛtoːvərˌtrɛk", "phonetic": "dek-bet-o-vur-trek" }
+  },
+  {
+    "dutch": "deken, de",
+    "english": "blanket, the",
+    "vietnamese": "cái mền, chăn",
+    "dutchsentence": "Heb je een extra deken voor op het bed?",
+    "englishtranslate": "Do you have an extra blanket for on the bed?",
+    "pronunciation": { "ipa": "ˈdeːkə(n)", "phonetic": "day-kun" }
+  },
+  {
+    "dutch": "deur, de",
+    "english": "door, the",
+    "vietnamese": "cửa",
+    "dutchsentence": "Doe de deur achter je dicht, alsjeblieft.",
+    "englishtranslate": "Close the door behind you, please.",
+    "pronunciation": { "ipa": "døːr", "phonetic": "duhr" }
+  },
+  {
+    "dutch": "diepte, de",
+    "english": "depth, the",
+    "vietnamese": "chiều sâu",
+    "dutchsentence": "Wat is de diepte van de kast?",
+    "englishtranslate": "What is the depth of the closet?",
+    "pronunciation": { "ipa": "ˈdiptə", "phonetic": "deep-tuh" }
+  },
+  {
+    "dutch": "doorbrengen",
+    "english": "to spend (time)",
+    "vietnamese": "dành thời gian",
+    "dutchsentence": "We willen onze vakantie in Spanje doorbrengen.",
+    "englishtranslate": "We want to spend our holiday in Spain.",
+    "pronunciation": { "ipa": "ˈdoːrb rɛŋə(n)", "phonetic": "dore-breng-un" }
+  },
+  {
+    "dutch": "doorlopen",
+    "english": "to pass by, pass through",
+    "vietnamese": "đi tiếp, đi xuyên qua",
+    "dutchsentence": "U kunt doorlopen naar de volgende kamer.",
+    "englishtranslate": "You can pass through to the next room.",
+    "pronunciation": { "ipa": "ˈdoːrloːpə(n)", "phonetic": "dore-low-pun" }
+  },
+  {
+    "dutch": "doorsnee",
+    "english": "average",
+    "vietnamese": "trung bình",
+    "dutchsentence": "Een doorsnee gezin heeft twee kinderen.",
+    "englishtranslate": "An average family has two children.",
+    "pronunciation": { "ipa": "ˈdoːrsneː", "phonetic": "dore-snay" }
+  },
+  {
+    "dutch": "douche, de",
+    "english": "shower, the",
+    "vietnamese": "vòi hoa sen",
+    "dutchsentence": "Ik neem elke ochtend een warme douche.",
+    "englishtranslate": "I take a warm shower every morning.",
+    "pronunciation": { "ipa": "dus", "phonetic": "doosh" }
+  },
+  {
+    "dutch": "droom, de",
+    "english": "dream, the",
+    "vietnamese": "giấc mơ",
+    "dutchsentence": "Het is mijn droom om een wereldreis te maken.",
+    "englishtranslate": "It is my dream to travel around the world.",
+    "pronunciation": { "ipa": "droːm", "phonetic": "droam" }
+  },
+  {
+    "dutch": "eetkamer, de",
+    "english": "dining room, the",
+    "vietnamese": "phòng ăn",
+    "dutchsentence": "In de eetkamer staat een grote houten tafel.",
+    "englishtranslate": "In the dining room stands a large wooden table.",
+    "pronunciation": { "ipa": "ˈeːtkaːmər", "phonetic": "ayt-kaa-mur" }
+  },
+  {
+    "dutch": "eettafel, de",
+    "english": "dining table, the",
+    "vietnamese": "bàn ăn",
+    "dutchsentence": "We zitten elke avond samen aan de eettafel.",
+    "englishtranslate": "We sit together at the dining table every evening.",
+    "pronunciation": { "ipa": "ˈeːttaːfəl", "phonetic": "ayt-taa-ful" }
+  },
+  {
+    "dutch": "eeuw, de",
+    "english": "century, the",
+    "vietnamese": "thế kỷ",
+    "dutchsentence": "Dit huis is gebouwd in de negentiende eeuw.",
+    "englishtranslate": "This house was built in the nineteenth century.",
+    "pronunciation": { "ipa": "eːu", "phonetic": "ay-oo" }
+  },
+  {
+    "dutch": "eigenaar, de",
+    "english": "owner, the",
+    "vietnamese": "chủ sở hữu",
+    "dutchsentence": "Wie is de eigenaar van deze auto?",
+    "englishtranslate": "Who is the owner of this car?",
+    "pronunciation": { "ipa": "ˈɛiɣənaːr", "phonetic": "ay-khuh-naar" }
+  },
+  {
+    "dutch": "enorm",
+    "english": "enormous",
+    "vietnamese": "khổng lồ, to lớn",
+    "dutchsentence": "Dat nieuwe gebouw in de stad is enorm.",
+    "englishtranslate": "That new building in the city is enormous.",
+    "pronunciation": { "ipa": "eːˈnɔrm", "phonetic": "ay-norm" }
+  },
+  {
+    "dutch": "fauteuil, de",
+    "english": "armchair, the",
+    "vietnamese": "ghế bành",
+    "dutchsentence": "De oude man slaapt in zijn fauteuil.",
+    "englishtranslate": "The old man is sleeping in his armchair.",
+    "pronunciation": { "ipa": "foːˈtœyjə", "phonetic": "fo-touy-yuh" }
+  },
+  {
+    "dutch": "gedoe, het",
+    "english": "fuss, the",
+    "vietnamese": "phiền phức, rắc rối",
+    "dutchsentence": "Ik heb geen zin in al dat gedoe.",
+    "englishtranslate": "I don't feel like all that fuss.",
+    "pronunciation": { "ipa": "ɣəˈdu", "phonetic": "khuh-doo" }
+  },
+  {
+    "dutch": "geen enkel",
+    "english": "not a single",
+    "vietnamese": "không một ai/cái nào",
+    "dutchsentence": "Er was geen enkel probleem tijdens de reis.",
+    "englishtranslate": "There was not a single problem during the trip.",
+    "pronunciation": { "ipa": "ɣeːn ˈɛŋkəl", "phonetic": "khayn eng-kul" }
+  },
+  {
+    "dutch": "geheel",
+    "english": "completely",
+    "vietnamese": "hoàn toàn",
+    "dutchsentence": "Het huis is geheel gerenoveerd.",
+    "englishtranslate": "The house has been completely renovated.",
+    "pronunciation": { "ipa": "ɣəˈɦeːl", "phonetic": "khuh-hayl" }
+  },
+  {
+    "dutch": "gelijk hebben",
+    "english": "to be right",
+    "vietnamese": "đúng, có lý",
+    "dutchsentence": "Je hebt gelijk, het is vandaag erg koud.",
+    "englishtranslate": "You are right, it is very cold today.",
+    "pronunciation": { "ipa": "ɣəˈlɛik ˈɦɛbə(n)", "phonetic": "khuh-lyk heb-un" }
+  },
+  {
+    "dutch": "hal, de",
+    "english": "hall, the",
+    "vietnamese": "hành lang, sảnh",
+    "dutchsentence": "Laat je jas in de hal hangen.",
+    "englishtranslate": "Leave your coat hanging in the hall.",
+    "pronunciation": { "ipa": "ɦɑl", "phonetic": "hal" }
+  },
+  {
+    "dutch": "hartstikke",
+    "english": "very",
+    "vietnamese": "rất, cực kỳ",
+    "dutchsentence": "Dat is hartstikke aardig van je!",
+    "englishtranslate": "That is very kind of you!",
+    "pronunciation": { "ipa": "ˈɦɑrtstɪkə", "phonetic": "hart-stik-uh" }
+  },
+  {
+    "dutch": "herkomst, de",
+    "english": "origins, the",
+    "vietnamese": "nguồn gốc",
+    "dutchsentence": "Wat is de herkomst van dit woord?",
+    "englishtranslate": "What is the origin of this word?",
+    "pronunciation": { "ipa": "ˈɦɛrkɔmst", "phonetic": "her-komst" }
+  },
+  {
+    "dutch": "hetzelfde",
+    "english": "the same",
+    "vietnamese": "giống nhau",
+    "dutchsentence": "Wij hebben hetzelfde shirt gekocht.",
+    "englishtranslate": "We bought the same shirt.",
+    "pronunciation": { "ipa": "ɦətˈsɛlfdə", "phonetic": "hut-sel-fduh" }
+  },
+  {
+    "dutch": "hoek, de",
+    "english": "corner, the",
+    "vietnamese": "góc",
+    "dutchsentence": "De kast staat in de hoek van de kamer.",
+    "englishtranslate": "The cabinet is in the corner of the room.",
+    "pronunciation": { "ipa": "ɦuk", "phonetic": "hook" }
+  },
+  {
+    "dutch": "hout, het",
+    "english": "wood, the",
+    "vietnamese": "gỗ",
+    "dutchsentence": "Deze tafel is gemaakt van massief hout.",
+    "englishtranslate": "This table is made of solid wood.",
+    "pronunciation": { "ipa": "ɦʌut", "phonetic": "howt" }
+  },
+  {
+    "dutch": "huiskamer, de",
+    "english": "living room, the",
+    "vietnamese": "phòng khách",
+    "dutchsentence": "In de huiskamer kijken we samen tv.",
+    "englishtranslate": "In the living room we watch TV together.",
+    "pronunciation": { "ipa": "ˈɦœyskaːmər", "phonetic": "houys-kaa-mur" }
+  },
+  {
+    "dutch": "ijzer, het",
+    "english": "iron, the",
+    "vietnamese": "sắt",
+    "dutchsentence": "Het hek is gemaakt van zwaar ijzer.",
+    "englishtranslate": "The gate is made of heavy iron.",
+    "pronunciation": { "ipa": "ˈɛizər", "phonetic": "ay-zur" }
+  },
+  {
+    "dutch": "inrichting, de",
+    "english": "furnishings, the",
+    "vietnamese": "trang trí nội thất",
+    "dutchsentence": "Ik vind de inrichting van je huis erg mooi.",
+    "englishtranslate": "I think the furnishings of your house are very beautiful.",
+    "pronunciation": { "ipa": "ˈɪnrɪxtɪŋ", "phonetic": "in-rikh-ting" }
+  },
+  {
+    "dutch": "invloed, de",
+    "english": "influence, the",
+    "vietnamese": "sự ảnh hưởng",
+    "dutchsentence": "Het weer heeft veel invloed op mijn humeur.",
+    "englishtranslate": "The weather has a lot of influence on my mood.",
+    "pronunciation": { "ipa": "ˈɪnvlut", "phonetic": "in-vloot" }
+  },
+  {
+    "dutch": "katoen, het",
+    "english": "cotton, the",
+    "vietnamese": "bông, vải cotton",
+    "dutchsentence": "Dit T-shirt is van honderd procent katoen.",
+    "englishtranslate": "This T-shirt is made of one hundred percent cotton.",
+    "pronunciation": { "ipa": "kaːˈtun", "phonetic": "kaa-toon" }
+  },
+  {
+    "dutch": "kledingkast, de",
+    "english": "closet, wardrobe, the",
+    "vietnamese": "tủ quần áo",
+    "dutchsentence": "Mijn kledingkast is veel te klein.",
+    "englishtranslate": "My wardrobe is much too small.",
+    "pronunciation": { "ipa": "ˈkleːdɪŋˌkɑst", "phonetic": "klay-ding-kast" }
+  },
+  {
+    "dutch": "klemtoon, de",
+    "english": "emphasis, the",
+    "vietnamese": "trọng âm, sự nhấn mạnh",
+    "dutchsentence": "Op welke lettergreep ligt de klemtoon?",
+    "englishtranslate": "On which syllable is the emphasis?",
+    "pronunciation": { "ipa": "ˈklɛmtoːn", "phonetic": "klem-toan" }
+  },
+  {
+    "dutch": "koelkast, de",
+    "english": "refrigerator, the",
+    "vietnamese": "tủ lạnh",
+    "dutchsentence": "Zet de melk terug in de koelkast.",
+    "englishtranslate": "Put the milk back in the refrigerator.",
+    "pronunciation": { "ipa": "ˈkulkɑst", "phonetic": "kool-kast" }
+  },
+  {
+    "dutch": "lachen",
+    "english": "to laugh",
+    "vietnamese": "cười",
+    "dutchsentence": "We moesten erg lachen om zijn grap.",
+    "englishtranslate": "We had to laugh a lot at his joke.",
+    "pronunciation": { "ipa": "ˈlɑxə(n)", "phonetic": "lakh-un" }
+  },
+  {
+    "dutch": "lade, de",
+    "english": "drawer, the",
+    "vietnamese": "ngăn kéo",
+    "dutchsentence": "De messen liggen in de bovenste lade.",
+    "englishtranslate": "The knives are in the top drawer.",
+    "pronunciation": { "ipa": "ˈlaːdə", "phonetic": "laa-duh" }
+  },
+  {
+    "dutch": "laken, het",
+    "english": "sheet, the",
+    "vietnamese": "ga trải giường",
+    "dutchsentence": "Het laken moet in de wasmachine.",
+    "englishtranslate": "The sheet needs to go in the washing machine.",
+    "pronunciation": { "ipa": "ˈlaːkə(n)", "phonetic": "laa-kun" }
+  },
+  {
+    "dutch": "lamp, de",
+    "english": "lamp, the",
+    "vietnamese": "cái đèn",
+    "dutchsentence": "Doe de lamp aan, het is hier donker.",
+    "englishtranslate": "Turn on the lamp, it is dark here.",
+    "pronunciation": { "ipa": "lɑmp", "phonetic": "lamp" }
+  },
+  {
+    "dutch": "laptop, de",
+    "english": "laptop, the",
+    "vietnamese": "máy tính xách tay",
+    "dutchsentence": "Ik neem mijn laptop altijd mee naar mijn werk.",
+    "englishtranslate": "I always take my laptop to work.",
+    "pronunciation": { "ipa": "ˈlɛptɔp", "phonetic": "lep-top" }
+  },
+  {
+    "dutch": "licht, het",
+    "english": "light, the",
+    "vietnamese": "ánh sáng",
+    "dutchsentence": "Er valt veel licht door de ramen.",
+    "englishtranslate": "A lot of light comes through the windows.",
+    "pronunciation": { "ipa": "lɪxt", "phonetic": "likht" }
+  },
+  {
+    "dutch": "loft, de",
+    "english": "loft, the",
+    "vietnamese": "nhà gác mái, căn hộ gác lửng",
+    "dutchsentence": "Hij woont in een moderne loft in de stad.",
+    "englishtranslate": "He lives in a modern loft in the city.",
+    "pronunciation": { "ipa": "lɔft", "phonetic": "loft" }
+  },
+  {
+    "dutch": "massaal",
+    "english": "massive",
+    "vietnamese": "hàng loạt, ồ ạt",
+    "dutchsentence": "De mensen gingen massaal naar het strand.",
+    "englishtranslate": "The people went to the beach en masse.",
+    "pronunciation": { "ipa": "mɑˈsaːl", "phonetic": "mah-saal" }
+  },
+  {
+    "dutch": "materiaal, het",
+    "english": "material, the",
+    "vietnamese": "vật liệu",
+    "dutchsentence": "Welk materiaal is het beste voor de vloer?",
+    "englishtranslate": "Which material is best for the floor?",
+    "pronunciation": { "ipa": "maːtəriˈaːl", "phonetic": "maa-tuh-ree-aal" }
+  },
+  {
+    "dutch": "meubel, het",
+    "english": "furniture, the",
+    "vietnamese": "đồ nội thất",
+    "dutchsentence": "We hebben een nieuw meubel gekocht voor de kamer.",
+    "englishtranslate": "We bought a new piece of furniture for the room.",
+    "pronunciation": { "ipa": "ˈmøːbəl", "phonetic": "muh-bul" }
+  },
+  {
+    "dutch": "midden, het",
+    "english": "middle, the",
+    "vietnamese": "ở giữa",
+    "dutchsentence": "De tafel staat in het midden van de kamer.",
+    "englishtranslate": "The table stands in the middle of the room.",
+    "pronunciation": { "ipa": "ˈmɪdə(n)", "phonetic": "mi-dun" }
+  },
+  {
+    "dutch": "modern",
+    "english": "modern",
+    "vietnamese": "hiện đại",
+    "dutchsentence": "Het huis heeft een modern design.",
+    "englishtranslate": "The house has a modern design.",
+    "pronunciation": { "ipa": "moːˈdɛrn", "phonetic": "mo-dern" }
+  },
+  {
+    "dutch": "multicultureel",
+    "english": "multicultural",
+    "vietnamese": "đa văn hóa",
+    "dutchsentence": "Amsterdam is een multiculturele stad.",
+    "englishtranslate": "Amsterdam is a multicultural city.",
+    "pronunciation": { "ipa": "ˌmʏltikʏltyˈreːl", "phonetic": "mul-tee-kul-tu-rayl" }
+  },
+  {
+    "dutch": "nachtkastje, het",
+    "english": "night table, the",
+    "vietnamese": "tủ đầu giường",
+    "dutchsentence": "Mijn boek ligt op het nachtkastje.",
+    "englishtranslate": "My book is on the night table.",
+    "pronunciation": { "ipa": "ˈnɑxtˌkɑstjə", "phonetic": "nakht-kast-yuh" }
+  },
+  {
+    "dutch": "niemand",
+    "english": "no one",
+    "vietnamese": "không có ai",
+    "dutchsentence": "Er was niemand thuis toen ik belde.",
+    "englishtranslate": "There was no one home when I called.",
+    "pronunciation": { "ipa": "ˈnimɑnt", "phonetic": "nee-mant" }
+  },
+  {
+    "dutch": "nog",
+    "english": "still",
+    "vietnamese": "vẫn, còn",
+    "dutchsentence": "Ben je nog steeds aan het werk?",
+    "englishtranslate": "Are you still working?",
+    "pronunciation": { "ipa": "nɔx", "phonetic": "nokh" }
+  },
+  {
+    "dutch": "norm, de",
+    "english": "norm, the",
+    "vietnamese": "chuẩn mực, định mức",
+    "dutchsentence": "Voldoet dit werk aan de norm?",
+    "englishtranslate": "Does this work meet the norm?",
+    "pronunciation": { "ipa": "nɔrm", "phonetic": "norm" }
+  },
+  {
+    "dutch": "nostalgie, de",
+    "english": "nostalgia, the",
+    "vietnamese": "hoài niệm, nỗi nhớ nhà",
+    "dutchsentence": "Oude foto's roepen vaak nostalgie op.",
+    "englishtranslate": "Old photos often evoke nostalgia.",
+    "pronunciation": { "ipa": "ˌnɔstɑlˈɣi", "phonetic": "nos-tal-khee" }
+  },
+  {
+    "dutch": "nylon, het",
+    "english": "nylon, the",
+    "vietnamese": "vải ni lông",
+    "dutchsentence": "Deze jas is gemaakt van nylon.",
+    "englishtranslate": "This jacket is made of nylon.",
+    "pronunciation": { "ipa": "ˈnaːilɔn", "phonetic": "ny-lon" }
+  },
+  {
+    "dutch": "omgeving, de",
+    "english": "surroundings, the",
+    "vietnamese": "vùng lân cận, môi trường xung quanh",
+    "dutchsentence": "Wij wonen in een bosrijke omgeving.",
+    "englishtranslate": "We live in a wooded area.",
+    "pronunciation": { "ipa": "ɔmˈɣeːvɪŋ", "phonetic": "om-khay-ving" }
+  },
+  {
+    "dutch": "omtrek, de",
+    "english": "circumference, the",
+    "vietnamese": "chu vi",
+    "dutchsentence": "Wat is de omtrek van deze cirkel?",
+    "englishtranslate": "What is the circumference of this circle?",
+    "pronunciation": { "ipa": "ˈɔmtrɛk", "phonetic": "om-trek" }
+  },
+  {
+    "dutch": "ontdekken",
+    "english": "to discover",
+    "vietnamese": "khám phá, phát hiện",
+    "dutchsentence": "We hebben een klein restaurantje ontdekt.",
+    "englishtranslate": "We discovered a small restaurant.",
+    "pronunciation": { "ipa": "ɔntˈdɛkə(n)", "phonetic": "ont-dek-un" }
+  },
+  {
+    "dutch": "ontvangen",
+    "english": "to receive",
+    "vietnamese": "nhận được, tiếp đón",
+    "dutchsentence": "Heb je mijn bericht ontvangen?",
+    "englishtranslate": "Did you receive my message?",
+    "pronunciation": { "ipa": "ɔntˈvɑŋə(n)", "phonetic": "ont-vang-un" }
+  },
+  {
+    "dutch": "ouderwets",
+    "english": "old-fashioned",
+    "vietnamese": "lỗi thời, cổ hủ",
+    "dutchsentence": "Hij draagt altijd ouderwetse kleren.",
+    "englishtranslate": "He always wears old-fashioned clothes.",
+    "pronunciation": { "ipa": "ˌʌudərˈʋɛts", "phonetic": "ow-dur-wets" }
+  },
+  {
+    "dutch": "overeenkomst, de",
+    "english": "similarity, the",
+    "vietnamese": "sự tương đồng, hiệp ước",
+    "dutchsentence": "Er is een grote overeenkomst tussen de broers.",
+    "englishtranslate": "There is a great similarity between the brothers.",
+    "pronunciation": { "ipa": "oːvərˈeːnkɔmst", "phonetic": "o-vur-ayn-komst" }
+  },
+  {
+    "dutch": "overmorgen",
+    "english": "the day after tomorrow",
+    "vietnamese": "ngày kia",
+    "dutchsentence": "Ik heb overmorgen een afspraak bij de dokter.",
+    "englishtranslate": "I have a doctor's appointment the day after tomorrow.",
+    "pronunciation": { "ipa": "ˈoːvərmɔrɣə(n)", "phonetic": "o-vur-mor-khun" }
+  },
+  {
+    "dutch": "pakken",
+    "english": "to fetch, grab",
+    "vietnamese": "lấy, nắm lấy",
+    "dutchsentence": "Zal ik een glas water voor je pakken?",
+    "englishtranslate": "Shall I get a glass of water for you?",
+    "pronunciation": { "ipa": "ˈpɑkə(n)", "phonetic": "pak-un" }
+  },
+  {
+    "dutch": "pas",
+    "english": "just, only",
+    "vietnamese": "mới, chỉ mới",
+    "dutchsentence": "Ik ben pas om zes uur thuis.",
+    "englishtranslate": "I will only be home at six o'clock.",
+    "pronunciation": { "ipa": "pɑs", "phonetic": "pas" }
+  },
+  {
+    "dutch": "passen bij",
+    "english": "to match",
+    "vietnamese": "phù hợp với",
+    "dutchsentence": "Deze kleur past goed bij de muren.",
+    "englishtranslate": "This color matches the walls well.",
+    "pronunciation": { "ipa": "ˈpɑsə(n) bɛi", "phonetic": "pas-un by" }
+  },
+  {
+    "dutch": "patroon, het",
+    "english": "pattern, the",
+    "vietnamese": "họa tiết, hoa văn",
+    "dutchsentence": "Dit behang heeft een mooi patroon.",
+    "englishtranslate": "This wallpaper has a beautiful pattern.",
+    "pronunciation": { "ipa": "paːˈtroːn", "phonetic": "paa-troan" }
+  },
+  {
+    "dutch": "percentage, het",
+    "english": "percentage, the",
+    "vietnamese": "tỷ lệ phần trăm",
+    "dutchsentence": "Het percentage geslaagden is dit jaar hoog.",
+    "englishtranslate": "The percentage of those who passed is high this year.",
+    "pronunciation": { "ipa": "pɛrsɛnˈtaːzjə", "phonetic": "per-sen-taa-zyuh" }
+  },
+  {
+    "dutch": "plastic, het",
+    "english": "plastic, the",
+    "vietnamese": "nhựa",
+    "dutchsentence": "Deze fles is gemaakt van gerecycled plastic.",
+    "englishtranslate": "This bottle is made of recycled plastic.",
+    "pronunciation": { "ipa": "ˈplɛstɪk", "phonetic": "ples-tik" }
+  },
+  {
+    "dutch": "plek, de",
+    "english": "spot, the",
+    "vietnamese": "địa điểm, chỗ",
+    "dutchsentence": "Dit is een mooie plek voor een picknick.",
+    "englishtranslate": "This is a nice spot for a picnic.",
+    "pronunciation": { "ipa": "plɛk", "phonetic": "plek" }
+  },
+  {
+    "dutch": "prachtig",
+    "english": "wonderful",
+    "vietnamese": "tuyệt vời, lộng lẫy",
+    "dutchsentence": "Wat een prachtig uitzicht over de stad!",
+    "englishtranslate": "What a wonderful view of the city!",
+    "pronunciation": { "ipa": "ˈprɑxtəx", "phonetic": "prakh-tukh" }
+  },
+  {
+    "dutch": "procent, het",
+    "english": "percent, the",
+    "vietnamese": "phần trăm",
+    "dutchsentence": "Tien procent van de mensen kwam niet opdagen.",
+    "englishtranslate": "Ten percent of the people didn't show up.",
+    "pronunciation": { "ipa": "proːˈsɛnt", "phonetic": "pro-sent" }
+  },
+  {
+    "dutch": "rijtjeshuis, het",
+    "english": "terrace, row house, the",
+    "vietnamese": "nhà liền kề",
+    "dutchsentence": "Wij wonen in een rijtjeshuis met een kleine tuin.",
+    "englishtranslate": "We live in a row house with a small garden.",
+    "pronunciation": { "ipa": "ˈrɛitjəsˌɦœys", "phonetic": "ry-tyus-houys" }
+  },
+  {
+    "dutch": "ruim",
+    "english": "spacious",
+    "vietnamese": "rộng rãi",
+    "dutchsentence": "Onze nieuwe woonkamer is erg ruim.",
+    "englishtranslate": "Our new living room is very spacious.",
+    "pronunciation": { "ipa": "rœym", "phonetic": "rouym" }
+  },
+  {
+    "dutch": "ruimte, de",
+    "english": "space, the",
+    "vietnamese": "không gian",
+    "dutchsentence": "Er is niet genoeg ruimte voor deze kast.",
+    "englishtranslate": "There is not enough space for this closet.",
+    "pronunciation": { "ipa": "ˈrœymtə", "phonetic": "rouym-tuh" }
+  },
+  {
+    "dutch": "salontafel, de",
+    "english": "sidetable, the",
+    "vietnamese": "bàn trà (phòng khách)",
+    "dutchsentence": "Zet je kopje maar op de salontafel.",
+    "englishtranslate": "Just put your cup on the sidetable.",
+    "pronunciation": { "ipa": "saːˈlɔntaːfəl", "phonetic": "saa-lon-taa-ful" }
+  },
+  {
+    "dutch": "samenleving, de",
+    "english": "society, the",
+    "vietnamese": "xã hội",
+    "dutchsentence": "Iedereen moet bijdragen aan de samenleving.",
+    "englishtranslate": "Everyone must contribute to society.",
+    "pronunciation": { "ipa": "ˈsaːmə(n)ˌleːvɪŋ", "phonetic": "saa-mun-lay-ving" }
+  },
+  {
+    "dutch": "satijn, het",
+    "english": "satin, the",
+    "vietnamese": "vải sa-tanh, lụa bóng",
+    "dutchsentence": "Het dekbedovertrek is gemaakt van zacht satijn.",
+    "englishtranslate": "The quilt cover is made of soft satin.",
+    "pronunciation": { "ipa": "saːˈtɛin", "phonetic": "saa-tyn" }
+  },
+  {
+    "dutch": "slaapkamer, de",
+    "english": "bedroom, the",
+    "vietnamese": "phòng ngủ",
+    "dutchsentence": "Het is nog koud in de slaapkamer.",
+    "englishtranslate": "It is still cold in the bedroom.",
+    "pronunciation": { "ipa": "ˈslaːpkaːmər", "phonetic": "slaap-kaa-mur" }
+  },
+  {
+    "dutch": "soort, het",
+    "english": "kind of, the",
+    "vietnamese": "loại, hạng",
+    "dutchsentence": "Wat voor soort muziek vind je leuk?",
+    "englishtranslate": "What kind of music do you like?",
+    "pronunciation": { "ipa": "soːrt", "phonetic": "soart" }
+  },
+  {
+    "dutch": "spiegel, de",
+    "english": "mirror, the",
+    "vietnamese": "cái gương",
+    "dutchsentence": "Ik kijk in de spiegel om mijn haar te doen.",
+    "englishtranslate": "I look in the mirror to do my hair.",
+    "pronunciation": { "ipa": "ˈspiɣəl", "phonetic": "spee-khul" }
+  },
+  {
+    "dutch": "spul, het",
+    "english": "stuff, the",
+    "vietnamese": "đồ đạc",
+    "dutchsentence": "Er ligt overal spul op de grond.",
+    "englishtranslate": "There is stuff on the floor everywhere.",
+    "pronunciation": { "ipa": "spʏl", "phonetic": "spul" }
+  },
+  {
+    "dutch": "stripverhaal, het",
+    "english": "comic, the",
+    "vietnamese": "truyện tranh",
+    "dutchsentence": "Mijn zoon leest graag stripverhalen.",
+    "englishtranslate": "My son likes reading comics.",
+    "pronunciation": { "ipa": "ˈstrɪpvərɦaːl", "phonetic": "strip-vur-haal" }
+  },
+  {
+    "dutch": "studeerkamer, de",
+    "english": "study, the",
+    "vietnamese": "phòng làm việc, phòng học",
+    "dutchsentence": "Vader zit in zijn studeerkamer te werken.",
+    "englishtranslate": "Father is working in his study.",
+    "pronunciation": { "ipa": "styˈdeːrkaːmər", "phonetic": "stu-dayr-kaa-mur" }
+  },
+  {
+    "dutch": "symbool, het",
+    "english": "symbol, the",
+    "vietnamese": "biểu tượng",
+    "dutchsentence": "De tulp is een symbool voor Nederland.",
+    "englishtranslate": "The tulip is a symbol for the Netherlands.",
+    "pronunciation": { "ipa": "sɪmˈboːl", "phonetic": "sim-boal" }
+  },
+  {
+    "dutch": "te koop",
+    "english": "for sale",
+    "vietnamese": "đang rao bán",
+    "dutchsentence": "Dat mooie huis staat eindelijk te koop.",
+    "englishtranslate": "That beautiful house is finally for sale.",
+    "pronunciation": { "ipa": "tə koːp", "phonetic": "tuh koap" }
+  },
+  {
+    "dutch": "thuis",
+    "english": "at home",
+    "vietnamese": "ở nhà",
+    "dutchsentence": "Ik ben de hele dag thuis.",
+    "englishtranslate": "I am at home all day.",
+    "pronunciation": { "ipa": "tœys", "phonetic": "touys" }
+  },
+  {
+    "dutch": "tintje, het",
+    "english": "shade, the",
+    "vietnamese": "ánh, sắc thái nhẹ",
+    "dutchsentence": "De witte muren hebben een blauw tintje.",
+    "englishtranslate": "The white walls have a blue shade.",
+    "pronunciation": { "ipa": "ˈtɪntjə", "phonetic": "tint-yuh" }
+  },
+  {
+    "dutch": "tweedehands",
+    "english": "second-hand",
+    "vietnamese": "đồ cũ, đã qua sử dụng",
+    "dutchsentence": "Ik heb een tweedehands fiets gekocht.",
+    "englishtranslate": "I bought a second-hand bicycle.",
+    "pronunciation": { "ipa": "ˌtʋeːdəˈɦɑnts", "phonetic": "tway-duh-hants" }
+  },
+  {
+    "dutch": "type, het",
+    "english": "type, the",
+    "vietnamese": "kiểu, loại",
+    "dutchsentence": "Welk type auto heb jij?",
+    "englishtranslate": "What type of car do you have?",
+    "pronunciation": { "ipa": "ˈtipə", "phonetic": "tee-puh" }
+  },
+  {
+    "dutch": "uitproberen",
+    "english": "to try out",
+    "vietnamese": "dùng thử, trải nghiệm",
+    "dutchsentence": "Ik wil dat nieuwe recept graag uitproberen.",
+    "englishtranslate": "I would like to try out that new recipe.",
+    "pronunciation": { "ipa": "ˈœytproːbeːrə(n)", "phonetic": "ouyt-pro-bay-run" }
+  },
+  {
+    "dutch": "uitrusten",
+    "english": "to rest",
+    "vietnamese": "nghỉ ngơi",
+    "dutchsentence": "Na een lange wandeling moeten we even uitrusten.",
+    "englishtranslate": "After a long walk we need to rest for a bit.",
+    "pronunciation": { "ipa": "ˈœytrʏstə(n)", "phonetic": "ouyt-rus-tun" }
+  },
+  {
+    "dutch": "uitsluitend",
+    "english": "only, exclusively",
+    "vietnamese": "duy nhất, dành riêng",
+    "dutchsentence": "Dit product is uitsluitend hier verkrijgbaar.",
+    "englishtranslate": "This product is exclusively available here.",
+    "pronunciation": { "ipa": "ˈœytslœytənt", "phonetic": "ouyt-slouy-tunt" }
+  },
+  {
+    "dutch": "uitzicht, het",
+    "english": "view, the",
+    "vietnamese": "tầm nhìn, phong cảnh",
+    "dutchsentence": "Vanaf mijn balkon heb ik een mooi uitzicht.",
+    "englishtranslate": "From my balcony I have a beautiful view.",
+    "pronunciation": { "ipa": "ˈœytzɪxt", "phonetic": "ouyt-zikht" }
+  },
+  {
+    "dutch": "van mening zijn",
+    "english": "be of the opinion",
+    "vietnamese": "có ý kiến là, nghĩ rằng",
+    "dutchsentence": "Ik ben van mening dat we moeten gaan.",
+    "englishtranslate": "I am of the opinion that we should go.",
+    "pronunciation": { "ipa": "vɑn ˈmeːnɪŋ zɛin", "phonetic": "van may-ning zyn" }
+  },
+  {
+    "dutch": "veilig",
+    "english": "safe",
+    "vietnamese": "an toàn",
+    "dutchsentence": "Zorg dat je je gordel omdoet, dat is veilig.",
+    "englishtranslate": "Make sure to put on your seatbelt, that is safe.",
+    "pronunciation": { "ipa": "ˈveːləx", "phonetic": "vay-lukh" }
+  },
+  {
+    "dutch": "veranderen",
+    "english": "to change",
+    "vietnamese": "thay đổi",
+    "dutchsentence": "We gaan de kleur van de muren veranderen.",
+    "englishtranslate": "We are going to change the color of the walls.",
+    "pronunciation": { "ipa": "vərˈɑndərə(n)", "phonetic": "vur-an-duh-run" }
+  },
+  {
+    "dutch": "verhuizen",
+    "english": "to move (house)",
+    "vietnamese": "chuyển nhà",
+    "dutchsentence": "Volgende week gaan we verhuizen naar Utrecht.",
+    "englishtranslate": "Next week we are moving to Utrecht.",
+    "pronunciation": { "ipa": "vərˈɦœyzə(n)", "phonetic": "vur-houy-zun" }
+  },
+  {
+    "dutch": "verplaatsen",
+    "english": "to shift, move",
+    "vietnamese": "di chuyển, dời đi",
+    "dutchsentence": "Kun je de tafel een stukje verplaatsen?",
+    "englishtranslate": "Can you move the table a little bit?",
+    "pronunciation": { "ipa": "vərˈplaːtsə(n)", "phonetic": "vur-plaat-sun" }
+  },
+  {
+    "dutch": "vertrouwd",
+    "english": "familiar",
+    "vietnamese": "quen thuộc, tin cậy",
+    "dutchsentence": "Het voelt weer helemaal vertrouwd in mijn eigen huis.",
+    "englishtranslate": "It feels completely familiar again in my own house.",
+    "pronunciation": { "ipa": "vərˈtrʌut", "phonetic": "vur-trowt" }
+  },
+  {
+    "dutch": "vloer, de",
+    "english": "floor, the",
+    "vietnamese": "sàn nhà",
+    "dutchsentence": "Ik dweil de vloer elke zaterdag.",
+    "englishtranslate": "I mop the floor every Saturday.",
+    "pronunciation": { "ipa": "vluːr", "phonetic": "vloar" }
+  },
+  {
+    "dutch": "vloerbedekking, de",
+    "english": "carpet, the",
+    "vietnamese": "thảm trải sàn",
+    "dutchsentence": "We willen nieuwe vloerbedekking in de slaapkamer.",
+    "englishtranslate": "We want new carpet in the bedroom.",
+    "pronunciation": { "ipa": "ˈvluːrbəˌdɛkɪŋ", "phonetic": "vloar-buh-dek-ing" }
+  },
+  {
+    "dutch": "vloerkleed, het",
+    "english": "rug, the",
+    "vietnamese": "tấm thảm",
+    "dutchsentence": "Het vloerkleed ligt voor de bank.",
+    "englishtranslate": "The rug is lying in front of the sofa.",
+    "pronunciation": { "ipa": "ˈvluːrkleːt", "phonetic": "vloar-klayt" }
+  },
+  {
+    "dutch": "voldoende",
+    "english": "enough, sufficient",
+    "vietnamese": "đầy đủ",
+    "dutchsentence": "Er is voldoende plek voor iedereen.",
+    "englishtranslate": "There is sufficient space for everyone.",
+    "pronunciation": { "ipa": "vɔlˈdundə", "phonetic": "vol-doon-duh" }
+  },
+  {
+    "dutch": "voordeur, de",
+    "english": "front door, the",
+    "vietnamese": "cửa trước",
+    "dutchsentence": "Wie staat er voor de voordeur?",
+    "englishtranslate": "Who is at the front door?",
+    "pronunciation": { "ipa": "ˈvoːrdøːr", "phonetic": "voar-duhr" }
+  },
+  {
+    "dutch": "voorkant, de",
+    "english": "front, the",
+    "vietnamese": "mặt trước",
+    "dutchsentence": "De voorkant van het huis moet geverfd worden.",
+    "englishtranslate": "The front of the house needs to be painted.",
+    "pronunciation": { "ipa": "ˈvoːrkɑnt", "phonetic": "voar-kant" }
+  },
+  {
+    "dutch": "voorkomen",
+    "english": "to occur, happen",
+    "vietnamese": "xảy ra, xuất hiện",
+    "dutchsentence": "Zulke fouten komen vaker voor.",
+    "englishtranslate": "Such mistakes occur more often.",
+    "pronunciation": { "ipa": "voːrˈkoːmə(n)", "phonetic": "voar-koa-mun" }
+  },
+  {
+    "dutch": "vorig",
+    "english": "last, previous",
+    "vietnamese": "trước, vừa qua",
+    "dutchsentence": "Vorig jaar zijn we naar Italie geweest.",
+    "englishtranslate": "Last year we went to Italy.",
+    "pronunciation": { "ipa": "ˈvoːrəx", "phonetic": "voar-ukh" }
+  },
+  {
+    "dutch": "vorm, de",
+    "english": "shape, the",
+    "vietnamese": "hình dạng",
+    "dutchsentence": "De tafel heeft een ronde vorm.",
+    "englishtranslate": "The table has a round shape.",
+    "pronunciation": { "ipa": "vɔrm", "phonetic": "vorm" }
+  },
+  {
+    "dutch": "vrijstaand",
+    "english": "detached",
+    "vietnamese": "nhà biệt lập",
+    "dutchsentence": "Zij wonen in een vrijstaand huis op het platteland.",
+    "englishtranslate": "They live in a detached house in the countryside.",
+    "pronunciation": { "ipa": "ˈvrɛistaːnt", "phonetic": "vry-staant" }
+  },
+  {
+    "dutch": "vroeger",
+    "english": "before, in the past",
+    "vietnamese": "trước đây",
+    "dutchsentence": "Vroeger speelde ik veel buiten.",
+    "englishtranslate": "In the past, I played outside a lot.",
+    "pronunciation": { "ipa": "ˈvruɣər", "phonetic": "vroo-khur" }
+  },
+  {
+    "dutch": "waarde, de",
+    "english": "value, the",
+    "vietnamese": "giá trị",
+    "dutchsentence": "Wat is de waarde van dit antieke horloge?",
+    "englishtranslate": "What is the value of this antique watch?",
+    "pronunciation": { "ipa": "ˈʋaːrdə", "phonetic": "waar-duh" }
+  },
+  {
+    "dutch": "wasmachine, de",
+    "english": "washing machine, the",
+    "vietnamese": "máy giặt",
+    "dutchsentence": "De wasmachine staat op zolder.",
+    "englishtranslate": "The washing machine is in the attic.",
+    "pronunciation": { "ipa": "ˈʋɑsmɑˌʃinə", "phonetic": "was-mah-shee-nuh" }
+  },
+  {
+    "dutch": "wastafel, de",
+    "english": "sink, the",
+    "vietnamese": "bồn rửa mặt",
+    "dutchsentence": "Ik poets mijn tanden bij de wastafel.",
+    "englishtranslate": "I brush my teeth at the sink.",
+    "pronunciation": { "ipa": "ˈʋɑstaːfəl", "phonetic": "was-taa-ful" }
+  },
+  {
+    "dutch": "wekker, de",
+    "english": "alarm clock, the",
+    "vietnamese": "đồng hồ báo thức",
+    "dutchsentence": "Mijn wekker gaat om zeven uur af.",
+    "englishtranslate": "My alarm clock goes off at seven o'clock.",
+    "pronunciation": { "ipa": "ˈʋɛkər", "phonetic": "wek-ur" }
+  },
+  {
+    "dutch": "werkblad, het",
+    "english": "worktop, the",
+    "vietnamese": "mặt bàn làm việc",
+    "dutchsentence": "Er ligt veel papier op mijn werkblad.",
+    "englishtranslate": "There is a lot of paper on my worktop.",
+    "pronunciation": { "ipa": "ˈʋɛrkblɑt", "phonetic": "werk-blat" }
+  },
+  {
+    "dutch": "wiel, het",
+    "english": "wheel, the",
+    "vietnamese": "bánh xe",
+    "dutchsentence": "Het voorwiel van mijn fiets is kapot.",
+    "englishtranslate": "The front wheel of my bicycle is broken.",
+    "pronunciation": { "ipa": "ʋil", "phonetic": "weel" }
+  },
+  {
+    "dutch": "zeil, het",
+    "english": "linoleum, the",
+    "vietnamese": "vải bạt, tấm trải sàn",
+    "dutchsentence": "We hebben nieuw zeil in de keuken gelegd.",
+    "englishtranslate": "We laid new linoleum in the kitchen.",
+    "pronunciation": { "ipa": "zɛil", "phonetic": "zyl" }
+  }
+]
