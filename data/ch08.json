@@ -4,503 +4,791 @@
     "english": "last (past)",
     "vietnamese": "cuối cùng (đã qua)",
     "dutchsentence": "Afgelopen zomer waren we op vakantie in Spanje.",
-    "englishtranslate": "Last summer we were on holiday in Spain."
+    "englishtranslate": "Last summer we were on holiday in Spain.",
+    "pronunciation": {
+      "ipa": "ɑfɣəˈloːpə(n)",
+      "phonetic": "af-khuh-loh-pun"
+    }
   },
   {
     "dutch": "aflopen",
     "english": "to finish / to end (a time period)",
     "vietnamese": "kết thúc",
     "dutchsentence": "Onze vakantie zal volgende week aflopen.",
-    "englishtranslate": "Our holiday will end next week."
+    "englishtranslate": "Our holiday will end next week.",
+    "pronunciation": {
+      "ipa": "ˈɑfloːpə(n)",
+      "phonetic": "af-loh-pun"
+    }
   },
   {
     "dutch": "bankpas, de",
     "english": "cash card, the / bank card, the",
     "vietnamese": "thẻ rút tiền",
     "dutchsentence": "Heb je je bankpas meegenomen?",
-    "englishtranslate": "Did you bring your bank card?"
+    "englishtranslate": "Did you bring your bank card?",
+    "pronunciation": {
+      "ipa": "ˈbɑŋkpɑs",
+      "phonetic": "bank-pas"
+    }
   },
   {
     "dutch": "bedenken",
     "english": "to think (up) / to devise",
     "vietnamese": "suy nghĩ",
     "dutchsentence": "Ik moet bedenken wat we morgen gaan doen.",
-    "englishtranslate": "I have to think up what we are going to do tomorrow."
+    "englishtranslate": "I have to think up what we are going to do tomorrow.",
+    "pronunciation": {
+      "ipa": "bəˈdɛŋkə(n)",
+      "phonetic": "buh-deng-kun"
+    }
   },
   {
     "dutch": "beestje, het",
     "english": "little animal, the / bug, the",
     "vietnamese": "con vật nhỏ",
     "dutchsentence": "Er was een klein beestje in mijn tent.",
-    "englishtranslate": "There was a little bug/animal in my tent."
+    "englishtranslate": "There was a little bug/animal in my tent.",
+    "pronunciation": {
+      "ipa": "ˈbeːstjə",
+      "phonetic": "bays-tyuh"
+    }
   },
   {
     "dutch": "berg, de",
     "english": "mountain, the",
     "vietnamese": "núi",
     "dutchsentence": "We gaan de berg beklimmen.",
-    "englishtranslate": "We are going to climb the mountain."
+    "englishtranslate": "We are going to climb the mountain.",
+    "pronunciation": {
+      "ipa": "bɛrx",
+      "phonetic": "berkh"
+    }
   },
   {
     "dutch": "bezichtigen",
     "english": "to view / to sightsee",
     "vietnamese": "xem",
     "dutchsentence": "We willen de oude kerk bezichtigen.",
-    "englishtranslate": "We want to view/sightsee the old church."
+    "englishtranslate": "We want to view/sightsee the old church.",
+    "pronunciation": {
+      "ipa": "bəˈzɪxtəɣə(n)",
+      "phonetic": "buh-zik-tu-khun"
+    }
   },
   {
     "dutch": "bezoeken",
     "english": "to visit",
     "vietnamese": "đến thăm",
     "dutchsentence": "We gaan het museum bezoeken.",
-    "englishtranslate": "We are going to visit the museum."
+    "englishtranslate": "We are going to visit the museum.",
+    "pronunciation": {
+      "ipa": "bəˈzukə(n)",
+      "phonetic": "buh-zoo-kun"
+    }
   },
   {
     "dutch": "bikini, de",
     "english": "bikini, the",
     "vietnamese": "áo tắm hai mảnh",
     "dutchsentence": "Ze droeg een nieuwe bikini op het strand.",
-    "englishtranslate": "She wore a new bikini on the beach."
+    "englishtranslate": "She wore a new bikini on the beach.",
+    "pronunciation": {
+      "ipa": "biˈkini",
+      "phonetic": "bee-kee-nee"
+    }
   },
   {
     "dutch": "boeken",
     "english": "to book",
     "vietnamese": "đặt chỗ",
     "dutchsentence": "We hebben de reis gisteren geboekt.",
-    "englishtranslate": "We booked the trip yesterday."
+    "englishtranslate": "We booked the trip yesterday.",
+    "pronunciation": {
+      "ipa": "ˈbukə(n)",
+      "phonetic": "boo-kun"
+    }
   },
   {
     "dutch": "boot, de",
     "english": "boat, the",
     "vietnamese": "thuyền",
     "dutchsentence": "We gaan met de boot de zee op.",
-    "englishtranslate": "We are going out to sea by boat."
+    "englishtranslate": "We are going out to sea by boat.",
+    "pronunciation": {
+      "ipa": "boːt",
+      "phonetic": "boat"
+    }
   },
   {
     "dutch": "buren, de",
     "english": "neighbours, the",
     "vietnamese": "hàng xóm",
     "dutchsentence": "Onze buren waren ook op vakantie.",
-    "englishtranslate": "Our neighbours were also on holiday."
+    "englishtranslate": "Our neighbours were also on holiday.",
+    "pronunciation": {
+      "ipa": "ˈbyːrə(n)",
+      "phonetic": "bew-run"
+    }
   },
   {
     "dutch": "dromen",
     "english": "to dream",
     "vietnamese": "mơ",
     "dutchsentence": "Ik droomde vannacht over de bergen.",
-    "englishtranslate": "I dreamt about the mountains last night."
+    "englishtranslate": "I dreamt about the mountains last night.",
+    "pronunciation": {
+      "ipa": "ˈdroːmə(n)",
+      "phonetic": "droh-mun"
+    }
   },
   {
     "dutch": "eerder",
     "english": "before / earlier",
     "vietnamese": "trước",
     "dutchsentence": "Ik sta nu eerder op dan eerst.",
-    "englishtranslate": "I get up earlier now than before."
+    "englishtranslate": "I get up earlier now than before.",
+    "pronunciation": {
+      "ipa": "ˈeːrdər",
+      "phonetic": "air-dur"
+    }
   },
   {
     "dutch": "eergisteren",
     "english": "day before yesterday, the",
     "vietnamese": "hôm kia",
     "dutchsentence": "Eergisteren begon de excursie.",
-    "englishtranslate": "The excursion started the day before yesterday."
+    "englishtranslate": "The excursion started the day before yesterday.",
+    "pronunciation": {
+      "ipa": "ˈeːrɣɪstərə(n)",
+      "phonetic": "air-khis-tuh-run"
+    }
   },
   {
     "dutch": "eindelijk",
     "english": "finally",
     "vietnamese": "cuối cùng",
     "dutchsentence": "Eindelijk zijn we op onze vakantiebestemming!",
-    "englishtranslate": "Finally, we are at our holiday destination!"
+    "englishtranslate": "Finally, we are at our holiday destination!",
+    "pronunciation": {
+      "ipa": "ˈɛindələk",
+      "phonetic": "ine-duh-luk"
+    }
   },
   {
     "dutch": "excursie, de",
     "english": "excursion, the",
     "vietnamese": "chuyến tham quan",
     "dutchsentence": "De excursie naar de natuur was fantastisch.",
-    "englishtranslate": "The excursion to nature was fantastic."
+    "englishtranslate": "The excursion to nature was fantastic.",
+    "pronunciation": {
+      "ipa": "ɛksˈkʏrsi",
+      "phonetic": "eks-kur-see"
+    }
   },
   {
     "dutch": "fantastisch",
     "english": "fantastic",
     "vietnamese": "tuyệt vời",
     "dutchsentence": "Het was een fantastische vakantie.",
-    "englishtranslate": "It was a fantastic holiday."
+    "englishtranslate": "It was a fantastic holiday.",
+    "pronunciation": {
+      "ipa": "fɑnˈtɑstis",
+      "phonetic": "fan-tas-tis"
+    }
   },
   {
     "dutch": "foto, de",
     "english": "photograph, the",
     "vietnamese": "bức ảnh",
     "dutchsentence": "Zij maakte veel foto’s van de zee.",
-    "englishtranslate": "She took many photographs of the sea."
+    "englishtranslate": "She took many photographs of the sea.",
+    "pronunciation": {
+      "ipa": "ˈfoːtoː",
+      "phonetic": "foh-toh"
+    }
   },
   {
     "dutch": "geleden",
     "english": "ago",
     "vietnamese": "trước đây",
     "dutchsentence": "Ik zag hem twee weken geleden.",
-    "englishtranslate": "I saw him two weeks ago."
+    "englishtranslate": "I saw him two weeks ago.",
+    "pronunciation": {
+      "ipa": "ɣəˈleːdə(n)",
+      "phonetic": "khuh-lay-dun"
+    }
   },
   {
     "dutch": "gisteravond",
     "english": "yesterday evening",
     "vietnamese": "tối qua",
     "dutchsentence": "Gisteravond waren we wakker tot laat.",
-    "englishtranslate": "Yesterday evening we were awake until late."
+    "englishtranslate": "Yesterday evening we were awake until late.",
+    "pronunciation": {
+      "ipa": "ɣɪstərˈaːvɔnt",
+      "phonetic": "khis-tur-aa-vont"
+    }
   },
   {
     "dutch": "gisteren",
     "english": "yesterday",
     "vietnamese": "hôm qua",
     "dutchsentence": "Gisteren regende het de hele dag.",
-    "englishtranslate": "Yesterday it rained all day."
+    "englishtranslate": "Yesterday it rained all day.",
+    "pronunciation": {
+      "ipa": "ˈɣɪstərə(n)",
+      "phonetic": "khis-tuh-run"
+    }
   },
   {
     "dutch": "heerlijk",
     "english": "delicious, lovely, wonderful",
     "vietnamese": "ngon, đáng yêu, tuyệt vời",
     "dutchsentence": "Het was heerlijk weer op het strand.",
-    "englishtranslate": "The weather on the beach was lovely/wonderful."
+    "englishtranslate": "The weather on the beach was lovely/wonderful.",
+    "pronunciation": {
+      "ipa": "ˈɦɪːrlək",
+      "phonetic": "hair-luk"
+    }
   },
   {
     "dutch": "ijsje, het",
     "english": "ice cream, the",
     "vietnamese": "kem",
     "dutchsentence": "Zullen we een ijsje kopen?",
-    "englishtranslate": "Shall we buy an ice cream?"
+    "englishtranslate": "Shall we buy an ice cream?",
+    "pronunciation": {
+      "ipa": "ˈɛisjə",
+      "phonetic": "ice-yuh"
+    }
   },
   {
     "dutch": "insmeren",
     "english": "to rub on / to lather (sunscreen)",
     "vietnamese": "bôi",
     "dutchsentence": "Vergeet je niet in te smeren met zonnebrandcrème.",
-    "englishtranslate": "Don't forget to rub on sunscreen."
+    "englishtranslate": "Don't forget to rub on sunscreen.",
+    "pronunciation": {
+      "ipa": "ˈɪnsmeːrə(n)",
+      "phonetic": "in-smay-run"
+    }
   },
   {
     "dutch": "irriteren",
     "english": "to irritate",
     "vietnamese": "gây khó chịu",
     "dutchsentence": "Het constante lawaai irriteert mij.",
-    "englishtranslate": "The constant noise irritates me."
+    "englishtranslate": "The constant noise irritates me.",
+    "pronunciation": {
+      "ipa": "ɪriˈteːrə(n)",
+      "phonetic": "ee-ree-tay-run"
+    }
   },
   {
     "dutch": "kerk, de",
     "english": "church, the",
     "vietnamese": "nhà thờ",
     "dutchsentence": "In dit dorp staat een oude kerk.",
-    "englishtranslate": "There is an old church in this village."
+    "englishtranslate": "There is an old church in this village.",
+    "pronunciation": {
+      "ipa": "kɛrk",
+      "phonetic": "kerk"
+    }
   },
   {
     "dutch": "klimmen",
     "english": "to climb",
     "vietnamese": "leo",
     "dutchsentence": "Zij kunnen goed klimmen in de bergen.",
-    "englishtranslate": "They can climb well in the mountains."
+    "englishtranslate": "They can climb well in the mountains.",
+    "pronunciation": {
+      "ipa": "ˈklɪmə(n)",
+      "phonetic": "kli-mun"
+    }
   },
   {
     "dutch": "lol, de",
     "english": "fun, the (informal)",
     "vietnamese": "niềm vui",
     "dutchsentence": "We hebben veel lol gehad op de boot.",
-    "englishtranslate": "We had a lot of fun on the boat."
+    "englishtranslate": "We had a lot of fun on the boat.",
+    "pronunciation": {
+      "ipa": "lɔl",
+      "phonetic": "lol"
+    }
   },
   {
     "dutch": "museum, het",
     "english": "museum, the",
     "vietnamese": "bảo tàng",
     "dutchsentence": "Het museum is elke dag open.",
-    "englishtranslate": "The museum is open every day."
+    "englishtranslate": "The museum is open every day.",
+    "pronunciation": {
+      "ipa": "myˈzeːjʏm",
+      "phonetic": "mew-zay-yum"
+    }
   },
   {
     "dutch": "nacht, de",
     "english": "night, the",
     "vietnamese": "đêm",
     "dutchsentence": "We slapen acht uur per nacht.",
-    "englishtranslate": "We sleep eight hours per night."
+    "englishtranslate": "We sleep eight hours per night.",
+    "pronunciation": {
+      "ipa": "nɑxt",
+      "phonetic": "nakht"
+    }
   },
   {
     "dutch": "natuur, de",
     "english": "nature, the",
     "vietnamese": "thiên nhiên",
     "dutchsentence": "We houden van wandelen in de natuur.",
-    "englishtranslate": "We like walking in nature."
+    "englishtranslate": "We like walking in nature.",
+    "pronunciation": {
+      "ipa": "naːˈtyːr",
+      "phonetic": "naa-tewr"
+    }
   },
   {
     "dutch": "nodig",
     "english": "necessary",
     "vietnamese": "cần thiết",
     "dutchsentence": "Hebben we nog zonnebrandcrème nodig?",
-    "englishtranslate": "Do we still need sunscreen?"
+    "englishtranslate": "Do we still need sunscreen?",
+    "pronunciation": {
+      "ipa": "ˈnoːdəx",
+      "phonetic": "noh-dukh"
+    }
   },
   {
     "dutch": "olijf, de",
     "english": "olive, the",
     "vietnamese": "ô liu",
     "dutchsentence": "Ik lust geen olijven.",
-    "englishtranslate": "I don't like olives."
+    "englishtranslate": "I don't like olives.",
+    "pronunciation": {
+      "ipa": "oːˈlɛif",
+      "phonetic": "oh-life"
+    }
   },
   {
     "dutch": "onvoorzichtig",
     "english": "careless",
     "vietnamese": "bất cẩn",
     "dutchsentence": "Je was onvoorzichtig met je bankpas.",
-    "englishtranslate": "You were careless with your bank card."
+    "englishtranslate": "You were careless with your bank card.",
+    "pronunciation": {
+      "ipa": "ɔnvoːrˈzɪxtəx",
+      "phonetic": "on-vor-zik-tukh"
+    }
   },
   {
     "dutch": "opruimen",
     "english": "to tidy up",
     "vietnamese": "dọn dẹp",
     "dutchsentence": "Na de vakantie moet ik mijn koffers opruimen.",
-    "englishtranslate": "After the holiday I have to tidy up my suitcases."
+    "englishtranslate": "After the holiday I have to tidy up my suitcases.",
+    "pronunciation": {
+      "ipa": "ˈɔprœymə(n)",
+      "phonetic": "op-roy-mun"
+    }
   },
   {
     "dutch": "paar, het",
     "english": "couple, the",
     "vietnamese": "cặp đôi",
     "dutchsentence": "Een leuk paar wandelschoenen is nodig voor de bergen.",
-    "englishtranslate": "A nice pair of hiking boots is necessary for the mountains."
+    "englishtranslate": "A nice pair of hiking boots is necessary for the mountains.",
+    "pronunciation": {
+      "ipa": "paːr",
+      "phonetic": "paar"
+    }
   },
   {
     "dutch": "pakken",
     "english": "to pack",
     "vietnamese": "đóng gói",
     "dutchsentence": "Heb je je zwembroek gepakt?",
-    "englishtranslate": "Did you pack your bathing trunks?"
+    "englishtranslate": "Did you pack your bathing trunks?",
+    "pronunciation": {
+      "ipa": "ˈpɑkə(n)",
+      "phonetic": "pa-kun"
+    }
   },
   {
     "dutch": "paspoort, het",
     "english": "passport, the",
     "vietnamese": "hộ chiếu",
     "dutchsentence": "Zonder paspoort kun je niet reizen.",
-    "englishtranslate": "You cannot travel without a passport."
+    "englishtranslate": "You cannot travel without a passport.",
+    "pronunciation": {
+      "ipa": "ˈpɑspoːrt",
+      "phonetic": "pas-port"
+    }
   },
   {
     "dutch": "rit, de",
     "english": "trip, the / ride, the",
     "vietnamese": "chuyến đi",
     "dutchsentence": "De rit met de boot was erg vermoeiend.",
-    "englishtranslate": "The trip/ride by boat was very tiring."
+    "englishtranslate": "The trip/ride by boat was very tiring.",
+    "pronunciation": {
+      "ipa": "rɪt",
+      "phonetic": "rit"
+    }
   },
   {
     "dutch": "ruzie, de",
     "english": "quarrel, the",
     "vietnamese": "cãi nhau",
     "dutchsentence": "Het stel had ruzie over de vakantiebestemming.",
-    "englishtranslate": "The couple had a quarrel about the holiday destination."
+    "englishtranslate": "The couple had a quarrel about the holiday destination.",
+    "pronunciation": {
+      "ipa": "ˈryzi",
+      "phonetic": "rew-zee"
+    }
   },
   {
     "dutch": "schaatsen",
     "english": "to ice skate",
     "vietnamese": "trượt băng",
     "dutchsentence": "In de winter gaan we schaatsen.",
-    "englishtranslate": "In the winter we go ice skating."
+    "englishtranslate": "In the winter we go ice skating.",
+    "pronunciation": {
+      "ipa": "ˈsxaːtsə(n)",
+      "phonetic": "skhaat-sun"
+    }
   },
   {
     "dutch": "school, de",
     "english": "school, the",
     "vietnamese": "trường học",
     "dutchsentence": "De school is gesloten wegens de vakantie.",
-    "englishtranslate": "The school is closed because of the holiday."
+    "englishtranslate": "The school is closed because of the holiday.",
+    "pronunciation": {
+      "ipa": "sxoːl",
+      "phonetic": "skhohl"
+    }
   },
   {
     "dutch": "slapen",
     "english": "to sleep",
     "vietnamese": "ngủ",
     "dutchsentence": "Ik heb vannacht heel goed geslapen.",
-    "englishtranslate": "I slept very well last night."
+    "englishtranslate": "I slept very well last night.",
+    "pronunciation": {
+      "ipa": "ˈslaːpə(n)",
+      "phonetic": "slaa-pun"
+    }
   },
   {
     "dutch": "souvenir, het",
     "english": "souvenir, the",
     "vietnamese": "quà lưu niệm",
     "dutchsentence": "Ik kocht een souvenir voor mijn buren.",
-    "englishtranslate": "I bought a souvenir for my neighbours."
+    "englishtranslate": "I bought a souvenir for my neighbours.",
+    "pronunciation": {
+      "ipa": "suvəˈnir",
+      "phonetic": "soo-vuh-neer"
+    }
   },
   {
     "dutch": "strand, het",
     "english": "beach, the",
     "vietnamese": "bãi biển",
     "dutchsentence": "We lagen de hele dag op het strand.",
-    "englishtranslate": "We lay on the beach all day."
+    "englishtranslate": "We lay on the beach all day.",
+    "pronunciation": {
+      "ipa": "strɑnt",
+      "phonetic": "strant"
+    }
   },
   {
     "dutch": "stress, de",
     "english": "stress, the",
     "vietnamese": "căng thẳng",
     "dutchsentence": "Ik heb veel stress van mijn werk.",
-    "englishtranslate": "I have a lot of stress from my work."
+    "englishtranslate": "I have a lot of stress from my work.",
+    "pronunciation": {
+      "ipa": "strɛs",
+      "phonetic": "stres"
+    }
   },
   {
     "dutch": "stressvol",
     "english": "stressful",
     "vietnamese": "căng thẳng",
     "dutchsentence": "Dit was een stressvolle week op school.",
-    "englishtranslate": "This was a stressful week at school."
+    "englishtranslate": "This was a stressful week at school.",
+    "pronunciation": {
+      "ipa": "ˈstrɛsfɔl",
+      "phonetic": "stres-fol"
+    }
   },
   {
     "dutch": "strijken",
     "english": "to iron",
     "vietnamese": "ủi",
     "dutchsentence": "Ik moet al mijn kleren nog strijken.",
-    "englishtranslate": "I still need to iron all my clothes."
+    "englishtranslate": "I still need to iron all my clothes.",
+    "pronunciation": {
+      "ipa": "ˈstrɛikə(n)",
+      "phonetic": "strike-un"
+    }
   },
   {
     "dutch": "tent, de",
     "english": "tent, the",
     "vietnamese": "lều",
     "dutchsentence": "We sliepen in een tent op de camping.",
-    "englishtranslate": "We slept in a tent at the campsite."
+    "englishtranslate": "We slept in a tent at the campsite.",
+    "pronunciation": {
+      "ipa": "tɛnt",
+      "phonetic": "tent"
+    }
   },
   {
     "dutch": "trouwens",
     "english": "by the way",
     "vietnamese": "nhân tiện",
     "dutchsentence": "Trouwens, heb je je paspoort al gepakt?",
-    "englishtranslate": "By the way, did you already pack your passport?"
+    "englishtranslate": "By the way, did you already pack your passport?",
+    "pronunciation": {
+      "ipa": "ˈtrɑu̯əns",
+      "phonetic": "trow-uns"
+    }
   },
   {
     "dutch": "trui, de",
     "english": "jumper, the / sweater, the",
     "vietnamese": "áo len",
     "dutchsentence": "Neem een warme trui mee naar de bergen.",
-    "englishtranslate": "Bring a warm jumper/sweater to the mountains."
+    "englishtranslate": "Bring a warm jumper/sweater to the mountains.",
+    "pronunciation": {
+      "ipa": "trœy",
+      "phonetic": "troy"
+    }
   },
   {
     "dutch": "vakantie, de",
     "english": "holidays, the / vacation, the",
     "vietnamese": "kỳ nghỉ",
     "dutchsentence": "Wanneer begint jullie vakantie?",
-    "englishtranslate": "When do your holidays/vacation start?"
+    "englishtranslate": "When do your holidays/vacation start?",
+    "pronunciation": {
+      "ipa": "vaːˈkɑnsi",
+      "phonetic": "vaa-kan-see"
+    }
   },
   {
     "dutch": "vakantiebestemming, de",
     "english": "holiday destination, the",
     "vietnamese": "điểm đến kỳ nghỉ",
     "dutchsentence": "Italië is een populaire vakantiebestemming.",
-    "englishtranslate": "Italy is a popular holiday destination."
+    "englishtranslate": "Italy is a popular holiday destination.",
+    "pronunciation": {
+      "ipa": "vaːˈkɑnsibəˌstɛmɪŋ",
+      "phonetic": "vaa-kan-see-buh-ste-ming"
+    }
   },
   {
     "dutch": "van tevoren",
     "english": "beforehand / in advance",
     "vietnamese": "trước",
     "dutchsentence": "Je moet van tevoren je hotel boeken.",
-    "englishtranslate": "You must book your hotel beforehand/in advance."
+    "englishtranslate": "You must book your hotel beforehand/in advance.",
+    "pronunciation": {
+      "ipa": "vɑn təˈvoːrə(n)",
+      "phonetic": "van tuh-voh-run"
+    }
   },
   {
     "dutch": "vanmorgen",
     "english": "this morning",
     "vietnamese": "sáng nay",
     "dutchsentence": "Vanmorgen zijn we wakker geworden van de zon.",
-    "englishtranslate": "This morning we woke up from the sun."
+    "englishtranslate": "This morning we woke up from the sun.",
+    "pronunciation": {
+      "ipa": "vɑnˈmɔrɣə(n)",
+      "phonetic": "van-mor-khun"
+    }
   },
   {
     "dutch": "vannacht",
     "english": "last night",
     "vietnamese": "đêm qua",
     "dutchsentence": "Ik heb vannacht slecht geslapen.",
-    "englishtranslate": "I slept badly last night."
+    "englishtranslate": "I slept badly last night.",
+    "pronunciation": {
+      "ipa": "vɑˈnɑxt",
+      "phonetic": "va-nakht"
+    }
   },
   {
     "dutch": "varen",
     "english": "to travel by boat / to sail",
     "vietnamese": "đi thuyền",
     "dutchsentence": "We gaan een uur varen op de rivier.",
-    "englishtranslate": "We are going to sail/travel by boat for an hour on the river."
+    "englishtranslate": "We are going to sail/travel by boat for an hour on the river.",
+    "pronunciation": {
+      "ipa": "ˈvaːrə(n)",
+      "phonetic": "vaa-run"
+    }
   },
   {
     "dutch": "verbranden",
     "english": "to get a sunburn",
     "vietnamese": "bị cháy nắng",
     "dutchsentence": "Pas op, je kunt gemakkelijk verbranden in de zon.",
-    "englishtranslate": "Be careful, you can easily get a sunburn in the sun."
+    "englishtranslate": "Be careful, you can easily get a sunburn in the sun.",
+    "pronunciation": {
+      "ipa": "vərˈbrɑndə(n)",
+      "phonetic": "ver-bran-dun"
+    }
   },
   {
     "dutch": "vermaken (zich -)",
     "english": "to enjoy oneself",
     "vietnamese": "tận hưởng",
     "dutchsentence": "We vermaken ons goed op het strand.",
-    "englishtranslate": "We are enjoying ourselves well on the beach."
+    "englishtranslate": "We are enjoying ourselves well on the beach.",
+    "pronunciation": {
+      "ipa": "vərˈmaːkə(n) (zɪx)",
+      "phonetic": "ver-maa-kun (zik)"
+    }
   },
   {
     "dutch": "vermoeiend",
     "english": "tiring",
     "vietnamese": "mệt mỏi",
     "dutchsentence": "De klim naar de berg was erg vermoeiend.",
-    "englishtranslate": "The climb to the mountain was very tiring."
+    "englishtranslate": "The climb to the mountain was very tiring.",
+    "pronunciation": {
+      "ipa": "vərˈmujənt",
+      "phonetic": "ver-moo-yunt"
+    }
   },
   {
     "dutch": "vorig",
     "english": "last (previous)",
     "vietnamese": "trước",
     "dutchsentence": "Vorig jaar reisden we naar Azië.",
-    "englishtranslate": "Last year we travelled to Asia."
+    "englishtranslate": "Last year we travelled to Asia.",
+    "pronunciation": {
+      "ipa": "ˈvoːrəx",
+      "phonetic": "voh-rukh"
+    }
   },
   {
     "dutch": "waarschuwen",
     "english": "to warn",
     "vietnamese": "cảnh báo",
     "dutchsentence": "Ik heb je gewaarschuwd voor de zon.",
-    "englishtranslate": "I warned you about the sun."
+    "englishtranslate": "I warned you about the sun.",
+    "pronunciation": {
+      "ipa": "ˈʋaːrsxyu̯ə(n)",
+      "phonetic": "waar-skhoo-un"
+    }
   },
   {
     "dutch": "wakker",
     "english": "awake",
     "vietnamese": "tỉnh táo",
     "dutchsentence": "Was je vannacht wakker van het geluid?",
-    "englishtranslate": "Were you awake last night from the noise?"
+    "englishtranslate": "Were you awake last night from the noise?",
+    "pronunciation": {
+      "ipa": "ˈʋɑkər",
+      "phonetic": "wa-kur"
+    }
   },
   {
     "dutch": "wennen",
     "english": "to get used to",
     "vietnamese": "quen với",
     "dutchsentence": "Het kost tijd om aan een nieuwe plek te wennen.",
-    "englishtranslate": "It takes time to get used to a new place."
+    "englishtranslate": "It takes time to get used to a new place.",
+    "pronunciation": {
+      "ipa": "ˈʋɛnə(n)",
+      "phonetic": "we-nun"
+    }
   },
   {
     "dutch": "winkelen",
     "english": "to shop",
     "vietnamese": "mua sắm",
     "dutchsentence": "We gaan winkelen voor souvenirs.",
-    "englishtranslate": "We are going shopping for souvenirs."
+    "englishtranslate": "We are going shopping for souvenirs.",
+    "pronunciation": {
+      "ipa": "ˈʋɪŋkələ(n)",
+      "phonetic": "wing-kuh-lun"
+    }
   },
   {
     "dutch": "zee, de",
     "english": "sea, the",
     "vietnamese": "biển",
     "dutchsentence": "De zee is heel blauw vandaag.",
-    "englishtranslate": "The sea is very blue today."
+    "englishtranslate": "The sea is very blue today.",
+    "pronunciation": {
+      "ipa": "zeː",
+      "phonetic": "zay"
+    }
   },
   {
     "dutch": "zomer, de",
     "english": "summer, the",
     "vietnamese": "mùa hè",
     "dutchsentence": "Ik hou van de zomer.",
-    "englishtranslate": "I love the summer."
+    "englishtranslate": "I love the summer.",
+    "pronunciation": {
+      "ipa": "ˈzoːmər",
+      "phonetic": "zoh-mur"
+    }
   },
   {
     "dutch": "zonnebrandcrème, de",
     "english": "sun tan lotion, the / sunscreen, the",
     "vietnamese": "kem chống nắng",
     "dutchsentence": "Smeer je in met zonnebrandcrème.",
-    "englishtranslate": "Rub yourself with sun tan lotion/sunscreen."
+    "englishtranslate": "Rub yourself with sun tan lotion/sunscreen.",
+    "pronunciation": {
+      "ipa": "ˈzɔnəbrɑntkreːmə",
+      "phonetic": "zo-nuh-brant-kray-muh"
+    }
   },
   {
     "dutch": "zonnen",
     "english": "to sunbathe",
     "vietnamese": "tắm nắng",
     "dutchsentence": "Zij ligt graag te zonnen op het strand.",
-    "englishtranslate": "She likes to sunbathe on the beach."
+    "englishtranslate": "She likes to sunbathe on the beach.",
+    "pronunciation": {
+      "ipa": "ˈzɔnə(n)",
+      "phonetic": "zo-nun"
+    }
   },
   {
     "dutch": "zwembad, het",
     "english": "swimming pool, the",
     "vietnamese": "hồ bơi",
     "dutchsentence": "Het hotel heeft een groot zwembad.",
-    "englishtranslate": "The hotel has a large swimming pool."
+    "englishtranslate": "The hotel has a large swimming pool.",
+    "pronunciation": {
+      "ipa": "ˈzʋɛmbɑt",
+      "phonetic": "zwem-bat"
+    }
   },
   {
     "dutch": "zwembroek, de",
     "english": "bathing trunks, the",
     "vietnamese": "quần bơi",
     "dutchsentence": "Vergeet je zwembroek niet voor het zwembad.",
-    "englishtranslate": "Don't forget your bathing trunks for the swimming pool."
+    "englishtranslate": "Don't forget your bathing trunks for the swimming pool.",
+    "pronunciation": {
+      "ipa": "ˈzʋɛmbruk",
+      "phonetic": "zwem-brook"
+    }
   }
 ]

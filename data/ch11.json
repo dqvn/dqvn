@@ -1,0 +1,986 @@
+[
+  {
+    "dutch": "aanbellen",
+    "english": "to ring the bell",
+    "vietnamese": "bấm chuông",
+    "dutchsentence": "Je moet aanbellen als je bij de voordeur bent.",
+    "englishtranslate": "You have to ring the bell when you are at the front door.",
+    "pronunciation": { "ipa": "ˈaːnˌbɛlə(n)", "phonetic": "aan-bell-un" }
+  },
+  {
+    "dutch": "aanhef, de",
+    "english": "opening words, the",
+    "vietnamese": "lời mở đầu",
+    "dutchsentence": "De aanhef van de brief is erg formeel.",
+    "englishtranslate": "The opening words of the letter are very formal.",
+    "pronunciation": { "ipa": "ˈaːnɦɛf", "phonetic": "aan-hef" }
+  },
+  {
+    "dutch": "aankloppen",
+    "english": "to knock",
+    "vietnamese": "gõ cửa",
+    "dutchsentence": "Wil je eerst aankloppen voordat je binnenkomt?",
+    "englishtranslate": "Would you like to knock first before coming in?",
+    "pronunciation": { "ipa": "ˈaːnˌklɔpə(n)", "phonetic": "aan-klop-un" }
+  },
+  {
+    "dutch": "aanwezig",
+    "english": "present",
+    "vietnamese": "hiện diện, có mặt",
+    "dutchsentence": "Alle studenten zijn vandaag aanwezig.",
+    "englishtranslate": "All students are present today.",
+    "pronunciation": { "ipa": "aːnˈʋeːzəx", "phonetic": "aan-way-zuh-kh" }
+  },
+  {
+    "dutch": "afsluiting, de",
+    "english": "closing words, the",
+    "vietnamese": "lời kết thúc",
+    "dutchsentence": "Vergeet de afsluiting niet onderaan je e-mail.",
+    "englishtranslate": "Don't forget the closing words at the bottom of your email.",
+    "pronunciation": { "ipa": "ˈɑfˌslœytɪŋ", "phonetic": "af-slout-ing" }
+  },
+  {
+    "dutch": "baas, de",
+    "english": "boss, the",
+    "vietnamese": "ông chủ",
+    "dutchsentence": "Mijn baas is vandaag erg tevreden.",
+    "englishtranslate": "My boss is very satisfied today.",
+    "pronunciation": { "ipa": "baːs", "phonetic": "baas" }
+  },
+  {
+    "dutch": "beïnvloeden",
+    "english": "to influence",
+    "vietnamese": "ảnh hưởng",
+    "dutchsentence": "Het weer kan je humeur beïnvloeden.",
+    "englishtranslate": "The weather can influence your mood.",
+    "pronunciation": { "ipa": "bəˈʔɪnvluːdə(n)", "phonetic": "buh-in-vloo-dun" }
+  },
+  {
+    "dutch": "bekijken",
+    "english": "to look at",
+    "vietnamese": "quan sát, xem",
+    "dutchsentence": "We gaan de nieuwe schilderijen bekijken.",
+    "englishtranslate": "We are going to look at the new paintings.",
+    "pronunciation": { "ipa": "bəˈkɛikə(n)", "phonetic": "buh-kye-kun" }
+  },
+  {
+    "dutch": "beklimmen",
+    "english": "to climb",
+    "vietnamese": "leo lên",
+    "dutchsentence": "Zij gaan dit weekend de berg beklimmen.",
+    "englishtranslate": "They are going to climb the mountain this weekend.",
+    "pronunciation": { "ipa": "bəˈklɪmə(n)", "phonetic": "buh-klim-un" }
+  },
+  {
+    "dutch": "beste",
+    "english": "dear",
+    "vietnamese": "thân mến",
+    "dutchsentence": "Beste meneer Jansen, hoe gaat het met u?",
+    "englishtranslate": "Dear Mr. Jansen, how are you?",
+    "pronunciation": { "ipa": "ˈbɛstə", "phonetic": "bes-tuh" }
+  },
+  {
+    "dutch": "bewolkt",
+    "english": "cloudy",
+    "vietnamese": "nhiều mây",
+    "dutchsentence": "Het is vandaag een bewolkte dag.",
+    "englishtranslate": "It is a cloudy day today.",
+    "pronunciation": { "ipa": "bəˈʋɔlkt", "phonetic": "buh-wolkt" }
+  },
+  {
+    "dutch": "bezienswaardigheid, de",
+    "english": "sight, the",
+    "vietnamese": "thắng cảnh",
+    "dutchsentence": "De Eiffeltoren is een bekende bezienswaardigheid.",
+    "englishtranslate": "The Eiffel Tower is a famous sight.",
+    "pronunciation": { "ipa": "bəˌziːnzˈʋaːrdəxɦɛit", "phonetic": "buh-zeens-waer-duh-hayt" }
+  },
+  {
+    "dutch": "bezigheid, de",
+    "english": "activity, the",
+    "vietnamese": "hoạt động, việc bận",
+    "dutchsentence": "Mijn favoriete bezigheid is lezen.",
+    "englishtranslate": "My favorite activity is reading.",
+    "pronunciation": { "ipa": "ˈbeːzəxɦɛit", "phonetic": "bay-zuh-hayt" }
+  },
+  {
+    "dutch": "binnenland, het",
+    "english": "inland",
+    "vietnamese": "nội địa",
+    "dutchsentence": "In het binnenland is het warmer dan aan de kust.",
+    "englishtranslate": "Inland it is warmer than at the coast.",
+    "pronunciation": { "ipa": "ˈbɪnənlɑnt", "phonetic": "bin-un-lant" }
+  },
+  {
+    "dutch": "bloem, de",
+    "english": "flower, the",
+    "vietnamese": "bông hoa",
+    "dutchsentence": "Er staat een mooie bloem in de tuin.",
+    "englishtranslate": "There is a beautiful flower in the garden.",
+    "pronunciation": { "ipa": "blum", "phonetic": "bloom" }
+  },
+  {
+    "dutch": "boerderij, de",
+    "english": "farm, the",
+    "vietnamese": "nông trại",
+    "dutchsentence": "De boer werkt elke dag op de boerderij.",
+    "englishtranslate": "The farmer works on the farm every day.",
+    "pronunciation": { "ipa": "ˌbuːrdəˈrɛi", "phonetic": "boor-duh-rye" }
+  },
+  {
+    "dutch": "bui, de",
+    "english": "shower, downpour, the",
+    "vietnamese": "cơn mưa rào",
+    "dutchsentence": "Er komt een flinke bui aan.",
+    "englishtranslate": "A heavy downpour is coming.",
+    "pronunciation": { "ipa": "bœy", "phonetic": "bouy" }
+  },
+  {
+    "dutch": "café, het",
+    "english": "bar, the",
+    "vietnamese": "quán cà phê, quán rượu",
+    "dutchsentence": "Zullen we een biertje drinken in het café?",
+    "englishtranslate": "Shall we have a beer in the bar?",
+    "pronunciation": { "ipa": "kaːˈfeː", "phonetic": "ka-fay" }
+  },
+  {
+    "dutch": "circa",
+    "english": "approximately",
+    "vietnamese": "khoảng chừng",
+    "dutchsentence": "De reis duurt circa drie uur.",
+    "englishtranslate": "The trip takes approximately three hours.",
+    "pronunciation": { "ipa": "ˈsɪrkaː", "phonetic": "seer-ka" }
+  },
+  {
+    "dutch": "daardoor",
+    "english": "consequently",
+    "vietnamese": "do đó",
+    "dutchsentence": "Het regende hard, daardoor kwamen we te laat.",
+    "englishtranslate": "It rained hard, consequently we were late.",
+    "pronunciation": { "ipa": "daːrˈdoːr", "phonetic": "daer-dore" }
+  },
+  {
+    "dutch": "dijk, de",
+    "english": "dike, the",
+    "vietnamese": "đê",
+    "dutchsentence": "Nederland heeft veel dijken om het water tegen te houden.",
+    "englishtranslate": "The Netherlands has many dikes to keep the water out.",
+    "pronunciation": { "ipa": "dɛik", "phonetic": "dayk" }
+  },
+  {
+    "dutch": "dorp, het",
+    "english": "village, the",
+    "vietnamese": "ngôi làng",
+    "dutchsentence": "Ik woon in een klein dorp vlakbij Utrecht.",
+    "englishtranslate": "I live in a small village near Utrecht.",
+    "pronunciation": { "ipa": "dɔrp", "phonetic": "dorp" }
+  },
+  {
+    "dutch": "draaien",
+    "english": "to turn",
+    "vietnamese": "xoay, quay",
+    "dutchsentence": "Kun je de sleutel in het slot draaien?",
+    "englishtranslate": "Can you turn the key in the lock?",
+    "pronunciation": { "ipa": "ˈdraːiə(n)", "phonetic": "dry-un" }
+  },
+  {
+    "dutch": "droog",
+    "english": "dry",
+    "vietnamese": "khô",
+    "dutchsentence": "Gelukkig is het vandaag droog gebleven.",
+    "englishtranslate": "Fortunately, it stayed dry today.",
+    "pronunciation": { "ipa": "droːx", "phonetic": "drokh" }
+  },
+  {
+    "dutch": "eiland, het",
+    "english": "island, the",
+    "vietnamese": "hòn đảo",
+    "dutchsentence": "Texel is een Nederlands eiland.",
+    "englishtranslate": "Texel is a Dutch island.",
+    "pronunciation": { "ipa": "ˈɛilɑnt", "phonetic": "eye-lant" }
+  },
+  {
+    "dutch": "gat, het",
+    "english": "hole, the",
+    "vietnamese": "cái lỗ",
+    "dutchsentence": "Er zit een gat in mijn sok.",
+    "englishtranslate": "There is a hole in my sock.",
+    "pronunciation": { "ipa": "xɑt", "phonetic": "khat" }
+  },
+  {
+    "dutch": "gebied, het",
+    "english": "area, the",
+    "vietnamese": "khu vực",
+    "dutchsentence": "Dit gebied is erg populair bij toeristen.",
+    "englishtranslate": "This area is very popular with tourists.",
+    "pronunciation": { "ipa": "ɣəˈbit", "phonetic": "khuh-beet" }
+  },
+  {
+    "dutch": "gebouw, het",
+    "english": "building, the",
+    "vietnamese": "tòa nhà",
+    "dutchsentence": "Het nieuwe gebouw is erg modern.",
+    "englishtranslate": "The new building is very modern.",
+    "pronunciation": { "ipa": "ɣəˈbʌu", "phonetic": "khuh-bau" }
+  },
+  {
+    "dutch": "gebruiken",
+    "english": "to use",
+    "vietnamese": "sử dụng",
+    "dutchsentence": "Mag ik je pen even gebruiken?",
+    "englishtranslate": "May I use your pen for a moment?",
+    "pronunciation": { "ipa": "ɣəˈbrœykə(n)", "phonetic": "khuh-brow-kun" }
+  },
+  {
+    "dutch": "gematigd",
+    "english": "temperate",
+    "vietnamese": "ôn hòa",
+    "dutchsentence": "Nederland heeft een gematigd klimaat.",
+    "englishtranslate": "The Netherlands has a temperate climate.",
+    "pronunciation": { "ipa": "ɣəˈmaːtəxt", "phonetic": "khuh-mah-tukht" }
+  },
+  {
+    "dutch": "gemiddeld",
+    "english": "average",
+    "vietnamese": "trung bình",
+    "dutchsentence": "De gemiddelde temperatuur in juli is 20 graden.",
+    "englishtranslate": "The average temperature in July is 20 degrees.",
+    "pronunciation": { "ipa": "ɣəˈmɪdəlt", "phonetic": "khuh-mid-ult" }
+  },
+  {
+    "dutch": "gevoel, het",
+    "english": "feeling, the",
+    "vietnamese": "cảm giác",
+    "dutchsentence": "Ik heb een goed gevoel over dit plan.",
+    "englishtranslate": "I have a good feeling about this plan.",
+    "pronunciation": { "ipa": "ɣəˈvul", "phonetic": "khuh-vool" }
+  },
+  {
+    "dutch": "gids, de",
+    "english": "guide, the",
+    "vietnamese": "hướng dẫn viên",
+    "dutchsentence": "De gids vertelt ons over de geschiedenis van de stad.",
+    "englishtranslate": "The guide tells us about the city's history.",
+    "pronunciation": { "ipa": "ɣɪts", "phonetic": "khits" }
+  },
+  {
+    "dutch": "glas, het",
+    "english": "glass, the",
+    "vietnamese": "ly, cốc, kính",
+    "dutchsentence": "Zal ik een glas water voor je inschenken?",
+    "englishtranslate": "Shall I pour a glass of water for you?",
+    "pronunciation": { "ipa": "ɣlɑs", "phonetic": "khlas" }
+  },
+  {
+    "dutch": "graad, de",
+    "english": "degree, the",
+    "vietnamese": "độ",
+    "dutchsentence": "Het is vandaag dertig graden buiten.",
+    "englishtranslate": "It is thirty degrees outside today.",
+    "pronunciation": { "ipa": "ɣraːt", "phonetic": "khraat" }
+  },
+  {
+    "dutch": "groet, de",
+    "english": "salutation, the",
+    "vietnamese": "lời chào",
+    "dutchsentence": "Hij gaf een vriendelijke groet aan zijn buren.",
+    "englishtranslate": "He gave a friendly salutation to his neighbors.",
+    "pronunciation": { "ipa": "ɣrut", "phonetic": "khroot" }
+  },
+  {
+    "dutch": "groetjes, de",
+    "english": "regards",
+    "vietnamese": "thân ái",
+    "dutchsentence": "Groetjes aan je familie!",
+    "englishtranslate": "Regards to your family!",
+    "pronunciation": { "ipa": "ˈɣrutjəs", "phonetic": "khroot-yus" }
+  },
+  {
+    "dutch": "hagelen",
+    "english": "to hail",
+    "vietnamese": "mưa đá",
+    "dutchsentence": "Pas op, het begint hard te hagelen.",
+    "englishtranslate": "Watch out, it's starting to hail hard.",
+    "pronunciation": { "ipa": "ˈɦaːɣələ(n)", "phonetic": "hah-khuh-lun" }
+  },
+  {
+    "dutch": "heet",
+    "english": "hot",
+    "vietnamese": "nóng",
+    "dutchsentence": "De thee is nog veel te heet om te drinken.",
+    "englishtranslate": "The tea is still much too hot to drink.",
+    "pronunciation": { "ipa": "ɦeːt", "phonetic": "hayt" }
+  },
+  {
+    "dutch": "heuvel, de",
+    "english": "hill, the",
+    "vietnamese": "ngọn đồi",
+    "dutchsentence": "We fietsten de heuvel op.",
+    "englishtranslate": "We cycled up the hill.",
+    "pronunciation": { "ipa": "ˈɦøːvəl", "phonetic": "huh-vul" }
+  },
+  {
+    "dutch": "in de verte",
+    "english": "in the distance",
+    "vietnamese": "phía xa",
+    "dutchsentence": "Ik zie een schip in de verte.",
+    "englishtranslate": "I see a ship in the distance.",
+    "pronunciation": { "ipa": "ɪn də ˈvɛrtə", "phonetic": "in duh ver-tuh" }
+  },
+  {
+    "dutch": "ineens",
+    "english": "suddenly",
+    "vietnamese": "đột nhiên",
+    "dutchsentence": "Ineens begon het te regenen.",
+    "englishtranslate": "Suddenly it started to rain.",
+    "pronunciation": { "ipa": "iˈneːns", "phonetic": "ee-nayns" }
+  },
+  {
+    "dutch": "informeel",
+    "english": "informal",
+    "vietnamese": "không chính thức",
+    "dutchsentence": "Op deze verjaardag is de sfeer erg informeel.",
+    "englishtranslate": "At this birthday party, the atmosphere is very informal.",
+    "pronunciation": { "ipa": "ˌɪnfɔrˈmeːl", "phonetic": "in-for-mayl" }
+  },
+  {
+    "dutch": "kaal",
+    "english": "barren, empty",
+    "vietnamese": "trọc, trống trải",
+    "dutchsentence": "In de winter zijn de bomen kaal.",
+    "englishtranslate": "In winter, the trees are barren.",
+    "pronunciation": { "ipa": "kaːl", "phonetic": "kaal" }
+  },
+  {
+    "dutch": "kamperen",
+    "english": "to camp out",
+    "vietnamese": "cắm trại",
+    "dutchsentence": "Wij gaan elke zomer kamperen in Frankrijk.",
+    "englishtranslate": "We go camping in France every summer.",
+    "pronunciation": { "ipa": "kɑmˈpeːrə(n)", "phonetic": "kam-pay-run" }
+  },
+  {
+    "dutch": "kans, de",
+    "english": "chance, the",
+    "vietnamese": "cơ hội",
+    "dutchsentence": "Er is een grote kans dat het morgen gaat regenen.",
+    "englishtranslate": "There is a big chance that it will rain tomorrow.",
+    "pronunciation": { "ipa": "kɑns", "phonetic": "kans" }
+  },
+  {
+    "dutch": "kant, de",
+    "english": "side, the",
+    "vietnamese": "phía, cạnh",
+    "dutchsentence": "Loop aan de rechterkant van de weg.",
+    "englishtranslate": "Walk on the right side of the road.",
+    "pronunciation": { "ipa": "kɑnt", "phonetic": "kant" }
+  },
+  {
+    "dutch": "klaar",
+    "english": "finished, ready",
+    "vietnamese": "xong, sẵn sàng",
+    "dutchsentence": "Ben je klaar met je huiswerk?",
+    "englishtranslate": "Are you finished with your homework?",
+    "pronunciation": { "ipa": "klaːr", "phonetic": "klaer" }
+  },
+  {
+    "dutch": "kloppen",
+    "english": "to be right",
+    "vietnamese": "đúng, khớp",
+    "dutchsentence": "Dat antwoord lijkt te kloppen.",
+    "englishtranslate": "That answer seems to be right.",
+    "pronunciation": { "ipa": "ˈklɔpə(n)", "phonetic": "klop-un" }
+  },
+  {
+    "dutch": "koel",
+    "english": "cool",
+    "vietnamese": "mát mẻ",
+    "dutchsentence": "Het is lekker koel onder de boom.",
+    "englishtranslate": "It is nice and cool under the tree.",
+    "pronunciation": { "ipa": "kul", "phonetic": "kool" }
+  },
+  {
+    "dutch": "koningin, de",
+    "english": "queen, the",
+    "vietnamese": "nữ hoàng",
+    "dutchsentence": "De koningin hield een toespraak.",
+    "englishtranslate": "The queen gave a speech.",
+    "pronunciation": { "ipa": "ˌkoːnɪˈŋɪn", "phonetic": "koh-nin-yin" }
+  },
+  {
+    "dutch": "koud",
+    "english": "cold",
+    "vietnamese": "lạnh",
+    "dutchsentence": "In de winter kan het erg koud zijn.",
+    "englishtranslate": "In winter it can be very cold.",
+    "pronunciation": { "ipa": "kɑut", "phonetic": "kout" }
+  },
+  {
+    "dutch": "kruis, het",
+    "english": "cross, the",
+    "vietnamese": "chữ thập, dấu chéo",
+    "dutchsentence": "Zet een kruis in het juiste vakje.",
+    "englishtranslate": "Put a cross in the correct box.",
+    "pronunciation": { "ipa": "krœys", "phonetic": "krous" }
+  },
+  {
+    "dutch": "kust, de",
+    "english": "coast, the",
+    "vietnamese": "bờ biển",
+    "dutchsentence": "We maken een wandeling langs de kust.",
+    "englishtranslate": "We are taking a walk along the coast.",
+    "pronunciation": { "ipa": "kʏst", "phonetic": "kust" }
+  },
+  {
+    "dutch": "landschap, het",
+    "english": "landscape, the",
+    "vietnamese": "phong cảnh",
+    "dutchsentence": "Het Nederlandse landschap is erg plat.",
+    "englishtranslate": "The Dutch landscape is very flat.",
+    "pronunciation": { "ipa": "ˈlɑntsχɑp", "phonetic": "lant-skhap" }
+  },
+  {
+    "dutch": "later",
+    "english": "later",
+    "vietnamese": "lát nữa, sau này",
+    "dutchsentence": "Ik bel je later vandaag wel even.",
+    "englishtranslate": "I'll call you later today.",
+    "pronunciation": { "ipa": "ˈlaːtər", "phonetic": "laa-tur" }
+  },
+  {
+    "dutch": "lente, de",
+    "english": "spring, the",
+    "vietnamese": "mùa xuân",
+    "dutchsentence": "In de lente beginnen de bloemen te bloeien.",
+    "englishtranslate": "In spring, the flowers start to bloom.",
+    "pronunciation": { "ipa": "ˈlɛntə", "phonetic": "len-tuh" }
+  },
+  {
+    "dutch": "lied, het",
+    "english": "song, the",
+    "vietnamese": "bài hát",
+    "dutchsentence": "Dit is een heel mooi lied.",
+    "englishtranslate": "This is a very beautiful song.",
+    "pronunciation": { "ipa": "lit", "phonetic": "leet" }
+  },
+  {
+    "dutch": "liefs",
+    "english": "love",
+    "vietnamese": "thân mến (cuối thư)",
+    "dutchsentence": "Liefs, je zus.",
+    "englishtranslate": "Love, your sister.",
+    "pronunciation": { "ipa": "lifs", "phonetic": "leefs" }
+  },
+  {
+    "dutch": "lieve",
+    "english": "dear",
+    "vietnamese": "thân yêu",
+    "dutchsentence": "Lieve oma, hoe gaat het met u?",
+    "englishtranslate": "Dear grandma, how are you?",
+    "pronunciation": { "ipa": "ˈlivə", "phonetic": "lee-vuh" }
+  },
+  {
+    "dutch": "lucht, de",
+    "english": "sky, the",
+    "vietnamese": "bầu trời",
+    "dutchsentence": "De lucht is vandaag helemaal blauw.",
+    "englishtranslate": "The sky is completely blue today.",
+    "pronunciation": { "ipa": "lʏxt", "phonetic": "lukht" }
+  },
+  {
+    "dutch": "meel, het",
+    "english": "flour, the",
+    "vietnamese": "bột mì",
+    "dutchsentence": "Ik heb meel nodig om brood te bakken.",
+    "englishtranslate": "I need flour to bake bread.",
+    "pronunciation": { "ipa": "meːl", "phonetic": "mayl" }
+  },
+  {
+    "dutch": "meer, het",
+    "english": "lake, the",
+    "vietnamese": "hồ",
+    "dutchsentence": "We gaan zwemmen in het meer.",
+    "englishtranslate": "We are going swimming in the lake.",
+    "pronunciation": { "ipa": "meːr", "phonetic": "maer" }
+  },
+  {
+    "dutch": "merken",
+    "english": "to notice",
+    "vietnamese": "nhận thấy",
+    "dutchsentence": "Ik merk dat het kouder wordt.",
+    "englishtranslate": "I notice that it is getting colder.",
+    "pronunciation": { "ipa": "ˈmɛrkə(n)", "phonetic": "mer-kun" }
+  },
+  {
+    "dutch": "metro, de",
+    "english": "tube, subway, the",
+    "vietnamese": "tàu điện ngầm",
+    "dutchsentence": "Ik ga met de metro naar mijn werk.",
+    "englishtranslate": "I go to work by subway.",
+    "pronunciation": { "ipa": "ˈmeːtroː", "phonetic": "may-tro" }
+  },
+  {
+    "dutch": "min",
+    "english": "minus",
+    "vietnamese": "âm",
+    "dutchsentence": "Het vriest, het is min drie graden.",
+    "englishtranslate": "It's freezing, it is minus three degrees.",
+    "pronunciation": { "ipa": "mɪn", "phonetic": "min" }
+  },
+  {
+    "dutch": "misten",
+    "english": "to be foggy",
+    "vietnamese": "có sương mù",
+    "dutchsentence": "Het kan in de herfst erg misten op de weg.",
+    "englishtranslate": "It can be very foggy on the road in autumn.",
+    "pronunciation": { "ipa": "ˈmɪstə(n)", "phonetic": "mis-tun" }
+  },
+  {
+    "dutch": "molen, de",
+    "english": "windmill, the",
+    "vietnamese": "cối xay gió",
+    "dutchsentence": "Er staat een oude molen in het veld.",
+    "englishtranslate": "There is an old windmill in the field.",
+    "pronunciation": { "ipa": "ˈmoːlə(n)", "phonetic": "mo-lun" }
+  },
+  {
+    "dutch": "musicus, de",
+    "english": "musician, the",
+    "vietnamese": "nhạc sĩ",
+    "dutchsentence": "De musicus speelt prachtig viool.",
+    "englishtranslate": "The musician plays the violin beautifully.",
+    "pronunciation": { "ipa": "ˈmyzikʏs", "phonetic": "mew-zee-kus" }
+  },
+  {
+    "dutch": "nat",
+    "english": "wet",
+    "vietnamese": "ướt",
+    "dutchsentence": "Mijn kleren zijn nat van de regen.",
+    "englishtranslate": "My clothes are wet from the rain.",
+    "pronunciation": { "ipa": "nɑt", "phonetic": "nat" }
+  },
+  {
+    "dutch": "neerslag, de",
+    "english": "rainfall, the",
+    "vietnamese": "lượng mưa",
+    "dutchsentence": "Er wordt vandaag veel neerslag verwacht.",
+    "englishtranslate": "A lot of rainfall is expected today.",
+    "pronunciation": { "ipa": "ˈneːrslɑx", "phonetic": "naer-slakh" }
+  },
+  {
+    "dutch": "noorden, het",
+    "english": "north, the",
+    "vietnamese": "hướng bắc",
+    "dutchsentence": "Groningen ligt in het noorden van Nederland.",
+    "englishtranslate": "Groningen is located in the north of the Netherlands.",
+    "pronunciation": { "ipa": "ˈnoːrdə(n)", "phonetic": "nor-dun" }
+  },
+  {
+    "dutch": "onder",
+    "english": "under",
+    "vietnamese": "dưới",
+    "dutchsentence": "De kat ligt onder de tafel.",
+    "englishtranslate": "The cat is lying under the table.",
+    "pronunciation": { "ipa": "ˈɔndər", "phonetic": "on-dur" }
+  },
+  {
+    "dutch": "oosten, het",
+    "english": "east, the",
+    "vietnamese": "hướng đông",
+    "dutchsentence": "De zon komt op in het oosten.",
+    "englishtranslate": "The sun rises in the east.",
+    "pronunciation": { "ipa": "ˈoːstə(n)", "phonetic": "oh-stun" }
+  },
+  {
+    "dutch": "opklaring, de",
+    "english": "sunny period, the",
+    "vietnamese": "hửng nắng",
+    "dutchsentence": "Na de regen komt er een opklaring.",
+    "englishtranslate": "After the rain there will be a sunny period.",
+    "pronunciation": { "ipa": "ˈɔpklaːrɪŋ", "phonetic": "op-klaar-ing" }
+  },
+  {
+    "dutch": "overdag",
+    "english": "in the daytime",
+    "vietnamese": "ban ngày",
+    "dutchsentence": "Overdag werk ik op kantoor.",
+    "englishtranslate": "In the daytime I work at the office.",
+    "pronunciation": { "ipa": "ˌoːvərˈdɑx", "phonetic": "oh-vur-dakh" }
+  },
+  {
+    "dutch": "park, het",
+    "english": "park, the",
+    "vietnamese": "công viên",
+    "dutchsentence": "Zullen we gaan wandelen in het park?",
+    "englishtranslate": "Shall we go for a walk in the park?",
+    "pronunciation": { "ipa": "pɑrk", "phonetic": "park" }
+  },
+  {
+    "dutch": "periode, de",
+    "english": "period, the",
+    "vietnamese": "giai đoạn",
+    "dutchsentence": "Dit was een moeilijke periode voor hem.",
+    "englishtranslate": "This was a difficult period for him.",
+    "pronunciation": { "ipa": "peːriˈoːdə", "phonetic": "pay-ree-oh-duh" }
+  },
+  {
+    "dutch": "plat",
+    "english": "flat",
+    "vietnamese": "bằng phẳng",
+    "dutchsentence": "Het land in deze provincie is heel plat.",
+    "englishtranslate": "The land in this province is very flat.",
+    "pronunciation": { "ipa": "plɑt", "phonetic": "plat" }
+  },
+  {
+    "dutch": "platteland, het",
+    "english": "countryside, the",
+    "vietnamese": "nông thôn",
+    "dutchsentence": "Ik vind het heerlijk rustig op het platteland.",
+    "englishtranslate": "I love the peace and quiet in the countryside.",
+    "pronunciation": { "ipa": "ˈplɑtəˌlɑnt", "phonetic": "plat-uh-lant" }
+  },
+  {
+    "dutch": "provincie, de",
+    "english": "province, the",
+    "vietnamese": "tỉnh",
+    "dutchsentence": "Zeeland is een provincie in Nederland.",
+    "englishtranslate": "Zeeland is a province in the Netherlands.",
+    "pronunciation": { "ipa": "proːˈvɪnsi", "phonetic": "pro-vin-see" }
+  },
+  {
+    "dutch": "regen, de",
+    "english": "rain, the",
+    "vietnamese": "mưa",
+    "dutchsentence": "Ik heb een paraplu nodig voor de regen.",
+    "englishtranslate": "I need an umbrella for the rain.",
+    "pronunciation": { "ipa": "ˈreːɣə(n)", "phonetic": "ray-khun" }
+  },
+  {
+    "dutch": "regenen",
+    "english": "to rain",
+    "vietnamese": "mưa (động từ)",
+    "dutchsentence": "Het gaat de hele middag regenen.",
+    "englishtranslate": "It is going to rain all afternoon.",
+    "pronunciation": { "ipa": "ˈreːɣənə(n)", "phonetic": "ray-khuh-nun" }
+  },
+  {
+    "dutch": "rivier, de",
+    "english": "river, the",
+    "vietnamese": "con sông",
+    "dutchsentence": "De Rijn is een grote rivier.",
+    "englishtranslate": "The Rhine is a large river.",
+    "pronunciation": { "ipa": "riˈvir", "phonetic": "ree-veer" }
+  },
+  {
+    "dutch": "rondkijken",
+    "english": "to look around",
+    "vietnamese": "nhìn xung quanh",
+    "dutchsentence": "Ik wil gewoon even rondkijken in de winkel.",
+    "englishtranslate": "I just want to look around in the store for a bit.",
+    "pronunciation": { "ipa": "ˈrɔntˌkɛikə(n)", "phonetic": "ront-kye-kun" }
+  },
+  {
+    "dutch": "schijnen",
+    "english": "to shine (sun)",
+    "vietnamese": "chiếu sáng",
+    "dutchsentence": "De zon gaat morgen weer schijnen.",
+    "englishtranslate": "The sun will shine again tomorrow.",
+    "pronunciation": { "ipa": "ˈsχɛinə(n)", "phonetic": "skhye-nun" }
+  },
+  {
+    "dutch": "skiën",
+    "english": "to go skiing",
+    "vietnamese": "trượt tuyết",
+    "dutchsentence": "In de winter gaan we vaak skiën.",
+    "englishtranslate": "In winter we often go skiing.",
+    "pronunciation": { "ipa": "ˈskiə(n)", "phonetic": "skee-un" }
+  },
+  {
+    "dutch": "sloot, de",
+    "english": "ditch, the",
+    "vietnamese": "mương, rãnh",
+    "dutchsentence": "Er zit water in de sloot naast de weg.",
+    "englishtranslate": "There is water in the ditch next to the road.",
+    "pronunciation": { "ipa": "sloːt", "phonetic": "slote" }
+  },
+  {
+    "dutch": "sneeuw, de",
+    "english": "snow, the",
+    "vietnamese": "tuyết",
+    "dutchsentence": "De kinderen spelen in de sneeuw.",
+    "englishtranslate": "The children are playing in the snow.",
+    "pronunciation": { "ipa": "snu", "phonetic": "snow" }
+  },
+  {
+    "dutch": "sneeuwen",
+    "english": "to snow",
+    "vietnamese": "tuyết rơi",
+    "dutchsentence": "Het begint eindelijk te sneeuwen.",
+    "englishtranslate": "It's finally starting to snow.",
+    "pronunciation": { "ipa": "ˈsnuə(n)", "phonetic": "snow-un" }
+  },
+  {
+    "dutch": "spijten",
+    "english": "to be sorry",
+    "vietnamese": "xin lỗi, hối tiếc",
+    "dutchsentence": "Het spijt me dat ik te laat ben.",
+    "englishtranslate": "I am sorry that I am late.",
+    "pronunciation": { "ipa": "ˈspɛitə(n)", "phonetic": "spye-tun" }
+  },
+  {
+    "dutch": "stad, de",
+    "english": "town, the",
+    "vietnamese": "thành phố",
+    "dutchsentence": "Amsterdam is een grote stad.",
+    "englishtranslate": "Amsterdam is a big town.",
+    "pronunciation": { "ipa": "stɑt", "phonetic": "stat" }
+  },
+  {
+    "dutch": "stormen",
+    "english": "to blow up a gale",
+    "vietnamese": "bão tố",
+    "dutchsentence": "Het gaat vannacht flink stormen.",
+    "englishtranslate": "It's going to blow up a gale tonight.",
+    "pronunciation": { "ipa": "ˈstɔrmə(n)", "phonetic": "stor-mun" }
+  },
+  {
+    "dutch": "systeem, het",
+    "english": "system, the",
+    "vietnamese": "hệ thống",
+    "dutchsentence": "Het nieuwe systeem werkt veel beter.",
+    "englishtranslate": "The new system works much better.",
+    "pronunciation": { "ipa": "sɪsˈteːm", "phonetic": "sis-taym" }
+  },
+  {
+    "dutch": "tegenwind, de",
+    "english": "head wind, the",
+    "vietnamese": "gió ngược",
+    "dutchsentence": "Ik had veel tegenwind tijdens het fietsen.",
+    "englishtranslate": "I had a lot of head wind while cycling.",
+    "pronunciation": { "ipa": "ˈteːɣə(n)ˌʋɪnt", "phonetic": "tay-khun-wint" }
+  },
+  {
+    "dutch": "temperatuur, de",
+    "english": "temperature, the",
+    "vietnamese": "nhiệt độ",
+    "dutchsentence": "De temperatuur is vandaag erg aangenaam.",
+    "englishtranslate": "The temperature is very pleasant today.",
+    "pronunciation": { "ipa": "tɛmpəraːˈtyːr", "phonetic": "tem-puh-raa-tewr" }
+  },
+  {
+    "dutch": "terugbrengen",
+    "english": "to bring back",
+    "vietnamese": "mang trở lại",
+    "dutchsentence": "Kun je dit boek terugbrengen naar de bibliotheek?",
+    "englishtranslate": "Can you bring this book back to the library?",
+    "pronunciation": { "ipa": "təˈrʏxˌbrɛŋə(n)", "phonetic": "tuh-rukh-breng-un" }
+  },
+  {
+    "dutch": "terugkomen",
+    "english": "to come back, to return",
+    "vietnamese": "quay trở lại",
+    "dutchsentence": "Wanneer kom je weer terug van vakantie?",
+    "englishtranslate": "When do you come back from vacation?",
+    "pronunciation": { "ipa": "təˈrʏxˌkoːmə(n)", "phonetic": "tuh-rukh-koh-mun" }
+  },
+  {
+    "dutch": "tocht, de",
+    "english": "trip, the",
+    "vietnamese": "chuyến đi",
+    "dutchsentence": "We maakten een mooie tocht door de bergen.",
+    "englishtranslate": "We made a beautiful trip through the mountains.",
+    "pronunciation": { "ipa": "tɔxt", "phonetic": "tokht" }
+  },
+  {
+    "dutch": "toerist, de",
+    "english": "tourist, the",
+    "vietnamese": "khách du lịch",
+    "dutchsentence": "Er zijn veel toeristen in Amsterdam.",
+    "englishtranslate": "There are many tourists in Amsterdam.",
+    "pronunciation": { "ipa": "tuˈrɪst", "phonetic": "too-rist" }
+  },
+  {
+    "dutch": "toren, de",
+    "english": "tower, the",
+    "vietnamese": "tòa tháp",
+    "dutchsentence": "Je kunt de toren beklimmen voor een mooi uitzicht.",
+    "englishtranslate": "You can climb the tower for a beautiful view.",
+    "pronunciation": { "ipa": "ˈtoːrə(n)", "phonetic": "toh-run" }
+  },
+  {
+    "dutch": "Venetië",
+    "english": "Venice",
+    "vietnamese": "Thành phố Venice",
+    "dutchsentence": "Venetië is beroemd om zijn kanalen.",
+    "englishtranslate": "Venice is famous for its canals.",
+    "pronunciation": { "ipa": "vəˈneːtsijə", "phonetic": "vuh-nay-tsee-yuh" }
+  },
+  {
+    "dutch": "verderop",
+    "english": "further on",
+    "vietnamese": "xa hơn một chút",
+    "dutchsentence": "De supermarkt is een stukje verderop.",
+    "englishtranslate": "The supermarket is a bit further on.",
+    "pronunciation": { "ipa": "vɛrdərˈɔp", "phonetic": "ver-dur-op" }
+  },
+  {
+    "dutch": "verschil, het",
+    "english": "difference, the",
+    "vietnamese": "sự khác biệt",
+    "dutchsentence": "Wat is het verschil tussen deze twee opties?",
+    "englishtranslate": "What is the difference between these two options?",
+    "pronunciation": { "ipa": "vərˈsχɪl", "phonetic": "vur-skhil" }
+  },
+  {
+    "dutch": "voet, de",
+    "english": "foot, the",
+    "vietnamese": "bàn chân",
+    "dutchsentence": "Ik heb last van mijn linkervoet.",
+    "englishtranslate": "My left foot is hurting.",
+    "pronunciation": { "ipa": "vut", "phonetic": "voot" }
+  },
+  {
+    "dutch": "voorstel, het",
+    "english": "proposal, the",
+    "vietnamese": "đề nghị, đề xuất",
+    "dutchsentence": "Dat is een interessant voorstel.",
+    "englishtranslate": "That is an interesting proposal.",
+    "pronunciation": { "ipa": "ˈvoːrstɛl", "phonetic": "vore-stel" }
+  },
+  {
+    "dutch": "vriezen",
+    "english": "to freeze",
+    "vietnamese": "đóng băng",
+    "dutchsentence": "Het gaat vannacht vriezen.",
+    "englishtranslate": "It is going to freeze tonight.",
+    "pronunciation": { "ipa": "ˈvrizə(n)", "phonetic": "vree-zun" }
+  },
+  {
+    "dutch": "waaien",
+    "english": "to blow (wind)",
+    "vietnamese": "thổi (gió)",
+    "dutchsentence": "Het begint hard te waaien.",
+    "englishtranslate": "It's starting to blow hard.",
+    "pronunciation": { "ipa": "ˈʋaːiə(n)", "phonetic": "waa-yun" }
+  },
+  {
+    "dutch": "weer, het",
+    "english": "weather, the",
+    "vietnamese": "thời tiết",
+    "dutchsentence": "Wat voor weer is het vandaag?",
+    "englishtranslate": "What is the weather like today?",
+    "pronunciation": { "ipa": "ʋeːr", "phonetic": "waer" }
+  },
+  {
+    "dutch": "weerbericht, het",
+    "english": "weather report, the",
+    "vietnamese": "bản tin thời tiết",
+    "dutchsentence": "Heb je het weerbericht al gehoord?",
+    "englishtranslate": "Have you heard the weather report yet?",
+    "pronunciation": { "ipa": "ˈʋeːrbərɪxt", "phonetic": "waer-buh-rikht" }
+  },
+  {
+    "dutch": "weersverwachting, de",
+    "english": "weather forecast, the",
+    "vietnamese": "dự báo thời tiết",
+    "dutchsentence": "De weersverwachting voor morgen is goed.",
+    "englishtranslate": "The weather forecast for tomorrow is good.",
+    "pronunciation": { "ipa": "ˈʋeːrsfərˌʋɑxtɪŋ", "phonetic": "waers-fur-wakh-ting" }
+  },
+  {
+    "dutch": "weiland, het",
+    "english": "pasture, meadow, the",
+    "vietnamese": "đồng cỏ",
+    "dutchsentence": "Er staan koeien in het weiland.",
+    "englishtranslate": "There are cows in the meadow.",
+    "pronunciation": { "ipa": "ˈʋɛilɑnt", "phonetic": "way-lant" }
+  },
+  {
+    "dutch": "west",
+    "english": "west",
+    "vietnamese": "hướng tây",
+    "dutchsentence": "De wind komt uit het westen.",
+    "englishtranslate": "The wind is coming from the west.",
+    "pronunciation": { "ipa": "ʋɛst", "phonetic": "west" }
+  },
+  {
+    "dutch": "wind, de",
+    "english": "wind, the",
+    "vietnamese": "gió",
+    "dutchsentence": "De wind waait door de bomen.",
+    "englishtranslate": "The wind blows through the trees.",
+    "pronunciation": { "ipa": "ʋɪnt", "phonetic": "wint" }
+  },
+  {
+    "dutch": "winter, de",
+    "english": "winter, the",
+    "vietnamese": "mùa đông",
+    "dutchsentence": "Ik hou van schaatsen in de winter.",
+    "englishtranslate": "I love skating in the winter.",
+    "pronunciation": { "ipa": "ˈʋɪntər", "phonetic": "win-tur" }
+  },
+  {
+    "dutch": "winters",
+    "english": "wintery",
+    "vietnamese": "như mùa đông",
+    "dutchsentence": "Het ziet er buiten heel winters uit.",
+    "englishtranslate": "It looks very wintery outside.",
+    "pronunciation": { "ipa": "ˈʋɪntərs", "phonetic": "win-turs" }
+  },
+  {
+    "dutch": "wolk, de",
+    "english": "cloud, the",
+    "vietnamese": "đám mây",
+    "dutchsentence": "Ik zie een witte wolk in de lucht.",
+    "englishtranslate": "I see a white cloud in the sky.",
+    "pronunciation": { "ipa": "ʋɔlk", "phonetic": "wolk" }
+  },
+  {
+    "dutch": "zacht",
+    "english": "mild",
+    "vietnamese": "dịu, êm, mềm",
+    "dutchsentence": "Het is een zachte winter dit jaar.",
+    "englishtranslate": "It is a mild winter this year.",
+    "pronunciation": { "ipa": "zɑxt", "phonetic": "zakht" }
+  },
+  {
+    "dutch": "zak, de",
+    "english": "bag, the",
+    "vietnamese": "cái túi",
+    "dutchsentence": "Ik heb een zak appels gekocht.",
+    "englishtranslate": "I bought a bag of apples.",
+    "pronunciation": { "ipa": "zɑk", "phonetic": "zak" }
+  },
+  {
+    "dutch": "zeeklimaat, het",
+    "english": "sea climate, the",
+    "vietnamese": "khí hậu biển",
+    "dutchsentence": "Een zeeklimaat zorgt voor veel regen.",
+    "englishtranslate": "A sea climate causes a lot of rain.",
+    "pronunciation": { "ipa": "ˈzeːkliˌmaːt", "phonetic": "zay-klee-maat" }
+  },
+  {
+    "dutch": "zeer",
+    "english": "extremely",
+    "vietnamese": "rất, cực kỳ",
+    "dutchsentence": "Het is vandaag zeer warm.",
+    "englishtranslate": "It is extremely warm today.",
+    "pronunciation": { "ipa": "zeːr", "phonetic": "zaer" }
+  },
+  {
+    "dutch": "zuiden, het",
+    "english": "south, the",
+    "vietnamese": "hướng nam",
+    "dutchsentence": "Wij gaan op vakantie naar het zuiden.",
+    "englishtranslate": "We are going on holiday to the south.",
+    "pronunciation": { "ipa": "ˈzœydə(n)", "phonetic": "zouy-dun" }
+  },
+  {
+    "dutch": "zwak",
+    "english": "weak",
+    "vietnamese": "yếu",
+    "dutchsentence": "Er staat een zwakke wind vandaag.",
+    "englishtranslate": "There is a weak wind today.",
+    "pronunciation": { "ipa": "zʋɑk", "phonetic": "zwak" }
+  }
+]

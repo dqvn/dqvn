@@ -1,0 +1,810 @@
+[
+  {
+    "dutch": "allergisch",
+    "english": "allergic",
+    "vietnamese": "dị ứng",
+    "dutchsentence": "Ik ben allergisch voor katten.",
+    "englishtranslate": "I am allergic to cats.",
+    "pronunciation": { "ipa": "ɑˈlɛrɣis", "phonetic": "ah-ler-khis" }
+  },
+  {
+    "dutch": "bang",
+    "english": "afraid, scared",
+    "vietnamese": "sợ hãi",
+    "dutchsentence": "Het kind is bang voor de tandarts.",
+    "englishtranslate": "The child is afraid of the dentist.",
+    "pronunciation": { "ipa": "bɑŋ", "phonetic": "bang" }
+  },
+  {
+    "dutch": "beschadigen",
+    "english": "to damage",
+    "vietnamese": "làm hư hại, làm tổn thương",
+    "dutchsentence": "Roken kan je longen ernstig beschadigen.",
+    "englishtranslate": "Smoking can seriously damage your lungs.",
+    "pronunciation": { "ipa": "bəˈsχaːdəɣə(n)", "phonetic": "buh-scaa-duh-khun" }
+  },
+  {
+    "dutch": "beterschap",
+    "english": "get well",
+    "vietnamese": "chúc mau khỏe",
+    "dutchsentence": "Beterschap! Ik hoop dat je je snel beter voelt.",
+    "englishtranslate": "Get well soon! I hope you feel better soon.",
+    "pronunciation": { "ipa": "ˈbeːtərsχɑp", "phonetic": "bay-tur-skhap" }
+  },
+  {
+    "dutch": "bloeden",
+    "english": "to bleed",
+    "vietnamese": "chảy máu",
+    "dutchsentence": "De wond begint weer te bloeden.",
+    "englishtranslate": "The wound is starting to bleed again.",
+    "pronunciation": { "ipa": "ˈbludə(n)", "phonetic": "bloo-dun" }
+  },
+  {
+    "dutch": "buikgriep, de",
+    "english": "tummy flu, the",
+    "vietnamese": "cúm dạ dày, tiêu chảy cấp",
+    "dutchsentence": "Heel de klas heeft last van buikgriep.",
+    "englishtranslate": "The whole class is suffering from the tummy flu.",
+    "pronunciation": { "ipa": "ˈbœykˌɣrip", "phonetic": "bouyk-khreep" }
+  },
+  {
+    "dutch": "buikpijn, de",
+    "english": "stomach ache, the",
+    "vietnamese": "đau bụng",
+    "dutchsentence": "Na het eten kreeg hij last van buikpijn.",
+    "englishtranslate": "After eating, he started suffering from a stomach ache.",
+    "pronunciation": { "ipa": "ˈbœykˌpɛin", "phonetic": "bouyk-pyn" }
+  },
+  {
+    "dutch": "diagnose, de",
+    "english": "diagnosis, the",
+    "vietnamese": "sự chẩn đoán",
+    "dutchsentence": "De arts stelde gisteren de diagnose.",
+    "englishtranslate": "The doctor made the diagnosis yesterday.",
+    "pronunciation": { "ipa": "di.ɑxˈnoːzə", "phonetic": "dee-akh-no-zuh" }
+  },
+  {
+    "dutch": "dokter, de",
+    "english": "medic, doctor, the",
+    "vietnamese": "bác sĩ",
+    "dutchsentence": "Je moet even naar de dokter gaan.",
+    "englishtranslate": "You should go to the doctor for a moment.",
+    "pronunciation": { "ipa": "ˈdɔktər", "phonetic": "dok-tur" }
+  },
+  {
+    "dutch": "door",
+    "english": "by, through",
+    "vietnamese": "bởi, thông qua",
+    "dutchsentence": "Hij is genezen door deze medicijnen.",
+    "englishtranslate": "He was cured by these medicines.",
+    "pronunciation": { "ipa": "doːr", "phonetic": "dore" }
+  },
+  {
+    "dutch": "doorslikken",
+    "english": "to swallow",
+    "vietnamese": "nuốt trôi",
+    "dutchsentence": "Deze pil moet je in één keer doorslikken.",
+    "englishtranslate": "You have to swallow this pill in one go.",
+    "pronunciation": { "ipa": "ˈdoːrˌslɪkə(n)", "phonetic": "dore-slik-un" }
+  },
+  {
+    "dutch": "dorst, de",
+    "english": "thirst, the",
+    "vietnamese": "sự khát nước",
+    "dutchsentence": "Heb je dorst? Wil je wat water?",
+    "englishtranslate": "Are you thirsty? Do you want some water?",
+    "pronunciation": { "ipa": "dɔrst", "phonetic": "dorst" }
+  },
+  {
+    "dutch": "dosering, de",
+    "english": "dosage, the",
+    "vietnamese": "liều lượng",
+    "dutchsentence": "De apotheker legt de dosering uit.",
+    "englishtranslate": "The pharmacist explains the dosage.",
+    "pronunciation": { "ipa": "doːˈzeːrɪŋ", "phonetic": "do-zay-ring" }
+  },
+  {
+    "dutch": "dosis, de",
+    "english": "dose, the",
+    "vietnamese": "liều thuốc",
+    "dutchsentence": "Eén dosis per dag is voldoende.",
+    "englishtranslate": "One dose per day is sufficient.",
+    "pronunciation": { "ipa": "ˈdoːzɪs", "phonetic": "do-zis" }
+  },
+  {
+    "dutch": "duim, de",
+    "english": "thumb, the",
+    "vietnamese": "ngón tay cái",
+    "dutchsentence": "Ik heb mijn duim tussen de deur gekregen.",
+    "englishtranslate": "I got my thumb caught in the door.",
+    "pronunciation": { "ipa": "dœym", "phonetic": "douym" }
+  },
+  {
+    "dutch": "duizelig",
+    "english": "dizzy",
+    "vietnamese": "chóng mặt",
+    "dutchsentence": "Als ik te snel opsta, word ik duizelig.",
+    "englishtranslate": "If I stand up too quickly, I get dizzy.",
+    "pronunciation": { "ipa": "ˈdœyzələx", "phonetic": "douy-zuh-lukh" }
+  },
+  {
+    "dutch": "eigenwijs",
+    "english": "self-willed, obstinate",
+    "vietnamese": "ngoan cố, bảo thủ",
+    "dutchsentence": "Hij is te eigenwijs om naar de dokter te gaan.",
+    "englishtranslate": "He is too stubborn to go to the doctor.",
+    "pronunciation": { "ipa": "ˈɛiɣə(n)ˌʋɛis", "phonetic": "ay-khun-vys" }
+  },
+  {
+    "dutch": "ernstig",
+    "english": "severe, serious",
+    "vietnamese": "nghiêm trọng",
+    "dutchsentence": "Het was een ernstig ongeluk.",
+    "englishtranslate": "It was a serious accident.",
+    "pronunciation": { "ipa": "ˈɛrnstəx", "phonetic": "ern-stukh" }
+  },
+  {
+    "dutch": "flauwvallen",
+    "english": "to faint",
+    "vietnamese": "ngất xỉu",
+    "dutchsentence": "Door de hitte viel zij bijna flauw.",
+    "englishtranslate": "Because of the heat, she almost fainted.",
+    "pronunciation": { "ipa": "ˈflʌuˌvɑlə(n)", "phonetic": "flow-val-un" }
+  },
+  {
+    "dutch": "fysiotherapeut, de",
+    "english": "physical therapist, the",
+    "vietnamese": "chuyên gia vật lý trị liệu",
+    "dutchsentence": "De fysiotherapeut helpt mij met mijn rugpijn.",
+    "englishtranslate": "The physical therapist is helping me with my back pain.",
+    "pronunciation": { "ipa": "ˌfizijoːtɛraːˈpøːt", "phonetic": "fee-zee-yo-te-raa-poot" }
+  },
+  {
+    "dutch": "gemiddelde, het",
+    "english": "average, the",
+    "vietnamese": "mức trung bình",
+    "dutchsentence": "Het gemiddelde aantal patiënten stijgt.",
+    "englishtranslate": "The average number of patients is rising.",
+    "pronunciation": { "ipa": "ɣəˈmɪdəldə", "phonetic": "khuh-mid-ul-duh" }
+  },
+  {
+    "dutch": "geneesmiddel, het",
+    "english": "medication, the",
+    "vietnamese": "thuốc chữa bệnh",
+    "dutchsentence": "Dit geneesmiddel is alleen op recept verkrijgbaar.",
+    "englishtranslate": "This medication is only available by prescription.",
+    "pronunciation": { "ipa": "ɣəˈneːsmɪdəl", "phonetic": "khuh-nays-mid-ul" }
+  },
+  {
+    "dutch": "gezicht, het",
+    "english": "face, the",
+    "vietnamese": "khuôn mặt",
+    "dutchsentence": "Was je gezicht met koud water.",
+    "englishtranslate": "Wash your face with cold water.",
+    "pronunciation": { "ipa": "ɣəˈzɪxt", "phonetic": "khuh-zikht" }
+  },
+  {
+    "dutch": "gezondheid, de",
+    "english": "health, the",
+    "vietnamese": "sức khỏe",
+    "dutchsentence": "Gezondheid is het belangrijkste wat er is.",
+    "englishtranslate": "Health is the most important thing there is.",
+    "pronunciation": { "ipa": "ɣəˈzɔntɦɛit", "phonetic": "khuh-zont-hyt" }
+  },
+  {
+    "dutch": "griep, de",
+    "english": "flu, the",
+    "vietnamese": "bệnh cúm",
+    "dutchsentence": "Ik kan niet werken, ik heb de griep.",
+    "englishtranslate": "I can't work, I have the flu.",
+    "pronunciation": { "ipa": "ɣrip", "phonetic": "khreep" }
+  },
+  {
+    "dutch": "griepprik, de",
+    "english": "influenza shot, the",
+    "vietnamese": "tiêm ngừa cúm",
+    "dutchsentence": "Ouderen krijgen elk jaar een uitnodiging voor de griepprik.",
+    "englishtranslate": "Elderly people receive an invitation for the flu shot every year.",
+    "pronunciation": { "ipa": "ˈɣrɪpˌprɪk", "phonetic": "khrip-prik" }
+  },
+  {
+    "dutch": "halen",
+    "english": "to fetch, to get",
+    "vietnamese": "lấy, đi lấy",
+    "dutchsentence": "Kun je de medicijnen bij de apotheek halen?",
+    "englishtranslate": "Can you fetch the medicines from the pharmacy?",
+    "pronunciation": { "ipa": "ˈɦaːlə(n)", "phonetic": "haa-lun" }
+  },
+  {
+    "dutch": "hechten",
+    "english": "to stitch",
+    "vietnamese": "khâu (vết thương)",
+    "dutchsentence": "De diepe snee moest gehecht worden.",
+    "englishtranslate": "The deep cut had to be stitched.",
+    "pronunciation": { "ipa": "ˈɦɛxtə(n)", "phonetic": "hekht-un" }
+  },
+  {
+    "dutch": "hieronder",
+    "english": "below",
+    "vietnamese": "dưới đây",
+    "dutchsentence": "Lees de instructies hieronder.",
+    "englishtranslate": "Read the instructions below.",
+    "pronunciation": { "ipa": "ɦiːrˈɔndər", "phonetic": "heer-on-dur" }
+  },
+  {
+    "dutch": "hoesten",
+    "english": "to cough",
+    "vietnamese": "ho",
+    "dutchsentence": "Zij moet veel hoesten door de verkoudheid.",
+    "englishtranslate": "She has to cough a lot because of the cold.",
+    "pronunciation": { "ipa": "ˈɦustə(n)", "phonetic": "hoo-stun" }
+  },
+  {
+    "dutch": "hoofdpijn, de",
+    "english": "headache, the",
+    "vietnamese": "đau đầu",
+    "dutchsentence": "Ik heb hoofdpijn van de harde muziek.",
+    "englishtranslate": "I have a headache from the loud music.",
+    "pronunciation": { "ipa": "ˈɦoːftˌpɛin", "phonetic": "hoaft-pyn" }
+  },
+  {
+    "dutch": "huisarts, de",
+    "english": "family doctor, the",
+    "vietnamese": "bác sĩ gia đình",
+    "dutchsentence": "Bel eerst de huisarts voor een afspraak.",
+    "englishtranslate": "Call the family doctor first for an appointment.",
+    "pronunciation": { "ipa": "ˈɦœysˌɑrt s", "phonetic": "houys-arts" }
+  },
+  {
+    "dutch": "in vergelijking met",
+    "english": "compared to",
+    "vietnamese": "so với",
+    "dutchsentence": "In vergelijking met vorig jaar voel ik me nu beter.",
+    "englishtranslate": "Compared to last year, I feel better now.",
+    "pronunciation": { "ipa": "ɪn vərˈɣeːləkɪŋ mɛt", "phonetic": "in vur-khay-luh-king met" }
+  },
+  {
+    "dutch": "inademen",
+    "english": "to breathe in",
+    "vietnamese": "hít vào",
+    "dutchsentence": "Diep inademen door je neus, alstublieft.",
+    "englishtranslate": "Breathe in deeply through your nose, please.",
+    "pronunciation": { "ipa": "ˈɪnˌaːdəmə(n)", "phonetic": "in-aa-duh-mun" }
+  },
+  {
+    "dutch": "innemen",
+    "english": "to take (medicine)",
+    "vietnamese": "uống (thuốc)",
+    "dutchsentence": "U moet dit medicijn voor de maaltijd innemen.",
+    "englishtranslate": "You must take this medicine before the meal.",
+    "pronunciation": { "ipa": "ˈɪnˌneːmə(n)", "phonetic": "in-nay-mun" }
+  },
+  {
+    "dutch": "inwoner, de",
+    "english": "resident, inhabitant, the",
+    "vietnamese": "cư dân",
+    "dutchsentence": "De stad heeft honderdduizend inwoners.",
+    "englishtranslate": "The city has one hundred thousand residents.",
+    "pronunciation": { "ipa": "ˈɪnˌʋoːnər", "phonetic": "in-vo-nur" }
+  },
+  {
+    "dutch": "jodium, het",
+    "english": "iodine, the",
+    "vietnamese": "i-ốt",
+    "dutchsentence": "Maak de wond schoon met wat jodium.",
+    "englishtranslate": "Clean the wound with some iodine.",
+    "pronunciation": { "ipa": "ˈjoːdijʏm", "phonetic": "yo-dee-yum" }
+  },
+  {
+    "dutch": "keelpijn, de",
+    "english": "sore throat, the",
+    "vietnamese": "đau họng",
+    "dutchsentence": "Ik kan moeilijk slikken door de keelpijn.",
+    "englishtranslate": "I find it hard to swallow because of the sore throat.",
+    "pronunciation": { "ipa": "ˈkeːlˌpɛin", "phonetic": "kayl-pyn" }
+  },
+  {
+    "dutch": "kies, de",
+    "english": "molar, the",
+    "vietnamese": "răng hàm",
+    "dutchsentence": "Er moet een gaatje in mijn kies gevuld worden.",
+    "englishtranslate": "A cavity in my molar needs to be filled.",
+    "pronunciation": { "ipa": "kis", "phonetic": "kees" }
+  },
+  {
+    "dutch": "kin, de",
+    "english": "chin, the",
+    "vietnamese": "cái cằm",
+    "dutchsentence": "Hij heeft een wondje op zijn kin.",
+    "englishtranslate": "He has a small wound on his chin.",
+    "pronunciation": { "ipa": "kɪn", "phonetic": "kin" }
+  },
+  {
+    "dutch": "klacht, de",
+    "english": "complaint, symptom, the",
+    "vietnamese": "triệu chứng, lời phàn nàn",
+    "dutchsentence": "Wat zijn uw lichamelijke klachten?",
+    "englishtranslate": "What are your physical complaints?",
+    "pronunciation": { "ipa": "klɑxt", "phonetic": "klakht" }
+  },
+  {
+    "dutch": "kleren uitdoen",
+    "english": "to take clothes off",
+    "vietnamese": "cởi quần áo",
+    "dutchsentence": "Wilt u uw kleren uitdoen voor het onderzoek?",
+    "englishtranslate": "Would you like to take off your clothes for the examination?",
+    "pronunciation": { "ipa": "ˈkleːrə(n) ˈœytˌdun", "phonetic": "klay-run ouyt-doon" }
+  },
+  {
+    "dutch": "koorts, de",
+    "english": "fever, the",
+    "vietnamese": "cơn sốt",
+    "dutchsentence": "Het kind heeft hoge koorts.",
+    "englishtranslate": "The child has a high fever.",
+    "pronunciation": { "ipa": "koːrts", "phonetic": "koarts" }
+  },
+  {
+    "dutch": "last hebben van",
+    "english": "to suffer from (a pain)",
+    "vietnamese": "bị đau, chịu đựng cái gì",
+    "dutchsentence": "Ik heb last van mijn rug.",
+    "englishtranslate": "I am suffering from my back.",
+    "pronunciation": { "ipa": "lɑst ˈɦɛbə(n) vɑn", "phonetic": "last heb-un van" }
+  },
+  {
+    "dutch": "lever, de",
+    "english": "liver, the",
+    "vietnamese": "gan",
+    "dutchsentence": "Te veel alcohol is slecht voor je lever.",
+    "englishtranslate": "Too much alcohol is bad for your liver.",
+    "pronunciation": { "ipa": "ˈleːvər", "phonetic": "lay-vur" }
+  },
+  {
+    "dutch": "lip, de",
+    "english": "lip, the",
+    "vietnamese": "môi",
+    "dutchsentence": "Haar lip is dik na de val.",
+    "englishtranslate": "Her lip is swollen after the fall.",
+    "pronunciation": { "ipa": "lɪp", "phonetic": "lip" }
+  },
+  {
+    "dutch": "(…)maal",
+    "english": "times",
+    "vietnamese": "lần",
+    "dutchsentence": "Neem dit medicijn drie maal daags in.",
+    "englishtranslate": "Take this medicine three times daily.",
+    "pronunciation": { "ipa": "maːl", "phonetic": "maal" }
+  },
+  {
+    "dutch": "medicijn, het",
+    "english": "medicine, medication, the",
+    "vietnamese": "thuốc",
+    "dutchsentence": "Welk medicijn gebruikt u voor de bloeddruk?",
+    "englishtranslate": "Which medicine do you use for blood pressure?",
+    "pronunciation": { "ipa": "meːdiˈsɛin", "phonetic": "may-dee-syn" }
+  },
+  {
+    "dutch": "meekrijgen",
+    "english": "to get (something) to take home",
+    "vietnamese": "mang theo, nhận mang về",
+    "dutchsentence": "Ik kreeg een recept mee van de dokter.",
+    "englishtranslate": "I got a prescription to take home from the doctor.",
+    "pronunciation": { "ipa": "ˈmeːˌkrɛiɣə(n)", "phonetic": "may-kry-khun" }
+  },
+  {
+    "dutch": "menstruatie, de",
+    "english": "menstruation, the",
+    "vietnamese": "kinh nguyệt",
+    "dutchsentence": "Zij heeft veel last van haar menstruatie.",
+    "englishtranslate": "She suffers a lot from her menstruation.",
+    "pronunciation": { "ipa": "mɛnstryˈaːtsi", "phonetic": "men-stru-aa-tsee" }
+  },
+  {
+    "dutch": "meten",
+    "english": "to measure",
+    "vietnamese": "đo đạc",
+    "dutchsentence": "De zuster gaat je temperatuur meten.",
+    "englishtranslate": "The nurse is going to measure your temperature.",
+    "pronunciation": { "ipa": "ˈmeːtə(n)", "phonetic": "may-tun" }
+  },
+  {
+    "dutch": "minimaal",
+    "english": "minimum",
+    "vietnamese": "tối thiểu",
+    "dutchsentence": "Je moet minimaal twee liter water per dag drinken.",
+    "englishtranslate": "You must drink a minimum of two liters of water per day.",
+    "pronunciation": { "ipa": "miniˈmaːl", "phonetic": "mee-nee-maal" }
+  },
+  {
+    "dutch": "misselijk",
+    "english": "nauseous",
+    "vietnamese": "buồn nôn",
+    "dutchsentence": "Ik voel me misselijk na de autorit.",
+    "englishtranslate": "I feel nauseous after the car ride.",
+    "pronunciation": { "ipa": "ˈmɪsələk", "phonetic": "mis-uh-luk" }
+  },
+  {
+    "dutch": "nier, de",
+    "english": "kidney, the",
+    "vietnamese": "quả thận",
+    "dutchsentence": "Hij heeft een probleem met zijn nieren.",
+    "englishtranslate": "He has a problem with his kidneys.",
+    "pronunciation": { "ipa": "niːr", "phonetic": "neer" }
+  },
+  {
+    "dutch": "(verband) omdoen",
+    "english": "to bandage, to put on",
+    "vietnamese": "băng bó, đeo vào",
+    "dutchsentence": "Zal ik een verband om je enkel doen?",
+    "englishtranslate": "Shall I put a bandage on your ankle?",
+    "pronunciation": { "ipa": "ˈɔmˌdun", "phonetic": "om-doon" }
+  },
+  {
+    "dutch": "onderzoeken",
+    "english": "to examine, to research",
+    "vietnamese": "khám, nghiên cứu",
+    "dutchsentence": "De arts wil je bloed onderzoeken.",
+    "englishtranslate": "The doctor wants to examine your blood.",
+    "pronunciation": { "ipa": "ˌɔndərˈzukə(n)", "phonetic": "on-dur-zoo-kun" }
+  },
+  {
+    "dutch": "onmiddellijk",
+    "english": "immediately",
+    "vietnamese": "ngay lập tức",
+    "dutchsentence": "U moet onmiddellijk stoppen met roken.",
+    "englishtranslate": "You must stop smoking immediately.",
+    "pronunciation": { "ipa": "ɔnˈmɪdələk", "phonetic": "on-mid-ul-luk" }
+  },
+  {
+    "dutch": "ontsmetten",
+    "english": "to disinfect",
+    "vietnamese": "khử trùng",
+    "dutchsentence": "Je moet de snee eerst goed ontsmetten.",
+    "englishtranslate": "You must disinfect the cut well first.",
+    "pronunciation": { "ipa": "ɔntˈsmɛtə(n)", "phonetic": "ont-smet-un" }
+  },
+  {
+    "dutch": "ontspannen",
+    "english": "relaxed",
+    "vietnamese": "thư giãn",
+    "dutchsentence": "Probeer je arm te ontspannen tijdens de prik.",
+    "englishtranslate": "Try to relax your arm during the injection.",
+    "pronunciation": { "ipa": "ɔntˈspɑnə(n)", "phonetic": "ont-span-un" }
+  },
+  {
+    "dutch": "ontsteking, de",
+    "english": "inflammation, the",
+    "vietnamese": "sự viêm nhiễm",
+    "dutchsentence": "De dokter zegt dat ik een keelontsteking heb.",
+    "englishtranslate": "The doctor says I have a throat inflammation.",
+    "pronunciation": { "ipa": "ɔntˈsteːkɪŋ", "phonetic": "ont-stay-king" }
+  },
+  {
+    "dutch": "oog, het",
+    "english": "eye, the",
+    "vietnamese": "mắt",
+    "dutchsentence": "Ik heb iets in mijn oog.",
+    "englishtranslate": "I have something in my eye.",
+    "pronunciation": { "ipa": "oːx", "phonetic": "oakh" }
+  },
+  {
+    "dutch": "oor, het",
+    "english": "ear, the",
+    "vietnamese": "tai",
+    "dutchsentence": "Mijn rechteroor doet pijn.",
+    "englishtranslate": "My right ear hurts.",
+    "pronunciation": { "ipa": "oːr", "phonetic": "oar" }
+  },
+  {
+    "dutch": "opereren",
+    "english": "to operate",
+    "vietnamese": "phẫu thuật",
+    "dutchsentence": "Ze moeten hem aan zijn knie opereren.",
+    "englishtranslate": "They have to operate on his knee.",
+    "pronunciation": { "ipa": "ˌoːpəˈreːrə(n)", "phonetic": "o-puh-ray-run" }
+  },
+  {
+    "dutch": "overbelast",
+    "english": "overburdened, strained",
+    "vietnamese": "quá tải, quá sức",
+    "dutchsentence": "Je spieren zijn overbelast door het sporten.",
+    "englishtranslate": "Your muscles are strained from exercising.",
+    "pronunciation": { "ipa": "ˌoːvərbəˈlɑst", "phonetic": "o-vur-buh-last" }
+  },
+  {
+    "dutch": "overgeven",
+    "english": "to vomit",
+    "vietnamese": "nôn mửa",
+    "dutchsentence": "Ik was zo ziek dat ik moest overgeven.",
+    "englishtranslate": "I was so sick I had to vomit.",
+    "pronunciation": { "ipa": "ˈoːvərˌɣeːvə(n)", "phonetic": "o-vur-khay-vun" }
+  },
+  {
+    "dutch": "patiënt, de",
+    "english": "patient, the",
+    "vietnamese": "bệnh nhân",
+    "dutchsentence": "De patiënt wacht op de uitslag.",
+    "englishtranslate": "The patient is waiting for the results.",
+    "pronunciation": { "ipa": "paːˈʃɛnt", "phonetic": "paa-shent" }
+  },
+  {
+    "dutch": "pil, de",
+    "english": "pill, the",
+    "vietnamese": "viên thuốc",
+    "dutchsentence": "Neem deze pil elke ochtend in.",
+    "englishtranslate": "Take this pill every morning.",
+    "pronunciation": { "ipa": "pɪl", "phonetic": "pil" }
+  },
+  {
+    "dutch": "pleister, de",
+    "english": "sticking plaster, bandaid, the",
+    "vietnamese": "băng cá nhân",
+    "dutchsentence": "Heb je een pleister voor dit wondje?",
+    "englishtranslate": "Do you have a band-aid for this small wound?",
+    "pronunciation": { "ipa": "ˈplɛistər", "phonetic": "ply-stur" }
+  },
+  {
+    "dutch": "relatief",
+    "english": "relatively",
+    "vietnamese": "tương đối",
+    "dutchsentence": "De behandeling is relatief pijnloos.",
+    "englishtranslate": "The treatment is relatively painless.",
+    "pronunciation": { "ipa": "reːlaːˈtif", "phonetic": "ray-laa-teef" }
+  },
+  {
+    "dutch": "rillen",
+    "english": "to shiver, to shudder",
+    "vietnamese": "run rẩy",
+    "dutchsentence": "Hij begon te rillen van de kou.",
+    "englishtranslate": "He started shivering from the cold.",
+    "pronunciation": { "ipa": "ˈrɪlə(n)", "phonetic": "ril-un" }
+  },
+  {
+    "dutch": "roeren",
+    "english": "to stir",
+    "vietnamese": "khuấy",
+    "dutchsentence": "Roer het poeder goed door het water.",
+    "englishtranslate": "Stir the powder well through the water.",
+    "pronunciation": { "ipa": "ˈrurə(n)", "phonetic": "roo-run" }
+  },
+  {
+    "dutch": "schadelijk",
+    "english": "harmful",
+    "vietnamese": "có hại",
+    "dutchsentence": "UV-straling is schadelijk voor de huid.",
+    "englishtranslate": "UV radiation is harmful to the skin.",
+    "pronunciation": { "ipa": "ˈsχaːdələk", "phonetic": "scaa-duh-luk" }
+  },
+  {
+    "dutch": "scoren",
+    "english": "to score",
+    "vietnamese": "ghi điểm",
+    "dutchsentence": "In dit onderzoek scoren we hoog.",
+    "englishtranslate": "We score high in this study.",
+    "pronunciation": { "ipa": "ˈskoːrə(n)", "phonetic": "sko-run" }
+  },
+  {
+    "dutch": "snee, de",
+    "english": "cut, the",
+    "vietnamese": "vết cắt",
+    "dutchsentence": "Ik heb een diepe snee in mijn vinger.",
+    "englishtranslate": "I have a deep cut in my finger.",
+    "pronunciation": { "ipa": "sneː", "phonetic": "snay" }
+  },
+  {
+    "dutch": "spuitje, het",
+    "english": "injection, the",
+    "vietnamese": "mũi tiêm",
+    "dutchsentence": "Het kind was bang voor het spuitje.",
+    "englishtranslate": "The child was afraid of the injection.",
+    "pronunciation": { "ipa": "ˈspœytjə", "phonetic": "spouyt-yuh" }
+  },
+  {
+    "dutch": "stoten",
+    "english": "to bump, to stumble against",
+    "vietnamese": "va đập, đụng phải",
+    "dutchsentence": "Ik heb mijn teen tegen de tafel gestoten.",
+    "englishtranslate": "I bumped my toe against the table.",
+    "pronunciation": { "ipa": "ˈstoːtə(n)", "phonetic": "sto-tun" }
+  },
+  {
+    "dutch": "symptoom, het",
+    "english": "symptom, the",
+    "vietnamese": "triệu chứng",
+    "dutchsentence": "Koorts is een bekend symptoom van de griep.",
+    "englishtranslate": "Fever is a known symptom of the flu.",
+    "pronunciation": { "ipa": "sɪmpˈtoːm", "phonetic": "simp-toam" }
+  },
+  {
+    "dutch": "tablet, de/het",
+    "english": "tablet, pill, the",
+    "vietnamese": "viên thuốc nén",
+    "dutchsentence": "Neem één tablet in voor het slapengaan.",
+    "englishtranslate": "Take one tablet before going to sleep.",
+    "pronunciation": { "ipa": "tɑˈblɛt", "phonetic": "tah-blet" }
+  },
+  {
+    "dutch": "tand, de",
+    "english": "tooth, the",
+    "vietnamese": "răng",
+    "dutchsentence": "Hij is een voortand verloren bij het vallen.",
+    "englishtranslate": "He lost a front tooth during the fall.",
+    "pronunciation": { "ipa": "tɑnt", "phonetic": "tant" }
+  },
+  {
+    "dutch": "tandarts, de",
+    "english": "dentist, the",
+    "vietnamese": "nha sĩ",
+    "dutchsentence": "Ik moet elke zes maanden naar de tandarts.",
+    "englishtranslate": "I have to go to the dentist every six months.",
+    "pronunciation": { "ipa": "ˈtɑntˌɑrts", "phonetic": "tant-arts" }
+  },
+  {
+    "dutch": "uitademen",
+    "english": "to breathe out",
+    "vietnamese": "thở ra",
+    "dutchsentence": "Adem langzaam uit door je mond.",
+    "englishtranslate": "Breathe out slowly through your mouth.",
+    "pronunciation": { "ipa": "ˈœytˌaːdəmə(n)", "phonetic": "ouyt-aa-duh-mun" }
+  },
+  {
+    "dutch": "uiteen",
+    "english": "apart",
+    "vietnamese": "tách rời, riêng biệt",
+    "dutchsentence": "De meningen over de behandeling lopen uiteen.",
+    "englishtranslate": "Opinions on the treatment are far apart.",
+    "pronunciation": { "ipa": "œytˈeːn", "phonetic": "ouyt-ayn" }
+  },
+  {
+    "dutch": "uitgave, de",
+    "english": "expense, spending, the",
+    "vietnamese": "khoản chi tiêu",
+    "dutchsentence": "De medische uitgaven stijgen elk jaar.",
+    "englishtranslate": "Medical expenses are rising every year.",
+    "pronunciation": { "ipa": "ˈœytˌxaːvə", "phonetic": "ouyt-khaa-vuh" }
+  },
+  {
+    "dutch": "uitkleden",
+    "english": "to undress",
+    "vietnamese": "thay đồ, cởi đồ",
+    "dutchsentence": "Je mag je daar uitkleden achter het gordijn.",
+    "englishtranslate": "You can undress there behind the curtain.",
+    "pronunciation": { "ipa": "ˈœytˌkleːdə(n)", "phonetic": "ouyt-klay-dun" }
+  },
+  {
+    "dutch": "vaccinatie, de",
+    "english": "vaccination, the",
+    "vietnamese": "sự tiêm chủng",
+    "dutchsentence": "Vaccinatie beschermt tegen ernstige ziektes.",
+    "englishtranslate": "Vaccination protects against serious illnesses.",
+    "pronunciation": { "ipa": "vɑksiˈnaːtsi", "phonetic": "vak-see-naa-tsee" }
+  },
+  {
+    "dutch": "verband, het",
+    "english": "bandage, the",
+    "vietnamese": "băng gạc",
+    "dutchsentence": "De verpleegster verschoont het verband.",
+    "englishtranslate": "The nurse is changing the bandage.",
+    "pronunciation": { "ipa": "vərˈbɑnt", "phonetic": "vur-bant" }
+  },
+  {
+    "dutch": "verdoven",
+    "english": "to anaesthetize, to sedate",
+    "vietnamese": "gây mê, gây tê",
+    "dutchsentence": "De tandarts gaat de plek eerst verdoven.",
+    "englishtranslate": "The dentist is going to numb the area first.",
+    "pronunciation": { "ipa": "vərˈdoːvə(n)", "phonetic": "vur-do-vun" }
+  },
+  {
+    "dutch": "verdoving, de",
+    "english": "anaesthesia, the",
+    "vietnamese": "thuốc gây mê/tê",
+    "dutchsentence": "De verdoving werkt na tien minuten.",
+    "englishtranslate": "The anesthesia works after ten minutes.",
+    "pronunciation": { "ipa": "vərˈdoːvɪŋ", "phonetic": "vur-do-ving" }
+  },
+  {
+    "dutch": "vergelijken met",
+    "english": "to compare to",
+    "vietnamese": "so sánh với",
+    "dutchsentence": "Je kunt je gezondheid niet vergelijken met die van hem.",
+    "englishtranslate": "You can't compare your health to his.",
+    "pronunciation": { "ipa": "vərˈɣeːləkə(n) mɛt", "phonetic": "vur-khay-luh-kun met" }
+  },
+  {
+    "dutch": "verhoging hebben",
+    "english": "to have a slight temperature",
+    "vietnamese": "sốt nhẹ",
+    "dutchsentence": "Ik voel me niet goed, ik heb een beetje verhoging.",
+    "englishtranslate": "I don't feel well, I have a slight temperature.",
+    "pronunciation": { "ipa": "vərˈɦoːɣɪŋ ˈɦɛbə(n)", "phonetic": "vur-ho-khing heb-un" }
+  },
+  {
+    "dutch": "verkouden",
+    "english": "having a cold",
+    "vietnamese": "bị cảm lạnh",
+    "dutchsentence": "Blijf binnen als je verkouden bent.",
+    "englishtranslate": "Stay inside if you have a cold.",
+    "pronunciation": { "ipa": "vərˈkʌudə(n)", "phonetic": "vur-kow-dun" }
+  },
+  {
+    "dutch": "verkoudheid, de",
+    "english": "cold, the",
+    "vietnamese": "bệnh cảm lạnh",
+    "dutchsentence": "Een verkoudheid gaat meestal vanzelf over.",
+    "englishtranslate": "A cold usually goes away by itself.",
+    "pronunciation": { "ipa": "vərˈkʌudɦɛit", "phonetic": "vur-kowd-hyt" }
+  },
+  {
+    "dutch": "verslaafd",
+    "english": "addicted",
+    "vietnamese": "bị nghiện",
+    "dutchsentence": "Hij is verslaafd aan pijnstillers.",
+    "englishtranslate": "He is addicted to painkillers.",
+    "pronunciation": { "ipa": "vərˈslaːft", "phonetic": "vur-slaaft" }
+  },
+  {
+    "dutch": "vooroverbuigen",
+    "english": "to bend over",
+    "vietnamese": "cúi người về phía trước",
+    "dutchsentence": "Wilt u even vooroverbuigen, alstublieft?",
+    "englishtranslate": "Could you bend over for a moment, please?",
+    "pronunciation": { "ipa": "ˈvoːrˌoːvərbœyɣə(n)", "phonetic": "vorean-vur-bouy-khun" }
+  },
+  {
+    "dutch": "voorzichtig",
+    "english": "carefully",
+    "vietnamese": "cẩn thận",
+    "dutchsentence": "Wees voorzichtig met die hete thee.",
+    "englishtranslate": "Be careful with that hot tea.",
+    "pronunciation": { "ipa": "voːrˈzɪxtəx", "phonetic": "vohr-zikht-ukh" }
+  },
+  {
+    "dutch": "wang, de",
+    "english": "cheek, the",
+    "vietnamese": "cái má",
+    "dutchsentence": "Ze kreeg een kus op haar wang.",
+    "englishtranslate": "She got a kiss on her cheek.",
+    "pronunciation": { "ipa": "ʋɑŋ", "phonetic": "wang" }
+  },
+  {
+    "dutch": "wc, de",
+    "english": "toilet, the",
+    "vietnamese": "nhà vệ sinh",
+    "dutchsentence": "Mag ik even naar de wc?",
+    "englishtranslate": "May I go to the toilet for a moment?",
+    "pronunciation": { "ipa": "ʋeːˈseː", "phonetic": "vay-say" }
+  },
+  {
+    "dutch": "wond, de",
+    "english": "wound, the",
+    "vietnamese": "vết thương",
+    "dutchsentence": "De wond moet schoongemaakt worden.",
+    "englishtranslate": "The wound needs to be cleaned.",
+    "pronunciation": { "ipa": "ʋɔnt", "phonetic": "vont" }
+  },
+  {
+    "dutch": "zenuw, de",
+    "english": "nerve, the",
+    "vietnamese": "dây thần kinh",
+    "dutchsentence": "De tandarts raakte per ongeluk een zenuw.",
+    "englishtranslate": "The dentist accidentally touched a nerve.",
+    "pronunciation": { "ipa": "ˈzeːnyʋ", "phonetic": "zay-nuw" }
+  },
+  {
+    "dutch": "ziek",
+    "english": "ill, sick",
+    "vietnamese": "bị ốm",
+    "dutchsentence": "Ik voel me ziek en ga naar bed.",
+    "englishtranslate": "I feel sick and I'm going to bed.",
+    "pronunciation": { "ipa": "zik", "phonetic": "zeek" }
+  },
+  {
+    "dutch": "zweten",
+    "english": "to sweat",
+    "vietnamese": "đổ mồ hôi",
+    "dutchsentence": "Door de koorts begon hij erg te zweten.",
+    "englishtranslate": "Because of the fever, he started sweating heavily.",
+    "pronunciation": { "ipa": "ˈzʋeːtə(n)", "phonetic": "zway-tun" }
+  }
+]

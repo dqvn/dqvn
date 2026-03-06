@@ -1,0 +1,738 @@
+[
+  {
+    "dutch": "(rechts/links) afslaan",
+    "english": "to turn (right/left)",
+    "vietnamese": "rẽ (phải/trái)",
+    "dutchsentence": "Bij het stoplicht moet je rechts afslaan.",
+    "englishtranslate": "At the traffic light, you have to turn right.",
+    "pronunciation": { "ipa": "ˈɑfslaːn", "phonetic": "af-slaan" }
+  },
+  {
+    "dutch": "alternatief",
+    "english": "alternative",
+    "vietnamese": "thay thế",
+    "dutchsentence": "Is er een alternatief voor deze drukke weg?",
+    "englishtranslate": "Is there an alternative to this busy road?",
+    "pronunciation": { "ipa": "ˌɑltɛrnaːˈtif", "phonetic": "al-tur-naa-teef" }
+  },
+  {
+    "dutch": "autosnelweg, de",
+    "english": "highway, the",
+    "vietnamese": "đường cao tốc",
+    "dutchsentence": "Op de autosnelweg mag je meestal honderd rijden.",
+    "englishtranslate": "On the highway, you can usually drive one hundred.",
+    "pronunciation": { "ipa": "ˈʌutoːˌsnɛlʋɛx", "phonetic": "ow-to-snel-wekh" }
+  },
+  {
+    "dutch": "autoweg, de",
+    "english": "highway, the",
+    "vietnamese": "đường dành cho ô tô",
+    "dutchsentence": "Deze autoweg gaat direct naar de stad.",
+    "englishtranslate": "This highway goes directly to the city.",
+    "pronunciation": { "ipa": "ˈʌutoːˌʋɛx", "phonetic": "ow-to-wekh" }
+  },
+  {
+    "dutch": "barman, de",
+    "english": "bartender, the",
+    "vietnamese": "người pha chế",
+    "dutchsentence": "De barman maakt een lekkere cocktail voor ons.",
+    "englishtranslate": "The bartender is making a nice cocktail for us.",
+    "pronunciation": { "ipa": "ˈbɑrmɑn", "phonetic": "bar-man" }
+  },
+  {
+    "dutch": "bedanken",
+    "english": "to thank",
+    "vietnamese": "cảm ơn",
+    "dutchsentence": "Ik wil je graag bedanken voor je hulp.",
+    "englishtranslate": "I would like to thank you for your help.",
+    "pronunciation": { "ipa": "bəˈdɑŋkə(n)", "phonetic": "buh-dang-kun" }
+  },
+  {
+    "dutch": "behoorlijk",
+    "english": "quite",
+    "vietnamese": "khá là",
+    "dutchsentence": "Het is vandaag behoorlijk koud buiten.",
+    "englishtranslate": "It is quite cold outside today.",
+    "pronunciation": { "ipa": "bəˈɦoːrlək", "phonetic": "buh-hore-luk" }
+  },
+  {
+    "dutch": "bestuurder, de",
+    "english": "driver, the",
+    "vietnamese": "tài xế",
+    "dutchsentence": "De bestuurder van de bus stopt bij de halte.",
+    "englishtranslate": "The driver of the bus stops at the bus stop.",
+    "pronunciation": { "ipa": "bəˈstyːrdər", "phonetic": "buh-stewr-dur" }
+  },
+  {
+    "dutch": "blij",
+    "english": "happy",
+    "vietnamese": "vui vẻ",
+    "dutchsentence": "Ik ben erg blij met mijn nieuwe fiets.",
+    "englishtranslate": "I am very happy with my new bicycle.",
+    "pronunciation": { "ipa": "blɛi", "phonetic": "bly" }
+  },
+  {
+    "dutch": "blijken",
+    "english": "to seem, to appear",
+    "vietnamese": "hóa ra, có vẻ",
+    "dutchsentence": "De toets bleek makkelijker dan verwacht.",
+    "englishtranslate": "The test appeared to be easier than expected.",
+    "pronunciation": { "ipa": "ˈblɛikə(n)", "phonetic": "bly-kun" }
+  },
+  {
+    "dutch": "bocht, de",
+    "english": "curve, the",
+    "vietnamese": "khúc cua",
+    "dutchsentence": "Pas op in de bocht, het is daar glad.",
+    "englishtranslate": "Watch out in the curve, it is slippery there.",
+    "pronunciation": { "ipa": "bɔxt", "phonetic": "bokht" }
+  },
+  {
+    "dutch": "bord, het",
+    "english": "traffic sign, the",
+    "vietnamese": "biển báo giao thông",
+    "dutchsentence": "Kijk goed naar het bord langs de weg.",
+    "englishtranslate": "Look closely at the sign along the road.",
+    "pronunciation": { "ipa": "bɔrt", "phonetic": "bort" }
+  },
+  {
+    "dutch": "bromfiets, de",
+    "english": "motorbike, the",
+    "vietnamese": "xe máy",
+    "dutchsentence": "Hij rijdt op een oude bromfiets.",
+    "englishtranslate": "He rides an old motorbike.",
+    "pronunciation": { "ipa": "ˈbrɔmˌfits", "phonetic": "brom-feets" }
+  },
+  {
+    "dutch": "carnaval, het",
+    "english": "fair, the",
+    "vietnamese": "lễ hội hóa trang",
+    "dutchsentence": "In het zuiden vieren ze uitgebreid carnaval.",
+    "englishtranslate": "In the south, they celebrate the fair extensively.",
+    "pronunciation": { "ipa": "ˈkɑrnəvɑl", "phonetic": "kar-nuh-val" }
+  },
+  {
+    "dutch": "controleur, de",
+    "english": "inspector, the",
+    "vietnamese": "người soát vé",
+    "dutchsentence": "De controleur vraagt naar mijn vervoersbewijs.",
+    "englishtranslate": "The inspector asks for my ticket.",
+    "pronunciation": { "ipa": "ˌkɔntroːˈløːr", "phonetic": "kon-tro-luhr" }
+  },
+  {
+    "dutch": "cursus, de",
+    "english": "course, the",
+    "vietnamese": "khóa học",
+    "dutchsentence": "Ik volg een cursus Nederlands in Amsterdam.",
+    "englishtranslate": "I am taking a Dutch course in Amsterdam.",
+    "pronunciation": { "ipa": "ˈkʏrsʏs", "phonetic": "kur-sus" }
+  },
+  {
+    "dutch": "dagelijks",
+    "english": "daily",
+    "vietnamese": "hàng ngày",
+    "dutchsentence": "Ik ga dagelijks met de trein naar school.",
+    "englishtranslate": "I go to school by train daily.",
+    "pronunciation": { "ipa": "ˈdaːɣələks", "phonetic": "daa-khuh-luks" }
+  },
+  {
+    "dutch": "dichtdoen",
+    "english": "to close",
+    "vietnamese": "đóng lại",
+    "dutchsentence": "Wil je de deur even dichtdoen?",
+    "englishtranslate": "Would you like to close the door?",
+    "pronunciation": { "ipa": "ˈdɪxtˌdun", "phonetic": "dikht-doon" }
+  },
+  {
+    "dutch": "dronken",
+    "english": "drunk",
+    "vietnamese": "say rượu",
+    "dutchsentence": "Hij was te dronken om naar huis te fietsen.",
+    "englishtranslate": "He was too drunk to cycle home.",
+    "pronunciation": { "ipa": "ˈdrɔŋkə(n)", "phonetic": "drong-kun" }
+  },
+  {
+    "dutch": "duidelijk",
+    "english": "clear",
+    "vietnamese": "rõ ràng",
+    "dutchsentence": "De uitleg van de docent was erg duidelijk.",
+    "englishtranslate": "The teacher's explanation was very clear.",
+    "pronunciation": { "ipa": "ˈdœydələk", "phonetic": "douy-duh-luk" }
+  },
+  {
+    "dutch": "eenrichtingsweg, de",
+    "english": "one-way road, the",
+    "vietnamese": "đường một chiều",
+    "dutchsentence": "Je mag hier niet inrijden, het is een eenrichtingsweg.",
+    "englishtranslate": "You cannot enter here, it is a one-way road.",
+    "pronunciation": { "ipa": "ˈeːnrɪxtɪŋsˌʋɛx", "phonetic": "ayn-rikh-tings-wekh" }
+  },
+  {
+    "dutch": "eind, het",
+    "english": "end, the",
+    "vietnamese": "điểm cuối",
+    "dutchsentence": "Aan het eind van de straat ga je links.",
+    "englishtranslate": "At the end of the street, go left.",
+    "pronunciation": { "ipa": "ɛint", "phonetic": "eynt" }
+  },
+  {
+    "dutch": "entreeprijs, de",
+    "english": "admission, the",
+    "vietnamese": "giá vé vào cửa",
+    "dutchsentence": "De entreeprijs voor het museum is tien euro.",
+    "englishtranslate": "The admission for the museum is ten euros.",
+    "pronunciation": { "ipa": "ˈɑntreːˌprɛis", "phonetic": "an-tray-prys" }
+  },
+  {
+    "dutch": "feestdag, de",
+    "english": "public holiday, the",
+    "vietnamese": "ngày lễ",
+    "dutchsentence": "Kerstmis is een belangrijke feestdag.",
+    "englishtranslate": "Christmas is an important public holiday.",
+    "pronunciation": { "ipa": "ˈfeːstˌdɑx", "phonetic": "fayst-dakh" }
+  },
+  {
+    "dutch": "fietser, de",
+    "english": "cyclist, the",
+    "vietnamese": "người đi xe đạp",
+    "dutchsentence": "In Nederland heeft de fietser vaak voorrang.",
+    "englishtranslate": "In the Netherlands, the cyclist often has priority.",
+    "pronunciation": { "ipa": "ˈfitsər", "phonetic": "feet-sur" }
+  },
+  {
+    "dutch": "fietspad, het",
+    "english": "bicycle path, the",
+    "vietnamese": "đường dành cho xe đạp",
+    "dutchsentence": "Rij alsjeblieft op het fietspad.",
+    "englishtranslate": "Please ride on the bicycle path.",
+    "pronunciation": { "ipa": "ˈfitsˌpɑt", "phonetic": "feets-pat" }
+  },
+  {
+    "dutch": "geldig",
+    "english": "valid",
+    "vietnamese": "có hiệu lực",
+    "dutchsentence": "Is je paspoort nog geldig?",
+    "englishtranslate": "Is your passport still valid?",
+    "pronunciation": { "ipa": "ˈɣɛldəx", "phonetic": "khel-dukh" }
+  },
+  {
+    "dutch": "gesloten",
+    "english": "closed",
+    "vietnamese": "đã đóng cửa",
+    "dutchsentence": "De winkel is op zondag gesloten.",
+    "englishtranslate": "The shop is closed on Sundays.",
+    "pronunciation": { "ipa": "ɣəˈsloːtə(n)", "phonetic": "khuh-slow-tun" }
+  },
+  {
+    "dutch": "Hemelvaartsdag, de",
+    "english": "Ascension Day",
+    "vietnamese": "Lễ Thăng Thiên",
+    "dutchsentence": "Op Hemelvaartsdag zijn de meeste mensen vrij.",
+    "englishtranslate": "On Ascension Day, most people are off work.",
+    "pronunciation": { "ipa": "ˈɦeːməlvartsˌdɑx", "phonetic": "hay-mul-varts-dakh" }
+  },
+  {
+    "dutch": "hinderen",
+    "english": "to be in the way",
+    "vietnamese": "cản trở",
+    "dutchsentence": "Je auto hindert de andere weggebruikers.",
+    "englishtranslate": "Your car is in the way of other road users.",
+    "pronunciation": { "ipa": "ˈɦɪndərə(n)", "phonetic": "hin-dur-un" }
+  },
+  {
+    "dutch": "hoelang",
+    "english": "how long",
+    "vietnamese": "bao lâu",
+    "dutchsentence": "Hoelang duurt de reis naar Parijs?",
+    "englishtranslate": "How long does the trip to Paris take?",
+    "pronunciation": { "ipa": "ɦuˈlɑŋ", "phonetic": "hoo-lang" }
+  },
+  {
+    "dutch": "kerstdag, de",
+    "english": "Christmas",
+    "vietnamese": "ngày Giáng sinh",
+    "dutchsentence": "We eten samen diner op de eerste kerstdag.",
+    "englishtranslate": "We have dinner together on the first Christmas day.",
+    "pronunciation": { "ipa": "ˈkɛrstˌdɑx", "phonetic": "kerst-dakh" }
+  },
+  {
+    "dutch": "Koningsdag, de",
+    "english": "King’s Day",
+    "vietnamese": "Ngày của Vua",
+    "dutchsentence": "Op Koningsdag draagt iedereen oranje.",
+    "englishtranslate": "On King’s Day, everyone wears orange.",
+    "pronunciation": { "ipa": "ˈkoːnɪŋsˌdɑx", "phonetic": "ko-nings-dakh" }
+  },
+  {
+    "dutch": "kruispunt, het",
+    "english": "crossing, the",
+    "vietnamese": "ngã tư, giao lộ",
+    "dutchsentence": "Het kruispunt is erg gevaarlijk voor fietsers.",
+    "englishtranslate": "The crossing is very dangerous for cyclists.",
+    "pronunciation": { "ipa": "ˈkrœyspʏnt", "phonetic": "krous-punt" }
+  },
+  {
+    "dutch": "kwartier, het",
+    "english": "quarter of an hour",
+    "vietnamese": "15 phút",
+    "dutchsentence": "De bus komt over een kwartier.",
+    "englishtranslate": "The bus is coming in a quarter of an hour.",
+    "pronunciation": { "ipa": "kʋɑrˈtir", "phonetic": "kwar-teer" }
+  },
+  {
+    "dutch": "kwijt",
+    "english": "lost",
+    "vietnamese": "bị mất",
+    "dutchsentence": "Ik ben mijn sleutels kwijt.",
+    "englishtranslate": "I lost my keys.",
+    "pronunciation": { "ipa": "kʋɛit", "phonetic": "kwyt" }
+  },
+  {
+    "dutch": "kwijtraken",
+    "english": "to lose",
+    "vietnamese": "làm mất",
+    "dutchsentence": "Pas op dat je je paspoort niet gaat kwijtraken.",
+    "englishtranslate": "Watch out that you don't lose your passport.",
+    "pronunciation": { "ipa": "ˈkʋɛitˌraːkə(n)", "phonetic": "kwyt-raa-kun" }
+  },
+  {
+    "dutch": "les, de",
+    "english": "class, the",
+    "vietnamese": "bài học, buổi học",
+    "dutchsentence": "De les begint om negen uur.",
+    "englishtranslate": "The class starts at nine o'clock.",
+    "pronunciation": { "ipa": "lɛs", "phonetic": "les" }
+  },
+  {
+    "dutch": "links",
+    "english": "left",
+    "vietnamese": "bên trái",
+    "dutchsentence": "In Engeland rijden ze aan de linkerkant.",
+    "englishtranslate": "In England, they drive on the left side.",
+    "pronunciation": { "ipa": "lɪŋks", "phonetic": "links" }
+  },
+  {
+    "dutch": "linksaf",
+    "english": "to the left",
+    "vietnamese": "về phía bên trái",
+    "dutchsentence": "Ga bij de supermarkt linksaf.",
+    "englishtranslate": "Turn left at the supermarket.",
+    "pronunciation": { "ipa": "lɪŋksˈɑf", "phonetic": "links-af" }
+  },
+  {
+    "dutch": "minuut, de",
+    "english": "minute, the",
+    "vietnamese": "phút",
+    "dutchsentence": "Wacht een minuutje op mij.",
+    "englishtranslate": "Wait a minute for me.",
+    "pronunciation": { "ipa": "miˈnyt", "phonetic": "mee-newt" }
+  },
+  {
+    "dutch": "mogelijk",
+    "english": "possible",
+    "vietnamese": "có thể",
+    "dutchsentence": "Is het mogelijk om later te betalen?",
+    "englishtranslate": "Is it possible to pay later?",
+    "pronunciation": { "ipa": "ˈmoːɣələk", "phonetic": "mo-khuh-luk" }
+  },
+  {
+    "dutch": "nemen",
+    "english": "to take",
+    "vietnamese": "cầm, lấy",
+    "dutchsentence": "Ik moet de trein van zes uur nemen.",
+    "englishtranslate": "I have to take the six o'clock train.",
+    "pronunciation": { "ipa": "ˈneːmə(n)", "phonetic": "nay-mun" }
+  },
+  {
+    "dutch": "net als",
+    "english": "just like",
+    "vietnamese": "giống như là",
+    "dutchsentence": "Hij is erg slim, net als zijn vader.",
+    "englishtranslate": "He is very smart, just like his father.",
+    "pronunciation": { "ipa": "nɛt ɑls", "phonetic": "net-als" }
+  },
+  {
+    "dutch": "omroepen",
+    "english": "to announce",
+    "vietnamese": "thông báo qua loa",
+    "dutchsentence": "Op het station werd de vertraging omgeroepen.",
+    "englishtranslate": "The delay was announced at the station.",
+    "pronunciation": { "ipa": "ˈɔmˌrupə(n)", "phonetic": "om-roo-pun" }
+  },
+  {
+    "dutch": "onbekend",
+    "english": "unknown",
+    "vietnamese": "không xác định",
+    "dutchsentence": "De dader is nog onbekend.",
+    "englishtranslate": "The perpetrator is still unknown.",
+    "pronunciation": { "ipa": "ˌɔnbəˈkɛnt", "phonetic": "on-buh-kent" }
+  },
+  {
+    "dutch": "onderweg",
+    "english": "on the way",
+    "vietnamese": "đang trên đường",
+    "dutchsentence": "Ik ben onderweg naar huis.",
+    "englishtranslate": "I am on my way home.",
+    "pronunciation": { "ipa": "ˌɔndərˈʋɛx", "phonetic": "on-dur-wekh" }
+  },
+  {
+    "dutch": "onverplicht",
+    "english": "not mandatory",
+    "vietnamese": "không bắt buộc",
+    "dutchsentence": "Deelname aan dit uitje is onverplicht.",
+    "englishtranslate": "Participation in this outing is not mandatory.",
+    "pronunciation": { "ipa": "ˌɔnvərˈplɪxt", "phonetic": "on-vur-plikht" }
+  },
+  {
+    "dutch": "openingstijd, de",
+    "english": "opening hours, the",
+    "vietnamese": "giờ mở cửa",
+    "dutchsentence": "Wat is de openingstijd van de bakker?",
+    "englishtranslate": "What are the opening hours of the bakery?",
+    "pronunciation": { "ipa": "ˈoːpənɪŋsˌtɛit", "phonetic": "o-pun-ings-tyt" }
+  },
+  {
+    "dutch": "opletten",
+    "english": "to watch out",
+    "vietnamese": "chú ý",
+    "dutchsentence": "Je moet goed opletten in het verkeer.",
+    "englishtranslate": "You have to watch out in traffic.",
+    "pronunciation": { "ipa": "ˈɔpˌlɛtə(n)", "phonetic": "op-let-un" }
+  },
+  {
+    "dutch": "paasmaandag, de",
+    "english": "Easter Monday",
+    "vietnamese": "Thứ Hai Phục Sinh",
+    "dutchsentence": "Paasmaandag is een officiële vrije dag.",
+    "englishtranslate": "Easter Monday is an official day off.",
+    "pronunciation": { "ipa": "ˈpaːsmaːndɑx", "phonetic": "paas-maan-dakh" }
+  },
+  {
+    "dutch": "pinkstermaandag, de",
+    "english": "Pentecost Monday",
+    "vietnamese": "Thứ Hai Lễ Hiện Xuống",
+    "dutchsentence": "Op pinkstermaandag zijn er vaak festivals.",
+    "englishtranslate": "There are often festivals on Pentecost Monday.",
+    "pronunciation": { "ipa": "ˈpɪŋkstərmaːndɑx", "phonetic": "ping-stur-maan-dakh" }
+  },
+  {
+    "dutch": "plaatje, het",
+    "english": "picture, the",
+    "vietnamese": "bức tranh, tấm hình",
+    "dutchsentence": "Kijk naar het plaatje in het boek.",
+    "englishtranslate": "Look at the picture in the book.",
+    "pronunciation": { "ipa": "ˈplaːtjə", "phonetic": "plaat-yuh" }
+  },
+  {
+    "dutch": "plattegrond, de",
+    "english": "street map, the",
+    "vietnamese": "bản đồ",
+    "dutchsentence": "Op de plattegrond zie ik waar we zijn.",
+    "englishtranslate": "On the street map I see where we are.",
+    "pronunciation": { "ipa": "ˌplɑtəˈɣrɔnt", "phonetic": "plat-uh-khront" }
+  },
+  {
+    "dutch": "rangtelwoord, het",
+    "english": "ordinal number, the",
+    "vietnamese": "số thứ tự",
+    "dutchsentence": "'Eerste' is een rangtelwoord.",
+    "englishtranslate": "'First' is an ordinal number.",
+    "pronunciation": { "ipa": "ˈrɑŋtɛlˌʋoːrt", "phonetic": "rang-tel-wort" }
+  },
+  {
+    "dutch": "rechtdoor",
+    "english": "straight ahead",
+    "vietnamese": "đi thẳng",
+    "dutchsentence": "Ga bij de rotonde rechtdoor.",
+    "englishtranslate": "Go straight ahead at the roundabout.",
+    "pronunciation": { "ipa": "rɛxtˈdoːr", "phonetic": "rekht-dore" }
+  },
+  {
+    "dutch": "rechterhand, de",
+    "english": "right hand, the",
+    "vietnamese": "tay phải",
+    "dutchsentence": "Hij houdt de pen in zijn rechterhand.",
+    "englishtranslate": "He holds the pen in his right hand.",
+    "pronunciation": { "ipa": "ˈrɛxtərɦɑnt", "phonetic": "rekh-tur-hant" }
+  },
+  {
+    "dutch": "rechts",
+    "english": "(to the) right",
+    "vietnamese": "bên phải",
+    "dutchsentence": "Blijf zoveel mogelijk rechts rijden.",
+    "englishtranslate": "Keep driving to the right as much as possible.",
+    "pronunciation": { "ipa": "rɛxts", "phonetic": "rekhts" }
+  },
+  {
+    "dutch": "reiziger, de",
+    "english": "passenger, the",
+    "vietnamese": "hành khách",
+    "dutchsentence": "De reiziger wacht op het perron.",
+    "englishtranslate": "The passenger waits on the platform.",
+    "pronunciation": { "ipa": "ˈrɛizəɣər", "phonetic": "ry-zuh-khur" }
+  },
+  {
+    "dutch": "rijbaan, de",
+    "english": "lane, the",
+    "vietnamese": "làn đường",
+    "dutchsentence": "Er staat een auto stil op de rijbaan.",
+    "englishtranslate": "A car is stationary on the lane.",
+    "pronunciation": { "ipa": "ˈrɛibaːn", "phonetic": "ry-baan" }
+  },
+  {
+    "dutch": "rijrichting, de",
+    "english": "traffic direction, the",
+    "vietnamese": "hướng giao thông",
+    "dutchsentence": "Kijk goed naar de aangegeven rijrichting.",
+    "englishtranslate": "Look closely at the indicated traffic direction.",
+    "pronunciation": { "ipa": "ˈrɛiˌrɪxtɪŋ", "phonetic": "ry-rikh-ting" }
+  },
+  {
+    "dutch": "ritje, het",
+    "english": "ride, the",
+    "vietnamese": "chuyến đi ngắn",
+    "dutchsentence": "Zullen we een ritje maken in je nieuwe auto?",
+    "englishtranslate": "Shall we take a ride in your new car?",
+    "pronunciation": { "ipa": "ˈrɪtjə", "phonetic": "rit-yuh" }
+  },
+  {
+    "dutch": "roepen",
+    "english": "to call",
+    "vietnamese": "gọi, hét lên",
+    "dutchsentence": "Moeder roept de kinderen voor het eten.",
+    "englishtranslate": "Mother calls the children for dinner.",
+    "pronunciation": { "ipa": "ˈrupə(n)", "phonetic": "roo-pun" }
+  },
+  {
+    "dutch": "route, de",
+    "english": "route, the",
+    "vietnamese": "lộ trình",
+    "dutchsentence": "Wat is de kortste route naar het strand?",
+    "englishtranslate": "What is the shortest route to the beach?",
+    "pronunciation": { "ipa": "ˈrutə", "phonetic": "roo-tuh" }
+  },
+  {
+    "dutch": "routebeschrijving, de",
+    "english": "route, the",
+    "vietnamese": "chỉ đường",
+    "dutchsentence": "Heb je een routebeschrijving voor mij?",
+    "englishtranslate": "Do you have a route description for me?",
+    "pronunciation": { "ipa": "ˈrutəbəˌsχrɛivɪŋ", "phonetic": "roo-tuh-buh-skhry-ving" }
+  },
+  {
+    "dutch": "rug, de",
+    "english": "back, the",
+    "vietnamese": "cái lưng",
+    "dutchsentence": "Ik heb een beetje pijn in mijn rug.",
+    "englishtranslate": "I have a bit of pain in my back.",
+    "pronunciation": { "ipa": "rʏx", "phonetic": "rukh" }
+  },
+  {
+    "dutch": "sluiten",
+    "english": "to close",
+    "vietnamese": "đóng",
+    "dutchsentence": "De bibliotheek gaat om vijf uur sluiten.",
+    "englishtranslate": "The library is going to close at five o'clock.",
+    "pronunciation": { "ipa": "ˈslœytə(n)", "phonetic": "slou-tun" }
+  },
+  {
+    "dutch": "spannend",
+    "english": "exciting",
+    "vietnamese": "kịch tính, hồi hộp",
+    "dutchsentence": "De film was erg spannend.",
+    "englishtranslate": "The movie was very exciting.",
+    "pronunciation": { "ipa": "ˈspɑnənt", "phonetic": "span-unt" }
+  },
+  {
+    "dutch": "stappen",
+    "english": "to go out",
+    "vietnamese": "đi chơi, đi bar",
+    "dutchsentence": "Zullen we zaterdagavond gaan stappen?",
+    "englishtranslate": "Shall we go out on Saturday night?",
+    "pronunciation": { "ipa": "ˈstɑpə(n)", "phonetic": "stap-un" }
+  },
+  {
+    "dutch": "stellen",
+    "english": "to ask (a question)",
+    "vietnamese": "đặt (câu hỏi)",
+    "dutchsentence": "Mag ik u een vraag stellen?",
+    "englishtranslate": "May I ask you a question?",
+    "pronunciation": { "ipa": "ˈstɛlə(n)", "phonetic": "stel-un" }
+  },
+  {
+    "dutch": "stoplicht, het",
+    "english": "traffic light, the",
+    "vietnamese": "đèn giao thông",
+    "dutchsentence": "Wacht tot het stoplicht op groen springt.",
+    "englishtranslate": "Wait until the traffic light turns green.",
+    "pronunciation": { "ipa": "ˈstɔplɪxt", "phonetic": "stop-likht" }
+  },
+  {
+    "dutch": "tijdens",
+    "english": "during",
+    "vietnamese": "trong khi",
+    "dutchsentence": "Tijdens de vakantie hebben we veel gewandeld.",
+    "englishtranslate": "During the holiday we walked a lot.",
+    "pronunciation": { "ipa": "ˈtɛidəns", "phonetic": "ty-duns" }
+  },
+  {
+    "dutch": "trottoir, het",
+    "english": "sidewalk, the",
+    "vietnamese": "vỉa hè",
+    "dutchsentence": "Voetgangers moeten op het trottoir lopen.",
+    "englishtranslate": "Pedestrians must walk on the sidewalk.",
+    "pronunciation": { "ipa": "trɔˈtʋaːr", "phonetic": "trot-waar" }
+  },
+  {
+    "dutch": "tunnel, de",
+    "english": "tunnel, the",
+    "vietnamese": "đường hầm",
+    "dutchsentence": "De trein gaat door een lange tunnel.",
+    "englishtranslate": "The train goes through a long tunnel.",
+    "pronunciation": { "ipa": "ˈtʏnəl", "phonetic": "tun-ul" }
+  },
+  {
+    "dutch": "vallen",
+    "english": "to be on a certain date",
+    "vietnamese": "rơi vào (ngày)",
+    "dutchsentence": "Mijn verjaardag valt dit jaar op een zondag.",
+    "englishtranslate": "My birthday falls on a Sunday this year.",
+    "pronunciation": { "ipa": "ˈvɑlə(n)", "phonetic": "val-un" }
+  },
+  {
+    "dutch": "verbod, het",
+    "english": "prohibition, the",
+    "vietnamese": "lệnh cấm",
+    "dutchsentence": "Er geldt een verbod op roken in het gebouw.",
+    "englishtranslate": "There is a prohibition on smoking in the building.",
+    "pronunciation": { "ipa": "vərˈbɔt", "phonetic": "vur-bot" }
+  },
+  {
+    "dutch": "verplicht",
+    "english": "compulsory",
+    "vietnamese": "bắt buộc",
+    "dutchsentence": "Een autogordel dragen is verplicht.",
+    "englishtranslate": "Wearing a seatbelt is compulsory.",
+    "pronunciation": { "ipa": "vərˈplɪxt", "phonetic": "vur-plikht" }
+  },
+  {
+    "dutch": "vervoermiddel, het",
+    "english": "vehicle, the",
+    "vietnamese": "phương tiện giao thông",
+    "dutchsentence": "De fiets is een handig vervoermiddel.",
+    "englishtranslate": "The bicycle is a handy vehicle.",
+    "pronunciation": { "ipa": "vərˈvuːrmɪdəl", "phonetic": "vur-voor-mi-dul" }
+  },
+  {
+    "dutch": "vervoersbewijs, het",
+    "english": "ticket, the",
+    "vietnamese": "vé xe/tàu",
+    "dutchsentence": "U moet uw vervoersbewijs tonen aan de controleur.",
+    "englishtranslate": "You must show your ticket to the inspector.",
+    "pronunciation": { "ipa": "vərˈvuːrsbəˌʋɛis", "phonetic": "vur-voors-buh-wys" }
+  },
+  {
+    "dutch": "vlak bij",
+    "english": "near, close to",
+    "vietnamese": "ngay gần",
+    "dutchsentence": "Ik woon vlak bij het station.",
+    "englishtranslate": "I live near the station.",
+    "pronunciation": { "ipa": "vlɑk bɛi", "phonetic": "vlak-by" }
+  },
+  {
+    "dutch": "vlak voor",
+    "english": "right before",
+    "vietnamese": "ngay trước khi",
+    "dutchsentence": "Vlak voor de bocht moet je remmen.",
+    "englishtranslate": "Right before the curve you have to brake.",
+    "pronunciation": { "ipa": "vlɑk voːr", "phonetic": "vlak-vore" }
+  },
+  {
+    "dutch": "vlakbij",
+    "english": "nearby, close",
+    "vietnamese": "ở gần đây",
+    "dutchsentence": "Is er een supermarkt vlakbij?",
+    "englishtranslate": "Is there a supermarket nearby?",
+    "pronunciation": { "ipa": "ˈvlɑkˌbɛi", "phonetic": "vlak-by" }
+  },
+  {
+    "dutch": "voetpad, het",
+    "english": "footpath, the",
+    "vietnamese": "đường đi bộ",
+    "dutchsentence": "Dit voetpad is alleen voor wandelaars.",
+    "englishtranslate": "This footpath is only for walkers.",
+    "pronunciation": { "ipa": "ˈvutˌpɑt", "phonetic": "voot-pat" }
+  },
+  {
+    "dutch": "volgen",
+    "english": "to follow",
+    "vietnamese": "theo dõi, đi theo",
+    "dutchsentence": "Volg de borden naar Amsterdam.",
+    "englishtranslate": "Follow the signs to Amsterdam.",
+    "pronunciation": { "ipa": "ˈvɔlɣə(n)", "phonetic": "vol-khun" }
+  },
+  {
+    "dutch": "volwassene, de",
+    "english": "adult, the",
+    "vietnamese": "người lớn",
+    "dutchsentence": "Een ticket voor een volwassene is duurder.",
+    "englishtranslate": "A ticket for an adult is more expensive.",
+    "pronunciation": { "ipa": "vɔlˈʋɑsənə", "phonetic": "vol-was-uh-nuh" }
+  },
+  {
+    "dutch": "waarnaartoe",
+    "english": "where to",
+    "vietnamese": "đi đâu",
+    "dutchsentence": "Waarnaartoe gaat deze trein?",
+    "englishtranslate": "Where to is this train going?",
+    "pronunciation": { "ipa": "ʋaːrnaːrˈtu", "phonetic": "waar-naar-too" }
+  },
+  {
+    "dutch": "weekendje, het",
+    "english": "weekend, the",
+    "vietnamese": "kỳ nghỉ cuối tuần ngắn",
+    "dutchsentence": "We gaan een weekendje naar zee.",
+    "englishtranslate": "We are going for a weekend to the sea.",
+    "pronunciation": { "ipa": "ˈʋikɛntjə", "phonetic": "wee-kent-yuh" }
+  },
+  {
+    "dutch": "weg, de",
+    "english": "road, the",
+    "vietnamese": "con đường",
+    "dutchsentence": "De weg is wegens werkzaamheden afgesloten.",
+    "englishtranslate": "The road is closed due to construction.",
+    "pronunciation": { "ipa": "ʋɛx", "phonetic": "wekh" }
+  },
+  {
+    "dutch": "wijzen",
+    "english": "to show the way",
+    "vietnamese": "chỉ đường, chỉ bảo",
+    "dutchsentence": "Kunt u mij de weg wijzen?",
+    "englishtranslate": "Can you show me the way?",
+    "pronunciation": { "ipa": "ˈʋɛizə(n)", "phonetic": "wy-zun" }
+  },
+  {
+    "dutch": "zichtbaar",
+    "english": "visible",
+    "vietnamese": "có thể nhìn thấy",
+    "dutchsentence": "De bergen waren goed zichtbaar.",
+    "englishtranslate": "The mountains were clearly visible.",
+    "pronunciation": { "ipa": "ˈzɪxtbaːr", "phonetic": "zikht-baar" }
+  },
+  {
+    "dutch": "zorgen voor",
+    "english": "to take care of",
+    "vietnamese": "chăm sóc, lo liệu",
+    "dutchsentence": "Wie zorgt er voor de planten?",
+    "englishtranslate": "Who is taking care of the plants?",
+    "pronunciation": { "ipa": "ˈzɔrɣə(n) voːr", "phonetic": "zor-khun vore" }
+  },
+  {
+    "dutch": "zwartrijder, de",
+    "english": "fare dodger, the",
+    "vietnamese": "người đi lậu vé",
+    "dutchsentence": "De zwartrijder kreeg een boete van de controleur.",
+    "englishtranslate": "The fare dodger got a fine from the inspector.",
+    "pronunciation": { "ipa": "ˈzʋɑrtˌrɛidər", "phonetic": "zwart-ry-dur" }
+  }
+]

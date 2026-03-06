@@ -1,0 +1,658 @@
+[
+  {
+    "dutch": "aantrekkelijk",
+    "english": "appealing, attractive",
+    "vietnamese": "hấp dẫn, lôi cuốn",
+    "dutchsentence": "Dat is een aantrekkelijk aanbod voor een nieuwe baan.",
+    "englishtranslate": "That is an appealing offer for a new job.",
+    "pronunciation": { "ipa": "ˈaːnˌtrɛkələk", "phonetic": "aan-trek-uh-luk" }
+  },
+  {
+    "dutch": "belachelijk",
+    "english": "ridiculous",
+    "vietnamese": "nực cười, lố bịch",
+    "dutchsentence": "Het is belachelijk dat we zo lang moeten wachten.",
+    "englishtranslate": "It is ridiculous that we have to wait so long.",
+    "pronunciation": { "ipa": "bəˈlɑχələk", "phonetic": "buh-lakh-uh-luk" }
+  },
+  {
+    "dutch": "beoordeling, de",
+    "english": "judgement, assessment, the",
+    "vietnamese": "sự đánh giá",
+    "dutchsentence": "Morgen heb ik mijn jaarlijkse beoordeling op het werk.",
+    "englishtranslate": "Tomorrow I have my annual assessment at work.",
+    "pronunciation": { "ipa": "bəˈoːrdelɪŋ", "phonetic": "buh-oar-day-ling" }
+  },
+  {
+    "dutch": "bereiken",
+    "english": "to achieve, to reach",
+    "vietnamese": "đạt được, liên lạc được",
+    "dutchsentence": "We hebben ons doel voor dit jaar bereikt.",
+    "englishtranslate": "We have achieved our goal for this year.",
+    "pronunciation": { "ipa": "bəˈrɛikə(n)", "phonetic": "buh-ry-kun" }
+  },
+  {
+    "dutch": "beschouwen",
+    "english": "to consider, to view",
+    "vietnamese": "xem xét, coi là",
+    "dutchsentence": "Ik beschouw hem als een goede vriend.",
+    "englishtranslate": "I consider him a good friend.",
+    "pronunciation": { "ipa": "bəˈsχʌuʋə(n)", "phonetic": "buh-skhow-vun" }
+  },
+  {
+    "dutch": "beslissen",
+    "english": "to decide",
+    "vietnamese": "quyết định",
+    "dutchsentence": "De manager moet vandaag beslissen.",
+    "englishtranslate": "The manager has to decide today.",
+    "pronunciation": { "ipa": "bəˈslɪsə(n)", "phonetic": "buh-slis-un" }
+  },
+  {
+    "dutch": "beslissing, de",
+    "english": "decision, the",
+    "vietnamese": "quyết định",
+    "dutchsentence": "Dat was een lastige beslissing om te nemen.",
+    "englishtranslate": "That was a difficult decision to make.",
+    "pronunciation": { "ipa": "bəˈslɪsɪŋ", "phonetic": "buh-slis-ing" }
+  },
+  {
+    "dutch": "besteden",
+    "english": "to spend (time/money)",
+    "vietnamese": "dành (thời gian), tiêu (tiền)",
+    "dutchsentence": "Hoeveel tijd besteed jij aan je huiswerk?",
+    "englishtranslate": "How much time do you spend on your homework?",
+    "pronunciation": { "ipa": "bəˈsteːdə(n)", "phonetic": "buh-stay-dun" }
+  },
+  {
+    "dutch": "bloei, de",
+    "english": "prime, bloom, the",
+    "vietnamese": "thời kỳ hoàng kim, sự nở hoa",
+    "dutchsentence": "Het bedrijf is nu in de bloei van zijn bestaan.",
+    "englishtranslate": "The company is now in its prime.",
+    "pronunciation": { "ipa": "blui", "phonetic": "blooy" }
+  },
+  {
+    "dutch": "boos",
+    "english": "angry",
+    "vietnamese": "tức giận",
+    "dutchsentence": "Waarom ben je zo boos op mij?",
+    "englishtranslate": "Why are you so angry at me?",
+    "pronunciation": { "ipa": "boːs", "phonetic": "boas" }
+  },
+  {
+    "dutch": "cadeau, het",
+    "english": "gift, present, the",
+    "vietnamese": "món quà",
+    "dutchsentence": "Ik heb een leuk cadeau voor haar verjaardag gekocht.",
+    "englishtranslate": "I bought a nice gift for her birthday.",
+    "pronunciation": { "ipa": "kaːˈdoː", "phonetic": "kaa-do" }
+  },
+  {
+    "dutch": "collega, de",
+    "english": "colleague, the",
+    "vietnamese": "đồng nghiệp",
+    "dutchsentence": "Mijn nieuwe collega is erg vriendelijk.",
+    "englishtranslate": "My new colleague is very friendly.",
+    "pronunciation": { "ipa": "kɔˈleːɣaː", "phonetic": "ko-lay-khaa" }
+  },
+  {
+    "dutch": "deelnemen",
+    "english": "to take part, participate",
+    "vietnamese": "tham gia",
+    "dutchsentence": "Wil je deelnemen aan de vergadering?",
+    "englishtranslate": "Would you like to participate in the meeting?",
+    "pronunciation": { "ipa": "ˈdeːlˌneːmə(n)", "phonetic": "dayl-nay-mun" }
+  },
+  {
+    "dutch": "directheid, de",
+    "english": "directness, the",
+    "vietnamese": "sự thẳng thắn",
+    "dutchsentence": "Nederlanders staan bekend om hun directheid.",
+    "englishtranslate": "Dutch people are known for their directness.",
+    "pronunciation": { "ipa": "diˈrɛktɦɛit", "phonetic": "dee-rekt-hyt" }
+  },
+  {
+    "dutch": "eens",
+    "english": "in agreement",
+    "vietnamese": "đồng ý",
+    "dutchsentence": "Ik ben het met je eens.",
+    "englishtranslate": "I agree with you.",
+    "pronunciation": { "ipa": "eːns", "phonetic": "ayns" }
+  },
+  {
+    "dutch": "eerlijkheid, de",
+    "english": "honesty, the",
+    "vietnamese": "sự trung thực",
+    "dutchsentence": "Eerlijkheid duurt het langst.",
+    "englishtranslate": "Honesty is the best policy.",
+    "pronunciation": { "ipa": "ˈeːrləkɦɛit", "phonetic": "ayr-luk-hyt" }
+  },
+  {
+    "dutch": "efficiëntie, de",
+    "english": "efficiency, the",
+    "vietnamese": "hiệu quả",
+    "dutchsentence": "We moeten de efficiëntie van het team verbeteren.",
+    "englishtranslate": "We need to improve the team's efficiency.",
+    "pronunciation": { "ipa": "ɛfiˈʃɛntsi", "phonetic": "ef-fee-shen-tsee" }
+  },
+  {
+    "dutch": "ego, het",
+    "english": "ego, the",
+    "vietnamese": "cái tôi",
+    "dutchsentence": "Hij heeft een erg groot ego.",
+    "englishtranslate": "He has a very large ego.",
+    "pronunciation": { "ipa": "ˈeːɣoː", "phonetic": "ay-kho" }
+  },
+  {
+    "dutch": "emotie, de",
+    "english": "emotion, the",
+    "vietnamese": "cảm xúc",
+    "dutchsentence": "Hij toont niet vaak zijn emoties.",
+    "englishtranslate": "He doesn't often show his emotions.",
+    "pronunciation": { "ipa": "eːˈmoːtsi", "phonetic": "ay-mo-tsee" }
+  },
+  {
+    "dutch": "enthousiast",
+    "english": "enthusiastic",
+    "vietnamese": "nhiệt tình, hào hứng",
+    "dutchsentence": "Iedereen was erg enthousiast over het plan.",
+    "englishtranslate": "Everyone was very enthusiastic about the plan.",
+    "pronunciation": { "ipa": "ɑntuˈʃɑst", "phonetic": "an-too-shast" }
+  },
+  {
+    "dutch": "eter, de",
+    "english": "eater, the",
+    "vietnamese": "người ăn",
+    "dutchsentence": "Hij is een moeilijke eter; hij lust bijna niets.",
+    "englishtranslate": "He is a picky eater; he likes almost nothing.",
+    "pronunciation": { "ipa": "ˈeːtər", "phonetic": "ay-tur" }
+  },
+  {
+    "dutch": "feit, het",
+    "english": "fact, the",
+    "vietnamese": "sự thật, sự kiện",
+    "dutchsentence": "Het is een feit dat de aarde rond is.",
+    "englishtranslate": "It is a fact that the earth is round.",
+    "pronunciation": { "ipa": "fɛit", "phonetic": "fyt" }
+  },
+  {
+    "dutch": "felicitatie, de",
+    "english": "congratulations, the",
+    "vietnamese": "lời chúc mừng",
+    "dutchsentence": "Hartelijke felicitaties met je nieuwe baan!",
+    "englishtranslate": "Heartfelt congratulations on your new job!",
+    "pronunciation": { "ipa": "feːliːsiˈtaːtsi", "phonetic": "fay-lee-see-taa-tsee" }
+  },
+  {
+    "dutch": "flauwekul, de",
+    "english": "nonsense, the",
+    "vietnamese": "chuyện tào lao",
+    "dutchsentence": "Geloof hem niet, het is allemaal flauwekul.",
+    "englishtranslate": "Don't believe him, it's all nonsense.",
+    "pronunciation": { "ipa": "ˈflʌuʋəkʏl", "phonetic": "flow-vuh-kul" }
+  },
+  {
+    "dutch": "folder, de",
+    "english": "folder, brochure, the",
+    "vietnamese": "tờ rơi, tập tài liệu",
+    "dutchsentence": "In deze folder staat alle informatie over de cursus.",
+    "englishtranslate": "This brochure contains all the information about the course.",
+    "pronunciation": { "ipa": "ˈfɔldər", "phonetic": "fol-dur" }
+  },
+  {
+    "dutch": "gek",
+    "english": "crazy, strange",
+    "vietnamese": "điên rồ, kỳ lạ",
+    "dutchsentence": "Ben je gek geworden?",
+    "englishtranslate": "Have you gone crazy?",
+    "pronunciation": { "ipa": "ɣɛk", "phonetic": "khek" }
+  },
+  {
+    "dutch": "geruststellen",
+    "english": "to reassure",
+    "vietnamese": "làm yên lòng, trấn an",
+    "dutchsentence": "De arts kon de patiënt geruststellen.",
+    "englishtranslate": "The doctor was able to reassure the patient.",
+    "pronunciation": { "ipa": "ɣəˈrʏstˌstɛlə(n)", "phonetic": "khuh-rust-stel-un" }
+  },
+  {
+    "dutch": "gevaarlijk",
+    "english": "dangerous",
+    "vietnamese": "nguy hiểm",
+    "dutchsentence": "Het is gevaarlijk om hier over te steken.",
+    "englishtranslate": "It is dangerous to cross the street here.",
+    "pronunciation": { "ipa": "ɣəˈvaːrlək", "phonetic": "khuh-vaar-luk" }
+  },
+  {
+    "dutch": "groeien",
+    "english": "to grow",
+    "vietnamese": "phát triển, lớn lên",
+    "dutchsentence": "Kinderen groeien erg hard.",
+    "englishtranslate": "Children grow very fast.",
+    "pronunciation": { "ipa": "ˈɣruijə(n)", "phonetic": "khroo-yun" }
+  },
+  {
+    "dutch": "grof",
+    "english": "rude, coarse",
+    "vietnamese": "thô lỗ, thô kệch",
+    "dutchsentence": "Ik vond zijn opmerking erg grof.",
+    "englishtranslate": "I thought his comment was very rude.",
+    "pronunciation": { "ipa": "ɣrɔf", "phonetic": "khrof" }
+  },
+  {
+    "dutch": "hiërarchie, de",
+    "english": "hierarchy, the",
+    "vietnamese": "hệ thống cấp bậc",
+    "dutchsentence": "In dit bedrijf is er weinig hiërarchie.",
+    "englishtranslate": "There is little hierarchy in this company.",
+    "pronunciation": { "ipa": "ɦijeːrɑrˈxi", "phonetic": "hee-yay-rar-khee" }
+  },
+  {
+    "dutch": "huiswerk, het",
+    "english": "homework, the",
+    "vietnamese": "bài tập về nhà",
+    "dutchsentence": "Heb je je huiswerk al af?",
+    "englishtranslate": "Is your homework finished already?",
+    "pronunciation": { "ipa": "ˈɦœysˌʋɛrk", "phonetic": "houys-verk" }
+  },
+  {
+    "dutch": "in verband met",
+    "english": "concerning, in connection with",
+    "vietnamese": "liên quan đến",
+    "dutchsentence": "De weg is dicht in verband met een ongeluk.",
+    "englishtranslate": "The road is closed due to an accident.",
+    "pronunciation": { "ipa": "ɪn vərˈbɑnt mɛt", "phonetic": "in vur-bant met" }
+  },
+  {
+    "dutch": "inbreng, de",
+    "english": "share, contribution, input, the",
+    "vietnamese": "sự đóng góp, ý kiến",
+    "dutchsentence": "Bedankt voor je inbreng in de discussie.",
+    "englishtranslate": "Thank you for your input in the discussion.",
+    "pronunciation": { "ipa": "ˈɪnˌbrɛŋ", "phonetic": "in-breng" }
+  },
+  {
+    "dutch": "kern, de",
+    "english": "main point, core, the",
+    "vietnamese": "điểm cốt lõi",
+    "dutchsentence": "Laten we teruggaan naar de kern van de zaak.",
+    "englishtranslate": "Let's go back to the heart of the matter.",
+    "pronunciation": { "ipa": "kɛrn", "phonetic": "kern" }
+  },
+  {
+    "dutch": "klagen",
+    "english": "to complain",
+    "vietnamese": "phàn nàn",
+    "dutchsentence": "Nederlanders klagen vaak over het weer.",
+    "englishtranslate": "Dutch people often complain about the weather.",
+    "pronunciation": { "ipa": "ˈklaːɣə(n)", "phonetic": "klaa-khun" }
+  },
+  {
+    "dutch": "kleding, de",
+    "english": "clothing, the",
+    "vietnamese": "quần áo, y phục",
+    "dutchsentence": "Draag nette kleding voor het sollicitatiegesprek.",
+    "englishtranslate": "Wear neat clothing for the job interview.",
+    "pronunciation": { "ipa": "ˈkleːdɪŋ", "phonetic": "klay-ding" }
+  },
+  {
+    "dutch": "lastig",
+    "english": "troublesome, awkward, difficult",
+    "vietnamese": "khó khăn, rắc rối",
+    "dutchsentence": "Dat is een lastige vraag om te beantwoorden.",
+    "englishtranslate": "That is a difficult question to answer.",
+    "pronunciation": { "ipa": "ˈlɑstəx", "phonetic": "las-tukh" }
+  },
+  {
+    "dutch": "lawaai, het",
+    "english": "noise, the",
+    "vietnamese": "tiếng ồn",
+    "dutchsentence": "De buren maken veel lawaai.",
+    "englishtranslate": "The neighbors are making a lot of noise.",
+    "pronunciation": { "ipa": "laːˈʋaːi", "phonetic": "laa-vaay" }
+  },
+  {
+    "dutch": "leven, het",
+    "english": "life, the",
+    "vietnamese": "cuộc sống",
+    "dutchsentence": "Geniet van het leven!",
+    "englishtranslate": "Enjoy life!",
+    "pronunciation": { "ipa": "ˈleːvə(n)", "phonetic": "lay-vun" }
+  },
+  {
+    "dutch": "management, het",
+    "english": "management, the",
+    "vietnamese": "ban quản lý",
+    "dutchsentence": "Het management heeft nieuwe regels gemaakt.",
+    "englishtranslate": "The management has made new rules.",
+    "pronunciation": { "ipa": "ˈmɛnədʒmənt", "phonetic": "men-idj-munt" }
+  },
+  {
+    "dutch": "meedoen",
+    "english": "to join in, participate",
+    "vietnamese": "tham gia cùng",
+    "dutchsentence": "Wil je ook meedoen met het spel?",
+    "englishtranslate": "Do you want to join the game too?",
+    "pronunciation": { "ipa": "ˈmeːˌdun", "phonetic": "may-doon" }
+  },
+  {
+    "dutch": "menen",
+    "english": "to be serious, to mean it",
+    "vietnamese": "nói nghiêm túc, có ý là",
+    "dutchsentence": "Ik meen het serieus, ik ga verhuizen.",
+    "englishtranslate": "I'm serious, I'm going to move.",
+    "pronunciation": { "ipa": "ˈmeːnə(n)", "phonetic": "may-nun" }
+  },
+  {
+    "dutch": "negatief",
+    "english": "negative",
+    "vietnamese": "tiêu cực",
+    "dutchsentence": "Probeer niet zo negatief te denken.",
+    "englishtranslate": "Try not to think so negatively.",
+    "pronunciation": { "ipa": "ˌneːɣaːˈtif", "phonetic": "nay-khaa-teef" }
+  },
+  {
+    "dutch": "oneens",
+    "english": "in disagreement",
+    "vietnamese": "không đồng ý",
+    "dutchsentence": "We zijn het daarover oneens.",
+    "englishtranslate": "We disagree about that.",
+    "pronunciation": { "ipa": "ˌɔnˈeːns", "phonetic": "on-ayns" }
+  },
+  {
+    "dutch": "ongemakkelijk",
+    "english": "uncomfortable, uneasy",
+    "vietnamese": "khó chịu, không thoải mái",
+    "dutchsentence": "Er viel een ongemakkelijke stilte.",
+    "englishtranslate": "An uncomfortable silence fell.",
+    "pronunciation": { "ipa": "ˌɔŋɣəˈmɑkələk", "phonetic": "ong-khuh-mak-uh-luk" }
+  },
+  {
+    "dutch": "op basis van",
+    "english": "based on",
+    "vietnamese": "dựa trên",
+    "dutchsentence": "De beslissing is genomen op basis van feiten.",
+    "englishtranslate": "The decision was made based on facts.",
+    "pronunciation": { "ipa": "ɔp ˈbaːzɪs vɑn", "phonetic": "op baa-zis van" }
+  },
+  {
+    "dutch": "openheid, de",
+    "english": "frankness, openness, the",
+    "vietnamese": "sự cởi mở",
+    "dutchsentence": "Ik waardeer je openheid over dit onderwerp.",
+    "englishtranslate": "I appreciate your openness about this subject.",
+    "pronunciation": { "ipa": "ˈoːpənhɛit", "phonetic": "oa-pun-hyt" }
+  },
+  {
+    "dutch": "opmaken",
+    "english": "to put on make-up, to finish",
+    "vietnamese": "trang điểm, dùng hết",
+    "dutchsentence": "Zij is zich in de badkamer aan het opmaken.",
+    "englishtranslate": "She is putting on make-up in the bathroom.",
+    "pronunciation": { "ipa": "ˈɔpˌmaːkə(n)", "phonetic": "op-maa-kun" }
+  },
+  {
+    "dutch": "oprecht",
+    "english": "sincere",
+    "vietnamese": "chân thành",
+    "dutchsentence": "Is dat een oprecht compliment?",
+    "englishtranslate": "Is that a sincere compliment?",
+    "pronunciation": { "ipa": "ɔpˈrɛxt", "phonetic": "op-rekht" }
+  },
+  {
+    "dutch": "opscheppen",
+    "english": "to brag, to serve (food)",
+    "vietnamese": "khoe khoang, múc đồ ăn",
+    "dutchsentence": "Hij houdt ervan om op te scheppen over zijn auto.",
+    "englishtranslate": "He likes to brag about his car.",
+    "pronunciation": { "ipa": "ˈɔpˌsχɛpə(n)", "phonetic": "op-skhep-un" }
+  },
+  {
+    "dutch": "organisatie, de",
+    "english": "organisation, the",
+    "vietnamese": "tổ chức",
+    "dutchsentence": "Zij werkt voor een internationale organisatie.",
+    "englishtranslate": "She works for an international organization.",
+    "pronunciation": { "ipa": "ˌɔrɣaːniˈzaːtsi", "phonetic": "or-khaa-nee-zaa-tsee" }
+  },
+  {
+    "dutch": "overleg, het",
+    "english": "consultation, discussion, the",
+    "vietnamese": "sự thảo luận, hội ý",
+    "dutchsentence": "Na kort overleg waren we eruit.",
+    "englishtranslate": "After a brief discussion, we figured it out.",
+    "pronunciation": { "ipa": "ˈoːvərˌlɛχ", "phonetic": "oa-vur-lekh" }
+  },
+  {
+    "dutch": "paraplu, de",
+    "english": "umbrella, the",
+    "vietnamese": "cái ô, cái dù",
+    "dutchsentence": "Vergeet je paraplu niet, het gaat regenen.",
+    "englishtranslate": "Don't forget your umbrella, it's going to rain.",
+    "pronunciation": { "ipa": "ˌpaːraːˈply", "phonetic": "paa-raa-pluu" }
+  },
+  {
+    "dutch": "parfumerie, de",
+    "english": "perfume shop, the",
+    "vietnamese": "cửa hàng nước hoa",
+    "dutchsentence": "Ik heb een nieuw luchtje gekocht bij de parfumerie.",
+    "englishtranslate": "I bought a new scent at the perfume shop.",
+    "pronunciation": { "ipa": "ˌpɑrfyməˈri", "phonetic": "par-fuu-muh-ree" }
+  },
+  {
+    "dutch": "politie, de",
+    "english": "police, the",
+    "vietnamese": "cảnh sát",
+    "dutchsentence": "De politie onderzoekt de diefstal.",
+    "englishtranslate": "The police are investigating the theft.",
+    "pronunciation": { "ipa": "poːˈlitsi", "phonetic": "po-lee-tsee" }
+  },
+  {
+    "dutch": "positief",
+    "english": "positive",
+    "vietnamese": "tích cực",
+    "dutchsentence": "We hebben positieve resultaten behaald.",
+    "englishtranslate": "We have achieved positive results.",
+    "pronunciation": { "ipa": "ˌpoːziˈtif", "phonetic": "po-zee-teef" }
+  },
+  {
+    "dutch": "privéleven, het",
+    "english": "private life, the",
+    "vietnamese": "đời sống riêng tư",
+    "dutchsentence": "Ik hou mijn werk en privéleven graag gescheiden.",
+    "englishtranslate": "I like to keep my work and private life separate.",
+    "pronunciation": { "ipa": "priˈveːˌleːvə(n)", "phonetic": "pree-vay-lay-vun" }
+  },
+  {
+    "dutch": "punctualiteit, de",
+    "english": "punctuality, the",
+    "vietnamese": "sự đúng giờ",
+    "dutchsentence": "Punctualiteit is erg belangrijk in de zakenwereld.",
+    "englishtranslate": "Punctuality is very important in the business world.",
+    "pronunciation": { "ipa": "ˌpʏŋktywaːliˈtɛit", "phonetic": "punk-tu-waa-lee-tyt" }
+  },
+  {
+    "dutch": "regenjas, de",
+    "english": "raincoat, the",
+    "vietnamese": "áo mưa",
+    "dutchsentence": "Heb je je regenjas aan?",
+    "englishtranslate": "Are you wearing your raincoat?",
+    "pronunciation": { "ipa": "ˈreːɣə(n)ˌjɑs", "phonetic": "ray-khun-yas" }
+  },
+  {
+    "dutch": "ruim van tevoren",
+    "english": "way beforehand",
+    "vietnamese": "trước đó khá lâu",
+    "dutchsentence": "Je moet de afspraak ruim van tevoren plannen.",
+    "englishtranslate": "You need to plan the appointment well in advance.",
+    "pronunciation": { "ipa": "rœym vɑn təˈvoːrə(n)", "phonetic": "rouym van tuh-voa-run" }
+  },
+  {
+    "dutch": "serieus",
+    "english": "serious",
+    "vietnamese": "nghiêm túc",
+    "dutchsentence": "Ben je serieus aan het werk?",
+    "englishtranslate": "Are you working seriously?",
+    "pronunciation": { "ipa": "seːriˈøːs", "phonetic": "say-ree-uhs" }
+  },
+  {
+    "dutch": "spreekuur, het",
+    "english": "office hours, consultation hour, the",
+    "vietnamese": "giờ tư vấn/khám bệnh",
+    "dutchsentence": "De huisarts heeft spreekuur van 9 tot 11.",
+    "englishtranslate": "The doctor has consultation hours from 9 to 11.",
+    "pronunciation": { "ipa": "ˈspreːkˌyːr", "phonetic": "sprayk-uur" }
+  },
+  {
+    "dutch": "statistiek, de",
+    "english": "statistics, the",
+    "vietnamese": "thống kê",
+    "dutchsentence": "De statistieken laten een stijging zien.",
+    "englishtranslate": "The statistics show an increase.",
+    "pronunciation": { "ipa": "staːtɪsˈtik", "phonetic": "staa-tis-teek" }
+  },
+  {
+    "dutch": "stelling, de",
+    "english": "opinion, statement, thesis, the",
+    "vietnamese": "luận điểm, nhận định",
+    "dutchsentence": "Ben je het eens met deze stelling?",
+    "englishtranslate": "Do you agree with this statement?",
+    "pronunciation": { "ipa": "ˈstɛlɪŋ", "phonetic": "stel-ing" }
+  },
+  {
+    "dutch": "strip, de",
+    "english": "comic, the",
+    "vietnamese": "truyện tranh",
+    "dutchsentence": "Mijn zoon leest graag strips.",
+    "englishtranslate": "My son likes reading comics.",
+    "pronunciation": { "ipa": "strɪp", "phonetic": "strip" }
+  },
+  {
+    "dutch": "structuur, de",
+    "english": "structure, the",
+    "vietnamese": "cấu trúc",
+    "dutchsentence": "Er zit weinig structuur in dit rapport.",
+    "englishtranslate": "There is little structure in this report.",
+    "pronunciation": { "ipa": "stryktˈyːr", "phonetic": "struk-tuur" }
+  },
+  {
+    "dutch": "teken, het",
+    "english": "sign, token, the",
+    "vietnamese": "dấu hiệu",
+    "dutchsentence": "Dat is een goed teken voor de toekomst.",
+    "englishtranslate": "That is a good sign for the future.",
+    "pronunciation": { "ipa": "ˈteːkə(n)", "phonetic": "tay-kun" }
+  },
+  {
+    "dutch": "tekstballon, de",
+    "english": "speech bubble, the",
+    "vietnamese": "bong bóng lời thoại",
+    "dutchsentence": "Wat staat er in de tekstballon?",
+    "englishtranslate": "What does it say in the speech bubble?",
+    "pronunciation": { "ipa": "ˈtɛkstbɑˌlɔn", "phonetic": "tekst-bah-lon" }
+  },
+  {
+    "dutch": "toegeven",
+    "english": "to admit, concede",
+    "vietnamese": "thừa nhận",
+    "dutchsentence": "Hij wilde zijn fout niet toegeven.",
+    "englishtranslate": "He didn't want to admit his mistake.",
+    "pronunciation": { "ipa": "ˈtuˌɣeːvə(n)", "phonetic": "too-khay-vun" }
+  },
+  {
+    "dutch": "uitmaken",
+    "english": "to matter, to break up",
+    "vietnamese": "quan trọng, chia tay",
+    "dutchsentence": "Het maakt niet uit wat je kiest.",
+    "englishtranslate": "It doesn't matter what you choose.",
+    "pronunciation": { "ipa": "ˈœytˌmaːkə(n)", "phonetic": "ouyt-maa-kun" }
+  },
+  {
+    "dutch": "uitnodigen",
+    "english": "to invite",
+    "vietnamese": "mời",
+    "dutchsentence": "Zal ik hen ook uitnodigen voor het feest?",
+    "englishtranslate": "Shall I invite them to the party too?",
+    "pronunciation": { "ipa": "ˈœytˌnoːdəɣə(n)", "phonetic": "ouyt-no-duh-khun" }
+  },
+  {
+    "dutch": "vanzelfsprekend",
+    "english": "obviously, self-evident",
+    "vietnamese": "hiển nhiên, tất nhiên",
+    "dutchsentence": "Het is vanzelfsprekend dat je op tijd komt.",
+    "englishtranslate": "It is self-evident that you arrive on time.",
+    "pronunciation": { "ipa": "vɑnˌzɛlfˈspreːkənt", "phonetic": "van-zelf-spray-kunt" }
+  },
+  {
+    "dutch": "verkoopster, de",
+    "english": "shop assistant (female), the",
+    "vietnamese": "nữ nhân viên bán hàng",
+    "dutchsentence": "De verkoopster hielp me met het vinden van een maat.",
+    "englishtranslate": "The shop assistant helped me find a size.",
+    "pronunciation": { "ipa": "vərˈkoːpstər", "phonetic": "vur-koap-stur" }
+  },
+  {
+    "dutch": "verschrikkelijk",
+    "english": "terrible, awful",
+    "vietnamese": "khủng khiếp",
+    "dutchsentence": "Wat een verschrikkelijk nieuws.",
+    "englishtranslate": "What terrible news.",
+    "pronunciation": { "ipa": "vərˈsχrɪkələk", "phonetic": "vur-skrik-uh-luk" }
+  },
+  {
+    "dutch": "verwijsbrief, de",
+    "english": "referral letter, the",
+    "vietnamese": "giấy chuyển viện/tuyến",
+    "dutchsentence": "Je hebt een verwijsbrief nodig voor de specialist.",
+    "englishtranslate": "You need a referral letter for the specialist.",
+    "pronunciation": { "ipa": "vərˈʋɛizbrif", "phonetic": "vur-vys-breef" }
+  },
+  {
+    "dutch": "vreemd",
+    "english": "strange, weird",
+    "vietnamese": "lạ lùng",
+    "dutchsentence": "Ik hoorde gisteravond een vreemd geluid.",
+    "englishtranslate": "I heard a strange noise last night.",
+    "pronunciation": { "ipa": "vreːmt", "phonetic": "vraymt" }
+  },
+  {
+    "dutch": "waarderen",
+    "english": "to appreciate",
+    "vietnamese": "đánh giá cao, trân trọng",
+    "dutchsentence": "Ik waardeer je hulp enorm.",
+    "englishtranslate": "I really appreciate your help.",
+    "pronunciation": { "ipa": "ʋaːrˈdeːrə(n)", "phonetic": "vaar-day-run" }
+  },
+  {
+    "dutch": "werktijd, de",
+    "english": "working hours, the",
+    "vietnamese": "giờ làm việc",
+    "dutchsentence": "Mijn werktijden zijn flexibel.",
+    "englishtranslate": "My working hours are flexible.",
+    "pronunciation": { "ipa": "ˈʋɛrkˌtɛit", "phonetic": "verk-tyt" }
+  },
+  {
+    "dutch": "wijziging, de",
+    "english": "change, modification, the",
+    "vietnamese": "sự thay đổi",
+    "dutchsentence": "Er is een kleine wijziging in het programma.",
+    "englishtranslate": "There is a small change in the program.",
+    "pronunciation": { "ipa": "ˈʋɛizəɣɪŋ", "phonetic": "vy-zuh-khung" }
+  },
+  {
+    "dutch": "zakendoen",
+    "english": "to do business",
+    "vietnamese": "làm ăn, kinh doanh",
+    "dutchsentence": "Het is prettig om met hen zaken te doen.",
+    "englishtranslate": "It is pleasant to do business with them.",
+    "pronunciation": { "ipa": "ˈzaːkə(n)ˌdun", "phonetic": "zaa-kun-doon" }
+  },
+  {
+    "dutch": "zakenwereld, de",
+    "english": "business world, the",
+    "vietnamese": "thế giới kinh doanh",
+    "dutchsentence": "In de zakenwereld moet je snel reageren.",
+    "englishtranslate": "In the business world, you have to react quickly.",
+    "pronunciation": { "ipa": "ˈzaːkə(n)ˌʋeːrəlt", "phonetic": "zaa-kun-vay-rult" }
+  }
+]

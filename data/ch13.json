@@ -1,0 +1,938 @@
+[
+  {
+    "dutch": "aardappelpuree, de",
+    "english": "mashed potatoes, the",
+    "vietnamese": "khoai tây nghiền",
+    "dutchsentence": "Ik heb aardappelpuree als bijgerecht besteld.",
+    "englishtranslate": "I ordered mashed potatoes as a side dish.",
+    "pronunciation": { "ipa": "ˈaːrdɑpəlpyˌreː", "phonetic": "aard-ah-pul-pew-ray" }
+  },
+  {
+    "dutch": "afgieten",
+    "english": "to pour off",
+    "vietnamese": "chắt nước, đổ nước đi",
+    "dutchsentence": "Na het koken moet je de aardappels afgieten.",
+    "englishtranslate": "After boiling, you have to pour off the water from the potatoes.",
+    "pronunciation": { "ipa": "ˈɑfˌxitə(n)", "phonetic": "af-khee-tun" }
+  },
+  {
+    "dutch": "afkeer, de",
+    "english": "aversion to, the",
+    "vietnamese": "sự ghét bỏ, ác cảm",
+    "dutchsentence": "Hij heeft een grote afkeer van spruitjes.",
+    "englishtranslate": "He has a great aversion to Brussels sprouts.",
+    "pronunciation": { "ipa": "ˈɑfkeːr", "phonetic": "af-kayr" }
+  },
+  {
+    "dutch": "afspraakje, het",
+    "english": "date, the",
+    "vietnamese": "cuộc hẹn (hẹn hò)",
+    "dutchsentence": "Ik heb vanavond een romantisch afspraakje.",
+    "englishtranslate": "I have a romantic date tonight.",
+    "pronunciation": { "ipa": "ˈɑfspraːkjə", "phonetic": "af-spraat-yuh" }
+  },
+  {
+    "dutch": "afwas, de",
+    "english": "dishes, the",
+    "vietnamese": "việc rửa bát, bát đĩa bẩn",
+    "dutchsentence": "Wie gaat vandaag de afwas doen?",
+    "englishtranslate": "Who is going to do the dishes today?",
+    "pronunciation": { "ipa": "ˈɑfʋɑs", "phonetic": "af-was" }
+  },
+  {
+    "dutch": "appelmoes, de",
+    "english": "apple sauce, the",
+    "vietnamese": "sốt táo",
+    "dutchsentence": "Kinderen eten graag frietjes met appelmoes.",
+    "englishtranslate": "Children love eating fries with apple sauce.",
+    "pronunciation": { "ipa": "ˈɑpəlmus", "phonetic": "ap-ul-moos" }
+  },
+  {
+    "dutch": "arm, de",
+    "english": "arm, the",
+    "vietnamese": "cánh tay",
+    "dutchsentence": "Ik heb mijn arm bezeerd tijdens het sporten.",
+    "englishtranslate": "I hurt my arm while exercising.",
+    "pronunciation": { "ipa": "ɑrm", "phonetic": "arm" }
+  },
+  {
+    "dutch": "armoede, de",
+    "english": "poverty, the",
+    "vietnamese": "sự nghèo đói",
+    "dutchsentence": "Helaas leven er nog steeds veel mensen in armoede.",
+    "englishtranslate": "Unfortunately, many people still live in poverty.",
+    "pronunciation": { "ipa": "ˈɑrmudə", "phonetic": "ar-moo-duh" }
+  },
+  {
+    "dutch": "azijn, de",
+    "english": "vinegar, the",
+    "vietnamese": "giấm",
+    "dutchsentence": "Doe een beetje azijn door de salade.",
+    "englishtranslate": "Put a little vinegar in the salad.",
+    "pronunciation": { "ipa": "aːˈzɛin", "phonetic": "aa-zayn" }
+  },
+  {
+    "dutch": "beetgaar",
+    "english": "cooked but still crunchy",
+    "vietnamese": "vừa chín tới (vẫn còn giòn)",
+    "dutchsentence": "Ik hou ervan als de pasta nog beetgaar is.",
+    "englishtranslate": "I like it when the pasta is still al dente (crunchy).",
+    "pronunciation": { "ipa": "ˈbeːtɣaːr", "phonetic": "bayt-khaar" }
+  },
+  {
+    "dutch": "belofte, de",
+    "english": "promise, the",
+    "vietnamese": "lời hứa",
+    "dutchsentence": "Je moet je aan je belofte houden.",
+    "englishtranslate": "You must keep your promise.",
+    "pronunciation": { "ipa": "bəˈlɔftə", "phonetic": "buh-lof-tuh" }
+  },
+  {
+    "dutch": "benoemen",
+    "english": "to name",
+    "vietnamese": "gọi tên, bổ nhiệm",
+    "dutchsentence": "Kun je de verschillende ingrediënten benoemen?",
+    "englishtranslate": "Can you name the different ingredients?",
+    "pronunciation": { "ipa": "bəˈnumə(n)", "phonetic": "buh-noo-mun" }
+  },
+  {
+    "dutch": "beoordelen",
+    "english": "to judge",
+    "vietnamese": "đánh giá",
+    "dutchsentence": "De jury gaat het eten beoordelen.",
+    "englishtranslate": "The jury is going to judge the food.",
+    "pronunciation": { "ipa": "bəˈoːrdeːlə(n)", "phonetic": "buh-ore-day-lun" }
+  },
+  {
+    "dutch": "beschermen",
+    "english": "to protect",
+    "vietnamese": "bảo vệ",
+    "dutchsentence": "Draag handschoenen om je handen te beschermen.",
+    "englishtranslate": "Wear gloves to protect your hands.",
+    "pronunciation": { "ipa": "bəˈsχɛrmə(n)", "phonetic": "buh-skher-mun" }
+  },
+  {
+    "dutch": "bestek, het",
+    "english": "silverware, the",
+    "vietnamese": "bộ đồ ăn (dao, thìa, dĩa)",
+    "dutchsentence": "Kun je het bestek op tafel leggen?",
+    "englishtranslate": "Can you put the silverware on the table?",
+    "pronunciation": { "ipa": "bəˈstɛk", "phonetic": "buh-stek" }
+  },
+  {
+    "dutch": "bestrooien",
+    "english": "to sprinkle",
+    "vietnamese": "rắc lên",
+    "dutchsentence": "Bestrooi de taart met een beetje poedersuiker.",
+    "englishtranslate": "Sprinkle the cake with a bit of powdered sugar.",
+    "pronunciation": { "ipa": "bəˈstroːiə(n)", "phonetic": "buh-strow-yun" }
+  },
+  {
+    "dutch": "bitter",
+    "english": "bitter",
+    "vietnamese": "đắng",
+    "dutchsentence": "Sommige soorten bier smaken erg bitter.",
+    "englishtranslate": "Some types of beer taste very bitter.",
+    "pronunciation": { "ipa": "ˈbɪtər", "phonetic": "bit-ur" }
+  },
+  {
+    "dutch": "boeren",
+    "english": "to burp",
+    "vietnamese": "ợ hơi",
+    "dutchsentence": "In sommige culturen is boeren na het eten beleefd.",
+    "englishtranslate": "In some cultures, burping after a meal is polite.",
+    "pronunciation": { "ipa": "ˈbuːrə(n)", "phonetic": "boo-run" }
+  },
+  {
+    "dutch": "bord, het",
+    "english": "plate, the",
+    "vietnamese": "cái đĩa",
+    "dutchsentence": "Er ligt een stuk vlees op mijn bord.",
+    "englishtranslate": "There is a piece of meat on my plate.",
+    "pronunciation": { "ipa": "bɔrt", "phonetic": "bort" }
+  },
+  {
+    "dutch": "braden",
+    "english": "to roast",
+    "vietnamese": "quay, nướng",
+    "dutchsentence": "We gaan de kip in de oven braden.",
+    "englishtranslate": "We are going to roast the chicken in the oven.",
+    "pronunciation": { "ipa": "ˈbraːdə(n)", "phonetic": "braa-dun" }
+  },
+  {
+    "dutch": "citroen, de",
+    "english": "lemon, the",
+    "vietnamese": "quả chanh vàng",
+    "dutchsentence": "Ik drink graag water met een schijfje citroen.",
+    "englishtranslate": "I like drinking water with a slice of lemon.",
+    "pronunciation": { "ipa": "siˈtrun", "phonetic": "see-troon" }
+  },
+  {
+    "dutch": "culinair",
+    "english": "culinary",
+    "vietnamese": "ẩm thực",
+    "dutchsentence": "Frankrijk staat bekend om zijn culinaire tradities.",
+    "englishtranslate": "France is known for its culinary traditions.",
+    "pronunciation": { "ipa": "kyliˈnɛːr", "phonetic": "ku-lee-nair" }
+  },
+  {
+    "dutch": "eetlepel, de",
+    "english": "tablespoon, the",
+    "vietnamese": "thìa ăn cơm, muỗng canh",
+    "dutchsentence": "Voeg één eetlepel suiker toe aan het beslag.",
+    "englishtranslate": "Add one tablespoon of sugar to the batter.",
+    "pronunciation": { "ipa": "ˈeːtleːpəl", "phonetic": "ayt-lay-pul" }
+  },
+  {
+    "dutch": "elleboog, de",
+    "english": "elbow, the",
+    "vietnamese": "khủy tay",
+    "dutchsentence": "Zet je ellebogen niet op tafel tijdens het eten.",
+    "englishtranslate": "Don't put your elbows on the table during the meal.",
+    "pronunciation": { "ipa": "ˈɛləboːx", "phonetic": "el-uh-bokh" }
+  },
+  {
+    "dutch": "fris",
+    "english": "fresh",
+    "vietnamese": "tươi mát",
+    "dutchsentence": "Deze salade smaakt heerlijk fris.",
+    "englishtranslate": "This salad tastes wonderfully fresh.",
+    "pronunciation": { "ipa": "frɪs", "phonetic": "fris" }
+  },
+  {
+    "dutch": "gaar",
+    "english": "well-done",
+    "vietnamese": "chín",
+    "dutchsentence": "Is het vlees al gaar?",
+    "englishtranslate": "Is the meat well-done yet?",
+    "pronunciation": { "ipa": "ɣaːr", "phonetic": "khaar" }
+  },
+  {
+    "dutch": "gas, het",
+    "english": "gas, the",
+    "vietnamese": "ga, khí đốt",
+    "dutchsentence": "Kook je op gas of op elektriciteit?",
+    "englishtranslate": "Do you cook on gas or electricity?",
+    "pronunciation": { "ipa": "ɣɑs", "phonetic": "khas" }
+  },
+  {
+    "dutch": "gast, de",
+    "english": "guest, the",
+    "vietnamese": "khách",
+    "dutchsentence": "Onze gasten komen rond zeven uur aan.",
+    "englishtranslate": "Our guests arrive around seven o'clock.",
+    "pronunciation": { "ipa": "ɣɑst", "phonetic": "khast" }
+  },
+  {
+    "dutch": "geluid, het",
+    "english": "sound, the",
+    "vietnamese": "âm thanh",
+    "dutchsentence": "Maak niet te veel geluid tijdens het eten.",
+    "englishtranslate": "Don't make too much sound while eating.",
+    "pronunciation": { "ipa": "ɣəˈlœyt", "phonetic": "khuh-lout" }
+  },
+  {
+    "dutch": "genoeg",
+    "english": "enough",
+    "vietnamese": "đủ",
+    "dutchsentence": "Ik heb genoeg gegeten, dank je wel.",
+    "englishtranslate": "I have eaten enough, thank you.",
+    "pronunciation": { "ipa": "ɣəˈnux", "phonetic": "khuh-nookh" }
+  },
+  {
+    "dutch": "gerecht, het",
+    "english": "dish, the",
+    "vietnamese": "món ăn",
+    "dutchsentence": "Dit is mijn favoriete gerecht met pasta.",
+    "englishtranslate": "This is my favorite pasta dish.",
+    "pronunciation": { "ipa": "ɣəˈrɛxt", "phonetic": "khuh-rekht" }
+  },
+  {
+    "dutch": "geweldig",
+    "english": "terrific, great",
+    "vietnamese": "tuyệt vời",
+    "dutchsentence": "Het eten in dat restaurant was geweldig.",
+    "englishtranslate": "The food in that restaurant was terrific.",
+    "pronunciation": { "ipa": "ɣəˈʋɛldəx", "phonetic": "khuh-wel-dukh" }
+  },
+  {
+    "dutch": "gezelschap, het",
+    "english": "company, the",
+    "vietnamese": "sự đồng hành, nhóm bạn",
+    "dutchsentence": "Bedankt voor het prettige gezelschap.",
+    "englishtranslate": "Thank you for the nice company.",
+    "pronunciation": { "ipa": "ɣəˈzɛlsχɑp", "phonetic": "khuh-zel-skhap" }
+  },
+  {
+    "dutch": "ham, de",
+    "english": "ham, the",
+    "vietnamese": "thịt nguội, giăm bông",
+    "dutchsentence": "Ik wil graag een broodje met ham en kaas.",
+    "englishtranslate": "I would like a sandwich with ham and cheese.",
+    "pronunciation": { "ipa": "ɦɑm", "phonetic": "ham" }
+  },
+  {
+    "dutch": "hapje, het",
+    "english": "bite, the",
+    "vietnamese": "miếng ăn nhỏ",
+    "dutchsentence": "Mag ik een hapje van jouw ijsje?",
+    "englishtranslate": "May I have a bite of your ice cream?",
+    "pronunciation": { "ipa": "ˈɦɑpjə", "phonetic": "hap-yuh" }
+  },
+  {
+    "dutch": "herinneren (zich -)",
+    "english": "to remember",
+    "vietnamese": "nhớ lại",
+    "dutchsentence": "Ik herinner me dit recept van mijn oma.",
+    "englishtranslate": "I remember this recipe from my grandmother.",
+    "pronunciation": { "ipa": "ɦɛrˈɪnərə(n)", "phonetic": "her-in-uh-run" }
+  },
+  {
+    "dutch": "hoeveelheid, de",
+    "english": "amount, the",
+    "vietnamese": "số lượng",
+    "dutchsentence": "De hoeveelheid zout is erg belangrijk.",
+    "englishtranslate": "The amount of salt is very important.",
+    "pronunciation": { "ipa": "ɦuˈveːlɦɛit", "phonetic": "hoo-vayl-hayt" }
+  },
+  {
+    "dutch": "hutspot, de",
+    "english": "stew, the",
+    "vietnamese": "món hầm kiểu Hà Lan (khoai tây, cà rốt, hành tây)",
+    "dutchsentence": "Hutspot is een typisch winters gerecht.",
+    "englishtranslate": "Hutspot is a typical winter dish.",
+    "pronunciation": { "ipa": "ˈɦʏtspɔt", "phonetic": "hut-spot" }
+  },
+  {
+    "dutch": "inkoken",
+    "english": "to reduce (in cooking)",
+    "vietnamese": "nấu cạn bớt, đun đặc lại",
+    "dutchsentence": "Laat de saus zachtjes inkoken.",
+    "englishtranslate": "Let the sauce reduce gently.",
+    "pronunciation": { "ipa": "ˈɪnˌkoːkə(n)", "phonetic": "in-ko-kun" }
+  },
+  {
+    "dutch": "inschenken",
+    "english": "to pour",
+    "vietnamese": "rót nước (vào ly)",
+    "dutchsentence": "Zal ik een wijntje voor je inschenken?",
+    "englishtranslate": "Shall I pour a glass of wine for you?",
+    "pronunciation": { "ipa": "ˈɪnˌsχɛŋkə(n)", "phonetic": "in-skheng-kun" }
+  },
+  {
+    "dutch": "irriteren",
+    "english": "to irritate",
+    "vietnamese": "làm phát cáu, kích ứng",
+    "dutchsentence": "Zijn tafelmanieren irriteren mij enorm.",
+    "englishtranslate": "His table manners irritate me immensely.",
+    "pronunciation": { "ipa": "ɪriˈteːrə(n)", "phonetic": "ee-ree-tay-run" }
+  },
+  {
+    "dutch": "ketchup, de",
+    "english": "tomato ketchup, the",
+    "vietnamese": "tương cà",
+    "dutchsentence": "Doe je ketchup op je hamburger?",
+    "englishtranslate": "Do you put ketchup on your hamburger?",
+    "pronunciation": { "ipa": "ˈkɛtʃʏp", "phonetic": "ket-shup" }
+  },
+  {
+    "dutch": "knapperig",
+    "english": "crunchy",
+    "vietnamese": "giòn tan",
+    "dutchsentence": "Dit brood is heerlijk knapperig.",
+    "englishtranslate": "This bread is wonderfully crunchy.",
+    "pronunciation": { "ipa": "ˈknɑpərɪx", "phonetic": "knap-ur-ikh" }
+  },
+  {
+    "dutch": "koekenpan, de",
+    "english": "frying pan, the",
+    "vietnamese": "chảo rán",
+    "dutchsentence": "Bak de eieren in een koekenpan.",
+    "englishtranslate": "Fry the eggs in a frying pan.",
+    "pronunciation": { "ipa": "ˈkukə(n)ˌpɑn", "phonetic": "koo-kun-pan" }
+  },
+  {
+    "dutch": "kom, de",
+    "english": "bowl, the",
+    "vietnamese": "cái bát, cái tô",
+    "dutchsentence": "Ik eet mijn soep uit een kom.",
+    "englishtranslate": "I eat my soup from a bowl.",
+    "pronunciation": { "ipa": "kɔm", "phonetic": "kom" }
+  },
+  {
+    "dutch": "laag",
+    "english": "slow, low",
+    "vietnamese": "thấp, nhỏ (lửa)",
+    "dutchsentence": "Zet het vuur laag zodat het niet aanbrandt.",
+    "englishtranslate": "Turn the fire low so it doesn't burn.",
+    "pronunciation": { "ipa": "laːx", "phonetic": "laakh" }
+  },
+  {
+    "dutch": "laatste",
+    "english": "last",
+    "vietnamese": "cuối cùng",
+    "dutchsentence": "Wie heeft het laatste koekje opgegeten?",
+    "englishtranslate": "Who ate the last cookie?",
+    "pronunciation": { "ipa": "ˈlaːtstə", "phonetic": "laat-stuh" }
+  },
+  {
+    "dutch": "laten",
+    "english": "to let",
+    "vietnamese": "để cho, cho phép",
+    "dutchsentence": "Je moet de soep even laten afkoelen.",
+    "englishtranslate": "You have to let the soup cool down for a bit.",
+    "pronunciation": { "ipa": "ˈlaːtə(n)", "phonetic": "laa-tun" }
+  },
+  {
+    "dutch": "lepel, de",
+    "english": "spoon, the",
+    "vietnamese": "cái thìa",
+    "dutchsentence": "Ik heb een lepel nodig voor de soep.",
+    "englishtranslate": "I need a spoon for the soup.",
+    "pronunciation": { "ipa": "ˈleːpəl", "phonetic": "lay-pul" }
+  },
+  {
+    "dutch": "logisch",
+    "english": "logical",
+    "vietnamese": "hợp lý, logic",
+    "dutchsentence": "Het is logisch dat je honger hebt na het sporten.",
+    "englishtranslate": "It is logical that you are hungry after exercising.",
+    "pronunciation": { "ipa": "ˈloːɣis", "phonetic": "lo-khis" }
+  },
+  {
+    "dutch": "lusten",
+    "english": "to like",
+    "vietnamese": "thích ăn (cái gì đó)",
+    "dutchsentence": "Lust je ook olijven?",
+    "englishtranslate": "Do you also like olives?",
+    "pronunciation": { "ipa": "ˈlʏstə(n)", "phonetic": "lus-tun" }
+  },
+  {
+    "dutch": "meevallen",
+    "english": "to be better than expected",
+    "vietnamese": "tốt hơn mong đợi",
+    "dutchsentence": "De smaak van dit gerecht viel me erg mee.",
+    "englishtranslate": "The taste of this dish was much better than I expected.",
+    "pronunciation": { "ipa": "ˈmeːˌvɑlə(n)", "phonetic": "may-val-un" }
+  },
+  {
+    "dutch": "mes, het",
+    "english": "knife, the",
+    "vietnamese": "con dao",
+    "dutchsentence": "Gebruik een scherp mes om het vlees te snijden.",
+    "englishtranslate": "Use a sharp knife to cut the meat.",
+    "pronunciation": { "ipa": "mɛs", "phonetic": "mes" }
+  },
+  {
+    "dutch": "mond, de",
+    "english": "mouth, the",
+    "vietnamese": "cái miệng",
+    "dutchsentence": "Praat niet met je mond vol.",
+    "englishtranslate": "Don't talk with your mouth full.",
+    "pronunciation": { "ipa": "mɔnt", "phonetic": "mont" }
+  },
+  {
+    "dutch": "niet hoeven",
+    "english": "not need to",
+    "vietnamese": "không cần phải",
+    "dutchsentence": "Je hoeft je bord niet helemaal leeg te eten.",
+    "englishtranslate": "You don't need to finish your entire plate.",
+    "pronunciation": { "ipa": "nit ˈɦuvə(n)", "phonetic": "neet hoo-vun" }
+  },
+  {
+    "dutch": "nootmuskaat, de",
+    "english": "nutmeg, the",
+    "vietnamese": "nhục đậu khấu",
+    "dutchsentence": "Nootmuskaat is lekker over de bloemkool.",
+    "englishtranslate": "Nutmeg is tasty over cauliflower.",
+    "pronunciation": { "ipa": "ˈnoːtmʏsˌkaːt", "phonetic": "noat-mus-kaat" }
+  },
+  {
+    "dutch": "olijfolie, de",
+    "english": "olive oil, the",
+    "vietnamese": "dầu ô liu",
+    "dutchsentence": "Ik bak mijn groenten in olijfolie.",
+    "englishtranslate": "I fry my vegetables in olive oil.",
+    "pronunciation": { "ipa": "oːˈlɛivˌoːli", "phonetic": "o-lay-voh-lee" }
+  },
+  {
+    "dutch": "ondertussen",
+    "english": "meanwhile",
+    "vietnamese": "trong khi đó",
+    "dutchsentence": "Kook de pasta en maak ondertussen de saus.",
+    "englishtranslate": "Boil the pasta and meanwhile make the sauce.",
+    "pronunciation": { "ipa": "ˌɔndərˈtʏsə(n)", "phonetic": "on-dur-tus-un" }
+  },
+  {
+    "dutch": "onzin, de",
+    "english": "nonsense, the",
+    "vietnamese": "chuyện vô lý, vớ vẩn",
+    "dutchsentence": "Wat een onzin dat gezond eten niet lekker is.",
+    "englishtranslate": "What nonsense that healthy food isn't tasty.",
+    "pronunciation": { "ipa": "ˈɔnzɪn", "phonetic": "on-zin" }
+  },
+  {
+    "dutch": "opeten",
+    "english": "to eat",
+    "vietnamese": "ăn hết",
+    "dutchsentence": "Je moet je groenten goed opeten.",
+    "englishtranslate": "You must eat all your vegetables.",
+    "pronunciation": { "ipa": "ˈɔpˌeːtə(n)", "phonetic": "op-ay-tun" }
+  },
+  {
+    "dutch": "opgroeien",
+    "english": "to grow up",
+    "vietnamese": "lớn lên, trưởng thành",
+    "dutchsentence": "Ik ben opgegroeid met de Nederlandse keuken.",
+    "englishtranslate": "I grew up with Dutch cuisine.",
+    "pronunciation": { "ipa": "ˈɔpˌɣruijə(n)", "phonetic": "op-khroo-yun" }
+  },
+  {
+    "dutch": "oproepen",
+    "english": "to call up",
+    "vietnamese": "khơi gợi, gọi lên",
+    "dutchsentence": "De geur van vers brood roept herinneringen op.",
+    "englishtranslate": "The smell of fresh bread calls up memories.",
+    "pronunciation": { "ipa": "ˈɔpˌrupə(n)", "phonetic": "op-roo-pun" }
+  },
+  {
+    "dutch": "oven, de",
+    "english": "oven, the",
+    "vietnamese": "lò nướng",
+    "dutchsentence": "Zet de taart voor dertig minuten in de oven.",
+    "englishtranslate": "Put the cake in the oven for thirty minutes.",
+    "pronunciation": { "ipa": "ˈoːvə(n)", "phonetic": "o-vun" }
+  },
+  {
+    "dutch": "ovenschotel, de",
+    "english": "oven dish, the",
+    "vietnamese": "món đút lò",
+    "dutchsentence": "Ik maak vanavond een ovenschotel met kaas.",
+    "englishtranslate": "I am making an oven dish with cheese tonight.",
+    "pronunciation": { "ipa": "ˈoːvənˌsχoːtəl", "phonetic": "o-vun-skho-tul" }
+  },
+  {
+    "dutch": "pan, de",
+    "english": "pan, pot, the",
+    "vietnamese": "cái nồi, cái chảo",
+    "dutchsentence": "Er staat een grote pan soep op het vuur.",
+    "englishtranslate": "There is a large pot of soup on the fire.",
+    "pronunciation": { "ipa": "pɑn", "phonetic": "pan" }
+  },
+  {
+    "dutch": "peper, de",
+    "english": "pepper, the",
+    "vietnamese": "hạt tiêu",
+    "dutchsentence": "Wil je nog een beetje zout en peper?",
+    "englishtranslate": "Would you like a bit more salt and pepper?",
+    "pronunciation": { "ipa": "ˈpeːpər", "phonetic": "pay-pur" }
+  },
+  {
+    "dutch": "pikant",
+    "english": "piquant, spicy",
+    "vietnamese": "cay nồng",
+    "dutchsentence": "Deze kaas heeft een pikante smaak.",
+    "englishtranslate": "This cheese has a piquant taste.",
+    "pronunciation": { "ipa": "piˈkɑnt", "phonetic": "pee-kant" }
+  },
+  {
+    "dutch": "pittig",
+    "english": "spicy",
+    "vietnamese": "cay",
+    "dutchsentence": "De curry is behoorlijk pittig.",
+    "englishtranslate": "The curry is quite spicy.",
+    "pronunciation": { "ipa": "ˈpɪtəx", "phonetic": "pit-ukh" }
+  },
+  {
+    "dutch": "prettig",
+    "english": "nice",
+    "vietnamese": "dễ chịu, thú vị",
+    "dutchsentence": "Eet smakelijk en een prettige avond!",
+    "englishtranslate": "Enjoy your meal and have a nice evening!",
+    "pronunciation": { "ipa": "ˈprɛtəx", "phonetic": "pret-ukh" }
+  },
+  {
+    "dutch": "principe, het",
+    "english": "principle, the",
+    "vietnamese": "nguyên tắc",
+    "dutchsentence": "Uit principe eet hij geen vlees.",
+    "englishtranslate": "Out of principle, he doesn't eat meat.",
+    "pronunciation": { "ipa": "prɪnˈsipə", "phonetic": "prin-see-puh" }
+  },
+  {
+    "dutch": "proeven",
+    "english": "to taste",
+    "vietnamese": "nếm",
+    "dutchsentence": "Mag ik even van de saus proeven?",
+    "englishtranslate": "May I taste the sauce for a moment?",
+    "pronunciation": { "ipa": "ˈpruvə(n)", "phonetic": "proo-vun" }
+  },
+  {
+    "dutch": "proost",
+    "english": "cheers",
+    "vietnamese": "cạn ly, chúc sức khỏe",
+    "dutchsentence": "Proost op je nieuwe baan!",
+    "englishtranslate": "Cheers to your new job!",
+    "pronunciation": { "ipa": "proːst", "phonetic": "proast" }
+  },
+  {
+    "dutch": "pureestamper, de",
+    "english": "masher, the",
+    "vietnamese": "dụng cụ nghiền khoai tây",
+    "dutchsentence": "Gebruik de pureestamper voor de hutspot.",
+    "englishtranslate": "Use the masher for the stew.",
+    "pronunciation": { "ipa": "pyˈreːˌstɑmpər", "phonetic": "pew-ray-stam-pur" }
+  },
+  {
+    "dutch": "recept, het",
+    "english": "recipe, the",
+    "vietnamese": "công thức nấu ăn",
+    "dutchsentence": "Heb je het recept voor deze appeltaart?",
+    "englishtranslate": "Do you have the recipe for this apple pie?",
+    "pronunciation": { "ipa": "rəˈsɛpt", "phonetic": "ruh-sept" }
+  },
+  {
+    "dutch": "regel, de",
+    "english": "rule, the",
+    "vietnamese": "quy tắc",
+    "dutchsentence": "Een belangrijke regel is: niet praten met je mond vol.",
+    "englishtranslate": "An important rule is: don't talk with your mouth full.",
+    "pronunciation": { "ipa": "ˈreːɣəl", "phonetic": "ray-khul" }
+  },
+  {
+    "dutch": "roosje, het",
+    "english": "rosette, the",
+    "vietnamese": "bông (súp lơ/hoa nhỏ)",
+    "dutchsentence": "Snijd de bloemkool in kleine roosjes.",
+    "englishtranslate": "Cut the cauliflower into small rosettes.",
+    "pronunciation": { "ipa": "ˈroːzjə", "phonetic": "roaz-yuh" }
+  },
+  {
+    "dutch": "sappig",
+    "english": "juicy",
+    "vietnamese": "mọng nước",
+    "dutchsentence": "Deze peer is erg sappig.",
+    "englishtranslate": "This pear is very juicy.",
+    "pronunciation": { "ipa": "ˈsɑpəx", "phonetic": "sap-ukh" }
+  },
+  {
+    "dutch": "schenken",
+    "english": "to pour",
+    "vietnamese": "rót",
+    "dutchsentence": "Zal ik de thee in de glazen schenken?",
+    "englishtranslate": "Shall I pour the tea into the glasses?",
+    "pronunciation": { "ipa": "ˈsχɛŋkə(n)", "phonetic": "skheng-kun" }
+  },
+  {
+    "dutch": "scherp",
+    "english": "sharp, spicy",
+    "vietnamese": "sắc, cay nồng",
+    "dutchsentence": "Pas op, dit mes is heel scherp.",
+    "englishtranslate": "Watch out, this knife is very sharp.",
+    "pronunciation": { "ipa": "sχɛrp", "phonetic": "skherp" }
+  },
+  {
+    "dutch": "schillen",
+    "english": "to peel",
+    "vietnamese": "gọt vỏ",
+    "dutchsentence": "Kun je de aardappels even schillen?",
+    "englishtranslate": "Can you peel the potatoes?",
+    "pronunciation": { "ipa": "ˈsχɪlə(n)", "phonetic": "skhil-un" }
+  },
+  {
+    "dutch": "schrokken",
+    "english": "to gobble",
+    "vietnamese": "ăn ngốn ngấu",
+    "dutchsentence": "Niet zo schrokken, eet rustig!",
+    "englishtranslate": "Don't gobble like that, eat calmly!",
+    "pronunciation": { "ipa": "ˈsχrɔkə(n)", "phonetic": "skhrok-un" }
+  },
+  {
+    "dutch": "serveren",
+    "english": "to serve",
+    "vietnamese": "phục vụ, dọn món",
+    "dutchsentence": "We serveren de soep met stokbrood.",
+    "englishtranslate": "We serve the soup with baguette.",
+    "pronunciation": { "ipa": "sɛrˈveːrə(n)", "phonetic": "ser-vay-run" }
+  },
+  {
+    "dutch": "servet, het",
+    "english": "napkin, the",
+    "vietnamese": "khăn ăn",
+    "dutchsentence": "Gebruik je servet om je mond af te vegen.",
+    "englishtranslate": "Use your napkin to wipe your mouth.",
+    "pronunciation": { "ipa": "sɛrˈvɛt", "phonetic": "ser-vet" }
+  },
+  {
+    "dutch": "simpel",
+    "english": "simple",
+    "vietnamese": "đơn giản",
+    "dutchsentence": "Dit is een simpel recept dat altijd lukt.",
+    "englishtranslate": "This is a simple recipe that always works.",
+    "pronunciation": { "ipa": "ˈsɪmpəl", "phonetic": "sim-pul" }
+  },
+  {
+    "dutch": "slurpen",
+    "english": "to slurp",
+    "vietnamese": "húp xì xụp",
+    "dutchsentence": "Het is onbeleefd om te slurpen tijdens het eten.",
+    "englishtranslate": "It is rude to slurp during the meal.",
+    "pronunciation": { "ipa": "ˈslʏrpə(n)", "phonetic": "slur-pun" }
+  },
+  {
+    "dutch": "smaak, de",
+    "english": "taste, the",
+    "vietnamese": "vị, hương vị",
+    "dutchsentence": "De smaak van deze saus is voortreffelijk.",
+    "englishtranslate": "The taste of this sauce is excellent.",
+    "pronunciation": { "ipa": "smaːk", "phonetic": "smaak" }
+  },
+  {
+    "dutch": "smaakvol",
+    "english": "tasty",
+    "vietnamese": "đậm đà, có hương vị",
+    "dutchsentence": "De maaltijd was erg smaakvol ingericht.",
+    "englishtranslate": "The meal was very tastefully arranged.",
+    "pronunciation": { "ipa": "ˈsmaːkvɔl", "phonetic": "smaak-vol" }
+  },
+  {
+    "dutch": "smakelijk",
+    "english": "tasty",
+    "vietnamese": "ngon miệng",
+    "dutchsentence": "Eet smakelijk allemaal!",
+    "englishtranslate": "Enjoy your meal, everyone!",
+    "pronunciation": { "ipa": "ˈsmaːkələk", "phonetic": "smaak-uh-luk" }
+  },
+  {
+    "dutch": "smakeloos",
+    "english": "tasteless",
+    "vietnamese": "nhạt nhẽo, không vị",
+    "dutchsentence": "Zonder zout is het eten een beetje smakeloos.",
+    "englishtranslate": "Without salt, the food is a bit tasteless.",
+    "pronunciation": { "ipa": "ˈsmaːkəloːs", "phonetic": "smaak-uh-loas" }
+  },
+  {
+    "dutch": "smakken",
+    "english": "to smack one’s lips",
+    "vietnamese": "nhai nhóp nhép",
+    "dutchsentence": "Hou op met smakken, dat is vervelend.",
+    "englishtranslate": "Stop smacking your lips, that's annoying.",
+    "pronunciation": { "ipa": "ˈsmɑkə(n)", "phonetic": "smak-un" }
+  },
+  {
+    "dutch": "smelten",
+    "english": "to melt",
+    "vietnamese": "tan chảy",
+    "dutchsentence": "Laat de boter in de pan smelten.",
+    "englishtranslate": "Let the butter melt in the pan.",
+    "pronunciation": { "ipa": "ˈsmɛltə(n)", "phonetic": "smel-tun" }
+  },
+  {
+    "dutch": "snijden",
+    "english": "to cut with a knife",
+    "vietnamese": "cắt, thái",
+    "dutchsentence": "Wil je het brood in plakjes snijden?",
+    "englishtranslate": "Would you like to cut the bread into slices?",
+    "pronunciation": { "ipa": "ˈsnɛidə(n)", "phonetic": "snay-dun" }
+  },
+  {
+    "dutch": "stampen",
+    "english": "to mash",
+    "vietnamese": "giã, nghiền",
+    "dutchsentence": "We stampen de aardappels voor de puree.",
+    "englishtranslate": "We mash the potatoes for the puree.",
+    "pronunciation": { "ipa": "ˈstɑmpə(n)", "phonetic": "stam-pun" }
+  },
+  {
+    "dutch": "steunen",
+    "english": "to support",
+    "vietnamese": "ủng hộ, hỗ trợ",
+    "dutchsentence": "Zij steunen een goed doel voor armoede.",
+    "englishtranslate": "They support a charity for poverty.",
+    "pronunciation": { "ipa": "ˈstøːnə(n)", "phonetic": "stuh-nun" }
+  },
+  {
+    "dutch": "tafel dekken, de",
+    "english": "to set the table",
+    "vietnamese": "dọn bàn ăn",
+    "dutchsentence": "Kun jij alvast de tafel dekken?",
+    "englishtranslate": "Can you set the table already?",
+    "pronunciation": { "ipa": "də ˈtaːfəl ˈdɛkə(n)", "phonetic": "duh taa-ful dek-un" }
+  },
+  {
+    "dutch": "tafelgenoot, de",
+    "english": "table companion, the",
+    "vietnamese": "người cùng bàn ăn",
+    "dutchsentence": "Hij was een heel gezellige tafelgenoot.",
+    "englishtranslate": "He was a very pleasant table companion.",
+    "pronunciation": { "ipa": "ˈtaːfəlɣəˌnoːt", "phonetic": "taa-ful-khuh-noat" }
+  },
+  {
+    "dutch": "tafelkleed, het",
+    "english": "tablecloth, the",
+    "vietnamese": "khăn trải bàn",
+    "dutchsentence": "Er zit een vlek op het witte tafelkleed.",
+    "englishtranslate": "There is a stain on the white tablecloth.",
+    "pronunciation": { "ipa": "ˈtaːfəlˌkleːt", "phonetic": "taa-ful-klayt" }
+  },
+  {
+    "dutch": "tafelmanieren, de",
+    "english": "table manners, the",
+    "vietnamese": "phép tắc bàn ăn",
+    "dutchsentence": "Ouders leren hun kinderen goede tafelmanieren.",
+    "englishtranslate": "Parents teach their children good table manners.",
+    "pronunciation": { "ipa": "ˈtaːfəlmaːˌnirə(n)", "phonetic": "taa-ful-maa-nee-run" }
+  },
+  {
+    "dutch": "theelepel, de",
+    "english": "teaspoon, the",
+    "vietnamese": "thìa cà phê",
+    "dutchsentence": "Ik neem altijd één theelepel suiker in mijn koffie.",
+    "englishtranslate": "I always take one teaspoon of sugar in my coffee.",
+    "pronunciation": { "ipa": "ˈteːleːpəl", "phonetic": "tay-lay-pul" }
+  },
+  {
+    "dutch": "toevoegen",
+    "english": "to add",
+    "vietnamese": "thêm vào",
+    "dutchsentence": "Je moet nog wat zout aan de soep toevoegen.",
+    "englishtranslate": "You need to add some more salt to the soup.",
+    "pronunciation": { "ipa": "ˈtuˌvuːɣə(n)", "phonetic": "too-voo-khun" }
+  },
+  {
+    "dutch": "ui, de",
+    "english": "onion, the",
+    "vietnamese": "hành tây",
+    "dutchsentence": "Ik moet huilen als ik uien snijd.",
+    "englishtranslate": "I cry when I cut onions.",
+    "pronunciation": { "ipa": "œy", "phonetic": "ouy" }
+  },
+  {
+    "dutch": "uitdaging, de",
+    "english": "challenge, the",
+    "vietnamese": "thử thách",
+    "dutchsentence": "Het koken voor twintig mensen is een grote uitdaging.",
+    "englishtranslate": "Cooking for twenty people is a big challenge.",
+    "pronunciation": { "ipa": "ˈœytdaxɪŋ", "phonetic": "ouyt-daakh-ing" }
+  },
+  {
+    "dutch": "uitgeven",
+    "english": "to spend",
+    "vietnamese": "chi tiêu",
+    "dutchsentence": "We geven veel geld uit aan lekker eten.",
+    "englishtranslate": "We spend a lot of money on good food.",
+    "pronunciation": { "ipa": "ˈœytχeːvə(n)", "phonetic": "ouyt-khay-vun" }
+  },
+  {
+    "dutch": "verdelen",
+    "english": "to divide",
+    "vietnamese": "chia ra",
+    "dutchsentence": "Verdeel de pizza in acht stukken.",
+    "englishtranslate": "Divide the pizza into eight pieces.",
+    "pronunciation": { "ipa": "vərˈdeːlə(n)", "phonetic": "vur-day-lun" }
+  },
+  {
+    "dutch": "verhitten",
+    "english": "to heat, to warm up",
+    "vietnamese": "làm nóng",
+    "dutchsentence": "Verhit de olie in de pan.",
+    "englishtranslate": "Heat the oil in the pan.",
+    "pronunciation": { "ipa": "vərˈɦɪtə(n)", "phonetic": "vur-hit-un" }
+  },
+  {
+    "dutch": "vies",
+    "english": "nasty",
+    "vietnamese": "dơ bẩn, vị tệ",
+    "dutchsentence": "Ik vind spruitjes echt vies.",
+    "englishtranslate": "I find Brussels sprouts really nasty.",
+    "pronunciation": { "ipa": "vis", "phonetic": "vees" }
+  },
+  {
+    "dutch": "vork, de",
+    "english": "fork, the",
+    "vietnamese": "cái dĩa (nĩa)",
+    "dutchsentence": "Eet je de pasta met een vork of een lepel?",
+    "englishtranslate": "Do you eat the pasta with a fork or a spoon?",
+    "pronunciation": { "ipa": "vɔrk", "phonetic": "vork" }
+  },
+  {
+    "dutch": "vuur, het",
+    "english": "fire, the",
+    "vietnamese": "lửa",
+    "dutchsentence": "Zet de pan op het vuur.",
+    "englishtranslate": "Put the pan on the fire.",
+    "pronunciation": { "ipa": "vyr", "phonetic": "vure" }
+  },
+  {
+    "dutch": "waarschijnlijk",
+    "english": "probably",
+    "vietnamese": "có lẽ",
+    "dutchsentence": "We gaan waarschijnlijk morgen uit eten.",
+    "englishtranslate": "We are probably going out to eat tomorrow.",
+    "pronunciation": { "ipa": "ʋaːrˈsχɛinlək", "phonetic": "vaar-skhayn-luk" }
+  },
+  {
+    "dutch": "waterig",
+    "english": "watery",
+    "vietnamese": "loãng, nhiều nước",
+    "dutchsentence": "De soep is een beetje waterig.",
+    "englishtranslate": "The soup is a bit watery.",
+    "pronunciation": { "ipa": "ˈʋaːtərɪx", "phonetic": "waa-tur-ikh" }
+  },
+  {
+    "dutch": "witlof, de",
+    "english": "chicory, the",
+    "vietnamese": "rau diếp xoăn",
+    "dutchsentence": "Witlof uit de oven met ham en kaas is heerlijk.",
+    "englishtranslate": "Chicory from the oven with ham and cheese is delicious.",
+    "pronunciation": { "ipa": "ˈʋɪtlɔf", "phonetic": "wit-lof" }
+  },
+  {
+    "dutch": "zilveruitje, het",
+    "english": "silver onion, the",
+    "vietnamese": "hành củ muối nhỏ",
+    "dutchsentence": "Zilveruitjes smaken lekker bij de hutspot.",
+    "englishtranslate": "Silver onions taste good with the stew.",
+    "pronunciation": { "ipa": "ˈzɪlvərˌœytjə", "phonetic": "zil-vur-ouyt-yuh" }
+  },
+  {
+    "dutch": "zoet",
+    "english": "sweet",
+    "vietnamese": "ngọt",
+    "dutchsentence": "Deze aardbeien zijn erg zoet.",
+    "englishtranslate": "These strawberries are very sweet.",
+    "pronunciation": { "ipa": "zut", "phonetic": "zoot" }
+  },
+  {
+    "dutch": "zout",
+    "english": "salty",
+    "vietnamese": "mặn",
+    "dutchsentence": "De soep is een beetje te zout.",
+    "englishtranslate": "The soup is a bit too salty.",
+    "pronunciation": { "ipa": "zɑut", "phonetic": "zout" }
+  },
+  {
+    "dutch": "zout, het",
+    "english": "salt, the",
+    "vietnamese": "muối",
+    "dutchsentence": "Mag ik het zout even?",
+    "englishtranslate": "May I have the salt for a moment?",
+    "pronunciation": { "ipa": "zɑut", "phonetic": "zout" }
+  },
+  {
+    "dutch": "zuur",
+    "english": "sour",
+    "vietnamese": "chua",
+    "dutchsentence": "Een citroen smaakt erg zuur.",
+    "englishtranslate": "A lemon tastes very sour.",
+    "pronunciation": { "ipa": "zyːr", "phonetic": "zewr" }
+  },
+  {
+    "dutch": "zwaaien",
+    "english": "to wave",
+    "vietnamese": "vẫy tay",
+    "dutchsentence": "We zwaaien naar onze vrienden in het restaurant.",
+    "englishtranslate": "We wave to our friends in the restaurant.",
+    "pronunciation": { "ipa": "ˈzʋaːiə(n)", "phonetic": "zwaa-yun" }
+  }
+]

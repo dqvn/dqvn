@@ -1,0 +1,1090 @@
+[
+  {
+    "dutch": "aankomstplaats, de",
+    "english": "finish, the",
+    "vietnamese": "điểm đích",
+    "dutchsentence": "De loper bereikte eindelijk de aankomstplaats.",
+    "englishtranslate": "The runner finally reached the finish line.",
+    "pronunciation": { "ipa": "ˈaːnkɔmstplaːts", "phonetic": "aan-komst-plaats" }
+  },
+  {
+    "dutch": "aanraken",
+    "english": "to touch",
+    "vietnamese": "chạm vào",
+    "dutchsentence": "Je mag de bal niet met je handen aanraken.",
+    "englishtranslate": "You are not allowed to touch the ball with your hands.",
+    "pronunciation": { "ipa": "ˈaːnraːkə(n)", "phonetic": "aan-raa-kun" }
+  },
+  {
+    "dutch": "aanspannen",
+    "english": "to tighten",
+    "vietnamese": "gồng, siết chặt",
+    "dutchsentence": "Span je buikspieren aan tijdens de oefening.",
+    "englishtranslate": "Tighten your abdominal muscles during the exercise.",
+    "pronunciation": { "ipa": "ˈaːnspɑnə(n)", "phonetic": "aan-span-un" }
+  },
+  {
+    "dutch": "aansporen",
+    "english": "to encourage",
+    "vietnamese": "khuyến khích, thúc giục",
+    "dutchsentence": "Het publiek spoorde de renners aan.",
+    "englishtranslate": "The audience encouraged the riders.",
+    "pronunciation": { "ipa": "ˈaːnspoːrə(n)", "phonetic": "aan-spo-run" }
+  },
+  {
+    "dutch": "abonnement, het",
+    "english": "season ticket, the",
+    "vietnamese": "thẻ đăng ký (theo kỳ/tháng)",
+    "dutchsentence": "Ik heb een abonnement op de sportschool.",
+    "englishtranslate": "I have a season ticket for the gym.",
+    "pronunciation": { "ipa": "ˌabɔnəˈmɛnt", "phonetic": "ah-bon-uh-ment" }
+  },
+  {
+    "dutch": "afstand, de",
+    "english": "distance, the",
+    "vietnamese": "khoảng cách",
+    "dutchsentence": "De afstand van de marathon is ruim 42 kilometer.",
+    "englishtranslate": "The distance of the marathon is over 42 kilometers.",
+    "pronunciation": { "ipa": "ˈɑfstɑnt", "phonetic": "af-stant" }
+  },
+  {
+    "dutch": "andersom",
+    "english": "the other way around",
+    "vietnamese": "ngược lại",
+    "dutchsentence": "Nee, niet zo, maar precies andersom.",
+    "englishtranslate": "No, not like that, but exactly the other way around.",
+    "pronunciation": { "ipa": "ˈɑndərsɔm", "phonetic": "an-dur-som" }
+  },
+  {
+    "dutch": "atleet, de",
+    "english": "athlete, the",
+    "vietnamese": "vận động viên điền kinh",
+    "dutchsentence": "De atleet won een gouden medaille.",
+    "englishtranslate": "The athlete won a gold medal.",
+    "pronunciation": { "ipa": "ɑtˈleːt", "phonetic": "at-layt" }
+  },
+  {
+    "dutch": "bal, de",
+    "english": "ball, the",
+    "vietnamese": "quả bóng",
+    "dutchsentence": "De hond rent achter de bal aan.",
+    "englishtranslate": "The dog is running after the ball.",
+    "pronunciation": { "ipa": "bɑl", "phonetic": "bal" }
+  },
+  {
+    "dutch": "been, het",
+    "english": "leg, the",
+    "vietnamese": "cái chân",
+    "dutchsentence": "Hij heeft zijn been gebroken tijdens het skiën.",
+    "englishtranslate": "He broke his leg while skiing.",
+    "pronunciation": { "ipa": "beːn", "phonetic": "bayn" }
+  },
+  {
+    "dutch": "benaming, de",
+    "english": "name, the",
+    "vietnamese": "tên gọi, danh xưng",
+    "dutchsentence": "Wat is de officiële benaming voor deze sport?",
+    "englishtranslate": "What is the official name for this sport?",
+    "pronunciation": { "ipa": "bəˈnaːmɪŋ", "phonetic": "buh-naa-ming" }
+  },
+  {
+    "dutch": "beoefenen",
+    "english": "to practise, to play",
+    "vietnamese": "luyện tập, thực hành",
+    "dutchsentence": "Welke sport beoefen jij in je vrije tijd?",
+    "englishtranslate": "Which sport do you practice in your free time?",
+    "pronunciation": { "ipa": "bəˈufənə(n)", "phonetic": "buh-oo-fun-un" }
+  },
+  {
+    "dutch": "bestaan uit",
+    "english": "to consist of",
+    "vietnamese": "bao gồm có",
+    "dutchsentence": "Een voetbalteam bestaat uit elf spelers.",
+    "englishtranslate": "A soccer team consists of eleven players.",
+    "pronunciation": { "ipa": "bəˈstaːn œyt", "phonetic": "buh-staan ouyt" }
+  },
+  {
+    "dutch": "bewegen",
+    "english": "to move",
+    "vietnamese": "vận động, di chuyển",
+    "dutchsentence": "Het is gezond om elke dag dertig minuten te bewegen.",
+    "englishtranslate": "It is healthy to move for thirty minutes every day.",
+    "pronunciation": { "ipa": "bəˈʋeːɣə(n)", "phonetic": "buh-way-khun" }
+  },
+  {
+    "dutch": "beweging, de",
+    "english": "movement, the",
+    "vietnamese": "sự cử động, phong trào",
+    "dutchsentence": "Maak een rustige beweging met je arm.",
+    "englishtranslate": "Make a gentle movement with your arm.",
+    "pronunciation": { "ipa": "bəˈʋeːɣɪŋ", "phonetic": "buh-way-khing" }
+  },
+  {
+    "dutch": "bij voorbaat",
+    "english": "in advance",
+    "vietnamese": "trước, xin cảm ơn trước",
+    "dutchsentence": "Dank u bij voorbaat voor uw hulp.",
+    "englishtranslate": "Thank you in advance for your help.",
+    "pronunciation": { "ipa": "bɛi ˈvoːrbaːt", "phonetic": "by voar-baat" }
+  },
+  {
+    "dutch": "binnenkomen",
+    "english": "to enter",
+    "vietnamese": "đi vào",
+    "dutchsentence": "U kunt hier direct binnenkomen.",
+    "englishtranslate": "You can enter directly here.",
+    "pronunciation": { "ipa": "ˈbɪnə(n)ˌkoːmə(n)", "phonetic": "bin-un-koa-mun" }
+  },
+  {
+    "dutch": "borgpasje, het",
+    "english": "deposit pass, the",
+    "vietnamese": "thẻ đặt cọc",
+    "dutchsentence": "Vergeet je borgpasje niet in te leveren bij de balie.",
+    "englishtranslate": "Don't forget to hand in your deposit pass at the counter.",
+    "pronunciation": { "ipa": "ˈbɔrxpɑsjə", "phonetic": "borkh-pas-yuh" }
+  },
+  {
+    "dutch": "borst, de",
+    "english": "breast, chest, the",
+    "vietnamese": "ngực",
+    "dutchsentence": "Hij heeft pijn op zijn borst.",
+    "englishtranslate": "He has pain in his chest.",
+    "pronunciation": { "ipa": "bɔrst", "phonetic": "borst" }
+  },
+  {
+    "dutch": "boven",
+    "english": "above",
+    "vietnamese": "ở trên",
+    "dutchsentence": "Houd je handen boven je hoofd.",
+    "englishtranslate": "Keep your hands above your head.",
+    "pronunciation": { "ipa": "ˈboːvə(n)", "phonetic": "boa-vun" }
+  },
+  {
+    "dutch": "buigen",
+    "english": "to bow, bend",
+    "vietnamese": "cúi xuống, uốn cong",
+    "dutchsentence": "Kun je je knieën ver buigen?",
+    "englishtranslate": "Can you bend your knees far?",
+    "pronunciation": { "ipa": "ˈbœyɣə(n)", "phonetic": "bouy-khun" }
+  },
+  {
+    "dutch": "buik, de",
+    "english": "belly, the",
+    "vietnamese": "bụng",
+    "dutchsentence": "Ik heb buikpijn na het eten.",
+    "englishtranslate": "I have a stomach ache after eating.",
+    "pronunciation": { "ipa": "bœyk", "phonetic": "bouyk" }
+  },
+  {
+    "dutch": "carrière, de",
+    "english": "career, the",
+    "vietnamese": "sự nghiệp",
+    "dutchsentence": "Zijn carrière als voetballer was erg kort.",
+    "englishtranslate": "His career as a soccer player was very short.",
+    "pronunciation": { "ipa": "kaːriˈjɛːrə", "phonetic": "kah-ree-ye-ruh" }
+  },
+  {
+    "dutch": "conditie, de",
+    "english": "condition, shape, the",
+    "vietnamese": "thể lực, tình trạng",
+    "dutchsentence": "Je moet trainen om een goede conditie te krijgen.",
+    "englishtranslate": "You need to train to get into good shape.",
+    "pronunciation": { "ipa": "kɔnˈdi(t)si", "phonetic": "kon-deet-see" }
+  },
+  {
+    "dutch": "dame, de",
+    "english": "lady, the",
+    "vietnamese": "quý bà, phụ nữ",
+    "dutchsentence": "Dames en heren, welkom bij de wedstrijd.",
+    "englishtranslate": "Ladies and gentlemen, welcome to the match.",
+    "pronunciation": { "ipa": "ˈdaːmə", "phonetic": "daa-muh" }
+  },
+  {
+    "dutch": "dank, de",
+    "english": "thanks",
+    "vietnamese": "sự cảm ơn",
+    "dutchsentence": "Mijn grote dank voor uw hulp.",
+    "englishtranslate": "My great thanks for your help.",
+    "pronunciation": { "ipa": "dɑŋk", "phonetic": "dank" }
+  },
+  {
+    "dutch": "dankzij",
+    "english": "thanks to",
+    "vietnamese": "nhờ có",
+    "dutchsentence": "Dankzij hem hebben we de wedstrijd gewonnen.",
+    "englishtranslate": "Thanks to him, we won the match.",
+    "pronunciation": { "ipa": "dɑŋkˈzɛi", "phonetic": "dank-zy" }
+  },
+  {
+    "dutch": "deel, het",
+    "english": "part, the",
+    "vietnamese": "phần, bộ phận",
+    "dutchsentence": "Dit is het leukste deel van het evenement.",
+    "englishtranslate": "This is the best part of the event.",
+    "pronunciation": { "ipa": "deːl", "phonetic": "dayl" }
+  },
+  {
+    "dutch": "doorgaan",
+    "english": "to proceed, to continue",
+    "vietnamese": "tiếp tục",
+    "dutchsentence": "De wedstrijd gaat door, ondanks de regen.",
+    "englishtranslate": "The match is continuing despite the rain.",
+    "pronunciation": { "ipa": "ˈdoːrɣaːn", "phonetic": "dore-khaan" }
+  },
+  {
+    "dutch": "doorzetten",
+    "english": "to persevere",
+    "vietnamese": "kiên trì, quyết tâm",
+    "dutchsentence": "Als je wilt winnen, moet je doorzetten.",
+    "englishtranslate": "If you want to win, you must persevere.",
+    "pronunciation": { "ipa": "ˈdoːrsɛtə(n)", "phonetic": "dore-set-un" }
+  },
+  {
+    "dutch": "dus",
+    "english": "so, thus, therefore",
+    "vietnamese": "vì vậy, cho nên",
+    "dutchsentence": "Ik ben moe, dus ik ga slapen.",
+    "englishtranslate": "I am tired, so I am going to sleep.",
+    "pronunciation": { "ipa": "dʏs", "phonetic": "dus" }
+  },
+  {
+    "dutch": "eenmalig",
+    "english": "one-time only",
+    "vietnamese": "một lần duy nhất",
+    "dutchsentence": "Het inschrijfgeld is eenmalig.",
+    "englishtranslate": "The enrollment fee is one-time only.",
+    "pronunciation": { "ipa": "ˈeːnmaːləx", "phonetic": "ayn-maa-lukh" }
+  },
+  {
+    "dutch": "eens",
+    "english": "once, one day",
+    "vietnamese": "một lần, trước đây",
+    "dutchsentence": "Ik ben daar eens geweest.",
+    "englishtranslate": "I have been there once.",
+    "pronunciation": { "ipa": "eːns", "phonetic": "ayns" }
+  },
+  {
+    "dutch": "ellende, de",
+    "english": "misery, the",
+    "vietnamese": "sự khốn khổ, tai họa",
+    "dutchsentence": "De blessure zorgde voor veel ellende.",
+    "englishtranslate": "The injury caused a lot of misery.",
+    "pronunciation": { "ipa": "ɛˈlɛndə", "phonetic": "el-en-duh" }
+  },
+  {
+    "dutch": "energie, de",
+    "english": "energy, the",
+    "vietnamese": "năng lượng",
+    "dutchsentence": "Kinderen hebben altijd veel energie.",
+    "englishtranslate": "Children always have a lot of energy.",
+    "pronunciation": { "ipa": "ˌenɛrˈɣi", "phonetic": "en-er-khee" }
+  },
+  {
+    "dutch": "enkel, de",
+    "english": "ankle, the",
+    "vietnamese": "mắt cá chân",
+    "dutchsentence": "Ik ben door mijn enkel gegaan.",
+    "englishtranslate": "I twisted my ankle.",
+    "pronunciation": { "ipa": "ˈɛŋkəl", "phonetic": "eng-kul" }
+  },
+  {
+    "dutch": "enkelpartij, de",
+    "english": "single match, the",
+    "vietnamese": "trận đánh đơn",
+    "dutchsentence": "Hij speelt vandaag een enkelpartij tennis.",
+    "englishtranslate": "He is playing a singles match of tennis today.",
+    "pronunciation": { "ipa": "ˈɛŋkəlpɑrˌtɛi", "phonetic": "eng-kul-par-ty" }
+  },
+  {
+    "dutch": "evenement, het",
+    "english": "event, the",
+    "vietnamese": "sự kiện",
+    "dutchsentence": "Het sportevenement was een groot succes.",
+    "englishtranslate": "The sports event was a great success.",
+    "pronunciation": { "ipa": "ˌeːvənəˈmɛnt", "phonetic": "ay-vun-uh-ment" }
+  },
+  {
+    "dutch": "formeel",
+    "english": "formal",
+    "vietnamese": "trang trọng",
+    "dutchsentence": "In een formele brief gebruik je 'Geachte'.",
+    "englishtranslate": "In a formal letter you use 'Dear'.",
+    "pronunciation": { "ipa": "fɔrˈmeːl", "phonetic": "for-mayl" }
+  },
+  {
+    "dutch": "geachte",
+    "english": "dear (formal)",
+    "vietnamese": "Kính thưa",
+    "dutchsentence": "Geachte heer/mevrouw,",
+    "englishtranslate": "Dear Sir/Madam,",
+    "pronunciation": { "ipa": "ɣəˈɑxtə", "phonetic": "khuh-akh-tuh" }
+  },
+  {
+    "dutch": "gehandicapt",
+    "english": "handicapped",
+    "vietnamese": "khuyết tật",
+    "dutchsentence": "Zij doet mee aan de sportdag voor gehandicapten.",
+    "englishtranslate": "She is participating in the sports day for the handicapped.",
+    "pronunciation": { "ipa": "ɣəˈɦɛndikɛpt", "phonetic": "khuh-hen-dee-kept" }
+  },
+  {
+    "dutch": "gevolgd door",
+    "english": "followed by",
+    "vietnamese": "theo sau bởi",
+    "dutchsentence": "De warming-up wordt gevolgd door de training.",
+    "englishtranslate": "The warm-up is followed by the training.",
+    "pronunciation": { "ipa": "ɣəˈvɔlxt doːr", "phonetic": "khuh-volkht dore" }
+  },
+  {
+    "dutch": "gezamenlijk",
+    "english": "collective, joint",
+    "vietnamese": "cùng nhau, chung",
+    "dutchsentence": "We doen een gezamenlijke oefening.",
+    "englishtranslate": "We are doing a joint exercise.",
+    "pronunciation": { "ipa": "ɣəˈzaːmənlək", "phonetic": "khuh-zaa-mun-luk" }
+  },
+  {
+    "dutch": "gymschoen, de",
+    "english": "sneaker, the",
+    "vietnamese": "giày thể thao",
+    "dutchsentence": "Vergeet je gymschoenen niet voor de les.",
+    "englishtranslate": "Don't forget your sneakers for the lesson.",
+    "pronunciation": { "ipa": "ˈɣɪmsχun", "phonetic": "khim-skhoon" }
+  },
+  {
+    "dutch": "hals, de",
+    "english": "throat, neck, the",
+    "vietnamese": "cổ, họng",
+    "dutchsentence": "Zij draagt een sjaal om haar hals.",
+    "englishtranslate": "She is wearing a scarf around her neck.",
+    "pronunciation": { "ipa": "ɦɑls", "phonetic": "hals" }
+  },
+  {
+    "dutch": "hand, de",
+    "english": "hand, the",
+    "vietnamese": "bàn tay",
+    "dutchsentence": "Was je handen voor het eten.",
+    "englishtranslate": "Wash your hands before eating.",
+    "pronunciation": { "ipa": "ɦɑnt", "phonetic": "hant" }
+  },
+  {
+    "dutch": "handdoek, de",
+    "english": "towel, the",
+    "vietnamese": "khăn tắm",
+    "dutchsentence": "Na het zwemmen heb ik een handdoek nodig.",
+    "englishtranslate": "After swimming, I need a towel.",
+    "pronunciation": { "ipa": "ˈɦɑnduk", "phonetic": "han-dook" }
+  },
+  {
+    "dutch": "heer",
+    "english": "Sir",
+    "vietnamese": "Ông, Ngài",
+    "dutchsentence": "Ja, meneer de heer.",
+    "englishtranslate": "Yes, Mr. Gentleman (Formal/Ancient).",
+    "pronunciation": { "ipa": "ɦeːr", "phonetic": "hayr" }
+  },
+  {
+    "dutch": "heer, de",
+    "english": "gentleman, the",
+    "vietnamese": "quý ông",
+    "dutchsentence": "Deze heer wil graag een vraag stellen.",
+    "englishtranslate": "This gentleman would like to ask a question.",
+    "pronunciation": { "ipa": "də ɦeːr", "phonetic": "duh hayr" }
+  },
+  {
+    "dutch": "hoofd, het",
+    "english": "head, the",
+    "vietnamese": "cái đầu",
+    "dutchsentence": "Draag een helm om je hoofd te beschermen.",
+    "englishtranslate": "Wear a helmet to protect your head.",
+    "pronunciation": { "ipa": "ɦoːft", "phonetic": "hoaft" }
+  },
+  {
+    "dutch": "hoofdstad, de",
+    "english": "capital, the",
+    "vietnamese": "thủ đô",
+    "dutchsentence": "Amsterdam is de hoofdstad van Nederland.",
+    "englishtranslate": "Amsterdam is the capital of the Netherlands.",
+    "pronunciation": { "ipa": "ˈɦoːftstɑt", "phonetic": "hoaft-stat" }
+  },
+  {
+    "dutch": "hoog",
+    "english": "high",
+    "vietnamese": "cao",
+    "dutchsentence": "De lat ligt erg hoog vandaag.",
+    "englishtranslate": "The bar is set very high today.",
+    "pronunciation": { "ipa": "ɦoːx", "phonetic": "hoakh" }
+  },
+  {
+    "dutch": "hoogachtend",
+    "english": "sincerely (formal)",
+    "vietnamese": "Trân trọng",
+    "dutchsentence": "Hoogachtend, Jan de Vries.",
+    "englishtranslate": "Sincerely, Jan de Vries.",
+    "pronunciation": { "ipa": "ˈɦoːxˈɑxtənt", "phonetic": "hoakh-akh-tunt" }
+  },
+  {
+    "dutch": "ijs, het",
+    "english": "ice, the",
+    "vietnamese": "băng, đá, kem",
+    "dutchsentence": "In de winter schaatsen we op het ijs.",
+    "englishtranslate": "In the winter we skate on the ice.",
+    "pronunciation": { "ipa": "ɛis", "phonetic": "ys" }
+  },
+  {
+    "dutch": "inschrijfgeld, het",
+    "english": "enrolment fees, the",
+    "vietnamese": "phí đăng ký",
+    "dutchsentence": "Het inschrijfgeld moet voor 1 maart betaald zijn.",
+    "englishtranslate": "The enrollment fee must be paid before March 1st.",
+    "pronunciation": { "ipa": "ˈɪnsχrɛifxɛlt", "phonetic": "in-skryf-khelt" }
+  },
+  {
+    "dutch": "instructie, de",
+    "english": "instruction, the",
+    "vietnamese": "hướng dẫn",
+    "dutchsentence": "Lees de instructies goed door.",
+    "englishtranslate": "Read the instructions carefully.",
+    "pronunciation": { "ipa": "ɪnˈstrʏksi", "phonetic": "in-struk-see" }
+  },
+  {
+    "dutch": "kampioenschap, het",
+    "english": "championship, the",
+    "vietnamese": "giải vô địch",
+    "dutchsentence": "Zij dromen van het wereldkampioenschap.",
+    "englishtranslate": "They dream of the world championship.",
+    "pronunciation": { "ipa": "kɑmˈpijunˌsχɑp", "phonetic": "kam-pyoon-skhap" }
+  },
+  {
+    "dutch": "klimmen",
+    "english": "to climb",
+    "vietnamese": "leo trèo",
+    "dutchsentence": "We gaan dit weekend in de bergen klimmen.",
+    "englishtranslate": "We are going to climb in the mountains this weekend.",
+    "pronunciation": { "ipa": "ˈklɪmə(n)", "phonetic": "klim-un" }
+  },
+  {
+    "dutch": "knie, de",
+    "english": "knee, the",
+    "vietnamese": "đầu gối",
+    "dutchsentence": "Hij viel en bezeerde zijn knie.",
+    "englishtranslate": "He fell and hurt his knee.",
+    "pronunciation": { "ipa": "kni", "phonetic": "knee" }
+  },
+  {
+    "dutch": "komend",
+    "english": "coming",
+    "vietnamese": "sắp tới",
+    "dutchsentence": "Komend weekend is er een toernooi.",
+    "englishtranslate": "Coming weekend there is a tournament.",
+    "pronunciation": { "ipa": "ˈkoːmənt", "phonetic": "koa-munt" }
+  },
+  {
+    "dutch": "landen",
+    "english": "to land",
+    "vietnamese": "hạ cánh, tiếp đất",
+    "dutchsentence": "De parachutist landde veilig op de grond.",
+    "englishtranslate": "The parachutist landed safely on the ground.",
+    "pronunciation": { "ipa": "ˈlɑndə(n)", "phonetic": "lan-dun" }
+  },
+  {
+    "dutch": "leiden tot",
+    "english": "to lead to",
+    "vietnamese": "dẫn đến",
+    "dutchsentence": "Veel trainen kan leiden tot succes.",
+    "englishtranslate": "A lot of training can lead to success.",
+    "pronunciation": { "ipa": "ˈlɛidə(n) tɔt", "phonetic": "ly-dun tot" }
+  },
+  {
+    "dutch": "lichaamsdeel, het",
+    "english": "part of the body, the",
+    "vietnamese": "bộ phận cơ thể",
+    "dutchsentence": "De hand is een belangrijk lichaamsdeel.",
+    "englishtranslate": "The hand is an important part of the body.",
+    "pronunciation": { "ipa": "ˈlɪχaːmsdeːl", "phonetic": "likh-aams-dayl" }
+  },
+  {
+    "dutch": "mat, de",
+    "english": "mat, the",
+    "vietnamese": "tấm thảm (tập võ/gym)",
+    "dutchsentence": "We doen onze oefeningen op een mat.",
+    "englishtranslate": "We do our exercises on a mat.",
+    "pronunciation": { "ipa": "mɑt", "phonetic": "mat" }
+  },
+  {
+    "dutch": "maximaal",
+    "english": "maximum",
+    "vietnamese": "tối đa",
+    "dutchsentence": "Er mogen maximaal honderd mensen naar binnen.",
+    "englishtranslate": "A maximum of one hundred people are allowed inside.",
+    "pronunciation": { "ipa": "mɑksiˈmaːl", "phonetic": "mak-see-maal" }
+  },
+  {
+    "dutch": "medewerking, de",
+    "english": "cooperation, the",
+    "vietnamese": "sự hợp tác",
+    "dutchsentence": "Bedankt voor uw medewerking.",
+    "englishtranslate": "Thank you for your cooperation.",
+    "pronunciation": { "ipa": "ˈmeːdəˌʋɛrkɪŋ", "phonetic": "may-duh-wer-king" }
+  },
+  {
+    "dutch": "met behulp van",
+    "english": "using, with the aid of",
+    "vietnamese": "với sự hỗ trợ của",
+    "dutchsentence": "Hij loopt met behulp van krukken.",
+    "englishtranslate": "He walks with the aid of crutches.",
+    "pronunciation": { "ipa": "mɛt bəˈɦʏlp vɑn", "phonetic": "met buh-hulp van" }
+  },
+  {
+    "dutch": "mevrouw",
+    "english": "Madam, Mrs.",
+    "vietnamese": "Bà, Cô",
+    "dutchsentence": "Dag mevrouw, kan ik u helpen?",
+    "englishtranslate": "Hello Madam, can I help you?",
+    "pronunciation": { "ipa": "məˈvrʌu", "phonetic": "muh-vrow" }
+  },
+  {
+    "dutch": "naar achteren",
+    "english": "backward",
+    "vietnamese": "về phía sau",
+    "dutchsentence": "Stap voorzichtig naar achteren.",
+    "englishtranslate": "Step backward carefully.",
+    "pronunciation": { "ipa": "naːr ˈɑxtərə(n)", "phonetic": "naar akh-tur-un" }
+  },
+  {
+    "dutch": "naar voren",
+    "english": "ahead, forward",
+    "vietnamese": "về phía trước",
+    "dutchsentence": "Kijk naar voren tijdens het rennen.",
+    "englishtranslate": "Look ahead while running.",
+    "pronunciation": { "ipa": "naːr ˈvoːrə(n)", "phonetic": "naar voa-run" }
+  },
+  {
+    "dutch": "nadoen",
+    "english": "to imitate",
+    "vietnamese": "bắt chước, làm theo",
+    "dutchsentence": "Je moet de leraar precies nadoen.",
+    "englishtranslate": "You have to imitate the teacher exactly.",
+    "pronunciation": { "ipa": "ˈnaːdun", "phonetic": "naa-doon" }
+  },
+  {
+    "dutch": "nek, de",
+    "english": "neck, the",
+    "vietnamese": "cái cổ",
+    "dutchsentence": "Ik heb een stijve nek.",
+    "englishtranslate": "I have a stiff neck.",
+    "pronunciation": { "ipa": "nɛk", "phonetic": "nek" }
+  },
+  {
+    "dutch": "omhoog",
+    "english": "up",
+    "vietnamese": "lên trên",
+    "dutchsentence": "Steek je handen omhoog.",
+    "englishtranslate": "Put your hands up.",
+    "pronunciation": { "ipa": "ɔmˈɦoːx", "phonetic": "om-hoakh" }
+  },
+  {
+    "dutch": "omlaag",
+    "english": "down",
+    "vietnamese": "xuống dưới",
+    "dutchsentence": "Kijk omlaag naar je voeten.",
+    "englishtranslate": "Look down at your feet.",
+    "pronunciation": { "ipa": "ɔmˈlaːx", "phonetic": "om-laakh" }
+  },
+  {
+    "dutch": "omschrijving, de",
+    "english": "description, the",
+    "vietnamese": "sự mô tả",
+    "dutchsentence": "Geef een korte omschrijving van de sport.",
+    "englishtranslate": "Give a short description of the sport.",
+    "pronunciation": { "ipa": "ɔmˈsχrɛivɪŋ", "phonetic": "om-skry-ving" }
+  },
+  {
+    "dutch": "onderdeel, het",
+    "english": "part, component, the",
+    "vietnamese": "thành phần, hạng mục",
+    "dutchsentence": "Dit is een verplicht onderdeel van het examen.",
+    "englishtranslate": "This is a mandatory part of the exam.",
+    "pronunciation": { "ipa": "ˈɔndərdeːl", "phonetic": "on-dur-dayl" }
+  },
+  {
+    "dutch": "onverslaanbaar",
+    "english": "unbeatable",
+    "vietnamese": "không thể bị đánh bại",
+    "dutchsentence": "Dat team is dit seizoen onverslaanbaar.",
+    "englishtranslate": "That team is unbeatable this season.",
+    "pronunciation": { "ipa": "ˌɔnvərˈslaːnbaːr", "phonetic": "on-vur-slaan-baar" }
+  },
+  {
+    "dutch": "op en neer",
+    "english": "up and down",
+    "vietnamese": "lên và xuống",
+    "dutchsentence": "Beweeg je armen langzaam op en neer.",
+    "englishtranslate": "Move your arms slowly up and down.",
+    "pronunciation": { "ipa": "ɔp ɛn neːr", "phonetic": "op en nayr" }
+  },
+  {
+    "dutch": "opschieten",
+    "english": "to hurry up",
+    "vietnamese": "nhanh lên",
+    "dutchsentence": "We moeten opschieten, anders komen we te laat.",
+    "englishtranslate": "We have to hurry up, or we'll be late.",
+    "pronunciation": { "ipa": "ˈɔpˌsχitə(n)", "phonetic": "op-skee-tun" }
+  },
+  {
+    "dutch": "optrekken",
+    "english": "to pull up",
+    "vietnamese": "kéo lên, tăng tốc",
+    "dutchsentence": "Kun jij je tien keer optrekken?",
+    "englishtranslate": "Can you pull yourself up ten times?",
+    "pronunciation": { "ipa": "ˈɔpˌtrɛkə(n)", "phonetic": "op-trek-un" }
+  },
+  {
+    "dutch": "opzeggen",
+    "english": "to cancel",
+    "vietnamese": "hủy bỏ (đăng ký)",
+    "dutchsentence": "Ik wil mijn abonnement opzeggen.",
+    "englishtranslate": "I want to cancel my subscription.",
+    "pronunciation": { "ipa": "ˈɔpˌzɛɣə(n)", "phonetic": "op-zekh-un" }
+  },
+  {
+    "dutch": "opzij",
+    "english": "aside",
+    "vietnamese": "sang một bên",
+    "dutchsentence": "Ga even opzij zodat ik erlangs kan.",
+    "englishtranslate": "Step aside so I can pass.",
+    "pronunciation": { "ipa": "ɔpˈzɛi", "phonetic": "op-zy" }
+  },
+  {
+    "dutch": "overbruggen",
+    "english": "to bridge",
+    "vietnamese": "vượt qua, bắc cầu",
+    "dutchsentence": "Ze moeten een afstand van 10 kilometer overbruggen.",
+    "englishtranslate": "They have to bridge a distance of 10 kilometers.",
+    "pronunciation": { "ipa": "oːvərˈbrʏɣə(n)", "phonetic": "o-vur-brukh-un" }
+  },
+  {
+    "dutch": "pijn, de",
+    "english": "pain, ache, the",
+    "vietnamese": "cơn đau",
+    "dutchsentence": "Ik heb veel pijn in mijn rug.",
+    "englishtranslate": "I have a lot of pain in my back.",
+    "pronunciation": { "ipa": "pɛin", "phonetic": "pyn" }
+  },
+  {
+    "dutch": "pols, de",
+    "english": "wrist, the",
+    "vietnamese": "cổ tay",
+    "dutchsentence": "Zij draagt een horloge om haar pols.",
+    "englishtranslate": "She is wearing a watch around her wrist.",
+    "pronunciation": { "ipa": "pɔls", "phonetic": "pols" }
+  },
+  {
+    "dutch": "polsstokverspringen, het",
+    "english": "pole jumping, the",
+    "vietnamese": "nhảy sào (vượt sông - môn thể thao truyền thống Hà Lan)",
+    "dutchsentence": "Polsstokverspringen is een Friese sport.",
+    "englishtranslate": "Pole jumping (over water) is a Frisian sport.",
+    "pronunciation": { "ipa": "ˈpɔlstɔkvərˌsprɪŋə(n)", "phonetic": "pols-stok-vur-spring-un" }
+  },
+  {
+    "dutch": "populair",
+    "english": "popular",
+    "vietnamese": "phổ biến, được yêu thích",
+    "dutchsentence": "Voetbal is een populaire sport in Nederland.",
+    "englishtranslate": "Soccer is a popular sport in the Netherlands.",
+    "pronunciation": { "ipa": "poːpyˈlɛːr", "phonetic": "po-pu-lair" }
+  },
+  {
+    "dutch": "prijs, de",
+    "english": "price, prize, the",
+    "vietnamese": "giá cả, giải thưởng",
+    "dutchsentence": "Hij heeft de eerste prijs gewonnen.",
+    "englishtranslate": "He won the first prize.",
+    "pronunciation": { "ipa": "prɛis", "phonetic": "prys" }
+  },
+  {
+    "dutch": "racket, het",
+    "english": "racket, the",
+    "vietnamese": "vợt (tennis/cầu lông)",
+    "dutchsentence": "Mijn racket moet opnieuw bespannen worden.",
+    "englishtranslate": "My racket needs to be restrung.",
+    "pronunciation": { "ipa": "ˈrɛkət", "phonetic": "rek-ut" }
+  },
+  {
+    "dutch": "reden, de",
+    "english": "reason, the",
+    "vietnamese": "lý do",
+    "dutchsentence": "Wat is de reden van je afwezigheid?",
+    "englishtranslate": "What is the reason for your absence?",
+    "pronunciation": { "ipa": "ˈreːdə(n)", "phonetic": "ray-dun" }
+  },
+  {
+    "dutch": "rolstoel, de",
+    "english": "wheelchair, the",
+    "vietnamese": "xe lăn",
+    "dutchsentence": "Hij zit al jaren in een rolstoel.",
+    "englishtranslate": "He has been in a wheelchair for years.",
+    "pronunciation": { "ipa": "ˈrɔlstul", "phonetic": "rol-stool" }
+  },
+  {
+    "dutch": "rondje, het",
+    "english": "round, the",
+    "vietnamese": "một vòng",
+    "dutchsentence": "Laten we nog een rondje door het park lopen.",
+    "englishtranslate": "Let's walk one more round through the park.",
+    "pronunciation": { "ipa": "ˈrɔntjə", "phonetic": "ront-yuh" }
+  },
+  {
+    "dutch": "rust, de",
+    "english": "half-time, intermission, the",
+    "vietnamese": "giờ nghỉ giải lao, sự yên tĩnh",
+    "dutchsentence": "Tijdens de rust dronken we een kopje thee.",
+    "englishtranslate": "During half-time we drank a cup of tea.",
+    "pronunciation": { "ipa": "rʏst", "phonetic": "rust" }
+  },
+  {
+    "dutch": "schoppen",
+    "english": "to kick",
+    "vietnamese": "đá",
+    "dutchsentence": "Je mag niet schoppen tegen de deur.",
+    "englishtranslate": "You are not allowed to kick the door.",
+    "pronunciation": { "ipa": "ˈsχɔpə(n)", "phonetic": "skhop-un" }
+  },
+  {
+    "dutch": "schouder, de",
+    "english": "shoulder, the",
+    "vietnamese": "cái vai",
+    "dutchsentence": "Hij draagt de tas over zijn schouder.",
+    "englishtranslate": "He carries the bag over his shoulder.",
+    "pronunciation": { "ipa": "ˈsχʌudər", "phonetic": "skhow-dur" }
+  },
+  {
+    "dutch": "smoesje, het",
+    "english": "excuse, the",
+    "vietnamese": "lời bào chữa, cớ",
+    "dutchsentence": "Bedenk geen smoesjes, kom gewoon!",
+    "englishtranslate": "Don't make excuses, just come!",
+    "pronunciation": { "ipa": "ˈsmusjə", "phonetic": "smoos-yuh" }
+  },
+  {
+    "dutch": "spier, de",
+    "english": "muscle, the",
+    "vietnamese": "cơ bắp",
+    "dutchsentence": "Ik heb spierpijn na het sporten.",
+    "englishtranslate": "I have muscle pain after exercising.",
+    "pronunciation": { "ipa": "spir", "phonetic": "speer" }
+  },
+  {
+    "dutch": "sporter, de",
+    "english": "athlete, the",
+    "vietnamese": "người tập thể thao",
+    "dutchsentence": "Zij is een zeer gemotiveerde sporter.",
+    "englishtranslate": "She is a very motivated athlete.",
+    "pronunciation": { "ipa": "ˈspɔrtər", "phonetic": "spor-tur" }
+  },
+  {
+    "dutch": "sportschool, de",
+    "english": "gym, the",
+    "vietnamese": "phòng tập gym",
+    "dutchsentence": "Ik ga drie keer per week naar de sportschool.",
+    "englishtranslate": "I go to the gym three times a week.",
+    "pronunciation": { "ipa": "ˈspɔrtsxoːl", "phonetic": "sport-skhoal" }
+  },
+  {
+    "dutch": "spreiden",
+    "english": "to spread",
+    "vietnamese": "dang ra, trải ra",
+    "dutchsentence": "Spreid je benen een klein beetje.",
+    "englishtranslate": "Spread your legs a little bit.",
+    "pronunciation": { "ipa": "ˈsprɛidə(n)", "phonetic": "spry-dun" }
+  },
+  {
+    "dutch": "springen",
+    "english": "to jump",
+    "vietnamese": "nhảy",
+    "dutchsentence": "Kinderen springen graag in de plassen.",
+    "englishtranslate": "Children love jumping in puddles.",
+    "pronunciation": { "ipa": "ˈsprɪŋə(n)", "phonetic": "spring-un" }
+  },
+  {
+    "dutch": "sprint, de",
+    "english": "sprint, the",
+    "vietnamese": "chạy nước rút",
+    "dutchsentence": "Hij won de wedstrijd met een snelle sprint.",
+    "englishtranslate": "He won the match with a fast sprint.",
+    "pronunciation": { "ipa": "sprɪnt", "phonetic": "sprint" }
+  },
+  {
+    "dutch": "sprong, de",
+    "english": "jump, the",
+    "vietnamese": "cú nhảy",
+    "dutchsentence": "Dat was een erg hoge sprong.",
+    "englishtranslate": "That was a very high jump.",
+    "pronunciation": { "ipa": "sprɔŋ", "phonetic": "sprong" }
+  },
+  {
+    "dutch": "startplaats, de",
+    "english": "starting point, the",
+    "vietnamese": "điểm xuất phát",
+    "dutchsentence": "Verzamel bij de startplaats om negen uur.",
+    "englishtranslate": "Gather at the starting point at nine o'clock.",
+    "pronunciation": { "ipa": "ˈstɑrtplaːts", "phonetic": "start-plaats" }
+  },
+  {
+    "dutch": "sterk",
+    "english": "strong",
+    "vietnamese": "mạnh mẽ",
+    "dutchsentence": "Zij is erg sterk voor haar leeftijd.",
+    "englishtranslate": "She is very strong for her age.",
+    "pronunciation": { "ipa": "stɛrk", "phonetic": "sterk" }
+  },
+  {
+    "dutch": "stoppen",
+    "english": "to stop",
+    "vietnamese": "dừng lại",
+    "dutchsentence": "Je moet stoppen bij het rode licht.",
+    "englishtranslate": "You must stop at the red light.",
+    "pronunciation": { "ipa": "ˈstɔpə(n)", "phonetic": "stop-un" }
+  },
+  {
+    "dutch": "strekken",
+    "english": "to stretch",
+    "vietnamese": "duỗi ra",
+    "dutchsentence": "Strek je armen zo ver mogelijk.",
+    "englishtranslate": "Stretch your arms as far as possible.",
+    "pronunciation": { "ipa": "ˈstrɛkə(n)", "phonetic": "strek-un" }
+  },
+  {
+    "dutch": "stuk, het",
+    "english": "piece, the",
+    "vietnamese": "mảnh, đoạn",
+    "dutchsentence": "Ik wil graag een stukje taart.",
+    "englishtranslate": "I would like a piece of cake.",
+    "pronunciation": { "ipa": "stʏk", "phonetic": "stuk" }
+  },
+  {
+    "dutch": "tennisbaan, de",
+    "english": "tennis court, the",
+    "vietnamese": "sân tennis",
+    "dutchsentence": "De tennisbaan is helaas bezet.",
+    "englishtranslate": "The tennis court is unfortunately occupied.",
+    "pronunciation": { "ipa": "ˈtɛnɪsbaːn", "phonetic": "ten-is-baan" }
+  },
+  {
+    "dutch": "tennistoernooi, het",
+    "english": "tennis event, tournament, the",
+    "vietnamese": "giải đấu tennis",
+    "dutchsentence": "Zij doet mee aan het jaarlijkse tennistoernooi.",
+    "englishtranslate": "She is participating in the annual tennis tournament.",
+    "pronunciation": { "ipa": "ˈtɛnɪsturˌnuːi", "phonetic": "ten-is-toor-nooy" }
+  },
+  {
+    "dutch": "toekomst, de",
+    "english": "future, the",
+    "vietnamese": "tương lai",
+    "dutchsentence": "Niemand weet wat de toekomst brengt.",
+    "englishtranslate": "No one knows what the future brings.",
+    "pronunciation": { "ipa": "ˈtukɔmst", "phonetic": "too-komst" }
+  },
+  {
+    "dutch": "top, de",
+    "english": "top, the",
+    "vietnamese": "đỉnh, ngọn",
+    "dutchsentence": "We hebben eindelijk de top bereikt.",
+    "englishtranslate": "We finally reached the top.",
+    "pronunciation": { "ipa": "tɔp", "phonetic": "top" }
+  },
+  {
+    "dutch": "trainen",
+    "english": "to train",
+    "vietnamese": "huấn luyện, tập luyện",
+    "dutchsentence": "Ik train drie keer per week.",
+    "englishtranslate": "I train three times a week.",
+    "pronunciation": { "ipa": "ˈtreːnə(n)", "phonetic": "tray-nun" }
+  },
+  {
+    "dutch": "uiteindelijk",
+    "english": "finally",
+    "vietnamese": "cuối cùng thì",
+    "dutchsentence": "Uiteindelijk is alles goed gekomen.",
+    "englishtranslate": "In the end, everything turned out fine.",
+    "pronunciation": { "ipa": "ˌœytənˈdɛilək", "phonetic": "ouyt-un-day-luk" }
+  },
+  {
+    "dutch": "uitspreken",
+    "english": "to pronounce",
+    "vietnamese": "phát âm",
+    "dutchsentence": "Hoe moet ik dit woord uitspreken?",
+    "englishtranslate": "How should I pronounce this word?",
+    "pronunciation": { "ipa": "ˈœytspreːkə(n)", "phonetic": "ouyt-spray-kun" }
+  },
+  {
+    "dutch": "vanwege",
+    "english": "because of",
+    "vietnamese": "bởi vì, do",
+    "dutchsentence": "Vanwege de regen gaan we niet naar buiten.",
+    "englishtranslate": "Because of the rain we are not going outside.",
+    "pronunciation": { "ipa": "vɑnˈʋeːɣə", "phonetic": "van-way-khuh" }
+  },
+  {
+    "dutch": "vasthouden",
+    "english": "to hold on to",
+    "vietnamese": "giữ lấy, cầm lấy",
+    "dutchsentence": "Houd de leuning goed vast.",
+    "englishtranslate": "Hold on tight to the railing.",
+    "pronunciation": { "ipa": "ˈvɑstɦʌudə(n)", "phonetic": "vast-how-dun" }
+  },
+  {
+    "dutch": "verbaasd",
+    "english": "surprised",
+    "vietnamese": "ngạc nhiên",
+    "dutchsentence": "Ik was erg verbaasd over het nieuws.",
+    "englishtranslate": "I was very surprised by the news.",
+    "pronunciation": { "ipa": "vərˈbaːst", "phonetic": "vur-baast" }
+  },
+  {
+    "dutch": "vereniging, de",
+    "english": "club, association, the",
+    "vietnamese": "hiệp hội, câu lạc bộ",
+    "dutchsentence": "Hij is lid van de lokale voetbalvereniging.",
+    "englishtranslate": "He is a member of the local soccer association.",
+    "pronunciation": { "ipa": "vərˈeːnəɣɪŋ", "phonetic": "vur-ay-nuh-khing" }
+  },
+  {
+    "dutch": "verliezen",
+    "english": "to lose",
+    "vietnamese": "thua, đánh mất",
+    "dutchsentence": "Niemand vindt het leuk om te verliezen.",
+    "englishtranslate": "Nobody likes to lose.",
+    "pronunciation": { "ipa": "vərˈlizə(n)", "phonetic": "vur-lee-zun" }
+  },
+  {
+    "dutch": "verrassing, de",
+    "english": "surprise, the",
+    "vietnamese": "sự bất ngờ",
+    "dutchsentence": "Dat was een leuke verrassing voor mijn verjaardag.",
+    "englishtranslate": "That was a nice surprise for my birthday.",
+    "pronunciation": { "ipa": "vərˈɑsɪŋ", "phonetic": "vur-ah-sing" }
+  },
+  {
+    "dutch": "verstandig",
+    "english": "wise, smart",
+    "vietnamese": "khôn ngoan, sáng suốt",
+    "dutchsentence": "Het is verstandig om goed uit te rusten.",
+    "englishtranslate": "It is wise to rest well.",
+    "pronunciation": { "ipa": "vərˈstɑndəx", "phonetic": "vur-stan-dukh" }
+  },
+  {
+    "dutch": "vinger, de",
+    "english": "finger, the",
+    "vietnamese": "ngón tay",
+    "dutchsentence": "Ik heb in mijn vinger gesneden.",
+    "englishtranslate": "I cut my finger.",
+    "pronunciation": { "ipa": "ˈvɪŋər", "phonetic": "ving-ur" }
+  },
+  {
+    "dutch": "voetbalkampioen, de",
+    "english": "soccer champion, the",
+    "vietnamese": "nhà vô địch bóng đá",
+    "dutchsentence": "Zij zijn de nieuwe voetbalkampioen van de regio.",
+    "englishtranslate": "They are the new soccer champions of the region.",
+    "pronunciation": { "ipa": "ˈvutbɑlkɑmˌpijun", "phonetic": "voot-bal-kam-pyoon" }
+  },
+  {
+    "dutch": "voetbalveld, het",
+    "english": "soccer pitch, football field, the",
+    "vietnamese": "sân bóng đá",
+    "dutchsentence": "Het voetbalveld is bedekt met sneeuw.",
+    "englishtranslate": "The soccer field is covered with snow.",
+    "pronunciation": { "ipa": "ˈvutbɑlvɛlt", "phonetic": "voot-bal-velt" }
+  },
+  {
+    "dutch": "volhouden",
+    "english": "to carry on, continue, endure",
+    "vietnamese": "kiên trì, chịu đựng",
+    "dutchsentence": "Nog even volhouden, we zijn er bijna!",
+    "englishtranslate": "Keep going a bit longer, we are almost there!",
+    "pronunciation": { "ipa": "ˈvɔlɦʌudə(n)", "phonetic": "vol-how-dun" }
+  },
+  {
+    "dutch": "voorbij",
+    "english": "over, past",
+    "vietnamese": "trôi qua, kết thúc",
+    "dutchsentence": "De vakantie is helaas weer voorbij.",
+    "englishtranslate": "The holiday is unfortunately over again.",
+    "pronunciation": { "ipa": "voːrˈbɛi", "phonetic": "voar-by" }
+  },
+  {
+    "dutch": "voordoen",
+    "english": "to show, demonstrate",
+    "vietnamese": "làm mẫu",
+    "dutchsentence": "De coach gaat de oefening eerst voordoen.",
+    "englishtranslate": "The coach is going to demonstrate the exercise first.",
+    "pronunciation": { "ipa": "ˈvoːrdun", "phonetic": "voar-doon" }
+  },
+  {
+    "dutch": "voornamelijk",
+    "english": "mainly",
+    "vietnamese": "chủ yếu là",
+    "dutchsentence": "Het boek gaat voornamelijk over geschiedenis.",
+    "englishtranslate": "The book is mainly about history.",
+    "pronunciation": { "ipa": "voːrˈnaːmələk", "phonetic": "voar-naa-muh-luk" }
+  },
+  {
+    "dutch": "vriendelijk",
+    "english": "friendly",
+    "vietnamese": "thân thiện",
+    "dutchsentence": "Hij gaf ons een vriendelijke glimlach.",
+    "englishtranslate": "He gave us a friendly smile.",
+    "pronunciation": { "ipa": "ˈvritndələk", "phonetic": "vreen-duh-luk" }
+  },
+  {
+    "dutch": "wedstrijd, de",
+    "english": "match, game, the",
+    "vietnamese": "trận đấu",
+    "dutchsentence": "Heb je de wedstrijd van gisteren gezien?",
+    "englishtranslate": "Did you see yesterday's match?",
+    "pronunciation": { "ipa": "ˈʋɛtstrɛit", "phonetic": "wet-stryt" }
+  },
+  {
+    "dutch": "wereld, de",
+    "english": "world, the",
+    "vietnamese": "thế giới",
+    "dutchsentence": "Zij wil graag de hele wereld zien.",
+    "englishtranslate": "She would like to see the whole world.",
+    "pronunciation": { "ipa": "ˈʋeːrəlt", "phonetic": "way-rult" }
+  },
+  {
+    "dutch": "winnen",
+    "english": "to win",
+    "vietnamese": "chiến thắng",
+    "dutchsentence": "Wij hopen dit toernooi te winnen.",
+    "englishtranslate": "We hope to win this tournament.",
+    "pronunciation": { "ipa": "ˈʋɪnə(n)", "phonetic": "win-un" }
+  },
+  {
+    "dutch": "zandbed, het",
+    "english": "stretch of sand, sand bed, the",
+    "vietnamese": "hố cát (để nhảy xa)",
+    "dutchsentence": "De atleet landde midden in het zandbed.",
+    "englishtranslate": "The athlete landed in the middle of the sand bed.",
+    "pronunciation": { "ipa": "ˈzɑntbɛt", "phonetic": "zant-bet" }
+  },
+  {
+    "dutch": "zuchten",
+    "english": "to sigh",
+    "vietnamese": "thở dài",
+    "dutchsentence": "Hij zuchtte diep na het horen van het nieuws.",
+    "englishtranslate": "He sighed deeply after hearing the news.",
+    "pronunciation": { "ipa": "ˈzʏχtə(n)", "phonetic": "zukh-tun" }
+  },
+  {
+    "dutch": "zwaarte, de",
+    "english": "heaviness, severity, the",
+    "vietnamese": "sự nặng nề, độ khó",
+    "dutchsentence": "De zwaarte van de training viel hem tegen.",
+    "englishtranslate": "The severity of the training was worse than he expected.",
+    "pronunciation": { "ipa": "ˈzʋaːrtə", "phonetic": "zwaar-tuh" }
+  }
+]

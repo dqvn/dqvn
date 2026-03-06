@@ -1,0 +1,682 @@
+[
+  {
+    "dutch": "aangaan",
+    "english": "to start (a relationship)",
+    "vietnamese": "bắt đầu (một mối quan hệ)",
+    "dutchsentence": "Zij besloten samen een relatie aan te gaan.",
+    "englishtranslate": "They decided to enter into a relationship together.",
+    "pronunciation": { "ipa": "ˈaːnˌɣaːn", "phonetic": "aan-khaan" }
+  },
+  {
+    "dutch": "actief",
+    "english": "active, actively",
+    "vietnamese": "năng động, tích cực",
+    "dutchsentence": "Hij is erg actief op zoek naar een nieuwe partner.",
+    "englishtranslate": "He is very actively looking for a new partner.",
+    "pronunciation": { "ipa": "ɑkˈtif", "phonetic": "ak-teef" }
+  },
+  {
+    "dutch": "alleen",
+    "english": "alone",
+    "vietnamese": "một mình",
+    "dutchsentence": "Ik ben liever alleen dan bij de verkeerde persoon.",
+    "englishtranslate": "I'd rather be alone than with the wrong person.",
+    "pronunciation": { "ipa": "ɑˈleːn", "phonetic": "ah-layn" }
+  },
+  {
+    "dutch": "automatisch",
+    "english": "automatically",
+    "vietnamese": "tự động",
+    "dutchsentence": "Ik begin automatisch te lachen als ik hem zie.",
+    "englishtranslate": "I automatically start laughing when I see him.",
+    "pronunciation": { "ipa": "ˌʌutoːˈmaːtis", "phonetic": "ow-to-maa-tis" }
+  },
+  {
+    "dutch": "beide",
+    "english": "both",
+    "vietnamese": "cả hai",
+    "dutchsentence": "Ze zijn beide erg gelukkig met de baby.",
+    "englishtranslate": "They are both very happy with the baby.",
+    "pronunciation": { "ipa": "ˈbɛidə", "phonetic": "by-duh" }
+  },
+  {
+    "dutch": "bezig zijn",
+    "english": "to be doing something",
+    "vietnamese": "đang bận làm gì đó",
+    "dutchsentence": "Ik ben even bezig met het huishouden.",
+    "englishtranslate": "I am busy with the housework for a moment.",
+    "pronunciation": { "ipa": "ˈbeːzəx ˈzɛin", "phonetic": "bay-zukh zyn" }
+  },
+  {
+    "dutch": "blozen",
+    "english": "to blush",
+    "vietnamese": "đỏ mặt (vì ngượng)",
+    "dutchsentence": "Zij begon te blozen toen hij haar een compliment gaf.",
+    "englishtranslate": "She started to blush when he gave her a compliment.",
+    "pronunciation": { "ipa": "ˈbloːzə(n)", "phonetic": "blo-zun" }
+  },
+  {
+    "dutch": "breken",
+    "english": "to break",
+    "vietnamese": "làm vỡ, làm gãy",
+    "dutchsentence": "Je kunt mijn hart niet zomaar breken.",
+    "englishtranslate": "You can't just break my heart like that.",
+    "pronunciation": { "ipa": "ˈbreːkə(n)", "phonetic": "bray-kun" }
+  },
+  {
+    "dutch": "buurmeisje, het",
+    "english": "girl next door, the",
+    "vietnamese": "cô bé hàng xóm",
+    "dutchsentence": "Mijn buurmeisje is mijn beste vriendin.",
+    "englishtranslate": "The girl next door is my best friend.",
+    "pronunciation": { "ipa": "ˈbyːrmɛisjə", "phonetic": "buur-mys-yuh" }
+  },
+  {
+    "dutch": "compliment, het",
+    "english": "compliment, the",
+    "vietnamese": "lời khen",
+    "dutchsentence": "Wat een lief compliment!",
+    "englishtranslate": "What a sweet compliment!",
+    "pronunciation": { "ipa": "ˌkɔmpliˈmɛnt", "phonetic": "kom-plee-ment" }
+  },
+  {
+    "dutch": "definitief",
+    "english": "final, forever",
+    "vietnamese": "vĩnh viễn, cuối cùng",
+    "dutchsentence": "De breuk tussen hen is nu definitief.",
+    "englishtranslate": "The breakup between them is now final.",
+    "pronunciation": { "ipa": "ˌdeːfiniˈtif", "phonetic": "day-fee-nee-teef" }
+  },
+  {
+    "dutch": "durven",
+    "english": "to dare",
+    "vietnamese": "dám",
+    "dutchsentence": "Ik durf hem niet mee uit te vragen.",
+    "englishtranslate": "I don't dare to ask him out.",
+    "pronunciation": { "ipa": "ˈdʏrvə(n)", "phonetic": "dur-vun" }
+  },
+  {
+    "dutch": "elkaar",
+    "english": "each other",
+    "vietnamese": "nhau",
+    "dutchsentence": "Zij houden erg veel van elkaar.",
+    "englishtranslate": "They love each other very much.",
+    "pronunciation": { "ipa": "ɛlˈkaːr", "phonetic": "el-kaar" }
+  },
+  {
+    "dutch": "erkennen",
+    "english": "to acknowledge, recognize",
+    "vietnamese": "thừa nhận, công nhận",
+    "dutchsentence": "De vader wil zijn kind officieel erkennen.",
+    "englishtranslate": "The father wants to officially acknowledge his child.",
+    "pronunciation": { "ipa": "ɛrˈkɛnə(n)", "phonetic": "er-ken-un" }
+  },
+  {
+    "dutch": "erkenning, de",
+    "english": "acknowledgement, the",
+    "vietnamese": "sự công nhận",
+    "dutchsentence": "Zij zoekt erkenning voor haar werk.",
+    "englishtranslate": "She is looking for recognition for her work.",
+    "pronunciation": { "ipa": "ɛrˈkɛnɪŋ", "phonetic": "er-ken-ing" }
+  },
+  {
+    "dutch": "ex, de",
+    "english": "ex, the",
+    "vietnamese": "người yêu cũ",
+    "dutchsentence": "Ik zag mijn ex gisteren in de stad.",
+    "englishtranslate": "I saw my ex in town yesterday.",
+    "pronunciation": { "ipa": "ɛks", "phonetic": "eks" }
+  },
+  {
+    "dutch": "fantaseren",
+    "english": "to fantasize",
+    "vietnamese": "mơ mộng, tưởng tượng",
+    "dutchsentence": "Zij fantaseert over een bruiloft op het strand.",
+    "englishtranslate": "She fantasizes about a wedding on the beach.",
+    "pronunciation": { "ipa": "fɑntɑˈzeːrə(n)", "phonetic": "fan-tah-zay-run" }
+  },
+  {
+    "dutch": "figuur, het",
+    "english": "figure, the",
+    "vietnamese": "vóc dáng",
+    "dutchsentence": "Zij heeft een prachtig figuur.",
+    "englishtranslate": "She has a beautiful figure.",
+    "pronunciation": { "ipa": "fiˈɣyːr", "phonetic": "fee-khuur" }
+  },
+  {
+    "dutch": "flauw",
+    "english": "bland, silly",
+    "vietnamese": "nhạt nhẽo, ngớ ngẩn",
+    "dutchsentence": "Doe niet zo flauw, vertel het me!",
+    "englishtranslate": "Don't be so silly, tell me!",
+    "pronunciation": { "ipa": "flʌu", "phonetic": "flow" }
+  },
+  {
+    "dutch": "geloven",
+    "english": "to believe",
+    "vietnamese": "tin tưởng",
+    "dutchsentence": "Ik geloof dat zij de ware voor hem is.",
+    "englishtranslate": "I believe she is the one for him.",
+    "pronunciation": { "ipa": "ɣəˈloːvə(n)", "phonetic": "khuh-lo-vun" }
+  },
+  {
+    "dutch": "gemeente, de",
+    "english": "municipality, the",
+    "vietnamese": "chính quyền địa phương/xã",
+    "dutchsentence": "We moeten naar de gemeente voor de papieren.",
+    "englishtranslate": "We need to go to the municipality for the papers.",
+    "pronunciation": { "ipa": "ɣəˈmeːntə", "phonetic": "khuh-mayn-tuh" }
+  },
+  {
+    "dutch": "geregistreerd partnerschap, het",
+    "english": "registered partnership, the",
+    "vietnamese": "quan hệ đối tác đã đăng ký",
+    "dutchsentence": "Zij hebben gekozen voor een geregistreerd partnerschap.",
+    "englishtranslate": "They opted for a registered partnership.",
+    "pronunciation": { "ipa": "ɣəˌreːɣɪˈstreːrt ˈpɑrtnərsχɑp", "phonetic": "khuh-ray-khis-trayrt part-nur-skhap" }
+  },
+  {
+    "dutch": "geslacht, het",
+    "english": "sex, gender, the",
+    "vietnamese": "giới tính",
+    "dutchsentence": "Weten jullie het geslacht van de baby al?",
+    "englishtranslate": "Do you already know the sex of the baby?",
+    "pronunciation": { "ipa": "ɣəˈslɑxt", "phonetic": "khuh-slakht" }
+  },
+  {
+    "dutch": "glimlachen",
+    "english": "to smile",
+    "vietnamese": "mỉm cười",
+    "dutchsentence": "Hij glimlachte vriendelijk naar haar.",
+    "englishtranslate": "He smiled kindly at her.",
+    "pronunciation": { "ipa": "ˈɣlɪmlɑχə(n)", "phonetic": "khlim-lah-khun" }
+  },
+  {
+    "dutch": "grapje, het",
+    "english": "joke, the",
+    "vietnamese": "lời nói đùa",
+    "dutchsentence": "Het was maar een grapje!",
+    "englishtranslate": "It was just a joke!",
+    "pronunciation": { "ipa": "ˈɣrɑpjə", "phonetic": "khrap-yuh" }
+  },
+  {
+    "dutch": "hartklopping, de",
+    "english": "heart fluttering, the",
+    "vietnamese": "sự hồi hộp, trống ngực",
+    "dutchsentence": "Ik krijg hartkloppingen als ik hem zie.",
+    "englishtranslate": "I get heart palpitations when I see him.",
+    "pronunciation": { "ipa": "ˈɦɑrtklɔpɪŋ", "phonetic": "hart-klop-ing" }
+  },
+  {
+    "dutch": "het is aan",
+    "english": "it is an ‘item’, they are dating",
+    "vietnamese": "họ đang quen nhau",
+    "dutchsentence": "Heb je het gehoord? Het is aan tussen die twee!",
+    "englishtranslate": "Did you hear? Those two are dating now!",
+    "pronunciation": { "ipa": "ɦɛt ɪs aːn", "phonetic": "het is aan" }
+  },
+  {
+    "dutch": "hitte, de",
+    "english": "heat, the",
+    "vietnamese": "cơn nóng",
+    "dutchsentence": "In deze hitte gaan we lekker zwemmen.",
+    "englishtranslate": "In this heat, we're going for a nice swim.",
+    "pronunciation": { "ipa": "ˈɦɪtə", "phonetic": "hit-uh" }
+  },
+  {
+    "dutch": "homohuwelijk, het",
+    "english": "gay marriage, the",
+    "vietnamese": "hôn nhân đồng giới",
+    "dutchsentence": "Nederland was de eerste met het homohuwelijk.",
+    "englishtranslate": "The Netherlands was the first with gay marriage.",
+    "pronunciation": { "ipa": "ˈɦoːmoːˌɦyʋələk", "phonetic": "ho-mo-huu-vuh-luk" }
+  },
+  {
+    "dutch": "homoseksueel",
+    "english": "homosexual",
+    "vietnamese": "người đồng tính nam",
+    "dutchsentence": "Zijn broer is homoseksueel.",
+    "englishtranslate": "His brother is homosexual.",
+    "pronunciation": { "ipa": "ˌɦoːmoːsɛksyˈʋeːl", "phonetic": "ho-mo-sek-su-wayl" }
+  },
+  {
+    "dutch": "hopeloos",
+    "english": "hopeless",
+    "vietnamese": "vô vọng",
+    "dutchsentence": "Ik ben hopeloos verliefd.",
+    "englishtranslate": "I am hopelessly in love.",
+    "pronunciation": { "ipa": "ˈɦoːpəloːs", "phonetic": "ho-puh-loas" }
+  },
+  {
+    "dutch": "huilen",
+    "english": "to cry",
+    "vietnamese": "khóc",
+    "dutchsentence": "Moest je huilen bij die zielige film?",
+    "englishtranslate": "Did you have to cry during that sad movie?",
+    "pronunciation": { "ipa": "ˈɦœylə(n)", "phonetic": "houy-lun" }
+  },
+  {
+    "dutch": "huisgenoot, de",
+    "english": "housemate, the",
+    "vietnamese": "người cùng nhà",
+    "dutchsentence": "Ik woon samen met drie huisgenoten.",
+    "englishtranslate": "I live together with three housemates.",
+    "pronunciation": { "ipa": "ˈɦœysɣəˌnoːt", "phonetic": "houys-khuh-noat" }
+  },
+  {
+    "dutch": "huwelijk, het",
+    "english": "marriage, the",
+    "vietnamese": "hôn nhân",
+    "dutchsentence": "Hun huwelijk duurt al veertig jaar.",
+    "englishtranslate": "Their marriage has lasted for forty years.",
+    "pronunciation": { "ipa": "ˈɦyʋələk", "phonetic": "huu-vuh-luk" }
+  },
+  {
+    "dutch": "huwelijkscontract, het",
+    "english": "marriage contract, the",
+    "vietnamese": "hợp đồng hôn nhân",
+    "dutchsentence": "Zij lieten een huwelijkscontract opstellen.",
+    "englishtranslate": "They had a marriage contract drawn up.",
+    "pronunciation": { "ipa": "ˈɦyʋələkskɔntrɑkt", "phonetic": "huu-vuh-luks-kon-trakt" }
+  },
+  {
+    "dutch": "ijssalon, de",
+    "english": "ice-cream parlour, the",
+    "vietnamese": "tiệm kem",
+    "dutchsentence": "Zullen we een ijsje halen bij de ijssalon?",
+    "englishtranslate": "Shall we get an ice cream at the ice cream parlor?",
+    "pronunciation": { "ipa": "ˈɛissɑˌlɔn", "phonetic": "ys-sah-lon" }
+  },
+  {
+    "dutch": "jammer",
+    "english": "what a pity, too bad",
+    "vietnamese": "thật đáng tiếc",
+    "dutchsentence": "Jammer dat je niet kunt komen.",
+    "englishtranslate": "Too bad you can't come.",
+    "pronunciation": { "ipa": "ˈjɑmər", "phonetic": "yam-ur" }
+  },
+  {
+    "dutch": "juichen",
+    "english": "to cheer",
+    "vietnamese": "reo hò",
+    "dutchsentence": "Het publiek begon te juichen bij het doelpunt.",
+    "englishtranslate": "The crowd started to cheer at the goal.",
+    "pronunciation": { "ipa": "ˈjœyχə(n)", "phonetic": "youy-khun" }
+  },
+  {
+    "dutch": "kapsel, het",
+    "english": "hair style, the",
+    "vietnamese": "kiểu tóc",
+    "dutchsentence": "Wat een leuk nieuw kapsel heb je!",
+    "englishtranslate": "What a nice new hairstyle you have!",
+    "pronunciation": { "ipa": "ˈkɑpsəl", "phonetic": "kap-sul" }
+  },
+  {
+    "dutch": "kolom, de",
+    "english": "column, the",
+    "vietnamese": "cột (báo, bảng)",
+    "dutchsentence": "Vul je gegevens in de tweede kolom in.",
+    "englishtranslate": "Fill in your details in the second column.",
+    "pronunciation": { "ipa": "koːˈlɔm", "phonetic": "ko-lom" }
+  },
+  {
+    "dutch": "kussen",
+    "english": "to kiss, pillow",
+    "vietnamese": "hôn, cái gối",
+    "dutchsentence": "Zij kusten elkaar bij het afscheid.",
+    "englishtranslate": "They kissed each other when saying goodbye.",
+    "pronunciation": { "ipa": "ˈkʏsə(n)", "phonetic": "kus-un" }
+  },
+  {
+    "dutch": "lieverd, de",
+    "english": "darling, the",
+    "vietnamese": "người yêu quý",
+    "dutchsentence": "Dank je wel, lieverd!",
+    "englishtranslate": "Thank you, darling!",
+    "pronunciation": { "ipa": "ˈlivərt", "phonetic": "lee-vurt" }
+  },
+  {
+    "dutch": "missen",
+    "english": "to miss",
+    "vietnamese": "nhớ, bỏ lỡ",
+    "dutchsentence": "Ik mis mijn familie in Vietnam.",
+    "englishtranslate": "I miss my family in Vietnam.",
+    "pronunciation": { "ipa": "ˈmɪsə(n)", "phonetic": "mis-un" }
+  },
+  {
+    "dutch": "namelijk",
+    "english": "namely, because",
+    "vietnamese": "cụ thể là",
+    "dutchsentence": "Hij kan niet komen, hij is namelijk ziek.",
+    "englishtranslate": "He can't come; he is sick, you see.",
+    "pronunciation": { "ipa": "ˈnaːmələk", "phonetic": "naa-muh-luk" }
+  },
+  {
+    "dutch": "net",
+    "english": "just, neat",
+    "vietnamese": "vừa mới, ngăn nắp",
+    "dutchsentence": "Ik heb hem net aan de telefoon gehad.",
+    "englishtranslate": "I just had him on the phone.",
+    "pronunciation": { "ipa": "nɛt", "phonetic": "net" }
+  },
+  {
+    "dutch": "officieel",
+    "english": "officially",
+    "vietnamese": "chính thức",
+    "dutchsentence": "Vanaf vandaag zijn wij officieel getrouwd.",
+    "englishtranslate": "As of today, we are officially married.",
+    "pronunciation": { "ipa": "ˌɔfiˈʃeːl", "phonetic": "o-fee-shayl" }
+  },
+  {
+    "dutch": "ontmoeten",
+    "english": "to meet",
+    "vietnamese": "gặp gỡ",
+    "dutchsentence": "Waar hebben jullie elkaar ontmoet?",
+    "englishtranslate": "Where did you two meet?",
+    "pronunciation": { "ipa": "ɔntˈmutə(n)", "phonetic": "ont-moo-tun" }
+  },
+  {
+    "dutch": "over en uit",
+    "english": "all over, finished",
+    "vietnamese": "kết thúc hoàn toàn",
+    "dutchsentence": "Tussen ons is het nu echt over en uit.",
+    "englishtranslate": "Between us, it's really over and done with now.",
+    "pronunciation": { "ipa": "ˈoːvər ɛn ˈœyt", "phonetic": "o-vur en ouyt" }
+  },
+  {
+    "dutch": "overdrijven",
+    "english": "to exaggerate",
+    "vietnamese": "nói quá, phóng đại",
+    "dutchsentence": "Je moet niet zo overdrijven, het valt wel mee.",
+    "englishtranslate": "You shouldn't exaggerate so much; it's not that bad.",
+    "pronunciation": { "ipa": "ˌoːvərˈdrɛivə(n)", "phonetic": "o-vur-dry-vun" }
+  },
+  {
+    "dutch": "partner, de",
+    "english": "partner, the",
+    "vietnamese": "bạn đời, cộng sự",
+    "dutchsentence": "Mijn partner werkt ook in het ziekenhuis.",
+    "englishtranslate": "My partner also works at the hospital.",
+    "pronunciation": { "ipa": "ˈpɑrtnər", "phonetic": "part-nur" }
+  },
+  {
+    "dutch": "persoonlijk",
+    "english": "personal, personally",
+    "vietnamese": "cá nhân",
+    "dutchsentence": "Dat is een persoonlijke vraag.",
+    "englishtranslate": "That is a personal question.",
+    "pronunciation": { "ipa": "pɛrˈsoːnlək", "phonetic": "per-soan-luk" }
+  },
+  {
+    "dutch": "protestants",
+    "english": "Protestant",
+    "vietnamese": "đạo Tin Lành",
+    "dutchsentence": "Zij zijn in een protestantse kerk getrouwd.",
+    "englishtranslate": "They got married in a Protestant church.",
+    "pronunciation": { "ipa": "proːtɛsˈtɑnts", "phonetic": "pro-tes-tants" }
+  },
+  {
+    "dutch": "reageren",
+    "english": "to react, respond",
+    "vietnamese": "phản ứng, trả lời",
+    "dutchsentence": "Hij reageerde niet op mijn bericht.",
+    "englishtranslate": "He didn't respond to my message.",
+    "pronunciation": { "ipa": "reːjaːˈɣeːrə(n)", "phonetic": "ray-yaa-khay-run" }
+  },
+  {
+    "dutch": "regelen",
+    "english": "to arrange, fix",
+    "vietnamese": "sắp xếp, giải quyết",
+    "dutchsentence": "We moeten de bruiloft nog regelen.",
+    "englishtranslate": "We still need to arrange the wedding.",
+    "pronunciation": { "ipa": "ˈreːɣələ(n)", "phonetic": "ray-khuh-lun" }
+  },
+  {
+    "dutch": "relatie, de",
+    "english": "relationship, the",
+    "vietnamese": "mối quan hệ",
+    "dutchsentence": "Zij hebben een hele goede relatie.",
+    "englishtranslate": "They have a very good relationship.",
+    "pronunciation": { "ipa": "reːˈlaːtsi", "phonetic": "ray-laa-tsee" }
+  },
+  {
+    "dutch": "rot",
+    "english": "bad, rotten",
+    "vietnamese": "tồi tệ, thối rữa",
+    "dutchsentence": "Ik voel me echt rot vandaag.",
+    "englishtranslate": "I feel really rotten today.",
+    "pronunciation": { "ipa": "rɔt", "phonetic": "rot" }
+  },
+  {
+    "dutch": "rotstreek, de",
+    "english": "dirty trick, the",
+    "vietnamese": "chiêu trò bẩn thỉu",
+    "dutchsentence": "Dat was een gemene rotstreek van hem.",
+    "englishtranslate": "That was a mean dirty trick of his.",
+    "pronunciation": { "ipa": "ˈrɔtstreːk", "phonetic": "rot-strayk" }
+  },
+  {
+    "dutch": "ruziemaken",
+    "english": "to fight, argue",
+    "vietnamese": "cãi nhau",
+    "dutchsentence": "Zij maken vaak ruzie over geld.",
+    "englishtranslate": "They often argue about money.",
+    "pronunciation": { "ipa": "ˈryzimaːkə(n)", "phonetic": "ruu-zee-maa-kun" }
+  },
+  {
+    "dutch": "schat, de",
+    "english": "dear, treasure, the",
+    "vietnamese": "cưng, kho báu",
+    "dutchsentence": "Laten we gaan, schat.",
+    "englishtranslate": "Let's go, honey.",
+    "pronunciation": { "ipa": "sχɑt", "phonetic": "skhat" }
+  },
+  {
+    "dutch": "scheiden",
+    "english": "to divorce, separate",
+    "vietnamese": "ly hôn",
+    "dutchsentence": "Mijn ouders gaan scheiden.",
+    "englishtranslate": "My parents are getting a divorce.",
+    "pronunciation": { "ipa": "ˈsχɛidə(n)", "phonetic": "skhy-dun" }
+  },
+  {
+    "dutch": "tegen",
+    "english": "against",
+    "vietnamese": "chống lại, đối diện",
+    "dutchsentence": "Ik heb niets tegen hem.",
+    "englishtranslate": "I have nothing against him.",
+    "pronunciation": { "ipa": "ˈteːɣə(n)", "phonetic": "tay-khun" }
+  },
+  {
+    "dutch": "tegenkomen",
+    "english": "to encounter, meet by chance",
+    "vietnamese": "tình cờ gặp",
+    "dutchsentence": "Ik hoop hem morgen tegen te komen.",
+    "englishtranslate": "I hope to bump into him tomorrow.",
+    "pronunciation": { "ipa": "ˈteːɣə(n)ˌkoːmə(n)", "phonetic": "tay-khun-koa-mun" }
+  },
+  {
+    "dutch": "tegenwoordig",
+    "english": "nowadays",
+    "vietnamese": "ngày nay",
+    "dutchsentence": "Tegenwoordig gebruiken veel mensen datingapps.",
+    "englishtranslate": "Nowadays, many people use dating apps.",
+    "pronunciation": { "ipa": "teːɣə(n)ˈʋoːrdəx", "phonetic": "tay-khun-voar-dukh" }
+  },
+  {
+    "dutch": "tjongejonge",
+    "english": "oh boy, gosh",
+    "vietnamese": "trời đất ơi",
+    "dutchsentence": "Tjongejonge, wat een gedoe!",
+    "englishtranslate": "Gosh, what a hassle!",
+    "pronunciation": { "ipa": "ˈtjɔŋəˌjɔŋə", "phonetic": "tyong-uh-yong-uh" }
+  },
+  {
+    "dutch": "traan, de",
+    "english": "tear, the",
+    "vietnamese": "giọt nước mắt",
+    "dutchsentence": "De tranen stonden in haar ogen.",
+    "englishtranslate": "Tears were in her eyes.",
+    "pronunciation": { "ipa": "traːn", "phonetic": "traan" }
+  },
+  {
+    "dutch": "triest",
+    "english": "sad",
+    "vietnamese": "buồn bã",
+    "dutchsentence": "Het is een erg triest verhaal.",
+    "englishtranslate": "It is a very sad story.",
+    "pronunciation": { "ipa": "trist", "phonetic": "treest" }
+  },
+  {
+    "dutch": "trouwen",
+    "english": "to get married",
+    "vietnamese": "kết hôn",
+    "dutchsentence": "Willen jullie in de kerk trouwen?",
+    "englishtranslate": "Do you want to get married in church?",
+    "pronunciation": { "ipa": "ˈtrʌuʋə(n)", "phonetic": "trow-vun" }
+  },
+  {
+    "dutch": "uit elkaar gaan",
+    "english": "to split up, to get divorced",
+    "vietnamese": "chia tay",
+    "dutchsentence": "Na tien jaar zijn ze uit elkaar gegaan.",
+    "englishtranslate": "After ten years, they split up.",
+    "pronunciation": { "ipa": "œyt ɛlˈkaːr ɣaːn", "phonetic": "ouyt el-kaar khaan" }
+  },
+  {
+    "dutch": "uitkomen",
+    "english": "to come true",
+    "vietnamese": "trở thành sự thật",
+    "dutchsentence": "Mijn droom is eindelijk uitgekomen.",
+    "englishtranslate": "My dream has finally come true.",
+    "pronunciation": { "ipa": "ˈœytˌkoːmə(n)", "phonetic": "ouyt-koa-mun" }
+  },
+  {
+    "dutch": "uitmaken",
+    "english": "to break up, to matter",
+    "vietnamese": "chia tay, có quan trọng",
+    "dutchsentence": "Ik ga het vandaag met hem uitmaken.",
+    "englishtranslate": "I'm going to break up with him today.",
+    "pronunciation": { "ipa": "ˈœytmaːkə(n)", "phonetic": "ouyt-maa-kun" }
+  },
+  {
+    "dutch": "verdriet, het",
+    "english": "sorrow, the",
+    "vietnamese": "nỗi buồn",
+    "dutchsentence": "Zij heeft veel verdriet om haar hond.",
+    "englishtranslate": "She has a lot of sorrow for her dog.",
+    "pronunciation": { "ipa": "vərˈdrit", "phonetic": "vur-dreet" }
+  },
+  {
+    "dutch": "verdrietig",
+    "english": "sad",
+    "vietnamese": "buồn",
+    "dutchsentence": "Waarom ben je zo verdrietig?",
+    "englishtranslate": "Why are you so sad?",
+    "pronunciation": { "ipa": "vərˈdritəx", "phonetic": "vur-dree-tukh" }
+  },
+  {
+    "dutch": "vergadering, de",
+    "english": "meeting, the",
+    "vietnamese": "cuộc họp",
+    "dutchsentence": "De vergadering duurt tot vijf uur.",
+    "englishtranslate": "The meeting lasts until five o'clock.",
+    "pronunciation": { "ipa": "vərˈɣaːdərɪŋ", "phonetic": "vur-khaa-dur-ing" }
+  },
+  {
+    "dutch": "verkering, de",
+    "english": "(romantic) relationship, dating",
+    "vietnamese": "mối tình (tuổi trẻ/chưa cưới)",
+    "dutchsentence": "Zij hebben al sinds de middelbare school verkering.",
+    "englishtranslate": "They have been dating since high school.",
+    "pronunciation": { "ipa": "vərˈkeːrɪŋ", "phonetic": "vur-kay-ring" }
+  },
+  {
+    "dutch": "verrassen",
+    "english": "to surprise",
+    "vietnamese": "làm ngạc nhiên",
+    "dutchsentence": "Ik wil mijn man verrassen met een cadeau.",
+    "englishtranslate": "I want to surprise my husband with a gift.",
+    "pronunciation": { "ipa": "vərˈɑsə(n)", "phonetic": "vur-ah-sun" }
+  },
+  {
+    "dutch": "vervelend",
+    "english": "annoying",
+    "vietnamese": "khó chịu, phiền phức",
+    "dutchsentence": "Wat een vervelende situatie.",
+    "englishtranslate": "What an annoying situation.",
+    "pronunciation": { "ipa": "vərˈveːlənt", "phonetic": "vur-vay-lunt" }
+  },
+  {
+    "dutch": "vormen",
+    "english": "to enter into, form",
+    "vietnamese": "hình thành, tạo thành",
+    "dutchsentence": "Zij vormen een heel leuk stel.",
+    "englishtranslate": "They make a very nice couple.",
+    "pronunciation": { "ipa": "ˈvɔrmə(n)", "phonetic": "vor-mun" }
+  },
+  {
+    "dutch": "weertje, het",
+    "english": "weather, the (informal/cozy)",
+    "vietnamese": "thời tiết (thân mật)",
+    "dutchsentence": "Lekker weertje, hè?",
+    "englishtranslate": "Nice weather, isn't it?",
+    "pronunciation": { "ipa": "ˈʋeːrtjə", "phonetic": "wayr-tyuh" }
+  },
+  {
+    "dutch": "wet, de",
+    "english": "law, the",
+    "vietnamese": "luật pháp",
+    "dutchsentence": "Volgens de wet zijn zij nu getrouwd.",
+    "englishtranslate": "According to the law, they are now married.",
+    "pronunciation": { "ipa": "ʋɛt", "phonetic": "wet" }
+  },
+  {
+    "dutch": "zaak, de",
+    "english": "situation, business, case",
+    "vietnamese": "vấn đề, vụ việc, cửa hàng",
+    "dutchsentence": "Dat is een zaak van de politie.",
+    "englishtranslate": "That is a matter for the police.",
+    "pronunciation": { "ipa": "zaːk", "phonetic": "zaak" }
+  },
+  {
+    "dutch": "zeep, de",
+    "english": "soap, the",
+    "vietnamese": "xà phòng",
+    "dutchsentence": "Was je handen met water en zeep.",
+    "englishtranslate": "Wash your hands with water and soap.",
+    "pronunciation": { "ipa": "zeːp", "phonetic": "zayp" }
+  },
+  {
+    "dutch": "zenuwachtig",
+    "english": "nervous",
+    "vietnamese": "hồi hộp, lo lắng",
+    "dutchsentence": "Ik ben zenuwachtig voor onze eerste date.",
+    "englishtranslate": "I am nervous about our first date.",
+    "pronunciation": { "ipa": "ˈzeːnyʋɑxtəx", "phonetic": "zay-nu-vakh-tukh" }
+  },
+  {
+    "dutch": "zin hebben om … te …",
+    "english": "to feel like doing something",
+    "vietnamese": "thích/muốn làm gì đó",
+    "dutchsentence": "Ik heb zin om uit eten te gaan.",
+    "englishtranslate": "I feel like going out for dinner.",
+    "pronunciation": { "ipa": "zɪn ˈɦɛbə(n) ɔm … teː", "phonetic": "zin heb-un om ... tuh" }
+  },
+  {
+    "dutch": "zoenen",
+    "english": "to kiss",
+    "vietnamese": "hôn",
+    "dutchsentence": "Zij stonden te zoenen in de regen.",
+    "englishtranslate": "They were kissing in the rain.",
+    "pronunciation": { "ipa": "ˈzunə(n)", "phonetic": "zoo-nun" }
+  },
+  {
+    "dutch": "zo’n",
+    "english": "such a",
+    "vietnamese": "một cái gì đó như vậy",
+    "dutchsentence": "Ik heb nog nooit zo'n mooie ring gezien.",
+    "englishtranslate": "I have never seen such a beautiful ring.",
+    "pronunciation": { "ipa": "zoːn", "phonetic": "zoan" }
+  }
+]
