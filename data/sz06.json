@@ -3,6 +3,7 @@
         "dutch": "de glimlach (-en)",
         "english": "the smile (smiles)",
         "vietnamese": "nụ cười (các nụ cười)",
+        "pronunciation": { "ipa": "də ˈɣlɪmlɑx", "phonetic": "du khlim-lakh" },
         "dutchsentence": "Zijn glimlach maakte iedereen blij.",
         "englishtranslate": "His smile made everyone happy."
     },
@@ -10,6 +11,7 @@
         "dutch": "de verandering (-en)",
         "english": "the change (changes)",
         "vietnamese": "sự thay đổi (các sự thay đổi)",
+        "pronunciation": { "ipa": "də vərˈɑndərɪŋ", "phonetic": "du vur-ahn-dur-ing" },
         "dutchsentence": "De verandering van het beleid heeft invloed op iedereen.",
         "englishtranslate": "The change in policy affects everyone."
     },
@@ -17,6 +19,7 @@
         "dutch": "de vriendschap (-pen)",
         "english": "the friendship (friendships)",
         "vietnamese": "tình bạn (các tình bạn)",
+        "pronunciation": { "ipa": "də ˈvriːntsxɑp", "phonetic": "du vreent-skhap" },
         "dutchsentence": "Onze vriendschap duurt al meer dan twintig jaar.",
         "englishtranslate": "Our friendship has lasted for more than twenty years."
     },
@@ -24,6 +27,7 @@
         "dutch": "het publiek",
         "english": "the public",
         "vietnamese": "công chúng",
+        "pronunciation": { "ipa": "ət pyˈblik", "phonetic": "ut pu-bleek" },
         "dutchsentence": "Het publiek klapte enthousiast voor de artiest.",
         "englishtranslate": "The public clapped enthusiastically for the artist."
     },
@@ -31,6 +35,7 @@
         "dutch": "persoonlijk",
         "english": "personal",
         "vietnamese": "cá nhân",
+        "pronunciation": { "ipa": "pərˈsoːnlək", "phonetic": "pur-sohn-luk" },
         "dutchsentence": "Dit is een persoonlijke brief, alleen voor jou.",
         "englishtranslate": "This is a personal letter, only for you."
     },
@@ -38,6 +43,7 @@
         "dutch": "publiek",
         "english": "public",
         "vietnamese": "công cộng",
+        "pronunciation": { "ipa": "pyˈblik", "phonetic": "pu-bleek" },
         "dutchsentence": "Het park is publiek terrein, iedereen mag er komen.",
         "englishtranslate": "The park is public property, everyone can go there."
     },
@@ -45,6 +51,7 @@
         "dutch": "romantisch",
         "english": "romantic",
         "vietnamese": "lãng mạn",
+        "pronunciation": { "ipa": "roːˈmɑntis", "phonetic": "roh-mahn-tees" },
         "dutchsentence": "Zij had een romantisch diner bij kaarslicht.",
         "englishtranslate": "She had a romantic dinner by candlelight."
     },
@@ -52,6 +59,7 @@
         "dutch": "vriendschappelijk",
         "english": "friendly",
         "vietnamese": "thân thiện",
+        "pronunciation": { "ipa": "ˈvriːntsxɑpələk", "phonetic": "vreent-skhap-uh-luk" },
         "dutchsentence": "Het was een vriendschappelijke wedstrijd zonder veel druk.",
         "englishtranslate": "It was a friendly match without much pressure."
     },
@@ -59,6 +67,7 @@
         "dutch": "schattig",
         "english": "cute",
         "vietnamese": "dễ thương",
+        "pronunciation": { "ipa": "ˈsxɑtəx", "phonetic": "skhat-ukh" },
         "dutchsentence": "De puppy is zo schattig met zijn grote ogen.",
         "englishtranslate": "The puppy is so cute with its big eyes."
     },
@@ -66,6 +75,7 @@
         "dutch": "meenemen",
         "english": "to take along",
         "vietnamese": "mang theo",
+        "pronunciation": { "ipa": "ˈmeːˌneːmə(n)", "phonetic": "may-nay-mun" },
         "dutchsentence": "Zal ik wat drinken meenemen naar het feest?",
         "englishtranslate": "Shall I take some drinks along to the party?"
     },
@@ -73,6 +83,7 @@
         "dutch": "nam mee",
         "english": "took along",
         "vietnamese": "đã mang theo",
+        "pronunciation": { "ipa": "nɑm ˈmeː", "phonetic": "nahm may" },
         "dutchsentence": "Hij nam een cadeautje mee voor zijn gastheer.",
         "englishtranslate": "He took a gift along for his host."
     },
@@ -80,6 +91,7 @@
         "dutch": "heeft meegenomen",
         "english": "has taken along",
         "vietnamese": "đã mang theo",
+        "pronunciation": { "ipa": "ˈmeːɣəˌnoːmə(n)", "phonetic": "may-khu-noh-mun" },
         "dutchsentence": "Wie heeft de taart meegenomen?",
         "englishtranslate": "Who has taken the cake along?"
     },
@@ -87,6 +99,7 @@
         "dutch": "publiceren",
         "english": "to publish",
         "vietnamese": "xuất bản",
+        "pronunciation": { "ipa": "pybliːˈseːrə(n)", "phonetic": "pu-blee-say-run" },
         "dutchsentence": "De auteur wilde het boek snel publiceren.",
         "englishtranslate": "The author wanted to publish the book quickly."
     },
@@ -94,6 +107,7 @@
         "dutch": "publiceerde",
         "english": "published",
         "vietnamese": "đã xuất bản",
+        "pronunciation": { "ipa": "pybliːˈseːrdə", "phonetic": "pu-blee-sayr-duh" },
         "dutchsentence": "De krant publiceerde de resultaten gisteren.",
         "englishtranslate": "The newspaper published the results yesterday."
     },
@@ -101,6 +115,7 @@
         "dutch": "heeft gepubliceerd",
         "english": "has published",
         "vietnamese": "đã xuất bản",
+        "pronunciation": { "ipa": "ɣəpybliːˈseːrt", "phonetic": "khu-pu-blee-sayrt" },
         "dutchsentence": "De organisatie heeft een nieuw rapport gepubliceerd.",
         "englishtranslate": "The organization has published a new report."
     },
@@ -108,13 +123,15 @@
         "dutch": "meegaan",
         "english": "to go along",
         "vietnamese": "đi cùng",
-        "dutchsentence": "Wil je met ons meegaan naar de film?",
+        "pronunciation": { "ipa": "ˈmeːˌɣaːn", "phonetic": "may-khahn" },
+        "dutchsentence": "Wil je met ons meegaan naar the film?",
         "englishtranslate": "Do you want to go along with us to the movie?"
     },
     {
         "dutch": "ging mee",
         "english": "went along",
         "vietnamese": "đã đi cùng",
+        "pronunciation": { "ipa": "ɣɪŋ ˈmeː", "phonetic": "khing may" },
         "dutchsentence": "Zij ging mee naar de tentoonstelling.",
         "englishtranslate": "She went along to the exhibition."
     },
@@ -122,6 +139,7 @@
         "dutch": "is meegegaan",
         "english": "has gone along",
         "vietnamese": "đã đi cùng",
+        "pronunciation": { "ipa": "ˈmeːɣəˌɣaːn", "phonetic": "may-khu-khahn" },
         "dutchsentence": "Hij is met zijn vrienden meegegaan naar het strand.",
         "englishtranslate": "He has gone along with his friends to the beach."
     },
@@ -129,6 +147,7 @@
         "dutch": "glimlachen",
         "english": "to smile",
         "vietnamese": "mỉm cười",
+        "pronunciation": { "ipa": "ˈɣlɪmlɑxə(n)", "phonetic": "khlim-lakh-un" },
         "dutchsentence": "Ze begon te glimlachen toen ze hem zag.",
         "englishtranslate": "She started to smile when she saw him."
     },
@@ -136,6 +155,7 @@
         "dutch": "glimlachte",
         "english": "smiled",
         "vietnamese": "đã mỉm cười",
+        "pronunciation": { "ipa": "ˈɣlɪmlɑxtə", "phonetic": "khlim-lakh-tuh" },
         "dutchsentence": "De leraar glimlachte naar de studenten.",
         "englishtranslate": "The teacher smiled at the students."
     },
@@ -143,6 +163,7 @@
         "dutch": "heeft geglimlacht",
         "english": "has smiled",
         "vietnamese": "đã mỉm cười",
+        "pronunciation": { "ipa": "ɣəˈɣlɪmlɑxt", "phonetic": "khu-khlim-lakht" },
         "dutchsentence": "Hij heeft de hele dag geglimlacht.",
         "englishtranslate": "He has smiled the whole day."
     }
