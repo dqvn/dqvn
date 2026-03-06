@@ -3,6 +3,7 @@
         "dutch": "het stuk (-ken)",
         "english": "the piece (pieces)",
         "vietnamese": "mảnh (những mảnh)",
+        "pronunciation": { "ipa": "ət stʏk", "phonetic": "ut stuk" },
         "dutchsentence": "Kan ik een stukje taart krijgen?",
         "englishtranslate": "Can I have a small piece of cake?"
     },
@@ -10,6 +11,7 @@
         "dutch": "de raad",
         "english": "the advice",
         "vietnamese": "lời khuyên",
+        "pronunciation": { "ipa": "də raːt", "phonetic": "du raht" },
         "dutchsentence": "Ik heb je raad nodig over dit probleem.",
         "englishtranslate": "I need your advice about this problem."
     },
@@ -17,6 +19,7 @@
         "dutch": "stuk",
         "english": "broken",
         "vietnamese": "hỏng",
+        "pronunciation": { "ipa": "stʏk", "phonetic": "stuk" },
         "dutchsentence": "Mijn telefoon is gisteren helemaal stuk gegaan.",
         "englishtranslate": "My phone broke completely yesterday."
     },
@@ -24,6 +27,7 @@
         "dutch": "raar",
         "english": "strange",
         "vietnamese": "kỳ lạ",
+        "pronunciation": { "ipa": "raːr", "phonetic": "rahr" },
         "dutchsentence": "Ik hoorde vannacht een raar geluid.",
         "englishtranslate": "I heard a strange sound last night."
     },
@@ -31,6 +35,7 @@
         "dutch": "separabel",
         "english": "separable",
         "vietnamese": "có thể tách rời",
+        "pronunciation": { "ipa": "seːpaːˈraːbəl", "phonetic": "say-pah-rah-bul" },
         "dutchsentence": "In het Nederlands zijn veel werkwoorden separabel.",
         "englishtranslate": "In Dutch, many verbs are separable."
     },
@@ -38,6 +43,7 @@
         "dutch": "vreemd",
         "english": "weird",
         "vietnamese": "kỳ quặc",
+        "pronunciation": { "ipa": "vreːmt", "phonetic": "vraymt" },
         "dutchsentence": "Die man gedraagt zich erg vreemd.",
         "englishtranslate": "That man is behaving very weirdly."
     },
@@ -45,6 +51,7 @@
         "dutch": "meteen",
         "english": "immediately",
         "vietnamese": "ngay lập tức",
+        "pronunciation": { "ipa": "məˈteːn", "phonetic": "mu-tayn" },
         "dutchsentence": "Ik zal je meteen terugbellen.",
         "englishtranslate": "I will call you back immediately."
     },
@@ -52,6 +59,7 @@
         "dutch": "enzovoort - enz",
         "english": "and so on - etc",
         "vietnamese": "vân vân - v.v.",
+        "pronunciation": { "ipa": "ˈɛnzoːˌvoːrt", "phonetic": "en-zo-vohrt" },
         "dutchsentence": "We kochten appels, peren, bananen, enzovoort.",
         "englishtranslate": "We bought apples, pears, bananas, and so on."
     },
@@ -59,6 +67,7 @@
         "dutch": "etcetera - etc",
         "english": "et cetera - etc",
         "vietnamese": "vân vân - v.v.",
+        "pronunciation": { "ipa": "ɛtˈseːtəraː", "phonetic": "et-say-te-rah" },
         "dutchsentence": "De lijst is lang, met boeken, pennen, papieren, etcetera.",
         "englishtranslate": "The list is long, with books, pens, papers, et cetera."
     },
@@ -66,6 +75,7 @@
         "dutch": "aflopen (afgelopen)",
         "english": "to end (ended)",
         "vietnamese": "kết thúc (đã kết thúc)",
+        "pronunciation": { "ipa": "ˈɑfloːpə(n)", "phonetic": "af-low-pun" },
         "dutchsentence": "Wanneer zal de film aflopen?",
         "englishtranslate": "When will the movie end?"
     },
@@ -73,6 +83,7 @@
         "dutch": "opletten (opgelet)",
         "english": "to pay attention (paid attention)",
         "vietnamese": "chú ý (đã chú ý)",
+        "pronunciation": { "ipa": "ˈɔplɛtə(n)", "phonetic": "op-let-un" },
         "dutchsentence": "Let goed op tijdens de instructies.",
         "englishtranslate": "Pay good attention during the instructions."
     },
@@ -80,6 +91,7 @@
         "dutch": "aanraden (aangeraden)",
         "english": "to recommend (recommended)",
         "vietnamese": "khuyên (đã khuyên)",
+        "pronunciation": { "ipa": "ˈaːnraːdə(n)", "phonetic": "ahn-rah-dun" },
         "dutchsentence": "Ik raad je aan om deze film te gaan kijken.",
         "englishtranslate": "I recommend you to go watch this movie."
     },
@@ -87,6 +99,7 @@
         "dutch": "afspreken - afgesproken",
         "english": "to arrange - arranged",
         "vietnamese": "sắp xếp - đã sắp xếp",
+        "pronunciation": { "ipa": "ˈɑfspreːkə(n)", "phonetic": "af-spray-kun" },
         "dutchsentence": "We spreken volgende week af in het café.",
         "englishtranslate": "We will arrange to meet next week in the cafe."
     },
@@ -94,6 +107,7 @@
         "dutch": "invullen - ingevuld",
         "english": "to fill in - filled in",
         "vietnamese": "điền vào - đã điền vào",
+        "pronunciation": { "ipa": "ˈɪnvʏlə(n)", "phonetic": "in-vul-un" },
         "dutchsentence": "U moet dit formulier volledig invullen.",
         "englishtranslate": "You must fill in this form completely."
     },
@@ -101,6 +115,7 @@
         "dutch": "opladen - opgeladen",
         "english": "to charge - charged",
         "vietnamese": "sạc - đã sạc",
+        "pronunciation": { "ipa": "ˈɔplaːdə(n)", "phonetic": "op-lah-dun" },
         "dutchsentence": "Ik moet mijn telefoon opladen; de batterij is leeg.",
         "englishtranslate": "I need to charge my phone; the battery is empty."
     },
@@ -108,6 +123,7 @@
         "dutch": "voorstellen - voorgesteld",
         "english": "to propose - proposed",
         "vietnamese": "đề xuất - đã đề xuất",
+        "pronunciation": { "ipa": "ˈvoːrstɛlə(n)", "phonetic": "vohr-stel-un" },
         "dutchsentence": "Ik stel voor dat we een pauze nemen.",
         "englishtranslate": "I propose that we take a break."
     },
@@ -115,6 +131,7 @@
         "dutch": "aanraken - aangeraakt",
         "english": "to touch - touched",
         "vietnamese": "chạm - đã chạm",
+        "pronunciation": { "ipa": "ˈaːnraːkə(n)", "phonetic": "ahn-rah-kun" },
         "dutchsentence": "Hij heeft de natte verf aangeraakt.",
         "englishtranslate": "He has touched the wet paint."
     }

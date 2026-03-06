@@ -3,6 +3,7 @@
         "dutch": "de zaak (zaken)",
         "english": "the case (cases)",
         "vietnamese": "vụ việc (những vụ việc)",
+        "pronunciation": { "ipa": "də zaːk", "phonetic": "du zahk" },
         "dutchsentence": "De detective werkt aan een gecompliceerde zaak.",
         "englishtranslate": "The detective is working on a complicated case."
     },
@@ -10,6 +11,7 @@
         "dutch": "de agent (-en)",
         "english": "the agent (agents)",
         "vietnamese": "đặc vụ (những đặc vụ)",
+        "pronunciation": { "ipa": "də aːˈɣɛnt", "phonetic": "du ah-khent" },
         "dutchsentence": "De politieagent vroeg om mijn identiteitskaart.",
         "englishtranslate": "The police agent (officer) asked for my ID card."
     },
@@ -17,6 +19,7 @@
         "dutch": "bezig",
         "english": "busy",
         "vietnamese": "bận rộn",
+        "pronunciation": { "ipa": "ˈbeːzəx", "phonetic": "bay-zukh" },
         "dutchsentence": "Ik ben momenteel bezig met een belangrijk project.",
         "englishtranslate": "I am currently busy with an important project."
     },
@@ -24,6 +27,7 @@
         "dutch": "sinds",
         "english": "since",
         "vietnamese": "kể từ",
+        "pronunciation": { "ipa": "sɪnts", "phonetic": "sints" },
         "dutchsentence": "Ik woon in Nederland sinds 2018.",
         "englishtranslate": "I have lived in the Netherlands since 2018."
     },
@@ -31,6 +35,7 @@
         "dutch": "missen (gemist)",
         "english": "to miss (missed)",
         "vietnamese": "nhớ (đã nhớ)",
+        "pronunciation": { "ipa": "ˈmɪsə(n)", "phonetic": "mis-un" },
         "dutchsentence": "Ik mis mijn familie als ik in het buitenland ben.",
         "englishtranslate": "I miss my family when I am abroad."
     },
@@ -38,6 +43,7 @@
         "dutch": "redden (gered)",
         "english": "to save (saved)",
         "vietnamese": "cứu (đã cứu)",
+        "pronunciation": { "ipa": "ˈrɛdə(n)", "phonetic": "red-un" },
         "dutchsentence": "De brandweer kon het kind uit het brandende huis redden.",
         "englishtranslate": "The fire department was able to save the child from the burning house."
     },
@@ -45,6 +51,7 @@
         "dutch": "sterven (gestorven)",
         "english": "to die (died)",
         "vietnamese": "chết (đã chết)",
+        "pronunciation": { "ipa": "ˈstɛrvə(n)", "phonetic": "stair-vun" },
         "dutchsentence": "De bloemen sterven als ze geen water krijgen.",
         "englishtranslate": "The flowers die if they don't get water."
     },
@@ -52,6 +59,7 @@
         "dutch": "opbellen (opgebeld)",
         "english": "to call (called)",
         "vietnamese": "gọi điện (đã gọi điện)",
+        "pronunciation": { "ipa": "ˈɔpbɛlə(n)", "phonetic": "op-bel-un" },
         "dutchsentence": "Ik zal je vanavond nog even opbellen.",
         "englishtranslate": "I will call you up (by phone) tonight."
     },
@@ -59,6 +67,7 @@
         "dutch": "reizen (gereisd)",
         "english": "to travel (traveled)",
         "vietnamese": "du lịch (đã du lịch)",
+        "pronunciation": { "ipa": "ˈrɛizə(n)", "phonetic": "ry-zun" },
         "dutchsentence": "Wij reizen volgend jaar naar Azië.",
         "englishtranslate": "We are traveling to Asia next year."
     },
@@ -66,6 +75,7 @@
         "dutch": "sluiten",
         "english": "to close",
         "vietnamese": "đóng",
+        "pronunciation": { "ipa": "ˈslœytə(n)", "phonetic": "sluy-tun" },
         "dutchsentence": "Vergeet de ramen niet te sluiten als je weggaat.",
         "englishtranslate": "Don't forget to close the windows when you leave."
     },
@@ -73,6 +83,7 @@
         "dutch": "verliezen",
         "english": "to lose",
         "vietnamese": "mất",
+        "pronunciation": { "ipa": "vərˈlizə(n)", "phonetic": "vur-lee-zun" },
         "dutchsentence": "Pas op dat je je sleutels niet verliest.",
         "englishtranslate": "Be careful not to lose your keys."
     },
@@ -80,6 +91,7 @@
         "dutch": "moeten",
         "english": "must",
         "vietnamese": "phải",
+        "pronunciation": { "ipa": "ˈmutə(n)", "phonetic": "moo-tun" },
         "dutchsentence": "Je moet dit medicijn drie keer per dag nemen.",
         "englishtranslate": "You must take this medicine three times a day."
     },
@@ -87,6 +99,7 @@
         "dutch": "mogen",
         "english": "may",
         "vietnamese": "có thể",
+        "pronunciation": { "ipa": "ˈmoːɣə(n)", "phonetic": "moh-khun" },
         "dutchsentence": "Mogen we alsjeblieft even pauze nemen?",
         "englishtranslate": "May we please take a break for a moment?"
     }

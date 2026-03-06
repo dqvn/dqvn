@@ -3,6 +3,7 @@
         "dutch": "de moordenaar (-s)",
         "english": "the murderer(s)",
         "vietnamese": "kẻ giết người",
+        "pronunciation": { "ipa": "də ˈmoːrdənaːr", "phonetic": "du mohr-du-nahr" },
         "dutchsentence": "De moordenaar is nog niet gevonden door de politie.",
         "englishtranslate": "The murderer has not been found by the police yet."
     },
@@ -10,6 +11,7 @@
         "dutch": "het pistool (-olen)",
         "english": "the gun(s)",
         "vietnamese": "súng",
+        "pronunciation": { "ipa": "ət pɪsˈtoːl", "phonetic": "ut pis-tohl" },
         "dutchsentence": "Hij richtte een pistool op de bewaker.",
         "englishtranslate": "He aimed a gun at the guard."
     },
@@ -17,6 +19,7 @@
         "dutch": "het wapen (-s)",
         "english": "the weapon(s)",
         "vietnamese": "vũ khí",
+        "pronunciation": { "ipa": "ət ˈʋaːpə(n)", "phonetic": "ut vah-pun" },
         "dutchsentence": "Het mes werd gebruikt als wapen bij de overval.",
         "englishtranslate": "The knife was used as a weapon in the robbery."
     },
@@ -24,6 +27,7 @@
         "dutch": "de dood",
         "english": "the death",
         "vietnamese": "cái chết",
+        "pronunciation": { "ipa": "də doːt", "phonetic": "du doht" },
         "dutchsentence": "De dood van de oude man was onverwacht.",
         "englishtranslate": "The death of the old man was unexpected."
     },
@@ -31,6 +35,7 @@
         "dutch": "de dode (-n)",
         "english": "the dead (person/people)",
         "vietnamese": "người chết",
+        "pronunciation": { "ipa": "də ˈdoːdə", "phonetic": "du doh-du" },
         "dutchsentence": "Er waren drie doden bij het ongeluk.",
         "englishtranslate": "There were three dead (people) in the accident."
     },
@@ -38,6 +43,7 @@
         "dutch": "de moord (-en)",
         "english": "the murder(s)",
         "vietnamese": "vụ giết người",
+        "pronunciation": { "ipa": "də moːrt", "phonetic": "du mohrt" },
         "dutchsentence": "De politie onderzoekt de moord op een bankdirecteur.",
         "englishtranslate": "The police are investigating the murder of a bank director."
     },
@@ -45,6 +51,7 @@
         "dutch": "de gevangenis (-sen)",
         "english": "the prison(s)",
         "vietnamese": "nhà tù",
+        "pronunciation": { "ipa": "də xəˈvɑŋənɪs", "phonetic": "du khu-vang-un-is" },
         "dutchsentence": "Hij heeft vijf jaar in de gevangenis gezeten.",
         "englishtranslate": "He was in prison for five years."
     },
@@ -52,6 +59,7 @@
         "dutch": "dood",
         "english": "dead",
         "vietnamese": "chết",
+        "pronunciation": { "ipa": "doːt", "phonetic": "doht" },
         "dutchsentence": "De bloemen zijn helemaal dood.",
         "englishtranslate": "The flowers are completely dead."
     },
@@ -59,6 +67,7 @@
         "dutch": "raak",
         "english": "(to) hit",
         "vietnamese": "(để) đánh trúng",
+        "pronunciation": { "ipa": "raːk", "phonetic": "rahk" },
         "dutchsentence": "Zijn pijlen waren altijd raak.",
         "englishtranslate": "His arrows always hit the mark (were a hit)."
     },
@@ -66,6 +75,7 @@
         "dutch": "bekend, onbekend",
         "english": "known, unknown",
         "vietnamese": "biết, không biết",
+        "pronunciation": { "ipa": "bəˈkɛnt, ˈɔnbəˌkɛnt", "phonetic": "bu-kent, on-bu-kent" },
         "dutchsentence": "De dader is nog onbekend bij de autoriteiten.",
         "englishtranslate": "The perpetrator is still unknown to the authorities."
     },
@@ -73,6 +83,7 @@
         "dutch": "schuldig, onschuldig",
         "english": "guilty, innocent",
         "vietnamese": "có tội, vô tội",
+        "pronunciation": { "ipa": "ˈsxʏldəx, ˈɔnsxʏldəx", "phonetic": "skhul-dukh, on-skhul-dukh" },
         "dutchsentence": "De jury verklaarde de verdachte onschuldig.",
         "englishtranslate": "The jury declared the suspect innocent."
     },
@@ -80,6 +91,7 @@
         "dutch": "onmogelijk",
         "english": "impossible",
         "vietnamese": "không thể",
+        "pronunciation": { "ipa": "ˈɔnˈmoːxələk", "phonetic": "on-moh-khu-luk" },
         "dutchsentence": "Het is onmogelijk om dat nu al te weten.",
         "englishtranslate": "It is impossible to know that already."
     },
@@ -87,6 +99,7 @@
         "dutch": "alsof",
         "english": "(as) if",
         "vietnamese": "(như) nếu",
+        "pronunciation": { "ipa": "ɑlˈsɔf", "phonetic": "al-sof" },
         "dutchsentence": "Hij deed alsof hij de hele situatie begreep.",
         "englishtranslate": "He acted as if he understood the whole situation."
     },
@@ -94,6 +107,7 @@
         "dutch": "vertellen",
         "english": "(to) tell",
         "vietnamese": "(để) kể",
+        "pronunciation": { "ipa": "vərˈtɛlə(n)", "phonetic": "vur-tel-un" },
         "dutchsentence": "Kun je mij een verhaal vertellen?",
         "englishtranslate": "Can you tell me a story?"
     },
@@ -101,6 +115,7 @@
         "dutch": "vermoorden",
         "english": "(to) murder",
         "vietnamese": "(để) giết người",
+        "pronunciation": { "ipa": "vərˈmoːrdə(n)", "phonetic": "vur-mohr-dun" },
         "dutchsentence": "De dader probeerde zijn slachtoffer te vermoorden.",
         "englishtranslate": "The perpetrator tried to murder his victim."
     },
@@ -108,6 +123,7 @@
         "dutch": "schieten",
         "english": "(to) shoot",
         "vietnamese": "(de) bắn",
+        "pronunciation": { "ipa": "ˈsxitə(n)", "phonetic": "skhee-tun" },
         "dutchsentence": "De politie moest één keer schieten in de lucht.",
         "englishtranslate": "The police had to shoot once in the air."
     },
@@ -115,6 +131,7 @@
         "dutch": "doden",
         "english": "(to) kill",
         "vietnamese": "(de) giết",
+        "pronunciation": { "ipa": "ˈdoːdə(n)", "phonetic": "doh-dun" },
         "dutchsentence": "Een roofdier doodde een schaap van de boer.",
         "englishtranslate": "A predator killed one of the farmer's sheep."
     }

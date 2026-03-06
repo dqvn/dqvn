@@ -3,6 +3,7 @@
         "dutch": "het plezier",
         "english": "the pleasure",
         "vietnamese": "niềm vui",
+        "pronunciation": { "ipa": "ət pləˈziːr", "phonetic": "ut plu-zeer" },
         "dutchsentence": "Ik heb veel plezier gehad op jouw feestje.",
         "englishtranslate": "I had a lot of pleasure (fun) at your party."
     },
@@ -10,6 +11,7 @@
         "dutch": "de knie (knieën)",
         "english": "the knee (knees)",
         "vietnamese": "đầu gối (những đầu gối)",
+        "pronunciation": { "ipa": "də kni", "phonetic": "du knee" },
         "dutchsentence": "Na de val had ze pijn aan haar knie.",
         "englishtranslate": "After the fall, she had pain in her knee."
     },
@@ -17,6 +19,7 @@
         "dutch": "de oplossing (-en)",
         "english": "the solution (solutions)",
         "vietnamese": "giải pháp (những giải pháp)",
+        "pronunciation": { "ipa": "də ˈɔplɔsɪŋ", "phonetic": "du op-los-sing" },
         "dutchsentence": "De leraar vond snel een oplossing voor het probleem.",
         "englishtranslate": "The teacher quickly found a solution to the problem."
     },
@@ -24,6 +27,7 @@
         "dutch": "het zand",
         "english": "the sand",
         "vietnamese": "cát",
+        "pronunciation": { "ipa": "ət zɑnt", "phonetic": "ut zant" },
         "dutchsentence": "De kinderen speelden met zand op het strand.",
         "englishtranslate": "The children played with sand on the beach."
     },
@@ -31,6 +35,7 @@
         "dutch": "de zee",
         "english": "the sea",
         "vietnamese": "biển",
+        "pronunciation": { "ipa": "də zeː", "phonetic": "du zay" },
         "dutchsentence": "We gaan in de zomer zwemmen in de zee.",
         "englishtranslate": "We are going swimming in the sea in the summer."
     },
@@ -38,6 +43,7 @@
         "dutch": "de honger",
         "english": "the hunger",
         "vietnamese": "đói",
+        "pronunciation": { "ipa": "də ˈɦɔŋər", "phonetic": "du hoh-ngur" },
         "dutchsentence": "Mijn honger is zo groot, ik wil nu eten.",
         "englishtranslate": "My hunger is so great, I want to eat now."
     },
@@ -45,6 +51,7 @@
         "dutch": "de/het idee",
         "english": "the idea",
         "vietnamese": "ý tưởng",
+        "pronunciation": { "ipa": "ət iˈdeː", "phonetic": "ut ee-day" },
         "dutchsentence": "Dat is een geweldig idee voor het project!",
         "englishtranslate": "That is a great idea for the project!"
     },
@@ -52,6 +59,7 @@
         "dutch": "het eind",
         "english": "the end",
         "vietnamese": "kết thúc",
+        "pronunciation": { "ipa": "ət ɛint", "phonetic": "ut eyent" },
         "dutchsentence": "Aan het eind van de dag gaan we naar huis.",
         "englishtranslate": "We will go home at the end of the day."
     },
@@ -59,6 +67,7 @@
         "dutch": "helemaal",
         "english": "completely",
         "vietnamese": "hoàn toàn",
+        "pronunciation": { "ipa": "ˈɦeːləmaːl", "phonetic": "hay-lu-mahl" },
         "dutchsentence": "Ik ben het helemaal met je eens.",
         "englishtranslate": "I completely agree with you."
     },
@@ -66,6 +75,7 @@
         "dutch": "totaal",
         "english": "totally",
         "vietnamese": "tổng cộng",
+        "pronunciation": { "ipa": "toːˈtaːl", "phonetic": "toh-tahl" },
         "dutchsentence": "Het totale bedrag is driehonderd euro.",
         "englishtranslate": "The total amount is three hundred euros."
     },
@@ -73,27 +83,31 @@
         "dutch": "oplossen (opgelost)",
         "english": "to solve (solved)",
         "vietnamese": "giải quyết (đã giải quyết)",
+        "pronunciation": { "ipa": "ˈɔplɔsə(n)", "phonetic": "op-los-un" },
         "dutchsentence": "We moeten dit probleem zo snel mogelijk oplossen.",
         "englishtranslate": "We must solve this problem as quickly as possible."
     },
     {
         "dutch": "steken (gestoken)",
-        "english": "to stab (stabbed)",
-        "vietnamese": "đâm (đã đâm)",
+        "english": "to stab/sting (stabbed/stung)",
+        "vietnamese": "đâm/chích (đã đâm/chích)",
+        "pronunciation": { "ipa": "ˈsteːkə(n)", "phonetic": "stay-kun" },
         "dutchsentence": "Pas op, want die plant steekt.",
         "englishtranslate": "Be careful, because that plant stabs (pricks)."
     },
     {
         "dutch": "zetten (gezet)",
-        "english": "to put (put)",
+        "english": "to put/place (put/placed)",
         "vietnamese": "đặt (đã đặt)",
+        "pronunciation": { "ipa": "ˈzɛtə(n)", "phonetic": "zet-un" },
         "dutchsentence": "Zet de kopjes alsjeblieft in de kast.",
         "englishtranslate": "Please put the cups in the cupboard."
     },
     {
         "dutch": "steken",
-        "english": "to stab",
-        "vietnamese": "đâm",
+        "english": "to sting",
+        "vietnamese": "châm, chích",
+        "pronunciation": { "ipa": "ˈsteːkə(n)", "phonetic": "stay-kun" },
         "dutchsentence": "De bij zal je steken als je hem probeert te pakken.",
         "englishtranslate": "The bee will sting (stab) you if you try to grab it."
     },
@@ -101,6 +115,7 @@
         "dutch": "eten",
         "english": "to eat",
         "vietnamese": "ăn",
+        "pronunciation": { "ipa": "ˈeːtə(n)", "phonetic": "ay-tun" },
         "dutchsentence": "Wat gaan we vanavond eten?",
         "englishtranslate": "What are we going to eat tonight?"
     },
@@ -108,6 +123,7 @@
         "dutch": "drinken",
         "english": "to drink",
         "vietnamese": "uống",
+        "pronunciation": { "ipa": "ˈdrɪŋkə(n)", "phonetic": "drink-un" },
         "dutchsentence": "Ik drink graag een kopje thee in de ochtend.",
         "englishtranslate": "I like to drink a cup of tea in the morning."
     },
@@ -115,6 +131,7 @@
         "dutch": "zoeken",
         "english": "to search",
         "vietnamese": "tìm kiếm",
+        "pronunciation": { "ipa": "ˈzukə(n)", "phonetic": "zoo-kun" },
         "dutchsentence": "Ben je nog steeds naar je bril aan het zoeken?",
         "englishtranslate": "Are you still searching for your glasses?"
     },
@@ -122,6 +139,7 @@
         "dutch": "beginnen",
         "english": "to begin",
         "vietnamese": "bắt đầu",
+        "pronunciation": { "ipa": "bəˈɣɪnə(n)", "phonetic": "bu-khin-un" },
         "dutchsentence": "De les zal over tien minuten beginnen.",
         "englishtranslate": "The class will begin in ten minutes."
     },
@@ -129,6 +147,7 @@
         "dutch": "vinden",
         "english": "to find",
         "vietnamese": "tìm thấy",
+        "pronunciation": { "ipa": "ˈvɪndə(n)", "phonetic": "vin-dun" },
         "dutchsentence": "Ik kan mijn sleutels nergens vinden.",
         "englishtranslate": "I can't find my keys anywhere."
     }

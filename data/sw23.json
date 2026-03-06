@@ -3,6 +3,7 @@
         "dutch": "de ondertitel (-s)",
         "english": "the subtitle(s)",
         "vietnamese": "phụ đề",
+        "pronunciation": { "ipa": "də ˈɔndərˌtitəl", "phonetic": "du on-dur-tee-tul" },
         "dutchsentence": "Ik zet de ondertitels aan om beter te kunnen volgen.",
         "englishtranslate": "I turn on the subtitles to be able to follow better."
     },
@@ -10,6 +11,7 @@
         "dutch": "de titel (-s)",
         "english": "the title(s)",
         "vietnamese": "tiêu đề",
+        "pronunciation": { "ipa": "də ˈtitəl", "phonetic": "du tee-tul" },
         "dutchsentence": "Wat is de titel van dit artikel?",
         "englishtranslate": "What is the title of this article?"
     },
@@ -17,6 +19,7 @@
         "dutch": "het vertrouwen",
         "english": "the trust",
         "vietnamese": "sự tin tưởng",
+        "pronunciation": { "ipa": "ət vərˈtrʌuʋə(n)", "phonetic": "ut vur-trou-vun" },
         "dutchsentence": "Vertrouwen is essentieel in een relatie.",
         "englishtranslate": "Trust is essential in a relationship."
     },
@@ -24,6 +27,7 @@
         "dutch": "het respect",
         "english": "the respect",
         "vietnamese": "sự tôn trọng",
+        "pronunciation": { "ipa": "ət rɛˈspɛkt", "phonetic": "ut reh-spekt" },
         "dutchsentence": "Hij heeft veel respect voor zijn leraar.",
         "englishtranslate": "He has a lot of respect for his teacher."
     },
@@ -31,6 +35,7 @@
         "dutch": "het paard (-en)",
         "english": "the horse(s)",
         "vietnamese": "con ngựa",
+        "pronunciation": { "ipa": "ət paːrt", "phonetic": "ut pahrt" },
         "dutchsentence": "Zij rijdt elke week op haar paard.",
         "englishtranslate": "She rides her horse every week."
     },
@@ -38,6 +43,7 @@
         "dutch": "de firma (-'s)",
         "english": "the firm(s)",
         "vietnamese": "công ty",
+        "pronunciation": { "ipa": "də ˈfɪrmaː", "phonetic": "du feer-mah" },
         "dutchsentence": "Mijn oom werkt voor een grote firma in Brussel.",
         "englishtranslate": "My uncle works for a large firm (company) in Brussels."
     },
@@ -45,6 +51,7 @@
         "dutch": "het oor (oren)",
         "english": "the ear(s)",
         "vietnamese": "tai",
+        "pronunciation": { "ipa": "ət oːr", "phonetic": "ut ohr" },
         "dutchsentence": "Ik heb pijn aan mijn oor.",
         "englishtranslate": "I have pain in my ear."
     },
@@ -52,6 +59,7 @@
         "dutch": "de werkgever (-s)",
         "english": "the employer(s)",
         "vietnamese": "người sử dụng lao động",
+        "pronunciation": { "ipa": "də ˈʋɛrkˌxeːvər", "phonetic": "du verk-khay-vur" },
         "dutchsentence": "Zijn werkgever is tevreden over zijn prestaties.",
         "englishtranslate": "His employer is satisfied with his performance."
     },
@@ -59,6 +67,7 @@
         "dutch": "de kans (-en)",
         "english": "the chance(s)",
         "vietnamese": "cơ hội",
+        "pronunciation": { "ipa": "də kɑns", "phonetic": "du kans" },
         "dutchsentence": "Je krijgt maar één kans om dit examen te maken.",
         "englishtranslate": "You only get one chance to take this exam."
     },
@@ -66,6 +75,7 @@
         "dutch": "merci",
         "english": "thank you",
         "vietnamese": "cảm ơn",
+        "pronunciation": { "ipa": "mɛrˈsi", "phonetic": "mer-see" },
         "dutchsentence": "Merci voor de hulp met mijn zware tas.",
         "englishtranslate": "Thank you (merci) for the help with my heavy bag."
     },
@@ -73,6 +83,7 @@
         "dutch": "fijn",
         "english": "fine",
         "vietnamese": "tốt",
+        "pronunciation": { "ipa": "fɛin", "phonetic": "fine" },
         "dutchsentence": "Ik wens je een fijne dag!",
         "englishtranslate": "I wish you a fine (nice) day!"
     },
@@ -80,6 +91,7 @@
         "dutch": "tof",
         "english": "cool",
         "vietnamese": "tuyệt",
+        "pronunciation": { "ipa": "tɔf", "phonetic": "tof" },
         "dutchsentence": "Wat een toffe trui heb je aan!",
         "englishtranslate": "What a cool (nice) sweater you're wearing!"
     },
@@ -87,6 +99,7 @@
         "dutch": "wederzijds",
         "english": "mutual",
         "vietnamese": "lẫn nhau",
+        "pronunciation": { "ipa": "ˈʋeːdərˌzɛits", "phonetic": "vay-dur-zites" },
         "dutchsentence": "Er is een wederzijds respect tussen de collega's.",
         "englishtranslate": "There is a mutual respect between the colleagues."
     },
@@ -94,6 +107,7 @@
         "dutch": "fier",
         "english": "proud",
         "vietnamese": "tự hào",
+        "pronunciation": { "ipa": "fiːr", "phonetic": "feer" },
         "dutchsentence": "Ik ben heel fier op mijn dochter.",
         "englishtranslate": "I am very proud (fier) of my daughter."
     },
@@ -101,6 +115,7 @@
         "dutch": "trots",
         "english": "proud",
         "vietnamese": "tự hào",
+        "pronunciation": { "ipa": "trɔts", "phonetic": "trots" },
         "dutchsentence": "We zijn trots op wat we bereikt hebben.",
         "englishtranslate": "We are proud of what we have achieved."
     },
@@ -108,6 +123,7 @@
         "dutch": "via",
         "english": "via",
         "vietnamese": "qua",
+        "pronunciation": { "ipa": "ˈvijaː", "phonetic": "vee-yah" },
         "dutchsentence": "Ik stuur je het document via e-mail.",
         "englishtranslate": "I will send you the document via email."
     },
@@ -115,6 +131,7 @@
         "dutch": "luisterend",
         "english": "listening",
         "vietnamese": "lắng nghe",
+        "pronunciation": { "ipa": "ˈlœystərənt", "phonetic": "lou-stur-unt" },
         "dutchsentence": "De therapeut is een luisterend oor voor zijn patiënten.",
         "englishtranslate": "The therapist is a listening ear for his patients."
     },
@@ -122,6 +139,7 @@
         "dutch": "vertrouwen",
         "english": "(to) trust",
         "vietnamese": "(để) tin tưởng",
+        "pronunciation": { "ipa": "vərˈtrʌuʋə(n)", "phonetic": "vur-trou-vun" },
         "dutchsentence": "Ik kan hem volledig vertrouwen.",
         "englishtranslate": "I can fully trust him."
     },
@@ -129,6 +147,7 @@
         "dutch": "respecteren",
         "english": "(to) respect",
         "vietnamese": "(để) tôn trọng",
+        "pronunciation": { "ipa": "rɛspɛkˈteːrə(n)", "phonetic": "reh-spek-tay-run" },
         "dutchsentence": "Je moet de regels van het huis respecteren.",
         "englishtranslate": "You must respect the rules of the house."
     }

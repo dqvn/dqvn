@@ -3,6 +3,7 @@
         "dutch": "de waarheid (waarheden)",
         "english": "the truth (truths)",
         "vietnamese": "sự thật (những sự thật)",
+        "pronunciation": { "ipa": "də ˈʋaːrɦɛit", "phonetic": "du vahr-hate" },
         "dutchsentence": "Vertel me alsjeblieft de hele waarheid.",
         "englishtranslate": "Please tell me the whole truth."
     },
@@ -10,6 +11,7 @@
         "dutch": "de leugen (-s)",
         "english": "the lie (lies)",
         "vietnamese": "lời nói dối (những lời nói dối)",
+        "pronunciation": { "ipa": "də ˈløːɣə(n)", "phonetic": "du luh-khun" },
         "dutchsentence": "Het is nooit goed om een leugen te vertellen.",
         "englishtranslate": "It is never good to tell a lie."
     },
@@ -17,6 +19,7 @@
         "dutch": "het excuus (excuses)",
         "english": "the excuse (excuses)",
         "vietnamese": "lời xin lỗi (những lời xin lỗi)",
+        "pronunciation": { "ipa": "ət ɛksˈkyːs", "phonetic": "ut eks-kus" },
         "dutchsentence": "Ik heb geen goed excuus voor mijn late komst.",
         "englishtranslate": "I don't have a good excuse for my late arrival."
     },
@@ -24,6 +27,7 @@
         "dutch": "het spijt me",
         "english": "I'm sorry",
         "vietnamese": "tôi xin lỗi",
+        "pronunciation": { "ipa": "ət spɛit mə", "phonetic": "ut spite mu" },
         "dutchsentence": "Het spijt me dat ik je heb laten wachten.",
         "englishtranslate": "I'm sorry that I made you wait."
     },
@@ -31,6 +35,7 @@
         "dutch": "nadat",
         "english": "after",
         "vietnamese": "sau khi",
+        "pronunciation": { "ipa": "naːˈdɑt", "phonetic": "nah-dat" },
         "dutchsentence": "Nadat we gegeten hadden, gingen we wandelen.",
         "englishtranslate": "After we had eaten, we went for a walk."
     },
@@ -38,6 +43,7 @@
         "dutch": "voordat",
         "english": "before",
         "vietnamese": "trước khi",
+        "pronunciation": { "ipa": "ˈvoːrdaːt", "phonetic": "vohr-daht" },
         "dutchsentence": "Drink water voordat je gaat slapen.",
         "englishtranslate": "Drink water before you go to sleep."
     },
@@ -45,6 +51,7 @@
         "dutch": "daarvoor",
         "english": "before that",
         "vietnamese": "trước đó",
+        "pronunciation": { "ipa": "daːrˈvoːr", "phonetic": "dahr-vohr" },
         "dutchsentence": "Ik heb hem gisteren ontmoet, en daarvoor kende ik hem niet.",
         "englishtranslate": "I met him yesterday, and before that, I didn't know him."
     },
@@ -52,6 +59,7 @@
         "dutch": "halen (gehaald)",
         "english": "to fetch (fetched)",
         "vietnamese": "lấy (đã lấy)",
+        "pronunciation": { "ipa": "ˈɦaːlə(n)", "phonetic": "hah-lun" },
         "dutchsentence": "Kan je even de post uit de brievenbus halen?",
         "englishtranslate": "Can you quickly fetch the mail from the mailbox?"
     },
@@ -59,6 +67,7 @@
         "dutch": "geven",
         "english": "to give",
         "vietnamese": "cho",
+        "pronunciation": { "ipa": "ˈɣeːvə(n)", "phonetic": "khay-vun" },
         "dutchsentence": "Zou je me het zout even willen geven?",
         "englishtranslate": "Would you like to give me the salt for a moment?"
     },
@@ -66,6 +75,7 @@
         "dutch": "nemen",
         "english": "to take",
         "vietnamese": "lấy",
+        "pronunciation": { "ipa": "ˈneːmə(n)", "phonetic": "nay-mun" },
         "dutchsentence": "Ik neem de trein van negen uur.",
         "englishtranslate": "I'll take the nine o'clock train."
     },
@@ -73,6 +83,7 @@
         "dutch": "liggen",
         "english": "to lie",
         "vietnamese": "nằm",
+        "pronunciation": { "ipa": "ˈlɪɣə(n)", "phonetic": "likh-un" },
         "dutchsentence": "Het boek ligt op tafel, niet op de stoel.",
         "englishtranslate": "The book is lying on the table, not on the chair."
     },
@@ -80,6 +91,7 @@
         "dutch": "denken",
         "english": "to think",
         "vietnamese": "nghĩ",
+        "pronunciation": { "ipa": "ˈdɛŋkə(n)", "phonetic": "denk-un" },
         "dutchsentence": "Wat denk je van dit nieuwe plan?",
         "englishtranslate": "What do you think of this new plan?"
     },
@@ -87,6 +99,7 @@
         "dutch": "zitten",
         "english": "to sit",
         "vietnamese": "ngồi",
+        "pronunciation": { "ipa": "ˈzɪtə(n)", "phonetic": "zit-un" },
         "dutchsentence": "We zitten in de keuken te praten.",
         "englishtranslate": "We are sitting in the kitchen talking."
     },
@@ -94,6 +107,7 @@
         "dutch": "brengen",
         "english": "to bring",
         "vietnamese": "mang",
+        "pronunciation": { "ipa": "ˈbrɛŋə(n)", "phonetic": "breng-un" },
         "dutchsentence": "Ik zal de taart naar het feest brengen.",
         "englishtranslate": "I will bring the cake to the party."
     },
@@ -101,6 +115,7 @@
         "dutch": "lachen",
         "english": "to laugh",
         "vietnamese": "cười",
+        "pronunciation": { "ipa": "ˈlɑxə(n)", "phonetic": "lakh-un" },
         "dutchsentence": "Ze moest hard lachen om de grap.",
         "englishtranslate": "She had to laugh hard at the joke."
     },
@@ -108,6 +123,7 @@
         "dutch": "wassen",
         "english": "to wash",
         "vietnamese": "rửa",
+        "pronunciation": { "ipa": "ˈʋɑsə(n)", "phonetic": "vas-un" },
         "dutchsentence": "Je moet je auto nodig wassen.",
         "englishtranslate": "You really need to wash your car."
     },
@@ -115,6 +131,7 @@
         "dutch": "vergeten",
         "english": "to forget",
         "vietnamese": "quên",
+        "pronunciation": { "ipa": "vərˈɣeːtə(n)", "phonetic": "vur-khay-tun" },
         "dutchsentence": "Probeer niet te vergeten mij een bericht te sturen.",
         "englishtranslate": "Try not to forget to send me a message."
     },
@@ -122,6 +139,7 @@
         "dutch": "breken",
         "english": "to break",
         "vietnamese": "gãy",
+        "pronunciation": { "ipa": "ˈbreːkə(n)", "phonetic": "bray-kun" },
         "dutchsentence": "Het kan breken als je het laat vallen.",
         "englishtranslate": "It can break if you drop it."
     }

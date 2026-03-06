@@ -3,6 +3,7 @@
         "dutch": "de brief (brieven)",
         "english": "the letter (letters)",
         "vietnamese": "lá thư (những lá thư)",
+        "pronunciation": { "ipa": "də brif", "phonetic": "du breef" },
         "dutchsentence": "Ik heb een brief naar mijn grootouders gestuurd.",
         "englishtranslate": "I sent a letter to my grandparents."
     },
@@ -10,6 +11,7 @@
         "dutch": "het papier (-en)",
         "english": "the paper (papers)",
         "vietnamese": "giấy (những tờ giấy)",
+        "pronunciation": { "ipa": "ət paːˈpir", "phonetic": "ut pah-peer" },
         "dutchsentence": "Kun je mij een stuk papier geven?",
         "englishtranslate": "Can you give me a piece of paper?"
     },
@@ -17,6 +19,7 @@
         "dutch": "de groet (-en)",
         "english": "the greeting (greetings)",
         "vietnamese": "lời chào (những lời chào)",
+        "pronunciation": { "ipa": "də xrut", "phonetic": "du khroot" },
         "dutchsentence": "De groet 'Hallo' is erg gebruikelijk.",
         "englishtranslate": "The greeting 'Hello' is very common."
     },
@@ -24,6 +27,7 @@
         "dutch": "de jas (-sen)",
         "english": "the coat (coats)",
         "vietnamese": "áo khoác (những áo khoác)",
+        "pronunciation": { "ipa": "də jɑs", "phonetic": "du yas" },
         "dutchsentence": "Het is koud, dus trek je jas aan.",
         "englishtranslate": "It is cold, so put on your coat."
     },
@@ -31,6 +35,7 @@
         "dutch": "de bijlage (-s)",
         "english": "the attachment (attachments)",
         "vietnamese": "tệp đính kèm (những tệp đính kèm)",
+        "pronunciation": { "ipa": "də ˈbɛilaːɣə", "phonetic": "du bye-lah-khuh" },
         "dutchsentence": "Open de bijlage in de e-mail om het verslag te lezen.",
         "englishtranslate": "Open the attachment in the email to read the report."
     },
@@ -38,6 +43,7 @@
         "dutch": "digitaal",
         "english": "digital",
         "vietnamese": "kỹ thuật số",
+        "pronunciation": { "ipa": "diɣiˈtaːl", "phonetic": "dee-khee-tahl" },
         "dutchsentence": "Veel documenten worden nu digitaal opgeslagen.",
         "englishtranslate": "Many documents are now stored digitally."
     },
@@ -45,6 +51,7 @@
         "dutch": "lief",
         "english": "sweet",
         "vietnamese": "ngọt ngào",
+        "pronunciation": { "ipa": "lif", "phonetic": "leef" },
         "dutchsentence": "Wat lief dat je mij helpt!",
         "englishtranslate": "How sweet that you are helping me!"
     },
@@ -52,6 +59,7 @@
         "dutch": "alvast",
         "english": "already",
         "vietnamese": "đã",
+        "pronunciation": { "ipa": "ɑlˈvɑst", "phonetic": "al-vast" },
         "dutchsentence": "Alvast bedankt voor uw hulp!",
         "englishtranslate": "Thank you already (in advance) for your help!"
     },
@@ -59,6 +67,7 @@
         "dutch": "vergeten, vergeten (met zijn)",
         "english": "to forget, forgotten (with to be)",
         "vietnamese": "quên, đã quên (với là)",
+        "pronunciation": { "ipa": "vərˈɣeːtə(n)", "phonetic": "vur-khay-tun" },
         "dutchsentence": "Oei, ik ben mijn sleutels vergeten.",
         "englishtranslate": "Oops, I have forgotten my keys."
     },
@@ -66,6 +75,7 @@
         "dutch": "zeggen",
         "english": "to say",
         "vietnamese": "nói",
+        "pronunciation": { "ipa": "ˈzɛɣə(n)", "phonetic": "zekh-un" },
         "dutchsentence": "Wat wilde je net zeggen?",
         "englishtranslate": "What did you just want to say?"
     },
@@ -73,6 +83,7 @@
         "dutch": "vragen",
         "english": "to ask",
         "vietnamese": "hỏi",
+        "pronunciation": { "ipa": "ˈvraːɣə(n)", "phonetic": "vrah-khun" },
         "dutchsentence": "Je mag me alles vragen wat je wilt weten.",
         "englishtranslate": "You may ask me anything you want to know."
     },
@@ -80,6 +91,7 @@
         "dutch": "komen",
         "english": "to come",
         "vietnamese": "đến",
+        "pronunciation": { "ipa": "ˈkoːmə(n)", "phonetic": "koh-mun" },
         "dutchsentence": "Kun je morgen naar het feest komen?",
         "englishtranslate": "Can you come to the party tomorrow?"
     },
@@ -87,6 +99,7 @@
         "dutch": "spreken",
         "english": "to speak",
         "vietnamese": "nói chuyện",
+        "pronunciation": { "ipa": "ˈspreːkə(n)", "phonetic": "spray-kun" },
         "dutchsentence": "Zij spreekt drie talen vloeiend.",
         "englishtranslate": "She speaks three languages fluently."
     },
@@ -94,6 +107,7 @@
         "dutch": "hebben",
         "english": "to have",
         "vietnamese": "có",
+        "pronunciation": { "ipa": "ˈɦɛbə(n)", "phonetic": "heb-un" },
         "dutchsentence": "Ik heb een nieuwe telefoon gekocht.",
         "englishtranslate": "I have bought a new phone."
     },
@@ -101,6 +115,7 @@
         "dutch": "zijn",
         "english": "to be",
         "vietnamese": "là",
+        "pronunciation": { "ipa": "zɛin", "phonetic": "zyne" },
         "dutchsentence": "Zij is mijn beste vriendin.",
         "englishtranslate": "She is my best friend."
     },
@@ -108,6 +123,7 @@
         "dutch": "lezen",
         "english": "to read",
         "vietnamese": "đọc",
+        "pronunciation": { "ipa": "ˈleːzə(n)", "phonetic": "lay-zun" },
         "dutchsentence": "Ik hou ervan om 's avonds een boek te lezen.",
         "englishtranslate": "I love to read a book in the evening."
     },
@@ -115,6 +131,7 @@
         "dutch": "zien",
         "english": "to see",
         "vietnamese": "nhìn",
+        "pronunciation": { "ipa": "zin", "phonetic": "zeen" },
         "dutchsentence": "Kun je de bergen vanaf hier zien?",
         "englishtranslate": "Can you see the mountains from here?"
     }

@@ -3,6 +3,7 @@
         "dutch": "de pil (-len)",
         "english": "the pill (pills)",
         "vietnamese": "viên thuốc (những viên thuốc)",
+        "pronunciation": { "ipa": "də pɪl", "phonetic": "du pil" },
         "dutchsentence": "Je moet deze pil één keer per dag innemen.",
         "englishtranslate": "You must take this pill once a day."
     },
@@ -10,6 +11,7 @@
         "dutch": "het medicament (-en)",
         "english": "the medication (medications)",
         "vietnamese": "thuốc (những loại thuốc)",
+        "pronunciation": { "ipa": "ət medikaːˈmɛnt", "phonetic": "ut may-dee-kah-ment" },
         "dutchsentence": "Het medicament moet de pijn verzachten.",
         "englishtranslate": "The medication must relieve the pain."
     },
@@ -17,6 +19,7 @@
         "dutch": "het voorschrift (-en)",
         "english": "the prescription (prescriptions)",
         "vietnamese": "đơn thuốc (những đơn thuốc)",
+        "pronunciation": { "ipa": "ət ˈvoːrsxrɪft", "phonetic": "ut vohr-skhrift" },
         "dutchsentence": "De dokter schreef een nieuw voorschrift uit.",
         "englishtranslate": "The doctor wrote a new prescription."
     },
@@ -24,6 +27,7 @@
         "dutch": "het doktersbriefje (-s)",
         "english": "the doctor's note (doctor's notes)",
         "vietnamese": "giấy khám bệnh (những giấy khám bệnh)",
+        "pronunciation": { "ipa": "ət ˈdɔktərsbrifjə", "phonetic": "ut dok-turs-breef-yu" },
         "dutchsentence": "Hij heeft een doktersbriefje voor zijn werk nodig.",
         "englishtranslate": "He needs a doctor's note for his work."
     },
@@ -31,6 +35,7 @@
         "dutch": "de apotheek (apotheken)",
         "english": "the pharmacy (pharmacies)",
         "vietnamese": "nhà thuốc (những nhà thuốc)",
+        "pronunciation": { "ipa": "də ˌaːpoːˈteːk", "phonetic": "du ah-po-tayk" },
         "dutchsentence": "Ik ga naar de apotheek om mijn medicijnen te halen.",
         "englishtranslate": "I am going to the pharmacy to get my medicines."
     },
@@ -38,13 +43,15 @@
         "dutch": "de koorts",
         "english": "the fever",
         "vietnamese": "sốt",
-        "dutchsentence": "Het kind heeft hoge koorts en moet in bed blijven.",
+        "pronunciation": { "ipa": "də koːrts", "phonetic": "du kohrts" },
+        "dutchsentence": "Het kind heeft hoge koorts and moet in bed blijven.",
         "englishtranslate": "The child has a high fever and must stay in bed."
     },
     {
         "dutch": "de ziekte (-s)",
         "english": "the illness (illnesses)",
         "vietnamese": "bệnh (những bệnh)",
+        "pronunciation": { "ipa": "də ˈziktə", "phonetic": "du zeek-tuh" },
         "dutchsentence": "Zij lijdt aan een zeldzame ziekte.",
         "englishtranslate": "She suffers from a rare illness."
     },
@@ -52,6 +59,7 @@
         "dutch": "de verkoudheid (verkoudheden)",
         "english": "the cold (colds)",
         "vietnamese": "cảm lạnh (những cảm lạnh)",
+        "pronunciation": { "ipa": "də vərˈkʌudhɛit", "phonetic": "du vur-kowd-hate" },
         "dutchsentence": "Met deze verkoudheid kan ik niet goed slapen.",
         "englishtranslate": "With this cold, I cannot sleep well."
     },
@@ -59,6 +67,7 @@
         "dutch": "de griep",
         "english": "the flu",
         "vietnamese": "cúm",
+        "pronunciation": { "ipa": "də xrip", "phonetic": "du khreep" },
         "dutchsentence": "Ik heb al twee weken de griep en voel me zwak.",
         "englishtranslate": "I have had the flu for two weeks already and feel weak."
     },
@@ -66,13 +75,15 @@
         "dutch": "ziek",
         "english": "sick",
         "vietnamese": "ốm",
+        "pronunciation": { "ipa": "zik", "phonetic": "zeek" },
         "dutchsentence": "Ze is te ziek om vandaag naar school te gaan.",
         "englishtranslate": "She is too sick to go to school today."
     },
     {
-        "dutch": "aanraken (participium later)",
-        "english": "to touch (participle later)",
-        "vietnamese": "chạm (phân từ sau)",
+        "dutch": "aanraken",
+        "english": "to touch",
+        "vietnamese": "chạm",
+        "pronunciation": { "ipa": "ˈaːnraːkə(n)", "phonetic": "ahn-rah-kun" },
         "dutchsentence": "Raak het hete fornuis niet aan!",
         "englishtranslate": "Do not touch the hot stove!"
     },
@@ -80,6 +91,7 @@
         "dutch": "raken (geraakt)",
         "english": "to hit (hit)",
         "vietnamese": "đánh (đã đánh)",
+        "pronunciation": { "ipa": "ˈraːkə(n)", "phonetic": "rah-kun" },
         "dutchsentence": "De bal raakte het raam en brak het glas.",
         "englishtranslate": "The ball hit the window and broke the glass."
     },
@@ -87,6 +99,7 @@
         "dutch": "kneuzen (gekneusd)",
         "english": "to bruise (bruised)",
         "vietnamese": "bầm tím (đã bầm tím)",
+        "pronunciation": { "ipa": "ˈknøːzə(n)", "phonetic": "knuh-zun" },
         "dutchsentence": "Ik ben gevallen en heb mijn knie gekneusd.",
         "englishtranslate": "I fell and bruised my knee."
     },
@@ -94,6 +107,7 @@
         "dutch": "breken (gebroken)",
         "english": "to break (broken)",
         "vietnamese": "gãy (đã gãy)",
+        "pronunciation": { "ipa": "ˈbreːkə(n)", "phonetic": "bray-kun" },
         "dutchsentence": "Pas op dat je de vaas niet breekt.",
         "englishtranslate": "Be careful not to break the vase."
     },
@@ -101,6 +115,7 @@
         "dutch": "niezen (geniesd)",
         "english": "to sneeze (sneezed)",
         "vietnamese": "hắt hơi (đã hắt hơi)",
+        "pronunciation": { "ipa": "ˈnizə(n)", "phonetic": "nee-zun" },
         "dutchsentence": "Ik moet de hele tijd niezen door de pollen.",
         "englishtranslate": "I have to sneeze all the time because of the pollen."
     },
@@ -108,6 +123,7 @@
         "dutch": "hoesten (gehoest)",
         "english": "to cough (coughed)",
         "vietnamese": "ho (đã ho)",
+        "pronunciation": { "ipa": "ˈɦustə(n)", "phonetic": "hoo-stun" },
         "dutchsentence": "Hij begon te hoesten door de rook.",
         "englishtranslate": "He started to cough because of the smoke."
     },
@@ -115,6 +131,7 @@
         "dutch": "lijken (geleken)",
         "english": "to seem (seemed)",
         "vietnamese": "dường như (đã dường như)",
+        "pronunciation": { "ipa": "ˈlɛikə(n)", "phonetic": "ly-kun" },
         "dutchsentence": "Het lijkt erop dat het gaat regenen.",
         "englishtranslate": "It seems like it is going to rain."
     }

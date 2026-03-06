@@ -3,6 +3,7 @@
         "dutch": "het gevoel (-ens)",
         "english": "the feeling(s)",
         "vietnamese": "cảm giác",
+        "pronunciation": { "ipa": "ət ɣəˈvuɫ", "phonetic": "ut khuh-vool" },
         "dutchsentence": "Ik heb een vreemd gevoel in mijn buik.",
         "englishtranslate": "I have a strange feeling in my stomach."
     },
@@ -10,6 +11,7 @@
         "dutch": "de haat",
         "english": "the hate",
         "vietnamese": "sự ghét",
+        "pronunciation": { "ipa": "də ɦaːt", "phonetic": "du haht" },
         "dutchsentence": "Haat kan tot vreselijke conflicten leiden.",
         "englishtranslate": "Hate can lead to terrible conflicts."
     },
@@ -17,6 +19,7 @@
         "dutch": "bang",
         "english": "scared",
         "vietnamese": "sợ",
+        "pronunciation": { "ipa": "bɑŋ", "phonetic": "bang" },
         "dutchsentence": "Ben je bang in het donker?",
         "englishtranslate": "Are you scared in the dark?"
     },
@@ -24,6 +27,7 @@
         "dutch": "blij; gelukkig",
         "english": "happy",
         "vietnamese": "vui",
+        "pronunciation": { "ipa": "blɛi; ɣəˈlʏkəx", "phonetic": "blye; khuh-luk-ukh" },
         "dutchsentence": "Ik ben heel blij met mijn nieuwe fiets.",
         "englishtranslate": "I am very happy with my new bicycle."
     },
@@ -31,6 +35,7 @@
         "dutch": "boos; kwaad",
         "english": "angry",
         "vietnamese": "tức giận",
+        "pronunciation": { "ipa": "boːs; kʋaːt", "phonetic": "bohs; kwaht" },
         "dutchsentence": "Hij is boos omdat de trein vertraging heeft.",
         "englishtranslate": "He is angry because the train is delayed."
     },
@@ -38,6 +43,7 @@
         "dutch": "intelligent",
         "english": "intelligent",
         "vietnamese": "thông minh",
+        "pronunciation": { "ipa": "ɪntɛliˈɣɛnt", "phonetic": "in-tel-ee-khent" },
         "dutchsentence": "Zij is een zeer intelligente student.",
         "englishtranslate": "She is a very intelligent student."
     },
@@ -45,6 +51,7 @@
         "dutch": "slim",
         "english": "smart",
         "vietnamese": "khôn ngoan",
+        "pronunciation": { "ipa": "slɪm", "phonetic": "slim" },
         "dutchsentence": "Dat was een slimme zet in het schaakspel.",
         "englishtranslate": "That was a smart move in the chess game."
     },
@@ -52,6 +59,7 @@
         "dutch": "stom",
         "english": "stupid",
         "vietnamese": "ngu ngốc",
+        "pronunciation": { "ipa": "stɔm", "phonetic": "stom" },
         "dutchsentence": "Ik voel me stom omdat ik de sleutels vergeten ben.",
         "englishtranslate": "I feel stupid because I forgot the keys."
     },
@@ -59,6 +67,7 @@
         "dutch": "dom",
         "english": "dumb",
         "vietnamese": "ngu dốt",
+        "pronunciation": { "ipa": "dɔm", "phonetic": "dom" },
         "dutchsentence": "Dat was een domme fout om te maken.",
         "englishtranslate": "That was a dumb mistake to make."
     },
@@ -66,6 +75,7 @@
         "dutch": "idioot",
         "english": "idiot",
         "vietnamese": "kẻ ngốc",
+        "pronunciation": { "ipa": "idiˈoːt", "phonetic": "ee-dee-oht" },
         "dutchsentence": "Gedraag je niet als een idioot in het verkeer.",
         "englishtranslate": "Don't behave like an idiot in traffic."
     },
@@ -73,6 +83,7 @@
         "dutch": "reflexief",
         "english": "reflexive",
         "vietnamese": "phản xạ",
+        "pronunciation": { "ipa": "reːflɛkˈsif", "phonetic": "ray-flek-seef" },
         "dutchsentence": "Veel Nederlandse werkwoorden zijn reflexief.",
         "englishtranslate": "Many Dutch verbs are reflexive."
     },
@@ -80,6 +91,7 @@
         "dutch": "zich",
         "english": "oneself",
         "vietnamese": "bản thân",
+        "pronunciation": { "ipa": "zɪx", "phonetic": "zikh" },
         "dutchsentence": "Zij wast zich elke ochtend.",
         "englishtranslate": "She washes herself every morning."
     },
@@ -87,6 +99,7 @@
         "dutch": "zich voelen (gevoeld)",
         "english": "(to) feel (felt)",
         "vietnamese": "(để) cảm thấy (đã cảm thấy)",
+        "pronunciation": { "ipa": "zɪx ˈvulə(n)", "phonetic": "zikh voo-lun" },
         "dutchsentence": "Hoe voel je je vandaag?",
         "englishtranslate": "How do you feel today?"
     },
@@ -94,6 +107,7 @@
         "dutch": "zich voorstellen",
         "english": "(to) imagine",
         "vietnamese": "(để) tưởng tượng",
+        "pronunciation": { "ipa": "zɪx ˈvoːrˌstɛlə(n)", "phonetic": "zikh vohr-stel-un" },
         "dutchsentence": "Kun je je voorstellen dat je op Mars bent?",
         "englishtranslate": "Can you imagine (yourself) being on Mars?"
     },
@@ -101,6 +115,7 @@
         "dutch": "zich herinneren (herinnerd)",
         "english": "(to) remember (remembered)",
         "vietnamese": "(để) nhớ (đã nhớ)",
+        "pronunciation": { "ipa": "zɪx ɦɛˈrɪnərə(n)", "phonetic": "zikh heh-rin-uh-run" },
         "dutchsentence": "Ik kan me zijn naam niet meer herinneren.",
         "englishtranslate": "I can't remember his name anymore."
     }

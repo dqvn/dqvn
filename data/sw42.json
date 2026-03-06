@@ -3,6 +3,7 @@
         "dutch": "het spel (-len)",
         "english": "the game (games)",
         "vietnamese": "trò chơi (những trò chơi)",
+        "pronunciation": { "ipa": "ət spɛl", "phonetic": "ut spel" },
         "dutchsentence": "Wie heeft het spel gewonnen gisteren?",
         "englishtranslate": "Who won the game yesterday?"
     },
@@ -10,6 +11,7 @@
         "dutch": "scheidbaar",
         "english": "separable",
         "vietnamese": "có thể tách rời",
+        "pronunciation": { "ipa": "ˈsxɛitbaːr", "phonetic": "skhite-bahr" },
         "dutchsentence": "Veel samengestelde werkwoorden zijn scheidbaar.",
         "englishtranslate": "Many compound verbs are separable."
     },
@@ -17,6 +19,7 @@
         "dutch": "zelf",
         "english": "self",
         "vietnamese": "bản thân",
+        "pronunciation": { "ipa": "zɛlf", "phonetic": "zelf" },
         "dutchsentence": "Ik heb het huiswerk zelf gedaan.",
         "englishtranslate": "I did the homework myself."
     },
@@ -24,6 +27,7 @@
         "dutch": "binnenkomen (binnengekomen)",
         "english": "to enter (entered)",
         "vietnamese": "vào (đã vào)",
+        "pronunciation": { "ipa": "ˈbɪnə(n)ˌkoːmə(n)", "phonetic": "bin-un-koh-mun" },
         "dutchsentence": "Je mag hier niet binnenkomen zonder uitnodiging.",
         "englishtranslate": "You may not enter here without an invitation."
     },
@@ -31,6 +35,7 @@
         "dutch": "opgeven (opgegeven)",
         "english": "to give up (given up)",
         "vietnamese": "bỏ cuộc (đã bỏ cuộc)",
+        "pronunciation": { "ipa": "ˈɔpxeːvə(n)", "phonetic": "op-khay-vun" },
         "dutchsentence": "Je moet nooit opgeven, ook al is het moeilijk.",
         "englishtranslate": "You must never give up, even if it is difficult."
     },
@@ -38,6 +43,7 @@
         "dutch": "krijgen",
         "english": "to get",
         "vietnamese": "nhận",
+        "pronunciation": { "ipa": "ˈkrɛiɣə(n)", "phonetic": "kry-khun" },
         "dutchsentence": "Ik hoop dat ik een cadeau krijg voor mijn verjaardag.",
         "englishtranslate": "I hope that I get a gift for my birthday."
     },
@@ -45,6 +51,7 @@
         "dutch": "kijken",
         "english": "to look",
         "vietnamese": "nhìn",
+        "pronunciation": { "ipa": "ˈkɛikə(n)", "phonetic": "ky-kun" },
         "dutchsentence": "Kijk uit naar de rode auto die voorbij rijdt.",
         "englishtranslate": "Look out for the red car driving past."
     },
@@ -52,6 +59,7 @@
         "dutch": "rijden",
         "english": "to drive",
         "vietnamese": "lái xe",
+        "pronunciation": { "ipa": "ˈrɛidə(n)", "phonetic": "ry-dun" },
         "dutchsentence": "Zij kan heel goed auto rijden.",
         "englishtranslate": "She can drive a car very well."
     },
@@ -59,6 +67,7 @@
         "dutch": "blijven",
         "english": "to stay",
         "vietnamese": "ở lại",
+        "pronunciation": { "ipa": "ˈblɛivə(n)", "phonetic": "bly-vun" },
         "dutchsentence": "We blijven dit weekend thuis vanwege de regen.",
         "englishtranslate": "We are staying home this weekend because of the rain."
     },
@@ -66,6 +75,7 @@
         "dutch": "beschrijven",
         "english": "to describe",
         "vietnamese": "mô tả",
+        "pronunciation": { "ipa": "bəˈsxrɛivə(n)", "phonetic": "bu-skhry-vun" },
         "dutchsentence": "Kan je de film beschrijven die je gisteren zag?",
         "englishtranslate": "Can you describe the movie you saw yesterday?"
     },
@@ -73,6 +83,7 @@
         "dutch": "bewijzen",
         "english": "to prove",
         "vietnamese": "chứng minh",
+        "pronunciation": { "ipa": "bəˈʋɛizə(n)", "phonetic": "bu-vize-un" },
         "dutchsentence": "Hij probeerde de theorie met experimenten te bewijzen.",
         "englishtranslate": "He tried to prove the theory with experiments."
     },
@@ -80,6 +91,7 @@
         "dutch": "lijken",
         "english": "to seem",
         "vietnamese": "dường như",
+        "pronunciation": { "ipa": "ˈlɛikə(n)", "phonetic": "ly-kun" },
         "dutchsentence": "Hij lijkt erg moe te zijn na de lange vlucht.",
         "englishtranslate": "He seems to be very tired after the long flight."
     },
@@ -87,6 +99,7 @@
         "dutch": "houden",
         "english": "to hold",
         "vietnamese": "giữ",
+        "pronunciation": { "ipa": "ˈɦʌudə(n)", "phonetic": "how-dun" },
         "dutchsentence": "Zou je deze tas even voor mij willen houden?",
         "englishtranslate": "Would you like to hold this bag for me for a moment?"
     },
@@ -94,6 +107,7 @@
         "dutch": "helpen",
         "english": "to help",
         "vietnamese": "giúp đỡ",
+        "pronunciation": { "ipa": "ˈɦɛlpə(n)", "phonetic": "help-un" },
         "dutchsentence": "Kan iemand mij helpen met deze zware dozen?",
         "englishtranslate": "Can someone help me with these heavy boxes?"
     },
@@ -101,6 +115,7 @@
         "dutch": "vallen",
         "english": "to fall",
         "vietnamese": "ngã",
+        "pronunciation": { "ipa": "ˈvɑlə(n)", "phonetic": "val-un" },
         "dutchsentence": "Pas op dat je niet van de trap valt.",
         "englishtranslate": "Be careful not to fall down the stairs."
     },
@@ -108,6 +123,7 @@
         "dutch": "laten",
         "english": "to let",
         "vietnamese": "để",
+        "pronunciation": { "ipa": "ˈlaːtə(n)", "phonetic": "lah-tun" },
         "dutchsentence": "Laat me weten wanneer je aankomt.",
         "englishtranslate": "Let me know when you arrive."
     },
@@ -115,6 +131,7 @@
         "dutch": "lopen",
         "english": "to walk",
         "vietnamese": "đi bộ",
+        "pronunciation": { "ipa": "ˈloːpə(n)", "phonetic": "low-pun" },
         "dutchsentence": "We lopen elke ochtend naar de bakker.",
         "englishtranslate": "We walk to the baker's every morning."
     },
@@ -122,6 +139,7 @@
         "dutch": "slapen",
         "english": "to sleep",
         "vietnamese": "ngủ",
+        "pronunciation": { "ipa": "ˈslaːpə(n)", "phonetic": "slah-pun" },
         "dutchsentence": "Ik heb vannacht maar vijf uur geslapen.",
         "englishtranslate": "I only slept five hours last night."
     },
@@ -129,6 +147,7 @@
         "dutch": "sterven",
         "english": "to die",
         "vietnamese": "chết",
+        "pronunciation": { "ipa": "ˈstɛrvə(n)", "phonetic": "stair-vun" },
         "dutchsentence": "De oude boom dreigt te sterven door de droogte.",
         "englishtranslate": "The old tree threatens to die because of the drought."
     },
@@ -136,13 +155,15 @@
         "dutch": "worden",
         "english": "to become",
         "vietnamese": "trở thành",
-        "dutchsentence": "Wat wil je later worden als je groot bent?",
+        "pronunciation": { "ipa": "ˈʋɔrdə(n)", "phonetic": "vor-dun" },
+        "dutchsentence": "Wat vil je later worden als je groot bent?",
         "englishtranslate": "What do you want to become later when you are grown up?"
     },
     {
         "dutch": "vriezen",
         "english": "to freeze",
         "vietnamese": "đóng băng",
+        "pronunciation": { "ipa": "ˈvrizə(n)", "phonetic": "vree-zun" },
         "dutchsentence": "Het heeft de hele nacht gevroren, dus pas op voor gladheid.",
         "englishtranslate": "It has frozen all night, so watch out for slickness."
     }

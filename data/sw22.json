@@ -3,6 +3,7 @@
         "dutch": "de hand (-en)",
         "english": "the hand(s)",
         "vietnamese": "bàn tay",
+        "pronunciation": { "ipa": "də ɦɑnt", "phonetic": "du hant" },
         "dutchsentence": "Geef me je hand, dan help ik je.",
         "englishtranslate": "Give me your hand, then I will help you."
     },
@@ -10,6 +11,7 @@
         "dutch": "de betekenis (-sen)",
         "english": "the meaning(s)",
         "vietnamese": "ý nghĩa",
+        "pronunciation": { "ipa": "də bəˈteːkənɪs", "phonetic": "du bu-tay-kun-is" },
         "dutchsentence": "Wat is de betekenis van dat symbool?",
         "englishtranslate": "What is the meaning of that symbol?"
     },
@@ -17,6 +19,7 @@
         "dutch": "de bedoeling (-en)",
         "english": "the intention(s)",
         "vietnamese": "ý định",
+        "pronunciation": { "ipa": "də bəˈdulɪŋ", "phonetic": "du bu-doo-ling" },
         "dutchsentence": "Mijn bedoeling was om te helpen, niet om te storen.",
         "englishtranslate": "My intention was to help, not to disturb."
     },
@@ -24,6 +27,7 @@
         "dutch": "het noorden",
         "english": "the north",
         "vietnamese": "phía bắc",
+        "pronunciation": { "ipa": "ət ˈnoːrdə(n)", "phonetic": "ut nohr-dun" },
         "dutchsentence": "We wonen in het noorden van het land.",
         "englishtranslate": "We live in the north of the country."
     },
@@ -31,6 +35,7 @@
         "dutch": "het zuiden",
         "english": "the south",
         "vietnamese": "phía nam",
+        "pronunciation": { "ipa": "ət ˈzʌidə(n)", "phonetic": "ut zou-dun" },
         "dutchsentence": "In het zuiden is het vaak warmer.",
         "englishtranslate": "It is often warmer in the south."
     },
@@ -38,6 +43,7 @@
         "dutch": "het westen",
         "english": "the west",
         "vietnamese": "phía tây",
+        "pronunciation": { "ipa": "ət ˈʋɛstə(n)", "phonetic": "ut ves-tun" },
         "dutchsentence": "De zon gaat onder in het westen.",
         "englishtranslate": "The sun sets in the west."
     },
@@ -45,6 +51,7 @@
         "dutch": "het oosten",
         "english": "the east",
         "vietnamese": "phía đông",
+        "pronunciation": { "ipa": "ət ˈoːstə(n)", "phonetic": "ut oh-stun" },
         "dutchsentence": "De wind komt uit het oosten.",
         "englishtranslate": "The wind comes from the east."
     },
@@ -52,6 +59,7 @@
         "dutch": "het woordenboek (-en)",
         "english": "the dictionary (dictionaries)",
         "vietnamese": "từ điển",
+        "pronunciation": { "ipa": "ət ˈʋoːrdə(n)buk", "phonetic": "ut vohr-dun-book" },
         "dutchsentence": "Ik heb een woordenboek nodig om deze zin te vertalen.",
         "englishtranslate": "I need a dictionary to translate this sentence."
     },
@@ -59,6 +67,7 @@
         "dutch": "het Chinees",
         "english": "the Chinese",
         "vietnamese": "tiếng Trung",
+        "pronunciation": { "ipa": "ət ˌʃiˈneːs", "phonetic": "ut shee-nays" },
         "dutchsentence": "Zij spreekt vloeiend Chinees.",
         "englishtranslate": "She speaks Chinese fluently."
     },
@@ -66,6 +75,7 @@
         "dutch": "noord",
         "english": "north",
         "vietnamese": "bắc",
+        "pronunciation": { "ipa": "noːrt", "phonetic": "nohrt" },
         "dutchsentence": "We rijden richting het noorden.",
         "englishtranslate": "We are driving towards the north."
     },
@@ -73,6 +83,7 @@
         "dutch": "zuid",
         "english": "south",
         "vietnamese": "nam",
+        "pronunciation": { "ipa": "zʌit", "phonetic": "zout" },
         "dutchsentence": "De wind waait uit zuidelijke richting.",
         "englishtranslate": "The wind is blowing from the south direction."
     },
@@ -80,6 +91,7 @@
         "dutch": "west",
         "english": "west",
         "vietnamese": "tây",
+        "pronunciation": { "ipa": "ʋɛst", "phonetic": "vest" },
         "dutchsentence": "De wijk ligt ten westen van het centrum.",
         "englishtranslate": "The neighborhood is located west of the center."
     },
@@ -87,6 +99,7 @@
         "dutch": "oost",
         "english": "east",
         "vietnamese": "đông",
+        "pronunciation": { "ipa": "oːst", "phonetic": "ohst" },
         "dutchsentence": "De zon komt op in het oosten.",
         "englishtranslate": "The sun rises in the east."
     },
@@ -94,6 +107,7 @@
         "dutch": "betekenen",
         "english": "(to) mean",
         "vietnamese": "(để) có nghĩa là",
+        "pronunciation": { "ipa": "bəˈteːkənə(n)", "phonetic": "bu-tay-ku-nun" },
         "dutchsentence": "Wat betekenen deze nieuwe regels voor ons?",
         "englishtranslate": "What do these new rules mean for us?"
     },
@@ -101,6 +115,7 @@
         "dutch": "bedoelen",
         "english": "(to) intend",
         "vietnamese": "(để) có ý định",
+        "pronunciation": { "ipa": "bəˈdulə(n)", "phonetic": "bu-doo-lun" },
         "dutchsentence": "Wat bedoel je precies met die opmerking?",
         "englishtranslate": "What exactly do you mean (intend) with that remark?"
     },
@@ -108,6 +123,7 @@
         "dutch": "snappen",
         "english": "(to) understand",
         "vietnamese": "(để) hiểu",
+        "pronunciation": { "ipa": "ˈsnɑpə(n)", "phonetic": "snap-un" },
         "dutchsentence": "Ik snap de grammatica nu veel beter.",
         "englishtranslate": "I understand the grammar much better now."
     },
@@ -115,6 +131,7 @@
         "dutch": "verstaan",
         "english": "(to) comprehend",
         "vietnamese": "(để) hiểu",
+        "pronunciation": { "ipa": "vərˈstaːn", "phonetic": "vur-stahn" },
         "dutchsentence": "Ik versta niet wat je zegt, de muziek is te luid.",
         "englishtranslate": "I don't comprehend (hear/understand) what you are saying, the music is too loud."
     }
