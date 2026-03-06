@@ -4,97 +4,112 @@
         "english": "the workday",
         "vietnamese": "ngày làm việc",
         "dutchsentence": "Mijn werkdag is lang.",
-        "englishtranslate": "My workday is long."
+        "englishtranslate": "My workday is long.",
+        "pronunciation": { "ipa": "ˈʋɛrkdɑx", "phonetic": "verk-dakh" }
     },
     {
         "dutch": "de zon (-nen)",
         "english": "the sun",
         "vietnamese": "mặt trời",
         "dutchsentence": "Ik zie de zon.",
-        "englishtranslate": "I see the sun."
+        "englishtranslate": "I see the sun.",
+        "pronunciation": { "ipa": "zɔn", "phonetic": "zon" }
     },
     {
         "dutch": "iedereen",
         "english": "everyone",
         "vietnamese": "mọi người",
         "dutchsentence": "Hallo iedereen, hoe gaat het?",
-        "englishtranslate": "Hello everyone, how are you?"
+        "englishtranslate": "Hello everyone, how are you?",
+        "pronunciation": { "ipa": "ˈidəreːn", "phonetic": "ee-dur-ayn" }
     },
     {
         "dutch": "niemand",
         "english": "nobody",
         "vietnamese": "không ai",
         "dutchsentence": "Ik heb het nog niemand verteld.",
-        "englishtranslate": "I haven't told anyone yet."
+        "englishtranslate": "I haven't told anyone yet.",
+        "pronunciation": { "ipa": "ˈnimɑnt", "phonetic": "nee-mant" }
     },
     {
         "dutch": "iemand",
         "english": "someone",
         "vietnamese": "một ai đó",
         "dutchsentence": "Is er iemand thuis?",
-        "englishtranslate": "Is someone home?"
+        "englishtranslate": "Is someone home?",
+        "pronunciation": { "ipa": "ˈimɑnt", "phonetic": "ee-mant" }
     },
     {
         "dutch": "noemen",
-        "english": "name",
+        "english": "to name / to call",
         "vietnamese": "gọi tên",
         "dutchsentence": "Ik kan vele redenen noemen.",
-        "englishtranslate": "I can name many reasons."
+        "englishtranslate": "I can name many reasons.",
+        "pronunciation": { "ipa": "ˈnumə(n)", "phonetic": "noo-mun" }
     },
     {
         "dutch": "de taalles (-ssen)",
         "english": "the language lesson",
         "vietnamese": "bài học ngôn ngữ",
         "dutchsentence": "Tony geeft taalles aan vluchtelingen.",
-        "englishtranslate": "Tony gives language lessons to refugees."
+        "englishtranslate": "Tony gives language lessons to refugees.",
+        "pronunciation": { "ipa": "ˈtaːllɛs", "phonetic": "taal-les" }
     },
     {
         "dutch": "het dialect (-en)",
         "english": "the dialect",
-        "vietnamese": "địa phương",
+        "vietnamese": "tiếng địa phương",
         "dutchsentence": "Het dialect in Maastricht is heel speciaal.",
-        "englishtranslate": "The dialect in Maastricht is very special."
+        "englishtranslate": "The dialect in Maastricht is very special.",
+        "pronunciation": { "ipa": "di.aːˈlɛkt", "phonetic": "dee-aa-lekt" }
     },
     {
         "dutch": "het accent (-en)",
         "english": "the accent",
         "vietnamese": "giọng",
         "dutchsentence": "Het verschil is het accent.",
-        "englishtranslate": "The difference is the accent."
+        "englishtranslate": "The difference is the accent.",
+        "pronunciation": { "ipa": "ɑkˈsɛnt", "phonetic": "ak-sent" }
     },
     {
         "dutch": "veel te",
-        "english": "too much",
+        "english": "far too / way too",
         "vietnamese": "quá nhiều",
         "dutchsentence": "Dat is veel te weinig.",
-        "englishtranslate": "That is far too little."
+        "englishtranslate": "That is far too little.",
+        "notes": "Used as an intensifier for adjectives.",
+        "pronunciation": { "ipa": "veːl tə", "phonetic": "vayl tuh" }
     },
     {
         "dutch": "velen",
-        "english": "many",
+        "english": "many (people)",
         "vietnamese": "nhiều người",
         "dutchsentence": "Voor velen is dit moeilijk.",
-        "englishtranslate": "For many, this is difficult."
+        "englishtranslate": "For many, this is difficult.",
+        "pronunciation": { "ipa": "ˈveːlə(n)", "phonetic": "vay-lun" }
     },
     {
         "dutch": "het werkwoord (-en)",
         "english": "the verb",
         "vietnamese": "động từ",
         "dutchsentence": "Het werkwoord staat altijd vooraan.",
-        "englishtranslate": "The verb is always at the front."
+        "englishtranslate": "The verb is always at the front.",
+        "pronunciation": { "ipa": "ˈʋɛrkvʊːrt", "phonetic": "verk-voort" }
     },
     {
         "dutch": "modale werkwoorden",
         "english": "modal verbs",
         "vietnamese": "động từ khiếm khuyết",
         "dutchsentence": "Wij moeten modale werkwoorden leren.",
-        "englishtranslate": "We have to learn modal verbs."
+        "englishtranslate": "We have to learn modal verbs.",
+        "pronunciation": { "ipa": "moːˈdaːlə ˈʋɛrkvʊːrdə(n)", "phonetic": "mo-daa-lu verk-voor-dun" }
     },
     {
         "dutch": "volgen",
-        "english": "follow",
-        "vietnamese": "theo dõi",
+        "english": "to follow",
+        "vietnamese": "theo dõi / đi theo",
         "dutchsentence": "Als er één schaap over de dam is, volgen er meer.",
-        "englishtranslate": "If one sheep is over the dam, more will follow. (Proverb, similar to 'follow like sheep')"
+        "englishtranslate": "If one sheep is over the dam, more will follow.",
+        "pronunciation": { "ipa": "ˈvɔlɣə(n)", "phonetic": "vol-khun" }
     }
 ]

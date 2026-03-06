@@ -4,125 +4,143 @@
         "english": "the culture",
         "vietnamese": "văn hóa",
         "dutchsentence": "Ik vind de Nederlandse cultuur interessant.",
-        "englishtranslate": "I find the Dutch culture interesting."
+        "englishtranslate": "I find the Dutch culture interesting.",
+        "pronunciation": { "ipa": "kylˈtyːr", "phonetic": "kul-tuur" }
     },
     {
         "dutch": "de infinitief (-ven)",
         "english": "the infinitive",
         "vietnamese": "động từ nguyên thể",
         "dutchsentence": "Het werkwoord 'lopen' is een infinitief.",
-        "englishtranslate": "The verb 'lopen' is an infinitive."
+        "englishtranslate": "The verb 'lopen' is an infinitive.",
+        "pronunciation": { "ipa": "ɪnfiniˈtif", "phonetic": "in-fee-nee-teef" }
     },
     {
         "dutch": "het substantief (-ven)",
         "english": "the noun",
         "vietnamese": "danh từ",
         "dutchsentence": "Een substantief is een ander woord voor een zelfstandig naamwoord.",
-        "englishtranslate": "A noun is another word for a substantive (noun)."
+        "englishtranslate": "A noun is another word for a substantive (noun).",
+        "pronunciation": { "ipa": "sʏpstɑnˈtif", "phonetic": "sup-stan-teef" }
     },
     {
         "dutch": "de bioscoop (-copen)",
         "english": "the cinema",
         "vietnamese": "rạp chiếu phim",
         "dutchsentence": "Zullen we vanavond naar de bioscoop gaan?",
-        "englishtranslate": "Shall we go to the cinema tonight?"
+        "englishtranslate": "Shall we go to the cinema tonight?",
+        "pronunciation": { "ipa": "bijoːˈskoːp", "phonetic": "bee-yo-skoap" }
     },
     {
         "dutch": "het theater (-s)",
         "english": "the theater",
         "vietnamese": "nhà hát",
         "dutchsentence": "Er is een mooi theater in het centrum.",
-        "englishtranslate": "There is a beautiful theater in the city center."
+        "englishtranslate": "There is a beautiful theater in the city center.",
+        "pronunciation": { "ipa": "teːˈaːtər", "phonetic": "tay-aa-tur" }
     },
     {
         "dutch": "het festival (-s)",
         "english": "the festival",
         "vietnamese": "lễ hội",
         "dutchsentence": "Het muziekfestival was erg druk.",
-        "englishtranslate": "The music festival was very crowded."
+        "englishtranslate": "The music festival was very crowded.",
+        "pronunciation": { "ipa": "ˈfɛstivɑl", "phonetic": "fes-tee-val" }
     },
     {
         "dutch": "het museum (musea)",
         "english": "the museum",
         "vietnamese": "bảo tàng",
         "dutchsentence": "Morgen bezoeken we het Rijksmuseum.",
-        "englishtranslate": "Tomorrow we will visit the Rijksmuseum."
+        "englishtranslate": "Tomorrow we will visit the Rijksmuseum.",
+        "pronunciation": { "ipa": "myˈzeːjʏm", "phonetic": "mu-zay-yum" }
     },
     {
         "dutch": "de bibliotheek (-heken)",
         "english": "the library",
         "vietnamese": "thư viện",
         "dutchsentence": "Ik ga een boek lenen bij de bibliotheek.",
-        "englishtranslate": "I'm going to borrow a book from the library."
+        "englishtranslate": "I'm going to borrow a book from the library.",
+        "pronunciation": { "ipa": "biblioːˈteːk", "phonetic": "bee-blee-yo-tayk" }
     },
     {
         "dutch": "het plan (-nnen)",
         "english": "the plan",
         "vietnamese": "kế hoạch",
         "dutchsentence": "Wat is je plan voor het weekend?",
-        "englishtranslate": "What is your plan for the weekend?"
+        "englishtranslate": "What is your plan for the weekend?",
+        "pronunciation": { "ipa": "plɑn", "phonetic": "plan" }
     },
     {
         "dutch": "de tip (-s)",
         "english": "the tip",
-        "vietnamese": "mẹo",
+        "vietnamese": "mẹo / lời khuyên",
         "dutchsentence": "Heb je nog een tip om sneller te leren?",
-        "englishtranslate": "Do you have another tip for learning faster?"
+        "englishtranslate": "Do you have another tip for learning faster?",
+        "pronunciation": { "ipa": "tɪp", "phonetic": "tip" }
     },
     {
         "dutch": "het advies (-zen)",
         "english": "the advice",
         "vietnamese": "lời khuyên",
         "dutchsentence": "Bedankt voor het goede advies!",
-        "englishtranslate": "Thank you for the good advice!"
+        "englishtranslate": "Thank you for the good advice!",
+        "pronunciation": { "ipa": "ɑtˈvis", "phonetic": "at-vees" }
     },
     {
         "dutch": "de aandacht",
         "english": "the attention",
         "vietnamese": "sự chú ý",
         "dutchsentence": "Geef je volledige aandacht aan de les.",
-        "englishtranslate": "Give your full attention to the lesson."
+        "englishtranslate": "Give your full attention to the lesson.",
+        "pronunciation": { "ipa": "ˈaːndɑχt", "phonetic": "aan-dakht" }
     },
     {
         "dutch": "de concentratie (-s)",
         "english": "the concentration",
         "vietnamese": "sự tập trung",
         "dutchsentence": "Mijn concentratie is slecht vandaag.",
-        "englishtranslate": "My concentration is bad today."
+        "englishtranslate": "My concentration is bad today.",
+        "pronunciation": { "ipa": "kɔnsɛnˈtraːtsi", "phonetic": "kon-sen-traa-tsee" }
     },
     {
         "dutch": "geconcentreerd",
-        "english": "concentrated",
+        "english": "concentrated / focused",
         "vietnamese": "tập trung",
         "dutchsentence": "Hij werkt geconcentreerd in de stilteruimte.",
-        "englishtranslate": "He works concentrated in the quiet room."
+        "englishtranslate": "He works focused in the quiet room.",
+        "pronunciation": { "ipa": "ɣəkɔnsɛnˈtreːrt", "phonetic": "khu-kon-sen-trayrt" }
     },
     {
         "dutch": "aandachtig",
         "english": "attentively",
-        "vietnamese": "chú ý",
+        "vietnamese": "chú ý / chăm chú",
         "dutchsentence": "De studenten luisteren aandachtig naar de leraar.",
-        "englishtranslate": "The students listen attentively to the teacher."
+        "englishtranslate": "The students listen attentively to the teacher.",
+        "pronunciation": { "ipa": "ˈaːndɑχtəx", "phonetic": "aan-dakh-tukh" }
     },
     {
         "dutch": "buiten",
         "english": "outside",
         "vietnamese": "bên ngoài",
         "dutchsentence": "Het is warm buiten vandaag.",
-        "englishtranslate": "It is warm outside today."
+        "englishtranslate": "It is warm outside today.",
+        "pronunciation": { "ipa": "ˈbœytə(n)", "phonetic": "buy-tun" }
     },
     {
         "dutch": "binnen",
         "english": "inside",
         "vietnamese": "bên trong",
         "dutchsentence": "Blijf binnen, het regent.",
-        "englishtranslate": "Stay inside, it's raining."
+        "englishtranslate": "Stay inside, it's raining.",
+        "pronunciation": { "ipa": "ˈbɪnə(n)", "phonetic": "bin-un" }
     },
     {
         "dutch": "gebruiken",
-        "english": "use",
+        "english": "to use",
         "vietnamese": "sử dụng",
         "dutchsentence": "Ik wil de Nederlandse grammatica correct gebruiken.",
-        "englishtranslate": "I want to use the Dutch grammar correctly."
+        "englishtranslate": "I want to use the Dutch grammar correctly.",
+        "pronunciation": { "ipa": "ɣəˈbrœykə(n)", "phonetic": "khu-bruy-kun" }
     }
 ]

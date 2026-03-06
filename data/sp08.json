@@ -4,70 +4,80 @@
     "english": "the company / the firm",
     "vietnamese": "công ty",
     "dutchsentence": "Mijn baas werkt in dit bedrijf.",
-    "englishtranslate": "My boss works in this company."
+    "englishtranslate": "My boss works in this company.",
+    "pronunciation": { "ipa": "bəˈdrɛif", "phonetic": "buh-dryf" }
   },
   {
     "dutch": "taalschool, de",
     "english": "the language school",
     "vietnamese": "trường ngôn ngữ",
     "dutchsentence": "Ik studeer Nederlands bij de taalschool.",
-    "englishtranslate": "I study Dutch at the language school."
+    "englishtranslate": "I study Dutch at the language school.",
+    "pronunciation": { "ipa": "ˈtaːlsχoːl", "phonetic": "taal-skhoal" }
   },
   {
     "dutch": "taal, de",
     "english": "the language",
     "vietnamese": "ngôn ngữ",
     "dutchsentence": "Welke taal spreek je?",
-    "englishtranslate": "Which language do you speak?"
+    "englishtranslate": "Which language do you speak?",
+    "pronunciation": { "ipa": "taːl", "phonetic": "taal" }
   },
   {
     "dutch": "transport, het",
     "english": "the transport / the transportation",
     "vietnamese": "vận chuyển",
     "dutchsentence": "Het bedrijf doet transport van goederen.",
-    "englishtranslate": "The company does transport of goods."
+    "englishtranslate": "The company does transport of goods.",
+    "pronunciation": { "ipa": "trɑnsˈpɔrt", "phonetic": "trans-port" }
   },
   {
     "dutch": "ziekenhuis, het",
     "english": "the hospital",
     "vietnamese": "bệnh viện",
     "dutchsentence": "De dokter werkt in het ziekenhuis.",
-    "englishtranslate": "The doctor works in the hospital."
+    "englishtranslate": "The doctor works in the hospital.",
+    "pronunciation": { "ipa": "ˈzikə(n)ˌɦœys", "phonetic": "zee-kun-houys" }
   },
   {
     "dutch": "restaurant, het",
     "english": "the restaurant",
     "vietnamese": "nhà hàng",
     "dutchsentence": "We gaan uit eten in het restaurant.",
-    "englishtranslate": "We are going out for dinner in the restaurant."
+    "englishtranslate": "We are going out for dinner in the restaurant.",
+    "pronunciation": { "ipa": "rɛstoːˈrɑnt", "phonetic": "res-to-rant" }
   },
   {
     "dutch": "bureau, het",
     "english": "the office / the desk",
-    "vietnamese": "văn phòng",
+    "vietnamese": "văn phòng / bàn làm việc",
     "dutchsentence": "De secretaresse zit op het bureau.",
-    "englishtranslate": "The secretary is sitting at the office/desk."
+    "englishtranslate": "The secretary is sitting at the office/desk.",
+    "pronunciation": { "ipa": "byˈroː", "phonetic": "buu-ro" }
   },
   {
     "dutch": "bakkerij, de",
     "english": "the bakery",
     "vietnamese": "tiệm bánh",
     "dutchsentence": "De bakker werkt in de bakkerij.",
-    "englishtranslate": "The baker works in the bakery."
+    "englishtranslate": "The baker works in the bakery.",
+    "pronunciation": { "ipa": "ˌbɑkəˈrɛi", "phonetic": "bak-uh-ry" }
   },
   {
     "dutch": "slagerij, de",
     "english": "the butcher shop",
     "vietnamese": "tiệm thịt",
     "dutchsentence": "De slager verkoopt vlees bij de slagerij.",
-    "englishtranslate": "The butcher sells meat at the butcher shop."
+    "englishtranslate": "The butcher sells meat at the butcher shop.",
+    "pronunciation": { "ipa": "ˌslaːɣəˈrɛi", "phonetic": "slaa-khuh-ry" }
   },
   {
     "dutch": "tuin, de",
     "english": "the garden",
     "vietnamese": "vườn",
     "dutchsentence": "De tuinier werkt in de tuin.",
-    "englishtranslate": "The gardener works in the garden."
+    "englishtranslate": "The gardener works in the garden.",
+    "pronunciation": { "ipa": "tœyn", "phonetic": "touyn" }
   },
   {
     "dutch": "pensioen, het",
@@ -75,14 +85,16 @@
     "vietnamese": "lương hưu",
     "dutchsentence": "Mijn oma gaat binnenkort met pensioen.",
     "englishtranslate": "My grandmother is going into retirement soon.",
-    "notes": "Met pensioen gaan (to go into retirement)"
+    "notes": "Met pensioen gaan (to go into retirement)",
+    "pronunciation": { "ipa": "pɛnˈʃun", "phonetic": "pen-shoon" }
   },
   {
     "dutch": "thuis",
     "english": "home (adverb of location)",
-    "vietnamese": "nhà",
+    "vietnamese": "nhà / ở nhà",
     "dutchsentence": "Ik ben thuis aan het oefenen.",
     "englishtranslate": "I am practicing at home.",
-    "notes": "Thuis is an adverb. Naar huis (to home/homewards)."
+    "notes": "Thuis is an adverb. Naar huis (to home/homewards).",
+    "pronunciation": { "ipa": "tœys", "phonetic": "touys" }
   }
 ]

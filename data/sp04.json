@@ -4,83 +4,131 @@
     "english": "to begin / to start",
     "vietnamese": "bắt đầu",
     "dutchsentence": "De les zal nu beginnen.",
-    "englishtranslate": "The lesson will begin now."
+    "englishtranslate": "The lesson will begin now.",
+    "pronunciation": {
+      "ipa": "bəˈɣɪnə(n)",
+      "phonetic": "buh-khi-nun"
+    }
   },
   {
     "dutch": "eindigen",
     "english": "to end / to finish",
     "vietnamese": "kết thúc",
     "dutchsentence": "De cursus eindigt volgende maand.",
-    "englishtranslate": "The course ends next month."
+    "englishtranslate": "The course ends next month.",
+    "pronunciation": {
+      "ipa": "ˈɛindəɣə(n)",
+      "phonetic": "ine-du-khun"
+    }
   },
   {
     "dutch": "over",
     "english": "over / finished / about (preposition)",
     "vietnamese": "qua / về",
     "dutchsentence": "Wanneer is het over?",
-    "englishtranslate": "When is it over?"
+    "englishtranslate": "When is it over?",
+    "pronunciation": {
+      "ipa": "ˈoːvər",
+      "phonetic": "oh-vur"
+    }
   },
   {
     "dutch": "daarna",
     "english": "afterwards / after that",
     "vietnamese": "sau đó",
     "dutchsentence": "We doen de oefening en daarna gaan we naar huis.",
-    "englishtranslate": "We do the exercise and afterwards we go home."
+    "englishtranslate": "We do the exercise and afterwards we go home.",
+    "pronunciation": {
+      "ipa": "daːrˈnaː",
+      "phonetic": "daar-naa"
+    }
   },
   {
     "dutch": "vervolgens",
     "english": "then / subsequently",
     "vietnamese": "sau đó",
     "dutchsentence": "Zij leest de zin en vervolgens herhaalt hij die.",
-    "englishtranslate": "She reads the sentence and then he repeats it."
+    "englishtranslate": "She reads the sentence and then he repeats it.",
+    "pronunciation": {
+      "ipa": "vərˈvɔlɣəns",
+      "phonetic": "ver-vol-khuns"
+    }
   },
   {
     "dutch": "ten slotte",
     "english": "finally / in conclusion",
     "vietnamese": "cuối cùng",
     "dutchsentence": "Ten slotte schrijven we een nieuw woord.",
-    "englishtranslate": "Finally, we write a new word."
+    "englishtranslate": "Finally, we write a new word.",
+    "pronunciation": {
+      "ipa": "tɛn ˈslɔtə",
+      "phonetic": "ten slo-tuh"
+    }
   },
   {
     "dutch": "letter, de",
     "english": "the letter (of the alphabet)",
     "vietnamese": "chữ cái",
     "dutchsentence": "Dit is de eerste letter van het woord.",
-    "englishtranslate": "This is the first letter of the word."
+    "englishtranslate": "This is the first letter of the word.",
+    "pronunciation": {
+      "ipa": "ˈlɛtər",
+      "phonetic": "le-tur"
+    }
   },
   {
     "dutch": "woord, het",
     "english": "the word",
     "vietnamese": "từ",
     "dutchsentence": "Leer vijf nieuwe woorden per dag.",
-    "englishtranslate": "Learn five new words per day."
+    "englishtranslate": "Learn five new words per day.",
+    "pronunciation": {
+      "ipa": "ʋoːrt",
+      "phonetic": "woart"
+    }
   },
   {
     "dutch": "zin, de",
     "english": "the sentence",
     "vietnamese": "câu",
     "dutchsentence": "Kun je die hele zin begrijpen?",
-    "englishtranslate": "Can you understand that whole sentence?"
+    "englishtranslate": "Can you understand that whole sentence?",
+    "pronunciation": {
+      "ipa": "zɪn",
+      "phonetic": "zin"
+    }
   },
   {
     "dutch": "oefening, de",
     "english": "the exercise / the practice",
     "vietnamese": "bài tập",
     "dutchsentence": "We beginnen met oefening één.",
-    "englishtranslate": "We begin with exercise one."
+    "englishtranslate": "We begin with exercise one.",
+    "pronunciation": {
+      "ipa": "ˈufənɪŋ",
+      "phonetic": "oo-fuh-ning"
+    }
   },
   {
     "dutch": "nieuw",
     "english": "new",
     "vietnamese": "mới",
     "dutchsentence": "Dit is een nieuw computer programma.",
-    "englishtranslate": "This is a new computer program."
+    "englishtranslate": "This is a new computer program.",
+    "pronunciation": {
+      "ipa": "niw",
+      "phonetic": "new"
+    }
   },
   {
     "dutch": "oud",
     "english": "old",
     "vietnamese": "cũ",
     "dutchsentence": "Ik wil mijn oude stoel vervangen.",
-    "englishtranslate": "I want to replace my old chair."
+    "englishtranslate": "I want to replace my old chair.",
+    "pronunciation": {
+      "ipa": "ɑut",
+      "phonetic": "owt"
+    }
   }
 ]

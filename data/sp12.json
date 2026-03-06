@@ -4,7 +4,8 @@
     "english": "broken / broken down",
     "vietnamese": "hỏng",
     "dutchsentence": "Mijn smartphone is kapot.",
-    "englishtranslate": "My smartphone is broken."
+    "englishtranslate": "My smartphone is broken.",
+    "pronunciation": { "ipa": "kaːˈpɔt", "phonetic": "kaa-pot" }
   },
   {
     "dutch": "wel",
@@ -12,42 +13,48 @@
     "vietnamese": "tốt",
     "dutchsentence": "Het gaat wel, bedankt.",
     "englishtranslate": "It is going well, thanks.",
-    "notes": "Used here as an adverb meaning 'well'."
+    "notes": "Used here as an adverb meaning 'well'.",
+    "pronunciation": { "ipa": "ʋɛl", "phonetic": "vel" }
   },
   {
     "dutch": "mijn",
     "english": "my",
     "vietnamese": "của tôi",
     "dutchsentence": "Mijn vriendin heet Lisa.",
-    "englishtranslate": "My friend (female) is called Lisa."
+    "englishtranslate": "My friend (female) is called Lisa.",
+    "pronunciation": { "ipa": "mɛin", "phonetic": "myn" }
   },
   {
     "dutch": "jouw",
     "english": "your (informal/singular)",
     "vietnamese": "của bạn",
     "dutchsentence": "Is dat jouw nieuwe jas?",
-    "englishtranslate": "Is that your new coat?"
+    "englishtranslate": "Is that your new coat?",
+    "pronunciation": { "ipa": "jʌu", "phonetic": "yow" }
   },
   {
     "dutch": "uw",
     "english": "your (formal/singular or plural)",
     "vietnamese": "của ngài",
     "dutchsentence": "Wat is uw beroep, meneer?",
-    "englishtranslate": "What is your profession, sir?"
+    "englishtranslate": "What is your profession, sir?",
+    "pronunciation": { "ipa": "yː", "phonetic": "uu" }
   },
   {
     "dutch": "zijn",
     "english": "his",
     "vietnamese": "của anh ấy",
     "dutchsentence": "Zijn collega werkt in het bureau.",
-    "englishtranslate": "His colleague works in the office."
+    "englishtranslate": "His colleague works in the office.",
+    "pronunciation": { "ipa": "zɛin", "phonetic": "zyn" }
   },
   {
     "dutch": "haar",
     "english": "her",
     "vietnamese": "của cô ấy",
     "dutchsentence": "Haar familie woont in Groningen.",
-    "englishtranslate": "Her family lives in Groningen."
+    "englishtranslate": "Her family lives in Groningen.",
+    "pronunciation": { "ipa": "ɦaːr", "phonetic": "haar" }
   },
   {
     "dutch": "ons / onze",
@@ -55,35 +62,40 @@
     "vietnamese": "của chúng tôi",
     "dutchsentence": "Ons huis is groot; onze tuin is klein.",
     "englishtranslate": "Our house is big; our garden is small.",
-    "notes": "Ons for 'het' words, onze for 'de' words."
+    "notes": "Ons for 'het' words, onze for 'de' words.",
+    "pronunciation": { "ipa": "ɔns / ˈɔnzə", "phonetic": "ons / on-zuh" }
   },
   {
     "dutch": "jullie",
     "english": "your (informal/plural)",
     "vietnamese": "của các bạn",
     "dutchsentence": "Is dat jullie auto?",
-    "englishtranslate": "Is that your (plural) car?"
+    "englishtranslate": "Is that your (plural) car?",
+    "pronunciation": { "ipa": "ˈjyli", "phonetic": "yul-lee" }
   },
   {
     "dutch": "hun",
     "english": "their",
     "vietnamese": "của họ",
     "dutchsentence": "Hun bedrijf doet transport.",
-    "englishtranslate": "Their company does transport."
+    "englishtranslate": "Their company does transport.",
+    "pronunciation": { "ipa": "ɦʏn", "phonetic": "hun" }
   },
   {
     "dutch": "want",
     "english": "because (coordinating conjunction)",
     "vietnamese": "bởi vì",
     "dutchsentence": "Ik moet gaan, want het is al te laat.",
-    "englishtranslate": "I must go, because it is already too late."
+    "englishtranslate": "I must go, because it is already too late.",
+    "pronunciation": { "ipa": "ʋɑnt", "phonetic": "vant" }
   },
   {
     "dutch": "te laat",
     "english": "too late",
     "vietnamese": "quá muộn",
     "dutchsentence": "Het is te laat om nog te bellen.",
-    "englishtranslate": "It is too late to still call."
+    "englishtranslate": "It is too late to still call.",
+    "pronunciation": { "ipa": "tə laːt", "phonetic": "tuh laat" }
   },
   {
     "dutch": "zullen",
@@ -91,20 +103,23 @@
     "vietnamese": "sẽ",
     "dutchsentence": "Wij zullen morgen afspreken bij het café.",
     "englishtranslate": "We will arrange to meet at the café tomorrow.",
-    "notes": "Often used to form the future tense."
+    "notes": "Often used to form the future tense.",
+    "pronunciation": { "ipa": "ˈzʏlə(n)", "phonetic": "zul-lun" }
   },
   {
     "dutch": "wachten",
     "english": "to wait",
     "vietnamese": "chờ đợi",
     "dutchsentence": "Kun je even op mij wachten?",
-    "englishtranslate": "Can you wait for me for a moment?"
+    "englishtranslate": "Can you wait for me for a moment?",
+    "pronunciation": { "ipa": "ˈʋɑχtə(n)", "phonetic": "vakh-tun" }
   },
   {
     "dutch": "afspreken",
     "english": "to arrange / to arrange to meet",
     "vietnamese": "hẹn gặp",
     "dutchsentence": "Laat ons afspreken volgende week op dinsdag.",
-    "englishtranslate": "Let us arrange to meet next week on Tuesday."
+    "englishtranslate": "Let us arrange to meet next week on Tuesday.",
+    "pronunciation": { "ipa": "ˈɑfspreːkə(n)", "phonetic": "af-spray-kun" }
   }
 ]

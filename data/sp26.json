@@ -4,14 +4,16 @@
     "english": "the presentation",
     "vietnamese": "bài thuyết trình",
     "dutchsentence": "De studenten maken een presentatie over Nederland.",
-    "englishtranslate": "The students are making a presentation about the Netherlands."
+    "englishtranslate": "The students are making a presentation about the Netherlands.",
+    "pronunciation": { "ipa": "preːzɛnˈtaːtsi", "phonetic": "pray-zen-taa-tsee" }
   },
   {
     "dutch": "tekst, de",
     "english": "the text",
     "vietnamese": "văn bản",
     "dutchsentence": "Lees de tekst luidop.",
-    "englishtranslate": "Read the text out loud."
+    "englishtranslate": "Read the text out loud.",
+    "pronunciation": { "ipa": "tɛkst", "phonetic": "tekst" }
   },
   {
     "dutch": "mee",
@@ -19,14 +21,15 @@
     "vietnamese": "cùng",
     "dutchsentence": "Ga je mee naar het concert?",
     "englishtranslate": "Are you coming along to the concert?",
-    "notes": "Often used in combination with motion verbs (gaan, komen, nemen)."
+    "pronunciation": { "ipa": "meː", "phonetic": "may" }
   },
   {
     "dutch": "stil",
     "english": "quiet / silent / still",
     "vietnamese": "yên tĩnh",
     "dutchsentence": "Het is stil in de klas.",
-    "englishtranslate": "It is quiet in the classroom."
+    "englishtranslate": "It is quiet in the classroom.",
+    "pronunciation": { "ipa": "stɪl", "phonetic": "stil" }
   },
   {
     "dutch": "luidop",
@@ -34,34 +37,38 @@
     "vietnamese": "to tiếng",
     "dutchsentence": "Lees de zinnen luidop voor.",
     "englishtranslate": "Read the sentences out loud.",
-    "notes": "Often used with reading/speaking."
+    "pronunciation": { "ipa": "ˈlœydɔp", "phonetic": "luy-dop" }
   },
   {
     "dutch": "maken",
     "english": "to make / to do",
     "vietnamese": "làm",
     "dutchsentence": "Wij maken altijd ons huiswerk.",
-    "englishtranslate": "We always do our homework."
+    "englishtranslate": "We always do our homework.",
+    "pronunciation": { "ipa": "ˈmaːkə(n)", "phonetic": "maa-kun" }
   },
   {
     "dutch": "invullen",
     "english": "to fill in",
     "vietnamese": "điền vào",
     "dutchsentence": "Kan je de blanco ruimtes invullen?",
-    "englishtranslate": "Can you fill in the blank spaces?"
+    "englishtranslate": "Can you fill in the blank spaces?",
+    "pronunciation": { "ipa": "ˈɪnvʏlə(n)", "phonetic": "in-vu-lun" }
   },
   {
     "dutch": "vragen stellen",
     "english": "to ask questions",
     "vietnamese": "đặt câu hỏi",
     "dutchsentence": "Als je iets niet begrijpt, moet je vragen stellen.",
-    "englishtranslate": "If you don't understand something, you must ask questions."
+    "englishtranslate": "If you don't understand something, you must ask questions.",
+    "pronunciation": { "ipa": "ˈvraːɣə(n) ˈstɛlə(n)", "phonetic": "vraa-khun stel-un" }
   },
   {
     "dutch": "rijden",
     "english": "to drive",
-    "vietnamese": "lái",
+    "vietnamese": "lái / chạy xe",
     "dutchsentence": "Hij rijdt graag met de auto op de snelweg.",
-    "englishtranslate": "He likes to drive with the car on the highway."
+    "englishtranslate": "He likes to drive with the car on the highway.",
+    "pronunciation": { "ipa": "ˈrɛidə(n)", "phonetic": "ry-dun" }
   }
 ]

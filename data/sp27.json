@@ -4,29 +4,32 @@
     "english": "the repetition / the review",
     "vietnamese": "sự lặp lại / ôn tập",
     "dutchsentence": "Herhaling is belangrijk voor het leren.",
-    "englishtranslate": "Repetition is important for learning."
+    "englishtranslate": "Repetition is important for learning.",
+    "pronunciation": { "ipa": "ɦɛrˈɦaːlɪŋ", "phonetic": "her-haa-ling" }
   },
   {
     "dutch": "woning, de",
     "english": "the dwelling / the residence",
     "vietnamese": "nhà ở",
     "dutchsentence": "Het appartement is een mooie woning.",
-    "englishtranslate": "The apartment is a beautiful dwelling (residence)."
+    "englishtranslate": "The apartment is a beautiful dwelling (residence).",
+    "pronunciation": { "ipa": "ˈʋoːnɪŋ", "phonetic": "vo-ning" }
   },
   {
     "dutch": "zo",
     "english": "so / like this / such a",
-    "vietnamese": "như vậy",
+    "vietnamese": "như vậy / quá",
     "dutchsentence": "Het is zo goed dat je mee komt.",
-    "englishtranslate": "It is so good that you are coming along."
+    "englishtranslate": "It is so good that you are coming along.",
+    "pronunciation": { "ipa": "zoː", "phonetic": "zo" }
   },
   {
     "dutch": "zoals",
     "english": "as / such as / like",
-    "vietnamese": "như",
+    "vietnamese": "như là",
     "dutchsentence": "Ik werk zoals een verhuurder.",
-    "englishtranslate": "I work as a landlord.",
-    "notes": "Used to denote comparison or function."
+    "englishtranslate": "I work like/as a landlord.",
+    "pronunciation": { "ipa": "zoːˈɑls", "phonetic": "zo-als" }
   },
   {
     "dutch": "welkom",
@@ -34,6 +37,6 @@
     "vietnamese": "chào mừng",
     "dutchsentence": "Welkom in onze nieuwe woning!",
     "englishtranslate": "Welcome to our new dwelling!",
-    "notes": "Often used with *zijn* or as an exclamation."
+    "pronunciation": { "ipa": "ˈʋɛlkɔm", "phonetic": "vel-kom" }
   }
 ]

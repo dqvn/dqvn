@@ -4,104 +4,119 @@
     "english": "the television",
     "vietnamese": "tivi",
     "dutchsentence": "Ik kijk televisie in de pauze.",
-    "englishtranslate": "I watch television during the break."
+    "englishtranslate": "I watch television during the break.",
+    "pronunciation": { "ipa": "ˌteːləˈvizi", "phonetic": "tay-luh-vee-zee" }
   },
   {
     "dutch": "tv, de",
     "english": "the TV",
     "vietnamese": "tivi",
     "dutchsentence": "De tv is nieuw en hoog.",
-    "englishtranslate": "The TV is new and high."
+    "englishtranslate": "The TV is new and high.",
+    "pronunciation": { "ipa": "teːˈveː", "phonetic": "tay-vay" }
   },
   {
     "dutch": "muziek, de",
     "english": "the music",
     "vietnamese": "âm nhạc",
     "dutchsentence": "Ik luister naar muziek tijdens het werken.",
-    "englishtranslate": "I listen to music while working."
+    "englishtranslate": "I listen to music while working.",
+    "pronunciation": { "ipa": "myˈzik", "phonetic": "muu-zeek" }
   },
   {
     "dutch": "wel",
     "english": "well / indeed / yes (contrasting)",
     "vietnamese": "tốt / thực sự",
     "dutchsentence": "Ik hoor wel de muziek!",
-    "englishtranslate": "I do indeed hear the music!"
+    "englishtranslate": "I do indeed hear the music!",
+    "pronunciation": { "ipa": "ʋɛl", "phonetic": "vel" }
   },
   {
     "dutch": "men",
     "english": "one / people (impersonal pronoun)",
     "vietnamese": "người ta",
     "dutchsentence": "Men zegt dat studeren moeilijk is.",
-    "englishtranslate": "One/people say that studying is difficult."
+    "englishtranslate": "One/people say that studying is difficult.",
+    "pronunciation": { "ipa": "mɛn", "phonetic": "men" }
   },
   {
     "dutch": "studeren",
     "english": "to study",
     "vietnamese": "học",
     "dutchsentence": "Waar studeer je?",
-    "englishtranslate": "Where do you study?"
+    "englishtranslate": "Where do you study?",
+    "pronunciation": { "ipa": "styˈdeːrə(n)", "phonetic": "stuu-day-run" }
   },
   {
     "dutch": "vragen",
     "english": "to ask",
     "vietnamese": "hỏi",
     "dutchsentence": "Ik wil je iets vragen.",
-    "englishtranslate": "I want to ask you something."
+    "englishtranslate": "I want to ask you something.",
+    "pronunciation": { "ipa": "ˈvraːɣə(n)", "phonetic": "vrah-khun" }
   },
   {
     "dutch": "antwoorden",
     "english": "to answer",
     "vietnamese": "trả lời",
     "dutchsentence": "Kun je antwoorden op de vraag?",
-    "englishtranslate": "Can you answer the question?"
+    "englishtranslate": "Can you answer the question?",
+    "pronunciation": { "ipa": "ˈɑntˌʋoːrdə(n)", "phonetic": "ant-voar-dun" }
   },
   {
     "dutch": "oefenen",
     "english": "to practice",
     "vietnamese": "luyện tập",
     "dutchsentence": "We moeten oefenen met deze zinnen.",
-    "englishtranslate": "We have to practice with these sentences."
+    "englishtranslate": "We have to practice with these sentences.",
+    "pronunciation": { "ipa": "ˈufənə(n)", "phonetic": "oo-fuh-nun" }
   },
   {
     "dutch": "luisteren",
     "english": "to listen",
     "vietnamese": "nghe",
     "dutchsentence": "Luister naar de leraar.",
-    "englishtranslate": "Listen to the teacher."
+    "englishtranslate": "Listen to the teacher.",
+    "pronunciation": { "ipa": "ˈlœystərə(n)", "phonetic": "louy-stuh-run" }
   },
   {
     "dutch": "horen",
     "english": "to hear",
     "vietnamese": "nghe thấy",
     "dutchsentence": "Hoor je die muziek op de gang?",
-    "englishtranslate": "Do you hear that music in the hallway?"
+    "englishtranslate": "Do you hear that music in the hallway?",
+    "pronunciation": { "ipa": "ˈɦoːrə(n)", "phonetic": "hoar-un" }
   },
   {
     "dutch": "kijken",
     "english": "to look / to watch (actively)",
     "vietnamese": "nhìn",
     "dutchsentence": "Waar kijk je naar?",
-    "englishtranslate": "What are you looking at?"
+    "englishtranslate": "What are you looking at?",
+    "pronunciation": { "ipa": "ˈkɛikə(n)", "phonetic": "ky-kun" }
   },
   {
     "dutch": "zien",
     "english": "to see (passively)",
     "vietnamese": "thấy",
     "dutchsentence": "Zie je de letter op het bord?",
-    "englishtranslate": "Do you see the letter on the board?"
+    "englishtranslate": "Do you see the letter on the board?",
+    "pronunciation": { "ipa": "zin", "phonetic": "zeen" }
   },
   {
     "dutch": "praten",
     "english": "to talk / to speak",
     "vietnamese": "nói chuyện",
     "dutchsentence": "Ze praten over hun werk.",
-    "englishtranslate": "They talk about their work."
+    "englishtranslate": "They talk about their work.",
+    "pronunciation": { "ipa": "ˈpraːtə(n)", "phonetic": "prah-tun" }
   },
   {
     "dutch": "zeggen",
     "english": "to say",
     "vietnamese": "nói",
     "dutchsentence": "Wat zeg je?",
-    "englishtranslate": "What are you saying?"
+    "englishtranslate": "What are you saying?",
+    "pronunciation": { "ipa": "ˈzɛɣə(n)", "phonetic": "ze-khun" }
   }
 ]

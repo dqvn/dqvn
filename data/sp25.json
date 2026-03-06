@@ -4,113 +4,127 @@
     "english": "the past",
     "vietnamese": "quá khứ",
     "dutchsentence": "Het verleden kan je niet veranderen.",
-    "englishtranslate": "You cannot change the past."
+    "englishtranslate": "You cannot change the past.",
+    "pronunciation": { "ipa": "vərˈleːdə(n)", "phonetic": "vur-lay-dun" }
   },
   {
     "dutch": "toekomst, de",
     "english": "the future",
     "vietnamese": "tương lai",
     "dutchsentence": "Ik denk vaak aan de toekomst.",
-    "englishtranslate": "I often think about the future."
+    "englishtranslate": "I often think about the future.",
+    "pronunciation": { "ipa": "ˈtukɔmst", "phonetic": "too-komst" }
   },
   {
     "dutch": "eergisteren",
     "english": "the day before yesterday",
     "vietnamese": "hôm kia",
     "dutchsentence": "Eergisteren was ik op vakantie.",
-    "englishtranslate": "The day before yesterday I was on holiday."
+    "englishtranslate": "The day before yesterday I was on holiday.",
+    "pronunciation": { "ipa": "ˈeːrˌɣɪstərə(n)", "phonetic": "ayr-khist-ur-un" }
   },
   {
     "dutch": "gisteren",
     "english": "yesterday",
     "vietnamese": "hôm qua",
     "dutchsentence": "Gisteren heb ik mijn huiswerk gedaan.",
-    "englishtranslate": "Yesterday I did my homework."
+    "englishtranslate": "Yesterday I did my homework.",
+    "pronunciation": { "ipa": "ˈɣɪstərə(n)", "phonetic": "khist-ur-un" }
   },
   {
     "dutch": "vandaag",
     "english": "today",
     "vietnamese": "hôm nay",
     "dutchsentence": "Vandaag is het vrijdag.",
-    "englishtranslate": "Today it is Friday."
+    "englishtranslate": "Today it is Friday.",
+    "pronunciation": { "ipa": "vɑnˈdaːx", "phonetic": "van-daakh" }
   },
   {
     "dutch": "morgen",
     "english": "tomorrow",
     "vietnamese": "ngày mai",
     "dutchsentence": "Morgen zullen we afspreken.",
-    "englishtranslate": "Tomorrow we will arrange to meet."
+    "englishtranslate": "Tomorrow we will arrange to meet.",
+    "pronunciation": { "ipa": "ˈmɔrɣə(n)", "phonetic": "mor-khun" }
   },
   {
     "dutch": "overmorgen",
     "english": "the day after tomorrow",
     "vietnamese": "ngày kia",
     "dutchsentence": "Overmorgen gaan we naar de stad.",
-    "englishtranslate": "The day after tomorrow we are going to the city."
+    "englishtranslate": "The day after tomorrow we are going to the city.",
+    "pronunciation": { "ipa": "ˈoːvərˌmɔrɣə(n)", "phonetic": "o-vur-mor-khun" }
   },
   {
     "dutch": "daarnet",
-    "english": "just now (a short time ago)",
+    "english": "just now",
     "vietnamese": "vừa mới",
     "dutchsentence": "Hij is daarnet vertrokken.",
-    "englishtranslate": "He left just now (recently)."
+    "englishtranslate": "He left just now.",
+    "pronunciation": { "ipa": "daːrˈnɛt", "phonetic": "daar-net" }
   },
   {
     "dutch": "straks",
     "english": "later (soon)",
-    "vietnamese": "sau đó",
+    "vietnamese": "lát nữa",
     "dutchsentence": "We gaan straks eten.",
-    "englishtranslate": "We are going to eat later (soon).",
-    "notes": "Implies 'in a bit' or 'shortly'."
+    "englishtranslate": "We are going to eat later.",
+    "pronunciation": { "ipa": "strɑks", "phonetic": "straks" }
   },
   {
     "dutch": "geleden",
     "english": "ago",
     "vietnamese": "trước",
     "dutchsentence": "Ik zag hem een week geleden.",
-    "englishtranslate": "I saw him a week ago."
+    "englishtranslate": "I saw him a week ago.",
+    "pronunciation": { "ipa": "ɣəˈleːdə(n)", "phonetic": "khu-lay-dun" }
   },
   {
     "dutch": "vorige",
     "english": "previous / last",
     "vietnamese": "trước",
     "dutchsentence": "De vorige vraag was te moeilijk.",
-    "englishtranslate": "The previous/last question was too difficult."
+    "englishtranslate": "The previous question was too difficult.",
+    "pronunciation": { "ipa": "ˈvoːrəɣə", "phonetic": "vo-ru-khu" }
   },
   {
     "dutch": "perfect",
-    "english": "perfect / the perfect tense (grammar)",
+    "english": "perfect",
     "vietnamese": "hoàn hảo",
     "dutchsentence": "Je Nederlands is perfect.",
-    "englishtranslate": "Your Dutch is perfect."
+    "englishtranslate": "Your Dutch is perfect.",
+    "pronunciation": { "ipa": "pɛrˈfɛkt", "phonetic": "per-fekt" }
   },
   {
-    "dutch": "was, waren",
-    "english": "was, were (past tense of *zijn*)",
-    "vietnamese": "đã",
+    "dutch": "was / waren",
+    "english": "was / were",
+    "vietnamese": "đã là / đã ở",
     "dutchsentence": "Ik was thuis en zij waren weg.",
-    "englishtranslate": "I was at home and they were away."
+    "englishtranslate": "I was at home and they were away.",
+    "pronunciation": { "ipa": "ʋɑs / ˈʋaːrə(n)", "phonetic": "vas / vaa-run" }
   },
   {
-    "dutch": "had, hadden",
-    "english": "had (past tense of *hebben*)",
+    "dutch": "had / hadden",
+    "english": "had",
     "vietnamese": "đã có",
     "dutchsentence": "Wij hadden veel vragen over de toets.",
-    "englishtranslate": "We had many questions about the test."
+    "englishtranslate": "We had many questions about the test.",
+    "pronunciation": { "ipa": "ɦɑt / ˈɦɑdə(n)", "phonetic": "hat / ha-dun" }
   },
   {
     "dutch": "veranderen",
     "english": "to change",
     "vietnamese": "thay đổi",
     "dutchsentence": "Ze wil haar baan veranderen.",
-    "englishtranslate": "She wants to change her job."
+    "englishtranslate": "She wants to change her job.",
+    "pronunciation": { "ipa": "vərˈɑndərə(n)", "phonetic": "vur-an-dur-un" }
   },
   {
     "dutch": "mogen",
     "english": "may / to be allowed to",
-    "vietnamese": "có thể",
+    "vietnamese": "được phép",
     "dutchsentence": "Mogen we nu naar huis gaan?",
     "englishtranslate": "May we go home now?",
-    "notes": "Used to express permission."
+    "pronunciation": { "ipa": "ˈmoːɣə(n)", "phonetic": "mo-khun" }
   }
 ]

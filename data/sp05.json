@@ -4,139 +4,219 @@
     "english": "the profession / the occupation",
     "vietnamese": "nghề nghiệp",
     "dutchsentence": "Wat is jouw beroep?",
-    "englishtranslate": "What is your profession?"
+    "englishtranslate": "What is your profession?",
+    "pronunciation": {
+      "ipa": "bəˈrup",
+      "phonetic": "buh-roop"
+    }
   },
   {
     "dutch": "werk, het",
     "english": "the work",
     "vietnamese": "công việc",
     "dutchsentence": "Ik moet veel werk doen vandaag.",
-    "englishtranslate": "I have to do a lot of work today."
+    "englishtranslate": "I have to do a lot of work today.",
+    "pronunciation": {
+      "ipa": "ʋɛrk",
+      "phonetic": "werk"
+    }
   },
   {
     "dutch": "job, de",
     "english": "the job",
     "vietnamese": "công việc",
     "dutchsentence": "Zij heeft een nieuwe job gevonden.",
-    "englishtranslate": "She has found a new job."
+    "englishtranslate": "She has found a new job.",
+    "pronunciation": {
+      "ipa": "dʒɔp",
+      "phonetic": "job"
+    }
   },
   {
     "dutch": "dokter, de",
     "english": "the doctor",
     "vietnamese": "bác sĩ",
     "dutchsentence": "De dokter werkt in het ziekenhuis.",
-    "englishtranslate": "The doctor works in the hospital."
+    "englishtranslate": "The doctor works in the hospital.",
+    "pronunciation": {
+      "ipa": "ˈdɔktər",
+      "phonetic": "dok-tur"
+    }
   },
   {
     "dutch": "kok, de",
     "english": "the cook / the chef",
     "vietnamese": "đầu bếp",
     "dutchsentence": "De kok maakt het heerlijke eten.",
-    "englishtranslate": "The cook makes the delicious food."
+    "englishtranslate": "The cook makes the delicious food.",
+    "pronunciation": {
+      "ipa": "kɔk",
+      "phonetic": "kok"
+    }
   },
   {
     "dutch": "secretaris, de / secretaresse, de",
     "english": "the secretary (male/female)",
     "vietnamese": "thư ký",
     "dutchsentence": "De secretaresse beantwoordt de telefoon.",
-    "englishtranslate": "The secretary (female) answers the phone."
+    "englishtranslate": "The secretary (female) answers the phone.",
+    "pronunciation": {
+      "ipa": "seːkrəˈtaːrɪs / seːkrəˈtaːrɛsə",
+      "phonetic": "say-kruh-taa-ris / say-kruh-taa-re-suh"
+    }
   },
   {
     "dutch": "receptionist, de / receptioniste, de",
     "english": "the receptionist (male/female)",
     "vietnamese": "lễ tân",
     "dutchsentence": "De receptioniste is erg beleefd.",
-    "englishtranslate": "The receptionist (female) is very polite."
+    "englishtranslate": "The receptionist (female) is very polite.",
+    "pronunciation": {
+      "ipa": "reːsɛpʃoːˈnɪst / reːsɛpʃoːˈnɪstə",
+      "phonetic": "ray-sep-sho-nist / ray-sep-sho-nis-tuh"
+    }
   },
   {
     "dutch": "verkoper, de",
     "english": "the seller / the salesman",
     "vietnamese": "người bán hàng",
     "dutchsentence": "De verkoper verkoopt kleren.",
-    "englishtranslate": "The seller/salesman sells clothes."
+    "englishtranslate": "The seller/salesman sells clothes.",
+    "pronunciation": {
+      "ipa": "vərˈkoːpər",
+      "phonetic": "ver-koh-pur"
+    }
   },
   {
     "dutch": "manager, de",
     "english": "the manager",
     "vietnamese": "quản lý",
     "dutchsentence": "De manager is mijn baas.",
-    "englishtranslate": "The manager is my boss."
+    "englishtranslate": "The manager is my boss.",
+    "pronunciation": {
+      "ipa": "ˈmɛnədʒər",
+      "phonetic": "me-nuh-djur"
+    }
   },
   {
     "dutch": "baas, de",
     "english": "the boss",
     "vietnamese": "ông chủ",
     "dutchsentence": "Mijn baas is een aardige kerel.",
-    "englishtranslate": "My boss is a nice guy/lad."
+    "englishtranslate": "My boss is a nice guy/lad.",
+    "pronunciation": {
+      "ipa": "baːs",
+      "phonetic": "baas"
+    }
   },
   {
     "dutch": "ingenieur, de",
     "english": "the engineer",
     "vietnamese": "kỹ sư",
     "dutchsentence": "De ingenieur werkt aan nieuwe modellen.",
-    "englishtranslate": "The engineer works on new models."
+    "englishtranslate": "The engineer works on new models.",
+    "pronunciation": {
+      "ipa": "ɪnʒəˈniːr",
+      "phonetic": "in-zhuh-neer"
+    }
   },
   {
     "dutch": "chauffeur, de",
     "english": "the driver",
     "vietnamese": "tài xế",
     "dutchsentence": "De chauffeur rijdt de bus.",
-    "englishtranslate": "The driver drives the bus."
+    "englishtranslate": "The driver drives the bus.",
+    "pronunciation": {
+      "ipa": "ʃoˈføːr",
+      "phonetic": "sho-fur"
+    }
   },
   {
     "dutch": "postbode, de",
     "english": "the postman",
     "vietnamese": "người đưa thư",
     "dutchsentence": "De postbode komt elke dag bij ons.",
-    "englishtranslate": "The postman comes to us every day."
+    "englishtranslate": "The postman comes to us every day.",
+    "pronunciation": {
+      "ipa": "ˈpɔstboːdə",
+      "phonetic": "post-boh-duh"
+    }
   },
   {
     "dutch": "bakker, de",
     "english": "the baker",
     "vietnamese": "thợ làm bánh",
     "dutchsentence": "De bakker verkoopt taart en brood.",
-    "englishtranslate": "The baker sells cake and bread."
+    "englishtranslate": "The baker sells cake and bread.",
+    "pronunciation": {
+      "ipa": "ˈbɑkər",
+      "phonetic": "ba-kur"
+    }
   },
   {
     "dutch": "slager, de",
     "english": "the butcher",
     "vietnamese": "người bán thịt",
     "dutchsentence": "De slager verkoopt rundvlees.",
-    "englishtranslate": "The butcher sells beef."
+    "englishtranslate": "The butcher sells beef.",
+    "pronunciation": {
+      "ipa": "ˈslaːɣər",
+      "phonetic": "slaa-khur"
+    }
   },
   {
     "dutch": "tuinier, de",
     "english": "the gardener",
     "vietnamese": "người làm vườn",
     "dutchsentence": "De tuinier werkt in de natuur.",
-    "englishtranslate": "The gardener works in nature."
+    "englishtranslate": "The gardener works in nature.",
+    "pronunciation": {
+      "ipa": "ˈtœynir",
+      "phonetic": "toy-neer"
+    }
   },
   {
     "dutch": "werken (als)",
     "english": "to work (as)",
     "vietnamese": "làm việc (như)",
     "dutchsentence": "Ik werk als ingenieur.",
-    "englishtranslate": "I work as an engineer."
+    "englishtranslate": "I work as an engineer.",
+    "pronunciation": {
+      "ipa": "ˈʋɛrkə(n) (ɑls)",
+      "phonetic": "wer-kun (als)"
+    }
   },
   {
     "dutch": "doen",
     "english": "to do",
     "vietnamese": "làm",
     "dutchsentence": "Wat doe je voor werk?",
-    "englishtranslate": "What do you do for work?"
+    "englishtranslate": "What do you do for work?",
+    "pronunciation": {
+      "ipa": "dun",
+      "phonetic": "doon"
+    }
   },
   {
     "dutch": "dezelfde / hetzelfde",
     "english": "the same",
     "vietnamese": "giống nhau",
     "dutchsentence": "Wij hebben hetzelfde beroep.",
-    "englishtranslate": "We have the same profession."
+    "englishtranslate": "We have the same profession.",
+    "pronunciation": {
+      "ipa": "dəˈzɛlfðə / ɦɛtˈzɛlfðə",
+      "phonetic": "duh-zelf-duh / het-zelf-duh"
+    }
   },
   {
     "dutch": "ander",
     "english": "other / different",
     "vietnamese": "khác",
     "dutchsentence": "Wil je een ander kledingstuk passen?",
-    "englishtranslate": "Do you want to try on an other/different article of clothing?"
+    "englishtranslate": "Do you want to try on an other/different article of clothing?",
+    "pronunciation": {
+      "ipa": "ˈɑndər",
+      "phonetic": "an-dur"
+    }
   }
 ]

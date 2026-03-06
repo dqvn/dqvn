@@ -1,87 +1,99 @@
 [
   {
     "dutch": "cijfer, het",
-    "english": "the number / the figure / the grade (school)",
+    "english": "the number / the figure / the grade",
     "vietnamese": "số / điểm",
     "dutchsentence": "Welk cijfer heb je gekregen voor de test?",
-    "englishtranslate": "Which grade/number did you receive for the test?"
+    "englishtranslate": "Which grade/number did you receive for the test?",
+    "pronunciation": { "ipa": "ˈsɛifər", "phonetic": "sy-fur" }
   },
   {
     "dutch": "getal, het",
     "english": "the digit / the number",
     "vietnamese": "chữ số",
     "dutchsentence": "Het getal duizend is groot.",
-    "englishtranslate": "The number one thousand is big."
+    "englishtranslate": "The number one thousand is big.",
+    "pronunciation": { "ipa": "ɣəˈtɑl", "phonetic": "khuh-tal" }
   },
   {
     "dutch": "leerkracht, de",
     "english": "the teacher",
     "vietnamese": "giáo viên",
     "dutchsentence": "De leerkracht vraagt ons om te oefenen.",
-    "englishtranslate": "The teacher asks us to practice."
+    "englishtranslate": "The teacher asks us to practice.",
+    "pronunciation": { "ipa": "ˈleːrkrɑχt", "phonetic": "layr-krakht" }
   },
   {
     "dutch": "nul",
     "english": "zero",
     "vietnamese": "không",
     "dutchsentence": "Nul maal twee is nul.",
-    "englishtranslate": "Zero times two is zero."
+    "englishtranslate": "Zero times two is zero.",
+    "pronunciation": { "ipa": "nʏl", "phonetic": "nul" }
   },
   {
     "dutch": "dertig",
     "english": "thirty",
     "vietnamese": "ba mươi",
     "dutchsentence": "Ik ben dertig jaar oud.",
-    "englishtranslate": "I am thirty years old."
+    "englishtranslate": "I am thirty years old.",
+    "pronunciation": { "ipa": "ˈdɛrtəχ", "phonetic": "der-tukh" }
   },
   {
     "dutch": "veertig",
     "english": "forty",
     "vietnamese": "bốn mươi",
-    "dutchsentence": "Mijn vader is ongeveer veertig.",
-    "englishtranslate": "My father is approximately forty."
+    "dutchsentence": "Mijn father is ongeveer veertig.",
+    "englishtranslate": "My father is approximately forty.",
+    "pronunciation": { "ipa": "ˈveːrtəχ", "phonetic": "vayr-tukh" }
   },
   {
     "dutch": "vijftig",
     "english": "fifty",
     "vietnamese": "năm mươi",
     "dutchsentence": "De cursus kost vijftig euro.",
-    "englishtranslate": "The course costs fifty euros."
+    "englishtranslate": "The course costs fifty euros.",
+    "pronunciation": { "ipa": "ˈvɛiftəχ", "phonetic": "vyf-tukh" }
   },
   {
     "dutch": "zestig",
     "english": "sixty",
     "vietnamese": "sáu mươi",
     "dutchsentence": "Twee maal dertig is zestig.",
-    "englishtranslate": "Two times thirty is sixty."
+    "englishtranslate": "Two times thirty is sixty.",
+    "pronunciation": { "ipa": "ˈzɛstəχ", "phonetic": "zes-tukh" }
   },
   {
     "dutch": "zeventig",
     "english": "seventy",
     "vietnamese": "bảy mươi",
     "dutchsentence": "Hij is ongeveer zeventig jaar.",
-    "englishtranslate": "He is approximately seventy years old."
+    "englishtranslate": "He is approximately seventy years old.",
+    "pronunciation": { "ipa": "ˈzeːvəntəχ", "phonetic": "zay-vun-tukh" }
   },
   {
     "dutch": "tachtig",
     "english": "eighty",
     "vietnamese": "tám mươi",
     "dutchsentence": "Het duurt tachtig minuten.",
-    "englishtranslate": "It lasts/takes eighty minutes."
+    "englishtranslate": "It lasts/takes eighty minutes.",
+    "pronunciation": { "ipa": "ˈtɑχtəχ", "phonetic": "takh-tukh" }
   },
   {
     "dutch": "negentig",
     "english": "ninety",
     "vietnamese": "chín mươi",
     "dutchsentence": "Honderd min tien is negentig.",
-    "englishtranslate": "One hundred minus ten is ninety."
+    "englishtranslate": "One hundred minus ten is ninety.",
+    "pronunciation": { "ipa": "ˈneːɣəntəχ", "phonetic": "nay-khun-tukh" }
   },
   {
     "dutch": "honderd",
     "english": "hundred",
     "vietnamese": "một trăm",
     "dutchsentence": "Dat ding kost honderd euro.",
-    "englishtranslate": "That thing costs one hundred euros."
+    "englishtranslate": "That thing costs one hundred euros.",
+    "pronunciation": { "ipa": "ˈɦɔndərt", "phonetic": "hon-durt" }
   },
   {
     "dutch": "miljoen, een",
@@ -89,7 +101,7 @@
     "vietnamese": "một triệu",
     "dutchsentence": "Het bedrijf is ongeveer een miljoen waard.",
     "englishtranslate": "The company is worth about one million.",
-    "notes": "Used here as a noun."
+    "pronunciation": { "ipa": "mɪlˈjun", "phonetic": "mil-yoon" }
   },
   {
     "dutch": "miljard, een",
@@ -97,43 +109,46 @@
     "vietnamese": "một tỷ",
     "dutchsentence": "Dat is een miljard keer groter.",
     "englishtranslate": "That is a billion times bigger.",
-    "notes": "Used here as a noun."
+    "pronunciation": { "ipa": "mɪlˈjɑrt", "phonetic": "mil-yart" }
   },
   {
     "dutch": "maal",
     "english": "times (multiplication)",
     "vietnamese": "nhân",
     "dutchsentence": "Drie maal vier is twaalf.",
-    "englishtranslate": "Three times four is twelve."
+    "englishtranslate": "Three times four is twelve.",
+    "pronunciation": { "ipa": "maːl", "phonetic": "maal" }
   },
   {
     "dutch": "gedeeld door",
     "english": "divided by",
     "vietnamese": "chia cho",
     "dutchsentence": "Tien gedeeld door twee is vijf.",
-    "englishtranslate": "Ten divided by two is five."
+    "englishtranslate": "Ten divided by two is five.",
+    "pronunciation": { "ipa": "ɣəˈdeːlt doːr", "phonetic": "khuh-daylt doar" }
   },
   {
     "dutch": "ongeveer",
     "english": "approximately / about",
     "vietnamese": "khoảng",
     "dutchsentence": "Ik kom ongeveer om vier uur.",
-    "englishtranslate": "I am coming approximately at four o'clock."
+    "englishtranslate": "I am coming approximately at four o'clock.",
+    "pronunciation": { "ipa": "ɔŋˈɣəveːr", "phonetic": "ong-khuh-vayr" }
   },
   {
     "dutch": "zou / zouden",
-    "english": "would (auxiliary verb)",
-    "vietnamese": "sẽ",
+    "english": "would",
+    "vietnamese": "sẽ / nên (điều kiện)",
     "dutchsentence": "Ik zou je willen vragen om hulp.",
     "englishtranslate": "I would like to ask you for help.",
-    "notes": "Used to express condition or desire (modal verb)."
+    "pronunciation": { "ipa": "zʌu / ˈzʌudə(n)", "phonetic": "zow / zow-dun" }
   },
   {
     "dutch": "weten",
-    "english": "to know (a fact/information)",
+    "english": "to know (a fact)",
     "vietnamese": "biết",
     "dutchsentence": "Weet je hoe je deze oefening moet doen?",
     "englishtranslate": "Do you know how to do this exercise?",
-    "notes": "Different from *kennen* (to know a person/place)."
+    "pronunciation": { "ipa": "ˈʋeːtə(n)", "phonetic": "vay-tun" }
   }
 ]

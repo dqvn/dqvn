@@ -4,153 +4,175 @@
     "english": "the message",
     "vietnamese": "tin nhắn",
     "dutchsentence": "Ik heb een bericht op mijn smartphone gekregen.",
-    "englishtranslate": "I received a message on my smartphone."
+    "englishtranslate": "I received a message on my smartphone.",
+    "pronunciation": { "ipa": "bəˈrɪχt", "phonetic": "buh-rikht" }
   },
   {
     "dutch": "sms, de",
     "english": "the SMS / the text message",
     "vietnamese": "tin nhắn",
     "dutchsentence": "Wil je mij een sms sturen?",
-    "englishtranslate": "Would you like to send me an SMS/text message?"
+    "englishtranslate": "Would you like to send me an SMS/text message?",
+    "pronunciation": { "ipa": "ɛs.ɛmˈɛs", "phonetic": "es-em-es" }
   },
   {
     "dutch": "link, de",
     "english": "the link",
     "vietnamese": "liên kết",
     "dutchsentence": "Klik op de link om het artikel te lezen.",
-    "englishtranslate": "Click on the link to read the article."
+    "englishtranslate": "Click on the link to read the article.",
+    "pronunciation": { "ipa": "lɪŋk", "phonetic": "link" }
   },
   {
     "dutch": "website, de",
     "english": "the website",
     "vietnamese": "trang web",
     "dutchsentence": "Wat is de website van het bedrijf?",
-    "englishtranslate": "What is the website of the company?"
+    "englishtranslate": "What is the website of the company?",
+    "pronunciation": { "ipa": "ˈʋɛpsait", "phonetic": "vep-syt" }
   },
   {
     "dutch": "artikel, het",
     "english": "the article",
     "vietnamese": "bài báo",
     "dutchsentence": "Dit artikel is moeilijk te begrijpen.",
-    "englishtranslate": "This article is difficult to understand."
+    "englishtranslate": "This article is difficult to understand.",
+    "pronunciation": { "ipa": "ɑrˈtikəl", "phonetic": "ar-tee-kul" }
   },
   {
     "dutch": "foto, de",
     "english": "the photo",
     "vietnamese": "ảnh",
     "dutchsentence": "Deze foto is heel mooi.",
-    "englishtranslate": "This photo is very beautiful."
+    "englishtranslate": "This photo is very beautiful.",
+    "pronunciation": { "ipa": "ˈfoːtoː", "phonetic": "fo-to" }
   },
   {
     "dutch": "keer, de",
     "english": "the time (occurrence)",
     "vietnamese": "lần",
     "dutchsentence": "Dit is de eerste keer dat ik hier ben.",
-    "englishtranslate": "This is the first time I am here."
+    "englishtranslate": "This is the first time I am here.",
+    "pronunciation": { "ipa": "keːr", "phonetic": "kayr" }
   },
   {
     "dutch": "groot",
     "english": "big / large",
     "vietnamese": "lớn",
     "dutchsentence": "Mijn huis is groot, maar de tuin is klein.",
-    "englishtranslate": "My house is big, but the garden is small."
+    "englishtranslate": "My house is big, but the garden is small.",
+    "pronunciation": { "ipa": "ɣroːt", "phonetic": "khroat" }
   },
   {
     "dutch": "klein",
     "english": "small / little",
     "vietnamese": "nhỏ",
     "dutchsentence": "Ik heb een kleine computer op mijn bureau.",
-    "englishtranslate": "I have a small computer on my desk/office."
+    "englishtranslate": "I have a small computer on my desk/office.",
+    "pronunciation": { "ipa": "klɛin", "phonetic": "klyn" }
   },
   {
     "dutch": "moeilijk",
     "english": "difficult / hard",
     "vietnamese": "khó",
     "dutchsentence": "Die oefening is moeilijk, maar niet onmogelijk.",
-    "englishtranslate": "That exercise is difficult, but not impossible."
+    "englishtranslate": "That exercise is difficult, but not impossible.",
+    "pronunciation": { "ipa": "ˈmuilək", "phonetic": "mooy-luk" }
   },
   {
     "dutch": "gemakkelijk",
     "english": "easy",
     "vietnamese": "dễ",
     "dutchsentence": "Deze taal is gemakkelijk om te leren.",
-    "englishtranslate": "This language is easy to learn."
+    "englishtranslate": "This language is easy to learn.",
+    "pronunciation": { "ipa": "ɣəˈmɑkələk", "phonetic": "khuh-mak-uh-luk" }
   },
   {
     "dutch": "mooi",
     "english": "beautiful / nice / pretty",
     "vietnamese": "đẹp",
     "dutchsentence": "Ze heeft een mooie rok.",
-    "englishtranslate": "She has a beautiful/nice skirt."
+    "englishtranslate": "She has a beautiful/nice skirt.",
+    "pronunciation": { "ipa": "moːi", "phonetic": "moay" }
   },
   {
     "dutch": "lelijk",
     "english": "ugly",
     "vietnamese": "xấu",
     "dutchsentence": "Die oude kleren zijn lelijk.",
-    "englishtranslate": "Those old clothes are ugly."
+    "englishtranslate": "Those old clothes are ugly.",
+    "pronunciation": { "ipa": "ˈleːlək", "phonetic": "lay-luk" }
   },
   {
     "dutch": "altijd",
     "english": "always",
     "vietnamese": "luôn luôn",
     "dutchsentence": "Hij is altijd thuis in de avond.",
-    "englishtranslate": "He is always at home in the evening."
+    "englishtranslate": "He is always at home in the evening.",
+    "pronunciation": { "ipa": "ˈɑltɛit", "phonetic": "al-tyt" }
   },
   {
     "dutch": "meestal",
     "english": "usually / mostly",
     "vietnamese": "thường xuyên",
     "dutchsentence": "Wij chatten meestal in de middag.",
-    "englishtranslate": "We usually chat in the afternoon."
+    "englishtranslate": "We usually chat in the afternoon.",
+    "pronunciation": { "ipa": "ˈmeːstɑl", "phonetic": "may-stal" }
   },
   {
     "dutch": "soms",
     "english": "sometimes",
     "vietnamese": "thỉnh thoảng",
     "dutchsentence": "Soms ga ik naar het café.",
-    "englishtranslate": "Sometimes I go to the café."
+    "englishtranslate": "Sometimes I go to the café.",
+    "pronunciation": { "ipa": "sɔms", "phonetic": "soms" }
   },
   {
     "dutch": "zelden",
     "english": "rarely",
     "vietnamese": "hiếm khi",
     "dutchsentence": "Ik zie hem zelden.",
-    "englishtranslate": "I rarely see him."
+    "englishtranslate": "I rarely see him.",
+    "pronunciation": { "ipa": "ˈzɛldə(n)", "phonetic": "zel-dun" }
   },
   {
     "dutch": "nooit",
     "english": "never",
     "vietnamese": "không bao giờ",
     "dutchsentence": "Ik eet nooit vlees.",
-    "englishtranslate": "I never eat meat."
+    "englishtranslate": "I never eat meat.",
+    "pronunciation": { "ipa": "noːit", "phonetic": "noayt" }
   },
   {
     "dutch": "elkaar",
     "english": "each other / one another",
     "vietnamese": "nhau",
     "dutchsentence": "Wij zien elkaar volgende week.",
-    "englishtranslate": "We see each other next week."
+    "englishtranslate": "We see each other next week.",
+    "pronunciation": { "ipa": "ɛlˈkaːr", "phonetic": "el-kaar" }
   },
   {
     "dutch": "natuurlijk",
     "english": "of course / naturally",
     "vietnamese": "tất nhiên",
     "dutchsentence": "Natuurlijk wil ik dat doen!",
-    "englishtranslate": "Of course I want to do that!"
+    "englishtranslate": "Of course I want to do that!",
+    "pronunciation": { "ipa": "naːˈtyːrlək", "phonetic": "naa-tuur-luk" }
   },
   {
     "dutch": "eten",
     "english": "to eat",
     "vietnamese": "ăn",
     "dutchsentence": "Wat wil je eten vanavond?",
-    "englishtranslate": "What do you want to eat tonight?"
+    "englishtranslate": "What do you want to eat tonight?",
+    "pronunciation": { "ipa": "ˈeːtə(n)", "phonetic": "ay-tun" }
   },
   {
     "dutch": "chatten",
     "english": "to chat",
     "vietnamese": "trò chuyện",
     "dutchsentence": "Laten we chatten over de cursus.",
-    "englishtranslate": "Let's chat about the course."
+    "englishtranslate": "Let's chat about the course.",
+    "pronunciation": { "ipa": "ˈtʃɛtə(n)", "phonetic": "chet-un" }
   }
 ]

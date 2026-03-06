@@ -4,149 +4,167 @@
     "english": "the money",
     "vietnamese": "tiền",
     "dutchsentence": "Heb je genoeg geld om de rekening te betalen?",
-    "englishtranslate": "Do you have enough money to pay the bill?"
+    "englishtranslate": "Do you have enough money to pay the bill?",
+    "pronunciation": { "ipa": "ɣɛlt", "phonetic": "khelt" }
   },
   {
     "dutch": "rekening, de",
     "english": "the bill / the check",
     "vietnamese": "hóa đơn",
     "dutchsentence": "Kunnen we apart betalen? We zullen de rekening delen.",
-    "englishtranslate": "Can we pay separately? We will share the bill."
+    "englishtranslate": "Can we pay separately? We will share the bill.",
+    "pronunciation": { "ipa": "ˈreːkənɪŋ", "phonetic": "ray-kun-ing" }
   },
   {
     "dutch": "rest, de",
     "english": "the rest / the remainder",
     "vietnamese": "phần còn lại",
     "dutchsentence": "U kunt de rest houden (als fooi).",
-    "englishtranslate": "You can keep the rest (as a tip)."
+    "englishtranslate": "You can keep the rest (as a tip).",
+    "pronunciation": { "ipa": "rɛst", "phonetic": "rest" }
   },
   {
     "dutch": "kaart, de",
     "english": "the card / the map",
     "vietnamese": "thẻ",
     "dutchsentence": "Mag ik met de kaart betalen?",
-    "englishtranslate": "May I pay with card?"
+    "englishtranslate": "May I pay with card?",
+    "pronunciation": { "ipa": "kaːrt", "phonetic": "kaart" }
   },
   {
     "dutch": "kredietkaart, de",
     "english": "the credit card",
     "vietnamese": "thẻ tín dụng",
     "dutchsentence": "Ik betaal met mijn kredietkaart.",
-    "englishtranslate": "I am paying with my credit card."
+    "englishtranslate": "I am paying with my credit card.",
+    "pronunciation": { "ipa": "kreːˈditkaːrt", "phonetic": "kray-deet-kaart" }
   },
   {
     "dutch": "komma, de",
     "english": "the comma / the decimal point",
     "vietnamese": "dấu phẩy",
     "dutchsentence": "Het cijfer na de komma is acht.",
-    "englishtranslate": "The digit after the decimal point is eight."
+    "englishtranslate": "The digit after the decimal point is eight.",
+    "pronunciation": { "ipa": "ˈkɔmaː", "phonetic": "kom-maa" }
   },
   {
     "dutch": "cent, de",
     "english": "the cent",
     "vietnamese": "xu",
     "dutchsentence": "Het kost twee euro en vijftig cent.",
-    "englishtranslate": "It costs two euros and fifty cents."
+    "englishtranslate": "It costs two euros and fifty cents.",
+    "pronunciation": { "ipa": "sɛnt", "phonetic": "sent" }
   },
   {
     "dutch": "apart",
     "english": "separate / separately",
     "vietnamese": "riêng biệt",
     "dutchsentence": "Willen jullie apart betalen?",
-    "englishtranslate": "Do you (plural) want to pay separately?"
+    "englishtranslate": "Do you (plural) want to pay separately?",
+    "pronunciation": { "ipa": "aːˈpɑrt", "phonetic": "aa-part" }
   },
   {
     "dutch": "samen",
     "english": "together",
     "vietnamese": "cùng nhau",
     "dutchsentence": "We gaan samen naar het concert.",
-    "englishtranslate": "We are going together to the concert."
+    "englishtranslate": "We are going together to the concert.",
+    "pronunciation": { "ipa": "ˈsaːmə(n)", "phonetic": "saa-mun" }
   },
   {
     "dutch": "weer",
     "english": "again",
     "vietnamese": "lại",
     "dutchsentence": "Je moet de oefening weer doen.",
-    "englishtranslate": "You must do the exercise again."
+    "englishtranslate": "You must do the exercise again.",
+    "pronunciation": { "ipa": "ʋeːr", "phonetic": "vayr" }
   },
   {
     "dutch": "alweer",
-    "english": "again (often implying repetition or impatience)",
+    "english": "again (implying repetition)",
     "vietnamese": "lại nữa",
     "dutchsentence": "O nee, alweer te laat!",
     "englishtranslate": "Oh no, too late again!",
-    "notes": "Similar to *weer*, but stronger/more impatient."
+    "pronunciation": { "ipa": "ɑlˈʋeːr", "phonetic": "al-vayr" }
   },
   {
     "dutch": "me / mij",
-    "english": "me (unstressed/stressed object pronoun)",
+    "english": "me",
     "vietnamese": "tôi",
     "dutchsentence": "Geef mij de rekening alstublieft.",
-    "englishtranslate": "Give me the bill please."
+    "englishtranslate": "Give me the bill please.",
+    "pronunciation": { "ipa": "mə / mɛi", "phonetic": "muh / my" }
   },
   {
     "dutch": "je / jou",
-    "english": "you (informal object pronoun)",
+    "english": "you (singular)",
     "vietnamese": "bạn",
     "dutchsentence": "De leerkracht vraagt het aan jou.",
-    "englishtranslate": "The teacher asks it to you."
+    "englishtranslate": "The teacher asks it to you.",
+    "pronunciation": { "ipa": "jə / jʌu", "phonetic": "yuh / yow" }
   },
   {
     "dutch": "hem",
-    "english": "him (object pronoun)",
+    "english": "him",
     "vietnamese": "anh ấy",
     "dutchsentence": "Ik zie hem morgen opnieuw.",
-    "englishtranslate": "I see him again tomorrow."
+    "englishtranslate": "I see him again tomorrow.",
+    "pronunciation": { "ipa": "ɦɛm", "phonetic": "hem" }
   },
   {
     "dutch": "haar",
-    "english": "her (object pronoun)",
+    "english": "her",
     "vietnamese": "cô ấy",
     "dutchsentence": "Hij belt haar 's avonds.",
-    "englishtranslate": "He calls her in the evening."
+    "englishtranslate": "He calls her in the evening.",
+    "pronunciation": { "ipa": "ɦaːr", "phonetic": "haar" }
   },
   {
     "dutch": "ons",
-    "english": "us (object pronoun)",
+    "english": "us",
     "vietnamese": "chúng tôi",
     "dutchsentence": "Zij zullen ons een bericht sturen.",
-    "englishtranslate": "They will send us a message."
+    "englishtranslate": "They will send us a message.",
+    "pronunciation": { "ipa": "ɔns", "phonetic": "ons" }
   },
   {
     "dutch": "jullie",
-    "english": "you (plural object pronoun)",
+    "english": "you (plural)",
     "vietnamese": "các bạn",
     "dutchsentence": "De baas wil jullie spreken.",
-    "englishtranslate": "The boss wants to speak to you (plural)."
+    "englishtranslate": "The boss wants to speak to you (plural).",
+    "pronunciation": { "ipa": "ˈjyli", "phonetic": "yul-lee" }
   },
   {
     "dutch": "hen",
-    "english": "them (object pronoun, formal/after preposition)",
+    "english": "them",
     "vietnamese": "họ",
     "dutchsentence": "Ik heb het aan hen gegeven.",
     "englishtranslate": "I have given it to them.",
-    "notes": "Often used as *ze* (unstressed) or *hun* (indirect object) in spoken Dutch."
+    "pronunciation": { "ipa": "ɦɛn", "phonetic": "hen" }
   },
   {
     "dutch": "geven",
     "english": "to give",
     "vietnamese": "cho",
     "dutchsentence": "Kan je mij een voorbeeld geven?",
-    "englishtranslate": "Can you give me an example?"
+    "englishtranslate": "Can you give me an example?",
+    "pronunciation": { "ipa": "ˈɣeːvə(n)", "phonetic": "khay-vun" }
   },
   {
     "dutch": "betalen",
     "english": "to pay",
     "vietnamese": "trả tiền",
     "dutchsentence": "Ik moet de rekening betalen voor ons eten.",
-    "englishtranslate": "I must pay the bill for our food."
+    "englishtranslate": "I must pay the bill for our food.",
+    "pronunciation": { "ipa": "bəˈtaːlə(n)", "phonetic": "bu-taa-lun" }
   },
   {
     "dutch": "houden",
     "english": "to keep",
     "vietnamese": "giữ",
     "dutchsentence": "Hou dat geld maar zelf.",
-    "englishtranslate": "Keep that money yourself (just keep it).",
-    "notes": "Also part of *houden van* (to love/be fond of)."
+    "englishtranslate": "Keep that money yourself.",
+    "pronunciation": { "ipa": "ˈɦʌudə(n)", "phonetic": "how-dun" }
   }
 ]
