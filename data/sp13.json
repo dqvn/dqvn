@@ -4,62 +4,71 @@
     "english": "the example",
     "vietnamese": "ví dụ",
     "dutchsentence": "Kan je een voorbeeld van deze regel geven?",
-    "englishtranslate": "Can you give an example of this rule?"
+    "englishtranslate": "Can you give an example of this rule?",
+    "pronunciation": { "ipa": "ˈvoːrbeːlt", "phonetic": "voar-baylt" }
   },
   {
     "dutch": "grammatica, de",
     "english": "the grammar",
     "vietnamese": "ngữ pháp",
     "dutchsentence": "De grammatica van het Nederlands is moeilijk.",
-    "englishtranslate": "The grammar of Dutch is difficult."
+    "englishtranslate": "The grammar of Dutch is difficult.",
+    "pronunciation": { "ipa": "ɣrɑˈmaːtikaː", "phonetic": "khra-maa-tee-kaa" }
   },
   {
     "dutch": "regel, de",
     "english": "the rule",
     "vietnamese": "quy tắc",
     "dutchsentence": "Er zijn veel regels om te leren.",
-    "englishtranslate": "There are many rules to learn."
+    "englishtranslate": "There are many rules to learn.",
+    "pronunciation": { "ipa": "ˈreːɣəl", "phonetic": "ray-khul" }
   },
   {
     "dutch": "uitzondering, de",
     "english": "the exception",
     "vietnamese": "ngoại lệ",
     "dutchsentence": "Deze regel heeft een uitzondering.",
-    "englishtranslate": "This rule has an exception."
+    "englishtranslate": "This rule has an exception.",
+    "pronunciation": { "ipa": "ˈœytˌsɔndərɪŋ", "phonetic": "ouyt-son-dur-ing" }
   },
   {
     "dutch": "meer",
     "english": "more",
     "vietnamese": "nhiều hơn",
     "dutchsentence": "Ik wil meer oefenen met schrijven.",
-    "englishtranslate": "I want to practice writing more."
+    "englishtranslate": "I want to practice writing more.",
+    "pronunciation": { "ipa": "meːr", "phonetic": "mayr" }
   },
   {
     "dutch": "minder",
     "english": "less / fewer",
     "vietnamese": "ít hơn",
     "dutchsentence": "Ik heb minder tijd dan jij.",
-    "englishtranslate": "I have less time than you."
+    "englishtranslate": "I have less time than you.",
+    "pronunciation": { "ipa": "ˈmɪndər", "phonetic": "min-dur" }
   },
   {
     "dutch": "opnieuw",
     "english": "again / anew",
     "vietnamese": "lại",
     "dutchsentence": "We moeten deze oefening opnieuw doen.",
-    "englishtranslate": "We must do this exercise again."
+    "englishtranslate": "We must do this exercise again.",
+    "pronunciation": { "ipa": "ɔpˈniʋ", "phonetic": "op-neeuw" }
   },
   {
     "dutch": "bijvoorbeeld",
     "english": "for example",
     "vietnamese": "ví dụ",
     "dutchsentence": "Ik wil meer eten, bijvoorbeeld brood.",
-    "englishtranslate": "I want to eat more, for example bread."
+    "englishtranslate": "I want to eat more, for example bread.",
+    "pronunciation": { "ipa": "bɛiˈvoːrbeːlt", "phonetic": "by-voar-baylt" }
   },
   {
     "dutch": "te",
     "english": "too (adverb of degree)",
     "vietnamese": "quá",
     "dutchsentence": "Het is te moeilijk om nu te begrijpen.",
-    "englishtranslate": "It is too difficult to understand now."
+    "englishtranslate": "It is too difficult to understand now.",
+    "pronunciation": { "ipa": "tə", "phonetic": "tuh" }
   }
 ]

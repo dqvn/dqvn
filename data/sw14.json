@@ -3,6 +3,7 @@
         "dutch": "de opinie (-s)",
         "english": "the opinion (-s)",
         "vietnamese": "ý kiến (-s)",
+        "pronunciation": { "ipa": "də oːˈpini", "phonetic": "du oh-pee-nee" },
         "dutchsentence": "Mijn opinie is dat we meer moeten oefenen.",
         "englishtranslate": "My opinion is that we should practice more."
     },
@@ -10,6 +11,7 @@
         "dutch": "de kilometer (-s)",
         "english": "the kilometer (-s)",
         "vietnamese": "kilômét (-s)",
+        "pronunciation": { "ipa": "də ˈkiloːmeːtər", "phonetic": "du kee-loh-may-tur" },
         "dutchsentence": "Het is nog vijf kilometer naar huis.",
         "englishtranslate": "It is still five kilometers home."
     },
@@ -17,6 +19,7 @@
         "dutch": "de meter (-s)",
         "english": "the meter (-s)",
         "vietnamese": "mét (-s)",
+        "pronunciation": { "ipa": "də ˈmeːtər", "phonetic": "du may-tur" },
         "dutchsentence": "De tafel is anderhalve meter lang.",
         "englishtranslate": "The table is one and a half meters long."
     },
@@ -24,6 +27,7 @@
         "dutch": "de snelheid (-heden)",
         "english": "the speed (-s)",
         "vietnamese": "tốc độ (-s)",
+        "pronunciation": { "ipa": "də ˈsnɛlhɛit", "phonetic": "du snel-hite" },
         "dutchsentence": "Je moet de snelheid verminderen in de bebouwde kom.",
         "englishtranslate": "You have to reduce the speed in the built-up area."
     },
@@ -31,6 +35,7 @@
         "dutch": "de controle (-s)",
         "english": "the control (-s)",
         "vietnamese": "kiểm soát (-s)",
+        "pronunciation": { "ipa": "də kɔnˈtroːlə", "phonetic": "du kon-troh-lu" },
         "dutchsentence": "De politie deed een snelheidscontrole.",
         "englishtranslate": "The police carried out a speed control (check)."
     },
@@ -38,6 +43,7 @@
         "dutch": "de politie",
         "english": "the police",
         "vietnamese": "cảnh sát",
+        "pronunciation": { "ipa": "də poːˈlitsi", "phonetic": "du poh-leet-see" },
         "dutchsentence": "De politie arriveerde snel bij het ongeluk.",
         "englishtranslate": "The police arrived quickly at the accident."
     },
@@ -45,6 +51,7 @@
         "dutch": "de boete (-s)",
         "english": "the fine (-s)",
         "vietnamese": "tiền phạt (-s)",
+        "pronunciation": { "ipa": "də ˈbutə", "phonetic": "du boo-tu" },
         "dutchsentence": "Ik heb een hoge boete gekregen voor te snel rijden.",
         "englishtranslate": "I received a high fine for speeding."
     },
@@ -52,6 +59,7 @@
         "dutch": "de straf (-fen)",
         "english": "the punishment (-s)",
         "vietnamese": "hình phạt (-s)",
+        "pronunciation": { "ipa": "də strɑf", "phonetic": "du straf" },
         "dutchsentence": "De rechter heeft een zware straf opgelegd.",
         "englishtranslate": "The judge imposed a severe punishment."
     },
@@ -59,6 +67,7 @@
         "dutch": "per",
         "english": "per",
         "vietnamese": "mỗi",
+        "pronunciation": { "ipa": "pɛr", "phonetic": "per" },
         "dutchsentence": "We rijden honderd kilometer per uur.",
         "englishtranslate": "We are driving one hundred kilometers per hour."
     },
@@ -66,6 +75,7 @@
         "dutch": "langzaam",
         "english": "slow",
         "vietnamese": "chậm",
+        "pronunciation": { "ipa": "ˈlɑŋzaːm", "phonetic": "lang-zahm" },
         "dutchsentence": "De trein rijdt erg langzaam vanwege de mist.",
         "englishtranslate": "The train is driving very slowly because of the fog."
     },
@@ -73,6 +83,7 @@
         "dutch": "straffen",
         "english": "to punish",
         "vietnamese": "trừng phạt",
+        "pronunciation": { "ipa": "ˈstrɑfə(n)", "phonetic": "straf-fun" },
         "dutchsentence": "De leraar moet de student straffen voor valsspelen.",
         "englishtranslate": "The teacher has to punish the student for cheating."
     },
@@ -80,6 +91,7 @@
         "dutch": "overal",
         "english": "everywhere",
         "vietnamese": "tất cả mọi nơi",
+        "pronunciation": { "ipa": "ˈoːvərɑl", "phonetic": "oh-vur-al" },
         "dutchsentence": "Er liggen boeken overal in de kamer.",
         "englishtranslate": "There are books everywhere in the room."
     },
@@ -87,6 +99,7 @@
         "dutch": "ergens",
         "english": "somewhere",
         "vietnamese": "ở đâu đó",
+        "pronunciation": { "ipa": "ˈɛrxəns", "phonetic": "er-khuns" },
         "dutchsentence": "Ik heb mijn sleutels ergens neergelegd.",
         "englishtranslate": "I put my keys down somewhere."
     },
@@ -94,6 +107,7 @@
         "dutch": "nergens",
         "english": "nowhere",
         "vietnamese": "không ở đâu hết",
+        "pronunciation": { "ipa": "ˈnɛrxəns", "phonetic": "ner-khuns" },
         "dutchsentence": "Ik kan mijn bril nergens vinden.",
         "englishtranslate": "I can't find my glasses nowhere (anywhere)."
     },
@@ -101,6 +115,7 @@
         "dutch": "iedereen",
         "english": "everyone",
         "vietnamese": "mọi người",
+        "pronunciation": { "ipa": "ˈidəreːn", "phonetic": "ee-du-rayn" },
         "dutchsentence": "Iedereen was blij met het resultaat.",
         "englishtranslate": "Everyone was happy with the result."
     },
@@ -108,6 +123,7 @@
         "dutch": "iemand",
         "english": "someone",
         "vietnamese": "một ai đó",
+        "pronunciation": { "ipa": "ˈimɑnt", "phonetic": "ee-mant" },
         "dutchsentence": "Heeft iemand de telefoon gezien?",
         "englishtranslate": "Has someone seen the phone?"
     },
@@ -115,6 +131,7 @@
         "dutch": "niemand",
         "english": "no one",
         "vietnamese": "không ai hết",
+        "pronunciation": { "ipa": "ˈnimɑnt", "phonetic": "nee-mant" },
         "dutchsentence": "Niemand kon het antwoord geven.",
         "englishtranslate": "No one could give the answer."
     },
@@ -122,6 +139,7 @@
         "dutch": "alles",
         "english": "everything",
         "vietnamese": "mọi thứ",
+        "pronunciation": { "ipa": "ˈɑləs", "phonetic": "al-us" },
         "dutchsentence": "Ik heb alles geleerd voor de test.",
         "englishtranslate": "I have learned everything for the test."
     },
@@ -129,6 +147,7 @@
         "dutch": "iets",
         "english": "something",
         "vietnamese": "một cái gì đó",
+        "pronunciation": { "ipa": "its", "phonetic": "eets" },
         "dutchsentence": "Wil je iets drinken?",
         "englishtranslate": "Do you want something to drink?"
     },
@@ -136,6 +155,7 @@
         "dutch": "niets",
         "english": "nothing",
         "vietnamese": "không có gì",
+        "pronunciation": { "ipa": "nits", "phonetic": "neets" },
         "dutchsentence": "Ik heb niets te doen vandaag.",
         "englishtranslate": "I have nothing to do today."
     }

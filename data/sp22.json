@@ -4,132 +4,152 @@
     "english": "the landlord",
     "vietnamese": "chủ nhà",
     "dutchsentence": "De verhuurder wil de huur verbeteren.",
-    "englishtranslate": "The landlord wants to improve the rent."
+    "englishtranslate": "The landlord wants to increase/adjust the rent.",
+    "notes": "In this context, 'verbeteren' often implies an update or increase in price.",
+    "pronunciation": { "ipa": "vɛrˈɦyːrdər", "phonetic": "vur-huur-dur" }
   },
   {
     "dutch": "huurder, de",
     "english": "the tenant",
     "vietnamese": "người thuê nhà",
     "dutchsentence": "De huurder betaalt de huur elke maand.",
-    "englishtranslate": "The tenant pays the rent every month."
+    "englishtranslate": "The tenant pays the rent every month.",
+    "pronunciation": { "ipa": "ˈɦyːrdər", "phonetic": "huur-dur" }
   },
   {
     "dutch": "huur, de",
     "english": "the rent",
     "vietnamese": "tiền thuê",
     "dutchsentence": "De huur van mijn appartement is duur.",
-    "englishtranslate": "The rent of my apartment is expensive."
+    "englishtranslate": "The rent of my apartment is expensive.",
+    "pronunciation": { "ipa": "ɦyːr", "phonetic": "huur" }
   },
   {
     "dutch": "klant, de",
     "english": "the customer",
     "vietnamese": "khách hàng",
     "dutchsentence": "De klant wil Italiaans eten.",
-    "englishtranslate": "The customer wants to eat Italian food."
+    "englishtranslate": "The customer wants to eat Italian food.",
+    "pronunciation": { "ipa": "klɑnt", "phonetic": "klant" }
   },
   {
     "dutch": "Italiaans",
-    "english": "Italian / Italian language",
+    "english": "Italian",
     "vietnamese": "tiếng Ý",
     "dutchsentence": "Ik spreek een beetje Italiaans.",
-    "englishtranslate": "I speak a little Italian."
+    "englishtranslate": "I speak a little Italian.",
+    "pronunciation": { "ipa": "itaːlˈjaːns", "phonetic": "ee-taal-yaans" }
   },
   {
     "dutch": "Russisch",
-    "english": "Russian / Russian language",
+    "english": "Russian",
     "vietnamese": "tiếng Nga",
     "dutchsentence": "Russisch is een moeilijke taal.",
-    "englishtranslate": "Russian is a difficult language."
+    "englishtranslate": "Russian is a difficult language.",
+    "pronunciation": { "ipa": "ˈrʏsis", "phonetic": "rus-sees" }
   },
   {
     "dutch": "Arabisch",
-    "english": "Arabic / Arabic language",
+    "english": "Arabic",
     "vietnamese": "tiếng Ả Rập",
     "dutchsentence": "Leer je ook Arabisch op de taalschool?",
-    "englishtranslate": "Are you also learning Arabic at the language school?"
+    "englishtranslate": "Are you also learning Arabic at the language school?",
+    "pronunciation": { "ipa": "aːˈraːbis", "phonetic": "aa-raa-bees" }
   },
   {
     "dutch": "Mexico",
     "english": "Mexico",
     "vietnamese": "Mexico",
     "dutchsentence": "Wij zullen naar Mexico reizen in de zomer.",
-    "englishtranslate": "We will travel to Mexico in the summer."
+    "englishtranslate": "We will travel to Mexico in the summer.",
+    "pronunciation": { "ipa": "ˈmɛksikoː", "phonetic": "mek-see-ko" }
   },
   {
     "dutch": "Oostenrijk",
     "english": "Austria",
     "vietnamese": "Áo",
     "dutchsentence": "Oostenrijk is beroemd om zijn bergen.",
-    "englishtranslate": "Austria is famous for its mountains."
+    "englishtranslate": "Austria is famous for its mountains.",
+    "pronunciation": { "ipa": "ˈoːstənrɛik", "phonetic": "oast-un-ryk" }
   },
   {
     "dutch": "Brazilië",
     "english": "Brazil",
     "vietnamese": "Brazil",
     "dutchsentence": "De vriendin van mijn collega komt uit Brazilië.",
-    "englishtranslate": "The friend of my colleague comes from Brazil."
+    "englishtranslate": "The friend of my colleague comes from Brazil.",
+    "pronunciation": { "ipa": "braːˈzilijə", "phonetic": "braa-zee-lee-yuh" }
   },
   {
     "dutch": "Italië",
     "english": "Italy",
     "vietnamese": "Ý",
     "dutchsentence": "Ik ga volgend jaar naar Italië.",
-    "englishtranslate": "I am going to Italy next year."
+    "englishtranslate": "I am going to Italy next year.",
+    "pronunciation": { "ipa": "iˈtaːlijə", "phonetic": "ee-taa-lee-yuh" }
   },
   {
     "dutch": "Rusland",
     "english": "Russia",
     "vietnamese": "Nga",
     "dutchsentence": "Rusland is een groot land.",
-    "englishtranslate": "Russia is a large country."
+    "englishtranslate": "Russia is a large country.",
+    "pronunciation": { "ipa": "ˈrʏslɑnt", "phonetic": "rus-lant" }
   },
   {
     "dutch": "Egypte",
     "english": "Egypt",
     "vietnamese": "Ai Cập",
     "dutchsentence": "Heb je ooit Egypte bezocht?",
-    "englishtranslate": "Have you ever visited Egypt?"
+    "englishtranslate": "Have you ever visited Egypt?",
+    "pronunciation": { "ipa": "eːˈɣɪptə", "phonetic": "ay-khip-tuh" }
   },
   {
     "dutch": "Nederlandstalig",
     "english": "Dutch-speaking",
     "vietnamese": "nói tiếng Hà Lan",
     "dutchsentence": "We zijn nu in een Nederlandstalig gebied.",
-    "englishtranslate": "We are now in a Dutch-speaking area."
+    "englishtranslate": "We are now in a Dutch-speaking area.",
+    "pronunciation": { "ipa": "ˈneːdərlɑntstaːlɪx", "phonetic": "nay-dur-lants-taa-lukh" }
   },
   {
     "dutch": "aan",
     "english": "to / on / at",
-    "vietnamese": "đến / trên",
+    "vietnamese": "cho / đến / tại",
     "dutchsentence": "Ik geef het aan hem.",
-    "englishtranslate": "I give it to him."
+    "englishtranslate": "I give it to him.",
+    "pronunciation": { "ipa": "aːn", "phonetic": "aan" }
   },
   {
     "dutch": "verhuren",
     "english": "to rent out",
     "vietnamese": "cho thuê",
     "dutchsentence": "De verhuurder wil het appartement verhuren.",
-    "englishtranslate": "The landlord wants to rent out the apartment."
+    "englishtranslate": "The landlord wants to rent out the apartment.",
+    "pronunciation": { "ipa": "vɛrˈɦyːrə(n)", "phonetic": "vur-huu-run" }
   },
   {
     "dutch": "verkopen",
     "english": "to sell",
     "vietnamese": "bán",
     "dutchsentence": "De bakker verkoopt brood.",
-    "englishtranslate": "The baker sells bread."
+    "englishtranslate": "The baker sells bread.",
+    "pronunciation": { "ipa": "vɛrˈkoːpə(n)", "phonetic": "vur-ko-pun" }
   },
   {
     "dutch": "helpen",
     "english": "to help",
     "vietnamese": "giúp đỡ",
     "dutchsentence": "Kan je mij alsjeblieft helpen?",
-    "englishtranslate": "Can you please help me?"
+    "englishtranslate": "Can you please help me?",
+    "pronunciation": { "ipa": "ˈɦɛlpə(n)", "phonetic": "hel-pun" }
   },
   {
     "dutch": "verbeteren",
     "english": "to improve",
     "vietnamese": "cải thiện",
     "dutchsentence": "Ik wil mijn Nederlands verbeteren.",
-    "englishtranslate": "I want to improve my Dutch."
+    "englishtranslate": "I want to improve my Dutch.",
+    "pronunciation": { "ipa": "vɛrˈbeːtərə(n)", "phonetic": "vur-bay-tur-un" }
   }
 ]

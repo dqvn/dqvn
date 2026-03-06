@@ -2,92 +2,105 @@
     {
         "dutch": "de comparatief",
         "english": "the comparative",
-        "vietnamese": "so sánh",
+        "vietnamese": "so sánh hơn",
         "dutchsentence": "De comparatief wordt gebruikt om dingen te vergelijken.",
-        "englishtranslate": "The comparative is used to compare things."
+        "englishtranslate": "The comparative is used to compare things.",
+        "pronunciation": { "ipa": "kɔmparaːˈtif", "phonetic": "kom-pah-raa-teef" }
     },
     {
         "dutch": "gratis",
         "english": "free",
         "vietnamese": "miễn phí",
         "dutchsentence": "Het is vandaag gratis parkeren.",
-        "englishtranslate": "Parking is free today."
+        "englishtranslate": "Parking is free today.",
+        "pronunciation": { "ipa": "ˈɣraːtɪs", "phonetic": "khraa-tis" }
     },
     {
         "dutch": "kosteloos",
-        "english": "costless",
+        "english": "costless / free of charge",
         "vietnamese": "không tốn phí",
         "dutchsentence": "U kunt de app kosteloos downloaden.",
-        "englishtranslate": "You can download the app costlessly (for free)."
+        "englishtranslate": "You can download the app costlessly (for free).",
+        "pronunciation": { "ipa": "ˈkɔstəloːs", "phonetic": "kost-uh-loas" }
     },
     {
         "dutch": "zo'n",
         "english": "such a",
         "vietnamese": "như vậy",
         "dutchsentence": "Ik heb nog nooit zo'n mooie film gezien.",
-        "englishtranslate": "I have never seen such a beautiful film."
+        "englishtranslate": "I have never seen such a beautiful film.",
+        "pronunciation": { "ipa": "zoːn", "phonetic": "zoan" }
     },
     {
         "dutch": "min of meer",
         "english": "more or less",
-        "vietnamese": "hơn hoặc kém",
+        "vietnamese": "ít nhiều / xấp xỉ",
         "dutchsentence": "De prijs is min of meer hetzelfde als vorig jaar.",
-        "englishtranslate": "The price is more or less the same as last year."
+        "englishtranslate": "The price is more or less the same as last year.",
+        "pronunciation": { "ipa": "mɪn ɔf meːr", "phonetic": "min of mayr" }
     },
     {
         "dutch": "precies",
         "english": "exactly",
         "vietnamese": "chính xác",
         "dutchsentence": "Dit is precies wat ik nodig had.",
-        "englishtranslate": "This is exactly what I needed."
+        "englishtranslate": "This is exactly what I needed.",
+        "pronunciation": { "ipa": "preːˈsis", "phonetic": "pray-sees" }
     },
     {
         "dutch": "exact",
         "english": "exact",
         "vietnamese": "chính xác",
         "dutchsentence": "We weten de exacte tijd van aankomst niet.",
-        "englishtranslate": "We do not know the exact time of arrival."
+        "englishtranslate": "We do not know the exact time of arrival.",
+        "pronunciation": { "ipa": "ɛkˈsɑkt", "phonetic": "ek-sakt" }
     },
     {
-        "dutch": "laat, later",
-        "english": "late, later",
-        "vietnamese": "muộn, sau",
+        "dutch": "laat / later",
+        "english": "late / later",
+        "vietnamese": "muộn / trễ hơn",
         "dutchsentence": "We waren te laat, maar we komen later terug.",
-        "englishtranslate": "We were too late, but we will come back later."
+        "englishtranslate": "We were too late, but we will come back later.",
+        "pronunciation": { "ipa": "laːt / ˈlaːtər", "phonetic": "laat / laa-tur" }
     },
     {
-        "dutch": "vroeg, vroeger",
-        "english": "early, earlier",
-        "vietnamese": "sớm, trước đây",
+        "dutch": "vroeg / vroeger",
+        "english": "early / earlier (or 'in the past')",
+        "vietnamese": "sớm / trước đây",
         "dutchsentence": "Ik sta graag vroeg op; vroeger sliep ik langer.",
-        "englishtranslate": "I like getting up early; earlier I slept longer."
+        "englishtranslate": "I like getting up early; earlier I slept longer.",
+        "pronunciation": { "ipa": "vruχ / ˈvruɣər", "phonetic": "vrookh / vroo-khur" }
     },
     {
         "dutch": "beter",
         "english": "better",
         "vietnamese": "tốt hơn",
         "dutchsentence": "Je kunt het beter morgen proberen.",
-        "englishtranslate": "You'd better try it tomorrow."
+        "englishtranslate": "You'd better try it tomorrow.",
+        "pronunciation": { "ipa": "ˈbeːtər", "phonetic": "bay-tur" }
     },
     {
         "dutch": "liever",
-        "english": "preferably",
+        "english": "rather / preferably",
         "vietnamese": "thích hơn",
         "dutchsentence": "Ik drink liever thee dan koffie.",
-        "englishtranslate": "I'd prefer (rather drink) tea than coffee."
+        "englishtranslate": "I'd rather drink tea than coffee.",
+        "pronunciation": { "ipa": "ˈlivər", "phonetic": "lee-vur" }
     },
     {
         "dutch": "worden",
-        "english": "to become",
+        "english": "to become / to be (passive)",
         "vietnamese": "trở thành",
         "dutchsentence": "Hij wil leraar worden.",
-        "englishtranslate": "He wants to become a teacher."
+        "englishtranslate": "He wants to become a teacher.",
+        "pronunciation": { "ipa": "ˈʋɔrdə(n)", "phonetic": "vor-dun" }
     },
     {
         "dutch": "blijven",
-        "english": "to stay",
+        "english": "to stay / to remain",
         "vietnamese": "ở lại",
         "dutchsentence": "Zullen we nog even blijven?",
-        "englishtranslate": "Shall we stay for a little while longer?"
+        "englishtranslate": "Shall we stay for a little while longer?",
+        "pronunciation": { "ipa": "ˈblɛivə(n)", "phonetic": "bly-vun" }
     }
 ]

@@ -4,91 +4,104 @@
     "english": "the avenue",
     "vietnamese": "đại lộ",
     "dutchsentence": "De universiteit ligt aan de hoofdlaan.",
-    "englishtranslate": "The university is located on the main avenue."
+    "englishtranslate": "The university is located on the main avenue.",
+    "pronunciation": { "ipa": "laːn", "phonetic": "laan" }
   },
   {
     "dutch": "weg, de",
     "english": "the road / the way",
     "vietnamese": "con đường",
     "dutchsentence": "Het is een lange weg naar huis.",
-    "englishtranslate": "It is a long road/way to home."
+    "englishtranslate": "It is a long road/way to home.",
+    "pronunciation": { "ipa": "ʋɛχ", "phonetic": "vekh" }
   },
   {
     "dutch": "snelweg, de",
     "english": "the highway / the motorway",
     "vietnamese": "đường cao tốc",
     "dutchsentence": "We rijden snel op de snelweg.",
-    "englishtranslate": "We drive fast on the highway."
+    "englishtranslate": "We drive fast on the highway.",
+    "pronunciation": { "ipa": "ˈsnɛlʋɛχ", "phonetic": "snel-vekh" }
   },
   {
     "dutch": "koning, de",
     "english": "the king",
     "vietnamese": "vị vua",
     "dutchsentence": "De koning is zeer beleefd.",
-    "englishtranslate": "The king is very polite."
+    "englishtranslate": "The king is very polite.",
+    "pronunciation": { "ipa": "ˈkoːnɪŋ", "phonetic": "ko-ning" }
   },
   {
     "dutch": "beleefd",
     "english": "polite",
     "vietnamese": "lịch sự",
     "dutchsentence": "Zij is altijd beleefd tegen iedereen.",
-    "englishtranslate": "She is always polite to everyone."
+    "englishtranslate": "She is always polite to everyone.",
+    "pronunciation": { "ipa": "bəˈleːft", "phonetic": "bu-layft" }
   },
   {
     "dutch": "snel",
-    "english": "fast / quickly (adverb/adjective)",
+    "english": "fast / quickly",
     "vietnamese": "nhanh",
     "dutchsentence": "Probeer zo snel mogelijk te komen.",
-    "englishtranslate": "Try to come as fast as possible."
+    "englishtranslate": "Try to come as fast as possible.",
+    "pronunciation": { "ipa": "snɛl", "phonetic": "snel" }
   },
   {
     "dutch": "traag",
     "english": "slow",
     "vietnamese": "chậm",
     "dutchsentence": "De bus rijdt erg traag vandaag.",
-    "englishtranslate": "The bus drives very slowly today."
+    "englishtranslate": "The bus drives very slowly today.",
+    "pronunciation": { "ipa": "traːx", "phonetic": "traakh" }
   },
   {
     "dutch": "mogelijk",
     "english": "possible",
     "vietnamese": "có thể",
     "dutchsentence": "Het is mogelijk om de taal snel te leren.",
-    "englishtranslate": "It is possible to learn the language quickly."
+    "englishtranslate": "It is possible to learn the language quickly.",
+    "pronunciation": { "ipa": "ˈmoːɣələk", "phonetic": "mo-khu-luk" }
   },
   {
     "dutch": "beste",
     "english": "best",
     "vietnamese": "tốt nhất",
     "dutchsentence": "Dit is het beste boek dat ik ooit las.",
-    "englishtranslate": "This is the best book I ever read."
+    "englishtranslate": "This is the best book I ever read.",
+    "pronunciation": { "ipa": "ˈbɛstə", "phonetic": "bes-tuh" }
   },
   {
     "dutch": "met vriendelijke groeten",
-    "english": "with kind regards (formal closing)",
+    "english": "with kind regards",
     "vietnamese": "trân trọng",
     "dutchsentence": "Met vriendelijke groeten, groeten van de directeur.",
-    "englishtranslate": "With kind regards, greetings from the director."
+    "englishtranslate": "With kind regards, greetings from the director.",
+    "notes": "Standard formal closing in emails (often abbreviated as Mvg).",
+    "pronunciation": { "ipa": "mɛt ˈvrimdələkə ˈɣrutə(n)", "phonetic": "met vreen-du-lu-ku khroo-tun" }
   },
   {
     "dutch": "groetjes",
-    "english": "greetings / cheers (informal closing)",
-    "vietnamese": "chào",
+    "english": "greetings / cheers",
+    "vietnamese": "thân ái",
     "dutchsentence": "Groetjes uit Italië!",
     "englishtranslate": "Greetings from Italy!",
-    "notes": "Used like 'Cheers' or 'Best' in an email/message."
+    "pronunciation": { "ipa": "ˈɣrutjəs", "phonetic": "khroot-yus" }
   },
   {
     "dutch": "terug",
     "english": "back / returned",
     "vietnamese": "trở lại",
     "dutchsentence": "Zij komt morgen terug.",
-    "englishtranslate": "She is coming back tomorrow."
+    "englishtranslate": "She is coming back tomorrow.",
+    "pronunciation": { "ipa": "təˈrʏχ", "phonetic": "tu-rukh" }
   },
   {
     "dutch": "denken",
     "english": "to think",
     "vietnamese": "nghĩ",
     "dutchsentence": "Wat denk je van dit idee?",
-    "englishtranslate": "What do you think of this idea?"
+    "englishtranslate": "What do you think of this idea?",
+    "pronunciation": { "ipa": "ˈdɛŋkə(n)", "phonetic": "deng-kun" }
   }
 ]

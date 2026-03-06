@@ -4,141 +4,161 @@
     "english": "the waiter",
     "vietnamese": "người phục vụ nam",
     "dutchsentence": "De ober brengt ons de wijn.",
-    "englishtranslate": "The waiter brings us the wine."
+    "englishtranslate": "The waiter brings us the wine.",
+    "pronunciation": { "ipa": "ˈoːbər", "phonetic": "o-bur" }
   },
   {
     "dutch": "serveuse, de",
     "english": "the waitress",
     "vietnamese": "người phục vụ nữ",
     "dutchsentence": "De serveuse werkt in het restaurant.",
-    "englishtranslate": "The waitress works in the restaurant."
+    "englishtranslate": "The waitress works in the restaurant.",
+    "pronunciation": { "ipa": "sɛrˈvøːzə", "phonetic": "ser-vuu-zuh" }
   },
   {
     "dutch": "wijn, de",
     "english": "the wine",
     "vietnamese": "rượu vang",
     "dutchsentence": "Wil je rode wijn of witte wijn?",
-    "englishtranslate": "Do you want red wine or white wine?"
+    "englishtranslate": "Do you want red wine or white wine?",
+    "pronunciation": { "ipa": "ʋɛin", "phonetic": "vyn" }
   },
   {
     "dutch": "mens, de",
     "english": "the human / the person",
     "vietnamese": "con người",
     "dutchsentence": "Ieder mens heeft een hart.",
-    "englishtranslate": "Every human/person has a heart."
+    "englishtranslate": "Every human/person has a heart.",
+    "pronunciation": { "ipa": "mɛns", "phonetic": "mens" }
   },
   {
     "dutch": "ding, het",
     "english": "the thing",
     "vietnamese": "đồ vật",
     "dutchsentence": "Wat is dat kleine ding op het bureau?",
-    "englishtranslate": "What is that small thing on the desk?"
+    "englishtranslate": "What is that small thing on the desk?",
+    "pronunciation": { "ipa": "dɪŋ", "phonetic": "ding" }
   },
   {
     "dutch": "kleur, de",
     "english": "the color",
     "vietnamese": "màu sắc",
     "dutchsentence": "Mijn favoriete kleur is blauw.",
-    "englishtranslate": "My favourite color is blue."
+    "englishtranslate": "My favourite color is blue.",
+    "pronunciation": { "ipa": "kløːr", "phonetic": "kluur" }
   },
   {
     "dutch": "rood",
     "english": "red",
     "vietnamese": "màu đỏ",
     "dutchsentence": "Ik draag een rode rok.",
-    "englishtranslate": "I am wearing a red skirt."
+    "englishtranslate": "I am wearing a red skirt.",
+    "pronunciation": { "ipa": "roːt", "phonetic": "roat" }
   },
   {
     "dutch": "wit",
     "english": "white",
     "vietnamese": "màu trắng",
     "dutchsentence": "Ik heb witte schoenen gekocht.",
-    "englishtranslate": "I have bought white shoes."
+    "englishtranslate": "I have bought white shoes.",
+    "pronunciation": { "ipa": "ʋɪt", "phonetic": "vit" }
   },
   {
     "dutch": "zwart",
     "english": "black",
     "vietnamese": "màu đen",
     "dutchsentence": "Hij draagt vaak zwarte kleren.",
-    "englishtranslate": "He often wears black clothes."
+    "englishtranslate": "He often wears black clothes.",
+    "pronunciation": { "ipa": "zʋɑrt", "phonetic": "zvart" }
   },
   {
     "dutch": "groen",
     "english": "green",
     "vietnamese": "màu xanh lá cây",
     "dutchsentence": "De tuin is groen in de lente.",
-    "englishtranslate": "The garden is green in the spring."
+    "englishtranslate": "The garden is green in the spring.",
+    "pronunciation": { "ipa": "ɣrun", "phonetic": "khroon" }
   },
   {
     "dutch": "geel",
     "english": "yellow",
     "vietnamese": "màu vàng",
     "dutchsentence": "De zon is geel.",
-    "englishtranslate": "The sun is yellow."
+    "englishtranslate": "The sun is yellow.",
+    "pronunciation": { "ipa": "ɣeːl", "phonetic": "khayl" }
   },
   {
     "dutch": "blauw",
     "english": "blue",
     "vietnamese": "màu xanh dương",
     "dutchsentence": "Zijn ogen zijn blauw.",
-    "englishtranslate": "His eyes are blue."
+    "englishtranslate": "His eyes are blue.",
+    "pronunciation": { "ipa": "blʌu", "phonetic": "blow" }
   },
   {
     "dutch": "oranje",
     "english": "orange",
     "vietnamese": "màu cam",
     "dutchsentence": "Oranje is de nationale kleur.",
-    "englishtranslate": "Orange is the national color."
+    "englishtranslate": "Orange is the national color.",
+    "pronunciation": { "ipa": "oːˈrɑnjə", "phonetic": "o-ran-yuh" }
   },
   {
     "dutch": "bruin",
     "english": "brown",
     "vietnamese": "màu nâu",
     "dutchsentence": "Mijn tas is bruin en oud.",
-    "englishtranslate": "My bag is brown and old."
+    "englishtranslate": "My bag is brown and old.",
+    "pronunciation": { "ipa": "brœyn", "phonetic": "brouyn" }
   },
   {
     "dutch": "paars",
     "english": "purple",
     "vietnamese": "màu tím",
     "dutchsentence": "Ik zie paarse bloemen in de tuin.",
-    "englishtranslate": "I see purple flowers in the garden."
+    "englishtranslate": "I see purple flowers in the garden.",
+    "pronunciation": { "ipa": "paːrs", "phonetic": "paars" }
   },
   {
     "dutch": "roze",
     "english": "pink",
     "vietnamese": "màu hồng",
     "dutchsentence": "Ze draagt een roze t-shirt.",
-    "englishtranslate": "She is wearing a pink t-shirt."
+    "englishtranslate": "She is wearing a pink t-shirt.",
+    "pronunciation": { "ipa": "ˈroːzə", "phonetic": "ro-zuh" }
   },
   {
     "dutch": "door",
     "english": "through / by",
     "vietnamese": "qua",
     "dutchsentence": "We lopen door de gang naar buiten.",
-    "englishtranslate": "We walk through the hallway to outside."
+    "englishtranslate": "We walk through the hallway to outside.",
+    "pronunciation": { "ipa": "doːr", "phonetic": "doar" }
   },
   {
     "dutch": "ieder, iedere",
-    "english": "each / every (used with *de* and *het* words)",
+    "english": "each / every",
     "vietnamese": "mỗi",
     "dutchsentence": "Iedere student moet leren.",
     "englishtranslate": "Every student must learn.",
-    "notes": "*Ieder* for *het* words, *iedere* for *de* words."
+    "notes": "Ieder for het words, iedere for de words.",
+    "pronunciation": { "ipa": "ˈidər, ˈidərə", "phonetic": "ee-dur, ee-duh-ruh" }
   },
   {
     "dutch": "elk, elke",
-    "english": "each / every (used with *de* and *het* words, often interchangeable with *ieder/iedere* in speech)",
+    "english": "each / every",
     "vietnamese": "mỗi",
     "dutchsentence": "Elk woord in de lijst is belangrijk.",
     "englishtranslate": "Every word in the list is important.",
-    "notes": "*Elk* for *het* words, *elke* for *de* words."
+    "notes": "Elk for het words, elke for de words.",
+    "pronunciation": { "ipa": "ɛlk, ˈɛlkə", "phonetic": "elk, el-kuh" }
   },
   {
     "dutch": "vaak",
     "english": "often / frequently",
     "vietnamese": "thường xuyên",
     "dutchsentence": "Ik lees vaak artikelen op die website.",
-    "englishtranslate": "I often read articles on that website."
+    "englishtranslate": "I often read articles on that website.",
+    "pronunciation": { "ipa": "vaːk", "phonetic": "vaak" }
   }
 ]

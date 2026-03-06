@@ -4,118 +4,136 @@
         "english": "the present tense",
         "vietnamese": "thì hiện tại",
         "dutchsentence": "De meeste zinnen staan in de tegenwoordige tijd.",
-        "englishtranslate": "Most sentences are in the present tense."
+        "englishtranslate": "Most sentences are in the present tense.",
+        "pronunciation": { "ipa": "də ˈteːɣə(n)ʋoːrdəɣə tɛit", "phonetic": "duh tay-khun-voar-du-khuh tyt" }
     },
     {
         "dutch": "de klinker (-s)",
         "english": "the vowel",
         "vietnamese": "nguyên âm",
         "dutchsentence": "De 'a' en de 'o' zijn klinkers.",
-        "englishtranslate": "The 'a' and the 'o' are vowels."
+        "englishtranslate": "The 'a' and the 'o' are vowels.",
+        "pronunciation": { "ipa": "ˈklɪŋkər", "phonetic": "klin-kur" }
     },
     {
         "dutch": "de medeklinker (-s)",
         "english": "the consonant",
         "vietnamese": "phụ âm",
         "dutchsentence": "De 'b' en de 'p' zijn medeklinkers.",
-        "englishtranslate": "The 'b' and the 'p' are consonants."
+        "englishtranslate": "The 'b' and the 'p' are consonants.",
+        "pronunciation": { "ipa": "ˈmeːdəklɪŋkər", "phonetic": "may-duh-klin-kur" }
     },
     {
         "dutch": "de uitspraak",
         "english": "the pronunciation",
         "vietnamese": "cách phát âm",
         "dutchsentence": "De uitspraak van het woord is moeilijk.",
-        "englishtranslate": "The pronunciation of the word is difficult."
+        "englishtranslate": "The pronunciation of the word is difficult.",
+        "pronunciation": { "ipa": "ˈœytspraːk", "phonetic": "out-spraak" }
     },
     {
         "dutch": "lang",
         "english": "long",
         "vietnamese": "dài",
         "dutchsentence": "Mijn haar is erg lang.",
-        "englishtranslate": "My hair is very long."
+        "englishtranslate": "My hair is very long.",
+        "pronunciation": { "ipa": "lɑŋ", "phonetic": "lang" }
     },
     {
         "dutch": "kort",
         "english": "short",
         "vietnamese": "ngắn",
         "dutchsentence": "De pauze is te kort.",
-        "englishtranslate": "The break is too short."
+        "englishtranslate": "The break is too short.",
+        "pronunciation": { "ipa": "kɔrt", "phonetic": "kort" }
     },
     {
         "dutch": "tegenwoordig",
-        "english": "currently",
+        "english": "currently / nowadays",
         "vietnamese": "hiện nay",
         "dutchsentence": "Tegenwoordig leer ik Spaans.",
-        "englishtranslate": "Currently, I am learning Spanish."
+        "englishtranslate": "Currently, I am learning Spanish.",
+        "pronunciation": { "ipa": "ˈteːɣə(n)ʋoːrdəχ", "phonetic": "tay-khun-voar-dukh" }
     },
     {
         "dutch": "het kind (-eren)",
         "english": "the child",
         "vietnamese": "đứa trẻ",
         "dutchsentence": "Het kind speelt in de tuin.",
-        "englishtranslate": "The child is playing in the garden."
+        "englishtranslate": "The child is playing in the garden.",
+        "notes": "The plural 'kinderen' is irregular (ends in -eren).",
+        "pronunciation": { "ipa": "kɪnt", "phonetic": "kint" }
     },
     {
         "dutch": "het kinderboek (-en)",
         "english": "the children's book",
         "vietnamese": "sách trẻ em",
         "dutchsentence": "Lezen uit een kinderboek is goed voor beginners.",
-        "englishtranslate": "Reading from a children's book is good for beginners."
+        "englishtranslate": "Reading from a children's book is good for beginners.",
+        "pronunciation": { "ipa": "ˈkɪndərˌbuk", "phonetic": "kin-dur-buk" }
     },
     {
         "dutch": "de jongvolwassene (-n)",
         "english": "the young adult",
         "vietnamese": "thanh niên",
         "dutchsentence": "Dit boek is speciaal voor jongvolwassenen geschreven.",
-        "englishtranslate": "This book is specifically written for young adults."
+        "englishtranslate": "This book is specifically written for young adults.",
+        "pronunciation": { "ipa": "jɔŋvɔlˈʋɑsənə", "phonetic": "yong-vol-vas-uh-nuh" }
     },
     {
         "dutch": "de volwassene (-n)",
         "english": "the adult",
         "vietnamese": "người lớn",
         "dutchsentence": "Als volwassene heb je veel verantwoordelijkheden.",
-        "englishtranslate": "As an adult, you have many responsibilities."
+        "englishtranslate": "As an adult, you have many responsibilities.",
+        "pronunciation": { "ipa": "vɔlˈʋɑsənə", "phonetic": "vol-vas-uh-nuh" }
     },
     {
         "dutch": "de persoon (-sonen)",
         "english": "the person",
         "vietnamese": "người",
         "dutchsentence": "Wie is die persoon daar?",
-        "englishtranslate": "Who is that person there?"
+        "englishtranslate": "Who is that person there?",
+        "pronunciation": { "ipa": "pɛrˈsoːn", "phonetic": "per-soan" }
     },
     {
         "dutch": "het niveau (-s)",
         "english": "the level",
         "vietnamese": "cấp độ",
         "dutchsentence": "Ik wil niveau B2 bereiken.",
-        "englishtranslate": "I want to reach level B2."
+        "englishtranslate": "I want to reach level B2.",
+        "pronunciation": { "ipa": "niˈvoː", "phonetic": "nee-vo" }
     },
     {
         "dutch": "jong",
         "english": "young",
         "vietnamese": "trẻ",
         "dutchsentence": "Mijn neefje is nog erg jong.",
-        "englishtranslate": "My nephew is still very young."
+        "englishtranslate": "My nephew is still very young.",
+        "pronunciation": { "ipa": "jɔŋ", "phonetic": "yong" }
     },
     {
         "dutch": "oud",
         "english": "old",
         "vietnamese": "già",
         "dutchsentence": "Het huis is heel oud.",
-        "englishtranslate": "The house is very old."
+        "englishtranslate": "The house is very old.",
+        "pronunciation": { "ipa": "ɑut", "phonetic": "out" }
     },
     {
         "dutch": "als",
-        "english": "if",
-        "vietnamese": "nếu",
+        "english": "if / when",
+        "vietnamese": "nếu / khi",
         "dutchsentence": "Als het regent, blijven we thuis.",
-        "englishtranslate": "If it rains, we'll stay home."
+        "englishtranslate": "If it rains, we'll stay home.",
+        "pronunciation": { "ipa": "ɑls", "phonetic": "als" }
     },
     {
         "dutch": "inderdaad",
         "english": "indeed",
-        "vietnamese": "thật vậy",
+        "vietnamese": "thật vậy / đúng vậy",
         "dutchsentence": "Dat is inderdaad een goed idee.",
-        "englishtranslate": "That is indeed a good idea."
+        "englishtranslate": "That is indeed a good idea.",
+        "pronunciation": { "ipa": "ɪndərˈdaːt", "phonetic": "in-dur-daat" }
     }
 ]

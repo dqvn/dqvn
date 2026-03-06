@@ -3,6 +3,7 @@
         "dutch": "het deel (delen)",
         "english": "the part (parts)",
         "vietnamese": "phần (các phần)",
+        "pronunciation": { "ipa": "ət deːl", "phonetic": "ut dāyl" },
         "dutchsentence": "Dit is het laatste deel van de cursus.",
         "englishtranslate": "This is the last part of the course."
     },
@@ -10,6 +11,7 @@
         "dutch": "de cake (-s)",
         "english": "the cake (-s)",
         "vietnamese": "bánh (-s)",
+        "pronunciation": { "ipa": "də keːk", "phonetic": "du kēyk" },
         "dutchsentence": "Zou je een stukje van die cake willen?",
         "englishtranslate": "Would you like a piece of that cake?"
     },
@@ -17,6 +19,7 @@
         "dutch": "het verschil (-len)",
         "english": "the difference (-s)",
         "vietnamese": "sự khác biệt (-s)",
+        "pronunciation": { "ipa": "ət vərˈsxɪl", "phonetic": "ut vur-skhil" },
         "dutchsentence": "Wat is het verschil tussen die twee woorden?",
         "englishtranslate": "What is the difference between those two words?"
     },
@@ -24,6 +27,7 @@
         "dutch": "rustig",
         "english": "calm",
         "vietnamese": "yên tĩnh",
+        "pronunciation": { "ipa": "ˈrʏstəx", "phonetic": "rus-tukh" },
         "dutchsentence": "De zee is vandaag erg rustig.",
         "englishtranslate": "The sea is very calm today."
     },
@@ -31,6 +35,7 @@
         "dutch": "druk",
         "english": "busy",
         "vietnamese": "bận rộn",
+        "pronunciation": { "ipa": "drʏk", "phonetic": "druk" },
         "dutchsentence": "Het is druk in de supermarkt.",
         "englishtranslate": "It is busy in the supermarket."
     },
@@ -38,6 +43,7 @@
         "dutch": "verschillend",
         "english": "different",
         "vietnamese": "khác nhau",
+        "pronunciation": { "ipa": "vərˈsxɪlənt", "phonetic": "vur-skhil-unt" },
         "dutchsentence": "Wij hebben verschillende meningen over dat onderwerp.",
         "englishtranslate": "We have different opinions about that subject."
     },
@@ -45,6 +51,7 @@
         "dutch": "even",
         "english": "even",
         "vietnamese": "đều",
+        "pronunciation": { "ipa": "ˈeːvə", "phonetic": "ay-vun" },
         "dutchsentence": "We moeten de taken even verdelen.",
         "englishtranslate": "We have to divide the tasks equally."
     },
@@ -52,6 +59,7 @@
         "dutch": "de superlatief (-ven)",
         "english": "the superlative (-s)",
         "vietnamese": "so sánh nhất (-s)",
+        "pronunciation": { "ipa": "də sypərlaˈtif", "phonetic": "du su-pur-la-teef" },
         "dutchsentence": "De superlatief is de hoogste graad van vergelijking.",
         "englishtranslate": "The superlative is the highest degree of comparison."
     },
@@ -59,6 +67,7 @@
         "dutch": "de motor (-s)",
         "english": "the motor (-s)",
         "vietnamese": "động cơ (-s)",
+        "pronunciation": { "ipa": "də ˈmoːtɔr", "phonetic": "du moh-tor" },
         "dutchsentence": "De motor van mijn auto is kapot.",
         "englishtranslate": "The engine of my car is broken."
     },
@@ -66,6 +75,7 @@
         "dutch": "de benzine",
         "english": "the gasoline",
         "vietnamese": "xăng",
+        "pronunciation": { "ipa": "də bɛnˈzinə", "phonetic": "du ben-zee-nu" },
         "dutchsentence": "Moeten we benzine tanken?",
         "englishtranslate": "Do we need to get gasoline?"
     },
@@ -73,6 +83,7 @@
         "dutch": "de diesel",
         "english": "the diesel",
         "vietnamese": "diesel",
+        "pronunciation": { "ipa": "də ˈdizəl", "phonetic": "du dee-zul" },
         "dutchsentence": "Mijn vrachtwagen rijdt op diesel.",
         "englishtranslate": "My truck runs on diesel."
     },
@@ -80,6 +91,7 @@
         "dutch": "de elektriciteit",
         "english": "the electricity",
         "vietnamese": "điện",
+        "pronunciation": { "ipa": "də eːlɛktriziˈtɛit", "phonetic": "du ay-lek-tri-zi-tight" },
         "dutchsentence": "We hebben elektriciteit nodig voor de machine.",
         "englishtranslate": "We need electricity for the machine."
     },
@@ -87,6 +99,7 @@
         "dutch": "de brandstof (-fen)",
         "english": "the fuel (-s)",
         "vietnamese": "nhiên liệu (-s)",
+        "pronunciation": { "ipa": "də ˈbrantstɔf", "phonetic": "du brant-stof" },
         "dutchsentence": "Zonne-energie is een schone brandstof.",
         "englishtranslate": "Solar energy is a clean fuel."
     },
@@ -94,6 +107,7 @@
         "dutch": "de oplader (-s)",
         "english": "the charger (-s)",
         "vietnamese": "bộ sạc (-s)",
+        "pronunciation": { "ipa": "də ˈɔplaːdər", "phonetic": "du op-la-dur" },
         "dutchsentence": "Waar is de oplader van mijn telefoon?",
         "englishtranslate": "Where is my phone charger?"
     },
@@ -101,6 +115,7 @@
         "dutch": "elektrisch",
         "english": "electric",
         "vietnamese": "điện",
+        "pronunciation": { "ipa": "eːˈlɛktris", "phonetic": "ay-lek-tris" },
         "dutchsentence": "Elektrische auto's zijn populair.",
         "englishtranslate": "Electric cars are popular."
     },
@@ -108,6 +123,7 @@
         "dutch": "eigen",
         "english": "own",
         "vietnamese": "của riêng",
+        "pronunciation": { "ipa": "ˈɛiɣə", "phonetic": "eye-khun" },
         "dutchsentence": "Iedereen heeft zijn eigen mening.",
         "englishtranslate": "Everyone has their own opinion."
     },
@@ -115,6 +131,7 @@
         "dutch": "makkelijk",
         "english": "easy",
         "vietnamese": "dễ",
+        "pronunciation": { "ipa": "ˈmɑkələk", "phonetic": "ma-ku-luk" },
         "dutchsentence": "Deze oefening is heel makkelijk.",
         "englishtranslate": "This exercise is very easy."
     },
@@ -122,6 +139,7 @@
         "dutch": "simpel",
         "english": "simple",
         "vietnamese": "đơn giản",
+        "pronunciation": { "ipa": "ˈsɪmpəl", "phonetic": "sim-pul" },
         "dutchsentence": "De oplossing is simpeler dan je denkt.",
         "englishtranslate": "The solution is simpler than you think."
     },
@@ -129,6 +147,7 @@
         "dutch": "meeste",
         "english": "most",
         "vietnamese": "nhiều nhất",
+        "pronunciation": { "ipa": "ˈmeːstə", "phonetic": "may-stu" },
         "dutchsentence": "De meeste mensen zijn het ermee eens.",
         "englishtranslate": "Most people agree with it."
     },
@@ -136,6 +155,7 @@
         "dutch": "beste",
         "english": "best",
         "vietnamese": "tốt nhất",
+        "pronunciation": { "ipa": "ˈbɛstə", "phonetic": "bes-tu" },
         "dutchsentence": "Dit is het beste restaurant van de stad.",
         "englishtranslate": "This is the best restaurant in the city."
     },
@@ -143,6 +163,7 @@
         "dutch": "weinig",
         "english": "few",
         "vietnamese": "ít",
+        "pronunciation": { "ipa": "ˈʋɛinəx", "phonetic": "vy-nukh" },
         "dutchsentence": "Er zijn weinig fouten in de tekst.",
         "englishtranslate": "There are few mistakes in the text."
     },
@@ -150,6 +171,7 @@
         "dutch": "minste",
         "english": "least",
         "vietnamese": "ít nhất",
+        "pronunciation": { "ipa": "ˈmɪnstə", "phonetic": "min-stu" },
         "dutchsentence": "Dat is de minste zorg.",
         "englishtranslate": "That is the least concern."
     },
@@ -157,6 +179,7 @@
         "dutch": "opladen",
         "english": "to charge",
         "vietnamese": "sạc",
+        "pronunciation": { "ipa": "ˈɔplaːdə", "phonetic": "op-la-dun" },
         "dutchsentence": "Ik moet mijn telefoon opladen.",
         "englishtranslate": "I have to charge my phone."
     },
@@ -164,6 +187,7 @@
         "dutch": "De superlatief:",
         "english": "The superlative:",
         "vietnamese": "So sánh nhất:",
+        "pronunciation": { "ipa": "də sypərlaˈtif", "phonetic": "du su-pur-la-teef" },
         "dutchsentence": "De superlatief is de hoogste trap van vergelijking.",
         "englishtranslate": "The superlative is the highest degree of comparison."
     },
@@ -171,6 +195,7 @@
         "dutch": "adjectief + st(e)",
         "english": "adjective + est",
         "vietnamese": "tính từ + nhất",
+        "pronunciation": { "ipa": "ɑdjɛkˈtif ɛs teː", "phonetic": "ad-yek-teef es tay" },
         "dutchsentence": "Het toevoegen van 'st(e)' vormt de superlatief.",
         "englishtranslate": "Adding 'st(e)' forms the superlative."
     },
@@ -178,6 +203,7 @@
         "dutch": "de grootste auto",
         "english": "the biggest car",
         "vietnamese": "chiếc xe lớn nhất",
+        "pronunciation": { "ipa": "də ˈɣroːtstə ˈoːtoː", "phonetic": "du khrot-stu oh-toh" },
         "dutchsentence": "Mijn vader heeft de grootste auto van de straat.",
         "englishtranslate": "My father has the biggest car on the street."
     },
@@ -185,6 +211,7 @@
         "dutch": "het kleinste boek",
         "english": "the smallest book",
         "vietnamese": "cuốn sách nhỏ nhất",
+        "pronunciation": { "ipa": "ət ˈklɛinstə buk", "phonetic": "ut kline-stu buk" },
         "dutchsentence": "Dit is het kleinste boekje dat ik ooit heb gezien.",
         "englishtranslate": "This is the smallest booklet I have ever seen."
     }
