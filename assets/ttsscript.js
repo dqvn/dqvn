@@ -1,4 +1,4 @@
-const TTSName = 'Microsoft Colette Online (Natural)'; //'Google Nederlands';
+const TTSName = 'Google Nederlands';
 const TTSLang = 'nl-NL';
 const TTSLangENG = 'en-US';
 const fileNames = ["ch01", "ch03", "ch02", "ch04", "ch05", "ch06", "ch07", "ch08", "ch09", "ch10", "sp02", "sp03",
@@ -123,7 +123,6 @@ function createLeftMenu() {
 }
 
 
-
 function getPreferredVoice() {
   const voices = window.speechSynthesis.getVoices();
 
@@ -147,7 +146,6 @@ function getPreferredVoice() {
 
   return preferredVoice;
 }
-
 
 
 // function to speak the word using Web SpeechSynthesis API
@@ -178,7 +176,6 @@ function speakText(text) {
       return voice.lang === TTSLang;
     });
   }
-
   
   window.speechSynthesis.onvoiceschanged = () => {
     googleNederlandsVoice = getPreferredVoice();
@@ -258,10 +255,10 @@ function reloadTable(jsonData) {
     const row = document.createElement('tr');
     row.innerHTML = `
     <td>${index + 1}</td>
-    <td onclick="speakText('${word.dutch.replace(/'/g, "")}')"><span class="dutch-word" data-index="${index}">${word.dutch}</span></td>
-    <td onclick="speakEngText('${word.english.replace(/'/g, "")}')"><span class="hide-text">${word.english}</span></td>
-    <td onclick="speakText('${word.dutchsentence.replace(/'/g, "")}')"><span>${word.dutchsentence}</span><br/><span class="hide-text" style="color: #3f3838ff; opacity: 0.3;">${word.englishtranslate}</span></td>
-    <td><span class="hide-text">${word.vietnamese.replace(/'/g, "")}</span></td>
+    <td onclick="speakText('${word.dutch?.replace(/'/g, "")}')"><span class="dutch-word" data-index="${index}">${word.dutch}</span><br/><span style="font-size: 0.7em;">/${word.pronunciation?.ipa || ""}/ ~ /${word.pronunciation?.phonetic || ""}/</span></td>
+    <td onclick="speakEngText('${word.english?.replace(/'/g, "")}')"><span class="hide-text">${word.english}</span></td>
+    <td onclick="speakText('${word.dutchsentence?.replace(/'/g, "")}')"><span>${word.dutchsentence}</span><br/><span class="hide-text" style="color: #3f3838ff; opacity: 0.3;">${word.englishtranslate}</span></td>
+    <td><span class="hide-text" style="font-size: 0.7em;">${word.vietnamese?.replace(/'/g, "")}</span></td>
   `;
     tableBody.appendChild(row);
   });
@@ -401,7 +398,6 @@ function createGroup(groupKey, files) {
   groupElement.appendChild(nestedList);
   return groupElement;
 }
-
   window.speechSynthesis.onvoiceschanged = () => {
     googleNederlandsVoice = getPreferredVoice();
     console.log("Loaded voice:", googleNederlandsVoice);
