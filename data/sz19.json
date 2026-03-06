@@ -1,22 +1,25 @@
 [
     {
         "dutch": "de prins (-en)",
-        "english": "the prince (princes)",
-        "vietnamese": "hoàng tử (các hoàng tử)",
+        "english": "the prince",
+        "vietnamese": "hoàng tử",
+        "pronunciation": { "ipa": "də prɪns", "phonetic": "du prins" },
         "dutchsentence": "De prins van Wales is de troonopvolger.",
         "englishtranslate": "The prince of Wales is the heir apparent."
     },
     {
         "dutch": "de prinses (-sen)",
-        "english": "the princess (princesses)",
-        "vietnamese": "công chúa (các công chúa)",
+        "english": "the princess",
+        "vietnamese": "công chúa",
+        "pronunciation": { "ipa": "də prɪnˈsɛs", "phonetic": "du prin-ses" },
         "dutchsentence": "De kleine prinses droeg een mooie jurk.",
         "englishtranslate": "The little princess wore a beautiful dress."
     },
     {
         "dutch": "de periode (-s)",
-        "english": "the period (periods) / the time span",
-        "vietnamese": "giai đoạn (các giai đoạn)",
+        "english": "the period / the time span",
+        "vietnamese": "giai đoạn",
+        "pronunciation": { "ipa": "də peːriˈoːdə", "phonetic": "du pay-ree-oh-duh" },
         "dutchsentence": "Tijdens deze periode waren de winkels gesloten.",
         "englishtranslate": "During this period, the shops were closed."
     },
@@ -24,6 +27,7 @@
         "dutch": "de reclame",
         "english": "the advertisement / the advertising",
         "vietnamese": "quảng cáo",
+        "pronunciation": { "ipa": "də rəˈklaːmə", "phonetic": "du ru-klah-muh" },
         "dutchsentence": "Er is te veel reclame op televisie tegenwoordig.",
         "englishtranslate": "There is too much advertising on television nowadays."
     },
@@ -31,6 +35,7 @@
         "dutch": "onlangs",
         "english": "recently",
         "vietnamese": "gần đây",
+        "pronunciation": { "ipa": "ˈɔnlɑŋs", "phonetic": "on-lahngs" },
         "dutchsentence": "Onlangs heb ik een nieuwe computer gekocht.",
         "englishtranslate": "I recently bought a new computer."
     },
@@ -38,6 +43,7 @@
         "dutch": "nauwelijks",
         "english": "barely / scarcely",
         "vietnamese": "hầu như không",
+        "pronunciation": { "ipa": "ˈnʌuʋələks", "phonetic": "now-vu-luks" },
         "dutchsentence": "Ik heb nauwelijks geslapen vannacht.",
         "englishtranslate": "I barely slept last night."
     }
