@@ -3,6 +3,7 @@
         "dutch": "het buitenland",
         "english": "the foreign country",
         "vietnamese": "nước ngoài",
+        "pronunciation": { "ipa": "ət ˈbœytə(n)ˌlɑnt", "phonetic": "ut buy-tun-lahnt" },
         "dutchsentence": "Veel Nederlanders gaan op vakantie naar het buitenland.",
         "englishtranslate": "Many Dutch people go on holiday to a foreign country (abroad)."
     },
@@ -10,6 +11,7 @@
         "dutch": "de buitenlander (-s)",
         "english": "the foreigner (foreigners)",
         "vietnamese": "người nước ngoài (các người nước ngoài)",
+        "pronunciation": { "ipa": "də ˈbœytə(n)ˌlɑndər", "phonetic": "du buy-tun-lahn-dur" },
         "dutchsentence": "Er wonen veel buitenlanders in deze stad.",
         "englishtranslate": "Many foreigners live in this city."
     },
@@ -17,6 +19,7 @@
         "dutch": "de ambassade (-s)",
         "english": "the embassy (embassies)",
         "vietnamese": "đại sứ quán (các đại sứ quán)",
+        "pronunciation": { "ipa": "də ˌɑmbɑˈsaːdə", "phonetic": "du ahm-bah-sah-duh" },
         "dutchsentence": "We moesten naar de ambassade voor een visum.",
         "englishtranslate": "We had to go to the embassy for a visa."
     },
@@ -24,6 +27,7 @@
         "dutch": "het paspoort (-en)",
         "english": "the passport (passports)",
         "vietnamese": "hộ chiếu (các hộ chiếu)",
+        "pronunciation": { "ipa": "ət ˈpɑspoːrt", "phonetic": "ut pahs-pohrt" },
         "dutchsentence": "Vergeet je paspoort niet mee te nemen op reis.",
         "englishtranslate": "Don't forget to take your passport with you on your trip."
     },
@@ -31,6 +35,7 @@
         "dutch": "de identiteitskaart (-en)",
         "english": "the identity card (identity cards)",
         "vietnamese": "thẻ căn cước (các thẻ căn cước)",
+        "pronunciation": { "ipa": "də iːdɛntiːˈtɛitsˌkaːrt", "phonetic": "du ee-den-tee-tites-kahrt" },
         "dutchsentence": "Je moet je identiteitskaart laten zien bij de douane.",
         "englishtranslate": "You must show your identity card at customs."
     },
@@ -38,6 +43,7 @@
         "dutch": "de organisatie (-s)",
         "english": "the organization (organizations)",
         "vietnamese": "tổ chức (các tổ chức)",
+        "pronunciation": { "ipa": "də ˌɔrɣaːniːˈzaːtsi", "phonetic": "du or-khah-nee-zaht-see" },
         "dutchsentence": "De organisatie van het festival was perfect.",
         "englishtranslate": "The organization of the festival was perfect."
     },
@@ -45,6 +51,7 @@
         "dutch": "buitenlands",
         "english": "foreign",
         "vietnamese": "nước ngoài",
+        "pronunciation": { "ipa": "ˈbœytə(n)lɑnts", "phonetic": "buy-tun-lahnts" },
         "dutchsentence": "Hij spreekt verschillende buitenlandse talen.",
         "englishtranslate": "He speaks several foreign languages."
     },
@@ -52,6 +59,7 @@
         "dutch": "plannen",
         "english": "to plan",
         "vietnamese": "lên kế hoạch",
+        "pronunciation": { "ipa": "ˈplɛnə(n)", "phonetic": "plen-un" },
         "dutchsentence": "We moeten de vakantie goed plannen.",
         "englishtranslate": "We must plan the holiday well."
     },
@@ -59,6 +67,7 @@
         "dutch": "plande",
         "english": "planned",
         "vietnamese": "đã lên kế hoạch",
+        "pronunciation": { "ipa": "ˈplɛndə", "phonetic": "plen-duh" },
         "dutchsentence": "Hij plande de aanval in het geheim.",
         "englishtranslate": "He planned the attack in secret."
     },
@@ -66,6 +75,7 @@
         "dutch": "organiseren",
         "english": "to organize",
         "vietnamese": "tổ chức",
+        "pronunciation": { "ipa": "ˌɔrɣaːniːˈzeːrə(n)", "phonetic": "or-khah-nee-zay-run" },
         "dutchsentence": "Zij helpt graag om evenementen te organiseren.",
         "englishtranslate": "She likes to help organize events."
     },
@@ -73,6 +83,7 @@
         "dutch": "organiseerde",
         "english": "organized",
         "vietnamese": "đã tổ chức",
+        "pronunciation": { "ipa": "ˌɔrɣaːniːˈzeːrdə", "phonetic": "or-khah-nee-zayr-duh" },
         "dutchsentence": "De school organiseerde een groot sporttoernooi.",
         "englishtranslate": "The school organized a large sports tournament."
     },
@@ -80,6 +91,7 @@
         "dutch": "stemmen",
         "english": "to vote",
         "vietnamese": "bỏ phiếu",
+        "pronunciation": { "ipa": "ˈstɛmə(n)", "phonetic": "stem-un" },
         "dutchsentence": "Iedereen ouder dan achttien jaar mag stemmen.",
         "englishtranslate": "Everyone older than eighteen years may vote."
     },
@@ -87,6 +99,7 @@
         "dutch": "stemde",
         "english": "voted",
         "vietnamese": "đã bỏ phiếu",
+        "pronunciation": { "ipa": "ˈstɛmdə", "phonetic": "stem-duh" },
         "dutchsentence": "Zij stemde op de groene partij tijdens de verkiezingen.",
         "englishtranslate": "She voted for the green party during the elections."
     }

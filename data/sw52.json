@@ -3,6 +3,7 @@
         "dutch": "de belofte (-s)",
         "english": "the promise (promises)",
         "vietnamese": "lời hứa (những lời hứa)",
+        "pronunciation": { "ipa": "də bəˈlɔftə", "phonetic": "du bu-lof-tuh" },
         "dutchsentence": "Hij heeft zijn belofte om te komen waargemaakt.",
         "englishtranslate": "He kept his promise to come."
     },
@@ -10,6 +11,7 @@
         "dutch": "de schuld (-en)",
         "english": "the debt (debts)",
         "vietnamese": "nợ (những khoản nợ)",
+        "pronunciation": { "ipa": "də sxʏlt", "phonetic": "du skhult" },
         "dutchsentence": "Het bedrijf heeft een grote schuld bij de bank.",
         "englishtranslate": "The company has a large debt to the bank."
     },
@@ -17,6 +19,7 @@
         "dutch": "de show (-s)",
         "english": "the show (shows)",
         "vietnamese": "buổi diễn (những buổi diễn)",
+        "pronunciation": { "ipa": "də ʃoː", "phonetic": "du show" },
         "dutchsentence": "De show in het theater was erg indrukwekkend.",
         "englishtranslate": "The show in the theater was very impressive."
     },
@@ -24,6 +27,7 @@
         "dutch": "het teken (-s)",
         "english": "the sign (signs)",
         "vietnamese": "dấu hiệu (những dấu hiệu)",
+        "pronunciation": { "ipa": "ət ˈteːkə(n)", "phonetic": "ut tay-kun" },
         "dutchsentence": "Dit is een teken dat we de goede kant op gaan.",
         "englishtranslate": "This is a sign that we are going the right way."
     },
@@ -31,6 +35,7 @@
         "dutch": "de band (-en)",
         "english": "the band (bands)",
         "vietnamese": "ban nhạc (những ban nhạc)",
+        "pronunciation": { "ipa": "də bɑnt", "phonetic": "du bahnt" },
         "dutchsentence": "Onze favoriete band treedt vanavond op.",
         "englishtranslate": "Our favourite band is performing tonight."
     },
@@ -38,6 +43,7 @@
         "dutch": "de gedachte (-n)",
         "english": "the thought (thoughts)",
         "vietnamese": "suy nghĩ (những suy nghĩ)",
+        "pronunciation": { "ipa": "də ɣəˈdɑxtə", "phonetic": "du khu-dakh-tuh" },
         "dutchsentence": "Ik kan mijn gedachten niet ordenen.",
         "englishtranslate": "I can't organize my thoughts."
     },
@@ -45,6 +51,7 @@
         "dutch": "rot",
         "english": "rotten",
         "vietnamese": "thối rữa",
+        "pronunciation": { "ipa": "rɔt", "phonetic": "rot" },
         "dutchsentence": "De appels zijn rot en kunnen niet meer gegeten worden.",
         "englishtranslate": "The apples are rotten and cannot be eaten anymore."
     },
@@ -52,6 +59,7 @@
         "dutch": "vooral",
         "english": "especially",
         "vietnamese": "đặc biệt",
+        "pronunciation": { "ipa": "voːrˈɑl", "phonetic": "vohr-al" },
         "dutchsentence": "Ik vind de stad vooral 's avonds mooi.",
         "englishtranslate": "I find the city especially beautiful in the evening."
     },
@@ -59,6 +67,7 @@
         "dutch": "zover",
         "english": "so far",
         "vietnamese": "cho đến nay",
+        "pronunciation": { "ipa": "zoːˈvɛr", "phonetic": "zoh-ver" },
         "dutchsentence": "Zover is de planning in orde.",
         "englishtranslate": "So far, the planning is in order."
     },
@@ -66,6 +75,7 @@
         "dutch": "wegwezen",
         "english": "get out",
         "vietnamese": "ra ngoài",
+        "pronunciation": { "ipa": "ˈʋɛxˌʋeːzə(n)", "phonetic": "vekh-vay-zun" },
         "dutchsentence": "Wegwezen hier! Het is gevaarlijk.",
         "englishtranslate": "Get out of here! It is dangerous."
     },
@@ -73,6 +83,7 @@
         "dutch": "gefeliciteerd",
         "english": "congratulations",
         "vietnamese": "chúc mừng",
+        "pronunciation": { "ipa": "ɣəˌfeːliːsiːˈteːrt", "phonetic": "khu-fay-lee-see-tayrt" },
         "dutchsentence": "Gefeliciteerd met je nieuwe huis!",
         "englishtranslate": "Congratulations on your new house!"
     },
@@ -80,6 +91,7 @@
         "dutch": "geboren",
         "english": "born",
         "vietnamese": "sinh ra",
+        "pronunciation": { "ipa": "ɣəˈboːrə(n)", "phonetic": "khu-bo-run" },
         "dutchsentence": "Zij is geboren op 10 mei 1990.",
         "englishtranslate": "She was born on May 10, 1990."
     },
@@ -87,6 +99,7 @@
         "dutch": "dansen, danste, gedanst",
         "english": "to dance, danced, danced",
         "vietnamese": "nhảy, đã nhảy, đã nhảy",
+        "pronunciation": { "ipa": "ˈdɑnsə(n)", "phonetic": "dahn-sun" },
         "dutchsentence": "We hebben de hele nacht gedanst op de bruiloft.",
         "englishtranslate": "We danced the whole night at the wedding."
     },
@@ -94,6 +107,7 @@
         "dutch": "zweren, zwoor, gezworen",
         "english": "to swear, swore, sworn",
         "vietnamese": "thề, đã thề, đã thề",
+        "pronunciation": { "ipa": "ˈzʋeːrə(n)", "phonetic": "zvay-run" },
         "dutchsentence": "Ik zweer dat ik de waarheid zal vertellen.",
         "englishtranslate": "I swear that I will tell the truth."
     }

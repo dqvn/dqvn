@@ -3,6 +3,7 @@
         "dutch": "de grond (-en)",
         "english": "the ground (grounds)",
         "vietnamese": "mặt đất (những mặt đất)",
+        "pronunciation": { "ipa": "də xrɔnt", "phonetic": "du khront" },
         "dutchsentence": "De bal viel op de grond.",
         "englishtranslate": "The ball fell onto the ground."
     },
@@ -10,6 +11,7 @@
         "dutch": "enige",
         "english": "only",
         "vietnamese": "duy nhất",
+        "pronunciation": { "ipa": "ˈeːnəɣə", "phonetic": "ay-nuh-khu" },
         "dutchsentence": "Dit is de enige manier om het te doen.",
         "englishtranslate": "This is the only way to do it."
     },
@@ -17,6 +19,7 @@
         "dutch": "vreselijk",
         "english": "terrible",
         "vietnamese": "kinh khủng",
+        "pronunciation": { "ipa": "ˈvreːsələk", "phonetic": "vray-su-luk" },
         "dutchsentence": "Het weer was vreselijk tijdens onze vakantie.",
         "englishtranslate": "The weather was terrible during our holiday."
     },
@@ -24,6 +27,7 @@
         "dutch": "erg",
         "english": "very",
         "vietnamese": "rất",
+        "pronunciation": { "ipa": "ɛrx", "phonetic": "erkh" },
         "dutchsentence": "Ik ben erg blij met dit resultaat.",
         "englishtranslate": "I am very happy with this result."
     },
@@ -31,6 +35,7 @@
         "dutch": "arm",
         "english": "poor",
         "vietnamese": "nghèo",
+        "pronunciation": { "ipa": "ɑrm", "phonetic": "arm" },
         "dutchsentence": "Het is jammer dat zoveel mensen arm zijn.",
         "englishtranslate": "It is a shame that so many people are poor."
     },
@@ -38,6 +43,7 @@
         "dutch": "rijk",
         "english": "rich",
         "vietnamese": "giàu",
+        "pronunciation": { "ipa": "rɛik", "phonetic": "rike" },
         "dutchsentence": "Hij droomt ervan om op een dag rijk te zijn.",
         "englishtranslate": "He dreams of being rich one day."
     },
@@ -45,6 +51,7 @@
         "dutch": "ene",
         "english": "one",
         "vietnamese": "một",
+        "pronunciation": { "ipa": "ˈeːnə", "phonetic": "ay-nuh" },
         "dutchsentence": "De ene keer gaat het goed, de andere keer niet.",
         "englishtranslate": "One time it goes well, the other time not."
     },
@@ -52,6 +59,7 @@
         "dutch": "neer",
         "english": "down",
         "vietnamese": "xuống",
+        "pronunciation": { "ipa": "neːr", "phonetic": "nair" },
         "dutchsentence": "Zet de beker neer op de tafel.",
         "englishtranslate": "Put the cup down on the table."
     },
@@ -59,6 +67,7 @@
         "dutch": "dr",
         "english": "doctor",
         "vietnamese": "bác sĩ",
+        "pronunciation": { "ipa": "ˈdɔktɔr", "phonetic": "dok-tor" },
         "dutchsentence": "Ik heb een afspraak met Dr. Jansen.",
         "englishtranslate": "I have an appointment with Dr. Jansen."
     },
@@ -66,6 +75,7 @@
         "dutch": "enkele",
         "english": "some",
         "vietnamese": "một vài",
+        "pronunciation": { "ipa": "ˈɛŋkələ", "phonetic": "eng-ku-lu" },
         "dutchsentence": "Er waren slechts enkele mensen aanwezig.",
         "englishtranslate": "There were only some (a few) people present."
     }

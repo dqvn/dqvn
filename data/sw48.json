@@ -3,6 +3,7 @@
         "dutch": "de vakantie (-s)",
         "english": "the vacation (vacations)",
         "vietnamese": "kỳ nghỉ (những kỳ nghỉ)",
+        "pronunciation": { "ipa": "də vaːˈkɑntsi", "phonetic": "du vah-kahn-tsee" },
         "dutchsentence": "Wij gaan deze zomer op vakantie naar Spanje.",
         "englishtranslate": "We are going on vacation to Spain this summer."
     },
@@ -10,6 +11,7 @@
         "dutch": "de luchthaven (-s)",
         "english": "the airport (airports)",
         "vietnamese": "sân bay (những sân bay)",
+        "pronunciation": { "ipa": "də ˈlʏxtˌɦaːvə(n)", "phonetic": "du lukht-hah-vun" },
         "dutchsentence": "Ik moet op tijd naar de luchthaven om mijn vlucht te halen.",
         "englishtranslate": "I must go to the airport on time to catch my flight."
     },
@@ -17,6 +19,7 @@
         "dutch": "de haven (-s)",
         "english": "the harbor (harbors)",
         "vietnamese": "bến cảng (những bến cảng)",
+        "pronunciation": { "ipa": "də ˈɦaːvə(n)", "phonetic": "du hah-vun" },
         "dutchsentence": "De boten liggen veilig in de haven.",
         "englishtranslate": "The boats are lying safely in the harbor."
     },
@@ -24,6 +27,7 @@
         "dutch": "de lucht",
         "english": "the sky",
         "vietnamese": "bầu trời",
+        "pronunciation": { "ipa": "də lʏxt", "phonetic": "du lukht" },
         "dutchsentence": "Er zijn veel witte wolken in de lucht vandaag.",
         "englishtranslate": "There are many white clouds in the sky today."
     },
@@ -31,6 +35,7 @@
         "dutch": "de wagen (-s)",
         "english": "the car (cars)",
         "vietnamese": "xe (những xe)",
+        "pronunciation": { "ipa": "də ˈʋaːɣə(n)", "phonetic": "du vah-khun" },
         "dutchsentence": "Mijn nieuwe wagen rijdt heel comfortabel.",
         "englishtranslate": "My new car drives very comfortably."
     },
@@ -38,6 +43,7 @@
         "dutch": "de plek (-ken)",
         "english": "the place (places)",
         "vietnamese": "nơi (những nơi)",
+        "pronunciation": { "ipa": "də plɛk", "phonetic": "du plek" },
         "dutchsentence": "Dit is de perfecte plek voor een picknick.",
         "englishtranslate": "This is the perfect place for a picnic."
     },
@@ -45,6 +51,7 @@
         "dutch": "de parking (-s)",
         "english": "the parking (parkings)",
         "vietnamese": "bãi đỗ xe (những bãi đỗ xe)",
+        "pronunciation": { "ipa": "də ˈpɑrkɪŋ", "phonetic": "du pahr-king" },
         "dutchsentence": "Is er nog een plek vrij op de parking?",
         "englishtranslate": "Is there still a spot free in the parking lot?"
     },
@@ -52,6 +59,7 @@
         "dutch": "het vuur (vuren)",
         "english": "the fire (fires)",
         "vietnamese": "lửa (những ngọn lửa)",
+        "pronunciation": { "ipa": "ət vyr", "phonetic": "ut vuur" },
         "dutchsentence": "Het vuur in de open haard is erg gezellig.",
         "englishtranslate": "The fire in the fireplace is very cozy."
     },
@@ -59,6 +67,7 @@
         "dutch": "de kerel (-s)",
         "english": "the guy (guys)",
         "vietnamese": "chàng trai (những chàng trai)",
+        "pronunciation": { "ipa": "də ˈkeːrəl", "phonetic": "du kay-rul" },
         "dutchsentence": "Die kerel daar is mijn buurman.",
         "englishtranslate": "That guy over there is my neighbor."
     },
@@ -66,6 +75,7 @@
         "dutch": "de vent (-en)",
         "english": "the man (men)",
         "vietnamese": "người đàn ông (những người đàn ông)",
+        "pronunciation": { "ipa": "də vɛnt", "phonetic": "du vent" },
         "dutchsentence": "Het is een aardige vent, hij heeft me geholpen.",
         "englishtranslate": "He is a nice guy/man, he helped me."
     },
@@ -73,6 +83,7 @@
         "dutch": "de maat (maten)",
         "english": "the mate (mates)",
         "vietnamese": "bạn (những người bạn)",
+        "pronunciation": { "ipa": "də maːt", "phonetic": "du maht" },
         "dutchsentence": "Mijn maat en ik gaan vanavond samen uit.",
         "englishtranslate": "My mate (buddy) and I are going out together tonight."
     },
@@ -80,6 +91,7 @@
         "dutch": "het leven (-s)",
         "english": "the life (lives)",
         "vietnamese": "cuộc sống (những cuộc sống)",
+        "pronunciation": { "ipa": "ət ˈleːvə(n)", "phonetic": "ut lay-vun" },
         "dutchsentence": "Het leven in de stad is erg druk.",
         "englishtranslate": "Life in the city is very busy."
     },
@@ -87,6 +99,7 @@
         "dutch": "ouwe",
         "english": "old",
         "vietnamese": "cũ",
+        "pronunciation": { "ipa": "ˈʌuʋə", "phonetic": "ow-wuh" },
         "dutchsentence": "Heb je mijn ouwe jas nog gezien?",
         "englishtranslate": "Have you seen my old coat (informal/slang)?"
     },
@@ -94,6 +107,7 @@
         "dutch": "tenminste",
         "english": "at least",
         "vietnamese": "ít nhất",
+        "pronunciation": { "ipa": "tə(n)ˈmɪnstə", "phonetic": "tun-min-stuh" },
         "dutchsentence": "We moeten tenminste drie hoofdstukken lezen.",
         "englishtranslate": "We must read at least three chapters."
     },
@@ -101,6 +115,7 @@
         "dutch": "ten",
         "english": "at",
         "vietnamese": "tại",
+        "pronunciation": { "ipa": "tən", "phonetic": "tun" },
         "dutchsentence": "De uitdrukking 'ten slotte' betekent 'at last'.",
         "englishtranslate": "The expression 'ten slotte' means 'at last'."
     },
@@ -108,6 +123,7 @@
         "dutch": "ter",
         "english": "to the",
         "vietnamese": "đến",
+        "pronunciation": { "ipa": "tɛr", "phonetic": "ter" },
         "dutchsentence": "We gingen ter kerke om te bidden (formeel).",
         "englishtranslate": "We went to the church to pray (formal/archaic)."
     },
@@ -115,6 +131,7 @@
         "dutch": "vanuit",
         "english": "from",
         "vietnamese": "từ",
+        "pronunciation": { "ipa": "vɑnˈœyt", "phonetic": "vahn-uyt" },
         "dutchsentence": "Vanuit hier kun je de hele stad zien.",
         "englishtranslate": "From here, you can see the whole city."
     },
@@ -122,6 +139,7 @@
         "dutch": "naartoe",
         "english": "to",
         "vietnamese": "đến",
+        "pronunciation": { "ipa": "naːrˈtu", "phonetic": "nahr-too" },
         "dutchsentence": "Waar ga je naartoe deze avond?",
         "englishtranslate": "Where are you going (to) this evening?"
     },
@@ -129,6 +147,7 @@
         "dutch": "heen",
         "english": "towards",
         "vietnamese": "hướng tới",
+        "pronunciation": { "ipa": "ɦeːn", "phonetic": "hayn" },
         "dutchsentence": "We lopen naar de stad heen.",
         "englishtranslate": "We are walking towards the city."
     },
@@ -136,6 +155,7 @@
         "dutch": "waarschijnlijk",
         "english": "probably",
         "vietnamese": "có lẽ",
+        "pronunciation": { "ipa": "ʋaːrˈsxɛinlək", "phonetic": "vahr-skhine-luk" },
         "dutchsentence": "Het gaat waarschijnlijk regenen vanavond.",
         "englishtranslate": "It is probably going to rain tonight."
     },
@@ -143,6 +163,7 @@
         "dutch": "vertrekken, vertrok, vertrokken (met zijn)",
         "english": "to depart, departed, departed (with to be)",
         "vietnamese": "khởi hành, đã khởi hành, đã khởi hành (với là)",
+        "pronunciation": { "ipa": "vərˈtrɛkə(n)", "phonetic": "vur-trek-un" },
         "dutchsentence": "De trein is al vertrokken.",
         "englishtranslate": "The train has already departed."
     },
@@ -150,6 +171,7 @@
         "dutch": "verlaten, verliet, verlaten",
         "english": "to leave, left, left",
         "vietnamese": "rời đi, đã rời đi, đã rời đi",
+        "pronunciation": { "ipa": "vərˈlaːtə(n)", "phonetic": "vur-lah-tun" },
         "dutchsentence": "We moeten dit gebouw onmiddellijk verlaten.",
         "englishtranslate": "We must leave this building immediately."
     },
@@ -157,6 +179,7 @@
         "dutch": "verwachten, verwachtte, verwacht",
         "english": "to expect, expected, expected",
         "vietnamese": "mong đợi, đã mong đợi, đã mong đợi",
+        "pronunciation": { "ipa": "vərˈʋɑxtə(n)", "phonetic": "vur-vakh-tun" },
         "dutchsentence": "Ik verwacht dat hij morgen vroeg zal aankomen.",
         "englishtranslate": "I expect that he will arrive early tomorrow."
     },
@@ -164,6 +187,7 @@
         "dutch": "hopen, hoopte, gehoopt",
         "english": "to hope, hoped, hoped",
         "vietnamese": "hy vọng, đã hy vọng, đã hy vọng",
+        "pronunciation": { "ipa": "ˈɦoːpə(n)", "phonetic": "hoh-pun" },
         "dutchsentence": "Ik hoop dat alles goed met je gaat.",
         "englishtranslate": "I hope that everything is going well with you."
     },
@@ -171,6 +195,7 @@
         "dutch": "leven, leefde, geleefd",
         "english": "to live, lived, lived",
         "vietnamese": "sống, đã sống, đã sống",
+        "pronunciation": { "ipa": "ˈleːvə(n)", "phonetic": "lay-vun" },
         "dutchsentence": "Zij heeft altijd een gezond leven geleid.",
         "englishtranslate": "She has always led a healthy life."
     }

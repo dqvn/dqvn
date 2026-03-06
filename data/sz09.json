@@ -3,6 +3,7 @@
         "dutch": "de cocktail (-s)",
         "english": "the cocktail (cocktails)",
         "vietnamese": "cocktail (các cocktail)",
+        "pronunciation": { "ipa": "də ˈkɔkteːl", "phonetic": "du kok-tayl" },
         "dutchsentence": "Ik bestel een verfrissende cocktail met veel ijs.",
         "englishtranslate": "I am ordering a refreshing cocktail with a lot of ice."
     },
@@ -10,6 +11,7 @@
         "dutch": "de citroen (-en)",
         "english": "the lemon (lemons)",
         "vietnamese": "quả chanh (các quả chanh)",
+        "pronunciation": { "ipa": "də siˈtruːn", "phonetic": "du see-troon" },
         "dutchsentence": "Kan ik een schijfje citroen in mijn thee krijgen?",
         "englishtranslate": "Can I get a slice of lemon in my tea?"
     },
@@ -17,6 +19,7 @@
         "dutch": "het fruit",
         "english": "the fruit",
         "vietnamese": "trái cây",
+        "pronunciation": { "ipa": "ət frœyt", "phonetic": "ut fruyt" },
         "dutchsentence": "Het is belangrijk om elke dag vers fruit te eten.",
         "englishtranslate": "It is important to eat fresh fruit every day."
     },
@@ -24,6 +27,7 @@
         "dutch": "de disco ('s)",
         "english": "the disco (discos)",
         "vietnamese": "vũ trường (các vũ trường)",
+        "pronunciation": { "ipa": "də ˈdɪskoː", "phonetic": "du dis-koh" },
         "dutchsentence": "We gingen dansen in de nieuwe disco in het centrum.",
         "englishtranslate": "We went dancing in the new disco downtown."
     },
@@ -31,6 +35,7 @@
         "dutch": "logisch",
         "english": "logical",
         "vietnamese": "hợp lý",
+        "pronunciation": { "ipa": "ˈloːɣis", "phonetic": "loh-khis" },
         "dutchsentence": "Het is logisch dat je moe bent na zo'n lange werkdag.",
         "englishtranslate": "It is logical that you are tired after such a long workday."
     },
@@ -38,6 +43,7 @@
         "dutch": "uitgaan",
         "english": "to go out",
         "vietnamese": "đi ra ngoài",
+        "pronunciation": { "ipa": "ˈœytˌɣaːn", "phonetic": "out-khahn" },
         "dutchsentence": "Wil je vanavond uitgaan, of thuisblijven?",
         "englishtranslate": "Do you want to go out tonight, or stay home?"
     },
@@ -45,41 +51,47 @@
         "dutch": "ging uit",
         "english": "went out",
         "vietnamese": "đã đi ra ngoài",
+        "pronunciation": { "ipa": "ɣɪŋ ˈœyt", "phonetic": "khing out" },
         "dutchsentence": "Vrijdag ging ze uit met haar vrienden.",
         "englishtranslate": "She went out with her friends on Friday."
     },
     {
         "dutch": "uitgegaan (met zijn)",
-        "english": "has gone out (with his)",
-        "vietnamese": "đã đi ra ngoài (với anh ấy)",
+        "english": "has gone out (auxiliary 'to be')",
+        "vietnamese": "đã đi ra ngoài",
+        "pronunciation": { "ipa": "ˈœytɣəˌɣaːn", "phonetic": "out-khu-khahn" },
         "dutchsentence": "Ben je gisteravond uitgegaan?",
         "englishtranslate": "Have you gone out last night?"
     },
     {
         "dutch": "aannemen",
-        "english": "to assume",
-        "vietnamese": "giả định",
+        "english": "to assume / to accept",
+        "vietnamese": "giả định / chấp nhận",
+        "pronunciation": { "ipa": "ˈaːnˌneːmə(n)", "phonetic": "ahn-nay-mun" },
         "dutchsentence": "Je moet niet aannemen dat het antwoord 'ja' is.",
         "englishtranslate": "You should not assume that the answer is 'yes'."
     },
     {
         "dutch": "nam aan",
-        "english": "assumed",
+        "english": "assumed / accepted",
         "vietnamese": "đã giả định",
+        "pronunciation": { "ipa": "nɑm ˈaːn", "phonetic": "nahm ahn" },
         "dutchsentence": "Ik nam aan dat je de instructies had gelezen.",
         "englishtranslate": "I assumed that you had read the instructions."
     },
     {
         "dutch": "aangenomen",
-        "english": "has assumed",
+        "english": "assumed / accepted",
         "vietnamese": "đã giả định",
+        "pronunciation": { "ipa": "ˈaːnɣəˌnoːmə(n)", "phonetic": "ahn-khu-noh-mun" },
         "dutchsentence": "We hebben aangenomen dat hij de beste kandidaat was.",
         "englishtranslate": "We have assumed that he was the best candidate."
     },
     {
         "dutch": "ervan uitgaan",
-        "english": "to assume",
+        "english": "to assume / to take for granted",
         "vietnamese": "giả định",
+        "pronunciation": { "ipa": "ɛrˈvɑn ˈœytˌɣaːn", "phonetic": "er-vahn out-khahn" },
         "dutchsentence": "We kunnen ervan uitgaan dat het project op tijd klaar is.",
         "englishtranslate": "We can assume that the project will be finished on time."
     },
@@ -87,13 +99,15 @@
         "dutch": "ging ervan uit",
         "english": "assumed",
         "vietnamese": "đã giả định",
+        "pronunciation": { "ipa": "ɣɪŋ ɛrˈvɑn ˈœyt", "phonetic": "khing er-vahn out" },
         "dutchsentence": "Iedereen ging ervan uit dat zij de winnaar zou zijn.",
         "englishtranslate": "Everyone assumed that she would be the winner."
     },
     {
         "dutch": "zijn ervan uitgegaan",
-        "english": "has assumed",
-        "vietnamese": "đã giả định (QKHT)",
+        "english": "have assumed",
+        "vietnamese": "đã giả định",
+        "pronunciation": { "ipa": "zɛin ɛrˈvɑn ˈœytɣəˌɣaːn", "phonetic": "zine er-vahn out-khu-khahn" },
         "dutchsentence": "Zij zijn ervan uitgegaan dat wij het al wisten.",
         "englishtranslate": "They have assumed that we already knew it."
     }

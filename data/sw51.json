@@ -3,6 +3,7 @@
         "dutch": "de winkel (-s)",
         "english": "the shop (shops)",
         "vietnamese": "cửa hàng (những cửa hàng)",
+        "pronunciation": { "ipa": "də ˈʋɪŋkəl", "phonetic": "du vin-kul" },
         "dutchsentence": "Ik moet naar de winkel om brood te kopen.",
         "englishtranslate": "I have to go to the shop to buy bread."
     },
@@ -10,6 +11,7 @@
         "dutch": "de zak (-ken)",
         "english": "the bag (bags)",
         "vietnamese": "túi (những túi)",
+        "pronunciation": { "ipa": "də zɑk", "phonetic": "du zahk" },
         "dutchsentence": "Deze zak is te zwaar om alleen te dragen.",
         "englishtranslate": "This bag is too heavy to carry alone."
     },
@@ -17,6 +19,7 @@
         "dutch": "het spul (-len)",
         "english": "the stuff (stuffs)",
         "vietnamese": "đồ đạc (những đồ đạc)",
+        "pronunciation": { "ipa": "ət spʏl", "phonetic": "ut spul" },
         "dutchsentence": "Al dat spul moet uit de garage.",
         "englishtranslate": "All that stuff has to come out of the garage."
     },
@@ -24,6 +27,7 @@
         "dutch": "de kracht (-en)",
         "english": "the strength (strengths)",
         "vietnamese": "sức mạnh (những sức mạnh)",
+        "pronunciation": { "ipa": "də krɑxt", "phonetic": "du krakht" },
         "dutchsentence": "Hij heeft de kracht om dit gewicht op te tillen.",
         "englishtranslate": "He has the strength to lift this weight."
     },
@@ -31,6 +35,7 @@
         "dutch": "de macht",
         "english": "the power",
         "vietnamese": "quyền lực",
+        "pronunciation": { "ipa": "də mɑxt", "phonetic": "du makht" },
         "dutchsentence": "De politieke macht van de koning is beperkt.",
         "englishtranslate": "The political power of the king is limited."
     },
@@ -38,6 +43,7 @@
         "dutch": "de wet (-ten)",
         "english": "the law (laws)",
         "vietnamese": "luật (những luật)",
+        "pronunciation": { "ipa": "də ʋɛt", "phonetic": "du vet" },
         "dutchsentence": "Volgens de wet is dit verboden.",
         "englishtranslate": "According to the law, this is forbidden."
     },
@@ -45,6 +51,7 @@
         "dutch": "de geest (-en)",
         "english": "the spirit (spirits)",
         "vietnamese": "tinh thần (những tinh thần)",
+        "pronunciation": { "ipa": "də ɣeːst", "phonetic": "du khayst" },
         "dutchsentence": "Hij heeft een sterke geest en geeft niet op.",
         "englishtranslate": "He has a strong spirit and doesn't give up."
     },
@@ -52,6 +59,7 @@
         "dutch": "de ziel (-en)",
         "english": "the soul (souls)",
         "vietnamese": "linh hồn (những linh hồn)",
+        "pronunciation": { "ipa": "də zil", "phonetic": "du zeel" },
         "dutchsentence": "Zij gelooft dat de ziel onsterfelijk is.",
         "englishtranslate": "She believes that the soul is immortal."
     },
@@ -59,6 +67,7 @@
         "dutch": "zolang",
         "english": "as long as",
         "vietnamese": "miễn là",
+        "pronunciation": { "ipa": "zoːˈlɑŋ", "phonetic": "zoh-lahng" },
         "dutchsentence": "Zolang ik leef, zal ik je steunen.",
         "englishtranslate": "As long as I live, I will support you."
     },
@@ -66,6 +75,7 @@
         "dutch": "totdat",
         "english": "until",
         "vietnamese": "cho đến khi",
+        "pronunciation": { "ipa": "tɔtˈdɑt", "phonetic": "tot-daht" },
         "dutchsentence": "We blijven hier totdat het donker wordt.",
         "englishtranslate": "We will stay here until it gets dark."
     },
@@ -73,6 +83,7 @@
         "dutch": "zwaar",
         "english": "heavy",
         "vietnamese": "nặng",
+        "pronunciation": { "ipa": "zʋaːr", "phonetic": "zvahr" },
         "dutchsentence": "Die doos met boeken is erg zwaar.",
         "englishtranslate": "That box of books is very heavy."
     },
@@ -80,6 +91,7 @@
         "dutch": "licht",
         "english": "light",
         "vietnamese": "nhẹ",
+        "pronunciation": { "ipa": "lɪxt", "phonetic": "likht" },
         "dutchsentence": "Dit is een lichte trui, perfect voor de lente.",
         "englishtranslate": "This is a light sweater, perfect for spring."
     },
@@ -87,6 +99,7 @@
         "dutch": "dragen, droeg, gedragen",
         "english": "to carry, carried, carried",
         "vietnamese": "mang, đã mang, đã mang",
+        "pronunciation": { "ipa": "ˈdraːɣə(n)", "phonetic": "drah-khun" },
         "dutchsentence": "Kan je deze boodschappen voor mij dragen?",
         "englishtranslate": "Can you carry these groceries for me?"
     },
@@ -94,6 +107,7 @@
         "dutch": "slaan, sloeg, geslagen",
         "english": "to hit, hit, hit",
         "vietnamese": "đánh, đã đánh, đã đánh",
+        "pronunciation": { "ipa": "ˈslaːn", "phonetic": "slahn" },
         "dutchsentence": "Hij sloeg de bal over de omheining.",
         "englishtranslate": "He hit the ball over the fence."
     }

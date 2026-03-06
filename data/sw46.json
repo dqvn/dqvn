@@ -3,6 +3,7 @@
         "dutch": "het contact (-en)",
         "english": "the contact (contacts)",
         "vietnamese": "liên lạc (những liên lạc)",
+        "pronunciation": { "ipa": "ət kɔnˈtɑkt", "phonetic": "ut kon-tahkt" },
         "dutchsentence": "Houd je contact met je oude vrienden?",
         "englishtranslate": "Do you maintain contact with your old friends?"
     },
@@ -10,6 +11,7 @@
         "dutch": "het feest (-en)",
         "english": "the party (parties)",
         "vietnamese": "bữa tiệc (những bữa tiệc)",
+        "pronunciation": { "ipa": "ət feːst", "phonetic": "ut fayst" },
         "dutchsentence": "Het was een geweldig feest met veel muziek.",
         "englishtranslate": "It was a great party with lots of music."
     },
@@ -17,6 +19,7 @@
         "dutch": "de dienst (-en)",
         "english": "the service (services)",
         "vietnamese": "dịch vụ (những dịch vụ)",
+        "pronunciation": { "ipa": "də dinst", "phonetic": "du deenst" },
         "dutchsentence": "De klantenservice van dit bedrijf is uitstekend.",
         "englishtranslate": "The customer service of this company is excellent."
     },
@@ -24,6 +27,7 @@
         "dutch": "de hond (-en)",
         "english": "the dog (dogs)",
         "vietnamese": "chó (những con chó)",
+        "pronunciation": { "ipa": "də ɦɔnt", "phonetic": "du hont" },
         "dutchsentence": "Onze hond is erg speels en vriendelijk.",
         "englishtranslate": "Our dog is very playful and friendly."
     },
@@ -31,6 +35,7 @@
         "dutch": "eerlijk",
         "english": "honest",
         "vietnamese": "thật thà",
+        "pronunciation": { "ipa": "ˈeːrlək", "phonetic": "ayr-luk" },
         "dutchsentence": "Je moet altijd eerlijk zijn over wat er is gebeurd.",
         "englishtranslate": "You must always be honest about what happened."
     },
@@ -38,6 +43,7 @@
         "dutch": "zodra",
         "english": "as soon as",
         "vietnamese": "ngay khi",
+        "pronunciation": { "ipa": "zoːˈdraː", "phonetic": "zoh-drah" },
         "dutchsentence": "Ik bel je zodra ik thuis ben.",
         "englishtranslate": "I will call you as soon as I am home."
     },
@@ -45,6 +51,7 @@
         "dutch": "steeds",
         "english": "always",
         "vietnamese": "luôn luôn",
+        "pronunciation": { "ipa": "steːts", "phonetic": "stayts" },
         "dutchsentence": "Zij komt steeds te laat voor de afspraken.",
         "englishtranslate": "She is always late for appointments (often in a critical sense)."
     },
@@ -52,6 +59,7 @@
         "dutch": "allemaal",
         "english": "all",
         "vietnamese": "tất cả",
+        "pronunciation": { "ipa": "ˌɑləˈmaːl", "phonetic": "al-u-mahl" },
         "dutchsentence": "Ze waren allemaal uitgenodigd voor de bruiloft.",
         "englishtranslate": "They were all invited to the wedding."
     },
@@ -59,6 +67,7 @@
         "dutch": "menen (meende, gemeend)",
         "english": "to mean",
         "vietnamese": "có ý",
+        "pronunciation": { "ipa": "ˈmeːnə(n)", "phonetic": "may-nun" },
         "dutchsentence": "Meen je dat of maak je een grap?",
         "englishtranslate": "Do you mean that, or are you joking?"
     },
@@ -66,6 +75,7 @@
         "dutch": "klinken (klonk, geklonken)",
         "english": "to sound",
         "vietnamese": "nghe",
+        "pronunciation": { "ipa": "ˈklɪŋkə(n)", "phonetic": "klink-un" },
         "dutchsentence": "Dat klinkt als een uitstekend plan!",
         "englishtranslate": "That sounds like an excellent plan!"
     }

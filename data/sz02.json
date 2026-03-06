@@ -3,6 +3,7 @@
         "dutch": "het adverbium",
         "english": "the adverb",
         "vietnamese": "trạng từ",
+        "pronunciation": { "ipa": "ət ɑtˈvɛrbijʏm", "phonetic": "ut aht-ver-bee-yum" },
         "dutchsentence": "Het woord 'snel' in de zin is een adverbium.",
         "englishtranslate": "The word 'snel' (fast) in the sentence is an adverb."
     },
@@ -10,6 +11,7 @@
         "dutch": "het ticket (-s)",
         "english": "the ticket (tickets)",
         "vietnamese": "vé (các vé)",
+        "pronunciation": { "ipa": "ət ˈtɪkət", "phonetic": "ut tik-ut" },
         "dutchsentence": "Heb je al een ticket gekocht voor het concert?",
         "englishtranslate": "Have you already bought a ticket for the concert?"
     },
@@ -17,6 +19,7 @@
         "dutch": "recent",
         "english": "recent",
         "vietnamese": "gần đây",
+        "pronunciation": { "ipa": "reːˈsɛnt", "phonetic": "ray-sent" },
         "dutchsentence": "Dit is een recent onderzoek over de klimaatverandering.",
         "englishtranslate": "This is a recent study on climate change."
     },
@@ -24,6 +27,7 @@
         "dutch": "vooraf",
         "english": "beforehand",
         "vietnamese": "trước",
+        "pronunciation": { "ipa": "voːrˈɑf", "phonetic": "vohr-af" },
         "dutchsentence": "Je moet vooraf reserveren als je zeker wilt zijn van een tafel.",
         "englishtranslate": "You must reserve beforehand if you want to be sure of a table."
     },
@@ -31,6 +35,7 @@
         "dutch": "achteraf",
         "english": "afterwards",
         "vietnamese": "sau đó",
+        "pronunciation": { "ipa": "ˈɑxtərˌɑf", "phonetic": "akh-tur-af" },
         "dutchsentence": "We gaan nu eten en achteraf drinken we koffie.",
         "englishtranslate": "We're going to eat now and afterwards we'll drink coffee."
     }
