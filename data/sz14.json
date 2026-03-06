@@ -3,6 +3,7 @@
         "dutch": "de beurt (-en)",
         "english": "the turn (turns)",
         "vietnamese": "lượt (các lượt)",
+        "pronunciation": { "ipa": "də bøːrt", "phonetic": "du burt" },
         "dutchsentence": "Het is jouw beurt om de afwas te doen.",
         "englishtranslate": "It is your turn to do the dishes."
     },
@@ -10,6 +11,7 @@
         "dutch": "de dorst",
         "english": "the thirst",
         "vietnamese": "cơn khát",
+        "pronunciation": { "ipa": "də dɔrst", "phonetic": "du dhorst" },
         "dutchsentence": "Ik heb erge dorst na al dat sporten.",
         "englishtranslate": "I have terrible thirst (I'm very thirsty) after all that exercise."
     },
@@ -17,6 +19,7 @@
         "dutch": "de rij (-en)",
         "english": "the row (rows) / the queue",
         "vietnamese": "hàng (các hàng)",
+        "pronunciation": { "ipa": "də rɛi", "phonetic": "du ry" },
         "dutchsentence": "Je moet in de rij staan om een kaartje te kopen.",
         "englishtranslate": "You have to stand in the queue to buy a ticket."
     },
@@ -24,6 +27,7 @@
         "dutch": "de file (-s)",
         "english": "the traffic jam (traffic jams)",
         "vietnamese": "kẹt xe (các kẹt xe)",
+        "pronunciation": { "ipa": "də ˈfilə", "phonetic": "du fee-luh" },
         "dutchsentence": "Er staat een lange file op de snelweg door een ongeluk.",
         "englishtranslate": "There is a long traffic jam on the highway due to an accident."
     },
@@ -31,6 +35,7 @@
         "dutch": "bijzonder",
         "english": "special / particular",
         "vietnamese": "đặc biệt",
+        "pronunciation": { "ipa": "bəˈzɔndər", "phonetic": "bu-zon-dur" },
         "dutchsentence": "Dit is een bijzonder moment voor ons allemaal.",
         "englishtranslate": "This is a special moment for all of us."
     }

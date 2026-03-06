@@ -1,22 +1,25 @@
 [
     {
         "dutch": "de voorstelling (-en)",
-        "english": "the performance (performances)",
-        "vietnamese": "buổi biểu diễn (các buổi biểu diễn)",
+        "english": "the performance",
+        "vietnamese": "buổi biểu diễn",
+        "pronunciation": { "ipa": "də ˈvoːrstɛlɪŋ", "phonetic": "du vohr-stel-ing" },
         "dutchsentence": "De voorstelling in het theater begint om acht uur.",
         "englishtranslate": "The performance in the theatre starts at eight o'clock."
     },
     {
         "dutch": "het voorstel (-len)",
-        "english": "the proposal (proposals)",
-        "vietnamese": "đề xuất (các đề xuất)",
+        "english": "the proposal",
+        "vietnamese": "đề xuất",
+        "pronunciation": { "ipa": "ət ˈvoːrstɛl", "phonetic": "ut vohr-stel" },
         "dutchsentence": "Het bestuur heeft een nieuw voorstel goedgekeurd.",
         "englishtranslate": "The board has approved a new proposal."
     },
     {
         "dutch": "de ondernemer (-s)",
-        "english": "the entrepreneur (entrepreneurs)",
-        "vietnamese": "doanh nhân (các doanh nhân)",
+        "english": "the entrepreneur",
+        "vietnamese": "doanh nhân",
+        "pronunciation": { "ipa": "də ˌɔndərˈneːmər", "phonetic": "du on-dur-nay-mur" },
         "dutchsentence": "De jonge ondernemer startte zijn eigen bedrijf.",
         "englishtranslate": "The young entrepreneur started his own company."
     },
@@ -24,41 +27,47 @@
         "dutch": "de gezondheid",
         "english": "the health",
         "vietnamese": "sức khỏe",
+        "pronunciation": { "ipa": "də ɣəˈzɔnthɛit", "phonetic": "du khu-zont-hite" },
         "dutchsentence": "Gezondheid is belangrijker dan rijkdom.",
         "englishtranslate": "Health is more important than wealth."
     },
     {
         "dutch": "het systeem (systemen)",
-        "english": "the system (systems)",
-        "vietnamese": "hệ thống (các hệ thống)",
+        "english": "the system",
+        "vietnamese": "hệ thống",
+        "pronunciation": { "ipa": "ət sɪsˈteːm", "phonetic": "ut sis-taym" },
         "dutchsentence": "Het computersysteem werkt vandaag erg traag.",
         "englishtranslate": "The computer system is working very slowly today."
     },
     {
         "dutch": "de agenda ('s)",
-        "english": "the agenda (agendas)",
-        "vietnamese": "chương trình nghị sự (các chương trình nghị sự)",
+        "english": "the agenda",
+        "vietnamese": "chương trình nghị sự",
+        "pronunciation": { "ipa": "də ɑˈɣɛndaː", "phonetic": "du ah-khen-dah" },
         "dutchsentence": "Er staan veel onderwerpen op de agenda voor de vergadering.",
         "englishtranslate": "There are many topics on the agenda for the meeting."
     },
     {
         "dutch": "het/de topic (-s)",
-        "english": "the topic (topics)",
-        "vietnamese": "chủ đề (các chủ đề) (một số từ tiếng Anh có thể có cả 'de' en 'het')",
+        "english": "the topic",
+        "vietnamese": "chủ đề",
+        "pronunciation": { "ipa": "ət ˈtɔpɪk", "phonetic": "ut top-ik" },
         "dutchsentence": "Laten we bij het topic van de discussie blijven.",
         "englishtranslate": "Let's stick to the topic of the discussion."
     },
     {
         "dutch": "het onderwerp (-en)",
-        "english": "the subject (subjects)",
-        "vietnamese": "chủ đề (các chủ đề)",
+        "english": "the subject",
+        "vietnamese": "chủ đề",
+        "pronunciation": { "ipa": "ət ˈɔndərˌʋɛrp", "phonetic": "ut on-dur-verp" },
         "dutchsentence": "Dit is een moeilijk onderwerp om over te praten.",
         "englishtranslate": "This is a difficult subject to talk about."
     },
     {
         "dutch": "het thema ('s)",
-        "english": "the theme (themes)",
-        "vietnamese": "chủ đề (các chủ đề)",
+        "english": "the theme",
+        "vietnamese": "chủ đề",
+        "pronunciation": { "ipa": "ət ˈteːmaː", "phonetic": "ut tay-mah" },
         "dutchsentence": "Het thema van het feest is 'jaren tachtig'.",
         "englishtranslate": "The theme of the party is 'eighties'."
     },
@@ -66,6 +75,7 @@
         "dutch": "gezond",
         "english": "healthy",
         "vietnamese": "khỏe mạnh",
+        "pronunciation": { "ipa": "ɣəˈzɔnt", "phonetic": "khu-zont" },
         "dutchsentence": "Het is belangrijk om gezond te eten en te bewegen.",
         "englishtranslate": "It is important to eat healthy and exercise."
     },
@@ -73,6 +83,7 @@
         "dutch": "gezien",
         "english": "seen",
         "vietnamese": "đã thấy",
+        "pronunciation": { "ipa": "ɣəˈzin", "phonetic": "khu-zeen" },
         "dutchsentence": "Heb je de nieuwe film al gezien?",
         "englishtranslate": "Have you seen the new movie yet?"
     },
@@ -80,6 +91,7 @@
         "dutch": "aangezien",
         "english": "since (because)",
         "vietnamese": "vì",
+        "pronunciation": { "ipa": "ˈaːnɣəˌzin", "phonetic": "ahn-khu-zeen" },
         "dutchsentence": "Aangezien het regent, blijven we binnen.",
         "englishtranslate": "Since it is raining, we are staying indoors."
     },
@@ -87,6 +99,7 @@
         "dutch": "presenteren",
         "english": "to present",
         "vietnamese": "trình bày",
+        "pronunciation": { "ipa": "preːzɛnˈteːrə(n)", "phonetic": "pray-zen-tay-run" },
         "dutchsentence": "Zij zal de resultaten van het onderzoek presenteren.",
         "englishtranslate": "She will present the results of the research."
     },
@@ -94,6 +107,7 @@
         "dutch": "presenteerde",
         "english": "presented",
         "vietnamese": "đã trình bày",
+        "pronunciation": { "ipa": "preːzɛnˈteːrdə", "phonetic": "pray-zen-tayr-duh" },
         "dutchsentence": "De student presenteerde zijn scriptie met veel overtuiging.",
         "englishtranslate": "The student presented his thesis with great conviction."
     },
@@ -101,6 +115,7 @@
         "dutch": "gepresenteerd",
         "english": "has presented",
         "vietnamese": "đã trình bày",
+        "pronunciation": { "ipa": "ɣəpreːzɛnˈteːrt", "phonetic": "khu-pray-zen-tayrt" },
         "dutchsentence": "Het nieuwe plan is al aan het management gepresenteerd.",
         "englishtranslate": "The new plan has already been presented to the management."
     },
@@ -108,6 +123,7 @@
         "dutch": "ondernemen",
         "english": "to undertake",
         "vietnamese": "thực hiện",
+        "pronunciation": { "ipa": "ˌɔndərˈneːmə(n)", "phonetic": "on-dur-nay-mun" },
         "dutchsentence": "Hij wil volgend jaar een nieuwe reis ondernemen.",
         "englishtranslate": "He wants to undertake a new trip next year."
     },
@@ -115,6 +131,7 @@
         "dutch": "ondernam",
         "english": "undertook",
         "vietnamese": "đã thực hiện",
+        "pronunciation": { "ipa": "ˌɔndərˈnɑm", "phonetic": "on-dur-nahm" },
         "dutchsentence": "De overheid ondernam stappen tegen de vervuiling.",
         "englishtranslate": "The government undertook steps against the pollution."
     },
@@ -122,6 +139,7 @@
         "dutch": "ondernomen",
         "english": "has undertaken",
         "vietnamese": "đã thực hiện",
+        "pronunciation": { "ipa": "ˌɔndərˈnoːmə(n)", "phonetic": "on-dur-noh-mun" },
         "dutchsentence": "Er is nog geen actie ondernomen om het probleem op te lossen.",
         "englishtranslate": "No action has yet been undertaken to solve the problem."
     },
@@ -129,6 +147,7 @@
         "dutch": "omgaan",
         "english": "to deal with / to interact",
         "vietnamese": "đối phó",
+        "pronunciation": { "ipa": "ˈɔmˌɣaːn", "phonetic": "om-khahn" },
         "dutchsentence": "Hoe ga jij om met stress?",
         "englishtranslate": "How do you deal with stress?"
     },
@@ -136,13 +155,15 @@
         "dutch": "ging om",
         "english": "dealt with / was about",
         "vietnamese": "đã đối phó",
+        "pronunciation": { "ipa": "ɣɪŋ ˈɔm", "phonetic": "khing om" },
         "dutchsentence": "De discussie ging om de nieuwe wet.",
         "englishtranslate": "The discussion was about (dealt with) the new law."
     },
     {
         "dutch": "omgegaan (met zijn)",
-        "english": "has dealt with / has interacted",
-        "vietnamese": "đã đối phó (với anh ấy)",
+        "english": "has dealt with",
+        "vietnamese": "đã đối phó",
+        "pronunciation": { "ipa": "ˈɔmɣəˌɣaːn", "phonetic": "om-khu-khahn" },
         "dutchsentence": "Hij is goed met de moeilijke situatie omgegaan.",
         "englishtranslate": "He has dealt with the difficult situation well."
     }

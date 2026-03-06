@@ -1,50 +1,57 @@
 [
     {
         "dutch": "het aantal (-len)",
-        "english": "the number (numbers) / the amount",
-        "vietnamese": "số lượng (các số lượng)",
+        "english": "the number / the amount",
+        "vietnamese": "số lượng",
+        "pronunciation": { "ipa": "ət ˈaːntɑl", "phonetic": "ut ahn-tahl" },
         "dutchsentence": "Het aantal studenten is dit jaar toegenomen.",
         "englishtranslate": "The number of students has increased this year."
     },
     {
         "dutch": "de beweging (-en)",
-        "english": "the movement (movements)",
-        "vietnamese": "chuyển động (các chuyển động)",
+        "english": "the movement",
+        "vietnamese": "chuyển động",
+        "pronunciation": { "ipa": "də bəˈʋeːɣɪŋ", "phonetic": "du bu-vay-khing" },
         "dutchsentence": "Er is veel beweging in de financiële markt.",
         "englishtranslate": "There is a lot of movement in the financial market."
     },
     {
         "dutch": "de lounge (-s)",
-        "english": "the lounge (lounges)",
-        "vietnamese": "phòng chờ (các phòng chờ)",
+        "english": "the lounge",
+        "vietnamese": "phòng chờ",
+        "pronunciation": { "ipa": "də lɑunʒ", "phonetic": "du lowndsh" },
         "dutchsentence": "We wachten in de lounge tot onze vlucht vertrekt.",
         "englishtranslate": "We are waiting in the lounge until our flight departs."
     },
     {
         "dutch": "de wandeling (-en)",
-        "english": "the walk (walks)",
-        "vietnamese": "cuộc đi bộ (các cuộc đi bộ)",
+        "english": "the walk",
+        "vietnamese": "cuộc đi bộ",
+        "pronunciation": { "ipa": "də ˈʋɑndəlɪŋ", "phonetic": "du vahn-dul-ing" },
         "dutchsentence": "Een lange wandeling in de natuur is erg ontspannend.",
         "englishtranslate": "A long walk in nature is very relaxing."
     },
     {
         "dutch": "de stap (-pen)",
-        "english": "the step (steps)",
-        "vietnamese": "bước (các bước)",
+        "english": "the step",
+        "vietnamese": "bước",
+        "pronunciation": { "ipa": "də stɑp", "phonetic": "du stahp" },
         "dutchsentence": "Zet de volgende stap om je doel te bereiken.",
         "englishtranslate": "Take the next step to reach your goal."
     },
     {
         "dutch": "de verzameling (-en)",
-        "english": "the collection (collections)",
-        "vietnamese": "bộ sưu tập (các bộ sưu tập)",
+        "english": "the collection",
+        "vietnamese": "bộ sưu tập",
+        "pronunciation": { "ipa": "də vərˈzaːməlɪŋ", "phonetic": "du vur-zah-mul-ing" },
         "dutchsentence": "Zij heeft een grote verzameling oude boeken.",
         "englishtranslate": "She has a large collection of old books."
     },
     {
         "dutch": "de postzegel (-s)",
-        "english": "the stamp (stamps)",
-        "vietnamese": "tem (các tem)",
+        "english": "the stamp",
+        "vietnamese": "tem",
+        "pronunciation": { "ipa": "də ˈpɔstˌzeːɣəl", "phonetic": "du post-zay-khul" },
         "dutchsentence": "Deze postzegel is erg zeldzaam en waardevol.",
         "englishtranslate": "This stamp is very rare and valuable."
     },
@@ -52,13 +59,15 @@
         "dutch": "de slaap",
         "english": "the sleep",
         "vietnamese": "giấc ngủ",
+        "pronunciation": { "ipa": "də slaːp", "phonetic": "du slahp" },
         "dutchsentence": "Ik heb vannacht maar vier uur slaap gehad.",
         "englishtranslate": "I only got four hours of sleep last night."
     },
     {
         "dutch": "het belang (-en)",
-        "english": "the importance (importances) / the interest",
-        "vietnamese": "tầm quan trọng (các tầm quan trọng)",
+        "english": "the importance / the interest",
+        "vietnamese": "tầm quan trọng",
+        "pronunciation": { "ipa": "ət bəˈlɑŋ", "phonetic": "ut bu-lahng" },
         "dutchsentence": "Hij heeft veel belang bij het succes van dit project.",
         "englishtranslate": "He has a lot of interest/stake in the success of this project."
     },
@@ -66,20 +75,23 @@
         "dutch": "de impact",
         "english": "the impact",
         "vietnamese": "tác động",
+        "pronunciation": { "ipa": "də ˈɪmpɛkt", "phonetic": "du im-pekt" },
         "dutchsentence": "De crisis heeft een enorme impact op de economie.",
         "englishtranslate": "The crisis has an enormous impact on the economy."
     },
     {
         "dutch": "het effect (-en)",
-        "english": "the effect (effects)",
-        "vietnamese": "hiệu ứng (các hiệu ứng)",
+        "english": "the effect",
+        "vietnamese": "hiệu ứng",
+        "pronunciation": { "ipa": "ət ɛˈfɛkt", "phonetic": "ut eh-fekt" },
         "dutchsentence": "Het medicijn heeft een onmiddellijk effect op de pijn.",
         "englishtranslate": "The medicine has an immediate effect on the pain."
     },
     {
         "dutch": "het orgaan (organen)",
-        "english": "the organ (organs)",
-        "vietnamese": "cơ quan (các cơ quan)",
+        "english": "the organ",
+        "vietnamese": "cơ quan",
+        "pronunciation": { "ipa": "ət ɔrˈɣaːn", "phonetic": "ut ohr-khahn" },
         "dutchsentence": "Het hart is een vitaal orgaan in het menselijk lichaam.",
         "englishtranslate": "The heart is a vital organ in the human body."
     },
@@ -87,6 +99,7 @@
         "dutch": "in plaats van",
         "english": "instead of",
         "vietnamese": "thay vì",
+        "pronunciation": { "ipa": "ɪn plaːts vɑn", "phonetic": "in plahts vahn" },
         "dutchsentence": "Zij kocht thee in plaats van koffie.",
         "englishtranslate": "She bought tea instead of coffee."
     },
@@ -94,6 +107,7 @@
         "dutch": "handig",
         "english": "handy / useful / clever",
         "vietnamese": "tiện lợi",
+        "pronunciation": { "ipa": "ˈɦɑndəx", "phonetic": "hahn-dukh" },
         "dutchsentence": "Het is handig om een notitieboekje bij je te hebben.",
         "englishtranslate": "It is handy to have a notebook with you."
     },
@@ -101,6 +115,7 @@
         "dutch": "voldoende",
         "english": "sufficient",
         "vietnamese": "đủ",
+        "pronunciation": { "ipa": "vɔlˈduncə", "phonetic": "vol-doon-suh" },
         "dutchsentence": "Er is voldoende tijd om de opdracht af te maken.",
         "englishtranslate": "There is sufficient time to finish the assignment."
     },
@@ -108,6 +123,7 @@
         "dutch": "vliegen (vloog, gevlogen)",
         "english": "to fly",
         "vietnamese": "bay",
+        "pronunciation": { "ipa": "ˈvliɣə(n)", "phonetic": "vlee-khun" },
         "dutchsentence": "De vogel vloog snel weg toen hij de kat zag.",
         "englishtranslate": "The bird flew away quickly when it saw the cat."
     },
@@ -115,6 +131,7 @@
         "dutch": "bewegen (bewoog, bewogen)",
         "english": "to move",
         "vietnamese": "di chuyển",
+        "pronunciation": { "ipa": "bəˈʋeːɣə(n)", "phonetic": "bu-vay-khun" },
         "dutchsentence": "Het is belangrijk om elke dag minstens een beetje te bewegen.",
         "englishtranslate": "It is important to move at least a little bit every day."
     },
@@ -122,6 +139,7 @@
         "dutch": "stilstaan (stond stil, stilgestaan)",
         "english": "to stand still",
         "vietnamese": "đứng yên",
+        "pronunciation": { "ipa": "ˈstɪlˌstaːn", "phonetic": "stil-stahn" },
         "dutchsentence": "De auto stond stil voor het rode licht.",
         "englishtranslate": "The car stood still before the red light."
     },
@@ -129,6 +147,7 @@
         "dutch": "wandelen (wandelde, gewandeld)",
         "english": "to walk",
         "vietnamese": "đi bộ",
+        "pronunciation": { "ipa": "ˈʋɑndələ(n)", "phonetic": "vahn-dul-un" },
         "dutchsentence": "We hebben gisteren uren gewandeld in het bos.",
         "englishtranslate": "We walked for hours in the forest yesterday."
     },
@@ -136,6 +155,7 @@
         "dutch": "verzamelen (verzamelde, verzameld)",
         "english": "to collect",
         "vietnamese": "thu thập",
+        "pronunciation": { "ipa": "vərˈzaːmələ(n)", "phonetic": "vur-zah-mul-un" },
         "dutchsentence": "Zij verzamelt al jaren antieke poppen.",
         "englishtranslate": "She has been collecting antique dolls for years."
     },
@@ -143,6 +163,7 @@
         "dutch": "onderschatten (onderschatte, onderschat)",
         "english": "to underestimate",
         "vietnamese": "đánh giá thấp",
+        "pronunciation": { "ipa": "ˌɔndərˈsxɑtə(n)", "phonetic": "on-dur-skhat-un" },
         "dutchsentence": "Je moet de kracht van je tegenstander niet onderschatten.",
         "englishtranslate": "You should not underestimate the strength of your opponent."
     },
@@ -150,6 +171,7 @@
         "dutch": "overschatten (overschatte, overschat)",
         "english": "to overestimate",
         "vietnamese": "đánh giá quá cao",
+        "pronunciation": { "ipa": "ˌoːvərˈsxɑtə(n)", "phonetic": "oh-vur-skhat-un" },
         "dutchsentence": "Hij heeft zijn eigen capaciteiten overschat.",
         "englishtranslate": "He has overestimated his own capabilities."
     }

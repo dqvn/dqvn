@@ -1,57 +1,65 @@
 [
     {
         "dutch": "de structuur (structuren)",
-        "english": "the structure (structures)",
-        "vietnamese": "cấu trúc (các cấu trúc)",
+        "english": "the structure",
+        "vietnamese": "cấu trúc",
+        "pronunciation": { "ipa": "də strʏkˈtyːr", "phonetic": "du struk-tyoor" },
         "dutchsentence": "De structuur van het gebouw is erg complex.",
         "englishtranslate": "The structure of the building is very complex."
     },
     {
         "dutch": "de sjaal (-s)",
-        "english": "the scarf (scarves)",
-        "vietnamese": "khăn quàng (các khăn quàng)",
+        "english": "the scarf",
+        "vietnamese": "khăn quàng",
+        "pronunciation": { "ipa": "də ʃaːl", "phonetic": "du shahl" },
         "dutchsentence": "Ze draagt een warme, wollen sjaal om haar nek.",
         "englishtranslate": "She is wearing a warm, woolen scarf around her neck."
     },
     {
         "dutch": "de hoofdzin (-nen)",
-        "english": "the main clause (main clauses)",
-        "vietnamese": "mệnh đề chính (các mệnh đề chính)",
+        "english": "the main clause",
+        "vietnamese": "mệnh đề chính",
+        "pronunciation": { "ipa": "də ˈɦoːvtzɪn", "phonetic": "du hohft-zin" },
         "dutchsentence": "In een samengestelde zin heeft de hoofdzin een onafhankelijke betekenis.",
         "englishtranslate": "In a compound sentence, the main clause has an independent meaning."
     },
     {
         "dutch": "de bijzin (-nen)",
-        "english": "the subordinate clause (subordinate clauses)",
-        "vietnamese": "mệnh đề phụ (các mệnh đề phụ)",
+        "english": "the subordinate clause",
+        "vietnamese": "mệnh đề phụ",
+        "pronunciation": { "ipa": "də ˈbɛizɪn", "phonetic": "du by-zin" },
         "dutchsentence": "De bijzin wordt ingeleid door een voegwoord.",
         "englishtranslate": "The subordinate clause is introduced by a conjunction."
     },
     {
         "dutch": "de piano ('s)",
-        "english": "the piano (pianos)",
-        "vietnamese": "đàn piano (các đàn piano)",
+        "english": "the piano",
+        "vietnamese": "đàn piano",
+        "pronunciation": { "ipa": "də piˈaːnoː", "phonetic": "du pee-ah-noh" },
         "dutchsentence": "Zij kan heel goed de piano bespelen.",
         "englishtranslate": "She can play the piano very well."
     },
     {
-        "dutch": "zich bevinden (bevond, bevonden)",
-        "english": "to be located / to be situated",
+        "dutch": "zich bevinden",
+        "english": "to be located",
         "vietnamese": "nằm ở",
+        "pronunciation": { "ipa": "zɪx bəˈvɪndə(n)", "phonetic": "zikh bu-vin-dun" },
         "dutchsentence": "Het museum bevindt zich in het historische centrum.",
         "englishtranslate": "The museum is located in the historical center."
     },
     {
         "dutch": "bevond zich",
-        "english": "was located (singular past tense)",
-        "vietnamese": "đã nằm ở (số ít quá khứ)",
+        "english": "was located",
+        "vietnamese": "đã nằm ở",
+        "pronunciation": { "ipa": "bəˈvɔnt zɪx", "phonetic": "bu-vont zikh" },
         "dutchsentence": "De sleutel bevond zich onder de mat.",
         "englishtranslate": "The key was located under the mat."
     },
     {
         "dutch": "zich bevonden",
-        "english": "were located (plural past tense) / has/have been located (perfect tense)",
-        "vietnamese": "đã nằm ở (số nhiều quá khứ)",
+        "english": "were located / have been located",
+        "vietnamese": "đã nằm ở (số nhiều)",
+        "pronunciation": { "ipa": "zɪx bəˈvɔndə(n)", "phonetic": "zikh bu-von-dun" },
         "dutchsentence": "De documenten hebben zich bevonden in een kluisje.",
         "englishtranslate": "The documents have been located in a locker."
     }

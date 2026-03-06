@@ -2,42 +2,48 @@
     {
         "dutch": "het gezelschap",
         "english": "the company (social) / the fellowship",
-        "vietnamese": "công ty (xã giao)",
+        "vietnamese": "nhóm bạn / hội / sự đồng hành",
+        "pronunciation": { "ipa": "ət ɣəˈzɛlsxɑp", "phonetic": "ut khu-zel-skhap" },
         "dutchsentence": "Het was een gezelschap van acht mensen aan tafel.",
         "englishtranslate": "It was a company (group) of eight people at the table."
     },
     {
         "dutch": "de ingang (-en)",
-        "english": "the entrance (entrances)",
-        "vietnamese": "lối vào (các lối vào)",
+        "english": "the entrance",
+        "vietnamese": "lối vào",
+        "pronunciation": { "ipa": "də ˈɪŋɣɑŋ", "phonetic": "du ing-khahng" },
         "dutchsentence": "De ingang van het gebouw bevindt zich aan de achterkant.",
         "englishtranslate": "The entrance of the building is located at the back."
     },
     {
         "dutch": "de uitgang (-en)",
-        "english": "the exit (exits)",
-        "vietnamese": "lối ra (các lối ra)",
+        "english": "the exit",
+        "vietnamese": "lối ra",
+        "pronunciation": { "ipa": "də ˈœytɣɑŋ", "phonetic": "du out-khahng" },
         "dutchsentence": "Waar is de nooduitgang in deze ruimte?",
         "englishtranslate": "Where is the emergency exit in this room?"
     },
     {
         "dutch": "het park (-en)",
-        "english": "the park (parks)",
-        "vietnamese": "công viên (các công viên)",
+        "english": "the park",
+        "vietnamese": "công viên",
+        "pronunciation": { "ipa": "ət pɑrk", "phonetic": "ut pahrk" },
         "dutchsentence": "We gaan wandelen in het park dit weekend.",
         "englishtranslate": "We are going for a walk in the park this weekend."
     },
     {
         "dutch": "m'n",
-        "english": "my (shortened form of 'mijn')",
-        "vietnamese": "của tôi",
+        "english": "my (shortened)",
+        "vietnamese": "của tôi (viết tắt)",
+        "pronunciation": { "ipa": "mən", "phonetic": "mun" },
         "dutchsentence": "M'n fiets is gestolen gisteren.",
         "englishtranslate": "My bike was stolen yesterday."
     },
     {
         "dutch": "gezellig",
         "english": "cozy / pleasant / convivial",
-        "vietnamese": "ấm cúng",
+        "vietnamese": "ấm cúng / vui vẻ",
+        "pronunciation": { "ipa": "ɣəˈzɛləx", "phonetic": "khu-zel-ukh" },
         "dutchsentence": "Wat is het gezellig bij jullie thuis!",
         "englishtranslate": "It is so cozy/pleasant at your house!"
     },
@@ -45,20 +51,23 @@
         "dutch": "parkeren",
         "english": "to park",
         "vietnamese": "đỗ xe",
+        "pronunciation": { "ipa": "pɑrˈkeːrə(n)", "phonetic": "pahr-kay-run" },
         "dutchsentence": "Je kunt hier niet parkeren zonder vergunning.",
         "englishtranslate": "You cannot park here without a permit."
     },
     {
         "dutch": "parkeerde",
-        "english": "parked",
+        "english": "parked (past)",
         "vietnamese": "đã đỗ xe",
+        "pronunciation": { "ipa": "pɑrˈkeːrdə", "phonetic": "pahr-kay-rduh" },
         "dutchsentence": "Hij parkeerde de auto in de garage.",
         "englishtranslate": "He parked the car in the garage."
     },
     {
         "dutch": "geparkeerd",
-        "english": "has parked",
+        "english": "parked (participle)",
         "vietnamese": "đã đỗ xe",
+        "pronunciation": { "ipa": "ɣəpɑrˈkeːrt", "phonetic": "khu-pahr-kayrt" },
         "dutchsentence": "Waar heb je de auto geparkeerd?",
         "englishtranslate": "Where have you parked the car?"
     }
