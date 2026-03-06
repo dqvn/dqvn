@@ -124,6 +124,37 @@
 4. **Chú ý độ dài**: Phân biệt rõ nguyên âm ngắn/dài
 5. **Đọc to**: Đọc các câu ví dụ trong bài to và rõ ràng
 
+Dựa trên các bài tập ngữ pháp bạn đã cung cấp, dưới đây là bản tóm tắt đầy đủ các quy tắc chia danh từ số nhiều (meervoud) trong tiếng Hà Lan:
+1. Quy tắc thêm đuôi "-en"
+Đây là cách chia phổ biến nhất cho hầu hết các danh từ. Tuy nhiên, bạn cần chú ý đến biến đổi chính tả để giữ nguyên cách phát âm:
+ * Quy tắc chung: Thêm trực tiếp -en vào sau từ gốc (ví dụ: cursist → cursisten, toerist → toeristen).
+ * Nguyên âm dài (Double vowels): Khi từ có nguyên âm đôi (ee, aa, oo, uu) đứng trước một phụ âm cuối, khi thêm -en, một nguyên âm sẽ bị mất đi vì nó trở thành âm tiết mở.
+   * Ví dụ: probleem → problemen, baan → banen, taal → talen.
+ * Nguyên âm ngắn (Short vowels): Nếu từ có nguyên âm ngắn, bạn phải gấp đôi phụ âm cuối trước khi thêm -en để giữ cho nguyên âm đó vẫn đọc ngắn.
+   * Ví dụ: man → mannen, zus → zussen.
+ * Kết thúc bằng "-ing": Luôn thêm -en.
+   * Ví dụ: oefening → oefeningen.
+2. Quy tắc thêm đuôi "-s"
+Quy tắc này áp dụng cho các từ có trọng âm không rơi vào âm tiết cuối hoặc các từ mượn:
+ * Hậu tố không nhấn trọng âm (-el, -em, -en, -er, -e): Thêm trực tiếp -s.
+   * Ví dụ: computer → computers, appel → appels, garage → garages, vader → vaders, tante → tantes.
+ * Danh từ giảm nhẹ (Diminutives - từ kết thúc bằng "-je"): Luôn thêm -s.
+   * Ví dụ: pakketje → pakketjes, meisje → meisjes, nichtje → nichtjes.
+ * Từ kết thúc bằng "-é": Thêm -s trực tiếp vì dấu sắc đã bảo vệ âm tiết đó.
+   * Ví dụ: café → cafés.
+3. Quy tắc dấu phẩy trên + s (" 's ")
+Quy tắc này dùng để bảo vệ âm tiết mở của các nguyên âm dài ở cuối từ:
+ * Kết thúc bằng nguyên âm đứng một mình (a, o, u, i): Phải thêm 's để nguyên âm không bị đọc thành âm ngắn.
+   * Ví dụ: auto → auto's, collega → collega's, opa → opa's, oma → oma's.
+Bảng tóm tắt nhanh
+| Loại từ | Quy tắc | Ví dụ tiêu biểu |
+|---|---|---|
+| Phổ biến | + en | cursisten, vragen |
+| Nguyên âm đôi | Bớt 1 nguyên âm + en | problemen, banen |
+| Nguyên âm ngắn | Gấp đôi phụ âm + en | mannen, zussen |
+| Đuôi -el, -er, -je | + s | computers, dochters, meisjes |
+| Đuôi -a, -o, -u | + 's | auto's, opa's |
+Bạn có muốn mình tạo một bài kiểm tra nhỏ dựa trên các quy tắc này để bạn ôn tập không?
 
 
 ***
