@@ -1,0 +1,71 @@
+{
+  "dialogue_title": "Zomervakantie Plannen – Nederlands Gesprek met een Vriend",
+  "language": "Dutch",
+  "video_url": "www.youtube.com/shorts/UAWFNQm9ctw",
+  "roles": {
+    "A": "Vrouw",
+    "B": "Man"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Heb je al plannen voor de zomervakantie?",
+      "translation": "Do you already have plans for the summer holiday?"
+    },
+    {
+      "role": "B",
+      "text": "Nog niet echt. En jij?",
+      "translation": "Not really yet. And you?"
+    },
+    {
+      "role": "A",
+      "text": "Ik denk eraan om naar Spanje te gaan.",
+      "translation": "I'm thinking about going to Spain."
+    },
+    {
+      "role": "B",
+      "text": "Dat klinkt leuk!",
+      "translation": "That sounds nice!"
+    },
+    {
+      "role": "A",
+      "text": "Ja, ik wil graag naar het strand. Ga je met vrienden?",
+      "translation": "Yes, I really want to go to the beach. Are you going with friends?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, met twee vriendinnen. Hoe lang ga je ongeveer?",
+      "translation": "Yes, with two friends. How long will you stay?"
+    },
+    {
+      "role": "A",
+      "text": "Ongeveer twee weken.",
+      "translation": "About two weeks."
+    },
+    {
+      "role": "B",
+      "text": "Dat is perfect. En jij, wat ga jij doen?",
+      "translation": "That's perfect. And you, what are you going to do?"
+    },
+    {
+      "role": "A",
+      "text": "Misschien ga ik naar Italië.",
+      "translation": "Maybe I will go to Italy."
+    },
+    {
+      "role": "B",
+      "text": "Oh, ook mooi! Ja, ik wil de steden bezoeken.",
+      "translation": "Oh, also nice! Yes, I want to visit the cities."
+    },
+    {
+      "role": "A",
+      "text": "Klinkt als een goede vakantie.",
+      "translation": "Sounds like a good holiday."
+    },
+    {
+      "role": "B",
+      "text": "Zeker weten!",
+      "translation": "Definitely!"
+    }
+  ]
+}

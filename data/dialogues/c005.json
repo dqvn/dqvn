@@ -1,0 +1,101 @@
+{
+    "dialogue_title": "Dokter bezoek in het Nederlands leren",
+    "language": "Dutch",
+    "video_url": "https://www.youtube.com/shorts/w1a0Csr7sJU",
+    "roles": {
+        "A": "Patiënt",
+        "B": "Dokter"
+    },
+    "conversation": [
+        {
+            "role": "A",
+            "text": "Goedemorgen dokter.",
+            "translation": "Good morning doctor."
+        },
+        {
+            "role": "B",
+            "text": "Goedemorgen, wat kan ik voor u doen?",
+            "translation": "Good morning, what can I do for you?"
+        },
+        {
+            "role": "A",
+            "text": "Ik voel me niet zo goed.",
+            "translation": "I don't feel very well."
+        },
+        {
+            "role": "B",
+            "text": "Wat zijn uw klachten?",
+            "translation": "What are your symptoms?"
+        },
+        {
+            "role": "A",
+            "text": "Ik heb hoofdpijn en ben erg moe.",
+            "translation": "I have a headache and am very tired."
+        },
+        {
+            "role": "B",
+            "text": "Hoe lang heeft u dit al?",
+            "translation": "How long have you had this?"
+        },
+        {
+            "role": "A",
+            "text": "Ongeveer drie dagen.",
+            "translation": "About three days."
+        },
+        {
+            "role": "B",
+            "text": "Heeft u ook koorts?",
+            "translation": "Do you also have a fever?"
+        },
+        {
+            "role": "A",
+            "text": "Ja, een beetje.",
+            "translation": "Yes, a little."
+        },
+        {
+            "role": "B",
+            "text": "Oké, ik ga u even onderzoeken.",
+            "translation": "Okay, I'm going to examine you."
+        },
+        {
+            "role": "A",
+            "text": "Prima.",
+            "translation": "Fine."
+        },
+        {
+            "role": "B",
+            "text": "Het lijkt op een lichte griep.",
+            "translation": "It looks like a mild flu."
+        },
+        {
+            "role": "A",
+            "text": "Oké.",
+            "translation": "Okay."
+        },
+        {
+            "role": "B",
+            "text": "Rust goed uit en drink veel water.",
+            "translation": "Get plenty of rest and drink lots of water."
+        },
+        {
+            "role": "A",
+            "text": "Dat zal ik doen.",
+            "translation": "I will do that."
+        },
+        {
+            "role": "B",
+            "text": "Als het niet beter wordt, kom terug.",
+            "translation": "If it doesn't get better, come back."
+        },
+        {
+            "role": "A",
+            "text": "Dank u wel.",
+            "translation": "Thank you very much."
+        },
+        {
+            "role": "B",
+            "text": "Graag gedaan.",
+            "translation": "You're welcome."
+        }
+    ]
+}

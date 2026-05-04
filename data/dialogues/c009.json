@@ -1,0 +1,71 @@
+{
+  "dialogue_title": "Halte Gemist in de Bus – Nederlandse Conversatie",
+  "language": "Dutch",
+  "video_url": "www.youtube.com/shorts/0pceUAdGP2c",
+  "roles": {
+    "A": "Vrouw",
+    "B": "Buschauffeur"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Sorry, ik heb mijn halte gemist.",
+      "translation": "Sorry, I missed my stop."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem, dat gebeurt vaker.",
+      "translation": "No problem, that happens often."
+    },
+    {
+      "role": "A",
+      "text": "Wat kan ik nu doen?",
+      "translation": "What can I do now?"
+    },
+    {
+      "role": "B",
+      "text": "U kunt bij de volgende halte uitstappen.",
+      "translation": "You can get off at the next stop."
+    },
+    {
+      "role": "A",
+      "text": "Oké.",
+      "translation": "Okay."
+    },
+    {
+      "role": "B",
+      "text": "Daar kunt u de bus terugnemen.",
+      "translation": "There you can take the bus back."
+    },
+    {
+      "role": "A",
+      "text": "Hoe lang duurt dat?",
+      "translation": "How long will that take?"
+    },
+    {
+      "role": "B",
+      "text": "Ongeveer tien minuten.",
+      "translation": "About ten minutes."
+    },
+    {
+      "role": "A",
+      "text": "Dat valt mee.",
+      "translation": "That's not too bad."
+    },
+    {
+      "role": "B",
+      "text": "Ik zeg het wel als we er zijn.",
+      "translation": "I'll let you know when we arrive."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel.",
+      "translation": "Thank you!"
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan.",
+      "translation": "You're welcome."
+    }
+  ]
+}
