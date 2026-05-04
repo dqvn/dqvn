@@ -28,7 +28,7 @@ async function discover() {
     const found = [];
     // Detect file:// protocol
     if (location.protocol === 'file:') {
-        document.getElementById('file-notice').style.display = '';
+        document.getElementById('file-notice').style.display = 'inline-flex';
     }
     for (const p of prefixes) {
         for (let n = 1; n <= 200; n++) {
@@ -190,7 +190,7 @@ document.getElementById('tts-toggle').addEventListener('change', e => {
         document.getElementById('btn-done').style.display = 'none';
         document.getElementById('btn-repeat').style.display = 'none';
         document.getElementById('btn-stop').style.display = 'none';
-        document.getElementById('btn-start').style.display = '';
+        document.getElementById('btn-start').style.display = 'inline-flex';
         setMsg(myRole ? 'Klaar — klik ▶ Start of druk Space' : 'Selecteer eerst een rol ↑');
         setWave(false); resetProg();
     } else {
@@ -224,7 +224,7 @@ function startTTS() {
     if (!current) return;
     tts.active = true; tts.line = 0; tts.waitUser = false; lastTTSLine = -1;
     document.getElementById('btn-start').style.display = 'none';
-    document.getElementById('btn-stop').style.display = '';
+    document.getElementById('btn-stop').style.display = 'inline-flex';
     document.getElementById('btn-repeat').style.display = 'none';
     renderConv(0, 0); // initial render with TTS active
     runStep();
@@ -235,7 +235,7 @@ function stopTTS() {
     speechSynthesis.cancel();
     document.getElementById('btn-done').style.display = 'none';
     document.getElementById('btn-repeat').style.display = 'none';
-    document.getElementById('btn-start').style.display = '';
+    document.getElementById('btn-start').style.display = 'inline-flex';
     document.getElementById('btn-stop').style.display = 'none';
     setWave(false); resetProg();
     setMsg('Gestopt / Stopped');
@@ -275,7 +275,7 @@ async function runStep() {
         updateConv(conv.length);
         document.getElementById('btn-done').style.display = 'none';
         document.getElementById('btn-stop').style.display = 'none';
-        document.getElementById('btn-start').style.display = '';
+        document.getElementById('btn-start').style.display = 'inline-flex';
         document.getElementById('btn-repeat').style.display = 'none';
         setMsg('🎉 Gesprek voltooid! / Dialogue complete!');
         setTimeout(() => document.getElementById('celebrate').classList.add('on'), 600);
@@ -309,7 +309,7 @@ async function runStep() {
         if (!tts.active) return;
         setWave(false);
         document.getElementById('tts-status-row').classList.remove('spk');
-        document.getElementById('btn-repeat').style.display = '';
+        document.getElementById('btn-repeat').style.display = 'inline-flex';
         advanceTTS();
     }
 }
