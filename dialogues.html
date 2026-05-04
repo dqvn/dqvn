@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>🇳🇱 Dialoog Oefenen – Dutch Practice</title>
+  <link rel="stylesheet" href="assets/dlg.css">
+</head>
+
+<body>
+
+  <!-- ── Sidebar ── -->
+  <nav id="sidebar">
+    <div class="sb-logo">
+      <h1>🇳🇱 Dialoog Oefenen</h1>
+      <p>Dutch Dialogue Practice</p>
+    </div>
+    <div id="dlg-list">
+      <div class="sb-load">
+        <div class="spin"></div> Laden...
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Right panel ── -->
+  <div id="content">
+    <div id="main">
+
+      <!-- Welcome -->
+      <div id="welcome">
+        <div class="flag">🇳🇱</div>
+        <h2>Kies een dialoog</h2>
+        <p>Select a dialogue from the left menu to start practising Dutch conversations.</p>
+        <div class="notice" id="file-notice" style="display:none">
+          ⚠️ Best served via a local web server (e.g. <code>npx serve .</code>).
+          File:// access may be blocked by some browsers.
+        </div>
+      </div>
+
+      <!-- Dialogue view -->
+      <div id="view">
+
+        <!-- Header: video + info -->
+        <div class="card" id="hdr">
+          <div id="yt-wrap">
+            <div id="yt-ph">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+              <span>Video</span>
+            </div>
+          </div>
+
+          <div id="hdr-info">
+            <div id="dlg-title">—</div>
+            <span class="badge badge-lang" id="dlg-lang">Nederlands</span>
+
+            <div id="roles-section">
+              <div class="sec-lbl" style="margin-top:18px">Kies jouw rol / Select your role</div>
+              <div id="roles-grid"></div>
+            </div>
+
+            <div id="mode-section">
+              <label class="sw-wrap">
+                <input type="checkbox" id="tts-toggle" />
+                <span class="sw-track"></span>
+              </label>
+              <div class="mode-lbl">
+                <b>Solo Practice (TTS)</b>
+                <em>Practice alone — TTS reads the other role(s) for you</em>
+              </div>
+            </div>
+
+            <div id="speed-row">
+              <span>Speed:</span>
+              <button class="spd-btn" data-spd="0.6">🐢 Slow</button>
+              <button class="spd-btn spd-on" data-spd="0.88">🚶 Normal</button>
+              <button class="spd-btn" data-spd="1.1">🏃 Fast</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conversation -->
+        <div class="card">
+          <div class="sec-lbl">Gesprek / Conversation</div>
+          <div id="conv-list"></div>
+        </div>
+
+      </div><!-- #view -->
+    </div><!-- #main -->
+
+    <!-- TTS sticky bar -->
+    <div id="tts-bar">
+      <div id="prog-wrap">
+        <div id="prog-bar"></div>
+      </div>
+      <div id="tts-status-row">
+        <div class="wave" id="wave"><span></span><span></span><span></span><span></span><span></span></div>
+        <span id="tts-msg">Klaar om te beginnen</span>
+      </div>
+      <button id="btn-done">✅ &nbsp;Klaar! &nbsp;·&nbsp; Done — my turn</button>
+      <div id="tts-row2">
+        <button id="btn-start">▶ &nbsp;Start Solo Practice</button>
+        <button id="btn-repeat" title="Repeat last TTS line (R)">🔁 Herhaal</button>
+        <button id="btn-stop">⏹ Stop</button>
+      </div>
+      <div id="tts-hint">Keyboard: <b>Space</b> = Done &nbsp;|&nbsp; <b>R</b> = Repeat last line</div>
+    </div>
+  </div><!-- #content -->
+
+  <!-- Celebration overlay -->
+  <div id="celebrate">
+    <div class="cel-box">
+      <div class="cel-icon">🎉</div>
+      <h2>Geweldig gedaan!</h2>
+      <p>You completed the full dialogue.<br>Uitstekend Nederlands!</p>
+      <button class="btn-again" id="btn-again">▶ Practice Again</button>
+    </div>
+  </div>
+
+  <script src="assets/dlgscript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+{
+  "dialogue_title": "Picknick in het Park – Nederlands Gesprek met Vrienden",
+  "language": "Dutch",
+  "video_url": "www.youtube.com/shorts/RoNN1yTwmII",
+  "roles": {
+    "A": "Vrouw",
+    "B": "Man"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Wat een mooi weer vandaag!",
+      "translation": "What a beautiful weather today!"
+    },
+    {
+      "role": "B",
+      "text": "Ja, perfect voor een picknick. Heb je eten meegenomen?",
+      "translation": "Yes, perfect for a picnic. Did you bring food?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, broodjes en fruit.",
+      "translation": "Yes, sandwiches and fruit."
+    },
+    {
+      "role": "B",
+      "text": "Lekker!",
+      "translation": "Nice!"
+    },
+    {
+      "role": "A",
+      "text": "Ik heb ook iets meegenomen.",
+      "translation": "I also brought something."
+    },
+    {
+      "role": "B",
+      "text": "Wat heb je?",
+      "translation": "What did you bring?"
+    },
+    {
+      "role": "A",
+      "text": "Salade en sap.",
+      "translation": "Salad and juice."
+    },
+    {
+      "role": "B",
+      "text": "Klinkt goed! Dit is echt ontspannen.",
+      "translation": "Sounds good! This is really relaxing."
+    },
+    {
+      "role": "A",
+      "text": "Ja, even geen stress. We moeten dit vaker doen.",
+      "translation": "Yes, no stress for a while. We should do this more often."
+    },
+    {
+      "role": "B",
+      "text": "Zeker weten! Wil je iets drinken?",
+      "translation": "Definitely! Do you want something to drink?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, graag.",
+      "translation": "Yes, please."
+    },
+    {
+      "role": "B",
+      "text": "Hier, alsjeblieft.",
+      "translation": "Here you go."
+    },
+    {
+      "role": "A",
+      "text": "Dank je.",
+      "translation": "Thank you."
+    }
+  ]
+}

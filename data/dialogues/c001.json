@@ -1,0 +1,101 @@
+{
+  "dialogue_title": "IJs Kopen – Nederlands Gesprek bij de IJssalon",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/o9UWHar-gp4",
+  "roles": {
+    "A": "Verkoper (Vendor)",
+    "B": "Klant (Customer)"
+  },
+  "conversation": [
+    {
+      "role": "B",
+      "text": "Goedemiddag!",
+      "translation": "Good afternoon!"
+    },
+    {
+      "role": "A",
+      "text": "Goedemiddag! Wat wilt u?",
+      "translation": "Good afternoon! What would you like?"
+    },
+    {
+      "role": "B",
+      "text": "Ik wil graag een ijsje.",
+      "translation": "I would like an ice cream."
+    },
+    {
+      "role": "A",
+      "text": "Welke smaak wilt u?",
+      "translation": "Which flavor would you like?"
+    },
+    {
+      "role": "B",
+      "text": "Welke smaken heeft u?",
+      "translation": "Which flavors do you have?"
+    },
+    {
+      "role": "A",
+      "text": "We hebben chocolade, vanille en aardbei.",
+      "translation": "We have chocolate, vanilla, and strawberry."
+    },
+    {
+      "role": "B",
+      "text": "Dan neem ik chocolade.",
+      "translation": "Then I'll take chocolate."
+    },
+    {
+      "role": "A",
+      "text": "In een hoorntje of een bakje?",
+      "translation": "In a cone or a cup?"
+    },
+    {
+      "role": "B",
+      "text": "In een hoorntje alstublieft.",
+      "translation": "In a cone, please."
+    },
+    {
+      "role": "A",
+      "text": "Wilt u één of twee bolletjes?",
+      "translation": "Would you like one or two scoops?"
+    },
+    {
+      "role": "B",
+      "text": "Twee bolletjes graag.",
+      "translation": "Two scoops, please."
+    },
+    {
+      "role": "A",
+      "text": "Oké.",
+      "translation": "Okay."
+    },
+    {
+      "role": "B",
+      "text": "Hoeveel kost dat?",
+      "translation": "How much does that cost?"
+    },
+    {
+      "role": "A",
+      "text": "Dat is €3,50.",
+      "translation": "That is €3.50."
+    },
+    {
+      "role": "B",
+      "text": "Hier is mijn geld.",
+      "translation": "Here is my money."
+    },
+    {
+      "role": "A",
+      "text": "Dank u. Hier is uw ijsje.",
+      "translation": "Thank you. Here is your ice cream."
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel.",
+      "translation": "Thank you very much."
+    },
+    {
+      "role": "A",
+      "text": "Graag gedaan.",
+      "translation": "You're welcome."
+    }
+  ]
+}

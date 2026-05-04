@@ -1,0 +1,76 @@
+{
+  "dialogue_title": "Te Weinig Geld bij de Kassa – Nederlandse Conversatie",
+  "language": "Dutch",
+  "video_url": "www.youtube.com/shorts/T7eAeGayGaQ",
+  "roles": {
+    "A": "Cassière",
+    "B": "Klant"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Dat is €12,50.",
+      "translation": "That will be €12.50."
+    },
+    {
+      "role": "B",
+      "text": "Oh, ik heb niet genoeg geld.",
+      "translation": "Oh, I don't have enough money."
+    },
+    {
+      "role": "A",
+      "text": "Geen probleem.",
+      "translation": "No problem."
+    },
+    {
+      "role": "B",
+      "text": "Wat kan ik doen?",
+      "translation": "What can I do?"
+    },
+    {
+      "role": "A",
+      "text": "U kunt een product terugleggen.",
+      "translation": "You can remove one item."
+    },
+    {
+      "role": "B",
+      "text": "Oké, dan laat ik dit weg.",
+      "translation": "Okay, I'll leave this one."
+    },
+    {
+      "role": "A",
+      "text": "Prima.",
+      "translation": "Perfect."
+    },
+    {
+      "role": "B",
+      "text": "En nu?",
+      "translation": "And now?"
+    },
+    {
+      "role": "A",
+      "text": "Nu is het €10.",
+      "translation": "Now it's €10."
+    },
+    {
+      "role": "B",
+      "text": "Perfect.",
+      "translation": "Perfect."
+    },
+    {
+      "role": "A",
+      "text": "Wilt u met kaart betalen?",
+      "translation": "Would you like to pay by card?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, graag. Dank u. Sorry voor het ongemak.",
+      "translation": "Yes, please. Thank you. Sorry for the inconvenience."
+    },
+    {
+      "role": "A",
+      "text": "Geen probleem.",
+      "translation": "No problem."
+    }
+  ]
+}

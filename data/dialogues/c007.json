@@ -1,0 +1,76 @@
+{
+  "dialogue_title": "De Weg Vragen op het Station – Nederlands Gesprek",
+  "language": "Dutch",
+  "video_url": "www.youtube.com/shorts/wLFA3zhgLnA",
+  "roles": {
+    "A": "Jongen",
+    "B": "Meisje"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Sorry, mag ik iets vragen?",
+      "translation": "Sorry, may I ask something?"
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk.",
+      "translation": "Of course."
+    },
+    {
+      "role": "A",
+      "text": "Waar is perron 5?",
+      "translation": "Where is platform 5?"
+    },
+    {
+      "role": "B",
+      "text": "Ga rechtdoor en dan naar links.",
+      "translation": "Go straight ahead and then to the left."
+    },
+    {
+      "role": "A",
+      "text": "Is het ver?",
+      "translation": "Is it far?"
+    },
+    {
+      "role": "B",
+      "text": "Nee, ongeveer twee minuten lopen.",
+      "translation": "No, about a two-minute walk."
+    },
+    {
+      "role": "A",
+      "text": "Oké, dank u wel.",
+      "translation": "Okay, thank you."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan.",
+      "translation": "You're welcome."
+    },
+    {
+      "role": "A",
+      "text": "Vertrekt de trein op tijd?",
+      "translation": "Does the train leave on time?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, volgens het bord wel.",
+      "translation": "Yes, according to the board it does."
+    },
+    {
+      "role": "A",
+      "text": "Perfect.",
+      "translation": "Perfect."
+    },
+    {
+      "role": "B",
+      "text": "Fijne reis!",
+      "translation": "Have a nice trip!"
+    },
+    {
+      "role": "A",
+      "text": "Dank u.",
+      "translation": "Thank you."
+    }
+  ]
+}

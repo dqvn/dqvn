@@ -1,0 +1,91 @@
+{
+    "dialogue_title": "Telefoon Repareren – Nederlands Gesprek in de Winkel",
+    "language": "Dutch",
+    "video_url": "https://www.youtube.com/shorts/37kCoattYzk",
+    "roles": {
+        "A": "Verkoper (Vendor)",
+        "B": "Klant (Customer)"
+    },
+    "conversation": [
+        {
+            "role": "B",
+            "text": "Goedemiddag, mijn telefoon is kapot.",
+            "translation": "Good afternoon, my phone is broken."
+        },
+        {
+            "role": "A",
+            "text": "Goedemiddag! Wat is er gebeurd?",
+            "translation": "Good afternoon! What happened?"
+        },
+        {
+            "role": "B",
+            "text": "Het scherm werkt niet meer.",
+            "translation": "The screen doesn't work anymore."
+        },
+        {
+            "role": "A",
+            "text": "Is hij gevallen?",
+            "translation": "Did it fall?"
+        },
+        {
+            "role": "B",
+            "text": "Ja, gisteren.",
+            "translation": "Yes, yesterday."
+        },
+        {
+            "role": "A",
+            "text": "Oké, ik zal even kijken.",
+            "translation": "Okay, I'll take a look."
+        },
+        {
+            "role": "B",
+            "text": "Kunt u het repareren?",
+            "translation": "Can you repair it?"
+        },
+        {
+            "role": "A",
+            "text": "Ja, waarschijnlijk wel.",
+            "translation": "Yes, probably."
+        },
+        {
+            "role": "B",
+            "text": "Hoe lang duurt het ongeveer?",
+            "translation": "How long will it take approximately?"
+        },
+        {
+            "role": "A",
+            "text": "Ongeveer één dag.",
+            "translation": "About one day."
+        },
+        {
+            "role": "B",
+            "text": "En wat kost het ongeveer?",
+            "translation": "And how much does it cost approximately?"
+        },
+        {
+            "role": "A",
+            "text": "Ongeveer €80.",
+            "translation": "About €80."
+        },
+        {
+            "role": "B",
+            "text": "Oké, dat is goed.",
+            "translation": "Okay, that's fine."
+        },
+        {
+            "role": "A",
+            "text": "We nemen contact met u op.",
+            "translation": "We will contact you."
+        },
+        {
+            "role": "B",
+            "text": "Dank u wel.",
+            "translation": "Thank you very much."
+        },
+        {
+            "role": "A",
+            "text": "Graag gedaan.",
+            "translation": "You're welcome."
+        }
+    ]
+}

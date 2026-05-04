@@ -1,0 +1,86 @@
+{
+    "dialogue_title": "Vakantiewoning Huren – Nederlands Gesprek met de Verhuurder",
+    "language": "Dutch",
+    "video_url": "https://www.youtube.com/shorts/FRe0hO7X_1M",
+    "roles": {
+        "A": "Huurder (Tenant)",
+        "B": "Verhuurder (Landlord)"
+    },
+    "conversation": [
+        {
+            "role": "A",
+            "text": "Goedemiddag, wij hebben een vakantiewoning gereserveerd.",
+            "translation": "Good afternoon, we have reserved a holiday home."
+        },
+        {
+            "role": "B",
+            "text": "Goedemiddag, op welke naam?",
+            "translation": "Good afternoon, under what name?"
+        },
+        {
+            "role": "A",
+            "text": "Op naam van De Vries.",
+            "translation": "Under the name De Vries."
+        },
+        {
+            "role": "B",
+            "text": "Even kijken... Ja, ik zie de reservering. Perfect, hier zijn de sleutels.",
+            "translation": "Let's see... Yes, I see the reservation. Perfect, here are the keys."
+        },
+        {
+            "role": "A",
+            "text": "Dank u wel.",
+            "translation": "Thank you very much."
+        },
+        {
+            "role": "B",
+            "text": "U blijft een week, klopt dat?",
+            "translation": "You are staying for a week, is that correct?"
+        },
+        {
+            "role": "A",
+            "text": "Ja, dat klopt.",
+            "translation": "Yes, that's correct."
+        },
+        {
+            "role": "B",
+            "text": "Heeft u nog vragen?",
+            "translation": "Do you have any more questions?"
+        },
+        {
+            "role": "A",
+            "text": "Is er wifi in de woning?",
+            "translation": "Is there Wi-Fi in the house?"
+        },
+        {
+            "role": "B",
+            "text": "Ja, de code staat op de tafel.",
+            "translation": "Yes, the code is on the table."
+        },
+        {
+            "role": "A",
+            "text": "Oké, en waar kunnen we parkeren?",
+            "translation": "Okay, and where can we park?"
+        },
+        {
+            "role": "B",
+            "text": "U kunt voor het huis parkeren.",
+            "translation": "You can park in front of the house."
+        },
+        {
+            "role": "A",
+            "text": "Dat is handig.",
+            "translation": "That's convenient."
+        },
+        {
+            "role": "B",
+            "text": "Fijne vakantie!",
+            "translation": "Have a nice holiday!"
+        },
+        {
+            "role": "A",
+            "text": "Dank u.",
+            "translation": "Thank you."
+        }
+    ]
+}
