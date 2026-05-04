@@ -294,8 +294,8 @@ async function runStep() {
         document.getElementById('tts-status-row').classList.remove('spk');
         const rName = current.roles[myRole] || myRole;
         setMsg(`Jouw beurt als ${rName}! / Your turn as ${rName}!`);
-        document.getElementById('btn-done').style.display = '';
-        document.getElementById('btn-repeat').style.display = lastTTSLine >= 0 ? '' : 'none';
+        document.getElementById('btn-done').style.display = 'inline-flex';
+        document.getElementById('btn-repeat').style.display = lastTTSLine >= 0 ? 'inline-flex' : 'none';
     } else {
         // 🔊 TTS speaks
         tts.waitUser = false;
