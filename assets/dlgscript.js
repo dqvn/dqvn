@@ -449,6 +449,19 @@ function renderSidebar(list) {
 /* ════════════════════════════════════════════════════
    LOAD DIALOGUE
    ════════════════════════════════════════════════════ */
+function setTitle(text) {
+    const el = document.getElementById('dlg-title');
+    el.classList.remove('scrolling');
+    el.innerHTML = `<span>${text.replace(/</g, '&lt;')}</span>`;
+    requestAnimationFrame(() => {
+        const ovf = el.scrollWidth - el.clientWidth;
+        if (ovf > 4) {
+            el.style.setProperty('--title-ovf', `-${ovf}px`);
+            el.classList.add('scrolling');
+        }
+    });
+}
+
 function loadDialogue(d, skipSave = false) {
     stopTTS();
     current = d; myRole = null; soloMode = false;
@@ -457,7 +470,7 @@ function loadDialogue(d, skipSave = false) {
     document.getElementById('mob-cur').textContent = d.dialogue_title;
     document.getElementById('welcome').style.display = 'none';
     document.getElementById('view').style.display    = 'flex';
-    document.getElementById('dlg-title').textContent = d.dialogue_title;
+    setTitle(d.dialogue_title);
     document.getElementById('dlg-lang').textContent  = d.language || 'Nederlands';
 
     const wrap = document.getElementById('yt-wrap');
