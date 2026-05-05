@@ -18,52 +18,52 @@
             "translation": "Yes, good idea. Maybe a day at the beach?"
         },
         {
-            "role": "A",
+            "role": "B",
             "text": "Klinkt leuk, maar het weer moet goed zijn.",
             "translation": "Sounds nice, but the weather has to be good."
         },
         {
-            "role": "B",
+            "role": "A",
             "text": "Ja, dat is waar.",
             "translation": "Yes, that's true."
         },
         {
-            "role": "A",
+            "role": "B",
             "text": "We kunnen ook naar het bos gaan.",
             "translation": "We could also go to the forest."
         },
         {
-            "role": "B",
+            "role": "A",
             "text": "Ja, dat lijkt me ook fijn.",
             "translation": "Yes, that also sounds nice."
         },
         {
-            "role": "A",
+            "role": "B",
             "text": "Of een stad bezoeken?",
             "translation": "Or visit a city?"
         },
         {
-            "role": "B",
+            "role": "A",
             "text": "Hm, dat is ook een optie. Wat heb je het liefst?",
             "translation": "Hmm, that's also an option. What do you prefer?"
         },
         {
-            "role": "A",
+            "role": "B",
             "text": "Ik wil graag naar het strand.",
             "translation": "I would like to go to the beach."
         },
         {
-            "role": "B",
+            "role": "A",
             "text": "Oké, laten we dat doen. Hoe gaan we er naartoe?",
             "translation": "Okay, let's do that. How will we get there?"
         },
         {
-            "role": "A",
+            "role": "B",
             "text": "Met de trein of met de auto? Laten we de trein nemen.",
             "translation": "By train or by car? Let's take the train."
         },
         {
-            "role": "B",
+            "role": "A",
             "text": "Prima plan. Ik heb er zin in!",
             "translation": "Great plan. I'm looking forward to it!"
         }

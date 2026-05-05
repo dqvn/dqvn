@@ -54,13 +54,8 @@
     },
     {
       "role": "B",
-      "text": "Dat is geen probleem. Ik kijk meteen of er een kamer beschikbaar is.",
-      "translation": "That's no problem. I'll check right away if there's a room available."
-    },
-    {
-      "role": "B",
-      "text": "Ja, we hebben een andere kamer voor u.",
-      "translation": "Yes, we have another room for you."
+      "text": "Dat is geen probleem. Ik kijk meteen of er een kamer beschikbaar is. Ja, we hebben een andere kamer voor u.",
+      "translation": "That's no problem. I'll check right away if there's a room available. Yes, we have another room for you."
     },
     {
       "role": "A",
