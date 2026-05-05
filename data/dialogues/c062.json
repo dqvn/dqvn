@@ -1,0 +1,91 @@
+{
+  "dialogue_title": "Verkeerde Bestelling in een Fastfoodrestaurant",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/xxGCVrnjC4Q",
+  "roles": {
+    "A": "Klant (Customer)",
+    "B": "Medewerker (Staff)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Excuseer, volgens mij klopt mijn bestelling niet helemaal.",
+      "translation": "Excuse me, I don't think my order is quite right."
+    },
+    {
+      "role": "B",
+      "text": "Oh, dat is vervelend. Wat is er precies mis?",
+      "translation": "Oh, that's annoying. What exactly is wrong?"
+    },
+    {
+      "role": "A",
+      "text": "Ik heb een kipburger besteld, maar ik denk dat dit een rundburger is.",
+      "translation": "I ordered a chicken burger, but I think this is a beef burger."
+    },
+    {
+      "role": "B",
+      "text": "Mag ik even kijken? Ja natuurlijk. Dank u. Heeft u misschien ook nog de bon?",
+      "translation": "May I take a look? Yes, of course. Thank you. Do you happen to have the receipt as well?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, hier is de bon. Ik heb een kipmenu besteld met frietjes en een cola.",
+      "translation": "Yes, here is the receipt. I ordered a chicken meal with fries and a cola."
+    },
+    {
+      "role": "B",
+      "text": "U heeft gelijk, hier staat inderdaad een kipburger. Het spijt me voor de vergissing.",
+      "translation": "You're right, it does say chicken burger here. I'm sorry for the mistake."
+    },
+    {
+      "role": "A",
+      "text": "Geen probleem.",
+      "translation": "No problem."
+    },
+    {
+      "role": "B",
+      "text": "Wilt u dat we meteen een nieuwe kipburger voor u maken?",
+      "translation": "Would you like us to make a new chicken burger for you right away?"
+    },
+    {
+      "role": "A",
+      "text": "Ja graag, dat zou fijn zijn.",
+      "translation": "Yes please, that would be nice."
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk, het duurt ongeveer drie minuten. Wilt u ondertussen misschien nog saus bij de frietjes?",
+      "translation": "Of course, it will take about three minutes. Would you like some sauce with your fries in the meantime?"
+    },
+    {
+      "role": "A",
+      "text": "Ja graag, een beetje mayonaise.",
+      "translation": "Yes please, a little mayonnaise."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan. Hier is alvast de mayonaise. Uw nieuwe burger komt er zo aan.",
+      "translation": "You're welcome. Here is the mayonnaise already. Your new burger will be here shortly."
+    },
+    {
+      "role": "A",
+      "text": "Perfect, dank u wel.",
+      "translation": "Perfect, thank you very much."
+    },
+    {
+      "role": "B",
+      "text": "Hier is uw kipburger. Nogmaals excuses voor het ongemak.",
+      "translation": "Here is your chicken burger. Once again, apologies for the inconvenience."
+    },
+    {
+      "role": "A",
+      "text": "Dank u, nu klopt alles. Fijne dag!",
+      "translation": "Thank you, everything is correct now. Have a nice day!"
+    },
+    {
+      "role": "B",
+      "text": "U ook een fijne dag en eet smakelijk!",
+      "translation": "You have a nice day too, and enjoy your meal!"
+    }
+  ]
+}

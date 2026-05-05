@@ -1,0 +1,101 @@
+{
+  "dialogue_title": "🐶 “Mijn Hond is Weggelopen!” – Gesprek bij het Dierenasiel",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/29WJSEjnuw4",
+  "roles": {
+    "A": "Pet Owner",
+    "B": "Shelter Employee"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, ik denk dat mijn hond is weggelopen.",
+      "translation": "Good afternoon, I think my dog has run away."
+    },
+    {
+      "role": "B",
+      "text": "Dat is vervelend om te horen. Wanneer is uw hond verdwenen?",
+      "translation": "I'm sorry to hear that. When did your dog disappear?"
+    },
+    {
+      "role": "A",
+      "text": "Vanmorgen vroeg. Ik kon hem nergens meer vinden.",
+      "translation": "Early this morning. I couldn't find him anywhere."
+    },
+    {
+      "role": "B",
+      "text": "Begrijpelijk dat u zich zorgen maakt. Hoe ziet uw hond eruit?",
+      "translation": "It's understandable that you're worried. What does your dog look like?"
+    },
+    {
+      "role": "A",
+      "text": "Hij is middelgroot, bruin met witte vlekken en hij draagt een rode halsband.",
+      "translation": "He's medium-sized, brown with white spots and he's wearing a red collar."
+    },
+    {
+      "role": "B",
+      "text": "Heeft hij ook een naam?",
+      "translation": "Does he also have a name?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, hij heet Max.",
+      "translation": "Yes, his name is Max."
+    },
+    {
+      "role": "B",
+      "text": "Oké, ik zal even in ons systeem kijken of iemand een hond heeft gevonden.",
+      "translation": "Okay, I'll check our system to see if anyone has found a dog."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel. Ik hoop dat iemand hem heeft gezien.",
+      "translation": "Thank you. I hope someone has seen him."
+    },
+    {
+      "role": "B",
+      "text": "Tot nu toe zie ik nog geen melding, maar dat kan nog komen. Wat kan ik doen als iemand hem vindt?",
+      "translation": "So far I don't see any report, but that could still change. What can I do if someone finds him?"
+    },
+    {
+      "role": "B",
+      "text": "U kunt een vermissingsmelding bij ons achterlaten.",
+      "translation": "You can leave a missing person's report with us."
+    },
+    {
+      "role": "A",
+      "text": "Dat lijkt me een goed idee.",
+      "translation": "That seems like a good idea."
+    },
+    {
+      "role": "B",
+      "text": "Heeft u misschien een foto van uw hond?",
+      "translation": "Do you happen to have a photo of your dog?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, ik heb er een op mijn telefoon.",
+      "translation": "Yes, I have one on my phone."
+    },
+    {
+      "role": "B",
+      "text": "Perfect. Dan kunnen we de foto delen met onze medewerkers.",
+      "translation": "Perfect. Then we can share the photo with our staff."
+    },
+    {
+      "role": "A",
+      "text": "Bedankt voor uw hulp.",
+      "translation": "Thank you for your help."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem. We hopen dat Max snel wordt gevonden.",
+      "translation": "No problem. We hope Max is found soon."
+    },
+    {
+      "role": "A",
+      "text": "Dat hoop ik ook. Nogmaals bedankt.",
+      "translation": "I hope so too. Thanks again."
+    }
+  ]
+}

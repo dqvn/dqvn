@@ -1,0 +1,87 @@
+{
+  "dialogue_title": "Hoe Bestel je Eten in het Nederlands? Praktische Conversatie",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/ORbB8xJujEk",
+  "roles": {
+    "A": "Man",
+    "B": "Woman",
+    "C": "Waiter"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Dit restaurant ziet er gezellig uit. Ben je hier al eerder geweest?",
+      "translation": "This restaurant looks cozy. Have you been here before?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, een paar keer. Het eten hier is echt lekker.",
+      "translation": "Yes, a few times. The food here is really delicious."
+    },
+    {
+      "role": "A",
+      "text": "Dat klinkt goed. Heb je een aanbeveling?",
+      "translation": "That sounds good. Do you have a recommendation?"
+    },
+    {
+      "role": "B",
+      "text": "De pasta en de pizza zijn hier erg populair, maar de salades zijn ook heel vers.",
+      "translation": "The pasta and pizza are very popular here, but the salads are also very fresh."
+    },
+    {
+      "role": "A",
+      "text": "Ik denk dat ik de pasta ga proberen. Welke pasta vind jij het lekkerst?",
+      "translation": "I think I'll try the pasta. Which pasta do you like best?"
+    },
+    {
+      "role": "B",
+      "text": "Ik neem meestal de pasta met tomatensaus en groenten. Die is echt heerlijk.",
+      "translation": "I usually take the pasta with tomato sauce and vegetables. It is truly delicious."
+    },
+    {
+      "role": "A",
+      "text": "Dat klinkt goed, misschien bestel ik dat ook.",
+      "translation": "That sounds good, maybe I'll order that too."
+    },
+    {
+      "role": "B",
+      "text": "Of je kunt de pizza proberen. Die wordt hier vers bereid.",
+      "translation": "Or you could try the pizza. It's freshly prepared here."
+    },
+    {
+      "role": "A",
+      "text": "Dat is ook een goede optie. Ik hou van pizza.",
+      "translation": "That's also a good option. I love pizza."
+    },
+    {
+      "role": "C",
+      "text": "Goedenavond, zijn we klaar om te bestellen?",
+      "translation": "Good evening, are we ready to order?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, ik neem graag de pasta met tomatensaus en een glas water.",
+      "translation": "Yes, I'd like the pasta with tomato sauce and a glass of water."
+    },
+    {
+      "role": "A",
+      "text": "En ik neem een pizza margherita en een cola alstublieft.",
+      "translation": "And I'll have a pizza Margherita and a coke, please."
+    },
+    {
+      "role": "C",
+      "text": "Prima, ik breng jullie bestelling zo snel mogelijk.",
+      "translation": "Great, I'll bring your order as soon as possible."
+    },
+    {
+      "role": "A",
+      "text": "Ik ben benieuwd hoe het eten smaakt.",
+      "translation": "I'm curious to see how the food tastes."
+    },
+    {
+      "role": "B",
+      "text": "Ik weet zeker dat je het lekker zult vinden.",
+      "translation": "I'm sure you'll like it."
+    }
+  ]
+}

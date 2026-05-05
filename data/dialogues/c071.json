@@ -1,0 +1,101 @@
+{
+  "dialogue_title": "Nederlandse Conversatie: Een Vriend Ontmoeten na Lange Tijd",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/9tJwWV4MtN8",
+  "roles": {
+    "A": "Anna",
+    "B": "Mark"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Mark, ben jij dat echt? Wat leuk om je weer te zien!",
+      "translation": "Mark, is that really you? How nice to see you again!"
+    },
+    {
+      "role": "B",
+      "text": "Anna! Wat een verrassing! Het is echt lang geleden. Hoe gaat het met je?",
+      "translation": "Anna! What a surprise! It’s been a really long time. How are you?"
+    },
+    {
+      "role": "A",
+      "text": "Het gaat goed met mij, dank je. En met jou?",
+      "translation": "I'm doing well, thank you. And you?"
+    },
+    {
+      "role": "B",
+      "text": "Ook goed. Ik kan bijna niet geloven dat we elkaar na zoveel jaren weer zien.",
+      "translation": "Good too. I can almost not believe we are seeing each other again after so many years."
+    },
+    {
+      "role": "A",
+      "text": "Inderdaad. De laatste keer dat we elkaar zagen was volgens mij op de universiteit.",
+      "translation": "Indeed. I think the last time we saw each other was at university."
+    },
+    {
+      "role": "B",
+      "text": "Ja, dat klopt. Dat was bijna 10 jaar geleden. Wat heb je in die tijd gedaan?",
+      "translation": "Yes, that's right. That was almost 10 years ago. What have you been doing during that time?"
+    },
+    {
+      "role": "A",
+      "text": "Na mijn studie ben ik naar een andere stad verhuisd voor mijn werk. Ik werk nu bij een technologiebedrijf. En jij?",
+      "translation": "After my studies, I moved to another city for work. I’m working at a tech company now. And you?"
+    },
+    {
+      "role": "B",
+      "text": "Interessant! Ik werk tegenwoordig in marketing. Ik reis ook vaak voor mijn werk.",
+      "translation": "Interesting! I'm working in marketing these days. I also travel often for my work."
+    },
+    {
+      "role": "A",
+      "text": "Reis je naar veel verschillende landen?",
+      "translation": "Do you travel to many different countries?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, soms wel. Vorig jaar was ik bijvoorbeeld in Spanje en Italië voor projecten.",
+      "translation": "Yes, sometimes. Last year, for example, I was in Spain and Italy for projects."
+    },
+    {
+      "role": "A",
+      "text": "Dat klinkt geweldig! Ik hou ook van reizen, maar ik heb de laatste jaren vooral veel gewerkt.",
+      "translation": "That sounds amazing! I love traveling too, but I've mostly been working a lot these past few years."
+    },
+    {
+      "role": "B",
+      "text": "Begrijpelijk. Het leven kan soms erg druk zijn. Heb je nog contact met andere vrienden van vroeger?",
+      "translation": "Understandable. Life can be very busy sometimes. Are you still in touch with other friends from back then?"
+    },
+    {
+      "role": "A",
+      "text": "Met een paar wel. Soms spreken we af of sturen we berichten naar elkaar.",
+      "translation": "With a few, yes. Sometimes we meet up or send messages to each other."
+    },
+    {
+      "role": "B",
+      "text": "Dat is leuk om te horen. Het is altijd fijn om oude vrienden weer te ontmoeten.",
+      "translation": "That's good to hear. It's always nice to meet old friends again."
+    },
+    {
+      "role": "A",
+      "text": "Absoluut. We zouden eigenlijk vaker moeten afspreken.",
+      "translation": "Absolutely. We should actually meet up more often."
+    },
+    {
+      "role": "B",
+      "text": "Dat vind ik ook. Misschien kunnen we volgende week samen iets gaan eten?",
+      "translation": "I think so too. Maybe we can go grab a bite to eat together next week?"
+    },
+    {
+      "role": "A",
+      "text": "Goed idee! Het was echt leuk om je weer te zien.",
+      "translation": "Good idea! It was really nice to see you again."
+    },
+    {
+      "role": "B",
+      "text": "Zeker weten. Ik hoop dat we elkaar nu vaker zien.",
+      "translation": "For sure. I hope we see each other more often now."
+    }
+  ]
+}

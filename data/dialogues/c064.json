@@ -1,0 +1,91 @@
+{
+  "dialogue_title": "Op de Luchthaven Nederlands Spreken – Realistische Dialoog",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/dgGtUvJrRZw",
+  "roles": {
+    "A": "Luchthavenmedewerker (Airport Staff)",
+    "B": "Reiziger (Traveler)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen, waar vliegt u vandaag naartoe?",
+      "translation": "Good morning, where are you flying to today?"
+    },
+    {
+      "role": "B",
+      "text": "Goedemorgen, ik vlieg vandaag naar Barcelona.",
+      "translation": "Good morning, I'm flying to Barcelona today."
+    },
+    {
+      "role": "A",
+      "text": "Mag ik uw paspoort en ticket alstublieft?",
+      "translation": "May I have your passport and ticket, please?"
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk, hier zijn ze.",
+      "translation": "Of course, here they are."
+    },
+    {
+      "role": "A",
+      "text": "Dank u. Heeft u bagage die u wilt inchecken?",
+      "translation": "Thank you. Do you have any luggage you would like to check in?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, ik heb één koffer.",
+      "translation": "Yes, I have one suitcase."
+    },
+    {
+      "role": "A",
+      "text": "Prima. Wilt u de koffer alstublieft op de weegschaal zetten?",
+      "translation": "Great. Would you please place the suitcase on the scale?"
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk.",
+      "translation": "Of course."
+    },
+    {
+      "role": "A",
+      "text": "De koffer wordt direct doorgestuurd naar het vliegtuig.",
+      "translation": "The suitcase will be sent directly to the plane."
+    },
+    {
+      "role": "B",
+      "text": "Geweldig, bedankt.",
+      "translation": "Great, thanks."
+    },
+    {
+      "role": "A",
+      "text": "Hier is uw boardingpas. Uw vlucht vertrekt om 10:45 vanaf gate B12.",
+      "translation": "Here is your boarding pass. Your flight departs at 10:45 from gate B12."
+    },
+    {
+      "role": "B",
+      "text": "Bedankt. Hoe laat begint het boarden?",
+      "translation": "Thanks. What time does boarding begin?"
+    },
+    {
+      "role": "A",
+      "text": "Het boarden begint ongeveer 30 minuten voor vertrek.",
+      "translation": "Boarding begins approximately 30 minutes before departure."
+    },
+    {
+      "role": "B",
+      "text": "Perfect, dank u wel voor de informatie.",
+      "translation": "Perfect, thank you for the information."
+    },
+    {
+      "role": "A",
+      "text": "Graag gedaan, fijne reis.",
+      "translation": "You're welcome, have a nice trip."
+    },
+    {
+      "role": "B",
+      "text": "Dank je.",
+      "translation": "Thank you."
+    }
+  ]
+}

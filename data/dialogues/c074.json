@@ -1,0 +1,76 @@
+{
+  "dialogue_title": "Dutch Conversation in an Electronics Store – Buying a Laptop",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/KXrYlneYxwY",
+  "roles": {
+    "A": "Store Employee",
+    "B": "Customer"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, kan ik u ergens mee helpen?",
+      "translation": "Good afternoon, can I help you with something?"
+    },
+    {
+      "role": "B",
+      "text": "Ja graag. Ik zoek een nieuwe laptop voor mijn werk.",
+      "translation": "Yes please. I am looking for a new laptop for my work."
+    },
+    {
+      "role": "A",
+      "text": "Natuurlijk. Gebruikt u de laptop vooral voor kantoorwerk of ook voor andere dingen zoals design of gaming?",
+      "translation": "Of course. Do you use the laptop mainly for office work or also for other things like design or gaming?"
+    },
+    {
+      "role": "B",
+      "text": "Vooral voor kantoorwerk, zoals e-mails, documenten en online vergaderingen.",
+      "translation": "Mainly for office work, such as emails, documents and online meetings."
+    },
+    {
+      "role": "A",
+      "text": "In dat geval heeft u geen heel zware laptop nodig. Een licht en snel model zou perfect zijn.",
+      "translation": "In that case you don't need a very heavy laptop. A light and fast model would be perfect."
+    },
+    {
+      "role": "B",
+      "text": "Dat klinkt goed. Heeft u een model dat een lange batterijduur heeft?",
+      "translation": "That sounds good. Do you have a model that has a long battery life?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, deze laptop hier kan tot 10 uur werken zonder opladen. Hij is ook erg licht.",
+      "translation": "Yes, this laptop here can work up to 10 hours without charging. It is also very light."
+    },
+    {
+      "role": "B",
+      "text": "Klinkt perfect! Dat is handig, want ik reis vaak voor mijn werk.",
+      "translation": "Sounds perfect! That's handy, because I travel often for my work."
+    },
+    {
+      "role": "A",
+      "text": "Dan is dit model een goede keuze. Hij heeft ook een snelle processor en veel opslagruimte.",
+      "translation": "Then this model is a good choice. It also has a fast processor and a lot of storage space."
+    },
+    {
+      "role": "B",
+      "text": "Mooi. Zit er ook garantie op?",
+      "translation": "Nice. Does it also have a warranty?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, u krijgt 2 jaar garantie en gratis technische ondersteuning.",
+      "translation": "Yes, you get a 2-year warranty and free technical support."
+    },
+    {
+      "role": "B",
+      "text": "Perfect, dan neem ik deze laptop.",
+      "translation": "Perfect, then I'll take this laptop."
+    },
+    {
+      "role": "A",
+      "text": "Uitstekende keuze!",
+      "translation": "Excellent choice!"
+    }
+  ]
+}

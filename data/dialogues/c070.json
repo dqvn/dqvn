@@ -1,0 +1,101 @@
+{
+  "dialogue_title": "Praten over Favoriete Films",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/BNezsiEUsz0",
+  "roles": {
+    "A": "Interviewer / Speaker 1",
+    "B": "Respondent / Speaker 2"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Heb je laatst nog een goede film gezien?",
+      "translation": "Have you seen a good movie lately?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, eigenlijk wel. Vorig weekend heb ik een spannende thriller gekeken. Ik vond hem echt geweldig.",
+      "translation": "Yes, actually I have. Last weekend I watched an exciting thriller. I thought it was really great."
+    },
+    {
+      "role": "A",
+      "text": "Wat voor soort films vind je meestal leuk?",
+      "translation": "What kind of movies do you usually like?"
+    },
+    {
+      "role": "B",
+      "text": "Ik kijk graag naar thrillers en sciencefictionfilms. Ik hou van films met een spannend verhaal en onverwachte wendingen. En jij?",
+      "translation": "I enjoy watching thrillers and science fiction films. I love movies with an exciting story and unexpected twists. And you?"
+    },
+    {
+      "role": "A",
+      "text": "Ik kijk liever romantische films of comedy's. Soms ook dramafilms, vooral als het verhaal heel sterk is.",
+      "translation": "I prefer watching romantic movies or comedies. Sometimes drama films too, especially if the story is very strong."
+    },
+    {
+      "role": "B",
+      "text": "Interessant. Heb je een favoriete film aller tijden?",
+      "translation": "Interesting. Do you have an all-time favorite movie?"
+    },
+    {
+      "role": "A",
+      "text": "Dat is moeilijk om te zeggen, maar één van mijn favoriete films is een romantische film met een mooi verhaal over twee mensen die elkaar na vele jaren weer ontmoeten.",
+      "translation": "That's hard to say, but one of my favorite movies is a romantic film with a beautiful story about two people who meet again after many years."
+    },
+    {
+      "role": "B",
+      "text": "Dat klinkt mooi. Ik hou van films die je echt laten nadenken of die een emotioneel verhaal vertellen. Ga je vaak naar de bioscoop?",
+      "translation": "That sounds lovely. I love movies that really make you think or that tell an emotional story. Do you go to the cinema often?"
+    },
+    {
+      "role": "A",
+      "text": "Niet zo vaak als vroeger. Meestal kijk ik films thuis via streamingdiensten. Het is makkelijker en comfortabeler.",
+      "translation": "Not as often as I used to. Usually, I watch movies at home via streaming services. It's easier and more comfortable."
+    },
+    {
+      "role": "B",
+      "text": "Dat herken ik. Maar soms is de sfeer in de bioscoop toch bijzonder, vooral bij grote films.",
+      "translation": "I recognize that. But sometimes the atmosphere in the cinema is still special, especially with big movies."
+    },
+    {
+      "role": "A",
+      "text": "Dat klopt. Het grote scherm en het geluid maken echt een verschil. Kijk je liever films alleen of met vrienden?",
+      "translation": "That's true. The big screen and the sound really make a difference. Do you prefer watching movies alone or with friends?"
+    },
+    {
+      "role": "B",
+      "text": "Meestal met vrienden. Daarna praten we vaak over de film en delen we onze mening.",
+      "translation": "Usually with friends. Afterwards, we often talk about the movie and share our opinions."
+    },
+    {
+      "role": "A",
+      "text": "Dat vind ik ook leuk. Soms ontdek je nieuwe films omdat iemand anders ze aanbeveelt.",
+      "translation": "I like that too. Sometimes you discover new movies because someone else recommends them."
+    },
+    {
+      "role": "B",
+      "text": "Precies. Heb je een film die je onlangs hebt gezien en die je zou aanraden?",
+      "translation": "Exactly. Do you have a movie that you've seen recently that you would recommend?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, ik heb een inspirerende film gezien over iemand die zijn dromen probeert te volgen ondanks veel problemen. Ik vond het verhaal erg motiverend.",
+      "translation": "Yes, I saw an inspiring movie about someone trying to follow their dreams despite many problems. I found the story very motivating."
+    },
+    {
+      "role": "B",
+      "text": "Dat klinkt interessant. Misschien ga ik die film dit weekend kijken.",
+      "translation": "That sounds interesting. Maybe I'll watch that movie this weekend."
+    },
+    {
+      "role": "A",
+      "text": "Zeker doen! En als jij een goede film vindt, moet je het mij ook laten weten.",
+      "translation": "Definitely do it! And if you find a good movie, you should let me know too."
+    },
+    {
+      "role": "B",
+      "text": "Dat zal ik doen!",
+      "translation": "I'll do that!"
+    }
+  ]
+}

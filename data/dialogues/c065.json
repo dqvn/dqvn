@@ -1,0 +1,76 @@
+{
+  "dialogue_title": "Realistische Sportschool Conversatie",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/gAhc456wAkk",
+  "roles": {
+    "A": "Man in the gym",
+    "B": "Woman in the gym"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Hoi, gebruik jij deze machine nog?",
+      "translation": "Hi, are you still using this machine?"
+    },
+    {
+      "role": "B",
+      "text": "Nee hoor, je kunt hem gebruiken. Ik ben net klaar met mijn oefening.",
+      "translation": "No, you can use it. I've just finished my exercise."
+    },
+    {
+      "role": "A",
+      "text": "Bedankt. Kom je hier vaak trainen?",
+      "translation": "Thanks. Do you come here to train often?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, meestal drie of vier keer per week. Sport helpt me om fit en energiek te blijven.",
+      "translation": "Yes, usually three or four times a week. Sports help me to stay fit and energetic."
+    },
+    {
+      "role": "A",
+      "text": "Dat herken ik. Ik probeer ook regelmatig te trainen, maar soms is het moeilijk om tijd te vinden.",
+      "translation": "I recognize that. I also try to train regularly, but sometimes it's hard to find the time."
+    },
+    {
+      "role": "B",
+      "text": "Ja, dat begrijp ik. Werk en andere verplichtingen kunnen het lastig maken. Wat voor training doe je meestal?",
+      "translation": "Yes, I understand that. Work and other obligations can make it difficult. What kind of training do you usually do?"
+    },
+    {
+      "role": "A",
+      "text": "Ik combineer krachttraining met cardio. Soms doe ik ook yoga om te ontspannen. En jij?",
+      "translation": "I combine strength training with cardio. Sometimes I also do yoga to relax. And you?"
+    },
+    {
+      "role": "B",
+      "text": "Ik focus vooral op krachttraining, maar ik wil binnenkort ook meer cardio doen.",
+      "translation": "I mainly focus on strength training, but I want to do more cardio soon."
+    },
+    {
+      "role": "A",
+      "text": "Dat is een goede balans. Cardio is goed voor je conditie. Train je liever alleen of met een vriend?",
+      "translation": "That's a good balance. Cardio is good for your fitness. Do you prefer to train alone or with a friend?"
+    },
+    {
+      "role": "B",
+      "text": "Meestal alleen, maar af en toe train ik met een vriendin. Dat kan extra motiverend zijn.",
+      "translation": "Usually alone, but occasionally I train with a friend. That can be extra motivating."
+    },
+    {
+      "role": "A",
+      "text": "Dat klopt. Samen trainen maakt het vaak leuker.",
+      "translation": "That's right. Training together often makes it more fun."
+    },
+    {
+      "role": "B",
+      "text": "Zeker. Misschien zien we elkaar hier vaker.",
+      "translation": "Certainly. Maybe we'll see each other here more often."
+    },
+    {
+      "role": "A",
+      "text": "Dat zou leuk zijn. Succes met je training!",
+      "translation": "That would be nice. Good luck with your training!"
+    }
+  ]
+}

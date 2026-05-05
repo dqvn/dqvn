@@ -1,0 +1,71 @@
+{
+  "dialogue_title": "Dagelijkse Conversatie in het Nederlands – Nieuwe Buur Ontmoeten",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/8vo7624SKQM",
+  "roles": {
+    "A": "Sanne",
+    "B": "Thomas"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Hallo, jij bent zeker onze nieuwe buur?",
+      "translation": "Hello, you must be our new neighbor?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, dat klopt. Ik ben hier net vorige week komen wonen.",
+      "translation": "Yes, that's right. I just moved here last week."
+    },
+    {
+      "role": "A",
+      "text": "Welkom in het gebouw. Mijn naam is Sanne.",
+      "translation": "Welcome to the building. My name is Sanne."
+    },
+    {
+      "role": "B",
+      "text": "Hoi Sanne, leuk je te ontmoeten. Ik ben Thomas.",
+      "translation": "Hi Sanne, nice to meet you. I'm Thomas."
+    },
+    {
+      "role": "A",
+      "text": "Hoe vind je de buurt tot nu toe?",
+      "translation": "How do you like the neighborhood so far?"
+    },
+    {
+      "role": "B",
+      "text": "Tot nu toe vind ik het erg prettig. Het lijkt een rustige en vriendelijke buurt.",
+      "translation": "So far, I find it very pleasant. It seems like a quiet and friendly neighborhood."
+    },
+    {
+      "role": "A",
+      "text": "Dat is het ook. Er zijn hier veel leuke cafés en een mooi park in de buurt.",
+      "translation": "It is indeed. There are many nice cafes and a beautiful park nearby."
+    },
+    {
+      "role": "B",
+      "text": "Dat klinkt goed. Ik hou van wandelen, dus een park dichtbij is perfect.",
+      "translation": "That sounds good. I love walking, so a park nearby is perfect."
+    },
+    {
+      "role": "A",
+      "text": "Als je goede restaurants zoekt, kan ik je er een paar aanbevelen.",
+      "translation": "If you're looking for good restaurants, I can recommend a few."
+    },
+    {
+      "role": "B",
+      "text": "Dat zou geweldig zijn. Ik ben nog steeds de omgeving aan het ontdekken.",
+      "translation": "That would be great. I'm still exploring the area."
+    },
+    {
+      "role": "A",
+      "text": "Misschien zie ik je binnenkort in het park of in één van de cafés.",
+      "translation": "Maybe I'll see you soon in the park or in one of the cafes."
+    },
+    {
+      "role": "B",
+      "text": "Dat zou leuk zijn. Bedankt voor het warme welkom!",
+      "translation": "That would be nice. Thanks for the warm welcome!"
+    }
+  ]
+}

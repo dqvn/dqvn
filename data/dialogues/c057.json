@@ -1,0 +1,111 @@
+{
+  "dialogue_title": "Signing up at the Gym",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/oREjzvkRpK0",
+  "roles": {
+    "A": "Gym Visitor",
+    "B": "Gym Staff"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, ik wil me graag aanmelden bij deze sportschool.",
+      "translation": "Good afternoon, I would like to sign up at this gym."
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag! Natuurlijk, dat kan. Heeft u al eerder bij ons gesport?",
+      "translation": "Good afternoon! Of course, that's possible. Have you exercised with us before?"
+    },
+    {
+      "role": "A",
+      "text": "Nee, dit is mijn eerste keer hier.",
+      "translation": "No, this is my first time here."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem. Ik zal u kort uitleggen hoe het lidmaatschap werkt.",
+      "translation": "No problem. I will briefly explain how the membership works."
+    },
+    {
+      "role": "A",
+      "text": "Dat zou fijn zijn.",
+      "translation": "That would be nice."
+    },
+    {
+      "role": "B",
+      "text": "We hebben verschillende abonnementen. U kunt kiezen voor een maandabonnement of een jaarabonnement.",
+      "translation": "We have different subscriptions. You can choose a monthly or a yearly subscription."
+    },
+    {
+      "role": "A",
+      "text": "Wat is het verschil?",
+      "translation": "What is the difference?"
+    },
+    {
+      "role": "B",
+      "text": "Het maandabonnement is flexibeler, maar het jaarabonnement is goedkoper per maand.",
+      "translation": "The monthly subscription is more flexible, but the yearly subscription is cheaper per month."
+    },
+    {
+      "role": "A",
+      "text": "Begrijp ik. Kan ik eerst een proefles doen?",
+      "translation": "I understand. Can I do a trial lesson first?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, dat kan. We bieden een gratis proeftraining aan.",
+      "translation": "Yes, that's possible. We offer a free trial workout."
+    },
+    {
+      "role": "A",
+      "text": "Dat klinkt goed. Wanneer kan ik beginnen?",
+      "translation": "That sounds good. When can I start?"
+    },
+    {
+      "role": "B",
+      "text": "U kunt vandaag al starten als u wilt.",
+      "translation": "You can start today if you like."
+    },
+    {
+      "role": "A",
+      "text": "Echt? Dat is perfect!",
+      "translation": "Really? That's perfect!"
+    },
+    {
+      "role": "B",
+      "text": "Dan moet u alleen nog een kort formulier invullen.",
+      "translation": "Then you just need to fill out a short form."
+    },
+    {
+      "role": "A",
+      "text": "Oké, geen probleem.",
+      "translation": "Okay, no problem."
+    },
+    {
+      "role": "B",
+      "text": "Heeft u ook interesse in een persoonlijke trainer?",
+      "translation": "Are you also interested in a personal trainer?"
+    },
+    {
+      "role": "A",
+      "text": "Misschien later. Eerst wil ik zelf een beetje oefenen.",
+      "translation": "Maybe later. First, I want to practice a bit myself."
+    },
+    {
+      "role": "B",
+      "text": "Dat is helemaal prima.",
+      "translation": "That is completely fine."
+    },
+    {
+      "role": "A",
+      "text": "Bedankt voor de informatie.",
+      "translation": "Thanks for the information."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan! Welkom bij onze sportschool en veel succes met trainen.",
+      "translation": "You're welcome! Welcome to our gym and good luck with your training."
+    }
+  ]
+}

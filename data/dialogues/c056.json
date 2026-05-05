@@ -1,0 +1,101 @@
+{
+  "dialogue_title": "📱 “Mijn Telefoon Werkt Niet Meer” – Gesprek in een Telefoonwinkel",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/gRh0q6zEVv4",
+  "roles": {
+    "A": "Customer",
+    "B": "Staff Member"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, mijn telefoon werkt niet meer goed.",
+      "translation": "Good afternoon, my phone isn't working properly anymore."
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag. Wat is precies het probleem?",
+      "translation": "Good afternoon. What exactly is the problem?"
+    },
+    {
+      "role": "A",
+      "text": "Het scherm gaat steeds uit en soms reageert het helemaal niet.",
+      "translation": "The screen keeps turning off and sometimes it doesn't respond at all."
+    },
+    {
+      "role": "B",
+      "text": "Sinds wanneer heeft u dit probleem?",
+      "translation": "Since when have you had this problem?"
+    },
+    {
+      "role": "A",
+      "text": "Sinds gisteravond.",
+      "translation": "Since last night."
+    },
+    {
+      "role": "B",
+      "text": "Heeft de telefoon misschien een update gehad?",
+      "translation": "Did the phone perhaps have an update?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, ik denk dat er gisteren een update was.",
+      "translation": "Yes, I think there was an update yesterday."
+    },
+    {
+      "role": "B",
+      "text": "Dat kan soms problemen veroorzaken. Mag ik even naar uw telefoon kijken?",
+      "translation": "That can sometimes cause problems. May I take a look at your phone?"
+    },
+    {
+      "role": "A",
+      "text": "Natuurlijk, hier is-ie.",
+      "translation": "Of course, here it is."
+    },
+    {
+      "role": "B",
+      "text": "Dank u. Ik ga hem even testen. Ik zie dat het systeem een beetje vastloopt. Soms helpt een herstart of een software reset.",
+      "translation": "Thank you. I'm going to test it. I see the system is lagging a bit. Sometimes a restart or a software reset helps."
+    },
+    {
+      "role": "A",
+      "text": "Moet ik mijn gegevens dan opnieuw installeren?",
+      "translation": "Do I have to reinstall my data then?"
+    },
+    {
+      "role": "B",
+      "text": "Nee, meestal blijven uw gegevens gewoon bewaard.",
+      "translation": "No, usually your data is just preserved."
+    },
+    {
+      "role": "A",
+      "text": "Dat is goed om te horen.",
+      "translation": "That's good to hear."
+    },
+    {
+      "role": "B",
+      "text": "Ik kan het nu even voor u proberen te repareren.",
+      "translation": "I can try to repair it for you right now."
+    },
+    {
+      "role": "A",
+      "text": "Dat zou geweldig zijn.",
+      "translation": "That would be great."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem. Geef me een paar minuten.",
+      "translation": "No problem. Give me a few minutes."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel voor uw hulp.",
+      "translation": "Thank you very much for your help."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan.",
+      "translation": "You're welcome."
+    }
+  ]
+}

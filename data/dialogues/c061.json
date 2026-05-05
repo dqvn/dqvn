@@ -1,0 +1,96 @@
+{
+  "dialogue_title": "Gesprek met de Cabin Crew in het Vliegtuig – Nederlands Dialoog voor Reizigers",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/99Z7FVWOXzg",
+  "roles": {
+    "A": "Passenger",
+    "B": "Flight Attendant"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Excuseer mevrouw, mag ik u iets vragen?",
+      "translation": "Excuse me ma'am, may I ask you something?"
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk, hoe kan ik u helpen?",
+      "translation": "Of course, how can I help you?"
+    },
+    {
+      "role": "A",
+      "text": "Ik voel me een beetje duizelig. Is dat normaal tijdens een vlucht?",
+      "translation": "I feel a bit dizzy. Is that normal during a flight?"
+    },
+    {
+      "role": "B",
+      "text": "Dat kan soms gebeuren door de druk in het vliegtuig. Wilt u misschien wat water?",
+      "translation": "That can sometimes happen due to the pressure in the plane. Would you like some water?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, dat zou heel fijn zijn.",
+      "translation": "Yes, that would be very nice."
+    },
+    {
+      "role": "B",
+      "text": "Hier is een glas water. Probeer rustig te blijven zitten en diep adem te halen.",
+      "translation": "Here is a glass of water. Try to stay seated calmly and take deep breaths."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel. Ik denk dat ik gewoon een beetje moe ben.",
+      "translation": "Thank you. I think I'm just a bit tired."
+    },
+    {
+      "role": "B",
+      "text": "Dat kan ook. Heeft u vandaag genoeg gegeten?",
+      "translation": "That could be. Have you eaten enough today?"
+    },
+    {
+      "role": "A",
+      "text": "Niet echt. Ik had haast op de luchthaven.",
+      "translation": "Not really. I was in a hurry at the airport."
+    },
+    {
+      "role": "B",
+      "text": "Begrijpelijk. Wilt u misschien ook een kleine snack?",
+      "translation": "Understandable. Would you also like a small snack?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, dat zou helpen denk ik.",
+      "translation": "Yes, that would help I think."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem, ik breng u meteen iets.",
+      "translation": "No problem, I'll bring you something right away."
+    },
+    {
+      "role": "B",
+      "text": "Hier is een kleine snack. Voelt u zich al iets beter?",
+      "translation": "Here is a small snack. Do you feel a bit better already?"
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel. Ja, een beetje beter al. Bedankt voor uw hulp.",
+      "translation": "Thank you. Yes, a bit better already. Thanks for your help."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan. Als u zich weer niet goed voelt, laat het mij meteen weten.",
+      "translation": "You're welcome. If you feel unwell again, let me know immediately."
+    },
+    {
+      "role": "A",
+      "text": "Dat zal ik doen. Nogmaals bedankt.",
+      "translation": "I will do that. Thanks again."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem, daarvoor zijn we hier. Ik wens u een prettige vlucht.",
+      "translation": "No problem, that's what we're here for. I wish you a pleasant flight."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "dialogue_title": "Small Talk in het Nederlands: Gesprek in de Lift",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/GGVRlSQc_Xk",
+  "roles": {
+    "A": "Female Speaker",
+    "B": "Male Speaker"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen!",
+      "translation": "Good morning!"
+    },
+    {
+      "role": "B",
+      "text": "Goedemorgen! Naar welke verdieping gaat u?",
+      "translation": "Good morning! Which floor are you going to?"
+    },
+    {
+      "role": "A",
+      "text": "Naar de achtste verdieping, alstublieft. En u?",
+      "translation": "To the eighth floor, please. And you?"
+    },
+    {
+      "role": "B",
+      "text": "Ik ga naar de zesde. Het lijkt vandaag erg druk in het gebouw.",
+      "translation": "I'm going to the sixth. It seems very busy in the building today."
+    },
+    {
+      "role": "A",
+      "text": "Ja, dat klopt. Misschien omdat het maandag is.",
+      "translation": "Yes, that's right. Maybe because it's Monday."
+    },
+    {
+      "role": "B",
+      "text": "Waarschijnlijk wel. Werkt u hier al lang?",
+      "translation": "Probably. Have you worked here for long?"
+    },
+    {
+      "role": "A",
+      "text": "Ik werk bij een marketingbedrijf op de achtste verdieping.",
+      "translation": "I work at a marketing company on the eighth floor."
+    },
+    {
+      "role": "B",
+      "text": "Interessant! Ik ben hier pas begonnen. Het is mijn eerste week.",
+      "translation": "Interesting! I just started here. It's my first week."
+    },
+    {
+      "role": "A",
+      "text": "Echt? Welkom! Wat voor werk doet u?",
+      "translation": "Really? Welcome! What kind of work do you do?"
+    },
+    {
+      "role": "B",
+      "text": "Ik werk in de IT-afdeling van een nieuw project.",
+      "translation": "I work in the IT department of a new project."
+    },
+    {
+      "role": "A",
+      "text": "Dat klinkt spannend. Veel succes met uw eerste week!",
+      "translation": "That sounds exciting. Good luck with your first week!"
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel. Fijne dag verder!",
+      "translation": "Thank you. Have a nice day!"
+    },
+    {
+      "role": "A",
+      "text": "Voor u ook!",
+      "translation": "You too!"
+    }
+  ]
+}

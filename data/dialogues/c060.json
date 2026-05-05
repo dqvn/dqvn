@@ -1,0 +1,101 @@
+{
+  "dialogue_title": "Kind Aanmelden op School – Nederlands Gesprek tussen Ouder en School",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/N8LvyFHPEX8",
+  "roles": {
+    "A": "Ouder (Parent)",
+    "B": "Schoolmedewerker (School Staff)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen, ik wil graag mijn kind aanmelden op deze school.",
+      "translation": "Good morning, I would like to register my child at this school."
+    },
+    {
+      "role": "B",
+      "text": "Goedemorgen, natuurlijk dat kan. Hoe oud is uw kind?",
+      "translation": "Good morning, of course that is possible. How old is your child?"
+    },
+    {
+      "role": "A",
+      "text": "Mijn dochter is zes jaar oud.",
+      "translation": "My daughter is six years old."
+    },
+    {
+      "role": "B",
+      "text": "Prima, dan kan ze waarschijnlijk in groep drie beginnen. Heeft u al eerder contact gehad met onze school?",
+      "translation": "Great, then she can probably start in grade 3. Have you had contact with our school before?"
+    },
+    {
+      "role": "A",
+      "text": "Nee, dit is mijn eerste keer hier.",
+      "translation": "No, this is my first time here."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem, ik zal u uitleggen hoe de aanmelding werkt. Eerst moet u een formulier invullen.",
+      "translation": "No problem, I will explain to you how the registration works. First, you need to fill out a form."
+    },
+    {
+      "role": "A",
+      "text": "Oké, wat voor informatie heeft u nodig?",
+      "translation": "Okay, what kind of information do you need?"
+    },
+    {
+      "role": "B",
+      "text": "We hebben de naam van uw kind nodig, de geboortedatum, uw adres en een contactnummer.",
+      "translation": "We need your child's name, date of birth, your address, and a contact number."
+    },
+    {
+      "role": "A",
+      "text": "Dat is geen probleem. Moet ik ook documenten meenemen?",
+      "translation": "That’s no problem. Do I also need to bring any documents?"
+    },
+    {
+      "role": "B",
+      "text": "Ja graag, een kopie van het paspoort of identiteitsbewijs van uw kind.",
+      "translation": "Yes please, a copy of your child's passport or ID."
+    },
+    {
+      "role": "A",
+      "text": "Die heb ik gelukkig bij me.",
+      "translation": "Luckily, I have those with me."
+    },
+    {
+      "role": "B",
+      "text": "Perfect. Nadat u het formulier heeft ingevuld, plannen we ook een kennismakingsgesprek met de leraar.",
+      "translation": "Perfect. After you have filled out the form, we will also schedule an introductory meeting with the teacher."
+    },
+    {
+      "role": "A",
+      "text": "Dat klinkt goed. Wanneer kan mijn dochter beginnen?",
+      "translation": "That sounds good. When can my daughter start?"
+    },
+    {
+      "role": "B",
+      "text": "Als alles in orde is met de documenten, kan ze waarschijnlijk volgende maand al starten.",
+      "translation": "If everything is in order with the documents, she can probably start as soon as next month."
+    },
+    {
+      "role": "A",
+      "text": "Dat is geweldig nieuws! Mijn dochter kijkt er al naar uit.",
+      "translation": "That is great news! My daughter is already looking forward to it."
+    },
+    {
+      "role": "B",
+      "text": "Dat horen we graag. Als u vragen heeft, kunt u ons altijd bellen.",
+      "translation": "We're glad to hear that. If you have any questions, you can always call us."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel voor de informatie en uw hulp.",
+      "translation": "Thank you for the information and your help."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan. Welkom op onze school!",
+      "translation": "You're welcome. Welcome to our school!"
+    }
+  ]
+}

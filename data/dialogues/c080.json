@@ -1,0 +1,106 @@
+{
+  "dialogue_title": "Op het treinstation | Dutch Conversation A1–A2",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/D_Cnwfi4W-Y",
+  "roles": {
+    "A": "Reiziger",
+    "B": "Medewerker"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, kunt u mij helpen?",
+      "translation": "Good afternoon, can you help me?"
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk, waarmee kan ik u helpen?",
+      "translation": "Of course, how can I help you?"
+    },
+    {
+      "role": "A",
+      "text": "Ik wil graag naar Amsterdam reizen.",
+      "translation": "I would like to travel to Amsterdam."
+    },
+    {
+      "role": "B",
+      "text": "Wanneer wilt u vertrekken?",
+      "translation": "When would you like to leave?"
+    },
+    {
+      "role": "A",
+      "text": "Het liefst zo snel mogelijk.",
+      "translation": "As soon as possible, preferably."
+    },
+    {
+      "role": "B",
+      "text": "Er vertrekt over 10 minuten een trein naar Amsterdam.",
+      "translation": "A train to Amsterdam leaves in 10 minutes."
+    },
+    {
+      "role": "A",
+      "text": "Vanaf welk perron vertrekt de trein?",
+      "translation": "From which platform does the train depart?"
+    },
+    {
+      "role": "B",
+      "text": "De trein vertrekt vanaf perron 5.",
+      "translation": "The train departs from platform 5."
+    },
+    {
+      "role": "A",
+      "text": "Moet ik overstappen?",
+      "translation": "Do I have to change trains?"
+    },
+    {
+      "role": "B",
+      "text": "Nee, het is een directe trein.",
+      "translation": "No, it is a direct train."
+    },
+    {
+      "role": "A",
+      "text": "Dat is fijn. Hoe lang duurt de reis?",
+      "translation": "That's nice. How long is the journey?"
+    },
+    {
+      "role": "B",
+      "text": "Ongeveer één uur.",
+      "translation": "About one hour."
+    },
+    {
+      "role": "A",
+      "text": "Oké. Waar kan ik een kaartje kopen?",
+      "translation": "Okay. Where can I buy a ticket?"
+    },
+    {
+      "role": "B",
+      "text": "U kunt een kaartje kopen bij de automaat daar.",
+      "translation": "You can buy a ticket at the machine over there."
+    },
+    {
+      "role": "A",
+      "text": "Kan ik ook met mijn pinpas betalen?",
+      "translation": "Can I also pay with my debit card?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, dat kan.",
+      "translation": "Yes, that's possible."
+    },
+    {
+      "role": "A",
+      "text": "Perfect. Bedankt voor uw hulp.",
+      "translation": "Perfect. Thanks for your help."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan. Fijne reis!",
+      "translation": "You're welcome. Have a nice trip!"
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel.",
+      "translation": "Thank you."
+    }
+  ]
+}
