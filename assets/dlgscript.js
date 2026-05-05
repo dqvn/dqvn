@@ -184,7 +184,7 @@ function renderConv(activeLine = -1, doneUpTo = -1) {
 
         const showFull = !myRole || isMyL || isAct || isDone;
         const body = showFull
-            ? `<div class="c-text">${esc(line.text)}</div><div class="c-trans">${esc(line.translation)}</div>`
+            ? `<div class="c-text">${esc(line.text)}</div><div class="c-trans">${esc(line.translation)}</div><div class="c-wave"><span></span><span></span><span></span><span></span><span></span></div>`
             : `<div class="c-wait"><div class="c-dots"><span></span><span></span><span></span></div>
                <span>${esc(current.roles[line.role] || line.role)} aan het woord…</span></div>`;
 
@@ -212,7 +212,7 @@ function updateConv(activeLine) {
 
         if ((isAct || isDone) && el.querySelector('.c-wait')) {
             el.querySelector('.c-body').innerHTML =
-                `<div class="c-text">${esc(line.text)}</div><div class="c-trans">${esc(line.translation)}</div>`;
+                `<div class="c-text">${esc(line.text)}</div><div class="c-trans">${esc(line.translation)}</div><div class="c-wave"><span></span><span></span><span></span><span></span><span></span></div>`;
         }
     });
 }
@@ -396,6 +396,35 @@ const resetProg = () => { document.getElementById('prog-bar').style.width = '0%'
 const SHOW_AS = { 'btn-done': 'block', 'btn-start': 'block', 'btn-repeat': 'flex', 'btn-stop': 'flex' };
 const show = id => { document.getElementById(id).style.display = SHOW_AS[id] || 'flex'; };
 const hide = id => { document.getElementById(id).style.display = 'none'; };
+
+/* ─── Click-to-listen on conversation lines ─── */
+// Uses event delegation so it works after any DOM update (updateConv, renderConv).
+document.getElementById('conv-list').addEventListener('click', e => {
+    const textEl = e.target.closest('.c-text');
+    if (!textEl) return;
+    const lineEl = textEl.closest('.c-line');
+    if (!lineEl || !current) return;
+    const idx = parseInt(lineEl.id.replace('cl-', ''), 10);
+    if (isNaN(idx)) return;
+    const line = current.conversation[idx];
+    if (!line) return;
+    speakPreview(line.text, textEl.parentElement.querySelector('.c-wave'));
+});
+
+function speakPreview(text, waveEl) {
+    // Don't interrupt solo TTS while it is actively speaking (waitUser = paused is fine)
+    if (tts.active && !tts.waitUser) return;
+    // Clear any other in-progress preview wave
+    document.querySelectorAll('.c-wave.playing').forEach(w => w.classList.remove('playing'));
+    speechSynthesis.cancel();
+    if (!waveEl) return;
+    waveEl.classList.add('playing');
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'nl-NL'; u.rate = ttsSpeed; u.pitch = 1;
+    if (nlVoice) u.voice = nlVoice;
+    u.onend = u.onerror = () => waveEl.classList.remove('playing');
+    speechSynthesis.speak(u);
+}
 
 /* ─── Keyboard shortcuts ─── */
 document.addEventListener('keydown', e => {
