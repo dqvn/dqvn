@@ -10,15 +10,34 @@
 
 <body>
 
-  <!-- ── Sidebar ── -->
+  <!-- ── Mobile top bar (hidden on desktop) ── -->
+  <div id="mob-bar">
+    <button class="mob-ico" id="mob-menu-btn" aria-label="Open dialogen">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <span id="mob-cur">🇳🇱 &nbsp;Kies een dialoog</span>
+    <button class="mob-ico" id="mob-search-btn" aria-label="Zoeken">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg>
+    </button>
+  </div>
+  <div id="drawer-overlay"></div>
+
+  <!-- ── Sidebar (desktop: left panel · mobile: bottom drawer) ── -->
   <nav id="sidebar">
+    <div class="sb-drag-handle"></div>
     <div class="sb-logo">
       <h1>🇳🇱 Dialoog Oefenen</h1>
       <p>Dutch Dialogue Practice</p>
     </div>
+    <!-- Search -->
+    <div id="sb-search">
+      <svg class="sb-ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="search" id="search-input" placeholder="Zoek dialoog / Search…" autocomplete="off" />
+      <button id="search-clear" class="sb-clear-btn" aria-label="Wis zoekopdracht">✕</button>
+    </div>
     <div id="dlg-list">
       <div class="sb-load">
-        <div class="spin"></div> Laden...
+        <div class="spin"></div> Laden…
       </div>
     </div>
   </nav>
@@ -31,10 +50,9 @@
       <div id="welcome">
         <div class="flag">🇳🇱</div>
         <h2>Kies een dialoog</h2>
-        <p>Select a dialogue from the left menu to start practising Dutch conversations.</p>
+        <p>Select a dialogue from the menu to start practising Dutch conversations.</p>
         <div class="notice" id="file-notice" style="display:none">
-          ⚠️ Best served via a local web server (e.g. <code>npx serve .</code>).
-          File:// access may be blocked by some browsers.
+          ⚠️ Gebruik een lokale webserver (bijv. <code>npx serve .</code>) voor het beste resultaat.
         </div>
       </div>
 
@@ -45,9 +63,7 @@
         <div class="card" id="hdr">
           <div id="yt-wrap">
             <div id="yt-ph">
-              <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
-                <path d="M8 5v14l11-7z" />
-              </svg>
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
               <span>Video</span>
             </div>
           </div>
@@ -67,16 +83,16 @@
                 <span class="sw-track"></span>
               </label>
               <div class="mode-lbl">
-                <b>Solo Practice (TTS)</b>
-                <em>Practice alone — TTS reads the other role(s) for you</em>
+                <b>🎙️ Solo Practice</b>
+                <em>TTS reads the other role(s) for you</em>
               </div>
             </div>
 
             <div id="speed-row">
-              <span>Speed:</span>
-              <button class="spd-btn" data-spd="0.6">🐢 Slow</button>
-              <button class="spd-btn spd-on" data-spd="0.88">🚶 Normal</button>
-              <button class="spd-btn" data-spd="1.1">🏃 Fast</button>
+              <span>🔊</span>
+              <button class="spd-btn" data-spd="0.6">🐢</button>
+              <button class="spd-btn spd-on" data-spd="0.88">🚶</button>
+              <button class="spd-btn" data-spd="1.1">🏃</button>
             </div>
           </div>
         </div>
@@ -92,30 +108,29 @@
 
     <!-- TTS sticky bar -->
     <div id="tts-bar">
-      <div id="prog-wrap">
-        <div id="prog-bar"></div>
-      </div>
-      <div id="tts-status-row">
+      <div id="prog-wrap"><div id="prog-bar"></div></div>
+      <div id="tts-top">
         <div class="wave" id="wave"><span></span><span></span><span></span><span></span><span></span></div>
         <span id="tts-msg">Klaar om te beginnen</span>
+        <button id="btn-repeat" class="tts-ico-btn" title="Herhaal (R)" style="display:none">🔁</button>
+        <button id="btn-stop" class="tts-ico-btn tts-ico-stop" style="display:none">⏹</button>
       </div>
-      <button id="btn-done">✅ &nbsp;Klaar! &nbsp;·&nbsp; Done — my turn</button>
-      <div id="tts-row2">
-        <button id="btn-start">▶ &nbsp;Start Solo Practice</button>
-        <button id="btn-repeat" title="Repeat last TTS line (R)">🔁 Herhaal</button>
-        <button id="btn-stop">⏹ Stop</button>
-      </div>
-      <div id="tts-hint">Keyboard: <b>Space</b> = Done &nbsp;|&nbsp; <b>R</b> = Repeat last line</div>
+      <button id="btn-done">✅ &nbsp;Klaar! — Done</button>
+      <button id="btn-start">▶ &nbsp;Start Solo Practice</button>
+      <div id="tts-hint">⌨️ <b>Space</b> = Done &nbsp;·&nbsp; <b>R</b> = Herhaal</div>
     </div>
   </div><!-- #content -->
 
   <!-- Celebration overlay -->
   <div id="celebrate">
     <div class="cel-box">
-      <div class="cel-icon">🎉</div>
-      <h2>Geweldig gedaan!</h2>
-      <p>You completed the full dialogue.<br>Uitstekend Nederlands!</p>
-      <button class="btn-again" id="btn-again">▶ Practice Again</button>
+      <div class="cel-emoji">🎉🏆🎊</div>
+      <div class="cel-title">Geweldig!</div>
+      <div class="cel-sub">Uitstekend Nederlands!</div>
+      <div class="cel-btns">
+        <button class="btn-again" id="btn-again">🔁 Nog een keer</button>
+        <button class="btn-cel-close" id="btn-cel-close">✕</button>
+      </div>
     </div>
   </div>
 
