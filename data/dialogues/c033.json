@@ -1,0 +1,86 @@
+{
+  "dialogue_title": "Hotel Room Complaint",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/0drCUKKu5C0",
+  "roles": {
+    "A": "Guest",
+    "B": "Hotel Receptionist"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, ik heb een probleem met mijn kamer.",
+      "translation": "Good afternoon, I have a problem with my room."
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag, wat is er aan de hand?",
+      "translation": "Good afternoon, what's the matter?"
+    },
+    {
+      "role": "A",
+      "text": "De kamer is niet schoon en de airconditioning werkt niet.",
+      "translation": "The room is not clean and the air conditioning doesn't work."
+    },
+    {
+      "role": "B",
+      "text": "Dat is vervelend om te horen. Sinds wanneer heeft u dit probleem?",
+      "translation": "I'm sorry to hear that. How long have you had this problem?"
+    },
+    {
+      "role": "A",
+      "text": "Vanaf het moment dat ik binnenkwam.",
+      "translation": "From the moment I walked in."
+    },
+    {
+      "role": "B",
+      "text": "Mijn excuses voor het ongemak.",
+      "translation": "I apologize for the inconvenience."
+    },
+    {
+      "role": "A",
+      "text": "Kunt u hier iets aan doen?",
+      "translation": "Can you do something about this?"
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk. We kunnen iemand sturen om het schoon te maken of u een andere kamer geven.",
+      "translation": "Of course. We can send someone to clean it or give you another room."
+    },
+    {
+      "role": "A",
+      "text": "Ik zou liever een andere kamer willen.",
+      "translation": "I would prefer a different room."
+    },
+    {
+      "role": "B",
+      "text": "Dat is geen probleem. Ik kijk meteen of er een kamer beschikbaar is.",
+      "translation": "That's no problem. I'll check right away if there's a room available."
+    },
+    {
+      "role": "B",
+      "text": "Ja, we hebben een andere kamer voor u.",
+      "translation": "Yes, we have another room for you."
+    },
+    {
+      "role": "A",
+      "text": "Perfect, dank u wel.",
+      "translation": "Perfect, thank you very much."
+    },
+    {
+      "role": "B",
+      "text": "Hier is uw nieuwe sleutelkaart.",
+      "translation": "Here is your new key card."
+    },
+    {
+      "role": "A",
+      "text": "Bedankt voor de snelle hulp.",
+      "translation": "Thanks for the quick help."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan, we wensen u een prettig verblijf.",
+      "translation": "You're welcome, we wish you a pleasant stay."
+    }
+  ]
+}

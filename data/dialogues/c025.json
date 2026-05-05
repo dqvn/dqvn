@@ -1,0 +1,81 @@
+{
+  "dialogue_title": "🏠 “Een Huis Bezichtigen” – Gesprek met een Makelaar",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/mN_g5oYBUFs",
+  "roles": {
+    "A": "Potential Buyer",
+    "B": "Real Estate Agent"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, bedankt dat ik het huis mag bekijken.",
+      "translation": "Good afternoon, thank you for letting me view the house."
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag! Natuurlijk, welkom.",
+      "translation": "Good afternoon! Of course, welcome."
+    },
+    {
+      "role": "A",
+      "text": "Het ziet er mooi uit. Hoeveel kamers heeft het huis?",
+      "translation": "It looks beautiful. How many rooms does the house have?"
+    },
+    {
+      "role": "B",
+      "text": "Het heeft drie slaapkamers en een grote woonkamer.",
+      "translation": "It has three bedrooms and a large living room."
+    },
+    {
+      "role": "A",
+      "text": "Dat klinkt goed.",
+      "translation": "That sounds good."
+    },
+    {
+      "role": "B",
+      "text": "Wilt u ook de keuken zien?",
+      "translation": "Would you also like to see the kitchen?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, graag.",
+      "translation": "Yes, please."
+    },
+    {
+      "role": "B",
+      "text": "De keuken is modern en volledig uitgerust.",
+      "translation": "The kitchen is modern and fully equipped."
+    },
+    {
+      "role": "A",
+      "text": "Mooi! En hoe zit het met de prijs?",
+      "translation": "Beautiful! And what about the price?"
+    },
+    {
+      "role": "B",
+      "text": "De vraagprijs is €300.000.",
+      "translation": "The asking price is €300,000."
+    },
+    {
+      "role": "A",
+      "text": "Oké, ik ga erover nadenken.",
+      "translation": "Okay, I'm going to think about it."
+    },
+    {
+      "role": "B",
+      "text": "Neem gerust de tijd.",
+      "translation": "Take your time."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel voor de rondleiding.",
+      "translation": "Thank you for the tour."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan!",
+      "translation": "You're welcome!"
+    }
+  ]
+}

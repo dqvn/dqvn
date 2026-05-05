@@ -1,0 +1,101 @@
+{
+  "dialogue_title": "Cadeau Kopen – Nederlands Gesprek in een Winkel",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/B9rl03ocVq4",
+  "roles": {
+    "A": "Customer",
+    "B": "Shop Assistant"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, ik ben op zoek naar een cadeau.",
+      "translation": "Good afternoon, I am looking for a gift."
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag, voor welke gelegenheid?",
+      "translation": "Good afternoon, for what occasion?"
+    },
+    {
+      "role": "A",
+      "text": "Voor een verjaardag.",
+      "translation": "For a birthday."
+    },
+    {
+      "role": "B",
+      "text": "Oké, voor wie is het cadeau?",
+      "translation": "Okay, who is the gift for?"
+    },
+    {
+      "role": "A",
+      "text": "Voor mijn vriendin.",
+      "translation": "For my girlfriend."
+    },
+    {
+      "role": "B",
+      "text": "Heeft u een idee wat ze leuk vindt?",
+      "translation": "Do you have an idea of what she likes?"
+    },
+    {
+      "role": "A",
+      "text": "Ze houdt van kleine decoraties en geurkaarsen.",
+      "translation": "She likes small decorations and scented candles."
+    },
+    {
+      "role": "B",
+      "text": "Dan heb ik hier een paar mooie opties.",
+      "translation": "Then I have a few nice options here."
+    },
+    {
+      "role": "A",
+      "text": "Die zien er goed uit.",
+      "translation": "Those look good."
+    },
+    {
+      "role": "B",
+      "text": "Deze kaars is erg populair en ruikt heerlijk.",
+      "translation": "This candle is very popular and smells delicious."
+    },
+    {
+      "role": "A",
+      "text": "Ja, die vind ik leuk.",
+      "translation": "Yes, I like that one."
+    },
+    {
+      "role": "B",
+      "text": "Wilt u er ook een kaart bij?",
+      "translation": "Would you also like a card with it?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, dat is een goed idee.",
+      "translation": "Yes, that's a good idea."
+    },
+    {
+      "role": "B",
+      "text": "Zal ik het als cadeau inpakken?",
+      "translation": "Shall I wrap it as a gift?"
+    },
+    {
+      "role": "A",
+      "text": "Graag.",
+      "translation": "Please."
+    },
+    {
+      "role": "B",
+      "text": "Dat komt in orde.",
+      "translation": "That will be taken care of."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel voor de hulp.",
+      "translation": "Thank you very much for the help."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan.",
+      "translation": "You're welcome."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "dialogue_title": "Afspreken met een Vriend – Nederlands Gesprek in een Café",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/FmlE2f-5SNc",
+  "roles": {
+    "A": "Man",
+    "B": "Emma"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Hé, lang niet gezien!",
+      "translation": "Hey, long time no see!"
+    },
+    {
+      "role": "B",
+      "text": "Emma, ja echt lang geleden. Hoe gaat het met je?",
+      "translation": "Emma, yeah it's been a long time. How are you?"
+    },
+    {
+      "role": "A",
+      "text": "Goed! En met jou?",
+      "translation": "Good! And you?"
+    },
+    {
+      "role": "B",
+      "text": "Ook goed. Ik heb je gemist.",
+      "translation": "Also good. I missed you."
+    },
+    {
+      "role": "A",
+      "text": "Ik jou ook. Wil je iets drinken?",
+      "translation": "I missed you too. Would you like something to drink?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, graag. Misschien een koffie?",
+      "translation": "Yes, please. Maybe a coffee?"
+    },
+    {
+      "role": "A",
+      "text": "Goede keuze. Wat heb je de laatste tijd gedaan?",
+      "translation": "Good choice. What have you been doing lately?"
+    },
+    {
+      "role": "B",
+      "text": "Ik ben veel bezig geweest met werk.",
+      "translation": "I've been very busy with work."
+    },
+    {
+      "role": "A",
+      "text": "Ja, ik ook. Het was druk.",
+      "translation": "Yeah, me too. It's been busy."
+    },
+    {
+      "role": "B",
+      "text": "Daarom is het fijn om even te ontspannen.",
+      "translation": "That's why it's nice to relax for a bit."
+    },
+    {
+      "role": "A",
+      "text": "Zeker weten. We moeten dit vaker doen.",
+      "translation": "Definitely. We should do this more often."
+    },
+    {
+      "role": "B",
+      "text": "Absoluut! Volgende week weer?",
+      "translation": "Absolutely! Again next week?"
+    },
+    {
+      "role": "A",
+      "text": "Deal!",
+      "translation": "Deal!"
+    }
+  ]
+}

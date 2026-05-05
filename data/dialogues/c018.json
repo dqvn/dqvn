@@ -1,0 +1,81 @@
+{
+  "dialogue_title": "Praten met de Leraar – Nederlands Gesprek op School",
+  "language": "Dutch",
+  "video_url": "www.youtube.com/shorts/cDksCZ2Yudg",
+  "roles": {
+    "A": "Leraar",
+    "B": "Student"
+  },
+  "conversation": [
+    {
+      "role": "B",
+      "text": "Mevrouw, mag ik iets vragen?",
+      "translation": "Madam, may I ask something?"
+    },
+    {
+      "role": "A",
+      "text": "Natuurlijk, wat is er?",
+      "translation": "Of course, what is it?"
+    },
+    {
+      "role": "B",
+      "text": "Ik begrijp de opdracht niet helemaal.",
+      "translation": "I don't fully understand the assignment."
+    },
+    {
+      "role": "A",
+      "text": "Geen probleem, ik leg het nog eens uit.",
+      "translation": "No problem, I'll explain it again."
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel.",
+      "translation": "Thank you."
+    },
+    {
+      "role": "A",
+      "text": "Je moet eerst de tekst lezen en daarna de vragen beantwoorden.",
+      "translation": "First you have to read the text and then answer the questions."
+    },
+    {
+      "role": "B",
+      "text": "Oké, en moet ik alles opschrijven?",
+      "translation": "Okay, and do I have to write everything down?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, graag in volledige zinnen.",
+      "translation": "Yes, please in complete sentences."
+    },
+    {
+      "role": "B",
+      "text": "Dat is duidelijk.",
+      "translation": "That is clear."
+    },
+    {
+      "role": "A",
+      "text": "Heb je nog andere vragen?",
+      "translation": "Do you have any other questions?"
+    },
+    {
+      "role": "B",
+      "text": "Nee, dat was het.",
+      "translation": "No, that's it."
+    },
+    {
+      "role": "A",
+      "text": "Goed zo! Succes met je werk.",
+      "translation": "Good! Good luck with your work."
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel.",
+      "translation": "Thank you."
+    },
+    {
+      "role": "A",
+      "text": "Graag gedaan.",
+      "translation": "You're welcome."
+    }
+  ]
+}

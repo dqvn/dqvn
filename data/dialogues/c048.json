@@ -1,0 +1,106 @@
+{
+  "dialogue_title": "Sollicitatiegesprek in het Nederlands – Realistisch Jobinterview",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/USO9XVk1svc",
+  "roles": {
+    "A": "Interviewer",
+    "B": "Emma (Job Applicant)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen, welkom! Fijn dat u er bent.",
+      "translation": "Good morning, welcome! It's good to have you here."
+    },
+    {
+      "role": "B",
+      "text": "Goedemorgen, dank u wel voor de uitnodiging.",
+      "translation": "Good morning, thank you for the invitation."
+    },
+    {
+      "role": "A",
+      "text": "Kunt u uzelf kort voorstellen?",
+      "translation": "Could you briefly introduce yourself?"
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk. Mijn naam is Emma en ik heb 3 jaar ervaring in marketing.",
+      "translation": "Of course. My name is Emma and I have 3 years of experience in marketing."
+    },
+    {
+      "role": "A",
+      "text": "Interessant. Wat motiveert u om bij ons bedrijf te solliciteren?",
+      "translation": "Interesting. What motivates you to apply to our company?"
+    },
+    {
+      "role": "B",
+      "text": "Ik vind de projecten die jullie doen erg inspirerend en ik denk dat ik hier veel kan bijdragen.",
+      "translation": "I find the projects you do very inspiring and I think I can contribute a lot here."
+    },
+    {
+      "role": "A",
+      "text": "Dat klinkt goed. Wat zijn uw sterke punten?",
+      "translation": "That sounds good. What are your strengths?"
+    },
+    {
+      "role": "B",
+      "text": "Ik werk gestructureerd, ben creatief en ik kan goed samenwerken in een team.",
+      "translation": "I work in a structured way, I am creative, and I work well in a team."
+    },
+    {
+      "role": "A",
+      "text": "En waar wilt u zich nog in ontwikkelen?",
+      "translation": "And in what areas would you still like to develop?"
+    },
+    {
+      "role": "B",
+      "text": "Ik wil graag mijn leiderschapsvaardigheden verder ontwikkelen.",
+      "translation": "I would like to further develop my leadership skills."
+    },
+    {
+      "role": "A",
+      "text": "Begrijpelijk. Heeft u ook ervaring met projectmanagement?",
+      "translation": "Understandable. Do you also have experience with project management?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, ik heb verschillende projecten geleid en deadlines gehaald.",
+      "translation": "Yes, I have led various projects and met deadlines."
+    },
+    {
+      "role": "A",
+      "text": "Dat is een groot pluspunt. Heeft u nog vragen voor ons?",
+      "translation": "That is a big plus. Do you have any questions for us?"
+    },
+    {
+      "role": "B",
+      "text": "Ja. Hoe ziet een normale werkdag er hier uit?",
+      "translation": "Yes. What does a normal workday look like here?"
+    },
+    {
+      "role": "A",
+      "text": "Dat hangt af van het project, maar we werken flexibel en in teams.",
+      "translation": "That depends on the project, but we work flexibly and in teams."
+    },
+    {
+      "role": "B",
+      "text": "Dat klinkt precies wat ik zoek.",
+      "translation": "That sounds like exactly what I am looking for."
+    },
+    {
+      "role": "A",
+      "text": "Mooi. We nemen binnenkort contact met u op.",
+      "translation": "Great. We will contact you soon."
+    },
+    {
+      "role": "B",
+      "text": "Hartelijk dank voor uw tijd.",
+      "translation": "Thank you very much for your time."
+    },
+    {
+      "role": "A",
+      "text": "Graag gedaan.",
+      "translation": "You're welcome."
+    }
+  ]
+}

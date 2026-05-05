@@ -1,0 +1,76 @@
+{
+  "dialogue_title": "Bij de Kapper – Realistische Nederlandse Conversatie in de Kapsalon",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/xvVgYhudhDk",
+  "roles": {
+    "A": "Kapper (Hairdresser)",
+    "B": "Klant (Customer)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Wat wilt u vandaag laten doen?",
+      "translation": "What would you like to have done today?"
+    },
+    {
+      "role": "B",
+      "text": "Ik wil graag de puntjes laten knippen en mijn haar een beetje in model brengen.",
+      "translation": "I’d like to have my ends trimmed and my hair styled a bit."
+    },
+    {
+      "role": "A",
+      "text": "Natuurlijk. Wilt u ook dat ik het was?",
+      "translation": "Of course. Would you like me to wash it as well?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, graag.",
+      "translation": "Yes, please."
+    },
+    {
+      "role": "A",
+      "text": "Heeft u een voorkeur voor een bepaalde stijl?",
+      "translation": "Do you have a preference for a particular style?"
+    },
+    {
+      "role": "B",
+      "text": "Niet echt. Gewoon natuurlijk en niet te kort.",
+      "translation": "Not really. Just natural and not too short."
+    },
+    {
+      "role": "A",
+      "text": "Prima. Ik maak het mooi in model, maar niet te drastisch.",
+      "translation": "Great. I'll style it nicely, but nothing too drastic."
+    },
+    {
+      "role": "B",
+      "text": "Dat klinkt goed.",
+      "translation": "That sounds good."
+    },
+    {
+      "role": "A",
+      "text": "Gebruikt u normaal stylingproducten?",
+      "translation": "Do you normally use styling products?"
+    },
+    {
+      "role": "B",
+      "text": "Soms, maar niet elke dag.",
+      "translation": "Sometimes, but not every day."
+    },
+    {
+      "role": "A",
+      "text": "Oké, dan hou ik het eenvoudig en natuurlijk.",
+      "translation": "Okay, then I’ll keep it simple and natural."
+    },
+    {
+      "role": "B",
+      "text": "Perfect, dank u wel.",
+      "translation": "Perfect, thank you."
+    },
+    {
+      "role": "A",
+      "text": "Graag gedaan. Dan beginnen we.",
+      "translation": "You're welcome. Let's get started."
+    }
+  ]
+}

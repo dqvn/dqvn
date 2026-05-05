@@ -1,0 +1,86 @@
+{
+  "dialogue_title": "Weekendplannen Bespreken",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/NdoICDaxvdg",
+  "roles": {
+    "A": "Vrouw",
+    "B": "Man"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Hé, heb je al plannen voor het weekend?",
+      "translation": "Hey, do you have any plans for the weekend yet?"
+    },
+    {
+      "role": "B",
+      "text": "Nog niet echt. Ik dacht eraan om iets leuks te doen. En jij?",
+      "translation": "Not really. I was thinking about doing something fun. And you?"
+    },
+    {
+      "role": "A",
+      "text": "Ik wil misschien naar de stad gaan en een beetje shoppen.",
+      "translation": "I might want to go to the city and do some shopping."
+    },
+    {
+      "role": "B",
+      "text": "Klinkt goed. Ga je alleen?",
+      "translation": "Sounds good. Are you going alone?"
+    },
+    {
+      "role": "A",
+      "text": "Ik dacht eigenlijk om iemand mee te vragen.",
+      "translation": "Actually, I was thinking of asking someone to come along."
+    },
+    {
+      "role": "B",
+      "text": "Misschien kan ik wel mee? Ik heb toch nog niets gepland.",
+      "translation": "Maybe I can come along? I haven't planned anything yet anyway."
+    },
+    {
+      "role": "A",
+      "text": "Echt? Dat zou leuk zijn!",
+      "translation": "Really? That would be fun!"
+    },
+    {
+      "role": "B",
+      "text": "Ja, waarom niet? We kunnen daarna ook ergens iets eten.",
+      "translation": "Yeah, why not? We could also grab a bite to eat somewhere afterwards."
+    },
+    {
+      "role": "A",
+      "text": "Goed idee! Ken je een leuk restaurant?",
+      "translation": "Great idea! Do you know a nice restaurant?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, er is een nieuw restaurant in het centrum dat schijnt heel goed te zijn.",
+      "translation": "Yes, there's a new restaurant in the city center that's supposed to be very good."
+    },
+    {
+      "role": "A",
+      "text": "Perfect, laten we dat doen! Hoe laat wil je afspreken?",
+      "translation": "Perfect, let's do that! What time do you want to meet?"
+    },
+    {
+      "role": "B",
+      "text": "Misschien rond twee uur?",
+      "translation": "Maybe around two o'clock?"
+    },
+    {
+      "role": "A",
+      "text": "Dat is prima voor mij.",
+      "translation": "That's fine with me."
+    },
+    {
+      "role": "B",
+      "text": "Oké, dan zie ik je zaterdag.",
+      "translation": "Okay, then I'll see you on Saturday."
+    },
+    {
+      "role": "A",
+      "text": "Top! Tot dan!",
+      "translation": "Great! See you then!"
+    }
+  ]
+}

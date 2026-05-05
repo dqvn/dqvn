@@ -1,0 +1,91 @@
+{
+  "dialogue_title": "Tafel Reserveren in een Restaurant – Nederlands Gesprek aan de Telefoon",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/gls6XfqY74g",
+  "roles": {
+    "A": "Restaurantmedewerker",
+    "B": "Klant"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, restaurant De Brug. Waarmee kan ik u helpen?",
+      "translation": "Good afternoon, restaurant De Brug. How can I help you?"
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag, ik wil graag een tafel reserveren voor vanavond.",
+      "translation": "Good afternoon, I would like to reserve a table for tonight."
+    },
+    {
+      "role": "A",
+      "text": "Natuurlijk, voor hoeveel personen?",
+      "translation": "Of course, for how many people?"
+    },
+    {
+      "role": "B",
+      "text": "Voor twee personen.",
+      "translation": "For two people."
+    },
+    {
+      "role": "A",
+      "text": "En hoe laat wilt u komen?",
+      "translation": "And what time would you like to come?"
+    },
+    {
+      "role": "B",
+      "text": "Rond zeven uur, als dat mogelijk is.",
+      "translation": "Around seven o'clock, if that's possible."
+    },
+    {
+      "role": "A",
+      "text": "Momentje, ik kijk even. Ja, om zeven uur is er nog een tafel vrij.",
+      "translation": "One moment, let me check. Yes, there is still a table available at seven o'clock."
+    },
+    {
+      "role": "B",
+      "text": "Perfect.",
+      "translation": "Perfect."
+    },
+    {
+      "role": "A",
+      "text": "Mag ik een naam voor de reservering?",
+      "translation": "May I have a name for the reservation?"
+    },
+    {
+      "role": "B",
+      "text": "De Vries.",
+      "translation": "De Vries."
+    },
+    {
+      "role": "A",
+      "text": "Dank u. Wilt u binnen of op het terras zitten?",
+      "translation": "Thank you. Would you like to sit inside or on the terrace?"
+    },
+    {
+      "role": "B",
+      "text": "Graag binnen.",
+      "translation": "Inside, please."
+    },
+    {
+      "role": "A",
+      "text": "Geen probleem. Uw tafel is gereserveerd om 19:00 uur.",
+      "translation": "No problem. Your table is reserved for 7:00 PM."
+    },
+    {
+      "role": "B",
+      "text": "Heel erg bedankt.",
+      "translation": "Thank you very much."
+    },
+    {
+      "role": "A",
+      "text": "Graag gedaan. We zien u vanavond graag. Een fijne dag nog.",
+      "translation": "You're welcome. We look forward to seeing you tonight. Have a nice day."
+    },
+    {
+      "role": "B",
+      "text": "Bedankt. Tot vanavond!",
+      "translation": "Thanks. See you tonight!"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "dialogue_title": "Bankrekening Openen – Nederlands Gesprek bij de Bank",
+  "language": "Dutch",
+  "video_url": "www.youtube.com/shorts/MxU1l5rzd58",
+  "roles": {
+    "A": "Vrouw",
+    "B": "Bankmedewerker"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, ik wil graag een bankrekening openen.",
+      "translation": "Good afternoon, I would like to open a bank account."
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag, dat kan. Heeft u een identiteitsbewijs bij u?",
+      "translation": "Good afternoon, that's possible. Do you have an ID with you?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, hier is mijn paspoort.",
+      "translation": "Yes, here is my passport."
+    },
+    {
+      "role": "B",
+      "text": "Dank u. Woont u in Nederland?",
+      "translation": "Thank you. Do you live in the Netherlands?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, sinds kort.",
+      "translation": "Yes, since recently."
+    },
+    {
+      "role": "B",
+      "text": "Oké. Wilt u een betaalrekening of ook een spaarrekening?",
+      "translation": "Okay. Would you like a current account or also a savings account?"
+    },
+    {
+      "role": "A",
+      "text": "Alleen een betaalrekening.",
+      "translation": "Only a current account."
+    },
+    {
+      "role": "B",
+      "text": "Prima. Ik heb nog een paar gegevens nodig.",
+      "translation": "Perfect. I still need some details."
+    },
+    {
+      "role": "A",
+      "text": "Natuurlijk.",
+      "translation": "Of course."
+    },
+    {
+      "role": "B",
+      "text": "Wat is uw adres?",
+      "translation": "What is your address?"
+    },
+    {
+      "role": "A",
+      "text": "Ik woon op de Kerkstraat 12.",
+      "translation": "I live at Kerkstraat 12."
+    },
+    {
+      "role": "B",
+      "text": "Dank u. U moet hier even tekenen.",
+      "translation": "Thank you. Please sign here."
+    },
+    {
+      "role": "A",
+      "text": "Oké.",
+      "translation": "Okay."
+    },
+    {
+      "role": "B",
+      "text": "De rekening is nu geopend.",
+      "translation": "Your account is now opened."
+    },
+    {
+      "role": "A",
+      "text": "Perfect, dank u wel.",
+      "translation": "Perfect, thank you."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan.",
+      "translation": "You're welcome."
+    }
+  ]
+}

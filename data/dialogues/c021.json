@@ -1,0 +1,81 @@
+{
+  "dialogue_title": "De Kinderen Zijn Te Luid – Gesprek met de Buren",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/NibLJcaHiUM",
+  "roles": {
+    "A": "Neighbor (Man)",
+    "B": "Neighbor (Woman)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, mag ik even met u praten?",
+      "translation": "Good afternoon, may I talk to you for a moment?"
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk, wat is er?",
+      "translation": "Of course, what is it?"
+    },
+    {
+      "role": "A",
+      "text": "Het gaat om het geluid van de kinderen.",
+      "translation": "It's about the noise from the children."
+    },
+    {
+      "role": "B",
+      "text": "Oh, maken ze te veel lawaai?",
+      "translation": "Oh, are they making too much noise?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, vooral in de avond is het soms erg luid.",
+      "translation": "Yes, especially in the evening it can be quite loud."
+    },
+    {
+      "role": "B",
+      "text": "Dat spijt me, dat was niet onze bedoeling.",
+      "translation": "I'm sorry, that was not our intention."
+    },
+    {
+      "role": "A",
+      "text": "Ik begrijp het, maar het is soms moeilijk om te werken.",
+      "translation": "I understand, but it's sometimes difficult to work."
+    },
+    {
+      "role": "B",
+      "text": "Dat snap ik.",
+      "translation": "I understand that."
+    },
+    {
+      "role": "A",
+      "text": "Misschien kunnen ze iets rustiger spelen in de avond?",
+      "translation": "Maybe they can play a bit more quietly in the evening?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, we zullen erop letten.",
+      "translation": "Yes, we will pay attention to that."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel, dat waardeer ik.",
+      "translation": "Thank you, I appreciate it."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem, bedankt dat u het zegt.",
+      "translation": "No problem, thanks for telling me."
+    },
+    {
+      "role": "A",
+      "text": "Fijne dag verder.",
+      "translation": "Have a nice day."
+    },
+    {
+      "role": "B",
+      "text": "U ook.",
+      "translation": "You too."
+    }
+  ]
+}

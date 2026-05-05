@@ -1,0 +1,61 @@
+{
+  "dialogue_title": "Oudere Dame Helpen – Nederlands Beleefd Gesprek in de Supermarkt",
+  "language": "Dutch",
+  "video_url": "www.youtube.com/shorts/kBwly21m_Y0",
+  "roles": {
+    "A": "Jongen",
+    "B": "Oudere dame"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, kan ik u misschien helpen?",
+      "translation": "Good afternoon, can I perhaps help you?"
+    },
+    {
+      "role": "B",
+      "text": "Oh, dat is heel vriendelijk. Ik kan dit product niet goed bereiken.",
+      "translation": "Oh, that's very kind. I can't reach this product very well."
+    },
+    {
+      "role": "A",
+      "text": "Geen probleem, ik pak het wel even voor u.",
+      "translation": "No problem, I'll grab it for you."
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel, dat is erg aardig.",
+      "translation": "Thank you, that's very nice."
+    },
+    {
+      "role": "A",
+      "text": "Alsjeblieft. Heeft u nog iets nodig?",
+      "translation": "Here you go. Do you need anything else?"
+    },
+    {
+      "role": "B",
+      "text": "Nee, dit was het eigenlijk.",
+      "translation": "No, this was actually it."
+    },
+    {
+      "role": "A",
+      "text": "Oké, graag gedaan.",
+      "translation": "Okay, you're welcome."
+    },
+    {
+      "role": "B",
+      "text": "Het is fijn dat er nog behulpzame mensen zijn.",
+      "translation": "It's nice that there are still helpful people."
+    },
+    {
+      "role": "A",
+      "text": "Dat hoor ik graag. Fijne dag nog!",
+      "translation": "I'm glad to hear that. Have a nice day!"
+    },
+    {
+      "role": "B",
+      "text": "U ook een fijne dag!",
+      "translation": "You have a nice day too!"
+    }
+  ]
+}

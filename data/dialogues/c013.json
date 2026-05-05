@@ -1,0 +1,86 @@
+{
+  "dialogue_title": "Nederlands Leren in de Supermarkt – Dagelijkse Dialoog",
+  "language": "Dutch",
+  "video_url": "www.youtube.com/shorts/A_B0xl9RN-w",
+  "roles": {
+    "A": "Man",
+    "B": "Vrouw"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Hoi, heb jij misschien gezien waar de melk staat?",
+      "translation": "Hi, have you perhaps seen where the milk is?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, die staat helemaal achterin bij de koelkast.",
+      "translation": "Yes, it’s all the way in the back by the refrigerator."
+    },
+    {
+      "role": "A",
+      "text": "Bedankt! Ik ben hier nog niet zo bekend met deze supermarkt.",
+      "translation": "Thanks! I'm not that familiar with this supermarket yet."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem. Ik kom hier eigenlijk elke week mijn boodschappen doen.",
+      "translation": "No problem. I actually come here every week to do my groceries."
+    },
+    {
+      "role": "A",
+      "text": "Dan ken je deze plek waarschijnlijk goed. Is deze supermarkt altijd zo druk?",
+      "translation": "Then you probably know this place well. Is this supermarket always this busy?"
+    },
+    {
+      "role": "B",
+      "text": "Vooral in het weekend. Doordeweeks is het meestal rustiger.",
+      "translation": "Especially on the weekends. During the week it is usually quieter."
+    },
+    {
+      "role": "A",
+      "text": "Dat is goed om te weten. Ik probeer meestal snel mijn boodschappen te doen na het werk.",
+      "translation": "That's good to know. I usually try to do my groceries quickly after work."
+    },
+    {
+      "role": "B",
+      "text": "Dat doe ik ook vaak. Dan is het hier gelukkig niet zo vol.",
+      "translation": "I often do that too. Fortunately, it's not so crowded then."
+    },
+    {
+      "role": "A",
+      "text": "Precies! Heb je misschien een aanrader? Iets dat hier echt lekker is?",
+      "translation": "Exactly! Do you have a recommendation? Something that is really tasty here?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, de verse broodjes van de bakkerij zijn erg goed.",
+      "translation": "Yes, the fresh rolls from the bakery are very good."
+    },
+    {
+      "role": "A",
+      "text": "Klinkt heerlijk. Dan ga ik die straks ook proberen.",
+      "translation": "Sounds delicious. Then I'll try those later too."
+    },
+    {
+      "role": "B",
+      "text": "Goede keuze!",
+      "translation": "Good choice!"
+    },
+    {
+      "role": "A",
+      "text": "Bedankt voor de tip en voor je hulp.",
+      "translation": "Thanks for the tip and for your help."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan. Fijne dag nog!",
+      "translation": "You're welcome. Have a nice day!"
+    },
+    {
+      "role": "A",
+      "text": "Jij ook!",
+      "translation": "You too!"
+    }
+  ]
+}

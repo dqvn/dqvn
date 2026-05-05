@@ -1,0 +1,66 @@
+{
+  "dialogue_title": "Kapper Afspraak – Nederlands Gesprek in de Kapperszaak",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/2RKO5kWbRic",
+  "roles": {
+    "A": "Kapper (Hairdresser)",
+    "B": "Klant (Customer)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Wat wilt u vandaag laten doen?",
+      "translation": "What would you like to have done today?"
+    },
+    {
+      "role": "B",
+      "text": "Ik wil mijn haar korter laten knippen.",
+      "translation": "I'd like to have my hair cut shorter."
+    },
+    {
+      "role": "A",
+      "text": "Hoe kort wilt u het?",
+      "translation": "How short would you like it?"
+    },
+    {
+      "role": "B",
+      "text": "Niet te kort, misschien tot hier?",
+      "translation": "Not too short, maybe up to here?"
+    },
+    {
+      "role": "A",
+      "text": "Oké, dat is duidelijk. En misschien ook een beetje laagjes?",
+      "translation": "Okay, that's clear. And maybe some layers as well?"
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem. Hoe lang duurt het ongeveer?",
+      "translation": "No problem. How long will it take?"
+    },
+    {
+      "role": "A",
+      "text": "Ongeveer 30 minuten. Wat vindt u ervan?",
+      "translation": "About 30 minutes. What do you think?"
+    },
+    {
+      "role": "B",
+      "text": "Het ziet er heel mooi uit!",
+      "translation": "It looks very nice!"
+    },
+    {
+      "role": "A",
+      "text": "Fijn om te horen.",
+      "translation": "Glad to hear that."
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel!",
+      "translation": "Thank you!"
+    },
+    {
+      "role": "A",
+      "text": "Graag gedaan.",
+      "translation": "You're welcome."
+    }
+  ]
+}

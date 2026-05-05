@@ -1,0 +1,86 @@
+{
+  "dialogue_title": "Kind Ziek Melden op School",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/WS5xQKPzheM",
+  "roles": {
+    "A": "School Administrator",
+    "B": "Parent (Father)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen met de school.",
+      "translation": "Good morning, this is the school speaking."
+    },
+    {
+      "role": "B",
+      "text": "Goedemorgen, ik wil mijn kind ziekmelden.",
+      "translation": "Good morning, I would like to report my child sick."
+    },
+    {
+      "role": "A",
+      "text": "Wat is de naam van uw kind?",
+      "translation": "What is your child's name?"
+    },
+    {
+      "role": "B",
+      "text": "Hij heet Lucas Jansen.",
+      "translation": "His name is Lucas Jansen."
+    },
+    {
+      "role": "A",
+      "text": "In welke klas zit hij?",
+      "translation": "What class is he in?"
+    },
+    {
+      "role": "B",
+      "text": "In klas 3B.",
+      "translation": "In class 3B."
+    },
+    {
+      "role": "A",
+      "text": "Wat is er aan de hand?",
+      "translation": "What is going on? / What seems to be the problem?"
+    },
+    {
+      "role": "B",
+      "text": "Hij heeft koorts en voelt zich niet goed.",
+      "translation": "He has a fever and doesn't feel well."
+    },
+    {
+      "role": "A",
+      "text": "Dat is vervelend om te horen.",
+      "translation": "That's unfortunate to hear."
+    },
+    {
+      "role": "B",
+      "text": "Ja, hij blijft vandaag thuis.",
+      "translation": "Yes, he's staying home today."
+    },
+    {
+      "role": "A",
+      "text": "Dat is prima. Bedankt voor het doorgeven.",
+      "translation": "That's fine. Thank you for letting us know."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan.",
+      "translation": "You're welcome."
+    },
+    {
+      "role": "A",
+      "text": "Spoedig herstel gewenst.",
+      "translation": "Wishing him a speedy recovery."
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel. Fijne dag!",
+      "translation": "Thank you. Have a nice day!"
+    },
+    {
+      "role": "A",
+      "text": "Jij ook een fijne dag.",
+      "translation": "You have a nice day too."
+    }
+  ]
+}

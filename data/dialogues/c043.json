@@ -1,0 +1,121 @@
+{
+  "dialogue_title": "💍 “Een Ring Kopen voor Mijn Vriendin” – Gesprek in een Juwelier",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/q0_j3ryCdL0",
+  "roles": {
+    "A": "Customer",
+    "B": "Shop Assistant"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, ik ben op zoek naar een ring.",
+      "translation": "Good afternoon, I am looking for a ring."
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag! Voor welke gelegenheid is de ring bedoeld?",
+      "translation": "Good afternoon! What occasion is the ring for?"
+    },
+    {
+      "role": "A",
+      "text": "Voor mijn vriendin, ik wil haar verrassen.",
+      "translation": "For my girlfriend, I want to surprise her."
+    },
+    {
+      "role": "B",
+      "text": "Dat is mooi. Heeft u een bepaald budget in gedachten?",
+      "translation": "That's lovely. Do you have a certain budget in mind?"
+    },
+    {
+      "role": "A",
+      "text": "Ongeveer tussen de 200 en 400 euro.",
+      "translation": "Approximately between 200 and 400 euros."
+    },
+    {
+      "role": "B",
+      "text": "Prima, ik laat u een paar opties zien.",
+      "translation": "Great, I'll show you a few options."
+    },
+    {
+      "role": "A",
+      "text": "Graag.",
+      "translation": "Please."
+    },
+    {
+      "role": "B",
+      "text": "Deze zilveren ring is erg populair en deze heeft een kleine steen.",
+      "translation": "This silver ring is very popular, and this one has a small stone."
+    },
+    {
+      "role": "A",
+      "text": "Ze houdt van iets eenvoudigs, niet opvallend.",
+      "translation": "She likes something simple, not flashy."
+    },
+    {
+      "role": "B",
+      "text": "Dan is deze misschien perfect. Elegant en subtiel.",
+      "translation": "Then this one might be perfect. Elegant and subtle."
+    },
+    {
+      "role": "A",
+      "text": "Ja, die vind ik mooi. Heeft u hem in maat 54?",
+      "translation": "Yes, I like that one. Do you have it in size 54?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, die kan ik meteen voor u controleren.",
+      "translation": "Yes, I can check that for you right away."
+    },
+    {
+      "role": "A",
+      "text": "Hoe lang duurt het om hem in te pakken als cadeau?",
+      "translation": "How long does it take to wrap it as a gift?"
+    },
+    {
+      "role": "B",
+      "text": "Dat doen we direct voor u. We hebben een mooie cadeauverpakking.",
+      "translation": "We can do that for you immediately. We have beautiful gift wrapping."
+    },
+    {
+      "role": "A",
+      "text": "Perfect, ik neem hem.",
+      "translation": "Perfect, I'll take it."
+    },
+    {
+      "role": "B",
+      "text": "Goede keuze! Wilt u ook een kaartje erbij?",
+      "translation": "Good choice! Would you like a card with it?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, graag.",
+      "translation": "Yes, please."
+    },
+    {
+      "role": "B",
+      "text": "Wat wilt u erop schrijven?",
+      "translation": "What would you like to write on it?"
+    },
+    {
+      "role": "A",
+      "text": "Voor de mooiste persoon in mijn leven.",
+      "translation": "For the most beautiful person in my life."
+    },
+    {
+      "role": "B",
+      "text": "Heel romantisch. Ik maak het meteen klaar.",
+      "translation": "Very romantic. I'll get it ready right away."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel voor uw hulp.",
+      "translation": "Thank you very much for your help."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan. Veel succes met uw verrassing!",
+      "translation": "You're welcome. Good luck with your surprise!"
+    }
+  ]
+}

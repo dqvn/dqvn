@@ -1,0 +1,81 @@
+{
+  "dialogue_title": "Nieuwe Buur Ontmoeten – Eerste Gesprek met een Nieuwe Buur",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/KusdCQADkPQ",
+  "roles": {
+    "A": "David",
+    "B": "Lisa"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Hallo, goedemiddag. Ik ben net verhuisd hiernaast.",
+      "translation": "Hello, good afternoon. I just moved in next door."
+    },
+    {
+      "role": "B",
+      "text": "Oh, welkom! Leuk om u te ontmoeten.",
+      "translation": "Oh, welcome! Nice to meet you."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel. Mijn naam is David.",
+      "translation": "Thank you. My name is David."
+    },
+    {
+      "role": "B",
+      "text": "Aangenaam, ik ben Lisa.",
+      "translation": "Pleased to meet you, I'm Lisa."
+    },
+    {
+      "role": "A",
+      "text": "Ik ben nog een beetje bezig met uitpakken.",
+      "translation": "I'm still busy unpacking a bit."
+    },
+    {
+      "role": "B",
+      "text": "Dat kan ik me voorstellen. Verhuizen is altijd veel werk.",
+      "translation": "I can imagine. Moving is always a lot of work."
+    },
+    {
+      "role": "A",
+      "text": "Ja, zeker. Maar ik ben blij dat ik hier ben. De buurt is heel rustig en vriendelijk.",
+      "translation": "Yes, definitely. But I'm happy to be here. The neighborhood is very quiet and friendly."
+    },
+    {
+      "role": "B",
+      "text": "Dat is fijn om te horen. Als u iets nodig heeft, laat het gerust weten.",
+      "translation": "That's good to hear. If you need anything, feel free to let me know."
+    },
+    {
+      "role": "A",
+      "text": "Dat is heel aardig, dank u. Woont u alleen of met familie?",
+      "translation": "That's very kind, thank you. Do you live alone or with family?"
+    },
+    {
+      "role": "B",
+      "text": "Met mijn vriendin. Zij komt later vandaag.",
+      "translation": "With my girlfriend. She’s coming later today."
+    },
+    {
+      "role": "A",
+      "text": "Leuk! Misschien kunnen we een keer samen koffie drinken.",
+      "translation": "Nice! Maybe we can have coffee together sometime."
+    },
+    {
+      "role": "B",
+      "text": "Ja, dat lijkt me gezellig! Dan zie ik u binnenkort weer.",
+      "translation": "Yes, that sounds nice! I'll see you again soon then."
+    },
+    {
+      "role": "A",
+      "text": "Zeker, tot snel!",
+      "translation": "Sure, see you soon!"
+    },
+    {
+      "role": "B",
+      "text": "Tot ziens!",
+      "translation": "Goodbye!"
+    }
+  ]
+}

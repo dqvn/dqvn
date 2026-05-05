@@ -1,0 +1,106 @@
+{
+  "dialogue_title": "Sollicitatiegesprek Lerares – Nederlands Dialoog voor Werk",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/z_RJ_SWPHbE",
+  "roles": {
+    "A": "Interviewer",
+    "B": "Anna de Vries (Sollicitant)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen, welkom! Kunt u zich kort voorstellen?",
+      "translation": "Good morning, welcome! Could you briefly introduce yourself?"
+    },
+    {
+      "role": "B",
+      "text": "Goedemorgen, mijn naam is Anna de Vries en ik ben lerares Nederlands.",
+      "translation": "Good morning, my name is Anna de Vries and I am a Dutch teacher."
+    },
+    {
+      "role": "A",
+      "text": "Leuk om u te ontmoeten. Heeft u al ervaring?",
+      "translation": "Nice to meet you. Do you already have experience?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, ik heb drie jaar ervaring op een middelbare school.",
+      "translation": "Yes, I have three years of experience at a high school."
+    },
+    {
+      "role": "A",
+      "text": "Waarom wilt u bij onze school werken?",
+      "translation": "Why do you want to work at our school?"
+    },
+    {
+      "role": "B",
+      "text": "Ik heb goede dingen gehoord over deze school en ik vind de sfeer hier erg positief.",
+      "translation": "I've heard good things about this school and I find the atmosphere here very positive."
+    },
+    {
+      "role": "A",
+      "text": "Wat is uw manier van lesgeven?",
+      "translation": "What is your teaching method?"
+    },
+    {
+      "role": "B",
+      "text": "Ik probeer mijn lessen interactief en interessant te maken.",
+      "translation": "I try to make my lessons interactive and interesting."
+    },
+    {
+      "role": "A",
+      "text": "Hoe gaat u om met moeilijke leerlingen?",
+      "translation": "How do you handle difficult students?"
+    },
+    {
+      "role": "B",
+      "text": "Ik blijf rustig en probeer met hen te praten.",
+      "translation": "I stay calm and try to talk with them."
+    },
+    {
+      "role": "A",
+      "text": "Dat is belangrijk. Wat zijn uw sterke punten?",
+      "translation": "That's important. What are your strengths?"
+    },
+    {
+      "role": "B",
+      "text": "Ik ben geduldig, creatief en goed georganiseerd.",
+      "translation": "I am patient, creative and well-organized."
+    },
+    {
+      "role": "A",
+      "text": "Heeft u nog vragen voor ons?",
+      "translation": "Do you have any more questions for us?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, hoe ziet een typische werkdag eruit?",
+      "translation": "Yes, what does a typical workday look like?"
+    },
+    {
+      "role": "A",
+      "text": "U geeft les, bereidt lessen voor en werkt samen met collega's.",
+      "translation": "You give lessons, prepare lessons, and collaborate with colleagues."
+    },
+    {
+      "role": "B",
+      "text": "Dat klinkt goed.",
+      "translation": "That sounds good."
+    },
+    {
+      "role": "A",
+      "text": "We nemen binnenkort contact met u op.",
+      "translation": "We will contact you soon."
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel voor het gesprek.",
+      "translation": "Thank you for the interview."
+    },
+    {
+      "role": "A",
+      "text": "Graag gedaan.",
+      "translation": "You're welcome."
+    }
+  ]
+}

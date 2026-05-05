@@ -1,0 +1,81 @@
+{
+  "dialogue_title": "Emergency Call Dutch – Conversation with Emergency Services",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/VdIIZvtvmm4",
+  "roles": {
+    "A": "Emergency Operator",
+    "B": "Caller"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Nooddiensten, waarmee kan ik u helpen?",
+      "translation": "Emergency services, how can I help you?"
+    },
+    {
+      "role": "B",
+      "text": "Hallo, ik heb hulp nodig. Mijn man voelt zich niet goed.",
+      "translation": "Hello, I need help. My husband is not feeling well."
+    },
+    {
+      "role": "A",
+      "text": "Blijf alstublieft kalm, mevrouw. Wat is er aan de hand?",
+      "translation": "Please stay calm, ma'am. What is going on?"
+    },
+    {
+      "role": "B",
+      "text": "Hij heeft pijn op de borst en moeite met ademhalen.",
+      "translation": "He has chest pain and difficulty breathing."
+    },
+    {
+      "role": "A",
+      "text": "Ik begrijp het. Wat is uw adres?",
+      "translation": "I understand. What is your address?"
+    },
+    {
+      "role": "B",
+      "text": "Wij zijn op Oak Avenue 640, Sportland.",
+      "translation": "We are at 640 Oak Avenue, Sportland."
+    },
+    {
+      "role": "A",
+      "text": "Dank u. Een ambulance is onderweg.",
+      "translation": "Thank you. An ambulance is on its way."
+    },
+    {
+      "role": "B",
+      "text": "Alstublieft, kom snel. Ik maak me echt zorgen.",
+      "translation": "Please, come quickly. I am really worried."
+    },
+    {
+      "role": "A",
+      "text": "Begrepen, mevrouw. Blijf kalm, de ambulance is er zo. Blijf bij hem en laat hem rechtop zitten.",
+      "translation": "Understood, ma'am. Stay calm, the ambulance will be there shortly. Stay with him and have him sit upright."
+    },
+    {
+      "role": "B",
+      "text": "Oké, dat zal ik doen.",
+      "translation": "Okay, I will do that."
+    },
+    {
+      "role": "A",
+      "text": "Hulp zal snel arriveren.",
+      "translation": "Help will arrive soon."
+    },
+    {
+      "role": "B",
+      "text": "Bedankt voor uw hulp.",
+      "translation": "Thank you for your help."
+    },
+    {
+      "role": "A",
+      "text": "Als zijn toestand verslechtert, bel ons dan onmiddellijk opnieuw.",
+      "translation": "If his condition worsens, call us again immediately."
+    },
+    {
+      "role": "B",
+      "text": "Ja, ik blijf aan de lijn en wacht op de ambulance.",
+      "translation": "Yes, I'll stay on the line and wait for the ambulance."
+    }
+  ]
+}
