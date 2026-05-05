@@ -317,7 +317,21 @@ body {
 }
 
 #hdr-info { flex: 1; min-width: 0; }
-#dlg-title { font-size: 1.2rem; font-weight: 700; line-height: 1.3; }
+#dlg-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#dlg-title span { display: inline-block; }
+#dlg-title.scrolling span {
+  animation: title-scroll 7s ease-in-out infinite alternate;
+}
+@keyframes title-scroll {
+  0%,  25% { transform: translateX(0); }
+  75%, 100% { transform: translateX(var(--title-ovf, 0px)); }
+}
 
 /* Title meta row: badge + font-size controls */
 #title-meta {
