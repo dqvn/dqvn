@@ -159,7 +159,6 @@ function loadSession() {
         soloMode = true;
         document.getElementById('tts-toggle').checked = true;
         document.getElementById('tts-bar').style.display = 'flex';
-        document.getElementById('speed-row').style.display = 'flex';
         show('btn-start'); hide('btn-done'); hide('btn-repeat'); hide('btn-stop');
         setWave(false); resetProg();
         setMsg(s.role ? 'Klaar — klik ▶ Start' : 'Selecteer eerst een rol ↑');
@@ -485,7 +484,6 @@ function loadDialogue(d, skipSave = false) {
     renderRoles(d.roles);
     document.getElementById('tts-toggle').checked = false;
     document.getElementById('tts-bar').style.display  = 'none';
-    document.getElementById('speed-row').style.display = 'none';
     renderConv();
 
     if (!skipSave) saveSession();
@@ -572,13 +570,11 @@ document.getElementById('tts-toggle').addEventListener('change', e => {
     soloMode = e.target.checked;
     if (soloMode) {
         document.getElementById('tts-bar').style.display  = 'flex';
-        document.getElementById('speed-row').style.display = 'flex';
         show('btn-start'); hide('btn-done'); hide('btn-repeat'); hide('btn-stop'); hide('btn-resume');
         setWave(false); resetProg();
         setMsg(myRole ? 'Klaar — klik ▶ Start' : 'Selecteer eerst een rol ↑');
     } else {
         document.getElementById('tts-bar').style.display  = 'none';
-        document.getElementById('speed-row').style.display = 'none';
         stopTTS();
     }
     saveSession();
@@ -825,6 +821,57 @@ async function forceReload() {
 }
 
 /* ════════════════════════════════════════════════════
+   WAKE LOCK
+   ════════════════════════════════════════════════════ */
+const WAKE = (() => {
+    let sentinel = null;
+    let wanted   = false;
+    const btn    = () => document.getElementById('mob-wake-btn');
+
+    async function acquire() {
+        if (!('wakeLock' in navigator)) return;
+        try {
+            sentinel = await navigator.wakeLock.request('screen');
+            sentinel.addEventListener('release', () => { sentinel = null; });
+            btn().classList.add('wake-on');
+        } catch { /* denied or not supported */ }
+    }
+
+    async function release() {
+        if (sentinel) { await sentinel.release(); sentinel = null; }
+        btn().classList.remove('wake-on');
+    }
+
+    // Re-acquire after tab becomes visible (browser releases lock on hide)
+    document.addEventListener('visibilitychange', () => {
+        if (wanted && document.visibilityState === 'visible') acquire();
+    });
+
+    return {
+        async init(on) {
+            wanted = on;
+            if (wanted) await acquire();
+            else btn().classList.remove('wake-on');
+        },
+        async toggle() {
+            if (!('wakeLock' in navigator)) {
+                showToast('⚠️ Niet ondersteund in deze browser / Not supported');
+                return;
+            }
+            wanted = !wanted;
+            STORE.patch({ wakeLock: wanted });
+            if (wanted) {
+                await acquire();
+                showToast('☀️ Scherm blijft aan / Screen stays on');
+            } else {
+                await release();
+                showToast('💤 Scherm time-out weer actief / Screen timeout restored');
+            }
+        }
+    };
+})();
+
+/* ════════════════════════════════════════════════════
    INIT
    ════════════════════════════════════════════════════ */
 (async () => {
@@ -832,6 +879,9 @@ async function forceReload() {
     document.getElementById('year').textContent = yr;
     document.getElementById('year-mob').textContent = yr;
     document.getElementById('mob-reload-btn').addEventListener('click', forceReload);
+    document.getElementById('mob-wake-btn').addEventListener('click', () => WAKE.toggle());
+    const savedWake = STORE.get().wakeLock;
+    WAKE.init(savedWake !== false);   // default ON unless explicitly saved as false
     document.getElementById('fs-down').addEventListener('click', () => { applyFontSize(convFontSize - 0.08); saveSession(); });
     document.getElementById('fs-up').addEventListener('click',   () => { applyFontSize(convFontSize + 0.08); saveSession(); });
 

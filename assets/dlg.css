@@ -74,6 +74,12 @@ body {
   transition: background .15s;
 }
 .mob-ico:hover { background: rgba(255,255,255,.16); }
+#mob-wake-btn.wake-on {
+  background: rgba(255,193,7,.2);
+  color: #ffc107;
+  box-shadow: 0 0 0 1.5px rgba(255,193,7,.45);
+}
+#mob-wake-btn.wake-on:hover { background: rgba(255,193,7,.3); }
 
 /* ── Layout shell (desktop) ── */
 #layout {
@@ -507,12 +513,9 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
 
 /* Speed */
 #speed-row {
-  margin-top: 10px;
-  display: none;
+  display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: .78rem;
-  color: var(--sec);
+  gap: 3px;
 }
 .spd-btn {
   width: 36px; height: 36px;

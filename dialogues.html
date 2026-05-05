@@ -19,6 +19,12 @@
     <button class="mob-ico" id="mob-search-btn" aria-label="Zoeken">
       <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg>
     </button>
+    <button class="mob-ico" id="mob-wake-btn" aria-label="Scherm aan houden / Keep screen on" title="Keep screen on">
+      <svg id="wake-ico" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="4"/>
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+      </svg>
+    </button>
     <button class="mob-ico" id="mob-reload-btn" aria-label="Herladen / Reload">
       <svg id="reload-ico" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5"/></svg>
     </button>
@@ -96,6 +102,11 @@
                 </svg>
                 <input type="range" id="vol-slider" min="0" max="100" value="100" aria-label="Volume">
               </div>
+              <div id="speed-row">
+                <button class="spd-btn" data-spd="0.6" title="Langzaam / Slow">🐢</button>
+                <button class="spd-btn spd-on" data-spd="0.88" title="Normaal / Normal">🚶</button>
+                <button class="spd-btn" data-spd="1.1" title="Snel / Fast">🏃</button>
+              </div>
             </div>
 
             <div id="roles-section">
@@ -114,12 +125,6 @@
               </div>
             </div>
 
-            <div id="speed-row">
-              <span>🔊</span>
-              <button class="spd-btn" data-spd="0.6">🐢</button>
-              <button class="spd-btn spd-on" data-spd="0.88">🚶</button>
-              <button class="spd-btn" data-spd="1.1">🏃</button>
-            </div>
           </div>
         </div>
 
