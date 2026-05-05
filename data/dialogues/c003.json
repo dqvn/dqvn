@@ -48,12 +48,12 @@
             "translation": "Hmm, that's also an option. What do you prefer?"
         },
         {
-            "role": "B",
+            "role": "A",
             "text": "Ik wil graag naar het strand.",
             "translation": "I would like to go to the beach."
         },
         {
-            "role": "A",
+            "role": "B",
             "text": "Oké, laten we dat doen. Hoe gaan we er naartoe?",
             "translation": "Okay, let's do that. How will we get there?"
         },
