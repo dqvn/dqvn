@@ -9,7 +9,7 @@
  */
 
 const CONFIG = {
-  mediaDir: 'data',
+  mediaDir: 'data/vocabularies', // thư mục chứa các file chapterXX.md
   chapterPrefix: 'chapter ',
   chapterExt: '.md',
   pad: 2,              // "01", "02"
