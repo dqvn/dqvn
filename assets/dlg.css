@@ -449,8 +449,23 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
   margin-top: 1px;
 }
 .c-body { flex: 1; min-width: 0; }
-.c-text  { font-size: .92rem; font-weight: 500; line-height: 1.5; }
+.c-text  { font-size: .92rem; font-weight: 500; line-height: 1.5; cursor: pointer; transition: color .15s; }
+.c-text:hover { color: var(--acc); }
 .c-trans { font-size: .75rem; color: var(--sec); font-style: italic; margin-top: 2px; }
+
+/* Inline click-to-listen wave — hidden until .playing */
+.c-wave { display: none; gap: 2px; align-items: center; height: 12px; margin-top: 5px; }
+.c-wave.playing { display: flex; }
+.c-wave span {
+  display: block; width: 2px; border-radius: 2px;
+  background: var(--acc);
+  animation: wav .7s ease-in-out infinite;
+}
+.c-wave span:nth-child(1) { height: 6px; }
+.c-wave span:nth-child(2) { height: 12px; animation-delay: .12s; }
+.c-wave span:nth-child(3) { height: 9px;  animation-delay: .24s; }
+.c-wave span:nth-child(4) { height: 12px; animation-delay: .12s; }
+.c-wave span:nth-child(5) { height: 6px;  animation-delay: .24s; }
 
 .c-wait {
   display: flex;
