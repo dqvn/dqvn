@@ -795,6 +795,22 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
 }
 #btn-resume:hover { background: #0ea5ca; }
 
+/* Footer */
+#app-footer {
+  flex-shrink: 0;
+  text-align: center;
+  font-size: .68rem;
+  color: var(--sec);
+  padding: 5px 12px;
+  border-top: 1px solid var(--bdr);
+  background: var(--card);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#app-footer a { color: var(--acc); text-decoration: none; }
+#app-footer a:hover { text-decoration: underline; }
+
 /* Toast notification — slides up from bottom centre */
 #toast {
   position: fixed;
