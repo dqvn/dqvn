@@ -1,0 +1,91 @@
+{
+  "dialogue_title": "Pakket Niet Ontvangen – Nederlands Gesprek bij het Postkantoor",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/qTXzWCa0PH0",
+  "roles": {
+    "A": "Klant (Customer)",
+    "B": "Postmedewerker (Postal Worker)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, ik heb een vraag over een pakket.",
+      "translation": "Good afternoon, I have a question about a package."
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag, waarmee kan ik u helpen?",
+      "translation": "Good afternoon, how can I help you?"
+    },
+    {
+      "role": "A",
+      "text": "Ik heb een pakket besteld online, maar het is nog steeds niet aangekomen.",
+      "translation": "I ordered a package online, but it still hasn't arrived."
+    },
+    {
+      "role": "B",
+      "text": "Heeft u misschien een trackingnummer?",
+      "translation": "Do you perhaps have a tracking number?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, ik heb het op mijn telefoon. Momentje, hier is het.",
+      "translation": "Yes, I have it on my phone. One moment, here it is."
+    },
+    {
+      "role": "B",
+      "text": "Dank u. Ik zal het even controleren in het systeem. Ik zie het hier: het pakket is gisteren bij het bezorgcentrum aangekomen.",
+      "translation": "Thank you. I'll check it in the system. I see it here: the package arrived at the delivery center yesterday."
+    },
+    {
+      "role": "A",
+      "text": "Betekent dat dat het vandaag geleverd wordt?",
+      "translation": "Does that mean it will be delivered today?"
+    },
+    {
+      "role": "B",
+      "text": "Dat is mogelijk. Soms duurt de bezorging iets langer door drukte.",
+      "translation": "That's possible. Sometimes delivery takes a bit longer due to busy periods."
+    },
+    {
+      "role": "A",
+      "text": "Begrijpelijk, maar wat kan ik doen als het vandaag ook niet komt?",
+      "translation": "Understandable, but what can I do if it doesn't arrive today either?"
+    },
+    {
+      "role": "B",
+      "text": "In dat geval kunt u morgen opnieuw contact met ons opnemen. Dan starten we een onderzoek naar het pakket.",
+      "translation": "In that case, you can contact us again tomorrow. Then we'll start an investigation into the package."
+    },
+    {
+      "role": "A",
+      "text": "Oké, dat is goed om te weten.",
+      "translation": "Okay, that's good to know."
+    },
+    {
+      "role": "B",
+      "text": "Wilt u dat ik u een melding stuur zodra er een update is?",
+      "translation": "Would you like me to send you a notification as soon as there is an update?"
+    },
+    {
+      "role": "A",
+      "text": "Ja graag, dat zou handig zijn.",
+      "translation": "Yes please, that would be handy."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem. U ontvangt een bericht zodra we meer informatie hebben.",
+      "translation": "No problem. You will receive a message as soon as we have more information."
+    },
+    {
+      "role": "A",
+      "text": "Hartelijk dank voor uw hulp.",
+      "translation": "Thank you very much for your help."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan. Ik hoop dat uw pakket snel aankomt.",
+      "translation": "You're welcome. I hope your package arrives soon."
+    }
+  ]
+}

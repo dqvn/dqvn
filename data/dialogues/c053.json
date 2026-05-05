@@ -1,0 +1,111 @@
+{
+  "dialogue_title": "Mijn Bankkaart Werkt Niet",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/IPLBnkHhCks",
+  "roles": {
+    "A": "Customer",
+    "B": "Bank Employee"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen, ik heb een probleem met mijn bankkaart.",
+      "translation": "Good morning, I have a problem with my bank card."
+    },
+    {
+      "role": "B",
+      "text": "Goedemorgen, wat is er precies aan de hand?",
+      "translation": "Good morning, what exactly is the matter?"
+    },
+    {
+      "role": "A",
+      "text": "Mijn kaart werkt niet meer bij de geldautomaat.",
+      "translation": "My card doesn't work at the ATM anymore."
+    },
+    {
+      "role": "B",
+      "text": "Dat is vervelend. Laat me even kijken. Sinds wanneer heeft u dit probleem?",
+      "translation": "That's annoying. Let me take a look. Since when have you had this problem?"
+    },
+    {
+      "role": "A",
+      "text": "Sinds gisteren. Ik probeerde geld op te nemen, maar de automaat accepteerde mijn kaart niet.",
+      "translation": "Since yesterday. I tried to withdraw money, but the machine didn't accept my card."
+    },
+    {
+      "role": "B",
+      "text": "Heeft u misschien de verkeerde pincode ingevoerd?",
+      "translation": "Did you perhaps enter the wrong PIN code?"
+    },
+    {
+      "role": "A",
+      "text": "Nee, ik weet zeker dat de pincode correct was.",
+      "translation": "No, I'm certain the PIN code was correct."
+    },
+    {
+      "role": "B",
+      "text": "Begrijpelijk. Mag ik uw kaart even zien?",
+      "translation": "Understandable. May I see your card for a moment?"
+    },
+    {
+      "role": "A",
+      "text": "Natuurlijk, hier is die.",
+      "translation": "Of course, here it is."
+    },
+    {
+      "role": "B",
+      "text": "Dank u. Ik ga even controleren of er een probleem met de kaart is. Het lijkt erop dat de kaart geblokkeerd is.",
+      "translation": "Thank you. I'm going to check if there is a problem with the card. It seems the card is blocked."
+    },
+    {
+      "role": "A",
+      "text": "Geblokkeerd? Hoe kan dat?",
+      "translation": "Blocked? How is that possible?"
+    },
+    {
+      "role": "B",
+      "text": "Soms gebeurt dat automatisch om veiligheidsredenen.",
+      "translation": "Sometimes that happens automatically for security reasons."
+    },
+    {
+      "role": "A",
+      "text": "Wat kan ik nu doen?",
+      "translation": "What can I do now?"
+    },
+    {
+      "role": "B",
+      "text": "We kunnen een nieuwe bankkaart voor u aanvragen.",
+      "translation": "We can request a new bank card for you."
+    },
+    {
+      "role": "A",
+      "text": "Hoe lang duurt dat meestal?",
+      "translation": "How long does that usually take?"
+    },
+    {
+      "role": "B",
+      "text": "Ongeveer vijf werkdagen.",
+      "translation": "About five business days."
+    },
+    {
+      "role": "A",
+      "text": "Oké, dat is goed.",
+      "translation": "Okay, that's fine."
+    },
+    {
+      "role": "B",
+      "text": "In de tussentijd kunt u nog steeds betalen met uw mobiele bank-app.",
+      "translation": "In the meantime, you can still pay with your mobile banking app."
+    },
+    {
+      "role": "A",
+      "text": "Dat is handig. Dank u voor uw hulp.",
+      "translation": "That's convenient. Thank you for your help."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan. We regelen meteen een nieuwe kaart voor u.",
+      "translation": "You're welcome. We'll arrange a new card for you right away."
+    }
+  ]
+}

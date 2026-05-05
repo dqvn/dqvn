@@ -1,0 +1,131 @@
+{
+  "dialogue_title": "Dutch Conversation – Talking About Healthy Food",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/P4uZ2O6P9Ac",
+  "roles": {
+    "A": "Female Speaker",
+    "B": "Male Speaker"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Hoi! Let je op wat je eet?",
+      "translation": "Hi! Do you watch what you eat?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, de laatste tijd wel. Ik probeer gezonder te eten.",
+      "translation": "Yes, lately I have. I'm trying to eat healthier."
+    },
+    {
+      "role": "A",
+      "text": "Wat betekent gezond eten voor jou?",
+      "translation": "What does healthy eating mean to you?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, voor mij betekent het veel groenten, fruit en weinig suiker.",
+      "translation": "Well, for me it means plenty of vegetables, fruit, and little sugar."
+    },
+    {
+      "role": "A",
+      "text": "Eet je elke dag groenten?",
+      "translation": "Do you eat vegetables every day?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, meestal wel. Vooral broccoli, wortels en spinazie.",
+      "translation": "Yes, usually. Especially broccoli, carrots, and spinach."
+    },
+    {
+      "role": "A",
+      "text": "En fruit?",
+      "translation": "And fruit?"
+    },
+    {
+      "role": "B",
+      "text": "Ik eet vaak appels en bananen als snack.",
+      "translation": "I often eat apples and bananas as a snack."
+    },
+    {
+      "role": "A",
+      "text": "Drink je ook genoeg water?",
+      "translation": "Do you also drink enough water?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, ik probeer minstens twee liter per dag te drinken.",
+      "translation": "Yes, I try to drink at least two liters a day."
+    },
+    {
+      "role": "A",
+      "text": "Dat is goed. Eet je nog fastfood?",
+      "translation": "That's good. Do you still eat fast food?"
+    },
+    {
+      "role": "B",
+      "text": "Soms, maar niet vaak. Misschien één keer per week.",
+      "translation": "Sometimes, but not often. Maybe once a week."
+    },
+    {
+      "role": "A",
+      "text": "Kook je zelf of eet je buiten?",
+      "translation": "Do you cook for yourself or do you eat out?"
+    },
+    {
+      "role": "B",
+      "text": "Ik kook meestal zelf. Dat is gezonder en goedkoper.",
+      "translation": "I usually cook for myself. It's healthier and cheaper."
+    },
+    {
+      "role": "A",
+      "text": "Heb je een favoriete gezonde maaltijd?",
+      "translation": "Do you have a favorite healthy meal?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, gegrilde kip met rijst en groenten.",
+      "translation": "Yes, grilled chicken with rice and vegetables."
+    },
+    {
+      "role": "A",
+      "text": "Klinkt lekker! Let je ook op calorieën?",
+      "translation": "Sounds delicious! Do you also watch your calories?"
+    },
+    {
+      "role": "B",
+      "text": "Niet echt, ik focus meer op balans.",
+      "translation": "Not really, I focus more on balance."
+    },
+    {
+      "role": "A",
+      "text": "Dat is slim. Doe je ook aan sport?",
+      "translation": "That's smart. Do you also play sports?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, ik ga drie keer per week naar de sportschool.",
+      "translation": "Yes, I go to the gym three times a week."
+    },
+    {
+      "role": "A",
+      "text": "Mooi! Gezond eten en sporten horen samen.",
+      "translation": "Great! Healthy eating and exercise go together."
+    },
+    {
+      "role": "B",
+      "text": "Precies. Ik voel me ook veel beter sinds ik gezonder leef.",
+      "translation": "Exactly. I also feel much better since living healthier."
+    },
+    {
+      "role": "A",
+      "text": "Dat geloof ik. Goed bezig!",
+      "translation": "I believe that. Good job!"
+    },
+    {
+      "role": "B",
+      "text": "Dank je.",
+      "translation": "Thank you."
+    }
+  ]
+}

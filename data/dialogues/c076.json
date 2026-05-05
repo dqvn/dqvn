@@ -1,0 +1,102 @@
+{
+  "dialogue_title": "Een presentatie op school (A Presentation at School)",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/lJfaRF7KPfg",
+  "roles": {
+    "A": "Teacher",
+    "B": "Student",
+    "C": "Classmate"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen allemaal! Vandaag gaan we presentaties horen.",
+      "translation": "Good morning everyone! Today we're going to hear presentations."
+    },
+    {
+      "role": "B",
+      "text": "Goedemorgen! Mijn presentatie gaat over gezonde voeding.",
+      "translation": "Good morning! My presentation is about healthy nutrition."
+    },
+    {
+      "role": "A",
+      "text": "Dat is een interessant onderwerp.",
+      "translation": "That's an interesting subject."
+    },
+    {
+      "role": "B",
+      "text": "Veel mensen eten elke dag fastfood, maar dat is niet gezond.",
+      "translation": "Many people eat fast food every day, but that's not healthy."
+    },
+    {
+      "role": "A",
+      "text": "Dat klopt.",
+      "translation": "That's right."
+    },
+    {
+      "role": "B",
+      "text": "Het is belangrijk om fruit, groenten en volkoren producten te eten.",
+      "translation": "It's important to eat fruit, vegetables, and whole-grain products."
+    },
+    {
+      "role": "A",
+      "text": "Heb je ook voorbeelden?",
+      "translation": "Do you also have examples?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, bijvoorbeeld appels, bananen en broccoli.",
+      "translation": "Yes, for example, apples, bananas, and broccoli."
+    },
+    {
+      "role": "A",
+      "text": "Goed uitgelegd!",
+      "translation": "Well explained!"
+    },
+    {
+      "role": "B",
+      "text": "Ook is het belangrijk om genoeg water te drinken.",
+      "translation": "It's also important to drink enough water."
+    },
+    {
+      "role": "A",
+      "text": "Hoe lang heb je aan deze presentatie gewerkt?",
+      "translation": "How long did you work on this presentation?"
+    },
+    {
+      "role": "B",
+      "text": "Ongeveer twee dagen.",
+      "translation": "About two days."
+    },
+    {
+      "role": "A",
+      "text": "Dat heb je goed gedaan!",
+      "translation": "You did a good job!"
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel.",
+      "translation": "Thank you."
+    },
+    {
+      "role": "A",
+      "text": "Heeft iemand nog een vraag?",
+      "translation": "Does anyone have a question?"
+    },
+    {
+      "role": "C",
+      "text": "Ja, wat is jouw favoriete gezonde snack?",
+      "translation": "Yes, what's your favorite healthy snack?"
+    },
+    {
+      "role": "B",
+      "text": "Mijn favoriete snack is yoghurt met fruit.",
+      "translation": "My favorite snack is yogurt with fruit."
+    },
+    {
+      "role": "A",
+      "text": "Mooi antwoord! Bedankt voor je presentatie.",
+      "translation": "Nice answer! Thanks for your presentation."
+    }
+  ]
+}

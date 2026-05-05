@@ -1,0 +1,101 @@
+{
+  "dialogue_title": "Mijn Auto Start Niet – Gesprek bij de Garage",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/yI_-hqiszjQ",
+  "roles": {
+    "A": "Customer",
+    "B": "Mechanic"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen, ik heb een probleem met mijn auto.",
+      "translation": "Good morning, I have a problem with my car."
+    },
+    {
+      "role": "B",
+      "text": "Goedemorgen, wat is er aan de hand?",
+      "translation": "Good morning, what's going on?"
+    },
+    {
+      "role": "A",
+      "text": "Mijn auto start niet meer sinds vanochtend.",
+      "translation": "My car hasn't been starting since this morning."
+    },
+    {
+      "role": "B",
+      "text": "Dat is vervelend. Hoort u nog geluid als u de sleutel omdraait?",
+      "translation": "That's annoying. Do you still hear a sound when you turn the key?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, ik hoor een klik, maar de motor start niet.",
+      "translation": "Yes, I hear a click, but the engine won't start."
+    },
+    {
+      "role": "B",
+      "text": "Dat kan een probleem met de batterij zijn.",
+      "translation": "That could be a problem with the battery."
+    },
+    {
+      "role": "A",
+      "text": "Dat dacht ik ook al. Hoe oud is uw batterij?",
+      "translation": "I thought so too. How old is your battery?"
+    },
+    {
+      "role": "B",
+      "text": "Ongeveer drie jaar.",
+      "translation": "About three years."
+    },
+    {
+      "role": "A",
+      "text": "Dan is het mogelijk dat de batterij leeg of versleten is. Kunt u dat controleren?",
+      "translation": "Then it's possible that the battery is empty or worn out. Can you check that?"
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk, ik zal even kijken. Ja, de batterij is inderdaad leeg.",
+      "translation": "Of course, I'll take a look. Yes, the battery is indeed empty."
+    },
+    {
+      "role": "A",
+      "text": "Moet deze vervangen worden?",
+      "translation": "Does it need to be replaced?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, dat is waarschijnlijk de beste oplossing.",
+      "translation": "Yes, that's probably the best solution."
+    },
+    {
+      "role": "A",
+      "text": "Hoe lang duurt dat ongeveer?",
+      "translation": "How long will that take roughly?"
+    },
+    {
+      "role": "B",
+      "text": "Ongeveer twintig minuten.",
+      "translation": "About twenty minutes."
+    },
+    {
+      "role": "A",
+      "text": "Dat is snel!",
+      "translation": "That's fast!"
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem, we helpen u meteen.",
+      "translation": "No problem, we'll help you right away."
+    },
+    {
+      "role": "A",
+      "text": "Bedankt voor uw hulp.",
+      "translation": "Thanks for your help."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan. Uw auto is zo weer klaar.",
+      "translation": "You're welcome. Your car will be ready in no time."
+    }
+  ]
+}

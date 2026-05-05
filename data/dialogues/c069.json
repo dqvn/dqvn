@@ -1,0 +1,81 @@
+{
+  "dialogue_title": "Small Talk: Weekendplannen Bespreken",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/OkkuunTGxrw",
+  "roles": {
+    "A": "Man",
+    "B": "Woman"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Heb je al plannen voor het weekend?",
+      "translation": "Do you have any plans for the weekend yet?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, een beetje. Morgen wil ik eerst uitslapen en daarna ga ik met een vriendin naar de stad.",
+      "translation": "Yes, a little bit. Tomorrow I want to sleep in first and after that, I'm going to the city with a friend."
+    },
+    {
+      "role": "A",
+      "text": "Dat klinkt leuk! Gaan jullie winkelen?",
+      "translation": "That sounds fun! Are you guys going shopping?"
+    },
+    {
+      "role": "B",
+      "text": "Misschien een beetje winkelen, maar we willen vooral ergens lunchen en gewoon ontspannen.",
+      "translation": "Maybe a little shopping, but we mainly want to have lunch somewhere and just relax."
+    },
+    {
+      "role": "A",
+      "text": "Dat is een goed idee. Na een drukke week is het fijn om even te relaxen.",
+      "translation": "That's a good idea. After a busy week, it's nice to relax for a bit."
+    },
+    {
+      "role": "B",
+      "text": "Precies! En jij? Wat ga jij doen dit weekend?",
+      "translation": "Exactly! And you? What are you going to do this weekend?"
+    },
+    {
+      "role": "A",
+      "text": "Ik ga waarschijnlijk een lange wandeling maken in het park. Het weer wordt mooi volgens de weersvoorspelling.",
+      "translation": "I'm probably going to take a long walk in the park. The weather is going to be nice according to the forecast."
+    },
+    {
+      "role": "B",
+      "text": "Dat klinkt heerlijk. Ik hou ook van wandelen als het weer goed is.",
+      "translation": "That sounds lovely. I also love walking when the weather is good."
+    },
+    {
+      "role": "A",
+      "text": "Op zondag ga ik misschien een film kijken met vrienden.",
+      "translation": "On Sunday I might watch a movie with friends."
+    },
+    {
+      "role": "B",
+      "text": "Leuk! Ik kijk in het weekend ook vaak films of series.",
+      "translation": "Nice! I also often watch movies or series on the weekend."
+    },
+    {
+      "role": "A",
+      "text": "Het weekend gaat altijd zo snel voorbij.",
+      "translation": "The weekend always goes by so fast."
+    },
+    {
+      "role": "B",
+      "text": "Dat is waar. Maar het is belangrijk om ook tijd voor jezelf te nemen.",
+      "translation": "That's true. But it's important to also take time for yourself."
+    },
+    {
+      "role": "A",
+      "text": "Absoluut! Ik wens je alvast een fijn weekend.",
+      "translation": "Absolutely! I wish you a nice weekend in advance."
+    },
+    {
+      "role": "B",
+      "text": "Jij ook! Geniet van je wandeling.",
+      "translation": "You too! Enjoy your walk."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "dialogue_title": "Nieuwe Mensen Ontmoeten – Praktische Nederlandse Conversatie",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/1ztON-dSIY4",
+  "roles": {
+    "A": "Julia",
+    "B": "David"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Hallo, volgens mij hebben we elkaar nog niet ontmoet. Ik ben Julia.",
+      "translation": "Hello, I don't think we've met yet. I'm Julia."
+    },
+    {
+      "role": "B",
+      "text": "Hallo Julia, leuk je te ontmoeten. Ik ben David.",
+      "translation": "Hello Julia, nice to meet you. I'm David."
+    },
+    {
+      "role": "A",
+      "text": "Ken je de gasten van het feest goed?",
+      "translation": "Do you know the guests at the party well?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, we werken samen op kantoor. En jij?",
+      "translation": "Yes, we work together at the office. And you?"
+    },
+    {
+      "role": "A",
+      "text": "Ik ken haar van de universiteit. We studeerden samen.",
+      "translation": "I know her from university. We studied together."
+    },
+    {
+      "role": "B",
+      "text": "Wat leuk! Ga je vaak naar dit soort feestjes?",
+      "translation": "How nice! Do you often go to these kinds of parties?"
+    },
+    {
+      "role": "A",
+      "text": "Niet zo vaak, maar af en toe vind ik het wel gezellig. Het is een goede manier om nieuwe mensen te leren kennen.",
+      "translation": "Not very often, but every now and then I think it's fun. It's a good way to get to know new people."
+    },
+    {
+      "role": "B",
+      "text": "Dat klopt. Praat je graag met nieuwe mensen?",
+      "translation": "That's true. Do you like talking to new people?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, meestal wel. Het is altijd interessant om verschillende verhalen te horen.",
+      "translation": "Yes, usually. It's always interesting to hear different stories."
+    },
+    {
+      "role": "B",
+      "text": "Dat vind ik ook. Wat doe je eigenlijk voor werk?",
+      "translation": "I think so too. What do you actually do for work?"
+    },
+    {
+      "role": "A",
+      "text": "Ik werk als grafisch ontwerper. En jij?",
+      "translation": "I work as a graphic designer. And you?"
+    },
+    {
+      "role": "B",
+      "text": "Ik werk in marketing.",
+      "translation": "I work in marketing."
+    },
+    {
+      "role": "A",
+      "text": "Interessant. Misschien werken we ooit eens samen aan een project.",
+      "translation": "Interesting. Maybe we'll work together on a project someday."
+    },
+    {
+      "role": "B",
+      "text": "Dat zou leuk zijn!",
+      "translation": "That would be nice!"
+    }
+  ]
+}

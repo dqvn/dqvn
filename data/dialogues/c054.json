@@ -1,0 +1,96 @@
+{
+  "dialogue_title": "Waar kan ik dit product vinden?",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/_q98tfD7b6M",
+  "roles": {
+    "A": "Customer",
+    "B": "Supermarket Employee"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, mag ik u iets vragen?",
+      "translation": "Good afternoon, may I ask you something?"
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk, waarmee kan ik u helpen?",
+      "translation": "Of course, how can I help you?"
+    },
+    {
+      "role": "A",
+      "text": "Ik kan de rijst nergens vinden.",
+      "translation": "I can't find the rice anywhere."
+    },
+    {
+      "role": "B",
+      "text": "De rijst staat in gang vier bij de pasta en granen.",
+      "translation": "The rice is in aisle four with the pasta and grains."
+    },
+    {
+      "role": "A",
+      "text": "Ah oké, ik heb daar al gekeken, maar ik zag het niet.",
+      "translation": "Ah okay, I already looked there, but I didn't see it."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem, ik kan het u even laten zien.",
+      "translation": "No problem, I can show it to you."
+    },
+    {
+      "role": "A",
+      "text": "Dat zou fijn zijn, dank u.",
+      "translation": "That would be nice, thank you."
+    },
+    {
+      "role": "B",
+      "text": "Volgt u mij maar. Kijk, hier hebben we verschillende soorten rijst.",
+      "translation": "Follow me. Look, here we have different kinds of rice."
+    },
+    {
+      "role": "A",
+      "text": "Oh ja, nu zie ik het.",
+      "translation": "Oh yes, now I see it."
+    },
+    {
+      "role": "B",
+      "text": "Zoekt u een specifieke soort?",
+      "translation": "Are you looking for a specific kind?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, Basmati rijst.",
+      "translation": "Yes, Basmati rice."
+    },
+    {
+      "role": "B",
+      "text": "Die staat hier op de bovenste plank.",
+      "translation": "That's here on the top shelf."
+    },
+    {
+      "role": "A",
+      "text": "Perfect, dat is precies wat ik nodig had.",
+      "translation": "Perfect, that is exactly what I needed."
+    },
+    {
+      "role": "B",
+      "text": "Heeft u verder nog iets nodig?",
+      "translation": "Do you need anything else?"
+    },
+    {
+      "role": "A",
+      "text": "Nee, dat was alles.",
+      "translation": "No, that was all."
+    },
+    {
+      "role": "B",
+      "text": "Fijn, dan wens ik u nog een prettige dag.",
+      "translation": "Great, then I wish you a pleasant day."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel voor de hulp.",
+      "translation": "Thank you very much for the help."
+    }
+  ]
+}

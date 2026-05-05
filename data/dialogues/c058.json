@@ -1,0 +1,106 @@
+{
+  "dialogue_title": "Learn Dutch at the Market",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/Kfluo78m4Zg",
+  "roles": {
+    "A": "Vendor",
+    "B": "Customer"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen, kan ik u helpen?",
+      "translation": "Good morning, can I help you?"
+    },
+    {
+      "role": "B",
+      "text": "Goedemorgen. Ja, ik wil graag wat fruit kopen.",
+      "translation": "Good morning. Yes, I would like to buy some fruit."
+    },
+    {
+      "role": "A",
+      "text": "Natuurlijk, wat zoekt u?",
+      "translation": "Of course, what are you looking for?"
+    },
+    {
+      "role": "B",
+      "text": "Ik zoek appels en bananen.",
+      "translation": "I'm looking for apples and bananas."
+    },
+    {
+      "role": "A",
+      "text": "We hebben verse appels. Wilt u groene of rode?",
+      "translation": "We have fresh apples. Would you like green or red ones?"
+    },
+    {
+      "role": "B",
+      "text": "Rode alstublieft.",
+      "translation": "Red, please."
+    },
+    {
+      "role": "A",
+      "text": "Goede keuze. En de bananen?",
+      "translation": "Good choice. And the bananas?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, die neem ik ook.",
+      "translation": "Yes, I'll take those too."
+    },
+    {
+      "role": "A",
+      "text": "Nog iets anders?",
+      "translation": "Anything else?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, heeft u ook tomaten?",
+      "translation": "Yes, do you also have tomatoes?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, ze zijn vandaag heel vers.",
+      "translation": "Yes, they are very fresh today."
+    },
+    {
+      "role": "B",
+      "text": "Dan neem ik ook een halve kilo tomaten.",
+      "translation": "Then I'll also take half a kilo of tomatoes."
+    },
+    {
+      "role": "A",
+      "text": "Komt voor elkaar. Goede keuze. Wilt u een tas?",
+      "translation": "I'll take care of it. Good choice. Would you like a bag?"
+    },
+    {
+      "role": "B",
+      "text": "Ja graag.",
+      "translation": "Yes please."
+    },
+    {
+      "role": "A",
+      "text": "Dat is samen 5,50.",
+      "translation": "That's 5.50 altogether."
+    },
+    {
+      "role": "B",
+      "text": "Kan ik met kaart betalen?",
+      "translation": "Can I pay by card?"
+    },
+    {
+      "role": "A",
+      "text": "Dat kan. Perfect.",
+      "translation": "You can. Perfect."
+    },
+    {
+      "role": "A",
+      "text": "Hier is uw bon. Fijne dag!",
+      "translation": "Here is your receipt. Have a nice day!"
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel. U ook een fijne dag!",
+      "translation": "Thank you. You have a nice day too!"
+    }
+  ]
+}

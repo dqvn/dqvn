@@ -1,0 +1,111 @@
+{
+  "dialogue_title": "Je telefoon is kapot – naar de reparatiewinkel",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/wM14p67qCEU",
+  "roles": {
+    "A": "Customer",
+    "B": "Repair Shop Employee"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, mijn telefoon is kapot.",
+      "translation": "Good afternoon, my phone is broken."
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag, wat is er precies mis met uw telefoon?",
+      "translation": "Good afternoon, what exactly is wrong with your phone?"
+    },
+    {
+      "role": "A",
+      "text": "Het scherm is gebroken en het touchscreen werkt niet goed.",
+      "translation": "The screen is broken and the touchscreen doesn't work properly."
+    },
+    {
+      "role": "B",
+      "text": "Oei, dat is vervelend. Wanneer is dat gebeurd?",
+      "translation": "Oh, that's annoying. When did that happen?"
+    },
+    {
+      "role": "A",
+      "text": "Gisteren. Mijn telefoon is op de grond gevallen.",
+      "translation": "Yesterday. My phone fell on the ground."
+    },
+    {
+      "role": "B",
+      "text": "Begrijpelijk. Mag ik even naar de telefoon kijken?",
+      "translation": "Understandable. May I take a look at the phone?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, natuurlijk.",
+      "translation": "Yes, of course."
+    },
+    {
+      "role": "B",
+      "text": "Ja, het scherm is inderdaad beschadigd. We kunnen het scherm vervangen.",
+      "translation": "Yes, the screen is indeed damaged. We can replace the screen."
+    },
+    {
+      "role": "A",
+      "text": "Hoe lang duurt de reparatie?",
+      "translation": "How long will the repair take?"
+    },
+    {
+      "role": "B",
+      "text": "Ongeveer één uur.",
+      "translation": "About one hour."
+    },
+    {
+      "role": "A",
+      "text": "Oké, dat is snel.",
+      "translation": "Okay, that's fast."
+    },
+    {
+      "role": "B",
+      "text": "Ja, meestal is het dezelfde dag klaar.",
+      "translation": "Yes, usually it's ready the same day."
+    },
+    {
+      "role": "A",
+      "text": "En hoeveel kost het ongeveer?",
+      "translation": "And about how much does it cost?"
+    },
+    {
+      "role": "B",
+      "text": "Voor dit model kost het ongeveer 80 euro.",
+      "translation": "For this model, it costs about 80 euros."
+    },
+    {
+      "role": "A",
+      "text": "Oké, dat is goed.",
+      "translation": "Okay, that's fine."
+    },
+    {
+      "role": "B",
+      "text": "Wilt u hier wachten of later terugkomen?",
+      "translation": "Would you like to wait here or come back later?"
+    },
+    {
+      "role": "A",
+      "text": "Ik kom later terug.",
+      "translation": "I'll come back later."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem. Uw telefoon is over een uur klaar.",
+      "translation": "No problem. Your phone will be ready in an hour."
+    },
+    {
+      "role": "A",
+      "text": "Perfect. Bedankt voor uw hulp.",
+      "translation": "Perfect. Thanks for your help."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan. Tot straks.",
+      "translation": "You're welcome. See you later."
+    }
+  ]
+}

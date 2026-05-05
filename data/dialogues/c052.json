@@ -1,0 +1,111 @@
+{
+  "dialogue_title": "Ik Wil Iets Terugbrengen (Returning a Product)",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/K_w7RKCug7k",
+  "roles": {
+    "A": "Customer",
+    "B": "Shop Assistant"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, ik wil dit product graag terugbrengen.",
+      "translation": "Good afternoon, I would like to return this product."
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag, mag ik vragen waarom u het wilt terugbrengen?",
+      "translation": "Good afternoon, may I ask why you would like to return it?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, het past niet goed en ik ben er niet helemaal tevreden mee.",
+      "translation": "Yes, it doesn't fit well and I'm not completely satisfied with it."
+    },
+    {
+      "role": "B",
+      "text": "Begrijpelijk. Heeft u de bon nog?",
+      "translation": "Understandable. Do you still have the receipt?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, hier is de bon.",
+      "translation": "Yes, here is the receipt."
+    },
+    {
+      "role": "B",
+      "text": "Dank u. Wanneer heeft u het product gekocht?",
+      "translation": "Thank you. When did you buy the product?"
+    },
+    {
+      "role": "A",
+      "text": "Ongeveer drie dagen geleden.",
+      "translation": "About three days ago."
+    },
+    {
+      "role": "B",
+      "text": "Dat is geen probleem. Het product ziet er nog nieuw uit.",
+      "translation": "That is no problem. The product still looks new."
+    },
+    {
+      "role": "A",
+      "text": "Ja, ik heb het maar één keer geprobeerd.",
+      "translation": "Yes, I only tried it once."
+    },
+    {
+      "role": "B",
+      "text": "Wilt u uw geld terug of wilt u het ruilen voor iets anders?",
+      "translation": "Would you like your money back or would you like to exchange it for something else?"
+    },
+    {
+      "role": "A",
+      "text": "Ik denk dat ik liever mijn geld terug wil.",
+      "translation": "I think I'd rather have my money back."
+    },
+    {
+      "role": "B",
+      "text": "Dat kan. Heeft u met pin of contant betaald?",
+      "translation": "That's possible. Did you pay by card or cash?"
+    },
+    {
+      "role": "A",
+      "text": "Met pin.",
+      "translation": "By card."
+    },
+    {
+      "role": "B",
+      "text": "Dan storten we het bedrag terug op uw rekening.",
+      "translation": "Then we'll refund the amount to your account."
+    },
+    {
+      "role": "A",
+      "text": "Oké, dat is goed.",
+      "translation": "Okay, that's fine."
+    },
+    {
+      "role": "B",
+      "text": "Het kan een paar dagen duren voordat het geld zichtbaar is.",
+      "translation": "It may take a few days before the money is visible."
+    },
+    {
+      "role": "A",
+      "text": "Geen probleem.",
+      "translation": "No problem."
+    },
+    {
+      "role": "B",
+      "text": "Hier is uw retourbewijs.",
+      "translation": "Here is your return receipt."
+    },
+    {
+      "role": "A",
+      "text": "Bedankt voor de hulp.",
+      "translation": "Thanks for the help."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan. Fijne dag verder!",
+      "translation": "You're welcome. Have a nice day!"
+    }
+  ]
+}

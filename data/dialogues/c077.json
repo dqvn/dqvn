@@ -1,0 +1,96 @@
+{
+  "dialogue_title": "De weg vragen in het Nederlands (Asking for directions in Dutch)",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/q-hRHNjO3PE",
+  "roles": {
+    "A": "Woman (Tourist)",
+    "B": "Man (Local)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Pardon, mag ik u iets vragen?",
+      "translation": "Excuse me, may I ask you something?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, natuurlijk.",
+      "translation": "Yes, of course."
+    },
+    {
+      "role": "A",
+      "text": "Ik zoek het museum, maar ik kan het niet vinden.",
+      "translation": "I'm looking for the museum, but I can't find it."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem, het museum is niet ver van hier.",
+      "translation": "No problem, the museum is not far from here."
+    },
+    {
+      "role": "A",
+      "text": "Echt? Hoe kom ik daar?",
+      "translation": "Really? How do I get there?"
+    },
+    {
+      "role": "B",
+      "text": "Ga eerst rechtdoor tot aan het grote kruispunt.",
+      "translation": "First, go straight ahead until the large intersection."
+    },
+    {
+      "role": "A",
+      "text": "Oké, rechtdoor tot het kruispunt.",
+      "translation": "Okay, straight ahead until the intersection."
+    },
+    {
+      "role": "B",
+      "text": "Ja, daarna gaat u links.",
+      "translation": "Yes, then you turn left."
+    },
+    {
+      "role": "A",
+      "text": "Links, oké.",
+      "translation": "Left, okay."
+    },
+    {
+      "role": "B",
+      "text": "Loop dan ongeveer vijf minuten. Het museum is aan de rechterkant.",
+      "translation": "Then walk for about five minutes. The museum is on the right side."
+    },
+    {
+      "role": "A",
+      "text": "Is het een groot gebouw?",
+      "translation": "Is it a large building?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, het is een groot wit gebouw met een glazen ingang.",
+      "translation": "Yes, it's a large white building with a glass entrance."
+    },
+    {
+      "role": "A",
+      "text": "Ah, dat klinkt makkelijk te vinden.",
+      "translation": "Ah, that sounds easy to find."
+    },
+    {
+      "role": "B",
+      "text": "Ja, u kunt het bijna niet missen.",
+      "translation": "Yes, you can't miss it."
+    },
+    {
+      "role": "A",
+      "text": "Bedankt voor uw hulp.",
+      "translation": "Thanks for your help."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan. Veel plezier in het museum!",
+      "translation": "You're welcome. Have fun at the museum!"
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel.",
+      "translation": "Thank you."
+    }
+  ]
+}

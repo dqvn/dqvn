@@ -1,0 +1,106 @@
+{
+  "dialogue_title": "Inchecken in een hotel",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/l2d7S9fuDKI",
+  "roles": {
+    "A": "Guest",
+    "B": "Receptionist"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, ik heb een reservering.",
+      "translation": "Good afternoon, I have a reservation."
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag, wat is uw naam?",
+      "translation": "Good afternoon, what is your name?"
+    },
+    {
+      "role": "A",
+      "text": "Mijn naam is Daniel Müller.",
+      "translation": "My name is Daniel Müller."
+    },
+    {
+      "role": "B",
+      "text": "Even kijken. Ja, ik zie uw reservering. U blijft twee nachten, klopt dat?",
+      "translation": "Let's see. Yes, I see your reservation. You are staying for two nights, is that correct?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, dat klopt.",
+      "translation": "Yes, that's correct."
+    },
+    {
+      "role": "B",
+      "text": "Mag ik uw paspoort of identiteitskaart alstublieft?",
+      "translation": "May I have your passport or identity card, please?"
+    },
+    {
+      "role": "A",
+      "text": "Natuurlijk, hier is mijn paspoort.",
+      "translation": "Of course, here is my passport."
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel. Wilt u met kaart of contant betalen?",
+      "translation": "Thank you. Would you like to pay by card or in cash?"
+    },
+    {
+      "role": "A",
+      "text": "Ik betaal met mijn kaart.",
+      "translation": "I'll pay with my card."
+    },
+    {
+      "role": "B",
+      "text": "Perfect. Uw kamer is op de derde verdieping.",
+      "translation": "Perfect. Your room is on the third floor."
+    },
+    {
+      "role": "A",
+      "text": "Oké, dank u.",
+      "translation": "Okay, thank you."
+    },
+    {
+      "role": "B",
+      "text": "Hier is uw kamersleutel. Het ontbijt is van 7 tot 10 uur.",
+      "translation": "Here is your room key. Breakfast is from 7 to 10 am."
+    },
+    {
+      "role": "A",
+      "text": "Waar is de ontbijtzaal?",
+      "translation": "Where is the breakfast room?"
+    },
+    {
+      "role": "B",
+      "text": "Op de begane grond, naast de receptie.",
+      "translation": "On the ground floor, next to the reception."
+    },
+    {
+      "role": "A",
+      "text": "Perfect. Is er ook wifi in het hotel?",
+      "translation": "Perfect. Is there also wifi in the hotel?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, natuurlijk. De wifi-code staat op de sleutelkaart.",
+      "translation": "Yes, of course. The wifi code is on the key card."
+    },
+    {
+      "role": "A",
+      "text": "Geweldig, bedankt voor de informatie.",
+      "translation": "Great, thanks for the information."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan. Ik wens u een prettig verblijf.",
+      "translation": "You're welcome. I wish you a pleasant stay."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel.",
+      "translation": "Thank you very much."
+    }
+  ]
+}

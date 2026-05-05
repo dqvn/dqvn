@@ -1,0 +1,86 @@
+{
+  "dialogue_title": "Cappuccino en croissant – Nederlands bestellen",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/BXxYae5mwi0",
+  "roles": {
+    "A": "Barista",
+    "B": "Customer"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen, wat kan ik voor u doen?",
+      "translation": "Good morning, how can I help you?"
+    },
+    {
+      "role": "B",
+      "text": "Goedemorgen, ik wil graag een cappuccino bestellen.",
+      "translation": "Good morning, I would like to order a cappuccino."
+    },
+    {
+      "role": "A",
+      "text": "Natuurlijk. Wilt u er ook iets bij eten?",
+      "translation": "Of course. Would you like something to eat with that?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, wat raadt u aan?",
+      "translation": "Yes, what do you recommend?"
+    },
+    {
+      "role": "A",
+      "text": "Onze croissants en muffins zijn vandaag erg populair.",
+      "translation": "Our croissants and muffins are very popular today."
+    },
+    {
+      "role": "B",
+      "text": "Dan neem ik een croissant, alstublieft.",
+      "translation": "I'll have a croissant then, please."
+    },
+    {
+      "role": "A",
+      "text": "Goede keuze. Wilt u uw cappuccino hier drinken of meenemen?",
+      "translation": "Good choice. Would you like to drink your cappuccino here or take it to go?"
+    },
+    {
+      "role": "B",
+      "text": "Ik drink hem hier.",
+      "translation": "I'll drink it here."
+    },
+    {
+      "role": "A",
+      "text": "Prima. Wilt u ook suiker of melk bij uw koffie?",
+      "translation": "Great. Would you also like sugar or milk with your coffee?"
+    },
+    {
+      "role": "B",
+      "text": "Een beetje melk graag.",
+      "translation": "A little bit of milk, please."
+    },
+    {
+      "role": "A",
+      "text": "Dat komt eraan. Het totaal is €4,50.",
+      "translation": "Coming right up. The total is €4.50."
+    },
+    {
+      "role": "B",
+      "text": "Hier is mijn kaart.",
+      "translation": "Here is my card."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel. Uw bestelling komt zometeen.",
+      "translation": "Thank you. Your order will be ready in a moment."
+    },
+    {
+      "role": "B",
+      "text": "Bedankt.",
+      "translation": "Thanks."
+    },
+    {
+      "role": "A",
+      "text": "Graag gedaan. Geniet van uw koffie!",
+      "translation": "You're welcome. Enjoy your coffee!"
+    }
+  ]
+}

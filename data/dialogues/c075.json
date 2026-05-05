@@ -1,0 +1,101 @@
+{
+  "dialogue_title": "In de meubelwinkel – een tafel kopen",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/snXj6RB0cTI",
+  "roles": {
+    "A": "Klant (Customer)",
+    "B": "Winkelmedewerker (Store Associate)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, ik zoek een nieuwe tafel voor mijn woonkamer.",
+      "translation": "Good afternoon, I'm looking for a new table for my living room."
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag, wat voor tafel zoekt u?",
+      "translation": "Good afternoon, what kind of table are you looking for?"
+    },
+    {
+      "role": "A",
+      "text": "Een tafel voor vier personen.",
+      "translation": "A table for four people."
+    },
+    {
+      "role": "B",
+      "text": "Begrijpelijk. Wilt u een ronde of een rechthoekige tafel?",
+      "translation": "Understandable. Would you like a round or a rectangular table?"
+    },
+    {
+      "role": "A",
+      "text": "Ik denk een rechthoekige tafel.",
+      "translation": "I think a rectangular table."
+    },
+    {
+      "role": "B",
+      "text": "Oké, we hebben hier een paar mooie modellen.",
+      "translation": "Okay, we have a few nice models here."
+    },
+    {
+      "role": "A",
+      "text": "Deze tafel ziet er mooi uit. Van welk materiaal is hij?",
+      "translation": "This table looks nice. What material is it made of?"
+    },
+    {
+      "role": "B",
+      "text": "Deze tafel is van hout.",
+      "translation": "This table is made of wood."
+    },
+    {
+      "role": "A",
+      "text": "Dat vind ik mooi. Is hij ook in andere kleuren beschikbaar?",
+      "translation": "I like that. Is it also available in other colors?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, hij is ook beschikbaar in wit en donkerbruin.",
+      "translation": "Yes, it is also available in white and dark brown."
+    },
+    {
+      "role": "A",
+      "text": "Hoeveel kost deze tafel?",
+      "translation": "How much does this table cost?"
+    },
+    {
+      "role": "B",
+      "text": "Deze kost driehonderd euro.",
+      "translation": "This one costs three hundred euros."
+    },
+    {
+      "role": "A",
+      "text": "Oké, is levering mogelijk?",
+      "translation": "Okay, is delivery possible?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, we kunnen de tafel bij u thuis bezorgen.",
+      "translation": "Yes, we can deliver the table to your home."
+    },
+    {
+      "role": "A",
+      "text": "Hoe lang duurt de levering?",
+      "translation": "How long does the delivery take?"
+    },
+    {
+      "role": "B",
+      "text": "Ongeveer drie tot vijf dagen.",
+      "translation": "About three to five days."
+    },
+    {
+      "role": "A",
+      "text": "Dat klinkt goed. Ik wil deze tafel graag kopen.",
+      "translation": "That sounds good. I would like to buy this table."
+    },
+    {
+      "role": "B",
+      "text": "Perfect. Dan maken we de bestelling voor u in orde.",
+      "translation": "Perfect. Then we'll get the order ready for you."
+    }
+  ]
+}
