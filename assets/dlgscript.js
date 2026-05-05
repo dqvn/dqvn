@@ -476,6 +476,8 @@ function pickRole(role, skipSave = false) {
         const sel = myRole && btn.dataset.role === myRole;
         btn.classList.toggle('sel', sel);
         btn.style.background = sel ? color : '';
+        const keyEl = btn.querySelector('.rb-key');
+        if (keyEl) keyEl.style.color = sel ? '#fff' : roleColor(btn.dataset.role);
     });
     renderConv();
     if (soloMode) setMsg(myRole ? 'Klaar — klik ▶ Start' : 'Selecteer eerst een rol ↑');
