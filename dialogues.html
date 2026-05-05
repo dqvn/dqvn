@@ -28,6 +28,7 @@
     <div class="sb-logo">
       <h1>🇳🇱 Dialoog Oefenen</h1>
       <p>Dutch Dialogue Practice</p>
+      <div id="sb-streak" style="display:none"></div>
     </div>
     <!-- Search -->
     <div id="sb-search">
@@ -116,6 +117,7 @@
         <button id="btn-stop" class="tts-ico-btn tts-ico-stop" style="display:none">⏹</button>
       </div>
       <button id="btn-done">✅ &nbsp;Klaar! — Done</button>
+      <button id="btn-resume" style="display:none"></button>
       <button id="btn-start">▶ &nbsp;Start Solo Practice</button>
       <div id="tts-hint">⌨️ <b>Space</b> = Done &nbsp;·&nbsp; <b>R</b> = Herhaal</div>
     </div>
@@ -132,6 +134,11 @@
         <button class="btn-cel-close" id="btn-cel-close">✕</button>
       </div>
     </div>
+  </div>
+
+  <!-- Toast notification -->
+  <div id="toast" role="status" aria-live="polite">
+    <span id="toast-msg"></span>
   </div>
 
   <script src="assets/dlgscript.js"></script>
