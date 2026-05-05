@@ -431,6 +431,8 @@ function renderSidebar(list) {
             if (d) { loadDialogue(d); closeDrawer(); }
         })
     );
+    const active = el.querySelector('.dlg-item.active');
+    if (active) active.scrollIntoView({ block: 'nearest' });
 }
 
 /* ════════════════════════════════════════════════════
