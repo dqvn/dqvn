@@ -14,38 +14,48 @@
         },
         {
             "role": "A",
-            "text": "Ja, goed idee. Misschien een dagje naar het strand?",
-            "translation": "Yes, good idea. Maybe a day at the beach?"
+            "text": "Ja, goed idee.",
+            "translation": "Yes, good idea."
         },
         {
             "role": "B",
+            "text": "Misschien een dagje naar het strand?",
+            "translation": "Maybe a day at the beach?"
+        },
+        {
+            "role": "A",
             "text": "Klinkt leuk, maar het weer moet goed zijn.",
             "translation": "Sounds nice, but the weather has to be good."
         },
         {
-            "role": "A",
+            "role": "B",
             "text": "Ja, dat is waar.",
             "translation": "Yes, that's true."
         },
         {
-            "role": "B",
+            "role": "A",
             "text": "We kunnen ook naar het bos gaan.",
             "translation": "We could also go to the forest."
         },
         {
-            "role": "A",
+            "role": "B",
             "text": "Ja, dat lijkt me ook fijn.",
             "translation": "Yes, that also sounds nice."
         },
         {
-            "role": "B",
+            "role": "A",
             "text": "Of een stad bezoeken?",
             "translation": "Or visit a city?"
         },
         {
+            "role": "B",
+            "text": "Hm, dat is ook een optie.",
+            "translation": "Hmm, that's also an option."
+        },
+        {
             "role": "A",
-            "text": "Hm, dat is ook een optie. Wat heb je het liefst?",
-            "translation": "Hmm, that's also an option. What do you prefer?"
+            "text": "Wat heb je het liefst?",
+            "translation": "What do you prefer?"
         },
         {
             "role": "B",
@@ -54,18 +64,33 @@
         },
         {
             "role": "A",
-            "text": "Oké, laten we dat doen. Hoe gaan we er naartoe?",
-            "translation": "Okay, let's do that. How will we get there?"
+            "text": "Oké, laten we dat doen.",
+            "translation": "Okay, let's do that."
         },
         {
             "role": "B",
-            "text": "Met de trein of met de auto? Laten we de trein nemen.",
-            "translation": "By train or by car? Let's take the train."
+            "text": "Hoe gaan we er naartoe?",
+            "translation": "How will we get there?"
         },
         {
             "role": "A",
-            "text": "Prima plan. Ik heb er zin in!",
-            "translation": "Great plan. I'm looking forward to it!"
+            "text": "Met de trein of met de auto?",
+            "translation": "By train or by car?"
+        },
+        {
+            "role": "B",
+            "text": "Laten we de trein nemen.",
+            "translation": "Let's take the train."
+        },
+        {
+            "role": "A",
+            "text": "Prima plan.",
+            "translation": "Great plan."
+        },
+        {
+            "role": "B",
+            "text": "Ik heb er zin in!",
+            "translation": "I'm looking forward to it!"
         }
     ]
 }
