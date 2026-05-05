@@ -1,0 +1,71 @@
+{
+  "dialogue_title": "Te Laat op Werk – Nederlands Gesprek met de Baas",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/wdMkJd53w3c",
+  "roles": {
+    "A": "Employee",
+    "B": "Boss"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen, sorry dat ik te laat ben.",
+      "translation": "Good morning, sorry for being late."
+    },
+    {
+      "role": "B",
+      "text": "Goedemorgen, dit is niet de eerste keer.",
+      "translation": "Good morning, this isn't the first time."
+    },
+    {
+      "role": "A",
+      "text": "Ik weet het en het spijt me.",
+      "translation": "I know, and I'm sorry."
+    },
+    {
+      "role": "B",
+      "text": "Wat is er gebeurd?",
+      "translation": "What happened?"
+    },
+    {
+      "role": "A",
+      "text": "Er was veel verkeer en mijn bus had vertraging.",
+      "translation": "There was a lot of traffic and my bus was delayed."
+    },
+    {
+      "role": "B",
+      "text": "Dat begrijp ik, maar je moet op tijd komen.",
+      "translation": "I understand that, but you need to be on time."
+    },
+    {
+      "role": "A",
+      "text": "U heeft gelijk. Het zal niet meer gebeuren.",
+      "translation": "You're right. It won't happen again."
+    },
+    {
+      "role": "B",
+      "text": "Ik hoop het.",
+      "translation": "I hope so."
+    },
+    {
+      "role": "A",
+      "text": "Ik zal eerder vertrekken vanaf nu.",
+      "translation": "I will leave earlier from now on."
+    },
+    {
+      "role": "B",
+      "text": "Goed. Laten we verder werken.",
+      "translation": "Good. Let's get back to work."
+    },
+    {
+      "role": "A",
+      "text": "Dank u voor uw begrip.",
+      "translation": "Thank you for your understanding."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan.",
+      "translation": "You're welcome."
+    }
+  ]
+}

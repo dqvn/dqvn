@@ -1,0 +1,91 @@
+{
+  "dialogue_title": "Een Pakket Versturen – Nederlands Gesprek bij het Postkantoor",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/59NsILpWkcE",
+  "roles": {
+    "A": "Klant (Customer)",
+    "B": "Postmedewerker (Postal Worker)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag! Ik wil graag een pakket versturen.",
+      "translation": "Good afternoon! I would like to send a package."
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag. Waar moet het pakket naartoe?",
+      "translation": "Good afternoon. Where should the package go?"
+    },
+    {
+      "role": "A",
+      "text": "Naar Duitsland.",
+      "translation": "To Germany."
+    },
+    {
+      "role": "B",
+      "text": "Oké, hoe zwaar is het pakket?",
+      "translation": "Okay, how heavy is the package?"
+    },
+    {
+      "role": "A",
+      "text": "Ongeveer twee kilo.",
+      "translation": "About two kilos."
+    },
+    {
+      "role": "B",
+      "text": "Wilt u het snel of standaard verzenden?",
+      "translation": "Would you like to send it express or standard?"
+    },
+    {
+      "role": "A",
+      "text": "Wat is het verschil?",
+      "translation": "What is the difference?"
+    },
+    {
+      "role": "B",
+      "text": "Snelle verzending is duurder, maar sneller.",
+      "translation": "Express shipping is more expensive, but faster."
+    },
+    {
+      "role": "A",
+      "text": "Oh, dan kies ik voor standaard.",
+      "translation": "Oh, then I'll choose standard."
+    },
+    {
+      "role": "B",
+      "text": "Prima. Heeft u het adres al opgeschreven?",
+      "translation": "Fine. Have you already written the address?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, hier staat het.",
+      "translation": "Yes, here it is."
+    },
+    {
+      "role": "B",
+      "text": "Dank u. Ik plak er een label op. Oké, dat is dan twaalf euro.",
+      "translation": "Thank you. I'll put a label on it. Okay, that will be twelve euros."
+    },
+    {
+      "role": "A",
+      "text": "Hier is mijn kaart.",
+      "translation": "Here is my card."
+    },
+    {
+      "role": "B",
+      "text": "Dank u. Hier is uw bon.",
+      "translation": "Thank you. Here is your receipt."
+    },
+    {
+      "role": "A",
+      "text": "Bedankt voor de hulp!",
+      "translation": "Thanks for the help!"
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan.",
+      "translation": "You're welcome."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "dialogue_title": "Talking About Family - Dutch Conversation for Beginners",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/l6aySeSyBSI",
+  "roles": {
+    "A": "Female Speaker",
+    "B": "Male Speaker"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Heb jij een grote familie?",
+      "translation": "Do you have a large family?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, best wel. Ik heb twee broers en één zus.",
+      "translation": "Yes, quite. I have two brothers and one sister."
+    },
+    {
+      "role": "A",
+      "text": "Leuk, zie je ze vaak?",
+      "translation": "Nice, do you see them often?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, we proberen elkaar elke week te zien.",
+      "translation": "Yes, we try to see each other every week."
+    },
+    {
+      "role": "A",
+      "text": "Dat is fijn. Ik heb maar één zus. Hebben jullie een goede band?",
+      "translation": "That's nice. I only have one sister. Do you have a good bond?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, we praten bijna elke dag.",
+      "translation": "Yes, we talk almost every day."
+    },
+    {
+      "role": "A",
+      "text": "Dat is mooi. Woon jullie dicht bij elkaar?",
+      "translation": "That's beautiful. Do you live close to each other?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, ze woont in dezelfde stad. Mijn familie woont een beetje verspreid.",
+      "translation": "Yes, she lives in the same city. My family lives a bit scattered."
+    },
+    {
+      "role": "A",
+      "text": "Dat is soms lastig.",
+      "translation": "That's sometimes difficult."
+    },
+    {
+      "role": "B",
+      "text": "Ja, maar we bellen vaak.",
+      "translation": "Yes, but we call often."
+    },
+    {
+      "role": "A",
+      "text": "Dat is belangrijk. Heb jij ook neven en nichten?",
+      "translation": "That's important. Do you also have cousins?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, een paar. En jij?",
+      "translation": "Yes, a few. And you?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, best veel eigenlijk.",
+      "translation": "Yes, quite a lot actually."
+    },
+    {
+      "role": "B",
+      "text": "Gezellig, familie is echt belangrijk.",
+      "translation": "Cosy, family is really important."
+    },
+    {
+      "role": "A",
+      "text": "Dat vind ik ook.",
+      "translation": "I think so too."
+    }
+  ]
+}

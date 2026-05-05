@@ -1,0 +1,101 @@
+{
+  "dialogue_title": "Cursus Inschrijven – Nederlands Gesprek bij een Taalinstituut",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/TClRDqAJ8to",
+  "roles": {
+    "A": "Student",
+    "B": "Receptionist"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, ik wil me graag inschrijven voor een cursus.",
+      "translation": "Good afternoon, I would like to register for a course."
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag, voor welke cursus heeft u interesse?",
+      "translation": "Good afternoon, which course are you interested in?"
+    },
+    {
+      "role": "A",
+      "text": "Ik wil graag een Nederlandse taalcursus volgen.",
+      "translation": "I would like to take a Dutch language course."
+    },
+    {
+      "role": "B",
+      "text": "Dat kan. Wat is uw huidige niveau?",
+      "translation": "That's possible. What is your current level?"
+    },
+    {
+      "role": "A",
+      "text": "Ik denk beginner, misschien A1.",
+      "translation": "I think beginner, maybe A1."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem, we hebben cursussen voor beginners.",
+      "translation": "No problem, we have courses for beginners."
+    },
+    {
+      "role": "A",
+      "text": "Wanneer beginnen de lessen?",
+      "translation": "When do the lessons start?"
+    },
+    {
+      "role": "B",
+      "text": "De volgende cursus start volgende maand.",
+      "translation": "The next course starts next month."
+    },
+    {
+      "role": "A",
+      "text": "Hoe vaak zijn de lessen?",
+      "translation": "How often are the lessons?"
+    },
+    {
+      "role": "B",
+      "text": "Twee keer per week in de avond.",
+      "translation": "Twice a week in the evening."
+    },
+    {
+      "role": "A",
+      "text": "Dat is perfect voor mij.",
+      "translation": "That is perfect for me."
+    },
+    {
+      "role": "B",
+      "text": "Mooi. Wilt u zich meteen inschrijven?",
+      "translation": "Great. Would you like to register right away?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, graag.",
+      "translation": "Yes, please."
+    },
+    {
+      "role": "B",
+      "text": "Dan moet u dit formulier invullen.",
+      "translation": "Then you need to fill out this form."
+    },
+    {
+      "role": "A",
+      "text": "Oké, geen probleem.",
+      "translation": "Okay, no problem."
+    },
+    {
+      "role": "B",
+      "text": "Heeft u nog vragen?",
+      "translation": "Do you have any other questions?"
+    },
+    {
+      "role": "A",
+      "text": "Nee, alles is duidelijk. Bedankt voor de informatie.",
+      "translation": "No, everything is clear. Thanks for the information."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan en welkom bij onze cursus!",
+      "translation": "You're welcome and welcome to our course!"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "dialogue_title": "Groenten Kopen op de Markt",
+  "language": "Dutch",
+  "video_url": "www.youtube.com/shorts/_hEWWJ1d5VE",
+  "roles": {
+    "A": "Customer",
+    "B": "Market Vendor"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen, hoe duur zijn de tomaten?",
+      "translation": "Good morning, how much are the tomatoes?"
+    },
+    {
+      "role": "B",
+      "text": "Goedemorgen, ze kosten €2 per kilo.",
+      "translation": "Good morning, they cost €2 per kilo."
+    },
+    {
+      "role": "A",
+      "text": "Oké, mag ik 1 kilo alsjeblieft?",
+      "translation": "Okay, may I have 1 kilo please?"
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk. Nog iets anders?",
+      "translation": "Of course. Anything else?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, ik wil ook graag wat komkommers.",
+      "translation": "Yes, I would also like some cucumbers."
+    },
+    {
+      "role": "B",
+      "text": "Die zijn €1 per stuk.",
+      "translation": "Those are €1 each."
+    },
+    {
+      "role": "A",
+      "text": "Dan neem ik er twee.",
+      "translation": "Then I'll take two."
+    },
+    {
+      "role": "B",
+      "text": "Prima. Wilt u nog andere groenten?",
+      "translation": "Fine. Would you like any other vegetables?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, laat me even kijken. Heeft u ook verse wortelen?",
+      "translation": "Yes, let me see. Do you also have fresh carrots?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, die liggen hier. Ze zijn net binnen.",
+      "translation": "Yes, they are right here. They just arrived."
+    },
+    {
+      "role": "A",
+      "text": "Perfect, dan neem ik een bos.",
+      "translation": "Perfect, then I'll take a bunch."
+    },
+    {
+      "role": "B",
+      "text": "Goed. Dat is alles?",
+      "translation": "Good. Is that all?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, dat is alles.",
+      "translation": "Yes, that's all."
+    },
+    {
+      "role": "B",
+      "text": "Dat is €5 in totaal.",
+      "translation": "That's €5 in total."
+    },
+    {
+      "role": "A",
+      "text": "Hier is het geld. Dank u wel.",
+      "translation": "Here is the money. Thank you."
+    },
+    {
+      "role": "B",
+      "text": "Bedankt, fijne dag.",
+      "translation": "Thanks, have a nice day."
+    },
+    {
+      "role": "A",
+      "text": "Bedankt, fijne dag.",
+      "translation": "Thanks, have a nice day."
+    }
+  ]
+}

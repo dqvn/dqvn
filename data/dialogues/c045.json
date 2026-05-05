@@ -1,0 +1,86 @@
+{
+  "dialogue_title": "Handbagage Probleem op de Luchthaven",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/2cd0vENum7w",
+  "roles": {
+    "A": "Luchthavenmedewerker",
+    "B": "Passagier"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen, mag ik uw instapkaart zien?",
+      "translation": "Good morning, may I see your boarding pass?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, natuurlijk. Hier is hij.",
+      "translation": "Yes, of course. Here it is."
+    },
+    {
+      "role": "A",
+      "text": "Dank u. Heeft u alleen handbagage?",
+      "translation": "Thank you. Do you only have carry-on luggage?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, alleen deze koffer.",
+      "translation": "Yes, only this suitcase."
+    },
+    {
+      "role": "A",
+      "text": "Mag ik hem even controleren? Hij lijkt iets te groot.",
+      "translation": "May I check it for a moment? It looks a bit too big."
+    },
+    {
+      "role": "B",
+      "text": "Oh echt? Ik dacht dat hij wel mocht.",
+      "translation": "Oh really? I thought it was allowed."
+    },
+    {
+      "role": "A",
+      "text": "Laten we even kijken. Ik meet het even na. Ja, hij is helaas een paar centimeter te groot.",
+      "translation": "Let's take a look. I'll measure it. Yes, unfortunately it's a few centimeters too big."
+    },
+    {
+      "role": "B",
+      "text": "Wat betekent dat voor mij?",
+      "translation": "What does that mean for me?"
+    },
+    {
+      "role": "A",
+      "text": "U kunt hem inchecken als ruimbagage.",
+      "translation": "You can check it in as hold luggage."
+    },
+    {
+      "role": "B",
+      "text": "Moet ik daarvoor betalen?",
+      "translation": "Do I have to pay for that?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, er zijn extra kosten voor ruimbagage.",
+      "translation": "Yes, there are extra costs for hold luggage."
+    },
+    {
+      "role": "B",
+      "text": "Dat is jammer, maar goed, dan doe ik dat maar.",
+      "translation": "That's a pity, but okay, I'll do it then."
+    },
+    {
+      "role": "A",
+      "text": "Geen probleem, ik regel het voor u.",
+      "translation": "No problem, I'll take care of it for you."
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel voor de hulp.",
+      "translation": "Thank you very much for the help."
+    },
+    {
+      "role": "A",
+      "text": "Graag gedaan. Fijne vlucht!",
+      "translation": "You're welcome. Have a nice flight!"
+    }
+  ]
+}

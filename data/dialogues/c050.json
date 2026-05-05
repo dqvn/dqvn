@@ -1,0 +1,106 @@
+{
+  "dialogue_title": "Kleding Kopen op de Markt",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/Kpk8PKvgxzQ",
+  "roles": {
+    "A": "Klant (Customer)",
+    "B": "Verkoper (Seller)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, hoeveel kost dit t-shirt?",
+      "translation": "Good afternoon, how much does this t-shirt cost?"
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag, dat t-shirt kost €15.",
+      "translation": "Good afternoon, that t-shirt costs €15."
+    },
+    {
+      "role": "A",
+      "text": "Dat is een beetje duur. Heeft u misschien korting?",
+      "translation": "That's a bit expensive. Do you perhaps have a discount?"
+    },
+    {
+      "role": "B",
+      "text": "Voor u kan ik het voor €12 doen.",
+      "translation": "For you, I can do it for €12."
+    },
+    {
+      "role": "A",
+      "text": "Hm, dat is beter. Heeft u dit ook in een andere maat?",
+      "translation": "Hm, that's better. Do you also have this in another size?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, welke maat zoekt u?",
+      "translation": "Yes, what size are you looking for?"
+    },
+    {
+      "role": "A",
+      "text": "Ik zoek maat M.",
+      "translation": "I'm looking for size M."
+    },
+    {
+      "role": "B",
+      "text": "Momentje, ik kijk even. Ja, hier heb ik maat M.",
+      "translation": "One moment, let me check. Yes, I have size M here."
+    },
+    {
+      "role": "A",
+      "text": "Dank u. Mag ik het even bekijken?",
+      "translation": "Thank you. May I take a look at it?"
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk.",
+      "translation": "Of course."
+    },
+    {
+      "role": "A",
+      "text": "Het ziet er goed uit. Heeft u ook andere kleuren?",
+      "translation": "It looks good. Do you also have other colors?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, we hebben het ook in blauw en zwart.",
+      "translation": "Yes, we also have it in blue and black."
+    },
+    {
+      "role": "A",
+      "text": "Ik denk dat ik de zwarte neem.",
+      "translation": "I think I'll take the black one."
+    },
+    {
+      "role": "B",
+      "text": "Goede keuze.",
+      "translation": "Good choice."
+    },
+    {
+      "role": "A",
+      "text": "Kunt u er misschien nog iets van de prijs afhalen?",
+      "translation": "Could you perhaps take a bit more off the price?"
+    },
+    {
+      "role": "B",
+      "text": "Oké, speciaal voor u €10.",
+      "translation": "Okay, specially for you, €10."
+    },
+    {
+      "role": "A",
+      "text": "Dat is perfect. Ik neem het. Bedankt!",
+      "translation": "That's perfect. I'll take it. Thanks!"
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel, fijne dag!",
+      "translation": "Thank you, have a nice day!"
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel, fijne dag!",
+      "translation": "Thank you, have a nice day!"
+    }
+  ]
+}

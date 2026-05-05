@@ -1,0 +1,81 @@
+{
+  "dialogue_title": "Gesprek op het Treinstation",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/j6i2sQ8_GjQ",
+  "roles": {
+    "A": "Reiziger",
+    "B": "NS-medewerker"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, mijn trein is geannuleerd. Wat moet ik nu doen?",
+      "translation": "Good afternoon, my train has been canceled. What should I do now?"
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag, dat is vervelend. Naar welke bestemming reist u?",
+      "translation": "Good afternoon, that's unfortunate. What is your destination?"
+    },
+    {
+      "role": "A",
+      "text": "Naar Rotterdam.",
+      "translation": "To Rotterdam."
+    },
+    {
+      "role": "B",
+      "text": "Even kijken, er is over 30 minuten een volgende trein.",
+      "translation": "Let's see, there is another train in 30 minutes."
+    },
+    {
+      "role": "A",
+      "text": "Moet ik een nieuw ticket kopen?",
+      "translation": "Do I need to buy a new ticket?"
+    },
+    {
+      "role": "B",
+      "text": "Nee, uw huidige ticket blijft geldig.",
+      "translation": "No, your current ticket remains valid."
+    },
+    {
+      "role": "A",
+      "text": "Dat is goed om te weten.",
+      "translation": "That's good to know."
+    },
+    {
+      "role": "B",
+      "text": "U kunt ook via spoor 5 reizen.",
+      "translation": "You can also travel via platform 5."
+    },
+    {
+      "role": "A",
+      "text": "Oké, dank u. Is er kans op vertraging?",
+      "translation": "Okay, thank you. Is there a chance of delay?"
+    },
+    {
+      "role": "B",
+      "text": "Op dit moment niet, maar houd de borden in de gaten.",
+      "translation": "Not at the moment, but keep an eye on the boards."
+    },
+    {
+      "role": "A",
+      "text": "Dat zal ik doen.",
+      "translation": "I will do that."
+    },
+    {
+      "role": "B",
+      "text": "Als u nog vragen heeft, kunt u altijd terugkomen.",
+      "translation": "If you have any more questions, you can always come back."
+    },
+    {
+      "role": "A",
+      "text": "Bedankt voor de hulp.",
+      "translation": "Thanks for the help."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan. Goede reis!",
+      "translation": "You're welcome. Have a good trip!"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "dialogue_title": "Fastfood Nederlands",
+  "language": "Dutch",
+  "video_url": "www.youtube.com/shorts/r1Gq2YHCEIk",
+  "roles": {
+    "A": "Cassière",
+    "B": "Klant"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag! Wat wilt u bestellen?",
+      "translation": "Good afternoon! What would you like to order?"
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag! Ik wil graag een cheeseburger menu.",
+      "translation": "Good afternoon! I would like a cheeseburger menu."
+    },
+    {
+      "role": "A",
+      "text": "Wilt u een klein, medium of groot menu?",
+      "translation": "Would you like a small, medium or large menu?"
+    },
+    {
+      "role": "B",
+      "text": "Een medium, alstublieft.",
+      "translation": "A medium, please."
+    },
+    {
+      "role": "A",
+      "text": "Welke drank wilt u erbij?",
+      "translation": "Which drink would you like with it?"
+    },
+    {
+      "role": "B",
+      "text": "Een cola zonder ijs.",
+      "translation": "A cola without ice."
+    },
+    {
+      "role": "A",
+      "text": "Oké. Wilt u er nog iets extra’s bij?",
+      "translation": "Okay. Would you like anything extra?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, een portie friet en een saus.",
+      "translation": "Yes, a portion of fries and a sauce."
+    },
+    {
+      "role": "A",
+      "text": "Welke saus wilt u?",
+      "translation": "Which sauce would you like?"
+    },
+    {
+      "role": "B",
+      "text": "Mayonaise, alstublieft.",
+      "translation": "Mayonnaise, please."
+    },
+    {
+      "role": "A",
+      "text": "Dat is alles?",
+      "translation": "Is that all?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, dat is alles.",
+      "translation": "Yes, that's everything."
+    },
+    {
+      "role": "A",
+      "text": "Dat is €9,50.",
+      "translation": "That will be €9.50."
+    },
+    {
+      "role": "B",
+      "text": "Hier is mijn kaart.",
+      "translation": "Here is my card."
+    },
+    {
+      "role": "A",
+      "text": "Dank u. Uw bestelling wordt zo klaargemaakt.",
+      "translation": "Thank you. Your order will be ready shortly."
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel.",
+      "translation": "Thank you very much."
+    },
+    {
+      "role": "A",
+      "text": "Fijne dag!",
+      "translation": "Have a nice day!"
+    }
+  ]
+}

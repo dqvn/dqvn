@@ -1,0 +1,101 @@
+{
+  "dialogue_title": "Een Appartement Bezichtiging – Gesprek tijdens een Huisbezoek",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/0W66maVlAu4",
+  "roles": {
+    "A": "Potential Tenant",
+    "B": "Real Estate Agent"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, ik kom voor de bezichtiging van het appartement.",
+      "translation": "Good afternoon, I'm here for the apartment viewing."
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag, leuk dat u er bent. Kom binnen!",
+      "translation": "Good afternoon, nice to have you here. Come in!"
+    },
+    {
+      "role": "A",
+      "text": "Dank u, het ziet er mooi uit hier.",
+      "translation": "Thank you, it looks beautiful here."
+    },
+    {
+      "role": "B",
+      "text": "Dank u. Het appartement heeft twee kamers, een keuken en een balkon.",
+      "translation": "Thank you. The apartment has two rooms, a kitchen, and a balcony."
+    },
+    {
+      "role": "A",
+      "text": "Hoe groot is het appartement?",
+      "translation": "How big is the apartment?"
+    },
+    {
+      "role": "B",
+      "text": "Ongeveer 60 vierkante meter.",
+      "translation": "Approximately 60 square meters."
+    },
+    {
+      "role": "A",
+      "text": "Dat is precies wat ik zoek. Hoeveel is de huur per maand?",
+      "translation": "That's exactly what I'm looking for. How much is the monthly rent?"
+    },
+    {
+      "role": "B",
+      "text": "De huur is €1100 per maand, inclusief water.",
+      "translation": "The rent is €1100 per month, including water."
+    },
+    {
+      "role": "A",
+      "text": "En hoe zit het met gas en elektriciteit?",
+      "translation": "And what about gas and electricity?"
+    },
+    {
+      "role": "B",
+      "text": "Die kosten zijn apart en worden maandelijks berekend.",
+      "translation": "Those costs are separate and are calculated monthly."
+    },
+    {
+      "role": "A",
+      "text": "Is er ook een parkeerplaats?",
+      "translation": "Is there also a parking space?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, er is een privéparkeerplaats inbegrepen.",
+      "translation": "Yes, a private parking space is included."
+    },
+    {
+      "role": "A",
+      "text": "Dat is handig. En hoe lang is het huurcontract?",
+      "translation": "That's convenient. And how long is the lease?"
+    },
+    {
+      "role": "B",
+      "text": "Het standaardcontract is voor één jaar met mogelijkheid tot verlenging.",
+      "translation": "The standard contract is for one year with the possibility of extension."
+    },
+    {
+      "role": "A",
+      "text": "Klinkt goed. Ik ben zeker geïnteresseerd.",
+      "translation": "Sounds good. I am definitely interested."
+    },
+    {
+      "role": "B",
+      "text": "Fijn om te horen. Als u wilt, kunnen we meteen de papieren doornemen.",
+      "translation": "Glad to hear that. If you'd like, we can go over the paperwork right away."
+    },
+    {
+      "role": "A",
+      "text": "Graag, dank u wel voor de rondleiding.",
+      "translation": "I'd like that, thank you for the tour."
+    },
+    {
+      "role": "B",
+      "text": "Met plezier!",
+      "translation": "With pleasure!"
+    }
+  ]
+}

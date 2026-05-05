@@ -1,0 +1,81 @@
+{
+  "dialogue_title": "Vis Kopen op de Markt – Nederlands Gesprek met de Verkoper",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/r_La7kN_GW0",
+  "roles": {
+    "A": "Klant (Customer)",
+    "B": "Verkoper (Seller)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen, wat voor vis heeft u vandaag?",
+      "translation": "Good morning, what kind of fish do you have today?"
+    },
+    {
+      "role": "B",
+      "text": "Goedemorgen, we hebben zalm, kabeljauw en tonijn.",
+      "translation": "Good morning, we have salmon, cod, and tuna."
+    },
+    {
+      "role": "A",
+      "text": "Die zalm ziet er goed uit.",
+      "translation": "That salmon looks good."
+    },
+    {
+      "role": "B",
+      "text": "Ja, die is vers van vandaag. Hoeveel kost het?",
+      "translation": "Yes, it's fresh today. How much does it cost?"
+    },
+    {
+      "role": "B",
+      "text": "15 per kilo.",
+      "translation": "15 per kilo."
+    },
+    {
+      "role": "A",
+      "text": "Oké, ik wil graag een halve kilo.",
+      "translation": "Okay, I would like half a kilo."
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk. Wilt u het gefileerd hebben?",
+      "translation": "Of course. Would you like it filleted?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, graag.",
+      "translation": "Yes, please."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem.",
+      "translation": "No problem."
+    },
+    {
+      "role": "A",
+      "text": "Heeft u ook tips om het te bereiden?",
+      "translation": "Do you also have tips on how to prepare it?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, u kunt het bakken met een beetje citroen.",
+      "translation": "Yes, you can fry it with a little bit of lemon."
+    },
+    {
+      "role": "A",
+      "text": "Klinkt lekker.",
+      "translation": "Sounds delicious."
+    },
+    {
+      "role": "B",
+      "text": "Hier is uw vis.",
+      "translation": "Here is your fish."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel!",
+      "translation": "Thank you very much!"
+    }
+  ]
+}

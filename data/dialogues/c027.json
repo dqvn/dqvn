@@ -1,0 +1,76 @@
+{
+  "dialogue_title": "Telefoon Verloren – Nederlands Gesprek in het Café",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/_DQowZkERMM",
+  "roles": {
+    "A": "Woman (Customer)",
+    "B": "Man (Café Worker/Friend)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Sorry, mag ik iets vragen?",
+      "translation": "Excuse me, can I ask you something?"
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk, wat is er?",
+      "translation": "Of course, what’s up?"
+    },
+    {
+      "role": "A",
+      "text": "Ik denk dat ik mijn telefoon kwijt ben.",
+      "translation": "I think I’ve lost my phone."
+    },
+    {
+      "role": "B",
+      "text": "Waar heeft u hem voor het laatst gezien?",
+      "translation": "Where did you see it for the last time?"
+    },
+    {
+      "role": "A",
+      "text": "Hier, aan deze tafel.",
+      "translation": "Here, at this table."
+    },
+    {
+      "role": "B",
+      "text": "Heeft u al gekeken onder de tafel?",
+      "translation": "Have you already looked under the table?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, maar ik zie hem niet. Misschien ligt hij bij de balie.",
+      "translation": "Yes, but I don't see it. Maybe it's at the counter."
+    },
+    {
+      "role": "B",
+      "text": "Dat hoop ik. Momentje, ik kijk even.",
+      "translation": "I hope so. One moment, I'll take a look."
+    },
+    {
+      "role": "A",
+      "text": "Dank u, ik ben echt in paniek.",
+      "translation": "Thank you, I'm really panicking."
+    },
+    {
+      "role": "B",
+      "text": "Ah, hier is een telefoon. Is dit die van u?",
+      "translation": "Ah, here is a phone. Is this yours?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, dat is hem! Gelukkig maar.",
+      "translation": "Yes, that's it! What a relief."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel voor uw hulp.",
+      "translation": "Thank you very much for your help."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan.",
+      "translation": "You're welcome."
+    }
+  ]
+}

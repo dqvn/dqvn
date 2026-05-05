@@ -1,0 +1,81 @@
+{
+  "dialogue_title": "Brood Kopen bij de Bakker – Nederlandse Conversatie",
+  "language": "Dutch",
+  "video_url": "www.youtube.com/shorts/oUpcEswrMf0",
+  "roles": {
+    "A": "Vrouw",
+    "B": "Bakker"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen!",
+      "translation": "Good morning!"
+    },
+    {
+      "role": "B",
+      "text": "Goedemorgen, wat kan ik voor u doen?",
+      "translation": "Good morning! What can I do for you?"
+    },
+    {
+      "role": "A",
+      "text": "Ik wil graag een brood kopen.",
+      "translation": "I would like to buy a bread."
+    },
+    {
+      "role": "B",
+      "text": "Wit of bruin brood?",
+      "translation": "White or brown bread?"
+    },
+    {
+      "role": "A",
+      "text": "Bruin brood, alstublieft.",
+      "translation": "Brown bread, please."
+    },
+    {
+      "role": "B",
+      "text": "Wilt u het gesneden hebben?",
+      "translation": "Would you like it sliced?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, graag.",
+      "translation": "Yes, please."
+    },
+    {
+      "role": "B",
+      "text": "Nog iets anders?",
+      "translation": "Anything else?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, twee croissants.",
+      "translation": "Yes, two croissants."
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk. Hoeveel kost dat?",
+      "translation": "Of course. How much is that?"
+    },
+    {
+      "role": "A",
+      "text": "Dat is €4,50. Hier is mijn kaart.",
+      "translation": "That will be €4.50. Here is my card."
+    },
+    {
+      "role": "B",
+      "text": "Dank u. Hier is uw brood.",
+      "translation": "Thank you. Here is your bread."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel!",
+      "translation": "Thank you!"
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan.",
+      "translation": "You're welcome."
+    }
+  ]
+}

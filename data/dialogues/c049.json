@@ -1,0 +1,106 @@
+{
+  "dialogue_title": "Vriend Terugzien na Lange Tijd – Emotionele Nederlandse Conversatie",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/LB9zJpb4fJg",
+  "roles": {
+    "A": "Lisa",
+    "B": "Tom"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Tom, ben jij dat echt?",
+      "translation": "Tom, is that really you?"
+    },
+    {
+      "role": "B",
+      "text": "Lisa, wat leuk om je weer te zien!",
+      "translation": "Lisa, how nice to see you again!"
+    },
+    {
+      "role": "A",
+      "text": "Ongelooflijk, het is zo lang geleden! Hoe gaat het met je?",
+      "translation": "Incredible, it's been so long! How are you doing?"
+    },
+    {
+      "role": "B",
+      "text": "Het gaat goed met mij. En met jou?",
+      "translation": "I'm doing well. And you?"
+    },
+    {
+      "role": "A",
+      "text": "Ook goed. Ik kan niet geloven dat we elkaar hier tegenkomen.",
+      "translation": "Also good. I can't believe we're bumping into each other here."
+    },
+    {
+      "role": "B",
+      "text": "Ja, echt toevallig. De laatste keer dat we elkaar zagen was op school, toch?",
+      "translation": "Yes, quite a coincidence. The last time we saw each other was at school, right?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, dat is zeker acht jaar geleden.",
+      "translation": "Yes, that must be at least eight years ago."
+    },
+    {
+      "role": "B",
+      "text": "Wauw, de tijd gaat snel. Wat heb je al die jaren gedaan?",
+      "translation": "Wow, time flies. What have you been doing all these years?"
+    },
+    {
+      "role": "A",
+      "text": "Ik ben verhuisd naar een andere stad en ben daar gaan werken. En jij?",
+      "translation": "I moved to another city and started working there. And you?"
+    },
+    {
+      "role": "B",
+      "text": "Ik heb gestudeerd en werk nu in een bedrijf hier in de buurt.",
+      "translation": "I studied and now I work at a company nearby."
+    },
+    {
+      "role": "A",
+      "text": "Wat leuk om te horen! Heb je nog contact met oude vrienden?",
+      "translation": "How nice to hear! Are you still in touch with old friends?"
+    },
+    {
+      "role": "B",
+      "text": "Met een paar wel, maar niet met iedereen.",
+      "translation": "With a few, yes, but not with everyone."
+    },
+    {
+      "role": "A",
+      "text": "Dat herken ik. Het leven wordt druk en iedereen gaat zijn eigen weg.",
+      "translation": "I recognize that. Life gets busy and everyone goes their own way."
+    },
+    {
+      "role": "B",
+      "text": "Precies. Maar het is echt fijn om je weer te zien.",
+      "translation": "Exactly. But it's really nice to see you again."
+    },
+    {
+      "role": "A",
+      "text": "Dat vind ik ook. We moeten echt een keer afspreken.",
+      "translation": "I think so too. We should really meet up sometime."
+    },
+    {
+      "role": "B",
+      "text": "Ja, laten we dat doen. Misschien volgende week?",
+      "translation": "Yes, let's do that. Maybe next week?"
+    },
+    {
+      "role": "A",
+      "text": "Goed idee! Ik stuur je een bericht.",
+      "translation": "Good idea! I'll send you a message."
+    },
+    {
+      "role": "B",
+      "text": "Perfect. Tot snel dan!",
+      "translation": "Perfect. See you soon then!"
+    },
+    {
+      "role": "A",
+      "text": "Tot snel!",
+      "translation": "See you soon!"
+    }
+  ]
+}

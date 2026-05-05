@@ -1,0 +1,71 @@
+{
+  "dialogue_title": "Gesprek met de Buschauffeur – Nederlandse Conversatie",
+  "language": "Dutch",
+  "video_url": "www.youtube.com/shorts/lnn1jTk2Tyg",
+  "roles": {
+    "A": "Vrouw",
+    "B": "Buschauffeur"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen, gaat deze bus naar het station?",
+      "translation": "Good morning, does this bus go to the station?"
+    },
+    {
+      "role": "B",
+      "text": "Goedemorgen, ja dat klopt.",
+      "translation": "Good morning, yes that's correct."
+    },
+    {
+      "role": "A",
+      "text": "Mooi, dank u.",
+      "translation": "Great, thank you."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan.",
+      "translation": "You're welcome."
+    },
+    {
+      "role": "A",
+      "text": "Kan ik hier betalen?",
+      "translation": "Can I pay here?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, u kunt met kaart betalen.",
+      "translation": "Yes, you can pay by card."
+    },
+    {
+      "role": "A",
+      "text": "Oké, één kaartje alstublieft.",
+      "translation": "Okay, one ticket please."
+    },
+    {
+      "role": "B",
+      "text": "Dat is €2,50. Dank u, hier is uw ticket.",
+      "translation": "That's €2.50. Thank you, here is your ticket."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel. Kunt u zeggen wanneer we bij het station zijn?",
+      "translation": "Thank you. Can you tell me when we arrive at the station?"
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem, ik zal het aangeven.",
+      "translation": "No problem, I will let you know."
+    },
+    {
+      "role": "A",
+      "text": "Bedankt.",
+      "translation": "Thanks."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan.",
+      "translation": "You're welcome."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "dialogue_title": "Ouderavond Gesprek – Nederlands Dialoog met de Leraar",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/obz1kTGWa74",
+  "roles": {
+    "A": "Teacher",
+    "B": "Parent"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedenavond, fijn dat u er bent.",
+      "translation": "Good evening, I'm glad you're here."
+    },
+    {
+      "role": "B",
+      "text": "Goedenavond, dank u wel.",
+      "translation": "Good evening, thank you."
+    },
+    {
+      "role": "A",
+      "text": "Ik wil graag praten over de voortgang van uw kind.",
+      "translation": "I would like to talk about your child's progress."
+    },
+    {
+      "role": "B",
+      "text": "Ja graag, hoe gaat het op school?",
+      "translation": "Yes, please. How is it going at school?"
+    },
+    {
+      "role": "A",
+      "text": "Over het algemeen gaat het goed. Uw kind werkt hard.",
+      "translation": "In general, it's going well. Your child is working hard."
+    },
+    {
+      "role": "B",
+      "text": "Dat is fijn om te horen.",
+      "translation": "That's good to hear."
+    },
+    {
+      "role": "A",
+      "text": "Vooral bij rekenen doet hij het heel goed.",
+      "translation": "He's doing very well, especially in math."
+    },
+    {
+      "role": "B",
+      "text": "En hoe zit het met taal?",
+      "translation": "And how is he doing with language?"
+    },
+    {
+      "role": "A",
+      "text": "Daar kan hij nog een beetje verbeteren.",
+      "translation": "He can still improve a bit there."
+    },
+    {
+      "role": "B",
+      "text": "Oké, wat kunnen we thuis doen om te helpen?",
+      "translation": "Okay, what can we do at home to help?"
+    },
+    {
+      "role": "A",
+      "text": "U kunt samen lezen en oefenen met schrijven.",
+      "translation": "You can read together and practice writing."
+    },
+    {
+      "role": "B",
+      "text": "Dat gaan we zeker doen.",
+      "translation": "We will certainly do that."
+    },
+    {
+      "role": "A",
+      "text": "Heeft u nog vragen?",
+      "translation": "Do you have any more questions?"
+    },
+    {
+      "role": "B",
+      "text": "Nee, alles is duidelijk. Bedankt voor de informatie.",
+      "translation": "No, everything is clear. Thank you for the information."
+    },
+    {
+      "role": "A",
+      "text": "Graag gedaan. Fijne avond.",
+      "translation": "You're welcome. Have a nice evening."
+    },
+    {
+      "role": "B",
+      "text": "U ook.",
+      "translation": "You too."
+    }
+  ]
+}

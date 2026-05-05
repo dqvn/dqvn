@@ -1,0 +1,86 @@
+{
+  "dialogue_title": "Over het weekend praten – Nederlands leren met vrienden",
+  "language": "Dutch",
+  "video_url": "www.youtube.com/shorts/JzaI0r08Sao",
+  "roles": {
+    "A": "Lisa",
+    "B": "Tom"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Hoi Tom, heb je al plannen voor het weekend?",
+      "translation": "Hi Tom, do you already have plans for the weekend?"
+    },
+    {
+      "role": "B",
+      "text": "Hoi Lisa, ja een beetje. Zaterdag wil ik naar het park gaan.",
+      "translation": "Hi Lisa, yes a bit. On Saturday, I want to go to the park."
+    },
+    {
+      "role": "A",
+      "text": "Leuk, ga je alleen?",
+      "translation": "Nice, are you going alone?"
+    },
+    {
+      "role": "B",
+      "text": "Nee, ik ga met een paar vrienden.",
+      "translation": "No, I'm going with a few friends."
+    },
+    {
+      "role": "A",
+      "text": "Wat gaan jullie daar doen?",
+      "translation": "What are you guys going to do there?"
+    },
+    {
+      "role": "B",
+      "text": "We willen picknicken en misschien een beetje voetbal spelen.",
+      "translation": "We want to have a picnic and maybe play a little football."
+    },
+    {
+      "role": "A",
+      "text": "Dat klinkt gezellig. En jij, wat ga jij dit weekend doen?",
+      "translation": "That sounds cozy. And you, what are you going to do this weekend?"
+    },
+    {
+      "role": "B",
+      "text": "Zaterdag ga ik winkelen in het centrum.",
+      "translation": "Saturday I'm going shopping in the city center."
+    },
+    {
+      "role": "A",
+      "text": "Zoek je iets speciaals?",
+      "translation": "Are you looking for something special?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, ik wil een nieuwe jas kopen. En zondag?",
+      "translation": "Yes, I want to buy a new jacket. And Sunday?"
+    },
+    {
+      "role": "A",
+      "text": "Zondag ga ik mijn familie bezoeken.",
+      "translation": "Sunday I'm going to visit my family."
+    },
+    {
+      "role": "B",
+      "text": "Dat is leuk, wonen ze ver weg?",
+      "translation": "That's nice, do they live far away?"
+    },
+    {
+      "role": "A",
+      "text": "Nee, ze wonen in een dorp vlakbij. Misschien kunnen we zondagavond samen een film kijken.",
+      "translation": "No, they live in a village nearby. Maybe we can watch a movie together on Sunday evening."
+    },
+    {
+      "role": "B",
+      "text": "Ja, dat lijkt me leuk.",
+      "translation": "Yes, that sounds like fun to me."
+    },
+    {
+      "role": "A",
+      "text": "Perfect, dan spreken we zondag af.",
+      "translation": "Perfect, then we'll meet up on Sunday."
+    }
+  ]
+}

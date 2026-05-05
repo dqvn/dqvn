@@ -1,0 +1,76 @@
+{
+  "dialogue_title": "Klacht over Lawaai – Nederlands Gesprek met de Buurman",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/OwzfBdMjyd0",
+  "roles": {
+    "A": "Man/Buurman",
+    "B": "Vrouw/Buurvrouw"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Hallo, mag ik u even storen?",
+      "translation": "Hello, may I disturb you for a moment?"
+    },
+    {
+      "role": "B",
+      "text": "Ja natuurlijk, wat is er?",
+      "translation": "Yes of course, what's up?"
+    },
+    {
+      "role": "A",
+      "text": "Ik wilde even praten over het lawaai van gisteravond.",
+      "translation": "I wanted to talk about the noise from last night."
+    },
+    {
+      "role": "B",
+      "text": "Oh, was het te luid?",
+      "translation": "Oh, was it too loud?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, een beetje. Ik kon moeilijk slapen.",
+      "translation": "Yes, a bit. I had trouble sleeping."
+    },
+    {
+      "role": "B",
+      "text": "Dat spijt me echt. Ik had bezoek en we waren wat te luid.",
+      "translation": "I'm really sorry about that. I had visitors and we were a bit too loud."
+    },
+    {
+      "role": "A",
+      "text": "Dat begrijp ik, maar het gebeurt de laatste tijd vaker.",
+      "translation": "I understand, but it's been happening more often lately."
+    },
+    {
+      "role": "B",
+      "text": "U heeft gelijk, ik zal er beter op letten.",
+      "translation": "You're right, I'll pay better attention to it."
+    },
+    {
+      "role": "A",
+      "text": "Dank u, dat stel ik op prijs.",
+      "translation": "Thank you, I appreciate that."
+    },
+    {
+      "role": "B",
+      "text": "Als het nog eens gebeurt, laat het me meteen weten.",
+      "translation": "If it happens again, let me know right away."
+    },
+    {
+      "role": "A",
+      "text": "Dat zal ik doen. Nogmaals sorry voor het ongemak.",
+      "translation": "I will. Sorry again for the inconvenience."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem, bedankt voor uw begrip. Fijne dag verder!",
+      "translation": "No problem, thanks for your understanding. Have a nice day!"
+    },
+    {
+      "role": "A",
+      "text": "U ook!",
+      "translation": "You too!"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "dialogue_title": "Sorry Zeggen na een Ruzie – Nederlands Emotioneel Gesprek",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/nQJGXnIihBQ",
+  "roles": {
+    "A": "Female Speaker",
+    "B": "Male Speaker"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Kunnen we even praten?",
+      "translation": "Can we talk for a bit?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, wat is er?",
+      "translation": "Yes, what's up?"
+    },
+    {
+      "role": "A",
+      "text": "Het spijt me voor gisteren.",
+      "translation": "I'm sorry about yesterday."
+    },
+    {
+      "role": "B",
+      "text": "Waarom zeg je dat nu?",
+      "translation": "Why are you saying that now?"
+    },
+    {
+      "role": "A",
+      "text": "Omdat ik te boos reageerde.",
+      "translation": "Because I reacted too angrily."
+    },
+    {
+      "role": "B",
+      "text": "Ja, het was niet leuk.",
+      "translation": "Yes, it wasn't nice."
+    },
+    {
+      "role": "A",
+      "text": "Ik weet het en dat spijt me echt.",
+      "translation": "I know, and I'm really sorry."
+    },
+    {
+      "role": "B",
+      "text": "Ik was ook niet rustig.",
+      "translation": "I wasn't calm either."
+    },
+    {
+      "role": "A",
+      "text": "Misschien kunnen we het opnieuw proberen?",
+      "translation": "Maybe we can try again?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, dat wil ik ook. Ik wil geen ruzie meer over zulke kleine dingen.",
+      "translation": "Yes, I want that too. I don't want to fight about such small things anymore."
+    },
+    {
+      "role": "A",
+      "text": "Ik ook niet. Zijn we weer oké?",
+      "translation": "Me neither. Are we okay again?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, kom hier.",
+      "translation": "Yes, come here."
+    },
+    {
+      "role": "A",
+      "text": "Dank je.",
+      "translation": "Thank you."
+    }
+  ]
+}

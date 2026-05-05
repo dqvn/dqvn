@@ -1,0 +1,91 @@
+{
+  "dialogue_title": "Immigratie Controle – Nederlands Gesprek bij de Paspoortcontrole",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/IKrgtKtgXWE",
+  "roles": {
+    "A": "Immigration Officer",
+    "B": "Traveler"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, mag ik uw paspoort zien?",
+      "translation": "Good afternoon, may I see your passport?"
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag. Ja, natuurlijk. Hier is mijn paspoort.",
+      "translation": "Good afternoon. Yes, of course. Here is my passport."
+    },
+    {
+      "role": "A",
+      "text": "Dank u. Wat is het doel van uw reis?",
+      "translation": "Thank you. What is the purpose of your trip?"
+    },
+    {
+      "role": "B",
+      "text": "Ik ben hier voor vakantie.",
+      "translation": "I am here for vacation."
+    },
+    {
+      "role": "A",
+      "text": "Hoe lang blijft u in het land?",
+      "translation": "How long will you be staying in the country?"
+    },
+    {
+      "role": "B",
+      "text": "Ongeveer vijf dagen.",
+      "translation": "About five days."
+    },
+    {
+      "role": "A",
+      "text": "Waar verblijft u?",
+      "translation": "Where are you staying?"
+    },
+    {
+      "role": "B",
+      "text": "In een hotel in het centrum.",
+      "translation": "In a hotel in the center."
+    },
+    {
+      "role": "A",
+      "text": "Heeft u een retour ticket?",
+      "translation": "Do you have a return ticket?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, hier is mijn ticket.",
+      "translation": "Yes, here is my ticket."
+    },
+    {
+      "role": "A",
+      "text": "Dank u. Reist u alleen?",
+      "translation": "Thank you. Are you traveling alone?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, ik reis alleen.",
+      "translation": "Yes, I am traveling alone."
+    },
+    {
+      "role": "A",
+      "text": "Heeft u iets aan te geven?",
+      "translation": "Do you have anything to declare?"
+    },
+    {
+      "role": "B",
+      "text": "Nee.",
+      "translation": "No."
+    },
+    {
+      "role": "A",
+      "text": "Oké, alles is in orde. Welkom en fijne reis verder.",
+      "translation": "Okay, everything is in order. Welcome and have a nice trip."
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel.",
+      "translation": "Thank you very much."
+    }
+  ]
+}
