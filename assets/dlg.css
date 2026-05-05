@@ -352,6 +352,55 @@ body {
 .fs-btn:last-child  { font-size: .88rem; }
 .fs-btn:hover { background: var(--acc); color: #fff; }
 
+/* Volume control pill */
+#vol-ctrl {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg);
+  border: 1.5px solid var(--bdr);
+  border-radius: 20px;
+  padding: 4px 10px;
+}
+#vol-ico { color: var(--sec); flex-shrink: 0; }
+#vol-wave1, #vol-wave2 { transition: opacity .2s; }
+#vol-ctrl.muted #vol-wave1,
+#vol-ctrl.muted #vol-wave2 { opacity: 0; }
+
+#vol-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 70px;
+  height: 3px;
+  border-radius: 3px;
+  background: var(--bdr);
+  outline: none;
+  cursor: pointer;
+  background-image: linear-gradient(var(--acc), var(--acc));
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#vol-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 13px; height: 13px;
+  border-radius: 50%;
+  background: var(--acc);
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(232,93,4,.4);
+  transition: transform .15s;
+}
+#vol-slider::-moz-range-thumb {
+  width: 13px; height: 13px;
+  border-radius: 50%;
+  background: var(--acc);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(232,93,4,.4);
+}
+#vol-slider::-webkit-slider-thumb:hover { transform: scale(1.25); }
+#vol-slider::-moz-range-thumb:hover     { transform: scale(1.25); }
+
 /* Conversation font size driven by CSS variable */
 #conv-list { --fs: .92rem; }
 .c-text { font-size: var(--fs) !important; }

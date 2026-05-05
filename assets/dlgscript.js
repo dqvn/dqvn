@@ -10,7 +10,7 @@ function roleColor(key) {
 
 /* ─── Runtime state ─── */
 let dialogues = [], current = null, myRole = null, soloMode = false;
-let ttsSpeed = 0.88, lastTTSLine = -1, convFontSize = 0.92;
+let ttsSpeed = 0.88, lastTTSLine = -1, convFontSize = 0.92, ttsVolume = 1;
 const tts = { active: false, line: 0, waitUser: false };
 
 /* ─── Utility ─── */
@@ -52,6 +52,15 @@ function applyFontSize(size) {
     document.getElementById('conv-list').style.setProperty('--fs', convFontSize + 'rem');
 }
 
+function applyVolume(v) {
+    ttsVolume = Math.min(1, Math.max(0, v));
+    const slider = document.getElementById('vol-slider');
+    if (!slider) return;
+    slider.value = Math.round(ttsVolume * 100);
+    slider.style.backgroundSize = Math.round(ttsVolume * 100) + '% 100%';
+    document.getElementById('vol-ctrl').classList.toggle('muted', ttsVolume === 0);
+}
+
 function saveSession() {
     STORE.patch({
         dialogueId: current ? current.id : null,
@@ -59,7 +68,8 @@ function saveSession() {
         soloMode,
         ttsLine:    tts.line,
         speed:      ttsSpeed,
-        fontSize:   convFontSize
+        fontSize:   convFontSize,
+        volume:     ttsVolume
     });
 }
 
@@ -143,6 +153,7 @@ function loadSession() {
     }
 
     if (s.fontSize) applyFontSize(s.fontSize);
+    if (s.volume != null) applyVolume(s.volume);
 
     if (s.soloMode) {
         soloMode = true;
@@ -704,7 +715,7 @@ function speakPreview(text, waveEl) {
     if (!waveEl) return;
     waveEl.classList.add('playing');
     const u = new SpeechSynthesisUtterance(text);
-    u.lang = 'nl-NL'; u.rate = ttsSpeed; u.pitch = 1;
+    u.lang = 'nl-NL'; u.rate = ttsSpeed; u.pitch = 1; u.volume = ttsVolume;
     if (nlVoice) u.voice = nlVoice;
     u.onend = u.onerror = () => waveEl.classList.remove('playing');
     speechSynthesis.speak(u);
@@ -726,7 +737,7 @@ function speak(text) {
     return new Promise(resolve => {
         speechSynthesis.cancel();
         const u = new SpeechSynthesisUtterance(text);
-        u.lang = 'nl-NL'; u.rate = ttsSpeed; u.pitch = 1;
+        u.lang = 'nl-NL'; u.rate = ttsSpeed; u.pitch = 1; u.volume = ttsVolume;
         if (nlVoice) u.voice = nlVoice;
         u.onend = resolve; u.onerror = resolve;
         speechSynthesis.speak(u);
@@ -794,6 +805,10 @@ async function forceReload() {
     document.getElementById('mob-reload-btn').addEventListener('click', forceReload);
     document.getElementById('fs-down').addEventListener('click', () => { applyFontSize(convFontSize - 0.08); saveSession(); });
     document.getElementById('fs-up').addEventListener('click',   () => { applyFontSize(convFontSize + 0.08); saveSession(); });
+
+    const volSlider = document.getElementById('vol-slider');
+    volSlider.addEventListener('input', () => { applyVolume(volSlider.value / 100); saveSession(); });
+    applyVolume(ttsVolume);
     const found = await discover();
     dialogues   = found;
     updateStreak();             // count today's visit for streak
