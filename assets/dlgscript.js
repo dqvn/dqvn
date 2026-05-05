@@ -583,8 +583,17 @@ document.querySelectorAll('.spd-btn').forEach(btn =>
    ════════════════════════════════════════════════════ */
 document.getElementById('btn-start').addEventListener('click',  () => startTTS(0));
 document.getElementById('btn-resume').addEventListener('click', () => startTTS(STORE.get().ttsLine || 0));
-document.getElementById('btn-stop').addEventListener('click',   stopTTS);
-document.getElementById('btn-repeat').addEventListener('click', repeatLast);
+document.getElementById('btn-stop').addEventListener('click',    stopTTS);
+document.getElementById('btn-repeat').addEventListener('click',  repeatLast);
+document.getElementById('btn-preview').addEventListener('click', previewMyLine);
+function previewMyLine() {
+    if (!tts.waitUser || !current) return;
+    const line = current.conversation[tts.line];
+    if (!line) return;
+    const lineEl = document.getElementById('cl-' + tts.line);
+    const waveEl = lineEl ? lineEl.querySelector('.c-wave') : null;
+    speakPreview(line.text, waveEl || document.createElement('div'));
+}
 document.getElementById('btn-done').addEventListener('click',   userDone);
 document.getElementById('btn-again').addEventListener('click', () => {
     document.getElementById('celebrate').classList.remove('on');
@@ -599,7 +608,7 @@ function startTTS(fromLine = 0) {
     if (!current) return;
     tts.active = true; tts.line = fromLine; tts.waitUser = false; lastTTSLine = -1;
     hide('btn-start'); hide('btn-resume');
-    show('btn-stop'); hide('btn-repeat'); hide('btn-done');
+    show('btn-stop'); hide('btn-repeat'); hide('btn-done'); hide('btn-preview');
     renderConv(fromLine, fromLine);
     runStep();
 }
@@ -607,7 +616,7 @@ function startTTS(fromLine = 0) {
 function stopTTS() {
     tts.active = false; tts.waitUser = false;
     speechSynthesis.cancel();
-    hide('btn-done'); hide('btn-repeat'); hide('btn-resume');
+    hide('btn-done'); hide('btn-repeat'); hide('btn-preview'); hide('btn-resume');
     show('btn-start'); hide('btn-stop');
     setWave(false); resetProg();
     setMsg('Gestopt');
@@ -619,7 +628,7 @@ function stopTTS() {
 function userDone() {
     if (!tts.waitUser) return;
     tts.waitUser = false;
-    hide('btn-done');
+    hide('btn-done'); hide('btn-preview');
     advanceTTS();
 }
 
@@ -640,7 +649,7 @@ async function runStep() {
         // ── Dialogue complete ──
         tts.active = false;
         setWave(false); setProg(1); updateConv(conv.length);
-        hide('btn-done'); hide('btn-stop'); hide('btn-repeat'); hide('btn-resume');
+        hide('btn-done'); hide('btn-stop'); hide('btn-repeat'); hide('btn-preview'); hide('btn-resume');
         show('btn-start');
         setMsg('🎉 Klaar!');
         document.getElementById('tts-top').classList.remove('spk');
@@ -663,11 +672,13 @@ async function runStep() {
         document.getElementById('tts-top').classList.remove('spk');
         setMsg(`Jouw beurt als ${current.roles[myRole] || myRole}! 🎤`);
         show('btn-done');
+        show('btn-preview');
         if (lastTTSLine >= 0) show('btn-repeat');
     } else {
         // ── TTS speaks ──
         tts.waitUser = false;
         hide('btn-done');
+        hide('btn-preview');
         document.getElementById('tts-top').classList.add('spk');
         setMsg(`${current.roles[line.role] || line.role} 🔊`);
         setWave(true);
@@ -754,11 +765,12 @@ const resetProg = () => { document.getElementById('prog-bar').style.width = '0%'
 
 // Explicit display values — avoids reverting to CSS display:none when style='' is set
 const SHOW_AS = {
-    'btn-done':   'block',
-    'btn-start':  'block',
-    'btn-resume': 'block',
-    'btn-repeat': 'flex',
-    'btn-stop':   'flex'
+    'btn-done':    'block',
+    'btn-start':   'block',
+    'btn-resume':  'block',
+    'btn-repeat':  'flex',
+    'btn-preview': 'flex',
+    'btn-stop':    'flex'
 };
 const show = id => { document.getElementById(id).style.display = SHOW_AS[id] || 'flex'; };
 const hide = id => { document.getElementById(id).style.display = 'none'; };
@@ -769,6 +781,7 @@ const hide = id => { document.getElementById(id).style.display = 'none'; };
 document.addEventListener('keydown', e => {
     if (['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName)) return;
     if (e.code === 'Space' && tts.waitUser) { e.preventDefault(); userDone(); }
+    if (e.key.toLowerCase() === 'h' && tts.waitUser) previewMyLine();
     if (e.key.toLowerCase() === 'r' && tts.active) repeatLast();
     if (e.key === 'Escape') closeDrawer();
 });
