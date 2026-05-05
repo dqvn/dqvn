@@ -470,15 +470,15 @@ function renderRoles(roles) {
 }
 
 function pickRole(role, skipSave = false) {
-    myRole = role;
+    myRole = myRole === role ? null : role;
     const color = roleColor(role);
     document.querySelectorAll('.role-btn').forEach(btn => {
-        const sel = btn.dataset.role === role;
+        const sel = myRole && btn.dataset.role === myRole;
         btn.classList.toggle('sel', sel);
         btn.style.background = sel ? color : '';
     });
     renderConv();
-    if (soloMode) setMsg('Klaar — klik ▶ Start');
+    if (soloMode) setMsg(myRole ? 'Klaar — klik ▶ Start' : 'Selecteer eerst een rol ↑');
     if (!skipSave) saveSession();
 }
 
@@ -754,6 +754,7 @@ document.addEventListener('keydown', e => {
    INIT
    ════════════════════════════════════════════════════ */
 (async () => {
+    document.getElementById('year').textContent = new Date().getFullYear();
     const found = await discover();
     dialogues   = found;
     updateStreak();             // count today's visit for streak
