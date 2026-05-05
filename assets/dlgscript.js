@@ -10,7 +10,7 @@ function roleColor(key) {
 
 /* ─── Runtime state ─── */
 let dialogues = [], current = null, myRole = null, soloMode = false;
-let ttsSpeed = 0.88, lastTTSLine = -1;
+let ttsSpeed = 0.88, lastTTSLine = -1, convFontSize = 0.92;
 const tts = { active: false, line: 0, waitUser: false };
 
 /* ─── Utility ─── */
@@ -47,13 +47,19 @@ const STORE = {
 };
 
 /* Save current UI state (called after any meaningful change) */
+function applyFontSize(size) {
+    convFontSize = Math.min(1.4, Math.max(0.72, size));
+    document.getElementById('conv-list').style.setProperty('--fs', convFontSize + 'rem');
+}
+
 function saveSession() {
     STORE.patch({
         dialogueId: current ? current.id : null,
         role:       myRole,
         soloMode,
         ttsLine:    tts.line,
-        speed:      ttsSpeed
+        speed:      ttsSpeed,
+        fontSize:   convFontSize
     });
 }
 
@@ -135,6 +141,8 @@ function loadSession() {
             b.classList.toggle('spd-on', parseFloat(b.dataset.spd) === s.speed)
         );
     }
+
+    if (s.fontSize) applyFontSize(s.fontSize);
 
     if (s.soloMode) {
         soloMode = true;
@@ -782,6 +790,8 @@ async function forceReload() {
     document.getElementById('year').textContent = yr;
     document.getElementById('year-mob').textContent = yr;
     document.getElementById('mob-reload-btn').addEventListener('click', forceReload);
+    document.getElementById('fs-down').addEventListener('click', () => { applyFontSize(convFontSize - 0.08); saveSession(); });
+    document.getElementById('fs-up').addEventListener('click',   () => { applyFontSize(convFontSize + 0.08); saveSession(); });
     const found = await discover();
     dialogues   = found;
     updateStreak();             // count today's visit for streak
