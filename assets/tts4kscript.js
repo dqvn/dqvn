@@ -149,7 +149,7 @@ function speakEngText(text) {
 // read dutch words in json file
 function loadJsonData(filename, callback) {
   var xhr = new XMLHttpRequest();
-  var filePath = "data/" + filename + ".json";
+  var filePath = "data/vocabularies/" + filename + ".json";
   xhr.open('GET', filePath, true);
   xhr.onload = function () {
     if (xhr.status === 200) {
