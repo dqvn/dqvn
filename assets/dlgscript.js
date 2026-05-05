@@ -778,7 +778,9 @@ async function forceReload() {
    INIT
    ════════════════════════════════════════════════════ */
 (async () => {
-    document.getElementById('year').textContent = new Date().getFullYear();
+    const yr = new Date().getFullYear();
+    document.getElementById('year').textContent = yr;
+    document.getElementById('year-mob').textContent = yr;
     document.getElementById('mob-reload-btn').addEventListener('click', forceReload);
     const found = await discover();
     dialogues   = found;

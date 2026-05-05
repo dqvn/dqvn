@@ -743,8 +743,9 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
   /* TTS bar: hide keyboard hint */
   #tts-hint { display: none; }
 
-  /* Footer hidden inside mobile drawer */
+  /* Sidebar footer hidden on mobile (inside drawer), mobile footer shown instead */
   #app-footer { display: none; }
+  #app-footer-mob { display: block; }
 }
 
 /* ══════════════════════════════════════════
@@ -801,7 +802,23 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
 }
 #btn-resume:hover { background: #0ea5ca; }
 
-/* Footer — lives at bottom of sidebar */
+/* Footer — desktop: bottom of sidebar; mobile: bottom of content */
+#app-footer-mob {
+  display: none;   /* shown only on mobile via media query */
+  flex-shrink: 0;
+  text-align: center;
+  font-size: .65rem;
+  color: var(--sec);
+  padding: 5px 12px;
+  border-top: 1px solid var(--bdr);
+  background: var(--card);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#app-footer-mob a { color: var(--acc); text-decoration: none; }
+#app-footer-mob a:hover { text-decoration: underline; }
+
 #app-footer {
   flex-shrink: 0;
   text-align: center;
