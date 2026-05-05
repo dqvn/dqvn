@@ -64,13 +64,8 @@
     },
     {
       "role": "B",
-      "text": "Geen probleem, ik breng u meteen iets.",
-      "translation": "No problem, I'll bring you something right away."
-    },
-    {
-      "role": "B",
-      "text": "Hier is een kleine snack. Voelt u zich al iets beter?",
-      "translation": "Here is a small snack. Do you feel a bit better already?"
+      "text": "Geen probleem, ik breng u meteen iets. Hier is een kleine snack. Voelt u zich al iets beter?",
+      "translation": "No problem, I'll bring you something right away. Here is a small snack. Do you feel a bit better already?"
     },
     {
       "role": "A",
