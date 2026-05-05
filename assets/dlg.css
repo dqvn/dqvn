@@ -688,6 +688,10 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
   #drawer-overlay { display: none !important; }
   .sb-drag-handle { display: none !important; }
   #tts-hint   { display: block; }
+
+  /* Video on right, info on left inside the header card */
+  #yt-wrap  { order: 2; }
+  #hdr-info { order: 1; }
 }
 
 /* ── Mobile layout (≤ 700px) ── */
@@ -739,7 +743,8 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
   /* TTS bar: hide keyboard hint */
   #tts-hint { display: none; }
 
-  /* TTS bar buttons full-width already via width:100% */
+  /* Footer hidden inside mobile drawer */
+  #app-footer { display: none; }
 }
 
 /* ══════════════════════════════════════════
@@ -796,21 +801,20 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
 }
 #btn-resume:hover { background: #0ea5ca; }
 
-/* Footer */
+/* Footer — lives at bottom of sidebar */
 #app-footer {
   flex-shrink: 0;
   text-align: center;
-  font-size: .68rem;
-  color: var(--sec);
-  padding: 5px 12px;
-  border-top: 1px solid var(--bdr);
-  background: var(--card);
+  font-size: .65rem;
+  color: rgba(255,255,255,.28);
+  padding: 6px 12px;
+  border-top: 1px solid rgba(255,255,255,.07);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-#app-footer a { color: var(--acc); text-decoration: none; }
-#app-footer a:hover { text-decoration: underline; }
+#app-footer a { color: rgba(255,255,255,.45); text-decoration: none; }
+#app-footer a:hover { color: var(--acc); text-decoration: underline; }
 
 /* Toast notification — slides up from bottom centre */
 #toast {
