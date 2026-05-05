@@ -454,7 +454,10 @@ function setTitle(text) {
     el.classList.remove('scrolling');
     el.innerHTML = `<span>${text.replace(/</g, '&lt;')}</span>`;
     requestAnimationFrame(() => {
+        // Temporarily force nowrap so we can measure the true text width
+        el.style.whiteSpace = 'nowrap';
         const ovf = el.scrollWidth - el.clientWidth;
+        el.style.whiteSpace = '';
         if (ovf > 4) {
             el.style.setProperty('--title-ovf', `-${ovf}px`);
             el.classList.add('scrolling');
