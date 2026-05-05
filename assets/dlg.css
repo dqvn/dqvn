@@ -670,6 +670,7 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
 
 /* ── Spinner ── */
 @keyframes spin { to { transform: rotate(360deg); } }
+#reload-ico.spinning { animation: spin .7s linear infinite; transform-origin: center; }
 .spin {
   width: 14px; height: 14px;
   border: 2px solid rgba(255,255,255,.2);

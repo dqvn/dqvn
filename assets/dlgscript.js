@@ -751,10 +751,33 @@ document.addEventListener('keydown', e => {
 });
 
 /* ════════════════════════════════════════════════════
+   FORCE RELOAD
+   ════════════════════════════════════════════════════ */
+async function forceReload() {
+    const ico = document.getElementById('reload-ico');
+    const btn = document.getElementById('mob-reload-btn');
+    ico.classList.add('spinning');
+    btn.disabled = true;
+    try {
+        DCACHE.clear();
+        const found = await _fetchAll();
+        dialogues = found;
+        renderSidebar(found);
+        showToast('✅ Inhoud bijgewerkt / Content refreshed');
+    } catch {
+        showToast('❌ Ophalen mislukt / Fetch failed');
+    } finally {
+        ico.classList.remove('spinning');
+        btn.disabled = false;
+    }
+}
+
+/* ════════════════════════════════════════════════════
    INIT
    ════════════════════════════════════════════════════ */
 (async () => {
     document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('mob-reload-btn').addEventListener('click', forceReload);
     const found = await discover();
     dialogues   = found;
     updateStreak();             // count today's visit for streak
