@@ -740,3 +740,84 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
 
   /* TTS bar buttons full-width already via width:100% */
 }
+
+/* ══════════════════════════════════════════
+   PERSISTENCE UI ADDITIONS
+   ══════════════════════════════════════════ */
+
+/* Streak pill in sidebar */
+#sb-streak {
+  font-size: .72rem;
+  font-weight: 600;
+  color: rgba(255,255,255,.55);
+  margin-top: 6px;
+  letter-spacing: .2px;
+}
+
+/* Dialogue list: name + completion dots on same row */
+.dlg-name-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+/* Completion dots — filled circles, up to 5 */
+.dlg-badge {
+  font-size: .55rem;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,.3);
+  flex-shrink: 0;
+  white-space: nowrap;
+  line-height: 1;
+}
+.dlg-item.active .dlg-badge { color: rgba(255,255,255,.7); }
+.dlg-badge-extra {
+  font-size: .6rem;
+  vertical-align: middle;
+}
+
+/* Resume button — teal, same width as start/done */
+#btn-resume {
+  display: none;
+  padding: 11px;
+  background: #0891b2;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: .85rem;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  transition: background .15s;
+  letter-spacing: -.1px;
+}
+#btn-resume:hover { background: #0ea5ca; }
+
+/* Toast notification — slides up from bottom centre */
+#toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(16px);
+  background: #1a202c;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: .82rem;
+  font-weight: 500;
+  white-space: nowrap;
+  max-width: calc(100vw - 32px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 500;
+  box-shadow: 0 4px 20px rgba(0,0,0,.35);
+  transition: opacity .3s, transform .35s cubic-bezier(.34,1.3,.64,1);
+}
+#toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
