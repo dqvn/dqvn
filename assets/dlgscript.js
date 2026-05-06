@@ -478,7 +478,7 @@ function loadDialogue(d, skipSave = false) {
     const wrap = document.getElementById('yt-wrap');
     const vid  = ytId(d.video_url);
     wrap.innerHTML = vid
-        ? `<iframe src="https://www.youtube.com/embed/${vid}?rel=0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>`
+        ? `<iframe src="https://www.youtube.com/embed/${vid}?rel=0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;fullscreen" allowfullscreen></iframe>`
         : `<div id="yt-ph"><svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span>No video</span></div>`;
 
     renderRoles(d.roles);
@@ -911,6 +911,25 @@ const WAKE = (() => {
     document.getElementById('year').textContent = yr;
     document.getElementById('year-mob').textContent = yr;
     document.getElementById('mob-reload-btn').addEventListener('click', forceReload);
+
+    // Video fullscreen toggle
+    const ytWrap  = document.getElementById('yt-wrap');
+    const ytFsBtn = document.getElementById('yt-fs-btn');
+    const FS_EXPAND   = `<path d="M8 3H5a2 2 0 0 0-2 2v3M21 8V5a2 2 0 0 0-2-2h-3M16 21h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>`;
+    const FS_COLLAPSE = `<path d="M8 3v5H3M21 8V3h-5M16 21v-5h5M3 16h5v5"/>`;
+    function updateFsIcon() {
+        const inFs = !!(document.fullscreenElement || document.webkitFullscreenElement);
+        document.getElementById('yt-fs-ico').innerHTML = inFs ? FS_COLLAPSE : FS_EXPAND;
+    }
+    ytFsBtn.addEventListener('click', () => {
+        if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+            (ytWrap.requestFullscreen || ytWrap.webkitRequestFullscreen).call(ytWrap);
+        } else {
+            (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+        }
+    });
+    document.addEventListener('fullscreenchange', updateFsIcon);
+    document.addEventListener('webkitfullscreenchange', updateFsIcon);
     document.getElementById('sb-reload-btn').addEventListener('click', forceReload);
     document.getElementById('mob-wake-btn').addEventListener('click', () => WAKE.toggle());
     const savedWake = STORE.get().wakeLock;
