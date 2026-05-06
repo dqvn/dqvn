@@ -782,61 +782,56 @@ function speakPreview(text, waveEl, role) {
     speechSynthesis.cancel();
     if (!waveEl) return;
     waveEl.classList.add('playing');
+    const cfg  = ttsConfigForRole(role);
+    const rate = ttsConfigForRole(role) === ttsB ? Math.max(0.1, ttsSpeed - 0.2) : ttsSpeed;
     const u = new SpeechSynthesisUtterance(text);
-    const p = voiceParamsForRole(role);
-    u.lang = 'nl-NL'; u.rate = ttsSpeed * (p.rate ?? 1); u.pitch = p.pitch; u.volume = ttsVolume;
-    if (p.voice) u.voice = p.voice;
+    u.lang = 'nl-NL'; u.rate = rate; u.pitch = cfg.pitch; u.volume = ttsVolume;
+    if (cfg.voice) u.voice = cfg.voice;
     u.onend = u.onerror = () => waveEl.classList.remove('playing');
     speechSynthesis.speak(u);
 }
 
 /* ════════════════════════════════════════════════════
-   SPEECH SYNTHESIS
+   SPEECH SYNTHESIS  –  two independent TTS instances
+   ttsA  →  even-index roles (A, C, E): browser default nl voice, pitch 1, full speed
+   ttsB  →  odd-index  roles (B, D):    second nl voice when available (else same voice
+            at pitch 0.8); always 0.2 slower than the current speed setting.
    ════════════════════════════════════════════════════ */
-/* ── Dutch voice pool ──
-   Role A/C/E → browser default nl voice (primary), pitch 1.
-   Role B/D   → second nl voice if the browser has one (secondary);
-                if only one nl voice exists, reuse primary at lower pitch. ── */
-const nlVoices = { primary: null, secondary: null, hasSecondary: false };
+const ttsA = { voice: null, pitch: 1 };
+const ttsB = { voice: null, pitch: 1 };
 
 function loadVoices() {
     const vs = speechSynthesis.getVoices();
     const nl = vs.filter(v => v.lang === 'nl-NL' || v.lang === 'nl-BE' || v.lang.startsWith('nl'));
     if (!nl.length) return;
 
-    nlVoices.primary      = nl[0];
-    nlVoices.secondary    = nl[1] || null;
-    nlVoices.hasSecondary = nl.length > 1;
+    ttsA.voice = nl[0];
+    ttsA.pitch = 1;
 
-    console.log('[TTS] primary:', nlVoices.primary?.name,
-                '| secondary:', nlVoices.secondary?.name ?? 'none (pitch fallback)');
+    ttsB.voice = nl[1] || nl[0];               // second voice if browser has one
+    ttsB.pitch = nl.length > 1 ? 1 : 0.8;      // lower pitch only when sharing voice
+
+    console.log('[TTS A]', ttsA.voice?.name, '| [TTS B]', ttsB.voice?.name,
+                nl.length > 1 ? '(distinct voice)' : '(shared voice, pitch 0.8)');
 }
 speechSynthesis.addEventListener('voiceschanged', loadVoices);
 loadVoices();
 
-/* Role → voice + pitch.
-   Even index (A,C,E) = primary voice at pitch 1.
-   Odd  index (B,D)   = secondary voice if available, else primary at pitch 0.8. */
-function voiceParamsForRole(roleKey) {
-    const roles     = current ? Object.keys(current.roles) : [];
-    const isPrimary = roles.indexOf(roleKey) % 2 === 0;
-    if (isPrimary) {
-        return { voice: nlVoices.primary, pitch: 1, rate: 1 };
-    }
-    return {
-        voice: nlVoices.secondary || nlVoices.primary,
-        pitch: nlVoices.hasSecondary ? 1 : 0.8,
-        rate:  nlVoices.hasSecondary ? 1 : 0.9
-    };
+function ttsConfigForRole(roleKey) {
+    const roles = current ? Object.keys(current.roles) : [];
+    return roles.indexOf(roleKey) % 2 === 0 ? ttsA : ttsB;
 }
 
 function speak(text, role) {
     return new Promise(resolve => {
         speechSynthesis.cancel();
+        const cfg  = ttsConfigForRole(role);
+        const rate = role && ttsConfigForRole(role) === ttsB
+                     ? Math.max(0.1, ttsSpeed - 0.2)
+                     : ttsSpeed;
         const u = new SpeechSynthesisUtterance(text);
-        const p = voiceParamsForRole(role);
-        u.lang = 'nl-NL'; u.rate = ttsSpeed * (p.rate ?? 1); u.pitch = p.pitch; u.volume = ttsVolume;
-        if (p.voice) u.voice = p.voice;
+        u.lang = 'nl-NL'; u.rate = rate; u.pitch = cfg.pitch; u.volume = ttsVolume;
+        if (cfg.voice) u.voice = cfg.voice;
         u.onend = resolve; u.onerror = resolve;
         speechSynthesis.speak(u);
     });
