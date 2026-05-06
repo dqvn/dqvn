@@ -420,9 +420,10 @@ body.yt-panel-open #content {
   margin-right: min(300px, calc(100dvh * 9 / 16));
 }
 
-/* Hide panel on mobile — not needed there */
+/* Hide panel and its trigger on mobile — not needed there */
 @media (max-width: 700px) {
   #yt-panel { display: none !important; }
+  #yt-pop-btn { display: none !important; }
   body.yt-panel-open #content { margin-right: 0; }
 }
 #yt-ph {
