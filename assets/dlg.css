@@ -180,6 +180,22 @@ body {
 }
 .sb-clear-btn:hover { color: #fff; }
 
+.sb-reload-btn {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,.35);
+  cursor: pointer;
+  padding: 3px 4px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: color .15s, background .15s;
+}
+.sb-reload-btn:hover { color: #fff; background: rgba(255,255,255,.1); }
+#sb-reload-ico.spinning { animation: spin .7s linear infinite; transform-origin: center; }
+
 #dlg-list {
   flex: 1;
   overflow-y: auto;
