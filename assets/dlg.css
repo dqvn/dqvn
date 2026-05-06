@@ -359,7 +359,7 @@ body {
   top: 0;
   right: 0;
   width: calc(100dvh * 9 / 16);
-  max-width: 300px;
+  max-width: 500px;
   min-width: 180px;
   height: 100dvh;
   background: #000;
