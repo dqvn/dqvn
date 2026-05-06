@@ -344,13 +344,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
+  opacity: 0.45;
   transition: opacity .2s, background .15s, transform .15s;
   backdrop-filter: blur(4px);
   z-index: 10;
 }
-#yt-wrap:hover #yt-fs-btn { opacity: 1; }
-#yt-fs-btn:hover { background: rgba(0,0,0,.8); transform: scale(1.1); }
+/* JS adds .hovered class since iframe blocks CSS :hover */
+#yt-wrap.hovered #yt-fs-btn { opacity: 1; }
+#yt-fs-btn:hover { opacity: 1; background: rgba(0,0,0,.85); transform: scale(1.1); }
 
 /* Fullscreen: fill entire viewport */
 #yt-wrap:fullscreen,

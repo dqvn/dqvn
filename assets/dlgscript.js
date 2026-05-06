@@ -921,6 +921,10 @@ const WAKE = (() => {
         const inFs = !!(document.fullscreenElement || document.webkitFullscreenElement);
         document.getElementById('yt-fs-ico').innerHTML = inFs ? FS_COLLAPSE : FS_EXPAND;
     }
+    // iframe captures mouse events so CSS :hover on the wrapper never fires — use JS instead
+    ytWrap.addEventListener('mouseenter', () => ytWrap.classList.add('hovered'));
+    ytWrap.addEventListener('mouseleave', () => ytWrap.classList.remove('hovered'));
+
     ytFsBtn.addEventListener('click', () => {
         if (!document.fullscreenElement && !document.webkitFullscreenElement) {
             (ytWrap.requestFullscreen || ytWrap.webkitRequestFullscreen).call(ytWrap);
