@@ -773,7 +773,7 @@ function speakPreview(text, waveEl, role) {
     waveEl.classList.add('playing');
     const u = new SpeechSynthesisUtterance(text);
     const p = voiceParamsForRole(role);
-    u.lang = 'nl-NL'; u.rate = ttsSpeed; u.pitch = p.pitch; u.volume = ttsVolume;
+    u.lang = 'nl-NL'; u.rate = ttsSpeed * (p.rate ?? 1); u.pitch = p.pitch; u.volume = ttsVolume;
     if (p.voice) u.voice = p.voice;
     u.onend = u.onerror = () => waveEl.classList.remove('playing');
     speechSynthesis.speak(u);
@@ -810,11 +810,12 @@ function voiceParamsForRole(roleKey) {
     const roles     = current ? Object.keys(current.roles) : [];
     const isPrimary = roles.indexOf(roleKey) % 2 === 0;
     if (isPrimary) {
-        return { voice: nlVoices.primary, pitch: 1 };
+        return { voice: nlVoices.primary, pitch: 1, rate: 1 };
     }
     return {
         voice: nlVoices.secondary || nlVoices.primary,
-        pitch: nlVoices.hasSecondary ? 1 : 0.8
+        pitch: nlVoices.hasSecondary ? 1 : 0.8,
+        rate:  nlVoices.hasSecondary ? 1 : 0.9
     };
 }
 
@@ -823,7 +824,7 @@ function speak(text, role) {
         speechSynthesis.cancel();
         const u = new SpeechSynthesisUtterance(text);
         const p = voiceParamsForRole(role);
-        u.lang = 'nl-NL'; u.rate = ttsSpeed; u.pitch = p.pitch; u.volume = ttsVolume;
+        u.lang = 'nl-NL'; u.rate = ttsSpeed * (p.rate ?? 1); u.pitch = p.pitch; u.volume = ttsVolume;
         if (p.voice) u.voice = p.voice;
         u.onend = resolve; u.onerror = resolve;
         speechSynthesis.speak(u);
