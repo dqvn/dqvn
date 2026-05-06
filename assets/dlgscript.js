@@ -475,11 +475,8 @@ function loadDialogue(d, skipSave = false) {
     setTitle(d.dialogue_title);
     document.getElementById('dlg-lang').textContent  = d.language || 'Nederlands';
 
-    const wrap = document.getElementById('yt-wrap');
-    const vid  = ytId(d.video_url);
-    wrap.innerHTML = vid
-        ? `<iframe src="https://www.youtube.com/embed/${vid}?rel=0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;fullscreen" allowfullscreen></iframe>`
-        : `<div id="yt-ph"><svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span>No video</span></div>`;
+    if (ytPanelOpen) closeYtPanel();
+    setYtWrap(d.video_url);
 
     renderRoles(d.roles);
     document.getElementById('tts-toggle').checked = false;
@@ -487,6 +484,43 @@ function loadDialogue(d, skipSave = false) {
     renderConv();
 
     if (!skipSave) saveSession();
+}
+
+/* ════════════════════════════════════════════════════
+   VIDEO POP-OUT PANEL
+   ════════════════════════════════════════════════════ */
+let ytPanelOpen = false;
+
+const POP_BTN_HTML = `<button id="yt-pop-btn" title="Open video panel / Zwevend scherm"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h6"/></svg> Bekijk video</button>`;
+
+function setYtWrap(videoUrl) {
+    const wrap = document.getElementById('yt-wrap');
+    const vid  = ytId(videoUrl);
+    wrap.innerHTML = vid
+        ? `<iframe src="https://www.youtube.com/embed/${vid}?rel=0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;fullscreen" allowfullscreen></iframe>${POP_BTN_HTML}`
+        : `<div id="yt-ph"><svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span>Geen video</span></div>`;
+}
+
+function openYtPanel() {
+    if (!current) return;
+    const vid = ytId(current.video_url);
+    if (!vid) return;
+    document.getElementById('yt-panel-body').innerHTML =
+        `<iframe src="https://www.youtube.com/embed/${vid}?rel=0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;fullscreen" allowfullscreen></iframe>`;
+    document.getElementById('yt-panel-title').textContent = current.dialogue_title;
+    document.getElementById('yt-wrap').innerHTML =
+        `<div id="yt-ph"><svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span>📺 Zijpaneel</span></div>`;
+    document.getElementById('yt-panel').classList.add('open');
+    document.body.classList.add('yt-panel-open');
+    ytPanelOpen = true;
+}
+
+function closeYtPanel() {
+    document.getElementById('yt-panel').classList.remove('open');
+    document.body.classList.remove('yt-panel-open');
+    document.getElementById('yt-panel-body').innerHTML = '';
+    ytPanelOpen = false;
+    if (current) setYtWrap(current.video_url);
 }
 
 /* ════════════════════════════════════════════════════
@@ -749,41 +783,38 @@ function speakPreview(text, waveEl, role) {
    SPEECH SYNTHESIS
    ════════════════════════════════════════════════════ */
 /* ── Dutch voice pool ──
-   Strategy: default nl-NL voice = female (confirmed on Chrome).
-   Look for a named male voice; if none found, reuse the female voice
-   at a lowered pitch so male roles still sound distinctly different. ── */
-const nlVoices = { male: null, female: null, maleIsNamed: false };
-const _MALE    = /frank|thomas|jan|pieter|xander|david|ruben|male|man\b/i;
+   Role A/C/E → browser default nl voice (primary), pitch 1.
+   Role B/D   → second nl voice if the browser has one (secondary);
+                if only one nl voice exists, reuse primary at lower pitch. ── */
+const nlVoices = { primary: null, secondary: null, hasSecondary: false };
 
 function loadVoices() {
     const vs = speechSynthesis.getVoices();
     const nl = vs.filter(v => v.lang === 'nl-NL' || v.lang === 'nl-BE' || v.lang.startsWith('nl'));
     if (!nl.length) return;
 
-    // Default (first) nl voice is female in Chrome
-    nlVoices.female     = nl[0];
-    const namedMale     = nl.find(v => _MALE.test(v.name));
-    nlVoices.male       = namedMale || nl[0];   // fallback to same voice
-    nlVoices.maleIsNamed = !!namedMale;
+    nlVoices.primary      = nl[0];
+    nlVoices.secondary    = nl[1] || null;
+    nlVoices.hasSecondary = nl.length > 1;
 
-    console.log('[TTS] female:', nlVoices.female?.name,
-                '| male:', nlVoices.male?.name,
-                '| namedMale:', nlVoices.maleIsNamed);
+    console.log('[TTS] primary:', nlVoices.primary?.name,
+                '| secondary:', nlVoices.secondary?.name ?? 'none (pitch fallback)');
 }
 speechSynthesis.addEventListener('voiceschanged', loadVoices);
 loadVoices();
 
-/* Role → voice + pitch. Even index (A,C,E) = male, odd (B,D) = female */
+/* Role → voice + pitch.
+   Even index (A,C,E) = primary voice at pitch 1.
+   Odd  index (B,D)   = secondary voice if available, else primary at pitch 0.8. */
 function voiceParamsForRole(roleKey) {
-    const roles  = current ? Object.keys(current.roles) : [];
-    const isMale = roles.indexOf(roleKey) % 2 === 0;
-    if (!isMale) {
-        return { voice: nlVoices.female, pitch: 1 };
+    const roles     = current ? Object.keys(current.roles) : [];
+    const isPrimary = roles.indexOf(roleKey) % 2 === 0;
+    if (isPrimary) {
+        return { voice: nlVoices.primary, pitch: 1 };
     }
-    // Male: use named voice at natural pitch, or same voice pitched down
     return {
-        voice: nlVoices.male,
-        pitch: nlVoices.maleIsNamed ? 1 : 0.7
+        voice: nlVoices.secondary || nlVoices.primary,
+        pitch: nlVoices.hasSecondary ? 1 : 0.8
     };
 }
 
@@ -912,28 +943,11 @@ const WAKE = (() => {
     document.getElementById('year-mob').textContent = yr;
     document.getElementById('mob-reload-btn').addEventListener('click', forceReload);
 
-    // Video fullscreen toggle
-    const ytWrap  = document.getElementById('yt-wrap');
-    const ytFsBtn = document.getElementById('yt-fs-btn');
-    const FS_EXPAND   = `<path d="M8 3H5a2 2 0 0 0-2 2v3M21 8V5a2 2 0 0 0-2-2h-3M16 21h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>`;
-    const FS_COLLAPSE = `<path d="M8 3v5H3M21 8V3h-5M16 21v-5h5M3 16h5v5"/>`;
-    function updateFsIcon() {
-        const inFs = !!(document.fullscreenElement || document.webkitFullscreenElement);
-        document.getElementById('yt-fs-ico').innerHTML = inFs ? FS_COLLAPSE : FS_EXPAND;
-    }
-    // iframe captures mouse events so CSS :hover on the wrapper never fires — use JS instead
-    ytWrap.addEventListener('mouseenter', () => ytWrap.classList.add('hovered'));
-    ytWrap.addEventListener('mouseleave', () => ytWrap.classList.remove('hovered'));
-
-    ytFsBtn.addEventListener('click', () => {
-        if (!document.fullscreenElement && !document.webkitFullscreenElement) {
-            (ytWrap.requestFullscreen || ytWrap.webkitRequestFullscreen).call(ytWrap);
-        } else {
-            (document.exitFullscreen || document.webkitExitFullscreen).call(document);
-        }
+    // Video pop-out panel — event delegation works after innerHTML rebuilds
+    document.getElementById('yt-wrap').addEventListener('click', e => {
+        if (e.target.closest('#yt-pop-btn')) openYtPanel();
     });
-    document.addEventListener('fullscreenchange', updateFsIcon);
-    document.addEventListener('webkitfullscreenchange', updateFsIcon);
+    document.getElementById('yt-panel-close').addEventListener('click', closeYtPanel);
     document.getElementById('sb-reload-btn').addEventListener('click', forceReload);
     document.getElementById('mob-wake-btn').addEventListener('click', () => WAKE.toggle());
     const savedWake = STORE.get().wakeLock;

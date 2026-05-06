@@ -329,41 +329,102 @@ body {
 }
 #yt-wrap iframe { width: 100%; height: 100%; border: none; display: block; }
 
-/* Fullscreen button overlay */
-#yt-fs-btn {
+/* Pop-out button — always visible below the thumbnail */
+#yt-pop-btn {
   position: absolute;
-  bottom: 8px;
-  right: 8px;
-  width: 32px;
-  height: 32px;
-  background: rgba(0,0,0,.55);
-  border: 1.5px solid rgba(255,255,255,.25);
-  border-radius: 8px;
-  color: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,.62);
+  border: none;
+  color: rgba(255,255,255,.9);
+  font-size: .7rem;
+  font-weight: 600;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.45;
-  transition: opacity .2s, background .15s, transform .15s;
+  gap: 5px;
+  padding: 7px 6px;
   backdrop-filter: blur(4px);
-  z-index: 10;
+  transition: background .15s;
+  letter-spacing: .2px;
 }
-/* JS adds .hovered class since iframe blocks CSS :hover */
-#yt-wrap.hovered #yt-fs-btn { opacity: 1; }
-#yt-fs-btn:hover { opacity: 1; background: rgba(0,0,0,.85); transform: scale(1.1); }
+#yt-pop-btn:hover { background: rgba(232,93,4,.85); }
 
-/* Fullscreen: fill entire viewport */
-#yt-wrap:fullscreen,
-#yt-wrap:-webkit-full-screen {
-  width: 100vw;
-  height: 100vh;
-  border-radius: 0;
+/* Fixed video panel */
+#yt-panel {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100dvh * 9 / 16);
+  max-width: 300px;
+  min-width: 180px;
+  height: 100dvh;
+  background: #000;
+  z-index: 400;
+  flex-direction: column;
+  box-shadow: -6px 0 32px rgba(0,0,0,.45);
 }
-#yt-wrap:fullscreen iframe,
-#yt-wrap:-webkit-full-screen iframe { width: 100%; height: 100%; }
-#yt-wrap:fullscreen #yt-fs-btn,
-#yt-wrap:-webkit-full-screen #yt-fs-btn { opacity: 1; }
+#yt-panel.open { display: flex; }
+
+#yt-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  background: #12192c;
+  flex-shrink: 0;
+  gap: 8px;
+}
+#yt-panel-title {
+  font-size: .72rem;
+  font-weight: 600;
+  color: rgba(255,255,255,.7);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+#yt-panel-close {
+  background: rgba(255,255,255,.08);
+  border: none;
+  color: rgba(255,255,255,.6);
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: .85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background .15s, color .15s;
+}
+#yt-panel-close:hover { background: #dc2626; color: #fff; }
+
+#yt-panel-body {
+  flex: 1;
+  overflow: hidden;
+}
+#yt-panel-body iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Shift content left when panel is open so it doesn't get covered */
+body.yt-panel-open #content {
+  margin-right: min(300px, calc(100dvh * 9 / 16));
+}
+
+/* Hide panel on mobile — not needed there */
+@media (max-width: 700px) {
+  #yt-panel { display: none !important; }
+  body.yt-panel-open #content { margin-right: 0; }
+}
 #yt-ph {
   width: 100%; height: 100%;
   background: linear-gradient(145deg, #1c2a42, #12192c);
