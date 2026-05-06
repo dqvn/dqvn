@@ -512,6 +512,7 @@ function setYtWrap(videoUrl) {
 }
 
 function openYtPanel() {
+    if (window.innerWidth <= 700) return;  // desktop only
     if (!current) return;
     const vid = ytId(current.video_url);
     if (!vid) return;
