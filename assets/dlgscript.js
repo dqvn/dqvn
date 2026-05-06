@@ -604,7 +604,7 @@ function previewMyLine() {
     if (!line) return;
     const lineEl = document.getElementById('cl-' + tts.line);
     const waveEl = lineEl ? lineEl.querySelector('.c-wave') : null;
-    speakPreview(line.text, waveEl || document.createElement('div'));
+    speakPreview(line.text, waveEl || document.createElement('div'), myRole);
 }
 document.getElementById('btn-done').addEventListener('click',   userDone);
 document.getElementById('btn-again').addEventListener('click', () => {
@@ -650,7 +650,7 @@ function repeatLast() {
     if (!line) return;
     setWave(true);
     setMsg(`↩ ${current.roles[line.role] || line.role}…`);
-    speak(line.text).then(() => { if (tts.active) { setWave(false); setMsg(''); } });
+    speak(line.text, line.role).then(() => { if (tts.active) { setWave(false); setMsg(''); } });
 }
 
 async function runStep() {
@@ -695,7 +695,7 @@ async function runStep() {
         setMsg(`${current.roles[line.role] || line.role} 🔊`);
         setWave(true);
         lastTTSLine = tts.line;
-        await speak(line.text);
+        await speak(line.text, line.role);
         if (!tts.active) return;
         setWave(false);
         document.getElementById('tts-top').classList.remove('spk');
@@ -728,18 +728,19 @@ document.getElementById('conv-list').addEventListener('click', e => {
     if (isNaN(idx)) return;
     const line = current.conversation[idx];
     if (!line) return;
-    speakPreview(line.text, textEl.parentElement.querySelector('.c-wave'));
+    speakPreview(line.text, textEl.parentElement.querySelector('.c-wave'), line.role);
 });
 
-function speakPreview(text, waveEl) {
+function speakPreview(text, waveEl, role) {
     if (tts.active && !tts.waitUser) return;  // don't interrupt active TTS
     document.querySelectorAll('.c-wave.playing').forEach(w => w.classList.remove('playing'));
     speechSynthesis.cancel();
     if (!waveEl) return;
     waveEl.classList.add('playing');
     const u = new SpeechSynthesisUtterance(text);
-    u.lang = 'nl-NL'; u.rate = ttsSpeed; u.pitch = 1; u.volume = ttsVolume;
-    if (nlVoice) u.voice = nlVoice;
+    const p = voiceParamsForRole(role);
+    u.lang = 'nl-NL'; u.rate = ttsSpeed; u.pitch = p.pitch; u.volume = ttsVolume;
+    if (p.voice) u.voice = p.voice;
     u.onend = u.onerror = () => waveEl.classList.remove('playing');
     speechSynthesis.speak(u);
 }
@@ -747,21 +748,53 @@ function speakPreview(text, waveEl) {
 /* ════════════════════════════════════════════════════
    SPEECH SYNTHESIS
    ════════════════════════════════════════════════════ */
-let nlVoice = null;
+/* ── Dutch voice pool: male + female with pitch fallback ── */
+const nlVoices = { male: null, female: null, any: null };
+const _FEMALE = /fenna|lotte|sara|anna|julia|female|woman|vrouw/i;
+const _MALE   = /frank|thomas|jan|pieter|xander|david|male|man\b/i;
+
 function loadVoices() {
     const vs = speechSynthesis.getVoices();
-    nlVoice = vs.find(v => v.lang === 'nl-NL') || vs.find(v => v.lang === 'nl-BE')
-           || vs.find(v => v.lang.startsWith('nl')) || null;
+    const nl = vs.filter(v => v.lang === 'nl-NL' || v.lang === 'nl-BE' || v.lang.startsWith('nl'));
+    if (!nl.length) return;
+
+    nlVoices.any    = nl[0];
+    nlVoices.female = nl.find(v => _FEMALE.test(v.name)) || null;
+    nlVoices.male   = nl.find(v => _MALE.test(v.name))   || null;
+
+    // If we found only one gender, use the other available voice as the second
+    if (nlVoices.female && !nlVoices.male)
+        nlVoices.male   = nl.find(v => v !== nlVoices.female) || nlVoices.female;
+    if (nlVoices.male && !nlVoices.female)
+        nlVoices.female = nl.find(v => v !== nlVoices.male)   || nlVoices.male;
+    // No named match at all — assign first two voices
+    if (!nlVoices.male && !nlVoices.female) {
+        nlVoices.male   = nl[0];
+        nlVoices.female = nl[1] || nl[0];
+    }
 }
 speechSynthesis.addEventListener('voiceschanged', loadVoices);
 loadVoices();
 
-function speak(text) {
+/* Role → voice + pitch. Even index (A,C,E) = male, odd (B,D) = female */
+function voiceParamsForRole(roleKey) {
+    const roles = current ? Object.keys(current.roles) : [];
+    const idx   = roles.indexOf(roleKey);
+    const male  = idx % 2 === 0;
+    const sameVoice = nlVoices.male === nlVoices.female;
+    return {
+        voice: male ? nlVoices.male : nlVoices.female,
+        pitch: sameVoice ? (male ? 0.85 : 1.1) : 1   // pitch fallback when only one voice
+    };
+}
+
+function speak(text, role) {
     return new Promise(resolve => {
         speechSynthesis.cancel();
         const u = new SpeechSynthesisUtterance(text);
-        u.lang = 'nl-NL'; u.rate = ttsSpeed; u.pitch = 1; u.volume = ttsVolume;
-        if (nlVoice) u.voice = nlVoice;
+        const p = voiceParamsForRole(role);
+        u.lang = 'nl-NL'; u.rate = ttsSpeed; u.pitch = p.pitch; u.volume = ttsVolume;
+        if (p.voice) u.voice = p.voice;
         u.onend = resolve; u.onerror = resolve;
         speechSynthesis.speak(u);
     });
