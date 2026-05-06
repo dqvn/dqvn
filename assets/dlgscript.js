@@ -475,8 +475,18 @@ function loadDialogue(d, skipSave = false) {
     setTitle(d.dialogue_title);
     document.getElementById('dlg-lang').textContent  = d.language || 'Nederlands';
 
-    if (ytPanelOpen) closeYtPanel();
-    setYtWrap(d.video_url);
+    if (ytPanelOpen && ytId(d.video_url)) {
+        // Panel stays open — just swap the video and title
+        const vid = ytId(d.video_url);
+        document.getElementById('yt-panel-body').innerHTML =
+            `<iframe src="https://www.youtube.com/embed/${vid}?rel=0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;fullscreen" allowfullscreen></iframe>`;
+        document.getElementById('yt-panel-title').textContent = d.dialogue_title;
+    } else if (ytPanelOpen) {
+        closeYtPanel();
+        setYtWrap(d.video_url);
+    } else {
+        setYtWrap(d.video_url);
+    }
 
     renderRoles(d.roles);
     document.getElementById('tts-toggle').checked = false;
