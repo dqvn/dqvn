@@ -748,43 +748,42 @@ function speakPreview(text, waveEl, role) {
 /* ════════════════════════════════════════════════════
    SPEECH SYNTHESIS
    ════════════════════════════════════════════════════ */
-/* ── Dutch voice pool: male + female with pitch fallback ── */
-const nlVoices = { male: null, female: null, any: null };
-const _FEMALE = /fenna|lotte|sara|anna|julia|female|woman|vrouw/i;
-const _MALE   = /frank|thomas|jan|pieter|xander|david|male|man\b/i;
+/* ── Dutch voice pool ──
+   Strategy: default nl-NL voice = female (confirmed on Chrome).
+   Look for a named male voice; if none found, reuse the female voice
+   at a lowered pitch so male roles still sound distinctly different. ── */
+const nlVoices = { male: null, female: null, maleIsNamed: false };
+const _MALE    = /frank|thomas|jan|pieter|xander|david|ruben|male|man\b/i;
 
 function loadVoices() {
     const vs = speechSynthesis.getVoices();
     const nl = vs.filter(v => v.lang === 'nl-NL' || v.lang === 'nl-BE' || v.lang.startsWith('nl'));
     if (!nl.length) return;
 
-    nlVoices.any    = nl[0];
-    nlVoices.female = nl.find(v => _FEMALE.test(v.name)) || null;
-    nlVoices.male   = nl.find(v => _MALE.test(v.name))   || null;
+    // Default (first) nl voice is female in Chrome
+    nlVoices.female     = nl[0];
+    const namedMale     = nl.find(v => _MALE.test(v.name));
+    nlVoices.male       = namedMale || nl[0];   // fallback to same voice
+    nlVoices.maleIsNamed = !!namedMale;
 
-    // If we found only one gender, use the other available voice as the second
-    if (nlVoices.female && !nlVoices.male)
-        nlVoices.male   = nl.find(v => v !== nlVoices.female) || nlVoices.female;
-    if (nlVoices.male && !nlVoices.female)
-        nlVoices.female = nl.find(v => v !== nlVoices.male)   || nlVoices.male;
-    // No named match at all — assign first two voices
-    if (!nlVoices.male && !nlVoices.female) {
-        nlVoices.male   = nl[0];
-        nlVoices.female = nl[1] || nl[0];
-    }
+    console.log('[TTS] female:', nlVoices.female?.name,
+                '| male:', nlVoices.male?.name,
+                '| namedMale:', nlVoices.maleIsNamed);
 }
 speechSynthesis.addEventListener('voiceschanged', loadVoices);
 loadVoices();
 
 /* Role → voice + pitch. Even index (A,C,E) = male, odd (B,D) = female */
 function voiceParamsForRole(roleKey) {
-    const roles = current ? Object.keys(current.roles) : [];
-    const idx   = roles.indexOf(roleKey);
-    const male  = idx % 2 === 0;
-    const sameVoice = nlVoices.male === nlVoices.female;
+    const roles  = current ? Object.keys(current.roles) : [];
+    const isMale = roles.indexOf(roleKey) % 2 === 0;
+    if (!isMale) {
+        return { voice: nlVoices.female, pitch: 1 };
+    }
+    // Male: use named voice at natural pitch, or same voice pitched down
     return {
-        voice: male ? nlVoices.male : nlVoices.female,
-        pitch: sameVoice ? (male ? 0.85 : 1.1) : 1   // pitch fallback when only one voice
+        voice: nlVoices.male,
+        pitch: nlVoices.maleIsNamed ? 1 : 0.7
     };
 }
 
@@ -835,10 +834,10 @@ document.addEventListener('keydown', e => {
    FORCE RELOAD
    ════════════════════════════════════════════════════ */
 async function forceReload() {
-    const ico = document.getElementById('reload-ico');
-    const btn = document.getElementById('mob-reload-btn');
-    ico.classList.add('spinning');
-    btn.disabled = true;
+    const icons = ['reload-ico', 'sb-reload-ico'].map(id => document.getElementById(id)).filter(Boolean);
+    const btns  = ['mob-reload-btn', 'sb-reload-btn'].map(id => document.getElementById(id)).filter(Boolean);
+    icons.forEach(i => i.classList.add('spinning'));
+    btns.forEach(b => { b.disabled = true; });
     try {
         DCACHE.clear();
         const found = await _fetchAll();
@@ -848,8 +847,8 @@ async function forceReload() {
     } catch {
         showToast('❌ Ophalen mislukt / Fetch failed');
     } finally {
-        ico.classList.remove('spinning');
-        btn.disabled = false;
+        icons.forEach(i => i.classList.remove('spinning'));
+        btns.forEach(b => { b.disabled = false; });
     }
 }
 
@@ -912,6 +911,7 @@ const WAKE = (() => {
     document.getElementById('year').textContent = yr;
     document.getElementById('year-mob').textContent = yr;
     document.getElementById('mob-reload-btn').addEventListener('click', forceReload);
+    document.getElementById('sb-reload-btn').addEventListener('click', forceReload);
     document.getElementById('mob-wake-btn').addEventListener('click', () => WAKE.toggle());
     const savedWake = STORE.get().wakeLock;
     WAKE.init(savedWake !== false);   // default ON unless explicitly saved as false

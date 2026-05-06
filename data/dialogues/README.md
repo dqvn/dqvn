@@ -21,12 +21,20 @@ Dutch dialogue practice tool. Open `dialogues.html` in a browser (best served vi
 - Use the **search box** to filter by ID or title keywords.
 - The **⟳ reload button** (top-right of the mobile bar) clears the local cache and re-fetches all dialogue files fresh from the server.
 
+### Mobile top bar (mobile only)
+| Button | Purpose |
+|---|---|
+| ☰ Hamburger | Opens the dialogue list drawer |
+| 🔍 Search | Opens the drawer and focuses the search input |
+| ☀️ Wake lock | Keeps the screen on while practising — glows amber when active. On by default; tap to toggle. Persisted across sessions. |
+| ⟳ Reload | Clears local cache and re-fetches all dialogues from the server |
+
 ### Header card
 | Control | Purpose |
 |---|---|
 | **Role buttons** (A / B / C …) | Select the role you will read. Click the same button again to deselect (shows all lines). |
 | **Solo Practice toggle** | Activates TTS mode. The app reads the other role(s) aloud; you read your own lines. |
-| **🐢 🚶 🏃 speed buttons** | Sets TTS playback speed (slow / normal / fast). Only visible when Solo Practice is on. |
+| **🐢 🚶 🏃 speed buttons** | Sets TTS playback speed (slow / normal / fast). Always visible — affects both Solo Practice and click-to-listen. |
 | **A− / A+** | Decreases or increases the conversation text size. |
 | **Volume slider** | Controls TTS speaker volume (0 – 100 %). The speaker icon dims when muted. |
 
@@ -65,6 +73,7 @@ The app automatically saves your state in the browser's **localStorage** every t
 - Last open dialogue, selected role, Solo Practice on/off
 - TTS position within a dialogue (resume on next visit)
 - TTS speed, text size, and volume
+- Wake lock on/off preference
 - Completion count and last-completed date per dialogue
 - Daily streak
 
@@ -175,7 +184,8 @@ Then open `http://localhost:3000/dialogues.html` (or whichever port is shown).
 | Topic | Detail |
 |---|---|
 | No build step | Pure HTML + CSS + JS — edit files directly |
-| TTS engine | Web Speech API (`nl-NL` voice, `SpeechSynthesis`) |
+| TTS engine | Web Speech API (`nl-NL`); role A/C/E → male voice, role B/D → female voice; pitch fallback when only one Dutch voice is available |
+| Wake Lock API | Prevents screen sleep on mobile; supported in Chrome, Edge, Brave (not Firefox) |
 | Cache encryption | AES-256-GCM via Web Crypto API; PBKDF2 key derivation (60 000 iterations) |
 | Viewport | Uses `100dvh` (dynamic) — correct on iOS Safari with browser chrome |
 | Browser support | Any modern browser (Chrome, Edge, Firefox, Safari) |
