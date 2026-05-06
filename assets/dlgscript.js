@@ -970,4 +970,6 @@ const WAKE = (() => {
         renderSidebar(found);
         if (found.length) loadDialogue(found[0]);
     }
+    // Auto-open video panel on desktop if the loaded dialogue has a video
+    if (current && ytId(current.video_url)) openYtPanel();
 })();
