@@ -668,10 +668,12 @@ button:hover {
 
 /* 2. The Header (Span across the top) */
 #game-container h1 {
-    width: 100%; /* Force header to take full width */
+    width: 100%;
     text-align: center;
     margin-bottom: 5px;
     margin-top: 50px;
+    cursor: pointer;
+    user-select: none;
 }
 
 /* 3. The Left Side (The Story/Question) */
