@@ -85,8 +85,18 @@ document.addEventListener('DOMContentLoaded', () => {
     noSleep.enable();
 });
 
-// Start game button (showQuestion defined in game.js, available at click time)
-document.getElementById('start-button').addEventListener('click', () => showQuestion());
+// Start game button — also closes the mobile drawer before the popup opens
+document.getElementById('start-button').addEventListener('click', () => {
+    if (window.innerWidth <= 768) {
+        const container = document.querySelector('.container');
+        const icon      = document.querySelector('.toggle-menu-button .icon');
+        if (container) {
+            container.classList.add('menu-hidden');
+            if (icon) icon.innerHTML = '▶';
+        }
+    }
+    showQuestion();
+});
 
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
