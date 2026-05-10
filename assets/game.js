@@ -126,7 +126,9 @@ async function showQuestion() {
         shuffle(options);
 
         document.getElementById('progress').textContent = `${currentWordIndex + 1} / ${maxNumber}`;
-        document.getElementById('game-container').querySelector('h1').textContent = currentWord.dutch;
+        const wordTitle = document.getElementById('game-container').querySelector('h1');
+        wordTitle.textContent = currentWord.dutch;
+        wordTitle.onclick = () => speakText(currentWord.dutch);
         generateStoryFromPuter(data, document.getElementById('question'));
 
         const sentenceDiv = document.getElementById('sentence');
