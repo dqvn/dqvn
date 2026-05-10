@@ -101,11 +101,34 @@ document.getElementById('start-button').addEventListener('click', () => {
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Reload voices when browser fires voiceschanged
-window.speechSynthesis.onvoiceschanged = () => {
+/* ── Voice initialisation ──────────────────────────────────────────────────
+   Firefox / Safari return voices synchronously on the first getVoices() call.
+   Chrome loads them asynchronously and fires 'voiceschanged'.
+   _voicesReadyPromise is a single shared promise that resolves on first load
+   (or after 3 s as a safety timeout) so async callers never silently skip TTS.
+   We use addEventListener so nothing can accidentally overwrite our handler.
+   ──────────────────────────────────────────────────────────────────────────── */
+googleNederlandsVoice = getPreferredVoice();          // sync attempt (Firefox / Safari)
+
+const _voicesReadyPromise = (() => {
+    if (window.speechSynthesis.getVoices().length) return Promise.resolve();
+    return new Promise(resolve => {
+        window.speechSynthesis.addEventListener('voiceschanged', resolve, { once: true });
+        setTimeout(resolve, 3000);                    // fallback — never wait forever
+    });
+})();
+
+window.speechSynthesis.addEventListener('voiceschanged', () => {
     googleNederlandsVoice = getPreferredVoice();
-    console.log('[TTS] voice loaded:', googleNederlandsVoice?.name);
-};
+    console.log('[TTS] voice ready:', googleNederlandsVoice?.name);
+});
+
+// Chrome silently pauses TTS when the tab goes to the background; resume on focus
+document.addEventListener('visibilitychange', () => {
+    if (!document.hidden && window.speechSynthesis.paused) {
+        window.speechSynthesis.resume();
+    }
+});
 
 /* ══════════════════════════════════════════════════════
    FUNCTIONS
@@ -116,7 +139,23 @@ function getPreferredVoice() {
     return voices.find(v => v.name.includes('Microsoft Colette Online') && v.lang === 'nl-NL')
         || voices.find(v => v.name.includes('Google Nederlands')        && v.lang === 'nl-NL')
         || voices.find(v => v.lang === 'nl-NL')
+        || voices.find(v => v.lang === 'nl-BE')
+        || voices.find(v => v.lang.startsWith('nl'))
         || null;
+}
+
+/* Maximum ms to wait for a single utterance to finish before moving on.
+   Guards against the Chrome bug where onend never fires. */
+const TTS_MAX_MS = 20000;
+
+function _buildUtterance(text, lang, rate, pitch) {
+    const speech  = new SpeechSynthesisUtterance();
+    speech.text   = text.replaceAll("'", '');
+    speech.lang   = lang;
+    speech.rate   = rate;
+    speech.pitch  = pitch;
+    speech.volume = volumeControl.value / 100;
+    return speech;
 }
 
 function speakText(text) {
@@ -125,88 +164,89 @@ function speakText(text) {
 
     const voices = window.speechSynthesis.getVoices();
     if (!voices.length) {
-        document.getElementById('tts-name').textContent = 'No voices available!';
+        document.getElementById('tts-name').textContent = 'Voices loading…';
         return;
     }
-    if (!googleNederlandsVoice) {
-        googleNederlandsVoice =
-            voices.find(v => v.name === TTSName && v.lang === TTSLang) ||
-            voices.find(v => v.lang === TTSLang);
-    }
+    if (!googleNederlandsVoice) googleNederlandsVoice = getPreferredVoice();
 
-    try {
-        const speech = new SpeechSynthesisUtterance();
+    const speech = _buildUtterance(text, TTSLang, 0.8, 1);
+    if (googleNederlandsVoice) {
+        speech.voice = googleNederlandsVoice;
+        document.getElementById('tts-name').textContent = googleNederlandsVoice.name;
+    }
+    speech.onerror = e => { if (e.error !== 'canceled') console.error('[TTS] error:', e.error); };
+    try { window.speechSynthesis.speak(speech); } catch (e) { console.error('[TTS] speak failed:', e); }
+}
+
+function speakEngText(text) {
+    if (window.speechSynthesis.speaking) window.speechSynthesis.cancel();
+    window.speechSynthesis.resume();
+    const speech = _buildUtterance(text, TTSLangENG, 0.9, 1);
+    const voices = window.speechSynthesis.getVoices();
+    if (voices.length) speech.voice = voices[0];
+    speech.onerror = e => { if (e.error !== 'canceled') console.error('[TTS] error:', e.error); };
+    try { window.speechSynthesis.speak(speech); } catch (e) { console.error('[TTS] speak failed:', e); }
+}
+
+/* ── Promise-based TTS ─────────────────────────────────────────────────────
+   Awaits _voicesReadyPromise so Chrome async voice loading never causes a
+   silent skip.  A TTS_MAX_MS timeout guards against the Chrome bug where
+   onend never fires (tab backgrounded, cloud voice network issue, etc.).
+   Both onend and onerror (including 'canceled') always resolve the promise
+   so the caller is never permanently suspended.
+   ──────────────────────────────────────────────────────────────────────── */
+async function speakTextAsync(text) {
+    await _voicesReadyPromise;                        // wait for Chrome async voice load
+    if (!googleNederlandsVoice) googleNederlandsVoice = getPreferredVoice();
+
+    if (window.speechSynthesis.speaking) window.speechSynthesis.cancel();
+    window.speechSynthesis.resume();
+
+    const voices = window.speechSynthesis.getVoices();
+    if (!voices.length) return;                       // still no voices — skip silently
+
+    return new Promise(resolve => {
+        const speech = _buildUtterance(text, TTSLang, 0.8, 1);
         if (googleNederlandsVoice) {
             speech.voice = googleNederlandsVoice;
             document.getElementById('tts-name').textContent = googleNederlandsVoice.name;
         }
-        speech.lang   = TTSLang;
-        speech.rate   = 0.8;
-        speech.pitch  = 1;
-        speech.volume = volumeControl.value / 100;
-        speech.text   = text.replaceAll("'", '');
-        speech.onerror = e => console.error('[TTS] error:', e.error);
-        window.speechSynthesis.speak(speech);
-    } catch (e) {
-        console.error('[TTS] error:', e);
-    }
-}
 
-function speakEngText(text) {
-    const speech  = new SpeechSynthesisUtterance();
-    speech.text   = text.replaceAll("'", '');
-    speech.rate   = 0.9;
-    speech.volume = volumeControl.value / 100;
-    speech.voice  = window.speechSynthesis.getVoices()[0];
-    window.speechSynthesis.speak(speech);
-}
-
-/* Promise-based TTS — resolves when utterance finishes (or errors) */
-function speakTextAsync(text) {
-    return new Promise(resolve => {
-        if (window.speechSynthesis.speaking) window.speechSynthesis.cancel();
-        window.speechSynthesis.resume();
-
-        const voices = window.speechSynthesis.getVoices();
-        if (!voices.length) { resolve(); return; }
-        if (!googleNederlandsVoice) {
-            googleNederlandsVoice =
-                voices.find(v => v.name === TTSName && v.lang === TTSLang) ||
-                voices.find(v => v.lang === TTSLang);
-        }
-        try {
-            const speech    = new SpeechSynthesisUtterance();
-            if (googleNederlandsVoice) {
-                speech.voice = googleNederlandsVoice;
-                document.getElementById('tts-name').textContent = googleNederlandsVoice.name;
-            }
-            speech.lang    = TTSLang;
-            speech.rate    = 0.8;
-            speech.pitch   = 1;
-            speech.volume  = volumeControl.value / 100;
-            speech.text    = text.replaceAll("'", '');
-            speech.onend   = resolve;
-            speech.onerror = (e) => { console.error('[TTS] error:', e.error); resolve(); };
-            window.speechSynthesis.speak(speech);
-        } catch (e) {
-            console.error('[TTS] error:', e);
+        const guard = setTimeout(() => {
+            console.warn('[TTS] utterance timed out — forcing next step');
+            window.speechSynthesis.cancel();
             resolve();
-        }
+        }, TTS_MAX_MS);
+
+        const done = () => { clearTimeout(guard); resolve(); };
+        speech.onend   = done;
+        speech.onerror = (e) => {
+            if (e.error !== 'canceled') console.error('[TTS] error:', e.error);
+            clearTimeout(guard);
+            resolve();
+        };
+        try { window.speechSynthesis.speak(speech); }
+        catch (e) { console.error('[TTS] speak failed:', e); clearTimeout(guard); resolve(); }
     });
 }
 
-function speakEngTextAsync(text) {
+async function speakEngTextAsync(text) {
+    await _voicesReadyPromise;
+
+    if (window.speechSynthesis.speaking) window.speechSynthesis.cancel();
+    window.speechSynthesis.resume();
+
     return new Promise(resolve => {
-        window.speechSynthesis.resume();
-        const speech   = new SpeechSynthesisUtterance();
-        speech.text    = text.replaceAll("'", '');
-        speech.rate    = 0.9;
-        speech.volume  = volumeControl.value / 100;
-        const voices   = window.speechSynthesis.getVoices();
+        const speech = _buildUtterance(text, TTSLangENG, 0.9, 1);
+        const voices = window.speechSynthesis.getVoices();
         if (voices.length) speech.voice = voices[0];
-        speech.onend   = resolve;
-        speech.onerror = () => resolve();
-        window.speechSynthesis.speak(speech);
+
+        const guard = setTimeout(() => { window.speechSynthesis.cancel(); resolve(); }, TTS_MAX_MS);
+        const done  = () => { clearTimeout(guard); resolve(); };
+        speech.onend   = done;
+        speech.onerror = () => { clearTimeout(guard); resolve(); };
+        try { window.speechSynthesis.speak(speech); }
+        catch (e) { clearTimeout(guard); resolve(); }
     });
 }
 

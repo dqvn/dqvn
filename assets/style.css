@@ -677,6 +677,47 @@ button:hover {
     color: #4a5568;
 }
 
+/* ── Sentence translation toast ── */
+#sentence-toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-200%);  /* hidden above viewport */
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    z-index: 2000;
+
+    background: rgba(20, 30, 60, 0.93);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    padding: 14px 22px;
+    border-radius: 14px;
+    max-width: min(480px, 90vw);
+    text-align: center;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+#sentence-toast.visible {
+    transform: translateX(-50%) translateY(0);
+}
+
+#sentence-toast .toast-label {
+    display: block;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 5px;
+}
+
+#sentence-toast .toast-text {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
 /* ── Game dismiss button ── */
 #game-close-btn {
     display: none;              /* hidden on desktop — Esc / waiting works fine */

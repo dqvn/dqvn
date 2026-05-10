@@ -131,11 +131,15 @@ async function showQuestion() {
         const sentenceDiv = document.getElementById('sentence');
         if (sentenceDiv) {
             sentenceDiv.textContent = currentWord.dutchsentence;
-            sentenceDiv.onclick     = () => speakText(currentWord.dutchsentence);
+            sentenceDiv.onclick     = () => {
+                speakText(currentWord.dutchsentence);
+                _showTranslationToast(currentWord.englishtranslate);
+            };
         }
 
         document.getElementById('options').innerHTML  = '';
         document.getElementById('result').textContent = '';
+        _hideTranslationToast();
 
         const frag = document.createDocumentFragment();
         options.forEach((option, index) => {
@@ -165,6 +169,7 @@ async function showQuestion() {
 async function checkAnswer(selectedOption, correctAnswer) {
     _ttsSeq++;                              // invalidate any pending showQuestion TTS chain
     window.speechSynthesis.cancel();        // stop whatever is currently speaking
+    await new Promise(r => setTimeout(r, 50)); // let Chrome fully drain the queue before next speak
 
     if (selectedOption === correctAnswer) {
         correctAnswers++;
@@ -204,6 +209,36 @@ function showResult() {
         document.getElementById('result').textContent = "Let's go!!!";
     }, 3000);
 }
+
+/* ── Sentence translation toast ─────────────────────────────────────────
+   Slides in from the top of the screen for 5 s when the user taps the
+   Dutch sentence sample, showing its English translation.  Clicking it
+   dismisses it early.
+   ──────────────────────────────────────────────────────────────────────── */
+const _toast = (() => {
+    const el = document.createElement('div');
+    el.id = 'sentence-toast';
+    el.innerHTML = '<span class="toast-label">🇬🇧 English translation</span><span class="toast-text"></span>';
+    document.body.appendChild(el);
+    return el;
+})();
+
+let _toastTimer = null;
+
+function _showTranslationToast(englishText) {
+    if (!englishText?.trim()) return;
+    clearTimeout(_toastTimer);
+    _toast.querySelector('.toast-text').textContent = englishText;
+    _toast.classList.add('visible');
+    _toastTimer = setTimeout(_hideTranslationToast, 5000);
+}
+
+function _hideTranslationToast() {
+    clearTimeout(_toastTimer);
+    _toast.classList.remove('visible');
+}
+
+_toast.addEventListener('click', _hideTranslationToast);
 
 /* Close button — lets mobile users dismiss the popup mid-game */
 (function wireCloseButton() {
