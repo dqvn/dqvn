@@ -1,30 +1,89 @@
-let correctAnswers = 0;
+'use strict';
+
+let correctAnswers   = 0;
 let currentWordIndex = 0;
-let data = [];
-let recentGames = [];
-let maxNumber = 15;
+let data             = [];
+let recentGames      = [];
+let maxNumber        = 15;
 
-async function generateStoryFromPuter(dataObjects, questionDiv) {
-    // 1. Convert objects to a simple list of Dutch words
-    const words = dataObjects.map(item => item.dutch.split(',')[0].trim());
-    
-    // 2. Call Puter AI (No API key or fetch headers needed!)
+/* ═══════════════════════════════════════════════════════════
+   GAME PROGRESS PERSISTENCE
+   Stores which words have been seen per chapter in localStorage
+   so the next session resumes from where the user left off.
+   Key: nl_game_progress_v1  →  { "ch01": ["word1","word2",...] }
+   ═══════════════════════════════════════════════════════════ */
+const GAME_PROGRESS_KEY = 'nl_game_progress_v1';
+let _loadedChapter      = null;   // which chapter's data is currently in recentGames
+
+function _currentChapter() {
     try {
-        const response = await puter.ai.chat(
-            `Schrijf een kort Nederlands verhaal van 5 zinnen met deze woorden: ${words.join(', ')}. 
-                GEEF ALLEEN DE TEKST TERUG. GEEN MARKDOWN, GEEN TITEL, GEEN UITLEG EN GEEN QUOTES. Then end with translate the story to English and put in [ .. ].`,
-            { model: 'gpt-5.2' } // You can also use 'claude-3-5-sonnet' or 'deepseek-chat' or "gpt-4o-mini"
-        );
+        const key = (typeof _storageKey !== 'undefined') ? _storageKey : 'curPage';
+        return localStorage.getItem(key) || 'default';
+    } catch { return 'default'; }
+}
 
-        // 3. Puter returns the message object directly
-        console.log("Verhaal:", response.message.content);
-        // questionDiv.textContent = `[${currentWordIndex + 1} / ${maxNumber}] ${response.message.content}`;
-        questionDiv.textContent = `${response.message.content}`;
-    } catch (error) {
-        console.error("Fout bij het genereren:", error);
+function _readProgress() {
+    try { return JSON.parse(localStorage.getItem(GAME_PROGRESS_KEY)) || {}; }
+    catch { return {}; }
+}
+
+function _writeProgress(p) {
+    try { localStorage.setItem(GAME_PROGRESS_KEY, JSON.stringify(p)); } catch {}
+}
+
+function _loadSeenWords() {
+    return (_readProgress()[_currentChapter()] || []).slice();
+}
+
+function _saveSeenWords(seen) {
+    const ch = _currentChapter();
+    const p  = _readProgress();
+    if (seen.length === 0) { delete p[ch]; }    // clean up when fully reset
+    else                   { p[ch] = seen; }
+    _writeProgress(p);
+}
+
+/* Load progress for the active chapter into recentGames (once per chapter switch) */
+function _ensureProgressLoaded() {
+    const ch = _currentChapter();
+    if (_loadedChapter !== ch) {
+        recentGames    = _loadSeenWords();
+        _loadedChapter = ch;
     }
 }
 
+/* Update the chapter header with seen / remaining counts */
+function _updateProgressHeader() {
+    const total     = wordList.filter(w => w?.english?.trim()).length;
+    const seenNow   = recentGames.length;
+    const remaining = Math.max(0, total - seenNow);
+    const ch        = _currentChapter();
+    const msg       = remaining > 0
+        ? `(${ch}) &nbsp;·&nbsp; ${seenNow}/${total} words seen &nbsp;·&nbsp; ${remaining} left`
+        : `(${ch}) &nbsp;·&nbsp; 🎉 All ${total} done! Starting over…`;
+    document.getElementById('chapter').innerHTML = msg;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   AI STORY GENERATOR
+   ═══════════════════════════════════════════════════════════ */
+async function generateStoryFromPuter(dataObjects, questionDiv) {
+    const words = dataObjects.map(item => item.dutch.split(',')[0].trim());
+    try {
+        const response = await puter.ai.chat(
+            `Schrijf een kort Nederlands verhaal van 5 zinnen met deze woorden: ${words.join(', ')}.
+                GEEF ALLEEN DE TEKST TERUG. GEEN MARKDOWN, GEEN TITEL, GEEN UITLEG EN GEEN QUOTES. Then end with translate the story to English and put in [ .. ].`,
+            { model: 'gpt-5.2' }
+        );
+        questionDiv.textContent = response.message.content;
+    } catch (error) {
+        console.error('[Game] AI story error:', error);
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   CORE GAME LOGIC
+   ═══════════════════════════════════════════════════════════ */
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -35,8 +94,19 @@ function shuffle(array) {
 function showQuestion() {
     document.getElementById('popup').style.display = 'flex';
     maxNumber = Math.min(15, wordList.length);
+
     if (!data || data.length === 0) {
+        _ensureProgressLoaded();              // load saved progress if chapter changed
+
+        const prevSeenLen = recentGames.length;
         data = getRandomData(wordList, maxNumber);
+
+        // getRandomData resets recentGames=[] when all words in chapter are seen
+        if (prevSeenLen > 0 && recentGames.length === 0) {
+            _saveSeenWords([]);               // clear storage — full cycle completed
+        }
+
+        _updateProgressHeader();
     }
 
     if (currentWordIndex < maxNumber && currentWordIndex < data.length) {
@@ -44,58 +114,37 @@ function showQuestion() {
 
         const options = [currentWord.english];
         while (options.length < Math.min(9, data.length)) {
-            const randomIndex = Math.floor(Math.random() * data.length);
-            const randomOption = data[randomIndex].english;
-            if (!options.includes(randomOption)) {
-                options.push(randomOption);
-            }
+            const pick = data[Math.floor(Math.random() * data.length)].english;
+            if (!options.includes(pick)) options.push(pick);
         }
         shuffle(options);
 
-        const progressDiv = document.getElementById('progress');
-        const questionDiv = document.getElementById('question');
+        document.getElementById('progress').textContent = `${currentWordIndex + 1} / ${maxNumber}`;
+        document.getElementById('game-container').querySelector('h1').textContent = currentWord.dutch;
+        generateStoryFromPuter(data, document.getElementById('question'));
+
         const sentenceDiv = document.getElementById('sentence');
-        const optionsDiv = document.getElementById('options');
-        const titleDiv = document.getElementById('game-container').querySelector('h1');
-        const resultDiv = document.getElementById('result');
-
-        progressDiv.textContent = `${currentWordIndex + 1} / ${maxNumber}`;
-
-        generateStoryFromPuter(data, questionDiv);
-        // questionDiv.textContent = `[${currentWordIndex + 1} / ${maxNumber}]`;
-        
-        titleDiv.textContent = `${currentWord.dutch}`;
-        
         if (sentenceDiv) {
-            sentenceDiv.textContent = `${currentWord.dutchsentence}`;
-            sentenceDiv.onclick = () => {
-                speakText(currentWord.dutchsentence);
-            };
+            sentenceDiv.textContent = currentWord.dutchsentence;
+            sentenceDiv.onclick     = () => speakText(currentWord.dutchsentence);
         }
-        optionsDiv.innerHTML = "";
-        resultDiv.textContent = "";
+
+        document.getElementById('options').innerHTML  = '';
+        document.getElementById('result').textContent = '';
         speakText(currentWord.dutch);
         if (currentWord.dutchsentence) {
             setTimeout(() => speakText(currentWord.dutchsentence), 5000);
         }
 
         const frag = document.createDocumentFragment();
-
         options.forEach((option, index) => {
-            const button = document.createElement('button');
-            button.textContent = option;
-            button.onclick = () => checkAnswer(option, currentWord.english, currentWord.index);
-
-            frag.appendChild(button);
-
-            // Add <br> between buttons, but not after the last one
-            if (index < options.length - 1) {
-                frag.appendChild(document.createElement('br'));
-            }
-
+            const btn      = document.createElement('button');
+            btn.textContent = option;
+            btn.onclick    = () => checkAnswer(option, currentWord.english);
+            frag.appendChild(btn);
+            if (index < options.length - 1) frag.appendChild(document.createElement('br'));
         });
-
-        optionsDiv.appendChild(frag);
+        document.getElementById('options').appendChild(frag);
 
     } else {
         showResult();
@@ -105,33 +154,38 @@ function showQuestion() {
 function checkAnswer(selectedOption, correctAnswer) {
     if (selectedOption === correctAnswer) {
         correctAnswers++;
-        recentGames.push(correctAnswer);
-        // remove duplicate words
-        recentGames = recentGames.filter((item, index, self) => {
-            return index === self.indexOf(item);
-        });
-        speakEngText("Correct: " + correctAnswer);
-        document.getElementById('result').textContent = "Correct!";
+        if (!recentGames.includes(correctAnswer)) recentGames.push(correctAnswer);
+        speakEngText('Correct: ' + correctAnswer);
+        document.getElementById('result').textContent = 'Correct!';
     } else {
-        // Remove all items that match "Game 2"
-        recentGames = recentGames.filter(game => game !== correctAnswer);
         document.getElementById('result').textContent = `Incorrect. The correct answer is ${correctAnswer}.`;
-        speakEngText("Incorrect. The correct answer is " + correctAnswer);
+        speakEngText('Incorrect. The correct answer is ' + correctAnswer);
     }
-
     currentWordIndex++;
     setTimeout(showQuestion, 3000);
 }
 
 function showResult() {
+    const total = wordList.filter(w => w?.english?.trim()).length;
+
+    // Mark ALL 15 played words as seen (correct + incorrect alike) so the
+    // next session picks the next fresh batch, not the same words again.
+    data.forEach(w => {
+        if (w.english && !recentGames.includes(w.english)) recentGames.push(w.english);
+    });
+    _saveSeenWords(recentGames);             // persist before resetting data
+
+    const seenNow = recentGames.length;
     document.getElementById('game-container').querySelector('h1').textContent = 'The game is finished!';
-    document.getElementById('result').textContent = `Game over! You got ${correctAnswers} out of ${maxNumber} correct.`;
+    document.getElementById('result').textContent =
+        `Game over! You got ${correctAnswers} / ${maxNumber} correct.  (${seenNow} / ${total} chapter words seen)`;
     document.getElementById('question').textContent = '';
-    document.getElementById('options').innerHTML = '';
+    document.getElementById('options').innerHTML    = '';
+
     let intervalId = setInterval(() => {
         document.getElementById('popup').style.display = 'none';
-        data = [];
-        correctAnswers = 0;
+        data             = [];
+        correctAnswers   = 0;
         currentWordIndex = 0;
         document.getElementById('result').textContent = "Let's go!!!";
         clearInterval(intervalId);
@@ -139,29 +193,19 @@ function showResult() {
 }
 
 function getRandomData(listData, count) {
-    const randomData = [];
-    const selectedIndices = new Set();
-
-    // Build a valid pool with items that have a usable 'english' field
     const valid = listData.filter(
-        (x) => x && typeof x === 'object' && typeof x.english === 'string' && x.english.trim() !== ''
+        x => x && typeof x === 'object' && typeof x.english === 'string' && x.english.trim() !== ''
     );
+    let candidates = valid.filter(x => !recentGames.includes(x.english));
 
-    // Determine candidates not in recentGames (by 'english')
-    let candidates = valid.filter((x) => !recentGames.includes(x.english));
-
-    // If we don't have enough, reset recentGames and use all valid items
     if (candidates.length < count) {
-        recentGames = [];
-        candidates = valid.slice();
+        recentGames = [];          // full cycle done — reset so all words are fair game again
+        candidates  = valid.slice();
     }
 
-    // Avoid infinite loop by sampling from candidates only
-    // Shuffle candidates (Fisher–Yates) then take 'count'
     for (let i = candidates.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [candidates[i], candidates[j]] = [candidates[j], candidates[i]];
     }
-
     return candidates.slice(0, Math.min(count, candidates.length));
 }
