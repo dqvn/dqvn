@@ -134,7 +134,7 @@ async function showQuestion() {
             sentenceDiv.textContent = currentWord.dutchsentence;
             sentenceDiv.onclick     = () => {
                 speakText(currentWord.dutchsentence);
-                _showTranslationToast(currentWord.englishtranslate);
+                _showTranslationToast(currentWord.dutchsentence, currentWord.englishtranslate);
             };
         }
 
@@ -228,17 +228,38 @@ function showResult() {
 const _toast = (() => {
     const el = document.createElement('div');
     el.id = 'sentence-toast';
-    el.innerHTML = '<span class="toast-label">🇬🇧 English translation</span><span class="toast-text"></span>';
+    el.innerHTML = `
+        <div class="toast-handle"></div>
+        <div class="toast-body">
+            <div class="toast-section">
+                <span class="toast-lang">🇳🇱 Dutch example</span>
+                <p class="toast-dutch-text"></p>
+            </div>
+            <div class="toast-sep"></div>
+            <div class="toast-section">
+                <span class="toast-lang">🇬🇧 English</span>
+                <p class="toast-text"></p>
+            </div>
+        </div>
+        <div class="toast-progress-bar"></div>`;
     document.body.appendChild(el);
     return el;
 })();
 
 let _toastTimer = null;
 
-function _showTranslationToast(englishText) {
+function _showTranslationToast(dutchText, englishText) {
     if (!englishText?.trim()) return;
     clearTimeout(_toastTimer);
+    _toast.querySelector('.toast-dutch-text').textContent = dutchText || '';
     _toast.querySelector('.toast-text').textContent = englishText;
+
+    // Restart the countdown animation by forcing a reflow between class removals
+    const bar = _toast.querySelector('.toast-progress-bar');
+    bar.classList.remove('running');
+    void bar.offsetWidth;           // reflow — resets animation state
+    bar.classList.add('running');
+
     _toast.classList.add('visible');
     _toastTimer = setTimeout(_hideTranslationToast, 5000);
 }
