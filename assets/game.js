@@ -99,6 +99,7 @@ let _ttsSeq = 0;
 
 async function showQuestion() {
     document.getElementById('popup').style.display = 'flex';
+    document.body.classList.add('game-active');
     maxNumber = Math.min(15, wordList.length);
 
     if (!data || data.length === 0) {
@@ -167,9 +168,17 @@ async function showQuestion() {
 }
 
 async function checkAnswer(selectedOption, correctAnswer) {
-    _ttsSeq++;                              // invalidate any pending showQuestion TTS chain
-    window.speechSynthesis.cancel();        // stop whatever is currently speaking
-    await new Promise(r => setTimeout(r, 50)); // let Chrome fully drain the queue before next speak
+    _ttsSeq++;
+    window.speechSynthesis.cancel();
+    await new Promise(r => setTimeout(r, 50));
+
+    // Highlight selected button and reveal correct answer; disable all buttons
+    document.querySelectorAll('#options button').forEach(btn => {
+        btn.disabled = true;
+        if (btn.textContent === correctAnswer)  btn.classList.add('btn-correct');
+        if (btn.textContent === selectedOption && selectedOption !== correctAnswer)
+            btn.classList.add('btn-incorrect');
+    });
 
     if (selectedOption === correctAnswer) {
         correctAnswers++;
@@ -177,7 +186,7 @@ async function checkAnswer(selectedOption, correctAnswer) {
         document.getElementById('result').textContent = 'Correct!';
         await speakEngTextAsync('Correct: ' + correctAnswer);
     } else {
-        document.getElementById('result').textContent = `Incorrect. The correct answer is ${correctAnswer}.`;
+        document.getElementById('result').textContent = `Incorrect. The correct answer is: ${correctAnswer}`;
         await speakEngTextAsync('Incorrect. The correct answer is ' + correctAnswer);
     }
     currentWordIndex++;
@@ -202,6 +211,7 @@ function showResult() {
     document.getElementById('options').innerHTML    = '';
 
     setTimeout(() => {
+        document.body.classList.remove('game-active');
         document.getElementById('popup').style.display = 'none';
         data             = [];
         correctAnswers   = 0;
@@ -245,8 +255,8 @@ _toast.addEventListener('click', _hideTranslationToast);
     const btn = document.getElementById('game-close-btn');
     if (!btn) return;
     btn.addEventListener('click', () => {
-        // Save whatever words were answered correctly this partial round before quitting
         if (recentGames.length > 0) _saveSeenWords(recentGames);
+        document.body.classList.remove('game-active');
         document.getElementById('popup').style.display = 'none';
         data             = [];
         correctAnswers   = 0;
