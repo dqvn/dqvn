@@ -91,19 +91,24 @@ function shuffle(array) {
     }
 }
 
-function showQuestion() {
+/* Sequence counter — incremented whenever a new TTS chain starts.
+   Each async showQuestion() captures its own value; if it no longer
+   matches when it resumes after await, a newer call has taken over
+   and the old chain exits without speaking the sentence. */
+let _ttsSeq = 0;
+
+async function showQuestion() {
     document.getElementById('popup').style.display = 'flex';
     maxNumber = Math.min(15, wordList.length);
 
     if (!data || data.length === 0) {
-        _ensureProgressLoaded();              // load saved progress if chapter changed
+        _ensureProgressLoaded();
 
         const prevSeenLen = recentGames.length;
         data = getRandomData(wordList, maxNumber);
 
-        // getRandomData resets recentGames=[] when all words in chapter are seen
         if (prevSeenLen > 0 && recentGames.length === 0) {
-            _saveSeenWords([]);               // clear storage — full cycle completed
+            _saveSeenWords([]);
         }
 
         _updateProgressHeader();
@@ -131,38 +136,47 @@ function showQuestion() {
 
         document.getElementById('options').innerHTML  = '';
         document.getElementById('result').textContent = '';
-        speakText(currentWord.dutch);
-        if (currentWord.dutchsentence) {
-            setTimeout(() => speakText(currentWord.dutchsentence), 5000);
-        }
 
         const frag = document.createDocumentFragment();
         options.forEach((option, index) => {
-            const btn      = document.createElement('button');
+            const btn       = document.createElement('button');
             btn.textContent = option;
-            btn.onclick    = () => checkAnswer(option, currentWord.english);
+            btn.onclick     = () => checkAnswer(option, currentWord.english);
             frag.appendChild(btn);
             if (index < options.length - 1) frag.appendChild(document.createElement('br'));
         });
         document.getElementById('options').appendChild(frag);
+
+        // Speak word, wait for it to finish, then speak sentence.
+        // If the user answers mid-speech, checkAnswer() bumps _ttsSeq and
+        // cancels TTS — the await resolves immediately and we exit early.
+        const mySeq = ++_ttsSeq;
+        await speakTextAsync(currentWord.dutch);
+        if (_ttsSeq !== mySeq) return;          // user already answered — stop chain
+        if (currentWord.dutchsentence) {
+            await speakTextAsync(currentWord.dutchsentence);
+        }
 
     } else {
         showResult();
     }
 }
 
-function checkAnswer(selectedOption, correctAnswer) {
+async function checkAnswer(selectedOption, correctAnswer) {
+    _ttsSeq++;                              // invalidate any pending showQuestion TTS chain
+    window.speechSynthesis.cancel();        // stop whatever is currently speaking
+
     if (selectedOption === correctAnswer) {
         correctAnswers++;
         if (!recentGames.includes(correctAnswer)) recentGames.push(correctAnswer);
-        speakEngText('Correct: ' + correctAnswer);
         document.getElementById('result').textContent = 'Correct!';
+        await speakEngTextAsync('Correct: ' + correctAnswer);
     } else {
         document.getElementById('result').textContent = `Incorrect. The correct answer is ${correctAnswer}.`;
-        speakEngText('Incorrect. The correct answer is ' + correctAnswer);
+        await speakEngTextAsync('Incorrect. The correct answer is ' + correctAnswer);
     }
     currentWordIndex++;
-    setTimeout(showQuestion, 3000);
+    showQuestion();
 }
 
 function showResult() {
