@@ -182,13 +182,12 @@ function showResult() {
     document.getElementById('question').textContent = '';
     document.getElementById('options').innerHTML    = '';
 
-    let intervalId = setInterval(() => {
+    setTimeout(() => {
         document.getElementById('popup').style.display = 'none';
         data             = [];
         correctAnswers   = 0;
         currentWordIndex = 0;
         document.getElementById('result').textContent = "Let's go!!!";
-        clearInterval(intervalId);
     }, 3000);
 }
 
@@ -197,6 +196,8 @@ function showResult() {
     const btn = document.getElementById('game-close-btn');
     if (!btn) return;
     btn.addEventListener('click', () => {
+        // Save whatever words were answered correctly this partial round before quitting
+        if (recentGames.length > 0) _saveSeenWords(recentGames);
         document.getElementById('popup').style.display = 'none';
         data             = [];
         correctAnswers   = 0;
