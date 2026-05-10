@@ -192,6 +192,19 @@ function showResult() {
     }, 3000);
 }
 
+/* Close button — lets mobile users dismiss the popup mid-game */
+(function wireCloseButton() {
+    const btn = document.getElementById('game-close-btn');
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+        document.getElementById('popup').style.display = 'none';
+        data             = [];
+        correctAnswers   = 0;
+        currentWordIndex = 0;
+        window.speechSynthesis?.cancel();
+    });
+})();
+
 function getRandomData(listData, count) {
     const valid = listData.filter(
         x => x && typeof x === 'object' && typeof x.english === 'string' && x.english.trim() !== ''

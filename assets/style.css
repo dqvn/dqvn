@@ -677,6 +677,31 @@ button:hover {
     color: #4a5568;
 }
 
+/* ── Game dismiss button ── */
+#game-close-btn {
+    display: none;              /* hidden on desktop — Esc / waiting works fine */
+    position: fixed;
+    top: 14px;
+    right: 14px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 1010;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+#game-close-btn:hover {
+    background: rgba(0, 0, 0, 0.75);
+}
+
 /* ═══════════════════════════════════════════════════════════
    MOBILE  (≤ 768 px)
    Desktop styles are untouched — all overrides are inside
@@ -771,18 +796,27 @@ button:hover {
         align-items: flex-start;
     }
 
-    /* ── Game container: single column ── */
+    /* ── Game container: single column, full-width children ── */
     #game-container {
         flex-direction: column;
+        align-items: stretch;   /* override desktop flex-start so children fill width */
         padding: 16px;
         gap: 12px;
         max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     #game-container h1 {
         font-size: 1.4rem;
-        margin-top: 24px;
+        margin-top: 56px;       /* clear the fixed toggle button */
         margin-bottom: 0;
+        text-align: center;
+    }
+
+    /* wrapper around #options + #result must also be full-width */
+    #game-logic-wrapper {
+        width: 100%;
     }
 
     /* ── Story panel: full width ── */
@@ -792,6 +826,7 @@ button:hover {
         padding: 14px;
         font-size: 14px;
         margin: 0;
+        box-sizing: border-box;
     }
 
     /* ── Right-side game elements: full width ── */
@@ -802,6 +837,7 @@ button:hover {
         min-width: unset;
         width: 100%;
         flex: none;
+        box-sizing: border-box;
     }
 
     .sentence-example {
@@ -815,6 +851,11 @@ button:hover {
         padding: 12px 16px;
         max-width: 100%;
         border-radius: 12px;
+    }
+
+    /* ── Game close button: top-right corner ── */
+    #game-close-btn {
+        display: flex;
     }
 
     /* ── File container: shorter on phone ── */
