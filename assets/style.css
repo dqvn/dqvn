@@ -676,3 +676,149 @@ button:hover {
     margin-bottom: 15px;
     color: #4a5568;
 }
+
+/* ═══════════════════════════════════════════════════════════
+   MOBILE  (≤ 768 px)
+   Desktop styles are untouched — all overrides are inside
+   this single media query block.
+   ═══════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+
+    /* ── Toggle button: fixed circle, always reachable ── */
+    .toggle-menu-button {
+        position: fixed;
+        top: 12px;
+        left: 12px;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3em;
+        z-index: 1100;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    }
+
+    /* ── Left menu: fixed full-height drawer ── */
+    .left-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 270px !important;
+        z-index: 1050;
+        overflow-y: auto;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        margin: 0;
+        border-radius: 0;
+        padding: 24px 16px !important;
+        box-sizing: border-box;
+        background: rgba(255, 255, 255, 0.97);
+        backdrop-filter: blur(12px);
+    }
+
+    /* Show drawer when menu is NOT hidden */
+    .container:not(.menu-hidden) .left-menu {
+        transform: translateX(0);
+        box-shadow: 4px 0 24px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Override desktop rule that collapses width to 0 */
+    .container.menu-hidden .left-menu {
+        width: 270px !important;
+        padding: 24px 16px !important;
+        transform: translateX(-100%);
+    }
+
+    /* ── Backdrop dim when drawer is open ── */
+    .mobile-menu-backdrop {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: 1040;
+    }
+
+    .container:not(.menu-hidden) .mobile-menu-backdrop {
+        display: block;
+    }
+
+    /* ── Table container always full-width on mobile ── */
+    .table-container {
+        width: 100% !important;
+        height: 82vh;
+    }
+
+    /* ── Hide Vietnamese column (too narrow on phone) ── */
+    #word-list th:last-child,
+    #word-list td:last-child {
+        display: none;
+    }
+
+    /* ── Widen Dutch column slightly without the last col ── */
+    #word-list th:nth-child(2),
+    #word-list td:nth-child(2) {
+        width: 35%;
+    }
+
+    /* ── Game popup: fill screen, scrollable ── */
+    #popup {
+        padding: 0;
+        overflow-y: auto;
+        align-items: flex-start;
+    }
+
+    /* ── Game container: single column ── */
+    #game-container {
+        flex-direction: column;
+        padding: 16px;
+        gap: 12px;
+        max-width: 100%;
+    }
+
+    #game-container h1 {
+        font-size: 1.4rem;
+        margin-top: 24px;
+        margin-bottom: 0;
+    }
+
+    /* ── Story panel: full width ── */
+    #question {
+        min-width: unset;
+        max-width: 100%;
+        padding: 14px;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    /* ── Right-side game elements: full width ── */
+    #sentence,
+    #options,
+    #result,
+    #progress {
+        min-width: unset;
+        width: 100%;
+        flex: none;
+    }
+
+    .sentence-example {
+        font-size: 1.1rem;
+    }
+
+    /* ── Option buttons: large touch targets ── */
+    #options button {
+        min-height: 52px;
+        font-size: 1.15rem;
+        padding: 12px 16px;
+        max-width: 100%;
+        border-radius: 12px;
+    }
+
+    /* ── File container: shorter on phone ── */
+    .file-container {
+        height: 300px;
+    }
+}

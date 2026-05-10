@@ -55,12 +55,27 @@ hideMeaningCheckbox.addEventListener('change', () => {
     const container    = document.querySelector('.container');
     if (!toggleButton || !container) return;
     const icon = toggleButton.querySelector('.icon');
-    toggleButton.setAttribute('aria-expanded', 'true');
-    toggleButton.addEventListener('click', () => {
-        container.classList.toggle('menu-hidden');
-        const hidden = container.classList.contains('menu-hidden');
+
+    // Backdrop for mobile drawer
+    const backdrop = document.createElement('div');
+    backdrop.classList.add('mobile-menu-backdrop');
+    container.appendChild(backdrop);
+
+    const isMobile = () => window.innerWidth <= 768;
+
+    function setMenuState(hidden) {
+        container.classList.toggle('menu-hidden', hidden);
         icon.innerHTML = hidden ? '▶' : '☰';
         toggleButton.setAttribute('aria-expanded', String(!hidden));
+    }
+
+    // On mobile: start with menu closed; on desktop: start open
+    setMenuState(isMobile());
+
+    backdrop.addEventListener('click', () => setMenuState(true));
+
+    toggleButton.addEventListener('click', () => {
+        setMenuState(!container.classList.contains('menu-hidden'));
     });
 })();
 
