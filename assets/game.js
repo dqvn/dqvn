@@ -113,6 +113,7 @@ async function showQuestion() {
         }
 
         _updateProgressHeader();
+        generateStoryFromPuter(data, document.getElementById('question'));
     }
 
     if (currentWordIndex < maxNumber && currentWordIndex < data.length) {
@@ -129,7 +130,6 @@ async function showQuestion() {
         const wordTitle = document.getElementById('game-container').querySelector('h1');
         wordTitle.textContent = currentWord.dutch;
         wordTitle.onclick = () => speakText(currentWord.dutch);
-        generateStoryFromPuter(data, document.getElementById('question'));
 
         const sentenceDiv = document.getElementById('sentence');
         if (sentenceDiv) {
@@ -141,7 +141,9 @@ async function showQuestion() {
         }
 
         document.getElementById('options').innerHTML  = '';
-        document.getElementById('result').textContent = '';
+        const resultEl = document.getElementById('result');
+        resultEl.textContent = '';
+        resultEl.className   = '';
         _hideTranslationToast();
 
         const frag = document.createDocumentFragment();
@@ -182,13 +184,17 @@ async function checkAnswer(selectedOption, correctAnswer) {
             btn.classList.add('btn-incorrect');
     });
 
+    const resultEl = document.getElementById('result');
     if (selectedOption === correctAnswer) {
         correctAnswers++;
         if (!recentGames.includes(correctAnswer)) recentGames.push(correctAnswer);
-        document.getElementById('result').textContent = 'Correct!';
+        resultEl.textContent = '🎉 Correct!';
+        resultEl.className   = 'result-correct';
+        _showCorrectAnimation();
         await speakEngTextAsync('Correct: ' + correctAnswer);
     } else {
-        document.getElementById('result').textContent = `Incorrect. The correct answer is: ${correctAnswer}`;
+        resultEl.textContent = `❌ Incorrect — answer: ${correctAnswer}`;
+        resultEl.className   = 'result-incorrect';
         await speakEngTextAsync('Incorrect. The correct answer is ' + correctAnswer);
     }
     currentWordIndex++;
@@ -206,20 +212,173 @@ function showResult() {
     _saveSeenWords(recentGames);             // persist before resetting data
 
     const seenNow = recentGames.length;
-    document.getElementById('game-container').querySelector('h1').textContent = 'The game is finished!';
-    document.getElementById('result').textContent =
-        `Game over! You got ${correctAnswers} / ${maxNumber} correct.  (${seenNow} / ${total} chapter words seen)`;
     document.getElementById('question').textContent = '';
     document.getElementById('options').innerHTML    = '';
 
-    setTimeout(() => {
+    _showEndgameAnimation(correctAnswers, maxNumber, seenNow, total, () => {
         document.body.classList.remove('game-active');
         document.getElementById('popup').style.display = 'none';
         data             = [];
         correctAnswers   = 0;
         currentWordIndex = 0;
         document.getElementById('result').textContent = "Let's go!!!";
-    }, 3000);
+    });
+}
+
+/* ── End-of-game celebration overlay ────────────────────────────────────────
+   Shows score card, animated counter, stars, chapter progress bar,
+   falling confetti rain, and 3 firework bursts.
+   Auto-dismisses after 5.5 s; tap anywhere to dismiss early.
+   ──────────────────────────────────────────────────────────────────────── */
+function _showEndgameAnimation(correct, maxN, seenNow, totalWords, onDone) {
+    document.getElementById('endgame-overlay')?.remove();
+
+    const pct   = maxN > 0 ? correct / maxN : 0;
+    const trophy = pct >= 0.9 ? '🏆' : pct >= 0.7 ? '🥇' : pct >= 0.5 ? '🥈' : '🥉';
+    const stars  = Math.round(pct * 5);
+    const chPct  = totalWords > 0 ? Math.round((seenNow / totalWords) * 100) : 0;
+
+    // ── Build overlay ──
+    const overlay = document.createElement('div');
+    overlay.id = 'endgame-overlay';
+
+    const card = document.createElement('div');
+    card.className = 'eg-card';
+    card.innerHTML = `
+        <span class="eg-trophy">${trophy}</span>
+        <div class="eg-score-wrap">
+            <div class="eg-score-label">Your Score</div>
+            <div class="eg-score-number">
+                <span class="eg-count">0</span><span class="eg-score-denom"> / ${maxN}</span>
+            </div>
+        </div>
+        <span class="eg-stars">${[0,1,2,3,4].map(i =>
+            `<span class="eg-star" style="animation-delay:${0.9 + i * 0.12}s">${i < stars ? '⭐' : '☆'}</span>`
+        ).join('')}</span>
+        <div class="eg-progress-label">Chapter progress: ${seenNow} / ${totalWords} (${chPct}%)</div>
+        <div class="eg-progress-track"><div class="eg-progress-fill"></div></div>
+        <div class="eg-tap-hint">Tap anywhere to continue</div>`;
+
+    overlay.appendChild(card);
+    document.body.appendChild(overlay);
+
+    // ── Animated score count-up ──
+    const countEl = overlay.querySelector('.eg-count');
+    const start   = performance.now();
+    const dur     = 1400;
+    function _countUp(now) {
+        const t = Math.min((now - start) / dur, 1);
+        const ease = 1 - Math.pow(1 - t, 3);           // ease-out cubic
+        countEl.textContent = Math.round(ease * correct);
+        if (t < 1) requestAnimationFrame(_countUp);
+    }
+    requestAnimationFrame(_countUp);
+
+    // ── Animate chapter progress bar ──
+    requestAnimationFrame(() => {
+        const fill = overlay.querySelector('.eg-progress-fill');
+        if (fill) fill.style.width = chPct + '%';
+    });
+
+    // ── Falling confetti rain ──
+    const RAIN_COLORS = ['#FF6B6B','#FFA500','#FFD700','#00C896','#667EEA','#F093FB','#06B6D4','#FF9F43','#A78BFA','#34D399'];
+    for (let i = 0; i < 80; i++) {
+        const c       = document.createElement('div');
+        c.className   = 'eg-confetti';
+        const isRect  = Math.random() > 0.4;
+        c.style.left  = `${Math.random() * 100}%`;
+        c.style.width = `${isRect ? 6 + Math.random() * 5 : 7 + Math.random() * 6}px`;
+        c.style.height= `${isRect ? 14 + Math.random() * 10 : 7 + Math.random() * 6}px`;
+        if (!isRect) c.style.borderRadius = '50%';
+        c.style.background = RAIN_COLORS[Math.floor(Math.random() * RAIN_COLORS.length)];
+        c.style.setProperty('--rot',  `${Math.random() * 540 - 270}deg`);
+        c.style.setProperty('--flip', Math.random() > 0.5 ? '1' : '-1');
+        c.style.animationDelay    = `${Math.random() * 1.8}s`;
+        c.style.animationDuration = `${2.4 + Math.random() * 2}s`;
+        overlay.appendChild(c);
+    }
+
+    // ── Firework bursts ──
+    const SPARK_COLORS = ['#FFD700','#FF6B6B','#06B6D4','#00C896','#F093FB','#FF9F43'];
+    function _fireFirework(xPct, yPct, delay) {
+        setTimeout(() => {
+            const fw  = document.createElement('div');
+            fw.className = 'eg-firework';
+            fw.style.left = xPct + '%';
+            fw.style.top  = yPct + '%';
+            overlay.appendChild(fw);
+            const count = 18;
+            for (let i = 0; i < count; i++) {
+                const sp = document.createElement('div');
+                sp.className = 'eg-spark';
+                const angle  = (360 / count) * i;
+                const dist   = 50 + Math.random() * 70;
+                const color  = SPARK_COLORS[Math.floor(Math.random() * SPARK_COLORS.length)];
+                sp.style.setProperty('--a',    `${angle}deg`);
+                sp.style.setProperty('--dist', `-${dist}px`);
+                sp.style.setProperty('--spark-color', color);
+                sp.style.animationDelay    = `${Math.random() * 0.1}s`;
+                sp.style.animationDuration = `${0.65 + Math.random() * 0.3}s`;
+                fw.appendChild(sp);
+            }
+            setTimeout(() => fw.remove(), 1200);
+        }, delay);
+    }
+
+    _fireFirework(20 + Math.random() * 20, 15 + Math.random() * 20,  400);
+    _fireFirework(60 + Math.random() * 20, 10 + Math.random() * 20, 1100);
+    _fireFirework(35 + Math.random() * 30, 20 + Math.random() * 15, 1800);
+
+    // ── Dismiss logic ──
+    let dismissed = false;
+    function _dismiss() {
+        if (dismissed) return;
+        dismissed = true;
+        clearTimeout(autoTimer);
+        overlay.classList.add('eg-dismissing');
+        setTimeout(() => { overlay.remove(); onDone(); }, 480);
+    }
+
+    overlay.addEventListener('click', _dismiss);
+    const autoTimer = setTimeout(_dismiss, 5500);
+}
+
+/* ── Correct-answer celebration ──────────────────────────────────────────
+   Bursts 45 confetti particles outward from the screen centre and pops a
+   large emoji badge.  All elements are removed after 2.2 s automatically.
+   ──────────────────────────────────────────────────────────────────────── */
+function _showCorrectAnimation() {
+    document.getElementById('correct-anim-container')?.remove();
+
+    const wrap = document.createElement('div');
+    wrap.id = 'correct-anim-container';
+    document.body.appendChild(wrap);
+
+    // Random emoji badge in the centre
+    const badge = document.createElement('div');
+    badge.className = 'ca-badge';
+    badge.textContent = ['🎉', '🌟', '🎊', '⭐', '✨'][Math.floor(Math.random() * 5)];
+    wrap.appendChild(badge);
+
+    // Confetti burst — particles radiate outward at random angles
+    const COLORS = ['#FF6B6B','#FFA500','#FFD700','#00C896','#667EEA','#F093FB','#06B6D4','#FF9F43'];
+    for (let i = 0; i < 45; i++) {
+        const p     = document.createElement('div');
+        p.className = 'ca-particle';
+        const angle = Math.random() * 360;
+        const dist  = 100 + Math.random() * 220;
+        p.style.setProperty('--dx',    `${Math.cos(angle * Math.PI / 180) * dist}px`);
+        p.style.setProperty('--dy',    `${Math.sin(angle * Math.PI / 180) * dist - 40}px`);
+        p.style.setProperty('--rot',   `${Math.random() * 720 - 360}deg`);
+        p.style.setProperty('--color', COLORS[Math.floor(Math.random() * COLORS.length)]);
+        p.style.width             = `${6  + Math.random() * 8}px`;
+        p.style.height            = `${Math.random() > 0.4 ? 14 + Math.random() * 10 : 6 + Math.random() * 8}px`;
+        p.style.animationDelay    = `${Math.random() * 0.12}s`;
+        p.style.animationDuration = `${0.75 + Math.random() * 0.55}s`;
+        wrap.appendChild(p);
+    }
+
+    setTimeout(() => wrap.remove(), 2200);
 }
 
 /* ── Sentence translation toast ─────────────────────────────────────────
