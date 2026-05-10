@@ -697,45 +697,115 @@ button:hover {
     color: #4a5568;
 }
 
-/* ── Sentence translation toast ── */
+/* ── Sentence translation bottom sheet ──────────────────────────────────
+   Slides up from the bottom like a native iOS/Android sheet.
+   Shows the Dutch sentence + English translation with a 5 s countdown bar.
+   ──────────────────────────────────────────────────────────────────────── */
 #sentence-toast {
     position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%) translateY(-200%);  /* hidden above viewport */
-    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(110%);
+    transition: transform 0.48s cubic-bezier(0.32, 0.72, 0, 1);
     z-index: 2000;
-
-    background: rgba(20, 30, 60, 0.93);
-    backdrop-filter: blur(8px);
-    color: #fff;
-    padding: 14px 22px;
-    border-radius: 14px;
-    max-width: min(480px, 90vw);
-    text-align: center;
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
-    pointer-events: auto;
+    overflow: hidden;
     cursor: pointer;
+
+    /* Light glassmorphism — modern, not dark */
+    background: linear-gradient(160deg, rgba(248, 250, 255, 0.98) 0%, rgba(252, 253, 255, 0.97) 100%);
+    backdrop-filter: blur(24px) saturate(200%);
+    -webkit-backdrop-filter: blur(24px) saturate(200%);
+    border-radius: 24px 24px 0 0;
+    box-shadow:
+        0 -1px 0   rgba(102, 126, 234, 0.25),
+        0 -12px 48px rgba(100, 116, 139, 0.16),
+        0 -2px  12px rgba(100, 116, 139, 0.08);
+}
+
+/* Gradient accent stripe clipped by border-radius at the top */
+#sentence-toast::before {
+    content: '';
+    display: block;
+    height: 3px;
+    background: linear-gradient(90deg, #667eea 0%, #00698f 50%, #06b6d4 100%);
 }
 
 #sentence-toast.visible {
-    transform: translateX(-50%) translateY(0);
+    transform: translateY(0);
 }
 
-#sentence-toast .toast-label {
-    display: block;
-    font-size: 0.72rem;
-    letter-spacing: 0.08em;
+/* ── Drag handle ── */
+.toast-handle {
+    width: 40px;
+    height: 4px;
+    background: rgba(148, 163, 184, 0.45);
+    border-radius: 2px;
+    margin: 10px auto 2px;
+}
+
+/* ── Content area ── */
+.toast-body {
+    padding: 6px 24px calc(14px + env(safe-area-inset-bottom, 0px));
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+}
+
+.toast-section {
+    padding: 8px 0;
+}
+
+.toast-lang {
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.13em;
     text-transform: uppercase;
-    opacity: 0.6;
+    color: #94a3b8;
+    display: block;
     margin-bottom: 5px;
 }
 
-#sentence-toast .toast-text {
-    display: block;
+/* Dutch sentence — italic, deep blue */
+.toast-dutch-text {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.55;
+    font-weight: 600;
+    font-style: italic;
+    color: #0c4a6e;
+}
+
+/* English translation — confident green */
+.toast-text {
+    margin: 0;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.55;
     font-weight: 500;
+    color: #14532d;
+}
+
+/* Divider between Dutch and English */
+.toast-sep {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(148, 163, 184, 0.4), transparent);
+    margin: 2px 0;
+}
+
+/* ── 5 s countdown progress bar ── */
+.toast-progress-bar {
+    height: 3px;
+    background: linear-gradient(90deg, #667eea, #00698f 50%, #06b6d4);
+    transform-origin: left center;
+}
+
+.toast-progress-bar.running {
+    animation: toast-drain 5s linear forwards;
+}
+
+@keyframes toast-drain {
+    from { transform: scaleX(1); }
+    to   { transform: scaleX(0); }
 }
 
 /* ── Game dismiss button ── */
