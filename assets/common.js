@@ -161,6 +161,55 @@ function speakEngText(text) {
     window.speechSynthesis.speak(speech);
 }
 
+/* Promise-based TTS — resolves when utterance finishes (or errors) */
+function speakTextAsync(text) {
+    return new Promise(resolve => {
+        if (window.speechSynthesis.speaking) window.speechSynthesis.cancel();
+        window.speechSynthesis.resume();
+
+        const voices = window.speechSynthesis.getVoices();
+        if (!voices.length) { resolve(); return; }
+        if (!googleNederlandsVoice) {
+            googleNederlandsVoice =
+                voices.find(v => v.name === TTSName && v.lang === TTSLang) ||
+                voices.find(v => v.lang === TTSLang);
+        }
+        try {
+            const speech    = new SpeechSynthesisUtterance();
+            if (googleNederlandsVoice) {
+                speech.voice = googleNederlandsVoice;
+                document.getElementById('tts-name').textContent = googleNederlandsVoice.name;
+            }
+            speech.lang    = TTSLang;
+            speech.rate    = 0.8;
+            speech.pitch   = 1;
+            speech.volume  = volumeControl.value / 100;
+            speech.text    = text.replaceAll("'", '');
+            speech.onend   = resolve;
+            speech.onerror = (e) => { console.error('[TTS] error:', e.error); resolve(); };
+            window.speechSynthesis.speak(speech);
+        } catch (e) {
+            console.error('[TTS] error:', e);
+            resolve();
+        }
+    });
+}
+
+function speakEngTextAsync(text) {
+    return new Promise(resolve => {
+        window.speechSynthesis.resume();
+        const speech   = new SpeechSynthesisUtterance();
+        speech.text    = text.replaceAll("'", '');
+        speech.rate    = 0.9;
+        speech.volume  = volumeControl.value / 100;
+        const voices   = window.speechSynthesis.getVoices();
+        if (voices.length) speech.voice = voices[0];
+        speech.onend   = resolve;
+        speech.onerror = () => resolve();
+        window.speechSynthesis.speak(speech);
+    });
+}
+
 function loadJsonData(filename, callback) {
     localStorage.setItem(_storageKey, filename);
     const xhr = new XMLHttpRequest();
