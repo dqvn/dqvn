@@ -100,6 +100,8 @@ document.getElementById('start-button').addEventListener('click', () => {
 
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
+const _lmYear = document.getElementById('lm-year');
+if (_lmYear) _lmYear.textContent = new Date().getFullYear();
 
 /* ── Voice initialisation ──────────────────────────────────────────────────
    Firefox / Safari return voices synchronously on the first getVoices() call.
