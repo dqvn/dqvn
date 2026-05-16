@@ -278,7 +278,7 @@ function reloadTable(data) {
           <td>${index + 1}</td>
           <td onclick="speakText('${word.dutch?.replace(/'/g, '')}')">
             <span class="dutch-word" data-index="${index}">${word.dutch}</span><br/>
-            <span style="font-size:.8em;">/${word.pronunciation?.ipa || ''}/ ~ /${word.pronunciation?.phonetic || ''}/</span>
+            <span class="ipa-text" style="font-size:.8em;">/${word.pronunciation?.ipa || ''}/ ~ /${word.pronunciation?.phonetic || ''}/</span>
           </td>
           <td onclick="speakEngText('${word.english?.replace(/'/g, '')}')">
             <span class="hide-text">${word.english}</span>
