@@ -1935,29 +1935,30 @@ button:hover {
 
     /* ── Scene: eats all remaining vertical space ─────────────── */
     #fc-scene {
-        flex: 1 1 0;          /* grow, shrink, zero base so it fills exactly */
-        min-height: 0;        /* allow shrink below content size */
-        padding: 8px 14px 6px;
+        flex: 1 1 0;
+        min-height: 0;
+        padding: 8px 0 6px;   /* zero side padding — card fills full width */
         display: flex;
-        align-items: stretch; /* card stretches to scene height */
-        justify-content: stretch;
+        align-items: stretch;
     }
 
-    /* ── Card: fills the scene both axes ─────────────────────── */
+    /* ── Card: explicitly 100% wide, fills scene height ──────── */
     #fc-card {
-        flex: 1 1 0;          /* fill main-axis (width in row scene) */
+        width: 100%;
+        max-width: 100%;
+        flex: 1 1 0;
         min-width: 0;
         min-height: 0;
-        max-width: 100%;
         display: flex;
         flex-direction: column;
     }
 
     /* ── Front face: fills the card ──────────────────────────── */
     #fc-front {
+        width: 100%;
         flex: 1 1 0;
         min-height: 0;
-        border-radius: 20px;
+        border-radius: 16px 16px 0 0;  /* rounded top, flush sides & bottom */
         padding: 32px 24px 24px;
         gap: 16px;
     }
@@ -1969,12 +1970,13 @@ button:hover {
 
     /* ── Back face: fills the card, scrolls if needed ────────── */
     #fc-back {
+        width: 100%;
         flex: 1 1 0;
         min-height: 0;
-        border-radius: 20px;
-        padding: 28px 22px 22px;
+        border-radius: 16px 16px 0 0;  /* rounded top, flush sides & bottom */
+        padding: 28px 24px 22px;
         gap: 12px;
-        max-height: none;     /* flex controls height, not max-height */
+        max-height: none;
         overflow-y: auto;
     }
 
