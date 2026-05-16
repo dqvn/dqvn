@@ -1255,9 +1255,10 @@ button:hover {
     /* wrapper around #options + #result must also be full-width */
     #game-logic-wrapper {
         width: 100%;
+        order: 2;   /* answers appear before AI story on mobile */
     }
 
-    /* ── Story panel: full width ── */
+    /* ── Story panel: full width, moved below answers on mobile ── */
     #question {
         min-width: unset;
         max-width: 100%;
@@ -1265,6 +1266,7 @@ button:hover {
         font-size: 14px;
         margin: 0;
         box-sizing: border-box;
+        order: 3;   /* AI story pushed to after the answers */
     }
 
     /* ── Right-side game elements: full width ── */
