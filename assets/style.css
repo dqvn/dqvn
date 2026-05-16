@@ -2092,15 +2092,15 @@ button:hover {
     #fc-scene {
         flex: 1 1 0;
         min-height: 0;
-        padding: 8px 0 6px;   /* zero side padding — card fills full width */
+        padding: 8px 5% 6px;  /* 5% each side → card is 90% wide */
         display: flex;
         align-items: stretch;
     }
 
-    /* ── Card: explicitly 100% wide, fills scene height ──────── */
+    /* ── Card: 90% wide, fills scene height ──────────────────── */
     #fc-card {
-        width: 100%;
-        max-width: 100%;
+        width: 90%;
+        max-width: 90%;
         flex: 1 1 0;
         min-width: 0;
         min-height: 0;
@@ -2113,7 +2113,7 @@ button:hover {
         width: 100%;
         flex: 1 1 0;
         min-height: 0;
-        border-radius: 16px 16px 0 0;  /* rounded top, flush sides & bottom */
+        border-radius: 20px;  /* fully rounded now that card has breathing room */
         padding: 32px 24px 24px;
         gap: 16px;
     }
@@ -2128,7 +2128,7 @@ button:hover {
         width: 100%;
         flex: 1 1 0;
         min-height: 0;
-        border-radius: 16px 16px 0 0;  /* rounded top, flush sides & bottom */
+        border-radius: 20px;  /* fully rounded now that card has breathing room */
         padding: 28px 24px 22px;
         gap: 12px;
         max-height: none;
