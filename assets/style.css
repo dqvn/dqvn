@@ -2099,8 +2099,8 @@ button:hover {
 
     /* ── Card: 90% wide, fills scene height ──────────────────── */
     #fc-card {
-        width: 90%;
-        max-width: 90%;
+        width: 100%;
+        max-width: 100%;
         flex: 1 1 0;
         min-width: 0;
         min-height: 0;
