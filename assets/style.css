@@ -1233,7 +1233,7 @@ button:hover {
         transition: transform 0.3s ease;
         margin: 0;
         border-radius: 0;
-        padding: max(24px, env(safe-area-inset-top)) 16px 0 !important;
+        padding: max(24px, env(safe-area-inset-top)) 0 0 !important;
         box-sizing: border-box;
         background: #ffffff;         /* solid white — no backdrop-filter flicker */
         backdrop-filter: none;
@@ -1255,8 +1255,12 @@ button:hover {
     .lm-ft-email { color: #64748b; }
     .lm-ft-year { color: #94a3b8; }
 
-    /* Remove spacer bottom margin so there's no gap above the footer */
-    .spacer { margin-bottom: 0; }
+    /* Remove spacer bottom margin; give internal content 5px side breathing room */
+    .spacer {
+        margin-bottom: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 
     /* Show drawer when menu is NOT hidden */
     .container:not(.menu-hidden) .left-menu {
@@ -1267,7 +1271,7 @@ button:hover {
     /* Override desktop rule that collapses width to 0 */
     .container.menu-hidden .left-menu {
         width: 270px !important;
-        padding: 24px 16px !important;
+        padding: 24px 0 0 !important;
         transform: translateX(-100%);
     }
 
