@@ -175,6 +175,12 @@
     el.classList.add('fc-enter');
     setTimeout(() => el.classList.remove('fc-enter'), 500);
 
+    // Deck stack depth (how many cards remain after this one)
+    const remaining = fc.cards.length - fc.index - 1;
+    const scene = $id('fc-scene');
+    scene.classList.remove('fc-stack-0', 'fc-stack-1', 'fc-stack-2');
+    scene.classList.add(remaining >= 2 ? 'fc-stack-2' : remaining === 1 ? 'fc-stack-1' : 'fc-stack-0');
+
     // Speak Dutch word
     fc.ttsSeq++;
     const seq = fc.ttsSeq;
@@ -248,18 +254,18 @@
 
     const el = $id('fc-card');
     if (rating === 'hard') {
-      el.classList.add('fc-shake');
-      flashOverlay('rgba(220,38,38,0.15)');
-      setTimeout(() => { el.classList.remove('fc-shake'); advance(); }, 650);
+      el.classList.add('fc-exit-left');
+      flashOverlay('rgba(220,38,38,0.18)');
+      setTimeout(() => { el.classList.remove('fc-exit-left'); advance(); }, 450);
     } else if (rating === 'good') {
       el.classList.add('fc-exit-up');
       flashOverlay('rgba(22,163,74,0.15)');
-      setTimeout(() => { el.classList.remove('fc-exit-up'); advance(); }, 480);
+      setTimeout(() => { el.classList.remove('fc-exit-up'); advance(); }, 450);
     } else {
       el.classList.add('fc-exit-right');
       flashOverlay('rgba(234,179,8,0.18)');
       burstConfetti(false);
-      setTimeout(() => { el.classList.remove('fc-exit-right'); advance(); }, 520);
+      setTimeout(() => { el.classList.remove('fc-exit-right'); advance(); }, 450);
     }
   }
 
