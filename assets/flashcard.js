@@ -485,11 +485,15 @@
     const dy = e.touches[0].clientY - fc.touchStartY;
     const absDx = Math.abs(dx), absDy = Math.abs(dy);
 
-    if (absDx > absDy && absDx > 4) e.preventDefault();
-    if (!fc.flipped) return;
+    // Prevent page scroll while dragging
+    if (absDx > 4 || (fc.isDragging && absDy > 4)) e.preventDefault();
 
     if (!fc.isDragging && (absDx > 8 || absDy > 8)) fc.isDragging = true;
-    if (fc.isDragging) updateCardDrag(dx, dy);
+    if (fc.isDragging) {
+      updateCardDrag(dx, dy);
+      // Only show rating indicator once card is revealed
+      if (!fc.flipped) showDragIndicator(null, 0);
+    }
   }
 
   function onTouchEnd(e) {
@@ -500,15 +504,18 @@
     if (fc.isDragging) {
       fc.isDragging = false;
       showDragIndicator(null, 0);
-      // Clear inline drag position before exit animation
       const el = $id('fc-card');
       el.style.transition = '';
       el.style.transform = '';
 
-      const isHoriz = absDx >= absDy;
-      if (isHoriz && absDx > 100)       rateCard(dx < 0 ? 'hard' : 'easy');
-      else if (!isHoriz && dy < -100)   rateCard('good');
-      else                              snapBackCard();
+      if (fc.flipped) {
+        const isHoriz = absDx >= absDy;
+        if (isHoriz && absDx > 100)     rateCard(dx < 0 ? 'hard' : 'easy');
+        else if (!isHoriz && dy < -100) rateCard('good');
+        else                            snapBackCard();
+      } else {
+        snapBackCard(); // not yet revealed → always snap back
+      }
       return;
     }
 

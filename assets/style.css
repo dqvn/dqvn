@@ -1935,7 +1935,7 @@ button:hover {
     gap: 12px;
     overflow-y: auto;
     max-height: 65dvh;
-    touch-action: pan-y;         /* re-enable vertical scroll inside back face */
+    touch-action: none;          /* our JS drag handler owns all gestures */
     overscroll-behavior: contain;
 }
 #fc-back.fc-visible { display: flex; }
