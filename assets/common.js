@@ -6,9 +6,10 @@
    ══════════════════════════════════════════════════════ */
 
 /* ── TTS constants ── */
-const TTSName    = 'Google Nederlands';
-const TTSLang    = 'nl-NL';
-const TTSLangENG = 'en-US';
+const TTSName        = 'Google Nederlands';
+const TTSLang        = 'nl-NL';
+const TTSLangENG     = 'en-US';
+const TTS_VOICE_KEY  = 'nl_tts_voice_v1';
 
 /* ── Page config (set by initPage) ── */
 let _storageKey   = 'curPage';
@@ -111,6 +112,7 @@ if (_lmYear) _lmYear.textContent = new Date().getFullYear();
    We use addEventListener so nothing can accidentally overwrite our handler.
    ──────────────────────────────────────────────────────────────────────────── */
 googleNederlandsVoice = getPreferredVoice();          // sync attempt (Firefox / Safari)
+_populateVoiceSelector();                              // populate if voices already available
 
 const _voicesReadyPromise = (() => {
     if (window.speechSynthesis.getVoices().length) return Promise.resolve();
@@ -122,6 +124,7 @@ const _voicesReadyPromise = (() => {
 
 window.speechSynthesis.addEventListener('voiceschanged', () => {
     googleNederlandsVoice = getPreferredVoice();
+    _populateVoiceSelector();
     console.log('[TTS] voice ready:', googleNederlandsVoice?.name);
 });
 
@@ -138,6 +141,11 @@ document.addEventListener('visibilitychange', () => {
 
 function getPreferredVoice() {
     const voices = window.speechSynthesis.getVoices();
+    const saved  = localStorage.getItem(TTS_VOICE_KEY);
+    if (saved) {
+        const match = voices.find(v => v.name === saved);
+        if (match) return match;
+    }
     return voices.find(v => v.name.includes('Microsoft Colette Online') && v.lang === 'nl-NL')
         || voices.find(v => v.name.includes('Google Nederlands')        && v.lang === 'nl-NL')
         || voices.find(v => v.lang === 'nl-NL')
@@ -145,6 +153,69 @@ function getPreferredVoice() {
         || voices.find(v => v.lang.startsWith('nl'))
         || null;
 }
+
+/* ── TTS voice selector ────────────────────────────────────────────────────
+   Populates #tts-voice-select with all Dutch voices found in the system,
+   restores any saved preference from localStorage, and wires up the
+   change handler to save + apply the selection immediately.
+   ──────────────────────────────────────────────────────────────────────── */
+function _populateVoiceSelector() {
+    const sel = document.getElementById('tts-voice-select');
+    if (!sel) return;
+
+    const all    = window.speechSynthesis.getVoices();
+    const dutch  = all.filter(v => v.lang.startsWith('nl'));
+    const saved  = localStorage.getItem(TTS_VOICE_KEY);
+
+    sel.innerHTML = '';
+
+    if (!dutch.length) {
+        const opt = document.createElement('option');
+        opt.textContent = 'No Dutch voices found';
+        opt.disabled = true;
+        sel.appendChild(opt);
+        return;
+    }
+
+    dutch.forEach(v => {
+        const opt   = document.createElement('option');
+        opt.value   = v.name;
+        const flag  = v.lang === 'nl-BE' ? '🇧🇪' : '🇳🇱';
+        const local = v.localService ? '💻' : '☁️';
+        opt.textContent = `${flag} ${local} ${v.name}`;
+        sel.appendChild(opt);
+    });
+
+    // Restore saved or fall back to auto-preferred
+    const preferred = getPreferredVoice();
+    sel.value = saved && dutch.find(v => v.name === saved) ? saved
+              : (preferred ? preferred.name : dutch[0].name);
+
+    _applyVoiceFromSelector();
+}
+
+function _applyVoiceFromSelector() {
+    const sel = document.getElementById('tts-voice-select');
+    if (!sel || !sel.value) return;
+    const voices = window.speechSynthesis.getVoices();
+    const found  = voices.find(v => v.name === sel.value);
+    if (found) {
+        googleNederlandsVoice = found;
+        const nameEl = document.getElementById('tts-name');
+        if (nameEl) nameEl.textContent = found.name;
+    }
+}
+
+// Wire up selector change — save + apply + preview
+document.addEventListener('DOMContentLoaded', () => {
+    const sel = document.getElementById('tts-voice-select');
+    if (!sel) return;
+    sel.addEventListener('change', () => {
+        localStorage.setItem(TTS_VOICE_KEY, sel.value);
+        _applyVoiceFromSelector();
+        speakText('Hallo, dit is een test.');
+    });
+});
 
 /* Maximum ms to wait for a single utterance to finish before moving on.
    Guards against the Chrome bug where onend never fires. */

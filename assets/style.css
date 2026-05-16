@@ -221,6 +221,31 @@ td:last-child {
     color: #1cb508;
 }
 
+/* ── TTS voice selector ─────────────────────────────────────────────────── */
+.tts-voice-label {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #555;
+    margin: 8px 0 3px;
+}
+#tts-voice-select {
+    width: 100%;
+    font-size: 0.72rem;
+    padding: 4px 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    color: #1e40af;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-bottom: 4px;
+}
+#tts-voice-select:focus {
+    outline: 2px solid #2563eb;
+    border-color: #2563eb;
+}
+
 /* ── Left-menu footer ─────────────────────────────────────────────────── */
 #lm-footer {
     display: flex;
@@ -1496,6 +1521,13 @@ button:hover {
     #tts-name {
         color: #475569;
         font-size: 0.88rem;
+    }
+
+    .tts-voice-label { color: #374151; font-size: 0.75rem; }
+    #tts-voice-select {
+        font-size: 0.78rem;
+        border-color: #d1d5db;
+        color: #1e40af;
     }
 
     /* Volume value percentage */
