@@ -38,7 +38,7 @@
   /* ── Session building ───────────────────────────────────────────────────── */
   function buildSession() {
     const ch = fc.progress[fc.chapterId] || {};
-    const all = (window.wordList || []).map(w => ({
+    const all = (wordList || []).map(w => ({
       ...w,
       _s: ch[w.dutch] || { box: 0, streak: 0, seen: 0 }
     }));
@@ -58,7 +58,7 @@
 
   function chapterStats() {
     const ch = fc.progress[fc.chapterId] || {};
-    const all = window.wordList || [];
+    const all = wordList || [];
     const mastered = all.filter(w => (ch[w.dutch]?.box || 0) >= 3).length;
     const learning = all.filter(w => [1, 2].includes(ch[w.dutch]?.box || 0)).length;
     return { mastered, learning, newCount: all.length - mastered - learning, total: all.length };
@@ -66,7 +66,7 @@
 
   /* ── Open / Close ───────────────────────────────────────────────────────── */
   function openFlashcard() {
-    if (!window.wordList || !window.wordList.length) {
+    if (!wordList || !wordList.length) {
       alert('Please select a lesson first.');
       return;
     }
