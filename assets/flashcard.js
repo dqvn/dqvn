@@ -2,16 +2,25 @@
 (function () {
   'use strict';
 
-  const FC_KEY = 'nl_flashcard_v2';
+  const FC_KEY      = 'nl_flashcard_v2';
+  const FC_META_KEY = 'nl_flashcard_meta_v1';
   const SESSION_SIZE = 20;
-  const NEW_LIMIT = 7;
+  const NEW_LIMIT    = 7;
+
+  // SRS review intervals in milliseconds per box level
+  const SRS_INTERVALS = [
+    0,                    // box 0 – new: always due
+    1  * 86400000,        // box 1 – hard: review after 1 day
+    3  * 86400000,        // box 2 – learning: review after 3 days
+    7  * 86400000,        // box 3 – mastered: review after 7 days
+  ];
 
   /* ── State ──────────────────────────────────────────────────────────────── */
   const fc = {
     cards: [], index: 0, flipped: false,
     stats: { hard: 0, good: 0, easy: 0, total: 0 },
     chapterId: '', progress: {}, ttsSeq: 0,
-    touchStartX: 0, touchStartY: 0,
+    touchStartX: 0, touchStartY: 0, isDragging: false,
   };
 
   /* ── Helpers ────────────────────────────────────────────────────────────── */
@@ -33,10 +42,22 @@
     localStorage.setItem(FC_KEY, JSON.stringify(fc.progress));
   }
 
+  function loadMeta() {
+    try { return JSON.parse(localStorage.getItem(FC_META_KEY) || '{}'); }
+    catch { return {}; }
+  }
+
+  function saveMeta() {
+    const meta = loadMeta();
+    meta[fc.chapterId] = { lastStudied: Date.now() };
+    localStorage.setItem(FC_META_KEY, JSON.stringify(meta));
+  }
+
   function $id(id) { return document.getElementById(id); }
 
   /* ── Session building ───────────────────────────────────────────────────── */
   function buildSession() {
+    const now = Date.now();
     const ch = fc.progress[fc.chapterId] || {};
     const all = (wordList || []).map(w => ({
       ...w,
@@ -44,24 +65,33 @@
     }));
     if (!all.length) return [];
 
-    const byBox = [0, 1, 2, 3].map(b => shuffle(all.filter(c => c._s.box === b)));
-    // Blend: NEW_LIMIT new, rest from box1+2, sprinkle mastered
+    const isDue = c => !c._s.nextDue || c._s.nextDue <= now;
+    // New cards (box 0) are always due; reviewed cards only if their nextDue has passed
+    const byBox = [0, 1, 2, 3].map(b =>
+      shuffle(all.filter(c => c._s.box === b && isDue(c)))
+    );
     let session = [
       ...byBox[0].slice(0, NEW_LIMIT),
       ...byBox[1].slice(0, 8),
       ...byBox[2].slice(0, 5),
       ...byBox[3].slice(0, 2),
     ];
+    // Fallback: if nothing is due yet, show all cards
     if (!session.length) session = shuffle(all);
     return shuffle(session).slice(0, SESSION_SIZE);
   }
 
   function chapterStats() {
+    const now = Date.now();
     const ch = fc.progress[fc.chapterId] || {};
     const all = wordList || [];
     const mastered = all.filter(w => (ch[w.dutch]?.box || 0) >= 3).length;
     const learning = all.filter(w => [1, 2].includes(ch[w.dutch]?.box || 0)).length;
-    return { mastered, learning, newCount: all.length - mastered - learning, total: all.length };
+    const due = all.filter(w => {
+      const s = ch[w.dutch];
+      return s && s.box > 0 && (!s.nextDue || s.nextDue <= now);
+    }).length;
+    return { mastered, learning, newCount: all.length - mastered - learning, total: all.length, due };
   }
 
   /* ── Open / Close ───────────────────────────────────────────────────────── */
@@ -109,6 +139,7 @@
     fc.index = 0;
     fc.flipped = false;
     fc.cards = buildSession();
+    saveMeta();
     $id('fc-actions').style.opacity = '0';
     $id('fc-actions').style.pointerEvents = 'none';
     $id('fc-complete').style.display = 'none';
@@ -128,8 +159,9 @@
   function refreshHeader() {
     const s = chapterStats();
     const pct = s.total ? Math.round((s.mastered / s.total) * 100) : 0;
+    const duePart = s.due > 0 ? ` · ${s.due} due` : '';
     $id('fc-chapter-stats').textContent =
-      `${s.newCount} new · ${s.learning} learning · ${s.mastered}/${s.total} mastered`;
+      `${s.newCount} new · ${s.learning} learning · ${s.mastered}/${s.total} mastered${duePart}`;
     $id('fc-overall-bar').style.width = pct + '%';
     $id('fc-overall-pct').textContent = pct + '%';
   }
@@ -243,6 +275,8 @@
       st.streak = (st.streak || 0) + 2;
     }
 
+    st.lastStudied = Date.now();
+    st.nextDue = Date.now() + (SRS_INTERVALS[st.box] || 0);
     fc.progress[fc.chapterId][card.dutch] = st;
     fc.stats[rating]++;
     fc.stats.total++;
@@ -395,17 +429,67 @@
     }
   }
 
+  /* ── Drag-to-rate ───────────────────────────────────────────────────────── */
+  function createDragIndicator() {
+    const el = document.createElement('div');
+    el.id = 'fc-drag-indicator';
+    el.innerHTML = '<span id="fc-drag-label"></span>';
+    $id('fc-card').appendChild(el);
+  }
+
+  function updateCardDrag(dx, dy) {
+    const el = $id('fc-card');
+    const clampY = Math.min(0, dy); // only allow dragging upward
+    const rot = dx * 0.07;
+    el.style.transition = 'none';
+    el.style.transform = `translateX(${dx}px) translateY(${clampY}px) rotate(${rot}deg)`;
+
+    const absDx = Math.abs(dx), absClampY = Math.abs(clampY);
+    let dir = null, dist = 0;
+    if (absDx >= absClampY) {
+      dist = absDx;
+      dir = dx < -20 ? 'hard' : dx > 20 ? 'easy' : null;
+    } else {
+      dist = absClampY;
+      dir = dy < -20 ? 'good' : null;
+    }
+    showDragIndicator(dir, dist);
+  }
+
+  function snapBackCard() {
+    const el = $id('fc-card');
+    el.style.transition = 'transform 0.4s cubic-bezier(0.34,1.56,0.64,1)';
+    el.style.transform = '';
+    showDragIndicator(null, 0);
+    setTimeout(() => { el.style.transition = ''; }, 420);
+  }
+
+  function showDragIndicator(dir, dist) {
+    const ind = $id('fc-drag-indicator');
+    const lbl = $id('fc-drag-label');
+    if (!dir || dist < 20) { ind.style.opacity = '0'; return; }
+    ind.style.opacity = String(Math.min(0.95, (dist - 20) / 80));
+    ind.dataset.dir = dir;
+    lbl.textContent = dir === 'hard' ? '😰 Hard' : dir === 'easy' ? '🤩 Easy' : '😊 Good';
+  }
+
   /* ── Touch / swipe ──────────────────────────────────────────────────────── */
   function onTouchStart(e) {
     fc.touchStartX = e.touches[0].clientX;
     fc.touchStartY = e.touches[0].clientY;
+    fc.isDragging = false;
   }
 
   function onTouchMove(e) {
-    const dx = Math.abs(e.touches[0].clientX - fc.touchStartX);
-    const dy = Math.abs(e.touches[0].clientY - fc.touchStartY);
-    // Cancel horizontal scroll on the background page; allow vertical (back-face scroll)
-    if (dx > dy && dx > 4) e.preventDefault();
+    const dx = e.touches[0].clientX - fc.touchStartX;
+    const dy = e.touches[0].clientY - fc.touchStartY;
+    const absDx = Math.abs(dx), absDy = Math.abs(dy);
+
+    if (absDx > absDy && absDx > 4) e.preventDefault();
+    if (!fc.flipped) return;
+
+    if (!fc.isDragging && (absDx > 8 || absDy > 8)) fc.isDragging = true;
+    if (fc.isDragging) updateCardDrag(dx, dy);
   }
 
   function onTouchEnd(e) {
@@ -413,22 +497,28 @@
     const dy = e.changedTouches[0].clientY - fc.touchStartY;
     const absDx = Math.abs(dx), absDy = Math.abs(dy);
 
-    // Short tap → flip
-    if (absDx < 12 && absDy < 12) {
-      if (!fc.flipped) flipCard();
+    if (fc.isDragging) {
+      fc.isDragging = false;
+      showDragIndicator(null, 0);
+      // Clear inline drag position before exit animation
+      const el = $id('fc-card');
+      el.style.transition = '';
+      el.style.transform = '';
+
+      const isHoriz = absDx >= absDy;
+      if (isHoriz && absDx > 100)       rateCard(dx < 0 ? 'hard' : 'easy');
+      else if (!isHoriz && dy < -100)   rateCard('good');
+      else                              snapBackCard();
       return;
     }
-    if (!fc.flipped) return;
-    if (absDx > absDy) {
-      if (dx < -60) rateCard('hard');
-      else if (dx > 60) rateCard('easy');
-    } else {
-      if (dy < -60) rateCard('good');
-    }
+
+    // Pure tap (no drag) → flip
+    if (absDx < 12 && absDy < 12 && !fc.flipped) flipCard();
   }
 
   /* ── Init ───────────────────────────────────────────────────────────────── */
   document.addEventListener('DOMContentLoaded', () => {
+    createDragIndicator();
     $id('flashcard-btn').addEventListener('click', openFlashcard);
     $id('fc-close-btn').addEventListener('click', closeFlashcard);
     $id('fc-card').addEventListener('click', flipCard);
@@ -442,5 +532,11 @@
     scene.addEventListener('touchend',   onTouchEnd,   { passive: true });
 
     document.addEventListener('keydown', onKey);
+
+    // Defensive save on page hide / unload
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'hidden') saveProgress();
+    });
+    window.addEventListener('beforeunload', saveProgress);
   });
 })();
