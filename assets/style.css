@@ -226,11 +226,11 @@ td:last-child {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 10px 10px;
+    padding: 10px;
     border-top: 1px solid rgba(0,0,0,0.08);
     background: rgba(0,0,0,0.03);
     border-radius: 0 0 5px 5px;
-    margin-top: 8px;
+    margin-top: 0;
 }
 .lm-ft-avatar {
     width: 30px; height: 30px;
@@ -1215,9 +1215,9 @@ button:hover {
         flex-direction: column;
     }
 
-    /* ── Left-menu footer: sticks to bottom of drawer on mobile ── */
+    /* ── Left-menu footer ── */
     #lm-footer {
-        margin-top: auto;
+        margin-top: 0;
         flex-shrink: 0;
         border-radius: 0;
         border-top: 1px solid #e2e8f0;
@@ -1227,6 +1227,9 @@ button:hover {
     .lm-ft-name { color: #1e293b; }
     .lm-ft-email { color: #64748b; }
     .lm-ft-year { color: #94a3b8; }
+
+    /* Remove spacer bottom margin so there's no gap above the footer */
+    .spacer { margin-bottom: 0; }
 
     /* Show drawer when menu is NOT hidden */
     .container:not(.menu-hidden) .left-menu {
@@ -1660,7 +1663,7 @@ button:hover {
     position: relative;
     z-index: 10;
     width: 100%;
-    max-width: 440px;
+    max-width: 700px;
     background: linear-gradient(160deg, #f8faff 0%, #eef2ff 100%);
     border-radius: 24px;
     box-shadow: 0 24px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.15);
@@ -1787,7 +1790,7 @@ button:hover {
 /* ── Card ───────────────────────────────────────────────────────────────── */
 #fc-card {
     width: 100%;
-    max-width: 400px;
+    max-width: 660px;
     cursor: pointer;
     user-select: none;
     will-change: transform;
@@ -1797,14 +1800,14 @@ button:hover {
 #fc-front {
     background: linear-gradient(145deg, #0c4a6e 0%, #0369a1 60%, #0ea5e9 100%);
     border-radius: 20px;
-    padding: 32px 24px 28px;
+    padding: 48px 36px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 10px;
+    gap: 14px;
     box-shadow: 0 8px 32px rgba(3,105,161,0.4), 0 2px 8px rgba(0,0,0,0.2);
-    min-height: 220px;
+    min-height: 340px;
     justify-content: center;
     transition: box-shadow 0.3s;
 }
@@ -1813,27 +1816,33 @@ button:hover {
 }
 
 #fc-word {
-    font-size: clamp(2rem, 8vw, 3rem);
+    font-size: clamp(2.6rem, 6vw, 4rem);
     font-weight: 800;
     color: #fff;
     line-height: 1.1;
     text-shadow: 0 2px 8px rgba(0,0,0,0.3);
     letter-spacing: -0.01em;
 }
+/* Correct IPA font — Charis SIL is designed specifically for IPA transcription */
+.ipa-text {
+    font-family: 'Charis SIL', 'Noto Sans', 'DejaVu Sans', 'Segoe UI', Arial, sans-serif;
+    font-style: normal;
+    letter-spacing: 0.04em;
+}
+
 #fc-ipa {
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: rgba(255,255,255,0.75);
-    font-family: 'Courier New', monospace;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
 }
 #fc-phonetic {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: rgba(255,255,255,0.6);
     font-style: italic;
 }
 #fc-hint {
-    margin-top: 12px;
-    font-size: 0.8rem;
+    margin-top: 16px;
+    font-size: 0.95rem;
     color: rgba(255,255,255,0.5);
     animation: fc-pulse-hint 2s ease-in-out infinite;
 }
@@ -1848,47 +1857,47 @@ button:hover {
     display: none;
     background: #fff;
     border-radius: 20px;
-    padding: 24px 24px 20px;
+    padding: 36px 36px 28px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.12), 0 2px 8px rgba(0,0,0,0.08);
-    min-height: 220px;
+    min-height: 340px;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 8px;
+    gap: 12px;
     overflow-y: auto;
-    max-height: 55dvh;
+    max-height: 65dvh;
     touch-action: pan-y;         /* re-enable vertical scroll inside back face */
     overscroll-behavior: contain;
 }
 #fc-back.fc-visible { display: flex; }
 
 #fc-english {
-    font-size: clamp(1.6rem, 6vw, 2.4rem);
+    font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 800;
     color: #16a34a;
     line-height: 1.1;
     letter-spacing: -0.01em;
 }
 #fc-vietnamese {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #6b7280;
     font-style: italic;
 }
 .fc-back-divider {
-    width: 48px;
+    width: 64px;
     height: 2px;
     background: linear-gradient(90deg, #e5e7eb 0%, #d1d5db 50%, #e5e7eb 100%);
     border-radius: 99px;
-    margin: 4px 0;
+    margin: 6px 0;
 }
 #fc-sentence-nl {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     color: #0369a1;
     font-style: italic;
     line-height: 1.5;
 }
 #fc-sentence-en {
-    font-size: 0.85rem;
+    font-size: 1rem;
     color: #9ca3af;
     line-height: 1.4;
 }

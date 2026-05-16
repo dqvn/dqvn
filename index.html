@@ -2,8 +2,12 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Dutch Word List</title>
   <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital@0;1&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="assets/dutch.ico">
   <script src="assets/NoSleep.min.js"></script>
   <script src="https://js.puter.com/v2/"></script>
@@ -14,6 +18,75 @@
     <h1>Learning Dutch Words</h1>
     <h3 id="chapter"></h3>
   </header>
+  <!-- ── Flashcard popup ─────────────────────────────────────────────── -->
+  <div id="flashcard-popup" style="display:none;">
+    <div id="fc-confetti-layer"></div>
+    <div id="fc-flash-overlay"></div>
+    <button id="fc-close-btn" title="Close">✕</button>
+
+    <div id="fc-container">
+      <!-- Header -->
+      <div id="fc-header">
+        <div id="fc-chapter-stats">Select a lesson to begin</div>
+        <div class="fc-overall-wrap">
+          <span style="font-size:0.72rem;opacity:0.8">Mastery</span>
+          <div class="fc-overall-bar-bg"><div id="fc-overall-bar"></div></div>
+          <span id="fc-overall-pct">0%</span>
+        </div>
+        <div class="fc-session-wrap">
+          <span id="fc-session-count">0 / 0</span>
+          <div class="fc-session-bar-bg"><div id="fc-session-bar"></div></div>
+        </div>
+      </div>
+
+      <!-- Box badge (outside scene so it sits above card) -->
+      <div id="fc-box-badge" class="fc-box-badge fc-badge-new">New</div>
+
+      <!-- Card scene -->
+      <div id="fc-scene">
+        <div id="fc-card">
+          <!-- Front -->
+          <div id="fc-front">
+            <div id="fc-word">Hallo</div>
+            <div id="fc-ipa" class="ipa-text">/ɦɑˈloː/</div>
+            <div id="fc-phonetic">hah-low</div>
+            <div id="fc-hint">👆 Tap to reveal</div>
+          </div>
+          <!-- Back (shown via .fc-visible class) -->
+          <div id="fc-back">
+            <div id="fc-english"></div>
+            <div id="fc-vietnamese"></div>
+            <div class="fc-back-divider"></div>
+            <div id="fc-sentence-nl"></div>
+            <div id="fc-sentence-en"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rating buttons -->
+      <div id="fc-actions" style="opacity:0;pointer-events:none">
+        <button id="fc-hard-btn" class="fc-btn fc-hard">
+          <span class="fc-btn-icon">😓</span>
+          <span class="fc-btn-label">Hard</span>
+          <span class="fc-btn-sub">← swipe</span>
+        </button>
+        <button id="fc-good-btn" class="fc-btn fc-good">
+          <span class="fc-btn-icon">👍</span>
+          <span class="fc-btn-label">Good</span>
+          <span class="fc-btn-sub">↑ swipe</span>
+        </button>
+        <button id="fc-easy-btn" class="fc-btn fc-easy">
+          <span class="fc-btn-icon">🎯</span>
+          <span class="fc-btn-label">Easy</span>
+          <span class="fc-btn-sub">swipe →</span>
+        </button>
+      </div>
+
+      <!-- Session complete -->
+      <div id="fc-complete" style="display:none"></div>
+    </div>
+  </div>
+
   <div id="popup" style="display: none;">
     <button id="game-close-btn" title="Close game">✕</button>
     <div id="game-container">
@@ -51,6 +124,11 @@
           <span class="button-text">Start Game</span>
           <i class="fas fa-play"></i>
         </button>
+        <span></span>
+        <!-- Flashcard game -->
+        <button id="flashcard-btn" class="start-button">
+          <span class="button-text">Flashcards Game</span>
+        </button>
       </div>
       <div class="spacer">
         <a href="grammar.html" title="Go to Grammar"> ➔📖 </a> &nbsp; | &nbsp;
@@ -62,6 +140,16 @@
           </ul>
       </div>
       </div>
+
+    <!-- Left-menu footer -->
+    <footer id="lm-footer">
+      <div class="lm-ft-avatar">QN</div>
+      <div class="lm-ft-info">
+        <span class="lm-ft-name">Quang, Nguyen Dang</span>
+        <a class="lm-ft-email" href="mailto:dqvn2002@gmail.com">dqvn2002@gmail.com</a>
+      </div>
+      <span class="lm-ft-year" id="lm-year"></span>
+    </footer>
     </div>
 
     <div class="table-container div-with-scrollbar">
@@ -87,6 +175,7 @@
   <script src="assets/common.js"></script>
   <script src="assets/ttsscript.js"></script>
   <script src="assets/game.js"></script>
+  <script src="assets/flashcard.js"></script>
 </body>
 
 </html>
