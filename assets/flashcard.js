@@ -395,6 +395,13 @@
     fc.touchStartY = e.touches[0].clientY;
   }
 
+  function onTouchMove(e) {
+    const dx = Math.abs(e.touches[0].clientX - fc.touchStartX);
+    const dy = Math.abs(e.touches[0].clientY - fc.touchStartY);
+    // Cancel horizontal scroll on the background page; allow vertical (back-face scroll)
+    if (dx > dy && dx > 4) e.preventDefault();
+  }
+
   function onTouchEnd(e) {
     const dx = e.changedTouches[0].clientX - fc.touchStartX;
     const dy = e.changedTouches[0].clientY - fc.touchStartY;
@@ -425,7 +432,8 @@
 
     const scene = $id('fc-scene');
     scene.addEventListener('touchstart', onTouchStart, { passive: true });
-    scene.addEventListener('touchend', onTouchEnd, { passive: true });
+    scene.addEventListener('touchmove',  onTouchMove,  { passive: false });
+    scene.addEventListener('touchend',   onTouchEnd,   { passive: true });
 
     document.addEventListener('keydown', onKey);
   });

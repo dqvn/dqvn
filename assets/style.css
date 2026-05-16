@@ -1359,6 +1359,8 @@ button:hover {
     -webkit-backdrop-filter: blur(8px);
     padding: 12px;
     box-sizing: border-box;
+    overscroll-behavior: none;   /* stop rubber-band bounce from reaching the page */
+    touch-action: none;          /* tell the browser: we own all touch gestures here */
 }
 
 #fc-confetti-layer {
@@ -1581,6 +1583,8 @@ button:hover {
     gap: 8px;
     overflow-y: auto;
     max-height: 55dvh;
+    touch-action: pan-y;         /* re-enable vertical scroll inside back face */
+    overscroll-behavior: contain;
 }
 #fc-back.fc-visible { display: flex; }
 
