@@ -2099,6 +2099,7 @@ button:hover {
         /* Keep column flex so children stack top-to-bottom */
         display: flex;
         flex-direction: column;
+        overflow: hidden;
     }
 
     /* ── Compact header strip ─────────────────────────────────── */
@@ -2136,17 +2137,18 @@ button:hover {
     #fc-scene {
         flex: 1 1 0;
         min-height: 0;
-        padding: 8px 5% 6px;  /* 5% each side → card is 90% wide */
+        padding: 8px 0 6px;
         display: flex;
+        justify-content: center;
         align-items: stretch;
+        overflow: hidden;
     }
 
     /* ── Card: 90% wide, fills scene height ──────────────────── */
     #fc-card {
-        width: 100%;
-        max-width: 100%;
-        flex: 1 1 0;
-        min-width: 0;
+        width: 90%;
+        max-width: 90%;
+        flex: none;
         min-height: 0;
         display: flex;
         flex-direction: column;
