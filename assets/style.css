@@ -1313,6 +1313,161 @@ button:hover {
     .file-container {
         height: 300px;
     }
+
+    /* ════════════════════════════════════════════════════════
+       LEFT MENU — mobile redesign
+       ════════════════════════════════════════════════════════ */
+
+    /* Solid opaque background so no background-image bleeds through */
+    .left-menu {
+        background: #ffffff;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        border: none;
+        box-shadow: 4px 0 32px rgba(0,0,0,0.18);
+    }
+
+    /* Section label (Setting:, Dutch Courses:) */
+    .left-menu h4 {
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #94a3b8;
+        margin-bottom: 10px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid #e2e8f0;
+        /* cancel the desktop text-shadow that the .spacer adds */
+        text-shadow: none;
+    }
+
+    /* .spacer color/text-shadow leaks onto child labels — reset it */
+    .spacer {
+        color: #1e293b;
+        text-shadow: none;
+    }
+
+    /* Fix the invisible-text bug:
+       Desktop uses background-clip:text + transparent fill as a visual trick.
+       On the white mobile drawer #f0f0f0 fill = near-white on white = invisible. */
+    .left-menu li {
+        -webkit-text-fill-color: #1e40af;
+        -webkit-background-clip: unset;
+        background-clip: unset;
+        background: transparent;
+        color: #1e40af;
+        font-size: 0.95rem;
+        font-weight: 500;
+        padding: 10px 14px;
+        border-bottom: none;
+        border-radius: 10px;
+        margin-bottom: 2px;
+        transition: background 0.15s, color 0.15s;
+    }
+
+    .left-menu li:hover,
+    .left-menu li:active {
+        background: #eff6ff;
+        -webkit-text-fill-color: #1d4ed8;
+        color: #1d4ed8;
+    }
+
+    /* Group title (Van Start #1, Core 2000) */
+    .file-container .group-title {
+        background: #f1f5f9;
+        border-radius: 10px;
+        padding: 10px 14px;
+        color: #0f172a;
+        -webkit-text-fill-color: #0f172a;
+        font-size: 0.88rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        margin-bottom: 4px;
+        border-bottom: none;
+    }
+
+    /* Nested lesson items: indent + slightly smaller */
+    .file-container .nested-list li {
+        padding-left: 22px;
+        font-size: 0.88rem;
+        color: #2563eb;
+        -webkit-text-fill-color: #2563eb;
+    }
+
+    /* Labels / checkbox / tts-name text */
+    .left-menu label,
+    #tts-name {
+        color: #475569;
+        font-size: 0.88rem;
+    }
+
+    /* Volume value percentage */
+    #volume-value {
+        font-size: 0.85rem;
+        color: #1cb508;
+    }
+
+    /* ════════════════════════════════════════════════════════
+       WORD-LIST TABLE — mobile redesign
+       ════════════════════════════════════════════════════════ */
+
+    /* Hide No. column — wastes 30px on a narrow screen */
+    #word-list th:first-child,
+    #word-list td:first-child {
+        display: none;
+    }
+
+    /* Hide Sample column — too much text for a small screen */
+    #word-list th:nth-child(4),
+    #word-list td:nth-child(4) {
+        display: none;
+    }
+
+    /* Dutch column: 55% of the remaining 2 columns */
+    #word-list th:nth-child(2),
+    #word-list td:nth-child(2) {
+        width: 55%;
+    }
+
+    /* English column: 45% */
+    #word-list th:nth-child(3),
+    #word-list td:nth-child(3) {
+        width: 45%;
+        font-size: 0.95rem;
+        color: #374151;
+    }
+
+    /* Roomier, readable rows */
+    #word-list td {
+        padding: 12px 10px;
+        vertical-align: middle;
+        background-color: rgba(255,255,255,0.88);
+    }
+
+    /* Stronger alternating stripe for contrast on background image */
+    #word-list tbody tr:nth-child(even) td {
+        background-color: rgba(241,245,249,0.92);
+    }
+
+    /* Dutch word: scale down from 23px desktop to fit mobile */
+    .dutch-word {
+        font-size: 1.1rem;
+        text-shadow: none;
+    }
+
+    /* IPA / phonetic sub-label under Dutch word */
+    #word-list td:nth-child(2) span[style] {
+        font-size: 0.72rem;
+        opacity: 0.7;
+    }
+
+    /* Sticky header: bolder contrast strip */
+    #word-list thead th {
+        font-size: 0.8rem;
+        padding: 10px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    }
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════
