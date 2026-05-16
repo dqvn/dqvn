@@ -2012,9 +2012,26 @@ button:hover {
 }
 .fc-btn:active { transform: scale(0.93) !important; }
 
-.fc-btn-icon  { font-size: 1.5rem; line-height: 1; }
-.fc-btn-label { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.02em; }
-.fc-btn-sub   { font-size: 0.62rem; opacity: 0.65; }
+.fc-btn-gesture { font-size: 1.3rem; line-height: 1; }
+.fc-btn-icon    { font-size: 1.5rem; line-height: 1; }
+.fc-btn-label   { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.02em; }
+
+/* Directional swipe animations for gesture fingers */
+@keyframes fc-swipe-left {
+    0%, 100% { transform: translateX(0);    opacity: 0.55; }
+    50%       { transform: translateX(-7px); opacity: 1;    }
+}
+@keyframes fc-swipe-up {
+    0%, 100% { transform: translateY(0);    opacity: 0.55; }
+    50%       { transform: translateY(-7px); opacity: 1;    }
+}
+@keyframes fc-swipe-right {
+    0%, 100% { transform: translateX(0);   opacity: 0.55; }
+    50%       { transform: translateX(7px); opacity: 1;    }
+}
+.fc-hard .fc-btn-gesture { animation: fc-swipe-left  1.3s ease-in-out infinite; }
+.fc-good .fc-btn-gesture { animation: fc-swipe-up    1.3s ease-in-out infinite; }
+.fc-easy .fc-btn-gesture { animation: fc-swipe-right 1.3s ease-in-out infinite; }
 
 .fc-hard {
     background: #fee2e2;
@@ -2315,9 +2332,9 @@ button:hover {
         padding: 14px 8px 12px;
         gap: 4px;
     }
-    .fc-btn-icon  { font-size: 1.9rem; }
-    .fc-btn-label { font-size: 0.95rem; }
-    .fc-btn-sub   { display: none; }
+    .fc-btn-gesture { font-size: 1.6rem; }
+    .fc-btn-icon    { font-size: 1.9rem; }
+    .fc-btn-label   { font-size: 0.95rem; }
 
     /* ── Session complete ─────────────────────────────────────── */
     #fc-complete {
