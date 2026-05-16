@@ -66,24 +66,53 @@
 
   /* ── Open / Close ───────────────────────────────────────────────────────── */
   function openFlashcard() {
+    $id('flashcard-popup').style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+
     if (!wordList || !wordList.length) {
-      alert('Please select a lesson first.');
+      showWaiting();
+      const deadline = Date.now() + 8000;
+      const poll = setInterval(() => {
+        if (wordList && wordList.length) {
+          clearInterval(poll);
+          startGame();
+        } else if (Date.now() > deadline) {
+          clearInterval(poll);
+          $id('fc-word').textContent = '⚠️';
+          $id('fc-hint').textContent = 'Please pick a lesson from the menu first.';
+        }
+      }, 250);
       return;
     }
+    startGame();
+  }
+
+  function showWaiting() {
+    $id('fc-chapter-stats').textContent = 'Loading lesson…';
+    $id('fc-session-count').textContent = '…';
+    $id('fc-word').textContent = '⏳';
+    $id('fc-ipa').textContent = '';
+    $id('fc-phonetic').textContent = '';
+    $id('fc-hint').textContent = 'Loading vocabulary…';
+    $id('fc-front').style.display = '';
+    $id('fc-back').classList.remove('fc-visible');
+    $id('fc-actions').style.opacity = '0';
+    $id('fc-actions').style.pointerEvents = 'none';
+    $id('fc-complete').style.display = 'none';
+    $id('fc-scene').style.display = 'flex';
+  }
+
+  function startGame() {
     fc.chapterId = localStorage.getItem('currentPage') || 'default';
     fc.progress = loadProgress();
     fc.stats = { hard: 0, good: 0, easy: 0, total: 0 };
     fc.index = 0;
     fc.flipped = false;
     fc.cards = buildSession();
-
-    $id('flashcard-popup').style.display = 'flex';
-    document.body.style.overflow = 'hidden';
     $id('fc-actions').style.opacity = '0';
     $id('fc-actions').style.pointerEvents = 'none';
     $id('fc-complete').style.display = 'none';
     $id('fc-scene').style.display = 'flex';
-
     refreshHeader();
     renderCard();
   }
@@ -343,16 +372,8 @@
   }
 
   function restartSession() {
-    fc.stats = { hard: 0, good: 0, easy: 0, total: 0 };
-    fc.index = 0;
-    fc.flipped = false;
-    fc.cards = buildSession();
     $id('fc-complete').style.display = 'none';
-    $id('fc-actions').style.opacity = '0';
-    $id('fc-actions').style.pointerEvents = 'none';
-    $id('fc-scene').style.display = 'flex';
-    refreshHeader();
-    renderCard();
+    startGame();
   }
 
   /* ── Keyboard ───────────────────────────────────────────────────────────── */
