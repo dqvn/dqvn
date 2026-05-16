@@ -2028,6 +2028,47 @@ button:hover {
 #fc-drag-indicator[data-dir="easy"]  #fc-drag-label { color: #ca8a04; transform: rotate(-12deg); }
 #fc-drag-indicator[data-dir="good"]  #fc-drag-label { color: #16a34a; transform: rotate(0deg); }
 
+/* ── Speak / repeat button on front face ───────────────────────────────── */
+.fc-speak-btn {
+    margin-top: 16px;
+    padding: 9px 22px;
+    border: none;
+    border-radius: 99px;
+    background: rgba(255,255,255,0.16);
+    color: rgba(255,255,255,0.93);
+    font-size: 0.92rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.22);
+    transition: background 0.18s, transform 0.14s, box-shadow 0.18s;
+    letter-spacing: 0.02em;
+    user-select: none;
+}
+.fc-speak-btn:hover {
+    background: rgba(255,255,255,0.28);
+    transform: scale(1.06);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.3);
+}
+.fc-speak-btn:active { transform: scale(0.95); }
+
+.fc-speak-icon {
+    font-size: 1.15em;
+    display: inline-block;
+    transition: transform 0.15s;
+}
+.fc-speak-btn.fc-speaking .fc-speak-icon {
+    animation: fc-speak-pulse 0.55s ease-in-out infinite alternate;
+}
+@keyframes fc-speak-pulse {
+    from { transform: scale(1);    opacity: 0.75; }
+    to   { transform: scale(1.35); opacity: 1; }
+}
+
 /* ── Card animations ────────────────────────────────────────────────────── */
 @keyframes fc-enter-kf {
     from { opacity: 0; transform: translateY(28px) scale(0.94); }
