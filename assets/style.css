@@ -2212,7 +2212,7 @@ button:hover {
     #fc-scene {
         flex: 1 1 0;
         min-height: 0;
-        padding: 8px 0 6px;
+        padding: 10px 50px 10px 5px;
         display: flex;
         justify-content: center;
         align-items: stretch;
