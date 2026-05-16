@@ -1966,10 +1966,45 @@ button:hover {
     line-height: 1.5;
 }
 #fc-sentence-en {
-    font-size: 1rem;
-    color: #9ca3af;
+    font-size: 0.78rem;
+    color: #b0b8c4;
     line-height: 1.4;
+    font-style: italic;
+    margin-top: auto;
+    padding-top: 8px;
+    border-top: 1px dashed #e5e7eb;
+    width: 100%;
+    text-align: center;
 }
+
+/* ── Drag indicator ─────────────────────────────────────────────────────── */
+#fc-drag-indicator {
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+#fc-drag-label {
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 8px 18px;
+    border-radius: 12px;
+    border: 3px solid currentColor;
+    letter-spacing: 0.03em;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(2px);
+}
+#fc-drag-indicator[data-dir="hard"]               { background: rgba(220,38,38,0.10); }
+#fc-drag-indicator[data-dir="easy"]               { background: rgba(234,179,8,0.10); }
+#fc-drag-indicator[data-dir="good"]               { background: rgba(22,163,74,0.08); }
+#fc-drag-indicator[data-dir="hard"]  #fc-drag-label { color: #dc2626; transform: rotate(12deg); }
+#fc-drag-indicator[data-dir="easy"]  #fc-drag-label { color: #ca8a04; transform: rotate(-12deg); }
+#fc-drag-indicator[data-dir="good"]  #fc-drag-label { color: #16a34a; transform: rotate(0deg); }
 
 /* ── Card animations ────────────────────────────────────────────────────── */
 @keyframes fc-enter-kf {
@@ -2375,7 +2410,7 @@ button:hover {
     #fc-english      { font-size: clamp(2.4rem, 10vw, 3.4rem); }
     #fc-vietnamese   { font-size: 1.1rem; }
     #fc-sentence-nl  { font-size: 1.05rem; }
-    #fc-sentence-en  { font-size: 0.92rem; }
+    #fc-sentence-en  { font-size: 0.78rem; }
 
     /* ── Action buttons: thumb zone at bottom ─────────────────── */
     #fc-actions {
