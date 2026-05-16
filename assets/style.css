@@ -18,6 +18,12 @@ body {
     background-attachment: fixed;
 }
 
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+}
+
 header {
     /*background-color: #f0f0f0;
      Light gray background */
@@ -32,6 +38,7 @@ header {
     margin-bottom: 0px;
     /* Add some margin to separate the header from the next element */
     backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     /* 2. Create the mask */
     /* The linear-gradient goes from opaque white (100% visibility) at the top */
     /* to transparent black (0% visibility) at the bottom. */
@@ -88,6 +95,7 @@ td {
     background-color: rgba(255, 255, 255, 0.7);
     /* Add this to create a semi-transparent background */
     backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
     /* Add this to blur the background image */
 }
 
@@ -172,6 +180,7 @@ td:last-child {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     margin-left: 15px;
     margin-right: 15px;
     position: sticky;
@@ -1107,11 +1116,17 @@ button:hover {
    ═══════════════════════════════════════════════════════════ */
 @media (max-width: 768px) {
 
+    /* Support for notch devices (iPhone X+, Android devices with notch) */
+    html {
+        padding-left: max(0px, env(safe-area-inset-left));
+        padding-right: max(0px, env(safe-area-inset-right));
+    }
+
     /* ── Toggle button: fixed circle, always reachable ── */
     .toggle-menu-button {
         position: fixed;
-        top: 12px;
-        left: 12px;
+        top: max(12px, env(safe-area-inset-top));
+        left: max(12px, env(safe-area-inset-left));
         width: 44px;
         height: 44px;
         padding: 0;
@@ -1141,6 +1156,7 @@ button:hover {
         box-sizing: border-box;
         background: rgba(255, 255, 255, 0.97);
         backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
     }
 
     /* Show drawer when menu is NOT hidden */
@@ -1467,6 +1483,31 @@ button:hover {
         padding: 10px;
         letter-spacing: 0.04em;
         text-transform: uppercase;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   VERY SMALL SCREENS (≤ 360px) — additional mobile optimizations
+   ═══════════════════════════════════════════════════════════════════════════ */
+@media (max-width: 360px) {
+    /* Reduce drawer width for phones narrower than 360px */
+    .left-menu {
+        width: 200px !important;
+    }
+
+    /* Table padding for tiny screens */
+    #word-list td {
+        padding: 8px 6px;
+    }
+
+    #word-list th:nth-child(2),
+    #word-list td:nth-child(2) {
+        width: 50%;
+    }
+
+    #word-list th:nth-child(3),
+    #word-list td:nth-child(3) {
+        width: 50%;
     }
 }
 
