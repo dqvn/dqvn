@@ -1,5 +1,7 @@
 'use strict';
 
+const MAX_OPTIONS    = 10;
+
 let correctAnswers   = 0;
 let currentWordIndex = 0;
 let data             = [];
@@ -120,7 +122,7 @@ async function showQuestion() {
         const currentWord = data[currentWordIndex];
 
         const options = [currentWord.english];
-        while (options.length < Math.min(9, data.length)) {
+        while (options.length < Math.min(MAX_OPTIONS, data.length)) {
             const pick = data[Math.floor(Math.random() * data.length)].english;
             if (!options.includes(pick)) options.push(pick);
         }
