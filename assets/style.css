@@ -1375,7 +1375,7 @@ button:hover {
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.3s ease;
-    border-radius: 24px;
+    border-radius: inherit;
     z-index: 2;
 }
 
@@ -1390,7 +1390,6 @@ button:hover {
     box-shadow: 0 24px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.15);
     display: flex;
     flex-direction: column;
-    gap: 0;
     overflow: hidden;
     max-height: 96dvh;
 }
@@ -1872,23 +1871,157 @@ button:hover {
 
 /* ── Mobile overrides ───────────────────────────────────────────────────── */
 @media (max-width: 768px) {
-    #flashcard-popup { padding: 0; align-items: flex-end; }
+
+    /* Full-screen — no backdrop visible, no bottom-sheet rounding */
+    #flashcard-popup {
+        padding: 0;
+        align-items: stretch;
+        justify-content: stretch;
+        background: #0c4a6e;          /* matches card front so there's no gap */
+    }
 
     #fc-container {
         max-width: 100%;
-        border-radius: 24px 24px 0 0;
-        max-height: 97dvh;
+        width: 100%;
+        border-radius: 0;
+        max-height: 100dvh;
+        height: 100dvh;
+        background: #f1f5f9;
     }
 
-    #fc-front, #fc-back { min-height: 190px; }
+    /* ── Compact header strip ── */
+    #fc-header {
+        padding: 10px 52px 10px 14px;   /* right space for close btn */
+        gap: 6px;
+        background: linear-gradient(135deg, #0c4a6e 0%, #0369a1 100%);
+    }
 
-    #fc-word { font-size: clamp(1.8rem, 9vw, 2.6rem); }
+    #fc-chapter-stats {
+        font-size: 0.72rem;
+    }
 
-    .fc-btn { min-height: 64px; padding: 10px 4px 8px; }
-    .fc-btn-icon  { font-size: 1.3rem; }
-    .fc-btn-label { font-size: 0.78rem; }
+    /* Merge the two bar rows into one tight row */
+    .fc-overall-wrap, .fc-session-wrap { gap: 6px; }
+    .fc-overall-bar-bg { height: 5px; }
+    .fc-session-bar-bg { height: 3px; }
+
+    /* ── Close button — bigger tap target on mobile ── */
+    #fc-close-btn {
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+        background: rgba(255,255,255,0.2);
+    }
+
+    /* ── Box badge ── */
+    .fc-box-badge {
+        margin: 10px 14px 0;
+        font-size: 0.68rem;
+        padding: 3px 10px;
+    }
+
+    /* ── Scene: fills all remaining space ── */
+    #fc-scene {
+        padding: 8px 14px 6px;
+        flex: 1;
+        align-items: stretch;          /* card stretches to fill height */
+    }
+
+    #fc-card {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ── Front face: large, centered, fills the card ── */
+    #fc-front {
+        flex: 1;
+        border-radius: 20px;
+        padding: 28px 24px 24px;
+        min-height: 0;
+        gap: 14px;
+    }
+
+    #fc-word {
+        font-size: clamp(2.6rem, 12vw, 4rem);
+        line-height: 1.05;
+    }
+
+    #fc-ipa {
+        font-size: 1.15rem;
+    }
+
+    #fc-phonetic {
+        font-size: 1rem;
+    }
+
+    #fc-hint {
+        font-size: 0.9rem;
+        margin-top: 18px;
+    }
+
+    /* ── Back face: large, scrollable ── */
+    #fc-back {
+        flex: 1;
+        border-radius: 20px;
+        padding: 24px 20px 20px;
+        min-height: 0;
+        max-height: none;              /* let flex do the sizing */
+        gap: 10px;
+    }
+
+    #fc-english {
+        font-size: clamp(2.2rem, 10vw, 3.2rem);
+    }
+
+    #fc-vietnamese {
+        font-size: 1.05rem;
+    }
+
+    #fc-sentence-nl {
+        font-size: 1rem;
+    }
+
+    #fc-sentence-en {
+        font-size: 0.9rem;
+    }
+
+    /* ── Action buttons: thumb-friendly zone at the bottom ── */
+    #fc-actions {
+        gap: 8px;
+        padding: 10px 12px calc(12px + env(safe-area-inset-bottom, 0px));
+        flex-shrink: 0;
+    }
+
+    .fc-btn {
+        min-height: 82px;
+        border-radius: 18px;
+        padding: 14px 6px 12px;
+        gap: 4px;
+    }
+
+    .fc-btn-icon  { font-size: 1.8rem; }
+    .fc-btn-label { font-size: 0.92rem; }
     .fc-btn-sub   { display: none; }
 
-    .fc-res-stat { padding: 10px 14px; min-width: 60px; }
-    .fc-res-num  { font-size: 1.5rem; }
+    /* ── Complete screen on mobile ── */
+    #fc-complete {
+        padding: 20px 16px calc(20px + env(safe-area-inset-bottom, 0px));
+        gap: 14px;
+        overflow-y: auto;
+    }
+
+    .fc-res-trophy  { font-size: 3.5rem; }
+    .fc-res-title   { font-size: 1.5rem; }
+
+    .fc-res-stat    { padding: 10px 16px; min-width: 64px; }
+    .fc-res-num     { font-size: 1.6rem; }
+
+    .fc-res-btn {
+        padding: 15px;
+        font-size: 0.95rem;
+        min-height: 54px;
+    }
 }
