@@ -1832,7 +1832,38 @@ button:hover {
     cursor: pointer;
     user-select: none;
     will-change: transform;
+    position: relative;
 }
+
+/* ── Deck stack — background cards peek below the current card ─────────── */
+#fc-card::before,
+#fc-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.45s ease, transform 0.45s ease;
+}
+/* 2nd card: slightly rotated right, shifted down */
+#fc-card::before {
+    background: linear-gradient(145deg, #0f5b8a 0%, #1570a8 60%, #2596d4 100%);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.22);
+    transform: rotate(3deg) translateY(12px) scale(0.97);
+}
+/* 3rd card: slightly rotated left, shifted down more */
+#fc-card::after {
+    background: linear-gradient(145deg, #1a6a9a 0%, #2080bc 60%, #3daae0 100%);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.16);
+    transform: rotate(-2.5deg) translateY(22px) scale(0.94);
+}
+/* Show 1 background card (1 remaining) */
+#fc-scene.fc-stack-1 #fc-card::before { opacity: 1; }
+/* Show 2 background cards (2+ remaining) */
+#fc-scene.fc-stack-2 #fc-card::before { opacity: 1; }
+#fc-scene.fc-stack-2 #fc-card::after  { opacity: 1; }
 
 /* Front face */
 #fc-front {
@@ -1978,15 +2009,28 @@ button:hover {
     animation: fc-shake-kf 0.6s cubic-bezier(0.36,0.07,0.19,0.97) forwards;
 }
 
+/* Hard — fly left with counter-clockwise spin */
+@keyframes fc-exit-left-kf {
+    0%   { transform: translateX(0)     rotate(0deg)   scale(1);    opacity: 1; }
+    100% { transform: translateX(-120%) rotate(-18deg) scale(0.85); opacity: 0; }
+}
+.fc-exit-left {
+    animation: fc-exit-left-kf 0.42s cubic-bezier(0.4,0,1,1) forwards;
+}
+
+/* Good — fly up with slight scale-down */
 @keyframes fc-exit-up-kf {
-    to { transform: translateY(-60px) scale(0.88); opacity: 0; }
+    0%   { transform: translateY(0)    scale(1);    opacity: 1; }
+    100% { transform: translateY(-120%) scale(0.85); opacity: 0; }
 }
 .fc-exit-up {
     animation: fc-exit-up-kf 0.42s cubic-bezier(0.4,0,1,1) forwards;
 }
 
+/* Easy — fly right with clockwise spin */
 @keyframes fc-exit-right-kf {
-    to { transform: translateX(80px) rotate(8deg) scale(0.9); opacity: 0; }
+    0%   { transform: translateX(0)    rotate(0deg)   scale(1);    opacity: 1; }
+    100% { transform: translateX(120%) rotate(18deg)  scale(0.85); opacity: 0; }
 }
 .fc-exit-right {
     animation: fc-exit-right-kf 0.45s cubic-bezier(0.4,0,1,1) forwards;
@@ -2276,11 +2320,11 @@ button:hover {
     #fc-scene {
         flex: 1 1 0;
         min-height: 0;
-        padding: 10px 50px 10px 5px;
+        padding: 10px 50px 22px 5px; /* extra bottom padding = space for peeking deck cards */
         display: flex;
         justify-content: center;
         align-items: stretch;
-        overflow: hidden;
+        overflow: hidden;            /* clips outside padding box; deck peeks into bottom padding */
     }
 
     /* ── Card: 90% wide, fills scene height ──────────────────── */
@@ -2291,6 +2335,14 @@ button:hover {
         min-height: 0;
         display: flex;
         flex-direction: column;
+    }
+
+    /* ── Deck stack: smaller rotation/offset for mobile ─────── */
+    #fc-card::before {
+        transform: rotate(2deg) translateY(8px) scale(0.98);
+    }
+    #fc-card::after {
+        transform: rotate(-1.5deg) translateY(15px) scale(0.96);
     }
 
     /* ── Front face: fills the card ──────────────────────────── */
