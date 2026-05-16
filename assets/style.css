@@ -161,6 +161,8 @@ td:last-child {
     /* add a soft box shadow on focus */
 }
 
+#tts-name { display: none; }
+
 #tts-name::before {
     content: "\1F50A";
     /* Unicode speak icon */
