@@ -67,7 +67,7 @@ h1 {
     transition: width 0.3s ease;
     /* Smooth transition */
     overflow-y: auto;
-    height: 85vh;
+    height: 85dvh;
     width: calc(100% - 250px);
     z-index: 10; 
 }
@@ -291,7 +291,7 @@ footer {
     /* width: 100%; */
     background-color: #f0f0f0;
     text-align: center;
-    padding: 10px;
+    padding: 10px 10px max(10px, env(safe-area-inset-bottom));
     font-size: 12px;
     color: #666;
     border-top: 1px solid #ddd;
@@ -443,7 +443,7 @@ button:hover {
     z-index: 1000;
     /* increase the z-index to bring it on top */
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     justify-content: center;
     align-items: center;
 }
@@ -1144,7 +1144,7 @@ button:hover {
         position: fixed;
         top: 0;
         left: 0;
-        height: 100%;
+        height: 100dvh;              /* dvh = real visible viewport, not the static vh */
         width: 270px !important;
         z-index: 1050;
         overflow-y: auto;
@@ -1152,11 +1152,12 @@ button:hover {
         transition: transform 0.3s ease;
         margin: 0;
         border-radius: 0;
-        padding: 24px 16px !important;
+        padding: max(24px, env(safe-area-inset-top)) 16px
+                 max(16px, env(safe-area-inset-bottom)) !important;
         box-sizing: border-box;
-        background: rgba(255, 255, 255, 0.97);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
+        background: #ffffff;         /* solid white — no backdrop-filter flicker */
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
     }
 
     /* Show drawer when menu is NOT hidden */
@@ -1188,7 +1189,7 @@ button:hover {
     /* ── Table container always full-width on mobile ── */
     .table-container {
         width: 100% !important;
-        height: 82vh;
+        height: 82dvh;               /* dvh adjusts when phone chrome shows/hides */
     }
 
     /* ── Hide Vietnamese column (too narrow on phone) ── */
