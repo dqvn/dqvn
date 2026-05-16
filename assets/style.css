@@ -1228,7 +1228,7 @@ button:hover {
         height: 100dvh;              /* dvh = real visible viewport, not the static vh */
         width: 270px !important;
         z-index: 1050;
-        overflow-y: auto;
+        overflow: hidden;            /* flex children handle their own scroll */
         transform: translateX(-100%);
         transition: transform 0.3s ease;
         margin: 0;
@@ -1254,6 +1254,28 @@ button:hover {
     .lm-ft-name { color: #1e293b; }
     .lm-ft-email { color: #64748b; }
     .lm-ft-year { color: #94a3b8; }
+
+    /* Settings spacer: natural height, never squeezed */
+    .left-menu > .spacer:first-of-type {
+        flex-shrink: 0;
+    }
+
+    /* Dutch Courses spacer: fills all remaining height so footer stays at bottom */
+    .left-menu > .spacer:last-of-type {
+        flex: 1 1 0;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    /* File-container grows inside the spacer and scrolls internally */
+    .left-menu > .spacer:last-of-type .file-container {
+        flex: 1 1 0;
+        min-height: 0;
+        height: auto;
+        overflow-y: auto;
+    }
 
     /* Remove spacer bottom margin; give internal content 5px side breathing room */
     .spacer {
@@ -1437,9 +1459,9 @@ button:hover {
         display: flex;
     }
 
-    /* ── File container: shorter on phone ── */
+    /* ── File container: height controlled by flex parent, not fixed px ── */
     .file-container {
-        height: 300px;
+        height: auto;
     }
 
     /* ════════════════════════════════════════════════════════
