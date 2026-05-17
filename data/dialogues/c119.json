@@ -1,1 +1,106 @@
-{}
+{
+  "dialogue_title": "Vegan eten bestellen in een restaurant",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/kGypgAF1DIg",
+  "roles": {
+    "A": "Customer (Girl)",
+    "B": "Waiter (Boy)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedenavond. Heeft u ook veganistische gerechten?",
+      "translation": "Good evening. Do you also have vegan dishes?"
+    },
+    {
+      "role": "B",
+      "text": "Goedenavond. Ja, we hebben een paar veganistische opties.",
+      "translation": "Good evening. Yes, we have a few vegan options."
+    },
+    {
+      "role": "A",
+      "text": "Dat is fijn. Wat kunt u aanbevelen?",
+      "translation": "That's nice. What can you recommend?"
+    },
+    {
+      "role": "B",
+      "text": "Onze vegan pasta met groenten is erg populair.",
+      "translation": "Our vegan pasta with vegetables is very popular."
+    },
+    {
+      "role": "A",
+      "text": "Dat klinkt goed. Zit er ook kaas in?",
+      "translation": "That sounds good. Does it contain cheese too?"
+    },
+    {
+      "role": "B",
+      "text": "Nee, deze pasta is helemaal vegan.",
+      "translation": "No, this pasta is completely vegan."
+    },
+    {
+      "role": "A",
+      "text": "Perfect, dan neem ik de vegan pasta.",
+      "translation": "Perfect, then I'll take the vegan pasta."
+    },
+    {
+      "role": "B",
+      "text": "Wilt u er ook een salade bij?",
+      "translation": "Would you like a salad with that?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, graag. Is de dressing ook vegan?",
+      "translation": "Yes, please. Is the dressing vegan too?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, de dressing is gemaakt van olijfolie en citroen.",
+      "translation": "Yes, the dressing is made of olive oil and lemon."
+    },
+    {
+      "role": "A",
+      "text": "Prima. En mag ik ook een glas water?",
+      "translation": "Great. And may I also have a glass of water?"
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk. Plat water of bruisend water?",
+      "translation": "Of course. Still water or sparkling water?"
+    },
+    {
+      "role": "A",
+      "text": "Plat water alstublieft.",
+      "translation": "Still water, please."
+    },
+    {
+      "role": "B",
+      "text": "Komt eraan.",
+      "translation": "Coming up."
+    },
+    {
+      "role": "B",
+      "text": "Heeft het gesmaakt?",
+      "translation": "Did you enjoy your meal?"
+    },
+    {
+      "role": "A",
+      "text": "It was heerlijk!",
+      "translation": "It was delicious!"
+    },
+    {
+      "role": "B",
+      "text": "Fijn om te horen.",
+      "translation": "Glad to hear that."
+    },
+    {
+      "role": "A",
+      "text": "Mag ik de rekening alstublieft?",
+      "translation": "May I have the bill, please?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, ik kom er meteen aan.",
+      "translation": "Yes, I'll be right over."
+    }
+  ]
+}

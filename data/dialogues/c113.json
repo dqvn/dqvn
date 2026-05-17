@@ -1,1 +1,96 @@
-{}
+{
+  "dialogue_title": "In het hotel",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/cV6Els7PUX4",
+  "roles": {
+    "A": "Guest (Boy)",
+    "B": "Receptionist (Girl)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, ik heb een kamer gereserveerd.",
+      "translation": "Good afternoon, I have reserved a room."
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag, op welke naam staat de reservering?",
+      "translation": "Good afternoon, under what name is the reservation?"
+    },
+    {
+      "role": "A",
+      "text": "De reservering staat op de naam Jansen.",
+      "translation": "The reservation is under the name Jansen."
+    },
+    {
+      "role": "B",
+      "text": "Even kijken. Ja, ik zie uw reservering. U heeft een kamer voor twee nachten geboekt.",
+      "translation": "Let's see. Yes, I see your reservation. You have booked a room for two nights."
+    },
+    {
+      "role": "A",
+      "text": "Dat klopt.",
+      "translation": "That's correct."
+    },
+    {
+      "role": "B",
+      "text": "Mag ik uw identiteitsbewijs alstublieft?",
+      "translation": "May I have your ID, please?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, natuurlijk. Hier is mijn paspoort.",
+      "translation": "Yes, of course. Here is my passport."
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel. Wilt u ook ontbijt bij de kamer?",
+      "translation": "Thank you. Would you also like breakfast with the room?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, graag. Hoe laat is het ontbijt?",
+      "translation": "Yes, please. What time is breakfast?"
+    },
+    {
+      "role": "B",
+      "text": "Het ontbijt is van 7 tot 10 uur.",
+      "translation": "Breakfast is from 7 to 10 o'clock."
+    },
+    {
+      "role": "A",
+      "text": "Perfect.",
+      "translation": "Perfect."
+    },
+    {
+      "role": "B",
+      "text": "Hier is uw kamersleutel. Uw kamer is op de derde verdieping.",
+      "translation": "Here is your room key. Your room is on the third floor."
+    },
+    {
+      "role": "A",
+      "text": "Is er ook wifi in het hotel?",
+      "translation": "Is there also Wi-Fi in the hotel?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, natuurlijk. De wifi is gratis. Het wachtwoord staat op de kaart.",
+      "translation": "Yes, of course. The Wi-Fi is free. The password is on the card."
+    },
+    {
+      "role": "A",
+      "text": "Geweldig, dank u wel voor de hulp.",
+      "translation": "Great, thank you very much for the help."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan. Ik wens u een prettig verblijf.",
+      "translation": "You're welcome. I wish you a pleasant stay."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel.",
+      "translation": "Thank you very much."
+    }
+  ]
+}

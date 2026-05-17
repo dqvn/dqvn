@@ -1,1 +1,76 @@
-{}
+{
+  "dialogue_title": "In de sportschool",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/kruEWk1C8GY",
+  "roles": {
+    "A": "Boy",
+    "B": "Girl"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Hoi, is deze machine vrij?",
+      "translation": "Hi, is this machine free?"
+    },
+    {
+      "role": "B",
+      "text": "Ja hoor, je kunt hem gebruiken.",
+      "translation": "Yes, you can use it."
+    },
+    {
+      "role": "A",
+      "text": "Dankjewel. Kom je hier vaak?",
+      "translation": "Thank you. Do you come here often?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, ik train hier drie keer per week.",
+      "translation": "Yes, I work out here three times a week."
+    },
+    {
+      "role": "A",
+      "text": "Wat voor oefeningen doe je meestal?",
+      "translation": "What kind of exercises do you usually do?"
+    },
+    {
+      "role": "B",
+      "text": "Ik doe vooral krachttraining en een beetje cardio.",
+      "translation": "I mostly do weight training and a bit of cardio."
+    },
+    {
+      "role": "A",
+      "text": "Dat klinkt goed. Ik probeer fitter te worden.",
+      "translation": "That sounds good. I'm trying to get fitter."
+    },
+    {
+      "role": "B",
+      "text": "Goed idee! Sporten is heel gezond.",
+      "translation": "Good idea! Working out is very healthy."
+    },
+    {
+      "role": "A",
+      "text": "Hoe lang train jij meestal?",
+      "translation": "How long do you usually work out?"
+    },
+    {
+      "role": "B",
+      "text": "Ongeveer een uur.",
+      "translation": "About an hour."
+    },
+    {
+      "role": "A",
+      "text": "Dan moet ik ook wat langer trainen.",
+      "translation": "Then I should work out a bit longer too."
+    },
+    {
+      "role": "B",
+      "text": "Succes met je training!",
+      "translation": "Good luck with your workout!"
+    },
+    {
+      "role": "A",
+      "text": "Dank je, jij ook.",
+      "translation": "Thank you, you too."
+    }
+  ]
+}

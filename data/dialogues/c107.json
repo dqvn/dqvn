@@ -1,1 +1,86 @@
-{}
+{
+  "dialogue_title": "Bioscoop Bezoek",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/hDFgTkwP46s",
+  "roles": {
+    "A": "Customer (Boy)",
+    "B": "Cashier (Girl)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, ik wil graag twee tickets.",
+      "translation": "Good afternoon, I would like two tickets."
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag, voor welke film?",
+      "translation": "Good afternoon, for which movie?"
+    },
+    {
+      "role": "A",
+      "text": "Voor de nieuwe actiefilm.",
+      "translation": "For the new action movie."
+    },
+    {
+      "role": "B",
+      "text": "Hoe laat wilt u gaan?",
+      "translation": "What time would you like to go?"
+    },
+    {
+      "role": "A",
+      "text": "Om 19 uur.",
+      "translation": "At 7:00 PM."
+    },
+    {
+      "role": "B",
+      "text": "Oké, er zijn nog plaatsen vrij.",
+      "translation": "Okay, there are still seats available."
+    },
+    {
+      "role": "A",
+      "text": "Perfect.",
+      "translation": "Perfect."
+    },
+    {
+      "role": "B",
+      "text": "Wilt u standaard- of VIP-stoelen?",
+      "translation": "Would you like standard or VIP seats?"
+    },
+    {
+      "role": "A",
+      "text": "Standaard is goed.",
+      "translation": "Standard is fine."
+    },
+    {
+      "role": "B",
+      "text": "Dat is twintig samen.",
+      "translation": "That will be twenty together."
+    },
+    {
+      "role": "A",
+      "text": "Hier is mijn kaart.",
+      "translation": "Here is my card."
+    },
+    {
+      "role": "B",
+      "text": "Dank u, hier zijn uw tickets.",
+      "translation": "Thank you, here are your tickets."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel.",
+      "translation": "Thank you very much."
+    },
+    {
+      "role": "B",
+      "text": "Veel plezier!",
+      "translation": "Enjoy the movie!"
+    },
+    {
+      "role": "A",
+      "text": "Dank u.",
+      "translation": "Thank you."
+    }
+  ]
+}

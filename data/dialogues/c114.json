@@ -1,1 +1,116 @@
-{}
+{
+  "dialogue_title": "Op de markt",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/UCaQG4oddMw",
+  "roles": {
+    "A": "Customer (Girl)",
+    "B": "Vendor (Boy)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen, wat verkoopt u vandaag?",
+      "translation": "Good morning, what are you selling today?"
+    },
+    {
+      "role": "B",
+      "text": "Goedemorgen, ik verkoop verse groenten en fruit.",
+      "translation": "Good morning, I'm selling fresh vegetables and fruit."
+    },
+    {
+      "role": "A",
+      "text": "Dat ziet er lekker uit. Waar komen de appels vandaan?",
+      "translation": "That looks delicious. Where do the apples come from?"
+    },
+    {
+      "role": "B",
+      "text": "De appels komen van een lokale boerderij.",
+      "translation": "The apples come from a local farm."
+    },
+    {
+      "role": "A",
+      "text": "Mooi. Hoeveel kosten ze?",
+      "translation": "Nice. How much do they cost?"
+    },
+    {
+      "role": "B",
+      "text": "Ze kosten €2 per kilo.",
+      "translation": "They cost €2 per kilo."
+    },
+    {
+      "role": "A",
+      "text": "Oké, dan neem ik één kilo appels.",
+      "translation": "Okay, then I'll take one kilo of apples."
+    },
+    {
+      "role": "B",
+      "text": "Prima. Wilt u nog iets anders?",
+      "translation": "Great. Would you like anything else?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, ik zoek ook tomaten.",
+      "translation": "Yes, I am also looking for tomatoes."
+    },
+    {
+      "role": "B",
+      "text": "Hier hebben we verse tomaten. Ze zijn vandaag in de aanbieding.",
+      "translation": "Here we have fresh tomatoes. They are on sale today."
+    },
+    {
+      "role": "A",
+      "text": "Dat klinkt goed. Hoeveel kosten ze?",
+      "translation": "That sounds good. How much do they cost?"
+    },
+    {
+      "role": "B",
+      "text": "€3 per kilo.",
+      "translation": "€3 per kilo."
+    },
+    {
+      "role": "A",
+      "text": "Dan neem ik een halve kilo tomaten.",
+      "translation": "Then I'll take half a kilo of tomatoes."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem. Nog iets?",
+      "translation": "No problem. Anything else?"
+    },
+    {
+      "role": "A",
+      "text": "Heeft u ook bananen?",
+      "translation": "Do you also have bananas?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, daar liggen ze.",
+      "translation": "Yes, they are over there."
+    },
+    {
+      "role": "A",
+      "text": "Oké, ik neem ook een paar bananen.",
+      "translation": "Okay, I'll take a few bananas too."
+    },
+    {
+      "role": "B",
+      "text": "Prima, dat is samen €5.",
+      "translation": "Great, that's €5 altogether."
+    },
+    {
+      "role": "A",
+      "text": "Hier is het geld.",
+      "translation": "Here is the money."
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel, fijne dag en eet smakelijk!",
+      "translation": "Thank you very much, have a nice day and enjoy your meal!"
+    },
+    {
+      "role": "A",
+      "text": "Dank u, tot de volgende keer!",
+      "translation": "Thank you, see you next time!"
+    }
+  ]
+}

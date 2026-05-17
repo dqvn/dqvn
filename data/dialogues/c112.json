@@ -1,1 +1,96 @@
-{}
+{
+  "dialogue_title": "Bij de bakker",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/P-ql_6VwWYM",
+  "roles": {
+    "A": "Customer (Girl)",
+    "B": "Baker (Boy)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen, wat voor brood heeft u vandaag?",
+      "translation": "Good morning, what kind of bread do you have today?"
+    },
+    {
+      "role": "B",
+      "text": "Goedemorgen, we hebben witbrood, volkorenbrood en meergranenbrood.",
+      "translation": "Good morning, we have white bread, whole wheat bread, and multi-grain bread."
+    },
+    {
+      "role": "A",
+      "text": "Ik neem graag een volkorenbrood.",
+      "translation": "I would like a whole wheat bread."
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk, wilt u nog iets anders?",
+      "translation": "Of course, would you like anything else?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, heeft u ook croissants?",
+      "translation": "Yes, do you also have croissants?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, ze zijn net vers gebakken.",
+      "translation": "Yes, they were just freshly baked."
+    },
+    {
+      "role": "A",
+      "text": "Dat klinkt heerlijk. Dan neem ik twee croissants.",
+      "translation": "That sounds delicious. Then I'll take two croissants."
+    },
+    {
+      "role": "B",
+      "text": "Prima. Wilt u misschien ook iets zoets, zoals een taartje?",
+      "translation": "Great. Would you perhaps also like something sweet, like a pastry?"
+    },
+    {
+      "role": "A",
+      "text": "Hm, wat voor taartjes heeft u?",
+      "translation": "Hm, what kind of pastries do you have?"
+    },
+    {
+      "role": "B",
+      "text": "We hebben chocoladetaart en aardbeientaart.",
+      "translation": "We have chocolate cake and strawberry cake."
+    },
+    {
+      "role": "A",
+      "text": "Dan neem ik één stukje chocoladetaart.",
+      "translation": "Then I'll take one piece of chocolate cake."
+    },
+    {
+      "role": "B",
+      "text": "Goed, nog iets anders?",
+      "translation": "Good, anything else?"
+    },
+    {
+      "role": "A",
+      "text": "Nee, dat is alles.",
+      "translation": "No, that's all."
+    },
+    {
+      "role": "B",
+      "text": "Dan samen €6, alstublieft.",
+      "translation": "That will be €6 total, please."
+    },
+    {
+      "role": "A",
+      "text": "Alstublieft.",
+      "translation": "Here you go."
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel. Fijne dag.",
+      "translation": "Thank you very much. Have a nice day."
+    },
+    {
+      "role": "A",
+      "text": "Dank u, u ook.",
+      "translation": "Thank you, you too."
+    }
+  ]
+}

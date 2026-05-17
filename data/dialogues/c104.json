@@ -1,1 +1,106 @@
-{}
+{
+  "dialogue_title": "Oudere Dame Helpen",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/riXypMYu79c",
+  "roles": {
+    "A": "Boy",
+    "B": "Elderly Lady"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag mevrouw, zal ik u helpen?",
+      "translation": "Good afternoon ma'am, may I help you?"
+    },
+    {
+      "role": "B",
+      "text": "Oh, dat is heel vriendelijk van u.",
+      "translation": "Oh, that's very kind of you."
+    },
+    {
+      "role": "A",
+      "text": "Uw tassen lijken zwaar.",
+      "translation": "Your bags look heavy."
+    },
+    {
+      "role": "B",
+      "text": "Ja, dat klopt.",
+      "translation": "Yes, that's true."
+    },
+    {
+      "role": "A",
+      "text": "Ik kan ze voor u dragen.",
+      "translation": "I can carry them for you."
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel.",
+      "translation": "Thank you very much."
+    },
+    {
+      "role": "A",
+      "text": "Waar moet u naartoe?",
+      "translation": "Where are you going?"
+    },
+    {
+      "role": "B",
+      "text": "Naar dat huis daar.",
+      "translation": "To that house over there."
+    },
+    {
+      "role": "A",
+      "text": "Oké, ik loop met u mee.",
+      "translation": "Okay, I'll walk with you."
+    },
+    {
+      "role": "B",
+      "text": "Dat is lief van u.",
+      "translation": "That's sweet of you."
+    },
+    {
+      "role": "A",
+      "text": "Woont u hier al lang?",
+      "translation": "Have you lived here long?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, al meer dan twintig jaar.",
+      "translation": "Yes, for more than twenty years."
+    },
+    {
+      "role": "A",
+      "text": "Wat mooi.",
+      "translation": "That's nice."
+    },
+    {
+      "role": "B",
+      "text": "Hier is het.",
+      "translation": "Here it is."
+    },
+    {
+      "role": "A",
+      "text": "Hier zijn uw tassen.",
+      "translation": "Here are your bags."
+    },
+    {
+      "role": "B",
+      "text": "Hartelijk dank!",
+      "translation": "Thank you very much!"
+    },
+    {
+      "role": "A",
+      "text": "Graag gedaan!",
+      "translation": "You're welcome!"
+    },
+    {
+      "role": "B",
+      "text": "Fijne dag!",
+      "translation": "Have a nice day!"
+    },
+    {
+      "role": "A",
+      "text": "U ook!",
+      "translation": "You too!"
+    }
+  ]
+}

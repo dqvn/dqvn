@@ -1,1 +1,61 @@
-{}
+{
+  "dialogue_title": "Over het weer praten",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/nXume3A6AXw",
+  "roles": {
+    "A": "Girl",
+    "B": "Mark"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Hoi Mark, wat een mooi weer vandaag.",
+      "translation": "Hi Mark, what beautiful weather today."
+    },
+    {
+      "role": "B",
+      "text": "Ja, echt heerlijk. De zon schijnt.",
+      "translation": "Yes, really wonderful. The sun is shining."
+    },
+    {
+      "role": "A",
+      "text": "And het is ook niet te koud.",
+      "translation": "And it's not too cold either."
+    },
+    {
+      "role": "B",
+      "text": "Precies, perfect weer om buiten te zijn. Ga je vandaag nog iets doen?",
+      "translation": "Exactly, perfect weather to be outside. Are you going to do something today?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, ik ga straks een wandeling maken.",
+      "translation": "Yes, I'm going to take a walk later."
+    },
+    {
+      "role": "B",
+      "text": "Goed idee. Ik denk dat ik ook naar het park ga.",
+      "translation": "Good idea. I think I'll go to the park too."
+    },
+    {
+      "role": "A",
+      "text": "Dat klinkt leuk. Misschien zien we elkaar daar.",
+      "translation": "That sounds nice. Maybe we'll see each other there."
+    },
+    {
+      "role": "B",
+      "text": "Ja, dat zou gezellig zijn.",
+      "translation": "Yes, that would be nice."
+    },
+    {
+      "role": "A",
+      "text": "Geniet van het mooie weer.",
+      "translation": "Enjoy the beautiful weather."
+    },
+    {
+      "role": "B",
+      "text": "Dank je, jij ook.",
+      "translation": "Thank you, you too."
+    }
+  ]
+}
