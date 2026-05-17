@@ -1,0 +1,96 @@
+{
+  "dialogue_title": "Avondwinkel Gesprek – Nederlands Dagelijks Dialoog",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/OvCiAB5Dqkw",
+  "roles": {
+    "A": "Cashier (Woman)",
+    "B": "Customer (Man)"
+  },
+  "conversation": [
+    {
+      "role": "B",
+      "text": "Goedenavond.",
+      "translation": "Good evening."
+    },
+    {
+      "role": "A",
+      "text": "Goedenavond. Heeft u alles gevonden?",
+      "translation": "Good evening. Did you find everything?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, gelukkig wel.",
+      "translation": "Yes, luckily I did."
+    },
+    {
+      "role": "A",
+      "text": "It is rustig vanavond.",
+      "translation": "It's quiet tonight."
+    },
+    {
+      "role": "B",
+      "text": "Ja, bijna niemand is hier.",
+      "translation": "Yes, almost nobody is here."
+    },
+    {
+      "role": "A",
+      "text": "Dat gebeurt vaak laat op de avond.",
+      "translation": "That often happens late in the evening."
+    },
+    {
+      "role": "B",
+      "text": "Ik had ineens zin in snacks.",
+      "translation": "I suddenly felt like having snacks."
+    },
+    {
+      "role": "A",
+      "text": "Dat herken ik. Werkt u nog lang vanavond?",
+      "translation": "I understand that. Are you working much longer tonight?"
+    },
+    {
+      "role": "A",
+      "text": "Nog ongeveer een uur.",
+      "translation": "About one more hour."
+    },
+    {
+      "role": "B",
+      "text": "Dat valt mee.",
+      "translation": "That's not too bad."
+    },
+    {
+      "role": "A",
+      "text": "Ja, gelukkig wel.",
+      "translation": "Yes, luckily."
+    },
+    {
+      "role": "B",
+      "text": "Hoeveel moet ik betalen?",
+      "translation": "How much do I have to pay?"
+    },
+    {
+      "role": "A",
+      "text": "Dat is €8,20.",
+      "translation": "That will be €8.20."
+    },
+    {
+      "role": "B",
+      "text": "Hier is mijn kaart.",
+      "translation": "Here is my card."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel.",
+      "translation": "Thank you very much."
+    },
+    {
+      "role": "B",
+      "text": "Fijne avond nog.",
+      "translation": "Have a nice evening!"
+    },
+    {
+      "role": "A",
+      "text": "U ook.",
+      "translation": "You too."
+    }
+  ]
+}

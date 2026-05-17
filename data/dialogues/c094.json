@@ -1,0 +1,97 @@
+{
+  "dialogue_title": "Restaurant Gesprek met een Vriend – Nederlands Dialoog",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/4whhJCeQoqY",
+  "roles": {
+    "A": "Boy in light blue shirt",
+    "B": "Girl in white sweater",
+    "C": "Waiter"
+  },
+  "conversation": [
+    {
+      "role": "B",
+      "text": "Dit restaurant ziet er gezellig uit.",
+      "translation": "This restaurant looks cozy."
+    },
+    {
+      "role": "A",
+      "text": "Ja, ik ben hier al eens geweest.",
+      "translation": "Yes, I've been here before."
+    },
+    {
+      "role": "B",
+      "text": "Wat raad je aan?",
+      "translation": "What do you recommend?"
+    },
+    {
+      "role": "A",
+      "text": "De pasta is echt lekker.",
+      "translation": "The pasta is really delicious."
+    },
+    {
+      "role": "B",
+      "text": "Dan neem ik misschien pasta.",
+      "translation": "Then I might take pasta."
+    },
+    {
+      "role": "A",
+      "text": "Goede keuze.",
+      "translation": "Good choice."
+    },
+    {
+      "role": "C",
+      "text": "Goedenavond, zijn jullie klaar om te bestellen?",
+      "translation": "Good evening, are you ready to order?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, ik neem de pasta alstublieft.",
+      "translation": "Yes, I'll have the pasta please."
+    },
+    {
+      "role": "A",
+      "text": "En ik neem een pizza.",
+      "translation": "And I'll have a pizza."
+    },
+    {
+      "role": "C",
+      "text": "Natuurlijk. Willen jullie ook iets drinken?",
+      "translation": "Of course. Would you also like something to drink?"
+    },
+    {
+      "role": "B",
+      "text": "Een cola graag.",
+      "translation": "A cola please."
+    },
+    {
+      "role": "A",
+      "text": "Voor mij water.",
+      "translation": "Water for me."
+    },
+    {
+      "role": "C",
+      "text": "Komt eraan.",
+      "translation": "Coming right up."
+    },
+    {
+      "role": "B",
+      "text": "Het eten ziet er heerlijk uit.",
+      "translation": "The food looks delicious."
+    },
+    {
+      "role": "A",
+      "text": "Ja, geniet ervan.",
+      "translation": "Yes, enjoy it."
+    },
+    {
+      "role": "B",
+      "text": "Dank je. We moeten hier vaker komen.",
+      "translation": "Thank you. We should come here more often."
+    },
+    {
+      "role": "A",
+      "text": "Absoluut.",
+      "translation": "Absolutely."
+    }
+  ]
+}

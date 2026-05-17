@@ -1,0 +1,71 @@
+{
+  "dialogue_title": "Gesprek met de Buren – Klagen over Harde Muziek",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/T4KGeyXJcpg",
+  "roles": {
+    "A": "Girl living next door",
+    "B": "Boy playing loud music"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedenavond, mag ik iets vragen?",
+      "translation": "Good evening, may I ask something?"
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk, wat is er?",
+      "translation": "Of course, what is it?"
+    },
+    {
+      "role": "A",
+      "text": "De muziek staat een beetje hard.",
+      "translation": "The music is a bit loud."
+    },
+    {
+      "role": "B",
+      "text": "Oh, echt waar? Sorry daarvoor.",
+      "translation": "Oh, really? Sorry about that."
+    },
+    {
+      "role": "A",
+      "text": "Geen probleem, ik wilde het alleen even zeggen.",
+      "translation": "No problem, I just wanted to mention it."
+    },
+    {
+      "role": "B",
+      "text": "Dank u dat u het netjes zegt.",
+      "translation": "Thank you for saying it politely."
+    },
+    {
+      "role": "A",
+      "text": "Ik moet morgen vroeg werken.",
+      "translation": "I have to work early tomorrow."
+    },
+    {
+      "role": "B",
+      "text": "Begrijpelijk. Ik zet de muziek zachter.",
+      "translation": "Understandable. I'll turn the music down."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel.",
+      "translation": "Thank you very much."
+    },
+    {
+      "role": "B",
+      "text": "Het spijt me voor de overlast.",
+      "translation": "Sorry for the disturbance."
+    },
+    {
+      "role": "A",
+      "text": "Geen probleem. Fijne avond verder.",
+      "translation": "No problem. Have a nice evening."
+    },
+    {
+      "role": "B",
+      "text": "U ook.",
+      "translation": "You too."
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "dialogue_title": "Hulp in de Supermarkt – Nederlands Dagelijks Gesprek",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/TVWi234nGRE",
+  "roles": {
+    "A": "Elderly Woman",
+    "B": "Young Man"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Pardon, kunt u mij helpen?",
+      "translation": "Excuse me, can you help me?"
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk.",
+      "translation": "Of course."
+    },
+    {
+      "role": "A",
+      "text": "Ik kan dat product niet pakken.",
+      "translation": "I can't reach that product."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem, ik help u wel.",
+      "translation": "No problem, I'll help you."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel.",
+      "translation": "Thank you very much."
+    },
+    {
+      "role": "B",
+      "text": "Bedoelt u deze?",
+      "translation": "Do you mean this one?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, precies die.",
+      "translation": "Yes, exactly that one."
+    },
+    {
+      "role": "B",
+      "text": "Hier, alstublieft.",
+      "translation": "Here you go."
+    },
+    {
+      "role": "A",
+      "text": "Dat is heel vriendelijk van u.",
+      "translation": "That's very kind of you."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan.",
+      "translation": "You're welcome."
+    },
+    {
+      "role": "A",
+      "text": "Komt u hier vaak?",
+      "translation": "Do you come here often?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, meestal één keer per week.",
+      "translation": "Yes, usually once a week."
+    },
+    {
+      "role": "B",
+      "text": "Deze supermarkt is erg groot.",
+      "translation": "This supermarket is very big."
+    },
+    {
+      "role": "B",
+      "text": "Dat klopt.",
+      "translation": "That's true."
+    },
+    {
+      "role": "A",
+      "text": "Nogmaals bedankt voor uw hulp.",
+      "translation": "Thanks again for your help."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem.",
+      "translation": "No problem."
+    },
+    {
+      "role": "A",
+      "text": "Fijne dag!",
+      "translation": "Have a nice day!"
+    },
+    {
+      "role": "B",
+      "text": "U ook.",
+      "translation": "You too."
+    }
+  ]
+}

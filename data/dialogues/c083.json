@@ -1,0 +1,91 @@
+{
+  "dialogue_title": "Gesprek over de Hond van de Buurman – Nederlands Dialoog",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/a9bQVDaTAa8",
+  "roles": {
+    "A": "Man with backpack",
+    "B": "Woman with dog leash"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Wat een leuke hond heeft u!",
+      "translation": "What a lovely dog you have!"
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel.",
+      "translation": "Thank you very much."
+    },
+    {
+      "role": "A",
+      "text": "Hoe heet hij?",
+      "translation": "What is his name?"
+    },
+    {
+      "role": "B",
+      "text": "Hij heet Max.",
+      "translation": "His name is Max."
+    },
+    {
+      "role": "A",
+      "text": "Hij ziet er echt vriendelijk uit.",
+      "translation": "He looks very friendly."
+    },
+    {
+      "role": "B",
+      "text": "Ja, hij houdt van mensen.",
+      "translation": "Yes, he loves people."
+    },
+    {
+      "role": "A",
+      "text": "Hoe oud is hij?",
+      "translation": "How old is he?"
+    },
+    {
+      "role": "B",
+      "text": "Bijna drie jaar.",
+      "translation": "Almost three years old."
+    },
+    {
+      "role": "A",
+      "text": "Wat voor ras is het?",
+      "translation": "What breed is he?"
+    },
+    {
+      "role": "B",
+      "text": "Een golden retriever.",
+      "translation": "A golden retriever."
+    },
+    {
+      "role": "A",
+      "text": "Ah, dat zijn lieve honden.",
+      "translation": "Ah, those are sweet dogs."
+    },
+    {
+      "role": "B",
+      "text": "Absoluut.",
+      "translation": "Absolutely."
+    },
+    {
+      "role": "A",
+      "text": "Volgens mij vindt hij mij aardig.",
+      "translation": "I think he likes me."
+    },
+    {
+      "role": "B",
+      "text": "Dat denk ik ook.",
+      "translation": "I think so too."
+    },
+    {
+      "role": "A",
+      "text": "Misschien mag ik hem aaien?",
+      "translation": "Maybe I can pet him?"
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk.",
+      "translation": "Of course."
+    }
+  ]
+}

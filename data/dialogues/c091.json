@@ -1,0 +1,91 @@
+{
+  "dialogue_title": "IJs Kopen met een Kind – Nederlands Gesprek bij de IJssalon",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/pD7icZLCMSE",
+  "roles": {
+    "A": "Mother and Son",
+    "B": "Ice Cream Seller (Man)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Mama, mag ik een ijsje?",
+      "translation": "Mom, can I have an ice cream?"
+    },
+    {
+      "role": "A",
+      "text": "Ja hoor, welke smaak wil je?",
+      "translation": "Sure, which flavor would you like?"
+    },
+    {
+      "role": "A",
+      "text": "Hmm, chocolade!",
+      "translation": "Hmm, chocolate!"
+    },
+    {
+      "role": "A",
+      "text": "Alleen chocolade?",
+      "translation": "Only chocolate?"
+    },
+    {
+      "role": "A",
+      "text": "En aardbei!",
+      "translation": "And strawberry!"
+    },
+    {
+      "role": "A",
+      "text": "Goede keuze.",
+      "translation": "Good choice."
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag, wat mag het zijn?",
+      "translation": "Good afternoon, what would you like?"
+    },
+    {
+      "role": "A",
+      "text": "Eén kinderiJsje met chocolade en aardbei.",
+      "translation": "One kids' ice cream with chocolate and strawberry."
+    },
+    {
+      "role": "B",
+      "text": "In een hoorntje of een bakje?",
+      "translation": "In a cone or a cup?"
+    },
+    {
+      "role": "A",
+      "text": "Een hoorntje!",
+      "translation": "A cone!"
+    },
+    {
+      "role": "A",
+      "text": "En voor mij een vanille-ijsje.",
+      "translation": "And a vanilla ice cream for me."
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk.",
+      "translation": "Of course."
+    },
+    {
+      "role": "A",
+      "text": "Wauw, dank u wel.",
+      "translation": "Wow, thank you very much."
+    },
+    {
+      "role": "B",
+      "text": "Smakelijk!",
+      "translation": "Enjoy!"
+    },
+    {
+      "role": "A",
+      "text": "Zeg maar dank je.",
+      "translation": "Say thank you."
+    },
+    {
+      "role": "A",
+      "text": "Dank je.",
+      "translation": "Thank you."
+    }
+  ]
+}

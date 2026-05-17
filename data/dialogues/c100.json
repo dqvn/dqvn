@@ -1,0 +1,91 @@
+{
+  "dialogue_title": "Gesprek met een Oudere Buurman – Nederlands Dialoog",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/pcO2wNnIMb0",
+  "roles": {
+    "A": "Meneer Jansen (Elderly Neighbor)",
+    "B": "Young Neighbor (Man)"
+  },
+  "conversation": [
+    {
+      "role": "B",
+      "text": "Goedemiddag, meneer Jansen.",
+      "translation": "Good afternoon, Mr. Jansen."
+    },
+    {
+      "role": "A",
+      "text": "Goedemiddag!",
+      "translation": "Good afternoon!"
+    },
+    {
+      "role": "B",
+      "text": "Hoe gaat het met u?",
+      "translation": "How are you?"
+    },
+    {
+      "role": "A",
+      "text": "Goed hoor, dank je. En met jou?",
+      "translation": "I'm good, thank you. And you?"
+    },
+    {
+      "role": "B",
+      "text": "Ook goed, bedankt. Wat ben je vandaag aan het doen?",
+      "translation": "Also good, thanks. What are you doing today?"
+    },
+    {
+      "role": "A",
+      "text": "Ik ben wat in de tuin aan het werken.",
+      "translation": "I'm working in the garden a bit."
+    },
+    {
+      "role": "B",
+      "text": "Dat ziet er mooi uit.",
+      "translation": "It looks nice."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel.",
+      "translation": "Thank you very much."
+    },
+    {
+      "role": "A",
+      "text": "Ik werkte vroeger ook veel in de tuin.",
+      "translation": "I used to work in the garden a lot too."
+    },
+    {
+      "role": "B",
+      "text": "Echt? Dat is leuk!",
+      "translation": "Really? That's nice!"
+    },
+    {
+      "role": "A",
+      "text": "Ja, ik vond het altijd ontspannend.",
+      "translation": "Yes, I always found it relaxing."
+    },
+    {
+      "role": "B",
+      "text": "Begrijpelijk. Woon je hier al lang?",
+      "translation": "Understandable. Have you lived here long?"
+    },
+    {
+      "role": "A",
+      "text": "Nee, pas sinds vorig jaar.",
+      "translation": "No, only since last year."
+    },
+    {
+      "role": "B",
+      "text": "Dan heet ik je alsnog welkom.",
+      "translation": "Then let me still welcome you."
+    },
+    {
+      "role": "A",
+      "text": "Dat is vriendelijk van u. Fijne dag verder.",
+      "translation": "That's very kind of you. Have a nice day!"
+    },
+    {
+      "role": "B",
+      "text": "U ook.",
+      "translation": "You too."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "dialogue_title": "Boeken Kopen – Nederlands Gesprek in de Boekwinkel",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/2mftjRzmuGg",
+  "roles": {
+    "A": "Customer (Woman)",
+    "B": "Shop Assistant (Man)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, ik zoek een interessant boek.",
+      "translation": "Good afternoon, I'm looking for an interesting book."
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag, wat voor boeken leest u graag?",
+      "translation": "Good afternoon! What kind of books do you like to read?"
+    },
+    {
+      "role": "A",
+      "text": "Ik hou van spannende verhalen.",
+      "translation": "I like exciting stories."
+    },
+    {
+      "role": "B",
+      "text": "Dan kan ik deze thriller aanraden.",
+      "translation": "Then I can recommend this thriller."
+    },
+    {
+      "role": "A",
+      "text": "Waar gaat het over?",
+      "translation": "What is it about?"
+    },
+    {
+      "role": "B",
+      "text": "Het gaat over een mystieuze verdwijning.",
+      "translation": "It's about a mysterious disappearance."
+    },
+    {
+      "role": "A",
+      "text": "Dat klinkt interessant.",
+      "translation": "That sounds interesting."
+    },
+    {
+      "role": "B",
+      "text": "Het is een populair boek op dit moment.",
+      "translation": "It is a popular book at the moment."
+    },
+    {
+      "role": "A",
+      "text": "Heeft u ook iets romantisch?",
+      "translation": "Do you also have something romantic?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, daar in die kast staan romans.",
+      "translation": "Yes, the novels are over there in that shelf."
+    },
+    {
+      "role": "A",
+      "text": "Oké, ik kijk even rond.",
+      "translation": "Okay, I'll look around."
+    },
+    {
+      "role": "A",
+      "text": "Ik neem deze twee boeken.",
+      "translation": "I'll take these two books."
+    },
+    {
+      "role": "B",
+      "text": "Goede keuze. Hoeveel kost het samen?",
+      "translation": "Good choice. How much is it together?"
+    },
+    {
+      "role": "B",
+      "text": "Dat is €28.",
+      "translation": "That will be €28."
+    },
+    {
+      "role": "A",
+      "text": "Hier is mijn kaart. Dank u wel.",
+      "translation": "Here is my card. Thank you very much."
+    },
+    {
+      "role": "A",
+      "text": "Bedankt voor de hulp.",
+      "translation": "Thanks for the help."
+    }
+  ]
+}

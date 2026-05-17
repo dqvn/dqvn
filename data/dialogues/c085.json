@@ -1,0 +1,86 @@
+{
+  "dialogue_title": "Kleding Kopen – Nederlands Gesprek in een Winkel",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/gNemKGlNiKU",
+  "roles": {
+    "A": "Shop Assistant (Woman)",
+    "B": "Customer (Man)"
+  },
+  "conversation": [
+    {
+      "role": "B",
+      "text": "Goedemiddag.",
+      "translation": "Good afternoon."
+    },
+    {
+      "role": "A",
+      "text": "Goedemiddag, kan ik u helpen?",
+      "translation": "Good afternoon, can I help you?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, ik zoek een nieuwe jas.",
+      "translation": "Yes, I'm looking for a new jacket."
+    },
+    {
+      "role": "A",
+      "text": "Voor welke gelegenheid?",
+      "translation": "For what occasion?"
+    },
+    {
+      "role": "B",
+      "text": "Gewoon voor dagelijks gebruik.",
+      "translation": "Just for everyday use."
+    },
+    {
+      "role": "A",
+      "text": "Misschien is deze jas iets voor u.",
+      "translation": "Maybe this jacket is something for you."
+    },
+    {
+      "role": "B",
+      "text": "Oh, die ziet er mooi uit.",
+      "translation": "Oh, that looks nice."
+    },
+    {
+      "role": "A",
+      "text": "Wilt u hem passen?",
+      "translation": "Would you like to try it on?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, graag.",
+      "translation": "Yes, please."
+    },
+    {
+      "role": "A",
+      "text": "En hoe zit hij?",
+      "translation": "So, how does it fit?"
+    },
+    {
+      "role": "B",
+      "text": "Eigenlijk best goed.",
+      "translation": "Actually pretty good."
+    },
+    {
+      "role": "A",
+      "text": "De kleur past ook goed bij u.",
+      "translation": "The color suits you well too."
+    },
+    {
+      "role": "B",
+      "text": "Dank u. Ik denk dat deze prima is.",
+      "translation": "Thank you. I think this one is perfect."
+    },
+    {
+      "role": "A",
+      "text": "Goede keuze.",
+      "translation": "Good choice."
+    },
+    {
+      "role": "B",
+      "text": "Dan neem ik hem.",
+      "translation": "Then I'll take it."
+    }
+  ]
+}

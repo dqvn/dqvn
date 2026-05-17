@@ -1,0 +1,91 @@
+{
+  "dialogue_title": "Opa Bezoekt Oma in het Ziekenhuis – Nederlandse Conversatie",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/54OWa00JWZE",
+  "roles": {
+    "A": "Opa (Grandfather)",
+    "B": "Oma (Grandmother)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Hallo liefje, hoe voel je je vandaag?",
+      "translation": "Hello darling, how are you feeling today?"
+    },
+    {
+      "role": "B",
+      "text": "Een beetje moe, maar beter dan gisteren.",
+      "translation": "A little tired, but better than yesterday."
+    },
+    {
+      "role": "A",
+      "text": "Dat is goed om te horen.",
+      "translation": "That is good to hear."
+    },
+    {
+      "role": "B",
+      "text": "Ik ben blij dat je gekomen bent.",
+      "translation": "I'm happy that you came."
+    },
+    {
+      "role": "A",
+      "text": "Natuurlijk kom ik. Ik maak me zorgen om je.",
+      "translation": "Of course I came. I'm worried about you."
+    },
+    {
+      "role": "B",
+      "text": "Dat hoeft niet.",
+      "translation": "You don't need to worry."
+    },
+    {
+      "role": "A",
+      "text": "Ik heb bloemen voor je meegenomen.",
+      "translation": "I brought flowers for you."
+    },
+    {
+      "role": "B",
+      "text": "Wat lief van je. Wat zei de dokter vandaag?",
+      "translation": "That's so sweet of you. What did the doctor say today?"
+    },
+    {
+      "role": "B",
+      "text": "Ik moet nog een paar dagen blijven.",
+      "translation": "I have to stay a few more days."
+    },
+    {
+      "role": "A",
+      "text": "Dan kom ik morgen weer langs.",
+      "translation": "Then I'll visit again tomorrow."
+    },
+    {
+      "role": "B",
+      "text": "Dat zou fijn zijn.",
+      "translation": "That would be nice."
+    },
+    {
+      "role": "A",
+      "text": "Mis je thuis?",
+      "translation": "Do you miss home?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, vooral jou.",
+      "translation": "Yes, especially you."
+    },
+    {
+      "role": "A",
+      "text": "Ik mis jou ook.",
+      "translation": "I miss you too."
+    },
+    {
+      "role": "B",
+      "text": "Dank je dat je hier bent.",
+      "translation": "Thank you for being here."
+    },
+    {
+      "role": "A",
+      "text": "Altijd.",
+      "translation": "Always."
+    }
+  ]
+}

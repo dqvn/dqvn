@@ -1,0 +1,81 @@
+{
+  "dialogue_title": "Telefoon Kwijt – Nederlands Dagelijks Gesprek",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/QczZnEyTalo",
+  "roles": {
+    "A": "Girl with backpack",
+    "B": "Boy in denim jacket"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Oh nee, mijn telefoon is weg!",
+      "translation": "Oh no, my phone is gone!"
+    },
+    {
+      "role": "B",
+      "text": "Weet je zeker dat je hem kwijt bent?",
+      "translation": "Are you sure you lost it?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, ik kan hem nergens vinden.",
+      "translation": "Yes, I can't find it anywhere."
+    },
+    {
+      "role": "B",
+      "text": "Heb je in je tas gekeken?",
+      "translation": "Did you check your bag?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, al drie keer.",
+      "translation": "Yes, already three times."
+    },
+    {
+      "role": "B",
+      "text": "Wanneer had je hem voor het laatst?",
+      "translation": "When did you last have it?"
+    },
+    {
+      "role": "A",
+      "text": "Volgens mij in het café.",
+      "translation": "I think at the café."
+    },
+    {
+      "role": "B",
+      "text": "Misschien ligt hij daar nog.",
+      "translation": "Maybe it's still there."
+    },
+    {
+      "role": "A",
+      "text": "Ik hoop het echt.",
+      "translation": "I really hope so."
+    },
+    {
+      "role": "B",
+      "text": "Bel hem eens.",
+      "translation": "Try calling it."
+    },
+    {
+      "role": "A",
+      "text": "Goede gedachten. Niemand neemt op. Misschien staat hij op stil.",
+      "translation": "Good idea. Nobody is answering. Maybe it's on silent mode."
+    },
+    {
+      "role": "A",
+      "text": "Dit is zo stressvol.",
+      "translation": "This is so stressful."
+    },
+    {
+      "role": "B",
+      "text": "Rustig, we vinden hem wel. Zullen we teruggaan naar het café?",
+      "translation": "Calm down, we'll find it. Shall we go back to the café?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, laten we snel gaan.",
+      "translation": "Yes, let's go quickly."
+    }
+  ]
+}
