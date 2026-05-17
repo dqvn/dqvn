@@ -293,7 +293,7 @@
     setTimeout(() => {
       if (seq !== fc.ttsSeq) return;
       if (typeof speakText === 'function') speakText(card.dutch);
-    }, 400);
+    }, 550);
   }
 
   /* ── Flip ───────────────────────────────────────────────────────────────── */
