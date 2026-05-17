@@ -1,1 +1,81 @@
-{}
+{
+  "dialogue_title": "Gesprek in de Regen",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/V-iOblvkMT4",
+  "roles": {
+    "A": "Girl",
+    "B": "Boy"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Oh nee, het regent ineens!",
+      "translation": "Oh no, it suddenly started raining!"
+    },
+    {
+      "role": "B",
+      "text": "Ja, en ik heb geen paraplu.",
+      "translation": "Yes, and I don't have an umbrella."
+    },
+    {
+      "role": "A",
+      "text": "Gelukkig heb ik er één bij me. Dat is perfect!",
+      "translation": "Luckily, I brought one. That's perfect!"
+    },
+    {
+      "role": "A",
+      "text": "Kom snel hier staan!",
+      "translation": "Come stand here quickly!"
+    },
+    {
+      "role": "B",
+      "text": "Dank je. We zijn helemaal nat geworden.",
+      "translation": "Thank you. We got completely wet."
+    },
+    {
+      "role": "A",
+      "text": "Een beetje wel. Het weer verandert snel vandaag.",
+      "translation": "A little bit, yes. The weather changes quickly today."
+    },
+    {
+      "role": "B",
+      "text": "Typisch Nederland.",
+      "translation": "Typical Netherlands."
+    },
+    {
+      "role": "A",
+      "text": "Dat klopt.",
+      "translation": "That's true."
+    },
+    {
+      "role": "B",
+      "text": "Waar wilde je eigenlijk naartoe?",
+      "translation": "Where were you actually going?"
+    },
+    {
+      "role": "A",
+      "text": "Naar het café op de hoek.",
+      "translation": "To the café on the corner."
+    },
+    {
+      "role": "B",
+      "text": "Goed idee, daar kunnen we opwarmen.",
+      "translation": "Good idea. We can warm up there."
+    },
+    {
+      "role": "A",
+      "text": "Ja, laten we gaan.",
+      "translation": "Yes, let's go."
+    },
+    {
+      "role": "B",
+      "text": "Hopelijk stopt de regen snel.",
+      "translation": "Hopefully the rain stops soon."
+    },
+    {
+      "role": "A",
+      "text": "Dat hoop ik ook.",
+      "translation": "I hope so too."
+    }
+  ]
+}

@@ -1,1 +1,76 @@
-{}
+{
+  "dialogue_title": "Over hobby’s praten",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/_BcEbawp-DQ",
+  "roles": {
+    "A": "Lars",
+    "B": "Sophie"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Hoi Sophie, wat doe je graag in je vrije tijd?",
+      "translation": "Hi Sophie, what do you like to do in your free time?"
+    },
+    {
+      "role": "B",
+      "text": "Hoi Lars, ik lees graag boeken.",
+      "translation": "Hi Lars, I like to read books."
+    },
+    {
+      "role": "A",
+      "text": "Wat voor boeken lees je?",
+      "translation": "What kind of books do you read?"
+    },
+    {
+      "role": "B",
+      "text": "Vooral romans en soms ook reisverhalen.",
+      "translation": "Mostly novels and sometimes travel stories too."
+    },
+    {
+      "role": "A",
+      "text": "Dat klinkt interessant. En jij, heb je hobby's?",
+      "translation": "That sounds interesting. And you, do you have hobbies?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, ik speel graag voetbal met mijn vrienden.",
+      "translation": "Yes, I like to play football with my friends."
+    },
+    {
+      "role": "A",
+      "text": "Hoe vaak speel je voetbal?",
+      "translation": "How often do you play football?"
+    },
+    {
+      "role": "B",
+      "text": "Meestal twee keer per week. Sport je ook nog iets anders?",
+      "translation": "Usually twice a week. Do you do any other sports?"
+    },
+    {
+      "role": "A",
+      "text": "Soms ga ik hardlopen in het park.",
+      "translation": "Sometimes I go running in the park."
+    },
+    {
+      "role": "B",
+      "text": "Dat is gezond. Lees je alleen thuis of ook in cafés?",
+      "translation": "That is healthy. Do you only read at home or also in cafés?"
+    },
+    {
+      "role": "A",
+      "text": "Soms lees ik in een café. Dat vind ik gezellig.",
+      "translation": "Sometimes I read in a café. I find that cozy."
+    },
+    {
+      "role": "B",
+      "text": "Misschien kan ik een keer met je meegaan?",
+      "translation": "Maybe I can join you sometime?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, dat lijkt me leuk!",
+      "translation": "Yes, that sounds fun!"
+    }
+  ]
+}

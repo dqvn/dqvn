@@ -1,1 +1,91 @@
-{}
+{
+  "dialogue_title": "Een Kat Gevonden",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/C2g6n3bMY8E",
+  "roles": {
+    "A": "Girl",
+    "B": "Boy"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Kijk, daar zit een kat.",
+      "translation": "Look, there's a cat."
+    },
+    {
+      "role": "B",
+      "text": "Ja, hij ziet er verdwaald uit.",
+      "translation": "Yes, he looks lost."
+    },
+    {
+      "role": "A",
+      "text": "Denk je dat hij een eigenaar heeft?",
+      "translation": "Do you think he has an owner?"
+    },
+    {
+      "role": "B",
+      "text": "Waarschijnlijk wel.",
+      "translation": "Probably."
+    },
+    {
+      "role": "A",
+      "text": "Hij heeft geen halsband.",
+      "translation": "He doesn't have a collar."
+    },
+    {
+      "role": "B",
+      "text": "Misschien is hij weggelopen.",
+      "translation": "Maybe he ran away."
+    },
+    {
+      "role": "A",
+      "text": "Hij lijkt een beetje bang.",
+      "translation": "He looks a little scared."
+    },
+    {
+      "role": "B",
+      "text": "Ja, maar hij is wel vriendelijk.",
+      "translation": "Yes, but he is friendly."
+    },
+    {
+      "role": "A",
+      "text": "Wat zullen we doen?",
+      "translation": "What should we do?"
+    },
+    {
+      "role": "B",
+      "text": "Misschien kunnen we een bericht online plaatsen.",
+      "translation": "Maybe we can post a message online."
+    },
+    {
+      "role": "A",
+      "text": "Goed idee!",
+      "translation": "Good idea."
+    },
+    {
+      "role": "B",
+      "text": "Of we kunnen naar de dierenarts gaan.",
+      "translation": "Or we can go to the vet."
+    },
+    {
+      "role": "A",
+      "text": "Ja, misschien heeft hij een chip. Dat zou handig zijn.",
+      "translation": "Yes, maybe he has a chip. That would be useful."
+    },
+    {
+      "role": "A",
+      "text": "Arme kat.",
+      "translation": "Poor cat."
+    },
+    {
+      "role": "B",
+      "text": "Hopelijk vinden we de eigenaar snel.",
+      "translation": "Hopefully we find the owner soon."
+    },
+    {
+      "role": "A",
+      "text": "Dat hoop ik ook.",
+      "translation": "I hope so too."
+    }
+  ]
+}

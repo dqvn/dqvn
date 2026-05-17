@@ -1,1 +1,131 @@
-{}
+{
+  "dialogue_title": "Learn Dutch: New Student in Class",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/c5NeEFebQl8",
+  "roles": {
+    "A": "Teacher (Girl)",
+    "B": "Amir"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen. Jij bent een nieuwe leerling, toch?",
+      "translation": "Good morning. You are a new student, right?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, dat klopt. Goedemorgen.",
+      "translation": "Yes, that's correct. Good morning."
+    },
+    {
+      "role": "A",
+      "text": "Welkom in de klas. Hoe heet je?",
+      "translation": "Welcome to the class. What is your name?"
+    },
+    {
+      "role": "B",
+      "text": "Ik heet Amir.",
+      "translation": "My name is Amir."
+    },
+    {
+      "role": "A",
+      "text": "Aangenaam Amir. Waar kom je vandaan?",
+      "translation": "Nice to meet you Amir. Where do you come from?"
+    },
+    {
+      "role": "B",
+      "text": "Ik kom uit Duitsland.",
+      "translation": "I come from Germany."
+    },
+    {
+      "role": "A",
+      "text": "Spreek je al Nederlands?",
+      "translation": "Do you speak Dutch already?"
+    },
+    {
+      "role": "B",
+      "text": "Een beetje. Ik leer nog.",
+      "translation": "A little bit. I'm still learning."
+    },
+    {
+      "role": "A",
+      "text": "Dat is geen probleem. We helpen je hier.",
+      "translation": "That's no problem. We will help you here."
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel.",
+      "translation": "Thank you very much."
+    },
+    {
+      "role": "A",
+      "text": "Hoe lang leer je al Nederlands?",
+      "translation": "How long have you been learning Dutch?"
+    },
+    {
+      "role": "B",
+      "text": "Ongeveer zes maanden.",
+      "translation": "About six months."
+    },
+    {
+      "role": "A",
+      "text": "Mooi. Begrijp je wat ik nu zeg?",
+      "translation": "Nice. Do you understand what I'm saying now?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, meestal wel, maar soms is het moeilijk.",
+      "translation": "Yes, mostly, but sometimes it is difficult."
+    },
+    {
+      "role": "A",
+      "text": "Dat is normaal. Stel gerust vragen.",
+      "translation": "That's normal. Feel free to ask questions."
+    },
+    {
+      "role": "B",
+      "text": "Dat zal ik doen.",
+      "translation": "I will do that."
+    },
+    {
+      "role": "A",
+      "text": "Heb je al vrienden in de klas?",
+      "translation": "Do you have friends in the class already?"
+    },
+    {
+      "role": "B",
+      "text": "Nog niet, maar ik hoop het snel.",
+      "translation": "Not yet, but I hope so soon."
+    },
+    {
+      "role": "A",
+      "text": "Dat komt goed. Ga gerust naast Emma zitten.",
+      "translation": "That will be fine. Feel free to go sit next to Emma."
+    },
+    {
+      "role": "B",
+      "text": "Oké, dank u wel.",
+      "translation": "Okay, thank you very much."
+    },
+    {
+      "role": "A",
+      "text": "Heb je je boeken bij je?",
+      "translation": "Do you have your books with you?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, alles is in mijn tas.",
+      "translation": "Yes, everything is in my bag."
+    },
+    {
+      "role": "A",
+      "text": "Prima, we beginnen met de les.",
+      "translation": "Great, we will start with the lesson."
+    },
+    {
+      "role": "B",
+      "text": "Ik ben er klaar voor.",
+      "translation": "I am ready for it."
+    }
+  ]
+}

@@ -1,1 +1,81 @@
-{}
+{
+  "dialogue_title": "In het park",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/j-B65xrDRcc",
+  "roles": {
+    "A": "Lisa",
+    "B": "Mark"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Hoi Mark, wat leuk je hier te zien!",
+      "translation": "Hi Mark, how nice to see you here!"
+    },
+    {
+      "role": "B",
+      "text": "Hoi Lisa, ja, ik wandel een beetje in het park.",
+      "translation": "Hi Lisa, yeah, I'm walking a bit in the park."
+    },
+    {
+      "role": "A",
+      "text": "Het weer is vandaag echt mooi.",
+      "translation": "The weather is really beautiful today."
+    },
+    {
+      "role": "B",
+      "text": "Ja, het is zonnig en warm.",
+      "translation": "Yes, it's sunny and warm."
+    },
+    {
+      "role": "A",
+      "text": "Kom je hier vaak?",
+      "translation": "Do you come here often?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, vooral in het weekend.",
+      "translation": "Yes, especially on weekends."
+    },
+    {
+      "role": "A",
+      "text": "Wat doe je hier meestal?",
+      "translation": "What do you usually do here?"
+    },
+    {
+      "role": "B",
+      "text": "Ik wandel, luister naar muziek en soms lees ik een boek.",
+      "translation": "I walk, listen to music, and sometimes I read a book."
+    },
+    {
+      "role": "A",
+      "text": "Dat klinkt ontspannen. En jij, wat doe jij graag in het park?",
+      "translation": "That sounds relaxing. And you, what do you like to do in the park?"
+    },
+    {
+      "role": "B",
+      "text": "Ik zit graag op een bankje en kijk naar de mensen.",
+      "translation": "I like to sit on a bench and watch the people."
+    },
+    {
+      "role": "A",
+      "text": "Dat is ook leuk.",
+      "translation": "That's nice too."
+    },
+    {
+      "role": "B",
+      "text": "Zullen we een stukje samen wandelen?",
+      "translation": "Shall we walk a bit together?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, graag!",
+      "translation": "Yes, gladly!"
+    },
+    {
+      "role": "B",
+      "text": "Perfect, laten we gaan.",
+      "translation": "Perfect, let's go."
+    }
+  ]
+}

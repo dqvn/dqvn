@@ -1,1 +1,106 @@
-{}
+{
+  "dialogue_title": "Taxi Nemen in de Stad",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/SftfmgtGWbo",
+  "roles": {
+    "A": "Passenger (Girl)",
+    "B": "Taxi Driver (Boy)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedenavond, kunt u mij naar het centrum brengen?",
+      "translation": "Good evening, can you take me to the city center?"
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk.",
+      "translation": "Of course."
+    },
+    {
+      "role": "A",
+      "text": "Dank u.",
+      "translation": "Thank you."
+    },
+    {
+      "role": "B",
+      "text": "Heeft u een voorkeur voor de route?",
+      "translation": "Do you have a preference for the route?"
+    },
+    {
+      "role": "A",
+      "text": "Nee, maakt niet uit.",
+      "translation": "No, it doesn't matter."
+    },
+    {
+      "role": "B",
+      "text": "Oké, dan neem ik de snelste weg.",
+      "translation": "Okay, then I'll take the fastest way."
+    },
+    {
+      "role": "A",
+      "text": "Hoe lang duurt het ongeveer?",
+      "translation": "How long will it take approximately?"
+    },
+    {
+      "role": "B",
+      "text": "Ongeveer 15 minuten.",
+      "translation": "About 15 minutes."
+    },
+    {
+      "role": "A",
+      "text": "Perfect.",
+      "translation": "Perfect."
+    },
+    {
+      "role": "B",
+      "text": "Komt u hier vandaan?",
+      "translation": "Are you from here?"
+    },
+    {
+      "role": "A",
+      "text": "Nee, ik ben hier op vakantie.",
+      "translation": "No, I'm here on vacation."
+    },
+    {
+      "role": "B",
+      "text": "Leuk, bevalt de stad?",
+      "translation": "Nice, do you like the city?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, heel erg.",
+      "translation": "Yes, very much."
+    },
+    {
+      "role": "B",
+      "text": "Mooi om te horen.",
+      "translation": "Glad to hear that."
+    },
+    {
+      "role": "B",
+      "text": "We zijn er.",
+      "translation": "We are here."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel.",
+      "translation": "Thank you very much."
+    },
+    {
+      "role": "B",
+      "text": "Dat is €12.",
+      "translation": "That will be €12."
+    },
+    {
+      "role": "A",
+      "text": "Hier is mijn kaart. Dank u. Fijne avond.",
+      "translation": "Here is my card. Thank you. Have a nice evening."
+    },
+    {
+      "role": "B",
+      "text": "U ook.",
+      "translation": "You too."
+    }
+  ]
+}

@@ -1,1 +1,166 @@
-{}
+{
+  "dialogue_title": "Learn Dutch Renting an Apartment",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/bKtGVNd4zhQ",
+  "roles": {
+    "A": "Landlord/Agent (Girl)",
+    "B": "Daniel"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, u bent hier voor de bezichtiging toch?",
+      "translation": "Good afternoon, you are here for the viewing, right?"
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag, ja dat klopt. Bedankt dat ik langs mocht komen.",
+      "translation": "Good afternoon, yes that's correct. Thanks for letting me drop by."
+    },
+    {
+      "role": "A",
+      "text": "Geen probleem. Kunt u uzelf kort voorstellen?",
+      "translation": "No problem. Could you briefly introduce yourself?"
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk. Mijn naam is Daniel, ik werk fulltime als IT-medewerker en ik zoek een appartement in deze buurt.",
+      "translation": "Of course. My name is Daniel, I work full-time as an IT professional and I am looking for an apartment in this neighborhood."
+    },
+    {
+      "role": "A",
+      "text": "Mooi. Woont u nu al in deze stad?",
+      "translation": "Nice. Do you already live in this city?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, maar ik woon momenteel in een gedeeld appartement. Ik wil graag iets voor mezelf.",
+      "translation": "Yes, but I currently live in a shared apartment. I would like something of my own."
+    },
+    {
+      "role": "A",
+      "text": "Begrijpelijk. Dit is een fijne buurt.",
+      "translation": "Understandable. This is a nice neighborhood."
+    },
+    {
+      "role": "B",
+      "text": "Dat klinkt goed. Hoe groot is het appartement?",
+      "translation": "That sounds good. How large is the apartment?"
+    },
+    {
+      "role": "A",
+      "text": "Ongeveer 55 vierkante meter.",
+      "translation": "Approximately 55 square meters."
+    },
+    {
+      "role": "B",
+      "text": "En hoeveel is de huur per maand?",
+      "translation": "And how much is the rent per month?"
+    },
+    {
+      "role": "A",
+      "text": "De huur is €950, exclusief gas, water en elektriciteit.",
+      "translation": "The rent is €950, excluding gas, water, and electricity."
+    },
+    {
+      "role": "B",
+      "text": "Oké, en hoeveel is de borg?",
+      "translation": "Okay, and how much is the deposit?"
+    },
+    {
+      "role": "A",
+      "text": "Twee maanden huur.",
+      "translation": "Two months' rent."
+    },
+    {
+      "role": "B",
+      "text": "Dat is duidelijk. Wilt u het appartement eerst bekijken?",
+      "translation": "That's clear. Would you like to see the apartment first?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, graag.",
+      "translation": "Yes, please."
+    },
+    {
+      "role": "A",
+      "text": "Het appartement is erg licht.",
+      "translation": "The apartment is very bright."
+    },
+    {
+      "role": "B",
+      "text": "Dat vind ik fijn.",
+      "translation": "I like that."
+    },
+    {
+      "role": "A",
+      "text": "Ja, er komt veel zonlicht binnen, vooral in de ochtend. Zijn huisdieren toegestaan?",
+      "translation": "Yes, a lot of sunlight comes in, especially in the morning. Are pets allowed?"
+    },
+    {
+      "role": "B",
+      "text": "Kleine huisdieren wel, maar geen honden.",
+      "translation": "Small pets are, but no dogs."
+    },
+    {
+      "role": "A",
+      "text": "Dat is geen probleem voor mij.",
+      "translation": "That's no problem for me."
+    },
+    {
+      "role": "B",
+      "text": "Goed om te horen. Hoe lang wilt u hier blijven wonen?",
+      "translation": "Good to hear. How long do you want to live here?"
+    },
+    {
+      "role": "A",
+      "text": "Minstens één jaar.",
+      "translation": "At least one year."
+    },
+    {
+      "role": "B",
+      "text": "Het contract is ook voor minimaal één jaar. Wanneer is het appartement beschikbaar?",
+      "translation": "The contract is also for a minimum of one year. When is the apartment available?"
+    },
+    {
+      "role": "A",
+      "text": "Vanaf volgende maand.",
+      "translation": "From next month."
+    },
+    {
+      "role": "B",
+      "text": "Wat heeft u van mij nodig om verder te gaan?",
+      "translation": "What do you need from me to proceed?"
+    },
+    {
+      "role": "A",
+      "text": "Een kopie van uw ID, een bewijs van inkomen en een korte motivatie.",
+      "translation": "A copy of your ID, proof of income, and a short motivational letter."
+    },
+    {
+      "role": "B",
+      "text": "Dat kan ik vandaag nog opsturen.",
+      "translation": "I can send that over today."
+    },
+    {
+      "role": "A",
+      "text": "Prima, dan neem ik binnen een paar dagen contact met u op.",
+      "translation": "Great, then I will contact you within a few days."
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel voor uw tijd en de uitleg.",
+      "translation": "Thank you very much for your time and the explanation."
+    },
+    {
+      "role": "A",
+      "text": "Graag gedaan. Fijne dag verder.",
+      "translation": "You're welcome. Have a nice day."
+    },
+    {
+      "role": "B",
+      "text": "Dank u.",
+      "translation": "Thank you."
+    }
+  ]
+}

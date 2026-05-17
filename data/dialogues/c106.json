@@ -1,1 +1,111 @@
-{}
+{
+  "dialogue_title": "Sollicitatiegesprek Kinderopvang",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/VPQYN_3Q8YY",
+  "roles": {
+    "A": "Interviewer (Boy)",
+    "B": "Applicant (Girl)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen, fijn dat u er bent.",
+      "translation": "Good morning, nice to have you here."
+    },
+    {
+      "role": "B",
+      "text": "Goedemorgen, dank u wel.",
+      "translation": "Good morning, thank you."
+    },
+    {
+      "role": "A",
+      "text": "Kunt u iets over uzelf vertellen?",
+      "translation": "Can you tell us something about yourself?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, ik werk graag met kinderen en heb ervaring in de kinderopvang.",
+      "translation": "Yes, I enjoy working with children and I have experience in childcare."
+    },
+    {
+      "role": "A",
+      "text": "Waarom wilt u hier werken?",
+      "translation": "Why do you want to work here?"
+    },
+    {
+      "role": "B",
+      "text": "Ik vind het belangrijk om kinderen te helpen in hun ontwikkeling.",
+      "translation": "I think it's important to support children in their development."
+    },
+    {
+      "role": "A",
+      "text": "Heeft u al ervaring?",
+      "translation": "Do you already have experience?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, ik heb twee jaar in een kinderopvang gewerkt.",
+      "translation": "Yes, I worked in a childcare center for two years."
+    },
+    {
+      "role": "A",
+      "text": "Hoe gaat u om met moeilijke situaties?",
+      "translation": "How do you handle difficult situations?"
+    },
+    {
+      "role": "B",
+      "text": "Ik blijf rustig en probeer het kind te begrijpen.",
+      "translation": "I stay calm and try to understand the child."
+    },
+    {
+      "role": "A",
+      "text": "Dat klinkt goed.",
+      "translation": "That sounds good."
+    },
+    {
+      "role": "B",
+      "text": "Dank u.",
+      "translation": "Thank you."
+    },
+    {
+      "role": "A",
+      "text": "Werkt u graag in een team?",
+      "translation": "Do you like working in a team?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, ik werk graag samen met collega's.",
+      "translation": "Yes, I enjoy working with colleagues."
+    },
+    {
+      "role": "A",
+      "text": "Heeft u nog vragen?",
+      "translation": "Do you have any questions?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, hoe ziet een werkdag eruit?",
+      "translation": "Yes, what does a typical workday look like?"
+    },
+    {
+      "role": "A",
+      "text": "Dat leggen we u graag uit.",
+      "translation": "We will gladly explain that."
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel.",
+      "translation": "Thank you."
+    },
+    {
+      "role": "A",
+      "text": "We nemen snel contact met u op.",
+      "translation": "We will contact you soon."
+    },
+    {
+      "role": "B",
+      "text": "Bedankt.",
+      "translation": "Thank you."
+    }
+  ]
+}

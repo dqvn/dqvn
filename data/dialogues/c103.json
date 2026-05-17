@@ -1,1 +1,86 @@
-{}
+{
+  "dialogue_title": "Met een Vriend op de Weekmarkt",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/_nxQVS8qnpQ",
+  "roles": {
+    "A": "Girl",
+    "B": "Boy"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Hey, leuk dat je mee bent naar de markt!",
+      "translation": "Hey, nice that you came to the market with me!"
+    },
+    {
+      "role": "B",
+      "text": "Ja, ik kom hier niet zo vaak.",
+      "translation": "Yes, I don't come here very often."
+    },
+    {
+      "role": "A",
+      "text": "Kijk, die groenten zien er vers uit.",
+      "translation": "Look, those vegetables look fresh."
+    },
+    {
+      "role": "B",
+      "text": "Ja, echt mooi.",
+      "translation": "Yes, really nice."
+    },
+    {
+      "role": "A",
+      "text": "Ik ga tomaten kopen.",
+      "translation": "I'm going to buy tomatoes."
+    },
+    {
+      "role": "B",
+      "text": "Goede keuze.",
+      "translation": "Good choice."
+    },
+    {
+      "role": "A",
+      "text": "Wil jij ook iets kopen?",
+      "translation": "Do you want to buy something too?"
+    },
+    {
+      "role": "B",
+      "text": "Misschien wat fruit. Daar is een kraam met appels.",
+      "translation": "Maybe some fruit. There is a stall with apples."
+    },
+    {
+      "role": "B",
+      "text": "Oh ja, die zien er lekker uit. Sullen we daarheen gaan?",
+      "translation": "Oh yes, they look tasty. Shall we go there?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, laten we gaan.",
+      "translation": "Yes, let's go."
+    },
+    {
+      "role": "A",
+      "text": "Hoeveel neem jij?",
+      "translation": "How much will you take?"
+    },
+    {
+      "role": "B",
+      "text": "Ik neem een kilo appels.",
+      "translation": "I'll take one kilo of apples."
+    },
+    {
+      "role": "B",
+      "text": "Ja, leuk. Ik neem ook wat aardbeien.",
+      "translation": "That's nice. I'll take some strawberries too."
+    },
+    {
+      "role": "A",
+      "text": "Goed idee. Sullen we daarna koffie drinken?",
+      "translation": "Good idea. Shall we have coffee afterwards?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, leuk! Ik heb er zin in.",
+      "translation": "Yes, nice! I'm looking forward to it."
+    }
+  ]
+}

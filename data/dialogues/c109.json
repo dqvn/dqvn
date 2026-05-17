@@ -1,1 +1,76 @@
-{}
+{
+  "dialogue_title": "Een film kiezen",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/48qX8Z_QczY",
+  "roles": {
+    "A": "Girl",
+    "B": "David"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Hoi David, heb je zin om vanavond een film te kijken?",
+      "translation": "Hi David, do you feel like watching a movie tonight?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, dat lijkt me leuk. Wat voor film wil je zien?",
+      "translation": "Yes, that sounds fun. What kind of movie do you want to see?"
+    },
+    {
+      "role": "A",
+      "text": "Misschien een komedie.",
+      "translation": "Maybe a comedy."
+    },
+    {
+      "role": "B",
+      "text": "Goed idee. Ik wil iets grappigs zien.",
+      "translation": "Good idea. I want to see something funny."
+    },
+    {
+      "role": "A",
+      "text": "Of misschien een avonturenfilm?",
+      "translation": "Or maybe an adventure movie?"
+    },
+    {
+      "role": "B",
+      "text": "Dat kan ook. Waar willen we de film kijken?",
+      "translation": "That's possible too. Where do we want to watch the movie?"
+    },
+    {
+      "role": "A",
+      "text": "We kunnen naar de bioscoop gaan. Of we kijken thuis een film.",
+      "translation": "We could go to the cinema. Or we can watch a movie at home."
+    },
+    {
+      "role": "B",
+      "text": "Thuis is ook gezellig. Heb je een film in gedachten?",
+      "translation": "At home is cozy too. Do you have a movie in mind?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, ik heb een nieuwe film op Netflix gezien.",
+      "translation": "Yes, I saw a new movie on Netflix."
+    },
+    {
+      "role": "B",
+      "text": "Perfect, hoe laat beginnen we?",
+      "translation": "Perfect, what time do we start?"
+    },
+    {
+      "role": "A",
+      "text": "Misschien om acht uur?",
+      "translation": "Maybe at eight o'clock?"
+    },
+    {
+      "role": "B",
+      "text": "Goed plan, ik neem snacks mee.",
+      "translation": "Good plan, I'll bring snacks."
+    },
+    {
+      "role": "A",
+      "text": "En ik maak popcorn!",
+      "translation": "And I'll make popcorn!"
+    }
+  ]
+}

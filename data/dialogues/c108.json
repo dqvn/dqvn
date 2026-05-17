@@ -1,1 +1,96 @@
-{}
+{
+  "dialogue_title": "Sportschool Inschrijven",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/ejyZshSuVWw",
+  "roles": {
+    "A": "Customer (Boy)",
+    "B": "Receptionist (Girl)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, ik wil me graag inschrijven.",
+      "translation": "Good afternoon, I would like to sign up."
+    },
+    {
+      "role": "B",
+      "text": "Goedemiddag, dat kan. Bent u al eerder lid geweest?",
+      "translation": "Good afternoon, that's possible. Have you been a member before?"
+    },
+    {
+      "role": "A",
+      "text": "Nee, dit is de eerste keer.",
+      "translation": "No, this is my first time."
+    },
+    {
+      "role": "B",
+      "text": "Oké, wilt u een maandabonnement of een jaarabonnement?",
+      "translation": "Okay, would you like a monthly subscription or a yearly subscription?"
+    },
+    {
+      "role": "A",
+      "text": "Wat is het verschil?",
+      "translation": "What is the difference?"
+    },
+    {
+      "role": "B",
+      "text": "Een jaarabonnement is goedkoper per maand.",
+      "translation": "A yearly subscription is cheaper per month."
+    },
+    {
+      "role": "A",
+      "text": "Dan kies ik voor een jaar.",
+      "translation": "Then I'll choose a year."
+    },
+    {
+      "role": "B",
+      "text": "Goede keuze.",
+      "translation": "Good choice."
+    },
+    {
+      "role": "A",
+      "text": "Wat kost het?",
+      "translation": "How much does it cost?"
+    },
+    {
+      "role": "B",
+      "text": "Dertig per maand.",
+      "translation": "Thirty per month."
+    },
+    {
+      "role": "A",
+      "text": "Oké.",
+      "translation": "Okay."
+    },
+    {
+      "role": "B",
+      "text": "Ik heb nog wat gegevens nodig.",
+      "translation": "I need some details."
+    },
+    {
+      "role": "A",
+      "text": "Natuurlijk.",
+      "translation": "Of course."
+    },
+    {
+      "role": "B",
+      "text": "Hier moet u even tekenen.",
+      "translation": "Please sign here."
+    },
+    {
+      "role": "A",
+      "text": "In orde.",
+      "translation": "Alright."
+    },
+    {
+      "role": "B",
+      "text": "Welkom bij de sportschool.",
+      "translation": "Welcome to the gym."
+    },
+    {
+      "role": "A",
+      "text": "Dank u.",
+      "translation": "Thank you."
+    }
+  ]
+}

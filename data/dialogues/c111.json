@@ -1,1 +1,106 @@
-{}
+{
+  "dialogue_title": "Over het dagelijks leven praten",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/-PQ4dHhtRvM",
+  "roles": {
+    "A": "Emma",
+    "B": "Mark"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Hoi Mark, hoe gaat het met je?",
+      "translation": "Hi Mark, how are you doing?"
+    },
+    {
+      "role": "B",
+      "text": "Hoi Emma, het gaat goed dank je. En met jou?",
+      "translation": "Hi Emma, I'm doing well, thank you. And you?"
+    },
+    {
+      "role": "A",
+      "text": "Ook goed. Hoe ziet jouw dag er meestal uit?",
+      "translation": "Good too. What does your day usually look like?"
+    },
+    {
+      "role": "B",
+      "text": "Ik sta meestal om zeven uur op.",
+      "translation": "I usually get up at seven o'clock."
+    },
+    {
+      "role": "A",
+      "text": "Dat is vroeg!",
+      "translation": "That's early!"
+    },
+    {
+      "role": "B",
+      "text": "Ja, maar ik begin mijn werk om acht uur.",
+      "translation": "Yes, but I start my work at eight o'clock."
+    },
+    {
+      "role": "A",
+      "text": "Werk je op kantoor?",
+      "translation": "Do you work in an office?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, ik werk op kantoor in het centrum.",
+      "translation": "Yes, I work in an office in the city center."
+    },
+    {
+      "role": "A",
+      "text": "Interessant. Wat doe je na het werk?",
+      "translation": "Interesting. What do you do after work?"
+    },
+    {
+      "role": "B",
+      "text": "Na het werk ga ik vaak naar de sportschool.",
+      "translation": "After work, I often go to the gym."
+    },
+    {
+      "role": "A",
+      "text": "Dat is gezond.",
+      "translation": "That's healthy."
+    },
+    {
+      "role": "B",
+      "text": "En jij? Wat doe jij meestal na het werk?",
+      "translation": "And you? What do you usually do after work?"
+    },
+    {
+      "role": "A",
+      "text": "Ik kook meestal avondeten en kijk daarna een serie.",
+      "translation": "I usually cook dinner and watch a series afterwards."
+    },
+    {
+      "role": "B",
+      "text": "Kook je graag?",
+      "translation": "Do you like to cook?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, vooral gezonde gerechten.",
+      "translation": "Yes, especially healthy dishes."
+    },
+    {
+      "role": "B",
+      "text": "Dat klinkt lekker!",
+      "translation": "That sounds delicious!"
+    },
+    {
+      "role": "A",
+      "text": "In het weekend probeer ik ook nieuwe recepten.",
+      "translation": "On weekends, I also try out new recipes."
+    },
+    {
+      "role": "B",
+      "text": "Misschien moet je een keer voor mij koken.",
+      "translation": "Maybe you should cook for me sometime."
+    },
+    {
+      "role": "A",
+      "text": "Misschien wel.",
+      "translation": "Maybe."
+    }
+  ]
+}
