@@ -428,8 +428,10 @@ function createGroup(groupKey, files) {
     title.classList.add('group-title');
     title.textContent = _groupTitles.get(groupKey) || groupKey;
     title.addEventListener('click', () => {
+        const nested = li.querySelector('.nested-list');
+        const wasOpen = nested.classList.contains('open');
         document.querySelectorAll('.nested-list').forEach(l => l.classList.remove('open'));
-        li.querySelector('.nested-list').classList.toggle('open');
+        if (!wasOpen) nested.classList.add('open');
     });
 
     const ul = document.createElement('ul');
