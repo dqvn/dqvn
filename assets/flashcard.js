@@ -1,6 +1,6 @@
 /* Flashcard game — SM-2 spaced repetition for Dutch vocabulary */
 (function () {
-  'use strict';
+  'use strict'; 
 
   const FC_KEY       = 'nl_srs_v3';
   const FC_META_KEY  = 'nl_srs_meta_v3';
@@ -11,7 +11,7 @@
   const DEF_EASE     = 2.5;
   const DAY          = 86400000;
 
-  /* ── State ──────────────────────────────────────────────────────────────── */
+  /* ── State ────────────────────────────────────────────────────────────────-- */
   const fc = {
     cards: [], index: 0, flipped: false,
     stats: { hard: 0, good: 0, easy: 0, total: 0 },
