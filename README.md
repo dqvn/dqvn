@@ -84,6 +84,27 @@ new → learning → review → relearning (lapse) → review
 ### In-session requeue
 Hard cards are re-inserted 2–4 positions ahead (max 2 requeues per card per session).
 
+### Mastery progression (why 0% is normal at first)
+A word only counts as **Mastered** when `state === 'review' && interval >= 21`. The interval grows by multiplying by the ease factor (default 2.5) on each Good rating — but cards only reappear after their `nextDue` date, so mastery requires real calendar days:
+
+| Day | Rating | Interval |
+|---|---|---|
+| 0 | New → Good | 1 day |
+| 1 | Review → Good | 3 days |
+| 4 | Review → Good | 8 days |
+| 12 | Review → Good | 20 days |
+| 32 | Review → Good | **50 days ✅ Mastered** |
+
+Minimum ~5 Good ratings over ~32 days before a word reaches Mastered. Study daily; rate Easy on words you know instantly to grow intervals faster.
+
+### Auto-TTS flow on card flip
+1. Card flips → English word spoken via `speakEngText` (450ms after flip)
+2. `DUTCH_SENTENCE_DELAY` (1000ms) later → Dutch example sentence spoken via `speakText`
+3. Unflipping → Dutch word re-read automatically (450ms after unflip)
+
+### Hide-meaning toggle
+`#hide-meaning-btn` in `<header>` (top-right, position:absolute). Click toggles 👁️ ↔ 🙈, hides/shows `.hide-text` spans (English, Vietnamese, sample translation). Resets to 👁️ on lesson change. Driven by `hideMeaning` boolean + `hideMeaningBtn` in `common.js`.
+
 ---
 
 ## Dialogues — `dialogues.html`
@@ -129,6 +150,7 @@ body
 | TTS flow | TTS reads other roles → green "Done" button → advance |
 | Repeat | 🔁 replays last TTS line |
 | Dialogue cache | IDs plaintext (`nl_dlg_ids_1`), content AES-256-GCM encrypted (`nl_dlg_enc_1`) |
+| Cache TTL | 7 days — if cache age > 7 days and `navigator.onLine`, `_backgroundRefresh` silently re-fetches all files and shows "🔄 bijgewerkt" toast |
 | Encryption | PBKDF2 (60k iter, SHA-256) key derivation; key cached in memory |
 | Keyboard | `Space`=Done, `R`=Repeat, `Esc`=close drawer |
 | Celebration | Compact overlay with "Nog een keer" / ✕ |
@@ -147,11 +169,15 @@ tts           // { active, line, waitUser }
 
 ## CSS conventions
 - Mobile breakpoint: `@media (max-width: 768px)`
-- Left menu width: `270px`
+- Left menu width: `270px` (mobile drawer) / `160px` (desktop panel)
+- Desktop layout: `body` flex-column → `header` + `.container` (flex-row, `flex:1`, `overflow:hidden`) → `.left-menu` + `.table-container`
+- `.left-menu` desktop: `display:flex; flex-direction:column; overflow:hidden` — stretches full height; second `.spacer` gets `flex:1` so file-list fills space and footer stays at bottom
+- `.table-container`: `flex:1; min-height:0; overflow-y:auto` — fills remaining width/height without hardcoded `dvh`
 - Table → glassmorphism card layout on mobile (`display:block`, `backdrop-filter:blur(14px)`)
-- `height: 100%` on `.table-container` (flex child, fills `100dvh − header`)
 - `100dvh` (dynamic viewport) used throughout to fix iOS Safari chrome clipping
 - Hamburger button shifts to `left: calc(270px − 44px − 10px)` when menu is open on mobile
+- Header: desktop `padding:14px 20px 10px`, `h1:1.9rem`, `h3:0.95rem`; mobile `padding:4px 12px 2px`, `h1:1.05rem`, `h3:0.7rem`; `position:relative` to anchor `.hdr-toggle-btn`
+- `.fc-sentence-speak-btn`: `min-width/height:44px`, `padding:10px`, `font-size:1.4rem` (Apple minimum touch target)
 
 ---
 
