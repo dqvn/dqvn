@@ -2075,11 +2075,15 @@ button:hover {
 #fc-back.fc-visible { display: flex; }
 
 #fc-english {
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(1.4rem, 5vw, 3rem);
     font-weight: 800;
     color: #16a34a;
-    line-height: 1.1;
+    line-height: 1.2;
     letter-spacing: -0.01em;
+    width: 100%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 #fc-vietnamese {
     font-size: 1.2rem;
@@ -2634,7 +2638,7 @@ button:hover {
         overflow-y: auto;
     }
 
-    #fc-english      { font-size: clamp(2.4rem, 10vw, 3.4rem); }
+    #fc-english      { font-size: clamp(1.4rem, 8vw, 3rem); }
     #fc-vietnamese   { font-size: 1.1rem; }
     #fc-sentence-nl  { font-size: 1.05rem; }
     #fc-sentence-en  { font-size: 0.78rem; }

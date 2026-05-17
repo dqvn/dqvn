@@ -602,9 +602,11 @@
     if (absDx < 12 && absDy < 12) {
       e.preventDefault(); // suppress the synthetic mouse click that follows touchend
       if (!fc.flipped) {
-        if (!e.target.closest('#fc-speak-btn')) flipCard();
+        if (e.target.closest('#fc-speak-btn')) speakCurrent();
+        else flipCard();
       } else {
-        if (!e.target.closest('#fc-sentence-speak-btn')) unflipCard();
+        if (e.target.closest('#fc-sentence-speak-btn')) speakSentence();
+        else unflipCard();
       }
     }
   }
