@@ -180,9 +180,10 @@ td:last-child {
     float: left;
     width: 160px;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
     transition: transform 0.3s ease, width 0.3s ease;
     padding: 10px;
-    /* background-color: #f0f0f0; */
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -190,10 +191,7 @@ td:last-child {
     -webkit-backdrop-filter: blur(3px);
     margin-left: 15px;
     margin-right: 15px;
-    position: sticky;
-    top: 0;
-    height: fit-content;
-    align-self: flex-start; /* don't stretch — stick to content height so sticky works */
+    overflow: hidden;  /* inner file-container scrolls; menu itself doesn't */
     z-index: 1;
 }
 
@@ -393,6 +391,21 @@ td:last-child {
     color: #233d91;
 }
 
+/* Desktop: Dutch Courses spacer fills remaining height; file-list scrolls within */
+.left-menu > .spacer:last-of-type {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.left-menu > .spacer:last-of-type .file-container {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    height: auto;
+}
+
 .spacer {
     margin-bottom: 20px;
     color: #00698f;
@@ -400,7 +413,9 @@ td:last-child {
 }
 
 .container {
-    overflow-y: auto;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden; /* children scroll independently */
 }
 
 #chapter {
