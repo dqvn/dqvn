@@ -1,0 +1,71 @@
+{
+  "dialogue_title": "Praten met de Buschauffeur – Nederlands Gesprek",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/fs13kfIqgas",
+  "roles": {
+    "A": "Passenger (Woman)",
+    "B": "Bus Driver (Man)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen.",
+      "translation": "Good morning."
+    },
+    {
+      "role": "B",
+      "text": "Goedemorgen.",
+      "translation": "Good morning."
+    },
+    {
+      "role": "A",
+      "text": "Gaat deze bus naar het centrum?",
+      "translation": "Does this bus go to the city center?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, over ongeveer twintig minuten.",
+      "translation": "Yes, in about twenty minutes."
+    },
+    {
+      "role": "A",
+      "text": "Moet ik hierin inchecken?",
+      "translation": "Do I need to check in here?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, met uw OV-chipkaart.",
+      "translation": "Yes, with your OV-chipcard."
+    },
+    {
+      "role": "A",
+      "text": "Dank u.",
+      "translation": "Thank you."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem. Waar moet u eruit?",
+      "translation": "No problem. Where do you need to get off?"
+    },
+    {
+      "role": "A",
+      "text": "Bij Centraal Station.",
+      "translation": "At Central Station."
+    },
+    {
+      "role": "B",
+      "text": "Dan moet u bij de vierde halte uitstappen.",
+      "translation": "Then you need to get off at the fourth stop."
+    },
+    {
+      "role": "A",
+      "text": "Oké, bedankt voor de hulp.",
+      "translation": "Okay, thanks for the help."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan. Centraal Station! Fijne dag verder!",
+      "translation": "You're welcome. Central Station! Have a nice day!"
+    }
+  ]
+}

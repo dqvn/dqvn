@@ -1,0 +1,96 @@
+{
+  "dialogue_title": "Autopech Onderweg – Nederlandse Conversatie",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/CSAPbUIM9LE",
+  "roles": {
+    "A": "Driver (Woman)",
+    "B": "Roadside Assistance Worker (Man)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemiddag, mijn auto doet het niet meer.",
+      "translation": "Good afternoon, my car stopped working."
+    },
+    {
+      "role": "B",
+      "text": "Wat is er gebeurd?",
+      "translation": "What happened?"
+    },
+    {
+      "role": "A",
+      "text": "De motor stopte ineens.",
+      "translation": "The engine suddenly stopped."
+    },
+    {
+      "role": "B",
+      "text": "Begrijp ik. Heeft u vreemde geluiden gehoord?",
+      "translation": "I understand. Did you hear strange noises?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, vlak voordat de auto stopte.",
+      "translation": "Yes, right before the car stopped."
+    },
+    {
+      "role": "B",
+      "text": "Oké, ik zal even kijken.",
+      "translation": "Okay, I'll take a look."
+    },
+    {
+      "role": "A",
+      "text": "Dank u, ik maak me zorgen.",
+      "translation": "Thank you, I'm worried."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem, we lossen het op.",
+      "translation": "No problem, we'll solve it."
+    },
+    {
+      "role": "B",
+      "text": "Het lijkt op een probleem met de batterij.",
+      "translation": "It looks like a problem with the battery."
+    },
+    {
+      "role": "A",
+      "text": "Is dat ernstig?",
+      "translation": "Is that serious?"
+    },
+    {
+      "role": "B",
+      "text": "Nee, waarschijnlijk niet.",
+      "translation": "No, probably not."
+    },
+    {
+      "role": "A",
+      "text": "Hoe lang duurt de reparatie?",
+      "translation": "How long will the repair take?"
+    },
+    {
+      "role": "B",
+      "text": "Ongeveer twintig minuten.",
+      "translation": "About twenty minutes."
+    },
+    {
+      "role": "A",
+      "text": "Dat valt mee.",
+      "translation": "That's not too bad."
+    },
+    {
+      "role": "B",
+      "text": "U kunt straks weer rijden.",
+      "translation": "You'll be able to drive again soon."
+    },
+    {
+      "role": "A",
+      "text": "Bedankt voor uw hulp.",
+      "translation": "Thank you for your help."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan.",
+      "translation": "You're welcome."
+    }
+  ]
+}

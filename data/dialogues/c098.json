@@ -1,0 +1,86 @@
+{
+  "dialogue_title": "Een Kind Inschrijven op School – Nederlandse Conversatie",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/400fs5h44_Y",
+  "roles": {
+    "A": "Father (Man)",
+    "B": "School Employee (Woman)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen, ik wil mijn kind graag inschrijven.",
+      "translation": "Good morning, I would like to register my child."
+    },
+    {
+      "role": "B",
+      "text": "Goedemorgen, natuurlijk. Dank u wel. Hoe oud is uw kind?",
+      "translation": "Good morning, of course. Thank you very much. How old is your child?"
+    },
+    {
+      "role": "A",
+      "text": "Hij is zes jaar oud.",
+      "translation": "He is six years old."
+    },
+    {
+      "role": "B",
+      "text": "Oké, heeft u de benodigde documenten meegebracht?",
+      "translation": "Okay, did you bring the required documents?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, hier zijn ze.",
+      "translation": "Yes, here they are."
+    },
+    {
+      "role": "B",
+      "text": "Dank u. Heeft uw kind al eerder op school gezeten?",
+      "translation": "Thank you. Has your child attended school before?"
+    },
+    {
+      "role": "A",
+      "text": "Nee, dit wordt zijn eerste school.",
+      "translation": "No, this will be his first school."
+    },
+    {
+      "role": "B",
+      "text": "Dat is spannend.",
+      "translation": "That's exciting."
+    },
+    {
+      "role": "A",
+      "text": "Ja, hij is een beetje zenuwachtig.",
+      "translation": "Yes, he is a little nervous."
+    },
+    {
+      "role": "B",
+      "text": "Dat is heel normaal. Wanneer kan hij beginnen?",
+      "translation": "That is completely normal. When can he start?"
+    },
+    {
+      "role": "B",
+      "text": "Volgende maand.",
+      "translation": "Next month."
+    },
+    {
+      "role": "A",
+      "text": "Perfect.",
+      "translation": "Perfect."
+    },
+    {
+      "role": "B",
+      "text": "We sturen u alle informatie per e-mail.",
+      "translation": "We will send you all the information by email."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel.",
+      "translation": "Thank you very much."
+    },
+    {
+      "role": "B",
+      "text": "Graag gedaan.",
+      "translation": "You're welcome."
+    }
+  ]
+}

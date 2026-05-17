@@ -1,0 +1,81 @@
+{
+  "dialogue_title": "Natuurlijk Nederlands gesprek onder het afdakje",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/_2CQLbLnIRE",
+  "roles": {
+    "A": "Boy in jacket",
+    "B": "Girl with umbrella"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Poeh, wat een regen ineens.",
+      "translation": "Wow, what sudden rain."
+    },
+    {
+      "role": "B",
+      "text": "Ja, typisch Nederlands weer. Gelukkig staat hier een bushokje.",
+      "translation": "Yes, typical Dutch weather. Luckily there's a bus shelter here."
+    },
+    {
+      "role": "B",
+      "text": "Anders waren we helemaal nat geworden.",
+      "translation": "Otherwise we would have gotten completely soaked."
+    },
+    {
+      "role": "A",
+      "text": "Ik ben alsnog een beetje nat.",
+      "translation": "I still got a little wet."
+    },
+    {
+      "role": "B",
+      "text": "Haha, ik ook.",
+      "translation": "Haha, me too."
+    },
+    {
+      "role": "A",
+      "text": "Denk je dat het snel stopt?",
+      "translation": "Do you think it will stop soon?"
+    },
+    {
+      "role": "B",
+      "text": "Moeilijk te zeggen. Had jij een paraplu meegenomen?",
+      "translation": "Hard to say. Did you bring an umbrella?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, maar veel helpt het niet met deze wind.",
+      "translation": "Yes, but it doesn't help much with this wind."
+    },
+    {
+      "role": "A",
+      "text": "Dat klopt.",
+      "translation": "That's true."
+    },
+    {
+      "role": "B",
+      "text": "Moet je nog ver reizen?",
+      "translation": "Do you still have far to travel?"
+    },
+    {
+      "role": "A",
+      "text": "Nee, gelukkig maar tien minuten fietsen.",
+      "translation": "No, luckily only ten minutes by bike."
+    },
+    {
+      "role": "B",
+      "text": "Dat valt mee.",
+      "translation": "That's not too bad."
+    },
+    {
+      "role": "A",
+      "text": "Hopelijk wordt het straks droger.",
+      "translation": "Hopefully it will clear up later."
+    },
+    {
+      "role": "B",
+      "text": "Laten we het hopen.",
+      "translation": "Let's hope so."
+    }
+  ]
+}

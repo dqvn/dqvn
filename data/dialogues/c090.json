@@ -1,0 +1,101 @@
+{
+  "dialogue_title": "Bij de Orthopedist voor Rugpijn – Nederlandse Conversatie",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/VngZ4gV_Vr8",
+  "roles": {
+    "A": "Orthopedist (Doctor - Woman)",
+    "B": "Patient (Man)"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Goedemorgen, wat kan ik voor u doen?",
+      "translation": "Good morning, what can I do for you?"
+    },
+    {
+      "role": "B",
+      "text": "Ik heb last van mijn rug.",
+      "translation": "I have pain in my back."
+    },
+    {
+      "role": "A",
+      "text": "Sinds wanneer heeft u pijn?",
+      "translation": "Since when have you had pain?"
+    },
+    {
+      "role": "B",
+      "text": "Sinds een paar weken.",
+      "translation": "Since a few weeks ago."
+    },
+    {
+      "role": "A",
+      "text": "Waar precies doet het pijn?",
+      "translation": "Where exactly does it hurt?"
+    },
+    {
+      "role": "B",
+      "text": "Vooral onderin mijn rug.",
+      "translation": "Mostly in my lower back."
+    },
+    {
+      "role": "A",
+      "text": "Heeft u zwaar getild?",
+      "translation": "Have you lifted heavy things?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, op mijn werk.",
+      "translation": "Yes, at work."
+    },
+    {
+      "role": "A",
+      "text": "Begrijpelijk. Doet het pijn als u beweegt?",
+      "translation": "Understandable. Does it hurt when you move?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, vooral als ik buk.",
+      "translation": "Yes, especially when I bend down."
+    },
+    {
+      "role": "A",
+      "text": "Oké, ik ga uw rug even onderzoeken.",
+      "translation": "Okay, I'm going to examine your back."
+    },
+    {
+      "role": "A",
+      "text": "Uw spieren zijn erg gespannen.",
+      "translation": "Your muscles are very tense."
+    },
+    {
+      "role": "B",
+      "text": "Is het ernstig?",
+      "translation": "Is it serious?"
+    },
+    {
+      "role": "A",
+      "text": "Nee, maar u moet rust nemen.",
+      "translation": "No, but you need to rest."
+    },
+    {
+      "role": "B",
+      "text": "Heb ik medicijnen nodig?",
+      "translation": "Do I need medication?"
+    },
+    {
+      "role": "A",
+      "text": "Ik geef u oefeningen en eventueel pijnstillers.",
+      "translation": "I'll give you exercises and possibly painkillers."
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel, dokter.",
+      "translation": "Thank you very much, doctor."
+    },
+    {
+      "role": "A",
+      "text": "Graag gedaan. Veel beterschap.",
+      "translation": "You're welcome. Get well soon."
+    }
+  ]
+}

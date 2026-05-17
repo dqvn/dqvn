@@ -1,0 +1,96 @@
+{
+  "dialogue_title": "Over Vakantie Praten – Nederlands Dagelijks Gesprek",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/lVrogdLRsUw",
+  "roles": {
+    "A": "Blonde woman in green shirt",
+    "B": "Brunette man in blue shirt"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Heb jij al plannen voor de zomervakantie?",
+      "translation": "Do you already have plans for the summer vacation?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, ik wil misschien naar Spanje gaan.",
+      "translation": "Yes, I might go to Spain."
+    },
+    {
+      "role": "A",
+      "text": "Echt? Dat klinkt leuk!",
+      "translation": "Really? That sounds nice!"
+    },
+    {
+      "role": "B",
+      "text": "Ja, ik wil graag naar het strand.",
+      "translation": "Yes, I really want to go to the beach."
+    },
+    {
+      "role": "A",
+      "text": "Met wie ga je?",
+      "translation": "Who are you going with?"
+    },
+    {
+      "role": "B",
+      "text": "Met een paar vrienden.",
+      "translation": "With a few friends."
+    },
+    {
+      "role": "A",
+      "text": "Hoe lang blijven jullie?",
+      "translation": "How long will you stay?"
+    },
+    {
+      "role": "B",
+      "text": "Ongeveer twee weken.",
+      "translation": "About two weeks."
+    },
+    {
+      "role": "A",
+      "text": "Heerlijk! En jij? Heb jij plannen?",
+      "translation": "Lovely! And you? Do you have plans?"
+    },
+    {
+      "role": "A",
+      "text": "Ik denk eraan om in Nederland te blijven.",
+      "translation": "I'm thinking about staying in the Netherlands."
+    },
+    {
+      "role": "B",
+      "text": "Ook gezellig.",
+      "translation": "That's nice too."
+    },
+    {
+      "role": "A",
+      "text": "Misschien ga ik een paar dagen naar zee.",
+      "translation": "Maybe I'll go to the seaside for a few days."
+    },
+    {
+      "role": "B",
+      "text": "Dat is altijd leuk in de zomer.",
+      "translation": "That's always nice in summer."
+    },
+    {
+      "role": "A",
+      "text": "Zeker weten. Heb je al een hotel geboekt?",
+      "translation": "Definitely. Have you already booked a hotel?"
+    },
+    {
+      "role": "A",
+      "text": "Nog niet, maar ik kijk online.",
+      "translation": "Not yet, but I'm looking online."
+    },
+    {
+      "role": "B",
+      "text": "Dan moet je snel zijn.",
+      "translation": "Then you should be quick."
+    },
+    {
+      "role": "A",
+      "text": "Ja, alles wordt snel vol.",
+      "translation": "Yes, everything gets fully booked quickly."
+    }
+  ]
+}

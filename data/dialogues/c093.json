@@ -1,0 +1,81 @@
+{
+  "dialogue_title": "Wandelen in het Park – Nederlands Gesprek met een Vriend",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/AE76v1cXBlc",
+  "roles": {
+    "A": "Girl in white sweater",
+    "B": "Boy in brown jacket"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Wat is het mooi weer vandaag!",
+      "translation": "The weather is beautiful today!"
+    },
+    {
+      "role": "B",
+      "text": "Ja, perfect om buiten te wandelen. Ik kom graag naar dit park.",
+      "translation": "Yes, perfect for a walk outside. I like coming to this park."
+    },
+    {
+      "role": "A",
+      "text": "Ik ook. Het is hier altijd rustig. Kijk naar die bloemen daar.",
+      "translation": "Me too. It's always peaceful here. Look at those flowers over there."
+    },
+    {
+      "role": "B",
+      "text": "Ze zien er prachtig uit.",
+      "translation": "They look beautiful."
+    },
+    {
+      "role": "A",
+      "text": "Kom je hier vaak?",
+      "translation": "Do you come here often?"
+    },
+    {
+      "role": "B",
+      "text": "Meestal in het weekend.",
+      "translation": "Usually on weekends."
+    },
+    {
+      "role": "A",
+      "text": "Begrijpelijk.",
+      "translation": "Understandable."
+    },
+    {
+      "role": "B",
+      "text": "Hoe gaat het eigenlijk met je werk?",
+      "translation": "How is work going actually?"
+    },
+    {
+      "role": "A",
+      "text": "Best goed, maar soms een beetje druk.",
+      "translation": "Pretty good, but sometimes a bit busy."
+    },
+    {
+      "role": "B",
+      "text": "Ja, dat herken ik.",
+      "translation": "Yes, I understand that."
+    },
+    {
+      "role": "A",
+      "text": "Daarom is het fijn om even buiten te zijn.",
+      "translation": "That's why it's nice to be outside for a while."
+    },
+    {
+      "role": "B",
+      "text": "Absoluut.",
+      "translation": "Absolutely."
+    },
+    {
+      "role": "A",
+      "text": "Zullen we straks ergens koffie drinken?",
+      "translation": "Shall we get coffee later?"
+    },
+    {
+      "role": "B",
+      "text": "Goed idee. Gezellig.",
+      "translation": "Good idea. Nice."
+    }
+  ]
+}

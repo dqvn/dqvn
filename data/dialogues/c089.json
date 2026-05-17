@@ -1,0 +1,81 @@
+{
+  "dialogue_title": "Een Uitstapje Plannen – Nederlands Gesprek met Vrienden",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/aJ4ZSFZkJ6I",
+  "roles": {
+    "A": "Girl in green sweater",
+    "B": "Boy in blue shirt"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Heb je plannen voor het weekend?",
+      "translation": "Do you have plans for the weekend?"
+    },
+    {
+      "role": "B",
+      "text": "Nog niet. Waarom?",
+      "translation": "Not yet. Why?"
+    },
+    {
+      "role": "A",
+      "text": "Misschien kunnen we een uitstapje maken.",
+      "translation": "Maybe we can go on a trip."
+    },
+    {
+      "role": "B",
+      "text": "Goed idee! Waar wil je naartoe?",
+      "translation": "Good idea! Where do you want to go?"
+    },
+    {
+      "role": "A",
+      "text": "Misschien naar het strand. Dat klinkt leuk. Of liever een stad bezoeken?",
+      "translation": "Maybe to the beach. That sounds nice. Or would you rather visit a city?"
+    },
+    {
+      "role": "B",
+      "text": "Hmm, een dagje strand lijkt me beter.",
+      "translation": "Hmm, a day at the beach sounds better to me."
+    },
+    {
+      "role": "A",
+      "text": "Oké, we kunnen vroeg vertrekken.",
+      "translation": "Okay, we can leave early."
+    },
+    {
+      "role": "B",
+      "text": "Ja, dan is het nog rustig.",
+      "translation": "Yes, then it will still be quiet."
+    },
+    {
+      "role": "A",
+      "text": "Zullen we eten meenemen?",
+      "translation": "Shall we bring food?"
+    },
+    {
+      "role": "B",
+      "text": "Goed idee, dan kunnen we picknicken.",
+      "translation": "Good idea, then we can have a picnic."
+    },
+    {
+      "role": "A",
+      "text": "Perfect.",
+      "translation": "Perfect."
+    },
+    {
+      "role": "B",
+      "text": "Hoe gaan we daarheen?",
+      "translation": "How will we get there?"
+    },
+    {
+      "role": "A",
+      "text": "Misschien met de trein.",
+      "translation": "Maybe by train."
+    },
+    {
+      "role": "B",
+      "text": "Prima voor mij. Ik heb er nu al zin in.",
+      "translation": "Fine with me. I'm already looking forward to it."
+    }
+  ]
+}

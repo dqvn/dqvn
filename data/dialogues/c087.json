@@ -1,0 +1,86 @@
+{
+  "dialogue_title": "De Weg Vragen op het Station – Nederlands Gesprek",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/N-Htb3zeHsU",
+  "roles": {
+    "A": "Girl with glasses and backpack",
+    "B": "Boy with backpack"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Pardon, kunt u mij helpen?",
+      "translation": "Excuse me, can you help me?"
+    },
+    {
+      "role": "B",
+      "text": "Natuurlijk.",
+      "translation": "Of course."
+    },
+    {
+      "role": "A",
+      "text": "Waar vertrekt de trein naar Rotterdam?",
+      "translation": "Where does the train to Rotterdam leave from?"
+    },
+    {
+      "role": "B",
+      "text": "Volgens mij vanaf spoor 5.",
+      "translation": "I think from platform 5."
+    },
+    {
+      "role": "A",
+      "text": "Ah oké, bedankt.",
+      "translation": "Ah okay, thank you."
+    },
+    {
+      "role": "B",
+      "text": "Maar kijk voor de zekerheid even op het scherm.",
+      "translation": "But just to be sure, check the screen."
+    },
+    {
+      "role": "A",
+      "text": "Goede tip.",
+      "translation": "Good tip."
+    },
+    {
+      "role": "A",
+      "text": "Ja, spoor 5 klopt.",
+      "translation": "Yes, platform 5 is correct."
+    },
+    {
+      "role": "B",
+      "text": "Mooi zo.",
+      "translation": "Great."
+    },
+    {
+      "role": "A",
+      "text": "Is het ver lopen?",
+      "translation": "Is it far to walk?"
+    },
+    {
+      "role": "B",
+      "text": "Nee, gewoon rechtdoor en dan de trap op.",
+      "translation": "No, just straight ahead and then up the stairs."
+    },
+    {
+      "role": "A",
+      "text": "Perfect, dank u wel.",
+      "translation": "Perfect, thank you very much."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem.",
+      "translation": "No problem."
+    },
+    {
+      "role": "A",
+      "text": "Fijne dag verder!",
+      "translation": "Have a nice day!"
+    },
+    {
+      "role": "B",
+      "text": "Jij ook.",
+      "translation": "You too."
+    }
+  ]
+}
