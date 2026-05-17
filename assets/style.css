@@ -1934,6 +1934,10 @@ button:hover {
 
 /* ── Box badge ──────────────────────────────────────────────────────────── */
 .fc-box-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 10;
     display: inline-block;
     padding: 3px 10px;
     border-radius: 99px;
@@ -1941,8 +1945,6 @@ button:hover {
     font-weight: 700;
     letter-spacing: 0.07em;
     text-transform: uppercase;
-    align-self: flex-start;
-    margin: 12px 16px 0;
 }
 .fc-badge-new    { background: #dbeafe; color: #1d4ed8; }
 .fc-badge-hard   { background: #fee2e2; color: #dc2626; }
@@ -2574,13 +2576,8 @@ button:hover {
         background: rgba(255,255,255,0.22);
     }
 
-    /* ── Box badge ────────────────────────────────────────────── */
-    .fc-box-badge {
-        flex-shrink: 0;
-        margin: 10px 14px 0;
-        font-size: 0.68rem;
-        padding: 3px 10px;
-    }
+    /* ── Box badge: absolute inside card, no size change needed ── */
+    .fc-box-badge { font-size: 0.68rem; }
 
     /* ── Scene: eats all remaining vertical space ─────────────── */
     #fc-scene {
