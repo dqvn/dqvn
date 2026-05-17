@@ -19,7 +19,8 @@ let _groupTitles  = new Map();
 
 /* ── DOM references ── */
 const tableBody           = document.getElementById('word-list-body');
-const hideMeaningCheckbox = document.getElementById('hide-meaning');
+const hideMeaningBtn      = document.getElementById('hide-meaning-btn');
+let   hideMeaning         = false;
 const volumeControl       = document.getElementById('volume-control');
 const playStopButton      = document.getElementById('playStopButton');
 
@@ -43,10 +44,12 @@ playStopButton.addEventListener('click', () => {
 });
 
 // Hide-meaning toggle — registered once here, not inside reloadTable
-hideMeaningCheckbox.addEventListener('change', () => {
-    const hide = hideMeaningCheckbox.checked;
+hideMeaningBtn.addEventListener('click', () => {
+    hideMeaning = !hideMeaning;
+    hideMeaningBtn.textContent = hideMeaning ? '🙈' : '👁️';
+    hideMeaningBtn.classList.toggle('hdr-toggle-btn--active', hideMeaning);
     document.querySelectorAll('.hide-text').forEach(el => {
-        el.style.display = hide ? 'none' : 'initial';
+        el.style.display = hideMeaning ? 'none' : '';
     });
 });
 
@@ -393,8 +396,10 @@ function reloadTable(data) {
         tableBody.appendChild(row);
     }
 
-    // Reset hide-meaning checkbox state (listener is wired once at the top)
-    hideMeaningCheckbox.checked = false;
+    // Reset hide-meaning state when a new lesson loads
+    hideMeaning = false;
+    hideMeaningBtn.textContent = '👁️';
+    hideMeaningBtn.classList.remove('hdr-toggle-btn--active');
     document.querySelectorAll('.hide-text').forEach(el => { el.style.display = ''; });
 }
 
