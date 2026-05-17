@@ -11,6 +11,8 @@ body {
 }
 
 body {
+    display: flex;
+    flex-direction: column;   /* header → .container → footer stacked vertically */
     background-image: url('https://dqvn.github.io/dqvn/assets/bg1.jpg');
     background-size: cover;
     background-position: center;
@@ -66,6 +68,7 @@ h1 {
     /* Allows the table to take up the remaining space */
     transition: width 0.3s ease;
     /* Smooth transition */
+    align-self: stretch;  /* always fill the full container height */
     overflow-y: auto;
     height: 85dvh;
     width: calc(100% - 250px);
@@ -188,7 +191,8 @@ td:last-child {
     position: sticky;
     top: 0;
     height: fit-content;
-    z-index: 1; 
+    align-self: flex-start; /* don't stretch — stick to content height so sticky works */
+    z-index: 1;
 }
 
 .left-menu h4 {
@@ -633,6 +637,9 @@ button:hover {
     /* Space between the menu and table */
     position: relative;
     /* Needed for positioning the absolute button */
+    flex: 1;              /* fills remaining height between header and footer */
+    min-height: 0;        /* allows flex child to shrink below content height */
+    align-items: stretch; /* both left-menu and table-container fill the same height */
 }
 
 /* 🌟 CLASS TO HIDE THE MENU 🌟 */
