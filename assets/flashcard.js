@@ -39,7 +39,11 @@
   }
 
   function saveProgress() {
-    localStorage.setItem(FC_KEY, JSON.stringify(fc.progress));
+    try {
+      localStorage.setItem(FC_KEY, JSON.stringify(fc.progress));
+    } catch (e) {
+      console.warn('FlashCard: could not save progress to localStorage', e);
+    }
   }
 
   function loadMeta() {
@@ -48,9 +52,13 @@
   }
 
   function saveMeta() {
-    const meta = loadMeta();
-    meta[fc.chapterId] = { lastStudied: Date.now() };
-    localStorage.setItem(FC_META_KEY, JSON.stringify(meta));
+    try {
+      const meta = loadMeta();
+      meta[fc.chapterId] = { lastStudied: Date.now() };
+      localStorage.setItem(FC_META_KEY, JSON.stringify(meta));
+    } catch (e) {
+      console.warn('FlashCard: could not save meta to localStorage', e);
+    }
   }
 
   function $id(id) { return document.getElementById(id); }
@@ -201,6 +209,9 @@
     $id('fc-back').classList.remove('fc-visible');
     fc.flipped = false;
 
+    // Reset speak button state
+    $id('fc-speak-btn').classList.remove('fc-speaking');
+
     // Animate card in
     const el = $id('fc-card');
     el.classList.remove('fc-shake', 'fc-exit-left', 'fc-exit-right', 'fc-exit-up');
@@ -223,6 +234,27 @@
   }
 
   /* ── Flip ───────────────────────────────────────────────────────────────── */
+  function unflipCard() {
+    if (!fc.flipped) return;
+    fc.flipped = false;
+    fc.ttsSeq++;
+    window.speechSynthesis && window.speechSynthesis.cancel();
+
+    // Hide actions immediately
+    $id('fc-actions').style.opacity = '0';
+    $id('fc-actions').style.pointerEvents = 'none';
+
+    const el = $id('fc-card');
+    el.classList.add('fc-flip-out');
+    setTimeout(() => {
+      el.classList.remove('fc-flip-out');
+      $id('fc-back').classList.remove('fc-visible');
+      $id('fc-front').style.display = '';
+      el.classList.add('fc-flip-in');
+      setTimeout(() => el.classList.remove('fc-flip-in'), 220);
+    }, 200);
+  }
+
   function flipCard() {
     if (fc.flipped) return;
 
@@ -278,9 +310,17 @@
     st.lastStudied = Date.now();
     st.nextDue = Date.now() + (SRS_INTERVALS[st.box] || 0);
     fc.progress[fc.chapterId][card.dutch] = st;
+
+    // Accumulate chapter-level totals across all sessions
+    const t = fc.progress[fc.chapterId]._totals || { seen: 0, hard: 0, good: 0, easy: 0 };
+    t.seen  = (t.seen  || 0) + 1;
+    t[rating] = (t[rating] || 0) + 1;
+    t.lastStudied = Date.now();
+    fc.progress[fc.chapterId]._totals = t;
+
     fc.stats[rating]++;
     fc.stats.total++;
-    saveProgress();
+    saveProgress();   // persists immediately after every rating
     refreshHeader();
 
     // Disable buttons during animation
@@ -369,6 +409,15 @@
     const s = chapterStats();
     const ovPct = s.total ? Math.round((s.mastered / s.total) * 100) : 0;
 
+    // All-time totals for this chapter (from localStorage via fc.progress)
+    const t = fc.progress[fc.chapterId]?._totals || {};
+    const allTimeLine = t.seen
+      ? `<div class="fc-res-alltime">
+           <span class="fc-res-alltime-lbl">📚 All-time this chapter</span>
+           <span>${t.seen} reviews &nbsp;·&nbsp; 😰 ${t.hard||0} &nbsp;😊 ${t.good||0} &nbsp;🤩 ${t.easy||0}</span>
+         </div>`
+      : '';
+
     $id('fc-complete').innerHTML = `
       <div class="fc-res-trophy">${trophy}</div>
       <h2 class="fc-res-title">Session Complete!</h2>
@@ -391,6 +440,7 @@
         </div>
         <div class="fc-res-mastery-pct">${ovPct}%</div>
       </div>
+      ${allTimeLine}
       <div class="fc-res-actions">
         <button class="fc-res-btn fc-res-restart">🔄 Study Again</button>
         <button class="fc-res-btn fc-res-done">✓ Done</button>
@@ -423,10 +473,39 @@
     if (!fc.flipped) {
       if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); flipCard(); }
     } else {
+      if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); unflipCard(); }
       if (e.key === 'ArrowLeft')  rateCard('hard');
       if (e.key === 'ArrowUp')    rateCard('good');
       if (e.key === 'ArrowRight') rateCard('easy');
     }
+  }
+
+  /* ── Speak / repeat ─────────────────────────────────────────────────────── */
+  function speakCurrent() {
+    const card = fc.cards[fc.index];
+    if (!card) return;
+    const btn = $id('fc-speak-btn');
+    btn.classList.add('fc-speaking');
+    fc.ttsSeq++;
+    const seq = fc.ttsSeq;
+    if (typeof speakText === 'function') speakText(card.dutch);
+    setTimeout(() => {
+      if (fc.ttsSeq === seq) btn.classList.remove('fc-speaking');
+    }, 1800);
+  }
+
+  function speakSentence() {
+    const card = fc.cards[fc.index];
+    if (!card || !card.dutchsentence) return;
+    const btn = $id('fc-sentence-speak-btn');
+    btn.classList.add('fc-speaking');
+    fc.ttsSeq++;
+    const seq = fc.ttsSeq;
+    if (typeof speakText === 'function') speakText(card.dutchsentence);
+    // Sentences are longer — allow ~4s before removing pulse
+    setTimeout(() => {
+      if (fc.ttsSeq === seq) btn.classList.remove('fc-speaking');
+    }, 4000);
   }
 
   /* ── Drag-to-rate ───────────────────────────────────────────────────────── */
@@ -519,8 +598,14 @@
       return;
     }
 
-    // Pure tap (no drag) → flip
-    if (absDx < 12 && absDy < 12 && !fc.flipped) flipCard();
+    // Pure tap (no drag)
+    if (absDx < 12 && absDy < 12) {
+      if (!fc.flipped) {
+        if (!e.target.closest('#fc-speak-btn')) flipCard();
+      } else {
+        if (!e.target.closest('#fc-sentence-speak-btn')) unflipCard();
+      }
+    }
   }
 
   /* ── Init ───────────────────────────────────────────────────────────────── */
@@ -528,7 +613,9 @@
     createDragIndicator();
     $id('flashcard-btn').addEventListener('click', openFlashcard);
     $id('fc-close-btn').addEventListener('click', closeFlashcard);
-    $id('fc-card').addEventListener('click', flipCard);
+    $id('fc-card').addEventListener('click', () => fc.flipped ? unflipCard() : flipCard());
+    $id('fc-speak-btn').addEventListener('click', e => { e.stopPropagation(); speakCurrent(); });
+    $id('fc-sentence-speak-btn').addEventListener('click', e => { e.stopPropagation(); speakSentence(); });
     $id('fc-hard-btn').addEventListener('click', () => rateCard('hard'));
     $id('fc-good-btn').addEventListener('click', () => rateCard('good'));
     $id('fc-easy-btn').addEventListener('click', () => rateCard('easy'));

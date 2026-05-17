@@ -51,13 +51,20 @@
             <div id="fc-ipa" class="ipa-text">/ɦɑˈloː/</div>
             <div id="fc-phonetic">hah-low</div>
             <div id="fc-hint">👆 Tap to reveal</div>
+            <button id="fc-speak-btn" class="fc-speak-btn" title="Repeat pronunciation">
+              <span class="fc-speak-icon">🔊</span>
+              <span>Hear it</span>
+            </button>
           </div>
           <!-- Back (shown via .fc-visible class) -->
           <div id="fc-back">
             <div id="fc-english"></div>
             <div id="fc-vietnamese"></div>
             <div class="fc-back-divider"></div>
-            <div id="fc-sentence-nl"></div>
+            <div class="fc-sentence-row">
+              <button id="fc-sentence-speak-btn" class="fc-sentence-speak-btn" title="Hear Dutch sentence">🔊</button>
+              <div id="fc-sentence-nl"></div>
+            </div>
             <div id="fc-sentence-en"></div>
           </div>
         </div>
@@ -133,8 +140,10 @@
         </button>
       </div>
       <div class="spacer">
-        <a href="grammar.html" title="Go to Grammar"> ➔📖 </a> &nbsp; | &nbsp;
-        <a href="vanstart.html" title="Go to VanStart"> ➔🚀 </a>
+        <nav class="lm-nav">
+          <a href="grammar.html" class="lm-nav-link" title="Go to Grammar">📖 Grammar</a>
+          <a href="vanstart.html" class="lm-nav-link" title="Go to VanStart">🚀 VanStart</a>
+        </nav>
         <h4>Dutch Courses:</h4>
         <div class="file-container div-with-scrollbar">
           <ul id="file-list">

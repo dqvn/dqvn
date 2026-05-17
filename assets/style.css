@@ -248,6 +248,40 @@ td:last-child {
     border-color: #2563eb;
 }
 
+/* ── Left-menu nav links ──────────────────────────────────────────────── */
+.lm-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+.lm-nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 12px;
+    border-radius: 99px;
+    background: linear-gradient(135deg, #e0f2fe 0%, #dbeafe 100%);
+    color: #1e40af;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid #bfdbfe;
+    box-shadow: 0 1px 4px rgba(30,64,175,0.10);
+    transition: background 0.18s, transform 0.14s, box-shadow 0.18s;
+    white-space: nowrap;
+}
+.lm-nav-link:hover {
+    background: linear-gradient(135deg, #bfdbfe 0%, #c7d2fe 100%);
+    color: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(30,64,175,0.18);
+}
+.lm-nav-link:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 3px rgba(30,64,175,0.10);
+}
+
 /* ── Left-menu footer ─────────────────────────────────────────────────── */
 #lm-footer {
     display: flex;
@@ -1242,6 +1276,17 @@ button:hover {
         flex-direction: column;
     }
 
+    /* Nav chips: keep their colour inside the white mobile drawer */
+    .lm-nav-link {
+        background: linear-gradient(135deg, #e0f2fe 0%, #dbeafe 100%);
+        color: #1e40af;
+        -webkit-text-fill-color: #1e40af;
+    }
+    .lm-nav-link:hover {
+        background: linear-gradient(135deg, #bfdbfe 0%, #c7d2fe 100%);
+        -webkit-text-fill-color: #1d4ed8;
+    }
+
     /* ── Left-menu footer ── */
     #lm-footer {
         margin-top: 0;
@@ -1981,11 +2026,41 @@ button:hover {
     border-radius: 99px;
     margin: 6px 0;
 }
+.fc-sentence-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    width: 100%;
+    text-align: left;
+}
 #fc-sentence-nl {
     font-size: 1.1rem;
     color: #0369a1;
     font-style: italic;
     line-height: 1.5;
+    flex: 1;
+}
+.fc-sentence-speak-btn {
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.05rem;
+    padding: 3px 5px;
+    border-radius: 50%;
+    line-height: 1;
+    margin-top: 2px;
+    transition: background 0.15s, transform 0.14s;
+    color: #0369a1;
+}
+.fc-sentence-speak-btn:hover {
+    background: rgba(3,105,161,0.10);
+    transform: scale(1.18);
+}
+.fc-sentence-speak-btn:active { transform: scale(0.90); }
+.fc-sentence-speak-btn.fc-speaking .fc-speak-icon,
+.fc-sentence-speak-btn.fc-speaking {
+    animation: fc-speak-pulse 0.55s ease-in-out infinite alternate;
 }
 #fc-sentence-en {
     font-size: 0.78rem;
@@ -2308,6 +2383,28 @@ button:hover {
     font-weight: 700;
     color: #16a34a;
     text-align: right;
+}
+
+.fc-res-alltime {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    width: 100%;
+    padding: 8px 12px;
+    background: #f0f9ff;
+    border: 1px solid #bae6fd;
+    border-radius: 10px;
+    font-size: 0.78rem;
+    color: #0369a1;
+    text-align: center;
+}
+.fc-res-alltime-lbl {
+    font-weight: 700;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #0284c7;
 }
 
 .fc-res-actions {
