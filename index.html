@@ -17,6 +17,7 @@
   <header>
     <h1>Learn Dutch Words</h1>
     <h3 id="chapter"></h3>
+    <button id="hide-meaning-btn" class="hdr-toggle-btn" title="Hide/show meanings">👁️</button>
   </header>
   <!-- ── Flashcard popup ─────────────────────────────────────────────── -->
   <div id="flashcard-popup" style="display:none;">
@@ -115,9 +116,6 @@
         <div id="tts-name"></div>
         <label class="tts-voice-label" for="tts-voice-select">🔊 Dutch Voice:</label>
         <select id="tts-voice-select"></select>
-        <!-- Add the checkbox -->
-        <input type="checkbox" id="hide-meaning" />
-        <label for="hide-meaning">Hide meaning</label>
         <!-- add Volumn & Play button -->
         <div class="volume-control-container">
           <button class="play-stop-button" id="playStopButton">

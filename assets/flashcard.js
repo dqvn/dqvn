@@ -320,6 +320,16 @@
     setTimeout(() => {
       if (seq !== fc.ttsSeq) return;
       if (typeof speakEngText === 'function') speakEngText(card.english);
+
+      // After English finishes, auto-read the Dutch example sentence
+      if (card.dutchsentence) {
+        const wordCount = (card.english || '').trim().split(/\s+/).filter(Boolean).length || 1;
+        const engDuration = Math.max(700, wordCount * 500); // ~500ms per word
+        setTimeout(() => {
+          if (seq !== fc.ttsSeq) return;
+          if (typeof speakText === 'function') speakText(card.dutchsentence);
+        }, engDuration + 2000);
+      }
     }, 450);
   }
 
