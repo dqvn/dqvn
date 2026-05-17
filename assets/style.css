@@ -2480,6 +2480,17 @@ button:hover {
     color: #0284c7;
 }
 
+.fc-res-streak {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #ea580c;
+    letter-spacing: 0.03em;
+}
+.fc-res-next {
+    font-size: 0.8rem;
+    color: #0369a1;
+    opacity: 0.85;
+}
 .fc-res-actions {
     display: flex;
     gap: 10px;
