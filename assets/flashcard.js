@@ -337,6 +337,7 @@
     if (!fc.flipped) return;
     fc.flipped = false;
     fc.ttsSeq++;
+    const seq = fc.ttsSeq;
     window.speechSynthesis && window.speechSynthesis.cancel();
     $id('fc-actions').style.opacity = '0';
     $id('fc-actions').style.pointerEvents = 'none';
@@ -350,6 +351,13 @@
       el.classList.add('fc-flip-in');
       setTimeout(() => el.classList.remove('fc-flip-in'), 220);
     }, 200);
+
+    // Re-read the Dutch word once the front is visible
+    const card = fc.cards[fc.index];
+    setTimeout(() => {
+      if (seq !== fc.ttsSeq) return;
+      if (card && typeof speakText === 'function') speakText(card.dutch);
+    }, 450);
   }
 
   /* ── Requeue ────────────────────────────────────────────────────────────── */

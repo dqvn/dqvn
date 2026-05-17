@@ -27,7 +27,7 @@ body {
 }
 
 header {
-    padding: 6px 16px 4px;
+    padding: 14px 20px 10px;
     text-align: center;
     width: 100%;
     box-sizing: border-box;
@@ -50,13 +50,13 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 1.9rem;
     color: #00698f;
 }
 
 header h3 {
-    margin: 2px 0 0;
-    font-size: 0.78rem;
+    margin: 4px 0 0;
+    font-size: 0.95rem;
     font-weight: 500;
     color: white;
 }
