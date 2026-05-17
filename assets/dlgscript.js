@@ -296,10 +296,15 @@ const DCACHE = (() => {
 
     return {
         getIds() {
-            try { return JSON.parse(localStorage.getItem(IDS_KEY)); } catch { return null; }
+            try {
+                const raw = JSON.parse(localStorage.getItem(IDS_KEY));
+                if (!raw) return { ids: null, cachedAt: 0 };
+                if (Array.isArray(raw)) return { ids: raw, cachedAt: 0 }; // old format
+                return raw; // { ids, cachedAt }
+            } catch { return { ids: null, cachedAt: 0 }; }
         },
         setIds(ids) {
-            try { localStorage.setItem(IDS_KEY, JSON.stringify(ids)); } catch { }
+            try { localStorage.setItem(IDS_KEY, JSON.stringify({ ids, cachedAt: Date.now() })); } catch { }
         },
         has(id) { return !!_load()[id]; },
 
@@ -327,6 +332,8 @@ const DCACHE = (() => {
 /* ════════════════════════════════════════════════════
    FILE DISCOVERY  –  cache-first, network fallback
    ════════════════════════════════════════════════════ */
+const CACHE_TTL = 7 * 24 * 60 * 60 * 1000; // 7 days in ms
+
 async function discover() {
     if (location.protocol === 'file:')
         document.getElementById('file-notice').style.display = 'inline-flex';
@@ -334,7 +341,8 @@ async function discover() {
     /* Warm crypto key in background so subsequent ops are instant. */
     CRYPTO.warmup().catch(() => {});
 
-    const cachedIds = DCACHE.getIds();
+    const { ids: cachedIds, cachedAt } = DCACHE.getIds();
+    const isStale = !cachedAt || (Date.now() - cachedAt > CACHE_TTL);
 
     if (cachedIds && cachedIds.length > 0) {
         /* ── Fast path: load all from encrypted cache ── */
@@ -344,8 +352,13 @@ async function discover() {
             if (d) found.push({ id, ...d });
         }
         if (found.length > 0) {
-            /* Background: silently check for new files beyond what we cached. */
-            _checkForNew(cachedIds, found).catch(() => {});
+            if (isStale && navigator.onLine) {
+                /* Cache is older than 7 days — silently refresh everything in background. */
+                _backgroundRefresh(found).catch(() => {});
+            } else {
+                /* Cache is fresh — only check for newly added files. */
+                _checkForNew(cachedIds, found).catch(() => {});
+            }
             return found;
         }
         /* All cache entries failed (e.g. key changed) — fall through to network. */
@@ -405,6 +418,19 @@ async function _checkForNew(knownIds, currentFound) {
         renderSidebar(all);
         showToast(`🆕 ${newFound.length} nieuwe dialoog${newFound.length > 1 ? 'en' : ''} gevonden!`);
     }
+}
+
+/* Full background refresh when cache is stale (> 7 days). Serves existing
+   data immediately; replaces it silently once the fresh fetch completes. */
+async function _backgroundRefresh(currentFound) {
+    try {
+        DCACHE.clear();
+        const fresh = await _fetchAll();
+        if (!fresh.length) return;
+        dialogues = fresh;
+        renderSidebar(filterDialogues(searchInput.value.trim()));
+        showToast('🔄 Inhoud bijgewerkt / Content refreshed');
+    } catch { /* no internet or fetch error — keep serving stale cache */ }
 }
 
 /* ════════════════════════════════════════════════════

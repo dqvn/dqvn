@@ -2,14 +2,15 @@
 (function () {
   'use strict'; 
 
-  const FC_KEY       = 'nl_srs_v3';
-  const FC_META_KEY  = 'nl_srs_meta_v3';
-  const SESSION_SIZE = 20;
-  const NEW_PER_DAY  = 10;
-  const MIN_EASE     = 1.3;
-  const MAX_EASE     = 4.0;
-  const DEF_EASE     = 2.5;
-  const DAY          = 86400000;
+  const FC_KEY               = 'nl_srs_v3';
+  const FC_META_KEY          = 'nl_srs_meta_v3';
+  const SESSION_SIZE         = 20;
+  const NEW_PER_DAY          = 10;
+  const MIN_EASE             = 1.3;
+  const MAX_EASE             = 4.0;
+  const DEF_EASE             = 2.5;
+  const DAY                  = 86400000;
+  const DUTCH_SENTENCE_DELAY = 1000; // ms after English TTS starts before Dutch sentence plays
 
   /* ── State ────────────────────────────────────────────────────────────────-- */
   const fc = {
@@ -321,14 +322,12 @@
       if (seq !== fc.ttsSeq) return;
       if (typeof speakEngText === 'function') speakEngText(card.english);
 
-      // After English finishes, auto-read the Dutch example sentence
+      // After English TTS, wait DUTCH_SENTENCE_DELAY then read the Dutch example sentence
       if (card.dutchsentence) {
-        const wordCount = (card.english || '').trim().split(/\s+/).filter(Boolean).length || 1;
-        const engDuration = Math.max(700, wordCount * 500); // ~500ms per word
         setTimeout(() => {
           if (seq !== fc.ttsSeq) return;
           if (typeof speakText === 'function') speakText(card.dutchsentence);
-        }, engDuration + 2000);
+        }, DUTCH_SENTENCE_DELAY);
       }
     }, 450);
   }
