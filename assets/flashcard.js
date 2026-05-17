@@ -600,6 +600,7 @@
 
     // Pure tap (no drag)
     if (absDx < 12 && absDy < 12) {
+      e.preventDefault(); // suppress the synthetic mouse click that follows touchend
       if (!fc.flipped) {
         if (!e.target.closest('#fc-speak-btn')) flipCard();
       } else {
@@ -623,7 +624,7 @@
     const scene = $id('fc-scene');
     scene.addEventListener('touchstart', onTouchStart, { passive: true });
     scene.addEventListener('touchmove',  onTouchMove,  { passive: false });
-    scene.addEventListener('touchend',   onTouchEnd,   { passive: true });
+    scene.addEventListener('touchend',   onTouchEnd,   { passive: false }); // needs preventDefault to kill synthetic click
 
     document.addEventListener('keydown', onKey);
 

@@ -1383,7 +1383,7 @@ button:hover {
     /* ── Table container always full-width on mobile ── */
     .table-container {
         width: 100% !important;
-        height: 82dvh;               /* dvh adjusts when phone chrome shows/hides */
+        height: 100%;   /* fill the remaining flex-container height after the header */
     }
 
     /* ── Hide Vietnamese column (too narrow on phone) ── */
