@@ -99,34 +99,58 @@ document.getElementById('start-button').addEventListener('click', () => {
     showQuestion();
 });
 
-// Footer year
-document.getElementById('year').textContent = new Date().getFullYear();
+// Footer year — use optional chaining; the #year element was removed from HTML
 const _lmYear = document.getElementById('lm-year');
 if (_lmYear) _lmYear.textContent = new Date().getFullYear();
 
 /* ── Voice initialisation ──────────────────────────────────────────────────
    Firefox / Safari return voices synchronously on the first getVoices() call.
    Chrome loads them asynchronously and fires 'voiceschanged'.
-   _voicesReadyPromise is a single shared promise that resolves on first load
-   (or after 3 s as a safety timeout) so async callers never silently skip TTS.
-   We use addEventListener so nothing can accidentally overwrite our handler.
+   iOS Safari may not expose voices at all until the first user gesture.
+   Strategy:
+     1. Try sync population immediately (works on Firefox / Safari desktop).
+     2. Listen for voiceschanged (works on Chrome / Android).
+     3. Poll every 500 ms for up to 10 s as a fallback (iOS Safari).
+     4. Re-probe on first touchstart (iOS requires a user gesture).
    ──────────────────────────────────────────────────────────────────────────── */
-googleNederlandsVoice = getPreferredVoice();          // sync attempt (Firefox / Safari)
-_populateVoiceSelector();                              // populate if voices already available
+googleNederlandsVoice = getPreferredVoice();
+_populateVoiceSelector();
 
 const _voicesReadyPromise = (() => {
     if (window.speechSynthesis.getVoices().length) return Promise.resolve();
     return new Promise(resolve => {
         window.speechSynthesis.addEventListener('voiceschanged', resolve, { once: true });
-        setTimeout(resolve, 3000);                    // fallback — never wait forever
+        setTimeout(resolve, 3000);
     });
 })();
 
+// voiceschanged fires on Chrome / Android
 window.speechSynthesis.addEventListener('voiceschanged', () => {
     googleNederlandsVoice = getPreferredVoice();
     _populateVoiceSelector();
     console.log('[TTS] voice ready:', googleNederlandsVoice?.name);
 });
+
+// Polling fallback — catches iOS Safari where voiceschanged is unreliable
+(function _pollForVoices() {
+    let tries = 0;
+    const timer = setInterval(() => {
+        const dutch = window.speechSynthesis.getVoices().filter(v => v.lang.startsWith('nl'));
+        if (dutch.length || ++tries >= 20) {
+            clearInterval(timer);
+            if (dutch.length) {
+                googleNederlandsVoice = getPreferredVoice();
+                _populateVoiceSelector();
+            }
+        }
+    }, 500);
+}());
+
+// iOS: voices become available after first user gesture — re-probe on first touch
+document.addEventListener('touchstart', function _iosVoiceProbe() {
+    window.speechSynthesis.getVoices();       // prod the API
+    setTimeout(_populateVoiceSelector, 200);  // slight delay for browser to respond
+}, { once: true });
 
 // Chrome silently pauses TTS when the tab goes to the background; resume on focus
 document.addEventListener('visibilitychange', () => {
