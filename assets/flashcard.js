@@ -318,17 +318,17 @@
     const card = fc.cards[fc.index];
     fc.ttsSeq++;
     const seq = fc.ttsSeq;
-    setTimeout(() => {
+    setTimeout(async () => {
       if (seq !== fc.ttsSeq) return;
-      if (typeof speakEngText === 'function') speakEngText(card.english);
-
-      // After English TTS, wait DUTCH_SENTENCE_DELAY then read the Dutch example sentence
-      if (card.dutchsentence) {
-        setTimeout(() => {
-          if (seq !== fc.ttsSeq) return;
-          if (typeof speakText === 'function') speakText(card.dutchsentence);
-        }, DUTCH_SENTENCE_DELAY);
+      if (typeof speakEngTextAsync === 'function') {
+        await speakEngTextAsync(card.english);
+      } else if (typeof speakEngText === 'function') {
+        speakEngText(card.english);
       }
+      if (!card.dutchsentence) return;
+      await new Promise(r => setTimeout(r, DUTCH_SENTENCE_DELAY));
+      if (seq !== fc.ttsSeq) return;
+      if (typeof speakText === 'function') speakText(card.dutchsentence);
     }, 450);
   }
 
