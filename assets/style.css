@@ -2690,8 +2690,8 @@ button:hover {
 
     #fc-english      { font-size: clamp(1.4rem, 8vw, 3rem); }
     #fc-vietnamese   { font-size: 1.1rem; }
-    #fc-sentence-nl  { font-size: 1.05rem; }
-    #fc-sentence-en  { font-size: 0.78rem; }
+    #fc-sentence-nl  { font-size: 1.1rem; }
+    #fc-sentence-en  { font-size: 0.8rem; }
 
     /* ── Action buttons: thumb zone at bottom ─────────────────── */
     #fc-actions {
