@@ -209,8 +209,7 @@
     $id('fc-hint').textContent = 'Loading vocabulary…';
     $id('fc-front').style.display = '';
     $id('fc-back').classList.remove('fc-visible');
-    $id('fc-actions').style.opacity = '0';
-    $id('fc-actions').style.pointerEvents = 'none';
+    $id('fc-actions').style.display = 'none';
     $id('fc-complete').style.display = 'none';
     $id('fc-scene').style.display = 'flex';
   }
@@ -225,8 +224,7 @@
     fc.flipped         = false;
     fc.cards           = buildSession();
     updateStreak();
-    $id('fc-actions').style.opacity = '0';
-    $id('fc-actions').style.pointerEvents = 'none';
+    $id('fc-actions').style.display = 'none';
     $id('fc-complete').style.display = 'none';
     $id('fc-scene').style.display = 'flex';
     refreshHeader();
@@ -311,8 +309,12 @@
 
     fc.flipped = true;
     setTimeout(() => {
-      $id('fc-actions').style.opacity = '1';
-      $id('fc-actions').style.pointerEvents = 'auto';
+      const act = $id('fc-actions');
+      act.style.pointerEvents = '';   // clear inline override from rateCard
+      act.style.opacity = '0';
+      act.style.display = 'flex';
+      act.getBoundingClientRect();    // force reflow so transition fires
+      act.style.opacity = '1';
     }, 380);
 
     const card = fc.cards[fc.index];
@@ -338,8 +340,7 @@
     fc.ttsSeq++;
     const seq = fc.ttsSeq;
     window.speechSynthesis && window.speechSynthesis.cancel();
-    $id('fc-actions').style.opacity = '0';
-    $id('fc-actions').style.pointerEvents = 'none';
+    $id('fc-actions').style.display = 'none';
 
     const el = $id('fc-card');
     el.classList.add('fc-flip-out');
@@ -478,8 +479,7 @@
 
   function advance() {
     fc.index++;
-    $id('fc-actions').style.opacity = '0';
-    $id('fc-actions').style.pointerEvents = 'none';
+    $id('fc-actions').style.display = 'none';
     if (fc.index >= fc.cards.length) showComplete();
     else renderCard();
   }
@@ -534,8 +534,7 @@
   /* ── Session complete ───────────────────────────────────────────────────── */
   function showComplete() {
     $id('fc-scene').style.display = 'none';
-    $id('fc-actions').style.opacity = '0';
-    $id('fc-actions').style.pointerEvents = 'none';
+    $id('fc-actions').style.display = 'none';
 
     const { hard, good, easy, total } = fc.stats;
     const pct    = total ? Math.round(((good + easy) / total) * 100) : 0;
