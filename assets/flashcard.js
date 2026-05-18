@@ -209,7 +209,8 @@
     $id('fc-hint').textContent = 'Loading vocabulary…';
     $id('fc-front').style.display = '';
     $id('fc-back').classList.remove('fc-visible');
-    $id('fc-actions').style.display = 'none';
+    const _wa = $id('fc-actions');
+    _wa.style.display = 'flex'; _wa.style.visibility = 'hidden'; _wa.style.opacity = '0';
     $id('fc-complete').style.display = 'none';
     $id('fc-scene').style.display = 'flex';
   }
@@ -224,7 +225,8 @@
     fc.flipped         = false;
     fc.cards           = buildSession();
     updateStreak();
-    $id('fc-actions').style.display = 'none';
+    const _sa = $id('fc-actions');
+    _sa.style.display = 'flex'; _sa.style.visibility = 'hidden'; _sa.style.opacity = '0';
     $id('fc-complete').style.display = 'none';
     $id('fc-scene').style.display = 'flex';
     refreshHeader();
@@ -311,8 +313,8 @@
     setTimeout(() => {
       const act = $id('fc-actions');
       act.style.pointerEvents = '';   // clear inline override from rateCard
+      act.style.visibility = 'visible';
       act.style.opacity = '0';
-      act.style.display = 'flex';
       act.getBoundingClientRect();    // force reflow so transition fires
       act.style.opacity = '1';
     }, 380);
@@ -340,7 +342,8 @@
     fc.ttsSeq++;
     const seq = fc.ttsSeq;
     window.speechSynthesis && window.speechSynthesis.cancel();
-    $id('fc-actions').style.display = 'none';
+    const _ua = $id('fc-actions');
+    _ua.style.visibility = 'hidden'; _ua.style.opacity = '0';
 
     const el = $id('fc-card');
     el.classList.add('fc-flip-out');
@@ -479,7 +482,8 @@
 
   function advance() {
     fc.index++;
-    $id('fc-actions').style.display = 'none';
+    const _aa = $id('fc-actions');
+    _aa.style.visibility = 'hidden'; _aa.style.opacity = '0';
     if (fc.index >= fc.cards.length) showComplete();
     else renderCard();
   }
