@@ -4,6 +4,7 @@
 
   const FC_KEY               = 'nl_srs_v3';
   const FC_META_KEY          = 'nl_srs_meta_v3';
+  const FC_WORD_SIZE_KEY     = 'nl_fc_word_size';
   const SESSION_SIZE         = 20;
   const NEW_PER_DAY          = 10;
   const MIN_EASE             = 1.3;
@@ -11,6 +12,10 @@
   const DEF_EASE             = 2.5;
   const DAY                  = 86400000;
   const DUTCH_SENTENCE_DELAY = 1000; // ms after English TTS starts before Dutch sentence plays
+  const WORD_SIZE_MIN        = 1.6;
+  const WORD_SIZE_MAX        = 5.6;
+  const WORD_SIZE_STEP       = 0.3;
+  const WORD_SIZE_DEF        = 3.2;
 
   /* ── State ────────────────────────────────────────────────────────────────-- */
   const fc = {
@@ -21,6 +26,25 @@
     ttsSeq: 0,
     touchStartX: 0, touchStartY: 0, isDragging: false,
   };
+
+  /* ── Word size ──────────────────────────────────────────────────────────── */
+  function getWordSize() {
+    const v = parseFloat(localStorage.getItem(FC_WORD_SIZE_KEY));
+    return isNaN(v) ? WORD_SIZE_DEF : Math.min(WORD_SIZE_MAX, Math.max(WORD_SIZE_MIN, v));
+  }
+
+  function applyWordSize(size) {
+    $id('fc-word').style.fontSize = size + 'rem';
+    $id('fc-word-size-dec').disabled = size <= WORD_SIZE_MIN;
+    $id('fc-word-size-inc').disabled = size >= WORD_SIZE_MAX;
+  }
+
+  function changeWordSize(delta) {
+    const next = Math.round((getWordSize() + delta) * 10) / 10;
+    const clamped = Math.min(WORD_SIZE_MAX, Math.max(WORD_SIZE_MIN, next));
+    try { localStorage.setItem(FC_WORD_SIZE_KEY, String(clamped)); } catch {}
+    applyWordSize(clamped);
+  }
 
   /* ── Helpers ────────────────────────────────────────────────────────────── */
   function $id(id) { return document.getElementById(id); }
@@ -225,6 +249,7 @@
     fc.flipped         = false;
     fc.cards           = buildSession();
     updateStreak();
+    applyWordSize(getWordSize());
     const _sa = $id('fc-actions');
     _sa.style.display = 'flex'; _sa.style.visibility = 'hidden'; _sa.style.opacity = '0';
     $id('fc-complete').style.display = 'none';
@@ -747,7 +772,9 @@
     if (absDx < 12 && absDy < 12) {
       e.preventDefault();
       if (!fc.flipped) {
-        if (e.target.closest('#fc-speak-btn')) speakCurrent();
+        if (e.target.closest('#fc-speak-btn'))       speakCurrent();
+        else if (e.target.closest('#fc-word-size-dec')) changeWordSize(-WORD_SIZE_STEP);
+        else if (e.target.closest('#fc-word-size-inc')) changeWordSize(+WORD_SIZE_STEP);
         else flipCard();
       } else {
         if (e.target.closest('#fc-sentence-speak-btn')) speakSentence();
@@ -764,6 +791,9 @@
     $id('fc-card').addEventListener('click', () => fc.flipped ? unflipCard() : flipCard());
     $id('fc-speak-btn').addEventListener('click', e => { e.stopPropagation(); speakCurrent(); });
     $id('fc-sentence-speak-btn').addEventListener('click', e => { e.stopPropagation(); speakSentence(); });
+    $id('fc-word-size-dec').addEventListener('click', e => { e.stopPropagation(); changeWordSize(-WORD_SIZE_STEP); });
+    $id('fc-word-size-inc').addEventListener('click', e => { e.stopPropagation(); changeWordSize(+WORD_SIZE_STEP); });
+    applyWordSize(getWordSize());
     $id('fc-hard-btn').addEventListener('click', () => rateCard('hard'));
     $id('fc-good-btn').addEventListener('click', () => rateCard('good'));
     $id('fc-easy-btn').addEventListener('click', () => rateCard('easy'));
