@@ -72,6 +72,24 @@
 
       <!-- Rating buttons -->
       <div id="fc-actions" style="visibility:hidden;opacity:0">
+        <!-- Ghost swipe guide — visible on front face (visibility:visible overrides parent) -->
+        <div id="fc-swipe-hint" aria-hidden="true">
+          <div class="fc-sh-btn fc-sh-hard">
+            <span class="fc-btn-gesture fc-sh-g-hard">👈</span>
+            <span class="fc-btn-icon">😰</span>
+            <span class="fc-btn-label">Hard</span>
+          </div>
+          <div class="fc-sh-btn fc-sh-good">
+            <span class="fc-btn-gesture fc-sh-g-good">👆</span>
+            <span class="fc-btn-icon">😊</span>
+            <span class="fc-btn-label">Good</span>
+          </div>
+          <div class="fc-sh-btn fc-sh-easy">
+            <span class="fc-btn-gesture fc-sh-g-easy">👉</span>
+            <span class="fc-btn-icon">🤩</span>
+            <span class="fc-btn-label">Easy</span>
+          </div>
+        </div>
         <button id="fc-hard-btn" class="fc-btn fc-hard">
           <span class="fc-btn-gesture">👈</span>
           <span class="fc-btn-icon">😰</span>
