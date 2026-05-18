@@ -2144,9 +2144,10 @@ button:hover {
     text-align: left;
 }
 #fc-sentence-nl {
-    font-size: 1.1rem;
+    font-family: 'Caveat', cursive;
+    font-weight: 500;
+    font-size: 1.35rem;
     color: #0369a1;
-    font-style: italic;
     line-height: 1.5;
     flex: 1;
 }
@@ -2690,7 +2691,7 @@ button:hover {
 
     #fc-english      { font-size: clamp(1.4rem, 8vw, 3rem); }
     #fc-vietnamese   { font-size: 1.1rem; }
-    #fc-sentence-nl  { font-size: 1.1rem; }
+    #fc-sentence-nl  { font-size: 1.4rem; }
     #fc-sentence-en  { font-size: 0.8rem; }
 
     /* ── Action buttons: thumb zone at bottom ─────────────────── */
