@@ -255,6 +255,7 @@
   function renderCard() {
     const card = fc.cards[fc.index];
     if (!card) { showComplete(); return; }
+    $id('fc-swipe-hint').style.visibility = ''; // restore ghost for front face
 
     const pct = Math.round((fc.index / fc.cards.length) * 100);
     $id('fc-session-bar').style.width = pct + '%';
@@ -311,6 +312,7 @@
 
     fc.flipped = true;
     setTimeout(() => {
+      $id('fc-swipe-hint').style.visibility = 'hidden'; // hide ghost; real buttons take over
       const act = $id('fc-actions');
       act.style.pointerEvents = '';   // clear inline override from rateCard
       act.style.visibility = 'visible';
@@ -342,6 +344,7 @@
     fc.ttsSeq++;
     const seq = fc.ttsSeq;
     window.speechSynthesis && window.speechSynthesis.cancel();
+    $id('fc-swipe-hint').style.visibility = ''; // restore ghost when flipping back
     const _ua = $id('fc-actions');
     _ua.style.visibility = 'hidden'; _ua.style.opacity = '0';
 
