@@ -1380,6 +1380,12 @@ button:hover {
         padding-right: 5px;
     }
 
+    /* Restore separation between the two spacer blocks on mobile */
+    .left-menu > .spacer + .spacer {
+        padding-top: 14px;
+        border-top: 1px solid #e2e8f0;
+    }
+
     /* Show drawer when menu is NOT hidden */
     .container:not(.menu-hidden) .left-menu {
         transform: translateX(0);
