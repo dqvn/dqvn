@@ -26,6 +26,7 @@
     sessionRequeues: {},
     ttsSeq: 0,
     touchStartX: 0, touchStartY: 0, isDragging: false,
+    progressLoaded: false,   // true only after startGame() loads real data
   };
 
   /* ── Word size ──────────────────────────────────────────────────────────── */
@@ -117,6 +118,7 @@
   }
 
   function saveProgress() {
+    if (!fc.progressLoaded) return; // never overwrite with the uninitialised empty object
     try { localStorage.setItem(FC_KEY, JSON.stringify(fc.progress)); }
     catch (e) { console.warn('FC: could not save progress', e); }
   }
@@ -271,6 +273,7 @@
                        || localStorage.getItem('curPage')
                        || 'default';
     fc.progress        = loadProgress();
+    fc.progressLoaded  = true;
     migrateDefaultProgress();
     fc.meta            = loadMeta();
     fc.stats           = { hard: 0, good: 0, easy: 0, total: 0 };
