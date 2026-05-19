@@ -352,6 +352,7 @@ async function speakEngTextAsync(text) {
 
 function loadJsonData(filename, callback) {
     localStorage.setItem(_storageKey, filename);
+    localStorage.setItem('fc-lesson', filename); // unified key read by flashcard.js
     const xhr = new XMLHttpRequest();
     xhr.open('GET', `data/vocabularies/${filename}.json`, true);
     xhr.onload = function () {

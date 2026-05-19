@@ -1991,6 +1991,7 @@ button:hover {
     align-items: stretch;     /* card fills full scene height */
     flex: 1;
     min-height: 0;
+    position: relative;       /* anchor for .fc-word-size-ctrl */
 }
 
 /* ── Card ───────────────────────────────────────────────────────────────── */
@@ -2058,10 +2059,11 @@ button:hover {
 /* ── Word size controls ──────────────────────────────────────────────────── */
 .fc-word-size-ctrl {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: 4px;          /* sits in the deck-peek padding zone at the scene bottom */
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    gap: 5px;
+    gap: 8px;
     z-index: 5;
 }
 

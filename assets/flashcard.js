@@ -5,6 +5,7 @@
   const FC_KEY               = 'nl_srs_v3';
   const FC_META_KEY          = 'nl_srs_meta_v3';
   const FC_WORD_SIZE_KEY     = 'nl_fc_word_size';
+  const FC_LESSON_KEY        = 'fc-lesson';
   const SESSION_SIZE         = 20;
   const NEW_PER_DAY          = 10;
   const MIN_EASE             = 1.3;
@@ -118,6 +119,31 @@
   function saveProgress() {
     try { localStorage.setItem(FC_KEY, JSON.stringify(fc.progress)); }
     catch (e) { console.warn('FC: could not save progress', e); }
+  }
+
+  /* One-time migration: if legacy data sits under 'default' and the current
+     lesson has no progress yet, copy matching words across by Dutch word key.
+     Safe: does not delete 'default'; only runs when the lesson bucket is empty. */
+  function migrateDefaultProgress() {
+    const defProg = fc.progress['default'];
+    if (!defProg || fc.chapterId === 'default') return;
+
+    const existing = fc.progress[fc.chapterId];
+    const hasProgress = existing &&
+      Object.keys(existing).some(k => k !== '_totals');
+    if (hasProgress) return;
+
+    const migrated = {};
+    let count = 0;
+    for (const word of (wordList || [])) {
+      const entry = defProg[word.dutch];
+      if (entry && entry.state) { migrated[word.dutch] = entry; count++; }
+    }
+    if (count === 0) return;
+
+    fc.progress[fc.chapterId] = migrated;
+    saveProgress();
+    console.info(`[FC] Migrated ${count} word(s) from legacy "default" → "${fc.chapterId}"`);
   }
 
   function loadMeta() {
@@ -240,8 +266,12 @@
   }
 
   function startGame() {
-    fc.chapterId       = localStorage.getItem('currentPage') || 'default';
+    fc.chapterId       = localStorage.getItem(FC_LESSON_KEY)
+                       || localStorage.getItem('currentPage')
+                       || localStorage.getItem('curPage')
+                       || 'default';
     fc.progress        = loadProgress();
+    migrateDefaultProgress();
     fc.meta            = loadMeta();
     fc.stats           = { hard: 0, good: 0, easy: 0, total: 0 };
     fc.sessionRequeues = {};
@@ -771,10 +801,10 @@
     // Pure tap — suppress synthetic mouse click via preventDefault
     if (absDx < 12 && absDy < 12) {
       e.preventDefault();
+      if (e.target.closest('#fc-word-size-dec')) { changeWordSize(-WORD_SIZE_STEP); return; }
+      if (e.target.closest('#fc-word-size-inc')) { changeWordSize(+WORD_SIZE_STEP); return; }
       if (!fc.flipped) {
-        if (e.target.closest('#fc-speak-btn'))       speakCurrent();
-        else if (e.target.closest('#fc-word-size-dec')) changeWordSize(-WORD_SIZE_STEP);
-        else if (e.target.closest('#fc-word-size-inc')) changeWordSize(+WORD_SIZE_STEP);
+        if (e.target.closest('#fc-speak-btn')) speakCurrent();
         else flipCard();
       } else {
         if (e.target.closest('#fc-sentence-speak-btn')) speakSentence();
