@@ -1023,6 +1023,7 @@ $('ft-year').textContent   = new Date().getFullYear();
       return;
     }
     renderSidebar();
+    acquireWakeLock();  /* keep screen on by default */
     buildSearchIndex(); /* background — populates _searchIdx for cross-lesson search */
     /* Auto-select last used lesson, or first lesson */
     const lastId = st.store.lastLesson;
