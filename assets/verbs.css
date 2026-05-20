@@ -517,9 +517,8 @@ body {
 .vcard {
   width: 100%;
   border-radius: var(--r14); box-shadow: var(--shadow); overflow: hidden;
-  animation: fadeIn .15s ease;
 }
-#study-container { width: 100%; max-width: 880px; }
+#study-container { width: 100%; max-width: 880px; transition: opacity .18s ease; }
 #quiz-container  { width: 100%; max-width: 720px; }
 
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }

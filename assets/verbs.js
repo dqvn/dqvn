@@ -413,7 +413,10 @@ function typeBadge(type) {
 function startStudy() {
   st.studyIdx = 0;
   show('s-study');
+  const c = $('study-container');
+  c.style.opacity = '0';
   renderStudyCard();
+  requestAnimationFrame(() => { c.style.opacity = '1'; });
 }
 
 function renderStudyCard() {
@@ -497,14 +500,22 @@ function renderStudyCard() {
   const seq = st.ttsSeq;
   setTimeout(() => { if (st.ttsSeq === seq) speak(v.infinitive); }, 420);
 
+  const fadeToCard = fn => {
+    const c = $('study-container');
+    c.style.opacity = '0';
+    setTimeout(() => { fn(); requestAnimationFrame(() => { c.style.opacity = '1'; }); }, 180);
+  };
+
   $('next-btn').onclick = () => {
-    st.studyIdx++;
-    if (st.studyIdx >= st.session.length) { buildQuiz(); startQuiz(); }
-    else renderStudyCard();
+    fadeToCard(() => {
+      st.studyIdx++;
+      if (st.studyIdx >= st.session.length) { buildQuiz(); startQuiz(); }
+      else renderStudyCard();
+    });
   };
 
   const prevBtn = $('prev-btn');
-  if (prevBtn) prevBtn.onclick = () => { st.studyIdx--; renderStudyCard(); };
+  if (prevBtn) prevBtn.onclick = () => fadeToCard(() => { st.studyIdx--; renderStudyCard(); });
 
   if ($('study-container')._kh) document.removeEventListener('keydown', $('study-container')._kh);
   const kh = e => {
