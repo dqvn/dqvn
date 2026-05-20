@@ -429,7 +429,10 @@ function renderStudyCard() {
     const rowsHtml = rows.map(([p, f]) => f
       ? `<div class="trow"><span class="tpron">${p}</span><span class="tform">${f}</span></div>`
       : '').join('');
-    const ttsVal = extraTts || (rows[0]?.[1] || '');
+    const ttsVal = extraTts || rows
+      .filter(([, f]) => f)
+      .flatMap(([p, f]) => p.split('/').map(pr => `${pr.trim()} ${f}`))
+      .join(', ');
     return `
       <div class="tblock">
         <div class="tlabel ${cls}">${label}
