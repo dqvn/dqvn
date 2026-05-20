@@ -45,6 +45,11 @@
 html,
 body {
   height: 100%;
+  max-width: 100%;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
@@ -348,11 +353,15 @@ body {
   display: grid;
   grid-template-columns: 1fr 280px;
   gap: 0;
+  min-width: 0;
 }
 
 .content {
   padding: 24px clamp(16px, 3vw, 40px);
   max-width: 920px;
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .content .empty-state {
@@ -515,6 +524,13 @@ body {
 }
 
 @media (max-width: 900px) {
+  /* ── Prevent wide content from causing horizontal page scroll ── */
+  html, body { overflow-x: hidden; max-width: 100%; }
+  .layout { min-height: calc(100dvh - 52px - 3px); width: 100%; }
+  .tts-bar { width: 100%; box-sizing: border-box; }
+  .bottom-bar { width: 100%; box-sizing: border-box; }
+  #g-mob-bar { width: 100%; box-sizing: border-box; }
+
   /* ── Mobile bar: show / desktop header: hide ── */
   #g-mob-bar { display: flex; }
   .app-header { display: none; }
@@ -566,6 +582,13 @@ body {
   .content {
     padding: 14px 16px;
     max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .main {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
   }
 
   /* ── Bottom bar: safe-area + touch-friendly ── */
@@ -628,17 +651,33 @@ body {
   display: inline;
 }
 
-/* Tables */
+/* Tables — wrapped by JS in .table-wrap for horizontal scrolling */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 16px 0;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+.table-wrap table { margin: 0; min-width: 100%; }
+
 .content table {
   width: 100%;
   border-collapse: collapse;
-  margin: 16px 0;
 }
 
 .content table th,
 .content table td {
   border: 1px solid var(--border);
   padding: 8px 10px;
+  white-space: nowrap;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-sm);
 }
 
 /* Print */
