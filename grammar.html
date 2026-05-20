@@ -16,88 +16,115 @@
 
   <!-- External libs (client-only, CDN) -->
   <!-- Marked: parse Markdown -->
-  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js" defer crossorigin="anonymous"></script>
   <!-- DOMPurify: sanitize HTML -->
-  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.7/dist/purify.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.7/dist/purify.min.js" defer crossorigin="anonymous"></script>
   <!-- Highlight.js: syntax highlight (nếu có khối code) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.10.0/styles/atom-one-dark.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.10.0/lib/common.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.10.0/lib/common.min.js" defer crossorigin="anonymous"></script>
 
   <!-- ── Mobile debug overlay (remove once issue is fixed) ── -->
   <script>
   (function(){
-    var _logs = [];
-    var _panel = null;
+    var _buf = [];   /* all captured log lines */
 
-    function panel() {
-      if (_panel) return _panel;
-      _panel = document.createElement('div');
-      _panel.id = '__dbg';
-      _panel.style.cssText = [
+    /* ── Build/get the panel ── */
+    function getPanel() {
+      var p = document.getElementById('__dbg');
+      if (p) return p;
+
+      p = document.createElement('div');
+      p.id = '__dbg';
+      p.style.cssText = [
         'position:fixed','bottom:0','left:0','right:0','z-index:99999',
-        'max-height:55dvh','overflow-y:auto',
-        'background:#0d0d0d','color:#f87171',
-        'font:12px/1.5 monospace','padding:10px 12px 16px',
+        'max-height:60dvh','overflow-y:auto',
+        'background:#0a0a0a','color:#e5e7eb',
+        'font:11px/1.55 monospace','padding:8px 10px 14px',
         'border-top:2px solid #ef4444',
-        'box-shadow:0 -4px 24px rgba(0,0,0,.7)',
+        'box-shadow:0 -6px 28px rgba(0,0,0,.8)',
         'white-space:pre-wrap','word-break:break-all',
+        'display:none',
       ].join(';');
-      var hdr = document.createElement('div');
-      hdr.style.cssText = 'display:flex;justify-content:space-between;align-items:center;margin-bottom:6px';
+
+      /* header bar */
+      var bar = document.createElement('div');
+      bar.style.cssText = 'display:flex;gap:6px;align-items:center;margin-bottom:6px;flex-wrap:wrap';
+
       var title = document.createElement('b');
-      title.textContent = '🐛 JS Errors (mobile debug)';
-      title.style.color = '#fca5a5';
-      var btn = document.createElement('button');
-      btn.textContent = '✕ close';
-      btn.style.cssText = 'background:#1f1f1f;border:1px solid #555;color:#ccc;padding:2px 8px;border-radius:4px;cursor:pointer;font-size:11px';
-      btn.onclick = function(){ _panel.style.display='none'; };
-      hdr.appendChild(title); hdr.appendChild(btn);
-      _panel.appendChild(hdr);
-      document.body ? document.body.appendChild(_panel) : document.addEventListener('DOMContentLoaded', function(){ document.body.appendChild(_panel); });
-      return _panel;
+      title.textContent = '🐛 Mobile debug';
+      title.style.cssText = 'color:#fca5a5;flex:1;font-size:12px';
+
+      var btnCopy = document.createElement('button');
+      btnCopy.textContent = '📋 Copy';
+      btnCopy.style.cssText = 'background:#1f2937;border:1px solid #4b5563;color:#d1d5db;padding:3px 9px;border-radius:4px;cursor:pointer;font-size:11px';
+      btnCopy.onclick = function(){
+        navigator.clipboard && navigator.clipboard.writeText(_buf.join('\n\n'))
+          .then(function(){ btnCopy.textContent = '✅ Copied!'; setTimeout(function(){ btnCopy.textContent = '📋 Copy'; }, 1500); })
+          .catch(function(){ prompt('Copy manually:', _buf.join('\n\n')); });
+      };
+
+      var btnClose = document.createElement('button');
+      btnClose.textContent = '✕';
+      btnClose.style.cssText = 'background:#1f2937;border:1px solid #4b5563;color:#d1d5db;padding:3px 9px;border-radius:4px;cursor:pointer;font-size:11px';
+      btnClose.onclick = function(){ p.style.display = 'none'; };
+
+      bar.appendChild(title); bar.appendChild(btnCopy); bar.appendChild(btnClose);
+      p.appendChild(bar);
+
+      var mount = function(){ document.body.appendChild(p); };
+      document.body ? mount() : document.addEventListener('DOMContentLoaded', mount);
+      return p;
     }
 
-    function push(kind, msg, src, line, col) {
-      var entry = document.createElement('div');
-      entry.style.cssText = 'border-top:1px solid #333;padding:5px 0';
-      var time = new Date().toTimeString().slice(0,8);
-      entry.textContent = '[' + time + '] ' + kind + ': ' + msg +
-        (src  ? '\n  at ' + src  : '') +
-        (line ? ':' + line + (col ? ':' + col : '') : '');
-      panel().appendChild(entry);
-      panel().style.display = '';
-      panel().scrollTop = panel().scrollHeight;
-      _logs.push(entry.textContent);
+    var _colors = { ERROR:'#f87171', PROMISE:'#fb923c', 'console.error':'#f87171',
+                    'console.warn':'#fbbf24', 'console.log':'#86efac' };
+
+    function push(kind, text) {
+      var time = new Date().toTimeString().slice(0, 8);
+      var line = '[' + time + '] [' + kind + ']\n' + text;
+      _buf.push(line);
+
+      var p = getPanel();
+      var row = document.createElement('div');
+      row.style.cssText = 'border-top:1px solid #1f2937;padding:4px 0;color:' + (_colors[kind] || '#e5e7eb');
+      row.textContent = line;
+      p.appendChild(row);
+      p.style.display = '';
+      p.scrollTop = p.scrollHeight;
     }
 
-    /* Sync errors */
+    function strErr(a) {
+      if (a instanceof Error) return a.stack || (a.name + ': ' + a.message);
+      try { return typeof a === 'object' ? JSON.stringify(a, null, 2) : String(a); }
+      catch(e) { return String(a); }
+    }
+
+    /* ── Sync JS errors (now works cross-origin with crossorigin="anonymous") ── */
     window.onerror = function(msg, src, line, col, err) {
-      push('ERROR', err ? (err.stack || msg) : msg, src, line, col);
+      var detail = err ? strErr(err) : msg;
+      push('ERROR', detail + (src ? '\n  at ' + src + ':' + line + ':' + col : ''));
       return false;
     };
 
-    /* Unhandled promise rejections */
+    /* ── Unhandled promise rejections (module errors arrive here) ── */
     window.addEventListener('unhandledrejection', function(e) {
-      var reason = e.reason;
-      var msg = reason instanceof Error ? (reason.stack || reason.message) : String(reason);
-      push('PROMISE', msg);
+      push('PROMISE', strErr(e.reason));
     });
 
-    /* console.error override */
-    var _ce = console.error.bind(console);
-    console.error = function() {
-      _ce.apply(console, arguments);
-      push('console.error', Array.from(arguments).map(function(a){
-        return (a instanceof Error) ? (a.stack || a.message) : String(a);
-      }).join(' '));
-    };
-
-    /* console.warn override */
-    var _cw = console.warn.bind(console);
-    console.warn = function() {
-      _cw.apply(console, arguments);
-      push('console.warn', Array.from(arguments).map(function(a){ return String(a); }).join(' '));
-    };
+    /* ── console overrides ── */
+    ['error','warn','log'].forEach(function(lvl){
+      var orig = console[lvl].bind(console);
+      console[lvl] = function() {
+        orig.apply(console, arguments);
+        /* only show console.log if it looks useful (skip frequent noise) */
+        if (lvl === 'log') {
+          var txt = Array.from(arguments).map(strErr).join(' ');
+          if (/error|fail|warn|undefined|null|exception/i.test(txt)) push('console.log', txt);
+        } else {
+          push('console.' + lvl, Array.from(arguments).map(strErr).join(' '));
+        }
+      };
+    });
   })();
   </script>
 
