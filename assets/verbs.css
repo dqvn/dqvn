@@ -184,6 +184,116 @@ body {
   line-height: 1.5;
 }
 
+/* ── Sidebar search ── */
+#sb-search-wrap {
+  flex-shrink: 0;
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(255,255,255,.07);
+}
+.sb-search-row {
+  display: flex; align-items: center; gap: 7px;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 8px;
+  padding: 0 10px;
+  transition: border-color .15s;
+}
+.sb-search-row:focus-within { border-color: rgba(232,93,4,.65); }
+.sb-search-row svg { flex-shrink: 0; color: rgba(255,255,255,.3); }
+#sb-search-inp {
+  flex: 1; min-width: 0;
+  background: transparent; border: none; outline: none;
+  color: rgba(255,255,255,.88); font-size: .78rem;
+  padding: 8px 0;
+}
+#sb-search-inp::placeholder { color: rgba(255,255,255,.25); }
+#sb-search-clr {
+  display: none; align-items: center;
+  background: none; border: none; cursor: pointer;
+  color: rgba(255,255,255,.35); font-size: .68rem;
+  padding: 3px 1px; border-radius: 4px; transition: color .15s;
+  -webkit-tap-highlight-color: transparent;
+}
+#sb-search-clr:hover { color: rgba(255,255,255,.8); }
+#sb-search-clr.visible { display: flex; }
+
+/* Search results panel (replaces lesson-list when active) */
+#sb-search-results {
+  display: none;
+  flex: 1;
+  overflow-y: auto;
+  padding: 6px 6px 8px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,.15) transparent;
+}
+#sb-search-results.active { display: block; }
+.sr-count {
+  font-size: .6rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .06em;
+  color: rgba(255,255,255,.28);
+  padding: 4px 5px 7px;
+}
+.sr-item {
+  padding: 9px 11px;
+  border-radius: 7px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background .12s, border-color .12s;
+  margin-bottom: 3px;
+  -webkit-tap-highlight-color: transparent;
+}
+.sr-item:hover {
+  background: rgba(255,255,255,.08);
+  border-color: rgba(255,255,255,.10);
+}
+.sr-item:active { background: rgba(255,255,255,.13); }
+.sr-top {
+  display: flex; align-items: baseline;
+  justify-content: space-between; gap: 6px;
+}
+.sr-inf {
+  font-size: .88rem; font-weight: 700; color: #fff;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.sr-lesson-badge {
+  font-size: .56rem; font-weight: 700;
+  color: rgba(255,255,255,.38);
+  background: rgba(255,255,255,.08);
+  border-radius: 4px; padding: 2px 5px;
+  flex-shrink: 0; white-space: nowrap;
+}
+.sr-tr {
+  font-size: .71rem; color: rgba(255,255,255,.42);
+  margin-top: 1px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.sr-match {
+  display: flex; align-items: center; gap: 5px;
+  margin-top: 4px;
+}
+.sr-match-lbl {
+  font-size: .58rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .05em; color: rgba(255,255,255,.28);
+  flex-shrink: 0;
+}
+.sr-match-val {
+  font-size: .72rem; color: var(--acc); font-weight: 600;
+}
+.sr-empty {
+  padding: 24px 12px;
+  text-align: center;
+  color: rgba(255,255,255,.28);
+  font-size: .78rem;
+  line-height: 1.5;
+}
+.sr-building {
+  padding: 16px 12px;
+  text-align: center;
+  color: rgba(255,255,255,.25);
+  font-size: .74rem;
+  display: flex; align-items: center; justify-content: center; gap: 7px;
+}
+
 /* ── TTS voice selector ── */
 #sb-tts {
   flex-shrink: 0;
