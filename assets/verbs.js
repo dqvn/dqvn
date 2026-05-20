@@ -4,7 +4,7 @@
 /* ─────────────────────────────────────────────────────────────────────────────
    CONSTANTS & STATE
 ───────────────────────────────────────────────────────────────────────────── */
-const SESS        = 10;
+const SESS        = 7;
 const QUIZ_N      = 15;
 const STORE_KEY   = 'nl_verbs_v3';
 const CONF_COLORS = ['#e74c3c','#3b82f6','#10b981','#8b5cf6','#f59e0b','#ec4899','#06b6d4','#84cc16'];
@@ -51,6 +51,15 @@ function show(id) {
     if (s === id) { e.classList.add('active'); e.scrollTop = 0; }
     else e.classList.remove('active');
   });
+  /* Sync mobile top bar */
+  const onHome = id === 's-home';
+  const mobBack = $('mob-back'), mobHam = $('hamburger');
+  if (mobBack) mobBack.style.display = onHome ? 'none' : 'flex';
+  if (mobHam)  mobHam.style.display  = onHome ? 'flex'  : 'none';
+  const screenTitles = { 's-study': '📖 Study', 's-quiz': '🎯 Quiz', 's-results': '🏆 Results', 's-list': '📚 Browse' };
+  $('mob-cur').textContent = onHome
+    ? (st.currentLesson ? (st.currentLesson.subtitle || st.currentLesson.title) : 'Dutch Verb Trainer')
+    : (screenTitles[id] || '');
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
@@ -115,7 +124,10 @@ function getLessonData() {
 let _voices = [];
 if (window.speechSynthesis) {
   _voices = speechSynthesis.getVoices();
-  speechSynthesis.addEventListener('voiceschanged', () => { _voices = speechSynthesis.getVoices(); });
+  speechSynthesis.addEventListener('voiceschanged', () => {
+    _voices = speechSynthesis.getVoices();
+    populateVoiceSelect(); /* refresh dropdown when browser loads async voices */
+  });
 }
 
 function speak(text) {
@@ -124,10 +136,67 @@ function speak(text) {
   const u = new SpeechSynthesisUtterance(text);
   u.lang = 'nl-NL';
   u.rate = 0.88;
-  const v = _voices.find(x => x.lang.startsWith('nl')) || _voices.find(x => x.lang === 'nl-NL');
+  /* Prefer stored voice name; fall back to any Dutch voice */
+  let v = st.store?.ttsVoice
+    ? _voices.find(x => x.name === st.store.ttsVoice)
+    : null;
+  if (!v) v = _voices.find(x => x.lang.startsWith('nl')) || _voices.find(x => x.lang === 'nl-NL');
   if (v) u.voice = v;
   speechSynthesis.speak(u);
 }
+
+function populateVoiceSelect() {
+  const sel = $('tts-voice-select');
+  if (!sel) return;
+  const dutch = _voices.filter(v => v.lang.startsWith('nl'));
+  if (!dutch.length) {
+    sel.innerHTML = '<option value="">No Dutch voices found</option>';
+    return;
+  }
+  const saved  = st.store?.ttsVoice;
+  /* Use saved name if still available; otherwise default to first Dutch voice */
+  const active = dutch.find(v => v.name === saved) ? saved : dutch[0].name;
+  sel.innerHTML = dutch.map(v => {
+    /* Strip " - Language (Country)" suffix from Microsoft voice names */
+    const label = v.name.replace(/ - [^-]+$/, '');
+    return `<option value="${v.name}"${v.name === active ? ' selected' : ''}>${label}</option>`;
+  }).join('');
+  /* Auto-persist the resolved voice if it changed */
+  if (st.store && active !== saved) {
+    st.store.ttsVoice = active;
+    writeStore();
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   WAKE LOCK  (keeps screen on while studying — mobile only)
+───────────────────────────────────────────────────────────────────────────── */
+let _wakeLock = null;
+
+async function acquireWakeLock() {
+  try {
+    _wakeLock = await navigator.wakeLock.request('screen');
+    $('mob-wake-btn').classList.add('wake-on');
+    _wakeLock.addEventListener('release', () => {
+      _wakeLock = null;
+      $('mob-wake-btn').classList.remove('wake-on');
+    });
+  } catch { /* not supported or permission denied — ignore */ }
+}
+
+function toggleWakeLock() {
+  if (!('wakeLock' in navigator)) return;
+  if (_wakeLock) { _wakeLock.release(); }
+  else { acquireWakeLock(); }
+}
+
+/* Re-acquire after page visibility restored (iOS releases it on tab switch) */
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible' && _wakeLock === null
+      && $('mob-wake-btn').classList.contains('wake-on')) {
+    acquireWakeLock();
+  }
+});
 
 /* ─────────────────────────────────────────────────────────────────────────────
    SIDEBAR
@@ -202,13 +271,12 @@ async function loadManifest() {
   } catch {}
 
   /* Fallback: parallel HEAD probes v01..v20 */
-  const probes = Array.from({ length: 20 }, (_, i) => {
+  const probes = Array.from({ length: 20 }, async (_, i) => {
     const n = String(i + 1).padStart(2, '0');
-    return fetch(`data/verbs/v${n}.json`, { method: 'HEAD' })
-      .then(r => r.ok
-        ? { id: `v${n}`, title: `Lesson ${i + 1}`, subtitle: `Dutch Verbs ${i + 1}`, file: `v${n}.json` }
-        : null)
-      .catch(() => null);
+    try {
+      const r = await fetch(`data/verbs/v${n}.json`, { method: 'HEAD' });
+      return r.ok ? { id: `v${n}`, title: `Lesson ${i + 1}`, subtitle: `Dutch Verbs ${i + 1}`, file: `v${n}.json` } : null;
+    } catch { return null; }
   });
   const results = await Promise.all(probes);
   st.manifest = results.filter(Boolean);
@@ -270,7 +338,7 @@ function renderHome() {
   }
 
   $('home-welcome').style.display = 'none';
-  $('home-lesson').style.display  = 'flex';
+  $('home-lesson').style.display  = ''; /* let CSS control: flex (base) or grid (≥1280px) */
 
   const ld  = getLessonData();
   const ans = ld.totalAnswered || 0;
@@ -744,11 +812,19 @@ $('btn-retry').onclick        = () => { buildSession(); startStudy(); };
 $('btn-review-again').onclick = () => { st.studyIdx = 0; show('s-study'); renderStudyCard(); };
 $('hamburger').onclick        = () => toggleSidebar();
 $('drawer-overlay').onclick   = () => toggleSidebar(false);
+$('mob-back').onclick         = renderHome;
+$('mob-wake-btn').onclick     = toggleWakeLock;
+$('tts-voice-select').addEventListener('change', e => {
+  st.store.ttsVoice = e.target.value;
+  writeStore();
+  speak('Hallo! Dit is mijn stem.');  /* preview the newly selected voice */
+});
 
 /* ─────────────────────────────────────────────────────────────────────────────
    INIT
 ───────────────────────────────────────────────────────────────────────────── */
 st.store = readStore();
+populateVoiceSelect(); /* handles browsers that return voices synchronously */
 
 $('lesson-list').innerHTML = '<div class="sb-load"><div class="spin"></div> Loading lessons…</div>';
 $('ft-year').textContent   = new Date().getFullYear();
