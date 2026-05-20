@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Dutch Verb Trainer 🇳🇱</title>
+  <link rel="icon" type="image/x-icon" href="assets/dutch.ico">
+  <link rel="stylesheet" href="assets/verbs.css">
+</head>
+<body>
+<div id="confetti-layer"></div>
+
+<!-- Mobile top bar -->
+<div id="mob-bar">
+  <button class="mob-ico" id="hamburger" aria-label="Open lessons">☰</button>
+  <div id="mob-cur">Dutch Verb Trainer</div>
+</div>
+
+<!-- Drawer overlay (mobile) -->
+<div id="drawer-overlay"></div>
+
+<!-- Sidebar -->
+<nav id="sidebar">
+  <div class="sb-drag-handle"></div>
+  <div class="sb-logo">
+    <h1>🇳🇱 Verb Trainer</h1>
+    <p>Dutch Conjugation Practice</p>
+    <div id="sb-streak"></div>
+  </div>
+  <div id="lesson-list"></div>
+  <footer id="app-footer">
+    <div class="ft-avatar">QN</div>
+    <div class="ft-info">
+      <span class="ft-name">Quang, Nguyen Dang</span>
+      <a class="ft-email" href="mailto:dqvn2002@gmail.com">dqvn2002@gmail.com</a>
+    </div>
+    <span class="ft-year" id="ft-year"></span>
+  </footer>
+</nav>
+
+<!-- Content area -->
+<div id="content">
+
+  <!-- HOME -->
+  <div id="s-home" class="screen active">
+    <div id="home-welcome">
+      <div class="flag">🇳🇱</div>
+      <h2>Dutch Verb Trainer</h2>
+      <p>Select a lesson from the menu to start practising conjugations.</p>
+      <p class="mob-hint">Tap ☰ above to open the lesson menu.</p>
+    </div>
+    <div id="home-lesson" style="display:none">
+      <div class="home-lesson-hdr" id="home-lesson-hdr"></div>
+      <div class="home-stats-row" id="home-stats"></div>
+      <div class="home-actions">
+        <button class="btn btn-primary" id="btn-start-study" style="font-size:1.05rem;padding:1rem">▶ Study + Quiz (10 verbs)</button>
+        <button class="btn btn-secondary" id="btn-quiz-only">⚡ Quiz Only</button>
+        <button class="btn btn-secondary" id="btn-browse">📖 Browse All Verbs</button>
+        <a href="index.html" class="btn btn-secondary" style="text-decoration:none">🏠 Back to Main</a>
+      </div>
+      <div style="font-size:.7rem;color:var(--muted);text-align:center">10 random verbs · 15 quiz questions · keyboard shortcuts</div>
+    </div>
+  </div>
+
+  <!-- STUDY -->
+  <div id="s-study" class="screen">
+    <div class="top-bar">
+      <button class="top-bar-back" id="study-back">←</button>
+      <div class="pbar-wrap"><div class="pbar" id="study-pbar"></div></div>
+      <div class="counter" id="study-counter">1 / 10</div>
+    </div>
+    <div id="study-container" style="width:100%;max-width:700px"></div>
+    <div class="card-dots" id="study-dots"></div>
+  </div>
+
+  <!-- QUIZ -->
+  <div id="s-quiz" class="screen">
+    <div class="top-bar">
+      <button class="top-bar-back" id="quiz-back">←</button>
+      <div class="pbar-wrap"><div class="pbar" id="quiz-pbar"></div></div>
+      <div class="score-badge" id="quiz-score">0 / 0</div>
+    </div>
+    <div id="quiz-container" style="width:100%;max-width:600px"></div>
+    <div class="key-hint">Press <kbd>1</kbd><kbd>2</kbd><kbd>3</kbd><kbd>4</kbd> · <kbd>Enter</kbd> to continue</div>
+  </div>
+
+  <!-- RESULTS -->
+  <div id="s-results" class="screen">
+    <div class="res-trophy" id="res-trophy">🏆</div>
+    <div class="res-title"  id="res-title">Session Complete!</div>
+    <div class="res-score"  id="res-score">10 / 15</div>
+    <div class="res-grid"   id="res-grid"></div>
+    <div id="res-streak"></div>
+    <div class="res-actions">
+      <button class="btn btn-primary" id="btn-retry">🔄 New Session</button>
+      <button class="btn btn-secondary" id="btn-review-again" style="width:100%">📖 Review Same Verbs</button>
+      <a href="index.html" class="btn btn-secondary" style="width:100%;text-decoration:none">🏠 Main Menu</a>
+    </div>
+  </div>
+
+  <!-- BROWSE / LIST -->
+  <div id="s-list" class="screen">
+    <div class="top-bar">
+      <button class="top-bar-back" id="list-back">←</button>
+      <div style="font-weight:700;font-size:1rem;flex:1;text-align:center">All Verbs</div>
+      <div style="width:36px"></div>
+    </div>
+    <div class="list-grid" id="list-grid"></div>
+  </div>
+
+</div><!-- #content -->
+
+<script src="assets/verbs.js"></script>
+</body>
+</html>
