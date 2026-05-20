@@ -283,6 +283,15 @@ async function openChapter(idx, { fromPopState = false } = {}) {
   const safe = DOMPurify.sanitize(rawHtml, { USE_PROFILES: { html: true } });
   els.content.innerHTML = safe;
 
+  // Wrap every table in a scrollable container so wide tables don't break mobile layout
+  els.content.querySelectorAll('table').forEach(tbl => {
+    if (tbl.closest('.table-wrap')) return;
+    const wrap = document.createElement('div');
+    wrap.className = 'table-wrap';
+    tbl.parentNode.insertBefore(wrap, tbl);
+    wrap.appendChild(tbl);
+  });
+
   // Highlight code blocks
   document.querySelectorAll('pre code').forEach(block => {
     try { hljs.highlightElement(block); } catch { /* ignore */ }
@@ -1116,78 +1125,184 @@ function splitToSentences(text) {
 
   const out = [];
   let last = 0;
-  const rx = /([\.!?…]['")\]]*\s+)/g;
+  const rx = /([.!?…]['")\]]*(?:\s+|$))/g;
   let m;
   while ((m = rx.exec(text)) !== null) {
     const end = m.index + m[0].length;
     out.push({ text: text.slice(last, end), isSentence: true });
     last = end;
   }
-  if (last < text.length) out.push({ text: text.slice(last), isSentence: false });
+  if (last < text.length) {
+    const tail = text.slice(last);
+    // Treat the tail as a sentence if it ends with terminal punctuation
+    out.push({ text: tail, isSentence: /[.!?…]['")\]]*\s*$/.test(tail) });
+  }
   return out;
 }
 
-// Heuristic nhận diện câu tiếng Hà Lan
+// ── Dutch sentence detection ──────────────────────────────────────────────────
+
+// Vietnamese unique characters — any match means the text is Vietnamese, not Dutch
+const VI_UNIQUE = /[đĐơưắặẳẵầấậẫảẻẽẹểễệịỉĩọổỗộởỡợụủũứừửữựỳỷỹỵ]/;
+
 function isDutchSentence(sentence) {
   const s = (sentence || '').trim();
-  if (s.length < 4) return false;
-  if (!/[\.!?…]['")\]]*$/.test(s)) return false;
-  if (!/\s/.test(s)) return false;
+
+  // Minimum: at least 6 chars and 2 words
+  if (s.length < 6) return false;
+  if ((s.match(/\S+/g) || []).length < 2) return false;
+
+  // Must end with sentence-terminal punctuation
+  if (!/[.!?…]['")\]]*$/.test(s)) return false;
+
+  // Immediately reject Vietnamese text
+  if (VI_UNIQUE.test(s)) return false;
 
   const nl = scoreDutch(s);
   const en = scoreEnglish(s);
-  return nl >= 1; // && (nl - en) >= 1;
+
+  // Require meaningful Dutch evidence AND at least as much Dutch as English
+  return nl >= 2 && nl >= en;
 }
 
 function tokenizeWords(s) {
-  return (s.toLowerCase().match(/[a-zà-ÿ]+/gi) || []);
+  return (s.toLowerCase().match(/[a-zà-öø-ÿ]+/g) || []);
 }
+
+// Returns true for words whose spelling pattern is characteristic of Dutch
+function hasDutchSpelling(word) {
+  const w = word.toLowerCase();
+  if (w.length < 3) return false;
+  // Dutch-characteristic vowel digraphs (rare or absent in English/Vietnamese)
+  if (/ij|ui|oe|uw|aai|ooi|oei/.test(w)) return true;
+  // Dutch long-vowel spellings 'aa' and 'uu' (very rare in English native words)
+  if (/aa|uu/.test(w)) return true;
+  // Dutch derivational suffixes
+  if (w.length > 5 && /lijk$|heid$|baar$|ster$|ling$|ning$|ting$|king$|tje$|pje$|kje$/.test(w)) return true;
+  // Dutch participial/verbal prefixes on long-enough words
+  if (/^ge[a-z]{3,}/.test(w) && !/^geo|^gen[ea]|^geni/.test(w)) return true;
+  if (/^ver[a-z]{3,}/.test(w)) return true;
+  if (/^ont[a-z]{3,}/.test(w)) return true;
+  if (/^her[a-z]{3,}/.test(w)) return true;
+  return false;
+}
+
 function scoreDutch(s) {
   const words = tokenizeWords(s);
   if (!words.length) return 0;
   let score = 0;
 
+  // High-confidence Dutch-only function words (+2 each)
   const NL_FUNCTION = new Set([
+    // Subject / object pronouns
     'ik', 'jij', 'je', 'hij', 'zij', 'ze', 'wij', 'we', 'jullie', 'u',
-    'mij', 'me', 'jou', 'hem', 'haar', 'ons', 'hun', 'hen', 'u',
-    'die', 'dat', 'dit', 'deze',
-    'een', 'de', 'het',
-    'niet', 'geen', 'ook', 'al', 'toch', 'nog', 'wel', 'maar',
-    'en', 'of', 'want', 'omdat', 'dus', 'dat', 'als', 'terwijl', 'nadat', 'voordat',
-    'voor', 'naar', 'bij', 'met', 'op', 'aan', 'van', 'uit', 'over', 'onder', 'achter', 'tegen', 'door', 'tussen', 'om',
-    'hier', 'daar', 'waar', 'wanneer', 'hoe', 'waarom', 'welke'
+    'mij', 'me', 'jou', 'hem', 'haar', 'ons', 'hun', 'hen', 'zich', 'zelf', 'elkaar',
+    // Articles / demonstratives
+    'een', 'de', 'het', 'die', 'dit', 'deze', 'welke', 'welk',
+    // Negation / focus particles
+    'niet', 'geen', 'ook', 'toch', 'nog', 'wel', 'maar', 'al', 'er',
+    'graag', 'even', 'eens', 'zeker', 'gewoon', 'eigenlijk', 'misschien',
+    'altijd', 'nooit', 'soms', 'vaak', 'bijna', 'nu', 'dan', 'straks',
+    'morgen', 'gisteren', 'vandaag', 'vanavond',
+    // Conjunctions (Dutch-specific; 'en/of/dat' omitted — shared with EN/VI)
+    'want', 'omdat', 'dus', 'terwijl', 'nadat', 'voordat', 'totdat', 'hoewel', 'tenzij',
+    // Prepositions clearly Dutch
+    'naar', 'bij', 'met', 'aan', 'van', 'uit', 'over', 'onder', 'achter',
+    'tegen', 'door', 'tussen', 'om', 'langs', 'naast', 'voor', 'zonder',
+    // Interrogatives
+    'waar', 'wanneer', 'hoe', 'waarom', 'hoeveel', 'hoelang',
   ]);
+
+  // Dutch verb forms (+3 each — strongest signal)
   const NL_VERBS = new Set([
+    // zijn
     'ben', 'bent', 'is', 'zijn', 'was', 'waren', 'geweest',
+    // hebben
     'heb', 'hebt', 'heeft', 'hebben', 'had', 'hadden', 'gehad',
+    // doen
     'doe', 'doet', 'doen', 'deed', 'deden', 'gedaan',
+    // modals
     'zal', 'zult', 'zullen', 'zou', 'zouden',
     'kan', 'kunt', 'kunnen', 'kon', 'konden', 'gekund',
-    'moet', 'moeten', 'moest', 'moesten', 'gemoeten',
+    'moet', 'moeten', 'moest', 'moesten',
     'wil', 'wilt', 'willen', 'wou', 'wouden', 'gewild',
-    'mag', 'mogen', 'mocht', 'mochten', 'gemogen'
+    'mag', 'mogen', 'mocht', 'mochten',
+    // gaan / komen
+    'ga', 'gaat', 'gaan', 'ging', 'gingen', 'gegaan',
+    'kom', 'komt', 'komen', 'kwam', 'kwamen', 'gekomen',
+    // worden
+    'word', 'wordt', 'worden', 'werd', 'werden', 'geworden',
+    // common strong verbs
+    'zie', 'ziet', 'zien', 'zag', 'zagen', 'gezien',
+    'zeg', 'zegt', 'zeggen', 'zei', 'zeiden', 'gezegd',
+    'weet', 'weten', 'wist', 'wisten', 'geweten',
+    'vind', 'vindt', 'vinden', 'vond', 'vonden', 'gevonden',
+    'geef', 'geeft', 'geven', 'gaf', 'gaven', 'gegeven',
+    'neem', 'neemt', 'nemen', 'nam', 'namen', 'genomen',
+    'rijd', 'rijdt', 'rijden', 'reed', 'reden', 'gereden',
+    'sta', 'staat', 'staan', 'stond', 'stonden', 'gestaan',
+    'lig', 'ligt', 'liggen', 'lag', 'lagen', 'gelegen',
+    'zit', 'zitten', 'zat', 'zaten', 'gezeten',
+    'krijg', 'krijgt', 'krijgen', 'kreeg', 'kregen', 'gekregen',
+    'loop', 'loopt', 'lopen', 'liep', 'liepen', 'gelopen',
+    // common weak verbs
+    'maak', 'maakt', 'maken', 'maakte', 'maakten', 'gemaakt',
+    'werk', 'werkt', 'werken', 'werkte', 'werkten', 'gewerkt',
+    'woon', 'woont', 'wonen', 'woonde', 'woonden', 'gewoond',
+    'lees', 'leest', 'lezen', 'las', 'lazen', 'gelezen',
+    'schrijf', 'schrijft', 'schrijven', 'schreef', 'schreven', 'geschreven',
+    'denk', 'denkt', 'denken', 'dacht', 'dachten', 'gedacht',
+    'ken', 'kent', 'kennen', 'kende', 'kenden', 'gekend',
+    'help', 'helpt', 'helpen', 'hielp', 'hielpen', 'geholpen',
+    'spreek', 'spreekt', 'spreken', 'sprak', 'spraken', 'gesproken',
+    'eet', 'eten', 'gegeten',
+    'drink', 'drinkt', 'drinken', 'dronk', 'dronken', 'gedronken',
+    'kijk', 'kijkt', 'kijken', 'keek', 'keken', 'gekeken',
+    'hoor', 'hoort', 'horen', 'hoorde', 'hoorden', 'gehoord',
+    'vraag', 'vraagt', 'vragen', 'vroeg', 'vroegen', 'gevraagd',
+    'betaal', 'betaalt', 'betalen', 'betaalde', 'betaalden', 'betaald',
+    'probeer', 'probeert', 'proberen', 'probeerde', 'probeerden', 'geprobeerd',
+    'begrijp', 'begrijpt', 'begrijpen', 'begreep', 'begrepen',
+    'speel', 'speelt', 'spelen', 'speelde', 'speelden', 'gespeeld',
+    'leer', 'leert', 'leren', 'leerde', 'leerden', 'geleerd',
+    'sluit', 'sluiten', 'sloot', 'sloten', 'gesloten',
+    'wacht', 'wachten', 'wachtte', 'gewacht',
+    'heet', 'heten', 'heette',
+    'regent', 'sneeuwt',
   ]);
-  const NL_SUFFIX = [/en$/, /t$/, /(de|te|den|ten|dt)$/];
 
   for (const w of words) {
-    if (NL_FUNCTION.has(w) || NL_VERBS.has(w)) score += 2;
-    else if (NL_SUFFIX.some(rx => rx.test(w)) && w.length > 3) score += 1;
+    if (NL_FUNCTION.has(w)) score += 2;
+    else if (NL_VERBS.has(w)) score += 3;
+    else if (hasDutchSpelling(w)) score += 1;
   }
 
+  // Bonus: past participle pattern (ge- prefix + d/t suffix)
+  if (/\bge[a-z]{2,}[dt]\b/i.test(s)) score += 2;
+  // Bonus: perfect tense auxiliary + past participle
   if (/\b(heb|hebt|heeft|hebben|ben|bent|is|zijn)\b\s+\bge[a-z]{2,}\b/i.test(s)) score += 2;
+  // Bonus: separable verb particle at sentence end
+  if (/\s+(op|aan|af|uit|mee|weg|terug|in|over)\s*[.!?]$/i.test(s)) score += 1;
+
   return score;
 }
+
 function scoreEnglish(s) {
   const words = tokenizeWords(s);
   if (!words.length) return 0;
   let score = 0;
-  const EN_COMMON = new Set([
-    'the', 'is', 'are', 'am', 'was', 'were', 'a', 'an', 'and', 'or', 'but',
-    'not', 'no', 'do', 'does', 'did', 'have', 'has', 'had',
-    'will', 'would', 'can', 'could', 'should', 'shall', 'may', 'might', 'must',
-    'to', 'for', 'in', 'on', 'at', 'with', 'from', 'by', 'of'
+  // Words that appear in English but NOT in Dutch
+  const EN_ONLY = new Set([
+    'the', 'are', 'am', 'a', 'an', 'and', 'but', 'or', 'not',
+    'do', 'does', 'did', 'have', 'has',
+    'will', 'would', 'could', 'should', 'shall', 'may', 'might', 'must',
+    'this', 'those', 'it', 'its', 'he', 'she', 'they', 'i', 'you',
+    'which', 'who', 'what', 'when', 'where', 'why',
+    'to', 'for', 'on', 'at', 'with', 'from', 'by', 'about', 'as', 'up', 'into',
   ]);
-  for (const w of words) if (EN_COMMON.has(w)) score += 1;
+  for (const w of words) {
+    if (EN_ONLY.has(w)) score += 2;
+  }
   return score;
 }
 
