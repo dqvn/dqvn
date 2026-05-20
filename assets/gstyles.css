@@ -443,7 +443,11 @@ body {
   padding-left: 24px;
 }
 
-/* Bottom bar */
+/* Bottom bar – hidden on desktop, visible on mobile only */
+@media (min-width: 901px) {
+  .bottom-bar { display: none; }
+}
+
 .bottom-bar {
   position: sticky;
   bottom: 0;
