@@ -10,6 +10,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital@0;1&family=Caveat:wght@500&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="assets/dutch.ico">
   <script src="assets/NoSleep.min.js"></script>
+  <script>
+    /* Minimal require() shim so puter.js can load its bundled highlight.js
+       in a plain browser environment without a CommonJS bundler. */
+    if (typeof require === 'undefined') {
+      window.require = function(mod) { return window[mod] || {}; };
+      if (typeof module === 'undefined') window.module = { exports: {} };
+    }
+  </script>
   <script src="https://js.puter.com/v2/"></script>
 </head>
 
