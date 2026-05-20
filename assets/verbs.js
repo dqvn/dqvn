@@ -817,6 +817,167 @@ function burstConfetti(big) {
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
+   SEARCH
+───────────────────────────────────────────────────────────────────────────── */
+let _searchIdx      = null;   /* flat array of { verb, lessonId, lessonTitle } */
+let _searchBuilding = false;
+let _searchTimer    = null;
+
+function getFormFields(v) {
+  const fields = [
+    { label: 'Infinitive',    value: v.infinitive },
+    { label: 'Translation',   value: v.translation },
+  ];
+  const ott = v.present_ott || {};
+  if (ott.ik)             fields.push({ label: 'Present ik',   value: ott.ik });
+  if (ott.jij)            fields.push({ label: 'Present jij',  value: ott.jij });
+  if (ott.hij_zij_het)    fields.push({ label: 'Present hij',  value: ott.hij_zij_het });
+  if (ott.wij_jullie_zij) fields.push({ label: 'Present wij',  value: ott.wij_jullie_zij });
+  const ovt = v.past_ovt || {};
+  if (ovt.ik_jij_hij_zij_het) fields.push({ label: 'Past',      value: ovt.ik_jij_hij_zij_het });
+  if (ovt.wij_jullie_zij)     fields.push({ label: 'Past wij',  value: ovt.wij_jullie_zij });
+  const vtt = v.present_perfect_vtt || {};
+  if (vtt.past_participle)    fields.push({ label: 'Past participle', value: vtt.past_participle });
+  if (vtt.auxiliary)          fields.push({ label: 'Auxiliary',       value: vtt.auxiliary });
+  const ottt = v.future_ottt || {};
+  if (ottt.ik)             fields.push({ label: 'Future ik',  value: ottt.ik });
+  if (ottt.wij_jullie_zij) fields.push({ label: 'Future wij', value: ottt.wij_jullie_zij });
+  return fields;
+}
+
+async function buildSearchIndex() {
+  if (_searchIdx || _searchBuilding || !st.manifest.length) return;
+  _searchBuilding = true;
+  try {
+    const batches = await Promise.all(st.manifest.map(async lesson => {
+      try {
+        const r = await fetch(`data/verbs/${lesson.file}`);
+        if (!r.ok) return [];
+        const data = await r.json();
+        if (!Array.isArray(data)) return [];
+        return data.map(verb => ({ verb, lessonId: lesson.id, lessonTitle: lesson.title }));
+      } catch { return []; }
+    }));
+    _searchIdx = batches.flat();
+  } catch { _searchIdx = []; }
+  _searchBuilding = false;
+  /* If search box has text when index finishes, refresh results */
+  const inp = $('sb-search-inp');
+  if (inp && inp.value.trim()) activateSearch(inp.value);
+}
+
+function searchVerbs(query) {
+  if (!_searchIdx || !query) return null; /* null = index not ready */
+  const q = query.toLowerCase().trim();
+  if (!q || q.length < 1) return [];
+
+  const results = [];
+  for (const entry of _searchIdx) {
+    let bestScore = 0;
+    let matchField = null;
+
+    for (const field of getFormFields(entry.verb)) {
+      if (!field.value) continue;
+      const v = field.value.toLowerCase();
+      let score = 0;
+      if (v === q) {
+        score = field.label === 'Infinitive' ? 100 : field.label === 'Translation' ? 60 : 80;
+      } else if (v.startsWith(q)) {
+        score = field.label === 'Infinitive' ? 75 : field.label === 'Translation' ? 35 : 55;
+      } else if (v.includes(q) && q.length >= 2) {
+        score = field.label === 'Infinitive' ? 50 : field.label === 'Translation' ? 20 : 35;
+      }
+      if (score > bestScore) { bestScore = score; matchField = field; }
+    }
+
+    if (bestScore > 0) results.push({ ...entry, score: bestScore, matchField });
+  }
+
+  return results.sort((a, b) => b.score - a.score).slice(0, 25);
+}
+
+function renderSearchResults(query, results) {
+  const resEl  = $('sb-search-results');
+  const listEl = $('lesson-list');
+  const q      = query.trim();
+
+  if (!q) {
+    resEl.classList.remove('active');
+    listEl.style.display = '';
+    return;
+  }
+
+  listEl.style.display = 'none';
+  resEl.classList.add('active');
+
+  if (results === null) {
+    resEl.innerHTML = '<div class="sr-building"><div class="spin"></div>Building index…</div>';
+    return;
+  }
+
+  if (!results.length) {
+    resEl.innerHTML = `<div class="sr-empty">No verbs found for "<strong>${q}</strong>"<br><small>Try infinitive, translation, or any conjugated form</small></div>`;
+    return;
+  }
+
+  resEl.innerHTML = `
+    <div class="sr-count">${results.length} result${results.length !== 1 ? 's' : ''}</div>
+    ${results.map((r, idx) => {
+      const { verb, lessonTitle, matchField } = r;
+      const showMatch = matchField.label !== 'Infinitive';
+      return `
+        <div class="sr-item" data-idx="${idx}" role="button" tabindex="0">
+          <div class="sr-top">
+            <span class="sr-inf">${verb.infinitive}</span>
+            <span class="sr-lesson-badge">${lessonTitle}</span>
+          </div>
+          <div class="sr-tr">${verb.translation}</div>
+          ${showMatch ? `
+          <div class="sr-match">
+            <span class="sr-match-lbl">${matchField.label}:</span>
+            <span class="sr-match-val">${matchField.value}</span>
+          </div>` : ''}
+        </div>`;
+    }).join('')}`;
+
+  resEl.querySelectorAll('.sr-item').forEach((item, idx) => {
+    const open = async () => {
+      const r      = results[idx];
+      const lesson = st.manifest.find(l => l.id === r.lessonId);
+      if (lesson && st.currentLesson?.id !== r.lessonId) {
+        await selectLesson(lesson);
+      }
+      const vIdx = st.all.findIndex(v => v.infinitive === r.verb.infinitive);
+      if (vIdx !== -1) {
+        clearSearch();
+        toggleSidebar(false);
+        browseVerb(vIdx);
+      }
+    };
+    item.addEventListener('click', open);
+    item.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
+  });
+}
+
+function clearSearch() {
+  const inp = $('sb-search-inp');
+  if (inp) inp.value = '';
+  $('sb-search-clr').classList.remove('visible');
+  $('sb-search-results').classList.remove('active');
+  $('lesson-list').style.display = '';
+}
+
+function activateSearch(query) {
+  clearTimeout(_searchTimer);
+  const clrBtn = $('sb-search-clr');
+  if (clrBtn) clrBtn.classList.toggle('visible', !!query.trim());
+  if (!query.trim()) { renderSearchResults('', []); return; }
+  /* Show building state immediately if index not ready */
+  if (!_searchIdx) { renderSearchResults(query, null); return; }
+  _searchTimer = setTimeout(() => renderSearchResults(query, searchVerbs(query)), 120);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
    WIRING
 ───────────────────────────────────────────────────────────────────────────── */
 $('btn-start-study').onclick  = () => { buildSession(); startStudy(); };
@@ -841,6 +1002,12 @@ document.querySelectorAll('.fs-pill-inc').forEach(b => b.addEventListener('click
 $('sb-fs-dec').onclick = () => applyFontSize(st.store.fsIndex - 1);
 $('sb-fs-inc').onclick = () => applyFontSize(st.store.fsIndex + 1);
 
+const _searchInp = $('sb-search-inp');
+const _searchClr = $('sb-search-clr');
+_searchInp.addEventListener('input',   e => activateSearch(e.target.value));
+_searchInp.addEventListener('keydown', e => { if (e.key === 'Escape') { clearSearch(); _searchInp.blur(); } });
+_searchClr.addEventListener('click',   () => { clearSearch(); _searchInp.focus(); });
+
 /* ─────────────────────────────────────────────────────────────────────────────
    INIT
 ───────────────────────────────────────────────────────────────────────────── */
@@ -859,6 +1026,7 @@ $('ft-year').textContent   = new Date().getFullYear();
       return;
     }
     renderSidebar();
+    buildSearchIndex(); /* background — populates _searchIdx for cross-lesson search */
     /* Auto-select last used lesson, or first lesson */
     const lastId = st.store.lastLesson;
     const target = (lastId && st.manifest.find(l => l.id === lastId)) || st.manifest[0];
