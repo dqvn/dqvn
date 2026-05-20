@@ -503,10 +503,21 @@ function initNavButtons() {
   });
   els.btnPrint.addEventListener('click', () => window.print());
 
-  // Sidebar toggle
-  els.btnSidebar.addEventListener('click', () => {
-    els.sidebar.classList.toggle('open');
-  });
+  // Sidebar toggle (shared by desktop btn + mobile hamburger)
+  function toggleSidebar(force) {
+    const overlay = document.getElementById('g-overlay');
+    const isOpen = force ?? !els.sidebar.classList.contains('open');
+    els.sidebar.classList.toggle('open', isOpen);
+    if (overlay) overlay.classList.toggle('show', isOpen);
+  }
+  els.btnSidebar.addEventListener('click', () => toggleSidebar());
+  document.getElementById('g-hamburger')?.addEventListener('click', () => toggleSidebar());
+  document.getElementById('g-overlay')?.addEventListener('click', () => toggleSidebar(false));
+
+  // Mobile font/theme buttons delegate to existing desktop buttons
+  document.getElementById('g-font-minus-mob')?.addEventListener('click', () => els.btnFontMinus.click());
+  document.getElementById('g-font-plus-mob')?.addEventListener('click', () => els.btnFontPlus.click());
+  document.getElementById('g-theme-mob')?.addEventListener('click', () => els.btnTheme.click());
 
   // Keyboard shortcuts
   document.addEventListener('keydown', (e) => {
@@ -1224,6 +1235,9 @@ function speakAllInPage() {
 
 // ---------- Bootstrap ----------
 (async function init() {
+  const gramYear = document.getElementById('gram-year');
+  if (gramYear) gramYear.textContent = new Date().getFullYear();
+
   initThemeAndFont();
   initNavButtons();
   initReadingProgress();
@@ -1247,12 +1261,11 @@ function speakAllInPage() {
   renderChapterList();
   handleInitialRoute();
 
-  // Đóng sidebar khi chọn chương trên mobile
-  if (window.matchMedia('(max-width: 900px)').matches) {
-    document.addEventListener('click', (e) => {
-      const inSidebar = e.target.closest?.('.sidebar');
-      const isToggle = e.target.closest?.('#btnSidebar');
-      if (!inSidebar && !isToggle) els.sidebar.classList.remove('open');
-    });
-  }
+  // Close sidebar when a chapter is selected on mobile
+  els.chapterList.addEventListener('click', () => {
+    if (window.matchMedia('(max-width: 900px)').matches) {
+      els.sidebar.classList.remove('open');
+      document.getElementById('g-overlay')?.classList.remove('show');
+    }
+  });
 })();

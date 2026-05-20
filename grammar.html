@@ -28,7 +28,21 @@
 </head>
 
 <body>
-  <!-- Top App Bar -->
+  <!-- Mobile top bar (hidden on desktop) -->
+  <div id="g-mob-bar">
+    <button class="g-mob-ico" id="g-hamburger" aria-label="Open chapters">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <div id="g-mob-title">Ngữ pháp NL – A2</div>
+    <button class="g-mob-ico" id="g-font-minus-mob" aria-label="Smaller text">A−</button>
+    <button class="g-mob-ico" id="g-font-plus-mob" aria-label="Larger text">A+</button>
+    <button class="g-mob-ico" id="g-theme-mob" aria-label="Toggle theme">🌓</button>
+  </div>
+
+  <!-- Drawer overlay (mobile) -->
+  <div id="g-overlay"></div>
+
+  <!-- Top App Bar (desktop only) -->
   <header class="app-header" role="banner">
     <button id="btnSidebar" class="icon-btn" aria-label="Mở/Đóng danh sách chương" title="Danh sách chương (Alt+L)">
       ☰
@@ -78,6 +92,7 @@
   <div class="layout">
     <!-- Sidebar: Chapter list + Filters -->
     <aside id="sidebar" class="sidebar" aria-label="Danh sách chương">
+      <div class="g-drag-handle"></div>
       <div class="sidebar-header">
         <strong>Mục lục</strong>
         <div class="sidebar-filters">
@@ -86,8 +101,17 @@
         </div>
       </div>
       <nav id="chapterList" class="chapter-list" role="navigation" aria-label="Danh sách chương"></nav>
-      <footer class="sidebar-footer">
+      <div class="sidebar-footer">
+        <a href="index.html" class="text-btn" style="text-decoration:none">← Main Menu</a>
         <button id="btnResetProgress" class="text-btn" title="Xóa trạng thái đọc">↺ Reset tiến độ</button>
+      </div>
+      <footer id="gram-footer">
+        <div class="ft-avatar">QN</div>
+        <div class="ft-info">
+          <span class="ft-name">Quang, Nguyen Dang</span>
+          <a class="ft-email" href="mailto:dqvn2002@gmail.com">dqvn2002@gmail.com</a>
+        </div>
+        <span class="ft-year" id="gram-year"></span>
       </footer>
     </aside>
 
