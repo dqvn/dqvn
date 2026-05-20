@@ -1,0 +1,1522 @@
+[
+  {
+    "infinitive": "maken",
+    "translation": "to make",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "maak", "jij": "maakt", "hij_zij_het": "maakt", "wij_jullie_zij": "maken" },
+    "past_ovt": { "ik_jij_hij_zij_het": "maakte", "wij_jullie_zij": "maakten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gemaakt" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gemaakt" },
+    "future_ottt": { "ik": "zal maken", "wij_jullie_zij": "zullen maken" }
+  },
+  {
+    "infinitive": "werken",
+    "translation": "to work",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "werk", "jij": "werkt", "hij_zij_het": "werkt", "wij_jullie_zij": "werken" },
+    "past_ovt": { "ik_jij_hij_zij_het": "werkte", "wij_jullie_zij": "werkten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gewerkt" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gewerkt" },
+    "future_ottt": { "ik": "zal werken", "wij_jullie_zij": "zullen werken" }
+  },
+  {
+    "infinitive": "wonen",
+    "translation": "to live (reside)",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "woon", "jij": "woont", "hij_zij_het": "woont", "wij_jullie_zij": "wonen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "woonde", "wij_jullie_zij": "woonden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gewoond" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gewoond" },
+    "future_ottt": { "ik": "zal wonen", "wij_jullie_zij": "zullen wonen" }
+  },
+  {
+    "infinitive": "kennen",
+    "translation": "to know (be familiar with)",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "ken", "jij": "kent", "hij_zij_het": "kent", "wij_jullie_zij": "kennen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "kende", "wij_jullie_zij": "kenden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gekend" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gekend" },
+    "future_ottt": { "ik": "zal kennen", "wij_jullie_zij": "zullen kennen" }
+  },
+  {
+    "infinitive": "geloven",
+    "translation": "to believe",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "geloof", "jij": "gelooft", "hij_zij_het": "gelooft", "wij_jullie_zij": "geloven" },
+    "past_ovt": { "ik_jij_hij_zij_het": "geloofde", "wij_jullie_zij": "geloofden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "geloofd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "geloofd" },
+    "future_ottt": { "ik": "zal geloven", "wij_jullie_zij": "zullen geloven" }
+  },
+  {
+    "infinitive": "gebruiken",
+    "translation": "to use",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "gebruik", "jij": "gebruikt", "hij_zij_het": "gebruikt", "wij_jullie_zij": "gebruiken" },
+    "past_ovt": { "ik_jij_hij_zij_het": "gebruikte", "wij_jullie_zij": "gebruikten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gebruikt" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gebruikt" },
+    "future_ottt": { "ik": "zal gebruiken", "wij_jullie_zij": "zullen gebruiken" }
+  },
+  {
+    "infinitive": "proberen",
+    "translation": "to try",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "probeer", "jij": "probeert", "hij_zij_het": "probeert", "wij_jullie_zij": "proberen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "probeerde", "wij_jullie_zij": "probeerden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "geprobeerd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "geprobeerd" },
+    "future_ottt": { "ik": "zal proberen", "wij_jullie_zij": "zullen proberen" }
+  },
+  {
+    "infinitive": "blijken",
+    "translation": "to turn out",
+    "type": "irregular (strong)",
+    "present_ott": { "ik": "blijk", "jij": "blijkt", "hij_zij_het": "blijkt", "wij_jullie_zij": "blijken" },
+    "past_ovt": { "ik_jij_hij_zij_het": "bleek", "wij_jullie_zij": "bleken" },
+    "present_perfect_vtt": { "auxiliary": "zijn", "past_participle": "gebleken" },
+    "past_perfect_vvt": { "auxiliary": "was/waren", "past_participle": "gebleken" },
+    "future_ottt": { "ik": "zal blijken", "wij_jullie_zij": "zullen blijken" }
+  },
+  {
+    "infinitive": "gebeuren",
+    "translation": "to happen",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "gebeur", "jij": "gebeurt", "hij_zij_het": "gebeurt", "wij_jullie_zij": "gebeuren" },
+    "past_ovt": { "ik_jij_hij_zij_het": "gebeurde", "wij_jullie_zij": "gebeurden" },
+    "present_perfect_vtt": { "auxiliary": "zijn", "past_participle": "gebeurd" },
+    "past_perfect_vvt": { "auxiliary": "was/waren", "past_participle": "gebeurd" },
+    "future_ottt": { "ik": "zal gebeuren", "wij_jullie_zij": "zullen gebeuren" }
+  },
+  {
+    "infinitive": "kosten",
+    "translation": "to cost",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "kost", "jij": "kost", "hij_zij_het": "kost", "wij_jullie_zij": "kosten" },
+    "past_ovt": { "ik_jij_hij_zij_het": "kostte", "wij_jullie_zij": "kostten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gekost" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gekost" },
+    "future_ottt": { "ik": "zal kosten", "wij_jullie_zij": "zullen kosten" }
+  },
+  {
+    "infinitive": "antwoorden",
+    "translation": "to answer",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "antwoord", "jij": "antwoordt", "hij_zij_het": "antwoordt", "wij_jullie_zij": "antwoorden" },
+    "past_ovt": { "ik_jij_hij_zij_het": "antwoordde", "wij_jullie_zij": "antwoordden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "geantwoord" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "geantwoord" },
+    "future_ottt": { "ik": "zal antwoorden", "wij_jullie_zij": "zullen antwoorden" }
+  },
+  {
+    "infinitive": "halen",
+    "translation": "to fetch; pick up",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "haal", "jij": "haalt", "hij_zij_het": "haalt", "wij_jullie_zij": "halen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "haalde", "wij_jullie_zij": "haalden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gehaald" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gehaald" },
+    "future_ottt": { "ik": "zal halen", "wij_jullie_zij": "zullen halen" }
+  },
+  {
+    "infinitive": "zetten",
+    "translation": "to put; set",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "zet", "jij": "zet", "hij_zij_het": "zet", "wij_jullie_zij": "zetten" },
+    "past_ovt": { "ik_jij_hij_zij_het": "zette", "wij_jullie_zij": "zetten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gezet" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gezet" },
+    "future_ottt": { "ik": "zal zetten", "wij_jullie_zij": "zullen zetten" }
+  },
+  {
+    "infinitive": "leggen",
+    "translation": "to lay; put down",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "leg", "jij": "legt", "hij_zij_het": "legt", "wij_jullie_zij": "leggen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "legde", "wij_jullie_zij": "legden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gelegd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gelegd" },
+    "future_ottt": { "ik": "zal leggen", "wij_jullie_zij": "zullen leggen" }
+  },
+  {
+    "infinitive": "duwen",
+    "translation": "to push",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "duw", "jij": "duwt", "hij_zij_het": "duwt", "wij_jullie_zij": "duwen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "duwde", "wij_jullie_zij": "duwden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "geduwd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "geduwd" },
+    "future_ottt": { "ik": "zal duwen", "wij_jullie_zij": "zullen duwen" }
+  },
+  {
+    "infinitive": "sturen",
+    "translation": "to send",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "stuur", "jij": "stuurt", "hij_zij_het": "stuurt", "wij_jullie_zij": "sturen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "stuurde", "wij_jullie_zij": "stuurden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gestuurd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gestuurd" },
+    "future_ottt": { "ik": "zal sturen", "wij_jullie_zij": "zullen sturen" }
+  },
+  {
+    "infinitive": "bellen",
+    "translation": "to call (phone)",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "bel", "jij": "belt", "hij_zij_het": "belt", "wij_jullie_zij": "bellen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "belde", "wij_jullie_zij": "belden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gebeld" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gebeld" },
+    "future_ottt": { "ik": "zal bellen", "wij_jullie_zij": "zullen bellen" }
+  },
+  {
+    "infinitive": "mailen",
+    "translation": "to email",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "mail", "jij": "mailt", "hij_zij_het": "mailt", "wij_jullie_zij": "mailen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "mailde", "wij_jullie_zij": "mailden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gemaild" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gemaild" },
+    "future_ottt": { "ik": "zal mailen", "wij_jullie_zij": "zullen mailen" }
+  },
+  {
+    "infinitive": "posten",
+    "translation": "to post",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "post", "jij": "post", "hij_zij_het": "post", "wij_jullie_zij": "posten" },
+    "past_ovt": { "ik_jij_hij_zij_het": "postte", "wij_jullie_zij": "postten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gepost" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gepost" },
+    "future_ottt": { "ik": "zal posten", "wij_jullie_zij": "zullen posten" }
+  },
+  {
+    "infinitive": "koken",
+    "translation": "to cook",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "kook", "jij": "kookt", "hij_zij_het": "kookt", "wij_jullie_zij": "koken" },
+    "past_ovt": { "ik_jij_hij_zij_het": "kookte", "wij_jullie_zij": "kookten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gekookt" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gekookt" },
+    "future_ottt": { "ik": "zal koken", "wij_jullie_zij": "zullen koken" }
+  },
+  {
+    "infinitive": "openen",
+    "translation": "to open",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "open", "jij": "opent", "hij_zij_het": "opent", "wij_jullie_zij": "openen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "opende", "wij_jullie_zij": "openden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "geopend" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "geopend" },
+    "future_ottt": { "ik": "zal openen", "wij_jullie_zij": "zullen openen" }
+  },
+  {
+    "infinitive": "sporten",
+    "translation": "to do sports",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "sport", "jij": "sportt", "hij_zij_het": "sportt", "wij_jullie_zij": "sporten" },
+    "past_ovt": { "ik_jij_hij_zij_het": "sportte", "wij_jullie_zij": "sportten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gesport" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gesport" },
+    "future_ottt": { "ik": "zal sporten", "wij_jullie_zij": "zullen sporten" }
+  },
+  {
+    "infinitive": "luisteren",
+    "translation": "to listen",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "luister", "jij": "luistert", "hij_zij_het": "luistert", "wij_jullie_zij": "luisteren" },
+    "past_ovt": { "ik_jij_hij_zij_het": "luisterde", "wij_jullie_zij": "luisterden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "geluisterd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "geluisterd" },
+    "future_ottt": { "ik": "zal luisteren", "wij_jullie_zij": "zullen luisteren" }
+  },
+  {
+    "infinitive": "horen",
+    "translation": "to hear",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "hoor", "jij": "hoort", "hij_zij_het": "hoort", "wij_jullie_zij": "horen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "hoorde", "wij_jullie_zij": "hoorden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gehoord" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gehoord" },
+    "future_ottt": { "ik": "zal horen", "wij_jullie_zij": "zullen horen" }
+  },
+  {
+    "infinitive": "wandelen",
+    "translation": "to stroll",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "wandel", "jij": "wandelt", "hij_zij_het": "wandelt", "wij_jullie_zij": "wandelen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "wandelde", "wij_jullie_zij": "wandelden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gewandeld" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gewandeld" },
+    "future_ottt": { "ik": "zal wandelen", "wij_jullie_zij": "zullen wandelen" }
+  },
+  {
+    "infinitive": "rennen",
+    "translation": "to run",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "ren", "jij": "rent", "hij_zij_het": "rent", "wij_jullie_zij": "rennen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "rende", "wij_jullie_zij": "renden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gerend" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gerend" },
+    "future_ottt": { "ik": "zal rennen", "wij_jullie_zij": "zullen rennen" }
+  },
+  {
+    "infinitive": "leren",
+    "translation": "to learn; teach",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "leer", "jij": "leert", "hij_zij_het": "leert", "wij_jullie_zij": "leren" },
+    "past_ovt": { "ik_jij_hij_zij_het": "leerde", "wij_jullie_zij": "leerden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "geleerd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "geleerd" },
+    "future_ottt": { "ik": "zal leren", "wij_jullie_zij": "zullen leren" }
+  },
+  {
+    "infinitive": "onderwijzen",
+    "translation": "to teach",
+    "type": "irregular (strong)",
+    "present_ott": { "ik": "onderwijs", "jij": "onderwijst", "hij_zij_het": "onderwijst", "wij_jullie_zij": "onderwijzen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "onderwees", "wij_jullie_zij": "onderwezen" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "onderwezen" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "onderwezen" },
+    "future_ottt": { "ik": "zal onderwijzen", "wij_jullie_zij": "zullen onderwijzen" }
+  },
+  {
+    "infinitive": "uitleggen",
+    "translation": "to explain",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "leg uit", "jij": "legt uit", "hij_zij_het": "legt uit", "wij_jullie_zij": "leggen uit" },
+    "past_ovt": { "ik_jij_hij_zij_het": "legde uit", "wij_jullie_zij": "legden uit" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "uitgelegd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "uitgelegd" },
+    "future_ottt": { "ik": "zal uitleggen", "wij_jullie_zij": "zullen uitleggen" }
+  },
+  {
+    "infinitive": "vertellen",
+    "translation": "to tell",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "vertel", "jij": "vertelt", "hij_zij_het": "vertelt", "wij_jullie_zij": "vertellen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "vertelde", "wij_jullie_zij": "vertelden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "verteld" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "verteld" },
+    "future_ottt": { "ik": "zal vertellen", "wij_jullie_zij": "zullen vertellen" }
+  },
+  {
+    "infinitive": "beslissen",
+    "translation": "to decide",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "beslis", "jij": "beslist", "hij_zij_het": "beslist", "wij_jullie_zij": "beslissen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "besliste", "wij_jullie_zij": "beslisten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "beslist" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "beslist" },
+    "future_ottt": { "ik": "zal beslissen", "wij_jullie_zij": "zullen beslissen" }
+  },
+  {
+    "infinitive": "reageren",
+    "translation": "to react",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "reageer", "jij": "reageert", "hij_zij_het": "reageert", "wij_jullie_zij": "reageren" },
+    "past_ovt": { "ik_jij_hij_zij_het": "reageerde", "wij_jullie_zij": "reageerden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gereageerd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gereageerd" },
+    "future_ottt": { "ik": "zal reageren", "wij_jullie_zij": "zullen reageren" }
+  },
+  {
+    "infinitive": "organiseren",
+    "translation": "to organize",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "organiseer", "jij": "organiseert", "hij_zij_het": "organiseert", "wij_jullie_zij": "organiseren" },
+    "past_ovt": { "ik_jij_hij_zij_het": "organiseerde", "wij_jullie_zij": "organiseerden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "georganiseerd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "georganiseerd" },
+    "future_ottt": { "ik": "zal organiseren", "wij_jullie_zij": "zullen organiseren" }
+  },
+  {
+    "infinitive": "programmeren",
+    "translation": "to program",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "programmeer", "jij": "programmeert", "hij_zij_het": "programmeert", "wij_jullie_zij": "programmeren" },
+    "past_ovt": { "ik_jij_hij_zij_het": "programmeerde", "wij_jullie_zij": "programmeerden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "geprogrammeerd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "geprogrammeerd" },
+    "future_ottt": { "ik": "zal programmeren", "wij_jullie_zij": "zullen programmeren" }
+  },
+  {
+    "infinitive": "installeren",
+    "translation": "to install",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "installeer", "jij": "installeert", "hij_zij_het": "installeert", "wij_jullie_zij": "installeren" },
+    "past_ovt": { "ik_jij_hij_zij_het": "installeerde", "wij_jullie_zij": "installeerden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "geïnstalleerd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "geïnstalleerd" },
+    "future_ottt": { "ik": "zal installeren", "wij_jullie_zij": "zullen installeren" }
+  },
+  {
+    "infinitive": "configureren",
+    "translation": "to configure",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "configureer", "jij": "configureert", "hij_zij_het": "configureert", "wij_jullie_zij": "configureren" },
+    "past_ovt": { "ik_jij_hij_zij_het": "configureerde", "wij_jullie_zij": "configureerden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "geconfigureerd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "geconfigureerd" },
+    "future_ottt": { "ik": "zal configureren", "wij_jullie_zij": "zullen configureren" }
+  },
+  {
+    "infinitive": "controleren",
+    "translation": "to check; control",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "controleer", "jij": "controleert", "hij_zij_het": "controleert", "wij_jullie_zij": "controleren" },
+    "past_ovt": { "ik_jij_hij_zij_het": "controleerde", "wij_jullie_zij": "controleerden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gecontroleerd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gecontroleerd" },
+    "future_ottt": { "ik": "zal controleren", "wij_jullie_zij": "zullen controleren" }
+  },
+  {
+    "infinitive": "uploaden",
+    "translation": "to upload",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "upload", "jij": "uploadt", "hij_zij_het": "uploadt", "wij_jullie_zij": "uploaden" },
+    "past_ovt": { "ik_jij_hij_zij_het": "uploadde", "wij_jullie_zij": "uploadden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "geüpload" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "geüpload" },
+    "future_ottt": { "ik": "zal uploaden", "wij_jullie_zij": "zullen uploaden" }
+  },
+  {
+    "infinitive": "downloaden",
+    "translation": "to download",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "download", "jij": "downloadt", "hij_zij_het": "downloadt", "wij_jullie_zij": "downloaden" },
+    "past_ovt": { "ik_jij_hij_zij_het": "downloadde", "wij_jullie_zij": "downloadden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gedownload" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gedownload" },
+    "future_ottt": { "ik": "zal downloaden", "wij_jullie_zij": "zullen downloaden" }
+  },
+  {
+    "infinitive": "opslaan",
+    "translation": "to save",
+    "type": "irregular (strong)",
+    "present_ott": { "ik": "sla op", "jij": "slaat op", "hij_zij_het": "slaat op", "wij_jullie_zij": "slaan op" },
+    "past_ovt": { "ik_jij_hij_zij_het": "sloeg op", "wij_jullie_zij": "sloegen op" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "opgeslagen" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "opgeslagen" },
+    "future_ottt": { "ik": "zal opslaan", "wij_jullie_zij": "zullen opslaan" }
+  },
+  {
+    "infinitive": "verwijderen",
+    "translation": "to delete; remove",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "verwijder", "jij": "verwijdert", "hij_zij_het": "verwijdert", "wij_jullie_zij": "verwijderen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "verwijderde", "wij_jullie_zij": "verwijderden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "verwijderd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "verwijderd" },
+    "future_ottt": { "ik": "zal verwijderen", "wij_jullie_zij": "zullen verwijderen" }
+  },
+  {
+    "infinitive": "herstarten",
+    "translation": "to restart",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "herstart", "jij": "herstart", "hij_zij_het": "herstart", "wij_jullie_zij": "herstarten" },
+    "past_ovt": { "ik_jij_hij_zij_het": "herstartte", "wij_jullie_zij": "herstartten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "herstart" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "herstart" },
+    "future_ottt": { "ik": "zal herstarten", "wij_jullie_zij": "zullen herstarten" }
+  },
+  {
+    "infinitive": "starten",
+    "translation": "to start",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "start", "jij": "start", "hij_zij_het": "start", "wij_jullie_zij": "starten" },
+    "past_ovt": { "ik_jij_hij_zij_het": "startte", "wij_jullie_zij": "startten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gestart" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gestart" },
+    "future_ottt": { "ik": "zal starten", "wij_jullie_zij": "zullen starten" }
+  },
+  {
+    "infinitive": "stoppen",
+    "translation": "to stop",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "stop", "jij": "stopt", "hij_zij_het": "stopt", "wij_jullie_zij": "stoppen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "stopte", "wij_jullie_zij": "stopten" },
+    "present_perfect_vtt": { "auxiliary": "hebben/zijn", "past_participle": "gestopt" },
+    "past_perfect_vvt": { "auxiliary": "had/waren", "past_participle": "gestopt" },
+    "future_ottt": { "ik": "zal stoppen", "wij_jullie_zij": "zullen stoppen" }
+  },
+  {
+    "infinitive": "eindigen",
+    "translation": "to end",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "eindig", "jij": "eindigt", "hij_zij_het": "eindigt", "wij_jullie_zij": "eindigen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "eindigde", "wij_jullie_zij": "eindigden" },
+    "present_perfect_vtt": { "auxiliary": "hebben/zijn", "past_participle": "geëindigd" },
+    "past_perfect_vvt": { "auxiliary": "had/waren", "past_participle": "geëindigd" },
+    "future_ottt": { "ik": "zal eindigen", "wij_jullie_zij": "zullen eindigen" }
+  },
+  {
+    "infinitive": "verbeteren",
+    "translation": "to improve",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "verbeter", "jij": "verbetert", "hij_zij_het": "verbetert", "wij_jullie_zij": "verbeteren" },
+    "past_ovt": { "ik_jij_hij_zij_het": "verbeterde", "wij_jullie_zij": "verbeterden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "verbeterd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "verbeterd" },
+    "future_ottt": { "ik": "zal verbeteren", "wij_jullie_zij": "zullen verbeteren" }
+  },
+  {
+    "infinitive": "verklaren",
+    "translation": "to explain; declare",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "verklaar", "jij": "verklaart", "hij_zij_het": "verklaart", "wij_jullie_zij": "verklaren" },
+    "past_ovt": { "ik_jij_hij_zij_het": "verklaarde", "wij_jullie_zij": "verklaarden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "verklaard" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "verklaard" },
+    "future_ottt": { "ik": "zal verklaren", "wij_jullie_zij": "zullen verklaren" }
+  },
+  {
+    "infinitive": "aanvaarden",
+    "translation": "to accept",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "aanvaard", "jij": "aanvaardt", "hij_zij_het": "aanvaardt", "wij_jullie_zij": "aanvaarden" },
+    "past_ovt": { "ik_jij_hij_zij_het": "aanvaardde", "wij_jullie_zij": "aanvaardden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "aanvaard" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "aanvaard" },
+    "future_ottt": { "ik": "zal aanvaarden", "wij_jullie_zij": "zullen aanvaarden" }
+  },
+  {
+    "infinitive": "accepteren",
+    "translation": "to accept",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "accepteer", "jij": "accepteert", "hij_zij_het": "accepteert", "wij_jullie_zij": "accepteren" },
+    "past_ovt": { "ik_jij_hij_zij_het": "accepteerde", "wij_jullie_zij": "accepteerden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "geaccepteerd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "geaccepteerd" },
+    "future_ottt": { "ik": "zal accepteren", "wij_jullie_zij": "zullen accepteren" }
+  },
+  {
+    "infinitive": "weigeren",
+    "translation": "to refuse",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "weiger", "jij": "weigert", "hij_zij_het": "weigert", "wij_jullie_zij": "weigeren" },
+    "past_ovt": { "ik_jij_hij_zij_het": "weigerde", "wij_jullie_zij": "weigerden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "geweigerd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "geweigerd" },
+    "future_ottt": { "ik": "zal weigeren", "wij_jullie_zij": "zullen weigeren" }
+  },
+  {
+    "infinitive": "oplopen",
+    "translation": "to rise; increase",
+    "type": "irregular (strong)",
+    "present_ott": { "ik": "loop op", "jij": "loopt op", "hij_zij_het": "loopt op", "wij_jullie_zij": "lopen op" },
+    "past_ovt": { "ik_jij_hij_zij_het": "liep op", "wij_jullie_zij": "liepen op" },
+    "present_perfect_vtt": { "auxiliary": "zijn", "past_participle": "opgelopen" },
+    "past_perfect_vvt": { "auxiliary": "was/waren", "past_participle": "opgelopen" },
+    "future_ottt": { "ik": "zal oplopen", "wij_jullie_zij": "zullen oplopen" }
+  },
+  {
+    "infinitive": "dalen",
+    "translation": "to decrease",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "daal", "jij": "daalt", "hij_zij_het": "daalt", "wij_jullie_zij": "dalen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "daalde", "wij_jullie_zij": "daalden" },
+    "present_perfect_vtt": { "auxiliary": "zijn", "past_participle": "gedaald" },
+    "past_perfect_vvt": { "auxiliary": "was/waren", "past_participle": "gedaald" },
+    "future_ottt": { "ik": "zal dalen", "wij_jullie_zij": "zullen dalen" }
+  },
+  {
+    "infinitive": "betreffen",
+    "translation": "to concern",
+    "type": "irregular (strong)",
+    "present_ott": { "ik": "betref", "jij": "betreft", "hij_zij_het": "betreits", "wij_jullie_zij": "betreffen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "betrof", "wij_jullie_zij": "betroffen" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "betroffen" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "betroffen" },
+    "future_ottt": { "ik": "zal betreffen", "wij_jullie_zij": "zullen betreffen" }
+  },
+  {
+    "infinitive": "leveren",
+    "translation": "to deliver",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "lever", "jij": "levert", "hij_zij_het": "levert", "wij_jullie_zij": "leveren" },
+    "past_ovt": { "ik_jij_hij_zij_het": "leverde", "wij_jullie_zij": "leverden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "geleverd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "geleverd" },
+    "future_ottt": { "ik": "zal leveren", "wij_jullie_zij": "zullen leveren" }
+  },
+  {
+    "infinitive": "noemen",
+    "translation": "to name; call",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "noem", "jij": "noemt", "hij_zij_het": "noemt", "wij_jullie_zij": "noemen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "noemde", "wij_jullie_zij": "noemden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "genoemd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "genoemd" },
+    "future_ottt": { "ik": "zal noemen", "wij_jullie_zij": "zullen noemen" }
+  },
+  {
+    "infinitive": "heten",
+    "translation": "to be called",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "heet", "jij": "heet", "hij_zij_het": "heet", "wij_jullie_zij": "heten" },
+    "past_ovt": { "ik_jij_hij_zij_het": "heette", "wij_jullie_zij": "heetten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "geheten" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "geheten" },
+    "future_ottt": { "ik": "zal heten", "wij_jullie_zij": "zullen heten" }
+  },
+  {
+    "infinitive": "plannen",
+    "translation": "to plan",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "plan", "jij": "plant", "hij_zij_het": "plant", "wij_jullie_zij": "plannen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "plande", "wij_jullie_zij": "planden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gepland" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gepland" },
+    "future_ottt": { "ik": "zal plannen", "wij_jullie_zij": "zullen plannen" }
+  },
+  {
+    "infinitive": "plaatsen",
+    "translation": "to place; post",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "plaats", "jij": "plaatst", "hij_zij_het": "plaatst", "wij_jullie_zij": "plaatsen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "plaatste", "wij_jullie_zij": "plaatstten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "geplaatst" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "geplaatst" },
+    "future_ottt": { "ik": "zal plaatsen", "wij_jullie_zij": "zullen plaatsen" }
+  },
+  {
+    "infinitive": "beheren",
+    "translation": "to manage",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "beheer", "jij": "beheert", "hij_zij_het": "beheert", "wij_jullie_zij": "beheren" },
+    "past_ovt": { "ik_jij_hij_zij_het": "beheerde", "wij_jullie_zij": "beheerden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "beheerd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "beheerd" },
+    "future_ottt": { "ik": "zal beheren", "wij_jullie_zij": "zullen beheren" }
+  },
+  {
+    "infinitive": "aanmaken",
+    "translation": "to create",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "maak aan", "jij": "maakt aan", "hij_zij_het": "maakt aan", "wij_jullie_zij": "maken aan" },
+    "past_ovt": { "ik_jij_hij_zij_het": "maakte aan", "wij_jullie_zij": "maakten aan" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "aangemaakt" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "aangemaakt" },
+    "future_ottt": { "ik": "zal aanmaken", "wij_jullie_zij": "zullen aanmaken" }
+  },
+  {
+    "infinitive": "aanpassen",
+    "translation": "to adjust",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "pas aan", "jij": "past aan", "hij_zij_het": "past aan", "wij_jullie_zij": "passen aan" },
+    "past_ovt": { "ik_jij_hij_zij_het": "paste aan", "wij_jullie_zij": "pasten aan" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "aangepast" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "aangepast" },
+    "future_ottt": { "ik": "zal aanpassen", "wij_jullie_zij": "zullen aanpassen" }
+  },
+  {
+    "infinitive": "aansluiten",
+    "translation": "to connect",
+    "type": "irregular (strong)",
+    "present_ott": { "ik": "sluit aan", "jij": "sluit aan", "hij_zij_het": "sluit aan", "wij_jullie_zij": "sluiten aan" },
+    "past_ovt": { "ik_jij_hij_zij_het": "sloot aan", "wij_jullie_zij": "sloten aan" },
+    "present_perfect_vtt": { "auxiliary": "hebben/zijn", "past_participle": "aangesloten" },
+    "past_perfect_vvt": { "auxiliary": "had/waren", "past_participle": "aangesloten" },
+    "future_ottt": { "ik": "zal aansluiten", "wij_jullie_zij": "zullen aansluiten" }
+  },
+  {
+    "infinitive": "aanvragen",
+    "translation": "to apply (request)",
+    "type": "regular (weak / variant past)",
+    "present_ott": { "ik": "vraag aan", "jij": "vraagt aan", "hij_zij_het": "vraagt aan", "wij_jullie_zij": "vragen aan" },
+    "past_ovt": { "ik_jij_hij_zij_het": "vroeg aan", "wij_jullie_zij": "vroegen aan" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "aangevraagd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "aangevraagd" },
+    "future_ottt": { "ik": "zal aanvragen", "wij_jullie_zij": "zullen aanvragen" }
+  },
+  {
+    "infinitive": "aanwijzen",
+    "translation": "to point out; assign",
+    "type": "irregular (strong)",
+    "present_ott": { "ik": "wijs aan", "jij": "wijst aan", "hij_zij_het": "wijst aan", "wij_jullie_zij": "wijzen aan" },
+    "past_ovt": { "ik_jij_hij_zij_het": "wees aan", "wij_jullie_zij": "wezen aan" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "aangewezen" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "aangewezen" },
+    "future_ottt": { "ik": "zal aanwijzen", "wij_jullie_zij": "zullen aanwijzen" }
+  },
+  {
+    "infinitive": "toevoegen",
+    "translation": "to add",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "voeg toe", "jij": "voegt toe", "hij_zij_het": "voegt toe", "wij_jullie_zij": "voegen toe" },
+    "past_ovt": { "ik_jij_hij_zij_het": "voegde toe", "wij_jullie_zij": "voegden toe" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "toegevoegd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "toegevoegd" },
+    "future_ottt": { "ik": "zal toevoegen", "wij_jullie_zij": "zullen toevoegen" }
+  },
+  {
+    "infinitive": "vergroten",
+    "translation": "to enlarge",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "vergroot", "jij": "vergroot", "hij_zij_het": "vergroot", "wij_jullie_zij": "vergroten" },
+    "past_ovt": { "ik_jij_hij_zij_het": "vergrootte", "wij_jullie_zij": "vergrotten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "vergroot" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "vergroot" },
+    "future_ottt": { "ik": "zal vergroten", "wij_jullie_zij": "zullen vergroten" }
+  },
+  {
+    "infinitive": "verkorten",
+    "translation": "to shorten",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "verkort", "jij": "verkort", "hij_zij_het": "verkort", "wij_jullie_zij": "verkorten" },
+    "past_ovt": { "ik_jij_hij_zij_het": "verkortte", "wij_jullie_zij": "verkortten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "verkort" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "verkort" },
+    "future_ottt": { "ik": "zal verkorten", "wij_jullie_zij": "zullen verkorten" }
+  },
+  {
+    "infinitive": "verplaatsen",
+    "translation": "to move (an item)",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "verplaats", "jij": "verplaatst", "hij_zij_het": "verplaatst", "wij_jullie_zij": "verplaatsen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "verplaatste", "wij_jullie_zij": "verplaasten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "verplaatst" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "verplaatst" },
+    "future_ottt": { "ik": "zal verplaatsen", "wij_jullie_zij": "zullen verplaatsen" }
+  },
+  {
+    "infinitive": "verminderen",
+    "translation": "to reduce",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "verminder", "jij": "vermindert", "hij_zij_het": "vermindert", "wij_jullie_zij": "verminderen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "verminderde", "wij_jullie_zij": "verminderden" },
+    "present_perfect_vtt": { "auxiliary": "hebben/zijn", "past_participle": "verminderd" },
+    "past_perfect_vvt": { "auxiliary": "had/waren", "past_participle": "verminderd" },
+    "future_ottt": { "ik": "zal verminderen", "wij_jullie_zij": "zullen verminderen" }
+  },
+  {
+    "infinitive": "vergroeien",
+    "translation": "to grow together",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "vergroei", "jij": "vergroeit", "hij_zij_het": "vergroeit", "wij_jullie_zij": "vergroeien" },
+    "past_ovt": { "ik_jij_hij_zij_het": "vergroeide", "wij_jullie_zij": "vergroeiden" },
+    "present_perfect_vtt": { "auxiliary": "zijn", "past_participle": "vergroeid" },
+    "past_perfect_vvt": { "auxiliary": "was/waren", "past_participle": "vergroeid" },
+    "future_ottt": { "ik": "zal vergroeien", "wij_jullie_zij": "zullen vergroeien" }
+  },
+  {
+    "infinitive": "uitvoeren",
+    "translation": "to execute",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "voer uit", "jij": "voert uit", "hij_zij_het": "voert uit", "wij_jullie_zij": "voeren uit" },
+    "past_ovt": { "ik_jij_hij_zij_het": "voerde uit", "wij_jullie_zij": "voerden uit" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "uitgevoerd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "uitgevoerd" },
+    "future_ottt": { "ik": "zal uitvoeren", "wij_jullie_zij": "zullen uitvoeren" }
+  },
+  {
+    "infinitive": "oplossen",
+    "translation": "to solve",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "los op", "jij": "lost op", "hij_zij_het": "lost op", "wij_jullie_zij": "lossen op" },
+    "past_ovt": { "ik_jij_hij_zij_het": "loste op", "wij_jullie_zij": "loosten op" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "opgelost" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "opgelost" },
+    "future_ottt": { "ik": "zal oplossen", "wij_jullie_zij": "zullen oplossen" }
+  },
+  {
+    "infinitive": "ondertekenen",
+    "translation": "to sign",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "onderteken", "jij": "ondertekent", "hij_zij_het": "ondertekent", "wij_jullie_zij": "ondertekenen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "ondertekende", "wij_jullie_zij": "ondertekenden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "ondertekend" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "ondertekend" },
+    "future_ottt": { "ik": "zal ondertekenen", "wij_jullie_zij": "zullen ondertekenen" }
+  },
+  {
+    "infinitive": "ondersteunen",
+    "translation": "to support",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "ondersteun", "jij": "ondersteunt", "hij_zij_het": "ondersteunt", "wij_jullie_zij": "ondersteunen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "ondersteunde", "wij_jullie_zij": "ondersteunden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "ondersteund" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "ondersteund" },
+    "future_ottt": { "ik": "zal ondersteunen", "wij_jullie_zij": "zullen ondersteunen" }
+  },
+  {
+    "infinitive": "onderhouden",
+    "translation": "to maintain",
+    "type": "irregular (strong)",
+    "present_ott": { "ik": "onderhoud", "jij": "onderhoudt", "hij_zij_het": "onderhoudt", "wij_jullie_zij": "onderhouden" },
+    "past_ovt": { "ik_jij_hij_zij_het": "onderhield", "wij_jullie_zij": "onderhielden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "onderhouden" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "onderhouden" },
+    "future_ottt": { "ik": "zal onderhouden", "wij_jullie_zij": "zullen onderhouden" }
+  },
+  {
+    "infinitive": "wachten",
+    "translation": "to wait",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "wacht", "jij": "wacht", "hij_zij_het": "wacht", "wij_jullie_zij": "wachten" },
+    "past_ovt": { "ik_jij_hij_zij_het": "wachtte", "wij_jullie_zij": "wachtten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gewacht" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gewacht" },
+    "future_ottt": { "ik": "zal wachten", "wij_jullie_zij": "zullen wachten" }
+  },
+  {
+    "infinitive": "opmerken",
+    "translation": "to notice",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "merk op", "jij": "merkt op", "hij_zij_het": "merkt op", "wij_jullie_zij": "merken op" },
+    "past_ovt": { "ik_jij_hij_zij_het": "merkte op", "wij_jullie_zij": "merkten op" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "opgemerkt" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "opgemerkt" },
+    "future_ottt": { "ik": "zal opmerken", "wij_jullie_zij": "zullen opmerken" }
+  },
+  {
+    "infinitive": "merken",
+    "translation": "to notice",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "merk", "jij": "merkt", "hij_zij_het": "merkt", "wij_jullie_zij": "merken" },
+    "past_ovt": { "ik_jij_hij_zij_het": "merkte", "wij_jullie_zij": "merkten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gemerkt" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gemerkt" },
+    "future_ottt": { "ik": "zal merken", "wij_jullie_zij": "zullen merken" }
+  },
+  {
+    "infinitive": "verkiezen",
+    "translation": "to prefer",
+    "type": "irregular (strong)",
+    "present_ott": { "ik": "verkies", "jij": "verkiest", "hij_zij_het": "verkiest", "wij_jullie_zij": "verkiezen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "verkoos", "wij_jullie_zij": "verkozen" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "verkozen" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "verkozen" },
+    "future_ottt": { "ik": "zal verkiezen", "wij_jullie_zij": "zullen verkiezen" }
+  },
+  {
+    "infinitive": "voorstellen",
+    "translation": "to propose; introduce",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "stel voor", "jij": "stelt voor", "hij_zij_het": "stelt voor", "wij_jullie_zij": "stellen voor" },
+    "past_ovt": { "ik_jij_hij_zij_het": "stelde voor", "wij_jullie_zij": "stelden voor" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "voorgesteld" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "voorgesteld" },
+    "future_ottt": { "ik": "zal voorstellen", "wij_jullie_zij": "zullen voorstellen" }
+  },
+  {
+    "infinitive": "presenteren",
+    "translation": "to present",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "presenteer", "jij": "presenteert", "hij_zij_het": "presenteert", "wij_jullie_zij": "presenteren" },
+    "past_ovt": { "ik_jij_hij_zij_het": "presenteerde", "wij_jullie_zij": "presenteerden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gepresenteerd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gepresenteerd" },
+    "future_ottt": { "ik": "zal presenteren", "wij_jullie_zij": "zullen presenteren" }
+  },
+  {
+    "infinitive": "groeien",
+    "translation": "to grow",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "groei", "jij": "groeit", "hij_zij_het": "groeit", "wij_jullie_zij": "groeien" },
+    "past_ovt": { "ik_jij_hij_zij_het": "groeide", "wij_jullie_zij": "groeiden" },
+    "present_perfect_vtt": { "auxiliary": "zijn", "past_participle": "gegroeid" },
+    "past_perfect_vvt": { "auxiliary": "was/waren", "past_participle": "gegroeid" },
+    "future_ottt": { "ik": "zal groeien", "wij_jullie_zij": "zullen groeien" }
+  },
+  {
+    "infinitive": "dromen",
+    "translation": "to dream",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "droom", "jij": "droomt", "hij_zij_het": "droomt", "wij_jullie_zij": "dromen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "droomde", "wij_jullie_zij": "droomden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gedroomd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gedroomd" },
+    "future_ottt": { "ik": "zal dromen", "wij_jullie_zij": "zullen dromen" }
+  },
+  {
+    "infinitive": "glimlachen",
+    "translation": "to smile",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "glimlach", "jij": "glimlacht", "hij_zij_het": "glimlacht", "wij_jullie_zij": "glimlachen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "glimlachte", "wij_jullie_zij": "glimlachten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "geglimlacht" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "geglimlacht" },
+    "future_ottt": { "ik": "zal glimlachen", "wij_jullie_zij": "zullen glimlachen" }
+  },
+  {
+    "infinitive": "huilen",
+    "translation": "to cry",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "huil", "jij": "huilt", "hij_zij_het": "huilt", "wij_jullie_zij": "huilen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "huilde", "wij_jullie_zij": "huilden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gehuild" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gehuild" },
+    "future_ottt": { "ik": "zal huilen", "wij_jullie_zij": "zullen huilen" }
+  },
+  {
+    "infinitive": "voelen",
+    "translation": "to feel",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "voel", "jij": "voelt", "hij_zij_het": "voelt", "wij_jullie_zij": "voelen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "voelde", "wij_jullie_zij": "voelden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gevoeld" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gevoeld" },
+    "future_ottt": { "ik": "zal voelen", "wij_jullie_zij": "zullen voelen" }
+  },
+  {
+    "infinitive": "herkennen",
+    "translation": "to recognize",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "herken", "jij": "herkent", "hij_zij_het": "herkent", "wij_jullie_zij": "herkennen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "herkende", "wij_jullie_zij": "herkenden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "herkend" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "herkend" },
+    "future_ottt": { "ik": "zal herkennen", "wij_jullie_zij": "zullen herkennen" }
+  },
+  {
+    "infinitive": "ontdekken",
+    "translation": "to discover",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "ontdek", "jij": "ontdekt", "hij_zij_het": "ontdekt", "wij_jullie_zij": "ontdekken" },
+    "past_ovt": { "ik_jij_hij_zij_het": "ontdekte", "wij_jullie_zij": "ontdekten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "ontdekt" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "ontdekt" },
+    "future_ottt": { "ik": "zal ontdekken", "wij_jullie_zij": "zullen ontdekken" }
+  },
+  {
+    "infinitive": "ontwikkelen",
+    "translation": "to develop",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "ontwikkel", "jij": "ontwikkelt", "hij_zij_het": "ontwikkelt", "wij_jullie_zij": "ontwikkelen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "ontwikkelde", "wij_jullie_zij": "ontwikkelden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "ontwikkeld" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "ontwikkeld" },
+    "future_ottt": { "ik": "zal ontwikkelen", "wij_jullie_zij": "zullen ontwikkelen" }
+  },
+  {
+    "infinitive": "ontwerpen",
+    "translation": "to design",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "ontwerp", "jij": "ontwerpt", "hij_zij_het": "ontwerpt", "wij_jullie_zij": "ontwerpen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "ontwierp", "wij_jullie_zij": "ontwierpen" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "ontworpen" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "ontworpen" },
+    "future_ottt": { "ik": "zal ontwerpen", "wij_jullie_zij": "zullen ontwerpen" }
+  },
+  {
+    "infinitive": "bouwen",
+    "translation": "to build",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "bouw", "jij": "bouwt", "hij_zij_het": "bouwt", "wij_jullie_zij": "bouwen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "bouwde", "wij_jullie_zij": "bouwden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gebouwd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gebouwd" },
+    "future_ottt": { "ik": "zal bouwen", "wij_jullie_zij": "zullen bouwen" }
+  },
+  {
+    "infinitive": "repareren",
+    "translation": "to repair",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "repareer", "jij": "repareert", "hij_zij_het": "repareert", "wij_jullie_zij": "repareren" },
+    "past_ovt": { "ik_jij_hij_zij_het": "repareerde", "wij_jullie_zij": "repareren" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gerepareerd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gerepareerd" },
+    "future_ottt": { "ik": "zal repareren", "wij_jullie_zij": "zullen repareren" }
+  },
+  {
+    "infinitive": "rekenen",
+    "translation": "to calculate",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "reken", "jij": "rekent", "hij_zij_het": "rekent", "wij_jullie_zij": "rekenen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "rekende", "wij_jullie_zij": "rekenden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gerekend" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gerekend" },
+    "future_ottt": { "ik": "zal rekenen", "wij_jullie_zij": "zullen rekenen" }
+  },
+  {
+    "infinitive": "tekenen",
+    "translation": "to draw; sign",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "teken", "jij": "tekent", "hij_zij_het": "tekent", "wij_jullie_zij": "tekenen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "tekende", "wij_jullie_zij": "tekenden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "getekend" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "getekend" },
+    "future_ottt": { "ik": "zal tekenen", "wij_jullie_zij": "zullen tekenen" }
+  },
+  {
+    "infinitive": "beperken",
+    "translation": "to limit",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "beperk", "jij": "beperkt", "hij_zij_het": "beperkt", "wij_jullie_zij": "beperken" },
+    "past_ovt": { "ik_jij_hij_zij_het": "beperkte", "wij_jullie_zij": "beperkten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "beperkt" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "beperkt" },
+    "future_ottt": { "ik": "zal beperken", "wij_jullie_zij": "zullen beperken" }
+  },
+  {
+    "infinitive": "beschermen",
+    "translation": "to protect",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "bescherm", "jij": "beschermt", "hij_zij_het": "beschermt", "wij_jullie_zij": "beschermen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "beschermde", "wij_jullie_zij": "beschermden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "beschermd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "beschermd" },
+    "future_ottt": { "ik": "zal beschermen", "wij_jullie_zij": "zullen beschermen" }
+  },
+  {
+    "infinitive": "bevestigen",
+    "translation": "to confirm; attach",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "bevestig", "jij": "bevestigt", "hij_zij_het": "bevestigt", "wij_jullie_zij": "bevestigen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "bevestigde", "wij_jullie_zij": "bevestigden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "bevestigd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "bevestigd" },
+    "future_ottt": { "ik": "zal bevestigen", "wij_jullie_zij": "zullen bevestigen" }
+  },
+  {
+    "infinitive": "afmaken",
+    "translation": "to finish",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "maak af", "jij": "maakt af", "hij_zij_het": "maakt af", "wij_jullie_zij": "maken af" },
+    "past_ovt": { "ik_jij_hij_zij_het": "maakte af", "wij_jullie_zij": "maakten af" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "afgemaakt" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "afgemaakt" },
+    "future_ottt": { "ik": "zal afmaken", "wij_jullie_zij": "zullen afmaken" }
+  },
+  {
+    "infinitive": "afronden",
+    "translation": "to round off; finish",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "rond af", "jij": "rondt af", "hij_zij_het": "rondt af", "wij_jullie_zij": "ronden af" },
+    "past_ovt": { "ik_jij_hij_zij_het": "rondde af", "wij_jullie_zij": "rondden af" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "afgerond" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "afgerond" },
+    "future_ottt": { "ik": "zal afronden", "wij_jullie_zij": "zullen afronden" }
+  },
+  {
+    "infinitive": "afhalen",
+    "translation": "to pick up",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "haal af", "jij": "haalt af", "hij_zij_het": "haalt af", "wij_jullie_zij": "halen af" },
+    "past_ovt": { "ik_jij_hij_zij_het": "haalde af", "wij_jullie_zij": "haalden af" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "afgehaald" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "afgehaald" },
+    "future_ottt": { "ik": "zal afhalen", "wij_jullie_zij": "zullen afhalen" }
+  },
+  {
+    "infinitive": "inloggen",
+    "translation": "to log in",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "log in", "jij": "logt in", "hij_zij_het": "logt in", "wij_jullie_zij": "loggen in" },
+    "past_ovt": { "ik_jij_hij_zij_het": "logde in", "wij_jullie_zij": "logden in" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "ingelogd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "ingelogd" },
+    "future_ottt": { "ik": "zal inloggen", "wij_jullie_zij": "zullen inloggen" }
+  },
+  {
+    "infinitive": "uitloggen",
+    "translation": "to log out",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "log uit", "jij": "logt uit", "hij_zij_het": "logt uit", "wij_jullie_zij": "loggen uit" },
+    "past_ovt": { "ik_jij_hij_zij_het": "logde uit", "wij_jullie_zij": "logden uit" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "uitgelogd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "uitgelogd" },
+    "future_ottt": { "ik": "zal uitloggen", "wij_jullie_zij": "zullen uitloggen" }
+  },
+  {
+    "infinitive": "afmelden",
+    "translation": "to sign off; log out",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "meld af", "jij": "meldt af", "hij_zij_het": "meldt af", "wij_jullie_zij": "melden af" },
+    "past_ovt": { "ik_jij_hij_zij_het": "meldde af", "wij_jullie_zij": "meldden af" },
+    "present_perfect_vtt": { "auxiliary": "hebben/zijn", "past_participle": "afgemeld" },
+    "past_perfect_vvt": { "auxiliary": "had/waren", "past_participle": "afgemeld" },
+    "future_ottt": { "ik": "zal afmelden", "wij_jullie_zij": "zullen afmelden" }
+  },
+  {
+    "infinitive": "bijwerken",
+    "translation": "to update",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "werk bij", "jij": "werkt bij", "hij_zij_het": "werkt bij", "wij_jullie_zij": "werken bij" },
+    "past_ovt": { "ik_jij_hij_zij_het": "werkte bij", "wij_jullie_zij": "werkten bij" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "bijgewerkt" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "bijgewerkt" },
+    "future_ottt": { "ik": "zal bijwerken", "wij_jullie_zij": "zullen bijwerken" }
+  },
+  {
+    "infinitive": "updaten",
+    "translation": "to update",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "update", "jij": "updatet", "hij_zij_het": "updatet", "wij_jullie_zij": "updaten" },
+    "past_ovt": { "ik_jij_hij_zij_het": "updatete", "wij_jullie_zij": "updateten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "geüpdatet" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "geüpdatet" },
+    "future_ottt": { "ik": "zal updaten", "wij_jullie_zij": "zullen updaten" }
+  },
+  {
+    "infinitive": "bijhouden",
+    "translation": "to keep up",
+    "type": "irregular (strong)",
+    "present_ott": { "ik": "houd bij", "jij": "houdt bij", "hij_zij_het": "houdt bij", "wij_jullie_zij": "houden bij" },
+    "past_ovt": { "ik_jij_hij_zij_het": "hield bij", "wij_jullie_zij": "hielden bij" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "bijgehouden" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "bijgehouden" },
+    "future_ottt": { "ik": "zal bijhouden", "wij_jullie_zij": "zullen bijhouden" }
+  },
+  {
+    "infinitive": "bekendmaken",
+    "translation": "to announce",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "maak bekend", "jij": "maakt bekend", "hij_zij_het": "maakt bekend", "wij_jullie_zij": "maken bekend" },
+    "past_ovt": { "ik_jij_hij_zij_het": "maakte bekend", "wij_jullie_zij": "maakten bekend" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "bekendgemaakt" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "bekendgemaakt" },
+    "future_ottt": { "ik": "zal bekendmaken", "wij_jullie_zij": "zullen bekendmaken" }
+  },
+  {
+    "infinitive": "bekennen",
+    "translation": "to confess",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "beken", "jij": "bekent", "hij_zij_het": "bekent", "wij_jullie_zij": "bekennen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "bekende", "wij_jullie_zij": "bekenden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "bekend" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "bekend" },
+    "future_ottt": { "ik": "zal bekennen", "wij_jullie_zij": "zullen bekennen" }
+  },
+  {
+    "infinitive": "behoren",
+    "translation": "to belong",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "behoor", "jij": "behoort", "hij_zij_het": "behoort", "wij_jullie_zij": "behoren" },
+    "past_ovt": { "ik_jij_hij_zij_het": "behoorde", "wij_jullie_zij": "behoorden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "behoord" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "behoord" },
+    "future_ottt": { "ik": "zal behoren", "wij_jullie_zij": "zullen behoren" }
+  },
+  {
+    "infinitive": "bevinden",
+    "translation": "to be located; find",
+    "type": "irregular (strong)",
+    "present_ott": { "ik": "bevind", "jij": "bevindt", "hij_zij_het": "bevindt", "wij_jullie_zij": "bevinden" },
+    "past_ovt": { "ik_jij_hij_zij_het": "bevond", "wij_jullie_zij": "bevonden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "bevonden" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "bevonden" },
+    "future_ottt": { "ik": "zal bevinden", "wij_jullie_zij": "zullen bevinden" }
+  },
+  {
+    "infinitive": "weggaan",
+    "translation": "to leave",
+    "type": "irregular (strong)",
+    "present_ott": { "ik": "ga weg", "jij": "gaat weg", "hij_zij_het": "gaat weg", "wij_jullie_zij": "gaan weg" },
+    "past_ovt": { "ik_jij_hij_zij_het": "ging weg", "wij_jullie_zij": "gingen weg" },
+    "present_perfect_vtt": { "auxiliary": "zijn", "past_participle": "weggegaan" },
+    "past_perfect_vvt": { "auxiliary": "was/waren", "past_participle": "weggegaan" },
+    "future_ottt": { "ik": "zal weggaan", "wij_jullie_zij": "zullen weggaan" }
+  },
+  {
+    "infinitive": "teruggeven",
+    "translation": "to give back",
+    "type": "irregular (strong)",
+    "present_ott": { "ik": "geef terug", "jij": "geeft terug", "hij_zij_het": "geeft terug", "wij_jullie_zij": "geven terug" },
+    "past_ovt": { "ik_jij_hij_zij_het": "gaf terug", "wij_jullie_zij": "gaven terug" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "teruggegeven" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "teruggegeven" },
+    "future_ottt": { "ik": "zal teruggeven", "wij_jullie_zij": "zullen teruggeven" }
+  },
+  {
+    "infinitive": "meewerken",
+    "translation": "to cooperate",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "werk mee", "jij": "werkt mee", "hij_zij_het": "werkt mee", "wij_jullie_zij": "werken mee" },
+    "past_ovt": { "ik_jij_hij_zij_het": "werkte mee", "wij_jullie_zij": "werkten mee" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "meegewerkt" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "meegewerkt" },
+    "future_ottt": { "ik": "zal meewerken", "wij_jullie_zij": "zullen meewerken" }
+  },
+  {
+    "infinitive": "samenwerken",
+    "translation": "to collaborate",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "werk samen", "jij": "werkt samen", "hij_zij_het": "werkt samen", "wij_jullie_zij": "werken samen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "werkte samen", "wij_jullie_zij": "werkten samen" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "samengewerkt" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "samengewerkt" },
+    "future_ottt": { "ik": "zal samenwerken", "wij_jullie_zij": "zullen samenwerken" }
+  },
+  {
+    "infinitive": "doorwerken",
+    "translation": "to keep working",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "werk door", "jij": "werkt door", "hij_zij_het": "werkt door", "wij_jullie_zij": "werken door" },
+    "past_ovt": { "ik_jij_hij_zij_het": "werkte door", "wij_jullie_zij": "werkten door" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "doorgewerkt" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "doorgewerkt" },
+    "future_ottt": { "ik": "zal doorwerken", "wij_jullie_zij": "zullen doorwerken" }
+  },
+  {
+    "infinitive": "afspreken",
+    "translation": "to arrange (meet)",
+    "type": "irregular (strong)",
+    "present_ott": { "ik": "spreek af", "jij": "spreekt af", "hij_zij_het": "spreekt af", "wij_jullie_zij": "spreken af" },
+    "past_ovt": { "ik_jij_hij_zij_het": "sprak af", "wij_jullie_zij": "spraken af" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "afgesproken" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "afgesproken" },
+    "future_ottt": { "ik": "zal afspreken", "wij_jullie_zij": "zullen afspreken" }
+  },
+  {
+    "infinitive": "opruimen",
+    "translation": "to tidy up",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "ruim op", "jij": "ruimt op", "hij_zij_het": "ruimt op", "wij_jullie_zij": "ruimen op" },
+    "past_ovt": { "ik_jij_hij_zij_het": "ruimde op", "wij_jullie_zij": "ruimden op" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "opgeruimd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "opgeruimd" },
+    "future_ottt": { "ik": "zal opruimen", "wij_jullie_zij": "zullen opruimen" }
+  },
+  {
+    "infinitive": "overleggen",
+    "translation": "to consult",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "overleg", "jij": "overlegt", "hij_zij_het": "overlegt", "wij_jullie_zij": "overleggen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "overlegde", "wij_jullie_zij": "overlegden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "overlegd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "overlegd" },
+    "future_ottt": { "ik": "zal overleggen", "wij_jullie_zij": "zullen overleggen" }
+  },
+  {
+    "infinitive": "overwegen",
+    "translation": "to consider",
+    "type": "irregular (strong)",
+    "present_ott": { "ik": "overweeg", "jij": "overweegt", "hij_zij_het": "overweegt", "wij_jullie_zij": "overwegen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "overwoog", "wij_jullie_zij": "overwogen" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "overwogen" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "overwogen" },
+    "future_ottt": { "ik": "zal overwegen", "wij_jullie_zij": "zullen overwegen" }
+  },
+  {
+    "infinitive": "beoordelen",
+    "translation": "to assess",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "beoordeel", "jij": "beoordeelt", "hij_zij_het": "beoordeelt", "wij_jullie_zij": "beoordelen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "beoordeelde", "wij_jullie_zij": "beoordeelden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "beoordeeld" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "beoordeeld" },
+    "future_ottt": { "ik": "zal beoordelen", "wij_jullie_zij": "zullen beoordelen" }
+  },
+  {
+    "infinitive": "begeleiden",
+    "translation": "to guide",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "begeleid", "jij": "begeleidt", "hij_zij_het": "begeleidt", "wij_jullie_zij": "begeleiden" },
+    "past_ovt": { "ik_jij_hij_zij_het": "begeleidde", "wij_jullie_zij": "begeleidden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "begeleid" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "begeleid" },
+    "future_ottt": { "ik": "zal begeleiden", "wij_jullie_zij": "zullen begeleiden" }
+  },
+  {
+    "infinitive": "behandelen",
+    "translation": "to treat",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "behandel", "jij": "behandelt", "hij_zij_het": "behandelt", "wij_jullie_zij": "behandelen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "behandelde", "wij_jullie_zij": "behandelden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "behandeld" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "behandeld" },
+    "future_ottt": { "ik": "zal behandelen", "wij_jullie_zij": "zullen behandelen" }
+  },
+  {
+    "infinitive": "ondervragen",
+    "translation": "to interrogate",
+    "type": "regular (weak / variant past)",
+    "present_ott": { "ik": "ondervraag", "jij": "ondervraagt", "hij_zij_het": "ondervraagt", "wij_jullie_zij": "ondervragen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "ondervroeg", "wij_jullie_zij": "ondervroegen" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "ondervraagd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "ondervraagd" },
+    "future_ottt": { "ik": "zal ondervragen", "wij_jullie_zij": "zullen ondervragen" }
+  },
+  {
+    "infinitive": "ondervinden",
+    "translation": "to experience",
+    "type": "irregular (strong)",
+    "present_ott": { "ik": "ondervind", "jij": "ondervindt", "hij_zij_het": "ondervindt", "wij_jullie_zij": "ondervinden" },
+    "past_ovt": { "ik_jij_hij_zij_het": "ondervond", "wij_jullie_zij": "ondervonden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "ondervonden" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "ondervonden" },
+    "future_ottt": { "ik": "zal ondervinden", "wij_jullie_zij": "zullen ondervinden" }
+  },
+  {
+    "infinitive": "opleveren",
+    "translation": "to deliver (yield)",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "lever op", "jij": "levert op", "hij_zij_het": "levert op", "wij_jullie_zij": "leveren op" },
+    "past_ovt": { "ik_jij_hij_zij_het": "leverde op", "wij_jullie_zij": "leverden op" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "opgeleverd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "opgeleverd" },
+    "future_ottt": { "ik": "zal opleveren", "wij_jullie_zij": "zullen opleveren" }
+  },
+  {
+    "infinitive": "toelichten",
+    "translation": "to clarify",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "licht toe", "jij": "licht toe", "hij_zij_het": "licht toe", "wij_jullie_zij": "lichten toe" },
+    "past_ovt": { "ik_jij_hij_zij_het": "lichtte toe", "wij_jullie_zij": "lichtten toe" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "toegelicht" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "toegelicht" },
+    "future_ottt": { "ik": "zal toelichten", "wij_jullie_zij": "zullen toelichten" }
+  },
+  {
+    "infinitive": "toepassen",
+    "translation": "to apply",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "pas toe", "jij": "past toe", "hij_zij_het": "past toe", "wij_jullie_zij": "passen toe" },
+    "past_ovt": { "ik_jij_hij_zij_het": "paste toe", "wij_jullie_zij": "pasten toe" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "toegepast" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "toegepast" },
+    "future_ottt": { "ik": "zal toepassen", "wij_jullie_zij": "zullen toepassen" }
+  },
+  {
+    "infinitive": "toestaan",
+    "translation": "to allow",
+    "type": "irregular (strong)",
+    "present_ott": { "ik": "sta toe", "jij": "staat toe", "hij_zij_het": "staat toe", "wij_jullie_zij": "staan toe" },
+    "past_ovt": { "ik_jij_hij_zij_het": "stond toe", "wij_jullie_zij": "stonden toe" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "toegestaan" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "toegestaan" },
+    "future_ottt": { "ik": "zal toestaan", "wij_jullie_zij": "zullen toestaan" }
+  },
+  {
+    "infinitive": "weergeven",
+    "translation": "to display",
+    "type": "irregular (strong)",
+    "present_ott": { "ik": "geef weer", "jij": "geeft weer", "hij_zij_het": "geeft weer", "wij_jullie_zij": "geven weer" },
+    "past_ovt": { "ik_jij_hij_zij_het": "gaf weer", "wij_jullie_zij": "gaven weer" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "weergegeven" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "weergegeven" },
+    "future_ottt": { "ik": "zal weergeven", "wij_jullie_zij": "zullen weergeven" }
+  },
+  {
+    "infinitive": "weerleggen",
+    "translation": "to refute",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "weerleg", "jij": "weerlegt", "hij_zij_het": "weerlegt", "wij_jullie_zij": "weerleggen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "weerlegde", "wij_jullie_zij": "weerlegden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "weerlegd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "weerlegd" },
+    "future_ottt": { "ik": "zal weerleggen", "wij_jullie_zij": "zullen weerleggen" }
+  },
+  {
+    "infinitive": "waarschuwen",
+    "translation": "to warn",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "waarschuw", "jij": "waarschuwt", "hij_zij_het": "waarschuwt", "wij_jullie_zij": "waarschuwen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "waarschuwde", "wij_jullie_zij": "waarschuwden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gewaarschuwd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gewaarschuwd" },
+    "future_ottt": { "ik": "zal waarschuwen", "wij_jullie_zij": "zullen waarschuwen" }
+  },
+  {
+    "infinitive": "behouden",
+    "translation": "to retain",
+    "type": "irregular (strong)",
+    "present_ott": { "ik": "behoud", "jij": "behoudt", "hij_zij_het": "behoudt", "wij_jullie_zij": "behouden" },
+    "past_ovt": { "ik_jij_hij_zij_het": "behield", "wij_jullie_zij": "behielden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "behouden" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "behouden" },
+    "future_ottt": { "ik": "zal behouden", "wij_jullie_zij": "zullen behouden" }
+  },
+  {
+    "infinitive": "opzetten",
+    "translation": "to set up",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "zet op", "jij": "zet op", "hij_zij_het": "zet op", "wij_jullie_zij": "zetten op" },
+    "past_ovt": { "ik_jij_hij_zij_het": "zette op", "wij_jullie_zij": "zetten op" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "opgezet" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "opgezet" },
+    "future_ottt": { "ik": "zal opzetten", "wij_jullie_zij": "zullen opzetten" }
+  },
+  {
+    "infinitive": "bezetten",
+    "translation": "to occupy",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "bezet", "jij": "bezet", "hij_zij_het": "bezet", "wij_jullie_zij": "bezetten" },
+    "past_ovt": { "ik_jij_hij_zij_het": "bezette", "wij_jullie_zij": "bezetten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "bezet" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "bezet" },
+    "future_ottt": { "ik": "zal bezetten", "wij_jullie_zij": "zullen bezetten" }
+  },
+  {
+    "infinitive": "verzetten",
+    "translation": "to move; reschedule",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "verzet", "jij": "verzet", "hij_zij_het": "verzet", "wij_jullie_zij": "verzetten" },
+    "past_ovt": { "ik_jij_hij_zij_het": "verzette", "wij_jullie_zij": "verzetten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "verzet" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "verzet" },
+    "future_ottt": { "ik": "zal verzetten", "wij_jullie_zij": "zullen verzetten" }
+  },
+  {
+    "infinitive": "aanzetten",
+    "translation": "to turn on",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "zet aan", "jij": "zet aan", "hij_zij_het": "zet aan", "wij_jullie_zij": "zetten aan" },
+    "past_ovt": { "ik_jij_hij_zij_het": "zette aan", "wij_jullie_zij": "zetten aan" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "aangezet" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "aangezet" },
+    "future_ottt": { "ik": "zal aanzetten", "wij_jullie_zij": "zullen aanzetten" }
+  },
+  {
+    "infinitive": "uitzetten",
+    "translation": "to turn off",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "zet uit", "jij": "zet uit", "hij_zij_het": "zet uit", "wij_jullie_zij": "zetten uit" },
+    "past_ovt": { "ik_jij_hij_zij_het": "zette uit", "wij_jullie_zij": "zetten uit" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "uitgezet" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "uitgezet" },
+    "future_ottt": { "ik": "zal uitzetten", "wij_jullie_zij": "zullen uitzetten" }
+  },
+  {
+    "infinitive": "inschakelen",
+    "translation": "to switch on",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "schakel in", "jij": "schakelt in", "hij_zij_het": "schakel in", "wij_jullie_zij": "schakelen in" },
+    "past_ovt": { "ik_jij_hij_zij_het": "schakelde in", "wij_jullie_zij": "schakelden in" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "ingeschakeld" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "ingeschakeld" },
+    "future_ottt": { "ik": "zal inschakelen", "wij_jullie_zij": "zullen inschakelen" }
+  },
+  {
+    "infinitive": "uitschakelen",
+    "translation": "to switch off",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "schakel uit", "jij": "schakelt uit", "hij_zij_het": "schakelt uit", "wij_jullie_zij": "schakelen uit" },
+    "past_ovt": { "ik_jij_hij_zij_het": "schakelde uit", "wij_jullie_zij": "schakelden uit" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "uitgeschakeld" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "uitgeschakeld" },
+    "future_ottt": { "ik": "zal uitschakelen", "wij_jullie_zij": "zullen uitschakelen" }
+  },
+  {
+    "infinitive": "doorsturen",
+    "translation": "to forward",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "stuur door", "jij": "stuurt door", "hij_zij_het": "stuurt door", "wij_jullie_zij": "sturen door" },
+    "past_ovt": { "ik_jij_hij_zij_het": "stuurde door", "wij_jullie_zij": "stuurden door" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "doorgestuurd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "doorgestuurd" },
+    "future_ottt": { "ik": "zal doorsturen", "wij_jullie_zij": "zullen doorsturen" }
+  },
+  {
+    "infinitive": "rusten",
+    "translation": "rest",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "rust", "jij": "rust", "hij_zij_het": "rust", "wij_jullie_zij": "rusten" },
+    "past_ovt": { "ik_jij_hij_zij_het": "rustte", "wij_jullie_zij": "rustten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gerust" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gerust" },
+    "future_ottt": { "ik": "zal rusten", "wij_jullie_zij": "zullen rusten" }
+  },
+  {
+    "infinitive": "terugkeren",
+    "translation": "return",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "keer terug", "jij": "keert terug", "hij_zij_het": "keert terug", "wij_jullie_zij": "keren terug" },
+    "past_ovt": { "ik_jij_hij_zij_het": "keerde terug", "wij_jullie_zij": "keerden terug" },
+    "present_perfect_vtt": { "auxiliary": "zijn", "past_participle": "teruggekeerd" },
+    "past_perfect_vvt": { "auxiliary": "was/waren", "past_participle": "teruggekeerd" },
+    "future_ottt": { "ik": "zal terugkeren", "wij_jullie_zij": "zullen terugkeren" }
+  },
+  {
+    "infinitive": "baden",
+    "translation": "bathe",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "baad", "jij": "baadt", "hij_zij_het": "baadt", "wij_jullie_zij": "baden" },
+    "past_ovt": { "ik_jij_hij_zij_het": "baadde", "wij_jullie_zij": "baadden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gebaad" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gebaad" },
+    "future_ottt": { "ik": "zal baden", "wij_jullie_zij": "zullen baden" }
+  },
+  {
+    "infinitive": "wakker worden",
+    "translation": "wake up",
+    "type": "irregular (strong)",
+    "present_ott": { "ik": "word wakker", "jij": "wordt wakker", "hij_zij_het": "wordt wakker", "wij_jullie_zij": "worden wakker" },
+    "past_ovt": { "ik_jij_hij_zij_het": "werd wakker", "wij_jullie_zij": "werden wakker" },
+    "present_perfect_vtt": { "auxiliary": "zijn", "past_participle": "wakker geworden" },
+    "past_perfect_vvt": { "auxiliary": "was/waren", "past_participle": "wakker geworden" },
+    "future_ottt": { "ik": "zal wakker worden", "wij_jullie_zij": "zullen wakker worden" }
+  },
+  {
+    "infinitive": "aandoen",
+    "translation": "turn on",
+    "type": "irregular (strong)",
+    "present_ott": { "ik": "doe aan", "jij": "doet aan", "hij_zij_het": "doet aan", "wij_jullie_zij": "doen aan" },
+    "past_ovt": { "ik_jij_hij_zij_het": "deed aan", "wij_jullie_zij": "deden aan" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "aangedaan" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "aangedaan" },
+    "future_ottt": { "ik": "zal aandoen", "wij_jullie_zij": "zullen aandoen" }
+  },
+  {
+    "infinitive": "arriveren",
+    "translation": "arrive",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "arriveer", "jij": "arriveert", "hij_zij_het": "arriveert", "wij_jullie_zij": "arriveren" },
+    "past_ovt": { "ik_jij_hij_zij_het": "arriveerde", "wij_jullie_zij": "arriveerden" },
+    "present_perfect_vtt": { "auxiliary": "zijn", "past_participle": "gearriveerd" },
+    "past_perfect_vvt": { "auxiliary": "was/waren", "past_participle": "gearriveerd" },
+    "future_ottt": { "ik": "zal arriveren", "wij_jullie_zij": "zullen arriveren" }
+  },
+  {
+    "infinitive": "lesgeven",
+    "translation": "teach",
+    "type": "irregular (strong)",
+    "present_ott": { "ik": "geef les", "jij": "geeft les", "hij_zij_het": "geeft les", "wij_jullie_zij": "geven les" },
+    "past_ovt": { "ik_jij_hij_zij_het": "gaf les", "wij_jullie_zij": "gaven les" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "lesgegeven" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "lesgegeven" },
+    "future_ottt": { "ik": "zal lesgeven", "wij_jullie_zij": "zullen lesgeven" }
+  },
+  {
+    "infinitive": "rondreizen",
+    "translation": "tour",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "reis rond", "jij": "reist rond", "hij_zij_het": "reist rond", "wij_jullie_zij": "reizen rond" },
+    "past_ovt": { "ik_jij_hij_zij_het": "reisde rond", "wij_jullie_zij": "reisden rond" },
+    "present_perfect_vtt": { "auxiliary": "zijn/hebben", "past_participle": "rondgereisd" },
+    "past_perfect_vvt": { "auxiliary": "was/had", "past_participle": "rondgereisd" },
+    "future_ottt": { "ik": "zal rondreizen", "wij_jullie_zij": "zullen rondreizen" }
+  },
+  {
+    "infinitive": "annuleren",
+    "translation": "cancel",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "annuleer", "jij": "annuleert", "hij_zij_het": "annuleert", "wij_jullie_zij": "annuleren" },
+    "past_ovt": { "ik_jij_hij_zij_het": "annuleerde", "wij_jullie_zij": "annuleerden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "geannuleerd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "geannuleerd" },
+    "future_ottt": { "ik": "zal annuleren", "wij_jullie_zij": "zullen annuleren" }
+  },
+  {
+    "infinitive": "telefoneren",
+    "translation": "call",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "telefoneer", "jij": "telefoneert", "hij_zij_het": "telefoneert", "wij_jullie_zij": "telefoneren" },
+    "past_ovt": { "ik_jij_hij_zij_het": "telefoneerde", "wij_jullie_zij": "telefoneerden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "getelefoneerd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "getelefoneerd" },
+    "future_ottt": { "ik": "zal telefoneren", "wij_jullie_zij": "zullen telefoneren" }
+  },
+  {
+    "infinitive": "herinneren",
+    "translation": "remember",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "herinner", "jij": "herinnert", "hij_zij_het": "herinnert", "wij_jullie_zij": "herinneren" },
+    "past_ovt": { "ik_jij_hij_zij_het": "herinnerde", "wij_jullie_zij": "herinnerden" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "herinnerd" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "herinnerd" },
+    "future_ottt": { "ik": "zal herinneren", "wij_jullie_zij": "zullen herinneren" }
+  },
+  {
+    "infinitive": "douchen",
+    "translation": "shower",
+    "type": "regular (weak)",
+    "present_ott": { "ik": "douche", "jij": "doucht", "hij_zij_het": "doucht", "wij_jullie_zij": "douchen" },
+    "past_ovt": { "ik_jij_hij_zij_het": "douchte", "wij_jullie_zij": "douchten" },
+    "present_perfect_vtt": { "auxiliary": "hebben", "past_participle": "gedoucht" },
+    "past_perfect_vvt": { "auxiliary": "had/hadden", "past_participle": "gedoucht" },
+    "future_ottt": { "ik": "zal douchen", "wij_jullie_zij": "zullen douchen" }
+  }
+]
