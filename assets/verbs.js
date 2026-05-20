@@ -490,12 +490,9 @@ function renderStudyCard() {
   setTimeout(() => { if (st.ttsSeq === seq) speak(v.infinitive); }, 420);
 
   $('next-btn').onclick = () => {
-    $('vcard').classList.add('exit');
-    setTimeout(() => {
-      st.studyIdx++;
-      if (st.studyIdx >= st.session.length) { buildQuiz(); startQuiz(); }
-      else renderStudyCard();
-    }, 260);
+    st.studyIdx++;
+    if (st.studyIdx >= st.session.length) { buildQuiz(); startQuiz(); }
+    else renderStudyCard();
   };
 
   const prevBtn = $('prev-btn');
