@@ -443,11 +443,6 @@ body {
   padding-left: 24px;
 }
 
-/* Bottom bar – hidden on desktop, visible on mobile only */
-@media (min-width: 901px) {
-  .bottom-bar { display: none; }
-}
-
 .bottom-bar {
   position: sticky;
   bottom: 0;
@@ -458,6 +453,11 @@ body {
   padding: 10px 16px;
   border-top: 1px solid var(--border);
   background: linear-gradient(0deg, var(--panel), var(--panel));
+}
+
+/* Hidden on desktop, visible on mobile only */
+@media (min-width: 901px) {
+  .bottom-bar { display: none; }
 }
 
 /* ── Mobile top bar ── */
