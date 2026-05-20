@@ -341,6 +341,12 @@ function buildTOC() {
 
 // ---------- Progress & Completion ----------
 function initReadingProgress() {
+  const saveScroll = debounce((file, y) => {
+    const map = loadLS(CONFIG.storage.scrollMap, {});
+    map[file] = y;
+    saveLS(CONFIG.storage.scrollMap, map);
+  }, 350);
+
   document.addEventListener('scroll', () => {
     const max = document.documentElement.scrollHeight - window.innerHeight;
     const y = window.scrollY;
@@ -359,20 +365,33 @@ function initReadingProgress() {
       }
     }
 
-    // Lưu vị trí cuộn
-    const map = loadLS(CONFIG.storage.scrollMap, {});
-    map[ch.file] = y;
-    saveLS(CONFIG.storage.scrollMap, map);
+    // Lưu vị trí cuộn (debounced)
+    saveScroll(ch.file, y);
   }, { passive: true });
 }
 
 function restoreScrollPosition(file) {
   const map = loadLS(CONFIG.storage.scrollMap, {});
-  const y = map[file] || 0;
-  // tránh flicker khi nội dung còn layouting
+  const target = map[file] || 0;
+  if (target <= 0) return;
+
+  // Retry until content is laid out and scrollHeight is large enough
+  let attempts = 0;
+  const MAX = 10;
+  const INTERVAL = 120;
   state.scrolling = true;
-  requestAnimationFrame(() => window.scrollTo({ top: y, behavior: 'instant' }));
-  setTimeout(() => { state.scrolling = false; }, 100);
+
+  const tryScroll = () => {
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    if (maxScroll >= target || attempts >= MAX) {
+      window.scrollTo({ top: target, behavior: 'instant' });
+      setTimeout(() => { state.scrolling = false; }, 80);
+      return;
+    }
+    attempts++;
+    setTimeout(tryScroll, INTERVAL);
+  };
+  requestAnimationFrame(tryScroll);
 }
 
 // ---------- Search ----------
