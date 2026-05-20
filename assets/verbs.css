@@ -517,14 +517,12 @@ body {
 .vcard {
   width: 100%;
   border-radius: var(--r14); box-shadow: var(--shadow); overflow: hidden;
-  animation: enterUp .38s cubic-bezier(.34,1.56,.64,1);
+  animation: fadeIn .15s ease;
 }
 #study-container { width: 100%; max-width: 880px; }
 #quiz-container  { width: 100%; max-width: 720px; }
-.vcard.exit { animation: exitLeft .28s ease forwards; }
 
-@keyframes enterUp  { from { opacity:0; transform:translateY(22px) scale(.97); } to { opacity:1; transform:none; } }
-@keyframes exitLeft { from { opacity:1; transform:translateX(0); } to { opacity:0; transform:translateX(-50px); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
 .vhero {
   background: linear-gradient(135deg, var(--sb) 0%, var(--sb-h) 100%);
@@ -590,7 +588,7 @@ body {
   width: 100%; max-width: 600px;
   background: var(--card); border-radius: var(--r14);
   box-shadow: var(--shadow); padding: 1.5rem 1.4rem;
-  animation: enterUp .32s cubic-bezier(.34,1.56,.64,1);
+  animation: fadeIn .15s ease;
 }
 .qtag {
   font-size: .68rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em;

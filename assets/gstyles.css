@@ -679,20 +679,3 @@ body {
   display: block;
   border-radius: var(--radius-sm);
 }
-
-/* Print */
-@media print {
-
-  .app-header,
-  .sidebar,
-  .toc,
-  .bottom-bar,
-  .reading-progress {
-    display: none !important;
-  }
-
-  .content {
-    max-width: 100%;
-    padding: 0;
-  }
-}

@@ -63,8 +63,6 @@ const els = {
 
   btnPrev: document.getElementById('btnPrev'),
   btnNext: document.getElementById('btnNext'),
-  btnCopyLink: document.getElementById('btnCopyLink'),
-  btnPrint: document.getElementById('btnPrint'),
 
   readingProgress: document.getElementById('readingProgress'),
 
@@ -499,18 +497,6 @@ function renderSearchResults(results, q) {
 function initNavButtons() {
   els.btnPrev.addEventListener('click', () => openChapter(state.currentIdx - 1));
   els.btnNext.addEventListener('click', () => openChapter(state.currentIdx + 1));
-  els.btnCopyLink.addEventListener('click', async () => {
-    const ch = getCurrentChapter();
-    const url = new URL(location.href);
-    if (ch) url.hash = `#${encodeURIComponent(ch.file)}`;
-    try {
-      await navigator.clipboard.writeText(url.toString());
-      toast('Đã sao chép liên kết chương hiện tại!');
-    } catch {
-      prompt('Sao chép liên kết:', url.toString());
-    }
-  });
-  els.btnPrint.addEventListener('click', () => window.print());
 
   // Sidebar toggle (shared by desktop btn + mobile hamburger)
   function toggleSidebar(force) {
