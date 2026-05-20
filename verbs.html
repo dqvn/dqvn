@@ -44,6 +44,14 @@
     <div class="sb-tts-lbl">🔊 Dutch Voice</div>
     <select id="tts-voice-select"><option value="">Loading voices…</option></select>
   </div>
+  <div id="sb-fontsize">
+    <div class="sb-tts-lbl">🔤 Text Size</div>
+    <div class="sb-fs-row">
+      <button class="sb-fs-btn" id="sb-fs-dec">A−</button>
+      <span id="sb-fs-lbl">Normal</span>
+      <button class="sb-fs-btn" id="sb-fs-inc">A+</button>
+    </div>
+  </div>
   <footer id="app-footer">
     <div class="ft-avatar">QN</div>
     <div class="ft-info">
@@ -83,6 +91,10 @@
     <div class="top-bar">
       <button class="top-bar-back" id="study-back">←</button>
       <div class="pbar-wrap"><div class="pbar" id="study-pbar"></div></div>
+      <div class="fs-pills">
+        <button class="fs-pill fs-pill-dec" aria-label="Decrease text size">A−</button>
+        <button class="fs-pill fs-pill-inc" aria-label="Increase text size">A+</button>
+      </div>
       <div class="counter" id="study-counter">1 / 10</div>
     </div>
     <div id="study-container"></div>
@@ -94,6 +106,10 @@
     <div class="top-bar">
       <button class="top-bar-back" id="quiz-back">←</button>
       <div class="pbar-wrap"><div class="pbar" id="quiz-pbar"></div></div>
+      <div class="fs-pills">
+        <button class="fs-pill fs-pill-dec" aria-label="Decrease text size">A−</button>
+        <button class="fs-pill fs-pill-inc" aria-label="Increase text size">A+</button>
+      </div>
       <div class="score-badge" id="quiz-score">0 / 0</div>
     </div>
     <div id="quiz-container"></div>
@@ -119,7 +135,10 @@
     <div class="top-bar">
       <button class="top-bar-back" id="list-back">←</button>
       <div style="font-weight:700;font-size:1rem;flex:1;text-align:center">All Verbs</div>
-      <div style="width:36px"></div>
+      <div class="fs-pills">
+        <button class="fs-pill fs-pill-dec" aria-label="Decrease text size">A−</button>
+        <button class="fs-pill fs-pill-inc" aria-label="Increase text size">A+</button>
+      </div>
     </div>
     <div class="list-grid" id="list-grid"></div>
   </div>
