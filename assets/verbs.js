@@ -9,6 +9,9 @@ const QUIZ_N      = 15;
 const STORE_KEY   = 'nl_verbs_v3';
 const CONF_COLORS = ['#e74c3c','#3b82f6','#10b981','#8b5cf6','#f59e0b','#ec4899','#06b6d4','#84cc16'];
 
+const FS_STEPS  = [13, 15, 17, 19];
+const FS_LABELS = ['Small', 'Normal', 'Large', 'X-Large'];
+
 const st = {
   manifest:      [],
   currentLesson: null,
@@ -66,7 +69,7 @@ function show(id) {
    STORAGE  —  multi-layer defence against corruption / quota / private mode
 ───────────────────────────────────────────────────────────────────────────── */
 function mkStore() {
-  return { version: 3, streak: 0, lastStudy: null, lastLesson: null, lessons: {} };
+  return { version: 3, streak: 0, lastStudy: null, lastLesson: null, lessons: {}, fsIndex: 1 };
 }
 
 function mkLessonData() {
@@ -101,6 +104,20 @@ function writeStore() {
     }
     /* SecurityError (private browsing with quota 0) — ignore */
   }
+}
+
+function applyFontSize(idx) {
+  idx = Math.max(0, Math.min(FS_STEPS.length - 1, idx));
+  st.store.fsIndex = idx;
+  $('content').style.fontSize = FS_STEPS[idx] + 'px';
+  const lbl = $('sb-fs-lbl');
+  if (lbl) lbl.textContent = FS_LABELS[idx];
+  document.querySelectorAll('.fs-pill-dec').forEach(b => { b.disabled = idx === 0; });
+  document.querySelectorAll('.fs-pill-inc').forEach(b => { b.disabled = idx === FS_STEPS.length - 1; });
+  const sbDec = $('sb-fs-dec'), sbInc = $('sb-fs-inc');
+  if (sbDec) sbDec.disabled = idx === 0;
+  if (sbInc) sbInc.disabled = idx === FS_STEPS.length - 1;
+  writeStore();
 }
 
 function getLessonData() {
@@ -819,11 +836,16 @@ $('tts-voice-select').addEventListener('change', e => {
   writeStore();
   speak('Hallo! Dit is mijn stem.');  /* preview the newly selected voice */
 });
+document.querySelectorAll('.fs-pill-dec').forEach(b => b.addEventListener('click', () => applyFontSize(st.store.fsIndex - 1)));
+document.querySelectorAll('.fs-pill-inc').forEach(b => b.addEventListener('click', () => applyFontSize(st.store.fsIndex + 1)));
+$('sb-fs-dec').onclick = () => applyFontSize(st.store.fsIndex - 1);
+$('sb-fs-inc').onclick = () => applyFontSize(st.store.fsIndex + 1);
 
 /* ─────────────────────────────────────────────────────────────────────────────
    INIT
 ───────────────────────────────────────────────────────────────────────────── */
 st.store = readStore();
+applyFontSize(typeof st.store.fsIndex === 'number' ? st.store.fsIndex : 1);
 populateVoiceSelect(); /* handles browsers that return voices synchronously */
 
 $('lesson-list').innerHTML = '<div class="sb-load"><div class="spin"></div> Loading lessons…</div>';
