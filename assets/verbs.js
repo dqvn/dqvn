@@ -245,11 +245,16 @@ function renderSidebar() {
     return;
   }
   list.innerHTML = st.manifest.map(lesson => {
-    const ld     = st.store.lessons[lesson.id];
-    const cls    = lessonAccClass(ld);
-    const lbl    = lessonAccLabel(ld);
-    const active = st.currentLesson?.id === lesson.id ? ' active' : '';
-    const meta   = lesson.verbCount ? `${lesson.verbCount} verbs` : '';
+    const ld          = st.store.lessons[lesson.id];
+    const cls         = lessonAccClass(ld);
+    const lbl         = lessonAccLabel(ld);
+    const active      = st.currentLesson?.id === lesson.id ? ' active' : '';
+    const verbStats   = ld?.verbStats || {};
+    const learnedCount = Object.values(verbStats).filter(s => s.correct / Math.max(s.seen, 1) > 0.2).length;
+    const total       = lesson.verbCount;
+    const meta        = total
+      ? `${learnedCount} / ${total} learned`
+      : learnedCount > 0 ? `${learnedCount} learned` : '';
     return `
       <div class="lesson-item${active}" data-id="${lesson.id}">
         <div class="lesson-num">${lesson.title}</div>
