@@ -61,8 +61,10 @@ body {
 
 /* Header */
 .app-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 50;
   display: flex;
   align-items: center;
@@ -71,6 +73,11 @@ body {
   background: linear-gradient(0deg, var(--panel), var(--panel));
   border-bottom: 1px solid var(--border);
   box-shadow: var(--shadow);
+}
+
+/* Push content below the fixed header on desktop */
+@media (min-width: 901px) {
+  body { padding-top: 52px; }
 }
 
 .app-title {
