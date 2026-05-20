@@ -501,8 +501,8 @@ function renderStudyCard() {
   if ($('study-container')._kh) document.removeEventListener('keydown', $('study-container')._kh);
   const kh = e => {
     if (document.querySelector('.screen.active')?.id !== 's-study') return;
-    if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); $('next-btn').click(); }
-    if (e.key === 'ArrowLeft' && $('prev-btn')) $('prev-btn').click();
+    if (e.key === ' ' || e.key === 'Enter' || e.key === 'ArrowRight') { e.preventDefault(); $('next-btn').click(); }
+    if (e.key === 'ArrowLeft' && $('prev-btn')) { e.preventDefault(); $('prev-btn').click(); }
   };
   $('study-container')._kh = kh;
   document.addEventListener('keydown', kh);
