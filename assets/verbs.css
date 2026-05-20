@@ -419,7 +419,7 @@ body {
 .tlabel.pluperfect { background: var(--pluperfect); }
 
 .trows { display: flex; flex-direction: column; gap: .3rem; }
-.trow  { display: flex; gap: .5rem; align-items: baseline; font-size: .85rem; }
+.trow  { display: flex; gap: .5rem; align-items: baseline; font-size: 1.2rem; }
 .tpron { color: var(--muted); font-size: .7rem; min-width: 58px; flex-shrink: 0; }
 .tform { font-weight: 700; color: var(--text); }
 
