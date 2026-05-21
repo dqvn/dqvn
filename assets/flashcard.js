@@ -6,8 +6,9 @@
   const FC_META_KEY          = 'nl_srs_meta_v3';
   const FC_WORD_SIZE_KEY     = 'nl_fc_word_size';
   const FC_LESSON_KEY        = 'fc-lesson';
-  const SESSION_SIZE         = 20;
-  const NEW_PER_DAY          = 10;
+  const SESSION_SIZE            = 20;
+  const NEW_PER_DAY             = 10;
+  const MAX_MASTERED_PER_SESSION = 3; // cap mastered cards so new/struggling get priority
   const MIN_EASE             = 1.3;
   const MAX_EASE             = 4.0;
   const DEF_EASE             = 2.5;
@@ -192,15 +193,48 @@
     });
     if (!all.length) return [];
 
-    const dueCards = all.filter(c =>
-      (c._s.state === 'review' || c._s.state === 'relearning' || c._s.state === 'learning') &&
+    // Tier 1 — struggling: relearning/learning due now (nextDue===0 valid here = "requeue immediately")
+    const struggling = all.filter(c =>
+      (c._s.state === 'relearning' || c._s.state === 'learning') &&
       (c._s.nextDue === 0 || c._s.nextDue <= now)
     );
 
+    // Tier 2 — new words (respect daily budget)
     const newCards = all.filter(c => c._s.state === 'new').slice(0, newBudget);
 
-    let session = [...shuffle(dueCards), ...shuffle(newCards)];
-    if (!session.length) session = shuffle(all); // fallback: nothing due, show all
+    // Tier 3 — review, not yet mastered (interval < 21), explicitly scheduled and due
+    const reviewDue = all.filter(c =>
+      c._s.state === 'review' &&
+      (c._s.interval || 0) < 21 &&
+      c._s.nextDue > 0 && c._s.nextDue <= now
+    );
+
+    // Tier 4 — mastered (interval >= 21), explicitly due — capped per session
+    const masteredDue = shuffle(all.filter(c =>
+      c._s.state === 'review' &&
+      (c._s.interval || 0) >= 21 &&
+      c._s.nextDue > 0 && c._s.nextDue <= now
+    )).slice(0, MAX_MASTERED_PER_SESSION);
+
+    let session = [
+      ...shuffle(struggling),
+      ...shuffle(newCards),
+      ...shuffle(reviewDue),
+      ...masteredDue,
+    ];
+
+    // Fallback: nothing due and no new budget → prefer new > struggling > non-mastered > mastered
+    if (!session.length) {
+      const trueNew   = all.filter(c => c._s.state === 'new');
+      const nonMaster = all.filter(c =>
+        c._s.state !== 'new' &&
+        (c._s.state !== 'review' || (c._s.interval || 0) < 21)
+      );
+      const mastered  = all.filter(c =>
+        c._s.state === 'review' && (c._s.interval || 0) >= 21
+      );
+      session = [...shuffle(trueNew), ...shuffle(nonMaster), ...shuffle(mastered)];
+    }
 
     return session.slice(0, SESSION_SIZE);
   }
