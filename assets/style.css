@@ -399,6 +399,10 @@ td:last-child {
 /* Dutch cell: anchor for the status badge */
 #word-list td:nth-child(2) { position: relative; }
 
+/* Dutch word + IPA sit above the badge in the stacking order */
+#word-list td:nth-child(2) .dutch-word,
+#word-list td:nth-child(2) .ipa-text { position: relative; z-index: 1; }
+
 /* ── Word learning-status badges (light ghost pill) ──────────── */
 .word-badge {
     position: absolute;
@@ -410,7 +414,8 @@ td:last-child {
     border-radius: 20px;
     border: 1px solid currentColor;
     pointer-events: none;
-    z-index: 1;
+    z-index: 0;
+    opacity: 0.2;
     white-space: nowrap;
     line-height: 1;
 }
@@ -421,7 +426,7 @@ td:last-child {
 .wb-learning { color: #059669; background: rgba(5,150,105,0.08);   border-color: rgba(5,150,105,0.3);  }
 .wb-new      { color: #6366f1; background: rgba(99,102,241,0.08);  border-color: rgba(99,102,241,0.3); }
 .wb-review   { color: #7c3aed; background: rgba(124,58,237,0.07);  border-color: rgba(124,58,237,0.3); }
-.wb-mastered { color: #15803d; background: rgba(21,128,61,0.06);   border-color: rgba(21,128,61,0.22); opacity: 0.65; }
+.wb-mastered { color: #15803d; background: rgba(21,128,61,0.06);   border-color: rgba(21,128,61,0.22); }
 
 #word-list thead {
     position: sticky;
