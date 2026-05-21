@@ -8,7 +8,7 @@
   const FC_LESSON_KEY        = 'fc-lesson';
   const SESSION_SIZE            = 20;
   const NEW_PER_DAY             = 10;
-  const MAX_MASTERED_PER_SESSION = 3; // cap mastered cards so new/struggling get priority
+  const MAX_MASTERED_PER_SESSION = 5; // cap mastered cards so new/struggling get priority
   const MIN_EASE             = 1.3;
   const MAX_EASE             = 4.0;
   const DEF_EASE             = 2.5;
