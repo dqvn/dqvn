@@ -25,7 +25,11 @@
   <header>
     <h1>Learn Dutch Words</h1>
     <h3 id="chapter"></h3>
-    <button id="hide-meaning-btn" class="hdr-toggle-btn" title="Hide/show meanings">👁️</button>
+    <div class="hdr-right">
+      <button class="hdr-fs-btn" id="lm-fs-dec" aria-label="Decrease text size">A−</button>
+      <button class="hdr-fs-btn" id="lm-fs-inc" aria-label="Increase text size">A+</button>
+      <button id="hide-meaning-btn" class="hdr-toggle-btn" title="Hide/show meanings">👁️</button>
+    </div>
   </header>
   <!-- flashcard-popup is injected by flashcard.js -->
 
@@ -69,15 +73,6 @@
         <button id="flashcard-btn" class="start-button">
           <span class="button-text">Flashcards Game</span>
         </button>
-        <!-- Font size -->
-        <div class="lm-fs-wrap">
-          <span class="lm-fs-lbl">🔤 Text Size</span>
-          <div class="lm-fs-row">
-            <button class="lm-fs-btn" id="lm-fs-dec" aria-label="Decrease text size">A−</button>
-            <span id="lm-fs-val">Normal</span>
-            <button class="lm-fs-btn" id="lm-fs-inc" aria-label="Increase text size">A+</button>
-          </div>
-        </div>
       </div>
       <span></span>
       <div class="spacer">

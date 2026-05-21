@@ -61,12 +61,33 @@ header h3 {
     color: white;
 }
 
-/* Hide-meaning toggle button in header top-right */
-.hdr-toggle-btn {
+/* Top-right header controls group */
+.hdr-right {
     position: absolute;
-    top: 50%;
-    right: 12px;
+    top: 50%; right: 12px;
     transform: translateY(-50%);
+    display: flex; align-items: center; gap: 5px;
+}
+
+/* Compact A− / A+ font-size buttons */
+.hdr-fs-btn {
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 7px;
+    padding: 3px 8px;
+    font-size: 0.68rem; font-weight: 700;
+    color: #00698f;
+    line-height: 1; cursor: pointer;
+    transition: background 0.2s;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    text-shadow: none;
+}
+.hdr-fs-btn:hover:not(:disabled) { background: rgba(255,255,255,0.32); }
+.hdr-fs-btn:disabled { opacity: 0.35; cursor: default; }
+
+/* Hide-meaning toggle button */
+.hdr-toggle-btn {
     background: rgba(255,255,255,0.18);
     border: 1px solid rgba(255,255,255,0.35);
     border-radius: 8px;
@@ -74,13 +95,11 @@ header h3 {
     font-size: 1.2rem;
     line-height: 1;
     cursor: pointer;
-    transition: background 0.2s, transform 0.15s;
+    transition: background 0.2s;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
 }
-.hdr-toggle-btn:hover {
-    background: rgba(255,255,255,0.32);
-}
+.hdr-toggle-btn:hover { background: rgba(255,255,255,0.32); }
 .hdr-toggle-btn--active {
     background: rgba(220,38,38,0.18);
     border-color: rgba(220,38,38,0.4);
@@ -466,22 +485,6 @@ td:last-child {
     text-shadow: 0px 0px 10px white, 0px 0px 7px white;
 }
 
-/* ── Left-menu font-size control ─────────────────────────────── */
-.lm-fs-wrap { margin-top: 12px; }
-.lm-fs-lbl  { display: block; font-size: 0.75rem; font-weight: 600; margin-bottom: 5px; }
-.lm-fs-row  { display: flex; align-items: center; gap: 6px; }
-.lm-fs-btn  {
-    background: rgba(0,105,143,0.1);
-    border: 1px solid rgba(0,105,143,0.28);
-    color: #00698f;
-    border-radius: 8px;
-    padding: 4px 11px;
-    font-size: 0.72rem; font-weight: 700;
-    cursor: pointer; transition: background 0.15s;
-}
-.lm-fs-btn:hover:not(:disabled) { background: rgba(0,105,143,0.2); }
-.lm-fs-btn:disabled { opacity: 0.35; cursor: default; }
-#lm-fs-val  { flex: 1; text-align: center; font-size: 0.72rem; opacity: 0.75; }
 
 .container {
     flex: 1;
