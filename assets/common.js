@@ -380,16 +380,14 @@ function _wordBadge(st) {
 
 function updateWordBadges() {
     try {
-        const allProg  = JSON.parse(localStorage.getItem('nl_srs_v3') || '{}');
-        const chId     = localStorage.getItem('fc-lesson') || 'default';
-        const chProg   = allProg[chId] || {};
-        const hasData  = Object.keys(chProg).some(k => k !== '_totals');
+        const allProg = JSON.parse(localStorage.getItem('nl_srs_v3') || '{}');
+        const chId    = localStorage.getItem('fc-lesson') || 'default';
+        const chProg  = allProg[chId] || {};
 
         document.querySelectorAll('.dutch-word').forEach(el => {
             const td = el.closest('td');
             if (!td) return;
             td.querySelectorAll('.word-badge').forEach(b => b.remove());
-            if (!hasData) return; // chapter not started yet — no badges
 
             const word = el.textContent.trim();
             const ws   = chProg[word];

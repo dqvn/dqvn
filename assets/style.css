@@ -399,35 +399,29 @@ td:last-child {
 /* Dutch cell: anchor for the status badge */
 #word-list td:nth-child(2) { position: relative; }
 
-/* ── Word learning-status badges (cartoon sticker style) ─────── */
+/* ── Word learning-status badges (light ghost pill) ──────────── */
 .word-badge {
     position: absolute;
-    top: 3px; right: 4px;
-    display: flex;
-    flex-direction: column;
+    top: 4px; right: 5px;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    min-width: 40px;
-    padding: 3px 6px 4px;
-    border-radius: 12px;
-    border: 2.5px solid rgba(255,255,255,0.85);
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2), 0 1px 3px rgba(0,0,0,0.12);
+    gap: 3px;
+    padding: 2px 7px 2px 5px;
+    border-radius: 20px;
+    border: 1px solid currentColor;
     pointer-events: none;
     z-index: 1;
-    text-align: center;
+    white-space: nowrap;
+    line-height: 1;
 }
-.wb-icon { font-size: 1.15rem; line-height: 1.2; display: block; }
-.wb-lbl  {
-    font-size: 0.44rem; font-weight: 900;
-    text-transform: uppercase; letter-spacing: 0.08em;
-    color: #fff; line-height: 1.2; display: block;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.35);
-}
-.wb-hard     { background: linear-gradient(150deg, #fb923c, #ef4444); }
-.wb-learning { background: linear-gradient(150deg, #4ade80, #16a34a); }
-.wb-new      { background: linear-gradient(150deg, #34d399, #0d9488); }
-.wb-review   { background: linear-gradient(150deg, #818cf8, #4f46e5); }
-.wb-mastered { background: linear-gradient(150deg, #86efac, #15803d); opacity: 0.6; }
+.wb-icon { font-size: 0.75rem; line-height: 1; }
+.wb-lbl  { font-size: 0.52rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+
+.wb-hard     { color: #ef4444; background: rgba(239,68,68,0.09);   border-color: rgba(239,68,68,0.35); }
+.wb-learning { color: #059669; background: rgba(5,150,105,0.08);   border-color: rgba(5,150,105,0.3);  }
+.wb-new      { color: #6366f1; background: rgba(99,102,241,0.08);  border-color: rgba(99,102,241,0.3); }
+.wb-review   { color: #7c3aed; background: rgba(124,58,237,0.07);  border-color: rgba(124,58,237,0.3); }
+.wb-mastered { color: #15803d; background: rgba(21,128,61,0.06);   border-color: rgba(21,128,61,0.22); opacity: 0.65; }
 
 #word-list thead {
     position: sticky;
