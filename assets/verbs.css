@@ -540,6 +540,13 @@ body {
   box-shadow: 0 4px 14px rgba(232,93,4,.4);
 }
 .btn-primary:hover { background: var(--acc2); }
+.btn-green {
+  background: #10b981; color: #fff;
+  box-shadow: 0 4px 14px rgba(16,185,129,.4);
+  font-size: 1.05rem; padding: 1rem;
+}
+.btn-green:hover { background: #059669; }
+
 .btn-secondary {
   background: var(--card); color: var(--text);
   border: 1.5px solid var(--border);
