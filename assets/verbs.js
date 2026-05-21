@@ -4,9 +4,11 @@
 /* ─────────────────────────────────────────────────────────────────────────────
    CONSTANTS & STATE
 ───────────────────────────────────────────────────────────────────────────── */
-const SESS        = 7;
-const QUIZ_N      = 15;
-const STORE_KEY   = 'nl_verbs_v3';
+const SESS           = 7;    /* verbs per study session */
+const QUIZ_N         = 15;   /* questions per quiz */
+const LEARNED_THRESH = 0.2;  /* min accuracy to count a verb as "learned" */
+const STORE_KEY      = 'nl_verbs_v3';
+const THEME_KEY      = 'nl_verbs_theme';
 const CONF_COLORS = ['#e74c3c','#3b82f6','#10b981','#8b5cf6','#f59e0b','#ec4899','#06b6d4','#84cc16'];
 
 const FS_STEPS  = [13, 15, 17, 19];
@@ -26,6 +28,7 @@ const st = {
   store:         null,
   ttsSeq:        0,
   sidebarOpen:   false,
+  studyOrigin:   'home', /* 'home' | 'list' — controls where study-back goes */
 };
 
 /* ─────────────────────────────────────────────────────────────────────────────
@@ -186,17 +189,33 @@ function populateVoiceSelect() {
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
-   WAKE LOCK  (keeps screen on while studying — mobile only)
+   THEME
+───────────────────────────────────────────────────────────────────────────── */
+function applyTheme(dark) {
+  document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+  const btn = $('sb-theme-tog');
+  if (btn) btn.classList.toggle('on', dark);
+  try { localStorage.setItem(THEME_KEY, dark ? 'dark' : 'light'); } catch {}
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   WAKE LOCK  (keeps screen on while studying)
 ───────────────────────────────────────────────────────────────────────────── */
 let _wakeLock = null;
+
+function syncWakeButtons(on) {
+  $('mob-wake-btn').classList.toggle('wake-on', on);
+  const sb = $('sb-wake-tog');
+  if (sb) sb.classList.toggle('on', on);
+}
 
 async function acquireWakeLock() {
   try {
     _wakeLock = await navigator.wakeLock.request('screen');
-    $('mob-wake-btn').classList.add('wake-on');
+    syncWakeButtons(true);
     _wakeLock.addEventListener('release', () => {
       _wakeLock = null;
-      $('mob-wake-btn').classList.remove('wake-on');
+      syncWakeButtons(false);
     });
   } catch { /* not supported or permission denied — ignore */ }
 }
@@ -250,7 +269,7 @@ function renderSidebar() {
     const lbl         = lessonAccLabel(ld);
     const active      = st.currentLesson?.id === lesson.id ? ' active' : '';
     const verbStats   = ld?.verbStats || {};
-    const learnedCount = Object.values(verbStats).filter(s => s.correct / Math.max(s.seen, 1) > 0.2).length;
+    const learnedCount = Object.values(verbStats).filter(s => s.correct / Math.max(s.seen, 1) > LEARNED_THRESH).length;
     const total       = lesson.verbCount;
     const meta        = total
       ? `${learnedCount} / ${total} learned`
@@ -362,6 +381,9 @@ function renderHome() {
   $('home-welcome').style.display = 'none';
   $('home-lesson').style.display  = ''; /* let CSS control: flex (base) or grid (≥1280px) */
 
+  const hintEl = $('home-hint');
+  if (hintEl) hintEl.textContent = `${SESS} verbs per session · ${QUIZ_N} quiz questions · keyboard shortcuts`;
+
   const ld  = getLessonData();
   const ans = ld.totalAnswered || 0;
   const acc = ans ? Math.round(ld.totalCorrect / ans * 100) : 0;
@@ -412,6 +434,7 @@ function typeBadge(type) {
 ───────────────────────────────────────────────────────────────────────────── */
 function startStudy() {
   st.studyIdx = 0;
+  st.studyOrigin = 'home';
   show('s-study');
   const c = $('study-container');
   c.style.opacity = '0';
@@ -801,8 +824,9 @@ function renderList() {
 }
 
 function browseVerb(i) {
-  st.session  = [st.all[i]];
-  st.studyIdx = 0;
+  st.session     = [st.all[i]];
+  st.studyIdx    = 0;
+  st.studyOrigin = 'list';
   show('s-study');
   renderStudyCard();
 }
@@ -999,7 +1023,7 @@ function activateSearch(query) {
 $('btn-start-study').onclick  = () => { buildSession(); startStudy(); };
 $('btn-quiz-only').onclick    = () => { buildSession(); buildQuiz(); startQuiz(); };
 $('btn-browse').onclick       = () => renderList();
-$('study-back').onclick       = renderHome;
+$('study-back').onclick       = () => st.studyOrigin === 'list' ? renderList() : renderHome();
 $('quiz-back').onclick        = renderHome;
 $('list-back').onclick        = renderHome;
 $('btn-retry').onclick        = () => { buildSession(); startStudy(); };
@@ -1008,6 +1032,15 @@ $('hamburger').onclick        = () => toggleSidebar();
 $('drawer-overlay').onclick   = () => toggleSidebar(false);
 $('mob-back').onclick         = renderHome;
 $('mob-wake-btn').onclick     = toggleWakeLock;
+$('sb-wake-tog').addEventListener('click', toggleWakeLock);
+$('sb-theme-tog').addEventListener('click', () => {
+  applyTheme(document.documentElement.getAttribute('data-theme') !== 'dark');
+});
+
+/* Init theme — respect saved preference, fall back to system preference */
+const _savedTheme   = localStorage.getItem(THEME_KEY);
+const _prefersDark  = window.matchMedia?.('(prefers-color-scheme: dark)').matches ?? false;
+applyTheme(_savedTheme ? _savedTheme === 'dark' : _prefersDark);
 $('tts-voice-select').addEventListener('change', e => {
   st.store.ttsVoice = e.target.value;
   writeStore();
