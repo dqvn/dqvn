@@ -367,6 +367,48 @@ function loadJsonData(filename, callback) {
     xhr.send();
 }
 
+/* ══════════════════════════════════════════════════════
+   WORD STATUS BADGES (flashcard SM-2 progress → table)
+   ══════════════════════════════════════════════════════ */
+function _wordBadge(st) {
+    if (!st)                              return { icon: '🌟', label: 'New',    cls: 'wb-new'      };
+    if (st.state === 'relearning')        return { icon: '🥵', label: 'Hard',   cls: 'wb-hard'     };
+    if (st.state === 'learning')          return { icon: '🧠', label: 'Learn',  cls: 'wb-learning' };
+    if ((st.interval || 0) >= 21)        return { icon: '✅', label: 'Master', cls: 'wb-mastered' };
+    return                                       { icon: '🔃', label: 'Review', cls: 'wb-review'   };
+}
+
+function updateWordBadges() {
+    try {
+        const allProg  = JSON.parse(localStorage.getItem('nl_srs_v3') || '{}');
+        const chId     = localStorage.getItem('fc-lesson') || 'default';
+        const chProg   = allProg[chId] || {};
+        const hasData  = Object.keys(chProg).some(k => k !== '_totals');
+
+        document.querySelectorAll('.dutch-word').forEach(el => {
+            const td = el.closest('td');
+            if (!td) return;
+            td.querySelectorAll('.word-badge').forEach(b => b.remove());
+            if (!hasData) return; // chapter not started yet — no badges
+
+            const word = el.textContent.trim();
+            const ws   = chProg[word];
+            const { icon, label, cls } = _wordBadge(ws);
+
+            const badge = document.createElement('span');
+            badge.className = `word-badge ${cls}`;
+            badge.title = `Flashcard: ${label}`;
+            badge.innerHTML = `<span class="wb-icon">${icon}</span><span class="wb-lbl">${label}</span>`;
+            td.appendChild(badge);
+        });
+    } catch(e) { console.warn('[badges]', e); }
+}
+
+// Refresh badges when flashcard session saves progress (same tab)
+window.addEventListener('storage', e => {
+    if (e.key === 'nl_srs_v3') updateWordBadges();
+});
+
 function reloadTable(data) {
     recentNumbers.length = 0;
     tableBody.innerHTML  = '';
@@ -402,6 +444,8 @@ function reloadTable(data) {
     hideMeaningBtn.textContent = '👁️';
     hideMeaningBtn.classList.remove('hdr-toggle-btn--active');
     document.querySelectorAll('.hide-text').forEach(el => { el.style.display = ''; });
+
+    updateWordBadges();
 }
 
 function startSpelling() {
