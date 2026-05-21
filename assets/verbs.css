@@ -24,6 +24,16 @@
   --r7:  7px;
 }
 
+/* ── Dark theme ── */
+html[data-theme="dark"] {
+  --bg:     #0f172a;
+  --card:   #1e293b;
+  --text:   #e2e8f0;
+  --muted:  #94a3b8;
+  --border: #334155;
+  --shadow: 0 1px 3px rgba(0,0,0,.35), 0 4px 12px rgba(0,0,0,.28);
+}
+
 /* ── Base ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 button, a, .opt, .list-item, .lesson-item { -webkit-tap-highlight-color: transparent; }
@@ -344,6 +354,39 @@ body {
   flex: 1; text-align: center;
   font-size: .72rem; color: rgba(255,255,255,.55);
 }
+
+/* ── Settings panel (theme + wake lock) ── */
+#sb-settings {
+  flex-shrink: 0;
+  padding: 8px 14px 12px;
+  border-top: 1px solid rgba(255,255,255,.07);
+}
+.sb-toggle-row {
+  display: flex; align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+.sb-toggle-lbl {
+  font-size: .75rem; color: rgba(255,255,255,.65);
+}
+.sb-tog {
+  width: 36px; height: 20px;
+  border-radius: 10px; border: none;
+  background: rgba(255,255,255,.15);
+  cursor: pointer; position: relative;
+  flex-shrink: 0; padding: 0;
+  transition: background .2s;
+}
+.sb-tog::after {
+  content: '';
+  position: absolute;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: rgba(255,255,255,.5);
+  top: 3px; left: 3px;
+  transition: transform .2s, background .2s;
+}
+.sb-tog.on { background: var(--acc); }
+.sb-tog.on::after { transform: translateX(16px); background: #fff; }
 
 /* ── Sidebar footer (desktop) — exact match dlg.css ── */
 #app-footer {
