@@ -296,6 +296,7 @@
     document.body.style.overflow = '';
     fc.ttsSeq++;
     window.speechSynthesis && window.speechSynthesis.cancel();
+    if (typeof updateWordBadges === 'function') updateWordBadges();
   }
 
   /* ── Header / progress ──────────────────────────────────────────────────── */
