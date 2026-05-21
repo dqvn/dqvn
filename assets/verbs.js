@@ -210,6 +210,7 @@ function syncWakeButtons(on) {
 }
 
 async function acquireWakeLock() {
+  if (!('wakeLock' in navigator)) { syncWakeButtons(false); return; }
   try {
     _wakeLock = await navigator.wakeLock.request('screen');
     syncWakeButtons(true);
@@ -217,7 +218,7 @@ async function acquireWakeLock() {
       _wakeLock = null;
       syncWakeButtons(false);
     });
-  } catch { /* not supported or permission denied — ignore */ }
+  } catch { syncWakeButtons(false); }
 }
 
 function toggleWakeLock() {
@@ -1075,7 +1076,8 @@ $('ft-year').textContent   = new Date().getFullYear();
       return;
     }
     renderSidebar();
-    acquireWakeLock();  /* keep screen on by default */
+    syncWakeButtons(true); /* optimistic — corrected to false by acquireWakeLock if unsupported */
+    acquireWakeLock();
     buildSearchIndex(); /* background — populates _searchIdx for cross-lesson search */
     /* Auto-select last used lesson, or first lesson */
     const lastId = st.store.lastLesson;
