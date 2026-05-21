@@ -11,8 +11,8 @@ const STORE_KEY      = 'nl_verbs_v3';
 const THEME_KEY      = 'nl_verbs_theme';
 const CONF_COLORS = ['#e74c3c','#3b82f6','#10b981','#8b5cf6','#f59e0b','#ec4899','#06b6d4','#84cc16'];
 
-const FS_STEPS  = [13, 15, 17, 19];
-const FS_LABELS = ['Small', 'Normal', 'Large', 'X-Large'];
+const FS_STEPS  = [13, 15, 17, 19, 23, 28, 34];
+const FS_LABELS = ['Small', 'Normal', 'Large', 'X-Large', 'XX-Large', 'Huge', 'Max'];
 
 const st = {
   manifest:      [],
