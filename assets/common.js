@@ -518,6 +518,21 @@ function getNewRandomNumberCSPRNG(min, max, exclude) {
     return n;
 }
 
+function setActiveLesson(filename) {
+    document.querySelectorAll('#file-list [data-file]').forEach(el => {
+        const isActive = el.dataset.file === filename;
+        el.classList.toggle('active-lesson', isActive);
+        if (isActive) {
+            // ensure the parent group is open
+            const nested = el.closest('.nested-list');
+            if (nested) {
+                document.querySelectorAll('.nested-list').forEach(l => l.classList.remove('open'));
+                nested.classList.add('open');
+            }
+        }
+    });
+}
+
 function createGroup(groupKey, files) {
     const li    = document.createElement('li');
     const title = document.createElement('div');
@@ -534,10 +549,12 @@ function createGroup(groupKey, files) {
     ul.classList.add('nested-list');
     files.forEach(file => {
         const item = document.createElement('li');
+        item.dataset.file = file;
         item.textContent = file;
         item.addEventListener('click', () => {
             loadJsonData(file, reloadTable);
             document.getElementById('chapter').innerHTML = `(You are learning in ${file})`;
+            setActiveLesson(file);
         });
         ul.appendChild(item);
     });
@@ -571,6 +588,7 @@ function initPage(config) {
 
     const currentPage = localStorage.getItem(_storageKey) || _fileNames[0];
     createLeftMenu();
+    setActiveLesson(currentPage);
     loadJsonData(currentPage, reloadTable);
     document.getElementById('chapter').innerHTML = `(${currentPage})`;
 }
