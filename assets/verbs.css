@@ -640,7 +640,7 @@ body {
 .trows { display: flex; flex-direction: column; gap: .3rem; }
 .trow  { display: flex; gap: .5rem; align-items: baseline; font-size: 1.2em; }
 .tpron { color: var(--muted); font-size: .583em; min-width: 58px; flex-shrink: 0; }
-.tform { font-weight: 700; color: var(--text); }
+.tform { font-weight: 700; color: var(--text); font-family: var(--verb-font); }
 
 .vfooter {
   background: var(--card); border-top: 1.5px solid var(--border);
