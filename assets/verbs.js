@@ -9,6 +9,34 @@ const QUIZ_N         = 15;   /* questions per quiz */
 const LEARNED_THRESH = 0.2;  /* min accuracy to count a verb as "learned" */
 const STORE_KEY      = 'nl_verbs_v3';
 const THEME_KEY      = 'nl_verbs_theme';
+const FONT_KEY       = 'nl_verbs_font';
+
+/* Each entry: { stack: CSS font-family string, google: Google Fonts family param or null } */
+const VERB_FONTS = {
+  /* ── System (no download) ── */
+  sans:        { stack: "system-ui, 'Segoe UI', sans-serif",                         google: null },
+  serif:       { stack: "Georgia, 'Times New Roman', serif",                          google: null },
+  mono:        { stack: "Consolas, 'Courier New', monospace",                         google: null },
+  palatino:    { stack: "'Palatino Linotype', Palatino, 'Book Antiqua', serif",       google: null },
+  /* ── Language-learning / linguistics ── */
+  gentium:     { stack: "'Gentium Plus', serif",                                      google: 'Gentium+Plus' },
+  charis:      { stack: "'Charis SIL', serif",                                        google: 'Charis+SIL' },
+  lexend:      { stack: "'Lexend', sans-serif",                                       google: 'Lexend' },
+  atkinson:    { stack: "'Atkinson Hyperlegible', sans-serif",                        google: 'Atkinson+Hyperlegible' },
+  /* ── Classic / Dutch & European publishing ── */
+  garamond:    { stack: "'EB Garamond', serif",                                       google: 'EB+Garamond' },
+  baskerville: { stack: "'Libre Baskerville', serif",                                 google: 'Libre+Baskerville' },
+  crimson:     { stack: "'Crimson Text', serif",                                      google: 'Crimson+Text' },
+  playfair:    { stack: "'Playfair Display', serif",                                  google: 'Playfair+Display' },
+  lora:        { stack: "'Lora', serif",                                              google: 'Lora' },
+  /* ── Modern / screen-optimised ── */
+  merri:       { stack: "'Merriweather', serif",                                      google: 'Merriweather' },
+  sourceserif: { stack: "'Source Serif 4', serif",                                    google: 'Source+Serif+4' },
+  ibmplex:     { stack: "'IBM Plex Serif', serif",                                    google: 'IBM+Plex+Serif' },
+  noto:        { stack: "'Noto Serif', serif",                                        google: 'Noto+Serif' },
+  opensans:    { stack: "'Open Sans', sans-serif",                                    google: 'Open+Sans' },
+  nunito:      { stack: "'Nunito', sans-serif",                                       google: 'Nunito' },
+};
 const CONF_COLORS = ['#e74c3c','#3b82f6','#10b981','#8b5cf6','#f59e0b','#ec4899','#06b6d4','#84cc16'];
 
 const FS_STEPS  = [13, 15, 17, 19, 23, 28, 34];
@@ -191,6 +219,25 @@ function populateVoiceSelect() {
 /* ─────────────────────────────────────────────────────────────────────────────
    THEME
 ───────────────────────────────────────────────────────────────────────────── */
+const _loadedFonts = new Set();
+function loadGoogleFont(family) {
+  if (!family || _loadedFonts.has(family)) return;
+  _loadedFonts.add(family);
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = `https://fonts.googleapis.com/css2?family=${family}:ital,wght@0,400;0,700;1,400&display=swap`;
+  document.head.appendChild(link);
+}
+
+function applyVerbFont(key) {
+  const font = VERB_FONTS[key] || VERB_FONTS.sans;
+  if (font.google) loadGoogleFont(font.google);
+  document.documentElement.style.setProperty('--verb-font', font.stack);
+  const sel = $('sb-font-sel');
+  if (sel) sel.value = key;
+  try { localStorage.setItem(FONT_KEY, key); } catch {}
+}
+
 function applyTheme(dark) {
   document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
   const btn = $('sb-theme-tog');
@@ -1037,6 +1084,9 @@ $('sb-wake-tog').addEventListener('click', toggleWakeLock);
 $('sb-theme-tog').addEventListener('click', () => {
   applyTheme(document.documentElement.getAttribute('data-theme') !== 'dark');
 });
+
+$('sb-font-sel').addEventListener('change', e => applyVerbFont(e.target.value));
+applyVerbFont(localStorage.getItem(FONT_KEY) || 'sans');
 
 /* Init theme — respect saved preference, fall back to system preference */
 const _savedTheme   = localStorage.getItem(THEME_KEY);

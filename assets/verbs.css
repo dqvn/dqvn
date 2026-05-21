@@ -2,6 +2,7 @@
 
 /* ── Tokens ── */
 :root {
+  --verb-font: system-ui, 'Segoe UI', sans-serif;
   /* Sidebar (matches dlg.css) */
   --sb:   #12192c;
   --sb-h: #1c2a42;
@@ -33,6 +34,35 @@ html[data-theme="dark"] {
   --border: #334155;
   --shadow: 0 1px 3px rgba(0,0,0,.35), 0 4px 12px rgba(0,0,0,.28);
 }
+
+/* Quiz options — override hardcoded light backgrounds */
+html[data-theme="dark"] .opt {
+  background: #1e293b;
+  color: var(--text);
+}
+html[data-theme="dark"] .opt:hover:not(:disabled) {
+  background: #263349;
+  border-color: var(--acc);
+}
+html[data-theme="dark"] .opt.correct {
+  background: #052e16; color: #86efac; border-color: #166534;
+}
+html[data-theme="dark"] .opt.wrong {
+  background: #450a0a; color: #fca5a5; border-color: #991b1b;
+}
+html[data-theme="dark"] .opt.correct .opt-letter { background: #166534; color: #fff; }
+html[data-theme="dark"] .opt.wrong   .opt-letter { background: #991b1b; color: #fff; }
+
+/* Quiz feedback — override hardcoded light colours */
+html[data-theme="dark"] .qfeedback.ok {
+  background: #052e16; color: #86efac; border-color: #166534;
+}
+html[data-theme="dark"] .qfeedback.fail {
+  background: #450a0a; color: #fca5a5; border-color: #991b1b;
+}
+
+/* Score badge explicit text colour */
+html[data-theme="dark"] .score-badge { color: var(--text); }
 
 /* ── Base ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -314,6 +344,7 @@ body {
   font-size: .6rem; font-weight: 700; text-transform: uppercase;
   letter-spacing: .08em; color: rgba(255,255,255,.35); margin-bottom: 6px;
 }
+.sb-mini-select,
 #tts-voice-select {
   width: 100%;
   background: rgba(255,255,255,.08);
@@ -328,9 +359,9 @@ body {
   outline: none;
   transition: border-color .15s, background .15s;
 }
-#tts-voice-select:hover  { background: rgba(255,255,255,.13); }
-#tts-voice-select:focus  { border-color: rgba(232,93,4,.7); }
-#tts-voice-select option { background: #12192c; color: #e2e8f0; }
+.sb-mini-select:hover,   #tts-voice-select:hover  { background: rgba(255,255,255,.13); }
+.sb-mini-select:focus,   #tts-voice-select:focus  { border-color: rgba(232,93,4,.7); }
+.sb-mini-select option,  #tts-voice-select option { background: #12192c; color: #e2e8f0; }
 
 /* ── Font-size control (sidebar) ── */
 #sb-fontsize {
@@ -526,6 +557,7 @@ body {
 }
 .top-bar-back {
   background: none; border: none; font-size: 1.4rem;
+  color: var(--text);
   cursor: pointer; border-radius: 10px; padding: .25rem .5rem;
   transition: background .15s;
 }
@@ -572,7 +604,7 @@ body {
   display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem;
 }
 .vhero-left { flex: 1; }
-.vinfinitive { font-size: 2.1em; font-weight: 900; letter-spacing: -.02em; line-height: 1.1; }
+.vinfinitive { font-size: 2.1em; font-weight: 900; letter-spacing: -.02em; line-height: 1.1; font-family: var(--verb-font); }
 .vtranslation { font-size: .95em; color: rgba(255,255,255,.55); margin-top: .25rem; }
 .vtype {
   display: inline-block; margin-top: .5rem; font-size: .62rem; font-weight: 700;
@@ -710,7 +742,7 @@ kbd {
 }
 .list-item:hover { transform: translateX(4px); }
 .li-left { display: flex; flex-direction: column; }
-.li-inf  { font-weight: 800; font-size: .95em; }
+.li-inf  { font-weight: 800; font-size: .95em; font-family: var(--verb-font); }
 .li-tr   { font-size: .78em; color: var(--muted); }
 .li-badge {
   font-size: .62rem; font-weight: 700; text-transform: uppercase;
