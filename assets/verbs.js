@@ -512,13 +512,16 @@ function renderStudyCard() {
       .filter(([, f]) => f)
       .flatMap(([p, f]) => p.split('/').map(pr => `${pr.trim()} ${f}`))
       .join(', ');
+    const m = label.match(/\(([^)]+)\)$/);
+    const abbr = m ? m[1] : label;
     return `
       <div class="tblock">
-        <div class="tlabel ${cls}">${label}
-          <button class="tts-btn" style="padding:0.15rem 0.4rem;font-size:0.62rem"
+        <div class="tlabel ${cls}" title="${label}">${abbr}</div>
+        <div class="tblock-body">
+          <button class="tts-btn tts-tense-btn"
             onclick="event.stopPropagation();speak('${ttsVal.replace(/'/g, "\\'")}')">🔊</button>
+          <div class="trows">${rowsHtml}</div>
         </div>
-        <div class="trows">${rowsHtml}</div>
       </div>`;
   }
 
@@ -1086,7 +1089,7 @@ $('sb-theme-tog').addEventListener('click', () => {
 });
 
 $('sb-font-sel').addEventListener('change', e => applyVerbFont(e.target.value));
-applyVerbFont(localStorage.getItem(FONT_KEY) || 'sans');
+applyVerbFont(localStorage.getItem(FONT_KEY) || 'nunito');
 
 /* Init theme — respect saved preference, fall back to system preference */
 const _savedTheme   = localStorage.getItem(THEME_KEY);
