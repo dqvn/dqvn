@@ -159,7 +159,7 @@ td:last-child {
 }
 
 .dutch-word {
-    font-size: 23px;
+    font-size: var(--vocab-word-size, 23px);
     font-weight: bold;
     color: #00698f;
     /* blue-ish color */
@@ -465,6 +465,23 @@ td:last-child {
     color: #00698f;
     text-shadow: 0px 0px 10px white, 0px 0px 7px white;
 }
+
+/* ── Left-menu font-size control ─────────────────────────────── */
+.lm-fs-wrap { margin-top: 12px; }
+.lm-fs-lbl  { display: block; font-size: 0.75rem; font-weight: 600; margin-bottom: 5px; }
+.lm-fs-row  { display: flex; align-items: center; gap: 6px; }
+.lm-fs-btn  {
+    background: rgba(0,105,143,0.1);
+    border: 1px solid rgba(0,105,143,0.28);
+    color: #00698f;
+    border-radius: 8px;
+    padding: 4px 11px;
+    font-size: 0.72rem; font-weight: 700;
+    cursor: pointer; transition: background 0.15s;
+}
+.lm-fs-btn:hover:not(:disabled) { background: rgba(0,105,143,0.2); }
+.lm-fs-btn:disabled { opacity: 0.35; cursor: default; }
+#lm-fs-val  { flex: 1; text-align: center; font-size: 0.72rem; opacity: 0.75; }
 
 .container {
     flex: 1;

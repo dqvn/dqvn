@@ -17,6 +17,24 @@ let _intervalTime = 12000;
 let _fileNames    = [];
 let _groupTitles  = new Map();
 
+/* ── Vocabulary font-size control ── */
+const VOCAB_FS_STEPS  = [14, 18, 23, 28, 34, 42];
+const VOCAB_FS_LABELS = ['Tiny', 'Small', 'Normal', 'Large', 'X-Large', 'Huge'];
+const VOCAB_FS_KEY    = 'nl_vocab_fs';
+let   _vocabFsIdx     = 2; // default: Normal (23 px)
+
+function applyVocabFontSize(idx) {
+    _vocabFsIdx = Math.max(0, Math.min(VOCAB_FS_STEPS.length - 1, idx));
+    document.documentElement.style.setProperty('--vocab-word-size', VOCAB_FS_STEPS[_vocabFsIdx] + 'px');
+    const lbl = document.getElementById('lm-fs-val');
+    if (lbl) lbl.textContent = VOCAB_FS_LABELS[_vocabFsIdx];
+    const dec = document.getElementById('lm-fs-dec');
+    const inc = document.getElementById('lm-fs-inc');
+    if (dec) dec.disabled = _vocabFsIdx === 0;
+    if (inc) inc.disabled = _vocabFsIdx === VOCAB_FS_STEPS.length - 1;
+    try { localStorage.setItem(VOCAB_FS_KEY, String(_vocabFsIdx)); } catch {}
+}
+
 /* ── DOM references ── */
 const tableBody           = document.getElementById('word-list-body');
 const hideMeaningBtn      = document.getElementById('hide-meaning-btn');
@@ -87,6 +105,12 @@ hideMeaningBtn.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const noSleep = new NoSleep();
     noSleep.enable();
+
+    // Font size init
+    const savedFs = parseInt(localStorage.getItem(VOCAB_FS_KEY));
+    applyVocabFontSize(isNaN(savedFs) ? 2 : savedFs);
+    document.getElementById('lm-fs-dec')?.addEventListener('click', () => applyVocabFontSize(_vocabFsIdx - 1));
+    document.getElementById('lm-fs-inc')?.addEventListener('click', () => applyVocabFontSize(_vocabFsIdx + 1));
 });
 
 // Start game button — also closes the mobile drawer before the popup opens
