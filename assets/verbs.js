@@ -512,11 +512,9 @@ function renderStudyCard() {
       .filter(([, f]) => f)
       .flatMap(([p, f]) => p.split('/').map(pr => `${pr.trim()} ${f}`))
       .join(', ');
-    const m = label.match(/\(([^)]+)\)$/);
-    const abbr = m ? m[1] : label;
     return `
       <div class="tblock">
-        <div class="tlabel ${cls}" title="${label}">${abbr}</div>
+        <div class="tlabel ${cls}">${label}</div>
         <div class="tblock-body">
           <button class="tts-btn tts-tense-btn"
             onclick="event.stopPropagation();speak('${ttsVal.replace(/'/g, "\\'")}')">🔊</button>

@@ -662,9 +662,15 @@ body {
   padding: .12rem .38rem; font-size: .6rem;
 }
 
-.trows { display: flex; flex-direction: column; gap: .3rem; margin-top: .15rem; }
-.trow  { display: flex; gap: .5rem; align-items: baseline; font-size: 1.2em; }
-.tpron { color: var(--muted); font-size: .583em; min-width: 58px; flex-shrink: 0; }
+.trows {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  row-gap: .3rem; column-gap: .5rem;
+  align-items: baseline;
+  font-size: 1.2em; margin-top: .15rem;
+}
+.trow  { display: contents; }
+.tpron { color: var(--muted); font-size: .583em; }
 .tform { font-weight: 700; color: var(--text); font-family: var(--verb-font); }
 
 .vfooter {
