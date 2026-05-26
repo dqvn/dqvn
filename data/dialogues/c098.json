@@ -63,14 +63,9 @@
       "translation": "Next month."
     },
     {
-      "role": "A",
-      "text": "Perfect.",
-      "translation": "Perfect."
-    },
-    {
       "role": "B",
-      "text": "We sturen u alle informatie per e-mail.",
-      "translation": "We will send you all the information by email."
+      "text": "Perfect. We sturen u alle informatie per e-mail.",
+      "translation": "Perfect. We will send you all the information by email."
     },
     {
       "role": "A",

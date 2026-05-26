@@ -53,9 +53,14 @@
       "translation": "About three years."
     },
     {
+      "role": "B",
+      "text": "Dan is het mogelijk dat de batterij leeg of versleten is.",
+      "translation": "Then it's possible that the battery is empty or worn out."
+    },
+    {
       "role": "A",
-      "text": "Dan is het mogelijk dat de batterij leeg of versleten is. Kunt u dat controleren?",
-      "translation": "Then it's possible that the battery is empty or worn out. Can you check that?"
+      "text": "Kunt u dat controleren?",
+      "translation": "Can you check that?"
     },
     {
       "role": "B",
