@@ -39,33 +39,53 @@
     },
     {
       "role": "A",
-      "text": "Ja, zeker. Maar ik ben blij dat ik hier ben. De buurt is heel rustig en vriendelijk.",
-      "translation": "Yes, definitely. But I'm happy to be here. The neighborhood is very quiet and friendly."
+      "text": "Ja, zeker. Maar ik ben blij dat ik hier ben.",
+      "translation": "Yes, definitely. But I’m happy to be here."
     },
     {
       "role": "B",
-      "text": "Dat is fijn om te horen. Als u iets nodig heeft, laat het gerust weten.",
-      "translation": "That's good to hear. If you need anything, feel free to let me know."
+      "text": "De buurt is heel rustig en vriendelijk.",
+      "translation": "The neighborhood is very quiet and friendly."
     },
     {
       "role": "A",
-      "text": "Dat is heel aardig, dank u. Woont u alleen of met familie?",
-      "translation": "That's very kind, thank you. Do you live alone or with family?"
+      "text": "Dat is fijn om te horen.",
+      "translation": "That’s good to hear."
     },
     {
       "role": "B",
+      "text": "Als u iets nodig heeft, laat het gerust weten.",
+      "translation": "If you need anything, feel free to let me know."
+    },
+    {
+      "role": "A",
+      "text": "Dat is heel aardig, dank u.",
+      "translation": "That’s very kind, thank you."
+    },
+    {
+      "role": "B",
+      "text": "Woont u alleen of met familie?",
+      "translation": "Do you live alone or with family?"
+    },
+    {
+      "role": "A",
       "text": "Met mijn vriendin. Zij komt later vandaag.",
       "translation": "With my girlfriend. She’s coming later today."
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Leuk! Misschien kunnen we een keer samen koffie drinken.",
       "translation": "Nice! Maybe we can have coffee together sometime."
     },
     {
+      "role": "A",
+      "text": "Ja, dat lijkt me gezellig!",
+      "translation": "Yes, that sounds nice!"
+    },
+    {
       "role": "B",
-      "text": "Ja, dat lijkt me gezellig! Dan zie ik u binnenkort weer.",
-      "translation": "Yes, that sounds nice! I'll see you again soon then."
+      "text": "Dan zie ik u binnenkort weer.",
+      "translation": "I’ll see you again soon then."
     },
     {
       "role": "A",
