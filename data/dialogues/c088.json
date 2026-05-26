@@ -44,8 +44,13 @@
     },
     {
       "role": "B",
-      "text": "Wat lief van je. Wat zei de dokter vandaag?",
-      "translation": "That's so sweet of you. What did the doctor say today?"
+      "text": "Wat lief van je.",
+      "translation": "That's so sweet of you."
+    },
+    {
+      "role": "A",
+      "text": "Wat zei de dokter vandaag?",
+      "translation": "What did the doctor say today?"
     },
     {
       "role": "B",

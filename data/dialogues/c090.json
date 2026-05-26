@@ -63,6 +63,11 @@
       "translation": "Okay, I'm going to examine your back."
     },
     {
+      "role": "B",
+      "text": "Goed.",
+      "translation": "Alright."
+    },
+    {
       "role": "A",
       "text": "Uw spieren zijn erg gespannen.",
       "translation": "Your muscles are very tense."
