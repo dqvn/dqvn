@@ -39,13 +39,23 @@
     },
     {
       "role": "A",
-      "text": "Ja, maar ik zie hem niet. Misschien ligt hij bij de balie.",
-      "translation": "Yes, but I don't see it. Maybe it's at the counter."
+      "text": "Ja, maar ik zie hem niet.",
+      "translation": "Yes, but I don't see it."
     },
     {
       "role": "B",
-      "text": "Dat hoop ik. Momentje, ik kijk even.",
-      "translation": "I hope so. One moment, I'll take a look."
+      "text": "Misschien ligt hij bij de balie.",
+      "translation": "Maybe it's at the counter."
+    },
+    {
+      "role": "A",
+      "text": "Dat hoop ik.",
+      "translation": "I hope so."
+    },
+    {
+      "role": "B",
+      "text": "Momentje, ik kijk even.",
+      "translation": "One moment, I'll take a look."
     },
     {
       "role": "A",
