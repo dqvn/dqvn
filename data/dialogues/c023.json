@@ -49,26 +49,31 @@
     },
     {
       "role": "A",
-      "text": "Ongeveer 30 minuten. Wat vindt u ervan?",
-      "translation": "About 30 minutes. What do you think?"
+      "text": "Ongeveer 30 minuten.",
+      "translation": "About 30 minutes."
     },
     {
       "role": "B",
+      "text": "Wat vindt u ervan?",
+      "translation": "What do you think?"
+    },
+    {
+      "role": "A",
       "text": "Het ziet er heel mooi uit!",
       "translation": "It looks very nice!"
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Fijn om te horen.",
       "translation": "Glad to hear that."
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Dank u wel!",
       "translation": "Thank you!"
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Graag gedaan.",
       "translation": "You're welcome."
     }
