@@ -64,8 +64,18 @@
     },
     {
       "role": "B",
-      "text": "Ja, graag. Dank u. Sorry voor het ongemak.",
-      "translation": "Yes, please. Thank you. Sorry for the inconvenience."
+      "text": "Ja, graag.",
+      "translation": "Yes, please."
+    },
+    {
+      "role": "A",
+      "text": "Dank u.",
+      "translation": "Thank you."
+    },
+    {
+      "role": "B",
+      "text": "Sorry voor het ongemak.",
+      "translation": "Sorry for the inconvenience."
     },
     {
       "role": "A",
