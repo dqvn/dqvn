@@ -74,13 +74,23 @@
     },
     {
       "role": "A",
-      "text": "Zeker weten. We moeten dit vaker doen.",
-      "translation": "Definitely. We should do this more often."
+      "text": "Zeker weten.",
+      "translation": "Definitely."
     },
     {
       "role": "B",
-      "text": "Absoluut! Volgende week weer?",
-      "translation": "Absolutely! Again next week?"
+      "text": "We moeten dit vaker doen.",
+      "translation": "We should do this more often."
+    },
+    {
+      "role": "A",
+      "text": "Absoluut!",
+      "translation": "Absolutely!"
+    },
+    {
+      "role": "B",
+      "text": "Volgende week weer?",
+      "translation": "Again next week?"
     },
     {
       "role": "A",
