@@ -44,8 +44,13 @@
     },
     {
       "role": "A",
-      "text": "Dat herken ik. Werkt u nog lang vanavond?",
-      "translation": "I understand that. Are you working much longer tonight?"
+      "text": "Dat herken ik.",
+      "translation": "I understand that."
+    },
+    {
+      "role": "B",
+      "text": "Werkt u nog lang vanavond?",
+      "translation": "Are you working much longer tonight?"
     },
     {
       "role": "A",
