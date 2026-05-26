@@ -59,26 +59,31 @@
     },
     {
       "role": "A",
-      "text": "Perfect, laten we dat doen! Hoe laat wil je afspreken?",
-      "translation": "Perfect, let's do that! What time do you want to meet?"
+      "text": "Perfect, laten we dat doen!",
+      "translation": "Perfect, let's do that!"
     },
     {
       "role": "B",
+      "text": "Hoe laat wil je afspreken?",
+      "translation": "What time do you want to meet?"
+    },
+    {
+      "role": "A",
       "text": "Misschien rond twee uur?",
       "translation": "Maybe around two o'clock?"
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Dat is prima voor mij.",
       "translation": "That's fine with me."
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Oké, dan zie ik je zaterdag.",
       "translation": "Okay, then I'll see you on Saturday."
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Top! Tot dan!",
       "translation": "Great! See you then!"
     }
