@@ -54,13 +54,23 @@
     },
     {
       "role": "B",
-      "text": "Ja, dat wil ik ook. Ik wil geen ruzie meer over zulke kleine dingen.",
-      "translation": "Yes, I want that too. I don't want to fight about such small things anymore."
+      "text": "Ja, dat wil ik ook.",
+      "translation": "Yes, I want that too."
     },
     {
       "role": "A",
-      "text": "Ik ook niet. Zijn we weer oké?",
-      "translation": "Me neither. Are we okay again?"
+      "text": "Ik wil geen ruzie meer over zulke kleine dingen.",
+      "translation": "I don't want to fight about such small things anymore."
+    },
+    {
+      "role": "B",
+      "text": "Ik ook niet.",
+      "translation": "Me neither."
+    },
+    {
+      "role": "A",
+      "text": "Zijn we weer oké?",
+      "translation": "Are we okay again?"
     },
     {
       "role": "B",
