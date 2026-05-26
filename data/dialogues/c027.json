@@ -69,21 +69,26 @@
     },
     {
       "role": "A",
-      "text": "Ja, dat is hem! Gelukkig maar.",
-      "translation": "Yes, that's it! What a relief."
+      "text": "Ja, dat is hem!",
+      "translation": "Yes, that's it!"
     },
     {
       "role": "B",
-      "text": "Fijn dat u hem terugheeft.",
-      "translation": "Glad you have it back."
+      "text": "Gelukkig maar.",
+      "translation": "What a relief."
     },
     {
       "role": "A",
+      "text": "Fijn dat u hem terugheeft.",
+      "translation": "Glad you returned it to me."
+    },
+    {
+      "role": "B",
       "text": "Dank u wel voor uw hulp.",
       "translation": "Thank you very much for your help."
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Graag gedaan.",
       "translation": "You're welcome."
     }
