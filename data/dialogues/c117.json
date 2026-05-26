@@ -74,11 +74,16 @@
     },
     {
       "role": "B",
-      "text": "Dat is duidelijk. Wilt u het appartement eerst bekijken?",
-      "translation": "That's clear. Would you like to see the apartment first?"
+      "text": "Dat is duidelijk.",
+      "translation": "That's clear."
     },
     {
       "role": "A",
+      "text": "Wilt u het appartement eerst bekijken?",
+      "translation": "Would you like to see the apartment first?"
+    },
+    {
+      "role": "B",
       "text": "Ja, graag.",
       "translation": "Yes, please."
     },
@@ -94,33 +99,43 @@
     },
     {
       "role": "A",
-      "text": "Ja, er komt veel zonlicht binnen, vooral in de ochtend. Zijn huisdieren toegestaan?",
-      "translation": "Yes, a lot of sunlight comes in, especially in the morning. Are pets allowed?"
+      "text": "Ja, er komt veel zonlicht binnen, vooral in de ochtend.",
+      "translation": "Yes, a lot of sunlight comes in, especially in the morning."
     },
     {
       "role": "B",
+      "text": "Zijn huisdieren toegestaan?",
+      "translation": "Are pets allowed?"
+    },
+    {
+      "role": "A",
       "text": "Kleine huisdieren wel, maar geen honden.",
       "translation": "Small pets are, but no dogs."
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Dat is geen probleem voor mij.",
       "translation": "That's no problem for me."
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Goed om te horen. Hoe lang wilt u hier blijven wonen?",
       "translation": "Good to hear. How long do you want to live here?"
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Minstens één jaar.",
       "translation": "At least one year."
     },
     {
+      "role": "A",
+      "text": "Het contract is ook voor minimaal één jaar.",
+      "translation": "The contract is also for a minimum of one year."
+    },
+    {
       "role": "B",
-      "text": "Het contract is ook voor minimaal één jaar. Wanneer is het appartement beschikbaar?",
-      "translation": "The contract is also for a minimum of one year. When is the apartment available?"
+      "text": "Wanneer is het appartement beschikbaar?",
+      "translation": "When is the apartment available?"
     },
     {
       "role": "A",

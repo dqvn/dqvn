@@ -19,8 +19,13 @@
     },
     {
       "role": "A",
-      "text": "Gelukkig heb ik er één bij me. Dat is perfect!",
-      "translation": "Luckily, I brought one. That's perfect!"
+      "text": "Gelukkig heb ik er één bij me.",
+      "translation": "Luckily, I brought one."
+    },
+    {
+      "role": "B",
+      "text": "Oh, dat is perfect!",
+      "translation": "Oh, that's perfect!"
     },
     {
       "role": "A",
