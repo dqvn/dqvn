@@ -29,13 +29,23 @@
     },
     {
       "role": "A",
-      "text": "Oké, dat is duidelijk. En misschien ook een beetje laagjes?",
-      "translation": "Okay, that's clear. And maybe some layers as well?"
+      "text": "Oké, dat is duidelijk.",
+      "translation": "Okay, that's clear."
     },
     {
       "role": "B",
-      "text": "Geen probleem. Hoe lang duurt het ongeveer?",
-      "translation": "No problem. How long will it take?"
+      "text": "En misschien ook een beetje laagjes?",
+      "translation": "And maybe some layers as well?"
+    },
+    {
+      "role": "A",
+      "text": "Geen probleem.",
+      "translation": "No problem."
+    },
+    {
+      "role": "B",
+      "text": "Hoe lang duurt het ongeveer?",
+      "translation": "How long will it take?"
     },
     {
       "role": "A",
