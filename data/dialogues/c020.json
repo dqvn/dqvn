@@ -24,56 +24,61 @@
     },
     {
       "role": "B",
-      "text": "Ja, die is vers van vandaag. Hoeveel kost het?",
-      "translation": "Yes, it's fresh today. How much does it cost?"
+      "text": "Ja, die is vers van vandaag.",
+      "translation": "Yes, it's fresh today."
     },
     {
       "role": "A",
+      "text": "Hoeveel kost het?",
+      "translation": "How much does it cost?"
+    },
+    {
+      "role": "B",
       "text": "15 per kilo.",
       "translation": "15 per kilo."
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Oké, ik wil graag een halve kilo.",
       "translation": "Okay, I would like half a kilo."
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Natuurlijk. Wilt u het gefileerd hebben?",
       "translation": "Of course. Would you like it filleted?"
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Ja, graag.",
       "translation": "Yes, please."
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Geen probleem.",
       "translation": "No problem."
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Heeft u ook tips om het te bereiden?",
       "translation": "Do you also have tips on how to prepare it?"
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Ja, u kunt het bakken met een beetje citroen.",
       "translation": "Yes, you can fry it with a little bit of lemon."
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Klinkt lekker.",
       "translation": "Sounds delicious."
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Hier is uw vis.",
       "translation": "Here is your fish."
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Dank u wel!",
       "translation": "Thank you very much!"
     }

@@ -63,6 +63,11 @@
       "translation": "Yes, that's it! What a relief."
     },
     {
+      "role": "B",
+      "text": "Fijn dat u hem terugheeft.",
+      "translation": "Glad you have it back."
+    },
+    {
       "role": "A",
       "text": "Dank u wel voor uw hulp.",
       "translation": "Thank you very much for your help."

@@ -39,11 +39,16 @@
     },
     {
       "role": "A",
-      "text": "Dat dacht ik ook al. Hoe oud is uw batterij?",
-      "translation": "I thought so too. How old is your battery?"
+      "text": "Dat dacht ik ook al.",
+      "translation": "I thought so too."
     },
     {
       "role": "B",
+      "text": "Hoe oud is uw batterij?",
+      "translation": "How old is your battery?"
+    },
+    {
+      "role": "A",
       "text": "Ongeveer drie jaar.",
       "translation": "About three years."
     },

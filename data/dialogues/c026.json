@@ -24,41 +24,46 @@
     },
     {
       "role": "B",
-      "text": "Ik wilde je zien, dankjewel. Wat zegt de dokter?",
-      "translation": "I wanted to see you, thank you. What does the doctor say?"
+      "text": "Ik wilde je zien, dankjewel.",
+      "translation": "I wanted to see you, thank you."
     },
     {
       "role": "A",
+      "text": "Wat zegt de dokter?",
+      "translation": "What does the doctor say?"
+    },
+    {
+      "role": "B",
       "text": "Ik moet nog een paar dagen blijven.",
       "translation": "I have to stay for a few more days."
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Oké, rust goed uit.",
       "translation": "Okay, get some good rest."
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Dat probeer ik. Heb je iets nodig? Misschien wat water?",
       "translation": "I'm trying. Do you need anything? Some water, maybe?"
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Natuurlijk, ik pak het voor je.",
       "translation": "Of course, I'll get it for you."
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Dank je.",
       "translation": "Thank you."
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Geen probleem, je wordt snel beter.",
       "translation": "No problem, you'll get better soon."
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Dat hoop ik ook.",
       "translation": "I hope so too."
     }

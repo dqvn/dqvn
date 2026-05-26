@@ -54,13 +54,23 @@
     },
     {
       "role": "B",
-      "text": "Natuurlijk. Hoeveel kost dat?",
-      "translation": "Of course. How much is that?"
+      "text": "Natuurlijk.",
+      "translation": "Of course."
     },
     {
       "role": "A",
-      "text": "Dat is €4,50. Hier is mijn kaart.",
-      "translation": "That will be €4.50. Here is my card."
+      "text": "Hoeveel kost dat?",
+      "translation": "How much is that?"
+    },
+    {
+      "role": "B",
+      "text": "Dat is €4,50.",
+      "translation": "That will be €4.50."
+    },
+    {
+      "role": "A",
+      "text": "Hier is mijn kaart.",
+      "translation": "Here is my card."
     },
     {
       "role": "B",

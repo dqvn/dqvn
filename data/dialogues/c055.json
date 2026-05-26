@@ -54,13 +54,18 @@
     },
     {
       "role": "B",
-      "text": "Tot nu toe zie ik nog geen melding, maar dat kan nog komen. Wat kan ik doen als iemand hem vindt?",
-      "translation": "So far I don't see any report, but that could still change. What can I do if someone finds him?"
+      "text": "Tot nu toe zie ik nog geen melding, maar dat kan nog komen.",
+      "translation": "So far I don't see any report, but that could still change."
+    },
+    {
+      "role": "A",
+      "text": "Wat kan ik doen als iemand hem vindt?",
+      "translation": "What can I do if someone finds him?"
     },
     {
       "role": "B",
       "text": "U kunt een vermissingsmelding bij ons achterlaten.",
-      "translation": "You can leave a missing person's report with us."
+      "translation": "You can leave a missing report with us."
     },
     {
       "role": "A",
