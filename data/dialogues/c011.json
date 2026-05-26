@@ -39,23 +39,33 @@
     },
     {
       "role": "A",
-      "text": "Dat klinkt gezellig. En jij, wat ga jij dit weekend doen?",
-      "translation": "That sounds cozy. And you, what are you going to do this weekend?"
+      "text": "Dat klinkt gezellig.",
+      "translation": "That sounds cozy."
     },
     {
       "role": "B",
+      "text": "En jij, wat ga jij dit weekend doen?",
+      "translation": "And you, what are you going to do this weekend?"
+    },
+    {
+      "role": "A",
       "text": "Zaterdag ga ik winkelen in het centrum.",
       "translation": "Saturday I'm going shopping in the city center."
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Zoek je iets speciaals?",
       "translation": "Are you looking for something special?"
     },
     {
+      "role": "A",
+      "text": "Ja, ik wil een nieuwe jas kopen.",
+      "translation": "Yes, I want to buy a new jacket."
+    },
+    {
       "role": "B",
-      "text": "Ja, ik wil een nieuwe jas kopen. En zondag?",
-      "translation": "Yes, I want to buy a new jacket. And Sunday?"
+      "text": "En zondag?",
+      "translation": "And Sunday?"
     },
     {
       "role": "A",
@@ -69,16 +79,21 @@
     },
     {
       "role": "A",
-      "text": "Nee, ze wonen in een dorp vlakbij. Misschien kunnen we zondagavond samen een film kijken.",
-      "translation": "No, they live in a village nearby. Maybe we can watch a movie together on Sunday evening."
+      "text": "Nee, ze wonen in een dorp vlakbij.",
+      "translation": "No, they live in a village nearby."
     },
     {
       "role": "B",
+      "text": "Misschien kunnen we zondagavond samen een film kijken.",
+      "translation": "Maybe we can watch a movie together on Sunday evening."
+    },
+    {
+      "role": "A",
       "text": "Ja, dat lijkt me leuk.",
       "translation": "Yes, that sounds like fun to me."
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Perfect, dan spreken we zondag af.",
       "translation": "Perfect, then we'll meet up on Sunday."
     }
