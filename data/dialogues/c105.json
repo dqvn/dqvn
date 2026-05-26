@@ -74,13 +74,8 @@
     },
     {
       "role": "B",
-      "text": "Mooi om te horen.",
-      "translation": "Glad to hear that."
-    },
-    {
-      "role": "B",
-      "text": "We zijn er.",
-      "translation": "We are here."
+      "text": "Mooi om te horen. We zijn er.",
+      "translation": "Glad to hear that. We are here."
     },
     {
       "role": "A",

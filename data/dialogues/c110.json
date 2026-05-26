@@ -1,5 +1,5 @@
 {
-  "dialogue_title": "Over hobby’s praten",
+  "dialogue_title": "Over hobby's praten",
   "language": "Dutch",
   "video_url": "https://www.youtube.com/shorts/_BcEbawp-DQ",
   "roles": {
@@ -29,23 +29,33 @@
     },
     {
       "role": "A",
-      "text": "Dat klinkt interessant. En jij, heb je hobby's?",
-      "translation": "That sounds interesting. And you, do you have hobbies?"
+      "text": "Dat klinkt interessant.",
+      "translation": "That sounds interesting."
     },
     {
       "role": "B",
+      "text": "En jij, heb je hobby's?",
+      "translation": "And you, do you have hobbies?"
+    },
+    {
+      "role": "A",
       "text": "Ja, ik speel graag voetbal met mijn vrienden.",
       "translation": "Yes, I like to play football with my friends."
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Hoe vaak speel je voetbal?",
       "translation": "How often do you play football?"
     },
     {
+      "role": "A",
+      "text": "Meestal twee keer per week.",
+      "translation": "Usually twice a week."
+    },
+    {
       "role": "B",
-      "text": "Meestal twee keer per week. Sport je ook nog iets anders?",
-      "translation": "Usually twice a week. Do you do any other sports?"
+      "text": "Sport je ook nog iets anders?",
+      "translation": "Do you do any other sports?"
     },
     {
       "role": "A",
@@ -54,21 +64,26 @@
     },
     {
       "role": "B",
-      "text": "Dat is gezond. Lees je alleen thuis of ook in cafés?",
-      "translation": "That is healthy. Do you only read at home or also in cafés?"
+      "text": "Dat is gezond.",
+      "translation": "That is healthy."
     },
     {
       "role": "A",
+      "text": "Lees je alleen thuis of ook in cafés?",
+      "translation": "Do you only read at home or also in cafés?"
+    },
+    {
+      "role": "B",
       "text": "Soms lees ik in een café. Dat vind ik gezellig.",
       "translation": "Sometimes I read in a café. I find that cozy."
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Misschien kan ik een keer met je meegaan?",
       "translation": "Maybe I can join you sometime?"
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Ja, dat lijkt me leuk!",
       "translation": "Yes, that sounds fun!"
     }

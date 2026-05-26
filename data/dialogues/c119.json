@@ -78,6 +78,11 @@
       "translation": "Coming up."
     },
     {
+      "role": "A",
+      "text": "Dank u.",
+      "translation": "Thank you."
+    },
+    {
       "role": "B",
       "text": "Heeft het gesmaakt?",
       "translation": "Did you enjoy your meal?"

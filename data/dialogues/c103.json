@@ -48,12 +48,12 @@
       "translation": "Maybe some fruit. There is a stall with apples."
     },
     {
-      "role": "B",
-      "text": "Oh ja, die zien er lekker uit. Sullen we daarheen gaan?",
+      "role": "A",
+      "text": "Oh ja, die zien er lekker uit. Zullen we daarheen gaan?",
       "translation": "Oh yes, they look tasty. Shall we go there?"
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Ja, laten we gaan.",
       "translation": "Yes, let's go."
     },
@@ -68,9 +68,14 @@
       "translation": "I'll take one kilo of apples."
     },
     {
+      "role": "A",
+      "text": "Leuk.",
+      "translation": "Nice."
+    },
+    {
       "role": "B",
-      "text": "Ja, leuk. Ik neem ook wat aardbeien.",
-      "translation": "That's nice. I'll take some strawberries too."
+      "text": "Ik neem ook wat aardbeien.",
+      "translation": "I'll take some strawberries too."
     },
     {
       "role": "A",
