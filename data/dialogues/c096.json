@@ -63,14 +63,24 @@
       "translation": "Okay, I'll look around."
     },
     {
+      "role": "B",
+      "text": "Neem gerust de tijd.",
+      "translation": "Take your time."
+    },
+    {
       "role": "A",
       "text": "Ik neem deze twee boeken.",
       "translation": "I'll take these two books."
     },
     {
       "role": "B",
-      "text": "Goede keuze. Hoeveel kost het samen?",
-      "translation": "Good choice. How much is it together?"
+      "text": "Goede keuze.",
+      "translation": "Good choice."
+    },
+    {
+      "role": "A",
+      "text": "Hoeveel kost het samen?",
+      "translation": "How much is it together?"
     },
     {
       "role": "B",
@@ -79,8 +89,13 @@
     },
     {
       "role": "A",
-      "text": "Hier is mijn kaart. Dank u wel.",
-      "translation": "Here is my card. Thank you very much."
+      "text": "Hier is mijn kaart.",
+      "translation": "Here is my card."
+    },
+    {
+      "role": "B",
+      "text": "Dank u wel.",
+      "translation": "Thank you very much."
     },
     {
       "role": "A",
