@@ -64,11 +64,16 @@
     },
     {
       "role": "B",
-      "text": "Geen probleem, bedankt voor uw begrip. Fijne dag verder!",
-      "translation": "No problem, thanks for your understanding. Have a nice day!"
+      "text": "Geen probleem, bedankt voor uw begrip.",
+      "translation": "No problem, thanks for your understanding."
     },
     {
       "role": "A",
+      "text": "Fijne dag verder!",
+      "translation": "Have a nice day!"
+    },
+    {
+      "role": "B",
       "text": "U ook!",
       "translation": "You too!"
     }
