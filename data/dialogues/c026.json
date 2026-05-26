@@ -54,8 +54,18 @@
     },
     {
       "role": "B",
-      "text": "Dat probeer ik. Heb je iets nodig? Misschien wat water?",
-      "translation": "I'm trying. Do you need anything? Some water, maybe?"
+      "text": "Dat probeer ik.",
+      "translation": "I'm trying."
+    },
+    {
+      "role": "A",
+      "text": "Heb je iets nodig?",
+      "translation": "Do you need anything?"
+    },
+    {
+      "role": "B",
+      "text": "Misschien wat water?",
+      "translation": "Maybe some water?"
     },
     {
       "role": "A",
