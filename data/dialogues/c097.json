@@ -48,6 +48,11 @@
       "translation": "No problem, we'll solve it."
     },
     {
+      "role": "A",
+      "text": "Weet u al wat het is?",
+      "translation": "Do you already know what it is?"
+    },
+    {
       "role": "B",
       "text": "Het lijkt op een probleem met de batterij.",
       "translation": "It looks like a problem with the battery."
