@@ -49,11 +49,16 @@
     },
     {
       "role": "A",
-      "text": "Dat hoor ik graag. Fijne dag nog!",
-      "translation": "I'm glad to hear that. Have a nice day!"
+      "text": "Dat hoor ik graag.",
+      "translation": "I'm glad to hear that."
     },
     {
       "role": "B",
+      "text": "Fijne dag nog!",
+      "translation": "Have a nice day!"
+    },
+    {
+      "role": "A",
       "text": "U ook een fijne dag!",
       "translation": "You have a nice day too!"
     }
