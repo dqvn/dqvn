@@ -8,14 +8,19 @@
   },
   "conversation": [
     {
-      "role": "A",
+      "role": "B",
       "text": "Hé, lang niet gezien!",
       "translation": "Hey, long time no see!"
     },
     {
+      "role": "A",
+      "text": "Emma, ja echt lang geleden.",
+      "translation": "Emma, yeah it's been a long time."
+    },
+    {
       "role": "B",
-      "text": "Emma, ja echt lang geleden. Hoe gaat het met je?",
-      "translation": "Emma, yeah it's been a long time. How are you?"
+      "text": "Hoe gaat het met je?",
+      "translation": "How are you?"
     },
     {
       "role": "A",
@@ -29,18 +34,28 @@
     },
     {
       "role": "A",
-      "text": "Ik jou ook. Wil je iets drinken?",
-      "translation": "I missed you too. Would you like something to drink?"
+      "text": "Ik jou ook.",
+      "translation": "I missed you too."
     },
     {
       "role": "B",
+      "text": "Wil je iets drinken?",
+      "translation": "Would you like something to drink?"
+    },
+    {
+      "role": "A",
       "text": "Ja, graag. Misschien een koffie?",
       "translation": "Yes, please. Maybe a coffee?"
     },
     {
+      "role": "B",
+      "text": "Goede keuze.",
+      "translation": "Good choice."
+    },
+    {
       "role": "A",
-      "text": "Goede keuze. Wat heb je de laatste tijd gedaan?",
-      "translation": "Good choice. What have you been doing lately?"
+      "text": "Wat heb je de laatste tijd gedaan?",
+      "translation": "What have you been doing lately?"
     },
     {
       "role": "B",
