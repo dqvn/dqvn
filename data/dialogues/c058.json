@@ -93,6 +93,11 @@
       "translation": "You can. Perfect."
     },
     {
+      "role": "B",
+      "text": "Alstublieft.",
+      "translation": "Here you go."
+    },
+    {
       "role": "A",
       "text": "Hier is uw bon. Fijne dag!",
       "translation": "Here is your receipt. Have a nice day!"
