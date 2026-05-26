@@ -29,23 +29,33 @@
     },
     {
       "role": "A",
-      "text": "Dat is fijn. Ik heb maar één zus. Hebben jullie een goede band?",
-      "translation": "That's nice. I only have one sister. Do you have a good bond?"
+      "text": "Dat is fijn. Ik heb maar één zus.",
+      "translation": "That's nice. I only have one sister."
     },
     {
       "role": "B",
+      "text": "Hebben jullie een goede band?",
+      "translation": "Do you have a good bond?"
+    },
+    {
+      "role": "A",
       "text": "Ja, we praten bijna elke dag.",
       "translation": "Yes, we talk almost every day."
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Dat is mooi. Woon jullie dicht bij elkaar?",
       "translation": "That's beautiful. Do you live close to each other?"
     },
     {
+      "role": "A",
+      "text": "Ja, ze woont in dezelfde stad.",
+      "translation": "Yes, she lives in the same city."
+    },
+    {
       "role": "B",
-      "text": "Ja, ze woont in dezelfde stad. Mijn familie woont een beetje verspreid.",
-      "translation": "Yes, she lives in the same city. My family lives a bit scattered."
+      "text": "Mijn familie woont een beetje verspreid.",
+      "translation": "My family lives a bit scattered."
     },
     {
       "role": "A",
@@ -59,26 +69,31 @@
     },
     {
       "role": "A",
-      "text": "Dat is belangrijk. Heb jij ook neven en nichten?",
-      "translation": "That's important. Do you also have cousins?"
+      "text": "Dat is belangrijk.",
+      "translation": "That's important."
     },
     {
       "role": "B",
+      "text": "Heb jij ook neven en nichten?",
+      "translation": "Do you also have cousins?"
+    },
+    {
+      "role": "A",
       "text": "Ja, een paar. En jij?",
       "translation": "Yes, a few. And you?"
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Ja, best veel eigenlijk.",
       "translation": "Yes, quite a lot actually."
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Gezellig, familie is echt belangrijk.",
       "translation": "Cosy, family is really important."
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Dat vind ik ook.",
       "translation": "I think so too."
     }
