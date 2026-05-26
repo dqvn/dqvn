@@ -64,8 +64,18 @@
     },
     {
       "role": "B",
-      "text": "Dank u. Ik plak er een label op. Oké, dat is dan twaalf euro.",
-      "translation": "Thank you. I'll put a label on it. Okay, that will be twelve euros."
+      "text": "Dank u. Ik plak er een label op.",
+      "translation": "Thank you. I'll put a label on it."
+    },
+    {
+      "role": "A",
+      "text": "Oké.",
+      "translation": "Okay."
+    },
+    {
+      "role": "B",
+      "text": "Dat is dan twaalf euro.",
+      "translation": "That will be twelve euros."
     },
     {
       "role": "A",
