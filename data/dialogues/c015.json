@@ -44,13 +44,33 @@
     },
     {
       "role": "B",
-      "text": "Dat is €2,50. Dank u, hier is uw ticket.",
-      "translation": "That's €2.50. Thank you, here is your ticket."
+      "text": "Dat is €2,50.",
+      "translation": "That's €2.50."
     },
     {
       "role": "A",
-      "text": "Dank u wel. Kunt u zeggen wanneer we bij het station zijn?",
-      "translation": "Thank you. Can you tell me when we arrive at the station?"
+      "text": "Hier is mijn kaart.",
+      "translation": "Here is my card."
+    },
+    {
+      "role": "B",
+      "text": "Dank u, hier is uw ticket.",
+      "translation": "Thank you, here is your ticket."
+    },
+    {
+      "role": "A",
+      "text": "Dank u wel.",
+      "translation": "Thank you."
+    },
+    {
+      "role": "B",
+      "text": "Geen probleem.",
+      "translation": "No problem."
+    },
+    {
+      "role": "A",
+      "text": "Kunt u zeggen wanneer we bij het station zijn?",
+      "translation": "Can you tell me when we arrive at the station?"
     },
     {
       "role": "B",
