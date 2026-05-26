@@ -29,13 +29,23 @@
     },
     {
       "role": "A",
-      "text": "Ja, ik wil graag naar het strand. Ga je met vrienden?",
-      "translation": "Yes, I really want to go to the beach. Are you going with friends?"
+      "text": "Ja, ik wil graag naar het strand.",
+      "translation": "Yes, I really want to go to the beach."
     },
     {
       "role": "B",
-      "text": "Ja, met twee vriendinnen. Hoe lang ga je ongeveer?",
-      "translation": "Yes, with two friends. How long will you stay?"
+      "text": "Ga je met vrienden?",
+      "translation": "Are you going with friends?"
+    },
+    {
+      "role": "A",
+      "text": "Ja, met twee vriendinnen.",
+      "translation": "Yes, with two friends."
+    },
+    {
+      "role": "B",
+      "text": "Hoe lang ga je ongeveer?",
+      "translation": "How long will you stay approximately?"
     },
     {
       "role": "A",
@@ -44,18 +54,28 @@
     },
     {
       "role": "B",
-      "text": "Dat is perfect. En jij, wat ga jij doen?",
-      "translation": "That's perfect. And you, what are you going to do?"
+      "text": "Dat is perfect.",
+      "translation": "That's perfect."
     },
     {
       "role": "A",
+      "text": "En jij, wat ga jij doen?",
+      "translation": "And you, what are you going to do?"
+    },
+    {
+      "role": "B",
       "text": "Misschien ga ik naar Italië.",
       "translation": "Maybe I will go to Italy."
     },
     {
+      "role": "A",
+      "text": "Oh, ook mooi!",
+      "translation": "Oh, also nice!"
+    },
+    {
       "role": "B",
-      "text": "Oh, ook mooi! Ja, ik wil de steden bezoeken.",
-      "translation": "Oh, also nice! Yes, I want to visit the cities."
+      "text": "Ja, ik wil de steden bezoeken.",
+      "translation": "Yes, I want to visit the cities."
     },
     {
       "role": "A",
