@@ -18,6 +18,11 @@
       "translation": "Yes, typical Dutch weather. Luckily there's a bus shelter here."
     },
     {
+      "role": "A",
+      "text": "Dat is ook zo.",
+      "translation": "That's true."
+    },
+    {
       "role": "B",
       "text": "Anders waren we helemaal nat geworden.",
       "translation": "Otherwise we would have gotten completely soaked."
@@ -43,19 +48,14 @@
       "translation": "Hard to say. Did you bring an umbrella?"
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Ja, maar veel helpt het niet met deze wind.",
       "translation": "Yes, but it doesn't help much with this wind."
     },
     {
-      "role": "A",
-      "text": "Dat klopt.",
-      "translation": "That's true."
-    },
-    {
       "role": "B",
-      "text": "Moet je nog ver reizen?",
-      "translation": "Do you still have far to travel?"
+      "text": "Dat klopt. Moet je nog ver reizen?",
+      "translation": "That's true. Do you still have far to travel?"
     },
     {
       "role": "A",

@@ -43,6 +43,11 @@
       "translation": "Good tip."
     },
     {
+      "role": "B",
+      "text": "Wat staat er op het scherm?",
+      "translation": "What does the screen say?"
+    },
+    {
       "role": "A",
       "text": "Ja, spoor 5 klopt.",
       "translation": "Yes, platform 5 is correct."

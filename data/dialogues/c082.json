@@ -49,8 +49,13 @@
     },
     {
       "role": "A",
-      "text": "Heerlijk! En jij? Heb jij plannen?",
-      "translation": "Lovely! And you? Do you have plans?"
+      "text": "Heerlijk!",
+      "translation": "Lovely!"
+    },
+    {
+      "role": "B",
+      "text": "En jij? Heb jij plannen?",
+      "translation": "And you? Do you have plans?"
     },
     {
       "role": "A",
@@ -74,8 +79,13 @@
     },
     {
       "role": "A",
-      "text": "Zeker weten. Heb je al een hotel geboekt?",
-      "translation": "Definitely. Have you already booked a hotel?"
+      "text": "Zeker weten.",
+      "translation": "Definitely."
+    },
+    {
+      "role": "B",
+      "text": "Heb je al een hotel geboekt?",
+      "translation": "Have you already booked a hotel?"
     },
     {
       "role": "A",

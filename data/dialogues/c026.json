@@ -19,8 +19,18 @@
     },
     {
       "role": "A",
-      "text": "Dat kan ik me voorstellen. Maar het is fijn dat je er bent natuurlijk.",
-      "translation": "I can imagine. But it's good that you're here, of course."
+      "text": "Dat kan ik me voorstellen.",
+      "translation": "I can imagine."
+    },
+    {
+      "role": "B",
+      "text": "Maar het is fijn dat je er bent.",
+      "translation": "But it's good that you're here"
+    },
+    {
+      "role": "A",
+      "text": "Natuurlijk.",
+      "translation": "Of course."
     },
     {
       "role": "B",
