@@ -24,8 +24,18 @@
         },
         {
             "role": "B",
-            "text": "Even kijken... Ja, ik zie de reservering. Perfect, hier zijn de sleutels.",
-            "translation": "Let's see... Yes, I see the reservation. Perfect, here are the keys."
+            "text": "Even kijken... Ja, ik zie de reservering.",
+            "translation": "Let's see... Yes, I see the reservation."
+        },
+        {
+            "role": "A",
+            "text": "Perfect!",
+            "translation": "Perfect!"
+        },
+        {
+            "role": "B",
+            "text": "Hier zijn de sleutels.",
+            "translation": "Here are the keys."
         },
         {
             "role": "A",
