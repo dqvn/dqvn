@@ -44,23 +44,33 @@
     },
     {
       "role": "B",
-      "text": "Dat klinkt mooi. Ik hou van films die je echt laten nadenken of die een emotioneel verhaal vertellen. Ga je vaak naar de bioscoop?",
-      "translation": "That sounds lovely. I love movies that really make you think or that tell an emotional story. Do you go to the cinema often?"
+      "text": "Dat klinkt mooi. Ik hou van films die je echt laten nadenken of die een emotioneel verhaal vertellen.",
+      "translation": "That sounds lovely. I love movies that really make you think or that tell an emotional story."
     },
     {
       "role": "A",
+      "text": "Ga je vaak naar de bioscoop?",
+      "translation": "Do you go to the cinema often?"
+    },
+    {
+      "role": "B",
       "text": "Niet zo vaak als vroeger. Meestal kijk ik films thuis via streamingdiensten. Het is makkelijker en comfortabeler.",
       "translation": "Not as often as I used to. Usually, I watch movies at home via streaming services. It's easier and more comfortable."
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Dat herken ik. Maar soms is de sfeer in de bioscoop toch bijzonder, vooral bij grote films.",
       "translation": "I recognize that. But sometimes the atmosphere in the cinema is still special, especially with big movies."
     },
     {
+      "role": "B",
+      "text": "Dat klopt. Het grote scherm en het geluid maken echt een verschil.",
+      "translation": "That's true. The big screen and the sound really make a difference."
+    },
+    {
       "role": "A",
-      "text": "Dat klopt. Het grote scherm en het geluid maken echt een verschil. Kijk je liever films alleen of met vrienden?",
-      "translation": "That's true. The big screen and the sound really make a difference. Do you prefer watching movies alone or with friends?"
+      "text": "Kijk je liever films alleen of met vrienden?",
+      "translation": "Do you prefer watching movies alone or with friends?"
     },
     {
       "role": "B",

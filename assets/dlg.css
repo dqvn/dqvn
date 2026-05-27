@@ -921,8 +921,8 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
   #yt-wrap  { order: 2; }
   #hdr-info { order: 1; }
 
-  /* Cap conversation text width so long lines wrap at 450px */
-  .c-body { max-width: 450px; }
+  /* Cap conversation text width so long lines wrap at 850px */
+  .c-body { max-width: 850px; }
 }
 
 /* ── Mobile layout (≤ 700px) ── */
