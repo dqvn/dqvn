@@ -89,13 +89,13 @@
     },
     {
       "role": "A",
-      "text": "Dat is perfect. Ik neem het. Bedankt!",
-      "translation": "That's perfect. I'll take it. Thanks!"
+      "text": "Dat is perfect. Ik neem het.",
+      "translation": "That's perfect. I'll take it."
     },
     {
       "role": "B",
-      "text": "Dank u wel, fijne dag!",
-      "translation": "Thank you, have a nice day!"
+      "text": "Bedankt!",
+      "translation": "Thanks!"
     },
     {
       "role": "A",
