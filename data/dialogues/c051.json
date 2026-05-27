@@ -79,8 +79,8 @@
     },
     {
       "role": "A",
-      "text": "Hoe lang duurt dat ongeveer?",
-      "translation": "How long will that take roughly?"
+      "text": "Hoe lang duurt dat?",
+      "translation": "How long will that take?"
     },
     {
       "role": "B",
