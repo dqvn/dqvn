@@ -34,23 +34,33 @@
     },
     {
       "role": "B",
-      "text": "Ja, dat begrijp ik. Werk en andere verplichtingen kunnen het lastig maken. Wat voor training doe je meestal?",
-      "translation": "Yes, I understand that. Work and other obligations can make it difficult. What kind of training do you usually do?"
+      "text": "Ja, dat begrijp ik. Werk en andere verplichtingen kunnen het lastig maken.",
+      "translation": "Yes, I understand that. Work and other obligations can make it difficult."
     },
     {
       "role": "A",
+      "text": "Wat voor training doe je meestal?",
+      "translation": "What kind of training do you usually do?"
+    },
+    {
+      "role": "B",
       "text": "Ik combineer krachttraining met cardio. Soms doe ik ook yoga om te ontspannen. En jij?",
       "translation": "I combine strength training with cardio. Sometimes I also do yoga to relax. And you?"
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Ik focus vooral op krachttraining, maar ik wil binnenkort ook meer cardio doen.",
       "translation": "I mainly focus on strength training, but I want to do more cardio soon."
     },
     {
+      "role": "B",
+      "text": "Dat is een goede balans. Cardio is goed voor je conditie.",
+      "translation": "That's a good balance. Cardio is good for your fitness."
+    },
+    {
       "role": "A",
-      "text": "Dat is een goede balans. Cardio is goed voor je conditie. Train je liever alleen of met een vriend?",
-      "translation": "That's a good balance. Cardio is good for your fitness. Do you prefer to train alone or with a friend?"
+      "text": "Train je liever alleen of met een vriend?",
+      "translation": "Do you prefer to train alone or with a friend?"
     },
     {
       "role": "B",
