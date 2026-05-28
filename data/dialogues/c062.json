@@ -24,8 +24,18 @@
     },
     {
       "role": "B",
-      "text": "Mag ik even kijken? Ja natuurlijk. Dank u. Heeft u misschien ook nog de bon?",
-      "translation": "May I take a look? Yes, of course. Thank you. Do you happen to have the receipt as well?"
+      "text": "Mag ik even kijken? Ja natuurlijk.",
+      "translation": "May I take a look? Yes, of course."
+    },
+    {
+      "role": "A",
+      "text": "Ja natuurlijk.",
+      "translation": "Yes, of course."
+    },
+    {
+      "role": "B",
+      "text": "Dank u. Heeft u misschien ook nog de bon?",
+      "translation": "Thank you. Do you happen to have the receipt as well?"
     },
     {
       "role": "A",
