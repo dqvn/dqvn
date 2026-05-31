@@ -1,0 +1,18 @@
+{
+  "title": "Klik en Luister! 🗣️",
+  "name": "Eerste woorden",
+  "subtitle": "Click on a picture to hear the Dutch word spoken slowly!",
+  "words": [
+    { "text": "sok",      "emoji": "🧦" },
+    { "text": "kip",      "emoji": "🐔" },
+    { "text": "jas",      "emoji": "🧥" },
+
+    { "text": "huis",     "emoji": "🏠" },
+    { "text": "zon",      "emoji": "☀️" },
+    { "text": "zeilboot", "emoji": "⛵" },
+
+    { "text": "vis",      "emoji": "🐟" },
+    { "text": "boek",     "emoji": "📖" },
+    { "text": "kat",      "emoji": "🐱" }
+  ]
+}
