@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🧒 Leer Nederlands – Kids</title>
+  <link rel="stylesheet" href="assets/dlg.css">
+  <style>
+    /* Kids content uses a friendlier font */
+    #main { font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial', sans-serif; background: #f0fdf4; }
+
+    /* Lesson header inside view */
+    #lesson-title {
+      font-size: 1.8rem;
+      color: #16a34a;
+      text-align: center;
+      margin-bottom: 4px;
+    }
+    #lesson-subtitle {
+      font-size: .95rem;
+      color: #555;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Vocab grid */
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Vocab card */
+    .k-card {
+      background: #fff;
+      border: 3px dashed #bbf7d0;
+      border-radius: 15px;
+      padding: 20px 12px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,.05);
+      transition: transform .2s, box-shadow .2s, border-color .2s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 150px;
+    }
+    .k-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(22,163,74,.2);
+      border-color: #4ade80;
+      background: #f0fdf4;
+    }
+    .k-card:active { transform: scale(0.95); }
+
+    .k-emoji { font-size: 3.8rem; user-select: none; }
+    .k-word  { font-size: 1.4rem; font-weight: bold; color: #1e293b; text-align: center; }
+
+    @media (max-width: 700px) {
+      .vocab-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      #lesson-title { font-size: 1.4rem; }
+      .k-emoji { font-size: 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Mobile top bar -->
+  <div id="mob-bar">
+    <button class="mob-ico" id="mob-menu-btn" aria-label="Open lessen">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+    <span id="mob-cur">🧒 Kies een les</span>
+  </div>
+  <div id="drawer-overlay"></div>
+
+  <!-- Sidebar -->
+  <nav id="sidebar">
+    <div class="sb-drag-handle"></div>
+    <div class="sb-logo">
+      <h1>🧒 Leer Nederlands</h1>
+      <p>Kids Vocabulary Practice</p>
+    </div>
+    <div id="dlg-list">
+      <div class="sb-load"><div class="spin"></div> Laden…</div>
+    </div>
+    <div id="sb-back-link">
+      <a href="index.html">← Main Menu</a>
+    </div>
+    <footer id="app-footer">
+      <div class="ft-avatar">QN</div>
+      <div class="ft-info">
+        <span class="ft-name">Quang, Nguyen Dang</span>
+        <a class="ft-email" href="mailto:dqvn2002@gmail.com">dqvn2002@gmail.com</a>
+      </div>
+      <span class="ft-year" id="year"></span>
+    </footer>
+  </nav>
+
+  <!-- Content area -->
+  <div id="content">
+    <div id="main">
+
+      <!-- Welcome screen (shown before a lesson is loaded) -->
+      <div id="welcome">
+        <div class="flag">🧒</div>
+        <h2>Kies een les</h2>
+        <p>Select a lesson from the menu to start practising Dutch vocabulary.</p>
+      </div>
+
+      <!-- Lesson view (hidden by dlg.css until a lesson loads) -->
+      <div id="view">
+        <div class="card">
+          <h1 id="lesson-title">…</h1>
+          <p id="lesson-subtitle"></p>
+          <div class="vocab-grid" id="vocab-grid"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // ── Lesson manifest ──────────────────────────────────────────────
+    const LESSONS = [
+      { id: 'L01', file: 'data/kids/l01.json', name: 'Klik en Luister – SL woorden' },
+      { id: 'L02', file: 'data/kids/l02.json', name: 'Klik en Luister – GL & KL woorden' }
+    ];
+
+    // ── Elements ─────────────────────────────────────────────────────
+    const sidebar  = document.getElementById('sidebar');
+    const overlay  = document.getElementById('drawer-overlay');
+    const dlgList  = document.getElementById('dlg-list');
+    const welcome  = document.getElementById('welcome');
+    const view     = document.getElementById('view');
+    const mobCur   = document.getElementById('mob-cur');
+
+    // ── Build sidebar list ────────────────────────────────────────────
+    dlgList.innerHTML = '';
+    LESSONS.forEach(lesson => {
+      const item = document.createElement('div');
+      item.className = 'dlg-item';
+      item.innerHTML = `
+        <div class="dlg-id">${lesson.id}</div>
+        <div class="dlg-name-row"><div class="dlg-name">${lesson.name}</div></div>
+      `;
+      item.addEventListener('click', () => loadLesson(lesson, item));
+      dlgList.appendChild(item);
+    });
+
+    // ── Load a lesson ─────────────────────────────────────────────────
+    function loadLesson(lesson, itemEl) {
+      dlgList.querySelectorAll('.dlg-item').forEach(i => i.classList.remove('active'));
+      itemEl.classList.add('active');
+      mobCur.textContent = lesson.name;
+      closeSidebar();
+
+      fetch(lesson.file)
+        .then(r => { if (!r.ok) throw new Error('Kan ' + lesson.file + ' niet laden'); return r.json(); })
+        .then(renderLesson)
+        .catch(err => {
+          document.getElementById('lesson-title').textContent = 'Fout!';
+          document.getElementById('lesson-subtitle').textContent = err.message;
+          document.getElementById('vocab-grid').innerHTML = '';
+          welcome.style.display = 'none';
+          view.style.display = 'flex';
+        });
+    }
+
+    // ── Render lesson data ────────────────────────────────────────────
+    function renderLesson(data) {
+      document.getElementById('lesson-title').textContent = data.title;
+      document.getElementById('lesson-subtitle').textContent = data.subtitle || '';
+
+      const grid = document.getElementById('vocab-grid');
+      grid.innerHTML = '';
+      data.words.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'k-card';
+        card.onclick = () => speak(item.text);
+        card.innerHTML = `
+          <div class="k-emoji">${item.emoji}</div>
+          <div class="k-word">${item.text}</div>
+        `;
+        grid.appendChild(card);
+      });
+
+      welcome.style.display = 'none';
+      view.style.display = 'flex';
+    }
+
+    // ── TTS ───────────────────────────────────────────────────────────
+    function speak(text) {
+      if (!('speechSynthesis' in window)) { alert('Trình duyệt không hỗ trợ âm thanh.'); return; }
+      window.speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang  = 'nl-NL';
+      u.rate  = 0.7;
+      u.pitch = 1.2;
+      const nlVoice = window.speechSynthesis.getVoices().find(v => v.lang.startsWith('nl-'));
+      if (nlVoice) u.voice = nlVoice;
+      window.speechSynthesis.speak(u);
+    }
+    if ('speechSynthesis' in window) window.speechSynthesis.getVoices();
+
+    // ── Mobile sidebar ────────────────────────────────────────────────
+    function openSidebar()  { sidebar.classList.add('open');    overlay.classList.add('on'); }
+    function closeSidebar() { sidebar.classList.remove('open'); overlay.classList.remove('on'); }
+
+    document.getElementById('mob-menu-btn').addEventListener('click', openSidebar);
+    overlay.addEventListener('click', closeSidebar);
+
+    // ── Auto-load first lesson ────────────────────────────────────────
+    if (LESSONS.length) {
+      const firstItem = dlgList.querySelector('.dlg-item');
+      loadLesson(LESSONS[0], firstItem);
+    }
+
+    // Footer year
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = '© ' + new Date().getFullYear();
+  </script>
+</body>
+</html>
