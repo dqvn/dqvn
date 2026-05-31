@@ -1,0 +1,87 @@
+/* Kids content uses a friendlier font */
+#main { font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial', sans-serif; background: #f0fdf4; }
+
+/* Lesson header inside view */
+#lesson-title {
+  font-size: 1.8rem;
+  color: #16a34a;
+  text-align: center;
+  margin-bottom: 4px;
+}
+#lesson-subtitle {
+  font-size: .95rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Vocab grid */
+.vocab-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Vocab card */
+.k-card {
+  background: #fff;
+  border: 3px dashed #bbf7d0;
+  border-radius: 15px;
+  padding: 20px 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,.05);
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 150px;
+}
+.k-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(22,163,74,.2);
+  border-color: #4ade80;
+  background: #f0fdf4;
+}
+.k-card:active { transform: scale(0.95); }
+
+.k-emoji { font-size: 3.8rem; user-select: none; }
+.k-word  { font-size: 1.4rem; font-weight: bold; color: #1e293b; text-align: center; }
+
+@media (max-width: 700px) {
+  .vocab-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  #lesson-title { font-size: 1.4rem; }
+  .k-emoji { font-size: 3rem; }
+}
+
+/* Voice selector inside sidebar */
+#voice-section {
+  flex-shrink: 0;
+  padding: 8px 12px;
+  border-top: 1px solid rgba(255,255,255,.07);
+}
+#tts-name {
+  font-size: .65rem;
+  color: rgba(255,255,255,.35);
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#tts-voice-select {
+  width: 100%;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 6px;
+  color: rgba(255,255,255,.8);
+  font-size: .75rem;
+  padding: 6px 8px;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+}
+#tts-voice-select:focus { border-color: var(--acc); }
+#tts-voice-select option { background: #12192c; color: #fff; }
