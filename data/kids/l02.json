@@ -1,0 +1,16 @@
+{
+  "title": "Klik en Luister! 🗣️",
+  "subtitle": "Nhấn vào hình để nghe tiếng Hà Lan đọc chậm nhé!",
+  "words": [
+    { "text": "glas",          "emoji": "🥛" },
+    { "text": "glijbaan",      "emoji": "🛝" },
+    { "text": "glad",          "emoji": "🧊" },
+
+    { "text": "klei",          "emoji": "🏺" },
+    { "text": "klok",          "emoji": "🕐" },
+    { "text": "kleed",         "emoji": "🛋️" },
+    { "text": "kleren",        "emoji": "👕" },
+    { "text": "kleurplaatjes", "emoji": "🖍️" },
+    { "text": "klomp",         "emoji": "🪵" }
+  ]
+}
