@@ -200,7 +200,7 @@ document.getElementById('tts-voice-select').addEventListener('change', function 
 
 // ── TTS speak ─────────────────────────────────────────────────────
 function speak(text) {
-  if (!('speechSynthesis' in window)) { alert('Trình duyệt không hỗ trợ âm thanh.'); return; }
+  if (!('speechSynthesis' in window)) { alert('Your browser does not support speech synthesis.'); return; }
   window.speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text);
   u.lang   = 'nl-NL';

@@ -17,7 +17,7 @@ Read every word exactly as printed — do not correct spelling (the sheet may ha
 {
   "title": "Klik en Luister! 🗣️",
   "name": "<cluster> woorden",
-  "subtitle": "Nhấn vào hình để nghe tiếng Hà Lan đọc chậm nhé!",
+  "subtitle": "Click on a picture to hear the Dutch word spoken slowly!",
   "words": [
     { "text": "<dutch-word>", "emoji": "<best-matching-emoji>" }
   ]
@@ -28,7 +28,7 @@ Read every word exactly as printed — do not correct spelling (the sheet may ha
 |------------|------------------------------------------------|--------------------------------------------|
 | `title`    | `"Klik en Luister! 🗣️"`                       | Always the same — shown in content header  |
 | `name`     | e.g. `"SL woorden"` or `"VL & FL woorden"`    | Short label shown in the sidebar           |
-| `subtitle` | `"Nhấn vào hình để nghe tiếng Hà Lan đọc chậm nhé!"` | Always the same Vietnamese instruction |
+| `subtitle` | `"Click on a picture to hear the Dutch word spoken slowly!"` | Always the same Vietnamese instruction |
 | `words`    | Array of `{ "text", "emoji" }` objects         | One entry per card on the sheet            |
 
 ### 4. Emoji selection rules
