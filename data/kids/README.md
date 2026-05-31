@@ -63,3 +63,16 @@ Simply dropping the new file into `data/kids/` is enough — no manifest, no JS 
 | `l02.json` | GL & KL woorden   | gl-, kl-       |
 | `l03.json` | VL & FL woorden   | vl-, fl-       |
 | `l04.json` | BL woorden        | bl-            |
+
+
+## Memory saved. Here's exactly what to do next session:
+Attach the photo + say:
+
+continue with next lxx.json
+
+That's it. When I see that phrase + an image, the memory will remind me to:
+
+Read data/kids/README.md for the template and rules
+Glob data/kids/l*.json to find the next number automatically
+Read the words from your image
+Write the file — no other changes needed
