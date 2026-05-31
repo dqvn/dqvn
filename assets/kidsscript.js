@@ -24,7 +24,7 @@ async function discoverLessons() {
       if (!r.ok) break;
       const data = await r.json();
       lessonCache[file] = data;
-      lessons.push({ id: slug.toUpperCase(), file, name: data.title || slug.toUpperCase() });
+      lessons.push({ id: slug.toUpperCase(), file, name: data.name || data.title || slug.toUpperCase() });
       n++;
     } catch {
       break;
