@@ -118,6 +118,7 @@ function renderLesson(data) {
 }());
 
 // ── TTS voice management (same key + logic as vanstart.html) ─────
+const TTS_SPEED_KEY = 'kids_tts_speed';
 const TTS_VOICE_KEY = 'nl_tts_voice_v1';
 let selectedVoice = null;
 
@@ -167,6 +168,21 @@ function _applyVoiceFromSelector() {
   }
 }
 
+// ── Speed control ─────────────────────────────────────────────────
+(function initSpeed() {
+  const slider  = document.getElementById('speed-slider');
+  const display = document.getElementById('speed-value');
+  const saved   = parseFloat(localStorage.getItem(TTS_SPEED_KEY));
+  const initial = isNaN(saved) ? 0.5 : saved;
+  slider.value    = initial;
+  display.textContent = initial.toFixed(2).replace(/\.?0+$/, '') + '×';
+  slider.addEventListener('input', () => {
+    const v = parseFloat(slider.value);
+    display.textContent = v.toFixed(2).replace(/\.?0+$/, '') + '×';
+    try { localStorage.setItem(TTS_SPEED_KEY, v); } catch {}
+  });
+}());
+
 // Init: sync attempt + voiceschanged + polling fallback + iOS touchstart
 selectedVoice = getPreferredVoice();
 _populateVoiceSelector();
@@ -204,7 +220,7 @@ function speak(text) {
   window.speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text);
   u.lang   = 'nl-NL';
-  u.rate   = 0.7;
+  u.rate   = parseFloat(document.getElementById('speed-slider').value) || 0.5;
   u.pitch  = 1.2;
   u.volume = 1;
   if (selectedVoice) u.voice = selectedVoice;
