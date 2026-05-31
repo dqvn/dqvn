@@ -1,0 +1,17 @@
+{
+  "title": "Klik en Luister! 🗣️",
+  "subtitle": "Nhấn vào hình để nghe tiếng Hà Lan đọc chậm nhé!",
+  "words": [
+    { "text": "vlecht",   "emoji": "🪢" },
+    { "text": "vlag",     "emoji": "🚩" },
+    { "text": "vlieg",    "emoji": "🪰" },
+
+    { "text": "vlot",     "emoji": "🛶" },
+    { "text": "vliegen",  "emoji": "✈️" },
+    { "text": "vlinder",  "emoji": "🦋" },
+
+    { "text": "flamingo", "emoji": "🦩" },
+    { "text": "fluit",    "emoji": "🎵" },
+    { "text": "fles",     "emoji": "🍾" }
+  ]
+}
