@@ -64,6 +64,35 @@
       #lesson-title { font-size: 1.4rem; }
       .k-emoji { font-size: 3rem; }
     }
+
+    /* Voice selector inside sidebar */
+    #voice-section {
+      flex-shrink: 0;
+      padding: 8px 12px;
+      border-top: 1px solid rgba(255,255,255,.07);
+    }
+    #tts-name {
+      font-size: .65rem;
+      color: rgba(255,255,255,.35);
+      margin-bottom: 5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    #tts-voice-select {
+      width: 100%;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 6px;
+      color: rgba(255,255,255,.8);
+      font-size: .75rem;
+      padding: 6px 8px;
+      cursor: pointer;
+      outline: none;
+      appearance: none;
+    }
+    #tts-voice-select:focus { border-color: var(--acc); }
+    #tts-voice-select option { background: #12192c; color: #fff; }
   </style>
 </head>
 <body>
@@ -88,6 +117,10 @@
     </div>
     <div id="dlg-list">
       <div class="sb-load"><div class="spin"></div> Laden…</div>
+    </div>
+    <div id="voice-section">
+      <div id="tts-name"></div>
+      <select id="tts-voice-select"><option disabled>Laden…</option></select>
     </div>
     <div id="sb-back-link">
       <a href="index.html">← Main Menu</a>
@@ -196,7 +229,88 @@
       view.style.display = 'flex';
     }
 
-    // ── TTS ───────────────────────────────────────────────────────────
+    // ── TTS voice management (same key + logic as vanstart.html) ─────
+    const TTS_VOICE_KEY = 'nl_tts_voice_v1';
+    let selectedVoice = null;
+
+    function getPreferredVoice() {
+      const voices = window.speechSynthesis.getVoices();
+      const saved  = localStorage.getItem(TTS_VOICE_KEY);
+      if (saved) { const m = voices.find(v => v.name === saved); if (m) return m; }
+      return voices.find(v => v.name.includes('Microsoft Colette Online') && v.lang === 'nl-NL')
+          || voices.find(v => v.name.includes('Google Nederlands')        && v.lang === 'nl-NL')
+          || voices.find(v => v.lang === 'nl-NL')
+          || voices.find(v => v.lang === 'nl-BE')
+          || voices.find(v => v.lang.startsWith('nl'))
+          || null;
+    }
+
+    function _populateVoiceSelector() {
+      const sel = document.getElementById('tts-voice-select');
+      if (!sel) return;
+      const dutch = window.speechSynthesis.getVoices().filter(v => v.lang.startsWith('nl'));
+      const saved = localStorage.getItem(TTS_VOICE_KEY);
+      sel.innerHTML = '';
+      if (!dutch.length) {
+        const opt = document.createElement('option');
+        opt.textContent = 'No Dutch voices found'; opt.disabled = true;
+        sel.appendChild(opt); return;
+      }
+      dutch.forEach(v => {
+        const opt = document.createElement('option');
+        opt.value = v.name;
+        opt.textContent = `${v.lang === 'nl-BE' ? '🇧🇪' : '🇳🇱'} ${v.localService ? '💻' : '☁️'} ${v.name}`;
+        sel.appendChild(opt);
+      });
+      const preferred = getPreferredVoice();
+      sel.value = saved && dutch.find(v => v.name === saved) ? saved
+                : (preferred ? preferred.name : dutch[0].name);
+      _applyVoiceFromSelector();
+    }
+
+    function _applyVoiceFromSelector() {
+      const sel = document.getElementById('tts-voice-select');
+      if (!sel || !sel.value) return;
+      const found = window.speechSynthesis.getVoices().find(v => v.name === sel.value);
+      if (found) {
+        selectedVoice = found;
+        const nameEl = document.getElementById('tts-name');
+        if (nameEl) nameEl.textContent = found.name;
+      }
+    }
+
+    // Init: sync attempt + voiceschanged + polling fallback + iOS touchstart
+    selectedVoice = getPreferredVoice();
+    _populateVoiceSelector();
+
+    window.speechSynthesis.addEventListener('voiceschanged', () => {
+      selectedVoice = getPreferredVoice();
+      _populateVoiceSelector();
+    });
+
+    (function _pollForVoices() {
+      let tries = 0;
+      const t = setInterval(() => {
+        const dutch = window.speechSynthesis.getVoices().filter(v => v.lang.startsWith('nl'));
+        if (dutch.length || ++tries >= 20) {
+          clearInterval(t);
+          if (dutch.length) { selectedVoice = getPreferredVoice(); _populateVoiceSelector(); }
+        }
+      }, 500);
+    }());
+
+    document.addEventListener('touchstart', function _iosProbe() {
+      window.speechSynthesis.getVoices();
+      setTimeout(_populateVoiceSelector, 200);
+    }, { once: true });
+
+    document.getElementById('tts-voice-select').addEventListener('change', function () {
+      localStorage.setItem(TTS_VOICE_KEY, this.value);
+      _applyVoiceFromSelector();
+      speak('Hallo!');
+    });
+
+    // ── TTS speak ─────────────────────────────────────────────────────
     function speak(text) {
       if (!('speechSynthesis' in window)) { alert('Trình duyệt không hỗ trợ âm thanh.'); return; }
       window.speechSynthesis.cancel();
@@ -204,11 +318,9 @@
       u.lang  = 'nl-NL';
       u.rate  = 0.7;
       u.pitch = 1.2;
-      const nlVoice = window.speechSynthesis.getVoices().find(v => v.lang.startsWith('nl-'));
-      if (nlVoice) u.voice = nlVoice;
+      if (selectedVoice) u.voice = selectedVoice;
       window.speechSynthesis.speak(u);
     }
-    if ('speechSynthesis' in window) window.speechSynthesis.getVoices();
 
     // ── Mobile sidebar ────────────────────────────────────────────────
     function openSidebar()  { sidebar.classList.add('open');    overlay.classList.add('on'); }
