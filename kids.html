@@ -315,9 +315,10 @@
       if (!('speechSynthesis' in window)) { alert('Trình duyệt không hỗ trợ âm thanh.'); return; }
       window.speechSynthesis.cancel();
       const u = new SpeechSynthesisUtterance(text);
-      u.lang  = 'nl-NL';
-      u.rate  = 0.7;
-      u.pitch = 1.2;
+      u.lang   = 'nl-NL';
+      u.rate   = 0.7;
+      u.pitch  = 1.2;
+      u.volume = 1;
       if (selectedVoice) u.voice = selectedVoice;
       window.speechSynthesis.speak(u);
     }
