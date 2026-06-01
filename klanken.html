@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎵 Klanken Leren – Dutch Sounds</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    /* ───── Reset & Base ───── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #EEF2FF;
+      --card:    #FFFFFF;
+      --text:    #1A202C;
+      --muted:   #718096;
+      --radius:  20px;
+      --radius-s: 14px;
+      --sh:      0 4px 20px rgba(0,0,0,.08);
+      --sh-h:    0 8px 30px rgba(0,0,0,.15);
+      /* category colors injected via inline style on each subtree */
+      --cc: #4A90D9;
+      --cc-bg: #EBF5FF;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    /* ───── App shell ───── */
+    #app {
+      max-width: 600px;
+      margin: 0 auto;
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* ───── Screens ───── */
+    .screen {
+      position: absolute; inset: 0;
+      padding: 20px 16px 32px;
+      background: var(--bg);
+      overflow-y: auto;
+      transition: transform .34s cubic-bezier(.4,0,.2,1),
+                  opacity  .34s cubic-bezier(.4,0,.2,1);
+      min-height: 100vh;
+    }
+    .screen.hidden        { display: none; }
+    .screen.slide-left    { animation: sLeft  .34s forwards; }
+    .screen.slide-right   { animation: sRight .34s forwards; }
+    .screen.slide-out-left { animation: soLeft  .34s forwards; }
+    .screen.slide-out-right{ animation: soRight .34s forwards; }
+
+    @keyframes sLeft   { from{transform:translateX( 100%);opacity:0} to{transform:translateX(0);opacity:1} }
+    @keyframes sRight  { from{transform:translateX(-100%);opacity:0} to{transform:translateX(0);opacity:1} }
+    @keyframes soLeft  { from{transform:translateX(0);opacity:1} to{transform:translateX(-100%);opacity:0} }
+    @keyframes soRight { from{transform:translateX(0);opacity:1} to{transform:translateX( 100%);opacity:0} }
+
+    /* ───── Back button ───── */
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--card); border: none; border-radius: 50px;
+      padding: 9px 18px; font-family: 'Nunito', sans-serif;
+      font-size: 14px; font-weight: 700; cursor: pointer;
+      box-shadow: var(--sh); color: var(--text);
+      transition: transform .15s, box-shadow .15s;
+      margin-bottom: 22px;
+    }
+    .back-btn:hover { transform: translateY(-2px); box-shadow: var(--sh-h); }
+
+    /* ───────────────────────────── HOME ───── */
+    .home-header {
+      text-align: center;
+      padding: 28px 0 26px;
+    }
+    .home-logo { font-size: 56px; line-height: 1; margin-bottom: 10px; }
+    .home-title {
+      font-size: 28px; font-weight: 900; margin-bottom: 3px;
+    }
+    .home-sub  { font-size: 14px; color: var(--muted); font-weight: 600; }
+    .home-sub2 { font-size: 13px; color: #a0aec0; font-weight: 600; margin-top: 2px; }
+
+    .no-voice-banner {
+      background: #FFF8E1; border: 2px solid #FFD600;
+      border-radius: var(--radius-s); padding: 10px 14px;
+      font-size: 13px; font-weight: 600; color: #7A5800;
+      margin-bottom: 16px; display: none;
+    }
+    .no-voice-banner.show { display: block; }
+
+    .cat-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+      margin-bottom: 28px;
+    }
+    .cat-card {
+      background: var(--card); border-radius: var(--radius);
+      padding: 22px 14px 18px; cursor: pointer; box-shadow: var(--sh);
+      transition: transform .2s, box-shadow .2s;
+      text-align: center; position: relative; overflow: hidden;
+      border: 3px solid transparent;
+    }
+    .cat-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 5px; background: var(--cc);
+      border-radius: var(--radius) var(--radius) 0 0;
+    }
+    .cat-card:hover  { transform: translateY(-4px); box-shadow: var(--sh-h); }
+    .cat-card:active { transform: scale(.97); }
+
+    .cat-emoji   { font-size: 34px; display: block; margin-bottom: 8px; }
+    .cat-name    { font-size: 14px; font-weight: 900; margin-bottom: 1px; }
+    .cat-name-vn { font-size: 11px; color: var(--muted); font-weight: 600; margin-bottom: 9px; }
+    .cat-badge   {
+      font-size: 11px; font-weight: 800;
+      color: var(--cc); background: var(--cc-bg);
+      border-radius: 20px; padding: 4px 10px; display: inline-block;
+    }
+    .cat-dots {
+      display: flex; justify-content: center; gap: 5px; margin-top: 10px;
+    }
+    .cat-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: #E2E8F0; transition: background .3s;
+    }
+    .cat-dot.done { background: var(--cc); }
+
+    .home-footer {
+      text-align: center; padding-top: 8px;
+    }
+    .home-footer a {
+      color: var(--muted); font-size: 14px; font-weight: 600;
+      text-decoration: none;
+    }
+    .home-footer a:hover { text-decoration: underline; }
+
+    /* ───────────────────────────── LIST ───── */
+    .list-cat-header {
+      display: flex; align-items: center; gap: 14px; margin-bottom: 6px;
+    }
+    .list-cat-emoji { font-size: 36px; }
+    .list-cat-name  { font-size: 22px; font-weight: 900; color: var(--cc); }
+    .list-cat-vn    { font-size: 13px; color: var(--muted); font-weight: 600; }
+
+    .list-hint {
+      font-size: 13px; color: var(--muted); font-weight: 600;
+      margin: 12px 0 20px; line-height: 1.5;
+    }
+
+    .sound-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+      margin-bottom: 22px;
+    }
+    .sound-chip {
+      background: var(--card); border-radius: var(--radius-s);
+      padding: 16px 6px; text-align: center; cursor: pointer;
+      box-shadow: var(--sh); transition: transform .15s, box-shadow .15s;
+      border: 3px solid transparent; position: relative;
+    }
+    .sound-chip:hover { transform: translateY(-2px); box-shadow: var(--sh-h); border-color: var(--cc); }
+    .sound-chip.learned { border-color: var(--cc); }
+    .sound-chip.learned::after {
+      content: '★'; position: absolute; top: 4px; right: 7px;
+      font-size: 12px; color: var(--cc);
+    }
+    .chip-spell { font-size: 26px; font-weight: 900; color: var(--cc); display: block; margin-bottom: 3px; }
+    .chip-ipa   { font-size: 11px; color: var(--muted); font-weight: 600; }
+
+    .start-btn {
+      width: 100%; padding: 16px; border-radius: var(--radius); border: none;
+      font-family: 'Nunito', sans-serif; font-size: 17px; font-weight: 800;
+      cursor: pointer; background: var(--cc); color: white;
+      box-shadow: 0 4px 16px rgba(0,0,0,.2);
+      transition: transform .15s, box-shadow .15s;
+    }
+    .start-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 22px rgba(0,0,0,.25); }
+
+    /* ───────────────────────────── DETAIL ───── */
+    .detail-topbar {
+      display: flex; align-items: center;
+      justify-content: space-between; margin-bottom: 18px;
+    }
+    .detail-back {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--card); border: none; border-radius: 50px;
+      padding: 9px 18px; font-family: 'Nunito', sans-serif;
+      font-size: 14px; font-weight: 700; cursor: pointer;
+      box-shadow: var(--sh); color: var(--text);
+      transition: transform .15s, box-shadow .15s;
+    }
+    .detail-back:hover { transform: translateY(-2px); box-shadow: var(--sh-h); }
+    .detail-counter {
+      background: var(--card); padding: 7px 14px;
+      border-radius: 20px; font-size: 13px; font-weight: 700;
+      color: var(--muted); box-shadow: var(--sh);
+    }
+
+    /* Main phoneme card */
+    .phoneme-card {
+      background: var(--card); border-radius: var(--radius);
+      padding: 28px 20px 22px; text-align: center;
+      box-shadow: var(--sh); margin-bottom: 14px;
+      position: relative; overflow: hidden;
+    }
+    .phoneme-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 6px; background: var(--cc);
+    }
+    .phoneme-spelling {
+      font-size: clamp(60px, 18vw, 84px);
+      font-weight: 900; color: var(--cc); line-height: 1;
+      margin-bottom: 6px; letter-spacing: -1px;
+    }
+    .phoneme-ipa {
+      font-size: 20px; font-weight: 700; color: var(--muted);
+      margin-bottom: 18px; font-style: italic; letter-spacing: 1px;
+    }
+
+    /* Sound wave visualizer */
+    .wave {
+      display: flex; justify-content: center; align-items: center;
+      gap: 4px; height: 36px; margin-bottom: 18px;
+    }
+    .wave-bar {
+      width: 5px; background: var(--cc); border-radius: 4px;
+      height: 6px; opacity: .25; transition: height .08s, opacity .2s;
+    }
+    .wave.playing .wave-bar { opacity: 1; }
+    .wave.playing .wave-bar:nth-child(1) { animation: wb .7s .00s ease-in-out infinite; }
+    .wave.playing .wave-bar:nth-child(2) { animation: wb .7s .10s ease-in-out infinite; }
+    .wave.playing .wave-bar:nth-child(3) { animation: wb .7s .05s ease-in-out infinite; }
+    .wave.playing .wave-bar:nth-child(4) { animation: wb .7s .20s ease-in-out infinite; }
+    .wave.playing .wave-bar:nth-child(5) { animation: wb .7s .12s ease-in-out infinite; }
+    .wave.playing .wave-bar:nth-child(6) { animation: wb .7s .08s ease-in-out infinite; }
+    .wave.playing .wave-bar:nth-child(7) { animation: wb .7s .18s ease-in-out infinite; }
+    @keyframes wb { 0%,100%{height:6px} 50%{height:30px} }
+
+    /* Play buttons */
+    .play-row { display: flex; gap: 10px; justify-content: center; }
+    .play-btn {
+      flex: 1; max-width: 175px; padding: 13px 10px;
+      border-radius: var(--radius-s); border: none;
+      font-family: 'Nunito', sans-serif; font-size: 15px;
+      font-weight: 800; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; gap: 7px;
+      transition: transform .15s, box-shadow .15s;
+    }
+    .play-btn:hover  { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.2); }
+    .play-btn:active { transform: scale(.96); }
+    .btn-main { background: var(--cc); color: #fff; box-shadow: 0 4px 14px rgba(0,0,0,.18); }
+    .btn-slow { background: var(--cc-bg); color: var(--cc); border: 2px solid var(--cc); }
+
+    /* Tip card */
+    .tip-card {
+      background: var(--card); border-radius: var(--radius-s);
+      padding: 15px 16px; margin-bottom: 14px; box-shadow: var(--sh);
+      border-left: 4px solid var(--cc);
+    }
+    .tip-label { font-size: 10px; font-weight: 800; text-transform: uppercase;
+                 letter-spacing: 1.2px; color: var(--cc); margin-bottom: 5px; }
+    .tip-main  { font-size: 14px; font-weight: 700; color: var(--text); line-height: 1.5; }
+    .tip-mouth { font-size: 12px; font-weight: 600; color: var(--muted);
+                 margin-top: 5px; line-height: 1.45; }
+
+    /* Example words */
+    .ex-label {
+      font-size: 11px; font-weight: 800; text-transform: uppercase;
+      letter-spacing: 1.2px; color: var(--muted); margin-bottom: 10px;
+    }
+    .ex-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-bottom: 22px; }
+
+    .ex-card {
+      background: var(--card); border-radius: var(--radius-s);
+      padding: 13px 8px; text-align: center; cursor: pointer;
+      box-shadow: var(--sh); border: 2px solid transparent;
+      transition: transform .15s, box-shadow .15s, border-color .15s, background .15s;
+    }
+    .ex-card:hover  { transform: translateY(-2px); box-shadow: var(--sh-h); border-color: var(--cc); }
+    .ex-card:active { transform: scale(.95); }
+    .ex-card.playing { border-color: var(--cc); background: var(--cc-bg); }
+
+    .ex-emoji   { font-size: 28px; display: block; margin-bottom: 6px; }
+    .ex-word    { font-size: 16px; font-weight: 900; color: var(--text);
+                  margin-bottom: 3px; line-height: 1.2; }
+    .ex-word .hl { color: var(--cc); border-bottom: 2.5px solid var(--cc); }
+    .ex-meaning { font-size: 11px; color: var(--muted); font-weight: 600; }
+
+    /* Bottom navigation */
+    .bottom-nav {
+      display: flex; justify-content: space-between;
+      align-items: center; gap: 8px;
+    }
+    .nav-btn {
+      background: var(--card); border: none; border-radius: 50px;
+      padding: 12px 22px; font-family: 'Nunito', sans-serif;
+      font-size: 14px; font-weight: 700; cursor: pointer;
+      box-shadow: var(--sh); color: var(--text);
+      display: flex; align-items: center; gap: 6px;
+      transition: transform .15s, box-shadow .15s, opacity .15s;
+    }
+    .nav-btn:disabled { opacity: .28; cursor: default; }
+    .nav-btn:not(:disabled):hover { transform: translateY(-2px); box-shadow: var(--sh-h); }
+    .nav-btn.btn-next { background: var(--cc); color: #fff; box-shadow: 0 4px 14px rgba(0,0,0,.2); }
+
+    .prog-dots { display: flex; gap: 6px; align-items: center; }
+    .prog-dot {
+      width: 9px; height: 9px; border-radius: 50%;
+      background: #E2E8F0; transition: background .3s, transform .3s;
+    }
+    .prog-dot.done    { background: var(--cc); }
+    .prog-dot.current { background: var(--cc); transform: scale(1.35); }
+
+    /* ───── Toast ───── */
+    .toast {
+      position: fixed; bottom: 24px; left: 50%;
+      transform: translateX(-50%) translateY(80px);
+      background: #1A202C; color: #fff;
+      padding: 11px 24px; border-radius: 50px;
+      font-size: 14px; font-weight: 700;
+      transition: transform .3s; z-index: 200;
+      white-space: nowrap; pointer-events: none;
+    }
+    .toast.show { transform: translateX(-50%) translateY(0); }
+
+    /* ───── Star pop ───── */
+    .star-pop {
+      position: fixed; pointer-events: none; font-size: 26px;
+      z-index: 300; animation: starPop .9s ease-out forwards;
+    }
+    @keyframes starPop {
+      0%   { transform: scale(0) translateY(0);    opacity: 1; }
+      55%  { transform: scale(1.5) translateY(-50px); opacity: 1; }
+      100% { transform: scale(1) translateY(-100px); opacity: 0; }
+    }
+
+    /* ───── Responsive ───── */
+    @media (max-width: 380px) {
+      .cat-grid { gap: 10px; }
+      .cat-card { padding: 16px 10px 14px; }
+      .cat-emoji { font-size: 28px; }
+      .ex-row { gap: 7px; }
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+
+  <!-- ═══ HOME ═══ -->
+  <div id="s-home" class="screen">
+    <div class="home-header">
+      <div class="home-logo">🎵</div>
+      <h1 class="home-title">Klanken Leren</h1>
+      <p class="home-sub">Leer Nederlandse klanken uitspreken!</p>
+      <p class="home-sub2">Học phát âm tiếng Hà Lan từ đầu</p>
+    </div>
+
+    <div id="no-voice" class="no-voice-banner">
+      ⚠️ Geen Nederlandse stem gevonden — probeer Chrome op Windows of Android voor het beste resultaat.
+    </div>
+
+    <div id="cat-grid" class="cat-grid"></div>
+
+    <div class="home-footer">
+      <a href="index.html">← Terug naar hoofdmenu</a>
+    </div>
+  </div>
+
+  <!-- ═══ LIST ═══ -->
+  <div id="s-list" class="screen hidden">
+    <button class="back-btn" id="list-back">← Terug</button>
+    <div id="list-body"></div>
+  </div>
+
+  <!-- ═══ DETAIL ═══ -->
+  <div id="s-detail" class="screen hidden">
+    <div id="detail-body"></div>
+  </div>
+
+</div><!-- #app -->
+
+<div id="toast" class="toast"></div>
+
+<script>
+/* ══════════════════════════════════════════════════════════════
+   PHONETICS DATA
+   ══════════════════════════════════════════════════════════════ */
+const DATA = {
+  categories: [
+    /* ─── 1. Short Vowels ─── */
+    {
+      id: 'short', name: 'Korte Klinkers', nameVN: 'Nguyên âm ngắn',
+      emoji: '🔴', desc: 'a, e, i, o, u',
+      color: '#E53E3E', bg: '#FFF5F5',
+      sounds: [
+        { id:'a', spell:'a', ipa:'/ɑ/',
+          tipVN: 'Giống "a" trong "ba, má" — nhưng miệng mở rộng hơn, âm nằm sâu ở cuống họng',
+          mouth: '😮 Mở miệng rộng, lưỡi thấp và ra phía sau',
+          ex: [{w:'bad',  hl:'a',  m:'bồn tắm',      e:'🛁'},
+               {w:'kat',  hl:'a',  m:'con mèo',      e:'🐱'},
+               {w:'dag',  hl:'a',  m:'ngày / chào',  e:'☀️'}] },
+        { id:'e', spell:'e', ipa:'/ɛ/',
+          tipVN: 'Giống "e" trong "kẻ, mẹ" của tiếng Việt',
+          mouth: '😐 Miệng nửa mở, hai mép hơi kéo sang bên',
+          ex: [{w:'bed', hl:'e', m:'cái giường', e:'🛏️'},
+               {w:'les', hl:'e', m:'bài học',   e:'📚'},
+               {w:'pen', hl:'e', m:'cây bút',   e:'✏️'}] },
+        { id:'i', spell:'i', ipa:'/ɪ/',
+          tipVN: 'Gần giống "i" trong tiếng Việt nhưng ngắn và lỏng hơn, như "lì, chì"',
+          mouth: '😁 Miệng gần khép, hai mép kéo sang bên',
+          ex: [{w:'vis', hl:'i', m:'con cá',   e:'🐟'},
+               {w:'dit', hl:'i', m:'cái này',  e:'👆'},
+               {w:'lip', hl:'i', m:'cái môi',  e:'👄'}] },
+        { id:'o', spell:'o', ipa:'/ɔ/',
+          tipVN: 'Giống "o" trong "con, bò" của tiếng Việt',
+          mouth: '😯 Miệng tròn và nửa mở',
+          ex: [{w:'pot', hl:'o', m:'cái nồi',     e:'🍲'},
+               {w:'rok', hl:'o', m:'cái váy',     e:'👗'},
+               {w:'zon', hl:'o', m:'mặt trời',    e:'☀️'}] },
+        { id:'u', spell:'u', ipa:'/ʏ/',
+          tipVN: '⚠️ Không có trong tiếng Việt! Nói "i" nhưng tròn môi lại như đang nói "u"',
+          mouth: '😗 Môi tròn và hướng ra phía trước, lưỡi ở vị trí cao',
+          ex: [{w:'bus', hl:'u', m:'xe buýt',  e:'🚌'},
+               {w:'rug', hl:'u', m:'cái lưng', e:'🦴'},
+               {w:'hut', hl:'u', m:'túp lều',  e:'🛖'}] },
+      ]
+    },
+
+    /* ─── 2. Long Vowels ─── */
+    {
+      id: 'long', name: 'Lange Klinkers', nameVN: 'Nguyên âm dài',
+      emoji: '🔵', desc: 'aa, ee, ie, oo, uu',
+      color: '#2B6CB0', bg: '#EBF8FF',
+      sounds: [
+        { id:'aa', spell:'aa', ipa:'/aː/',
+          tipVN: 'Giống "a" ngắn nhưng kéo dài ra — nghe như "à" trong "bà ơi"',
+          mouth: '😮 Giống "a" ngắn nhưng giữ miệng mở lâu hơn gấp đôi',
+          ex: [{w:'maan', hl:'aa', m:'mặt trăng', e:'🌙'},
+               {w:'raam', hl:'aa', m:'cửa sổ',   e:'🪟'},
+               {w:'jaar', hl:'aa', m:'năm',       e:'📅'}] },
+        { id:'ee', spell:'ee', ipa:'/eː/',
+          tipVN: 'Giống "ê" trong "mê, bê" của tiếng Việt nhưng kéo dài hơn',
+          mouth: '😄 Miệng nửa mở, hai mép kéo nhẹ sang bên, giữ lâu',
+          ex: [{w:'been', hl:'ee', m:'chân / xương', e:'🦵'},
+               {w:'zee',  hl:'ee', m:'biển',         e:'🌊'},
+               {w:'peer', hl:'ee', m:'quả lê',       e:'🍐'}] },
+        { id:'ie', spell:'ie', ipa:'/iː/',
+          tipVN: 'Giống "i" dài trong tiếng Việt như "mì, thi"',
+          mouth: '😁 Hai mép kéo sang bên rộng, lưỡi lên cao phía trước',
+          ex: [{w:'ziek', hl:'ie', m:'bị ốm',  e:'🤒'},
+               {w:'vier', hl:'ie', m:'bốn',    e:'4️⃣'},
+               {w:'hier', hl:'ie', m:'ở đây',  e:'📍'}] },
+        { id:'oo', spell:'oo', ipa:'/oː/',
+          tipVN: 'Giống "ô" trong "cô, bố" nhưng môi tròn hơn và kéo dài hơn',
+          mouth: '😯 Môi tròn, miệng nửa mở, giữ lâu',
+          ex: [{w:'boom', hl:'oo', m:'cái cây',   e:'🌳'},
+               {w:'boot', hl:'oo', m:'chiếc thuyền', e:'⛵'},
+               {w:'rood', hl:'oo', m:'màu đỏ',    e:'🔴'}] },
+        { id:'uu', spell:'uu', ipa:'/yː/',
+          tipVN: '⚠️ Không có trong tiếng Việt! Nói "u" nhưng lưỡi đẩy lên cao phía trước như khi nói "i"',
+          mouth: '🤔 Môi tròn và đẩy ra phía trước, lưỡi cao phía trước',
+          ex: [{w:'muur', hl:'uu', m:'bức tường', e:'🧱'},
+               {w:'vuur', hl:'uu', m:'lửa',       e:'🔥'},
+               {w:'duur', hl:'uu', m:'đắt tiền',  e:'💎'}] },
+      ]
+    },
+
+    /* ─── 3. Diphthongs ─── */
+    {
+      id: 'diphthong', name: 'Tweeklanken', nameVN: 'Nguyên âm đôi',
+      emoji: '🟣', desc: 'ij/ei, ui, au/ou, eu, oe',
+      color: '#6B46C1', bg: '#F5F0FF',
+      sounds: [
+        { id:'ij', spell:'ij / ei', ipa:'/ɛɪ/',
+          tipVN: 'Giống "ây" trong tiếng Việt như "tây, vây, ngây" — bắt đầu từ "e" trượt sang "i"',
+          mouth: '😮‍💨 Bắt đầu miệng nửa mở (âm "e"), sau đó hai mép kéo sang bên (âm "i")',
+          ex: [{w:'wijn',  hl:'ij', m:'rượu vang', e:'🍷'},
+               {w:'trein', hl:'ei', m:'tàu hỏa',   e:'🚂'},
+               {w:'rijst', hl:'ij', m:'gạo / cơm', e:'🍚'}] },
+        { id:'ui', spell:'ui', ipa:'/œy/',
+          tipVN: '⚠️ Khó nhất tiếng Hà Lan! Bắt đầu như "ö" (tiếng Đức) — môi tròn, miệng hơi mở — rồi trượt sang "uy"',
+          mouth: '🤨 Môi tròn và mở (âm "ö"), sau đó lưỡi đẩy lên cao phía trước',
+          ex: [{w:'huis', hl:'ui', m:'ngôi nhà',  e:'🏠'},
+               {w:'muis', hl:'ui', m:'con chuột', e:'🐭'},
+               {w:'tuin', hl:'ui', m:'khu vườn',  e:'🌻'}] },
+        { id:'au', spell:'au / ou', ipa:'/ɑu/',
+          tipVN: 'Giống "ao" trong tiếng Việt như "cao, bao, sao" — miệng mở rồi tròn môi lại',
+          mouth: '😮 Bắt đầu miệng mở rộng, sau đó môi tròn lại như nói "u"',
+          ex: [{w:'blauw', hl:'au', m:'màu xanh lam', e:'💙'},
+               {w:'oud',   hl:'ou', m:'cũ / già',     e:'👴'},
+               {w:'auto',  hl:'au', m:'ô tô',         e:'🚗'}] },
+        { id:'eu', spell:'eu', ipa:'/øː/',
+          tipVN: 'Gần "ơ" trong "mơ, ngơ" nhưng tròn môi hơn — nói "ê" trong khi tròn môi như "o"',
+          mouth: '😶 Nói "ê" nhưng đồng thời tròn môi lại như khi nói "o"',
+          ex: [{w:'neus', hl:'eu', m:'cái mũi',  e:'👃'},
+               {w:'deur', hl:'eu', m:'cái cửa',  e:'🚪'},
+               {w:'leuk', hl:'eu', m:'vui / hay', e:'😄'}] },
+        { id:'oe', spell:'oe', ipa:'/uː/',
+          tipVN: 'Giống "u" trong tiếng Việt như "tu, mu, cu"',
+          mouth: '😗 Môi tròn và mở rộng, giống "oo" trong tiếng Anh "moon"',
+          ex: [{w:'boek', hl:'oe', m:'quyển sách',   e:'📖'},
+               {w:'hoe',  hl:'oe', m:'như thế nào',  e:'❓'},
+               {w:'voet', hl:'oe', m:'bàn chân',     e:'👣'}] },
+      ]
+    },
+
+    /* ─── 4. Special Sounds ─── */
+    {
+      id: 'special', name: 'Bijzondere Klanken', nameVN: 'Âm đặc biệt',
+      emoji: '🟠', desc: 'g, ch, sch, ng, w, r',
+      color: '#C05621', bg: '#FFFAF0',
+      sounds: [
+        { id:'g', spell:'g', ipa:'/x/',
+          tipVN: '⚠️ Không có trong tiếng Việt! Âm từ cuống họng — như khi súc miệng nước mạnh',
+          mouth: '😤 Miệng hé, không rung thanh quản, hơi thở ma sát ở cuống họng',
+          ex: [{w:'gaan',  hl:'g',  m:'đi (đi bộ)',    e:'🚶'},
+               {w:'goed',  hl:'g',  m:'tốt / được',    e:'👍'},
+               {w:'groot', hl:'gr', m:'to lớn',        e:'🐘'}] },
+        { id:'ch', spell:'ch', ipa:'/x/',
+          tipVN: 'Giống âm "g" của tiếng Hà Lan — âm khò khè từ cuống họng, thường xuất hiện sau nguyên âm',
+          mouth: '😤 Giống âm "g" nhưng thường ở cuối từ hoặc sau nguyên âm',
+          ex: [{w:'lachen', hl:'ch', m:'cười',     e:'😂'},
+               {w:'nacht',  hl:'ch', m:'đêm tối',  e:'🌙'},
+               {w:'acht',   hl:'ch', m:'số tám',   e:'8️⃣'}] },
+        { id:'sch', spell:'sch', ipa:'/sx/',
+          tipVN: 'Đọc "s" + âm "kh" ngay lập tức — không có trong tiếng Việt',
+          mouth: '😬 Bắt đầu âm "s" rồi ngay lập tức chuyển sang âm "g/kh" từ cuống họng',
+          ex: [{w:'school', hl:'sch', m:'trường học',  e:'🏫'},
+               {w:'schip',  hl:'sch', m:'con tàu',    e:'🚢'},
+               {w:'schoon', hl:'sch', m:'sạch / đẹp', e:'✨'}] },
+        { id:'ng', spell:'ng', ipa:'/ŋ/',
+          tipVN: 'Giống "ng" trong tiếng Việt như "ngày, ngủ, nghe" — âm thoát qua mũi',
+          mouth: '😌 Lưỡi chạm vòm miệng phía sau, âm thoát qua mũi (không qua miệng)',
+          ex: [{w:'zingen', hl:'ng', m:'hát',         e:'🎵'},
+               {w:'lang',   hl:'ng', m:'dài',         e:'📏'},
+               {w:'ring',   hl:'ng', m:'chiếc nhẫn',  e:'💍'}] },
+        { id:'w', spell:'w', ipa:'/ʋ/',
+          tipVN: 'Âm nằm giữa "v" và "u" — môi dưới chạm nhẹ môi trên, khác tiếng Anh',
+          mouth: '😶 Hai môi gần chạm nhau, hơi thở đi qua, không rung thanh quản mạnh',
+          ex: [{w:'water', hl:'w', m:'nước',    e:'💧'},
+               {w:'warm',  hl:'w', m:'ấm áp',   e:'🌡️'},
+               {w:'wit',   hl:'w', m:'màu trắng', e:'⬜'}] },
+        { id:'r', spell:'r', ipa:'/r/ hoặc /ʀ/',
+          tipVN: 'Miền Nam Hà Lan: rung đầu lưỡi. Miền Bắc/Trung: âm ục từ cuống họng',
+          mouth: '😤 Cách 1 (trẻ em): rung đầu lưỡi. Cách 2 (người lớn): âm uvular từ cuống họng',
+          ex: [{w:'rood',  hl:'r', m:'màu đỏ',  e:'🔴'},
+               {w:'regen', hl:'r', m:'mưa',     e:'🌧️'},
+               {w:'brood', hl:'r', m:'bánh mì', e:'🍞'}] },
+      ]
+    },
+  ]
+};
+
+/* ══════════════════════════════════════════════════════════════
+   STATE
+   ══════════════════════════════════════════════════════════════ */
+const state = {
+  screen: 'home',
+  catIdx: 0,
+  sndIdx: 0,
+};
+
+/* ══════════════════════════════════════════════════════════════
+   PROGRESS (localStorage)
+   ══════════════════════════════════════════════════════════════ */
+let progress = {};
+function loadProg()  { try { progress = JSON.parse(localStorage.getItem('klanken-v1') || '{}'); } catch{} }
+function saveProg()  { localStorage.setItem('klanken-v1', JSON.stringify(progress)); }
+function setDone(catId, sndId) { progress[catId + ':' + sndId] = 1; saveProg(); }
+function isDone(catId, sndId)  { return !!progress[catId + ':' + sndId]; }
+
+/* ══════════════════════════════════════════════════════════════
+   TTS
+   ══════════════════════════════════════════════════════════════ */
+let dutchVoice = null;
+let ttsActive   = false;
+
+function initTTS() {
+  function pick(voices) {
+    return voices.find(v => v.lang === 'nl-NL') ||
+           voices.find(v => v.lang.startsWith('nl')) || null;
+  }
+  const v = speechSynthesis.getVoices();
+  if (v.length) dutchVoice = pick(v);
+  speechSynthesis.onvoiceschanged = () => {
+    dutchVoice = pick(speechSynthesis.getVoices());
+    if (!dutchVoice) document.getElementById('no-voice').classList.add('show');
+  };
+}
+
+function speak(text, rate, onEnd) {
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'nl-NL';
+  if (dutchVoice) u.voice = dutchVoice;
+  u.rate  = rate  || 0.88;
+  u.pitch = 1.05;
+  ttsActive = true;
+  setWave(true);
+  u.onend = u.onerror = () => {
+    ttsActive = false;
+    setWave(false);
+    if (onEnd) onEnd();
+  };
+  speechSynthesis.speak(u);
+}
+
+function setWave(on) {
+  document.querySelectorAll('.wave').forEach(w => w.classList.toggle('playing', on));
+}
+
+/* ══════════════════════════════════════════════════════════════
+   SCREEN TRANSITIONS
+   ══════════════════════════════════════════════════════════════ */
+let currentScreen = document.getElementById('s-home');
+
+function goTo(id, dir) {
+  const next = document.getElementById(id);
+  const prev = currentScreen;
+  if (next === prev) return;
+
+  const outClass = dir === 'fwd' ? 'slide-out-left'  : 'slide-out-right';
+  const inClass  = dir === 'fwd' ? 'slide-left'      : 'slide-right';
+
+  prev.classList.add(outClass);
+  next.classList.remove('hidden');
+  next.classList.add(inClass);
+  next.scrollTop = 0;
+
+  setTimeout(() => {
+    prev.classList.remove(outClass);
+    prev.classList.add('hidden');
+    next.classList.remove(inClass);
+    currentScreen = next;
+  }, 350);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   RENDER: HOME
+   ══════════════════════════════════════════════════════════════ */
+function renderHome() {
+  const grid = document.getElementById('cat-grid');
+  grid.innerHTML = DATA.categories.map((cat, ci) => {
+    const dots = cat.sounds.map(s =>
+      `<div class="cat-dot${isDone(cat.id, s.id) ? ' done' : ''}" style="--cc:${cat.color}"></div>`
+    ).join('');
+    return `
+      <div class="cat-card" style="--cc:${cat.color};--cc-bg:${cat.bg}"
+           onclick="openList(${ci})">
+        <span class="cat-emoji">${cat.emoji}</span>
+        <div class="cat-name">${cat.name}</div>
+        <div class="cat-name-vn">${cat.nameVN}</div>
+        <div class="cat-badge">${cat.desc}</div>
+        <div class="cat-dots">${dots}</div>
+      </div>`;
+  }).join('');
+}
+
+/* ══════════════════════════════════════════════════════════════
+   RENDER: LIST
+   ══════════════════════════════════════════════════════════════ */
+function renderList(ci) {
+  /* Builds list HTML without navigating */
+  state.catIdx = ci;
+  const cat = DATA.categories[ci];
+  const chips = cat.sounds.map((s, si) => `
+    <div class="sound-chip${isDone(cat.id, s.id) ? ' learned' : ''}"
+         style="--cc:${cat.color};--cc-bg:${cat.bg}"
+         onclick="openDetail(${ci},${si})">
+      <span class="chip-spell">${s.spell}</span>
+      <span class="chip-ipa">${s.ipa}</span>
+    </div>`).join('');
+
+  document.getElementById('list-back').onclick = () => { renderHome(); goTo('s-home', 'back'); };
+  document.getElementById('list-body').innerHTML = `
+    <div class="list-cat-header">
+      <span class="list-cat-emoji">${cat.emoji}</span>
+      <div>
+        <div class="list-cat-name" style="color:${cat.color}">${cat.name}</div>
+        <div class="list-cat-vn">${cat.nameVN}</div>
+      </div>
+    </div>
+    <p class="list-hint">Nhấp vào từng âm để học &nbsp;·&nbsp; Klik op een klank om te oefenen</p>
+    <div class="sound-grid" style="--cc:${cat.color};--cc-bg:${cat.bg}">${chips}</div>
+    <button class="start-btn" style="background:${cat.color}"
+            onclick="openDetail(${ci},0)">▶&nbsp; Begin met leren &nbsp;—&nbsp; Bắt đầu học</button>`;
+}
+
+function openList(ci) {
+  renderList(ci);
+  goTo('s-list', 'fwd');
+}
+
+/* ══════════════════════════════════════════════════════════════
+   RENDER: DETAIL
+   ══════════════════════════════════════════════════════════════ */
+function openDetail(ci, si) {
+  state.catIdx = ci;
+  state.sndIdx = si;
+  renderDetail();
+  // Decide direction based on which screen we're on
+  const from = currentScreen.id;
+  if (from === 's-list' || from === 's-home') goTo('s-detail', 'fwd');
+  // else already on detail, just re-rendered
+}
+
+function renderDetail() {
+  const cat = DATA.categories[state.catIdx];
+  const snd = cat.sounds[state.sndIdx];
+  const total = cat.sounds.length;
+  const si  = state.sndIdx;
+  const ci  = state.catIdx;
+
+  /* highlight phoneme within word */
+  function hl(word, ph) {
+    const i = word.toLowerCase().indexOf(ph.toLowerCase());
+    if (i < 0) return word;
+    return word.slice(0,i) +
+           `<span class="hl">${word.slice(i, i+ph.length)}</span>` +
+           word.slice(i+ph.length);
+  }
+
+  /* progress dots */
+  const dots = cat.sounds.map((_, i) => {
+    let cls = 'prog-dot';
+    if (i < si || isDone(cat.id, cat.sounds[i].id)) cls += ' done';
+    if (i === si) cls += ' current';
+    return `<div class="${cls}" style="--cc:${cat.color}"></div>`;
+  }).join('');
+
+  /* example cards */
+  const exCards = snd.ex.map(ex => `
+    <div class="ex-card" style="--cc:${cat.color};--cc-bg:${cat.bg}"
+         onclick="speakEx(event,'${ex.w}')">
+      <span class="ex-emoji">${ex.e}</span>
+      <div class="ex-word">${hl(ex.w, ex.hl)}</div>
+      <div class="ex-meaning">${ex.m}</div>
+    </div>`).join('');
+
+  const isLast = si === total - 1;
+
+  document.getElementById('detail-body').innerHTML = `
+    <div class="detail-topbar" style="--cc:${cat.color};--cc-bg:${cat.bg}">
+      <button class="detail-back" onclick="backToList()">← ${cat.name}</button>
+      <span class="detail-counter">${si+1} / ${total}</span>
+    </div>
+
+    <div class="phoneme-card" style="--cc:${cat.color};--cc-bg:${cat.bg}">
+      <div class="phoneme-spelling">${snd.spell}</div>
+      <div class="phoneme-ipa">${snd.ipa}</div>
+      <div class="wave" id="wave">
+        <div class="wave-bar"></div><div class="wave-bar"></div>
+        <div class="wave-bar"></div><div class="wave-bar"></div>
+        <div class="wave-bar"></div><div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+      </div>
+      <div class="play-row">
+        <button class="play-btn btn-main" style="background:${cat.color}"
+                onclick="playAll(false)">▶ Luister</button>
+        <button class="play-btn btn-slow"
+                style="color:${cat.color};border-color:${cat.color};background:${cat.bg}"
+                onclick="playAll(true)">🐢 Langzaam</button>
+      </div>
+    </div>
+
+    <div class="tip-card" style="--cc:${cat.color};border-left-color:${cat.color}">
+      <div class="tip-label">🇻🇳 Gợi ý phát âm</div>
+      <div class="tip-main">${snd.tipVN}</div>
+      <div class="tip-mouth">👄 ${snd.mouth}</div>
+    </div>
+
+    <div class="ex-label">Ví dụ từ — Voorbeeldwoorden (nhấp để nghe)</div>
+    <div class="ex-row" style="--cc:${cat.color};--cc-bg:${cat.bg}">
+      ${exCards}
+    </div>
+
+    <div class="bottom-nav" style="--cc:${cat.color};--cc-bg:${cat.bg}">
+      <button class="nav-btn" ${si===0?'disabled':''} onclick="moveSnd(-1)">← Vorige</button>
+      <div class="prog-dots">${dots}</div>
+      <button class="nav-btn btn-next" style="background:${cat.color}"
+              onclick="moveSnd(1)">${isLast ? '✓ Klaar!' : 'Volgende →'}</button>
+    </div>`;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   ACTIONS
+   ══════════════════════════════════════════════════════════════ */
+function backToList() {
+  speechSynthesis.cancel();
+  renderList(state.catIdx);
+  goTo('s-list', 'back');
+}
+
+function playAll(slow) {
+  const cat = DATA.categories[state.catIdx];
+  const snd = cat.sounds[state.sndIdx];
+  const txt = snd.ex.map(e => e.w).join(slow ? '... ' : ', ');
+  speak(txt, slow ? 0.48 : 0.88);
+}
+
+function speakEx(evt, word) {
+  const card = evt.currentTarget;
+  speechSynthesis.cancel();
+  speak(word, 0.82, () => card.classList.remove('playing'));
+  card.classList.add('playing');
+}
+
+function moveSnd(delta) {
+  const cat = DATA.categories[state.catIdx];
+  const prev = state.sndIdx;
+  const next = prev + delta;
+
+  // Mark current as done when moving forward
+  if (delta > 0) setDone(cat.id, cat.sounds[prev].id);
+
+  if (next < 0 || next >= cat.sounds.length) {
+    if (delta > 0) {
+      // Finished all sounds in this category
+      popStars();
+      toast('🎉 Geweldig! Je hebt alle klanken geleerd!');
+      setTimeout(() => { renderHome(); goTo('s-home', 'back'); }, 1800);
+    }
+    return;
+  }
+
+  state.sndIdx = next;
+  renderDetail();
+}
+
+/* ══════════════════════════════════════════════════════════════
+   EFFECTS
+   ══════════════════════════════════════════════════════════════ */
+function toast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), 3200);
+}
+
+function popStars() {
+  const glyphs = ['⭐','🌟','✨','🎉','🏆','🌈','🎊'];
+  for (let i = 0; i < 10; i++) {
+    setTimeout(() => {
+      const s = document.createElement('div');
+      s.className = 'star-pop';
+      s.textContent = glyphs[i % glyphs.length];
+      s.style.cssText = `left:${15+Math.random()*70}vw;top:${20+Math.random()*50}vh`;
+      document.body.appendChild(s);
+      setTimeout(() => s.remove(), 950);
+    }, i * 90);
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   BOOT
+   ══════════════════════════════════════════════════════════════ */
+loadProg();
+initTTS();
+renderHome();
+</script>
+</body>
+</html>
