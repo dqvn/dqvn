@@ -106,6 +106,31 @@
     }
     .voice-test-btn:hover { opacity: .85; }
 
+    /* Volume section */
+    .vol-section {
+      padding: 11px 14px;
+      border-bottom: 1px solid #EDF2F7;
+    }
+    .vol-row { display: flex; align-items: center; gap: 8px; }
+    .vol-slider {
+      flex: 1; -webkit-appearance: none; appearance: none;
+      height: 4px; border-radius: 2px; outline: none; cursor: pointer;
+      background: linear-gradient(to right, #6B46C1 var(--vp,100%), #E2E8F0 var(--vp,100%));
+    }
+    .vol-slider::-webkit-slider-thumb {
+      -webkit-appearance: none; width: 14px; height: 14px;
+      border-radius: 50%; background: #6B46C1; cursor: pointer;
+      box-shadow: 0 1px 4px rgba(107,70,193,.35);
+    }
+    .vol-slider::-moz-range-thumb {
+      width: 14px; height: 14px; border-radius: 50%;
+      background: #6B46C1; cursor: pointer; border: none;
+    }
+    .vol-val {
+      font-size: 11px; font-weight: 700; color: var(--muted);
+      min-width: 34px; text-align: right; flex-shrink: 0;
+    }
+
     /* No-voice warning */
     .no-voice-banner {
       margin: 8px 14px; padding: 9px 12px;
@@ -402,6 +427,17 @@
           <option disabled selected>Laden…</option>
         </select>
         <button class="voice-test-btn" onclick="testVoice()">▶ Test</button>
+      </div>
+    </div>
+
+    <!-- Volume control -->
+    <div class="vol-section">
+      <div class="voice-label">🔉 Volume — Âm lượng</div>
+      <div class="vol-row">
+        <input type="range" id="vol-slider" class="vol-slider"
+               min="0" max="100" value="100"
+               oninput="setVolume(this.value)">
+        <span id="vol-val" class="vol-val">100%</span>
       </div>
     </div>
 
@@ -808,6 +844,24 @@ function isDone(catId, sndId)  { return !!progress[catId + ':' + sndId]; }
    TTS
 ══════════════════════════════════════════════════════ */
 let dutchVoice = null;
+let volume = 1.0;
+
+function initVolume() {
+  const saved = parseFloat(localStorage.getItem('klanken-vol'));
+  volume = isNaN(saved) ? 1.0 : Math.max(0, Math.min(1, saved));
+  const pct = Math.round(volume * 100);
+  const slider = document.getElementById('vol-slider');
+  const label  = document.getElementById('vol-val');
+  if (slider) { slider.value = pct; slider.style.setProperty('--vp', pct + '%'); }
+  if (label)  label.textContent = pct + '%';
+}
+
+function setVolume(val) {
+  volume = parseInt(val) / 100;
+  document.getElementById('vol-val').textContent = val + '%';
+  document.getElementById('vol-slider').style.setProperty('--vp', val + '%');
+  localStorage.setItem('klanken-vol', volume);
+}
 
 function initTTS() {
   const v = speechSynthesis.getVoices();
@@ -849,10 +903,11 @@ function testVoice() {
 function speak(text, rate, onEnd) {
   speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text);
-  u.lang  = 'nl-NL';
+  u.lang   = 'nl-NL';
   if (dutchVoice) u.voice = dutchVoice;
-  u.rate  = rate || 0.88;
-  u.pitch = 1.05;
+  u.rate   = rate || 0.88;
+  u.pitch  = 1.05;
+  u.volume = volume;
   setWave(true);
   u.onend = u.onerror = () => { setWave(false); if (onEnd) onEnd(); };
   speechSynthesis.speak(u);
@@ -869,9 +924,9 @@ function speakSequence(words, rate, gap) {
   function next() {
     if (i >= words.length) { setWave(false); return; }
     const u = new SpeechSynthesisUtterance(words[i++]);
-    u.lang = 'nl-NL';
+    u.lang   = 'nl-NL';
     if (dutchVoice) u.voice = dutchVoice;
-    u.rate = rate; u.pitch = 1.05;
+    u.rate   = rate; u.pitch = 1.05; u.volume = volume;
     u.onend  = () => { if (i >= words.length) setWave(false); else setTimeout(next, gap); };
     u.onerror = () => setWave(false);
     speechSynthesis.speak(u);
@@ -1103,6 +1158,7 @@ function popStars() {
 ══════════════════════════════════════════════════════ */
 loadProg();
 initTTS();
+initVolume();
 renderSoundNav();
 
 document.getElementById('mob-menu-btn').addEventListener('click', openMobileDrawer);
