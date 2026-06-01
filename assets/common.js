@@ -17,7 +17,7 @@ const APPS = [
   { id:'dialogues', label:'Dialogues',   icon:'💬', href:'dialogues.html',  desc:'Gespreks oefening met TTS',      group:'🎙️ Uitspreken',   color:'#0891b2' },
   { id:'grammar',   label:'Grammar',     icon:'📚', href:'grammar.html',    desc:'Grammatica regels & uitleg',     group:'📖 Grammatica',   color:'#b45309' },
   { id:'verbs',     label:'Verbs',       icon:'🔄', href:'verbs.html',      desc:'Nederlandse werkwoorden',        group:'📖 Grammatica',   color:'#dc2626' },
-  { id:'vanstart',  label:'VanStart',    icon:'🚀', href:'vanstart.html',   desc:'NT2 beginnerscursus',            group:'📖 Grammatica',   color:'#059669' },
+  { id:'vanstart',  label:'VanStart',    icon:'🚀', href:'vanstart.html',   desc:'NT2 beginnerscursus',            group:'📚 Woordenschat', color:'#059669' },
 ];
 
 function openLauncher() {
@@ -316,6 +316,34 @@ function _applyVoiceFromSelector() {
     }
 }
 
+/* ── Lazy-load puter.js (AI) only when a game actually opens ─────────────
+   Keeps the page fast: puter (~heavy CDN script) is never fetched unless
+   the user clicks Start Game or Flashcards Game.
+   loadPuter() returns a Promise that resolves once window.puter is ready.
+   ─────────────────────────────────────────────────────────────────────── */
+let _puterPromise = null;
+
+function loadPuter() {
+    if (window.puter) return Promise.resolve();       // already loaded
+    if (_puterPromise)  return _puterPromise;          // load in progress
+
+    // puter.js needs a CommonJS shim in plain browser environments
+    if (typeof require === 'undefined') {
+        window.require = mod => window[mod] || {};
+        if (typeof module === 'undefined') window.module = { exports: {} };
+    }
+
+    _puterPromise = new Promise((resolve, reject) => {
+        const s = document.createElement('script');
+        s.src = 'https://js.puter.com/v2/';
+        s.onload  = resolve;
+        s.onerror = () => reject(new Error('puter.js failed to load'));
+        document.head.appendChild(s);
+    });
+
+    return _puterPromise;
+}
+
 // Wire up selector change — save + apply + preview
 document.addEventListener('DOMContentLoaded', () => {
     const sel = document.getElementById('tts-voice-select');
@@ -327,6 +355,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     initAppLauncher();
+
+    // Intercept game buttons in capture phase so puter.js is loaded first.
+    // Once loaded we re-dispatch the click — game.js's bubble-phase handler
+    // then fires normally with window.puter already available.
+    ['start-button', 'flashcard-btn'].forEach(id => {
+        const btn = document.getElementById(id);
+        if (!btn) return;
+
+        btn.addEventListener('click', async e => {
+            if (window.puter) return;           // already loaded — let it through
+            e.stopImmediatePropagation();       // block game.js for now
+
+            const textEl = btn.querySelector('.button-text');
+            const orig   = textEl?.textContent ?? '';
+            if (textEl) textEl.textContent = 'Laden…';
+            btn.disabled = true;
+
+            try   { await loadPuter(); }
+            catch { /* puter unavailable — game.js will handle gracefully */ }
+
+            btn.disabled = false;
+            if (textEl) textEl.textContent = orig;
+            btn.click();                        // re-dispatch; puter now present
+        }, true /* capture phase, runs before game.js */);
+    });
 });
 
 /* Maximum ms to wait for a single utterance to finish before moving on.

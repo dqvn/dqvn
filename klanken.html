@@ -426,7 +426,6 @@
         <select id="voice-select" class="voice-select" onchange="selectVoice(this.value)">
           <option disabled selected>Laden…</option>
         </select>
-        <button class="voice-test-btn" onclick="testVoice()">▶ Test</button>
       </div>
     </div>
 
@@ -894,6 +893,7 @@ function populateVoices() {
 function selectVoice(name) {
   dutchVoice = speechSynthesis.getVoices().find(v => v.name === name) || dutchVoice;
   localStorage.setItem('klanken-voice', name);
+  speak('Hallo! Luister naar mijn stem.', 0.88);
 }
 
 function testVoice() {
