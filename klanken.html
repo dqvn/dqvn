@@ -337,6 +337,33 @@
       100% { transform: scale(1) translateY(-100px); opacity: 0; }
     }
 
+    /* ───── Voice selector ───── */
+    .voice-section {
+      background: var(--card); border-radius: var(--radius-s);
+      padding: 14px 16px; margin-bottom: 18px; box-shadow: var(--sh);
+    }
+    .voice-label {
+      font-size: 11px; font-weight: 800; text-transform: uppercase;
+      letter-spacing: 1.2px; color: var(--muted); margin-bottom: 8px;
+    }
+    .voice-row { display: flex; gap: 8px; align-items: center; }
+    .voice-select {
+      flex: 1; padding: 9px 12px; border-radius: var(--radius-s);
+      border: 2px solid #E2E8F0; font-family: 'Nunito', sans-serif;
+      font-size: 13px; font-weight: 600; background: var(--bg);
+      color: var(--text); cursor: pointer; outline: none;
+      transition: border-color .2s;
+    }
+    .voice-select:focus { border-color: #6B46C1; }
+    .voice-test-btn {
+      flex-shrink: 0; padding: 9px 16px; border-radius: var(--radius-s);
+      border: none; font-family: 'Nunito', sans-serif;
+      font-size: 14px; font-weight: 800; cursor: pointer;
+      background: #6B46C1; color: #fff; box-shadow: var(--sh);
+      transition: transform .15s, box-shadow .15s;
+    }
+    .voice-test-btn:hover { transform: translateY(-1px); box-shadow: var(--sh-h); }
+
     /* ───── Responsive ───── */
     @media (max-width: 380px) {
       .cat-grid { gap: 10px; }
@@ -360,6 +387,16 @@
 
     <div id="no-voice" class="no-voice-banner">
       ⚠️ Geen Nederlandse stem gevonden — probeer Chrome op Windows of Android voor het beste resultaat.
+    </div>
+
+    <div class="voice-section">
+      <div class="voice-label">🔊 Stem keuze — Chọn giọng đọc</div>
+      <div class="voice-row">
+        <select id="voice-select" class="voice-select" onchange="selectVoice(this.value)">
+          <option disabled selected>Laden…</option>
+        </select>
+        <button class="voice-test-btn" onclick="testVoice()">▶ Test</button>
+      </div>
     </div>
 
     <div id="cat-grid" class="cat-grid"></div>
@@ -579,16 +616,46 @@ let dutchVoice = null;
 let ttsActive   = false;
 
 function initTTS() {
-  function pick(voices) {
-    return voices.find(v => v.lang === 'nl-NL') ||
-           voices.find(v => v.lang.startsWith('nl')) || null;
-  }
   const v = speechSynthesis.getVoices();
-  if (v.length) dutchVoice = pick(v);
-  speechSynthesis.onvoiceschanged = () => {
-    dutchVoice = pick(speechSynthesis.getVoices());
-    if (!dutchVoice) document.getElementById('no-voice').classList.add('show');
-  };
+  if (v.length) populateVoices();
+  speechSynthesis.onvoiceschanged = populateVoices;
+}
+
+function populateVoices() {
+  const all   = speechSynthesis.getVoices();
+  const dutch = all.filter(v => v.lang.startsWith('nl'));
+  const list  = dutch.length ? dutch : all;   // fallback to all if no Dutch found
+
+  const saved = localStorage.getItem('klanken-voice');
+  const sel   = document.getElementById('voice-select');
+
+  if (!list.length) {
+    sel.innerHTML = '<option disabled>Geen stemmen gevonden</option>';
+    document.getElementById('no-voice').classList.add('show');
+    return;
+  }
+
+  sel.innerHTML = list.map(v =>
+    `<option value="${v.name}">${v.name} (${v.lang})</option>`
+  ).join('');
+
+  // Restore saved choice, or pick best Dutch default
+  const preferred = list.find(v => v.name === saved)
+    || list.find(v => v.lang === 'nl-NL')
+    || list[0];
+  dutchVoice = preferred;
+  sel.value  = preferred.name;
+
+  document.getElementById('no-voice').classList.toggle('show', dutch.length === 0);
+}
+
+function selectVoice(name) {
+  dutchVoice = speechSynthesis.getVoices().find(v => v.name === name) || dutchVoice;
+  localStorage.setItem('klanken-voice', name);
+}
+
+function testVoice() {
+  speak('Hallo! Ik oefen Nederlandse klanken. Luister goed!', 0.88);
 }
 
 function speak(text, rate, onEnd) {
@@ -795,10 +862,32 @@ function backToList() {
 }
 
 function playAll(slow) {
-  const cat = DATA.categories[state.catIdx];
-  const snd = cat.sounds[state.sndIdx];
-  const txt = snd.ex.map(e => e.w).join(slow ? '... ' : ', ');
-  speak(txt, slow ? 0.48 : 0.88);
+  const snd = DATA.categories[state.catIdx].sounds[state.sndIdx];
+  const primary = snd.spell.split(' / ')[0].trim();
+  if (!slow) {
+    speak(primary, 0.88);
+  } else {
+    // Speak phoneme then each example word, 1.5 s gap between each
+    speakSequence([primary, ...snd.ex.map(e => e.w)], 0.5, 1500);
+  }
+}
+
+function speakSequence(words, rate, gap) {
+  speechSynthesis.cancel();
+  setWave(true);
+  let i = 0;
+  function next() {
+    if (i >= words.length) { setWave(false); return; }
+    const u = new SpeechSynthesisUtterance(words[i++]);
+    u.lang = 'nl-NL';
+    if (dutchVoice) u.voice = dutchVoice;
+    u.rate = rate;
+    u.pitch = 1.05;
+    u.onend  = () => { if (i >= words.length) setWave(false); else setTimeout(next, gap); };
+    u.onerror = () => setWave(false);
+    speechSynthesis.speak(u);
+  }
+  next();
 }
 
 function speakEx(evt, word) {
