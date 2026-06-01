@@ -5,6 +5,65 @@
    Page-specific config is injected via initPage(config).
    ══════════════════════════════════════════════════════ */
 
+/* ══════════════════════════════════════════════════════
+   APP LAUNCHER CONFIG
+   To add a new tool: append one object here. Nothing else.
+   Fields: id, label, icon, href, desc, group, color
+   ══════════════════════════════════════════════════════ */
+const APPS = [
+  { id:'vocab',     label:'Vocabulaire', icon:'📖', href:'index.html',      desc:'Woordenlijst & flashcards',      group:'📚 Woordenschat', color:'#2563eb' },
+  { id:'kids',      label:'Kids',        icon:'🧒', href:'kids.html',       desc:'Kinderen woordenschat',           group:'📚 Woordenschat', color:'#16a34a' },
+  { id:'klanken',   label:'Klanken',     icon:'🎵', href:'klanken.html',    desc:'Nederlandse uitspraak leren',    group:'🎙️ Uitspreken',   color:'#7c3aed' },
+  { id:'dialogues', label:'Dialogues',   icon:'💬', href:'dialogues.html',  desc:'Gespreks oefening met TTS',      group:'🎙️ Uitspreken',   color:'#0891b2' },
+  { id:'grammar',   label:'Grammar',     icon:'📚', href:'grammar.html',    desc:'Grammatica regels & uitleg',     group:'📖 Grammatica',   color:'#b45309' },
+  { id:'verbs',     label:'Verbs',       icon:'🔄', href:'verbs.html',      desc:'Nederlandse werkwoorden',        group:'📖 Grammatica',   color:'#dc2626' },
+  { id:'vanstart',  label:'VanStart',    icon:'🚀', href:'vanstart.html',   desc:'NT2 beginnerscursus',            group:'📖 Grammatica',   color:'#059669' },
+];
+
+function openLauncher() {
+  const el = document.getElementById('app-launcher');
+  if (!el) return;
+  el.classList.remove('al-hidden');
+  document.body.style.overflow = 'hidden';
+  el.querySelector('.al-close-btn')?.focus();
+}
+function closeLauncher() {
+  const el = document.getElementById('app-launcher');
+  if (!el) return;
+  el.classList.add('al-hidden');
+  document.body.style.overflow = '';
+}
+
+function initAppLauncher() {
+  const body = document.getElementById('al-body');
+  if (!body) return;
+
+  const page = location.pathname.split('/').pop() || 'index.html';
+
+  /* Group apps by their 'group' key, preserving insertion order */
+  const groups = {};
+  APPS.forEach(app => { (groups[app.group] ??= []).push(app); });
+
+  body.innerHTML = Object.entries(groups).map(([grp, apps]) => `
+    <div class="al-group-label">${grp}</div>
+    <div class="al-cards">
+      ${apps.map(app => `
+        <a href="${app.href}" class="al-card${page === app.href ? ' al-current' : ''}"
+           style="--ac:${app.color}" title="${app.desc}">
+          <span class="al-card-icon">${app.icon}</span>
+          <div class="al-card-name">${app.label}</div>
+          <div class="al-card-desc">${app.desc}</div>
+        </a>`).join('')}
+    </div>`).join('');
+
+  /* Sync button count badge */
+  const badge = document.querySelector('.lm-launcher-count');
+  if (badge) badge.textContent = APPS.length;
+
+  /* Close on Escape */
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLauncher(); }, { once: false });
+}
+
 /* ── TTS constants ── */
 const TTSName        = 'Google Nederlands';
 const TTSLang        = 'nl-NL';
@@ -260,12 +319,14 @@ function _applyVoiceFromSelector() {
 // Wire up selector change — save + apply + preview
 document.addEventListener('DOMContentLoaded', () => {
     const sel = document.getElementById('tts-voice-select');
-    if (!sel) return;
-    sel.addEventListener('change', () => {
-        localStorage.setItem(TTS_VOICE_KEY, sel.value);
-        _applyVoiceFromSelector();
-        speakText('Hallo, dit is een test.');
-    });
+    if (sel) {
+        sel.addEventListener('change', () => {
+            localStorage.setItem(TTS_VOICE_KEY, sel.value);
+            _applyVoiceFromSelector();
+            speakText('Hallo, dit is een test.');
+        });
+    }
+    initAppLauncher();
 });
 
 /* Maximum ms to wait for a single utterance to finish before moving on.
