@@ -77,7 +77,17 @@ async function generateStoryFromPuter(dataObjects, questionDiv) {
                 GEEF ALLEEN DE TEKST TERUG. GEEN MARKDOWN, GEEN TITEL, GEEN UITLEG EN GEEN QUOTES. Then end with translate the story to English and put in [ .. ].`,
             { model: 'gpt-5.2' }
         );
-        questionDiv.textContent = response.message.content;
+        const raw = response.message.content;
+        const sep = raw.indexOf('[');
+        if (sep > -1) {
+            questionDiv.innerHTML = '';
+            questionDiv.appendChild(document.createTextNode(raw.slice(0, sep).trimEnd()));
+            questionDiv.appendChild(document.createElement('br'));
+            questionDiv.appendChild(document.createElement('br'));
+            questionDiv.appendChild(document.createTextNode(raw.slice(sep)));
+        } else {
+            questionDiv.textContent = raw;
+        }
     } catch (error) {
         console.error('[Game] AI story error:', error);
     }
