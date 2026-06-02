@@ -76,6 +76,20 @@ let _intervalTime = 12000;
 let _fileNames    = [];
 let _groupTitles  = new Map();
 
+/* ── Volume ── */
+const VOL_KEY = 'nl_vocab_vol';
+
+function _initVolume() {
+    try {
+        const saved = JSON.parse(localStorage.getItem(VOL_KEY));
+        if (saved && typeof saved.v === 'number') {
+            volumeControl.value = saved.v;
+            const lbl = document.getElementById('volume-value');
+            if (lbl) lbl.textContent = `${saved.v}%`;
+        }
+    } catch {}
+}
+
 /* ── Vocabulary font-size control ── */
 const VOCAB_FS_STEPS  = [14, 18, 23, 28, 34, 42];
 const VOCAB_FS_LABELS = ['Tiny', 'Small', 'Normal', 'Large', 'X-Large', 'Huge'];
@@ -113,7 +127,9 @@ let currentInterval       = null;
    ══════════════════════════════════════════════════════ */
 
 volumeControl.addEventListener('input', () => {
-    document.getElementById('volume-value').textContent = `${volumeControl.value}%`;
+    const val = parseInt(volumeControl.value, 10);
+    document.getElementById('volume-value').textContent = `${val}%`;
+    try { localStorage.setItem(VOL_KEY, JSON.stringify({ v: val, t: Date.now() })); } catch {}
 });
 
 playStopButton.addEventListener('click', () => {
@@ -348,6 +364,7 @@ function loadPuter() {
 
 // Wire up selector change — save + apply + preview
 document.addEventListener('DOMContentLoaded', () => {
+    _initVolume();
     const sel = document.getElementById('tts-voice-select');
     if (sel) {
         sel.addEventListener('change', () => {
