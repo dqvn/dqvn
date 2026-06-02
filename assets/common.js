@@ -12,12 +12,13 @@
    ══════════════════════════════════════════════════════ */
 const APPS = [
   { id:'vocab',     label:'Vocabulaire', icon:'📖', href:'startnl.html',      desc:'Woordenlijst & flashcards',      group:'📚 Woordenschat', color:'#2563eb' },
-  { id:'kids',      label:'Kids',        icon:'🧒', href:'kids.html',       desc:'Kinderen woordenschat',           group:'📚 Woordenschat', color:'#16a34a' },
-  { id:'klanken',   label:'Klanken',     icon:'🎵', href:'klanken.html',    desc:'Nederlandse uitspraak leren',    group:'🎙️ Uitspreken',   color:'#7c3aed' },
-  { id:'dialogues', label:'Dialogues',   icon:'💬', href:'dialogues.html',  desc:'Gespreks oefening met TTS',      group:'🎙️ Uitspreken',   color:'#0891b2' },
-  { id:'grammar',   label:'Grammar',     icon:'📚', href:'grammar.html',    desc:'Grammatica regels & uitleg',     group:'📖 Grammatica',   color:'#b45309' },
-  { id:'verbs',     label:'Verbs',       icon:'🔄', href:'verbs.html',      desc:'Nederlandse werkwoorden',        group:'📖 Grammatica',   color:'#dc2626' },
-  { id:'vanstart',  label:'VanStart',    icon:'🚀', href:'vanstart.html',   desc:'NT2 beginnerscursus',            group:'📚 Woordenschat', color:'#059669' },
+  { id:'vanstart',  label:'VanStart',    icon:'🚀', href:'vanstart.html',     desc:'NT2 beginnerscursus',            group:'📚 Woordenschat', color:'#059669' },
+  { id:'kids',      label:'Kids',        icon:'🧒', href:'kids.html',         desc:'Kinderen woordenschat',          group:'📚 Woordenschat', color:'#16a34a' },
+  { id:'stories',   label:'Verhalen',    icon:'📕', href:'stories.html',      desc:'Leer door verhalen te lezen',    group:'📚 Woordenschat', color:'#6A67CE' },
+  { id:'klanken',   label:'Klanken',     icon:'🎵', href:'klanken.html',      desc:'Nederlandse uitspraak leren',   group:'🎙️ Uitspreken',   color:'#7c3aed' },
+  { id:'dialogues', label:'Dialogues',   icon:'💬', href:'dialogues.html',    desc:'Gespreks oefening met TTS',     group:'🎙️ Uitspreken',   color:'#0891b2' },
+  { id:'grammar',   label:'Grammar',     icon:'📚', href:'grammar.html',      desc:'Grammatica regels & uitleg',    group:'📖 Grammatica',   color:'#b45309' },
+  { id:'verbs',     label:'Verbs',       icon:'🔄', href:'verbs.html',        desc:'Nederlandse werkwoorden',       group:'📖 Grammatica',   color:'#dc2626' },
 ];
 
 function openLauncher() {
