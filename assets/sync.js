@@ -222,12 +222,19 @@ async function syncNow(silent = false) {
       }
     }
 
-    // Apply synced volume to the slider if another device had a different value
+    // Apply synced volume to whichever slider exists on this page
     if (merged.vol && typeof merged.vol.v === 'number') {
-      const slider = document.getElementById('volume-control');
-      const label  = document.getElementById('volume-value');
-      if (slider) slider.value = merged.vol.v;
-      if (label)  label.textContent = `${merged.vol.v}%`;
+      const v = merged.vol.v;
+      // index.html / vanstart.html / 4000.html
+      const s1 = document.getElementById('volume-control');
+      const l1 = document.getElementById('volume-value');
+      if (s1) s1.value = v;
+      if (l1) l1.textContent = `${v}%`;
+      // klanken.html / dialogues.html
+      const s2 = document.getElementById('vol-slider');
+      const l2 = document.getElementById('vol-val');
+      if (s2) { s2.value = v; s2.style.setProperty('--vp', v + '%'); }
+      if (l2) l2.textContent = `${v}%`;
     }
 
     // Refresh word badges if function is available

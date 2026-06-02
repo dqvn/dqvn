@@ -21,11 +21,21 @@ function isDone(catId, sndId)  { return !!progress[catId + ':' + sndId]; }
 
 /* ── Volume ── */
 let volume = 1.0;
+const _VOL_KEY = 'nl_vocab_vol'; // shared key used by all pages
 
 function initVolume() {
-  const saved = parseFloat(localStorage.getItem('klanken-vol'));
-  volume = isNaN(saved) ? 1.0 : Math.max(0, Math.min(1, saved));
-  const pct    = Math.round(volume * 100);
+  // Prefer shared key; fall back to legacy klanken-vol for existing users
+  let pct;
+  try {
+    const shared = JSON.parse(localStorage.getItem(_VOL_KEY));
+    if (shared && typeof shared.v === 'number') {
+      pct = shared.v;
+    } else {
+      const legacy = parseFloat(localStorage.getItem('klanken-vol'));
+      pct = isNaN(legacy) ? 100 : Math.round(legacy * 100);
+    }
+  } catch { pct = 100; }
+  volume = pct / 100;
   const slider = document.getElementById('vol-slider');
   const label  = document.getElementById('vol-val');
   if (slider) { slider.value = pct; slider.style.setProperty('--vp', pct + '%'); }
@@ -36,7 +46,8 @@ function setVolume(val) {
   volume = parseInt(val) / 100;
   document.getElementById('vol-val').textContent = val + '%';
   document.getElementById('vol-slider').style.setProperty('--vp', val + '%');
-  localStorage.setItem('klanken-vol', volume);
+  localStorage.setItem('klanken-vol', volume); // legacy compat
+  try { localStorage.setItem(_VOL_KEY, JSON.stringify({ v: parseInt(val), t: Date.now() })); } catch {}
 }
 
 /* ── TTS ── */
