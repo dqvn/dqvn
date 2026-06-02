@@ -1,133 +1,833 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="nl">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Learn Dutch Words</title>
-  <link rel="stylesheet" type="text/css" href="assets/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital@0;1&family=Caveat:wght@500&display=swap" rel="stylesheet">
+  <title>🇳🇱 Leer Nederlands – Portaal</title>
   <link rel="icon" type="image/x-icon" href="assets/dutch.ico">
   <link rel="stylesheet" href="assets/sync.css">
-  <script src="assets/NoSleep.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap" rel="stylesheet">
+
+  <style>
+  /* ═══════════════════════════════════════════════════
+     PORTAL — Dutch Orange / Earth tones theme
+  ═══════════════════════════════════════════════════ */
+  :root {
+    --bg:            #fef7ed;
+    --surface:       #ffffff;
+    --surface-2:     #fff8f0;
+    --border:        #fed7aa;
+    --border-soft:   #fde8c8;
+    --accent:        #ea580c;
+    --accent-h:      #c2410c;
+    --accent-glow:   rgba(234,88,12,.18);
+    --green:         #16a34a;
+    --red:           #dc2626;
+    --blue:          #2563eb;
+    --purple:        #7c3aed;
+    --cyan:          #0891b2;
+    --amber:         #d97706;
+    --teal:          #0d9488;
+    --text:          #1c1917;
+    --text-2:        #57534e;
+    --text-3:        #a8a29e;
+    --shadow-xs:     0 1px 2px rgba(0,0,0,.06);
+    --shadow-sm:     0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.05);
+    --shadow:        0 4px 14px rgba(0,0,0,.08), 0 2px 6px rgba(0,0,0,.04);
+    --shadow-md:     0 8px 28px rgba(0,0,0,.10), 0 3px 8px rgba(0,0,0,.05);
+    --r:             14px;
+    --r-sm:          8px;
+    --r-pill:        999px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100dvh;
+    font-size: 15px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ══════════════════════════
+     STICKY HEADER
+  ══════════════════════════ */
+  #portal-header {
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    height: 62px;
+    padding: 0 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(254,247,237,.88);
+    backdrop-filter: blur(14px) saturate(1.4);
+    -webkit-backdrop-filter: blur(14px) saturate(1.4);
+    border-bottom: 1px solid var(--border-soft);
+  }
+
+  .hdr-brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    text-decoration: none;
+    color: inherit;
+  }
+  .hdr-emblem {
+    width: 38px; height: 38px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #AE1C28 0%, #AE1C28 33%, #fff 33%, #fff 66%, #21468B 66%);
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.3rem;
+  }
+  .hdr-titles { display: flex; flex-direction: column; gap: 0; }
+  .hdr-name {
+    font-size: .95rem;
+    font-weight: 800;
+    color: var(--text);
+    letter-spacing: -.3px;
+    line-height: 1.2;
+  }
+  .hdr-sub {
+    font-size: .6rem;
+    color: var(--text-3);
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  /* Sync widget in header — compact user pill */
+  #portal-header #sync-section {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    flex-shrink: 0;
+  }
+  #portal-header .sync-card {
+    padding: 5px 13px 5px 6px !important;
+    border-radius: var(--r-pill) !important;
+    background: var(--surface) !important;
+    border: 1px solid var(--border) !important;
+    box-shadow: var(--shadow-sm) !important;
+    gap: 8px !important;
+    transition: box-shadow .15s !important;
+    cursor: default;
+  }
+  #portal-header .sync-card:hover { box-shadow: var(--shadow) !important; }
+  #portal-header .sync-avatar {
+    width: 28px !important; height: 28px !important;
+    border: none !important; box-shadow: none !important;
+  }
+  #portal-header .sync-name   { font-size: .82rem !important; color: var(--text) !important; font-weight: 600 !important; }
+  #portal-header .sync-status { display: none !important; }
+  #portal-header .sync-menu-btn { color: var(--text-3) !important; }
+  #portal-header .sync-menu-btn:hover { background: var(--border-soft) !important; color: var(--text) !important; }
+  #portal-header .sync-signin-row { padding: 0 !important; }
+  #portal-header .sync-gis-wrap   { min-height: 38px !important; }
+
+  /* ══════════════════════════
+     HERO BAND
+  ══════════════════════════ */
+  #hero {
+    position: relative;
+    padding: 52px 28px 44px;
+    background: linear-gradient(130deg, #b45309 0%, #ea580c 38%, #f97316 68%, #fbbf24 100%);
+    overflow: hidden;
+  }
+  /* Subtle radial light */
+  #hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 55% 90% at 95% 50%, rgba(255,255,255,.09) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 55% at 5%  85%, rgba(0,0,0,.06)       0%, transparent 65%);
+    pointer-events: none;
+  }
+  /* Large 'NL' watermark */
+  #hero::after {
+    content: 'NL';
+    position: absolute;
+    right: -12px; top: -18px;
+    font-size: 11rem;
+    font-weight: 900;
+    color: rgba(255,255,255,.055);
+    letter-spacing: -6px;
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+    font-family: 'Inter', sans-serif;
+  }
+  .hero-inner {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .hero-greeting {
+    font-size: clamp(1.4rem, 3.5vw, 2.1rem);
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: -.5px;
+    line-height: 1.15;
+    text-shadow: 0 2px 10px rgba(0,0,0,.12);
+    margin-bottom: 5px;
+  }
+  .hero-sub {
+    font-size: .9rem;
+    color: rgba(255,255,255,.78);
+    font-weight: 500;
+    margin-bottom: 30px;
+    max-width: 420px;
+  }
+
+  /* Stats strip */
+  .stats-strip {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .stat-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 17px;
+    background: rgba(255,255,255,.17);
+    border: 1px solid rgba(255,255,255,.28);
+    border-radius: var(--r-pill);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: background .15s;
+    cursor: default;
+  }
+  .stat-pill:hover { background: rgba(255,255,255,.26); }
+  .stat-ico  { font-size: 1rem; line-height: 1; }
+  .stat-val  { font-size: 1.1rem; font-weight: 800; color: #fff; line-height: 1; font-variant-numeric: tabular-nums; }
+  .stat-lbl  { font-size: .72rem; color: rgba(255,255,255,.78); font-weight: 500; }
+
+  /* ══════════════════════════
+     MAIN WRAPPER
+  ══════════════════════════ */
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 28px 80px;
+  }
+
+  /* Section header row */
+  .sec-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 44px 0 20px;
+  }
+  .sec-head h2 {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--text);
+    letter-spacing: -.2px;
+    white-space: nowrap;
+  }
+  .sec-head::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--border), transparent);
+  }
+  .sec-badge {
+    font-size: .65rem;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: var(--r-pill);
+    background: var(--border-soft);
+    color: var(--text-3);
+    white-space: nowrap;
+  }
+
+  /* ══════════════════════════
+     PROGRESS CARDS
+  ══════════════════════════ */
+  .prog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 14px;
+  }
+  .prog-card {
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--r);
+    padding: 18px 20px 16px;
+    box-shadow: var(--shadow-sm);
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: box-shadow .2s, transform .18s;
+  }
+  .prog-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+  .prog-card-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 13px;
+  }
+  .prog-icon-wrap {
+    width: 36px; height: 36px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+  .prog-title { flex: 1; font-size: .88rem; font-weight: 700; color: var(--text); }
+  .prog-pct   { font-size: .78rem; font-weight: 700; color: var(--text-2); font-variant-numeric: tabular-nums; }
+  .prog-track {
+    height: 7px;
+    background: var(--border-soft);
+    border-radius: var(--r-pill);
+    overflow: hidden;
+    margin-bottom: 9px;
+  }
+  .prog-fill {
+    height: 100%;
+    border-radius: var(--r-pill);
+    width: 0%;
+    transition: width .7s cubic-bezier(.4, 0, .2, 1);
+  }
+  .prog-detail { font-size: .73rem; color: var(--text-3); line-height: 1.4; }
+
+  /* ══════════════════════════
+     TOOLS GRID
+  ══════════════════════════ */
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+  }
+  .tool-card {
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--r);
+    padding: 22px 14px 18px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 7px;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow .2s, transform .18s, border-color .2s;
+  }
+  .tool-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--tc, var(--accent));
+    transition: height .2s;
+  }
+  .tool-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); border-color: var(--tc, var(--border)); }
+  .tool-card:hover::before { height: 5px; }
+  .tool-card:active { transform: translateY(-1px); }
+  .tc-icon { font-size: 2rem; line-height: 1; margin-bottom: 3px; }
+  .tc-name  { font-size: .88rem; font-weight: 700; color: var(--text); line-height: 1.2; }
+  .tc-desc  { font-size: .67rem; color: var(--text-3); font-weight: 500; line-height: 1.35; }
+  .tc-pill  {
+    font-size: .63rem; font-weight: 700;
+    padding: 2px 9px;
+    border-radius: var(--r-pill);
+    margin-top: 1px;
+  }
+  .tc-pill-active { background: #dcfce7; color: #15803d; }
+  .tc-pill-new    { background: #e0f2fe; color: #0369a1; }
+
+  /* ══════════════════════════
+     SETTINGS ROW
+  ══════════════════════════ */
+  .settings-panel {
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--r);
+    box-shadow: var(--shadow-sm);
+    padding: 18px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .setting-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .setting-label {
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--text-2);
+    min-width: 90px;
+  }
+  #vol-slider {
+    width: 120px;
+    accent-color: var(--accent);
+    cursor: pointer;
+  }
+  #vol-val {
+    font-size: .78rem;
+    color: var(--text-3);
+    min-width: 35px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ══════════════════════════
+     COMING SOON
+  ══════════════════════════ */
+  .coming-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+    gap: 12px;
+  }
+  .coming-card {
+    background: var(--surface-2);
+    border: 1.5px dashed var(--border);
+    border-radius: var(--r);
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    opacity: .65;
+    transition: opacity .2s;
+  }
+  .coming-card:hover { opacity: .85; }
+  .coming-ico {
+    width: 40px; height: 40px;
+    background: var(--border-soft);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+  }
+  .coming-info { display: flex; flex-direction: column; gap: 4px; }
+  .coming-name { font-size: .85rem; font-weight: 700; color: var(--text-2); }
+  .coming-tag  {
+    font-size: .62rem; font-weight: 700;
+    background: var(--border);
+    color: var(--text-3);
+    padding: 2px 8px;
+    border-radius: var(--r-pill);
+    width: fit-content;
+    letter-spacing: .3px;
+  }
+
+  /* ══════════════════════════
+     PORTAL FOOTER
+  ══════════════════════════ */
+  #portal-footer {
+    border-top: 1px solid var(--border-soft);
+    padding: 22px 28px max(22px, env(safe-area-inset-bottom, 0px));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: .72rem;
+    color: var(--text-3);
+  }
+  #portal-footer a { color: var(--accent); text-decoration: none; }
+  #portal-footer a:hover { text-decoration: underline; }
+  .ft-flag { font-size: 1rem; }
+
+  /* ══════════════════════════
+     SCROLL REVEAL (CSS only)
+  ══════════════════════════ */
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity .45s ease, transform .45s ease;
+  }
+  .reveal.visible { opacity: 1; transform: none; }
+
+  /* ══════════════════════════
+     RESPONSIVE
+  ══════════════════════════ */
+  @media (max-width: 720px) {
+    #portal-header { padding: 0 16px; height: 56px; }
+    .hdr-sub { display: none; }
+    #hero { padding: 38px 16px 34px; }
+    #hero::after { font-size: 7.5rem; right: -8px; }
+    main { padding: 0 16px 60px; }
+    .sec-head { margin: 34px 0 16px; }
+    .tools-grid { grid-template-columns: repeat(2, 1fr); }
+    .coming-grid { grid-template-columns: repeat(2, 1fr); }
+    .stat-lbl { display: none; }
+    .stat-pill { padding: 8px 12px; }
+  }
+  @media (max-width: 420px) {
+    .tools-grid { grid-template-columns: repeat(2, 1fr); }
+    .coming-grid { grid-template-columns: 1fr 1fr; }
+    .prog-grid   { grid-template-columns: 1fr; }
+    .hero-greeting { font-size: 1.3rem; }
+  }
+  </style>
 </head>
-
 <body>
-  <header>
-    <h1>Learn Dutch Words</h1>
-    <h3 id="chapter"></h3>
-    <div class="hdr-right">
-      <button class="hdr-fs-btn" id="lm-fs-dec" aria-label="Decrease text size">A−</button>
-      <button class="hdr-fs-btn" id="lm-fs-inc" aria-label="Increase text size">A+</button>
-      <button id="hide-meaning-btn" class="hdr-toggle-btn" title="Hide/show meanings">👁️</button>
-    </div>
-  </header>
-  <!-- flashcard-popup is injected by flashcard.js -->
 
-  <div id="popup" style="display: none;">
-    <button id="game-close-btn" title="Close game">✕</button>
-    <div id="game-container">
-      <h1>Dutch-English Vocabulary Game</h1>
-      <div id="progress" class="sentence-example"></div>
-      <div id="sentence" class="sentence-example"></div>
-      <div id="question"></div>
-      <div id="game-logic-wrapper">
-        <div id="options"></div>
-        <div id="result"></div>
+  <!-- ══ STICKY HEADER ══ -->
+  <header id="portal-header">
+    <a class="hdr-brand" href="index.html" aria-label="Leer Nederlands Portaal">
+      <div class="hdr-emblem" aria-hidden="true">🌷</div>
+      <div class="hdr-titles">
+        <span class="hdr-name">Leer Nederlands</span>
+        <span class="hdr-sub">Leerportaal</span>
       </div>
-    </div>
-  </div>
-  <div class="container div-with-scrollbar">
-    <button id="toggle-menu-button" class="toggle-menu-button">
-      <span class="icon">&#9776;</span> </button>
-    <div class="left-menu">
-      <div class="spacer">
-        <h4>Setting:</h4>
-        <div id="tts-name"></div>
-        <select id="tts-voice-select"></select>
-        <!-- add Volumn & Play button -->
-        <div class="volume-control-container">
-          <button class="play-stop-button" id="playStopButton">
-            <div class="icon"></div>
-            <span>Play</span>
-          </button>
-          <input type="range" id="volume-control" min="0" max="100" value="50">
-          <span id="volume-value">50%</span>
-        </div>
-        <!-- Add simple game -->
-        <button id="start-button" class="start-button">
-          <span class="button-text">Start Game</span>
-          <i class="fas fa-play"></i>
-        </button>
-        <span></span>
-        <!-- Flashcard game -->
-        <button id="flashcard-btn" class="start-button">
-          <span class="button-text">Flashcards Game</span>
-        </button>
-      </div>
-      <span></span>
-      <div class="spacer">
-        <button id="lm-launcher-btn" onclick="openLauncher()" title="Open all tools">
-          ⊞ &nbsp;Alle tools
-          <span class="lm-launcher-count">7</span>
-        </button>
-        <h4>Dutch Courses:</h4>
-        <div class="file-container div-with-scrollbar">
-          <ul id="file-list">
-            <!-- file list will be inserted here -->
-          </ul>
-        </div>
-      </div>
-
-    <!-- Cloud sync (populated by sync.js) -->
+    </a>
+    <!-- Auth / sync widget — populated by sync.js -->
     <div id="sync-section"></div>
+  </header>
 
-    <!-- Left-menu footer -->
-    <footer id="lm-footer">
-      <div class="lm-ft-avatar">QN</div>
-      <div class="lm-ft-info">
-        <span class="lm-ft-name">Quang, Nguyen Dang</span>
-        <a class="lm-ft-email" href="mailto:dqvn2002@gmail.com">dqvn2002@gmail.com</a>
+  <!-- ══ HERO ══ -->
+  <section id="hero">
+    <div class="hero-inner">
+      <h1 class="hero-greeting" id="portal-greeting">Goedendag! 👋</h1>
+      <p  class="hero-sub"      id="portal-sub">Welkom bij jouw Nederlands leerportaal.</p>
+      <div class="stats-strip">
+        <div class="stat-pill" title="Dagelijkse reeks">
+          <span class="stat-ico">🔥</span>
+          <span class="stat-val" id="sv-streak">—</span>
+          <span class="stat-lbl">dagen reeks</span>
+        </div>
+        <div class="stat-pill" title="Kaarten gezien">
+          <span class="stat-ico">📚</span>
+          <span class="stat-val" id="sv-cards">—</span>
+          <span class="stat-lbl">kaarten gezien</span>
+        </div>
+        <div class="stat-pill" title="Klanken geoefend">
+          <span class="stat-ico">🎵</span>
+          <span class="stat-val" id="sv-klanken">—</span>
+          <span class="stat-lbl">klanken</span>
+        </div>
+        <div class="stat-pill" title="Werkwoorden geleerd">
+          <span class="stat-ico">🔄</span>
+          <span class="stat-val" id="sv-verbs">—</span>
+          <span class="stat-lbl">werkwoorden</span>
+        </div>
       </div>
-      <span class="lm-ft-year" id="lm-year"></span>
-    </footer>
+    </div>
+  </section>
+
+  <!-- ══ MAIN ══ -->
+  <main>
+
+    <!-- ── Progress ── -->
+    <div class="sec-head reveal">
+      <h2>Voortgang</h2>
+    </div>
+    <div class="prog-grid reveal" id="prog-grid">
+      <!-- filled by renderDashboard() -->
     </div>
 
-    <div class="table-container div-with-scrollbar">
-      <table id="word-list">
-        <thead>
-          <tr>
-            <th>No.</th>
-            <th>Dutch</th>
-            <th>English</th>
-            <th>Sample</th>
-            <th>Vietnamese</th>
-          </tr>
-        </thead>
-        <tbody id="word-list-body">
-          <!-- data will be inserted here -->
-        </tbody>
-      </table>
+    <!-- ── Tools ── -->
+    <div class="sec-head reveal">
+      <h2>Leertools</h2>
+      <span class="sec-badge">7 tools</span>
     </div>
-  </div>
-  <!-- App Launcher overlay (rendered by initAppLauncher in common.js) -->
-  <div id="app-launcher" class="al-hidden" role="dialog" aria-modal="true" aria-label="Alle tools">
-    <div class="al-backdrop" onclick="closeLauncher()"></div>
-    <div class="al-panel">
-      <div class="al-header">
-        <span>🇳🇱 Dutch Learning Tools</span>
-        <button class="al-close-btn" onclick="closeLauncher()" aria-label="Sluiten">✕</button>
+    <div class="tools-grid reveal" id="tools-grid">
+      <!-- filled by renderTools() -->
+    </div>
+
+    <!-- ── Settings ── -->
+    <div class="sec-head reveal">
+      <h2>Instellingen</h2>
+    </div>
+    <div class="settings-panel reveal">
+      <div class="setting-row">
+        <span class="setting-label">🔊 Volume TTS</span>
+        <input type="range" id="vol-slider" min="0" max="100" value="70">
+        <span id="vol-val">70%</span>
       </div>
-      <div class="al-body" id="al-body"></div>
     </div>
-  </div>
 
-  <script src="assets/common.js"></script>
-  <script src="assets/ttsscript.js"></script>
-  <script src="assets/game.js"></script>
-  <script src="assets/flashcard.js"></script>
-  <script src="assets/sync.js" defer></script>
+    <!-- ── Coming soon ── -->
+    <div class="sec-head reveal">
+      <h2>Binnenkort</h2>
+      <span class="sec-badge">In ontwikkeling</span>
+    </div>
+    <div class="coming-grid reveal">
+      <div class="coming-card">
+        <div class="coming-ico">📹</div>
+        <div class="coming-info">
+          <span class="coming-name">Video Lessen</span>
+          <span class="coming-tag">BINNENKORT</span>
+        </div>
+      </div>
+      <div class="coming-card">
+        <div class="coming-ico">✍️</div>
+        <div class="coming-info">
+          <span class="coming-name">Schrijven</span>
+          <span class="coming-tag">BINNENKORT</span>
+        </div>
+      </div>
+      <div class="coming-card">
+        <div class="coming-ico">🎧</div>
+        <div class="coming-info">
+          <span class="coming-name">Luisteren & Begrijpen</span>
+          <span class="coming-tag">BINNENKORT</span>
+        </div>
+      </div>
+      <div class="coming-card">
+        <div class="coming-ico">📜</div>
+        <div class="coming-info">
+          <span class="coming-name">Certificering NT2</span>
+          <span class="coming-tag">BINNENKORT</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer id="portal-footer">
+    <span>
+      <span class="ft-flag">🇳🇱</span>&nbsp;
+      Gemaakt door <strong>Quang Nguyen Dang</strong>
+      &nbsp;·&nbsp;
+      <a href="mailto:dqvn2002@gmail.com">dqvn2002@gmail.com</a>
+    </span>
+    <span id="pf-year"></span>
+  </footer>
+
+  <!-- sync.js handles Google Sign-In and cloud sync -->
+  <script src="assets/sync.js"></script>
+
+  <script>
+  'use strict';
+
+  /* ─── Tools manifest ─────────────────────────────────────────── */
+  const TOOLS = [
+    { href:'startnl.html',   icon:'📖', nl:'Vocabulaire',  en:'Woordenlijst & flashcards', color:'#2563eb', badge:'Actief'     },
+    { href:'vanstart.html',  icon:'🚀', nl:'VanStart',     en:'NT2 beginnerscursus',       color:'#059669', badge:'Actief'     },
+    { href:'klanken.html',   icon:'🎵', nl:'Klanken',      en:'Uitspraak leren',           color:'#7c3aed', badge:'Actief'     },
+    { href:'dialogues.html', icon:'💬', nl:'Dialogen',     en:'Gespreksoefening',          color:'#0891b2'                     },
+    { href:'grammar.html',   icon:'📚', nl:'Grammatica',   en:'Regels & uitleg',           color:'#b45309'                     },
+    { href:'verbs.html',     icon:'🔄', nl:'Werkwoorden',  en:'Vervoeging oefenen',        color:'#dc2626', badge:'Actief'     },
+    { href:'kids.html',      icon:'🧒', nl:'Kids',         en:'Kinderen woordenschat',     color:'#16a34a', badge:'Nieuw'      },
+  ];
+
+  /* ─── Helpers ─────────────────────────────────────────────────── */
+  function readJSON(key, fallback) {
+    try { return JSON.parse(localStorage.getItem(key)) ?? fallback; }
+    catch { return fallback; }
+  }
+
+  /* ─── Personalized greeting ──────────────────────────────────── */
+  function applyGreeting() {
+    const h    = new Date().getHours();
+    const time = h < 6 ? 'Goedenacht' : h < 12 ? 'Goedemorgen' : h < 18 ? 'Goedemiddag' : 'Goedenavond';
+    const user = readJSON('fc_sync_user', null);
+    const first = user?.name?.split(/[\s,]+/)?.[0] || '';
+    const greet = first ? `${time}, ${first}! 👋` : `${time}! 👋`;
+    document.getElementById('portal-greeting').textContent = greet;
+    if (first) {
+      document.getElementById('portal-sub').textContent =
+        `Welkom terug, ${first}. Ga verder waar je gebleven bent.`;
+    }
+  }
+
+  /* ─── Stats computation ──────────────────────────────────────── */
+  function computeStats() {
+    /* Flashcards */
+    const meta    = readJSON('nl_srs_meta_v3', {});
+    const srs     = readJSON('nl_srs_v3', {});
+    let cardsSeen = 0, cardsMastered = 0;
+    for (const ch of Object.values(srs)) {
+      if (!ch || typeof ch !== 'object') continue;
+      for (const st of Object.values(ch)) {
+        if (!st?.state) continue;
+        if (st.state !== 'new') cardsSeen++;
+        if (st.state === 'review' && (st.interval || 0) >= 21) cardsMastered++;
+      }
+    }
+
+    /* Klanken */
+    const klanken      = readJSON('klanken-v1', {});
+    const klankenDone  = Object.values(klanken).filter(Boolean).length;
+    const KLANKEN_TOTAL = 48; // approximate total Dutch phoneme sounds in klanken.html
+
+    /* Verbs */
+    const verbsData  = readJSON('nl_verbs_v3', {});
+    let verbsLearned = 0, verbsSeen = 0;
+    for (const lesson of Object.values(verbsData)) {
+      if (!lesson?.verbStats) continue;
+      for (const vs of Object.values(lesson.verbStats)) {
+        verbsSeen++;
+        if ((vs.correct || 0) / Math.max(vs.seen || 1, 1) > 0.2) verbsLearned++;
+      }
+    }
+    const VERBS_TOTAL = Math.max(verbsSeen, 60);
+
+    /* Dialogues */
+    const dlg      = readJSON('nl_dlg_v1', {});
+    const dlgDone  = Object.keys(dlg.stats || {}).length;
+    const dlgStreak = dlg.streak?.days || 0;
+    const DLG_TOTAL = 20;
+
+    return {
+      streak:     meta.streak        || 0,
+      cardsSeen,  cardsMastered,
+      klankenDone, KLANKEN_TOTAL,
+      verbsLearned, VERBS_TOTAL,
+      dlgDone, dlgStreak, DLG_TOTAL,
+    };
+  }
+
+  /* ─── Render stats strip ─────────────────────────────────────── */
+  function renderStats(s) {
+    document.getElementById('sv-streak').textContent  = s.streak;
+    document.getElementById('sv-cards').textContent   = s.cardsSeen;
+    document.getElementById('sv-klanken').textContent = s.klankenDone;
+    document.getElementById('sv-verbs').textContent   = s.verbsLearned;
+  }
+
+  /* ─── Render progress cards ──────────────────────────────────── */
+  function renderProgress(s) {
+    const vocabPct   = s.cardsSeen    > 0 ? Math.min(100, Math.round(s.cardsMastered  / Math.max(s.cardsSeen,    1) * 100)) : 0;
+    const klankenPct = Math.min(100, Math.round(s.klankenDone  / s.KLANKEN_TOTAL  * 100));
+    const verbsPct   = Math.min(100, Math.round(s.verbsLearned / s.VERBS_TOTAL    * 100));
+    const dlgPct     = Math.min(100, Math.round(s.dlgDone      / s.DLG_TOTAL      * 100));
+
+    const cards = [
+      {
+        href: 'startnl.html', icon: '📖', color: '#2563eb',
+        nl: 'Vocabulaire',
+        pct: vocabPct,
+        detail: s.cardsSeen > 0
+          ? `${s.cardsMastered} beheerst &nbsp;·&nbsp; ${s.cardsSeen} gezien`
+          : 'Nog niet begonnen — start de flashcards!',
+      },
+      {
+        href: 'klanken.html', icon: '🎵', color: '#7c3aed',
+        nl: 'Klanken',
+        pct: klankenPct,
+        detail: s.klankenDone > 0
+          ? `${s.klankenDone} van ~${s.KLANKEN_TOTAL} klanken geoefend`
+          : 'Nog niet begonnen — leer de uitspraak!',
+      },
+      {
+        href: 'verbs.html', icon: '🔄', color: '#dc2626',
+        nl: 'Werkwoorden',
+        pct: verbsPct,
+        detail: s.verbsLearned > 0
+          ? `${s.verbsLearned} werkwoorden geleerd`
+          : 'Nog niet begonnen — oefen werkwoorden!',
+      },
+      {
+        href: 'dialogues.html', icon: '💬', color: '#0891b2',
+        nl: 'Dialogen',
+        pct: dlgPct,
+        detail: s.dlgDone > 0
+          ? `${s.dlgDone} dialogen geoefend${s.dlgStreak > 1 ? ' &nbsp;·&nbsp; 🔥 ' + s.dlgStreak + ' dagen' : ''}`
+          : 'Nog niet begonnen — oefen gesprekken!',
+      },
+    ];
+
+    document.getElementById('prog-grid').innerHTML = cards.map(c => `
+      <a class="prog-card" href="${c.href}">
+        <div class="prog-card-top">
+          <div class="prog-icon-wrap" style="background:${c.color}18">${c.icon}</div>
+          <span class="prog-title">${c.nl}</span>
+          <span class="prog-pct">${c.pct}%</span>
+        </div>
+        <div class="prog-track">
+          <div class="prog-fill" id="pf-${c.nl.toLowerCase()}" style="background:${c.color};width:0%"></div>
+        </div>
+        <div class="prog-detail">${c.detail}</div>
+      </a>
+    `).join('');
+
+    /* Animate bars after next paint */
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      cards.forEach(c => {
+        const el = document.getElementById('pf-' + c.nl.toLowerCase());
+        if (el) el.style.width = c.pct + '%';
+      });
+    }));
+  }
+
+  /* ─── Render tools grid ──────────────────────────────────────── */
+  function renderTools() {
+    const grid = document.getElementById('tools-grid');
+    grid.innerHTML = TOOLS.map(t => `
+      <a class="tool-card" href="${t.href}" style="--tc:${t.color}">
+        <div class="tc-icon">${t.icon}</div>
+        <div class="tc-name">${t.nl}</div>
+        <div class="tc-desc">${t.en}</div>
+        ${t.badge === 'Actief' ? `<div class="tc-pill tc-pill-active">Actief</div>` : ''}
+        ${t.badge === 'Nieuw'  ? `<div class="tc-pill tc-pill-new">Nieuw</div>`    : ''}
+      </a>
+    `).join('');
+  }
+
+  /* ─── Volume control ─────────────────────────────────────────── */
+  function initVolume() {
+    const slider = document.getElementById('vol-slider');
+    const label  = document.getElementById('vol-val');
+    let vol = 70;
+    try {
+      const stored = JSON.parse(localStorage.getItem('nl_vocab_vol') || 'null');
+      if (stored?.v != null) vol = stored.v;
+    } catch {}
+    slider.value          = vol;
+    label.textContent     = vol + '%';
+    slider.addEventListener('input', () => {
+      const v = +slider.value;
+      label.textContent = v + '%';
+      try { localStorage.setItem('nl_vocab_vol', JSON.stringify({ v, t: Date.now() })); } catch {}
+    });
+  }
+
+  /* ─── Scroll reveal ──────────────────────────────────────────── */
+  function initReveal() {
+    const els = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+      }, { threshold: 0.08 });
+      els.forEach(el => io.observe(el));
+    } else {
+      els.forEach(el => el.classList.add('visible'));
+    }
+  }
+
+  /* ─── Year ───────────────────────────────────────────────────── */
+  document.getElementById('pf-year').textContent = '© ' + new Date().getFullYear();
+
+  /* ─── Dashboard entry point ──────────────────────────────────── */
+  function renderDashboard() {
+    applyGreeting();
+    const s = computeStats();
+    renderStats(s);
+    renderProgress(s);
+  }
+
+  /* Called by sync.js after a successful cloud sync — refresh stats */
+  function updateWordBadges() { renderDashboard(); }
+
+  /* ─── Boot ───────────────────────────────────────────────────── */
+  renderTools();
+  renderDashboard();
+  initVolume();
+  initReveal();
+  </script>
+
 </body>
-
 </html>

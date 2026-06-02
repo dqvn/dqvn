@@ -32,7 +32,7 @@
 <div id="drawer-overlay"></div>
 
 <!-- Sidebar -->
-<nav id="sidebar">
+<nav id="sidebar" class="sidebar-dark">
   <div class="sb-drag-handle"></div>
   <div class="sb-logo">
     <h1>🇳🇱 Verb Trainer</h1>
@@ -40,6 +40,9 @@
     <div id="sb-streak"></div>
     <a href="index.html" class="sb-home-link">➔🏠</a>
   </div>
+
+  <!-- Cloud sync (populated by sync.js) -->
+  <div id="sync-section"></div>
 
   <!-- Verb search -->
   <div id="sb-search-wrap">
@@ -107,9 +110,6 @@
       </optgroup>
     </select>
   </div>
-
-  <!-- Cloud sync (populated by sync.js) -->
-  <div id="sync-section"></div>
 
   <footer id="app-footer">
     <div class="ft-avatar">QN</div>

@@ -436,6 +436,25 @@ td:last-child {
 .al-body::-webkit-scrollbar { width: 5px; }
 .al-body::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 3px; }
 
+/* Portal home link inside launcher */
+.al-home-row { margin-bottom: 14px; }
+.al-home-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #ea580c;
+    text-decoration: none;
+    padding: 6px 12px;
+    background: #fff7ed;
+    border: 1px solid #fed7aa;
+    border-radius: 20px;
+    transition: background 0.15s, box-shadow 0.15s;
+}
+.al-home-btn:hover { background: #ffedd5; box-shadow: 0 2px 6px rgba(234,88,12,.15); }
+.al-home-btn.al-current { background: #ffedd5; font-weight: 800; }
+
 .al-group-label {
     font-size: 0.68rem;
     font-weight: 800;

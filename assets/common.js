@@ -1,7 +1,7 @@
 'use strict';
 
 /* ══════════════════════════════════════════════════════
-   common.js  –  shared logic for index.html / vanstart.html
+   common.js  –  shared logic for startnl.html / vanstart.html
    Page-specific config is injected via initPage(config).
    ══════════════════════════════════════════════════════ */
 
@@ -11,7 +11,7 @@
    Fields: id, label, icon, href, desc, group, color
    ══════════════════════════════════════════════════════ */
 const APPS = [
-  { id:'vocab',     label:'Vocabulaire', icon:'📖', href:'index.html',      desc:'Woordenlijst & flashcards',      group:'📚 Woordenschat', color:'#2563eb' },
+  { id:'vocab',     label:'Vocabulaire', icon:'📖', href:'startnl.html',      desc:'Woordenlijst & flashcards',      group:'📚 Woordenschat', color:'#2563eb' },
   { id:'kids',      label:'Kids',        icon:'🧒', href:'kids.html',       desc:'Kinderen woordenschat',           group:'📚 Woordenschat', color:'#16a34a' },
   { id:'klanken',   label:'Klanken',     icon:'🎵', href:'klanken.html',    desc:'Nederlandse uitspraak leren',    group:'🎙️ Uitspreken',   color:'#7c3aed' },
   { id:'dialogues', label:'Dialogues',   icon:'💬', href:'dialogues.html',  desc:'Gespreks oefening met TTS',      group:'🎙️ Uitspreken',   color:'#0891b2' },
@@ -44,7 +44,15 @@ function initAppLauncher() {
   const groups = {};
   APPS.forEach(app => { (groups[app.group] ??= []).push(app); });
 
-  body.innerHTML = Object.entries(groups).map(([grp, apps]) => `
+  /* Portal home link at the top */
+  const homeHtml = `
+    <div class="al-home-row">
+      <a href="index.html" class="al-home-btn${page === 'index.html' ? ' al-current' : ''}">
+        🏠&nbsp; Terug naar Portaal
+      </a>
+    </div>`;
+
+  body.innerHTML = homeHtml + Object.entries(groups).map(([grp, apps]) => `
     <div class="al-group-label">${grp}</div>
     <div class="al-cards">
       ${apps.map(app => `
