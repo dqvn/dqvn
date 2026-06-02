@@ -62,6 +62,7 @@ export default {
       klanken: localKlanken = {},
       verbs:   localVerbs   = {},
       game:    localGame    = {},
+      vol:     localVol     = null,
       device:  clientDevice = null,
     } = body;
 
@@ -75,6 +76,7 @@ export default {
     const mergedKlanken = mergeKlanken(localKlanken, stored?.klanken || {});
     const mergedVerbs   = mergeVerbs  (localVerbs,   stored?.verbs   || {});
     const mergedGame    = mergeGame   (localGame,     stored?.game    || {});
+    const mergedVol     = mergeVol    (localVol,      stored?.vol     || null);
 
     // ── Redis write ───────────────────────────────────────────────────────
     // Keep a rolling log of the last 5 device syncs
@@ -95,6 +97,7 @@ export default {
       {
         srs: mergedSRS, meta: mergedMeta,
         klanken: mergedKlanken, verbs: mergedVerbs, game: mergedGame,
+        vol: mergedVol,
         owner: { sub: user.sub, email: user.email, name: user.name },
         syncedAt: Date.now(),
         syncLog,
@@ -102,7 +105,7 @@ export default {
       REDIS_TTL
     );
 
-    return reply({ srs: mergedSRS, meta: mergedMeta, klanken: mergedKlanken, verbs: mergedVerbs, game: mergedGame });
+    return reply({ srs: mergedSRS, meta: mergedMeta, klanken: mergedKlanken, verbs: mergedVerbs, game: mergedGame, vol: mergedVol });
   },
 };
 
@@ -287,6 +290,14 @@ function mergeGame(local, remote) {
     merged[ch] = [...new Set([...merged[ch], ...words])];
   }
   return merged;
+}
+
+// ── Vol merge: most recently changed value wins ───────────────────────────
+
+function mergeVol(local, remote) {
+  if (!remote) return local;
+  if (!local)  return remote;
+  return (local?.t || 0) >= (remote?.t || 0) ? local : remote;
 }
 
 // ── Meta merge: most-recently-active device wins, take max streak ─────────

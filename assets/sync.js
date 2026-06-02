@@ -22,6 +22,7 @@ const _SYNC_KEYS = {
   klanken: 'klanken-v1',             // phonetics completion flags
   verbs:   'nl_verbs_v3',            // verb trainer stats
   game:    'nl_game_progress_v1',    // game seen-words per chapter
+  vol:     'nl_vocab_vol',           // TTS volume { v: 0-100, t: timestamp }
 };
 
 // ── Runtime state ─────────────────────────────────────────────────────────
@@ -219,6 +220,14 @@ async function syncNow(silent = false) {
       if (val && Object.keys(val).length) {
         localStorage.setItem(lsKey, JSON.stringify(val));
       }
+    }
+
+    // Apply synced volume to the slider if another device had a different value
+    if (merged.vol && typeof merged.vol.v === 'number') {
+      const slider = document.getElementById('volume-control');
+      const label  = document.getElementById('volume-value');
+      if (slider) slider.value = merged.vol.v;
+      if (label)  label.textContent = `${merged.vol.v}%`;
     }
 
     // Refresh word badges if function is available
