@@ -5,29 +5,18 @@
     flex-shrink: 0;
 }
 
-/* ── Signed-out: Sign-in button ─────────────────────────────────────── */
-.sync-signin-btn {
+/* ── Signed-out: GIS rendered button wrapper ─────────────────────────── */
+.sync-signin-row {
+    width: 100%;
+}
+.sync-gis-wrap {
+    width: 100%;
+    min-height: 44px;
+    /* GIS renders an iframe inside here — let it breathe */
     display: flex;
     align-items: center;
-    gap: 8px;
-    width: 100%;
-    padding: 8px 12px;
-    border: 1px solid #cbd5e1;
-    border-radius: 10px;
-    background: #f8fafc;
-    color: #374151;
-    font-family: inherit;
-    font-size: 0.82rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
+    justify-content: center;
 }
-.sync-signin-btn:hover {
-    background: #f1f5f9;
-    border-color: #94a3b8;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-}
-.sync-g-logo { flex-shrink: 0; }
 
 /* ── Signed-in: compact card ────────────────────────────────────────── */
 .sync-card {
