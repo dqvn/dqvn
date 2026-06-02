@@ -69,8 +69,10 @@ function _onCredential(response) {
   // Decode payload client-side (signature verified server-side by Worker)
   let payload;
   try {
-    const b64 = jwt.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
-    payload   = JSON.parse(atob(b64 + '='.repeat((4 - b64.length % 4) % 4)));
+    const b64    = jwt.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
+    const padded = b64 + '='.repeat((4 - b64.length % 4) % 4);
+    const bytes  = Uint8Array.from(atob(padded), c => c.charCodeAt(0));
+    payload      = JSON.parse(new TextDecoder().decode(bytes));
   } catch {
     return;
   }
@@ -181,44 +183,69 @@ function _renderSyncUI() {
   }
 
   const lastSync = parseInt(localStorage.getItem(_KEY_LAST) || '0', 10);
-  const lastText = lastSync ? _relTime(lastSync) : 'never';
+  const statusText = lastSync ? '☁️ Synced · ' + _relTime(lastSync) : '☁️ Not yet synced';
 
   el.innerHTML = `
-    <div class="sync-row sync-user-row">
+    <div class="sync-card">
       <img class="sync-avatar" src="${_esc(_user.picture || '')}" alt=""
            onerror="this.style.display='none'">
       <div class="sync-info">
         <span class="sync-name">${_esc(_user.name || _user.email)}</span>
-        <span class="sync-last" id="sync-last-lbl">☁️ ${lastText}</span>
+        <span class="sync-status" id="sync-last-lbl">${statusText}</span>
       </div>
-      <button class="sync-now-btn" id="sync-now-btn" title="Sync now">↻</button>
-    </div>
-    <button class="sync-signout-btn" id="sync-signout-btn">Sign out</button>`;
+      <div class="sync-menu-wrap">
+        <button class="sync-menu-btn" id="sync-menu-btn" aria-label="Sync options">⋮</button>
+        <div class="sync-dropdown" id="sync-dropdown">
+          <button class="sync-dd-item" id="sync-now-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.36-3.36L23 10M1 14l5.13 4.36A9 9 0 0020.49 15"/></svg>
+            Sync now
+          </button>
+          <button class="sync-dd-item sync-dd-signout" id="sync-signout-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+            Sign out
+          </button>
+        </div>
+      </div>
+    </div>`;
+
+  // Toggle dropdown
+  const menuBtn  = document.getElementById('sync-menu-btn');
+  const dropdown = document.getElementById('sync-dropdown');
+  menuBtn.addEventListener('click', e => {
+    e.stopPropagation();
+    dropdown.classList.toggle('open');
+  });
+  // Close on outside click
+  document.addEventListener('click', function _close() {
+    dropdown.classList.remove('open');
+    document.removeEventListener('click', _close);
+  });
 
   document.getElementById('sync-now-btn')
-    .addEventListener('click', () => syncNow(false));
+    .addEventListener('click', () => { dropdown.classList.remove('open'); syncNow(false); });
   document.getElementById('sync-signout-btn')
-    .addEventListener('click', _signOut);
+    .addEventListener('click', () => { dropdown.classList.remove('open'); _signOut(); });
 }
 
 function _setSyncStatus(status, ts) {
-  const btn = document.getElementById('sync-now-btn');
-  const lbl = document.getElementById('sync-last-lbl');
+  const lbl     = document.getElementById('sync-last-lbl');
+  const syncBtn = document.getElementById('sync-now-btn');
+  const card    = document.querySelector('.sync-card');
 
-  if (!btn) return;
-  btn.disabled = (status === 'syncing');
+  if (!lbl) return;
 
   if (status === 'syncing') {
-    btn.textContent = '…';
-    btn.classList.add('sync-spinning');
-  } else {
-    btn.textContent = '↻';
-    btn.classList.remove('sync-spinning');
-  }
-
-  if (lbl) {
-    if (status === 'ok'    && ts)  lbl.textContent = '☁️ ' + _relTime(ts);
-    if (status === 'error')        lbl.textContent = '⚠️ Sync failed';
+    lbl.textContent = '⏳ Syncing…';
+    if (syncBtn) syncBtn.disabled = true;
+    if (card)    card.classList.add('sync-card--busy');
+  } else if (status === 'ok' && ts) {
+    lbl.textContent = '☁️ Synced · ' + _relTime(ts);
+    if (syncBtn) syncBtn.disabled = false;
+    if (card)    card.classList.remove('sync-card--busy');
+  } else if (status === 'error') {
+    lbl.textContent = '⚠️ Sync failed';
+    if (syncBtn) syncBtn.disabled = false;
+    if (card)    card.classList.remove('sync-card--busy');
   }
 }
 
