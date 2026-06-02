@@ -210,12 +210,25 @@ async function syncNow(silent = false) {
 // SIGN OUT
 // ═════════════════════════════════════════════════════════════════════════
 function _signOut() {
-  if (window.google?.accounts?.id) google.accounts.id.disableAutoSelect();
   _user  = null;
   _token = null;
   localStorage.removeItem(_KEY_USER);
   localStorage.removeItem(_KEY_TOKEN);
-  _renderSyncUI();
+
+  if (window.google?.accounts?.id) {
+    // disableAutoSelect prevents silent re-sign-in after explicit sign-out
+    google.accounts.id.disableAutoSelect();
+    // Re-initialize with auto_select:false so renderButton is ready for a fresh login.
+    // Without this re-init, GIS stays in "signed-out" state and button clicks are silently ignored.
+    google.accounts.id.initialize({
+      client_id:   GOOGLE_CLIENT_ID,
+      callback:    _onCredential,
+      auto_select: false,
+    });
+  }
+
+  _renderSyncUI();         // renders #g-signin-container
+  _renderGISButton();      // paints button with freshly re-initialized GIS
 }
 
 // ═════════════════════════════════════════════════════════════════════════
