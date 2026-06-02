@@ -133,7 +133,7 @@ async function syncNow(silent = false) {
     localStorage.setItem(_KEY_LAST, String(now));
     _setSyncStatus('ok', now);
 
-    if (!silent) _toast('☁️ Synced successfully');
+    if (!silent) _syncToast('☁️ Synced successfully');
 
   } catch (err) {
     console.error('[sync]', err);
@@ -242,8 +242,7 @@ function _esc(s) {
   return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 }
 
-function _toast(msg) {
-  // Reuse existing game.js toast element if present, else make our own
+function _syncToast(msg) {
   let el = document.getElementById('sync-toast');
   if (!el) {
     el = document.createElement('div');
