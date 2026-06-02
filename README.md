@@ -1,6 +1,6 @@
 # Learn Dutch Words — Project Reference
 
-A static web app for learning Dutch vocabulary and dialogues, deployed via GitHub Pages. No backend required — all state lives in `localStorage` and JSON data files.
+A static web app for learning Dutch vocabulary and dialogues, deployed via GitHub Pages. No backend required — all state lives in `localStorage` and JSON data files. Cloud sync via Cloudflare Worker + Upstash Redis (optional, Google Sign-In required).
 
 ---
 
@@ -8,7 +8,7 @@ A static web app for learning Dutch vocabulary and dialogues, deployed via GitHu
 
 | File | Description |
 |---|---|
-| `index.html` | Main vocabulary learner — word table + flashcard game |
+| `index.html` | Main vocabulary learner — word table + flashcard game + cloud sync |
 | `vanstart.html` | VanStart course vocabulary learner (same layout, separate TTS script) |
 | `4000.html` | 4 000 most-common Dutch words — vocabulary table + TTS |
 | `verbs.html` | Dutch Verb Trainer — conjugation study + quiz (OTT / OVT / VTT / OTTT) |
@@ -29,6 +29,7 @@ A static web app for learning Dutch vocabulary and dialogues, deployed via GitHu
 | File | Role |
 |---|---|
 | `assets/common.js` | Shared: voice selector, table render, menu toggle, hamburger, word badges, font-size control, active-lesson highlight, lazy `puter.js` loader |
+| `assets/sync.js` | Cloud sync — Google Sign-In (GIS), Upstash Redis via Cloudflare Worker, smart auto-sync |
 | `assets/ttsscript.js` | `initPage()` config for `index.html` (main courses) |
 | `assets/ttsvanstartscript.js` | `initPage()` config for `vanstart.html` |
 | `assets/tts4kscript.js` | `initPage()` config for `4000.html` |
@@ -41,11 +42,90 @@ A static web app for learning Dutch vocabulary and dialogues, deployed via GitHu
 | `assets/gapp.js` | Markdown chapter SPA (TOC, search, progress, TTS) |
 | `assets/NoSleep.min.js` | Wake lock polyfill (used by `verbs.js`) |
 | `assets/style.css` | Shared styles for `index.html` / `vanstart.html` / all common components |
+| `assets/sync.css` | Styles for the cloud sync section in the left menu |
 | `assets/verbs.css` | Styles for `verbs.html` only |
 | `assets/dlg.css` | Shared sidebar styles for `dialogues.html` and `kids.html` |
 | `assets/kids.css` | Styles for `kids.html` |
 | `assets/klanken.css` | Styles for `klanken.html` |
 | `assets/gstyles.css` | Styles for the Markdown chapter SPA |
+
+---
+
+## Cloud Sync — `assets/sync.js` + `worker/`
+
+Multi-device progress sync via Cloudflare Worker (proxy) + Upstash Redis (store). Google Identity Services handles authentication — no password, no separate account.
+
+### Architecture
+
+```
+Browser (GitHub Pages)
+  │  Google Sign-In → id_token (JWT, 1 h expiry)
+  │  POST /sync  { Authorization: Bearer <jwt>, payload }
+  ▼
+Cloudflare Worker  (worker/index.js)
+  │  Verifies Google JWT (Web Crypto, RS256)
+  │  Holds UPSTASH_URL + UPSTASH_TOKEN as encrypted env secrets
+  │  Merges local + Redis data, writes back
+  ▼
+Upstash Redis   key: fc:{google_sub}
+```
+
+### Deployment
+
+```bash
+cd worker
+wrangler secret put UPSTASH_URL
+wrangler secret put UPSTASH_TOKEN
+# Edit wrangler.toml [vars] GOOGLE_CLIENT_ID first, then:
+wrangler deploy
+# Paste the printed Worker URL into assets/sync.js → SYNC_WORKER_URL
+```
+
+Google Cloud Console: add your GitHub Pages origin to **Authorized JavaScript origins** (no trailing slash, no redirect URIs needed).
+
+### localStorage keys synced
+
+| Key | Content | Merge strategy |
+|---|---|---|
+| `nl_srs_v3` | Flashcard SM-2 progress | Per-word: highest `lastStudied` wins |
+| `nl_srs_meta_v3` | Streak / daily new-card count | Most recent `lastStudyDate` wins; max streak |
+| `klanken-v1` | Phonetics completion flags | Union — a completed sound is never un-completed |
+| `nl_verbs_v3` | Verb trainer stats per verb | Per-verb: `max(seen)` + `max(correct)`; max streak |
+| `nl_game_progress_v1` | Game seen-words per chapter | Union of word arrays per chapter |
+
+Keys intentionally **not** synced (device-specific): `nl_tts_voice_v1`, `nl_vocab_fs`, `nl_fc_word_size`, `nl_verbs_theme`, `nl_verbs_font`, `klanken-voice`, `klanken-vol`, `kids_tts_speed`. Cache keys (`nl_dlg_*`) are also excluded.
+
+### Auto-sync triggers (no manual action needed)
+
+1. **Page load** — syncs immediately if stored token is still valid (< 1 h old)
+2. **After studying** — `localStorage.setItem` hook fires 3 s after any progress key is written (debounced; min 30 s between syncs)
+3. **Tab becomes visible** — fires when user switches back to the tab from another app/tab
+4. **Device comes back online** — fires on `navigator.online` transition
+5. **Token renewal** — GIS silently renews the expired JWT; sync fires after renewal
+
+### Token / session lifecycle
+
+- First visit: "Sign in to sync" button in left menu; One Tap shown on click only
+- Signed in: token stored in `fc_sync_token` (localStorage); valid 1 h
+- On refresh within 1 h: token still valid → sync fires immediately, no Google prompt shown
+- On refresh after 1 h: GIS silently renews (no popup) using `auto_select: true`; if renewal fails, ⋮ menu → Sync now re-prompts on next manual click
+- Sign out: `google.accounts.id.disableAutoSelect()` + clear localStorage keys
+
+### UI (left menu, above footer)
+
+**Signed out:**
+```
+[ G  Sign in to sync ]
+```
+
+**Signed in:**
+```
+┌──────────────────────────────┐
+│  [🖼]  Name               [⋮]│
+│        ☁️ Synced · 2m ago    │
+└──────────────────────────────┘
+```
+⋮ opens dropdown: **Sync now** / **Sign out**. Status line updates: `⏳ Syncing…` → `☁️ Synced · Xs ago` → `⚠️ Sync failed`.
 
 ---
 
@@ -131,6 +211,17 @@ A word only counts as **Mastered** when `state === 'review' && interval >= 21`. 
 2. `DUTCH_SENTENCE_DELAY` (1000 ms) later → Dutch example sentence spoken
 3. Unflipping → Dutch word re-read automatically (450 ms after unflip)
 
+### Back card layout
+```
+English meaning
+Vietnamese
+─────────────────
+Dutch example sentence  (centered, Caveat font)
+[ 🔊 Hear it ]           (same pill button as front; blue tint on white bg)
+English translation      (small, muted)
+```
+The "Hear it" button on the back card uses `#fc-back .fc-speak-btn` CSS override for dark-on-light colours. `margin-top: auto` pins it to the bottom of the available space above the English translation.
+
 ---
 
 ## Word Status Badges — `assets/common.js`
@@ -186,12 +277,8 @@ CSS: blue left accent bar (desktop) + light blue background tint (mobile).
 
 `loadPuter()` lazy-loads `puter.js` (AI SDK) only when the user first clicks **Start Game** or **Flashcards Game**. Keeps the page fast — the heavy CDN script is never fetched unless needed.
 
-```js
-loadPuter()   // returns Promise, resolves once window.puter is ready
-```
-
 - Intercepts button clicks in capture phase, loads puter, then re-dispatches the click so `game.js` fires normally with `window.puter` available.
-- CommonJS shim applied if `require` / `module` are undefined (plain browser environment).
+- `_puterAvailable` flag (`null` / `true` / `false`) prevents an infinite loop when the corporate firewall blocks `js.puter.com` with `ERR_CERT_AUTHORITY_INVALID` — on failure the flag is set to `false` and subsequent clicks pass straight through to `game.js`.
 
 ---
 
@@ -201,6 +288,7 @@ After the multiple-choice game session, `generateStoryFromPuter()` calls `puter.
 
 - Dutch and English blocks are split at the `[` bracket and rendered with two `<br>` elements between them (safe DOM text nodes, no `innerHTML` with AI content).
 - Falls back to plain `textContent` if the model omits the bracket.
+- Skipped entirely (`if (window.puter)` guard) when puter failed to load.
 
 ---
 
@@ -336,9 +424,10 @@ body
 │   ├── voice selector + volume slider
 │   ├── #sound-nav    — category groups with collapsible sound items
 │   └── footer
-└── #content
-    ├── #welcome      — shown until a sound is selected
-    └── #detail       — phoneme card + tip + examples + prev/next nav
+└── #content          — flex column, min-height: 100dvh
+    ├── #welcome      — shown until a sound is selected (flex: 1)
+    └── #detail       — phoneme card + tip + examples + prev/next nav (flex: 1)
+        └── .ex-row   — flex: 1, grows to fill remaining space; 3 cols on all screen sizes
 ```
 
 ### Detail card layout
@@ -354,7 +443,8 @@ bottom-nav        — ← Vorige / progress dots / Volgende → (fixed on mobile
 - **▶ Luister** — speaks the primary spelling at normal rate (0.88)
 - **🐢 Langzaam** — speaks primary spelling then all 6 example words in sequence at 0.5 rate, 1.5 s gap
 - Completing all sounds in a category triggers star-pop animation + "Geweldig!" toast
-- Toast uses `opacity: 0 → 1` transition; text cleared 350 ms after fade-out so no ghost remains
+- Toast: `opacity: 0→1` transition; text cleared 350 ms after fade-out (prevents ghost on mobile)
+- Mobile layout: `#content` is flex column filling `100dvh`; example grid grows to fill leftover space
 
 ---
 
