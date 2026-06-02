@@ -153,10 +153,28 @@ body {
 .sb-home-link {
   display: inline-flex; align-items: center; gap: .3rem;
   margin-top: 8px; font-size: .7rem; font-weight: 600;
-  color: rgba(255,255,255,.35); text-decoration: none;
+  color: rgba(255,255,255,.55); text-decoration: none;
   transition: color .15s;
 }
-.sb-home-link:hover { color: rgba(255,255,255,.75); }
+.sb-home-link:hover { color: rgba(255,255,255,.90); }
+
+/* ── Back-to-portal link (bottom of sidebar) ── */
+#sb-back-link {
+  flex-shrink: 0;
+  padding: 10px 14px;
+  border-top: 1px solid rgba(255,255,255,.07);
+}
+#sb-back-link a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: .78rem;
+  font-weight: 700;
+  color: rgba(255,255,255,.45);
+  text-decoration: none;
+  transition: color .15s;
+}
+#sb-back-link a:hover { color: rgba(255,255,255,.85); }
 
 /* Lesson list */
 #lesson-list {
