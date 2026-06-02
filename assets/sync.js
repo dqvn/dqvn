@@ -31,7 +31,8 @@ let _token         = null;   // current Google id_token
 let _syncing       = false;
 let _activityTimer = null;
 
-const _MIN_SYNC_GAP = 30_000; // ms — never sync more often than once per 30 s
+const _AUTO_SYNC_MIN_GAP   = 3 * 60_000; // auto-sync at most once per 3 min
+const _POST_STUDY_DEBOUNCE = 15_000;     // wait 15 s after last write — session "settled"
 
 // ═════════════════════════════════════════════════════════════════════════
 // INIT — called automatically on DOMContentLoaded
@@ -406,44 +407,46 @@ function _syncToast(msg) {
 }
 
 // ═════════════════════════════════════════════════════════════════════════
-// SMART AUTO-SYNC TRIGGERS
+// AUTO-SYNC TRIGGERS — fires only at meaningful learning moments
 // ═════════════════════════════════════════════════════════════════════════
 
-// 1. Intercept localStorage.setItem — sync 3 s after any progress key is written.
-//    This fires after every flashcard rating, klanken completion, verb quiz, etc.
-//    without needing to modify any other file.
+// Progress-only keys — changes here mean real learning happened.
+// vol excluded: a volume tweak is not worth an immediate network call.
+const _PROGRESS_KEY_SET = new Set([
+  _SYNC_KEYS.srs,
+  _SYNC_KEYS.meta,
+  _SYNC_KEYS.klanken,
+  _SYNC_KEYS.verbs,
+  _SYNC_KEYS.game,
+]);
+
+// 1. After a study session ends.
+//    Watches progress keys only. The 15 s debounce collapses a burst of
+//    card ratings / sound completions into ONE sync event. The min-gap
+//    prevents re-firing during a long uninterrupted session.
 (function _installStorageHook() {
-  const _orig      = localStorage.setItem.bind(localStorage);
-  const _syncKeySet = new Set(Object.values(_SYNC_KEYS));
+  const _orig = localStorage.setItem.bind(localStorage);
 
   localStorage.setItem = function(key, value) {
     _orig(key, value);
-    if (!_syncKeySet.has(key) || !_user || !_token) return;
+    if (!_PROGRESS_KEY_SET.has(key) || !_user || !_token) return;
 
-    // Debounce: wait 3 s for burst of writes (e.g. rating 5 cards quickly) to settle
     clearTimeout(_activityTimer);
     _activityTimer = setTimeout(() => {
       const lastSync = parseInt(localStorage.getItem(_KEY_LAST) || '0', 10);
-      if (Date.now() - lastSync < _MIN_SYNC_GAP) return; // synced very recently — skip
+      if (Date.now() - lastSync < _AUTO_SYNC_MIN_GAP) return;
       syncNow(true);
-    }, 3000);
+    }, _POST_STUDY_DEBOUNCE);
   };
 })();
 
-// 2. Sync when the tab becomes visible again (user returns from another app / tab).
-//    Most important trigger for multi-device: open on phone, study, switch to laptop,
-//    it syncs as soon as the laptop tab is re-focused.
-document.addEventListener('visibilitychange', () => {
-  if (document.visibilityState !== 'visible') return;
-  if (!_user || !_tokenValid()) return;
-  const lastSync = parseInt(localStorage.getItem(_KEY_LAST) || '0', 10);
-  if (Date.now() - lastSync > _MIN_SYNC_GAP) syncNow(true);
-});
-
-// 3. Sync when the device comes back online (subway / spotty mobile connection).
+// 2. Device comes back online — push progress made while offline.
 window.addEventListener('online', () => {
   if (_user && _tokenValid()) syncNow(true);
 });
+
+// visibilitychange removed: fires on every tab-switch and phone app-switch
+// (dozens per hour during normal use) — not a meaningful learning boundary.
 
 // ── Boot ──────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', _initSync);
