@@ -33,7 +33,6 @@ let _syncing = false;
 // INIT — called automatically on DOMContentLoaded
 // ═════════════════════════════════════════════════════════════════════════
 function _initSync() {
-  // Restore persisted session
   try {
     _user  = JSON.parse(localStorage.getItem(_KEY_USER) || 'null');
     _token = localStorage.getItem(_KEY_TOKEN);
@@ -41,30 +40,63 @@ function _initSync() {
 
   _renderSyncUI();
 
-  // Dynamically load Google Identity Services
-  if (window.google?.accounts?.id) {
-    _setupGIS();
-  } else {
-    const s  = document.createElement('script');
-    s.src    = 'https://accounts.google.com/gsi/client';
-    s.async  = true;
-    s.onload = _setupGIS;
-    document.head.appendChild(s);
+  // If token is still valid, sync right now — no GIS round-trip needed
+  if (_user && _tokenValid()) {
+    syncNow(true);
+    // Still load GIS in background so it can silently renew before expiry
+    _loadGIS(_setupGISRenewalOnly);
+    return;
   }
+
+  // Token expired or missing: load GIS to renew (silently if user known, via button if not)
+  _loadGIS(_setupGIS);
+}
+
+function _loadGIS(onReady) {
+  if (window.google?.accounts?.id) { onReady(); return; }
+  const s  = document.createElement('script');
+  s.src    = 'https://accounts.google.com/gsi/client';
+  s.async  = true;
+  s.onload = onReady;
+  document.head.appendChild(s);
 }
 
 function _setupGIS() {
   google.accounts.id.initialize({
     client_id:   GOOGLE_CLIENT_ID,
     callback:    _onCredential,
-    auto_select: true,   // silently renew if user was previously signed in
+    auto_select: true,
   });
 
-  // Prompt: if signed in → silent renewal → _onCredential fires automatically
-  // If not signed in → One Tap shown (user can dismiss without consequence)
-  google.accounts.id.prompt(_notification => {
-    // 'skipped' or 'dismissed' are expected when not signed in — ignore
+  if (_user) {
+    // Known user with expired token — attempt SILENT renewal only, no popup
+    google.accounts.id.prompt(n => {
+      // If GIS cannot renew silently (browser policy, no session), fall back to
+      // the ⋮ → Sync now button which will re-prompt on next manual click
+    });
+  }
+  // Unknown user: sign-in button already rendered in menu — no auto-popup
+}
+
+function _setupGISRenewalOnly() {
+  // Token still valid — just initialise GIS so it can renew in background
+  google.accounts.id.initialize({
+    client_id:   GOOGLE_CLIENT_ID,
+    callback:    _onCredential,
+    auto_select: true,
   });
+}
+
+// Check if stored token has at least 60 s remaining
+function _tokenValid() {
+  if (!_token) return false;
+  try {
+    const b64    = _token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
+    const padded = b64 + '='.repeat((4 - b64.length % 4) % 4);
+    const bytes  = Uint8Array.from(atob(padded), c => c.charCodeAt(0));
+    const { exp } = JSON.parse(new TextDecoder().decode(bytes));
+    return exp > Math.floor(Date.now() / 1000) + 60;
+  } catch { return false; }
 }
 
 // ═════════════════════════════════════════════════════════════════════════
