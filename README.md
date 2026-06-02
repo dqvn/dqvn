@@ -10,9 +10,17 @@ A static web app for learning Dutch vocabulary and dialogues, deployed via GitHu
 |---|---|
 | `index.html` | Main vocabulary learner — word table + flashcard game |
 | `vanstart.html` | VanStart course vocabulary learner (same layout, separate TTS script) |
+| `4000.html` | 4 000 most-common Dutch words — vocabulary table + TTS |
 | `verbs.html` | Dutch Verb Trainer — conjugation study + quiz (OTT / OVT / VTT / OTTT) |
 | `grammar.html` | Dutch grammar reference |
 | `dialogues.html` | Dutch dialogue practice — YouTube embed + role-play + solo TTS mode |
+| `klanken.html` | Dutch phonetics learner — categorised sounds, IPA, TTS wave, 6 example words |
+| `kids.html` | Kids vocabulary practice — emoji picture cards, tap-to-hear TTS |
+| `stories.html` | Dutch Storytime — interactive story reader (main entry) |
+| `stories1–5.html` | Individual story lesson pages |
+| `number.html` | Dutch number practice |
+| `game.html` | Standalone legacy vocabulary quiz |
+| `demo.html` | Scratch / demo page |
 
 ---
 
@@ -20,14 +28,24 @@ A static web app for learning Dutch vocabulary and dialogues, deployed via GitHu
 
 | File | Role |
 |---|---|
-| `assets/common.js` | Shared: voice selector, table render, menu toggle, hamburger, word badges, font-size control, active-lesson highlight |
+| `assets/common.js` | Shared: voice selector, table render, menu toggle, hamburger, word badges, font-size control, active-lesson highlight, lazy `puter.js` loader |
 | `assets/ttsscript.js` | `initPage()` config for `index.html` (main courses) |
 | `assets/ttsvanstartscript.js` | `initPage()` config for `vanstart.html` |
-| `assets/game.js` | Multiple-choice vocabulary game (`#popup`) |
+| `assets/tts4kscript.js` | `initPage()` config for `4000.html` |
+| `assets/game.js` | Multiple-choice vocabulary game (`#popup`) + Puter/GPT AI story generator |
 | `assets/flashcard.js` | SM-2 spaced repetition flashcard engine |
+| `assets/dlgscript.js` | Dialogue app logic — discovery, render, TTS flow, AES-GCM cache |
+| `assets/kidsscript.js` | Kids lesson app — auto-discovers `lxx.json`, emoji tap-to-hear cards |
+| `assets/klanken.js` | Dutch phonetics app — sidebar nav, TTS, progress, wave animation |
 | `assets/verbs.js` | Verb trainer: lesson data, study cards, quiz, dark mode, font picker, wake lock |
+| `assets/gapp.js` | Markdown chapter SPA (TOC, search, progress, TTS) |
+| `assets/NoSleep.min.js` | Wake lock polyfill (used by `verbs.js`) |
 | `assets/style.css` | Shared styles for `index.html` / `vanstart.html` / all common components |
 | `assets/verbs.css` | Styles for `verbs.html` only |
+| `assets/dlg.css` | Shared sidebar styles for `dialogues.html` and `kids.html` |
+| `assets/kids.css` | Styles for `kids.html` |
+| `assets/klanken.css` | Styles for `klanken.html` |
+| `assets/gstyles.css` | Styles for the Markdown chapter SPA |
 
 ---
 
@@ -164,6 +182,28 @@ CSS: blue left accent bar (desktop) + light blue background tint (mobile).
 
 ---
 
+## Lazy Puter Loader — `assets/common.js`
+
+`loadPuter()` lazy-loads `puter.js` (AI SDK) only when the user first clicks **Start Game** or **Flashcards Game**. Keeps the page fast — the heavy CDN script is never fetched unless needed.
+
+```js
+loadPuter()   // returns Promise, resolves once window.puter is ready
+```
+
+- Intercepts button clicks in capture phase, loads puter, then re-dispatches the click so `game.js` fires normally with `window.puter` available.
+- CommonJS shim applied if `require` / `module` are undefined (plain browser environment).
+
+---
+
+## AI Story Generator — `assets/game.js`
+
+After the multiple-choice game session, `generateStoryFromPuter()` calls `puter.ai.chat` (model `gpt-5.2`) to produce a 5-sentence Dutch story using the session's words, followed by an English translation in `[ … ]`.
+
+- Dutch and English blocks are split at the `[` bracket and rendered with two `<br>` elements between them (safe DOM text nodes, no `innerHTML` with AI content).
+- Falls back to plain `textContent` if the model omits the bracket.
+
+---
+
 ## Verb Trainer — `verbs.html` / `assets/verbs.js`
 
 ### localStorage keys
@@ -211,7 +251,7 @@ Conjugation rows use CSS grid (`grid-template-columns: max-content 1fr`) for per
 
 ---
 
-## Dialogues — `dialogues.html`
+## Dialogues — `dialogues.html` / `assets/dlgscript.js`
 
 ### Data layer
 - Files: `data/dialogues/<prefix><3-digit>.json` (e.g. `c001.json`)
@@ -259,6 +299,99 @@ body
 
 ---
 
+## Klanken (Phonetics) — `klanken.html` / `assets/klanken.js`
+
+### localStorage keys
+- `klanken-v1` — per-sound completion flags `{ "catId:sndId": 1 }`
+- `klanken-last` — last opened `{ catId, sndId }` — restored on next visit
+- `klanken-voice` — selected TTS voice name
+- `klanken-vol` — volume (0–1)
+
+### Data layer
+- File: `data/klanken/klanken.json`
+- JSON shape:
+```json
+{
+  "categories": [{
+    "id": "short", "name": "Korte Klinkers", "nameVN": "...",
+    "emoji": "🔴", "color": "#E53E3E", "bg": "#FFF5F5",
+    "sounds": [{
+      "id": "a", "spell": "a", "ipa": "/ɑ/",
+      "tipVN": "Vietnamese pronunciation tip",
+      "mouth": "mouth-shape description",
+      "pool": [{ "w": "bad", "hl": "a", "m": "bồn tắm", "e": "🛁" }]
+    }]
+  }]
+}
+```
+- `pool` — 20 example words per sound; 6 are picked randomly each visit
+- `hl` — substring to highlight in the word (marks where the target sound appears)
+
+### UI layout
+```
+body
+├── #mob-bar          — mobile top bar: hamburger + current sound
+├── #drawer-overlay
+├── #sidebar          — sound navigation grouped by category
+│   ├── voice selector + volume slider
+│   ├── #sound-nav    — category groups with collapsible sound items
+│   └── footer
+└── #content
+    ├── #welcome      — shown until a sound is selected
+    └── #detail       — phoneme card + tip + examples + prev/next nav
+```
+
+### Detail card layout
+```
+detail-topbar     — category label + "N / total" counter
+phoneme-card      — large spelling, IPA, 7-bar wave animation, ▶ Luister / 🐢 Langzaam buttons
+tip-card          — Vietnamese pronunciation tip + mouth-shape hint
+ex-row (3 cols)   — 6 random example words, tap to hear; highlighted phoneme underlined
+bottom-nav        — ← Vorige / progress dots / Volgende → (fixed on mobile)
+```
+
+### Key behaviour
+- **▶ Luister** — speaks the primary spelling at normal rate (0.88)
+- **🐢 Langzaam** — speaks primary spelling then all 6 example words in sequence at 0.5 rate, 1.5 s gap
+- Completing all sounds in a category triggers star-pop animation + "Geweldig!" toast
+- Toast uses `opacity: 0 → 1` transition; text cleared 350 ms after fade-out so no ghost remains
+
+---
+
+## Kids — `kids.html` / `assets/kidsscript.js`
+
+### Data layer
+- Files: `data/kids/l01.json`, `l02.json`, … (auto-discovered, stops at first 404)
+- JSON shape:
+```json
+{
+  "title": "Klik en Luister! 🗣️",
+  "name": "SL woorden",
+  "subtitle": "Click on a picture to hear the Dutch word spoken slowly!",
+  "words": [
+    { "text": "slak", "emoji": "🐌" }
+  ]
+}
+```
+
+### UI layout
+```
+body
+├── #mob-bar          — hamburger + current lesson name
+├── #sidebar          — lesson list (bottom drawer on mobile)
+└── #content
+    ├── #welcome
+    └── #view         — lesson title + emoji grid
+```
+
+### Key behaviour
+- Tapping an emoji card speaks the Dutch word via Web Speech API (`nl-NL`) at slow rate
+- Active card pulses with a scale animation while speaking
+- Last-opened lesson restored from `localStorage` key `kids_last_lesson`
+- Lessons are generated from card-sheet images using the workflow in `data/kids/README.md`
+
+---
+
 ## CSS conventions — `assets/style.css`
 
 - Mobile breakpoint: `@media (max-width: 768px)`
@@ -276,8 +409,21 @@ body
 ---
 
 ## Data files
-- Vocabulary: `data/vocabularies/<chapter>.json` (loaded by `curPage` / `currentPage` localStorage key)
-- JSON shape per word:
+
+### Vocabulary — `data/vocabularies/`
+Loaded by the `curPage` / `currentPage` localStorage key.
+
+| Prefix | Series |
+|---|---|
+| `ch01`–`ch18` | Main course chapters |
+| `core01`–`core10` | Core vocabulary |
+| `thema01`–`thema08` | Thematic lessons |
+| `sp02`–`sp27` | Speaking practice |
+| `sw02`–`sw42` | Speaking & writing |
+| `4000` | 4 000 most-common words |
+| `pn_th` | PN/TH thematic set |
+
+JSON shape per word:
 ```json
 {
   "dutch": "hallo",
@@ -288,6 +434,13 @@ body
   "englishtranslate": "Hello, how are you?"
 }
 ```
+
+### Phonetics — `data/klanken/klanken.json`
+Single file. See Klanken section above for shape.
+
+### Kids — `data/kids/lxx.json`
+`l01`–`l05` currently. See Kids section above for shape.
+Add new lessons by creating the next `lxx.json`; the app discovers them automatically.
 
 ---
 

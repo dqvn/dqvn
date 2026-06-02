@@ -321,11 +321,13 @@ function _applyVoiceFromSelector() {
    the user clicks Start Game or Flashcards Game.
    loadPuter() returns a Promise that resolves once window.puter is ready.
    ─────────────────────────────────────────────────────────────────────── */
-let _puterPromise = null;
+let _puterPromise   = null;
+let _puterAvailable = null; // null=unknown, true=loaded, false=blocked/unavailable
 
 function loadPuter() {
-    if (window.puter) return Promise.resolve();       // already loaded
-    if (_puterPromise)  return _puterPromise;          // load in progress
+    if (window.puter)          return Promise.resolve();  // already loaded
+    if (_puterAvailable===false) return Promise.reject(new Error('puter unavailable'));
+    if (_puterPromise)          return _puterPromise;     // load in progress
 
     // puter.js needs a CommonJS shim in plain browser environments
     if (typeof require === 'undefined') {
@@ -336,8 +338,8 @@ function loadPuter() {
     _puterPromise = new Promise((resolve, reject) => {
         const s = document.createElement('script');
         s.src = 'https://js.puter.com/v2/';
-        s.onload  = resolve;
-        s.onerror = () => reject(new Error('puter.js failed to load'));
+        s.onload  = () => { _puterAvailable = true;  resolve(); };
+        s.onerror = () => { _puterAvailable = false; reject(new Error('puter.js blocked or unavailable')); };
         document.head.appendChild(s);
     });
 
@@ -364,7 +366,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!btn) return;
 
         btn.addEventListener('click', async e => {
-            if (window.puter) return;           // already loaded — let it through
+            if (window.puter || _puterAvailable === false) return; // loaded or known-blocked — let game.js handle
             e.stopImmediatePropagation();       // block game.js for now
 
             const textEl = btn.querySelector('.button-text');

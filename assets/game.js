@@ -125,7 +125,7 @@ async function showQuestion() {
         }
 
         _updateProgressHeader();
-        generateStoryFromPuter(data, document.getElementById('question'));
+        if (window.puter) generateStoryFromPuter(data, document.getElementById('question'));
     }
 
     if (currentWordIndex < maxNumber && currentWordIndex < data.length) {
