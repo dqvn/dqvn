@@ -521,6 +521,185 @@
   .ft-flag { font-size: 1rem; }
 
   /* ══════════════════════════
+     PLAN CARDS (pricing style)
+  ══════════════════════════ */
+  .plans-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    align-items: start;
+  }
+  .plan-card {
+    background: rgba(255,255,255,.78);
+    backdrop-filter: blur(14px) saturate(1.4);
+    -webkit-backdrop-filter: blur(14px) saturate(1.4);
+    border: 1px solid rgba(255,255,255,.52);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: box-shadow .2s;
+  }
+  .plan-card:hover { box-shadow: var(--shadow-md); }
+
+  .plan-card.plan-featured {
+    border: 2px solid var(--accent);
+    box-shadow: 0 6px 32px var(--accent-glow), var(--shadow);
+  }
+  .plan-card.plan-featured:hover {
+    box-shadow: 0 10px 40px var(--accent-glow), var(--shadow-md);
+  }
+
+  /* ── Header band ── */
+  .plan-head {
+    padding: 24px 24px 20px;
+    position: relative;
+  }
+  .plan-card:not(.plan-featured) .plan-head {
+    background: rgba(0,0,0,.025);
+    border-bottom: 1px solid rgba(0,0,0,.06);
+  }
+  .plan-featured .plan-head {
+    background: linear-gradient(135deg, #b45309 0%, #ea580c 48%, #f97316 100%);
+  }
+
+  .plan-badge {
+    display: inline-flex;
+    align-items: center;
+    font-size: .62rem;
+    font-weight: 800;
+    letter-spacing: .7px;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: var(--r-pill);
+    margin-bottom: 10px;
+  }
+  .plan-card:not(.plan-featured) .plan-badge { background: var(--border-soft); color: var(--text-2); }
+  .plan-featured .plan-badge               { background: rgba(255,255,255,.22); color: #fff; }
+
+  .plan-name {
+    font-size: 1.25rem;
+    font-weight: 900;
+    letter-spacing: -.35px;
+    margin-bottom: 4px;
+    line-height: 1.2;
+  }
+  .plan-card:not(.plan-featured) .plan-name { color: var(--text); }
+  .plan-featured .plan-name                 { color: #fff; text-shadow: 0 1px 4px rgba(0,0,0,.12); }
+
+  .plan-sub { font-size: .78rem; font-weight: 500; }
+  .plan-card:not(.plan-featured) .plan-sub { color: var(--text-3); }
+  .plan-featured .plan-sub                 { color: rgba(255,255,255,.72); }
+
+  .plan-price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    margin-top: 16px;
+  }
+  .plan-price {
+    font-size: 2.4rem;
+    font-weight: 900;
+    letter-spacing: -2px;
+    line-height: 1;
+  }
+  .plan-card:not(.plan-featured) .plan-price { color: var(--text); }
+  .plan-featured .plan-price                 { color: #fff; }
+
+  .plan-price-unit { font-size: .75rem; font-weight: 600; }
+  .plan-card:not(.plan-featured) .plan-price-unit { color: var(--text-3); }
+  .plan-featured .plan-price-unit                 { color: rgba(255,255,255,.65); }
+
+  .plan-always-tag {
+    font-size: .63rem; font-weight: 700;
+    padding: 2px 9px; border-radius: var(--r-pill);
+    margin-left: 4px; align-self: center;
+  }
+  .plan-card:not(.plan-featured) .plan-always-tag { background: #dcfce7; color: #15803d; }
+  .plan-featured .plan-always-tag                 { background: rgba(255,255,255,.22); color: #fff; }
+
+  /* ── Feature list ── */
+  .plan-body { padding: 20px 24px 26px; }
+
+  .plan-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+  }
+  .plan-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    padding: 7px 0;
+    border-bottom: 1px solid rgba(0,0,0,.04);
+    font-size: .84rem;
+    color: var(--text);
+    line-height: 1.45;
+  }
+  .plan-feature:last-child { border-bottom: none; }
+
+  .feat-ico {
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: .72rem;
+    font-weight: 800;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .feat-yes  { background: #dcfce7; color: #15803d; }
+  .feat-no   { background: #f1f5f9; color: #94a3b8; }
+  .feat-soon { background: #fff7ed; color: var(--accent); font-size: .8rem; }
+
+  .feat-dim { color: var(--text-3); }
+
+  .feat-soon-tag {
+    display: inline-block;
+    font-size: .6rem; font-weight: 700;
+    padding: 1px 7px; border-radius: var(--r-pill);
+    background: #fff7ed; color: var(--accent);
+    border: 1px solid #fed7aa;
+    margin-left: 5px;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
+  /* ── CTA button ── */
+  .plan-cta {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: var(--r-pill);
+    border: none;
+    font-family: inherit;
+    font-size: .9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background .15s, box-shadow .15s, transform .12s;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    letter-spacing: -.1px;
+  }
+  .plan-cta-neutral {
+    background: var(--border-soft);
+    color: var(--text-2);
+  }
+  .plan-cta-neutral:hover { background: var(--border); }
+  .plan-cta-accent {
+    background: linear-gradient(135deg, #ea580c, #f97316);
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(234,88,12,.30);
+  }
+  .plan-cta-accent:hover  { box-shadow: 0 6px 22px rgba(234,88,12,.42); transform: translateY(-1px); }
+  .plan-cta-accent:active { transform: translateY(0); }
+  .plan-cta-done {
+    background: #dcfce7;
+    color: #15803d;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  /* ══════════════════════════
      SCROLL REVEAL (CSS only)
   ══════════════════════════ */
   .reveal {
@@ -553,6 +732,11 @@
     .coming-grid { grid-template-columns: repeat(2, 1fr); }
     .stat-lbl { display: none; }
     .stat-pill { padding: 8px 12px; }
+  }
+  @media (max-width: 640px) {
+    .plans-grid { grid-template-columns: 1fr; }
+    /* Show featured card first on mobile */
+    .plan-featured { order: -1; }
   }
   @media (max-width: 420px) {
     .tools-grid { grid-template-columns: repeat(2, 1fr); }
@@ -679,6 +863,131 @@
         </div>
       </div>
     </div>
+
+    <!-- ── Waarom aanmelden ── -->
+    <div class="sec-head reveal">
+      <h2>Waarom aanmelden?</h2>
+      <span class="sec-badge">Altijd gratis</span>
+    </div>
+    <div class="plans-grid reveal">
+
+      <!-- Plan 1 — Guest -->
+      <div class="plan-card">
+        <div class="plan-head">
+          <span class="plan-badge">Zonder account</span>
+          <div class="plan-name">Anoniem Leren</div>
+          <div class="plan-sub">Direct starten, geen registratie nodig</div>
+          <div class="plan-price-row">
+            <span class="plan-price">€0</span>
+            <span class="plan-price-unit">/ altijd</span>
+            <span class="plan-always-tag">Gratis</span>
+          </div>
+        </div>
+        <div class="plan-body">
+          <ul class="plan-features">
+            <li class="plan-feature">
+              <span class="feat-ico feat-yes">✓</span>
+              <span>Alle <strong>7 leertools</strong> gebruiken</span>
+            </li>
+            <li class="plan-feature">
+              <span class="feat-ico feat-yes">✓</span>
+              <span>Vocabulaire &amp; flashcards (SM-2)</span>
+            </li>
+            <li class="plan-feature">
+              <span class="feat-ico feat-yes">✓</span>
+              <span>Klanken &amp; uitspraak leren</span>
+            </li>
+            <li class="plan-feature">
+              <span class="feat-ico feat-yes">✓</span>
+              <span>Werkwoorden conjugeren</span>
+            </li>
+            <li class="plan-feature">
+              <span class="feat-ico feat-yes">✓</span>
+              <span>Dialogen &amp; grammatica</span>
+            </li>
+            <li class="plan-feature">
+              <span class="feat-ico feat-no">✕</span>
+              <span class="feat-dim">Voortgang synchroniseren</span>
+            </li>
+            <li class="plan-feature">
+              <span class="feat-ico feat-no">✕</span>
+              <span class="feat-dim">Dagelijkse reeks bijhouden</span>
+            </li>
+            <li class="plan-feature">
+              <span class="feat-ico feat-no">✕</span>
+              <span class="feat-dim">Meerdere apparaten</span>
+            </li>
+            <li class="plan-feature">
+              <span class="feat-ico feat-no">✕</span>
+              <span class="feat-dim">Toekomstige functies</span>
+            </li>
+          </ul>
+          <a href="startnl.html" class="plan-cta plan-cta-neutral">Begin direct →</a>
+        </div>
+      </div>
+
+      <!-- Plan 2 — Logged in (featured) -->
+      <div class="plan-card plan-featured">
+        <div class="plan-head">
+          <span class="plan-badge">⭐ Aanbevolen</span>
+          <div class="plan-name">Persoonlijk Account</div>
+          <div class="plan-sub">Sync, statistieken &amp; toekomstige functies</div>
+          <div class="plan-price-row">
+            <span class="plan-price">€0</span>
+            <span class="plan-price-unit">/ altijd</span>
+            <span class="plan-always-tag">Altijd gratis</span>
+          </div>
+        </div>
+        <div class="plan-body">
+          <ul class="plan-features">
+            <li class="plan-feature">
+              <span class="feat-ico feat-yes">✓</span>
+              <span>Alles uit <strong>Anoniem</strong>, plus:</span>
+            </li>
+            <li class="plan-feature">
+              <span class="feat-ico feat-yes">☁️</span>
+              <span><strong>Cloud synchronisatie</strong> — overal bijhouden</span>
+            </li>
+            <li class="plan-feature">
+              <span class="feat-ico feat-yes">🔥</span>
+              <span><strong>Dagelijkse reeks</strong> &amp; motivatie bijhouden</span>
+            </li>
+            <li class="plan-feature">
+              <span class="feat-ico feat-yes">📊</span>
+              <span><strong>Statistieken</strong> — levenslange voortgang</span>
+            </li>
+            <li class="plan-feature">
+              <span class="feat-ico feat-yes">📱</span>
+              <span>Meerdere apparaten, één voortgang</span>
+            </li>
+            <li class="plan-feature">
+              <span class="feat-ico feat-yes">🔄</span>
+              <span>Automatische back-up van je data</span>
+            </li>
+            <li class="plan-feature">
+              <span class="feat-ico feat-soon">✦</span>
+              <span>📹 Video Lessen <span class="feat-soon-tag">Binnenkort</span></span>
+            </li>
+            <li class="plan-feature">
+              <span class="feat-ico feat-soon">✦</span>
+              <span>✍️ Schrijven &amp; Uitspreken <span class="feat-soon-tag">Binnenkort</span></span>
+            </li>
+            <li class="plan-feature">
+              <span class="feat-ico feat-soon">✦</span>
+              <span>🎧 Luisteroefeningen <span class="feat-soon-tag">Binnenkort</span></span>
+            </li>
+            <li class="plan-feature">
+              <span class="feat-ico feat-soon">✦</span>
+              <span>📜 Certificering NT2 <span class="feat-soon-tag">Binnenkort</span></span>
+            </li>
+          </ul>
+          <button class="plan-cta plan-cta-accent" id="plan-cta-btn">
+            Meld je gratis aan →
+          </button>
+        </div>
+      </div>
+
+    </div><!-- /.plans-grid -->
 
   </main>
 
@@ -932,6 +1241,30 @@
     const s = computeStats();
     renderStats(s);
     renderProgress(s);
+    updatePlanCTA();
+  }
+
+  /* ─── Plan CTA — updates based on login state ───────────────── */
+  function updatePlanCTA() {
+    const btn = document.getElementById('plan-cta-btn');
+    if (!btn) return;
+    const user = readJSON('fc_sync_user', null);
+    if (user) {
+      const first = user.name?.split(/[\s,]+/)[0] || user.email || '';
+      btn.textContent = `✓ Aangemeld als ${first}`;
+      btn.className = 'plan-cta plan-cta-done';
+    } else {
+      btn.textContent = 'Meld je gratis aan →';
+      btn.className = 'plan-cta plan-cta-accent';
+      btn.onclick = () => {
+        if (window.google?.accounts?.id) {
+          google.accounts.id.prompt(() => {});
+        } else {
+          /* GIS not loaded yet — scroll to the header sign-in widget */
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      };
+    }
   }
 
   /* Called by sync.js after a successful cloud sync — refresh stats */
