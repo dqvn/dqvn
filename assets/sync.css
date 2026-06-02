@@ -1,7 +1,8 @@
 /* ── Sync section in left menu ───────────────────────────────────────── */
 #sync-section {
-    padding: 10px 10px 6px;
-    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 8px 10px 4px;
+    border-top: 1px solid #e2e8f0;
+    flex-shrink: 0;   /* never squished by the courses spacer above */
 }
 
 .sync-row {
@@ -17,28 +18,31 @@
     align-items: center;
     gap: 8px;
     width: 100%;
-    padding: 8px 12px;
-    border: 1px solid rgba(255,255,255,0.15);
+    padding: 7px 10px;
+    border: 1px solid #cbd5e1;
     border-radius: 8px;
-    background: rgba(255,255,255,0.06);
-    color: rgba(255,255,255,0.80);
+    background: #f8fafc;
+    color: #374151;
     font-family: inherit;
     font-size: 0.82rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.15s;
+    transition: background 0.15s, border-color 0.15s;
 }
-.sync-signin-btn:hover { background: rgba(255,255,255,0.12); }
+.sync-signin-btn:hover {
+    background: #f1f5f9;
+    border-color: #94a3b8;
+}
 .sync-g-logo { flex-shrink: 0; }
 
 /* Signed-in: user row */
 .sync-avatar {
-    width: 28px;
-    height: 28px;
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
-    border: 1.5px solid rgba(255,255,255,0.2);
+    border: 1.5px solid #e2e8f0;
 }
 .sync-info {
     flex: 1;
@@ -50,55 +54,56 @@
 .sync-name {
     font-size: 0.80rem;
     font-weight: 700;
-    color: rgba(255,255,255,0.90);
+    color: #1e293b;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 .sync-last {
     font-size: 0.68rem;
-    color: rgba(255,255,255,0.45);
+    color: #94a3b8;
 }
 
-/* Sync now button (↻) */
+/* Sync now (↻) button */
 .sync-now-btn {
     flex-shrink: 0;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
-    border: none;
-    background: rgba(255,255,255,0.08);
-    color: rgba(255,255,255,0.75);
+    border: 1px solid #e2e8f0;
+    background: #f1f5f9;
+    color: #64748b;
     font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.15s, transform 0.2s;
+    transition: background 0.15s, color 0.15s;
     line-height: 1;
+    padding: 0;
 }
-.sync-now-btn:hover   { background: rgba(255,255,255,0.16); }
-.sync-now-btn:disabled { opacity: 0.45; cursor: default; }
-.sync-now-btn.sync-spinning { animation: spin 0.8s linear infinite; }
-@keyframes spin { to { transform: rotate(360deg); } }
+.sync-now-btn:hover   { background: #e2e8f0; color: #1e293b; }
+.sync-now-btn:disabled { opacity: 0.4; cursor: default; }
+.sync-now-btn.sync-spinning { animation: sync-spin 0.8s linear infinite; }
+@keyframes sync-spin { to { transform: rotate(360deg); } }
 
 /* Sign out link */
 .sync-signout-btn {
     width: 100%;
-    padding: 4px 0;
+    padding: 3px 0 2px;
     border: none;
     background: none;
-    color: rgba(255,255,255,0.30);
+    color: #94a3b8;
     font-family: inherit;
     font-size: 0.70rem;
     cursor: pointer;
     text-align: left;
     transition: color 0.15s;
 }
-.sync-signout-btn:hover { color: rgba(255,255,255,0.60); }
+.sync-signout-btn:hover { color: #64748b; }
 
-/* Toast notification */
+/* Toast */
 #sync-toast {
     position: fixed;
     bottom: 24px;
