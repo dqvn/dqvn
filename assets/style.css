@@ -966,7 +966,7 @@ button:hover {
 
 /* Menu open: button moves to top-right of the left menu panel */
 .container:not(.menu-hidden) .toggle-menu-button {
-    left: 220px; /* left-menu margin(15) + padding(10) + width(160) + padding(10) - button(~40) */
+    left: 250px; /* left-menu margin(15) + padding(10) + width(160) + padding(10) - button(~40) */
 }
 
 .sentence-example {
