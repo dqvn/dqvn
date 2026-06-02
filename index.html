@@ -48,13 +48,35 @@
 
   body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    background: var(--bg);
+    background-color: var(--bg);
+    background-image: url('assets/bg2.jpg');
+    background-size: cover;
+    background-position: center 28%;
+    background-attachment: fixed;
     color: var(--text);
     min-height: 100dvh;
     font-size: 15px;
     line-height: 1.55;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Gradient scrim: photo shows at top, cream fades in below the hero */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: linear-gradient(
+      to bottom,
+      rgba(20,  8,  0, 0.44)  0%,
+      rgba(20,  8,  0, 0.16) 22%,
+      rgba(254,247,237, 0.32) 38%,
+      rgba(254,247,237, 0.84) 58%,
+      rgba(254,247,237, 0.97) 74%,
+      rgba(254,247,237, 1.00) 100%
+    );
   }
 
   /* ══════════════════════════
@@ -143,17 +165,24 @@
   ══════════════════════════ */
   #hero {
     position: relative;
+    z-index: 1;
     padding: 52px 28px 44px;
-    background: linear-gradient(130deg, #b45309 0%, #ea580c 38%, #f97316 68%, #fbbf24 100%);
+    /* Translucent warm tint — the photo background shows through */
+    background: linear-gradient(
+      150deg,
+      rgba(100, 35,  0, 0.54) 0%,
+      rgba(165, 70,  0, 0.42) 55%,
+      rgba(220, 100,  8, 0.28) 100%
+    );
     overflow: hidden;
   }
-  /* Subtle radial light */
+  /* Vignette edges */
   #hero::before {
     content: '';
     position: absolute; inset: 0;
     background:
-      radial-gradient(ellipse 55% 90% at 95% 50%, rgba(255,255,255,.09) 0%, transparent 70%),
-      radial-gradient(ellipse 35% 55% at 5%  85%, rgba(0,0,0,.06)       0%, transparent 65%);
+      radial-gradient(ellipse 70% 100% at 0% 50%,   rgba(0,0,0,.14)   0%, transparent 65%),
+      radial-gradient(ellipse 40%  60% at 100% 100%, rgba(0,0,0,.10)   0%, transparent 60%);
     pointer-events: none;
   }
   /* Large 'NL' watermark */
@@ -223,6 +252,8 @@
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 28px 80px;
+    position: relative;
+    z-index: 1;
   }
 
   /* Section header row */
@@ -264,17 +295,23 @@
     gap: 14px;
   }
   .prog-card {
-    background: var(--surface);
-    border: 1px solid var(--border-soft);
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(14px) saturate(1.5);
+    -webkit-backdrop-filter: blur(14px) saturate(1.5);
+    border: 1px solid rgba(255, 255, 255, 0.58);
     border-radius: var(--r);
     padding: 18px 20px 16px;
     box-shadow: var(--shadow-sm);
     text-decoration: none;
     color: inherit;
     display: block;
-    transition: box-shadow .2s, transform .18s;
+    transition: box-shadow .2s, transform .18s, background .2s;
   }
-  .prog-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+  .prog-card:hover {
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
   .prog-card-top {
     display: flex;
     align-items: center;
@@ -314,8 +351,10 @@
     gap: 12px;
   }
   .tool-card {
-    background: var(--surface);
-    border: 1px solid var(--border-soft);
+    background: rgba(255, 255, 255, 0.76);
+    backdrop-filter: blur(12px) saturate(1.4);
+    -webkit-backdrop-filter: blur(12px) saturate(1.4);
+    border: 1px solid rgba(255, 255, 255, 0.52);
     border-radius: var(--r);
     padding: 22px 14px 18px;
     text-decoration: none;
@@ -328,7 +367,7 @@
     box-shadow: var(--shadow-sm);
     position: relative;
     overflow: hidden;
-    transition: box-shadow .2s, transform .18s, border-color .2s;
+    transition: box-shadow .2s, transform .18s, background .2s, border-color .2s;
   }
   .tool-card::before {
     content: '';
@@ -337,7 +376,12 @@
     background: var(--tc, var(--accent));
     transition: height .2s;
   }
-  .tool-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); border-color: var(--tc, var(--border)); }
+  .tool-card:hover {
+    background: rgba(255, 255, 255, 0.90);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+    border-color: var(--tc, var(--border));
+  }
   .tool-card:hover::before { height: 5px; }
   .tool-card:active { transform: translateY(-1px); }
   .tc-icon { font-size: 2rem; line-height: 1; margin-bottom: 3px; }
@@ -356,8 +400,10 @@
      SETTINGS ROW
   ══════════════════════════ */
   .settings-panel {
-    background: var(--surface);
-    border: 1px solid var(--border-soft);
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(14px) saturate(1.4);
+    -webkit-backdrop-filter: blur(14px) saturate(1.4);
+    border: 1px solid rgba(255, 255, 255, 0.55);
     border-radius: var(--r);
     box-shadow: var(--shadow-sm);
     padding: 18px 22px;
@@ -398,17 +444,19 @@
     gap: 12px;
   }
   .coming-card {
-    background: var(--surface-2);
-    border: 1.5px dashed var(--border);
+    background: rgba(255, 248, 240, 0.65);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1.5px dashed rgba(254, 215, 170, 0.8);
     border-radius: var(--r);
     padding: 16px 18px;
     display: flex;
     align-items: center;
     gap: 13px;
     opacity: .65;
-    transition: opacity .2s;
+    transition: opacity .2s, background .2s;
   }
-  .coming-card:hover { opacity: .85; }
+  .coming-card:hover { opacity: .85; background: rgba(255, 248, 240, 0.82); }
   .coming-ico {
     width: 40px; height: 40px;
     background: var(--border-soft);
@@ -433,6 +481,8 @@
      PORTAL FOOTER
   ══════════════════════════ */
   #portal-footer {
+    position: relative;
+    z-index: 1;
     border-top: 1px solid var(--border-soft);
     padding: 22px 28px max(22px, env(safe-area-inset-bottom, 0px));
     display: flex;
@@ -461,6 +511,15 @@
      RESPONSIVE
   ══════════════════════════ */
   @media (max-width: 720px) {
+    /* iOS/Android: fixed-attachment background is slow/broken — switch to scroll */
+    body {
+      background-attachment: scroll;
+      background-position: center 20%;
+    }
+    body::before {
+      position: absolute;   /* scrim scrolls with page instead of fixed */
+      min-height: 100%;
+    }
     #portal-header { padding: 0 16px; height: 56px; }
     .hdr-sub { display: none; }
     #hero { padding: 38px 16px 34px; }
