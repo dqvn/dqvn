@@ -1186,3 +1186,65 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
+
+/* ══════════════════════════════════════════════════════
+   Sync UI — dark sidebar overrides (dialogues + kids)
+   Scoped to #sidebar so light-menu pages are unchanged.
+══════════════════════════════════════════════════════ */
+
+/* Section separator matches other sidebar borders */
+#sidebar #sync-section {
+  border-top: 1px solid rgba(255,255,255,.07);
+  padding: 8px 10px 6px;
+}
+
+/* Signed-in card */
+#sidebar .sync-card {
+  background: rgba(0,0,0,.20);
+  border: 1px solid rgba(255,255,255,.08);
+}
+#sidebar .sync-card--busy {
+  background: rgba(232,93,4,.12);
+  border-color: rgba(232,93,4,.30);
+}
+#sidebar .sync-avatar {
+  border-color: rgba(255,255,255,.15);
+  box-shadow: none;
+}
+#sidebar .sync-name   { color: rgba(255,255,255,.78); }
+#sidebar .sync-status { color: rgba(255,255,255,.38); }
+
+/* ⋮ menu button */
+#sidebar .sync-menu-btn {
+  background: none;
+  border-color: transparent;
+  color: rgba(255,255,255,.32);
+}
+#sidebar .sync-menu-btn:hover {
+  background: rgba(255,255,255,.08);
+  color: rgba(255,255,255,.75);
+}
+
+/* Dropdown panel */
+#sidebar .sync-dropdown {
+  background: #1c2a42;
+  border: 1px solid rgba(255,255,255,.10);
+  box-shadow: 0 8px 28px rgba(0,0,0,.55), 0 2px 8px rgba(0,0,0,.35);
+}
+#sidebar .sync-dd-item {
+  color: rgba(255,255,255,.75);
+}
+#sidebar .sync-dd-item:hover {
+  background: rgba(255,255,255,.06);
+}
+#sidebar .sync-dd-item:disabled { opacity: .35; }
+#sidebar .sync-dd-signout {
+  color: #ff7c38;
+  border-top-color: rgba(255,255,255,.08);
+}
+#sidebar .sync-dd-signout:hover { background: rgba(232,93,4,.15); }
+
+/* Signed-out: sign-in button */
+#sidebar .sync-signin-row  { width: 100%; }
+#sidebar .sync-gis-wrap    { justify-content: flex-start; }
+/* GIS renders its own iframe — just ensure it has room */
