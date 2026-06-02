@@ -2421,7 +2421,7 @@ button:hover {
     color: #0369a1;
     line-height: 1.5;
     width: 100%;
-    text-align: left;
+    text-align: center;
 }
 #fc-sentence-en {
     font-size: 0.78rem;
