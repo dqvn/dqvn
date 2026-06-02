@@ -345,6 +345,29 @@
   /* ══════════════════════════
      TOOLS GRID
   ══════════════════════════ */
+  #tools-container {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  .tools-group-lbl {
+    font-size: .7rem;
+    font-weight: 800;
+    color: var(--text-2);
+    letter-spacing: .6px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+    padding-left: 2px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .tools-group-lbl::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--border), transparent);
+  }
   .tools-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -598,9 +621,9 @@
     <!-- ── Tools ── -->
     <div class="sec-head reveal">
       <h2>Leertools</h2>
-      <span class="sec-badge">7 tools</span>
+      <span class="sec-badge">3 categorieën</span>
     </div>
-    <div class="tools-grid reveal" id="tools-grid">
+    <div id="tools-container" class="reveal">
       <!-- filled by renderTools() -->
     </div>
 
@@ -678,13 +701,13 @@
 
   /* ─── Tools manifest ─────────────────────────────────────────── */
   const TOOLS = [
-    { href:'startnl.html',   icon:'📖', nl:'Vocabulaire',  en:'Woordenlijst & flashcards', color:'#2563eb', badge:'Actief'     },
-    { href:'vanstart.html',  icon:'🚀', nl:'VanStart',     en:'NT2 beginnerscursus',       color:'#059669', badge:'Actief'     },
-    { href:'klanken.html',   icon:'🎵', nl:'Klanken',      en:'Uitspraak leren',           color:'#7c3aed', badge:'Actief'     },
-    { href:'dialogues.html', icon:'💬', nl:'Dialogen',     en:'Gespreksoefening',          color:'#0891b2'                     },
-    { href:'grammar.html',   icon:'📚', nl:'Grammatica',   en:'Regels & uitleg',           color:'#b45309'                     },
-    { href:'verbs.html',     icon:'🔄', nl:'Werkwoorden',  en:'Vervoeging oefenen',        color:'#dc2626', badge:'Actief'     },
-    { href:'kids.html',      icon:'🧒', nl:'Kids',         en:'Kinderen woordenschat',     color:'#16a34a', badge:'Nieuw'      },
+    { href:'startnl.html',   icon:'📖', nl:'Vocabulaire',  en:'Woordenlijst & flashcards', color:'#2563eb', badge:'Actief', group:'📚 Woordenschat' },
+    { href:'vanstart.html',  icon:'🚀', nl:'VanStart',     en:'NT2 beginnerscursus',       color:'#059669', badge:'Actief', group:'📚 Woordenschat' },
+    { href:'kids.html',      icon:'🧒', nl:'Kids',         en:'Kinderen woordenschat',     color:'#16a34a', badge:'Nieuw',  group:'📚 Woordenschat' },
+    { href:'klanken.html',   icon:'🎵', nl:'Klanken',      en:'Uitspraak leren',           color:'#7c3aed', badge:'Actief', group:'🎙️ Uitspreken'   },
+    { href:'dialogues.html', icon:'💬', nl:'Dialogen',     en:'Gespreksoefening',          color:'#0891b2',                 group:'🎙️ Uitspreken'   },
+    { href:'grammar.html',   icon:'📚', nl:'Grammatica',   en:'Regels & uitleg',           color:'#b45309',                 group:'📖 Grammatica'   },
+    { href:'verbs.html',     icon:'🔄', nl:'Werkwoorden',  en:'Vervoeging oefenen',        color:'#dc2626', badge:'Actief', group:'📖 Grammatica'   },
   ];
 
   /* ─── Helpers ─────────────────────────────────────────────────── */
@@ -829,16 +852,26 @@
 
   /* ─── Render tools grid ──────────────────────────────────────── */
   function renderTools() {
-    const grid = document.getElementById('tools-grid');
-    grid.innerHTML = TOOLS.map(t => `
+    /* Group tools preserving insertion order */
+    const groups = {};
+    TOOLS.forEach(t => { (groups[t.group] ??= []).push(t); });
+
+    const cardHtml = t => `
       <a class="tool-card" href="${t.href}" style="--tc:${t.color}">
         <div class="tc-icon">${t.icon}</div>
         <div class="tc-name">${t.nl}</div>
         <div class="tc-desc">${t.en}</div>
         ${t.badge === 'Actief' ? `<div class="tc-pill tc-pill-active">Actief</div>` : ''}
         ${t.badge === 'Nieuw'  ? `<div class="tc-pill tc-pill-new">Nieuw</div>`    : ''}
-      </a>
-    `).join('');
+      </a>`;
+
+    document.getElementById('tools-container').innerHTML =
+      Object.entries(groups).map(([grp, tools]) => `
+        <div class="tools-group">
+          <div class="tools-group-lbl">${grp}</div>
+          <div class="tools-grid">${tools.map(cardHtml).join('')}</div>
+        </div>
+      `).join('');
   }
 
   /* ─── Volume control ─────────────────────────────────────────── */
