@@ -376,10 +376,25 @@ body {
     margin-left: 0;
     padding: 12px 12px max(72px, calc(58px + env(safe-area-inset-bottom)));
     padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+    min-height: 100dvh;
+  }
+
+  /* Welcome fills the space */
+  #welcome { flex: 1; min-height: 0; }
+
+  /* Detail fills remaining space and distributes it */
+  #detail.show {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
   }
 
   /* Compact topbar */
-  .detail-topbar { margin-bottom: 10px; }
+  .detail-topbar { margin-bottom: 10px; flex-shrink: 0; }
 
   /* Compact phoneme card */
   .phoneme-card { padding: 12px 14px 10px; margin-bottom: 8px; }
@@ -395,13 +410,24 @@ body {
   .tip-main  { font-size: 12px; }
   .tip-mouth { font-size: 11px; margin-top: 3px; }
 
-  /* Compact examples — 3 columns, 2 rows */
-  .ex-label { margin-bottom: 6px; }
+  /* Compact phoneme/tip — don't let them steal extra height */
+  .phoneme-card { flex-shrink: 0; }
+  .tip-card     { flex-shrink: 0; }
+
+  /* Examples — 3 columns, 2 rows, grow to fill remaining space */
+  .ex-label { margin-bottom: 6px; flex-shrink: 0; }
   .ex-row {
     grid-template-columns: repeat(3,1fr);
     gap: 6px; margin-bottom: 8px;
+    flex: 1;
+    align-content: stretch;
+    min-height: 0;
   }
-  .ex-card { padding: 7px 4px; }
+  .ex-card {
+    padding: 7px 4px;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+  }
   .ex-emoji { font-size: 20px; margin-bottom: 3px; }
   .ex-word  { font-size: 13px; margin-bottom: 2px; }
   .ex-meaning { font-size: 10px; }
