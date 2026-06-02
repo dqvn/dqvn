@@ -333,7 +333,8 @@ const DCACHE = (() => {
    FILE DISCOVERY  –  cache-first, network fallback
    BK: const CACHE_TTL = 7 * 24 * 60 * 60 * 1000; // 7 days in ms
    ════════════════════════════════════════════════════ */
-const CACHE_TTL = 60 * 60 * 1000; // 1 hour in ms
+// const CACHE_TTL = 60 * 60 * 1000; // 1 hour in ms
+const CACHE_TTL = 2 * 24 * 60 * 60 * 1000; // 2 days in ms
 
 async function discover() {
     if (location.protocol === 'file:')
