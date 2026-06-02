@@ -411,7 +411,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* Maximum ms to wait for a single utterance to finish before moving on.
    Guards against the Chrome bug where onend never fires. */
-const TTS_MAX_MS = 20000;
+const TTS_MAX_MS    = 20000;
+const TTS_RATE_KEY  = 'nl_tts_rate';   // shared speed setting (0.5 – 1.5, default 0.8)
+
+function _getTTSRate() {
+    try {
+        const v = parseFloat(localStorage.getItem(TTS_RATE_KEY));
+        return isNaN(v) ? 0.8 : Math.min(1.5, Math.max(0.5, v));
+    } catch { return 0.8; }
+}
 
 function _buildUtterance(text, lang, rate, pitch) {
     const speech  = new SpeechSynthesisUtterance();
@@ -434,7 +442,7 @@ function speakText(text) {
     }
     if (!googleNederlandsVoice) googleNederlandsVoice = getPreferredVoice();
 
-    const speech = _buildUtterance(text, TTSLang, 0.8, 1);
+    const speech = _buildUtterance(text, TTSLang, _getTTSRate(), 1);
     if (googleNederlandsVoice) {
         speech.voice = googleNederlandsVoice;
         document.getElementById('tts-name').textContent = googleNederlandsVoice.name;
@@ -471,7 +479,7 @@ async function speakTextAsync(text) {
     if (!voices.length) return;                       // still no voices — skip silently
 
     return new Promise(resolve => {
-        const speech = _buildUtterance(text, TTSLang, 0.8, 1);
+        const speech = _buildUtterance(text, TTSLang, _getTTSRate(), 1);
         if (googleNederlandsVoice) {
             speech.voice = googleNederlandsVoice;
             document.getElementById('tts-name').textContent = googleNederlandsVoice.name;
