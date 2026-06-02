@@ -894,11 +894,12 @@
               <div id="fc-english"></div>
               <div id="fc-vietnamese"></div>
               <div class="fc-back-divider"></div>
-              <div class="fc-sentence-row">
-                <button id="fc-sentence-speak-btn" class="fc-sentence-speak-btn" title="Hear Dutch sentence">🔊</button>
-                <div id="fc-sentence-nl"></div>
-              </div>
+              <div id="fc-sentence-nl"></div>
               <div id="fc-sentence-en"></div>
+              <button id="fc-sentence-speak-btn" class="fc-speak-btn" title="Hear Dutch sentence">
+                <span class="fc-speak-icon">🔊</span>
+                <span>Hear it</span>
+              </button>
             </div>
           </div>
         </div>
