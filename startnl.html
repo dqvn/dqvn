@@ -46,7 +46,7 @@
     <div id="sync-section"></div>
 
       <div class="spacer">
-        <h4>Menu</h4>
+        <h4>Setting:</h4>
         <div id="tts-name"></div>
         <select id="tts-voice-select"></select>
         <!-- add Volumn & Play button -->
@@ -71,9 +71,10 @@
       </div>
       <span></span>
       <div class="spacer">
-        <nav class="lm-nav">
-          <a href="index.html" class="lm-nav-link" title="Go to Main">🏠 Main</a>
-        </nav>
+        <button id="lm-launcher-btn" onclick="openLauncher()" title="Open all tools">
+          ⊞ &nbsp;Alle tools
+          <span class="lm-launcher-count">7</span>
+        </button>
         <h4>Dutch Courses:</h4>
         <div class="file-container div-with-scrollbar">
           <ul id="file-list">
@@ -110,8 +111,20 @@
       </table>
     </div>
   </div>
+  <!-- App Launcher overlay (rendered by initAppLauncher in common.js) -->
+  <div id="app-launcher" class="al-hidden" role="dialog" aria-modal="true" aria-label="Alle tools">
+    <div class="al-backdrop" onclick="closeLauncher()"></div>
+    <div class="al-panel">
+      <div class="al-header">
+        <span>🇳🇱 Dutch Learning Tools</span>
+        <button class="al-close-btn" onclick="closeLauncher()" aria-label="Sluiten">✕</button>
+      </div>
+      <div class="al-body" id="al-body"></div>
+    </div>
+  </div>
+
   <script src="assets/common.js"></script>
-  <script src="assets/ttsvanstartscript.js"></script>
+  <script src="assets/ttsscript.js"></script>
   <script src="assets/game.js"></script>
   <script src="assets/flashcard.js"></script>
   <script src="assets/sync.js" defer></script>

@@ -1,109 +1,177 @@
-/* ── Sync section wrapper ────────────────────────────────────────────── */
+/* ══════════════════════════════════════════════════════════════
+   sync.css — Cloud sync UI (top-of-menu bar, footer-matched design)
+
+   The #sync-section sits at the TOP of each sidebar / left-menu
+   and mirrors the footer section's visual language.
+
+   Two themes controlled by parent context:
+   • .left-menu   → light (index, vanstart, 4000)
+   • #sidebar     → light sidebar (klanken)
+   • .sidebar-dark → dark sidebar (dialogues, kids, verbs)
+══════════════════════════════════════════════════════════════ */
+
+/* ── Wrapper ──────────────────────────────────────────────── */
 #sync-section {
-    padding: 8px 10px 10px;
-    border-top: 1px solid #e2e8f0;
     flex-shrink: 0;
 }
 
-/* ── Signed-out: GIS rendered button wrapper ─────────────────────────── */
+/* Light left-menu — matches #lm-footer */
+.left-menu #sync-section {
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    background: rgba(0,0,0,0.03);
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 6px;
+}
+
+/* Light sidebar (klanken) — matches its section dividers */
+#sidebar:not(.sidebar-dark) #sync-section {
+    border-bottom: 1px solid #EDF2F7;
+}
+
+/* Dark sidebar (dialogues, kids, verbs) — matches #app-footer */
+.sidebar-dark#sidebar #sync-section,
+.sidebar-dark #sync-section {
+    border-bottom: 1px solid rgba(255,255,255,.07);
+    background: rgba(0,0,0,.22);
+}
+
+/* ── Signed-out: GIS button row ───────────────────────────── */
 .sync-signin-row {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.left-menu .sync-signin-row  { padding: 7px 10px; }
+#sidebar .sync-signin-row    { padding: 7px 14px; }
+
 .sync-gis-wrap {
     width: 100%;
-    min-height: 44px;
-    /* GIS renders an iframe inside here — let it breathe */
+    min-height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* ── Signed-in: compact card ────────────────────────────────────────── */
+/* ── Signed-in card — footer layout ──────────────────────── */
 .sync-card {
     display: flex;
     align-items: center;
     gap: 9px;
-    padding: 8px 10px;
-    border-radius: 10px;
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    transition: border-color 0.2s;
-}
-.sync-card--busy {
-    border-color: #bfdbfe;
-    background: #eff6ff;
+    background: none;
+    border: none;
+    border-radius: 0;
 }
 
+/* Padding per context */
+.left-menu .sync-card                    { padding: 10px; }
+#sidebar:not(.sidebar-dark) .sync-card  { padding: 10px 16px 10px; }
+.sidebar-dark .sync-card                { padding: 11px 14px; }
+
+/* ── Avatar ───────────────────────────────────────────────── */
 .sync-avatar {
-    width: 34px;
-    height: 34px;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
+}
+
+/* Light left-menu: 30 px, matches lm-ft-avatar size */
+.left-menu .sync-avatar {
+    width: 30px; height: 30px;
     border: 2px solid #fff;
     box-shadow: 0 0 0 1.5px #e2e8f0;
 }
 
+/* Light sidebar (klanken): 32 px */
+#sidebar:not(.sidebar-dark) .sync-avatar {
+    width: 32px; height: 32px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.12);
+}
+
+/* Dark sidebar: 34 px, matches app-footer avatar size */
+.sidebar-dark .sync-avatar {
+    width: 34px; height: 34px;
+    border: 2px solid rgba(255,255,255,.12);
+    box-shadow: 0 2px 8px rgba(0,0,0,.35);
+}
+
+/* ── Info block ───────────────────────────────────────────── */
 .sync-info {
     flex: 1;
     min-width: 0;
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 1px;
 }
+
 .sync-name {
-    font-size: 0.82rem;
-    font-weight: 700;
-    color: #1e293b;
+    font-weight: 600;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    line-height: 1.2;
-}
-.sync-status {
-    font-size: 0.69rem;
-    color: #64748b;
-    line-height: 1.2;
+    line-height: 1.25;
 }
 
-/* ── Overflow menu ───────────────────────────────────────────────────── */
+.sync-status {
+    line-height: 1.25;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Light left-menu colours */
+.left-menu .sync-name   { font-size: .62rem; color: rgba(0,0,0,.65); }
+.left-menu .sync-status { font-size: .55rem; color: rgba(0,0,0,.38); }
+
+/* Light sidebar (klanken) */
+#sidebar:not(.sidebar-dark) .sync-name   { font-size: .72rem; font-weight: 700; color: #1A202C; }
+#sidebar:not(.sidebar-dark) .sync-status { font-size: .62rem; color: #718096; }
+
+/* Dark sidebar */
+.sidebar-dark .sync-name   { font-size: .7rem; color: rgba(255,255,255,.72); }
+.sidebar-dark .sync-status { font-size: .6rem;  color: rgba(255,255,255,.32); }
+
+/* ── Overflow menu ────────────────────────────────────────── */
 .sync-menu-wrap {
     position: relative;
     flex-shrink: 0;
-    align-self: flex-start;
+    align-self: center;
 }
 
 .sync-menu-btn {
-    width: 26px;
-    height: 26px;
-    border: none;
-    background: none;
-    color: #94a3b8;
-    font-size: 1.2rem;
-    font-weight: 700;
+    width: 24px; height: 24px;
+    border: none; background: none;
     cursor: pointer;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.15s, color 0.15s;
-    line-height: 1;
-    padding: 0;
-    letter-spacing: -1px;
+    border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.15rem; font-weight: 700;
+    line-height: 1; padding: 0; letter-spacing: -1px;
+    transition: background .15s, color .15s;
 }
-.sync-menu-btn:hover { background: #e2e8f0; color: #475569; }
 
-/* Dropdown panel */
+/* Light left-menu */
+.left-menu .sync-menu-btn         { color: rgba(0,0,0,.28); }
+.left-menu .sync-menu-btn:hover   { background: rgba(0,0,0,.07); color: rgba(0,0,0,.55); }
+
+/* Light sidebar */
+#sidebar:not(.sidebar-dark) .sync-menu-btn        { color: #718096; }
+#sidebar:not(.sidebar-dark) .sync-menu-btn:hover  { background: #EDF2F7; color: #1A202C; }
+
+/* Dark sidebar */
+.sidebar-dark .sync-menu-btn       { color: rgba(255,255,255,.3); }
+.sidebar-dark .sync-menu-btn:hover { background: rgba(255,255,255,.1); color: rgba(255,255,255,.72); }
+
+/* ── Dropdown — opens DOWNWARD (section is at top) ──────────── */
 .sync-dropdown {
     display: none;
     position: absolute;
     right: 0;
-    bottom: calc(100% + 6px);
-    min-width: 148px;
+    top: calc(100% + 4px);   /* downward */
+    min-width: 152px;
     background: #fff;
     border: 1px solid #e2e8f0;
     border-radius: 10px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12), 0 2px 6px rgba(0,0,0,0.06);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.13), 0 2px 6px rgba(0,0,0,0.07);
     overflow: hidden;
     z-index: 200;
 }
@@ -115,39 +183,45 @@
     gap: 9px;
     width: 100%;
     padding: 10px 14px;
-    border: none;
-    background: none;
+    border: none; background: none;
     font-family: inherit;
-    font-size: 0.82rem;
-    font-weight: 600;
+    font-size: .82rem; font-weight: 600;
     color: #374151;
-    cursor: pointer;
-    text-align: left;
-    transition: background 0.12s;
+    cursor: pointer; text-align: left;
+    transition: background .12s;
 }
-.sync-dd-item:hover { background: #f8fafc; }
-.sync-dd-item:disabled { opacity: 0.45; cursor: default; }
+.sync-dd-item:hover     { background: #f8fafc; }
+.sync-dd-item:disabled  { opacity: .45; cursor: default; }
 
-.sync-dd-signout {
-    color: #dc2626;
-    border-top: 1px solid #f1f5f9;
+.sync-dd-signout               { color: #dc2626; border-top: 1px solid #f1f5f9; }
+.sync-dd-signout:hover         { background: #fef2f2; }
+
+/* Busy pulse */
+.sync-card--busy .sync-status  { opacity: .65; }
+
+/* ── Mobile overrides ─────────────────────────────────────── */
+@media (max-width: 768px) {
+    /* Full-bleed on mobile drawer (parent padding is 0) */
+    .left-menu #sync-section {
+        border-radius: 0;
+        margin-bottom: 0;
+        border-top: none;
+    }
+    .left-menu .sync-card { padding: 12px 16px; }
+    .left-menu .sync-signin-row { padding: 8px 16px; }
 }
-.sync-dd-signout:hover { background: #fef2f2; }
 
 /* ── Toast notification ─────────────────────────────────────────────── */
 #sync-toast {
     position: fixed;
-    bottom: 24px;
-    left: 50%;
+    bottom: 24px; left: 50%;
     transform: translateX(-50%) translateY(80px);
-    background: #1e293b;
-    color: #fff;
+    background: #1e293b; color: #fff;
     padding: 10px 22px;
     border-radius: 50px;
-    font-size: 13px;
-    font-weight: 700;
+    font-size: 13px; font-weight: 700;
     opacity: 0;
-    transition: transform 0.3s, opacity 0.3s;
+    transition: transform .3s, opacity .3s;
     z-index: 9999;
     pointer-events: none;
     white-space: nowrap;

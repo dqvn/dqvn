@@ -226,7 +226,7 @@ async function syncNow(silent = false) {
     // Apply synced volume to whichever slider exists on this page
     if (merged.vol && typeof merged.vol.v === 'number') {
       const v = merged.vol.v;
-      // index.html / vanstart.html / 4000.html
+      // startnl.html / vanstart.html / 4000.html
       const s1 = document.getElementById('volume-control');
       const l1 = document.getElementById('volume-value');
       if (s1) s1.value = v;
