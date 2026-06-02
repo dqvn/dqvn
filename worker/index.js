@@ -3,12 +3,18 @@
  *
  * POST /sync
  *   Authorization: Bearer <google-id-token>
- *   Body: { srs: {...nl_srs_v3...}, meta: {...nl_srs_meta_v3...} }
+ *   Body: {
+ *     srs:     nl_srs_v3       — flashcard SM-2 progress
+ *     meta:    nl_srs_meta_v3  — streak / daily counts
+ *     klanken: klanken-v1      — phonetics completion flags
+ *     verbs:   nl_verbs_v3     — verb trainer stats
+ *     game:    nl_game_progress_v1 — seen words per chapter
+ *   }
  *
- * Returns: { srs, meta }  (merged result written back to Upstash)
+ * Returns: same five fields merged
  *
  * Secrets (set via: wrangler secret put <NAME>)
- *   UPSTASH_URL   — full REST URL, e.g. https://excited-shark-39701.upstash.io
+ *   UPSTASH_URL   — full REST URL
  *   UPSTASH_TOKEN — Upstash REST token
  *
  * Plain vars (wrangler.toml [vars])
@@ -50,27 +56,37 @@ export default {
     try { body = await request.json(); }
     catch { return reply({ error: 'Invalid JSON' }, 400); }
 
-    const { srs: localSRS = {}, meta: localMeta = {} } = body;
+    const {
+      srs:     localSRS     = {},
+      meta:    localMeta    = {},
+      klanken: localKlanken = {},
+      verbs:   localVerbs   = {},
+      game:    localGame    = {},
+    } = body;
 
     // ── Redis read ────────────────────────────────────────────────────────
     const key    = `fc:${user.sub}`;
     const stored = await redisGet(env.UPSTASH_URL, env.UPSTASH_TOKEN, key);
 
-    const remoteSRS  = stored?.srs  || {};
-    const remoteMeta = stored?.meta || {};
-
-    // ── Merge ─────────────────────────────────────────────────────────────
-    const mergedSRS  = mergeSRS(localSRS, remoteSRS);
-    const mergedMeta = mergeMeta(localMeta, remoteMeta);
+    // ── Merge all five blobs ──────────────────────────────────────────────
+    const mergedSRS     = mergeSRS    (localSRS,     stored?.srs     || {});
+    const mergedMeta    = mergeMeta   (localMeta,    stored?.meta    || {});
+    const mergedKlanken = mergeKlanken(localKlanken, stored?.klanken || {});
+    const mergedVerbs   = mergeVerbs  (localVerbs,   stored?.verbs   || {});
+    const mergedGame    = mergeGame   (localGame,     stored?.game    || {});
 
     // ── Redis write ───────────────────────────────────────────────────────
     await redisSet(
       env.UPSTASH_URL, env.UPSTASH_TOKEN, key,
-      { srs: mergedSRS, meta: mergedMeta, syncedAt: Date.now() },
+      {
+        srs: mergedSRS, meta: mergedMeta,
+        klanken: mergedKlanken, verbs: mergedVerbs, game: mergedGame,
+        syncedAt: Date.now(),
+      },
       REDIS_TTL
     );
 
-    return reply({ srs: mergedSRS, meta: mergedMeta });
+    return reply({ srs: mergedSRS, meta: mergedMeta, klanken: mergedKlanken, verbs: mergedVerbs, game: mergedGame });
   },
 };
 
@@ -185,6 +201,75 @@ function mergeSRS(local, remote) {
     merged[chId] = chM;
   }
 
+  return merged;
+}
+
+// ── Klanken merge: union of completion flags { "cat:snd": 1 } ────────────
+
+function mergeKlanken(local, remote) {
+  if (!remote || !Object.keys(remote).length) return local;
+  if (!local  || !Object.keys(local).length)  return remote;
+  return { ...remote, ...local }; // union: 1 from either side is kept
+}
+
+// ── Verbs merge: per-verb max(seen, correct) inside each lesson ───────────
+
+function mergeVerbs(local, remote) {
+  if (!remote || remote.version !== 3) return local;
+  if (!local  || local.version  !== 3) return remote;
+
+  const mergedLessons = {};
+  const allLessons = new Set([
+    ...Object.keys(local.lessons  || {}),
+    ...Object.keys(remote.lessons || {}),
+  ]);
+
+  for (const lessonId of allLessons) {
+    const lL = local.lessons?.[lessonId]  || {};
+    const lR = remote.lessons?.[lessonId] || {};
+
+    const mergedStats = {};
+    const allVerbs = new Set([
+      ...Object.keys(lL.verbStats || {}),
+      ...Object.keys(lR.verbStats || {}),
+    ]);
+    for (const verb of allVerbs) {
+      const vL = lL.verbStats?.[verb] || { seen: 0, correct: 0 };
+      const vR = lR.verbStats?.[verb] || { seen: 0, correct: 0 };
+      mergedStats[verb] = {
+        seen:    Math.max(vL.seen    || 0, vR.seen    || 0),
+        correct: Math.max(vL.correct || 0, vR.correct || 0),
+      };
+    }
+
+    mergedLessons[lessonId] = {
+      sessions:      Math.max(lL.sessions      || 0, lR.sessions      || 0),
+      totalCorrect:  Math.max(lL.totalCorrect  || 0, lR.totalCorrect  || 0),
+      totalAnswered: Math.max(lL.totalAnswered || 0, lR.totalAnswered || 0),
+      verbStats: mergedStats,
+    };
+  }
+
+  // Base from most recently active device, then overlay merged lessons
+  const base = (local.lastStudy || '') >= (remote.lastStudy || '') ? local : remote;
+  return {
+    ...base,
+    streak:  Math.max(local.streak || 0, remote.streak || 0),
+    lessons: mergedLessons,
+  };
+}
+
+// ── Game merge: union of seen-word arrays per chapter ─────────────────────
+
+function mergeGame(local, remote) {
+  if (!remote || !Object.keys(remote).length) return local;
+  if (!local  || !Object.keys(local).length)  return remote;
+
+  const merged = { ...remote };
+  for (const [ch, words] of Object.entries(local)) {
+    if (!merged[ch]) { merged[ch] = words; continue; }
+    merged[ch] = [...new Set([...merged[ch], ...words])];
+  }
   return merged;
 }
 

@@ -11,11 +11,18 @@ const SYNC_WORKER_URL  = 'https://nl-sync.itho.workers.dev';
 const GOOGLE_CLIENT_ID = '813394172048-mn81bvhivheomlm3453on49f5gbp31so.apps.googleusercontent.com';
 
 // ── localStorage keys ─────────────────────────────────────────────────────
-const _KEY_USER  = 'fc_sync_user';    // { sub, name, email, picture }
-const _KEY_TOKEN = 'fc_sync_token';   // Google id_token (1 h expiry)
-const _KEY_LAST  = 'fc_sync_last';    // ms timestamp of last successful sync
-const _KEY_SRS   = 'nl_srs_v3';
-const _KEY_META  = 'nl_srs_meta_v3';
+const _KEY_USER    = 'fc_sync_user';         // { sub, name, email, picture }
+const _KEY_TOKEN   = 'fc_sync_token';        // Google id_token (1 h expiry)
+const _KEY_LAST    = 'fc_sync_last';         // ms timestamp of last successful sync
+
+// Keys that are synced across devices (progress data)
+const _SYNC_KEYS = {
+  srs:     'nl_srs_v3',              // flashcard SM-2 progress
+  meta:    'nl_srs_meta_v3',         // streak / daily new-card count
+  klanken: 'klanken-v1',             // phonetics completion flags
+  verbs:   'nl_verbs_v3',            // verb trainer stats
+  game:    'nl_game_progress_v1',    // game seen-words per chapter
+};
 
 // ── Runtime state ─────────────────────────────────────────────────────────
 let _user    = null;   // decoded user info
@@ -98,8 +105,11 @@ async function syncNow(silent = false) {
   _setSyncStatus('syncing');
 
   try {
-    const localSRS  = _readJSON(_KEY_SRS,  {});
-    const localMeta = _readJSON(_KEY_META, {});
+    // Build payload from all syncable keys
+    const payload = {};
+    for (const [field, lsKey] of Object.entries(_SYNC_KEYS)) {
+      payload[field] = _readJSON(lsKey, {});
+    }
 
     const res = await fetch(SYNC_WORKER_URL + '/sync', {
       method:  'POST',
@@ -107,7 +117,7 @@ async function syncNow(silent = false) {
         'Content-Type':  'application/json',
         'Authorization': 'Bearer ' + _token,
       },
-      body: JSON.stringify({ srs: localSRS, meta: localMeta }),
+      body: JSON.stringify(payload),
     });
 
     // Token expired → re-prompt silently
@@ -121,12 +131,15 @@ async function syncNow(silent = false) {
 
     if (!res.ok) throw new Error('HTTP ' + res.status);
 
-    const { srs: mergedSRS, meta: mergedMeta } = await res.json();
+    const merged = await res.json();
 
-    // Write merged data back — does not disrupt an active flashcard session
-    // (flashcard.js reads localStorage only at session start)
-    if (mergedSRS  && Object.keys(mergedSRS).length)  localStorage.setItem(_KEY_SRS,  JSON.stringify(mergedSRS));
-    if (mergedMeta && Object.keys(mergedMeta).length) localStorage.setItem(_KEY_META, JSON.stringify(mergedMeta));
+    // Write merged data back for each key (safe — flashcard.js reads at session start)
+    for (const [field, lsKey] of Object.entries(_SYNC_KEYS)) {
+      const val = merged[field];
+      if (val && Object.keys(val).length) {
+        localStorage.setItem(lsKey, JSON.stringify(val));
+      }
+    }
 
     // Refresh word badges if function is available
     if (typeof updateWordBadges === 'function') updateWordBadges();
