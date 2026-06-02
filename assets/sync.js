@@ -25,9 +25,12 @@ const _SYNC_KEYS = {
 };
 
 // ── Runtime state ─────────────────────────────────────────────────────────
-let _user    = null;   // decoded user info
-let _token   = null;   // current Google id_token
-let _syncing = false;
+let _user          = null;   // decoded user info
+let _token         = null;   // current Google id_token
+let _syncing       = false;
+let _activityTimer = null;
+
+const _MIN_SYNC_GAP = 30_000; // ms — never sync more often than once per 30 s
 
 // ═════════════════════════════════════════════════════════════════════════
 // INIT — called automatically on DOMContentLoaded
@@ -326,6 +329,46 @@ function _syncToast(msg) {
   clearTimeout(el._tid);
   el._tid = setTimeout(() => el.classList.remove('sync-toast-show'), 3000);
 }
+
+// ═════════════════════════════════════════════════════════════════════════
+// SMART AUTO-SYNC TRIGGERS
+// ═════════════════════════════════════════════════════════════════════════
+
+// 1. Intercept localStorage.setItem — sync 3 s after any progress key is written.
+//    This fires after every flashcard rating, klanken completion, verb quiz, etc.
+//    without needing to modify any other file.
+(function _installStorageHook() {
+  const _orig      = localStorage.setItem.bind(localStorage);
+  const _syncKeySet = new Set(Object.values(_SYNC_KEYS));
+
+  localStorage.setItem = function(key, value) {
+    _orig(key, value);
+    if (!_syncKeySet.has(key) || !_user || !_token) return;
+
+    // Debounce: wait 3 s for burst of writes (e.g. rating 5 cards quickly) to settle
+    clearTimeout(_activityTimer);
+    _activityTimer = setTimeout(() => {
+      const lastSync = parseInt(localStorage.getItem(_KEY_LAST) || '0', 10);
+      if (Date.now() - lastSync < _MIN_SYNC_GAP) return; // synced very recently — skip
+      syncNow(true);
+    }, 3000);
+  };
+})();
+
+// 2. Sync when the tab becomes visible again (user returns from another app / tab).
+//    Most important trigger for multi-device: open on phone, study, switch to laptop,
+//    it syncs as soon as the laptop tab is re-focused.
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState !== 'visible') return;
+  if (!_user || !_tokenValid()) return;
+  const lastSync = parseInt(localStorage.getItem(_KEY_LAST) || '0', 10);
+  if (Date.now() - lastSync > _MIN_SYNC_GAP) syncNow(true);
+});
+
+// 3. Sync when the device comes back online (subway / spotty mobile connection).
+window.addEventListener('online', () => {
+  if (_user && _tokenValid()) syncNow(true);
+});
 
 // ── Boot ──────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', _initSync);
