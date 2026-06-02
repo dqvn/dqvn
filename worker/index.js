@@ -62,6 +62,7 @@ export default {
       klanken: localKlanken = {},
       verbs:   localVerbs   = {},
       game:    localGame    = {},
+      device:  clientDevice = null,
     } = body;
 
     // ── Redis read ────────────────────────────────────────────────────────
@@ -76,12 +77,27 @@ export default {
     const mergedGame    = mergeGame   (localGame,     stored?.game    || {});
 
     // ── Redis write ───────────────────────────────────────────────────────
+    // Keep a rolling log of the last 5 device syncs
+    const prevSyncs  = stored?.syncLog || [];
+    const syncEntry  = {
+      at:     Date.now(),
+      name:   user.name,
+      email:  user.email,
+      sub:    user.sub,
+      ua:     clientDevice?.ua   || null,
+      tz:     clientDevice?.tz   || null,
+      lang:   clientDevice?.lang || null,
+    };
+    const syncLog = [syncEntry, ...prevSyncs].slice(0, 5);
+
     await redisSet(
       env.UPSTASH_URL, env.UPSTASH_TOKEN, key,
       {
         srs: mergedSRS, meta: mergedMeta,
         klanken: mergedKlanken, verbs: mergedVerbs, game: mergedGame,
+        owner: { sub: user.sub, email: user.email, name: user.name },
         syncedAt: Date.now(),
+        syncLog,
       },
       REDIS_TTL
     );
