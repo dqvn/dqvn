@@ -159,6 +159,13 @@ async function syncNow(silent = false) {
       payload[field] = _readJSON(lsKey, {});
     }
 
+    // Attach device fingerprint so the blob tracks who synced from where
+    payload.device = {
+      ua:   navigator.userAgent,
+      tz:   Intl.DateTimeFormat().resolvedOptions().timeZone,
+      lang: navigator.language,
+    };
+
     const res = await fetch(SYNC_WORKER_URL + '/sync', {
       method:  'POST',
       headers: {
