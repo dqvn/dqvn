@@ -163,6 +163,28 @@
             border-color: var(--accent);
         }
 
+        .back-to-portal {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            margin-bottom: 18px;
+            padding: 9px 16px;
+            background: rgba(255,255,255,.15);
+            color: var(--accent);
+            border: 2px solid rgba(255,209,102,.5);
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: .82rem;
+            font-weight: 700;
+            transition: background .2s, border-color .2s, color .2s;
+        }
+        .back-to-portal:hover {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: var(--dark);
+        }
+
         .story-content {
             flex: 1;
             display: flex;
@@ -322,6 +344,10 @@
                 <h1><i class="fas fa-book-open"></i> Dutch Storytime</h1>
                 <p>Learn Dutch through fun stories!</p>
             </div>
+
+            <a href="index.html" class="back-to-portal">
+                🏠 Terug naar Portaal
+            </a>
 
             <ul class="stories-list" id="storiesList">
                 <!-- Stories will be populated by JavaScript -->

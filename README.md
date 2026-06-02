@@ -8,8 +8,9 @@ A static web app for learning Dutch vocabulary and dialogues, deployed via GitHu
 
 | File | Description |
 |---|---|
-| `index.html` | Main vocabulary learner — word table + flashcard game + cloud sync |
-| `vanstart.html` | VanStart course vocabulary learner (same layout, separate TTS script) |
+| `index.html` | **Portal / Home** — learning hub: hero + stats dashboard, grouped tool launcher (3 categories), progress cards, settings, coming-soon, plan comparison (guest vs account) |
+| `startnl.html` | Main vocabulary learner — word table + flashcard game + cloud sync (was `index.html`) |
+| `vanstart.html` | VanStart course vocabulary learner (same layout as `startnl.html`, separate TTS script) |
 | `4000.html` | 4 000 most-common Dutch words — vocabulary table + TTS |
 | `verbs.html` | Dutch Verb Trainer — conjugation study + quiz (OTT / OVT / VTT / OTTT) |
 | `grammar.html` | Dutch grammar reference |
@@ -22,15 +23,70 @@ A static web app for learning Dutch vocabulary and dialogues, deployed via GitHu
 | `game.html` | Standalone legacy vocabulary quiz |
 | `demo.html` | Scratch / demo page |
 
+### Navigation structure
+
+```
+index.html (portal)
+  └── tool cards → startnl.html, vanstart.html, klanken.html, dialogues.html,
+                   grammar.html, verbs.html, kids.html
+  └── "← Terug naar Portaal" in all tool pages' launcher overlay
+
+Tool pages' "← Main Menu" / "🏠" back-links → index.html (portal)
+```
+
+---
+
+## Portal — `index.html`
+
+Single-page hub with inline CSS + JS (no external scripts except `sync.js`).
+
+### Sections
+| Section | Description |
+|---|---|
+| Sticky header | Dutch-flag emblem + "Leer Nederlands" brand + compact auth pill (sync.js) |
+| Hero | `bg2.jpg` photo background (warm Dutch dusk scene) with parallax scrim; personalized greeting; stats strip |
+| Voortgang | 4 progress cards: Vocabulaire, Klanken, Werkwoorden, Dialogen — live from localStorage |
+| Leertools | 7 tool cards grouped by category: 📚 Woordenschat / 🎙️ Uitspreken / 📖 Grammatica |
+| Instellingen | Volume slider (`nl_vocab_vol`) + TTS speed slider (`nl_tts_rate`) |
+| Binnenkort | 4 placeholder cards for future features |
+| Waarom aanmelden? | Two pricing-plan-style cards: guest (features available) vs account (sync + future features + CTA) |
+
+### Background layering
+```
+Cards / text                     (z-index 1+)
+body::before fixed scrim         (dark-warm → transparent → solid cream)
+bg2.jpg  background-attachment:fixed  (parallax on desktop, scroll on mobile)
+```
+
+### Key functions
+```js
+renderDashboard()    // greeting + stats strip + progress cards + plan CTA
+renderTools()        // grouped tool cards (preserves TOOLS insertion order)
+updatePlanCTA()      // "Meld je gratis aan →" or "✓ Aangemeld als X" based on auth state
+updateWordBadges()   // called by sync.js after sync — re-runs renderDashboard()
+initVolume()         // reads nl_vocab_vol, writes on change
+initSpeed()          // reads nl_tts_rate, writes on change
+```
+
+### Stats computed from localStorage
+| Stat | Source |
+|---|---|
+| Streak | `nl_srs_meta_v3.streak` |
+| Cards seen | Count non-new cards across all lessons in `nl_srs_v3` |
+| Cards mastered | Count `state==='review' && interval>=21` in `nl_srs_v3` |
+| Klanken done | Count truthy entries in `klanken-v1` |
+| Verbs learned | Count verbs where `correct/seen > 0.2` in `nl_verbs_v3` |
+| Dialogues done | Count keys in `nl_dlg_v1.stats` |
+
 ---
 
 ## Scripts
 
 | File | Role |
 |---|---|
-| `assets/common.js` | Shared: voice selector, table render, menu toggle, hamburger, word badges, font-size control, active-lesson highlight, lazy `puter.js` loader |
+| `assets/common.js` | Shared: voice selector, table render, menu toggle, hamburger, word badges, font-size control, active-lesson highlight, lazy `puter.js` loader, `_getTTSRate()` helper |
 | `assets/sync.js` | Cloud sync — Google Sign-In (GIS), Upstash Redis via Cloudflare Worker, smart auto-sync |
-| `assets/ttsscript.js` | `initPage()` config for `index.html` (main courses) |
+| `assets/ttsscript.js` | `initPage()` config for `startnl.html` (main courses) |
 | `assets/ttsvanstartscript.js` | `initPage()` config for `vanstart.html` |
 | `assets/tts4kscript.js` | `initPage()` config for `4000.html` |
 | `assets/game.js` | Multiple-choice vocabulary game (`#popup`) + Puter/GPT AI story generator |
@@ -41,8 +97,8 @@ A static web app for learning Dutch vocabulary and dialogues, deployed via GitHu
 | `assets/verbs.js` | Verb trainer: lesson data, study cards, quiz, dark mode, font picker, wake lock |
 | `assets/gapp.js` | Markdown chapter SPA (TOC, search, progress, TTS) |
 | `assets/NoSleep.min.js` | Wake lock polyfill (used by `verbs.js`) |
-| `assets/style.css` | Shared styles for `index.html` / `vanstart.html` / all common components |
-| `assets/sync.css` | Styles for the cloud sync section in the left menu |
+| `assets/style.css` | Shared styles for `startnl.html` / `vanstart.html` / all common components; includes `.al-home-btn` for launcher portal link |
+| `assets/sync.css` | Sync section styles — top-of-menu bar design; three theme contexts: `.left-menu`, `#sidebar`, `.sidebar-dark` |
 | `assets/verbs.css` | Styles for `verbs.html` only |
 | `assets/dlg.css` | Shared sidebar styles for `dialogues.html` and `kids.html` |
 | `assets/kids.css` | Styles for `kids.html` |
@@ -93,15 +149,16 @@ Google Cloud Console: add your GitHub Pages origin to **Authorized JavaScript or
 | `nl_verbs_v3` | Verb trainer stats per verb | Per-verb: `max(seen)` + `max(correct)`; max streak |
 | `nl_game_progress_v1` | Game seen-words per chapter | Union of word arrays per chapter |
 
-Keys intentionally **not** synced (device-specific): `nl_tts_voice_v1`, `nl_vocab_fs`, `nl_fc_word_size`, `nl_verbs_theme`, `nl_verbs_font`, `klanken-voice`, `klanken-vol`, `kids_tts_speed`. Cache keys (`nl_dlg_*`) are also excluded.
+Keys intentionally **not** synced (device-specific): `nl_tts_voice_v1`, `nl_tts_rate`, `nl_vocab_fs`, `nl_fc_word_size`, `nl_verbs_theme`, `nl_verbs_font`, `klanken-voice`, `klanken-vol`, `kids_tts_speed`. Cache keys (`nl_dlg_*`) are also excluded.
 
 ### Auto-sync triggers (no manual action needed)
 
 1. **Page load** — syncs immediately if stored token is still valid (< 1 h old)
-2. **After studying** — `localStorage.setItem` hook fires 3 s after any progress key is written (debounced; min 30 s between syncs)
-3. **Tab becomes visible** — fires when user switches back to the tab from another app/tab
-4. **Device comes back online** — fires on `navigator.online` transition
-5. **Token renewal** — GIS silently renews the expired JWT; sync fires after renewal
+2. **After studying** — `localStorage.setItem` hook fires 15 s after any progress key is written (debounced; 3 min minimum gap between auto-syncs)
+3. **Device comes back online** — fires on `navigator.online` transition
+4. **Token renewal** — GIS silently renews the expired JWT; sync fires after renewal
+
+`visibilitychange` intentionally excluded — fires on every tab/app switch, not a meaningful learning event.
 
 ### Token / session lifecycle
 
@@ -111,7 +168,19 @@ Keys intentionally **not** synced (device-specific): `nl_tts_voice_v1`, `nl_voca
 - On refresh after 1 h: GIS silently renews (no popup) using `auto_select: true`; if renewal fails, ⋮ menu → Sync now re-prompts on next manual click
 - Sign out: `google.accounts.id.disableAutoSelect()` + clear localStorage keys
 
-### UI (left menu, above footer)
+### UI position
+
+`#sync-section` is placed at the **top** of each sidebar/left-menu (above all content, below the logo). Three CSS theme contexts in `sync.css`:
+
+| Context | Pages | Styling |
+|---|---|---|
+| `.left-menu #sync-section` | `startnl.html`, `vanstart.html`, `4000.html` | Light — matches `#lm-footer` |
+| `#sidebar:not(.sidebar-dark) #sync-section` | `klanken.html` | Light sidebar divider |
+| `.sidebar-dark #sync-section` | `dialogues.html`, `kids.html`, `verbs.html` | Dark — matches `#app-footer` |
+
+`dialogues.html`, `kids.html`, `verbs.html` have `class="sidebar-dark"` on `<nav id="sidebar">`.
+
+On `index.html` (portal) the section lives in `#portal-header` — styled as a compact auth pill via inline overrides.
 
 **Signed out:**
 ```
@@ -125,7 +194,8 @@ Keys intentionally **not** synced (device-specific): `nl_tts_voice_v1`, `nl_voca
 │        ☁️ Synced · 2m ago    │
 └──────────────────────────────┘
 ```
-⋮ opens dropdown: **Sync now** / **Sign out**. Status line updates: `⏳ Syncing…` → `☁️ Synced · Xs ago` → `⚠️ Sync failed`.
+⋮ opens dropdown (opens **downward** — section is now at top): **Sync now** / **Sign out**.
+Status: `⏳ Syncing…` → `☁️ Synced · Xs ago` → `⚠️ Sync failed` → `🔑 Tap to reconnect`.
 
 ---
 
