@@ -990,8 +990,17 @@ const WAKE = (() => {
     document.getElementById('fs-up').addEventListener('click',   () => { applyFontSize(convFontSize + 0.08); saveSession(); });
 
     const volSlider = document.getElementById('vol-slider');
-    volSlider.addEventListener('input', () => { applyVolume(volSlider.value / 100); saveSession(); });
-    applyVolume(ttsVolume);
+    volSlider.addEventListener('input', () => {
+        applyVolume(volSlider.value / 100);
+        saveSession();
+        try { localStorage.setItem('nl_vocab_vol', JSON.stringify({ v: parseInt(volSlider.value), t: Date.now() })); } catch {}
+    });
+    // Prefer shared volume key over session-stored value
+    try {
+        const sharedVol = JSON.parse(localStorage.getItem('nl_vocab_vol'));
+        if (sharedVol && typeof sharedVol.v === 'number') { applyVolume(sharedVol.v / 100); }
+        else applyVolume(ttsVolume);
+    } catch { applyVolume(ttsVolume); }
     const found = await discover();
     dialogues   = found;
     updateStreak();             // count today's visit for streak

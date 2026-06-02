@@ -15,10 +15,22 @@ var wordList = [];
 var jsonData = {};
 var googleNederlandsVoice;
 
-// Add volumn control
+// Restore saved volume on load
+(function() {
+  try {
+    const saved = JSON.parse(localStorage.getItem('nl_vocab_vol'));
+    if (saved && typeof saved.v === 'number') {
+      volumeControl.value = saved.v;
+      document.getElementById('volume-value').textContent = `${saved.v}%`;
+    }
+  } catch {}
+})();
+
+// Save volume to shared key on change
 volumeControl.addEventListener('input', () => {
-  const volumeValue = volumeControl.value;
-  document.getElementById('volume-value').textContent = `${volumeValue}%`;
+  const val = parseInt(volumeControl.value, 10);
+  document.getElementById('volume-value').textContent = `${val}%`;
+  try { localStorage.setItem('nl_vocab_vol', JSON.stringify({ v: val, t: Date.now() })); } catch {}
 });
 
 // play button
