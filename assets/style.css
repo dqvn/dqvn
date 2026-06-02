@@ -2492,6 +2492,17 @@ button:hover {
 }
 .fc-speak-btn:active { transform: scale(0.95); }
 
+/* Back card: override speak button for white background */
+#fc-back .fc-speak-btn {
+    background: rgba(3,105,161,0.08);
+    color: #0369a1;
+    box-shadow: 0 2px 8px rgba(3,105,161,0.12);
+}
+#fc-back .fc-speak-btn:hover {
+    background: rgba(3,105,161,0.15);
+    box-shadow: 0 4px 14px rgba(3,105,161,0.18);
+}
+
 .fc-speak-icon {
     font-size: 1.15em;
     display: inline-block;
