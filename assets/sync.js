@@ -43,11 +43,11 @@ function _initSync() {
 
   _renderSyncUI();
 
-  // If token is still valid, sync right now — no GIS round-trip needed
+  // Token still valid — sync now, schedule renewal before it expires, no GIS prompt needed
   if (_user && _tokenValid()) {
     syncNow(true);
-    // Still load GIS in background so it can silently renew before expiry
-    _loadGIS(_setupGISRenewalOnly);
+    _scheduleTokenRenewal();
+    _loadGIS(_setupGISRenewalOnly);   // register callback so renewal fires into _onCredential
     return;
   }
 
@@ -72,11 +72,16 @@ function _setupGIS() {
   });
 
   if (_user) {
-    // Known user with expired token — attempt silent renewal (no UI shown)
-    google.accounts.id.prompt(() => {});
+    // Known user, expired token — try silent renewal.
+    // If GIS cannot renew silently (browser policy, no session, cooldown),
+    // show a non-intrusive reconnect hint rather than a popup.
+    google.accounts.id.prompt(n => {
+      if (n.isNotDisplayed() || n.isSkippedMoment() || n.isDismissedMoment()) {
+        _setSyncStatus('needs-reauth');
+      }
+    });
   } else {
-    // Render the official GIS button — works on all platforms including mobile Chrome.
-    // prompt() is unreliable on mobile (FedCM restrictions, cooldown); renderButton() is not.
+    // First-time sign-in: render the official GIS button (works on mobile Chrome too)
     _renderGISButton();
   }
 }
@@ -101,6 +106,25 @@ function _renderGISButton() {
     logo_alignment: 'left',
     width: container.offsetWidth || 210,
   });
+}
+
+// Proactive token renewal — fires 5 min before the JWT expires.
+// As long as the user has any page open, the token stays fresh without any UI.
+let _renewalTimer = null;
+function _scheduleTokenRenewal() {
+  clearTimeout(_renewalTimer);
+  if (!_token) return;
+  try {
+    const b64    = _token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
+    const padded = b64 + '='.repeat((4 - b64.length % 4) % 4);
+    const bytes  = Uint8Array.from(atob(padded), c => c.charCodeAt(0));
+    const { exp } = JSON.parse(new TextDecoder().decode(bytes));
+    const delay = (exp - 300) * 1000 - Date.now(); // 5 min before expiry
+    if (delay <= 0) return;
+    _renewalTimer = setTimeout(() => {
+      if (window.google?.accounts?.id) google.accounts.id.prompt(() => {});
+    }, delay);
+  } catch {}
 }
 
 // Check if stored token has at least 60 s remaining
@@ -141,7 +165,8 @@ function _onCredential(response) {
   } catch {}
 
   _renderSyncUI();
-  syncNow(/*silent=*/true);   // auto-sync immediately after sign-in / renewal
+  syncNow(/*silent=*/true);
+  _scheduleTokenRenewal();   // keep token fresh; avoids needing to re-auth on next page
 }
 
 // ═════════════════════════════════════════════════════════════════════════
@@ -316,6 +341,18 @@ function _setSyncStatus(status, ts) {
     lbl.textContent = '⚠️ Sync failed';
     if (syncBtn) syncBtn.disabled = false;
     if (card)    card.classList.remove('sync-card--busy');
+  } else if (status === 'needs-reauth') {
+    // Silent renewal failed — show a tap-to-reconnect hint, no popup
+    lbl.textContent = '🔑 Tap to reconnect';
+    lbl.style.cursor = 'pointer';
+    lbl.title = 'Session expired — tap to sign in again';
+    lbl.onclick = () => {
+      lbl.textContent = '⏳ Reconnecting…';
+      lbl.onclick = null;
+      lbl.style.cursor = '';
+      if (window.google?.accounts?.id) google.accounts.id.prompt(() => {});
+    };
+    if (card) card.classList.remove('sync-card--busy');
   }
 }
 
