@@ -422,7 +422,7 @@
   const CACHE_KEY    = 'nl_rss_cache_v1';
   const READ_KEY     = 'nl_rss_v1';
   const FS_KEY       = 'nl_rss_fs';
-  const CACHE_TTL    = 15 * 60_000;  // 15 min before background refresh
+  const CACHE_TTL    = 60 * 60_000;  // 1 hour before background refresh
   const FS_STEPS     = [.78, .88, 1.0, 1.12, 1.26];  // rem values for --art-fs
 
   /* ── State ───────────────────────────────────────────────── */
