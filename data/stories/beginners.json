@@ -331,9 +331,56 @@
       }
     ],
     "questions": [
-      "Wat verstaat Marten onder de Friese sport 'fierljeppen'?",
-      "Wat gebeurt er de eerste keer dat Jeroen over de sloot probeert te springen?",
-      "Voor wie heeft Jeroen zijn romantische lied speciaal geschreven?"
+      {
+        "question": "Wat verstaat Marten onder de Friese sport 'fierljeppen'?",
+        "answers": [
+          "Met een kano zo snel mogelijk door een smalle sloot varen",
+          "Polsstok-verspringen over een sloot",
+          "Op houten klompen hardlopen over het platteland",
+          "Met een fiets over een dijk rijden met wind tegen"
+        ],
+        "correct_answer": "Polsstok-verspringen over een sloot"
+      },
+      {
+        "question": "Wat gebeurt er de eerste keer dat Jeroen over de sloot probeert te springen?",
+        "answers": [
+          "Hij springt meteen heel ver over het gras.",
+          "Hij verliest zijn schoen in de modder.",
+          "Hij valt direct in het water.",
+          "Zijn polsstok breekt doormidden."
+        ],
+        "correct_answer": "Hij valt direct in het water."
+      },
+      {
+        "question": "Voor wie heeft Jeroen zijn romantische lied speciaal geschreven?",
+        "answers": [
+          "Voor de gasten van de boerderijcamping",
+          "Voor Joke en Jan",
+          "Voor de kinderen rond het kampvuur",
+          "Voor Femke"
+        ],
+        "correct_answer": "Voor Femke"
+      },
+      {
+        "question": "Waar zet Jeroen zijn tent op als hij aankomt op de camping?",
+        "answers": [
+          "In de schaduw op een mooie plek",
+          "Vlak naast de stal met het jonge veulen",
+          "Midden op het fietspad langs de dijk",
+          "Dicht bij de sloot waar ze gaan fierljeppen"
+        ],
+        "correct_answer": "In de schaduw op een mooie plek"
+      },
+      {
+        "question": "Wat doet Jeroen nadat hij de tweede keer succesvol naar de overkant is gesprongen?",
+        "answers": [
+          "Hij gaat direct gitaar spelen bij het kampvuur.",
+          "Hij gaat douchen en zijn kleren wassen op de boerderij.",
+          "Hij fietst snel terug naar Groningen.",
+          "Hij helpt de kinderen met het melken van de koeien."
+        ],
+        "correct_answer": "Hij gaat douchen en zijn kleren wassen op de boerderij."
+      }
     ]
   },
   {
@@ -390,9 +437,56 @@
       }
     ],
     "questions": [
-      "Wat betekent het volgens Esther dat Nederlanders direct zijn?",
-      "Wat vindt Mark positief aan het direct zijn van Nederlanders?",
-      "Waarom vindt Esther het goed dat er niet zoveel fastfood in Nederland is?"
+      {
+        "question": "Wat betekent het volgens Esther dat Nederlanders direct zijn?",
+        "answers": [
+          "Dat ze altijd heel snel praten.",
+          "Dat ze vaak zeggen wat ze denken.",
+          "Dat ze geen beleefde manieren hebben.",
+          "Dat ze alleen met vrienden praten."
+        ],
+        "correct_answer": "Dat ze vaak zeggen wat ze denken."
+      },
+      {
+        "question": "Wat vindt Mark positief aan het direct zijn van Nederlanders?",
+        "answers": [
+          "Het is verfrissend om te weten waar je aan toe bent.",
+          "Het zorgt ervoor dat niemand gekwetst raakt.",
+          "Het is een heel politiek correcte manier van praten.",
+          "Het helpt hem om sneller Nederlands te leren."
+        ],
+        "correct_answer": "Het is verfrissend om te weten waar je aan toe bent."
+      },
+      {
+        "question": "Waarom vindt Esther het goed dat er niet zoveel fastfood in Nederland is?",
+        "answers": [
+          "Omdat het fastfood in Nederland veel te duur is.",
+          "Omdat mensen liever in een koffietentje zitten.",
+          "Omdat fastfood niet zo gezond is.",
+          "Omdat ze de Amerikaanse hamburgers niet lekker vindt."
+        ],
+        "correct_answer": "Omdat fastfood niet zo gezond is."
+      },
+      {
+        "question": "Welke typisch Nederlandse snack raadt Esther aan Mark aan?",
+        "answers": [
+          "Een Italiaanse pizza",
+          "Cappuccino",
+          "Bitterballen",
+          "Een goede hamburger met frietjes"
+        ],
+        "correct_answer": "Bitterballen"
+      },
+      {
+        "question": "Wat mist Mark uit Amerika tijdens zijn vakantie?",
+        "answers": [
+          "Het reizen met de trein",
+          "Het Amerikaanse fastfood",
+          "De koffietentjes in Haarlem",
+          "Het praten met direct mensen"
+        ],
+        "correct_answer": "Het Amerikaanse fastfood"
+      }
     ]
   },
   {
@@ -420,7 +514,7 @@
     ],
     "vocabulary": [
       {
-        "nl": "ik heb zin in",
+        "nl": "ik habe zin in",
         "en": "I feel like doing it"
       },
       {
@@ -453,9 +547,56 @@
       }
     ],
     "questions": [
-      "Waarom is het Rijksmuseum een goed museum om te bezoeken voor het stel?",
-      "Wat vindt Fieke van de Nederlandse lunch?",
-      "Waarom zijn Joost en Fieke dankbaar na het bezoeken van het Anne Frank Huis?"
+      {
+        "question": "Waarom is het Rijksmuseum een goed museum om te bezoeken voor het stel?",
+        "answers": [
+          "Omdat Joost van schilderijen houdt en Fieke van geschiedenis.",
+          "Omdat het museum gratis toegankelijk is met de trein.",
+          "Omdat ze daar foto's van oude rondvaartboten kunnen bekijken.",
+          "Omdat ze daar alles leren over de Tweede Wereldoorlog."
+        ],
+        "correct_answer": "Omdat Joost van schilderijen houdt en Fieke van geschiedenis."
+      },
+      {
+        "question": "Wat vindt Fieke van de Nederlandse lunch?",
+        "answers": [
+          "Ze vindt het broodje haring meteen heerlijk.",
+          "Ze weigert de vis te eten en drinkt alleen melk.",
+          "Het is voor haar even wennen.",
+          "Ze vindt het broodje te duur voor een café."
+        ],
+        "correct_answer": "Het is voor haar even wennen."
+      },
+      {
+        "question": "Waarom zijn Joost en Fieke dankbaar na het bezoeken van het Anne Frank Huis?",
+        "answers": [
+          "Omdat de kapitein van de boot hen een mooie korting gaf.",
+          "Omdat ze na een lange wandeling eindelijk konden uitrusten.",
+          "Omdat ze dankbaar zijn voor hun vrijheid.",
+          "Omdat ze veel foto's van de mooie schilderijen mochten maken."
+        ],
+        "correct_answer": "Omdat ze dankbaar zijn voor hun vrijheid."
+      },
+      {
+        "question": "Hoe reizen Joost en Fieke naar Amsterdam?",
+        "answers": [
+          "Met een rondvaartboot",
+          "Met de trein",
+          "Met de auto",
+          "Op de fiets"
+        ],
+        "correct_answer": "Met de trein"
+      },
+      {
+        "question": "Wat doen Joost en Fieke direct na hun lunch in het typisch Nederlandse café?",
+        "answers": [
+          "Ze gaan direct terug naar het treinstation.",
+          "Ze bezoeken het schilderij van de kapitein.",
+          "Ze gaan naar het Anne Frank Huis.",
+          "Ze maken een wandeling langs de grachten."
+        ],
+        "correct_answer": "Ze maken een wandeling langs de grachten."
+      }
     ]
   },
   {
@@ -528,9 +669,56 @@
       }
     ],
     "questions": [
-      "Hoe hebben Tim en Anna elkaar ontmoet? (Waar, was het gepland, …?)",
-      "Waar vertelt Tim aan Anna dat hij verliefd op haar is?",
-      "Waarom vraagt Anna of Tim met haar samen wil wonen?"
+      {
+        "question": "Hoe hebben Tim en Anna elkaar ontmoet?",
+        "answers": [
+          "Ze zijn aan elkaar voorgesteld door een gezamenlijke vriend op de markt.",
+          "Ze ontmoetten elkaar gepland tijdens een rondleiding in een museum.",
+          "Ze hebben elkaar toevallig ontmoet in een café en zijn gaan praten.",
+          "Ze studeren aan dezelfde universiteit en ontmoetten elkaar in de klas."
+        ],
+        "correct_answer": "Ze hebben elkaar toevallig ontmoet in een café en zijn gaan praten."
+      },
+      {
+        "question": "Waar vertelt Tim aan Anna dat hij verliefd op haar is?",
+        "answers": [
+          "Tijdens een wandeling langs de rivier",
+          "Op een bankje in een rustig parkje in het centrum",
+          "In het drukke café waar ze elkaar voor het eerst zagen",
+          "Tijdens hun romantische weekendje weg in een andere stad"
+        ],
+        "correct_answer": "Op een bankje in een rustig parkje in het centrum"
+      },
+      {
+        "question": "Waarom vraagt Anna of Tim met haar samen wil wonen?",
+        "answers": [
+          "Omdat ze na zijn ziekenhuisperiode beseft dat ze nog meer van hem houdt.",
+          "Omdat Tim geen geld meer heeft om zijn studentenkamer te betalen.",
+          "Omdat ze bang is dat hij anders teruggaat naar zijn oude stad.",
+          "Omdat ze samen een nieuw café willen openen in Rotterdam."
+        ],
+        "correct_answer": "Omdat ze na zijn ziekenhuisperiode beseft dat ze nog meer van hem houdt."
+      },
+      {
+        "question": "Wat is de reden dat Tim naar Rotterdam is gekomen?",
+        "answers": [
+          "Hij is daar geboren en woont er al zijn hele leven.",
+          "Hij is daar gekomen om te studeren.",
+          "Hij moest daar na een ongeluk naar het ziekenhuis.",
+          "Hij wilde graag dicht bij de rivier gaan werken."
+        ],
+        "correct_answer": "Hij is daar gekomen om te studeren."
+      },
+      {
+        "question": "Wat gebeurt er dat Anna wanhopig en verdrietig maakt?",
+        "answers": [
+          "Tim vertelt dat hij niet verliefd op haar is.",
+          "Tim besluit om onverwacht te verhuizen naar een andere stad.",
+          "Tim krijgt een ongeluk en moet naar het ziekenhuis.",
+          "Tim wil geen lange wandelingen meer met haar maken."
+        ],
+        "correct_answer": "Tim krijgt een ongeluk en moet naar het ziekenhuis."
+      }
     ]
   },
   {
@@ -607,9 +795,56 @@
       }
     ],
     "questions": [
-      "Welk kledingstuk helpt Mark bij het oplossen van de diefstal?",
-      "Waarom heeft Jan het schilderij gestolen?",
-      "Wat doet Mark om te vieren dat hij de diefstal heeft opgelost?"
+      {
+        "question": "Welk kledingstuk helpt Mark bij het oplossen van de diefstal?",
+        "answers": [
+          "Een lange jas",
+          "Een hoed",
+          "Een paar handschoenen",
+          "Een dikke sjaal"
+        ],
+        "correct_answer": "Een hoed"
+      },
+      {
+        "question": "Waarom heeft Jan het schilderij gestolen?",
+        "answers": [
+          "Om zijn eigen boerderij te kunnen verbouwen.",
+          "Omdat hij een verzameling wilde beginnen.",
+          "Om zijn zieke moeder te helpen.",
+          "Hij vond het schilderij gewoon erg mooi."
+        ],
+        "correct_answer": "Om zijn zieke moeder te helpen."
+      },
+      {
+        "question": "Wat doet Mark om te vieren dat hij de diefstal heeft opgelost?",
+        "answers": [
+          "Hij koopt een goede fles wijn.",
+          "Hij gaat uit eten met de museumdirecteur.",
+          "Hij bezoekt een kledingzaak in de buurt.",
+          "Hij neemt een paar dagen vakantie."
+        ],
+        "correct_answer": "Hij koopt een goede fles wijn."
+      },
+      {
+        "question": "Waar woont Jan volgens de eigenaar van de hoedenwinkel?",
+        "answers": [
+          "In het centrum van Groningen",
+          "Op een verlaten boerderij",
+          "In een klein appartement boven de kledingzaak",
+          "Vlak naast het Groninger Museum"
+        ],
+        "correct_answer": "Op een verlaten boerderij"
+      },
+      {
+        "question": "Wat besluit de directeur van het museum te doen nadat Mark met hem heeft gepraat?",
+        "answers": [
+          "Hij laat Jan de politie bellen om zichzelf aan te geven.",
+          "Hij eist dat het schilderij direct weer in het museum wordt opgehangen.",
+          "Hij besluit om Jan het schilderij te laten houden zodat hij het kan verkopen.",
+          "Hij geeft Mark een beloning voor het terugvinden van de dief."
+        ],
+        "correct_answer": "Hij besluit om Jan het schilderij te laten houden zodat hij het kan verkopen."
+      }
     ]
   },
   {
@@ -633,529 +868,874 @@
       "One day a journalist stops by who wants to write an article about his bakery. The article is published in the newspaper and after that things really take off. The bakery becomes more and more well-known and he gets more and more customers.",
       "Teun can't believe his luck. He is doing something he truly enjoys and is even earning money from it. He feels freer than ever before and is proud of what he has achieved."
     ],
-    "vocabulary": [
-      {
-        "nl": "kantoor",
-        "en": "office"
-      },
-      {
-        "nl": "zuchten",
-        "en": "to sigh"
-      },
-      {
-        "nl": "saai",
-        "en": "boring"
-      },
-      {
-        "nl": "muren",
-        "en": "walls"
-      },
-      {
-        "nl": "plotseling",
-        "en": "suddenly"
-      },
-      {
-        "nl": "zich herinneren",
-        "en": "to remember"
-      },
-      {
-        "nl": "lenen",
-        "en": "to borrow"
-      },
-      {
-        "nl": "verrast zijn",
-        "en": "to be surprised"
-      },
-      {
-        "nl": "moeizaam",
-        "en": "difficult / arduous"
-      },
-      {
-        "nl": "klant",
-        "en": "customer"
-      },
-      {
-        "nl": "krant",
-        "en": "newspaper"
-      },
-      {
-        "nl": "verdienen",
-        "en": "to earn"
-      },
-      {
-        "nl": "trots",
-        "en": "proud"
-      }
-    ],
-    "questions": [
-      "Wanneer is Teuns liefde voor bakken begonnen?",
-      "Is de bakkerij van Teun meteen een succes? Waarom wel/niet?",
-      "Welke gebeurtenis zorgt ervoor dat de bakkerij heel populair wordt?"
-    ]
-  },
-  {
-    "id": 10,
-    "title": "De tweeling",
-    "subtitle": "Sietske ontmoet op vakantie een meisje dat er precies uitziet als zij",
-    "image_query": "Dutch beach sea Netherlands sand",
-    "paragraphs": [
-      "Er is een meisje dat Sietske heet. Ze woont met haar ouders in een klein dorpje aan de rand van de stad. Sietske is een gelukkig meisje, maar soms vraagt ze zich af of er nog iemand anders is zoals zij.",
-      "Op een dag, tijdens de vakantie, besluiten Sietske's ouders om een reis naar het strand te maken. Terwijl Sietske op het strand loopt, ziet ze een meisje dat er precies uitziet als zij. Het meisje heet Petra en ze blijkt Sietske's tweelingzus te zijn!",
-      "Petra en Sietske raken al snel bevriend. Ze ontdekken dat ze veel gemeen hebben, maar ook dat ze op sommige vlakken heel anders zijn. Zo houdt Sietske van tekenen en schilderen, terwijl Petra meer van sporten houdt.",
-      "De meisjes besluiten om hun vakantie samen door te brengen en genieten van elkaars gezelschap. Ze maken lange wandelingen langs de zee, bouwen zandkastelen en verzamelen schelpen. Ze praten over van alles en nog wat en ontdekken steeds meer over elkaar.",
-      "Op een dag besluiten ze om te kijken waarom ze zo op elkaar lijken. Ze vragen het aan hun ouders en komen erachter dat ze beide geadopteerd zijn. Dit verklaart waarom ze bij verschillende families opgroeien. Sietske en Petra zijn verbaasd en een beetje geschrokken, maar ze realiseren zich al snel dat ze nog steeds familie zijn en dat ze elkaar altijd kunnen bellen als ze elkaar missen.",
-      "De vakantie loopt ten einde en de meisjes moeten afscheid van elkaar nemen. Ze beloven om elkaar elke dag te bellen en te schrijven. Als Sietske en haar ouders weer thuis zijn, belt ze meteen naar Petra. Het is alsof ze elkaar al jaren kennen en ze hebben veel te bespreken.",
-      "Sietske is erg blij dat ze haar tweelingzus heeft gevonden. Ze realiseert zich dat ze niet alleen is en dat er iemand is die net zo is als zij. Ze weet dat ze altijd op Petra kan rekenen en dat ze elkaar nooit zullen vergeten. Sietske en Petra zijn misschien niet op dezelfde plek opgegroeid, maar ze hebben nu wel een sterke band voor het leven."
-    ],
-    "english_paragraphs": [
-      "There is a girl called Sietske. She lives with her parents in a small village on the edge of the city. Sietske is a happy girl, but sometimes she wonders if there is someone else out there just like her.",
-      "One day during the holidays, Sietske's parents decide to take a trip to the beach. While Sietske is walking on the beach, she sees a girl who looks exactly like her. The girl's name is Petra and she turns out to be Sietske's twin sister!",
-      "Petra and Sietske quickly become friends. They discover they have a lot in common, but also that they are very different in some ways. For example, Sietske loves drawing and painting, while Petra prefers sports.",
-      "The girls decide to spend their holiday together and enjoy each other's company. They take long walks along the sea, build sandcastles and collect shells. They talk about all sorts of things and keep discovering more about each other.",
-      "One day they decide to find out why they look so alike. They ask their parents and discover that they were both adopted. This explains why they grew up with different families. Sietske and Petra are surprised and a little shocked, but they soon realise they are still family and can always call each other when they miss one another.",
-      "The holiday comes to an end and the girls have to say goodbye. They promise to call and write to each other every day. When Sietske and her parents are back home, she calls Petra immediately. It is as though they have known each other for years and they have so much to talk about.",
-      "Sietske is very happy to have found her twin sister. She realises she is not alone and that there is someone out there just like her. She knows she can always count on Petra and that they will never forget each other. Sietske and Petra may not have grown up in the same place, but they now have a strong bond for life."
-    ],
-    "vocabulary": [
-      {
-        "nl": "terwijl",
-        "en": "while"
-      },
-      {
-        "nl": "uitzien",
-        "en": "look (like)"
-      },
-      {
-        "nl": "ontdekken",
-        "en": "discover"
-      },
-      {
-        "nl": "tweeling",
-        "en": "twin"
-      },
-      {
-        "nl": "gezelschap",
-        "en": "company (people)"
-      },
-      {
-        "nl": "besluiten",
-        "en": "to decide"
-      },
-      {
-        "nl": "afscheid",
-        "en": "farewell"
-      },
-      {
-        "nl": "op iemand rekenen",
-        "en": "to count on someone"
-      },
-      {
-        "nl": "opgegroeid",
-        "en": "grown up"
-      }
-    ],
-    "questions": [
-      "Wat zijn verschillen tussen Petra en Sietske?",
-      "Hoe komt het dat Petra en Sietske niet samen zijn opgegroeid?",
-      "Op welke manier houden Petra en Sietske contact na de vakantie?"
-    ]
-  },
-  {
-    "id": 11,
-    "title": "Fred komt op bezoek",
-    "subtitle": "Een ruimteschip landt op aarde en een jongen van tien jaar vindt een bijzondere nieuwe vriend",
-    "image_query": "alien spacecraft landing field night sky",
-    "paragraphs": [
-      "Op een dag crasht er een ruimteschip op aarde en er komt een klein groen mannetje uit. Het mannetje heet Fred en komt van de planeet Mars. Hij heeft honger en is koud en verdwaald. Hij heeft ook geen idee hoe hij weer thuis moet komen.",
-      "Op dat moment komt Tom, een jongen van 10 jaar, terug van school. Hij ziet het ruimteschip en rent ernaartoe om te kijken wat er aan de hand is. Als hij dichterbij komt, ziet hij het kleine groene mannetje dat op de grond zit en huilt.",
-      "Tom is verbaasd en vraagt zich af of het een buitenaards wezen is. Maar hij voelt medelijden en besluit hem te helpen. Tom neemt het mannetje mee naar huis en geeft hem te eten en drinken. Hij geeft hem ook een warme deken om onder te liggen. Fred voelt zich beter en begint te glimlachen.",
-      "Tom besluit om Fred in zijn kamer te verstoppen zodat niemand hem kan vinden. Hij vertelt zijn ouders niet over de kleine groene man, omdat hij bang is dat ze hem naar de autoriteiten zullen brengen. In plaats daarvan besluit Tom om voor Fred te zorgen.",
-      "Dagen gaan voorbij en Tom en Fred worden goede vrienden. Ze spelen samen en hebben veel plezier. Tom leert zelfs wat woorden in het Martian, de taal van Fred. Fred is heel blij dat hij een vriend heeft en voelt zich niet meer alleen.",
-      "Maar op een nacht gebeurt er iets onverwachts. Een groot ruimteschip landt in de tuin van Tom. Fred springt op en gebaart dat het zijn familie is. Tom is verdrietig omdat hij weet dat Fred weggaat, maar hij is ook blij voor hem omdat hij weet dat Fred weer thuis zal zijn.",
-      "Freds familie neemt hem mee in het ruimteschip en voordat ze weggaan, zwaaien ze naar Tom. Tom zwaait terug en voelt zich blij voor Fred, maar ook een beetje verdrietig omdat zijn vriend weggaat. Maar dan beseft Tom dat hij niet alleen is. Hij heeft zijn familie en vrienden op aarde en hij weet dat hij Fred via het intergalactische internet kan blijven spreken. Tom gaat naar bed en valt in slaap met een glimlach."
-    ],
-    "english_paragraphs": [
-      "One day a spaceship crashes on Earth and a small green creature emerges. The little creature is called Fred and comes from the planet Mars. He is hungry, cold and lost. He also has no idea how to get back home.",
-      "At that moment Tom, a ten-year-old boy, comes home from school. He sees the spaceship and runs over to see what is going on. As he gets closer, he sees the small green creature sitting on the ground, crying.",
-      "Tom is amazed and wonders if it is an alien. But he feels sorry for it and decides to help. Tom takes the little creature home and gives him food and drink. He also gives him a warm blanket to lie under. Fred feels better and begins to smile.",
-      "Tom decides to hide Fred in his room so no one can find him. He doesn't tell his parents about the small green man because he is afraid they will take him to the authorities. Instead, Tom decides to take care of Fred.",
-      "Days pass and Tom and Fred become good friends. They play together and have a lot of fun. Tom even learns a few words in Martian, Fred's language. Fred is very happy to have a friend and no longer feels alone.",
-      "But one night something unexpected happens. A large spaceship lands in Tom's garden. Fred jumps up and gestures that it is his family. Tom is sad because he knows Fred is leaving, but he is also happy for him because he knows Fred will be back home.",
-      "Fred's family takes him aboard the spaceship and before they leave, they wave to Tom. Tom waves back and feels happy for Fred but also a little sad that his friend is leaving. But then Tom realises he is not alone. He has his family and friends on Earth and he knows he can keep in touch with Fred via the intergalactic internet. Tom goes to bed and falls asleep with a smile."
-    ],
-    "vocabulary": [
-      {
-        "nl": "ruimteschip",
-        "en": "spaceship"
-      },
-      {
-        "nl": "verdwaald",
-        "en": "lost"
-      },
-      {
-        "nl": "wat er aan de hand is",
-        "en": "what's going on"
-      },
-      {
-        "nl": "dichterbij",
-        "en": "closer"
-      },
-      {
-        "nl": "huilen",
-        "en": "to cry"
-      },
-      {
-        "nl": "gebaren",
-        "en": "to gesture"
-      },
-      {
-        "nl": "verbaasd",
-        "en": "surprised"
-      },
-      {
-        "nl": "medelijden",
-        "en": "pity"
-      },
-      {
-        "nl": "deken",
-        "en": "blanket"
-      },
-      {
-        "nl": "glimlach",
-        "en": "smile"
-      },
-      {
-        "nl": "verstoppen",
-        "en": "to hide"
-      },
-      {
-        "nl": "bang",
-        "en": "afraid"
-      },
-      {
-        "nl": "onverwachts",
-        "en": "unexpected"
-      },
-      {
-        "nl": "zwaaien",
-        "en": "to wave"
-      }
-    ],
-    "questions": [
-      "Wat is Toms eerste reactie als hij het ruimteschip ziet?",
-      "Waarom vertelt Tom niemand over Fred?",
-      "Wat vindt Tom ervan als Fred weer terug naar zijn familie gaat?"
-    ]
-  },
-  {
-    "id": 12,
-    "title": "Femke en de diamantendief",
-    "subtitle": "Detective Femke lost een brutale juwelendiefstal op in het hart van Amsterdam",
-    "image_query": "diamonds jewelry Amsterdam luxury store",
-    "paragraphs": [
-      "Femke is een detective in Amsterdam. Ze houdt van haar werk. Vandaag begint ze aan een nieuwe zaak. Een juwelier in het centrum van de stad heeft haar gebeld omdat er een diamant gestolen is uit zijn winkel.",
-      "Femke begint met het verzamelen van bewijsmateriaal. Ze praat met getuigen en kijkt naar de beelden van de beveiligingscamera's. Na een paar uur werken heeft ze genoeg informatie om de zaak op te lossen.",
-      "Ze besluit om naar het Rijksmuseum te gaan. Ze heeft gehoord dat de dief misschien de diamant probeert te verkopen aan een van de kunsthandelaren daar. Als ze het museum binnenkomt, ziet ze een verdacht uitziende man rondlopen. Ze besluit hem te volgen en ziet hem naar een kunsthandelaar gaan.",
-      "Femke gaat naar de kunsthandelaar en vraagt of hij misschien iets weet over de gestolen diamant. De kunsthandelaar ontkent iets te weten, maar Femke is niet overtuigd. Ze vraagt hem om zijn beveiligingsbeelden te bekijken en ziet de dief die de diamant aan hem probeert te verkopen.",
-      "Femke gaat terug naar de verdachte man en arresteert hem. Hij bekent de diamant gestolen te hebben en geeft hem terug aan de juwelier. Femke heeft de zaak opgelost en de diamant is teruggebracht naar de rechtmatige eigenaar.",
-      "De juwelier is zo blij dat hij Femke uitnodigt voor een feestje om haar te bedanken. Femke gaat naar het feestje en ontmoet daar een charmante man. Ze praten met elkaar en hebben veel gemeen. Aan het eind van de avond vraagt hij haar uit voor een etentje de volgende avond. Femke stemt toe en ze hebben een geweldige avond samen.",
-      "Femke realiseert zich dat de zaak haar niet alleen een opgeloste misdaad heeft opgeleverd, maar ook een nieuw contact en misschien wel iets meer."
-    ],
-    "english_paragraphs": [
-      "Femke is a detective in Amsterdam. She loves her work. Today she begins a new case. A jeweller in the centre of the city has called her because a diamond has been stolen from his shop.",
-      "Femke starts by gathering evidence. She talks to witnesses and reviews footage from the security cameras. After a few hours of work she has enough information to solve the case.",
-      "She decides to go to the Rijksmuseum. She has heard that the thief may be trying to sell the diamond to one of the art dealers there. When she enters the museum she sees a suspicious-looking man walking around. She decides to follow him and sees him approach an art dealer.",
-      "Femke goes to the art dealer and asks if he knows anything about the stolen diamond. The art dealer denies knowing anything, but Femke is not convinced. She asks to see his security footage and spots the thief trying to sell him the diamond.",
-      "Femke goes back to the suspect and arrests him. He confesses to stealing the diamond and returns it to the jeweller. Femke has solved the case and the diamond has been returned to its rightful owner.",
-      "The jeweller is so grateful that he invites Femke to a party to thank her. Femke goes to the party and meets a charming man. They talk to each other and have a lot in common. At the end of the evening he asks her out for dinner the following night. Femke agrees and they have a wonderful evening together.",
-      "Femke realises that the case has given her not only a solved crime, but also a new connection and perhaps something more."
-    ],
-    "vocabulary": [
-      {
-        "nl": "verzamelen",
-        "en": "collecting"
-      },
-      {
-        "nl": "bewijsmateriaal",
-        "en": "evidence"
-      },
-      {
-        "nl": "kunsthandelaar",
-        "en": "art dealer"
-      },
-      {
-        "nl": "verdacht uitziende",
-        "en": "suspicious looking"
-      },
-      {
-        "nl": "misschien",
-        "en": "maybe"
-      },
-      {
-        "nl": "ontkennen",
-        "en": "to deny"
-      },
-      {
-        "nl": "overtuigd",
-        "en": "convinced"
-      },
-      {
-        "nl": "bekent",
-        "en": "admits"
-      },
-      {
-        "nl": "opgelost",
-        "en": "solved / resolved"
-      }
-    ],
-    "questions": [
-      "Wat wil de diamantendief met de gestolen diamant doen?",
-      "Heeft de diamantendief de diamant al aan een kunsthandelaar verkocht? Waarom denk je van wel/niet?",
-      "Wat doet de juwelier om Femke te bedanken?"
-    ]
-  },
-  {
-    "id": 13,
-    "title": "Pieter heeft een droom",
-    "subtitle": "In het 17e-eeuwse Amsterdam vecht een jonge handelaar voor zijn liefde en zijn toekomst",
-    "image_query": "Amsterdam golden age 17th century Dutch canal painting",
-    "paragraphs": [
-      "In 17e-eeuws Amsterdam leeft een man genaamd Pieter. Hij is verliefd op Lotte. Hoewel ze ook van hem houdt, kan ze niet met hem samen zijn omdat ze van koninklijke bloedlijn is en haar familie hier niet mee akkoord gaat.",
-      "Pieter werkt hard en wordt een succesvolle handelaar in Amsterdams Gouden Eeuw. Ondertussen verliest Lotte's familie veel geld en worden ze arm. Maar Pieter blijft hard werken aan zijn droom.",
-      "Op een dag, wanneer Pieter en Lotte elkaar weer ontmoeten, ziet Lotte hoe succesvol Pieter is geworden. Haar familie is nog steeds tegen hun relatie. Pieter geeft niet op en blijft hard werken, totdat hij zoveel geld heeft verdiend dat zelfs de koninklijke familie onder de indruk is.",
-      "Lotte's familie accepteert nu de relatie tussen Pieter en Lotte en ze trouwen in een prachtige ceremonie. Samen genieten ze van hun succes en leven ze nog lang en gelukkig.",
-      "Het is een verhaal over vastberadenheid en liefde die overwint. Het laat zien dat met hard werken en doorzettingsvermogen alles mogelijk is. En wie weet, misschien kunnen we allemaal ons eigen geluk vinden in de wereld, net zoals Pieter dat heeft gedaan."
-    ],
-    "english_paragraphs": [
-      "In 17th-century Amsterdam lives a man named Pieter. He is in love with Lotte. Although she loves him too, she cannot be with him because she is of royal blood and her family does not approve.",
-      "Pieter works hard and becomes a successful merchant during Amsterdam's Golden Age. Meanwhile, Lotte's family loses a lot of money and becomes poor. But Pieter keeps working hard towards his dream.",
-      "One day, when Pieter and Lotte meet again, Lotte sees how successful Pieter has become. Her family is still against their relationship. Pieter does not give up and keeps working hard, until he has earned so much money that even the royal family is impressed.",
-      "Lotte's family now accepts the relationship between Pieter and Lotte and they get married in a beautiful ceremony. Together they enjoy their success and live happily ever after.",
-      "It is a story about determination and love that conquers all. It shows that with hard work and perseverance anything is possible. And who knows, perhaps we can all find our own happiness in the world, just as Pieter did."
-    ],
-    "vocabulary": [
-      {
-        "nl": "17e eeuw",
-        "en": "17th century"
-      },
-      {
-        "nl": "hoewel",
-        "en": "although"
-      },
-      {
-        "nl": "gouden eeuw",
-        "en": "golden age"
-      },
-      {
-        "nl": "ondertussen",
-        "en": "meanwhile"
-      },
-      {
-        "nl": "verliezen",
-        "en": "to lose"
-      },
-      {
-        "nl": "arm",
-        "en": "poor"
-      },
-      {
-        "nl": "opgeven",
-        "en": "to give up"
-      },
-      {
-        "nl": "onder de indruk",
-        "en": "impressed"
-      },
-      {
-        "nl": "vastberadenheid",
-        "en": "determination"
-      },
-      {
-        "nl": "doorzettingsvermogen",
-        "en": "perseverance"
-      }
-    ],
-    "questions": [
-      "Waarom vindt de familie van Lotte het in het begin niet goed dat Lotte en Pieter samen willen zijn?",
-      "Om welke twee redenen vindt de familie van Lotte het uiteindelijk wel goed dat Lotte en Pieter samen zijn?",
-      "Wat kunnen we volgens de schrijver leren van dit verhaal?"
-    ]
-  },
-  {
-    "id": 14,
-    "title": "Klaas en de pieten",
-    "subtitle": "De gewone man Klaas ontdekt dat hij de laatste afstammeling van Sinterklaas is",
-    "image_query": "Sinterklaas Netherlands December celebration",
-    "paragraphs": [
-      "Klaas is een gewone man die in Nederland woont. Hij werkt hard en leeft een rustig leven. Hij heeft altijd genoten van de Sinterklaasviering, waarbij kinderen cadeautjes krijgen van \"Sint\" en zijn helpers, de Pieten.",
-      "Maar de laatste 10 jaar heeft niemand Sinterklaas meer gezien. Sommige mensen denken dat hij gestopt is met het brengen van cadeautjes, anderen denken dat hij niet meer bestaat. Maar op een dag verandert alles voor Klaas.",
-      "Op een ochtend krijgt Klaas een brief in zijn brievenbus. Hij opent de brief en leest dat hij de laatste afstammeling is van Sinterklaas. Hij moet nu de rol van de goedheiligman overnemen en cadeautjes brengen naar alle kinderen in Nederland op 5 december.",
-      "Klaas is verbaasd en weet niet wat hij moet doen. Hij heeft geen ervaring in het brengen van cadeautjes en ook geen ervaring met paarden. Maar hij besluit de uitdaging aan te gaan en begint zich voor te bereiden. Hij oefent elke dag met het paard van zijn buurman en leert hoe hij cadeautjes moet inpakken. Hij ontdekt ook dat de Pieten hem zullen helpen.",
-      "Op de avond van 5 december begint Klaas aan zijn taak. Hij rijdt op zijn witte paard dat \"Oh zo snel\" heet, en heeft een grote zak vol cadeautjes bij zich. De Pieten zijn bij hem en helpen hem om de cadeautjes te bezorgen. Maar al snel wordt het duidelijk dat het niet makkelijk is om alle cadeautjes te bezorgen.",
-      "Op een gegeven moment komen ze bij een huis waar geen schoorsteen is. Klaas en de Pieten weten niet hoe ze binnen moeten komen. Ze besluiten om door het raam te gaan. Maar dan gaat het mis. Klaas blijft vastzitten in het raam en kan niet meer bewegen. De Pieten proberen hem te bevrijden, maar het lukt niet. Maar dan hoort hij het geluid van kinderen die zingen en lachen en hij beseft dat hij niet op moet geven.",
-      "Met veel moeite weet hij zich los te maken en gaat hij weer verder met het bezorgen van de cadeautjes. Uiteindelijk lukt het hem om alle cadeautjes te bezorgen en keert hij terug naar huis. Klaas is moe, maar ook trots. Hij heeft laten zien dat hij net zo'n goede Sinterklaas is als zijn voorouders. Hij zal de rol van Sint blijven vervullen en elk jaar cadeautjes brengen naar alle kinderen in Nederland."
-    ],
-    "english_paragraphs": [
-      "Klaas is an ordinary man who lives in the Netherlands. He works hard and leads a quiet life. He has always enjoyed the Sinterklaas celebration, in which children receive presents from \"Sint\" and his helpers, the Pieten.",
-      "But for the past 10 years nobody has seen Sinterklaas. Some people think he has stopped bringing presents, others think he no longer exists. But one day everything changes for Klaas.",
-      "One morning Klaas receives a letter in his letterbox. He opens the letter and reads that he is the last descendant of Sinterklaas. He must now take over the role of the good saint and bring presents to all the children in the Netherlands on the 5th of December.",
-      "Klaas is surprised and doesn't know what to do. He has no experience delivering presents and no experience with horses. But he decides to take on the challenge and starts preparing. He practises every day with his neighbour's horse and learns how to wrap presents. He also discovers that the Pieten will help him.",
-      "On the evening of the 5th of December, Klaas begins his task. He rides his white horse called \"Oh so fast\" and has a large sack full of presents with him. The Pieten are with him and help him to deliver the presents. But it quickly becomes clear that delivering all the presents is not easy.",
-      "At one point they come to a house with no chimney. Klaas and the Pieten don't know how to get inside. They decide to go through the window. But then things go wrong. Klaas gets stuck in the window and can no longer move. The Pieten try to free him, but it doesn't work. But then he hears the sound of children singing and laughing and he realises he must not give up.",
-      "With great effort he manages to free himself and carries on delivering the presents. Eventually he manages to deliver all the presents and returns home. Klaas is tired, but also proud. He has shown that he is just as good a Sinterklaas as his ancestors. He will continue to fulfil the role of Sint and bring presents to all the children in the Netherlands every year."
-    ],
-    "vocabulary": [
-      {
-        "nl": "gewoon",
-        "en": "normal"
-      },
-      {
-        "nl": "sinterklaas",
-        "en": "Dutch version of Santa Claus"
-      },
-      {
-        "nl": "cadeautjes",
-        "en": "presents"
-      },
-      {
-        "nl": "verandert",
-        "en": "changes"
-      },
-      {
-        "nl": "afstammeling",
-        "en": "descendant"
-      },
-      {
-        "nl": "goedheiligman",
-        "en": "saint"
-      },
-      {
-        "nl": "uitdaging",
-        "en": "challenge"
-      },
-      {
-        "nl": "buurman",
-        "en": "neighbor"
-      },
-      {
-        "nl": "kleurrijk",
-        "en": "colourful"
-      },
-      {
-        "nl": "moeite",
-        "en": "effort"
-      },
-      {
-        "nl": "uiteindelijk",
-        "en": "finally"
-      },
-      {
-        "nl": "voorouders",
-        "en": "ancestors"
-      }
-    ],
-    "questions": [
-      "Wat doet Klaas om zich voor te bereiden op 5 december?",
-      "Hoe bezorgt Klaas cadeaus bij een huis dat geen schoorsteen heeft?",
-      "Waarom geeft Klaas niet op als zijn werk moeilijk is?"
-    ]
-  },
-  {
-    "id": 15,
-    "title": "Een middag in het Rijksmuseum",
-    "subtitle": "Sofie ontdekt de prachtige schilderijen en de geschiedenis in Amsterdam.",
-    "image_query": "Rijksmuseum Amsterdam paintings Rembrandt Milkmaid",
-    "paragraphs": [
-      "Het is een regenachtige dinsdagmiddag wanneer Sofie besluit om naar het Rijksmuseum in Amsterdam te gaan. Ze heeft online al een kaartje gekocht, waardoor ze de lange wachtrij bij de ingang kan overslaan. Zodra ze het imposante gebouw binnenstapt, voelt ze een sfeer van rust en bewondering. De hoge plafonds en het binnenvallende licht maken meteen indruk op haar.",
-      "Haar eerste stop is de Eregalerij, waar de beroemdste meesterwerken uit de Nederlandse geschiedenis hangen. Ze loopt langzaam langs de muren en blijft plotseling staan voor 'De Nachtwacht' van Rembrandt van Rijn. Het schilderij is veel groter dan ze had verwacht. Ze bestudeert de details, het gebruik van licht en donker, en de levendige gezichtsuitdrukkingen van de figuren op het doek.",
-      "Daarna wandelt Sofie naar de werken van Johannes Vermeer. Ze geniet intens van 'Het Melkmeisje'. De manier waarop de schilder de textuur van de melk en de rustgevende sfeer van de kamer heeft vastgelegd, vindt ze fascinerend. Na twee uur ronddwalen sluit ze haar bezoek af met een warme chocolademelk in het museumcafé, vol inspiratie voor haar eigen hobby: schilderen."
-    ],
-    "english_paragraphs": [
-      "It is a rainy Tuesday afternoon when Sofie decides to go to the Rijksmuseum in Amsterdam. She has already bought a ticket online, which allows her to skip the long queue at the entrance. As soon as she steps inside the imposing building, she feels an atmosphere of tranquility and admiration. The high ceilings and the incoming light immediately make an impression on her.",
-      "Her first stop is the Gallery of Honour, where the most famous masterpieces from Dutch history hang. She walks slowly along the walls and suddenly stops in front of 'The Night Watch' by Rembrandt van Rijn. The painting is much larger than she had expected. She studies the details, the use of light and dark, and the lively facial expressions of the figures on the canvas.",
-      "Afterwards, Sofie walks to the works of Johannes Vermeer. She intensely enjoys 'The Milkmaid'. The way the painter captured the texture of the milk and the calming atmosphere of the room is something she finds fascinating. After two hours of wandering around, she concludes her visit with a hot chocolate in the museum café, full of inspiration for her own hobby: painting."
-    ],
-    "vocabulary": [
-      {
-        "nl": "de wachtrij",
-        "en": "the queue / line"
-      },
-      {
-        "nl": "het meesterwerk",
-        "en": "the masterpiece"
-      },
-      {
-        "nl": "verwacht",
-        "en": "expected"
-      },
-      {
-        "nl": "de gezichtsuitdrukking",
-        "en": "the facial expression"
-      },
-      {
-        "nl": "het doek",
-        "en": "the canvas"
-      },
-      {
-        "nl": "vastgelegd",
-        "en": "captured / recorded"
-      },
-      {
-        "nl": "ronddwalen",
-        "en": "to wander around"
-      }
-    ],
-    "questions": [
-      {
-        "question": "Waarom hoefde Sofie niet in de lange wachtrij te staan?",
-        "answers": [
-          "Omdat het museum die dag gratis was.",
-          "Omdat ze online al een kaartje had gekocht.",
-          "Omdat ze een beroemde schilder is.",
-          "Omdat het museum bijna leeg was vanwege de regen."
+    {
+      "id": 9,
+      "title": "Teun wordt bakker",
+      "subtitle": "Teun geeft zijn saaie kantoorjob op voor zijn droom: een eigen bakkerij",
+      "image_query": "Dutch bakery fresh bread pastry shop",
+      "paragraphs": [
+        "Teun zit achter zijn bureau op kantoor. Hij staart naar het computerscherm en zucht diep. Hij haat zijn baan. Het is saai en hij voelt zich opgesloten tussen vier muren. Hij denkt na over wat hij echt graag zou willen doen. Plotseling herinnert hij zich dat hij als kind graag taarten bakte met zijn moeder. Hij vraagt zich af waarom hij niet gewoon een bakkerij begint.",
+        "Diezelfde dag nog gaat hij naar de bibliotheek en leent hij een stapel boeken over bakken. Hij leest alles wat hij kan vinden over brood, taarten en gebak. Hij bakt thuis een paar keer en geeft het resultaat aan vrienden en familie. Ze zijn verrast over hoe lekker het smaakt.",
+        "Teun besluit dat het tijd is om zijn droom te realiseren. Hij zoekt een locatie en vindt een klein winkelpand in Gouda. Hij koopt ovens, mixers snapshots en andere apparatuur. Hij begint vroeg in de ochtend met bakken en opent zijn winkel om acht uur.",
+        "In het begin gaat het moeizaam. Hij heeft niet veel klanten en het kost tijd om bekend te worden. Maar langzaam maar zeker begint zijn bakkerij populairder te worden. Overal vandaan komen mensen om zijn versgebakken brood te kopen. Zijn taarten zijn de lekkerste van de stad.",
+        "Op een dag komt er een journalist langs die een artikel wil schrijven over zijn bakkerij. Het artikel wordt gepubliceerd in de krant en daarna gaat het hard. De bakkerij wordt steeds bekender en hij krijgt steeds meer klanten.",
+        "Teun kan zijn geluk niet op. Hij doet iets wat hij echt leuk vindt en hij verdient er ook nog eens zijn geld mee. Hij voelt zich vrijer dan ooit tevoren en is trots op wat hij heeft bereikt."
+      ],
+      "english_paragraphs": [
+        "Teun sits at his desk at the office. He stares at the computer screen and sighs deeply. He hates his job. It is boring and he feels trapped between four walls. He thinks about what he would really like to do. Suddenly he remembers that as a child he loved baking cakes with his mother. He wonders why he doesn't just start a bakery.",
+        "That very same day he goes to the library and borrows a stack of books about baking. He reads everything he can find about bread, cakes and pastries. He bakes at home a few times and gives the results to friends and family. They are surprised at how delicious it tastes.",
+        "Teun decides it's time to make his dream a reality. He looks for a location and finds a small shop in Gouda. He buys ovens, mixers and other equipment. He starts baking early in the morning and opens his shop at eight o'clock.",
+        "At first things are difficult. He doesn't have many customers and it takes time to become known. But slowly but surely his bakery starts to become more popular. People come from all over to buy his freshly baked bread. His cakes are the best in the city.",
+        "One day a journalist stops by who wants to write an article about his bakery. The article is published in the newspaper and after that things really take off. The bakery becomes more and more well-known and he gets more and more customers.",
+        "Teun can't believe his luck. He is doing something he truly enjoys and is even earning money from it. He feels freer than ever before and is proud of what he has achieved."
+      ],
+      "vocabulary": [
+        {
+          "nl": "kantoor",
+          "en": "office"
+        },
+        {
+          "nl": "zuchten",
+          "en": "to sigh"
+        },
+        {
+          "nl": "saai",
+          "en": "boring"
+        },
+        {
+          "nl": "muren",
+          "en": "walls"
+        },
+        {
+          "nl": "plotseling",
+          "en": "suddenly"
+        },
+        {
+          "nl": "zich herinneren",
+          "en": "to remember"
+        },
+        {
+          "nl": "lenen",
+          "en": "to borrow"
+        },
+        {
+          "nl": "verrast zijn",
+          "en": "to be surprised"
+        },
+        {
+          "nl": "moeizaam",
+          "en": "difficult / arduous"
+        },
+        {
+          "nl": "klant",
+          "en": "customer"
+        },
+        {
+          "nl": "krant",
+          "en": "newspaper"
+        },
+        {
+          "nl": "verdienen",
+          "en": "to earn"
+        },
+        {
+          "nl": "trots",
+          "en": "proud"
+        }
+      ],
+      "questions": [
+        {
+          "question": "Wanneer is Teuns liefde voor bakken begonnen?",
+          "answers": [
+            "Toen hij als kind graag taarten bakte met zijn moeder.",
+            "Toen hij op kantoor boeken over brood begon te lezen.",
+            "Nadat hij een klein winkelpand in Gouda had gekocht.",
+            "Toen een journalist hem interviewde achter zijn bureau."
+          ],
+          "correct_answer": "Toen hij als kind graag taarten bakte met zijn moeder."
+        },
+        {
+          "question": "Is de bakkerij van Teun meteen een succes? Waarom wel/niet?",
+          "answers": [
+            "Ja, omdat al zijn collega's van kantoor direct brood kwamen kopen.",
+            "Nee, in het begin gaat het moeizaam omdat hij nog niet veel klanten heeft en bekend moet worden.",
+            "Ja, want zijn winkel zat vanaf acht uur 's ochtends meteen helemaal vol.",
+            "Nee, omdat zijn vrienden en familie de taarten in het begin niet lekker vonden."
+          ],
+          "correct_answer": "Nee, in het begin gaat het moeizaam omdat hij nog niet veel klanten heeft en bekend moet worden."
+        },
+        {
+          "question": "Welke gebeurtenis zorgt ervoor dat de bakkerij heel populair wordt?",
+          "answers": [
+            "Teun verhuist zijn winkel naar een grotere stad dan Gouda.",
+            "Hij besluit om gratis mixers en ovens weg te geven.",
+            "Er verschijnt een artikel over zijn bakkerij in de krant.",
+            "Hij stopt met het bakken van brood en verkoopt alleen nog taarten."
+          ],
+          "correct_answer": "Er verschijnt een artikel over zijn bakkerij in de krant."
+        },
+        {
+          "question": "Waar haalt Teun op de eerste dag informatie vandaan over brood en gebak?",
+          "answers": [
+            "Hij vraagt het aan de journalist die langskomt.",
+            "Hij leent een stapel boeken bij de bibliotheek.",
+            "Hij zoekt naar video's op zijn computerscherm op kantoor.",
+            "Hij krijgt een geheim receptenboek van zijn moeder."
+          ],
+          "correct_answer": "Hij leent een stapel boeken bij de bibliotheek."
+        },
+        {
+          "question": "In welke Nederlandse stad opent Teun zijn eigen bakkerij?",
+          "answers": [
+            "Groningen",
+            "Haarlem",
+            "Amsterdam",
+            "Gouda"
+          ],
+          "correct_answer": "Gouda"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "De tweeling",
+      "subtitle": "Sietske ontmoet op vakantie een meisje dat er precies uitziet als zij",
+      "image_query": "Dutch beach sea Netherlands sand",
+      "paragraphs": [
+        "Er is een meisje dat Sietske heet. Ze woont met haar ouders in een klein dorpje aan de rand van de stad. Sietske is een gelukkig meisje, maar soms vraagt ze zich af of er nog iemand anders is zoals zij.",
+        "Op een dag, tijdens de vakantie, besluiten Sietske's ouders om een reis naar het strand te maken. Terwijl Sietske op het strand loopt, ziet ze een meisje dat er precies uitziet als zij. Het meisje heet Petra en ze blijkt Sietske's tweelingzus te zijn!",
+        "Petra en Sietske raken al snel bevriend. Ze ontdekken dat ze veel gemeen hebben, maar ook dat ze op sommige vlakken heel anders zijn. Zo houdt Sietske van tekenen en schilderen, terwijl Petra meer van sporten houdt.",
+        "De meisjes besluiten om hun vakantie samen door te brengen en genieten van elkaars gezelschap. Ze maken lange wandelingen langs de zee, bouwen zandkastelen en verzamelen schelpen. Ze praten over van alles en nog wat en ontdekken steeds meer over elkaar.",
+        "Op een dag besluiten ze om te kijken waarom ze zo op elkaar lijken. Ze vragen het aan hun ouders en komen erachter dat ze beide geadopteerd zijn. Dit verklaart waarom ze bij verschillende families opgroeien. Sietske en Petra zijn verbaasd en een beetje geschrokken, maar ze realiseren zich al snel dat ze nog steeds familie zijn en dat ze elkaar altijd kunnen bellen als ze elkaar missen.",
+        "De vakantie loopt ten einde en de meisjes moeten afscheid van elkaar nemen. Ze beloven om elkaar elke dag te bellen en te schrijven. Als Sietske en haar ouders weer thuis zijn, belt ze meteen naar Petra. Het is alsof ze elkaar al jaren kennen en ze hebben veel te bespreken.",
+        "Sietske is erg blij dat ze haar tweelingzus heeft gevonden. Ze realiseert zich dat ze niet alleen is en dat er iemand is die net zo is als zij. Ze weet dat ze altijd op Petra kan rekenen en dat ze elkaar nooit zullen vergeten. Sietske en Petra zijn misschien niet op dezelfde plek opgegroeid, maar ze hebben nu wel een sterke band voor het leven."
+      ],
+      "english_paragraphs": [
+        "There is a girl called Sietske. She lives with her parents in a small village on the edge of the city. Sietske is a happy girl, but sometimes she wonders if there is someone else out there just like her.",
+        "One day during the holidays, Sietske's parents decide to take a trip to the beach. While Sietske is walking on the beach, she sees a girl who looks exactly like her. The girl's name is Petra and she turns out to be Sietske's twin sister!",
+        "Petra and Sietske quickly become friends. They discover they have a lot in common, but also that they are very different in some ways. For example, Sietske loves drawing and painting, while Petra prefers sports.",
+        "The girls decide to spend their holiday together and enjoy each other's company. They take long walks along the sea, build sandcastles and collect shells. They talk about all sorts of things and keep discovering more about each other.",
+        "One day they decide to find out why they look so alike. They ask their parents and discover that they were both adopted. This explains why they grew up with different families. Sietske and Petra are surprised and a little shocked, but they soon realise they are still family and can always call each other when they miss one another.",
+        "The holiday comes to an end and the girls have to say goodbye. They promise to call and write to each other every day. When Sietske and her parents are back home, she calls Petra immediately. It is as though they have known each other for years and they have so much to talk about.",
+        "Sietske is very happy to have found her twin sister. She realises she is not alone and that there is someone out there just like her. She knows she can always count on Petra and that they will never forget each other. Sietske and Petra may not have grown up in the same place, but they now have a strong bond for life."
+      ],
+      {
+        "id": 10,
+        "title": "De tweeling",
+        "subtitle": "Sietske ontmoet op vakantie een meisje dat er precies uitziet als zij",
+        "image_query": "Dutch beach sea Netherlands sand",
+        "paragraphs": [
+          "Er is een meisje dat Sietske heet. Ze woont met haar ouders in een klein dorpje aan de rand van de stad. Sietske is een gelukkig meisje, maar soms vraagt ze zich af of er nog iemand anders is zoals zij.",
+          "Op een dag, tijdens de vakantie, besluiten Sietske's ouders om een reis naar het strand te maken. Terwijl Sietske op het strand loopt, ziet ze een meisje dat er precies uitziet als zij. Het meisje heet Petra en ze blijkt Sietske's tweelingzus te zijn!",
+          "Petra en Sietske raken al snel bevriend. Ze ontdekken dat ze veel gemeen hebben, maar ook dat ze op sommige vlakken heel anders zijn. Zo houdt Sietske van tekenen en schilderen, terwijl Petra meer van sporten houdt.",
+          "De meisjes besluiten om hun vakantie samen door te brengen en genieten van elkaars gezelschap. Ze maken lange wandelingen langs de zee, bouwen zandkastelen en verzamelen schelpen. Ze praten over van alles en nog wat en ontdekken steeds meer over elkaar.",
+          "Op een dag besluiten ze om te kijken waarom ze zo op elkaar lijken. Ze vragen het aan hun ouders en komen erachter dat ze beide geadopteerd zijn. Dit verklaart waarom ze bij verschillende families opgroeien. Sietske en Petra zijn verbaasd en een beetje geschrokken, maar ze realiseren zich al snel dat ze nog steeds familie zijn dat ze elkaar altijd kunnen bellen als ze elkaar missen.",
+          "De vakantie loopt ten einde en de meisjes moeten afscheid van elkaar nemen. Ze beloven om elkaar elke dag te bellen en te schrijven. Als Sietske en her ouders weer thuis zijn, belt ze meteen naar Petra. Het is alsof ze elkaar al jaren kennen en ze hebben veel te bespreken.",
+          "Sietske is erg blij dat ze haar tweelingzus heeft gevonden. Ze realiseert zich dat ze niet alleen is en dat er iemand is die net zo is als zij. Ze weet dat ze altijd op Petra kan rekenen en dat ze elkaar nooit zullen vergeten. Sietske en Petra zijn misschien niet op dezelfde plek opgegroeid, maar ze hebben nu wel een sterke band voor het leven."
         ],
-        "correct_answer": "Omdat ze online al een kaartje had gekocht."
+        "english_paragraphs": [
+          "There is a girl called Sietske. She lives with her parents in a small village on the edge of the city. Sietske is a happy girl, but sometimes she wonders if there is someone else out there just like her.",
+          "One day during the holidays, Sietske's parents decide to take a trip to the beach. While Sietske is walking on the beach, she sees a girl who looks exactly like her. The girl's name is Petra and she turns out to be Sietske's twin sister!",
+          "Petra and Sietske quickly become friends. They discover they have a lot in common, but also that they are very different in some ways. For example, Sietske loves drawing and painting, while Petra prefers sports.",
+          "The girls decide to spend their holiday together and enjoy each other's company. They take long walks along the sea, build sandcastles and collect shells. They talk about all sorts of things and keep discovering more about each other.",
+          "One day they decide to find out why they look so alike. They ask their parents and discover that they were both adopted. This explains why they grew up with different families. Sietske and Petra are surprised and a little shocked, but they soon realise they are still family and can always call each other when they miss one another.",
+          "The holiday comes to an end and the girls have to say goodbye. They promise to call and write to each other every day. When Sietske and her parents are back home, she calls Petra immediately. It is as though they have known each other for years and they have so much to talk about.",
+          "Sietske is very happy to have found her twin sister. She realises she is not alone and that there is someone out there just like her. She knows she can always count on Petra and that they will never forget each other. Sietske and Petra may not have grown up in the same place, but they now have a strong bond for life."
+        ],
+        "vocabulary": [
+          {
+            "nl": "terwijl",
+            "en": "while"
+          },
+          {
+            "nl": "uitzien",
+            "en": "look (like)"
+          },
+          {
+            "nl": "ontdekken",
+            "en": "discover"
+          },
+          {
+            "nl": "tweeling",
+            "en": "twin"
+          },
+          {
+            "nl": "gezelschap",
+            "en": "company (people)"
+          },
+          {
+            "nl": "besluiten",
+            "en": "to decide"
+          },
+          {
+            "nl": "afscheid",
+            "en": "farewell"
+          },
+          {
+            "nl": "op iemand rekenen",
+            "en": "to count on someone"
+          },
+          {
+            "nl": "opgegroeid",
+            "en": "grown up"
+          }
+        ],
+        "questions": [
+          {
+            "question": "Wat zijn verschillen tussen Petra en Sietske?",
+            "answers": [
+              "Sietske woont in een stad en Petra in een heel klein dorpje.",
+              "Sietske houdt van tekenen en schilderen, terwijl Petra meer van sporten houdt.",
+              "Sietske viert vakantie op het strand en Petra viert vakantie in de bergen.",
+              "Sietske spreekt alleen Nederlands en Petra spreekt alleen Engels."
+            ],
+            "correct_answer": "Sietske houdt van tekenen en schilderen, terwijl Petra meer van sporten houdt."
+          },
+          {
+            "question": "Hoe komt het dat Petra en Sietske niet samen zijn opgegroeid?",
+            "answers": [
+              "Omdat ze ruzie hadden gekregen tijdens een eerdere vakantie aan zee.",
+              "Omdat Petra's ouders naar een andere stad moesten verhuizen voor werk.",
+              "Omdat ze beide geadopteerd zijn door verschillende families.",
+              "Omdat Sietske liever in een rustig dorpje aan de rand van de stad wilde wonen."
+            ],
+            "correct_answer": "Omdat ze beide geadopteerd zijn door verschillende families."
+          },
+          {
+            "question": "Op welke manier houden Petra en Sietske contact na de vakantie?",
+            "answers": [
+              "Ze hebben beloofd om elkaar elke dag te bellen en te schrijven.",
+              "Ze gaan direct samenwonen in het dorpje van Sietske.",
+              "Ze spreken af om elk weekend samen zandkastelen te bouwen.",
+              "Ze houden alleen contact via de brieven van hun adoptieouders."
+            ],
+            "correct_answer": "Ze hebben beloofd om elkaar elke dag te bellen en te schrijven."
+          },
+          {
+            "question": "Waar ontmoeten de twee meisjes elkaar voor het eerst?",
+            "answers": [
+              "In een museum voor moderne kunst",
+              "Op het strand tijdens een vakantie",
+              "Op een schoolfeest in de stad",
+              "In een gezellig café in het centrum"
+            ],
+            "correct_answer": "Op het strand tijdens een vakantie"
+          },
+          {
+            "question": "Wat doen Sietske en Petra onder andere samen tijdens hun vakantie?",
+            "answers": [
+              "Ze maken lange fietstochten door de bergen.",
+              "Ze schrijven een boek over geadopteerde kinderen.",
+              "Ze wandelen langs de zee, bouwen zandkastelen en verzamelen schelpen.",
+              "Ze nemen samen rijlessen aan de rand van de stad."
+            ],
+            "correct_answer": "Ze wandelen langs de zee, bouwen zandkastelen en verzamelen schelpen."
+          }
+        ]
       },
       {
-        "question": "Welk beroemd schilderij van Rembrandt bekijkt Sofie in de Eregalerij?",
-        "answers": [
-          "Het Melkmeisje",
-          "De Zonnebloemen",
-          "De Nachtwacht",
-          "Het Meisje met de Parel"
+        "id": 11,
+        "title": "Fred komt op bezoek",
+        "subtitle": "Een ruimteschip landt op aarde en een jongen van tien jaar vindt een bijzondere nieuwe vriend",
+        "image_query": "alien spacecraft landing field night sky",
+        "paragraphs": [
+          "Op een dag crasht er een ruimteschip op aarde en er komt een klein groen mannetje uit. Het mannetje heet Fred en komt van de planeet Mars. Hij heeft honger en is koud en verdwaald. Hij heeft ook geen idee hoe hij weer thuis moet komen.",
+          "Op dat moment komt Tom, een jongen van 10 jaar, terug van school. Hij ziet het ruimteschip en rent ernaartoe om te kijken wat er aan de hand is. Als hij dichterbij komt, ziet hij het kleine groene mannetje dat op de grond zit en huilt.",
+          "Tom is verbaasd en vraagt zich af of het een buitenaards wezen is. Maar hij voelt medelijden en besluit hem te helpen. Tom neemt het mannetje mee naar huis en geeft hem te eten en drinken. Hij geeft hem ook een warme deken om onder te liggen. Fred voelt zich beter en begint te glimlachen.",
+          "Tom besluit om Fred in zijn kamer te verstoppen zodat niemand hem kan vinden. Hij vertelt zijn ouders niet over de kleine groene man, omdat hij bang is dat ze hem naar de autoriteiten zullen brengen. In plaats daarvan besluit Tom om voor Fred te zorgen.",
+          "Dagen gaan voorbij en Tom en Fred worden goede vrienden. Ze spelen samen en hebben veel plezier. Tom leert zelfs wat woorden in het Martian, de taal van Fred. Fred is heel blij dat hij een vriend heeft en voelt zich niet meer alleen.",
+          "Maar op een nacht gebeurt er iets onverwachts. Een groot ruimteschip landt in de tuin van Tom. Fred springt op en gebaart dat het zijn familie is. Tom is verdrietig omdat hij weet dat Fred weggaat, maar hij is ook blij voor hem omdat hij weet dat Fred weer thuis zal zijn.",
+          "Freds familie neemt hem mee in het ruimteschip en voordat ze weggaan, zwaaien ze naar Tom. Tom zwaait terug en voelt zich blij voor Fred, maar ook een beetje verdrietig omdat zijn vriend weggaat. Maar dan beseft Tom dat hij niet alleen is. Hij heeft zijn familie en vrienden op aarde en hij weet dat hij Fred via het intergalactische internet kan blijven spreken. Tom gaat naar bed en valt in slaap met een glimlach."
         ],
-        "correct_answer": "De Nachtwacht"
+        "english_paragraphs": [
+          "One day a spaceship crashes on Earth and a small green creature emerges. The little creature is called Fred and comes from the planet Mars. He is hungry, cold and lost. He also has no idea how to get back home.",
+          "At that moment Tom, a ten-year-old boy, comes home from school. He sees the spaceship and runs over to see what is going on. As he gets closer, he sees the small green creature sitting on the ground, crying.",
+          "Tom is amazed and wonders if it is an alien. But he feels sorry for it and decides to help. Tom takes the little creature home and gives him food and drink. He also gives him a warm blanket to lie under. Fred feels better and begins to smile.",
+          "Tom decides to hide Fred in his room so no one can find him. He doesn't tell his parents about the small green man because he is afraid they will take him to the authorities. Instead, Tom decides to take care of Fred.",
+          "Days pass and Tom and Fred become good friends. They play together and have a lot of fun. Tom even learns a few words in Martian, Fred's language. Fred is very happy to have a friend and no longer feels alone.",
+          "But one night something unexpected happens. A large spaceship lands in Tom's garden. Fred jumps up and gestures that it is his family. Tom is sad because he knows Fred is leaving, but he is also happy for him because he knows Fred will be back home.",
+          "Fred's family takes him aboard the spaceship and before they leave, they wave to Tom. Tom waves back and feels happy for Fred but also a little sad that his friend is leaving. But then Tom realises he is not alone. He has his family and friends on Earth and he knows he can keep in touch with Fred via the intergalactic internet. Tom goes to bed and falls asleep with a smile."
+        ],
+        "vocabulary": [
+          {
+            "nl": "ruimteschip",
+            "en": "spaceship"
+          },
+          {
+            "nl": "verdwaald",
+            "en": "lost"
+          },
+          {
+            "nl": "wat er aan de hand is",
+            "en": "what's going on"
+          },
+          {
+            "nl": "dichterbij",
+            "en": "closer"
+          },
+          {
+            "nl": "huilen",
+            "en": "to cry"
+          },
+          {
+            "nl": "gebaren",
+            "en": "to gesture"
+          },
+          {
+            "nl": "verbaasd",
+            "en": "surprised"
+          },
+          {
+            "nl": "medelijden",
+            "en": "pity"
+          },
+          {
+            "nl": "deken",
+            "en": "blanket"
+          },
+          {
+            "nl": "glimlach",
+            "en": "smile"
+          },
+          {
+            "nl": "verstoppen",
+            "en": "to hide"
+          },
+          {
+            "nl": "bang",
+            "en": "afraid"
+          },
+          {
+            "nl": "onverwachts",
+            "en": "unexpected"
+          },
+          {
+            "nl": "zwaaien",
+            "en": "to wave"
+          }
+        ],
+        "questions": [
+          {
+            "question": "Wat is Toms eerste reactie als hij het ruimteschip ziet?",
+            "answers": [
+              "Hij wordt heel bang en rent snel terug naar zijn school.",
+              "Hij ziet het ruimteschip en rent ernaartoe om te kijken wat er aan de hand is.",
+              "Hij roept meteen zijn ouders om de autoriteiten te bellen.",
+              "Hij probeert het ruimteschip te verstoppen onder een warme deken."
+            ],
+            "correct_answer": "Hij ziet het ruimteschip en rent ernaartoe om te kijken wat er aan de hand is."
+          },
+          {
+            "question": "Waarom vertelt Tom niemand over Fred?",
+            "answers": [
+              "Omdat hij bang is dat zijn ouders hem naar de autoriteiten zullen brengen.",
+              "Omdat Fred hem heeft gevraagd om geheim te houden dat hij van Mars komt.",
+              "Omdat hij de taal van Fred nog niet goed genoeg begrijpt.",
+              "Omdat hij bang is dat Fred al zijn eten en drinken zal opmaken."
+            ],
+            "correct_answer": "Omdat hij bang is dat zijn ouders hem naar de autoriteiten zullen brengen."
+          },
+          {
+            "question": "Wat vindt Tom ervan als Fred weer terug naar zijn familie gaat?",
+            "answers": [
+              "Hij is boos omdat Fred weggaat zonder eerst gedag te zwaaien.",
+              "Hij vindt het intergalactische internet te duur om contact te houden.",
+              "Hij is alleen maar heel blij en voelt zich totaal niet verdrietig.",
+              "Hij is verdrietig omdat zijn vriend weggaat, maar ook blij omdat Fred weer thuis zal zijn."
+            ],
+            "correct_answer": "Hij is verdrietig omdat zijn vriend weggaat, maar ook blij omdat Fred weer thuis zal zijn."
+          },
+          {
+            "question": "Wat leert Tom tijdens de dagen dat Fred in zijn kamer woont?",
+            "answers": [
+              "Hoe hij een gecrasht ruimteschip zelf kan repareren.",
+              "Wat woorden in het Martian, de taal van Fred.",
+              "Hoe hij een groene deken moet maken voor zijn familie.",
+              "Dat er geen internet is op de planeet Mars."
+            ],
+            "correct_answer": "Wat woorden in het Martian, de taal van Fred."
+          },
+          {
+            "question": "Waar landt het grote ruimteschip van Freds familie?",
+            "answers": [
+              "Vlak naast de school van Tom",
+              "Op een onbekende plek ver weg op Mars",
+              "In de tuin van Tom",
+              "Midden op de weg naar huis"
+            ],
+            "correct_answer": "In de tuin van Tom"
+          }
+        ]
       },
       {
-        "question": "Wat verraste Sofie aan het schilderij van Rembrandt?",
-        "answers": [
-          "Het schilderij was veel groter dan ze had verwacht.",
-          "De kleuren waren erg modern.",
-          "Het schilderij was beschadigd door de regen.",
-          "Er stonden geen mensen op het doek."
+        "id": 12,
+        "title": "Femke en de diamantendief",
+        "subtitle": "Detective Femke lost een brutale juwelendiefstal op in het hart van Amsterdam",
+        "image_query": "diamonds jewelry Amsterdam luxury store",
+        "paragraphs": [
+          "Femke is een detective in Amsterdam. Ze houdt van haar werk. Vandaag begint ze aan een nieuwe zaak. Een juwelier in het centrum van de stad heeft haar gebeld omdat er een diamant gestolen is uit zijn winkel.",
+          "Femke begint met het verzamelen van bewijsmateriaal. Ze praat met getuigen en kijkt naar de beelden van de beveiligingscamera's. Na een paar uur werken heeft ze genoeg informatie om de zaak op te lossen.",
+          "Ze besluit om naar het Rijksmuseum te gaan. Ze heeft gehoord dat de dief misschien de diamant probeert te verkopen aan een van de kunsthandelaren daar. Als ze het museum binnenkomt, ziet ze een verdacht uitziende man rondlopen. Ze besluit hem te volgen en ziet hem naar een kunsthandelaar gaan.",
+          "Femke gaat naar de kunsthandelaar en vraagt of hij misschien iets weet over de gestolen diamant. De kunsthandelaar ontkent iets te weten, maar Femke is niet overtuigd. Ze vraagt hem om zijn beveiligingsbeelden te bekijken en ziet de dief die de diamant aan hem probeert te verkopen.",
+          "Femke gaat terug naar de verdachte man en arresteert hem. Hij bekent de diamant gestolen te hebben en geeft hem terug aan de juwelier. Femke heeft de zaak opgelost en de diamant is teruggebracht naar de rechtmatige eigenaar.",
+          "De juwelier is zo blij dat hij Femke uitnodigt voor een feestje om haar te bedanken. Femke gaat naar het feestje en ontmoet daar een charmante man. Ze praten met elkaar en hebben veel gemeen. Aan het eind van de avond vraagt hij haar uit voor een etentje de volgende avond. Femke stemt toe en ze hebben een geweldige avond samen.",
+          "Femke realiseert zich dat de zaak haar niet alleen een opgeloste misdaad heeft opgeleverd, maar ook een nieuw contact en misschien wel iets meer."
         ],
-        "correct_answer": "Het schilderij was veel groter dan ze had verwacht."
+        "english_paragraphs": [
+          "Femke is a detective in Amsterdam. She loves her work. Today she begins a new case. A jeweller in the centre of the city has called her because a diamond has been stolen from his shop.",
+          "Femke starts by gathering evidence. She talks to witnesses and reviews footage from the security cameras. After a few hours of work she has enough information to solve the case.",
+          "She decides to go to the Rijksmuseum. She has heard that the thief may be trying to sell the diamond to one of the art dealers there. When she enters the museum she sees a suspicious-looking man walking around. She decides to follow him and sees him approach an art dealer.",
+          "Femke goes to the art dealer and asks if he knows anything about the stolen diamond. The art dealer denies knowing anything, but Femke is not convinced. She asks to see his security footage and spots the thief trying to sell him the diamond.",
+          "Femke goes back to the suspect and arrests him. He confesses to stealing the diamond and returns it to the jeweller. Femke has solved the case and the diamond has been returned to its rightful owner.",
+          "The jeweller is so grateful that he invites Femke to a party to thank her. Femke goes to the party and meets a charming man. They talk to each other and have a lot in common. At the end of the evening he asks her out for dinner the following night. Femke agrees and they have a wonderful evening together.",
+          "Femke realises that the case has given her not only a solved crime, but also a new connection and perhaps something more."
+        ],
+        "vocabulary": [
+          {
+            "nl": "verzamelen",
+            "en": "collecting"
+          },
+          {
+            "nl": "bewijsmateriaal",
+            "en": "evidence"
+          },
+          {
+            "nl": "kunsthandelaar",
+            "en": "art dealer"
+          },
+          {
+            "nl": "verdacht uitziende",
+            "en": "suspicious looking"
+          },
+          {
+            "nl": "misschien",
+            "en": "maybe"
+          },
+          {
+            "nl": "ontkennen",
+            "en": "to deny"
+          },
+          {
+            "nl": "overtuigd",
+            "en": "convinced"
+          },
+          {
+            "nl": "bekent",
+            "en": "admits"
+          },
+          {
+            "nl": "opgelost",
+            "en": "solved / resolved"
+          }
+        ],
+        "questions": [
+          {
+            "question": "Wat wil de diamantendief met de gestolen diamant doen?",
+            "answers": [
+              "Hij wil de diamant verstoppen in het Rijksmuseum.",
+              "Hij probeert de diamant te verkopen aan een van de kunsthandelaren.",
+              "Hij wil de diamant cadeau doen aan een charmante man op een feestje.",
+              "Hij wil de diamant ruilen voor een beroemd schilderij."
+            ],
+            "correct_answer": "Hij probeert de diamant te verkopen aan een van de kunsthandelaren."
+          },
+          {
+            "question": "Heeft de diamantendief de diamant al aan een kunsthandelaar verkocht? Waarom wel/niet?",
+            "answers": [
+              "Ja, want de kunsthandelaar bekende meteen dat hij de diamant had gekocht.",
+              "Nee, want op de beveiligingsbeelden is te zien dat hij het alleen probeert te verkopen voordat Femke hem arresteert.",
+              "Ja, de diamant was al teruggebracht naar de rechtmatige eigenaar in het museum.",
+              "Nee, want de dief verloor de diamant tijdens het rondlopen in het centrum."
+            ],
+            "correct_answer": "Nee, want op de beveiligingsbeelden is te zien dat hij het alleen probeert te verkopen voordat Femke hem arresteert."
+          },
+          {
+            "question": "Wat doet de juwelier om Femke te bedanken?",
+            "answers": [
+              "Hij geeft haar een van de grootste diamanten uit zijn winkel.",
+              "Hij nodigt haar uit voor een etentje de volgende avond.",
+              "Hij helpt haar met het bekijken van de beveiligingscamera's van het museum.",
+              "Hij nodigt Femke uit voor een feestje om haar te bedanken."
+            ],
+            "correct_answer": "Hij nodigt Femke uit voor een feestje om haar te bedanken."
+          },
+          {
+            "question": "Waarom belde de juwelier in het centrum van de stad naar Femke?",
+            "answers": [
+              "Omdat er een kostbare diamant uit zijn winkel is gestolen.",
+              "Om haar uit te nodigen voor een gezellig etentje.",
+              "Omdat hij getuige was van een misdaad in het Rijksmuseum.",
+              "Hij wilde dat ze een verdacht uitziende man uit zijn winkel zou verwijderen."
+            ],
+            "correct_answer": "Omdat er een kostbare diamant uit zijn winkel is gestolen."
+          },
+          {
+            "question": "Wat gebeurt er aan het einde van de avond op het feestje?",
+            "answers": [
+              "De dief ontsnapt en Femke moet hem opnieuw volgen.",
+              "De kunsthandelaar geeft een nieuwe diamant aan de juwelier.",
+              "Een charmante man vraagt Femke uit voor een etentje de volgende avond.",
+              "Femke besluit om direct ontslag te nemen als detective."
+            ],
+            "correct_answer": "Een charmante man vraagt Femke uit voor een etentje de volgende avond."
+          }
+        ]
       },
       {
-        "question": "Wie heeft het schilderij 'Het Melkmeisje' gemaakt?",
-        "answers": [
-          "Rembrandt van Rijn",
-          "Johannes Vermeer",
-          "Vincent van Gogh",
-          "Sofie zelf"
+        "id": 13,
+        "title": "Pieter heeft een droom",
+        "subtitle": "In het 17e-eeuwse Amsterdam vecht een jonge handelaar voor zijn liefde en zijn toekomst",
+        "image_query": "Amsterdam golden age 17th century Dutch canal painting",
+        "paragraphs": [
+          "In 17e-eeuws Amsterdam leeft een man genaamd Pieter. Hij is verliefd op Lotte. Hoewel ze ook van hem houdt, kan ze niet met hem samen zijn omdat ze van koninklijke bloedlijn is en haar familie hier niet mee akkoord gaat.",
+          "Pieter werkt hard en wordt een succesvolle handelaar in Amsterdams Gouden Eeuw. Ondertussen verliest Lotte's familie veel geld en worden ze arm. Maar Pieter blijft hard werken aan zijn droom.",
+          "Op een dag, wanneer Pieter en Lotte elkaar weer ontmoeten, ziet Lotte hoe succesvol Pieter is geworden. Haar familie is nog steeds tegen hun relatie. Pieter geeft niet op en blijft hard werken, totdat hij zoveel geld heeft verdiend dat zelfs de koninklijke familie onder de indruk is.",
+          "Lotte's familie accepteert nu de relatie tussen Pieter en Lotte en ze trouwen in een prachtige ceremonie. Samen genieten ze van hun succes en leven ze nog lang en gelukkig.",
+          "Het is een verhaal over vastberadenheid en liefde die overwint. Het laat zien dat met hard werken en doorzettingsvermogen alles mogelijk is. En wie weet, misschien kunnen we allemaal ons eigen geluk vinden in de wereld, net zoals Pieter dat heeft gedaan."
         ],
-        "correct_answer": "Johannes Vermeer"
-      },
-      {
-        "question": "Wat doet Sofie aan het einde van haar museumbezoek?",
-        "answers": [
-          "Ze koopt een poster in de souvenirwinkel.",
-          "Ze begint meteen een nieuw schilderij te maken.",
-          "Ze drinkt een warme chocolademelk in het museumcafé.",
-          "Ze neemt de trein terug naar huis."
+        "english_paragraphs": [
+          "In 17th-century Amsterdam lives a man named Pieter. He is in love with Lotte. Although she loves him too, she cannot be with him because she is of royal blood and her family does not approve.",
+          "Pieter works hard and becomes a successful merchant during Amsterdam's Golden Age. Meanwhile, Lotte's family loses a lot of money and becomes poor. But Pieter keeps working hard towards his dream.",
+          "One day, when Pieter and Lotte meet again, Lotte sees how successful Pieter has become. Her family is still against their relationship. Pieter does not give up and keeps working hard, until he has earned so much money that even the royal family is impressed.",
+          "Lotte's family now accepts the relationship between Pieter and Lotte and they get married in a beautiful ceremony. Together they enjoy their success and live happily ever after.",
+          "It is a story about determination and love that conquers all. It shows that with hard work and perseverance anything is possible. And who knows, perhaps we can all find our own happiness in the world, just as Pieter did."
         ],
-        "correct_answer": "Ze drinkt een warme chocolademelk in het museumcafé."
-      }
-    ]
-  }
-]
+        {
+          "id": 13,
+          "title": "Pieter heeft een droom",
+          "subtitle": "In het 17e-eeuwse Amsterdam vecht een jonge handelaar voor zijn liefde en zijn toekomst",
+          "image_query": "Amsterdam golden age 17th century Dutch canal painting",
+          "paragraphs": [
+            "In 17e-eeuws Amsterdam leeft een man genaamd Pieter. Hij is verliefd op Lotte. Hoewel ze ook van hem houdt, kan ze niet met hem samen zijn omdat ze van koninklijke bloedlijn is en haar familie hier niet mee akkoord gaat.",
+            "Pieter werkt hard en wordt een succesvolle handelaar in Amsterdams Gouden Eeuw. Ondertussen verliest Lotte's familie veel geld en worden ze arm. Maar Pieter blijft hard werken aan zijn droom.",
+            "Op een dag, wanneer Pieter en Lotte elkaar weer ontmoeten, ziet Lotte hoe succesvol Pieter is geworden. Haar familie is nog steeds tegen hun relatie. Pieter geeft niet op en blijft hard werken, totdat hij zoveel geld heeft verdiend dat zelfs de koninklijke familie onder de indruk is.",
+            "Lotte's familie accepteert nu de relatie tussen Pieter en Lotte en ze trouwen in een prachtige ceremonie. Samen genieten ze van hun succes en leven ze nog lang en gelukkig.",
+            "Het is een verhaal over vastberadenheid en liefde die overwint. Het laat zien dat met hard werken en doorzettingsvermogen alles mogelijk is. En wie weet, misschien kunnen we allemaal ons eigen geluk vinden in de wereld, net zoals Pieter dat heeft gedaan."
+          ],
+          "english_paragraphs": [
+            "In 17th-century Amsterdam lives a man named Pieter. He is in love with Lotte. Although she loves him too, she cannot be with him because she is of royal blood and her family does not approve.",
+            "Pieter works hard and becomes a successful merchant during Amsterdam's Golden Age. Meanwhile, Lotte's family loses a lot of money and becomes poor. But Pieter keeps working hard towards his dream.",
+            "One day, when Pieter and Lotte meet again, Lotte sees how successful Pieter has become. Her family is still against their relationship. Pieter does not give up and keeps working hard, until he has earned so much money that even the royal family is impressed.",
+            "Lotte's family now accepts the relationship between Pieter and Lotte and they get married in a beautiful ceremony. Together they enjoy their success and live happily ever after.",
+            "It is a story about determination and love that conquers all. It shows that with hard work and perseverance anything is possible. And who knows, perhaps we can all find our own happiness in the world, just as Pieter did."
+          ],
+          "vocabulary": [
+            {
+              "nl": "17e eeuw",
+              "en": "17th century"
+            },
+            {
+              "nl": "hoewel",
+              "en": "although"
+            },
+            {
+              "nl": "gouden eeuw",
+              "en": "golden age"
+            },
+            {
+              "nl": "ondertussen",
+              "en": "meanwhile"
+            },
+            {
+              "nl": "verliezen",
+              "en": "to lose"
+            },
+            {
+              "nl": "arm",
+              "en": "poor"
+            },
+            {
+              "nl": "opgeven",
+              "en": "to give up"
+            },
+            {
+              "nl": "onder de indruk",
+              "en": "impressed"
+            },
+            {
+              "nl": "vastberadenheid",
+              "en": "determination"
+            },
+            {
+              "nl": "doorzettingsvermogen",
+              "en": "perseverance"
+            }
+          ],
+          "questions": [
+            {
+              "question": "Waarom vindt de familie van Lotte het in het begin niet goed dat Lotte en Pieter samen willen zijn?",
+              "answers": [
+                "Omdat Pieter besluit om als handelaar naar een andere stad te verhuizen.",
+                "Omdat ze liever willen dat Lotte in de 17e eeuw geschiedenis gaat studeren.",
+                "Omdat Lotte van koninklijke bloedlijn is en Pieter in het begin geen succesvolle handelaar was.",
+                "Omdat Pieter al zijn geld had verloren en de familie heel arm was geworden."
+              ],
+              "correct_answer": "Omdat Lotte van koninklijke bloedlijn is en Pieter in het begin geen succesvolle handelaar was."
+            },
+            {
+              "question": "Om welke twee redenen vindt de familie van Lotte het uiteindelijk wel goed dat Lotte en Pieter samen zijn?",
+              "answers": [
+                "Omdat Lotte's familie arm is geworden en Pieter inmiddels zoveel geld heeft verdiend dat de koninklijke familie onder de indruk is.",
+                "Omdat Pieter heeft beloofd om te stoppen met werken en Lotte haar koninklijke titel heeft opgegeven.",
+                "Omdat ze samen een schilderij hebben gekocht en een reis over de grachten wilden maken.",
+                "Omdat de familie ondertussen veel geld heeft gewonnen en Pieter hen hielp in de winkel."
+              ],
+              "correct_answer": "Omdat Lotte's familie arm is geworden en Pieter inmiddels zoveel geld heeft verdiend dat de koninklijke familie onder de indruk is."
+            },
+            {
+              "question": "Wat kunnen we volgens de schrijver leren van dit verhaal?",
+              "answers": [
+                "Dat handelaars in de Gouden Eeuw altijd gelukkig en rijk waren.",
+                "Dat het onmogelijk is om een relatie te hebben met iemand van koninklijke bloedlijn.",
+                "Dat je beter op kantoor kunt werken dan hard te moeten werken in Amsterdam.",
+                "Dat met hard werken, vastberadenheid en doorzettingsvermogen alles mogelijk is."
+              ],
+              "correct_answer": "Dat met hard werken, vastberadenheid en doorzettingsvermogen alles mogelijk is."
+            },
+            {
+              "question": "In welke historische periode speelt dit verhaal zich af?",
+              "answers": [
+                "In de Tweede Wereldoorlog",
+                "In Amsterdams Gouden Eeuw (de 17e eeuw)",
+                "In de moderne tijd van de 21e eeuw",
+                "Tijdens de industriële revolutie"
+              ],
+              "correct_answer": "In Amsterdams Gouden Eeuw (de 17e eeuw)"
+            },
+            {
+              "question": "Wat gebeurt er nadat Lotte's familie de relatie uiteindelijk accepteert?",
+              "answers": [
+                "Pieter en Lotte trouwen in een prachtige ceremonie.",
+                "Pieter besluit om te stoppen met zijn werk als handelaar.",
+                "Ze vertrekken samen naar een boerderij buiten Amsterdam.",
+                "Lotte's familie leent een grote stapel geld van de koning."
+              ],
+              "correct_answer": "Pieter en Lotte trouwen in een prachtige ceremonie."
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "title": "Klaas en de pieten",
+          "subtitle": "De gewone man Klaas ontdekt dat hij de laatste afstammeling van Sinterklaas is",
+          "image_query": "Sinterklaas Netherlands December celebration",
+          "paragraphs": [
+            "Klaas is een gewone man die in Nederland woont. Hij werkt hard en leeft een rustig leven. Hij heeft altijd genoten van de Sinterklaasviering, waarbij kinderen cadeautjes krijgen van \"Sint\" en zijn helpers, de Pieten.",
+            "Maar de laatste 10 jaar heeft niemand Sinterklaas meer gezien. Sommige mensen denken dat hij gestopt is met het brengen van cadeautjes, anderen denken dat hij niet meer bestaat. Maar op een dag verandert alles voor Klaas.",
+            "Op een ochtend krijgt Klaas een brief in zijn brievenbus. Hij opent de brief en leest dat hij de laatste afstammeling is van Sinterklaas. Hij moet nu de rol van de goedheiligman overnemen en cadeautjes brengen naar alle kinderen in Nederland op 5 december.",
+            "Klaas is verbaasd en weet niet wat hij moet doen. Hij heeft geen ervaring in het brengen van cadeautjes en ook geen ervaring met paarden. Maar hij besluit de uitdaging aan te gaan en begint zich voor te bereiden. Hij oefent elke dag met het paard van zijn buurman en leert hoe hij cadeautjes moet inpakken. Hij ontdekt ook dat de Pieten hem zullen helpen.",
+            "Op de avond van 5 december begint Klaas aan zijn taak. Hij rijdt op zijn witte paard dat \"Oh zo snel\" heet, en heeft een grote zak vol cadeautjes bij zich. De Pieten zijn bij hem en helpen hem om de cadeautjes te bezorgen. Maar al snel wordt het duidelijk dat het niet makkelijk is om alle cadeautjes te bezorgen.",
+            "Op een gegeven moment komen ze bij een huis waar geen schoorsteen is. Klaas en de Pieten weten niet hoe ze binnen moeten komen. Ze besluiten om door het raam te gaan. Maar dan gaat het mis. Klaas blijft vastzitten in het raam en kan niet meer bewegen. De Pieten proberen hem te bevrijden, maar het lukt niet. Maar dan hoort hij het geluid van kinderen die zingen en lachen en hij beseft dat hij niet op moet geven.",
+            "Met veel moeite weet hij zich los te maken en gaat hij weer verder met het bezorgen van de cadeautjes. Uiteindelijk lukt het hem om alle cadeautjes te bezorgen en keert hij terug naar huis. Klaas is moe, maar ook trots. Hij heeft laten zien dat hij net zo'n goede Sinterklaas is als zijn voorouders. Hij zal de rol van Sint blijven vervullen en elk jaar cadeautjes brengen naar alle kinderen in Nederland."
+          ],
+          "english_paragraphs": [
+            "Klaas is an ordinary man who lives in the Netherlands. He works hard and leads a quiet life. He has always enjoyed the Sinterklaas celebration, in which children receive presents from \"Sint\" and his helpers, the Pieten.",
+            "But for the past 10 years nobody has seen Sinterklaas. Some people think he has stopped bringing presents, others think he no longer exists. But one day everything changes for Klaas.",
+            "One morning Klaas receives a letter in his letterbox. He opens the letter and reads that he is the last descendant of Sinterklaas. He must now take over the role of the good saint and bring presents to all the children in the Netherlands on the 5th of December.",
+            "Klaas is surprised and doesn't know what to do. He has no experience delivering presents and no experience with horses. But he decides to take on the challenge and starts preparing. He practises every day with his neighbour's horse and learns how to wrap presents. He also discovers that the Pieten will help him.",
+            "On the evening of the 5th of December, Klaas begins his task. He rides his white horse called \"Oh so fast\" and has a large sack full of presents with him. The Pieten are with him and help him to deliver the presents. But it quickly becomes clear that delivering all the presents is not easy.",
+            "At one point they come to a house with no chimney. Klaas and the Pieten don't know how to get inside. They decide to go through the window. But then things go wrong. Klaas gets stuck in the window and can no longer move. The Pieten try to free him, but it doesn't work. But then he hears the sound of children singing and laughing and he realises he must not give up.",
+            "With great effort he manages to free himself and carries on delivering the presents. Eventually he manages to deliver all the presents and returns home. Klaas is tired, but also proud. He has shown that he is just as good a Sinterklaas as his ancestors. He will continue to fulfil the role of Sint and bring presents to all the children in the Netherlands every year."
+          ],
+          "vocabulary": [
+            {
+              "nl": "gewoon",
+              "en": "normal"
+            },
+            {
+              "nl": "sinterklaas",
+              "en": "Dutch version of Santa Claus"
+            },
+            {
+              "nl": "cadeautjes",
+              "en": "presents"
+            },
+            {
+              "nl": "verandert",
+              "en": "changes"
+            },
+            {
+              "nl": "afstammeling",
+              "en": "descendant"
+            },
+            {
+              "nl": "goedheiligman",
+              "en": "saint"
+            },
+            {
+              "nl": "uitdaging",
+              "en": "challenge"
+            },
+            {
+              "nl": "buurman",
+              "en": "neighbor"
+            },
+            {
+              "nl": "kleurrijk",
+              "en": "colourful"
+            },
+            {
+              "nl": "moeite",
+              "en": "effort"
+            },
+            {
+              "nl": "uiteindelijk",
+              "en": "finally"
+            },
+            {
+              "nl": "voorouders",
+              "en": "ancestors"
+            }
+          ],
+          "questions": [
+            {
+              "question": "Wat doet Klaas om zich voor te bereiden op 5 december?",
+              "answers": [
+                "Hij zoekt in heel Nederland naar de Pieten om hem te leren zingen.",
+                "Hij oefent elke dag met het paard van zijn buurman en leert hoe hij cadeautjes moet inpakken.",
+                "Hij schrijft een brief terug waarin hij zegt dat hij geen ervaring heeft.",
+                "Hij koopt een gloednieuwe schoorsteen om thuis mee te oefenen."
+              ],
+              "correct_answer": "Hij oefent elke dag met het paard van zijn buurman en leert hoe hij cadeautjes moet inpakken."
+            },
+            {
+              "question": "Hoe bezorgt Klaas cadeaus bij een huis dat geen schoorsteen heeft?",
+              "answers": [
+                "Hij belt aan en geeft de cadeautjes direct aan de ouders.",
+                "Hij besluit om de cadeautjes op het dak te laten liggen.",
+                "Hij en de Pieten proberen door het raam naar binnen te gaan.",
+                "Hij stuurt de cadeautjes op via de postbode van het dorp."
+              ],
+              "correct_answer": "Hij en de Pieten proberen door het raam naar binnen te gaan."
+            },
+            {
+              "question": "Waarom geeft Klaas niet op als zijn werk moeilijk is?",
+              "answers": [
+                "Omdat zijn witte paard "Oh zo snel" weigert om stil te blijven staan.",
+                "Omdat hij bang is dat hij anders de brief van zijn voorouders kwijtraakt.",
+                "Omdat hij het geluid hoort van kinderen die zingen en lachen.",
+                "Omdat de Pieten hem dwingen om in het raam te blijven hangen."
+              ],
+              "correct_answer": "Omdat hij het geluid hoort van kinderen die zingen en lachen."
+            },
+            {
+              "question": "Hoeveel jaar had niemand Sinterklaas meer gezien voordat Klaas de brief kreeg?",
+              "answers": [
+                "Al meer dan 50 jaar",
+                "De afgelopen 10 jaar",
+                "Sinds de vorige vakantie op het strand",
+                "Slechts een paar dagen"
+              ],
+              "correct_answer": "De afgelopen 10 jaar"
+            },
+            {
+              "question": "Wat ontdekt Klaas wanneer hij de brief in zijn brievenbus opent?",
+              "answers": [
+                "Dat hij de laatste afstammeling is van Sinterklaas en zijn rol moet overnemen.",
+                "Dat zijn buurman zijn witte paard aan hem wil verkopen.",
+                "Dat de Pieten zijn gestopt met het inpakken van cadeautjes.",
+                "Dat hij is uitgenodigd voor een groot feest in het centrum van de stad."
+              ],
+              "correct_answer": "Dat hij de laatste afstammeling is van Sinterklaas en zijn rol moet overnemen."
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "title": "Een middag in het Rijksmuseum",
+          "subtitle": "Sofie ontdekt de prachtige schilderijen en de geschiedenis in Amsterdam.",
+          "image_query": "Rijksmuseum Amsterdam paintings Rembrandt Milkmaid",
+          "paragraphs": [
+            "Het is een regenachtige dinsdagmiddag wanneer Sofie besluit om naar het Rijksmuseum in Amsterdam te gaan. Ze heeft online al een kaartje gekocht, waardoor ze de lange wachtrij bij de ingang kan overslaan. Zodra ze het imposante gebouw binnenstapt, voelt ze een sfeer van rust en bewondering. De hoge plafonds en het binnenvallende licht maken meteen indruk op haar.",
+            "Haar eerste stop is de Eregalerij, waar de beroemdste meesterwerken uit de Nederlandse geschiedenis hangen. Ze loopt langzaam langs de muren en blijft plotseling staan voor 'De Nachtwacht' van Rembrandt van Rijn. Het schilderij is veel groter dan ze had verwacht. Ze bestudeert de details, het gebruik van licht en donker, en de levendige gezichtsuitdrukkingen van de figuren op het doek.",
+            "Daarna wandelt Sofie naar de werken van Johannes Vermeer. Ze geniet intens van 'Het Melkmeisje'. De manier waarop de schilder de textuur van de melk en de rustgevende sfeer van de kamer heeft vastgelegd, vindt ze fascinerend. Na twee uur ronddwalen sluit ze haar bezoek af met een warme chocolademelk in het museumcafé, vol inspiratie voor haar eigen hobby: schilderen."
+          ],
+          "english_paragraphs": [
+            "It is a rainy Tuesday afternoon when Sofie decides to go to the Rijksmuseum in Amsterdam. She has already bought a ticket online, which allows her to skip the long queue at the entrance. As soon as she steps inside the imposing building, she feels an atmosphere of tranquility and admiration. The high ceilings and the incoming light immediately make an impression on her.",
+            "Her first stop is the Gallery of Honour, where the most famous masterpieces from Dutch history hang. She walks slowly along the walls and suddenly stops in front of 'The Night Watch' by Rembrandt van Rijn. The painting is much larger than she had expected. She studies the details, the use of light and dark, and the lively facial expressions of the figures on the canvas.",
+            "Afterwards, Sofie walks to the works of Johannes Vermeer. She intensely enjoys 'The Milkmaid'. The way the painter captured the texture of the milk and the calming atmosphere of the room is something she finds fascinating. After two hours of wandering around, she concludes her visit with a hot chocolate in the museum café, full of inspiration for her own hobby: painting."
+          ],
+          "vocabulary": [
+            {
+              "nl": "de wachtrij",
+              "en": "the queue / line"
+            },
+            {
+              "nl": "het meesterwerk",
+              "en": "the masterpiece"
+            },
+            {
+              "nl": "verwacht",
+              "en": "expected"
+            },
+            {
+              "nl": "de gezichtsuitdrukking",
+              "en": "the facial expression"
+            },
+            {
+              "nl": "het doek",
+              "en": "the canvas"
+            },
+            {
+              "nl": "vastgelegd",
+              "en": "captured / recorded"
+            },
+            {
+              "nl": "ronddwalen",
+              "en": "to wander around"
+            }
+          ],
+          "questions": [
+            {
+              "question": "Waarom hoefde Sofie niet in de lange wachtrij te staan?",
+              "answers": [
+                "Omdat het museum die dag gratis was.",
+                "Omdat ze online al een kaartje had gekocht.",
+                "Omdat ze een beroemde schilder is.",
+                "Omdat het museum bijna leeg was vanwege de regen."
+              ],
+              "correct_answer": "Omdat ze online al een kaartje had gekocht."
+            },
+            {
+              "question": "Welk beroemd schilderij van Rembrandt bekijkt Sofie in de Eregalerij?",
+              "answers": [
+                "Het Melkmeisje",
+                "De Zonnebloemen",
+                "De Nachtwacht",
+                "Het Meisje met de Parel"
+              ],
+              "correct_answer": "De Nachtwacht"
+            },
+            {
+              "question": "Wat verraste Sofie aan het schilderij van Rembrandt?",
+              "answers": [
+                "Het schilderij was veel groter dan ze had verwacht.",
+                "De kleuren waren erg modern.",
+                "Het schilderij was beschadigd door de regen.",
+                "Er stonden geen mensen op het doek."
+              ],
+              "correct_answer": "Het schilderij was veel groter dan ze had verwacht."
+            },
+            {
+              "question": "Wie heeft het schilderij 'Het Melkmeisje' gemaakt?",
+              "answers": [
+                "Rembrandt van Rijn",
+                "Johannes Vermeer",
+                "Vincent van Gogh",
+                "Sofie zelf"
+              ],
+              "correct_answer": "Johannes Vermeer"
+            },
+            {
+              "question": "Wat doet Sofie aan het einde van haar museumbezoek?",
+              "answers": [
+                "Ze koopt een poster in de souvenirwinkel.",
+                "Ze begint meteen een nieuw schilderij te maken.",
+                "Ze drinkt een warme chocolademelk in het museumcafé.",
+                "Ze neemt de trein terug naar huis."
+              ],
+              "correct_answer": "Ze drinkt een warme chocolademelk in het museumcafé."
+            }
+          ]
+        }
+      ]

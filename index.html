@@ -1081,12 +1081,18 @@
     const dlgStreak = dlg.streak?.days || 0;
     const DLG_TOTAL = 20;
 
+    /* Stories2 quiz */
+    const s2quiz     = readJSON('nl_s2_quiz_v1', {});
+    const s2quizDone = Object.values(s2quiz).filter(q => q.completed).length;
+    const S2_TOTAL   = 10;
+
     return {
       streak:     meta.streak        || 0,
       cardsSeen,  cardsMastered,
       klankenDone, KLANKEN_TOTAL,
       verbsLearned, VERBS_TOTAL,
       dlgDone, dlgStreak, DLG_TOTAL,
+      s2quizDone, S2_TOTAL,
     };
   }
 
@@ -1137,6 +1143,14 @@
         detail: s.dlgDone > 0
           ? `${s.dlgDone} dialogen geoefend${s.dlgStreak > 1 ? ' &nbsp;·&nbsp; 🔥 ' + s.dlgStreak + ' dagen' : ''}`
           : 'Nog niet begonnen — oefen gesprekken!',
+      },
+      {
+        href: 'stories2.html', icon: '📖', color: '#8b5cf6',
+        nl: 'Verhalen',
+        pct: Math.min(100, Math.round((s.s2quizDone || 0) / (s.S2_TOTAL || 10) * 100)),
+        detail: (s.s2quizDone || 0) > 0
+          ? `${s.s2quizDone} van ${s.S2_TOTAL} quizzen voltooid`
+          : 'Nog niet begonnen — lees korte verhalen!',
       },
     ];
 
