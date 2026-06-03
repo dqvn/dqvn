@@ -208,6 +208,7 @@
     -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
   }
   .art-card.expanded .art-title { -webkit-line-clamp: unset; }
+  .art-card.expanded .art-head  { display: none; }
 
   .art-chevron {
     align-self: flex-end; color: var(--muted);
@@ -227,10 +228,20 @@
     padding: 13px 16px 15px;
     display: flex; flex-direction: column; gap: 11px;
   }
+  .art-body-hdr {
+    display: flex; align-items: flex-start; gap: 10px;
+    cursor: pointer;
+  }
   .art-body-title {
+    flex: 1;
     font-size: calc(var(--art-fs) * 1.08); font-weight: 800; line-height: 1.35;
     color: var(--text);
   }
+  .art-collapse-btn {
+    flex-shrink: 0; margin-top: 3px;
+    color: var(--muted); font-size: .65rem; line-height: 1;
+  }
+  .art-body-hdr:hover .art-collapse-btn { color: var(--text); }
   .art-desc {
     font-size: calc(var(--art-fs) * .9); line-height: 1.65;
     color: rgba(241,245,249,.7);
@@ -608,7 +619,10 @@
         </div>
         <div class="art-body">
           <div class="art-body-inner">
-            <p class="art-body-title">${escH(a.title || '')}</p>
+            <div class="art-body-hdr" onclick="toggleExpand(${i})" title="Inklappen">
+              <p class="art-body-title">${escH(a.title || '')}</p>
+              <span class="art-collapse-btn">▲</span>
+            </div>
             ${desc ? `<p class="art-desc">${escH(desc)}${desc.length >= 280 ? '…' : ''}</p>` : ''}
             <div class="art-actions">
               <button class="art-btn" onclick="speakArt(${i})" title="Hoor de tekst in het Nederlands">
