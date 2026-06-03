@@ -98,9 +98,14 @@ function drawWheel() {
         return;
     }
 
-    const segArc  = (2 * Math.PI) / n;
-    const baseFs  = Math.max(8, Math.min(14, 15 - n * 0.15));
-    const textMaxW = r - 36;
+    const segArc   = (2 * Math.PI) / n;
+    // Perpendicular arc height available per segment (at ~55% of radius)
+    const arcH     = r * 0.55 * segArc;
+    // Base font: size the text to fill roughly 2 lines of that height.
+    // arcH / 2.9 gives lh = fs*1.45 ≈ arcH/2 → 2 lines fit comfortably.
+    // Capped at r*0.07 so text never dwarfs the segment on a very wide wheel.
+    const baseFs   = Math.max(10, Math.min(r * 0.07, arcH / 2.9));
+    const textMaxW = r - 38;
 
     for (let i = 0; i < n; i++) {
         const startAng = rotation + i * segArc;
@@ -124,12 +129,15 @@ function drawWheel() {
         ctx.textBaseline = 'middle';
         ctx.fillStyle    = '#fff';
         ctx.shadowColor  = 'rgba(0,0,0,.55)';
-        ctx.shadowBlur   = 3;
+        ctx.shadowBlur   = 4;
 
-        const text = items[i];
-        const fs = Math.max(7, baseFs - Math.max(0, Math.floor((text.length - 10) / 7)));
-        const lh = fs * 1.45;
-        ctx.font = `800 ${fs}px Nunito, sans-serif`;
+        const text    = items[i];
+        // Shrink font for longer items; floor at 72% of baseFs so it stays legible
+        const overLen = Math.max(0, text.length - 14);
+        const fs      = Math.max(Math.round(baseFs * 0.72),
+                                 Math.round(baseFs) - Math.floor(overLen / 5));
+        const lh      = fs * 1.45;
+        ctx.font      = `800 ${fs}px Nunito, sans-serif`;
 
         const words = text.split(' ');
         const lines = [];
@@ -147,12 +155,11 @@ function drawWheel() {
         }
         if (cur) lines.push(cur);
 
-        const arcH     = r * 0.55 * segArc;
-        const maxLines = Math.min(6, Math.max(1, Math.floor(arcH / lh)));
+        const maxLines = Math.min(5, Math.max(1, Math.floor(arcH / lh)));
         const vis      = lines.slice(0, maxLines);
         const totalH   = (vis.length - 1) * lh;
         vis.forEach((line, j) => {
-            ctx.fillText(line, r - 12, j * lh - totalH / 2);
+            ctx.fillText(line, r - 16, j * lh - totalH / 2);
         });
 
         ctx.restore();
