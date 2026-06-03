@@ -637,6 +637,11 @@
       expanded.delete(i);
       card.classList.remove('expanded');
     } else {
+      // Collapse every other open card (accordion behaviour)
+      expanded.forEach(idx => {
+        document.getElementById('ac-' + idx)?.classList.remove('expanded');
+      });
+      expanded.clear();
       expanded.add(i);
       card.classList.add('expanded');
     }
