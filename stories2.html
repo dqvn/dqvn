@@ -497,6 +497,67 @@
       #sb-close { display: none; }
     }
 
+    /* ══ Quiz ════════════════════════════════════════════════════════ */
+    .quiz-q {
+      margin-bottom: 18px; padding-bottom: 18px;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .quiz-q:last-of-type { margin-bottom: 4px; border-bottom: none; }
+    .quiz-q-num {
+      font-size: .65rem; font-weight: 800; letter-spacing: .1em;
+      text-transform: uppercase; color: rgba(255,255,255,.3);
+      margin-bottom: 7px;
+    }
+    .quiz-q-text {
+      font-size: .87rem; font-weight: 600; color: rgba(255,255,255,.82);
+      line-height: 1.5; margin-bottom: 10px;
+    }
+    .quiz-opts { display: flex; flex-direction: column; gap: 6px; }
+    .quiz-opt {
+      width: 100%; background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.1); border-radius: 8px;
+      padding: 8px 13px; color: rgba(255,255,255,.62);
+      font-family: 'Nunito', sans-serif;
+      font-size: .82rem; font-weight: 600; text-align: left;
+      cursor: pointer; transition: all .15s;
+    }
+    .quiz-opt:not(:disabled):hover {
+      background: rgba(255,255,255,.1); color: #fff;
+      border-color: rgba(255,255,255,.22);
+    }
+    .quiz-opt.correct {
+      background: rgba(22,163,74,.2); border-color: rgba(22,163,74,.5);
+      color: #86efac; font-weight: 700;
+    }
+    .quiz-opt.wrong {
+      background: rgba(220,38,38,.15); border-color: rgba(220,38,38,.38);
+      color: #fca5a5;
+    }
+    .quiz-opt:disabled { cursor: default; }
+    .quiz-result {
+      margin-top: 16px; padding: 12px 15px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.1); border-radius: 10px;
+      display: none; align-items: center; justify-content: space-between;
+      gap: 10px; flex-wrap: wrap;
+    }
+    .quiz-result.show { display: flex; }
+    .quiz-result-text { font-size: .85rem; font-weight: 700; color: rgba(255,255,255,.75); }
+    .quiz-result-text.perfect { color: #86efac; }
+    .quiz-retry {
+      background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12);
+      border-radius: 20px; padding: 4px 13px; color: rgba(255,255,255,.5);
+      font-family: 'Nunito', sans-serif;
+      font-size: .72rem; font-weight: 700; cursor: pointer; transition: all .15s;
+    }
+    .quiz-retry:hover { background: rgba(255,255,255,.13); color: #fff; }
+    .sb-quiz {
+      margin-left: auto; flex-shrink: 0;
+      font-size: .62rem; font-weight: 800;
+      background: rgba(124,58,237,.25); color: #c4b5fd;
+      padding: 1px 7px; border-radius: 20px;
+    }
+
     /* ══ Animations ══════════════════════════════════════════════════ */
     @keyframes fadeIn  { from { opacity: 0; } to { opacity: 1; } }
     @keyframes fadeUp  {
@@ -583,7 +644,7 @@
           <span class="q-chevron">▼</span>
         </button>
         <div class="q-body" id="q-body">
-          <ol id="sv-qs"></ol>
+          <div id="sv-qs"></div>
         </div>
       </div>
 
@@ -618,6 +679,7 @@ const SPEEDS    = [0.8, 1.0, 1.25, 1.5, 0.6];
 const FS_STEPS  = [0.9, 1.0, 1.05, 1.15, 1.25];
 const DONE_KEY  = 'nl_s2_done';
 const EN_KEY    = 'nl_s2_show_en';
+const QUIZ_KEY  = 'nl_s2_quiz_v1';
 
 let stories     = [];
 let current     = null;
@@ -629,6 +691,7 @@ let isPlaying   = false;
 let utterance   = null;
 let showEn      = localStorage.getItem(EN_KEY) === '1';
 let readSet     = new Set(JSON.parse(localStorage.getItem(DONE_KEY) || '[]'));
+let quizAnswers = [];
 
 /* ══ Bootstrap ═══════════════════════════════════════════════════════ */
 fetch(DATA_URL)
@@ -641,14 +704,18 @@ fetch(DATA_URL)
 
 /* ══ Menu ════════════════════════════════════════════════════════════ */
 function buildMenu() {
-  const ul = document.getElementById('sb-list');
+  const ul   = document.getElementById('sb-list');
+  const qAll = _quizAllData();
   stories.forEach((s, i) => {
-    const li = document.createElement('li');
+    const qd     = qAll[s.id];
+    const qBadge = qd?.completed ? `<span class="sb-quiz">${qd.score}/${qd.total}</span>` : '';
+    const li     = document.createElement('li');
     li.className = 'sb-item' + (readSet.has(s.id) ? ' done' : '');
     li.id = `li-${s.id}`;
     li.innerHTML = `<a href="#" data-id="${s.id}">
       <span class="sb-num">${s.id}</span>
       <span>${s.title}</span>
+      ${qBadge}
       <span class="sb-done">✓</span>
     </a>`;
     li.querySelector('a').addEventListener('click', e => { e.preventDefault(); loadStory(i); closeSidebar(); });
@@ -702,7 +769,7 @@ function loadStory(idx) {
   ).join('');
 
   // Questions
-  document.getElementById('sv-qs').innerHTML = current.questions.map(q => `<li>${q}</li>`).join('');
+  renderQuiz();
   closeQ();
 
   // Show
@@ -925,6 +992,144 @@ function speakWord(word) {
   u.lang = 'nl-NL'; u.rate = 0.85;
   window.speechSynthesis.cancel();
   window.speechSynthesis.speak(u);
+}
+
+/* ══ Quiz ════════════════════════════════════════════════════════════ */
+function _quizAllData() {
+  try { return JSON.parse(localStorage.getItem(QUIZ_KEY) || '{}'); } catch { return {}; }
+}
+
+function renderQuiz() {
+  const qs = document.getElementById('sv-qs');
+  if (!qs) return;
+  if (!current?.questions?.length) { qs.innerHTML = ''; return; }
+
+  // Support both rich format {question, answers[], correct_answer} and legacy string list
+  const isRich = typeof current.questions[0] === 'object' && Array.isArray(current.questions[0].answers);
+  if (!isRich) {
+    qs.innerHTML = '<ol style="padding-left:18px;display:flex;flex-direction:column;gap:10px">' +
+      current.questions.map(q => `<li style="font-size:.88rem;color:rgba(255,255,255,.65);line-height:1.55">${q}</li>`).join('') + '</ol>';
+    return;
+  }
+
+  const total = current.questions.length;
+  quizAnswers = new Array(total).fill(null);
+
+  qs.innerHTML = current.questions.map((q, qi) =>
+    `<div class="quiz-q" id="qq-${qi}">
+      <div class="quiz-q-num">Vraag ${qi + 1} / ${total}</div>
+      <div class="quiz-q-text">${q.question}</div>
+      <div class="quiz-opts">
+        ${q.answers.map((a, ai) =>
+          `<button class="quiz-opt" onclick="pickAnswer(${qi},${ai})">${a}</button>`
+        ).join('')}
+      </div>
+    </div>`
+  ).join('') + '<div class="quiz-result" id="quiz-result"></div>';
+
+  // Restore saved state from localStorage
+  const saved = _quizAllData()[current.id];
+  if (saved?.answers?.length) _restoreQuiz(saved);
+  _updateQLabel();
+}
+
+function pickAnswer(qi, ai) {
+  if (!current || quizAnswers[qi] !== null) return;
+  quizAnswers[qi] = ai;
+  _applyAnswer(qi, ai);
+  if (quizAnswers.every(a => a !== null)) {
+    _saveQuiz();
+    _showResult();
+    _updateSidebarBadge();
+    _updateQLabel();
+  }
+}
+
+function _applyAnswer(qi, ai) {
+  const q         = current.questions[qi];
+  const correctAi = q.answers.indexOf(q.correct_answer);
+  const qEl       = document.getElementById(`qq-${qi}`);
+  if (!qEl) return;
+  qEl.querySelectorAll('.quiz-opt').forEach((btn, i) => {
+    btn.disabled = true;
+    if (i === correctAi)                 btn.classList.add('correct');
+    if (i === ai && i !== correctAi)     btn.classList.add('wrong');
+  });
+}
+
+function _restoreQuiz(savedData) {
+  if (!savedData?.answers) return;
+  savedData.answers.forEach((ai, qi) => {
+    if (ai == null || !current.questions[qi]) return;
+    quizAnswers[qi] = ai;
+    _applyAnswer(qi, ai);
+  });
+  if (savedData.completed) _showResult();
+}
+
+function _saveQuiz() {
+  if (!current) return;
+  const qs    = current.questions;
+  const score = quizAnswers.reduce((acc, ai, qi) =>
+    acc + (ai === qs[qi].answers.indexOf(qs[qi].correct_answer) ? 1 : 0), 0);
+  const data  = { answers: [...quizAnswers], score, total: qs.length, completed: true };
+  try {
+    const all = _quizAllData();
+    all[current.id] = data;
+    localStorage.setItem(QUIZ_KEY, JSON.stringify(all));
+  } catch {}
+}
+
+function _showResult() {
+  const el   = document.getElementById('quiz-result');
+  if (!el) return;
+  const data = _quizAllData()[current?.id];
+  if (!data) return;
+  const pct   = Math.round(data.score / data.total * 100);
+  const emoji = pct === 100 ? '🎉' : pct >= 60 ? '👍' : '📖';
+  const cls   = pct === 100 ? 'perfect' : '';
+  el.innerHTML =
+    `<span class="quiz-result-text ${cls}">${emoji} ${data.score} / ${data.total} correct (${pct}%)</span>` +
+    `<button class="quiz-retry" onclick="retryQuiz()">🔄 Opnieuw</button>`;
+  el.classList.add('show');
+}
+
+function retryQuiz() {
+  if (!current) return;
+  try {
+    const all = _quizAllData();
+    delete all[current.id];
+    localStorage.setItem(QUIZ_KEY, JSON.stringify(all));
+  } catch {}
+  renderQuiz();
+  _updateQLabel();
+}
+
+function _updateSidebarBadge() {
+  if (!current) return;
+  const data = _quizAllData()[current.id];
+  if (!data?.completed) return;
+  const li = document.getElementById(`li-${current.id}`);
+  if (!li) return;
+  let badge = li.querySelector('.sb-quiz');
+  if (!badge) {
+    badge = document.createElement('span');
+    badge.className = 'sb-quiz';
+    const a = li.querySelector('a');
+    if (a) a.insertBefore(badge, a.querySelector('.sb-done'));
+  }
+  badge.textContent = `${data.score}/${data.total}`;
+}
+
+function _updateQLabel() {
+  const btn = document.getElementById('q-toggle');
+  if (!btn) return;
+  const span = btn.querySelector('span:first-child');
+  if (!span) return;
+  const data = current ? _quizAllData()[current.id] : null;
+  span.textContent = data?.completed
+    ? `💬 Vragen — ${data.score}/${data.total} ✓`
+    : '💬 Vragen';
 }
 
 /* ══ Mobile sidebar ══════════════════════════════════════════════════ */
