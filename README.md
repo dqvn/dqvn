@@ -17,7 +17,8 @@ A static web app for learning Dutch vocabulary and dialogues, deployed via GitHu
 | `dialogues.html` | Dutch dialogue practice — YouTube embed + role-play + solo TTS mode |
 | `klanken.html` | Dutch phonetics learner — categorised sounds, IPA, TTS wave, 6 example words |
 | `kids.html` | Kids vocabulary practice — emoji picture cards, tap-to-hear TTS |
-| `stories.html` | Dutch Storytime — interactive story reader (main entry) |
+| `stories.html` | Dutch Storytime — interactive story reader (kids/animated, main entry) |
+| `stories2.html` | Korte Verhalen — 10 Dutch beginner short stories; paragraph TTS, vocabulary chips (click-to-hear), English translation toggle, completion tracking |
 | `stories1–5.html` | Individual story lesson pages |
 | `number.html` | Dutch number practice |
 | `game.html` | Standalone legacy vocabulary quiz |
@@ -27,11 +28,12 @@ A static web app for learning Dutch vocabulary and dialogues, deployed via GitHu
 
 ```
 index.html (portal)
-  └── tool cards → startnl.html, vanstart.html, klanken.html, dialogues.html,
-                   grammar.html, verbs.html, kids.html
-  └── "← Terug naar Portaal" in all tool pages' launcher overlay
+  └── tool cards → startnl.html, vanstart.html, kids.html, stories.html,
+                   stories2.html, klanken.html, dialogues.html,
+                   grammar.html, verbs.html
+  └── "← Terug naar Portaal" in all tool pages' sidebar / launcher overlay
 
-Tool pages' "← Main Menu" / "🏠" back-links → index.html (portal)
+Tool pages' back-links → index.html (portal)
 ```
 
 ---
@@ -46,7 +48,7 @@ Single-page hub with inline CSS + JS (no external scripts except `sync.js`).
 | Sticky header | Dutch-flag emblem + "Leer Nederlands" brand + compact auth pill (sync.js) |
 | Hero | `bg2.jpg` photo background (warm Dutch dusk scene) with parallax scrim; personalized greeting; stats strip |
 | Voortgang | 4 progress cards: Vocabulaire, Klanken, Werkwoorden, Dialogen — live from localStorage |
-| Leertools | 7 tool cards grouped by category: 📚 Woordenschat / 🎙️ Uitspreken / 📖 Grammatica |
+| Leertools | 9 tool cards grouped by category: 📚 Woordenschat / 🎙️ Uitspreken / 📖 Grammatica |
 | Instellingen | Volume slider (`nl_vocab_vol`) + TTS speed slider (`nl_tts_rate`) |
 | Binnenkort | 4 placeholder cards for future features |
 | Waarom aanmelden? | Two pricing-plan-style cards: guest (features available) vs account (sync + future features + CTA) |
@@ -80,30 +82,47 @@ initSpeed()          // reads nl_tts_rate, writes on change
 
 ---
 
+## Asset directory layout
+
+All shared files live under `assets/`, organised into three subdirectories:
+
+```
+assets/
+  css/   style.css  sync.css  dlg.css  klanken.css  kids.css  verbs.css  gstyles.css
+  js/    common.js  sync.js  ttsscript.js  ttsvanstartscript.js  tts4kscript.js
+         game.js  flashcard.js  dlgscript.js  kidsscript.js  klanken.js
+         verbs.js  gapp.js  NoSleep.min.js
+  img/   bg.jpg  bg1.jpg  bg2.jpg  dutch.ico  no-image.jpg
+```
+
+All HTML files reference these subdirectory paths (e.g. `assets/css/style.css`, `assets/js/sync.js`, `assets/img/dutch.ico`).
+
+---
+
 ## Scripts
 
 | File | Role |
 |---|---|
-| `assets/common.js` | Shared: voice selector, table render, menu toggle, hamburger, word badges, font-size control, active-lesson highlight, lazy `puter.js` loader, `_getTTSRate()` helper |
-| `assets/sync.js` | Cloud sync — Google Sign-In (GIS), Upstash Redis via Cloudflare Worker, smart auto-sync |
-| `assets/ttsscript.js` | `initPage()` config for `startnl.html` (main courses) |
-| `assets/ttsvanstartscript.js` | `initPage()` config for `vanstart.html` |
-| `assets/tts4kscript.js` | `initPage()` config for `4000.html` |
-| `assets/game.js` | Multiple-choice vocabulary game (`#popup`) + Puter/GPT AI story generator |
-| `assets/flashcard.js` | SM-2 spaced repetition flashcard engine |
-| `assets/dlgscript.js` | Dialogue app logic — discovery, render, TTS flow, AES-GCM cache |
-| `assets/kidsscript.js` | Kids lesson app — auto-discovers `lxx.json`, emoji tap-to-hear cards |
-| `assets/klanken.js` | Dutch phonetics app — sidebar nav, TTS, progress, wave animation |
-| `assets/verbs.js` | Verb trainer: lesson data, study cards, quiz, dark mode, font picker, wake lock |
-| `assets/gapp.js` | Markdown chapter SPA (TOC, search, progress, TTS) |
-| `assets/NoSleep.min.js` | Wake lock polyfill (used by `verbs.js`) |
-| `assets/style.css` | Shared styles for `startnl.html` / `vanstart.html` / all common components; includes `.al-home-btn` for launcher portal link |
-| `assets/sync.css` | Sync section styles — top-of-menu bar design; three theme contexts: `.left-menu`, `#sidebar`, `.sidebar-dark` |
-| `assets/verbs.css` | Styles for `verbs.html` only |
-| `assets/dlg.css` | Shared sidebar styles for `dialogues.html` and `kids.html` |
-| `assets/kids.css` | Styles for `kids.html` |
-| `assets/klanken.css` | Styles for `klanken.html` |
-| `assets/gstyles.css` | Styles for the Markdown chapter SPA |
+| `assets/js/common.js` | Shared: voice selector, table render, menu toggle, hamburger, word badges, font-size control, active-lesson highlight, lazy `puter.js` loader, `_getTTSRate()` helper |
+| `assets/js/sync.js` | Cloud sync — Google Sign-In (GIS), Upstash Redis via Cloudflare Worker, smart auto-sync |
+| `assets/js/ttsscript.js` | `initPage()` config for `startnl.html` (main courses) |
+| `assets/js/ttsvanstartscript.js` | `initPage()` config for `vanstart.html` |
+| `assets/js/tts4kscript.js` | `initPage()` config for `4000.html` |
+| `assets/js/game.js` | Multiple-choice vocabulary game (`#popup`) + Puter/GPT AI story generator |
+| `assets/js/flashcard.js` | SM-2 spaced repetition flashcard engine |
+| `assets/js/dlgscript.js` | Dialogue app logic — discovery, render, TTS flow, AES-GCM cache |
+| `assets/js/kidsscript.js` | Kids lesson app — auto-discovers `lxx.json`, emoji tap-to-hear cards |
+| `assets/js/klanken.js` | Dutch phonetics app — sidebar nav, TTS, progress, wave animation |
+| `assets/js/verbs.js` | Verb trainer: lesson data, study cards, quiz, dark mode, font picker, wake lock |
+| `assets/js/gapp.js` | Markdown chapter SPA (TOC, search, progress, TTS) |
+| `assets/js/NoSleep.min.js` | Wake lock polyfill (used by `verbs.js`) |
+| `assets/css/style.css` | Shared styles for `startnl.html` / `vanstart.html` / all common components; includes `.al-home-btn` for launcher portal link |
+| `assets/css/sync.css` | Sync section styles — top-of-menu bar design; three theme contexts: `.left-menu`, `#sidebar`, `.sidebar-dark` |
+| `assets/css/verbs.css` | Styles for `verbs.html` only |
+| `assets/css/dlg.css` | Shared sidebar styles for `dialogues.html` and `kids.html` |
+| `assets/css/kids.css` | Styles for `kids.html` |
+| `assets/css/klanken.css` | Styles for `klanken.html` |
+| `assets/css/gstyles.css` | Styles for the Markdown chapter SPA |
 
 ---
 
@@ -552,7 +571,60 @@ body
 
 ---
 
-## CSS conventions — `assets/style.css`
+## Korte Verhalen — `stories2.html`
+
+Beginner Dutch story reader. Self-contained HTML — no external CSS/JS besides Google Fonts.
+
+### Data layer
+- File: `data/stories/beginners.json` — array of 10 story objects (see Data files section)
+- Loaded via `fetch` on page load
+
+### UI layout
+```
+body
+├── #overlay          — mobile drawer backdrop
+├── #mob-bar          — mobile top bar: back-to-portal + title + hamburger
+├── #sidebar          — frosted-glass left panel (slides in on mobile)
+│   ├── back-to-portal link
+│   ├── .sb-hdr       — title + story count
+│   └── .sb-list      — numbered story items, green ✓ when completed
+└── #main
+    ├── #read-bar     — desktop: story title + reading time + A−/A+ + 🇬🇧 toggle + prev/next
+    ├── #progress-bar — 2px orange scroll-progress line
+    └── #content      — scrollable reading area
+        ├── #welcome  — shown until a story is selected
+        └── #story-view
+            ├── sv-header   — badge + title + subtitle + 🇬🇧 toggle button
+            ├── .story-text — paragraphs (.para), English lines (.para-en)
+            ├── .vocab-wrap — clickable word chips (click → hear Dutch TTS)
+            ├── .q-wrap     — collapsible comprehension questions
+            └── .story-nav  — ◀ Vorig / Volgend ▶ buttons
+    └── #tts-bar      — fixed bottom: story title + state + para-dots + controls
+```
+
+### Key features
+| Feature | Detail |
+|---|---|
+| Paragraph TTS | Reads story paragraph-by-paragraph; active paragraph highlighted with orange left border; done paragraphs dimmed |
+| Para-dots | Up to 12 progress dots in TTS bar showing current/done paragraphs |
+| ⏮ / ⏭ | Jump back or forward one paragraph; resumes reading if playing |
+| Speed cycle | 0.8× → 1.0× → 1.25× → 1.5× → 0.6× |
+| Vocabulary | Click any word chip → hears Dutch word via TTS (`nl-NL`, rate 0.85) |
+| English toggle | 🇬🇧 button shows/hides English translations paragraph-by-paragraph; state in `nl_s2_show_en` |
+| Completion | Opening a story saves its ID to `nl_s2_done`; green ✓ in sidebar |
+| Font size | A− / A+ in desktop read-bar adjusts story text size (`--font-sz` CSS var) |
+| Reading progress | Scroll-driven orange gradient bar below read-bar |
+| Mobile drawer | Hamburger → sidebar slides in over content with overlay backdrop |
+
+### localStorage keys
+| Key | Content |
+|---|---|
+| `nl_s2_done` | JSON array of completed story IDs |
+| `nl_s2_show_en` | `'1'` if English translation is visible, `'0'` / absent if hidden |
+
+---
+
+## CSS conventions — `assets/css/style.css`
 
 - Mobile breakpoint: `@media (max-width: 768px)`
 - Left menu width: `270px` (mobile drawer) / `160px` (desktop panel)
@@ -594,6 +666,28 @@ JSON shape per word:
   "englishtranslate": "Hello, how are you?"
 }
 ```
+
+### Stories — `data/stories/beginners.json`
+
+Single JSON array of story objects. Loaded by `stories2.html` via `fetch`.
+
+```json
+{
+  "id": 1,
+  "title": "...",
+  "subtitle": "...",
+  "image_query": "...",
+  "paragraphs": ["Dutch paragraph 1", "..."],
+  "english_paragraphs": ["English translation 1", "..."],
+  "vocabulary": [{ "nl": "...", "en": "..." }],
+  "questions": ["Comprehension question 1?", "..."]
+}
+```
+
+- `paragraphs` / `english_paragraphs` are parallel arrays — same index = same paragraph
+- `image_query` is passed to Unsplash Source for the dynamic story background
+- English translations are hidden by default; toggle state stored in `nl_s2_show_en`
+- Completion tracking stored in `nl_s2_done` (array of read story IDs)
 
 ### Phonetics — `data/klanken/klanken.json`
 Single file. See Klanken section above for shape.
