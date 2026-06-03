@@ -651,6 +651,26 @@ function savePackages() {
     if (typeof scheduleAutoSync === 'function') scheduleAutoSync();
 }
 
+// Called by sync.js after a successful sync so the UI reflects server-merged packages
+function refreshWheelPackages() {
+    let saved;
+    try { saved = JSON.parse(localStorage.getItem(PKGS_KEY) || 'null'); } catch {}
+    if (!Array.isArray(saved) || saved.length === 0) return;
+
+    packages = saved;
+    if (!packages.find(p => p.id === 'default')) packages.unshift(DEFAULT_PKG);
+
+    // Keep current active package if it still exists; otherwise fall back to first
+    if (!packages.find(p => p.id === activePkgId)) {
+        activePkgId = packages[0].id;
+        try { localStorage.setItem(ACTIVE_KEY, activePkgId); } catch {}
+    }
+
+    renderPkgSelect();
+    renderItemsList();
+    drawWheel();
+}
+
 /* ── Boot ───────────────────────────────────────────────── */
 function init() {
     let saved;

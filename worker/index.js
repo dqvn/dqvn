@@ -63,6 +63,8 @@ export default {
       verbs:   localVerbs   = {},
       game:    localGame    = {},
       vol:     localVol     = null,
+      num:     localNum     = {},
+      wheel:   localWheel   = [],
       device:  clientDevice = null,
     } = body;
 
@@ -77,6 +79,8 @@ export default {
     const mergedVerbs   = mergeVerbs  (localVerbs,   stored?.verbs   || {});
     const mergedGame    = mergeGame   (localGame,     stored?.game    || {});
     const mergedVol     = mergeVol    (localVol,      stored?.vol     || null);
+    const mergedNum     = mergeNum    (localNum,      stored?.num     || {});
+    const mergedWheel   = mergeWheel  (localWheel,    stored?.wheel   || []);
 
     // ── Redis write ───────────────────────────────────────────────────────
     // Keep a rolling log of the last 5 device syncs
@@ -97,7 +101,7 @@ export default {
       {
         srs: mergedSRS, meta: mergedMeta,
         klanken: mergedKlanken, verbs: mergedVerbs, game: mergedGame,
-        vol: mergedVol,
+        vol: mergedVol, num: mergedNum, wheel: mergedWheel,
         owner: { sub: user.sub, email: user.email, name: user.name },
         syncedAt: Date.now(),
         syncLog,
@@ -105,7 +109,11 @@ export default {
       REDIS_TTL
     );
 
-    return reply({ srs: mergedSRS, meta: mergedMeta, klanken: mergedKlanken, verbs: mergedVerbs, game: mergedGame, vol: mergedVol });
+    return reply({
+      srs: mergedSRS, meta: mergedMeta,
+      klanken: mergedKlanken, verbs: mergedVerbs, game: mergedGame,
+      vol: mergedVol, num: mergedNum, wheel: mergedWheel,
+    });
   },
 };
 
@@ -313,6 +321,45 @@ function mergeMeta(local, remote) {
     ...base,
     streak: Math.max(local.streak || 0, remote.streak || 0),
   };
+}
+
+// ── Num merge: per-level best stars + union of learn flags ───────────────
+
+function mergeNum(local, remote) {
+  if (!remote || !Object.keys(remote).length) return local;
+  if (!local  || !Object.keys(local).length)  return remote;
+
+  const merged = { ...remote };
+  for (const [levelId, lv] of Object.entries(local)) {
+    const rv = remote[levelId] || {};
+    merged[levelId] = {
+      learn:  (lv.learn  || rv.learn  || false),
+      listen: Math.max(lv.listen || 0, rv.listen || 0),
+      quiz:   Math.max(lv.quiz   || 0, rv.quiz   || 0),
+    };
+  }
+  return merged;
+}
+
+// ── Wheel merge: union of packages by ID; more-items version wins ─────────
+
+function mergeWheel(local, remote) {
+  if (!Array.isArray(remote) || remote.length === 0) return Array.isArray(local) ? local : [];
+  if (!Array.isArray(local)  || local.length  === 0) return remote;
+
+  const byId = new Map();
+  for (const pkg of remote) {
+    if (pkg?.id) byId.set(pkg.id, pkg);
+  }
+  for (const pkg of local) {
+    if (!pkg?.id) continue;
+    const existing = byId.get(pkg.id);
+    // Keep the package that has more items (proxy for "most recently edited")
+    if (!existing || (pkg.items?.length || 0) >= (existing.items?.length || 0)) {
+      byId.set(pkg.id, pkg);
+    }
+  }
+  return [...byId.values()];
 }
 
 // ── Response helper ───────────────────────────────────────────────────────

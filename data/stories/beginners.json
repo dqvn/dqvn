@@ -7,7 +7,7 @@
     "paragraphs": [
       "De familie Ydema woont op een boerderij. Het gezin bestaat uit zes personen, vader Jan, moeder Joke en hun vier kinderen. Het oudste kind is een zoon, Marten van 27 jaar. De jongste drie kinderen zijn meisjes, Femke van 19 jaar, Ymke van 16 en Sytske van 14. Boer Jan melkt elke dag de koeien met een melkmachine. Alle melk komt in een melkkoeltank. Elke twee dagen komt de tankwagen van de melkfabriek om ongeveer 5000 liter melk op te halen. Het werk op de boerderij is zwaar.",
       "Boer Jan en zijn zoon Marten staan 's ochtends om half zes op. Ze eten eerst een paar boterhammen en drinken een kopje thee. Dan trekken ze hun overall aan en gaan ze naar de stal. Marten geeft de kalfjes melk in een aparte stal. Jan gaat naar de grote stal en brengt per keer 16 koeien naar de melkmachine. Na het melken gaan de koeien naar de wei omdat het lente is, waar ze de hele dag gras eten. Jan en Marten maken dan de stal en de melkmachine schoon. Het is nu vijf uur 's middags en Jan en Marten gaan eerst naar buiten om de koeien op te halen.",
-      "Hond Caesar helpt om de koeien naar binnen te brengen door achter de koeien aan te rennen. Zo blijven ze in een grote groep lopen. De koeien zijn weer in de stal. Jan en Marten melken de koeien nog een keer. Elke koe geeft elke dag ongeveer 25 liter melk. Moeder Joke staat om zeven uur op en ontbijt met Ymke en Sytske. Ze praten een beetje en kijken naar buiten naar het weiland waar de paarden van Femke, Ymke en Sytske staan. Ze hebben alledrie een eigen paard. Ze kijken ook naar de tuin naast de boerderij. \"Wat is de tuin weer mooi met al die bloemen\", zegt Ymke.",
+      "Hond Caesar helpt om de koeien naar binnen te brengen door achter de koeien aan te rennen. Zo blijven ze in een grote groep lopen. De koeien zijn weer in de stal. Jan en Marten melken de koeien nog een keer. Elke koe geeft elke dag ongeveer 25 liter melk. Moeder Joke staat om zeven uur op en ontbijt met Ymke und Sytske. Ze praten een beetje en kijken naar buiten naar het weiland waar de paarden van Femke, Ymke en Sytske staan. Ze hebben alledrie een eigen paard. Ze kijken ook naar de tuin naast de boerderij. \"Wat is de tuin weer mooi met al die bloemen\", zegt Ymke.",
       "\"Ja, prachtig hè? Het is echt lente, de bloemen hebben alle kleuren van de regenboog\", zegt Joke. De boerderij van de familie Ydema staat aan de rand van een klein dorpje. Ymke en Sytske moeten naar school. Ze fietsen elke dag tien kilometer naar de stad. Andere kinderen uit het dorp gaan naar dezelfde school als Ymke en Sytske. Op het plein in het dorp wachten ze op elkaar, en dan fietsen ze samen naar school. Moeder Joke werkt niet op de boerderij; zij doet het huishouden en ze werkt in her grote moestuin. Ze heeft bij de boerderij een boerderijcamping gemaakt, wat ook veel werk is. Somige mensen vinden het fijn om bij een boerderij te kamperen.",
       "Ze nemen hun tent, caravan of camper mee en slapen bij de boerderij. Vandaag komen de eerste kampeerders van dit jaar: Koos en Loes van 68 jaar. Ze komen elk jaar een paar dagen met hun camper naar de boerderijcamping van Joke. Daar komt hun camper al aan, ze stappen snel uit en begroeten Joke. \"Hallo Loes en Koos, wat leuk dat jullie hier weer zijn. Hoe gaat het met jullie?\", vraagt Joke. Ze geven elkaar drie zoenen. \"Ja, het gaat heel goed met ons Joke\", zegt Loes, \"wij zijn opa en oma geworden! Onze dochter heeft een tweeling gekregen, een jongen en een meisje. Ze zijn nu ze maanden oud.\" \"Wat een geweldig nieuws!\", zegt Joke, \"hartelijk gefeliciteerd!\"",
       "Dan komt Jan er plotseling aan en roept: \"Hé Koos en Loes, wat leuk dat jullie er weer zijn! Joke, kom mee. Het veulentje wordt bijna geboren en Marten is er niet. Je moet me helpen. Komen jullie ook kijken, Koos en Loes?\" Met zijn vieren gaan ze naar de stal. Daar staat de prachtige Friese merrie van Jan en Joke. De bevalling begint. Ze zien eerst de twee voorbeentjes van het veulentje en dan ook het neusje. De merrie gaat liggen en dan komt het hele hoofdje naar buiten. Jan haalt het vlies om het hoofdje van het veulentje weg. Joke staat er ook bij, het gaat goed. Dan komt de rest van het lichaampje.",
@@ -23,18 +23,86 @@
       "The hind legs remain inside the mare for a short moment, but that is not a problem. Moments later, the whole foal is out. The mare stands up and licks her foal clean. The foal lies on the ground. The birth took only 30 minutes. \"This is truly special to see,\" Loes says, and she asks if it is a colt or a filly. Jan looks under the foal's tail and says it is a colt. After half an hour, the foal already tries to stand. He wobbles a bit at first, but he is already standing on his legs. After two hours, the foal goes to drink; the first mother's milk is very important. Joke asks if they should drink coffee with the cake Loes brought. \"We are celebrating that the foal was born today!\" Koos says. \"Yes,\" Jan says, \"it is already a beautiful day.\""
     ],
     "vocabulary": [
-      { "nl": "melkkoeltank", "en": "bulk milk cooling tank" },
-      { "nl": "moestuin", "en": "vegetable garden" },
-      { "nl": "boerderijcamping", "en": "farm campsite" },
-      { "nl": "tweeling", "en": "twins" },
-      { "nl": "veulentje", "en": "foal" },
-      { "nl": "bevalling", "en": "labor / birth" },
-      { "nl": "hengst", "en": "colt / stallion" }
+      {
+        "nl": "melkkoeltank",
+        "en": "bulk milk cooling tank"
+      },
+      {
+        "nl": "moestuin",
+        "en": "vegetable garden"
+      },
+      {
+        "nl": "boerderijcamping",
+        "en": "farm campsite"
+      },
+      {
+        "nl": "tweeling",
+        "en": "twins"
+      },
+      {
+        "nl": "veulentje",
+        "en": "foal"
+      },
+      {
+        "nl": "bevalling",
+        "en": "labor / birth"
+      },
+      {
+        "nl": "hengst",
+        "en": "colt / stallion"
+      }
     ],
     "questions": [
-      "Hoeveel liter melk haalt de tankwagen elke twee dagen ongeveer op?",
-      "Wat gaat er vandaag gebeuren op de boerderijcamping van Joke?",
-      "Wat voor bijzonderheid delen Loes en Koos over hun familie wanneer ze aankomen?"
+      {
+        "question": "Hoeveel liter melk haalt de tankwagen elke twee dagen ongeveer op?",
+        "answers": [
+          "Ongeveer 25 liter",
+          "Ongeveer 16 liter",
+          "Ongeveer 5000 liter",
+          "Ongeveer 2000 liter"
+        ],
+        "correct_answer": "Ongeveer 5000 liter"
+      },
+      {
+        "question": "Wat gaat er vandaag gebeuren op de boerderijcamping van Joke?",
+        "answers": [
+          "De eerste kampeerders van het jaar komen aan",
+          "De melkfabriek komt een nieuwe koeltank installeren",
+          "De paarden gaan voor het eerst dit jaar naar de wei",
+          "Marten gaat een nieuwe moestuin aanleggen"
+        ],
+        "correct_answer": "De eerste kampeerders van het jaar komen aan"
+      },
+      {
+        "question": "Wat voor bijzonderheid delen Loes en Koos over hun familie wanneer ze aankomen?",
+        "answers": [
+          "Ze gaan dit jaar definitief verhuizen naar het dorp",
+          "Ze vieren hun 50-jarige huwelijksfeest op de camping",
+          "Hun dochter heeft een tweeling gekregen en ze zijn opa en oma geworden",
+          "Ze hebben zelf een nieuw paard gekocht voor hun kleinkind"
+        ],
+        "correct_answer": "Hun dochter heeft een tweeling gekregen en ze zijn opa en oma geworden"
+      },
+      {
+        "question": "Waarom moet moeder Joke plotseling meehelpen in de stal?",
+        "answers": [
+          "De melkmachine is kapotgegaan en alle koeien moeten met de hand worden gemolken",
+          "Er wordt bijna een veulentje geboren en zoon Marten is er niet om te helpen",
+          "De paarden zijn ontsnapt uit het weiland en moeten worden gevangen",
+          "Hond Caesar heeft hulp nodig om de koeien naar binnen te brengen"
+        ],
+        "correct_answer": "Er wordt bijna een veulentje geboren en zoon Marten is er niet om te helpen"
+      },
+      {
+        "question": "Hoe stelt de familie voor om de geboorte van het veulen te vieren?",
+        "answers": [
+          "Met het drinken van verse melk rechtstreeks van de koeien",
+          "Met een feest op de boerderijcamping voor alle dorpsgenoten",
+          "Met het drinken van koffie en het eten van de taart die Loes heeft meegenomen",
+          "Met een fietstocht van tien kilometer naar de stad"
+        ],
+        "correct_answer": "Met het drinken van koffie en het eten van de taart die Loes heeft meegenomen"
+      }
     ]
   },
   {
@@ -57,16 +125,78 @@
       "They ride into Bolsward where people on the street clap and cheer for them in the rain. They arrive at the finish line, and to their surprise, Jeroen is there too, having cycled very fast. Jeroen asks where they live because he would love to visit their farm campsite sometime. \"You are always welcome,\" Femke says. Jeroen laughs and says he is going to learn how to patch a tire. Femke gives her address, and Jeroen puts it in his mobile phone. Jan and Femke head back home. They are naturally very tired because they have cycled 235 kilometers, but they are also very happy. What a beautiful province Friesland is!"
     ],
     "vocabulary": [
-      { "nl": "lekke band", "en": "flat tire" },
-      { "nl": "plakspullen", "en": "patching tools / kit" },
-      { "nl": "oranjekoek", "en": "traditional Frisian spiced cake" },
-      { "nl": "wind tegen", "en": "headwind" },
-      { "nl": "eindpunt", "en": "finish line / end point" }
+      {
+        "nl": "lekke band",
+        "en": "flat tire"
+      },
+      {
+        "nl": "plakspullen",
+        "en": "patching tools / kit"
+      },
+      {
+        "nl": "oranjekoek",
+        "en": "traditional Frisian spiced cake"
+      },
+      {
+        "nl": "wind tegen",
+        "en": "headwind"
+      },
+      {
+        "nl": "eindpunt",
+        "en": "finish line / end point"
+      }
     ],
     "questions": [
-      "Waarom kon Jeroen zijn lekke band zelf niet maken?",
-      "Wat eten Jan en Femke in IJlst als typisch Fries gebak?",
-      "Hoeveel kilometer hebben Jan en Femke in totaal gefietst?"
+      {
+        "question": "Waarom kon Jeroen zijn lekke band zelf niet maken?",
+        "answers": [
+          "Hij wist niet hoe hij een band moest plakken.",
+          "Hij had niet de goede spullen bij zich.",
+          "Zijn fietstas was onderweg kapotgegaan.",
+          "Zijn fietspomp was achtergebleven in Groningen."
+        ],
+        "correct_answer": "Hij had niet de goede spullen bij zich."
+      },
+      {
+        "question": "Wat eten Jan en Femke in IJlst als typisch Fries gebak?",
+        "answers": [
+          "Friese suikerbrood",
+          "Drakenkoek",
+          "Oranjekoek",
+          "Boerderijcake"
+        ],
+        "correct_answer": "Oranjekoek"
+      },
+      {
+        "question": "Hoeveel kilometer hebben Jan en Femke in totaal gefietst?",
+        "answers": [
+          "200 kilometer",
+          "15.000 kilometer",
+          "235 kilometer",
+          "11 kilometer"
+        ],
+        "correct_answer": "235 kilometer"
+      },
+      {
+        "question": "Waar woont Jeroen?",
+        "answers": [
+          "In Friesland",
+          "In Bolsward",
+          "In Groningen",
+          "Op een boerderijcamping"
+        ],
+        "correct_answer": "In Groningen"
+      },
+      {
+        "question": "Wat verandert er aan het weer als Jan en Femke bijna terug zijn in Bolsward?",
+        "answers": [
+          "De wind gaat liggen en het wordt twintig graden.",
+          "De lucht wordt donker en het begint hard te regenen.",
+          "De zon breekt door en de lucht wordt weer blauw.",
+          "Het begint plotseling te stormen aan de Waddenzee."
+        ],
+        "correct_answer": "De lucht wordt donker en het begint hard te regenen."
+      }
     ]
   },
   {
@@ -87,16 +217,78 @@
       "The girls are all wearing orange hats and making videos with their phones. Suddenly, a woman with a big microphone and a man with a large camera from Omrop Fryslän, the Frisian television station, appear in front of them. The girls are startled and laugh out loud. They talk a little about King's Day with the woman. In the evening, Ymke and Sytske are back home. After dinner, Ymke turns on the television. They see the king's market broadcast and Ymke says: \"Mom, dad, look, that's us, we are on television! What silly hats we are wearing!\""
     ],
     "vocabulary": [
-      { "nl": "bedstee", "en": "box bed / alcove bed" },
-      { "nl": "paasontbijt", "en": "Easter breakfast" },
-      { "nl": "hagelslag", "en": "chocolate sprinkles" },
-      { "nl": "koningsmarkt", "en": "King's Day flea market" },
-      { "nl": "gekke hoedjes", "en": "silly hats" }
+      {
+        "nl": "bedstee",
+        "en": "box bed / alcove bed"
+      },
+      {
+        "nl": "paasontbijt",
+        "en": "Easter breakfast"
+      },
+      {
+        "nl": "hagelslag",
+        "en": "chocolate sprinkles"
+      },
+      {
+        "nl": "koningsmarkt",
+        "en": "King's Day flea market"
+      },
+      {
+        "nl": "gekke hoedjes",
+        "en": "silly hats"
+      }
     ],
     "questions": [
-      "Waar mogen Fleur en Thomas slapen als ze op de boerderij logeren?",
-      "Hoeveel paaseieren vinden Fleur en Thomas ieder op de camping?",
-      "Voor welk televisiestation worden de meiden geïnterviewd in Leeuwarden?"
+      {
+        "question": "Waar mogen Fleur en Thomas slapen als ze op de boerderij logeren?",
+        "answers": [
+          "In een tent op de boerderijcamping",
+          "In de oude bedstee in de woonkeuken",
+          "Op de hooizolder bij het nieuwe veulentje",
+          "In de slaapkamer van Ymke en Sytske"
+        ],
+        "correct_answer": "In de oude bedstee in de woonkeuken"
+      },
+      {
+        "question": "Hoeveel paaseieren vinden Fleur en Thomas ieder op de camping?",
+        "answers": [
+          "Ze vinden er allebei 35.",
+          "Ze vinden er in totaal 10.",
+          "Fleur vindt er 8 en Thomas vindt er 6.",
+          "Ze kunnen dit jaar geen eitjes vinden."
+        ],
+        "correct_answer": "Ze vinden er allebei 35."
+      },
+      {
+        "question": "Voor welk televisiestation worden de meiden geïnterviewd in Leeuwarden?",
+        "answers": [
+          "De landelijke NOS-televisie",
+          "Omrop Fryslän",
+          "Het Jeugdjournaal",
+          "Een lokale internetzender"
+        ],
+        "correct_answer": "Omrop Fryslän"
+      },
+      {
+        "question": "Wat drinken de kinderen bij het paasontbijt nadat boer Jan verse melk heeft gekookt?",
+        "answers": [
+          "Warme chocolademelk",
+          "Vers sinaasappelsap",
+          "Koffie met warme room",
+          "Koude melk uit de tank"
+        ],
+        "correct_answer": "Warme chocolademelk"
+      },
+      {
+        "question": "Waarom gaan Ymke en Sytske naar de koningsmarkt in Leeuwarden?",
+        "answers": [
+          "Om zelf viool te spelen op straat",
+          "Om hun oude speelgoed op een kleedje te verkopen",
+          "Om te wandelen en goedkope spulletjes voor hun kamer te zoeken",
+          "Om koning Willem-Alexander te ontmoeten"
+        ],
+        "correct_answer": "Om te wandelen en goedkope spulletjes voor hun kamer te zoeken"
+      }
     ]
   },
   {
@@ -117,11 +309,26 @@
       "Jeroen plays the guitar and sings with a beautiful voice, causing everyone, including the children, to fall completely silent. The song is about love between a man and a woman. While singing, Jeroen keeps looking at Femke, and Femke looks back at him. When the song is over, the audience applauds enthusiastically and Jeroen bows. By ten o'clock in the evening, Jeroen and Femke are the only ones left by the dying campfire. Femke says the song was beautiful, and Jeroen answers that it was written especially for her. They stand up and walk back to the farmhouse hand in hand."
     ],
     "vocabulary": [
-      { "nl": "schaduw", "en": "shade / shadow" },
-      { "nl": "fierljeppen", "en": "Frisian pole vaulting over water" },
-      { "nl": "polsstok", "en": "vaulting pole" },
-      { "nl": "kampvuur", "en": "campfire" },
-      { "nl": "hand in hand", "en": "hand in hand" }
+      {
+        "nl": "schaduw",
+        "en": "shade / shadow"
+      },
+      {
+        "nl": "fierljeppen",
+        "en": "Frisian pole vaulting over water"
+      },
+      {
+        "nl": "polsstok",
+        "en": "vaulting pole"
+      },
+      {
+        "nl": "kampvuur",
+        "en": "campfire"
+      },
+      {
+        "nl": "hand in hand",
+        "en": "hand in hand"
+      }
     ],
     "questions": [
       "Wat verstaat Marten onder de Friese sport 'fierljeppen'?",
@@ -157,12 +364,30 @@
       "Esther and Mark talk for a while longer about food and culture. After some time they say goodbye and go their separate ways. Esther is happy to have met a new friend from another country. It was an interesting conversation and she learned a lot about American culture. She decides to talk more with people from other cultures in the future."
     ],
     "vocabulary": [
-      { "nl": "koffietentje", "en": "coffee shop" },
-      { "nl": "tot nu toe", "en": "until now" },
-      { "nl": "verschillen", "en": "differences" },
-      { "nl": "kwetsen", "en": "to hurt" },
-      { "nl": "vermoeiend", "en": "tiring" },
-      { "nl": "verfrissend", "en": "refreshing" }
+      {
+        "nl": "koffietentje",
+        "en": "coffee shop"
+      },
+      {
+        "nl": "tot nu toe",
+        "en": "until now"
+      },
+      {
+        "nl": "verschillen",
+        "en": "differences"
+      },
+      {
+        "nl": "kwetsen",
+        "en": "to hurt"
+      },
+      {
+        "nl": "vermoeiend",
+        "en": "tiring"
+      },
+      {
+        "nl": "verfrissend",
+        "en": "refreshing"
+      }
     ],
     "questions": [
       "Wat betekent het volgens Esther dat Nederlanders direct zijn?",
@@ -194,14 +419,38 @@
       "It is now late in the afternoon and Joost and Fieke are tired from all the impressions. They decide to go back to the station and take the train home. They look back on a wonderful day and are happy they could do this together."
     ],
     "vocabulary": [
-      { "nl": "ik heb zin in", "en": "I feel like doing it" },
-      { "nl": "'s morgens", "en": "in the morning" },
-      { "nl": "van iets houden", "en": "to like / love something" },
-      { "nl": "schilderij", "en": "painting" },
-      { "nl": "geschiedenis", "en": "history" },
-      { "nl": "wennen", "en": "to get used to something" },
-      { "nl": "inmiddels", "en": "meanwhile" },
-      { "nl": "geweldig", "en": "awesome" }
+      {
+        "nl": "ik heb zin in",
+        "en": "I feel like doing it"
+      },
+      {
+        "nl": "'s morgens",
+        "en": "in the morning"
+      },
+      {
+        "nl": "van iets houden",
+        "en": "to like / love something"
+      },
+      {
+        "nl": "schilderij",
+        "en": "painting"
+      },
+      {
+        "nl": "geschiedenis",
+        "en": "history"
+      },
+      {
+        "nl": "wennen",
+        "en": "to get used to something"
+      },
+      {
+        "nl": "inmiddels",
+        "en": "meanwhile"
+      },
+      {
+        "nl": "geweldig",
+        "en": "awesome"
+      }
     ],
     "questions": [
       "Waarom is het Rijksmuseum een goed museum om te bezoeken voor het stel?",
@@ -233,17 +482,50 @@
       "Eventually Tim recovers and is able to leave the hospital. Anna is happy and relieved. She realises she loves him even more than she ever did. She decides to ask him to move in together. Tim is happy and agrees. They start a new life together in Rotterdam and are happier than ever before."
     ],
     "vocabulary": [
-      { "nl": "ontmoeten", "en": "to meet" },
-      { "nl": "toevallig", "en": "accidentally, by chance" },
-      { "nl": "wandeling", "en": "stroll" },
-      { "nl": "gezelschap", "en": "company (of people)" },
-      { "nl": "gevoelens", "en": "feelings" },
-      { "nl": "verliefd", "en": "in love" },
-      { "nl": "vreselijk", "en": "horrible" },
-      { "nl": "zoenen", "en": "kissing" },
-      { "nl": "wanhopig", "en": "in despair" },
-      { "nl": "verdrietig", "en": "sad" },
-      { "nl": "opgelucht", "en": "relieved" }
+      {
+        "nl": "ontmoeten",
+        "en": "to meet"
+      },
+      {
+        "nl": "toevallig",
+        "en": "accidentally, by chance"
+      },
+      {
+        "nl": "wandeling",
+        "en": "stroll"
+      },
+      {
+        "nl": "gezelschap",
+        "en": "company (of people)"
+      },
+      {
+        "nl": "gevoelens",
+        "en": "feelings"
+      },
+      {
+        "nl": "verliefd",
+        "en": "in love"
+      },
+      {
+        "nl": "vreselijk",
+        "en": "horrible"
+      },
+      {
+        "nl": "zoenen",
+        "en": "kissing"
+      },
+      {
+        "nl": "wanhopig",
+        "en": "in despair"
+      },
+      {
+        "nl": "verdrietig",
+        "en": "sad"
+      },
+      {
+        "nl": "opgelucht",
+        "en": "relieved"
+      }
     ],
     "questions": [
       "Hoe hebben Tim en Anna elkaar ontmoet? (Waar, was het gepland, …?)",
@@ -275,18 +557,54 @@
       "Jan is grateful and gives the painting to his mother. They sell it for a good sum and use the money to pay for her medical treatments. Mark is glad the case is solved and he was able to help. He decides to buy a good bottle of wine to celebrate."
     ],
     "vocabulary": [
-      { "nl": "diefstal", "en": "theft" },
-      { "nl": "schilderij", "en": "painting" },
-      { "nl": "beveiliging", "en": "security" },
-      { "nl": "onderzoek", "en": "investigation" },
-      { "nl": "boerderij", "en": "farm" },
-      { "nl": "inderdaad", "en": "indeed" },
-      { "nl": "zielig", "en": "sad / pitiful" },
-      { "nl": "besluiten", "en": "to decide" },
-      { "nl": "behandeling", "en": "treatment" },
-      { "nl": "opgelost", "en": "solved" },
-      { "nl": "dankbaar", "en": "thankful" },
-      { "nl": "vieren", "en": "celebrate" }
+      {
+        "nl": "diefstal",
+        "en": "theft"
+      },
+      {
+        "nl": "schilderij",
+        "en": "painting"
+      },
+      {
+        "nl": "beveiliging",
+        "en": "security"
+      },
+      {
+        "nl": "onderzoek",
+        "en": "investigation"
+      },
+      {
+        "nl": "boerderij",
+        "en": "farm"
+      },
+      {
+        "nl": "inderdaad",
+        "en": "indeed"
+      },
+      {
+        "nl": "zielig",
+        "en": "sad / pitiful"
+      },
+      {
+        "nl": "besluiten",
+        "en": "to decide"
+      },
+      {
+        "nl": "behandeling",
+        "en": "treatment"
+      },
+      {
+        "nl": "opgelost",
+        "en": "solved"
+      },
+      {
+        "nl": "dankbaar",
+        "en": "thankful"
+      },
+      {
+        "nl": "vieren",
+        "en": "celebrate"
+      }
     ],
     "questions": [
       "Welk kledingstuk helpt Mark bij het oplossen van de diefstal?",
@@ -316,19 +634,58 @@
       "Teun can't believe his luck. He is doing something he truly enjoys and is even earning money from it. He feels freer than ever before and is proud of what he has achieved."
     ],
     "vocabulary": [
-      { "nl": "kantoor", "en": "office" },
-      { "nl": "zuchten", "en": "to sigh" },
-      { "nl": "saai", "en": "boring" },
-      { "nl": "muren", "en": "walls" },
-      { "nl": "plotseling", "en": "suddenly" },
-      { "nl": "zich herinneren", "en": "to remember" },
-      { "nl": "lenen", "en": "to borrow" },
-      { "nl": "verrast zijn", "en": "to be surprised" },
-      { "nl": "moeizaam", "en": "difficult / arduous" },
-      { "nl": "klant", "en": "customer" },
-      { "nl": "krant", "en": "newspaper" },
-      { "nl": "verdienen", "en": "to earn" },
-      { "nl": "trots", "en": "proud" }
+      {
+        "nl": "kantoor",
+        "en": "office"
+      },
+      {
+        "nl": "zuchten",
+        "en": "to sigh"
+      },
+      {
+        "nl": "saai",
+        "en": "boring"
+      },
+      {
+        "nl": "muren",
+        "en": "walls"
+      },
+      {
+        "nl": "plotseling",
+        "en": "suddenly"
+      },
+      {
+        "nl": "zich herinneren",
+        "en": "to remember"
+      },
+      {
+        "nl": "lenen",
+        "en": "to borrow"
+      },
+      {
+        "nl": "verrast zijn",
+        "en": "to be surprised"
+      },
+      {
+        "nl": "moeizaam",
+        "en": "difficult / arduous"
+      },
+      {
+        "nl": "klant",
+        "en": "customer"
+      },
+      {
+        "nl": "krant",
+        "en": "newspaper"
+      },
+      {
+        "nl": "verdienen",
+        "en": "to earn"
+      },
+      {
+        "nl": "trots",
+        "en": "proud"
+      }
     ],
     "questions": [
       "Wanneer is Teuns liefde voor bakken begonnen?",
@@ -360,15 +717,42 @@
       "Sietske is very happy to have found her twin sister. She realises she is not alone and that there is someone out there just like her. She knows she can always count on Petra and that they will never forget each other. Sietske and Petra may not have grown up in the same place, but they now have a strong bond for life."
     ],
     "vocabulary": [
-      { "nl": "terwijl", "en": "while" },
-      { "nl": "uitzien", "en": "look (like)" },
-      { "nl": "ontdekken", "en": "discover" },
-      { "nl": "tweeling", "en": "twin" },
-      { "nl": "gezelschap", "en": "company (people)" },
-      { "nl": "besluiten", "en": "to decide" },
-      { "nl": "afscheid", "en": "farewell" },
-      { "nl": "op iemand rekenen", "en": "to count on someone" },
-      { "nl": "opgegroeid", "en": "grown up" }
+      {
+        "nl": "terwijl",
+        "en": "while"
+      },
+      {
+        "nl": "uitzien",
+        "en": "look (like)"
+      },
+      {
+        "nl": "ontdekken",
+        "en": "discover"
+      },
+      {
+        "nl": "tweeling",
+        "en": "twin"
+      },
+      {
+        "nl": "gezelschap",
+        "en": "company (people)"
+      },
+      {
+        "nl": "besluiten",
+        "en": "to decide"
+      },
+      {
+        "nl": "afscheid",
+        "en": "farewell"
+      },
+      {
+        "nl": "op iemand rekenen",
+        "en": "to count on someone"
+      },
+      {
+        "nl": "opgegroeid",
+        "en": "grown up"
+      }
     ],
     "questions": [
       "Wat zijn verschillen tussen Petra en Sietske?",
@@ -400,20 +784,62 @@
       "Fred's family takes him aboard the spaceship and before they leave, they wave to Tom. Tom waves back and feels happy for Fred but also a little sad that his friend is leaving. But then Tom realises he is not alone. He has his family and friends on Earth and he knows he can keep in touch with Fred via the intergalactic internet. Tom goes to bed and falls asleep with a smile."
     ],
     "vocabulary": [
-      { "nl": "ruimteschip", "en": "spaceship" },
-      { "nl": "verdwaald", "en": "lost" },
-      { "nl": "wat er aan de hand is", "en": "what's going on" },
-      { "nl": "dichterbij", "en": "closer" },
-      { "nl": "huilen", "en": "to cry" },
-      { "nl": "gebaren", "en": "to gesture" },
-      { "nl": "verbaasd", "en": "surprised" },
-      { "nl": "medelijden", "en": "pity" },
-      { "nl": "deken", "en": "blanket" },
-      { "nl": "glimlach", "en": "smile" },
-      { "nl": "verstoppen", "en": "to hide" },
-      { "nl": "bang", "en": "afraid" },
-      { "nl": "onverwachts", "en": "unexpected" },
-      { "nl": "zwaaien", "en": "to wave" }
+      {
+        "nl": "ruimteschip",
+        "en": "spaceship"
+      },
+      {
+        "nl": "verdwaald",
+        "en": "lost"
+      },
+      {
+        "nl": "wat er aan de hand is",
+        "en": "what's going on"
+      },
+      {
+        "nl": "dichterbij",
+        "en": "closer"
+      },
+      {
+        "nl": "huilen",
+        "en": "to cry"
+      },
+      {
+        "nl": "gebaren",
+        "en": "to gesture"
+      },
+      {
+        "nl": "verbaasd",
+        "en": "surprised"
+      },
+      {
+        "nl": "medelijden",
+        "en": "pity"
+      },
+      {
+        "nl": "deken",
+        "en": "blanket"
+      },
+      {
+        "nl": "glimlach",
+        "en": "smile"
+      },
+      {
+        "nl": "verstoppen",
+        "en": "to hide"
+      },
+      {
+        "nl": "bang",
+        "en": "afraid"
+      },
+      {
+        "nl": "onverwachts",
+        "en": "unexpected"
+      },
+      {
+        "nl": "zwaaien",
+        "en": "to wave"
+      }
     ],
     "questions": [
       "Wat is Toms eerste reactie als hij het ruimteschip ziet?",
@@ -445,15 +871,42 @@
       "Femke realises that the case has given her not only a solved crime, but also a new connection and perhaps something more."
     ],
     "vocabulary": [
-      { "nl": "verzamelen", "en": "collecting" },
-      { "nl": "bewijsmateriaal", "en": "evidence" },
-      { "nl": "kunsthandelaar", "en": "art dealer" },
-      { "nl": "verdacht uitziende", "en": "suspicious looking" },
-      { "nl": "misschien", "en": "maybe" },
-      { "nl": "ontkennen", "en": "to deny" },
-      { "nl": "overtuigd", "en": "convinced" },
-      { "nl": "bekent", "en": "admits" },
-      { "nl": "opgelost", "en": "solved / resolved" }
+      {
+        "nl": "verzamelen",
+        "en": "collecting"
+      },
+      {
+        "nl": "bewijsmateriaal",
+        "en": "evidence"
+      },
+      {
+        "nl": "kunsthandelaar",
+        "en": "art dealer"
+      },
+      {
+        "nl": "verdacht uitziende",
+        "en": "suspicious looking"
+      },
+      {
+        "nl": "misschien",
+        "en": "maybe"
+      },
+      {
+        "nl": "ontkennen",
+        "en": "to deny"
+      },
+      {
+        "nl": "overtuigd",
+        "en": "convinced"
+      },
+      {
+        "nl": "bekent",
+        "en": "admits"
+      },
+      {
+        "nl": "opgelost",
+        "en": "solved / resolved"
+      }
     ],
     "questions": [
       "Wat wil de diamantendief met de gestolen diamant doen?",
@@ -481,16 +934,46 @@
       "It is a story about determination and love that conquers all. It shows that with hard work and perseverance anything is possible. And who knows, perhaps we can all find our own happiness in the world, just as Pieter did."
     ],
     "vocabulary": [
-      { "nl": "17e eeuw", "en": "17th century" },
-      { "nl": "hoewel", "en": "although" },
-      { "nl": "gouden eeuw", "en": "golden age" },
-      { "nl": "ondertussen", "en": "meanwhile" },
-      { "nl": "verliezen", "en": "to lose" },
-      { "nl": "arm", "en": "poor" },
-      { "nl": "opgeven", "en": "to give up" },
-      { "nl": "onder de indruk", "en": "impressed" },
-      { "nl": "vastberadenheid", "en": "determination" },
-      { "nl": "doorzettingsvermogen", "en": "perseverance" }
+      {
+        "nl": "17e eeuw",
+        "en": "17th century"
+      },
+      {
+        "nl": "hoewel",
+        "en": "although"
+      },
+      {
+        "nl": "gouden eeuw",
+        "en": "golden age"
+      },
+      {
+        "nl": "ondertussen",
+        "en": "meanwhile"
+      },
+      {
+        "nl": "verliezen",
+        "en": "to lose"
+      },
+      {
+        "nl": "arm",
+        "en": "poor"
+      },
+      {
+        "nl": "opgeven",
+        "en": "to give up"
+      },
+      {
+        "nl": "onder de indruk",
+        "en": "impressed"
+      },
+      {
+        "nl": "vastberadenheid",
+        "en": "determination"
+      },
+      {
+        "nl": "doorzettingsvermogen",
+        "en": "perseverance"
+      }
     ],
     "questions": [
       "Waarom vindt de familie van Lotte het in het begin niet goed dat Lotte en Pieter samen willen zijn?",
@@ -522,23 +1005,157 @@
       "With great effort he manages to free himself and carries on delivering the presents. Eventually he manages to deliver all the presents and returns home. Klaas is tired, but also proud. He has shown that he is just as good a Sinterklaas as his ancestors. He will continue to fulfil the role of Sint and bring presents to all the children in the Netherlands every year."
     ],
     "vocabulary": [
-      { "nl": "gewoon", "en": "normal" },
-      { "nl": "sinterklaas", "en": "Dutch version of Santa Claus" },
-      { "nl": "cadeautjes", "en": "presents" },
-      { "nl": "verandert", "en": "changes" },
-      { "nl": "afstammeling", "en": "descendant" },
-      { "nl": "goedheiligman", "en": "saint" },
-      { "nl": "uitdaging", "en": "challenge" },
-      { "nl": "buurman", "en": "neighbor" },
-      { "nl": "kleurrijk", "en": "colourful" },
-      { "nl": "moeite", "en": "effort" },
-      { "nl": "uiteindelijk", "en": "finally" },
-      { "nl": "voorouders", "en": "ancestors" }
+      {
+        "nl": "gewoon",
+        "en": "normal"
+      },
+      {
+        "nl": "sinterklaas",
+        "en": "Dutch version of Santa Claus"
+      },
+      {
+        "nl": "cadeautjes",
+        "en": "presents"
+      },
+      {
+        "nl": "verandert",
+        "en": "changes"
+      },
+      {
+        "nl": "afstammeling",
+        "en": "descendant"
+      },
+      {
+        "nl": "goedheiligman",
+        "en": "saint"
+      },
+      {
+        "nl": "uitdaging",
+        "en": "challenge"
+      },
+      {
+        "nl": "buurman",
+        "en": "neighbor"
+      },
+      {
+        "nl": "kleurrijk",
+        "en": "colourful"
+      },
+      {
+        "nl": "moeite",
+        "en": "effort"
+      },
+      {
+        "nl": "uiteindelijk",
+        "en": "finally"
+      },
+      {
+        "nl": "voorouders",
+        "en": "ancestors"
+      }
     ],
     "questions": [
       "Wat doet Klaas om zich voor te bereiden op 5 december?",
       "Hoe bezorgt Klaas cadeaus bij een huis dat geen schoorsteen heeft?",
       "Waarom geeft Klaas niet op als zijn werk moeilijk is?"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Een middag in het Rijksmuseum",
+    "subtitle": "Sofie ontdekt de prachtige schilderijen en de geschiedenis in Amsterdam.",
+    "image_query": "Rijksmuseum Amsterdam paintings Rembrandt Milkmaid",
+    "paragraphs": [
+      "Het is een regenachtige dinsdagmiddag wanneer Sofie besluit om naar het Rijksmuseum in Amsterdam te gaan. Ze heeft online al een kaartje gekocht, waardoor ze de lange wachtrij bij de ingang kan overslaan. Zodra ze het imposante gebouw binnenstapt, voelt ze een sfeer van rust en bewondering. De hoge plafonds en het binnenvallende licht maken meteen indruk op haar.",
+      "Haar eerste stop is de Eregalerij, waar de beroemdste meesterwerken uit de Nederlandse geschiedenis hangen. Ze loopt langzaam langs de muren en blijft plotseling staan voor 'De Nachtwacht' van Rembrandt van Rijn. Het schilderij is veel groter dan ze had verwacht. Ze bestudeert de details, het gebruik van licht en donker, en de levendige gezichtsuitdrukkingen van de figuren op het doek.",
+      "Daarna wandelt Sofie naar de werken van Johannes Vermeer. Ze geniet intens van 'Het Melkmeisje'. De manier waarop de schilder de textuur van de melk en de rustgevende sfeer van de kamer heeft vastgelegd, vindt ze fascinerend. Na twee uur ronddwalen sluit ze haar bezoek af met een warme chocolademelk in het museumcafé, vol inspiratie voor haar eigen hobby: schilderen."
+    ],
+    "english_paragraphs": [
+      "It is a rainy Tuesday afternoon when Sofie decides to go to the Rijksmuseum in Amsterdam. She has already bought a ticket online, which allows her to skip the long queue at the entrance. As soon as she steps inside the imposing building, she feels an atmosphere of tranquility and admiration. The high ceilings and the incoming light immediately make an impression on her.",
+      "Her first stop is the Gallery of Honour, where the most famous masterpieces from Dutch history hang. She walks slowly along the walls and suddenly stops in front of 'The Night Watch' by Rembrandt van Rijn. The painting is much larger than she had expected. She studies the details, the use of light and dark, and the lively facial expressions of the figures on the canvas.",
+      "Afterwards, Sofie walks to the works of Johannes Vermeer. She intensely enjoys 'The Milkmaid'. The way the painter captured the texture of the milk and the calming atmosphere of the room is something she finds fascinating. After two hours of wandering around, she concludes her visit with a hot chocolate in the museum café, full of inspiration for her own hobby: painting."
+    ],
+    "vocabulary": [
+      {
+        "nl": "de wachtrij",
+        "en": "the queue / line"
+      },
+      {
+        "nl": "het meesterwerk",
+        "en": "the masterpiece"
+      },
+      {
+        "nl": "verwacht",
+        "en": "expected"
+      },
+      {
+        "nl": "de gezichtsuitdrukking",
+        "en": "the facial expression"
+      },
+      {
+        "nl": "het doek",
+        "en": "the canvas"
+      },
+      {
+        "nl": "vastgelegd",
+        "en": "captured / recorded"
+      },
+      {
+        "nl": "ronddwalen",
+        "en": "to wander around"
+      }
+    ],
+    "questions": [
+      {
+        "question": "Waarom hoefde Sofie niet in de lange wachtrij te staan?",
+        "answers": [
+          "Omdat het museum die dag gratis was.",
+          "Omdat ze online al een kaartje had gekocht.",
+          "Omdat ze een beroemde schilder is.",
+          "Omdat het museum bijna leeg was vanwege de regen."
+        ],
+        "correct_answer": "Omdat ze online al een kaartje had gekocht."
+      },
+      {
+        "question": "Welk beroemd schilderij van Rembrandt bekijkt Sofie in de Eregalerij?",
+        "answers": [
+          "Het Melkmeisje",
+          "De Zonnebloemen",
+          "De Nachtwacht",
+          "Het Meisje met de Parel"
+        ],
+        "correct_answer": "De Nachtwacht"
+      },
+      {
+        "question": "Wat verraste Sofie aan het schilderij van Rembrandt?",
+        "answers": [
+          "Het schilderij was veel groter dan ze had verwacht.",
+          "De kleuren waren erg modern.",
+          "Het schilderij was beschadigd door de regen.",
+          "Er stonden geen mensen op het doek."
+        ],
+        "correct_answer": "Het schilderij was veel groter dan ze had verwacht."
+      },
+      {
+        "question": "Wie heeft het schilderij 'Het Melkmeisje' gemaakt?",
+        "answers": [
+          "Rembrandt van Rijn",
+          "Johannes Vermeer",
+          "Vincent van Gogh",
+          "Sofie zelf"
+        ],
+        "correct_answer": "Johannes Vermeer"
+      },
+      {
+        "question": "Wat doet Sofie aan het einde van haar museumbezoek?",
+        "answers": [
+          "Ze koopt een poster in de souvenirwinkel.",
+          "Ze begint meteen een nieuw schilderij te maken.",
+          "Ze drinkt een warme chocolademelk in het museumcafé.",
+          "Ze neemt de trein terug naar huis."
+        ],
+        "correct_answer": "Ze drinkt een warme chocolademelk in het museumcafé."
+      }
     ]
   }
 ]
