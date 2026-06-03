@@ -831,6 +831,78 @@
     el._t = setTimeout(() => el.classList.remove('show'), dur);
   }
 
+  /* ── Word-action popup ───────────────────────────────────── */
+  let _wpWord = '';
+
+  function wordAction(event) {
+    event.stopPropagation();
+    const sel  = (window.getSelection()?.toString() ?? '').trim();
+    // Strip leading/trailing punctuation, keep Dutch characters
+    const word = sel.replace(/^[^a-zA-ZÀ-ÿ]+|[^a-zA-ZÀ-ÿ'-]+$/g, '').trim();
+    if (!word) return;
+    _wpWord = word;
+
+    const popup = document.getElementById('word-popup');
+    document.getElementById('wp-word').textContent = word;
+    document.getElementById('wp-copy-btn').textContent = '📋 Kopiëren';
+
+    // Measure off-screen, then position near cursor
+    popup.style.visibility = 'hidden';
+    popup.style.left = '-9999px';
+    popup.style.top  = '-9999px';
+    popup.classList.add('show');
+
+    const pw  = popup.offsetWidth;
+    const ph  = popup.offsetHeight;
+    const gap = 12;
+    let x = event.clientX + gap;
+    let y = event.clientY + gap;
+    if (x + pw > window.innerWidth  - gap) x = event.clientX - pw - gap;
+    if (y + ph > window.innerHeight - gap) y = event.clientY - ph - gap;
+
+    popup.style.left       = Math.max(gap, x) + 'px';
+    popup.style.top        = Math.max(gap, y) + 'px';
+    popup.style.visibility = '';
+
+    // Close when clicking anywhere outside the popup
+    setTimeout(() => {
+      document.addEventListener('click', _wpOutsideClick);
+    }, 0);
+  }
+
+  function _wpOutsideClick(e) {
+    if (!document.getElementById('word-popup').contains(e.target)) {
+      closeWordPopup();
+    }
+  }
+
+  function closeWordPopup() {
+    document.getElementById('word-popup').classList.remove('show');
+    document.removeEventListener('click', _wpOutsideClick);
+  }
+
+  function wordSpeak() {
+    if (!_wpWord) return;
+    if (speechSynthesis.speaking) speechSynthesis.cancel();
+    const u  = new SpeechSynthesisUtterance(_wpWord);
+    u.lang   = 'nl-NL';
+    try {
+      const r = parseFloat(localStorage.getItem('nl_tts_rate') || '0.8');
+      u.rate  = isNaN(r) ? 0.8 : Math.min(1.5, Math.max(0.5, r));
+    } catch {}
+    speechSynthesis.speak(u);
+  }
+
+  async function wordCopy() {
+    if (!_wpWord) return;
+    try {
+      await navigator.clipboard.writeText(_wpWord);
+      const btn = document.getElementById('wp-copy-btn');
+      btn.textContent = '✓ Gekopieerd';
+      setTimeout(() => { btn.textContent = '📋 Kopiëren'; }, 1400);
+    } catch {}
+  }
+
   /* ── Boot ────────────────────────────────────────────────── */
   async function init() {
     initFontSize();
