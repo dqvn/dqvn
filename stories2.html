@@ -266,6 +266,41 @@
       border-left-color: rgba(255,255,255,.12);
       color: rgba(255,255,255,.45);
     }
+    .para-en {
+      display: none;
+      font-family: 'Nunito', sans-serif;
+      font-size: calc(var(--font-sz) * 0.87);
+      line-height: 1.65;
+      color: rgba(255,213,102,.58);
+      font-style: italic;
+      padding: 3px 10px 12px 18px;
+      border-left: 2px solid rgba(255,213,102,.18);
+      border-radius: 0 4px 4px 0;
+      margin-top: -8px;
+      margin-bottom: 1.15em;
+    }
+    .para-en:last-child { margin-bottom: 0; }
+    .show-en .para-en { display: block; }
+    /* En toggle button */
+    .en-toggle {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(255,213,102,.08);
+      border: 1px solid rgba(255,213,102,.2);
+      border-radius: 20px;
+      padding: 5px 13px;
+      color: rgba(255,213,102,.65);
+      font-family: 'Nunito', sans-serif;
+      font-size: .75rem; font-weight: 700;
+      cursor: pointer; letter-spacing: .03em;
+      transition: all .18s;
+      white-space: nowrap;
+    }
+    .en-toggle:hover { background: rgba(255,213,102,.16); color: var(--accent); border-color: rgba(255,213,102,.4); }
+    .en-toggle.active {
+      background: rgba(255,213,102,.18);
+      border-color: rgba(255,213,102,.45);
+      color: var(--accent);
+    }
 
     /* Vocabulary */
     .section-hdr {
@@ -509,6 +544,7 @@
       <button class="fs-btn" onclick="changeFontSize(-1)">A−</button>
       <button class="fs-btn" onclick="changeFontSize(1)">A+</button>
     </div>
+    <button class="en-toggle" id="rb-en-toggle" onclick="toggleEnglish()" title="Vertaling tonen/verbergen">🇬🇧 Vertaling</button>
     <div class="rb-nav">
       <button class="rb-btn" id="rb-prev" disabled onclick="navigate(-1)" title="Vorig verhaal">◀</button>
       <button class="rb-btn" id="rb-next" disabled onclick="navigate(1)"  title="Volgend verhaal">▶</button>
@@ -531,6 +567,7 @@
         <div class="sv-badge" id="sv-badge">Verhaal 1</div>
         <h1 id="sv-title"></h1>
         <p id="sv-subtitle"></p>
+        <button class="en-toggle" id="sv-en-toggle" onclick="toggleEnglish()" style="margin-top:12px">🇬🇧 Vertaling tonen</button>
       </div>
 
       <div class="story-text anim anim-d1" id="sv-paras"></div>
@@ -580,15 +617,17 @@ const DATA_URL  = 'data/stories/beginners.json';
 const SPEEDS    = [0.8, 1.0, 1.25, 1.5, 0.6];
 const FS_STEPS  = [0.9, 1.0, 1.05, 1.15, 1.25];
 const DONE_KEY  = 'nl_s2_done';
+const EN_KEY    = 'nl_s2_show_en';
 
 let stories     = [];
 let current     = null;
 let currentIdx  = -1;
 let speedIdx    = 0;
-let fsIdx       = 2;            // default: 1.05rem
-let paraIdx     = 0;            // which paragraph TTS is on
+let fsIdx       = 2;
+let paraIdx     = 0;
 let isPlaying   = false;
 let utterance   = null;
+let showEn      = localStorage.getItem(EN_KEY) === '1';
 let readSet     = new Set(JSON.parse(localStorage.getItem(DONE_KEY) || '[]'));
 
 /* ══ Bootstrap ═══════════════════════════════════════════════════════ */
@@ -642,11 +681,15 @@ function loadStory(idx) {
   document.getElementById('sv-title').textContent    = current.title;
   document.getElementById('sv-subtitle').textContent = current.subtitle;
 
-  // Paragraphs
+  // Paragraphs + English translations
   const pc = document.getElementById('sv-paras');
+  const enParas = current.english_paragraphs || [];
   pc.innerHTML = current.paragraphs.map((p, i) =>
-    `<p class="para" data-pi="${i}">${p}</p>`
+    `<p class="para" data-pi="${i}">${p}</p>` +
+    (enParas[i] ? `<p class="para-en">${enParas[i]}</p>` : '')
   ).join('');
+  // Apply current toggle state immediately
+  pc.parentElement.classList.toggle('show-en', showEn);
 
   // Vocabulary
   document.getElementById('sv-vocab').innerHTML = current.vocabulary.map(v =>
@@ -685,6 +728,7 @@ function loadStory(idx) {
 
   buildParaDots();
   markRead();
+  applyEnToggleState();
 }
 
 /* ══ Navigation ══════════════════════════════════════════════════════ */
@@ -843,6 +887,36 @@ function updatePlayBtn() {
   const btn = document.getElementById('tc-play');
   if (isPlaying) { btn.textContent = '⏸'; btn.classList.add('playing'); }
   else           { btn.textContent = '▶'; btn.classList.remove('playing'); }
+}
+
+/* ══ English toggle ══════════════════════════════════════════════════ */
+function toggleEnglish() {
+  showEn = !showEn;
+  localStorage.setItem(EN_KEY, showEn ? '1' : '0');
+
+  // Apply class to story text container
+  const paras = document.getElementById('sv-paras');
+  if (paras) paras.parentElement.classList.toggle('show-en', showEn);
+
+  // Sync both toggle buttons
+  const label = showEn ? '🇬🇧 Vertaling verbergen' : '🇬🇧 Vertaling tonen';
+  ['sv-en-toggle', 'rb-en-toggle'].forEach(id => {
+    const btn = document.getElementById(id);
+    if (!btn) return;
+    btn.textContent = label;
+    btn.classList.toggle('active', showEn);
+  });
+}
+
+// Apply persisted toggle state on load (called after story is shown)
+function applyEnToggleState() {
+  const label = showEn ? '🇬🇧 Vertaling verbergen' : '🇬🇧 Vertaling tonen';
+  ['sv-en-toggle', 'rb-en-toggle'].forEach(id => {
+    const btn = document.getElementById(id);
+    if (!btn) return;
+    btn.textContent = label;
+    btn.classList.toggle('active', showEn);
+  });
 }
 
 /* ══ Speak single word (vocabulary) ═════════════════════════════════ */
