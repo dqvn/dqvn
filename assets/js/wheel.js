@@ -107,7 +107,10 @@ function drawWheel() {
     }
 
     const segArc = (2 * Math.PI) / n;
-    const fontSize = Math.max(9, Math.min(14, 14 - n * 0.12));
+    // Base font size by item count; each item can shrink further based on its own length
+    const baseFs = Math.max(8, Math.min(13, 14 - n * 0.15));
+    // Radial width available for text: inner cap (~30px) + left margin to rim edge
+    const textMaxW = r - 36;
 
     for (let i = 0; i < n; i++) {
         const startAng = rotation + i * segArc;
@@ -130,12 +133,44 @@ function drawWheel() {
         ctx.textAlign = 'right';
         ctx.textBaseline = 'middle';
         ctx.fillStyle = '#fff';
-        ctx.font = `800 ${fontSize}px Nunito, sans-serif`;
         ctx.shadowColor = 'rgba(0,0,0,.5)';
         ctx.shadowBlur = 3;
-        const maxLen = n <= 6 ? 26 : n <= 12 ? 20 : 15;
-        const label = items[i].length > maxLen ? items[i].slice(0, maxLen - 1) + '…' : items[i];
-        ctx.fillText(label, r - 12, 0);
+
+        const text = items[i];
+        // Shrink font for longer items so more characters fit on each line
+        const fs = Math.max(7, baseFs - Math.max(0, Math.floor((text.length - 10) / 7)));
+        const lh = fs * 1.45;
+        ctx.font = `800 ${fs}px Nunito, sans-serif`;
+
+        // Word-wrap: accumulate words until a line exceeds radial width, then break
+        const words = text.split(' ');
+        const lines = [];
+        let cur = '';
+        for (const w of words) {
+            const test = cur ? cur + ' ' + w : w;
+            if (ctx.measureText(test).width <= textMaxW) {
+                cur = test;
+            } else {
+                if (cur) lines.push(cur);
+                // Single word wider than slot → truncate it
+                cur = ctx.measureText(w).width > textMaxW
+                    ? w.slice(0, Math.max(1, Math.floor(w.length * textMaxW / ctx.measureText(w).width))) + '…'
+                    : w;
+            }
+        }
+        if (cur) lines.push(cur);
+
+        // Max lines that fit in the perpendicular arc height at ~0.55r; cap at 6
+        const arcH = r * 0.55 * segArc;
+        const maxLines = Math.min(6, Math.max(1, Math.floor(arcH / lh)));
+        const vis = lines.slice(0, maxLines);
+
+        // Draw lines centered vertically on the segment midline
+        const totalH = (vis.length - 1) * lh;
+        vis.forEach((line, j) => {
+            ctx.fillText(line, r - 12, j * lh - totalH / 2);
+        });
+
         ctx.restore();
     }
 
