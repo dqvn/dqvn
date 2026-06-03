@@ -31,7 +31,11 @@
     --border: rgba(255,255,255,.1);
     --r:      16px;
     --nav-h:  56px;
+    --art-fs: 1rem;       /* controlled by A−/A+ buttons */
+    --wrap-w: 780px;      /* content max-width — wider on desktop */
   }
+  @media (min-width: 960px)  { :root { --wrap-w: 1080px; } }
+  @media (min-width: 1280px) { :root { --wrap-w: 1280px; } }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -97,9 +101,24 @@
     padding-bottom: 48px;
   }
 
+  /* ── Font-size control buttons ──────────────── */
+  #fs-ctrl {
+    display: flex; align-items: center; gap: 3px; flex-shrink: 0;
+  }
+  .fs-btn {
+    background: rgba(255,255,255,.07);
+    border: 1.5px solid rgba(255,255,255,.12);
+    border-radius: 8px; color: var(--muted);
+    padding: 4px 9px; line-height: 1;
+    font-family: inherit; font-size: .72rem; font-weight: 800;
+    cursor: pointer; transition: all .15s;
+  }
+  .fs-btn:hover { background: rgba(255,255,255,.15); color: var(--text); border-color: rgba(255,255,255,.28); }
+  .fs-btn:disabled { opacity: .28; cursor: default; }
+
   /* ── Feed header / progress strip ───────────── */
   #feed-header {
-    max-width: 780px; margin: 0 auto;
+    max-width: var(--wrap-w); margin: 0 auto;
     padding: 16px 16px 4px;
     display: flex; flex-direction: column; gap: 10px;
   }
@@ -136,9 +155,17 @@
 
   /* ── Article list ────────────────────────────── */
   #article-list {
-    max-width: 780px; margin: 12px auto 0;
+    max-width: var(--wrap-w); margin: 12px auto 0;
     padding: 0 16px;
-    display: flex; flex-direction: column; gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  @media (min-width: 960px) {
+    #article-list { grid-template-columns: 1fr 1fr; }
+  }
+  @media (min-width: 1280px) {
+    #article-list { grid-template-columns: 1fr 1fr 1fr; }
   }
 
   /* ── Article card ────────────────────────────── */
@@ -176,7 +203,7 @@
   }
 
   .art-title {
-    font-size: .97rem; font-weight: 800; line-height: 1.35;
+    font-size: var(--art-fs); font-weight: 800; line-height: 1.35;
     color: var(--text); display: -webkit-box;
     -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
   }
@@ -201,7 +228,7 @@
     display: flex; flex-direction: column; gap: 11px;
   }
   .art-desc {
-    font-size: .88rem; line-height: 1.65;
+    font-size: calc(var(--art-fs) * .9); line-height: 1.65;
     color: rgba(241,245,249,.7);
   }
 
@@ -235,7 +262,7 @@
 
   /* ── Feed status (loading/error) ─────────────── */
   #feed-status {
-    max-width: 780px; margin: 28px auto 0;
+    max-width: var(--wrap-w); margin: 28px auto 0;
     padding: 0 16px; text-align: center;
   }
   .status-ico { font-size: 1.5rem; display: block; margin-bottom: 8px; }
@@ -315,6 +342,10 @@
   <nav id="top-nav">
     <a href="index.html" class="nav-back">← Terug</a>
     <span class="nav-title">📰 Nieuws Lezen</span>
+    <div id="fs-ctrl">
+      <button class="fs-btn" id="fs-down" onclick="changeFontSize(-1)" title="Kleinere tekst">A−</button>
+      <button class="fs-btn" id="fs-up"   onclick="changeFontSize(1)"  title="Grotere tekst">A+</button>
+    </div>
     <button id="refresh-btn" onclick="refreshFeed()" title="Ververs nieuws">
       <svg id="refresh-ico" width="16" height="16" viewBox="0 0 24 24" fill="none"
            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -386,12 +417,15 @@
   const RSS_ENDPOINT = SYNC_WORKER_URL + '/rss';
   const CACHE_KEY    = 'nl_rss_cache_v1';
   const READ_KEY     = 'nl_rss_v1';
+  const FS_KEY       = 'nl_rss_fs';
   const CACHE_TTL    = 15 * 60_000;  // 15 min before background refresh
+  const FS_STEPS     = [.78, .88, 1.0, 1.12, 1.26];  // rem values for --art-fs
 
   /* ── State ───────────────────────────────────────────────── */
   let articles  = [];
   let readGuids = new Set();
   let expanded  = new Set();
+  let fsIdx     = 2;  // default: 1.0rem
 
   /* ── Storage helpers ─────────────────────────────────────── */
   function readJSON(k, fb) {
@@ -678,6 +712,25 @@
     speechSynthesis.speak(utter);
   }
 
+  /* ── Font size ───────────────────────────────────────────── */
+  function initFontSize() {
+    const saved = parseInt(localStorage.getItem(FS_KEY), 10);
+    if (!isNaN(saved) && saved >= 0 && saved < FS_STEPS.length) fsIdx = saved;
+    _applyFs();
+  }
+
+  function changeFontSize(dir) {
+    fsIdx = Math.max(0, Math.min(FS_STEPS.length - 1, fsIdx + dir));
+    _applyFs();
+    try { localStorage.setItem(FS_KEY, String(fsIdx)); } catch {}
+  }
+
+  function _applyFs() {
+    document.documentElement.style.setProperty('--art-fs', FS_STEPS[fsIdx] + 'rem');
+    document.getElementById('fs-down').disabled = fsIdx === 0;
+    document.getElementById('fs-up').disabled   = fsIdx === FS_STEPS.length - 1;
+  }
+
   /* ── Sync drawer ─────────────────────────────────────────── */
   function toggleSyncDrawer() {
     const open = document.getElementById('sync-drawer').classList.toggle('open');
@@ -711,6 +764,7 @@
 
   /* ── Boot ────────────────────────────────────────────────── */
   async function init() {
+    initFontSize();
     loadReadState();
 
     const cached = readJSON(CACHE_KEY, null);
