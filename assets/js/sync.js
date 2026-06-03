@@ -217,12 +217,13 @@ async function syncNow(silent = false) {
 
     const merged = await res.json();
 
-    // Write merged data back for each key (safe — flashcard.js reads at session start)
+    // Write merged data back for each key
+    // Guard works for both objects ({}) and arrays ([]) — check length on whichever it is
     for (const [field, lsKey] of Object.entries(_SYNC_KEYS)) {
       const val = merged[field];
-      if (val && Object.keys(val).length) {
-        localStorage.setItem(lsKey, JSON.stringify(val));
-      }
+      if (val == null) continue;
+      const hasContent = Array.isArray(val) ? val.length > 0 : Object.keys(val).length > 0;
+      if (hasContent) localStorage.setItem(lsKey, JSON.stringify(val));
     }
 
     // Apply synced volume to whichever slider exists on this page
@@ -242,6 +243,9 @@ async function syncNow(silent = false) {
 
     // Refresh word badges if function is available
     if (typeof updateWordBadges === 'function') updateWordBadges();
+
+    // Refresh wheel packages if the wheel page is open
+    if (typeof refreshWheelPackages === 'function') refreshWheelPackages();
 
     const now = Date.now();
     localStorage.setItem(_KEY_LAST, String(now));

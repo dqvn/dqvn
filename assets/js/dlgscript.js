@@ -135,11 +135,29 @@ function showResume(line) {
 }
 
 /* ── Restore previous session on page load ── */
-function loadSession() {
+async function loadSession() {
     const s = STORE.get();
     if (!s.dialogueId) return;
-    const d = dialogues.find(x => x.id === s.dialogueId);
-    if (!d) return;
+    let d = dialogues.find(x => x.id === s.dialogueId);
+
+    // Stub (summary-only) or missing — try quick cache first (zero crypto cost)
+    if (!d || !d.conversation) {
+        const quick = QUICK_CACHE.get();
+        if (quick && quick.id === s.dialogueId && quick.conversation) {
+            d = quick;
+            const idx = dialogues.findIndex(x => x.id === s.dialogueId);
+            if (idx >= 0) dialogues[idx] = d; else dialogues.push(d);
+        }
+    }
+
+    // Still missing or no conversation — decrypt from encrypted cache
+    if (!d || !d.conversation) {
+        const cached = await DCACHE.get(s.dialogueId);
+        if (!cached) return;
+        d = { id: s.dialogueId, ...cached };
+        const idx = dialogues.findIndex(x => x.id === s.dialogueId);
+        if (idx >= 0) dialogues[idx] = d; else dialogues.push(d);
+    }
 
     loadDialogue(d, /* skipSave */ true);
 
@@ -221,6 +239,20 @@ function filterDialogues(query) {
 }
 
 /* ════════════════════════════════════════════════════
+   QUICK CACHE  –  last-open dialogue stored as plain JSON.
+   No crypto cost — allows instant render on page refresh.
+   Updated after every successful background decryption.
+   ════════════════════════════════════════════════════ */
+const QUICK_CACHE = (() => {
+    const KEY = 'nl_dlg_qk_v1';
+    return {
+        get()  { try { return JSON.parse(localStorage.getItem(KEY)); } catch { return null; } },
+        set(d) { try { if (d && d.conversation) localStorage.setItem(KEY, JSON.stringify(d)); } catch {} },
+        clear(){ try { localStorage.removeItem(KEY); } catch {} }
+    };
+})();
+
+/* ════════════════════════════════════════════════════
    CRYPTO  –  AES-256-GCM with PBKDF2 key derivation.
    Prevents casual localStorage inspection via DevTools.
    The key is derived from a passphrase embedded in this
@@ -298,13 +330,20 @@ const DCACHE = (() => {
         getIds() {
             try {
                 const raw = JSON.parse(localStorage.getItem(IDS_KEY));
-                if (!raw) return { ids: null, cachedAt: 0 };
-                if (Array.isArray(raw)) return { ids: raw, cachedAt: 0 }; // old format
-                return raw; // { ids, cachedAt }
-            } catch { return { ids: null, cachedAt: 0 }; }
+                if (!raw) return { ids: null, cachedAt: 0, summaries: [] };
+                if (Array.isArray(raw)) return { ids: raw, cachedAt: 0, summaries: [] }; // old format
+                return { summaries: [], ...raw }; // ensure summaries present
+            } catch { return { ids: null, cachedAt: 0, summaries: [] }; }
         },
-        setIds(ids) {
-            try { localStorage.setItem(IDS_KEY, JSON.stringify({ ids, cachedAt: Date.now() })); } catch { }
+        // summaries = [{id, dialogue_title}] — stored plaintext so sidebar renders without decryption
+        setIds(ids, summaries) {
+            try {
+                localStorage.setItem(IDS_KEY, JSON.stringify({
+                    ids,
+                    cachedAt: Date.now(),
+                    summaries: summaries || ids.map(id => ({ id })),
+                }));
+            } catch { }
         },
         has(id) { return !!_load()[id]; },
 
@@ -339,35 +378,77 @@ async function discover() {
     if (location.protocol === 'file:')
         document.getElementById('file-notice').style.display = 'inline-flex';
 
-    /* Warm crypto key in background so subsequent ops are instant. */
+    /* Warm crypto key now so the first on-demand decrypt is fast. */
     CRYPTO.warmup().catch(() => {});
 
-    const { ids: cachedIds, cachedAt } = DCACHE.getIds();
+    const { ids: cachedIds, cachedAt, summaries } = DCACHE.getIds();
     const isStale = !cachedAt || (Date.now() - cachedAt > CACHE_TTL);
 
+    if (cachedIds && cachedIds.length > 0 && summaries && summaries.length > 0) {
+        /* ── Instant path: return sidebar-ready summaries immediately.
+           Full dialogue content is decrypted lazily in the background.  ── */
+        _warmAllFromCache(cachedIds, isStale).catch(() => {});
+        return summaries;   // [{id, dialogue_title}] — no decryption needed
+    }
+
     if (cachedIds && cachedIds.length > 0) {
-        /* ── Fast path: load all from encrypted cache ── */
+        /* ── Fast path (old cache format without summaries): decrypt all. ── */
         const found = [];
         for (const id of cachedIds) {
             const d = await DCACHE.get(id);
             if (d) found.push({ id, ...d });
         }
         if (found.length > 0) {
-            if (isStale && navigator.onLine) {
-                /* Cache is older than 7 days — silently refresh everything in background. */
-                _backgroundRefresh(found).catch(() => {});
-            } else {
-                /* Cache is fresh — only check for newly added files. */
-                _checkForNew(cachedIds, found).catch(() => {});
-            }
+            // Rebuild index with summaries so the next refresh is instant
+            DCACHE.setIds(
+                found.map(f => f.id),
+                found.map(f => ({ id: f.id, dialogue_title: f.dialogue_title }))
+            );
+            if (isStale && navigator.onLine) _backgroundRefresh(found).catch(() => {});
+            else _checkForNew(cachedIds, found).catch(() => {});
             return found;
         }
-        /* All cache entries failed (e.g. key changed) — fall through to network. */
         DCACHE.clear();
     }
 
-    /* ── Slow path: fetch from network, encrypt & cache ── */
+    /* ── Slow path: nothing cached — fetch from network. ── */
     return _fetchAll();
+}
+
+/* Decrypt all cached dialogues in the background, progressively upgrading the
+   in-memory `dialogues` array from stubs to full objects.                     */
+async function _warmAllFromCache(cachedIds, isStale) {
+    const found = [];
+    for (const id of cachedIds) {
+        const d = await DCACHE.get(id);
+        if (!d) continue;
+        const full = { id, ...d };
+        found.push(full);
+
+        // Replace the stub (summary-only entry) with the full object
+        const idx = dialogues.findIndex(x => x.id === id);
+        if (idx >= 0) dialogues[idx] = full;
+        else dialogues.push(full);
+
+        // Upgrade current: full re-render only if we had a stub, otherwise silent refresh
+        if (current && current.id === id) {
+            if (!current.conversation) {
+                current = full;
+                loadDialogue(full, /* skipSave */ true);
+            } else {
+                current = full;
+                QUICK_CACHE.set(full); // keep quick cache in sync with freshly-decrypted data
+            }
+        }
+    }
+
+    if (!found.length) return;
+
+    // Re-render sidebar with full data (completion badges are now accurate)
+    renderSidebar(filterDialogues(searchInput.value.trim()));
+
+    if (isStale && navigator.onLine) _backgroundRefresh(found).catch(() => {});
+    else _checkForNew(cachedIds, found).catch(() => {});
 }
 
 async function _fetchAll() {
@@ -385,7 +466,12 @@ async function _fetchAll() {
             } catch { break; }
         }
     }
-    if (found.length) DCACHE.setIds(found.map(f => f.id));
+    if (found.length) {
+        DCACHE.setIds(
+            found.map(f => f.id),
+            found.map(f => ({ id: f.id, dialogue_title: f.dialogue_title }))
+        );
+    }
     return found;
 }
 
@@ -414,7 +500,10 @@ async function _checkForNew(knownIds, currentFound) {
 
     if (newFound.length) {
         const all = [...currentFound, ...newFound];
-        DCACHE.setIds(all.map(f => f.id));
+        DCACHE.setIds(
+            all.map(f => f.id),
+            all.map(f => ({ id: f.id, dialogue_title: f.dialogue_title }))
+        );
         dialogues = all;
         renderSidebar(all);
         showToast(`🆕 ${newFound.length} nieuwe dialoog${newFound.length > 1 ? 'en' : ''} gevonden!`);
@@ -426,7 +515,7 @@ async function _checkForNew(knownIds, currentFound) {
 async function _backgroundRefresh(currentFound) {
     try {
         DCACHE.clear();
-        const fresh = await _fetchAll();
+        const fresh = await _fetchAll(); // _fetchAll now stores summaries too
         if (!fresh.length) return;
         dialogues = fresh;
         renderSidebar(filterDialogues(searchInput.value.trim()));
@@ -520,7 +609,10 @@ function loadDialogue(d, skipSave = false) {
     document.getElementById('tts-bar').style.display  = 'none';
     renderConv();
 
-    if (!skipSave) saveSession();
+    if (!skipSave) {
+        if (d.conversation) QUICK_CACHE.set(d);
+        saveSession();
+    }
 }
 
 /* ════════════════════════════════════════════════════
@@ -905,6 +997,7 @@ async function forceReload() {
     btns.forEach(b => { b.disabled = true; });
     try {
         DCACHE.clear();
+        QUICK_CACHE.clear();
         const found = await _fetchAll();
         dialogues = found;
         renderSidebar(found);
@@ -1001,18 +1094,31 @@ const WAKE = (() => {
         if (sharedVol && typeof sharedVol.v === 'number') { applyVolume(sharedVol.v / 100); }
         else applyVolume(ttsVolume);
     } catch { applyVolume(ttsVolume); }
+    // Phase 1 — instant: discover() returns summaries from localStorage (no decryption).
+    // The sidebar renders immediately; full content decrypts in the background.
     const found = await discover();
     dialogues   = found;
-    updateStreak();             // count today's visit for streak
+    updateStreak();
 
     const saved = STORE.get();
+    renderSidebar(found);   // always render sidebar first — may be stubs, that's fine
+
     if (saved.dialogueId) {
-        renderSidebar(found);   // show badges before session restore
-        loadSession();          // restore last session
-    } else {
-        renderSidebar(found);
-        if (found.length) loadDialogue(found[0]);
+        // Phase 2a — restore last session: decrypt just the last-open dialogue on demand
+        await loadSession();
+    } else if (found.length) {
+        // Phase 2b — no saved session: decrypt and open the first dialogue
+        let first = found[0];
+        if (!first.conversation) {
+            const cached = await DCACHE.get(first.id);
+            if (cached) {
+                first = { id: first.id, ...cached };
+                dialogues[0] = first;
+            }
+        }
+        if (first.conversation) loadDialogue(first);
     }
+
     // Auto-open video panel on desktop if the loaded dialogue has a video
     if (current && ytId(current.video_url)) openYtPanel();
 })();

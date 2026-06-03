@@ -1,0 +1,54 @@
+Please generate a new story in the exact same JSON format as the one provided below. The story should be written in Dutch (for learning purposes), accompanied by an accurate English translation paragraph by paragraph. 
+
+Requirements for the new story:
+1. Topic: [INSERT YOUR NEW TOPIC HERE, e.g., "A day at the Dutch beach" or "Visiting a museum in Amsterdam"]
+2. Vocabulary: Highlight 5-7 key thematic words with their Dutch and English translations.
+3. Questions: Include exactly 5 multiple-choice questions in Dutch. Each question must have an "answers" array containing exactly 4 related options (1 correct answer and 3 plausible but incorrect distractors based on the text), and a "correct_answer" field matching the right option exactly.
+
+Use this exact JSON structure:
+{
+  "id": 2,
+  "title": "Title in Dutch",
+  "subtitle": "A one-sentence summary in Dutch",
+  "image_query": "English keywords for an image search related to the story",
+  "paragraphs": [
+    "Dutch paragraph 1...",
+    "Dutch paragraph 2..."
+  ],
+  "english_paragraphs": [
+    "English translation of paragraph 1...",
+    "English translation of paragraph 2..."
+  ],
+  "vocabulary": [
+    { "nl": "dutch_word", "en": "english_translation" }
+  ],
+  "questions": [
+    {
+      "question": "Dutch question 1?",
+      "answers": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct_answer": "The exact text of the correct option"
+    }
+  ]
+}
+
+
+
+=========
+
+Please revise the following JSON object. Keep the original story ("paragraphs" and "english_paragraphs") and "vocabulary" exactly as they are, but update the "questions" section according to the rules below.
+
+Requirements for the revision:
+1. Ensure there are exactly 5 multiple-choice questions written in Dutch based on the text.
+2. For each question, create an "answers" array containing exactly 4 options: 1 correct answer and 3 related, plausible but incorrect distractors based on the story.
+3. Add a "correct_answer" field for each question that contains the exact string of the correct option.
+4. Keep all other fields ("id", "title", "subtitle", "image_query", "vocabulary") intact.
+
+Output ONLY the final, valid JSON object without any introductory or concluding text.
+
+Here is the JSON to revise:
+[PASTE YOUR CURRENT JSON HERE]
