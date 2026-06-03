@@ -374,7 +374,7 @@ function mergeWheel(local, remote) {
 
 // ── RSS proxy ─────────────────────────────────────────────────────────────
 
-const RSS_CACHE_KEY = 'rss:nu:cache';
+const RSS_CACHE_KEY = 'rss:nu:cache:v2'; // v2 = HTML-stripped
 const RSS_MAX       = 50;
 const RSS_FETCH_TTL = 8000; // 8 s upstream timeout
 
@@ -470,12 +470,12 @@ function rssParseItems(xml) {
   let m;
 
   while ((m = itemRx.exec(xml)) !== null && items.length < 30) {
-    const b = m[1];
+    const b    = m[1];
     const link = rssLink(b);
     items.push({
-      title:       rssText(b, 'title'),
+      title:       rssStripTags(rssText(b, 'title')),
       link,
-      description: rssText(b, 'description'),
+      description: rssStripTags(rssText(b, 'description')),
       pubDate:     rssText(b, 'pubDate'),
       guid:        rssText(b, 'guid') || link,
       categories:  rssAllText(b, 'category'),
@@ -483,6 +483,20 @@ function rssParseItems(xml) {
   }
 
   return items;
+}
+
+// Strip HTML tags and decode common entities — Workers have no DOM
+function rssStripTags(str) {
+  return (str || '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;/gi,  ' ')
+    .replace(/&amp;/gi,   '&')
+    .replace(/&lt;/gi,    '<')
+    .replace(/&gt;/gi,    '>')
+    .replace(/&quot;/gi,  '"')
+    .replace(/&#39;/gi,   "'")
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 function rssText(block, tag) {
