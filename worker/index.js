@@ -37,6 +37,13 @@ export default {
     }
 
     const url = new URL(request.url);
+
+    // ── RSS proxy ─────────────────────────────────────────────────────────
+    if (url.pathname === '/rss') {
+      if (request.method !== 'GET') return reply({ error: 'Method not allowed' }, 405);
+      return handleRSS();
+    }
+
     if (url.pathname !== '/sync') return reply({ error: 'Not found' }, 404);
     if (request.method !== 'POST') return reply({ error: 'Method not allowed' }, 405);
 
@@ -360,6 +367,89 @@ function mergeWheel(local, remote) {
     }
   }
   return [...byId.values()];
+}
+
+// ── RSS proxy ─────────────────────────────────────────────────────────────
+
+async function handleRSS() {
+  try {
+    const upstream = await fetch('https://www.nu.nl/rss', {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (compatible; NLLearnReader/1.0)',
+        'Accept':     'application/rss+xml, application/xml, text/xml, */*',
+      },
+      cf: { cacheTtl: 900, cacheEverything: true },
+    });
+
+    if (!upstream.ok) {
+      return reply({ error: 'Upstream error', code: upstream.status }, 502);
+    }
+
+    const xml   = await upstream.text();
+    const items = rssParseItems(xml);
+
+    return new Response(JSON.stringify({ status: 'ok', items, fetchedAt: Date.now() }), {
+      headers: {
+        'Content-Type':  'application/json',
+        'Cache-Control': 'public, max-age=900',
+        ...CORS_HEADERS,
+      },
+    });
+  } catch (e) {
+    return reply({ error: 'RSS fetch failed: ' + e.message }, 500);
+  }
+}
+
+// Parse RSS 2.0 XML without DOM (Workers runtime has no DOMParser)
+function rssParseItems(xml) {
+  const items  = [];
+  const itemRx = /<item[^>]*>([\s\S]*?)<\/item>/gi;
+  let m;
+
+  while ((m = itemRx.exec(xml)) !== null && items.length < 30) {
+    const b = m[1];
+    const link = rssLink(b);
+    items.push({
+      title:       rssText(b, 'title'),
+      link,
+      description: rssText(b, 'description'),
+      pubDate:     rssText(b, 'pubDate'),
+      guid:        rssText(b, 'guid') || link,
+      categories:  rssAllText(b, 'category'),
+    });
+  }
+
+  return items;
+}
+
+function rssText(block, tag) {
+  const rx = new RegExp(
+    `<${tag}[^>]*>\\s*(?:<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>|([\\s\\S]*?))\\s*<\\/${tag}>`, 'i'
+  );
+  const m = block.match(rx);
+  return (m?.[1] ?? m?.[2] ?? '').trim();
+}
+
+function rssLink(block) {
+  // <link>URL</link>  or  <link><![CDATA[URL]]></link>
+  const m1 = block.match(/<link>\s*(?:<!\[CDATA\[([\s\S]*?)\]\]>|([^<]*))\s*<\/link>/i);
+  if (m1) return (m1[1] ?? m1[2] ?? '').trim();
+  // Atom-style: <link href="URL" .../>
+  const m2 = block.match(/<link[^>]+href="([^"]+)"/i);
+  return (m2?.[1] ?? '').trim();
+}
+
+function rssAllText(block, tag) {
+  const results = [];
+  const rx = new RegExp(
+    `<${tag}[^>]*>\\s*(?:<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>|([^<]*))\\s*<\\/${tag}>`, 'gi'
+  );
+  let m;
+  while ((m = rx.exec(block)) !== null) {
+    const v = (m[1] ?? m[2] ?? '').trim();
+    if (v) results.push(v);
+  }
+  return results;
 }
 
 // ── Response helper ───────────────────────────────────────────────────────
