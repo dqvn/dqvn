@@ -230,18 +230,53 @@
   }
   .art-body-hdr {
     display: flex; align-items: flex-start; gap: 10px;
-    cursor: pointer;
   }
   .art-body-title {
     flex: 1;
     font-size: calc(var(--art-fs) * 1.08); font-weight: 800; line-height: 1.35;
-    color: var(--text);
+    color: var(--text); cursor: text; user-select: text;
   }
   .art-collapse-btn {
     flex-shrink: 0; margin-top: 3px;
     color: var(--muted); font-size: .65rem; line-height: 1;
+    cursor: pointer; padding: 2px 5px; transition: color .15s;
   }
-  .art-body-hdr:hover .art-collapse-btn { color: var(--text); }
+  .art-collapse-btn:hover { color: var(--text); }
+
+  /* ── Word-action popup ───────────────────────── */
+  #word-popup {
+    position: fixed; z-index: 500;
+    background: var(--bg2);
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    padding: 11px 14px 12px;
+    display: none; flex-direction: column; gap: 9px;
+    min-width: 170px;
+    box-shadow: 0 10px 32px rgba(0,0,0,.55);
+    animation: wpIn .14s ease;
+  }
+  #word-popup.show { display: flex; }
+  @keyframes wpIn {
+    from { opacity: 0; transform: translateY(-5px) scale(.96); }
+    to   { opacity: 1; transform: none; }
+  }
+  .wp-word {
+    font-size: .95rem; font-weight: 800; color: var(--accent);
+    word-break: break-word; line-height: 1.3;
+  }
+  .wp-btns { display: flex; gap: 6px; }
+  .wp-btn {
+    flex: 1; background: var(--card);
+    border: 1.5px solid var(--border); border-radius: 9px;
+    color: var(--muted); padding: 7px 6px;
+    font-family: inherit; font-size: .76rem; font-weight: 800;
+    cursor: pointer; transition: all .15s; white-space: nowrap;
+  }
+  .wp-btn:hover { background: rgba(255,255,255,.12); color: var(--text); border-color: rgba(255,255,255,.25); }
+  .wp-btn-close {
+    flex: 0 0 auto; padding: 7px 10px;
+    color: rgba(255,255,255,.25); font-size: .8rem;
+  }
   .art-desc {
     font-size: calc(var(--art-fs) * .9); line-height: 1.65;
     color: rgba(241,245,249,.7);
@@ -422,6 +457,16 @@
   </div>
 
   <div id="_toast"></div>
+
+  <!-- Word-action popup -->
+  <div id="word-popup">
+    <div class="wp-word" id="wp-word"></div>
+    <div class="wp-btns">
+      <button class="wp-btn" onclick="wordSpeak()">🔊 Horen</button>
+      <button class="wp-btn" id="wp-copy-btn" onclick="wordCopy()">📋 Kopiëren</button>
+      <button class="wp-btn wp-btn-close" onclick="closeWordPopup()">✕</button>
+    </div>
+  </div>
 
   <script src="assets/js/sync.js"></script>
   <script>
@@ -619,9 +664,9 @@
         </div>
         <div class="art-body">
           <div class="art-body-inner">
-            <div class="art-body-hdr" onclick="toggleExpand(${i})" title="Inklappen">
-              <p class="art-body-title">${escH(a.title || '')}</p>
-              <span class="art-collapse-btn">▲</span>
+            <div class="art-body-hdr">
+              <p class="art-body-title" ondblclick="wordAction(event)">${escH(a.title || '')}</p>
+              <span class="art-collapse-btn" onclick="toggleExpand(${i})" title="Inklappen">▲</span>
             </div>
             ${desc ? `<p class="art-desc">${escH(desc)}${desc.length >= 280 ? '…' : ''}</p>` : ''}
             <div class="art-actions">
