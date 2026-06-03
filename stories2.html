@@ -1,468 +1,585 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dutch Stories for Kids!</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dutch Short Stories – Beginners</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/dutch.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary:   #e85d04;
+      --primary-d: #c44f00;
+      --accent:    #ffd166;
+      --teal:      #0891b2;
+      --bg:        #1a1a2e;
+      --sidebar-w: 300px;
+      --bar-h:     68px;
+      --radius:    14px;
+    }
 
-    <style>
-        /* General Styling */
-        :root {
-            --primary-color: #FF6B6B; /* Coral Red */
-            --secondary-color: #4ECDC4; /* Teal */
-            --accent-color: #FFD93D; /* Yellow */
-            --text-color: #4a4a4a;
-            --bg-color: #F7FFF7;
-            --white: #FFFFFF;
-        }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--bg);
+      color: #f0f0f0;
+      height: 100dvh;
+      overflow: hidden;
+      display: flex;
+    }
 
-        body {
-            font-family: 'Nunito', sans-serif;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            overflow: hidden; /* Prevents scrollbars from the full-page background */
-        }
+    /* ── Background photo ── */
+    #bg {
+      position: fixed; inset: 0; z-index: 0;
+      background-size: cover; background-position: center;
+      transition: background-image .8s ease;
+      filter: brightness(.45) saturate(1.1);
+    }
+    #bg::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(to right, rgba(0,0,0,.7) 0%, rgba(0,0,0,.25) 60%, rgba(0,0,0,.1) 100%);
+    }
 
-        /* Background Image Styling */
-        #background-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            transition: background-image 1s ease-in-out, filter 1s ease-in-out;
-            /* Start with a slight blur for effect */
-            filter: brightness(0.9) blur(3px);
-        }
-        
-        #background-container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.1); /* A subtle dark overlay to help text stand out */
-            z-index: 0;
-        }
+    /* ── Sidebar ── */
+    #sidebar {
+      position: relative; z-index: 10;
+      width: var(--sidebar-w);
+      flex-shrink: 0;
+      display: flex; flex-direction: column;
+      background: rgba(10,10,24,.72);
+      backdrop-filter: blur(18px);
+      border-right: 1px solid rgba(255,255,255,.08);
+      overflow: hidden;
+    }
 
-        /* Main App Container */
-        .story-app {
-            display: grid;
-            grid-template-columns: 300px 1fr;
-            grid-template-rows: 1fr auto;
-            height: 100vh;
-            width: 100vw;
-        }
+    .sb-top {
+      padding: 14px 16px 0;
+      flex-shrink: 0;
+    }
 
-        /* Left Side Menu */
-        #story-menu {
-            grid-row: 1 / 2;
-            grid-column: 1 / 2;
-            background-color: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(10px);
-            padding: 20px;
-            overflow-y: auto;
-            border-right: 5px solid var(--accent-color);
-        }
+    .back-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      color: rgba(255,255,255,.55);
+      text-decoration: none;
+      font-size: .82rem; font-weight: 700;
+      letter-spacing: .03em;
+      padding: 6px 10px;
+      border-radius: 8px;
+      transition: all .2s;
+    }
+    .back-link:hover { color: var(--accent); background: rgba(255,255,255,.07); }
 
-        #story-menu h2 {
-            color: var(--primary-color);
-            font-size: 2.2rem;
-            font-weight: 800;
-            text-align: center;
-            margin-bottom: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        #story-menu h2 .fa-book-open {
-            margin-right: 10px;
-        }
+    .sb-header {
+      padding: 18px 20px 16px;
+      border-bottom: 1px solid rgba(255,255,255,.09);
+      flex-shrink: 0;
+    }
+    .sb-header h1 {
+      font-size: 1.25rem; font-weight: 800;
+      color: #fff;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .sb-header p {
+      font-size: .78rem; color: rgba(255,255,255,.45);
+      margin-top: 3px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase;
+    }
 
-        #story-menu ul {
-            list-style-type: none;
-        }
+    .story-list {
+      list-style: none;
+      overflow-y: auto;
+      flex: 1;
+      padding: 10px 10px 10px;
+    }
+    .story-list::-webkit-scrollbar { width: 4px; }
+    .story-list::-webkit-scrollbar-track { background: transparent; }
+    .story-list::-webkit-scrollbar-thumb { background: rgba(255,255,255,.15); border-radius: 4px; }
 
-        #story-menu li a {
-            display: block;
-            padding: 15px 20px;
-            margin-bottom: 12px;
-            text-decoration: none;
-            color: var(--text-color);
-            background-color: var(--white);
-            border-radius: 12px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            border-left: 5px solid transparent;
-        }
+    .story-list li a {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 11px 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: rgba(255,255,255,.70);
+      font-size: .88rem; font-weight: 600;
+      line-height: 1.35;
+      transition: all .18s;
+      cursor: pointer;
+    }
+    .story-list li a:hover { background: rgba(255,255,255,.07); color: #fff; }
+    .story-list li a.active {
+      background: linear-gradient(135deg, var(--primary), var(--primary-d));
+      color: #fff;
+      box-shadow: 0 4px 14px rgba(232,93,4,.35);
+    }
+    .story-num {
+      flex-shrink: 0;
+      width: 22px; height: 22px;
+      background: rgba(255,255,255,.12);
+      border-radius: 50%;
+      font-size: .72rem; font-weight: 800;
+      display: grid; place-items: center;
+      color: rgba(255,255,255,.7);
+    }
+    .story-list li a.active .story-num { background: rgba(255,255,255,.25); color: #fff; }
 
-        #story-menu li a:hover {
-            transform: translateY(-3px) translateX(5px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-            border-left: 5px solid var(--secondary-color);
-        }
+    /* ── Main content ── */
+    #main {
+      flex: 1;
+      position: relative; z-index: 5;
+      overflow-y: auto;
+      padding: 36px 40px calc(var(--bar-h) + 24px);
+    }
+    #main::-webkit-scrollbar { width: 5px; }
+    #main::-webkit-scrollbar-track { background: transparent; }
+    #main::-webkit-scrollbar-thumb { background: rgba(255,255,255,.18); border-radius: 4px; }
 
-        #story-menu li a.active {
-            background-color: var(--primary-color);
-            color: var(--white);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-            border-left: 5px solid var(--accent-color);
-            transform: translateX(5px);
-        }
+    /* Welcome / placeholder */
+    #welcome {
+      height: 100%;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      text-align: center; gap: 16px;
+    }
+    #welcome .w-icon { font-size: 4rem; }
+    #welcome h2 { font-size: 1.6rem; font-weight: 800; color: #fff; }
+    #welcome p { font-size: .95rem; color: rgba(255,255,255,.55); max-width: 380px; line-height: 1.6; }
 
-        /* Story Content Area */
-        #story-content {
-            grid-row: 1 / 2;
-            grid-column: 2 / 3;
-            overflow-y: auto;
-            padding: 50px;
-            background-color: rgba(247, 255, 247, 0.75); /* Slightly transparent background for readability */
-            backdrop-filter: blur(5px);
-        }
+    /* Story view */
+    #story-view { display: none; max-width: 760px; }
 
-        #story-content-inner {
-            max-width: 900px;
-            margin: 0 auto;
-            opacity: 0; /* Start hidden for fade-in effect */
-            transform: translateY(20px);
-            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-        }
-        
-        #story-content-inner.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    .story-meta {
+      margin-bottom: 28px;
+      animation: fadeUp .4s ease both;
+    }
+    .story-num-badge {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      font-size: .72rem; font-weight: 800;
+      letter-spacing: .07em; text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    .story-meta h1 {
+      font-size: 2rem; font-weight: 800;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    .story-meta p {
+      font-size: .92rem; color: rgba(255,255,255,.6);
+      font-style: italic; line-height: 1.5;
+    }
 
-        #story-title {
-            font-size: 3.5rem;
-            font-weight: 800;
-            color: var(--primary-color);
-            margin-bottom: 30px;
-            text-align: center;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-        }
+    /* Story text card */
+    .story-card {
+      background: rgba(255,255,255,.09);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-bottom: 28px;
+      animation: fadeUp .4s .08s ease both;
+    }
+    .story-card p {
+      font-family: 'Lora', serif;
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: rgba(255,255,255,.88);
+      margin-bottom: 1.1em;
+    }
+    .story-card p:last-child { margin-bottom: 0; }
 
-        .story-text-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            font-size: 1.4rem;
-            line-height: 1.8;
-            background-color: rgba(255, 255, 255, 0.6);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        }
+    /* Vocabulary */
+    .section-title {
+      font-size: .72rem; font-weight: 800;
+      letter-spacing: .1em; text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+    .vocab-section {
+      margin-bottom: 24px;
+      animation: fadeUp .4s .16s ease both;
+    }
+    .vocab-grid {
+      display: flex; flex-wrap: wrap; gap: 8px;
+    }
+    .vocab-card {
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 10px;
+      padding: 8px 14px;
+      display: flex; align-items: center; gap: 8px;
+      font-size: .85rem;
+    }
+    .vocab-nl { font-weight: 700; color: #fff; }
+    .vocab-sep { color: rgba(255,255,255,.25); }
+    .vocab-en { color: rgba(255,255,255,.55); }
 
-        .story-column h3 {
-            font-size: 2rem;
-            color: var(--secondary-color);
-            margin-bottom: 15px;
-            border-bottom: 3px solid var(--secondary-color);
-            padding-bottom: 10px;
-        }
-        
-        .story-column h3.english-title {
-            color: var(--primary-color);
-            border-bottom-color: var(--primary-color);
-        }
+    /* Questions */
+    .questions-section {
+      animation: fadeUp .4s .22s ease both;
+    }
+    .questions-toggle {
+      width: 100%;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      color: rgba(255,255,255,.8);
+      font-family: 'Nunito', sans-serif;
+      font-size: .9rem; font-weight: 700;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: space-between;
+      transition: background .2s;
+    }
+    .questions-toggle:hover { background: rgba(255,255,255,.12); }
+    .questions-toggle .chevron { transition: transform .25s; font-size: .7rem; }
+    .questions-toggle.open .chevron { transform: rotate(180deg); }
+    .questions-body {
+      display: none;
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.08);
+      border-top: none;
+      border-radius: 0 0 var(--radius) var(--radius);
+      padding: 18px 20px;
+    }
+    .questions-body.open { display: block; }
+    .questions-body ol {
+      padding-left: 20px;
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .questions-body li {
+      font-size: .92rem;
+      color: rgba(255,255,255,.75);
+      line-height: 1.5;
+    }
 
-        /* Bottom Control Bar */
-        #controls {
-            grid-column: 1 / 3;
-            grid-row: 2 / 3;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 15px;
-            background-color: var(--white);
-            box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
-            z-index: 10;
-        }
+    /* ── TTS Bottom bar ── */
+    #tts-bar {
+      position: fixed;
+      bottom: 0; left: var(--sidebar-w); right: 0;
+      height: var(--bar-h);
+      z-index: 20;
+      background: rgba(10,10,24,.88);
+      backdrop-filter: blur(18px);
+      border-top: 1px solid rgba(255,255,255,.09);
+      display: flex; align-items: center; justify-content: center; gap: 12px;
+      padding: 0 24px;
+    }
 
-        .control-button {
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 2.5rem;
-            margin: 0 25px;
-            color: var(--secondary-color);
-            transition: all 0.2s ease;
-        }
+    .tts-btn {
+      background: rgba(255,255,255,.1);
+      border: none; border-radius: 50%;
+      width: 42px; height: 42px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      display: grid; place-items: center;
+      color: rgba(255,255,255,.8);
+      transition: all .18s;
+    }
+    .tts-btn:hover { background: rgba(255,255,255,.2); color: #fff; transform: scale(1.08); }
+    .tts-btn:disabled { opacity: .3; cursor: default; transform: none; }
 
-        .control-button:hover {
-            color: var(--primary-color);
-            transform: scale(1.1);
-        }
+    #btn-play-tts {
+      width: 50px; height: 50px;
+      background: var(--primary);
+      font-size: 1.2rem;
+      color: #fff;
+      box-shadow: 0 4px 16px rgba(232,93,4,.4);
+    }
+    #btn-play-tts:hover { background: var(--primary-d); transform: scale(1.08); }
+    #btn-play-tts.playing { background: #0891b2; box-shadow: 0 4px 16px rgba(8,145,178,.4); }
 
-        #play-pause-btn .fa-pause {
-            display: none;
-        }
-        
-        #speed-btn {
-            font-size: 1.5rem;
-            font-weight: bold;
-            background-color: var(--accent-color);
-            color: var(--text-color);
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-    </style>
+    #btn-speed-tts {
+      background: rgba(255,213,102,.15);
+      border: 1px solid rgba(255,213,102,.3);
+      border-radius: 20px;
+      width: auto; padding: 0 14px;
+      font-family: 'Nunito', sans-serif;
+      font-size: .8rem; font-weight: 800;
+      color: var(--accent);
+      letter-spacing: .05em;
+    }
+    #btn-speed-tts:hover { background: rgba(255,213,102,.25); }
+
+    .tts-label {
+      font-size: .75rem; font-weight: 700;
+      color: rgba(255,255,255,.35);
+      letter-spacing: .06em; text-transform: uppercase;
+      flex: 1;
+    }
+    .tts-label span { color: rgba(255,255,255,.6); }
+
+    /* ── Animations ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 680px) {
+      :root { --sidebar-w: 0px; }
+      #sidebar { display: none; }
+      #mob-header {
+        display: flex; align-items: center; gap: 12px;
+        position: fixed; top: 0; left: 0; right: 0;
+        height: 52px; z-index: 30;
+        background: rgba(10,10,24,.9);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255,255,255,.08);
+        padding: 0 14px;
+      }
+      #main { padding: 70px 18px calc(var(--bar-h) + 16px); }
+      #tts-bar { left: 0; }
+      .story-meta h1 { font-size: 1.4rem; }
+      .story-card { padding: 20px 18px; }
+    }
+    @media (min-width: 681px) {
+      #mob-header { display: none; }
+    }
+  </style>
 </head>
 <body>
 
-    <div id="background-container"></div>
+<div id="bg"></div>
 
-    <div class="story-app">
-        <nav id="story-menu">
-            <h2><i class="fas fa-book-open"></i> Verhalen</h2>
-            <ul id="story-list">
-                </ul>
-        </nav>
+<!-- Mobile header -->
+<div id="mob-header">
+  <a href="index.html" style="color:rgba(255,255,255,.55);text-decoration:none;font-size:.8rem;font-weight:700;">← Portaal</a>
+  <span style="font-size:.9rem;font-weight:800;color:#fff;flex:1;text-align:center">📕 Verhalen</span>
+  <button id="mob-menu-btn" style="background:none;border:none;color:#fff;font-size:1.2rem;cursor:pointer">☰</button>
+</div>
 
-        <main id="story-content">
-            <div id="story-content-inner">
-                <h1 id="story-title"></h1>
-                <div class="story-text-container">
-                    <div class="story-column" id="dutch-story">
-                        <h3>Nederlands</h3>
-                        <p id="dutch-text"></p>
-                    </div>
-                    <div class="story-column" id="english-story">
-                        <h3 class="english-title">English</h3>
-                        <p id="english-text"></p>
-                    </div>
-                </div>
-            </div>
-        </main>
+<!-- Sidebar -->
+<nav id="sidebar">
+  <div class="sb-top">
+    <a href="index.html" class="back-link">← Terug naar Portaal</a>
+  </div>
+  <div class="sb-header">
+    <h1>📕 Verhalen</h1>
+    <p>Beginners · 10 verhalen</p>
+  </div>
+  <ul class="story-list" id="story-list"></ul>
+</nav>
 
-        <div id="controls">
-            <button class="control-button" id="play-pause-btn" title="Play/Pause">
-                <i class="fas fa-play"></i>
-                <i class="fas fa-pause"></i>
-            </button>
-            <button class="control-button" id="speed-btn" title="Change Speed">1x</button>
-        </div>
+<!-- Main -->
+<main id="main">
+
+  <div id="welcome">
+    <div class="w-icon">📖</div>
+    <h2>Kies een verhaal</h2>
+    <p>Selecteer een verhaal uit het menu om te beginnen met lezen. Luister mee met de ingebouwde voorleesknop!</p>
+  </div>
+
+  <div id="story-view">
+    <div class="story-meta">
+      <div class="story-num-badge" id="sv-badge">Verhaal 1</div>
+      <h1 id="sv-title"></h1>
+      <p id="sv-subtitle"></p>
     </div>
 
-    <script>
-        // --- STORY DATA ---
-        // Full JSON array of Dutch stories for 3-6 year olds.
-        // The 'image_query' is used to find a relevant background image automatically.
-        const storiesData = [
-            {
-                "title": "De Drie Kleine Biggetjes",
-                "dutch_content": "Er waren eens drie kleine biggetjes die het huis van hun moeder verlieten om hun eigen huis te bouwen. Het eerste biggetje bouwde een huis van stro. Het tweede biggetje bouwde een huis van takjes. Het derde biggetje bouwde een huis van stenen. De grote boze wolf kwam en blies het huis van stro en het huis van takjes om, maar hij kon het huis van stenen niet omblazen.",
-                "english_content": "Once upon a time, there were three little pigs who left their mother's house to build their own. The first little pig built a house of straw. The second little pig built a house of sticks. The third little pig built a house of bricks. The big bad wolf came and blew down the house of straw and the house of sticks, but he could not blow down the house of bricks.",
-                "image_query": "three little pigs fairy tale art"
-            },
-            {
-                "title": "Roodkapje",
-                "dutch_content": "Een klein meisje genaamd Roodkapje moest een mand met eten naar haar zieke oma brengen. In het bos ontmoette ze een wolf. De wolf vroeg waar ze naartoe ging en hij haastte zich naar het huis van oma. Hij at oma op, deed haar kleren aan en wachtte in bed op Roodkapje. Gelukkig redde een jager Roodkapje en haar oma.",
-                "english_content": "A little girl named Little Red Riding Hood had to bring a basket of food to her sick grandmother. In the forest, she met a wolf. The wolf asked where she was going and he hurried to grandmother's house. He ate grandmother, put on her clothes, and waited in bed for Little Red Riding Hood. Luckily, a hunter saved Little Red Riding Hood and her grandmother.",
-                "image_query": "little red riding hood walking in a magical forest"
-            },
-            {
-                "title": "Goudlokje en de Drie Beren",
-                "dutch_content": "Goudlokje was een meisje dat een huisje in het bos vond. Ze ging naar binnen en zag drie kommen pap. Ze at de pap die precies goed was. Ze probeerde drie stoelen en zat op de stoel die precies goed was, maar die brak. Ze ging naar boven en sliep in het bed dat precies goed was. Toen kwamen de drie beren thuis en vonden haar.",
-                "english_content": "Goldilocks was a girl who found a cottage in the woods. She went inside and saw three bowls of porridge. She ate the porridge that was just right. She tried three chairs and sat in the one that was just right, but it broke. She went upstairs and slept in the bed that was just right. Then the three bears came home and found her.",
-                "image_query": "storybook cottage in the woods"
-            },
-            {
-                "title": "Het Lelijke Eendje",
-                "dutch_content": "Op een boerderij werd een eendje geboren dat er anders uitzag dan zijn broertjes en zusjes. Iedereen pestte hem en noemde hem lelijk. Verdrietig liep hij weg. Na een lange, koude winter zag hij zijn spiegelbeeld in het water. Hij was niet langer een lelijk eendje, maar een prachtige zwaan.",
-                "english_content": "On a farm, a duckling was born who looked different from his brothers and sisters. Everyone teased him and called him ugly. Sadly, he ran away. After a long, cold winter, he saw his reflection in the water. He was no longer an ugly duckling, but a beautiful swan.",
-                "image_query": "beautiful white swan on a lake at sunrise"
-            },
-            {
-                "title": "De Kikkerprins",
-                "dutch_content": "Een prinses liet haar gouden bal in een put vallen. Een kikker zei dat hij de bal zou halen als zij zijn vriendin wilde zijn. De prinses beloofde het, maar rende weg toen ze de bal terug had. De kikker volgde haar naar het kasteel. Haar vader, de koning, zei dat ze haar belofte moest houden. Met tegenzin kuste ze de kikker, die in een knappe prins veranderde.",
-                "english_content": "A princess dropped her golden ball into a well. A frog said he would get the ball if she would be his friend. The princess promised, but ran away when she got the ball back. The frog followed her to the castle. Her father, the king, said she must keep her promise. Reluctantly, she kissed the frog, who turned into a handsome prince.",
-                "image_query": "fantasy frog prince with a crown by a well"
-            }
-        ];
+    <div class="story-card" id="sv-paragraphs"></div>
 
-        // --- DOM ELEMENTS ---
-        const storyList = document.getElementById('story-list');
-        const storyTitle = document.getElementById('story-title');
-        const dutchText = document.getElementById('dutch-text');
-        const englishText = document.getElementById('english-text');
-        const backgroundContainer = document.getElementById('background-container');
-        const storyContentInner = document.getElementById('story-content-inner');
-        const playPauseBtn = document.getElementById('play-pause-btn');
-        const speedBtn = document.getElementById('speed-btn');
-        const playIcon = playPauseBtn.querySelector('.fa-play');
-        const pauseIcon = playPauseBtn.querySelector('.fa-pause');
+    <div class="vocab-section">
+      <div class="section-title">Woordenschat</div>
+      <div class="vocab-grid" id="sv-vocab"></div>
+    </div>
 
-        // --- APP STATE ---
-        let currentStoryIndex = 0;
-        let isPlaying = false;
-        let playbackSpeed = 1;
-        const speeds = [1, 1.25, 1.5, 0.75];
+    <div class="questions-section">
+      <button class="questions-toggle" id="q-toggle" onclick="toggleQuestions()">
+        <span>Vragen</span>
+        <span class="chevron">▼</span>
+      </button>
+      <div class="questions-body" id="q-body">
+        <ol id="sv-questions"></ol>
+      </div>
+    </div>
+  </div>
 
-        // --- WEB SPEECH API SETUP ---
-        let utterance = new SpeechSynthesisUtterance();
-        utterance.lang = 'nl-NL'; // Set language to Dutch
-        
-        utterance.onend = () => {
-            isPlaying = false;
-            updatePlayPauseIcon();
-        };
+</main>
 
-        // --- FUNCTIONS ---
+<!-- TTS Bottom bar -->
+<div id="tts-bar">
+  <div class="tts-label">🔊 <span id="tts-status">Kies een verhaal</span></div>
+  <button class="tts-btn" id="btn-restart-tts" title="Herstart" disabled>⟲</button>
+  <button class="tts-btn" id="btn-play-tts" title="Afspelen / Pauzeren" disabled>▶</button>
+  <button class="tts-btn" id="btn-stop-tts" title="Stop" disabled>■</button>
+  <button class="tts-btn" id="btn-speed-tts" title="Snelheid">0.8×</button>
+</div>
 
-        /**
-         * Populates the left menu with story titles.
-         */
-        function populateMenu() {
-            storyList.innerHTML = storiesData.map((story, index) => `
-                <li>
-                    <a href="#" data-index="${index}">${story.title}</a>
-                </li>
-            `).join('');
-        }
+<script>
+  const DATA_URL = 'data/stories/beginners.json';
+  const SPEEDS = [0.8, 1.0, 1.25, 1.5, 0.6];
+  let stories = [];
+  let current = null;
+  let speedIdx = 0;
+  let utterance = null;
+  let isPlaying = false;
 
-        /**
-         * Displays a story based on its index.
-         * @param {number} index - The index of the story to show.
-         */
-        function showStory(index) {
-            speechSynthesis.cancel();
-            isPlaying = false;
-            updatePlayPauseIcon();
-            
-            currentStoryIndex = index;
-            const story = storiesData[index];
+  // ── Load data ──
+  fetch(DATA_URL)
+    .then(r => r.json())
+    .then(data => { stories = data; buildMenu(); })
+    .catch(() => { document.getElementById('welcome').innerHTML = '<p style="color:#f87171">Kon verhalen niet laden.</p>'; });
 
-            // --- Fade out old content ---
-            storyContentInner.classList.remove('visible');
+  function buildMenu() {
+    const ul = document.getElementById('story-list');
+    stories.forEach(s => {
+      const li = document.createElement('li');
+      li.innerHTML = `<a href="#" data-id="${s.id}">
+        <span class="story-num">${s.id}</span>
+        <span>${s.title}</span>
+      </a>`;
+      li.querySelector('a').addEventListener('click', e => { e.preventDefault(); showStory(s.id); });
+      ul.appendChild(li);
+    });
+  }
 
-            // --- Set new background image ---
-            // This uses Unsplash Source to get a high-quality, full-size image based on the query.
-            // It's a reliable and free way to get dynamic backgrounds.
-            const imageUrl = `https://source.unsplash.com/1920x1080/?${encodeURIComponent(story.image_query)}`;
-            
-            // Preload the image to prevent flickering
-            const img = new Image();
-            img.src = imageUrl;
-            img.onload = () => {
-                backgroundContainer.style.backgroundImage = `url('${imageUrl}')`;
-                // Remove blur effect once the image is loaded for a nice transition
-                backgroundContainer.style.filter = 'brightness(0.9) blur(0px)';
-            };
+  function showStory(id) {
+    const s = stories.find(x => x.id === id);
+    if (!s) return;
+    stopTTS();
+    current = s;
 
+    // Update sidebar active
+    document.querySelectorAll('.story-list a').forEach(a => a.classList.remove('active'));
+    document.querySelector(`.story-list a[data-id="${id}"]`)?.classList.add('active');
 
-            // --- Wait for fade out, then update and fade in new content ---
-            setTimeout(() => {
-                storyTitle.textContent = story.title;
-                dutchText.textContent = story.dutch_content;
-                englishText.textContent = story.english_content;
+    // Background
+    setBackground(s.image_query);
 
-                storyContentInner.classList.add('visible');
-            }, 300); // Should match CSS transition duration
+    // Badge + title + subtitle
+    document.getElementById('sv-badge').textContent = `Verhaal ${s.id}`;
+    document.getElementById('sv-title').textContent = s.title;
+    document.getElementById('sv-subtitle').textContent = s.subtitle;
 
-            // Update active class in menu
-            document.querySelectorAll('#story-list a').forEach(a => a.classList.remove('active'));
-            document.querySelector(`#story-list a[data-index="${index}"]`).classList.add('active');
-        }
-        
-        /**
-         * Handles clicks on the play/pause button.
-         */
-        function togglePlayPause() {
-            if (speechSynthesis.speaking && !speechSynthesis.paused) {
-                speechSynthesis.pause();
-                isPlaying = false;
-            } else {
-                if (speechSynthesis.paused) {
-                    speechSynthesis.resume();
-                } else {
-                    utterance.text = storiesData[currentStoryIndex].dutch_content;
-                    utterance.rate = playbackSpeed;
-                    speechSynthesis.speak(utterance);
-                }
-                isPlaying = true;
-            }
-            updatePlayPauseIcon();
-        }
+    // Paragraphs
+    const pc = document.getElementById('sv-paragraphs');
+    pc.innerHTML = s.paragraphs.map(p => `<p>${p}</p>`).join('');
 
-        /**
-         * Updates the play/pause icon based on the isPlaying state.
-         */
-        function updatePlayPauseIcon() {
-            if (isPlaying) {
-                playIcon.style.display = 'none';
-                pauseIcon.style.display = 'inline';
-            } else {
-                playIcon.style.display = 'inline';
-                pauseIcon.style.display = 'none';
-            }
-        }
+    // Vocabulary
+    const vc = document.getElementById('sv-vocab');
+    vc.innerHTML = s.vocabulary.map(v =>
+      `<div class="vocab-card"><span class="vocab-nl">${v.nl}</span><span class="vocab-sep">—</span><span class="vocab-en">${v.en}</span></div>`
+    ).join('');
 
-        /**
-         * Cycles through playback speeds.
-         */
-        function changeSpeed() {
-            const currentSpeedIndex = speeds.indexOf(playbackSpeed);
-            const nextSpeedIndex = (currentSpeedIndex + 1) % speeds.length;
-            playbackSpeed = speeds[nextSpeedIndex];
-            speedBtn.textContent = `${playbackSpeed}x`;
-            
-            // If currently speaking, update the rate immediately
-            if (speechSynthesis.speaking) {
-                utterance.rate = playbackSpeed;
-                // Restart to apply the new speed
-                speechSynthesis.cancel();
-                speechSynthesis.speak(utterance);
-                isPlaying = true;
-                updatePlayPauseIcon();
-            }
-        }
+    // Questions
+    const qc = document.getElementById('sv-questions');
+    qc.innerHTML = s.questions.map(q => `<li>${q}</li>`).join('');
+    closeQuestions();
 
-        // --- EVENT LISTENERS ---
+    // Show story view
+    document.getElementById('welcome').style.display = 'none';
+    const sv = document.getElementById('story-view');
+    sv.style.display = 'block';
+    sv.style.animation = 'none';
+    sv.offsetHeight; // reflow
+    sv.style.animation = '';
 
-        storyList.addEventListener('click', (e) => {
-            if (e.target.tagName === 'A') {
-                e.preventDefault();
-                const index = parseInt(e.target.dataset.index, 10);
-                if (index !== currentStoryIndex) {
-                   showStory(index);
-                }
-            }
-        });
-        
-        playPauseBtn.addEventListener('click', togglePlayPause);
-        speedBtn.addEventListener('click', changeSpeed);
+    // Scroll to top
+    document.getElementById('main').scrollTo({ top: 0, behavior: 'smooth' });
 
-        // --- INITIALIZE APP ---
-        document.addEventListener('DOMContentLoaded', () => {
-            populateMenu();
-            showStory(0); // Show the first story by default
-        });
+    // Update TTS
+    document.getElementById('tts-status').textContent = s.title;
+    ['btn-restart-tts','btn-play-tts','btn-stop-tts'].forEach(id =>
+      document.getElementById(id).disabled = false
+    );
+  }
 
-    </script>
+  // ── Background ──
+  function setBackground(query) {
+    const url = `https://source.unsplash.com/1920x1080/?${encodeURIComponent(query)}`;
+    const img = new Image();
+    img.onload = () => { document.getElementById('bg').style.backgroundImage = `url('${url}')`; };
+    img.src = url;
+  }
+
+  // ── Questions toggle ──
+  function toggleQuestions() {
+    const btn = document.getElementById('q-toggle');
+    const body = document.getElementById('q-body');
+    btn.classList.toggle('open');
+    body.classList.toggle('open');
+  }
+  function closeQuestions() {
+    document.getElementById('q-toggle').classList.remove('open');
+    document.getElementById('q-body').classList.remove('open');
+  }
+
+  // ── TTS ──
+  function getFullText() {
+    if (!current) return '';
+    return current.paragraphs.join(' ');
+  }
+
+  function playTTS() {
+    if (!current) return;
+    if (window.speechSynthesis.paused) {
+      window.speechSynthesis.resume();
+      isPlaying = true;
+      updatePlayBtn();
+      return;
+    }
+    stopTTS();
+    utterance = new SpeechSynthesisUtterance(getFullText());
+    utterance.lang = 'nl-NL';
+    utterance.rate = SPEEDS[speedIdx];
+    utterance.onend = () => { isPlaying = false; updatePlayBtn(); document.getElementById('tts-status').textContent = current ? current.title : ''; };
+    utterance.onerror = () => { isPlaying = false; updatePlayBtn(); };
+    window.speechSynthesis.speak(utterance);
+    isPlaying = true;
+    updatePlayBtn();
+    document.getElementById('tts-status').textContent = '▶ Aan het lezen…';
+  }
+
+  function pauseTTS() {
+    window.speechSynthesis.pause();
+    isPlaying = false;
+    updatePlayBtn();
+    document.getElementById('tts-status').textContent = '⏸ Gepauzeerd';
+  }
+
+  function stopTTS() {
+    window.speechSynthesis.cancel();
+    isPlaying = false;
+    utterance = null;
+    updatePlayBtn();
+    if (current) document.getElementById('tts-status').textContent = current.title;
+  }
+
+  function updatePlayBtn() {
+    const btn = document.getElementById('btn-play-tts');
+    if (isPlaying) {
+      btn.textContent = '⏸';
+      btn.classList.add('playing');
+    } else {
+      btn.textContent = '▶';
+      btn.classList.remove('playing');
+    }
+  }
+
+  document.getElementById('btn-play-tts').addEventListener('click', () => {
+    if (isPlaying) pauseTTS(); else playTTS();
+  });
+  document.getElementById('btn-stop-tts').addEventListener('click', stopTTS);
+  document.getElementById('btn-restart-tts').addEventListener('click', () => { stopTTS(); playTTS(); });
+  document.getElementById('btn-speed-tts').addEventListener('click', () => {
+    speedIdx = (speedIdx + 1) % SPEEDS.length;
+    const spd = SPEEDS[speedIdx];
+    document.getElementById('btn-speed-tts').textContent = `${spd}×`;
+    if (utterance) utterance.rate = spd;
+    // restart if playing so rate takes effect
+    if (isPlaying) { stopTTS(); playTTS(); }
+  });
+
+  // Stop TTS on page leave
+  window.addEventListener('beforeunload', () => window.speechSynthesis.cancel());
+</script>
 </body>
 </html>
