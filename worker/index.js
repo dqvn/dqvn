@@ -378,7 +378,7 @@ async function handleRSS() {
         'User-Agent': 'Mozilla/5.0 (compatible; NLLearnReader/1.0)',
         'Accept':     'application/rss+xml, application/xml, text/xml, */*',
       },
-      cf: { cacheTtl: 900, cacheEverything: true },
+      cf: { cacheTtl: 3600, cacheEverything: true },
     });
 
     if (!upstream.ok) {
@@ -391,7 +391,7 @@ async function handleRSS() {
     return new Response(JSON.stringify({ status: 'ok', items, fetchedAt: Date.now() }), {
       headers: {
         'Content-Type':  'application/json',
-        'Cache-Control': 'public, max-age=900',
+        'Cache-Control': 'public, max-age=3600',
         ...CORS_HEADERS,
       },
     });
