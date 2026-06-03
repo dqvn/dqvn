@@ -1,93 +1,788 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number Learning Game</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0; 
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔢 Getallen Leren – Nederlands</title>
+  <link rel="icon" href="assets/img/dutch.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/sync.css">
+  <style>
+    :root {
+      --bg:      #0f172a;
+      --bg2:     #1e293b;
+      --orange:  #e85d04;
+      --ord:     #c44f00;
+      --accent:  #ffd166;
+      --teal:    #06d6a0;
+      --red:     #ef476f;
+      --purple:  #9b5de5;
+      --text:    #f1f5f9;
+      --muted:   rgba(241,245,249,.52);
+      --card:    rgba(255,255,255,.05);
+      --border:  rgba(255,255,255,.1);
+      --r:       16px;
+      --nav-h:   56px;
+    }
 
-        #number-display {
-            font-size: 220px;
-            color: #3498db; 
-            margin-bottom: 50px;
-            -webkit-text-stroke: 2px white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
 
-        button {
-            font-size: 30px; 
-            padding: 15px 30px;
-            background-color: #2ecc71;
-            color: white;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        }
+    /* ── Top nav ─────────────────────────────────────────── */
+    #top-nav {
+      position: fixed; top: 0; left: 0; right: 0; height: var(--nav-h);
+      background: rgba(15,23,42,.96); backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 12px; padding: 0 16px;
+      z-index: 200;
+    }
+    .nav-back {
+      color: var(--accent); text-decoration: none;
+      font-weight: 800; font-size: .9rem; white-space: nowrap;
+      transition: opacity .2s;
+    }
+    .nav-back:hover { opacity: .7; }
+    .nav-title {
+      flex: 1; text-align: center;
+      font-size: 1.1rem; font-weight: 900;
+    }
 
-        button:hover {
-            background-color: #27ae60;
-        }
+    /* ── App ─────────────────────────────────────────────── */
+    #app {
+      padding-top: var(--nav-h);
+      max-width: 620px;
+      margin: 0 auto;
+      padding-left: 16px; padding-right: 16px; padding-bottom: 48px;
+    }
 
-        /* Optional bounce animation */
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-        }
+    /* Sync bar inside #app */
+    #sync-wrapper {
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 4px;
+    }
 
-        #number-display.animate {
-            animation: bounce 1s ease;
-        }
-    </style>
+    /* ── Screens ─────────────────────────────────────────── */
+    .screen { display: none; }
+    .screen.active {
+      display: flex; flex-direction: column; gap: 20px;
+      animation: fadeUp .28s ease;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: none; }
+    }
+
+    /* ── Home ────────────────────────────────────────────── */
+    .home-hero {
+      text-align: center; padding: 28px 0 4px;
+    }
+    .home-hero h2 {
+      font-size: 2rem; font-weight: 900;
+      background: linear-gradient(130deg, var(--orange), var(--accent));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text; margin-bottom: 6px;
+    }
+    .home-hero p { color: var(--muted); }
+
+    .level-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
+      gap: 14px;
+    }
+    .level-card {
+      background: var(--card); border: 1.5px solid var(--border);
+      border-radius: 20px; padding: 26px 16px 20px;
+      text-align: center; cursor: pointer; position: relative;
+      transition: transform .2s, border-color .2s, box-shadow .2s;
+      user-select: none;
+    }
+    .level-card:not(.locked):hover {
+      transform: translateY(-5px);
+      border-color: var(--orange);
+      box-shadow: 0 10px 36px rgba(232,93,4,.22);
+    }
+    .level-card.locked { opacity: .42; cursor: not-allowed; }
+
+    .lc-num  { font-size: 3.2rem; font-weight: 900; color: var(--orange); line-height: 1; margin-bottom: 4px; }
+    .lc-range { font-size: .78rem; color: var(--muted); margin-bottom: 12px; }
+    .lc-stars { font-size: 1.55rem; letter-spacing: 3px; }
+    .star-on  { color: var(--accent); }
+    .star-off { color: rgba(255,255,255,.12); }
+    .lc-badge {
+      position: absolute; top: 8px; right: 10px;
+      font-size: .7rem; font-weight: 800;
+      background: rgba(6,214,160,.14); border: 1px solid rgba(6,214,160,.3);
+      color: var(--teal); border-radius: 8px; padding: 2px 7px;
+    }
+
+    /* ── Mode screen ─────────────────────────────────────── */
+    .mode-header { text-align: center; padding: 20px 0 4px; }
+    .mode-header h2 { font-size: 1.5rem; font-weight: 900; color: var(--orange); }
+    .mode-header p  { color: var(--muted); margin-top: 4px; }
+
+    .mode-item {
+      background: var(--card); border: 1.5px solid var(--border);
+      border-radius: var(--r); padding: 18px 20px;
+      cursor: pointer; display: flex; align-items: center; gap: 16px;
+      transition: border-color .2s, background .2s, transform .18s;
+    }
+    .mode-item:hover {
+      border-color: var(--orange); background: rgba(232,93,4,.08);
+      transform: translateX(4px);
+    }
+    .mi-icon { font-size: 2.2rem; flex-shrink: 0; }
+    .mi-info h3  { font-size: 1.05rem; font-weight: 800; margin-bottom: 3px; }
+    .mi-info p   { font-size: .82rem; color: var(--muted); }
+    .mi-stars    { font-size: 1.2rem; letter-spacing: 2px; margin-left: auto; flex-shrink: 0; }
+
+    /* ── Learn ───────────────────────────────────────────── */
+    .flash-wrap { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+
+    .flash-card {
+      width: 100%; max-width: 360px;
+      background: linear-gradient(145deg, var(--orange) 0%, var(--ord) 100%);
+      border-radius: 28px; padding: 44px 28px 38px;
+      text-align: center;
+      box-shadow: 0 18px 56px rgba(232,93,4,.35);
+      animation: cardPop .3s cubic-bezier(.34,1.56,.64,1);
+    }
+    @keyframes cardPop {
+      from { transform: scale(.88); opacity: 0; }
+      to   { transform: scale(1);   opacity: 1; }
+    }
+    .fc-num   { font-size: 6.5rem; font-weight: 900; line-height: 1; text-shadow: 0 6px 20px rgba(0,0,0,.2); margin-bottom: 4px; }
+    .fc-dutch { font-size: 2.1rem; font-weight: 800; margin-bottom: 12px; }
+    .fc-trans {
+      display: flex; gap: 18px; justify-content: center;
+      font-size: .92rem; opacity: .84; margin-bottom: 22px;
+      flex-wrap: wrap;
+    }
+    .fc-trans span {
+      display: flex; align-items: center; gap: 5px;
+    }
+    .fc-trans span::before {
+      content: ''; display: block;
+      width: 7px; height: 7px; border-radius: 50%;
+      background: rgba(255,255,255,.55); flex-shrink: 0;
+    }
+    .btn-speak {
+      background: rgba(255,255,255,.2); border: none; border-radius: 20px;
+      color: white; padding: 8px 22px;
+      font-size: .95rem; font-weight: 700;
+      cursor: pointer; font-family: inherit; transition: background .2s;
+    }
+    .btn-speak:hover { background: rgba(255,255,255,.32); }
+
+    .learn-nav { display: flex; align-items: center; gap: 20px; }
+    .nav-btn {
+      width: 50px; height: 50px; border-radius: 50%;
+      border: 2px solid var(--border); background: var(--card);
+      color: var(--text); font-size: 1.4rem; cursor: pointer;
+      transition: all .18s; display: flex; align-items: center; justify-content: center;
+    }
+    .nav-btn:hover:not(:disabled) { background: var(--orange); border-color: var(--orange); }
+    .nav-btn:disabled { opacity: .22; cursor: default; }
+    .learn-ctr { color: var(--muted); font-size: .9rem; font-weight: 700; min-width: 55px; text-align: center; }
+
+    .dot-row { display: flex; gap: 5px; flex-wrap: wrap; justify-content: center; max-width: 300px; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--border); transition: all .2s; }
+    .dot.seen    { background: rgba(232,93,4,.45); }
+    .dot.current { background: var(--orange); transform: scale(1.35); }
+
+    .btn-done {
+      background: linear-gradient(135deg, var(--teal), #059669);
+      color: white; border: none; border-radius: 24px;
+      padding: 14px 36px; font-size: 1.05rem; font-weight: 800;
+      cursor: pointer; font-family: inherit;
+      box-shadow: 0 6px 24px rgba(6,214,160,.3);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .btn-done:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(6,214,160,.42); }
+
+    /* ── Activity ────────────────────────────────────────── */
+    .act-header { display: flex; align-items: center; gap: 12px; padding-top: 4px; }
+    .act-score  { font-size: .85rem; font-weight: 700; color: var(--muted); white-space: nowrap; }
+    .pbar-wrap  { flex: 1; height: 7px; background: var(--card); border-radius: 4px; overflow: hidden; }
+    .pbar-fill  { height: 100%; background: var(--orange); border-radius: 4px; transition: width .32s ease; }
+    .act-qnum   { font-size: .8rem; color: var(--muted); white-space: nowrap; }
+
+    .act-prompt {
+      min-height: 160px; display: flex;
+      align-items: center; justify-content: center;
+    }
+    .big-num {
+      font-size: 9rem; font-weight: 900;
+      color: var(--accent);
+      text-shadow: 0 0 60px rgba(255,209,102,.22);
+      line-height: 1;
+    }
+    .listen-box { text-align: center; }
+    .listen-lbl { font-size: 1rem; color: var(--muted); font-weight: 700; margin-bottom: 18px; }
+    .btn-play {
+      width: 88px; height: 88px; border-radius: 50%;
+      background: linear-gradient(145deg, var(--orange), var(--ord));
+      border: none; font-size: 2.2rem; cursor: pointer;
+      box-shadow: 0 8px 30px rgba(232,93,4,.42);
+      transition: transform .15s;
+    }
+    .btn-play:hover  { transform: scale(1.08); }
+    .btn-play:active { transform: scale(.95);  }
+
+    .choices-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .choice {
+      background: var(--card); border: 2px solid var(--border);
+      border-radius: 16px; color: var(--text);
+      padding: 22px 10px; font-size: 1.5rem; font-weight: 900;
+      cursor: pointer; font-family: inherit;
+      transition: all .18s;
+    }
+    .choice:hover:not(:disabled) {
+      border-color: var(--orange); background: rgba(232,93,4,.1);
+      transform: scale(1.03);
+    }
+    .choice.correct { background: rgba(6,214,160,.18);  border-color: var(--teal); color: var(--teal); }
+    .choice.wrong   { background: rgba(239,71,111,.18); border-color: var(--red);  color: var(--red);  }
+    .choice.reveal  { background: rgba(6,214,160,.1);   border-color: rgba(6,214,160,.45); color: var(--teal); }
+
+    /* ── Result ──────────────────────────────────────────── */
+    #screen-result { align-items: center; padding-top: 32px; }
+    .result-card {
+      background: var(--card); border: 1.5px solid var(--border);
+      border-radius: 28px; padding: 44px 32px;
+      text-align: center; max-width: 380px; width: 100%;
+    }
+    .res-emoji  { font-size: 5.5rem; line-height: 1; margin-bottom: 16px; }
+    .res-score  { font-size: 2rem; font-weight: 900; margin-bottom: 8px; }
+    .res-stars  { font-size: 2.8rem; letter-spacing: 7px; margin-bottom: 12px; }
+    .res-msg    { color: var(--muted); font-size: .95rem; margin-bottom: 28px; line-height: 1.5; }
+    .res-btns   { display: flex; flex-direction: column; gap: 10px; }
+    .res-btns button {
+      background: var(--card); border: 1.5px solid var(--border);
+      border-radius: 14px; color: var(--text);
+      padding: 13px 20px; font-size: 1rem; font-weight: 800;
+      cursor: pointer; font-family: inherit; transition: all .18s;
+    }
+    .res-btns button:first-child {
+      background: linear-gradient(135deg, var(--orange), var(--ord));
+      border-color: transparent;
+      box-shadow: 0 4px 18px rgba(232,93,4,.35);
+    }
+    .res-btns button:hover { transform: translateY(-2px); }
+
+    /* ── Shared back button ──────────────────────────────── */
+    .btn-back {
+      background: transparent; border: 1.5px solid var(--border);
+      border-radius: 20px; color: var(--muted);
+      padding: 8px 20px; font-size: .88rem; font-weight: 700;
+      cursor: pointer; font-family: inherit;
+      display: block; width: fit-content; margin: 0 auto;
+      transition: border-color .2s, color .2s;
+    }
+    .btn-back:hover { border-color: var(--orange); color: var(--orange); }
+
+    /* ── Confetti ────────────────────────────────────────── */
+    .confetti-root {
+      position: fixed; inset: 0;
+      pointer-events: none; z-index: 9999; overflow: hidden;
+    }
+    .cp {
+      position: absolute; top: -12px;
+      animation: cfall linear forwards;
+      border-radius: 2px;
+    }
+    @keyframes cfall {
+      to { transform: translateY(105vh) rotate(900deg); opacity: 0; }
+    }
+
+    /* ── Toast ───────────────────────────────────────────── */
+    #_toast {
+      position: fixed; bottom: 28px; left: 50%;
+      transform: translateX(-50%) translateY(80px);
+      background: var(--bg2); color: var(--text);
+      padding: 11px 22px; border-radius: 24px;
+      font-weight: 700; font-size: .88rem;
+      border: 1.5px solid var(--border); opacity: 0;
+      transition: all .32s; z-index: 8000; white-space: nowrap;
+    }
+    #_toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+
+    /* ── Mobile ──────────────────────────────────────────── */
+    @media (max-width: 420px) {
+      .fc-num   { font-size: 5rem; }
+      .big-num  { font-size: 6.5rem; }
+      .choice   { font-size: 1.3rem; padding: 18px 8px; }
+    }
+  </style>
 </head>
 <body>
 
-    <div id="number-display"></div>
-    <button onclick="generateNumber()">Show Me a Number!</button>
+  <!-- Fixed top nav -->
+  <nav id="top-nav">
+    <a href="index.html" class="nav-back">← Terug</a>
+    <span class="nav-title">🔢 Getallen Leren</span>
+  </nav>
 
+  <div id="app">
 
-    <script>
-        const numberDisplay = document.getElementById('number-display');
+    <!-- Sync bar (dark context) -->
+    <div class="sidebar-dark" id="sync-wrapper">
+      <div id="sync-section"></div>
+    </div>
 
-        function generateNumber() {
-            const randomNumber = Math.floor(Math.random() * 10) + 1;
-            numberDisplay.textContent = randomNumber;
+    <!-- ── Screen: Home ─────────────────────────────────── -->
+    <div id="screen-home" class="screen active">
+      <div class="home-hero">
+        <h2>Getallen Leren</h2>
+        <p>Kies een niveau om te beginnen</p>
+      </div>
+      <div class="level-grid" id="level-grid"></div>
+    </div>
 
-            // Optional animation
-            numberDisplay.classList.add('animate');
-            numberDisplay.addEventListener('animationend', () => {
-                numberDisplay.classList.remove('animate');
-            }, {once: true});
+    <!-- ── Screen: Mode select ──────────────────────────── -->
+    <div id="screen-mode" class="screen">
+      <div class="mode-header">
+        <h2 id="mode-title">Level 1</h2>
+        <p id="mode-range">Getallen 1 – 10</p>
+      </div>
+      <div class="mode-item" onclick="startMode('learn')">
+        <div class="mi-icon">📚</div>
+        <div class="mi-info">
+          <h3>Leren</h3>
+          <p>Verken alle getallen met uitspraak — geen fouten mogelijk</p>
+        </div>
+      </div>
+      <div class="mode-item" onclick="startMode('listen')">
+        <div class="mi-icon">👂</div>
+        <div class="mi-info">
+          <h3>Luisteren</h3>
+          <p>Hoor het getal en kies het juiste cijfer</p>
+        </div>
+        <div class="mi-stars" id="mi-stars-listen"></div>
+      </div>
+      <div class="mode-item" onclick="startMode('quiz')">
+        <div class="mi-icon">✏️</div>
+        <div class="mi-info">
+          <h3>Quiz</h3>
+          <p>Zie het cijfer, kies het Nederlandse woord</p>
+        </div>
+        <div class="mi-stars" id="mi-stars-quiz"></div>
+      </div>
+      <button class="btn-back" onclick="showHome()">← Alle niveaus</button>
+    </div>
 
+    <!-- ── Screen: Learn (flashcard) ────────────────────── -->
+    <div id="screen-learn" class="screen">
+      <div class="flash-wrap" id="flash-wrap">
+        <div class="flash-card" id="flash-card">
+          <div class="fc-num"   id="fc-num"></div>
+          <div class="fc-dutch" id="fc-dutch"></div>
+          <div class="fc-trans">
+            <span id="fc-en"></span>
+            <span id="fc-vi"></span>
+          </div>
+          <button class="btn-speak" onclick="speakCurrent()">🔊 Hoor</button>
+        </div>
+        <div class="learn-nav">
+          <button class="nav-btn" id="btn-prev" onclick="learnStep(-1)">‹</button>
+          <span class="learn-ctr" id="learn-ctr">1 / 10</span>
+          <button class="nav-btn" id="btn-next" onclick="learnStep(1)">›</button>
+        </div>
+        <div class="dot-row" id="dot-row"></div>
+        <button class="btn-done" onclick="finishLearn()">✓ Klaar met leren!</button>
+        <button class="btn-back" onclick="showScreen('mode')">← Terug naar modi</button>
+      </div>
+    </div>
 
-            // Vietnamese TTS 
-            const synth = window.speechSynthesis;
-            const utterance = new SpeechSynthesisUtterance(randomNumber.toString());
-            utterance.lang = 'vi-VN'; 
-            synth.speak(utterance);
-            // Delay TTS by 5 seconds using setTimeout
-            // setTimeout(() => {
-            //     const synth = window.speechSynthesis;
-            //     const utterance = new SpeechSynthesisUtterance(randomNumber.toString());
-            //     utterance.lang = 'vi-VN';
-            //     synth.speak(utterance);
-            // }, 3000); // 5000 milliseconds = 5 seconds
+    <!-- ── Screen: Activity (Listen + Quiz) ─────────────── -->
+    <div id="screen-activity" class="screen">
+      <div class="act-header">
+        <span class="act-score" id="act-score">0 / 0</span>
+        <div class="pbar-wrap"><div class="pbar-fill" id="pbar" style="width:0%"></div></div>
+        <span class="act-qnum" id="act-qnum">Vraag 1</span>
+      </div>
+      <div class="act-prompt" id="act-prompt"></div>
+      <div class="choices-grid" id="choices-grid"></div>
+      <button class="btn-back" onclick="confirmStop()">× Stoppen</button>
+    </div>
 
-        }
+    <!-- ── Screen: Result ───────────────────────────────── -->
+    <div id="screen-result" class="screen">
+      <div class="result-card">
+        <div class="res-emoji" id="res-emoji">🎉</div>
+        <div class="res-score" id="res-score"></div>
+        <div class="res-stars" id="res-stars"></div>
+        <p class="res-msg"    id="res-msg"></p>
+        <div class="res-btns">
+          <button onclick="retryActivity()">🔄 Opnieuw proberen</button>
+          <button onclick="showScreen('mode')">📚 Andere modus</button>
+          <button onclick="showHome()">🏠 Alle niveaus</button>
+        </div>
+      </div>
+    </div>
 
-    </script>
+  </div><!-- #app -->
 
+  <script src="assets/js/sync.js"></script>
+  <script>
+  'use strict';
+
+  /* ── Constants ─────────────────────────────────────────── */
+  const DATA_URL  = 'data/vocabularies/ch00.json';
+  const PROG_KEY  = 'nl_num_progress';
+  const ACT_COUNT = 10;
+
+  const LEVELS = [
+    { id:1, label:'Level 1', nums:'1 – 10',   range:[0,  10]  },
+    { id:2, label:'Level 2', nums:'11 – 20',  range:[10, 20]  },
+    { id:3, label:'Level 3', nums:'21 – 30',  range:[20, 30]  },
+    { id:4, label:'Level 4', nums:'31 – 50',  range:[30, 50]  },
+    { id:5, label:'Level 5', nums:'51 – 100', range:[50, 101] },
+  ];
+
+  /* ── State ─────────────────────────────────────────────── */
+  let allData      = [];
+  let progress     = {};
+  let currentLevel = null;
+  let currentMode  = null;
+
+  // Learn
+  let learnItems = [];
+  let learnIdx   = 0;
+
+  // Activity
+  let actItems   = [];
+  let actIdx     = 0;
+  let actCorrect = 0;
+  let actBusy    = false;
+
+  /* ── Boot ──────────────────────────────────────────────── */
+  async function init() {
+    try {
+      const res = await fetch(DATA_URL);
+      allData   = await res.json();
+    } catch {
+      showToast('⚠️ Kan data niet laden');
+      return;
+    }
+    progress = safeJSON(PROG_KEY, {});
+    renderHome();
+  }
+
+  /* ── Helpers ───────────────────────────────────────────── */
+  function safeJSON(key, def) {
+    try { return JSON.parse(localStorage.getItem(key) ?? 'null') ?? def; } catch { return def; }
+  }
+
+  function saveProgress() {
+    localStorage.setItem(PROG_KEY, JSON.stringify(progress));
+    if (typeof scheduleAutoSync === 'function') scheduleAutoSync();
+  }
+
+  function getProg(id)   { return progress[id] ?? { learn:false, listen:0, quiz:0 }; }
+
+  function isUnlocked(id) {
+    if (id === 1) return true;
+    const p = getProg(id - 1);
+    return p.learn || p.listen > 0 || p.quiz > 0;
+  }
+
+  function starsHtml(n) {
+    return [0,1,2].map(i => `<span class="${i < n ? 'star-on' : 'star-off'}">★</span>`).join('');
+  }
+
+  function shuffle(arr) {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  function getLevelItems(lv) {
+    const [s, e] = (lv || currentLevel).range;
+    return allData.slice(s, e).map((d, i) => ({ ...d, num: s + i + 1 }));
+  }
+
+  /* ── Screen router ─────────────────────────────────────── */
+  function showScreen(name) {
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+    const el = document.getElementById('screen-' + name);
+    if (el) el.classList.add('active');
+    window.scrollTo(0, 0);
+  }
+
+  /* ── Home ──────────────────────────────────────────────── */
+  function renderHome() {
+    document.getElementById('level-grid').innerHTML = LEVELS.map(lv => {
+      const p      = getProg(lv.id);
+      const locked = !isUnlocked(lv.id);
+      const best   = Math.max(p.listen, p.quiz);
+      return `
+        <div class="level-card ${locked ? 'locked' : ''}"
+             onclick="${locked
+               ? "showToast('🔒 Voltooi eerst het vorige niveau')"
+               : `selectLevel(${lv.id})`}">
+          <div class="lc-num">${lv.id}</div>
+          <div class="lc-range">${lv.nums}</div>
+          <div class="lc-stars">${locked ? '🔒' : starsHtml(best)}</div>
+          ${p.learn ? '<div class="lc-badge">Geleerd</div>' : ''}
+        </div>`;
+    }).join('');
+    showScreen('home');
+  }
+
+  function showHome() { renderHome(); }
+
+  /* ── Mode select ───────────────────────────────────────── */
+  function selectLevel(id) {
+    currentLevel = LEVELS.find(l => l.id === id);
+    const p = getProg(id);
+    document.getElementById('mode-title').textContent   = currentLevel.label;
+    document.getElementById('mode-range').textContent   = `Getallen ${currentLevel.nums}`;
+    document.getElementById('mi-stars-listen').innerHTML = starsHtml(p.listen);
+    document.getElementById('mi-stars-quiz').innerHTML   = starsHtml(p.quiz);
+    showScreen('mode');
+  }
+
+  function startMode(mode) {
+    if (mode === 'learn') startLearn();
+    else startActivity(mode);
+  }
+
+  /* ── LEARN ─────────────────────────────────────────────── */
+  function startLearn() {
+    learnItems = getLevelItems();
+    learnIdx   = 0;
+    buildDots();
+    renderCard(true);
+    showScreen('learn');
+  }
+
+  function buildDots() {
+    document.getElementById('dot-row').innerHTML =
+      learnItems.map((_, i) =>
+        `<div class="dot${i === 0 ? ' current' : ''}"></div>`
+      ).join('');
+  }
+
+  function renderCard(autoSpeak) {
+    const item = learnItems[learnIdx];
+    document.getElementById('fc-num').textContent   = item.num;
+    document.getElementById('fc-dutch').textContent = item.dutch;
+    document.getElementById('fc-en').textContent    = item.english;
+    document.getElementById('fc-vi').textContent    = item.vietnamese;
+    document.getElementById('learn-ctr').textContent = `${learnIdx + 1} / ${learnItems.length}`;
+    document.getElementById('btn-prev').disabled = learnIdx === 0;
+    document.getElementById('btn-next').disabled = learnIdx === learnItems.length - 1;
+
+    // Re-trigger pop animation
+    const card = document.getElementById('flash-card');
+    card.style.animation = 'none';
+    requestAnimationFrame(() => { card.style.animation = ''; });
+
+    // Dots
+    document.querySelectorAll('.dot').forEach((d, i) => {
+      d.className = 'dot';
+      if (i < learnIdx)  d.classList.add('seen');
+      if (i === learnIdx) d.classList.add('current');
+    });
+
+    if (autoSpeak) speak(item.dutch);
+  }
+
+  function learnStep(dir) {
+    const next = learnIdx + dir;
+    if (next < 0 || next >= learnItems.length) return;
+    learnIdx = next;
+    renderCard(true);
+  }
+
+  function speakCurrent() { speak(learnItems[learnIdx].dutch); }
+
+  function finishLearn() {
+    const id = currentLevel.id;
+    if (!progress[id]) progress[id] = { learn:false, listen:0, quiz:0 };
+    progress[id].learn = true;
+    saveProgress();
+    renderHome();
+    showToast(`✅ Level ${id} geleerd! Probeer nu Quiz of Luisteren.`);
+  }
+
+  /* ── Swipe on flash card ───────────────────────────────── */
+  (() => {
+    let sx = 0;
+    const card = document.getElementById('flash-card');
+    card.addEventListener('touchstart', e => { sx = e.touches[0].clientX; }, { passive:true });
+    card.addEventListener('touchend',   e => {
+      const dx = e.changedTouches[0].clientX - sx;
+      if (Math.abs(dx) > 55) learnStep(dx < 0 ? 1 : -1);
+    });
+  })();
+
+  /* ── ACTIVITY ──────────────────────────────────────────── */
+  function startActivity(mode) {
+    currentMode = mode;
+    const items = getLevelItems();
+    actItems    = shuffle(items).slice(0, Math.min(ACT_COUNT, items.length));
+    actIdx = actCorrect = 0;
+    actBusy = false;
+    renderQuestion();
+    showScreen('activity');
+  }
+
+  function renderQuestion() {
+    if (actIdx >= actItems.length) { showResult(); return; }
+
+    const item  = actItems[actIdx];
+    const allL  = getLevelItems();
+    const pool  = shuffle(allL.filter(x => x.num !== item.num));
+    const opts  = shuffle([item, ...pool.slice(0, 3)]);
+
+    document.getElementById('act-score').textContent = `${actCorrect} / ${actIdx}`;
+    document.getElementById('pbar').style.width      = `${(actIdx / actItems.length) * 100}%`;
+    document.getElementById('act-qnum').textContent  = `Vraag ${actIdx + 1}`;
+
+    const prompt = document.getElementById('act-prompt');
+    const grid   = document.getElementById('choices-grid');
+    actBusy      = false;
+
+    if (currentMode === 'listen') {
+      prompt.innerHTML = `
+        <div class="listen-box">
+          <div class="listen-lbl">Welk getal hoor je?</div>
+          <button class="btn-play" data-word="${item.dutch}" onclick="speak(this.dataset.word)">🔊</button>
+        </div>`;
+      grid.innerHTML = opts.map(o =>
+        `<button class="choice" data-correct="${o.num === item.num}" onclick="checkAnswer(this)">${o.num}</button>`
+      ).join('');
+      setTimeout(() => speak(item.dutch), 350);
+    } else {
+      prompt.innerHTML = `<div class="big-num">${item.num}</div>`;
+      grid.innerHTML = opts.map(o =>
+        `<button class="choice" data-correct="${o.num === item.num}" onclick="checkAnswer(this)">${o.dutch}</button>`
+      ).join('');
+    }
+  }
+
+  function checkAnswer(btn) {
+    if (actBusy) return;
+    actBusy = true;
+
+    const correct = btn.dataset.correct === 'true';
+    document.querySelectorAll('.choice').forEach(b => { b.disabled = true; });
+
+    if (correct) {
+      btn.classList.add('correct');
+      actCorrect++;
+    } else {
+      btn.classList.add('wrong');
+      document.querySelectorAll('.choice').forEach(b => {
+        if (b.dataset.correct === 'true') b.classList.add('reveal');
+      });
+    }
+
+    setTimeout(() => { actIdx++; renderQuestion(); }, 1100);
+  }
+
+  function confirmStop() {
+    if (confirm('Stoppen? De huidige voortgang gaat verloren.')) showScreen('mode');
+  }
+
+  /* ── Result ────────────────────────────────────────────── */
+  function showResult() {
+    const total = actItems.length;
+    const pct   = actCorrect / total;
+    const stars = pct >= .9 ? 3 : pct >= .7 ? 2 : pct >= .4 ? 1 : 0;
+
+    // Persist best score
+    const id = currentLevel.id;
+    if (!progress[id]) progress[id] = { learn:false, listen:0, quiz:0 };
+    if (stars > progress[id][currentMode]) {
+      progress[id][currentMode] = stars;
+      saveProgress();
+    }
+
+    const EMOJIS = ['😅','👍','😊','🎉'];
+    const MSGS   = [
+      'Niet opgeven! Probeer het nog een keer.',
+      'Goed begin! Nog een keer voor meer sterren.',
+      'Bijna perfect! Nog één meer poging.',
+      'Uitstekend! Je beheerst dit niveau! 🌟',
+    ];
+
+    document.getElementById('res-emoji').textContent = EMOJIS[stars];
+    document.getElementById('res-score').textContent = `${actCorrect} / ${total} goed`;
+    document.getElementById('res-stars').innerHTML   = starsHtml(stars);
+    document.getElementById('res-msg').textContent   = MSGS[stars];
+    showScreen('result');
+
+    if (stars >= 2) setTimeout(launchConfetti, 180);
+  }
+
+  function retryActivity() { startActivity(currentMode); }
+
+  /* ── TTS ───────────────────────────────────────────────── */
+  function speak(text, lang = 'nl-NL') {
+    if (!window.speechSynthesis) return;
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = lang; u.rate = 0.85;
+    speechSynthesis.speak(u);
+  }
+
+  /* ── Keyboard shortcuts ────────────────────────────────── */
+  document.addEventListener('keydown', e => {
+    const active = document.querySelector('.screen.active');
+    if (!active) return;
+    if (active.id === 'screen-learn') {
+      if (e.key === 'ArrowLeft')  learnStep(-1);
+      if (e.key === 'ArrowRight') learnStep(1);
+      if (e.key === ' ') { e.preventDefault(); speakCurrent(); }
+    }
+  });
+
+  /* ── Confetti ──────────────────────────────────────────── */
+  function launchConfetti() {
+    const root = document.createElement('div');
+    root.className = 'confetti-root';
+    const cols = ['#e85d04','#ffd166','#06d6a0','#118ab2','#ef476f','#9b5de5'];
+    for (let i = 0; i < 55; i++) {
+      const p    = document.createElement('div');
+      const size = 5 + Math.random() * 7;
+      p.className = 'cp';
+      p.style.cssText = `
+        left:${Math.random()*100}%;
+        background:${cols[i % cols.length]};
+        width:${size}px; height:${size}px;
+        border-radius:${Math.random() > .5 ? '50%' : '2px'};
+        animation-duration:${.9 + Math.random() * 1.3}s;
+        animation-delay:${Math.random() * .45}s;
+      `;
+      root.appendChild(p);
+    }
+    document.body.appendChild(root);
+    setTimeout(() => root.remove(), 3200);
+  }
+
+  /* ── Toast ─────────────────────────────────────────────── */
+  function showToast(msg) {
+    let t = document.getElementById('_toast');
+    if (!t) { t = document.createElement('div'); t.id = '_toast'; document.body.appendChild(t); }
+    t.textContent = msg;
+    t.classList.add('show');
+    clearTimeout(t._t);
+    t._t = setTimeout(() => t.classList.remove('show'), 3200);
+  }
+
+  init();
+  </script>
 </body>
 </html>

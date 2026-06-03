@@ -23,6 +23,7 @@ const _SYNC_KEYS = {
   verbs:   'nl_verbs_v3',            // verb trainer stats
   game:    'nl_game_progress_v1',    // game seen-words per chapter
   vol:     'nl_vocab_vol',           // TTS volume { v: 0-100, t: timestamp }
+  num:     'nl_num_progress',        // number learning level/stars progress
 };
 
 // ── Runtime state ─────────────────────────────────────────────────────────
