@@ -39,7 +39,11 @@
           <div class="section-label">Actief pakket</div>
           <div id="pkg-selector">
             <select id="pkg-select" onchange="selectPackage(this.value)"></select>
-            <button class="btn-manage" onclick="openPkgModal()">⚙️ Beheer</button>
+            <button class="btn-manage" onclick="openPkgModal()" title="Pakketten beheren">⚙️</button>
+            <button class="btn-share" onclick="sharePkg()" title="Deel dit pakket via link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+              Deel
+            </button>
           </div>
           <button id="spin-btn" onclick="spin()">🎲 Draaien!</button>
         </div>
@@ -123,6 +127,58 @@
             <button onclick="cancelEdit()">Annuleren</button>
             <button class="primary" onclick="saveEdit()">✓ Opslaan</button>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Share Modal ──────────────────────────────────────── -->
+  <div id="share-modal" class="modal-overlay hidden">
+    <div class="modal-panel share-panel">
+      <div class="modal-topbar">
+        <h3>📤 Deel pakket</h3>
+        <button class="btn-close" onclick="closeShareModal()">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="share-pkg-name" id="share-pkg-name"></div>
+        <p class="share-hint">Stuur deze link naar iemand anders. Ze kunnen het pakket direct importeren.</p>
+        <div class="share-url-row">
+          <input id="share-url-input" readonly>
+          <button onclick="copyShareUrl()">📋 Kopieer</button>
+        </div>
+        <div class="share-methods">
+          <button onclick="shareViaWhatsApp()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.998 2C6.478 2 2 6.478 2 11.998c0 1.76.463 3.472 1.338 4.975L2 22l5.177-1.312A9.953 9.953 0 0011.998 22C17.518 22 22 17.522 22 12.002 22 6.478 17.518 2 11.998 2z"/></svg>
+            WhatsApp
+          </button>
+          <button onclick="shareViaEmail()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            E-mail
+          </button>
+          <button onclick="shareViaNative()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+            Meer
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Import Modal ───────────────────────────────────────── -->
+  <div id="import-modal" class="modal-overlay hidden">
+    <div class="modal-panel share-panel">
+      <div class="modal-topbar">
+        <h3>📦 Pakket ontvangen!</h3>
+      </div>
+      <div class="modal-body">
+        <div class="import-pkg-info">
+          <div class="import-pkg-name" id="import-pkg-name"></div>
+          <div class="import-pkg-count" id="import-pkg-count"></div>
+        </div>
+        <div class="import-preview" id="import-preview"></div>
+        <div class="import-actions">
+          <button onclick="cancelImport()">Annuleer</button>
+          <button class="primary" onclick="confirmImport()">✓ Importeer pakket</button>
         </div>
       </div>
     </div>
