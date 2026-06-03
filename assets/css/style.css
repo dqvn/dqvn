@@ -13,7 +13,7 @@ body {
 body {
     display: flex;
     flex-direction: column;   /* header → .container → footer stacked vertically */
-    background-image: url('https://dqvn.github.io/dqvn/assets/bg1.jpg');
+    background-image: url('https://dqvn.github.io/dqvn/assets/img/bg1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
