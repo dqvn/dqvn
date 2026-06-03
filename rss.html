@@ -227,6 +227,10 @@
     padding: 13px 16px 15px;
     display: flex; flex-direction: column; gap: 11px;
   }
+  .art-body-title {
+    font-size: calc(var(--art-fs) * 1.08); font-weight: 800; line-height: 1.35;
+    color: var(--text);
+  }
   .art-desc {
     font-size: calc(var(--art-fs) * .9); line-height: 1.65;
     color: rgba(241,245,249,.7);
@@ -604,6 +608,7 @@
         </div>
         <div class="art-body">
           <div class="art-body-inner">
+            <p class="art-body-title">${escH(a.title || '')}</p>
             ${desc ? `<p class="art-desc">${escH(desc)}${desc.length >= 280 ? '…' : ''}</p>` : ''}
             <div class="art-actions">
               <button class="art-btn" onclick="speakArt(${i})" title="Hoor de tekst in het Nederlands">
