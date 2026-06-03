@@ -24,6 +24,7 @@ const _SYNC_KEYS = {
   game:    'nl_game_progress_v1',    // game seen-words per chapter
   vol:     'nl_vocab_vol',           // TTS volume { v: 0-100, t: timestamp }
   num:     'nl_num_progress',        // number learning level/stars progress
+  wheel:   'nl_wheel_pkgs',          // wheel-of-names question packages
 };
 
 // ── Runtime state ─────────────────────────────────────────────────────────
@@ -419,6 +420,8 @@ const _PROGRESS_KEY_SET = new Set([
   _SYNC_KEYS.klanken,
   _SYNC_KEYS.verbs,
   _SYNC_KEYS.game,
+  _SYNC_KEYS.num,
+  _SYNC_KEYS.wheel,
 ]);
 
 // 1. After a study session ends.
