@@ -499,9 +499,186 @@ body {
 /* ── Package selector ────────────────────────────────── */
 #pkg-selector {
     display: flex;
-    gap: 8px;
+    gap: 6px;
     align-items: center;
 }
+
+.btn-share {
+    background: var(--card);
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    color: var(--muted);
+    padding: 9px 11px;
+    font-size: .78rem;
+    font-weight: 800;
+    cursor: pointer;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all .18s;
+    white-space: nowrap;
+}
+
+.btn-share:hover {
+    border-color: var(--teal);
+    color: var(--teal);
+    background: rgba(6, 214, 160, .08);
+}
+
+/* ── Share modal specifics ───────────────────────────── */
+.share-panel { max-width: 480px; }
+
+.share-pkg-name {
+    font-size: 1rem;
+    font-weight: 900;
+    margin-bottom: 6px;
+}
+
+.share-hint {
+    font-size: .82rem;
+    color: var(--muted);
+    margin-bottom: 14px;
+    line-height: 1.45;
+}
+
+.share-url-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.share-url-row input {
+    flex: 1;
+    background: var(--card);
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+    padding: 10px 12px;
+    font-family: monospace;
+    font-size: .72rem;
+    outline: none;
+    min-width: 0;
+}
+
+.share-url-row button {
+    background: linear-gradient(135deg, var(--orange), var(--ord));
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 16px;
+    font-size: .85rem;
+    font-weight: 800;
+    cursor: pointer;
+    font-family: inherit;
+    white-space: nowrap;
+    transition: opacity .18s;
+}
+
+.share-url-row button:hover { opacity: .85; }
+
+.share-methods {
+    display: flex;
+    gap: 8px;
+}
+
+.share-methods button {
+    flex: 1;
+    background: var(--card);
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    color: var(--muted);
+    padding: 10px 8px;
+    font-size: .8rem;
+    font-weight: 800;
+    cursor: pointer;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: all .18s;
+}
+
+.share-methods button:hover {
+    border-color: var(--orange);
+    color: var(--orange);
+    background: rgba(232, 93, 4, .08);
+}
+
+/* ── Import modal specifics ──────────────────────────── */
+.import-pkg-info {
+    background: rgba(6, 214, 160, .07);
+    border: 1.5px solid rgba(6, 214, 160, .25);
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+}
+
+.import-pkg-name {
+    font-size: 1.05rem;
+    font-weight: 900;
+    color: var(--teal);
+    margin-bottom: 3px;
+}
+
+.import-pkg-count {
+    font-size: .8rem;
+    color: var(--muted);
+}
+
+.import-preview {
+    background: var(--card);
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.import-item {
+    font-size: .88rem;
+    padding: 3px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .04);
+}
+
+.import-item:last-child { border-bottom: none; }
+
+.import-more {
+    font-size: .78rem;
+    color: var(--muted);
+    margin-top: 8px;
+    font-style: italic;
+}
+
+.import-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.import-actions button {
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    background: var(--card);
+    color: var(--text);
+    padding: 10px 20px;
+    font-size: .9rem;
+    font-weight: 800;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all .18s;
+}
+
+.import-actions button.primary {
+    background: linear-gradient(135deg, var(--teal), #059669);
+    border-color: transparent;
+    color: white;
+    box-shadow: 0 4px 16px rgba(6, 214, 160, .3);
+}
+
+.import-actions button:hover { transform: translateY(-1px); }
 
 #pkg-select {
     flex: 1;

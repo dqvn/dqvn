@@ -528,6 +528,123 @@ function deletePackage(id) {
     showToast('Pakket verwijderd');
 }
 
+/* ── Share / Import ─────────────────────────────────────── */
+let _pendingImport = null;
+
+// URL-safe base64 encode (handles full UTF-8)
+function _encodePkg(pkg) {
+    const json  = JSON.stringify({ name: pkg.name, items: pkg.items });
+    const bytes = new TextEncoder().encode(json);
+    let bin = '';
+    bytes.forEach(b => bin += String.fromCharCode(b));
+    return btoa(bin).replace(/\+/g, '-').replace(/\//g, '_').replace(/=/g, '');
+}
+
+function _decodePkg(str) {
+    const b64    = str.replace(/-/g, '+').replace(/_/g, '/');
+    const padded = b64 + '='.repeat((4 - b64.length % 4) % 4);
+    const bin    = atob(padded);
+    const bytes  = Uint8Array.from(bin, c => c.charCodeAt(0));
+    return JSON.parse(new TextDecoder().decode(bytes));
+}
+
+function sharePkg() {
+    const pkg = getActivePkg();
+    if (!pkg || pkg.items.length === 0) { showToast('Pakket is leeg — voeg eerst items toe'); return; }
+    const url = `${location.origin}${location.pathname}?pkg=${_encodePkg(pkg)}`;
+    document.getElementById('share-pkg-name').textContent = pkg.name;
+    const inp = document.getElementById('share-url-input');
+    inp.value = url;
+    document.getElementById('share-modal').classList.remove('hidden');
+    setTimeout(() => { inp.select(); }, 120);
+}
+
+function closeShareModal() {
+    document.getElementById('share-modal').classList.add('hidden');
+}
+
+function copyShareUrl() {
+    const url = document.getElementById('share-url-input').value;
+    navigator.clipboard?.writeText(url)
+        .then(() => showToast('📋 Link gekopieerd!'))
+        .catch(() => {
+            const inp = document.getElementById('share-url-input');
+            inp.select(); document.execCommand('copy');
+            showToast('📋 Link gekopieerd!');
+        });
+}
+
+function shareViaWhatsApp() {
+    const url = document.getElementById('share-url-input').value;
+    window.open(`https://wa.me/?text=${encodeURIComponent(url)}`, '_blank');
+}
+
+function shareViaEmail() {
+    const pkg  = getActivePkg();
+    const url  = document.getElementById('share-url-input').value;
+    const subj = encodeURIComponent(`Draairad pakket: ${pkg?.name ?? ''}`);
+    const body = encodeURIComponent(`Open deze link om het pakket te importeren:\n${url}`);
+    location.href = `mailto:?subject=${subj}&body=${body}`;
+}
+
+function shareViaNative() {
+    const pkg = getActivePkg();
+    const url = document.getElementById('share-url-input').value;
+    if (navigator.share) {
+        navigator.share({ title: `Draairad: ${pkg?.name ?? ''}`, url }).catch(() => {});
+    } else {
+        copyShareUrl();
+    }
+}
+
+function _checkImportParam() {
+    const encoded = new URLSearchParams(location.search).get('pkg');
+    if (!encoded) return;
+
+    // Remove param immediately so refreshing doesn't re-prompt
+    history.replaceState(null, '', location.pathname);
+
+    try {
+        const data = _decodePkg(encoded);
+        if (!data?.name || !Array.isArray(data.items) || data.items.length === 0) return;
+
+        _pendingImport = { name: data.name, items: data.items.slice(0, MAX_ITEMS) };
+
+        document.getElementById('import-pkg-name').textContent  = data.name;
+        document.getElementById('import-pkg-count').textContent =
+            `${_pendingImport.items.length} item${_pendingImport.items.length !== 1 ? 's' : ''}`;
+
+        const preview = _pendingImport.items.slice(0, 6);
+        document.getElementById('import-preview').innerHTML =
+            preview.map(t => `<div class="import-item">• ${_esc(t)}</div>`).join('') +
+            (data.items.length > 6
+                ? `<div class="import-more">…en ${data.items.length - 6} meer</div>`
+                : '');
+
+        document.getElementById('import-modal').classList.remove('hidden');
+    } catch { /* malformed URL param — silently ignore */ }
+}
+
+function confirmImport() {
+    if (!_pendingImport) return;
+    const pkg = { id: 'pkg_' + Date.now(), name: _pendingImport.name, items: _pendingImport.items };
+    packages.push(pkg);
+    activePkgId = pkg.id;
+    try { localStorage.setItem(ACTIVE_KEY, activePkgId); } catch {}
+    savePackages();
+    renderPkgSelect();
+    renderItemsList();
+    drawWheel();
+    _pendingImport = null;
+    document.getElementById('import-modal').classList.add('hidden');
+    showToast(`✓ "${pkg.name}" geïmporteerd! (${pkg.items.length} items)`);
+}
+
+function cancelImport() {
+    _pendingImport = null;
+    document.getElementById('import-modal').classList.add('hidden');
+}
+
 /* ── Persistence ────────────────────────────────────────── */
 function savePackages() {
     try { localStorage.setItem(PKGS_KEY, JSON.stringify(packages)); } catch { }
@@ -561,6 +678,7 @@ function init() {
     renderHistory();
 
     document.fonts.ready.then(() => drawWheel());
+    _checkImportParam();
 }
 
 /* ── TTS ─────────────────────────────────────────────────── */
@@ -665,7 +783,7 @@ function _updateSyncNavBtn() {
 document.addEventListener('keydown', e => {
     if (e.target.closest('input, textarea, select')) return;
     if (e.code === 'Space') { e.preventDefault(); spin(); }
-    if (e.key === 'Escape') { hideResult(); closePkgModal(); closeSyncDrawer(); }
+    if (e.key === 'Escape') { hideResult(); closePkgModal(); closeSyncDrawer(); closeShareModal(); }
 });
 
 /* ── Backdrop clicks close their respective modals ───────── */
@@ -674,6 +792,9 @@ document.getElementById('result-modal').addEventListener('click', e => {
 });
 document.getElementById('pkg-modal').addEventListener('click', e => {
     if (e.target === e.currentTarget) closePkgModal();
+});
+document.getElementById('share-modal').addEventListener('click', e => {
+    if (e.target === e.currentTarget) closeShareModal();
 });
 
 init();
