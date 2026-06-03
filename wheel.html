@@ -26,14 +26,10 @@
 
       <!-- ── Wheel column ─────────────────────────────── -->
       <div id="wheel-col">
-
         <div id="wheel-wrap">
           <div id="wheel-pointer"></div>
           <canvas id="wheel-canvas" onclick="spin()" title="Klik om te draaien!"></canvas>
         </div>
-
-        <button id="spin-btn" onclick="spin()">🎲 Draaien!</button>
-
       </div>
 
       <!-- ── List column ──────────────────────────────── -->
@@ -45,6 +41,7 @@
             <select id="pkg-select" onchange="selectPackage(this.value)"></select>
             <button class="btn-manage" onclick="openPkgModal()">⚙️ Beheer</button>
           </div>
+          <button id="spin-btn" onclick="spin()">🎲 Draaien!</button>
         </div>
 
         <div>
@@ -77,13 +74,17 @@
       <div class="rcard-inner">
         <div class="rcard-glow" id="rcard-glow"></div>
         <div class="rcard-label">✨ &nbsp; Gekozen! &nbsp; ✨</div>
-        <div id="rcard-text"></div>
-        <div class="rcard-btns">
-          <button class="rbtn rbtn-speak"  onclick="speakResult()">
-            <div class="rbtn-icon">🔊</div>
-            <div class="rbtn-lbl">Herhaal</div>
-            <div class="rbtn-desc">Hoor de uitspraak opnieuw</div>
+        <div class="rcard-text-row">
+          <button class="rcard-speak-icon" onclick="speakResult()" title="Hoor uitspraak">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+              <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+            </svg>
           </button>
+          <div id="rcard-text"></div>
+        </div>
+        <div class="rcard-btns">
           <button class="rbtn rbtn-remove" onclick="removeWinner()">
             <div class="rbtn-icon">✕</div>
             <div class="rbtn-lbl">Verwijder</div>

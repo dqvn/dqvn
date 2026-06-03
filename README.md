@@ -20,7 +20,8 @@ A static web app for learning Dutch vocabulary and dialogues, deployed via GitHu
 | `stories.html` | Dutch Storytime — interactive story reader (kids/animated, main entry) |
 | `stories2.html` | Korte Verhalen — 10 Dutch beginner short stories; paragraph TTS, vocabulary chips (click-to-hear), English translation toggle, completion tracking |
 | `stories1–5.html` | Individual story lesson pages |
-| `number.html` | Dutch number practice |
+| `number.html` | Dutch Numbers Game — 5-level kids game (1–100); Learn / Listen / Quiz modes; star progress + cloud sync |
+| `wheel.html` | Wheel of Names — spinning question-picker; user-managed packages; TTS on result; cloud sync |
 | `game.html` | Standalone legacy vocabulary quiz |
 | `demo.html` | Scratch / demo page |
 
@@ -28,8 +29,9 @@ A static web app for learning Dutch vocabulary and dialogues, deployed via GitHu
 
 ```
 index.html (portal)
-  └── tool cards → startnl.html, vanstart.html, kids.html, stories.html,
-                   stories2.html, klanken.html, dialogues.html,
+  └── tool cards → startnl.html, vanstart.html, kids.html, number.html,
+                   stories.html, stories2.html,
+                   klanken.html, dialogues.html, wheel.html,
                    grammar.html, verbs.html
   └── "← Terug naar Portaal" in all tool pages' sidebar / launcher overlay
 
@@ -48,7 +50,7 @@ Single-page hub with inline CSS + JS (no external scripts except `sync.js`).
 | Sticky header | Dutch-flag emblem + "Leer Nederlands" brand + compact auth pill (sync.js) |
 | Hero | `bg2.jpg` photo background (warm Dutch dusk scene) with parallax scrim; personalized greeting; stats strip |
 | Voortgang | 4 progress cards: Vocabulaire, Klanken, Werkwoorden, Dialogen — live from localStorage |
-| Leertools | 9 tool cards grouped by category: 📚 Woordenschat / 🎙️ Uitspreken / 📖 Grammatica |
+| Leertools | 11 tool cards grouped by category: 📚 Woordenschat (6) / 🎙️ Uitspreken (3) / 📖 Grammatica (2) |
 | Instellingen | Volume slider (`nl_vocab_vol`) + TTS speed slider (`nl_tts_rate`) |
 | Binnenkort | 4 placeholder cards for future features |
 | Waarom aanmelden? | Two pricing-plan-style cards: guest (features available) vs account (sync + future features + CTA) |
@@ -89,9 +91,10 @@ All shared files live under `assets/`, organised into three subdirectories:
 ```
 assets/
   css/   style.css  sync.css  dlg.css  klanken.css  kids.css  verbs.css  gstyles.css
+         wheel.css
   js/    common.js  sync.js  ttsscript.js  ttsvanstartscript.js  tts4kscript.js
          game.js  flashcard.js  dlgscript.js  kidsscript.js  klanken.js
-         verbs.js  gapp.js  NoSleep.min.js
+         verbs.js  gapp.js  wheel.js  NoSleep.min.js
   img/   bg.jpg  bg1.jpg  bg2.jpg  dutch.ico  no-image.jpg
 ```
 
@@ -123,6 +126,8 @@ All HTML files reference these subdirectory paths (e.g. `assets/css/style.css`, 
 | `assets/css/kids.css` | Styles for `kids.html` |
 | `assets/css/klanken.css` | Styles for `klanken.html` |
 | `assets/css/gstyles.css` | Styles for the Markdown chapter SPA |
+| `assets/css/wheel.css` | Styles for `wheel.html` — dark theme, canvas wrap, spin button, result modal, package manager modal, sync drawer |
+| `assets/js/wheel.js` | Wheel game logic — canvas drawing, spin animation (ease-out quartic), package CRUD, TTS, tick sound (Web Audio), confetti, sync drawer, MutationObserver avatar update |
 
 ---
 
@@ -167,6 +172,9 @@ Google Cloud Console: add your GitHub Pages origin to **Authorized JavaScript or
 | `klanken-v1` | Phonetics completion flags | Union — a completed sound is never un-completed |
 | `nl_verbs_v3` | Verb trainer stats per verb | Per-verb: `max(seen)` + `max(correct)`; max streak |
 | `nl_game_progress_v1` | Game seen-words per chapter | Union of word arrays per chapter |
+| `nl_num_progress` | Number game level/stars progress | Per-level: `max(stars)` per mode; `learn` flag unioned |
+| `nl_vocab_vol` | TTS volume `{ v: 0–100, t: timestamp }` | Most recent timestamp wins |
+| `nl_wheel_pkgs` | Wheel question packages array | Last-write wins (full blob replace) |
 
 Keys intentionally **not** synced (device-specific): `nl_tts_voice_v1`, `nl_tts_rate`, `nl_vocab_fs`, `nl_fc_word_size`, `nl_verbs_theme`, `nl_verbs_font`, `klanken-voice`, `klanken-vol`, `kids_tts_speed`. Cache keys (`nl_dlg_*`) are also excluded.
 
@@ -200,6 +208,8 @@ Keys intentionally **not** synced (device-specific): `nl_tts_voice_v1`, `nl_tts_
 `dialogues.html`, `kids.html`, `verbs.html` have `class="sidebar-dark"` on `<nav id="sidebar">`.
 
 On `index.html` (portal) the section lives in `#portal-header` — styled as a compact auth pill via inline overrides.
+
+On `wheel.html` the sync section lives inside a **right-side slide-in drawer** (`#sync-drawer`). A 36×36 px circular button in the top-right nav opens/closes it; the button swaps to the user's Google avatar (via `MutationObserver`) once signed in. The drawer uses `.sidebar-dark` context so sync card styling matches `dialogues.html`.
 
 **Signed out:**
 ```
@@ -695,6 +705,94 @@ Single file. See Klanken section above for shape.
 ### Kids — `data/kids/lxx.json`
 `l01`–`l05` currently. See Kids section above for shape.
 Add new lessons by creating the next `lxx.json`; the app discovers them automatically.
+
+---
+
+## Number Learning Game — `number.html` / (inline JS)
+
+Kids-oriented Dutch number learning app. Data source: `data/vocabularies/ch00.json` (101 entries, numbers 1–101 with English + Vietnamese translations).
+
+### Levels
+
+| Level | Range | Unlock condition |
+|---|---|---|
+| 1 | 1 – 10 | Always open |
+| 2 | 11 – 20 | After Level 1 visited |
+| 3 | 21 – 30 | After Level 2 visited |
+| 4 | 31 – 50 | After Level 3 visited |
+| 5 | 51 – 100 | After Level 4 visited |
+
+### Modes per level
+
+| Mode | Description |
+|---|---|
+| 📚 Leren | Flashcard carousel — numeral → Dutch word → English + Vietnamese; auto TTS; swipe or arrow keys |
+| 👂 Luisteren | Hear Dutch TTS, tap the correct numeral from 4 choices |
+| ✏️ Quiz | See the numeral, pick the Dutch word from 4 choices |
+
+### Scoring
+≥ 90% = ⭐⭐⭐ · ≥ 70% = ⭐⭐ · ≥ 40% = ⭐ · below = retry. Best score per mode persisted. Confetti on ≥ 2 stars.
+
+### localStorage keys
+| Key | Content |
+|---|---|
+| `nl_num_progress` | `{ "1": { learn: bool, listen: 0–3, quiz: 0–3 }, … }` — one entry per level |
+
+---
+
+## Wheel of Names — `wheel.html` / `assets/js/wheel.js` / `assets/css/wheel.css`
+
+Classroom spinning-wheel question-picker. Teacher spins; a random item from the active package is selected, spoken aloud via TTS, and shown in a full-screen celebration popup.
+
+### UI layout
+```
+body
+├── #top-nav         — back link + title + sync avatar button (opens #sync-drawer)
+├── #app
+│   └── #main-layout (flex row on desktop)
+│       ├── #wheel-col (flex:1)
+│       │   └── #wheel-wrap — canvas + CSS triangle pointer
+│       └── #list-col (320 px fixed)
+│           ├── Actief pakket — package <select> + ⚙️ Beheer button
+│           ├── #spin-btn — 🎲 Draaien! (full column width)
+│           ├── Items list — colour-coded chips, inline add/delete
+│           └── Recente picks — last 8 spun items with timestamps
+├── #result-modal    — full-screen celebration overlay (shown after spin)
+├── #pkg-modal       — package manager overlay
+└── #sync-drawer     — right-side slide-in panel for sync/login
+```
+
+### Canvas wheel
+- Drawn with Canvas 2D API; segments coloured from 8-colour palette cycling
+- Pointer: CSS `border-top` triangle fixed at 12 o'clock above canvas
+- Spin: ease-out quartic, 4–5.5 s, 6–12 full rotations; winner = segment under `−π/2` pointer angle
+- Tick sound via Web Audio API (short tone per segment crossing)
+- Scales to fill available viewport: `min(viewportWidth − 320 − 108, viewportHeight − 120)`; recomputes on `resize`
+
+### Result modal
+Shown over the full screen after the wheel stops. Contains:
+- Segment-colour accent bar + ambient glow blob behind text
+- Picked item text (`clamp(1.8rem → 3.4rem)`) coloured to match segment
+- 2×2 button grid: 🔊 Herhaal · ✕ Verwijder · 🎲 Opnieuw · ✓ Klaar
+- Confetti (50 particles) + auto TTS on open
+- Backdrop click or Escape to dismiss
+
+### Package management
+- Packages stored as array in `nl_wheel_pkgs`; active package ID in `nl_wheel_active`
+- Default package: 15 Dutch conversation questions (`Hoe gaat het?`, etc.)
+- ⚙️ Beheer modal: create / edit (name + textarea, one item per line) / delete; max 50 items each
+- Inline add (Enter or + button) and inline delete (hover ×) in the items list
+- Spin history (last 8) stored in `nl_wheel_hist` (local only, not synced)
+
+### localStorage keys
+| Key | Content |
+|---|---|
+| `nl_wheel_pkgs` | `[{ id, name, items[] }]` — all user packages (synced) |
+| `nl_wheel_active` | Active package `id` string (local only) |
+| `nl_wheel_hist` | `[{ text, color, ts }]` — last 8 spun items (local only) |
+
+### Sync drawer
+`#sync-section` lives inside `#sync-drawer` (right-side panel, `transform: translateX(105%)` → `translateX(0)`). A `MutationObserver` on `#sync-section` updates the nav avatar button on login/logout. Context class: `.sidebar-dark`.
 
 ---
 

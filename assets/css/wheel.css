@@ -196,9 +196,8 @@ body {
     flex: 1;
     min-width: 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 18px;
+    justify-content: center;
 }
 
 #list-col {
@@ -253,15 +252,16 @@ body {
     background: linear-gradient(135deg, var(--orange), var(--ord));
     color: white;
     border: none;
-    border-radius: 28px;
-    padding: 16px 44px;
-    font-size: 1.2rem;
+    border-radius: 14px;
+    padding: 15px 20px;
+    font-size: 1.1rem;
     font-weight: 900;
     cursor: pointer;
     font-family: inherit;
     box-shadow: 0 6px 28px rgba(232, 93, 4, .5);
     transition: transform .2s, box-shadow .2s, opacity .2s;
-    min-width: 210px;
+    width: 100%;
+    margin-top: 10px;
     letter-spacing: .5px;
 }
 
@@ -311,7 +311,7 @@ body {
     background: var(--bg2);
     border-radius: 32px;
     width: 100%;
-    max-width: 620px;
+    max-width: clamp(560px, 82vw, 960px);
     position: relative;
     overflow: hidden;
     animation: rcPop .48s cubic-bezier(.34, 1.56, .64, 1);
@@ -337,7 +337,7 @@ body {
 }
 
 .rcard-inner {
-    padding: 36px 48px 44px;
+    padding: 40px 64px 52px;
     text-align: center;
     position: relative;
 }
@@ -368,24 +368,61 @@ body {
     margin-bottom: 22px;
 }
 
+/* Speaker icon + text in one flex row */
+.rcard-text-row {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 38px;
+}
+
+.rcard-speak-icon {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, .16);
+    background: rgba(255, 255, 255, .07);
+    color: rgba(255, 255, 255, .75);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .2s, border-color .2s, transform .15s, color .2s;
+}
+
+.rcard-speak-icon:hover {
+    background: rgba(255, 255, 255, .16);
+    border-color: rgba(255, 255, 255, .35);
+    color: #fff;
+    transform: scale(1.12);
+}
+
+.rcard-speak-icon:active {
+    transform: scale(.94);
+}
+
 #rcard-text {
     position: relative;
     z-index: 1;
     font-size: clamp(1.8rem, 5vw, 3.4rem);
     font-weight: 900;
     line-height: 1.2;
-    margin-bottom: 38px;
     word-break: break-word;
     letter-spacing: -.01em;
+    text-align: left;
 }
 
-/* 2 × 2 action grid */
+/* 3-button single row */
 .rcard-btns {
     position: relative;
     z-index: 1;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
 }
 
 .rbtn {
@@ -431,12 +468,6 @@ body {
     text-align: center;
 }
 
-.rbtn-speak {
-    color: #60a5fa;
-    border-color: rgba(96, 165, 250, .3);
-    background: rgba(96, 165, 250, .07);
-}
-
 .rbtn-remove {
     color: var(--red);
     border-color: rgba(239, 71, 111, .3);
@@ -461,17 +492,9 @@ body {
 }
 
 @media (max-width: 440px) {
-    .rcard-inner {
-        padding: 28px 20px 32px;
-    }
-
-    .rbtn {
-        padding: 14px 8px;
-    }
-
-    #rcard-text {
-        margin-bottom: 28px;
-    }
+    .rcard-inner { padding: 28px 20px 32px; }
+    .rbtn        { padding: 14px 8px; }
+    #rcard-text  { margin-bottom: 28px; }
 }
 
 /* ── Section label ───────────────────────────────────── */
