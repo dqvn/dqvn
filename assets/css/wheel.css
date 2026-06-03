@@ -189,20 +189,21 @@ body {
     display: flex;
     gap: 28px;
     padding-top: 20px;
-    align-items: flex-start;
+    align-items: flex-end;   /* wheel base and controls share a bottom line */
 }
 
 #wheel-col {
     flex: 1;
     min-width: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 
 #list-col {
     width: 320px;
     flex-shrink: 0;
+    align-self: flex-start;  /* controls pinned to top while wheel rises from bottom */
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -231,20 +232,8 @@ body {
 
 #wheel-canvas {
     display: block;
-    border-radius: 50%;
-    box-shadow:
-        0 10px 56px rgba(0, 0, 0, .6),
-        0 0 0 4px rgba(255, 255, 255, .07),
-        0 0 0 8px rgba(255, 255, 255, .03);
     cursor: pointer;
-    transition: box-shadow .3s;
-}
-
-#wheel-canvas:hover:not(.spinning) {
-    box-shadow:
-        0 12px 64px rgba(232, 93, 4, .45),
-        0 0 0 4px rgba(232, 93, 4, .2),
-        0 0 0 8px rgba(232, 93, 4, .08);
+    /* half-wheel needs no border-radius or ring shadow */
 }
 
 /* ── Spin button ─────────────────────────────────────── */

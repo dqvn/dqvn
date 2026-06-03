@@ -52,30 +52,20 @@ const canvas = document.getElementById('wheel-canvas');
 
 function resizeCanvas() {
     const desktop = window.innerWidth > 680;
-    let size;
+    const colW = desktop
+        ? Math.max(320, window.innerWidth - 320 - 28 - 32 - 24)
+        : window.innerWidth - 32;
 
-    if (desktop) {
-        // Width: full viewport minus list col (320), gap (28), side padding (32+24)
-        const availW = window.innerWidth - 320 - 28 - 32 - 24;
-        // Height: viewport minus fixed nav (56), layout padding-top (20), bottom breathing room (44)
-        // Sync section is in the side drawer (not inline), spin button is in the right column —
-        // so the wheel column height is essentially the full viewport content area.
-        const availH = window.innerHeight - 56 - 20 - 44;
-        size = Math.max(Math.min(availW, availH), 300);
-    } else {
-        size = Math.min(window.innerWidth - 32, 380);
-    }
+    const r = Math.floor(colW / 2) - 10;
+    canvas.width  = colW;
+    // 24 px of headroom above the wheel rim for the pointer triangle to overlap
+    canvas.height = r + 24;
 
-    canvas.width = size;
-    canvas.height = size;
-
-    // Scale pointer triangle proportionally to canvas
-    const half = Math.round(size * 0.034);
-    const tall = Math.round(size * 0.068);
+    // Fixed pointer size that reads well at any canvas width
     const ptr = document.getElementById('wheel-pointer');
-    ptr.style.borderLeftWidth = half + 'px';
-    ptr.style.borderRightWidth = half + 'px';
-    ptr.style.borderTopWidth = tall + 'px';
+    ptr.style.borderLeftWidth  = '14px';
+    ptr.style.borderRightWidth = '14px';
+    ptr.style.borderTopWidth   = '26px';
 
     drawWheel();
 }
@@ -83,39 +73,39 @@ function resizeCanvas() {
 function drawWheel() {
     const ctx = canvas.getContext('2d');
     const items = getActiveItems();
-    const n = items.length;
+    const n  = items.length;
     const cx = canvas.width / 2;
-    const cy = canvas.height / 2;
-    const r = Math.min(cx, cy) - 6;
+    // Center sits at the canvas bottom edge — only the top semicircle is visible
+    const cy = canvas.height;
+    const r  = cx - 10;
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     if (n === 0) {
         ctx.beginPath();
-        ctx.arc(cx, cy, r, 0, 2 * Math.PI);
+        ctx.arc(cx, cy, r, Math.PI, 2 * Math.PI);
         ctx.fillStyle = 'rgba(255,255,255,.04)';
         ctx.fill();
         ctx.strokeStyle = 'rgba(255,255,255,.14)';
         ctx.lineWidth = 2;
         ctx.stroke();
         ctx.fillStyle = 'rgba(241,245,249,.35)';
-        ctx.font = `700 14px Nunito, sans-serif`;
+        ctx.font = `700 15px Nunito, sans-serif`;
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
-        ctx.fillText('Voeg items toe →', cx, cy);
+        ctx.fillText('Voeg items toe →', cx, cy - r * 0.5);
+        _drawDecorations(ctx, cx, cy, r);
         return;
     }
 
-    const segArc = (2 * Math.PI) / n;
-    // Base font size by item count; each item can shrink further based on its own length
-    const baseFs = Math.max(8, Math.min(13, 14 - n * 0.15));
-    // Radial width available for text: inner cap (~30px) + left margin to rim edge
+    const segArc  = (2 * Math.PI) / n;
+    const baseFs  = Math.max(8, Math.min(14, 15 - n * 0.15));
     const textMaxW = r - 36;
 
     for (let i = 0; i < n; i++) {
         const startAng = rotation + i * segArc;
-        const endAng = startAng + segArc;
-        const color = COLORS[i % COLORS.length];
+        const endAng   = startAng + segArc;
+        const color    = COLORS[i % COLORS.length];
 
         ctx.beginPath();
         ctx.moveTo(cx, cy);
@@ -123,26 +113,24 @@ function drawWheel() {
         ctx.closePath();
         ctx.fillStyle = color;
         ctx.fill();
-        ctx.strokeStyle = 'rgba(0,0,0,.3)';
+        ctx.strokeStyle = 'rgba(0,0,0,.28)';
         ctx.lineWidth = 1.5;
         ctx.stroke();
 
         ctx.save();
         ctx.translate(cx, cy);
         ctx.rotate(startAng + segArc / 2);
-        ctx.textAlign = 'right';
+        ctx.textAlign    = 'right';
         ctx.textBaseline = 'middle';
-        ctx.fillStyle = '#fff';
-        ctx.shadowColor = 'rgba(0,0,0,.5)';
-        ctx.shadowBlur = 3;
+        ctx.fillStyle    = '#fff';
+        ctx.shadowColor  = 'rgba(0,0,0,.55)';
+        ctx.shadowBlur   = 3;
 
         const text = items[i];
-        // Shrink font for longer items so more characters fit on each line
         const fs = Math.max(7, baseFs - Math.max(0, Math.floor((text.length - 10) / 7)));
         const lh = fs * 1.45;
         ctx.font = `800 ${fs}px Nunito, sans-serif`;
 
-        // Word-wrap: accumulate words until a line exceeds radial width, then break
         const words = text.split(' ');
         const lines = [];
         let cur = '';
@@ -152,7 +140,6 @@ function drawWheel() {
                 cur = test;
             } else {
                 if (cur) lines.push(cur);
-                // Single word wider than slot → truncate it
                 cur = ctx.measureText(w).width > textMaxW
                     ? w.slice(0, Math.max(1, Math.floor(w.length * textMaxW / ctx.measureText(w).width))) + '…'
                     : w;
@@ -160,13 +147,10 @@ function drawWheel() {
         }
         if (cur) lines.push(cur);
 
-        // Max lines that fit in the perpendicular arc height at ~0.55r; cap at 6
-        const arcH = r * 0.55 * segArc;
+        const arcH     = r * 0.55 * segArc;
         const maxLines = Math.min(6, Math.max(1, Math.floor(arcH / lh)));
-        const vis = lines.slice(0, maxLines);
-
-        // Draw lines centered vertically on the segment midline
-        const totalH = (vis.length - 1) * lh;
+        const vis      = lines.slice(0, maxLines);
+        const totalH   = (vis.length - 1) * lh;
         vis.forEach((line, j) => {
             ctx.fillText(line, r - 12, j * lh - totalH / 2);
         });
@@ -174,28 +158,77 @@ function drawWheel() {
         ctx.restore();
     }
 
-    // Rim ring
+    _drawDecorations(ctx, cx, cy, r);
+}
+
+function _drawDecorations(ctx, cx, cy, r) {
+    // Inner rim (top arc only)
     ctx.beginPath();
-    ctx.arc(cx, cy, r, 0, 2 * Math.PI);
-    ctx.strokeStyle = 'rgba(255,255,255,.18)';
+    ctx.arc(cx, cy, r, Math.PI, 2 * Math.PI);
+    ctx.strokeStyle = 'rgba(255,255,255,.22)';
     ctx.lineWidth = 3;
+    ctx.shadowBlur = 0;
     ctx.stroke();
 
-    // Center cap
+    // Outer glow ring
     ctx.beginPath();
-    ctx.arc(cx, cy, 24, 0, 2 * Math.PI);
+    ctx.arc(cx, cy, r + 6, Math.PI, 2 * Math.PI);
+    ctx.strokeStyle = 'rgba(255,209,102,.65)';
+    ctx.lineWidth   = 6;
+    ctx.shadowColor = 'rgba(255,209,102,.8)';
+    ctx.shadowBlur  = 18;
+    ctx.stroke();
+    ctx.shadowBlur  = 0;
+
+    // Second outer ring (deep blue — like reference image border)
+    ctx.beginPath();
+    ctx.arc(cx, cy, r + 14, Math.PI, 2 * Math.PI);
+    ctx.strokeStyle = 'rgba(30,100,200,.55)';
+    ctx.lineWidth   = 8;
+    ctx.shadowColor = 'rgba(60,140,255,.5)';
+    ctx.shadowBlur  = 12;
+    ctx.stroke();
+    ctx.shadowBlur  = 0;
+
+    // LED dots along the outer rim
+    const numLEDs = Math.max(16, Math.floor(r * Math.PI / 18));
+    for (let i = 0; i <= numLEDs; i++) {
+        const a  = Math.PI + (i / numLEDs) * Math.PI;   // π→2π = left→top→right
+        const lx = cx + (r + 22) * Math.cos(a);
+        const ly = cy + (r + 22) * Math.sin(a);
+        if (ly >= cy) continue;   // skip any dot below canvas edge
+
+        const bright = i % 3 === 0;
+        ctx.beginPath();
+        ctx.arc(lx, ly, bright ? 5 : 3.5, 0, 2 * Math.PI);
+        ctx.fillStyle   = bright ? '#ffd166' : 'rgba(255,255,255,.9)';
+        ctx.shadowColor = bright ? '#ffd166' : '#93c5fd';
+        ctx.shadowBlur  = bright ? 12 : 7;
+        ctx.fill();
+    }
+    ctx.shadowBlur = 0;
+
+    // Center hub (top half only — bottom is off-canvas)
+    ctx.beginPath();
+    ctx.arc(cx, cy, 28, Math.PI, 2 * Math.PI);
     ctx.fillStyle = '#0f172a';
     ctx.fill();
-    ctx.strokeStyle = 'rgba(255,255,255,.22)';
-    ctx.lineWidth = 2;
+    ctx.strokeStyle = 'rgba(255,255,255,.28)';
+    ctx.lineWidth   = 2;
     ctx.stroke();
 
-    ctx.font = '16px sans-serif';
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
-    ctx.shadowBlur = 0;
-    ctx.fillStyle = '#fff';
-    ctx.fillText('🎲', cx, cy + 1);
+    ctx.font          = '16px sans-serif';
+    ctx.textAlign     = 'center';
+    ctx.textBaseline  = 'middle';
+    ctx.fillStyle     = '#fff';
+    ctx.fillText('🎲', cx, cy - 14);
+
+    // Bottom fade — blends the canvas edge into the page background
+    const fade = ctx.createLinearGradient(0, cy - 44, 0, cy);
+    fade.addColorStop(0, 'rgba(15,23,42,0)');
+    fade.addColorStop(1, 'rgba(15,23,42,1)');
+    ctx.fillStyle = fade;
+    ctx.fillRect(0, cy - 44, canvas.width, 44);
 }
 
 /* ── Spin ───────────────────────────────────────────────── */
