@@ -55,11 +55,12 @@ function resizeCanvas() {
     let size;
 
     if (desktop) {
-        // Width: full viewport minus list col (320), gap (28), horizontal padding (32)
+        // Width: full viewport minus list col (320), gap (28), side padding (32+24)
         const availW = window.innerWidth - 320 - 28 - 32 - 24;
-        // Height: viewport minus nav (56), sync bar (~50), layout padding (20),
-        //         spin-btn + result + gaps below wheel (~180)
-        const availH = window.innerHeight - 56 - 50 - 20 - 180;
+        // Height: viewport minus fixed nav (56), layout padding-top (20), bottom breathing room (44)
+        // Sync section is in the side drawer (not inline), spin button is in the right column —
+        // so the wheel column height is essentially the full viewport content area.
+        const availH = window.innerHeight - 56 - 20 - 44;
         size = Math.max(Math.min(availW, availH), 300);
     } else {
         size = Math.min(window.innerWidth - 32, 380);
@@ -236,6 +237,11 @@ function _showResult(text, idx) {
     addHistory(text, idx);
     speak(text);
     launchConfetti();
+
+    // Copy picked item to clipboard automatically
+    navigator.clipboard?.writeText(text)
+        .then(() => showToast('📋 Gekopieerd naar klembord'))
+        .catch(() => {});
 }
 
 function closeResultModal() {
