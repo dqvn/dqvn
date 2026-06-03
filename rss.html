@@ -382,8 +382,8 @@
   'use strict';
 
   /* ── Constants ───────────────────────────────────────────── */
-  const RSS_API   = 'https://api.rss2json.com/v1/api.json?rss_url='
-                  + encodeURIComponent('https://www.nu.nl/rss') + '&count=30';
+  const RSS_URL   = 'https://www.nu.nl/rss';
+  const PROXY_URL = 'https://api.allorigins.win/get?url=';
   const CACHE_KEY = 'nl_rss_cache_v1';
   const READ_KEY  = 'nl_rss_v1';
   const CACHE_TTL = 15 * 60_000;  // 15 min before background refresh
@@ -474,6 +474,38 @@
     return '#64748b';
   }
 
+  /* ── Parse RSS XML → article objects ────────────────────── */
+  function parseRSSXML(xmlStr) {
+    const parser = new DOMParser();
+    const xml    = parser.parseFromString(xmlStr, 'text/xml');
+    if (xml.querySelector('parsererror')) throw new Error('XML parse error');
+
+    const text = (el, tag) => el.querySelector(tag)?.textContent?.trim() ?? '';
+
+    return [...xml.querySelectorAll('channel > item')].slice(0, 30).map(item => {
+      /* <link> in RSS 2.0 is a text node sibling, not element content in all parsers */
+      let link = text(item, 'link');
+      if (!link) {
+        const linkEl = item.querySelector('link');
+        link = linkEl?.nextSibling?.nodeValue?.trim()
+            || linkEl?.getAttribute('href')
+            || '';
+      }
+      const guid = text(item, 'guid') || link;
+      const cats = [...item.querySelectorAll('category')]
+                     .map(c => c.textContent.trim()).filter(Boolean);
+
+      return {
+        title:       text(item, 'title'),
+        link:        link || guid,
+        description: text(item, 'description'),
+        pubDate:     text(item, 'pubDate'),
+        guid,
+        categories:  cats,
+      };
+    });
+  }
+
   /* ── Fetch RSS feed ──────────────────────────────────────── */
   async function fetchFeed(silent = false) {
     const btn = document.getElementById('refresh-btn');
@@ -486,12 +518,15 @@
     }
 
     try {
-      const res  = await fetch(RSS_API);
+      const res  = await fetch(PROXY_URL + encodeURIComponent(RSS_URL));
       if (!res.ok) throw new Error('HTTP ' + res.status);
-      const data = await res.json();
-      if (data.status !== 'ok' || !data.items?.length) throw new Error('Empty feed');
+      const json = await res.json();
+      if (!json.contents) throw new Error('Empty proxy response');
 
-      articles = data.items;
+      const items = parseRSSXML(json.contents);
+      if (!items.length) throw new Error('No items in feed');
+
+      articles = items;
       try {
         localStorage.setItem(CACHE_KEY, JSON.stringify({ items: articles, at: Date.now() }));
       } catch {}

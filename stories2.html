@@ -365,6 +365,70 @@
     .q-body ol { padding-left: 18px; display: flex; flex-direction: column; gap: 10px; }
     .q-body li { font-size: .88rem; color: rgba(255,255,255,.65); line-height: 1.55; }
 
+    /* ══ Side-by-side layout ════════════════════════════════════ */
+    #sv-layout {
+      display: flex;
+      gap: 28px;
+      align-items: flex-start;
+    }
+    #sv-left {
+      flex: 1;
+      min-width: 0;
+      max-width: 700px;
+    }
+    #sv-right {
+      width: 360px;
+      flex-shrink: 0;
+      position: sticky;
+      top: 16px;
+      max-height: calc(100dvh - var(--bar) - 52px - 48px);
+      overflow-y: auto;
+      scrollbar-width: thin;
+    }
+    #sv-right::-webkit-scrollbar { width: 3px; }
+    #sv-right::-webkit-scrollbar-thumb { background: rgba(255,255,255,.12); border-radius: 3px; }
+
+    /* Desktop — vocab + quiz always visible, toggle hidden */
+    .sv-right-q-hdr { display: none; }
+
+    @media (min-width: 901px) {
+      #story-view  { max-width: none; }
+
+      /* Vocabulary panel */
+      #sv-right .vocab-wrap {
+        background: rgba(255,255,255,.04);
+        border: 1px solid rgba(255,255,255,.08);
+        border-radius: var(--r);
+        padding: 14px 16px 16px;
+        margin-bottom: 0;
+      }
+
+      /* Quiz section header (desktop only) */
+      .sv-right-q-hdr {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      /* Quiz panel always open, toggle button hidden */
+      #sv-right .q-toggle { display: none; }
+      #sv-right .q-wrap   { background: none; border: none; padding: 0; }
+      #sv-right .q-body {
+        display: block !important;
+        background: rgba(255,255,255,.04);
+        border: 1px solid rgba(255,255,255,.08);
+        border-radius: var(--r);
+        padding: 16px 20px;
+      }
+    }
+
+    /* Mobile/tablet — stack to single column, vocab + quiz below story */
+    @media (max-width: 900px) {
+      #sv-layout              { flex-direction: column; }
+      #sv-right               { width: 100%; position: static; max-height: none; overflow-y: visible; }
+      #sv-right .vocab-wrap   { margin-bottom: 22px; }
+    }
+
     /* Story bottom nav */
     .story-nav {
       display: flex; gap: 12px; justify-content: space-between;
@@ -589,7 +653,7 @@
   <div class="sb-back"><a href="index.html">← Terug naar Portaal</a></div>
   <div class="sb-hdr">
     <h1>📖 Korte Verhalen</h1>
-    <p>Beginners · 10 verhalen</p>
+    <p>Beginners · 15 verhalen</p>
   </div>
   <ul class="sb-list" id="sb-list"></ul>
 </nav>
@@ -623,36 +687,50 @@
     </div>
 
     <div id="story-view">
+      <div id="sv-layout">
 
-      <div class="sv-header anim">
-        <div class="sv-badge" id="sv-badge">Verhaal 1</div>
-        <h1 id="sv-title"></h1>
-        <p id="sv-subtitle"></p>
-        <button class="en-toggle" id="sv-en-toggle" onclick="toggleEnglish()" style="margin-top:12px">🇬🇧 Vertaling tonen</button>
-      </div>
+        <!-- ── Left: story text + nav ── -->
+        <div id="sv-left">
 
-      <div class="story-text anim anim-d1" id="sv-paras"></div>
+          <div class="sv-header anim">
+            <div class="sv-badge" id="sv-badge">Verhaal 1</div>
+            <h1 id="sv-title"></h1>
+            <p id="sv-subtitle"></p>
+            <button class="en-toggle" id="sv-en-toggle" onclick="toggleEnglish()" style="margin-top:12px">🇬🇧 Vertaling tonen</button>
+          </div>
 
-      <div class="vocab-wrap anim anim-d2">
-        <div class="section-hdr">📚 Woordenschat — klik om te horen</div>
-        <div class="vocab-grid" id="sv-vocab"></div>
-      </div>
+          <div class="story-text anim anim-d1" id="sv-paras"></div>
 
-      <div class="q-wrap anim anim-d3">
-        <button class="q-toggle" id="q-toggle" onclick="toggleQ()">
-          <span>💬 Vragen</span>
-          <span class="q-chevron">▼</span>
-        </button>
-        <div class="q-body" id="q-body">
-          <div id="sv-qs"></div>
-        </div>
-      </div>
+          <div class="story-nav anim anim-d4">
+            <button class="nav-btn prev" id="nav-prev" disabled onclick="navigate(-1)">◀ Vorig</button>
+            <button class="nav-btn next" id="nav-next" disabled onclick="navigate(1)">Volgend ▶</button>
+          </div>
 
-      <div class="story-nav anim anim-d4">
-        <button class="nav-btn prev" id="nav-prev" disabled onclick="navigate(-1)">◀ Vorig</button>
-        <button class="nav-btn next" id="nav-next" disabled onclick="navigate(1)">Volgend ▶</button>
-      </div>
+        </div><!-- #sv-left -->
 
+        <!-- ── Right: vocabulary + quiz (sticky on desktop) ── -->
+        <div id="sv-right">
+
+          <div class="vocab-wrap anim anim-d2">
+            <div class="section-hdr">📚 Woordenschat — klik om te horen</div>
+            <div class="vocab-grid" id="sv-vocab"></div>
+          </div>
+
+          <div class="sv-right-q-hdr section-hdr">💬 Vragen</div>
+
+          <div class="q-wrap anim anim-d3">
+            <button class="q-toggle" id="q-toggle" onclick="toggleQ()">
+              <span>💬 Vragen</span>
+              <span class="q-chevron">▼</span>
+            </button>
+            <div class="q-body" id="q-body">
+              <div id="sv-qs"></div>
+            </div>
+          </div>
+
+        </div><!-- #sv-right -->
+
+      </div><!-- #sv-layout -->
     </div>
   </div>
 </div>
@@ -680,6 +758,7 @@ const FS_STEPS  = [0.9, 1.0, 1.05, 1.15, 1.25];
 const DONE_KEY  = 'nl_s2_done';
 const EN_KEY    = 'nl_s2_show_en';
 const QUIZ_KEY  = 'nl_s2_quiz_v1';
+const S2_TOTAL  = 15;
 
 let stories     = [];
 let current     = null;
@@ -707,10 +786,11 @@ function buildMenu() {
   const ul   = document.getElementById('sb-list');
   const qAll = _quizAllData();
   stories.forEach((s, i) => {
-    const qd     = qAll[s.id];
-    const qBadge = qd?.completed ? `<span class="sb-quiz">${qd.score}/${qd.total}</span>` : '';
-    const li     = document.createElement('li');
-    li.className = 'sb-item' + (readSet.has(s.id) ? ' done' : '');
+    const qd        = qAll[s.id];
+    const qBadge    = qd?.completed ? `<span class="sb-quiz">${qd.score}/${qd.total}</span>` : '';
+    const isPerfect = qd?.completed && qd.score === qd.total;
+    const li        = document.createElement('li');
+    li.className    = 'sb-item' + (isPerfect ? ' done' : '');
     li.id = `li-${s.id}`;
     li.innerHTML = `<a href="#" data-id="${s.id}">
       <span class="sb-num">${s.id}</span>
@@ -839,8 +919,7 @@ function markRead() {
   if (!current) return;
   readSet.add(current.id);
   localStorage.setItem(DONE_KEY, JSON.stringify([...readSet]));
-  const li = document.getElementById(`li-${current.id}`);
-  if (li) li.classList.add('done');
+  // ✓ badge is controlled by quiz score, not by visit — see _updateSidebarBadge()
 }
 
 /* ══ TTS — paragraph by paragraph ═══════════════════════════════════ */
@@ -1101,6 +1180,12 @@ function retryQuiz() {
     delete all[current.id];
     localStorage.setItem(QUIZ_KEY, JSON.stringify(all));
   } catch {}
+  // Clear ✓ and score badge since the quiz is reset
+  const li = document.getElementById(`li-${current.id}`);
+  if (li) {
+    li.classList.remove('done');
+    li.querySelector('.sb-quiz')?.remove();
+  }
   renderQuiz();
   _updateQLabel();
 }
@@ -1119,6 +1204,8 @@ function _updateSidebarBadge() {
     if (a) a.insertBefore(badge, a.querySelector('.sb-done'));
   }
   badge.textContent = `${data.score}/${data.total}`;
+  // ✓ only when every question was answered correctly
+  li.classList.toggle('done', data.score === data.total);
 }
 
 function _updateQLabel() {
