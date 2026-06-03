@@ -805,7 +805,7 @@
     <!-- ── Tools ── -->
     <div class="sec-head reveal">
       <h2>Leertools</h2>
-      <span class="sec-badge">8 tools · 3 categorieën</span>
+      <span class="sec-badge">12 tools · 4 categorieën</span>
     </div>
     <div id="tools-container" class="reveal">
       <!-- filled by renderTools() -->
@@ -1021,6 +1021,7 @@
     { href:'wheel.html',     icon:'🎡', nl:'Draairad',     en:'Willekeurige oefenvragen',  color:'#9b5de5', badge:'Nieuw',  group:'🎙️ Uitspreken'   },
     { href:'grammar.html',   icon:'📚', nl:'Grammatica',   en:'Regels & uitleg',           color:'#b45309',                 group:'📖 Grammatica'   },
     { href:'verbs.html',     icon:'🔄', nl:'Werkwoorden',  en:'Vervoeging oefenen',        color:'#dc2626', badge:'Actief', group:'📖 Grammatica'   },
+    { href:'rss.html',       icon:'📰', nl:'Nieuws',       en:'Lees echt Nederlands nieuws', color:'#0891b2', badge:'Nieuw',  group:'📰 Lezen'        },
   ];
 
   /* ─── Helpers ─────────────────────────────────────────────────── */
@@ -1086,6 +1087,11 @@
     const s2quizDone = Object.values(s2quiz).filter(q => q.completed).length;
     const S2_TOTAL   = 10;
 
+    /* RSS news reading */
+    const rssData    = readJSON('nl_rss_v1', { read: [], total: 0 });
+    const rssRead    = rssData.total || (rssData.read?.length || 0);
+    const RSS_TARGET = 30;
+
     return {
       streak:     meta.streak        || 0,
       cardsSeen,  cardsMastered,
@@ -1093,6 +1099,7 @@
       verbsLearned, VERBS_TOTAL,
       dlgDone, dlgStreak, DLG_TOTAL,
       s2quizDone, S2_TOTAL,
+      rssRead, RSS_TARGET,
     };
   }
 
@@ -1151,6 +1158,14 @@
         detail: (s.s2quizDone || 0) > 0
           ? `${s.s2quizDone} van ${s.S2_TOTAL} quizzen voltooid`
           : 'Nog niet begonnen — lees korte verhalen!',
+      },
+      {
+        href: 'rss.html', icon: '📰', color: '#0891b2',
+        nl: 'Nieuws',
+        pct: Math.min(100, Math.round((s.rssRead || 0) / (s.RSS_TARGET || 30) * 100)),
+        detail: (s.rssRead || 0) > 0
+          ? `${s.rssRead} artikelen gelezen${s.rssRead >= s.RSS_TARGET ? ' — doel bereikt! 🎉' : ` van ${s.RSS_TARGET}`}`
+          : 'Nog niet begonnen — lees echt nieuws!',
       },
     ];
 
