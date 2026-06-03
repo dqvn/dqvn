@@ -23,9 +23,12 @@
 
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin':  '*',
-  'Access-Control-Allow-Methods': 'POST, OPTIONS',
+  'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
   'Access-Control-Allow-Headers': 'Content-Type, Authorization',
 };
+
+// Module-level in-memory cache — survives within a warm isolate
+let _rssMemCache = null;
 
 const REDIS_TTL = 90 * 86400; // 90 days
 
@@ -41,7 +44,7 @@ export default {
     // ── RSS proxy ─────────────────────────────────────────────────────────
     if (url.pathname === '/rss') {
       if (request.method !== 'GET') return reply({ error: 'Method not allowed' }, 405);
-      return handleRSS();
+      return handleRSS(env);
     }
 
     if (url.pathname !== '/sync') return reply({ error: 'Not found' }, 404);
@@ -371,33 +374,93 @@ function mergeWheel(local, remote) {
 
 // ── RSS proxy ─────────────────────────────────────────────────────────────
 
-async function handleRSS() {
+const RSS_CACHE_KEY = 'rss:nu:cache';
+const RSS_MAX       = 50;
+const RSS_FETCH_TTL = 8000; // 8 s upstream timeout
+
+async function handleRSS(env) {
+  // 1. Try fetching fresh items from nu.nl (with timeout)
+  let freshItems = null;
   try {
-    const upstream = await fetch('https://www.nu.nl/rss', {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (compatible; NLLearnReader/1.0)',
-        'Accept':     'application/rss+xml, application/xml, text/xml, */*',
-      },
-      cf: { cacheTtl: 3600, cacheEverything: true },
-    });
-
-    if (!upstream.ok) {
-      return reply({ error: 'Upstream error', code: upstream.status }, 502);
+    const ctrl  = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), RSS_FETCH_TTL);
+    let upstream;
+    try {
+      upstream = await fetch('https://www.nu.nl/rss', {
+        signal: ctrl.signal,
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (compatible; NLLearnReader/1.0)',
+          'Accept':     'application/rss+xml, application/xml, text/xml, */*',
+        },
+        cf: { cacheTtl: 3600, cacheEverything: true },
+      });
+    } finally {
+      clearTimeout(timer);
     }
+    if (upstream?.ok) {
+      const xml = await upstream.text();
+      freshItems = rssParseItems(xml).filter(item => !rssIsVideo(item));
+    }
+  } catch (_) { /* timeout or network error — fall through to cache */ }
 
-    const xml   = await upstream.text();
-    const items = rssParseItems(xml);
-
-    return new Response(JSON.stringify({ status: 'ok', items, fetchedAt: Date.now() }), {
-      headers: {
-        'Content-Type':  'application/json',
-        'Cache-Control': 'public, max-age=3600',
-        ...CORS_HEADERS,
-      },
-    });
-  } catch (e) {
-    return reply({ error: 'RSS fetch failed: ' + e.message }, 500);
+  // 2. Load persisted cache (Redis, fallback to module-level memory)
+  let persisted = _rssMemCache;
+  if (!persisted && env?.UPSTASH_URL && env?.UPSTASH_TOKEN) {
+    try { persisted = await redisGet(env.UPSTASH_URL, env.UPSTASH_TOKEN, RSS_CACHE_KEY); }
+    catch (_) {}
   }
+  if (!Array.isArray(persisted)) persisted = [];
+
+  // 3. Merge, dedup by guid, sort newest-first, cap at 50
+  let items;
+  if (freshItems?.length) {
+    const freshGuids = new Set(freshItems.map(i => i.guid).filter(Boolean));
+    const carried    = persisted.filter(i => i.guid && !freshGuids.has(i.guid));
+    items = rssSortTrim([...freshItems, ...carried], RSS_MAX);
+
+    // Persist asynchronously (don't block the response)
+    _rssMemCache = items;
+    if (env?.UPSTASH_URL && env?.UPSTASH_TOKEN) {
+      redisSet(env.UPSTASH_URL, env.UPSTASH_TOKEN, RSS_CACHE_KEY, items, 7 * 86400)
+        .catch(() => {});
+    }
+  } else if (persisted.length) {
+    // Upstream unavailable — serve stale cache
+    items = persisted;
+    _rssMemCache = items;
+  } else {
+    return reply({ error: 'RSS unavailable and no cached data' }, 503);
+  }
+
+  return new Response(JSON.stringify({ status: 'ok', items, fetchedAt: Date.now() }), {
+    headers: {
+      'Content-Type':  'application/json',
+      'Cache-Control': 'public, max-age=3600',
+      ...CORS_HEADERS,
+    },
+  });
+}
+
+// Returns true for items that are video-only content
+function rssIsVideo(item) {
+  const link = (item.link || '').toLowerCase();
+  const cats = (item.categories || []).map(c => c.toLowerCase());
+  return cats.some(c => c.includes('video')) || link.includes('/video/');
+}
+
+// Dedup by guid, sort by pubDate newest-first, keep at most `max` items
+function rssSortTrim(items, max) {
+  const seen    = new Set();
+  const deduped = items.filter(item => {
+    const key = item.guid || item.link;
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+  deduped.sort((a, b) =>
+    new Date(b.pubDate || 0).getTime() - new Date(a.pubDate || 0).getTime()
+  );
+  return deduped.slice(0, max);
 }
 
 // Parse RSS 2.0 XML without DOM (Workers runtime has no DOMParser)
