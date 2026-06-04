@@ -64,6 +64,8 @@ Simply dropping the new file into `data/kids/` is enough — no manifest, no JS 
 | `l03.json` | VL & FL woorden   | vl-, fl-       |
 | `l04.json` | BL woorden        | bl-            |
 | `l05.json` | Eerste woorden    | basic nouns    |
+| `l06.json` | DW, KW & TW woorden | dw-, kw-, tw- |
+| `l07.json` | ZW woorden          | zw-           |
 
 
 ## Memory saved. Here's exactly what to do next session:

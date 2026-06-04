@@ -580,7 +580,8 @@ body.yt-panel-open #content {
   border: 2px solid var(--bdr);
   border-radius: var(--r10);
   cursor: pointer;
-  background: #fff;
+  background: var(--card);
+  color: var(--txt);
   text-align: center;
   min-width: 90px;
   transition: all .2s;
@@ -638,7 +639,7 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
   border-radius: 50%;
   cursor: pointer;
   font-size: 1rem;
-  background: #fff;
+  background: var(--card);
   transition: all .15s;
   display: flex;
   align-items: center;
@@ -724,7 +725,7 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
   flex-direction: column;
   align-items: stretch;
   gap: 8px;
-  background: #fff;
+  background: var(--card);
   border-top: 3px solid var(--acc);
   padding: 10px 16px 12px;
   padding-bottom: max(12px, env(safe-area-inset-bottom));
@@ -852,7 +853,7 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
 #celebrate.on { display: flex; }
 
 .cel-box {
-  background: #fff;
+  background: var(--card);
   border-radius: 24px;
   padding: 32px 28px 24px;
   text-align: center;
@@ -1248,3 +1249,38 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
 #sidebar .sync-signin-row  { width: 100%; }
 #sidebar .sync-gis-wrap    { justify-content: flex-start; }
 /* GIS renders its own iframe — just ensure it has room */
+
+/* ══════════════════════════════════════════
+   DARK THEME OVERRIDES
+   ══════════════════════════════════════════ */
+
+/* Conversation line highlights — light-mode defaults need dark equivalents */
+[data-theme="dark"] .c-line.is-mine {
+  background: rgba(232, 93, 4, .12);
+  border-color: rgba(232, 93, 4, .38);
+}
+[data-theme="dark"] .c-line.is-active {
+  background: rgba(99, 102, 241, .15);
+  border-color: rgba(99, 102, 241, .55);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, .12);
+}
+
+/* Role button selected state needs legible text on accent */
+[data-theme="dark"] .role-btn { border-color: rgba(255,255,255,.1); }
+
+/* Mode toggle switch track default */
+[data-theme="dark"] .sw-track { background: rgba(255,255,255,.18); }
+
+/* TTS stop button border */
+[data-theme="dark"] .tts-ico-stop { border-color: rgba(239,71,111,.35); }
+
+/* Warning notice (local-server warning) */
+[data-theme="dark"] .notice {
+  background: rgba(255,193,7,.1);
+  border-color: rgba(255,193,7,.3);
+  color: #fbbf24;
+}
+
+/* Celebration box text */
+[data-theme="dark"] .cel-title { color: var(--txt); }
+[data-theme="dark"] .cel-sub   { color: var(--sec); }
