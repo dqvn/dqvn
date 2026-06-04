@@ -445,25 +445,46 @@ body {
 
 /* ── Audio player ────────────────────────────── */
 .ep-player {
-    background: rgba(155, 93, 229, .08);
-    border: 1.5px solid rgba(155, 93, 229, .25);
-    border-radius: 12px;
-    padding: 10px 14px;
+    background: linear-gradient(135deg,
+        rgba(155, 93, 229, .22) 0%,
+        rgba(59, 130, 246, .16) 55%,
+        rgba(6, 214, 160, .10) 100%);
+    border: 1.5px solid rgba(155, 93, 229, .48);
+    border-radius: 14px;
+    padding: 0 0 13px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
+    box-shadow: 0 4px 28px rgba(155, 93, 229, .20),
+                inset 0 1px 0 rgba(255, 255, 255, .06);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Rainbow accent bar at the top */
+.ep-player::before {
+    content: '';
+    display: block;
+    height: 3px;
+    background: linear-gradient(90deg, var(--purple) 0%, #3b82f6 50%, var(--teal) 100%);
+    flex-shrink: 0;
 }
 
 .ep-player-label {
-    font-size: .68rem;
-    font-weight: 800;
-    color: var(--purple);
+    font-size: .63rem;
+    font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: .5px;
+    letter-spacing: 1.4px;
+    padding: 0 14px;
+    background: linear-gradient(90deg, var(--purple), #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .ep-audio {
-    width: 100%;
+    width: calc(100% - 28px);
+    margin: 0 14px;
     height: 36px;
     border-radius: 8px;
     accent-color: var(--purple);
@@ -471,7 +492,7 @@ body {
 
 /* Style native audio to fit dark theme */
 .ep-audio::-webkit-media-controls-panel {
-    background: rgba(30, 41, 59, .9);
+    background: rgba(15, 23, 42, .75);
     border-radius: 8px;
 }
 
