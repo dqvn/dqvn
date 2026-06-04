@@ -36,7 +36,21 @@
       <div id="list-col">
 
         <div>
-          <div class="section-label">Actief pakket</div>
+          <div class="section-label-row">
+            <span class="section-label">Actief pakket</span>
+            <button class="info-btn" id="wheel-info-btn"
+                    onclick="toggleWheelInfo()" title="Hoe werkt dit?">ℹ️</button>
+          </div>
+          <div id="wheel-info" class="wheel-info-panel hidden">
+            <ul class="winfo-list">
+              <li><b>Draaien</b> — klik op het wiel of de knop <em>Draaien!</em> om een willekeurig item te kiezen.</li>
+              <li><b>Pakketten</b> — maak eigen vragensets via <em>⚙️ Beheer</em>; maximaal 50 items per pakket.</li>
+              <li><b>Deel pakket</b> — stuur het pakket via een link naar anderen; zij kunnen het direct importeren.</li>
+              <li><b>Verwijder</b> — na een draai kun je het gekozen item permanent uit de lijst halen.</li>
+              <li><b>Recente picks</b> — de laatste 8 gedraaide items worden bijgehouden.</li>
+              <li><b>Sync</b> — pakketten worden automatisch gesynchroniseerd als je bent aangemeld.</li>
+            </ul>
+          </div>
           <div id="pkg-selector">
             <select id="pkg-select" onchange="selectPackage(this.value)"></select>
             <button class="btn-manage" onclick="openPkgModal()" title="Pakketten beheren">⚙️</button>
