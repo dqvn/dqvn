@@ -979,6 +979,13 @@ async function applyFileSelection() {
 }
 
 /* ── Sync drawer passthrough ───────────────────────────────────── */
+function toggleStripInfo() {
+  const panel = document.getElementById('strip-info');
+  const btn   = document.getElementById('strip-info-btn');
+  const open  = panel.classList.toggle('hidden');
+  btn.style.opacity = open ? '' : '1';
+}
+
 function toggleSyncDrawer() {
   const d = document.getElementById('sync-drawer');
   const b = document.getElementById('sync-backdrop');

@@ -178,6 +178,49 @@ body {
     color: var(--muted);
     white-space: nowrap;
 }
+.strip-info-btn {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    opacity: .55;
+    padding: 0 2px;
+    line-height: 1;
+    transition: opacity .15s;
+    flex-shrink: 0;
+}
+.strip-info-btn:hover { opacity: 1; }
+
+#strip-info {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    animation: fadeIn .18s ease;
+}
+.sinfo-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.sinfo-list li {
+    font-size: .83rem;
+    color: var(--muted);
+    line-height: 1.45;
+    padding-left: 14px;
+    position: relative;
+}
+.sinfo-list li::before {
+    content: '·';
+    position: absolute;
+    left: 2px;
+    color: var(--teal);
+    font-weight: 900;
+}
+.sinfo-list li b  { color: var(--text); }
+.sinfo-list li em { color: var(--teal); font-style: normal; font-weight: 700; }
 
 /* ── Game card ───────────────────────────────────────────── */
 #game-card {

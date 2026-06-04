@@ -768,6 +768,13 @@ function showToast(msg) {
 }
 
 /* ── Sync drawer ────────────────────────────────────────── */
+function toggleWheelInfo() {
+  const panel = document.getElementById('wheel-info');
+  const btn   = document.getElementById('wheel-info-btn');
+  const open  = panel.classList.toggle('hidden');
+  btn.style.opacity = open ? '' : '1';
+}
+
 function toggleSyncDrawer() {
     document.getElementById('sync-drawer').classList.contains('open')
         ? closeSyncDrawer() : openSyncDrawer();

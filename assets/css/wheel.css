@@ -487,14 +487,67 @@ body {
 }
 
 /* ── Section label ───────────────────────────────────── */
+.section-label-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 7px;
+}
 .section-label {
     font-size: .72rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--muted);
-    margin-bottom: 7px;
 }
+.info-btn {
+    background: none;
+    border: none;
+    font-size: .95rem;
+    cursor: pointer;
+    opacity: .5;
+    padding: 0;
+    line-height: 1;
+    transition: opacity .15s;
+    flex-shrink: 0;
+}
+.info-btn:hover { opacity: 1; }
+
+/* ── Wheel info panel ────────────────────────────────── */
+.wheel-info-panel {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 11px 14px;
+    margin-bottom: 10px;
+    animation: wInfoIn .18s ease;
+}
+@keyframes wInfoIn {
+    from { opacity: 0; transform: translateY(-4px); }
+    to   { opacity: 1; transform: none; }
+}
+.winfo-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.winfo-list li {
+    font-size: .8rem;
+    color: var(--muted);
+    line-height: 1.45;
+    padding-left: 13px;
+    position: relative;
+}
+.winfo-list li::before {
+    content: '·';
+    position: absolute;
+    left: 2px;
+    color: var(--accent);
+    font-weight: 900;
+}
+.winfo-list li b  { color: var(--text); }
+.winfo-list li em { color: var(--accent); font-style: normal; font-weight: 700; }
 
 /* ── Package selector ────────────────────────────────── */
 #pkg-selector {
