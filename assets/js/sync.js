@@ -17,14 +17,15 @@ const _KEY_LAST    = 'fc_sync_last';         // ms timestamp of last successful 
 
 // Keys that are synced across devices (progress data)
 const _SYNC_KEYS = {
-  srs:     'nl_srs_v3',              // flashcard SM-2 progress
-  meta:    'nl_srs_meta_v3',         // streak / daily new-card count
-  klanken: 'klanken-v1',             // phonetics completion flags
-  verbs:   'nl_verbs_v3',            // verb trainer stats
-  game:    'nl_game_progress_v1',    // game seen-words per chapter
-  vol:     'nl_vocab_vol',           // TTS volume { v: 0-100, t: timestamp }
-  num:     'nl_num_progress',        // number learning level/stars progress
-  wheel:   'nl_wheel_pkgs',          // wheel-of-names question packages
+  srs:      'nl_srs_v3',             // flashcard SM-2 progress
+  meta:     'nl_srs_meta_v3',        // streak / daily new-card count
+  klanken:  'klanken-v1',            // phonetics completion flags
+  verbs:    'nl_verbs_v3',           // verb trainer stats
+  game:     'nl_game_progress_v1',   // game seen-words per chapter
+  vol:      'nl_vocab_vol',          // TTS volume { v: 0-100, t: timestamp }
+  num:      'nl_num_progress',       // number learning level/stars progress
+  wheel:    'nl_wheel_pkgs',         // wheel-of-names question packages
+  sentence: 'nl_sentence_v1',        // sentence-builder daily streak + XP
 };
 
 // ── Runtime state ─────────────────────────────────────────────────────────
