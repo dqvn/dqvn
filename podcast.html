@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Nieuws Lezen – Nederlands</title>
+  <title>🎧 Podcast Luisteren – Nederlands</title>
   <link rel="icon" href="assets/img/dutch.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/sync.css">
-  <link rel="stylesheet" href="assets/css/rss.css">
+  <link rel="stylesheet" href="assets/css/podcast.css">
 </head>
 <body>
 
   <!-- ── Top nav ── -->
   <nav id="top-nav">
     <a href="index.html" class="nav-back">← Terug</a>
-    <span class="nav-title">📰 Nieuws Lezen</span>
+    <span class="nav-title">🎧 Podcast Luisteren</span>
     <div id="fs-ctrl">
       <button class="fs-btn" id="fs-down" onclick="changeFontSize(-1)" title="Kleinere tekst">A−</button>
       <button class="fs-btn" id="fs-up"   onclick="changeFontSize(1)"  title="Grotere tekst">A+</button>
     </div>
-    <button id="refresh-btn" onclick="refreshFeed()" title="Ververs nieuws">
+    <button id="refresh-btn" onclick="refreshFeed()" title="Ververs afleveringen">
       <svg id="refresh-ico" width="16" height="16" viewBox="0 0 24 24" fill="none"
            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
         <path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5"/>
@@ -41,8 +41,8 @@
     <!-- ── Progress header ── -->
     <div id="feed-header">
       <div class="feed-progress-row">
-        <span class="feed-stat">✓&nbsp;<b id="stat-read">0</b>&nbsp;gelezen</span>
-        <span class="feed-stat">📰&nbsp;<b id="stat-total">—</b>&nbsp;artikelen</span>
+        <span class="feed-stat">🎧&nbsp;<b id="stat-listened">0</b>&nbsp;beluisterd</span>
+        <span class="feed-stat">📻&nbsp;<b id="stat-total">—</b>&nbsp;afleveringen</span>
         <div class="feed-prog-track">
           <div class="feed-prog-fill" id="prog-fill"></div>
         </div>
@@ -50,8 +50,8 @@
       </div>
       <div class="feed-meta-row">
         <span class="feed-src">
-          Bron: <a href="https://www.nu.nl" target="_blank" rel="noopener">nu.nl</a>
-          — Lees echt Nederlands nieuws en verbeter je leesvaardigheid.
+          Bron: <a href="https://podcast.npo.nl/podcast/met-het-oog-op-morgen" target="_blank" rel="noopener">Met het Oog op Morgen</a>
+          — NPO Radio 1 · Luister naar actueel nieuws in helder Nederlands.
         </span>
         <span class="feed-updated" id="feed-updated"></span>
       </div>
@@ -60,11 +60,11 @@
     <!-- ── Loading / error state ── -->
     <div id="feed-status">
       <span class="status-ico spinning">⟳</span>
-      <div class="status-txt">Nieuws laden…</div>
+      <div class="status-txt">Afleveringen laden…</div>
     </div>
 
-    <!-- ── Article list ── -->
-    <div id="article-list"></div>
+    <!-- ── Episode list ── -->
+    <div id="episode-list"></div>
 
   </div><!-- #app -->
 
@@ -94,7 +94,7 @@
   </div>
 
   <script src="assets/js/sync.js"></script>
-  <script src="assets/js/rss.js" defer></script>
+  <script src="assets/js/podcast.js" defer></script>
 
 </body>
 </html>
