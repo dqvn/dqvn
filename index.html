@@ -805,7 +805,7 @@
     <!-- ── Tools ── -->
     <div class="sec-head reveal">
       <h2>Leertools</h2>
-      <span class="sec-badge">13 tools · 5 categorieën</span>
+      <span class="sec-badge" id="tools-badge"></span>
     </div>
     <div id="tools-container" class="reveal">
       <!-- filled by renderTools() -->
@@ -1212,6 +1212,11 @@
     /* Group tools preserving insertion order */
     const groups = {};
     TOOLS.forEach(t => { (groups[t.group] ??= []).push(t); });
+
+    const numTools = TOOLS.length;
+    const numCats  = Object.keys(groups).length;
+    const badge = document.getElementById('tools-badge');
+    if (badge) badge.textContent = `${numTools} tools · ${numCats} categorieën`;
 
     const cardHtml = t => `
       <a class="tool-card" href="${t.href}" style="--tc:${t.color}">
