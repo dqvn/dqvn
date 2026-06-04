@@ -1,4 +1,4 @@
-'use strict';
+﻿'use strict';
 
 /* ══════════════════════════════════════════════════════
    common.js  –  shared logic for startnl.html / vanstart.html
@@ -11,14 +11,14 @@
    Fields: id, label, icon, href, desc, group, color
    ══════════════════════════════════════════════════════ */
 const APPS = [
-  { id:'vocab',     label:'Vocabulaire', icon:'📖', href:'startnl.html',      desc:'Woordenlijst & flashcards',      group:'📚 Woordenschat', color:'#2563eb' },
-  { id:'vanstart',  label:'VanStart',    icon:'🚀', href:'vanstart.html',     desc:'NT2 beginnerscursus',            group:'📚 Woordenschat', color:'#059669' },
-  { id:'kids',      label:'Kids',        icon:'🧒', href:'kids.html',         desc:'Kinderen woordenschat',          group:'📚 Woordenschat', color:'#16a34a' },
-  { id:'stories',   label:'Verhalen',    icon:'📕', href:'stories.html',      desc:'Leer door verhalen te lezen',    group:'📚 Woordenschat', color:'#6A67CE' },
-  { id:'klanken',   label:'Klanken',     icon:'🎵', href:'klanken.html',      desc:'Nederlandse uitspraak leren',   group:'🎙️ Uitspreken',   color:'#7c3aed' },
-  { id:'dialogues', label:'Dialogues',   icon:'💬', href:'dialogues.html',    desc:'Gespreks oefening met TTS',     group:'🎙️ Uitspreken',   color:'#0891b2' },
-  { id:'grammar',   label:'Grammar',     icon:'📚', href:'grammar.html',      desc:'Grammatica regels & uitleg',    group:'📖 Grammatica',   color:'#b45309' },
-  { id:'verbs',     label:'Verbs',       icon:'🔄', href:'verbs.html',        desc:'Nederlandse werkwoorden',       group:'📖 Grammatica',   color:'#dc2626' },
+  { id:'vocab',     label:'Vocabulaire', icon:'📖', href:'/startnl',      desc:'Woordenlijst & flashcards',      group:'📚 Woordenschat', color:'#2563eb' },
+  { id:'vanstart',  label:'VanStart',    icon:'🚀', href:'/vanstart',     desc:'NT2 beginnerscursus',            group:'📚 Woordenschat', color:'#059669' },
+  { id:'kids',      label:'Kids',        icon:'🧒', href:'/kids',         desc:'Kinderen woordenschat',          group:'📚 Woordenschat', color:'#16a34a' },
+  { id:'stories',   label:'Verhalen',    icon:'📕', href:'/stories',      desc:'Leer door verhalen te lezen',    group:'📚 Woordenschat', color:'#6A67CE' },
+  { id:'klanken',   label:'Klanken',     icon:'🎵', href:'/klanken',      desc:'Nederlandse uitspraak leren',   group:'🎙️ Uitspreken',   color:'#7c3aed' },
+  { id:'dialogues', label:'Dialogues',   icon:'💬', href:'/dialogues',    desc:'Gespreks oefening met TTS',     group:'🎙️ Uitspreken',   color:'#0891b2' },
+  { id:'grammar',   label:'Grammar',     icon:'📚', href:'/grammar',      desc:'Grammatica regels & uitleg',    group:'📖 Grammatica',   color:'#b45309' },
+  { id:'verbs',     label:'Verbs',       icon:'🔄', href:'/verbs',        desc:'Nederlandse werkwoorden',       group:'📖 Grammatica',   color:'#dc2626' },
 ];
 
 function openLauncher() {
@@ -39,7 +39,7 @@ function initAppLauncher() {
   const body = document.getElementById('al-body');
   if (!body) return;
 
-  const page = location.pathname.split('/').pop() || 'index.html';
+  const page = location.pathname.replace(/^\//, '').replace(/\.html$/, '') || '';
 
   /* Group apps by their 'group' key, preserving insertion order */
   const groups = {};
@@ -48,7 +48,7 @@ function initAppLauncher() {
   /* Portal home link at the top */
   const homeHtml = `
     <div class="al-home-row">
-      <a href="index.html" class="al-home-btn${page === 'index.html' ? ' al-current' : ''}">
+      <a href="/" class="al-home-btn${page === '' ? ' al-current' : ''}">
         🏠&nbsp; Terug naar Portaal
       </a>
     </div>`;
