@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
@@ -911,7 +911,7 @@
 
   <!-- ══ STICKY HEADER ══ -->
   <header id="portal-header">
-    <a class="hdr-brand" href="index.html" aria-label="Leer Nederlands Portaal">
+    <a class="hdr-brand" href="/" aria-label="Leer Nederlands Portaal">
       <div class="hdr-emblem" aria-hidden="true">🌷</div>
       <div class="hdr-titles">
         <span class="hdr-name">Leer Nederlands</span>
@@ -1074,7 +1074,7 @@
               <span class="feat-dim">Automatische back-up van je data</span>
             </li>
           </ul>
-          <a href="startnl.html" class="plan-cta plan-cta-neutral">Begin direct →</a>
+          <a href="/startnl" class="plan-cta plan-cta-neutral">Begin direct →</a>
         </div>
       </div>
 
@@ -1166,28 +1166,28 @@
      four examined skills: Lezen · Luisteren · Schrijven · Spreken            */
   const TOOLS = [
     /* ── Taalkennis: vocabulary & grammar that underpin all four skills ── */
-    { href:'startnl.html',   icon:'📖', nl:'Vocabulaire',    en:'Woordenlijst & flashcards',             color:'#2563eb', badge:'Actief', group:'🏗️ Taalkennis'        },
-    { href:'vanstart.html',  icon:'🚀', nl:'VanStart',       en:'NT2 beginnerscursus',                   color:'#059669', badge:'Actief', group:'🏗️ Taalkennis'        },
-    { href:'grammar.html',   icon:'📚', nl:'Grammatica',     en:'Regels & uitleg',                       color:'#b45309',                 group:'🏗️ Taalkennis'        },
-    { href:'verbs.html',     icon:'🔄', nl:'Werkwoorden',    en:'Vervoeging oefenen',                    color:'#dc2626', badge:'Actief', group:'🏗️ Taalkennis'        },
-    { href:'kids.html',      icon:'🧒', nl:'Kids',           en:'Kinderen woordenschat',                 color:'#16a34a', badge:'Nieuw',  group:'🏗️ Taalkennis'        },
-    { href:'number.html',    icon:'🔢', nl:'Getallen',       en:'Leer tellen van 1 tot 100',             color:'#ea580c', badge:'Nieuw',  group:'🏗️ Taalkennis'        },
+    { href:'/startnl',   icon:'📖', nl:'Vocabulaire',    en:'Woordenlijst & flashcards',             color:'#2563eb', badge:'Actief', group:'🏗️ Taalkennis'        },
+    { href:'/vanstart',  icon:'🚀', nl:'VanStart',       en:'NT2 beginnerscursus',                   color:'#059669', badge:'Actief', group:'🏗️ Taalkennis'        },
+    { href:'/grammar',   icon:'📚', nl:'Grammatica',     en:'Regels & uitleg',                       color:'#b45309',                 group:'🏗️ Taalkennis'        },
+    { href:'/verbs',     icon:'🔄', nl:'Werkwoorden',    en:'Vervoeging oefenen',                    color:'#dc2626', badge:'Actief', group:'🏗️ Taalkennis'        },
+    { href:'/kids',      icon:'🧒', nl:'Kids',           en:'Kinderen woordenschat',                 color:'#16a34a', badge:'Nieuw',  group:'🏗️ Taalkennis'        },
+    { href:'/number',    icon:'🔢', nl:'Getallen',       en:'Leer tellen van 1 tot 100',             color:'#ea580c', badge:'Nieuw',  group:'🏗️ Taalkennis'        },
 
     /* ── Leesvaardigheid: read & understand Dutch texts ─────────────── */
-    { href:'stories.html',   icon:'📕', nl:'Kinderverhalen', en:'Interactieve verhalen voor kinderen',   color:'#6A67CE',                 group:'📖 Leesvaardigheid'   },
-    { href:'stories2.html',  icon:'📖', nl:'Korte Verhalen', en:'10 beginnersverhalen met woordenschat', color:'#7c3aed', badge:'Nieuw',  group:'📖 Leesvaardigheid'   },
-    { href:'rss.html',       icon:'📰', nl:'Nieuws',         en:'Lees echt Nederlands nieuws',           color:'#0891b2', badge:'Nieuw',  group:'📖 Leesvaardigheid'   },
+    { href:'/stories',   icon:'📕', nl:'Kinderverhalen', en:'Interactieve verhalen voor kinderen',   color:'#6A67CE',                 group:'📖 Leesvaardigheid'   },
+    { href:'/stories2',  icon:'📖', nl:'Korte Verhalen', en:'10 beginnersverhalen met woordenschat', color:'#7c3aed', badge:'Nieuw',  group:'📖 Leesvaardigheid'   },
+    { href:'/rss',       icon:'📰', nl:'Nieuws',         en:'Lees echt Nederlands nieuws',           color:'#0891b2', badge:'Nieuw',  group:'📖 Leesvaardigheid'   },
 
     /* ── Luistervaardigheid: understand spoken Dutch ─────────────────── */
-    { href:'klanken.html',   icon:'🎵', nl:'Klanken',        en:'Uitspraak & Nederlandse klanken',       color:'#7c3aed', badge:'Actief', group:'🎧 Luistervaardigheid' },
-    { href:'podcast.html',   icon:'🎧', nl:'Podcast',        en:'Met het Oog op Morgen – NPO Radio 1',   color:'#9b5de5', badge:'Nieuw',  group:'🎧 Luistervaardigheid' },
+    { href:'/klanken',   icon:'🎵', nl:'Klanken',        en:'Uitspraak & Nederlandse klanken',       color:'#7c3aed', badge:'Actief', group:'🎧 Luistervaardigheid' },
+    { href:'/podcast',   icon:'🎧', nl:'Podcast',        en:'Met het Oog op Morgen – NPO Radio 1',   color:'#9b5de5', badge:'Nieuw',  group:'🎧 Luistervaardigheid' },
 
     /* ── Schrijfvaardigheid: write correct Dutch sentences ───────────── */
-    { href:'sentence.html',  icon:'✏️', nl:'Zinnen Bouwen',  en:'Schrijf & bouw Nederlandse zinnen',     color:'#06d6a0', badge:'Nieuw',  group:'✍️ Schrijfvaardigheid' },
+    { href:'/sentence',  icon:'✏️', nl:'Zinnen Bouwen',  en:'Schrijf & bouw Nederlandse zinnen',     color:'#06d6a0', badge:'Nieuw',  group:'✍️ Schrijfvaardigheid' },
 
     /* ── Spreekvaardigheid: speak & have conversations in Dutch ─────── */
-    { href:'dialogues.html', icon:'💬', nl:'Dialogen',       en:'Gespreksoefening met rolverdeling',     color:'#0891b2',                 group:'🗣️ Spreekvaardigheid' },
-    { href:'wheel.html',     icon:'🎡', nl:'Draairad',       en:'Willekeurige spreekvragen',             color:'#9b5de5', badge:'Nieuw',  group:'🗣️ Spreekvaardigheid' },
+    { href:'/dialogues', icon:'💬', nl:'Dialogen',       en:'Gespreksoefening met rolverdeling',     color:'#0891b2',                 group:'🗣️ Spreekvaardigheid' },
+    { href:'/wheel',     icon:'🎡', nl:'Draairad',       en:'Willekeurige spreekvragen',             color:'#9b5de5', badge:'Nieuw',  group:'🗣️ Spreekvaardigheid' },
   ];
 
   /* ─── Helpers ─────────────────────────────────────────────────── */
@@ -1301,7 +1301,7 @@
 
     const cards = [
       {
-        href: 'startnl.html', icon: '📖', color: '#2563eb',
+        href: '/startnl', icon: '📖', color: '#2563eb',
         nl: 'Vocabulaire',
         pct: vocabPct,
         detail: s.cardsSeen > 0
@@ -1309,7 +1309,7 @@
           : 'Nog niet begonnen — start de flashcards!',
       },
       {
-        href: 'klanken.html', icon: '🎵', color: '#7c3aed',
+        href: '/klanken', icon: '🎵', color: '#7c3aed',
         nl: 'Klanken',
         pct: klankenPct,
         detail: s.klankenDone > 0
@@ -1317,7 +1317,7 @@
           : 'Nog niet begonnen — leer de uitspraak!',
       },
       {
-        href: 'verbs.html', icon: '🔄', color: '#dc2626',
+        href: '/verbs', icon: '🔄', color: '#dc2626',
         nl: 'Werkwoorden',
         pct: verbsPct,
         detail: s.verbsLearned > 0
@@ -1325,7 +1325,7 @@
           : 'Nog niet begonnen — oefen werkwoorden!',
       },
       {
-        href: 'dialogues.html', icon: '💬', color: '#0891b2',
+        href: '/dialogues', icon: '💬', color: '#0891b2',
         nl: 'Dialogen',
         pct: dlgPct,
         detail: s.dlgDone > 0
@@ -1333,7 +1333,7 @@
           : 'Nog niet begonnen — oefen gesprekken!',
       },
       {
-        href: 'stories2.html', icon: '📖', color: '#8b5cf6',
+        href: '/stories2', icon: '📖', color: '#8b5cf6',
         nl: 'Verhalen',
         pct: Math.min(100, Math.round((s.s2quizDone || 0) / (s.S2_TOTAL || 10) * 100)),
         detail: (s.s2quizDone || 0) > 0
@@ -1341,7 +1341,7 @@
           : 'Nog niet begonnen — lees korte verhalen!',
       },
       {
-        href: 'rss.html', icon: '📰', color: '#0891b2',
+        href: '/rss', icon: '📰', color: '#0891b2',
         nl: 'Nieuws',
         pct: Math.min(100, Math.round((s.rssRead || 0) / (s.RSS_TARGET || 30) * 100)),
         detail: (s.rssRead || 0) > 0
@@ -1349,7 +1349,7 @@
           : 'Nog niet begonnen — lees echt nieuws!',
       },
       {
-        href: 'podcast.html', icon: '🎧', color: '#9b5de5',
+        href: '/podcast', icon: '🎧', color: '#9b5de5',
         nl: 'Podcast',
         pct: Math.min(100, Math.round((s.podListened || 0) / (s.PODCAST_TARGET || 20) * 100)),
         detail: (s.podListened || 0) > 0
@@ -1357,7 +1357,7 @@
           : 'Nog niet begonnen — luister naar podcasts!',
       },
       {
-        href: 'sentence.html', icon: '✏️', color: '#06d6a0',
+        href: '/sentence', icon: '✏️', color: '#06d6a0',
         nl: 'Zinnen Bouwen',
         pct: Math.min(100, Math.round((s.sentToday || 0) / (s.SENT_GOAL || 5) * 100)),
         detail: (s.sentToday || 0) > 0

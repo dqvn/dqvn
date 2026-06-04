@@ -1,4 +1,4 @@
-/* Dutch Verb Trainer — game logic */
+﻿/* Dutch Verb Trainer — game logic */
 'use strict';
 
 /* ─────────────────────────────────────────────────────────────────────────────
@@ -405,7 +405,7 @@ async function selectLesson(lesson) {
       <div class="flag">⚠️</div>
       <h2>Could not load ${lesson.title}</h2>
       <p>Make sure you are running via a local server, not <code>file://</code></p>
-      <a href="index.html" style="color:var(--acc)">← Back to main</a>`;
+      <a href="/" style="color:var(--acc)">← Back to main</a>`;
   }
 }
 
