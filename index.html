@@ -1127,6 +1127,7 @@
       rssRead, RSS_TARGET,
       podListened, PODCAST_TARGET,
       sentToday, sentStreak, SENT_GOAL,
+      sentXP: sentData.xp || 0,
     };
   }
 
@@ -1207,8 +1208,8 @@
         nl: 'Zinnen Bouwen',
         pct: Math.min(100, Math.round((s.sentToday || 0) / (s.SENT_GOAL || 5) * 100)),
         detail: (s.sentToday || 0) > 0
-          ? `${s.sentToday}/5 zinnen vandaag${s.sentToday >= s.SENT_GOAL ? ' — dagdoel bereikt! 🎉' : ` 🔔`}${s.sentStreak > 0 ? ` &nbsp;·&nbsp; 🔥 ${s.sentStreak} dagen` : ''}`
-          : 'Nog niet begonnen — schrijf 5 zinnen per dag!',
+          ? `${s.sentToday}/5 vandaag${s.sentToday >= s.SENT_GOAL ? ' 🎉' : ' 🔔'}${s.sentStreak > 0 ? ` &nbsp;·&nbsp; 🔥 ${s.sentStreak} dagen` : ''} &nbsp;·&nbsp; ⭐ ${s.sentXP} XP`
+          : `Nog niet begonnen — schrijf 5 zinnen per dag!${s.sentXP > 0 ? ` &nbsp;·&nbsp; ⭐ ${s.sentXP} XP totaal` : ''}`,
       },
     ];
 

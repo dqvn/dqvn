@@ -2,6 +2,7 @@
 
 /* ── Constants ────────────────────────────────────────────────── */
 const PROGRESS_KEY = 'nl_sentence_v1';
+const SESSION_KEY  = 'nl_sentence_session_v1';
 const SEL_KEY      = 'nl_sentence_sel';
 const FS_KEY       = 'nl_sentence_fs';
 const DAILY_GOAL   = 5;
@@ -58,6 +59,25 @@ function readJSON(key, fallback) {
 }
 function saveJSON(key, val) {
   try { localStorage.setItem(key, JSON.stringify(val)); } catch {}
+}
+
+/* ── Session persistence (survive browser refresh) ─────────────── */
+function saveSession() {
+  saveJSON(SESSION_KEY, { date: todayStr(), queue, qIdx });
+}
+
+function clearSession() {
+  try { localStorage.removeItem(SESSION_KEY); } catch {}
+}
+
+/* Returns true if a valid today-session was restored into queue / qIdx */
+function restoreSession() {
+  const s = readJSON(SESSION_KEY, null);
+  if (!s || s.date !== todayStr()) return false;
+  if (!Array.isArray(s.queue) || s.queue.length === 0) return false;
+  queue = s.queue;
+  qIdx  = typeof s.qIdx === 'number' ? Math.min(s.qIdx, s.queue.length - 1) : 0;
+  return true;
 }
 
 function todayStr() {
@@ -270,7 +290,7 @@ async function loadSelectedFiles() {
     }
   }
   updateSbCount();
-  buildQueue();
+  if (!restoreSession()) buildQueue();
   renderCurrentSentence();
 }
 
@@ -278,6 +298,7 @@ function buildQueue() {
   if (allSentences.length === 0) { queue = []; qIdx = 0; return; }
   queue = shuffle(allSentences).slice(0, DAILY_GOAL);
   qIdx  = 0;
+  saveSession();
 }
 
 /* ── Game state helpers ────────────────────────────────────────── */
@@ -733,6 +754,7 @@ function skipSentence() {
 
 function nextSentence() {
   qIdx++;
+  saveSession();
   resetResult();
   if (qIdx >= queue.length) {
     if (progress.count >= DAILY_GOAL) {
@@ -949,6 +971,7 @@ function updateSbCount() {
 
 async function applyFileSelection() {
   saveJSON(SEL_KEY, [...selectedFiles]);
+  clearSession();          // new file selection → fresh queue, don't restore old one
   closeSidebar();
   _sessionXP      = 0;
   _sessionPerfect = 0;
