@@ -83,6 +83,7 @@ export default {
       num:      localNum      = {},
       wheel:    localWheel    = [],
       sentence: localSentence = {},
+      theme:    localTheme    = {},
       device:   clientDevice  = null,
     } = body;
 
@@ -100,6 +101,7 @@ export default {
     const mergedNum      = mergeNum     (localNum,      stored?.num      || {});
     const mergedWheel    = mergeWheel   (localWheel,    stored?.wheel    || []);
     const mergedSentence = mergeSentence(localSentence, stored?.sentence || {});
+    const mergedTheme    = mergeVol     (localTheme,    stored?.theme    || {});
 
     // ── Redis write ───────────────────────────────────────────────────────
     // Keep a rolling log of the last 5 device syncs
@@ -122,6 +124,7 @@ export default {
         klanken: mergedKlanken, verbs: mergedVerbs, game: mergedGame,
         vol: mergedVol, num: mergedNum, wheel: mergedWheel,
         sentence: mergedSentence,
+        theme:    mergedTheme,
         owner: { sub: user.sub, email: user.email, name: user.name },
         syncedAt: Date.now(),
         syncLog,
@@ -134,6 +137,7 @@ export default {
       klanken: mergedKlanken, verbs: mergedVerbs, game: mergedGame,
       vol: mergedVol, num: mergedNum, wheel: mergedWheel,
       sentence: mergedSentence,
+      theme:    mergedTheme,
     });
   },
 };

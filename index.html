@@ -1147,8 +1147,11 @@
   <!-- Apply saved theme before first paint to avoid flash -->
   <script>
     (function(){
-      const t = localStorage.getItem('nl_portal_theme');
-      if (t && t !== 'orange') document.documentElement.setAttribute('data-theme', t);
+      try {
+        const raw = localStorage.getItem('nl_portal_theme');
+        const v = raw ? (JSON.parse(raw)?.v || raw) : 'orange';
+        if (v && v !== 'orange') document.documentElement.setAttribute('data-theme', v);
+      } catch {}
     })();
   </script>
 
@@ -1518,7 +1521,8 @@
   }
 
   function initTheme() {
-    const saved = localStorage.getItem('nl_portal_theme') || 'orange';
+    const raw   = readJSON('nl_portal_theme', {});
+    const saved = raw?.v || 'orange';
     applyTheme(saved);
     const wrap = document.getElementById('theme-swatches');
     THEMES.forEach(t => {
@@ -1528,7 +1532,7 @@
       btn.style.background = t.swatch;
       btn.onclick = () => {
         applyTheme(t.id);
-        localStorage.setItem('nl_portal_theme', t.id);
+        try { localStorage.setItem('nl_portal_theme', JSON.stringify({ v: t.id, t: Date.now() })); } catch {}
         wrap.querySelectorAll('.theme-swatch').forEach(s => s.classList.remove('active'));
         btn.classList.add('active');
       };
