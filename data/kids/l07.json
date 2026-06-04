@@ -1,0 +1,21 @@
+{
+  "title": "Klik en Luister! 🗣️",
+  "name": "ZW woorden",
+  "subtitle": "Click on a picture to hear the Dutch word spoken slowly!",
+  "words": [
+    { "text": "zwart", "emoji": "🖤" },
+    { "text": "zwaaien", "emoji": "👋" },
+    { "text": "zwemmen", "emoji": "🏊" },
+
+    { "text": "zweet", "emoji": "😅" },
+    { "text": "zwaar", "emoji": "🏋️" },
+
+    { "text": "zweven", "emoji": "🕴️" },
+    { "text": "zwaluw", "emoji": "🐦" },
+    { "text": "zwembad", "emoji": "💦" },
+
+    { "text": "zwaan", "emoji": "🦢" },
+    { "text": "zwaard", "emoji": "⚔️" },
+    { "text": "zwerm", "emoji": "🐝" }
+  ]
+}
