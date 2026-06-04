@@ -1518,6 +1518,10 @@
 
   function applyTheme(id) {
     document.documentElement.setAttribute('data-theme', id === 'orange' ? '' : id);
+    const wrap = document.getElementById('theme-swatches');
+    if (wrap) wrap.querySelectorAll('.theme-swatch').forEach(
+      btn => btn.classList.toggle('active', btn.dataset.themeId === id)
+    );
   }
 
   function initTheme() {
@@ -1527,8 +1531,9 @@
     const wrap = document.getElementById('theme-swatches');
     THEMES.forEach(t => {
       const btn = document.createElement('button');
-      btn.className    = 'theme-swatch' + (t.id === saved ? ' active' : '');
-      btn.title        = t.name;
+      btn.className        = 'theme-swatch' + (t.id === saved ? ' active' : '');
+      btn.title            = t.name;
+      btn.dataset.themeId  = t.id;
       btn.style.background = t.swatch;
       btn.onclick = () => {
         applyTheme(t.id);
