@@ -48,7 +48,7 @@ let fsIdx         = 2;
 let _fileCache    = {};
 let _sessionXP    = 0;
 let _sessionPerfect = 0;
-let _dragSrc      = null; // { type:'answer', idx } for reorder drag
+let _drag         = null; // pointer-event drag state
 let _sidebarOpen  = false;
 
 /* ── Helpers ───────────────────────────────────────────────────── */
@@ -346,8 +346,10 @@ function renderBuildMode(sentence) {
   document.getElementById('type-area' ).classList.add('hidden');
   document.getElementById('build-area').classList.remove('hidden');
 
-  // Tokenise: split on spaces, keep punctuation attached to words
-  const words = sentence.split(/\s+/).filter(Boolean);
+  // Strip punctuation + lowercase each tile so position cues are removed
+  const words = sentence.split(/\s+/)
+    .map(w => w.replace(/^[.,!?;:'"()\-–«»]+|[.,!?;:'"()\-–«»]+$/g, '').toLowerCase())
+    .filter(Boolean);
   bankWords   = shuffle(words).map(w => ({ w, used: false }));
   answerWords = [];
   renderWordBank();
@@ -360,10 +362,9 @@ function renderWordBank() {
   bankWords.forEach((item, i) => {
     if (item.used) return;
     const t = document.createElement('span');
-    t.className = 'tile tile-bank';
+    t.className   = 'tile tile-bank';
     t.textContent = item.w;
-    t.dataset.bi  = i;
-    t.addEventListener('click', () => bankTileClick(i));
+    initTileDrag(t, 'bank', i);
     bank.appendChild(t);
   });
 }
@@ -375,67 +376,240 @@ function renderAnswerZone() {
   zone.appendChild(ph);
   ph.classList.toggle('hidden', answerWords.length > 0);
   zone.className = 'answer-zone';
-
   answerWords.forEach((w, i) => {
     const t = document.createElement('span');
     t.className   = 'tile tile-answer';
     t.textContent = w;
-    t.draggable   = true;
-    t.dataset.ai  = i;
-    t.addEventListener('click',      () => answerTileClick(i));
-    t.addEventListener('dragstart',  e  => answerDragStart(e, i));
-    t.addEventListener('dragover',   e  => { e.preventDefault(); e.dataTransfer.dropEffect = 'move'; });
-    t.addEventListener('drop',       e  => answerTileDrop(e, i));
+    initTileDrag(t, 'answer', i);
     zone.appendChild(t);
   });
 }
 
-/* Word tile interactions */
+/* Re-render answer zone with FLIP animation so tiles slide to new positions */
+function renderAnswerZoneWithFlip() {
+  const zone  = document.getElementById('answer-zone');
+  // Snapshot current positions before re-render; handle duplicate words by order
+  const snaps = [];
+  zone.querySelectorAll('.tile-answer').forEach(t =>
+    snaps.push({ word: t.textContent, rect: t.getBoundingClientRect(), used: false }));
+
+  renderAnswerZone();
+
+  zone.querySelectorAll('.tile-answer').forEach(t => {
+    const snap = snaps.find(s => s.word === t.textContent && !s.used);
+    if (!snap) return;
+    snap.used = true;
+    const r2 = t.getBoundingClientRect();
+    const dx = snap.rect.left - r2.left;
+    const dy = snap.rect.top  - r2.top;
+    if (Math.abs(dx) < 1 && Math.abs(dy) < 1) return;
+    t.style.transition = 'none';
+    t.style.transform  = `translate(${dx}px,${dy}px)`;
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      t.style.transition = 'transform 0.24s cubic-bezier(0.2,0,0,1)';
+      t.style.transform  = '';
+    }));
+  });
+}
+
+/* ── Click interactions (tap / click to add / remove) ─────────── */
 function bankTileClick(i) {
   if (bankWords[i].used) return;
   bankWords[i].used = true;
   answerWords.push(bankWords[i].w);
   renderWordBank();
-  renderAnswerZone();
+  renderAnswerZoneWithFlip();
 }
 
 function answerTileClick(i) {
-  const w = answerWords.splice(i, 1)[0];
-  // Return to bank: find matching unused slot
-  const bankIdx = bankWords.findIndex(b => b.w === w && b.used);
-  if (bankIdx !== -1) bankWords[bankIdx].used = false;
-  else bankWords.push({ w, used: false }); // fallback
+  const w  = answerWords.splice(i, 1)[0];
+  const bi = bankWords.findIndex(b => b.w === w && b.used);
+  if (bi !== -1) bankWords[bi].used = false;
+  else bankWords.push({ w, used: false });
   renderWordBank();
-  renderAnswerZone();
+  renderAnswerZoneWithFlip();
 }
 
-/* Drag-and-drop reordering within answer zone */
-function answerDragStart(e, i) {
-  _dragSrc = i;
-  e.dataTransfer.effectAllowed = 'move';
-  e.dataTransfer.setData('text/plain', i);
-  setTimeout(() => {
-    const tiles = document.querySelectorAll('#answer-zone .tile-answer');
-    if (tiles[i]) tiles[i].classList.add('dragging');
-  }, 0);
+/* ── Pointer-event drag system ──────────────────────────────────── */
+
+/*
+ * Drag design:
+ *  • Detects drag vs tap via 5px movement threshold — taps still fire click
+ *  • Ghost clone lifts off the tile and follows the pointer
+ *  • A glowing insertion caret tracks the gap position in the answer zone
+ *  • On drop: state update + FLIP animation snaps tiles to final positions
+ *  • Works on mouse and touch (pointer events, touch-action:none via CSS)
+ */
+function initTileDrag(tile, type, idx) {
+  let startX, startY, didDrag = false;
+
+  tile.addEventListener('pointerdown', e => {
+    if (e.pointerType === 'mouse' && e.button !== 0) return;
+    startX = e.clientX;
+    startY = e.clientY;
+    didDrag = false;
+
+    const onMove = me => {
+      if (_drag) return;
+      if (Math.hypot(me.clientX - startX, me.clientY - startY) > 5) {
+        didDrag = true;
+        document.removeEventListener('pointermove', onMove);
+        document.removeEventListener('pointerup',   onUp);
+        startDrag(type, idx, tile, startX, startY);
+      }
+    };
+    const onUp = () => document.removeEventListener('pointermove', onMove);
+    document.addEventListener('pointermove', onMove);
+    document.addEventListener('pointerup',   onUp, { once: true });
+  });
+
+  tile.addEventListener('click', () => {
+    if (didDrag) { didDrag = false; return; }
+    if (type === 'bank') bankTileClick(idx);
+    else                 answerTileClick(idx);
+  });
 }
 
-function answerTileDrop(e, targetIdx) {
+function startDrag(type, idx, tile, startX, startY) {
+  const rect = tile.getBoundingClientRect();
+
+  const ghost = document.createElement('span');
+  ghost.id        = 'drag-ghost';
+  ghost.className = 'tile ' + (type === 'bank' ? 'tile-bank' : 'tile-answer');
+  ghost.textContent = tile.textContent;
+  Object.assign(ghost.style, {
+    width:  rect.width  + 'px',
+    height: rect.height + 'px',
+    left:   rect.left   + 'px',
+    top:    rect.top    + 'px',
+  });
+  document.body.appendChild(ghost);
+  requestAnimationFrame(() => {
+    ghost.style.transform = 'scale(1.12) rotate(-2.5deg)';
+    ghost.style.boxShadow = '0 18px 48px rgba(0,0,0,.65), 0 0 0 2px rgba(6,214,160,.4)';
+  });
+
+  tile.classList.add('is-drag-src');
+
+  _drag = {
+    type, srcIdx: idx, ghost,
+    offX: startX - rect.left,
+    offY: startY - rect.top,
+    insertIdx: type === 'answer' ? idx : answerWords.length,
+  };
+
+  updateInsertCaret(_drag.insertIdx);
+  document.addEventListener('pointermove', onDragMove, { passive: false });
+  document.addEventListener('pointerup',   onDragEnd);
+  document.addEventListener('pointercancel', onDragEnd);
+}
+
+function onDragMove(e) {
+  if (!_drag) return;
   e.preventDefault();
-  if (_dragSrc === null || _dragSrc === targetIdx) return;
-  const moved = answerWords.splice(_dragSrc, 1)[0];
-  answerWords.splice(targetIdx, 0, moved);
-  _dragSrc = null;
-  renderAnswerZone();
-}
 
-function onBankDrop(e) {
-  // Dropping from answer zone back to bank
-  e.preventDefault();
-  if (_dragSrc !== null) {
-    answerTileClick(_dragSrc);
-    _dragSrc = null;
+  const cx = e.clientX, cy = e.clientY;
+  _drag.ghost.style.left = (cx - _drag.offX) + 'px';
+  _drag.ghost.style.top  = (cy - _drag.offY) + 'px';
+
+  const zone  = document.getElementById('answer-zone');
+  const zRect = zone.getBoundingClientRect();
+  const over  = cx > zRect.left - 28 && cx < zRect.right  + 28
+             && cy > zRect.top  - 28 && cy < zRect.bottom + 28;
+
+  zone.classList.toggle('drag-over', over);
+
+  if (over) {
+    const idx = computeInsertIdx(cx);
+    _drag.insertIdx = idx;
+    updateInsertCaret(idx);
+  } else {
+    _drag.insertIdx = null;
+    removeInsertCaret();
   }
+}
+
+function onDragEnd() {
+  if (!_drag) return;
+  document.removeEventListener('pointermove',  onDragMove);
+  document.removeEventListener('pointerup',    onDragEnd);
+  document.removeEventListener('pointercancel',onDragEnd);
+
+  const { type, srcIdx, ghost, insertIdx } = _drag;
+
+  removeInsertCaret();
+  document.getElementById('answer-zone').classList.remove('drag-over');
+  document.querySelectorAll('.is-drag-src').forEach(t => t.classList.remove('is-drag-src'));
+
+  // Fade ghost out
+  ghost.style.transition = 'opacity 0.15s ease, transform 0.15s ease';
+  ghost.style.opacity    = '0';
+  ghost.style.transform  = 'scale(0.88) rotate(0deg)';
+  setTimeout(() => ghost.remove(), 160);
+
+  // Apply state change
+  if (insertIdx !== null) {
+    if (type === 'bank') {
+      bankWords[srcIdx].used = true;
+      answerWords.splice(insertIdx, 0, bankWords[srcIdx].w);
+    } else {
+      const word = answerWords.splice(srcIdx, 1)[0];
+      answerWords.splice(insertIdx, 0, word);
+    }
+  } else if (type === 'answer') {
+    // Dropped outside → return to bank
+    const w  = answerWords.splice(srcIdx, 1)[0];
+    const bi = bankWords.findIndex(b => b.w === w && b.used);
+    if (bi !== -1) bankWords[bi].used = false;
+    else bankWords.push({ w, used: false });
+  }
+
+  _drag = null;
+  renderWordBank();
+  renderAnswerZoneWithFlip();
+}
+
+/* Returns the insertion index in the visible (non-src) tile list */
+function computeInsertIdx(cursorX) {
+  const zone  = document.getElementById('answer-zone');
+  const tiles = [...zone.querySelectorAll('.tile-answer:not(.is-drag-src)')];
+  for (let i = 0; i < tiles.length; i++) {
+    const r = tiles[i].getBoundingClientRect();
+    if (cursorX < r.left + r.width / 2) return i;
+  }
+  return tiles.length;
+}
+
+function updateInsertCaret(insertIdx) {
+  const zone  = document.getElementById('answer-zone');
+  let caret   = document.getElementById('insert-caret');
+  if (!caret) {
+    caret       = document.createElement('div');
+    caret.id    = 'insert-caret';
+    zone.appendChild(caret);
+    caret.getBoundingClientRect(); // force layout so first transition fires
+  }
+
+  const tiles = [...zone.querySelectorAll('.tile-answer:not(.is-drag-src)')];
+  const zRect = zone.getBoundingClientRect();
+  let x;
+  if (tiles.length === 0) {
+    x = zone.offsetWidth / 2;
+  } else if (insertIdx <= 0) {
+    x = tiles[0].getBoundingClientRect().left - zRect.left - 4;
+  } else if (insertIdx >= tiles.length) {
+    const lr = tiles[tiles.length - 1].getBoundingClientRect();
+    x = lr.right - zRect.left + 4;
+  } else {
+    const a = tiles[insertIdx - 1].getBoundingClientRect();
+    const b = tiles[insertIdx    ].getBoundingClientRect();
+    x = (a.right + b.left) / 2 - zRect.left;
+  }
+  caret.style.left = Math.max(2, x) + 'px';
+}
+
+function removeInsertCaret() {
+  document.getElementById('insert-caret')?.remove();
 }
 
 /* ── Check answer ──────────────────────────────────────────────── */
