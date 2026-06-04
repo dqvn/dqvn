@@ -1,6 +1,6 @@
 # Learn Dutch Words — Project Reference
 
-A static web app for learning Dutch vocabulary and dialogues, deployed via GitHub Pages. No backend required — all state lives in `localStorage` and JSON data files. Cloud sync via Cloudflare Worker + Upstash Redis (optional, Google Sign-In required).
+A static web app for learning Dutch (A2 level) deployed via GitHub Pages. No backend required — all state lives in `localStorage` and JSON data files. Cloud sync via Cloudflare Worker + Upstash Redis (optional, Google Sign-In required).
 
 ---
 
@@ -8,7 +8,7 @@ A static web app for learning Dutch vocabulary and dialogues, deployed via GitHu
 
 | File | Description |
 |---|---|
-| `index.html` | **Portal / Home** — learning hub: hero + stats dashboard, grouped tool launcher (3 categories), progress cards, settings, coming-soon, plan comparison (guest vs account) |
+| `index.html` | **Portal / Home** — learning hub: hero + stats strip (streak, cards, klanken, verbs, XP), tool launcher grouped by A2 skill, progress cards, settings, plan comparison |
 | `startnl.html` | Main vocabulary learner — word table + flashcard game + cloud sync (was `index.html`) |
 | `vanstart.html` | VanStart course vocabulary learner (same layout as `startnl.html`, separate TTS script) |
 | `4000.html` | 4 000 most-common Dutch words — vocabulary table + TTS |
@@ -22,6 +22,9 @@ A static web app for learning Dutch vocabulary and dialogues, deployed via GitHu
 | `stories1–5.html` | Individual story lesson pages |
 | `number.html` | Dutch Numbers Game — 5-level kids game (1–100); Learn / Listen / Quiz modes; star progress + cloud sync |
 | `wheel.html` | Wheel of Names — spinning question-picker; user-managed packages; TTS on result; cloud sync |
+| `rss.html` | Nieuws — reads live Dutch news from nu.nl via Worker proxy; word-tap translation popup; read-progress tracking |
+| `podcast.html` | Podcast Luisteren — streams *Met het Oog op Morgen* (NPO Radio 1) via Worker proxy; in-page audio player; word-tap translation; listened-episode tracking |
+| `sentence.html` | Zinnen Bouwen — A2 sentence-building game; two modes (⌨️ type / 🧩 drag-and-drop tiles); smart fuzzy scoring; daily 5-sentence streak; XP; cloud sync |
 | `game.html` | Standalone legacy vocabulary quiz |
 | `demo.html` | Scratch / demo page |
 
@@ -29,11 +32,14 @@ A static web app for learning Dutch vocabulary and dialogues, deployed via GitHu
 
 ```
 index.html (portal)
-  └── tool cards → startnl.html, vanstart.html, kids.html, number.html,
-                   stories.html, stories2.html,
-                   klanken.html, dialogues.html, wheel.html,
-                   grammar.html, verbs.html
-  └── "← Terug naar Portaal" in all tool pages' sidebar / launcher overlay
+  └── tool cards (14 tools, 5 A2 skill groups)
+        🏗️ Taalkennis     → startnl.html, vanstart.html, grammar.html,
+                             verbs.html, kids.html, number.html
+        📖 Leesvaardigheid → stories.html, stories2.html, rss.html
+        🎧 Luistervaardigheid → klanken.html, podcast.html
+        ✍️ Schrijfvaardigheid → sentence.html
+        🗣️ Spreekvaardigheid  → dialogues.html, wheel.html
+  └── "← Terug" / "← Terug naar Portaal" in all tool pages
 
 Tool pages' back-links → index.html (portal)
 ```
@@ -48,12 +54,12 @@ Single-page hub with inline CSS + JS (no external scripts except `sync.js`).
 | Section | Description |
 |---|---|
 | Sticky header | Dutch-flag emblem + "Leer Nederlands" brand + compact auth pill (sync.js) |
-| Hero | `bg2.jpg` photo background (warm Dutch dusk scene) with parallax scrim; personalized greeting; stats strip |
-| Voortgang | 4 progress cards: Vocabulaire, Klanken, Werkwoorden, Dialogen — live from localStorage |
-| Leertools | 11 tool cards grouped by category: 📚 Woordenschat (6) / 🎙️ Uitspreken (3) / 📖 Grammatica (2) |
+| Hero | `bg2.jpg` photo background with parallax scrim; personalized greeting; stats strip: 🔥 streak · 📚 cards · 🎵 klanken · 🔄 verbs |
+| Voortgang | 8 progress cards (Vocabulaire, Klanken, Werkwoorden, Dialogen, Verhalen, Nieuws, Podcast, Zinnen Bouwen) — live from localStorage; Zinnen Bouwen card shows today's count + streak + total XP |
+| Leertools | 14 tool cards grouped by **A2 exam skill**: 🏗️ Taalkennis (6) / 📖 Leesvaardigheid (3) / 🎧 Luistervaardigheid (2) / ✍️ Schrijfvaardigheid (1) / 🗣️ Spreekvaardigheid (2); group count badge is derived dynamically from the TOOLS array |
 | Instellingen | Volume slider (`nl_vocab_vol`) + TTS speed slider (`nl_tts_rate`) |
-| Binnenkort | 4 placeholder cards for future features |
-| Waarom aanmelden? | Two pricing-plan-style cards: guest (features available) vs account (sync + future features + CTA) |
+| Binnenkort | Placeholder cards for future features |
+| Waarom aanmelden? | Two plan cards: guest (features available) vs account (sync + CTA) |
 
 ### Background layering
 ```
@@ -81,6 +87,11 @@ initSpeed()          // reads nl_tts_rate, writes on change
 | Klanken done | Count truthy entries in `klanken-v1` |
 | Verbs learned | Count verbs where `correct/seen > 0.2` in `nl_verbs_v3` |
 | Dialogues done | Count keys in `nl_dlg_v1.stats` |
+| RSS articles read | `nl_rss_v1.total` (target: 30) |
+| Podcast episodes | `nl_podcast_v1.total` (target: 20) |
+| Sentences today | `nl_sentence_v1.count` if `date === today` (daily goal: 5) |
+| Sentence streak | `nl_sentence_v1.streak` (consecutive days reaching daily goal) |
+| Sentence XP | `nl_sentence_v1.xp` (shown in Zinnen Bouwen progress card) |
 
 ---
 
@@ -91,10 +102,10 @@ All shared files live under `assets/`, organised into three subdirectories:
 ```
 assets/
   css/   style.css  sync.css  dlg.css  klanken.css  kids.css  verbs.css  gstyles.css
-         wheel.css
+         wheel.css  podcast.css  sentence.css
   js/    common.js  sync.js  ttsscript.js  ttsvanstartscript.js  tts4kscript.js
          game.js  flashcard.js  dlgscript.js  kidsscript.js  klanken.js
-         verbs.js  gapp.js  wheel.js  NoSleep.min.js
+         verbs.js  gapp.js  wheel.js  podcast.js  sentence.js  NoSleep.min.js
   img/   bg.jpg  bg1.jpg  bg2.jpg  dutch.ico  no-image.jpg
 ```
 
@@ -107,7 +118,11 @@ All HTML files reference these subdirectory paths (e.g. `assets/css/style.css`, 
 | File | Role |
 |---|---|
 | `assets/js/common.js` | Shared: voice selector, table render, menu toggle, hamburger, word badges, font-size control, active-lesson highlight, lazy `puter.js` loader, `_getTTSRate()` helper |
-| `assets/js/sync.js` | Cloud sync — Google Sign-In (GIS), Upstash Redis via Cloudflare Worker, smart auto-sync |
+| `assets/js/sync.js` | Cloud sync — Google Sign-In (GIS), Upstash Redis via Cloudflare Worker, smart auto-sync; syncs 9 keys including `nl_sentence_v1` |
+| `assets/js/podcast.js` | Podcast page logic — loads episodes from Worker `/podcast`, localStorage cache (`nl_podcast_cache_v1`), audio player, listened tracking, word-tap translation popup |
+| `assets/js/sentence.js` | Sentence-building game — file selector, queue with session persistence (`nl_sentence_session_v1`), fuzzy 5-layer scorer (Levenshtein), pointer-event drag-and-drop with FLIP animation, daily streak + XP |
+| `assets/css/podcast.css` | Dark theme for `podcast.html` — episode accordion cards, native `<audio>` styling, progress strip, word-popup |
+| `assets/css/sentence.css` | Dark theme for `sentence.html` — word-tile drag system (ghost, insert caret, FLIP), daily-strip dots, file sidebar, game card |
 | `assets/js/ttsscript.js` | `initPage()` config for `startnl.html` (main courses) |
 | `assets/js/ttsvanstartscript.js` | `initPage()` config for `vanstart.html` |
 | `assets/js/tts4kscript.js` | `initPage()` config for `4000.html` |
@@ -174,9 +189,10 @@ Google Cloud Console: add your GitHub Pages origin to **Authorized JavaScript or
 | `nl_game_progress_v1` | Game seen-words per chapter | Union of word arrays per chapter |
 | `nl_num_progress` | Number game level/stars progress | Per-level: `max(stars)` per mode; `learn` flag unioned |
 | `nl_vocab_vol` | TTS volume `{ v: 0–100, t: timestamp }` | Most recent timestamp wins |
-| `nl_wheel_pkgs` | Wheel question packages array | Last-write wins (full blob replace) |
+| `nl_wheel_pkgs` | Wheel question packages array | Union by package ID; more-items version wins |
+| `nl_sentence_v1` | Sentence-builder streak, daily count, XP `{ date, count, streak, xp, lastGoalDate }` | Max XP; most-recent date wins for count; max streak with most-recent `lastGoalDate` |
 
-Keys intentionally **not** synced (device-specific): `nl_tts_voice_v1`, `nl_tts_rate`, `nl_vocab_fs`, `nl_fc_word_size`, `nl_verbs_theme`, `nl_verbs_font`, `klanken-voice`, `klanken-vol`, `kids_tts_speed`. Cache keys (`nl_dlg_*`) are also excluded.
+Keys intentionally **not** synced (device-specific or ephemeral): `nl_tts_voice_v1`, `nl_tts_rate`, `nl_vocab_fs`, `nl_fc_word_size`, `nl_verbs_theme`, `nl_verbs_font`, `klanken-voice`, `klanken-vol`, `kids_tts_speed`. Cache keys (`nl_dlg_*`, `nl_podcast_cache_v1`, `nl_rss_*`) are also excluded. Session-resume key `nl_sentence_session_v1` (today's queue + position) is local-only. Podcast/RSS read-history (`nl_podcast_v1`, `nl_rss_v1`) is local-only.
 
 ### Auto-sync triggers (no manual action needed)
 
@@ -793,6 +809,69 @@ Shown over the full screen after the wheel stops. Contains:
 
 ### Sync drawer
 `#sync-section` lives inside `#sync-drawer` (right-side panel, `transform: translateX(105%)` → `translateX(0)`). A `MutationObserver` on `#sync-section` updates the nav avatar button on login/logout. Context class: `.sidebar-dark`.
+
+---
+
+## RSS Nieuws — `rss.html` / `assets/js/rss.js`
+
+Live Dutch news reader. Fetches `nu.nl` RSS via the Cloudflare Worker `/rss` endpoint (7-day Upstash Redis cache + 1-hour in-memory cache). Articles rendered as accordion cards; word selection triggers a translation popup (MyMemory API, session cache `_trCache`).
+
+### localStorage keys
+| Key | Content |
+|---|---|
+| `nl_rss_cache_v1` | Client-side article cache (1 h TTL) |
+| `nl_rss_v1` | `{ read: [], total: 0 }` — read article GUIDs + total count |
+| `nl_rss_fs` | Font-size step index (0–4) |
+
+---
+
+## Podcast Luisteren — `podcast.html` / `assets/js/podcast.js`
+
+Dutch podcast player for *Met het Oog op Morgen* (NPO Radio 1). Episodes fetched from Worker `/podcast` endpoint which parses the NPO RSS 2.0 XML feed, extracts `<enclosure>` audio URLs and `<itunes:duration>`, and caches in Upstash Redis (`podcast:npo:moem:v1`, 7-day TTL). Native `<audio preload="none">` per episode; accordion expand collapses others and pauses audio.
+
+### localStorage keys
+| Key | Content |
+|---|---|
+| `nl_podcast_cache_v1` | Client-side episode cache (1 h TTL) |
+| `nl_podcast_v1` | `{ listened: [], total: 0 }` — listened episode GUIDs + total count |
+| `nl_podcast_fs` | Font-size step index (0–4) |
+
+---
+
+## Zinnen Bouwen — `sentence.html` / `assets/js/sentence.js`
+
+A2 sentence-building game. Loads Dutch vocabulary from `data/vocabularies/*.json` (user-selectable file groups). Each session: 5 randomly queued sentences shown in English; learner types or drag-builds the Dutch sentence.
+
+### Modes
+| Mode | Description |
+|---|---|
+| ⌨️ Typen | Type the Dutch sentence; live feedback while typing; Enter to check |
+| 🧩 Bouwen | Click shuffled word tiles into answer zone; drag to reorder; tiles are lowercased with punctuation stripped |
+
+### Scoring algorithm (5 layers)
+1. **Exact** — normalised strings match → ✅ 3 XP
+2. **Levenshtein ≤ max(2, len÷12)** — minor typo → ✅ 2 XP (type mode only)
+3. **Sorted word set match** — right words, wrong order → 🔄 hint
+4. **≥ 60% fuzzy word match** — shows missing words → 🟡 hint
+5. **Otherwise** → ❌ retry; reveal button after 3 failed attempts
+
+### Drag-and-drop system
+Pointer-event based (mouse + touch). Ghost clone lifts on drag. Glowing insert caret (`#insert-caret`) slides to show drop position with `transition: left 0.1s`. On drop: FLIP animation snaps tiles to final positions (`translate → identity, 0.24 s cubic-bezier`). Click-to-add / click-to-remove always available as fallback.
+
+### localStorage keys
+| Key | Content |
+|---|---|
+| `nl_sentence_v1` | `{ date, count, streak, xp, lastGoalDate }` — synced |
+| `nl_sentence_session_v1` | `{ date, queue, qIdx }` — today's queue + position; survives refresh; cleared on file-selection change |
+| `nl_sentence_sel` | Selected file IDs array |
+| `nl_sentence_fs` | Font-size step index (0–4) |
+
+### Worker endpoints (Cloudflare — `worker/index.js`)
+| Endpoint | Description |
+|---|---|
+| `POST /sync` | Bidirectional merge of 9 progress keys including `sentence` |
+| `GET /rss` | Proxies `nu.nl` RSS; 2-layer cache (memory + Redis) |
+| `GET /podcast` | Proxies NPO RSS feed; regex XML parser; 2-layer cache (memory + Redis) |
 
 ---
 
