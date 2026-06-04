@@ -522,6 +522,7 @@ body {
     margin-bottom: 10px;
     animation: wInfoIn .18s ease;
 }
+#wheel-info.hidden { display: none; }
 @keyframes wInfoIn {
     from { opacity: 0; transform: translateY(-4px); }
     to   { opacity: 1; transform: none; }
