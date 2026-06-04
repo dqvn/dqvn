@@ -1535,6 +1535,8 @@
         try { localStorage.setItem('nl_portal_theme', JSON.stringify({ v: t.id, t: Date.now() })); } catch {}
         wrap.querySelectorAll('.theme-swatch').forEach(s => s.classList.remove('active'));
         btn.classList.add('active');
+        // Sync immediately — theme is a deliberate action, no debounce needed
+        if (typeof syncNow === 'function') syncNow(true);
       };
       wrap.appendChild(btn);
     });
