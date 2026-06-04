@@ -1009,21 +1009,32 @@
   'use strict';
 
   /* ─── Tools manifest ─────────────────────────────────────────── */
+  /* Tools ordered by A2 exam skill — Taalkennis (foundation) first, then the
+     four examined skills: Lezen · Luisteren · Schrijven · Spreken            */
   const TOOLS = [
-    { href:'startnl.html',   icon:'📖', nl:'Vocabulaire',  en:'Woordenlijst & flashcards', color:'#2563eb', badge:'Actief', group:'📚 Woordenschat' },
-    { href:'vanstart.html',  icon:'🚀', nl:'VanStart',     en:'NT2 beginnerscursus',       color:'#059669', badge:'Actief', group:'📚 Woordenschat' },
-    { href:'kids.html',      icon:'🧒', nl:'Kids',         en:'Kinderen woordenschat',     color:'#16a34a', badge:'Nieuw',  group:'📚 Woordenschat' },
-    { href:'number.html',    icon:'🔢', nl:'Getallen',     en:'Leer tellen van 1 tot 100', color:'#ea580c', badge:'Nieuw',  group:'📚 Woordenschat' },
-    { href:'stories.html',   icon:'📕', nl:'Kinderverhalen', en:'Interactieve verhalen voor kinderen', color:'#6A67CE',        group:'📚 Woordenschat' },
-    { href:'stories2.html',  icon:'📖', nl:'Korte Verhalen', en:'10 beginnersverhalen met woordenschat', color:'#7c3aed', badge:'Nieuw', group:'📚 Woordenschat' },
-    { href:'klanken.html',   icon:'🎵', nl:'Klanken',      en:'Uitspraak leren',           color:'#7c3aed', badge:'Actief', group:'🎙️ Uitspreken'   },
-    { href:'dialogues.html', icon:'💬', nl:'Dialogen',     en:'Gespreksoefening',          color:'#0891b2',                 group:'🎙️ Uitspreken'   },
-    { href:'wheel.html',     icon:'🎡', nl:'Draairad',     en:'Willekeurige oefenvragen',  color:'#9b5de5', badge:'Nieuw',  group:'🎙️ Uitspreken'   },
-    { href:'grammar.html',   icon:'📚', nl:'Grammatica',   en:'Regels & uitleg',           color:'#b45309',                 group:'📖 Grammatica'   },
-    { href:'verbs.html',     icon:'🔄', nl:'Werkwoorden',  en:'Vervoeging oefenen',        color:'#dc2626', badge:'Actief', group:'📖 Grammatica'   },
-    { href:'rss.html',       icon:'📰', nl:'Nieuws',       en:'Lees echt Nederlands nieuws', color:'#0891b2', badge:'Nieuw',  group:'📰 Lezen'        },
-    { href:'podcast.html',   icon:'🎧', nl:'Podcast',       en:'Met het Oog op Morgen – NPO', color:'#9b5de5', badge:'Nieuw',  group:'🎧 Luisteren'    },
-    { href:'sentence.html',  icon:'✏️', nl:'Zinnen Bouwen', en:'Schrijf & bouw Nederlandse zinnen', color:'#06d6a0', badge:'Nieuw',  group:'✍️ Schrijven'    },
+    /* ── Taalkennis: vocabulary & grammar that underpin all four skills ── */
+    { href:'startnl.html',   icon:'📖', nl:'Vocabulaire',    en:'Woordenlijst & flashcards',             color:'#2563eb', badge:'Actief', group:'🏗️ Taalkennis'        },
+    { href:'vanstart.html',  icon:'🚀', nl:'VanStart',       en:'NT2 beginnerscursus',                   color:'#059669', badge:'Actief', group:'🏗️ Taalkennis'        },
+    { href:'grammar.html',   icon:'📚', nl:'Grammatica',     en:'Regels & uitleg',                       color:'#b45309',                 group:'🏗️ Taalkennis'        },
+    { href:'verbs.html',     icon:'🔄', nl:'Werkwoorden',    en:'Vervoeging oefenen',                    color:'#dc2626', badge:'Actief', group:'🏗️ Taalkennis'        },
+    { href:'kids.html',      icon:'🧒', nl:'Kids',           en:'Kinderen woordenschat',                 color:'#16a34a', badge:'Nieuw',  group:'🏗️ Taalkennis'        },
+    { href:'number.html',    icon:'🔢', nl:'Getallen',       en:'Leer tellen van 1 tot 100',             color:'#ea580c', badge:'Nieuw',  group:'🏗️ Taalkennis'        },
+
+    /* ── Leesvaardigheid: read & understand Dutch texts ─────────────── */
+    { href:'stories.html',   icon:'📕', nl:'Kinderverhalen', en:'Interactieve verhalen voor kinderen',   color:'#6A67CE',                 group:'📖 Leesvaardigheid'   },
+    { href:'stories2.html',  icon:'📖', nl:'Korte Verhalen', en:'10 beginnersverhalen met woordenschat', color:'#7c3aed', badge:'Nieuw',  group:'📖 Leesvaardigheid'   },
+    { href:'rss.html',       icon:'📰', nl:'Nieuws',         en:'Lees echt Nederlands nieuws',           color:'#0891b2', badge:'Nieuw',  group:'📖 Leesvaardigheid'   },
+
+    /* ── Luistervaardigheid: understand spoken Dutch ─────────────────── */
+    { href:'klanken.html',   icon:'🎵', nl:'Klanken',        en:'Uitspraak & Nederlandse klanken',       color:'#7c3aed', badge:'Actief', group:'🎧 Luistervaardigheid' },
+    { href:'podcast.html',   icon:'🎧', nl:'Podcast',        en:'Met het Oog op Morgen – NPO Radio 1',   color:'#9b5de5', badge:'Nieuw',  group:'🎧 Luistervaardigheid' },
+
+    /* ── Schrijfvaardigheid: write correct Dutch sentences ───────────── */
+    { href:'sentence.html',  icon:'✏️', nl:'Zinnen Bouwen',  en:'Schrijf & bouw Nederlandse zinnen',     color:'#06d6a0', badge:'Nieuw',  group:'✍️ Schrijfvaardigheid' },
+
+    /* ── Spreekvaardigheid: speak & have conversations in Dutch ─────── */
+    { href:'dialogues.html', icon:'💬', nl:'Dialogen',       en:'Gespreksoefening met rolverdeling',     color:'#0891b2',                 group:'🗣️ Spreekvaardigheid' },
+    { href:'wheel.html',     icon:'🎡', nl:'Draairad',       en:'Willekeurige spreekvragen',             color:'#9b5de5', badge:'Nieuw',  group:'🗣️ Spreekvaardigheid' },
   ];
 
   /* ─── Helpers ─────────────────────────────────────────────────── */
