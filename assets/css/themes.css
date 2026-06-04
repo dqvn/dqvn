@@ -1,0 +1,326 @@
+/* ================================================================
+   THEMES.CSS — Portal theme variables for all sub-pages
+   Link AFTER page-specific CSS so [data-theme] selectors win.
+
+   Each page adds this as its last CSS link, plus a flash-prevention
+   script at the top of <head> that reads nl_portal_theme from
+   localStorage and sets data-theme on <html> before first paint.
+   ================================================================ */
+
+/* ── Orange / Warm (default light) ───────────────────────────── */
+[data-theme="orange"] {
+  color-scheme: light;
+  /* portal vars */
+  --bg:           #fef7ed;
+  --surface:      #ffffff;
+  --surface-2:    #fff8f0;
+  --border:       #fed7aa;
+  --border-soft:  #fde8c8;
+  --accent:       #ea580c;
+  --accent-h:     #c2410c;
+  --accent-glow:  rgba(234,88,12,.18);
+  --green:        #16a34a;
+  --red:          #dc2626;
+  --text:         #1c1917;
+  --text-2:       #57534e;
+  --text-3:       #a8a29e;
+  --shadow-xs:    0 1px 2px rgba(0,0,0,.06);
+  --shadow-sm:    0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.05);
+  --shadow:       0 4px 14px rgba(0,0,0,.08), 0 2px 6px rgba(0,0,0,.04);
+  --shadow-md:    0 8px 28px rgba(0,0,0,.10), 0 3px 8px rgba(0,0,0,.05);
+  /* sub-page aliases */
+  --card:         #ffffff;
+  --bg2:          #ffffff;
+  --bg3:          #fff8f0;
+  --txt:          #1c1917;
+  --muted:        #a8a29e;
+  --sec:          #57534e;
+  --bdr:          #fed7aa;
+  --acc:          #ea580c;
+  --acc2:         #c2410c;
+  --sh:           0 1px 3px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.06);
+  --sh-h:         0 6px 24px rgba(0,0,0,.14);
+  /* grammar-page vars */
+  --panel:        #ffffff;
+  --elev:         #fff8f0;
+  --brand:        #ea580c;
+  --brand-weak:   #fde8c8;
+  --link:         #c2410c;
+  --ok:           #16a34a;
+  --warn:         #d97706;
+  --err:          #dc2626;
+}
+
+/* ── Blue / Oceaan ────────────────────────────────────────────── */
+[data-theme="blue"] {
+  color-scheme: light;
+  --bg:           #eff6ff;
+  --surface:      #ffffff;
+  --surface-2:    #f0f9ff;
+  --border:       #bfdbfe;
+  --border-soft:  #dbeafe;
+  --accent:       #2563eb;
+  --accent-h:     #1d4ed8;
+  --accent-glow:  rgba(37,99,235,.18);
+  --green:        #16a34a;
+  --red:          #dc2626;
+  --text:         #1e3a5f;
+  --text-2:       #475569;
+  --text-3:       #94a3b8;
+  --shadow-xs:    0 1px 2px rgba(0,0,0,.05);
+  --shadow-sm:    0 1px 3px rgba(0,0,0,.07), 0 1px 2px rgba(0,0,0,.04);
+  --shadow:       0 4px 14px rgba(0,0,0,.07), 0 2px 6px rgba(0,0,0,.03);
+  --shadow-md:    0 8px 28px rgba(0,0,0,.09), 0 3px 8px rgba(0,0,0,.04);
+  --card:         #ffffff;
+  --bg2:          #ffffff;
+  --bg3:          #f0f9ff;
+  --txt:          #1e3a5f;
+  --muted:        #94a3b8;
+  --sec:          #475569;
+  --bdr:          #bfdbfe;
+  --acc:          #2563eb;
+  --acc2:         #1d4ed8;
+  --sh:           0 1px 3px rgba(0,0,0,.07), 0 4px 12px rgba(0,0,0,.05);
+  --sh-h:         0 6px 24px rgba(0,0,0,.12);
+  --panel:        #ffffff;
+  --elev:         #f0f9ff;
+  --brand:        #2563eb;
+  --brand-weak:   #dbeafe;
+  --link:         #1d4ed8;
+  --ok:           #16a34a;
+  --warn:         #d97706;
+  --err:          #dc2626;
+}
+
+/* ── Green / Natuur ───────────────────────────────────────────── */
+[data-theme="green"] {
+  color-scheme: light;
+  --bg:           #f0fdf4;
+  --surface:      #ffffff;
+  --surface-2:    #f0fdf4;
+  --border:       #bbf7d0;
+  --border-soft:  #dcfce7;
+  --accent:       #16a34a;
+  --accent-h:     #15803d;
+  --accent-glow:  rgba(22,163,74,.18);
+  --green:        #16a34a;
+  --red:          #dc2626;
+  --text:         #14532d;
+  --text-2:       #4b6b53;
+  --text-3:       #86a594;
+  --shadow-xs:    0 1px 2px rgba(0,0,0,.05);
+  --shadow-sm:    0 1px 3px rgba(0,0,0,.07), 0 1px 2px rgba(0,0,0,.04);
+  --shadow:       0 4px 14px rgba(0,0,0,.07), 0 2px 6px rgba(0,0,0,.03);
+  --shadow-md:    0 8px 28px rgba(0,0,0,.09), 0 3px 8px rgba(0,0,0,.04);
+  --card:         #ffffff;
+  --bg2:          #ffffff;
+  --bg3:          #f0fdf4;
+  --txt:          #14532d;
+  --muted:        #86a594;
+  --sec:          #4b6b53;
+  --bdr:          #bbf7d0;
+  --acc:          #16a34a;
+  --acc2:         #15803d;
+  --sh:           0 1px 3px rgba(0,0,0,.07), 0 4px 12px rgba(0,0,0,.05);
+  --sh-h:         0 6px 24px rgba(0,0,0,.12);
+  --panel:        #ffffff;
+  --elev:         #f0fdf4;
+  --brand:        #16a34a;
+  --brand-weak:   #dcfce7;
+  --link:         #15803d;
+  --ok:           #16a34a;
+  --warn:         #d97706;
+  --err:          #dc2626;
+}
+
+/* ── Purple / Amethist ────────────────────────────────────────── */
+[data-theme="purple"] {
+  color-scheme: light;
+  --bg:           #faf5ff;
+  --surface:      #ffffff;
+  --surface-2:    #f5f0ff;
+  --border:       #ddd6fe;
+  --border-soft:  #ede9fe;
+  --accent:       #7c3aed;
+  --accent-h:     #6d28d9;
+  --accent-glow:  rgba(124,58,237,.18);
+  --green:        #16a34a;
+  --red:          #dc2626;
+  --text:         #3b0764;
+  --text-2:       #6b4fa0;
+  --text-3:       #a78bca;
+  --shadow-xs:    0 1px 2px rgba(0,0,0,.05);
+  --shadow-sm:    0 1px 3px rgba(0,0,0,.07), 0 1px 2px rgba(0,0,0,.04);
+  --shadow:       0 4px 14px rgba(0,0,0,.07), 0 2px 6px rgba(0,0,0,.03);
+  --shadow-md:    0 8px 28px rgba(0,0,0,.09), 0 3px 8px rgba(0,0,0,.04);
+  --card:         #ffffff;
+  --bg2:          #ffffff;
+  --bg3:          #f5f0ff;
+  --txt:          #3b0764;
+  --muted:        #a78bca;
+  --sec:          #6b4fa0;
+  --bdr:          #ddd6fe;
+  --acc:          #7c3aed;
+  --acc2:         #6d28d9;
+  --sh:           0 1px 3px rgba(0,0,0,.07), 0 4px 12px rgba(0,0,0,.05);
+  --sh-h:         0 6px 24px rgba(0,0,0,.12);
+  --panel:        #ffffff;
+  --elev:         #f5f0ff;
+  --brand:        #7c3aed;
+  --brand-weak:   #ede9fe;
+  --link:         #6d28d9;
+  --ok:           #16a34a;
+  --warn:         #d97706;
+  --err:          #dc2626;
+}
+
+/* ── Rose / Roos ──────────────────────────────────────────────── */
+[data-theme="rose"] {
+  color-scheme: light;
+  --bg:           #fff1f2;
+  --surface:      #ffffff;
+  --surface-2:    #fff0f3;
+  --border:       #fecdd3;
+  --border-soft:  #ffe4e6;
+  --accent:       #e11d48;
+  --accent-h:     #be123c;
+  --accent-glow:  rgba(225,29,72,.18);
+  --green:        #16a34a;
+  --red:          #dc2626;
+  --text:         #4c0519;
+  --text-2:       #6b3045;
+  --text-3:       #c08090;
+  --shadow-xs:    0 1px 2px rgba(0,0,0,.05);
+  --shadow-sm:    0 1px 3px rgba(0,0,0,.07), 0 1px 2px rgba(0,0,0,.04);
+  --shadow:       0 4px 14px rgba(0,0,0,.07), 0 2px 6px rgba(0,0,0,.03);
+  --shadow-md:    0 8px 28px rgba(0,0,0,.09), 0 3px 8px rgba(0,0,0,.04);
+  --card:         #ffffff;
+  --bg2:          #ffffff;
+  --bg3:          #fff0f3;
+  --txt:          #4c0519;
+  --muted:        #c08090;
+  --sec:          #6b3045;
+  --bdr:          #fecdd3;
+  --acc:          #e11d48;
+  --acc2:         #be123c;
+  --sh:           0 1px 3px rgba(0,0,0,.07), 0 4px 12px rgba(0,0,0,.05);
+  --sh-h:         0 6px 24px rgba(0,0,0,.12);
+  --panel:        #ffffff;
+  --elev:         #fff0f3;
+  --brand:        #e11d48;
+  --brand-weak:   #ffe4e6;
+  --link:         #be123c;
+  --ok:           #16a34a;
+  --warn:         #d97706;
+  --err:          #dc2626;
+}
+
+/* ── Amber / Goud ─────────────────────────────────────────────── */
+[data-theme="amber"] {
+  color-scheme: light;
+  --bg:           #fffbeb;
+  --surface:      #ffffff;
+  --surface-2:    #fef9e7;
+  --border:       #fde68a;
+  --border-soft:  #fef3c7;
+  --accent:       #d97706;
+  --accent-h:     #b45309;
+  --accent-glow:  rgba(217,119,6,.18);
+  --green:        #16a34a;
+  --red:          #dc2626;
+  --text:         #451a03;
+  --text-2:       #78430a;
+  --text-3:       #b08050;
+  --shadow-xs:    0 1px 2px rgba(0,0,0,.05);
+  --shadow-sm:    0 1px 3px rgba(0,0,0,.07), 0 1px 2px rgba(0,0,0,.04);
+  --shadow:       0 4px 14px rgba(0,0,0,.07), 0 2px 6px rgba(0,0,0,.03);
+  --shadow-md:    0 8px 28px rgba(0,0,0,.09), 0 3px 8px rgba(0,0,0,.04);
+  --card:         #ffffff;
+  --bg2:          #ffffff;
+  --bg3:          #fef9e7;
+  --txt:          #451a03;
+  --muted:        #b08050;
+  --sec:          #78430a;
+  --bdr:          #fde68a;
+  --acc:          #d97706;
+  --acc2:         #b45309;
+  --sh:           0 1px 3px rgba(0,0,0,.07), 0 4px 12px rgba(0,0,0,.05);
+  --sh-h:         0 6px 24px rgba(0,0,0,.12);
+  --panel:        #ffffff;
+  --elev:         #fef9e7;
+  --brand:        #d97706;
+  --brand-weak:   #fef3c7;
+  --link:         #b45309;
+  --ok:           #16a34a;
+  --warn:         #d97706;
+  --err:          #dc2626;
+}
+
+/* ── Dark / Nacht ─────────────────────────────────────────────── */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg:           #0f172a;
+  --surface:      #1e293b;
+  --surface-2:    #273549;
+  --border:       rgba(255,255,255,.12);
+  --border-soft:  rgba(255,255,255,.07);
+  --accent:       #6366f1;
+  --accent-h:     #4f46e5;
+  --accent-glow:  rgba(99,102,241,.24);
+  --green:        #22c55e;
+  --red:          #f87171;
+  --text:         #f1f5f9;
+  --text-2:       #94a3b8;
+  --text-3:       #64748b;
+  --shadow-xs:    0 1px 2px rgba(0,0,0,.4);
+  --shadow-sm:    0 1px 3px rgba(0,0,0,.5), 0 1px 2px rgba(0,0,0,.4);
+  --shadow:       0 4px 14px rgba(0,0,0,.5), 0 2px 6px rgba(0,0,0,.4);
+  --shadow-md:    0 8px 28px rgba(0,0,0,.6), 0 3px 8px rgba(0,0,0,.45);
+  --card:         #1e293b;
+  --bg2:          #1e293b;
+  --bg3:          #273549;
+  --txt:          #f1f5f9;
+  --muted:        rgba(241,245,249,.52);
+  --sec:          #94a3b8;
+  --bdr:          rgba(255,255,255,.12);
+  --acc:          #6366f1;
+  --acc2:         #4f46e5;
+  --sh:           0 1px 3px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.3);
+  --sh-h:         0 6px 24px rgba(0,0,0,.5);
+  /* grammar-page vars — keep grammar's own dark palette */
+  --panel:        #0f172a;
+  --elev:         #121a2d;
+  --brand:        #22d3ee;
+  --brand-weak:   #155e75;
+  --link:         #38bdf8;
+  --ok:           #34d399;
+  --warn:         #f59e0b;
+  --err:          #ef4444;
+}
+
+/* ================================================================
+   Top-nav background override for pages with hardcoded dark nav
+   (sentence/podcast/rss/wheel/number all use rgba(15,23,42,.96))
+   ================================================================ */
+[data-theme="orange"] #top-nav { background: rgba(254,247,237,.95); }
+[data-theme="blue"]   #top-nav { background: rgba(239,246,255,.95); }
+[data-theme="green"]  #top-nav { background: rgba(240,253,244,.95); }
+[data-theme="purple"] #top-nav { background: rgba(250,245,255,.95); }
+[data-theme="rose"]   #top-nav { background: rgba(255,241,242,.95); }
+[data-theme="amber"]  #top-nav { background: rgba(255,251,235,.95); }
+[data-theme="dark"]   #top-nav { background: rgba(15,23,42,.96);    }
+
+/* Nav link colour on light themes */
+[data-theme="orange"] #top-nav .nav-back,
+[data-theme="blue"]   #top-nav .nav-back,
+[data-theme="green"]  #top-nav .nav-back,
+[data-theme="purple"] #top-nav .nav-back,
+[data-theme="rose"]   #top-nav .nav-back,
+[data-theme="amber"]  #top-nav .nav-back { color: var(--accent); }
+
+[data-theme="orange"] #top-nav .nav-title,
+[data-theme="blue"]   #top-nav .nav-title,
+[data-theme="green"]  #top-nav .nav-title,
+[data-theme="purple"] #top-nav .nav-title,
+[data-theme="rose"]   #top-nav .nav-title,
+[data-theme="amber"]  #top-nav .nav-title { color: var(--text); }
