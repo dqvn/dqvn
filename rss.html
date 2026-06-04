@@ -286,7 +286,7 @@
   }
   .art-desc {
     font-size: calc(var(--art-fs) * .9); line-height: 1.65;
-    color: rgba(241,245,249,.7);
+    color: rgba(241,245,249,.7); cursor: text; user-select: text;
   }
 
   .art-actions {
@@ -673,10 +673,10 @@
         <div class="art-body">
           <div class="art-body-inner">
             <div class="art-body-hdr">
-              <p class="art-body-title" ondblclick="wordAction(event)">${escH(a.title || '')}</p>
+              <p class="art-body-title" onmouseup="wordAction(event)">${escH(a.title || '')}</p>
               <span class="art-collapse-btn" onclick="toggleExpand(${i})" title="Inklappen">▲</span>
             </div>
-            ${desc ? `<p class="art-desc">${escH(desc)}${desc.length >= 280 ? '…' : ''}</p>` : ''}
+            ${desc ? `<p class="art-desc" onmouseup="wordAction(event)">${escH(desc)}${desc.length >= 280 ? '…' : ''}</p>` : ''}
             <div class="art-actions">
               <button class="art-btn" onclick="speakArt(${i})" title="Hoor de tekst in het Nederlands">
                 🔊 Voorlezen
@@ -875,40 +875,44 @@
 
   function wordAction(event) {
     event.stopPropagation();
-    const sel  = (window.getSelection()?.toString() ?? '').trim();
-    // Strip leading/trailing punctuation, keep Dutch characters
-    const word = sel.replace(/^[^a-zA-ZÀ-ÿ]+|[^a-zA-ZÀ-ÿ'-]+$/g, '').trim();
-    if (!word) return;
-    _wpWord = word;
+    // Capture coordinates now; defer selection read so browser finalises
+    // word-select (dblclick) or drag-select before we inspect it
+    const cx = event.clientX;
+    const cy = event.clientY;
+    requestAnimationFrame(() => {
+      const sel  = (window.getSelection()?.toString() ?? '').trim();
+      const word = sel.replace(/^[^a-zA-ZÀ-ÿ]+|[^a-zA-ZÀ-ÿ'-]+$/g, '').trim();
+      if (!word) return;
+      _wpWord = word;
 
-    const popup = document.getElementById('word-popup');
-    document.getElementById('wp-word').textContent = word;
-    document.getElementById('wp-copy-btn').textContent = '📋 Kopiëren';
+      const popup = document.getElementById('word-popup');
+      document.getElementById('wp-word').textContent = word;
+      document.getElementById('wp-copy-btn').textContent = '📋 Kopiëren';
 
-    // Measure off-screen, then position near cursor
-    popup.style.visibility = 'hidden';
-    popup.style.left = '-9999px';
-    popup.style.top  = '-9999px';
-    popup.classList.add('show');
+      // Measure off-screen then position near cursor / selection end
+      popup.style.visibility = 'hidden';
+      popup.style.left = '-9999px';
+      popup.style.top  = '-9999px';
+      popup.classList.add('show');
 
-    const pw  = popup.offsetWidth;
-    const ph  = popup.offsetHeight;
-    const gap = 12;
-    let x = event.clientX + gap;
-    let y = event.clientY + gap;
-    if (x + pw > window.innerWidth  - gap) x = event.clientX - pw - gap;
-    if (y + ph > window.innerHeight - gap) y = event.clientY - ph - gap;
+      const pw  = popup.offsetWidth;
+      const ph  = popup.offsetHeight;
+      const gap = 12;
+      let x = cx + gap;
+      let y = cy + gap;
+      if (x + pw > window.innerWidth  - gap) x = cx - pw - gap;
+      if (y + ph > window.innerHeight - gap) y = cy - ph - gap;
 
-    popup.style.left       = Math.max(gap, x) + 'px';
-    popup.style.top        = Math.max(gap, y) + 'px';
-    popup.style.visibility = '';
+      popup.style.left       = Math.max(gap, x) + 'px';
+      popup.style.top        = Math.max(gap, y) + 'px';
+      popup.style.visibility = '';
 
-    fetchTranslation(word);
+      fetchTranslation(word);
 
-    // Close when clicking anywhere outside the popup
-    setTimeout(() => {
-      document.addEventListener('click', _wpOutsideClick);
-    }, 0);
+      setTimeout(() => {
+        document.addEventListener('click', _wpOutsideClick);
+      }, 0);
+    });
   }
 
   function _wpOutsideClick(e) {
