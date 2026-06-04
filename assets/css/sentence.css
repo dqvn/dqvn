@@ -136,10 +136,10 @@ body {
 /* ── App ─────────────────────────────────────────────────── */
 #app {
     padding-top: calc(var(--nav-h) + 12px);
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: clamp(16px, 4vw, 48px);
+    padding-right: clamp(16px, 4vw, 48px);
     padding-bottom: 60px;
-    max-width: 680px;
+    max-width: 960px;
     margin: 0 auto;
 }
 

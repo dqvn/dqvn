@@ -74,15 +74,16 @@ export default {
     catch { return reply({ error: 'Invalid JSON' }, 400); }
 
     const {
-      srs:     localSRS     = {},
-      meta:    localMeta    = {},
-      klanken: localKlanken = {},
-      verbs:   localVerbs   = {},
-      game:    localGame    = {},
-      vol:     localVol     = null,
-      num:     localNum     = {},
-      wheel:   localWheel   = [],
-      device:  clientDevice = null,
+      srs:      localSRS      = {},
+      meta:     localMeta     = {},
+      klanken:  localKlanken  = {},
+      verbs:    localVerbs    = {},
+      game:     localGame     = {},
+      vol:      localVol      = null,
+      num:      localNum      = {},
+      wheel:    localWheel    = [],
+      sentence: localSentence = {},
+      device:   clientDevice  = null,
     } = body;
 
     // ── Redis read ────────────────────────────────────────────────────────
@@ -90,14 +91,15 @@ export default {
     const stored = await redisGet(env.UPSTASH_URL, env.UPSTASH_TOKEN, key);
 
     // ── Merge all five blobs ──────────────────────────────────────────────
-    const mergedSRS     = mergeSRS    (localSRS,     stored?.srs     || {});
-    const mergedMeta    = mergeMeta   (localMeta,    stored?.meta    || {});
-    const mergedKlanken = mergeKlanken(localKlanken, stored?.klanken || {});
-    const mergedVerbs   = mergeVerbs  (localVerbs,   stored?.verbs   || {});
-    const mergedGame    = mergeGame   (localGame,     stored?.game    || {});
-    const mergedVol     = mergeVol    (localVol,      stored?.vol     || null);
-    const mergedNum     = mergeNum    (localNum,      stored?.num     || {});
-    const mergedWheel   = mergeWheel  (localWheel,    stored?.wheel   || []);
+    const mergedSRS      = mergeSRS     (localSRS,      stored?.srs      || {});
+    const mergedMeta     = mergeMeta    (localMeta,     stored?.meta     || {});
+    const mergedKlanken  = mergeKlanken (localKlanken,  stored?.klanken  || {});
+    const mergedVerbs    = mergeVerbs   (localVerbs,    stored?.verbs    || {});
+    const mergedGame     = mergeGame    (localGame,     stored?.game     || {});
+    const mergedVol      = mergeVol     (localVol,      stored?.vol      || null);
+    const mergedNum      = mergeNum     (localNum,      stored?.num      || {});
+    const mergedWheel    = mergeWheel   (localWheel,    stored?.wheel    || []);
+    const mergedSentence = mergeSentence(localSentence, stored?.sentence || {});
 
     // ── Redis write ───────────────────────────────────────────────────────
     // Keep a rolling log of the last 5 device syncs
@@ -119,6 +121,7 @@ export default {
         srs: mergedSRS, meta: mergedMeta,
         klanken: mergedKlanken, verbs: mergedVerbs, game: mergedGame,
         vol: mergedVol, num: mergedNum, wheel: mergedWheel,
+        sentence: mergedSentence,
         owner: { sub: user.sub, email: user.email, name: user.name },
         syncedAt: Date.now(),
         syncLog,
@@ -130,6 +133,7 @@ export default {
       srs: mergedSRS, meta: mergedMeta,
       klanken: mergedKlanken, verbs: mergedVerbs, game: mergedGame,
       vol: mergedVol, num: mergedNum, wheel: mergedWheel,
+      sentence: mergedSentence,
     });
   },
 };
@@ -356,6 +360,36 @@ function mergeNum(local, remote) {
     };
   }
   return merged;
+}
+
+// ── Sentence merge: max XP; most-recent date wins for daily count; max streak
+//   Schema: { date, count, streak, xp, lastGoalDate }
+
+function mergeSentence(local, remote) {
+  if (!remote || !Object.keys(remote).length) return local;
+  if (!local  || !Object.keys(local).length)  return remote;
+
+  // For daily count: pick whichever has the later date; same date → higher count
+  const ld = local.date  || '';
+  const rd = remote.date || '';
+  let date, count;
+  if (ld > rd)      { date = ld; count = local.count  || 0; }
+  else if (rd > ld) { date = rd; count = remote.count || 0; }
+  else              { date = ld; count = Math.max(local.count || 0, remote.count || 0); }
+
+  // Streak: take max, but only trust the one whose lastGoalDate is more recent
+  const llg = local.lastGoalDate  || '';
+  const rlg = remote.lastGoalDate || '';
+  const lastGoalDate = llg >= rlg ? llg : rlg;
+  const streak = Math.max(local.streak || 0, remote.streak || 0);
+
+  return {
+    date,
+    count,
+    streak,
+    xp:           Math.max(local.xp || 0, remote.xp || 0),
+    lastGoalDate,
+  };
 }
 
 // ── Wheel merge: union of packages by ID; more-items version wins ─────────
