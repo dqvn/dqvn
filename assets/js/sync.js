@@ -433,6 +433,8 @@ const _PROGRESS_KEY_SET = new Set([
   _SYNC_KEYS.game,
   _SYNC_KEYS.num,
   _SYNC_KEYS.wheel,
+  _SYNC_KEYS.sentence,  // sentence XP + streak
+  _SYNC_KEYS.theme,     // portal colour theme
 ]);
 
 // 1. After a study session ends.
