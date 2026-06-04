@@ -26,6 +26,7 @@ const _SYNC_KEYS = {
   num:      'nl_num_progress',       // number learning level/stars progress
   wheel:    'nl_wheel_pkgs',         // wheel-of-names question packages
   sentence: 'nl_sentence_v1',        // sentence-builder daily streak + XP
+  theme:    'nl_portal_theme',       // portal colour theme { v, t }
 };
 
 // ── Runtime state ─────────────────────────────────────────────────────────
@@ -240,6 +241,11 @@ async function syncNow(silent = false) {
       const l2 = document.getElementById('vol-val');
       if (s2) { s2.value = v; s2.style.setProperty('--vp', v + '%'); }
       if (l2) l2.textContent = `${v}%`;
+    }
+
+    // Apply synced theme if on the portal
+    if (merged.theme && typeof merged.theme.v === 'string') {
+      if (typeof applyTheme === 'function') applyTheme(merged.theme.v);
     }
 
     // Refresh word badges if function is available
