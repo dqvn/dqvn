@@ -325,20 +325,22 @@ function renderCurrentSentence() {
   updateRevealBtn();
 
   if (gameMode === 'type') {
-    renderTypeMode();
+    renderTypeMode(true);
   } else {
     renderBuildMode(item.sentence);
   }
 }
 
-function renderTypeMode() {
+function renderTypeMode(clearInput = false) {
   document.getElementById('type-area' ).classList.remove('hidden');
   document.getElementById('build-area').classList.add('hidden');
   const inp = document.getElementById('type-input');
-  inp.value = '';
-  inp.className = '';
-  document.getElementById('type-feedback').textContent = '';
-  document.getElementById('type-feedback').className   = 'type-feedback';
+  if (clearInput) {
+    inp.value = '';
+    inp.className = '';
+    document.getElementById('type-feedback').textContent = '';
+    document.getElementById('type-feedback').className   = 'type-feedback';
+  }
   inp.focus();
 }
 
