@@ -27,8 +27,9 @@ const CORS_HEADERS = {
   'Access-Control-Allow-Headers': 'Content-Type, Authorization',
 };
 
-// Module-level in-memory cache — survives within a warm isolate
-let _rssMemCache = null;
+// Module-level in-memory caches — survive within a warm isolate
+let _rssMemCache     = null;
+let _podcastMemCache = null;
 
 const REDIS_TTL = 90 * 86400; // 90 days
 
@@ -45,6 +46,12 @@ export default {
     if (url.pathname === '/rss') {
       if (request.method !== 'GET') return reply({ error: 'Method not allowed' }, 405);
       return handleRSS(env);
+    }
+
+    // ── Podcast proxy ─────────────────────────────────────────────────────
+    if (url.pathname === '/podcast') {
+      if (request.method !== 'GET') return reply({ error: 'Method not allowed' }, 405);
+      return handlePodcast(env);
     }
 
     if (url.pathname !== '/sync') return reply({ error: 'Not found' }, 404);
@@ -527,6 +534,112 @@ function rssAllText(block, tag) {
     if (v) results.push(v);
   }
   return results;
+}
+
+// ── Podcast proxy ─────────────────────────────────────────────────────────
+
+const PODCAST_CACHE_KEY = 'podcast:npo:moem:v1';
+const PODCAST_MAX       = 50;
+const PODCAST_FETCH_TTL = 10000; // 10 s upstream timeout
+
+async function handlePodcast(env) {
+  // 1. Try fetching fresh episodes from NPO
+  let freshItems = null;
+  try {
+    const ctrl  = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), PODCAST_FETCH_TTL);
+    let upstream;
+    try {
+      upstream = await fetch('https://podcast.npo.nl/feed/met-het-oog-op-morgen.xml', {
+        signal: ctrl.signal,
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (compatible; NLLearnReader/1.0)',
+          'Accept':     'application/rss+xml, application/xml, text/xml, */*',
+        },
+        cf: { cacheTtl: 3600, cacheEverything: true },
+      });
+    } finally {
+      clearTimeout(timer);
+    }
+    if (upstream?.ok) {
+      const xml = await upstream.text();
+      freshItems = podcastParseItems(xml);
+    }
+  } catch (_) { /* timeout or network error — fall through to cache */ }
+
+  // 2. Load persisted cache (Redis, fallback to module-level memory)
+  let persisted = _podcastMemCache;
+  if (!persisted && env?.UPSTASH_URL && env?.UPSTASH_TOKEN) {
+    try { persisted = await redisGet(env.UPSTASH_URL, env.UPSTASH_TOKEN, PODCAST_CACHE_KEY); }
+    catch (_) {}
+  }
+  if (!Array.isArray(persisted)) persisted = [];
+
+  // 3. Merge, dedup by guid, sort newest-first, cap at max
+  let items;
+  if (freshItems?.length) {
+    const freshGuids = new Set(freshItems.map(i => i.guid).filter(Boolean));
+    const carried    = persisted.filter(i => i.guid && !freshGuids.has(i.guid));
+    items = rssSortTrim([...freshItems, ...carried], PODCAST_MAX);
+
+    _podcastMemCache = items;
+    if (env?.UPSTASH_URL && env?.UPSTASH_TOKEN) {
+      redisSet(env.UPSTASH_URL, env.UPSTASH_TOKEN, PODCAST_CACHE_KEY, items, 7 * 86400)
+        .catch(() => {});
+    }
+  } else if (persisted.length) {
+    items = persisted;
+    _podcastMemCache = items;
+  } else {
+    return reply({ error: 'Podcast feed unavailable and no cached data' }, 503);
+  }
+
+  return new Response(JSON.stringify({ status: 'ok', items, fetchedAt: Date.now() }), {
+    headers: {
+      'Content-Type':  'application/json',
+      'Cache-Control': 'public, max-age=3600',
+      ...CORS_HEADERS,
+    },
+  });
+}
+
+// Parse RSS 2.0 podcast feed — extracts audio enclosure + itunes metadata
+function podcastParseItems(xml) {
+  const items  = [];
+  const itemRx = /<item[^>]*>([\s\S]*?)<\/item>/gi;
+  let m;
+
+  while ((m = itemRx.exec(xml)) !== null && items.length < 50) {
+    const b = m[1];
+
+    // <enclosure url="..." type="audio/..."> — try both attribute orderings
+    const encM = b.match(/<enclosure[^>]+url="([^"]+)"[^>]*type="audio[^"]*"/i)
+               || b.match(/<enclosure[^>]+type="audio[^"]*"[^>]+url="([^"]+)"/i);
+    const audioUrl = (encM?.[1]?.trim() || '').replace(/&amp;/gi, '&');
+    if (!audioUrl) continue; // skip items with no playable audio
+
+    // <itunes:duration>
+    const durM    = b.match(/<itunes:duration[^>]*>([^<]+)<\/itunes:duration>/i);
+    const duration = durM?.[1]?.trim() || '';
+
+    // <itunes:episode>
+    const epM    = b.match(/<itunes:episode[^>]*>([^<]+)<\/itunes:episode>/i);
+    const episode = epM?.[1]?.trim() || '';
+
+    const link = rssLink(b).replace(/&amp;/gi, '&');
+    items.push({
+      title:       rssStripTags(rssText(b, 'title')),
+      link,
+      description: rssStripTags(rssText(b, 'description')),
+      pubDate:     rssText(b, 'pubDate'),
+      guid:        rssText(b, 'guid') || link,
+      audioUrl,
+      duration,
+      episode,
+    });
+  }
+
+  return items;
 }
 
 // ── Response helper ───────────────────────────────────────────────────────
