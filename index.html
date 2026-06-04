@@ -1023,6 +1023,7 @@
     { href:'verbs.html',     icon:'🔄', nl:'Werkwoorden',  en:'Vervoeging oefenen',        color:'#dc2626', badge:'Actief', group:'📖 Grammatica'   },
     { href:'rss.html',       icon:'📰', nl:'Nieuws',       en:'Lees echt Nederlands nieuws', color:'#0891b2', badge:'Nieuw',  group:'📰 Lezen'        },
     { href:'podcast.html',   icon:'🎧', nl:'Podcast',       en:'Met het Oog op Morgen – NPO', color:'#9b5de5', badge:'Nieuw',  group:'🎧 Luisteren'    },
+    { href:'sentence.html',  icon:'✏️', nl:'Zinnen Bouwen', en:'Schrijf & bouw Nederlandse zinnen', color:'#06d6a0', badge:'Nieuw',  group:'✍️ Schrijven'    },
   ];
 
   /* ─── Helpers ─────────────────────────────────────────────────── */
@@ -1098,6 +1099,13 @@
     const podListened   = podData.total || (podData.listened?.length || 0);
     const PODCAST_TARGET = 20;
 
+    /* Sentence building */
+    const sentData       = readJSON('nl_sentence_v1', { count: 0, streak: 0, xp: 0, date: '' });
+    const today          = new Date().toISOString().slice(0, 10);
+    const sentToday      = sentData.date === today ? (sentData.count || 0) : 0;
+    const sentStreak     = sentData.streak || 0;
+    const SENT_GOAL      = 5;
+
     return {
       streak:     meta.streak        || 0,
       cardsSeen,  cardsMastered,
@@ -1107,6 +1115,7 @@
       s2quizDone, S2_TOTAL,
       rssRead, RSS_TARGET,
       podListened, PODCAST_TARGET,
+      sentToday, sentStreak, SENT_GOAL,
     };
   }
 
@@ -1181,6 +1190,14 @@
         detail: (s.podListened || 0) > 0
           ? `${s.podListened} afleveringen beluisterd${s.podListened >= s.PODCAST_TARGET ? ' — doel bereikt! 🎉' : ` van ${s.PODCAST_TARGET}`}`
           : 'Nog niet begonnen — luister naar podcasts!',
+      },
+      {
+        href: 'sentence.html', icon: '✏️', color: '#06d6a0',
+        nl: 'Zinnen Bouwen',
+        pct: Math.min(100, Math.round((s.sentToday || 0) / (s.SENT_GOAL || 5) * 100)),
+        detail: (s.sentToday || 0) > 0
+          ? `${s.sentToday}/5 zinnen vandaag${s.sentToday >= s.SENT_GOAL ? ' — dagdoel bereikt! 🎉' : ` 🔔`}${s.sentStreak > 0 ? ` &nbsp;·&nbsp; 🔥 ${s.sentStreak} dagen` : ''}`
+          : 'Nog niet begonnen — schrijf 5 zinnen per dag!',
       },
     ];
 

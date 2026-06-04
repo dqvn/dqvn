@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>✏️ Zinnen Bouwen – Nederlands</title>
+  <link rel="icon" href="assets/img/dutch.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/sync.css">
+  <link rel="stylesheet" href="assets/css/sentence.css">
+</head>
+<body>
+
+  <!-- ── Top nav ── -->
+  <nav id="top-nav">
+    <a href="index.html" class="nav-back">← Terug</a>
+    <span class="nav-title">✏️ Zinnen Bouwen</span>
+    <div class="nav-mode-toggle">
+      <button class="mode-btn active" id="btn-type"  onclick="setMode('type')">⌨️ Typen</button>
+      <button class="mode-btn"        id="btn-build" onclick="setMode('build')">🧩 Bouwen</button>
+    </div>
+    <div id="fs-ctrl">
+      <button class="fs-btn" onclick="changeFontSize(-1)" title="Kleinere tekst">A−</button>
+      <button class="fs-btn" onclick="changeFontSize(1)"  title="Grotere tekst">A+</button>
+    </div>
+    <button id="files-btn" class="nav-icon-btn" onclick="openSidebar()" title="Kies bestanden">📁</button>
+    <button id="sync-nav-btn" onclick="toggleSyncDrawer()" title="Sync &amp; Account">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+        <circle cx="12" cy="7" r="4"/>
+      </svg>
+    </button>
+  </nav>
+
+  <div id="app">
+
+    <!-- ── Daily progress strip ── -->
+    <div id="daily-strip">
+      <span class="strip-streak">🔥&nbsp;<b id="str-streak">0</b>&nbsp;dagen</span>
+      <div class="strip-dots" id="strip-dots"></div>
+      <span class="strip-count"><b id="str-count">0</b>/5&nbsp;vandaag</span>
+    </div>
+
+    <!-- ── Game card ── -->
+    <div id="game-card">
+
+      <!-- Loading -->
+      <div id="gc-loading">
+        <div class="gc-spinner">⟳</div>
+        <div class="gc-load-txt">Zinnen laden…</div>
+      </div>
+
+      <!-- No files -->
+      <div id="gc-empty" class="hidden">
+        <div class="gc-empty-ico">📁</div>
+        <div class="gc-empty-txt">Klik op <b>📁</b> om bestanden te kiezen</div>
+        <button class="gc-empty-btn" onclick="openSidebar()">Bestanden kiezen</button>
+      </div>
+
+      <!-- Sentence prompt -->
+      <div id="gc-prompt" class="hidden">
+        <div class="gc-progress-row">
+          <span class="gc-num-lbl">Zin <span id="gc-num">1</span> van <span id="gc-total">5</span></span>
+          <div class="gc-mini-dots" id="gc-mini-dots"></div>
+        </div>
+
+        <div class="gc-english" id="gc-english">…</div>
+        <div class="gc-hint">💡&nbsp;Woord:&nbsp;<b id="gc-dutch">…</b>&nbsp;=&nbsp;<b id="gc-trans">…</b></div>
+
+        <!-- Type mode -->
+        <div id="type-area">
+          <textarea id="type-input"
+                    placeholder="Typ de Nederlandse zin hier…"
+                    rows="2"
+                    onkeydown="onTypeKey(event)"
+                    oninput="onTypeInput(this)"></textarea>
+          <div id="type-feedback" class="type-feedback"></div>
+        </div>
+
+        <!-- Build mode (word tiles) -->
+        <div id="build-area" class="hidden">
+          <div class="build-label">Woordenschat — klik om toe te voegen:</div>
+          <div id="word-bank" class="word-bank"></div>
+          <div class="build-label">Jouw zin:</div>
+          <div id="answer-zone"
+               class="answer-zone"
+               ondragover="event.preventDefault()"
+               ondrop="onBankDrop(event)">
+            <span id="answer-placeholder" class="answer-placeholder">Klik op woorden om je zin te bouwen…</span>
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="gc-btns">
+          <button id="btn-check"  class="btn-check"  onclick="checkAnswer()">✓ Controleer</button>
+          <button id="btn-reveal" class="btn-reveal hidden" onclick="revealAnswer()">👁 Toon antwoord</button>
+          <button id="btn-skip"   class="btn-skip"   onclick="skipSentence()">→ Sla over</button>
+        </div>
+
+        <!-- Result feedback -->
+        <div id="gc-result" class="hidden">
+          <div id="result-msg"    class="result-msg"></div>
+          <div id="result-answer" class="result-answer"></div>
+          <button id="btn-next" class="btn-next" onclick="nextSentence()">Volgende zin →</button>
+        </div>
+      </div>
+
+      <!-- Session complete -->
+      <div id="gc-done" class="hidden">
+        <div class="done-emoji">🎉</div>
+        <div class="done-title">Dagdoel bereikt!</div>
+        <div class="done-sub">Je hebt vandaag 5 zinnen geschreven.</div>
+        <div class="done-stats">
+          <div class="done-stat">⭐ <b id="done-xp">0</b> XP verdiend</div>
+          <div class="done-stat">🔥 <b id="done-streak">0</b> dagenstreak</div>
+          <div class="done-stat">✅ <b id="done-perfect">0</b> perfecte antwoorden</div>
+        </div>
+        <div class="done-btns">
+          <button class="done-btn-more"   onclick="continueSession()">+ Meer oefenen</button>
+          <a     class="done-btn-portal" href="index.html">← Portaal</a>
+        </div>
+      </div>
+
+    </div><!-- #game-card -->
+
+  </div><!-- #app -->
+
+  <!-- ── File sidebar ── -->
+  <div id="sb-backdrop" onclick="closeSidebar()"></div>
+  <div id="sidebar">
+    <div class="sb-header">
+      <span class="sb-title">📁 Bestanden</span>
+      <button class="sb-close" onclick="closeSidebar()">×</button>
+    </div>
+    <div class="sb-body">
+      <div class="sb-actions">
+        <button class="sb-act-btn" onclick="selectAllFiles()">Alles</button>
+        <button class="sb-act-btn" onclick="selectNoFiles()">Geen</button>
+        <div class="sb-count-lbl" id="sb-count">0 zinnen</div>
+      </div>
+      <div id="file-groups"></div>
+      <button class="sb-load-btn" onclick="applyFileSelection()">▶ Toepassen</button>
+    </div>
+  </div>
+
+  <!-- ── Sync drawer ── -->
+  <div id="sync-backdrop" onclick="closeSyncDrawer()"></div>
+  <div id="sync-drawer">
+    <div class="sdrawer-hd">
+      <span class="sdrawer-title">☁️ Sync &amp; Account</span>
+      <button class="sdrawer-close" onclick="closeSyncDrawer()">×</button>
+    </div>
+    <div class="sdrawer-body sidebar-dark">
+      <div id="sync-section"></div>
+    </div>
+  </div>
+
+  <div id="_toast"></div>
+
+  <script src="assets/js/sync.js"></script>
+  <script src="assets/js/sentence.js" defer></script>
+
+</body>
+</html>
