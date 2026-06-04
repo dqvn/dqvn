@@ -109,8 +109,16 @@ function loadLS(key, def) {
 
 // ---------- Theme & Font ----------
 function initThemeAndFont() {
-  // theme: 'light' | 'dark' | 'system'
-  let theme = loadLS(CONFIG.storage.theme, 'system');
+  // Sync with portal theme (nl_portal_theme); fall back to 'orange'
+  function readPortalTheme() {
+    try { return (JSON.parse(localStorage.getItem('nl_portal_theme')) || {}).v || 'orange'; }
+    catch { return 'orange'; }
+  }
+  function savePortalTheme(v) {
+    try { localStorage.setItem('nl_portal_theme', JSON.stringify({ v, t: Date.now() })); } catch {}
+  }
+
+  let theme = readPortalTheme();
   document.documentElement.setAttribute('data-theme', theme);
 
   // font size
@@ -122,10 +130,10 @@ function initThemeAndFont() {
   els.btnFontMinus.addEventListener('click', () => setContentFont(Math.max(px - 1, CONFIG.minFontPx)));
 
   function cycleTheme() {
-    const current = document.documentElement.getAttribute('data-theme') || 'system';
-    const next = current === 'system' ? 'light' : current === 'light' ? 'dark' : 'system';
+    const current = document.documentElement.getAttribute('data-theme') || 'orange';
+    const next = current === 'dark' ? 'orange' : 'dark';
     document.documentElement.setAttribute('data-theme', next);
-    saveLS(CONFIG.storage.theme, next);
+    savePortalTheme(next);
   }
   function setContentFont(nextPx) {
     px = nextPx;
