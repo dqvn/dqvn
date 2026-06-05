@@ -946,7 +946,7 @@
   document.addEventListener('DOMContentLoaded', () => {
     _injectPopup();
     createDragIndicator();
-    $id('flashcard-btn').addEventListener('click', openFlashcard);
+    $id('flashcard-btn')?.addEventListener('click', openFlashcard);
     $id('fc-close-btn').addEventListener('click', closeFlashcard);
     $id('fc-card').addEventListener('click', () => fc.flipped ? unflipCard() : flipCard());
     $id('fc-speak-btn').addEventListener('click', e => { e.stopPropagation(); speakCurrent(); });

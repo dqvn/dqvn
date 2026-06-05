@@ -717,6 +717,7 @@ function createGroup(groupKey, files) {
 
 function createLeftMenu() {
     const container    = document.getElementById('file-list');
+    if (!container) return;
     const groupedFiles = {};
     [..._fileNames].sort().forEach(file => {
         const key = file.substring(0, 2);

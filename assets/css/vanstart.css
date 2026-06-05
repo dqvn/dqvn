@@ -307,19 +307,28 @@ header#vs-header .hdr-fs-btn {
   overflow-y: auto;
 }
 
+/* Strip browser default ul bullets & padding inside the file list */
+#vs-sidebar #file-list,
+#vs-sidebar #file-list ul,
+#vs-sidebar .file-container ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 /* File list items in dark sidebar */
 #vs-sidebar #file-list li {
-  padding: 8px 10px;
+  padding: 5px 8px;
   border-bottom: none;
-  border-radius: 8px;
-  margin-bottom: 2px;
+  border-radius: 7px;
+  margin-bottom: 1px;
   cursor: pointer;
   background: transparent !important;
   background-clip: unset !important;
   -webkit-background-clip: unset !important;
   -webkit-text-fill-color: rgba(255,255,255,.6) !important;
   color: rgba(255,255,255,.6);
-  font-size: .8rem;
+  font-size: .78rem;
   font-weight: 500;
   transition: background .15s;
 }
@@ -333,24 +342,26 @@ header#vs-header .hdr-fs-btn {
   -webkit-background-clip: unset !important;
   -webkit-text-fill-color: rgba(255,255,255,.72) !important;
   color: rgba(255,255,255,.72);
-  border-radius: 8px;
-  padding: 7px 10px;
-  font-size: .8rem;
+  border-radius: 7px;
+  padding: 5px 8px;
+  font-size: .77rem;
   font-weight: 700;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
   border-bottom: none;
+  cursor: pointer;
 }
 #vs-sidebar .file-container .nested-list li {
-  padding-left: 18px;
-  font-size: .78rem;
+  padding: 4px 8px 4px 14px !important;
+  font-size: .76rem;
   -webkit-text-fill-color: rgba(255,255,255,.5) !important;
   color: rgba(255,255,255,.5);
+  margin-bottom: 1px !important;
 }
 #vs-sidebar .nested-list li.active-lesson {
   background: rgba(234,88,12,.18) !important;
   -webkit-text-fill-color: rgba(255,255,255,.88) !important;
-  border-radius: 7px;
-  padding-left: 22px;
+  border-radius: 6px;
+  padding-left: 16px !important;
   font-weight: 700;
 }
 #vs-sidebar .nested-list li.active-lesson::before { background: var(--accent); }
