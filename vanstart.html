@@ -163,8 +163,9 @@
 
       // Close sidebar after selecting a lesson on mobile
       document.getElementById('file-list')
-        ?.addEventListener('click', function () {
-          if (window.innerWidth <= 700) closeVsSidebar();
+        ?.addEventListener('click', function (e) {
+          // Only close when a lesson item is clicked, not a group title
+          if (window.innerWidth <= 700 && e.target.dataset.file) closeVsSidebar();
         });
 
       // Close sidebar when a game starts on mobile
