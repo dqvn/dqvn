@@ -2038,7 +2038,7 @@ button:hover {
     /* IPA / phonetic sub-label */
     #word-list td:nth-child(2) span[style] {
         font-size: 0.67rem;
-        opacity: 0.58;
+        color: rgba(3, 105, 161, 0.55); /* explicit color — immune to color-scheme:dark making inherited white */
         font-style: italic;
         margin-top: 3px;
         display: block;
