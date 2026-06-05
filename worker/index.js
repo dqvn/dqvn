@@ -18,6 +18,7 @@ import {
   reply,
   redisGet, redisSet,
   verifyGoogleJWT,
+  srsEncode, srsDecode,
   mergeSRS, mergeMeta, mergeKlanken, mergeVerbs, mergeGame,
   mergeVol, mergeNum, mergeWheel, mergeSentence,
   rssIsVideo, rssSortTrim, rssParseItems,
@@ -221,7 +222,9 @@ async function handleSync(request, env) {
   const stored = await redisGet(env.UPSTASH_URL, env.UPSTASH_TOKEN, key);
 
   // ── Merge all ten blobs ────────────────────────────────────────────────────
-  const mergedSRS      = mergeSRS     (localSRS,      stored?.srs      || {});
+  // Decode compact SRS strings from Redis back to objects before merging
+  const remoteSRS      = srsDecode(stored?.srs || {});
+  const mergedSRS      = mergeSRS     (localSRS,      remoteSRS);
   const mergedMeta     = mergeMeta    (localMeta,     stored?.meta     || {});
   const mergedKlanken  = mergeKlanken (localKlanken,  stored?.klanken  || {});
   const mergedVerbs    = mergeVerbs   (localVerbs,    stored?.verbs    || {});
@@ -249,7 +252,7 @@ async function handleSync(request, env) {
   await redisSet(
     env.UPSTASH_URL, env.UPSTASH_TOKEN, key,
     {
-      srs: mergedSRS, meta: mergedMeta,
+      srs: srsEncode(mergedSRS), meta: mergedMeta,
       klanken: mergedKlanken, verbs: mergedVerbs, game: mergedGame,
       vol: mergedVol, num: mergedNum, wheel: mergedWheel,
       sentence: mergedSentence,

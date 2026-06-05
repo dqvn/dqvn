@@ -6,6 +6,7 @@
  *          PODCAST_FEED_URL, PODCAST_CACHE_KEY, PODCAST_MAX, PODCAST_FETCH_TTL,
  *          FEED_USER_AGENT,
  *          reply, redisGet, redisSet, verifyGoogleJWT,
+ *          srsEncodeWord, srsDecodeWord, srsEncode, srsDecode,
  *          mergeSRS, mergeMeta, mergeKlanken, mergeVerbs, mergeGame,
  *          mergeVol, mergeNum, mergeWheel, mergeSentence,
  *          rssIsVideo, rssSortTrim, rssParseItems, rssStripTags,
@@ -134,6 +135,53 @@ export async function verifyGoogleJWT(token, clientId) {
     name:    payload.name,
     picture: payload.picture,
   };
+}
+
+// ── SRS compact encoding ──────────────────────────────────────────────────────
+// Field order (positional): state|interval|ease|nextDue|lapses|reps|seen|lastStudied
+// _totals entries are left as objects (5 fields, small, not per-word).
+
+export function srsEncodeWord(w) {
+  return [w.state, w.interval, w.ease, w.nextDue, w.lapses, w.reps, w.seen, w.lastStudied].join('|');
+}
+
+export function srsDecodeWord(v) {
+  if (typeof v !== 'string') return v; // already object (backward compat / _totals guard)
+  const p = v.split('|');
+  return {
+    state:       p[0],
+    interval:    Number(p[1]),
+    ease:        Number(p[2]),
+    nextDue:     Number(p[3]),
+    lapses:      Number(p[4]),
+    reps:        Number(p[5]),
+    seen:        Number(p[6]),
+    lastStudied: Number(p[7]),
+  };
+}
+
+export function srsEncode(blob) {
+  const out = {};
+  for (const [chId, ch] of Object.entries(blob || {})) {
+    const enc = {};
+    for (const [word, v] of Object.entries(ch)) {
+      enc[word] = word === '_totals' ? v : srsEncodeWord(v);
+    }
+    out[chId] = enc;
+  }
+  return out;
+}
+
+export function srsDecode(blob) {
+  const out = {};
+  for (const [chId, ch] of Object.entries(blob || {})) {
+    const dec = {};
+    for (const [word, v] of Object.entries(ch)) {
+      dec[word] = word === '_totals' ? v : srsDecodeWord(v);
+    }
+    out[chId] = dec;
+  }
+  return out;
 }
 
 // ── Merge functions ───────────────────────────────────────────────────────────
