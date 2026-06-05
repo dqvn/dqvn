@@ -448,6 +448,7 @@ header#vs-header .hdr-fs-btn {
   min-height: 0;
   overflow-y: auto;
   background: var(--bg);
+  padding: 16px 20px;
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
