@@ -26,6 +26,7 @@ const _SYNC_KEYS = {
   num:      'nl_num_progress',       // number learning level/stars progress
   wheel:    'nl_wheel_pkgs',         // wheel-of-names question packages
   sentence: 'nl_sentence_v1',        // sentence-builder daily streak + XP
+  vanstart: 'nl_vanstart_v1',        // VanStart lesson progress + streak
   theme:    'nl_portal_theme',       // portal colour theme { v, t }
 };
 
@@ -434,6 +435,7 @@ const _PROGRESS_KEY_SET = new Set([
   _SYNC_KEYS.num,
   _SYNC_KEYS.wheel,
   _SYNC_KEYS.sentence,  // sentence XP + streak
+  _SYNC_KEYS.vanstart,  // VanStart lesson progress
   _SYNC_KEYS.theme,     // portal colour theme
 ]);
 
