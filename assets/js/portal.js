@@ -191,6 +191,14 @@ function renderProgress(s) {
         : 'Nog niet begonnen — start de NT2 cursus!',
     },
     {
+      href: '/dqvn/sentence', icon: '✏️', color: '#06d6a0',
+      nl: 'Zinnen Bouwen',
+      pct: Math.min(100, Math.round((s.sentToday || 0) / (s.SENT_GOAL || 5) * 100)),
+      detail: (s.sentToday || 0) > 0
+        ? `${s.sentToday}/5 vandaag${s.sentToday >= s.SENT_GOAL ? ' 🎉' : ' 🔔'}${s.sentStreak > 0 ? ` &nbsp;·&nbsp; 🔥 ${s.sentStreak} dagen` : ''} &nbsp;·&nbsp; ⭐ ${s.sentXP} XP`
+        : `Nog niet begonnen — schrijf 5 zinnen per dag!${s.sentXP > 0 ? ` &nbsp;·&nbsp; ⭐ ${s.sentXP} XP totaal` : ''}`,
+    },
+    {
       href: '/dqvn/verbs', icon: '🔄', color: '#dc2626',
       nl: 'Werkwoorden',
       pct: verbsPct,
@@ -229,14 +237,6 @@ function renderProgress(s) {
       detail: (s.podListened || 0) > 0
         ? `${s.podListened} afleveringen beluisterd${s.podListened >= s.PODCAST_TARGET ? ' — doel bereikt! 🎉' : ` van ${s.PODCAST_TARGET}`}`
         : 'Nog niet begonnen — luister naar podcasts!',
-    },
-    {
-      href: '/dqvn/sentence', icon: '✏️', color: '#06d6a0',
-      nl: 'Zinnen Bouwen',
-      pct: Math.min(100, Math.round((s.sentToday || 0) / (s.SENT_GOAL || 5) * 100)),
-      detail: (s.sentToday || 0) > 0
-        ? `${s.sentToday}/5 vandaag${s.sentToday >= s.SENT_GOAL ? ' 🎉' : ' 🔔'}${s.sentStreak > 0 ? ` &nbsp;·&nbsp; 🔥 ${s.sentStreak} dagen` : ''} &nbsp;·&nbsp; ⭐ ${s.sentXP} XP`
-        : `Nog niet begonnen — schrijf 5 zinnen per dag!${s.sentXP > 0 ? ` &nbsp;·&nbsp; ⭐ ${s.sentXP} XP totaal` : ''}`,
     },
   ];
 
