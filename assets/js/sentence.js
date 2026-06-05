@@ -543,7 +543,7 @@ function onDragMove(e) {
   zone.classList.toggle('drag-over', over);
 
   if (over) {
-    const idx = computeInsertIdx(cx);
+    const idx = computeInsertIdx(cx, cy);
     _drag.insertIdx = idx;
     updateInsertCaret(idx);
   } else {
@@ -592,29 +592,54 @@ function onDragEnd() {
   renderAnswerZoneWithFlip();
 }
 
-/* Returns the insertion index in the visible (non-src) tile list */
-function computeInsertIdx(cursorX) {
+/* Group flat tile list into rows by vertical midpoint proximity */
+function _tileRows(tiles) {
+  const ROW_SNAP = 10;
+  const rows = [];
+  tiles.forEach((t, i) => {
+    const r    = t.getBoundingClientRect();
+    const midY = r.top + r.height / 2;
+    let row    = rows.find(rw => Math.abs(rw.midY - midY) <= ROW_SNAP);
+    if (!row) { row = { midY, items: [] }; rows.push(row); }
+    row.items.push({ i, r });
+  });
+  return rows.sort((a, b) => a.midY - b.midY);
+}
+
+/* Returns the insertion index — row-aware so multi-row zones work correctly */
+function computeInsertIdx(cx, cy) {
   const zone  = document.getElementById('answer-zone');
   const tiles = [...zone.querySelectorAll('.tile-answer:not(.is-drag-src)')];
-  for (let i = 0; i < tiles.length; i++) {
-    const r = tiles[i].getBoundingClientRect();
-    if (cursorX < r.left + r.width / 2) return i;
+  if (tiles.length === 0) return 0;
+
+  const rows = _tileRows(tiles);
+
+  /* Find the row whose midY is closest to the cursor */
+  const activeRow = rows.reduce((best, row) =>
+    Math.abs(row.midY - cy) < Math.abs(best.midY - cy) ? row : best
+  , rows[0]);
+
+  /* Within that row find the insert slot by X midpoint */
+  for (const { i, r } of activeRow.items) {
+    if (cx < r.left + r.width / 2) return i;
   }
-  return tiles.length;
+  return activeRow.items[activeRow.items.length - 1].i + 1;
 }
 
 function updateInsertCaret(insertIdx) {
   const zone  = document.getElementById('answer-zone');
+  const zRect = zone.getBoundingClientRect();
   let caret   = document.getElementById('insert-caret');
   if (!caret) {
-    caret       = document.createElement('div');
-    caret.id    = 'insert-caret';
+    caret    = document.createElement('div');
+    caret.id = 'insert-caret';
     zone.appendChild(caret);
     caret.getBoundingClientRect(); // force layout so first transition fires
   }
 
   const tiles = [...zone.querySelectorAll('.tile-answer:not(.is-drag-src)')];
-  const zRect = zone.getBoundingClientRect();
+
+  /* X position of caret */
   let x;
   if (tiles.length === 0) {
     x = zone.offsetWidth / 2;
@@ -626,13 +651,123 @@ function updateInsertCaret(insertIdx) {
   } else {
     const a = tiles[insertIdx - 1].getBoundingClientRect();
     const b = tiles[insertIdx    ].getBoundingClientRect();
-    x = (a.right + b.left) / 2 - zRect.left;
+    /* If the two neighbours are on different rows, place caret at the start of row b */
+    if (Math.abs(a.top - b.top) > 10) {
+      x = b.left - zRect.left - 4;
+    } else {
+      x = (a.right + b.left) / 2 - zRect.left;
+    }
   }
-  caret.style.left = Math.max(2, x) + 'px';
+
+  /* Y bounds — constrain caret to the active row instead of full zone height */
+  const refTile = tiles[Math.min(Math.max(insertIdx, 0), tiles.length - 1)];
+  let caretTop = 8, caretBottom = 8;
+  if (refTile) {
+    const ROW_SNAP  = 10;
+    const refR      = refTile.getBoundingClientRect();
+    const refMidY   = refR.top + refR.height / 2;
+    const rowRects  = tiles
+      .map(t => t.getBoundingClientRect())
+      .filter(r => Math.abs((r.top + r.height / 2) - refMidY) <= ROW_SNAP);
+    const rowTop    = Math.min(...rowRects.map(r => r.top));
+    const rowBottom = Math.max(...rowRects.map(r => r.bottom));
+    caretTop    = rowTop    - zRect.top    - 2;
+    caretBottom = zRect.bottom - rowBottom - 2;
+  }
+
+  caret.style.left   = Math.max(2, x) + 'px';
+  caret.style.top    = Math.max(4, caretTop)    + 'px';
+  caret.style.bottom = Math.max(4, caretBottom) + 'px';
 }
 
 function removeInsertCaret() {
   document.getElementById('insert-caret')?.remove();
+}
+
+/* ── TTS: speak a Dutch sentence ──────────────────────────────── */
+function speakDutch(text) {
+  const ss = window.speechSynthesis;
+  if (!ss) return;
+
+  function _go() {
+    try {
+      const rateRaw = parseFloat(localStorage.getItem('nl_tts_rate'));
+      const rate    = isNaN(rateRaw) ? 0.85 : Math.min(1.5, Math.max(0.5, rateRaw));
+      const volObj  = JSON.parse(localStorage.getItem('nl_vocab_vol') || 'null');
+      const vol     = volObj?.v != null ? Math.min(1, volObj.v / 100) : 0.8;
+
+      const voices  = ss.getVoices();
+      const voice   = voices.find(v => v.lang === 'nl-NL' && /colette/i.test(v.name))
+                   || voices.find(v => v.lang === 'nl-NL')
+                   || voices.find(v => v.lang === 'nl-BE')
+                   || voices.find(v => v.lang.startsWith('nl'))
+                   || null;
+
+      const u    = new SpeechSynthesisUtterance(text.replace(/'/g, ''));
+      u.lang     = 'nl-NL';
+      u.rate     = rate;
+      u.volume   = vol;
+      if (voice) u.voice = voice;
+
+      if (ss.speaking) ss.cancel();
+      ss.speak(u);
+    } catch {}
+  }
+
+  ss.getVoices().length ? _go() : ss.addEventListener('voiceschanged', _go, { once: true });
+}
+
+/* ── Confetti burst ────────────────────────────────────────────── */
+function burstConfetti(originEl) {
+  const rect   = originEl.getBoundingClientRect();
+  const ox     = rect.left + rect.width  / 2;
+  const oy     = rect.top  + rect.height / 2;
+  const PIECES = 28;
+  const EMOJIS = ['🎉','⭐','✨','🌟','💪','🎊','👏'];
+  const COLORS = ['#06d6a0','#ffd166','#ef476f','#118ab2','#a8dadc','#ffffff'];
+
+  for (let i = 0; i < PIECES; i++) {
+    const isEmoji = Math.random() < 0.45;
+    const el      = document.createElement('div');
+    const angle   = (Math.PI * 2 * i / PIECES) + (Math.random() - 0.5) * 0.7;
+    const speed   = 90 + Math.random() * 140;
+    const dx      = Math.cos(angle) * speed;
+    const dy      = Math.sin(angle) * speed - 90;   // bias upward
+    const size    = 11 + Math.random() * 13;
+    const rot     = (Math.random() - 0.5) * 540;
+    const dur     = 700 + Math.random() * 300;
+
+    if (isEmoji) {
+      el.textContent = EMOJIS[Math.floor(Math.random() * EMOJIS.length)];
+      el.style.fontSize = size + 'px';
+    } else {
+      el.style.width        = (size * 0.55) + 'px';
+      el.style.height       = (size * 0.55) + 'px';
+      el.style.borderRadius = Math.random() < 0.5 ? '50%' : '3px';
+      el.style.background   = COLORS[Math.floor(Math.random() * COLORS.length)];
+    }
+
+    Object.assign(el.style, {
+      position:      'fixed',
+      left:          ox + 'px',
+      top:           oy + 'px',
+      pointerEvents: 'none',
+      zIndex:        '8000',
+      lineHeight:    '1',
+      transition:    `transform ${dur}ms cubic-bezier(.2,0,.8,1), opacity ${dur}ms ease-out`,
+      willChange:    'transform, opacity',
+    });
+
+    document.body.appendChild(el);
+    el.getBoundingClientRect(); // force reflow
+
+    requestAnimationFrame(() => {
+      el.style.transform = `translate(${dx}px,${dy}px) rotate(${rot}deg) scale(0.2)`;
+      el.style.opacity   = '0';
+    });
+
+    setTimeout(() => el.remove(), dur + 50);
+  }
 }
 
 /* ── Check answer ──────────────────────────────────────────────── */
@@ -691,6 +826,7 @@ function showResult(result, target, xpEarned) {
   const btnEl  = document.getElementById('btn-next');
 
   el.classList.remove('hidden');
+  el.classList.toggle('result-correct', result.grade === 'perfect' || result.grade === 'typo');
 
   const grades = {
     perfect: { cls: 'correct', msg: '✅ Uitstekend! Perfecte zin!',         xp: `+${xpEarned} XP` },
@@ -708,6 +844,9 @@ function showResult(result, target, xpEarned) {
   if (result.grade === 'perfect' || result.grade === 'typo') {
     ansEl.innerHTML = `Jouw zin klopt! <b>${target}</b>`;
     btnEl.classList.remove('hidden');
+    /* Celebrate + read the correct sentence aloud */
+    burstConfetti(el);
+    setTimeout(() => speakDutch(target), 350);
   } else if (result.grade === 'skip') {
     ansEl.innerHTML = `Correct antwoord: <b>${target}</b>`;
     btnEl.classList.remove('hidden');
@@ -726,7 +865,9 @@ function showResult(result, target, xpEarned) {
 }
 
 function resetResult() {
-  document.getElementById('gc-result').classList.add('hidden');
+  const r = document.getElementById('gc-result');
+  r.classList.add('hidden');
+  r.classList.remove('result-correct');
   document.getElementById('btn-next').classList.add('hidden');
   // Reset type input
   const inp = document.getElementById('type-input');
