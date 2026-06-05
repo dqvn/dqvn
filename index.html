@@ -888,7 +888,11 @@
     main { padding: 0 16px 60px; }
     .sec-head { margin: 34px 0 16px; }
     .prog-grid { grid-template-columns: repeat(2, 1fr); }
-    .prog-card { padding: 14px 14px 12px; }
+    .prog-card { padding: 14px 12px 12px; min-width: 0; overflow: hidden; }
+    .prog-icon-wrap { width: 30px; height: 30px; font-size: 1rem; }
+    .prog-title { font-size: .8rem; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .prog-pct   { display: none; }
+    .prog-detail { font-size: .68rem; word-break: break-word; overflow-wrap: break-word; }
     .tools-grid { grid-template-columns: repeat(2, 1fr); }
     .coming-grid { grid-template-columns: repeat(2, 1fr); }
     .stat-lbl { display: none; }
