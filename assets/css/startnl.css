@@ -1,3 +1,51 @@
+/* ══════════════════════════════════════════════════════
+   startnl.css — layout & theme overrides for startnl.html
+   Layers on top of style.css. Theme colours from themes.css.
+   ══════════════════════════════════════════════════════ */
+
+/* ── Body: remove bg image, use theme colour, fill viewport ── */
+body {
+  background-image: none !important;
+  background-color: var(--bg) !important;
+  height: 100dvh !important;
+  min-height: unset !important;
+  overflow: hidden;
+}
+
+/* ── Header: clean up style.css mask / blur / text-shadow ── */
+header {
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  text-shadow: none !important;
+  background: var(--card) !important;
+  border-bottom: 1px solid var(--border) !important;
+  padding: 0 12px !important;
+  height: 52px;
+  display: flex !important;
+  align-items: center !important;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 50;
+}
+
+header h1 {
+  font-size: .92rem !important;
+  color: var(--text) !important;
+  text-shadow: none !important;
+  margin: 0 !important;
+  text-align: center;
+  flex: 1;
+}
+header h3 {
+  font-size: .66rem !important;
+  color: var(--text-3) !important;
+  text-shadow: none !important;
+  margin: 0 !important;
+  text-align: center;
+}
+
 /* ── Back button (top-left of header) ── */
 .hdr-left {
   position: absolute;
@@ -5,16 +53,15 @@
   left: 12px;
   transform: translateY(-50%);
 }
-
 .hdr-back-btn {
   display: inline-flex;
   align-items: center;
   gap: 4px;
   padding: 4px 10px;
   background: rgba(255, 255, 255, 0.18);
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  border: 1px solid var(--border);
   border-radius: 7px;
-  color: #00698f;
+  color: var(--accent);
   font-size: 0.78rem;
   font-weight: 700;
   text-decoration: none;
@@ -25,10 +72,103 @@
   transition: background 0.2s;
   white-space: nowrap;
 }
+.hdr-back-btn:hover { background: var(--border-soft); }
 
-.hdr-back-btn:hover { background: rgba(255, 255, 255, 0.35); }
+/* ── Right header controls ── */
+header .hdr-right {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+header .hdr-fs-btn {
+  color: var(--accent) !important;
+  background: rgba(255,255,255,.12);
+  border-color: var(--border) !important;
+}
+header .hdr-fs-btn:hover:not(:disabled) {
+  background: var(--border-soft) !important;
+}
 
-/* Table fills full width — no sidebar present */
+/* ── Container & table fill remaining height ── */
 .container {
-  padding: 0 4px;
+  flex: 1 !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  gap: 0 !important;
+  background: transparent !important;
+}
+.table-container {
+  flex: 1 !important;
+  min-height: 0 !important;
+  height: auto !important;
+  overflow-y: auto !important;
+  background: var(--bg) !important;
+}
+
+/* ── Theme-aware table colours ── */
+th {
+  background-color: var(--accent) !important;
+  color: #fff !important;
+  border-color: var(--border) !important;
+}
+#word-list thead { background-color: var(--accent) !important; }
+
+td {
+  background-color: var(--card) !important;
+  border-color: var(--border) !important;
+  color: var(--text) !important;
+}
+#word-list tbody tr:nth-child(even) td {
+  background-color: color-mix(in srgb, var(--bg) 60%, var(--card)) !important;
+}
+.dutch-word {
+  color: var(--accent) !important;
+  text-shadow: none !important;
+}
+.dutch-word:hover { color: var(--accent-h, #c2410c) !important; }
+
+/* ── Dark theme table ── */
+[data-theme="dark"] th,
+[data-theme="dark"] #word-list thead {
+  background-color: #1e293b !important;
+  border-color: rgba(255,255,255,.1) !important;
+}
+[data-theme="dark"] td {
+  background-color: #1e293b !important;
+  border-color: rgba(255,255,255,.08) !important;
+  color: var(--text) !important;
+}
+[data-theme="dark"] #word-list tbody tr:nth-child(even) td {
+  background-color: #273549 !important;
+}
+
+/* ── Mobile word-list card: theme-aware bg ── */
+@media (max-width: 768px) {
+  #word-list td {
+    background: transparent !important;
+    border: none !important;
+  }
+  #word-list tr {
+    background: color-mix(in srgb, var(--card) 88%, transparent) !important;
+    box-shadow:
+      0 2px 10px rgba(0,0,0,.08),
+      0 0 0 1px color-mix(in srgb, var(--accent) 15%, transparent) !important;
+  }
+  #word-list tbody tr:nth-child(even) {
+    background: color-mix(in srgb, var(--card) 85%, var(--bg)) !important;
+  }
+  #word-list td:nth-child(2) {
+    background: color-mix(in srgb, var(--accent) 7%, transparent) !important;
+    border-right: 1px solid color-mix(in srgb, var(--accent) 12%, transparent) !important;
+  }
+  #word-list td:nth-child(2)::before {
+    background: linear-gradient(180deg, var(--accent) 0%, color-mix(in srgb, var(--accent) 70%, #0ea5e9) 100%);
+  }
+  .dutch-word { color: var(--accent) !important; }
+  #word-list td:nth-child(3) span { color: var(--text-2) !important; }
 }
