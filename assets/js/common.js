@@ -92,7 +92,7 @@ function _initVolume() {
     try {
         const saved = JSON.parse(localStorage.getItem(VOL_KEY));
         if (saved && typeof saved.v === 'number') {
-            volumeControl.value = saved.v;
+            if (volumeControl) volumeControl.value = saved.v;
             const lbl = document.getElementById('volume-value');
             if (lbl) lbl.textContent = `${saved.v}%`;
         }
@@ -135,13 +135,14 @@ let currentInterval       = null;
    EVENT LISTENERS  (wired once, not per reloadTable call)
    ══════════════════════════════════════════════════════ */
 
-volumeControl.addEventListener('input', () => {
+volumeControl?.addEventListener('input', () => {
     const val = parseInt(volumeControl.value, 10);
-    document.getElementById('volume-value').textContent = `${val}%`;
+    const lbl = document.getElementById('volume-value');
+    if (lbl) lbl.textContent = `${val}%`;
     try { localStorage.setItem(VOL_KEY, JSON.stringify({ v: val, t: Date.now() })); } catch {}
 });
 
-playStopButton.addEventListener('click', () => {
+playStopButton?.addEventListener('click', () => {
     if (!isPlaying) startSpelling(); else stopSpelling();
 });
 
@@ -198,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Start game button — also closes the mobile drawer before the popup opens
-document.getElementById('start-button').addEventListener('click', () => {
+document.getElementById('start-button')?.addEventListener('click', () => {
     if (window.innerWidth <= 768) {
         const container = document.querySelector('.container');
         const icon      = document.querySelector('.toggle-menu-button .icon');
@@ -428,7 +429,7 @@ function _buildUtterance(text, lang, rate, pitch) {
     speech.lang   = lang;
     speech.rate   = rate;
     speech.pitch  = pitch;
-    speech.volume = volumeControl.value / 100;
+    speech.volume = volumeControl ? volumeControl.value / 100 : 0.7;
     return speech;
 }
 
@@ -622,13 +623,13 @@ function reloadTable(data) {
 
 function startSpelling() {
     isPlaying = true;
-    playStopButton.innerHTML = '<div class="icon"></div><span>Stop</span>';
+    if (playStopButton) playStopButton.innerHTML = '<div class="icon"></div><span>Stop</span>';
     spellNextWord();
 }
 
 function stopSpelling() {
     isPlaying = false;
-    playStopButton.innerHTML = '<div class="icon"></div><span>Play</span>';
+    if (playStopButton) playStopButton.innerHTML = '<div class="icon"></div><span>Play</span>';
     clearTimeout(currentInterval);   // was clearInterval in original — fixed
 }
 

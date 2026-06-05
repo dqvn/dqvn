@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Learn Dutch Words</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/startnl.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital@0;1&family=Caveat:wght@500&display=swap" rel="stylesheet">
@@ -17,6 +18,9 @@
 
 <body>
   <header>
+    <div class="hdr-left">
+      <a href="/dqvn/" class="hdr-back-btn" aria-label="Terug naar portaal">← Terug</a>
+    </div>
     <h1>Learn Dutch Words</h1>
     <h3 id="chapter"></h3>
     <div class="hdr-right">
@@ -40,62 +44,8 @@
       </div>
     </div>
   </div>
+
   <div class="container div-with-scrollbar">
-    <button id="toggle-menu-button" class="toggle-menu-button">
-      <span class="icon">&#9776;</span> </button>
-    <div class="left-menu">
-    <!-- Cloud sync (populated by sync.js) -->
-    <div id="sync-section"></div>
-
-      <div class="spacer">
-        <h4>Setting:</h4>
-        <div id="tts-name"></div>
-        <select id="tts-voice-select"></select>
-        <!-- add Volumn & Play button -->
-        <div class="volume-control-container">
-          <button class="play-stop-button" id="playStopButton">
-            <div class="icon"></div>
-            <span>Play</span>
-          </button>
-          <input type="range" id="volume-control" min="0" max="100" value="50">
-          <span id="volume-value">50%</span>
-        </div>
-        <!-- Add simple game -->
-        <button id="start-button" class="start-button">
-          <span class="button-text">Start Game</span>
-          <i class="fas fa-play"></i>
-        </button>
-        <span></span>
-        <!-- Flashcard game -->
-        <button id="flashcard-btn" class="start-button">
-          <span class="button-text">Flashcards Game</span>
-        </button>
-      </div>
-      <span></span>
-      <div class="spacer">
-        <button id="lm-launcher-btn" onclick="openLauncher()" title="Open all tools">
-          ⊞ &nbsp;Alle tools
-          <span class="lm-launcher-count">7</span>
-        </button>
-        <h4>Dutch Courses:</h4>
-        <div class="file-container div-with-scrollbar">
-          <ul id="file-list">
-            <!-- file list will be inserted here -->
-          </ul>
-        </div>
-      </div>
-
-    <!-- Left-menu footer -->
-    <footer id="lm-footer">
-      <div class="lm-ft-avatar">QN</div>
-      <div class="lm-ft-info">
-        <span class="lm-ft-name">Quang, Nguyen Dang</span>
-        <a class="lm-ft-email" href="mailto:dqvn2002@gmail.com">dqvn2002@gmail.com</a>
-      </div>
-      <span class="lm-ft-year" id="lm-year"></span>
-    </footer>
-    </div>
-
     <div class="table-container div-with-scrollbar">
       <table id="word-list">
         <thead>
@@ -111,17 +61,6 @@
           <!-- data will be inserted here -->
         </tbody>
       </table>
-    </div>
-  </div>
-  <!-- App Launcher overlay (rendered by initAppLauncher in common.js) -->
-  <div id="app-launcher" class="al-hidden" role="dialog" aria-modal="true" aria-label="Alle tools">
-    <div class="al-backdrop" onclick="closeLauncher()"></div>
-    <div class="al-panel">
-      <div class="al-header">
-        <span>🇳🇱 Dutch Learning Tools</span>
-        <button class="al-close-btn" onclick="closeLauncher()" aria-label="Sluiten">✕</button>
-      </div>
-      <div class="al-body" id="al-body"></div>
     </div>
   </div>
 
