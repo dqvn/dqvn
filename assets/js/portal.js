@@ -183,6 +183,14 @@ function renderProgress(s) {
         : 'Nog niet begonnen — leer de uitspraak!',
     },
     {
+      href: '/dqvn/vanstart', icon: '🚀', color: '#059669',
+      nl: 'VanStart',
+      pct: s.vsPct,
+      detail: s.vsLastLesson
+        ? `Les ${s.vsIdx + 1}/${_VS_TOTAL} · ${_vsLabel(s.vsLastLesson)}${s.vsStreak > 1 ? ` &nbsp;·&nbsp; 🔥 ${s.vsStreak} dagen` : ''}`
+        : 'Nog niet begonnen — start de NT2 cursus!',
+    },
+    {
       href: '/dqvn/verbs', icon: '🔄', color: '#dc2626',
       nl: 'Werkwoorden',
       pct: verbsPct,
@@ -229,14 +237,6 @@ function renderProgress(s) {
       detail: (s.sentToday || 0) > 0
         ? `${s.sentToday}/5 vandaag${s.sentToday >= s.SENT_GOAL ? ' 🎉' : ' 🔔'}${s.sentStreak > 0 ? ` &nbsp;·&nbsp; 🔥 ${s.sentStreak} dagen` : ''} &nbsp;·&nbsp; ⭐ ${s.sentXP} XP`
         : `Nog niet begonnen — schrijf 5 zinnen per dag!${s.sentXP > 0 ? ` &nbsp;·&nbsp; ⭐ ${s.sentXP} XP totaal` : ''}`,
-    },
-    {
-      href: '/dqvn/vanstart', icon: '🚀', color: '#059669',
-      nl: 'VanStart',
-      pct: s.vsPct,
-      detail: s.vsLastLesson
-        ? `Les ${s.vsIdx + 1}/${_VS_TOTAL} · ${_vsLabel(s.vsLastLesson)}${s.vsStreak > 1 ? ` &nbsp;·&nbsp; 🔥 ${s.vsStreak} dagen` : ''}`
-        : 'Nog niet begonnen — start de NT2 cursus!',
     },
   ];
 
