@@ -644,7 +644,16 @@ function spellNextWord() {
     if (recentNumbers.length > wordList.length * 0.9) recentNumbers.shift();
 
     Array.from(tableBody.children).forEach(r => r.classList.remove('highlighted-row'));
-    rowPrev.scrollIntoView({ block: 'start' });
+
+    // Scroll only the table container — avoids scrollIntoView() moving the
+    // visual viewport on mobile (which hides the fixed header).
+    const _scrollWrapper = rowPrev.closest('.table-container') || rowPrev.closest('.div-with-scrollbar');
+    if (_scrollWrapper) {
+        _scrollWrapper.scrollTop = Math.max(0, rowPrev.offsetTop - _scrollWrapper.clientHeight * 0.25);
+    } else {
+        rowPrev.scrollIntoView({ block: 'nearest' });
+    }
+
     rowMain.classList.add('highlighted-row');
 
     speakText(wordNL);
