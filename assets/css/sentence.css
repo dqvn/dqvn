@@ -824,10 +824,18 @@ body {
 .hidden { display: none !important; }
 
 /* ── Mobile ──────────────────────────────────────────────── */
+
+/* ≤640 px: hide font-size controls — saves ~72 px in the nav */
+@media (max-width: 640px) {
+    #fs-ctrl { display: none; }
+    .mode-btn { padding: 5px 9px; font-size: .76rem; }
+}
+
+/* ≤480 px: hide the nav title too — context is clear from the mode toggle */
 @media (max-width: 480px) {
-    #top-nav { gap: 7px; padding: 0 10px; }
-    .nav-title { font-size: .88rem; }
-    .mode-btn  { padding: 5px 8px; font-size: .72rem; }
+    #top-nav   { gap: 6px; padding: 0 10px; }
+    .nav-title { display: none; }
+    .mode-btn  { padding: 5px 7px; font-size: .72rem; }
     #game-card { padding: 20px 16px; }
     .gc-english { font-size: 1rem; }
     .done-stats { flex-direction: column; align-items: center; }
