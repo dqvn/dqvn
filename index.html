@@ -500,6 +500,36 @@
   /* ══════════════════════════
      TODAY'S TASKS
   ══════════════════════════ */
+  #today-tasks-wrap {
+    margin-top: 44px;
+    background: linear-gradient(155deg,
+      rgba(255, 237, 213, .60) 0%,
+      rgba(255, 255, 255, .30) 55%
+    );
+    border: 1px solid rgba(254, 215, 170, .50);
+    border-radius: 20px;
+    padding: 20px 22px 24px;
+    box-shadow:
+      0 6px 28px rgba(234, 88, 12, .08),
+      0 2px 6px  rgba(0,   0,  0, .04),
+      inset 0 1px 0 rgba(255, 255, 255, .70);
+  }
+  #today-tasks-wrap > .sec-head {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  [data-theme="dark"] #today-tasks-wrap {
+    background: linear-gradient(155deg,
+      rgba(99, 102, 241, .07) 0%,
+      rgba(30,  41,  59, .26) 55%
+    );
+    border-color: rgba(99, 102, 241, .16);
+    box-shadow:
+      0 6px 28px rgba(99, 102, 241, .10),
+      0 2px 6px  rgba(0,   0,   0, .20),
+      inset 0 1px 0 rgba(255, 255, 255, .04);
+  }
+
   .today-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1007,6 +1037,7 @@
      RESPONSIVE
   ══════════════════════════ */
   @media (max-width: 720px) {
+    #today-tasks-wrap { padding: 16px 16px 20px; margin-top: 34px; border-radius: 16px; }
     .today-grid { grid-template-columns: 1fr; }
     .today-icon-wrap { width: 38px; height: 38px; font-size: 1.2rem; }
     /* iOS/Android: fixed-attachment background is slow/broken — switch to scroll */
