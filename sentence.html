@@ -175,5 +175,25 @@
   <script src="assets/js/sync.js"></script>
   <script src="assets/js/sentence.js" defer></script>
 
+  <!-- DEBUG: viewport width indicator — remove when done -->
+  <div id="dbg-vp" style="
+    position:fixed; bottom:10px; right:10px; z-index:9999;
+    background:#0f172a; color:#06d6a0; font:700 12px/1 monospace;
+    padding:6px 10px; border-radius:8px; border:1px solid #06d6a0;
+    pointer-events:none; opacity:.92;
+  "></div>
+  <script>
+    (function(){
+      var el = document.getElementById('dbg-vp');
+      function update(){
+        var w = window.innerWidth;
+        var bp = w <= 480 ? '≤480px' : w <= 640 ? '≤640px' : '>640px';
+        el.textContent = w + 'px  ' + bp;
+      }
+      update();
+      window.addEventListener('resize', update);
+    })();
+  </script>
+
 </body>
 </html>
