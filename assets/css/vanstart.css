@@ -208,6 +208,10 @@ header#vs-header .hdr-fs-btn {
   border-color: var(--accent);
   background: rgba(255,255,255,.1);
 }
+#vs-sidebar #tts-voice-select option {
+  background-color: #1c2a42;
+  color: #e2e8f0;
+}
 
 /* Volume row */
 .vs-vol-row {
@@ -731,4 +735,10 @@ th {
   }
   .dutch-word { color: var(--accent) !important; }
   #word-list td:nth-child(3) span { color: var(--text-2) !important; }
+
+  /* Spacer rows are hidden on mobile, so add explicit scroll clearance on the
+     tbody so the last card is fully visible above the iOS home indicator */
+  #word-list tbody {
+    padding-bottom: max(56px, calc(env(safe-area-inset-bottom, 0px) + 32px));
+  }
 }
