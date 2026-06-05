@@ -639,6 +639,7 @@ function reloadTable(data) {
 
 function startSpelling() {
     isPlaying = true;
+    _userScrolledAt = 0; // reset so first word always auto-scrolls into view
     if (playStopButton) playStopButton.innerHTML = '<div class="icon"></div><span>Stop</span>';
     spellNextWord();
 }
@@ -663,9 +664,16 @@ function spellNextWord() {
 
     // Scroll only the table container — avoids scrollIntoView() moving the
     // visual viewport on mobile (which hides the fixed header).
+    // Skip auto-scroll for AUTO_SCROLL_PAUSE_MS after a manual user scroll so
+    // the user can freely browse to the top/bottom row while playback continues.
     const _scrollWrapper = rowPrev.closest('.table-container') || rowPrev.closest('.div-with-scrollbar');
+    _bindScrollListener(_scrollWrapper);
     if (_scrollWrapper) {
-        _scrollWrapper.scrollTop = Math.max(0, rowPrev.offsetTop - _scrollWrapper.clientHeight * 0.25);
+        if (Date.now() - _userScrolledAt >= AUTO_SCROLL_PAUSE_MS) {
+            _programScroll = true;
+            _scrollWrapper.scrollTop = Math.max(0, rowPrev.offsetTop - _scrollWrapper.clientHeight * 0.25);
+            setTimeout(() => { _programScroll = false; }, 150);
+        }
     } else {
         rowPrev.scrollIntoView({ block: 'nearest' });
     }
