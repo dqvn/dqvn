@@ -550,14 +550,12 @@ header#vs-header .hdr-fs-btn {
   border-left: 4px solid var(--accent) !important;
 }
 
-/* Dutch word bounces while being spoken */
+/* Dutch word accent while being spoken — no zoom, only color+glow */
 .highlighted-row .dutch-word {
   display: inline-block !important;
   color: var(--accent) !important;
   font-weight: 700 !important;
   text-shadow: 0 0 10px color-mix(in srgb, var(--accent) 45%, transparent) !important;
-  animation: vs-word-speak 0.75s ease-in-out infinite !important;
-  transform-origin: left center;
 }
 
 /* Equalizer bars appended after the Dutch word */
@@ -572,13 +570,13 @@ header#vs-header .hdr-fs-btn {
   animation: vs-eq-bars 0.65s ease-in-out infinite;
 }
 
-/* Mobile card: accent glow ring + scale */
+/* Mobile card: accent glow ring + left indicator stripe */
 @media (max-width: 768px) {
   .highlighted-row {
     background: color-mix(in srgb, var(--accent) 18%, var(--card)) !important;
     box-shadow: 0 0 0 2px var(--accent),
                 0 4px 20px color-mix(in srgb, var(--accent) 38%, transparent) !important;
-    transform: scale(1.018) !important;
+    border-left: 4px solid var(--accent) !important;
     outline: none !important;
     animation: vs-tts-card-pulse 1.8s ease-in-out infinite !important;
   }
