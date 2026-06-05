@@ -608,21 +608,39 @@ function _tileRows(tiles) {
 
 /* Returns the insertion index — row-aware so multi-row zones work correctly */
 function computeInsertIdx(cx, cy) {
-  const zone  = document.getElementById('answer-zone');
-  const tiles = [...zone.querySelectorAll('.tile-answer:not(.is-drag-src)')];
-  if (tiles.length === 0) return 0;
+  const zone     = document.getElementById('answer-zone');
+  const filtered = [...zone.querySelectorAll('.tile-answer:not(.is-drag-src)')];
+  if (filtered.length === 0) return 0;
 
-  const rows = _tileRows(tiles);
+  const rows   = _tileRows(filtered);
+  const rowIdx = rows.reduce((bestI, row, i, arr) =>
+    Math.abs(row.midY - cy) < Math.abs(arr[bestI].midY - cy) ? i : bestI
+  , 0);
+  const activeRow = rows[rowIdx];
 
-  /* Find the row whose midY is closest to the cursor */
-  const activeRow = rows.reduce((best, row) =>
-    Math.abs(row.midY - cy) < Math.abs(best.midY - cy) ? row : best
-  , rows[0]);
-
-  /* Within that row find the insert slot by X midpoint */
+  /* Within the active row, find insert slot by X midpoint */
   for (const { i, r } of activeRow.items) {
     if (cx < r.left + r.width / 2) return i;
   }
+
+  /* Cursor is past all tiles in the active row (dead space).
+     Before returning "end of this row", check whether cursor X still falls
+     within the previous row's full horizontal extent — including the dimmed
+     src tile that still occupies layout space.  If so, the user is hovering
+     in the "wrap gap" between the two rows and wants to insert between them,
+     not after the last tile on this row. */
+  if (rowIdx > 0) {
+    const prevRow    = rows[rowIdx - 1];
+    const allInPrev  = [...zone.querySelectorAll('.tile-answer')].filter(t => {
+      const r = t.getBoundingClientRect();
+      return Math.abs((r.top + r.height / 2) - prevRow.midY) <= 10;
+    });
+    const prevRight  = allInPrev.reduce((m, t) =>
+      Math.max(m, t.getBoundingClientRect().right), 0
+    );
+    if (cx <= prevRight) return activeRow.items[0].i;
+  }
+
   return activeRow.items[activeRow.items.length - 1].i + 1;
 }
 
