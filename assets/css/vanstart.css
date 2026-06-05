@@ -243,6 +243,18 @@ header#vs-header .hdr-fs-btn {
   text-align: right;
 }
 
+/* Neutralise style.css's .button-text { position:absolute } inside sidebar buttons */
+.vs-game-btn {
+  position: relative;
+  overflow: hidden;
+}
+.vs-game-btn .button-text {
+  position: static !important;
+  transform: none !important;
+  width: auto !important;
+}
+.vs-game-btn .fas { display: none !important; }
+
 /* Game buttons */
 .vs-sb-games {
   padding: 10px 12px;
