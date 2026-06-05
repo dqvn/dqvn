@@ -3,9 +3,11 @@
 
 <head>
   <script>(function(){try{var v=(JSON.parse(localStorage.getItem('nl_portal_theme'))||{}).v||'orange';document.documentElement.setAttribute('data-theme',v||'orange');}catch(e){document.documentElement.setAttribute('data-theme','orange');}})();</script>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Learn Dutch Words</title>
+  <title>VanStart – NT2 Woordenschat</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/vanstart.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital@0;1&family=Caveat:wght@500&display=swap" rel="stylesheet">
@@ -16,17 +18,123 @@
 </head>
 
 <body>
-  <header>
-    <h1>Learn Dutch Words</h1>
-    <h3 id="chapter"></h3>
+
+  <!-- ── Unified header (visible on both mobile & desktop) ── -->
+  <header id="vs-header">
+    <div class="vs-hdr-left">
+      <a href="/dqvn/" class="vs-back-btn" aria-label="Terug naar portaal">← Terug</a>
+      <button class="vs-hamburger" id="mob-menu-btn" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div class="vs-hdr-center">
+      <h1>Learn Dutch Words</h1>
+      <h3 id="chapter"></h3>
+    </div>
     <div class="hdr-right">
       <button class="hdr-fs-btn" id="lm-fs-dec" aria-label="Decrease text size">A−</button>
       <button class="hdr-fs-btn" id="lm-fs-inc" aria-label="Increase text size">A+</button>
       <button id="hide-meaning-btn" class="hdr-toggle-btn" title="Hide/show meanings">👁️</button>
     </div>
   </header>
-  <!-- flashcard-popup is injected by flashcard.js -->
 
+  <!-- ── Drawer overlay (mobile) ── -->
+  <div id="vs-drawer-overlay" onclick="closeVsSidebar()"></div>
+
+  <!-- ── Main layout: sidebar + content ── -->
+  <div id="vs-layout">
+
+    <!-- Sidebar (desktop: fixed left · mobile: bottom drawer) -->
+    <nav id="vs-sidebar" class="sidebar-dark">
+      <div class="sb-drag-handle"></div>
+
+      <div class="vs-sb-logo">
+        <h2>🇳🇱 VanStart</h2>
+        <p>NT2 Woordenschat</p>
+      </div>
+
+      <!-- Scrollable body -->
+      <div class="vs-sb-body">
+
+        <!-- Cloud sync (populated by sync.js) -->
+        <div id="sync-section"></div>
+
+        <!-- TTS settings -->
+        <div class="vs-sb-tts">
+          <div class="vs-sb-lbl">🔊 Stem &amp; Snelheid</div>
+          <div id="tts-name"></div>
+          <select id="tts-voice-select"></select>
+          <div class="vs-vol-row">
+            <button class="play-stop-button" id="playStopButton">
+              <div class="icon"></div>
+              <span>Play</span>
+            </button>
+            <input type="range" id="volume-control" min="0" max="100" value="50">
+            <span id="volume-value">50%</span>
+          </div>
+        </div>
+
+        <!-- Game buttons -->
+        <div class="vs-sb-games">
+          <div class="vs-sb-lbl">🎮 Spellen</div>
+          <button id="start-button" class="vs-game-btn">
+            <span class="button-text">🃏 Woordenspel</span>
+            <i class="fas fa-play" style="display:none"></i>
+          </button>
+          <button id="flashcard-btn" class="vs-game-btn">
+            📚 Flashcards
+          </button>
+        </div>
+
+        <!-- Dutch courses list -->
+        <div class="vs-sb-courses">
+          <div class="vs-sb-lbl">📖 Dutch Courses</div>
+          <div class="file-container div-with-scrollbar">
+            <ul id="file-list"></ul>
+          </div>
+        </div>
+
+      </div><!-- .vs-sb-body -->
+
+      <!-- Back link -->
+      <div id="vs-sb-back">
+        <a href="/dqvn/">← Terug naar portaal</a>
+      </div>
+
+      <!-- Footer -->
+      <footer id="lm-footer">
+        <div class="lm-ft-avatar">QN</div>
+        <div class="lm-ft-info">
+          <span class="lm-ft-name">Quang, Nguyen Dang</span>
+          <a class="lm-ft-email" href="mailto:dqvn2002@gmail.com">dqvn2002@gmail.com</a>
+        </div>
+        <span class="lm-ft-year" id="lm-year"></span>
+      </footer>
+    </nav><!-- #vs-sidebar -->
+
+    <!-- ── Content: word table ── -->
+    <div id="vs-content">
+      <div class="table-container div-with-scrollbar">
+        <table id="word-list">
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Dutch</th>
+              <th>English</th>
+              <th>Sample</th>
+              <th>Vietnamese</th>
+            </tr>
+          </thead>
+          <tbody id="word-list-body">
+            <!-- rows inserted by common.js -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- #vs-layout -->
+
+  <!-- ── Vocabulary game popup ── -->
   <div id="popup" style="display: none;">
     <button id="game-close-btn" title="Close game">✕</button>
     <div id="game-container">
@@ -40,78 +148,40 @@
       </div>
     </div>
   </div>
-  <div class="container div-with-scrollbar">
-    <button id="toggle-menu-button" class="toggle-menu-button">
-      <span class="icon">&#9776;</span> </button>
-    <div class="left-menu">
-    <!-- Cloud sync (populated by sync.js) -->
-    <div id="sync-section"></div>
+  <!-- flashcard-popup is injected by flashcard.js -->
 
-      <div class="spacer">
-        <h4>Menu</h4>
-        <div id="tts-name"></div>
-        <select id="tts-voice-select"></select>
-        <!-- add Volumn & Play button -->
-        <div class="volume-control-container">
-          <button class="play-stop-button" id="playStopButton">
-            <div class="icon"></div>
-            <span>Play</span>
-          </button>
-          <input type="range" id="volume-control" min="0" max="100" value="50">
-          <span id="volume-value">50%</span>
-        </div>
-        <!-- Add simple game -->
-        <button id="start-button" class="start-button">
-          <span class="button-text">Start Game</span>
-          <i class="fas fa-play"></i>
-        </button>
-        <span></span>
-        <!-- Flashcard game -->
-        <button id="flashcard-btn" class="start-button">
-          <span class="button-text">Flashcards Game</span>
-        </button>
-      </div>
-      <span></span>
-      <div class="spacer">
-        <nav class="lm-nav">
-          <a href="/dqvn/" class="lm-nav-link" title="Go to Main">🏠 Main</a>
-        </nav>
-        <h4>Dutch Courses:</h4>
-        <div class="file-container div-with-scrollbar">
-          <ul id="file-list">
-            <!-- file list will be inserted here -->
-          </ul>
-        </div>
-      </div>
+  <!-- ── Sidebar open/close logic ── -->
+  <script>
+    function openVsSidebar() {
+      document.getElementById('vs-sidebar').classList.add('open');
+      document.getElementById('vs-drawer-overlay').classList.add('on');
+    }
+    function closeVsSidebar() {
+      document.getElementById('vs-sidebar').classList.remove('open');
+      document.getElementById('vs-drawer-overlay').classList.remove('on');
+    }
 
-    <!-- Left-menu footer -->
-    <footer id="lm-footer">
-      <div class="lm-ft-avatar">QN</div>
-      <div class="lm-ft-info">
-        <span class="lm-ft-name">Quang, Nguyen Dang</span>
-        <a class="lm-ft-email" href="mailto:dqvn2002@gmail.com">dqvn2002@gmail.com</a>
-      </div>
-      <span class="lm-ft-year" id="lm-year"></span>
-    </footer>
-    </div>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Hamburger opens sidebar
+      document.getElementById('mob-menu-btn')
+        ?.addEventListener('click', openVsSidebar);
 
-    <div class="table-container div-with-scrollbar">
-      <table id="word-list">
-        <thead>
-          <tr>
-            <th>No.</th>
-            <th>Dutch</th>
-            <th>English</th>
-            <th>Sample</th>
-            <th>Vietnamese</th>
-          </tr>
-        </thead>
-        <tbody id="word-list-body">
-          <!-- data will be inserted here -->
-        </tbody>
-      </table>
-    </div>
-  </div>
+      // Close sidebar after selecting a lesson on mobile
+      document.getElementById('file-list')
+        ?.addEventListener('click', function () {
+          if (window.innerWidth <= 700) closeVsSidebar();
+        });
+
+      // Close sidebar when a game starts on mobile
+      ['start-button', 'flashcard-btn'].forEach(function (id) {
+        document.getElementById(id)
+          ?.addEventListener('click', function () {
+            if (window.innerWidth <= 700) closeVsSidebar();
+          });
+      });
+    });
+  </script>
+
   <script src="assets/js/common.js"></script>
   <script src="assets/js/ttsvanstartscript.js"></script>
   <script src="assets/js/game.js"></script>
