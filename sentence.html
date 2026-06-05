@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/sync.css">
-  <link rel="stylesheet" href="assets/css/sentence.css?v=2">
+  <link rel="stylesheet" href="assets/css/sentence.css?v=3">
   <link rel="stylesheet" href="assets/css/themes.css">
 </head>
 <body>
@@ -175,26 +175,52 @@
   <script src="assets/js/sync.js"></script>
   <script src="assets/js/sentence.js" defer></script>
 
-  <!-- DEBUG: viewport width indicator — remove when done -->
-  <div id="dbg-vp" style="
-    position:fixed; bottom:10px; right:10px; z-index:9999;
-    background:#0f172a; color:#06d6a0; font:700 12px/1 monospace;
-    padding:6px 10px; border-radius:8px; border:1px solid #06d6a0;
-    pointer-events:none; opacity:.92;
-  "></div>
+  <!-- DEBUG: viewport width indicator. Set DEBUG=false to hide. Click badge to toggle. -->
   <script>
-    (function(){
-      var el = document.getElementById('dbg-vp');
-      function update(){
-        var w = window.innerWidth;
-        var bp = w <= 480 ? '≤480px' : w <= 640 ? '≤640px' : '>640px';
-        var title = document.querySelector('.nav-title');
-        var titleHidden = title ? getComputedStyle(title).display === 'none' : '?';
-        el.textContent = w + 'px ' + bp + ' | title:' + (titleHidden ? 'hidden' : 'VISIBLE');
+  (function(){
+    const DEBUG = false;             /* ← flip to true to enable */
+
+    if (!DEBUG) return;
+
+    const el = document.createElement('div');
+    el.id = 'dbg-vp';
+    el.style.cssText = [
+      'position:fixed','bottom:10px','right:10px','z-index:9999',
+      'background:#0f172a','color:#06d6a0','font:700 12px/1 monospace',
+      'padding:6px 10px','border-radius:8px','border:1px solid #06d6a0',
+      'cursor:pointer','opacity:.92','user-select:none',
+    ].join(';');
+    el.title = 'Click to hide · press D to show';
+    document.body.appendChild(el);
+
+    let visible = sessionStorage.getItem('dbg') !== '0';
+    el.style.display = visible ? '' : 'none';
+
+    el.addEventListener('click', function(){
+      visible = false;
+      el.style.display = 'none';
+      sessionStorage.setItem('dbg', '0');
+    });
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'D' && !e.ctrlKey && !e.metaKey &&
+          !['INPUT','TEXTAREA'].includes(document.activeElement?.tagName)) {
+        visible = !visible;
+        el.style.display = visible ? '' : 'none';
+        sessionStorage.setItem('dbg', visible ? '1' : '0');
       }
-      update();
-      window.addEventListener('resize', update);
-    })();
+    });
+
+    function update(){
+      if (!visible) return;
+      const w  = window.innerWidth;
+      const bp = w <= 480 ? '≤480px' : w <= 640 ? '≤640px' : '>640px';
+      const t  = document.querySelector('.nav-title');
+      const th = t ? getComputedStyle(t).display === 'none' : '?';
+      el.textContent = w + 'px ' + bp + ' | title:' + (th ? 'hidden' : 'VISIBLE');
+    }
+    update();
+    window.addEventListener('resize', update);
+  })();
   </script>
 
 </body>
