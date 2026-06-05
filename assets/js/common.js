@@ -131,6 +131,22 @@ let googleNederlandsVoice = null;
 let isPlaying             = false;
 let currentInterval       = null;
 
+/* ── Auto-scroll user-override tracking ──
+   If the user manually scrolls the list while playing, auto-scroll
+   is suppressed for AUTO_SCROLL_PAUSE_MS so they can reach the top/bottom. */
+const AUTO_SCROLL_PAUSE_MS = 5000;
+let   _userScrolledAt      = 0;
+let   _programScroll       = false;
+let   _scrollListenerBound = false;
+
+function _bindScrollListener(wrapper) {
+  if (_scrollListenerBound || !wrapper) return;
+  _scrollListenerBound = true;
+  wrapper.addEventListener('scroll', () => {
+    if (!_programScroll) _userScrolledAt = Date.now();
+  }, { passive: true });
+}
+
 /* ══════════════════════════════════════════════════════
    EVENT LISTENERS  (wired once, not per reloadTable call)
    ══════════════════════════════════════════════════════ */
