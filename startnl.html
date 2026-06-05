@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Vocabulaire – Learn Dutch Words</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/startnl.css">
+  <link rel="stylesheet" href="assets/css/vanstart.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital@0;1&family=Caveat:wght@500&display=swap" rel="stylesheet">
@@ -18,20 +18,118 @@
 </head>
 
 <body>
-  <header>
-    <div class="hdr-left">
-      <a href="/dqvn/" class="hdr-back-btn" aria-label="Terug naar portaal">← Terug</a>
+
+  <!-- ── Unified header (visible on both mobile & desktop) ── -->
+  <header id="vs-header">
+    <div class="vs-hdr-left">
+      <a href="/dqvn/" class="vs-back-btn" aria-label="Terug naar portaal">← Terug</a>
+      <button class="vs-hamburger" id="mob-menu-btn" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
     </div>
-    <h1>Learn Dutch Words</h1>
-    <h3 id="chapter"></h3>
+    <div class="vs-hdr-center">
+      <h1>Learn Dutch Words</h1>
+      <h3 id="chapter"></h3>
+    </div>
     <div class="hdr-right">
       <button class="hdr-fs-btn" id="lm-fs-dec" aria-label="Decrease text size">A−</button>
       <button class="hdr-fs-btn" id="lm-fs-inc" aria-label="Increase text size">A+</button>
       <button id="hide-meaning-btn" class="hdr-toggle-btn" title="Hide/show meanings">👁️</button>
     </div>
   </header>
-  <!-- flashcard-popup is injected by flashcard.js -->
 
+  <!-- ── Drawer overlay (mobile) ── -->
+  <div id="vs-drawer-overlay" onclick="closeVsSidebar()"></div>
+
+  <!-- ── Main layout: sidebar + content ── -->
+  <div id="vs-layout">
+
+    <!-- Sidebar (desktop: fixed left · mobile: bottom drawer) -->
+    <nav id="vs-sidebar" class="sidebar-dark">
+      <div class="sb-drag-handle"></div>
+
+      <div class="vs-sb-logo">
+        <h2>🇳🇱 Vocabulaire</h2>
+        <p>Leer Nederlandse Woordenschat</p>
+      </div>
+
+      <!-- Scrollable body -->
+      <div class="vs-sb-body">
+
+        <!-- Cloud sync (populated by sync.js) -->
+        <div id="sync-section"></div>
+
+        <!-- TTS settings -->
+        <div class="vs-sb-tts">
+          <div class="vs-sb-lbl">🔊 Stem &amp; Snelheid</div>
+          <div id="tts-name"></div>
+          <select id="tts-voice-select"></select>
+          <div class="vs-vol-row">
+            <button class="play-stop-button" id="playStopButton">
+              <div class="icon"></div>
+              <span>Play</span>
+            </button>
+            <input type="range" id="volume-control" min="0" max="100" value="50">
+            <span id="volume-value">50%</span>
+          </div>
+        </div>
+
+        <!-- Game buttons -->
+        <div class="vs-sb-games">
+          <div class="vs-sb-lbl">🎮 Spellen</div>
+          <button id="start-button" class="vs-game-btn">🃏 Woordenspel</button>
+          <button id="flashcard-btn" class="vs-game-btn">📚 Flashcards</button>
+        </div>
+
+        <!-- Dutch courses list -->
+        <div class="vs-sb-courses">
+          <div class="vs-sb-lbl">📖 Dutch Courses</div>
+          <div class="file-container div-with-scrollbar">
+            <ul id="file-list"></ul>
+          </div>
+        </div>
+
+      </div><!-- .vs-sb-body -->
+
+      <!-- Back link -->
+      <div id="vs-sb-back">
+        <a href="/dqvn/">← Terug naar portaal</a>
+      </div>
+
+      <!-- Footer -->
+      <footer id="lm-footer">
+        <div class="lm-ft-avatar">QN</div>
+        <div class="lm-ft-info">
+          <span class="lm-ft-name">Quang, Nguyen Dang</span>
+          <a class="lm-ft-email" href="mailto:dqvn2002@gmail.com">dqvn2002@gmail.com</a>
+        </div>
+        <span class="lm-ft-year" id="lm-year"></span>
+      </footer>
+    </nav><!-- #vs-sidebar -->
+
+    <!-- ── Content: word table ── -->
+    <div id="vs-content">
+      <div class="table-container div-with-scrollbar">
+        <table id="word-list">
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Dutch</th>
+              <th>English</th>
+              <th>Sample</th>
+              <th>Vietnamese</th>
+            </tr>
+          </thead>
+          <tbody id="word-list-body">
+            <!-- rows inserted by common.js -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- #vs-layout -->
+
+  <!-- ── Vocabulary game popup ── -->
   <div id="popup" style="display: none;">
     <button id="game-close-btn" title="Close game">✕</button>
     <div id="game-container">
@@ -45,25 +143,36 @@
       </div>
     </div>
   </div>
+  <!-- flashcard-popup is injected by flashcard.js -->
 
-  <div class="container div-with-scrollbar">
-    <div class="table-container div-with-scrollbar">
-      <table id="word-list">
-        <thead>
-          <tr>
-            <th>No.</th>
-            <th>Dutch</th>
-            <th>English</th>
-            <th>Sample</th>
-            <th>Vietnamese</th>
-          </tr>
-        </thead>
-        <tbody id="word-list-body">
-          <!-- data will be inserted here -->
-        </tbody>
-      </table>
-    </div>
-  </div>
+  <!-- ── Sidebar open/close logic ── -->
+  <script>
+    function openVsSidebar() {
+      document.getElementById('vs-sidebar').classList.add('open');
+      document.getElementById('vs-drawer-overlay').classList.add('on');
+    }
+    function closeVsSidebar() {
+      document.getElementById('vs-sidebar').classList.remove('open');
+      document.getElementById('vs-drawer-overlay').classList.remove('on');
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('mob-menu-btn')
+        ?.addEventListener('click', openVsSidebar);
+
+      document.getElementById('file-list')
+        ?.addEventListener('click', function () {
+          if (window.innerWidth <= 700) closeVsSidebar();
+        });
+
+      ['start-button', 'flashcard-btn'].forEach(function (id) {
+        document.getElementById(id)
+          ?.addEventListener('click', function () {
+            if (window.innerWidth <= 700) closeVsSidebar();
+          });
+      });
+    });
+  </script>
 
   <script src="assets/js/common.js"></script>
   <script src="assets/js/ttsscript.js"></script>
