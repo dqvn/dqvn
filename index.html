@@ -23,17 +23,17 @@
         <span class="hdr-sub">Leerportaal</span>
       </div>
     </a>
-    <!-- Feedback button — visible for all users -->
-    <button id="fb-btn" class="hdr-fb-btn" title="Stuur feedback" aria-label="Feedback">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-      </svg>
-      <span class="hdr-fb-lbl">Feedback</span>
-      <span class="hdr-fb-badge" id="fb-badge" hidden>0</span>
-    </button>
     <!-- Auth / sync widget — populated by sync.js -->
     <div id="sync-section"></div>
   </header>
+
+  <!-- ══ FEEDBACK FAB — fixed bottom-right ══ -->
+  <button id="fb-btn" class="fb-fab" title="Stuur feedback" aria-label="Feedback">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+    </svg>
+    <span class="hdr-fb-badge" id="fb-badge" hidden>0</span>
+  </button>
 
   <!-- ══ FEEDBACK MODAL ══ -->
   <div id="fb-overlay" class="fb-overlay" aria-hidden="true">
