@@ -1351,8 +1351,12 @@ main {
   cursor: pointer;
   transition: all .15s;
 }
-.fb-type.active,
 .fb-type:hover { border-color: var(--accent); color: var(--accent); background: rgba(234,88,12,.07); }
+/* Active: solid fill with type-specific color so selection is immediately obvious */
+.fb-type.active                     { color: #fff; border-color: transparent; box-shadow: 0 2px 8px rgba(0,0,0,.18); }
+.fb-type[data-type="general"].active { background: var(--accent); }
+.fb-type[data-type="bug"].active     { background: #dc2626; }
+.fb-type[data-type="idea"].active    { background: #2563eb; }
 
 .fb-textarea {
   width: 100%;
