@@ -1212,7 +1212,10 @@ main {
     min-height: 100%;
   }
   #portal-header { padding: 0 16px; height: 56px; }
-  .hdr-sub { display: none; }
+  .hdr-sub    { display: none; }
+  .hdr-titles { display: none; }                                    /* logo only — no brand text */
+  #portal-header .sync-name { display: none !important; }           /* avatar only — no user name */
+  #portal-header .sync-card { padding: 4px 8px 4px 6px !important; } /* tighter pill without name */
   #hero { padding: 38px 16px 34px; }
   #hero::after { font-size: 7.5rem; right: -8px; }
   main { padding: 0 16px 60px; }
