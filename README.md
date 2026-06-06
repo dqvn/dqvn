@@ -192,6 +192,7 @@ Upstash Redis   key: fc:{google_sub}
 cd worker
 wrangler secret put UPSTASH_URL
 wrangler secret put UPSTASH_TOKEN
+wrangler secret put OWNER_EMAIL   # admin email — never commit this value
 # Edit wrangler.toml [vars] GOOGLE_CLIENT_ID first, then:
 wrangler deploy
 # Paste the printed Worker URL into assets/sync.js → SYNC_WORKER_URL
@@ -213,7 +214,7 @@ Google Cloud Console: add your GitHub Pages origin to **Authorized JavaScript or
 | `nl_wheel_pkgs` | Wheel question packages array | Union by package ID; more-items version wins |
 | `nl_sentence_v1` | Sentence-builder streak, daily count, XP `{ date, count, streak, xp, lastGoalDate }` | Max XP; most-recent date wins for count; max streak with most-recent `lastGoalDate` |
 
-Keys intentionally **not** synced (device-specific or ephemeral): `nl_tts_voice_v1`, `nl_tts_rate`, `nl_vocab_fs`, `nl_fc_word_size`, `nl_verbs_theme`, `nl_verbs_font`, `klanken-voice`, `klanken-vol`, `kids_tts_speed`. Cache keys (`nl_dlg_*`, `nl_podcast_cache_v1`, `nl_rss_*`) are also excluded. Session-resume key `nl_sentence_session_v1` (today's queue + position) is local-only. Podcast/RSS read-history (`nl_podcast_v1`, `nl_rss_v1`) is local-only.
+Keys intentionally **not** synced (device-specific or ephemeral): `nl_tts_en` (TTS English toggle), `nl_vanstart_v1` (VanStart lesson progress), `nl_portal_theme` (colour theme), `nl_tts_voice_v1`, `nl_tts_rate`, `nl_vocab_fs`, `nl_fc_word_size`, `nl_verbs_theme`, `nl_verbs_font`, `klanken-voice`, `klanken-vol`, `kids_tts_speed`. Cache keys (`nl_dlg_*`, `nl_podcast_cache_v1`, `nl_rss_*`) are also excluded. Session-resume key `nl_sentence_session_v1` (today's queue + position) is local-only. Podcast/RSS read-history (`nl_podcast_v1`, `nl_rss_v1`) is local-only.
 
 **Learning-plan progress** (`nl_learning_progress_v1`) is also **not yet synced** — it is computed from other synced keys so it will auto-rebuild after a sync, but the active-unit pointer is local-only for now.
 
@@ -996,13 +997,54 @@ Pointer-event based (mouse + touch). Ghost clone lifts on drag. Glowing insert c
 | `nl_sentence_fs` | Font-size step index (0–4) |
 
 ### Worker endpoints (Cloudflare — `worker/index.js`)
-| Endpoint | Description |
-|---|---|
-| `POST /sync` | Bidirectional merge of 9 progress keys including `sentence` |
-| `GET /rss` | Proxies `nu.nl` RSS; 2-layer cache (memory + Redis) |
-| `GET /podcast` | Proxies NPO RSS feed; regex XML parser; 2-layer cache (memory + Redis) |
+| Endpoint | Auth required | Description |
+|---|---|---|
+| `POST /sync` | Google JWT (any signed-in user) | Bidirectional merge of 9 progress keys; response includes `isAdmin` flag |
+| `GET /feedback` | Owner JWT | Returns all feedback entries from Redis |
+| `GET /feedback/badge` | Owner JWT | Returns unread feedback count |
+| `GET /admin/users` | Owner JWT | Returns all synced user records |
+| `GET /rss` | None | Proxies `nu.nl` RSS; 2-layer cache (memory + Redis) |
+| `GET /podcast` | None | Proxies NPO RSS feed; regex XML parser; 2-layer cache (memory + Redis) |
+
+"Owner JWT" means a valid Google JWT **and** `email === OWNER_EMAIL` (the Cloudflare secret). Any mismatch returns 403 before touching Redis.
+
+---
+
+## Security / Admin access
+
+### Admin identity — never in client source
+
+The owner's email is stored **only** as an encrypted Cloudflare Worker secret (`OWNER_EMAIL`). It is read at runtime via `env.OWNER_EMAIL` and never appears in committed code or client JavaScript.
+
+```bash
+# Set once, never commit the value:
+wrangler secret put OWNER_EMAIL
+```
+
+### `_requireOwner()` — server-side enforcement
+
+Every admin endpoint calls the shared helper before touching Redis:
+
+```js
+async function _requireOwner(request, env) {
+  const auth = request.headers.get('Authorization') || '';
+  if (!auth.startsWith('Bearer ')) return { error: reply({ error: 'Unauthorized' }, 401, origin) };
+  let user;
+  try { user = await verifyGoogleJWT(auth.slice(7), env.GOOGLE_CLIENT_ID); }
+  catch { return { error: reply({ error: 'Invalid token' }, 401, origin) }; }
+  if (!_ownerEmail(env) || user.email !== _ownerEmail(env))
+    return { error: reply({ error: 'Forbidden' }, 403, origin) };
+  return { user };
+}
+```
+
+This verifies the Google JWT signature (RS256, fetched from Google's JWKS endpoint) **and** checks the email against the secret. A forged or stolen token that doesn't match `OWNER_EMAIL` gets a 403 before any data is read.
+
+### `isAdmin` client flag — UI gating only
+
+The `/sync` response includes `isAdmin: user.email === env.OWNER_EMAIL`. The client stores this in `fc_sync_user` (localStorage) and uses it to show/hide admin UI (e.g. the feedback badge). This flag is **not** a security boundary — it only controls visibility. Real authorization is always enforced server-side by `_requireOwner()`. A user who manually sets `isAdmin: true` in localStorage will see admin UI chrome but all admin API calls will still return 403.
 
 ---
 
 ## Owner
-Quang, Nguyen Dang — dqvn2002@gmail.com
+Quang, Nguyen Dang
