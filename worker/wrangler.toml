@@ -11,6 +11,7 @@ GOOGLE_CLIENT_ID = "813394172048-mn81bvhivheomlm3453on49f5gbp31so.apps.googleuse
 #
 #   wrangler secret put UPSTASH_URL
 #   wrangler secret put UPSTASH_TOKEN
+#   wrangler secret put OWNER_EMAIL
 #
 # Then deploy:
 #   wrangler deploy
