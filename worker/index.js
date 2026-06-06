@@ -210,6 +210,7 @@ async function handleSync(request, env) {
     verbs:    localVerbs    = {},
     game:     localGame     = {},
     vol:      localVol      = null,
+    ttsEn:    localTtsEn   = null,
     num:      localNum      = {},
     wheel:    localWheel    = [],
     sentence: localSentence = {},
@@ -230,6 +231,7 @@ async function handleSync(request, env) {
   const mergedVerbs    = mergeVerbs   (localVerbs,    stored?.verbs    || {});
   const mergedGame     = mergeGame    (localGame,     stored?.game     || {});
   const mergedVol      = mergeVol     (localVol,      stored?.vol      || null);
+  const mergedTtsEn    = mergeVol     (localTtsEn,    stored?.ttsEn    || null);
   const mergedNum      = mergeNum     (localNum,      stored?.num      || {});
   const mergedWheel    = mergeWheel   (localWheel,    stored?.wheel    || []);
   const mergedSentence = mergeSentence(localSentence, stored?.sentence || {});
@@ -254,7 +256,7 @@ async function handleSync(request, env) {
     {
       srs: srsEncode(mergedSRS), meta: mergedMeta,
       klanken: mergedKlanken, verbs: mergedVerbs, game: mergedGame,
-      vol: mergedVol, num: mergedNum, wheel: mergedWheel,
+      vol: mergedVol, ttsEn: mergedTtsEn, num: mergedNum, wheel: mergedWheel,
       sentence: mergedSentence,
       theme:    mergedTheme,
       owner: { sub: user.sub, email: user.email, name: user.name },
@@ -267,7 +269,7 @@ async function handleSync(request, env) {
   return reply({
     srs: mergedSRS, meta: mergedMeta,
     klanken: mergedKlanken, verbs: mergedVerbs, game: mergedGame,
-    vol: mergedVol, num: mergedNum, wheel: mergedWheel,
+    vol: mergedVol, ttsEn: mergedTtsEn, num: mergedNum, wheel: mergedWheel,
     sentence: mergedSentence,
     theme:    mergedTheme,
   }, 200, origin);

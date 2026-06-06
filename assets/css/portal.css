@@ -482,6 +482,37 @@ main {
   min-width: 38px;
   font-variant-numeric: tabular-nums;
 }
+/* TTS English toggle switch */
+.tts-en-switch {
+  position: relative;
+  display: inline-flex;
+  width: 44px; height: 24px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.tts-en-switch input { opacity: 0; width: 0; height: 0; position: absolute; }
+.tts-en-track {
+  position: absolute; inset: 0;
+  border-radius: 12px;
+  background: var(--border, #e2e8f0);
+  transition: background .2s;
+}
+.tts-en-switch input:checked + .tts-en-track { background: var(--accent, #f97316); }
+.tts-en-track::after {
+  content: '';
+  position: absolute;
+  left: 3px; top: 3px;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,.22);
+  transition: transform .2s;
+}
+.tts-en-switch input:checked + .tts-en-track::after { transform: translateX(20px); }
+#tts-en-val {
+  font-size: .78rem; color: var(--text-3);
+  min-width: 26px; font-weight: 600;
+}
 
 /* ══════════════════════════
    LEERPAD

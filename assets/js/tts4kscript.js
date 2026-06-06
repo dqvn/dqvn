@@ -144,6 +144,7 @@ function speakText(text) {
 
 // function to speak English the word using Web SpeechSynthesis API
 function speakEngText(text) {
+  try { const s = JSON.parse(localStorage.getItem('nl_tts_en')); if (!s || s.v !== true) return; } catch { return; }
   const speechENG = new SpeechSynthesisUtterance();
   speechENG.text = text;
   speechENG.rate = 0.8;

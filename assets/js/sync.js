@@ -23,6 +23,7 @@ const _SYNC_KEYS = {
   verbs:    'nl_verbs_v3',           // verb trainer stats
   game:     'nl_game_progress_v1',   // game seen-words per chapter
   vol:      'nl_vocab_vol',          // TTS volume { v: 0-100, t: timestamp }
+  ttsEn:    'nl_tts_en',            // TTS English enable { v: bool, t: timestamp }
   num:      'nl_num_progress',       // number learning level/stars progress
   wheel:    'nl_wheel_pkgs',         // wheel-of-names question packages
   sentence: 'nl_sentence_v1',        // sentence-builder daily streak + XP
@@ -247,6 +248,14 @@ async function syncNow(silent = false) {
     // Apply synced theme if on the portal
     if (merged.theme && typeof merged.theme.v === 'string') {
       if (typeof applyTheme === 'function') applyTheme(merged.theme.v);
+    }
+
+    // Apply synced TTS English toggle
+    if (merged.ttsEn && typeof merged.ttsEn.v === 'boolean') {
+      const cb  = document.getElementById('tts-en-toggle');
+      const lbl = document.getElementById('tts-en-val');
+      if (cb)  { cb.checked = merged.ttsEn.v; }
+      if (lbl) { lbl.textContent = merged.ttsEn.v ? 'On' : 'Off'; }
     }
 
     // Refresh word badges if function is available

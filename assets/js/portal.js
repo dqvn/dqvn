@@ -570,11 +570,10 @@ async function renderLearningPath() {
     return;
   }
 
-  const prog    = _readPlanProgress();
-  const active  = _findActiveUnit(plan, prog);
+  const prog   = _readPlanProgress();
+  const active = _findActiveUnit(plan, prog);
 
   if (!active) {
-    /* All levels completed */
     content.innerHTML = `
       <div class="lp-reward-banner">
         <div class="lp-reward-badge">🏆</div>
@@ -596,13 +595,13 @@ async function renderLearningPath() {
 
   if (badge) badge.textContent = `${level.cefr} · ${unit.title}`;
 
-  const levelCls  = `lp-${level.id.toLowerCase()}`;
+  const levelCls = `lp-${level.id.toLowerCase()}`;
 
   const taskRow = (task) => {
-    const done    = _isTaskMastered(task, prog);
-    const icon    = TOOL_ICONS[task.tool] || '📌';
-    const status  = done ? '✅' : (task.required ? '⬜' : '○');
-    const cls     = done ? 'lp-done' : (task.required ? 'lp-active' : '');
+    const done   = _isTaskMastered(task, prog);
+    const icon   = TOOL_ICONS[task.tool] || '📌';
+    const status = done ? '✅' : (task.required ? '⬜' : '○');
+    const cls    = done ? 'lp-done' : (task.required ? 'lp-active' : '');
     return `
       <a class="lp-task ${cls}" href="${task.deeplink || '#'}">
         <span class="lp-task-icon">${icon}</span>
@@ -620,7 +619,47 @@ async function renderLearningPath() {
       ${optional.map(taskRow).join('')}
     </details>` : '';
 
-  content.innerHTML = `
+  /* ── Today's tasks — filtered to current unit's tools only ── */
+  // Only show tasks whose tool appears in the current leerpad unit (nl_plan_v1).
+  // Vocab-SRS, verbs, sentence-builder etc. from other units are intentionally excluded.
+  const unitTools   = new Set(unit.tasks.map(t => t.tool));
+  const todayTasks  = computeTodayTasks().filter(t => unitTools.has(t.id));
+  const activeTasks = todayTasks.filter(t => !t.done);
+  const urgLabel    = { streak:'🔥 Reeks bewaren', due:'⏰ Kaarten klaar', inprog:'▶ Bezig', foundational:'🏗 Basis', normal: null };
+  const urgCls      = { streak:'today-urg-streak', due:'today-urg-due', inprog:'today-urg-inprog', foundational:'today-urg-found', normal: null };
+
+  let todayHtml = '';
+  if (todayTasks.length > 0) {
+    if (activeTasks.length === 0) {
+      const first = user.name?.split(/[\s,]+/)[0] || '';
+      todayHtml = `
+        <div class="today-done-card">
+          <div class="today-done-ico">🎉</div>
+          <div class="today-done-text">Goed bezig${first ? ', ' + first : ''}! Sessietaken voor vandaag klaar.</div>
+          <div class="today-done-sub">Je bent op schema — kom morgen terug voor de volgende stap.</div>
+        </div>`;
+    } else {
+      todayHtml = `<div class="today-grid">${activeTasks.map(t => {
+        const urg     = urgLabel[t.urgency];
+        const urgHtml = urg ? `<span class="today-urgency ${urgCls[t.urgency]}">${urg}</span>` : '';
+        const miniBar = t.progress
+          ? `<div class="today-mini-track"><div class="today-mini-fill" id="tmf-${t.id}" style="background:${t.color}"></div></div>`
+          : '';
+        return `
+          <a class="today-card" href="${t.href}" style="--tc:${t.color}">
+            <div class="today-icon-wrap" style="background:${t.color}18">${t.icon}</div>
+            <div class="today-body">
+              <div class="today-name">${t.nl}</div>
+              <div class="today-reason">${t.reason}</div>
+              ${urgHtml}${miniBar}
+            </div>
+            <div class="today-arrow">›</div>
+          </a>`;
+      }).join('')}</div>`;
+    }
+  }
+
+  content.innerHTML = todayHtml + `
     <div class="lp-level-chip ${levelCls}">${level.icon} ${level.name} — ${unit.title}</div>
     <div class="lp-unit-card" style="--lp-color:${color}">
       <div class="lp-unit-head">
@@ -636,10 +675,15 @@ async function renderLearningPath() {
       ${optHtml}
     </div>`;
 
-  /* Animate progress bar after paint */
+  /* Animate progress bars after paint */
   requestAnimationFrame(() => requestAnimationFrame(() => {
     const fill = document.getElementById('lp-fill');
     if (fill) fill.style.width = pct + '%';
+    activeTasks.forEach(t => {
+      if (!t.progress) return;
+      const el = document.getElementById('tmf-' + t.id);
+      if (el) el.style.width = Math.round(t.progress.cur / t.progress.max * 100) + '%';
+    });
   }));
 }
 
@@ -931,7 +975,6 @@ function renderDashboard() {
   applyGreeting();
   const s = computeStats();
   renderStats(s);
-  renderTodayTasks();
   renderLearningPath();
   renderProgress(s);
   updatePlanCTA();
@@ -963,8 +1006,8 @@ function updatePlanCTA() {
 /* Called by sync.js after a successful cloud sync — refresh stats */
 function updateWordBadges() { renderDashboard(); }
 
-/* Called by sync.js when login state changes — show/hide today's tasks + leerpad */
-function onSyncUserChange() { renderTodayTasks(); renderLearningPath(); updatePlanCTA(); }
+/* Called by sync.js when login state changes — refresh leerpad + plan CTA */
+function onSyncUserChange() { renderLearningPath(); updatePlanCTA(); }
 
 /* ─── Theme picker ──────────────────────────────────────────── */
 const THEMES = [
@@ -1007,10 +1050,34 @@ function initTheme() {
   });
 }
 
+/* ─── TTS English toggle ─────────────────────────────────────── */
+function initTTSEnToggle() {
+  const cb  = document.getElementById('tts-en-toggle');
+  const lbl = document.getElementById('tts-en-val');
+  if (!cb) return;
+
+  let enabled = false;
+  try {
+    const s = JSON.parse(localStorage.getItem('nl_tts_en') || 'null');
+    if (s?.v === true) enabled = true;
+  } catch {}
+
+  cb.checked = enabled;
+  if (lbl) lbl.textContent = enabled ? 'On' : 'Off';
+
+  cb.addEventListener('change', () => {
+    const on = cb.checked;
+    if (lbl) lbl.textContent = on ? 'On' : 'Off';
+    try { localStorage.setItem('nl_tts_en', JSON.stringify({ v: on, t: Date.now() })); } catch {}
+    if (typeof syncNow === 'function') syncNow(true);
+  });
+}
+
 /* ─── Boot ───────────────────────────────────────────────────── */
 renderTools();
 renderDashboard();
 initVolume();
 initSpeed();
 initTheme();
+initTTSEnToggle();
 initReveal();
