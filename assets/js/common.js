@@ -86,7 +86,15 @@ let _fileNames    = [];
 let _groupTitles  = new Map();
 
 /* ── Volume ── */
-const VOL_KEY = 'nl_vocab_vol';
+const VOL_KEY    = 'nl_vocab_vol';
+const TTS_EN_KEY = 'nl_tts_en';
+
+function isTTSEnglishEnabled() {
+    try {
+        const s = JSON.parse(localStorage.getItem(TTS_EN_KEY));
+        return s?.v === true;
+    } catch { return false; }
+}
 
 function _initVolume() {
     try {
@@ -470,6 +478,7 @@ function speakText(text) {
 }
 
 function speakEngText(text) {
+    if (!isTTSEnglishEnabled()) return;
     if (window.speechSynthesis.speaking) window.speechSynthesis.cancel();
     window.speechSynthesis.resume();
     const speech = _buildUtterance(text, TTSLangENG, 0.9, 1);
@@ -522,6 +531,7 @@ async function speakTextAsync(text) {
 }
 
 async function speakEngTextAsync(text) {
+    if (!isTTSEnglishEnabled()) return;
     await _voicesReadyPromise;
 
     if (window.speechSynthesis.speaking) window.speechSynthesis.cancel();

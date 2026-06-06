@@ -124,15 +124,7 @@
   <!-- ══ MAIN ══ -->
   <main>
 
-    <!-- ── Taak van vandaag (login only — rendered by renderTodayTasks) ── -->
-    <div id="today-tasks-wrap" hidden>
-      <div class="sec-head sec-head-today reveal">
-        <h2 data-i18n="sec_today">Taak van vandaag</h2>
-      </div>
-      <div class="today-grid reveal" id="today-tasks-grid"></div>
-    </div>
-
-    <!-- ── Leerpad (login only — rendered by renderLearningPath) ── -->
+    <!-- ── Leerpad (login only — rendered by renderLearningPath, includes today's tasks) ── -->
     <div id="leerpad-wrap" hidden>
       <div class="sec-head sec-head-leerpad reveal">
         <h2 data-i18n="sec_leerpad">Leerpad</h2>
@@ -176,6 +168,14 @@
       <div class="setting-row">
         <span class="setting-label" data-i18n="set_theme">🎨 Thema</span>
         <div class="theme-swatches" id="theme-swatches"></div>
+      </div>
+      <div class="setting-row">
+        <span class="setting-label">🇬🇧 English TTS</span>
+        <label class="tts-en-switch" title="Speak English translations aloud">
+          <input type="checkbox" id="tts-en-toggle">
+          <span class="tts-en-track"></span>
+        </label>
+        <span id="tts-en-val">Off</span>
       </div>
     </div>
 

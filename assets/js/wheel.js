@@ -40,6 +40,7 @@ let packages = [];
 let activePkgId = null;
 let spinHistory = [];
 let spinning = false;
+let _pendingPkgSelect = null; // deferred pkg-id select when presets not yet loaded
 let rotation = 0;       // current wheel angle (radians)
 let winnerIdx = -1;      // index of last selected item
 let editingId = null;    // null = creating new package
@@ -352,7 +353,7 @@ function hideResult() {
 
 /* ── History ────────────────────────────────────────────── */
 function addHistory(text, idx) {
-    spinHistory.unshift({ text, color: COLORS[idx % COLORS.length], ts: Date.now() });
+    spinHistory.unshift({ text, color: COLORS[idx % COLORS.length], ts: Date.now(), pkg: activePkgId });
     if (spinHistory.length > MAX_HIST) spinHistory.pop();
     try { localStorage.setItem(HIST_KEY, JSON.stringify(spinHistory)); } catch { }
     renderHistory();
@@ -598,16 +599,27 @@ function shareViaNative() {
 }
 
 function _checkImportParam() {
-    const encoded = new URLSearchParams(location.search).get('pkg');
-    if (!encoded) return;
+    const param = new URLSearchParams(location.search).get('pkg');
+    if (!param) return;
 
     // Remove param immediately so refreshing doesn't re-prompt
     history.replaceState(null, '', location.pathname);
 
+    // Case 1: known package ID (e.g. preset_a1_1 from a learning-path deep-link)
+    if (packages.find(p => p.id === param)) {
+        selectPackage(param);
+        return;
+    }
+
+    // Case 2: preset packages may not be loaded yet (first visit) — defer
+    _pendingPkgSelect = param;
+
+    // Case 3: try base64 import — if it decodes to a valid package it takes priority
     try {
-        const data = _decodePkg(encoded);
+        const data = _decodePkg(param);
         if (!data?.name || !Array.isArray(data.items) || data.items.length === 0) return;
 
+        _pendingPkgSelect = null; // it's a shared-package import, not a preset ID
         _pendingImport = { name: data.name, items: data.items.slice(0, MAX_ITEMS) };
 
         document.getElementById('import-pkg-name').textContent  = data.name;
@@ -622,7 +634,7 @@ function _checkImportParam() {
                 : '');
 
         document.getElementById('import-modal').classList.remove('hidden');
-    } catch { /* malformed URL param — silently ignore */ }
+    } catch { /* not a valid base64 import — _pendingPkgSelect stays for preset loader */ }
 }
 
 function confirmImport() {
@@ -696,6 +708,15 @@ async function _loadPresetPackages() {
             savePackages();
             renderPkgSelect();
             drawWheel();
+        }
+
+        // Apply any deferred package selection from a ?pkg=<id> deep-link
+        if (_pendingPkgSelect) {
+            const found = packages.find(p => p.id === _pendingPkgSelect);
+            if (found) {
+                _pendingPkgSelect = null;
+                selectPackage(found.id);
+            }
         }
     } catch { /* fail silently — presets are optional */ }
 }
