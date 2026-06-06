@@ -771,9 +771,23 @@ function initPage(config) {
     _storageKey   = config.storageKey;
     _intervalTime = config.intervalTime;
 
-    const currentPage = localStorage.getItem(_storageKey) || _fileNames[0];
+    /* Deep-link: ?lesson=thema03 overrides the saved last-position */
+    const _urlP    = new URLSearchParams(location.search);
+    const _urlLess = _urlP.get('lesson');
+    const _urlMode = _urlP.get('mode');
+    const currentPage = (_urlLess && _fileNames.includes(_urlLess))
+      ? _urlLess
+      : (localStorage.getItem(_storageKey) || _fileNames[0]);
+
     createLeftMenu();
     setActiveLesson(currentPage);
-    loadJsonData(currentPage, reloadTable);
+
+    /* ?mode=review — auto-open flashcard session once the lesson data has loaded.
+       flashcard.js wires its button on DOMContentLoaded; by the time the XHR
+       callback fires the handler is already attached, so a short setTimeout suffices. */
+    const _cb = _urlMode === 'review'
+      ? data => { reloadTable(data); setTimeout(() => document.getElementById('flashcard-btn')?.click(), 200); }
+      : reloadTable;
+    loadJsonData(currentPage, _cb);
     document.getElementById('chapter').innerHTML = `(${currentPage})`;
 }

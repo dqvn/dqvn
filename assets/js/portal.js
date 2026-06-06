@@ -51,6 +51,75 @@ function _vsLabel(id) {
 }
 function _vsIdx(id) { return _VS_LESSONS.indexOf(id || ''); }
 
+/* ─── Vocab chapter order (mirrors ttsscript.js fileNames) ─────── */
+const _VOCAB_CHAPTERS = [
+  'ch01','ch03','ch02','ch04','ch05','ch06','ch07','ch08','ch09','ch10',
+  'ch11','ch12','ch13','ch14','ch15','ch16','ch17','ch18',
+  'sp02','sp03','sp04','sp05','sp06','sp07','sp08','sp09','sp10','sp11',
+  'sp12','sp13','sp14','sp15','sp16','sp17','sp18','sp19','sp20','sp21',
+  'sp22','sp23','sp24','sp25','sp26','sp27',
+  'sw02','sw05','sw07','sw09','sw10','sw12','sw13','sw14','sw15','sw16',
+  'sw17','sw18','sw19','sw20','sw21','sw22','sw23','sw24','sw25','sw26',
+  'sw27','sw28','sw29','sw30','sw31','sw32','sw33','sw34','sw35','sw36',
+  'sw37','sw38','sw39','sw40','sw41','sw42','sw43','sw44','sw45','sw46',
+  'sw47','sw48','sw49','sw50','sw51','sw52',
+  'sz02','sz03','sz04','sz05','sz06','sz07','sz08','sz09','sz10','sz11',
+  'sz12','sz13','sz14','sz15','sz16','sz17','sz18','sz19',
+];
+
+/* ─── Deep-link target helpers ──────────────────────────────────── */
+
+/* True when every word in the lesson has been seen at least once in SRS */
+function _lessonAllSeen(lessonId, srs) {
+  const ch = srs[lessonId];
+  if (!ch || typeof ch !== 'object') return false;
+  const words = Object.values(ch);
+  return words.length > 0 && words.every(s => s?.state && s.state !== 'new');
+}
+
+/* VanStart: stay on current lesson if still unseen words; else advance */
+function _vsTargetLesson(lastLesson, vsIdx, srs) {
+  if (!lastLesson) return _VS_LESSONS[0];
+  if (_lessonAllSeen(lastLesson, srs) && vsIdx < _VS_TOTAL - 1) return _VS_LESSONS[vsIdx + 1];
+  return lastLesson;
+}
+
+/* Vocab: chapter with most due cards first; else first chapter with unseen words */
+function _vocabDeepTarget(srs, now) {
+  let bestCh = null, bestDue = 0;
+  for (const [chId, chData] of Object.entries(srs)) {
+    if (!chData || typeof chData !== 'object') continue;
+    let due = 0;
+    for (const s of Object.values(chData)) {
+      if (s?.nextDue > 0 && s.nextDue <= now) due++;
+    }
+    if (due > bestDue) { bestDue = due; bestCh = chId; }
+  }
+  if (bestCh) return { lesson: bestCh, review: true };
+
+  for (const chId of _VOCAB_CHAPTERS) {
+    const chData = srs[chId];
+    if (!chData) return { lesson: chId, review: false };
+    if (Object.values(chData).some(s => !s?.state || s.state === 'new'))
+      return { lesson: chId, review: false };
+  }
+  return { lesson: null, review: false };
+}
+
+/* Verbs: lesson with the lowest average correct/seen ratio */
+function _verbsWeakLesson(verbsStore) {
+  const lessons = verbsStore?.lessons || {};
+  let weakId = null, lowestAvg = Infinity;
+  for (const [id, ld] of Object.entries(lessons)) {
+    if (!ld?.verbStats || typeof ld.verbStats !== 'object') continue;
+    const stats = Object.values(ld.verbStats);
+    if (!stats.length) continue;
+    const avg = stats.reduce((s, vs) => s + (vs.correct || 0) / Math.max(vs.seen || 1, 1), 0) / stats.length;
+    if (avg < lowestAvg) { lowestAvg = avg; weakId = id; }
+  }
+  return weakId;
+}
+
 /* ─── Personalized greeting ──────────────────────────────────── */
 function applyGreeting() {
   const h    = new Date().getHours();
@@ -416,6 +485,9 @@ function computeTodayTasks() {
     const vsCompleted    = hasStarted && vsCourseIdx >= _VS_TOTAL - 1;
 
     if (!vsCompleted) {
+      /* Deep-link: stay on current lesson if unseen words remain; else next lesson */
+      const vsTarget = _vsTargetLesson(vsLastLesson, vsCourseIdx, srs);
+
       let score = (isBeginner || !hasStarted) ? 80 : 35;
       let reason, urgency = 'normal';
 
@@ -428,7 +500,7 @@ function computeTodayTasks() {
         } else if (vsGap >= 3) {
           score += 14; reason = `${vsGap} dagen niet geoefend · ${_vsLabel(vsLastLesson)}`;
         } else {
-          reason = `Verder met ${_vsLabel(vsLastLesson)}`;
+          reason = `Verder met ${_vsLabel(vsTarget)}`;
         }
       } else {
         score = 80; reason = 'Start je NT2 cursus — de basis!'; urgency = 'foundational';
@@ -436,7 +508,7 @@ function computeTodayTasks() {
       if (isMorning) score += 5;
 
       candidates.push({
-        id: 'vanstart', href: '/dqvn/vanstart', icon: '🚀', nl: 'VanStart',
+        id: 'vanstart', href: `/dqvn/vanstart?lesson=${vsTarget}`, icon: '🚀', nl: 'VanStart',
         color: '#059669', score, reason, urgency,
         done: vsStudiedToday, progress: null,
       });
@@ -454,7 +526,7 @@ function computeTodayTasks() {
     if (pct > 0.8)        score -= 15;
     if (isMorning)        score += 4;
     candidates.push({
-      id: 'klanken', href: '/dqvn/klanken', icon: '🎵', nl: 'Klanken',
+      id: 'klanken', href: '/dqvn/klanken?start=next', icon: '🎵', nl: 'Klanken',
       color: '#7c3aed', score, reason,
       urgency: klankenDone === 0 ? 'foundational' : 'normal', done: false, progress: null,
     });
@@ -462,6 +534,9 @@ function computeTodayTasks() {
 
   /* VOCABULAIRE — only meaningful for non-beginners */
   if (!isBeginner) {
+    /* Deep-link: chapter with most due cards; else first chapter with unseen words */
+    const vocabTarget = _vocabDeepTarget(srs, now);
+
     let score = 22, reason = 'Oefen je woordenschat', urgency = 'normal';
     if (cardsDue > 0) {
       score += 52;
@@ -475,8 +550,12 @@ function computeTodayTasks() {
     if (cardsDue > 10)                    score += 8;
     if (fcReviewedToday && cardsDue === 0) score -= 45;
     if (isMorning)                         score += 5;
+
+    const vocabHref = vocabTarget.lesson
+      ? `/dqvn/startnl?lesson=${vocabTarget.lesson}${vocabTarget.review ? '&mode=review' : ''}`
+      : '/dqvn/startnl';
     candidates.push({
-      id: 'vocab', href: '/dqvn/startnl', icon: '📖', nl: 'Vocabulaire',
+      id: 'vocab', href: vocabHref, icon: '📖', nl: 'Vocabulaire',
       color: '#2563eb', score, reason, urgency,
       done: fcReviewedToday && cardsDue === 0, progress: null,
     });
@@ -511,6 +590,9 @@ function computeTodayTasks() {
 
   /* WERKWOORDEN */
   {
+    /* Deep-link: lesson with lowest avg correct/seen ratio */
+    const weakVerbLesson = _verbsWeakLesson(verbsStore);
+
     let score = 14, reason = 'Oefen werkwoordvervoeging', urgency = 'normal';
     if (!verbsStudiedToday) {
       score += 18;
@@ -522,7 +604,9 @@ function computeTodayTasks() {
     }
     if (isAfternoon) score += 5;
     candidates.push({
-      id: 'verbs', href: '/dqvn/verbs', icon: '🔄', nl: 'Werkwoorden',
+      id: 'verbs',
+      href: weakVerbLesson ? `/dqvn/verbs?lesson=${weakVerbLesson}&mode=study` : '/dqvn/verbs',
+      icon: '🔄', nl: 'Werkwoorden',
       color: '#dc2626', score, reason, urgency,
       done: verbsStudiedToday, progress: null,
     });

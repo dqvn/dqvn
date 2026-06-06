@@ -328,7 +328,25 @@ async function init() {
   initTTS();
   initVolume();
   renderSoundNav();
-  restoreLastSound();
+
+  /* Deep-link: ?start=next opens the first sound not yet marked done */
+  if (new URLSearchParams(location.search).get('start') === 'next') {
+    let opened = false;
+    outer: for (let ci = 0; ci < DATA.categories.length; ci++) {
+      const cat = DATA.categories[ci];
+      for (let si = 0; si < cat.sounds.length; si++) {
+        if (!isDone(cat.id, cat.sounds[si].id)) {
+          openSound(ci, si);
+          opened = true;
+          break outer;
+        }
+      }
+    }
+    if (!opened) restoreLastSound(); /* all complete — fall back to last visited */
+  } else {
+    restoreLastSound();
+  }
+
   document.getElementById('mob-menu-btn').addEventListener('click', openMobileDrawer);
   document.getElementById('drawer-overlay').addEventListener('click', closeMobileDrawer);
 }
