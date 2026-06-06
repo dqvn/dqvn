@@ -38,6 +38,11 @@
       const v = strings[el.dataset.i18nHtml];
       if (v !== undefined) el.innerHTML = v;
     });
+
+    // Re-render JS-generated portal content when language changes.
+    // renderDashboard is only defined on index.html (portal.js); guard prevents
+    // this from running on other pages that also load i18n.js.
+    if (typeof renderDashboard === 'function') renderDashboard();
   }
 
   window.applyLanguage  = applyLanguage;
