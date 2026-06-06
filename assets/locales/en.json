@@ -49,5 +49,10 @@
   "plan_acc_f6": "Multiple devices, one progress",
   "plan_acc_f7": "Automatic backup — never lose progress",
   "plan_acc_f8": "📹 Video Lessons &amp; 🤖 AI Speaking Coach <span class=\"feat-soon-tag\">Soon</span>",
+  "pinfo_streak": "🔥 <b>Streak</b> — the number of consecutive days you practiced this skill.",
+  "pinfo_miss": "<b>Miss a day</b> — the streak resets immediately; practice every day to keep it.",
+  "pinfo_bar": "<b>Progress bar</b> — shows how much of the total goal you have reached.",
+  "pinfo_xp": "<b>XP</b> — cumulative points that never reset; a measure of your total effort.",
+  "pinfo_sync": "<b>Sync</b> — progress is automatically synced when you are signed in.",
   "lang_switch": "🇳🇱 Nederlands"
 }

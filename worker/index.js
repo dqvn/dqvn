@@ -5,8 +5,8 @@
  * Routes: GET /rss · GET /podcast · POST /sync
  * Shared utilities and constants live in common.js.
  *
- * Secrets  : UPSTASH_URL, UPSTASH_TOKEN  (wrangler secret put <NAME>)
- * Variables: GOOGLE_CLIENT_ID            (wrangler.toml [vars])
+ * Secrets  : UPSTASH_URL, UPSTASH_TOKEN, OWNER_EMAIL  (wrangler secret put <NAME>)
+ * Variables: GOOGLE_CLIENT_ID                         (wrangler.toml [vars])
  */
 
 import {
@@ -272,6 +272,7 @@ async function handleSync(request, env) {
     vol: mergedVol, ttsEn: mergedTtsEn, num: mergedNum, wheel: mergedWheel,
     sentence: mergedSentence,
     theme:    mergedTheme,
+    isAdmin:  user.email === _ownerEmail(env),
   }, 200, origin);
 }
 
@@ -281,7 +282,8 @@ const FB_LIST_KEY  = 'feedback:list';
 const FB_SEEN_KEY  = 'feedback:seen';   // last-read count for owner badge
 const FB_RL_TTL    = 300;              // 5-min rate-limit window (seconds)
 const FB_MSG_MAX   = 500;
-const OWNER_EMAIL  = 'dqvn2002@gmail.com';
+// OWNER_EMAIL is read from env (wrangler secret) — never hardcoded here.
+const _ownerEmail = (env) => env.OWNER_EMAIL || '';
 
 /**
  * POST /feedback — submit feedback (no auth required)
@@ -341,7 +343,7 @@ async function handleGetFeedback(request, env) {
   let user;
   try { user = await verifyGoogleJWT(auth.slice(7), env.GOOGLE_CLIENT_ID); }
   catch { return reply({ error: 'Invalid token' }, 401, origin); }
-  if (user.email !== OWNER_EMAIL) return reply({ error: 'Forbidden' }, 403, origin);
+  if (user.email !== _ownerEmail(env)) return reply({ error: 'Forbidden' }, 403, origin);
 
   // All items, oldest first from Redis list → reverse = newest first; cap at 500
   const raw   = await redisLRange(env.UPSTASH_URL, env.UPSTASH_TOKEN, FB_LIST_KEY, 0, 499);
@@ -378,7 +380,7 @@ async function handleAdminUsers(request, env) {
   let caller;
   try { caller = await verifyGoogleJWT(auth.slice(7), env.GOOGLE_CLIENT_ID); }
   catch { return reply({ error: 'Invalid token' }, 401, origin); }
-  if (caller.email !== OWNER_EMAIL) return reply({ error: 'Forbidden' }, 403, origin);
+  if (caller.email !== _ownerEmail(env)) return reply({ error: 'Forbidden' }, 403, origin);
 
   // Scan all user keys (fc:{sub}) in parallel — cap at 100 users
   const keys = await redisScanKeys(env.UPSTASH_URL, env.UPSTASH_TOKEN, 'fc:*');

@@ -287,6 +287,57 @@ main {
   white-space: nowrap;
 }
 
+/* ── Section info button & panel ── */
+.info-btn {
+  background: none;
+  border: none;
+  font-size: .95rem;
+  cursor: pointer;
+  opacity: .45;
+  padding: 0;
+  line-height: 1;
+  transition: opacity .15s;
+  flex-shrink: 0;
+}
+.info-btn:hover { opacity: 1; }
+.prog-info-panel {
+  background: var(--bg3, #f8fafc);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 11px 14px;
+  margin-bottom: 14px;
+  animation: progInfoIn .18s ease;
+}
+.prog-info-panel.hidden { display: none; }
+@keyframes progInfoIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: none; }
+}
+.winfo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+}
+.winfo-list li {
+  font-size: .8rem;
+  color: var(--text-3);
+  line-height: 1.45;
+  padding-left: 13px;
+  position: relative;
+}
+.winfo-list li::before {
+  content: '·';
+  position: absolute;
+  left: 2px;
+  color: var(--accent);
+  font-weight: 900;
+}
+.winfo-list li b  { color: var(--text); }
+.winfo-list li em { color: var(--accent); font-style: normal; font-weight: 700; }
+
 /* ── "Taak van vandaag" accent overrides ── */
 .sec-head-today h2 {
   gap: 7px;

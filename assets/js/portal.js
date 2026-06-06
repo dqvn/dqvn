@@ -1218,6 +1218,14 @@ function initTTSEnToggle() {
   });
 }
 
+/* ─── Progress info panel toggle ────────────────────────────── */
+function toggleProgInfo() {
+  const panel = document.getElementById('prog-info');
+  const btn   = document.getElementById('prog-info-btn');
+  const open  = panel.classList.toggle('hidden');
+  btn.style.opacity = open ? '' : '1';
+}
+
 /* ─── Boot ───────────────────────────────────────────────────── */
 renderDashboard();
 initVolume();
