@@ -389,7 +389,7 @@
     const _W     = typeof SYNC_WORKER_URL !== 'undefined'
                    ? SYNC_WORKER_URL
                    : 'https://nl-sync.itho.workers.dev';
-    const _OWNER = 'dqvn2002@gmail.com';
+    const _isOwner = () => { try { return JSON.parse(localStorage.getItem('fc_sync_user') || 'null')?.isAdmin === true; } catch { return false; } };
     const _RL_MS = 5 * 60 * 1000;    // 5-min client-side rate limit
     const _PER   = 10;                // admin items per page
 
@@ -519,11 +519,12 @@
 
     /* ── Owner badge + notification ── */
     async function checkOwnerBadge() {
-      const user = typeof readJSON === 'function' ? readJSON('fc_sync_user', null) : null;
-      if (user?.email !== _OWNER) return;
+      if (!_isOwner()) return;
+      const token = localStorage.getItem('fc_sync_token');
+      if (!token) return;
 
       try {
-        const r = await fetch(`${_W}/feedback/badge`);
+        const r = await fetch(`${_W}/feedback/badge`, { headers: { Authorization: `Bearer ${token}` } });
         if (!r.ok) return;
         const { unseen } = await r.json();
         if (unseen <= 0) return;
@@ -656,7 +657,7 @@
       /* Feedback button — owner badge click → admin; everyone else → form */
       _$('fb-btn').addEventListener('click', function (e) {
         const user = typeof readJSON === 'function' ? readJSON('fc_sync_user', null) : null;
-        if (user?.email === _OWNER && !_$('fb-badge').hidden) {
+        if (_isOwner() && !_$('fb-badge').hidden) {
           openAdmin(); /* badge visible → owner wants to read */
         } else {
           openModal();

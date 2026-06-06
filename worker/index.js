@@ -286,6 +286,26 @@ const FB_MSG_MAX   = 500;
 const _ownerEmail = (env) => env.OWNER_EMAIL || '';
 
 /**
+ * Verifies the Bearer JWT and confirms the caller is the owner.
+ * Returns the verified user payload on success, or calls reply() and returns null.
+ * All admin handlers MUST go through this — never duplicate the auth logic.
+ */
+async function _requireOwner(request, env) {
+  const origin = request.headers.get('Origin') || '';
+  const auth   = request.headers.get('Authorization') || '';
+  if (!auth.startsWith('Bearer ')) return { error: reply({ error: 'Unauthorized' }, 401, origin) };
+
+  let user;
+  try { user = await verifyGoogleJWT(auth.slice(7), env.GOOGLE_CLIENT_ID); }
+  catch { return { error: reply({ error: 'Invalid token' }, 401, origin) }; }
+
+  if (!_ownerEmail(env) || user.email !== _ownerEmail(env))
+    return { error: reply({ error: 'Forbidden' }, 403, origin) };
+
+  return { user };
+}
+
+/**
  * POST /feedback — submit feedback (no auth required)
  * Rate-limited per IP via a Redis key with TTL FB_RL_TTL.
  * Appends a JSON entry to FB_LIST_KEY (Redis list).
@@ -336,14 +356,9 @@ async function handleFeedback(request, env) {
  * Also resets the unread counter stored in FB_SEEN_KEY.
  */
 async function handleGetFeedback(request, env) {
-  const origin = request.headers.get('Origin') || '';
-
-  const auth = request.headers.get('Authorization') || '';
-  if (!auth.startsWith('Bearer ')) return reply({ error: 'Unauthorized' }, 401, origin);
-  let user;
-  try { user = await verifyGoogleJWT(auth.slice(7), env.GOOGLE_CLIENT_ID); }
-  catch { return reply({ error: 'Invalid token' }, 401, origin); }
-  if (user.email !== _ownerEmail(env)) return reply({ error: 'Forbidden' }, 403, origin);
+  const origin  = request.headers.get('Origin') || '';
+  const checked = await _requireOwner(request, env);
+  if (checked.error) return checked.error;
 
   // All items, oldest first from Redis list → reverse = newest first; cap at 500
   const raw   = await redisLRange(env.UPSTASH_URL, env.UPSTASH_TOKEN, FB_LIST_KEY, 0, 499);
@@ -356,10 +371,14 @@ async function handleGetFeedback(request, env) {
 }
 
 /**
- * GET /feedback/badge — unread count for the owner badge (public, no auth)
+ * GET /feedback/badge — unread count (owner only, Bearer auth)
  * Returns { total, unseen } so the portal can show a notification dot.
  */
-async function handleFeedbackBadge(env, origin) {
+async function handleFeedbackBadge(request, env) {
+  const origin  = request.headers.get('Origin') || '';
+  const checked = await _requireOwner(request, env);
+  if (checked.error) return checked.error;
+
   const [total, seen] = await Promise.all([
     redisLLen(env.UPSTASH_URL, env.UPSTASH_TOKEN, FB_LIST_KEY),
     redisGet(env.UPSTASH_URL, env.UPSTASH_TOKEN, FB_SEEN_KEY),
@@ -372,15 +391,9 @@ async function handleFeedbackBadge(env, origin) {
  * Scans fc:* keys in Redis and returns lightweight user summaries.
  */
 async function handleAdminUsers(request, env) {
-  const origin = request.headers.get('Origin') || '';
-
-  const auth = request.headers.get('Authorization') || '';
-  if (!auth.startsWith('Bearer ')) return reply({ error: 'Unauthorized' }, 401, origin);
-
-  let caller;
-  try { caller = await verifyGoogleJWT(auth.slice(7), env.GOOGLE_CLIENT_ID); }
-  catch { return reply({ error: 'Invalid token' }, 401, origin); }
-  if (caller.email !== _ownerEmail(env)) return reply({ error: 'Forbidden' }, 403, origin);
+  const origin  = request.headers.get('Origin') || '';
+  const checked = await _requireOwner(request, env);
+  if (checked.error) return checked.error;
 
   // Scan all user keys (fc:{sub}) in parallel — cap at 100 users
   const keys = await redisScanKeys(env.UPSTASH_URL, env.UPSTASH_TOKEN, 'fc:*');
@@ -444,7 +457,7 @@ export default {
 
     if (url.pathname === '/feedback/badge') {
       if (request.method !== 'GET') return reply({ error: 'Method not allowed' }, 405, origin);
-      return handleFeedbackBadge(env, origin);
+      return handleFeedbackBadge(request, env);
     }
 
     if (url.pathname === '/admin/users') {
