@@ -1,11 +1,12 @@
 /* Flashcard game — SM-2 spaced repetition for Dutch vocabulary */
 (function () {
-  'use strict'; 
+  'use strict';
 
   const FC_KEY               = 'nl_srs_v3';
   const FC_META_KEY          = 'nl_srs_meta_v3';
   const FC_WORD_SIZE_KEY     = 'nl_fc_word_size';
   const FC_LESSON_KEY        = 'fc-lesson';
+  const PLAN_PROGRESS_KEY    = 'nl_learning_progress_v1';
   const SESSION_SIZE            = 20;
   const NEW_PER_DAY             = 10;
   const MAX_MASTERED_PER_SESSION = 5; // cap mastered cards so new/struggling get priority
@@ -122,6 +123,39 @@
     if (!fc.progressLoaded) return; // never overwrite with the uninitialised empty object
     try { localStorage.setItem(FC_KEY, JSON.stringify(fc.progress)); }
     catch (e) { console.warn('FC: could not save progress', e); }
+  }
+
+  /* ── Learning-plan mastery hook ──────────────────────────────────────────
+     After each card rating, compute the % of chapter cards that are no longer
+     'new' (have been seen at least once in SRS) and persist to the plan progress
+     store.  The portal reads this to verify task completion (≥ 80% = mastered).
+     Only writes when the mastered state changes or pct shifts by ≥ 5 points.   */
+  function _writePlanMastery() {
+    try {
+      const stats     = chapterStats();
+      if (!stats.total) return;
+
+      const seenCount = stats.total - stats.newCount;   // cards seen ≥ once
+      const seenPct   = seenCount / stats.total;
+      const isMastered = seenPct >= 0.80;
+
+      const prog = JSON.parse(localStorage.getItem(PLAN_PROGRESS_KEY) || '{}');
+      if (!prog.tool_scores)           prog.tool_scores = {};
+      if (!prog.tool_scores.flashcard) prog.tool_scores.flashcard = {};
+
+      const prev = prog.tool_scores.flashcard[fc.chapterId] || {};
+      const prevPct = prev.seen_pct || 0;
+      if (prev.is_mastered === isMastered && Math.abs(prevPct - seenPct) < 0.05) return;
+
+      prog.tool_scores.flashcard[fc.chapterId] = {
+        seen_pct:    Math.round(seenPct * 100) / 100,
+        is_mastered: isMastered,
+        total:       stats.total,
+        seen:        seenCount,
+        date:        new Date().toISOString().slice(0, 10),
+      };
+      localStorage.setItem(PLAN_PROGRESS_KEY, JSON.stringify(prog));
+    } catch { /* never interrupt the study session */ }
   }
 
   /* One-time migration: if legacy data sits under 'default' and the current
@@ -326,6 +360,7 @@
   }
 
   function closeFlashcard() {
+    _writePlanMastery(); // persist final mastery state on every session close
     $id('flashcard-popup').style.display = 'none';
     document.body.style.overflow = '';
     fc.ttsSeq++;
@@ -555,6 +590,7 @@
     fc.stats[rating]++;
     fc.stats.total++;
     saveProgress();
+    _writePlanMastery();
     refreshHeader();
 
     $id('fc-actions').style.pointerEvents = 'none';

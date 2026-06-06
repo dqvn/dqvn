@@ -1,0 +1,1067 @@
+{
+  "meta": {
+    "version": "1.0",
+    "created": "2026-06-06",
+    "language": "nl",
+    "target_cefr": "A2",
+    "daily_goal_minutes": 20,
+    "mastery_threshold": 0.80,
+    "description": "A0 → A1 → A2 Dutch learning path for daily life in the Netherlands and the NT2 A2 exam"
+  },
+
+  "mastery_checks": {
+    "flashcard_80pct": {
+      "description": "≥ 80% of the chapter's flashcards are no longer in 'new' state (have been reviewed at least once via SRS)",
+      "storage": "nl_srs_v3[chapterId]",
+      "pass_when": "mastered_count / total_count >= 0.80"
+    },
+    "verb_quiz_80": {
+      "description": "Verb lesson quiz totalCorrect / totalAnswered ≥ 80%",
+      "storage": "nl_verbs_v3.lessons[lessonId]",
+      "pass_when": "totalCorrect / totalAnswered >= 0.80"
+    },
+    "stars_2plus": {
+      "description": "Getallen level best score ≥ 2 stars (≥ 70% correct in quiz)",
+      "storage": "nl_num_progress[levelId]",
+      "pass_when": "Math.max(listen, quiz) >= 2"
+    },
+    "count_done": {
+      "description": "A numeric counter reaches the target value",
+      "examples": "klanken sounds done, news articles read, podcast episodes listened, sentence days"
+    },
+    "story_quiz_80": {
+      "description": "Story quiz score ≥ 80% (nl_s2_quiz_v1[storyId].completed = true)",
+      "storage": "nl_s2_quiz_v1",
+      "pass_when": "completed_count >= target_count"
+    },
+    "practiced_once": {
+      "description": "The dialogue or tool has been used at least once",
+      "storage": "nl_dlg_v1.stats[dialogueId].count >= 1"
+    },
+    "streak_days": {
+      "description": "5 sentences per day for N consecutive days",
+      "storage": "nl_sentence_v1.streak",
+      "pass_when": "streak >= target_days"
+    }
+  },
+
+  "levels": [
+    {
+      "id": "A1",
+      "cefr": "A1",
+      "name": "Beginners Nederlands",
+      "description": "Overleef je eerste weken in Nederland — klanken, eerste woorden, dagelijks leven",
+      "icon": "🌱",
+      "color": "#059669",
+      "unlock_after": null,
+      "total_xp": 370,
+      "units": [
+        {
+          "id": "A1-U1",
+          "title": "Uitspraak & Foniek",
+          "description": "Leer de Nederlandse klanken en de basis getallen",
+          "icon": "🎵",
+          "theme": "pronunciation",
+          "estimated_days": 4,
+          "unlock_after": null,
+          "daily_mix": ["klanken_1_12", "getallen_lv1"],
+          "tasks": [
+            {
+              "id": "klanken_1_12",
+              "tool": "klanken",
+              "title": "Eerste 12 klanken",
+              "description": "Leer de 12 meest voorkomende Nederlandse klanken",
+              "target": { "type": "count_done", "count": 12 },
+              "mastery_check": "count_done",
+              "required": true,
+              "xp": 20,
+              "estimated_minutes": 15,
+              "deeplink": "/dqvn/klanken?start=next",
+              "mastery_hint": "Markeer 12 klanken als 'gedaan' in de oefening"
+            },
+            {
+              "id": "getallen_lv1",
+              "tool": "getallen",
+              "title": "Getallen 1–10",
+              "description": "Leer tellen van 1 tot 10",
+              "target": { "type": "stars", "level_id": 1, "min_stars": 2 },
+              "mastery_check": "stars_2plus",
+              "required": true,
+              "xp": 15,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/number?level=1",
+              "mastery_hint": "Haal ≥ 2 sterren in de quiz voor level 1"
+            },
+            {
+              "id": "kids_l01",
+              "tool": "kids",
+              "title": "SL-woorden (foniek)",
+              "description": "Ofen de SL-klankverbinding",
+              "target": { "type": "practiced_once", "lesson_id": "l01" },
+              "mastery_check": "practiced_once",
+              "required": false,
+              "xp": 10,
+              "estimated_minutes": 8,
+              "deeplink": "/dqvn/kids?lesson=l01",
+              "mastery_hint": "Open de les en oefen de woorden"
+            },
+            {
+              "id": "kids_l02",
+              "tool": "kids",
+              "title": "GL & KL-woorden (foniek)",
+              "description": "Oefen de GL/KL-klankverbinding",
+              "target": { "type": "practiced_once", "lesson_id": "l02" },
+              "mastery_check": "practiced_once",
+              "required": false,
+              "xp": 10,
+              "estimated_minutes": 8,
+              "deeplink": "/dqvn/kids?lesson=l02",
+              "mastery_hint": "Open de les en oefen de woorden"
+            }
+          ],
+          "completion_reward": null
+        },
+
+        {
+          "id": "A1-U2",
+          "title": "Eerste Woorden",
+          "description": "Leer de meest gebruikte Nederlandse woorden (Core 2000 deel 1)",
+          "icon": "📖",
+          "theme": "vocabulary",
+          "estimated_days": 5,
+          "unlock_after": "A1-U1",
+          "daily_mix": ["vanstart_core01", "sentence_basic"],
+          "tasks": [
+            {
+              "id": "vanstart_core01",
+              "tool": "vanstart",
+              "title": "VanStart Core 01",
+              "description": "Leer en herhaal de eerste 50 Core 2000 woorden via flashcards",
+              "target": { "type": "flashcard", "lesson_id": "core01", "min_pct": 0.80 },
+              "mastery_check": "flashcard_80pct",
+              "required": true,
+              "xp": 30,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/vanstart?lesson=core01&mode=review",
+              "mastery_hint": "80% van de flashcards in 'review'-staat (niet meer nieuw)"
+            },
+            {
+              "id": "sentence_basic",
+              "tool": "sentence",
+              "title": "Zinnen schrijven — 3 dagen",
+              "description": "Schrijf dagelijks 5 Nederlandse zinnen gedurende 3 dagen",
+              "target": { "type": "streak_days", "days": 3 },
+              "mastery_check": "streak_days",
+              "required": false,
+              "xp": 20,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/sentence",
+              "mastery_hint": "Behaal je dagdoel (5 zinnen) op 3 achtereenvolgende dagen"
+            },
+            {
+              "id": "kids_l03",
+              "tool": "kids",
+              "title": "VL & FL-woorden (foniek)",
+              "description": "Oefen de VL/FL-klankverbinding",
+              "target": { "type": "practiced_once", "lesson_id": "l03" },
+              "mastery_check": "practiced_once",
+              "required": false,
+              "xp": 10,
+              "estimated_minutes": 8,
+              "deeplink": "/dqvn/kids?lesson=l03"
+            }
+          ],
+          "completion_reward": null
+        },
+
+        {
+          "id": "A1-U3",
+          "title": "Groeten & Gesprek",
+          "description": "Stel jezelf voor en voer een eerste gesprek in het Nederlands",
+          "icon": "👋",
+          "theme": "communication",
+          "estimated_days": 5,
+          "unlock_after": "A1-U2",
+          "daily_mix": ["vanstart_core02", "draairad_a1_p1"],
+          "tasks": [
+            {
+              "id": "vanstart_core02",
+              "tool": "vanstart",
+              "title": "VanStart Core 02",
+              "description": "Leer en herhaal Core 2000 woorden deel 2 via flashcards",
+              "target": { "type": "flashcard", "lesson_id": "core02", "min_pct": 0.80 },
+              "mastery_check": "flashcard_80pct",
+              "required": true,
+              "xp": 30,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/vanstart?lesson=core02&mode=review",
+              "mastery_hint": "80% van de flashcards in 'review'-staat"
+            },
+            {
+              "id": "draairad_a1_p1",
+              "tool": "draairad",
+              "title": "Draairad — Groeten (3×)",
+              "description": "Oefen introductievragen met het draairad",
+              "target": { "type": "count_done", "count": 3, "pkg_id": "preset_a1_1" },
+              "mastery_check": "count_done",
+              "required": true,
+              "xp": 15,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/wheel?pkg=preset_a1_1",
+              "mastery_hint": "Draai 3 keer en antwoord in het Nederlands"
+            },
+            {
+              "id": "dialogue_c007",
+              "tool": "dialogues",
+              "title": "Dialoog — De weg vragen",
+              "description": "Oefen de dialoog 'De Weg Vragen op het Station'",
+              "target": { "type": "practiced_once", "dialogue_id": "c007" },
+              "mastery_check": "practiced_once",
+              "required": false,
+              "xp": 15,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/dialogues?id=c007"
+            },
+            {
+              "id": "kids_l04",
+              "tool": "kids",
+              "title": "BL-woorden (foniek)",
+              "description": "Oefen de BL-klankverbinding",
+              "target": { "type": "practiced_once", "lesson_id": "l04" },
+              "mastery_check": "practiced_once",
+              "required": false,
+              "xp": 10,
+              "estimated_minutes": 8,
+              "deeplink": "/dqvn/kids?lesson=l04"
+            }
+          ],
+          "completion_reward": null
+        },
+
+        {
+          "id": "A1-U4",
+          "title": "Getallen & Tijd",
+          "description": "Leer tellen tot 30 en praat over datum en tijd",
+          "icon": "🔢",
+          "theme": "numbers",
+          "estimated_days": 5,
+          "unlock_after": "A1-U3",
+          "daily_mix": ["vanstart_core03", "getallen_lv2", "getallen_lv3"],
+          "tasks": [
+            {
+              "id": "vanstart_core03",
+              "tool": "vanstart",
+              "title": "VanStart Core 03",
+              "description": "Leer en herhaal Core 2000 woorden deel 3 via flashcards",
+              "target": { "type": "flashcard", "lesson_id": "core03", "min_pct": 0.80 },
+              "mastery_check": "flashcard_80pct",
+              "required": true,
+              "xp": 30,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/vanstart?lesson=core03&mode=review"
+            },
+            {
+              "id": "getallen_lv2",
+              "tool": "getallen",
+              "title": "Getallen 11–20",
+              "description": "Leer tellen van 11 tot 20",
+              "target": { "type": "stars", "level_id": 2, "min_stars": 2 },
+              "mastery_check": "stars_2plus",
+              "required": true,
+              "xp": 15,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/number?level=2"
+            },
+            {
+              "id": "getallen_lv3",
+              "tool": "getallen",
+              "title": "Getallen 21–30",
+              "description": "Leer tellen van 21 tot 30",
+              "target": { "type": "stars", "level_id": 3, "min_stars": 2 },
+              "mastery_check": "stars_2plus",
+              "required": false,
+              "xp": 15,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/number?level=3"
+            }
+          ],
+          "completion_reward": null
+        },
+
+        {
+          "id": "A1-U5",
+          "title": "Familie & Thuis",
+          "description": "Praat over je familie en je huis; leer meer Nederlandse klanken",
+          "icon": "🏠",
+          "theme": "family",
+          "estimated_days": 5,
+          "unlock_after": "A1-U4",
+          "daily_mix": ["vanstart_core04", "klanken_13_24"],
+          "tasks": [
+            {
+              "id": "vanstart_core04",
+              "tool": "vanstart",
+              "title": "VanStart Core 04",
+              "description": "Leer en herhaal Core 2000 woorden deel 4 via flashcards",
+              "target": { "type": "flashcard", "lesson_id": "core04", "min_pct": 0.80 },
+              "mastery_check": "flashcard_80pct",
+              "required": true,
+              "xp": 30,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/vanstart?lesson=core04&mode=review"
+            },
+            {
+              "id": "klanken_13_24",
+              "tool": "klanken",
+              "title": "Klanken 13–24 (totaal 24)",
+              "description": "Oefen nog 12 nieuwe klanken — totaal 24 klanken gedaan",
+              "target": { "type": "count_done", "count": 24 },
+              "mastery_check": "count_done",
+              "required": true,
+              "xp": 20,
+              "estimated_minutes": 15,
+              "deeplink": "/dqvn/klanken?start=next"
+            },
+            {
+              "id": "dialogue_c013",
+              "tool": "dialogues",
+              "title": "Dialoog — In de supermarkt",
+              "description": "Oefen de dialoog 'Nederlands Leren in de Supermarkt'",
+              "target": { "type": "practiced_once", "dialogue_id": "c013" },
+              "mastery_check": "practiced_once",
+              "required": false,
+              "xp": 15,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/dialogues?id=c013"
+            },
+            {
+              "id": "kids_l05",
+              "tool": "kids",
+              "title": "Eerste woorden (foniek)",
+              "description": "Oefen basiswoorden met plaatjes",
+              "target": { "type": "practiced_once", "lesson_id": "l05" },
+              "mastery_check": "practiced_once",
+              "required": false,
+              "xp": 10,
+              "estimated_minutes": 8,
+              "deeplink": "/dqvn/kids?lesson=l05"
+            }
+          ],
+          "completion_reward": null
+        },
+
+        {
+          "id": "A1-U6",
+          "title": "Eten & Winkelen",
+          "description": "Bestel eten en koop dingen in Nederlandse winkels",
+          "icon": "🛒",
+          "theme": "shopping",
+          "estimated_days": 5,
+          "unlock_after": "A1-U5",
+          "daily_mix": ["vanstart_core05", "dialogue_c001"],
+          "tasks": [
+            {
+              "id": "vanstart_core05",
+              "tool": "vanstart",
+              "title": "VanStart Core 05",
+              "description": "Leer en herhaal Core 2000 woorden deel 5 via flashcards",
+              "target": { "type": "flashcard", "lesson_id": "core05", "min_pct": 0.80 },
+              "mastery_check": "flashcard_80pct",
+              "required": true,
+              "xp": 30,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/vanstart?lesson=core05&mode=review"
+            },
+            {
+              "id": "dialogue_c001",
+              "tool": "dialogues",
+              "title": "Dialoog — IJs kopen",
+              "description": "Oefen een gesprek in een winkel: 'IJs Kopen bij de IJssalon'",
+              "target": { "type": "practiced_once", "dialogue_id": "c001" },
+              "mastery_check": "practiced_once",
+              "required": true,
+              "xp": 15,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/dialogues?id=c001"
+            },
+            {
+              "id": "dialogue_c016",
+              "tool": "dialogues",
+              "title": "Dialoog — Bij de bakker",
+              "description": "Oefen een gesprek bij de bakker",
+              "target": { "type": "practiced_once", "dialogue_id": "c016" },
+              "mastery_check": "practiced_once",
+              "required": false,
+              "xp": 15,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/dialogues?id=c016"
+            },
+            {
+              "id": "draairad_a1_p2",
+              "tool": "draairad",
+              "title": "Draairad — Familie & Leven (3×)",
+              "description": "Oefen vragen over dagelijks leven",
+              "target": { "type": "count_done", "count": 3, "pkg_id": "preset_a1_2" },
+              "mastery_check": "count_done",
+              "required": false,
+              "xp": 15,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/wheel?pkg=preset_a1_2"
+            },
+            {
+              "id": "kids_l06",
+              "tool": "kids",
+              "title": "Kids les 6 (foniek)",
+              "description": "Extra uitspraakoefening",
+              "target": { "type": "practiced_once", "lesson_id": "l06" },
+              "mastery_check": "practiced_once",
+              "required": false,
+              "xp": 10,
+              "estimated_minutes": 8,
+              "deeplink": "/dqvn/kids?lesson=l06"
+            }
+          ],
+          "completion_reward": null
+        },
+
+        {
+          "id": "A1-U7",
+          "title": "Vervoer & Stad",
+          "description": "Navigeer door de stad en gebruik openbaar vervoer",
+          "icon": "🚌",
+          "theme": "transport",
+          "estimated_days": 5,
+          "unlock_after": "A1-U6",
+          "daily_mix": ["vanstart_core06", "klanken_25_36", "dialogue_c009"],
+          "tasks": [
+            {
+              "id": "vanstart_core06",
+              "tool": "vanstart",
+              "title": "VanStart Core 06",
+              "description": "Leer en herhaal Core 2000 woorden deel 6 via flashcards",
+              "target": { "type": "flashcard", "lesson_id": "core06", "min_pct": 0.80 },
+              "mastery_check": "flashcard_80pct",
+              "required": true,
+              "xp": 30,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/vanstart?lesson=core06&mode=review"
+            },
+            {
+              "id": "klanken_25_36",
+              "tool": "klanken",
+              "title": "Klanken 25–36 (totaal 36)",
+              "description": "Oefen nog 12 klanken — totaal 36 klanken gedaan",
+              "target": { "type": "count_done", "count": 36 },
+              "mastery_check": "count_done",
+              "required": true,
+              "xp": 20,
+              "estimated_minutes": 15,
+              "deeplink": "/dqvn/klanken?start=next"
+            },
+            {
+              "id": "dialogue_c009",
+              "tool": "dialogues",
+              "title": "Dialoog — Halte gemist",
+              "description": "Oefen 'Halte Gemist in de Bus — Nederlandse Conversatie'",
+              "target": { "type": "practiced_once", "dialogue_id": "c009" },
+              "mastery_check": "practiced_once",
+              "required": true,
+              "xp": 15,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/dialogues?id=c009"
+            },
+            {
+              "id": "draairad_a1_p3",
+              "tool": "draairad",
+              "title": "Draairad — Vervoer & Stad (3×)",
+              "description": "Oefen vragen over vervoer en de stad",
+              "target": { "type": "count_done", "count": 3, "pkg_id": "preset_a1_3" },
+              "mastery_check": "count_done",
+              "required": false,
+              "xp": 15,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/wheel?pkg=preset_a1_3"
+            },
+            {
+              "id": "kids_l07",
+              "tool": "kids",
+              "title": "ZW-woorden (foniek)",
+              "description": "Oefen de ZW-klankverbinding",
+              "target": { "type": "practiced_once", "lesson_id": "l07" },
+              "mastery_check": "practiced_once",
+              "required": false,
+              "xp": 10,
+              "estimated_minutes": 8,
+              "deeplink": "/dqvn/kids?lesson=l07"
+            }
+          ],
+          "completion_reward": null
+        },
+
+        {
+          "id": "A1-U8",
+          "title": "A1 Afsluiting",
+          "description": "Rond je A1-niveau af — alle klanken en de laatste Core 2000 woorden",
+          "icon": "🎓",
+          "theme": "review",
+          "estimated_days": 6,
+          "unlock_after": "A1-U7",
+          "daily_mix": ["vanstart_core07", "vanstart_core08", "klanken_all48"],
+          "tasks": [
+            {
+              "id": "vanstart_core07",
+              "tool": "vanstart",
+              "title": "VanStart Core 07",
+              "description": "Leer en herhaal Core 2000 woorden deel 7 via flashcards",
+              "target": { "type": "flashcard", "lesson_id": "core07", "min_pct": 0.80 },
+              "mastery_check": "flashcard_80pct",
+              "required": true,
+              "xp": 30,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/vanstart?lesson=core07&mode=review"
+            },
+            {
+              "id": "vanstart_core08",
+              "tool": "vanstart",
+              "title": "VanStart Core 08",
+              "description": "Leer en herhaal Core 2000 woorden deel 8 via flashcards",
+              "target": { "type": "flashcard", "lesson_id": "core08", "min_pct": 0.80 },
+              "mastery_check": "flashcard_80pct",
+              "required": true,
+              "xp": 30,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/vanstart?lesson=core08&mode=review"
+            },
+            {
+              "id": "klanken_all48",
+              "tool": "klanken",
+              "title": "Alle 48 klanken",
+              "description": "Voltooi alle 48 Nederlandse klanken",
+              "target": { "type": "count_done", "count": 48 },
+              "mastery_check": "count_done",
+              "required": true,
+              "xp": 30,
+              "estimated_minutes": 15,
+              "deeplink": "/dqvn/klanken?start=next"
+            },
+            {
+              "id": "story_kinderverhalen",
+              "tool": "stories",
+              "title": "Kinderverhaal lezen",
+              "description": "Lees één interactief kinderverhaal",
+              "target": { "type": "practiced_once" },
+              "mastery_check": "practiced_once",
+              "required": false,
+              "xp": 10,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/stories"
+            }
+          ],
+          "completion_reward": {
+            "badge": "🌱",
+            "title": "A1 Behaald!",
+            "message": "Gefeliciteerd! Je kent de basis van het Nederlands. Klaar voor A2!"
+          }
+        }
+      ]
+    },
+
+    {
+      "id": "A2",
+      "cefr": "A2",
+      "name": "Basis Communicatie",
+      "description": "Communiceer zelfverzekerd in dagelijkse situaties en bereid je voor op het NT2 A2 examen",
+      "icon": "🌿",
+      "color": "#7c3aed",
+      "unlock_after": "A1",
+      "total_xp": 560,
+      "units": [
+        {
+          "id": "A2-U1",
+          "title": "Werkwoorden & Uitbreiding",
+          "description": "Leer de meest essentiële Nederlandse werkwoorden en breid je woordenschat uit",
+          "icon": "⚙️",
+          "theme": "verbs",
+          "estimated_days": 7,
+          "unlock_after": "A1",
+          "daily_mix": ["vanstart_core09", "vanstart_core10", "verbs_v01"],
+          "tasks": [
+            {
+              "id": "vanstart_core09",
+              "tool": "vanstart",
+              "title": "VanStart Core 09",
+              "description": "Leer en herhaal Core 2000 woorden deel 9 via flashcards",
+              "target": { "type": "flashcard", "lesson_id": "core09", "min_pct": 0.80 },
+              "mastery_check": "flashcard_80pct",
+              "required": true,
+              "xp": 35,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/vanstart?lesson=core09&mode=review"
+            },
+            {
+              "id": "vanstart_core10",
+              "tool": "vanstart",
+              "title": "VanStart Core 10",
+              "description": "Leer en herhaal Core 2000 woorden deel 10 via flashcards",
+              "target": { "type": "flashcard", "lesson_id": "core10", "min_pct": 0.80 },
+              "mastery_check": "flashcard_80pct",
+              "required": true,
+              "xp": 35,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/vanstart?lesson=core10&mode=review"
+            },
+            {
+              "id": "verbs_v01",
+              "tool": "verbs",
+              "title": "Werkwoorden Les 1",
+              "description": "Studeer en quiz de eerste werkwoordenles (score ≥ 80%)",
+              "target": { "type": "verb_quiz", "lesson_id": "v01", "min_pct": 0.80 },
+              "mastery_check": "verb_quiz_80",
+              "required": true,
+              "xp": 40,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/verbs?lesson=v01&mode=study"
+            },
+            {
+              "id": "getallen_lv4",
+              "tool": "getallen",
+              "title": "Getallen 31–50",
+              "description": "Leer tellen van 31 tot 50",
+              "target": { "type": "stars", "level_id": 4, "min_stars": 2 },
+              "mastery_check": "stars_2plus",
+              "required": false,
+              "xp": 15,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/number?level=4"
+            },
+            {
+              "id": "getallen_lv5",
+              "tool": "getallen",
+              "title": "Getallen 51–100",
+              "description": "Leer tellen tot 100",
+              "target": { "type": "stars", "level_id": 5, "min_stars": 2 },
+              "mastery_check": "stars_2plus",
+              "required": false,
+              "xp": 15,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/number?level=5"
+            }
+          ],
+          "completion_reward": null
+        },
+
+        {
+          "id": "A2-U2",
+          "title": "Thematische Woordenschat 1",
+          "description": "Leer woorden gegroepeerd per thema en schrijf dagelijks zinnen",
+          "icon": "💬",
+          "theme": "vocabulary",
+          "estimated_days": 7,
+          "unlock_after": "A2-U1",
+          "daily_mix": ["vanstart_thema01", "vanstart_thema02", "sentence_5days"],
+          "tasks": [
+            {
+              "id": "vanstart_thema01",
+              "tool": "vanstart",
+              "title": "VanStart Thema 01",
+              "description": "Leer de thematische woordenschat van Thema 1 via flashcards",
+              "target": { "type": "flashcard", "lesson_id": "thema01", "min_pct": 0.80 },
+              "mastery_check": "flashcard_80pct",
+              "required": true,
+              "xp": 35,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/vanstart?lesson=thema01&mode=review"
+            },
+            {
+              "id": "vanstart_thema02",
+              "tool": "vanstart",
+              "title": "VanStart Thema 02",
+              "description": "Leer de thematische woordenschat van Thema 2 via flashcards",
+              "target": { "type": "flashcard", "lesson_id": "thema02", "min_pct": 0.80 },
+              "mastery_check": "flashcard_80pct",
+              "required": true,
+              "xp": 35,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/vanstart?lesson=thema02&mode=review"
+            },
+            {
+              "id": "sentence_5days",
+              "tool": "sentence",
+              "title": "Zinnen schrijven — 5 dagen",
+              "description": "Schrijf dagelijks 5 zinnen gedurende 5 achtereenvolgende dagen",
+              "target": { "type": "streak_days", "days": 5 },
+              "mastery_check": "streak_days",
+              "required": true,
+              "xp": 35,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/sentence"
+            },
+            {
+              "id": "draairad_a2_p1",
+              "tool": "draairad",
+              "title": "Draairad — Werk & Opleiding (5×)",
+              "description": "Oefen A2-vragen over werk en opleiding",
+              "target": { "type": "count_done", "count": 5, "pkg_id": "preset_a2_1" },
+              "mastery_check": "count_done",
+              "required": false,
+              "xp": 20,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/wheel?pkg=preset_a2_1"
+            }
+          ],
+          "completion_reward": null
+        },
+
+        {
+          "id": "A2-U3",
+          "title": "Gezondheid & Dagelijks Leven",
+          "description": "Praat over gezondheid, ga naar de dokter en leer meer werkwoorden",
+          "icon": "🏥",
+          "theme": "health",
+          "estimated_days": 7,
+          "unlock_after": "A2-U2",
+          "daily_mix": ["vanstart_thema03", "verbs_v02", "dialogue_c005"],
+          "tasks": [
+            {
+              "id": "vanstart_thema03",
+              "tool": "vanstart",
+              "title": "VanStart Thema 03",
+              "description": "Leer de thematische woordenschat van Thema 3 via flashcards",
+              "target": { "type": "flashcard", "lesson_id": "thema03", "min_pct": 0.80 },
+              "mastery_check": "flashcard_80pct",
+              "required": true,
+              "xp": 35,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/vanstart?lesson=thema03&mode=review"
+            },
+            {
+              "id": "verbs_v02",
+              "tool": "verbs",
+              "title": "Werkwoorden Les 2",
+              "description": "Studeer en quiz de tweede werkwoordenles (score ≥ 80%)",
+              "target": { "type": "verb_quiz", "lesson_id": "v02", "min_pct": 0.80 },
+              "mastery_check": "verb_quiz_80",
+              "required": true,
+              "xp": 40,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/verbs?lesson=v02&mode=study"
+            },
+            {
+              "id": "dialogue_c005",
+              "tool": "dialogues",
+              "title": "Dialoog — Bij de dokter",
+              "description": "Oefen 'Dokter Bezoek in het Nederlands Leren'",
+              "target": { "type": "practiced_once", "dialogue_id": "c005" },
+              "mastery_check": "practiced_once",
+              "required": true,
+              "xp": 20,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/dialogues?id=c005"
+            },
+            {
+              "id": "dialogue_c026",
+              "tool": "dialogues",
+              "title": "Dialoog — Ziekenhuisbezoek",
+              "description": "Oefen een ziekenhuisgesprek",
+              "target": { "type": "practiced_once", "dialogue_id": "c026" },
+              "mastery_check": "practiced_once",
+              "required": false,
+              "xp": 20,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/dialogues?id=c026"
+            }
+          ],
+          "completion_reward": null
+        },
+
+        {
+          "id": "A2-U4",
+          "title": "Wonen in Nederland",
+          "description": "Praat over wonen, buren en buurt; lees je eerste korte Nederlandse verhalen",
+          "icon": "🏡",
+          "theme": "housing",
+          "estimated_days": 7,
+          "unlock_after": "A2-U3",
+          "daily_mix": ["vanstart_thema04", "vanstart_thema05", "stories2_5"],
+          "tasks": [
+            {
+              "id": "vanstart_thema04",
+              "tool": "vanstart",
+              "title": "VanStart Thema 04",
+              "description": "Leer de thematische woordenschat van Thema 4 via flashcards",
+              "target": { "type": "flashcard", "lesson_id": "thema04", "min_pct": 0.80 },
+              "mastery_check": "flashcard_80pct",
+              "required": true,
+              "xp": 35,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/vanstart?lesson=thema04&mode=review"
+            },
+            {
+              "id": "vanstart_thema05",
+              "tool": "vanstart",
+              "title": "VanStart Thema 05",
+              "description": "Leer de thematische woordenschat van Thema 5 via flashcards",
+              "target": { "type": "flashcard", "lesson_id": "thema05", "min_pct": 0.80 },
+              "mastery_check": "flashcard_80pct",
+              "required": true,
+              "xp": 35,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/vanstart?lesson=thema05&mode=review"
+            },
+            {
+              "id": "stories2_5",
+              "tool": "stories2",
+              "title": "Korte Verhalen — 5 quizzen ≥ 80%",
+              "description": "Lees 5 korte verhalen en haal ≥ 80% op de bijbehorende quiz",
+              "target": { "type": "story_quiz", "count": 5 },
+              "mastery_check": "story_quiz_80",
+              "required": true,
+              "xp": 45,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/stories2"
+            },
+            {
+              "id": "dialogue_c025",
+              "tool": "dialogues",
+              "title": "Dialoog — Huis bezichtigen",
+              "description": "Oefen 'Een Huis Bezichtigen — Gesprek met een Makelaar'",
+              "target": { "type": "practiced_once", "dialogue_id": "c025" },
+              "mastery_check": "practiced_once",
+              "required": false,
+              "xp": 20,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/dialogues?id=c025"
+            },
+            {
+              "id": "draairad_a2_p2",
+              "tool": "draairad",
+              "title": "Draairad — Wonen in Nederland (5×)",
+              "description": "Oefen A2-vragen over het leven in Nederland",
+              "target": { "type": "count_done", "count": 5, "pkg_id": "preset_a2_2" },
+              "mastery_check": "count_done",
+              "required": false,
+              "xp": 20,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/wheel?pkg=preset_a2_2"
+            }
+          ],
+          "completion_reward": null
+        },
+
+        {
+          "id": "A2-U5",
+          "title": "Communicatie & Media",
+          "description": "Lees echt Nederlands nieuws en leer communiceren in werk en maatschappij",
+          "icon": "📰",
+          "theme": "media",
+          "estimated_days": 7,
+          "unlock_after": "A2-U4",
+          "daily_mix": ["vanstart_thema06", "nieuws_10"],
+          "tasks": [
+            {
+              "id": "vanstart_thema06",
+              "tool": "vanstart",
+              "title": "VanStart Thema 06",
+              "description": "Leer de thematische woordenschat van Thema 6 via flashcards",
+              "target": { "type": "flashcard", "lesson_id": "thema06", "min_pct": 0.80 },
+              "mastery_check": "flashcard_80pct",
+              "required": true,
+              "xp": 35,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/vanstart?lesson=thema06&mode=review"
+            },
+            {
+              "id": "nieuws_10",
+              "tool": "nieuws",
+              "title": "10 nieuwsartikelen lezen",
+              "description": "Lees 10 echte Nederlandse nieuwsartikelen",
+              "target": { "type": "count_done", "count": 10 },
+              "mastery_check": "count_done",
+              "required": true,
+              "xp": 30,
+              "estimated_minutes": 15,
+              "deeplink": "/dqvn/rss"
+            },
+            {
+              "id": "dialogue_c030",
+              "tool": "dialogues",
+              "title": "Dialoog — Sollicitatiegesprek",
+              "description": "Oefen een sollicitatiegesprek",
+              "target": { "type": "practiced_once", "dialogue_id": "c030" },
+              "mastery_check": "practiced_once",
+              "required": false,
+              "xp": 20,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/dialogues?id=c030"
+            },
+            {
+              "id": "dialogue_c028",
+              "tool": "dialogues",
+              "title": "Dialoog — Te laat op het werk",
+              "description": "Oefen een gesprek met je baas",
+              "target": { "type": "practiced_once", "dialogue_id": "c028" },
+              "mastery_check": "practiced_once",
+              "required": false,
+              "xp": 20,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/dialogues?id=c028"
+            }
+          ],
+          "completion_reward": null
+        },
+
+        {
+          "id": "A2-U6",
+          "title": "Uitgebreide Woordenschat",
+          "description": "Verdiep je woordenschat en beheers meer werkwoorden",
+          "icon": "📚",
+          "theme": "vocabulary",
+          "estimated_days": 7,
+          "unlock_after": "A2-U5",
+          "daily_mix": ["vanstart_thema07", "vanstart_thema08"],
+          "tasks": [
+            {
+              "id": "vanstart_thema07",
+              "tool": "vanstart",
+              "title": "VanStart Thema 07",
+              "description": "Leer de thematische woordenschat van Thema 7 via flashcards",
+              "target": { "type": "flashcard", "lesson_id": "thema07", "min_pct": 0.80 },
+              "mastery_check": "flashcard_80pct",
+              "required": true,
+              "xp": 35,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/vanstart?lesson=thema07&mode=review"
+            },
+            {
+              "id": "vanstart_thema08",
+              "tool": "vanstart",
+              "title": "VanStart Thema 08",
+              "description": "Leer de thematische woordenschat van Thema 8 via flashcards",
+              "target": { "type": "flashcard", "lesson_id": "thema08", "min_pct": 0.80 },
+              "mastery_check": "flashcard_80pct",
+              "required": true,
+              "xp": 35,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/vanstart?lesson=thema08&mode=review"
+            },
+            {
+              "id": "getallen_lv4_opt",
+              "tool": "getallen",
+              "title": "Getallen 31–50 (als nog niet gedaan)",
+              "description": "Haal ≥ 2 sterren voor getallen 31-50",
+              "target": { "type": "stars", "level_id": 4, "min_stars": 2 },
+              "mastery_check": "stars_2plus",
+              "required": false,
+              "xp": 15,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/number?level=4"
+            },
+            {
+              "id": "podcast_5",
+              "tool": "podcast",
+              "title": "5 podcast-afleveringen beluisteren",
+              "description": "Luister naar 5 afleveringen van Met het Oog op Morgen",
+              "target": { "type": "count_done", "count": 5 },
+              "mastery_check": "count_done",
+              "required": false,
+              "xp": 30,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/podcast"
+            },
+            {
+              "id": "draairad_a2_p3",
+              "tool": "draairad",
+              "title": "Draairad — Nieuws & Meningen (5×)",
+              "description": "Oefen A2-vragen over actualiteit en meningen",
+              "target": { "type": "count_done", "count": 5, "pkg_id": "preset_a2_3" },
+              "mastery_check": "count_done",
+              "required": false,
+              "xp": 20,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/wheel?pkg=preset_a2_3"
+            }
+          ],
+          "completion_reward": null
+        },
+
+        {
+          "id": "A2-U7",
+          "title": "A2 Examen Voorbereiding",
+          "description": "Oefen intensief voor het NT2 A2 examen — lezen, luisteren, spreken en schrijven",
+          "icon": "🎓",
+          "theme": "exam_prep",
+          "estimated_days": 7,
+          "unlock_after": "A2-U6",
+          "daily_mix": ["stories2_10", "dialogue_c018", "sentence_7days"],
+          "tasks": [
+            {
+              "id": "stories2_10",
+              "tool": "stories2",
+              "title": "Korte Verhalen — 10 quizzen ≥ 80%",
+              "description": "Lees 10 korte verhalen en haal telkens ≥ 80% op de quiz",
+              "target": { "type": "story_quiz", "count": 10 },
+              "mastery_check": "story_quiz_80",
+              "required": true,
+              "xp": 60,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/stories2"
+            },
+            {
+              "id": "dialogue_c018",
+              "tool": "dialogues",
+              "title": "Dialoog — Gesprek met de leraar",
+              "description": "Oefen een formeel gesprek op school",
+              "target": { "type": "practiced_once", "dialogue_id": "c018" },
+              "mastery_check": "practiced_once",
+              "required": true,
+              "xp": 20,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/dialogues?id=c018"
+            },
+            {
+              "id": "dialogue_c060",
+              "tool": "dialogues",
+              "title": "Dialoog — Kind aanmelden op school",
+              "description": "Oefen een administratief gesprek op school",
+              "target": { "type": "practiced_once", "dialogue_id": "c060" },
+              "mastery_check": "practiced_once",
+              "required": true,
+              "xp": 20,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/dialogues?id=c060"
+            },
+            {
+              "id": "sentence_7days",
+              "tool": "sentence",
+              "title": "Zinnen schrijven — 7 dagen",
+              "description": "Schrijf dagelijks 5 zinnen gedurende 7 achtereenvolgende dagen",
+              "target": { "type": "streak_days", "days": 7 },
+              "mastery_check": "streak_days",
+              "required": true,
+              "xp": 50,
+              "estimated_minutes": 10,
+              "deeplink": "/dqvn/sentence"
+            },
+            {
+              "id": "podcast_10",
+              "tool": "podcast",
+              "title": "10 podcast-afleveringen",
+              "description": "Luister naar nog 10 afleveringen (totaal 15)",
+              "target": { "type": "count_done", "count": 15 },
+              "mastery_check": "count_done",
+              "required": false,
+              "xp": 40,
+              "estimated_minutes": 20,
+              "deeplink": "/dqvn/podcast"
+            }
+          ],
+          "completion_reward": {
+            "badge": "🌿",
+            "title": "A2 Behaald!",
+            "message": "Fantastisch! Je beheerst het Nederlands op A2-niveau. Je bent klaar voor het NT2 A2 examen!"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -413,6 +413,236 @@ function initReveal() {
 /* ─── Year ───────────────────────────────────────────────────── */
 document.getElementById('pf-year').textContent = '© ' + new Date().getFullYear();
 
+/* ─── Learning Path (Leerpad) ────────────────────────────────── */
+const PLAN_PROGRESS_KEY = 'nl_learning_progress_v1';
+let _planCache = null; // in-memory cache for plan JSON
+
+async function _fetchPlan() {
+  if (_planCache) return _planCache;
+  try {
+    const r = await fetch('/dqvn/data/plan/nl_plan_v1.json');
+    if (!r.ok) throw new Error('plan fetch failed');
+    _planCache = await r.json();
+    return _planCache;
+  } catch { return null; }
+}
+
+function _readPlanProgress() {
+  try { return JSON.parse(localStorage.getItem(PLAN_PROGRESS_KEY) || '{}'); }
+  catch { return {}; }
+}
+
+function _savePlanProgress(prog) {
+  try { localStorage.setItem(PLAN_PROGRESS_KEY, JSON.stringify(prog)); } catch {}
+}
+
+/* Check if a plan task is mastered based on its mastery_check type */
+function _isTaskMastered(task, prog) {
+  const today = new Date().toISOString().slice(0, 10);
+  const fc    = (prog.tool_scores?.flashcard) || {};
+  const srs   = readJSON('nl_srs_v3', {});
+  const now   = Date.now();
+
+  switch (task.mastery_check) {
+
+    case 'flashcard_80pct': {
+      const chId  = task.target?.lesson_id;
+      /* Prefer the dedicated mastery score written by flashcard.js */
+      if (fc[chId]?.is_mastered) return true;
+      /* Fall back: count non-new cards from raw SRS data */
+      const ch    = srs[chId] || {};
+      const words = Object.values(ch).filter(s => s && typeof s === 'object' && s.state);
+      const seen  = words.filter(s => s.state !== 'new').length;
+      return words.length > 0 && seen / words.length >= 0.80;
+    }
+
+    case 'verb_quiz_80': {
+      const verbsStore = readJSON('nl_verbs_v3', {});
+      const lesId  = task.target?.lesson_id;
+      const ld     = verbsStore?.lessons?.[lesId];
+      if (!ld?.totalAnswered) return false;
+      return ld.totalCorrect / ld.totalAnswered >= 0.80;
+    }
+
+    case 'stars_2plus': {
+      const numProg = readJSON('nl_num_progress', {});
+      const lvlId   = task.target?.level_id;
+      const lp      = numProg[lvlId];
+      if (!lp) return false;
+      return Math.max(lp.listen || 0, lp.quiz || 0) >= 2;
+    }
+
+    case 'count_done': {
+      const tool  = task.tool;
+      const count = task.target?.count || 0;
+      if (tool === 'klanken') {
+        const kd = readJSON('klanken-v1', {});
+        return Object.values(kd).filter(Boolean).length >= count;
+      }
+      if (tool === 'sentence') {
+        const sd = readJSON('nl_sentence_v1', {});
+        return (sd.streak || 0) >= (task.target?.days || count);
+      }
+      if (tool === 'nieuws') {
+        const rd = readJSON('nl_rss_v1', { total: 0 });
+        return (rd.total || rd.read?.length || 0) >= count;
+      }
+      if (tool === 'podcast') {
+        const pd = readJSON('nl_podcast_v1', { total: 0 });
+        return (pd.total || pd.listened?.length || 0) >= count;
+      }
+      if (tool === 'draairad') {
+        const pkgId = task.target?.pkg_id;
+        const hist  = readJSON('nl_wheel_hist', []);
+        return hist.filter(h => !pkgId || h.pkg === pkgId).length >= count;
+      }
+      return false;
+    }
+
+    case 'streak_days': {
+      const sd = readJSON('nl_sentence_v1', {});
+      return (sd.streak || 0) >= (task.target?.days || 1);
+    }
+
+    case 'story_quiz_80': {
+      const s2 = readJSON('nl_s2_quiz_v1', {});
+      const done = Object.values(s2).filter(q => q?.completed).length;
+      return done >= (task.target?.count || 1);
+    }
+
+    case 'practiced_once': {
+      const tool = task.tool;
+      if (tool === 'dialogues') {
+        const dlgId = task.target?.dialogue_id;
+        const dlg   = readJSON('nl_dlg_v1', {});
+        return (dlg.stats?.[dlgId]?.count || 0) >= 1;
+      }
+      if (tool === 'kids') {
+        const last = localStorage.getItem('kids_last_lesson') || '';
+        return last.includes(task.target?.lesson_id || 'l01');
+      }
+      if (tool === 'stories') {
+        const s = readJSON('nl_s2_quiz_v1', {});
+        return Object.keys(s).length > 0;
+      }
+      return false;
+    }
+
+    default: return false;
+  }
+}
+
+/* Find the active unit: first unit whose required tasks are NOT all mastered */
+function _findActiveUnit(plan, prog) {
+  for (const level of (plan.levels || [])) {
+    for (const unit of (level.units || [])) {
+      const required = unit.tasks.filter(t => t.required);
+      const allDone  = required.length > 0 && required.every(t => _isTaskMastered(t, prog));
+      if (!allDone) return { level, unit };
+    }
+  }
+  return null; // all done
+}
+
+const LEVEL_COLORS = { A1: '#059669', A2: '#7c3aed' };
+const TOOL_ICONS   = {
+  vanstart: '🚀', vocab: '📖', klanken: '🎵', getallen: '🔢',
+  verbs: '🔄', sentence: '✏️', dialogues: '💬', draairad: '🎡',
+  kids: '🧒', stories: '📕', stories2: '📖', nieuws: '📰',
+  podcast: '🎧', grammar: '📚',
+};
+
+async function renderLearningPath() {
+  const user = readJSON('fc_sync_user', null);
+  const wrap = document.getElementById('leerpad-wrap');
+  if (!wrap) return;
+  if (!user) { wrap.hidden = true; return; }
+  wrap.hidden = false;
+
+  const content = document.getElementById('leerpad-content');
+  const badge   = document.getElementById('leerpad-badge');
+
+  content.innerHTML = '<div style="color:var(--text-3);font-size:.8rem;padding:12px 0">Leerpad laden…</div>';
+
+  const plan = await _fetchPlan();
+  if (!plan) {
+    content.innerHTML = '<div style="color:var(--text-3);font-size:.8rem;padding:12px 0">Leerpad niet beschikbaar.</div>';
+    return;
+  }
+
+  const prog    = _readPlanProgress();
+  const active  = _findActiveUnit(plan, prog);
+
+  if (!active) {
+    /* All levels completed */
+    content.innerHTML = `
+      <div class="lp-reward-banner">
+        <div class="lp-reward-badge">🏆</div>
+        <div>
+          <div class="lp-reward-title">A2 Voltooid!</div>
+          <div class="lp-reward-msg">Je hebt het volledige leerpad afgerond. Proficiat!</div>
+        </div>
+      </div>`;
+    if (badge) badge.textContent = 'Voltooid';
+    return;
+  }
+
+  const { level, unit } = active;
+  const color     = LEVEL_COLORS[level.id] || '#ea580c';
+  const required  = unit.tasks.filter(t => t.required);
+  const optional  = unit.tasks.filter(t => !t.required);
+  const doneCount = required.filter(t => _isTaskMastered(t, prog)).length;
+  const pct       = required.length ? Math.round(doneCount / required.length * 100) : 0;
+
+  if (badge) badge.textContent = `${level.cefr} · ${unit.title}`;
+
+  const levelCls  = `lp-${level.id.toLowerCase()}`;
+
+  const taskRow = (task) => {
+    const done    = _isTaskMastered(task, prog);
+    const icon    = TOOL_ICONS[task.tool] || '📌';
+    const status  = done ? '✅' : (task.required ? '⬜' : '○');
+    const cls     = done ? 'lp-done' : (task.required ? 'lp-active' : '');
+    return `
+      <a class="lp-task ${cls}" href="${task.deeplink || '#'}">
+        <span class="lp-task-icon">${icon}</span>
+        <span class="lp-task-body">
+          <span class="lp-task-title">${task.title}</span>
+          <span class="lp-task-hint">${task.mastery_hint || task.description || ''}</span>
+        </span>
+        <span class="lp-task-status">${status}</span>
+      </a>`;
+  };
+
+  const optHtml = optional.length ? `
+    <details class="lp-optional-toggle">
+      <summary>+ ${optional.length} optionele taak${optional.length !== 1 ? 'en' : ''}</summary>
+      ${optional.map(taskRow).join('')}
+    </details>` : '';
+
+  content.innerHTML = `
+    <div class="lp-level-chip ${levelCls}">${level.icon} ${level.name} — ${unit.title}</div>
+    <div class="lp-unit-card" style="--lp-color:${color}">
+      <div class="lp-unit-head">
+        <div class="lp-unit-icon">${unit.icon}</div>
+        <div class="lp-unit-meta">
+          <div class="lp-unit-title">${unit.title}</div>
+          <div class="lp-unit-sub">~${unit.estimated_days} dagen · ${unit.description}</div>
+        </div>
+        <span class="lp-unit-pct">${pct}%</span>
+      </div>
+      <div class="lp-track"><div class="lp-fill" id="lp-fill" style="width:0%;background:${color}"></div></div>
+      ${required.map(taskRow).join('')}
+      ${optHtml}
+    </div>`;
+
+  /* Animate progress bar after paint */
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    const fill = document.getElementById('lp-fill');
+    if (fill) fill.style.width = pct + '%';
+  }));
+}
+
 /* ─── Today's Tasks ─────────────────────────────────────────── */
 function _daysBetween(dateStr, todayStr) {
   try { return Math.floor((new Date(todayStr) - new Date(dateStr)) / 86400000); }
@@ -702,6 +932,7 @@ function renderDashboard() {
   const s = computeStats();
   renderStats(s);
   renderTodayTasks();
+  renderLearningPath();
   renderProgress(s);
   updatePlanCTA();
 }
@@ -732,8 +963,8 @@ function updatePlanCTA() {
 /* Called by sync.js after a successful cloud sync — refresh stats */
 function updateWordBadges() { renderDashboard(); }
 
-/* Called by sync.js when login state changes — show/hide today's tasks */
-function onSyncUserChange() { renderTodayTasks(); updatePlanCTA(); }
+/* Called by sync.js when login state changes — show/hide today's tasks + leerpad */
+function onSyncUserChange() { renderTodayTasks(); renderLearningPath(); updatePlanCTA(); }
 
 /* ─── Theme picker ──────────────────────────────────────────── */
 const THEMES = [

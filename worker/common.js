@@ -5,7 +5,8 @@
  *          RSS_FEED_URL, RSS_CACHE_KEY, RSS_MAX, RSS_FETCH_TTL, RSS_CDN_TTL,
  *          PODCAST_FEED_URL, PODCAST_CACHE_KEY, PODCAST_MAX, PODCAST_FETCH_TTL,
  *          FEED_USER_AGENT,
- *          reply, redisGet, redisSet, verifyGoogleJWT,
+ *          reply, redisGet, redisSet, redisPush, redisLRange, redisLLen,
+ *          verifyGoogleJWT,
  *          srsEncodeWord, srsDecodeWord, srsEncode, srsDecode,
  *          mergeSRS, mergeMeta, mergeKlanken, mergeVerbs, mergeGame,
  *          mergeVol, mergeNum, mergeWheel, mergeSentence,
@@ -85,6 +86,38 @@ export async function redisSet(url, token, key, value, ex) {
     headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
     body:    JSON.stringify(['SET', key, JSON.stringify(value), 'EX', ex]),
   });
+}
+
+// Append one JSON-serialised value to a Redis list (RPUSH)
+export async function redisPush(url, token, key, value) {
+  await fetch(`${url}/`, {
+    method:  'POST',
+    headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+    body:    JSON.stringify(['RPUSH', key, JSON.stringify(value)]),
+  });
+}
+
+// Return a range of list items, each parsed from the stored JSON string
+export async function redisLRange(url, token, key, start = 0, stop = -1) {
+  const r = await fetch(
+    `${url}/lrange/${encodeURIComponent(key)}/${start}/${stop}`,
+    { headers: { Authorization: `Bearer ${token}` } }
+  );
+  const { result } = await r.json();
+  if (!Array.isArray(result)) return [];
+  return result
+    .map(s => { try { return JSON.parse(s); } catch { return null; } })
+    .filter(Boolean);
+}
+
+// Return the length of a Redis list
+export async function redisLLen(url, token, key) {
+  const r = await fetch(
+    `${url}/llen/${encodeURIComponent(key)}`,
+    { headers: { Authorization: `Bearer ${token}` } }
+  );
+  const { result } = await r.json();
+  return typeof result === 'number' ? result : 0;
 }
 
 // ── Google JWT verification (Web Crypto, no deps) ─────────────────────────────

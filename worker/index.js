@@ -16,7 +16,7 @@ import {
   RSS_FEED_URL, RSS_CACHE_KEY, RSS_MAX, RSS_FETCH_TTL, RSS_REDIS_TTL,
   PODCAST_FEED_URL, PODCAST_CACHE_KEY, PODCAST_MAX, PODCAST_FETCH_TTL, PODCAST_REDIS_TTL,
   reply,
-  redisGet, redisSet,
+  redisGet, redisSet, redisPush, redisLRange, redisLLen,
   verifyGoogleJWT,
   srsEncode, srsDecode,
   mergeSRS, mergeMeta, mergeKlanken, mergeVerbs, mergeGame,
@@ -273,6 +273,96 @@ async function handleSync(request, env) {
   }, 200, origin);
 }
 
+// ── Feedback ──────────────────────────────────────────────────────────────────
+
+const FB_LIST_KEY  = 'feedback:list';
+const FB_SEEN_KEY  = 'feedback:seen';   // last-read count for owner badge
+const FB_RL_TTL    = 300;              // 5-min rate-limit window (seconds)
+const FB_MSG_MAX   = 500;
+const OWNER_EMAIL  = 'dqvn2002@gmail.com';
+
+/**
+ * POST /feedback — submit feedback (no auth required)
+ * Rate-limited per IP via a Redis key with TTL FB_RL_TTL.
+ * Appends a JSON entry to FB_LIST_KEY (Redis list).
+ */
+async function handleFeedback(request, env) {
+  const origin = request.headers.get('Origin') || '';
+
+  let body;
+  try { body = await request.json(); } catch { return reply({ error: 'Invalid JSON' }, 400, origin); }
+
+  const message = (body.message || '').trim().slice(0, FB_MSG_MAX);
+  const type    = ['bug', 'idea', 'general'].includes(body.type) ? body.type : 'general';
+  if (!message) return reply({ error: 'Bericht is verplicht' }, 400, origin);
+
+  const ip    = request.headers.get('CF-Connecting-IP') || 'anon';
+  const rlKey = `feedback:rl:${ip.replace(/[^a-zA-Z0-9]/g, '_')}`;
+  const hit   = await redisGet(env.UPSTASH_URL, env.UPSTASH_TOKEN, rlKey);
+  if (hit) return reply({ error: 'Wacht 5 minuten voor je opnieuw feedback stuurt.' }, 429, origin);
+
+  const entry = {
+    id:   `fb_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`,
+    ts:   Date.now(),
+    date: new Date().toISOString(),
+    type,
+    message,
+    env: {
+      url:          (body.env?.url          || '').slice(0, 200),
+      browser:      (body.env?.browser      || '').slice(0, 120),
+      screen:       (body.env?.screen       || '').slice(0, 20),
+      lang:         (body.env?.lang         || '').slice(0, 10),
+      logged_in:    !!body.env?.logged_in,
+      active_level: body.env?.active_level  || null,
+      active_unit:  body.env?.active_unit   || null,
+      streak:       Number(body.env?.streak) || 0,
+    },
+  };
+
+  await Promise.all([
+    redisPush(env.UPSTASH_URL, env.UPSTASH_TOKEN, FB_LIST_KEY, entry),
+    redisSet(env.UPSTASH_URL, env.UPSTASH_TOKEN, rlKey, 1, FB_RL_TTL),
+  ]);
+
+  return reply({ ok: true }, 200, origin);
+}
+
+/**
+ * GET /feedback — read all items, newest-first (owner only, Bearer auth)
+ * Also resets the unread counter stored in FB_SEEN_KEY.
+ */
+async function handleGetFeedback(request, env) {
+  const origin = request.headers.get('Origin') || '';
+
+  const auth = request.headers.get('Authorization') || '';
+  if (!auth.startsWith('Bearer ')) return reply({ error: 'Unauthorized' }, 401, origin);
+  let user;
+  try { user = await verifyGoogleJWT(auth.slice(7), env.GOOGLE_CLIENT_ID); }
+  catch { return reply({ error: 'Invalid token' }, 401, origin); }
+  if (user.email !== OWNER_EMAIL) return reply({ error: 'Forbidden' }, 403, origin);
+
+  // All items, oldest first from Redis list → reverse = newest first; cap at 500
+  const raw   = await redisLRange(env.UPSTASH_URL, env.UPSTASH_TOKEN, FB_LIST_KEY, 0, 499);
+  const items = raw.slice().reverse();
+
+  // Mark all as seen
+  await redisSet(env.UPSTASH_URL, env.UPSTASH_TOKEN, FB_SEEN_KEY, items.length, REDIS_TTL);
+
+  return reply({ items, total: items.length }, 200, origin);
+}
+
+/**
+ * GET /feedback/badge — unread count for the owner badge (public, no auth)
+ * Returns { total, unseen } so the portal can show a notification dot.
+ */
+async function handleFeedbackBadge(env, origin) {
+  const [total, seen] = await Promise.all([
+    redisLLen(env.UPSTASH_URL, env.UPSTASH_TOKEN, FB_LIST_KEY),
+    redisGet(env.UPSTASH_URL, env.UPSTASH_TOKEN, FB_SEEN_KEY),
+  ]);
+  return reply({ total, unseen: Math.max(0, total - (seen || 0)) }, 200, origin);
+}
+
 // ── Main router ───────────────────────────────────────────────────────────────
 
 /**
@@ -303,6 +393,17 @@ export default {
     if (url.pathname === '/sync') {
       if (request.method !== 'POST') return reply({ error: 'Method not allowed' }, 405, origin);
       return handleSync(request, env);
+    }
+
+    if (url.pathname === '/feedback') {
+      if (request.method === 'POST') return handleFeedback(request, env);
+      if (request.method === 'GET')  return handleGetFeedback(request, env);
+      return reply({ error: 'Method not allowed' }, 405, origin);
+    }
+
+    if (url.pathname === '/feedback/badge') {
+      if (request.method !== 'GET') return reply({ error: 'Method not allowed' }, 405, origin);
+      return handleFeedbackBadge(env, origin);
     }
 
     return reply({ error: 'Not found' }, 404, origin);

@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "version": "1.0",
+    "description": "Preset Draairad question packages for the Dutch learning path (A1 and A2)",
+    "note": "These packages are loaded automatically on wheel.html startup and cannot be deleted by the user."
+  },
+  "packages": [
+    {
+      "id": "preset_a1_1",
+      "name": "A1 — Groeten & Introductie 🇳🇱",
+      "level": "A1",
+      "preset": true,
+      "items": [
+        "Hoe heet je?",
+        "Waar kom je vandaan?",
+        "Hoe oud ben je?",
+        "Woon je in Nederland?",
+        "Spreek je Nederlands?",
+        "Wat is je werk?",
+        "Heb je kinderen?",
+        "Hoe lang woon je hier al?",
+        "Wat vind je leuk om te doen?",
+        "Hoe is het met je?"
+      ]
+    },
+    {
+      "id": "preset_a1_2",
+      "name": "A1 — Familie & Dagelijks Leven 🏠",
+      "level": "A1",
+      "preset": true,
+      "items": [
+        "Heb je broers of zussen?",
+        "Woon je alleen of met anderen?",
+        "Wat eet je voor ontbijt?",
+        "Hoe laat sta je elke dag op?",
+        "Wat doe je in het weekend?",
+        "Hoe is het weer vandaag?",
+        "Heb je een fiets?",
+        "Ga je vaak naar de supermarkt?",
+        "Wat kook je graag?",
+        "Heb je een huisdier?"
+      ]
+    },
+    {
+      "id": "preset_a1_3",
+      "name": "A1 — Vervoer & Stad 🚌",
+      "level": "A1",
+      "preset": true,
+      "items": [
+        "Hoe ga je naar je werk of school?",
+        "Neem je de bus of de trein?",
+        "Hoe ver is jouw werk van thuis?",
+        "Heb je een auto of een fiets?",
+        "Ga je vaak naar het centrum?",
+        "Rijd je soms met de tram?",
+        "Hoe lang duurt jouw reis naar het werk?",
+        "Wat is jouw favoriete winkel in de stad?",
+        "Fiets je naar school?",
+        "Hoe laat ga je meestal naar huis?"
+      ]
+    },
+    {
+      "id": "preset_a2_1",
+      "name": "A2 — Werk & Opleiding 💼",
+      "level": "A2",
+      "preset": true,
+      "items": [
+        "Wat is jouw beroep?",
+        "Hoe lang werk je al bij jouw bedrijf?",
+        "Wat vind je het leukst aan je werk?",
+        "Wil je een cursus of opleiding volgen?",
+        "Spreek je andere talen naast Nederlands?",
+        "Werk je liever thuis of op kantoor?",
+        "Hoe is jouw relatie met je collega's?",
+        "Wil je later promotie maken?",
+        "Wat zijn jouw sterke punten op het werk?",
+        "Wat zijn jouw plannen voor de toekomst?"
+      ]
+    },
+    {
+      "id": "preset_a2_2",
+      "name": "A2 — Wonen in Nederland 🏡",
+      "level": "A2",
+      "preset": true,
+      "items": [
+        "Hoe lang woon je al in Nederland?",
+        "Wat vind je het mooist aan Nederland?",
+        "Heb je al Nederlandse vrienden gemaakt?",
+        "Wat is voor jou het moeilijkste aan het Nederlands?",
+        "Wil je blijvend in Nederland wonen?",
+        "Wat mis je het meest van jouw thuisland?",
+        "Wat vind je van het Nederlandse eten?",
+        "Hoe gaat de integratie in Nederland voor jou?",
+        "Hoe is jouw buurt en hoe zijn je buren?",
+        "Heb je een goede huisarts gevonden?"
+      ]
+    },
+    {
+      "id": "preset_a2_3",
+      "name": "A2 — Nieuws & Meningen 📰",
+      "level": "A2",
+      "preset": true,
+      "items": [
+        "Wat heb je gisteren gedaan?",
+        "Wat zijn jouw plannen voor dit weekend?",
+        "Lees je de krant of volg je het nieuws?",
+        "Wat vind je van het klimaat en het milieu?",
+        "Hoe gaat het met jouw gezondheid?",
+        "Wat sport je en hoe vaak?",
+        "Ben je lid van een vereniging of club?",
+        "Hoe is het leven in Nederland vergeleken met jouw thuisland?",
+        "Wat vind je van de gezondheidszorg in Nederland?",
+        "Hoe belangrijk is taal voor jouw dagelijkse leven?"
+      ]
+    }
+  ]
+}
