@@ -736,6 +736,7 @@ body {
 
 #pkg-select {
     flex: 1;
+    min-width: 0;          /* allow flex shrink past intrinsic option text width */
     background: var(--card);
     border: 1.5px solid var(--border);
     border-radius: 12px;
@@ -747,6 +748,8 @@ body {
     outline: none;
     appearance: none;
     -webkit-appearance: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #pkg-select:focus {
@@ -961,6 +964,22 @@ body {
 
     #items-list {
         max-height: 180px;
+    }
+}
+
+/* On narrow phones: select takes its own row, buttons share the row below */
+@media (max-width: 500px) {
+    #pkg-selector {
+        flex-wrap: wrap;
+    }
+    #pkg-select {
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .btn-manage,
+    .btn-share {
+        flex: 1;
+        justify-content: center;
     }
 }
 
