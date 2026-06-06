@@ -1130,10 +1130,18 @@ $('ft-year').textContent   = new Date().getFullYear();
     syncWakeButtons(true); /* optimistic — corrected to false by acquireWakeLock if unsupported */
     acquireWakeLock();
     buildSearchIndex(); /* background — populates _searchIdx for cross-lesson search */
-    /* Auto-select last used lesson, or first lesson */
-    const lastId = st.store.lastLesson;
+
+    /* Deep-link: ?lesson=les2 overrides last-used lesson; ?mode=study|quiz auto-starts */
+    const _urlP      = new URLSearchParams(location.search);
+    const _urlLesson = _urlP.get('lesson');
+    const _urlMode   = _urlP.get('mode');
+
+    const lastId = _urlLesson || st.store.lastLesson;
     const target = (lastId && st.manifest.find(l => l.id === lastId)) || st.manifest[0];
     await selectLesson(target);
+
+    if      (_urlMode === 'study') { buildSession(); startStudy(); }
+    else if (_urlMode === 'quiz')  { buildSession(); buildQuiz(); startQuiz(); }
   } catch {
     $('lesson-list').innerHTML = '<div class="sb-err">Failed to load lessons. Open via a local server (e.g. <code>npx serve .</code>).</div>';
   }
