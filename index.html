@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/css/portal.css?v=5">
+  <link rel="stylesheet" href="assets/css/portal.css?v=6">
 </head>
 <body>
 
@@ -20,7 +20,7 @@
       <div class="hdr-emblem" aria-hidden="true">🌷</div>
       <div class="hdr-titles">
         <span class="hdr-name">Leer Nederlands</span>
-        <span class="hdr-sub">Leerportaal</span>
+        <span class="hdr-sub" data-i18n="brand_sub">Leerportaal</span>
       </div>
     </a>
     <!-- Auth / sync widget — populated by sync.js -->
@@ -88,22 +88,22 @@
         <div class="stat-pill" title="Dagelijkse reeks">
           <span class="stat-ico">🔥</span>
           <span class="stat-val" id="sv-streak">—</span>
-          <span class="stat-lbl">dagen reeks</span>
+          <span class="stat-lbl" data-i18n="stat_streak">dagen reeks</span>
         </div>
         <div class="stat-pill" title="Kaarten gezien">
           <span class="stat-ico">📚</span>
           <span class="stat-val" id="sv-cards">—</span>
-          <span class="stat-lbl">kaarten gezien</span>
+          <span class="stat-lbl" data-i18n="stat_cards">kaarten gezien</span>
         </div>
         <div class="stat-pill" title="Klanken geoefend">
           <span class="stat-ico">🎵</span>
           <span class="stat-val" id="sv-klanken">—</span>
-          <span class="stat-lbl">klanken</span>
+          <span class="stat-lbl" data-i18n="stat_klanken">klanken</span>
         </div>
         <div class="stat-pill" title="Werkwoorden geleerd">
           <span class="stat-ico">🔄</span>
           <span class="stat-val" id="sv-verbs">—</span>
-          <span class="stat-lbl">werkwoorden</span>
+          <span class="stat-lbl" data-i18n="stat_verbs">werkwoorden</span>
         </div>
       </div>
     </div>
@@ -115,7 +115,7 @@
     <!-- ── Taak van vandaag (login only — rendered by renderTodayTasks) ── -->
     <div id="today-tasks-wrap" hidden>
       <div class="sec-head sec-head-today reveal">
-        <h2>Taak van vandaag</h2>
+        <h2 data-i18n="sec_today">Taak van vandaag</h2>
       </div>
       <div class="today-grid reveal" id="today-tasks-grid"></div>
     </div>
@@ -123,7 +123,7 @@
     <!-- ── Leerpad (login only — rendered by renderLearningPath) ── -->
     <div id="leerpad-wrap" hidden>
       <div class="sec-head sec-head-leerpad reveal">
-        <h2>Leerpad</h2>
+        <h2 data-i18n="sec_leerpad">Leerpad</h2>
         <span class="sec-badge" id="leerpad-badge"></span>
       </div>
       <div id="leerpad-content" class="reveal"></div>
@@ -131,7 +131,7 @@
 
     <!-- ── Progress ── -->
     <div class="sec-head reveal">
-      <h2>Voortgang</h2>
+      <h2 data-i18n="sec_voortgang">Voortgang</h2>
     </div>
     <div class="prog-grid reveal" id="prog-grid">
       <!-- filled by renderDashboard() -->
@@ -139,7 +139,7 @@
 
     <!-- ── Tools ── -->
     <div class="sec-head reveal">
-      <h2>Leertools</h2>
+      <h2 data-i18n="sec_tools">Leertools</h2>
       <span class="sec-badge" id="tools-badge"></span>
     </div>
     <div id="tools-container" class="reveal">
@@ -148,153 +148,153 @@
 
     <!-- ── Settings ── -->
     <div class="sec-head reveal">
-      <h2>Instellingen</h2>
+      <h2 data-i18n="sec_settings">Instellingen</h2>
     </div>
     <div class="settings-panel reveal">
       <div class="setting-row">
-        <span class="setting-label">🔊 Volume TTS</span>
+        <span class="setting-label" data-i18n="set_volume">🔊 Volume TTS</span>
         <input type="range" id="vol-slider" min="0" max="100" value="70">
         <span id="vol-val">70%</span>
       </div>
       <div class="setting-row">
-        <span class="setting-label">⏩ Spreeksnelheid</span>
+        <span class="setting-label" data-i18n="set_speed">⏩ Spreeksnelheid</span>
         <input type="range" id="speed-slider" min="0.5" max="1.5" step="0.05" value="0.8">
         <span id="speed-val">0.8×</span>
       </div>
       <div class="setting-row">
-        <span class="setting-label">🎨 Thema</span>
+        <span class="setting-label" data-i18n="set_theme">🎨 Thema</span>
         <div class="theme-swatches" id="theme-swatches"></div>
       </div>
     </div>
 
     <!-- ── Coming soon ── -->
     <div class="sec-head reveal">
-      <h2>Binnenkort</h2>
-      <span class="sec-badge">In ontwikkeling</span>
+      <h2 data-i18n="sec_coming">Binnenkort</h2>
+      <span class="sec-badge" data-i18n="sec_coming_badge">In ontwikkeling</span>
     </div>
     <div class="coming-grid reveal">
       <div class="coming-card">
         <div class="coming-ico">📹</div>
         <div class="coming-info">
-          <span class="coming-name">Video Lessen</span>
-          <span class="coming-tag">BINNENKORT</span>
+          <span class="coming-name" data-i18n="coming_video">Video Lessen</span>
+          <span class="coming-tag" data-i18n="coming_badge">BINNENKORT</span>
         </div>
       </div>
       <div class="coming-card">
         <div class="coming-ico">🤖</div>
         <div class="coming-info">
-          <span class="coming-name">AI Spreekcoach</span>
-          <span class="coming-tag">BINNENKORT</span>
+          <span class="coming-name" data-i18n="coming_ai">AI Spreekcoach</span>
+          <span class="coming-tag" data-i18n="coming_badge">BINNENKORT</span>
         </div>
       </div>
       <div class="coming-card">
         <div class="coming-ico">📝</div>
         <div class="coming-info">
-          <span class="coming-name">Schrijfopdrachten</span>
-          <span class="coming-tag">BINNENKORT</span>
+          <span class="coming-name" data-i18n="coming_writing">Schrijfopdrachten</span>
+          <span class="coming-tag" data-i18n="coming_badge">BINNENKORT</span>
         </div>
       </div>
     </div>
 
     <!-- ── Waarom aanmelden ── -->
     <div class="sec-head reveal">
-      <h2>Waarom aanmelden?</h2>
-      <span class="sec-badge">Altijd gratis</span>
+      <h2 data-i18n="sec_why">Waarom aanmelden?</h2>
+      <span class="sec-badge" data-i18n="sec_why_badge">Altijd gratis</span>
     </div>
     <div class="plans-grid reveal">
 
       <!-- Plan 1 — Guest -->
       <div class="plan-card">
         <div class="plan-head">
-          <span class="plan-badge">Zonder account</span>
-          <div class="plan-name">Anoniem Leren</div>
-          <div class="plan-sub">Direct starten, geen registratie nodig</div>
+          <span class="plan-badge" data-i18n="plan_guest_badge">Zonder account</span>
+          <div class="plan-name" data-i18n="plan_guest_name">Anoniem Leren</div>
+          <div class="plan-sub" data-i18n="plan_guest_sub">Direct starten, geen registratie nodig</div>
           <div class="plan-price-row">
-            <span class="plan-always-tag">Gratis</span>
+            <span class="plan-always-tag" data-i18n="plan_free_tag">Gratis</span>
           </div>
         </div>
         <div class="plan-body">
           <ul class="plan-features">
             <li class="plan-feature">
               <span class="feat-ico feat-yes">✓</span>
-              <span>Alle <strong>14 leertools</strong> volledig gebruiken</span>
+              <span data-i18n-html="plan_guest_f1">Alle <strong>14 leertools</strong> volledig gebruiken</span>
             </li>
             <li class="plan-feature">
               <span class="feat-ico feat-yes">✓</span>
-              <span>VanStart NT2 cursus &amp; vocabulaire flashcards (SM-2)</span>
+              <span data-i18n="plan_guest_f2">VanStart NT2 cursus &amp; vocabulaire flashcards (SM-2)</span>
             </li>
             <li class="plan-feature">
               <span class="feat-ico feat-yes">✓</span>
-              <span>Klanken, uitspraak, werkwoorden &amp; grammatica</span>
+              <span data-i18n="plan_guest_f3">Klanken, uitspraak, werkwoorden &amp; grammatica</span>
             </li>
             <li class="plan-feature">
               <span class="feat-ico feat-yes">✓</span>
-              <span>Dialogen, verhalen, nieuws &amp; podcast</span>
+              <span data-i18n="plan_guest_f4">Dialogen, verhalen, nieuws &amp; podcast</span>
             </li>
             <li class="plan-feature">
               <span class="feat-ico feat-yes">✓</span>
-              <span>Zinnen bouwen — typen &amp; woordtegels slepen</span>
+              <span data-i18n="plan_guest_f5">Zinnen bouwen — typen &amp; woordtegels slepen</span>
             </li>
             <li class="plan-feature">
               <span class="feat-ico feat-no">✕</span>
-              <span class="feat-dim"><strong>Taak van vandaag</strong> — slimme dagelijkse suggesties</span>
+              <span class="feat-dim" data-i18n-html="plan_guest_f6_dim"><strong>Taak van vandaag</strong> — slimme dagelijkse suggesties</span>
             </li>
             <li class="plan-feature">
               <span class="feat-ico feat-no">✕</span>
-              <span class="feat-dim">Voortgang synchroniseren tussen apparaten</span>
+              <span class="feat-dim" data-i18n="plan_guest_f7_dim">Voortgang synchroniseren tussen apparaten</span>
             </li>
             <li class="plan-feature">
               <span class="feat-ico feat-no">✕</span>
-              <span class="feat-dim">Automatische back-up van je data</span>
+              <span class="feat-dim" data-i18n="plan_guest_f8_dim">Automatische back-up van je data</span>
             </li>
           </ul>
-          <a href="/dqvn/startnl" class="plan-cta plan-cta-neutral">Begin direct →</a>
+          <a href="/dqvn/startnl" class="plan-cta plan-cta-neutral" data-i18n="plan_guest_cta">Begin direct →</a>
         </div>
       </div>
 
       <!-- Plan 2 — Logged in (featured) -->
       <div class="plan-card plan-featured">
         <div class="plan-head">
-          <span class="plan-badge">⭐ Aanbevolen</span>
-          <div class="plan-name">Persoonlijk Account</div>
-          <div class="plan-sub">Slimme suggesties, sync &amp; statistieken</div>
+          <span class="plan-badge" data-i18n="plan_acc_badge">⭐ Aanbevolen</span>
+          <div class="plan-name" data-i18n="plan_acc_name">Persoonlijk Account</div>
+          <div class="plan-sub" data-i18n="plan_acc_sub">Slimme suggesties, sync &amp; statistieken</div>
           <div class="plan-price-row">
-            <span class="plan-always-tag">Altijd gratis</span>
+            <span class="plan-always-tag" data-i18n="plan_always_free">Altijd gratis</span>
           </div>
         </div>
         <div class="plan-body">
           <ul class="plan-features">
             <li class="plan-feature">
               <span class="feat-ico feat-yes">✓</span>
-              <span>Alles uit <strong>Anoniem</strong>, plus:</span>
+              <span data-i18n-html="plan_acc_f1">Alles uit <strong>Anoniem</strong>, plus:</span>
             </li>
             <li class="plan-feature">
               <span class="feat-ico feat-yes">🎯</span>
-              <span><strong>Taak van vandaag</strong> — prioriteiten op basis van jouw data</span>
+              <span data-i18n-html="plan_acc_f2"><strong>Taak van vandaag</strong> — prioriteiten op basis van jouw data</span>
             </li>
             <li class="plan-feature">
               <span class="feat-ico feat-yes">☁️</span>
-              <span><strong>Cloud sync</strong> — 10 voortgangssleutels gesynchroniseerd</span>
+              <span data-i18n-html="plan_acc_f3"><strong>Cloud sync</strong> — 10 voortgangssleutels gesynchroniseerd</span>
             </li>
             <li class="plan-feature">
               <span class="feat-ico feat-yes">🔥</span>
-              <span><strong>Dagelijkse reeks</strong> &amp; XP over alle tools bijhouden</span>
+              <span data-i18n-html="plan_acc_f4"><strong>Dagelijkse reeks</strong> &amp; XP over alle tools bijhouden</span>
             </li>
             <li class="plan-feature">
               <span class="feat-ico feat-yes">📊</span>
-              <span><strong>9 statistieken</strong> — voortgang per vaardigheid &amp; reeks</span>
+              <span data-i18n-html="plan_acc_f5"><strong>9 statistieken</strong> — voortgang per vaardigheid &amp; reeks</span>
             </li>
             <li class="plan-feature">
               <span class="feat-ico feat-yes">📱</span>
-              <span>Meerdere apparaten, één voortgang</span>
+              <span data-i18n="plan_acc_f6">Meerdere apparaten, één voortgang</span>
             </li>
             <li class="plan-feature">
               <span class="feat-ico feat-yes">🔄</span>
-              <span>Automatische back-up — nooit voortgang kwijtraken</span>
+              <span data-i18n="plan_acc_f7">Automatische back-up — nooit voortgang kwijtraken</span>
             </li>
             <li class="plan-feature">
               <span class="feat-ico feat-soon">✦</span>
-              <span>📹 Video Lessen &amp; 🤖 AI Spreekcoach <span class="feat-soon-tag">Binnenkort</span></span>
+              <span data-i18n-html="plan_acc_f8">📹 Video Lessen &amp; 🤖 AI Spreekcoach <span class="feat-soon-tag">Binnenkort</span></span>
             </li>
           </ul>
           <button class="plan-cta plan-cta-accent" id="plan-cta-btn">
@@ -328,6 +328,9 @@
       } catch {}
     })();
   </script>
+
+  <!-- i18n — must load before sync.js so _i18nLang is set -->
+  <script src="assets/js/i18n.js"></script>
 
   <!-- sync.js handles Google Sign-In and cloud sync -->
   <script src="assets/js/sync.js"></script>
@@ -516,6 +519,7 @@
       _$('fb-admin').classList.add('fb-admin--open');
       if (_allItems.length === 0) loadAdmin();
     }
+    window._openFeedbackAdmin = openAdmin;
 
     function closeAdmin() {
       _$('fb-admin').setAttribute('aria-hidden', 'true');

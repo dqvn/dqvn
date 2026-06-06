@@ -193,6 +193,8 @@
 .sync-dd-item:hover     { background: #f8fafc; }
 .sync-dd-item:disabled  { opacity: .45; cursor: default; }
 
+.sync-dd-admin                 { color: #7c3aed; border-top: 1px solid #f1f5f9; }
+.sync-dd-admin:hover           { background: #faf5ff; }
 .sync-dd-signout               { color: #dc2626; border-top: 1px solid #f1f5f9; }
 .sync-dd-signout:hover         { background: #fef2f2; }
 
@@ -210,6 +212,34 @@
     .left-menu .sync-card { padding: 12px 16px; }
     .left-menu .sync-signin-row { padding: 8px 16px; }
 }
+
+/* ── Language toggle ─────────────────────────────────────────────────── */
+.sync-dd-lang { border-top: 1px solid #f1f5f9; }
+
+.sync-lang-row {
+    display: flex;
+    justify-content: center;
+    padding: 0 10px 6px;
+}
+.sync-lang-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    background: none;
+    font-family: inherit;
+    font-size: .72rem;
+    font-weight: 600;
+    color: #64748b;
+    cursor: pointer;
+    transition: background .12s, color .12s;
+    white-space: nowrap;
+}
+.sync-lang-pill:hover { background: #f8fafc; color: #374151; }
+.sidebar-dark .sync-lang-pill { border-color: rgba(255,255,255,.12); color: rgba(255,255,255,.4); }
+.sidebar-dark .sync-lang-pill:hover { background: rgba(255,255,255,.08); color: rgba(255,255,255,.72); }
 
 /* ── Toast notification ─────────────────────────────────────────────── */
 #sync-toast {

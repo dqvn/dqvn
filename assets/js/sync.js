@@ -297,14 +297,26 @@ function _signOut() {
 // ═════════════════════════════════════════════════════════════════════════
 // UI RENDERING
 // ═════════════════════════════════════════════════════════════════════════
+function _getLangLabel() {
+  const lang = window._i18nLang || localStorage.getItem('nl_ui_lang') || 'en';
+  return lang === 'en' ? '🇳🇱 Nederlands' : '🇬🇧 English';
+}
+
 function _renderSyncUI() {
   const el = document.getElementById('sync-section');
   if (!el) return;
 
   if (!_user) {
-    el.innerHTML = `<div class="sync-signin-row"><div id="g-signin-container" class="sync-gis-wrap"></div></div>`;
-    // Render immediately if GIS is already loaded, otherwise _setupGIS() will call it
+    el.innerHTML = `
+      <div class="sync-signin-row"><div id="g-signin-container" class="sync-gis-wrap"></div></div>
+      <div class="sync-lang-row">
+        <button class="sync-lang-pill" id="i18n-lang-btn">
+          <span data-i18n="lang_switch">${_getLangLabel()}</span>
+        </button>
+      </div>`;
     if (window.google?.accounts?.id) _renderGISButton();
+    document.getElementById('i18n-lang-btn')
+      ?.addEventListener('click', () => { if (window.toggleLanguage) window.toggleLanguage(); });
     return;
   }
 
@@ -326,6 +338,15 @@ function _renderSyncUI() {
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.36-3.36L23 10M1 14l5.13 4.36A9 9 0 0020.49 15"/></svg>
             Sync now
           </button>
+          <button class="sync-dd-item sync-dd-lang" id="i18n-lang-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span data-i18n="lang_switch">${_getLangLabel()}</span>
+          </button>
+          ${_user.email === 'dqvn2002@gmail.com' ? `
+          <button class="sync-dd-item sync-dd-admin" id="sync-admin-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg>
+            Feedback Inbox
+          </button>` : ''}
           <button class="sync-dd-item sync-dd-signout" id="sync-signout-btn">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
             Sign out
@@ -349,6 +370,10 @@ function _renderSyncUI() {
 
   document.getElementById('sync-now-btn')
     .addEventListener('click', () => { dropdown.classList.remove('open'); syncNow(false); });
+  document.getElementById('i18n-lang-btn')
+    ?.addEventListener('click', () => { dropdown.classList.remove('open'); if (window.toggleLanguage) window.toggleLanguage(); });
+  document.getElementById('sync-admin-btn')
+    ?.addEventListener('click', () => { dropdown.classList.remove('open'); if (window._openFeedbackAdmin) window._openFeedbackAdmin(); });
   document.getElementById('sync-signout-btn')
     .addEventListener('click', () => { dropdown.classList.remove('open'); _signOut(); });
 }
