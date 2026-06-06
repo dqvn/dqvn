@@ -120,6 +120,24 @@ export async function redisLLen(url, token, key) {
   return typeof result === 'number' ? result : 0;
 }
 
+// Scan all Redis keys matching a glob pattern (iterates cursor until 0)
+export async function redisScanKeys(url, token, pattern) {
+  const keys = [];
+  let cursor = '0';
+  do {
+    const r = await fetch(`${url}/`, {
+      method:  'POST',
+      headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+      body:    JSON.stringify(['SCAN', cursor, 'MATCH', pattern, 'COUNT', '100']),
+    });
+    const { result } = await r.json();
+    if (!Array.isArray(result) || result.length < 2) break;
+    cursor = String(result[0]);
+    if (Array.isArray(result[1])) keys.push(...result[1]);
+  } while (cursor !== '0');
+  return keys;
+}
+
 // ── Google JWT verification (Web Crypto, no deps) ─────────────────────────────
 
 export async function verifyGoogleJWT(token, clientId) {

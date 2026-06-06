@@ -346,6 +346,10 @@ function _renderSyncUI() {
           <button class="sync-dd-item sync-dd-admin" id="sync-admin-btn">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg>
             Feedback Inbox
+          </button>
+          <button class="sync-dd-item sync-dd-users" id="sync-users-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Active Users
           </button>` : ''}
           <button class="sync-dd-item sync-dd-signout" id="sync-signout-btn">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
@@ -374,6 +378,8 @@ function _renderSyncUI() {
     ?.addEventListener('click', () => { dropdown.classList.remove('open'); if (window.toggleLanguage) window.toggleLanguage(); });
   document.getElementById('sync-admin-btn')
     ?.addEventListener('click', () => { dropdown.classList.remove('open'); if (window._openFeedbackAdmin) window._openFeedbackAdmin(); });
+  document.getElementById('sync-users-btn')
+    ?.addEventListener('click', () => { dropdown.classList.remove('open'); _openUserActivity(); });
   document.getElementById('sync-signout-btn')
     .addEventListener('click', () => { dropdown.classList.remove('open'); _signOut(); });
 }
@@ -492,5 +498,79 @@ window.addEventListener('online', () => {
 // visibilitychange removed: fires on every tab-switch and phone app-switch
 // (dozens per hour during normal use) — not a meaningful learning boundary.
 
+// ═════════════════════════════════════════════════════════════════════════
+// USER ACTIVITY PANEL
+// ═════════════════════════════════════════════════════════════════════════
+
+function _openUserActivity() {
+  const panel = document.getElementById('ua-panel');
+  if (!panel) return;
+  panel.removeAttribute('aria-hidden');
+  panel.classList.add('ua-panel--open');
+  _fetchUsers();
+}
+
+function _closeUserActivity() {
+  const panel = document.getElementById('ua-panel');
+  if (!panel) return;
+  panel.setAttribute('aria-hidden', 'true');
+  panel.classList.remove('ua-panel--open');
+}
+
+async function _fetchUsers() {
+  const list = document.getElementById('ua-list');
+  if (!list) return;
+  list.innerHTML = '<p class="ua-empty">Loading…</p>';
+
+  if (!_token) { list.innerHTML = '<p class="ua-empty">Not signed in.</p>'; return; }
+
+  try {
+    const r = await fetch(SYNC_WORKER_URL + '/admin/users', {
+      headers: { Authorization: 'Bearer ' + _token },
+    });
+    if (r.status === 403) { list.innerHTML = '<p class="ua-empty">Access denied.</p>'; return; }
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const { users } = await r.json();
+    _renderUserList(users || []);
+  } catch (e) {
+    list.innerHTML = `<p class="ua-empty">Error: ${_esc(e.message)}</p>`;
+  }
+}
+
+function _renderUserList(users) {
+  const list    = document.getElementById('ua-list');
+  const countEl = document.getElementById('ua-count');
+  if (!list) return;
+
+  if (countEl) countEl.textContent = `${users.length} user${users.length !== 1 ? 's' : ''}`;
+
+  if (!users.length) {
+    list.innerHTML = '<p class="ua-empty">No users found.</p>';
+    return;
+  }
+
+  list.innerHTML = users.map(u => {
+    const initials = (u.name || u.email || '?')
+      .split(/\s+/).map(w => w[0] || '').join('').toUpperCase().slice(0, 2) || '?';
+    const tz      = u.lastSync?.tz   ? `🕐 ${u.lastSync.tz}`   : '';
+    const lang    = u.lastSync?.lang ? ` · ${u.lastSync.lang}` : '';
+    const browser = (u.lastSync?.ua  || '').match(/^(\w+)/)?.[1] || '';
+    const meta    = [tz + lang, browser].filter(Boolean).join(' · ');
+    return `
+      <div class="ua-card">
+        <div class="ua-avatar-placeholder">${_esc(initials)}</div>
+        <div class="ua-info">
+          <div class="ua-name">${_esc(u.name || u.email)}</div>
+          <div class="ua-email">${_esc(u.email)}</div>
+          ${meta ? `<div class="ua-meta">${_esc(meta)}</div>` : ''}
+        </div>
+        <div class="ua-time">${u.syncedAt ? _relTime(u.syncedAt) : '—'}</div>
+      </div>`;
+  }).join('');
+}
+
 // ── Boot ──────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', _initSync);
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('ua-close')?.addEventListener('click', _closeUserActivity);
+});

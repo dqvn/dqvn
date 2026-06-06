@@ -16,7 +16,7 @@ import {
   RSS_FEED_URL, RSS_CACHE_KEY, RSS_MAX, RSS_FETCH_TTL, RSS_REDIS_TTL,
   PODCAST_FEED_URL, PODCAST_CACHE_KEY, PODCAST_MAX, PODCAST_FETCH_TTL, PODCAST_REDIS_TTL,
   reply,
-  redisGet, redisSet, redisPush, redisLRange, redisLLen,
+  redisGet, redisSet, redisPush, redisLRange, redisLLen, redisScanKeys,
   verifyGoogleJWT,
   srsEncode, srsDecode,
   mergeSRS, mergeMeta, mergeKlanken, mergeVerbs, mergeGame,
@@ -363,6 +363,43 @@ async function handleFeedbackBadge(env, origin) {
   return reply({ total, unseen: Math.max(0, total - (seen || 0)) }, 200, origin);
 }
 
+/**
+ * GET /admin/users — list all users who have ever synced (owner only)
+ * Scans fc:* keys in Redis and returns lightweight user summaries.
+ */
+async function handleAdminUsers(request, env) {
+  const origin = request.headers.get('Origin') || '';
+
+  const auth = request.headers.get('Authorization') || '';
+  if (!auth.startsWith('Bearer ')) return reply({ error: 'Unauthorized' }, 401, origin);
+
+  let caller;
+  try { caller = await verifyGoogleJWT(auth.slice(7), env.GOOGLE_CLIENT_ID); }
+  catch { return reply({ error: 'Invalid token' }, 401, origin); }
+  if (caller.email !== OWNER_EMAIL) return reply({ error: 'Forbidden' }, 403, origin);
+
+  // Scan all user keys (fc:{sub}) in parallel — cap at 100 users
+  const keys = await redisScanKeys(env.UPSTASH_URL, env.UPSTASH_TOKEN, 'fc:*');
+  const results = await Promise.all(
+    keys.slice(0, 100).map(key =>
+      redisGet(env.UPSTASH_URL, env.UPSTASH_TOKEN, key)
+        .then(data => data?.owner ? {
+          name:     data.owner.name  || '',
+          email:    data.owner.email || '',
+          syncedAt: data.syncedAt    || null,
+          lastSync: data.syncLog?.[0] || null,
+        } : null)
+        .catch(() => null)
+    )
+  );
+
+  const users = results
+    .filter(Boolean)
+    .sort((a, b) => (b.syncedAt || 0) - (a.syncedAt || 0));
+
+  return reply({ users, total: users.length }, 200, origin);
+}
+
 // ── Main router ───────────────────────────────────────────────────────────────
 
 /**
@@ -404,6 +441,11 @@ export default {
     if (url.pathname === '/feedback/badge') {
       if (request.method !== 'GET') return reply({ error: 'Method not allowed' }, 405, origin);
       return handleFeedbackBadge(env, origin);
+    }
+
+    if (url.pathname === '/admin/users') {
+      if (request.method !== 'GET') return reply({ error: 'Method not allowed' }, 405, origin);
+      return handleAdminUsers(request, env);
     }
 
     return reply({ error: 'Not found' }, 404, origin);

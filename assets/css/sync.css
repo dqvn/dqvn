@@ -213,6 +213,81 @@
     .left-menu .sync-signin-row { padding: 8px 16px; }
 }
 
+/* ── User Activity Panel ────────────────────────────────────────────────── */
+.ua-panel {
+    position: fixed;
+    top: 0; right: 0;
+    width: 340px; max-width: 100vw;
+    height: 100vh;
+    background: #fff;
+    border-left: 1px solid #e2e8f0;
+    box-shadow: -8px 0 32px rgba(0,0,0,.12);
+    z-index: 900;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform .28s cubic-bezier(.4,0,.2,1);
+    overflow: hidden;
+}
+.ua-panel--open { transform: translateX(0); }
+.ua-panel[aria-hidden="true"] { pointer-events: none; }
+
+.ua-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 18px;
+    border-bottom: 1px solid #f1f5f9;
+    flex-shrink: 0;
+}
+.ua-title { font-size: .9rem; font-weight: 700; color: #1e293b; }
+.ua-count  { margin-left: 8px; font-size: .72rem; color: #94a3b8; font-weight: 500; }
+
+.ua-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.ua-empty {
+    text-align: center;
+    color: #94a3b8;
+    font-size: .82rem;
+    padding: 32px 0;
+}
+.ua-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+.ua-avatar-placeholder {
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, #7c3aed, #c084fc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: .82rem;
+    letter-spacing: -.5px;
+}
+.ua-info { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.ua-name  { font-size: .82rem; font-weight: 600; color: #1e293b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ua-email { font-size: .7rem;  color: #64748b;  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ua-meta  { font-size: .66rem; color: #94a3b8;  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 1px; }
+.ua-time  { font-size: .68rem; color: #94a3b8;  flex-shrink: 0; }
+
+.sync-dd-users                 { color: #059669; }
+.sync-dd-users:hover           { background: #f0fdf4; }
+
 /* ── Language toggle ─────────────────────────────────────────────────── */
 .sync-dd-lang { border-top: 1px solid #f1f5f9; }
 

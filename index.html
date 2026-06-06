@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/css/portal.css?v=7">
+  <link rel="stylesheet" href="assets/css/portal.css?v=8">
 </head>
 <body>
 
@@ -77,6 +77,18 @@
     </div>
     <div id="fba-list" class="fba-list"></div>
     <div id="fba-pager" class="fba-pager"></div>
+  </div>
+
+  <!-- ══ USER ACTIVITY PANEL (owner only) ══ -->
+  <div id="ua-panel" class="ua-panel" aria-hidden="true">
+    <div class="ua-head">
+      <div>
+        <span class="ua-title">👥 Active Users</span>
+        <span class="ua-count" id="ua-count"></span>
+      </div>
+      <button class="fb-x" id="ua-close" aria-label="Close">×</button>
+    </div>
+    <div id="ua-list" class="ua-list"></div>
   </div>
 
   <!-- ══ HERO ══ -->
