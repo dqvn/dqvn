@@ -156,6 +156,16 @@
     <!-- ── Progress ── -->
     <div class="sec-head reveal">
       <h2 data-i18n="sec_voortgang">Voortgang</h2>
+      <button class="info-btn" id="prog-info-btn" onclick="toggleProgInfo()" title="Hoe werkt dit?">ℹ️</button>
+    </div>
+    <div id="prog-info" class="prog-info-panel hidden reveal">
+      <ul class="winfo-list">
+        <li data-i18n-html="pinfo_streak">🔥 <b>Reeks</b> — het aantal opeenvolgende dagen dat je dit onderdeel hebt geoefend.</li>
+        <li data-i18n-html="pinfo_miss"><b>Mis een dag</b> — de reeks wordt direct gereset; oefen elke dag om hem te bewaren.</li>
+        <li data-i18n-html="pinfo_bar"><b>Voortgangsbalk</b> — toont hoeveel van het totale doel je hebt bereikt.</li>
+        <li data-i18n-html="pinfo_xp"><b>XP</b> — cumulatieve punten die nooit resetten; een maatstaf voor je totale inspanning.</li>
+        <li data-i18n-html="pinfo_sync"><b>Sync</b> — voortgang wordt automatisch gesynchroniseerd als je bent aangemeld.</li>
+      </ul>
     </div>
     <div class="prog-grid reveal" id="prog-grid">
       <!-- filled by renderDashboard() -->

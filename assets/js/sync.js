@@ -221,6 +221,13 @@ async function syncNow(silent = false) {
 
     const merged = await res.json();
 
+    // Persist isAdmin flag returned by the server — no email ever stored in client code
+    if (typeof merged.isAdmin === 'boolean' && _user) {
+      _user.isAdmin = merged.isAdmin;
+      try { localStorage.setItem(_KEY_USER, JSON.stringify(_user)); } catch {}
+      _renderSyncUI();
+    }
+
     // Write merged data back for each key
     // Guard works for both objects ({}) and arrays ([]) — check length on whichever it is
     for (const [field, lsKey] of Object.entries(_SYNC_KEYS)) {
@@ -351,7 +358,7 @@ function _renderSyncUI() {
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             <span data-i18n="lang_switch">${_getLangLabel()}</span>
           </button>
-          ${_user.email === 'dqvn2002@gmail.com' ? `
+          ${_user.isAdmin === true ? `
           <button class="sync-dd-item sync-dd-admin" id="sync-admin-btn">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg>
             Feedback Inbox

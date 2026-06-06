@@ -49,5 +49,10 @@
   "plan_acc_f6": "Meerdere apparaten, één voortgang",
   "plan_acc_f7": "Automatische back-up — nooit voortgang kwijtraken",
   "plan_acc_f8": "📹 Video Lessen &amp; 🤖 AI Spreekcoach <span class=\"feat-soon-tag\">Binnenkort</span>",
+  "pinfo_streak": "🔥 <b>Reeks</b> — het aantal opeenvolgende dagen dat je dit onderdeel hebt geoefend.",
+  "pinfo_miss": "<b>Mis een dag</b> — de reeks wordt direct gereset; oefen elke dag om hem te bewaren.",
+  "pinfo_bar": "<b>Voortgangsbalk</b> — toont hoeveel van het totale doel je hebt bereikt.",
+  "pinfo_xp": "<b>XP</b> — cumulatieve punten die nooit resetten; een maatstaf voor je totale inspanning.",
+  "pinfo_sync": "<b>Sync</b> — voortgang wordt automatisch gesynchroniseerd als je bent aangemeld.",
   "lang_switch": "🇬🇧 English"
 }
