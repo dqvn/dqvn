@@ -405,16 +405,18 @@ function computeTodayTasks() {
 
   const candidates = [];
 
-  /* VANSTART — always candidate; high priority for beginners or active learners */
+  /* VANSTART — always a candidate; suppressed only when the full course is done */
   {
     const vsLastLesson   = vsData.lastLesson || null;
     const vsStreak       = vsData.streak     || 0;
     const vsStudiedToday = (vsData.lastDate || '') === today;
     const vsGap          = _daysBetween(vsData.lastDate || null, today);
     const hasStarted     = !!vsLastLesson;
+    const vsCourseIdx    = _vsIdx(vsLastLesson);
+    const vsCompleted    = hasStarted && vsCourseIdx >= _VS_TOTAL - 1;
 
-    if (isBeginner || hasStarted) {
-      let score = isBeginner ? 80 : 35;
+    if (!vsCompleted) {
+      let score = (isBeginner || !hasStarted) ? 80 : 35;
       let reason, urgency = 'normal';
 
       if (vsStudiedToday) {
