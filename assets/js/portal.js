@@ -5,28 +5,28 @@
    four examined skills: Lezen · Luisteren · Schrijven · Spreken            */
 const TOOLS = [
   /* ── Taalkennis: vocabulary & grammar that underpin all four skills ── */
-  { href:'/dqvn/startnl',   icon:'📖', nl:'Vocabulaire',    en:'Woordenlijst & flashcards',             color:'#2563eb', badge:'Actief', group:'🏗️ Taalkennis'        },
-  { href:'/dqvn/vanstart',  icon:'🚀', nl:'VanStart',       en:'NT2 beginnerscursus',                   color:'#059669', badge:'Actief', group:'🏗️ Taalkennis'        },
-  { href:'/dqvn/grammar',   icon:'📚', nl:'Grammatica',     en:'Regels & uitleg',                       color:'#b45309',                 group:'🏗️ Taalkennis'        },
-  { href:'/dqvn/verbs',     icon:'🔄', nl:'Werkwoorden',    en:'Vervoeging oefenen',                    color:'#dc2626', badge:'Actief', group:'🏗️ Taalkennis'        },
-  { href:'/dqvn/kids',      icon:'🧒', nl:'Kids',           en:'Kinderen woordenschat',                 color:'#16a34a', badge:'Nieuw',  group:'🏗️ Taalkennis'        },
-  { href:'/dqvn/number',    icon:'🔢', nl:'Getallen',       en:'Leer tellen van 1 tot 100',             color:'#ea580c', badge:'Nieuw',  group:'🏗️ Taalkennis'        },
+  { href:'/dqvn/startnl',   icon:'📖', nl:'Vocabulaire',    nameEn:'Vocabulary',        en:'Woordenlijst & flashcards',             descEn:'Word list & flashcards',              color:'#2563eb', badge:'Actief', group:'🏗️ Taalkennis'        },
+  { href:'/dqvn/vanstart',  icon:'🚀', nl:'VanStart',       nameEn:'VanStart',          en:'NT2 beginnerscursus',                   descEn:'NT2 beginner course',                 color:'#059669', badge:'Actief', group:'🏗️ Taalkennis'        },
+  { href:'/dqvn/grammar',   icon:'📚', nl:'Grammatica',     nameEn:'Grammar',           en:'Regels & uitleg',                       descEn:'Rules & explanations',                color:'#b45309',                 group:'🏗️ Taalkennis'        },
+  { href:'/dqvn/verbs',     icon:'🔄', nl:'Werkwoorden',    nameEn:'Verbs',             en:'Vervoeging oefenen',                    descEn:'Conjugation practice',                color:'#dc2626', badge:'Actief', group:'🏗️ Taalkennis'        },
+  { href:'/dqvn/kids',      icon:'🧒', nl:'Kids',           nameEn:'Kids',              en:'Kinderen woordenschat',                 descEn:"Children's vocabulary",               color:'#16a34a', badge:'Nieuw',  group:'🏗️ Taalkennis'        },
+  { href:'/dqvn/number',    icon:'🔢', nl:'Getallen',       nameEn:'Numbers',           en:'Leer tellen van 1 tot 100',             descEn:'Learn to count from 1 to 100',        color:'#ea580c', badge:'Nieuw',  group:'🏗️ Taalkennis'        },
 
   /* ── Leesvaardigheid: read & understand Dutch texts ─────────────── */
-  { href:'/dqvn/stories',   icon:'📕', nl:'Kinderverhalen', en:'Interactieve verhalen voor kinderen',   color:'#6A67CE',                 group:'📖 Leesvaardigheid'   },
-  { href:'/dqvn/stories2',  icon:'📖', nl:'Korte Verhalen', en:'10 beginnersverhalen met woordenschat', color:'#7c3aed', badge:'Nieuw',  group:'📖 Leesvaardigheid'   },
-  { href:'/dqvn/rss',       icon:'📰', nl:'Nieuws',         en:'Lees echt Nederlands nieuws',           color:'#0891b2', badge:'Nieuw',  group:'📖 Leesvaardigheid'   },
+  { href:'/dqvn/stories',   icon:'📕', nl:'Kinderverhalen', nameEn:"Children's Stories",en:'Interactieve verhalen voor kinderen',   descEn:'Interactive stories for children',    color:'#6A67CE',                 group:'📖 Leesvaardigheid'   },
+  { href:'/dqvn/stories2',  icon:'📖', nl:'Korte Verhalen', nameEn:'Short Stories',     en:'10 beginnersverhalen met woordenschat', descEn:'10 beginner stories with vocabulary', color:'#7c3aed', badge:'Nieuw',  group:'📖 Leesvaardigheid'   },
+  { href:'/dqvn/rss',       icon:'📰', nl:'Nieuws',         nameEn:'News',              en:'Lees echt Nederlands nieuws',           descEn:'Read real Dutch news',                color:'#0891b2', badge:'Nieuw',  group:'📖 Leesvaardigheid'   },
 
   /* ── Luistervaardigheid: understand spoken Dutch ─────────────────── */
-  { href:'/dqvn/klanken',   icon:'🎵', nl:'Klanken',        en:'Uitspraak & Nederlandse klanken',       color:'#7c3aed', badge:'Actief', group:'🎧 Luistervaardigheid' },
-  { href:'/dqvn/podcast',   icon:'🎧', nl:'Podcast',        en:'Met het Oog op Morgen – NPO Radio 1',   color:'#9b5de5', badge:'Nieuw',  group:'🎧 Luistervaardigheid' },
+  { href:'/dqvn/klanken',   icon:'🎵', nl:'Klanken',        nameEn:'Sounds',            en:'Uitspraak & Nederlandse klanken',       descEn:'Pronunciation & Dutch sounds',        color:'#7c3aed', badge:'Actief', group:'🎧 Luistervaardigheid' },
+  { href:'/dqvn/podcast',   icon:'🎧', nl:'Podcast',        nameEn:'Podcast',           en:'Met het Oog op Morgen – NPO Radio 1',   descEn:'Met het Oog op Morgen – NPO Radio 1', color:'#9b5de5', badge:'Nieuw',  group:'🎧 Luistervaardigheid' },
 
   /* ── Schrijfvaardigheid: write correct Dutch sentences ───────────── */
-  { href:'/dqvn/sentence',  icon:'✏️', nl:'Zinnen Bouwen',  en:'Schrijf & bouw Nederlandse zinnen',     color:'#06d6a0', badge:'Nieuw',  group:'✍️ Schrijfvaardigheid' },
+  { href:'/dqvn/sentence',  icon:'✏️', nl:'Zinnen Bouwen',  nameEn:'Build Sentences',   en:'Schrijf & bouw Nederlandse zinnen',     descEn:'Write & build Dutch sentences',       color:'#06d6a0', badge:'Nieuw',  group:'✍️ Schrijfvaardigheid' },
 
   /* ── Spreekvaardigheid: speak & have conversations in Dutch ─────── */
-  { href:'/dqvn/dialogues', icon:'💬', nl:'Dialogen',       en:'Gespreksoefening met rolverdeling',     color:'#0891b2',                 group:'🗣️ Spreekvaardigheid' },
-  { href:'/dqvn/wheel',     icon:'🎡', nl:'Draairad',       en:'Willekeurige spreekvragen',             color:'#9b5de5', badge:'Nieuw',  group:'🗣️ Spreekvaardigheid' },
+  { href:'/dqvn/dialogues', icon:'💬', nl:'Dialogen',       nameEn:'Dialogues',         en:'Gespreksoefening met rolverdeling',     descEn:'Conversation practice with roles',    color:'#0891b2',                 group:'🗣️ Spreekvaardigheid' },
+  { href:'/dqvn/wheel',     icon:'🎡', nl:'Draairad',       nameEn:'Spin Wheel',        en:'Willekeurige spreekvragen',             descEn:'Random speaking questions',           color:'#9b5de5', badge:'Nieuw',  group:'🗣️ Spreekvaardigheid' },
 ];
 
 /* ─── Helpers ─────────────────────────────────────────────────── */
@@ -34,6 +34,20 @@ function readJSON(key, fallback) {
   try { return JSON.parse(localStorage.getItem(key)) ?? fallback; }
   catch { return fallback; }
 }
+
+/* i18n: picks Dutch or English string based on UI language.
+   window._i18nLang is set synchronously by i18n.js before any JS runs,
+   so _pt() is safe to call at boot time even before the locale JSON loads. */
+const _pt = (nl, en) => window._i18nLang === 'en' ? en : nl;
+
+/* Tool-group label translations (Dutch → English) */
+const _groupEn = {
+  '🏗️ Taalkennis':         '🏗️ Language Skills',
+  '📖 Leesvaardigheid':    '📖 Reading Skills',
+  '🎧 Luistervaardigheid': '🎧 Listening Skills',
+  '✍️ Schrijfvaardigheid': '✍️ Writing Skills',
+  '🗣️ Spreekvaardigheid':  '🗣️ Speaking Skills',
+};
 
 /* ─── VanStart lesson helpers ────────────────────────────────── */
 const _VS_LESSONS = [
@@ -123,14 +137,19 @@ function _verbsWeakLesson(verbsStore) {
 /* ─── Personalized greeting ──────────────────────────────────── */
 function applyGreeting() {
   const h    = new Date().getHours();
-  const time = h < 6 ? 'Goedenacht' : h < 12 ? 'Goedemorgen' : h < 18 ? 'Goedemiddag' : 'Goedenavond';
-  const user = readJSON('fc_sync_user', null);
+  const time = h < 6  ? _pt('Goedenacht',   'Good night')
+             : h < 12 ? _pt('Goedemorgen',  'Good morning')
+             : h < 18 ? _pt('Goedemiddag',  'Good afternoon')
+             :           _pt('Goedenavond',  'Good evening');
+  const user  = readJSON('fc_sync_user', null);
   const first = user?.name?.split(/[\s,]+/)?.[0] || '';
   const greet = first ? `${time}, ${first}! 👋` : `${time}! 👋`;
   document.getElementById('portal-greeting').textContent = greet;
   if (first) {
-    document.getElementById('portal-sub').textContent =
-      `Welkom terug, ${first}. Ga verder waar je gebleven bent.`;
+    document.getElementById('portal-sub').textContent = _pt(
+      `Welkom terug, ${first}. Ga verder waar je gebleven bent.`,
+      `Welcome back, ${first}. Continue where you left off.`
+    );
   }
 }
 
@@ -234,78 +253,100 @@ function renderProgress(s) {
   const verbsPct   = Math.min(100, Math.round(s.verbsLearned / s.VERBS_TOTAL    * 100));
   const dlgPct     = Math.min(100, Math.round(s.dlgDone      / s.DLG_TOTAL      * 100));
 
+  const _streak = (n) => _pt(` &nbsp;·&nbsp; 🔥 ${n} dagen`, ` &nbsp;·&nbsp; 🔥 ${n} days`);
+  const _notStarted = (nl, en) => _pt(nl, en);
+
   const cards = [
     {
       href: '/dqvn/startnl', icon: '📖', color: '#2563eb',
-      nl: 'Vocabulaire',
+      nl: _pt('Vocabulaire', 'Vocabulary'),
       pct: vocabPct,
       detail: s.cardsSeen > 0
-        ? `${s.cardsMastered} beheerst &nbsp;·&nbsp; ${s.cardsSeen} gezien`
-        : 'Nog niet begonnen — start de flashcards!',
+        ? _pt(`${s.cardsMastered} beheerst &nbsp;·&nbsp; ${s.cardsSeen} gezien`,
+              `${s.cardsMastered} mastered &nbsp;·&nbsp; ${s.cardsSeen} seen`)
+        : _notStarted('Nog niet begonnen — start de flashcards!',
+                      'Not started yet — start the flashcards!'),
     },
     {
       href: '/dqvn/klanken', icon: '🎵', color: '#7c3aed',
-      nl: 'Klanken',
+      nl: _pt('Klanken', 'Sounds'),
       pct: klankenPct,
       detail: s.klankenDone > 0
-        ? `${s.klankenDone} van ~${s.KLANKEN_TOTAL} klanken geoefend`
-        : 'Nog niet begonnen — leer de uitspraak!',
+        ? _pt(`${s.klankenDone} van ~${s.KLANKEN_TOTAL} klanken geoefend`,
+              `${s.klankenDone} of ~${s.KLANKEN_TOTAL} sounds practiced`)
+        : _notStarted('Nog niet begonnen — leer de uitspraak!',
+                      'Not started yet — learn pronunciation!'),
     },
     {
       href: '/dqvn/vanstart', icon: '🚀', color: '#059669',
       nl: 'VanStart',
       pct: s.vsPct,
       detail: s.vsLastLesson
-        ? `Les ${s.vsIdx + 1}/${_VS_TOTAL} · ${_vsLabel(s.vsLastLesson)}${s.vsStreak > 1 ? ` &nbsp;·&nbsp; 🔥 ${s.vsStreak} dagen` : ''}`
-        : 'Nog niet begonnen — start de NT2 cursus!',
+        ? _pt(`Les ${s.vsIdx + 1}/${_VS_TOTAL} · ${_vsLabel(s.vsLastLesson)}${s.vsStreak > 1 ? _streak(s.vsStreak) : ''}`,
+              `Lesson ${s.vsIdx + 1}/${_VS_TOTAL} · ${_vsLabel(s.vsLastLesson)}${s.vsStreak > 1 ? _streak(s.vsStreak) : ''}`)
+        : _notStarted('Nog niet begonnen — start de NT2 cursus!',
+                      'Not started yet — start the NT2 course!'),
     },
     {
       href: '/dqvn/sentence', icon: '✏️', color: '#06d6a0',
-      nl: 'Zinnen Bouwen',
+      nl: _pt('Zinnen Bouwen', 'Build Sentences'),
       pct: Math.min(100, Math.round((s.sentToday || 0) / (s.SENT_GOAL || 5) * 100)),
       detail: (s.sentToday || 0) > 0
-        ? `${s.sentToday}/5 vandaag${s.sentToday >= s.SENT_GOAL ? ' 🎉' : ' 🔔'}${s.sentStreak > 0 ? ` &nbsp;·&nbsp; 🔥 ${s.sentStreak} dagen` : ''} &nbsp;·&nbsp; ⭐ ${s.sentXP} XP`
-        : `Nog niet begonnen — schrijf 5 zinnen per dag!${s.sentXP > 0 ? ` &nbsp;·&nbsp; ⭐ ${s.sentXP} XP totaal` : ''}`,
+        ? _pt(`${s.sentToday}/5 vandaag${s.sentToday >= s.SENT_GOAL ? ' 🎉' : ' 🔔'}${s.sentStreak > 0 ? _streak(s.sentStreak) : ''} &nbsp;·&nbsp; ⭐ ${s.sentXP} XP`,
+              `${s.sentToday}/5 today${s.sentToday >= s.SENT_GOAL ? ' 🎉' : ' 🔔'}${s.sentStreak > 0 ? _streak(s.sentStreak) : ''} &nbsp;·&nbsp; ⭐ ${s.sentXP} XP`)
+        : _notStarted(
+            `Nog niet begonnen — schrijf 5 zinnen per dag!${s.sentXP > 0 ? ` &nbsp;·&nbsp; ⭐ ${s.sentXP} XP totaal` : ''}`,
+            `Not started yet — write 5 sentences per day!${s.sentXP > 0 ? ` &nbsp;·&nbsp; ⭐ ${s.sentXP} XP total` : ''}`
+          ),
     },
     {
       href: '/dqvn/verbs', icon: '🔄', color: '#dc2626',
-      nl: 'Werkwoorden',
+      nl: _pt('Werkwoorden', 'Verbs'),
       pct: verbsPct,
       detail: s.verbsLearned > 0
-        ? `${s.verbsLearned} werkwoorden geleerd`
-        : 'Nog niet begonnen — oefen werkwoorden!',
+        ? _pt(`${s.verbsLearned} werkwoorden geleerd`, `${s.verbsLearned} verbs learned`)
+        : _notStarted('Nog niet begonnen — oefen werkwoorden!',
+                      'Not started yet — practice verbs!'),
     },
     {
       href: '/dqvn/dialogues', icon: '💬', color: '#0891b2',
-      nl: 'Dialogen',
+      nl: _pt('Dialogen', 'Dialogues'),
       pct: dlgPct,
       detail: s.dlgDone > 0
-        ? `${s.dlgDone} dialogen geoefend${s.dlgStreak > 1 ? ' &nbsp;·&nbsp; 🔥 ' + s.dlgStreak + ' dagen' : ''}`
-        : 'Nog niet begonnen — oefen gesprekken!',
+        ? _pt(`${s.dlgDone} dialogen geoefend${s.dlgStreak > 1 ? ' &nbsp;·&nbsp; 🔥 ' + s.dlgStreak + ' dagen' : ''}`,
+              `${s.dlgDone} dialogues practiced${s.dlgStreak > 1 ? ' &nbsp;·&nbsp; 🔥 ' + s.dlgStreak + ' days' : ''}`)
+        : _notStarted('Nog niet begonnen — oefen gesprekken!',
+                      'Not started yet — practice conversations!'),
     },
     {
       href: '/dqvn/stories2', icon: '📖', color: '#8b5cf6',
-      nl: 'Verhalen',
+      nl: _pt('Verhalen', 'Stories'),
       pct: Math.min(100, Math.round((s.s2quizDone || 0) / (s.S2_TOTAL || 10) * 100)),
       detail: (s.s2quizDone || 0) > 0
-        ? `${s.s2quizDone} van ${s.S2_TOTAL} quizzen voltooid`
-        : 'Nog niet begonnen — lees korte verhalen!',
+        ? _pt(`${s.s2quizDone} van ${s.S2_TOTAL} quizzen voltooid`,
+              `${s.s2quizDone} of ${s.S2_TOTAL} quizzes completed`)
+        : _notStarted('Nog niet begonnen — lees korte verhalen!',
+                      'Not started yet — read short stories!'),
     },
     {
       href: '/dqvn/rss', icon: '📰', color: '#0891b2',
-      nl: 'Nieuws',
+      nl: _pt('Nieuws', 'News'),
       pct: Math.min(100, Math.round((s.rssRead || 0) / (s.RSS_TARGET || 30) * 100)),
       detail: (s.rssRead || 0) > 0
-        ? `${s.rssRead} artikelen gelezen${s.rssRead >= s.RSS_TARGET ? ' — doel bereikt! 🎉' : ` van ${s.RSS_TARGET}`}`
-        : 'Nog niet begonnen — lees echt nieuws!',
+        ? _pt(`${s.rssRead} artikelen gelezen${s.rssRead >= s.RSS_TARGET ? ' — doel bereikt! 🎉' : ` van ${s.RSS_TARGET}`}`,
+              `${s.rssRead} articles read${s.rssRead >= s.RSS_TARGET ? ' — goal reached! 🎉' : ` of ${s.RSS_TARGET}`}`)
+        : _notStarted('Nog niet begonnen — lees echt nieuws!',
+                      'Not started yet — read real news!'),
     },
     {
       href: '/dqvn/podcast', icon: '🎧', color: '#9b5de5',
       nl: 'Podcast',
       pct: Math.min(100, Math.round((s.podListened || 0) / (s.PODCAST_TARGET || 20) * 100)),
       detail: (s.podListened || 0) > 0
-        ? `${s.podListened} afleveringen beluisterd${s.podListened >= s.PODCAST_TARGET ? ' — doel bereikt! 🎉' : ` van ${s.PODCAST_TARGET}`}`
-        : 'Nog niet begonnen — luister naar podcasts!',
+        ? _pt(`${s.podListened} afleveringen beluisterd${s.podListened >= s.PODCAST_TARGET ? ' — doel bereikt! 🎉' : ` van ${s.PODCAST_TARGET}`}`,
+              `${s.podListened} episodes listened${s.podListened >= s.PODCAST_TARGET ? ' — goal reached! 🎉' : ` of ${s.PODCAST_TARGET}`}`)
+        : _notStarted('Nog niet begonnen — luister naar podcasts!',
+                      'Not started yet — listen to podcasts!'),
     },
   ];
 
@@ -341,21 +382,27 @@ function renderTools() {
   const numTools = TOOLS.length;
   const numCats  = Object.keys(groups).length;
   const badge = document.getElementById('tools-badge');
-  if (badge) badge.textContent = `${numTools} tools · ${numCats} categorieën`;
+  if (badge) badge.textContent = _pt(
+    `${numTools} tools · ${numCats} categorieën`,
+    `${numTools} tools · ${numCats} categories`
+  );
+
+  const badgeActive = _pt('Actief', 'Active');
+  const badgeNew    = _pt('Nieuw',  'New');
 
   const cardHtml = t => `
     <a class="tool-card" href="${t.href}" style="--tc:${t.color}">
       <div class="tc-icon">${t.icon}</div>
-      <div class="tc-name">${t.nl}</div>
-      <div class="tc-desc">${t.en}</div>
-      ${t.badge === 'Actief' ? `<div class="tc-pill tc-pill-active">Actief</div>` : ''}
-      ${t.badge === 'Nieuw'  ? `<div class="tc-pill tc-pill-new">Nieuw</div>`    : ''}
+      <div class="tc-name">${_pt(t.nl, t.nameEn || t.nl)}</div>
+      <div class="tc-desc">${_pt(t.en, t.descEn || t.en)}</div>
+      ${t.badge === 'Actief' ? `<div class="tc-pill tc-pill-active">${badgeActive}</div>` : ''}
+      ${t.badge === 'Nieuw'  ? `<div class="tc-pill tc-pill-new">${badgeNew}</div>`    : ''}
     </a>`;
 
   document.getElementById('tools-container').innerHTML =
     Object.entries(groups).map(([grp, tools]) => `
       <div class="tools-group">
-        <div class="tools-group-lbl">${grp}</div>
+        <div class="tools-group-lbl">${_pt(grp, _groupEn[grp] || grp)}</div>
         <div class="tools-grid">${tools.map(cardHtml).join('')}</div>
       </div>
     `).join('');
@@ -562,11 +609,11 @@ async function renderLearningPath() {
   const content = document.getElementById('leerpad-content');
   const badge   = document.getElementById('leerpad-badge');
 
-  content.innerHTML = '<div style="color:var(--text-3);font-size:.8rem;padding:12px 0">Leerpad laden…</div>';
+  content.innerHTML = `<div style="color:var(--text-3);font-size:.8rem;padding:12px 0">${_pt('Leerpad laden…', 'Loading learning path…')}</div>`;
 
   const plan = await _fetchPlan();
   if (!plan) {
-    content.innerHTML = '<div style="color:var(--text-3);font-size:.8rem;padding:12px 0">Leerpad niet beschikbaar.</div>';
+    content.innerHTML = `<div style="color:var(--text-3);font-size:.8rem;padding:12px 0">${_pt('Leerpad niet beschikbaar.', 'Learning path unavailable.')}</div>`;
     return;
   }
 
@@ -578,11 +625,11 @@ async function renderLearningPath() {
       <div class="lp-reward-banner">
         <div class="lp-reward-badge">🏆</div>
         <div>
-          <div class="lp-reward-title">A2 Voltooid!</div>
-          <div class="lp-reward-msg">Je hebt het volledige leerpad afgerond. Proficiat!</div>
+          <div class="lp-reward-title">${_pt('A2 Voltooid!', 'A2 Completed!')}</div>
+          <div class="lp-reward-msg">${_pt('Je hebt het volledige leerpad afgerond. Proficiat!', "You've completed the full learning path. Congratulations!")}</div>
         </div>
       </div>`;
-    if (badge) badge.textContent = 'Voltooid';
+    if (badge) badge.textContent = _pt('Voltooid', 'Completed');
     return;
   }
 
@@ -615,7 +662,10 @@ async function renderLearningPath() {
 
   const optHtml = optional.length ? `
     <details class="lp-optional-toggle">
-      <summary>+ ${optional.length} optionele taak${optional.length !== 1 ? 'en' : ''}</summary>
+      <summary>${_pt(
+        `+ ${optional.length} optionele taak${optional.length !== 1 ? 'en' : ''}`,
+        `+ ${optional.length} optional task${optional.length !== 1 ? 's' : ''}`
+      )}</summary>
       ${optional.map(taskRow).join('')}
     </details>` : '';
 
@@ -625,8 +675,14 @@ async function renderLearningPath() {
   const unitTools   = new Set(unit.tasks.map(t => t.tool));
   const todayTasks  = computeTodayTasks().filter(t => unitTools.has(t.id));
   const activeTasks = todayTasks.filter(t => !t.done);
-  const urgLabel    = { streak:'🔥 Reeks bewaren', due:'⏰ Kaarten klaar', inprog:'▶ Bezig', foundational:'🏗 Basis', normal: null };
-  const urgCls      = { streak:'today-urg-streak', due:'today-urg-due', inprog:'today-urg-inprog', foundational:'today-urg-found', normal: null };
+  const urgLabel = {
+    streak:       _pt('🔥 Reeks bewaren', '🔥 Keep streak'),
+    due:          _pt('⏰ Kaarten klaar', '⏰ Cards ready'),
+    inprog:       _pt('▶ Bezig',          '▶ In progress'),
+    foundational: _pt('🏗 Basis',         '🏗 Foundation'),
+    normal: null,
+  };
+  const urgCls = { streak:'today-urg-streak', due:'today-urg-due', inprog:'today-urg-inprog', foundational:'today-urg-found', normal: null };
 
   let todayHtml = '';
   if (todayTasks.length > 0) {
@@ -635,8 +691,14 @@ async function renderLearningPath() {
       todayHtml = `
         <div class="today-done-card">
           <div class="today-done-ico">🎉</div>
-          <div class="today-done-text">Goed bezig${first ? ', ' + first : ''}! Sessietaken voor vandaag klaar.</div>
-          <div class="today-done-sub">Je bent op schema — kom morgen terug voor de volgende stap.</div>
+          <div class="today-done-text">${_pt(
+            `Goed bezig${first ? ', ' + first : ''}! Sessietaken voor vandaag klaar.`,
+            `Well done${first ? ', ' + first : ''}! Today's session tasks are complete.`
+          )}</div>
+          <div class="today-done-sub">${_pt(
+            'Je bent op schema — kom morgen terug voor de volgende stap.',
+            "You're on track — come back tomorrow for the next step."
+          )}</div>
         </div>`;
     } else {
       todayHtml = `<div class="today-grid">${activeTasks.map(t => {
@@ -666,7 +728,7 @@ async function renderLearningPath() {
         <div class="lp-unit-icon">${unit.icon}</div>
         <div class="lp-unit-meta">
           <div class="lp-unit-title">${unit.title}</div>
-          <div class="lp-unit-sub">~${unit.estimated_days} dagen · ${unit.description}</div>
+          <div class="lp-unit-sub">${_pt(`~${unit.estimated_days} dagen`, `~${unit.estimated_days} days`)} · ${unit.description}</div>
         </div>
         <span class="lp-unit-pct">${pct}%</span>
       </div>
@@ -767,17 +829,24 @@ function computeTodayTasks() {
 
       if (vsStudiedToday) {
         score -= 40;
-        reason = `${_vsLabel(vsLastLesson) || 'VanStart'} geoefend vandaag`;
+        reason = _pt(`${_vsLabel(vsLastLesson) || 'VanStart'} geoefend vandaag`,
+                     `${_vsLabel(vsLastLesson) || 'VanStart'} practiced today`);
       } else if (hasStarted) {
         if (vsStreak > 0) {
-          score += 18; reason = `Bewaar je ${vsStreak}-daagse reeks!`; urgency = 'streak';
+          score += 18;
+          reason = _pt(`Bewaar je ${vsStreak}-daagse reeks!`, `Keep your ${vsStreak}-day streak!`);
+          urgency = 'streak';
         } else if (vsGap >= 3) {
-          score += 14; reason = `${vsGap} dagen niet geoefend · ${_vsLabel(vsLastLesson)}`;
+          score += 14;
+          reason = _pt(`${vsGap} dagen niet geoefend · ${_vsLabel(vsLastLesson)}`,
+                       `${vsGap} days not practiced · ${_vsLabel(vsLastLesson)}`);
         } else {
-          reason = `Verder met ${_vsLabel(vsTarget)}`;
+          reason = _pt(`Verder met ${_vsLabel(vsTarget)}`, `Continue with ${_vsLabel(vsTarget)}`);
         }
       } else {
-        score = 80; reason = 'Start je NT2 cursus — de basis!'; urgency = 'foundational';
+        score = 80;
+        reason = _pt('Start je NT2 cursus — de basis!', 'Start your NT2 course — the foundation!');
+        urgency = 'foundational';
       }
       if (isMorning) score += 5;
 
@@ -794,8 +863,10 @@ function computeTodayTasks() {
     const pct = klankenDone / KLANKEN_TOTAL;
     let score = isBeginner ? 65 : (klankenDone === 0 ? 45 : 18);
     let reason = klankenDone === 0
-      ? 'Leer de Nederlandse klanken — basis van uitspraak!'
-      : `${klankenDone} van ${KLANKEN_TOTAL} klanken geoefend`;
+      ? _pt('Leer de Nederlandse klanken — basis van uitspraak!',
+            'Learn Dutch sounds — the foundation of pronunciation!')
+      : _pt(`${klankenDone} van ${KLANKEN_TOTAL} klanken geoefend`,
+            `${klankenDone} of ${KLANKEN_TOTAL} sounds practiced`);
     if (klankenDone < 12) score += 10;
     if (pct > 0.8)        score -= 15;
     if (isMorning)        score += 4;
@@ -811,15 +882,21 @@ function computeTodayTasks() {
     /* Deep-link: chapter with most due cards; else first chapter with unseen words */
     const vocabTarget = _vocabDeepTarget(srs, now);
 
-    let score = 22, reason = 'Oefen je woordenschat', urgency = 'normal';
+    let score = 22, reason = _pt('Oefen je woordenschat', 'Practice your vocabulary'), urgency = 'normal';
     if (cardsDue > 0) {
       score += 52;
-      reason = `${cardsDue} kaart${cardsDue !== 1 ? 'en' : ''} wacht${cardsDue === 1 ? '' : 'en'} op herhaling`;
+      reason = _pt(
+        `${cardsDue} kaart${cardsDue !== 1 ? 'en' : ''} wacht${cardsDue === 1 ? '' : 'en'} op herhaling`,
+        `${cardsDue} card${cardsDue !== 1 ? 's' : ''} waiting for review`
+      );
       urgency = 'due';
     }
     if (fcStreak > 0 && !fcReviewedToday) {
       score += 20;
-      if (urgency === 'normal') { reason = `Bewaar je ${fcStreak}-daagse reeks!`; urgency = 'streak'; }
+      if (urgency === 'normal') {
+        reason = _pt(`Bewaar je ${fcStreak}-daagse reeks!`, `Keep your ${fcStreak}-day streak!`);
+        urgency = 'streak';
+      }
     }
     if (cardsDue > 10)                    score += 8;
     if (fcReviewedToday && cardsDue === 0) score -= 45;
@@ -837,18 +914,21 @@ function computeTodayTasks() {
 
   /* ZINNEN BOUWEN */
   {
-    let score = 18, reason = 'Schrijf 5 Nederlandse zinnen vandaag',
+    let score = 18,
+        reason  = _pt('Schrijf 5 Nederlandse zinnen vandaag', 'Write 5 Dutch sentences today'),
         urgency = 'normal', progress = null;
     if (sentCount > 0 && !sentGoalDone) {
       score += 38;
-      reason = `${sentCount}/${SENT_GOAL} zinnen vandaag — ga verder!`;
+      reason = _pt(`${sentCount}/${SENT_GOAL} zinnen vandaag — ga verder!`,
+                   `${sentCount}/${SENT_GOAL} sentences today — keep going!`);
       urgency = 'inprog';
       progress = { cur: sentCount, max: SENT_GOAL };
     } else if (!sentGoalDone) {
       score += 22;
       if (sentStreak > 0) {
         score += 15;
-        reason = `Bewaar je ${sentStreak}-daagse schrijfreeks!`;
+        reason = _pt(`Bewaar je ${sentStreak}-daagse schrijfreeks!`,
+                     `Keep your ${sentStreak}-day writing streak!`);
         urgency = 'streak';
       }
     }
@@ -867,12 +947,22 @@ function computeTodayTasks() {
     /* Deep-link: lesson with lowest avg correct/seen ratio */
     const weakVerbLesson = _verbsWeakLesson(verbsStore);
 
-    let score = 14, reason = 'Oefen werkwoordvervoeging', urgency = 'normal';
+    let score = 14, reason = _pt('Oefen werkwoordvervoeging', 'Practice verb conjugation'), urgency = 'normal';
     if (!verbsStudiedToday) {
       score += 18;
-      if (verbsStreak > 0)  { score += 18; reason = `Bewaar je ${verbsStreak}-daagse reeks!`; urgency = 'streak'; }
-      if (verbsGap >= 3 && urgency === 'normal') { score += 15; reason = `${verbsGap} dagen niet geoefend`; }
-      if (!verbsLastStudy)  { score += 8;  reason = 'Probeer werkwoorden — essentieel voor NT2!'; }
+      if (verbsStreak > 0) {
+        score += 18;
+        reason = _pt(`Bewaar je ${verbsStreak}-daagse reeks!`, `Keep your ${verbsStreak}-day streak!`);
+        urgency = 'streak';
+      }
+      if (verbsGap >= 3 && urgency === 'normal') {
+        score += 15;
+        reason = _pt(`${verbsGap} dagen niet geoefend`, `${verbsGap} days not practiced`);
+      }
+      if (!verbsLastStudy) {
+        score += 8;
+        reason = _pt('Probeer werkwoorden — essentieel voor NT2!', 'Try verbs — essential for NT2!');
+      }
     } else {
       score -= 28;
     }
@@ -888,11 +978,18 @@ function computeTodayTasks() {
 
   /* DIALOGEN */
   {
-    let score = 13, reason = 'Oefen een gesprek in het Nederlands', urgency = 'normal';
+    let score = 13, reason = _pt('Oefen een gesprek in het Nederlands', 'Practice a conversation in Dutch'), urgency = 'normal';
     if (!dlgPracticedToday) {
       score += 16;
-      if (dlgStreak > 0) { score += 18; reason = `Bewaar je ${dlgStreak}-daagse gespreksreeks!`; urgency = 'streak'; }
-      if (dlgGap >= 3 && urgency === 'normal') { score += 12; reason = `${dlgGap} dagen niet geoefend`; }
+      if (dlgStreak > 0) {
+        score += 18;
+        reason = _pt(`Bewaar je ${dlgStreak}-daagse gespreksreeks!`, `Keep your ${dlgStreak}-day conversation streak!`);
+        urgency = 'streak';
+      }
+      if (dlgGap >= 3 && urgency === 'normal') {
+        score += 12;
+        reason = _pt(`${dlgGap} dagen niet geoefend`, `${dlgGap} days not practiced`);
+      }
     } else {
       score -= 30;
     }
@@ -987,10 +1084,10 @@ function updatePlanCTA() {
   const user = readJSON('fc_sync_user', null);
   if (user) {
     const first = user.name?.split(/[\s,]+/)[0] || user.email || '';
-    btn.textContent = `✓ Aangemeld als ${first}`;
+    btn.textContent = _pt(`✓ Aangemeld als ${first}`, `✓ Signed in as ${first}`);
     btn.className = 'plan-cta plan-cta-done';
   } else {
-    btn.textContent = 'Meld je gratis aan →';
+    btn.textContent = _pt('Meld je gratis aan →', 'Sign up for free →');
     btn.className = 'plan-cta plan-cta-accent';
     btn.onclick = () => {
       if (window.google?.accounts?.id) {
