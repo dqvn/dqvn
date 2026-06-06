@@ -165,6 +165,8 @@
       <button id="btnFontPlus" class="icon-btn" title="Tăng cỡ chữ (Alt+=)" aria-label="Tăng cỡ chữ">A+</button>
       <div class="divider"></div>
       <button id="btnTheme" class="icon-btn" title="Chuyển chủ đề (Alt+T)" aria-label="Chuyển chủ đề">🌓</button>
+      <div class="divider"></div>
+      <div id="google_translate_element"></div>
     </div>
   </header>
 
@@ -243,6 +245,17 @@
       </aside>
     </main>
   </div>
+
+  <!-- Google Translate -->
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        { pageLanguage: 'nl', includedLanguages: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+        'google_translate_element'
+      );
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <!-- Bottom actions -->
   <footer class="bottom-bar">
