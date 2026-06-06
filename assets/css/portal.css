@@ -1212,8 +1212,7 @@ main {
     min-height: 100%;
   }
   #portal-header { padding: 0 16px; height: 56px; }
-  .hdr-sub    { display: none; }
-  .hdr-titles { display: none; }                                    /* logo only — no brand text */
+  .hdr-sub { display: none; }                                       /* subtitle hidden, name stays */
   #portal-header .sync-name { display: none !important; }           /* avatar only — no user name */
   #portal-header .sync-card { padding: 4px 8px 4px 6px !important; } /* tighter pill without name */
   #hero { padding: 38px 16px 34px; }
@@ -1248,30 +1247,32 @@ main {
    FEEDBACK — button, modal, admin
 ══════════════════════════ */
 
-/* ── Header button ── */
-.hdr-fb-btn {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 6px 12px 6px 10px;
-  border: 1.5px solid var(--border);
-  border-radius: var(--r-pill);
-  background: var(--surface);
-  color: var(--text-2);
-  font-size: .78rem;
-  font-weight: 600;
+/* ── Floating feedback button (FAB) ── */
+.fb-fab {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 500;
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: var(--accent);
+  color: #fff;
   cursor: pointer;
-  position: relative;
-  margin-right: 8px;
-  transition: background .15s, border-color .15s, color .15s;
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0.7;
+  box-shadow: 0 4px 18px rgba(234,88,12,.4);
+  transition: opacity .2s, transform .2s, box-shadow .2s;
 }
-.hdr-fb-btn:hover { background: var(--surface-2); border-color: var(--accent); color: var(--accent); }
-.hdr-fb-lbl { display: none; }
-@media (min-width: 500px) { .hdr-fb-lbl { display: inline; } }
+.fb-fab:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  box-shadow: 0 6px 28px rgba(234,88,12,.5);
+}
 
 .hdr-fb-badge {
   position: absolute;
-  top: -5px; right: -5px;
+  top: -4px; right: -4px;
   min-width: 17px; height: 17px;
   padding: 0 4px;
   border-radius: 9px;
