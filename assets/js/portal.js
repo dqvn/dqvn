@@ -49,6 +49,38 @@ const _groupEn = {
   '🗣️ Spreekvaardigheid':  '🗣️ Speaking Skills',
 };
 
+const _LEVEL_NAMES_EN = {
+  A1: 'Dutch Beginners',
+  A2: 'Basic Communication',
+};
+
+const _UNIT_TITLES_EN = {
+  'A1-U1': 'Pronunciation & Phonics',
+  'A1-U2': 'First Words',
+  'A1-U3': 'Greetings & Conversation',
+  'A1-U4': 'Numbers & Time',
+  'A1-U5': 'Family & Home',
+  'A1-U6': 'Food & Shopping',
+  'A1-U7': 'Transport & City',
+  'A1-U8': 'A1 Completion',
+  'A2-U1': 'Verbs & Expansion',
+  'A2-U2': 'Thematic Vocabulary 1',
+  'A2-U3': 'Health & Daily Life',
+  'A2-U4': 'Living in the Netherlands',
+  'A2-U5': 'Communication & Media',
+  'A2-U6': 'Extended Vocabulary',
+  'A2-U7': 'A2 Exam Preparation',
+};
+
+const _TODAY_TOOL_NAME_EN = {
+  vanstart:  'VanStart',
+  klanken:   'Sounds',
+  vocab:     'Vocabulary',
+  sentence:  'Build Sentences',
+  verbs:     'Verbs',
+  dialogues: 'Dialogues',
+};
+
 /* ─── VanStart lesson helpers ────────────────────────────────── */
 const _VS_LESSONS = [
   'thema01','thema02','thema03','thema04','thema05','thema06','thema07','thema08',
@@ -222,6 +254,14 @@ function computeStats() {
     ? Math.min(100, Math.round((vsIdx + 1) / _VS_TOTAL * 100))
     : 0;
 
+  /* Game — total unique words seen across all chapters */
+  const gameData  = readJSON('nl_game_progress_v1', {});
+  const gameWords = Object.values(gameData).reduce((sum, arr) => sum + (Array.isArray(arr) ? arr.length : 0), 0);
+
+  /* Numbers — levels with at least one star */
+  const numData   = readJSON('nl_num_progress', {});
+  const numLevels = Object.values(numData).filter(lp => lp && Math.max(lp.listen || 0, lp.quiz || 0) >= 1).length;
+
   return {
     streak:     meta.streak        || 0,
     cardsSeen,  cardsMastered,
@@ -235,6 +275,7 @@ function computeStats() {
     sentXP:       sentData.xp || 0,
     vsLastLesson, vsStreak, vsPct, vsIdx,
     vsStudiedToday: (vsData.lastDate || '') === today,
+    gameWords, numLevels,
   };
 }
 
@@ -244,6 +285,10 @@ function renderStats(s) {
   document.getElementById('sv-cards').textContent   = s.cardsSeen;
   document.getElementById('sv-klanken').textContent = s.klankenDone;
   document.getElementById('sv-verbs').textContent   = s.verbsLearned;
+  document.getElementById('sv-sent').textContent    = s.sentXP;
+  document.getElementById('sv-vs').textContent      = s.vsPct + '%';
+  document.getElementById('sv-game').textContent    = s.gameWords;
+  document.getElementById('sv-num').textContent     = s.numLevels;
 }
 
 /* ─── Render progress cards ──────────────────────────────────── */
@@ -640,7 +685,9 @@ async function renderLearningPath() {
   const doneCount = required.filter(t => _isTaskMastered(t, prog)).length;
   const pct       = required.length ? Math.round(doneCount / required.length * 100) : 0;
 
-  if (badge) badge.textContent = `${level.cefr} · ${unit.title}`;
+  const unitTitleT = _pt(unit.title, _UNIT_TITLES_EN[unit.id] || unit.title);
+  const levelNameT = _pt(level.name, _LEVEL_NAMES_EN[level.id] || level.name);
+  if (badge) badge.textContent = `${level.cefr} · ${unitTitleT}`;
 
   const levelCls = `lp-${level.id.toLowerCase()}`;
 
@@ -711,7 +758,7 @@ async function renderLearningPath() {
           <a class="today-card" href="${t.href}" style="--tc:${t.color}">
             <div class="today-icon-wrap" style="background:${t.color}18">${t.icon}</div>
             <div class="today-body">
-              <div class="today-name">${t.nl}</div>
+              <div class="today-name">${_pt(t.nl, _TODAY_TOOL_NAME_EN[t.id] || t.nl)}</div>
               <div class="today-reason">${t.reason}</div>
               ${urgHtml}${miniBar}
             </div>
@@ -722,12 +769,12 @@ async function renderLearningPath() {
   }
 
   content.innerHTML = todayHtml + `
-    <div class="lp-level-chip ${levelCls}">${level.icon} ${level.name} — ${unit.title}</div>
+    <div class="lp-level-chip ${levelCls}">${level.icon} ${levelNameT} — ${unitTitleT}</div>
     <div class="lp-unit-card" style="--lp-color:${color}">
       <div class="lp-unit-head">
         <div class="lp-unit-icon">${unit.icon}</div>
         <div class="lp-unit-meta">
-          <div class="lp-unit-title">${unit.title}</div>
+          <div class="lp-unit-title">${unitTitleT}</div>
           <div class="lp-unit-sub">${_pt(`~${unit.estimated_days} dagen`, `~${unit.estimated_days} days`)} · ${unit.description}</div>
         </div>
         <span class="lp-unit-pct">${pct}%</span>
@@ -1072,6 +1119,7 @@ function renderDashboard() {
   applyGreeting();
   const s = computeStats();
   renderStats(s);
+  renderTools();
   renderLearningPath();
   renderProgress(s);
   updatePlanCTA();
@@ -1171,7 +1219,6 @@ function initTTSEnToggle() {
 }
 
 /* ─── Boot ───────────────────────────────────────────────────── */
-renderTools();
 renderDashboard();
 initVolume();
 initSpeed();
