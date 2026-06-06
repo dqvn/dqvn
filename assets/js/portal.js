@@ -1226,6 +1226,96 @@ function toggleProgInfo() {
   btn.style.opacity = open ? '' : '1';
 }
 
+/* ─── Stat-pill tooltips ─────────────────────────────────────── */
+function initStatTips() {
+  const TIPS = {
+    streak: {
+      nl: '<span class="tip-label">🔥 Dagelijkse reeks</span>Opeenvolgende dagen dat je iets hebt geoefend. Mis één dag en de reeks reset naar <b>0</b>. Kom elke dag terug om hem te bewaren!',
+      en: '<span class="tip-label">🔥 Daily streak</span>Consecutive days you practiced something. Miss one day and the streak resets to <b>0</b>. Come back every day to keep it!',
+    },
+    cards: {
+      nl: '<span class="tip-label">📚 Kaarten gezien</span>Totaal aantal flashcards dat je ooit hebt bekeken in <b>Vocabulaire</b>. Kaarten die nog "nieuw" zijn tellen niet mee.',
+      en: '<span class="tip-label">📚 Cards seen</span>Total flashcards you have ever reviewed in <b>Vocabulary</b>. Cards still marked "new" are not counted.',
+    },
+    klanken: {
+      nl: '<span class="tip-label">🎵 Klanken geoefend</span>Aantal afgeronde uitspraakoefeningen in de <b>Klanken</b> tool. Er zijn ~48 Nederlandse klanken in totaal — probeer ze allemaal!',
+      en: '<span class="tip-label">🎵 Sounds practiced</span>Pronunciation exercises completed in the <b>Sounds</b> tool. There are ~48 Dutch sounds in total — try them all!',
+    },
+    verbs: {
+      nl: '<span class="tip-label">🔄 Werkwoorden geleerd</span>Werkwoorden waarbij je <b>meer dan 20%</b> van de oefeningen correct beantwoordt. Oefen dagelijks om dit getal te laten groeien.',
+      en: '<span class="tip-label">🔄 Verbs learned</span>Verbs where you answer <b>more than 20%</b> of exercises correctly. Practice daily to grow this number.',
+    },
+    sent: {
+      nl: '<span class="tip-label">✍️ Zin XP</span>Cumulatieve XP voor het bouwen van Nederlandse zinnen. XP <b>reset nooit</b> — het is jouw totale inspanning over alle dagen bij elkaar.',
+      en: '<span class="tip-label">✍️ Sentence XP</span>Cumulative XP for building Dutch sentences. XP <b>never resets</b> — it is your total effort summed across all days.',
+    },
+    vs: {
+      nl: '<span class="tip-label">🎓 NT2 Cursus voortgang</span>Percentage van de <b>VanStart NT2 cursus</b> voltooid. De cursus bevat 18 lessen van A0 tot A2.',
+      en: '<span class="tip-label">🎓 NT2 Course progress</span>Percentage of the <b>VanStart NT2 course</b> completed. The course contains 18 lessons from A0 to A2.',
+    },
+    game: {
+      nl: '<span class="tip-label">🎮 Woordspel woorden</span>Totaal unieke woorden die je hebt gezien in het <b>Woordspel</b>, over alle hoofdstukken. Meer woorden = breder vocabulaire!',
+      en: '<span class="tip-label">🎮 Word game words</span>Total unique words seen in the <b>Word Game</b> across all chapters. More words = broader vocabulary!',
+    },
+    num: {
+      nl: '<span class="tip-label">🔢 Getal levels behaald</span>Levels in de <b>Getallen</b> tool waarbij je minimaal <b>2 sterren</b> hebt behaald. Er zijn meerdere levels met luister- en quizmodus.',
+      en: '<span class="tip-label">🔢 Number levels achieved</span>Levels in the <b>Numbers</b> tool where you earned at least <b>2 stars</b>. There are multiple levels with listen and quiz modes.',
+    },
+  };
+
+  const tip  = document.getElementById('stat-tip');
+  const body = document.getElementById('stat-tip-body');
+  if (!tip || !body) return;
+
+  const TIP_W = 260;
+  let activePill = null;
+
+  function showTip(pill) {
+    const key = pill.dataset.stat;
+    const txt = TIPS[key];
+    if (!txt) return;
+
+    body.innerHTML = _pt(txt.nl, txt.en);
+    tip.hidden = false;
+
+    /* Position below the pill, arrow tracks pill center */
+    const rect      = pill.getBoundingClientRect();
+    const pillCx    = rect.left + rect.width / 2;
+    let   left      = pillCx - TIP_W / 2;
+    left = Math.max(8, Math.min(left, window.innerWidth - TIP_W - 8));
+    const arrowX    = Math.round(pillCx - left);
+
+    tip.style.left = left + 'px';
+    tip.style.top  = (rect.bottom + 10) + 'px';
+    tip.style.setProperty('--arrow-x', arrowX + 'px');
+
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      tip.classList.add('stat-tip--in');
+    }));
+
+    if (activePill) activePill.classList.remove('stat-pill--active');
+    activePill = pill;
+    pill.classList.add('stat-pill--active');
+  }
+
+  function hideTip() {
+    tip.classList.remove('stat-tip--in');
+    setTimeout(() => { tip.hidden = true; }, 200);
+    if (activePill) { activePill.classList.remove('stat-pill--active'); activePill = null; }
+  }
+
+  document.querySelectorAll('.stat-pill[data-stat]').forEach(pill => {
+    pill.addEventListener('click', e => {
+      e.stopPropagation();
+      if (activePill === pill) { hideTip(); return; }
+      showTip(pill);
+    });
+  });
+
+  document.addEventListener('click', () => { if (!tip.hidden) hideTip(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !tip.hidden) hideTip(); });
+}
+
 /* ─── Boot ───────────────────────────────────────────────────── */
 renderDashboard();
 initVolume();
@@ -1233,6 +1323,7 @@ initSpeed();
 initTheme();
 initTTSEnToggle();
 initReveal();
+initStatTips();
 
 /* ─── Feedback System ────────────────────────────────────────── */
 (function () {

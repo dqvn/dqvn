@@ -166,42 +166,42 @@
       <h1 class="hero-greeting" id="portal-greeting">Goedendag! 👋</h1>
       <p  class="hero-sub"      id="portal-sub">Welkom bij jouw Nederlands leerportaal.</p>
       <div class="stats-strip">
-        <div class="stat-pill" title="Dagelijkse reeks">
+        <div class="stat-pill" data-stat="streak" title="Dagelijkse reeks">
           <span class="stat-ico">🔥</span>
           <span class="stat-val" id="sv-streak">—</span>
           <span class="stat-lbl" data-i18n="stat_streak">dagen reeks</span>
         </div>
-        <div class="stat-pill" title="Kaarten gezien">
+        <div class="stat-pill" data-stat="cards" title="Kaarten gezien">
           <span class="stat-ico">📚</span>
           <span class="stat-val" id="sv-cards">—</span>
           <span class="stat-lbl" data-i18n="stat_cards">kaarten gezien</span>
         </div>
-        <div class="stat-pill" title="Klanken geoefend">
+        <div class="stat-pill" data-stat="klanken" title="Klanken geoefend">
           <span class="stat-ico">🎵</span>
           <span class="stat-val" id="sv-klanken">—</span>
           <span class="stat-lbl" data-i18n="stat_klanken">klanken</span>
         </div>
-        <div class="stat-pill" title="Werkwoorden geleerd">
+        <div class="stat-pill" data-stat="verbs" title="Werkwoorden geleerd">
           <span class="stat-ico">🔄</span>
           <span class="stat-val" id="sv-verbs">—</span>
           <span class="stat-lbl" data-i18n="stat_verbs">werkwoorden</span>
         </div>
-        <div class="stat-pill" title="Zin-bouwer XP">
+        <div class="stat-pill" data-stat="sent" title="Zin-bouwer XP">
           <span class="stat-ico">✍️</span>
           <span class="stat-val" id="sv-sent">—</span>
           <span class="stat-lbl" data-i18n="stat_sent">zin XP</span>
         </div>
-        <div class="stat-pill" title="NT2 cursus voortgang">
+        <div class="stat-pill" data-stat="vs" title="NT2 cursus voortgang">
           <span class="stat-ico">🎓</span>
           <span class="stat-val" id="sv-vs">—</span>
           <span class="stat-lbl" data-i18n="stat_vs">NT2 cursus</span>
         </div>
-        <div class="stat-pill" title="Woordspel woorden gezien">
+        <div class="stat-pill" data-stat="game" title="Woordspel woorden gezien">
           <span class="stat-ico">🎮</span>
           <span class="stat-val" id="sv-game">—</span>
           <span class="stat-lbl" data-i18n="stat_game">woorden gezien</span>
         </div>
-        <div class="stat-pill" title="Getal levels behaald">
+        <div class="stat-pill" data-stat="num" title="Getal levels behaald">
           <span class="stat-ico">🔢</span>
           <span class="stat-val" id="sv-num">—</span>
           <span class="stat-lbl" data-i18n="stat_num">getal levels</span>
@@ -428,6 +428,11 @@
     </span>
     <span id="pf-year"></span>
   </footer>
+
+  <!-- ══ STAT TOOLTIP ══ -->
+  <div id="stat-tip" class="stat-tip" hidden role="tooltip">
+    <div class="stat-tip-body" id="stat-tip-body"></div>
+  </div>
 
   <!-- Apply saved theme before first paint to avoid flash -->
   <script>
