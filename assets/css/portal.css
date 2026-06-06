@@ -1533,6 +1533,69 @@ main {
 }
 .fb-notif:hover { border-color: var(--accent); }
 
+/* ── First-visit callout bubble ── */
+.fb-callout {
+  position: fixed;
+  bottom: 84px;   /* 24px pad + 48px btn + 12px gap */
+  right: 10px;
+  z-index: 499;
+  max-width: 220px;
+  background: var(--surface);
+  border: 1.5px solid var(--accent);
+  border-radius: var(--r);
+  box-shadow: 0 6px 24px rgba(0,0,0,.15);
+  padding: 12px 36px 12px 14px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity .3s ease, transform .3s ease;
+  pointer-events: none;
+}
+.fb-callout--in {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.fb-callout--out {
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+}
+/* Arrow pointing down-right toward the FAB */
+.fb-callout::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: 26px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid var(--accent);
+}
+.fb-callout-title {
+  display: block;
+  font-size: .85rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.fb-callout-body {
+  font-size: .78rem;
+  color: var(--text-2);
+  margin: 0;
+  line-height: 1.4;
+}
+.fb-callout-close {
+  position: absolute;
+  top: 6px; right: 8px;
+  background: none; border: none;
+  font-size: 1rem; line-height: 1;
+  color: var(--text-3);
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: color .15s;
+}
+.fb-callout-close:hover { color: var(--text); }
+
 /* ── Admin panel ── */
 .fb-admin {
   position: fixed;
