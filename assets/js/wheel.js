@@ -671,6 +671,35 @@ function refreshWheelPackages() {
     drawWheel();
 }
 
+/* ── Preset package loader ───────────────────────────────── */
+async function _loadPresetPackages() {
+    try {
+        const r = await fetch('/dqvn/data/plan/wheel_packages.json');
+        if (!r.ok) return;
+        const data = await r.json();
+        if (!Array.isArray(data.packages)) return;
+
+        let changed = false;
+        for (const preset of data.packages) {
+            /* Merge: add if missing, update items if already present as preset */
+            const existing = packages.find(p => p.id === preset.id);
+            if (!existing) {
+                packages.push(preset);
+                changed = true;
+            } else if (existing.preset) {
+                existing.name  = preset.name;
+                existing.items = preset.items;
+                changed = true;
+            }
+        }
+        if (changed) {
+            savePackages();
+            renderPkgSelect();
+            drawWheel();
+        }
+    } catch { /* fail silently — presets are optional */ }
+}
+
 /* ── Boot ───────────────────────────────────────────────── */
 function init() {
     let saved;
@@ -699,6 +728,9 @@ function init() {
 
     document.fonts.ready.then(() => drawWheel());
     _checkImportParam();
+
+    /* Load A1/A2 preset question packs in the background */
+    _loadPresetPackages();
 }
 
 /* ── TTS ─────────────────────────────────────────────────── */

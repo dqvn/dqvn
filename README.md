@@ -55,7 +55,9 @@ Single-page hub with inline CSS + JS (no external scripts except `sync.js`).
 |---|---|
 | Sticky header | Dutch-flag emblem + "Leer Nederlands" brand + compact auth pill (sync.js) |
 | Hero | `bg2.jpg` photo background with parallax scrim; personalized greeting; stats strip: 🔥 streak · 📚 cards · 🎵 klanken · 🔄 verbs |
-| Voortgang | 8 progress cards (Vocabulaire, Klanken, Werkwoorden, Dialogen, Verhalen, Nieuws, Podcast, Zinnen Bouwen) — live from localStorage; Zinnen Bouwen card shows today's count + streak + total XP |
+| Taak van vandaag | Login-only. Smart daily suggestions scored from localStorage state + deep-links directly to the specific lesson/chapter/mode to study |
+| **Leerpad** | Login-only. Reads `data/plan/nl_plan_v1.json` + `nl_learning_progress_v1`; shows active A1/A2 unit, per-task mastery status (✅/⬜), animated progress bar, deeplinks per task. Rendered by `renderLearningPath()` |
+| Voortgang | 9 progress cards (Vocabulaire, Klanken, VanStart, Werkwoorden, Dialogen, Verhalen, Nieuws, Podcast, Zinnen Bouwen) — live from localStorage |
 | Leertools | 14 tool cards grouped by **A2 exam skill**: 🏗️ Taalkennis (6) / 📖 Leesvaardigheid (3) / 🎧 Luistervaardigheid (2) / ✍️ Schrijfvaardigheid (1) / 🗣️ Spreekvaardigheid (2); group count badge is derived dynamically from the TOOLS array |
 | Instellingen | Volume slider (`nl_vocab_vol`) + TTS speed slider (`nl_tts_rate`) |
 | Binnenkort | Placeholder cards for future features |
@@ -70,12 +72,21 @@ bg2.jpg  background-attachment:fixed  (parallax on desktop, scroll on mobile)
 
 ### Key functions
 ```js
-renderDashboard()    // greeting + stats strip + progress cards + plan CTA
-renderTools()        // grouped tool cards (preserves TOOLS insertion order)
-updatePlanCTA()      // "Meld je gratis aan →" or "✓ Aangemeld als X" based on auth state
-updateWordBadges()   // called by sync.js after sync — re-runs renderDashboard()
-initVolume()         // reads nl_vocab_vol, writes on change
-initSpeed()          // reads nl_tts_rate, writes on change
+renderDashboard()       // greeting + stats + today-tasks + leerpad + progress + plan CTA
+renderTools()           // grouped tool cards (preserves TOOLS insertion order)
+renderLearningPath()    // fetches nl_plan_v1.json, reads nl_learning_progress_v1, renders Leerpad section
+computeTodayTasks()     // scores + deep-links candidates; VanStart href = ?lesson=<nextTarget>
+renderTodayTasks()      // shows top-2 active tasks with deeplinks; hidden when logged out
+updatePlanCTA()         // "Meld je gratis aan →" or "✓ Aangemeld als X" based on auth state
+updateWordBadges()      // called by sync.js after sync — re-runs renderDashboard()
+initVolume()            // reads nl_vocab_vol, writes on change
+initSpeed()             // reads nl_tts_rate, writes on change
+// Deep-link helpers (portal.js):
+_vsTargetLesson()       // VanStart: stay on current lesson if unseen words; else advance
+_vocabDeepTarget()      // Vocab: chapter with most due cards → review; else next unseen
+_verbsWeakLesson()      // Verbs: lesson with lowest avg correct/seen ratio
+_isTaskMastered()       // Reads existing localStorage keys to check plan task completion
+_findActiveUnit()       // Walks plan levels/units to find first unit with incomplete required tasks
 ```
 
 ### Stats computed from localStorage
@@ -102,11 +113,21 @@ All shared files live under `assets/`, organised into three subdirectories:
 ```
 assets/
   css/   style.css  sync.css  dlg.css  klanken.css  kids.css  verbs.css  gstyles.css
-         wheel.css  podcast.css  sentence.css
+         wheel.css  podcast.css  sentence.css  portal.css  themes.css
   js/    common.js  sync.js  ttsscript.js  ttsvanstartscript.js  tts4kscript.js
          game.js  flashcard.js  dlgscript.js  kidsscript.js  klanken.js
-         verbs.js  gapp.js  wheel.js  podcast.js  sentence.js  NoSleep.min.js
+         verbs.js  gapp.js  wheel.js  podcast.js  sentence.js  portal.js  NoSleep.min.js
   img/   bg.jpg  bg1.jpg  bg2.jpg  dutch.ico  no-image.jpg
+
+data/
+  vocabularies/   ch01–ch18  core01–10  thema01–08  sp02–sp27  sw02–sw52  sz02–sz19  ...
+  dialogues/      c001–c120.json  (+ README.md)
+  verbs/          manifest.json  v01.json  v02.json  ...
+  kids/           l01–l07.json  (+ README.md)
+  klanken/        klanken.json
+  stories/        beginners.json
+  plan/           nl_plan_v1.json   ← A0→A2 curriculum (15 units, 930 XP)
+                  wheel_packages.json  ← Draairad A1/A2 preset question packs
 ```
 
 All HTML files reference these subdirectory paths (e.g. `assets/css/style.css`, `assets/js/sync.js`, `assets/img/dutch.ico`).
@@ -117,7 +138,7 @@ All HTML files reference these subdirectory paths (e.g. `assets/css/style.css`, 
 
 | File | Role |
 |---|---|
-| `assets/js/common.js` | Shared: voice selector, table render, menu toggle, hamburger, word badges, font-size control, active-lesson highlight, lazy `puter.js` loader, `_getTTSRate()` helper |
+| `assets/js/common.js` | Shared: voice selector, table render, menu toggle, hamburger, word badges, font-size control, active-lesson highlight, lazy `puter.js` loader, `_getTTSRate()` helper. `initPage()` reads `?lesson=` (override last-saved position) and `?mode=review` (auto-triggers flashcard after XHR loads) |
 | `assets/js/sync.js` | Cloud sync — Google Sign-In (GIS), Upstash Redis via Cloudflare Worker, smart auto-sync; syncs 9 keys including `nl_sentence_v1` |
 | `assets/js/podcast.js` | Podcast page logic — loads episodes from Worker `/podcast`, localStorage cache (`nl_podcast_cache_v1`), audio player, listened tracking, word-tap translation popup |
 | `assets/js/sentence.js` | Sentence-building game — file selector, queue with session persistence (`nl_sentence_session_v1`), fuzzy 5-layer scorer (Levenshtein), pointer-event drag-and-drop with FLIP animation, daily streak + XP |
@@ -127,11 +148,11 @@ All HTML files reference these subdirectory paths (e.g. `assets/css/style.css`, 
 | `assets/js/ttsvanstartscript.js` | `initPage()` config for `vanstart.html` |
 | `assets/js/tts4kscript.js` | `initPage()` config for `4000.html` |
 | `assets/js/game.js` | Multiple-choice vocabulary game (`#popup`) + Puter/GPT AI story generator |
-| `assets/js/flashcard.js` | SM-2 spaced repetition flashcard engine |
+| `assets/js/flashcard.js` | SM-2 spaced repetition flashcard engine. Writes per-chapter mastery score to `nl_learning_progress_v1` via `_writePlanMastery()` after each card rating and on close |
 | `assets/js/dlgscript.js` | Dialogue app logic — discovery, render, TTS flow, AES-GCM cache |
 | `assets/js/kidsscript.js` | Kids lesson app — auto-discovers `lxx.json`, emoji tap-to-hear cards |
 | `assets/js/klanken.js` | Dutch phonetics app — sidebar nav, TTS, progress, wave animation |
-| `assets/js/verbs.js` | Verb trainer: lesson data, study cards, quiz, dark mode, font picker, wake lock |
+| `assets/js/verbs.js` | Verb trainer: lesson data, study cards, quiz, dark mode, font picker, wake lock. Reads `?lesson=<id>` and `?mode=study|quiz` URL params on init to deep-link from the Leerpad |
 | `assets/js/gapp.js` | Markdown chapter SPA (TOC, search, progress, TTS) |
 | `assets/js/NoSleep.min.js` | Wake lock polyfill (used by `verbs.js`) |
 | `assets/css/style.css` | Shared styles for `startnl.html` / `vanstart.html` / all common components; includes `.al-home-btn` for launcher portal link |
@@ -142,7 +163,7 @@ All HTML files reference these subdirectory paths (e.g. `assets/css/style.css`, 
 | `assets/css/klanken.css` | Styles for `klanken.html` |
 | `assets/css/gstyles.css` | Styles for the Markdown chapter SPA |
 | `assets/css/wheel.css` | Styles for `wheel.html` — dark theme, canvas wrap, spin button, result modal, package manager modal, sync drawer |
-| `assets/js/wheel.js` | Wheel game logic — canvas drawing, spin animation (ease-out quartic), package CRUD, TTS, tick sound (Web Audio), confetti, sync drawer, MutationObserver avatar update |
+| `assets/js/wheel.js` | Wheel game logic — canvas drawing, spin animation (ease-out quartic), package CRUD, TTS, tick sound (Web Audio), confetti, sync drawer, MutationObserver avatar update. Loads A1/A2 preset packs from `data/plan/wheel_packages.json` via `_loadPresetPackages()` on startup |
 
 ---
 
@@ -193,6 +214,8 @@ Google Cloud Console: add your GitHub Pages origin to **Authorized JavaScript or
 | `nl_sentence_v1` | Sentence-builder streak, daily count, XP `{ date, count, streak, xp, lastGoalDate }` | Max XP; most-recent date wins for count; max streak with most-recent `lastGoalDate` |
 
 Keys intentionally **not** synced (device-specific or ephemeral): `nl_tts_voice_v1`, `nl_tts_rate`, `nl_vocab_fs`, `nl_fc_word_size`, `nl_verbs_theme`, `nl_verbs_font`, `klanken-voice`, `klanken-vol`, `kids_tts_speed`. Cache keys (`nl_dlg_*`, `nl_podcast_cache_v1`, `nl_rss_*`) are also excluded. Session-resume key `nl_sentence_session_v1` (today's queue + position) is local-only. Podcast/RSS read-history (`nl_podcast_v1`, `nl_rss_v1`) is local-only.
+
+**Learning-plan progress** (`nl_learning_progress_v1`) is also **not yet synced** — it is computed from other synced keys so it will auto-rebuild after a sync, but the active-unit pointer is local-only for now.
 
 ### Auto-sync triggers (no manual action needed)
 
@@ -250,6 +273,18 @@ Status: `⏳ Syncing…` → `☁️ Synced · Xs ago` → `⚠️ Sync failed` 
 - `nl_srs_v3` — per-word progress (migrates from old `nl_flashcard_v2`)
 - `nl_srs_meta_v3` — daily new-card count, streak, last study date
 - `nl_fc_word_size` — flashcard word font size (rem)
+- `nl_learning_progress_v1` — learning-plan mastery scores written by `_writePlanMastery()`
+
+### Mastery hook — `_writePlanMastery()`
+Called from `rateCard()` and `closeFlashcard()`. Computes how many chapter cards are no longer in `new` state (= "seen"), and if the value changed by ≥5 pp or mastery state flipped, writes:
+```js
+nl_learning_progress_v1.tool_scores.flashcard[chapterId] = {
+  seen_pct,    // 0.0–1.0 (seen / total)
+  is_mastered, // true if seen_pct >= 0.80
+  total, seen, date
+}
+```
+The portal `renderLearningPath()` reads this to mark VanStart tasks green without re-scanning all cards.
 
 ### States (SM-2)
 ```
@@ -666,6 +701,87 @@ body
 
 ---
 
+---
+
+## Learning Path System — `data/plan/`
+
+Duolingo-style A0→A2 curriculum. Two static JSON files drive the entire path; JavaScript reads them without any backend.
+
+### `data/plan/nl_plan_v1.json`
+
+Defines the full A1 + A2 curriculum. Structure:
+
+```
+meta              — version, daily_goal_minutes: 20, mastery_threshold: 0.80
+mastery_checks    — named check types (flashcard_80pct, verb_quiz_80, stars_2plus, …)
+levels[]
+  └─ A1 (8 units, 370 XP, ~37 days)
+  └─ A2 (7 units, 560 XP, ~49 days)
+      └─ units[]
+           └─ tasks[]  — id, tool, target, mastery_check, required, xp, deeplink
+```
+
+**VanStart lesson order:** A1 uses `core01–core10` (Core 2000 frequency words); A2 uses `thema01–thema08` (themed vocabulary).
+
+**Mastery checks by tool:**
+
+| Tool | Check type | Threshold |
+|------|-----------|-----------|
+| vanstart / vocab flashcard | `flashcard_80pct` | 80% of chapter cards not 'new' |
+| verbs | `verb_quiz_80` | `totalCorrect / totalAnswered ≥ 0.80` |
+| getallen | `stars_2plus` | Best stars ≥ 2 (≥ 70%) |
+| klanken | `count_done` | N sounds marked done |
+| sentence | `streak_days` | Daily goal met for N consecutive days |
+| dialogues | `practiced_once` | `nl_dlg_v1.stats[id].count ≥ 1` |
+| stories2 | `story_quiz_80` | N quizzes with `completed: true` |
+| nieuws / podcast | `count_done` | `nl_rss_v1.total` / `nl_podcast_v1.total ≥ N` |
+
+### `data/plan/wheel_packages.json`
+
+Six preset Draairad question packs (3 A1, 3 A2) loaded by `wheel.js` on startup. See Wheel section.
+
+### `nl_learning_progress_v1` (localStorage — not synced)
+
+```js
+{
+  tool_scores: {
+    flashcard: {
+      "core01": { seen_pct: 0.85, is_mastered: true, total: 50, seen: 43, date: "2026-06-06" }
+    }
+  }
+  // active_unit is derived dynamically by _findActiveUnit() each render — not stored
+}
+```
+
+The progress key is intentionally thin: task mastery is **computed in real-time** from the existing tool storage keys (no duplication). The flashcard mastery score is the only pre-computed cache (written by `_writePlanMastery()` in `flashcard.js` to avoid scanning all cards on every portal render).
+
+### Portal Leerpad section
+
+Rendered by `renderLearningPath()` in `portal.js`:
+1. `fetch('/dqvn/data/plan/nl_plan_v1.json')` — cached in module var `_planCache`
+2. `_findActiveUnit(plan, prog)` — walks levels/units, returns first unit where not all required tasks pass `_isTaskMastered()`
+3. Renders: level chip (A1🌱 / A2🌿) + unit card with progress bar + task rows with deeplinks
+4. Optional tasks hidden in a `<details>` toggle
+
+### Deep-link URL params (added to all tool pages)
+
+| Tool | Param | Effect |
+|------|-------|--------|
+| `vanstart.html` / `startnl.html` | `?lesson=core01` | Loads specific lesson on init (overrides localStorage) |
+| `vanstart.html` / `startnl.html` | `?mode=review` | Auto-opens flashcard after lesson loads (200 ms setTimeout) |
+| `verbs.html` | `?lesson=v01` | Selects lesson by manifest ID |
+| `verbs.html` | `?mode=study` | Auto-starts Study session after lesson loads |
+| `verbs.html` | `?mode=quiz` | Auto-starts Quiz-only session |
+| `klanken.html` | `?start=next` | Opens first sound where `isDone` is false |
+| `wheel.html` | `?pkg=preset_a1_1` | (handled by existing import param logic) |
+
+`computeTodayTasks()` in `portal.js` computes the appropriate deeplink for each "Taak van vandaag" card using:
+- `_vsTargetLesson()` — VanStart: current lesson if unseen words remain; next lesson if all seen
+- `_vocabDeepTarget()` — Vocab: chapter with most due cards + `&mode=review`; else first unseen chapter
+- `_verbsWeakLesson()` — Verbs: lesson with lowest avg `correct/seen` ratio
+
+---
+
 ## Data files
 
 ### Vocabulary — `data/vocabularies/`
@@ -719,8 +835,16 @@ Single JSON array of story objects. Loaded by `stories2.html` via `fetch`.
 Single file. See Klanken section above for shape.
 
 ### Kids — `data/kids/lxx.json`
-`l01`–`l05` currently. See Kids section above for shape.
+`l01`–`l07` currently. All phonics-based (consonant clusters: SL, GL/KL, BL, VL/FL, ZW, etc.). See Kids section above for shape.
 Add new lessons by creating the next `lxx.json`; the app discovers them automatically.
+
+### Learning Plan — `data/plan/`
+| File | Description |
+|---|---|
+| `nl_plan_v1.json` | Full A0→A2 curriculum — 2 levels, 15 units, 930 XP, ~86 days at 20 min/day |
+| `wheel_packages.json` | 6 Draairad preset packs (3 A1 + 3 A2); loaded and merged by `wheel.js` on startup |
+
+See the **Learning Path System** section above for full schema documentation.
 
 ---
 
@@ -800,10 +924,15 @@ Shown over the full screen after the wheel stops. Contains:
 - Inline add (Enter or + button) and inline delete (hover ×) in the items list
 - Spin history (last 8) stored in `nl_wheel_hist` (local only, not synced)
 
+### Preset packages — `data/plan/wheel_packages.json`
+On startup, `_loadPresetPackages()` fetches `data/plan/wheel_packages.json` and merges preset packages (marked `preset: true`) into the user's package list. Presets are not deletable via the UI. Current presets:
+- **A1** — Groeten & Introductie · Familie & Dagelijks Leven · Vervoer & Stad
+- **A2** — Werk & Opleiding · Wonen in Nederland · Nieuws & Meningen
+
 ### localStorage keys
 | Key | Content |
 |---|---|
-| `nl_wheel_pkgs` | `[{ id, name, items[] }]` — all user packages (synced) |
+| `nl_wheel_pkgs` | `[{ id, name, items[], preset? }]` — all packages including presets (synced) |
 | `nl_wheel_active` | Active package `id` string (local only) |
 | `nl_wheel_hist` | `[{ text, color, ts }]` — last 8 spun items (local only) |
 
