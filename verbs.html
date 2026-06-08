@@ -60,18 +60,10 @@
     <div class="sb-tts-lbl">🔊 Dutch Voice</div>
     <select id="tts-voice-select"><option value="">Loading voices…</option></select>
   </div>
-  <div id="sb-fontsize">
-    <div class="sb-tts-lbl">🔤 Text Size</div>
-    <div class="sb-fs-row">
-      <button class="sb-fs-btn" id="sb-fs-dec">A−</button>
-      <span id="sb-fs-lbl">Normal</span>
-      <button class="sb-fs-btn" id="sb-fs-inc">A+</button>
-    </div>
-  </div>
-
   <!-- Settings: theme + wake lock -->
-  <div id="sb-settings">
-    <div class="sb-tts-lbl">⚙️ Settings</div>
+  <details id="sb-settings" class="sb-details">
+    <summary class="sb-details-summary">⚙️ Settings</summary>
+    <div class="sb-settings-body">
     <div class="sb-toggle-row">
       <span class="sb-toggle-lbl">🌙 Dark mode</span>
       <button class="sb-tog" id="sb-theme-tog" aria-label="Toggle dark mode"></button>
@@ -79,6 +71,14 @@
     <div class="sb-toggle-row">
       <span class="sb-toggle-lbl">☀️ Keep screen on</span>
       <button class="sb-tog" id="sb-wake-tog" aria-label="Toggle keep screen on"></button>
+    </div>
+    <div class="sb-tts-lbl" style="margin-top:8px">🔤 Text Size</div>
+    <div id="sb-fontsize">
+      <div class="sb-fs-row">
+        <button class="sb-fs-btn" id="sb-fs-dec">A−</button>
+        <span id="sb-fs-lbl">Normal</span>
+        <button class="sb-fs-btn" id="sb-fs-inc">A+</button>
+      </div>
     </div>
     <div class="sb-tts-lbl" style="margin-top:8px">🔤 Verb Font</div>
     <select id="sb-font-sel" class="sb-mini-select" aria-label="Select verb font">
@@ -110,7 +110,8 @@
         <option value="nunito">Nunito</option>
       </optgroup>
     </select>
-  </div>
+    </div><!-- .sb-settings-body -->
+  </details>
 
   <footer id="app-footer">
     <div class="ft-avatar">QN</div>
