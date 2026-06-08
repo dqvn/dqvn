@@ -205,6 +205,13 @@
 
   <script src="assets/js/dlgscript.js"></script>
   <script src="assets/js/sync.js" defer></script>
+  <script>
+  window._syncPageTools = [
+    { id:'search', icon:'🔍', label:'Zoeken',             fn: function(){ document.getElementById('mob-search-btn').click();  } },
+    { id:'wake',   icon:'☀️', label:'Scherm aan houden',  fn: function(){ document.getElementById('mob-wake-btn').click();    } },
+    { id:'reload', icon:'↺',  label:'Herladen',           fn: function(){ document.getElementById('mob-reload-btn').click();  } },
+  ];
+  </script>
 </body>
 
 </html>
