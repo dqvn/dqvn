@@ -533,8 +533,9 @@
       align-items: center; gap: 12px;
       padding: 0 14px;
     }
-    #mob-bar .m-back { color: rgba(255,255,255,.5); text-decoration: none; font-size: .75rem; font-weight: 700; }
-    #mob-bar .m-back:hover { color: var(--accent); }
+    #mob-bar .m-back { font-size: 1.1rem; line-height: 1; padding: 5px 8px; border-radius: 8px; text-decoration: none; flex-shrink: 0; color: rgba(255,255,255,.82); transition: background .15s; }
+    #mob-bar .m-back:hover { background: rgba(255,255,255,.12); color: rgba(255,255,255,.82); }
+    .sb-back { display: none; }
     #mob-bar .m-title { flex: 1; font-size: .85rem; font-weight: 800; color: #fff; text-align: center; }
     #mob-menu {
       background: none; border: none; color: #fff;
@@ -644,7 +645,7 @@
 
 <!-- Mobile bar -->
 <div id="mob-bar">
-  <a class="m-back" href="/dqvn/">← Portaal</a>
+  <a class="m-back" href="/dqvn/" title="Terug naar portaal" aria-label="Terug naar portaal">🏠</a>
   <span class="m-title">📖 Verhalen</span>
   <button id="mob-menu" onclick="openSidebar()">☰</button>
 </div>

@@ -374,7 +374,19 @@ body {
     box-shadow: 0 2px 12px rgba(0,0,0,.07);
     z-index: 500;
   }
-  #mob-bar > :not(#sync-section) { display: none !important; }
+  #mob-bar > :not(#sync-section):not(.mob-back) { display: none !important; }
+  /* mob-back becomes a fixed chip at top-left (mirrors sync chip top-right) */
+  #mob-bar .mob-back {
+    display: flex !important;
+    position: fixed; top: 0; left: 0;
+    padding: 5px 8px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-top: none; border-left: none;
+    border-bottom-right-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.07);
+    z-index: 500;
+  }
 }
 
 /* ──────────────── MOBILE ──────────────── */

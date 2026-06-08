@@ -69,14 +69,15 @@
       padding: 0 16px;
     }
     .nav-back {
-      color: var(--accent);
+      font-size: 1.1rem; line-height: 1;
+      padding: 5px 8px; border-radius: 8px;
       text-decoration: none;
-      font-weight: 800;
-      font-size: .88rem;
-      white-space: nowrap;
-      transition: opacity .2s;
+      flex-shrink: 0;
+      color: rgba(255,255,255,.82);
+      transition: background .15s;
     }
-    .nav-back:hover { opacity: .7; }
+    .nav-back:hover { background: rgba(255,255,255,.12); }
+    #sb-back-link { display: none; }
     .nav-title {
       flex: 1;
       text-align: center;
@@ -398,7 +399,7 @@
 
   <!-- ── Top nav ── -->
   <nav id="top-nav">
-    <a href="/dqvn/" class="nav-back">← Terug</a>
+    <a href="/dqvn/" class="nav-back" title="Terug naar portaal" aria-label="Terug naar portaal">🏠</a>
     <span class="nav-title">📚 Kinderverhalen</span>
     <div class="nav-actions">
       <button id="playButton" class="nav-play-btn" title="Afspelen / Pauzeren">

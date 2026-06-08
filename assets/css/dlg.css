@@ -926,7 +926,19 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
     backdrop-filter: blur(10px);
     z-index: 500;
   }
-  #mob-bar > :not(#sync-section) { display: none !important; }
+  #mob-bar > :not(#sync-section):not(.mob-back) { display: none !important; }
+  /* mob-back becomes a fixed chip at top-left (mirrors sync chip top-right) */
+  #mob-bar .mob-back {
+    display: flex !important;
+    position: fixed; top: 0; left: 0;
+    padding: 5px 8px;
+    background: rgba(15,23,42,.92);
+    border: 1px solid rgba(255,255,255,.07);
+    border-top: none; border-left: none;
+    border-bottom-right-radius: 12px;
+    backdrop-filter: blur(10px);
+    z-index: 500;
+  }
   #drawer-overlay { display: none !important; }
   .sb-drag-handle { display: none !important; }
   #tts-hint   { display: block; }
