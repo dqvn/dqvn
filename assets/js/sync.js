@@ -380,6 +380,7 @@ function _renderSyncUI() {
   const dropdown = document.getElementById('sync-dropdown');
   menuBtn.addEventListener('click', e => {
     e.stopPropagation();
+    _injectPageTools(dropdown);   // refresh page-specific tools on every open
     dropdown.classList.toggle('open');
   });
   // Close on outside click
@@ -398,6 +399,36 @@ function _renderSyncUI() {
     ?.addEventListener('click', () => { dropdown.classList.remove('open'); _openUserActivity(); });
   document.getElementById('sync-signout-btn')
     .addEventListener('click', () => { dropdown.classList.remove('open'); _signOut(); });
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// PAGE TOOLS — pages set window._syncPageTools = [{id, icon, label, fn}]
+// Injected lazily on every dropdown open so deferred page scripts are ready.
+// ─────────────────────────────────────────────────────────────────────────────
+function _injectPageTools(dd) {
+  const prev = dd.querySelector('.sync-page-tools-slot');
+  if (prev) prev.remove();
+  const tools = window._syncPageTools;
+  if (!tools || !tools.length) return;
+
+  const sep  = document.createElement('div');
+  sep.className = 'sync-dd-sep';
+
+  const slot = document.createElement('div');
+  slot.className = 'sync-page-tools-slot';
+
+  tools.forEach(t => {
+    const btn = document.createElement('button');
+    btn.className = 'sync-dd-item';
+    const lbl = typeof t.label === 'function' ? t.label() : (t.label || '');
+    btn.innerHTML = (t.icon ? `<span class="sync-tool-icon">${t.icon}</span>` : '') + _esc(lbl);
+    if (t.fn) btn.addEventListener('click', () => { dd.classList.remove('open'); t.fn(); });
+    slot.appendChild(btn);
+  });
+
+  const signout = dd.querySelector('.sync-dd-signout');
+  if (signout) { dd.insertBefore(sep, signout); dd.insertBefore(slot, signout); }
+  else         { dd.appendChild(sep);           dd.appendChild(slot); }
 }
 
 function _setSyncStatus(status, ts) {

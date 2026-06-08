@@ -80,6 +80,13 @@
 
   <script src="assets/js/sync.js"></script>
   <script src="assets/js/podcast.js" defer></script>
+  <script>
+  window._syncPageTools = [
+    { id:'refresh', icon:'↺',  label:'Vernieuwen',      fn: function(){ refreshFeed();       } },
+    { id:'fs-dec',  icon:'A−', label:'Kleinere tekst',  fn: function(){ changeFontSize(-1);  } },
+    { id:'fs-inc',  icon:'A+', label:'Grotere tekst',   fn: function(){ changeFontSize(1);   } },
+  ];
+  </script>
 
 </body>
 </html>

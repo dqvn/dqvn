@@ -157,6 +157,15 @@
 
   <script src="assets/js/sync.js"></script>
   <script src="assets/js/sentence.js" defer></script>
+  <script>
+  window._syncPageTools = [
+    { id:'mode-type',  icon:'⌨️', label: function(){ return (document.getElementById('btn-type')?.classList.contains('active')  ? '✓ ' : '') + 'Typen';   }, fn: function(){ setMode('type');       } },
+    { id:'mode-build', icon:'🧩', label: function(){ return (document.getElementById('btn-build')?.classList.contains('active') ? '✓ ' : '') + 'Bouwen';  }, fn: function(){ setMode('build');      } },
+    { id:'files',      icon:'📁', label: 'Bestanden kiezen',  fn: function(){ openSidebar();      } },
+    { id:'fs-dec',     icon:'A−', label: 'Kleinere tekst',    fn: function(){ changeFontSize(-1); } },
+    { id:'fs-inc',     icon:'A+', label: 'Grotere tekst',     fn: function(){ changeFontSize(1);  } },
+  ];
+  </script>
 
   <!-- DEBUG: viewport width indicator. Set DEBUG=false to hide. Click badge to toggle. -->
   <script>

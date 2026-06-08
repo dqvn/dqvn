@@ -496,3 +496,32 @@
 /* #mob-bar.mob-bar-light (klanken) */
 #mob-bar.mob-bar-light .mob-back       { color: rgba(0,0,0,.55) !important; }
 #mob-bar.mob-bar-light .mob-back:hover { background: rgba(0,0,0,.07); }
+
+/* ════════════════════════════════════════════════════════════════
+   Extra header controls → moved to sync dropdown
+   Hidden here so the header stays at 4 core items.
+════════════════════════════════════════════════════════════════ */
+#top-nav #fs-ctrl,
+#top-nav .nav-mode-toggle,
+#top-nav #files-btn,
+#top-nav #refresh-btn     { display: none; }
+
+.hdr-right .hdr-fs-btn,
+.hdr-right #hide-meaning-btn { display: none; }
+
+#mob-bar #mob-search-btn,
+#mob-bar #mob-wake-btn,
+#mob-bar #mob-reload-btn  { display: none; }
+
+/* ── Sync dropdown: page-tools slot ── */
+.sync-dd-sep {
+    height: 1px;
+    background: #f1f5f9;
+    margin: 4px 0;
+}
+.sync-tool-icon {
+    min-width: 18px;
+    text-align: center;
+    font-size: .9rem;
+    flex-shrink: 0;
+}
