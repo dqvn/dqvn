@@ -715,6 +715,7 @@ details[open] .sb-details-summary::after { transform: rotate(90deg); }
 .trows {
   display: grid;
   grid-template-columns: max-content 1fr;
+  column-gap: .75rem;
   row-gap: .3rem; column-gap: .5rem;
   align-items: baseline;
   font-size: 1.2em; margin-top: .15rem;
