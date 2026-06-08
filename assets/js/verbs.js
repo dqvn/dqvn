@@ -4,7 +4,7 @@
 /* ─────────────────────────────────────────────────────────────────────────────
    CONSTANTS & STATE
 ───────────────────────────────────────────────────────────────────────────── */
-const SESS           = 7;    /* verbs per study session */
+const SESS           = 3;    /* verbs per study session */
 const QUIZ_N         = 15;   /* questions per quiz */
 const LEARNED_THRESH = 0.2;  /* min accuracy to count a verb as "learned" */
 const STORE_KEY      = 'nl_verbs_v3';
