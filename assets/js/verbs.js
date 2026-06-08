@@ -512,7 +512,8 @@ function renderStudyCard() {
       .filter(([, f]) => f)
       .flatMap(([p, f]) => p.split('/').map(pr => `${pr.trim()} ${f}`))
       .join(', ');
-    const labelHtml = label.replace(/\s*(\([^)]+\))/, '<br><span class="tlabel-abbr">$1</span>');
+    const lm = label.match(/^([^(]+?)\s*(\([^)]+\))?$/);
+    const labelHtml = `<div class="tlabel-inner"><span class="tlabel-name">${lm[1].trim()}</span>${lm[2] ? `<span class="tlabel-abbr">${lm[2]}</span>` : ''}</div>`;
     return `
       <div class="tblock">
         <div class="tlabel ${cls}">${labelHtml}</div>
