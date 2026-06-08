@@ -336,3 +336,108 @@
     transform: translateX(-50%) translateY(0);
     opacity: 1;
 }
+
+/* ══════════════════════════════════════════════════════════════
+   Compact header contexts
+   Shared pill/chip appearance when #sync-section lives inside
+   a page header or top-nav instead of a sidebar.
+══════════════════════════════════════════════════════════════ */
+
+/* ── Shared reset for all header contexts ─────────────────── */
+#top-nav #sync-section,
+#vs-header #sync-section,
+#lm-header #sync-section,
+#mob-bar #sync-section {
+    background: none !important;
+    border: none !important;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+/* ── #top-nav — dark nav bar (sentence, podcast, rss, wheel, number) ── */
+#top-nav #sync-section  { margin-left: auto; }
+
+#top-nav .sync-card {
+    padding: 4px 10px 4px 6px !important;
+    border-radius: 20px !important;
+    background: rgba(255,255,255,.07) !important;
+    cursor: default;
+    transition: background .15s !important;
+}
+#top-nav .sync-card:hover    { background: rgba(255,255,255,.12) !important; }
+#top-nav .sync-avatar        { width: 26px !important; height: 26px !important; border: none !important; box-shadow: none !important; }
+#top-nav .sync-name          { font-size: .78rem !important; color: rgba(255,255,255,.82) !important; font-weight: 600 !important; }
+#top-nav .sync-status        { display: none !important; }
+#top-nav .sync-menu-btn      { color: rgba(255,255,255,.35) !important; }
+#top-nav .sync-menu-btn:hover{ background: rgba(255,255,255,.1) !important; color: rgba(255,255,255,.7) !important; }
+#top-nav .sync-signin-row    { padding: 0 4px !important; }
+#top-nav .sync-gis-wrap      { min-height: 34px !important; }
+
+/* ── #vs-header — light unified header (vanstart, startnl) ── */
+#vs-header .sync-card {
+    padding: 4px 10px 4px 6px !important;
+    border-radius: 20px !important;
+    background: rgba(0,0,0,.04) !important;
+    cursor: default;
+    transition: background .15s !important;
+}
+#vs-header .sync-card:hover    { background: rgba(0,0,0,.08) !important; }
+#vs-header .sync-avatar        { width: 26px !important; height: 26px !important; border: none !important; box-shadow: none !important; }
+#vs-header .sync-name          { font-size: .78rem !important; color: rgba(0,0,0,.7) !important; font-weight: 600 !important; }
+#vs-header .sync-status        { display: none !important; }
+#vs-header .sync-menu-btn      { color: rgba(0,0,0,.3) !important; }
+#vs-header .sync-menu-btn:hover{ background: rgba(0,0,0,.07) !important; color: rgba(0,0,0,.6) !important; }
+#vs-header .sync-signin-row    { padding: 0 4px !important; }
+#vs-header .sync-gis-wrap      { min-height: 34px !important; }
+
+/* ── #lm-header — light legacy header (4000.html) ─────────── */
+#lm-header {
+    position: relative !important;
+}
+#lm-header #sync-section {
+    position: absolute !important;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#lm-header .sync-card {
+    padding: 4px 10px 4px 6px !important;
+    border-radius: 20px !important;
+    background: rgba(0,0,0,.04) !important;
+    cursor: default;
+    transition: background .15s !important;
+}
+#lm-header .sync-card:hover    { background: rgba(0,0,0,.08) !important; }
+#lm-header .sync-avatar        { width: 26px !important; height: 26px !important; border: none !important; box-shadow: none !important; }
+#lm-header .sync-name          { font-size: .78rem !important; color: rgba(0,0,0,.7) !important; font-weight: 600 !important; }
+#lm-header .sync-status        { display: none !important; }
+#lm-header .sync-menu-btn      { color: rgba(0,0,0,.3) !important; }
+#lm-header .sync-menu-btn:hover{ background: rgba(0,0,0,.07) !important; color: rgba(0,0,0,.6) !important; }
+#lm-header .sync-signin-row    { padding: 0 4px !important; }
+#lm-header .sync-gis-wrap      { min-height: 34px !important; }
+
+/* ── #mob-bar — dark (dialogues, verbs, kids desktop chip) ── */
+#mob-bar #sync-section  { margin-left: auto; }
+
+#mob-bar .sync-card {
+    padding: 4px 10px 4px 6px !important;
+    border-radius: 20px !important;
+    background: rgba(255,255,255,.07) !important;
+    cursor: default;
+    transition: background .15s !important;
+}
+#mob-bar .sync-card:hover    { background: rgba(255,255,255,.12) !important; }
+#mob-bar .sync-avatar        { width: 26px !important; height: 26px !important; border: none !important; box-shadow: none !important; }
+#mob-bar .sync-name          { font-size: .78rem !important; color: rgba(255,255,255,.82) !important; font-weight: 600 !important; }
+#mob-bar .sync-status        { display: none !important; }
+#mob-bar .sync-menu-btn      { color: rgba(255,255,255,.35) !important; }
+#mob-bar .sync-menu-btn:hover{ background: rgba(255,255,255,.1) !important; color: rgba(255,255,255,.7) !important; }
+#mob-bar .sync-signin-row    { padding: 0 4px !important; }
+#mob-bar .sync-gis-wrap      { min-height: 34px !important; }
+
+/* ── #mob-bar.mob-bar-light — light (klanken desktop chip) ── */
+#mob-bar.mob-bar-light .sync-card       { background: rgba(0,0,0,.04) !important; }
+#mob-bar.mob-bar-light .sync-card:hover { background: rgba(0,0,0,.08) !important; }
+#mob-bar.mob-bar-light .sync-name       { color: rgba(0,0,0,.7) !important; }
+#mob-bar.mob-bar-light .sync-menu-btn   { color: rgba(0,0,0,.3) !important; }
+#mob-bar.mob-bar-light .sync-menu-btn:hover { background: rgba(0,0,0,.07) !important; color: rgba(0,0,0,.6) !important; }

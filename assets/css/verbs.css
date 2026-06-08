@@ -854,7 +854,20 @@ kbd {
 ───────────────────────────────────────────────────────────────────────────── */
 @media (min-width: 701px) {
   body { flex-direction: row; }
-  #mob-bar      { display: none !important; }
+  /* mob-bar becomes a floating sync chip at top-right */
+  #mob-bar {
+    display: flex !important;
+    position: fixed; top: 0; right: 0;
+    width: auto;
+    padding: 5px 8px;
+    background: rgba(15,23,42,.92);
+    border: 1px solid rgba(255,255,255,.07);
+    border-top: none; border-right: none;
+    border-bottom-left-radius: 12px;
+    backdrop-filter: blur(10px);
+    z-index: 500;
+  }
+  #mob-bar > :not(#sync-section) { display: none !important; }
   #drawer-overlay { display: none !important; }
   .sb-drag-handle { display: none !important; }
   .mob-hint     { display: none !important; }
