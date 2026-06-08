@@ -7,8 +7,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>🇳🇱 Dialoog Oefenen – Dutch Practice</title>
   <link rel="stylesheet" href="assets/css/dlg.css">
-  <link rel="stylesheet" href="assets/css/sync.css">
   <link rel="stylesheet" href="assets/css/themes.css">
+  <style>
+    /* Restore mob-bar buttons (search/wake/reload) hidden by sync.css */
+    #mob-bar #mob-search-btn,
+    #mob-bar #mob-wake-btn,
+    #mob-bar #mob-reload-btn { display: flex !important; }
+    /* No sync chip on desktop — hide the now-empty mob-bar */
+    @media (min-width: 701px) { #mob-bar { display: none !important; } }
+  </style>
 </head>
 
 <body>
