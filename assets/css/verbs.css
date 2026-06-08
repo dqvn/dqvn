@@ -933,7 +933,7 @@ kbd {
   .tlabel-abbr { font-size: .42rem; }
   .tblock-body { padding: .55rem .7rem .45rem; }
   .tts-tense-btn { top: .3rem; right: .35rem; font-size: .55rem; }
-  .trows { gap: .14rem; }
+  .trows { row-gap: .14rem; }
   .trow { font-size: .9em; }
   .vfooter { padding: .5rem .9rem; }
   .card-dots { margin-top: .25rem; }
