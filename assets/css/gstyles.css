@@ -134,6 +134,30 @@ body {
   background: var(--elev);
 }
 
+/* Back-to-portal emoji button — desktop app-header */
+.g-back-btn {
+  font-size: 1.1rem; line-height: 1;
+  padding: 5px 8px; border-radius: var(--radius-sm);
+  text-decoration: none !important;
+  flex-shrink: 0;
+  color: var(--text) !important;
+  transition: background .15s;
+}
+.g-back-btn:hover { background: var(--elev); }
+
+/* Back-to-portal emoji button — mobile g-mob-bar */
+.g-mob-back {
+  font-size: 1.1rem; line-height: 1;
+  padding: 5px 8px; border-radius: 10px;
+  text-decoration: none !important;
+  flex-shrink: 0;
+  color: var(--text) !important;
+  background: var(--elev);
+  display: flex; align-items: center;
+  transition: background .15s;
+}
+.g-mob-back:hover { background: var(--border); }
+
 .text-btn {
   padding: 8px 6px;
   color: var(--link);

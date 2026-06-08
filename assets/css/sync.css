@@ -441,3 +441,58 @@
 #mob-bar.mob-bar-light .sync-name       { color: rgba(0,0,0,.7) !important; }
 #mob-bar.mob-bar-light .sync-menu-btn   { color: rgba(0,0,0,.3) !important; }
 #mob-bar.mob-bar-light .sync-menu-btn:hover { background: rgba(0,0,0,.07) !important; color: rgba(0,0,0,.6) !important; }
+
+/* ════════════════════════════════════════════════════════════════
+   Back-to-portal compact emoji button
+   Rendered as a small 🏠 chip — top-left of every page header.
+════════════════════════════════════════════════════════════════ */
+
+/* #top-nav (dark — sentence, podcast, rss, wheel, number) */
+#top-nav .nav-back {
+    font-size: 1.1rem; line-height: 1;
+    padding: 5px 8px; border-radius: 8px;
+    text-decoration: none !important;
+    flex-shrink: 0;
+    color: rgba(255,255,255,.82) !important;
+    transition: background .15s;
+}
+#top-nav .nav-back:hover { background: rgba(255,255,255,.12); }
+
+/* #vs-header (light — vanstart, startnl) */
+#vs-header .vs-back-btn {
+    font-size: 1.1rem; line-height: 1;
+    padding: 5px 8px; border-radius: 8px;
+    text-decoration: none !important;
+    flex-shrink: 0;
+    color: rgba(0,0,0,.55) !important;
+    transition: background .15s;
+}
+#vs-header .vs-back-btn:hover { background: rgba(0,0,0,.07); }
+
+/* #lm-header (4000.html, light, absolutely positioned left) */
+#lm-header .lm-back {
+    position: absolute;
+    left: 14px; top: 50%; transform: translateY(-50%);
+    font-size: 1.1rem; line-height: 1;
+    padding: 5px 8px; border-radius: 8px;
+    text-decoration: none !important;
+    color: rgba(0,0,0,.55) !important;
+    transition: background .15s;
+}
+#lm-header .lm-back:hover { background: rgba(0,0,0,.07); }
+
+/* #mob-bar (dark — dialogues, verbs, kids; mobile: in bar · desktop: fixed chip left) */
+#mob-bar .mob-back {
+    font-size: 1.1rem; line-height: 1;
+    padding: 5px 8px; border-radius: 8px;
+    text-decoration: none !important;
+    flex-shrink: 0;
+    color: rgba(255,255,255,.82) !important;
+    transition: background .15s;
+    display: flex; align-items: center;
+}
+#mob-bar .mob-back:hover { background: rgba(255,255,255,.12); }
+
+/* #mob-bar.mob-bar-light (klanken) */
+#mob-bar.mob-bar-light .mob-back       { color: rgba(0,0,0,.55) !important; }
+#mob-bar.mob-bar-light .mob-back:hover { background: rgba(0,0,0,.07); }
