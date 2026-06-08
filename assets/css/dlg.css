@@ -1063,7 +1063,7 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
 #sb-back-link {
   flex-shrink: 0;
   padding: 6px 14px;
-  border-top: 1px solid rgba(255,255,255,.07);
+  border-bottom: 1px solid rgba(255,255,255,.07);
 }
 #sb-back-link a {
   font-size: .75rem;
