@@ -29,66 +29,61 @@
     },
     {
       "role": "A",
-      "text": "Lekker!",
-      "translation": "Nice!"
+      "text": "Lekker!, Ik heb ook iets meegenomen.",
+      "translation": "Nice!, I also brought something."
     },
     {
       "role": "B",
-      "text": "Ik heb ook iets meegenomen.",
-      "translation": "I also brought something."
-    },
-    {
-      "role": "A",
       "text": "Wat heb je?",
       "translation": "What did you bring?"
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Salade en sap.",
       "translation": "Salad and juice."
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Klinkt goed!",
       "translation": "Sounds good!"
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Dit is echt ontspannen.",
       "translation": "This is really relaxing."
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Ja, even geen stress.",
       "translation": "Yes, no stress for a while."
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "We moeten dit vaker doen.",
       "translation": "We should do this more often."
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Zeker weten!",
       "translation": "Definitely!"
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Wil je iets drinken?",
       "translation": "Do you want something to drink?"
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Ja, graag.",
       "translation": "Yes, please."
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Hier, alsjeblieft.",
       "translation": "Here you go."
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Dank je.",
       "translation": "Thank you."
     }
