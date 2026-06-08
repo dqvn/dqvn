@@ -359,6 +359,24 @@ body {
   100%{transform:scale(1) translateY(-100px);opacity:0}
 }
 
+/* ──────────────── DESKTOP ──────────────── */
+@media (min-width: 769px) {
+  /* mob-bar becomes a floating sync chip at top-right */
+  #mob-bar {
+    display: flex !important;
+    position: fixed; top: 0; right: 0;
+    width: auto;
+    padding: 5px 8px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-top: none; border-right: none;
+    border-bottom-left-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.07);
+    z-index: 500;
+  }
+  #mob-bar > :not(#sync-section) { display: none !important; }
+}
+
 /* ──────────────── MOBILE ──────────────── */
 @media (max-width: 768px) {
   #mob-bar { display: flex; }

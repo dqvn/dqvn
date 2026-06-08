@@ -17,9 +17,7 @@
   <nav id="top-nav">
     <a href="/dqvn/" class="nav-back">← Terug</a>
     <span class="nav-title">🎡 Draairad</span>
-    <button id="sync-nav-btn" onclick="toggleSyncDrawer()" title="Sync &amp; Account">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-    </button>
+    <div id="sync-section"></div>
   </nav>
 
   <div id="app">
@@ -200,19 +198,12 @@
     </div>
   </div>
 
-  <!-- ── Sync drawer ───────────────────────────────────────── -->
-  <div id="sync-backdrop" onclick="closeSyncDrawer()"></div>
-  <div id="sync-drawer">
-    <div class="sdrawer-hd">
-      <span class="sdrawer-title">☁️ Sync &amp; Account</span>
-      <button class="sdrawer-close" onclick="closeSyncDrawer()">×</button>
-    </div>
-    <div class="sdrawer-body sidebar-dark">
-      <div id="sync-section"></div>
-    </div>
-  </div>
 
   <div id="_toast"></div>
+
+  <!-- Stub elements kept for wheel.js Escape-key handler -->
+  <div id="sync-backdrop" style="display:none" aria-hidden="true"></div>
+  <div id="sync-drawer"   style="display:none" aria-hidden="true"></div>
 
   <script src="assets/js/sync.js"></script>
   <script src="assets/js/wheel.js" defer></script>
