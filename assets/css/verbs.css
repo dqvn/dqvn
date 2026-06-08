@@ -683,12 +683,19 @@ details[open] .sb-details-summary::after { transform: rotate(90deg); }
 .tlabel {
   width: 36px; flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
-  writing-mode: vertical-lr; transform: rotate(180deg);
-  font-size: .62rem; font-weight: 900; text-transform: uppercase; letter-spacing: .18em;
+  overflow: hidden;
   color: #fff; cursor: default; user-select: none;
+}
+.tlabel-inner {
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+  transform: rotate(-90deg);
+  white-space: nowrap;
   text-shadow: 0 1px 3px rgba(0,0,0,.25);
 }
-.tlabel-abbr { font-size: .5rem; opacity: .8; }
+.tlabel-name {
+  font-size: .6rem; font-weight: 900; text-transform: uppercase; letter-spacing: .16em;
+}
+.tlabel-abbr { font-size: .52rem; font-weight: 700; opacity: .85; letter-spacing: .1em; }
 .tlabel.present    { background: linear-gradient(180deg, #ff6b6b 0%, #e74c3c 100%); }
 .tlabel.past       { background: linear-gradient(180deg, #60a5fa 0%, #3b82f6 100%); }
 .tlabel.perfect    { background: linear-gradient(180deg, #34d399 0%, #10b981 100%); }
@@ -920,7 +927,8 @@ kbd {
   .vtranslation { font-size: .85em; margin-top: .12rem; }
   .vtype { margin-top: .22rem; }
   .tblock { min-height: 100px; }
-  .tlabel { width: 28px; font-size: .52rem; letter-spacing: .14em; }
+  .tlabel { width: 28px; }
+  .tlabel-name { font-size: .5rem; letter-spacing: .12em; }
   .tlabel-abbr { font-size: .42rem; }
   .tblock-body { padding: .55rem .7rem .45rem; }
   .tts-tense-btn { top: .3rem; right: .35rem; font-size: .55rem; }
