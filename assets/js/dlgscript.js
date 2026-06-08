@@ -1103,7 +1103,20 @@ const WAKE = (() => {
     const saved = STORE.get();
     renderSidebar(found);   // always render sidebar first — may be stubs, that's fine
 
-    if (saved.dialogueId) {
+    const urlId = new URLSearchParams(location.search).get('id');
+    if (urlId) {
+        // Deep-link: open the requested dialogue, ignoring saved session
+        let d = dialogues.find(x => x.id === urlId);
+        if (!d || !d.conversation) {
+            const cached = await DCACHE.get(urlId);
+            if (cached) {
+                d = { id: urlId, ...cached };
+                const idx = dialogues.findIndex(x => x.id === urlId);
+                if (idx >= 0) dialogues[idx] = d; else dialogues.push(d);
+            }
+        }
+        if (d && d.conversation) loadDialogue(d);
+    } else if (saved.dialogueId) {
         // Phase 2a — restore last session: decrypt just the last-open dialogue on demand
         await loadSession();
     } else if (found.length) {

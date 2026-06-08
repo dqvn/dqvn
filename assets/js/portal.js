@@ -636,6 +636,170 @@ function _findActiveUnit(plan, prog) {
   return null; // all done
 }
 
+/* ── Path map: flat list of {level, unit, state} ── */
+function _buildPathMap(plan, prog) {
+  let foundCurrent = false;
+  const nodes = [];
+  for (const level of (plan.levels || [])) {
+    for (const unit of (level.units || [])) {
+      const req     = unit.tasks.filter(t => t.required);
+      const allDone = req.length > 0 && req.every(t => _isTaskMastered(t, prog));
+      let state;
+      if (allDone) {
+        state = 'done';
+      } else if (!foundCurrent) {
+        state = 'current';
+        foundCurrent = true;
+      } else {
+        state = 'locked';
+      }
+      nodes.push({ level, unit, state });
+    }
+  }
+  return nodes;
+}
+
+/* ── Render the full vertical path map HTML ── */
+function _renderPathHtml(plan, prog, color, taskRow) {
+  const allNodes = _buildPathMap(plan, prog);
+  const levels   = plan.levels || [];
+  let html = '<div class="lp-map">';
+
+  for (let li = 0; li < levels.length; li++) {
+    const level    = levels[li];
+    const lvlColor = LEVEL_COLORS[level.id] || '#ea580c';
+    const lvlNodes = allNodes.filter(n => n.level.id === level.id);
+    const lvlCls   = `lp-${level.id.toLowerCase()}`;
+    const lvlDone  = lvlNodes.filter(n => n.state === 'done').length;
+    const lvlTotal = lvlNodes.length;
+    const isCompletedLvl = lvlDone === lvlTotal;
+    const isLockedLvl    = lvlNodes.every(n => n.state === 'locked');
+    const isLastLvl      = li === levels.length - 1;
+    const lvlNameT       = _pt(level.name, _LEVEL_NAMES_EN[level.id] || level.name);
+
+    html += '<div class="lp-map-level">';
+
+    if (isCompletedLvl) {
+      html += `
+        <div class="lp-node lp-node-lvl-done">
+          <div class="lp-rail">
+            <div class="lp-dot lp-dot-lvl ${lvlCls}">✓</div>
+            <div class="lp-rail-line"></div>
+          </div>
+          <div class="lp-node-body lp-body-compact">
+            <span class="lp-lvl-done-name">${level.icon} ${lvlNameT}</span>
+            <span class="lp-lvl-done-badge">${_pt('Voltooid 🏅', 'Complete 🏅')}</span>
+          </div>
+        </div>`;
+    } else if (isLockedLvl) {
+      const prevCefr = li > 0 ? levels[li - 1].cefr : '';
+      html += `
+        <div class="lp-node lp-node-lvl-locked">
+          <div class="lp-rail">
+            <div class="lp-dot lp-dot-lvl lp-dot-lvl-locked">🔒</div>
+            ${!isLastLvl ? '<div class="lp-rail-line"></div>' : ''}
+          </div>
+          <div class="lp-node-body lp-body-compact">
+            <span class="lp-lvl-locked-name">${level.icon} ${lvlNameT}</span>
+            <span class="lp-lvl-locked-sub">${prevCefr ? _pt('Voltooi ' + prevCefr + ' om te ontgrendelen', 'Complete ' + prevCefr + ' to unlock') : ''}</span>
+          </div>
+        </div>`;
+      html += '</div>';
+      continue;
+    } else {
+      html += `
+        <div class="lp-node lp-node-lvl-active">
+          <div class="lp-rail">
+            <div class="lp-dot lp-dot-lvl ${lvlCls}">${level.cefr}</div>
+            <div class="lp-rail-line"></div>
+          </div>
+          <div class="lp-node-body">
+            <div class="lp-lvl-hdr-row">
+              <span class="lp-lvl-hdr-name">${level.icon} ${lvlNameT}</span>
+              <span class="lp-lvl-hdr-pct ${lvlCls}">${lvlDone}/${lvlTotal}</span>
+            </div>
+            <div class="lp-lvl-bar">
+              <div class="lp-lvl-fill" id="lp-lvl-fill-${level.id}" style="width:0%;background:${lvlColor}"></div>
+            </div>
+          </div>
+        </div>`;
+
+      for (let i = 0; i < lvlNodes.length; i++) {
+        const { unit, state } = lvlNodes[i];
+        const isLastUnit   = isLastLvl && i === lvlNodes.length - 1;
+        const hasNextNode  = !isLastUnit;
+        const unitNumInLvl = i + 1;
+        const unitTitleT   = _pt(unit.title, _UNIT_TITLES_EN[unit.id] || unit.title);
+
+        if (state === 'done') {
+          html += `
+            <div class="lp-node lp-node-unit-done">
+              <div class="lp-rail">
+                <div class="lp-dot lp-dot-done">✓</div>
+                <div class="lp-rail-line"></div>
+              </div>
+              <div class="lp-node-body lp-body-compact">
+                <span class="lp-unit-done-name">${unit.icon} ${unitTitleT}</span>
+              </div>
+            </div>`;
+        } else if (state === 'current') {
+          const req     = unit.tasks.filter(t => t.required);
+          const opt     = unit.tasks.filter(t => !t.required);
+          const doneCnt = req.filter(t => _isTaskMastered(t, prog)).length;
+          const pct     = req.length ? Math.round(doneCnt / req.length * 100) : 0;
+          const optHtml = opt.length ? `
+            <details class="lp-optional-toggle">
+              <summary>${_pt(
+                `+ ${opt.length} optionele taak${opt.length !== 1 ? 'en' : ''}`,
+                `+ ${opt.length} optional task${opt.length !== 1 ? 's' : ''}`
+              )}</summary>
+              ${opt.map(taskRow).join('')}
+            </details>` : '';
+          html += `
+            <div class="lp-node lp-node-unit-cur">
+              <div class="lp-rail">
+                <div class="lp-dot lp-dot-cur"></div>
+                ${hasNextNode ? '<div class="lp-rail-line"></div>' : ''}
+              </div>
+              <div class="lp-node-body">
+                <div class="lp-cur-card" style="--lp-color:${color}">
+                  <div class="lp-cur-head">
+                    <span class="lp-cur-icon">${unit.icon}</span>
+                    <div class="lp-cur-meta">
+                      <div class="lp-cur-title">${unitTitleT}</div>
+                      <div class="lp-cur-sub">${_pt(`~${unit.estimated_days} dagen`, `~${unit.estimated_days} days`)} · ${unit.description}</div>
+                    </div>
+                    <span class="lp-cur-pct">${pct}%</span>
+                  </div>
+                  <div class="lp-track"><div class="lp-fill" id="lp-fill" style="width:0%;background:${color}"></div></div>
+                  ${req.map(taskRow).join('')}
+                  ${optHtml}
+                </div>
+              </div>
+            </div>`;
+        } else {
+          html += `
+            <div class="lp-node lp-node-unit-locked">
+              <div class="lp-rail">
+                <div class="lp-dot lp-dot-locked">${unitNumInLvl}</div>
+                ${hasNextNode ? '<div class="lp-rail-line"></div>' : ''}
+              </div>
+              <div class="lp-node-body lp-body-compact">
+                <span class="lp-unit-locked-name">${unit.icon} ${unitTitleT}</span>
+                <span class="lp-unit-locked-days">~${unit.estimated_days}d</span>
+              </div>
+            </div>`;
+        }
+      }
+    }
+
+    html += '</div>';
+  }
+
+  html += '</div>';
+  return html;
+}
+
 const LEVEL_COLORS = { A1: '#059669', A2: '#7c3aed' };
 const TOOL_ICONS   = {
   vanstart: '🚀', vocab: '📖', klanken: '🎵', getallen: '🔢',
@@ -681,7 +845,6 @@ async function renderLearningPath() {
   const { level, unit } = active;
   const color     = LEVEL_COLORS[level.id] || '#ea580c';
   const required  = unit.tasks.filter(t => t.required);
-  const optional  = unit.tasks.filter(t => !t.required);
   const doneCount = required.filter(t => _isTaskMastered(t, prog)).length;
   const pct       = required.length ? Math.round(doneCount / required.length * 100) : 0;
 
@@ -689,7 +852,7 @@ async function renderLearningPath() {
   const levelNameT = _pt(level.name, _LEVEL_NAMES_EN[level.id] || level.name);
   if (badge) badge.textContent = `${level.cefr} · ${unitTitleT}`;
 
-  const levelCls = `lp-${level.id.toLowerCase()}`;
+  const allNodes = _buildPathMap(plan, prog);
 
   const taskRow = (task) => {
     const done   = _isTaskMastered(task, prog);
@@ -706,15 +869,6 @@ async function renderLearningPath() {
         <span class="lp-task-status">${status}</span>
       </a>`;
   };
-
-  const optHtml = optional.length ? `
-    <details class="lp-optional-toggle">
-      <summary>${_pt(
-        `+ ${optional.length} optionele taak${optional.length !== 1 ? 'en' : ''}`,
-        `+ ${optional.length} optional task${optional.length !== 1 ? 's' : ''}`
-      )}</summary>
-      ${optional.map(taskRow).join('')}
-    </details>` : '';
 
   /* ── Today's tasks — filtered to current unit's tools only ── */
   // Only show tasks whose tool appears in the current leerpad unit (nl_plan_v1).
@@ -768,26 +922,19 @@ async function renderLearningPath() {
     }
   }
 
-  content.innerHTML = todayHtml + `
-    <div class="lp-level-chip ${levelCls}">${level.icon} ${levelNameT} — ${unitTitleT}</div>
-    <div class="lp-unit-card" style="--lp-color:${color}">
-      <div class="lp-unit-head">
-        <div class="lp-unit-icon">${unit.icon}</div>
-        <div class="lp-unit-meta">
-          <div class="lp-unit-title">${unitTitleT}</div>
-          <div class="lp-unit-sub">${_pt(`~${unit.estimated_days} dagen`, `~${unit.estimated_days} days`)} · ${unit.description}</div>
-        </div>
-        <span class="lp-unit-pct">${pct}%</span>
-      </div>
-      <div class="lp-track"><div class="lp-fill" id="lp-fill" style="width:0%;background:${color}"></div></div>
-      ${required.map(taskRow).join('')}
-      ${optHtml}
-    </div>`;
+  content.innerHTML = todayHtml + _renderPathHtml(plan, prog, color, taskRow);
 
   /* Animate progress bars after paint */
   requestAnimationFrame(() => requestAnimationFrame(() => {
     const fill = document.getElementById('lp-fill');
     if (fill) fill.style.width = pct + '%';
+    for (const lv of (plan.levels || [])) {
+      const lvFill = document.getElementById(`lp-lvl-fill-${lv.id}`);
+      if (!lvFill) continue;
+      const lvDone  = allNodes.filter(n => n.level.id === lv.id && n.state === 'done').length;
+      const lvTotal = allNodes.filter(n => n.level.id === lv.id).length;
+      lvFill.style.width = (lvTotal ? Math.round(lvDone / lvTotal * 100) : 0) + '%';
+    }
     activeTasks.forEach(t => {
       if (!t.progress) return;
       const el = document.getElementById('tmf-' + t.id);
