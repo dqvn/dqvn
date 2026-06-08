@@ -841,17 +841,9 @@ body {
 
 /* ── Mobile ──────────────────────────────────────────────── */
 
-/* ≤640 px: hide font-size controls and title — saves ~190 px in the nav */
-@media (max-width: 640px) {
-    .nav-title       { display: none !important; }
-    .nav-mode-toggle { margin-left: auto; }
-    .mode-btn        { padding: 5px 9px; font-size: .76rem; }
-}
-
-/* ≤480 px: further compress for small phones */
+/* ≤480 px: compress for small phones */
 @media (max-width: 480px) {
     #top-nav   { gap: 6px; padding: 0 10px; }
-    .mode-btn  { padding: 5px 7px; font-size: .72rem; }
     #game-card { padding: 20px 16px; }
     .gc-english { font-size: 1rem; }
     .done-stats { flex-direction: column; align-items: center; }
