@@ -203,6 +203,11 @@
 
 /* ── Mobile overrides ─────────────────────────────────────── */
 @media (max-width: 768px) {
+    /* Hide name in compact header chip — avatar only on small screens */
+    #top-nav .sync-name,
+    #vs-header .sync-name,
+    #mob-bar .sync-name { display: none !important; }
+
     /* Full-bleed on mobile drawer (parent padding is 0) */
     .left-menu #sync-section {
         border-radius: 0;
