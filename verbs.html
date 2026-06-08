@@ -135,8 +135,16 @@
     <div id="home-welcome">
       <div class="flag">🇳🇱</div>
       <h2>Dutch Verb Trainer</h2>
-      <p>Select a lesson from the menu to start practising conjugations.</p>
-      <p class="mob-hint">Tap ☰ above to open the lesson menu.</p>
+      <p>Select a lesson from the menu, or search for any verb below.</p>
+      <div id="main-search-wrap">
+        <div class="main-search-row">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg>
+          <input type="search" id="main-search-inp" placeholder="Search verbs, forms, translations…" autocomplete="off" spellcheck="false" aria-label="Search verbs">
+          <button id="main-search-clr" aria-label="Clear search">✕</button>
+        </div>
+      </div>
+      <div id="main-search-results"></div>
+      <p class="mob-hint" style="margin-top:.5rem">Tap ☰ above to open the lesson menu.</p>
     </div>
     <div id="home-lesson" style="display:none">
       <div class="home-lesson-hdr" id="home-lesson-hdr"></div>

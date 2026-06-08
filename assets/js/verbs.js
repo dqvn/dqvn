@@ -953,6 +953,8 @@ async function buildSearchIndex() {
   /* If search box has text when index finishes, refresh results */
   const inp = $('sb-search-inp');
   if (inp && inp.value.trim()) activateSearch(inp.value);
+  const mainInp = $('main-search-inp');
+  if (mainInp && mainInp.value.trim()) activateMainSearch(mainInp.value);
 }
 
 function searchVerbs(query) {
@@ -1066,6 +1068,73 @@ function activateSearch(query) {
   _searchTimer = setTimeout(() => renderSearchResults(query, searchVerbs(query)), 120);
 }
 
+/* ── Main-page search ── */
+let _mainSearchTimer = null;
+
+function renderMainSearchResults(query, results) {
+  const resEl = $('main-search-results');
+  if (!resEl) return;
+  const q = query.trim();
+
+  if (!q) { resEl.innerHTML = ''; return; }
+
+  if (results === null) {
+    resEl.innerHTML = '<div class="sr-building"><div class="spin"></div>Building index…</div>';
+    return;
+  }
+
+  if (!results.length) {
+    resEl.innerHTML = `<div class="sr-empty">No verbs found for "<strong>${q}</strong>"<br><small>Try infinitive, translation, or any conjugated form</small></div>`;
+    return;
+  }
+
+  resEl.innerHTML = `
+    <div class="sr-count">${results.length} result${results.length !== 1 ? 's' : ''}</div>
+    ${results.map((r, idx) => {
+      const { verb, lessonTitle, matchField } = r;
+      const showMatch = matchField.label !== 'Infinitive';
+      return `
+        <div class="main-sr-item" data-idx="${idx}" role="button" tabindex="0">
+          <div class="main-sr-top">
+            <span class="main-sr-inf">${verb.infinitive}</span>
+            <span class="main-sr-badge">${lessonTitle}</span>
+          </div>
+          <div class="main-sr-tr">${verb.translation}</div>
+          ${showMatch ? `<div class="main-sr-match"><span class="main-sr-match-lbl">${matchField.label}:</span> <span class="main-sr-match-val">${matchField.value}</span></div>` : ''}
+        </div>`;
+    }).join('')}`;
+
+  resEl.querySelectorAll('.main-sr-item').forEach((item, idx) => {
+    const open = async () => {
+      const r      = results[idx];
+      const lesson = st.manifest.find(l => l.id === r.lessonId);
+      if (lesson && st.currentLesson?.id !== r.lessonId) await selectLesson(lesson);
+      const vIdx = st.all.findIndex(v => v.infinitive === r.verb.infinitive);
+      if (vIdx !== -1) { clearMainSearch(); browseVerb(vIdx); }
+    };
+    item.addEventListener('click', open);
+    item.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
+  });
+}
+
+function clearMainSearch() {
+  const inp = $('main-search-inp');
+  if (inp) inp.value = '';
+  const clr = $('main-search-clr');
+  if (clr) clr.classList.remove('visible');
+  const res = $('main-search-results');
+  if (res) res.innerHTML = '';
+}
+
+function activateMainSearch(query) {
+  clearTimeout(_mainSearchTimer);
+  const clr = $('main-search-clr');
+  if (clr) clr.classList.toggle('visible', !!query.trim());
+  if (!query.trim()) { renderMainSearchResults('', []); return; }
+  if (!_searchIdx) { renderMainSearchResults(query, null); return; }
+  _mainSearchTimer = setTimeout(() => renderMainSearchResults(query, searchVerbs(query)), 120);
+}
+
 /* ─────────────────────────────────────────────────────────────────────────────
    WIRING
 ───────────────────────────────────────────────────────────────────────────── */
@@ -1108,6 +1177,14 @@ const _searchClr = $('sb-search-clr');
 _searchInp.addEventListener('input',   e => activateSearch(e.target.value));
 _searchInp.addEventListener('keydown', e => { if (e.key === 'Escape') { clearSearch(); _searchInp.blur(); } });
 _searchClr.addEventListener('click',   () => { clearSearch(); _searchInp.focus(); });
+
+const _mainInp = $('main-search-inp');
+const _mainClr = $('main-search-clr');
+if (_mainInp) {
+  _mainInp.addEventListener('input',   e => activateMainSearch(e.target.value));
+  _mainInp.addEventListener('keydown', e => { if (e.key === 'Escape') { clearMainSearch(); _mainInp.blur(); } });
+}
+if (_mainClr) _mainClr.addEventListener('click', () => { clearMainSearch(); _mainInp?.focus(); });
 
 /* ─────────────────────────────────────────────────────────────────────────────
    INIT
