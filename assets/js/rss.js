@@ -341,6 +341,7 @@ function closeSyncDrawer() {
 /* ── Sync nav avatar ─────────────────────────────────────── */
 function updateNavAvatar() {
     const btn = document.getElementById('sync-nav-btn');
+    if (!btn) return;   // sync-nav-btn removed; sync.js handles avatar display
     const user = readJSON('fc_sync_user', null);
     if (user?.picture) {
         btn.innerHTML = `<img src="${escH(user.picture)}" alt="">`;
