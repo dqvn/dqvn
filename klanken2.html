@@ -1,254 +1,517 @@
-<!DOCTYPE html>
+(() => {
+  const html = `<!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <title>Flashcards phát âm tiếng Hà Lan cho trẻ</title>
+  <meta charset="utf-8" />
+  <title>Flashcards phát âm tiếng Hà Lan cho trẻ — TTS, Hình ảnh, Game</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <style>
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background: #f5f6fa;
-      color: #222;
+      font-family: "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg,#f7fbff 0%, #f5f6fa 100%);
+      color: #1f2937;
+      -webkit-font-smoothing:antialiased;
     }
     header {
-      background: #ffb703;
+      background: linear-gradient(90deg,#ffb703,#fb8500);
       color: #fff;
-      padding: 16px 24px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 12px;
+      padding: 18px 20px;
+      display:flex;
+      gap:12px;
+      align-items:center;
+      flex-wrap:wrap;
     }
-    header h1 {
-      margin: 0;
-      font-size: 22px;
-      font-weight: 700;
-    }
-    header small {
-      opacity: 0.9;
-      font-size: 13px;
-    }
-    .controls {
-      margin-left: auto;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
+    header h1 { margin:0; font-size:20px; font-weight:700; }
+    header p { margin:0; opacity:0.95; font-size:13px; }
+    .controls { margin-left:auto; display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
     select, button {
-      border-radius: 999px;
-      border: 1px solid #d0d4e4;
-      padding: 6px 12px;
-      font-size: 13px;
-      background: #fff;
-      cursor: pointer;
+      border-radius:999px;
+      border:1px solid rgba(0,0,0,0.06);
+      padding:8px 12px;
+      font-size:13px;
+      background:#fff;
+      cursor:pointer;
     }
-    main {
-      padding: 16px 24px 32px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+    button.primary { background:#1e90ff; color:#fff; border:none; }
+    main { max-width:1200px; margin:18px auto; padding:0 18px 60px; }
+    .toolbar { display:flex; gap:10px; align-items:center; margin-bottom:12px; flex-wrap:wrap; }
     .flashgrid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 18px;
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+      gap:16px;
     }
     .card {
-      background: #fff;
-      border-radius: 20px;
-      padding: 18px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      border: 1px solid #e2e4f0;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      position: relative;
+      background:#fff;
+      border-radius:16px;
+      padding:14px;
+      box-shadow:0 6px 18px rgba(16,24,40,0.06);
+      border:1px solid #eef2ff;
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      align-items:center;
+      min-height:220px;
+      position:relative;
     }
-    .emoji {
-      font-size: 48px;
-      text-align: center;
-      margin-bottom: 4px;
+    .img-wrap { width:100%; height:120px; display:flex; align-items:center; justify-content:center; overflow:hidden; border-radius:12px; background:linear-gradient(180deg,#fff,#fbfbff); }
+    .img-wrap img { max-width:100%; max-height:100%; object-fit:contain; }
+    .emoji { font-size:56px; line-height:1; }
+    .sound { font-size:20px; font-weight:800; color:#0f172a; text-align:center; }
+    .desc { font-size:13px; color:#374151; text-align:center; }
+    .keyword { font-size:15px; font-weight:700; color:#0b1220; text-align:center; }
+    .examples { display:flex; gap:6px; flex-wrap:wrap; justify-content:center; margin-top:6px; }
+    .examples button { background:#f3f4ff; border:1px solid #e6e9ff; padding:6px 8px; border-radius:999px; cursor:pointer; font-size:13px; }
+    .tts-row { display:flex; gap:8px; margin-top:8px; align-items:center; }
+    .tts-btn { padding:8px 12px; border-radius:999px; border:none; cursor:pointer; font-weight:700; }
+    .tts-btn.play { background:#1e90ff; color:#fff; }
+    .tts-btn.slow { background:#0b6bff; color:#fff; }
+    .tts-btn.extra-slow { background:#0846a6; color:#fff; }
+    .small { font-size:12px; color:#475569; }
+    /* Game area */
+    .game-area { margin-top:26px; display:grid; grid-template-columns: 1fr 1fr; gap:18px; }
+    .panel { background:#fff; border-radius:12px; padding:12px; box-shadow:0 6px 18px rgba(16,24,40,0.04); border:1px solid #eef2ff; }
+    .drag-list { display:flex; gap:8px; flex-wrap:wrap; padding:8px; min-height:80px; border-radius:8px; background:#fbfdff; }
+    .draggable {
+      padding:8px 12px; background:#fff; border-radius:999px; border:1px solid #e6e9ff; cursor:grab; font-weight:700;
     }
-    .sound {
-      font-size: 26px;
-      font-weight: 700;
-      color: #1e3a8a;
-      text-align: center;
-    }
-    .desc {
-      font-size: 14px;
-      color: #374151;
-      text-align: center;
-    }
-    .keyword {
-      font-size: 15px;
-      font-weight: 600;
-      color: #111827;
-      text-align: center;
-    }
-    .examples {
-      font-size: 12px;
-      color: #4b5563;
-      text-align: center;
-    }
-    .examples span {
-      background: #f3f4ff;
-      padding: 2px 6px;
-      border-radius: 999px;
-      margin: 2px;
-      display: inline-block;
-    }
-    .tts-btn {
-      margin: 0 auto;
-      margin-top: 8px;
-      display: inline-block;
-      padding: 8px 16px;
-      background: #1e90ff;
-      color: white;
-      border-radius: 999px;
-      font-size: 13px;
-      cursor: pointer;
-      user-select: none;
-      transition: 0.2s;
-    }
-    .tts-btn:hover {
-      background: #0f6cd6;
+    .drop-target { min-height:60px; display:flex; align-items:center; justify-content:center; border:2px dashed #e6eefc; border-radius:10px; padding:8px; background:#fbfbff; }
+    .drop-target.filled { border-style:solid; background:#f0f8ff; }
+    .quiz-options { display:flex; flex-direction:column; gap:8px; margin-top:8px; }
+    .option-btn { padding:10px 12px; border-radius:10px; border:1px solid #e6e9ff; background:#fff; cursor:pointer; text-align:left; }
+    .option-btn.correct { background:#dcfce7; border-color:#86efac; }
+    .option-btn.wrong { background:#fee2e2; border-color:#fca5a5; }
+    .footer-note { margin-top:18px; font-size:13px; color:#475569; }
+    @media (max-width:900px) {
+      .game-area { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
-
 <header>
   <div>
     <h1>Flashcards phát âm tiếng Hà Lan</h1>
-    <small>Emoji lớn + TTS 0.3x + ví dụ + hướng dẫn đọc</small>
+    <p>Nghe phát âm chậm, hình ảnh thật, nghe từng ví dụ, game kéo-thả và quiz</p>
   </div>
   <div class="controls">
     <select id="groupFilter">
-      <option value="all">Tất cả nhóm âm</option>
+      <option value="all">Tất cả nhóm</option>
       <option value="Nguyên âm ngắn">Nguyên âm ngắn</option>
       <option value="Nguyên âm dài">Nguyên âm dài</option>
       <option value="Nguyên âm đôi">Nguyên âm đôi</option>
       <option value="Phụ âm đặc biệt">Phụ âm đặc biệt</option>
       <option value="Tổ hợp phụ âm">Tổ hợp phụ âm</option>
     </select>
-    <select id="soundFilter">
-      <option value="all">Tất cả âm</option>
-    </select>
+    <select id="soundFilter"><option value="all">Tất cả âm</option></select>
     <button id="shuffleBtn">🔀 Xáo trộn</button>
   </div>
 </header>
 
 <main>
-  <div id="cardsContainer" class="flashgrid"></div>
+  <div class="toolbar">
+    <div class="small">Chọn tốc độ TTS mặc định:</div>
+    <button class="tts-btn" id="rateNormal">0.3x (mặc định)</button>
+    <button class="tts-btn" id="rateSlower">0.2x (chậm hơn)</button>
+    <div style="margin-left:auto" class="small">Trình duyệt sử dụng Web Speech API để phát âm tiếng Hà Lan</div>
+  </div>
+
+  <section id="cardsSection">
+    <div id="cardsContainer" class="flashgrid"></div>
+  </section>
+
+  <section class="game-area" aria-label="Game và Quiz">
+    <div class="panel" id="matchPanel">
+      <h3 style="margin:0 0 8px 0">Game kéo‑thả: Ghép từ với hình</h3>
+      <div class="small">Kéo từ (bên dưới) vào ô tương ứng trên thẻ (bên phải). Nhấn "Kiểm tra" để xem kết quả.</div>
+      <div style="display:flex; gap:10px; margin-top:10px; align-items:flex-start; flex-wrap:wrap;">
+        <div style="flex:1">
+          <div id="dragList" class="drag-list" aria-label="Danh sách từ kéo"></div>
+          <div style="margin-top:8px; display:flex; gap:8px;">
+            <button id="resetMatch" class="primary">🔄 Làm lại</button>
+            <button id="checkMatch">✅ Kiểm tra</button>
+          </div>
+        </div>
+        <div style="flex:1">
+          <div id="dropGrid" style="display:grid; grid-template-columns:repeat(2,1fr); gap:10px;"></div>
+        </div>
+      </div>
+      <div id="matchResult" class="footer-note"></div>
+    </div>
+
+    <div class="panel" id="quizPanel">
+      <h3 style="margin:0 0 8px 0">Quiz luyện âm</h3>
+      <div class="small">Nghe âm, chọn từ đúng. Bạn có thể nghe lại bằng nút 🔊.</div>
+      <div style="display:flex; gap:8px; align-items:center; margin-top:10px;">
+        <button id="playQuizSound" class="tts-btn play">🔊 Nghe âm</button>
+        <button id="nextQuiz" class="tts-btn">⏭ Tiếp</button>
+      </div>
+      <div id="quizQuestion" style="margin-top:12px; font-weight:700;"></div>
+      <div id="quizOptions" class="quiz-options"></div>
+      <div id="quizFeedback" class="footer-note"></div>
+    </div>
+  </section>
+
+  <div class="footer-note" style="max-width:1200px; margin:18px auto;">
+    Gợi ý: Khuyến khích bé lặp lại sau khi nghe, bắt chước khẩu hình, và nghe ở tốc độ 0.2x nếu cần.
+  </div>
 </main>
 
 <script>
-  const flashcards = [
-    { group:"Nguyên âm ngắn", sound:"A", emoji:"🐱", displaySound:"A – /ɑ/", description:"Đọc như 'ă' trong tiếng Việt.", keyword:"kat", examples:["man","kat","jas","zak","lamp"] },
-    { group:"Nguyên âm ngắn", sound:"E", emoji:"✏️", displaySound:"E – /ɛ/", description:"Đọc như 'e' trong 'sen'.", keyword:"pen", examples:["pen","bed","gek","pet","fles"] },
-    { group:"Nguyên âm ngắn", sound:"I", emoji:"🐟", displaySound:"I – /ɪ/", description:"Đọc như 'i' ngắn.", keyword:"vis", examples:["vis","kip","lip","pit","dik"] },
-    { group:"Nguyên âm ngắn", sound:"O", emoji:"🍲", displaySound:"O – /ɔ/", description:"Đọc như 'o' trong 'bom'.", keyword:"pot", examples:["bos","pot","rok","kop","hond"] },
-    { group:"Nguyên âm ngắn", sound:"U", emoji:"🚌", displaySound:"U – /ʏ/", description:"Giữa 'ư' và 'i'.", keyword:"bus", examples:["bus","rug","put","hut","stuk"] },
+const flashcards = [
+  { group:"Nguyên âm ngắn", sound:"A", emoji:"🐱", imageRef:"", displaySound:"A – /ɑ/", description:"Đọc như 'ă' trong tiếng Việt.", keyword:"kat", examples:["man","kat","jas","zak","lamp"] },
+  { group:"Nguyên âm ngắn", sound:"E", emoji:"✏️", imageRef:"", displaySound:"E – /ɛ/", description:"Đọc như 'e' trong 'sen'.", keyword:"pen", examples:["pen","bed","gek","pet","fles"] },
+  { group:"Nguyên âm ngắn", sound:"I", emoji:"🐟", imageRef:"", displaySound:"I – /ɪ/", description:"Đọc như 'i' ngắn.", keyword:"vis", examples:["vis","kip","lip","pit","dik"] },
+  { group:"Nguyên âm ngắn", sound:"O", emoji:"🍲", imageRef:"", displaySound:"O – /ɔ/", description:"Đọc như 'o' trong 'bom'.", keyword:"pot", examples:["bos","pot","rok","kop","hond"] },
+  { group:"Nguyên âm ngắn", sound:"U", emoji:"🚌", imageRef:"", displaySound:"U – /ʏ/", description:"Giữa 'ư' và 'i'.", keyword:"bus", examples:["bus","rug","put","hut","stuk"] },
 
-    { group:"Nguyên âm dài", sound:"AA", emoji:"🌕", displaySound:"AA – /aː/", description:"Đọc 'a' dài.", keyword:"maan", examples:["maan","kaas","vaas","haas","baan"] },
-    { group:"Nguyên âm dài", sound:"EE", emoji:"🦌", displaySound:"EE – /eː/", description:"Đọc 'ê' dài.", keyword:"beer", examples:["been","meer","teen","lepel","beer"] },
-    { group:"Nguyên âm dài", sound:"IE", emoji:"🚲", displaySound:"IE – /iː/", description:"Đọc 'ii' dài.", keyword:"fiets", examples:["fiets","dier","vier","lied","kies"] },
-    { group:"Nguyên âm dài", sound:"OO", emoji:"🌳", displaySound:"OO – /oː/", description:"Đọc 'ô' dài.", keyword:"boom", examples:["boom","rood","doos","rook","boot"] },
-    { group:"Nguyên âm dài", sound:"UU", emoji:"🧱", displaySound:"UU – /yː/", description:"Đọc 'uy' tròn môi.", keyword:"muur", examples:["muur","vuur","duur","stuur","buur"] },
+  { group:"Nguyên âm dài", sound:"AA", emoji:"🌕", imageRef:"", displaySound:"AA – /aː/", description:"Đọc 'a' dài.", keyword:"maan", examples:["maan","kaas","vaas","haas","baan"] },
+  { group:"Nguyên âm dài", sound:"EE", emoji:"🦌", imageRef:"", displaySound:"EE – /eː/", description:"Đọc 'ê' dài.", keyword:"beer", examples:["been","meer","teen","lepel","beer"] },
+  { group:"Nguyên âm dài", sound:"IE", emoji:"🚲", imageRef:"", displaySound:"IE – /iː/", description:"Đọc 'ii' dài.", keyword:"fiets", examples:["fiets","dier","vier","lied","kies"] },
+  { group:"Nguyên âm dài", sound:"OO", emoji:"🌳", imageRef:"", displaySound:"OO – /oː/", description:"Đọc 'ô' dài.", keyword:"boom", examples:["boom","rood","doos","rook","boot"] },
+  { group:"Nguyên âm dài", sound:"UU", emoji:"🧱", imageRef:"", displaySound:"UU – /yː/", description:"Đọc 'uy' tròn môi.", keyword:"muur", examples:["muur","vuur","duur","stuur","buur"] },
 
-    { group:"Nguyên âm đôi", sound:"EI", emoji:"🐐", displaySound:"EI – /ɛi/", description:"Đọc như 'eoai'.", keyword:"geit", examples:["eigen","klein","reis","geit","plein"] },
-    { group:"Nguyên âm đôi", sound:"IJ", emoji:"🍦", displaySound:"IJ – /ɛi/", description:"Giống EI.", keyword:"ijs", examples:["ijs","prijs","tijd","wijn","lijn"] },
-    { group:"Nguyên âm đôi", sound:"UI", emoji:"🏠", displaySound:"UI – /œy/", description:"'ơi' tròn môi.", keyword:"huis", examples:["huis","muis","bruin","fruit","duin"] },
-    { group:"Nguyên âm đôi", sound:"AU", emoji:"🚗", displaySound:"AU – /ʌu/", description:"Đọc 'ao'.", keyword:"auto", examples:["auto","pauw","saus","lauw","gauw"] },
-    { group:"Nguyên âm đôi", sound:"OU", emoji:"❄️", displaySound:"OU – /ʌu/", description:"Giống AU.", keyword:"koud", examples:["koud","hout","goud","fout","bout"] },
-    { group:"Nguyên âm đôi", sound:"EU", emoji:"👃", displaySound:"EU – /øː/", description:"'ơ' tròn môi.", keyword:"neus", examples:["neus","leuk","keus","reus","heus"] },
-    { group:"Nguyên âm đôi", sound:"OE", emoji:"📚", displaySound:"OE – /uː/", description:"'u' dài.", keyword:"boek", examples:["boek","voet","roep","hoek","snoep"] },
+  { group:"Nguyên âm đôi", sound:"EI", emoji:"🐐", imageRef:"", displaySound:"EI – /ɛi/", description:"Đọc như 'eoai'.", keyword:"geit", examples:["eigen","klein","reis","geit","plein"] },
+  { group:"Nguyên âm đôi", sound:"IJ", emoji:"🍦", imageRef:"", displaySound:"IJ – /ɛi/", description:"Giống EI.", keyword:"ijs", examples:["ijs","prijs","tijd","wijn","lijn"] },
+  { group:"Nguyên âm đôi", sound:"UI", emoji:"🏠", imageRef:"", displaySound:"UI – /œy/", description:"'ơi' tròn môi.", keyword:"huis", examples:["huis","muis","bruin","fruit","duin"] },
+  { group:"Nguyên âm đôi", sound:"AU", emoji:"🚗", imageRef:"", displaySound:"AU – /ʌu/", description:"Đọc 'ao'.", keyword:"auto", examples:["auto","pauw","saus","lauw","gauw"] },
+  { group:"Nguyên âm đôi", sound:"OU", emoji:"❄️", imageRef:"", displaySound:"OU – /ʌu/", description:"Giống AU.", keyword:"koud", examples:["koud","hout","goud","fout","bout"] },
+  { group:"Nguyên âm đôi", sound:"EU", emoji:"👃", imageRef:"", displaySound:"EU – /øː/", description:"'ơ' tròn môi.", keyword:"neus", examples:["neus","leuk","keus","reus","heus"] },
+  { group:"Nguyên âm đôi", sound:"OE", emoji:"📚", imageRef:"", displaySound:"OE – /uː/", description:"'u' dài.", keyword:"boek", examples:["boek","voet","roep","hoek","snoep"] },
 
-    { group:"Phụ âm đặc biệt", sound:"CH", emoji:"💡", displaySound:"CH – /x/", description:"'kh' mạnh.", keyword:"licht", examples:["licht","lach","nacht","pech","toch"] },
-    { group:"Phụ âm đặc biệt", sound:"SCH", emoji:"🏫", displaySound:"SCH – /sx/", description:"'s' + 'kh'.", keyword:"school", examples:["school","schip","schaar","schapen","schrik"] },
-    { group:"Phụ âm đặc biệt", sound:"NG", emoji:"💍", displaySound:"NG – /ŋ/", description:"'ng' tiếng Việt.", keyword:"ring", examples:["lang","ring","bang","jong","tong"] },
-    { group:"Phụ âm đặc biệt", sound:"NK", emoji:"🏦", displaySound:"NK – /ŋk/", description:"'ng' + 'k'.", keyword:"bank", examples:["bank","dank","pink","drink","flink"] },
+  { group:"Phụ âm đặc biệt", sound:"CH", emoji:"💡", imageRef:"", displaySound:"CH – /x/", description:"'kh' mạnh.", keyword:"licht", examples:["licht","lach","nacht","pech","toch"] },
+  { group:"Phụ âm đặc biệt", sound:"SCH", emoji:"🏫", imageRef:"", displaySound:"SCH – /sx/", description:"'s' + 'kh'.", keyword:"school", examples:["school","schip","schaar","schapen","schrik"] },
+  { group:"Phụ âm đặc biệt", sound:"NG", emoji:"💍", imageRef:"", displaySound:"NG – /ŋ/", description:"'ng' tiếng Việt.", keyword:"ring", examples:["lang","ring","bang","jong","tong"] },
+  { group:"Phụ âm đặc biệt", sound:"NK", emoji:"🏦", imageRef:"", displaySound:"NK – /ŋk/", description:"'ng' + 'k'.", keyword:"bank", examples:["bank","dank","pink","drink","flink"] },
 
-    { group:"Tổ hợp phụ âm", sound:"BR", emoji:"🍞", displaySound:"BR", description:"Đọc liền 'b-r'.", keyword:"brood", examples:["brood","broek","brug","brief","bruin"] },
-    { group:"Tổ hợp phụ âm", sound:"DR", emoji:"💤", displaySound:"DR", description:"Đọc 'd-r'.", keyword:"droom", examples:["droom","drop","druk","drank","draad"] },
-    { group:"Tổ hợp phụ âm", sound:"GR", emoji:"🍃", displaySound:"GR", description:"'g' khàn + 'r'.", keyword:"groen", examples:["groen","groot","gras","groep","grijs"] },
-    { group:"Tổ hợp phụ âm", sound:"KL", emoji:"⏰", displaySound:"KL", description:"'k-l' liền.", keyword:"klok", examples:["klok","klas","klein","klap","klaar"] },
-    { group:"Tổ hợp phụ âm", sound:"PL", emoji:"🪴", displaySound:"PL", description:"'p-l' bật nhẹ.", keyword:"plant", examples:["plant","plek","plank","pluis","plas"] },
-    { group:"Tổ hợp phụ âm", sound:"SL", emoji:"🐍", displaySound:"SL", description:"'s-l' trơn.", keyword:"slang", examples:["slang","slaap","slak","slank","slecht"] },
-    { group:"Tổ hợp phụ âm", sound:"SP", emoji:"⚽", displaySound:"SP", description:"'s-p' bật.", keyword:"spelen", examples:["spelen","spin","spoor","spuit","spook"] },
-    { group:"Tổ hợp phụ âm", sound:"ST", emoji:"🪑", displaySound:"ST", description:"'s-t' rõ.", keyword:"stoel", examples:["stoel","steen","stap","sterk","storm"] },
-    { group:"Tổ hợp phụ âm", sound:"ZW", emoji:"⬛", displaySound:"ZW", description:"'z-w' tròn môi.", keyword:"zwart", examples:["zwart","zwemmen","zwak","zwaar","zwaluw"] }
-  ];
+  { group:"Tổ hợp phụ âm", sound:"BR", emoji:"🍞", imageRef:"", displaySound:"BR", description:"Đọc liền 'b-r'.", keyword:"brood", examples:["brood","broek","brug","brief","bruin"] },
+  { group:"Tổ hợp phụ âm", sound:"DR", emoji:"💤", imageRef:"", displaySound:"DR", description:"Đọc 'd-r'.", keyword:"droom", examples:["droom","drop","druk","drank","draad"] },
+  { group:"Tổ hợp phụ âm", sound:"GR", emoji:"🍃", imageRef:"", displaySound:"GR", description:"'g' khàn + 'r'.", keyword:"groen", examples:["groen","groot","gras","groep","grijs"] },
+  { group:"Tổ hợp phụ âm", sound:"KL", emoji:"⏰", imageRef:"", displaySound:"KL", description:"'k-l' liền.", keyword:"klok", examples:["klok","klas","klein","klap","klaar"] },
+  { group:"Tổ hợp phụ âm", sound:"PL", emoji:"🪴", imageRef:"", displaySound:"PL", description:"'p-l' bật nhẹ.", keyword:"plant", examples:["plant","plek","plank","pluis","plas"] },
+  { group:"Tổ hợp phụ âm", sound:"SL", emoji:"🐍", imageRef:"", displaySound:"SL", description:"'s-l' trơn.", keyword:"slang", examples:["slang","slaap","slak","slank","slecht"] },
+  { group:"Tổ hợp phụ âm", sound:"SP", emoji:"⚽", imageRef:"", displaySound:"SP", description:"'s-p' bật.", keyword:"spelen", examples:["spelen","spin","spoor","spuit","spook"] },
+  { group:"Tổ hợp phụ âm", sound:"ST", emoji:"🪑", imageRef:"", displaySound:"ST", description:"'s-t' rõ.", keyword:"stoel", examples:["stoel","steen","stap","sterk","storm"] },
+  { group:"Tổ hợp phụ âm", sound:"ZW", emoji:"⬛", imageRef:"", displaySound:"ZW", description:"'z-w' tròn môi.", keyword:"zwart", examples:["zwart","zwemmen","zwak","zwaar","zwaluw"] }
+];
 
-  const cardsContainer = document.getElementById("cardsContainer");
-  const groupFilter = document.getElementById("groupFilter");
-  const soundFilter = document.getElementById("soundFilter");
-  const shuffleBtn = document.getElementById("shuffleBtn");
+let defaultRate = 0.3;
+const synth = window.speechSynthesis;
+function getDutchVoice() {
+  const voices = synth.getVoices();
+  return voices.find(v => v.lang === "nl-NL") || voices.find(v => v.lang && v.lang.startsWith("nl")) || voices[0] || null;
+}
+function speakText(text, rate = defaultRate) {
+  if (!("speechSynthesis" in window)) { alert("Trình duyệt không hỗ trợ Web Speech API."); return; }
+  synth.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = "nl-NL";
+  u.rate = rate;
+  const v = getDutchVoice();
+  if (v) u.voice = v;
+  synth.speak(u);
+}
+const cardsContainer = document.getElementById("cardsContainer");
+const groupFilter = document.getElementById("groupFilter");
+const soundFilter = document.getElementById("soundFilter");
+const shuffleBtn = document.getElementById("shuffleBtn");
 
-  function speakCard(sound, keyword) {
-    const utter = new SpeechSynthesisUtterance();
-    utter.text = `${sound}. ${keyword}`;
-    utter.lang = "nl-NL";
-    utter.rate = 0.3;
-    const voices = speechSynthesis.getVoices();
-    const dutch = voices.find(v => v.lang === "nl-NL");
-    if (dutch) utter.voice = dutch;
-    speechSynthesis.speak(utter);
+function createCard(card) {
+  const el = document.createElement("div");
+  el.className = "card";
+  const imgWrap = document.createElement("div");
+  imgWrap.className = "img-wrap";
+  if (card.imageRef) {
+    const img = document.createElement("img");
+    img.alt = card.keyword;
+    img.src = card.imageRef;
+    imgWrap.appendChild(img);
+  } else {
+    const em = document.createElement("div");
+    em.className = "emoji";
+    em.textContent = card.emoji || "🔤";
+    imgWrap.appendChild(em);
   }
+  el.appendChild(imgWrap);
 
-  function createCard(card) {
-    const div = document.createElement("div");
-    div.className = "card";
-    div.innerHTML = `
-      <div class="emoji">${card.emoji}</div>
-      <div class="sound">${card.displaySound}</div>
-      <div class="desc">${card.description}</div>
-      <div class="keyword">Từ khóa: <b>${card.keyword}</b></div>
-      <div class="examples">
-        ${card.examples.map(e => `<span>${e}</span>`).join("")}
-      </div>
-      <div class="tts-btn" onclick="speakCard('${card.sound}', '${card.keyword}')">🔊 Nghe phát âm</div>
-    `;
-    return div;
-  }
+  const sound = document.createElement("div");
+  sound.className = "sound";
+  sound.textContent = card.displaySound;
+  el.appendChild(sound);
 
-  function renderSoundOptions() {
-    const sounds = [...new Set(flashcards.map(c => c.sound))].sort();
-    soundFilter.innerHTML = '<option value="all">Tất cả âm</option>' +
-      sounds.map(s => `<option value="${s}">${s}</option>`).join("");
-  }
+  const desc = document.createElement("div");
+  desc.className = "desc";
+  desc.textContent = card.description;
+  el.appendChild(desc);
 
-  function applyFilters() {
-    const g = groupFilter.value;
-    const s = soundFilter.value;
-    const filtered = flashcards.filter(c =>
-      (g === "all" || c.group === g) &&
-      (s === "all" || c.sound === s)
-    );
-    renderCards(filtered);
-  }
+  const kw = document.createElement("div");
+  kw.className = "keyword";
+  kw.textContent = card.keyword;
+  el.appendChild(kw);
 
-  function renderCards(list) {
-    cardsContainer.innerHTML = "";
-    list.forEach(card => cardsContainer.appendChild(createCard(card)));
-  }
-
-  shuffleBtn.addEventListener("click", () => {
-    const arr = [...flashcards];
-    for (let i = arr.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [arr[i], arr[j]] = [arr[j], arr[i]];
-    }
-    renderCards(arr);
+  const examples = document.createElement("div");
+  examples.className = "examples";
+  card.examples.forEach(w => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.textContent = w;
+    b.addEventListener("click", () => speakText(w, defaultRate));
+    examples.appendChild(b);
   });
+  el.appendChild(examples);
 
-  groupFilter.addEventListener("change", applyFilters);
-  soundFilter.addEventListener("change", applyFilters);
+  const ttsRow = document.createElement("div");
+  ttsRow.className = "tts-row";
+  const playBtn = document.createElement("button");
+  playBtn.className = "tts-btn play";
+  playBtn.textContent = "🔊 Nghe âm";
+  playBtn.addEventListener("click", () => speakText(`${card.displaySound}. ${card.keyword}`, defaultRate));
+  ttsRow.appendChild(playBtn);
 
+  const slowBtn = document.createElement("button");
+  slowBtn.className = "tts-btn extra-slow";
+  slowBtn.textContent = "🐢 Nghe rất chậm (0.2x)";
+  slowBtn.addEventListener("click", () => speakText(`${card.displaySound}. ${card.keyword}`, 0.2));
+  ttsRow.appendChild(slowBtn);
+
+  el.appendChild(ttsRow);
+
+  el.dataset.keyword = card.keyword;
+  el.dataset.sound = card.sound;
+  return el;
+}
+
+function renderCards(list) {
+  cardsContainer.innerHTML = "";
+  list.forEach(c => cardsContainer.appendChild(createCard(c)));
+  populateMatchTargets(list);
+}
+
+function renderSoundOptions() {
+  const sounds = [...new Set(flashcards.map(c => c.sound))].sort();
+  soundFilter.innerHTML = '<option value="all">Tất cả âm</option>' + sounds.map(s => `<option value="${s}">${s}</option>`).join("");
+}
+
+function applyFilters() {
+  const g = groupFilter.value;
+  const s = soundFilter.value;
+  const filtered = flashcards.filter(c => (g === "all" || c.group === g) && (s === "all" || c.sound === s));
+  renderCards(filtered);
+}
+
+shuffleBtn.addEventListener("click", () => {
+  const arr = [...flashcards];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  renderCards(arr);
+});
+
+groupFilter.addEventListener("change", applyFilters);
+soundFilter.addEventListener("change", applyFilters);
+
+document.getElementById("rateNormal").addEventListener("click", () => {
+  defaultRate = 0.3;
+  document.getElementById("rateNormal").style.opacity = "1";
+  document.getElementById("rateSlower").style.opacity = "0.8";
+});
+document.getElementById("rateSlower").addEventListener("click", () => {
+  defaultRate = 0.2;
+  document.getElementById("rateNormal").style.opacity = "0.8";
+  document.getElementById("rateSlower").style.opacity = "1";
+});
+
+const dragList = document.getElementById("dragList");
+const dropGrid = document.getElementById("dropGrid");
+const resetMatchBtn = document.getElementById("resetMatch");
+const checkMatchBtn = document.getElementById("checkMatch");
+const matchResult = document.getElementById("matchResult");
+
+let currentMatchCards = [];
+let dragItems = [];
+
+function populateMatchTargets(list) {
+  const pool = list.slice(0, 12);
+  const chosen = [];
+  const copy = pool.slice();
+  while (chosen.length < 6 && copy.length) {
+    const idx = Math.floor(Math.random() * copy.length);
+    chosen.push(copy.splice(idx,1)[0]);
+  }
+  currentMatchCards = chosen;
+  resetMatch();
+}
+
+function resetMatch() {
+  dragList.innerHTML = "";
+  dropGrid.innerHTML = "";
+  matchResult.textContent = "";
+  dragItems = currentMatchCards.map(c => c.keyword);
+  for (let i = dragItems.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [dragItems[i], dragItems[j]] = [dragItems[j], dragItems[i]];
+  }
+  dragItems.forEach(word => {
+    const d = document.createElement("div");
+    d.className = "draggable";
+    d.draggable = true;
+    d.textContent = word;
+    d.id = "drag-" + word;
+    d.addEventListener("dragstart", dragStart);
+    dragList.appendChild(d);
+  });
+  currentMatchCards.forEach(c => {
+    const box = document.createElement("div");
+    box.className = "drop-target";
+    box.dataset.keyword = c.keyword;
+    const inner = document.createElement("div");
+    inner.style.textAlign = "center";
+    inner.style.width = "100%";
+    inner.style.height = "100%";
+    if (c.imageRef) {
+      const img = document.createElement("img");
+      img.src = c.imageRef;
+      img.alt = c.keyword;
+      img.style.maxWidth = "100%";
+      img.style.maxHeight = "80px";
+      inner.appendChild(img);
+    } else {
+      const em = document.createElement("div");
+      em.textContent = c.emoji || "🔤";
+      em.style.fontSize = "36px";
+      inner.appendChild(em);
+    }
+    box.appendChild(inner);
+    box.addEventListener("dragover", dragOver);
+    box.addEventListener("drop", dropItem);
+    dropGrid.appendChild(box);
+  });
+}
+
+function dragStart(e) { e.dataTransfer.setData("text/plain", e.target.textContent); }
+function dragOver(e) { e.preventDefault(); }
+function dropItem(e) {
+  e.preventDefault();
+  const word = e.dataTransfer.getData("text/plain");
+  const target = e.currentTarget;
+  if (target.dataset.filled) return;
+  const dragged = document.getElementById("drag-" + word);
+  if (dragged) {
+    target.appendChild(dragged);
+    dragged.style.cursor = "default";
+    dragged.draggable = false;
+    target.classList.add("filled");
+    target.dataset.filled = word;
+  }
+}
+
+resetMatchBtn.addEventListener("click", () => { resetMatch(); });
+
+checkMatchBtn.addEventListener("click", () => {
+  const targets = Array.from(dropGrid.querySelectorAll(".drop-target"));
+  let correct = 0;
+  targets.forEach(t => {
+    const placed = t.dataset.filled || "";
+    const expected = t.dataset.keyword;
+    if (placed === expected) {
+      t.style.borderColor = "#86efac";
+      t.style.background = "#ecfdf5";
+      correct++;
+    } else {
+      t.style.borderColor = "#fca5a5";
+      t.style.background = "#fff1f2";
+    }
+  });
+  matchResult.textContent = `Kết quả: ${correct} / ${targets.length} đúng`;
+});
+
+const playQuizSoundBtn = document.getElementById("playQuizSound");
+const nextQuizBtn = document.getElementById("nextQuiz");
+const quizQuestion = document.getElementById("quizQuestion");
+const quizOptions = document.getElementById("quizOptions");
+const quizFeedback = document.getElementById("quizFeedback");
+
+let currentQuiz = null;
+
+function pickQuiz() {
+  const card = flashcards[Math.floor(Math.random() * flashcards.length)];
+  const others = flashcards.filter(c => c.keyword !== card.keyword);
+  const opts = [card.keyword];
+  while (opts.length < 4 && others.length) {
+    const idx = Math.floor(Math.random() * others.length);
+    const pick = others.splice(idx,1)[0];
+    if (!opts.includes(pick.keyword)) opts.push(pick.keyword);
+  }
+  for (let i = opts.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [opts[i], opts[j]] = [opts[j], opts[i]];
+  }
+  currentQuiz = { card, options: opts };
+  renderQuiz();
+}
+
+function renderQuiz() {
+  quizFeedback.textContent = "";
+  quizQuestion.textContent = `Chọn từ có âm: ${currentQuiz.card.displaySound}`;
+  quizOptions.innerHTML = "";
+  currentQuiz.options.forEach(opt => {
+    const b = document.createElement("button");
+    b.className = "option-btn";
+    b.textContent = opt;
+    b.addEventListener("click", () => {
+      if (opt === currentQuiz.card.keyword) {
+        b.classList.add("correct");
+        quizFeedback.textContent = "Chính xác 🎉";
+        speakText(opt, 0.3);
+      } else {
+        b.classList.add("wrong");
+        quizFeedback.textContent = `Sai — đáp án đúng: ${currentQuiz.card.keyword}`;
+        Array.from(quizOptions.children).forEach(ch => {
+          if (ch.textContent === currentQuiz.card.keyword) ch.classList.add("correct");
+        });
+        speakText(currentQuiz.card.keyword, 0.3);
+      }
+      Array.from(quizOptions.children).forEach(ch => ch.disabled = true);
+    });
+    quizOptions.appendChild(b);
+  });
+}
+
+playQuizSoundBtn.addEventListener("click", () => {
+  if (currentQuiz) speakText(`${currentQuiz.card.displaySound}. ${currentQuiz.card.keyword}`, defaultRate);
+});
+nextQuizBtn.addEventListener("click", () => { pickQuiz(); });
+
+function init() {
   renderSoundOptions();
   renderCards(flashcards);
-</script>
+  if (speechSynthesis && speechSynthesis.onvoiceschanged !== undefined) {
+    speechSynthesis.onvoiceschanged = () => {};
+  }
+  populateMatchTargets(flashcards);
+  pickQuiz();
+}
+init();
 
+document.addEventListener("keydown", (e) => {
+  if (e.key === " " && document.activeElement && document.activeElement.classList.contains("draggable")) {
+    e.preventDefault();
+    speakText(document.activeElement.textContent, defaultRate);
+  }
+});
+</script>
 </body>
-</html>
+</html>`;
+  const blob = new Blob([html], {type: "text/html;charset=utf-8"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "dutch-flashcards.html";
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(() => {
+    URL.revokeObjectURL(url);
+    a.remove();
+  }, 1000);
+})();
