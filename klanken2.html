@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flashcards phát âm tiếng Hà Lan cho trẻ</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: #f5f6fa;
+      color: #222;
+    }
+    header {
+      background: #ffb703;
+      color: #fff;
+      padding: 16px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 700;
+    }
+    header small {
+      opacity: 0.9;
+      font-size: 13px;
+    }
+    .controls {
+      margin-left: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    select, button {
+      border-radius: 999px;
+      border: 1px solid #d0d4e4;
+      padding: 6px 12px;
+      font-size: 13px;
+      background: #fff;
+      cursor: pointer;
+    }
+    main {
+      padding: 16px 24px 32px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .flashgrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 18px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      border: 1px solid #e2e4f0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: relative;
+    }
+    .emoji {
+      font-size: 48px;
+      text-align: center;
+      margin-bottom: 4px;
+    }
+    .sound {
+      font-size: 26px;
+      font-weight: 700;
+      color: #1e3a8a;
+      text-align: center;
+    }
+    .desc {
+      font-size: 14px;
+      color: #374151;
+      text-align: center;
+    }
+    .keyword {
+      font-size: 15px;
+      font-weight: 600;
+      color: #111827;
+      text-align: center;
+    }
+    .examples {
+      font-size: 12px;
+      color: #4b5563;
+      text-align: center;
+    }
+    .examples span {
+      background: #f3f4ff;
+      padding: 2px 6px;
+      border-radius: 999px;
+      margin: 2px;
+      display: inline-block;
+    }
+    .tts-btn {
+      margin: 0 auto;
+      margin-top: 8px;
+      display: inline-block;
+      padding: 8px 16px;
+      background: #1e90ff;
+      color: white;
+      border-radius: 999px;
+      font-size: 13px;
+      cursor: pointer;
+      user-select: none;
+      transition: 0.2s;
+    }
+    .tts-btn:hover {
+      background: #0f6cd6;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Flashcards phát âm tiếng Hà Lan</h1>
+    <small>Emoji lớn + TTS 0.3x + ví dụ + hướng dẫn đọc</small>
+  </div>
+  <div class="controls">
+    <select id="groupFilter">
+      <option value="all">Tất cả nhóm âm</option>
+      <option value="Nguyên âm ngắn">Nguyên âm ngắn</option>
+      <option value="Nguyên âm dài">Nguyên âm dài</option>
+      <option value="Nguyên âm đôi">Nguyên âm đôi</option>
+      <option value="Phụ âm đặc biệt">Phụ âm đặc biệt</option>
+      <option value="Tổ hợp phụ âm">Tổ hợp phụ âm</option>
+    </select>
+    <select id="soundFilter">
+      <option value="all">Tất cả âm</option>
+    </select>
+    <button id="shuffleBtn">🔀 Xáo trộn</button>
+  </div>
+</header>
+
+<main>
+  <div id="cardsContainer" class="flashgrid"></div>
+</main>
+
+<script>
+  const flashcards = [
+    { group:"Nguyên âm ngắn", sound:"A", emoji:"🐱", displaySound:"A – /ɑ/", description:"Đọc như 'ă' trong tiếng Việt.", keyword:"kat", examples:["man","kat","jas","zak","lamp"] },
+    { group:"Nguyên âm ngắn", sound:"E", emoji:"✏️", displaySound:"E – /ɛ/", description:"Đọc như 'e' trong 'sen'.", keyword:"pen", examples:["pen","bed","gek","pet","fles"] },
+    { group:"Nguyên âm ngắn", sound:"I", emoji:"🐟", displaySound:"I – /ɪ/", description:"Đọc như 'i' ngắn.", keyword:"vis", examples:["vis","kip","lip","pit","dik"] },
+    { group:"Nguyên âm ngắn", sound:"O", emoji:"🍲", displaySound:"O – /ɔ/", description:"Đọc như 'o' trong 'bom'.", keyword:"pot", examples:["bos","pot","rok","kop","hond"] },
+    { group:"Nguyên âm ngắn", sound:"U", emoji:"🚌", displaySound:"U – /ʏ/", description:"Giữa 'ư' và 'i'.", keyword:"bus", examples:["bus","rug","put","hut","stuk"] },
+
+    { group:"Nguyên âm dài", sound:"AA", emoji:"🌕", displaySound:"AA – /aː/", description:"Đọc 'a' dài.", keyword:"maan", examples:["maan","kaas","vaas","haas","baan"] },
+    { group:"Nguyên âm dài", sound:"EE", emoji:"🦌", displaySound:"EE – /eː/", description:"Đọc 'ê' dài.", keyword:"beer", examples:["been","meer","teen","lepel","beer"] },
+    { group:"Nguyên âm dài", sound:"IE", emoji:"🚲", displaySound:"IE – /iː/", description:"Đọc 'ii' dài.", keyword:"fiets", examples:["fiets","dier","vier","lied","kies"] },
+    { group:"Nguyên âm dài", sound:"OO", emoji:"🌳", displaySound:"OO – /oː/", description:"Đọc 'ô' dài.", keyword:"boom", examples:["boom","rood","doos","rook","boot"] },
+    { group:"Nguyên âm dài", sound:"UU", emoji:"🧱", displaySound:"UU – /yː/", description:"Đọc 'uy' tròn môi.", keyword:"muur", examples:["muur","vuur","duur","stuur","buur"] },
+
+    { group:"Nguyên âm đôi", sound:"EI", emoji:"🐐", displaySound:"EI – /ɛi/", description:"Đọc như 'eoai'.", keyword:"geit", examples:["eigen","klein","reis","geit","plein"] },
+    { group:"Nguyên âm đôi", sound:"IJ", emoji:"🍦", displaySound:"IJ – /ɛi/", description:"Giống EI.", keyword:"ijs", examples:["ijs","prijs","tijd","wijn","lijn"] },
+    { group:"Nguyên âm đôi", sound:"UI", emoji:"🏠", displaySound:"UI – /œy/", description:"'ơi' tròn môi.", keyword:"huis", examples:["huis","muis","bruin","fruit","duin"] },
+    { group:"Nguyên âm đôi", sound:"AU", emoji:"🚗", displaySound:"AU – /ʌu/", description:"Đọc 'ao'.", keyword:"auto", examples:["auto","pauw","saus","lauw","gauw"] },
+    { group:"Nguyên âm đôi", sound:"OU", emoji:"❄️", displaySound:"OU – /ʌu/", description:"Giống AU.", keyword:"koud", examples:["koud","hout","goud","fout","bout"] },
+    { group:"Nguyên âm đôi", sound:"EU", emoji:"👃", displaySound:"EU – /øː/", description:"'ơ' tròn môi.", keyword:"neus", examples:["neus","leuk","keus","reus","heus"] },
+    { group:"Nguyên âm đôi", sound:"OE", emoji:"📚", displaySound:"OE – /uː/", description:"'u' dài.", keyword:"boek", examples:["boek","voet","roep","hoek","snoep"] },
+
+    { group:"Phụ âm đặc biệt", sound:"CH", emoji:"💡", displaySound:"CH – /x/", description:"'kh' mạnh.", keyword:"licht", examples:["licht","lach","nacht","pech","toch"] },
+    { group:"Phụ âm đặc biệt", sound:"SCH", emoji:"🏫", displaySound:"SCH – /sx/", description:"'s' + 'kh'.", keyword:"school", examples:["school","schip","schaar","schapen","schrik"] },
+    { group:"Phụ âm đặc biệt", sound:"NG", emoji:"💍", displaySound:"NG – /ŋ/", description:"'ng' tiếng Việt.", keyword:"ring", examples:["lang","ring","bang","jong","tong"] },
+    { group:"Phụ âm đặc biệt", sound:"NK", emoji:"🏦", displaySound:"NK – /ŋk/", description:"'ng' + 'k'.", keyword:"bank", examples:["bank","dank","pink","drink","flink"] },
+
+    { group:"Tổ hợp phụ âm", sound:"BR", emoji:"🍞", displaySound:"BR", description:"Đọc liền 'b-r'.", keyword:"brood", examples:["brood","broek","brug","brief","bruin"] },
+    { group:"Tổ hợp phụ âm", sound:"DR", emoji:"💤", displaySound:"DR", description:"Đọc 'd-r'.", keyword:"droom", examples:["droom","drop","druk","drank","draad"] },
+    { group:"Tổ hợp phụ âm", sound:"GR", emoji:"🍃", displaySound:"GR", description:"'g' khàn + 'r'.", keyword:"groen", examples:["groen","groot","gras","groep","grijs"] },
+    { group:"Tổ hợp phụ âm", sound:"KL", emoji:"⏰", displaySound:"KL", description:"'k-l' liền.", keyword:"klok", examples:["klok","klas","klein","klap","klaar"] },
+    { group:"Tổ hợp phụ âm", sound:"PL", emoji:"🪴", displaySound:"PL", description:"'p-l' bật nhẹ.", keyword:"plant", examples:["plant","plek","plank","pluis","plas"] },
+    { group:"Tổ hợp phụ âm", sound:"SL", emoji:"🐍", displaySound:"SL", description:"'s-l' trơn.", keyword:"slang", examples:["slang","slaap","slak","slank","slecht"] },
+    { group:"Tổ hợp phụ âm", sound:"SP", emoji:"⚽", displaySound:"SP", description:"'s-p' bật.", keyword:"spelen", examples:["spelen","spin","spoor","spuit","spook"] },
+    { group:"Tổ hợp phụ âm", sound:"ST", emoji:"🪑", displaySound:"ST", description:"'s-t' rõ.", keyword:"stoel", examples:["stoel","steen","stap","sterk","storm"] },
+    { group:"Tổ hợp phụ âm", sound:"ZW", emoji:"⬛", displaySound:"ZW", description:"'z-w' tròn môi.", keyword:"zwart", examples:["zwart","zwemmen","zwak","zwaar","zwaluw"] }
+  ];
+
+  const cardsContainer = document.getElementById("cardsContainer");
+  const groupFilter = document.getElementById("groupFilter");
+  const soundFilter = document.getElementById("soundFilter");
+  const shuffleBtn = document.getElementById("shuffleBtn");
+
+  function speakCard(sound, keyword) {
+    const utter = new SpeechSynthesisUtterance();
+    utter.text = `${sound}. ${keyword}`;
+    utter.lang = "nl-NL";
+    utter.rate = 0.3;
+    const voices = speechSynthesis.getVoices();
+    const dutch = voices.find(v => v.lang === "nl-NL");
+    if (dutch) utter.voice = dutch;
+    speechSynthesis.speak(utter);
+  }
+
+  function createCard(card) {
+    const div = document.createElement("div");
+    div.className = "card";
+    div.innerHTML = `
+      <div class="emoji">${card.emoji}</div>
+      <div class="sound">${card.displaySound}</div>
+      <div class="desc">${card.description}</div>
+      <div class="keyword">Từ khóa: <b>${card.keyword}</b></div>
+      <div class="examples">
+        ${card.examples.map(e => `<span>${e}</span>`).join("")}
+      </div>
+      <div class="tts-btn" onclick="speakCard('${card.sound}', '${card.keyword}')">🔊 Nghe phát âm</div>
+    `;
+    return div;
+  }
+
+  function renderSoundOptions() {
+    const sounds = [...new Set(flashcards.map(c => c.sound))].sort();
+    soundFilter.innerHTML = '<option value="all">Tất cả âm</option>' +
+      sounds.map(s => `<option value="${s}">${s}</option>`).join("");
+  }
+
+  function applyFilters() {
+    const g = groupFilter.value;
+    const s = soundFilter.value;
+    const filtered = flashcards.filter(c =>
+      (g === "all" || c.group === g) &&
+      (s === "all" || c.sound === s)
+    );
+    renderCards(filtered);
+  }
+
+  function renderCards(list) {
+    cardsContainer.innerHTML = "";
+    list.forEach(card => cardsContainer.appendChild(createCard(card)));
+  }
+
+  shuffleBtn.addEventListener("click", () => {
+    const arr = [...flashcards];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    renderCards(arr);
+  });
+
+  groupFilter.addEventListener("change", applyFilters);
+  soundFilter.addEventListener("change", applyFilters);
+
+  renderSoundOptions();
+  renderCards(flashcards);
+</script>
+
+</body>
+</html>
