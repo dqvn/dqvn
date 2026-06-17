@@ -1,5 +1,4 @@
-(() => {
-  const html = `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="utf-8" />
@@ -66,10 +65,8 @@
     .tts-row { display:flex; gap:8px; margin-top:8px; align-items:center; }
     .tts-btn { padding:8px 12px; border-radius:999px; border:none; cursor:pointer; font-weight:700; }
     .tts-btn.play { background:#1e90ff; color:#fff; }
-    .tts-btn.slow { background:#0b6bff; color:#fff; }
     .tts-btn.extra-slow { background:#0846a6; color:#fff; }
     .small { font-size:12px; color:#475569; }
-    /* Game area */
     .game-area { margin-top:26px; display:grid; grid-template-columns: 1fr 1fr; gap:18px; }
     .panel { background:#fff; border-radius:12px; padding:12px; box-shadow:0 6px 18px rgba(16,24,40,0.04); border:1px solid #eef2ff; }
     .drag-list { display:flex; gap:8px; flex-wrap:wrap; padding:8px; min-height:80px; border-radius:8px; background:#fbfdff; }
@@ -92,7 +89,7 @@
 <header>
   <div>
     <h1>Flashcards phát âm tiếng Hà Lan</h1>
-    <p>Nghe phát âm chậm, hình ảnh thật, nghe từng ví dụ, game kéo-thả và quiz</p>
+    <p>Nghe phát âm chậm, hình ảnh (emoji), nghe từng ví dụ, game kéo-thả và quiz</p>
   </div>
   <div class="controls">
     <select id="groupFilter">
@@ -159,50 +156,57 @@
 
 <script>
 const flashcards = [
-  { group:"Nguyên âm ngắn", sound:"A", emoji:"🐱", imageRef:"", displaySound:"A – /ɑ/", description:"Đọc như 'ă' trong tiếng Việt.", keyword:"kat", examples:["man","kat","jas","zak","lamp"] },
-  { group:"Nguyên âm ngắn", sound:"E", emoji:"✏️", imageRef:"", displaySound:"E – /ɛ/", description:"Đọc như 'e' trong 'sen'.", keyword:"pen", examples:["pen","bed","gek","pet","fles"] },
-  { group:"Nguyên âm ngắn", sound:"I", emoji:"🐟", imageRef:"", displaySound:"I – /ɪ/", description:"Đọc như 'i' ngắn.", keyword:"vis", examples:["vis","kip","lip","pit","dik"] },
-  { group:"Nguyên âm ngắn", sound:"O", emoji:"🍲", imageRef:"", displaySound:"O – /ɔ/", description:"Đọc như 'o' trong 'bom'.", keyword:"pot", examples:["bos","pot","rok","kop","hond"] },
-  { group:"Nguyên âm ngắn", sound:"U", emoji:"🚌", imageRef:"", displaySound:"U – /ʏ/", description:"Giữa 'ư' và 'i'.", keyword:"bus", examples:["bus","rug","put","hut","stuk"] },
+  { group:"Nguyên âm ngắn", sound:"A", emoji:"🐱", displaySound:"A – /ɑ/", description:"Đọc như 'ă' trong tiếng Việt.", keyword:"kat", examples:["man","kat","jas","zak","lamp"] },
+  { group:"Nguyên âm ngắn", sound:"E", emoji:"✏️", displaySound:"E – /ɛ/", description:"Đọc như 'e' trong 'sen'.", keyword:"pen", examples:["pen","bed","gek","pet","fles"] },
+  { group:"Nguyên âm ngắn", sound:"I", emoji:"🐟", displaySound:"I – /ɪ/", description:"Đọc như 'i' ngắn.", keyword:"vis", examples:["vis","kip","lip","pit","dik"] },
+  { group:"Nguyên âm ngắn", sound:"O", emoji:"🍲", displaySound:"O – /ɔ/", description:"Đọc như 'o' trong 'bom'.", keyword:"pot", examples:["bos","pot","rok","kop","hond"] },
+  { group:"Nguyên âm ngắn", sound:"U", emoji:"🚌", displaySound:"U – /ʏ/", description:"Giữa 'ư' và 'i'.", keyword:"bus", examples:["bus","rug","put","hut","stuk"] },
 
-  { group:"Nguyên âm dài", sound:"AA", emoji:"🌕", imageRef:"", displaySound:"AA – /aː/", description:"Đọc 'a' dài.", keyword:"maan", examples:["maan","kaas","vaas","haas","baan"] },
-  { group:"Nguyên âm dài", sound:"EE", emoji:"🦌", imageRef:"", displaySound:"EE – /eː/", description:"Đọc 'ê' dài.", keyword:"beer", examples:["been","meer","teen","lepel","beer"] },
-  { group:"Nguyên âm dài", sound:"IE", emoji:"🚲", imageRef:"", displaySound:"IE – /iː/", description:"Đọc 'ii' dài.", keyword:"fiets", examples:["fiets","dier","vier","lied","kies"] },
-  { group:"Nguyên âm dài", sound:"OO", emoji:"🌳", imageRef:"", displaySound:"OO – /oː/", description:"Đọc 'ô' dài.", keyword:"boom", examples:["boom","rood","doos","rook","boot"] },
-  { group:"Nguyên âm dài", sound:"UU", emoji:"🧱", imageRef:"", displaySound:"UU – /yː/", description:"Đọc 'uy' tròn môi.", keyword:"muur", examples:["muur","vuur","duur","stuur","buur"] },
+  { group:"Nguyên âm dài", sound:"AA", emoji:"🌕", displaySound:"AA – /aː/", description:"Đọc 'a' dài.", keyword:"maan", examples:["maan","kaas","vaas","haas","baan"] },
+  { group:"Nguyên âm dài", sound:"EE", emoji:"🦌", displaySound:"EE – /eː/", description:"Đọc 'ê' dài.", keyword:"beer", examples:["been","meer","teen","lepel","beer"] },
+  { group:"Nguyên âm dài", sound:"IE", emoji:"🚲", displaySound:"IE – /iː/", description:"Đọc 'ii' dài.", keyword:"fiets", examples:["fiets","dier","vier","lied","kies"] },
+  { group:"Nguyên âm dài", sound:"OO", emoji:"🌳", displaySound:"OO – /oː/", description:"Đọc 'ô' dài.", keyword:"boom", examples:["boom","rood","doos","rook","boot"] },
+  { group:"Nguyên âm dài", sound:"UU", emoji:"🧱", displaySound:"UU – /yː/", description:"Đọc 'uy' tròn môi.", keyword:"muur", examples:["muur","vuur","duur","stuur","buur"] },
 
-  { group:"Nguyên âm đôi", sound:"EI", emoji:"🐐", imageRef:"", displaySound:"EI – /ɛi/", description:"Đọc như 'eoai'.", keyword:"geit", examples:["eigen","klein","reis","geit","plein"] },
-  { group:"Nguyên âm đôi", sound:"IJ", emoji:"🍦", imageRef:"", displaySound:"IJ – /ɛi/", description:"Giống EI.", keyword:"ijs", examples:["ijs","prijs","tijd","wijn","lijn"] },
-  { group:"Nguyên âm đôi", sound:"UI", emoji:"🏠", imageRef:"", displaySound:"UI – /œy/", description:"'ơi' tròn môi.", keyword:"huis", examples:["huis","muis","bruin","fruit","duin"] },
-  { group:"Nguyên âm đôi", sound:"AU", emoji:"🚗", imageRef:"", displaySound:"AU – /ʌu/", description:"Đọc 'ao'.", keyword:"auto", examples:["auto","pauw","saus","lauw","gauw"] },
-  { group:"Nguyên âm đôi", sound:"OU", emoji:"❄️", imageRef:"", displaySound:"OU – /ʌu/", description:"Giống AU.", keyword:"koud", examples:["koud","hout","goud","fout","bout"] },
-  { group:"Nguyên âm đôi", sound:"EU", emoji:"👃", imageRef:"", displaySound:"EU – /øː/", description:"'ơ' tròn môi.", keyword:"neus", examples:["neus","leuk","keus","reus","heus"] },
-  { group:"Nguyên âm đôi", sound:"OE", emoji:"📚", imageRef:"", displaySound:"OE – /uː/", description:"'u' dài.", keyword:"boek", examples:["boek","voet","roep","hoek","snoep"] },
+  { group:"Nguyên âm đôi", sound:"EI", emoji:"🐐", displaySound:"EI – /ɛi/", description:"Đọc như 'eoai'.", keyword:"geit", examples:["eigen","klein","reis","geit","plein"] },
+  { group:"Nguyên âm đôi", sound:"IJ", emoji:"🍦", displaySound:"IJ – /ɛi/", description:"Giống EI.", keyword:"ijs", examples:["ijs","prijs","tijd","wijn","lijn"] },
+  { group:"Nguyên âm đôi", sound:"UI", emoji:"🏠", displaySound:"UI – /œy/", description:"'ơi' tròn môi.", keyword:"huis", examples:["huis","muis","bruin","fruit","duin"] },
+  { group:"Nguyên âm đôi", sound:"AU", emoji:"🚗", displaySound:"AU – /ʌu/", description:"Đọc 'ao'.", keyword:"auto", examples:["auto","pauw","saus","lauw","gauw"] },
+  { group:"Nguyên âm đôi", sound:"OU", emoji:"❄️", displaySound:"OU – /ʌu/", description:"Giống AU.", keyword:"koud", examples:["koud","hout","goud","fout","bout"] },
+  { group:"Nguyên âm đôi", sound:"EU", emoji:"👃", displaySound:"EU – /øː/", description:"'ơ' tròn môi.", keyword:"neus", examples:["neus","leuk","keus","reus","heus"] },
+  { group:"Nguyên âm đôi", sound:"OE", emoji:"📚", displaySound:"OE – /uː/", description:"'u' dài.", keyword:"boek", examples:["boek","voet","roep","hoek","snoep"] },
 
-  { group:"Phụ âm đặc biệt", sound:"CH", emoji:"💡", imageRef:"", displaySound:"CH – /x/", description:"'kh' mạnh.", keyword:"licht", examples:["licht","lach","nacht","pech","toch"] },
-  { group:"Phụ âm đặc biệt", sound:"SCH", emoji:"🏫", imageRef:"", displaySound:"SCH – /sx/", description:"'s' + 'kh'.", keyword:"school", examples:["school","schip","schaar","schapen","schrik"] },
-  { group:"Phụ âm đặc biệt", sound:"NG", emoji:"💍", imageRef:"", displaySound:"NG – /ŋ/", description:"'ng' tiếng Việt.", keyword:"ring", examples:["lang","ring","bang","jong","tong"] },
-  { group:"Phụ âm đặc biệt", sound:"NK", emoji:"🏦", imageRef:"", displaySound:"NK – /ŋk/", description:"'ng' + 'k'.", keyword:"bank", examples:["bank","dank","pink","drink","flink"] },
+  { group:"Phụ âm đặc biệt", sound:"CH", emoji:"💡", displaySound:"CH – /x/", description:"'kh' mạnh.", keyword:"licht", examples:["licht","lach","nacht","pech","toch"] },
+  { group:"Phụ âm đặc biệt", sound:"SCH", emoji:"🏫", displaySound:"SCH – /sx/", description:"'s' + 'kh'.", keyword:"school", examples:["school","schip","schaar","schapen","schrik"] },
+  { group:"Phụ âm đặc biệt", sound:"NG", emoji:"💍", displaySound:"NG – /ŋ/", description:"'ng' tiếng Việt.", keyword:"ring", examples:["lang","ring","bang","jong","tong"] },
+  { group:"Phụ âm đặc biệt", sound:"NK", emoji:"🏦", displaySound:"NK – /ŋk/", description:"'ng' + 'k'.", keyword:"bank", examples:["bank","dank","pink","drink","flink"] },
 
-  { group:"Tổ hợp phụ âm", sound:"BR", emoji:"🍞", imageRef:"", displaySound:"BR", description:"Đọc liền 'b-r'.", keyword:"brood", examples:["brood","broek","brug","brief","bruin"] },
-  { group:"Tổ hợp phụ âm", sound:"DR", emoji:"💤", imageRef:"", displaySound:"DR", description:"Đọc 'd-r'.", keyword:"droom", examples:["droom","drop","druk","drank","draad"] },
-  { group:"Tổ hợp phụ âm", sound:"GR", emoji:"🍃", imageRef:"", displaySound:"GR", description:"'g' khàn + 'r'.", keyword:"groen", examples:["groen","groot","gras","groep","grijs"] },
-  { group:"Tổ hợp phụ âm", sound:"KL", emoji:"⏰", imageRef:"", displaySound:"KL", description:"'k-l' liền.", keyword:"klok", examples:["klok","klas","klein","klap","klaar"] },
-  { group:"Tổ hợp phụ âm", sound:"PL", emoji:"🪴", imageRef:"", displaySound:"PL", description:"'p-l' bật nhẹ.", keyword:"plant", examples:["plant","plek","plank","pluis","plas"] },
-  { group:"Tổ hợp phụ âm", sound:"SL", emoji:"🐍", imageRef:"", displaySound:"SL", description:"'s-l' trơn.", keyword:"slang", examples:["slang","slaap","slak","slank","slecht"] },
-  { group:"Tổ hợp phụ âm", sound:"SP", emoji:"⚽", imageRef:"", displaySound:"SP", description:"'s-p' bật.", keyword:"spelen", examples:["spelen","spin","spoor","spuit","spook"] },
-  { group:"Tổ hợp phụ âm", sound:"ST", emoji:"🪑", imageRef:"", displaySound:"ST", description:"'s-t' rõ.", keyword:"stoel", examples:["stoel","steen","stap","sterk","storm"] },
-  { group:"Tổ hợp phụ âm", sound:"ZW", emoji:"⬛", imageRef:"", displaySound:"ZW", description:"'z-w' tròn môi.", keyword:"zwart", examples:["zwart","zwemmen","zwak","zwaar","zwaluw"] }
+  { group:"Tổ hợp phụ âm", sound:"BR", emoji:"🍞", displaySound:"BR", description:"Đọc liền 'b-r'.", keyword:"brood", examples:["brood","broek","brug","brief","bruin"] },
+  { group:"Tổ hợp phụ âm", sound:"DR", emoji:"💤", displaySound:"DR", description:"Đọc 'd-r'.", keyword:"droom", examples:["droom","drop","druk","drank","draad"] },
+  { group:"Tổ hợp phụ âm", sound:"GR", emoji:"🍃", displaySound:"GR", description:"'g' khàn + 'r'.", keyword:"groen", examples:["groen","groot","gras","groep","grijs"] },
+  { group:"Tổ hợp phụ âm", sound:"KL", emoji:"⏰", displaySound:"KL", description:"'k-l' liền.", keyword:"klok", examples:["klok","klas","klein","klap","klaar"] },
+  { group:"Tổ hợp phụ âm", sound:"PL", emoji:"🪴", displaySound:"PL", description:"'p-l' bật nhẹ.", keyword:"plant", examples:["plant","plek","plank","pluis","plas"] },
+  { group:"Tổ hợp phụ âm", sound:"SL", emoji:"🐍", displaySound:"SL", description:"'s-l' trơn.", keyword:"slang", examples:["slang","slaap","slak","slank","slecht"] },
+  { group:"Tổ hợp phụ âm", sound:"SP", emoji:"⚽", displaySound:"SP", description:"'s-p' bật.", keyword:"spelen", examples:["spelen","spin","spoor","spuit","spook"] },
+  { group:"Tổ hợp phụ âm", sound:"ST", emoji:"🪑", displaySound:"ST", description:"'s-t' rõ.", keyword:"stoel", examples:["stoel","steen","stap","sterk","storm"] },
+  { group:"Tổ hợp phụ âm", sound:"ZW", emoji:"⬛", displaySound:"ZW", description:"'z-w' tròn môi.", keyword:"zwart", examples:["zwart","zwemmen","zwak","zwaar","zwaluw"] }
 ];
 
 let defaultRate = 0.3;
 const synth = window.speechSynthesis;
+
 function getDutchVoice() {
   const voices = synth.getVoices();
-  return voices.find(v => v.lang === "nl-NL") || voices.find(v => v.lang && v.lang.startsWith("nl")) || voices[0] || null;
+  return voices.find(v => v.lang === "nl-NL") ||
+         voices.find(v => v.lang && v.lang.startsWith("nl")) ||
+         voices[0] || null;
 }
+
 function speakText(text, rate = defaultRate) {
-  if (!("speechSynthesis" in window)) { alert("Trình duyệt không hỗ trợ Web Speech API."); return; }
+  if (!("speechSynthesis" in window)) {
+    alert("Trình duyệt không hỗ trợ Web Speech API.");
+    return;
+  }
   synth.cancel();
   const u = new SpeechSynthesisUtterance(text);
   u.lang = "nl-NL";
@@ -211,6 +215,7 @@ function speakText(text, rate = defaultRate) {
   if (v) u.voice = v;
   synth.speak(u);
 }
+
 const cardsContainer = document.getElementById("cardsContainer");
 const groupFilter = document.getElementById("groupFilter");
 const soundFilter = document.getElementById("soundFilter");
@@ -219,19 +224,13 @@ const shuffleBtn = document.getElementById("shuffleBtn");
 function createCard(card) {
   const el = document.createElement("div");
   el.className = "card";
+
   const imgWrap = document.createElement("div");
   imgWrap.className = "img-wrap";
-  if (card.imageRef) {
-    const img = document.createElement("img");
-    img.alt = card.keyword;
-    img.src = card.imageRef;
-    imgWrap.appendChild(img);
-  } else {
-    const em = document.createElement("div");
-    em.className = "emoji";
-    em.textContent = card.emoji || "🔤";
-    imgWrap.appendChild(em);
-  }
+  const em = document.createElement("div");
+  em.className = "emoji";
+  em.textContent = card.emoji || "🔤";
+  imgWrap.appendChild(em);
   el.appendChild(imgWrap);
 
   const sound = document.createElement("div");
@@ -289,13 +288,17 @@ function renderCards(list) {
 
 function renderSoundOptions() {
   const sounds = [...new Set(flashcards.map(c => c.sound))].sort();
-  soundFilter.innerHTML = '<option value="all">Tất cả âm</option>' + sounds.map(s => `<option value="${s}">${s}</option>`).join("");
+  soundFilter.innerHTML = '<option value="all">Tất cả âm</option>' +
+    sounds.map(s => `<option value="${s}">${s}</option>`).join("");
 }
 
 function applyFilters() {
   const g = groupFilter.value;
   const s = soundFilter.value;
-  const filtered = flashcards.filter(c => (g === "all" || c.group === g) && (s === "all" || c.sound === s));
+  const filtered = flashcards.filter(c =>
+    (g === "all" || c.group === g) &&
+    (s === "all" || c.sound === s)
+  );
   renderCards(filtered);
 }
 
@@ -369,19 +372,10 @@ function resetMatch() {
     inner.style.textAlign = "center";
     inner.style.width = "100%";
     inner.style.height = "100%";
-    if (c.imageRef) {
-      const img = document.createElement("img");
-      img.src = c.imageRef;
-      img.alt = c.keyword;
-      img.style.maxWidth = "100%";
-      img.style.maxHeight = "80px";
-      inner.appendChild(img);
-    } else {
-      const em = document.createElement("div");
-      em.textContent = c.emoji || "🔤";
-      em.style.fontSize = "36px";
-      inner.appendChild(em);
-    }
+    const em = document.createElement("div");
+    em.textContent = c.emoji || "🔤";
+    em.style.fontSize = "36px";
+    inner.appendChild(em);
     box.appendChild(inner);
     box.addEventListener("dragover", dragOver);
     box.addEventListener("drop", dropItem);
@@ -502,16 +496,4 @@ document.addEventListener("keydown", (e) => {
 });
 </script>
 </body>
-</html>`;
-  const blob = new Blob([html], {type: "text/html;charset=utf-8"});
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "dutch-flashcards.html";
-  document.body.appendChild(a);
-  a.click();
-  setTimeout(() => {
-    URL.revokeObjectURL(url);
-    a.remove();
-  }, 1000);
-})();
+</html>
