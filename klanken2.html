@@ -2,103 +2,158 @@
 <html lang="vi">
 <head>
   <meta charset="utf-8" />
-  <title>Flashcards phát âm tiếng Hà Lan cho trẻ — TTS, Hình ảnh, Game</title>
+  <title>Phát âm tiếng Hà Lan — HearDutchHere + TTS</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <style>
     * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", Arial;
-      background: linear-gradient(180deg,#f7fbff 0%, #f5f6fa 100%);
+      background: linear-gradient(180deg,#f7fbff 0%,#f1f4fa 100%);
       color: #1f2937;
-      -webkit-font-smoothing:antialiased;
+      -webkit-font-smoothing: antialiased;
     }
     header {
-      background: linear-gradient(90deg,#ffb703,#fb8500);
+      background: linear-gradient(90deg,#f59e0b,#f97316);
       color: #fff;
-      padding: 18px 20px;
-      display:flex;
-      gap:12px;
-      align-items:center;
-      flex-wrap:wrap;
+      padding: 14px 18px;
+      display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
     }
-    header h1 { margin:0; font-size:20px; font-weight:700; }
-    header p { margin:0; opacity:0.95; font-size:13px; }
-    .controls { margin-left:auto; display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+    header h1 { margin: 0; font-size: 18px; font-weight: 800; }
+    header p  { margin: 0; opacity: .9; font-size: 12px; }
+    .controls { margin-left: auto; display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
     select, button {
-      border-radius:999px;
-      border:1px solid rgba(0,0,0,0.06);
-      padding:8px 12px;
-      font-size:13px;
-      background:#fff;
-      cursor:pointer;
+      border-radius: 999px; border: 1px solid rgba(0,0,0,.08);
+      padding: 6px 12px; font-size: 13px; background: #fff; cursor: pointer;
     }
-    button.primary { background:#1e90ff; color:#fff; border:none; }
-    main { max-width:1200px; margin:18px auto; padding:0 18px 60px; }
-    .toolbar { display:flex; gap:10px; align-items:center; margin-bottom:12px; flex-wrap:wrap; }
+    button.primary { background: #3b82f6; color: #fff; border: none; }
+    button.primary:hover { background: #2563eb; }
+
+    main { max-width: 1360px; margin: 12px auto; padding: 0 14px 60px; }
+
+    .toolbar {
+      display: flex; gap: 8px; align-items: center; margin-bottom: 10px;
+      flex-wrap: wrap; font-size: 13px; color: #475569;
+    }
+    .toolbar button { padding: 5px 11px; font-size: 12px; }
+    .toolbar button.active { background: #3b82f6; color: #fff; border-color: transparent; }
+
     .flashgrid {
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-      gap:16px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(235px,1fr));
+      gap: 11px;
     }
+
     .card {
-      background:#fff;
-      border-radius:16px;
-      padding:14px;
-      box-shadow:0 6px 18px rgba(16,24,40,0.06);
-      border:1px solid #eef2ff;
-      display:flex;
-      flex-direction:column;
-      gap:8px;
-      align-items:center;
-      min-height:220px;
-      position:relative;
+      background: #fff; border-radius: 14px; padding: 11px 12px;
+      box-shadow: 0 3px 12px rgba(16,24,40,.06);
+      border: 1px solid #e8eef8;
+      display: flex; flex-direction: column; gap: 5px; align-items: center;
+      position: relative; transition: border-color .15s, box-shadow .15s;
     }
-    .img-wrap { width:100%; height:120px; display:flex; align-items:center; justify-content:center; overflow:hidden; border-radius:12px; background:linear-gradient(180deg,#fff,#fbfbff); }
-    .img-wrap img { max-width:100%; max-height:100%; object-fit:contain; }
-    .emoji { font-size:56px; line-height:1; }
-    .sound { font-size:20px; font-weight:800; color:#0f172a; text-align:center; }
-    .desc { font-size:13px; color:#374151; text-align:center; }
-    .keyword { font-size:15px; font-weight:700; color:#0b1220; text-align:center; }
-    .examples { display:flex; gap:6px; flex-wrap:wrap; justify-content:center; margin-top:6px; }
-    .examples button { background:#f3f4ff; border:1px solid #e6e9ff; padding:6px 8px; border-radius:999px; cursor:pointer; font-size:13px; }
-    .tts-row { display:flex; gap:8px; margin-top:8px; align-items:center; }
-    .tts-btn { padding:8px 12px; border-radius:999px; border:none; cursor:pointer; font-weight:700; }
-    .tts-btn.play { background:#1e90ff; color:#fff; }
-    .tts-btn.extra-slow { background:#0846a6; color:#fff; }
-    .small { font-size:12px; color:#475569; }
-    .game-area { margin-top:26px; display:grid; grid-template-columns: 1fr 1fr; gap:18px; }
-    .panel { background:#fff; border-radius:12px; padding:12px; box-shadow:0 6px 18px rgba(16,24,40,0.04); border:1px solid #eef2ff; }
-    .drag-list { display:flex; gap:8px; flex-wrap:wrap; padding:8px; min-height:80px; border-radius:8px; background:#fbfdff; }
+    .card:hover { border-color: #bfdbfe; box-shadow: 0 5px 18px rgba(16,24,40,.1); }
+
+    .card-emoji  { font-size: 44px; line-height: 1; margin-bottom: 1px; }
+    .card-sound  { font-size: 17px; font-weight: 800; color: #0f172a; text-align: center; }
+    .card-desc   { font-size: 11.5px; color: #64748b; text-align: center; line-height: 1.45; }
+    .card-kw     { font-size: 15px; font-weight: 700; color: #1e40af; }
+
+    .card-btns { display: flex; gap: 5px; margin-top: 2px; flex-wrap: wrap; justify-content: center; }
+    .btn-demo {
+      padding: 5px 10px; border-radius: 999px; border: none; cursor: pointer;
+      font-size: 12px; font-weight: 600; background: #f59e0b; color: #fff;
+    }
+    .btn-demo:hover { background: #d97706; }
+    .btn-kw {
+      padding: 5px 10px; border-radius: 999px; border: none; cursor: pointer;
+      font-size: 12px; font-weight: 600; background: #3b82f6; color: #fff;
+    }
+    .btn-kw:hover { background: #2563eb; }
+    .btn-slow {
+      padding: 5px 10px; border-radius: 999px;
+      border: 1px solid #e2e8f0; cursor: pointer;
+      font-size: 12px; background: #f8fafc; color: #374151;
+    }
+    .btn-slow:hover { background: #e2e8f0; }
+
+    .examples-row {
+      display: flex; gap: 4px; flex-wrap: wrap; justify-content: center; margin-top: 1px;
+    }
+    .examples-row button {
+      background: #eff6ff; border: 1px solid #dbeafe;
+      padding: 3px 8px; border-radius: 999px; cursor: pointer;
+      font-size: 12px; font-weight: 600; color: #1d4ed8;
+    }
+    .examples-row button:hover { background: #dbeafe; }
+
+    .mp3-badge {
+      position: absolute; top: 7px; right: 7px;
+      font-size: 10px; background: #dcfce7; color: #166534;
+      padding: 1px 5px; border-radius: 4px; font-weight: 700;
+    }
+
+    /* ── GAME ── */
+    .game-area {
+      margin-top: 20px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+    }
+    .panel {
+      background: #fff; border-radius: 12px; padding: 12px;
+      box-shadow: 0 3px 12px rgba(16,24,40,.04); border: 1px solid #e8eef8;
+    }
+    .panel h3 { margin: 0 0 5px 0; font-size: 15px; }
+
+    .drag-list {
+      display: flex; gap: 6px; flex-wrap: wrap; padding: 8px;
+      min-height: 64px; border-radius: 8px; background: #fbfdff;
+      border: 1px dashed #e2e8f0;
+    }
     .draggable {
-      padding:8px 12px; background:#fff; border-radius:999px; border:1px solid #e6e9ff; cursor:grab; font-weight:700;
+      padding: 5px 10px; background: #fff; border-radius: 999px;
+      border: 1px solid #e0e7ff; cursor: grab; font-weight: 700; font-size: 13px;
+      user-select: none;
     }
-    .drop-target { min-height:60px; display:flex; align-items:center; justify-content:center; border:2px dashed #e6eefc; border-radius:10px; padding:8px; background:#fbfbff; }
-    .drop-target.filled { border-style:solid; background:#f0f8ff; }
-    .quiz-options { display:flex; flex-direction:column; gap:8px; margin-top:8px; }
-    .option-btn { padding:10px 12px; border-radius:10px; border:1px solid #e6e9ff; background:#fff; cursor:pointer; text-align:left; }
-    .option-btn.correct { background:#dcfce7; border-color:#86efac; }
-    .option-btn.wrong { background:#fee2e2; border-color:#fca5a5; }
-    .footer-note { margin-top:18px; font-size:13px; color:#475569; }
-    @media (max-width:900px) {
-      .game-area { grid-template-columns: 1fr; }
+    .drop-target {
+      min-height: 54px; display: flex; align-items: center; justify-content: center;
+      border: 2px dashed #d1d5db; border-radius: 10px; padding: 5px;
+      background: #fafafa; font-size: 11px; color: #9ca3af;
     }
+    .drop-target.filled { border-style: solid; background: #eff6ff; border-color: #93c5fd; }
+
+    .quiz-options { display: flex; flex-direction: column; gap: 6px; margin-top: 7px; }
+    .option-btn {
+      padding: 8px 12px; border-radius: 8px; border: 1px solid #e2e8f0;
+      background: #fff; cursor: pointer; text-align: left; font-size: 13px;
+    }
+    .option-btn:hover { background: #f8fafc; }
+    .option-btn.correct { background: #dcfce7; border-color: #86efac; color: #166534; }
+    .option-btn.wrong   { background: #fee2e2; border-color: #fca5a5; color: #991b1b; }
+
+    .footer-note { margin-top: 10px; font-size: 12px; color: #64748b; }
+    small.note { font-size: 11px; color: #94a3b8; }
+
+    @media (max-width:900px)  { .game-area { grid-template-columns: 1fr; } }
+    @media (max-width:580px)  { .flashgrid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width:360px)  { .flashgrid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
+
 <header>
   <div>
-    <h1>Flashcards phát âm tiếng Hà Lan</h1>
-    <p>Nghe phát âm chậm, hình ảnh (emoji), nghe từng ví dụ, game kéo-thả và quiz</p>
+    <h1>🇳🇱 Phát âm tiếng Hà Lan</h1>
+    <p>Âm thực từ HearDutchHere.net · TTS dự phòng · Kéo‑thả &amp; Quiz</p>
   </div>
   <div class="controls">
     <select id="groupFilter">
       <option value="all">Tất cả nhóm</option>
-      <option value="Nguyên âm ngắn">Nguyên âm ngắn</option>
-      <option value="Nguyên âm dài">Nguyên âm dài</option>
-      <option value="Nguyên âm đôi">Nguyên âm đôi</option>
-      <option value="Phụ âm đặc biệt">Phụ âm đặc biệt</option>
-      <option value="Tổ hợp phụ âm">Tổ hợp phụ âm</option>
+      <option value="Korte klinkers">Nguyên âm ngắn</option>
+      <option value="Lange klinkers">Nguyên âm dài</option>
+      <option value="Toonloze E">Toonloze E (schwa)</option>
+      <option value="Tweeklanken">Tweeklanken (đôi)</option>
+      <option value="Medeklinkers">Medeklinkers (phụ âm)</option>
+      <option value="Bijzondere klanken">Bijzondere klanken</option>
+      <option value="Uitgangen">Uitgangen (đuôi từ)</option>
     </select>
     <select id="soundFilter"><option value="all">Tất cả âm</option></select>
     <button id="shuffleBtn">🔀 Xáo trộn</button>
@@ -107,10 +162,10 @@
 
 <main>
   <div class="toolbar">
-    <div class="small">Chọn tốc độ TTS mặc định:</div>
-    <button class="tts-btn" id="rateNormal">0.3x (mặc định)</button>
-    <button class="tts-btn" id="rateSlower">0.2x (chậm hơn)</button>
-    <div style="margin-left:auto" class="small">Trình duyệt sử dụng Web Speech API để phát âm tiếng Hà Lan</div>
+    <span>TTS dự phòng:</span>
+    <button id="rateNormal" class="active">0.5× bình thường</button>
+    <button id="rateSlower">0.3× chậm</button>
+    <span style="margin-left:auto"><small class="note">🎵 nút vàng = nghe âm chuẩn MP3 · 🔊 nút xanh = từ khoá · ví dụ = nhấn từ</small></span>
   </div>
 
   <section id="cardsSection">
@@ -118,165 +173,746 @@
   </section>
 
   <section class="game-area" aria-label="Game và Quiz">
-    <div class="panel" id="matchPanel">
-      <h3 style="margin:0 0 8px 0">Game kéo‑thả: Ghép từ với hình</h3>
-      <div class="small">Kéo từ (bên dưới) vào ô tương ứng trên thẻ (bên phải). Nhấn "Kiểm tra" để xem kết quả.</div>
-      <div style="display:flex; gap:10px; margin-top:10px; align-items:flex-start; flex-wrap:wrap;">
+    <div class="panel">
+      <h3>🎮 Kéo‑thả: Ghép từ với emoji</h3>
+      <small class="note">Kéo từ vào ô có emoji đúng. Nhấn Kiểm tra.</small>
+      <div style="display:flex;gap:10px;margin-top:8px;align-items:flex-start;flex-wrap:wrap;">
         <div style="flex:1">
-          <div id="dragList" class="drag-list" aria-label="Danh sách từ kéo"></div>
-          <div style="margin-top:8px; display:flex; gap:8px;">
+          <div id="dragList" class="drag-list"></div>
+          <div style="margin-top:6px;display:flex;gap:6px;">
             <button id="resetMatch" class="primary">🔄 Làm lại</button>
             <button id="checkMatch">✅ Kiểm tra</button>
           </div>
         </div>
         <div style="flex:1">
-          <div id="dropGrid" style="display:grid; grid-template-columns:repeat(2,1fr); gap:10px;"></div>
+          <div id="dropGrid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;"></div>
         </div>
       </div>
       <div id="matchResult" class="footer-note"></div>
     </div>
 
-    <div class="panel" id="quizPanel">
-      <h3 style="margin:0 0 8px 0">Quiz luyện âm</h3>
-      <div class="small">Nghe âm, chọn từ đúng. Bạn có thể nghe lại bằng nút 🔊.</div>
-      <div style="display:flex; gap:8px; align-items:center; margin-top:10px;">
-        <button id="playQuizSound" class="tts-btn play">🔊 Nghe âm</button>
-        <button id="nextQuiz" class="tts-btn">⏭ Tiếp</button>
+    <div class="panel">
+      <h3>📝 Quiz luyện âm</h3>
+      <small class="note">Nghe âm rồi chọn từ đúng.</small>
+      <div style="display:flex;gap:6px;align-items:center;margin-top:8px;">
+        <button id="playQuizSound" class="btn-demo">🔊 Nghe âm</button>
+        <button id="nextQuiz">⏭ Tiếp theo</button>
       </div>
-      <div id="quizQuestion" style="margin-top:12px; font-weight:700;"></div>
+      <div id="quizQuestion" style="margin-top:10px;font-weight:700;font-size:14px;"></div>
       <div id="quizOptions" class="quiz-options"></div>
       <div id="quizFeedback" class="footer-note"></div>
     </div>
   </section>
 
-  <div class="footer-note" style="max-width:1200px; margin:18px auto;">
-    Gợi ý: Khuyến khích bé lặp lại sau khi nghe, bắt chước khẩu hình, và nghe ở tốc độ 0.2x nếu cần.
+  <div class="footer-note" style="margin-top:14px;">
+    💡 Nhấn 🎵 để nghe âm chuẩn từ người bản ngữ (HearDutchHere.net). Khi không có MP3, trình duyệt tự dùng TTS. Bé nên lặp lại sau khi nghe!
   </div>
 </main>
 
 <script>
-const flashcards = [
-  { group:"Nguyên âm ngắn", sound:"A", emoji:"🐱", displaySound:"A – /ɑ/", description:"Đọc như 'ă' trong tiếng Việt.", keyword:"kat", examples:["man","kat","jas","zak","lamp"] },
-  { group:"Nguyên âm ngắn", sound:"E", emoji:"✏️", displaySound:"E – /ɛ/", description:"Đọc như 'e' trong 'sen'.", keyword:"pen", examples:["pen","bed","gek","pet","fles"] },
-  { group:"Nguyên âm ngắn", sound:"I", emoji:"🐟", displaySound:"I – /ɪ/", description:"Đọc như 'i' ngắn.", keyword:"vis", examples:["vis","kip","lip","pit","dik"] },
-  { group:"Nguyên âm ngắn", sound:"O", emoji:"🍲", displaySound:"O – /ɔ/", description:"Đọc như 'o' trong 'bom'.", keyword:"pot", examples:["bos","pot","rok","kop","hond"] },
-  { group:"Nguyên âm ngắn", sound:"U", emoji:"🚌", displaySound:"U – /ʏ/", description:"Giữa 'ư' và 'i'.", keyword:"bus", examples:["bus","rug","put","hut","stuk"] },
-
-  { group:"Nguyên âm dài", sound:"AA", emoji:"🌕", displaySound:"AA – /aː/", description:"Đọc 'a' dài.", keyword:"maan", examples:["maan","kaas","vaas","haas","baan"] },
-  { group:"Nguyên âm dài", sound:"EE", emoji:"🦌", displaySound:"EE – /eː/", description:"Đọc 'ê' dài.", keyword:"beer", examples:["been","meer","teen","lepel","beer"] },
-  { group:"Nguyên âm dài", sound:"IE", emoji:"🚲", displaySound:"IE – /iː/", description:"Đọc 'ii' dài.", keyword:"fiets", examples:["fiets","dier","vier","lied","kies"] },
-  { group:"Nguyên âm dài", sound:"OO", emoji:"🌳", displaySound:"OO – /oː/", description:"Đọc 'ô' dài.", keyword:"boom", examples:["boom","rood","doos","rook","boot"] },
-  { group:"Nguyên âm dài", sound:"UU", emoji:"🧱", displaySound:"UU – /yː/", description:"Đọc 'uy' tròn môi.", keyword:"muur", examples:["muur","vuur","duur","stuur","buur"] },
-
-  { group:"Nguyên âm đôi", sound:"EI", emoji:"🐐", displaySound:"EI – /ɛi/", description:"Đọc như 'eoai'.", keyword:"geit", examples:["eigen","klein","reis","geit","plein"] },
-  { group:"Nguyên âm đôi", sound:"IJ", emoji:"🍦", displaySound:"IJ – /ɛi/", description:"Giống EI.", keyword:"ijs", examples:["ijs","prijs","tijd","wijn","lijn"] },
-  { group:"Nguyên âm đôi", sound:"UI", emoji:"🏠", displaySound:"UI – /œy/", description:"'ơi' tròn môi.", keyword:"huis", examples:["huis","muis","bruin","fruit","duin"] },
-  { group:"Nguyên âm đôi", sound:"AU", emoji:"🚗", displaySound:"AU – /ʌu/", description:"Đọc 'ao'.", keyword:"auto", examples:["auto","pauw","saus","lauw","gauw"] },
-  { group:"Nguyên âm đôi", sound:"OU", emoji:"❄️", displaySound:"OU – /ʌu/", description:"Giống AU.", keyword:"koud", examples:["koud","hout","goud","fout","bout"] },
-  { group:"Nguyên âm đôi", sound:"EU", emoji:"👃", displaySound:"EU – /øː/", description:"'ơ' tròn môi.", keyword:"neus", examples:["neus","leuk","keus","reus","heus"] },
-  { group:"Nguyên âm đôi", sound:"OE", emoji:"📚", displaySound:"OE – /uː/", description:"'u' dài.", keyword:"boek", examples:["boek","voet","roep","hoek","snoep"] },
-
-  { group:"Phụ âm đặc biệt", sound:"CH", emoji:"💡", displaySound:"CH – /x/", description:"'kh' mạnh.", keyword:"licht", examples:["licht","lach","nacht","pech","toch"] },
-  { group:"Phụ âm đặc biệt", sound:"SCH", emoji:"🏫", displaySound:"SCH – /sx/", description:"'s' + 'kh'.", keyword:"school", examples:["school","schip","schaar","schapen","schrik"] },
-  { group:"Phụ âm đặc biệt", sound:"NG", emoji:"💍", displaySound:"NG – /ŋ/", description:"'ng' tiếng Việt.", keyword:"ring", examples:["lang","ring","bang","jong","tong"] },
-  { group:"Phụ âm đặc biệt", sound:"NK", emoji:"🏦", displaySound:"NK – /ŋk/", description:"'ng' + 'k'.", keyword:"bank", examples:["bank","dank","pink","drink","flink"] },
-
-  { group:"Tổ hợp phụ âm", sound:"BR", emoji:"🍞", displaySound:"BR", description:"Đọc liền 'b-r'.", keyword:"brood", examples:["brood","broek","brug","brief","bruin"] },
-  { group:"Tổ hợp phụ âm", sound:"DR", emoji:"💤", displaySound:"DR", description:"Đọc 'd-r'.", keyword:"droom", examples:["droom","drop","druk","drank","draad"] },
-  { group:"Tổ hợp phụ âm", sound:"GR", emoji:"🍃", displaySound:"GR", description:"'g' khàn + 'r'.", keyword:"groen", examples:["groen","groot","gras","groep","grijs"] },
-  { group:"Tổ hợp phụ âm", sound:"KL", emoji:"⏰", displaySound:"KL", description:"'k-l' liền.", keyword:"klok", examples:["klok","klas","klein","klap","klaar"] },
-  { group:"Tổ hợp phụ âm", sound:"PL", emoji:"🪴", displaySound:"PL", description:"'p-l' bật nhẹ.", keyword:"plant", examples:["plant","plek","plank","pluis","plas"] },
-  { group:"Tổ hợp phụ âm", sound:"SL", emoji:"🐍", displaySound:"SL", description:"'s-l' trơn.", keyword:"slang", examples:["slang","slaap","slak","slank","slecht"] },
-  { group:"Tổ hợp phụ âm", sound:"SP", emoji:"⚽", displaySound:"SP", description:"'s-p' bật.", keyword:"spelen", examples:["spelen","spin","spoor","spuit","spook"] },
-  { group:"Tổ hợp phụ âm", sound:"ST", emoji:"🪑", displaySound:"ST", description:"'s-t' rõ.", keyword:"stoel", examples:["stoel","steen","stap","sterk","storm"] },
-  { group:"Tổ hợp phụ âm", sound:"ZW", emoji:"⬛", displaySound:"ZW", description:"'z-w' tròn môi.", keyword:"zwart", examples:["zwart","zwemmen","zwak","zwaar","zwaluw"] }
-];
-
-let defaultRate = 0.3;
+const BASE = "https://www.heardutchhere.net/";
+let ttsRate = 0.5;
 const synth = window.speechSynthesis;
+let activeAudio = null;
 
 function getDutchVoice() {
-  const voices = synth.getVoices();
-  return voices.find(v => v.lang === "nl-NL") ||
-         voices.find(v => v.lang && v.lang.startsWith("nl")) ||
-         voices[0] || null;
+  const vv = synth.getVoices();
+  return vv.find(v => v.lang === "nl-NL") || vv.find(v => v.lang && v.lang.startsWith("nl")) || vv[0] || null;
 }
 
-function speakText(text, rate = defaultRate) {
-  if (!("speechSynthesis" in window)) {
-    alert("Trình duyệt không hỗ trợ Web Speech API.");
-    return;
-  }
+function stopAll() {
+  if (activeAudio) { try { activeAudio.pause(); } catch(e){} activeAudio = null; }
+  synth.cancel();
+}
+
+function speakTTS(text, rate) {
+  if (!("speechSynthesis" in window)) return;
   synth.cancel();
   const u = new SpeechSynthesisUtterance(text);
-  u.lang = "nl-NL";
-  u.rate = rate;
-  const v = getDutchVoice();
-  if (v) u.voice = v;
+  u.lang = "nl-NL"; u.rate = rate || ttsRate;
+  const v = getDutchVoice(); if (v) u.voice = v;
   synth.speak(u);
 }
 
+function playAudio(path, fallbackText, slow) {
+  stopAll();
+  const rate = slow ? 0.3 : ttsRate;
+  if (path) {
+    const a = new Audio(BASE + path);
+    if (slow) a.playbackRate = 0.75;
+    activeAudio = a;
+    a.play().catch(() => { if (fallbackText) speakTTS(fallbackText, rate); });
+    a.onended = () => { activeAudio = null; };
+  } else if (fallbackText) {
+    speakTTS(fallbackText, rate);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════
+   FLASHCARD DATA  –  audio from HearDutchHere.net
+   soundDemo  = isolated sound demo MP3
+   keywordAudio = MP3 for keyword word
+   examples[].audio = MP3; null = TTS fallback
+═══════════════════════════════════════════════════════ */
+const flashcards = [
+
+  /* ── KORTE KLINKERS ── */
+  { group:"Korte klinkers", sound:"A", emoji:"🐱",
+    displaySound:"A – /ɑ/", description:"Ngắn, như 'a' trong 'bạn', không kéo dài.",
+    soundDemo:"lessons/aV.MP3",
+    keyword:"man", keywordAudio:"everydaywords/man.MP3",
+    examples:[
+      {word:"af",   audio:"Dutch21/af.MP3"},
+      {word:"hart", audio:"Dutch16/hart.MP3"},
+      {word:"pak",  audio:"everydaywords/pak.MP3"},
+      {word:"tak",  audio:"everydaywords/tak.MP3"},
+      {word:"jas",  audio:"everydaywords/jas.MP3"}
+    ]
+  },
+  { group:"Korte klinkers", sound:"E", emoji:"✏️",
+    displaySound:"E – /ɛ/", description:"Ngắn, như 'e' trong 'sen'.",
+    soundDemo:"lessons/test.MP3",
+    keyword:"hek", keywordAudio:"everydaywords/hek.MP3",
+    examples:[
+      {word:"pen",  audio:"Dutch41/pen9.MP3"},
+      {word:"mes",  audio:"lessons/mes.MP3"},
+      {word:"bed",  audio:null},
+      {word:"stem", audio:null},
+      {word:"vest", audio:null}
+    ]
+  },
+  { group:"Korte klinkers", sound:"I", emoji:"🐟",
+    displaySound:"I – /ɪ/", description:"Ngắn, như 'i' trong 'ít'.",
+    soundDemo:"lessons/iV.MP3",
+    keyword:"vis", keywordAudio:"duanimals/vis.MP3",
+    examples:[
+      {word:"dit",  audio:"lessons/dit.MP3"},
+      {word:"dik",  audio:null},
+      {word:"kip",  audio:null},
+      {word:"lip",  audio:null},
+      {word:"wit",  audio:null}
+    ]
+  },
+  { group:"Korte klinkers", sound:"O", emoji:"🍲",
+    displaySound:"O – /ɔ/", description:"Ngắn, như 'o' trong 'bom'.",
+    soundDemo:"lessons/oV.MP3",
+    keyword:"bos", keywordAudio:"everydaywords/bos.MP3",
+    examples:[
+      {word:"sok",  audio:"Dutch22/sok.MP3"},
+      {word:"pot",  audio:null},
+      {word:"rok",  audio:null},
+      {word:"kop",  audio:null},
+      {word:"hond", audio:null}
+    ]
+  },
+  { group:"Korte klinkers", sound:"U", emoji:"🚌",
+    displaySound:"U – /ʏ/", description:"Giữa 'ư' và 'i', môi tròn hơn.",
+    soundDemo:"lessons/uV.MP3",
+    keyword:"hut", keywordAudio:"quiz2/hut.MP3",
+    examples:[
+      {word:"buik", audio:"Dutch22/buik.MP3"},
+      {word:"bus",  audio:null},
+      {word:"rug",  audio:null},
+      {word:"put",  audio:null},
+      {word:"stuk", audio:null}
+    ]
+  },
+
+  /* ── LANGE KLINKERS ── */
+  { group:"Lange klinkers", sound:"AA", emoji:"🌕",
+    displaySound:"AA – /aː/", description:"Dài, như 'a' kéo dài.",
+    soundDemo:"lessons/aaV.MP3",
+    keyword:"maan", keywordAudio:"everydaywords/maan.MP3",
+    examples:[
+      {word:"ja",    audio:"lessons/ja.MP3"},
+      {word:"paar",  audio:"Dutch22/paar.MP3"},
+      {word:"zaag",  audio:"dutools2/zaag.MP3"},
+      {word:"maart", audio:"lessons/maart.MP3"},
+      {word:"aan",   audio:"Dutch18/aan.MP3"}
+    ]
+  },
+  { group:"Lange klinkers", sound:"EE", emoji:"🦌",
+    displaySound:"EE – /eː/", description:"Dài, như 'ê' trong 'bê'.",
+    soundDemo:"lessons/eeV.MP3",
+    keyword:"zeep", keywordAudio:"everydaywords/zeep.MP3",
+    examples:[
+      {word:"nee",   audio:"lessons/nee.MP3"},
+      {word:"week",  audio:"lessons/week.MP3"},
+      {word:"teen",  audio:"quiz2/teen.MP3"},
+      {word:"meer",  audio:null},
+      {word:"steen", audio:null}
+    ]
+  },
+  { group:"Lange klinkers", sound:"IE", emoji:"🚲",
+    displaySound:"IE – /iː/", description:"Dài, như 'i' trong 'mia'.",
+    soundDemo:"lessons/ieV.MP3",
+    keyword:"dier", keywordAudio:"lessons/dier4.MP3",
+    examples:[
+      {word:"die",   audio:"lessons/die.MP3"},
+      {word:"vier",  audio:null},
+      {word:"lied",  audio:null},
+      {word:"kies",  audio:null},
+      {word:"fiets", audio:null}
+    ]
+  },
+  { group:"Lange klinkers", sound:"OO", emoji:"🌳",
+    displaySound:"OO – /oː/", description:"Dài, như 'ô' trong 'cô'.",
+    soundDemo:"lessons/ooV.MP3",
+    keyword:"brood", keywordAudio:"lessons/brood.MP3",
+    examples:[
+      {word:"doos",  audio:"Dutch23/doos.MP3"},
+      {word:"bord",  audio:"lessons/bord.MP3"},
+      {word:"rood",  audio:null},
+      {word:"boom",  audio:null},
+      {word:"boot",  audio:null}
+    ]
+  },
+  { group:"Lange klinkers", sound:"UU", emoji:"🧱",
+    displaySound:"UU – /yː/", description:"Dài, như 'uy' tròn môi.",
+    soundDemo:"lessons/uuV.MP3",
+    keyword:"vuur", keywordAudio:"everydaywords/vuur.MP3",
+    examples:[
+      {word:"uur",   audio:"lessons/uur.MP3"},
+      {word:"muur",  audio:null},
+      {word:"duur",  audio:null},
+      {word:"stuur", audio:null},
+      {word:"buur",  audio:null}
+    ]
+  },
+
+  /* ── TOONLOZE E ── */
+  { group:"Toonloze E", sound:"E (schwa)", emoji:"💬",
+    displaySound:"E – /ə/ toonloos", description:"Âm 'ơ' nhẹ, không nhấn — như 'a' trong 'about' (tiếng Anh).",
+    soundDemo:"lessons/e_uhV.MP3",
+    keyword:"de", keywordAudio:"lessons/de.MP3",
+    examples:[
+      {word:"je",  audio:"lessons/je.MP3"},
+      {word:"we",  audio:"lessons/we.MP3"},
+      {word:"ze",  audio:"lessons/ze.MP3"},
+      {word:"te",  audio:"lessons/te.MP3"},
+      {word:"me",  audio:"lessons/me.MP3"}
+    ]
+  },
+
+  /* ── TWEEKLANKEN ── */
+  { group:"Tweeklanken", sound:"EI", emoji:"🐐",
+    displaySound:"EI – /ɛi/", description:"Gần 'ey' trong 'they', không hệt.",
+    soundDemo:"lessons/eiV.MP3",
+    keyword:"ei", keywordAudio:"dufoodwords/ei.MP3",
+    examples:[
+      {word:"geit",   audio:"Dutch18/geit.MP3"},
+      {word:"klein",  audio:"lessons/klein.MP3"},
+      {word:"meisje", audio:"lessons/meisje.MP3"},
+      {word:"reis",   audio:null},
+      {word:"trein",  audio:null}
+    ]
+  },
+  { group:"Tweeklanken", sound:"IJ", emoji:"🍦",
+    displaySound:"IJ – /ɛi/ (= EI)", description:"Cùng âm với EI: /ɛi/.",
+    soundDemo:"lessons/eiV.MP3",
+    keyword:"ijs", keywordAudio:"quiz2/ijseis.MP3",
+    examples:[
+      {word:"mijn",  audio:"lessons/mijn.MP3"},
+      {word:"zijn",  audio:"lessons/zijn.MP3"},
+      {word:"wijn",  audio:null},
+      {word:"tijd",  audio:null},
+      {word:"prijs", audio:null}
+    ]
+  },
+  { group:"Tweeklanken", sound:"EU", emoji:"👃",
+    displaySound:"EU – /øː/", description:"Như 'ơ' tròn môi — không có trong tiếng Việt.",
+    soundDemo:"lessons/euV.MP3",
+    keyword:"neus", keywordAudio:"everydaywords/neus.MP3",
+    examples:[
+      {word:"kleur", audio:"lessons/kleur.MP3"},
+      {word:"reus",  audio:"quiz2/reus.MP3"},
+      {word:"breuk", audio:"lessons/breuk.MP3"},
+      {word:"deur",  audio:null},
+      {word:"leuk",  audio:null}
+    ]
+  },
+  { group:"Tweeklanken", sound:"OE", emoji:"📚",
+    displaySound:"OE – /uː/", description:"Như 'u' dài trong 'chú'.",
+    soundDemo:"lessons/oeV.MP3",
+    keyword:"boek", keywordAudio:"lessons/boek.MP3",
+    examples:[
+      {word:"poes",  audio:"Dutch50/poes.MP3"},
+      {word:"koek",  audio:"Dutch50/koek.MP3"},
+      {word:"voet",  audio:null},
+      {word:"hoek",  audio:null},
+      {word:"snoep", audio:null}
+    ]
+  },
+  { group:"Tweeklanken", sound:"AU/OU", emoji:"❄️",
+    displaySound:"AU/OU – /ʌu/", description:"Như 'ao' trong 'ao cá'.",
+    soundDemo:"lessons/auV.MP3",
+    keyword:"pauw", keywordAudio:"duanimals/pauw.MP3",
+    examples:[
+      {word:"hout",  audio:"quiz2/hout.MP3"},
+      {word:"uil",   audio:"quiz2/uil.MP3"},
+      {word:"blauw", audio:null},
+      {word:"koud",  audio:null},
+      {word:"goud",  audio:null}
+    ]
+  },
+  { group:"Tweeklanken", sound:"UI", emoji:"🏠",
+    displaySound:"UI – /œy/", description:"Như 'ơi' tròn môi — không có trong tiếng Việt.",
+    soundDemo:"lessons/uiV.MP3",
+    keyword:"huis", keywordAudio:"everydaywords/huis.MP3",
+    examples:[
+      {word:"buik",  audio:"Dutch22/buik.MP3"},
+      {word:"muis",  audio:null},
+      {word:"bruin", audio:null},
+      {word:"duin",  audio:null},
+      {word:"fruit", audio:null}
+    ]
+  },
+  { group:"Tweeklanken", sound:"UW", emoji:"💧",
+    displaySound:"UW – /yw/", description:"Như 'uy' + W, môi tròn.",
+    soundDemo:"lessons/Uw.MP3",
+    keyword:"uw", keywordAudio:"lessons/Uw.MP3",
+    examples:[
+      {word:"jouw",  audio:"lessons/jouw.MP3"},
+      {word:"mijn",  audio:"lessons/mijn.MP3"},
+      {word:"nieuw", audio:null},
+      {word:"ruw",   audio:null},
+      {word:"duw",   audio:null}
+    ]
+  },
+
+  /* ── MEDEKLINKERS ── */
+  { group:"Medeklinkers", sound:"B", emoji:"🍞",
+    displaySound:"B – /b/", description:"Như 'b' tiếng Việt; cuối từ đọc như P.",
+    soundDemo:null,
+    keyword:"bord", keywordAudio:"lessons/bord.MP3",
+    examples:[
+      {word:"brood", audio:"lessons/brood.MP3"},
+      {word:"boek",  audio:"lessons/boek.MP3"},
+      {word:"bos",   audio:"everydaywords/bos.MP3"},
+      {word:"been",  audio:null},
+      {word:"baan",  audio:null}
+    ]
+  },
+  { group:"Medeklinkers", sound:"D", emoji:"🌙",
+    displaySound:"D – /d/", description:"Như 'd' tiếng Việt; cuối từ đọc như T.",
+    soundDemo:null,
+    keyword:"dag", keywordAudio:"lessons/dag.MP3",
+    examples:[
+      {word:"dat",   audio:"lessons/dat.MP3"},
+      {word:"dier",  audio:"lessons/dier4.MP3"},
+      {word:"doos",  audio:"Dutch23/doos.MP3"},
+      {word:"deur",  audio:null},
+      {word:"door",  audio:null}
+    ]
+  },
+  { group:"Medeklinkers", sound:"G", emoji:"🟡",
+    displaySound:"G – /ɣ/", description:"Âm KH từ cổ họng có rung — đặc trưng tiếng Hà Lan.",
+    soundDemo:"lessons/glas.MP3",
+    keyword:"glas", keywordAudio:"lessons/glas.MP3",
+    examples:[
+      {word:"geit",  audio:"Dutch18/geit.MP3"},
+      {word:"graan", audio:"Dutch18/graan.MP3"},
+      {word:"goud",  audio:null},
+      {word:"groot", audio:null},
+      {word:"goed",  audio:null}
+    ]
+  },
+  { group:"Medeklinkers", sound:"H", emoji:"🌬️",
+    displaySound:"H – /h/", description:"Như 'h' tiếng Việt, thở nhẹ.",
+    soundDemo:null,
+    keyword:"haar", keywordAudio:"lessons/haar.MP3",
+    examples:[
+      {word:"hek",    audio:"everydaywords/hek.MP3"},
+      {word:"hart",   audio:"Dutch16/hart.MP3"},
+      {word:"huis",   audio:"everydaywords/huis.MP3"},
+      {word:"herfst", audio:"lessons/herfst.MP3"},
+      {word:"hout",   audio:"quiz2/hout.MP3"}
+    ]
+  },
+  { group:"Medeklinkers", sound:"J", emoji:"🎊",
+    displaySound:"J – /j/", description:"Như 'y' trong 'yêu' — không như J tiếng Anh.",
+    soundDemo:"lessons/ja.MP3",
+    keyword:"ja", keywordAudio:"lessons/ja.MP3",
+    examples:[
+      {word:"jaar",  audio:"lessons/jaar.MP3"},
+      {word:"jong",  audio:"lessons/jong.MP3"},
+      {word:"jas",   audio:"everydaywords/jas.MP3"},
+      {word:"jouw",  audio:"lessons/jouw.MP3"},
+      {word:"je",    audio:"lessons/je.MP3"}
+    ]
+  },
+  { group:"Medeklinkers", sound:"K", emoji:"🔑",
+    displaySound:"K – /k/", description:"Như 'k' tiếng Việt, bật hơi.",
+    soundDemo:null,
+    keyword:"kind", keywordAudio:"lessons/kind.MP3",
+    examples:[
+      {word:"klein", audio:"lessons/klein.MP3"},
+      {word:"kilo",  audio:"lessons/kilo.MP3"},
+      {word:"kaas",  audio:"lessons/kaas.MP3"},
+      {word:"kleur", audio:"lessons/kleur.MP3"},
+      {word:"koud",  audio:null}
+    ]
+  },
+  { group:"Medeklinkers", sound:"L", emoji:"🦁",
+    displaySound:"L – /l/", description:"Như 'l' tiếng Việt.",
+    soundDemo:null,
+    keyword:"lam", keywordAudio:"Dutch31/lam.MP3",
+    examples:[
+      {word:"lente", audio:"lessons/lente.MP3"},
+      {word:"lepel", audio:"lessons/lepel.MP3"},
+      {word:"licht", audio:null},
+      {word:"lang",  audio:null},
+      {word:"lamp",  audio:null}
+    ]
+  },
+  { group:"Medeklinkers", sound:"M", emoji:"🌙",
+    displaySound:"M – /m/", description:"Như 'm' tiếng Việt.",
+    soundDemo:null,
+    keyword:"man", keywordAudio:"everydaywords/man.MP3",
+    examples:[
+      {word:"maan",   audio:"everydaywords/maan.MP3"},
+      {word:"mes",    audio:"lessons/mes.MP3"},
+      {word:"morgen", audio:"lessons/morgen.MP3"},
+      {word:"mensen", audio:"lessons/mensen.MP3"},
+      {word:"middag", audio:"lessons/middag.MP3"}
+    ]
+  },
+  { group:"Medeklinkers", sound:"N", emoji:"👃",
+    displaySound:"N – /n/", description:"Như 'n' tiếng Việt.",
+    soundDemo:null,
+    keyword:"neus", keywordAudio:"everydaywords/neus.MP3",
+    examples:[
+      {word:"nacht",  audio:"lessons/nacht.MP3"},
+      {word:"nee",    audio:"lessons/nee.MP3"},
+      {word:"mensen", audio:"lessons/mensen.MP3"},
+      {word:"nieuw",  audio:null},
+      {word:"naam",   audio:null}
+    ]
+  },
+  { group:"Medeklinkers", sound:"P", emoji:"🐦",
+    displaySound:"P – /p/", description:"Như 'p' tiếng Việt, bật hơi.",
+    soundDemo:null,
+    keyword:"pen", keywordAudio:"Dutch41/pen9.MP3",
+    examples:[
+      {word:"pak",  audio:"everydaywords/pak.MP3"},
+      {word:"pauw", audio:"duanimals/pauw.MP3"},
+      {word:"poes", audio:"Dutch50/poes.MP3"},
+      {word:"paar", audio:"Dutch22/paar.MP3"},
+      {word:"pot",  audio:null}
+    ]
+  },
+  { group:"Medeklinkers", sound:"R", emoji:"🎶",
+    displaySound:"R – /r/", description:"Rung đầu lưỡi hoặc rung họng — không như R tiếng Anh.",
+    soundDemo:"lessons/rat.MP3",
+    keyword:"rat", keywordAudio:"lessons/rat.MP3",
+    examples:[
+      {word:"rem",  audio:"lessons/rem.MP3"},
+      {word:"reus", audio:"quiz2/reus.MP3"},
+      {word:"ring", audio:null},
+      {word:"rood", audio:null},
+      {word:"rug",  audio:null}
+    ]
+  },
+  { group:"Medeklinkers", sound:"S", emoji:"⭐",
+    displaySound:"S – /s/", description:"Như 's' tiếng Việt.",
+    soundDemo:null,
+    keyword:"sok", keywordAudio:"Dutch22/sok.MP3",
+    examples:[
+      {word:"zeep",  audio:"everydaywords/zeep.MP3"},
+      {word:"star",  audio:"lessons/star.MP3"},
+      {word:"slim",  audio:null},
+      {word:"snel",  audio:null},
+      {word:"steen", audio:null}
+    ]
+  },
+  { group:"Medeklinkers", sound:"T", emoji:"🪑",
+    displaySound:"T – /t/", description:"Như 't' tiếng Việt, bật hơi.",
+    soundDemo:null,
+    keyword:"tak", keywordAudio:"everydaywords/tak.MP3",
+    examples:[
+      {word:"teen",  audio:"quiz2/teen.MP3"},
+      {word:"tafel", audio:null},
+      {word:"tuin",  audio:null},
+      {word:"trein", audio:null},
+      {word:"tijd",  audio:null}
+    ]
+  },
+  { group:"Medeklinkers", sound:"V", emoji:"🔥",
+    displaySound:"V – /v/", description:"Như 'v' hoặc 'f' nhẹ, tùy vùng.",
+    soundDemo:null,
+    keyword:"vlam", keywordAudio:"everydaywords/vlam.MP3",
+    examples:[
+      {word:"vis",  audio:"duanimals/vis.MP3"},
+      {word:"vuur", audio:"everydaywords/vuur.MP3"},
+      {word:"vier", audio:null},
+      {word:"voor", audio:null},
+      {word:"ver",  audio:null}
+    ]
+  },
+  { group:"Medeklinkers", sound:"W", emoji:"🌊",
+    displaySound:"W – /ʋ/", description:"Giữa 'v' và 'w' tiếng Anh, môi hơi tròn.",
+    soundDemo:null,
+    keyword:"water", keywordAudio:"everydaywords/water.MP3",
+    examples:[
+      {word:"want", audio:"everydaywords/want.MP3"},
+      {word:"week", audio:"lessons/week.MP3"},
+      {word:"weg",  audio:"everydaywords/weg.MP3"},
+      {word:"wind", audio:null},
+      {word:"wijn", audio:null}
+    ]
+  },
+  { group:"Medeklinkers", sound:"Z", emoji:"☀️",
+    displaySound:"Z – /z/", description:"Như 'z' tiếng Anh hoặc 's' rung.",
+    soundDemo:null,
+    keyword:"zijn", keywordAudio:"lessons/zijn.MP3",
+    examples:[
+      {word:"zeep",  audio:"everydaywords/zeep.MP3"},
+      {word:"zij",   audio:"lessons/zij.MP3"},
+      {word:"ze",    audio:"lessons/ze.MP3"},
+      {word:"zomer", audio:"lessons/zomer.MP3"},
+      {word:"zaag",  audio:"dutools2/zaag.MP3"}
+    ]
+  },
+
+  /* ── BIJZONDERE KLANKEN ── */
+  { group:"Bijzondere klanken", sound:"CH", emoji:"💡",
+    displaySound:"CH – /x/", description:"Âm 'kh' mạnh từ cổ họng, không rung — như J tiếng Tây Ban Nha.",
+    soundDemo:"lessons/nacht.MP3",
+    keyword:"nacht", keywordAudio:"lessons/nacht.MP3",
+    examples:[
+      {word:"toch",  audio:null},
+      {word:"echt",  audio:null},
+      {word:"licht", audio:null},
+      {word:"zacht", audio:null},
+      {word:"macht", audio:null}
+    ]
+  },
+  { group:"Bijzondere klanken", sound:"SCH", emoji:"🏫",
+    displaySound:"SCH – /sx/", description:"Tổ hợp S + KH cổ họng.",
+    soundDemo:"lessons/schaal.MP3",
+    keyword:"schaal", keywordAudio:"lessons/schaal.MP3",
+    examples:[
+      {word:"scheikunde", audio:"lessons/scheikunde.MP3"},
+      {word:"school",     audio:null},
+      {word:"schip",      audio:null},
+      {word:"schat",      audio:null},
+      {word:"schoen",     audio:null}
+    ]
+  },
+  { group:"Bijzondere klanken", sound:"SCHR", emoji:"✍️",
+    displaySound:"SCHR – /sr/", description:"SCH + R; CH câm: chỉ đọc 'sr-'.",
+    soundDemo:"lessons/schraal.MP3",
+    keyword:"schraal", keywordAudio:"lessons/schraal.MP3",
+    examples:[
+      {word:"schrijver", audio:null},
+      {word:"schreef",   audio:null},
+      {word:"schrik",    audio:null},
+      {word:"schrap",    audio:null},
+      {word:"schroef",   audio:null}
+    ]
+  },
+  { group:"Bijzondere klanken", sound:"NG", emoji:"💍",
+    displaySound:"NG – /ŋ/", description:"Như 'ng' cuối vần tiếng Việt: 'ang', 'ong'.",
+    soundDemo:"lessons/jong.MP3",
+    keyword:"jong", keywordAudio:"lessons/jong.MP3",
+    examples:[
+      {word:"ring",  audio:null},
+      {word:"lang",  audio:null},
+      {word:"bang",  audio:null},
+      {word:"tong",  audio:null},
+      {word:"zingt", audio:null}
+    ]
+  },
+  { group:"Bijzondere klanken", sound:"NK", emoji:"🏦",
+    displaySound:"NK – /ŋk/", description:"Như 'ng' + 'k': ngk.",
+    soundDemo:null,
+    keyword:"bank", keywordAudio:null,
+    examples:[
+      {word:"dank",  audio:null},
+      {word:"pink",  audio:null},
+      {word:"drink", audio:null},
+      {word:"flink", audio:null},
+      {word:"denk",  audio:null}
+    ]
+  },
+  { group:"Bijzondere klanken", sound:"WR", emoji:"⚓",
+    displaySound:"WR – /vr/", description:"Đọc cả W/V + R: tổ hợp đặc biệt.",
+    soundDemo:"lessons/wraak.MP3",
+    keyword:"wraak", keywordAudio:"lessons/wraak.MP3",
+    examples:[
+      {word:"wrak",    audio:"lessons/wrak.MP3"},
+      {word:"wrik",    audio:"lessons/wrik.MP3"},
+      {word:"wrok",    audio:"lessons/wrok.MP3"},
+      {word:"wrat",    audio:null},
+      {word:"wrijven", audio:null}
+    ]
+  },
+  { group:"Bijzondere klanken", sound:"KN", emoji:"🦵",
+    displaySound:"KN – /kn/", description:"Đọc cả K + N — không bỏ K như tiếng Anh.",
+    soundDemo:null,
+    keyword:"knoop", keywordAudio:null,
+    examples:[
+      {word:"knie",   audio:null},
+      {word:"knecht", audio:null},
+      {word:"knal",   audio:null},
+      {word:"knap",   audio:null},
+      {word:"knopen", audio:null}
+    ]
+  },
+
+  /* ── UITGANGEN ── */
+  { group:"Uitgangen", sound:"-B→P", emoji:"🔤",
+    displaySound:"Cuối -B → [p]", description:"B cuối từ đọc như P: heb → 'hep'.",
+    soundDemo:null,
+    keyword:"heb", keywordAudio:null,
+    examples:[
+      {word:"heb",  audio:null},
+      {word:"eb",   audio:null},
+      {word:"lab",  audio:null},
+      {word:"rib",  audio:null},
+      {word:"stab", audio:null}
+    ]
+  },
+  { group:"Uitgangen", sound:"-D→T", emoji:"🔤",
+    displaySound:"Cuối -D → [t]", description:"D cuối từ đọc như T: oud → 'out'.",
+    soundDemo:"lessons/oud.MP3",
+    keyword:"oud", keywordAudio:"lessons/oud.MP3",
+    examples:[
+      {word:"hond",  audio:null},
+      {word:"zand",  audio:null},
+      {word:"paard", audio:null},
+      {word:"brand", audio:null},
+      {word:"naald", audio:null}
+    ]
+  },
+  { group:"Uitgangen", sound:"-IG", emoji:"🔤",
+    displaySound:"Uitgang -IG", description:"Đuôi -ig đọc như '-ech' nhẹ.",
+    soundDemo:null,
+    keyword:"weinig", keywordAudio:null,
+    examples:[
+      {word:"aardig",      audio:null},
+      {word:"rustig",      audio:null},
+      {word:"handig",      audio:null},
+      {word:"mogelijk",    audio:null},
+      {word:"voorzichtig", audio:null}
+    ]
+  },
+  { group:"Uitgangen", sound:"-ISCH", emoji:"🔤",
+    displaySound:"Uitgang -ISCH → [-ies]", description:"Đuôi -isch đọc '-ies' — CH câm, I dài.",
+    soundDemo:null,
+    keyword:"logisch", keywordAudio:null,
+    examples:[
+      {word:"chronisch",   audio:null},
+      {word:"typisch",     audio:null},
+      {word:"musisch",     audio:null},
+      {word:"fantastisch", audio:null},
+      {word:"chemisch",    audio:null}
+    ]
+  },
+  { group:"Uitgangen", sound:"-LIJK", emoji:"🔤",
+    displaySound:"Uitgang -LIJK", description:"Đuôi -lijk đọc '-lik' nhẹ.",
+    soundDemo:null,
+    keyword:"heerlijk", keywordAudio:null,
+    examples:[
+      {word:"mogelijk",    audio:null},
+      {word:"eigenlijk",   audio:null},
+      {word:"werkelijk",   audio:null},
+      {word:"vriendelijk", audio:null},
+      {word:"natuurlijk",  audio:null}
+    ]
+  },
+  { group:"Uitgangen", sound:"-TIE", emoji:"🔤",
+    displaySound:"Uitgang -TIE → [-tsie]", description:"Đuôi -tie đọc '-tsie'.",
+    soundDemo:null,
+    keyword:"natie", keywordAudio:null,
+    examples:[
+      {word:"actie",    audio:null},
+      {word:"reactie",  audio:null},
+      {word:"functie",  audio:null},
+      {word:"positie",  audio:null},
+      {word:"formatie", audio:null}
+    ]
+  }
+];
+
+/* ═══════════ RENDER ═══════════ */
 const cardsContainer = document.getElementById("cardsContainer");
-const groupFilter = document.getElementById("groupFilter");
-const soundFilter = document.getElementById("soundFilter");
-const shuffleBtn = document.getElementById("shuffleBtn");
+const groupFilter    = document.getElementById("groupFilter");
+const soundFilter    = document.getElementById("soundFilter");
 
 function createCard(card) {
   const el = document.createElement("div");
   el.className = "card";
+  el.dataset.keyword = card.keyword;
+  el.dataset.sound   = card.sound;
 
-  const imgWrap = document.createElement("div");
-  imgWrap.className = "img-wrap";
+  if (card.soundDemo) {
+    const badge = document.createElement("span");
+    badge.className = "mp3-badge";
+    badge.textContent = "🎵 MP3";
+    el.appendChild(badge);
+  }
+
   const em = document.createElement("div");
-  em.className = "emoji";
+  em.className = "card-emoji";
   em.textContent = card.emoji || "🔤";
-  imgWrap.appendChild(em);
-  el.appendChild(imgWrap);
+  el.appendChild(em);
 
-  const sound = document.createElement("div");
-  sound.className = "sound";
-  sound.textContent = card.displaySound;
-  el.appendChild(sound);
+  const snd = document.createElement("div");
+  snd.className = "card-sound";
+  snd.textContent = card.displaySound;
+  el.appendChild(snd);
 
   const desc = document.createElement("div");
-  desc.className = "desc";
+  desc.className = "card-desc";
   desc.textContent = card.description;
   el.appendChild(desc);
 
   const kw = document.createElement("div");
-  kw.className = "keyword";
+  kw.className = "card-kw";
   kw.textContent = card.keyword;
   el.appendChild(kw);
 
-  const examples = document.createElement("div");
-  examples.className = "examples";
-  card.examples.forEach(w => {
-    const b = document.createElement("button");
-    b.type = "button";
-    b.textContent = w;
-    b.addEventListener("click", () => speakText(w, defaultRate));
-    examples.appendChild(b);
-  });
-  el.appendChild(examples);
+  const btns = document.createElement("div");
+  btns.className = "card-btns";
 
-  const ttsRow = document.createElement("div");
-  ttsRow.className = "tts-row";
-  const playBtn = document.createElement("button");
-  playBtn.className = "tts-btn play";
-  playBtn.textContent = "🔊 Nghe âm";
-  playBtn.addEventListener("click", () => speakText(`${card.displaySound}. ${card.keyword}`, defaultRate));
-  ttsRow.appendChild(playBtn);
+  if (card.soundDemo) {
+    const demo = document.createElement("button");
+    demo.className = "btn-demo";
+    demo.textContent = "🎵 Nghe âm";
+    demo.title = "Nghe âm chuẩn từ HearDutchHere.net";
+    demo.addEventListener("click", () => playAudio(card.soundDemo, card.displaySound));
+    btns.appendChild(demo);
+  }
+
+  const kwBtn = document.createElement("button");
+  kwBtn.className = "btn-kw";
+  kwBtn.textContent = "🔊 " + card.keyword;
+  kwBtn.addEventListener("click", () => playAudio(card.keywordAudio, card.keyword));
+  btns.appendChild(kwBtn);
 
   const slowBtn = document.createElement("button");
-  slowBtn.className = "tts-btn extra-slow";
-  slowBtn.textContent = "🐢 Nghe rất chậm (0.2x)";
-  slowBtn.addEventListener("click", () => speakText(`${card.displaySound}. ${card.keyword}`, 0.2));
-  ttsRow.appendChild(slowBtn);
+  slowBtn.className = "btn-slow";
+  slowBtn.textContent = "🐢 Chậm";
+  slowBtn.addEventListener("click", () => playAudio(card.keywordAudio, card.keyword, true));
+  btns.appendChild(slowBtn);
 
-  el.appendChild(ttsRow);
+  el.appendChild(btns);
 
-  el.dataset.keyword = card.keyword;
-  el.dataset.sound = card.sound;
+  if (card.examples && card.examples.length) {
+    const row = document.createElement("div");
+    row.className = "examples-row";
+    card.examples.forEach(ex => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.textContent = ex.word;
+      b.title = ex.audio ? "🎵 MP3" : "🔊 TTS";
+      b.addEventListener("click", () => playAudio(ex.audio, ex.word));
+      row.appendChild(b);
+    });
+    el.appendChild(row);
+  }
+
   return el;
 }
 
@@ -287,22 +923,20 @@ function renderCards(list) {
 }
 
 function renderSoundOptions() {
-  const sounds = [...new Set(flashcards.map(c => c.sound))].sort();
+  const sounds = [...new Set(flashcards.map(c => c.sound))];
   soundFilter.innerHTML = '<option value="all">Tất cả âm</option>' +
     sounds.map(s => `<option value="${s}">${s}</option>`).join("");
 }
 
 function applyFilters() {
-  const g = groupFilter.value;
-  const s = soundFilter.value;
+  const g = groupFilter.value, s = soundFilter.value;
   const filtered = flashcards.filter(c =>
-    (g === "all" || c.group === g) &&
-    (s === "all" || c.sound === s)
+    (g === "all" || c.group === g) && (s === "all" || c.sound === s)
   );
   renderCards(filtered);
 }
 
-shuffleBtn.addEventListener("click", () => {
+document.getElementById("shuffleBtn").addEventListener("click", () => {
   const arr = [...flashcards];
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -310,37 +944,34 @@ shuffleBtn.addEventListener("click", () => {
   }
   renderCards(arr);
 });
-
 groupFilter.addEventListener("change", applyFilters);
 soundFilter.addEventListener("change", applyFilters);
 
-document.getElementById("rateNormal").addEventListener("click", () => {
-  defaultRate = 0.3;
-  document.getElementById("rateNormal").style.opacity = "1";
-  document.getElementById("rateSlower").style.opacity = "0.8";
+document.getElementById("rateNormal").addEventListener("click", function() {
+  ttsRate = 0.5;
+  this.classList.add("active");
+  document.getElementById("rateSlower").classList.remove("active");
 });
-document.getElementById("rateSlower").addEventListener("click", () => {
-  defaultRate = 0.2;
-  document.getElementById("rateNormal").style.opacity = "0.8";
-  document.getElementById("rateSlower").style.opacity = "1";
+document.getElementById("rateSlower").addEventListener("click", function() {
+  ttsRate = 0.3;
+  this.classList.add("active");
+  document.getElementById("rateNormal").classList.remove("active");
 });
 
-const dragList = document.getElementById("dragList");
-const dropGrid = document.getElementById("dropGrid");
-const resetMatchBtn = document.getElementById("resetMatch");
-const checkMatchBtn = document.getElementById("checkMatch");
+/* ═══════════ DRAG-DROP GAME ═══════════ */
+const dragList    = document.getElementById("dragList");
+const dropGrid    = document.getElementById("dropGrid");
 const matchResult = document.getElementById("matchResult");
-
 let currentMatchCards = [];
-let dragItems = [];
 
 function populateMatchTargets(list) {
-  const pool = list.slice(0, 12);
+  const eligible = list.filter(c => c.emoji !== "🔤");
+  const pool = eligible.slice(0, 12);
   const chosen = [];
-  const copy = pool.slice();
+  const copy = [...pool];
   while (chosen.length < 6 && copy.length) {
     const idx = Math.floor(Math.random() * copy.length);
-    chosen.push(copy.splice(idx,1)[0]);
+    chosen.push(copy.splice(idx, 1)[0]);
   }
   currentMatchCards = chosen;
   resetMatch();
@@ -350,18 +981,18 @@ function resetMatch() {
   dragList.innerHTML = "";
   dropGrid.innerHTML = "";
   matchResult.textContent = "";
-  dragItems = currentMatchCards.map(c => c.keyword);
-  for (let i = dragItems.length - 1; i > 0; i--) {
+  const words = currentMatchCards.map(c => c.keyword);
+  for (let i = words.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [dragItems[i], dragItems[j]] = [dragItems[j], dragItems[i]];
+    [words[i], words[j]] = [words[j], words[i]];
   }
-  dragItems.forEach(word => {
+  words.forEach(word => {
     const d = document.createElement("div");
     d.className = "draggable";
     d.draggable = true;
     d.textContent = word;
     d.id = "drag-" + word;
-    d.addEventListener("dragstart", dragStart);
+    d.addEventListener("dragstart", e => e.dataTransfer.setData("text/plain", word));
     dragList.appendChild(d);
   });
   currentMatchCards.forEach(c => {
@@ -369,63 +1000,48 @@ function resetMatch() {
     box.className = "drop-target";
     box.dataset.keyword = c.keyword;
     const inner = document.createElement("div");
-    inner.style.textAlign = "center";
-    inner.style.width = "100%";
-    inner.style.height = "100%";
+    inner.style.cssText = "text-align:center;width:100%;";
     const em = document.createElement("div");
     em.textContent = c.emoji || "🔤";
-    em.style.fontSize = "36px";
+    em.style.fontSize = "32px";
     inner.appendChild(em);
     box.appendChild(inner);
-    box.addEventListener("dragover", dragOver);
-    box.addEventListener("drop", dropItem);
+    box.addEventListener("dragover", e => e.preventDefault());
+    box.addEventListener("drop", e => {
+      e.preventDefault();
+      const word = e.dataTransfer.getData("text/plain");
+      if (box.dataset.filled) return;
+      const dragged = document.getElementById("drag-" + word);
+      if (dragged) {
+        box.appendChild(dragged);
+        dragged.style.cursor = "default";
+        dragged.draggable = false;
+        box.classList.add("filled");
+        box.dataset.filled = word;
+      }
+    });
     dropGrid.appendChild(box);
   });
 }
 
-function dragStart(e) { e.dataTransfer.setData("text/plain", e.target.textContent); }
-function dragOver(e) { e.preventDefault(); }
-function dropItem(e) {
-  e.preventDefault();
-  const word = e.dataTransfer.getData("text/plain");
-  const target = e.currentTarget;
-  if (target.dataset.filled) return;
-  const dragged = document.getElementById("drag-" + word);
-  if (dragged) {
-    target.appendChild(dragged);
-    dragged.style.cursor = "default";
-    dragged.draggable = false;
-    target.classList.add("filled");
-    target.dataset.filled = word;
-  }
-}
-
-resetMatchBtn.addEventListener("click", () => { resetMatch(); });
-
-checkMatchBtn.addEventListener("click", () => {
-  const targets = Array.from(dropGrid.querySelectorAll(".drop-target"));
+document.getElementById("resetMatch").addEventListener("click", resetMatch);
+document.getElementById("checkMatch").addEventListener("click", () => {
   let correct = 0;
-  targets.forEach(t => {
-    const placed = t.dataset.filled || "";
-    const expected = t.dataset.keyword;
-    if (placed === expected) {
-      t.style.borderColor = "#86efac";
-      t.style.background = "#ecfdf5";
-      correct++;
-    } else {
-      t.style.borderColor = "#fca5a5";
-      t.style.background = "#fff1f2";
-    }
+  dropGrid.querySelectorAll(".drop-target").forEach(t => {
+    const ok = (t.dataset.filled || "") === t.dataset.keyword;
+    t.style.borderColor = ok ? "#86efac" : "#fca5a5";
+    t.style.background  = ok ? "#ecfdf5" : "#fff1f2";
+    if (ok) correct++;
   });
-  matchResult.textContent = `Kết quả: ${correct} / ${targets.length} đúng`;
+  const total = currentMatchCards.length;
+  matchResult.textContent = `Kết quả: ${correct} / ${total} đúng ${correct === total ? "🎉" : ""}`;
 });
 
+/* ═══════════ QUIZ ═══════════ */
 const playQuizSoundBtn = document.getElementById("playQuizSound");
-const nextQuizBtn = document.getElementById("nextQuiz");
-const quizQuestion = document.getElementById("quizQuestion");
-const quizOptions = document.getElementById("quizOptions");
-const quizFeedback = document.getElementById("quizFeedback");
-
+const quizQuestion     = document.getElementById("quizQuestion");
+const quizOptions      = document.getElementById("quizOptions");
+const quizFeedback     = document.getElementById("quizFeedback");
 let currentQuiz = null;
 
 function pickQuiz() {
@@ -434,7 +1050,7 @@ function pickQuiz() {
   const opts = [card.keyword];
   while (opts.length < 4 && others.length) {
     const idx = Math.floor(Math.random() * others.length);
-    const pick = others.splice(idx,1)[0];
+    const pick = others.splice(idx, 1)[0];
     if (!opts.includes(pick.keyword)) opts.push(pick.keyword);
   }
   for (let i = opts.length - 1; i > 0; i--) {
@@ -454,17 +1070,18 @@ function renderQuiz() {
     b.className = "option-btn";
     b.textContent = opt;
     b.addEventListener("click", () => {
-      if (opt === currentQuiz.card.keyword) {
+      const correct = currentQuiz.card;
+      if (opt === correct.keyword) {
         b.classList.add("correct");
         quizFeedback.textContent = "Chính xác 🎉";
-        speakText(opt, 0.3);
+        playAudio(correct.keywordAudio, opt);
       } else {
         b.classList.add("wrong");
-        quizFeedback.textContent = `Sai — đáp án đúng: ${currentQuiz.card.keyword}`;
+        quizFeedback.textContent = `Sai — đáp án: ${correct.keyword}`;
         Array.from(quizOptions.children).forEach(ch => {
-          if (ch.textContent === currentQuiz.card.keyword) ch.classList.add("correct");
+          if (ch.textContent === correct.keyword) ch.classList.add("correct");
         });
-        speakText(currentQuiz.card.keyword, 0.3);
+        playAudio(correct.keywordAudio, correct.keyword);
       }
       Array.from(quizOptions.children).forEach(ch => ch.disabled = true);
     });
@@ -473,25 +1090,23 @@ function renderQuiz() {
 }
 
 playQuizSoundBtn.addEventListener("click", () => {
-  if (currentQuiz) speakText(`${currentQuiz.card.displaySound}. ${currentQuiz.card.keyword}`, defaultRate);
+  if (currentQuiz) playAudio(currentQuiz.card.soundDemo || currentQuiz.card.keywordAudio, currentQuiz.card.displaySound);
 });
-nextQuizBtn.addEventListener("click", () => { pickQuiz(); });
+document.getElementById("nextQuiz").addEventListener("click", pickQuiz);
 
+/* ═══════════ INIT ═══════════ */
 function init() {
   renderSoundOptions();
   renderCards(flashcards);
-  if (speechSynthesis && speechSynthesis.onvoiceschanged !== undefined) {
-    speechSynthesis.onvoiceschanged = () => {};
-  }
-  populateMatchTargets(flashcards);
+  if (speechSynthesis.onvoiceschanged !== undefined) speechSynthesis.onvoiceschanged = () => {};
   pickQuiz();
 }
 init();
 
-document.addEventListener("keydown", (e) => {
-  if (e.key === " " && document.activeElement && document.activeElement.classList.contains("draggable")) {
+document.addEventListener("keydown", e => {
+  if (e.key === " " && document.activeElement?.classList.contains("draggable")) {
     e.preventDefault();
-    speakText(document.activeElement.textContent, defaultRate);
+    playAudio(null, document.activeElement.textContent);
   }
 });
 </script>
