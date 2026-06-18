@@ -365,6 +365,22 @@ header#vs-header .hdr-fs-btn {
   color: rgba(255,255,255,.5);
   margin-bottom: 1px !important;
 }
+
+/* Lesson progress bar */
+.vs-lesson-bar-wrap {
+  height: 3px;
+  background: rgba(255,255,255,.08);
+  border-radius: 2px;
+  margin-top: 3px;
+  overflow: hidden;
+}
+.vs-lesson-bar {
+  height: 100%;
+  width: 0%;
+  background: #22c55e;
+  border-radius: 2px;
+  transition: width .4s ease;
+}
 #vs-sidebar .nested-list li.active-lesson {
   background: rgba(234,88,12,.18) !important;
   -webkit-text-fill-color: rgba(255,255,255,.88) !important;
