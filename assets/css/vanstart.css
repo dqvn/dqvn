@@ -593,6 +593,42 @@ header#vs-header .hdr-fs-btn {
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   8a. Dark-theme sync pill in #vs-header
+       sync.css assumes a light header; flip to
+       white-on-dark when data-theme="dark".
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+[data-theme="dark"] #vs-header .sync-card {
+  background: rgba(255,255,255,.07) !important;
+}
+[data-theme="dark"] #vs-header .sync-card:hover {
+  background: rgba(255,255,255,.13) !important;
+}
+[data-theme="dark"] #vs-header .sync-name {
+  color: rgba(255,255,255,.85) !important;
+}
+[data-theme="dark"] #vs-header .sync-menu-btn {
+  color: rgba(255,255,255,.4) !important;
+}
+[data-theme="dark"] #vs-header .sync-menu-btn:hover {
+  background: rgba(255,255,255,.1) !important;
+  color: rgba(255,255,255,.75) !important;
+}
+
+/* Dropdown that opens from the pill */
+[data-theme="dark"] #vs-header .sync-dropdown {
+  background: #1c2a42;
+  border: 1px solid rgba(255,255,255,.1);
+  box-shadow: 0 8px 28px rgba(0,0,0,.55);
+}
+[data-theme="dark"] #vs-header .sync-dd-item       { color: rgba(255,255,255,.72); }
+[data-theme="dark"] #vs-header .sync-dd-item:hover { background: rgba(255,255,255,.07); }
+[data-theme="dark"] #vs-header .sync-dd-signout {
+  color: #ff7c38;
+  border-top-color: rgba(255,255,255,.08);
+}
+[data-theme="dark"] #vs-header .sync-dd-signout:hover { background: rgba(234,88,12,.15); }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    8. Theme-aware table overrides
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 /* Light themes: make table cells use theme border */
