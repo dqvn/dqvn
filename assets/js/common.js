@@ -796,13 +796,16 @@ function updateLessonProgressBars() {
             const total = fcScores[chId]?.total || 0;
             if (!total) { barEl.style.width = '0%'; return; }
 
-            // "seen" = any word that has been interacted with at least once
-            const seenFromSRS = Object.keys(chProg).filter(k => k !== '_totals').length;
-            const seen = fcScores[chId]?.seen ?? seenFromSRS;
+            // "mastered" = review state with interval ≥ 21 days
+            let mastered = 0;
+            for (const [key, ws] of Object.entries(chProg)) {
+                if (key === '_totals') continue;
+                if (ws?.state === 'review' && (ws?.interval || 0) >= 21) mastered++;
+            }
 
-            const pct = Math.min(100, Math.round((seen / total) * 100));
+            const pct = Math.min(100, Math.round((mastered / total) * 100));
             barEl.style.width = pct + '%';
-            barEl.closest('.vs-lesson-bar-wrap').title = `${seen}/${total} words studied (${pct}%)`;
+            barEl.closest('.vs-lesson-bar-wrap').title = `${mastered}/${total} mastered (${pct}%)`;
         });
     } catch {}
 }
