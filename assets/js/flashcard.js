@@ -39,6 +39,8 @@
 
   function applyWordSize(size) {
     $id('fc-word').style.fontSize = size + 'rem';
+    const engEl = $id('fc-english');
+    if (engEl) engEl.style.fontSize = size + 'rem';
     $id('fc-word-size-dec').disabled = size <= WORD_SIZE_MIN;
     $id('fc-word-size-inc').disabled = size >= WORD_SIZE_MAX;
   }
@@ -366,6 +368,7 @@
     fc.ttsSeq++;
     window.speechSynthesis && window.speechSynthesis.cancel();
     if (typeof updateWordBadges === 'function') updateWordBadges();
+    if (typeof updateLessonProgressBars === 'function') updateLessonProgressBars();
   }
 
   /* ── Header / progress ──────────────────────────────────────────────────── */
