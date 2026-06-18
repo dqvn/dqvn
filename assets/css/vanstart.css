@@ -661,10 +661,14 @@ th {
 #word-list tbody tr:nth-child(even) {
   background-color: color-mix(in srgb, var(--bg) 60%, var(--card)) !important;
 }
+#word-list th {
+  padding: 12px 14px !important;
+}
 #word-list td {
   background-color: var(--card) !important;
   color: var(--text) !important;
-  padding: 14px 12px !important;
+  padding: 18px 14px !important;
+  line-height: 1.5 !important;
 }
 /* Restore A−/A+ control on both desktop and mobile.
    style.css's mobile media queries hardcode font-size (1.15rem / 1.05rem)
