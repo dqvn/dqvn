@@ -407,7 +407,11 @@ function _renderSyncUI() {
 // ─────────────────────────────────────────────────────────────────────────────
 function _injectPageTools(dd) {
   const prev = dd.querySelector('.sync-page-tools-slot');
-  if (prev) prev.remove();
+  if (prev) {
+    const prevSep = dd.querySelector('.sync-dd-sep');
+    if (prevSep) prevSep.remove();
+    prev.remove();
+  }
   const tools = window._syncPageTools;
   if (!tools || !tools.length) return;
 
