@@ -664,6 +664,13 @@ th {
 #word-list th {
   padding: 12px 14px !important;
 }
+#word-list th:nth-child(1),
+#word-list td:nth-child(1) {
+  font-size: .72rem !important;
+  color: var(--text-3) !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
 #word-list td {
   background-color: var(--card) !important;
   color: var(--text) !important;
