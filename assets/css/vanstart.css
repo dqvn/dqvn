@@ -664,6 +664,7 @@ th {
 #word-list td {
   background-color: var(--card) !important;
   color: var(--text) !important;
+  padding: 14px 12px !important;
 }
 /* Restore A−/A+ control on both desktop and mobile.
    style.css's mobile media queries hardcode font-size (1.15rem / 1.05rem)
