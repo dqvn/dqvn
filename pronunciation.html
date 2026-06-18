@@ -139,6 +139,62 @@
         span.nowrap { white-space: nowrap; }
         span.wrap   { white-space: normal; }
         span.line   { padding-left: 25px; display: block; }
+
+        /* ── Mobile responsive ── */
+        @media (max-width: 700px) {
+            html { overflow-x: hidden; }
+
+            body {
+                padding: 10px 12px;
+                font-size: 14px;
+                line-height: 1.8;
+            }
+
+            td {
+                line-height: 1.8;
+            }
+
+            h1 {
+                font-size: 1.05rem;
+                padding: 12px 14px;
+            }
+
+            h3 {
+                font-size: 0.95rem;
+                margin-top: 20px;
+            }
+
+            /* Word/content tables: scroll horizontally */
+            table {
+                display: block;
+                overflow-x: auto;
+                max-width: 100%;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            /* Nav chip tables: wrap chips instead of scroll */
+            table:has(th.bw) {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 4px;
+                padding: 4px 0;
+                overflow-x: visible;
+                border-spacing: 0;
+            }
+            table:has(th.bw) tbody,
+            table:has(th.bw) tr {
+                display: contents;
+            }
+            /* Hide spacer <td> cells between chips */
+            table:has(th.bw) td {
+                display: none;
+            }
+
+            th.bw a {
+                font-size: 0.78rem;
+                padding: 4px 8px;
+            }
+        }
     </style>
 
 </head>
