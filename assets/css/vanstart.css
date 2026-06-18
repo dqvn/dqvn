@@ -697,9 +697,24 @@ th {
   background-color: #273549 !important;
 }
 [data-theme="dark"] .dutch-word {
-  color: var(--accent) !important;
-  text-shadow: none !important;
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  text-shadow: 0 0 18px color-mix(in srgb, var(--accent) 55%, transparent) !important;
 }
+
+/* ── Word-table status badges (wb-*) — boost opacity & lighten colours ── */
+[data-theme="dark"] .word-badge           { opacity: 1 !important; }
+[data-theme="dark"] .wb-new      { color: #a5b4fc !important; background: rgba(99,102,241,.22)  !important; border-color: rgba(99,102,241,.55)  !important; }
+[data-theme="dark"] .wb-learning { color: #6ee7b7 !important; background: rgba(5,150,105,.2)    !important; border-color: rgba(5,150,105,.5)    !important; }
+[data-theme="dark"] .wb-review   { color: #c4b5fd !important; background: rgba(124,58,237,.2)   !important; border-color: rgba(124,58,237,.5)   !important; }
+[data-theme="dark"] .wb-hard     { color: #fca5a5 !important; background: rgba(239,68,68,.2)    !important; border-color: rgba(239,68,68,.5)    !important; }
+[data-theme="dark"] .wb-mastered { color: #86efac !important; background: rgba(21,128,61,.2)    !important; border-color: rgba(21,128,61,.45)   !important; }
+
+/* ── Flashcard state badge (fc-badge-*) — swap pastels for dark pills ── */
+[data-theme="dark"] .fc-badge-new    { background: rgba(99,102,241,.25)  !important; color: #a5b4fc !important; }
+[data-theme="dark"] .fc-badge-review { background: rgba(202,138,4,.25)   !important; color: #fde047 !important; }
+[data-theme="dark"] .fc-badge-hard   { background: rgba(239,68,68,.25)   !important; color: #fca5a5 !important; }
+[data-theme="dark"] .fc-badge-master { background: rgba(21,128,61,.25)   !important; color: #86efac !important; }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    9. Mobile (≤ 700px)
