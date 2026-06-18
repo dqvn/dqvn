@@ -791,17 +791,18 @@ function updateLessonProgressBars() {
         document.querySelectorAll('#file-list [data-file] .vs-lesson-bar').forEach(barEl => {
             const chId   = barEl.closest('[data-file]').dataset.file;
             const chProg = allProg[chId] || {};
-            const total  = fcScores[chId]?.total || 0;
+
+            // total word count from plan data (written after first flashcard rating)
+            const total = fcScores[chId]?.total || 0;
             if (!total) { barEl.style.width = '0%'; return; }
 
-            let mastered = 0;
-            for (const [key, ws] of Object.entries(chProg)) {
-                if (key === '_totals') continue;
-                if (ws?.state === 'review' && (ws?.interval || 0) >= 21) mastered++;
-            }
-            const pct = Math.min(100, Math.round((mastered / total) * 100));
+            // "seen" = any word that has been interacted with at least once
+            const seenFromSRS = Object.keys(chProg).filter(k => k !== '_totals').length;
+            const seen = fcScores[chId]?.seen ?? seenFromSRS;
+
+            const pct = Math.min(100, Math.round((seen / total) * 100));
             barEl.style.width = pct + '%';
-            barEl.closest('.vs-lesson-bar-wrap').title = `${mastered}/${total} mastered (${pct}%)`;
+            barEl.closest('.vs-lesson-bar-wrap').title = `${seen}/${total} words studied (${pct}%)`;
         });
     } catch {}
 }
