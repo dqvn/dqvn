@@ -1,0 +1,23 @@
+{
+  "title": "Klik en Luister! 🗣️",
+  "name": "het eten",
+  "subtitle": "Click on a picture to hear the Dutch word spoken slowly!",
+  "words": [
+    { "text": "brood", "emoji": "🍞" },
+    { "text": "kaas", "emoji": "🧀" },
+    { "text": "pizza", "emoji": "🍕" },
+    { "text": "soep", "emoji": "🍲" },
+    { "text": "ei", "emoji": "🥚" },
+    { "text": "vlees", "emoji": "🥩" },
+    { "text": "vis", "emoji": "🐟" },
+    { "text": "rijst", "emoji": "🍚" },
+    { "text": "meel", "emoji": "🌾" },
+    { "text": "olie", "emoji": "🛢️" },
+    { "text": "suiker", "emoji": "🍬" },
+    { "text": "zout", "emoji": "🧂" },
+    { "text": "boter", "emoji": "🧈" },
+    { "text": "melk", "emoji": "🥛" },
+    { "text": "pasta", "emoji": "🍝" },
+    { "text": "honig", "emoji": "🍯" }
+  ]
+}
