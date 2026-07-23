@@ -1,0 +1,27 @@
+{
+  "title": "Click and Listen! 🗣️",
+  "name": "Summer Words for Kids",
+  "subtitle": "Click on a picture to hear the word spoken slowly!",
+  "words": [
+    { "text": "Sun", "emoji": "☀️" },
+    { "text": "Sunshine", "emoji": "🌤️" },
+    { "text": "Beach", "emoji": "🏖️" },
+    { "text": "Sandcastle", "emoji": "🏰" },
+    { "text": "Swimsuit", "emoji": "🩱" },
+    { "text": "Sunglasses", "emoji": "🕶️" },
+    { "text": "Flip-Flops", "emoji": "🩴" },
+    { "text": "Ice Cream", "emoji": "🍦" },
+    { "text": "Watermelon", "emoji": "🍉" },
+    { "text": "Pool", "emoji": "🏊" },
+    { "text": "Surfboard", "emoji": "🏄" },
+    { "text": "Bucket", "emoji": "🪣" },
+    { "text": "Shovel", "emoji": "🧹" },
+    { "text": "Picnic", "emoji": "🧺" },
+    { "text": "Camping", "emoji": "🏕️" },
+    { "text": "Lemonade", "emoji": "🍋" },
+    { "text": "Seashell", "emoji": "🐚" },
+    { "text": "Palm Tree", "emoji": "🌴" },
+    { "text": "Vacation", "emoji": "🧳" },
+    { "text": "Kite", "emoji": "🪁" }
+  ]
+}
