@@ -79,3 +79,31 @@ Read data/kids/README.md for the template and rules
 Glob data/kids/l*.json to find the next number automatically
 Read the words from your image
 Write the file — no other changes needed
+
+
+Here is a reusable prompt template you can use whenever you upload an image (or multiple images) and want to generate JSON matching that exact layout:
+### 📋 Prompt Template for Uploaded Images
+> **Instructions for AI:**
+> Please analyze the uploaded image(s) and convert the content into a JSON object based strictly on the template format provided below.
+> **Formatting Rules:**
+>  1. Extract each item/word shown in the image along with an appropriate, highly relevant emoji representing that item.
+>  2. **Do not** include articles like de, het, a, or an in the "text" field (e.g., use "brood" instead of "het brood").
+>  3. Keep all JSON keys and values clean, properly formatted, and valid JSON.
+>  4. If the title/topic in the image is in Dutch or another language, keep the "title", "name", and "subtitle" in that language (or adapt them appropriately for children).
+> **Target JSON Template Structure:**
+> ```json
+> {
+>   "title": "Klik en Luister! 🗣️",
+>   "name": "[Topic / Title from the image]",
+>   "subtitle": "Click on a picture to hear the word spoken slowly!",
+>   "words": [
+>     { "text": "[Word 1]", "emoji": "[Emoji 1]" },
+>     { "text": "[Word 2]", "emoji": "[Emoji 2]" }
+>   ]
+> }
+> 
+> ```
+> Please return one JSON code block per image uploaded.
+> 
+### 💡 How to use it:
+Simply upload your new image(s) and paste the prompt above into the chat.
