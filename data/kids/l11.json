@@ -1,0 +1,19 @@
+{
+  "title": "Klik en Luister! 🗣️",
+  "name": "Vervoermiddelen",
+  "subtitle": "Click on a picture to hear the word spoken slowly!",
+  "words": [
+    { "text": "Auto", "emoji": "🚗" },
+    { "text": "Fiets", "emoji": "🚲" },
+    { "text": "Motor", "emoji": "🏍️" },
+    { "text": "Bus", "emoji": "🚌" },
+    { "text": "Tram", "emoji": "🚊" },
+    { "text": "Metro", "emoji": "🚇" },
+    { "text": "Trein", "emoji": "🚆" },
+    { "text": "Taxi", "emoji": "🚕" },
+    { "text": "Bestelwagen", "emoji": "🚐" },
+    { "text": "Vrachtwagen", "emoji": "🚛" },
+    { "text": "Vliegtuig", "emoji": "✈️" },
+    { "text": "Boot", "emoji": "🛥️" }
+  ]
+}
