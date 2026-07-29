@@ -118,6 +118,10 @@
       max-width: 340px; text-align: center;
     }
 
+    .attempts-row { display: flex; gap: 6px; justify-content: center; font-size: 1.15rem; }
+    .attempts-row .heart { transition: opacity .2s, filter .2s; }
+    .attempts-row .heart.used { opacity: .25; filter: grayscale(1); }
+
     /* Exercise card */
     .math-card {
       background: var(--card); border: 3px dashed var(--border); border-radius: var(--r);
@@ -233,6 +237,7 @@
   <nav id="top-nav">
     <a href="/dqvn/" class="nav-back" title="Terug naar portaal" aria-label="Terug naar portaal">🏠</a>
     <span class="nav-title">➕ Optellen Oefenen</span>
+    <button class="mute-btn" id="music-btn" onclick="toggleMusic()" title="Achtergrondmuziek aan/uit">🎶</button>
     <button class="mute-btn" id="mute-btn" onclick="toggleSound()" title="Geluid aan/uit">🔊</button>
     <div id="sync-section"></div>
   </nav>
@@ -261,6 +266,8 @@
         <div class="mascot" id="mascot">🦊</div>
         <div class="mascot-bubble" id="mascot-bubble">Wat is het antwoord?</div>
       </div>
+
+      <div class="attempts-row" id="attempts-row"></div>
 
       <div class="math-card">
         <div class="visual-row" id="visual-row"></div>
@@ -295,8 +302,9 @@
   'use strict';
 
   /* ── Constants ─────────────────────────────────────────── */
-  const PROG_KEY  = 'nl_mathadd_progress';
-  const ACT_COUNT = 10;
+  const PROG_KEY     = 'nl_mathadd_progress';
+  const ACT_COUNT    = 10;
+  const MAX_ATTEMPTS = 3;
 
   const NL_NUMS = ['nul','een','twee','drie','vier','vijf','zes','zeven','acht','negen','tien',
     'elf','twaalf','dertien','veertien','vijftien','zestien','zeventien','achttien','negentien','twintig',
@@ -313,9 +321,10 @@
     { id:5, emoji:'🎲', label:'Level 5', range:'Mix van alle sommen', minSum:2, maxSum:30, mode:'pad',    visual:'none'  },
   ];
 
-  const CORRECT_MSGS = ['Goed zo! 🎉','Knap gedaan! 🌟','Je bent een sterspeler! ⭐','Fantastisch! 🥳','Wauw, correct! 🙌','Supergoed! 🏆'];
-  const WRONG_MSGS   = ['Bijna! Volgende keer lukt het! 💪','Niet erg, we leren samen! 🐾','Goed geprobeerd! Ga zo door! 🌈','Oeps! Kijk, dit was het antwoord 🌟'];
-  const STREAK_MSGS  = { 3:'Drie op een rij! 🔥', 5:'Vijf op een rij! Wauw! 🔥🔥', 8:'Ongelooflijk! 🔥🔥🔥' };
+  const CORRECT_MSGS     = ['Goed zo! 🎉','Knap gedaan! 🌟','Je bent een sterspeler! ⭐','Fantastisch! 🥳','Wauw, correct! 🙌','Supergoed! 🏆'];
+  const WRONG_RETRY_MSGS = ['Bijna! Probeer het nog een keer 💪','Niet helemaal — probeer opnieuw! 🌈','Kom op, jij kan het! 🐾','Nog een kans! Denk er nog even over na 🤔'];
+  const WRONG_FINAL_MSGS = ['Geen zorgen, kijk maar naar het juiste antwoord! 🌟','Volgende keer lukt het vast! 💛','Goed geprobeerd, ga zo door! 🌈'];
+  const STREAK_MSGS      = { 3:'Drie op een rij! 🔥', 5:'Vijf op een rij! Wauw! 🔥🔥', 8:'Ongelooflijk! 🔥🔥🔥' };
 
   /* ── State ─────────────────────────────────────────────── */
   let progress     = {};
@@ -323,11 +332,12 @@
   let currentEx    = null;
   let soundOn      = true;
 
-  let actIdx     = 0;
-  let actCorrect = 0;
-  let actBusy    = false;
-  let streak     = 0;
-  let bestStreak = 0;
+  let actIdx       = 0;
+  let actCorrect   = 0;
+  let actBusy      = false;
+  let streak       = 0;
+  let bestStreak   = 0;
+  let attemptsUsed = 0;
 
   /* ── Boot ──────────────────────────────────────────────── */
   function init() {
@@ -344,7 +354,20 @@
     if (typeof scheduleAutoSync === 'function') scheduleAutoSync();
   }
   function getProg(id) { return progress[id] ?? 0; }
-  function isUnlocked(id) { return id === 1 || getProg(id - 1) > 0; }
+  /* Level 5 (Mix) is always playable — it doesn't wait on Level 4. */
+  function isUnlocked(id) { return id === 1 || id === 5 || getProg(id - 1) > 0; }
+
+  /* Level 5's sum range scales to whatever the child has actually
+     completed so far (levels 1-4), so mixing never surfaces sums from a
+     level they haven't reached yet. Defaults to Level 1's range if
+     nothing is completed. */
+  function getMixRange() {
+    const completed = LEVELS.filter(l => l.id !== 5 && getProg(l.id) > 0);
+    const cap = completed.length
+      ? completed.reduce((m, l) => (l.maxSum > m.maxSum ? l : m), completed[0]).maxSum
+      : LEVELS[0].maxSum;
+    return { minSum: 2, maxSum: cap };
+  }
   function starsHtml(n) {
     return [0,1,2].map(i => `<span class="${i < n ? 'star-on' : 'star-off'}">★</span>`).join('');
   }
@@ -371,12 +394,13 @@
     document.getElementById('level-grid').innerHTML = LEVELS.map(lv => {
       const stars  = getProg(lv.id);
       const locked = !isUnlocked(lv.id);
+      const range  = lv.id === 5 ? `Mix tot ${getMixRange().maxSum}` : lv.range;
       return `
         <div class="level-card ${locked ? 'locked' : ''}"
              onclick="${locked ? "showToast('🔒 Voltooi eerst het vorige niveau')" : `startLevel(${lv.id})`}">
           <div class="lc-emoji">${lv.emoji}</div>
           <div class="lc-label">${lv.label}</div>
-          <div class="lc-range">${lv.range}</div>
+          <div class="lc-range">${range}</div>
           <div class="lc-stars">${locked ? '🔒' : starsHtml(stars)}</div>
         </div>`;
     }).join('');
@@ -386,10 +410,11 @@
 
   /* ── Exercise generation ───────────────────────────────── */
   function genExercise(level) {
-    const sum = randInt(level.minSum, level.maxSum);
+    const { minSum, maxSum } = level.id === 5 ? getMixRange() : level;
+    const sum = randInt(minSum, maxSum);
     const a   = randInt(1, sum - 1);
     const b   = sum - a;
-    return { a, b, sum };
+    return { a, b, sum, rangeMax: maxSum };
   }
 
   function genChoices(correct, maxRange) {
@@ -409,6 +434,8 @@
     currentLevel = LEVELS.find(l => l.id === id);
     actIdx = actCorrect = streak = bestStreak = 0;
     actBusy = false;
+    attemptsUsed = 0;
+    startBgMusic();
     nextQuestion();
     showScreen('activity');
   }
@@ -416,8 +443,10 @@
   function nextQuestion() {
     if (actIdx >= ACT_COUNT) { showResult(); return; }
 
-    currentEx = genExercise(currentLevel);
-    actBusy   = false;
+    currentEx    = genExercise(currentLevel);
+    actBusy      = false;
+    attemptsUsed = 0;
+    renderAttempts(0);
 
     document.getElementById('act-score').textContent = `${actCorrect} / ${actIdx}`;
     document.getElementById('pbar').style.width      = `${(actIdx / ACT_COUNT) * 100}%`;
@@ -470,14 +499,14 @@
     const grid = document.getElementById('choices-grid');
     if (level.mode === 'choice') {
       grid.className = 'choices-grid';
-      const opts = genChoices(ex.sum, level.maxSum);
+      const opts = genChoices(ex.sum, ex.rangeMax);
       grid.innerHTML = opts.map(o =>
         `<button class="choice" data-correct="${o === ex.sum}" onclick="checkAnswer(this)">${o}</button>`
       ).join('');
     } else {
       grid.className = 'numpad-grid';
       let html = '';
-      for (let n = 0; n <= level.maxSum; n++) {
+      for (let n = 0; n <= ex.rangeMax; n++) {
         html += `<button class="pad-btn" data-correct="${n === ex.sum}" onclick="checkAnswer(this)">${n}</button>`;
       }
       grid.innerHTML = html;
@@ -485,31 +514,55 @@
   }
 
   function checkAnswer(btn) {
-    if (actBusy) return;
-    actBusy = true;
+    if (actBusy || btn.disabled) return;
 
     const correct = btn.dataset.correct === 'true';
-    document.querySelectorAll('#choices-grid button').forEach(b => { b.disabled = true; });
 
     if (correct) {
+      actBusy = true;
+      btn.disabled = true;
       btn.classList.add('correct');
+      document.querySelectorAll('#choices-grid button').forEach(b => { b.disabled = true; });
       actCorrect++;
-      streak++;
-      bestStreak = Math.max(bestStreak, streak);
+      if (attemptsUsed === 0) { streak++; bestStreak = Math.max(bestStreak, streak); }
+      else { streak = 0; }
       correctSound();
-      setMascot('🦊', STREAK_MSGS[streak] || pick(CORRECT_MSGS));
+      setMascot('🦊', attemptsUsed === 0 ? (STREAK_MSGS[streak] || pick(CORRECT_MSGS)) : pick(CORRECT_MSGS));
       if (streak >= 3) miniConfetti();
-    } else {
-      btn.classList.add('wrong');
-      document.querySelectorAll('#choices-grid button').forEach(b => {
-        if (b.dataset.correct === 'true') b.classList.add('reveal');
-      });
-      streak = 0;
-      wrongSound();
-      setMascot('🦉', pick(WRONG_MSGS));
+      setTimeout(() => { actIdx++; nextQuestion(); }, 1200);
+      return;
     }
 
-    setTimeout(() => { actIdx++; nextQuestion(); }, 1200);
+    // Wrong answer
+    btn.disabled = true;
+    btn.classList.add('wrong');
+    wrongSound();
+    attemptsUsed++;
+    renderAttempts(attemptsUsed);
+    streak = 0;
+    document.getElementById('streak-pill').hidden = true;
+
+    if (attemptsUsed < MAX_ATTEMPTS) {
+      // Let the child try again with the remaining options
+      setMascot('🦉', pick(WRONG_RETRY_MSGS));
+      return;
+    }
+
+    // Out of tries — reveal the answer and move on
+    actBusy = true;
+    document.querySelectorAll('#choices-grid button').forEach(b => {
+      b.disabled = true;
+      if (b.dataset.correct === 'true') b.classList.add('reveal');
+    });
+    setMascot('🦉', pick(WRONG_FINAL_MSGS));
+    setTimeout(() => { actIdx++; nextQuestion(); }, 1500);
+  }
+
+  function renderAttempts(used) {
+    const row = document.getElementById('attempts-row');
+    row.innerHTML = Array.from({ length: MAX_ATTEMPTS }, (_, i) =>
+      `<span class="heart${i < used ? ' used' : ''}">❤️</span>`
+    ).join('');
   }
 
   function setMascot(emoji, msg) {
@@ -625,6 +678,67 @@
   }
   function correctSound() { beep(440, 880, 0.25); }
   function wrongSound()   { beep(220, 140, 0.35); }
+
+  /* ── Background music ─────────────────────────────────────
+     Original synthesized chiptune loops (not real songs — avoids any
+     licensing question around embedding third-party MIDI/audio files).
+     A few short pentatonic riffs are picked at random and looped softly
+     behind the game. Starts on the first level click (browsers require
+     a user gesture before audio can play) and can be muted anytime. */
+  const NOTE_FREQ = {
+    C4:261.63, D4:293.66, E4:329.63, F4:349.23, G4:392.00, A4:440.00, B4:493.88,
+    C5:523.25, D5:587.33, E5:659.25, F5:698.46, G5:783.99, A5:880.00, R:0,
+  };
+  const BG_TRACKS = [
+    [['C4',.25],['D4',.25],['E4',.25],['G4',.25],['E4',.25],['D4',.25],['C4',.25],['R',.25],
+     ['E4',.25],['G4',.25],['A4',.25],['G4',.25],['E4',.25],['D4',.25],['C4',.25],['R',.5]],
+    [['G4',.2],['A4',.2],['G4',.2],['E4',.2],['D4',.2],['E4',.2],['G4',.2],['R',.2],
+     ['A4',.2],['G4',.2],['E4',.2],['C4',.2],['D4',.2],['E4',.2],['D4',.2],['R',.4]],
+    [['C4',.3],['C4',.15],['E4',.15],['G4',.3],['E4',.15],['D4',.15],['C4',.3],['R',.3],
+     ['D4',.3],['D4',.15],['F4',.15],['A4',.3],['G4',.15],['F4',.15],['D4',.3],['R',.6]],
+  ];
+
+  let musicOn    = true;
+  let musicTimer = null;
+  let musicStarted = false;
+
+  function playBgNote(note, dur) {
+    if (!soundOn || note === 'R') return;
+    try {
+      const ctx = window._mathAddCtx || (window._mathAddCtx = new (window.AudioContext || window.webkitAudioContext)());
+      const o = ctx.createOscillator(), g = ctx.createGain();
+      o.type = 'triangle';
+      o.frequency.value = NOTE_FREQ[note];
+      g.gain.setValueAtTime(0.0001, ctx.currentTime);
+      g.gain.linearRampToValueAtTime(0.045, ctx.currentTime + 0.02);
+      g.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + dur);
+      o.connect(g); g.connect(ctx.destination);
+      o.start(); o.stop(ctx.currentTime + dur + 0.03);
+    } catch {}
+  }
+
+  function scheduleBgTrack(track, i) {
+    if (!musicOn) return;
+    if (i >= track.length) { scheduleBgTrack(pick(BG_TRACKS), 0); return; }
+    const [note, dur] = track[i];
+    playBgNote(note, dur * 0.9);
+    musicTimer = setTimeout(() => scheduleBgTrack(track, i + 1), dur * 1000);
+  }
+
+  function startBgMusic() {
+    musicStarted = true;
+    if (!musicOn || musicTimer) return;
+    const ctx = window._mathAddCtx || (window._mathAddCtx = new (window.AudioContext || window.webkitAudioContext)());
+    if (ctx.state === 'suspended') ctx.resume();
+    scheduleBgTrack(pick(BG_TRACKS), 0);
+  }
+  function stopBgMusicLoop() { clearTimeout(musicTimer); musicTimer = null; }
+
+  function toggleMusic() {
+    musicOn = !musicOn;
+    document.getElementById('music-btn').textContent = musicOn ? '🎶' : '🎵';
+    if (musicOn) startBgMusic(); else stopBgMusicLoop();
+  }
 
   /* ── Confetti ──────────────────────────────────────────── */
   function launchConfetti(count) {
