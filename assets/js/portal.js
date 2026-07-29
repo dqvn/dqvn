@@ -11,6 +11,7 @@ const TOOLS = [
   { href:'/dqvn/verbs',     icon:'🔄', nl:'Werkwoorden',    nameEn:'Verbs',             en:'Vervoeging oefenen',                    descEn:'Conjugation practice',                color:'#dc2626', badge:'Actief', group:'🏗️ Taalkennis'        },
   { href:'/dqvn/kids',      icon:'🧒', nl:'Kids',           nameEn:'Kids',              en:'Kinderen woordenschat',                 descEn:"Children's vocabulary",               color:'#16a34a', badge:'Nieuw',  group:'🏗️ Taalkennis'        },
   { href:'/dqvn/number',    icon:'🔢', nl:'Getallen',       nameEn:'Numbers',           en:'Leer tellen van 1 tot 100',             descEn:'Learn to count from 1 to 100',        color:'#ea580c', badge:'Nieuw',  group:'🏗️ Taalkennis'        },
+  { href:'/dqvn/mathadd',   icon:'➕', nl:'Optellen',       nameEn:'Addition',          en:'Optellen oefenen voor kids (1-20)',     descEn:'Practice addition for kids (1-20)',   color:'#16a34a', badge:'Nieuw',  group:'🏗️ Taalkennis'        },
 
   /* ── Leesvaardigheid: read & understand Dutch texts ─────────────── */
   { href:'/dqvn/stories',   icon:'📕', nl:'Kinderverhalen', nameEn:"Children's Stories",en:'Interactieve verhalen voor kinderen',   descEn:'Interactive stories for children',    color:'#6A67CE',                 group:'📖 Leesvaardigheid'   },

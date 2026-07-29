@@ -1,0 +1,27 @@
+{
+  "title": "Klik en Luister! 🗣️",
+  "name": "Familie",
+  "subtitle": "Click on a picture to hear the word spoken slowly!",
+  "words": [
+    { "text": "Mama", "emoji": "👩" },
+    { "text": "Papa", "emoji": "👨" },
+    { "text": "Oma", "emoji": "👵" },
+    { "text": "Opa", "emoji": "👴" },
+    { "text": "Baby", "emoji": "👶" },
+    { "text": "Kind", "emoji": "🧒" },
+    { "text": "Jongen", "emoji": "👦" },
+    { "text": "Meisje", "emoji": "👧" },
+    { "text": "Broer", "emoji": "🧑‍🤝‍🧑" },
+    { "text": "Zus", "emoji": "👭" },
+    { "text": "Broertje", "emoji": "🍼" },
+    { "text": "Zusje", "emoji": "🎀" },
+    { "text": "Familie", "emoji": "👨‍👩‍👧‍👦" },
+    { "text": "Oom", "emoji": "🧔" },
+    { "text": "Tante", "emoji": "👩‍🦰" },
+    { "text": "Neef", "emoji": "🙋" },
+    { "text": "Nicht", "emoji": "🙋‍♀️" },
+    { "text": "Vriend", "emoji": "🤝" },
+    { "text": "Vriendin", "emoji": "💞" },
+    { "text": "Huisdier", "emoji": "🐾" }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Klik en Luister! 🗣️",
+  "name": "Huis & Kamers",
+  "subtitle": "Click on a picture to hear the word spoken slowly!",
+  "words": [
+    { "text": "Slaapkamer", "emoji": "🛏️" },
+    { "text": "Badkamer", "emoji": "🛁" },
+    { "text": "Woonkamer", "emoji": "🛋️" },
+    { "text": "Tuin", "emoji": "🌳" },
+    { "text": "Deur", "emoji": "🚪" },
+    { "text": "Raam", "emoji": "🪟" },
+    { "text": "Trap", "emoji": "🪜" },
+    { "text": "Dak", "emoji": "🏠" },
+    { "text": "Muur", "emoji": "🧱" },
+    { "text": "Vloer", "emoji": "🪵" },
+    { "text": "Bed", "emoji": "🛌" },
+    { "text": "Kast", "emoji": "🗄️" },
+    { "text": "Stoel", "emoji": "🪑" },
+    { "text": "Tafel", "emoji": "🍽️" },
+    { "text": "Lamp", "emoji": "💡" },
+    { "text": "Spiegel", "emoji": "🪞" },
+    { "text": "Douche", "emoji": "🚿" },
+    { "text": "Toilet", "emoji": "🚽" },
+    { "text": "Garage", "emoji": "🚗" },
+    { "text": "Zolder", "emoji": "📦" }
+  ]
+}
