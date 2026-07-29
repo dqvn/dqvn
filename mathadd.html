@@ -549,18 +549,58 @@
 
   function retryActivity() { startLevel(currentLevel.id); }
 
-  /* ── TTS ───────────────────────────────────────────────── */
-  function speak(text, lang = 'nl-NL', rate = 0.85) {
+  /* ── TTS — Dutch voice only ───────────────────────────────
+     Selecting an explicit nl-NL/nl-BE voice (rather than just setting
+     utterance.lang) is required because some browsers fall back to a
+     default (often English) voice when no exact match is installed,
+     which would read the Dutch text in the wrong accent. If no Dutch
+     voice is available at all, we skip speaking rather than speak
+     Dutch text in a non-Dutch voice. */
+  const TTS_VOICE_KEY = 'nl_tts_voice_v1';
+  let selectedVoice = null;
+
+  function getPreferredVoice() {
+    const voices = window.speechSynthesis.getVoices();
+    const saved  = localStorage.getItem(TTS_VOICE_KEY);
+    if (saved) { const m = voices.find(v => v.name === saved); if (m) return m; }
+    return voices.find(v => v.name.includes('Microsoft Colette Online') && v.lang === 'nl-NL')
+        || voices.find(v => v.name.includes('Google Nederlands')        && v.lang === 'nl-NL')
+        || voices.find(v => v.lang === 'nl-NL')
+        || voices.find(v => v.lang === 'nl-BE')
+        || voices.find(v => v.lang.startsWith('nl'))
+        || null;
+  }
+
+  function speak(text, rate = 0.7) {
     if (!soundOn || !window.speechSynthesis) return;
+    if (!selectedVoice) selectedVoice = getPreferredVoice();
+    if (!selectedVoice) return;
     speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
-    u.lang = lang; u.rate = rate;
+    u.voice = selectedVoice;
+    u.lang  = selectedVoice.lang;
+    u.rate  = rate;
     speechSynthesis.speak(u);
   }
   function speakQuestion(ex) {
     if (!ex) return;
     speak(`${NL_NUMS[ex.a]} plus ${NL_NUMS[ex.b]} is...`);
   }
+
+  selectedVoice = getPreferredVoice();
+  window.speechSynthesis?.addEventListener?.('voiceschanged', () => { selectedVoice = getPreferredVoice(); });
+  (function _pollForDutchVoice() {
+    let tries = 0;
+    const t = setInterval(() => {
+      if (!window.speechSynthesis) { clearInterval(t); return; }
+      const found = getPreferredVoice();
+      if (found || ++tries >= 20) { clearInterval(t); if (found) selectedVoice = found; }
+    }, 500);
+  })();
+  document.addEventListener('touchstart', function _iosProbe() {
+    window.speechSynthesis?.getVoices?.();
+    setTimeout(() => { selectedVoice = getPreferredVoice(); }, 200);
+  }, { once: true });
 
   function toggleSound() {
     soundOn = !soundOn;
