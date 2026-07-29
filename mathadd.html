@@ -299,14 +299,18 @@
   const ACT_COUNT = 10;
 
   const NL_NUMS = ['nul','een','twee','drie','vier','vijf','zes','zeven','acht','negen','tien',
-    'elf','twaalf','dertien','veertien','vijftien','zestien','zeventien','achttien','negentien','twintig'];
+    'elf','twaalf','dertien','veertien','vijftien','zestien','zeventien','achttien','negentien','twintig',
+    'eenentwintig','tweeëntwintig','drieëntwintig','vierentwintig','vijfentwintig',
+    'zesentwintig','zevenentwintig','achtentwintig','negenentwintig','dertig'];
 
   const EMOJI_POOL = ['🍎','🍌','🍇','🍓','🍊','🍉','🐶','🐱','🐻','⭐','🎈','🚗','⚽','🧸','🐣','🌸'];
 
   const LEVELS = [
-    { id:1, emoji:'🍎', label:'Level 1', range:'Sommen tot 5',  minSum:2,  maxSum:5,  mode:'choice', visual:'emoji' },
-    { id:2, emoji:'🔵', label:'Level 2', range:'Sommen tot 10', minSum:4,  maxSum:10, mode:'choice', visual:'dots'  },
-    { id:3, emoji:'🔢', label:'Level 3', range:'Sommen tot 20', minSum:6,  maxSum:20, mode:'pad',    visual:'none'  },
+    { id:1, emoji:'🍎', label:'Level 1', range:'Sommen tot 5',       minSum:2,  maxSum:5,  mode:'choice', visual:'emoji' },
+    { id:2, emoji:'🔵', label:'Level 2', range:'Sommen tot 10',      minSum:4,  maxSum:10, mode:'choice', visual:'dots'  },
+    { id:3, emoji:'🔢', label:'Level 3', range:'Sommen tot 20',      minSum:6,  maxSum:20, mode:'pad',    visual:'none'  },
+    { id:4, emoji:'🧮', label:'Level 4', range:'Sommen tot 30',      minSum:11, maxSum:30, mode:'pad',    visual:'none'  },
+    { id:5, emoji:'🎲', label:'Level 5', range:'Mix van alle sommen', minSum:2, maxSum:30, mode:'pad',    visual:'none'  },
   ];
 
   const CORRECT_MSGS = ['Goed zo! 🎉','Knap gedaan! 🌟','Je bent een sterspeler! ⭐','Fantastisch! 🥳','Wauw, correct! 🙌','Supergoed! 🏆'];
@@ -473,7 +477,7 @@
     } else {
       grid.className = 'numpad-grid';
       let html = '';
-      for (let n = 0; n <= 20; n++) {
+      for (let n = 0; n <= level.maxSum; n++) {
         html += `<button class="pad-btn" data-correct="${n === ex.sum}" onclick="checkAnswer(this)">${n}</button>`;
       }
       grid.innerHTML = html;
