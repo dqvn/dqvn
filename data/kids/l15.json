@@ -1,0 +1,27 @@
+{
+  "title": "Klik en Luister! 🗣️",
+  "name": "Dieren",
+  "subtitle": "Click on a picture to hear the word spoken slowly!",
+  "words": [
+    { "text": "Hond", "emoji": "🐶" },
+    { "text": "Koe", "emoji": "🐄" },
+    { "text": "Varken", "emoji": "🐷" },
+    { "text": "Paard", "emoji": "🐴" },
+    { "text": "Geit", "emoji": "🐐" },
+    { "text": "Schaap", "emoji": "🐑" },
+    { "text": "Konijn", "emoji": "🐰" },
+    { "text": "Muis", "emoji": "🐭" },
+    { "text": "Eend", "emoji": "🦆" },
+    { "text": "Kikker", "emoji": "🐸" },
+    { "text": "Aap", "emoji": "🐵" },
+    { "text": "Beer", "emoji": "🐻" },
+    { "text": "Leeuw", "emoji": "🦁" },
+    { "text": "Olifant", "emoji": "🐘" },
+    { "text": "Vogel", "emoji": "🐦" },
+    { "text": "Ezel", "emoji": "🫏" },
+    { "text": "Hamster", "emoji": "🐹" },
+    { "text": "Papegaai", "emoji": "🦜" },
+    { "text": "Tijger", "emoji": "🐯" },
+    { "text": "Giraffe", "emoji": "🦒" }
+  ]
+}

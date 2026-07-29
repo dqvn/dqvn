@@ -1,0 +1,27 @@
+{
+  "title": "Klik en Luister! 🗣️",
+  "name": "Kleding",
+  "subtitle": "Click on a picture to hear the word spoken slowly!",
+  "words": [
+    { "text": "Broek", "emoji": "👖" },
+    { "text": "Trui", "emoji": "🧶" },
+    { "text": "Jurk", "emoji": "👗" },
+    { "text": "Rok", "emoji": "👗" },
+    { "text": "Shirt", "emoji": "👕" },
+    { "text": "Muts", "emoji": "🥶" },
+    { "text": "Sjaal", "emoji": "🧣" },
+    { "text": "Schoenen", "emoji": "👟" },
+    { "text": "Laarzen", "emoji": "👢" },
+    { "text": "Pet", "emoji": "🧢" },
+    { "text": "Hoed", "emoji": "🎩" },
+    { "text": "Pyjama", "emoji": "😴" },
+    { "text": "Onderbroek", "emoji": "🩲" },
+    { "text": "Vest", "emoji": "🦺" },
+    { "text": "Handschoenen", "emoji": "🧤" },
+    { "text": "Das", "emoji": "👔" },
+    { "text": "Regenjas", "emoji": "☔" },
+    { "text": "Zwembroek", "emoji": "🩳" },
+    { "text": "Sandalen", "emoji": "👡" },
+    { "text": "Trainingspak", "emoji": "🏃" }
+  ]
+}

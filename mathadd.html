@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>➕ Optellen Oefenen – Nederlands</title>
+  <link rel="icon" href="assets/img/dutch.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="assets/css/sync.css">
+  <link rel="stylesheet" href="assets/css/themes.css">
+  <style>
+    :root {
+      --bg:     #f0fdf4;
+      --card:   #ffffff;
+      --border: #bbf7d0;
+      --green:  #16a34a;
+      --greend: #15803d;
+      --accent: #f59e0b;
+      --pink:   #ec4899;
+      --blue:   #3b82f6;
+      --purple: #9b5de5;
+      --teal:   #06d6a0;
+      --red:    #ef4444;
+      --text:   #1e293b;
+      --muted:  #64748b;
+      --nav-h:  60px;
+      --r:      20px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── Top nav ─────────────────────────────────────────── */
+    #top-nav {
+      position: fixed; top: 0; left: 0; right: 0; height: var(--nav-h);
+      background: rgba(255,255,255,.94); backdrop-filter: blur(12px);
+      border-bottom: 3px dashed var(--border);
+      display: flex; align-items: center; gap: 12px; padding: 0 16px;
+      z-index: 200;
+    }
+    .nav-back {
+      text-decoration: none; font-size: 1.3rem; line-height: 1;
+      transition: transform .2s;
+    }
+    .nav-back:hover { transform: scale(1.15); }
+    .nav-title { flex: 1; text-align: center; font-size: 1.15rem; font-weight: 700; color: var(--greend); }
+    .mute-btn {
+      background: none; border: none; font-size: 1.25rem; cursor: pointer;
+      line-height: 1; padding: 4px;
+    }
+
+    #app {
+      padding-top: calc(var(--nav-h) + 20px);
+      max-width: 640px;
+      margin: 0 auto;
+      padding-left: 16px; padding-right: 16px; padding-bottom: 48px;
+    }
+    #sync-wrapper { border-bottom: 1px solid var(--border); margin-bottom: 4px; }
+
+    .screen { display: none; }
+    .screen.active {
+      display: flex; flex-direction: column; gap: 22px;
+      animation: fadeUp .28s ease;
+    }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+
+    /* ── Home ────────────────────────────────────────────── */
+    .home-hero { text-align: center; padding: 8px 0 4px; }
+    .home-hero h2 { font-size: 1.9rem; font-weight: 800; color: var(--green); margin-bottom: 6px; }
+    .home-hero p { color: var(--muted); }
+
+    .level-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 16px; }
+    .level-card {
+      background: var(--card); border: 3px dashed var(--border);
+      border-radius: var(--r); padding: 24px 14px 18px;
+      text-align: center; cursor: pointer; position: relative;
+      box-shadow: 0 4px 6px rgba(0,0,0,.05);
+      transition: transform .2s, box-shadow .2s, border-color .2s;
+      user-select: none;
+    }
+    .level-card:not(.locked):hover {
+      transform: translateY(-5px);
+      border-color: var(--green);
+      box-shadow: 0 10px 26px rgba(22,163,74,.22);
+    }
+    .level-card:not(.locked):active { transform: scale(.96); }
+    .level-card.locked { opacity: .5; cursor: not-allowed; }
+    .lc-emoji { font-size: 2.6rem; margin-bottom: 6px; }
+    .lc-label { font-size: 1.15rem; font-weight: 800; color: var(--text); }
+    .lc-range { font-size: .82rem; color: var(--muted); margin: 4px 0 12px; }
+    .lc-stars { font-size: 1.4rem; letter-spacing: 2px; }
+    .star-on  { color: var(--accent); }
+    .star-off { color: #e2e8f0; }
+
+    /* ── Activity ────────────────────────────────────────── */
+    .act-header { display: flex; align-items: center; gap: 12px; }
+    .act-score  { font-size: .88rem; font-weight: 700; color: var(--muted); white-space: nowrap; }
+    .pbar-wrap  { flex: 1; height: 9px; background: var(--border); border-radius: 5px; overflow: hidden; }
+    .pbar-fill  { height: 100%; background: linear-gradient(90deg, var(--green), var(--teal)); border-radius: 5px; transition: width .32s ease; }
+    .act-qnum   { font-size: .8rem; color: var(--muted); white-space: nowrap; }
+    .streak-pill {
+      font-size: .82rem; font-weight: 800; color: var(--accent);
+      background: rgba(245,158,11,.12); border-radius: 12px; padding: 3px 10px;
+      white-space: nowrap;
+    }
+
+    /* Mascot */
+    .mascot-row { display: flex; align-items: center; gap: 12px; justify-content: center; }
+    .mascot { font-size: 2.6rem; flex-shrink: 0; animation: bob 2.4s ease-in-out infinite; }
+    @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+    .mascot-bubble {
+      background: var(--card); border: 2px solid var(--border); border-radius: 16px;
+      padding: 8px 16px; font-size: .95rem; font-weight: 700; color: var(--greend);
+      max-width: 340px; text-align: center;
+    }
+
+    /* Exercise card */
+    .math-card {
+      background: var(--card); border: 3px dashed var(--border); border-radius: var(--r);
+      padding: 26px 20px; display: flex; flex-direction: column; align-items: center; gap: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,.05);
+    }
+    .visual-row { display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; }
+    .egroup { display: flex; flex-wrap: wrap; gap: 4px; max-width: 170px; justify-content: center; font-size: 2rem; }
+    .visual-op { font-size: 1.8rem; font-weight: 900; color: var(--muted); }
+    .dot-group { display: flex; flex-wrap: wrap; gap: 6px; max-width: 170px; justify-content: center; }
+    .dotc { width: 20px; height: 20px; border-radius: 50%; }
+    .dotc.a { background: var(--blue); }
+    .dotc.b { background: var(--pink); }
+
+    .eq-row { display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 3.4rem; font-weight: 900; }
+    .eq-num { color: var(--green); }
+    .eq-op  { color: var(--muted); font-size: 2.2rem; }
+    .eq-q   { color: var(--accent); }
+    .btn-speak {
+      background: rgba(22,163,74,.12); border: none; border-radius: 50%;
+      width: 44px; height: 44px; font-size: 1.3rem; cursor: pointer;
+      transition: background .2s; flex-shrink: 0;
+    }
+    .btn-speak:hover { background: rgba(22,163,74,.22); }
+
+    /* Choices */
+    .choices-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .choice {
+      background: var(--card); border: 3px solid var(--border);
+      border-radius: 16px; color: var(--text);
+      padding: 20px 10px; font-size: 1.6rem; font-weight: 900;
+      cursor: pointer; font-family: inherit; transition: all .18s;
+    }
+    .choice:hover:not(:disabled) { border-color: var(--green); background: rgba(22,163,74,.08); transform: scale(1.03); }
+    .choice.correct { background: rgba(6,214,160,.18); border-color: var(--teal); color: var(--greend); }
+    .choice.wrong   { background: rgba(239,68,68,.15); border-color: var(--red);  color: var(--red); }
+    .choice.reveal  { background: rgba(6,214,160,.12); border-color: var(--teal); color: var(--greend); }
+
+    /* Number pad (level 3) */
+    .numpad-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; width: 100%; }
+    .pad-btn {
+      background: var(--card); border: 2px solid var(--border);
+      border-radius: 12px; color: var(--text);
+      padding: 12px 4px; font-size: 1.1rem; font-weight: 800;
+      cursor: pointer; font-family: inherit; transition: all .16s;
+    }
+    .pad-btn:hover:not(:disabled) { border-color: var(--green); background: rgba(22,163,74,.08); }
+    .pad-btn.correct { background: rgba(6,214,160,.18); border-color: var(--teal); color: var(--greend); }
+    .pad-btn.wrong   { background: rgba(239,68,68,.15); border-color: var(--red);  color: var(--red); }
+    .pad-btn.reveal  { background: rgba(6,214,160,.12); border-color: var(--teal); color: var(--greend); }
+
+    .btn-back {
+      background: transparent; border: 2px solid var(--border);
+      border-radius: 20px; color: var(--muted);
+      padding: 8px 20px; font-size: .88rem; font-weight: 700;
+      cursor: pointer; font-family: inherit;
+      display: block; width: fit-content; margin: 0 auto;
+      transition: border-color .2s, color .2s;
+    }
+    .btn-back:hover { border-color: var(--green); color: var(--green); }
+
+    /* ── Result ──────────────────────────────────────────── */
+    #screen-result { align-items: center; padding-top: 10px; }
+    .result-card {
+      background: var(--card); border: 3px dashed var(--border); border-radius: 28px;
+      padding: 40px 28px; text-align: center; max-width: 380px; width: 100%;
+      box-shadow: 0 4px 10px rgba(0,0,0,.05);
+    }
+    .res-emoji  { font-size: 5rem; line-height: 1; margin-bottom: 14px; }
+    .res-score  { font-size: 1.7rem; font-weight: 800; margin-bottom: 6px; color: var(--greend); }
+    .res-streak { font-size: .9rem; color: var(--muted); margin-bottom: 10px; }
+    .res-stars  { font-size: 2.5rem; letter-spacing: 6px; margin-bottom: 12px; }
+    .res-msg    { color: var(--muted); font-size: .95rem; margin-bottom: 26px; line-height: 1.5; }
+    .res-btns   { display: flex; flex-direction: column; gap: 10px; }
+    .res-btns button {
+      background: var(--card); border: 2px solid var(--border);
+      border-radius: 14px; color: var(--text);
+      padding: 13px 20px; font-size: 1rem; font-weight: 800;
+      cursor: pointer; font-family: inherit; transition: all .18s;
+    }
+    .res-btns button:first-child {
+      background: linear-gradient(135deg, var(--green), var(--greend));
+      border-color: transparent; color: #fff;
+      box-shadow: 0 4px 18px rgba(22,163,74,.35);
+    }
+    .res-btns button:hover { transform: translateY(-2px); }
+
+    /* ── Confetti ────────────────────────────────────────── */
+    .confetti-root { position: fixed; inset: 0; pointer-events: none; z-index: 9999; overflow: hidden; }
+    .cp { position: absolute; top: -12px; animation: cfall linear forwards; border-radius: 2px; }
+    @keyframes cfall { to { transform: translateY(105vh) rotate(900deg); opacity: 0; } }
+
+    /* ── Toast ───────────────────────────────────────────── */
+    #_toast {
+      position: fixed; bottom: 28px; left: 50%;
+      transform: translateX(-50%) translateY(80px);
+      background: var(--greend); color: #fff;
+      padding: 11px 22px; border-radius: 24px;
+      font-weight: 700; font-size: .88rem;
+      opacity: 0; transition: all .32s; z-index: 8000; white-space: nowrap;
+    }
+    #_toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+
+    @media (max-width: 420px) {
+      .eq-row  { font-size: 2.6rem; }
+      .choice  { font-size: 1.3rem; padding: 16px 8px; }
+      .numpad-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="top-nav">
+    <a href="/dqvn/" class="nav-back" title="Terug naar portaal" aria-label="Terug naar portaal">🏠</a>
+    <span class="nav-title">➕ Optellen Oefenen</span>
+    <button class="mute-btn" id="mute-btn" onclick="toggleSound()" title="Geluid aan/uit">🔊</button>
+    <div id="sync-section"></div>
+  </nav>
+
+  <div id="app">
+
+    <!-- ── Screen: Home ─────────────────────────────────── -->
+    <div id="screen-home" class="screen active">
+      <div class="home-hero">
+        <h2>Laten we optellen! 🧮</h2>
+        <p>Kies een niveau om te oefenen</p>
+      </div>
+      <div class="level-grid" id="level-grid"></div>
+    </div>
+
+    <!-- ── Screen: Activity ─────────────────────────────── -->
+    <div id="screen-activity" class="screen">
+      <div class="act-header">
+        <span class="act-score" id="act-score">0 / 0</span>
+        <div class="pbar-wrap"><div class="pbar-fill" id="pbar" style="width:0%"></div></div>
+        <span class="streak-pill" id="streak-pill" hidden>🔥 0</span>
+        <span class="act-qnum" id="act-qnum">Som 1</span>
+      </div>
+
+      <div class="mascot-row">
+        <div class="mascot" id="mascot">🦊</div>
+        <div class="mascot-bubble" id="mascot-bubble">Wat is het antwoord?</div>
+      </div>
+
+      <div class="math-card">
+        <div class="visual-row" id="visual-row"></div>
+        <div class="eq-row" id="eq-row"></div>
+        <button class="btn-speak" onclick="speakQuestion(currentEx)" title="Nog een keer horen">🔊</button>
+      </div>
+
+      <div class="choices-grid" id="choices-grid"></div>
+
+      <button class="btn-back" onclick="confirmStop()">× Stoppen</button>
+    </div>
+
+    <!-- ── Screen: Result ───────────────────────────────── -->
+    <div id="screen-result" class="screen">
+      <div class="result-card">
+        <div class="res-emoji" id="res-emoji">🎉</div>
+        <div class="res-score" id="res-score"></div>
+        <div class="res-streak" id="res-streak"></div>
+        <div class="res-stars" id="res-stars"></div>
+        <p class="res-msg" id="res-msg"></p>
+        <div class="res-btns">
+          <button onclick="retryActivity()">🔄 Opnieuw proberen</button>
+          <button onclick="showHome()">🏠 Andere niveaus</button>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- #app -->
+
+  <script src="assets/js/sync.js"></script>
+  <script>
+  'use strict';
+
+  /* ── Constants ─────────────────────────────────────────── */
+  const PROG_KEY  = 'nl_mathadd_progress';
+  const ACT_COUNT = 10;
+
+  const NL_NUMS = ['nul','een','twee','drie','vier','vijf','zes','zeven','acht','negen','tien',
+    'elf','twaalf','dertien','veertien','vijftien','zestien','zeventien','achttien','negentien','twintig'];
+
+  const EMOJI_POOL = ['🍎','🍌','🍇','🍓','🍊','🍉','🐶','🐱','🐻','⭐','🎈','🚗','⚽','🧸','🐣','🌸'];
+
+  const LEVELS = [
+    { id:1, emoji:'🍎', label:'Level 1', range:'Sommen tot 5',  minSum:2,  maxSum:5,  mode:'choice', visual:'emoji' },
+    { id:2, emoji:'🔵', label:'Level 2', range:'Sommen tot 10', minSum:4,  maxSum:10, mode:'choice', visual:'dots'  },
+    { id:3, emoji:'🔢', label:'Level 3', range:'Sommen tot 20', minSum:6,  maxSum:20, mode:'pad',    visual:'none'  },
+  ];
+
+  const CORRECT_MSGS = ['Goed zo! 🎉','Knap gedaan! 🌟','Je bent een sterspeler! ⭐','Fantastisch! 🥳','Wauw, correct! 🙌','Supergoed! 🏆'];
+  const WRONG_MSGS   = ['Bijna! Volgende keer lukt het! 💪','Niet erg, we leren samen! 🐾','Goed geprobeerd! Ga zo door! 🌈','Oeps! Kijk, dit was het antwoord 🌟'];
+  const STREAK_MSGS  = { 3:'Drie op een rij! 🔥', 5:'Vijf op een rij! Wauw! 🔥🔥', 8:'Ongelooflijk! 🔥🔥🔥' };
+
+  /* ── State ─────────────────────────────────────────────── */
+  let progress     = {};
+  let currentLevel = null;
+  let currentEx    = null;
+  let soundOn      = true;
+
+  let actIdx     = 0;
+  let actCorrect = 0;
+  let actBusy    = false;
+  let streak     = 0;
+  let bestStreak = 0;
+
+  /* ── Boot ──────────────────────────────────────────────── */
+  function init() {
+    progress = safeJSON(PROG_KEY, {});
+    renderHome();
+  }
+
+  /* ── Helpers ───────────────────────────────────────────── */
+  function safeJSON(key, def) {
+    try { return JSON.parse(localStorage.getItem(key) ?? 'null') ?? def; } catch { return def; }
+  }
+  function saveProgress() {
+    localStorage.setItem(PROG_KEY, JSON.stringify(progress));
+    if (typeof scheduleAutoSync === 'function') scheduleAutoSync();
+  }
+  function getProg(id) { return progress[id] ?? 0; }
+  function isUnlocked(id) { return id === 1 || getProg(id - 1) > 0; }
+  function starsHtml(n) {
+    return [0,1,2].map(i => `<span class="${i < n ? 'star-on' : 'star-off'}">★</span>`).join('');
+  }
+  function randInt(min, max) { return Math.floor(Math.random() * (max - min + 1)) + min; }
+  function pick(arr) { return arr[randInt(0, arr.length - 1)]; }
+  function shuffle(arr) {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  /* ── Screen router ─────────────────────────────────────── */
+  function showScreen(name) {
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+    document.getElementById('screen-' + name).classList.add('active');
+    window.scrollTo(0, 0);
+  }
+
+  /* ── Home ──────────────────────────────────────────────── */
+  function renderHome() {
+    document.getElementById('level-grid').innerHTML = LEVELS.map(lv => {
+      const stars  = getProg(lv.id);
+      const locked = !isUnlocked(lv.id);
+      return `
+        <div class="level-card ${locked ? 'locked' : ''}"
+             onclick="${locked ? "showToast('🔒 Voltooi eerst het vorige niveau')" : `startLevel(${lv.id})`}">
+          <div class="lc-emoji">${lv.emoji}</div>
+          <div class="lc-label">${lv.label}</div>
+          <div class="lc-range">${lv.range}</div>
+          <div class="lc-stars">${locked ? '🔒' : starsHtml(stars)}</div>
+        </div>`;
+    }).join('');
+    showScreen('home');
+  }
+  function showHome() { renderHome(); }
+
+  /* ── Exercise generation ───────────────────────────────── */
+  function genExercise(level) {
+    const sum = randInt(level.minSum, level.maxSum);
+    const a   = randInt(1, sum - 1);
+    const b   = sum - a;
+    return { a, b, sum };
+  }
+
+  function genChoices(correct, maxRange) {
+    const opts = new Set([correct]);
+    const deltas = shuffle([-3,-2,-1,1,2,3]);
+    let i = 0;
+    while (opts.size < 4 && i < deltas.length) {
+      const cand = correct + deltas[i++];
+      if (cand >= 0 && cand <= maxRange + 2) opts.add(cand);
+    }
+    while (opts.size < 4) opts.add(randInt(0, maxRange + 2));
+    return shuffle([...opts]);
+  }
+
+  /* ── Activity ──────────────────────────────────────────── */
+  function startLevel(id) {
+    currentLevel = LEVELS.find(l => l.id === id);
+    actIdx = actCorrect = streak = bestStreak = 0;
+    actBusy = false;
+    nextQuestion();
+    showScreen('activity');
+  }
+
+  function nextQuestion() {
+    if (actIdx >= ACT_COUNT) { showResult(); return; }
+
+    currentEx = genExercise(currentLevel);
+    actBusy   = false;
+
+    document.getElementById('act-score').textContent = `${actCorrect} / ${actIdx}`;
+    document.getElementById('pbar').style.width      = `${(actIdx / ACT_COUNT) * 100}%`;
+    document.getElementById('act-qnum').textContent   = `Som ${actIdx + 1} / ${ACT_COUNT}`;
+
+    const streakPill = document.getElementById('streak-pill');
+    if (streak >= 2) { streakPill.hidden = false; streakPill.textContent = `🔥 ${streak}`; }
+    else streakPill.hidden = true;
+
+    setMascot('🦊', 'Wat is het antwoord?');
+    renderVisual(currentEx, currentLevel);
+    renderEquation(currentEx);
+    renderAnswers(currentEx, currentLevel);
+
+    speakQuestion(currentEx);
+  }
+
+  function renderVisual(ex, level) {
+    const row = document.getElementById('visual-row');
+    if (level.visual === 'emoji') {
+      const pool = shuffle(EMOJI_POOL);
+      const eA = pool[0], eB = pool[1];
+      row.innerHTML = `
+        <div class="egroup">${eA.repeat(ex.a)}</div>
+        <div class="visual-op">+</div>
+        <div class="egroup">${eB.repeat(ex.b)}</div>`;
+      row.hidden = false;
+    } else if (level.visual === 'dots') {
+      row.innerHTML = `
+        <div class="dot-group">${'<span class="dotc a"></span>'.repeat(ex.a)}</div>
+        <div class="visual-op">+</div>
+        <div class="dot-group">${'<span class="dotc b"></span>'.repeat(ex.b)}</div>`;
+      row.hidden = false;
+    } else {
+      row.innerHTML = '';
+      row.hidden = true;
+    }
+  }
+
+  function renderEquation(ex) {
+    document.getElementById('eq-row').innerHTML = `
+      <span class="eq-num">${ex.a}</span>
+      <span class="eq-op">+</span>
+      <span class="eq-num">${ex.b}</span>
+      <span class="eq-op">=</span>
+      <span class="eq-q">?</span>`;
+  }
+
+  function renderAnswers(ex, level) {
+    const grid = document.getElementById('choices-grid');
+    if (level.mode === 'choice') {
+      grid.className = 'choices-grid';
+      const opts = genChoices(ex.sum, level.maxSum);
+      grid.innerHTML = opts.map(o =>
+        `<button class="choice" data-correct="${o === ex.sum}" onclick="checkAnswer(this)">${o}</button>`
+      ).join('');
+    } else {
+      grid.className = 'numpad-grid';
+      let html = '';
+      for (let n = 0; n <= 20; n++) {
+        html += `<button class="pad-btn" data-correct="${n === ex.sum}" onclick="checkAnswer(this)">${n}</button>`;
+      }
+      grid.innerHTML = html;
+    }
+  }
+
+  function checkAnswer(btn) {
+    if (actBusy) return;
+    actBusy = true;
+
+    const correct = btn.dataset.correct === 'true';
+    document.querySelectorAll('#choices-grid button').forEach(b => { b.disabled = true; });
+
+    if (correct) {
+      btn.classList.add('correct');
+      actCorrect++;
+      streak++;
+      bestStreak = Math.max(bestStreak, streak);
+      correctSound();
+      setMascot('🦊', STREAK_MSGS[streak] || pick(CORRECT_MSGS));
+      if (streak >= 3) miniConfetti();
+    } else {
+      btn.classList.add('wrong');
+      document.querySelectorAll('#choices-grid button').forEach(b => {
+        if (b.dataset.correct === 'true') b.classList.add('reveal');
+      });
+      streak = 0;
+      wrongSound();
+      setMascot('🦉', pick(WRONG_MSGS));
+    }
+
+    setTimeout(() => { actIdx++; nextQuestion(); }, 1200);
+  }
+
+  function setMascot(emoji, msg) {
+    document.getElementById('mascot').textContent = emoji;
+    document.getElementById('mascot-bubble').textContent = msg;
+  }
+
+  function confirmStop() {
+    if (confirm('Stoppen? De huidige voortgang van deze ronde gaat verloren.')) showHome();
+  }
+
+  /* ── Result ────────────────────────────────────────────── */
+  function showResult() {
+    const pct   = actCorrect / ACT_COUNT;
+    const stars = pct >= .9 ? 3 : pct >= .7 ? 2 : pct >= .4 ? 1 : 0;
+
+    const id = currentLevel.id;
+    if (stars > getProg(id)) { progress[id] = stars; saveProgress(); }
+
+    const EMOJIS = ['😅','👍','😊','🎉'];
+    const MSGS   = [
+      'Niet opgeven! Probeer het nog een keer.',
+      'Goed begin! Nog een keer voor meer sterren.',
+      'Bijna perfect! Nog één poging voor 3 sterren.',
+      'Uitstekend! Je beheerst dit niveau! 🌟',
+    ];
+
+    document.getElementById('res-emoji').textContent  = EMOJIS[stars];
+    document.getElementById('res-score').textContent  = `${actCorrect} / ${ACT_COUNT} goed`;
+    document.getElementById('res-streak').textContent = bestStreak >= 2 ? `Beste reeks: 🔥 ${bestStreak}` : '';
+    document.getElementById('res-stars').innerHTML    = starsHtml(stars);
+    document.getElementById('res-msg').textContent    = MSGS[stars];
+    showScreen('result');
+
+    if (stars >= 2) setTimeout(() => launchConfetti(55), 180);
+  }
+
+  function retryActivity() { startLevel(currentLevel.id); }
+
+  /* ── TTS ───────────────────────────────────────────────── */
+  function speak(text, lang = 'nl-NL', rate = 0.85) {
+    if (!soundOn || !window.speechSynthesis) return;
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = lang; u.rate = rate;
+    speechSynthesis.speak(u);
+  }
+  function speakQuestion(ex) {
+    if (!ex) return;
+    speak(`${NL_NUMS[ex.a]} plus ${NL_NUMS[ex.b]} is...`);
+  }
+
+  function toggleSound() {
+    soundOn = !soundOn;
+    document.getElementById('mute-btn').textContent = soundOn ? '🔊' : '🔇';
+    if (!soundOn && window.speechSynthesis) speechSynthesis.cancel();
+  }
+
+  /* ── Simple synth beeps for feedback ──────────────────── */
+  function beep(f1, f2, dur) {
+    if (!soundOn) return;
+    try {
+      const ctx = window._mathAddCtx || (window._mathAddCtx = new (window.AudioContext || window.webkitAudioContext)());
+      const o = ctx.createOscillator(), g = ctx.createGain();
+      o.connect(g); g.connect(ctx.destination);
+      o.type = 'sine';
+      o.frequency.setValueAtTime(f1, ctx.currentTime);
+      o.frequency.exponentialRampToValueAtTime(f2, ctx.currentTime + dur);
+      g.gain.setValueAtTime(0.15, ctx.currentTime);
+      g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + dur);
+      o.start(); o.stop(ctx.currentTime + dur);
+    } catch {}
+  }
+  function correctSound() { beep(440, 880, 0.25); }
+  function wrongSound()   { beep(220, 140, 0.35); }
+
+  /* ── Confetti ──────────────────────────────────────────── */
+  function launchConfetti(count) {
+    const root = document.createElement('div');
+    root.className = 'confetti-root';
+    const cols = ['#16a34a','#f59e0b','#06d6a0','#3b82f6','#ec4899','#9b5de5'];
+    for (let i = 0; i < count; i++) {
+      const p = document.createElement('div');
+      const size = 5 + Math.random() * 7;
+      p.className = 'cp';
+      p.style.cssText = `
+        left:${Math.random()*100}%;
+        background:${cols[i % cols.length]};
+        width:${size}px; height:${size}px;
+        border-radius:${Math.random() > .5 ? '50%' : '2px'};
+        animation-duration:${.9 + Math.random() * 1.3}s;
+        animation-delay:${Math.random() * .4}s;
+      `;
+      root.appendChild(p);
+    }
+    document.body.appendChild(root);
+    setTimeout(() => root.remove(), 3200);
+  }
+  function miniConfetti() { launchConfetti(16); }
+
+  /* ── Toast ─────────────────────────────────────────────── */
+  function showToast(msg) {
+    let t = document.getElementById('_toast');
+    if (!t) { t = document.createElement('div'); t.id = '_toast'; document.body.appendChild(t); }
+    t.textContent = msg;
+    t.classList.add('show');
+    clearTimeout(t._t);
+    t._t = setTimeout(() => t.classList.remove('show'), 3200);
+  }
+
+  init();
+  </script>
+</body>
+</html>

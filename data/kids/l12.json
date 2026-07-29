@@ -1,0 +1,27 @@
+{
+  "title": "Klik en Luister! 🗣️",
+  "name": "Lichaamsdelen",
+  "subtitle": "Click on a picture to hear the word spoken slowly!",
+  "words": [
+    { "text": "Hoofd", "emoji": "💆" },
+    { "text": "Oog", "emoji": "👁️" },
+    { "text": "Oor", "emoji": "👂" },
+    { "text": "Neus", "emoji": "👃" },
+    { "text": "Mond", "emoji": "👄" },
+    { "text": "Haar", "emoji": "💇" },
+    { "text": "Hand", "emoji": "✋" },
+    { "text": "Voet", "emoji": "🦶" },
+    { "text": "Arm", "emoji": "💪" },
+    { "text": "Been", "emoji": "🦵" },
+    { "text": "Buik", "emoji": "🫃" },
+    { "text": "Rug", "emoji": "🎒" },
+    { "text": "Tand", "emoji": "🦷" },
+    { "text": "Tong", "emoji": "👅" },
+    { "text": "Vinger", "emoji": "☝️" },
+    { "text": "Teen", "emoji": "👣" },
+    { "text": "Knie", "emoji": "🩹" },
+    { "text": "Elleboog", "emoji": "📐" },
+    { "text": "Wang", "emoji": "😊" },
+    { "text": "Nek", "emoji": "🦒" }
+  ]
+}
