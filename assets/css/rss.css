@@ -265,7 +265,7 @@ body {
 
 .feed-updated {
     font-size: .7rem;
-    color: rgba(241, 245, 249, .3);
+    color: var(--text-3, rgba(241, 245, 249, .3));
     margin-left: auto;
 }
 
@@ -545,14 +545,14 @@ body {
 .wp-btn-close {
     flex: 0 0 auto;
     padding: 7px 10px;
-    color: rgba(255, 255, 255, .25);
+    color: var(--muted, rgba(255, 255, 255, .25));
     font-size: .8rem;
 }
 
 .art-desc {
     font-size: calc(var(--art-fs) * .9);
     line-height: 1.65;
-    color: rgba(241, 245, 249, .7);
+    color: var(--text-2, rgba(241, 245, 249, .7));
     cursor: text;
     user-select: text;
 }
