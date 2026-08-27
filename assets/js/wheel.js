@@ -43,6 +43,7 @@ let spinning = false;
 let _pendingPkgSelect = null; // deferred pkg-id select when presets not yet loaded
 let rotation = 0;       // current wheel angle (radians)
 let winnerIdx = -1;      // index of last selected item
+let sessionHidden = {};  // { [pkgId]: Set<itemText> } — "Klaar" hides in memory only, never persisted
 let editingId = null;    // null = creating new package
 let _lastSeg = -1;      // for tick sound
 let _audioCtx = null;    // lazy Web Audio context
@@ -73,7 +74,7 @@ function resizeCanvas() {
 
 function drawWheel() {
     const ctx = canvas.getContext('2d');
-    const items = getActiveItems();
+    const items = getWheelPool().map(e => e.text);
     const n  = items.length;
     const cx = canvas.width / 2;
     // Center sits at the canvas bottom edge — only the top semicircle is visible
@@ -241,10 +242,14 @@ function _drawDecorations(ctx, cx, cy, r) {
 
 /* ── Spin ───────────────────────────────────────────────── */
 function spin() {
-    const items = getActiveItems();
+    const pool = getWheelPool();
+    const items = pool.map(e => e.text);
     if (spinning) return;
     if (items.length < 2) {
-        showToast('Voeg minimaal 2 items toe om te draaien! 🎡');
+        const pkg = getActivePkg();
+        showToast((pkg && pkg.items.length >= 2)
+            ? 'Bijna alles gehad deze sessie! Herlaad de pagina om opnieuw te draaien. 🔄'
+            : 'Voeg minimaal 2 items toe om te draaien! 🎡');
         return;
     }
 
@@ -282,8 +287,9 @@ function spin() {
 
         const segArc = (2 * Math.PI) / items.length;
         const norm = ((-Math.PI / 2 - rotation) % (2 * Math.PI) + 2 * Math.PI) % (2 * Math.PI);
-        winnerIdx = Math.floor(norm / segArc) % items.length;
-        _showResult(items[winnerIdx], winnerIdx);
+        const poolIdx = Math.floor(norm / segArc) % items.length;
+        winnerIdx = pool[poolIdx].idx; // real index into pkg.items
+        _showResult(items[poolIdx], winnerIdx);
     }
 
     _spinAF = requestAnimationFrame(frame);
@@ -347,8 +353,18 @@ function removeWinner() {
 }
 
 function hideResult() {
+    const pkg = getActivePkg();
+    const text = (pkg && winnerIdx >= 0) ? pkg.items[winnerIdx] : undefined;
+    if (pkg && text !== undefined) {
+        if (!sessionHidden[pkg.id]) sessionHidden[pkg.id] = new Set();
+        sessionHidden[pkg.id].add(text);
+    }
     closeResultModal();
     winnerIdx = -1;
+    drawWheel();
+    if (pkg && getWheelPool().length === 0) {
+        showToast('Alle items zijn geweest deze sessie! Herlaad de pagina om opnieuw te draaien.');
+    }
 }
 
 /* ── History ────────────────────────────────────────────── */
@@ -376,6 +392,17 @@ function renderHistory() {
 /* ── Package helpers ────────────────────────────────────── */
 function getActivePkg() { return packages.find(p => p.id === activePkgId) ?? packages[0] ?? null; }
 function getActiveItems() { return getActivePkg()?.items ?? []; }
+
+// Wheel spin pool = active package items minus this-session "Klaar" hides.
+// Returns {text, idx} pairs where idx is the REAL index into pkg.items,
+// so callers can still splice/compare against the persisted array.
+function getWheelPool() {
+    const pkg = getActivePkg();
+    if (!pkg) return [];
+    const hidden = sessionHidden[pkg.id];
+    const all = pkg.items.map((text, idx) => ({ text, idx }));
+    return (hidden && hidden.size) ? all.filter(e => !hidden.has(e.text)) : all;
+}
 
 function selectPackage(id) {
     activePkgId = id;
