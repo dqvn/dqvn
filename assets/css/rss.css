@@ -391,7 +391,13 @@ body {
     -webkit-line-clamp: unset;
 }
 
-.art-card.expanded .art-head {
+.art-card.expanded .art-head:not(.has-img) {
+    display: none;
+}
+
+/* Cards with a photo keep the image banner visible when expanded —
+   only the title hides, since .art-body-title below repeats it. */
+.art-card.expanded .art-head.has-img .art-title {
     display: none;
 }
 
