@@ -467,6 +467,12 @@ export function rssParseItems(xml) {
   while ((m = itemRx.exec(xml)) !== null && items.length < 30) {
     const b    = m[1];
     const link = rssLink(b);
+
+    // <enclosure url="..." type="image/..."> — try both attribute orderings
+    const imgM = b.match(/<enclosure[^>]+url="([^"]+)"[^>]*type="image[^"]*"/i)
+               || b.match(/<enclosure[^>]+type="image[^"]*"[^>]+url="([^"]+)"/i);
+    const image = (imgM?.[1]?.trim() || '').replace(/&amp;/gi, '&');
+
     items.push({
       title:       rssStripTags(rssText(b, 'title')),
       link,
@@ -474,6 +480,7 @@ export function rssParseItems(xml) {
       pubDate:     rssText(b, 'pubDate'),
       guid:        rssText(b, 'guid') || link,
       categories:  rssAllText(b, 'category'),
+      image,
     });
   }
 

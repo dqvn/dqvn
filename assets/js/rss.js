@@ -179,9 +179,15 @@ function cardHTML(a, i) {
     const time = relTime(a.pubDate);
     const link = escH(a.link || '#');
 
+    /* Background image from RSS <enclosure type="image/..."> — only accept http(s) URLs */
+    const imgUrl = /^https?:\/\//i.test(a.image || '') ? a.image : '';
+    const headStyle = imgUrl
+        ? ` style="background-image:linear-gradient(180deg, rgba(15,23,42,.35), rgba(15,23,42,.88)), url('${escH(imgUrl).replace(/'/g, '%27')}')"`
+        : '';
+
     return `
       <div class="art-card${isRead ? ' is-read' : ''}${isExp ? ' expanded' : ''}" id="ac-${i}">
-        <div class="art-head" onclick="toggleExpand(${i})">
+        <div class="art-head${imgUrl ? ' has-img' : ''}" onclick="toggleExpand(${i})"${headStyle}>
           <div class="art-toprow">
             ${cat ? `<span class="art-cat" style="background:${color}">${escH(cat)}</span>` : ''}
             ${time ? `<span class="art-time">${escH(time)}</span>` : ''}

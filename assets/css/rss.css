@@ -321,6 +321,28 @@ body {
     display: flex;
     flex-direction: column;
     gap: 7px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header with RSS <enclosure> image as background — darkened via inline gradient so text stays readable */
+.art-head.has-img {
+    min-height: 128px;
+    justify-content: flex-end;
+    padding-top: 54px;
+}
+
+.art-head.has-img .art-title {
+    color: #fff;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, .55);
+}
+
+.art-head.has-img .art-time {
+    color: rgba(255, 255, 255, .78);
+}
+
+.art-head.has-img .art-chevron {
+    color: rgba(255, 255, 255, .78);
 }
 
 .art-toprow {
