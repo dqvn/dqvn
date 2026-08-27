@@ -1,0 +1,21 @@
+{
+  "title": "Klik en Luister! 🗣️",
+  "name": "Weer & Seizoenen",
+  "subtitle": "Click on a picture to hear the word spoken slowly!",
+  "words": [
+    { "text": "Regen", "emoji": "🌧️" },
+    { "text": "Wind", "emoji": "💨" },
+    { "text": "Sneeuw", "emoji": "❄️" },
+    { "text": "Wolk", "emoji": "☁️" },
+    { "text": "Storm", "emoji": "🌪️" },
+    { "text": "Onweer", "emoji": "⛈️" },
+    { "text": "Bliksem", "emoji": "⚡" },
+    { "text": "Regenboog", "emoji": "🌈" },
+    { "text": "Herfst", "emoji": "🍂" },
+    { "text": "Winter", "emoji": "⛄" },
+    { "text": "Lente", "emoji": "🌷" },
+    { "text": "Zomer", "emoji": "☀️" },
+    { "text": "Mist", "emoji": "🌫️" },
+    { "text": "Hagel", "emoji": "🧊" }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Klik en Luister! 🗣️",
+  "name": "Schoolspullen",
+  "subtitle": "Click on a picture to hear the word spoken slowly!",
+  "words": [
+    { "text": "Potlood", "emoji": "✏️" },
+    { "text": "Stift", "emoji": "🖊️" },
+    { "text": "Verf", "emoji": "🎨" },
+    { "text": "Gum", "emoji": "🧼" },
+    { "text": "Liniaal", "emoji": "📏" },
+    { "text": "Schaar", "emoji": "✂️" },
+    { "text": "Lijm", "emoji": "🧴" },
+    { "text": "Schrift", "emoji": "📓" },
+    { "text": "Krijt", "emoji": "🖍️" },
+    { "text": "Rugzak", "emoji": "🎒" },
+    { "text": "Brooddoos", "emoji": "🍱" },
+    { "text": "Drinkbeker", "emoji": "🥤" },
+    { "text": "Prikbord", "emoji": "📌" }
+  ]
+}
