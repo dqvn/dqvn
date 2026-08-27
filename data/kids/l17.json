@@ -1,0 +1,21 @@
+{
+  "title": "Klik en Luister! 🗣️",
+  "name": "Tuin & Buiten",
+  "subtitle": "Click on a picture to hear the word spoken slowly!",
+  "words": [
+    { "text": "Boom", "emoji": "🌳" },
+    { "text": "Gras", "emoji": "🌱" },
+    { "text": "Bloembed", "emoji": "🌷" },
+    { "text": "Struik", "emoji": "🌿" },
+    { "text": "Hek", "emoji": "🚧" },
+    { "text": "Vijver", "emoji": "🏞️" },
+    { "text": "Zandbak", "emoji": "🏖️" },
+    { "text": "Tuinslang", "emoji": "🚿" },
+    { "text": "Gieter", "emoji": "💧" },
+    { "text": "Kruiwagen", "emoji": "🛒" },
+    { "text": "Klimop", "emoji": "🍃" },
+    { "text": "Vogelhuisje", "emoji": "🐦" },
+    { "text": "Terras", "emoji": "🪑" },
+    { "text": "Barbecue", "emoji": "🍖" }
+  ]
+}

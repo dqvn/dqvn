@@ -1,0 +1,20 @@
+{
+  "title": "Klik en Luister! 🗣️",
+  "name": "Gevoelens",
+  "subtitle": "Click on a picture to hear the word spoken slowly!",
+  "words": [
+    { "text": "Verdrietig", "emoji": "😢" },
+    { "text": "Boos", "emoji": "😠" },
+    { "text": "Bang", "emoji": "😨" },
+    { "text": "Moe", "emoji": "😴" },
+    { "text": "Trots", "emoji": "🦚" },
+    { "text": "Verlegen", "emoji": "🙈" },
+    { "text": "Verveeld", "emoji": "😑" },
+    { "text": "Opgewonden", "emoji": "🤩" },
+    { "text": "Jaloers", "emoji": "😒" },
+    { "text": "Nieuwsgierig", "emoji": "🧐" },
+    { "text": "Geschrokken", "emoji": "😱" },
+    { "text": "Verrast", "emoji": "😲" },
+    { "text": "Verward", "emoji": "😵‍💫" }
+  ]
+}

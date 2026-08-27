@@ -1,0 +1,21 @@
+{
+  "title": "Klik en Luister! 🗣️",
+  "name": "Kleuren & Vormen",
+  "subtitle": "Click on a picture to hear the word spoken slowly!",
+  "words": [
+    { "text": "Rood", "emoji": "🟥" },
+    { "text": "Oranje", "emoji": "🟧" },
+    { "text": "Geel", "emoji": "🟨" },
+    { "text": "Groen", "emoji": "🟩" },
+    { "text": "Paars", "emoji": "🟪" },
+    { "text": "Bruin", "emoji": "🟫" },
+    { "text": "Wit", "emoji": "⬜" },
+    { "text": "Roze", "emoji": "🩷" },
+    { "text": "Cirkel", "emoji": "⭕" },
+    { "text": "Vierkant", "emoji": "◼️" },
+    { "text": "Driehoek", "emoji": "🔺" },
+    { "text": "Ster", "emoji": "⭐" },
+    { "text": "Hart", "emoji": "❤️" },
+    { "text": "Maan", "emoji": "🌙" }
+  ]
+}
