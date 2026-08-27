@@ -6,7 +6,7 @@ const PKGS_KEY = 'nl_wheel_pkgs';
 const ACTIVE_KEY = 'nl_wheel_active';
 const HIST_KEY = 'nl_wheel_hist';
 const MAX_HIST = 8;
-const MAX_ITEMS = 50;
+const MAX_ITEMS = 100;
 
 const COLORS = [
     '#e85d04', '#ffd166', '#06d6a0', '#118ab2',
@@ -352,7 +352,10 @@ function removeWinner() {
     if (pkg.items.length === 0) showToast('Pakket is leeg! Voeg nieuwe items toe.');
 }
 
-function hideResult() {
+// Hides the just-drawn item from this session's wheel pool (memory only —
+// never persisted) and closes the result modal. Shared by the Klaar button,
+// Escape, and backdrop-click.
+function _hideWinnerFromPool() {
     const pkg = getActivePkg();
     const text = (pkg && winnerIdx >= 0) ? pkg.items[winnerIdx] : undefined;
     if (pkg && text !== undefined) {
@@ -362,9 +365,20 @@ function hideResult() {
     closeResultModal();
     winnerIdx = -1;
     drawWheel();
+    return pkg;
+}
+
+function hideResult() {
+    const pkg = _hideWinnerFromPool();
     if (pkg && getWheelPool().length === 0) {
         showToast('Alle items zijn geweest deze sessie! Herlaad de pagina om opnieuw te draaien.');
     }
+}
+
+// "Klaar" button: hide the item for this session, then immediately spin again.
+function hideResultAndSpin() {
+    _hideWinnerFromPool();
+    setTimeout(spin, 80);
 }
 
 /* ── History ────────────────────────────────────────────── */
