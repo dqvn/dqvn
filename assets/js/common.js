@@ -837,8 +837,9 @@ function updateLessonProgressBars() {
                 ` #22c55e 0%, #22c55e ${g1}%,` +      // mastered — green
                 ` #7c3aed ${g1}%, #7c3aed ${g2}%,` +  // in progress — violet (matches .wb-review)
                 ` #ef4444 ${g2}%, #ef4444 ${g3}%,` +  // struggling — red (matches .wb-hard)
-                ` transparent ${g3}%, transparent 100%)`;
-            wrapEl.title = `${mastered}/${total} mastered · ${inProgress} in progress · ${struggling} struggling`;
+                ` #6366f1 ${g3}%, #6366f1 100%)`;      // new/unstudied — indigo (matches .wb-new)
+            const newCount = total - seen;
+            wrapEl.title = `${mastered}/${total} mastered · ${inProgress} in progress · ${struggling} struggling · ${newCount} new`;
         });
     } catch {}
 }

@@ -394,9 +394,9 @@ header#vs-header #hide-meaning-btn.hdr-toggle-btn--active {
 
 /* Lesson progress bar — one full-width fill whose background is a
    hard-stop gradient (green = mastered · violet = in progress ·
-   red = struggling/relearning · transparent = never studied), set
+   red = struggling/relearning · indigo = new/never studied), set
    per-lesson in JS by updateLessonProgressBars(). Colors mirror the
-   word-table's own badge palette (.wb-mastered / .wb-review / .wb-hard). */
+   word-table's own badge palette (.wb-mastered / .wb-review / .wb-hard / .wb-new). */
 .vs-lesson-bar-wrap {
   height: 3px;
   background: rgba(255,255,255,.08);
