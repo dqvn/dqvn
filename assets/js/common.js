@@ -750,9 +750,6 @@ function createGroup(groupKey, files) {
         item.appendChild(nameSpan);
         const barWrap = document.createElement('div');
         barWrap.className = 'vs-lesson-bar-wrap';
-        const barSeen = document.createElement('div');
-        barSeen.className = 'vs-lesson-bar-seen';
-        barWrap.appendChild(barSeen);
         const barFill = document.createElement('div');
         barFill.className = 'vs-lesson-bar';
         barWrap.appendChild(barFill);
@@ -793,33 +790,55 @@ function updateLessonProgressBars() {
 
         document.querySelectorAll('#file-list [data-file] .vs-lesson-bar').forEach(barEl => {
             const wrapEl = barEl.closest('.vs-lesson-bar-wrap');
-            const seenEl = wrapEl.querySelector('.vs-lesson-bar-seen');
             const chId   = barEl.closest('[data-file]').dataset.file;
             const chProg = allProg[chId] || {};
 
-            // total word count from plan data (written after first flashcard rating)
-            const total = fcScores[chId]?.total || 0;
-            if (!total) {
-                barEl.style.width = '0%';
-                if (seenEl) seenEl.style.width = '0%';
-                return;
-            }
-
-            // "seen" = studied at least once (has a real SRS entry, not 'new')
-            // "mastered" = review state with interval ≥ 21 days (subset of seen)
-            let seen = 0, mastered = 0;
+            // Same taxonomy as the word-table badges (_wordBadge), collapsed to
+            // three buckets that fit a 3px sliver:
+            //   mastered   = review state, interval ≥ 21 days
+            //   struggling = relearning (just lapsed — needs attention)
+            //   inProgress = everything else seen (learning, or review < 21 days)
+            let mastered = 0, struggling = 0, inProgress = 0;
             for (const [key, ws] of Object.entries(chProg)) {
                 if (key === '_totals') continue;
                 if (!ws?.state || ws.state === 'new') continue;
-                seen++;
-                if (ws.state === 'review' && (ws.interval || 0) >= 21) mastered++;
+                if (ws.state === 'relearning')                              struggling++;
+                else if (ws.state === 'review' && (ws.interval || 0) >= 21) mastered++;
+                else                                                         inProgress++;
+            }
+            const seen = mastered + struggling + inProgress;
+
+            // Total word count normally comes from plan data (written when a
+            // flashcard session for this lesson is closed). That write can lag
+            // behind or never fire — e.g. a session left open, or one closed
+            // before this feature existed — so nl_srs_v3 can hold real Review/
+            // Master states with no matching total on record. Fall back to
+            // "at least as many as we've seen" so the bar reflects real
+            // progress instead of going blank; it self-corrects to the exact
+            // total the next time that lesson's flashcard session is closed.
+            const total = Math.max(fcScores[chId]?.total || 0, seen);
+            if (!total) {
+                barEl.style.background = 'transparent';
+                wrapEl.title = '';
+                return;
             }
 
-            const seenPct     = Math.min(100, Math.round((seen / total) * 100));
+            // Sequential clamping keeps independently-rounded percentages from
+            // summing past 100 (which would make the gradient stops go backwards).
             const masteredPct = Math.min(100, Math.round((mastered / total) * 100));
-            barEl.style.width = masteredPct + '%';
-            if (seenEl) seenEl.style.width = seenPct + '%';
-            wrapEl.title = `${mastered}/${total} mastered · ${seen}/${total} studied`;
+            const inProgPct   = Math.min(100 - masteredPct, Math.round((inProgress / total) * 100));
+            const strugglePct = Math.min(100 - masteredPct - inProgPct, Math.round((struggling / total) * 100));
+
+            const g1 = masteredPct;
+            const g2 = g1 + inProgPct;
+            const g3 = g2 + strugglePct;
+            barEl.style.background =
+                `linear-gradient(to right,` +
+                ` #22c55e 0%, #22c55e ${g1}%,` +      // mastered — green
+                ` #7c3aed ${g1}%, #7c3aed ${g2}%,` +  // in progress — violet (matches .wb-review)
+                ` #ef4444 ${g2}%, #ef4444 ${g3}%,` +  // struggling — red (matches .wb-hard)
+                ` transparent ${g3}%, transparent 100%)`;
+            wrapEl.title = `${mastered}/${total} mastered · ${inProgress} in progress · ${struggling} struggling`;
         });
     } catch {}
 }
