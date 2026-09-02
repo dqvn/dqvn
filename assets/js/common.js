@@ -750,6 +750,9 @@ function createGroup(groupKey, files) {
         item.appendChild(nameSpan);
         const barWrap = document.createElement('div');
         barWrap.className = 'vs-lesson-bar-wrap';
+        const barSeen = document.createElement('div');
+        barSeen.className = 'vs-lesson-bar-seen';
+        barWrap.appendChild(barSeen);
         const barFill = document.createElement('div');
         barFill.className = 'vs-lesson-bar';
         barWrap.appendChild(barFill);
@@ -789,23 +792,34 @@ function updateLessonProgressBars() {
         const fcScores = planProg?.tool_scores?.flashcard || {};
 
         document.querySelectorAll('#file-list [data-file] .vs-lesson-bar').forEach(barEl => {
+            const wrapEl = barEl.closest('.vs-lesson-bar-wrap');
+            const seenEl = wrapEl.querySelector('.vs-lesson-bar-seen');
             const chId   = barEl.closest('[data-file]').dataset.file;
             const chProg = allProg[chId] || {};
 
             // total word count from plan data (written after first flashcard rating)
             const total = fcScores[chId]?.total || 0;
-            if (!total) { barEl.style.width = '0%'; return; }
-
-            // "mastered" = review state with interval ≥ 21 days
-            let mastered = 0;
-            for (const [key, ws] of Object.entries(chProg)) {
-                if (key === '_totals') continue;
-                if (ws?.state === 'review' && (ws?.interval || 0) >= 21) mastered++;
+            if (!total) {
+                barEl.style.width = '0%';
+                if (seenEl) seenEl.style.width = '0%';
+                return;
             }
 
-            const pct = Math.min(100, Math.round((mastered / total) * 100));
-            barEl.style.width = pct + '%';
-            barEl.closest('.vs-lesson-bar-wrap').title = `${mastered}/${total} mastered (${pct}%)`;
+            // "seen" = studied at least once (has a real SRS entry, not 'new')
+            // "mastered" = review state with interval ≥ 21 days (subset of seen)
+            let seen = 0, mastered = 0;
+            for (const [key, ws] of Object.entries(chProg)) {
+                if (key === '_totals') continue;
+                if (!ws?.state || ws.state === 'new') continue;
+                seen++;
+                if (ws.state === 'review' && (ws.interval || 0) >= 21) mastered++;
+            }
+
+            const seenPct     = Math.min(100, Math.round((seen / total) * 100));
+            const masteredPct = Math.min(100, Math.round((mastered / total) * 100));
+            barEl.style.width = masteredPct + '%';
+            if (seenEl) seenEl.style.width = seenPct + '%';
+            wrapEl.title = `${mastered}/${total} mastered · ${seen}/${total} studied`;
         });
     } catch {}
 }
