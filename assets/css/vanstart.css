@@ -114,6 +114,32 @@ header#vs-header .hdr-fs-btn {
   color: var(--accent) !important;
 }
 
+/* "Verberg/toon betekenis" — sync.css hides header extras by default
+   (moved into the sync dropdown instead); this page keeps it as a
+   visible icon-only button to the right of the user menu. Restyled to
+   match .vs-hamburger's theme-aware treatment instead of the loud
+   white-on-white pill from style.css, which disappears on light themes. */
+header#vs-header #hide-meaning-btn {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  font-size: 1.05rem;
+  background: rgba(255,255,255,.06);
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  transition: background .15s;
+}
+header#vs-header #hide-meaning-btn:hover {
+  background: var(--border-soft);
+}
+header#vs-header #hide-meaning-btn.hdr-toggle-btn--active {
+  background: rgba(220,38,38,.16);
+  border-color: rgba(220,38,38,.4);
+}
+
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    3. Main layout (sidebar | content)
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */

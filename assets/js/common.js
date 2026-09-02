@@ -632,7 +632,7 @@ function reloadTable(data) {
     });
 
     // Spacer rows so the last items scroll comfortably to the top
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 10; i++) {
         const row = document.createElement('tr');
         row.innerHTML = '<td></td><td></td><td></td><td></td><td></td>';
         tableBody.appendChild(row);
