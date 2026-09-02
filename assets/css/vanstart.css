@@ -392,20 +392,37 @@ header#vs-header #hide-meaning-btn.hdr-toggle-btn--active {
   margin-bottom: 1px !important;
 }
 
-/* Lesson progress bar */
+/* Lesson progress bar — two stacked fills over a blank track:
+   orange = studied at least once, green = mastered (drawn on top,
+   since mastered words are a subset of studied words). */
 .vs-lesson-bar-wrap {
+  position: relative;
   height: 3px;
   background: rgba(255,255,255,.08);
   border-radius: 2px;
   margin-top: 3px;
   overflow: hidden;
 }
+.vs-lesson-bar-seen {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: #f97316;
+  border-radius: 2px;
+  transition: width .4s ease;
+}
 .vs-lesson-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
   height: 100%;
   width: 0%;
   background: #22c55e;
   border-radius: 2px;
   transition: width .4s ease;
+  z-index: 1;
 }
 #vs-sidebar .nested-list li.active-lesson {
   background: rgba(234,88,12,.18) !important;
