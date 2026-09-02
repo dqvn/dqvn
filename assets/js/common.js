@@ -625,7 +625,7 @@ function reloadTable(data) {
           </td>
           <td onclick="speakText('${word.dutchsentence?.replace(/'/g, '')}')">
             <span>${word.dutchsentence}</span><br/>
-            <span class="hide-text" style="color:#3f3838ff;opacity:.3">${word.englishtranslate}</span>
+            <span class="hide-text" style="color:var(--text-3, #3f3838)">${word.englishtranslate}</span>
           </td>
           <td><span class="hide-text" style="font-size:.7em">${word.vietnamese?.replace(/'/g, '')}</span></td>`;
         tableBody.appendChild(row);
