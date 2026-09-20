@@ -1,0 +1,47 @@
+{
+  "id": "ee",
+  "name": "ee",
+  "title": "Leesblad ee",
+  "source": "Groep 3 | leesblad anker 1 - ee",
+  "focus": ["ee"],
+  "steps": [
+    {
+      "type": "words",
+      "title": "Lees de woorden",
+      "cols": 3,
+      "groups": [
+        ["een", "meen", "veen"],
+        ["reep", "een", "peen"],
+        ["nee", "mee", "kees"],
+        ["vee", "ree", "reep"],
+        ["een", "meen", "veen"],
+        ["mee", "mees", "kees"]
+      ]
+    },
+    {
+      "type": "story",
+      "title": "Lees het verhaal",
+      "scene": "🕷️👧👦",
+      "lines": [
+        "kees, er is een spin!",
+        "mep de spin kees!",
+        "raak de spin!",
+        "nee saar, spin is nep.",
+        "kees, neem spin mee!"
+      ]
+    },
+    {
+      "type": "words",
+      "title": "Lees meer woorden",
+      "cols": 3,
+      "groups": [
+        ["kees", "raam", "sep"],
+        ["raap", "mees", "rep"],
+        ["kaap", "naar", "reep"],
+        ["sneek", "smeek", "smaak"],
+        ["prik", "preek", "spreek"],
+        ["snee", "snaar", "smeer"]
+      ]
+    }
+  ]
+}

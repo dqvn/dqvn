@@ -1,0 +1,47 @@
+{
+  "id": "n",
+  "name": "n",
+  "title": "Leesblad n",
+  "source": "Groep 3 | leesblad anker 1 - n",
+  "focus": ["n"],
+  "steps": [
+    {
+      "type": "words",
+      "title": "Lees de woorden",
+      "cols": 3,
+      "groups": [
+        ["en", "pen", "pin"],
+        ["ken", "ren", "men"],
+        ["kin", "ken", "ren"],
+        ["ik", "nek", "nep"],
+        ["ren", "men", "maan"],
+        ["min", "kin", "ken"]
+      ]
+    },
+    {
+      "type": "story",
+      "title": "Lees het verhaal",
+      "scene": "👦👫",
+      "lines": [
+        "ik ken saar.",
+        "saar is kik!",
+        "ik ren naar saar.",
+        "nik en saar?",
+        "ik mis saar."
+      ]
+    },
+    {
+      "type": "words",
+      "title": "Lees meer woorden",
+      "cols": 3,
+      "groups": [
+        ["paar", "pen", "mep"],
+        ["raak", "ver", "sip"],
+        ["maak", "rik", "raam"],
+        ["naar", "naars", "kaars"],
+        ["snik", "krik", "kraan"],
+        ["knaap", "knip", "kris"]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <script>(function(){try{var v=(JSON.parse(localStorage.getItem('nl_portal_theme'))||{}).v||'orange';document.documentElement.setAttribute('data-theme',v||'orange');}catch(e){document.documentElement.setAttribute('data-theme','orange');}})();</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📖 Leesblad – Leren lezen</title>
+  <link rel="icon" href="assets/img/dutch.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/leesblad.css">
+  <link rel="stylesheet" href="assets/css/themes.css">
+</head>
+<body>
+
+  <nav id="top-nav">
+    <a href="/dqvn/" class="nav-back" title="Terug naar portaal" aria-label="Terug naar portaal">🏠</a>
+    <span class="nav-title" id="nav-title">📖 Leesblad</span>
+    <button type="button" id="btn-settings" class="nav-btn" aria-label="Instellingen" aria-expanded="false">⚙️</button>
+  </nav>
+
+  <!-- Settings popover: voice + letter-by-letter toggle -->
+  <div id="settings" hidden>
+    <label class="set-row">
+      <span>🔡 Letter voor letter</span>
+      <input type="checkbox" id="opt-hak" checked>
+    </label>
+    <div class="set-row set-col">
+      <span id="tts-name">🔊 Stem</span>
+      <select id="tts-voice-select"><option disabled>Laden…</option></select>
+    </div>
+  </div>
+
+  <main id="app">
+
+    <!-- ── Home: pick a leesblad ───────────────────────────── -->
+    <section id="screen-home" class="screen active">
+      <div class="hero">
+        <h1>Leesblad</h1>
+        <p>Kies een blad en lees mee! Tik op een woord om het te horen.</p>
+      </div>
+      <div id="tile-grid" class="tile-grid"><div class="loading">Laden…</div></div>
+    </section>
+
+    <!-- ── Lesson ──────────────────────────────────────────── -->
+    <section id="screen-lesson" class="screen">
+      <div class="lesson-head">
+        <button type="button" id="btn-home" class="chip-btn" aria-label="Alle bladen">⬅ Bladen</button>
+        <div id="big-letters" class="big-letters" aria-hidden="true"></div>
+        <div id="speed" class="speed" role="group" aria-label="Snelheid">
+          <button type="button" data-rate="0.35" aria-label="Heel langzaam">🐢</button>
+          <button type="button" data-rate="0.5"  aria-label="Langzaam">🚶</button>
+          <button type="button" data-rate="0.75" aria-label="Sneller">🐇</button>
+        </div>
+      </div>
+
+      <div id="stepper" class="stepper" role="tablist"></div>
+      <h2 id="step-title" class="step-title"></h2>
+
+      <div id="step-body" class="step-body"></div>
+
+      <div class="lesson-nav">
+        <button type="button" id="btn-prev" class="nav-big">◀ Vorige</button>
+        <button type="button" id="btn-next" class="nav-big primary">Volgende ▶</button>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="assets/js/leesbladscript.js"></script>
+</body>
+</html>

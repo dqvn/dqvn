@@ -1,0 +1,47 @@
+{
+  "id": "r",
+  "name": "r",
+  "title": "Leesblad r",
+  "source": "Groep 3 | leesblad anker 1 - r",
+  "focus": ["r"],
+  "steps": [
+    {
+      "type": "words",
+      "title": "Lees de woorden",
+      "cols": 3,
+      "groups": [
+        ["rik", "ris", "raas"],
+        ["raam", "raak", "raar"],
+        ["rik", "rim", "raam"],
+        ["rik", "raak", "raas"],
+        ["raam", "raas", "raak"],
+        ["rik", "ris", "raas"]
+      ]
+    },
+    {
+      "type": "story",
+      "title": "Lees het verhaal",
+      "scene": "👦🧀👧",
+      "lines": [
+        "ik rik.",
+        "kim, ik maak kaas.",
+        "kim kaas?",
+        "mmm kaas, kim!",
+        "mmm, rik."
+      ]
+    },
+    {
+      "type": "words",
+      "title": "Lees meer woorden",
+      "cols": 3,
+      "groups": [
+        ["sik", "raas", "kim"],
+        ["raam", "mis", "rik"],
+        ["kaas", "rim", "raak"],
+        ["raas", "sim", "sis"],
+        ["raak", "mis", "kaas"],
+        ["rik", "maak", "raam"]
+      ]
+    }
+  ]
+}

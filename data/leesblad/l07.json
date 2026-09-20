@@ -1,0 +1,47 @@
+{
+  "id": "p",
+  "name": "p",
+  "title": "Leesblad p",
+  "source": "Groep 3 | leesblad anker 1 - p",
+  "focus": ["p"],
+  "steps": [
+    {
+      "type": "words",
+      "title": "Lees de woorden",
+      "cols": 3,
+      "groups": [
+        ["pim", "pik", "pip"],
+        ["aap", "raap", "paar"],
+        ["kip", "sip", "rip"],
+        ["mep", "sep", "rep"],
+        ["rip", "kip", "pip"],
+        ["aas", "paas", "paar"]
+      ]
+    },
+    {
+      "type": "story",
+      "title": "Lees het verhaal",
+      "scene": "🐝👧",
+      "lines": [
+        "ik prik pim!",
+        "maar ik mis pim.",
+        "ik prik saar!",
+        "ik raak saar.",
+        "is saar sip?"
+      ]
+    },
+    {
+      "type": "words",
+      "title": "Lees meer woorden",
+      "cols": 3,
+      "groups": [
+        ["vaas", "raar", "kaas"],
+        ["saar", "mes", "vis"],
+        ["pik", "rek", "kip"],
+        ["paars", "spaar", "spaak"],
+        ["prik", "prak", "smaak"],
+        ["pips", "spraak", "paars"]
+      ]
+    }
+  ]
+}

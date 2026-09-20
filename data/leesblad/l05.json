@@ -1,0 +1,47 @@
+{
+  "id": "e",
+  "name": "e",
+  "title": "Leesblad e",
+  "source": "Groep 3 | leesblad anker 1 - e",
+  "focus": ["e"],
+  "steps": [
+    {
+      "type": "words",
+      "title": "Lees de woorden",
+      "cols": 3,
+      "groups": [
+        ["rek", "rem", "sem"],
+        ["rem", "rek", "mek"],
+        ["sem", "rem", "rek"],
+        ["rek", "rem", "sem"],
+        ["sem", "rem", "rek"],
+        ["mek", "rek", "rem"]
+      ]
+    },
+    {
+      "type": "story",
+      "title": "Lees het verhaal",
+      "scene": "💦🎈👦👧",
+      "lines": [
+        "ik mik rik.",
+        "ik mis.",
+        "maar ik raak sem.",
+        "sss, sem.",
+        "sem is kik!"
+      ]
+    },
+    {
+      "type": "words",
+      "title": "Lees meer woorden",
+      "cols": 3,
+      "groups": [
+        ["kaas", "sem", "raar"],
+        ["saar", "maas", "rik"],
+        ["raas", "rem", "kaak"],
+        ["kraam", "kraak", "smaak"],
+        ["kris", "krik", "kraak"],
+        ["maak", "smaak", "kraam"]
+      ]
+    }
+  ]
+}
