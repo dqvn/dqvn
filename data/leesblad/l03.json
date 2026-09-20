@@ -1,0 +1,40 @@
+{
+  "id": "zoem3",
+  "name": "aa",
+  "title": "Leesblad 3",
+  "source": "Leesblad bij VLL Zoem Start – 3",
+  "focus": ["aa"],
+  "steps": [
+    {
+      "type": "words",
+      "title": "Lees de woorden",
+      "cols": 3,
+      "groups": [
+        ["ik", "is", "mis", "sis", "sik"],
+        ["ik", "mik", "kik", "sik", "sis"],
+        ["kim", "kik", "mik", "mis", "sik"]
+      ]
+    },
+    {
+      "type": "story",
+      "title": "Lees het verhaal",
+      "scene": "🤖🧀",
+      "lines": [
+        "ik, mik",
+        "ik maak kaas.",
+        "mmm kaas.",
+        "mik, mmm kaas"
+      ]
+    },
+    {
+      "type": "words",
+      "title": "Lees meer woorden",
+      "cols": 3,
+      "groups": [
+        ["ik", "mik", "maak", "maas", "kaas"],
+        ["kaak", "maak", "mik", "sik", "kik"],
+        ["kaas", "maas", "mis", "sis", "is"]
+      ]
+    }
+  ]
+}

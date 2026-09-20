@@ -1,0 +1,29 @@
+{
+  "id": "zoem1",
+  "name": "i k m",
+  "title": "Leesblad 1",
+  "source": "Leesblad bij VLL Zoem Start – 1",
+  "focus": ["i", "k", "m"],
+  "steps": [
+    {
+      "type": "words",
+      "title": "Lees de woorden",
+      "cols": 3,
+      "groups": [
+        ["i", "ik", "mik"],
+        ["k", "ik", "mik"],
+        ["m", "mik", "kik"]
+      ]
+    },
+    {
+      "type": "words",
+      "title": "Lees nog een keer",
+      "cols": 3,
+      "groups": [
+        ["ik", "mik", "kim"],
+        ["k", "ik", "kik"],
+        ["m", "mik", "kim"]
+      ]
+    }
+  ]
+}

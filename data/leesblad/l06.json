@@ -1,0 +1,47 @@
+{
+  "id": "v",
+  "name": "v",
+  "title": "Leesblad v",
+  "source": "Groep 3 | leesblad anker 1 - v",
+  "focus": ["v"],
+  "steps": [
+    {
+      "type": "words",
+      "title": "Lees de woorden",
+      "cols": 3,
+      "groups": [
+        ["is", "mis", "vis"],
+        ["aas", "vaas", "vaar"],
+        ["vaak", "vaar", "ver"],
+        ["ik", "vis", "ver"],
+        ["vis", "vaas", "kaas"],
+        ["vaas", "vaar", "vaak"]
+      ]
+    },
+    {
+      "type": "story",
+      "title": "Lees het verhaal",
+      "scene": "🎣🐟👦👧",
+      "lines": [
+        "saar, ik vis!",
+        "ik vis mis.",
+        "mmm vis.",
+        "rik vis?",
+        "mmm vis, rik"
+      ]
+    },
+    {
+      "type": "words",
+      "title": "Lees meer woorden",
+      "cols": 3,
+      "groups": [
+        ["kaak", "rik", "raas"],
+        ["vaak", "saar", "mes"],
+        ["raam", "vaas", "ver"],
+        ["kers", "vers", "kris"],
+        ["smaak", "kraam", "kaars"],
+        ["raak", "kraak", "krik"]
+      ]
+    }
+  ]
+}

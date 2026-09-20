@@ -1,0 +1,47 @@
+{
+  "id": "b",
+  "name": "b",
+  "title": "Leesblad b",
+  "source": "Groep 3 | leesblad anker 1 - b",
+  "focus": ["b"],
+  "steps": [
+    {
+      "type": "words",
+      "title": "Lees de woorden",
+      "cols": 3,
+      "groups": [
+        ["bek", "ben", "bes"],
+        ["baas", "baan", "been"],
+        ["ben", "bek", "beek"],
+        ["bik", "bek", "beek"],
+        ["been", "ben", "bek"],
+        ["baas", "bes", "ben"]
+      ]
+    },
+    {
+      "type": "story",
+      "title": "Lees het verhaal",
+      "scene": "🐱🐟👦",
+      "lines": [
+        "bik en ben.",
+        "bik er is vis.",
+        "neem vis bik!",
+        "mmm bik, vis!",
+        "ben is een baas!"
+      ]
+    },
+    {
+      "type": "words",
+      "title": "Lees meer woorden",
+      "cols": 3,
+      "groups": [
+        ["paar", "baan", "bik"],
+        ["neem", "kaak", "ver"],
+        ["aan", "been", "baas"],
+        ["breek", "kreek", "kris"],
+        ["braak", "brik", "breek"],
+        ["braam", "brem", "breek"]
+      ]
+    }
+  ]
+}

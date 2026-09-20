@@ -1,0 +1,48 @@
+{
+  "id": "oo",
+  "name": "oo",
+  "title": "Leesblad oo",
+  "source": "Groep 3 | leesblad anker 1 - oo",
+  "focus": ["oo"],
+  "steps": [
+    {
+      "type": "words",
+      "title": "Lees de woorden",
+      "cols": 3,
+      "groups": [
+        ["ook", "rook", "kook"],
+        ["oom", "room", "roos"],
+        ["boos", "koos", "moos"],
+        ["roos", "boos", "koos"],
+        ["roos", "boos", "baas"],
+        ["ook", "rook", "roos"]
+      ]
+    },
+    {
+      "type": "story",
+      "title": "Lees het verhaal",
+      "scene": "🧑‍🍳🧀🐟🍗",
+      "lines": [
+        "ik kook!",
+        "ik neem vis en kaas.",
+        "ik neem ook kip.",
+        "koos ook kaas en vis!",
+        "ook kip koos!",
+        "mmm koos, kaas, vis, en kip."
+      ]
+    },
+    {
+      "type": "words",
+      "title": "Lees meer woorden",
+      "cols": 3,
+      "groups": [
+        ["boon", "beek", "vaas"],
+        ["ren", "moos", "bes"],
+        ["reep", "poos", "baas"],
+        ["kroos", "kroon", "kroot"],
+        ["braak", "kraak", "kraan"],
+        ["brik", "krik", "strik"]
+      ]
+    }
+  ]
+}
