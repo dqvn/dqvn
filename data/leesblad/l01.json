@@ -4,6 +4,7 @@
   "title": "Leesblad 1",
   "source": "Leesblad bij VLL Zoem Start – 1",
   "focus": ["i", "k", "m"],
+  "highlight": false,
   "steps": [
     {
       "type": "words",

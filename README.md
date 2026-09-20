@@ -17,6 +17,7 @@ A static web app for learning Dutch (A2 level) deployed via GitHub Pages. No bac
 | `dialogues.html` | Dutch dialogue practice — YouTube embed + role-play + solo TTS mode |
 | `klanken.html` | Dutch phonetics learner — categorised sounds, IPA, TTS wave, 6 example words |
 | `kids.html` | Kids vocabulary practice — emoji picture cards, tap-to-hear TTS |
+| `leesblad.html` | Leesblad — beginner-reader sheets (groep 2/3): tap-to-hear word columns, story read-along, "which word do you hear?" game; stars in `localStorage`. Data: `data/leesblad/lNN.json` (see its README) |
 | `stories.html` | Dutch Storytime — interactive story reader (kids/animated, main entry) |
 | `stories2.html` | Korte Verhalen — 10 Dutch beginner short stories; paragraph TTS, vocabulary chips (click-to-hear), English translation toggle, completion tracking |
 | `stories1–5.html` | Individual story lesson pages |

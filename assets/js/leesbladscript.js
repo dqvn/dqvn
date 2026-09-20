@@ -164,7 +164,7 @@
 
   // ── Word button ──────────────────────────────────────────────────
   function wordEl(word) {
-    const focus = lesson().focus || [];
+    const focus = lesson().highlight === false ? [] : (lesson().focus || []);
     const b = el('button', 'w');
     b.type = 'button';
     b.dataset.word = word;
