@@ -10,7 +10,8 @@
   const PREF_KEY  = 'nl_leesblad_prefs';     // { rate, hak }
   const VOICE_KEY = 'nl_tts_voice_v1';       // shared with kids.html / vanstart.html (plain string)
   const RATES     = [0.35, 0.5, 0.75];
-  const QUIZ_LEN  = 6;
+  const QUIZ_LEN  = 8;
+  const HAK_PAUSE_MS = 1000;   // pause between "letter voor letter" and the whole word
   const DIGRAPHS  = ['aa', 'ee', 'oo', 'uu', 'ie', 'oe', 'eu', 'ui', 'ij', 'ou', 'au', 'ei'];
   const STEP_META = { words: ['🔤', 'Woorden'], story: ['📖', 'Verhaal'], game: ['🎯', 'Spel'] };
 
@@ -126,6 +127,7 @@
   function playClip(file) {
     return new Promise(resolve => {
       const a = new Audio(SND_BASE + file);
+      a.volume = 1;   // max — same ceiling as the TTS utterances below
       curAudio = a;
       curAudioDone = resolve;
       const fin = ok => { if (curAudio === a) { curAudio = null; curAudioDone = null; } resolve(ok); };
@@ -200,8 +202,9 @@
         c.classList.remove('on');
         if (id !== runId) return false;
       }
+      await wait(HAK_PAUSE_MS);             // pause between spelling it out and the whole word
+      if (id !== runId) return false;
     }
-    if (id !== runId) return false;
     await speak(word, prefs.rate, id);      // whole word — or, for a bare-letter "word", its own clip
     if (id !== runId) return false;
     node.classList.remove('speaking');
