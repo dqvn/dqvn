@@ -14,7 +14,7 @@ const TOOLS = [
   { href:'/dqvn/mathadd',   icon:'➕', nl:'Optellen',       nameEn:'Addition',          en:'Optellen oefenen voor kids (1-20)',     descEn:'Practice addition for kids (1-20)',   color:'#16a34a', badge:'Nieuw',  group:'🏗️ Taalkennis'        },
 
   /* ── Leesvaardigheid: read & understand Dutch texts ─────────────── */
-  { href:'/dqvn/leesblad',  icon:'📖', nl:'Leesblad',       nameEn:'Reading Sheets',    en:'Leren lezen: woorden, verhaaltjes, spel', descEn:'Learn to read: words, mini-stories, game', color:'#ea580c', badge:'Nieuw',  group:'📖 Leesvaardigheid'   },
+  { href:'/dqvn/leesblad',  icon:'📖', nl:'Leren Lezen',    nameEn:'Learn to Read',     en:'Leren lezen: woorden, verhaaltjes, spel', descEn:'Learn to read: words, mini-stories, game', color:'#ea580c', badge:'Nieuw',  group:'📖 Leesvaardigheid'   },
   { href:'/dqvn/stories',   icon:'📕', nl:'Kinderverhalen', nameEn:"Children's Stories",en:'Interactieve verhalen voor kinderen',   descEn:'Interactive stories for children',    color:'#6A67CE',                 group:'📖 Leesvaardigheid'   },
   { href:'/dqvn/stories2',  icon:'📖', nl:'Korte Verhalen', nameEn:'Short Stories',     en:'10 beginnersverhalen met woordenschat', descEn:'10 beginner stories with vocabulary', color:'#7c3aed', badge:'Nieuw',  group:'📖 Leesvaardigheid'   },
   { href:'/dqvn/rss',       icon:'📰', nl:'Nieuws',         nameEn:'News',              en:'Lees echt Nederlands nieuws',           descEn:'Read real Dutch news',                color:'#0891b2', badge:'Nieuw',  group:'📖 Leesvaardigheid'   },
