@@ -11,7 +11,7 @@
   const VOICE_KEY = 'nl_tts_voice_v1';       // shared with kids.html / vanstart.html (plain string)
   const RATES     = [0.35, 0.5, 0.75];
   const QUIZ_LEN  = 8;
-  const HAK_PAUSE_MS = 800;   // pause between "letter voor letter" and the whole word
+  const HAK_PAUSE_MS = 600;   // pause between "letter voor letter" and the whole word
   // Longest-first: a 4-letter cluster must be tried before its 3/2-letter prefixes
   // (e.g. "schr" before "sch" before "ch"), or chunk() below would split it wrong.
   const DIGRAPHS  = ['schr', 'sch', 'aa', 'ee', 'oo', 'uu', 'ie', 'oe', 'eu', 'ui', 'ij', 'ou', 'au', 'ei', 'ch', 'ng', 'nk', 'uw'];
