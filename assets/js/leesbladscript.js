@@ -5,6 +5,7 @@
 (function () {
 
   const BASE      = 'data/leesblad/';
+  const SND_BASE  = 'assets/audio/klanken-nl/';   // per-grapheme real-voice clips, see sounds.json
   const PROG_KEY  = 'nl_leesblad_v1';        // { <lesson.id>: { seen:[bool], stars:0-3 } }
   const PREF_KEY  = 'nl_leesblad_prefs';     // { rate, hak }
   const VOICE_KEY = 'nl_tts_voice_v1';       // shared with kids.html / vanstart.html (plain string)
@@ -28,6 +29,9 @@
   // ── State ────────────────────────────────────────────────────────
   let lessons = [];
   let pics    = {};
+  let sounds  = {};       // grapheme → filename, from sounds.json (missing/empty if not fetched)
+  let curAudio = null;    // <audio> currently playing (real-voice clip), so cancelAll() can stop it
+  let curAudioDone = null; // resolves the pending playClip() promise when cancelAll() cuts it short
   let cur     = -1;      // lesson index
   let stepIdx = 0;
   let prefs   = Object.assign({ rate: 0.5, hak: true }, lsGet(PREF_KEY, {}));
@@ -108,11 +112,64 @@
   function cancelAll() {
     runId++;
     if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+    if (curAudio) { curAudio.pause(); if (curAudioDone) curAudioDone(false); curAudio = null; curAudioDone = null; }
     document.querySelectorAll('.speaking').forEach(n => n.classList.remove('speaking'));
     document.querySelectorAll('.ch.on').forEach(n => n.classList.remove('on'));
+    document.querySelectorAll('.letter-snd.on').forEach(n => n.classList.remove('on'));
     setPlaying(null);
   }
   const startRun = () => { cancelAll(); return runId; };
+
+  // Low-level: play one local mp3 clip to completion. Resolves true if it
+  // played, false if it errored (e.g. missing file) or was cut short by
+  // cancelAll(). Never rejects — callers just fall back to TTS on false.
+  function playClip(file) {
+    return new Promise(resolve => {
+      const a = new Audio(SND_BASE + file);
+      curAudio = a;
+      curAudioDone = resolve;
+      const fin = ok => { if (curAudio === a) { curAudio = null; curAudioDone = null; } resolve(ok); };
+      a.addEventListener('ended', () => fin(true));
+      a.addEventListener('error', () => fin(false));
+      a.play().catch(() => fin(false));
+    });
+  }
+
+  // Speak one grapheme's real-voice clip (header 🔊 button). Resolves the
+  // run id so the caller can tell if it was superseded, or false if no clip
+  // is available for this grapheme.
+  function playRealSound(grapheme, node) {
+    const file = sounds[grapheme];
+    if (!file) return false;
+    const id = startRun();
+    if (node) node.classList.add('on');
+    playClip(file).then(ok => {
+      if (node) node.classList.remove('on');
+      if (!ok) {
+        delete sounds[grapheme];              // clip missing (fresh clone / deployed site) — stop offering it
+        document.querySelectorAll(`.letter-snd[data-g="${grapheme}"]`).forEach(b => b.classList.add('unavailable'));
+      }
+    });
+    return id;
+  }
+
+  // Speak a "word" — by default via TTS, but if the word IS itself a known
+  // grapheme with a real-voice clip (e.g. lesson 1/2 use bare letters as
+  // words: "i", "k", "m", "s"), prefer that clip; TTS mangles isolated
+  // letters ("k" comes out as the letter name "ka").
+  // `id` is the caller's run id (from startRun()): if a newer run supersedes
+  // this one while the clip is playing, cancelAll() resolves it with false —
+  // that must NOT fall through to speaking the (now stale) text via TTS.
+  async function speak(text, rate, id) {
+    const file = sounds[text];
+    if (file) {
+      const ok = await playClip(file);
+      if (id !== undefined && id !== runId) return;   // superseded meanwhile — stop here, no TTS fallback
+      if (ok) return;
+    }
+    if (id !== undefined && id !== runId) return;
+    await utter(sayText(text), rate);
+  }
 
   function setPlaying(btn) {
     if (activeBtn) {
@@ -127,7 +184,9 @@
     }
   }
 
-  // Sound a word out grapheme by grapheme (visual), then say it. Returns false if cancelled.
+  // Sound a word out grapheme by grapheme, then say it. Returns false if cancelled.
+  // Each grapheme plays its real-voice clip when one exists (sounds.json);
+  // graphemes without a clip just get a timed visual highlight instead.
   async function readWord(node, id, hak) {
     const word = node.dataset.word;
     node.classList.add('speaking');
@@ -136,13 +195,14 @@
       const ms = Math.min(700, Math.max(260, 220 / prefs.rate));
       for (const c of chunks) {
         c.classList.add('on');
-        await wait(ms);
+        const file = sounds[c.textContent];
+        if (file) await playClip(file); else await wait(ms);
         c.classList.remove('on');
         if (id !== runId) return false;
       }
     }
     if (id !== runId) return false;
-    await utter(sayText(word), prefs.rate);
+    await speak(word, prefs.rate, id);      // whole word — or, for a bare-letter "word", its own clip
     if (id !== runId) return false;
     node.classList.remove('speaking');
     node.classList.add('revealed');
@@ -257,7 +317,7 @@
       body.innerHTML = '';
       locked = false;
       const target = qs[qi];
-      const hear = () => { startRun(); utter(sayText(target), prefs.rate); };
+      const hear = () => { const id = startRun(); speak(target, prefs.rate, id); };
 
       const box = el('div', 'quiz');
       box.append(el('div', 'quiz-count', `Vraag ${qi + 1} / ${qs.length}`));
@@ -277,7 +337,7 @@
           if (w === target) {
             locked = true;
             c.classList.add('right');
-            await utter(sayText(w), prefs.rate);
+            await speak(w, prefs.rate, id);
             if (id !== runId) return;
             await wait(350);
             if (id !== runId) return;
@@ -286,10 +346,10 @@
           } else {
             errors++;
             c.classList.add('wrong'); c.disabled = true;
-            await utter(sayText(w), prefs.rate);           // let the child hear what they picked…
+            await speak(w, prefs.rate, id);                    // let the child hear what they picked…
             if (id !== runId) return;
             await wait(300);
-            if (id === runId) await utter(sayText(target), prefs.rate);   // …then the right one again
+            if (id === runId) await speak(target, prefs.rate, id);   // …then the right one again
           }
         });
         choices.append(c);
@@ -354,9 +414,26 @@
     show('home');
   }
 
+  function renderBigLetters() {
+    const wrap = $('big-letters');
+    wrap.innerHTML = '';
+    (lesson().focus || [lesson().name]).forEach(g => {
+      if (sounds[g]) {
+        const b = el('button', 'letter-snd', g);
+        b.type = 'button';
+        b.dataset.g = g;
+        b.setAttribute('aria-label', 'Hoor de klank ' + g);
+        b.addEventListener('click', () => playRealSound(g, b));
+        wrap.append(b);
+      } else {
+        wrap.append(el('span', '', g));
+      }
+    });
+  }
+
   function openLesson(i, step = 0) {
     cur = i;
-    $('big-letters').textContent = (lesson().focus || [lesson().name]).join(' ');
+    renderBigLetters();
     show('lesson');
     setStep(step);
   }
@@ -457,7 +534,8 @@
   // ── Init: probe l01.json, l02.json … until 404 ───────────────────
   (async function init() {
     try {
-      pics = await fetch(BASE + 'pics.json').then(r => r.ok ? r.json() : {}).catch(() => ({}));
+      pics   = await fetch(BASE + 'pics.json').then(r => r.ok ? r.json() : {}).catch(() => ({}));
+      sounds = await fetch(BASE + 'sounds.json').then(r => r.ok ? r.json() : {}).catch(() => ({}));
       for (let n = 1; ; n++) {
         const r = await fetch(`${BASE}l${String(n).padStart(2, '0')}.json`).catch(() => null);
         if (!r || !r.ok) break;

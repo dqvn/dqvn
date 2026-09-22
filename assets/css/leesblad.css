@@ -81,7 +81,19 @@ button:focus-visible, select:focus-visible { outline: 3px solid var(--accent); o
 .lesson-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 14px; }
 .chip-btn { padding: 8px 14px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); font-size: .85rem; }
 .chip-btn:hover { border-color: var(--accent); }
-.big-letters { flex: 1; text-align: center; font-size: 2.6rem; font-weight: 700; color: var(--accent); letter-spacing: .08em; line-height: 1; }
+.big-letters { flex: 1; display: flex; justify-content: center; align-items: center; gap: .08em; font-size: 2.6rem; font-weight: 700; color: var(--accent); line-height: 1; }
+.big-letters span { padding: 0 .05em; }
+.letter-snd {
+  padding: 0 .1em; border-radius: 10px; background: transparent;
+  box-shadow: 0 0 0 2px transparent inset;
+  transition: background .15s, box-shadow .15s, transform .1s;
+}
+.letter-snd::after { content: '🔊'; font-size: .35em; vertical-align: super; margin-left: 1px; opacity: .6; }
+.letter-snd:hover { background: var(--accent-glow); }
+.letter-snd:active { transform: scale(.92); }
+.letter-snd.on { background: var(--accent); color: #fff; box-shadow: none; }
+.letter-snd.unavailable { pointer-events: none; }
+.letter-snd.unavailable::after { display: none; }
 
 .speed { display: flex; gap: 4px; background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: 3px; }
 .speed button { font-size: 1.3rem; width: 40px; height: 40px; border-radius: 50%; }
