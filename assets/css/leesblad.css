@@ -184,7 +184,7 @@ button:focus-visible, select:focus-visible { outline: 3px solid var(--accent); o
   background: var(--surface-2); border: 1px solid var(--border);
 }
 .line .words { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 4px; }
-.line .w { font-size: 1.7rem; min-height: 48px; padding: 4px 8px; }
+.line .w { font-size: 1.7rem; min-height: 48px; padding: 4px 8px; width: auto; }   /* not the grid's width:100% — a story word sizes to its own text and wraps like a sentence */
 .line .punct { font-size: 1.7rem; margin-left: -4px; margin-right: 6px; color: var(--text-2); }
 
 /* ── Game ─────────────────────────────────────────────────────── */
@@ -214,15 +214,16 @@ button:focus-visible, select:focus-visible { outline: 3px solid var(--accent); o
 .result p { color: var(--text-2); }
 .result .btn-row { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 8px; }
 
-/* ── Bottom nav — sticky, so it stays reachable without scrolling back
-   down through a long step (e.g. 21-letter medeklinkers grid). ────── */
-.lesson-nav {
-  display: flex; gap: 12px; margin-top: 24px;
-  position: sticky; bottom: 0; z-index: 40;
-  background: var(--bg);
-  padding-top: 10px; padding-bottom: calc(14px + env(safe-area-inset-bottom));
-  box-shadow: 0 -8px 16px -10px rgba(0,0,0,.18);
-}
+/* ── Bottom nav ───────────────────────────────────────────────────
+   NOT sticky: `position: sticky` doesn't remove an element from document
+   flow, so while a step is taller than one screen the nav would pin to the
+   viewport bottom and float OVER whatever content is still scrolling past
+   underneath it (it only "un-sticks" once you reach its true, in-flow
+   position) — on a short step (e.g. the story) that covers the content
+   almost entirely, and no amount of reserved padding fixes it, because the
+   overlap happens throughout the scroll, not just at the very end. Plain,
+   in-flow positioning it is — reach it the normal way, by scrolling down. */
+.lesson-nav { display: flex; gap: 12px; margin-top: 24px; padding-bottom: env(safe-area-inset-bottom); }
 .nav-big {
   flex: 1; padding: 14px; min-height: 52px; border-radius: 16px; font-weight: 700; font-size: 1rem;
   background: var(--surface); border: 2px solid var(--border);
