@@ -4,12 +4,12 @@
   "title": "Leesblad 1",
   "source": "Leesblad bij VLL Zoem Start – 1",
   "focus": ["i", "k", "m"],
-  "highlight": false,
   "steps": [
     {
       "type": "words",
       "title": "Lees de woorden",
       "cols": 3,
+      "columnFocus": ["i", "k", "m"],
       "groups": [
         ["i", "ik", "mik"],
         ["k", "ik", "mik"],
@@ -20,6 +20,7 @@
       "type": "words",
       "title": "Lees nog een keer",
       "cols": 3,
+      "columnFocus": ["i", "k", "m"],
       "groups": [
         ["ik", "mik", "kim"],
         ["k", "ik", "kik"],

@@ -15,7 +15,6 @@ letter/klank taught so far — see its own note near the bottom of this file.
   "title": "Leesblad r",
   "source": "Groep 3 | leesblad anker 1 - r",
   "focus": ["r"],                  // new letter(s)/grapheme(s): big in header + tile, coloured in every word
-  "highlight": false,              // optional – set false when every letter is "new" (Zoem 1-2)
   "say": { "mmm": "mmmm" },        // optional – TTS spelling override per word
   "steps": [
     { "type": "words", "title": "Lees de woorden", "cols": 3,
@@ -33,6 +32,7 @@ letter/klank taught so far — see its own note near the bottom of this file.
 - **Read exactly as printed** (keep repeated words, "mmm", "sss"). Only punctuation spacing is normalised (`kim kaas ?` → `kim kaas?`).
 - Story `lines`: one sentence per line; words are split on spaces, trailing punctuation is kept but not spoken. `scene` = decorative emoji standing in for the sheet's illustration.
 - The big-letter panel of the Zoem sheets is not a step: it is `focus` shown in the header.
+- **`columnFocus`** (optional, per-step array, one entry per `groups` column): highlights that fixed grapheme in *every* word of that column, even when the word doesn't literally start with it (e.g. l01 step 2's first column starts with "ik", not "i" — but the column still means "i", so `columnFocus[0] = "i"`). Used by lessons 1–2 (Zoem Start), where every word is made purely of the letters being taught (i/k/m, then i/k/m/s) — the old approach of coloring the lesson-wide `focus` set inside every word would have colored 100% of every letter, so those two lessons instead say explicitly "this column = this letter" per `l.name`'s column order. Most lessons don't need this and just rely on the lesson-wide `focus` array.
 
 ## `pics.json`
 Shared `word → emoji` map. The emoji pops up on a word *after* the child has tapped/heard it (hint, not spoiler). Only add concrete nouns whose emoji is unambiguous; leave names and nonsense words out.
@@ -56,6 +56,8 @@ A grapheme/word missing from the map (real multi-letter words, mostly) falls bac
 Not a scanned worksheet: a synthetic review lesson placed last (highest number) so it appears at the end of the tile list. Four `words` steps in academic order for groep 3 — klinkers (a e i o u) → lange klinkers (aa ee ie oo uu) → medeklinkers a-z (b…z) → bijzondere klanken (ch, ng, nk, sch, schr, ei/ij, eu, oe, ui, au/ou, uw). Each `group` = one grapheme **plus 3 real-word examples** (e.g. `["a", "bal", "kat", "tas"]`): the grapheme itself plays straight from `sounds.json` (no TTS), the 3 example words are ordinary vocabulary read by TTS (deliberately none of them equal a `sounds.json` key, and none repeats the grapheme itself — checked programmatically when authoring). The auto-generated 4th step ("Welk woord hoor je?") reviews the whole alphabet as a listening quiz.
 
 **`"highlightFirstOfGroup": true`** — a generic `renderWords()` option (any lesson can set it): instead of the usual lesson-wide `focus` list, each *column*'s own first item (`g[0]`, i.e. the grapheme) is used as that column's highlight target for every word rendered in it, via `wordEl(word, focusOverride)`'s optional 2nd parameter. So "circus" under grapheme "c" gets both its c's coloured, "vrijdag" under "ij" gets just the "ij" chunk coloured, etc. — this is what makes the target sound jump out inside each example word. Superseds `highlight`/`focus` for that lesson entirely (l12 no longer sets `highlight: false`, it's moot once `highlightFirstOfGroup` is on).
+
+(Lessons 1–2 use the sibling mechanism `columnFocus` instead of this one, since their column's *first word* isn't always the bare target letter — see `columnFocus` above, under **Schema**. Both ultimately just set `wordEl()`'s `focusOverride` parameter; pick whichever matches how the lesson's columns are actually structured.)
 
 It also has a lesson-scoped **`hints`** map (`grapheme → short Vietnamese pronunciation tip`, e.g. `"g": "gừ trong cổ họng"`), rendered as small text under that letter's tile (`.w.has-hint`, in `wordEl()`/`leesbladscript.js`). Any lesson can define `hints`; `wordEl()` looks up `lesson().hints[word]` for every word it renders (including inside `story` steps), so it's not actually alfabet-only — just unused elsewhere so far. Keep each hint very short (a few words).
 
