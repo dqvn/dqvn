@@ -3,6 +3,8 @@
 One `lNN.json` per photographed reading sheet (leesblad). `leesblad.html` auto-discovers
 `l01.json`, `l02.json`, … by probing until a 404 — drop the file in, nothing else to update.
 File order = learning order (Zoem Start 1-3, then Groep 3 anker 1: r, e, v, p, n, ee, b, oo).
+`l12.json` ("Alfabet") is a synthetic capstone lesson (not a scanned sheet) reviewing every
+letter/klank taught so far — see its own note near the bottom of this file.
 
 ## Schema
 
@@ -36,7 +38,9 @@ File order = learning order (Zoem Start 1-3, then Groep 3 anker 1: r, e, v, p, n
 Shared `word → emoji` map. The emoji pops up on a word *after* the child has tapped/heard it (hint, not spoiler). Only add concrete nouns whose emoji is unambiguous; leave names and nonsense words out.
 
 ## `sounds.json`
-`grapheme → local mp3 filename` (files live in `assets/audio/klanken-nl/`, gitignored — see that folder's own README, which lists every clip). Covers all single Dutch letters except c/q/x/y (foreign/rare) plus the digraphs used in these lessons (aa, ee, oo, uu, ie, oe, eu, ui, ei/ij, au/ou, ch, ng, sch, schr, kn, nk, uw, wr).
+`grapheme → local mp3 filename` (files live in `assets/audio/klanken-nl/`, gitignored — see that folder's own README, which lists every clip). Covers **all 26 letters of the alphabet** plus the long vowels/tweeklanken (aa, ee, oo, uu, ie) and special clusters (ch/g, ng, nk, sch, schr, ei/ij, eu, oe, ui, au/ou, uw). `kn` and `wr` were intentionally removed (fall back to TTS).
+
+`chunk(word)` (in `leesbladscript.js`) must know about every multi-letter grapheme used anywhere, including these consonant clusters — its `DIGRAPHS` list is checked **longest-first** (`schr` before `sch` before `ch`) so a word like "sch" isn't mis-split into s+c+h. If you add a new multi-letter grapheme to `sounds.json` that isn't already in that list, add it there too, or letter-by-letter playback will spell it out wrong before recovering on the final whole-word clip.
 
 Real audio is preferred over TTS everywhere a grapheme in this map is about to be spoken, automatically, no toggle needed:
 - Header: a `focus` grapheme with a clip becomes a 🔊 button next to the big letters.
@@ -45,6 +49,9 @@ Real audio is preferred over TTS everywhere a grapheme in this map is about to b
 - Quiz ("Welk woord hoor je?"): same rule, since quiz targets are drawn from the same word list.
 
 A grapheme/word missing from the map (real multi-letter words, mostly) falls back to TTS as before. If a clip 404s (e.g. on a machine without `assets/audio/klanken-nl/`), that lookup fails silently and TTS is used instead — no change needed when adding new lessons unless the new focus grapheme should also get a clip.
+
+## `l12.json` — "Alfabet" (capstone lesson)
+Not a scanned worksheet: a synthetic review lesson placed last (highest number) so it appears at the end of the tile list. Four `words` steps in academic order for groep 3 — klinkers (a e i o u) → lange klinkers (aa ee ie oo uu) → medeklinkers a-z (b…z) → bijzondere klanken (ch, ng, nk, sch, schr, ei/ij, eu, oe, ui, au/ou, uw) — each `group` is a single letter/grapheme (not a real word), so every tap plays straight from `sounds.json` with no TTS involved (100% coverage). The auto-generated 4th step ("Welk woord hoor je?") reviews the whole alphabet as a listening quiz.
 
 ## Known limitation
 Browser TTS cannot produce isolated phonemes (a lone `k` is read as the letter name "ka") — this is why `sounds.json` exists. For a grapheme not covered there, letter-by-letter mode falls back to a silent visual highlight (no mispronounced audio), then the whole word is spoken by TTS. Use `say` to tweak a whole word if the voice mispronounces it, or add the grapheme to `sounds.json` for a real-voice clip.
