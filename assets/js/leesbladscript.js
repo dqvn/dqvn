@@ -11,7 +11,7 @@
   const VOICE_KEY = 'nl_tts_voice_v1';       // shared with kids.html / vanstart.html (plain string)
   const RATES     = [0.35, 0.5, 0.75];
   const QUIZ_LEN  = 8;
-  const HAK_PAUSE_MS = 1000;   // pause between "letter voor letter" and the whole word
+  const HAK_PAUSE_MS = 800;   // pause between "letter voor letter" and the whole word
   // Longest-first: a 4-letter cluster must be tried before its 3/2-letter prefixes
   // (e.g. "schr" before "sch" before "ch"), or chunk() below would split it wrong.
   const DIGRAPHS  = ['schr', 'sch', 'aa', 'ee', 'oo', 'uu', 'ie', 'oe', 'eu', 'ui', 'ij', 'ou', 'au', 'ei', 'ch', 'ng', 'nk', 'uw'];
@@ -37,7 +37,7 @@
   let curAudioDone = null; // resolves the pending playClip() promise when cancelAll() cuts it short
   let cur     = -1;      // lesson index
   let stepIdx = 0;
-  let prefs   = Object.assign({ rate: 0.5, hak: true }, lsGet(PREF_KEY, {}));
+  let prefs   = Object.assign({ rate: 0.35, hak: true }, lsGet(PREF_KEY, {}));   // 0.35 = slowest (🐢), default for new users
   let prog    = lsGet(PROG_KEY, {});
   let runId   = 0;       // bumped on every new speech action → older async loops stop
   let activeBtn = null;  // play button currently showing "Stop"
@@ -230,8 +230,11 @@
   }
 
   // ── Word button ──────────────────────────────────────────────────
-  function wordEl(word) {
-    const focus = lesson().highlight === false ? [] : (lesson().focus || []);
+  // `focusOverride`, when given, replaces the lesson-wide `focus` list for
+  // this one word — used to highlight each column's own grapheme inside its
+  // example words (see `highlightFirstOfGroup` in renderWords()).
+  function wordEl(word, focusOverride) {
+    const focus = focusOverride || (lesson().highlight === false ? [] : (lesson().focus || []));
     const b = el('button', 'w');
     b.type = 'button';
     b.dataset.word = word;
@@ -264,7 +267,10 @@
     grid.dataset.cols = step.cols || 3;
     step.groups.forEach(g => {
       const col = el('div', 'col');
-      const words = g.map(wordEl);
+      // e.g. lesson 12 "Alfabet": g[0] is the grapheme itself — highlight it
+      // inside every example word in the same column, not just the tile.
+      const focusOverride = lesson().highlightFirstOfGroup ? [g[0]] : undefined;
+      const words = g.map(w => wordEl(w, focusOverride));
       const p = playBtn('▶', 'small');
       p.setAttribute('aria-label', 'Lees deze kolom');
       p.addEventListener('click', () => activeBtn === p ? cancelAll() : playSeq(words, p));

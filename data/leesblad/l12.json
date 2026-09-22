@@ -3,7 +3,7 @@
   "name": "Alfabet",
   "title": "Het Alfabet",
   "source": "Overzicht — alle klanken van het Nederlandse alfabet (groep 3)",
-  "highlight": false,
+  "highlightFirstOfGroup": true,
   "hints": {
     "a": "như \"a\" trong \"ba\"",
     "e": "\"ê\" ngắn, không kéo dài",
