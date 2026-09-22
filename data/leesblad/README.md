@@ -61,3 +61,6 @@ It also has a lesson-scoped **`hints`** map (`grapheme → short Vietnamese pron
 
 ## Known limitation
 Browser TTS cannot produce isolated phonemes (a lone `k` is read as the letter name "ka") — this is why `sounds.json` exists. For a grapheme not covered there, letter-by-letter mode falls back to a silent visual highlight (no mispronounced audio), then the whole word is spoken by TTS. Use `say` to tweak a whole word if the voice mispronounces it, or add the grapheme to `sounds.json` for a real-voice clip.
+
+## Deep-linking
+`leesblad.html?lesson=<id>` opens that lesson directly (skips the tile picker), matching a lesson's own `"id"` field — e.g. `?lesson=r`, `?lesson=alfabet`. Add `&step=<n>` (1-based, matching the stepper's own numbering: "1. Woorden", "2. Verhaal", … including the auto-generated last "Spel" step) to jump straight to that step, e.g. `?lesson=r&step=2` opens the story step of lesson "r". An unknown `lesson` id is ignored (falls back to the normal tile picker, no error). Same convention as the rest of the app (`kids.html`, `vanstart.html`, `verbs.html`, … all read `?lesson=`) — see `data/plan/nl_plan_v1.json`'s `"deeplink"` fields for how the portal already builds these for other tools; leesblad isn't wired into that plan file yet.
