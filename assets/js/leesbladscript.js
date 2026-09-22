@@ -100,6 +100,7 @@
   function utter(text, rate) {
     return new Promise(resolve => {
       if (!('speechSynthesis' in window)) { resolve(); return; }
+      window.speechSynthesis.resume();   // iOS/iPadOS sometimes leaves the engine "paused" after the tab/app was backgrounded
       const u = new SpeechSynthesisUtterance(text);
       u.lang = 'nl-NL'; u.rate = rate; u.pitch = 1.1; u.volume = 1;
       if (voice) u.voice = voice;
@@ -109,6 +110,36 @@
       u.onend = fin; u.onerror = fin;
       window.speechSynthesis.speak(u);
     });
+  }
+
+  // Queue a TTS utterance RIGHT NOW (synchronously, inside a user-gesture
+  // handler) but hold it paused — the browser doesn't actually voice it until
+  // .resume() is called. iOS/iPadOS Chrome (WKWebView — it's Safari's speech
+  // engine under the hood, not Chromium's) silently drops speechSynthesis
+  // .speak() calls made too long after the gesture that's supposed to permit
+  // them; a multi-second delay (e.g. 2-3 real-audio letter clips playing
+  // first) is well past that window, and it fails with NO error at all. By
+  // calling .speak() immediately — even though we won't let it be heard until
+  // later — the gesture requirement is satisfied up front.
+  function queueUtterance(text, rate) {
+    if (!('speechSynthesis' in window)) return { resume() {}, cancel() {}, done: Promise.resolve() };
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'nl-NL'; u.rate = rate; u.pitch = 1.1; u.volume = 1;
+    if (voice) u.voice = voice;
+    let settled = false, resolveDone;
+    const done = new Promise(res => { resolveDone = res; });
+    const fin = () => { if (settled) return; settled = true; clearTimeout(guard); resolveDone(); };
+    // Generous timeout: it may sit paused for a few seconds before resume() is called.
+    const guard = setTimeout(fin, 6000 + text.length * 250 / rate);
+    u.onend = fin; u.onerror = fin;
+    window.speechSynthesis.speak(u);
+    try { window.speechSynthesis.pause(); } catch {}
+    let resumed = false;
+    return {
+      resume() { if (resumed) return; resumed = true; try { window.speechSynthesis.resume(); } catch {} },
+      cancel: fin,   // give up waiting on it (cancelAll() superseded this run)
+      done,
+    };
   }
 
   const sayText = w => (lessons[cur] && lessons[cur].say && lessons[cur].say[w]) || w;
@@ -197,6 +228,13 @@
     const word = node.dataset.word;
     node.classList.add('speaking');
     const chunks = node.querySelectorAll('.ch');
+
+    // If the whole word will need TTS (no real clip covers it), queue that
+    // utterance right now — see queueUtterance()'s comment for why this has
+    // to happen before the letter-by-letter breakdown, not after it.
+    const wordFile = sounds[word];
+    const pendingTTS = wordFile ? null : queueUtterance(sayText(word), prefs.rate);
+
     if (hak && chunks.length > 1) {
       const ms = Math.min(700, Math.max(260, 220 / prefs.rate));
       for (const c of chunks) {
@@ -204,12 +242,13 @@
         const file = sounds[c.textContent];
         if (file) await playClip(file); else await wait(ms);
         c.classList.remove('on');
-        if (id !== runId) return false;
+        if (id !== runId) { pendingTTS?.cancel(); return false; }
       }
       await wait(HAK_PAUSE_MS);             // pause between spelling it out and the whole word
-      if (id !== runId) return false;
+      if (id !== runId) { pendingTTS?.cancel(); return false; }
     }
-    await speak(word, prefs.rate, id);      // whole word — or, for a bare-letter "word", its own clip
+    if (pendingTTS) { pendingTTS.resume(); await pendingTTS.done; }
+    else await speak(word, prefs.rate, id);   // bare-letter "word" — its own real clip (or TTS on the rare missing-file fallback)
     if (id !== runId) return false;
     node.classList.remove('speaking');
     node.classList.add('revealed');
@@ -553,6 +592,18 @@
       }
     }, 500);
     document.addEventListener('touchstart', () => { window.speechSynthesis.getVoices(); setTimeout(populateVoices, 200); }, { once: true });
+    // One-time "unlock": a silent utterance spoken directly on the very first
+    // tap anywhere. iOS/iPadOS's speech engine (used by Chrome there too — it
+    // rides on WebKit/Safari, not Chromium) is fussy about the very first
+    // speak() call of a page needing a real, fresh user gesture; once that's
+    // happened, later calls are more reliable even from async code.
+    document.addEventListener('touchstart', () => {
+      try {
+        const u = new SpeechSynthesisUtterance('');
+        u.volume = 0;
+        window.speechSynthesis.speak(u);
+      } catch {}
+    }, { once: true });
   }
 
   // ── Init: probe l01.json, l02.json … until 404 ───────────────────
