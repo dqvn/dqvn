@@ -4,37 +4,126 @@
   "title": "Het Alfabet",
   "source": "Overzicht — alle klanken van het Nederlandse alfabet (groep 3)",
   "highlight": false,
+  "hints": {
+    "a": "như \"a\" trong \"ba\"",
+    "e": "\"ê\" ngắn, không kéo dài",
+    "i": "\"i\" ngắn, không kéo dài",
+    "o": "\"o\" ngắn, tròn môi",
+    "u": "\"ư/ơ\" ngắn, không phải \"u\"",
+
+    "aa": "\"a\" kéo dài gấp đôi",
+    "ee": "\"ê\" kéo dài",
+    "ie": "\"i\" dài, giữ nguyên âm",
+    "oo": "\"ô\" kéo dài",
+    "uu": "môi tròn như \"uy\"",
+
+    "b": "như \"b\" tiếng Việt",
+    "c": "\"k\" hoặc \"s\", không phải \"ch\"",
+    "d": "như \"đ\" tiếng Việt",
+    "f": "như \"ph\" tiếng Việt",
+    "g": "gừ trong cổ họng",
+    "h": "bật hơi nhẹ như \"h\"",
+    "j": "như \"y\", không như J tiếng Anh",
+    "k": "như \"c/k\", bật hơi nhẹ",
+    "l": "như \"l\" tiếng Việt",
+    "m": "như \"m\" tiếng Việt",
+    "n": "như \"n\" tiếng Việt",
+    "p": "như \"p\", bật hơi nhẹ",
+    "q": "luôn đi với u, đọc \"kw\"",
+    "r": "rung ở cổ họng hoặc lưỡi",
+    "s": "\"s\" xì, không phải \"z\"",
+    "t": "như \"t\", bật hơi nhẹ",
+    "v": "giữa \"v\" và \"f\"",
+    "w": "môi lỏng, gần \"v\" nhẹ",
+    "x": "đọc thành \"ks\"",
+    "y": "nguyên âm \"i\" hoặc phụ âm \"y\"",
+    "z": "rung nhẹ, không phải \"s\"",
+
+    "ch": "gừ cổ họng",
+    "ng": "như \"ng\" trong \"ăng\"",
+    "nk": "\"n\" nhẹ đứng trước \"k\"",
+    "sch": "\"s\" nối liền âm \"ch\" gừ",
+    "schr": "\"s\"+\"ch\"+\"r\" đọc liền hơi",
+    "ei": "như \"ây\" ngắn",
+    "ij": "như \"ây\" ngắn (viết khác)",
+    "eu": "môi tròn, lưỡi ở vị trí \"ê\"",
+    "oe": "như \"u\" tiếng Việt",
+    "ui": "giống \"ơu\"",
+    "au": "như \"au\" trong \"sao\"",
+    "ou": "như \"au\" (viết khác)",
+    "uw": "\"uu\" ngắn, ở cuối từ"
+  },
   "steps": [
     {
       "type": "words",
       "title": "De klinkers",
       "cols": 5,
-      "groups": [["a"], ["e"], ["i"], ["o"], ["u"]]
+      "groups": [
+        ["a", "bal", "kat", "tas"],
+        ["e", "pen", "bed", "nek"],
+        ["i", "vis", "kip", "pin"],
+        ["o", "pot", "bos", "dop"],
+        ["u", "bus", "kus", "put"]
+      ]
     },
     {
       "type": "words",
       "title": "De lange klinkers",
       "cols": 5,
-      "groups": [["aa"], ["ee"], ["ie"], ["oo"], ["uu"]]
+      "groups": [
+        ["aa", "maan", "raam", "kaas"],
+        ["ee", "been", "veer", "zeep"],
+        ["ie", "fiets", "dier", "wiel"],
+        ["oo", "boom", "roos", "oog"],
+        ["uu", "uur", "vuur", "muur"]
+      ]
     },
     {
       "type": "words",
       "title": "De medeklinkers",
-      "cols": 7,
+      "cols": 3,
       "groups": [
-        ["b"], ["c"], ["d"], ["f"], ["g"], ["h"], ["j"],
-        ["k"], ["l"], ["m"], ["n"], ["p"], ["q"], ["r"],
-        ["s"], ["t"], ["v"], ["w"], ["x"], ["y"], ["z"]
+        ["b", "bal", "boom", "big"],
+        ["c", "camera", "cadeau", "circus"],
+        ["d", "das", "deur", "dak"],
+        ["f", "fiets", "fles", "foto"],
+        ["g", "geel", "gek", "goud"],
+        ["h", "huis", "hond", "hand"],
+        ["j", "jas", "jam", "juf"],
+        ["k", "kat", "kip", "kaas"],
+        ["l", "lamp", "leeuw", "lepel"],
+        ["m", "man", "maan", "muis"],
+        ["n", "neus", "nest", "nagel"],
+        ["p", "pen", "poes", "pop"],
+        ["q", "quiz", "quotum", "aquarium"],
+        ["r", "raam", "roos", "rik"],
+        ["s", "sok", "sla", "soep"],
+        ["t", "tas", "tak", "teen"],
+        ["v", "vis", "vuur", "vlag"],
+        ["w", "water", "weg", "wit"],
+        ["x", "taxi", "fax", "box"],
+        ["y", "yoghurt", "hobby", "systeem"],
+        ["z", "zon", "zee", "zout"]
       ]
     },
     {
       "type": "words",
       "title": "Bijzondere klanken",
-      "cols": 5,
+      "cols": 3,
       "groups": [
-        ["ch"], ["ng"], ["nk"], ["sch"], ["schr"],
-        ["ei"], ["ij"], ["eu"], ["oe"], ["ui"],
-        ["au"], ["ou"], ["uw"]
+        ["ch", "lach", "toch", "nacht"],
+        ["ng", "lang", "ring", "zingen"],
+        ["nk", "inkt", "bank", "drinken"],
+        ["sch", "schaap", "school", "schip"],
+        ["schr", "schrijven", "schrik", "schroef"],
+        ["ei", "klein", "trein", "geit"],
+        ["ij", "ijs", "tijd", "vrijdag"],
+        ["eu", "neus", "deur", "kleur"],
+        ["oe", "boek", "voet", "koe"],
+        ["ui", "huis", "tuin", "duim"],
+        ["au", "blauw", "gauw", "nauw"],
+        ["ou", "goud", "hout", "koud"],
+        ["uw", "duw", "ruw", "sluw"]
       ]
     }
   ]

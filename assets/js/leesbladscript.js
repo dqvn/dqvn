@@ -235,12 +235,18 @@
     const b = el('button', 'w');
     b.type = 'button';
     b.dataset.word = word;
-    chunk(word).forEach(c => b.append(el('span', 'ch' + (focus.includes(c) ? ' f' : ''), c)));
+    const chars = el('span', 'chars');
+    chunk(word).forEach(c => chars.append(el('span', 'ch' + (focus.includes(c) ? ' f' : ''), c)));
+    b.append(chars);
     if (pics[word]) {
       const p = el('span', 'pic', pics[word]);
       p.setAttribute('aria-hidden', 'true');
       b.append(p);
     }
+    // Optional per-grapheme pronunciation tip (e.g. lesson 12 "Alfabet" — hints
+    // written for Vietnamese speakers). Most lessons don't define `hints`.
+    const hint = lesson().hints && lesson().hints[word];
+    if (hint) { b.classList.add('has-hint'); b.append(el('div', 'hint', hint)); }
     b.addEventListener('click', () => readWord(b, startRun(), prefs.hak));
     return b;
   }
