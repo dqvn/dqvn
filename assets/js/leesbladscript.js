@@ -12,7 +12,9 @@
   const RATES     = [0.35, 0.5, 0.75];
   const QUIZ_LEN  = 8;
   const HAK_PAUSE_MS = 1000;   // pause between "letter voor letter" and the whole word
-  const DIGRAPHS  = ['aa', 'ee', 'oo', 'uu', 'ie', 'oe', 'eu', 'ui', 'ij', 'ou', 'au', 'ei'];
+  // Longest-first: a 4-letter cluster must be tried before its 3/2-letter prefixes
+  // (e.g. "schr" before "sch" before "ch"), or chunk() below would split it wrong.
+  const DIGRAPHS  = ['schr', 'sch', 'aa', 'ee', 'oo', 'uu', 'ie', 'oe', 'eu', 'ui', 'ij', 'ou', 'au', 'ei', 'ch', 'ng', 'nk', 'uw'];
   const STEP_META = { words: ['🔤', 'Woorden'], story: ['📖', 'Verhaal'], game: ['🎯', 'Spel'] };
 
   const $ = id => document.getElementById(id);
@@ -48,11 +50,13 @@
 
   // ── Text helpers ─────────────────────────────────────────────────
   // Split a word into graphemes so "kaas" → k · aa · s (the unit a child reads).
+  // DIGRAPHS is ordered longest-first, so "schr"/"sch" win over their shorter
+  // prefixes ("sch" before "ch") at the same position.
   function chunk(word) {
     const out = [];
     for (let i = 0; i < word.length;) {
-      const two = word.substr(i, 2);
-      if (DIGRAPHS.includes(two)) { out.push(two); i += 2; }
+      const hit = DIGRAPHS.find(d => word.startsWith(d, i));
+      if (hit) { out.push(hit); i += hit.length; }
       else { out.push(word[i]); i++; }
     }
     return out;

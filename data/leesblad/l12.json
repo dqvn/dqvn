@@ -1,0 +1,41 @@
+{
+  "id": "alfabet",
+  "name": "Alfabet",
+  "title": "Het Alfabet",
+  "source": "Overzicht — alle klanken van het Nederlandse alfabet (groep 3)",
+  "highlight": false,
+  "steps": [
+    {
+      "type": "words",
+      "title": "De klinkers",
+      "cols": 5,
+      "groups": [["a"], ["e"], ["i"], ["o"], ["u"]]
+    },
+    {
+      "type": "words",
+      "title": "De lange klinkers",
+      "cols": 5,
+      "groups": [["aa"], ["ee"], ["ie"], ["oo"], ["uu"]]
+    },
+    {
+      "type": "words",
+      "title": "De medeklinkers",
+      "cols": 7,
+      "groups": [
+        ["b"], ["c"], ["d"], ["f"], ["g"], ["h"], ["j"],
+        ["k"], ["l"], ["m"], ["n"], ["p"], ["q"], ["r"],
+        ["s"], ["t"], ["v"], ["w"], ["x"], ["y"], ["z"]
+      ]
+    },
+    {
+      "type": "words",
+      "title": "Bijzondere klanken",
+      "cols": 5,
+      "groups": [
+        ["ch"], ["ng"], ["nk"], ["sch"], ["schr"],
+        ["ei"], ["ij"], ["eu"], ["oe"], ["ui"],
+        ["au"], ["ou"], ["uw"]
+      ]
+    }
+  ]
+}
