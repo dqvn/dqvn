@@ -513,7 +513,7 @@
     applySpeed();
     utter('Hoi!', prefs.rate);   // audible feedback for the new speed
   });
-  if (!RATES.some(r => Math.abs(r - prefs.rate) < 0.01)) prefs.rate = 0.5;
+  if (!RATES.some(r => Math.abs(r - prefs.rate) < 0.01)) prefs.rate = 0.35;
   applySpeed();
 
   const settings = $('settings'), gear = $('btn-settings');
@@ -561,6 +561,19 @@
         lessons.push(await r.json());
       }
       renderHome();
+
+      // Deep-link: ?lesson=<id> (matches a lesson's own "id", e.g. "r", "alfabet")
+      // opens it directly instead of the tile picker; optional &step=<n> (1-based,
+      // as shown in the stepper: "1. Woorden" …) jumps straight to that step.
+      const p = new URLSearchParams(location.search);
+      const wantId = p.get('lesson');
+      if (wantId) {
+        const idx = lessons.findIndex(l => l.id === wantId);
+        if (idx !== -1) {
+          const stepNum = parseInt(p.get('step'), 10);
+          openLesson(idx, Number.isFinite(stepNum) ? Math.max(0, stepNum - 1) : 0);
+        }
+      }
     } catch (err) {
       $('tile-grid').textContent = 'Fout: ' + err.message;
     }
