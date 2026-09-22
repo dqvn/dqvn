@@ -1,9 +1,14 @@
 /* Leesblad – reading sheets for beginner readers (groep 2/3).
-   Colours come from themes.css variables so every portal theme works. */
+   Colours come from themes.css variables so every portal theme works.
+   Primary device: iPad, Chrome, portrait or landscape — a touch-first kids
+   app, not a desktop page with a mobile fallback. Every interactive control
+   is sized and hit-tested for a small child's finger, not a mouse pointer. */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-:root { --nav-h: 56px; --r: 18px; }
+:root { --nav-h: 56px; --r: 18px; --tap: 44px; }   /* --tap: Apple HIG minimum touch target */
+
+html { -webkit-text-size-adjust: 100%; }
 
 body {
   /* Andika: designed for beginner readers — single-storey a, clear g/q/y */
@@ -12,43 +17,56 @@ body {
   color: var(--text);
   min-height: 100dvh;
   -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: contain;   /* iPad rubber-band scroll stays inside the page, not the whole app */
 }
 
+/* Kids tap fast and repeatedly — every interactive control gets: no
+   double-tap-zoom or 300ms tap delay, no accidental text-selection or
+   long-press callout menu, no textbook mouse-cursor assumptions. */
+button, a, .tile, .w, .choice, .step-pill, .letter-snd, .line-say, .chip-btn {
+  touch-action: manipulation;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
 button { font: inherit; color: inherit; cursor: pointer; border: 0; background: none; }
 button:focus-visible, select:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 
 /* ── Top nav (colours per theme live in themes.css) ───────────── */
 #top-nav {
-  position: fixed; top: 0; left: 0; right: 0; height: var(--nav-h);
-  display: flex; align-items: center; gap: 12px; padding: 0 16px;
+  position: fixed; top: 0; left: 0; right: 0; height: calc(var(--nav-h) + env(safe-area-inset-top));
+  padding-top: env(safe-area-inset-top);
+  display: flex; align-items: center; gap: 12px;
+  padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right));
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
   z-index: 200;
 }
-.nav-back { text-decoration: none; font-size: 1.3rem; }
+.nav-back { text-decoration: none; font-size: 1.3rem; display: flex; align-items: center; justify-content: center; min-width: var(--tap); min-height: var(--tap); }
 .nav-title { flex: 1; text-align: center; font-weight: 700; font-size: 1.05rem; }
-.nav-btn { font-size: 1.3rem; padding: 6px 8px; border-radius: 10px; }
-.nav-btn:hover { background: var(--accent-glow); }
+.nav-btn { font-size: 1.3rem; min-width: var(--tap); min-height: var(--tap); display: flex; align-items: center; justify-content: center; border-radius: 12px; }
 
 /* ── Settings popover ─────────────────────────────────────────── */
 #settings {
-  position: fixed; top: calc(var(--nav-h) + 6px); right: 12px; width: min(300px, calc(100vw - 24px));
+  position: fixed; top: calc(var(--nav-h) + env(safe-area-inset-top) + 6px); right: max(12px, env(safe-area-inset-right));
+  width: min(320px, calc(100vw - 24px));
   background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
   box-shadow: var(--shadow-md); padding: 8px 14px; z-index: 210;
 }
 #settings[hidden] { display: none; }
-.set-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 0; font-size: .9rem; }
+.set-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 0; font-size: .95rem; min-height: var(--tap); }
 .set-row + .set-row { border-top: 1px solid var(--border-soft); }
-.set-row input[type=checkbox] { width: 22px; height: 22px; accent-color: var(--accent); }
+.set-row input[type=checkbox] { width: 26px; height: 26px; accent-color: var(--accent); }
 .set-col { flex-direction: column; align-items: stretch; }
-#tts-name { font-size: .78rem; color: var(--text-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#tts-name { font-size: .8rem; color: var(--text-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 #tts-voice-select {
-  width: 100%; padding: 8px; border-radius: 8px; border: 1px solid var(--border);
-  background: var(--surface-2); color: var(--text); font: inherit; font-size: .85rem;
+  width: 100%; padding: 10px; border-radius: 8px; border: 1px solid var(--border);
+  background: var(--surface-2); color: var(--text); font: inherit; font-size: .9rem; min-height: var(--tap);
 }
 
 /* ── Layout ───────────────────────────────────────────────────── */
-#app { max-width: 760px; margin: 0 auto; padding: calc(var(--nav-h) + 16px) 16px 40px; }
+#app { max-width: 760px; margin: 0 auto; padding: calc(var(--nav-h) + env(safe-area-inset-top) + 16px) 16px 24px; }
 .screen { display: none; }
 .screen.active { display: block; animation: lbFade .25s ease; }
 @keyframes lbFade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
@@ -59,19 +77,18 @@ button:focus-visible, select:focus-visible { outline: 3px solid var(--accent); o
 .loading { text-align: center; color: var(--text-3); padding: 40px 0; grid-column: 1 / -1; }
 
 /* ── Home tiles ───────────────────────────────────────────────── */
-.tile-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 14px; }
+.tile-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; }
 .tile {
   position: relative; display: flex; flex-direction: column; align-items: center; gap: 4px;
-  padding: 18px 8px 12px; border-radius: var(--r);
+  padding: 18px 8px 12px; border-radius: var(--r); min-height: 120px;
   background: var(--surface); border: 2px solid var(--border); box-shadow: var(--shadow-sm);
   transition: transform .15s, border-color .15s, box-shadow .15s;
 }
-.tile:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: var(--shadow); }
 .tile:active { transform: scale(.96); }
 .tile-letters { font-size: 3rem; font-weight: 700; line-height: 1.1; color: var(--accent); min-height: 3.4rem; display: flex; align-items: center; }
 .tile-letters.long { font-size: 2rem; }
-.tile-sub   { font-size: .75rem; color: var(--text-2); }
-.tile-stars { font-size: 1.1rem; letter-spacing: 2px; min-height: 1.4rem; }
+.tile-sub   { font-size: .8rem; color: var(--text-2); }
+.tile-stars { font-size: 1.2rem; letter-spacing: 2px; min-height: 1.5rem; }
 .star-on  { color: #f59e0b; }
 .star-off { color: var(--border); }
 .tile.done { border-color: var(--green); }
@@ -79,32 +96,31 @@ button:focus-visible, select:focus-visible { outline: 3px solid var(--accent); o
 
 /* ── Lesson header ────────────────────────────────────────────── */
 .lesson-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 14px; }
-.chip-btn { padding: 8px 14px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); font-size: .85rem; }
-.chip-btn:hover { border-color: var(--accent); }
-.big-letters { flex: 1; display: flex; justify-content: center; align-items: center; gap: .08em; font-size: 2.6rem; font-weight: 700; color: var(--accent); line-height: 1; }
+.chip-btn { padding: 8px 16px; min-height: var(--tap); border-radius: 999px; background: var(--surface); border: 1px solid var(--border); font-size: .9rem; }
+.big-letters { flex: 1; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: .08em; font-size: 2.6rem; font-weight: 700; color: var(--accent); line-height: 1; }
 .big-letters span { padding: 0 .05em; }
 .letter-snd {
-  padding: 0 .1em; border-radius: 10px; background: transparent;
+  min-width: var(--tap); min-height: var(--tap); padding: 0 .12em; border-radius: 10px; background: transparent;
+  display: inline-flex; align-items: center; justify-content: center;
   box-shadow: 0 0 0 2px transparent inset;
   transition: background .15s, box-shadow .15s, transform .1s;
 }
 .letter-snd::after { content: '🔊'; font-size: .35em; vertical-align: super; margin-left: 1px; opacity: .6; }
-.letter-snd:hover { background: var(--accent-glow); }
 .letter-snd:active { transform: scale(.92); }
 .letter-snd.on { background: var(--accent); color: #fff; box-shadow: none; }
 .letter-snd.unavailable { pointer-events: none; }
 .letter-snd.unavailable::after { display: none; }
 
 .speed { display: flex; gap: 4px; background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: 3px; }
-.speed button { font-size: 1.3rem; width: 40px; height: 40px; border-radius: 50%; }
+.speed button { font-size: 1.3rem; width: 46px; height: 46px; border-radius: 50%; }
 .speed button.on { background: var(--accent); box-shadow: 0 0 0 3px var(--accent-glow); }
 
 /* ── Stepper ──────────────────────────────────────────────────── */
 .stepper { display: flex; gap: 8px; justify-content: center; margin-bottom: 10px; }
 .step-pill {
-  flex: 1; max-width: 120px; padding: 8px 4px; border-radius: 14px;
+  flex: 1; max-width: 130px; min-height: var(--tap); padding: 8px 4px; border-radius: 14px;
   background: var(--surface); border: 2px solid var(--border);
-  display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: .7rem; color: var(--text-2);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; font-size: .72rem; color: var(--text-2);
 }
 .step-pill .ico { font-size: 1.4rem; }
 .step-pill.active { border-color: var(--accent); background: var(--accent-glow); color: var(--text); font-weight: 700; }
@@ -114,19 +130,18 @@ button:focus-visible, select:focus-visible { outline: 3px solid var(--accent); o
 /* ── Word blocks (mirror the paper: rows of vertical columns) ─── */
 .block-tools { display: flex; justify-content: center; margin-bottom: 12px; }
 .play-btn {
-  padding: 10px 22px; border-radius: 999px; background: var(--accent); color: #fff;
+  padding: 10px 22px; min-height: var(--tap); border-radius: 999px; background: var(--accent); color: #fff;
   font-weight: 700; box-shadow: var(--shadow-sm);
 }
-.play-btn:hover { background: var(--accent-h); }
 .play-btn.stop { background: var(--red); }
-.play-btn.small { padding: 4px 12px; font-size: .8rem; box-shadow: none; }
+.play-btn.small { padding: 6px 14px; min-height: 38px; font-size: .85rem; box-shadow: none; }
 
 /* minmax(0,1fr), not plain 1fr — otherwise a column's intrinsic content
    width (e.g. long pronunciation-hint text) can force the grid wider than
    its container instead of wrapping, pushing right-hand columns off-screen. */
 .cols { display: grid; grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr)); gap: 14px 10px; }
 .col {
-  display: flex; flex-direction: column; align-items: stretch; gap: 8px;
+  display: flex; flex-direction: column; align-items: stretch; gap: 10px;
   background: var(--surface); border: 2px solid var(--border-soft); border-radius: var(--r);
   padding: 10px 8px; box-shadow: var(--shadow-xs);
 }
@@ -134,13 +149,12 @@ button:focus-visible, select:focus-visible { outline: 3px solid var(--accent); o
 
 .w {
   position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 0;
-  min-height: 56px; padding: 6px 10px; border-radius: 14px; width: 100%;
+  min-height: 58px; padding: 8px 10px; border-radius: 14px; width: 100%;
   background: var(--surface-2); border: 2px solid transparent;
   font-size: 2rem; font-weight: 400; letter-spacing: .04em; line-height: 1.1;
   overflow-wrap: anywhere; text-align: center;   /* long single words (e.g. "aquarium") wrap instead of overflowing narrow columns */
   transition: transform .12s, background .15s, border-color .15s;
 }
-.w:hover { border-color: var(--border); }
 .w:active { transform: scale(.94); }
 .w .chars { display: inline-flex; align-items: center; justify-content: center; flex-wrap: wrap; row-gap: 2px; }
 .w .ch.f { color: var(--accent); font-weight: 700; }
@@ -166,10 +180,9 @@ button:focus-visible, select:focus-visible { outline: 3px solid var(--accent); o
 .line { display: flex; align-items: center; gap: 10px; padding: 6px 4px; border-radius: 12px; flex-wrap: wrap; }
 .line.speaking { background: var(--accent-glow); }
 .line-say {
-  flex: none; width: 40px; height: 40px; border-radius: 50%; font-size: 1.1rem;
+  flex: none; width: 46px; height: 46px; border-radius: 50%; font-size: 1.2rem;
   background: var(--surface-2); border: 1px solid var(--border);
 }
-.line-say:hover { border-color: var(--accent); }
 .line .words { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 4px; }
 .line .w { font-size: 1.7rem; min-height: 48px; padding: 4px 8px; }
 .line .punct { font-size: 1.7rem; margin-left: -4px; margin-right: 6px; color: var(--text-2); }
@@ -186,11 +199,10 @@ button:focus-visible, select:focus-visible { outline: 3px solid var(--accent); o
 .quiz-q { color: var(--text-2); }
 .choices { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; width: 100%; }
 .choice {
-  padding: 22px 6px; border-radius: var(--r); font-size: 2rem; letter-spacing: .04em;
+  padding: 22px 6px; min-height: 84px; border-radius: var(--r); font-size: 2rem; letter-spacing: .04em;
   background: var(--surface); border: 3px solid var(--border); box-shadow: var(--shadow-sm);
   transition: transform .12s, border-color .15s, background .15s;
 }
-.choice:hover { border-color: var(--accent); }
 .choice.right { border-color: var(--green); background: color-mix(in srgb, var(--green) 18%, var(--surface)); }
 .choice.wrong { border-color: var(--red);   background: color-mix(in srgb, var(--red) 15%, var(--surface)); animation: lbShake .35s; }
 .choice[disabled] { pointer-events: none; }
@@ -202,14 +214,32 @@ button:focus-visible, select:focus-visible { outline: 3px solid var(--accent); o
 .result p { color: var(--text-2); }
 .result .btn-row { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 8px; }
 
-/* ── Bottom nav ───────────────────────────────────────────────── */
-.lesson-nav { display: flex; gap: 12px; margin-top: 24px; }
+/* ── Bottom nav — sticky, so it stays reachable without scrolling back
+   down through a long step (e.g. 21-letter medeklinkers grid). ────── */
+.lesson-nav {
+  display: flex; gap: 12px; margin-top: 24px;
+  position: sticky; bottom: 0; z-index: 40;
+  background: var(--bg);
+  padding-top: 10px; padding-bottom: calc(14px + env(safe-area-inset-bottom));
+  box-shadow: 0 -8px 16px -10px rgba(0,0,0,.18);
+}
 .nav-big {
-  flex: 1; padding: 14px; border-radius: 16px; font-weight: 700; font-size: 1rem;
+  flex: 1; padding: 14px; min-height: 52px; border-radius: 16px; font-weight: 700; font-size: 1rem;
   background: var(--surface); border: 2px solid var(--border);
 }
 .nav-big.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
 .nav-big[disabled] { opacity: .35; pointer-events: none; }
+
+/* Hover styling only where a real pointer is present — otherwise iPad's
+   Safari/Chrome can leave a :hover look "stuck" on a tile after a tap. */
+@media (hover: hover) and (pointer: fine) {
+  .nav-btn:hover, .chip-btn:hover { background: var(--accent-glow); border-color: var(--accent); }
+  .tile:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: var(--shadow); }
+  .letter-snd:hover, .line-say:hover { border-color: var(--accent); background: var(--accent-glow); }
+  .play-btn:hover { background: var(--accent-h); }
+  .w:hover { border-color: var(--border); }
+  .choice:hover { border-color: var(--accent); }
+}
 
 @media (max-width: 560px) {
   #app { padding-left: 10px; padding-right: 10px; }
@@ -219,8 +249,45 @@ button:focus-visible, select:focus-visible { outline: 3px solid var(--accent); o
   .line .w { font-size: 1.4rem; }
   .cols[data-cols="4"] .w { font-size: 1.25rem; padding: 4px 3px; }
   .big-letters { font-size: 2rem; }
-  .choice { font-size: 1.5rem; padding: 18px 4px; }
-  .speed button { width: 36px; height: 36px; font-size: 1.1rem; }
+  .choice { font-size: 1.5rem; padding: 18px 4px; min-height: 70px; }
+  .speed button { width: 40px; height: 40px; font-size: 1.1rem; }
+}
+
+/* ── Tablet & up — iPad (portrait ~768-834px, landscape ~1024-1366px)
+   is the primary device: use the extra room for bigger, easier-to-hit
+   targets, not just wider margins. ─────────────────────────────────── */
+@media (min-width: 700px) {
+  #app { max-width: 980px; }
+  .hero h1 { font-size: 2.5rem; }
+  .hero p { font-size: 1.05rem; }
+  .tile-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+  .tile { padding: 22px 10px 16px; min-height: 140px; }
+  .tile-letters { font-size: 3.8rem; min-height: 4.2rem; }
+  .tile-sub { font-size: .85rem; }
+  .tile-stars { font-size: 1.4rem; }
+  .big-letters { font-size: 3.2rem; }
+  .letter-snd { min-width: 52px; min-height: 52px; }
+  .step-pill { max-width: 160px; padding: 10px 6px; font-size: .8rem; }
+  .step-pill .ico { font-size: 1.7rem; }
+  .step-title { font-size: 1.35rem; margin: 8px 0 18px; }
+  .cols { gap: 20px 16px; }
+  .col { padding: 14px 10px; gap: 12px; }
+  .w { font-size: 2.3rem; min-height: 70px; }
+  .w .hint { font-size: .72rem; }
+  .line .w { font-size: 2rem; min-height: 58px; }
+  .scene { font-size: 3.6rem; }
+  .quiz-hear { width: 140px; height: 140px; font-size: 4rem; }
+  .quiz-q, .quiz-count { font-size: 1rem; }
+  .choice { font-size: 2.4rem; padding: 28px 10px; min-height: 100px; }
+  .nav-big { padding: 18px; font-size: 1.2rem; min-height: 58px; }
+  .chip-btn { font-size: 1rem; padding: 10px 18px; }
+  .speed button { width: 50px; height: 50px; font-size: 1.5rem; }
+  .line-say { width: 50px; height: 50px; font-size: 1.3rem; }
+}
+
+@media (min-width: 1000px) {
+  #app { max-width: 1140px; }
+  .tile-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
 }
 
 @media (prefers-reduced-motion: reduce) {

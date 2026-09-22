@@ -37,6 +37,8 @@ letter/klank taught so far — see its own note near the bottom of this file.
 ## `pics.json`
 Shared `word → emoji` map. The emoji pops up on a word *after* the child has tapped/heard it (hint, not spoiler). Only add concrete nouns whose emoji is unambiguous; leave names and nonsense words out.
 
+144 of the 282 unique words across l01–l12 are covered (checked programmatically — diff the unique word list against this map's keys). The other 138 are deliberately uncovered, not missed: single-letter/digraph grapheme labels ("a", "sch", …), Dutch character names used in the story steps (rik, saar, kees, koos, kim, sem, sep, sim, ben, kris, pim), function words/abstract adjectives with no unambiguous single emoji (is, de, een, maar, klein, lang, vaak, …), and invented CVC reading-practice syllables with no dictionary meaning (mik, kik, sis, prak, spraak, …). When adding a new lesson, only add an emoji for a real concrete word that isn't already obviously covered by this policy.
+
 ## `sounds.json`
 `grapheme → local mp3 filename` (files live in `assets/audio/klanken-nl/`, gitignored — see that folder's own README, which lists every clip). Covers **all 26 letters of the alphabet** plus the long vowels/tweeklanken (aa, ee, oo, uu, ie) and special clusters (ch/g, ng, nk, sch, schr, ei/ij, eu, oe, ui, au/ou, uw). `kn` and `wr` were intentionally removed (fall back to TTS).
 
