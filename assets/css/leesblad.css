@@ -95,7 +95,7 @@ button:focus-visible, select:focus-visible { outline: 3px solid var(--accent); o
 .tile.done::after { content: '✓'; position: absolute; top: 8px; right: 12px; color: var(--green); font-weight: 700; font-size: 1.1rem; }
 
 /* ── Lesson header ────────────────────────────────────────────── */
-.lesson-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 14px; }
+.lesson-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
 .chip-btn { padding: 8px 16px; min-height: var(--tap); border-radius: 999px; background: var(--surface); border: 1px solid var(--border); font-size: .9rem; }
 .big-letters { flex: 1; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: .08em; font-size: 2.6rem; font-weight: 700; color: var(--accent); line-height: 1; }
 .big-letters span { padding: 0 .05em; }
@@ -116,16 +116,19 @@ button:focus-visible, select:focus-visible { outline: 3px solid var(--accent); o
 .speed button.on { background: var(--accent); box-shadow: 0 0 0 3px var(--accent-glow); }
 
 /* ── Stepper ──────────────────────────────────────────────────── */
-.stepper { display: flex; gap: 8px; justify-content: center; margin-bottom: 10px; }
+/* Icon + label sit side by side, not stacked — a single compact row instead
+   of a tall block, so the header leaves more of the screen to the lesson
+   itself. Still ≥ --tap tall for a comfortable thumb target. */
+.stepper { display: flex; gap: 6px; justify-content: center; margin-bottom: 6px; }
 .step-pill {
-  flex: 1; max-width: 130px; min-height: var(--tap); padding: 8px 4px; border-radius: 14px;
+  flex: 1; max-width: 140px; min-height: var(--tap); padding: 6px 8px; border-radius: 12px;
   background: var(--surface); border: 2px solid var(--border);
-  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; font-size: .72rem; color: var(--text-2);
+  display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 5px; font-size: .7rem; color: var(--text-2);
 }
-.step-pill .ico { font-size: 1.4rem; }
+.step-pill .ico { font-size: 1.05rem; line-height: 1; }
 .step-pill.active { border-color: var(--accent); background: var(--accent-glow); color: var(--text); font-weight: 700; }
 .step-pill.seen:not(.active) { border-color: var(--green); }
-.step-title { text-align: center; font-size: 1.15rem; margin: 6px 0 14px; color: var(--text); }
+.step-title { text-align: center; font-size: 1rem; font-weight: 600; margin: 0 0 8px; color: var(--text-2); }
 
 /* ── Word blocks (mirror the paper: rows of vertical columns) ─── */
 .block-tools { display: flex; justify-content: center; margin-bottom: 12px; }
@@ -268,9 +271,9 @@ button:focus-visible, select:focus-visible { outline: 3px solid var(--accent); o
   .tile-stars { font-size: 1.4rem; }
   .big-letters { font-size: 3.2rem; }
   .letter-snd { min-width: 52px; min-height: 52px; }
-  .step-pill { max-width: 160px; padding: 10px 6px; font-size: .8rem; }
-  .step-pill .ico { font-size: 1.7rem; }
-  .step-title { font-size: 1.35rem; margin: 8px 0 18px; }
+  .step-pill { max-width: 180px; padding: 8px 10px; font-size: .85rem; }
+  .step-pill .ico { font-size: 1.25rem; }
+  .step-title { font-size: 1.1rem; margin: 0 0 10px; }
   .cols { gap: 20px 16px; }
   .col { padding: 14px 10px; gap: 12px; }
   .w { font-size: 2.3rem; min-height: 70px; }
