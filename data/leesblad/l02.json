@@ -4,12 +4,12 @@
   "title": "Leesblad 2",
   "source": "Leesblad bij VLL Zoem Start – 2",
   "focus": ["i", "k", "m", "s"],
-  "highlight": false,
   "steps": [
     {
       "type": "words",
       "title": "Lees de woorden",
       "cols": 4,
+      "columnFocus": ["i", "k", "m", "s"],
       "groups": [
         ["i", "is", "sis"],
         ["k", "ik", "mik"],
@@ -21,6 +21,7 @@
       "type": "words",
       "title": "Lees nog een keer",
       "cols": 4,
+      "columnFocus": ["i", "k", "m", "s"],
       "groups": [
         ["is", "mis", "mik"],
         ["ik", "kik", "kim"],

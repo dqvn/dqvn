@@ -265,11 +265,16 @@
     const grid = el('div', 'cols');
     grid.style.setProperty('--cols', step.cols || 3);
     grid.dataset.cols = step.cols || 3;
-    step.groups.forEach(g => {
+    step.groups.forEach((g, gi) => {
       const col = el('div', 'col');
-      // e.g. lesson 12 "Alfabet": g[0] is the grapheme itself — highlight it
-      // inside every example word in the same column, not just the tile.
-      const focusOverride = lesson().highlightFirstOfGroup ? [g[0]] : undefined;
+      // Which grapheme to highlight in every word of this one column:
+      // - step.columnFocus[gi]: explicit per-column letter (e.g. lesson 1/2 —
+      //   column 1 is always "i", column 2 "k", column 3 "m", even though not
+      //   every word in that column literally starts with the bare letter).
+      // - lesson.highlightFirstOfGroup: use the column's own first item, e.g.
+      //   lesson 12 "Alfabet" where g[0] IS the grapheme being reviewed.
+      const focusOverride = step.columnFocus ? [step.columnFocus[gi]]
+                          : lesson().highlightFirstOfGroup ? [g[0]] : undefined;
       const words = g.map(w => wordEl(w, focusOverride));
       const p = playBtn('▶', 'small');
       p.setAttribute('aria-label', 'Lees deze kolom');
