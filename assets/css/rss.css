@@ -555,6 +555,37 @@ body {
     font-size: .8rem;
 }
 
+/* ── 🔤 Spel button (assets/js/rss-spell.js) ─────────────────────
+   Same per-grapheme highlight look as vanstart.html/startnl.html's
+   .vs-ch/.vs-speaking (assets/css/vanstart.css) — duplicated here since
+   rss.html doesn't load that stylesheet. */
+.wp-btn.spelling {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+    animation: wpSpellPulse 1s ease-in-out infinite;
+}
+@keyframes wpSpellPulse {
+    0%, 100% { box-shadow: 0 0 0 0 var(--accent-glow); }
+    50%      { box-shadow: 0 0 0 5px transparent; }
+}
+.wp-word .vs-ch {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 0 1px;
+    transition: background .12s, color .12s;
+}
+.wp-word .vs-ch.on {
+    background: var(--accent);
+    color: #fff;
+}
+.wp-word.vs-speaking {
+    background: var(--accent-glow);
+    border-radius: 6px;
+    padding: 0 4px;
+    margin: 0 -4px;
+}
+
 .art-desc {
     font-size: calc(var(--art-fs) * .9);
     line-height: 1.65;

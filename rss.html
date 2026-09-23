@@ -73,6 +73,7 @@
     <div class="wp-trans" id="wp-trans"></div>
     <div class="wp-btns">
       <button class="wp-btn" onclick="wordSpeak()">🔊 Horen</button>
+      <button class="wp-btn" id="wp-spell-btn" onclick="wordSpell()">🔤 Spel</button>
       <button class="wp-btn" id="wp-copy-btn" onclick="wordCopy()">📋 Kopiëren</button>
       <button class="wp-btn wp-btn-close" onclick="closeWordPopup()">✕</button>
     </div>
@@ -80,6 +81,10 @@
 
   <script src="assets/js/sync.js"></script>
   <script src="assets/js/rss.js" defer></script>
+  <!-- Reads rss.js's _wpWord (both are plain classic scripts sharing one
+       global scope, same as sync.js's SYNC_WORKER_URL used by rss.js) — load
+       after it, and after `defer` finishes, so _wpWord/DOM exist either way. -->
+  <script src="assets/js/rss-spell.js" defer></script>
   <script>
   window._syncPageTools = [
     { id:'refresh', icon:'↺',  label:'Vernieuwen',      fn: function(){ refreshFeed();       } },
