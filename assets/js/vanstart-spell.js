@@ -51,11 +51,20 @@
   const wait = ms => new Promise(r => setTimeout(r, ms));
 
   let runId = 0;
-  async function spellWord(word, btn) {
+  async function spellWord(word, btn, wordSpan) {
     const id = ++runId;
     if (window.speechSynthesis) window.speechSynthesis.cancel();
     document.querySelectorAll('.spell-btn.spelling').forEach(b => b.classList.remove('spelling'));
+    document.querySelectorAll('.dutch-word.vs-speaking').forEach(w => w.classList.remove('vs-speaking'));
     btn.classList.add('spelling');
+
+    // While spelling, the word span shows just the part being spelled out
+    // (see spellSource below), split into one <span class="vs-ch"> per
+    // grapheme so each one can be highlighted in turn — then restored to its
+    // normal full text (article/plural and all) once done, however this run
+    // ends (finished, cancelled, or superseded by a new tap).
+    const originalHTML = wordSpan ? wordSpan.innerHTML : null;
+    const restore = () => { if (wordSpan && originalHTML !== null) wordSpan.innerHTML = originalHTML; };
 
     const sounds = await loadSounds();
     if (id !== runId) return;
@@ -76,18 +85,38 @@
     // "de kat" gets a small natural pause where the space is); lowercase to
     // match sounds.json's keys.
     const letters = spellSource.toLowerCase().replace(/[^a-zà-ÿ ]/g, '');
-    for (const g of chunk(letters)) {
-      if (id !== runId) return;
-      const file = sounds[g];
+    const graphemes = chunk(letters);
+
+    const chSpans = [];
+    if (wordSpan) {
+      wordSpan.innerHTML = '';
+      graphemes.forEach(g => {
+        const span = document.createElement('span');
+        span.className = 'vs-ch';
+        span.textContent = g;
+        wordSpan.appendChild(span);
+        chSpans.push(span);
+      });
+    }
+
+    for (let i = 0; i < graphemes.length; i++) {
+      if (id !== runId) { restore(); return; }
+      const span = chSpans[i];
+      span?.classList.add('on');
+      const file = sounds[graphemes[i]];
       if (file) await playClip(file);
       else await wait(260);   // no clip for this grapheme (e.g. a space) — small beat instead
-      if (id !== runId) return;
+      span?.classList.remove('on');
+      if (id !== runId) { restore(); return; }
     }
     await wait(450);   // short pause between the spelled-out letters and the whole word
-    if (id !== runId) return;
+    if (id !== runId) { restore(); return; }
 
+    wordSpan?.classList.add('vs-speaking');
     if (typeof speakTextAsync === 'function') await speakTextAsync(word);
     else if (typeof speakText === 'function') speakText(word);
+    wordSpan?.classList.remove('vs-speaking');
+    restore();
     if (id === runId) btn.classList.remove('spelling');
   }
 
@@ -108,7 +137,7 @@
       btn.setAttribute('aria-label', 'Spel dit woord letter voor letter');
       btn.addEventListener('click', e => {
         e.stopPropagation();   // don't also trigger the cell's own speakText() click
-        spellWord(word, btn);
+        spellWord(word, btn, wordSpan);
       });
 
       // The Dutch <td> is a flex column on mobile (card layout) — a plain
