@@ -172,6 +172,11 @@
   </script>
 
   <script src="assets/js/common.js"></script>
+  <!-- Must load before ttsvanstartscript.js: it wraps reloadTable(), and
+       initPage() (called by ttsvanstartscript.js) captures reloadTable as its
+       callback for the page's first lesson load — needs the wrapped version
+       already in place, or the very first render would miss the 🔤 buttons. -->
+  <script src="assets/js/vanstart-spell.js"></script>
   <script src="assets/js/ttsvanstartscript.js"></script>
   <script src="assets/js/game.js"></script>
   <script src="assets/js/flashcard.js"></script>
