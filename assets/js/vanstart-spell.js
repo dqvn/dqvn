@@ -1,20 +1,21 @@
 'use strict';
 
-/* VanStart-only add-on: a small 🔤 button before each Dutch word plays it
- * letter-by-letter with the same real-voice mp3 clips used in leesblad.html
- * (data/leesblad/sounds.json + assets/audio/klanken-nl/), then reads the
- * whole word via the page's own TTS (speakTextAsync, same voice/rate/volume
- * as everything else here).
+/* Shared by vanstart.html and startnl.html: a small 🔤 button before each
+ * Dutch word plays it letter-by-letter with the same real-voice mp3 clips
+ * used in leesblad.html (data/leesblad/sounds.json + assets/audio/klanken-nl/),
+ * then reads the whole word via the page's own TTS (speakTextAsync, same
+ * voice/rate/volume as everything else on that page).
  *
  * Isolated on purpose: this file only wraps reloadTable() and only touches
- * DOM it creates itself — common.js and startnl.html (which also loads
- * common.js) are completely untouched, so the existing click-to-hear
- * behaviour on the Dutch cell keeps working exactly as before.
+ * DOM it creates itself — common.js itself is never edited, so any OTHER
+ * page that reuses reloadTable() but doesn't explicitly load this script
+ * keeps its existing click-to-hear behaviour exactly as before, unchanged.
  *
- * Script order matters: this must load AFTER common.js (needs reloadTable)
- * but BEFORE ttsvanstartscript.js (whose initPage() call captures whichever
- * reloadTable is current at that moment as its callback for the page's very
- * first lesson load).
+ * Script order matters on every page that includes this: it must load AFTER
+ * common.js (needs reloadTable) but BEFORE that page's own init script
+ * (ttsvanstartscript.js on vanstart.html, ttsscript.js on startnl.html) —
+ * that script's initPage() call captures whichever reloadTable is current
+ * at that moment as its callback for the page's very first lesson load.
  */
 (function () {
   const SND_BASE = 'assets/audio/klanken-nl/';

@@ -170,6 +170,13 @@
   </script>
 
   <script src="assets/js/common.js"></script>
+  <!-- Must load before ttsscript.js: it wraps reloadTable(), and initPage()
+       (called by ttsscript.js) captures reloadTable as its callback for the
+       page's first lesson load — needs the wrapped version already in place,
+       or the very first render would miss the 🔤 buttons. Same add-on as
+       vanstart.html; assets/css/vanstart.css is already shared by this page
+       so no CSS change is needed here. -->
+  <script src="assets/js/vanstart-spell.js"></script>
   <script src="assets/js/ttsscript.js"></script>
   <script src="assets/js/game.js"></script>
   <script src="assets/js/flashcard.js"></script>
