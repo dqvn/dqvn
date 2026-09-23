@@ -881,3 +881,15 @@ th {
 @media (max-width: 768px) {
   .spell-btn { width: 26px; height: 26px; margin-right: 6px; }
 }
+
+/* Per-grapheme highlight while spelling, + whole-word highlight while the
+   final TTS reads it — mirrors leesblad.html's .ch.on / .w.speaking. */
+.vs-ch {
+  display: inline-block; border-radius: 4px; padding: 0 1px;
+  transition: background .12s, color .12s;
+}
+.vs-ch.on { background: var(--accent, #ea580c); color: #fff; }
+.dutch-word.vs-speaking {
+  background: var(--accent-glow, rgba(234,88,12,.15));
+  border-radius: 6px; padding: 0 4px; margin: 0 -4px;
+}
