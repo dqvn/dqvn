@@ -60,10 +60,22 @@
     const sounds = await loadSounds();
     if (id !== runId) return;
 
+    // Skip spelling out a leading article ("de "/"het ") and any "- plural"
+    // or ", plural" variant tacked on after it — many vocab entries store
+    // both forms together, e.g. "de computer - computers" or "de foto,
+    // foto's". A beginner sounding a word out letter-by-letter needs just
+    // the one base word, not the article or the second form too. The full
+    // word (article, plural and all) is still spoken normally at the end,
+    // via speakTextAsync(word) below — only the letter-by-letter clip
+    // breakdown is trimmed down to the single base word.
+    const spellSource = word
+      .replace(/^\s*(de|het)\s+/i, '')
+      .split(/\s*[-,]\s*/)[0];
+
     // Keep letters and spaces only (so a multi-word "dutch" entry like
     // "de kat" gets a small natural pause where the space is); lowercase to
     // match sounds.json's keys.
-    const letters = word.toLowerCase().replace(/[^a-zà-ÿ ]/g, '');
+    const letters = spellSource.toLowerCase().replace(/[^a-zà-ÿ ]/g, '');
     for (const g of chunk(letters)) {
       if (id !== runId) return;
       const file = sounds[g];
