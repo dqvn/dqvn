@@ -97,18 +97,56 @@
   }
 
   // Resolves when the utterance ends (or errors/cancels/times out) — never rejects.
+  //
+  // The speech engine sometimes gets stuck (typically after a run of mp3 clips):
+  // speak() queues the utterance but it never starts, so the word stays silent
+  // until something calls cancel() — which is why pressing a column ▶ button
+  // "fixed" it. So: if the utterance hasn't started within START_TIMEOUT_MS,
+  // reset the engine ourselves and speak it again (once).
+  const START_TIMEOUT_MS = 1200;
+  let curUtter = null;   // strong ref — Chrome can GC an in-flight utterance and then never fire onend
   function utter(text, rate) {
     return new Promise(resolve => {
       if (!('speechSynthesis' in window)) { resolve(); return; }
-      window.speechSynthesis.resume();   // iOS/iPadOS sometimes leaves the engine "paused" after the tab/app was backgrounded
-      const u = new SpeechSynthesisUtterance(text);
-      u.lang = 'nl-NL'; u.rate = rate; u.pitch = 1.1; u.volume = 1;
-      if (voice) u.voice = voice;
-      let done = false;
-      const fin = () => { if (done) return; done = true; clearTimeout(guard); resolve(); };
-      const guard = setTimeout(fin, 3000 + text.length * 250 / rate);   // some engines never fire onend
-      u.onend = fin; u.onerror = fin;
-      window.speechSynthesis.speak(u);
+      const ss = window.speechSynthesis;
+      let done = false, started = false, guard = null, startTimer = null, retried = false, u = null;
+      const myRun = runId;
+      const goLater = () => setTimeout(() => {   // speak() right after cancel() is dropped on some engines
+        if (done) return;
+        if (runId !== myRun) { fin(); return; }   // cancelAll() happened meanwhile — don't speak stale text
+        go();
+      }, 80);
+      const fin = () => {
+        if (done) return; done = true;
+        lastTtsAt = Date.now();
+        clearTimeout(guard); clearTimeout(startTimer);
+        if (curUtter === u) curUtter = null;
+        resolve();
+      };
+      const go = () => {
+        u = new SpeechSynthesisUtterance(text);
+        u.lang = 'nl-NL'; u.rate = rate; u.pitch = 1.1; u.volume = 1;
+        if (voice) u.voice = voice;
+        u.onstart = () => { started = true; clearTimeout(startTimer); };
+        u.onend = fin; u.onerror = fin;
+        curUtter = u;
+        ss.resume();   // iOS/iPadOS sometimes leaves the engine "paused" after the tab/app was backgrounded
+        ss.speak(u);
+        clearTimeout(startTimer);
+        startTimer = setTimeout(() => {
+          if (done || started) return;
+          if (retried) { fin(); return; }
+          retried = true;
+          u.onstart = u.onend = u.onerror = null;   // detach so the cancel below doesn't resolve us
+          ss.cancel();
+          goLater();
+        }, START_TIMEOUT_MS);
+      };
+      guard = setTimeout(fin, START_TIMEOUT_MS * 2 + 3000 + text.length * 250 / rate);   // some engines never fire onend
+      if (ss.speaking || ss.pending) {   // stale/stuck queue — clear it first
+        ss.cancel();
+        goLater();
+      } else go();
     });
   }
 
@@ -117,7 +155,11 @@
   // Stop everything that is playing and clear all highlights.
   function cancelAll() {
     runId++;
-    if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+    if ('speechSynthesis' in window) {
+      const ss = window.speechSynthesis;
+      if (ss.speaking || ss.pending) lastTtsAt = Date.now();
+      ss.cancel();
+    }
     if (curAudio) { curAudio.pause(); if (curAudioDone) curAudioDone(false); curAudio = null; curAudioDone = null; }
     document.querySelectorAll('.speaking').forEach(n => n.classList.remove('speaking'));
     document.querySelectorAll('.ch.on').forEach(n => n.classList.remove('on'));
@@ -129,7 +171,46 @@
   // Low-level: play one local mp3 clip to completion. Resolves true if it
   // played, false if it errored (e.g. missing file) or was cut short by
   // cancelAll(). Never rejects — callers just fall back to TTS on false.
-  function playClip(file) {
+  // Why the first clip after a tap could come out very quiet (sometimes):
+  //  1. TTS "ducking" — while speechSynthesis is speaking (or was just
+  //     cancelled / just finished) the OS turns other audio down and only
+  //     fades it back up a moment later. A clip started in that window plays
+  //     ducked. → wait out TTS_SETTLE_MS after the last TTS activity.
+  //  2. Idle output device (esp. Bluetooth) wakes up with a fade-in, which
+  //     swallows most of a short grapheme clip. Later clips are fine because
+  //     the device is awake by then. → keep a silent Web Audio stream running
+  //     while clips are in use so the output never goes idle mid-lesson.
+  const TTS_SETTLE_MS = 350;
+  const WARM_IDLE_MS  = 15000;   // stop the silent keep-alive after this long without a clip
+  let lastTtsAt = 0;
+  let warmCtx = null, warmTimer = null;
+  function warmOutput() {
+    try {
+      if (!warmCtx) {
+        const AC = window.AudioContext || window.webkitAudioContext;
+        if (!AC) return;
+        warmCtx = new AC();
+        const g = warmCtx.createGain();
+        g.gain.value = 0.0001;             // inaudible, but non-zero so nothing treats it as silence
+        const o = warmCtx.createOscillator();
+        o.frequency.value = 30;
+        o.connect(g).connect(warmCtx.destination);
+        o.start();
+      }
+      if (warmCtx.state === 'suspended') warmCtx.resume();
+      clearTimeout(warmTimer);
+      warmTimer = setTimeout(() => { if (warmCtx) warmCtx.suspend(); }, WARM_IDLE_MS);
+    } catch {}
+  }
+
+  async function playClip(file) {
+    warmOutput();
+    const settle = lastTtsAt + TTS_SETTLE_MS - Date.now();
+    if (settle > 0) {
+      const id = runId;
+      await wait(settle);
+      if (id !== runId) return false;      // cancelled while settling
+    }
     return new Promise(resolve => {
       const a = new Audio(SND_BASE + file);
       a.volume = 1;   // max — same ceiling as the TTS utterances below
@@ -564,6 +645,7 @@
         const u = new SpeechSynthesisUtterance('');
         u.volume = 0;
         window.speechSynthesis.speak(u);
+        lastTtsAt = Date.now();            // the unlock utterance can duck the first clip too
       } catch {}
     }, { once: true });
   }
