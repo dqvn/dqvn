@@ -1724,7 +1724,7 @@ initStatTips();
           <div class="fba-card-hd">
             <span>${typeIcon} <b>${item.type}</b></span>
             <span class="fba-time">${_relTime(item.ts)}
-              <button class="fba-del" data-id="${_e(item.id || '')}" title="Verwijderen / Delete" aria-label="Verwijderen">🗑</button>
+              <button class="fba-del" data-id="${_e(item.id || '')}" title="Dit bericht verwijderen / Delete this message" aria-label="Verwijderen">🗑 Verwijder</button>
             </span>
           </div>
           <p class="fba-msg">${item.message.replace(/</g, '&lt;')}</p>
