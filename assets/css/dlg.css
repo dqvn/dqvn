@@ -1403,3 +1403,11 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
   #title-meta { flex-wrap: wrap; }
   #roles-grid { flex-wrap: wrap; }
 }
+
+/* Search: transcript match snippet under the dialogue name */
+.dlg-snip {
+  font-size: .7rem; line-height: 1.35; margin-top: 3px; color: rgba(255,255,255,.55);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.dlg-snip mark { background: rgba(255,200,60,.35); color: #fff; border-radius: 2px; padding: 0 1px; }
+.dlg-item.active .dlg-snip { color: rgba(255,255,255,.85); }

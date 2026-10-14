@@ -229,13 +229,49 @@ searchClear.addEventListener('click', () => {
     searchInput.focus();
     renderSidebar(dialogues);
 });
+/* Lower-case + strip accents so "cafe" finds "café" and "oke" finds "oké" */
+const fold = s => String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+/* First conversation line (Dutch text or English translation) containing the query */
+function findLineMatch(d, q) {
+    if (!d.conversation || !q) return null;
+    const nq = fold(q);
+    for (const line of d.conversation) {
+        if (fold(line.text).includes(nq))        return { text: line.text,        raw: line.text };
+        if (fold(line.translation).includes(nq)) return { text: line.translation, raw: line.translation };
+    }
+    return null;
+}
+
 function filterDialogues(query) {
     if (!query) return dialogues;
-    const q = query.toLowerCase();
+    const q = fold(query);
     return dialogues.filter(d =>
-        d.id.toLowerCase().includes(q) ||
-        d.dialogue_title.toLowerCase().includes(q)
+        fold(d.id).includes(q) ||
+        fold(d.dialogue_title).includes(q) ||
+        !!findLineMatch(d, query)       // also search the conversation transcript
     );
+}
+
+/* Short snippet around the match, with the match highlighted (escaped HTML) */
+function matchSnippet(d, query) {
+    const q = (query || '').trim();
+    if (!q || fold(d.id).includes(fold(q)) || fold(d.dialogue_title).includes(fold(q))) return '';
+    const m = findLineMatch(d, q);
+    if (!m) return '';
+    const folded = fold(m.text);
+    // fold() can change length (accents), so only highlight when positions line up
+    const i = folded.length === m.text.length ? folded.indexOf(fold(q)) : -1;
+    let html;
+    if (i < 0) {
+        html = esc(m.text.length > 70 ? m.text.slice(0, 70) + '…' : m.text);
+    } else {
+        const start = Math.max(0, i - 25), end = Math.min(m.text.length, i + q.length + 35);
+        html = (start > 0 ? '…' : '') + esc(m.text.slice(start, i)) +
+               '<mark>' + esc(m.text.slice(i, i + q.length)) + '</mark>' +
+               esc(m.text.slice(i + q.length, end)) + (end < m.text.length ? '…' : '');
+    }
+    return `<div class="dlg-snip">${html}</div>`;
 }
 
 /* ════════════════════════════════════════════════════
@@ -549,6 +585,7 @@ function renderSidebar(list) {
                 <span class="dlg-name">${esc(d.dialogue_title)}</span>
                 ${badge}
               </div>
+              ${matchSnippet(d, searchInput.value)}
             </div>`;
     }).join('');
     el.querySelectorAll('.dlg-item').forEach(item =>
