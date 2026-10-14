@@ -547,7 +547,7 @@ body.yt-panel-open #content {
 #vol-slider::-moz-range-thumb:hover     { transform: scale(1.25); }
 
 /* Conversation font size driven by CSS variable */
-#conv-list { --fs: .92rem; }
+#conv-list { --fs: 1.15rem; }
 .c-text { font-size: var(--fs) !important; }
 
 .badge {
@@ -680,7 +680,7 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
 .c-body { flex: 1; min-width: 0; }
 .c-text  { font-size: .92rem; font-weight: 500; line-height: 1.5; cursor: pointer; transition: color .15s; }
 .c-text:hover { color: var(--acc); }
-.c-trans { font-size: .75rem; color: var(--sec); font-style: italic; margin-top: 2px; }
+.c-trans { font-size: calc(var(--fs, .92rem) * .8); color: var(--sec); font-style: italic; margin-top: 2px; }
 
 /* Inline click-to-listen wave — hidden until .playing */
 .c-wave { display: none; gap: 2px; align-items: center; height: 12px; margin-top: 5px; }

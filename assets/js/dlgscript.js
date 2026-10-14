@@ -10,7 +10,8 @@ function roleColor(key) {
 
 /* ─── Runtime state ─── */
 let dialogues = [], current = null, myRole = null, soloMode = false;
-let ttsSpeed = 0.88, lastTTSLine = -1, convFontSize = 0.92, ttsVolume = 1;
+const DEFAULT_FONT = 1.15;   // rem — conversation text size until the user picks their own
+let ttsSpeed = 0.88, lastTTSLine = -1, convFontSize = DEFAULT_FONT, ttsVolume = 1;
 const tts = { active: false, line: 0, waitUser: false };
 
 /* ─── Utility ─── */
@@ -48,7 +49,7 @@ const STORE = {
 
 /* Save current UI state (called after any meaningful change) */
 function applyFontSize(size) {
-    convFontSize = Math.min(1.4, Math.max(0.72, size));
+    convFontSize = Math.min(1.6, Math.max(0.72, size));
     document.getElementById('conv-list').style.setProperty('--fs', convFontSize + 'rem');
 }
 
@@ -174,7 +175,6 @@ async function loadSession() {
         );
     }
 
-    if (s.fontSize) applyFontSize(s.fontSize);
     if (s.volume != null) applyVolume(s.volume);
 
     if (s.soloMode) {
@@ -1275,8 +1275,12 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeReport(
     document.getElementById('mob-wake-btn').addEventListener('click', () => WAKE.toggle());
     const savedWake = STORE.get().wakeLock;
     WAKE.init(savedWake !== false);   // default ON unless explicitly saved as false
-    document.getElementById('fs-down').addEventListener('click', () => { applyFontSize(convFontSize - 0.08); saveSession(); });
-    document.getElementById('fs-up').addEventListener('click',   () => { applyFontSize(convFontSize + 0.08); saveSession(); });
+    // A/A± buttons: remember the size as the user's own choice (fontCustom) so it survives reloads
+    const setFont = size => { applyFontSize(size); STORE.patch({ fontCustom: true }); saveSession(); };
+    document.getElementById('fs-down').addEventListener('click', () => setFont(convFontSize - 0.08));
+    document.getElementById('fs-up').addEventListener('click',   () => setFont(convFontSize + 0.08));
+    // Apply the saved size (or the bigger default) before any dialogue renders
+    { const st = STORE.get(); applyFontSize(st.fontCustom && st.fontSize ? st.fontSize : DEFAULT_FONT); }
 
     const volSlider = document.getElementById('vol-slider');
     volSlider.addEventListener('input', () => {
