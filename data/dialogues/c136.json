@@ -1,0 +1,20 @@
+{
+  "dialogue_title": "Waarom Stopte De Bus Niet?!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/mUon_oOFVcw",
+  "roles": {
+    "A": "Passagier",
+    "B": "Voorbijganger"
+  },
+  "conversation": [
+    {"role": "A", "text": "Pardon? Weet u waarom die bus niet stopte?", "translation": "Excuse me? Do you know why that bus didn't stop?"},
+    {"role": "B", "text": "Stond u hier op de bus te wachten?", "translation": "Were you waiting for the bus here?"},
+    {"role": "A", "text": "Ja, ik stond hier al 10 minuten.", "translation": "Yes, I've been standing here for 10 minutes."},
+    {"role": "B", "text": "Heeft u uw hand opgestoken?", "translation": "Did you raise your hand?"},
+    {"role": "A", "text": "Mijn hand? Nee. Moest dat dan?", "translation": "My hand? No. Was I supposed to?"},
+    {"role": "B", "text": "Ja, bij deze halte moet u aangeven dat u mee wilt.", "translation": "Yes, at this stop you have to signal that you want to get on."},
+    {"role": "A", "text": "Oh nee, dat wist ik niet.", "translation": "Oh no, I didn't know that."},
+    {"role": "B", "text": "Geen zorgen. De volgende bus komt over 5 minuten.", "translation": "Don't worry. The next bus comes in 5 minutes."},
+    {"role": "A", "text": "Oké, deze keer steek ik twee handen op.", "translation": "Okay, this time I'll raise both hands."}
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "dialogue_title": "U Mag Niet Naar Binnen!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/zKn3sqXg5_o",
+  "roles": {
+    "A": "Bewoner",
+    "B": "Agent"
+  },
+  "conversation": [
+    {"role": "A", "text": "Pardon? Waarom staat hier politie?", "translation": "Excuse me? Why are the police here?"},
+    {"role": "B", "text": "Woont u in dit gebouw?", "translation": "Do you live in this building?"},
+    {"role": "A", "text": "Ja, op de derde verdieping.", "translation": "Yes, on the third floor."},
+    {"role": "B", "text": "Dan moet u helaas even buiten blijven.", "translation": "Then unfortunately you'll have to stay outside for a while."},
+    {"role": "A", "text": "Wat? Waarom? Is er iets gebeurd?", "translation": "What? Why? Has something happened?"},
+    {"role": "B", "text": "Iemand heeft een sterke gaslucht gemeld.", "translation": "Someone reported a strong smell of gas."},
+    {"role": "A", "text": "Een gaslucht? Is het gevaarlijk?", "translation": "A smell of gas? Is it dangerous?"},
+    {"role": "B", "text": "Dat weten we nog niet. De brandweer controleert het gebouw.", "translation": "We don't know yet. The fire brigade is checking the building."},
+    {"role": "A", "text": "Hoe lang moet ik hier wachten?", "translation": "How long do I have to wait here?"},
+    {"role": "B", "text": "Waarschijnlijk maar een paar minuten.", "translation": "Probably only a few minutes."},
+    {"role": "A", "text": "Oké, dan blijf ik liever hier.", "translation": "Okay, then I'd rather stay here."}
+  ]
+}

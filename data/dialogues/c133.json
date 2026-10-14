@@ -1,0 +1,23 @@
+{
+  "dialogue_title": "Ik Kan Het Niet Lezen!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/LEOJeOw602U",
+  "roles": {
+    "A": "Opticien",
+    "B": "Klant"
+  },
+  "conversation": [
+    {"role": "A", "text": "Goedemiddag. Waarmee kan ik u helpen?", "translation": "Good afternoon. How can I help you?"},
+    {"role": "B", "text": "Ik zie de laatste tijd niet zo goed.", "translation": "I haven't been seeing very well lately."},
+    {"role": "A", "text": "Heeft u vooral moeite met dichtbij of veraf kijken?", "translation": "Do you mainly have trouble looking at things up close or far away?"},
+    {"role": "B", "text": "Vooral veraf. Straatnamen kan ik bijna niet meer lezen.", "translation": "Mainly far away. I can hardly read street names anymore."},
+    {"role": "A", "text": "Dan gaan we even uw ogen testen.", "translation": "Then let's test your eyes."},
+    {"role": "B", "text": "Oké. Wat moet ik doen?", "translation": "Okay. What do I have to do?"},
+    {"role": "A", "text": "Kunt u de letters op de onderste regel lezen?", "translation": "Can you read the letters on the bottom line?"},
+    {"role": "B", "text": "Eh, een P of is het een F?", "translation": "Uh, a P, or is it an F?"},
+    {"role": "A", "text": "Geen probleem. Probeer deze glazen.", "translation": "No problem. Try these lenses."},
+    {"role": "B", "text": "Oh wauw, nu kan ik alles lezen.", "translation": "Oh wow, now I can read everything."},
+    {"role": "A", "text": "Dan heeft u waarschijnlijk een bril nodig.", "translation": "Then you probably need glasses."},
+    {"role": "B", "text": "Nou, dan wil ik wel een mooie.", "translation": "Well, then I'd like a nice pair."}
+  ]
+}

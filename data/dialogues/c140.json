@@ -1,0 +1,20 @@
+{
+  "dialogue_title": "Heeft U Deze Jurk Een Maat Groter?",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/Mq_foqLmqyQ",
+  "roles": {
+    "A": "Klant",
+    "B": "Verkoopster"
+  },
+  "conversation": [
+    {"role": "A", "text": "Pardon? Heeft u deze jurk ook een maat groter?", "translation": "Excuse me? Do you have this dress in a bigger size too?"},
+    {"role": "B", "text": "Welke maat zoekt u?", "translation": "Which size are you looking for?"},
+    {"role": "A", "text": "Maat M, alstublieft.", "translation": "Size M, please."},
+    {"role": "B", "text": "Een momentje. Ja, hier is maat M.", "translation": "One moment. Yes, here is size M."},
+    {"role": "A", "text": "Dank u. Mag ik hem passen?", "translation": "Thank you. May I try it on?"},
+    {"role": "B", "text": "Natuurlijk. De paskamers zijn daar.", "translation": "Of course. The fitting rooms are over there."},
+    {"role": "A", "text": "Deze zit veel beter. Wat kost hij?", "translation": "This one fits much better. How much is it?"},
+    {"role": "B", "text": "Hij is vandaag in de aanbieding: €40.", "translation": "It's on special offer today: €40."},
+    {"role": "A", "text": "Perfect. Dan neem ik hem.", "translation": "Perfect. Then I'll take it."}
+  ]
+}

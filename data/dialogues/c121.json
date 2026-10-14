@@ -1,0 +1,27 @@
+{
+  "dialogue_title": "Ik Heb Pasfoto’s Nodig!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/DedeTjHopnA",
+  "roles": {
+    "A": "Fotograaf",
+    "B": "Klant"
+  },
+  "conversation": [
+    {"role": "A", "text": "Goedemiddag. Kan ik u helpen?", "translation": "Good afternoon. Can I help you?"},
+    {"role": "B", "text": "Ja, graag. Ik heb pasfoto’s nodig.", "translation": "Yes, please. I need passport photos."},
+    {"role": "A", "text": "Natuurlijk. Waar heeft u de foto’s voor nodig?", "translation": "Of course. What do you need the photos for?"},
+    {"role": "B", "text": "Voor mijn nieuwe identiteitskaart.", "translation": "For my new ID card."},
+    {"role": "A", "text": "Prima, dan moeten de foto’s aan de officiële eisen voldoen.", "translation": "Fine, then the photos have to meet the official requirements."},
+    {"role": "B", "text": "Kan ik de foto’s hier laten maken?", "translation": "Can I have the photos taken here?"},
+    {"role": "A", "text": "Jazeker, dat duurt maar een paar minuten.", "translation": "Certainly, it only takes a few minutes."},
+    {"role": "B", "text": "Hoeveel foto’s krijg ik?", "translation": "How many photos do I get?"},
+    {"role": "A", "text": "U krijgt zes pasfoto’s.", "translation": "You get six passport photos."},
+    {"role": "B", "text": "En hoeveel kost het?", "translation": "And how much does it cost?"},
+    {"role": "A", "text": "€15.", "translation": "€15."},
+    {"role": "B", "text": "Moet ik mijn bril afzetten?", "translation": "Do I have to take off my glasses?"},
+    {"role": "A", "text": "Ja, dat is het beste. En kijk straks recht in de camera.", "translation": "Yes, that's best. And look straight into the camera in a moment."},
+    {"role": "B", "text": "Mag ik lachen?", "translation": "May I smile?"},
+    {"role": "A", "text": "Een klein beetje, maar houd je gezicht zo neutraal mogelijk.", "translation": "A tiny bit, but keep your face as neutral as possible."},
+    {"role": "B", "text": "Oké, dat wordt moeilijk.", "translation": "Okay, that's going to be difficult."}
+  ]
+}

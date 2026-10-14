@@ -1,0 +1,23 @@
+{
+  "dialogue_title": "Welke Zonnebrand Heb Ik Nodig?",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/PA28zkO7A0k",
+  "roles": {
+    "A": "Apotheker",
+    "B": "Klant"
+  },
+  "conversation": [
+    {"role": "A", "text": "Goedemiddag. Kan ik u helpen?", "translation": "Good afternoon. Can I help you?"},
+    {"role": "B", "text": "Ja, graag. Ik zoek zonnebrandcreme.", "translation": "Yes, please. I'm looking for sunscreen."},
+    {"role": "A", "text": "Natuurlijk. Gaat u op vakantie?", "translation": "Of course. Are you going on holiday?"},
+    {"role": "B", "text": "Ja, volgende week ga ik naar Spanje.", "translation": "Yes, next week I'm going to Spain."},
+    {"role": "A", "text": "Verbrandt uw huid snel in de zon?", "translation": "Does your skin burn quickly in the sun?"},
+    {"role": "B", "text": "Ja, behoorlijk snel. Ik heb een lichte huid.", "translation": "Yes, quite quickly. I have fair skin."},
+    {"role": "A", "text": "Dan raad ik factor 50 aan.", "translation": "Then I recommend factor 50."},
+    {"role": "B", "text": "Is factor 30 niet genoeg?", "translation": "Isn't factor 30 enough?"},
+    {"role": "A", "text": "Voor uw huid zou ik factor 50 kiezen.", "translation": "For your skin I would choose factor 50."},
+    {"role": "B", "text": "Oké. Hoe vaak moet ik het gebruiken?", "translation": "Okay. How often should I use it?"},
+    {"role": "A", "text": "Smeer u regelmatig opnieuw in, vooral na het zwemmen.", "translation": "Reapply it regularly, especially after swimming."},
+    {"role": "B", "text": "Goed om te weten. Dan neem ik deze.", "translation": "Good to know. Then I'll take this one."}
+  ]
+}

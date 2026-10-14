@@ -1,0 +1,25 @@
+{
+  "dialogue_title": "Ik Heb Een Taart Besteld!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/pDdVARX3k6s",
+  "roles": {
+    "A": "Bakker",
+    "B": "Klant"
+  },
+  "conversation": [
+    {"role": "A", "text": "Goedemiddag. Kan ik u helpen?", "translation": "Good afternoon. Can I help you?"},
+    {"role": "B", "text": "Ja, ik kom mijn taart ophalen.", "translation": "Yes, I've come to pick up my cake."},
+    {"role": "A", "text": "Natuurlijk. Op welke naam staat de bestelling?", "translation": "Of course. What name is the order under?"},
+    {"role": "B", "text": "Op naam van Sofie de Vries.", "translation": "Under the name Sofie de Vries."},
+    {"role": "A", "text": "Een momentje. Ik zie hier geen bestelling op die naam.", "translation": "One moment. I don't see an order under that name here."},
+    {"role": "B", "text": "Echt niet? Ik heb de taart drie dagen geleden besteld.", "translation": "Really not? I ordered the cake three days ago."},
+    {"role": "A", "text": "Weet u zeker dat u hem voor vandaag heeft besteld?", "translation": "Are you sure you ordered it for today?"},
+    {"role": "B", "text": "Ja, mijn moeder is vanavond jarig.", "translation": "Yes, it's my mother's birthday tonight."},
+    {"role": "A", "text": "Hm. Heeft u misschien een bestelnummer?", "translation": "Hm. Do you happen to have an order number?"},
+    {"role": "B", "text": "Ja, wacht even. Hier staat het op mijn telefoon.", "translation": "Yes, hold on. It's here on my phone."},
+    {"role": "A", "text": "Oh, ik zie het al. De bestelling staat op uw voornaam.", "translation": "Oh, I see it now. The order is under your first name."},
+    {"role": "B", "text": "Dus de taart is er wel?", "translation": "So the cake is here after all?"},
+    {"role": "A", "text": "Jazeker, hij staat in de koelkast.", "translation": "Certainly, it's in the fridge."},
+    {"role": "B", "text": "Oh, gelukkig. Ik dacht even dat ik zonder taart naar huis moest.", "translation": "Oh, thank goodness. For a moment I thought I'd have to go home without a cake."}
+  ]
+}

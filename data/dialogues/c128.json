@@ -1,0 +1,25 @@
+{
+  "dialogue_title": "Heeft U Deze Een Maat Groter?",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/0ymCTkllta4",
+  "roles": {
+    "A": "Verkoper",
+    "B": "Klant"
+  },
+  "conversation": [
+    {"role": "A", "text": "Goedemiddag. Kan ik u helpen?", "translation": "Good afternoon. Can I help you?"},
+    {"role": "B", "text": "Ja, ik wil deze schoenen graag passen.", "translation": "Yes, I'd like to try on these shoes."},
+    {"role": "A", "text": "Natuurlijk. Welke maat heeft u?", "translation": "Of course. What size are you?"},
+    {"role": "B", "text": "Meestal maat 38.", "translation": "Usually size 38."},
+    {"role": "A", "text": "Alsjeblieft, probeer deze maar.", "translation": "Here you go, try these."},
+    {"role": "B", "text": "Hm. Ze zitten een beetje strak.", "translation": "Hm. They're a bit tight."},
+    {"role": "A", "text": "Wilt u een maat groter proberen?", "translation": "Would you like to try a size bigger?"},
+    {"role": "B", "text": "Ja, graag. Heeft u maat 39?", "translation": "Yes, please. Do you have size 39?"},
+    {"role": "A", "text": "Even kijken. Ja, die hebben we nog.", "translation": "Let me see. Yes, we still have those."},
+    {"role": "B", "text": "Oh, deze zitten veel beter.", "translation": "Oh, these fit much better."},
+    {"role": "A", "text": "Wilt u ze hebben?", "translation": "Would you like to have them?"},
+    {"role": "B", "text": "Ja. Wat kosten ze?", "translation": "Yes. How much are they?"},
+    {"role": "A", "text": "Ze kosten €69.", "translation": "They cost €69."},
+    {"role": "B", "text": "Prima, dan neem ik ze.", "translation": "Great, then I'll take them."}
+  ]
+}
