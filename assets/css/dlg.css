@@ -1309,3 +1309,53 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
 /* Celebration box text */
 [data-theme="dark"] .cel-title { color: var(--txt); }
 [data-theme="dark"] .cel-sub   { color: var(--sec); }
+
+/* ── Report an issue ── */
+.conv-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.rep-btn {
+  border: 1px solid var(--bdr); background: transparent; color: var(--sec);
+  border-radius: 50px; padding: 4px 11px; font-size: .72rem; font-weight: 600; cursor: pointer;
+  white-space: nowrap; transition: all .15s;
+}
+.rep-btn:hover { border-color: var(--acc); color: var(--acc); }
+.c-flag {
+  align-self: flex-start; flex-shrink: 0; border: none; background: transparent;
+  color: var(--sec); font-size: .85rem; line-height: 1; padding: 4px 6px; border-radius: 6px;
+  cursor: pointer; opacity: .35; transition: opacity .15s, color .15s;
+}
+.c-line:hover .c-flag, .c-flag:focus-visible { opacity: 1; }
+.c-flag:hover { color: var(--acc); }
+.c-line.is-flagged { border-color: #e53e3e; box-shadow: 0 0 0 3px rgba(229,62,62,.15); }
+
+#rep-overlay {
+  position: fixed; inset: 0; z-index: 600; display: none; align-items: center; justify-content: center;
+  padding: 16px; background: rgba(0,0,0,.45);
+}
+#rep-overlay.open { display: flex; }
+.rep-box {
+  width: min(420px, 100%); background: var(--card); color: var(--txt); border-radius: var(--r14);
+  padding: 16px; box-shadow: 0 10px 40px rgba(0,0,0,.35); display: flex; flex-direction: column; gap: 12px;
+}
+.rep-hd { display: flex; align-items: center; justify-content: space-between; }
+.rep-hd button { border: none; background: transparent; color: var(--sec); font-size: 1rem; cursor: pointer; }
+#rep-ctx {
+  font-size: .8rem; line-height: 1.5; background: var(--bg); border-radius: var(--r7);
+  padding: 8px 10px; max-height: 120px; overflow: auto;
+}
+#rep-ctx em { color: var(--sec); }
+#rep-cats { display: flex; flex-wrap: wrap; gap: 6px; }
+.rep-cat {
+  border: 1px solid var(--bdr); background: transparent; color: var(--txt);
+  border-radius: 50px; padding: 5px 11px; font-size: .75rem; cursor: pointer;
+}
+.rep-cat.on { background: var(--acc); border-color: var(--acc); color: #fff; }
+#rep-note {
+  width: 100%; resize: vertical; font: inherit; font-size: .85rem; color: var(--txt);
+  background: var(--card); border: 1px solid var(--bdr); border-radius: var(--r7); padding: 8px 10px;
+}
+#rep-send {
+  border: none; background: var(--acc); color: #fff; border-radius: var(--r10);
+  padding: 10px; font-size: .88rem; font-weight: 700; cursor: pointer;
+}
+#rep-send:disabled { opacity: .6; cursor: default; }
+[data-theme="dark"] #rep-ctx { background: rgba(255,255,255,.06); }

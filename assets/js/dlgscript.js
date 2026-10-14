@@ -705,6 +705,7 @@ function renderConv(activeLine = -1, doneUpTo = -1) {
         return `<div class="${cls}" id="cl-${i}">
           <div class="c-badge" style="background:${color}" title="${esc(current.roles[line.role] || line.role)}">${esc(line.role)}</div>
           <div class="c-body">${body}</div>
+          <button class="c-flag" data-line="${i}" title="Fout melden in deze regel / Report this line" aria-label="Fout melden">⚑</button>
         </div>`;
     }).join('');
 }
@@ -1064,6 +1065,89 @@ const WAKE = (() => {
 /* ════════════════════════════════════════════════════
    INIT
    ════════════════════════════════════════════════════ */
+/* ════════════════════════════════════════════════════
+   REPORT AN ISSUE  (anonymous → worker POST /feedback, type "bug")
+   The admin sees it in the portal feedback inbox with a link back here.
+   ════════════════════════════════════════════════════ */
+const REPORT_URL = 'https://nl-sync.itho.workers.dev/feedback';
+const REPORT_KEY = 'nl_dlg_report_last';
+const REPORT_GAP = 5 * 60 * 1000;   // mirrors the worker's per-IP rate limit
+let reportLine = -1;                // -1 = whole dialogue
+
+function openReport(line) {
+    if (!current) return;
+    reportLine = line;
+    const ln = current.conversation[line];
+    document.getElementById('rep-ctx').innerHTML = ln
+        ? `<b>${esc(current.id)} · regel ${line + 1} · ${esc(ln.role)}</b><br>${esc(ln.text)}<br><em>${esc(ln.translation)}</em>`
+        : `<b>${esc(current.id)}</b> · ${esc(current.dialogue_title)} (hele dialoog / rollen)`;
+    document.getElementById('rep-note').value = '';
+    document.querySelectorAll('.rep-cat').forEach(b => b.classList.toggle('on', b.dataset.cat === (ln ? 'Tekst' : 'Rol')));
+    const send = document.getElementById('rep-send');
+    send.disabled = false; send.textContent = 'Verstuur →';
+    const ov = document.getElementById('rep-overlay');
+    ov.classList.add('open'); ov.removeAttribute('aria-hidden');
+    setTimeout(() => document.getElementById('rep-note').focus(), 80);
+}
+
+function closeReport() {
+    const ov = document.getElementById('rep-overlay');
+    ov.classList.remove('open'); ov.setAttribute('aria-hidden', 'true');
+}
+
+async function sendReport() {
+    if (!current) return;
+    let last = 0;
+    try { last = parseInt(localStorage.getItem(REPORT_KEY) || '0', 10); } catch {}
+    if (Date.now() - last < REPORT_GAP) { showToast('Wacht even — je kunt eenmaal per 5 minuten een melding sturen.'); return; }
+
+    const cat   = document.querySelector('.rep-cat.on')?.dataset.cat || 'Anders';
+    const note  = document.getElementById('rep-note').value.trim();
+    const ln    = current.conversation[reportLine];
+    const where = ln ? `${current.id} · regel ${reportLine + 1} · ${ln.role}` : `${current.id} · hele dialoog`;
+    const message = [`[${where}] ${cat}${note ? ': ' + note : ''}`,
+                     ln ? `NL: ${ln.text}` : '', ln ? `EN: ${ln.translation}` : '']
+                    .filter(Boolean).join('\n').slice(0, 500);
+    const q = `?id=${encodeURIComponent(current.id)}` + (ln ? `&line=${reportLine}` : '');
+
+    const btn = document.getElementById('rep-send');
+    btn.disabled = true; btn.textContent = '⏳';
+    try {
+        const r = await fetch(REPORT_URL, {
+            method:  'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body:    JSON.stringify({ type: 'bug', message, env: {
+                url:     location.pathname + q,
+                browser: (navigator.userAgent || '').slice(0, 80),
+                screen:  `${screen.width}×${screen.height}`,
+                lang:    navigator.language || '',
+            } }),
+        });
+        if (!r.ok) throw new Error((await r.json().catch(() => ({}))).error || `HTTP ${r.status}`);
+        try { localStorage.setItem(REPORT_KEY, String(Date.now())); } catch {}
+        closeReport();
+        showToast('✅ Bedankt! Je melding is verstuurd.');
+    } catch (e) {
+        btn.disabled = false; btn.textContent = 'Verstuur →';
+        showToast('Kon melding niet versturen: ' + e.message, 5000);
+    }
+}
+
+document.getElementById('rep-btn').addEventListener('click', () => openReport(-1));
+document.getElementById('conv-list').addEventListener('click', e => {
+    const f = e.target.closest('.c-flag');
+    if (f) openReport(parseInt(f.dataset.line, 10));
+});
+document.getElementById('rep-cats').addEventListener('click', e => {
+    const b = e.target.closest('.rep-cat');
+    if (!b) return;
+    document.querySelectorAll('.rep-cat').forEach(x => x.classList.toggle('on', x === b));
+});
+document.getElementById('rep-close').addEventListener('click', closeReport);
+document.getElementById('rep-overlay').addEventListener('click', e => { if (e.target === e.currentTarget) closeReport(); });
+document.getElementById('rep-send').addEventListener('click', sendReport);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeReport(); });
+
 (async () => {
     const yr = new Date().getFullYear();
     document.getElementById('year').textContent = yr;
@@ -1115,7 +1199,12 @@ const WAKE = (() => {
                 if (idx >= 0) dialogues[idx] = d; else dialogues.push(d);
             }
         }
-        if (d && d.conversation) loadDialogue(d);
+        if (d && d.conversation) {
+            loadDialogue(d);
+            // Admin deep-link from the issue inbox: &line=N scrolls to the reported line
+            const ln = parseInt(new URLSearchParams(location.search).get('line'), 10);
+            if (!isNaN(ln)) setTimeout(() => { scrollToLine(ln); document.getElementById(`cl-${ln}`)?.classList.add('is-flagged'); }, 300);
+        }
     } else if (saved.dialogueId) {
         // Phase 2a — restore last session: decrypt just the last-open dialogue on demand
         await loadSession();
