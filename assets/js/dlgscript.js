@@ -153,10 +153,14 @@ async function loadSession() {
     // Still missing or no conversation — decrypt from encrypted cache
     if (!d || !d.conversation) {
         const cached = await DCACHE.get(s.dialogueId);
-        if (!cached) return;
-        d = { id: s.dialogueId, ...cached };
-        const idx = dialogues.findIndex(x => x.id === s.dialogueId);
-        if (idx >= 0) dialogues[idx] = d; else dialogues.push(d);
+        if (cached) {
+            d = { id: s.dialogueId, ...cached };
+            const idx = dialogues.findIndex(x => x.id === s.dialogueId);
+            if (idx >= 0) dialogues[idx] = d; else dialogues.push(d);
+        } else {
+            d = await fetchOne(s.dialogueId);   // cold start: not among the first chunk yet
+            if (!d) return;
+        }
     }
 
     loadDialogue(d, /* skipSave */ true);
@@ -398,11 +402,36 @@ const DCACHE = (() => {
             } catch { }
         },
 
+        /* Encrypt many at once and write localStorage a single time (set() rewrites the whole blob). */
+        async setMany(list) {
+            try {
+                const store = _load();
+                const enc = await Promise.all(list.map(d => CRYPTO.encrypt(stripId(d))));
+                list.forEach((d, i) => { store[d.id] = enc[i]; });
+                localStorage.setItem(DATA_KEY, JSON.stringify(store));
+            } catch { }
+        },
+
         clear() {
             try { localStorage.removeItem(IDS_KEY); localStorage.removeItem(DATA_KEY); } catch { }
         }
     };
 })();
+
+/* Dialogue object without the runtime-added `id` (cache stores the raw file content) */
+function stripId(d) { const { id, ...rest } = d; return rest; }
+
+/* Fetch a single dialogue file on demand (deep-link / saved session not loaded yet) */
+async function fetchOne(id) {
+    try {
+        const r = await fetch(`data/dialogues/${id}.json`);
+        if (!r.ok) return null;
+        const full = { id, ...(await r.json()) };
+        const idx = dialogues.findIndex(x => x.id === id);
+        if (idx >= 0) dialogues[idx] = full; else dialogues.push(full);
+        return full;
+    } catch { return null; }
+}
 
 /* ════════════════════════════════════════════════════
    FILE DISCOVERY  –  cache-first, network fallback
@@ -447,8 +476,8 @@ async function discover() {
         DCACHE.clear();
     }
 
-    /* ── Slow path: nothing cached — fetch from network. ── */
-    return _fetchAll();
+    /* ── Slow path: nothing cached — show the first dialogues at once, load the rest in the background. ── */
+    return _fetchAll(true);
 }
 
 /* Decrypt all cached dialogues in the background, progressively upgrading the
@@ -487,27 +516,68 @@ async function _warmAllFromCache(cachedIds, isStale) {
     else _checkForNew(cachedIds, found).catch(() => {});
 }
 
-async function _fetchAll() {
+const FIRST_CHUNK = 10;   // dialogues shown right away on a cold start
+const FETCH_BATCH = 12;   // files requested in parallel per round
+
+/* Fetch ids p+from .. p+(from+size-1) in parallel; stops at the first missing file. */
+async function _probe(p, from, size) {
+    const res = await Promise.all(Array.from({ length: size }, (_, i) => {
+        const id = p + String(from + i).padStart(3, '0');
+        return fetch(`data/dialogues/${id}.json`)
+            .then(r => r.ok ? r.json().then(d => ({ id, ...d })) : null)
+            .catch(() => null);
+    }));
+    const hit = [];
+    for (const x of res) { if (!x) return { hit, more: false }; hit.push(x); }
+    return { hit, more: true };
+}
+
+/* progressive = true : resolve as soon as the first FIRST_CHUNK dialogues are in hand;
+   the rest keep loading in the background (appended to the returned array, sidebar
+   re-rendered per batch, cache written once at the end).
+   progressive = false: resolve with everything.                                   */
+async function _fetchAll(progressive = false) {
     const prefixes = ['a', 'b', 'c', 'd', 'e'];
     const found    = [];
-    for (const p of prefixes) {
-        for (let n = 1; n <= 200; n++) {
-            const id = p + String(n).padStart(3, '0');
-            try {
-                const r = await fetch(`data/dialogues/${id}.json`);
-                if (!r.ok) break;
-                const d = await r.json();
-                await DCACHE.set(id, d);        /* cache encrypted */
-                found.push({ id, ...d });
-            } catch { break; }
+    const open     = [];                       // prefixes that may still have more files
+
+    for (let i = 0; i < prefixes.length; i++) {
+        const p = prefixes[i];
+        if (progressive && found.length >= FIRST_CHUNK) { open.push({ p, next: 1 }); continue; }
+        const { hit, more } = await _probe(p, 1, progressive ? FIRST_CHUNK - found.length : FETCH_BATCH);
+        found.push(...hit);
+        if (more) open.push({ p, next: 1 + hit.length });
+    }
+
+    const finish = async () => {
+        for (const s of open) {
+            for (let more = true; more && s.next <= 200; ) {
+                const r = await _probe(s.p, s.next, FETCH_BATCH);
+                found.push(...r.hit);
+                s.next += FETCH_BATCH;
+                more = r.more;
+                if (progressive) {
+                    if (dialogues !== found) dialogues = found;
+                    dlgLoadingMore = true;
+                    renderSidebar(filterDialogues(searchInput.value.trim()));
+                }
+            }
         }
-    }
-    if (found.length) {
-        DCACHE.setIds(
-            found.map(f => f.id),
-            found.map(f => ({ id: f.id, dialogue_title: f.dialogue_title }))
-        );
-    }
+        dlgLoadingMore = false;
+        if (found.length) {
+            await DCACHE.setMany(found);
+            DCACHE.setIds(
+                found.map(f => f.id),
+                found.map(f => ({ id: f.id, dialogue_title: f.dialogue_title }))
+            );
+        }
+        if (progressive) renderSidebar(filterDialogues(searchInput.value.trim()));
+        return found;
+    };
+
+    if (!progressive) return finish();
+    dlgLoadingMore = open.length > 0;
+    finish().catch(() => { dlgLoadingMore = false; });
     return found;
 }
 
@@ -562,10 +632,14 @@ async function _backgroundRefresh(currentFound) {
 /* ════════════════════════════════════════════════════
    SIDEBAR RENDER  –  includes completion badges
    ════════════════════════════════════════════════════ */
+let dlgLoadingMore = false;   // true while the remaining dialogues stream in after a cold start
+
 function renderSidebar(list) {
     const el = document.getElementById('dlg-list');
+    const more = dlgLoadingMore
+        ? `<div class="sb-load-more"><div class="spin"></div> Meer dialogen laden… (${dialogues.length})</div>` : '';
     if (!list.length) {
-        el.innerHTML = '<div class="sb-no-results">Geen resultaten / No results</div>';
+        el.innerHTML = dlgLoadingMore ? more : '<div class="sb-no-results">Geen resultaten / No results</div>';
         return;
     }
     const stats = STORE.get().stats || {};
@@ -587,7 +661,7 @@ function renderSidebar(list) {
               </div>
               ${matchSnippet(d, searchInput.value)}
             </div>`;
-    }).join('');
+    }).join('') + more;
     el.querySelectorAll('.dlg-item').forEach(item =>
         item.addEventListener('click', () => {
             const d = dialogues.find(x => x.id === item.dataset.id);
@@ -595,7 +669,7 @@ function renderSidebar(list) {
         })
     );
     const active = el.querySelector('.dlg-item.active');
-    if (active) active.scrollIntoView({ block: 'nearest' });
+    if (active && !dlgLoadingMore) active.scrollIntoView({ block: 'nearest' });
 }
 
 /* ════════════════════════════════════════════════════
@@ -1237,6 +1311,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeReport(
                 if (idx >= 0) dialogues[idx] = d; else dialogues.push(d);
             }
         }
+        if (!d || !d.conversation) d = await fetchOne(urlId);   // cold start: not among the first chunk yet
         if (d && d.conversation) {
             loadDialogue(d);
             // Admin deep-link from the issue inbox: &line=N scrolls to the reported line
