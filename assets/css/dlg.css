@@ -1479,3 +1479,19 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
   #title-meta::-webkit-scrollbar { display: none; }
   #title-meta > * { flex-shrink: 0; }
 }
+
+/* ── Dutch left, English right on the same row (stacks again when the list is narrow) ── */
+#conv-list { container-type: inline-size; }
+.c-body {
+  max-width: none;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  column-gap: 24px;
+  align-items: baseline;
+}
+.c-body .c-trans { text-align: right; margin-top: 0; }
+.c-body .c-wave, .c-body .c-wait { grid-column: 1 / -1; }
+@container (max-width: 560px) {
+  .c-body { grid-template-columns: minmax(0, 1fr); }
+  .c-body .c-trans { text-align: left; margin-top: 2px; }
+}
