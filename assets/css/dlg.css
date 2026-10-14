@@ -1404,6 +1404,13 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
   #roles-grid { flex-wrap: wrap; }
 }
 
+/* Cold start: remaining dialogues are still streaming in */
+.sb-load-more {
+  display: flex; align-items: center; gap: 8px; padding: 10px 14px;
+  font-size: .72rem; color: rgba(255,255,255,.5);
+}
+.sb-load-more .spin { width: 12px; height: 12px; border-width: 2px; }
+
 /* Search: transcript match snippet under the dialogue name */
 .dlg-snip {
   font-size: .7rem; line-height: 1.35; margin-top: 3px; color: rgba(255,255,255,.55);
