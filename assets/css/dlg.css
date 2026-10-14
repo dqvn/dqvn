@@ -352,15 +352,14 @@ body {
 }
 #yt-pop-btn:hover { background: rgba(232,93,4,.85); }
 
-/* Fixed video panel */
+/* Fixed video panel — one width variable drives both the panel and the room left for the content */
+:root { --yt-w: clamp(180px, calc(100dvh * 9 / 16), 500px); }
 #yt-panel {
   display: none;
   position: fixed;
   top: 0;
   right: 0;
-  width: calc(100dvh * 9 / 16);
-  max-width: 500px;
-  min-width: 180px;
+  width: var(--yt-w);
   height: 100dvh;
   background: #000;
   z-index: 400;
@@ -417,7 +416,7 @@ body {
 
 /* Shift content left when panel is open so it doesn't get covered */
 body.yt-panel-open #content {
-  margin-right: min(300px, calc(100dvh * 9 / 16));
+  margin-right: var(--yt-w);
 }
 
 /* Hide panel and its trigger on mobile — not needed there */
