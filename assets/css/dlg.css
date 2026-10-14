@@ -1459,3 +1459,23 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
   .c-line, .c-line::before, .c-line::after { transition: none; }
   .c-line:hover:not(.is-active) { transform: none; }
 }
+
+/* ── Sticky head: title + controls stay on top while the conversation scrolls ── */
+#sticky-head {
+  /* #main has 20px padding and sticky offsets from inside it, so pull up by that amount: no gap above the bar */
+  position: sticky; top: -20px; z-index: 30;
+  padding: 12px 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.06), 0 8px 22px rgba(0,0,0,.14);
+}
+#sticky-head #dlg-title { font-size: 1.1rem; }
+#hdr { padding: 12px; }
+/* the in-card video is redundant while the side panel shows it */
+@media (min-width: 701px) { body.yt-panel-open #hdr { display: none; } }
+@media (max-width: 700px) {
+  #sticky-head { padding: 8px 12px; top: -12px; }   /* #main padding is 12px on mobile */
+  #sticky-head #dlg-title { font-size: 1rem; }
+  /* keep the controls on a single scrollable row so the sticky area stays short */
+  #title-meta { flex-wrap: nowrap !important; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+  #title-meta::-webkit-scrollbar { display: none; }
+  #title-meta > * { flex-shrink: 0; }
+}
