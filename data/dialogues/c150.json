@@ -1,1 +1,20 @@
-{}
+{
+  "dialogue_title": "Mijn Jas Is Weg!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/vUrlf55Ziuw",
+  "roles": {
+    "A": "Klant",
+    "B": "Garderobemedewerker"
+  },
+  "conversation": [
+    {"role": "A", "text": "Pardon, ik kom mijn jas ophalen.", "translation": "Excuse me, I've come to pick up my coat."},
+    {"role": "B", "text": "Mag ik uw nummer?", "translation": "May I have your number?"},
+    {"role": "A", "text": "Ja, nummer 48 hier.", "translation": "Yes, number 48 here."},
+    {"role": "B", "text": "Hm. Er hangt geen jas meer bij nummer 48.", "translation": "Hm. There's no coat hanging at number 48 anymore."},
+    {"role": "A", "text": "Wat? Ik heb hem hier vanavond afgegeven.", "translation": "What? I handed it in here this evening."},
+    {"role": "B", "text": "Kunt u uw jas beschrijven?", "translation": "Can you describe your coat?"},
+    {"role": "A", "text": "Een lange zwarte jas met een riem.", "translation": "A long black coat with a belt."},
+    {"role": "A", "text": "Wacht, daar loopt iemand met een zwarte jas. Hey, dat is mijn jas!", "translation": "Wait, someone is walking over there in a black coat. Hey, that's my coat!"},
+    {"role": "B", "text": "Blijft u hier? Ik ga het meteen controleren.", "translation": "Will you stay here? I'll check right away."}
+  ]
+}

@@ -1,1 +1,22 @@
-{}
+{
+  "dialogue_title": "Mijn Bloemen Zijn Al Opgehaald?!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/qF8fosTji2g",
+  "roles": {
+    "A": "Klant",
+    "B": "Bloemist"
+  },
+  "conversation": [
+    {"role": "A", "text": "Goedemiddag. Ik kom een boeket ophalen.", "translation": "Good afternoon. I've come to pick up a bouquet."},
+    {"role": "B", "text": "Natuurlijk. Op welke naam staat de bestelling?", "translation": "Of course. What name is the order under?"},
+    {"role": "A", "text": "Op naam van Sophie de Vries.", "translation": "Under the name Sophie de Vries."},
+    {"role": "B", "text": "Hm. Uw boeket is al opgehaald.", "translation": "Hm. Your bouquet has already been picked up."},
+    {"role": "A", "text": "Wat? Door wie?", "translation": "What? By whom?"},
+    {"role": "B", "text": "Een man heeft het ongeveer 10 minuten geleden meegenomen.", "translation": "A man took it about 10 minutes ago."},
+    {"role": "A", "text": "Maar niemand anders mocht het ophalen.", "translation": "But nobody else was allowed to pick it up."},
+    {"role": "B", "text": "Wacht, hoe zag uw boeket eruit?", "translation": "Wait, what did your bouquet look like?"},
+    {"role": "A", "text": "Rode rozen met witte bloemen.", "translation": "Red roses with white flowers."},
+    {"role": "B", "text": "Oh, dan is dit uw boeket. Ik keek naar de verkeerde bestelling.", "translation": "Oh, then this is your bouquet. I was looking at the wrong order."},
+    {"role": "A", "text": "Oh, gelukkig. U liet me even schrikken.", "translation": "Oh, thank goodness. You gave me a bit of a scare."}
+  ]
+}

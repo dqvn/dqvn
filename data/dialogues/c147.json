@@ -1,1 +1,61 @@
-{}
+{
+  "dialogue_title": "Uw Betaling Is Geweigerd!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/7KL7hteM81I",
+  "roles": {
+    "A": "Kassière",
+    "B": "Klant"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Mevrouw, een moment alstublieft.",
+      "translation": "Madam, one moment please."
+    },
+    {
+      "role": "B",
+      "text": "Ja?",
+      "translation": "Yes?"
+    },
+    {
+      "role": "A",
+      "text": "Uw betaling is helaas geweigerd.",
+      "translation": "Unfortunately, your payment was declined."
+    },
+    {
+      "role": "B",
+      "text": "Wat? Dat kan niet.",
+      "translation": "What? That's not possible."
+    },
+    {
+      "role": "A",
+      "text": "Wilt u het nog een keer proberen?",
+      "translation": "Would you like to try again?"
+    },
+    {
+      "role": "B",
+      "text": "Ja, natuurlijk. Er staat genoeg geld op mijn rekening.",
+      "translation": "Yes, of course. There's enough money in my account."
+    },
+    {
+      "role": "A",
+      "text": "Het lukt weer niet. Heeft u een andere kaart?",
+      "translation": "It's not working again. Do you have another card?"
+    },
+    {
+      "role": "B",
+      "text": "Wacht, ik heb de verkeerde kaart gebruikt. Probeer deze dan maar.",
+      "translation": "Wait, I used the wrong card. Try this one then."
+    },
+    {
+      "role": "A",
+      "text": "Gelukt.",
+      "translation": "It worked."
+    },
+    {
+      "role": "B",
+      "text": "Gelukkig maar.",
+      "translation": "Thank goodness."
+    }
+  ]
+}

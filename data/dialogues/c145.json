@@ -1,1 +1,21 @@
-{}
+{
+  "dialogue_title": "Deze Tafel Is Gereserveerd!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/QN9Zf41OsiU",
+  "roles": {
+    "A": "Ober",
+    "B": "Klant"
+  },
+  "conversation": [
+    {"role": "A", "text": "Pardon mevrouw, deze tafel is gereserveerd.", "translation": "Excuse me, madam, this table is reserved."},
+    {"role": "B", "text": "Echt? Er stond geen bordje op tafel.", "translation": "Really? There was no sign on the table."},
+    {"role": "A", "text": "Dat klopt. Mijn collega is het vergeten.", "translation": "That's right. My colleague forgot."},
+    {"role": "B", "text": "Wanneer komen de gasten?", "translation": "When are the guests coming?"},
+    {"role": "A", "text": "Over 5 minuten.", "translation": "In 5 minutes."},
+    {"role": "B", "text": "Oh, en ik heb net koffie besteld.", "translation": "Oh, and I just ordered coffee."},
+    {"role": "A", "text": "Geen probleem. Ik heb een andere tafel voor u.", "translation": "No problem. I have another table for you."},
+    {"role": "B", "text": "Ook bij het raam?", "translation": "Also by the window?"},
+    {"role": "A", "text": "Ja, zelfs met een beter uitzicht.", "translation": "Yes, even with a better view."},
+    {"role": "B", "text": "Nou, dan vind ik het helemaal niet erg.", "translation": "Well, then I don't mind at all."}
+  ]
+}

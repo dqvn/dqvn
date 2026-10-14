@@ -1,1 +1,23 @@
-{}
+{
+  "dialogue_title": "Mijn Sleutel Is Weg!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/OP07rWkRgFA",
+  "roles": {
+    "A": "Klant",
+    "B": "Slotenmaker"
+  },
+  "conversation": [
+    {"role": "A", "text": "Goedemiddag. Ik heb mezelf buitengesloten.", "translation": "Good afternoon. I've locked myself out."},
+    {"role": "B", "text": "Heeft u uw sleutel verloren?", "translation": "Have you lost your key?"},
+    {"role": "A", "text": "Ik denk het. Ik kan hem nergens vinden.", "translation": "I think so. I can't find it anywhere."},
+    {"role": "B", "text": "Heeft u misschien een reservesleutel?", "translation": "Do you perhaps have a spare key?"},
+    {"role": "A", "text": "Ja, maar die ligt in mijn appartement.", "translation": "Yes, but it's in my apartment."},
+    {"role": "B", "text": "Geen probleem. Ik kan de deur voor u openen.", "translation": "No problem. I can open the door for you."},
+    {"role": "A", "text": "Hoeveel kost dat?", "translation": "How much does that cost?"},
+    {"role": "B", "text": "Overdag is het €95.", "translation": "During the day it's €95."},
+    {"role": "A", "text": "€95? Wacht even.", "translation": "€95? Wait a moment."},
+    {"role": "B", "text": "Wat is er?", "translation": "What's the matter?"},
+    {"role": "A", "text": "Mijn sleutel zit gewoon in mijn jaszak.", "translation": "My key is just in my coat pocket."},
+    {"role": "B", "text": "Nou, dat scheelt u €95.", "translation": "Well, that saves you €95."}
+  ]
+}
