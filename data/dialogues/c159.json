@@ -1,0 +1,23 @@
+{
+  "dialogue_title": "Dit Is Niet Uw Kamer!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/xn-5GYVBArY",
+  "roles": {
+    "A": "Gast",
+    "B": "Receptionist"
+  },
+  "conversation": [
+    {"role": "A", "text": "Pardon, mijn sleutelkaart werkt niet meer.", "translation": "Excuse me, my key card doesn't work anymore."},
+    {"role": "B", "text": "Welk kamernummer heeft u?", "translation": "Which room number do you have?"},
+    {"role": "A", "text": "Kamer 417.", "translation": "Room 417."},
+    {"role": "B", "text": "Een moment. Op welke naam staat de reservering?", "translation": "One moment. What name is the reservation under?"},
+    {"role": "A", "text": "Op mijn naam, Sofie de Vries.", "translation": "Under my name, Sofie de Vries."},
+    {"role": "B", "text": "Dat is vreemd. Kamer 417 staat op een andere naam.", "translation": "That's strange. Room 417 is under a different name."},
+    {"role": "A", "text": "Wat? Maar mijn spullen liggen daar binnen.", "translation": "What? But my things are in there."},
+    {"role": "B", "text": "Heeft u misschien uw identiteitsbewijs bij u?", "translation": "Do you happen to have your ID with you?"},
+    {"role": "A", "text": "Ja, natuurlijk. Hier.", "translation": "Yes, of course. Here."},
+    {"role": "B", "text": "Ah, ik zie het probleem. U zit in kamer 471, niet 417.", "translation": "Ah, I see the problem. You're in room 471, not 417."},
+    {"role": "A", "text": "Oh nee, ik heb de nummers omgedraaid.", "translation": "Oh no, I swapped the numbers."},
+    {"role": "B", "text": "Geen probleem. Gelukkig hebben we het opgelost.", "translation": "No problem. Luckily we've sorted it out."}
+  ]
+}

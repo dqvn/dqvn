@@ -1,0 +1,24 @@
+{
+  "dialogue_title": "Iemand Heeft Mijn Rekening Betaald!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/X3TTm2cjL3c",
+  "roles": {
+    "A": "Klant",
+    "B": "Ober"
+  },
+  "conversation": [
+    {"role": "A", "text": "Pardon? Mag ik afrekenen?", "translation": "Excuse me? May I pay?"},
+    {"role": "B", "text": "Natuurlijk. Een momentje, mevrouw, uw rekening is al betaald.", "translation": "Of course. One moment, madam, your bill has already been paid."},
+    {"role": "A", "text": "Al betaald? Door wie?", "translation": "Already paid? By whom?"},
+    {"role": "B", "text": "Door een meneer die daar zat.", "translation": "By a gentleman who was sitting over there."},
+    {"role": "A", "text": "Maar ik ken hem helemaal niet.", "translation": "But I don't know him at all."},
+    {"role": "B", "text": "Hij zei dat hij u wilde verrassen.", "translation": "He said he wanted to surprise you."},
+    {"role": "A", "text": "Heeft hij zijn naam gezegd?", "translation": "Did he say his name?"},
+    {"role": "B", "text": "Nee, hij heeft betaald en is daarna vertrokken.", "translation": "No, he paid and then left."},
+    {"role": "A", "text": "Dat is wel een beetje vreemd.", "translation": "That is a bit strange."},
+    {"role": "B", "text": "Hij heeft wel iets voor u achtergelaten.", "translation": "He did leave something for you."},
+    {"role": "A", "text": "Iets achtergelaten? Wat dan?", "translation": "Left something? What is it?"},
+    {"role": "B", "text": "Deze envelop.", "translation": "This envelope."},
+    {"role": "A", "text": "Oké, nu wordt het echt spannend.", "translation": "Okay, now it's getting really exciting."}
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "dialogue_title": "U Heeft Een Gaatje!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/Wh7oJJ1XqlU",
+  "roles": {
+    "A": "Tandarts",
+    "B": "Sofie (Patiënt)"
+  },
+  "conversation": [
+    {"role": "A", "text": "Goedemorgen Sofie. Heeft u ergens last van?", "translation": "Good morning Sofie. Are you having any trouble?"},
+    {"role": "B", "text": "Nee, eigenlijk niet. Ik kom alleen voor controle.", "translation": "No, not really. I'm only here for a check-up."},
+    {"role": "A", "text": "Prima, doe uw mond maar open.", "translation": "Fine, open your mouth."},
+    {"role": "B", "text": "Is alles in orde?", "translation": "Is everything all right?"},
+    {"role": "A", "text": "Hm, ik zie iets bij uw achterste kies.", "translation": "Hm, I see something at your back molar."},
+    {"role": "B", "text": "Wat ziet u?", "translation": "What do you see?"},
+    {"role": "A", "text": "Er zit waarschijnlijk een klein gaatje.", "translation": "There is probably a small cavity."},
+    {"role": "B", "text": "Een gaatje? Maar ik heb helemaal geen pijn.", "translation": "A cavity? But I don't have any pain at all."},
+    {"role": "A", "text": "Dat kan. Kleine gaatjes doen vaak nog geen pijn.", "translation": "That's possible. Small cavities often don't hurt yet."},
+    {"role": "B", "text": "Moet u het vandaag behandelen?", "translation": "Do you have to treat it today?"},
+    {"role": "A", "text": "Nee, we maken eerst een foto om het zeker te weten. En als het echt een gaatje is, dan maken we een nieuwe afspraak om het te vullen.", "translation": "No, first we'll take an X-ray to be sure. And if it really is a cavity, we'll make a new appointment to fill it."},
+    {"role": "B", "text": "Oké. En ik dacht dat ik binnen 10 minuten weer buiten zou staan.", "translation": "Okay. And I thought I'd be back outside within 10 minutes."}
+  ]
+}

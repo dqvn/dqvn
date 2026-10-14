@@ -1,0 +1,26 @@
+{
+  "dialogue_title": "Mijn Koffer Is Naar Parijs Gestuurd!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/8xUhDES_Ag4",
+  "roles": {
+    "A": "Reiziger",
+    "B": "Baliemedewerker"
+  },
+  "conversation": [
+    {"role": "A", "text": "Pardon, mijn koffer is niet op de bagageband gekomen.", "translation": "Excuse me, my suitcase didn't come out on the baggage belt."},
+    {"role": "B", "text": "Van welke vlucht komt u?", "translation": "Which flight are you coming from?"},
+    {"role": "A", "text": "Van de vlucht uit Madrid. Iedereen heeft zijn bagage al.", "translation": "From the flight from Madrid. Everyone already has their luggage."},
+    {"role": "B", "text": "Mag ik uw bagagelabel even zien?", "translation": "May I see your baggage tag for a moment?"},
+    {"role": "A", "text": "Ja, natuurlijk. Hier.", "translation": "Yes, of course. Here."},
+    {"role": "B", "text": "Een moment. Hm. Ik zie hier iets vreemds.", "translation": "One moment. Hm. I see something strange here."},
+    {"role": "A", "text": "Wat dan?", "translation": "What is it?"},
+    {"role": "B", "text": "Uw koffer is per ongeluk naar Parijs gestuurd.", "translation": "Your suitcase was sent to Paris by mistake."},
+    {"role": "A", "text": "Naar Parijs? Maar ik ben hier.", "translation": "To Paris? But I'm here."},
+    {"role": "B", "text": "Geen zorgen. We laten hem zo snel mogelijk terugkomen.", "translation": "Don't worry. We'll have it brought back as soon as possible."},
+    {"role": "A", "text": "Wanneer krijg ik hem terug?", "translation": "When will I get it back?"},
+    {"role": "B", "text": "Waarschijnlijk morgen. We kunnen hem bij uw hotel bezorgen.", "translation": "Probably tomorrow. We can deliver it to your hotel."},
+    {"role": "A", "text": "Morgen? Al mijn kleding zit erin.", "translation": "Tomorrow? All my clothes are in it."},
+    {"role": "B", "text": "Ik begrijp het. Vul alstublieft eerst dit formulier in.", "translation": "I understand. Please fill in this form first."},
+    {"role": "A", "text": "Oké.", "translation": "Okay."}
+  ]
+}

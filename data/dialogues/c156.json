@@ -1,0 +1,25 @@
+{
+  "dialogue_title": "Deze Bus Rijdt Niet Naar Het Station!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/wp0Ems80hkA",
+  "roles": {
+    "A": "Passagier",
+    "B": "Buschauffeur"
+  },
+  "conversation": [
+    {"role": "A", "text": "Pardon? Stopt deze bus bij het centraalstation?", "translation": "Excuse me? Does this bus stop at the central station?"},
+    {"role": "B", "text": "Normaal wel, maar vandaag niet.", "translation": "Normally it does, but not today."},
+    {"role": "A", "text": "Niet? Maar op mijn telefoon staat van wel.", "translation": "No? But my phone says it does."},
+    {"role": "B", "text": "Er is een ongeluk gebeurd. De weg is afgesloten.", "translation": "There has been an accident. The road is closed."},
+    {"role": "A", "text": "Oh, hoe kom ik dan bij het station?", "translation": "Oh, how do I get to the station then?"},
+    {"role": "B", "text": "U kunt bij de volgende halte uitstappen en tram 4 nemen.", "translation": "You can get off at the next stop and take tram 4."},
+    {"role": "A", "text": "Hoe lang duurt dat? Ik moet mijn trein halen.", "translation": "How long does that take? I have to catch my train."},
+    {"role": "B", "text": "Hoe laat vertrekt de trein?", "translation": "What time does the train leave?"},
+    {"role": "A", "text": "Over 20 minuten.", "translation": "In 20 minutes."},
+    {"role": "B", "text": "Oei, dan wordt het krap.", "translation": "Oops, then it'll be tight."},
+    {"role": "A", "text": "Is er geen snellere manier?", "translation": "Isn't there a faster way?"},
+    {"role": "B", "text": "Stap bij de volgende halte uit. Vanaf daar is het ongeveer 10 minuten lopen.", "translation": "Get off at the next stop. From there it's about a 10-minute walk."},
+    {"role": "A", "text": "10 minuten? Oké, dan ga ik rennen.", "translation": "10 minutes? Okay, then I'll run."},
+    {"role": "B", "text": "Succes. Ik hoop dat u uw trein haalt.", "translation": "Good luck. I hope you catch your train."}
+  ]
+}
