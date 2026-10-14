@@ -705,7 +705,8 @@ function renderConv(activeLine = -1, doneUpTo = -1) {
         return `<div class="${cls}" id="cl-${i}">
           <div class="c-badge" style="background:${color}" title="${esc(current.roles[line.role] || line.role)}">${esc(line.role)}</div>
           <div class="c-body">${body}</div>
-          <button class="c-flag" data-line="${i}" title="Fout melden in deze regel / Report this line" aria-label="Fout melden">⚑</button>
+          <button class="c-flag" data-line="${i}" title="Fout in deze regel? Meld het.
+Something wrong in this line? Report it." aria-label="Fout melden in regel ${i + 1}">⚠️<span class="c-flag-t">Fout?</span></button>
         </div>`;
     }).join('');
 }
@@ -1080,11 +1081,11 @@ function openReport(line) {
     const ln = current.conversation[line];
     document.getElementById('rep-ctx').innerHTML = ln
         ? `<b>${esc(current.id)} · regel ${line + 1} · ${esc(ln.role)}</b><br>${esc(ln.text)}<br><em>${esc(ln.translation)}</em>`
-        : `<b>${esc(current.id)}</b> · ${esc(current.dialogue_title)} (hele dialoog / rollen)`;
+        : `<b>Hele dialoog</b> · ${esc(current.id)} · ${esc(current.dialogue_title)}`;
     document.getElementById('rep-note').value = '';
     document.querySelectorAll('.rep-cat').forEach(b => b.classList.toggle('on', b.dataset.cat === (ln ? 'Tekst' : 'Rol')));
     const send = document.getElementById('rep-send');
-    send.disabled = false; send.textContent = 'Verstuur →';
+    send.disabled = false; send.textContent = '📨 Verstuur melding';
     const ov = document.getElementById('rep-overlay');
     ov.classList.add('open'); ov.removeAttribute('aria-hidden');
     setTimeout(() => document.getElementById('rep-note').focus(), 80);
@@ -1126,9 +1127,9 @@ async function sendReport() {
         if (!r.ok) throw new Error((await r.json().catch(() => ({}))).error || `HTTP ${r.status}`);
         try { localStorage.setItem(REPORT_KEY, String(Date.now())); } catch {}
         closeReport();
-        showToast('✅ Bedankt! Je melding is verstuurd.');
+        showToast('✅ Bedankt! Je melding is verstuurd. / Thanks, report sent.');
     } catch (e) {
-        btn.disabled = false; btn.textContent = 'Verstuur →';
+        btn.disabled = false; btn.textContent = '📨 Verstuur melding';
         showToast('Kon melding niet versturen: ' + e.message, 5000);
     }
 }
