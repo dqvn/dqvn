@@ -16,7 +16,7 @@ import {
   RSS_FEED_URL, RSS_CACHE_KEY, RSS_MAX, RSS_FETCH_TTL, RSS_REDIS_TTL,
   PODCAST_FEED_URL, PODCAST_CACHE_KEY, PODCAST_MAX, PODCAST_FETCH_TTL, PODCAST_REDIS_TTL,
   reply,
-  redisGet, redisSet, redisPush, redisLRange, redisLLen, redisScanKeys,
+  redisGet, redisSet, redisPush, redisLRange, redisLLen, redisLRemById, redisScanKeys,
   verifyGoogleJWT,
   srsEncode, srsDecode,
   mergeSRS, mergeMeta, mergeKlanken, mergeVerbs, mergeGame,
@@ -387,6 +387,32 @@ async function handleFeedbackBadge(request, env) {
 }
 
 /**
+ * POST /feedback/delete — delete one feedback item by id (owner only, Bearer auth)
+ * Body: { id: "fb_<ts>_<rand>" }. POST (not DELETE) so the CORS method list stays unchanged.
+ * Keeps the unread counter in step: removing an already-seen item lowers FB_SEEN_KEY by one,
+ * otherwise a newer unread item would drop out of the badge.
+ */
+async function handleDeleteFeedback(request, env) {
+  const origin  = request.headers.get('Origin') || '';
+  const checked = await _requireOwner(request, env);
+  if (checked.error) return checked.error;
+
+  let body;
+  try { body = await request.json(); } catch { return reply({ error: 'Invalid JSON' }, 400, origin); }
+  const id = String(body.id || '');
+  if (!/^fb_\d+_[a-z0-9]+$/.test(id)) return reply({ error: 'Invalid id' }, 400, origin);
+
+  const idx = await redisLRemById(env.UPSTASH_URL, env.UPSTASH_TOKEN, FB_LIST_KEY, id);
+  if (idx < 0) return reply({ error: 'Niet gevonden' }, 404, origin);
+
+  const seen = await redisGet(env.UPSTASH_URL, env.UPSTASH_TOKEN, FB_SEEN_KEY);
+  if (typeof seen === 'number' && idx < seen)
+    await redisSet(env.UPSTASH_URL, env.UPSTASH_TOKEN, FB_SEEN_KEY, Math.max(0, seen - 1), REDIS_TTL);
+
+  return reply({ ok: true }, 200, origin);
+}
+
+/**
  * GET /admin/users — list all users who have ever synced (owner only)
  * Scans fc:* keys in Redis and returns lightweight user summaries.
  */
@@ -458,6 +484,11 @@ export default {
     if (url.pathname === '/feedback/badge') {
       if (request.method !== 'GET') return reply({ error: 'Method not allowed' }, 405, origin);
       return handleFeedbackBadge(request, env);
+    }
+
+    if (url.pathname === '/feedback/delete') {
+      if (request.method !== 'POST') return reply({ error: 'Method not allowed' }, 405, origin);
+      return handleDeleteFeedback(request, env);
     }
 
     if (url.pathname === '/admin/users') {

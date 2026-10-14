@@ -1723,7 +1723,9 @@ initStatTips();
         <div class="${typeClass}">
           <div class="fba-card-hd">
             <span>${typeIcon} <b>${item.type}</b></span>
-            <span class="fba-time">${_relTime(item.ts)}</span>
+            <span class="fba-time">${_relTime(item.ts)}
+              <button class="fba-del" data-id="${_e(item.id || '')}" title="Verwijderen / Delete" aria-label="Verwijderen">🗑</button>
+            </span>
           </div>
           <p class="fba-msg">${item.message.replace(/</g, '&lt;')}</p>
           ${chips ? `<div class="fba-chips">${chips}</div>` : ''}
@@ -1801,6 +1803,31 @@ initStatTips();
       if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) submitFeedback();
     });
     _$('fb-submit').addEventListener('click', submitFeedback);
+
+    /* Owner: delete one feedback item (server re-checks the owner token) */
+    _$('fba-list').addEventListener('click', async e => {
+      const btn = e.target.closest('.fba-del');
+      if (!btn) return;
+      const id = btn.dataset.id;
+      if (!id || !confirm('Dit bericht definitief verwijderen?')) return;
+      const token = localStorage.getItem('fc_sync_token');
+      if (!token) { alert('Niet aangemeld als eigenaar.'); return; }
+      btn.disabled = true;
+      try {
+        const r = await fetch(`${_W}/feedback/delete`, {
+          method:  'POST',
+          headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+          body:    JSON.stringify({ id }),
+        });
+        if (!r.ok && r.status !== 404) throw new Error((await r.json().catch(() => ({}))).error || `HTTP ${r.status}`);
+        _allItems = _allItems.filter(i => i.id !== id);
+        _page = Math.min(_page, Math.max(1, Math.ceil(_filtered().length / _PER)));
+        renderAdmin();
+      } catch (err) {
+        btn.disabled = false;
+        alert('Verwijderen mislukt: ' + err.message);
+      }
+    });
 
     _$('fba-filters').addEventListener('click', e => {
       const btn = e.target.closest('.fba-f');

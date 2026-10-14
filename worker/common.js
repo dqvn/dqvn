@@ -5,7 +5,7 @@
  *          RSS_FEED_URL, RSS_CACHE_KEY, RSS_MAX, RSS_FETCH_TTL, RSS_CDN_TTL,
  *          PODCAST_FEED_URL, PODCAST_CACHE_KEY, PODCAST_MAX, PODCAST_FETCH_TTL,
  *          FEED_USER_AGENT,
- *          reply, redisGet, redisSet, redisPush, redisLRange, redisLLen,
+ *          reply, redisGet, redisSet, redisPush, redisLRange, redisLLen, redisLRemById,
  *          verifyGoogleJWT,
  *          srsEncodeWord, srsDecodeWord, srsEncode, srsDecode,
  *          mergeSRS, mergeMeta, mergeKlanken, mergeVerbs, mergeGame,
@@ -118,6 +118,23 @@ export async function redisLLen(url, token, key) {
   );
   const { result } = await r.json();
   return typeof result === 'number' ? result : 0;
+}
+
+// Remove the list item whose stored JSON has `.id === id` (LREM on its exact stored string).
+// Returns the item's index in the list if it was removed, or -1 if no item matched.
+export async function redisLRemById(url, token, key, id) {
+  const hdr = { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' };
+  const r = await fetch(`${url}/`, {
+    method: 'POST', headers: hdr, body: JSON.stringify(['LRANGE', key, '0', '-1']),
+  });
+  const { result } = await r.json();
+  if (!Array.isArray(result)) return -1;
+  const idx = result.findIndex(s => { try { return JSON.parse(s).id === id; } catch { return false; } });
+  if (idx < 0) return -1;
+  await fetch(`${url}/`, {
+    method: 'POST', headers: hdr, body: JSON.stringify(['LREM', key, '1', result[idx]]),
+  });
+  return idx;
 }
 
 // Scan all Redis keys matching a glob pattern (iterates cursor until 0)
