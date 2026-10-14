@@ -1,1 +1,19 @@
-{}
+{
+  "dialogue_title": "Waar Is Mijn Tas?!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/KCIQ8JYNIIc",
+  "roles": {
+    "A": "Vrouw",
+    "B": "Tom"
+  },
+  "conversation": [
+    {"role": "A", "text": "Tom, waar is mijn tas?", "translation": "Tom, where is my bag?"},
+    {"role": "B", "text": "Je had hem net nog bij je.", "translation": "You had it with you just now."},
+    {"role": "A", "text": "Ja, voor we in die attractie gingen.", "translation": "Yes, before we went on that ride."},
+    {"role": "B", "text": "Heb je hem daar laten liggen?", "translation": "Did you leave it there?"},
+    {"role": "A", "text": "Mijn telefoon en portemonnee zitten erin.", "translation": "My phone and wallet are in it."},
+    {"role": "B", "text": "Kom, we gaan terug. Snel.", "translation": "Come on, we're going back. Quick."},
+    {"role": "A", "text": "Wacht, wat heb jij daar om je schouder?", "translation": "Wait, what do you have there on your shoulder?"},
+    {"role": "B", "text": "Eh, jouw tas. Ik schrok me dood. Sorry, je vroeg of ik hem even wilde dragen.", "translation": "Uh, your bag. I got the fright of my life. Sorry, you asked if I'd carry it for a moment."}
+  ]
+}

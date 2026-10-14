@@ -1,1 +1,21 @@
-{}
+{
+  "dialogue_title": "Krijg Ik Nu Een Boete!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/kDNjWHI39DM",
+  "roles": {
+    "A": "Agent",
+    "B": "Bestuurder"
+  },
+  "conversation": [
+    {"role": "A", "text": "Goedemiddag. Mag ik uw rijbewijs even zien?", "translation": "Good afternoon. May I see your driver's license for a moment?"},
+    {"role": "B", "text": "Natuurlijk. Heb ik iets verkeerd gedaan?", "translation": "Of course. Have I done something wrong?"},
+    {"role": "A", "text": "Uw rechterachterlicht werkt niet.", "translation": "Your right rear light isn't working."},
+    {"role": "B", "text": "Echt? Dat wist ik helemaal niet.", "translation": "Really? I had no idea."},
+    {"role": "A", "text": "Wanneer heeft u uw verlichting voor het laatst gecontroleerd?", "translation": "When did you last check your lights?"},
+    {"role": "B", "text": "Eerlijk gezegd, dat weet ik niet meer.", "translation": "To be honest, I don't remember."},
+    {"role": "A", "text": "U moet het zo snel mogelijk laten repareren.", "translation": "You need to have it repaired as soon as possible."},
+    {"role": "B", "text": "Krijg ik nu een boete?", "translation": "Will I get a fine now?"},
+    {"role": "A", "text": "Deze keer krijgt u alleen een waarschuwing.", "translation": "This time you'll only get a warning."},
+    {"role": "B", "text": "Oh, gelukkig. Ik laat het vandaag nog repareren.", "translation": "Oh, thank goodness. I'll have it repaired today."}
+  ]
+}

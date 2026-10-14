@@ -1,1 +1,20 @@
-{}
+{
+  "dialogue_title": "Die Auto Volgt Ons!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/dlF2PXtvwAE",
+  "roles": {
+    "A": "Passagier",
+    "B": "Sophie (Bestuurder)"
+  },
+  "conversation": [
+    {"role": "A", "text": "Sophie, die zwarte auto rijdt al een tijdje achter ons.", "translation": "Sophie, that black car has been driving behind us for a while."},
+    {"role": "B", "text": "Misschien moet hij gewoon dezelfde kant op. Ik ben net drie keer afgeslagen.", "translation": "Maybe he's just going the same way. I just turned off three times."},
+    {"role": "A", "text": "Hij ook.", "translation": "So did he."},
+    {"role": "B", "text": "Oké, dat is wel vreemd. Zal ik ergens stoppen?", "translation": "Okay, that is strange. Shall I stop somewhere?"},
+    {"role": "A", "text": "Nee, rijd maar door.", "translation": "No, just keep driving."},
+    {"role": "A", "text": "Wacht, hij knippert met zijn lichten.", "translation": "Wait, he's flashing his lights."},
+    {"role": "B", "text": "Waarom doet hij dat?", "translation": "Why is he doing that?"},
+    {"role": "A", "text": "Oh, je achterklep staat nog open.", "translation": "Oh, your tailgate is still open."},
+    {"role": "B", "text": "Serieus? Daarom volgde hij ons.", "translation": "Seriously? That's why he was following us."}
+  ]
+}
