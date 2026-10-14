@@ -1808,11 +1808,14 @@ main {
 .fba-card-hd b { color: #f1f5f9; }
 .fba-time { font-size: .7rem; color: #64748b; display: inline-flex; align-items: center; gap: 6px; }
 .fba-del {
-  border: none; background: transparent; cursor: pointer; font-size: .85rem; line-height: 1;
-  padding: 3px 5px; border-radius: 6px; opacity: .55; transition: opacity .15s, background .15s;
+  display: inline-flex; align-items: center; gap: 4px; cursor: pointer;
+  font-size: .72rem; font-weight: 600; line-height: 1; padding: 4px 9px; border-radius: 6px;
+  color: #fca5a5; background: rgba(248,113,113,.14); border: 1px solid rgba(248,113,113,.55);
+  transition: background .15s, color .15s, border-color .15s;
 }
-.fba-del:hover { opacity: 1; background: rgba(248,113,113,.18); }
-.fba-del:disabled { opacity: .3; cursor: default; }
+.fba-del:hover { color: #fff; background: #dc2626; border-color: #dc2626; }
+.fba-del:focus-visible { outline: 2px solid #fca5a5; outline-offset: 2px; }
+.fba-del:disabled { opacity: .45; cursor: default; }
 .fba-msg {
   font-size: .87rem; color: #e2e8f0;
   line-height: 1.5;
