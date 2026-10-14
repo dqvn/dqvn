@@ -6,7 +6,7 @@
   <script>(function(){try{var v=(JSON.parse(localStorage.getItem('nl_portal_theme'))||{}).v||'orange';document.documentElement.setAttribute('data-theme',v||'orange');}catch(e){document.documentElement.setAttribute('data-theme','orange');}})();</script>
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>🇳🇱 Dialoog Oefenen – Dutch Practice</title>
-  <link rel="stylesheet" href="assets/css/dlg.css?v=3">
+  <link rel="stylesheet" href="assets/css/dlg.css?v=8">
   <link rel="stylesheet" href="assets/css/themes.css?v=2">
   <style>
     /* Restore mob-bar buttons (search/wake/reload) hidden by sync.css 
@@ -125,22 +125,16 @@
                 <button class="spd-btn spd-on" data-spd="0.88" title="Normaal / Normal">🚶</button>
                 <button class="spd-btn" data-spd="1.1" title="Snel / Fast">🏃</button>
               </div>
-            </div>
-
-            <div id="roles-section">
-              <div class="sec-lbl" style="margin-top:18px">Kies jouw rol / Select your role</div>
-              <div id="roles-grid"></div>
-            </div>
-
-            <div id="mode-section">
-              <label class="sw-wrap">
-                <input type="checkbox" id="tts-toggle" />
-                <span class="sw-track"></span>
-              </label>
-              <div class="mode-lbl">
-                <b>🎙️ Solo Practice</b>
-                <em>TTS reads the other role(s) for you</em>
+              <div id="roles-section" title="Kies jouw rol / Select your role">
+                <div id="roles-grid"></div>
               </div>
+              <label id="mode-section" title="Solo Practice — TTS reads the other role(s) for you">
+                <span class="sw-wrap">
+                  <input type="checkbox" id="tts-toggle" />
+                  <span class="sw-track"></span>
+                </span>
+                <span class="mode-lbl"><b>🎙️ Solo Practice</b></span>
+              </label>
             </div>
 
           </div>
@@ -150,7 +144,7 @@
         <div class="card">
           <div class="conv-head">
             <div class="sec-lbl">Gesprek / Conversation</div>
-            <button id="rep-btn" class="rep-btn" title="Fout melden in deze dialoog / Report an issue">⚑ Fout melden</button>
+            <button id="rep-btn" class="rep-btn" title="Fout gezien? Meld het hier.&#10;• Klik op ⚠️ naast een regel om die regel te melden.&#10;• Of klik hier voor de hele dialoog (titel, rollen).&#10;&#10;Found a mistake? Report it here.&#10;• Click ⚠️ next to a line to report that line.&#10;• Or click here for the whole dialogue (title, roles).">⚠️ Fout melden</button>
           </div>
           <div id="conv-list"></div>
         </div>
@@ -202,18 +196,22 @@
   <div id="rep-overlay" aria-hidden="true">
     <div class="rep-box" role="dialog" aria-modal="true" aria-labelledby="rep-title">
       <div class="rep-hd">
-        <b id="rep-title">⚑ Fout melden</b>
+        <b id="rep-title">⚠️ Fout melden <small>Report an error</small></b>
         <button id="rep-close" aria-label="Sluiten">✕</button>
       </div>
+      <div class="rep-step">Je meldt dit: <span>You are reporting:</span></div>
       <div id="rep-ctx"></div>
+      <div class="rep-step">Wat is er fout? <span>What is wrong?</span></div>
       <div id="rep-cats">
-        <button type="button" class="rep-cat on" data-cat="Tekst">📝 Tekst (NL)</button>
-        <button type="button" class="rep-cat" data-cat="Vertaling">🌐 Vertaling (EN)</button>
-        <button type="button" class="rep-cat" data-cat="Rol">🎭 Rol / spreker</button>
-        <button type="button" class="rep-cat" data-cat="Anders">💬 Anders</button>
+        <button type="button" class="rep-cat on" data-cat="Tekst">📝 Nederlandse tekst<small>Dutch text</small></button>
+        <button type="button" class="rep-cat" data-cat="Vertaling">🌐 Engelse vertaling<small>English translation</small></button>
+        <button type="button" class="rep-cat" data-cat="Rol">🎭 Verkeerde spreker<small>Wrong speaker (A/B)</small></button>
+        <button type="button" class="rep-cat" data-cat="Anders">💬 Anders<small>Other</small></button>
       </div>
-      <textarea id="rep-note" maxlength="200" rows="3" placeholder="Wat klopt er niet? (optioneel) / What is wrong? (optional)"></textarea>
-      <button id="rep-send">Verstuur →</button>
+      <div class="rep-step">Uitleg <span>(niet verplicht / optional)</span></div>
+      <textarea id="rep-note" maxlength="200" rows="3" placeholder="Bijv. / e.g.: “Moet ‘vijfde’ zijn, niet ‘vide’”"></textarea>
+      <button id="rep-send">📨 Verstuur melding</button>
+      <div class="rep-foot">Anoniem · de beheerder bekijkt het · bedankt voor je hulp 🙏</div>
     </div>
   </div>
 
@@ -231,7 +229,7 @@
     <div id="yt-panel-body"></div>
   </div>
 
-  <script src="assets/js/dlgscript.js?v=2"></script>
+  <script src="assets/js/dlgscript.js?v=4"></script>
 </body>
 
 </html>
