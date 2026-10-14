@@ -1,0 +1,25 @@
+{
+  "dialogue_title": "U Zit Op Mijn Plaats!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/2nqgl_DiOpQ",
+  "roles": {
+    "A": "Bezoeker 1",
+    "B": "Bezoeker 2"
+  },
+  "conversation": [
+    {"role": "A", "text": "Pardon? Volgens mij zit u op mijn plaats.", "translation": "Excuse me? I think you're sitting in my seat."},
+    {"role": "B", "text": "Echt? Volgens mij is dit mijn plaats. Ik heb rij E, stoel 12.", "translation": "Really? I think this is my seat. I have row E, seat 12."},
+    {"role": "A", "text": "Ik ook. Kijk maar.", "translation": "So do I. Look."},
+    {"role": "B", "text": "Hè, hoe kan dat nou?", "translation": "Huh, how can that be?"},
+    {"role": "A", "text": "Misschien heeft de bioscoop dezelfde stoel twee keer verkocht.", "translation": "Maybe the cinema sold the same seat twice."},
+    {"role": "B", "text": "Wacht even. Welke datum staat er op uw kaartje?", "translation": "Wait a moment. What date is on your ticket?"},
+    {"role": "A", "text": "Vandaag, 1 september. En bij u?", "translation": "Today, 1 September. And yours?"},
+    {"role": "B", "text": "Ook 1 september. Maar wacht...", "translation": "Also 1 September. But wait..."},
+    {"role": "A", "text": "Wat is er?", "translation": "What is it?"},
+    {"role": "B", "text": "Mijn film begint om 8 uur.", "translation": "My film starts at 8 o'clock."},
+    {"role": "A", "text": "Deze voorstelling begint om 7:30.", "translation": "This showing starts at 7:30."},
+    {"role": "B", "text": "Oh nee, zit ik in de verkeerde zaal?", "translation": "Oh no, am I in the wrong theater?"},
+    {"role": "A", "text": "Ik denk het wel. Zaal 6 is hiernaast.", "translation": "I think so. Theater 6 is next door."},
+    {"role": "B", "text": "Wat gênant.", "translation": "How embarrassing."}
+  ]
+}

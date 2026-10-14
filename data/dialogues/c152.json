@@ -1,0 +1,116 @@
+{
+  "dialogue_title": "NIET of GEEN? Dit Is Het Verschil!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/UxIzJM7BWaA",
+  "roles": {
+    "A": "Leraar",
+    "B": "Leerling"
+  },
+  "conversation": [
+    {
+      "role": "A",
+      "text": "Wanneer gebruik je \"niet\" en wanneer \"geen\"?",
+      "translation": "When do you use \"niet\" and when \"geen\"?"
+    },
+    {
+      "role": "B",
+      "text": "Veel mensen maken hier fouten mee, maar eigenlijk is het heel simpel.",
+      "translation": "Many people make mistakes with this, but it's actually very simple."
+    },
+    {
+      "role": "A",
+      "text": "Gebruik \"geen\" bij een zelfstandig naamwoord.",
+      "translation": "Use \"geen\" with a noun."
+    },
+    {
+      "role": "B",
+      "text": "Ik heb een auto.",
+      "translation": "I have a car."
+    },
+    {
+      "role": "A",
+      "text": "Ik heb geen auto.",
+      "translation": "I don't have a car."
+    },
+    {
+      "role": "B",
+      "text": "Ik drink koffie.",
+      "translation": "I drink coffee."
+    },
+    {
+      "role": "A",
+      "text": "Ik drink geen koffie.",
+      "translation": "I don't drink coffee."
+    },
+    {
+      "role": "B",
+      "text": "Dus: geen auto, geen koffie, geen geld.",
+      "translation": "So: no car, no coffee, no money."
+    },
+    {
+      "role": "A",
+      "text": "Gebruik \"niet\" om iets anders te ontkennen.",
+      "translation": "Use \"niet\" to negate anything else."
+    },
+    {
+      "role": "B",
+      "text": "De auto is duur.",
+      "translation": "The car is expensive."
+    },
+    {
+      "role": "A",
+      "text": "De auto is niet duur.",
+      "translation": "The car is not expensive."
+    },
+    {
+      "role": "B",
+      "text": "Ik werk vandaag.",
+      "translation": "I work today."
+    },
+    {
+      "role": "A",
+      "text": "Ik werk vandaag niet.",
+      "translation": "I don't work today."
+    },
+    {
+      "role": "B",
+      "text": "Het verschil:",
+      "translation": "The difference:"
+    },
+    {
+      "role": "A",
+      "text": "Ik heb geen auto.",
+      "translation": "I don't have a car."
+    },
+    {
+      "role": "B",
+      "text": "Mijn auto is niet nieuw.",
+      "translation": "My car is not new."
+    },
+    {
+      "role": "A",
+      "text": "\"Geen\" ontkent een zelfstandig naamwoord.",
+      "translation": "\"Geen\" negates a noun."
+    },
+    {
+      "role": "B",
+      "text": "\"Niet\" ontkent een eigenschap of andere informatie.",
+      "translation": "\"Niet\" negates a characteristic or other information."
+    },
+    {
+      "role": "A",
+      "text": "Dus onthoud: geen auto, geen koffie, geen geld.",
+      "translation": "So remember: no car, no coffee, no money."
+    },
+    {
+      "role": "B",
+      "text": "Niet duur, niet vandaag, niet goed.",
+      "translation": "Not expensive, not today, not good."
+    },
+    {
+      "role": "A",
+      "text": "Kun jij een zin maken met \"niet\" of \"geen\"?",
+      "translation": "Can you make a sentence with \"niet\" or \"geen\"?"
+    }
+  ]
+}

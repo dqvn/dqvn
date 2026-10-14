@@ -1,0 +1,24 @@
+{
+  "dialogue_title": "€86?! Dat Is Niet Mijn Benzine!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/5R5koSx2lB4",
+  "roles": {
+    "A": "Klant",
+    "B": "Kassamedewerker"
+  },
+  "conversation": [
+    {"role": "A", "text": "Goedemiddag. Ik wil graag betalen voor pomp 6.", "translation": "Good afternoon. I'd like to pay for pump 6."},
+    {"role": "B", "text": "Pomp 4, dat is €86,40.", "translation": "Pump 4, that's €86.40."},
+    {"role": "A", "text": "Wat? Dat kan niet kloppen.", "translation": "What? That can't be right."},
+    {"role": "B", "text": "U heeft toch bij pomp 4 getankt?", "translation": "You filled up at pump 4, didn't you?"},
+    {"role": "A", "text": "Ja, maar voor ongeveer €30.", "translation": "Yes, but for about €30."},
+    {"role": "B", "text": "Een moment. Welke auto is van u?", "translation": "One moment. Which car is yours?"},
+    {"role": "A", "text": "Die rode auto daar.", "translation": "That red car over there."},
+    {"role": "B", "text": "Ah, dan zie ik het probleem.", "translation": "Ah, now I see the problem."},
+    {"role": "A", "text": "Wat is er gebeurd?", "translation": "What happened?"},
+    {"role": "B", "text": "U stond bij pomp 6, niet bij pomp 4.", "translation": "You were at pump 6, not at pump 4."},
+    {"role": "A", "text": "Oh. En hoeveel moet ik dan betalen?", "translation": "Oh. And how much do I have to pay then?"},
+    {"role": "B", "text": "€31,20.", "translation": "€31.20."},
+    {"role": "A", "text": "Dat klinkt een stuk beter.", "translation": "That sounds a lot better."}
+  ]
+}

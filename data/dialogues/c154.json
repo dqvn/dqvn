@@ -1,0 +1,25 @@
+{
+  "dialogue_title": "Dit Pakket Is Niet Van Mij!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/KB-SX2sY8Hw",
+  "roles": {
+    "A": "Bewoner",
+    "B": "Pakketbezorger"
+  },
+  "conversation": [
+    {"role": "A", "text": "Pardon? Heeft u dit pakket hier neergezet?", "translation": "Excuse me? Did you leave this package here?"},
+    {"role": "B", "text": "Ja, ik heb het net bezorgd.", "translation": "Yes, I just delivered it."},
+    {"role": "A", "text": "Maar dit pakket is niet van mij.", "translation": "But this package isn't mine."},
+    {"role": "B", "text": "Woont u niet op nummer 28?", "translation": "Don't you live at number 28?"},
+    {"role": "A", "text": "Jawel, maar kijk naar de naam. Ik ken deze persoon niet.", "translation": "I do, but look at the name. I don't know this person."},
+    {"role": "B", "text": "Hm, dat is vreemd. Het adres klopt wel.", "translation": "Hm, that's strange. The address is correct."},
+    {"role": "A", "text": "Wat moet ik er nu mee doen?", "translation": "What should I do with it now?"},
+    {"role": "B", "text": "Een moment, ik controleer het even.", "translation": "One moment, I'll check it."},
+    {"role": "A", "text": "Is het misschien voor de vorige bewoner?", "translation": "Is it perhaps for the previous resident?"},
+    {"role": "B", "text": "Ah, ik zie het probleem. Het huisnummer is verkeerd ingevoerd.", "translation": "Ah, I see the problem. The house number was entered incorrectly."},
+    {"role": "A", "text": "Dus u neemt het weer mee?", "translation": "So you're taking it back with you?"},
+    {"role": "B", "text": "Ja, het moet eigenlijk naar nummer 82.", "translation": "Yes, it should actually go to number 82."},
+    {"role": "A", "text": "Nummer 82. Iemand heeft de cijfers omgedraaid.", "translation": "Number 82. Someone swapped the digits."},
+    {"role": "B", "text": "Precies. Goed dat u het meteen zag.", "translation": "Exactly. Good that you noticed right away."}
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "dialogue_title": "We Rijden De Verkeerde Kant Op!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/77xvoLCCspM",
+  "roles": {
+    "A": "Passagier",
+    "B": "Taxichauffeur"
+  },
+  "conversation": [
+    {"role": "A", "text": "Pardon? Volgens mij rijden we de verkeerde kant op.", "translation": "Excuse me? I think we're going the wrong way."},
+    {"role": "B", "text": "Nee hoor, ik neem een andere route.", "translation": "No, I'm taking a different route."},
+    {"role": "A", "text": "Maar mijn hotel is in het centrum.", "translation": "But my hotel is in the center."},
+    {"role": "B", "text": "Klopt. Deze route is sneller.", "translation": "Right. This route is faster."},
+    {"role": "A", "text": "Mijn telefoon zegt iets anders.", "translation": "My phone says something different."},
+    {"role": "B", "text": "Er is een weg afgesloten. Daarom rijden we om.", "translation": "A road is closed. That's why we're taking a detour."},
+    {"role": "A", "text": "Waarom heeft u dat niet meteen gezegd?", "translation": "Why didn't you say that right away?"},
+    {"role": "B", "text": "Sorry, dat had ik moeten zeggen.", "translation": "Sorry, I should have said that."},
+    {"role": "A", "text": "Wordt de rit hierdoor duurder?", "translation": "Will the ride get more expensive because of this?"},
+    {"role": "B", "text": "Nee, u betaalt gewoon de afgesproken prijs.", "translation": "No, you just pay the agreed price."},
+    {"role": "A", "text": "Oké, gelukkig. Ik begon me al zorgen te maken.", "translation": "Okay, good. I was starting to get worried."},
+    {"role": "B", "text": "Begrijpelijk.", "translation": "Understandable."}
+  ]
+}
