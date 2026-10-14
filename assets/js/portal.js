@@ -1708,11 +1708,15 @@ initStatTips();
     _$('fba-list').innerHTML = page.map(item => {
       const typeIcon  = item.type === 'bug' ? '🐛' : item.type === 'idea' ? '💡' : '💬';
       const typeClass = `fba-card fba-${item.type}`;
+      /* env comes from an unauthenticated POST — escape it, and only link same-site dialogue URLs */
+      const _e = v => String(v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      const _dlgUrl = /^\/[\w./-]*dialogues\.html\?id=[\w-]+(&line=\d+)?$/.test(item.env?.url || '') ? item.env.url : '';
       const chips = [
-        item.env?.browser  ? `<span class="fba-chip">${item.env.browser.split('/')[0]}</span>` : '',
-        item.env?.screen   ? `<span class="fba-chip">${item.env.screen}</span>` : '',
+        _dlgUrl            ? `<a class="fba-chip" href="${_e(_dlgUrl)}" target="_blank" rel="noopener">🔗 open dialoog</a>` : '',
+        item.env?.browser  ? `<span class="fba-chip">${_e(item.env.browser.split('/')[0])}</span>` : '',
+        item.env?.screen   ? `<span class="fba-chip">${_e(item.env.screen)}</span>` : '',
         item.env?.logged_in? `<span class="fba-chip">🔑</span>` : '',
-        item.env?.active_level ? `<span class="fba-chip">📚 ${item.env.active_level}</span>` : '',
+        item.env?.active_level ? `<span class="fba-chip">📚 ${_e(item.env.active_level)}</span>` : '',
         item.env?.streak   ? `<span class="fba-chip">🔥 ${item.env.streak}</span>` : '',
       ].filter(Boolean).join('');
       return `
@@ -1771,7 +1775,7 @@ initStatTips();
   /* ── Boot ── */
   document.addEventListener('DOMContentLoaded', function () {
     _$('fb-btn').addEventListener('click', function () {
-      if (_isOwner() && !_$('fb-badge').hidden) {
+      if (_isOwner()) {   /* owner: the button always opens the inbox */
         openAdmin();
       } else {
         openModal();

@@ -6,7 +6,7 @@
   <script>(function(){try{var v=(JSON.parse(localStorage.getItem('nl_portal_theme'))||{}).v||'orange';document.documentElement.setAttribute('data-theme',v||'orange');}catch(e){document.documentElement.setAttribute('data-theme','orange');}})();</script>
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>🇳🇱 Dialoog Oefenen – Dutch Practice</title>
-  <link rel="stylesheet" href="assets/css/dlg.css?v=2">
+  <link rel="stylesheet" href="assets/css/dlg.css?v=3">
   <link rel="stylesheet" href="assets/css/themes.css?v=2">
   <style>
     /* Restore mob-bar buttons (search/wake/reload) hidden by sync.css 
@@ -148,7 +148,10 @@
 
         <!-- Conversation -->
         <div class="card">
-          <div class="sec-lbl">Gesprek / Conversation</div>
+          <div class="conv-head">
+            <div class="sec-lbl">Gesprek / Conversation</div>
+            <button id="rep-btn" class="rep-btn" title="Fout melden in deze dialoog / Report an issue">⚑ Fout melden</button>
+          </div>
           <div id="conv-list"></div>
         </div>
 
@@ -195,6 +198,25 @@
     </div>
   </div>
 
+  <!-- Report-issue modal -->
+  <div id="rep-overlay" aria-hidden="true">
+    <div class="rep-box" role="dialog" aria-modal="true" aria-labelledby="rep-title">
+      <div class="rep-hd">
+        <b id="rep-title">⚑ Fout melden</b>
+        <button id="rep-close" aria-label="Sluiten">✕</button>
+      </div>
+      <div id="rep-ctx"></div>
+      <div id="rep-cats">
+        <button type="button" class="rep-cat on" data-cat="Tekst">📝 Tekst (NL)</button>
+        <button type="button" class="rep-cat" data-cat="Vertaling">🌐 Vertaling (EN)</button>
+        <button type="button" class="rep-cat" data-cat="Rol">🎭 Rol / spreker</button>
+        <button type="button" class="rep-cat" data-cat="Anders">💬 Anders</button>
+      </div>
+      <textarea id="rep-note" maxlength="200" rows="3" placeholder="Wat klopt er niet? (optioneel) / What is wrong? (optional)"></textarea>
+      <button id="rep-send">Verstuur →</button>
+    </div>
+  </div>
+
   <!-- Toast notification -->
   <div id="toast" role="status" aria-live="polite">
     <span id="toast-msg"></span>
@@ -209,7 +231,7 @@
     <div id="yt-panel-body"></div>
   </div>
 
-  <script src="assets/js/dlgscript.js"></script>
+  <script src="assets/js/dlgscript.js?v=2"></script>
 </body>
 
 </html>
