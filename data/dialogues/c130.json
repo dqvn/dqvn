@@ -1,0 +1,23 @@
+{
+  "dialogue_title": "Hoeveel Kosten De Aardbeien?",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/8qXrbeKTs2c",
+  "roles": {
+    "A": "Marktverkoper",
+    "B": "Klant"
+  },
+  "conversation": [
+    {"role": "A", "text": "Goedemorgen. Kan ik u helpen?", "translation": "Good morning. Can I help you?"},
+    {"role": "B", "text": "Ja, graag. Hoeveel kosten de aardbeien?", "translation": "Yes, please. How much are the strawberries?"},
+    {"role": "A", "text": "€4 per bakje.", "translation": "€4 per punnet."},
+    {"role": "B", "text": "Dan neem ik één bakje aardbeien, alstublieft.", "translation": "Then I'll take one punnet of strawberries, please."},
+    {"role": "A", "text": "Natuurlijk. Wilt u verder nog wat?", "translation": "Of course. Would you like anything else?"},
+    {"role": "B", "text": "Ja, ik wil ook graag een kilo appels.", "translation": "Yes, I'd also like a kilo of apples."},
+    {"role": "A", "text": "Rode of groene appels?", "translation": "Red or green apples?"},
+    {"role": "B", "text": "Rode graag. Zijn ze zoet?", "translation": "Red, please. Are they sweet?"},
+    {"role": "A", "text": "Ja, heel zoet.", "translation": "Yes, very sweet."},
+    {"role": "B", "text": "Hm, die is lekker.", "translation": "Hm, that one's tasty."},
+    {"role": "A", "text": "Dan is het samen €7,50.", "translation": "Then that's €7.50 altogether."},
+    {"role": "B", "text": "Prima. Alsjeblieft.", "translation": "Fine. Here you go."}
+  ]
+}

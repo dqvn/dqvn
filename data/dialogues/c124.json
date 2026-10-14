@@ -1,0 +1,25 @@
+{
+  "dialogue_title": "Ik Heb Last Van Mijn Rug!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/vd8oQjJIuUk",
+  "roles": {
+    "A": "Dokter",
+    "B": "Patiënt"
+  },
+  "conversation": [
+    {"role": "A", "text": "Goedemorgen. Waar heeft u last van?", "translation": "Good morning. What seems to be the problem?"},
+    {"role": "B", "text": "Ik heb sinds een paar dagen last van mijn rug.", "translation": "For a few days now I've had trouble with my back."},
+    {"role": "A", "text": "Waar doet het precies pijn?", "translation": "Where exactly does it hurt?"},
+    {"role": "B", "text": "Vooral onderin mijn rug.", "translation": "Mostly in the lower part of my back."},
+    {"role": "A", "text": "Wanneer heeft u er de meeste last van?", "translation": "When do you have the most trouble with it?"},
+    {"role": "B", "text": "Vooral als ik lang zit of vooroverbuig.", "translation": "Mostly when I sit for a long time or bend forward."},
+    {"role": "A", "text": "Heeft u misschien iets zwaars getild?", "translation": "Have you perhaps lifted something heavy?"},
+    {"role": "B", "text": "Ja, ik heb zaterdag een zware doos verplaatst.", "translation": "Yes, I moved a heavy box on Saturday."},
+    {"role": "A", "text": "Dat kan de oorzaak zijn. Ik wil uw rug even onderzoeken.", "translation": "That could be the cause. I'd like to examine your back."},
+    {"role": "B", "text": "Is het iets serieus?", "translation": "Is it something serious?"},
+    {"role": "A", "text": "Dat lijkt op dit moment niet zo. Probeer uw rug een paar dagen niet te zwaar te belasten.", "translation": "It doesn't seem so at the moment. Try not to put too much strain on your back for a few days."},
+    {"role": "B", "text": "Moet ik de hele dag in bed blijven?", "translation": "Do I have to stay in bed all day?"},
+    {"role": "A", "text": "Nee, blijf rustig bewegen. Dat is meestal beter.", "translation": "No, keep moving gently. That's usually better."},
+    {"role": "B", "text": "Oké, dat ga ik doen. Dank u wel.", "translation": "Okay, I'll do that. Thank you."}
+  ]
+}

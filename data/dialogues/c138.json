@@ -1,0 +1,21 @@
+{
+  "dialogue_title": "Mag Ik Uw Identiteitsbewijs Zien?",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/333M74Uyk_k",
+  "roles": {
+    "A": "Agent",
+    "B": "Vrouw"
+  },
+  "conversation": [
+    {"role": "A", "text": "Mevrouw, mag ik u even iets vragen?", "translation": "Madam, may I ask you something?"},
+    {"role": "B", "text": "Eh, natuurlijk. Is er iets aan de hand?", "translation": "Uh, of course. Is something wrong?"},
+    {"role": "A", "text": "We zoeken iemand die hier net een tas heeft gestolen.", "translation": "We're looking for someone who just stole a bag here."},
+    {"role": "B", "text": "Oké, maar waarom vraagt u dat aan mij?", "translation": "Okay, but why are you asking me?"},
+    {"role": "A", "text": "De persoon droeg een rode jas, net als u.", "translation": "The person was wearing a red coat, just like you."},
+    {"role": "B", "text": "Oh, dat klinkt niet goed.", "translation": "Oh, that doesn't sound good."},
+    {"role": "A", "text": "Mag ik uw identiteitsbewijs even zien?", "translation": "May I see your ID for a moment?"},
+    {"role": "B", "text": "Ja, natuurlijk. Hier is het.", "translation": "Yes, of course. Here it is."},
+    {"role": "A", "text": "Dank u. Geen zorgen. U bent niet de persoon die we zoeken.", "translation": "Thank you. Don't worry. You're not the person we're looking for."},
+    {"role": "B", "text": "Gelukkig. Ik begon al zenuwachtig te worden.", "translation": "Thank goodness. I was starting to get nervous."}
+  ]
+}

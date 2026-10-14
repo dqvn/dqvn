@@ -1,0 +1,23 @@
+{
+  "dialogue_title": "Ik Zoek Een Mooi Boeketje",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/6iI4P-API8E",
+  "roles": {
+    "A": "Bloemist",
+    "B": "Klant"
+  },
+  "conversation": [
+    {"role": "A", "text": "Goedemiddag. Kan ik u helpen?", "translation": "Good afternoon. Can I help you?"},
+    {"role": "B", "text": "Ja, graag. Ik zoek een mooi boeketje.", "translation": "Yes, please. I'm looking for a nice little bouquet."},
+    {"role": "A", "text": "Natuurlijk. Is het voor een speciale gelegenheid?", "translation": "Of course. Is it for a special occasion?"},
+    {"role": "B", "text": "Ja, mijn moeder is morgen jarig.", "translation": "Yes, my mother's birthday is tomorrow."},
+    {"role": "A", "text": "Wat voor bloemen vindt ze mooi?", "translation": "What kind of flowers does she like?"},
+    {"role": "B", "text": "Ze houdt heel erg van roze bloemen.", "translation": "She loves pink flowers."},
+    {"role": "A", "text": "Dan zijn deze tulpen misschien leuk.", "translation": "Then these tulips might be nice."},
+    {"role": "B", "text": "Oh ja, die zijn prachtig. Hoeveel kosten ze?", "translation": "Oh yes, they're beautiful. How much are they?"},
+    {"role": "A", "text": "€15 voor een boeket.", "translation": "€15 for a bouquet."},
+    {"role": "B", "text": "Prima. Kunt u het ook als cadeau inpakken?", "translation": "Fine. Can you also gift-wrap it?"},
+    {"role": "A", "text": "Natuurlijk. Wilt u er ook een kaartje bij?", "translation": "Of course. Would you like a card with it too?"},
+    {"role": "B", "text": "Oh, goed idee. Ja, graag.", "translation": "Oh, good idea. Yes, please."}
+  ]
+}

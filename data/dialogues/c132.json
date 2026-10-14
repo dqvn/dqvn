@@ -1,0 +1,24 @@
+{
+  "dialogue_title": "In Welke Kamer Ligt Hij?",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/n9hLffHoo0U",
+  "roles": {
+    "A": "Bezoeker",
+    "B": "Receptionist"
+  },
+  "conversation": [
+    {"role": "A", "text": "Goedemiddag. Ik kom iemand bezoeken.", "translation": "Good afternoon. I've come to visit someone."},
+    {"role": "B", "text": "Natuurlijk. Wie wilt u bezoeken?", "translation": "Of course. Who would you like to visit?"},
+    {"role": "A", "text": "Mijn vriend Tom. Hij is gisteren opgenomen.", "translation": "My friend Tom. He was admitted yesterday."},
+    {"role": "B", "text": "Weet u op welke afdeling hij ligt?", "translation": "Do you know which ward he is on?"},
+    {"role": "A", "text": "Nee, helaas niet. Daarom kan ik zijn kamer niet vinden.", "translation": "No, unfortunately not. That's why I can't find his room."},
+    {"role": "B", "text": "Wat is zijn achternaam?", "translation": "What is his last name?"},
+    {"role": "A", "text": "De Fries. Tom de Fries.", "translation": "De Fries. Tom de Fries."},
+    {"role": "B", "text": "Een momentje. Hij ligt op de tweede verdieping. Kamer 214.", "translation": "One moment. He is on the second floor. Room 214."},
+    {"role": "A", "text": "Dank u. Mag ik meteen naar hem toe?", "translation": "Thank you. May I go to him right away?"},
+    {"role": "B", "text": "Ja, maar hij moet veel rusten. Het bezoekuur eindigt over 20 minuten.", "translation": "Yes, but he needs a lot of rest. Visiting hours end in 20 minutes."},
+    {"role": "A", "text": "Oh, dan ga ik snel naar boven.", "translation": "Oh, then I'll go upstairs quickly."},
+    {"role": "B", "text": "De liften zijn rechts.", "translation": "The elevators are on the right."},
+    {"role": "A", "text": "Perfect. Bedankt voor uw hulp.", "translation": "Perfect. Thanks for your help."}
+  ]
+}

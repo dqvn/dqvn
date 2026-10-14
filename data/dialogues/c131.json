@@ -1,0 +1,24 @@
+{
+  "dialogue_title": "Ik Heb Al Drie Dagen Keelpijn!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/1Vx6xEuz5Sw",
+  "roles": {
+    "A": "Dokter",
+    "B": "Patiënt"
+  },
+  "conversation": [
+    {"role": "A", "text": "Goedemorgen. Wat kan ik voor u doen?", "translation": "Good morning. What can I do for you?"},
+    {"role": "B", "text": "Ik heb al drie dagen keelpijn.", "translation": "I've had a sore throat for three days now."},
+    {"role": "A", "text": "Heeft u ook koorts?", "translation": "Do you also have a fever?"},
+    {"role": "B", "text": "Gisteren een beetje, maar vandaag niet meer.", "translation": "A little yesterday, but not anymore today."},
+    {"role": "A", "text": "Doet het pijn als u slikt?", "translation": "Does it hurt when you swallow?"},
+    {"role": "B", "text": "Ja, vooral als ik eet of drink.", "translation": "Yes, especially when I eat or drink."},
+    {"role": "A", "text": "Heeft u ook last van hoesten?", "translation": "Do you also have a cough?"},
+    {"role": "B", "text": "Een beetje, vooral 's nachts.", "translation": "A little, especially at night."},
+    {"role": "A", "text": "Oké, ik wil even naar uw keel kijken.", "translation": "Okay, I'd like to take a look at your throat."},
+    {"role": "B", "text": "Moet ik mijn mond open doen?", "translation": "Do I need to open my mouth?"},
+    {"role": "A", "text": "Ja, graag. Zeg maar \"ah\".", "translation": "Yes, please. Say \"ah\"."},
+    {"role": "A", "text": "Uw keel is behoorlijk rood. Neem voldoende rust en drink veel water.", "translation": "Your throat is quite red. Get enough rest and drink plenty of water."},
+    {"role": "B", "text": "Oké, hopelijk is het snel over.", "translation": "Okay, hopefully it will pass soon."}
+  ]
+}

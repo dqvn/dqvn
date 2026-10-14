@@ -1,0 +1,24 @@
+{
+  "dialogue_title": "We Zitten Vast in de Lift!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/P2NxAoL1Q4E",
+  "roles": {
+    "A": "Man",
+    "B": "Vrouw",
+    "C": "Hulplijn"
+  },
+  "conversation": [
+    {"role": "A", "text": "Hey, waarom stopt de lift?", "translation": "Hey, why is the elevator stopping?"},
+    {"role": "B", "text": "Geen idee. We zijn nog niet op de vijfde verdieping.", "translation": "No idea. We're not on the fifth floor yet."},
+    {"role": "A", "text": "De deuren gaan ook niet open.", "translation": "The doors aren't opening either."},
+    {"role": "B", "text": "Wacht, ik druk op de knop.", "translation": "Wait, I'll press the button."},
+    {"role": "A", "text": "Gebeurt er iets?", "translation": "Is anything happening?"},
+    {"role": "B", "text": "Nee, volgens mij zitten we vast.", "translation": "No, I think we're stuck."},
+    {"role": "A", "text": "Oh nee, wat moeten we nu doen?", "translation": "Oh no, what do we do now?"},
+    {"role": "B", "text": "Hier is een noodknop. Ik druk erop.", "translation": "Here's an emergency button. I'll press it."},
+    {"role": "C", "text": "Hallo, kunt u mij horen?", "translation": "Hello, can you hear me?"},
+    {"role": "B", "text": "Ja, we zitten vast in de lift.", "translation": "Yes, we're stuck in the elevator."},
+    {"role": "C", "text": "Blijf rustig, er komt iemand naar u toe.", "translation": "Stay calm, someone is coming to you."},
+    {"role": "A", "text": "Gelukkig. Ik neem voortaan de trap.", "translation": "Thank goodness. From now on I'll take the stairs."}
+  ]
+}

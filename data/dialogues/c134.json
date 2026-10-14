@@ -1,0 +1,23 @@
+{
+  "dialogue_title": "Vierhonderdtwintig Euro?!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/8CNoSGeyU_w",
+  "roles": {
+    "A": "Monteur",
+    "B": "Klant"
+  },
+  "conversation": [
+    {"role": "A", "text": "Goedemorgen. Uw auto is klaar.", "translation": "Good morning. Your car is ready."},
+    {"role": "B", "text": "Fijn. Was er veel kapot?", "translation": "Good. Was much broken?"},
+    {"role": "A", "text": "Nee, we hebben de olie en de remblokken vervangen.", "translation": "No, we replaced the oil and the brake pads."},
+    {"role": "B", "text": "Oké. Hoeveel moet ik betalen?", "translation": "Okay. How much do I have to pay?"},
+    {"role": "A", "text": "In totaal is het €420.", "translation": "In total it's €420."},
+    {"role": "B", "text": "Ik dacht dat het ongeveer €200 zou zijn.", "translation": "I thought it would be about €200."},
+    {"role": "A", "text": "De remblokken moesten helaas ook vervangen worden.", "translation": "Unfortunately, the brake pads also had to be replaced."},
+    {"role": "B", "text": "Maar waarom heeft niemand mij gebeld?", "translation": "But why did nobody call me?"},
+    {"role": "A", "text": "Oh, dat hadden we inderdaad moeten doen.", "translation": "Oh, we should indeed have done that."},
+    {"role": "B", "text": "Kunt u mij de rekening even tonen?", "translation": "Can you show me the bill, please?"},
+    {"role": "A", "text": "Natuurlijk. Ik leg alles even uit.", "translation": "Of course. I'll explain everything."},
+    {"role": "B", "text": "Graag, want ik wil weten waar ik voor betaal.", "translation": "Please do, because I want to know what I'm paying for."}
+  ]
+}

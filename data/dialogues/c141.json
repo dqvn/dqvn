@@ -1,0 +1,22 @@
+{
+  "dialogue_title": "Bij de Bakker",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/4moVg4bJBX8",
+  "roles": {
+    "A": "Bakker",
+    "B": "Klant"
+  },
+  "conversation": [
+    {"role": "A", "text": "Goedemorgen. Wat kan ik voor u doen?", "translation": "Good morning. What can I do for you?"},
+    {"role": "B", "text": "Goedemorgen. Ik wil graag een brood.", "translation": "Good morning. I'd like a loaf of bread."},
+    {"role": "A", "text": "Wit, bruin of volkoren?", "translation": "White, brown or wholemeal?"},
+    {"role": "B", "text": "Een volkorenbrood, alstublieft.", "translation": "A wholemeal loaf, please."},
+    {"role": "A", "text": "Wilt u het gesneden hebben?", "translation": "Would you like it sliced?"},
+    {"role": "B", "text": "Ja, graag.", "translation": "Yes, please."},
+    {"role": "A", "text": "Is dit alles?", "translation": "Is this everything?"},
+    {"role": "B", "text": "Dat was alles. Hoeveel kost het?", "translation": "That's all. How much is it?"},
+    {"role": "A", "text": "€3,50. Alstublieft.", "translation": "€3.50. Here you go."},
+    {"role": "B", "text": "Alsjeblieft. Fijne dag.", "translation": "Here you go. Have a nice day."},
+    {"role": "A", "text": "Dank u, hetzelfde.", "translation": "Thank you, you too."}
+  ]
+}

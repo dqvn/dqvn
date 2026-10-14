@@ -1,0 +1,23 @@
+{
+  "dialogue_title": "Zonder Ui, Alstublieft!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/R6-mIoKbGcw",
+  "roles": {
+    "A": "Medewerker",
+    "B": "Klant"
+  },
+  "conversation": [
+    {"role": "A", "text": "Hallo. Wat mag het zijn?", "translation": "Hello. What can I get you?"},
+    {"role": "B", "text": "Een döner, alstublieft.", "translation": "A döner, please."},
+    {"role": "A", "text": "Met alles erop?", "translation": "With everything on it?"},
+    {"role": "B", "text": "Ja, maar zonder ui. Graag.", "translation": "Yes, but without onion. Please."},
+    {"role": "A", "text": "Welke saus wilt u?", "translation": "Which sauce would you like?"},
+    {"role": "B", "text": "Knoflooksaus, alstublieft.", "translation": "Garlic sauce, please."},
+    {"role": "A", "text": "Wilt u het pittig?", "translation": "Would you like it spicy?"},
+    {"role": "B", "text": "Een klein beetje. Niet te pittig.", "translation": "A little bit. Not too spicy."},
+    {"role": "A", "text": "Prima. Hier is uw döner.", "translation": "Fine. Here is your döner."},
+    {"role": "B", "text": "Eh, volgens mij zit er ui op.", "translation": "Uh, I think there's onion on it."},
+    {"role": "A", "text": "Oh, u heeft gelijk. Sorry, ik maak meteen een nieuwe.", "translation": "Oh, you're right. Sorry, I'll make a new one right away."},
+    {"role": "B", "text": "Geen probleem. Dank u wel.", "translation": "No problem. Thank you."}
+  ]
+}

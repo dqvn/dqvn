@@ -1,0 +1,21 @@
+{
+  "dialogue_title": "Dat Is Mijn Telefoon!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/QMfHPf00gFo",
+  "roles": {
+    "A": "Man",
+    "B": "Vrouw"
+  },
+  "conversation": [
+    {"role": "A", "text": "Pardon? Dat is mijn telefoon.", "translation": "Excuse me? That's my phone."},
+    {"role": "B", "text": "Wat? Nee, deze is van mij. Waarom denkt u dat het uw telefoon is?", "translation": "What? No, this one is mine. Why do you think it's your phone?"},
+    {"role": "A", "text": "Dezelfde kleur, hetzelfde hoesje. Ik ben hem net verloren.", "translation": "Same color, same case. I just lost it."},
+    {"role": "B", "text": "Maar kijk, mijn foto staat op het scherm.", "translation": "But look, my photo is on the screen."},
+    {"role": "A", "text": "Oh, dan is die inderdaad van u.", "translation": "Oh, then it is indeed yours."},
+    {"role": "B", "text": "Misschien moeten we uw telefoon even bellen.", "translation": "Maybe we should call your phone."},
+    {"role": "A", "text": "Goed idee. Momentje, ik hoor hem.", "translation": "Good idea. One moment, I can hear it."},
+    {"role": "B", "text": "Waar komt het geluid vandaan?", "translation": "Where is the sound coming from?"},
+    {"role": "A", "text": "Uit mijn rugzak.", "translation": "From my backpack."},
+    {"role": "B", "text": "Nou, mysterie opgelost.", "translation": "Well, mystery solved."}
+  ]
+}

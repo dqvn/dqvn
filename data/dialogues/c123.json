@@ -1,0 +1,26 @@
+{
+  "dialogue_title": "Mag Ik 300 Gram Rundergehakt?",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/1gvmhbDNy7U",
+  "roles": {
+    "A": "Slager",
+    "B": "Klant"
+  },
+  "conversation": [
+    {"role": "A", "text": "Goedemiddag, wat mag het zijn?", "translation": "Good afternoon, what can I get you?"},
+    {"role": "B", "text": "Goedemiddag, mag ik 300 gram gehakt alstublieft?", "translation": "Good afternoon, may I have 300 grams of minced meat, please?"},
+    {"role": "A", "text": "Natuurlijk, is 320 gram ook goed?", "translation": "Of course, is 320 grams okay too?"},
+    {"role": "B", "text": "Ja hoor, dat is prima.", "translation": "Yes, that's fine."},
+    {"role": "A", "text": "Wilt u verder nog wat?", "translation": "Would you like anything else?"},
+    {"role": "B", "text": "Ja, ik wil ook graag twee kipfilets.", "translation": "Yes, I'd also like two chicken fillets."},
+    {"role": "A", "text": "Natuurlijk. Wilt u ze heel of in stukjes?", "translation": "Of course. Do you want them whole or in pieces?"},
+    {"role": "B", "text": "In stukjes graag.", "translation": "In pieces, please."},
+    {"role": "A", "text": "Geen probleem. Kan ik nog iets voor u pakken?", "translation": "No problem. Can I get you anything else?"},
+    {"role": "B", "text": "Nee, dat was alles. Hoeveel kost het samen?", "translation": "No, that's all. How much is it altogether?"},
+    {"role": "A", "text": "Dat is €12,50.", "translation": "That's €12.50."},
+    {"role": "B", "text": "Prima. Kan ik met de kaart betalen?", "translation": "Fine. Can I pay by card?"},
+    {"role": "A", "text": "Jazeker.", "translation": "Certainly."},
+    {"role": "B", "text": "Dank u wel. Fijne dag.", "translation": "Thank you. Have a nice day."},
+    {"role": "A", "text": "Graag gedaan. Fijne dag!", "translation": "You're welcome. Have a nice day!"}
+  ]
+}

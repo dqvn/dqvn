@@ -1,0 +1,24 @@
+{
+  "dialogue_title": "Er Zit Een Haar In Mijn Eten!",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/KHZ2PbqqDZw",
+  "roles": {
+    "A": "Klant",
+    "B": "Ober"
+  },
+  "conversation": [
+    {"role": "A", "text": "Pardon meneer, kunt u even komen?", "translation": "Excuse me, sir, could you come over for a moment?"},
+    {"role": "B", "text": "Natuurlijk. Is alles in orde?", "translation": "Of course. Is everything all right?"},
+    {"role": "A", "text": "Niet helemaal. Er zit een haar in mijn eten.", "translation": "Not quite. There's a hair in my food."},
+    {"role": "B", "text": "Oh, wat vervelend. Mijn excuses.", "translation": "Oh, how unpleasant. My apologies."},
+    {"role": "A", "text": "Kunt u misschien een nieuw gerecht brengen?", "translation": "Could you perhaps bring a new dish?"},
+    {"role": "B", "text": "Natuurlijk. Ik neem dit meteen mee.", "translation": "Of course. I'll take this away right now."},
+    {"role": "A", "text": "Hoe lang duurt het ongeveer?", "translation": "About how long will it take?"},
+    {"role": "B", "text": "In ongeveer 10 minuten is uw nieuwe gerecht klaar.", "translation": "Your new dish will be ready in about 10 minutes."},
+    {"role": "A", "text": "Oké, geen probleem.", "translation": "Okay, no problem."},
+    {"role": "B", "text": "En natuurlijk hoeft u dit gerecht niet te betalen.", "translation": "And of course you don't have to pay for this dish."},
+    {"role": "A", "text": "Oh, dat is aardig. Dank u wel.", "translation": "Oh, that's kind. Thank you."},
+    {"role": "B", "text": "Nogmaals onze excuses. Ik breng zo uw nieuwe gerecht.", "translation": "Our apologies once again. I'll bring your new dish shortly."},
+    {"role": "A", "text": "Dank u.", "translation": "Thank you."}
+  ]
+}

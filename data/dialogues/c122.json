@@ -1,0 +1,26 @@
+{
+  "dialogue_title": "Een Bed Kopen",
+  "language": "Dutch",
+  "video_url": "https://www.youtube.com/shorts/i2wq7JG7W7U",
+  "roles": {
+    "A": "Klant",
+    "B": "Verkoper"
+  },
+  "conversation": [
+    {"role": "A", "text": "Goedemiddag. Ik vind dit bed erg mooi.", "translation": "Good afternoon. I think this bed is very nice."},
+    {"role": "B", "text": "Dank u. Zoekt u een nieuw bed?", "translation": "Thank you. Are you looking for a new bed?"},
+    {"role": "A", "text": "Ja, maar dit bed is een beetje te klein.", "translation": "Yes, but this bed is a bit too small."},
+    {"role": "B", "text": "Welke maat zoekt u?", "translation": "Which size are you looking for?"},
+    {"role": "A", "text": "Hebben jullie dit bed ook in 180 bij 200?", "translation": "Do you also have this bed in 180 by 200?"},
+    {"role": "B", "text": "Ja, die maat hebben we ook.", "translation": "Yes, we have that size too."},
+    {"role": "A", "text": "Zit een matras bij de prijs inbegrepen?", "translation": "Is a mattress included in the price?"},
+    {"role": "B", "text": "Nee, de matras moet u apart kopen.", "translation": "No, you have to buy the mattress separately."},
+    {"role": "A", "text": "Oké. Hoeveel kost het bed zonder matras?", "translation": "Okay. How much does the bed cost without a mattress?"},
+    {"role": "B", "text": "Het bed kost €650.", "translation": "The bed costs €650."},
+    {"role": "A", "text": "En kunnen jullie het bij mij thuis bezorgen?", "translation": "And can you deliver it to my home?"},
+    {"role": "B", "text": "Jazeker. De bezorging kost €40.", "translation": "Certainly. Delivery costs €40."},
+    {"role": "A", "text": "Wanneer kan het geleverd worden?", "translation": "When can it be delivered?"},
+    {"role": "B", "text": "Waarschijnlijk volgende week woensdag.", "translation": "Probably next Wednesday."},
+    {"role": "A", "text": "Perfect. Dan neem ik het.", "translation": "Perfect. Then I'll take it."}
+  ]
+}
