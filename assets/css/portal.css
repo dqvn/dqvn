@@ -1806,7 +1806,13 @@ main {
   font-size: .75rem; color: #94a3b8; text-transform: capitalize;
 }
 .fba-card-hd b { color: #f1f5f9; }
-.fba-time { font-size: .7rem; color: #64748b; }
+.fba-time { font-size: .7rem; color: #64748b; display: inline-flex; align-items: center; gap: 6px; }
+.fba-del {
+  border: none; background: transparent; cursor: pointer; font-size: .85rem; line-height: 1;
+  padding: 3px 5px; border-radius: 6px; opacity: .55; transition: opacity .15s, background .15s;
+}
+.fba-del:hover { opacity: 1; background: rgba(248,113,113,.18); }
+.fba-del:disabled { opacity: .3; cursor: default; }
 .fba-msg {
   font-size: .87rem; color: #e2e8f0;
   line-height: 1.5;

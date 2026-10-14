@@ -1418,3 +1418,44 @@ input:checked ~ .sw-track::before { transform: translateX(18px); }
 }
 .dlg-snip mark { background: rgba(255,200,60,.35); color: #fff; border-radius: 2px; padding: 0 1px; }
 .dlg-item.active .dlg-snip { color: rgba(255,255,255,.85); }
+
+/* ── Conversation lines: modern hover focus (light follows the pointer) ── */
+.c-line {
+  position: relative; overflow: hidden; isolation: isolate;
+  --rc: var(--acc); --mx: 50%; --my: 50%;
+  transition: background .25s, border-color .25s, box-shadow .25s, transform .2s, opacity .25s;
+}
+/* soft spotlight in the role colour, centred on the pointer */
+.c-line::before {
+  content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: 0;
+  background:
+    radial-gradient(260px circle at var(--mx) var(--my), rgba(255,255,255,.55), transparent 65%),
+    linear-gradient(90deg, color-mix(in srgb, var(--rc) 13%, transparent), transparent 70%);
+  transition: opacity .25s;
+}
+/* role-coloured accent bar that grows in on the left */
+.c-line::after {
+  content: ''; position: absolute; left: 0; top: 10%; bottom: 10%; width: 3px; border-radius: 3px;
+  background: var(--rc); transform: scaleY(0); transition: transform .25s cubic-bezier(.34,1.3,.64,1);
+  pointer-events: none;
+}
+@media (hover: hover) {
+  .c-line:hover:not(.is-active) {
+    border-color: color-mix(in srgb, var(--rc) 35%, transparent);
+    box-shadow: 0 4px 18px color-mix(in srgb, var(--rc) 16%, transparent);
+    transform: translateX(3px);
+  }
+  .c-line:hover::before { opacity: 1; }
+  .c-line:hover::after  { transform: scaleY(1); }
+  .c-line.is-done:hover { opacity: .8; }
+}
+.c-line:focus-within::after { transform: scaleY(1); }
+[data-theme="dark"] .c-line::before {
+  background:
+    radial-gradient(260px circle at var(--mx) var(--my), rgba(255,255,255,.10), transparent 65%),
+    linear-gradient(90deg, color-mix(in srgb, var(--rc) 20%, transparent), transparent 70%);
+}
+@media (prefers-reduced-motion: reduce) {
+  .c-line, .c-line::before, .c-line::after { transition: none; }
+  .c-line:hover:not(.is-active) { transform: none; }
+}

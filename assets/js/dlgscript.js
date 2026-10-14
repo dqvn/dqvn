@@ -813,7 +813,7 @@ function renderConv(activeLine = -1, doneUpTo = -1) {
         const body = showFull
             ? `<div class="c-text">${esc(line.text)}</div><div class="c-trans">${esc(line.translation)}</div>${WAVE_HTML}`
             : `<div class="c-wait"><div class="c-dots"><span></span><span></span><span></span></div><span>${esc(current.roles[line.role] || line.role)} aan het woord…</span></div>`;
-        return `<div class="${cls}" id="cl-${i}">
+        return `<div class="${cls}" id="cl-${i}" style="--rc:${color}">
           <div class="c-badge" style="background:${color}" title="${esc(current.roles[line.role] || line.role)}">${esc(line.role)}</div>
           <div class="c-body">${body}</div>
           <button class="c-flag" data-line="${i}" title="Fout in deze regel? Meld het.
@@ -1244,6 +1244,15 @@ async function sendReport() {
         showToast('Kon melding niet versturen: ' + e.message, 5000);
     }
 }
+
+/* Hover spotlight: the glow in each line follows the pointer (CSS reads --mx / --my) */
+document.getElementById('conv-list').addEventListener('pointermove', e => {
+    const line = e.target.closest('.c-line');
+    if (!line) return;
+    const r = line.getBoundingClientRect();
+    line.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+    line.style.setProperty('--my', (e.clientY - r.top)  + 'px');
+});
 
 document.getElementById('rep-btn').addEventListener('click', () => openReport(-1));
 document.getElementById('conv-list').addEventListener('click', e => {
