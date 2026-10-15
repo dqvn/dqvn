@@ -2734,5 +2734,978 @@
  },
  "zwak": {
   "e": "😔"
+ },
+ "(rechts/links) afslaan": {
+  "q": "car turning at junction road sign",
+  "e": "↪️"
+ },
+ "alternatief": {
+  "e": "🔀"
+ },
+ "bedanken": {
+  "e": "🙏"
+ },
+ "behoorlijk": {
+  "e": "👍"
+ },
+ "bestuurder, de": {
+  "q": "bus driver steering wheel",
+  "e": "🚌"
+ },
+ "blijken": {
+  "e": "🔎"
+ },
+ "bord, het": {
+  "q": "traffic sign road",
+  "e": "🚸"
+ },
+ "controleur, de": {
+  "q": "ticket inspector on train",
+  "e": "🎫"
+ },
+ "cursus, de": {
+  "q": "classroom course students",
+  "e": "🎓"
+ },
+ "dagelijks": {
+  "e": "📅"
+ },
+ "dichtdoen": {
+  "q": "closing a door",
+  "e": "🚪"
+ },
+ "duidelijk": {
+  "e": "💡"
+ },
+ "eind, het": {
+  "e": "🔚"
+ },
+ "entreeprijs, de": {
+  "q": "museum entrance ticket desk",
+  "e": "🎟️"
+ },
+ "geldig": {
+  "e": "✅"
+ },
+ "gesloten": {
+  "q": "closed sign on shop door",
+  "e": "🔒"
+ },
+ "hinderen": {
+  "e": "🚧"
+ },
+ "hoelang": {
+  "e": "⏱️"
+ },
+ "Koningsdag, de": {
+  "q": "orange crowd kings day amsterdam",
+  "e": "🧡"
+ },
+ "kruispunt, het": {
+  "q": "road crossing intersection",
+  "e": "🚦"
+ },
+ "kwartier, het": {
+  "q": "clock showing quarter past",
+  "e": "🕒"
+ },
+ "kwijtraken": {
+  "q": "searching for lost keys",
+  "e": "🔑"
+ },
+ "linksaf": {
+  "q": "left turn arrow sign",
+  "e": "⬅️"
+ },
+ "mogelijk": {
+  "e": "🤔"
+ },
+ "net als": {
+  "e": "🟰"
+ },
+ "omroepen": {
+  "q": "train station announcement speaker",
+  "e": "📢"
+ },
+ "onbekend": {
+  "e": "❓"
+ },
+ "onderweg": {
+  "q": "road trip car on a road",
+  "e": "🛣️"
+ },
+ "onverplicht": {
+  "e": "🆓"
+ },
+ "opletten": {
+  "e": "⚠️"
+ },
+ "pinkstermaandag, de": {
+  "e": "🗓️"
+ },
+ "rechtdoor": {
+  "q": "straight ahead arrow road sign",
+  "e": "⬆️"
+ },
+ "ritje, het": {
+  "q": "short bike ride",
+  "e": "🚲"
+ },
+ "roepen": {
+  "q": "person shouting calling",
+  "e": "📣"
+ },
+ "route, de": {
+  "q": "route map with line",
+  "e": "🗺️"
+ },
+ "routebeschrijving, de": {
+  "q": "printed directions map",
+  "e": "🗺️"
+ },
+ "sluiten": {
+  "q": "closing a door",
+  "e": "🔒"
+ },
+ "spannend": {
+  "q": "roller coaster thrill",
+  "e": "🎢"
+ },
+ "stappen": {
+  "e": "🍻"
+ },
+ "stellen": {
+  "e": "❓"
+ },
+ "tijdens": {
+  "e": "⏳"
+ },
+ "verplicht": {
+  "e": "☑️"
+ },
+ "vervoersbewijs, het": {
+  "q": "train ticket",
+  "e": "🎫"
+ },
+ "vlak bij": {
+  "e": "📍"
+ },
+ "vlak voor": {
+  "e": "📍"
+ },
+ "vlakbij": {
+  "e": "📍"
+ },
+ "volwassene, de": {
+  "q": "adult man and woman standing",
+  "e": "🧑"
+ },
+ "waarnaartoe": {
+  "e": "🧭"
+ },
+ "weekendje, het": {
+  "q": "weekend trip suitcase",
+  "e": "🧳"
+ },
+ "wijzen": {
+  "q": "finger pointing direction signpost",
+  "e": "👉"
+ },
+ "zichtbaar": {
+  "e": "👁️"
+ },
+ "zorgen voor": {
+  "q": "nurse caring for a patient",
+  "e": "🤲"
+ },
+ "afgieten": {
+  "q": "draining pasta in colander",
+  "e": "🍝"
+ },
+ "afkeer, de": {
+  "e": "🤢"
+ },
+ "afspraakje, het": {
+  "q": "couple on a date at restaurant",
+  "e": "💑"
+ },
+ "afwas, de": {
+  "q": "dirty dishes in sink",
+  "e": "🍽️"
+ },
+ "beetgaar": {
+  "q": "al dente pasta cooked",
+  "e": "🍝"
+ },
+ "belofte, de": {
+  "q": "pinky promise",
+  "e": "🤞"
+ },
+ "bestek, het": {
+  "q": "cutlery knife fork spoon",
+  "e": "🍴"
+ },
+ "bestrooien": {
+  "q": "sprinkling sugar on pastry",
+  "e": "🧂"
+ },
+ "bitter": {
+  "q": "bitter lemon sour face",
+  "e": "🍋"
+ },
+ "boeren": {
+  "e": "😮"
+ },
+ "fris": {
+  "q": "fresh green lettuce",
+  "e": "🥬"
+ },
+ "gast, de": {
+  "e": "🙋"
+ },
+ "genoeg": {
+  "e": "✋"
+ },
+ "gerecht, het": {
+  "q": "plated dish dinner",
+  "e": "🍽️"
+ },
+ "geweldig": {
+  "e": "🤩"
+ },
+ "herinneren (zich -)": {
+  "e": "🧠"
+ },
+ "hoeveelheid, de": {
+  "q": "measuring cup flour",
+  "e": "🥛"
+ },
+ "inkoken": {
+  "q": "sauce simmering in a pan",
+  "e": "🍲"
+ },
+ "inschenken": {
+  "q": "pouring tea into a cup",
+  "e": "🍵"
+ },
+ "laten": {
+  "e": "🤷"
+ },
+ "lusten": {
+  "e": "😋"
+ },
+ "meevallen": {
+  "e": "😌"
+ },
+ "niet hoeven": {
+  "e": "🙅"
+ },
+ "ondertussen": {
+  "e": "⏳"
+ },
+ "onzin, de": {
+  "e": "🙄"
+ },
+ "opgroeien": {
+  "q": "child growing up height chart",
+  "e": "👶"
+ },
+ "oproepen": {
+  "e": "📣"
+ },
+ "ovenschotel, de": {
+  "q": "casserole baked dish",
+  "e": "🍲"
+ },
+ "pan, de": {
+  "q": "frying pan on stove",
+  "e": "🍳"
+ },
+ "peper, de": {
+  "q": "pepper mill black pepper",
+  "e": "🌶️"
+ },
+ "pureestamper, de": {
+  "q": "potato masher",
+  "e": "🥔"
+ },
+ "regel, de": {
+  "e": "📏"
+ },
+ "roosje, het": {
+  "q": "rose-shaped rosette",
+  "e": "🌹"
+ },
+ "sappig": {
+  "q": "juicy orange cut",
+  "e": "🍊"
+ },
+ "schenken": {
+  "q": "pouring wine into glass",
+  "e": "🍷"
+ },
+ "scherp": {
+  "q": "sharp knife blade",
+  "e": "🔪"
+ },
+ "schillen": {
+  "q": "peeling potato with peeler",
+  "e": "🥔"
+ },
+ "schrokken": {
+  "q": "person eating greedily",
+  "e": "🍔"
+ },
+ "serveren": {
+  "q": "waiter serving a plate",
+  "e": "🍽️"
+ },
+ "simpel": {
+  "e": "👌"
+ },
+ "slurpen": {
+  "q": "slurping noodles",
+  "e": "🍜"
+ },
+ "smaakvol": {
+  "e": "😋"
+ },
+ "smakelijk": {
+  "e": "😋"
+ },
+ "smakeloos": {
+  "e": "😐"
+ },
+ "smakken": {
+  "e": "😛"
+ },
+ "smelten": {
+  "q": "melting ice cream",
+  "e": "🍦"
+ },
+ "snijden": {
+  "q": "cutting vegetables with knife",
+  "e": "🔪"
+ },
+ "stampen": {
+  "q": "mashing potatoes",
+  "e": "🥔"
+ },
+ "steunen": {
+  "q": "supporting hand on shoulder",
+  "e": "🤝"
+ },
+ "tafel dekken, de": {
+  "q": "set dining table plates",
+  "e": "🍽️"
+ },
+ "tafelgenoot, de": {
+  "q": "friends sharing dinner at table",
+  "e": "🍴"
+ },
+ "uitdaging, de": {
+  "q": "climbing a mountain challenge",
+  "e": "🧗"
+ },
+ "verdelen": {
+  "q": "dividing a cake into slices",
+  "e": "🍰"
+ },
+ "waarschijnlijk": {
+  "e": "🤔"
+ },
+ "zout": {
+  "q": "salt shaker",
+  "e": "🧂"
+ },
+ "aanduiden": {
+  "e": "👉"
+ },
+ "afhangen van": {
+  "e": "⚖️"
+ },
+ "al": {
+  "e": "✅"
+ },
+ "algemeen": {
+  "e": "🌐"
+ },
+ "bankstel, het": {
+  "q": "living room sofa set",
+  "e": "🛋️"
+ },
+ "bepaald": {
+  "e": "🎯"
+ },
+ "bevolking, de": {
+  "q": "crowd of people on street",
+  "e": "👥"
+ },
+ "bijzonder": {
+  "e": "✨"
+ },
+ "bouwmarkt, de": {
+  "q": "diy hardware store aisle",
+  "e": "🔨"
+ },
+ "buitenlands": {
+  "q": "foreign flags",
+  "e": "🌍"
+ },
+ "contrast, het": {
+  "q": "black and white contrast",
+  "e": "◼️"
+ },
+ "dekbedovertrek, het": {
+  "q": "duvet cover bed",
+  "e": "🛏️"
+ },
+ "diepte, de": {
+  "q": "deep well looking down",
+  "e": "🕳️"
+ },
+ "doorlopen": {
+  "e": "🚶"
+ },
+ "doorsnee": {
+  "e": "📊"
+ },
+ "eeuw, de": {
+  "q": "old historic building century",
+  "e": "🏰"
+ },
+ "eigenaar, de": {
+  "e": "🔑"
+ },
+ "enorm": {
+  "q": "giant huge elephant",
+  "e": "🐘"
+ },
+ "fauteuil, de": {
+  "q": "armchair",
+  "e": "🪑"
+ },
+ "gedoe, het": {
+  "e": "😩"
+ },
+ "geen enkel": {
+  "e": "0️⃣"
+ },
+ "geheel": {
+  "e": "💯"
+ },
+ "gelijk hebben": {
+  "e": "✅"
+ },
+ "hartstikke": {
+  "e": "💯"
+ },
+ "herkomst, de": {
+  "e": "🗺️"
+ },
+ "hetzelfde": {
+  "e": "🟰"
+ },
+ "invloed, de": {
+  "e": "🌊"
+ },
+ "klemtoon, de": {
+  "e": "❗"
+ },
+ "laken, het": {
+  "q": "bed sheet",
+  "e": "🛏️"
+ },
+ "massaal": {
+  "q": "huge crowd",
+  "e": "👥"
+ },
+ "midden, het": {
+  "e": "🎯"
+ },
+ "modern": {
+  "q": "modern architecture building",
+  "e": "🏢"
+ },
+ "niemand": {
+  "e": "🚫"
+ },
+ "norm, de": {
+  "e": "📏"
+ },
+ "omgeving, de": {
+  "q": "surroundings neighbourhood view",
+  "e": "🏞️"
+ },
+ "ontdekken": {
+  "q": "discovering with magnifying glass",
+  "e": "🔍"
+ },
+ "ontvangen": {
+  "q": "receiving a parcel",
+  "e": "📬"
+ },
+ "ouderwets": {
+  "q": "old fashioned vintage telephone",
+  "e": "☎️"
+ },
+ "overeenkomst, de": {
+  "e": "🟰"
+ },
+ "overmorgen": {
+  "e": "📆"
+ },
+ "passen bij": {
+  "e": "🧩"
+ },
+ "plek, de": {
+  "e": "📍"
+ },
+ "prachtig": {
+  "q": "beautiful sunset landscape",
+  "e": "🌅"
+ },
+ "rijtjeshuis, het": {
+  "q": "dutch row houses terraced",
+  "e": "🏘️"
+ },
+ "salontafel, de": {
+  "q": "coffee table living room",
+  "e": "☕"
+ },
+ "soort, het": {
+  "e": "🏷️"
+ },
+ "spul, het": {
+  "e": "📦"
+ },
+ "studeerkamer, de": {
+  "q": "home study desk books",
+  "e": "📚"
+ },
+ "te koop": {
+  "q": "for sale sign house",
+  "e": "🏷️"
+ },
+ "tintje, het": {
+  "q": "color shades swatches",
+  "e": "🎨"
+ },
+ "type, het": {
+  "e": "🔤"
+ },
+ "uitproberen": {
+  "e": "🧪"
+ },
+ "uitrusten": {
+  "q": "person resting in hammock",
+  "e": "🛌"
+ },
+ "uitsluitend": {
+  "e": "☝️"
+ },
+ "uitzicht, het": {
+  "q": "view from window mountains",
+  "e": "🏞️"
+ },
+ "van mening zijn": {
+  "e": "💭"
+ },
+ "veranderen": {
+  "q": "butterfly caterpillar change",
+  "e": "🦋"
+ },
+ "verplaatsen": {
+  "q": "moving furniture",
+  "e": "📦"
+ },
+ "voldoende": {
+  "e": "✅"
+ },
+ "voordeur, de": {
+  "q": "front door of a house",
+  "e": "🚪"
+ },
+ "voorkant, de": {
+  "e": "⬆️"
+ },
+ "voorkomen": {
+  "e": "🛡️"
+ },
+ "vroeger": {
+  "q": "old black and white photograph",
+  "e": "📷"
+ },
+ "waarde, de": {
+  "e": "💎"
+ },
+ "beschadigen": {
+  "q": "cracked broken screen",
+  "e": "💥"
+ },
+ "beterschap": {
+  "q": "get well soon card flowers",
+  "e": "💐"
+ },
+ "bloeden": {
+  "q": "bleeding finger plaster",
+  "e": "🩸"
+ },
+ "buikgriep, de": {
+  "e": "🤢"
+ },
+ "diagnose, de": {
+  "q": "doctor examining patient",
+  "e": "🩺"
+ },
+ "dokter, de": {
+  "q": "doctor with stethoscope",
+  "e": "👨‍⚕️"
+ },
+ "dosering, de": {
+  "q": "medicine spoon dose",
+  "e": "🥄"
+ },
+ "dosis, de": {
+  "q": "medicine pills dose",
+  "e": "💊"
+ },
+ "eigenwijs": {
+  "e": "😤"
+ },
+ "ernstig": {
+  "e": "😟"
+ },
+ "flauwvallen": {
+  "e": "😵"
+ },
+ "gemiddelde, het": {
+  "e": "📊"
+ },
+ "gezondheid, de": {
+  "q": "healthy lifestyle fruit",
+  "e": "🍎"
+ },
+ "griepprik, de": {
+  "q": "flu vaccine injection",
+  "e": "💉"
+ },
+ "halen": {
+  "q": "fetching water bucket",
+  "e": "🪣"
+ },
+ "hechten": {
+  "q": "stitches sutures wound",
+  "e": "🩹"
+ },
+ "hieronder": {
+  "e": "👇"
+ },
+ "in vergelijking met": {
+  "e": "⚖️"
+ },
+ "inademen": {
+  "q": "breathing in fresh air",
+  "e": "🌬️"
+ },
+ "innemen": {
+  "q": "taking a pill with water",
+  "e": "💊"
+ },
+ "inwoner, de": {
+  "e": "🏘️"
+ },
+ "kies, de": {
+  "q": "molar tooth",
+  "e": "🦷"
+ },
+ "klacht, de": {
+  "e": "😷"
+ },
+ "kleren uitdoen": {
+  "e": "👕"
+ },
+ "last hebben van": {
+  "e": "😣"
+ },
+ "(…)maal": {
+  "e": "✖️"
+ },
+ "meekrijgen": {
+  "e": "🎒"
+ },
+ "meten": {
+  "q": "measuring tape",
+  "e": "📏"
+ },
+ "minimaal": {
+  "e": "⬇️"
+ },
+ "onderzoeken": {
+  "q": "doctor examining throat",
+  "e": "🩺"
+ },
+ "onmiddellijk": {
+  "e": "⚡"
+ },
+ "ontspannen": {
+  "q": "person relaxing yoga",
+  "e": "🧘"
+ },
+ "opereren": {
+  "q": "surgeons in operating room",
+  "e": "🏥"
+ },
+ "overbelast": {
+  "e": "😫"
+ },
+ "patiënt, de": {
+  "q": "patient in hospital bed",
+  "e": "🛏️"
+ },
+ "pil, de": {
+  "q": "pills tablets",
+  "e": "💊"
+ },
+ "relatief": {
+  "e": "⚖️"
+ },
+ "roeren": {
+  "q": "stirring a cup of tea with spoon",
+  "e": "🥄"
+ },
+ "schadelijk": {
+  "q": "warning poison skull sign",
+  "e": "☠️"
+ },
+ "scoren": {
+  "q": "football scoring goal",
+  "e": "⚽"
+ },
+ "snee, de": {
+  "q": "cut finger bandage",
+  "e": "🩹"
+ },
+ "spuitje, het": {
+  "q": "syringe injection",
+  "e": "💉"
+ },
+ "stoten": {
+  "e": "🤕"
+ },
+ "tablet, de/het": {
+  "q": "white tablets pills",
+  "e": "💊"
+ },
+ "uitademen": {
+  "e": "💨"
+ },
+ "uiteen": {
+  "e": "↔️"
+ },
+ "uitgave, de": {
+  "e": "💸"
+ },
+ "uitkleden": {
+  "e": "👕"
+ },
+ "vergelijken met": {
+  "e": "⚖️"
+ },
+ "verhoging hebben": {
+  "q": "thermometer fever",
+  "e": "🌡️"
+ },
+ "verkouden": {
+  "q": "person with cold blowing nose tissue",
+  "e": "🤧"
+ },
+ "verslaafd": {
+  "e": "🚬"
+ },
+ "vooroverbuigen": {
+  "q": "person bending forward",
+  "e": "🙇"
+ },
+ "voorzichtig": {
+  "q": "careful wet floor sign",
+  "e": "⚠️"
+ },
+ "ziek": {
+  "q": "sick person in bed thermometer",
+  "e": "🤒"
+ },
+ "aantrekkelijk": {
+  "e": "😍"
+ },
+ "belachelijk": {
+  "e": "🤡"
+ },
+ "bereiken": {
+  "q": "climber reaching the summit",
+  "e": "🏔️"
+ },
+ "beschouwen": {
+  "e": "🧐"
+ },
+ "beslissen": {
+  "q": "coin toss decision",
+  "e": "🪙"
+ },
+ "beslissing, de": {
+  "q": "two roads fork decision",
+  "e": "🔀"
+ },
+ "collega, de": {
+  "q": "colleagues talking in office",
+  "e": "🧑‍💼"
+ },
+ "deelnemen": {
+  "e": "🙋"
+ },
+ "directheid, de": {
+  "e": "🎯"
+ },
+ "efficiëntie, de": {
+  "e": "⚙️"
+ },
+ "ego, het": {
+  "e": "🦚"
+ },
+ "eter, de": {
+  "q": "person eating meal",
+  "e": "🍽️"
+ },
+ "feit, het": {
+  "e": "📌"
+ },
+ "felicitatie, de": {
+  "q": "congratulations balloons card",
+  "e": "🎉"
+ },
+ "flauwekul, de": {
+  "e": "🙄"
+ },
+ "folder, de": {
+  "q": "brochure folder leaflet",
+  "e": "📄"
+ },
+ "geruststellen": {
+  "q": "comforting hug",
+  "e": "🤗"
+ },
+ "gevaarlijk": {
+  "q": "danger warning sign",
+  "e": "⚠️"
+ },
+ "groeien": {
+  "q": "plant growing seedling",
+  "e": "🌱"
+ },
+ "grof": {
+  "q": "rough coarse sandpaper",
+  "e": "🪨"
+ },
+ "in verband met": {
+  "e": "🔗"
+ },
+ "inbreng, de": {
+  "e": "💡"
+ },
+ "kern, de": {
+  "q": "apple core",
+  "e": "🍎"
+ },
+ "klagen": {
+  "e": "😤"
+ },
+ "lastig": {
+  "e": "😣"
+ },
+ "management, het": {
+  "q": "business meeting boardroom",
+  "e": "💼"
+ },
+ "meedoen": {
+  "e": "🙌"
+ },
+ "menen": {
+  "e": "🤝"
+ },
+ "negatief": {
+  "q": "thumbs down",
+  "e": "👎"
+ },
+ "oneens": {
+  "e": "🙅"
+ },
+ "op basis van": {
+  "e": "📚"
+ },
+ "opmaken": {
+  "e": "💄"
+ },
+ "opscheppen": {
+  "q": "serving food ladle",
+  "e": "🍲"
+ },
+ "overleg, het": {
+  "q": "business meeting discussion table",
+  "e": "🗣️"
+ },
+ "positief": {
+  "q": "thumbs up",
+  "e": "👍"
+ },
+ "privéleven, het": {
+  "e": "🏠"
+ },
+ "punctualiteit, de": {
+  "q": "punctual clock on time",
+  "e": "⏰"
+ },
+ "ruim van tevoren": {
+  "e": "⏩"
+ },
+ "serieus": {
+  "e": "😐"
+ },
+ "toegeven": {
+  "e": "🙇"
+ },
+ "uitnodigen": {
+  "q": "party invitation card",
+  "e": "💌"
+ },
+ "vanzelfsprekend": {
+  "e": "✅"
+ },
+ "verkoopster, de": {
+  "q": "shop assistant at counter",
+  "e": "🛍️"
+ },
+ "verschrikkelijk": {
+  "e": "😱"
+ },
+ "verwijsbrief, de": {
+  "q": "medical referral letter",
+  "e": "📃"
+ },
+ "vreemd": {
+  "e": "🤨"
+ },
+ "waarderen": {
+  "e": "🙏"
+ },
+ "wijziging, de": {
+  "e": "✏️"
+ },
+ "zakendoen": {
+  "q": "business handshake deal",
+  "e": "🤝"
+ },
+ "zakenwereld, de": {
+  "q": "city business district skyscrapers",
+  "e": "🏙️"
  }
 }
