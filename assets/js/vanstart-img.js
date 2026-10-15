@@ -140,6 +140,7 @@
   /** Add/remove the header cell and give every body row (spacers too) its image cell. */
   function syncColumn() {
     const headRow = document.querySelector('#word-list thead tr');
+    document.getElementById('word-list')?.classList.toggle('vs-has-imgcol', wide.matches);
     const th = headRow?.querySelector('th.vs-img-th');
     if (wide.matches && headRow && !th) {
       const h = document.createElement('th');

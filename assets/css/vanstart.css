@@ -959,3 +959,10 @@ th {
 /* ── Dedicated image column (desktop only; see syncColumn() in vanstart-img.js) ── */
 #word-list th.vs-img-th, #word-list td.vs-imgcell { width: 150px; text-align: center; vertical-align: middle; }
 #word-list td.vs-imgcell .vs-pic { margin: 0; }
+
+/* Column widths with the Image column present (desktop): give the Sample sentence
+   the most room. Columns: 1 No. · 2 Dutch · 3 Image · 4 English · 5 Sample · 6 Vietnamese */
+#word-list.vs-has-imgcol th:nth-child(2), #word-list.vs-has-imgcol td:nth-child(2) { width: 22%; }
+#word-list.vs-has-imgcol th:nth-child(4), #word-list.vs-has-imgcol td:nth-child(4) { width: 14%; }
+#word-list.vs-has-imgcol th:nth-child(5), #word-list.vs-has-imgcol td:nth-child(5) { width: 38%; min-width: 300px; }
+#word-list.vs-has-imgcol th:nth-child(6), #word-list.vs-has-imgcol td:nth-child(6) { width: 14%; }
