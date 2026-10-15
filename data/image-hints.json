@@ -7115,5 +7115,1287 @@
  },
  "toen": {
   "e": "⏪"
+ },
+ "de werkdag (-en)": {
+  "e": "💼"
+ },
+ "de taalles (-ssen)": {
+  "q": "language lesson classroom whiteboard",
+  "e": "🗣️"
+ },
+ "het dialect (-en)": {
+  "e": "🗣️"
+ },
+ "het accent (-en)": {
+  "e": "🗣️"
+ },
+ "veel te": {
+  "e": "⚠️"
+ },
+ "velen": {
+  "e": "👥"
+ },
+ "het werkwoord (-en)": {
+  "e": "🔤"
+ },
+ "modale werkwoorden": {
+  "e": "🔤"
+ },
+ "de infinitief (-ven)": {
+  "e": "🔤"
+ },
+ "het substantief (-ven)": {
+  "e": "🔤"
+ },
+ "de bioscoop (-copen)": {
+  "q": "cinema movie theatre",
+  "e": "🎬"
+ },
+ "het plan (-nnen)": {
+  "q": "plan notes on a whiteboard",
+  "e": "🗓️"
+ },
+ "de tip (-s)": {
+  "e": "💡"
+ },
+ "het advies (-zen)": {
+  "e": "💬"
+ },
+ "de concentratie (-s)": {
+  "e": "🧠"
+ },
+ "geconcentreerd": {
+  "e": "🧠"
+ },
+ "aandachtig": {
+  "e": "👀"
+ },
+ "de tegenwoordige tijd": {
+  "e": "⏱️"
+ },
+ "de medeklinker (-s)": {
+  "e": "🔤"
+ },
+ "de uitspraak": {
+  "e": "🗣️"
+ },
+ "de jongvolwassene (-n)": {
+  "e": "🧑"
+ },
+ "de volwassene (-n)": {
+  "e": "🧑"
+ },
+ "het niveau (-s)": {
+  "q": "spirit level tool",
+  "e": "📶"
+ },
+ "de comparatief": {
+  "e": "🔼"
+ },
+ "kosteloos": {
+  "e": "🆓"
+ },
+ "zo'n": {
+  "e": "👆"
+ },
+ "min of meer": {
+  "e": "≈"
+ },
+ "exact": {
+  "e": "🎯"
+ },
+ "laat / later": {
+  "e": "⏰"
+ },
+ "vroeg / vroeger": {
+  "e": "🌅"
+ },
+ "beter": {
+  "e": "👍"
+ },
+ "het deel (delen)": {
+  "q": "pie slice part",
+  "e": "🥧"
+ },
+ "het verschil (-len)": {
+  "e": "↔️"
+ },
+ "verschillend": {
+  "e": "🔀"
+ },
+ "de superlatief (-ven)": {
+  "e": "🏆"
+ },
+ "de diesel": {
+  "q": "diesel fuel pump",
+  "e": "⛽"
+ },
+ "de oplader (-s)": {
+  "q": "phone charger cable",
+  "e": "🔌"
+ },
+ "meeste": {
+  "e": "🔝"
+ },
+ "minste": {
+  "e": "🔻"
+ },
+ "De superlatief:": {
+  "e": "🏆"
+ },
+ "adjectief + st(e)": {
+  "e": "🔤"
+ },
+ "de grootste auto": {
+  "q": "very big truck",
+  "e": "🚛"
+ },
+ "het kleinste boek": {
+  "e": "📕"
+ },
+ "de baan (banen)": {
+  "e": "💼"
+ },
+ "het ongeluk (-ken)": {
+  "q": "car accident warning sign",
+  "e": "🚨"
+ },
+ "het gevaar (gevaren)": {
+  "q": "danger warning sign",
+  "e": "⚠️"
+ },
+ "de graad (graden)": {
+  "q": "thermometer degrees",
+  "e": "🌡️"
+ },
+ "de werken": {
+  "q": "road works construction",
+  "e": "🚧"
+ },
+ "de werkzaamheid (-heden)": {
+  "e": "🛠️"
+ },
+ "de richting (-en)": {
+  "q": "direction signpost",
+  "e": "🧭"
+ },
+ "de kant (-en)": {
+  "e": "↔️"
+ },
+ "linksaf, rechtsaf": {
+  "q": "left and right turn arrow signs",
+  "e": "↔️"
+ },
+ "passeren": {
+  "e": "🚗"
+ },
+ "de controle (-s)": {
+  "q": "police traffic check",
+  "e": "🚔"
+ },
+ "de boete (-s)": {
+  "q": "parking fine ticket",
+  "e": "🧾"
+ },
+ "overal": {
+  "e": "🌍"
+ },
+ "nergens": {
+  "e": "🚫"
+ },
+ "scheef": {
+  "q": "leaning tower crooked",
+  "e": "🗼"
+ },
+ "terwijl": {
+  "e": "⏳"
+ },
+ "de non-fictie": {
+  "q": "non fiction books shelf",
+  "e": "📚"
+ },
+ "het bezoek (-en)": {
+  "e": "🚪"
+ },
+ "de manier (-en)": {
+  "e": "🛤️"
+ },
+ "komaan": {
+  "e": "💪"
+ },
+ "allez / alé": {
+  "e": "💪"
+ },
+ "speciaal": {
+  "e": "✨"
+ },
+ "excuseer": {
+  "e": "🙋"
+ },
+ "het verhaal (verhalen)": {
+  "e": "📖"
+ },
+ "de groep (-en)": {
+  "q": "group of people",
+  "e": "👥"
+ },
+ "de president (-en)": {
+  "e": "🏛️"
+ },
+ "de inhoud": {
+  "e": "📦"
+ },
+ "de generaal (-ralen)": {
+  "e": "🎖️"
+ },
+ "het conflict (-en)": {
+  "e": "⚔️"
+ },
+ "de minister (-s)": {
+  "e": "🏛️"
+ },
+ "de koningin (-nen)": {
+  "e": "👑"
+ },
+ "gebeuren": {
+  "e": "❗"
+ },
+ "raak": {
+  "e": "🎯"
+ },
+ "schuldig, onschuldig": {
+  "q": "courtroom gavel justice",
+  "e": "⚖️"
+ },
+ "onmogelijk": {
+  "e": "🚫"
+ },
+ "alsof": {
+  "e": "🎭"
+ },
+ "schieten": {
+  "q": "archery arrow target",
+  "e": "🏹"
+ },
+ "doden": {
+  "e": "☠️"
+ },
+ "de dame (-s)": {
+  "e": "👩"
+ },
+ "de diminutief (-ven)": {
+  "e": "🔤"
+ },
+ "de liefde (-s)": {
+  "q": "hearts love",
+  "e": "❤️"
+ },
+ "het lief": {
+  "e": "💕"
+ },
+ "de lieverd": {
+  "e": "💕"
+ },
+ "de uitdrukking (-en)": {
+  "e": "💬"
+ },
+ "de betekenis (-sen)": {
+  "q": "dictionary definition",
+  "e": "📖"
+ },
+ "de bedoeling (-en)": {
+  "e": "🎯"
+ },
+ "het Chinees": {
+  "q": "chinese flag",
+  "e": "🇨🇳"
+ },
+ "verstaan": {
+  "e": "👂"
+ },
+ "de titel (-s)": {
+  "e": "📕"
+ },
+ "het vertrouwen": {
+  "e": "🤝"
+ },
+ "de werkgever (-s)": {
+  "e": "👔"
+ },
+ "de kans (-en)": {
+  "e": "🍀"
+ },
+ "tof": {
+  "e": "😎"
+ },
+ "wederzijds": {
+  "e": "🤝"
+ },
+ "fier": {
+  "e": "😌"
+ },
+ "vertrouwen": {
+  "e": "🤝"
+ },
+ "de aflevering (-en)": {
+  "e": "📺"
+ },
+ "de serie (-s)": {
+  "e": "📺"
+ },
+ "af": {
+  "e": "✅"
+ },
+ "proberen te": {
+  "e": "💪"
+ },
+ "het openingsuur (uren)": {
+  "q": "shop opening hours sign",
+  "e": "🕘"
+ },
+ "de opening (-en)": {
+  "q": "ribbon cutting opening",
+  "e": "✂️"
+ },
+ "proper": {
+  "q": "clean sparkling kitchen",
+  "e": "✨"
+ },
+ "de partner (-s)": {
+  "e": "👫"
+ },
+ "de relatie (-s)": {
+  "q": "couple holding hands",
+  "e": "👫"
+ },
+ "de kolonel (-s)": {
+  "e": "🎖️"
+ },
+ "de afspraak (afspraken)": {
+  "e": "📅"
+ },
+ "de zoon (zonen)": {
+  "e": "👦"
+ },
+ "de nicht (-en)": {
+  "e": "👧"
+ },
+ "de neef (neven)": {
+  "e": "👦"
+ },
+ "het nichtje (-s)": {
+  "e": "👧"
+ },
+ "het neefje (-s)": {
+  "e": "👦"
+ },
+ "de schoonfamilie (-s)": {
+  "e": "👨‍👩‍👧‍👦"
+ },
+ "het perfectum": {
+  "e": "⏪"
+ },
+ "het imperfectum": {
+  "e": "⏪"
+ },
+ "de actie (-s)": {
+  "e": "🎬"
+ },
+ "de beschrijving (-en)": {
+  "e": "📝"
+ },
+ "het participium": {
+  "e": "🔤"
+ },
+ "nogal": {
+  "e": "🤔"
+ },
+ "de soort": {
+  "e": "🏷️"
+ },
+ "het tussenwoord (-en)": {
+  "e": "💬"
+ },
+ "het feit (-en)": {
+  "e": "📌"
+ },
+ "Protestants": {
+  "q": "protestant church dutch",
+  "e": "⛪"
+ },
+ "toe": {
+  "e": "➡️"
+ },
+ "in feite": {
+  "e": "📌"
+ },
+ "nietwaar": {
+  "e": "❓"
+ },
+ "geloven, geloofd": {
+  "e": "🙏"
+ },
+ "beloven, beloofd": {
+  "e": "🤞"
+ },
+ "het gevoel (-ens)": {
+  "e": "🫶"
+ },
+ "reflexief": {
+  "e": "🪞"
+ },
+ "zich": {
+  "e": "🪞"
+ },
+ "zich voelen (gevoeld)": {
+  "e": "🫶"
+ },
+ "zich voorstellen": {
+  "e": "💭"
+ },
+ "zich herinneren (herinnerd)": {
+  "e": "🧠"
+ },
+ "behalve": {
+  "e": "🚫"
+ },
+ "vast": {
+  "e": "📌"
+ },
+ "los": {
+  "e": "🔓"
+ },
+ "jawel": {
+  "e": "✅"
+ },
+ "tot ziens": {
+  "e": "👋"
+ },
+ "kloppen, geklopt": {
+  "e": "🚪"
+ },
+ "de brief (brieven)": {
+  "q": "letter and envelope",
+  "e": "✉️"
+ },
+ "de bijlage (-s)": {
+  "q": "email attachment paperclip",
+  "e": "📎"
+ },
+ "digitaal": {
+  "q": "digital binary code screen",
+  "e": "💻"
+ },
+ "vergeten, vergeten (met zijn)": {
+  "e": "🤔"
+ },
+ "de bank (-en)": {
+  "e": "🪑"
+ },
+ "rennen (gerend)": {
+  "e": "🏃"
+ },
+ "winnen (gewonnen)": {
+  "q": "winner holding gold medal",
+  "e": "🥇"
+ },
+ "verliezen (verloren)": {
+  "e": "😞"
+ },
+ "rusten (gerust)": {
+  "q": "person resting in hammock",
+  "e": "😴"
+ },
+ "stappen (gestapt)": {
+  "e": "👣"
+ },
+ "de lijn (-en)": {
+  "q": "tram line",
+  "e": "🚋"
+ },
+ "het doel (-en)": {
+  "q": "football goal net",
+  "e": "🥅"
+ },
+ "het doelpunt (-en)": {
+  "q": "football goal celebration",
+  "e": "⚽"
+ },
+ "vooruit": {
+  "e": "⏩"
+ },
+ "achteruit": {
+  "e": "⏪"
+ },
+ "scoren (gescoord)": {
+  "q": "football scoring goal",
+  "e": "⚽"
+ },
+ "pakken (gepakt)": {
+  "e": "🤲"
+ },
+ "de orde": {
+  "q": "tidy organized shelves",
+  "e": "🗂️"
+ },
+ "de chaos": {
+  "q": "messy chaotic room",
+  "e": "🌪️"
+ },
+ "de situatie (-s)": {
+  "e": "🧭"
+ },
+ "het lichaam (lichamen)": {
+  "e": "🧍"
+ },
+ "de buik (-en)": {
+  "e": "🫃"
+ },
+ "tonen (getoond)": {
+  "e": "👀"
+ },
+ "trekken (getrokken)": {
+  "e": "🪢"
+ },
+ "de pil (-len)": {
+  "e": "💊"
+ },
+ "het voorschrift (-en)": {
+  "e": "📋"
+ },
+ "raken (geraakt)": {
+  "e": "🎯"
+ },
+ "breken (gebroken)": {
+  "q": "broken glass shards",
+  "e": "💔"
+ },
+ "lijken (geleken)": {
+  "e": "👀"
+ },
+ "de waarheid (waarheden)": {
+  "e": "✅"
+ },
+ "het excuus (excuses)": {
+  "e": "🙏"
+ },
+ "het spijt me": {
+  "e": "😔"
+ },
+ "nadat": {
+  "e": "⏭️"
+ },
+ "voordat": {
+  "e": "⏮️"
+ },
+ "daarvoor": {
+  "e": "⏮️"
+ },
+ "halen (gehaald)": {
+  "e": "🪣"
+ },
+ "het stuk (-ken)": {
+  "q": "piece of cake slice",
+  "e": "🍰"
+ },
+ "de raad": {
+  "e": "💬"
+ },
+ "stuk": {
+  "e": "💔"
+ },
+ "raar": {
+  "e": "🤪"
+ },
+ "separabel": {
+  "e": "✂️"
+ },
+ "meteen": {
+  "e": "⚡"
+ },
+ "enzovoort - enz": {
+  "e": "…"
+ },
+ "etcetera - etc": {
+  "e": "…"
+ },
+ "aflopen (afgelopen)": {
+  "e": "🔚"
+ },
+ "opletten (opgelet)": {
+  "e": "⚠️"
+ },
+ "aanraden (aangeraden)": {
+  "e": "👍"
+ },
+ "afspreken - afgesproken": {
+  "e": "📅"
+ },
+ "invullen - ingevuld": {
+  "q": "filling out a form",
+  "e": "📝"
+ },
+ "opladen - opgeladen": {
+  "q": "phone charging battery",
+  "e": "🔋"
+ },
+ "voorstellen - voorgesteld": {
+  "e": "🤝"
+ },
+ "aanraken - aangeraakt": {
+  "e": "👆"
+ },
+ "het plezier": {
+  "e": "😄"
+ },
+ "de oplossing (-en)": {
+  "e": "🧩"
+ },
+ "het eind": {
+  "e": "🔚"
+ },
+ "oplossen (opgelost)": {
+  "q": "solving a puzzle",
+  "e": "🧩"
+ },
+ "steken (gestoken)": {
+  "e": "🐝"
+ },
+ "zetten (gezet)": {
+  "q": "placing a vase on a table",
+  "e": "🏺"
+ },
+ "steken": {
+  "e": "🐝"
+ },
+ "de verkoop (verkopen)": {
+  "e": "🏷️"
+ },
+ "het bewijs (bewijzen)": {
+  "e": "📑"
+ },
+ "de reden (-en)": {
+  "e": "❓"
+ },
+ "het geval (-len)": {
+  "e": "📁"
+ },
+ "zoveel": {
+  "e": "🔢"
+ },
+ "tuurlijk": {
+  "e": "👍"
+ },
+ "absoluut": {
+  "e": "💯"
+ },
+ "hoeven te": {
+  "e": "🙅"
+ },
+ "bewijzen (bewezen)": {
+  "e": "📑"
+ },
+ "de sleutel (-s)": {
+  "e": "🔑"
+ },
+ "allebei": {
+  "e": "✌️"
+ },
+ "beide(n)": {
+  "e": "✌️"
+ },
+ "allen": {
+  "e": "👥"
+ },
+ "scheidbaar": {
+  "e": "✂️"
+ },
+ "binnenkomen (binnengekomen)": {
+  "q": "person entering through an open door",
+  "e": "🚪"
+ },
+ "bewijzen": {
+  "e": "📑"
+ },
+ "de zaak (zaken)": {
+  "e": "💼"
+ },
+ "de agent (-en)": {
+  "q": "police officer",
+  "e": "👮"
+ },
+ "bezig": {
+  "e": "🛠️"
+ },
+ "missen (gemist)": {
+  "e": "🚆"
+ },
+ "redden (gered)": {
+  "q": "lifebuoy life saving",
+  "e": "🛟"
+ },
+ "sterven (gestorven)": {
+  "e": "🥀"
+ },
+ "opbellen (opgebeld)": {
+  "e": "📞"
+ },
+ "beloven": {
+  "e": "🤞"
+ },
+ "de grond (-en)": {
+  "e": "🌱"
+ },
+ "enige": {
+  "e": "☝️"
+ },
+ "ene": {
+  "e": "1️⃣"
+ },
+ "neer": {
+  "e": "⬇️"
+ },
+ "dr": {
+  "e": "👨‍⚕️"
+ },
+ "het contact (-en)": {
+  "e": "🤝"
+ },
+ "de dienst (-en)": {
+  "e": "🛎️"
+ },
+ "zodra": {
+  "e": "⚡"
+ },
+ "steeds": {
+  "e": "🔁"
+ },
+ "menen (meende, gemeend)": {
+  "e": "💭"
+ },
+ "de reis (reizen)": {
+  "q": "suitcase travel journey",
+  "e": "🧳"
+ },
+ "noch": {
+  "e": "🚫"
+ },
+ "mezelf, jezelf, zichzelf, uzelf, onszelf": {
+  "e": "🪞"
+ },
+ "zorgen, zorgde, gezorgd": {
+  "e": "🤲"
+ },
+ "de plek (-ken)": {
+  "e": "📍"
+ },
+ "de kerel (-s)": {
+  "e": "🧔"
+ },
+ "de maat (maten)": {
+  "e": "🤝"
+ },
+ "ouwe": {
+  "e": "👴"
+ },
+ "ten": {
+  "e": "📍"
+ },
+ "vanuit": {
+  "e": "🧭"
+ },
+ "heen": {
+  "e": "➡️"
+ },
+ "vertrekken, vertrok, vertrokken (met zijn)": {
+  "q": "train departing station",
+  "e": "🚆"
+ },
+ "verlaten, verliet, verlaten": {
+  "e": "🚪"
+ },
+ "verwachten, verwachtte, verwacht": {
+  "e": "⏳"
+ },
+ "leven, leefde, geleefd": {
+  "e": "🌱"
+ },
+ "de onzin": {
+  "e": "🙄"
+ },
+ "luid": {
+  "e": "📢"
+ },
+ "zich haasten, haastte zich, zich gehaast": {
+  "e": "🏃"
+ },
+ "bestellen, bestelde, besteld": {
+  "e": "🍽️"
+ },
+ "de meester (-s)": {
+  "e": "🧑‍🏫"
+ },
+ "degene": {
+  "e": "👉"
+ },
+ "waard": {
+  "e": "💎"
+ },
+ "zodat": {
+  "e": "➡️"
+ },
+ "zomaar": {
+  "e": "🎲"
+ },
+ "ooit": {
+  "e": "🕰️"
+ },
+ "uitleggen, legde uit, uitgelegd": {
+  "q": "teacher explaining at whiteboard",
+  "e": "🧑‍🏫"
+ },
+ "bestaan, bestond, bestaan": {
+  "e": "🌍"
+ },
+ "de winkel (-s)": {
+  "e": "🏪"
+ },
+ "het spul (-len)": {
+  "e": "📦"
+ },
+ "de kracht (-en)": {
+  "e": "💪"
+ },
+ "de macht": {
+  "e": "👑"
+ },
+ "de geest (-en)": {
+  "e": "👻"
+ },
+ "zolang": {
+  "e": "⏳"
+ },
+ "totdat": {
+  "e": "⏳"
+ },
+ "dragen, droeg, gedragen": {
+  "e": "📦"
+ },
+ "slaan, sloeg, geslagen": {
+  "e": "👊"
+ },
+ "de belofte (-s)": {
+  "e": "🤞"
+ },
+ "de show (-s)": {
+  "e": "🎭"
+ },
+ "de band (-en)": {
+  "q": "rock band on stage",
+  "e": "🎸"
+ },
+ "zover": {
+  "e": "📍"
+ },
+ "wegwezen": {
+  "e": "🏃"
+ },
+ "gefeliciteerd": {
+  "q": "congratulations balloons confetti",
+  "e": "🎉"
+ },
+ "zweren, zwoor, gezworen": {
+  "e": "🤚"
+ },
+ "het adverbium": {
+  "e": "🔤"
+ },
+ "het ticket (-s)": {
+  "q": "train ticket",
+  "e": "🎫"
+ },
+ "vooraf": {
+  "e": "⏮️"
+ },
+ "achteraf": {
+  "e": "⏭️"
+ },
+ "de gemeente (-s)": {
+  "q": "dutch town hall",
+  "e": "🏛️"
+ },
+ "de administratie (-s)": {
+  "q": "office filing cabinet paperwork",
+  "e": "🗄️"
+ },
+ "de directeur (-s)": {
+  "e": "👔"
+ },
+ "begrijpelijk": {
+  "e": "💡"
+ },
+ "stond op": {
+  "e": "🧍"
+ },
+ "opgestaan (met zijn)": {
+  "e": "🧍"
+ },
+ "redelijk": {
+  "e": "👌"
+ },
+ "het buitenland": {
+  "e": "✈️"
+ },
+ "de buitenlander (-s)": {
+  "e": "🌍"
+ },
+ "plande": {
+  "e": "🗓️"
+ },
+ "organiseerde": {
+  "e": "📋"
+ },
+ "de verandering (-en)": {
+  "e": "🔄"
+ },
+ "vriendschappelijk": {
+  "q": "friends hugging",
+  "e": "🤗"
+ },
+ "schattig": {
+  "q": "cute kitten",
+  "e": "🐱"
+ },
+ "nam mee": {
+  "e": "🎒"
+ },
+ "heeft meegenomen": {
+  "e": "🎒"
+ },
+ "heeft gepubliceerd": {
+  "e": "📰"
+ },
+ "ging mee": {
+  "e": "🚶"
+ },
+ "is meegegaan": {
+  "e": "🚶"
+ },
+ "glimlachte": {
+  "e": "😊"
+ },
+ "heeft geglimlacht": {
+  "e": "😊"
+ },
+ "de bevalling (-en)": {
+  "e": "👶"
+ },
+ "het programma ('s)": {
+  "e": "📺"
+ },
+ "dikwijls": {
+  "e": "🔁"
+ },
+ "zich afvragen": {
+  "e": "🤔"
+ },
+ "zich afgevraagd": {
+  "e": "🤔"
+ },
+ "beviel": {
+  "e": "👶"
+ },
+ "op zoek zijn": {
+  "e": "🔍"
+ },
+ "de keuze (-s, -n)": {
+  "e": "🔀"
+ },
+ "de keus (keuzen)": {
+  "e": "🔀"
+ },
+ "het detail (-s)": {
+  "e": "🔍"
+ },
+ "koos": {
+  "e": "🔀"
+ },
+ "gekozen": {
+  "e": "🔀"
+ },
+ "verkiezen": {
+  "e": "🗳️"
+ },
+ "verkoos": {
+  "e": "🗳️"
+ },
+ "verkozen": {
+  "e": "🗳️"
+ },
+ "bekeek": {
+  "e": "👀"
+ },
+ "bekeken": {
+  "e": "👀"
+ },
+ "beluisteren": {
+  "e": "🎧"
+ },
+ "beluisterde": {
+  "e": "🎧"
+ },
+ "beluisterd": {
+  "e": "🎧"
+ },
+ "bedacht": {
+  "e": "💡"
+ },
+ "ging uit": {
+  "e": "🎉"
+ },
+ "uitgegaan (met zijn)": {
+  "e": "🎉"
+ },
+ "aannemen": {
+  "e": "🤲"
+ },
+ "nam aan": {
+  "e": "🤲"
+ },
+ "aangenomen": {
+  "e": "🤲"
+ },
+ "ervan uitgaan": {
+  "e": "🤔"
+ },
+ "ging ervan uit": {
+  "e": "🤔"
+ },
+ "zijn ervan uitgegaan": {
+  "e": "🤔"
+ },
+ "eentje": {
+  "e": "1️⃣"
+ },
+ "direct": {
+  "e": "⚡"
+ },
+ "dadelijk": {
+  "e": "⏩"
+ },
+ "eenvoudig": {
+  "e": "👌"
+ },
+ "het voorstel (-len)": {
+  "e": "📝"
+ },
+ "de ondernemer (-s)": {
+  "e": "💼"
+ },
+ "de agenda ('s)": {
+  "q": "paper diary planner",
+  "e": "📅"
+ },
+ "het/de topic (-s)": {
+  "e": "💬"
+ },
+ "het onderwerp (-en)": {
+  "e": "💬"
+ },
+ "het thema ('s)": {
+  "e": "🎨"
+ },
+ "gezien": {
+  "e": "👁️"
+ },
+ "aangezien": {
+  "e": "➡️"
+ },
+ "presenteerde": {
+  "e": "📊"
+ },
+ "gepresenteerd": {
+  "e": "📊"
+ },
+ "ondernemen": {
+  "e": "🚀"
+ },
+ "ondernomen": {
+  "e": "🚀"
+ },
+ "omgaan": {
+  "e": "🤝"
+ },
+ "ging om": {
+  "e": "🤝"
+ },
+ "omgegaan (met zijn)": {
+  "e": "🤝"
+ },
+ "de beweging (-en)": {
+  "e": "🏃"
+ },
+ "de lounge (-s)": {
+  "q": "hotel lounge sofa",
+  "e": "🛋️"
+ },
+ "de stap (-pen)": {
+  "e": "👣"
+ },
+ "de verzameling (-en)": {
+  "e": "🗃️"
+ },
+ "de postzegel (-s)": {
+  "q": "postage stamp",
+  "e": "📮"
+ },
+ "het belang (-en)": {
+  "e": "❗"
+ },
+ "de impact": {
+  "e": "💥"
+ },
+ "het effect (-en)": {
+  "e": "✨"
+ },
+ "het orgaan (organen)": {
+  "q": "human organs anatomy",
+  "e": "🫀"
+ },
+ "in plaats van": {
+  "e": "🔄"
+ },
+ "bewegen (bewoog, bewogen)": {
+  "e": "🤸"
+ },
+ "stilstaan (stond stil, stilgestaan)": {
+  "e": "🧍"
+ },
+ "verzamelen (verzamelde, verzameld)": {
+  "q": "stamp collection album",
+  "e": "🗃️"
+ },
+ "onderschatten (onderschatte, onderschat)": {
+  "e": "📉"
+ },
+ "de woordenschat": {
+  "q": "dictionary word list",
+  "e": "📚"
+ },
+ "de uitdaging (-en)": {
+  "e": "🧗"
+ },
+ "de leeftijd (-en)": {
+  "q": "birthday cake candles age",
+  "e": "🎂"
+ },
+ "fit": {
+  "e": "🏃"
+ },
+ "toevallig": {
+  "e": "🎲"
+ },
+ "uitbreiden": {
+  "e": "🏗️"
+ },
+ "breidde uit": {
+  "e": "🏗️"
+ },
+ "uitgebreid": {
+  "e": "📚"
+ },
+ "leggen (legde, gelegd)": {
+  "e": "📚"
+ },
+ "deconnecteren": {
+  "q": "unplugged cable disconnect",
+  "e": "🔌"
+ },
+ "verbinden (verbond, verbonden)": {
+  "e": "🔌"
+ },
+ "overbrengen": {
+  "e": "📤"
+ },
+ "de beurt (-en)": {
+  "e": "🔢"
+ },
+ "de rij (-en)": {
+  "e": "🧍"
+ },
+ "de indruk (-ken)": {
+  "q": "footprint in sand",
+  "e": "👣"
+ },
+ "de ervaring": {
+  "e": "🎓"
+ },
+ "het gesprek (-ken)": {
+  "e": "🗣️"
+ },
+ "elders": {
+  "e": "📍"
+ },
+ "blijkbaar": {
+  "e": "🤨"
+ },
+ "blijken (bleek, gebleken)": {
+  "e": "🔎"
+ },
+ "de club (-s)": {
+  "q": "sports club team",
+  "e": "👥"
+ },
+ "de steun": {
+  "e": "🤝"
+ },
+ "de passief": {
+  "e": "🔤"
+ },
+ "steunen (steunde, gesteund)": {
+  "e": "🤝"
+ },
+ "drukken (drukte, gedrukt)": {
+  "e": "🔘"
+ },
+ "de hoofdzin (-nen)": {
+  "e": "🔤"
+ },
+ "de bijzin (-nen)": {
+  "e": "🔤"
+ },
+ "zich bevinden": {
+  "e": "📍"
+ },
+ "bevond zich": {
+  "e": "📍"
+ },
+ "zich bevonden": {
+  "e": "📍"
+ },
+ "de ingang (-en)": {
+  "q": "building entrance door",
+  "e": "🚪"
+ },
+ "de uitgang (-en)": {
+  "q": "exit sign door",
+  "e": "🚪"
+ },
+ "m'n": {
+  "e": "🙋"
+ },
+ "parkeerde": {
+  "q": "car parked in a parking lot",
+  "e": "🅿️"
+ },
+ "geparkeerd": {
+  "q": "car parked in a parking lot",
+  "e": "🅿️"
+ },
+ "de periode (-s)": {
+  "e": "📆"
+ },
+ "onlangs": {
+  "e": "⏪"
  }
 }
