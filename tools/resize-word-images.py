@@ -37,7 +37,7 @@ H = round(W * 3 / 4)
 # Sources that will look worse after the resize are reported at the end:
 #   low-res  = smaller than the target on either side (gets scaled UP -> soft/blurry)
 #   crops    = the 4:3 center crop throws away more than CROP_WARN of the picture
-CROP_WARN = 0.40
+CROP_WARN = 0.55   # a normal 3:4 portrait photo already loses 44%; only flag the extreme ones
 warnings = []
 
 
