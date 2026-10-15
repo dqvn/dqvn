@@ -4396,5 +4396,1178 @@
  },
  "negenduizend": {
   "e": "9️⃣0️⃣0️⃣0️⃣"
+ },
+ "gilet": {
+  "q": "sleeveless vest gilet",
+  "e": "🦺"
+ },
+ "kraag": {
+  "q": "shirt collar",
+  "e": "👔"
+ },
+ "aanpassen": {
+  "e": "👚"
+ },
+ "vloeken": {
+  "e": "🤬"
+ },
+ "kleding wassen": {
+  "q": "washing machine clothes laundry",
+  "e": "🧺"
+ },
+ "kleding passen": {
+  "e": "🪞"
+ },
+ "stijl": {
+  "e": "💃"
+ },
+ "loszittend": {
+  "e": "👕"
+ },
+ "medium": {
+  "e": "🇲"
+ },
+ "large": {
+  "e": "🇱"
+ },
+ "handgemaakt": {
+  "q": "handmade pottery craft hands",
+  "e": "🏺"
+ },
+ "blush": {
+  "e": "💄"
+ },
+ "s ochtends": {
+  "q": "morning sunrise",
+  "e": "🌅"
+ },
+ "kwart voor": {
+  "q": "clock showing quarter to",
+  "e": "🕓"
+ },
+ "kwart over": {
+  "e": "🕒"
+ },
+ "nodig hebben": {
+  "e": "🙏"
+ },
+ "binnengaan": {
+  "q": "person entering a building door",
+  "e": "🚪"
+ },
+ "Hoe laat is het?": {
+  "q": "wall clock",
+  "e": "🕐"
+ },
+ "Het gaat goed me": {
+  "e": "🙂"
+ },
+ "Geweldig!": {
+  "e": "🤩"
+ },
+ "Ik vind het leuk.": {
+  "e": "👍"
+ },
+ "Ik vind het niet leuk.": {
+  "e": "👎"
+ },
+ "Bedankt.": {
+  "e": "🙏"
+ },
+ "Help!": {
+  "e": "🆘"
+ },
+ "Maak je geen zorgen.": {
+  "e": "🫶"
+ },
+ "Geen probleem.": {
+  "e": "👌"
+ },
+ "Het is in orde.": {
+  "e": "👌"
+ },
+ "Echt waar?": {
+  "e": "😲"
+ },
+ "Alstublieft.": {
+  "e": "🙏"
+ },
+ "Vergeef het me alstublieft.": {
+  "e": "🙏"
+ },
+ "Ik wil graag....": {
+  "e": "🙋"
+ },
+ "fout": {
+  "e": "❌"
+ },
+ "bad": {
+  "q": "bathtub bath",
+  "e": "🛁"
+ },
+ "een miljard": {
+  "e": "💰"
+ },
+ "honderdduizend": {
+  "e": "1️⃣0️⃣0️⃣0️⃣0️⃣0️⃣"
+ },
+ "een miljoen": {
+  "e": "💰"
+ },
+ "honderd miljard": {
+  "e": "💰"
+ },
+ "tien miljard": {
+  "e": "💰"
+ },
+ "honderd miljoen": {
+  "e": "💰"
+ },
+ "honderd triljoen": {
+  "e": "💰"
+ },
+ "tien triljoen": {
+  "e": "💰"
+ },
+ "gestreept": {
+  "e": "🦓"
+ },
+ "stip": {
+  "e": "⚫"
+ },
+ "plaid": {
+  "q": "plaid tartan fabric pattern",
+  "e": "🟥"
+ },
+ "golvend": {
+  "q": "wavy sea waves",
+  "e": "🌊"
+ },
+ "identificatie": {
+  "e": "🪪"
+ },
+ "wat voor": {
+  "e": "❓"
+ },
+ "dicht": {
+  "e": "🌳"
+ },
+ "korting": {
+  "q": "sale discount percent sign",
+  "e": "🏷️"
+ },
+ "geld uitgeven": {
+  "q": "shopping bags spending money",
+  "e": "🛍️"
+ },
+ "winkelcentrum": {
+  "e": "🏬"
+ },
+ "monster": {
+  "e": "🧪"
+ },
+ "sms`en": {
+  "q": "person texting on smartphone",
+  "e": "💬"
+ },
+ "draadloos": {
+  "q": "wifi router wireless",
+  "e": "📶"
+ },
+ "IP telefoon": {
+  "q": "office desk phone voip",
+  "e": "☎️"
+ },
+ "lokaal bellen": {
+  "e": "📞"
+ },
+ "telefonist": {
+  "q": "switchboard operator headset",
+  "e": "🎧"
+ },
+ "interlokaal gesprek": {
+  "e": "📞"
+ },
+ "hele dag": {
+  "e": "🕛"
+ },
+ "van nu af aan": {
+  "e": "▶️"
+ },
+ "gewoonlijk": {
+  "e": "🔁"
+ },
+ "hevige regen": {
+  "e": "🌧️"
+ },
+ "bevriezen": {
+  "q": "frozen ice crystals",
+  "e": "🧊"
+ },
+ "helder": {
+  "e": "🌤️"
+ },
+ "ijzel": {
+  "q": "icy road freezing rain",
+  "e": "🧊"
+ },
+ "donder": {
+  "q": "thunderstorm lightning",
+  "e": "⛈️"
+ },
+ "onder het vriespunt": {
+  "q": "thermometer below zero",
+  "e": "🥶"
+ },
+ "onder nul": {
+  "q": "thermometer below zero",
+  "e": "🥶"
+ },
+ "beter worden": {
+  "e": "🌤️"
+ },
+ "bewolkt worden": {
+  "q": "clouds gathering overcast sky",
+  "e": "☁️"
+ },
+ "acteur": {
+  "q": "actor on stage theatre",
+  "e": "🎭"
+ },
+ "actrice": {
+  "e": "🎭"
+ },
+ "regisseur": {
+  "e": "🎬"
+ },
+ "verhaal": {
+  "e": "📖"
+ },
+ "plot": {
+  "e": "📚"
+ },
+ "popmuziek": {
+  "e": "🎤"
+ },
+ "jazz": {
+  "q": "jazz saxophone player",
+  "e": "🎷"
+ },
+ "rapmuziek": {
+  "e": "🎤"
+ },
+ "band": {
+  "q": "rock band on stage",
+  "e": "🎸"
+ },
+ "genieten": {
+  "e": "😌"
+ },
+ "hongerig": {
+  "e": "🤤"
+ },
+ "mosterd": {
+  "q": "mustard jar",
+  "e": "🌭"
+ },
+ "peper": {
+  "q": "black pepper grinder",
+  "e": "🌶️"
+ },
+ "mengen": {
+  "q": "mixing ingredients in bowl",
+  "e": "🥣"
+ },
+ "hakken": {
+  "q": "chopping with a cleaver",
+  "e": "🪓"
+ },
+ "fijnhakken": {
+  "q": "chopping onion with knife",
+  "e": "🔪"
+ },
+ "bakken": {
+  "q": "baking bread in oven",
+  "e": "🍞"
+ },
+ "grillen": {
+  "q": "grilling meat barbecue",
+  "e": "🍖"
+ },
+ "zoutig": {
+  "q": "salty pretzels",
+  "e": "🥨"
+ },
+ "hoofdgerecht": {
+  "q": "main course dinner plate",
+  "e": "🍽️"
+ },
+ "vol zitten": {
+  "e": "🈵"
+ },
+ "gangen maaltijd": {
+  "q": "multi course dinner table",
+  "e": "🍽️"
+ },
+ "noot": {
+  "q": "walnuts nuts",
+  "e": "🥜"
+ },
+ "hoofdkelner": {
+  "e": "🤵"
+ },
+ "kan water": {
+  "q": "water jug pitcher",
+  "e": "🫗"
+ },
+ "eten bestellen": {
+  "q": "ordering food from a menu",
+  "e": "📋"
+ },
+ "etnisch eten": {
+  "q": "ethnic food dishes spread",
+  "e": "🍛"
+ },
+ "pollepel": {
+  "e": "🥄"
+ },
+ "schotel": {
+  "q": "serving dish plate",
+  "e": "🍽️"
+ },
+ "ruggengraat": {
+  "q": "spine skeleton model",
+  "e": "🦴"
+ },
+ "trekken": {
+  "e": "🪢"
+ },
+ "hurken": {
+  "e": "🧎"
+ },
+ "je hand opsteken": {
+  "e": "🙋"
+ },
+ "optillen": {
+  "e": "🏋️"
+ },
+ "duwen": {
+  "e": "🚗"
+ },
+ "hoofd schudden": {
+  "e": "🙅"
+ },
+ "vangen": {
+  "q": "catching a ball",
+  "e": "🧤"
+ },
+ "bouw": {
+  "e": "🏗️"
+ },
+ "slank": {
+  "e": "🧍"
+ },
+ "lichaamstype": {
+  "e": "🧍"
+ },
+ "figuur": {
+  "e": "🧍"
+ },
+ "traan": {
+  "q": "tear on cheek",
+  "e": "😢"
+ },
+ "onzuiverheden krijgen": {
+  "e": "😣"
+ },
+ "kuit": {
+  "e": "🦵"
+ },
+ "onderarm": {
+  "e": "💪"
+ },
+ "pink": {
+  "q": "little finger pinkie",
+  "e": "🤙"
+ },
+ "buik": {
+  "e": "🫃"
+ },
+ "wegwerphandschoenen": {
+  "q": "disposable gloves",
+  "e": "🧤"
+ },
+ "temperatuur opnemen": {
+  "e": "🌡️"
+ },
+ "operatie": {
+  "q": "surgery operating room",
+  "e": "🏥"
+ },
+ "pols opnemen": {
+  "e": "🩺"
+ },
+ "injectie geven": {
+  "e": "💉"
+ },
+ "anamnese": {
+  "q": "doctor taking notes with patient",
+  "e": "📋"
+ },
+ "injectienaald": {
+  "q": "syringe needle",
+  "e": "💉"
+ },
+ "koffietafel": {
+  "q": "coffee table",
+  "e": "☕"
+ },
+ "tafel": {
+  "e": "🪑"
+ },
+ "studeerkamer": {
+  "e": "📚"
+ },
+ "afwezig": {
+  "e": "🚫"
+ },
+ "vergezellen": {
+  "e": "🚶"
+ },
+ "bijvoegelijk naamwoord": {
+  "e": "🔤"
+ },
+ "agenda": {
+  "q": "paper diary planner",
+  "e": "📅"
+ },
+ "gespannen": {
+  "e": "😬"
+ },
+ "arriveren": {
+  "q": "train arriving at platform",
+  "e": "🚉"
+ },
+ "toewijzen": {
+  "e": "👉"
+ },
+ "een lezing bijwonen": {
+  "q": "lecture hall audience",
+  "e": "🎓"
+ },
+ "achterdeur": {
+  "q": "back door of house",
+  "e": "🚪"
+ },
+ "batterij": {
+  "q": "batteries",
+  "e": "🔋"
+ },
+ "te laat komen": {
+  "e": "⏰"
+ },
+ "bloeien": {
+  "q": "blooming flowers",
+  "e": "🌸"
+ },
+ "gate": {
+  "q": "airport boarding gate",
+  "e": "🛫"
+ },
+ "Britse pond": {
+  "q": "british pound banknotes coins",
+  "e": "💷"
+ },
+ "buffel": {
+  "e": "🦬"
+ },
+ "insekt": {
+  "q": "insect beetle",
+  "e": "🐛"
+ },
+ "kogeltrein": {
+  "e": "🚄"
+ },
+ "struik": {
+  "e": "🌿"
+ },
+ "cabine": {
+  "e": "🚢"
+ },
+ "kabelbaan": {
+  "q": "cable car mountain",
+  "e": "🚡"
+ },
+ "verkeerd nummer bellen": {
+  "e": "☎️"
+ },
+ "annuleren": {
+  "q": "cancel button",
+  "e": "❌"
+ },
+ "ceder": {
+  "e": "🌲"
+ },
+ "kampioenschap": {
+  "q": "championship trophy cup",
+  "e": "🏆"
+ },
+ "karakter": {
+  "e": "🎭"
+ },
+ "kerk": {
+  "e": "⛪"
+ },
+ "klasgenoot": {
+  "q": "classmates in classroom",
+  "e": "🧑‍🎓"
+ },
+ "slim": {
+  "e": "🦉"
+ },
+ "kledinghanger": {
+  "q": "coat hanger",
+  "e": "🧥"
+ },
+ "postzegels verzamelen": {
+  "q": "stamp collection album",
+  "e": "📮"
+ },
+ "bedrijfsmedewerker": {
+  "e": "🧑‍💼"
+ },
+ "conducteur": {
+  "e": "🎫"
+ },
+ "in beslag nemen": {
+  "e": "🚔"
+ },
+ "Gefeliciteerd!": {
+  "q": "congratulations balloons confetti",
+  "e": "🎉"
+ },
+ "ontvanger": {
+  "e": "📬"
+ },
+ "smokkelwaar": {
+  "q": "customs inspection luggage",
+  "e": "🛃"
+ },
+ "hoek": {
+  "e": "↪️"
+ },
+ "correct": {
+  "e": "✅"
+ },
+ "kraanvogel": {
+  "q": "crane bird",
+  "e": "🦢"
+ },
+ "listig": {
+  "q": "fox cunning",
+  "e": "🦊"
+ },
+ "munteenheid": {
+  "e": "💶"
+ },
+ "geld wisselen": {
+  "q": "currency exchange office",
+  "e": "💱"
+ },
+ "aangifteformulier": {
+  "q": "customs declaration form",
+  "e": "📝"
+ },
+ "verklaren": {
+  "e": "🗣️"
+ },
+ "vertraagd": {
+  "e": "⏰"
+ },
+ "dictee": {
+  "e": "✍️"
+ },
+ "routebeschrijving": {
+  "e": "🗺️"
+ },
+ "een hekel hebben aan": {
+  "e": "😒"
+ },
+ "documentaire": {
+  "q": "documentary film camera",
+  "e": "🎥"
+ },
+ "deuropening": {
+  "e": "🚪"
+ },
+ "bestuurder": {
+  "q": "bus driver",
+  "e": "🚌"
+ },
+ "belastingvrij": {
+  "q": "duty free shop airport",
+  "e": "🛍️"
+ },
+ "van een hobby genieten": {
+  "q": "hobby painting craft",
+  "e": "🎨"
+ },
+ "onderneming": {
+  "e": "🏢"
+ },
+ "toegangskaart": {
+  "e": "🎫"
+ },
+ "wissen": {
+  "q": "erasing whiteboard",
+  "e": "🧽"
+ },
+ "wind laten": {
+  "e": "💨"
+ },
+ "invullen": {
+  "e": "📝"
+ },
+ "eindexamen": {
+  "q": "exam hall students writing",
+  "e": "🎓"
+ },
+ "klaar met werken": {
+  "e": "🏁"
+ },
+ "eerste klas": {
+  "q": "first class airplane seat",
+  "e": "💺"
+ },
+ "in een auto stappen": {
+  "q": "person getting into a car",
+  "e": "🚗"
+ },
+ "zitplaats afstaan": {
+  "e": "🪑"
+ },
+ "Goedemiddag.": {
+  "e": "☀️"
+ },
+ "Goedenavond.": {
+  "e": "🌆"
+ },
+ "Goedemorgen.": {
+  "e": "🌅"
+ },
+ "zitplaats voor gehandicapten": {
+  "e": "♿"
+ },
+ "Hoi.": {
+  "e": "👋"
+ },
+ "houdt de leuning vast": {
+  "e": "🛗"
+ },
+ "Hoe gaat het met je?": {
+  "e": "🙂"
+ },
+ "Hoe oud ben je?": {
+  "e": "🎂"
+ },
+ "Ik heb er een hekel aan.": {
+  "e": "😒"
+ },
+ "Ik begrijp het niet.": {
+  "e": "🤷"
+ },
+ "Ik hou hiervan.": {
+  "e": "❤️"
+ },
+ "Ik zou graag willen..": {
+  "e": "🙋"
+ },
+ "Het gaat goed met me.": {
+  "e": "🙂"
+ },
+ "illegaal": {
+  "e": "🚫"
+ },
+ "incorrect": {
+  "e": "❌"
+ },
+ "geïnteresseerd": {
+  "e": "🤓"
+ },
+ "Het is moeilijk.": {
+  "e": "😓"
+ },
+ "reisplan": {
+  "e": "🗺️"
+ },
+ "lamp": {
+  "e": "💡"
+ },
+ "brief": {
+  "q": "letter and envelope",
+  "e": "✉️"
+ },
+ "taalkunde": {
+  "e": "🔤"
+ },
+ "leeuwin": {
+  "q": "lioness",
+  "e": "🦁"
+ },
+ "levendig": {
+  "e": "🎉"
+ },
+ "eenzaam": {
+  "q": "lonely person on a bench",
+  "e": "🪑"
+ },
+ "Tijd niet gezien.": {
+  "e": "🤗"
+ },
+ "verliezer": {
+  "e": "😞"
+ },
+ "bagage controle": {
+  "q": "airport luggage security scanner",
+  "e": "🛃"
+ },
+ "bagage ophaalpunt": {
+  "e": "🧳"
+ },
+ "vasteland": {
+  "e": "🗺️"
+ },
+ "een zin maken": {
+  "e": "✍️"
+ },
+ "Doe alsof je thuis bent.": {
+  "e": "🏠"
+ },
+ "Mag ik hier zitten?": {
+  "e": "🪑"
+ },
+ "meneer": {
+  "e": "🤵"
+ },
+ "Mijn naam is...": {
+  "q": "name tag hello my name is",
+  "e": "🏷️"
+ },
+ "mysterie": {
+  "q": "mystery fog forest",
+  "e": "🕵️"
+ },
+ "nationaliteit": {
+  "q": "passport",
+  "e": "🛂"
+ },
+ "buur": {
+  "e": "🏘️"
+ },
+ "geen plaats beschikbaar": {
+  "q": "no vacancy sign hotel",
+  "e": "🚫"
+ },
+ "zelfstandig naamwoord": {
+  "e": "🔤"
+ },
+ "oudere broer": {
+  "e": "👦"
+ },
+ "oudere zus": {
+  "e": "👧"
+ },
+ "Nogmaals, alstublieft": {
+  "e": "🔁"
+ },
+ "eenrichtings": {
+  "e": "➡️"
+ },
+ "bazig": {
+  "e": "😠"
+ },
+ "bagageruimte boven de stoel": {
+  "q": "overhead luggage compartment train",
+  "e": "🧳"
+ },
+ "voetgangersbrug": {
+  "q": "pedestrian bridge overpass",
+  "e": "🌉"
+ },
+ "overwerk": {
+  "e": "🌙"
+ },
+ "pakket": {
+  "q": "parcel box package",
+  "e": "📦"
+ },
+ "partner": {
+  "e": "👫"
+ },
+ "slagen voor een toets": {
+  "e": "💯"
+ },
+ "een wind laten": {
+  "e": "💨"
+ },
+ "geld betalen": {
+  "e": "💶"
+ },
+ "belasting betalen": {
+  "q": "tax form calculator",
+  "e": "🧾"
+ },
+ "zinsdeel": {
+  "e": "🔤"
+ },
+ "opnemen": {
+  "e": "📞"
+ },
+ "een muziekinstrument bespelen": {
+  "q": "playing guitar",
+  "e": "🎸"
+ },
+ "poker spelen": {
+  "q": "poker cards chips",
+  "e": "🃏"
+ },
+ "speler": {
+  "q": "football player",
+  "e": "⚽"
+ },
+ "een brief posten": {
+  "q": "posting a letter in a mailbox",
+  "e": "📮"
+ },
+ "trots": {
+  "e": "😌"
+ },
+ "re-entry permit": {
+  "e": "🛂"
+ },
+ "hoorn": {
+  "q": "old telephone receiver",
+  "e": "☎️"
+ },
+ "rood licht": {
+  "e": "🔴"
+ },
+ "opmerkelijk": {
+  "e": "❗"
+ },
+ "rechts afslaan": {
+  "e": "↪️"
+ },
+ "rock muziek": {
+  "q": "rock guitarist concert",
+  "e": "🎸"
+ },
+ "router": {
+  "e": "📶"
+ },
+ "script": {
+  "q": "film script pages",
+  "e": "📜"
+ },
+ "kust": {
+  "q": "coast beach cliffs",
+  "e": "🏖️"
+ },
+ "stoelnummer": {
+  "q": "seat number on train seat",
+  "e": "💺"
+ },
+ "halve finale": {
+  "e": "🏆"
+ },
+ "dienst": {
+  "e": "🕗"
+ },
+ "opvliegend": {
+  "e": "😡"
+ },
+ "bezienswaardigheden bekijken": {
+  "q": "tourists sightseeing city",
+  "e": "📸"
+ },
+ "een lied zingen": {
+  "e": "🎤"
+ },
+ "wolkenkrabber": {
+  "q": "skyscraper",
+  "e": "🏙️"
+ },
+ "Langzamer alstublieft.": {
+  "e": "🐢"
+ },
+ "klein bankbiljet": {
+  "q": "small euro banknote",
+  "e": "💶"
+ },
+ "zoon": {
+  "e": "👦"
+ },
+ "Sorry voor het wachten.": {
+  "e": "🙏"
+ },
+ "postzegel": {
+  "q": "postage stamp",
+  "e": "📮"
+ },
+ "streng": {
+  "e": "🧐"
+ },
+ "zomerschool": {
+  "e": "🏫"
+ },
+ "zomervakantie": {
+  "q": "summer holiday beach",
+  "e": "🏖️"
+ },
+ "opziener": {
+  "e": "👀"
+ },
+ "toezicht houden": {
+  "e": "👀"
+ },
+ "punaise": {
+  "q": "thumbtack pin on board",
+  "e": "📌"
+ },
+ "een foto nemen": {
+  "e": "📸"
+ },
+ "een toets maken": {
+  "q": "exam test paper",
+  "e": "📝"
+ },
+ "terminal": {
+  "q": "airport terminal",
+  "e": "🛫"
+ },
+ "Hartelijk bedankt": {
+  "e": "🙏"
+ },
+ "Dank u": {
+  "e": "🙏"
+ },
+ "Het is oké": {
+  "e": "👌"
+ },
+ "Dit is (naam van persoon)": {
+  "e": "🤝"
+ },
+ "Dit is voor jou.": {
+  "e": "🎁"
+ },
+ "loket": {
+  "e": "🎟️"
+ },
+ "tissue": {
+  "q": "tissue box",
+  "e": "🤧"
+ },
+ "touren": {
+  "q": "tour bus sightseeing",
+  "e": "🚌"
+ },
+ "treinnummer": {
+  "e": "🚆"
+ },
+ "reischeque": {
+  "q": "traveller's cheque",
+  "e": "🧾"
+ },
+ "collegegeld": {
+  "e": "🎓"
+ },
+ "afslaan": {
+  "q": "car turning at junction",
+  "e": "↪️"
+ },
+ "de hoek om": {
+  "e": "↪️"
+ },
+ "Verenigde Staten": {
+  "e": "🇺🇸"
+ },
+ "van streek": {
+  "e": "😟"
+ },
+ "zee-egel": {
+  "q": "sea urchin",
+  "e": "🦔"
+ },
+ "werkwoord": {
+  "e": "🔤"
+ },
+ "visum": {
+  "e": "🛂"
+ },
+ "familie bezoeken": {
+  "e": "👨‍👩‍👧"
+ },
+ "Washington D.C.": {
+  "e": "🏛️"
+ },
+ "woestenij": {
+  "q": "barren wasteland desert",
+  "e": "🏜️"
+ },
+ "Wat is het?": {
+  "e": "❓"
+ },
+ "Wat is dat?": {
+  "e": "❓"
+ },
+ "Wat is je e-mailadres?": {
+  "e": "📧"
+ },
+ "Hoe heet je?": {
+  "e": "🏷️"
+ },
+ "Wat is je telefoonnummer?": {
+  "e": "📱"
+ },
+ "Waar kom je vandaan?": {
+  "e": "🌍"
+ },
+ "Waar woon je?": {
+  "e": "🏠"
+ },
+ "Waar is het toilet?": {
+  "q": "toilet sign restroom",
+  "e": "🚻"
+ },
+ "Wie is daar?": {
+  "e": "🚪"
+ },
+ "Wie is dat?": {
+  "e": "👤"
+ },
+ "verwelken": {
+  "q": "wilted flower",
+  "e": "🥀"
+ },
+ "plaats bij het raam": {
+  "q": "airplane window seat view",
+  "e": "✈️"
+ },
+ "winnaar": {
+  "q": "winner on podium gold medal",
+  "e": "🥇"
+ },
+ "een brief schrijven": {
+  "q": "writing a letter with pen",
+  "e": "✍️"
+ },
+ "opstel": {
+  "e": "📝"
+ },
+ "Yahoo!": {
+  "e": "🎉"
+ },
+ "Graag gedaan.": {
+  "e": "🤝"
+ },
+ "jongere broer": {
+  "e": "👦"
+ },
+ "jongere zus": {
+  "e": "👧"
+ },
+ "e-mailadres": {
+  "e": "📧"
+ },
+ "Pools": {
+  "q": "polish flag",
+  "e": "🇵🇱"
+ },
+ "Duits": {
+  "q": "german flag",
+  "e": "🇩🇪"
+ },
+ "Turks": {
+  "q": "turkish flag",
+  "e": "🇹🇷"
+ },
+ "bioscoop": {
+  "q": "cinema movie theatre",
+  "e": "🎬"
+ },
+ "squashen": {
+  "e": "🎾"
+ },
+ "Arla karnemelk": {
+  "q": "buttermilk carton glass",
+  "e": "🥛"
+ },
+ "Spa rood": {
+  "e": "💧"
+ },
+ "Bols": {
+  "e": "🍸"
+ },
+ "oranjebitter": {
+  "e": "🍊"
+ },
+ "Juttertje": {
+  "q": "jenever dutch gin glass",
+  "e": "🥃"
+ },
+ "Coebergh": {
+  "q": "bottle of jenever",
+  "e": "🥃"
+ },
+ "appelwijn": {
+  "q": "apple wine cider bottle",
+  "e": "🍎"
+ },
+ "abdijlikeur": {
+  "e": "🍾"
+ },
+ "zuurkool": {
+  "q": "sauerkraut",
+  "e": "🥬"
+ },
+ "Amsterdamse ui": {
+  "q": "amsterdam pickled onions",
+  "e": "🧅"
+ },
+ "Anne Frank Huis": {
+  "q": "anne frank house amsterdam canal",
+  "e": "🏠"
+ },
+ "Van Gogh Museum": {
+  "e": "🖼️"
+ },
+ "Diergaarde Blijdorp": {
+  "e": "🦁"
+ },
+ "Keukenhof": {
+  "q": "keukenhof tulips garden",
+  "e": "🌷"
+ },
+ "Hermitage Amsterdam": {
+  "q": "hermitage amsterdam museum building",
+  "e": "🏛️"
+ },
+ "Heineken Experience": {
+  "q": "heineken experience amsterdam brewery",
+  "e": "🍺"
+ },
+ "Snowworld Landgraaf": {
+  "e": "⛷️"
+ },
+ "Heren van de thee": {
+  "q": "tea leaves cup and teapot",
+  "e": "🍵"
+ },
+ "Ontdekking van de hemel": {
+  "q": "night sky stars",
+  "e": "🌌"
+ },
+ "Hersenschimmen": {
+  "e": "📖"
  }
 }
