@@ -20,6 +20,9 @@
  "aankomen": [
   "assets/img/words/aankomen.jpg"
  ],
+ "aankomst": [
+  "assets/img/words/aankomst.jpg"
+ ],
  "aankomstplaats, de": [
   "assets/img/words/aankomstplaats-de.jpg"
  ],
@@ -145,6 +148,9 @@
  ],
  "airconditioner": [
   "assets/img/words/airconditioner.jpg"
+ ],
+ "alcohol": [
+  "assets/img/words/alcohol.jpg"
  ],
  "alfabet": [
   "assets/img/words/alfabet.jpg"
@@ -389,6 +395,9 @@
  "bankstel, het": [
   "assets/img/words/bankstel-het.jpg"
  ],
+ "bar": [
+  "assets/img/words/bar.jpg"
+ ],
  "barbecueën": [
   "assets/img/words/barbecueen.jpg"
  ],
@@ -424,6 +433,9 @@
  ],
  "beeld": [
   "assets/img/words/beeld.jpg"
+ ],
+ "beeldscherm": [
+  "assets/img/words/beeldscherm.jpg"
  ],
  "beeldscherm, het": [
   "assets/img/words/beeldscherm-het.jpg"
@@ -466,6 +478,9 @@
  ],
  "bekend, onbekend": [
   "assets/img/words/bekend-onbekend.jpg"
+ ],
+ "bekendmaken": [
+  "assets/img/words/bekendmaken.jpg"
  ],
  "beklimmen": [
   "assets/img/words/beklimmen.jpg"
@@ -773,6 +788,9 @@
  "boot, de": [
   "assets/img/words/boot-de.jpg"
  ],
+ "bord": [
+  "assets/img/words/bord.jpg"
+ ],
  "bord, het": [
   "assets/img/words/bord-het.jpg"
  ],
@@ -1079,6 +1097,9 @@
  "concert, het": [
   "assets/img/words/concert-het.jpg"
  ],
+ "conditioner": [
+  "assets/img/words/conditioner.jpg"
+ ],
  "conducteur, de": [
   "assets/img/words/conducteur-de.jpg"
  ],
@@ -1087,6 +1108,9 @@
  ],
  "contant geld": [
   "assets/img/words/contant-geld.jpg"
+ ],
+ "contract": [
+  "assets/img/words/contract.jpg"
  ],
  "contrast, het": [
   "assets/img/words/contrast-het.jpg"
@@ -2243,6 +2267,9 @@
  "dip, de": [
   "assets/img/words/dip-de.jpg"
  ],
+ "discussie": [
+  "assets/img/words/discussie.jpg"
+ ],
  "docent, de": [
   "assets/img/words/docent-de.jpg"
  ],
@@ -2254,6 +2281,9 @@
  ],
  "document": [
   "assets/img/words/document.jpg"
+ ],
+ "dokter": [
+  "assets/img/words/dokter.jpg"
  ],
  "dokter, de": [
   "assets/img/words/dokter-de.jpg"
@@ -2315,6 +2345,9 @@
  "drama": [
   "assets/img/words/drama.jpg"
  ],
+ "dressoir": [
+  "assets/img/words/dressoir.jpg"
+ ],
  "driedelig": [
   "assets/img/words/driedelig.jpg"
  ],
@@ -2323,6 +2356,9 @@
  ],
  "drinkglas": [
   "assets/img/words/drinkglas.jpg"
+ ],
+ "drogen": [
+  "assets/img/words/drogen.jpg"
  ],
  "dromen": [
   "assets/img/words/dromen.jpg"
@@ -2419,6 +2455,9 @@
  ],
  "economie": [
   "assets/img/words/economie.jpg"
+ ],
+ "economy class": [
+  "assets/img/words/economy-class.jpg"
  ],
  "een": [
   "assets/img/words/een.jpg"
@@ -2542,6 +2581,12 @@
  ],
  "Engeland": [
   "assets/img/words/engeland.jpg"
+ ],
+ "engels": [
+  "assets/img/words/engels.jpg"
+ ],
+ "enkel": [
+  "assets/img/words/enkel.jpg"
  ],
  "enkel, de": [
   "assets/img/words/enkel-de.jpg"
@@ -2687,6 +2732,9 @@
  "fluit": [
   "assets/img/words/fluit.jpg"
  ],
+ "fooi": [
+  "assets/img/words/fooi.jpg"
+ ],
  "fooi, de": [
   "assets/img/words/fooi-de.jpg"
  ],
@@ -2785,6 +2833,9 @@
  ],
  "geboorte": [
   "assets/img/words/geboorte.jpg"
+ ],
+ "geboren worden": [
+  "assets/img/words/geboren-worden.jpg"
  ],
  "gebouw": [
   "assets/img/words/gebouw.jpg"
@@ -2972,8 +3023,14 @@
  "goedemorgen": [
   "assets/img/words/goedemorgen.jpg"
  ],
+ "Goedenacht": [
+  "assets/img/words/goedenacht.jpg"
+ ],
  "goedenavond": [
   "assets/img/words/goedenavond.jpg"
+ ],
+ "goedkeuren": [
+  "assets/img/words/goedkeuren.jpg"
  ],
  "goedkoop": [
   "assets/img/words/goedkoop.jpg"
@@ -3004,6 +3061,9 @@
  ],
  "goud, gouden": [
   "assets/img/words/goud-gouden.jpg"
+ ],
+ "graad": [
+  "assets/img/words/graad.jpg"
  ],
  "graad, de": [
   "assets/img/words/graad-de.jpg"
@@ -3173,8 +3233,14 @@
  "handschoen, de": [
   "assets/img/words/handschoen-de.jpg"
  ],
+ "handtas": [
+  "assets/img/words/handtas.jpg"
+ ],
  "hangar": [
   "assets/img/words/hangar.jpg"
+ ],
+ "hanger": [
+  "assets/img/words/hanger.jpg"
  ],
  "hapje, het": [
   "assets/img/words/hapje-het.jpg"
@@ -3908,6 +3974,9 @@
  "Indische Oceaan": [
   "assets/img/words/indische-oceaan.jpg"
  ],
+ "industrie": [
+  "assets/img/words/industrie.jpg"
+ ],
  "infectie": [
   "assets/img/words/infectie.jpg"
  ],
@@ -3916,6 +3985,9 @@
  ],
  "informatie, de": [
   "assets/img/words/informatie-de.jpg"
+ ],
+ "ingang": [
+  "assets/img/words/ingang.jpg"
  ],
  "ingang, de": [
   "assets/img/words/ingang-de.jpg"
@@ -4109,8 +4181,14 @@
  "kaart, de": [
   "assets/img/words/kaart-de.jpg"
  ],
+ "kaartcontrole": [
+  "assets/img/words/kaartcontrole.jpg"
+ ],
  "kaarten": [
   "assets/img/words/kaarten.jpg"
+ ],
+ "kaartje": [
+  "assets/img/words/kaartje.jpg"
  ],
  "kaartjesautomaat": [
   "assets/img/words/kaartjesautomaat.jpg"
@@ -4139,6 +4217,9 @@
  "kalligrafie": [
   "assets/img/words/kalligrafie.jpg"
  ],
+ "kalm": [
+  "assets/img/words/kalm.jpg"
+ ],
  "kamer": [
   "assets/img/words/kamer.jpg"
  ],
@@ -4147,6 +4228,9 @@
  ],
  "kamernummer": [
   "assets/img/words/kamernummer.jpg"
+ ],
+ "kamersleutel": [
+  "assets/img/words/kamersleutel.jpg"
  ],
  "kammen": [
   "assets/img/words/kammen.jpg"
@@ -4637,6 +4721,9 @@
  "lang, lange": [
   "assets/img/words/lang-lange.jpg"
  ],
+ "lange mouwen": [
+  "assets/img/words/lange-mouwen.jpg"
+ ],
  "langs": [
   "assets/img/words/langs.jpg"
  ],
@@ -4705,6 +4792,9 @@
  ],
  "les, de": [
   "assets/img/words/les-de.jpg"
+ ],
+ "lesgeven": [
+  "assets/img/words/lesgeven.jpg"
  ],
  "letsel": [
   "assets/img/words/letsel.jpg"
@@ -4810,6 +4900,9 @@
  ],
  "living, de": [
   "assets/img/words/living-de.jpg"
+ ],
+ "lobby": [
+  "assets/img/words/lobby.jpg"
  ],
  "loft, de": [
   "assets/img/words/loft-de.jpg"
@@ -4952,11 +5045,17 @@
  "mango": [
   "assets/img/words/mango.jpg"
  ],
+ "map": [
+  "assets/img/words/map.jpg"
+ ],
  "marathon": [
   "assets/img/words/marathon.jpg"
  ],
  "marketing": [
   "assets/img/words/marketing.jpg"
+ ],
+ "markt": [
+  "assets/img/words/markt.jpg"
  ],
  "markt, de": [
   "assets/img/words/markt-de.jpg"
@@ -4984,6 +5083,9 @@
  ],
  "medewerking, de": [
   "assets/img/words/medewerking-de.jpg"
+ ],
+ "media": [
+  "assets/img/words/media.jpg"
  ],
  "medicijn": [
   "assets/img/words/medicijn.jpg"
@@ -5077,6 +5179,9 @@
  ],
  "meter": [
   "assets/img/words/meter.jpg"
+ ],
+ "metro": [
+  "assets/img/words/metro.jpg"
  ],
  "metro, de": [
   "assets/img/words/metro-de.jpg"
@@ -5261,6 +5366,9 @@
  "museum, het": [
   "assets/img/words/museum-het.jpg"
  ],
+ "musical": [
+  "assets/img/words/musical.jpg"
+ ],
  "musicus, de": [
   "assets/img/words/musicus-de.jpg"
  ],
@@ -5333,6 +5441,9 @@
  "natuur, de": [
   "assets/img/words/natuur-de.jpg"
  ],
+ "nauw": [
+  "assets/img/words/nauw.jpg"
+ ],
  "nauwelijks": [
   "assets/img/words/nauwelijks.jpg"
  ],
@@ -5375,6 +5486,9 @@
  "New Delhi": [
   "assets/img/words/new-delhi.jpg"
  ],
+ "New York": [
+  "assets/img/words/new-york.jpg"
+ ],
  "nier": [
   "assets/img/words/nier.jpg"
  ],
@@ -5383,6 +5497,9 @@
  ],
  "niet-roken": [
   "assets/img/words/niet-roken.jpg"
+ ],
+ "nietje": [
+  "assets/img/words/nietje.jpg"
  ],
  "nietmachine": [
   "assets/img/words/nietmachine.jpg"
@@ -5651,6 +5768,9 @@
  "opa, de": [
   "assets/img/words/opa-de.jpg"
  ],
+ "opbergen": [
+  "assets/img/words/opbergen.jpg"
+ ],
  "open": [
   "assets/img/words/open.jpg"
  ],
@@ -5822,6 +5942,9 @@
  "pamflet": [
   "assets/img/words/pamflet.jpg"
  ],
+ "pan": [
+  "assets/img/words/pan.jpg"
+ ],
  "pan, de": [
   "assets/img/words/pan-de.jpg"
  ],
@@ -5906,8 +6029,14 @@
  "pen, de": [
   "assets/img/words/pen-de.jpg"
  ],
+ "pendelen": [
+  "assets/img/words/pendelen.jpg"
+ ],
  "percentage, het": [
   "assets/img/words/percentage-het.jpg"
+ ],
+ "perron": [
+  "assets/img/words/perron.jpg"
  ],
  "perron, het": [
   "assets/img/words/perron-het.jpg"
@@ -5923,6 +6052,9 @@
  ],
  "pet, de": [
   "assets/img/words/pet-de.jpg"
+ ],
+ "peuter": [
+  "assets/img/words/peuter.jpg"
  ],
  "piano": [
   "assets/img/words/piano.jpg"
@@ -5983,6 +6115,9 @@
  ],
  "plakband": [
   "assets/img/words/plakband.jpg"
+ ],
+ "plan": [
+  "assets/img/words/plan.jpg"
  ],
  "plannen": [
   "assets/img/words/plannen.jpg"
@@ -6055,6 +6190,9 @@
  ],
  "polsstokverspringen, het": [
   "assets/img/words/polsstokverspringen-het.jpg"
+ ],
+ "pond": [
+  "assets/img/words/pond.jpg"
  ],
  "populair": [
   "assets/img/words/populair.jpg"
@@ -6140,6 +6278,9 @@
  "procent, het": [
   "assets/img/words/procent-het.jpg"
  ],
+ "produktie": [
+  "assets/img/words/produktie.jpg"
+ ],
  "proeven": [
   "assets/img/words/proeven.jpg"
  ],
@@ -6160,6 +6301,9 @@
  ],
  "proost": [
   "assets/img/words/proost.jpg"
+ ],
+ "Protestantisme": [
+  "assets/img/words/protestantisme.jpg"
  ],
  "protestants": [
   "assets/img/words/protestants.jpg"
@@ -6239,6 +6383,9 @@
  "receptionist, de / receptioniste, de": [
   "assets/img/words/receptionist-de-receptioniste-de.jpg"
  ],
+ "recht": [
+  "assets/img/words/recht.jpg"
+ ],
  "rechtdoor": [
   "assets/img/words/rechtdoor.jpg"
  ],
@@ -6305,6 +6452,9 @@
  "reiziger, de": [
   "assets/img/words/reiziger-de.jpg"
  ],
+ "rekening": [
+  "assets/img/words/rekening.jpg"
+ ],
  "rekening, de": [
   "assets/img/words/rekening-de.jpg"
  ],
@@ -6326,6 +6476,9 @@
  "reserveren": [
   "assets/img/words/reserveren.jpg"
  ],
+ "reservering": [
+  "assets/img/words/reservering.jpg"
+ ],
  "respecteren": [
   "assets/img/words/respecteren.jpg"
  ],
@@ -6343,6 +6496,9 @@
  ],
  "rib": [
   "assets/img/words/rib.jpg"
+ ],
+ "riem": [
+  "assets/img/words/riem.jpg"
  ],
  "riem, de": [
   "assets/img/words/riem-de.jpg"
@@ -6374,8 +6530,14 @@
  "rimpel": [
   "assets/img/words/rimpel.jpg"
  ],
+ "ring": [
+  "assets/img/words/ring.jpg"
+ ],
  "ringvinger": [
   "assets/img/words/ringvinger.jpg"
+ ],
+ "ritprijs": [
+  "assets/img/words/ritprijs.jpg"
  ],
  "rivier": [
   "assets/img/words/rivier.jpg"
@@ -6418,6 +6580,9 @@
  ],
  "rondje, het": [
   "assets/img/words/rondje-het.jpg"
+ ],
+ "rondreis": [
+  "assets/img/words/rondreis.jpg"
  ],
  "röntgenfoto": [
   "assets/img/words/rontgenfoto.jpg"
@@ -6485,6 +6650,9 @@
  "rust, de": [
   "assets/img/words/rust-de.jpg"
  ],
+ "rusten": [
+  "assets/img/words/rusten.jpg"
+ ],
  "rustig": [
   "assets/img/words/rustig.jpg"
  ],
@@ -6548,11 +6716,17 @@
  "schamen": [
   "assets/img/words/schamen.jpg"
  ],
+ "scheermes": [
+  "assets/img/words/scheermes.jpg"
+ ],
  "scheikunde": [
   "assets/img/words/scheikunde.jpg"
  ],
  "schelen, scheelde, gescheeld": [
   "assets/img/words/schelen-scheelde-gescheeld.jpg"
+ ],
+ "scheren": [
+  "assets/img/words/scheren.jpg"
  ],
  "scherp": [
   "assets/img/words/scherp.jpg"
@@ -6638,6 +6812,9 @@
  "schrijven": [
   "assets/img/words/schrijven.jpg"
  ],
+ "schrijver": [
+  "assets/img/words/schrijver.jpg"
+ ],
  "schrikken": [
   "assets/img/words/schrikken.jpg"
  ],
@@ -6646,6 +6823,9 @@
  ],
  "schroevendraaier": [
   "assets/img/words/schroevendraaier.jpg"
+ ],
+ "scooter": [
+  "assets/img/words/scooter.jpg"
  ],
  "scoren": [
   "assets/img/words/scoren.jpg"
@@ -6697,6 +6877,9 @@
  ],
  "shandy": [
   "assets/img/words/shandy.jpg"
+ ],
+ "sinaasappel": [
+  "assets/img/words/sinaasappel.jpg"
  ],
  "sinas, de": [
   "assets/img/words/sinas-de.jpg"
@@ -6751,6 +6934,9 @@
  ],
  "slapen (geslapen)": [
   "assets/img/words/slapen-geslapen.jpg"
+ ],
+ "sleutel": [
+  "assets/img/words/sleutel.jpg"
  ],
  "slip": [
   "assets/img/words/slip.jpg"
@@ -6811,6 +6997,9 @@
  ],
  "sneaker": [
   "assets/img/words/sneaker.jpg"
+ ],
+ "snee": [
+  "assets/img/words/snee.jpg"
  ],
  "snee, de": [
   "assets/img/words/snee-de.jpg"
@@ -6998,11 +7187,17 @@
  "startplaats, de": [
   "assets/img/words/startplaats-de.jpg"
  ],
+ "station": [
+  "assets/img/words/station.jpg"
+ ],
  "station, het": [
   "assets/img/words/station-het.jpg"
  ],
  "statistiek, de": [
   "assets/img/words/statistiek-de.jpg"
+ ],
+ "steen": [
+  "assets/img/words/steen.jpg"
  ],
  "stekker": [
   "assets/img/words/stekker.jpg"
@@ -7139,11 +7334,17 @@
  "suiker, de": [
   "assets/img/words/suiker-de.jpg"
  ],
+ "suite": [
+  "assets/img/words/suite.jpg"
+ ],
  "supermarkt": [
   "assets/img/words/supermarkt.jpg"
  ],
  "supermarkt, de": [
   "assets/img/words/supermarkt-de.jpg"
+ ],
+ "surfen op het internet": [
+  "assets/img/words/surfen-op-het-internet.jpg"
  ],
  "Sydney": [
   "assets/img/words/sydney.jpg"
@@ -7325,6 +7526,9 @@
  "televisie, de": [
   "assets/img/words/televisie-de.jpg"
  ],
+ "televisiestation": [
+  "assets/img/words/televisiestation.jpg"
+ ],
  "tempel": [
   "assets/img/words/tempel.jpg"
  ],
@@ -7427,6 +7631,9 @@
  "toetje": [
   "assets/img/words/toetje.jpg"
  ],
+ "toets": [
+  "assets/img/words/toets.jpg"
+ ],
  "toevoegen": [
   "assets/img/words/toevoegen.jpg"
  ],
@@ -7444,6 +7651,9 @@
  ],
  "Tokio": [
   "assets/img/words/tokio.jpg"
+ ],
+ "tolk": [
+  "assets/img/words/tolk.jpg"
  ],
  "tomaat": [
   "assets/img/words/tomaat.jpg"
@@ -7613,6 +7823,9 @@
  "uitchecken": [
   "assets/img/words/uitchecken.jpg"
  ],
+ "uitgang": [
+  "assets/img/words/uitgang.jpg"
+ ],
  "uitgang, de": [
   "assets/img/words/uitgang-de.jpg"
  ],
@@ -7649,6 +7862,9 @@
  "uitstappen": [
   "assets/img/words/uitstappen.jpg"
  ],
+ "uitverkoop": [
+  "assets/img/words/uitverkoop.jpg"
+ ],
  "uitzicht, het": [
   "assets/img/words/uitzicht-het.jpg"
  ],
@@ -7660,6 +7876,9 @@
  ],
  "urineren": [
   "assets/img/words/urineren.jpg"
+ ],
+ "uur": [
+  "assets/img/words/uur.jpg"
  ],
  "uur, het": [
   "assets/img/words/uur-het.jpg"
@@ -7739,8 +7958,14 @@
  "vel, het": [
   "assets/img/words/vel-het.jpg"
  ],
+ "veld": [
+  "assets/img/words/veld.jpg"
+ ],
  "Venetië": [
   "assets/img/words/venetie.jpg"
+ ],
+ "ventilator": [
+  "assets/img/words/ventilator.jpg"
  ],
  "ver": [
   "assets/img/words/ver.jpg"
@@ -7877,6 +8102,9 @@
  "vertraging, de": [
   "assets/img/words/vertraging-de.jpg"
  ],
+ "vertrek": [
+  "assets/img/words/vertrek.jpg"
+ ],
  "vertrekken": [
   "assets/img/words/vertrekken.jpg"
  ],
@@ -7912,6 +8140,9 @@
  ],
  "verzekering": [
   "assets/img/words/verzekering.jpg"
+ ],
+ "verzenden": [
+  "assets/img/words/verzenden.jpg"
  ],
  "vest, het": [
   "assets/img/words/vest-het.jpg"
@@ -7954,6 +8185,9 @@
  ],
  "vijver": [
   "assets/img/words/vijver.jpg"
+ ],
+ "viltstift": [
+  "assets/img/words/viltstift.jpg"
  ],
  "vinger": [
   "assets/img/words/vinger.jpg"
@@ -8282,6 +8516,9 @@
  "wasmiddel, het": [
   "assets/img/words/wasmiddel-het.jpg"
  ],
+ "wassen": [
+  "assets/img/words/wassen.jpg"
+ ],
  "wassen (zich -)": [
   "assets/img/words/wassen-zich.jpg"
  ],
@@ -8357,6 +8594,9 @@
  "weer, het": [
   "assets/img/words/weer-het.jpg"
  ],
+ "weerbericht": [
+  "assets/img/words/weerbericht.jpg"
+ ],
  "weerbericht, het": [
   "assets/img/words/weerbericht-het.jpg"
  ],
@@ -8377,6 +8617,9 @@
  ],
  "weinig": [
   "assets/img/words/weinig.jpg"
+ ],
+ "wekdienst": [
+  "assets/img/words/wekdienst.jpg"
  ],
  "wekker": [
   "assets/img/words/wekker.jpg"
@@ -8432,6 +8675,9 @@
  "weten": [
   "assets/img/words/weten.jpg"
  ],
+ "wetenschap": [
+  "assets/img/words/wetenschap.jpg"
+ ],
  "whisky": [
   "assets/img/words/whisky.jpg"
  ],
@@ -8479,6 +8725,9 @@
  ],
  "wind, de": [
   "assets/img/words/wind-de.jpg"
+ ],
+ "winkel": [
+  "assets/img/words/winkel.jpg"
  ],
  "winkel, de": [
   "assets/img/words/winkel-de.jpg"
@@ -8765,6 +9014,9 @@
  "zonnen": [
   "assets/img/words/zonnen.jpg"
  ],
+ "zonnig": [
+  "assets/img/words/zonnig.jpg"
+ ],
  "zorgen maken": [
   "assets/img/words/zorgen-maken.jpg"
  ],
@@ -8842,6 +9094,9 @@
  ],
  "zweet": [
   "assets/img/words/zweet.jpg"
+ ],
+ "zwembad": [
+  "assets/img/words/zwembad.jpg"
  ],
  "zwembad, het": [
   "assets/img/words/zwembad-het.jpg"
