@@ -8,6 +8,9 @@
  "aan de hand": [
   "assets/img/words/aan-de-hand.jpg"
  ],
+ "aangaan": [
+  "assets/img/words/aangaan.jpg"
+ ],
  "aangenaam": [
   "assets/img/words/aangenaam.jpg"
  ],
@@ -18,7 +21,7 @@
   "assets/img/words/aankomen.jpg"
  ],
  "aankomstplaats, de": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Marathon_banner_will_greet_runners._%286937516786%29.jpg/500px-Marathon_banner_will_greet_runners._%286937516786%29.jpg"
+  "assets/img/words/aankomstplaats-de.jpg"
  ],
  "aankomsttijd, de": [
   "assets/img/words/aankomsttijd-de.jpg"
@@ -28,12 +31,6 @@
  ],
  "aanrecht, het": [
   "assets/img/words/aanrecht-het.jpg"
- ],
- "aanspannen": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/South_Brunswick_High_School_Athletes_1.jpg/500px-South_Brunswick_High_School_Athletes_1.jpg"
- ],
- "aansporen": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/TerriLBailey_BLTBLIXELPhotoBooth_08192022_-_52370407040.jpg/500px-TerriLBailey_BLTBLIXELPhotoBooth_08192022_-_52370407040.jpg"
  ],
  "aansteker": [
   "assets/img/words/aansteker.jpg"
@@ -71,9 +68,6 @@
  "aardwetenschap": [
   "assets/img/words/aardwetenschap.jpg"
  ],
- "abonnement, het": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Boarding_Card_ISC_Airport.jpg/500px-Boarding_Card_ISC_Airport.jpg"
- ],
  "abrikoos": [
   "assets/img/words/abrikoos.jpg"
  ],
@@ -97,6 +91,9 @@
  ],
  "achtste": [
   "assets/img/words/achtste.jpg"
+ ],
+ "actief": [
+  "assets/img/words/actief.jpg"
  ],
  "adres": [
   "assets/img/words/adres.jpg"
@@ -136,6 +133,9 @@
  ],
  "alfabet": [
   "assets/img/words/alfabet.jpg"
+ ],
+ "alleen": [
+  "assets/img/words/alleen.jpg"
  ],
  "allergie": [
   "assets/img/words/allergie.jpg"
@@ -178,9 +178,6 @@
  ],
  "antiek": [
   "assets/img/words/antiek.jpg"
- ],
- "antwoorden": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Teachers_answering_a_student%27s_question_%2826562120806%29.jpg/500px-Teachers_answering_a_student%27s_question_%2826562120806%29.jpg"
  ],
  "apotheek": [
   "assets/img/words/apotheek.jpg"
@@ -425,9 +422,6 @@
  "begane grond, de": [
   "assets/img/words/begane-grond-de.jpg"
  ],
- "beginnen": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Runners_forming_at_the_start_line_of_the_1904_Olympics_Marathon_Race.jpg/500px-Runners_forming_at_the_start_line_of_the_1904_Olympics_Marathon_Race.jpg"
- ],
  "begrafenis": [
   "assets/img/words/begrafenis.jpg"
  ],
@@ -475,9 +469,6 @@
  ],
  "benzine": [
   "assets/img/words/benzine.jpg"
- ],
- "beoefenen": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Playing_field%2C_Cheltenham_College%2C_Cheltenham_-_geograph.org.uk_-_1569365.jpg/500px-Playing_field%2C_Cheltenham_College%2C_Cheltenham_-_geograph.org.uk_-_1569365.jpg"
  ],
  "beoordelen": [
   "assets/img/words/beoordelen.jpg"
@@ -551,11 +542,8 @@
  "bewaren": [
   "assets/img/words/bewaren.jpg"
  ],
- "bewegen": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Person_sits_on_a_yoga_mat_in_a_room_and_looks_at_a_laptop_while_stretching_and_preparing_for_a_workout.jpg/500px-Person_sits_on_a_yoga_mat_in_a_room_and_looks_at_a_laptop_while_stretching_and_preparing_for_a_workout.jpg"
- ],
  "beweging, de": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Hyena_%2826338075910%29.jpg/500px-Hyena_%2826338075910%29.jpg"
+  "assets/img/words/beweging-de.jpg"
  ],
  "bewolkt": [
   "assets/img/words/bewolkt.jpg"
@@ -600,7 +588,7 @@
   "assets/img/words/binnen.jpg"
  ],
  "binnenkomen": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Rome_%28Italy%29%2C_Door_--_2013_--_3558.jpg/500px-Rome_%28Italy%29%2C_Door_--_2013_--_3558.jpg"
+  "assets/img/words/binnenkomen.jpg"
  ],
  "biologie": [
   "assets/img/words/biologie.jpg"
@@ -731,9 +719,6 @@
  "boot, de": [
   "assets/img/words/boot-de.jpg"
  ],
- "borgpasje, het": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Suroboyo_Bus.jpg/500px-Suroboyo_Bus.jpg"
- ],
  "borst": [
   "assets/img/words/borst.jpg"
  ],
@@ -791,6 +776,9 @@
  "breien": [
   "assets/img/words/breien.jpg"
  ],
+ "breken": [
+  "assets/img/words/breken.jpg"
+ ],
  "bretels, de": [
   "assets/img/words/bretels-de.jpg"
  ],
@@ -847,12 +835,6 @@
  ],
  "bui, de": [
   "assets/img/words/bui-de.jpg"
- ],
- "buigen": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/A_Bowing_in_Art_1996.jpg/500px-A_Bowing_in_Art_1996.jpg"
- ],
- "buik, de": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/The_principles_of_physiology_-_applied_to_the_preservation_of_health%2C_and_to_the_improvement_of_physical_and_mental_education_%281835%29_%2814779170914%29.jpg/500px-The_principles_of_physiology_-_applied_to_the_preservation_of_health%2C_and_to_the_improvement_of_physical_and_mental_education_%281835%29_%2814779170914%29.jpg"
  ],
  "buikpijn": [
   "assets/img/words/buikpijn.jpg"
@@ -919,9 +901,6 @@
  ],
  "carnaval, het": [
   "assets/img/words/carnaval-het.jpg"
- ],
- "carrière, de": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Justice_Samuel_W._Stilsing_obituary_in_the_Jersey_Journal_on_Wednesday%2C_September_9%2C_1891.png/500px-Justice_Samuel_W._Stilsing_obituary_in_the_Jersey_Journal_on_Wednesday%2C_September_9%2C_1891.png"
  ],
  "cashewnoot": [
   "assets/img/words/cashewnoot.jpg"
@@ -1031,9 +1010,6 @@
  "concert, het": [
   "assets/img/words/concert-het.jpg"
  ],
- "conditie, de": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/US_Navy_070909-N-5148B-114_Sailors_aboard_aircraft_carrier_USS_Nimitz_%28CVN_68%29_train_for_the_Navy%27s_semi-annual_physical_fitness_test_by_jogging_on_the_ship%27s_flight_deck.jpg/500px-thumbnail.jpg"
- ],
  "conducteur, de": [
   "assets/img/words/conducteur-de.jpg"
  ],
@@ -1064,9 +1040,6 @@
  "dakterras, het": [
   "assets/img/words/dakterras-het.jpg"
  ],
- "dame, de": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Elegant_Lady_2025-05_in_K%C3%B6ln.jpg/500px-Elegant_Lady_2025-05_in_K%C3%B6ln.jpg"
- ],
  "dank je": [
   "assets/img/words/dank-je.jpg"
  ],
@@ -1074,7 +1047,7 @@
   "assets/img/words/dank-je-wel.jpg"
  ],
  "dank, de": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Thank_you_note_for_every_language.png/500px-Thank_you_note_for_every_language.png"
+  "assets/img/words/dank-de.jpg"
  ],
  "dansen": [
   "assets/img/words/dansen.jpg"
@@ -2109,7 +2082,7 @@
   "assets/img/words/december.jpg"
  ],
  "deel, het": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Key_lime_pie_slice_with_birthday_candle_in_Dutch_angle.jpg/500px-Key_lime_pie_slice_with_birthday_candle_in_Dutch_angle.jpg"
+  "assets/img/words/deel-het.jpg"
  ],
  "deken": [
   "assets/img/words/deken.jpg"
@@ -2306,6 +2279,9 @@
  "duren (geduurd)": [
   "assets/img/words/duren-geduurd.jpg"
  ],
+ "durven": [
+  "assets/img/words/durven.jpg"
+ ],
  "duur": [
   "assets/img/words/duur.jpg"
  ],
@@ -2415,7 +2391,7 @@
   "assets/img/words/eiland-het.jpg"
  ],
  "eindigen": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Mardi_Gras_Marathon_Crossing_Finish_Line_Wide.jpg/500px-Mardi_Gras_Marathon_Crossing_Finish_Line_Wide.jpg"
+  "assets/img/words/eindigen.jpg"
  ],
  "elastiek": [
   "assets/img/words/elastiek.jpg"
@@ -2441,9 +2417,6 @@
  "elleboog, de": [
   "assets/img/words/elleboog-de.jpg"
  ],
- "ellende, de": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/2013_Berlin_Brandenburg_Gate._Sad_raindrops_falling_from_a_smoky_table._Spielvogel.JPG/500px-2013_Berlin_Brandenburg_Gate._Sad_raindrops_falling_from_a_smoky_table._Spielvogel.JPG"
- ],
  "emoe": [
   "assets/img/words/emoe.jpg"
  ],
@@ -2466,7 +2439,7 @@
   "assets/img/words/enkel-de.jpg"
  ],
  "enkelpartij, de": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/YOG_2018_Tennis_-_girl_singles_-_Gold_medal_match_05.jpg/500px-YOG_2018_Tennis_-_girl_singles_-_Gold_medal_match_05.jpg"
+  "assets/img/words/enkelpartij-de.jpg"
  ],
  "enkeltje, het": [
   "assets/img/words/enkeltje-het.jpg"
@@ -2496,7 +2469,7 @@
   "assets/img/words/europa.jpg"
  ],
  "evenement, het": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/22nd_Chiayi_City_International_Band_Festival%2C_outdoor_concert_at_the_Zhongzheng_Park_%28Taiwan%29.jpg/500px-22nd_Chiayi_City_International_Band_Festival%2C_outdoor_concert_at_the_Zhongzheng_Park_%28Taiwan%29.jpg"
+  "assets/img/words/evenement-het.jpg"
  ],
  "examen, het": [
   "assets/img/words/examen-het.jpg"
@@ -2596,9 +2569,6 @@
  ],
  "fluit": [
   "assets/img/words/fluit.jpg"
- ],
- "formeel": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Businessman_on_stairs_%28Unsplash%29.jpg/500px-Businessman_on_stairs_%28Unsplash%29.jpg"
  ],
  "fornuis": [
   "assets/img/words/fornuis.jpg"
@@ -2700,7 +2670,7 @@
   "assets/img/words/gegeten-eten.jpg"
  ],
  "gehandicapt": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Wheelchair_accessibility_signs_on_ground.jpg/500px-Wheelchair_accessibility_signs_on_ground.jpg"
+  "assets/img/words/gehandicapt.jpg"
  ],
  "gehuwd": [
   "assets/img/words/gehuwd.jpg"
@@ -2723,6 +2693,9 @@
  "geld, het": [
   "assets/img/words/geld-het.jpg"
  ],
+ "geloven": [
+  "assets/img/words/geloven.jpg"
+ ],
  "geluid, het": [
   "assets/img/words/geluid-het.jpg"
  ],
@@ -2737,6 +2710,9 @@
  ],
  "gember": [
   "assets/img/words/gember.jpg"
+ ],
+ "gemeente, de": [
+  "assets/img/words/gemeente-de.jpg"
  ],
  "gemengde vechtsport": [
   "assets/img/words/gemengde-vechtsport.jpg"
@@ -2758,6 +2734,9 @@
  ],
  "geschiedenis": [
   "assets/img/words/geschiedenis.jpg"
+ ],
+ "geslacht, het": [
+  "assets/img/words/geslacht-het.jpg"
  ],
  "gespierd": [
   "assets/img/words/gespierd.jpg"
@@ -3041,8 +3020,8 @@
  "harmonica": [
   "assets/img/words/harmonica.jpg"
  ],
- "heer": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/James_Bell_Anderson_-_James_Bell_Anderson_%281886-1938%29_Portrait_of_a_gentleman%2C_half-length_seated%2C_in_a_suit_and_tie_signed_and_dated_%27J_B_Anderson_1932%27_l.jpg/500px-James_Bell_Anderson_-_James_Bell_Anderson_%281886-1938%29_Portrait_of_a_gentleman%2C_half-length_seated%2C_in_a_suit_and_tie_signed_and_dated_%27J_B_Anderson_1932%27_l.jpg"
+ "hartklopping, de": [
+  "assets/img/words/hartklopping-de.jpg"
  ],
  "heer, de": [
   "assets/img/words/heer-de.jpg"
@@ -3602,17 +3581,11 @@
  "hoofdpijn, de": [
   "assets/img/words/hoofdpijn-de.jpg"
  ],
- "hoofdstad, de": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/London_MMB_%C2%BB1M3_City_Canal_and_%22Stad_Amsterdam%22.jpg/500px-London_MMB_%C2%BB1M3_City_Canal_and_%22Stad_Amsterdam%22.jpg"
- ],
  "hoog": [
   "assets/img/words/hoog.jpg"
  ],
  "hoog, hoge": [
   "assets/img/words/hoog-hoge.jpg"
- ],
- "hoogachtend": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/First_Employment_Letter_-_Lamara_Chkonia_-_Z_Paliashvili_Tbilisi_State_Opera_-_11_July_1956.jpg/500px-First_Employment_Letter_-_Lamara_Chkonia_-_Z_Paliashvili_Tbilisi_State_Opera_-_11_July_1956.jpg"
  ],
  "hoop, hopen": [
   "assets/img/words/hoop-hopen.jpg"
@@ -3701,6 +3674,9 @@
  "huwelijk, het": [
   "assets/img/words/huwelijk-het.jpg"
  ],
+ "huwelijkscontract, het": [
+  "assets/img/words/huwelijkscontract-het.jpg"
+ ],
  "idee, het": [
   "assets/img/words/idee-het.jpg"
  ],
@@ -3781,9 +3757,6 @@
  ],
  "inrichting, de": [
   "assets/img/words/inrichting-de.jpg"
- ],
- "inschrijfgeld, het": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Replica_classic_automobile%2C_VJI_5305.jpg/500px-Replica_classic_automobile%2C_VJI_5305.jpg"
  ],
  "insignificant": [
   "assets/img/words/insignificant.jpg"
@@ -3990,7 +3963,7 @@
   "assets/img/words/kampioen.jpg"
  ],
  "kampioenschap, het": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Stanley_Cup%2C_2015.jpg/500px-Stanley_Cup%2C_2015.jpg"
+  "assets/img/words/kampioenschap-het.jpg"
  ],
  "kan": [
   "assets/img/words/kan.jpg"
@@ -4092,7 +4065,7 @@
   "assets/img/words/kiezen.jpg"
  ],
  "kijken": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Gabriel_looking_through_pretend_binoculars_at_a_playground%2C_Parque_das_Na%C3%A7%C3%B5es%2C_Lisbon%2C_Portugal_julesvernex2.jpg/500px-Gabriel_looking_through_pretend_binoculars_at_a_playground%2C_Parque_das_Na%C3%A7%C3%B5es%2C_Lisbon%2C_Portugal_julesvernex2.jpg"
+  "assets/img/words/kijken.jpg"
  ],
  "kikker": [
   "assets/img/words/kikker.jpg"
@@ -4167,7 +4140,7 @@
   "assets/img/words/kleur-de.jpg"
  ],
  "klimmen": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Stefan_Danker_GER.JPG/500px-Stefan_Danker_GER.JPG"
+  "assets/img/words/klimmen.jpg"
  ],
  "klinken (klonk, geklonken)": [
   "assets/img/words/klinken-klonk-geklonken.jpg"
@@ -4515,7 +4488,7 @@
   "assets/img/words/letsel.jpg"
  ],
  "letter, de": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Wooden_Block_Letters_Vision.jpg/500px-Wooden_Block_Letters_Vision.jpg"
+  "assets/img/words/letter-de.jpg"
  ],
  "leuk": [
   "assets/img/words/leuk.jpg"
@@ -4530,7 +4503,7 @@
   "assets/img/words/lezing.jpg"
  ],
  "lichaamsdeel, het": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Regions_of_Human_Body.jpg/500px-Regions_of_Human_Body.jpg"
+  "assets/img/words/lichaamsdeel-het.jpg"
  ],
  "lichaamstemperatuur": [
   "assets/img/words/lichaamstemperatuur.jpg"
@@ -4555,6 +4528,9 @@
  ],
  "lieveheersbeestje": [
   "assets/img/words/lieveheersbeestje.jpg"
+ ],
+ "lieverd, de": [
+  "assets/img/words/lieverd-de.jpg"
  ],
  "lift": [
   "assets/img/words/lift.jpg"
@@ -4653,7 +4629,7 @@
   "assets/img/words/luidop.jpg"
  ],
  "luisteren": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Girl_in_headphones_%28cropped%29.jpg/500px-Girl_in_headphones_%28cropped%29.jpg"
+  "assets/img/words/luisteren.jpg"
  ],
  "luisterend": [
   "assets/img/words/luisterend.jpg"
@@ -5232,7 +5208,7 @@
   "assets/img/words/octopus.jpg"
  ],
  "oefenen": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Piano_practice.jpg/500px-Piano_practice.jpg"
+  "assets/img/words/oefenen.jpg"
  ],
  "oefening, de": [
   "assets/img/words/oefening-de.jpg"
@@ -5267,9 +5243,6 @@
  "oma, de": [
   "assets/img/words/oma-de.jpg"
  ],
- "omlaag": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Taxi_parking_sign_with_arrows_pointing_down%2C_Hoogezand_%282019%29_02.jpg/500px-Taxi_parking_sign_with_arrows_pointing_down%2C_Hoogezand_%282019%29_02.jpg"
- ],
  "omtrek, de": [
   "assets/img/words/omtrek-de.jpg"
  ],
@@ -5283,7 +5256,7 @@
   "assets/img/words/onderbroek-de.jpg"
  ],
  "onderdeel, het": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Rome_%28Italy%29%2C_Bicycle_--_2013_--_4368.jpg/500px-Rome_%28Italy%29%2C_Bicycle_--_2013_--_4368.jpg"
+  "assets/img/words/onderdeel-het.jpg"
  ],
  "ondergeschikte": [
   "assets/img/words/ondergeschikte.jpg"
@@ -5330,6 +5303,9 @@
  "ons, het": [
   "assets/img/words/ons-het.jpg"
  ],
+ "ontmoeten": [
+  "assets/img/words/ontmoeten.jpg"
+ ],
  "ontsmetten": [
   "assets/img/words/ontsmetten.jpg"
  ],
@@ -5343,7 +5319,7 @@
   "assets/img/words/ontwerper-de.jpg"
  ],
  "onverslaanbaar": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Emon_Mahmud_BPL_Trophy_2018-19.jpg/500px-Emon_Mahmud_BPL_Trophy_2018-19.jpg"
+  "assets/img/words/onverslaanbaar.jpg"
  ],
  "onweersbui": [
   "assets/img/words/onweersbui.jpg"
@@ -5435,9 +5411,6 @@
  "oprecht": [
   "assets/img/words/oprecht.jpg"
  ],
- "opschieten": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Seattle_-_Railroad_Avenue%2C_1925_%2839714172783%29.jpg/500px-Seattle_-_Railroad_Avenue%2C_1925_%2839714172783%29.jpg"
- ],
  "optimistisch": [
   "assets/img/words/optimistisch.jpg"
  ],
@@ -5450,9 +5423,6 @@
  "opwarmen in de magnetron": [
   "assets/img/words/opwarmen-in-de-magnetron.jpg"
  ],
- "opzeggen": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/How-to-Cancel-your-Subscription-to-Streaming-Services-without-Fretting_-_History_%26_Headlines.jpg/500px-How-to-Cancel-your-Subscription-to-Streaming-Services-without-Fretting_-_History_%26_Headlines.jpg"
- ],
  "oranje": [
   "assets/img/words/oranje.jpg"
  ],
@@ -5463,7 +5433,7 @@
   "assets/img/words/orkaan.jpg"
  ],
  "oud": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Old_Clock_DSCN4743.jpg/500px-Old_Clock_DSCN4743.jpg"
+  "assets/img/words/oud.jpg"
  ],
  "oude kaas, de": [
   "assets/img/words/oude-kaas-de.jpg"
@@ -5760,7 +5730,7 @@
   "assets/img/words/polsstokverspringen-het.jpg"
  ],
  "populair": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Crowd_cheering%2C_Hong_Kong_Sevens_2009.jpg/500px-Crowd_cheering%2C_Hong_Kong_Sevens_2009.jpg"
+  "assets/img/words/populair.jpg"
  ],
  "portemonnee": [
   "assets/img/words/portemonnee.jpg"
@@ -5800,9 +5770,6 @@
  ],
  "Praag": [
   "assets/img/words/praag.jpg"
- ],
- "praten": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Hans_Andersen_Brendekilde_-_Ind_under_aften._Hvad_taler_de_to_gamle_mon_om%3F.png/500px-Hans_Andersen_Brendekilde_-_Ind_under_aften._Hvad_taler_de_to_gamle_mon_om%3F.png"
  ],
  "presentatie, de": [
   "assets/img/words/presentatie-de.jpg"
@@ -5857,6 +5824,9 @@
  ],
  "proost": [
   "assets/img/words/proost.jpg"
+ ],
+ "protestants": [
+  "assets/img/words/protestants.jpg"
  ],
  "pruim": [
   "assets/img/words/pruim.jpg"
@@ -5990,6 +5960,9 @@
  "rekenmachine": [
   "assets/img/words/rekenmachine.jpg"
  ],
+ "relatie, de": [
+  "assets/img/words/relatie-de.jpg"
+ ],
  "religie": [
   "assets/img/words/religie.jpg"
  ],
@@ -6107,6 +6080,9 @@
  "roosteren": [
   "assets/img/words/roosteren.jpg"
  ],
+ "rot": [
+  "assets/img/words/rot.jpg"
+ ],
  "rotonde": [
   "assets/img/words/rotonde.jpg"
  ],
@@ -6141,7 +6117,7 @@
   "assets/img/words/rusland.jpg"
  ],
  "rust, de": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Half_time_whistle.jpg/500px-Half_time_whistle.jpg"
+  "assets/img/words/rust-de.jpg"
  ],
  "ruziemaken": [
   "assets/img/words/ruziemaken.jpg"
@@ -6246,7 +6222,7 @@
   "assets/img/words/schoonzus-de.jpg"
  ],
  "schoppen": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Kicking_a_ball.jpg/500px-Kicking_a_ball.jpg"
+  "assets/img/words/schoppen.jpg"
  ],
  "schouder": [
   "assets/img/words/schouder.jpg"
@@ -6552,16 +6528,16 @@
   "assets/img/words/spreekuur-het.jpg"
  ],
  "spreiden": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Buttered-bread-with-fish-and-spread.jpg/500px-Buttered-bread-with-fish-and-spread.jpg"
+  "assets/img/words/spreiden.jpg"
  ],
  "springen": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/720th_Special_Tactics_Group_airmen_jump_20071003.jpg/500px-720th_Special_Tactics_Group_airmen_jump_20071003.jpg"
+  "assets/img/words/springen.jpg"
  ],
  "sprint, de": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Finish_of_sprint_running%2C_1992_Paralympics.jpg/500px-Finish_of_sprint_running%2C_1992_Paralympics.jpg"
+  "assets/img/words/sprint-de.jpg"
  ],
  "sprong, de": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Army_Athletics_Long_Jumper_at_The_Inter_Corps_Athletics_Competition_at_Tidworth%2C_Wiltshire_MOD_45152793_%28cropped%29.jpg/500px-Army_Athletics_Long_Jumper_at_The_Inter_Corps_Athletics_Competition_at_Tidworth%2C_Wiltshire_MOD_45152793_%28cropped%29.jpg"
+  "assets/img/words/sprong-de.jpg"
  ],
  "stad": [
   "assets/img/words/stad.jpg"
@@ -6579,7 +6555,7 @@
   "assets/img/words/standbeeld.jpg"
  ],
  "startplaats, de": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Norman_Park_athletics_track%2C_starting_blocks_-_geograph.org.uk_-_2168170.jpg/500px-Norman_Park_athletics_track%2C_starting_blocks_-_geograph.org.uk_-_2168170.jpg"
+  "assets/img/words/startplaats-de.jpg"
  ],
  "station, het": [
   "assets/img/words/station-het.jpg"
@@ -6604,9 +6580,6 @@
  ],
  "ster": [
   "assets/img/words/ster.jpg"
- ],
- "sterk": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/The_Nebraska_Strong_Man_-_DPLA_-_d93fec0dfb9c9c147f260c5343a859a2.jpg/500px-The_Nebraska_Strong_Man_-_DPLA_-_d93fec0dfb9c9c147f260c5343a859a2.jpg"
  ],
  "stewardess": [
   "assets/img/words/stewardess.jpg"
@@ -6650,9 +6623,6 @@
  "stoplicht, het": [
   "assets/img/words/stoplicht-het.jpg"
  ],
- "stoppen": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Stop_here_on_red_sign_in_Baltimore_MD.jpg/500px-Stop_here_on_red_sign_in_Baltimore_MD.jpg"
- ],
  "stopteken": [
   "assets/img/words/stopteken.jpg"
  ],
@@ -6678,7 +6648,7 @@
   "assets/img/words/strand-het.jpg"
  ],
  "strekken": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Top_view_of_a_woman_stretching_on_a_yoga_mat.jpg/500px-Top_view_of_a_woman_stretching_on_a_yoga_mat.jpg"
+  "assets/img/words/strekken.jpg"
  ],
  "strijken": [
   "assets/img/words/strijken.jpg"
@@ -6706,9 +6676,6 @@
  ],
  "studentenhuis": [
   "assets/img/words/studentenhuis.jpg"
- ],
- "studeren": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Public_Library_Bhiswa_%E2%80%93_Students_Reading.jpg/500px-Public_Library_Bhiswa_%E2%80%93_Students_Reading.jpg"
  ],
  "studieboek": [
   "assets/img/words/studieboek.jpg"
@@ -6860,6 +6827,9 @@
  "tegen": [
   "assets/img/words/tegen.jpg"
  ],
+ "tegenwoordig": [
+  "assets/img/words/tegenwoordig.jpg"
+ ],
  "teken, het": [
   "assets/img/words/teken-het.jpg"
  ],
@@ -6907,9 +6877,6 @@
  ],
  "tennisbaan, de": [
   "assets/img/words/tennisbaan-de.jpg"
- ],
- "tennistoernooi, het": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Nainital_tennis_tournament_BLcollection.jpg/500px-Nainital_tennis_tournament_BLcollection.jpg"
  ],
  "ter": [
   "assets/img/words/ter.jpg"
@@ -7029,7 +6996,7 @@
   "assets/img/words/tonijn-de.jpg"
  ],
  "top, de": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Summitting_Island_Peak.jpg/500px-Summitting_Island_Peak.jpg"
+  "assets/img/words/top-de.jpg"
  ],
  "topsporter, de": [
   "assets/img/words/topsporter-de.jpg"
@@ -7190,9 +7157,6 @@
  "uitslag": [
   "assets/img/words/uitslag.jpg"
  ],
- "uitspreken": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Diseases_of_the_mouth%3B_for_physicians%2C_dentists%2C_medical_and_dental_students_%281912%29_%2814772634902%29.jpg/500px-Diseases_of_the_mouth%3B_for_physicians%2C_dentists%2C_medical_and_dental_students_%281912%29_%2814772634902%29.jpg"
- ],
  "uitstappen": [
   "assets/img/words/uitstappen.jpg"
  ],
@@ -7252,9 +7216,6 @@
  ],
  "varkensvlees, het": [
   "assets/img/words/varkensvlees-het.jpg"
- ],
- "vasthouden": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Harper%27s_story_books._A_series_of_narratives%2C_dialogues%2C_biographies%2C_and_tales%2C_for_the_instruction_and_entertainment_of_the_young._Embellished_with_numerous_and_beautiful_engravings_%281854%29_%2814594488568%29.jpg/500px-thumbnail.jpg"
  ],
  "vechten": [
   "assets/img/words/vechten.jpg"
@@ -7319,6 +7280,9 @@
  "verdoving, de": [
   "assets/img/words/verdoving-de.jpg"
  ],
+ "verdriet, het": [
+  "assets/img/words/verdriet-het.jpg"
+ ],
  "verdrietig": [
   "assets/img/words/verdrietig.jpg"
  ],
@@ -7326,7 +7290,7 @@
   "assets/img/words/verenigd-koninkrijk.jpg"
  ],
  "vereniging, de": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Hong_Kong_Football_Club_Ground1.jpg/500px-Hong_Kong_Football_Club_Ground1.jpg"
+  "assets/img/words/vereniging-de.jpg"
  ],
  "vergadering": [
   "assets/img/words/vergadering.jpg"
@@ -7348,6 +7312,9 @@
  ],
  "verkeersbord": [
   "assets/img/words/verkeersbord.jpg"
+ ],
+ "verkering, de": [
+  "assets/img/words/verkering-de.jpg"
  ],
  "verkoper": [
   "assets/img/words/verkoper.jpg"
@@ -7388,9 +7355,6 @@
  "verrassing, de": [
   "assets/img/words/verrassing-de.jpg"
  ],
- "verstandig": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Wise_Owl_Hostels_Shibuya.jpg/500px-Wise_Owl_Hostels_Shibuya.jpg"
- ],
  "verstopte neus": [
   "assets/img/words/verstopte-neus.jpg"
  ],
@@ -7420,6 +7384,9 @@
  ],
  "verveeld": [
   "assets/img/words/verveeld.jpg"
+ ],
+ "vervelend": [
+  "assets/img/words/vervelend.jpg"
  ],
  "verven": [
   "assets/img/words/verven.jpg"
@@ -7572,7 +7539,7 @@
   "assets/img/words/voetbal.jpg"
  ],
  "voetbalkampioen, de": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Gotham_FC_champions_mayor_ceremony_2025_%2804%29.png/500px-Gotham_FC_champions_mayor_ceremony_2025_%2804%29.png"
+  "assets/img/words/voetbalkampioen-de.jpg"
  ],
  "voetbalveld, het": [
   "assets/img/words/voetbalveld-het.jpg"
@@ -7604,9 +7571,6 @@
  "volgende": [
   "assets/img/words/volgende.jpg"
  ],
- "volhouden": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Remote_Marathon_%2810542649994%29.jpg/500px-Remote_Marathon_%2810542649994%29.jpg"
- ],
  "volkorenbrood, het": [
   "assets/img/words/volkorenbrood-het.jpg"
  ],
@@ -7618,9 +7582,6 @@
  ],
  "voorbij": [
   "assets/img/words/voorbij.jpg"
- ],
- "voordoen": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/CJTF-HOA_Executes_Exercise_to_Comoros%2C_Demonstrating_Theater_Reach_and_Integrated_Regional_Partnership_%289523907%29.jpg/500px-CJTF-HOA_Executes_Exercise_to_Comoros%2C_Demonstrating_Theater_Reach_and_Integrated_Regional_Partnership_%289523907%29.jpg"
  ],
  "voorgerecht": [
   "assets/img/words/voorgerecht.jpg"
@@ -7652,6 +7613,9 @@
  "vorm, de": [
   "assets/img/words/vorm-de.jpg"
  ],
+ "vormen": [
+  "assets/img/words/vormen.jpg"
+ ],
  "vorst": [
   "assets/img/words/vorst.jpg"
  ],
@@ -7671,7 +7635,7 @@
   "assets/img/words/vrachtwagen.jpg"
  ],
  "vragen": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/A_child_with_the_TAPS_organization_raises_his_hand_to_ask_a_question_to_Gen._Martin_E._Dempsey%2C_May_2012.jpg/500px-A_child_with_the_TAPS_organization_raises_his_hand_to_ask_a_question_to_Gen._Martin_E._Dempsey%2C_May_2012.jpg"
+  "assets/img/words/vragen.jpg"
  ],
  "vreemde valuta": [
   "assets/img/words/vreemde-valuta.jpg"
@@ -7684,9 +7648,6 @@
  ],
  "vriend, de": [
   "assets/img/words/vriend-de.jpg"
- ],
- "vriendelijk": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/1985_Friendly_Chinese_man_in_Gelugor%2C_Penang_Island._Spielvogel_Archiv.jpg/500px-1985_Friendly_Chinese_man_in_Gelugor%2C_Penang_Island._Spielvogel_Archiv.jpg"
  ],
  "vriendin, de": [
   "assets/img/words/vriendin-de.jpg"
@@ -7980,7 +7941,7 @@
   "assets/img/words/winkelwagen.jpg"
  ],
  "winnen": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Harrison_Dillard_-_1948_Olympics_gold_medal_winner.jpg/500px-Harrison_Dillard_-_1948_Olympics_gold_medal_winner.jpg"
+  "assets/img/words/winnen.jpg"
  ],
  "winter": [
   "assets/img/words/winter.jpg"
@@ -8094,7 +8055,7 @@
   "assets/img/words/zalm-de.jpg"
  ],
  "zandbed, het": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/231000_-_Athletics_field_long_jump_Don_Elgin_action_-_3b_-_2000_Sydney_event_photo.jpg/500px-231000_-_Athletics_field_long_jump_Don_Elgin_action_-_3b_-_2000_Sydney_event_photo.jpg"
+  "assets/img/words/zandbed-het.jpg"
  ],
  "zandstorm": [
   "assets/img/words/zandstorm.jpg"
@@ -8132,9 +8093,6 @@
  "zeevruchten": [
   "assets/img/words/zeevruchten.jpg"
  ],
- "zeggen": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Speaking_trumpets_-_San_Francisco_Fire_Department_Museum%2C_San_Francisco%2C_CA_-_PXL_20230825_210108140.jpg/500px-Speaking_trumpets_-_San_Francisco_Fire_Department_Museum%2C_San_Francisco%2C_CA_-_PXL_20230825_210108140.jpg"
- ],
  "zeil, het": [
   "assets/img/words/zeil-het.jpg"
  ],
@@ -8166,7 +8124,7 @@
   "assets/img/words/ziekte.jpg"
  ],
  "zien": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/011_Plains_zebra_eye_close-up_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg/500px-011_Plains_zebra_eye_close-up_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg"
+  "assets/img/words/zien.jpg"
  ],
  "zij": [
   "assets/img/words/zij.jpg"
@@ -8194,9 +8152,6 @@
  ],
  "zin": [
   "assets/img/words/zin.jpg"
- ],
- "zin, de": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Catalogue_of_the_instructors_and_students_in_the_State_Normal_School_at_Salem_%281909%29_%2814764737431%29.jpg/500px-Catalogue_of_the_instructors_and_students_in_the_State_Normal_School_at_Salem_%281909%29_%2814764737431%29.jpg"
  ],
  "zitten": [
   "assets/img/words/zitten.jpg"
@@ -8251,9 +8206,6 @@
  ],
  "zout, het": [
   "assets/img/words/zout-het.jpg"
- ],
- "zuchten": [
-  "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Flickr_-_DVIDSHUB_-_Birth_of_a_Motto%2C_in_Helmand_Province%2C_3-3_H%5ES_Marines_Prove_Their_Versatility%2C_Mettle.jpg/500px-Flickr_-_DVIDSHUB_-_Birth_of_a_Motto%2C_in_Helmand_Province%2C_3-3_H%5ES_Marines_Prove_Their_Versatility%2C_Mettle.jpg"
  ],
  "zuid": [
   "assets/img/words/zuid.jpg"
