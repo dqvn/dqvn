@@ -2039,5 +2039,737 @@
  },
  "chatten": {
   "e": "💬"
+ },
+ "af en toe": {
+  "e": "🔀"
+ },
+ "anders": {
+  "e": "↔️"
+ },
+ "bank, de": {
+  "q": "park bench",
+  "e": "🛋️"
+ },
+ "belangrijk": {
+  "e": "❗"
+ },
+ "bestaan": {
+  "e": "🌍"
+ },
+ "brengen": {
+  "q": "person carrying a package",
+  "e": "📦"
+ },
+ "daarom": {
+  "e": "➡️"
+ },
+ "delen": {
+  "q": "sharing a pizza between friends",
+  "e": "🍕"
+ },
+ "deze": {
+  "e": "👇"
+ },
+ "die": {
+  "e": "👉"
+ },
+ "dit": {
+  "e": "👇"
+ },
+ "door de week": {
+  "e": "📅"
+ },
+ "eigen": {
+  "e": "🙋"
+ },
+ "er": {
+  "e": "📍"
+ },
+ "garage, de": {
+  "q": "garage with car",
+  "e": "🚗"
+ },
+ "gedag zeggen": {
+  "e": "👋"
+ },
+ "grond, de": {
+  "q": "ground soil floor",
+  "e": "🌱"
+ },
+ "handig": {
+  "e": "🛠️"
+ },
+ "hangen": {
+  "q": "coat hanging on a hook",
+  "e": "🧥"
+ },
+ "hier": {
+  "e": "📍"
+ },
+ "hoezo": {
+  "e": "🤨"
+ },
+ "huren": {
+  "q": "car rental keys",
+  "e": "🔑"
+ },
+ "iets": {
+  "e": "❔"
+ },
+ "lamp, de": {
+  "q": "table lamp",
+  "e": "💡"
+ },
+ "lijken": {
+  "e": "👀"
+ },
+ "minder": {
+  "e": "➖"
+ },
+ "regelmatig": {
+  "e": "🔁"
+ },
+ "rijden": {
+  "q": "car driving on a road",
+  "e": "🚗"
+ },
+ "ruim": {
+  "q": "spacious bright living room",
+  "e": "🏠"
+ },
+ "schijnen": {
+  "q": "sun shining through clouds",
+  "e": "🌞"
+ },
+ "staan": {
+  "q": "person standing",
+  "e": "🧍"
+ },
+ "te": {
+  "e": "⚠️"
+ },
+ "terras, het": {
+  "q": "cafe terrace with tables",
+  "e": "☕"
+ },
+ "uittrekken": {
+  "q": "taking off a coat",
+  "e": "🧥"
+ },
+ "ver weg": {
+  "e": "🔭"
+ },
+ "verhuizen": {
+  "q": "moving boxes in new house",
+  "e": "📦"
+ },
+ "volgens": {
+  "e": "📣"
+ },
+ "afgelopen": {
+  "e": "⏪"
+ },
+ "aflopen": {
+  "e": "🔚"
+ },
+ "bedenken": {
+  "e": "💡"
+ },
+ "beestje, het": {
+  "q": "ladybug insect",
+  "e": "🐞"
+ },
+ "bezichtigen": {
+  "q": "tourists sightseeing",
+  "e": "🧭"
+ },
+ "bezoeken": {
+  "e": "🏛️"
+ },
+ "buren, de": {
+  "q": "neighbours houses street",
+  "e": "🏘️"
+ },
+ "eerder": {
+  "e": "⏪"
+ },
+ "eergisteren": {
+  "e": "⏮️"
+ },
+ "eindelijk": {
+  "e": "🎉"
+ },
+ "excursie, de": {
+  "q": "school excursion group walking",
+  "e": "🚌"
+ },
+ "fantastisch": {
+  "e": "🤩"
+ },
+ "geleden": {
+  "e": "⏪"
+ },
+ "gisteravond": {
+  "e": "🌙"
+ },
+ "gisteren": {
+  "e": "⏪"
+ },
+ "heerlijk": {
+  "e": "😋"
+ },
+ "insmeren": {
+  "q": "applying sunscreen on skin",
+  "e": "🧴"
+ },
+ "kerk, de": {
+  "q": "dutch church building",
+  "e": "⛪"
+ },
+ "nodig": {
+  "e": "❗"
+ },
+ "onvoorzichtig": {
+  "e": "⚠️"
+ },
+ "opruimen": {
+  "q": "tidying up toys",
+  "e": "🧹"
+ },
+ "paar, het": {
+  "q": "pair of shoes",
+  "e": "👟"
+ },
+ "pakken": {
+  "q": "packing a suitcase",
+  "e": "🧳"
+ },
+ "rit, de": {
+  "q": "scenic car ride road",
+  "e": "🛣️"
+ },
+ "ruzie, de": {
+  "e": "😡"
+ },
+ "schaatsen": {
+  "q": "ice skating on frozen canal",
+  "e": "⛸️"
+ },
+ "souvenir, het": {
+  "q": "souvenir shop tourist",
+  "e": "🎁"
+ },
+ "stress, de": {
+  "e": "😫"
+ },
+ "stressvol": {
+  "e": "😰"
+ },
+ "tent, de": {
+  "q": "camping tent",
+  "e": "⛺"
+ },
+ "trouwens": {
+  "e": "💬"
+ },
+ "trui, de": {
+  "q": "knitted sweater",
+  "e": "🧶"
+ },
+ "vakantiebestemming, de": {
+  "q": "tropical beach holiday",
+  "e": "🏝️"
+ },
+ "van tevoren": {
+  "e": "⏩"
+ },
+ "vanmorgen": {
+  "e": "🌅"
+ },
+ "vannacht": {
+  "e": "🌙"
+ },
+ "verbranden": {
+  "q": "sunburn red skin",
+  "e": "🥵"
+ },
+ "vermaken (zich -)": {
+  "e": "🎉"
+ },
+ "vermoeiend": {
+  "e": "😮‍💨"
+ },
+ "waarschuwen": {
+  "q": "warning sign",
+  "e": "⚠️"
+ },
+ "wakker": {
+  "e": "⏰"
+ },
+ "wennen": {
+  "e": "🔄"
+ },
+ "zonnebrandcrème, de": {
+  "q": "sunscreen bottle",
+  "e": "🧴"
+ },
+ "zonnen": {
+  "q": "sunbathing on beach chair",
+  "e": "🏖️"
+ },
+ "zwembroek, de": {
+  "q": "swimming trunks",
+  "e": "🩳"
+ },
+ "afrekenen": {
+  "q": "paying at restaurant card terminal",
+  "e": "💳"
+ },
+ "allemaal": {
+  "e": "👥"
+ },
+ "beleefd": {
+  "e": "🙏"
+ },
+ "bestellen": {
+  "q": "waiter taking order at restaurant",
+  "e": "🍽️"
+ },
+ "echt": {
+  "e": "💯"
+ },
+ "eetcafé, het": {
+  "q": "casual dutch pub dining",
+  "e": "🍺"
+ },
+ "fooi, de": {
+  "q": "tip money in a jar",
+  "e": "💶"
+ },
+ "gezond": {
+  "q": "healthy fruit and vegetables",
+  "e": "🥗"
+ },
+ "hoofdgerecht, het": {
+  "q": "main course dinner plate",
+  "e": "🍽️"
+ },
+ "kaasplankje, het": {
+  "q": "cheese board with cheeses",
+  "e": "🧀"
+ },
+ "keuze, de": {
+  "q": "choosing between two doors",
+  "e": "🔀"
+ },
+ "kletsen": {
+  "q": "friends chatting over coffee",
+  "e": "💬"
+ },
+ "kruidenboter, de": {
+  "q": "herb butter",
+  "e": "🧈"
+ },
+ "letten op": {
+  "e": "👀"
+ },
+ "of zo": {
+  "e": "🤷"
+ },
+ "omdraaien": {
+  "q": "turning around",
+  "e": "🔄"
+ },
+ "ongezond": {
+  "q": "fast food burger fries",
+  "e": "🍔"
+ },
+ "onopvallend": {
+  "e": "🤫"
+ },
+ "opdracht, de": {
+  "q": "checklist assignment on desk",
+  "e": "📋"
+ },
+ "opmaken (zich -)": {
+  "q": "applying makeup lipstick",
+  "e": "💄"
+ },
+ "plotseling": {
+  "e": "⚡"
+ },
+ "rekening, de": {
+  "q": "restaurant bill receipt",
+  "e": "🧾"
+ },
+ "rest, de": {
+  "e": "➗"
+ },
+ "stil": {
+  "e": "🤫"
+ },
+ "tap, de": {
+  "q": "bar tap beer",
+  "e": "🍺"
+ },
+ "terugweg, de": {
+  "e": "↩️"
+ },
+ "tip, de": {
+  "e": "💡"
+ },
+ "uit eten gaan": {
+  "q": "dinner at restaurant table",
+  "e": "🍽️"
+ },
+ "van alles en nog wat": {
+  "e": "🧰"
+ },
+ "vies": {
+  "q": "dirty plate",
+  "e": "🤢"
+ },
+ "voorgerecht, het": {
+  "q": "starter soup appetizer",
+  "e": "🥣"
+ },
+ "advies, het": {
+  "e": "💬"
+ },
+ "afwerken": {
+  "e": "✅"
+ },
+ "binnenkort": {
+  "e": "🔜"
+ },
+ "dansvloer, de": {
+  "q": "dance floor party",
+  "e": "🕺"
+ },
+ "ding, het": {
+  "e": "📦"
+ },
+ "driedelig": {
+  "q": "three piece suit",
+  "e": "🤵"
+ },
+ "even": {
+  "e": "⏱️"
+ },
+ "geur, de": {
+  "q": "flower scent smelling",
+  "e": "🌸"
+ },
+ "hoek, de": {
+  "q": "street corner",
+  "e": "↪️"
+ },
+ "hulp, de": {
+  "q": "helping hand",
+  "e": "🤝"
+ },
+ "jammer genoeg": {
+  "e": "😞"
+ },
+ "kerel, de": {
+  "e": "🧔"
+ },
+ "keurig": {
+  "e": "✨"
+ },
+ "kledingstuk, het": {
+  "q": "clothes on hangers",
+  "e": "👗"
+ },
+ "kwaliteit, de": {
+  "e": "🏅"
+ },
+ "lenen": {
+  "e": "🤲"
+ },
+ "losschieten": {
+  "e": "🔓"
+ },
+ "mager": {
+  "e": "🥶"
+ },
+ "muts, de": {
+  "q": "knitted beanie hat",
+  "e": "🧢"
+ },
+ "nadenken": {
+  "q": "thinking pose",
+  "e": "🤔"
+ },
+ "onwennig": {
+  "e": "😅"
+ },
+ "passen": {
+  "q": "trying on clothes fitting room",
+  "e": "👚"
+ },
+ "pet, de": {
+  "q": "baseball cap",
+  "e": "🧢"
+ },
+ "proberen": {
+  "e": "💪"
+ },
+ "rand, de": {
+  "q": "edge of a cliff",
+  "e": "⛰️"
+ },
+ "riem, de": {
+  "q": "leather belt",
+  "e": "👖"
+ },
+ "rondkijken": {
+  "e": "👀"
+ },
+ "ruiken": {
+  "q": "smelling a flower",
+  "e": "👃"
+ },
+ "strak": {
+  "q": "tight fitting jeans",
+  "e": "👖"
+ },
+ "tenminste": {
+  "e": "☝️"
+ },
+ "tevoorschijn komen": {
+  "e": "🎩"
+ },
+ "uitleggen": {
+  "q": "teacher explaining at whiteboard",
+  "e": "🧑‍🏫"
+ },
+ "uitzoeken": {
+  "e": "🔎"
+ },
+ "verkopen": {
+  "q": "market stall selling goods",
+  "e": "🏷️"
+ },
+ "vest, het": {
+  "q": "cardigan sweater",
+  "e": "🧥"
+ },
+ "vluchten": {
+  "e": "🏃"
+ },
+ "voelen (zich -)": {
+  "e": "🫶"
+ },
+ "weg": {
+  "e": "👋"
+ },
+ "zacht": {
+  "q": "soft fluffy cotton",
+  "e": "☁️"
+ },
+ "zelf": {
+  "e": "🙋"
+ },
+ "zoiets": {
+  "e": "👌"
+ },
+ "aanbellen": {
+  "q": "pressing a doorbell",
+  "e": "🔔"
+ },
+ "aanhef, de": {
+  "q": "letter greeting dear",
+  "e": "✉️"
+ },
+ "aankloppen": {
+  "q": "hand knocking on a wooden door",
+  "e": "🚪"
+ },
+ "afsluiting, de": {
+  "e": "🔚"
+ },
+ "baas, de": {
+  "e": "👔"
+ },
+ "beïnvloeden": {
+  "e": "🔀"
+ },
+ "bekijken": {
+  "q": "looking through magnifying glass",
+  "e": "🔍"
+ },
+ "beklimmen": {
+  "q": "climbing a mountain",
+  "e": "🧗"
+ },
+ "beste": {
+  "e": "🥇"
+ },
+ "bezigheid, de": {
+  "e": "🎨"
+ },
+ "binnenland, het": {
+  "q": "inland countryside fields",
+  "e": "🌾"
+ },
+ "circa": {
+  "e": "≈"
+ },
+ "daardoor": {
+  "e": "➡️"
+ },
+ "dijk, de": {
+  "q": "dutch dike sea",
+  "e": "🌊"
+ },
+ "draaien": {
+  "q": "spinning wheel",
+  "e": "🔄"
+ },
+ "gebruiken": {
+  "e": "🛠️"
+ },
+ "gemiddeld": {
+  "e": "📊"
+ },
+ "gevoel, het": {
+  "e": "🫶"
+ },
+ "graad, de": {
+  "q": "thermometer degrees celsius",
+  "e": "🌡️"
+ },
+ "groet, de": {
+  "e": "👋"
+ },
+ "groetjes, de": {
+  "e": "👋"
+ },
+ "in de verte": {
+  "q": "mountains in the distance",
+  "e": "🏔️"
+ },
+ "ineens": {
+  "e": "⚡"
+ },
+ "informeel": {
+  "e": "👕"
+ },
+ "kaal": {
+  "q": "bare empty field",
+  "e": "🏜️"
+ },
+ "kans, de": {
+  "e": "🍀"
+ },
+ "kant, de": {
+  "e": "↔️"
+ },
+ "klaar": {
+  "e": "✅"
+ },
+ "koel": {
+  "q": "cool breeze fresh",
+  "e": "🧊"
+ },
+ "koningin, de": {
+  "q": "queen crown",
+  "e": "👑"
+ },
+ "later": {
+  "e": "⏭️"
+ },
+ "liefs": {
+  "e": "💕"
+ },
+ "lieve": {
+  "e": "💕"
+ },
+ "metro, de": {
+  "q": "subway train",
+  "e": "🚇"
+ },
+ "min": {
+  "e": "➖"
+ },
+ "misten": {
+  "q": "fog over fields",
+  "e": "🌫️"
+ },
+ "opklaring, de": {
+  "q": "sun breaking through clouds",
+  "e": "🌤️"
+ },
+ "overdag": {
+  "q": "daytime sunny sky",
+  "e": "☀️"
+ },
+ "periode, de": {
+  "e": "📆"
+ },
+ "plat": {
+  "q": "flat landscape holland",
+  "e": "🟫"
+ },
+ "provincie, de": {
+  "q": "map of the netherlands provinces",
+  "e": "🗺️"
+ },
+ "skiën": {
+  "q": "skier on snowy slope",
+  "e": "⛷️"
+ },
+ "spijten": {
+  "e": "😔"
+ },
+ "stormen": {
+  "q": "storm waves wind",
+  "e": "🌪️"
+ },
+ "tegenwind, de": {
+  "q": "cyclist against strong wind",
+  "e": "💨"
+ },
+ "terugbrengen": {
+  "e": "↩️"
+ },
+ "terugkomen": {
+  "e": "↩️"
+ },
+ "tocht, de": {
+  "q": "hiking trail trip",
+  "e": "🥾"
+ },
+ "verderop": {
+  "e": "⏩"
+ },
+ "verschil, het": {
+  "e": "↔️"
+ },
+ "voorstel, het": {
+  "e": "📝"
+ },
+ "vriezen": {
+  "q": "frozen ice",
+  "e": "🥶"
+ },
+ "waaien": {
+  "q": "wind blowing trees",
+  "e": "🌬️"
+ },
+ "weerbericht, het": {
+  "q": "weather forecast map",
+  "e": "🌦️"
+ },
+ "winters": {
+  "q": "winter snow landscape",
+  "e": "⛄"
+ },
+ "zeer": {
+  "e": "❗"
+ },
+ "zwak": {
+  "e": "😔"
  }
 }
