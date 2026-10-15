@@ -282,6 +282,12 @@ const FB_LIST_KEY  = 'feedback:list';
 const FB_SEEN_KEY  = 'feedback:seen';   // last-read count for owner badge
 const FB_RL_TTL    = 300;              // 5-min rate-limit window (seconds)
 const FB_MSG_MAX   = 500;
+// Image reports ("this picture doesn't match the word", from vanstart.html) are
+// stored in the same list as type "image", with a lighter rate limit: one per
+// FB_IMG_RL_TTL seconds and FB_IMG_DAY_MAX per day per IP, one per word per day.
+const FB_IMG_RL_TTL  = 5;
+const FB_IMG_DAY_MAX = 100;
+const FB_IMG_DAY_TTL = 86400;
 // OWNER_EMAIL is read from env (wrangler secret) — never hardcoded here.
 const _ownerEmail = (env) => env.OWNER_EMAIL || '';
 
@@ -317,13 +323,46 @@ async function handleFeedback(request, env) {
   try { body = await request.json(); } catch { return reply({ error: 'Invalid JSON' }, 400, origin); }
 
   const message = (body.message || '').trim().slice(0, FB_MSG_MAX);
-  const type    = ['bug', 'idea', 'general'].includes(body.type) ? body.type : 'general';
+  const type    = ['bug', 'idea', 'general', 'image'].includes(body.type) ? body.type : 'general';
   if (!message) return reply({ error: 'Bericht is verplicht' }, 400, origin);
 
-  const ip    = request.headers.get('CF-Connecting-IP') || 'anon';
-  const rlKey = `feedback:rl:${ip.replace(/[^a-zA-Z0-9]/g, '_')}`;
-  const hit   = await redisGet(env.UPSTASH_URL, env.UPSTASH_TOKEN, rlKey);
-  if (hit) return reply({ error: 'Wacht 5 minuten voor je opnieuw feedback stuurt.' }, 429, origin);
+  const ip     = request.headers.get('CF-Connecting-IP') || 'anon';
+  const ipSafe = ip.replace(/[^a-zA-Z0-9]/g, '_');
+
+  // Image reports have their own, lighter limits (see FB_IMG_* above)
+  let img = null, rlKey, rlTtl = FB_RL_TTL, dayKey, dayN = 0;
+  if (type === 'image') {
+    const clip = (v, n) => String(v || '').slice(0, n);
+    img = {
+      word:    clip(body.img?.word, 80),
+      english: clip(body.img?.english, 120),
+      lesson:  clip(body.img?.lesson, 40),
+      file:    clip(body.img?.file, 120),
+      kind:    body.img?.kind === 'emoji' ? 'emoji' : 'photo',
+    };
+    if (!img.word) return reply({ error: 'Woord is verplicht' }, 400, origin);
+
+    dayKey = `feedback:imgday:${ipSafe}`;
+    dayN   = Number(await redisGet(env.UPSTASH_URL, env.UPSTASH_TOKEN, dayKey)) || 0;
+    if (dayN >= FB_IMG_DAY_MAX) return reply({ error: 'Te veel meldingen vandaag.' }, 429, origin);
+
+    rlKey = `feedback:rlimg:${ipSafe}`;
+    rlTtl = FB_IMG_RL_TTL;
+    if (await redisGet(env.UPSTASH_URL, env.UPSTASH_TOKEN, rlKey))
+      return reply({ error: 'Even wachten voor de volgende melding.' }, 429, origin);
+
+    // Same word from the same IP within a day: accept silently, store once.
+    // Checked AFTER the rate limits and marked only now, so a rejected (429)
+    // report doesn't make the retry look like a duplicate.
+    const wordKey = `feedback:imgdup:${ipSafe}:${img.word.toLowerCase().replace(/[^a-z0-9]/g, '_')}`;
+    if (await redisGet(env.UPSTASH_URL, env.UPSTASH_TOKEN, wordKey))
+      return reply({ ok: true, duplicate: true }, 200, origin);
+    await redisSet(env.UPSTASH_URL, env.UPSTASH_TOKEN, wordKey, 1, FB_IMG_DAY_TTL);
+  } else {
+    rlKey = `feedback:rl:${ipSafe}`;
+    if (await redisGet(env.UPSTASH_URL, env.UPSTASH_TOKEN, rlKey))
+      return reply({ error: 'Wacht 5 minuten voor je opnieuw feedback stuurt.' }, 429, origin);
+  }
 
   const entry = {
     id:   `fb_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`,
@@ -331,6 +370,7 @@ async function handleFeedback(request, env) {
     date: new Date().toISOString(),
     type,
     message,
+    ...(img ? { img } : {}),
     env: {
       url:          (body.env?.url          || '').slice(0, 200),
       browser:      (body.env?.browser      || '').slice(0, 120),
@@ -345,7 +385,8 @@ async function handleFeedback(request, env) {
 
   await Promise.all([
     redisPush(env.UPSTASH_URL, env.UPSTASH_TOKEN, FB_LIST_KEY, entry),
-    redisSet(env.UPSTASH_URL, env.UPSTASH_TOKEN, rlKey, 1, FB_RL_TTL),
+    redisSet(env.UPSTASH_URL, env.UPSTASH_TOKEN, rlKey, 1, rlTtl),
+    ...(dayKey ? [redisSet(env.UPSTASH_URL, env.UPSTASH_TOKEN, dayKey, dayN + 1, FB_IMG_DAY_TTL)] : []),
   ]);
 
   return reply({ ok: true }, 200, origin);

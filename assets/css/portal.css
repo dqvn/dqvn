@@ -1761,6 +1761,7 @@ main {
 .fba-bug  { color: #fca5a5 !important; }
 .fba-idea { color: #93c5fd !important; }
 .fba-gen  { color: #86efac !important; }
+.fba-img  { color: #fcd34d !important; }
 
 .fba-filters {
   display: flex; gap: 6px;
@@ -1799,6 +1800,12 @@ main {
 .fba-card.fba-bug     { border-left-color: #f87171; }
 .fba-card.fba-idea    { border-left-color: #60a5fa; }
 .fba-card.fba-general { border-left-color: #4ade80; }
+.fba-card.fba-image   { border-left-color: #fbbf24; }
+.fba-imgrow { display: flex; gap: 10px; align-items: center; margin: 4px 0; }
+.fba-imgrow img { width: 96px; height: 72px; object-fit: cover; border-radius: 8px; flex: none; background: #fff; }
+.fba-imgrow .fba-imgtxt { min-width: 0; }
+.fba-imgrow .fba-imgtxt b { color: #f1f5f9; }
+.fba-copy { cursor: pointer; border: 0; font: inherit; color: #0f172a; background: #fbbf24; }
 
 .fba-card-hd {
   display: flex; justify-content: space-between; align-items: center;

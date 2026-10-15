@@ -1,0 +1,830 @@
+{
+ "aanbieding, de": {
+  "q": "supermarket special offer price sign",
+  "e": "🏷️"
+ },
+ "alle": {
+  "e": "💯"
+ },
+ "april": {
+  "q": "april spring tulips rain",
+  "e": "🌷"
+ },
+ "begrijpen": {
+  "q": "person understanding lightbulb idea",
+  "e": "💡"
+ },
+ "bekendstaan om": {
+  "e": "⭐"
+ },
+ "betalen": {
+  "q": "paying cash at cashier",
+  "e": "💶"
+ },
+ "bijna": {
+  "e": "🤏"
+ },
+ "blik, het": {
+  "q": "tin can food",
+  "e": "🥫"
+ },
+ "derde": {
+  "q": "bronze medal third place podium",
+  "e": "🥉"
+ },
+ "eerste": {
+  "q": "gold medal first place podium",
+  "e": "🥇"
+ },
+ "februari": {
+  "q": "february winter snow",
+  "e": "❄️"
+ },
+ "fijn": {
+  "q": "happy smiling person",
+  "e": "😊"
+ },
+ "ga uw gang": {
+  "q": "person gesturing welcome go ahead",
+  "e": "👉"
+ },
+ "gratis": {
+  "q": "free sign gift",
+  "e": "🆓"
+ },
+ "groot": {
+  "q": "big large elephant",
+  "e": "🐘"
+ },
+ "helpen": {
+  "q": "helping hand assisting person",
+  "e": "🤝"
+ },
+ "huishoudartikel, het": {
+  "q": "household cleaning products shelf",
+  "e": "🧴"
+ },
+ "ingang, de": {
+  "q": "building entrance door sign",
+  "e": "🚪"
+ },
+ "januari": {
+  "q": "january winter snow new year",
+  "e": "🎆"
+ },
+ "jarig": {
+  "q": "birthday cake candles",
+  "e": "🎂"
+ },
+ "jong belegen kaas, de": {
+  "q": "young gouda cheese wheel",
+  "e": "🧀"
+ },
+ "jonge kaas, de": {
+  "q": "young gouda cheese slices",
+  "e": "🧀"
+ },
+ "juli": {
+  "q": "july summer beach",
+  "e": "☀️"
+ },
+ "kilo, de": {
+  "q": "kilogram weight scale",
+  "e": "⚖️"
+ },
+ "kopen": {
+  "q": "buying shopping at the store",
+  "e": "🛒"
+ },
+ "kortingskaart, de": {
+  "q": "loyalty discount card",
+  "e": "💳"
+ },
+ "lekker": {
+  "q": "tasty delicious food",
+  "e": "😋"
+ },
+ "liever": {
+  "e": "💕"
+ },
+ "links": {
+  "q": "left arrow direction sign",
+  "e": "⬅️"
+ },
+ "maart": {
+  "q": "march spring daffodils",
+  "e": "🌼"
+ },
+ "markt, de": {
+  "q": "dutch outdoor market stalls",
+  "e": "🛍️"
+ },
+ "meenemen": {
+  "q": "carrying shopping bags",
+  "e": "🛍️"
+ },
+ "meergranenbrood, het": {
+  "q": "multigrain bread loaf",
+  "e": "🍞"
+ },
+ "naast": {
+  "e": "↔️"
+ },
+ "november": {
+  "q": "november autumn fog leaves",
+  "e": "🍂"
+ },
+ "ons, het": {
+  "q": "100 grams weight scale",
+  "e": "⚖️"
+ },
+ "oude kaas, de": {
+  "q": "aged gouda cheese",
+  "e": "🧀"
+ },
+ "open": {
+  "q": "shop open sign",
+  "e": "🟢"
+ },
+ "over": {
+  "e": "💬"
+ },
+ "pardon": {
+  "q": "excuse me person raising hand",
+  "e": "🙋"
+ },
+ "per": {
+  "e": "➗"
+ },
+ "pinnen": {
+  "q": "paying with debit card terminal",
+  "e": "💳"
+ },
+ "pond, het": {
+  "q": "500 grams butter scale",
+  "e": "⚖️"
+ },
+ "rechts": {
+  "q": "right arrow direction sign",
+  "e": "➡️"
+ },
+ "rol, de": {
+  "q": "roll of paper towel",
+  "e": "🧻"
+ },
+ "saai": {
+  "q": "bored person yawning",
+  "e": "🥱"
+ },
+ "sommige": {
+  "e": "🔢"
+ },
+ "straks": {
+  "q": "clock later waiting",
+  "e": "⏳"
+ },
+ "stuk, het": {
+  "q": "single piece of cake slice",
+  "e": "🍰"
+ },
+ "tasje, het": {
+  "q": "small paper shopping bag",
+  "e": "👜"
+ },
+ "tot": {
+  "e": "⏳"
+ },
+ "totaal": {
+  "q": "total sum receipt calculator",
+  "e": "🧮"
+ },
+ "uitgang, de": {
+  "q": "exit sign door",
+  "e": "🚪"
+ },
+ "uitnodiging, de": {
+  "q": "party invitation card",
+  "e": "💌"
+ },
+ "vanaf": {
+  "e": "▶️"
+ },
+ "vergeten": {
+  "q": "forgetful person confused",
+  "e": "🤔"
+ },
+ "vierde": {
+  "e": "4️⃣"
+ },
+ "vijfde": {
+  "e": "5️⃣"
+ },
+ "wasverzachter, de": {
+  "q": "fabric softener bottle",
+  "e": "🧴"
+ },
+ "winkel, de": {
+  "q": "small shop storefront",
+  "e": "🏪"
+ },
+ "worden": {
+  "q": "caterpillar turning into butterfly",
+  "e": "🦋"
+ },
+ "zwaar": {
+  "q": "heavy weight lifting",
+  "e": "🏋️"
+ },
+ "eens": {
+  "e": "1️⃣"
+ },
+ "twee": {
+  "e": "2️⃣"
+ },
+ "drie": {
+  "e": "3️⃣"
+ },
+ "vijf": {
+  "e": "5️⃣"
+ },
+ "zes": {
+  "e": "6️⃣"
+ },
+ "zeven": {
+  "e": "7️⃣"
+ },
+ "acht": {
+  "e": "8️⃣"
+ },
+ "negen": {
+  "e": "9️⃣"
+ },
+ "tien": {
+  "e": "1️⃣0️⃣"
+ },
+ "elf": {
+  "e": "1️⃣1️⃣"
+ },
+ "twaalf": {
+  "e": "1️⃣2️⃣"
+ },
+ "dertien": {
+  "e": "1️⃣3️⃣"
+ },
+ "veertien": {
+  "e": "1️⃣4️⃣"
+ },
+ "vijftien": {
+  "e": "1️⃣5️⃣"
+ },
+ "zestien": {
+  "e": "1️⃣6️⃣"
+ },
+ "zeventien": {
+  "e": "1️⃣7️⃣"
+ },
+ "achttien": {
+  "e": "1️⃣8️⃣"
+ },
+ "negentien": {
+  "e": "1️⃣9️⃣"
+ },
+ "twintig": {
+  "e": "2️⃣0️⃣"
+ },
+ "eenentwintig": {
+  "e": "2️⃣1️⃣"
+ },
+ "tweeentwintig": {
+  "e": "2️⃣2️⃣"
+ },
+ "drieentwintig": {
+  "e": "2️⃣3️⃣"
+ },
+ "vierentwintig": {
+  "e": "2️⃣4️⃣"
+ },
+ "vijfentwintig": {
+  "e": "2️⃣5️⃣"
+ },
+ "zesentwintig": {
+  "e": "2️⃣6️⃣"
+ },
+ "zevenentwintig": {
+  "e": "2️⃣7️⃣"
+ },
+ "negenentwintig": {
+  "e": "2️⃣9️⃣"
+ },
+ "dertig": {
+  "e": "3️⃣0️⃣"
+ },
+ "eenendertig": {
+  "e": "3️⃣1️⃣"
+ },
+ "tweeendertig": {
+  "e": "3️⃣2️⃣"
+ },
+ "drieendertig": {
+  "e": "3️⃣3️⃣"
+ },
+ "vierendertig": {
+  "e": "3️⃣4️⃣"
+ },
+ "vijfendertig": {
+  "e": "3️⃣5️⃣"
+ },
+ "zesendertig": {
+  "e": "3️⃣6️⃣"
+ },
+ "zevenendertig": {
+  "e": "3️⃣7️⃣"
+ },
+ "achtendertig": {
+  "e": "3️⃣8️⃣"
+ },
+ "negenendertig": {
+  "e": "3️⃣9️⃣"
+ },
+ "veertig": {
+  "e": "4️⃣0️⃣"
+ },
+ "eenenveertig": {
+  "e": "4️⃣1️⃣"
+ },
+ "tweeenveertig": {
+  "e": "4️⃣2️⃣"
+ },
+ "drieenveertig": {
+  "e": "4️⃣3️⃣"
+ },
+ "vierenveertig": {
+  "e": "4️⃣4️⃣"
+ },
+ "vijfenveertig": {
+  "e": "4️⃣5️⃣"
+ },
+ "zesenveertig": {
+  "e": "4️⃣6️⃣"
+ },
+ "zevenenveertig": {
+  "e": "4️⃣7️⃣"
+ },
+ "achtenveertig": {
+  "e": "4️⃣8️⃣"
+ },
+ "negenenveertig": {
+  "e": "4️⃣9️⃣"
+ },
+ "vijftig": {
+  "e": "5️⃣0️⃣"
+ },
+ "eenenvijftig": {
+  "e": "5️⃣1️⃣"
+ },
+ "tweeenvijftig": {
+  "e": "5️⃣2️⃣"
+ },
+ "drieenvijftig": {
+  "e": "5️⃣3️⃣"
+ },
+ "vierenvijftig": {
+  "e": "5️⃣4️⃣"
+ },
+ "vijfenvijftig": {
+  "e": "5️⃣5️⃣"
+ },
+ "zesenvijftig": {
+  "e": "5️⃣6️⃣"
+ },
+ "zevenenvijftig": {
+  "e": "5️⃣7️⃣"
+ },
+ "achtenvijftig": {
+  "e": "5️⃣8️⃣"
+ },
+ "zestig": {
+  "e": "6️⃣0️⃣"
+ },
+ "eenenzestig": {
+  "e": "6️⃣1️⃣"
+ },
+ "tweeenzestig": {
+  "e": "6️⃣2️⃣"
+ },
+ "drieenzestig": {
+  "e": "6️⃣3️⃣"
+ },
+ "vierenzestig": {
+  "e": "6️⃣4️⃣"
+ },
+ "vijfenzestig": {
+  "e": "6️⃣5️⃣"
+ },
+ "zesenzestig": {
+  "e": "6️⃣6️⃣"
+ },
+ "zevenenzestig": {
+  "e": "6️⃣7️⃣"
+ },
+ "achtenzestig": {
+  "e": "6️⃣8️⃣"
+ },
+ "negenenzestig": {
+  "e": "6️⃣9️⃣"
+ },
+ "zeventig": {
+  "e": "7️⃣0️⃣"
+ },
+ "eenenzeventig": {
+  "e": "7️⃣1️⃣"
+ },
+ "tweeenzeventig": {
+  "e": "7️⃣2️⃣"
+ },
+ "drieenzeventig": {
+  "e": "7️⃣3️⃣"
+ },
+ "vierenzeventig": {
+  "e": "7️⃣4️⃣"
+ },
+ "vijfenzeventig": {
+  "e": "7️⃣5️⃣"
+ },
+ "zesenzeventig": {
+  "e": "7️⃣6️⃣"
+ },
+ "zevenenzeventig": {
+  "e": "7️⃣7️⃣"
+ },
+ "achtenzeventig": {
+  "e": "7️⃣8️⃣"
+ },
+ "negenenzeventig": {
+  "e": "7️⃣9️⃣"
+ },
+ "achttig": {
+  "e": "8️⃣0️⃣"
+ },
+ "eenenachttig": {
+  "e": "8️⃣1️⃣"
+ },
+ "tweeenachttig": {
+  "e": "8️⃣2️⃣"
+ },
+ "drieenachttig": {
+  "e": "8️⃣3️⃣"
+ },
+ "vierenachttig": {
+  "e": "8️⃣4️⃣"
+ },
+ "vijfenachttig": {
+  "e": "8️⃣5️⃣"
+ },
+ "zesenachttig": {
+  "e": "8️⃣6️⃣"
+ },
+ "zevenenachttig": {
+  "e": "8️⃣7️⃣"
+ },
+ "achtenachttig": {
+  "e": "8️⃣8️⃣"
+ },
+ "negenenachttig": {
+  "e": "8️⃣9️⃣"
+ },
+ "negentig": {
+  "e": "9️⃣0️⃣"
+ },
+ "eenennegentig": {
+  "e": "9️⃣1️⃣"
+ },
+ "tweeennegentig": {
+  "e": "9️⃣2️⃣"
+ },
+ "drieennegentig": {
+  "e": "9️⃣3️⃣"
+ },
+ "vierennegentig": {
+  "e": "9️⃣4️⃣"
+ },
+ "vijfennegentig": {
+  "e": "9️⃣5️⃣"
+ },
+ "zesennegentig": {
+  "e": "9️⃣6️⃣"
+ },
+ "zevenennegentig": {
+  "e": "9️⃣7️⃣"
+ },
+ "achtennegentig": {
+  "e": "9️⃣8️⃣"
+ },
+ "negenennegentig": {
+  "e": "9️⃣9️⃣"
+ },
+ "eenhonderd": {
+  "e": "💯"
+ },
+ "aankomen": {
+  "q": "train arriving at station platform",
+  "e": "🚉"
+ },
+ "aankomsttijd, de": {
+  "q": "arrival time board airport",
+  "e": "🛬"
+ },
+ "aanstaande": {
+  "e": "⏭️"
+ },
+ "als": {
+  "e": "❓"
+ },
+ "bedoelen": {
+  "e": "💭"
+ },
+ "bedrag, het": {
+  "q": "euro banknotes and coins money",
+  "e": "💶"
+ },
+ "beeldscherm, het": {
+  "q": "computer monitor screen",
+  "e": "🖥️"
+ },
+ "bellen": {
+  "q": "person talking on mobile phone",
+  "e": "📞"
+ },
+ "bezoek, het": {
+  "q": "visitors arriving at house",
+  "e": "🏠"
+ },
+ "centrum, het": {
+  "q": "dutch city centre square",
+  "e": "🏙️"
+ },
+ "chauffeur, de": {
+  "q": "bus driver steering wheel",
+  "e": "🚌"
+ },
+ "conducteur, de": {
+  "q": "train conductor ticket inspector",
+  "e": "🎫"
+ },
+ "dicht bij": {
+  "e": "📍"
+ },
+ "duren": {
+  "e": "⏱️"
+ },
+ "duur": {
+  "q": "expensive price tag luxury",
+  "e": "💸"
+ },
+ "eerst": {
+  "q": "gold medal first place podium",
+  "e": "1️⃣"
+ },
+ "eigenlijk": {
+  "e": "🤷"
+ },
+ "enkeltje, het": {
+  "q": "single train ticket",
+  "e": "🎫"
+ },
+ "geen dank": {
+  "e": "🤝"
+ },
+ "goedemorgen": {
+  "q": "sunrise morning",
+  "e": "🌅"
+ },
+ "honger hebben": {
+  "q": "hungry person eating",
+  "e": "🍽️"
+ },
+ "houden": {
+  "q": "hand holding object",
+  "e": "✊"
+ },
+ "inpakken": {
+  "q": "packing suitcase",
+  "e": "🧳"
+ },
+ "instappen": {
+  "q": "passenger boarding bus",
+  "e": "🚌"
+ },
+ "insteken": {
+  "e": "🔌"
+ },
+ "instructie, de": {
+  "q": "instruction manual",
+  "e": "📘"
+ },
+ "invoeren": {
+  "q": "typing keyboard entering data",
+  "e": "⌨️"
+ },
+ "kaartlezer, de": {
+  "q": "card reader terminal",
+  "e": "💳"
+ },
+ "kapot": {
+  "q": "broken smashed phone screen",
+  "e": "💔"
+ },
+ "knippen": {
+  "q": "scissors cutting",
+  "e": "✂️"
+ },
+ "korting, de": {
+  "q": "sale discount percent sign",
+  "e": "🏷️"
+ },
+ "kwijt": {
+  "q": "lost keys searching",
+  "e": "🔍"
+ },
+ "leggen": {
+  "q": "putting book on table",
+  "e": "📚"
+ },
+ "kiezen": {
+  "q": "choosing between options",
+  "e": "🤔"
+ },
+ "luxe": {
+  "q": "luxury hotel suite",
+  "e": "✨"
+ },
+ "makkelijk": {
+  "q": "easy button",
+  "e": "👍"
+ },
+ "medewerker, de": {
+  "q": "shop employee uniform",
+  "e": "🧑‍💼"
+ },
+ "missen": {
+  "q": "missing the train leaving platform",
+  "e": "🏃"
+ },
+ "normaal": {
+  "e": "🙂"
+ },
+ "noteren": {
+  "q": "writing notes notebook pen",
+  "e": "📝"
+ },
+ "omdat": {
+  "e": "➡️"
+ },
+ "onder": {
+  "q": "cat under table",
+  "e": "⬇️"
+ },
+ "ophalen": {
+  "q": "picking up package",
+  "e": "📦"
+ },
+ "opladen": {
+  "q": "charging card top up",
+  "e": "🔋"
+ },
+ "oplossing, de": {
+  "q": "puzzle solved piece",
+  "e": "🧩"
+ },
+ "overstappen": {
+  "q": "passengers changing trains platform",
+  "e": "🔄"
+ },
+ "ov-chipkaart, de": {
+  "q": "ov-chipkaart public transport card",
+  "e": "💳"
+ },
+ "perron, het": {
+  "q": "railway platform station",
+  "e": "🚉"
+ },
+ "plannen": {
+  "q": "planning calendar agenda",
+  "e": "🗓️"
+ },
+ "reis, de": {
+  "q": "travel journey suitcase",
+  "e": "🧳"
+ },
+ "reserveren": {
+  "q": "restaurant reservation table",
+  "e": "📅"
+ },
+ "retourtje, het": {
+  "q": "return train ticket",
+  "e": "🎟️"
+ },
+ "schrikken": {
+  "q": "startled surprised person",
+  "e": "😱"
+ },
+ "schoof (schuiven)": {
+  "q": "sliding pushing object",
+  "e": "↔️"
+ },
+ "selecteren": {
+  "q": "touchscreen selecting menu",
+  "e": "👆"
+ },
+ "snappen": {
+  "e": "💡"
+ },
+ "spoor, het": {
+  "q": "railway tracks",
+  "e": "🛤️"
+ },
+ "station, het": {
+  "q": "dutch railway station",
+  "e": "🚉"
+ },
+ "tafel, de": {
+  "q": "wooden dining table",
+  "e": "🍽️"
+ },
+ "tegenover": {
+  "e": "↔️"
+ },
+ "tot slot": {
+  "e": "🏁"
+ },
+ "tweepersoons": {
+  "q": "double bed hotel room",
+  "e": "🛏️"
+ },
+ "uitchecken": {
+  "q": "hotel check out reception",
+  "e": "🧳"
+ },
+ "uitstappen": {
+  "q": "passenger getting off train",
+  "e": "🚶"
+ },
+ "vaak": {
+  "e": "🔁"
+ },
+ "vandaag": {
+  "q": "calendar today date",
+  "e": "📆"
+ },
+ "verder": {
+  "e": "⏩"
+ },
+ "vertraging, de": {
+  "q": "train delay departure board",
+  "e": "⏰"
+ },
+ "vertrekken": {
+  "q": "train departing station",
+  "e": "🚆"
+ },
+ "vertrektijd, de": {
+  "q": "departure board timetable",
+  "e": "🕒"
+ },
+ "vervolgens": {
+  "e": "➡️"
+ },
+ "vol": {
+  "q": "full bus crowded",
+  "e": "🈵"
+ },
+ "volgen": {
+  "q": "following footsteps",
+  "e": "👣"
+ },
+ "volgend": {
+  "e": "⏭️"
+ },
+ "waarom": {
+  "q": "question mark why",
+  "e": "❓"
+ },
+ "wachten": {
+  "q": "waiting at bus stop",
+  "e": "⏳"
+ },
+ "weleens": {
+  "e": "🤔"
+ },
+ "zetten": {
+  "q": "placing vase on table",
+  "e": "🏺"
+ },
+ "zat (zitten)": {
+  "q": "person sitting on chair",
+  "e": "🪑"
+ },
+ "zonder": {
+  "e": "🚫"
+ }
+}
