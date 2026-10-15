@@ -2047,7 +2047,6 @@
   "e": "↔️"
  },
  "bank, de": {
-  "q": "park bench",
   "e": "🛋️"
  },
  "belangrijk": {
@@ -2093,14 +2092,12 @@
   "e": "👋"
  },
  "grond, de": {
-  "q": "ground soil floor",
   "e": "🌱"
  },
  "handig": {
   "e": "🛠️"
  },
  "hangen": {
-  "q": "coat hanging on a hook",
   "e": "🧥"
  },
  "hier": {
@@ -2117,7 +2114,6 @@
   "e": "❔"
  },
  "lamp, de": {
-  "q": "table lamp",
   "e": "💡"
  },
  "lijken": {
@@ -2134,7 +2130,6 @@
   "e": "🚗"
  },
  "ruim": {
-  "q": "spacious bright living room",
   "e": "🏠"
  },
  "schijnen": {
@@ -2153,14 +2148,12 @@
   "e": "☕"
  },
  "uittrekken": {
-  "q": "taking off a coat",
   "e": "🧥"
  },
  "ver weg": {
   "e": "🔭"
  },
  "verhuizen": {
-  "q": "moving boxes in new house",
   "e": "📦"
  },
  "volgens": {
@@ -2180,7 +2173,6 @@
   "e": "🐞"
  },
  "bezichtigen": {
-  "q": "tourists sightseeing",
   "e": "🧭"
  },
  "bezoeken": {
@@ -2200,7 +2192,6 @@
   "e": "🎉"
  },
  "excursie, de": {
-  "q": "school excursion group walking",
   "e": "🚌"
  },
  "fantastisch": {
@@ -2233,7 +2224,6 @@
   "e": "⚠️"
  },
  "opruimen": {
-  "q": "tidying up toys",
   "e": "🧹"
  },
  "paar, het": {
@@ -2245,7 +2235,6 @@
   "e": "🧳"
  },
  "rit, de": {
-  "q": "scenic car ride road",
   "e": "🛣️"
  },
  "ruzie, de": {
@@ -2290,7 +2279,6 @@
   "e": "🌙"
  },
  "verbranden": {
-  "q": "sunburn red skin",
   "e": "🥵"
  },
  "vermaken (zich -)": {
@@ -2300,7 +2288,6 @@
   "e": "😮‍💨"
  },
  "waarschuwen": {
-  "q": "warning sign",
   "e": "⚠️"
  },
  "wakker": {
@@ -2318,7 +2305,6 @@
   "e": "🏖️"
  },
  "zwembroek, de": {
-  "q": "swimming trunks",
   "e": "🩳"
  },
  "afrekenen": {
@@ -2332,7 +2318,6 @@
   "e": "🙏"
  },
  "bestellen": {
-  "q": "waiter taking order at restaurant",
   "e": "🍽️"
  },
  "echt": {
@@ -2359,7 +2344,6 @@
   "e": "🧀"
  },
  "keuze, de": {
-  "q": "choosing between two doors",
   "e": "🔀"
  },
  "kletsen": {
@@ -2367,7 +2351,6 @@
   "e": "💬"
  },
  "kruidenboter, de": {
-  "q": "herb butter",
   "e": "🧈"
  },
  "letten op": {
@@ -2377,7 +2360,6 @@
   "e": "🤷"
  },
  "omdraaien": {
-  "q": "turning around",
   "e": "🔄"
  },
  "ongezond": {
@@ -2392,7 +2374,6 @@
   "e": "📋"
  },
  "opmaken (zich -)": {
-  "q": "applying makeup lipstick",
   "e": "💄"
  },
  "plotseling": {
@@ -2419,7 +2400,6 @@
   "e": "💡"
  },
  "uit eten gaan": {
-  "q": "dinner at restaurant table",
   "e": "🍽️"
  },
  "van alles en nog wat": {
@@ -2461,11 +2441,9 @@
   "e": "🌸"
  },
  "hoek, de": {
-  "q": "street corner",
   "e": "↪️"
  },
  "hulp, de": {
-  "q": "helping hand",
   "e": "🤝"
  },
  "jammer genoeg": {
@@ -2498,14 +2476,12 @@
   "e": "🧢"
  },
  "nadenken": {
-  "q": "thinking pose",
   "e": "🤔"
  },
  "onwennig": {
   "e": "😅"
  },
  "passen": {
-  "q": "trying on clothes fitting room",
   "e": "👚"
  },
  "pet, de": {
@@ -2516,7 +2492,6 @@
   "e": "💪"
  },
  "rand, de": {
-  "q": "edge of a cliff",
   "e": "⛰️"
  },
  "riem, de": {
@@ -2548,7 +2523,6 @@
   "e": "🔎"
  },
  "verkopen": {
-  "q": "market stall selling goods",
   "e": "🏷️"
  },
  "vest, het": {
@@ -2565,7 +2539,6 @@
   "e": "👋"
  },
  "zacht": {
-  "q": "soft fluffy cotton",
   "e": "☁️"
  },
  "zelf": {
@@ -2575,15 +2548,12 @@
   "e": "👌"
  },
  "aanbellen": {
-  "q": "pressing a doorbell",
   "e": "🔔"
  },
  "aanhef, de": {
-  "q": "letter greeting dear",
   "e": "✉️"
  },
  "aankloppen": {
-  "q": "hand knocking on a wooden door",
   "e": "🚪"
  },
  "afsluiting, de": {
@@ -2596,7 +2566,6 @@
   "e": "🔀"
  },
  "bekijken": {
-  "q": "looking through magnifying glass",
   "e": "🔍"
  },
  "beklimmen": {
@@ -2624,7 +2593,6 @@
   "e": "🌊"
  },
  "draaien": {
-  "q": "spinning wheel",
   "e": "🔄"
  },
  "gebruiken": {
@@ -2647,7 +2615,6 @@
   "e": "👋"
  },
  "in de verte": {
-  "q": "mountains in the distance",
   "e": "🏔️"
  },
  "ineens": {
@@ -2670,11 +2637,9 @@
   "e": "✅"
  },
  "koel": {
-  "q": "cool breeze fresh",
   "e": "🧊"
  },
  "koningin, de": {
-  "q": "queen crown",
   "e": "👑"
  },
  "later": {
@@ -2709,7 +2674,6 @@
   "e": "📆"
  },
  "plat": {
-  "q": "flat landscape holland",
   "e": "🟫"
  },
  "provincie, de": {
@@ -2738,7 +2702,6 @@
   "e": "↩️"
  },
  "tocht, de": {
-  "q": "hiking trail trip",
   "e": "🥾"
  },
  "verderop": {
