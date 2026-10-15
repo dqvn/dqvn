@@ -2736,7 +2736,6 @@
   "e": "😔"
  },
  "(rechts/links) afslaan": {
-  "q": "car turning at junction road sign",
   "e": "↪️"
  },
  "alternatief": {
@@ -2802,15 +2801,12 @@
   "e": "🧡"
  },
  "kruispunt, het": {
-  "q": "road crossing intersection",
   "e": "🚦"
  },
  "kwartier, het": {
-  "q": "clock showing quarter past",
   "e": "🕒"
  },
  "kwijtraken": {
-  "q": "searching for lost keys",
   "e": "🔑"
  },
  "linksaf": {
@@ -2848,11 +2844,9 @@
   "e": "⬆️"
  },
  "ritje, het": {
-  "q": "short bike ride",
   "e": "🚲"
  },
  "roepen": {
-  "q": "person shouting calling",
   "e": "📣"
  },
  "route, de": {
@@ -2860,7 +2854,6 @@
   "e": "🗺️"
  },
  "routebeschrijving, de": {
-  "q": "printed directions map",
   "e": "🗺️"
  },
  "sluiten": {
@@ -2897,7 +2890,6 @@
   "e": "📍"
  },
  "volwassene, de": {
-  "q": "adult man and woman standing",
   "e": "🧑"
  },
  "waarnaartoe": {
@@ -2908,7 +2900,6 @@
   "e": "🧳"
  },
  "wijzen": {
-  "q": "finger pointing direction signpost",
   "e": "👉"
  },
  "zichtbaar": {
@@ -2934,7 +2925,6 @@
   "e": "🍽️"
  },
  "beetgaar": {
-  "q": "al dente pasta cooked",
   "e": "🍝"
  },
  "belofte, de": {
@@ -3007,7 +2997,6 @@
   "e": "🙄"
  },
  "opgroeien": {
-  "q": "child growing up height chart",
   "e": "👶"
  },
  "oproepen": {
@@ -3022,7 +3011,6 @@
   "e": "🍳"
  },
  "peper, de": {
-  "q": "pepper mill black pepper",
   "e": "🌶️"
  },
  "pureestamper, de": {
@@ -3033,7 +3021,6 @@
   "e": "📏"
  },
  "roosje, het": {
-  "q": "rose-shaped rosette",
   "e": "🌹"
  },
  "sappig": {
@@ -3041,7 +3028,6 @@
   "e": "🍊"
  },
  "schenken": {
-  "q": "pouring wine into glass",
   "e": "🍷"
  },
  "scherp": {
@@ -3053,7 +3039,6 @@
   "e": "🥔"
  },
  "schrokken": {
-  "q": "person eating greedily",
   "e": "🍔"
  },
  "serveren": {
@@ -3080,7 +3065,6 @@
   "e": "😛"
  },
  "smelten": {
-  "q": "melting ice cream",
   "e": "🍦"
  },
  "snijden": {
@@ -3092,7 +3076,6 @@
   "e": "🥔"
  },
  "steunen": {
-  "q": "supporting hand on shoulder",
   "e": "🤝"
  },
  "tafel dekken, de": {
@@ -3104,11 +3087,9 @@
   "e": "🍴"
  },
  "uitdaging, de": {
-  "q": "climbing a mountain challenge",
   "e": "🧗"
  },
  "verdelen": {
-  "q": "dividing a cake into slices",
   "e": "🍰"
  },
  "waarschijnlijk": {
@@ -3149,7 +3130,6 @@
   "e": "🔨"
  },
  "buitenlands": {
-  "q": "foreign flags",
   "e": "🌍"
  },
  "contrast, het": {
@@ -3161,7 +3141,6 @@
   "e": "🛏️"
  },
  "diepte, de": {
-  "q": "deep well looking down",
   "e": "🕳️"
  },
  "doorlopen": {
@@ -3182,7 +3161,6 @@
   "e": "🐘"
  },
  "fauteuil, de": {
-  "q": "armchair",
   "e": "🪑"
  },
  "gedoe, het": {
@@ -3213,11 +3191,9 @@
   "e": "❗"
  },
  "laken, het": {
-  "q": "bed sheet",
   "e": "🛏️"
  },
  "massaal": {
-  "q": "huge crowd",
   "e": "👥"
  },
  "midden, het": {
@@ -3234,15 +3210,12 @@
   "e": "📏"
  },
  "omgeving, de": {
-  "q": "surroundings neighbourhood view",
   "e": "🏞️"
  },
  "ontdekken": {
-  "q": "discovering with magnifying glass",
   "e": "🔍"
  },
  "ontvangen": {
-  "q": "receiving a parcel",
   "e": "📬"
  },
  "ouderwets": {
@@ -3284,7 +3257,6 @@
   "e": "📚"
  },
  "te koop": {
-  "q": "for sale sign house",
   "e": "🏷️"
  },
  "tintje, het": {
@@ -3316,7 +3288,6 @@
   "e": "🦋"
  },
  "verplaatsen": {
-  "q": "moving furniture",
   "e": "📦"
  },
  "voldoende": {
@@ -3333,7 +3304,6 @@
   "e": "🛡️"
  },
  "vroeger": {
-  "q": "old black and white photograph",
   "e": "📷"
  },
  "waarde, de": {
@@ -3344,18 +3314,15 @@
   "e": "💥"
  },
  "beterschap": {
-  "q": "get well soon card flowers",
   "e": "💐"
  },
  "bloeden": {
-  "q": "bleeding finger plaster",
   "e": "🩸"
  },
  "buikgriep, de": {
   "e": "🤢"
  },
  "diagnose, de": {
-  "q": "doctor examining patient",
   "e": "🩺"
  },
  "dokter, de": {
@@ -3363,11 +3330,9 @@
   "e": "👨‍⚕️"
  },
  "dosering, de": {
-  "q": "medicine spoon dose",
   "e": "🥄"
  },
  "dosis, de": {
-  "q": "medicine pills dose",
   "e": "💊"
  },
  "eigenwijs": {
@@ -3405,18 +3370,15 @@
   "e": "⚖️"
  },
  "inademen": {
-  "q": "breathing in fresh air",
   "e": "🌬️"
  },
  "innemen": {
-  "q": "taking a pill with water",
   "e": "💊"
  },
  "inwoner, de": {
   "e": "🏘️"
  },
  "kies, de": {
-  "q": "molar tooth",
   "e": "🦷"
  },
  "klacht, de": {
@@ -3442,7 +3404,6 @@
   "e": "⬇️"
  },
  "onderzoeken": {
-  "q": "doctor examining throat",
   "e": "🩺"
  },
  "onmiddellijk": {
@@ -3460,7 +3421,6 @@
   "e": "😫"
  },
  "patiënt, de": {
-  "q": "patient in hospital bed",
   "e": "🛏️"
  },
  "pil, de": {
@@ -3471,7 +3431,6 @@
   "e": "⚖️"
  },
  "roeren": {
-  "q": "stirring a cup of tea with spoon",
   "e": "🥄"
  },
  "schadelijk": {
@@ -3524,7 +3483,6 @@
   "e": "🚬"
  },
  "vooroverbuigen": {
-  "q": "person bending forward",
   "e": "🙇"
  },
  "voorzichtig": {
@@ -3532,7 +3490,6 @@
   "e": "⚠️"
  },
  "ziek": {
-  "q": "sick person in bed thermometer",
   "e": "🤒"
  },
  "aantrekkelijk": {
@@ -3549,7 +3506,6 @@
   "e": "🧐"
  },
  "beslissen": {
-  "q": "coin toss decision",
   "e": "🪙"
  },
  "beslissing, de": {
@@ -3557,7 +3513,6 @@
   "e": "🔀"
  },
  "collega, de": {
-  "q": "colleagues talking in office",
   "e": "🧑‍💼"
  },
  "deelnemen": {
@@ -3573,7 +3528,6 @@
   "e": "🦚"
  },
  "eter, de": {
-  "q": "person eating meal",
   "e": "🍽️"
  },
  "feit, het": {
@@ -3587,11 +3541,9 @@
   "e": "🙄"
  },
  "folder, de": {
-  "q": "brochure folder leaflet",
   "e": "📄"
  },
  "geruststellen": {
-  "q": "comforting hug",
   "e": "🤗"
  },
  "gevaarlijk": {
@@ -3603,7 +3555,6 @@
   "e": "🌱"
  },
  "grof": {
-  "q": "rough coarse sandpaper",
   "e": "🪨"
  },
  "in verband met": {
@@ -3633,7 +3584,6 @@
   "e": "🤝"
  },
  "negatief": {
-  "q": "thumbs down",
   "e": "👎"
  },
  "oneens": {
@@ -3650,7 +3600,6 @@
   "e": "🍲"
  },
  "overleg, het": {
-  "q": "business meeting discussion table",
   "e": "🗣️"
  },
  "positief": {
@@ -3688,7 +3637,6 @@
   "e": "😱"
  },
  "verwijsbrief, de": {
-  "q": "medical referral letter",
   "e": "📃"
  },
  "vreemd": {
@@ -3701,7 +3649,6 @@
   "e": "✏️"
  },
  "zakendoen": {
-  "q": "business handshake deal",
   "e": "🤝"
  },
  "zakenwereld, de": {
