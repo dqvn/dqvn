@@ -1361,5 +1361,683 @@
  },
  "zo’n": {
   "e": "👆"
+ },
+ "aanwijzen": {
+  "e": "👉"
+ },
+ "hoe": {
+  "e": "❓"
+ },
+ "hoeveel": {
+  "e": "🔢"
+ },
+ "hoi": {
+  "e": "👋"
+ },
+ "hoofdstuk, het": {
+  "e": "📖"
+ },
+ "ander(e)": {
+  "e": "🔀"
+ },
+ "beantwoorden": {
+  "e": "💬"
+ },
+ "huur, de": {
+  "e": "🏠"
+ },
+ "best": {
+  "e": "👍"
+ },
+ "ja": {
+  "e": "✅"
+ },
+ "controleren": {
+  "e": "✔️"
+ },
+ "daar": {
+  "e": "👉"
+ },
+ "dat": {
+  "e": "👈"
+ },
+ "dip, de": {
+  "q": "bowl of dip with chips",
+  "e": "🥣"
+ },
+ "doen": {
+  "e": "🛠️"
+ },
+ "kloppen": {
+  "e": "🚪"
+ },
+ "dubbel": {
+  "q": "double espresso two cups",
+  "e": "2️⃣"
+ },
+ "komen": {
+  "e": "🚶"
+ },
+ "koop, de": {
+  "e": "🛒"
+ },
+ "een beetje": {
+  "e": "🤏"
+ },
+ "krijgen": {
+  "e": "🎁"
+ },
+ "en": {
+  "e": "➕"
+ },
+ "kunnen": {
+  "e": "💪"
+ },
+ "gaan": {
+  "q": "person walking on a path",
+  "e": "🚶"
+ },
+ "galgje spelen": {
+  "q": "hangman word game",
+  "e": "🔤"
+ },
+ "lezen": {
+  "q": "person reading a book",
+  "e": "📖"
+ },
+ "geen": {
+  "e": "🚫"
+ },
+ "lijn, de": {
+  "e": "📏"
+ },
+ "geven": {
+  "q": "hand giving a gift",
+  "e": "🎁"
+ },
+ "goed": {
+  "e": "👍"
+ },
+ "maar": {
+  "e": "↔️"
+ },
+ "groep, de": {
+  "q": "group of people posing",
+  "e": "👥"
+ },
+ "maken": {
+  "q": "hands making a craft",
+  "e": "🔨"
+ },
+ "hebben": {
+  "e": "🤲"
+ },
+ "heel": {
+  "e": "💯"
+ },
+ "heten": {
+  "e": "🏷️"
+ },
+ "tekst, de": {
+  "e": "📄"
+ },
+ "moe": {
+  "q": "tired person yawning",
+  "e": "😴"
+ },
+ "uitstekend": {
+  "e": "🌟"
+ },
+ "Nederlandse": {
+  "e": "🇳🇱"
+ },
+ "vandaan": {
+  "e": "🧭"
+ },
+ "nee": {
+  "e": "❌"
+ },
+ "niet": {
+  "e": "🚫"
+ },
+ "vertellen": {
+  "e": "🗣️"
+ },
+ "nu": {
+  "e": "⏰"
+ },
+ "nul": {
+  "e": "0️⃣"
+ },
+ "ook": {
+  "e": "➕"
+ },
+ "waar": {
+  "e": "📍"
+ },
+ "plaats, de": {
+  "e": "📍"
+ },
+ "welk(e)": {
+  "e": "❓"
+ },
+ "werken": {
+  "q": "person working at a laptop desk",
+  "e": "💻"
+ },
+ "prima": {
+  "e": "👌"
+ },
+ "wie": {
+  "e": "🧑"
+ },
+ "wonen": {
+  "q": "dutch row houses canal",
+  "e": "🏠"
+ },
+ "samen": {
+  "e": "🤝"
+ },
+ "slecht": {
+  "e": "👎"
+ },
+ "spellen": {
+  "q": "scrabble letter tiles",
+  "e": "🔤"
+ },
+ "spreken": {
+  "e": "🎤"
+ },
+ "zijn": {
+  "e": "🙂"
+ },
+ "zo": {
+  "e": "👌"
+ },
+ "zoeken": {
+  "e": "🔍"
+ },
+ "tekenen": {
+  "q": "child drawing with pencil",
+  "e": "✏️"
+ },
+ "begeleiden": {
+  "e": "🤝"
+ },
+ "best wel": {
+  "e": "👍"
+ },
+ "blijven": {
+  "e": "🪑"
+ },
+ "boodschappen doen": {
+  "q": "shopping cart groceries supermarket",
+  "e": "🛒"
+ },
+ "brief, de": {
+  "q": "letter and envelope",
+  "e": "✉️"
+ },
+ "buurman, de": {
+  "e": "🏘️"
+ },
+ "danken": {
+  "e": "🙏"
+ },
+ "dansles, de": {
+  "q": "dance class",
+  "e": "💃"
+ },
+ "erg": {
+  "e": "😖"
+ },
+ "fietsen": {
+  "q": "cycling on a dutch bike path",
+  "e": "🚲"
+ },
+ "gauw": {
+  "e": "⏩"
+ },
+ "ha": {
+  "e": "👋"
+ },
+ "houden van": {
+  "e": "❤️"
+ },
+ "ieder": {
+  "e": "👥"
+ },
+ "iedereen": {
+  "e": "👥"
+ },
+ "joggen": {
+  "e": "🏃"
+ },
+ "koken": {
+  "q": "cooking pot on stove",
+  "e": "🍳"
+ },
+ "kosten": {
+  "e": "💸"
+ },
+ "leeftijd, de": {
+  "q": "birthday cake candles age",
+  "e": "🎂"
+ },
+ "meegaan": {
+  "e": "🚶"
+ },
+ "meestal": {
+  "e": "🔁"
+ },
+ "mooi": {
+  "e": "😍"
+ },
+ "morgen": {
+  "q": "sunrise over fields morning",
+  "e": "🌅"
+ },
+ "na": {
+  "e": "⏭️"
+ },
+ "nooit": {
+  "e": "🚫"
+ },
+ "pianospelen": {
+  "q": "piano keys playing",
+  "e": "🎹"
+ },
+ "rennen": {
+  "e": "🏃"
+ },
+ "spelen": {
+  "e": "🧒"
+ },
+ "tennissen": {
+  "e": "🎾"
+ },
+ "thuisblijven": {
+  "q": "person relaxing on sofa at home",
+  "e": "🛋️"
+ },
+ "vanavond": {
+  "q": "evening sunset city skyline",
+  "e": "🌆"
+ },
+ "vanmiddag": {
+  "e": "🌤️"
+ },
+ "vinden": {
+  "e": "🔍"
+ },
+ "voetballen": {
+  "q": "football match on grass",
+  "e": "⚽"
+ },
+ "volleyballen": {
+  "q": "beach volleyball game",
+  "e": "🏐"
+ },
+ "vreselijk": {
+  "e": "😖"
+ },
+ "vrij": {
+  "e": "🕊️"
+ },
+ "wat": {
+  "e": "❓"
+ },
+ "weekend, het": {
+  "q": "weekend picnic in the park",
+  "e": "🎉"
+ },
+ "zin hebben": {
+  "e": "🙂"
+ },
+ "jong": {
+  "e": "🧒"
+ },
+ "krullend": {
+  "e": "👩‍🦱"
+ },
+ "langzaam": {
+  "q": "snail crawling slowly",
+  "e": "🐌"
+ },
+ "leven": {
+  "e": "🌱"
+ },
+ "lijken op": {
+  "q": "identical twins",
+  "e": "👯"
+ },
+ "logeren": {
+  "q": "guest bed sleepover",
+  "e": "🛏️"
+ },
+ "lui": {
+  "q": "lazy cat sleeping on sofa",
+  "e": "😴"
+ },
+ "mensen, de": {
+  "q": "crowd of people walking",
+  "e": "👥"
+ },
+ "natuurlijk": {
+  "e": "✅"
+ },
+ "neef, de": {
+  "e": "👦"
+ },
+ "nicht, de": {
+  "e": "👧"
+ },
+ "netjes": {
+  "q": "tidy neat room",
+  "e": "✨"
+ },
+ "nuchter": {
+  "e": "🧠"
+ },
+ "of": {
+  "e": "↔️"
+ },
+ "ongeduldig": {
+  "q": "impatient person checking watch waiting",
+  "e": "⌚"
+ },
+ "ongeveer": {
+  "e": "≈"
+ },
+ "onzeker": {
+  "e": "😟"
+ },
+ "postuur, het": {
+  "e": "🧍"
+ },
+ "precies": {
+  "e": "🎯"
+ },
+ "realistisch": {
+  "e": "🧐"
+ },
+ "romantisch": {
+  "q": "candlelight dinner with roses",
+  "e": "🌹"
+ },
+ "rustig": {
+  "q": "calm quiet lake at sunrise",
+  "e": "🏞️"
+ },
+ "altijd": {
+  "e": "♾️"
+ },
+ "beschrijven": {
+  "e": "📝"
+ },
+ "bijvoorbeeld": {
+  "e": "💡"
+ },
+ "dezelfde": {
+  "e": "🟰"
+ },
+ "dom": {
+  "e": "🤪"
+ },
+ "druk": {
+  "q": "busy crowded street",
+  "e": "🚦"
+ },
+ "geduldig": {
+  "e": "⏳"
+ },
+ "gelukkig": {
+  "e": "😊"
+ },
+ "gemeen": {
+  "e": "😠"
+ },
+ "gescheiden": {
+  "e": "💔"
+ },
+ "gestolen": {
+  "e": "🦹"
+ },
+ "helemaal": {
+  "e": "💯"
+ },
+ "herhalen": {
+  "e": "🔁"
+ },
+ "iemand": {
+  "e": "👤"
+ },
+ "snel": {
+  "q": "cheetah running fast",
+  "e": "🐆"
+ },
+ "somber": {
+  "e": "😞"
+ },
+ "sportief": {
+  "e": "🏃"
+ },
+ "tegenovergestelde, het": {
+  "e": "↔️"
+ },
+ "uiterlijk, het": {
+  "e": "🪞"
+ },
+ "uitspraak, de": {
+  "e": "🗣️"
+ },
+ "want": {
+  "e": "➡️"
+ },
+ "wegfietsen": {
+  "e": "🚴"
+ },
+ "wisselen": {
+  "e": "🔄"
+ },
+ "zelfverzekerd": {
+  "e": "😎"
+ },
+ "zoon, de": {
+  "e": "👦"
+ },
+ "s avonds": {
+  "q": "evening dusk city lights",
+  "e": "🌆"
+ },
+ "s middags": {
+  "e": "☀️"
+ },
+ "s morgens": {
+  "q": "morning sunrise",
+  "e": "🌅"
+ },
+ "aankleden (zich -)": {
+  "e": "👕"
+ },
+ "aantrekken": {
+  "e": "🧥"
+ },
+ "afspreken": {
+  "e": "📅"
+ },
+ "afwassen": {
+  "q": "washing dishes in sink",
+  "e": "🍽️"
+ },
+ "agenda, de": {
+  "q": "paper diary planner",
+  "e": "📅"
+ },
+ "bovendien": {
+  "e": "➕"
+ },
+ "dag, de": {
+  "e": "☀️"
+ },
+ "dan": {
+  "e": "➡️"
+ },
+ "eruitzien": {
+  "e": "👀"
+ },
+ "gewoon": {
+  "e": "🙂"
+ },
+ "haasten (zich -)": {
+  "e": "🏃"
+ },
+ "half": {
+  "e": "🍎"
+ },
+ "irritant": {
+  "e": "😤"
+ },
+ "juist": {
+  "e": "✅"
+ },
+ "knap": {
+  "e": "😎"
+ },
+ "krul, de": {
+  "q": "curl of hair",
+  "e": "➰"
+ },
+ "kwart": {
+  "q": "quarter of a pizza slice",
+  "e": "🍕"
+ },
+ "laat": {
+  "e": "⏰"
+ },
+ "lunchen": {
+  "q": "lunch sandwich and salad",
+  "e": "🥪"
+ },
+ "misschien": {
+  "e": "🤷"
+ },
+ "nemen": {
+  "e": "🤲"
+ },
+ "ontbijten": {
+  "q": "breakfast table bread coffee",
+  "e": "🥐"
+ },
+ "opendoen": {
+  "e": "🚪"
+ },
+ "opstaan": {
+  "q": "alarm clock waking up in bed",
+  "e": "⏰"
+ },
+ "pas": {
+  "e": "⏱️"
+ },
+ "prikken": {
+  "q": "needle pricking",
+  "e": "💉"
+ },
+ "om": {
+  "e": "🕒"
+ },
+ "scheren (zich -)": {
+  "e": "🪒"
+ },
+ "schoonmaken": {
+  "q": "cleaning bucket and mop",
+  "e": "🧹"
+ },
+ "uitgaan": {
+  "e": "🎉"
+ },
+ "uitlaten (de hond -)": {
+  "e": "🐕"
+ },
+ "uitslapen": {
+  "q": "person sleeping in bed",
+  "e": "😴"
+ },
+ "soms": {
+  "e": "🔀"
+ },
+ "tandenpoetsen": {
+  "e": "🪥"
+ },
+ "verliefd": {
+  "e": "😍"
+ },
+ "vet": {
+  "e": "🍟"
+ },
+ "voorstellen (zich -)": {
+  "e": "🤝"
+ },
+ "vroeg": {
+  "e": "🌅"
+ },
+ "wassen (zich -)": {
+  "q": "washing hands with soap",
+  "e": "🧼"
+ },
+ "werk, het": {
+  "q": "office desk work",
+  "e": "💼"
+ },
+ "willen": {
+  "e": "🙋"
+ },
+ "zelfs": {
+  "e": "❗"
+ },
+ "wanneer": {
+  "e": "🕒"
+ },
+ "zullen": {
+  "e": "🔮"
+ },
+ "app, de / applicatie, de": {
+  "q": "smartphone home screen apps",
+  "e": "📱"
+ },
+ "pauze, de": {
+  "q": "coffee break cup",
+  "e": "☕"
+ },
+ "moment, het / momentje": {
+  "e": "⏳"
+ },
+ "zeker": {
+  "e": "👍"
+ },
+ "waar kom je vandaan": {
+  "e": "🌍"
+ },
+ "link, de": {
+  "q": "chain links",
+  "e": "🔗"
+ },
+ "artikel, het": {
+  "e": "📰"
+ },
+ "moeilijk": {
+  "e": "😓"
+ },
+ "gemakkelijk": {
+  "e": "😌"
+ },
+ "lelijk": {
+  "e": "😖"
+ },
+ "zelden": {
+  "e": "🌫️"
+ },
+ "chatten": {
+  "e": "💬"
  }
 }
