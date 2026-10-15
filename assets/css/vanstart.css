@@ -966,3 +966,7 @@ th {
 #word-list.vs-has-imgcol th:nth-child(4), #word-list.vs-has-imgcol td:nth-child(4) { width: 14%; }
 #word-list.vs-has-imgcol th:nth-child(5), #word-list.vs-has-imgcol td:nth-child(5) { width: 38%; min-width: 300px; }
 #word-list.vs-has-imgcol th:nth-child(6), #word-list.vs-has-imgcol td:nth-child(6) { width: 14%; }
+
+/* English meaning (col 4) uses the same small size as the Vietnamese column
+   (which has an inline font-size:.7em in common.js's reloadTable). */
+#word-list.vs-has-imgcol td:nth-child(4) > span { font-size: .7em; }
