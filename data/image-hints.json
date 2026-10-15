@@ -826,5 +826,596 @@
  },
  "zonder": {
   "e": "🚫"
+ },
+ "beginnen": {
+  "q": "runners at the start line of a race",
+  "e": "🏁"
+ },
+ "eindigen": {
+  "q": "runner crossing the finish line",
+  "e": "🏁"
+ },
+ "daarna": {
+  "e": "➡️"
+ },
+ "ten slotte": {
+  "e": "🔚"
+ },
+ "letter, de": {
+  "q": "alphabet letters wooden blocks",
+  "e": "🔤"
+ },
+ "zin, de": {
+  "q": "sentence written on a blackboard",
+  "e": "📝"
+ },
+ "nieuw": {
+  "q": "brand new shiny object in box",
+  "e": "🆕"
+ },
+ "oud": {
+  "q": "old antique clock",
+  "e": "👴"
+ },
+ "wel": {
+  "e": "👍"
+ },
+ "men": {
+  "e": "👥"
+ },
+ "studeren": {
+  "q": "student studying with books at desk",
+  "e": "📚"
+ },
+ "vragen": {
+  "q": "person raising hand to ask a question",
+  "e": "🙋"
+ },
+ "antwoorden": {
+  "q": "teacher answering student question",
+  "e": "💬"
+ },
+ "oefenen": {
+  "q": "person practicing piano",
+  "e": "🎹"
+ },
+ "luisteren": {
+  "q": "person listening with headphones",
+  "e": "🎧"
+ },
+ "kijken": {
+  "q": "person looking through binoculars",
+  "e": "👀"
+ },
+ "zien": {
+  "q": "eye close up",
+  "e": "👁️"
+ },
+ "praten": {
+  "q": "two people talking",
+  "e": "🗣️"
+ },
+ "zeggen": {
+  "q": "person speaking with megaphone",
+  "e": "📢"
+ },
+ "aankomstplaats, de": {
+  "q": "finish line banner marathon",
+  "e": "🏁"
+ },
+ "aanspannen": {
+  "q": "person flexing arm muscle",
+  "e": "💪"
+ },
+ "aansporen": {
+  "q": "coach encouraging runner",
+  "e": "📣"
+ },
+ "abonnement, het": {
+  "q": "season ticket card",
+  "e": "🎫"
+ },
+ "andersom": {
+  "e": "🔄"
+ },
+ "beoefenen": {
+  "q": "people playing sport on field",
+  "e": "⚽"
+ },
+ "bestaan uit": {
+  "e": "🧩"
+ },
+ "bewegen": {
+  "q": "person doing stretching exercise",
+  "e": "🤸"
+ },
+ "beweging, de": {
+  "q": "person running motion blur",
+  "e": "🏃"
+ },
+ "bij voorbaat": {
+  "e": "⏩"
+ },
+ "binnenkomen": {
+  "q": "person entering through open door",
+  "e": "🚪"
+ },
+ "borgpasje, het": {
+  "q": "deposit card plastic",
+  "e": "💳"
+ },
+ "buigen": {
+  "q": "person bowing",
+  "e": "🙇"
+ },
+ "buik, de": {
+  "q": "human belly torso",
+  "e": "🫃"
+ },
+ "carrière, de": {
+  "q": "career ladder business",
+  "e": "📈"
+ },
+ "conditie, de": {
+  "q": "person jogging fitness",
+  "e": "🏃"
+ },
+ "dame, de": {
+  "q": "elegant lady",
+  "e": "👩"
+ },
+ "dank, de": {
+  "q": "thank you note",
+  "e": "🙏"
+ },
+ "dankzij": {
+  "e": "🙏"
+ },
+ "deel, het": {
+  "q": "piece of pie slice",
+  "e": "🥧"
+ },
+ "doorgaan": {
+  "e": "⏭️"
+ },
+ "doorzetten": {
+  "q": "climber persevering up steep mountain",
+  "e": "🧗"
+ },
+ "dus": {
+  "e": "➡️"
+ },
+ "eenmalig": {
+  "e": "1️⃣"
+ },
+ "ellende, de": {
+  "q": "sad person in rain",
+  "e": "😢"
+ },
+ "enkelpartij, de": {
+  "q": "tennis singles match",
+  "e": "🎾"
+ },
+ "evenement, het": {
+  "q": "outdoor festival crowd event",
+  "e": "🎪"
+ },
+ "formeel": {
+  "q": "businessman in formal suit",
+  "e": "🤵"
+ },
+ "geachte": {
+  "e": "✉️"
+ },
+ "gehandicapt": {
+  "q": "wheelchair accessible sign",
+  "e": "♿"
+ },
+ "gevolgd door": {
+  "e": "👣"
+ },
+ "heer": {
+  "q": "gentleman in suit and tie",
+  "e": "🤵"
+ },
+ "hoofdstad, de": {
+  "q": "amsterdam canal city view",
+  "e": "🏛️"
+ },
+ "hoogachtend": {
+  "q": "formal letter signature",
+  "e": "✍️"
+ },
+ "inschrijfgeld, het": {
+  "q": "registration form fee",
+  "e": "📝"
+ },
+ "kampioenschap, het": {
+  "q": "championship trophy cup",
+  "e": "🏆"
+ },
+ "klimmen": {
+  "q": "person climbing rock wall",
+  "e": "🧗"
+ },
+ "komend": {
+  "e": "⏭️"
+ },
+ "leiden tot": {
+  "e": "➡️"
+ },
+ "lichaamsdeel, het": {
+  "q": "human body anatomy diagram",
+  "e": "🧍"
+ },
+ "met behulp van": {
+  "e": "🛠️"
+ },
+ "naar achteren": {
+  "e": "⬅️"
+ },
+ "naar voren": {
+  "e": "➡️"
+ },
+ "omhoog": {
+  "q": "arrow pointing up",
+  "e": "⬆️"
+ },
+ "omlaag": {
+  "q": "arrow pointing down",
+  "e": "⬇️"
+ },
+ "omschrijving, de": {
+  "e": "📄"
+ },
+ "onderdeel, het": {
+  "q": "bicycle parts components",
+  "e": "⚙️"
+ },
+ "onverslaanbaar": {
+  "q": "champion holding trophy",
+  "e": "🏆"
+ },
+ "op en neer": {
+  "e": "↕️"
+ },
+ "opschieten": {
+  "q": "person running late looking at watch",
+  "e": "⏰"
+ },
+ "opzeggen": {
+  "q": "cancel button subscription",
+  "e": "❌"
+ },
+ "opzij": {
+  "e": "↔️"
+ },
+ "populair": {
+  "q": "crowd of fans cheering",
+  "e": "🌟"
+ },
+ "racket, het": {
+  "q": "tennis racket and ball",
+  "e": "🎾"
+ },
+ "reden, de": {
+  "e": "❓"
+ },
+ "rust, de": {
+  "q": "football half-time whistle",
+  "e": "⏸️"
+ },
+ "schoppen": {
+  "q": "football player kicking a ball",
+  "e": "⚽"
+ },
+ "smoesje, het": {
+  "e": "🤥"
+ },
+ "spreiden": {
+  "q": "butter spreading on bread",
+  "e": "🧈"
+ },
+ "springen": {
+  "q": "person jumping in the air",
+  "e": "🤾"
+ },
+ "sprint, de": {
+  "q": "sprinters running track",
+  "e": "🏃"
+ },
+ "sprong, de": {
+  "q": "athlete long jump sand",
+  "e": "🏃"
+ },
+ "startplaats, de": {
+  "q": "starting blocks athletics track",
+  "e": "🏁"
+ },
+ "sterk": {
+  "q": "strong man lifting weights",
+  "e": "💪"
+ },
+ "stoppen": {
+  "q": "red stop sign",
+  "e": "🛑"
+ },
+ "strekken": {
+  "q": "woman stretching yoga",
+  "e": "🧘"
+ },
+ "tennistoernooi, het": {
+  "q": "tennis tournament court",
+  "e": "🎾"
+ },
+ "top, de": {
+  "q": "mountain peak summit",
+  "e": "🏔️"
+ },
+ "uiteindelijk": {
+  "e": "🏁"
+ },
+ "uitspreken": {
+  "q": "mouth speaking lips",
+  "e": "👄"
+ },
+ "vanwege": {
+  "e": "➡️"
+ },
+ "vasthouden": {
+  "q": "hands holding a rope tightly",
+  "e": "🤲"
+ },
+ "vereniging, de": {
+  "q": "sports club team members",
+  "e": "👥"
+ },
+ "verliezen": {
+  "q": "sad athlete defeat",
+  "e": "😞"
+ },
+ "verstandig": {
+  "q": "wise owl",
+  "e": "🦉"
+ },
+ "voetbalkampioen, de": {
+  "q": "football champions celebrating trophy",
+  "e": "🏆"
+ },
+ "volhouden": {
+  "q": "marathon runner enduring",
+  "e": "🏃"
+ },
+ "voordoen": {
+  "q": "instructor demonstrating exercise",
+  "e": "🧑‍🏫"
+ },
+ "voornamelijk": {
+  "e": "🎯"
+ },
+ "vriendelijk": {
+  "q": "friendly smiling person waving",
+  "e": "😊"
+ },
+ "winnen": {
+  "q": "winner holding gold medal",
+  "e": "🥇"
+ },
+ "zandbed, het": {
+  "q": "sand pit athletics",
+  "e": "🏖️"
+ },
+ "zuchten": {
+  "q": "person sighing tired",
+  "e": "😮‍💨"
+ },
+ "aangaan": {
+  "q": "couple holding hands",
+  "e": "💑"
+ },
+ "actief": {
+  "q": "active people hiking",
+  "e": "🏃"
+ },
+ "alleen": {
+  "q": "person sitting alone on bench",
+  "e": "🧍"
+ },
+ "automatisch": {
+  "q": "automatic sliding doors",
+  "e": "🤖"
+ },
+ "beide": {
+  "e": "✌️"
+ },
+ "bezig zijn": {
+  "q": "person busy working at desk",
+  "e": "🛠️"
+ },
+ "blozen": {
+  "q": "blushing face red cheeks",
+  "e": "😊"
+ },
+ "breken": {
+  "q": "broken glass shards",
+  "e": "💔"
+ },
+ "compliment, het": {
+  "q": "person giving a compliment",
+  "e": "👏"
+ },
+ "definitief": {
+  "e": "🔒"
+ },
+ "durven": {
+  "q": "person jumping off cliff into water",
+  "e": "🦸"
+ },
+ "elkaar": {
+  "q": "two people hugging",
+  "e": "🤝"
+ },
+ "erkennen": {
+  "q": "person nodding in agreement",
+  "e": "✅"
+ },
+ "erkenning, de": {
+  "q": "award ceremony certificate",
+  "e": "🏅"
+ },
+ "ex, de": {
+  "q": "broken heart",
+  "e": "💔"
+ },
+ "fantaseren": {
+  "q": "child daydreaming imagination",
+  "e": "💭"
+ },
+ "figuur, het": {
+  "q": "silhouette of a person figure",
+  "e": "🧍"
+ },
+ "flauw": {
+  "q": "silly joke funny face",
+  "e": "🙃"
+ },
+ "geloven": {
+  "q": "person praying hands",
+  "e": "🙏"
+ },
+ "gemeente, de": {
+  "q": "dutch town hall building",
+  "e": "🏛️"
+ },
+ "geregistreerd partnerschap, het": {
+  "q": "couple signing papers",
+  "e": "📃"
+ },
+ "geslacht, het": {
+  "q": "male and female symbols",
+  "e": "⚧️"
+ },
+ "hartklopping, de": {
+  "q": "heartbeat pulse",
+  "e": "💓"
+ },
+ "het is aan": {
+  "q": "couple dating dinner",
+  "e": "💕"
+ },
+ "hopeloos": {
+  "q": "person in despair",
+  "e": "😩"
+ },
+ "huwelijkscontract, het": {
+  "q": "marriage certificate",
+  "e": "📜"
+ },
+ "lieverd, de": {
+  "q": "couple heart love",
+  "e": "💕"
+ },
+ "namelijk": {
+  "e": "➡️"
+ },
+ "net": {
+  "q": "freshly cleaned tidy room",
+  "e": "✨"
+ },
+ "ontmoeten": {
+  "q": "two people meeting shaking hands",
+  "e": "🤝"
+ },
+ "over en uit": {
+  "e": "🔚"
+ },
+ "partner, de": {
+  "q": "couple walking together",
+  "e": "👫"
+ },
+ "persoonlijk": {
+  "q": "person pointing at themselves",
+  "e": "👤"
+ },
+ "protestants": {
+  "q": "protestant church dutch",
+  "e": "⛪"
+ },
+ "reageren": {
+  "q": "person replying to a message",
+  "e": "💬"
+ },
+ "regelen": {
+  "q": "person making arrangements on phone",
+  "e": "📋"
+ },
+ "relatie, de": {
+  "q": "couple holding hands relationship",
+  "e": "👫"
+ },
+ "rot": {
+  "q": "rotten apple",
+  "e": "🤢"
+ },
+ "rotstreek, de": {
+  "q": "person making a mean trick",
+  "e": "😠"
+ },
+ "schat, de": {
+  "q": "treasure chest gold",
+  "e": "💰"
+ },
+ "scheiden": {
+  "q": "divorce wedding ring on table",
+  "e": "💔"
+ },
+ "tegenkomen": {
+  "q": "two people bumping into each other",
+  "e": "😲"
+ },
+ "tegenwoordig": {
+  "q": "smartphone modern life",
+  "e": "📱"
+ },
+ "tjongejonge": {
+  "e": "😮"
+ },
+ "traan, de": {
+  "q": "tear drop on cheek",
+  "e": "😢"
+ },
+ "uit elkaar gaan": {
+  "q": "couple walking apart",
+  "e": "💔"
+ },
+ "verdriet, het": {
+  "q": "sad crying person",
+  "e": "😭"
+ },
+ "verkering, de": {
+  "q": "young couple dating",
+  "e": "💑"
+ },
+ "vervelend": {
+  "q": "annoyed person",
+  "e": "😒"
+ },
+ "vormen": {
+  "q": "clay shaping hands pottery",
+  "e": "🏺"
+ },
+ "zaak, de": {
+  "q": "business meeting office",
+  "e": "💼"
+ },
+ "zenuwachtig": {
+  "q": "nervous person biting nails",
+  "e": "😬"
+ },
+ "zin hebben om … te …": {
+  "e": "🙂"
+ },
+ "zo’n": {
+  "e": "👆"
  }
 }
