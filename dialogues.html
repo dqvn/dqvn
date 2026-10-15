@@ -6,7 +6,7 @@
   <script>(function(){try{var v=(JSON.parse(localStorage.getItem('nl_portal_theme'))||{}).v||'orange';document.documentElement.setAttribute('data-theme',v||'orange');}catch(e){document.documentElement.setAttribute('data-theme','orange');}})();</script>
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>🇳🇱 Dialoog Oefenen – Dutch Practice</title>
-  <link rel="stylesheet" href="assets/css/dlg.css?v=16">
+  <link rel="stylesheet" href="assets/css/dlg.css?v=18">
   <link rel="stylesheet" href="assets/css/themes.css?v=2">
   <style>
     /* Restore mob-bar buttons (search/wake/reload) hidden by sync.css 
@@ -147,7 +147,11 @@
         <div class="card">
           <div class="conv-head">
             <div class="sec-lbl">Gesprek / Conversation</div>
-            <button id="rep-btn" class="rep-btn" title="Fout gezien? Meld het hier.&#10;• Klik op ⚠️ naast een regel om die regel te melden.&#10;• Of klik hier voor de hele dialoog (titel, rollen).&#10;&#10;Found a mistake? Report it here.&#10;• Click ⚠️ next to a line to report that line.&#10;• Or click here for the whole dialogue (title, roles).">⚠️ Fout melden</button>
+            <button id="rep-btn" class="rep-btn" title="Fout gezien? Meld het hier.&#10;• Beweeg over een regel en klik op de vlag ⚑ rechts om die regel te melden.&#10;• Of klik hier voor de hele dialoog (titel, rollen).&#10;&#10;Found a mistake? Report it here.&#10;• Hover a line and click the ⚑ flag on its right to report that line.&#10;• Or click here for the whole dialogue (title, roles).">⚠️ Fout melden</button>
+          </div>
+          <div id="tts-guide" class="tts-guide" role="status" hidden>
+            <button id="tts-guide-x" class="tts-guide-x" aria-label="Sluiten / Close">✕</button>
+            <div id="tts-guide-body"></div>
           </div>
           <div id="conv-list"></div>
         </div>
@@ -232,7 +236,7 @@
     <div id="yt-panel-body"></div>
   </div>
 
-  <script src="assets/js/dlgscript.js?v=8"></script>
+  <script src="assets/js/dlgscript.js?v=12"></script>
 </body>
 
 </html>

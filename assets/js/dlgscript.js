@@ -817,7 +817,7 @@ function renderConv(activeLine = -1, doneUpTo = -1) {
           <div class="c-badge" style="background:${color}" title="${esc(current.roles[line.role] || line.role)}">${esc(line.role)}</div>
           <div class="c-body">${body}</div>
           <button class="c-flag" data-line="${i}" title="Fout in deze regel? Meld het.
-Something wrong in this line? Report it." aria-label="Fout melden in regel ${i + 1}">⚠️<span class="c-flag-t">Fout?</span></button>
+Something wrong in this line? Report it." aria-label="Fout melden in regel ${i + 1}">⚑</button>
         </div>`;
     }).join('');
 }
@@ -1011,16 +1011,11 @@ document.getElementById('conv-list').addEventListener('click', e => {
 function speakPreview(text, waveEl, role) {
     if (tts.active && !tts.waitUser) return;  // don't interrupt active TTS
     document.querySelectorAll('.c-wave.playing').forEach(w => w.classList.remove('playing'));
-    speechSynthesis.cancel();
-    if (!waveEl) return;
+    if (!waveEl) { speechSynthesis.cancel(); return; }
     waveEl.classList.add('playing');
     const cfg  = ttsConfigForRole(role);
-    const rate = ttsConfigForRole(role) === ttsB ? Math.max(0.1, ttsSpeed - 0.2) : ttsSpeed;
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = 'nl-NL'; u.rate = rate; u.pitch = cfg.pitch; u.volume = ttsVolume;
-    if (cfg.voice) u.voice = cfg.voice;
-    u.onend = u.onerror = () => waveEl.classList.remove('playing');
-    speechSynthesis.speak(u);
+    const rate = cfg === ttsB ? Math.max(0.1, ttsSpeed - 0.2) : ttsSpeed;
+    say(text, cfg, rate, () => waveEl.classList.remove('playing'));
 }
 
 /* ════════════════════════════════════════════════════
@@ -1035,7 +1030,7 @@ const ttsB = { voice: null, pitch: 1 };
 function loadVoices() {
     const vs = speechSynthesis.getVoices();
     const nl = vs.filter(v => v.lang === 'nl-NL' || v.lang === 'nl-BE' || v.lang.startsWith('nl'));
-    if (!nl.length) return;
+    if (!nl.length) return false;
 
     ttsA.voice = nl[0];
     ttsA.pitch = 1;
@@ -1045,27 +1040,146 @@ function loadVoices() {
 
     console.log('[TTS A]', ttsA.voice?.name, '| [TTS B]', ttsB.voice?.name,
                 nl.length > 1 ? '(distinct voice)' : '(shared voice, pitch 0.8)');
+    hideTtsGuide();
+    return true;
 }
 speechSynthesis.addEventListener('voiceschanged', loadVoices);
-loadVoices();
+/* Some browsers (Brave) fill the voice list late and never fire voiceschanged — poll for ~3 s. */
+(function pollVoices(n = 0) {
+    if (loadVoices() || n >= 12) {
+        if (n >= 12) {
+            console.warn('[TTS] no Dutch voice found. Voices offered:',
+                speechSynthesis.getVoices().map(v => `${v.name} (${v.lang})`));
+            showTtsGuide(false);
+        }
+        return;
+    }
+    setTimeout(() => pollVoices(n + 1), 250);
+})();
 
 function ttsConfigForRole(roleKey) {
     const roles = current ? Object.keys(current.roles) : [];
     return roles.indexOf(roleKey) % 2 === 0 ? ttsA : ttsB;
 }
 
-function speak(text, role) {
-    return new Promise(resolve => {
-        speechSynthesis.cancel();
-        const cfg  = ttsConfigForRole(role);
-        const rate = role && ttsConfigForRole(role) === ttsB
-                     ? Math.max(0.1, ttsSpeed - 0.2)
-                     : ttsSpeed;
+/* One place that talks to the engine. Two Chromium quirks are handled here:
+   - speak() straight after cancel() can be silently dropped (seen in Brave) → wait a beat;
+   - the engine can start "paused" → resume().
+   If nothing starts within a few seconds we tell the user why instead of staying silent. */
+let ttsWarned = false;
+function ttsWarn(why) {
+    console.warn('[TTS] no audio:', why);
+    showTtsGuide(true);
+    if (ttsWarned) return;
+    ttsWarned = true;
+    showToast('🔇 Geen geluid — zie de uitleg bij het gesprek / No audio — see the guide below.', 6000);
+}
+
+/* ── "No Dutch voice" guide: shown in the conversation card, OS-specific, with copy buttons ── */
+function ttsOS() {
+    const ua = navigator.userAgent || '';
+    if (/Android/i.test(ua))            return 'android';
+    if (/iPhone|iPad|iPod/i.test(ua))   return 'ios';
+    if (/Windows/i.test(ua))            return 'windows';
+    if (/Macintosh|Mac OS X/i.test(ua)) return 'mac';
+    if (/Linux|X11|CrOS/i.test(ua))     return 'linux';
+    return 'other';
+}
+
+function ttsGuideHtml() {
+    const cmd = c => `<div class="tg-cmd"><code>${esc(c)}</code><button type="button" class="tg-copy" data-copy="${esc(c)}">Kopieer</button></div>`;
+    const steps = {
+        linux: `<ol>
+            <li>Installeer de spraakdienst en een Nederlandse stem <em>(install a speech service and a Dutch voice)</em>:${cmd('sudo apt install speech-dispatcher espeak-ng')}</li>
+            <li>Test het buiten de browser <em>(test outside the browser)</em>:${cmd('spd-say -l nl "Goedemiddag, hoe gaat het?"')}</li>
+            <li>Sluit de browser <b>helemaal</b> en open hem opnieuw <em>(quit and reopen the browser completely)</em>.</li>
+          </ol>`,
+        windows: `<ol>
+            <li>Windows: <b>Instellingen → Tijd en taal → Spraak → Stemmen toevoegen</b> → kies <b>Nederlands</b> <em>(add a Dutch voice)</em>.</li>
+            <li>Sluit de browser helemaal en open hem opnieuw <em>(restart the browser)</em>.</li>
+          </ol>`,
+        mac: `<ol>
+            <li>macOS: <b>Systeeminstellingen → Toegankelijkheid → Gesproken inhoud → Systeemstem → Beheer stemmen</b> → download een <b>Nederlandse</b> stem (bijv. Xander of Ellen).</li>
+            <li>Sluit de browser helemaal en open hem opnieuw.</li>
+          </ol>`,
+        android: `<ol>
+            <li>Android: <b>Instellingen → Tekst-naar-spraak</b> (zoek naar "spraak") → Google → installeer de <b>Nederlandse</b> stem <em>(install the Dutch voice)</em>.</li>
+            <li>Herlaad deze pagina <em>(reload this page)</em>.</li>
+          </ol>`,
+        ios: `<ol>
+            <li>iPhone/iPad: <b>Instellingen → Toegankelijkheid → Gesproken inhoud → Stemmen → Nederlands</b> → download een stem.</li>
+            <li>Herlaad deze pagina.</li>
+          </ol>`,
+        other: `<ol><li>Installeer een <b>Nederlandse tekst-naar-spraakstem</b> in je besturingssysteem en herstart de browser <em>(install a Dutch text-to-speech voice and restart the browser)</em>.</li></ol>`,
+    };
+    const brave = navigator.brave
+        ? `<p class="tg-note">🦁 <b>Brave</b> heeft geen eigen online stemmen (Chrome wel). Gebruik een stem van het systeem en zet zo nodig <b>Shields</b> uit voor deze site. <em>(Brave has no built-in online voices; use a system voice and, if needed, turn Shields off for this site.)</em></p>` : '';
+    return `<div class="tg-title">🔇 Geen Nederlandse stem gevonden <em>/ No Dutch voice found</em></div>
+        <p class="tg-sub">Zonder stem kan de app geen Nederlands voorlezen. Zo los je het op:</p>
+        ${steps[ttsOS()] || steps.other}${brave}`;
+}
+
+function showTtsGuide(scrollTo) {
+    try { if (sessionStorage.getItem('nl_tts_guide_off')) return; } catch {}
+    const box = document.getElementById('tts-guide');
+    if (!box) return;
+    document.getElementById('tts-guide-body').innerHTML = ttsGuideHtml();
+    box.hidden = false;
+    if (scrollTo) box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+function hideTtsGuide(remember) {
+    const box = document.getElementById('tts-guide');
+    if (box) box.hidden = true;
+    if (remember) { try { sessionStorage.setItem('nl_tts_guide_off', '1'); } catch {} }
+}
+
+document.getElementById('tts-guide-x').addEventListener('click', () => hideTtsGuide(true));
+document.getElementById('tts-guide').addEventListener('click', e => {
+    const b = e.target.closest('.tg-copy');
+    if (!b) return;
+    const done = () => { b.textContent = '✓ Gekopieerd'; setTimeout(() => { b.textContent = 'Kopieer'; }, 1800); };
+    if (navigator.clipboard) navigator.clipboard.writeText(b.dataset.copy).then(done, () => {});
+    else {
+        const t = document.createElement('textarea');
+        t.value = b.dataset.copy; document.body.appendChild(t); t.select();
+        try { document.execCommand('copy'); done(); } catch {}
+        t.remove();
+    }
+});
+
+function say(text, cfg, rate, done) {
+    let started = false, finished = false;
+    const finish = () => { if (!finished) { finished = true; done && done(); } };
+    const go = () => {
         const u = new SpeechSynthesisUtterance(text);
         u.lang = 'nl-NL'; u.rate = rate; u.pitch = cfg.pitch; u.volume = ttsVolume;
         if (cfg.voice) u.voice = cfg.voice;
-        u.onend = resolve; u.onerror = resolve;
+        u.onstart = () => { started = true; hideTtsGuide(); };
+        u.onend   = finish;
+        u.onerror = e => {
+            if (e.error && e.error !== 'canceled' && e.error !== 'interrupted') ttsWarn(e.error);
+            finish();
+        };
         speechSynthesis.speak(u);
+        speechSynthesis.resume();
+        // watchdog: engine accepted the text but never started (silently dropped)
+        setTimeout(() => {
+            if (started || finished) return;
+            speechSynthesis.cancel();
+            ttsWarn('speech did not start');
+            finish();
+        }, 6000);
+    };
+    if (speechSynthesis.speaking || speechSynthesis.pending) { speechSynthesis.cancel(); setTimeout(go, 80); }
+    else go();
+}
+
+function speak(text, role) {
+    return new Promise(resolve => {
+        const cfg  = ttsConfigForRole(role);
+        const rate = role && cfg === ttsB ? Math.max(0.1, ttsSpeed - 0.2) : ttsSpeed;
+        say(text, cfg, rate, resolve);
     });
 }
 
