@@ -828,7 +828,6 @@
   "e": "🚫"
  },
  "beginnen": {
-  "q": "runners at the start line of a race",
   "e": "🏁"
  },
  "eindigen": {
@@ -846,7 +845,6 @@
   "e": "🔤"
  },
  "zin, de": {
-  "q": "sentence written on a blackboard",
   "e": "📝"
  },
  "nieuw": {
@@ -864,7 +862,6 @@
   "e": "👥"
  },
  "studeren": {
-  "q": "student studying with books at desk",
   "e": "📚"
  },
  "vragen": {
@@ -872,7 +869,6 @@
   "e": "🙋"
  },
  "antwoorden": {
-  "q": "teacher answering student question",
   "e": "💬"
  },
  "oefenen": {
@@ -892,11 +888,9 @@
   "e": "👁️"
  },
  "praten": {
-  "q": "two people talking",
   "e": "🗣️"
  },
  "zeggen": {
-  "q": "person speaking with megaphone",
   "e": "📢"
  },
  "aankomstplaats, de": {
@@ -904,29 +898,24 @@
   "e": "🏁"
  },
  "aanspannen": {
-  "q": "person flexing arm muscle",
   "e": "💪"
  },
  "aansporen": {
-  "q": "coach encouraging runner",
   "e": "📣"
  },
  "abonnement, het": {
-  "q": "season ticket card",
   "e": "🎫"
  },
  "andersom": {
   "e": "🔄"
  },
  "beoefenen": {
-  "q": "people playing sport on field",
   "e": "⚽"
  },
  "bestaan uit": {
   "e": "🧩"
  },
  "bewegen": {
-  "q": "person doing stretching exercise",
   "e": "🤸"
  },
  "beweging, de": {
@@ -941,27 +930,21 @@
   "e": "🚪"
  },
  "borgpasje, het": {
-  "q": "deposit card plastic",
   "e": "💳"
  },
  "buigen": {
-  "q": "person bowing",
   "e": "🙇"
  },
  "buik, de": {
-  "q": "human belly torso",
   "e": "🫃"
  },
  "carrière, de": {
-  "q": "career ladder business",
   "e": "📈"
  },
  "conditie, de": {
-  "q": "person jogging fitness",
   "e": "🏃"
  },
  "dame, de": {
-  "q": "elegant lady",
   "e": "👩"
  },
  "dank, de": {
@@ -989,7 +972,6 @@
   "e": "1️⃣"
  },
  "ellende, de": {
-  "q": "sad person in rain",
   "e": "😢"
  },
  "enkelpartij, de": {
@@ -1001,7 +983,6 @@
   "e": "🎪"
  },
  "formeel": {
-  "q": "businessman in formal suit",
   "e": "🤵"
  },
  "geachte": {
@@ -1015,19 +996,15 @@
   "e": "👣"
  },
  "heer": {
-  "q": "gentleman in suit and tie",
   "e": "🤵"
  },
  "hoofdstad, de": {
-  "q": "amsterdam canal city view",
   "e": "🏛️"
  },
  "hoogachtend": {
-  "q": "formal letter signature",
   "e": "✍️"
  },
  "inschrijfgeld, het": {
-  "q": "registration form fee",
   "e": "📝"
  },
  "kampioenschap, het": {
@@ -1062,7 +1039,6 @@
   "e": "⬆️"
  },
  "omlaag": {
-  "q": "arrow pointing down",
   "e": "⬇️"
  },
  "omschrijving, de": {
@@ -1080,11 +1056,9 @@
   "e": "↕️"
  },
  "opschieten": {
-  "q": "person running late looking at watch",
   "e": "⏰"
  },
  "opzeggen": {
-  "q": "cancel button subscription",
   "e": "❌"
  },
  "opzij": {
@@ -1133,11 +1107,9 @@
   "e": "🏁"
  },
  "sterk": {
-  "q": "strong man lifting weights",
   "e": "💪"
  },
  "stoppen": {
-  "q": "red stop sign",
   "e": "🛑"
  },
  "strekken": {
@@ -1145,7 +1117,6 @@
   "e": "🧘"
  },
  "tennistoernooi, het": {
-  "q": "tennis tournament court",
   "e": "🎾"
  },
  "top, de": {
@@ -1156,14 +1127,12 @@
   "e": "🏁"
  },
  "uitspreken": {
-  "q": "mouth speaking lips",
   "e": "👄"
  },
  "vanwege": {
   "e": "➡️"
  },
  "vasthouden": {
-  "q": "hands holding a rope tightly",
   "e": "🤲"
  },
  "vereniging, de": {
@@ -1175,7 +1144,6 @@
   "e": "😞"
  },
  "verstandig": {
-  "q": "wise owl",
   "e": "🦉"
  },
  "voetbalkampioen, de": {
@@ -1183,18 +1151,15 @@
   "e": "🏆"
  },
  "volhouden": {
-  "q": "marathon runner enduring",
   "e": "🏃"
  },
  "voordoen": {
-  "q": "instructor demonstrating exercise",
   "e": "🧑‍🏫"
  },
  "voornamelijk": {
   "e": "🎯"
  },
  "vriendelijk": {
-  "q": "friendly smiling person waving",
   "e": "😊"
  },
  "winnen": {
@@ -1206,7 +1171,6 @@
   "e": "🏖️"
  },
  "zuchten": {
-  "q": "person sighing tired",
   "e": "😮‍💨"
  },
  "aangaan": {
@@ -1222,18 +1186,15 @@
   "e": "🧍"
  },
  "automatisch": {
-  "q": "automatic sliding doors",
   "e": "🤖"
  },
  "beide": {
   "e": "✌️"
  },
  "bezig zijn": {
-  "q": "person busy working at desk",
   "e": "🛠️"
  },
  "blozen": {
-  "q": "blushing face red cheeks",
   "e": "😊"
  },
  "breken": {
@@ -1241,7 +1202,6 @@
   "e": "💔"
  },
  "compliment, het": {
-  "q": "person giving a compliment",
   "e": "👏"
  },
  "definitief": {
@@ -1252,7 +1212,6 @@
   "e": "🦸"
  },
  "elkaar": {
-  "q": "two people hugging",
   "e": "🤝"
  },
  "erkennen": {
@@ -1260,11 +1219,9 @@
   "e": "✅"
  },
  "erkenning, de": {
-  "q": "award ceremony certificate",
   "e": "🏅"
  },
  "ex, de": {
-  "q": "broken heart",
   "e": "💔"
  },
  "fantaseren": {
@@ -1272,7 +1229,6 @@
   "e": "💭"
  },
  "figuur, het": {
-  "q": "silhouette of a person figure",
   "e": "🧍"
  },
  "flauw": {
@@ -1288,7 +1244,6 @@
   "e": "🏛️"
  },
  "geregistreerd partnerschap, het": {
-  "q": "couple signing papers",
   "e": "📃"
  },
  "geslacht, het": {
@@ -1300,11 +1255,9 @@
   "e": "💓"
  },
  "het is aan": {
-  "q": "couple dating dinner",
   "e": "💕"
  },
  "hopeloos": {
-  "q": "person in despair",
   "e": "😩"
  },
  "huwelijkscontract, het": {
@@ -1330,11 +1283,9 @@
   "e": "🔚"
  },
  "partner, de": {
-  "q": "couple walking together",
   "e": "👫"
  },
  "persoonlijk": {
-  "q": "person pointing at themselves",
   "e": "👤"
  },
  "protestants": {
@@ -1342,11 +1293,9 @@
   "e": "⛪"
  },
  "reageren": {
-  "q": "person replying to a message",
   "e": "💬"
  },
  "regelen": {
-  "q": "person making arrangements on phone",
   "e": "📋"
  },
  "relatie, de": {
@@ -1362,7 +1311,6 @@
   "e": "😠"
  },
  "schat, de": {
-  "q": "treasure chest gold",
   "e": "💰"
  },
  "scheiden": {
@@ -1370,7 +1318,6 @@
   "e": "💔"
  },
  "tegenkomen": {
-  "q": "two people bumping into each other",
   "e": "😲"
  },
  "tegenwoordig": {
@@ -1381,11 +1328,9 @@
   "e": "😮"
  },
  "traan, de": {
-  "q": "tear drop on cheek",
   "e": "😢"
  },
  "uit elkaar gaan": {
-  "q": "couple walking apart",
   "e": "💔"
  },
  "verdriet, het": {
@@ -1405,7 +1350,6 @@
   "e": "🏺"
  },
  "zaak, de": {
-  "q": "business meeting office",
   "e": "💼"
  },
  "zenuwachtig": {
