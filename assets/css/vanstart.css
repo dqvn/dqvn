@@ -955,3 +955,7 @@ th {
   transition: opacity .2s, transform .2s; max-width: 90vw; text-align: center;
 }
 #vs-img-toast.on { opacity: 1; transform: translate(-50%, 0); }
+
+/* ── Dedicated image column (desktop only; see syncColumn() in vanstart-img.js) ── */
+#word-list th.vs-img-th, #word-list td.vs-imgcell { width: 150px; text-align: center; vertical-align: middle; }
+#word-list td.vs-imgcell .vs-pic { margin: 0; }

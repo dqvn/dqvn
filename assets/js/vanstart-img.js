@@ -132,13 +132,40 @@
     overlay.classList.add('on');
   }
 
+  /* Desktop (wider than the mobile-card breakpoint in style.css): pictures get their
+   * own "Image" column right after "Dutch". On phones the card layout is written
+   * against fixed column positions, so there the picture stays inside the Dutch cell. */
+  const wide = window.matchMedia('(min-width: 769px)');
+
+  /** Add/remove the header cell and give every body row (spacers too) its image cell. */
+  function syncColumn() {
+    const headRow = document.querySelector('#word-list thead tr');
+    const th = headRow?.querySelector('th.vs-img-th');
+    if (wide.matches && headRow && !th) {
+      const h = document.createElement('th');
+      h.className = 'vs-img-th';
+      h.textContent = 'Image';
+      headRow.insertBefore(h, headRow.children[2] || null);
+    } else if (!wide.matches && th) th.remove();
+
+    if (!wide.matches) return;
+    Array.from(tableBody.rows).forEach(row => {
+      if (row.querySelector('td.vs-imgcell')) return;
+      const td = document.createElement('td');
+      td.className = 'vs-imgcell';
+      row.insertBefore(td, row.cells[2] || null);
+    });
+  }
+
   async function addImages(data) {
     if (!Array.isArray(data)) return;
     const [images, hints] = await Promise.all([loadImages(), loadHints()]);
     data.forEach((entry, i) => {
       const urls = images[entry?.dutch];
-      const dutchTd = tableBody?.rows[i]?.cells[1];
-      if (!dutchTd || dutchTd.querySelector('.vs-pic')) return;
+      const row = tableBody?.rows[i];
+      // wide: the dedicated image cell; narrow: inside the Dutch cell
+      const host = wide.matches ? row?.querySelector('td.vs-imgcell') : row?.cells[1];
+      if (!host || host.querySelector('.vs-pic')) return;
 
       // one wrapper per word: the picture (or emoji) plus its ⚑ report button
       const pic = document.createElement('span');
@@ -155,7 +182,7 @@
         span.textContent = emoji;
         span.setAttribute('aria-hidden', 'true');
         pic.append(span, makeReportBtn(entry, () => '', 'emoji'));
-        if (!pic.isConnected) dutchTd.appendChild(pic);
+        if (!pic.isConnected) host.appendChild(pic);
       };
       if (!urls?.length) { showEmoji(); return; }
 
@@ -171,13 +198,20 @@
         openViewer(entry, urls);
       });
       pic.append(img, makeReportBtn(entry, () => urls[0], 'photo'));
-      dutchTd.appendChild(pic);
+      host.appendChild(pic);
     });
   }
 
   const _origReloadTable = window.reloadTable;
   window.reloadTable = function (data) {
     _origReloadTable(data);
+    syncColumn();
     addImages(data);
   };
+
+  // Crossing the breakpoint (resize / rotate): rebuild so the picture moves between
+  // its own column and the Dutch cell.
+  wide.addEventListener('change', () => {
+    if (typeof wordList !== 'undefined' && Array.isArray(wordList) && wordList.length) window.reloadTable(wordList);
+  });
 })();
