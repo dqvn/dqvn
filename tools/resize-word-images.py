@@ -34,6 +34,22 @@ W = args.width
 H = round(W * 3 / 4)
 
 
+# Sources that will look worse after the resize are reported at the end:
+#   low-res  = smaller than the target on either side (gets scaled UP -> soft/blurry)
+#   crops    = the 4:3 center crop throws away more than CROP_WARN of the picture
+CROP_WARN = 0.40
+warnings = []
+
+
+def check_source(name, w, h):
+    if w < W or h < H:
+        warnings.append((0, f"low-res  {w}x{h}  {name}"))
+    ar = w / h
+    lost = 1 - min(ar, W / H) / max(ar, W / H)
+    if lost > CROP_WARN:
+        warnings.append((1, f"crops {lost:.0%}  {w}x{h}  {name}"))
+
+
 def process(path):
     """Return the new file name (basename), or None if the image can't be read."""
     base, ext = os.path.splitext(path)
@@ -43,6 +59,7 @@ def process(path):
             if ext.lower() == ".jpg" and im.size == (W, H):
                 return os.path.basename(path)          # already done
             im = ImageOps.exif_transpose(im)           # respect camera rotation
+            check_source(os.path.basename(path), im.width, im.height)
             if im.mode in ("RGBA", "LA", "P"):
                 im = im.convert("RGBA")
                 bg = Image.new("RGB", im.size, (255, 255, 255))
@@ -84,6 +101,13 @@ for urls in images.values():
 with open(JSON_FILE, "w", encoding="utf-8") as fh:
     json.dump(images, fh, ensure_ascii=False, indent=1)
     fh.write("\n")
+
+if warnings:
+    print(f"\n{len(warnings)} source(s) worth a look before committing (shown on the page as 256x{H}):")
+    for _, line in sorted(warnings)[:60]:
+        print("  " + line)
+    if len(warnings) > 60:
+        print(f"  ... and {len(warnings) - 60} more")
 
 after = sum(os.path.getsize(os.path.join(DIR, f)) for f in os.listdir(DIR))
 print(f"{len(renamed)}/{len(files)} images -> {W}x{H} jpg; {before/1e6:.0f} MB -> {after/1e6:.0f} MB")
