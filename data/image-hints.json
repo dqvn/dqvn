@@ -5582,7 +5582,6 @@
   "e": "💼"
  },
  "kok, de": {
-  "q": "chef cooking in restaurant kitchen",
   "e": "👨‍🍳"
  },
  "manager, de": {
@@ -5622,7 +5621,6 @@
   "e": "👥"
  },
  "te laat": {
-  "q": "running late looking at watch",
   "e": "⏰"
  },
  "voorbeeld, het": {
@@ -5663,7 +5661,6 @@
   "e": "✖️"
  },
  "komma, de": {
-  "q": "comma punctuation",
   "e": ","
  },
  "cent, de": {
@@ -5683,7 +5680,6 @@
   "e": "🫵"
  },
  "begin, het": {
-  "q": "start line beginning race",
   "e": "🏁"
  },
  "einde, het": {
@@ -5718,7 +5714,6 @@
   "e": "🔛"
  },
  "verhuren": {
-  "q": "for rent sign apartment",
   "e": "🏠"
  },
  "antoniem, het": {
@@ -5795,7 +5790,6 @@
   "e": "🗺️"
  },
  "de plaats - plaatsen": {
-  "q": "dutch town view",
   "e": "🏘️"
  },
  "de straat - straten": {
@@ -5803,11 +5797,9 @@
   "e": "🛣️"
  },
  "de naam - namen": {
-  "q": "name tag",
   "e": "🏷️"
  },
  "de voornaam - voornamen": {
-  "q": "name tag first name",
   "e": "🏷️"
  },
  "de achternaam - achternamen": {
@@ -5825,11 +5817,9 @@
   "e": "🎓"
  },
  "de dag - dagen": {
-  "q": "sunny day sky",
   "e": "☀️"
  },
  "de dialoog - dialogen": {
-  "q": "two people in conversation",
   "e": "💬"
  },
  "de oefening - oefeningen": {
@@ -5850,15 +5840,12 @@
   "e": "💼"
  },
  "het woord - woorden": {
-  "q": "word cloud letters",
   "e": "🔤"
  },
  "de persoon - personen": {
-  "q": "person standing silhouette",
   "e": "🧍"
  },
  "de buurman - buurmannen": {
-  "q": "neighbour man over fence",
   "e": "🏘️"
  },
  "de docent - docenten": {
@@ -5872,7 +5859,6 @@
   "e": "🙂"
  },
  "gaan - ga, gaat, gaan": {
-  "q": "person walking",
   "e": "🚶"
  },
  "hebben - heb, hebt, heeft, hebben": {
@@ -5889,7 +5875,6 @@
   "e": "💪"
  },
  "meelezen": {
-  "q": "reading along together book",
   "e": "📖"
  },
  "willen - wil, wilt, wil, willen": {
@@ -5945,7 +5930,6 @@
   "e": "🤔"
  },
  "het aanvraagformulier": {
-  "q": "application form paper pen",
   "e": "📝"
  },
  "het adres - adressen": {
@@ -5953,7 +5937,6 @@
   "e": "📍"
  },
  "het afhaalbewijs": {
-  "q": "collection receipt slip",
   "e": "🧾"
  },
  "de auto - auto’s": {
@@ -5995,7 +5978,6 @@
   "e": "🚲"
  },
  "het formulier - formulieren": {
-  "q": "paper form with pen",
   "e": "📝"
  },
  "de geboortedatum - geboortedatums": {
@@ -6007,7 +5989,6 @@
   "e": "🏛️"
  },
  "het getal - getallen": {
-  "q": "numbers digits",
   "e": "🔢"
  },
  "de handtekening - handtekeningen": {
@@ -6015,7 +5996,6 @@
   "e": "✍️"
  },
  "het huis - huizen": {
-  "q": "dutch house",
   "e": "🏠"
  },
  "de hulp": {
@@ -6046,7 +6026,6 @@
   "e": "🪪"
  },
  "de meneer": {
-  "q": "man in a suit",
   "e": "🤵"
  },
  "de Nederlander": {
@@ -6054,11 +6033,9 @@
   "e": "🧡"
  },
  "het nummer - nummers": {
-  "q": "house number plate",
   "e": "🔢"
  },
  "het pakketje - pakketjes": {
-  "q": "small parcel package",
   "e": "📦"
  },
  "het paspoort - paspoorten": {
@@ -6077,11 +6054,9 @@
   "e": "🛎️"
  },
  "het rijbewijs - rijbewijzen": {
-  "q": "driving licence card",
   "e": "🪪"
  },
  "de school - scholen": {
-  "q": "dutch school building",
   "e": "🏫"
  },
  "het telefoonnummer - telefoonnummers": {
@@ -6093,7 +6068,6 @@
   "e": "🕐"
  },
  "het uur - uren": {
-  "q": "clock hour hand",
   "e": "🕐"
  },
  "de vriend - vrienden": {
@@ -6105,7 +6079,6 @@
   "e": "🏘️"
  },
  "de week - weken": {
-  "q": "weekly calendar",
   "e": "📅"
  },
  "De zaterdagmiddag - zaterdagmiddagen": {
@@ -6123,7 +6096,6 @@
   "e": "🚌"
  },
  "ga - gaan": {
-  "q": "person walking",
   "e": "🚶"
  },
  "gedaan - doen": {
@@ -6141,7 +6113,6 @@
   "e": "📝"
  },
  "zich inschrijven": {
-  "q": "registration form",
   "e": "📋"
  },
  "kan - kunnen": {
@@ -6151,7 +6122,6 @@
   "e": "🎁"
  },
  "ligt - liggen": {
-  "q": "book lying on a table",
   "e": "🛏️"
  },
  "moet - moeten": {
@@ -6182,7 +6152,6 @@
   "e": "👋"
  },
  "alleenstaand": {
-  "q": "single person alone",
   "e": "🧍"
  },
  "alvast": {
@@ -6202,11 +6171,9 @@
   "e": "👤"
  },
  "samenwonend": {
-  "q": "couple living together at home",
   "e": "🏠"
  },
  "de afspraak, afspraken": {
-  "q": "appointment calendar",
   "e": "📅"
  },
  "de agenda, agenda's": {
@@ -6217,7 +6184,6 @@
   "e": "💼"
  },
  "het bezoek": {
-  "q": "visitors at the door",
   "e": "🏠"
  },
  "de bioscoop, bioscopen": {
@@ -6229,11 +6195,9 @@
   "e": "🏘️"
  },
  "de buurman, buurmannen": {
-  "q": "neighbour man",
   "e": "🧑"
  },
  "de buurvrouw, buurvrouwen": {
-  "q": "neighbour woman",
   "e": "👩"
  },
  "de collega, collega's": {
@@ -6248,7 +6212,6 @@
   "e": "❤️"
  },
  "de medecursist, medecursisten": {
-  "q": "fellow students classroom",
   "e": "🧑‍🎓"
  },
  "de medewerker, medewerkers": {
@@ -6264,19 +6227,15 @@
   "e": "👫"
  },
  "de neef, neven": {
-  "q": "boy cousins",
   "e": "👦"
  },
  "het neefje, neefjes": {
-  "q": "young boy",
   "e": "👦"
  },
  "de nicht, nichten": {
-  "q": "girl cousins",
   "e": "👧"
  },
  "het nichtje, nichtjes": {
-  "q": "young girl",
   "e": "👧"
  },
  "de schoondochter, schoondochters": {
@@ -6286,11 +6245,9 @@
   "e": "👨"
  },
  "de zoon, zoons": {
-  "q": "father and son",
   "e": "👦"
  },
  "belt, bellen": {
-  "q": "person calling on phone",
   "e": "📞"
  },
  "contact hebben": {
@@ -6308,7 +6265,6 @@
   "e": "🏠"
  },
  "opbellen": {
-  "q": "person phoning",
   "e": "📞"
  },
  "organiseren": {
@@ -6359,7 +6315,6 @@
   "e": "🛎️"
  },
  "de baliemedewerker, baliemedewerkers": {
-  "q": "receptionist at counter",
   "e": "🛎️"
  },
  "bij aankoop van ...": {
@@ -6416,7 +6371,6 @@
   "e": "🏷️"
  },
  "inschrijven": {
-  "q": "registration form",
   "e": "📋"
  },
  "kijk - kijken": {
@@ -6426,7 +6380,6 @@
   "e": "🎁"
  },
  "loopt - lopen": {
-  "q": "person walking",
   "e": "🚶"
  },
  "probeert - proberen": {
@@ -6443,14 +6396,12 @@
   "e": "👁️"
  },
  "zoekt - zoeken": {
-  "q": "magnifying glass searching",
   "e": "🔍"
  },
  "in de buurt": {
   "e": "📍"
  },
  "naar beneden": {
-  "q": "arrow pointing down",
   "e": "⬇️"
  },
  "naar boven": {
@@ -6469,11 +6420,9 @@
   "e": "🪨"
  },
  "houdbaar, houdbare": {
-  "q": "canned food long life",
   "e": "🥫"
  },
  "jong, jonge": {
-  "q": "young child",
   "e": "🧒"
  },
  "lekker, lekkere": {
@@ -6500,7 +6449,6 @@
   "e": "😍"
  },
  "nieuw, nieuwe": {
-  "q": "brand new product box",
   "e": "🆕"
  },
  "rot, rotte": {
@@ -6523,7 +6471,6 @@
   "e": "🥬"
  },
  "zacht, zachte": {
-  "q": "soft fluffy cotton",
   "e": "☁️"
  },
  "de linkerhand": {
@@ -6531,7 +6478,6 @@
   "e": "🤚"
  },
  "rechtsaf": {
-  "q": "right turn arrow sign",
   "e": "↪️"
  },
  "klopt": {
@@ -6550,7 +6496,6 @@
   "e": "🔢"
  },
  "gepast": {
-  "q": "exact change coins",
   "e": "🪙"
  },
  "helaas": {
@@ -6560,7 +6505,6 @@
   "e": "🔀"
  },
  "kleiner": {
-  "q": "small and big ball comparison",
   "e": "🔽"
  },
  "speciaals": {
@@ -6574,11 +6518,9 @@
   "e": "🚗"
  },
  "het gesprek, gesprekken": {
-  "q": "two people having a conversation",
   "e": "🗣️"
  },
  "de hoek, hoeken": {
-  "q": "street corner",
   "e": "↪️"
  },
  "het hoofdgerecht, de hoofdgerechten": {
@@ -6604,7 +6546,6 @@
   "e": "➗"
  },
  "de sleutel, sleutels": {
-  "q": "door keys",
   "e": "🔑"
  },
  "het terras, terrassen": {
@@ -6616,7 +6557,6 @@
   "e": "⌨️"
  },
  "het verhaal, verhalen": {
-  "q": "storybook open",
   "e": "📖"
  },
  "het voetbalveld, voetbalvelden": {
@@ -6631,14 +6571,12 @@
   "e": "👍"
  },
  "doorgeven": {
-  "q": "passing a plate along the table",
   "e": "🤲"
  },
  "gebruikt, gebruiken": {
   "e": "🛠️"
  },
  "gehoord, horen": {
-  "q": "ear listening",
   "e": "👂"
  },
  "gesmaakt, smaken": {
@@ -6666,7 +6604,6 @@
   "e": "🤔"
  },
  "vertelt, vertellen": {
-  "q": "storytelling to children",
   "e": "🗣️"
  },
  "beschikbaar": {
@@ -6691,11 +6628,9 @@
   "e": "⏭️"
  },
  "de aanvraag, aanvragen": {
-  "q": "application form request",
   "e": "📝"
  },
  "het abonnement, abonnementen": {
-  "q": "season ticket card",
   "e": "🎫"
  },
  "het dagretour, dagretours": {
@@ -6735,7 +6670,6 @@
   "e": "🚇"
  },
  "de pas, passen": {
-  "q": "pass card",
   "e": "🎫"
  },
  "het perron, perrons": {
@@ -6747,7 +6681,6 @@
   "e": "🚗"
  },
  "het saldo, saldo's": {
-  "q": "bank account balance card",
   "e": "💳"
  },
  "de servicebalie": {
@@ -6770,7 +6703,6 @@
   "e": "🗺️"
  },
  "het uitje, uitjes": {
-  "q": "day trip outing",
   "e": "🎒"
  },
  "het verschil, verschillen": {
@@ -6804,11 +6736,9 @@
   "e": "⌨️"
  },
  "klikken": {
-  "q": "mouse click",
   "e": "🖱️"
  },
  "storten": {
-  "q": "depositing money atm",
   "e": "🏧"
  },
  "tanken": {
@@ -6819,7 +6749,6 @@
   "e": "✅"
  },
  "overdekt": {
-  "q": "covered roofed walkway",
   "e": "🏛️"
  },
  "rechtstreekse": {
@@ -6856,7 +6785,6 @@
   "e": "🔀"
  },
  "de activiteit, activiteiten": {
-  "q": "people doing outdoor activities",
   "e": "🤸"
  },
  "het apparaat, apparaten": {
@@ -6872,11 +6800,9 @@
   "e": "🧺"
  },
  "het droomhuis, droomhuizen": {
-  "q": "dream house villa with garden",
   "e": "🏡"
  },
  "de huur": {
-  "q": "for rent sign house",
   "e": "🔑"
  },
  "de indeling, indelingen": {
@@ -6887,7 +6813,6 @@
   "e": "↔️"
  },
  "de kelder, kelders": {
-  "q": "cellar basement stairs",
   "e": "🪜"
  },
  "de klas, klassen": {
@@ -6899,7 +6824,6 @@
   "e": "🚰"
  },
  "de lamp, lampen": {
-  "q": "table lamp",
   "e": "💡"
  },
  "de last": {
@@ -6914,7 +6838,6 @@
   "e": "🏘️"
  },
  "de plaats, plaatsen": {
-  "q": "village town view",
   "e": "🏘️"
  },
  "de rente, rentes": {
@@ -6925,7 +6848,6 @@
   "e": "🏠"
  },
  "de studeerkamer, studeerkamers": {
-  "q": "study room desk books",
   "e": "📚"
  },
  "de studentenkamer": {
@@ -6959,7 +6881,6 @@
   "e": "♨️"
  },
  "aanzetten": {
-  "q": "light switch turning on",
   "e": "💡"
  },
  "Begonnen, beginnen": {
@@ -6989,7 +6910,6 @@
   "e": "📉"
  },
  "gegaan, gaan": {
-  "q": "person walking",
   "e": "🚶"
  },
  "gekomen, komen": {
@@ -6999,7 +6919,6 @@
   "e": "😌"
  },
  "geslaagd, slagen": {
-  "q": "graduation cap success",
   "e": "🎓"
  },
  "gestegen, stijgen": {
@@ -7007,18 +6926,15 @@
   "e": "📈"
  },
  "gestopt, stoppen": {
-  "q": "red stop sign",
   "e": "🛑"
  },
  "geworden, worden": {
   "e": "🦋"
  },
  "hangt, hangen": {
-  "q": "picture hanging on the wall",
   "e": "🖼️"
  },
  "isoleren": {
-  "q": "house insulation material",
   "e": "🧱"
  },
  "klussen": {
@@ -7037,18 +6953,15 @@
   "e": "🏠"
  },
  "uitdoen": {
-  "q": "turning off the light switch",
   "e": "💡"
  },
  "uitzetten": {
-  "q": "power button off",
   "e": "🔌"
  },
  "veranderd, veranderen": {
   "e": "🔄"
  },
  "verdienen": {
-  "q": "earning money salary",
   "e": "💶"
  },
  "verhuisd, verhuizen": {
@@ -7104,7 +7017,6 @@
   "e": "🏥"
  },
  "de kappers, kappers": {
-  "q": "hairdresser salon",
   "e": "💇"
  },
  "de klacht, klachten": {
@@ -7115,11 +7027,9 @@
   "e": "🏃"
  },
  "het lichaam, lichamen": {
-  "q": "human body anatomy",
   "e": "🧍"
  },
  "de nagelvijl, nagelvijlen": {
-  "q": "nail file",
   "e": "💅"
  },
  "de ontspanning": {
@@ -7131,7 +7041,6 @@
   "e": "🏥"
  },
  "het recept": {
-  "q": "doctor prescription paper",
   "e": "📋"
  },
  "de rust": {
@@ -7177,7 +7086,6 @@
   "e": "📦"
  },
  "genezen": {
-  "q": "healing recovery plaster",
   "e": "🩹"
  },
  "heersen": {
@@ -7191,11 +7099,9 @@
   "e": "🤲"
  },
  "gebroken": {
-  "q": "broken bone cast arm",
   "e": "🦴"
  },
  "verbrand": {
-  "q": "sunburn red skin",
   "e": "🥵"
  },
  "kritisch": {
