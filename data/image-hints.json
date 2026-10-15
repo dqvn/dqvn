@@ -5569,5 +5569,1645 @@
  },
  "Hersenschimmen": {
   "e": "📖"
+ },
+ "klas, de": {
+  "q": "school classroom with desks",
+  "e": "🏫"
+ },
+ "stift, de": {
+  "q": "felt tip marker pen",
+  "e": "🖊️"
+ },
+ "job, de": {
+  "e": "💼"
+ },
+ "kok, de": {
+  "q": "chef cooking in restaurant kitchen",
+  "e": "👨‍🍳"
+ },
+ "manager, de": {
+  "e": "👔"
+ },
+ "werken (als)": {
+  "e": "💼"
+ },
+ "dezelfde / hetzelfde": {
+  "e": "🟰"
+ },
+ "ander": {
+  "e": "🔀"
+ },
+ "taalschool, de": {
+  "q": "language school classroom",
+  "e": "🏫"
+ },
+ "pensioen, het": {
+  "q": "retired elderly couple relaxing",
+  "e": "👴"
+ },
+ "hei": {
+  "e": "👋"
+ },
+ "gedaan": {
+  "e": "✅"
+ },
+ "om te": {
+  "e": "➡️"
+ },
+ "s nachts": {
+  "q": "night sky moon stars",
+  "e": "🌙"
+ },
+ "ons / onze": {
+  "e": "👥"
+ },
+ "te laat": {
+  "q": "running late looking at watch",
+  "e": "⏰"
+ },
+ "voorbeeld, het": {
+  "e": "💡"
+ },
+ "grammatica, de": {
+  "q": "grammar textbook",
+  "e": "📘"
+ },
+ "uitzondering, de": {
+  "e": "❗"
+ },
+ "opnieuw": {
+  "e": "🔁"
+ },
+ "prepositie, de": {
+  "e": "🔤"
+ },
+ "voorzetsel, het": {
+  "e": "🔤"
+ },
+ "ieder, iedere": {
+  "e": "👥"
+ },
+ "elk, elke": {
+  "e": "👥"
+ },
+ "tachtig": {
+  "e": "8️⃣0️⃣"
+ },
+ "miljoen, een": {
+  "e": "💰"
+ },
+ "miljard, een": {
+  "e": "💰"
+ },
+ "maal": {
+  "e": "✖️"
+ },
+ "komma, de": {
+  "q": "comma punctuation",
+  "e": ","
+ },
+ "cent, de": {
+  "q": "one cent euro coin",
+  "e": "🪙"
+ },
+ "apart": {
+  "e": "↔️"
+ },
+ "alweer": {
+  "e": "🔁"
+ },
+ "me / mij": {
+  "e": "🙋"
+ },
+ "je / jou": {
+  "e": "🫵"
+ },
+ "begin, het": {
+  "q": "start line beginning race",
+  "e": "🏁"
+ },
+ "einde, het": {
+  "e": "🔚"
+ },
+ "toets, de": {
+  "q": "exam test paper",
+  "e": "📝"
+ },
+ "test, de": {
+  "q": "exam test paper",
+  "e": "📝"
+ },
+ "antwoord, het": {
+  "e": "💬"
+ },
+ "imperatief, de": {
+  "e": "❗"
+ },
+ "huurder, de": {
+  "e": "🔑"
+ },
+ "Italiaans": {
+  "q": "italian flag",
+  "e": "🇮🇹"
+ },
+ "Russisch": {
+  "q": "russian flag",
+  "e": "🇷🇺"
+ },
+ "aan": {
+  "e": "🔛"
+ },
+ "verhuren": {
+  "q": "for rent sign apartment",
+  "e": "🏠"
+ },
+ "antoniem, het": {
+  "e": "↔️"
+ },
+ "dichtbij / dicht bij": {
+  "e": "📍"
+ },
+ "enkele": {
+  "e": "🔢"
+ },
+ "een paar": {
+  "e": "✌️"
+ },
+ "laan, de": {
+  "q": "tree lined avenue",
+  "e": "🌳"
+ },
+ "traag": {
+  "q": "snail slow",
+  "e": "🐌"
+ },
+ "met vriendelijke groeten": {
+  "e": "✉️"
+ },
+ "daarnet": {
+  "e": "⏪"
+ },
+ "vorige": {
+  "e": "⏮️"
+ },
+ "perfect": {
+  "e": "💯"
+ },
+ "was / waren": {
+  "e": "⏪"
+ },
+ "had / hadden": {
+  "e": "⏪"
+ },
+ "mee": {
+  "e": "🤝"
+ },
+ "vragen stellen": {
+  "q": "raising hand to ask a question",
+  "e": "🙋"
+ },
+ "herhaling, de": {
+  "e": "🔁"
+ },
+ "zoals": {
+  "e": "🟰"
+ },
+ "welk": {
+  "e": "❓"
+ },
+ "welke": {
+  "e": "❓"
+ },
+ "de bus - bussen": {
+  "q": "city bus",
+  "e": "🚌"
+ },
+ "de computer - computers": {
+  "q": "desktop computer",
+  "e": "💻"
+ },
+ "de foto - foto’s": {
+  "q": "photo prints on a table",
+  "e": "📷"
+ },
+ "het land - landen": {
+  "q": "world map countries",
+  "e": "🗺️"
+ },
+ "de plaats - plaatsen": {
+  "q": "dutch town view",
+  "e": "🏘️"
+ },
+ "de straat - straten": {
+  "q": "dutch street with houses",
+  "e": "🛣️"
+ },
+ "de naam - namen": {
+  "q": "name tag",
+  "e": "🏷️"
+ },
+ "de voornaam - voornamen": {
+  "q": "name tag first name",
+  "e": "🏷️"
+ },
+ "de achternaam - achternamen": {
+  "q": "name tag surname",
+  "e": "🏷️"
+ },
+ "de vraag - vragen": {
+  "e": "❓"
+ },
+ "het antwoord - antwoorden": {
+  "e": "💬"
+ },
+ "de cursus - cursussen": {
+  "q": "classroom course students",
+  "e": "🎓"
+ },
+ "de dag - dagen": {
+  "q": "sunny day sky",
+  "e": "☀️"
+ },
+ "de dialoog - dialogen": {
+  "q": "two people in conversation",
+  "e": "💬"
+ },
+ "de oefening - oefeningen": {
+  "q": "workbook exercise pencil",
+  "e": "📝"
+ },
+ "de pauze - pauzes": {
+  "q": "coffee break cup",
+  "e": "☕"
+ },
+ "het probleem - problemen": {
+  "e": "⚠️"
+ },
+ "het werk = the work / job": {
+  "e": "💼"
+ },
+ "het werk": {
+  "e": "💼"
+ },
+ "het woord - woorden": {
+  "q": "word cloud letters",
+  "e": "🔤"
+ },
+ "de persoon - personen": {
+  "q": "person standing silhouette",
+  "e": "🧍"
+ },
+ "de buurman - buurmannen": {
+  "q": "neighbour man over fence",
+  "e": "🏘️"
+ },
+ "de docent - docenten": {
+  "q": "teacher in classroom",
+  "e": "🧑‍🏫"
+ },
+ "begroeten": {
+  "e": "👋"
+ },
+ "zijn - ben, bent, is, zijn": {
+  "e": "🙂"
+ },
+ "gaan - ga, gaat, gaan": {
+  "q": "person walking",
+  "e": "🚶"
+ },
+ "hebben - heb, hebt, heeft, hebben": {
+  "e": "🤲"
+ },
+ "kennismaken": {
+  "q": "two people shaking hands",
+  "e": "🤝"
+ },
+ "komen - kom, komt, komen": {
+  "e": "🚶"
+ },
+ "kunnen - kan, kunt, kan, kunnen": {
+  "e": "💪"
+ },
+ "meelezen": {
+  "q": "reading along together book",
+  "e": "📖"
+ },
+ "willen - wil, wilt, wil, willen": {
+  "e": "🙋"
+ },
+ "bedankt": {
+  "e": "🙏"
+ },
+ "doeg": {
+  "e": "👋"
+ },
+ "doei": {
+  "e": "👋"
+ },
+ "fijn weekend!": {
+  "e": "🎉"
+ },
+ "fijne dag!": {
+  "e": "☀️"
+ },
+ "goed weekend!": {
+  "e": "🎉"
+ },
+ "ja hoor": {
+  "e": "👍"
+ },
+ "leuk!": {
+  "e": "😀"
+ },
+ "sorry": {
+  "e": "🙏"
+ },
+ "tot zo!": {
+  "e": "👋"
+ },
+ "tot straks!": {
+  "e": "👋"
+ },
+ "tot dan!": {
+  "e": "👋"
+ },
+ "oh, vervelend": {
+  "e": "😕"
+ },
+ "welkom!": {
+  "q": "welcome sign doormat",
+  "e": "👋"
+ },
+ "de": {
+  "e": "🔤"
+ },
+ "hè": {
+  "e": "🤔"
+ },
+ "het aanvraagformulier": {
+  "q": "application form paper pen",
+  "e": "📝"
+ },
+ "het adres - adressen": {
+  "q": "street name sign address house number",
+  "e": "📍"
+ },
+ "het afhaalbewijs": {
+  "q": "collection receipt slip",
+  "e": "🧾"
+ },
+ "de auto - auto’s": {
+  "q": "car on a road",
+  "e": "🚗"
+ },
+ "de balie – balies": {
+  "q": "reception counter desk",
+  "e": "🛎️"
+ },
+ "het boek - boeken": {
+  "q": "stack of books",
+  "e": "📚"
+ },
+ "de burgerlijke staat": {
+  "e": "💍"
+ },
+ "het burgerservicenummer - burgerservicenummers": {
+  "e": "🔢"
+ },
+ "de buurt - buurten": {
+  "q": "dutch neighbourhood houses street",
+  "e": "🏘️"
+ },
+ "het centrum - centrums, centra": {
+  "q": "dutch city centre old town",
+  "e": "🏙️"
+ },
+ "de cursist - cursisten": {
+  "q": "adult students classroom",
+  "e": "🧑‍🎓"
+ },
+ "het cursusboek - cursusboeken": {
+  "q": "course textbook",
+  "e": "📘"
+ },
+ "de fiets - fietsen": {
+  "q": "dutch bicycle parked",
+  "e": "🚲"
+ },
+ "het formulier - formulieren": {
+  "q": "paper form with pen",
+  "e": "📝"
+ },
+ "de geboortedatum - geboortedatums": {
+  "q": "birthday cake date calendar",
+  "e": "🎂"
+ },
+ "de gemeente - gemeenten": {
+  "q": "dutch town hall",
+  "e": "🏛️"
+ },
+ "het getal - getallen": {
+  "q": "numbers digits",
+  "e": "🔢"
+ },
+ "de handtekening - handtekeningen": {
+  "q": "signature on paper pen",
+  "e": "✍️"
+ },
+ "het huis - huizen": {
+  "q": "dutch house",
+  "e": "🏠"
+ },
+ "de hulp": {
+  "e": "🤝"
+ },
+ "het identiteitsbewijs - identiteitsbewijzen": {
+  "q": "identity card plastic card",
+  "e": "🪪"
+ },
+ "de inschrijving - inschrijvingen": {
+  "q": "registration desk form",
+  "e": "📋"
+ },
+ "de kamer - kamers": {
+  "q": "bedroom room interior",
+  "e": "🛏️"
+ },
+ "de kantine - kantines": {
+  "q": "canteen cafeteria tables",
+  "e": "🍽️"
+ },
+ "de kopie - kopieën": {
+  "q": "photocopier copy machine",
+  "e": "🖨️"
+ },
+ "het legitimatiebewijs - legitimatiebewijzen": {
+  "q": "identity card plastic card",
+  "e": "🪪"
+ },
+ "de meneer": {
+  "q": "man in a suit",
+  "e": "🤵"
+ },
+ "de Nederlander": {
+  "q": "dutch orange fans",
+  "e": "🧡"
+ },
+ "het nummer - nummers": {
+  "q": "house number plate",
+  "e": "🔢"
+ },
+ "het pakketje - pakketjes": {
+  "q": "small parcel package",
+  "e": "📦"
+ },
+ "het paspoort - paspoorten": {
+  "q": "passport",
+  "e": "🛂"
+ },
+ "de persoonsgegevens": {
+  "e": "🪪"
+ },
+ "de postcode - postcodes": {
+  "q": "dutch postal address letter",
+  "e": "📮"
+ },
+ "de receptie - recepties": {
+  "q": "hotel reception desk",
+  "e": "🛎️"
+ },
+ "het rijbewijs - rijbewijzen": {
+  "q": "driving licence card",
+  "e": "🪪"
+ },
+ "de school - scholen": {
+  "q": "dutch school building",
+  "e": "🏫"
+ },
+ "het telefoonnummer - telefoonnummers": {
+  "q": "phone keypad dialing",
+  "e": "📞"
+ },
+ "de tijd - tijden": {
+  "q": "clock",
+  "e": "🕐"
+ },
+ "het uur - uren": {
+  "q": "clock hour hand",
+  "e": "🕐"
+ },
+ "de vriend - vrienden": {
+  "q": "group of friends",
+  "e": "👫"
+ },
+ "de woonplaats - woonplaatsen": {
+  "q": "village houses",
+  "e": "🏘️"
+ },
+ "de week - weken": {
+  "q": "weekly calendar",
+  "e": "📅"
+ },
+ "De zaterdagmiddag - zaterdagmiddagen": {
+  "e": "🌤️"
+ },
+ "afhalen": {
+  "q": "picking up a parcel at counter",
+  "e": "📦"
+ },
+ "begrijp - begrijpen": {
+  "e": "💡"
+ },
+ "de bus nemen": {
+  "q": "boarding a city bus",
+  "e": "🚌"
+ },
+ "ga - gaan": {
+  "q": "person walking",
+  "e": "🚶"
+ },
+ "gedaan - doen": {
+  "e": "✅"
+ },
+ "hebt - hebben": {
+  "e": "🤲"
+ },
+ "huiswerk maken": {
+  "q": "child doing homework",
+  "e": "📝"
+ },
+ "ingevuld - invullen": {
+  "q": "filling out a form",
+  "e": "📝"
+ },
+ "zich inschrijven": {
+  "q": "registration form",
+  "e": "📋"
+ },
+ "kan - kunnen": {
+  "e": "💪"
+ },
+ "krijgt - krijgen": {
+  "e": "🎁"
+ },
+ "ligt - liggen": {
+  "q": "book lying on a table",
+  "e": "🛏️"
+ },
+ "moet - moeten": {
+  "e": "❗"
+ },
+ "muziek luisteren": {
+  "q": "listening to music headphones",
+  "e": "🎧"
+ },
+ "noteer - noteren": {
+  "q": "writing notes notebook",
+  "e": "📝"
+ },
+ "pakt - pakken": {
+  "e": "🤲"
+ },
+ "televisie kijken": {
+  "q": "watching television living room",
+  "e": "📺"
+ },
+ "zeg - zeggen": {
+  "e": "💬"
+ },
+ "momentje": {
+  "e": "⏳"
+ },
+ "ziens (tot ziens)": {
+  "e": "👋"
+ },
+ "alleenstaand": {
+  "q": "single person alone",
+  "e": "🧍"
+ },
+ "alvast": {
+  "e": "⏩"
+ },
+ "mobiele": {
+  "q": "mobile phone",
+  "e": "📱"
+ },
+ "nieuwe": {
+  "e": "🆕"
+ },
+ "orde": {
+  "e": "👌"
+ },
+ "persoonlijke": {
+  "e": "👤"
+ },
+ "samenwonend": {
+  "q": "couple living together at home",
+  "e": "🏠"
+ },
+ "de afspraak, afspraken": {
+  "q": "appointment calendar",
+  "e": "📅"
+ },
+ "de agenda, agenda's": {
+  "q": "paper diary planner",
+  "e": "📅"
+ },
+ "de baan, banen": {
+  "e": "💼"
+ },
+ "het bezoek": {
+  "q": "visitors at the door",
+  "e": "🏠"
+ },
+ "de bioscoop, bioscopen": {
+  "q": "cinema movie theatre",
+  "e": "🎬"
+ },
+ "de buur, buren": {
+  "q": "neighbours houses",
+  "e": "🏘️"
+ },
+ "de buurman, buurmannen": {
+  "q": "neighbour man",
+  "e": "🧑"
+ },
+ "de buurvrouw, buurvrouwen": {
+  "q": "neighbour woman",
+  "e": "👩"
+ },
+ "de collega, collega's": {
+  "q": "colleagues at office",
+  "e": "🧑‍💼"
+ },
+ "het contact, contacten": {
+  "e": "🤝"
+ },
+ "de liefde, liefdes": {
+  "q": "hearts love",
+  "e": "❤️"
+ },
+ "de medecursist, medecursisten": {
+  "q": "fellow students classroom",
+  "e": "🧑‍🎓"
+ },
+ "de medewerker, medewerkers": {
+  "q": "office employee at desk",
+  "e": "🧑‍💼"
+ },
+ "de reis, reizen": {
+  "q": "suitcase travel journey",
+  "e": "🧳"
+ },
+ "de relatie, relaties": {
+  "q": "couple holding hands",
+  "e": "👫"
+ },
+ "de neef, neven": {
+  "q": "boy cousins",
+  "e": "👦"
+ },
+ "het neefje, neefjes": {
+  "q": "young boy",
+  "e": "👦"
+ },
+ "de nicht, nichten": {
+  "q": "girl cousins",
+  "e": "👧"
+ },
+ "het nichtje, nichtjes": {
+  "q": "young girl",
+  "e": "👧"
+ },
+ "de schoondochter, schoondochters": {
+  "e": "👩"
+ },
+ "de schoonzoon, schoonzonen": {
+  "e": "👨"
+ },
+ "de zoon, zoons": {
+  "q": "father and son",
+  "e": "👦"
+ },
+ "belt, bellen": {
+  "q": "person calling on phone",
+  "e": "📞"
+ },
+ "contact hebben": {
+  "e": "🤝"
+ },
+ "informatie geven": {
+  "q": "information desk",
+  "e": "ℹ️"
+ },
+ "omgaan met": {
+  "e": "🤝"
+ },
+ "op bezoek gaan": {
+  "q": "visiting friends at home",
+  "e": "🏠"
+ },
+ "opbellen": {
+  "q": "person phoning",
+  "e": "📞"
+ },
+ "organiseren": {
+  "q": "event planning checklist",
+  "e": "📋"
+ },
+ "vieren": {
+  "q": "celebration party balloons",
+  "e": "🎉"
+ },
+ "sinds": {
+  "e": "⏳"
+ },
+ "geboren": {
+  "q": "newborn baby",
+  "e": "👶"
+ },
+ "ideale": {
+  "e": "🌟"
+ },
+ "paar": {
+  "q": "pair of socks",
+  "e": "🧦"
+ },
+ "spontaan": {
+  "e": "🎲"
+ },
+ "tijdje": {
+  "e": "⏳"
+ },
+ "vooral": {
+  "e": "⭐"
+ },
+ "de aanbieding, aanbiedingen": {
+  "q": "supermarket special offer price sign",
+  "e": "🏷️"
+ },
+ "de aankoop, aankopen": {
+  "q": "shopping bags purchases",
+  "e": "🛍️"
+ },
+ "de afdeling, afdelingen": {
+  "q": "supermarket aisle department sign",
+  "e": "🏬"
+ },
+ "de balie, balies": {
+  "q": "service counter desk",
+  "e": "🛎️"
+ },
+ "de baliemedewerker, baliemedewerkers": {
+  "q": "receptionist at counter",
+  "e": "🛎️"
+ },
+ "bij aankoop van ...": {
+  "e": "🛍️"
+ },
+ "de bos bloemen": {
+  "q": "bunch of flowers bouquet",
+  "e": "💐"
+ },
+ "het briefje, briefjes": {
+  "q": "euro banknote",
+  "e": "💶"
+ },
+ "het einde": {
+  "e": "🔚"
+ },
+ "de keus, keuzes": {
+  "e": "🔀"
+ },
+ "de korting, kortingen": {
+  "q": "sale discount percent sign",
+  "e": "🏷️"
+ },
+ "de kraam, kramen": {
+  "q": "market stall",
+  "e": "🛒"
+ },
+ "het kruispunt, kruispunten": {
+  "q": "road intersection",
+  "e": "🚦"
+ },
+ "de markt, markten": {
+  "q": "dutch open air market",
+  "e": "🛒"
+ },
+ "het pad, paden": {
+  "q": "footpath in a park",
+  "e": "🛤️"
+ },
+ "het pond": {
+  "q": "500 grams butter weight",
+  "e": "⚖️"
+ },
+ "het station, stations": {
+  "q": "dutch railway station",
+  "e": "🚉"
+ },
+ "het tasje, tasjes": {
+  "q": "small shopping bag",
+  "e": "👜"
+ },
+ "de uitverkoop": {
+  "q": "sale sign shop window",
+  "e": "🏷️"
+ },
+ "inschrijven": {
+  "q": "registration form",
+  "e": "📋"
+ },
+ "kijk - kijken": {
+  "e": "👀"
+ },
+ "krijgt – krijgen": {
+  "e": "🎁"
+ },
+ "loopt - lopen": {
+  "q": "person walking",
+  "e": "🚶"
+ },
+ "probeert - proberen": {
+  "e": "💪"
+ },
+ "rijdt - rijden": {
+  "q": "car driving on a road",
+  "e": "🚗"
+ },
+ "volg - volgen": {
+  "e": "👣"
+ },
+ "ziet - zien": {
+  "e": "👁️"
+ },
+ "zoekt - zoeken": {
+  "q": "magnifying glass searching",
+  "e": "🔍"
+ },
+ "in de buurt": {
+  "e": "📍"
+ },
+ "naar beneden": {
+  "q": "arrow pointing down",
+  "e": "⬇️"
+ },
+ "naar boven": {
+  "q": "arrow pointing up",
+  "e": "⬆️"
+ },
+ "per stuk": {
+  "e": "1️⃣"
+ },
+ "gezond, gezonde": {
+  "q": "healthy fruit and vegetables",
+  "e": "🥗"
+ },
+ "hard, harde": {
+  "q": "hard stone rock",
+  "e": "🪨"
+ },
+ "houdbaar, houdbare": {
+  "q": "canned food long life",
+  "e": "🥫"
+ },
+ "jong, jonge": {
+  "q": "young child",
+  "e": "🧒"
+ },
+ "lekker, lekkere": {
+  "e": "😋"
+ },
+ "lelijk, lelijke": {
+  "e": "😖"
+ },
+ "makkelijk, makkelijke": {
+  "e": "😌"
+ },
+ "ongezond, ongezonde": {
+  "q": "fast food burger fries",
+  "e": "🍔"
+ },
+ "oud, oude": {
+  "q": "old antique clock",
+  "e": "👴"
+ },
+ "moeilijk, moeilijke": {
+  "e": "😓"
+ },
+ "mooi, mooie": {
+  "e": "😍"
+ },
+ "nieuw, nieuwe": {
+  "q": "brand new product box",
+  "e": "🆕"
+ },
+ "rot, rotte": {
+  "q": "rotten apple",
+  "e": "🍎"
+ },
+ "sappig, sappige": {
+  "q": "juicy orange",
+  "e": "🍊"
+ },
+ "slecht, slechte": {
+  "e": "👎"
+ },
+ "snel, snelle": {
+  "q": "cheetah running fast",
+  "e": "🐆"
+ },
+ "vers, verse": {
+  "q": "fresh vegetables market",
+  "e": "🥬"
+ },
+ "zacht, zachte": {
+  "q": "soft fluffy cotton",
+  "e": "☁️"
+ },
+ "de linkerhand": {
+  "q": "left hand",
+  "e": "🤚"
+ },
+ "rechtsaf": {
+  "q": "right turn arrow sign",
+  "e": "↪️"
+ },
+ "klopt": {
+  "e": "✅"
+ },
+ "plezier": {
+  "e": "😄"
+ },
+ "ziens": {
+  "e": "👋"
+ },
+ "andere": {
+  "e": "🔀"
+ },
+ "beurt": {
+  "e": "🔢"
+ },
+ "gepast": {
+  "q": "exact change coins",
+  "e": "🪙"
+ },
+ "helaas": {
+  "e": "😞"
+ },
+ "iets anders": {
+  "e": "🔀"
+ },
+ "kleiner": {
+  "q": "small and big ball comparison",
+  "e": "🔽"
+ },
+ "speciaals": {
+  "e": "✨"
+ },
+ "het advies, adviezen": {
+  "e": "💬"
+ },
+ "de garage, garages": {
+  "q": "garage with car",
+  "e": "🚗"
+ },
+ "het gesprek, gesprekken": {
+  "q": "two people having a conversation",
+  "e": "🗣️"
+ },
+ "de hoek, hoeken": {
+  "q": "street corner",
+  "e": "↪️"
+ },
+ "het hoofdgerecht, de hoofdgerechten": {
+  "q": "main course dinner plate",
+  "e": "🍽️"
+ },
+ "de keuze, keuzes": {
+  "e": "🔀"
+ },
+ "het lunchcafé, lunchcafés": {
+  "q": "lunch cafe terrace",
+  "e": "☕"
+ },
+ "het plan, plannen": {
+  "q": "plans on a whiteboard",
+  "e": "🗓️"
+ },
+ "de rekening, rekeningen": {
+  "q": "restaurant bill receipt",
+  "e": "🧾"
+ },
+ "de rest": {
+  "e": "➗"
+ },
+ "de sleutel, sleutels": {
+  "q": "door keys",
+  "e": "🔑"
+ },
+ "het terras, terrassen": {
+  "q": "cafe terrace with tables",
+  "e": "☕"
+ },
+ "de toets, toetsen": {
+  "q": "computer keyboard keys",
+  "e": "⌨️"
+ },
+ "het verhaal, verhalen": {
+  "q": "storybook open",
+  "e": "📖"
+ },
+ "het voetbalveld, voetbalvelden": {
+  "q": "football field grass pitch",
+  "e": "⚽"
+ },
+ "het voorgerecht, de voorgerechten": {
+  "q": "starter soup appetizer",
+  "e": "🥣"
+ },
+ "aanraden": {
+  "e": "👍"
+ },
+ "doorgeven": {
+  "q": "passing a plate along the table",
+  "e": "🤲"
+ },
+ "gebruikt, gebruiken": {
+  "e": "🛠️"
+ },
+ "gehoord, horen": {
+  "q": "ear listening",
+  "e": "👂"
+ },
+ "gesmaakt, smaken": {
+  "e": "😋"
+ },
+ "laat, laten": {
+  "e": "🤷"
+ },
+ "regent, regenen": {
+  "q": "rain falling umbrella",
+  "e": "🌧️"
+ },
+ "smaakt, smaken": {
+  "e": "😋"
+ },
+ "stuurt, sturen": {
+  "q": "sending an email",
+  "e": "📤"
+ },
+ "terugbelt, terugbellen": {
+  "q": "calling back on phone",
+  "e": "📞"
+ },
+ "vergeet, vergeten": {
+  "e": "🤔"
+ },
+ "vertelt, vertellen": {
+  "q": "storytelling to children",
+  "e": "🗣️"
+ },
+ "beschikbaar": {
+  "e": "✅"
+ },
+ "bereikbaar": {
+  "e": "📶"
+ },
+ "privé": {
+  "e": "🔒"
+ },
+ "verrukkelijk": {
+  "e": "😋"
+ },
+ "groeten": {
+  "e": "👋"
+ },
+ "inderdaad": {
+  "e": "✅"
+ },
+ "komend(e)": {
+  "e": "⏭️"
+ },
+ "de aanvraag, aanvragen": {
+  "q": "application form request",
+  "e": "📝"
+ },
+ "het abonnement, abonnementen": {
+  "q": "season ticket card",
+  "e": "🎫"
+ },
+ "het dagretour, dagretours": {
+  "q": "train ticket",
+  "e": "🎫"
+ },
+ "het deel, delen": {
+  "q": "pie slice part",
+  "e": "🥧"
+ },
+ "de excursie, excursies": {
+  "q": "school excursion group",
+  "e": "🚌"
+ },
+ "de fietstocht, fietstochten": {
+  "q": "cycling tour in the countryside",
+  "e": "🚴"
+ },
+ "de halte, haltes": {
+  "q": "bus stop shelter",
+  "e": "🚏"
+ },
+ "de ingang, ingangen": {
+  "q": "building entrance door",
+  "e": "🚪"
+ },
+ "het instructiefilmpje": {
+  "q": "instruction video tutorial screen",
+  "e": "▶️"
+ },
+ "de lijn, lijnen": {
+  "q": "tram line map",
+  "e": "🚋"
+ },
+ "de metro, metro's": {
+  "q": "subway train",
+  "e": "🚇"
+ },
+ "de pas, passen": {
+  "q": "pass card",
+  "e": "🎫"
+ },
+ "het perron, perrons": {
+  "q": "railway platform",
+  "e": "🚉"
+ },
+ "de pech": {
+  "q": "car breakdown on the roadside",
+  "e": "🚗"
+ },
+ "het saldo, saldo's": {
+  "q": "bank account balance card",
+  "e": "💳"
+ },
+ "de servicebalie": {
+  "q": "service desk counter",
+  "e": "🛎️"
+ },
+ "de soort, soorten": {
+  "e": "🏷️"
+ },
+ "het spoor, sporen": {
+  "q": "railway tracks",
+  "e": "🛤️"
+ },
+ "de stalling, stallingen": {
+  "q": "bicycle parking garage",
+  "e": "🚲"
+ },
+ "het traject, trajecten": {
+  "q": "route on a map",
+  "e": "🗺️"
+ },
+ "het uitje, uitjes": {
+  "q": "day trip outing",
+  "e": "🎒"
+ },
+ "het verschil, verschillen": {
+  "e": "↔️"
+ },
+ "de vertrekhal, vertrekhallen": {
+  "q": "airport departure hall",
+  "e": "🛫"
+ },
+ "het vervoersbewijs": {
+  "q": "train ticket",
+  "e": "🎫"
+ },
+ "het vervoermiddel": {
+  "q": "bus train bicycle transport",
+  "e": "🚆"
+ },
+ "aangekomen, aankomen": {
+  "q": "train arriving at platform",
+  "e": "🚉"
+ },
+ "activeren": {
+  "e": "🔛"
+ },
+ "installeren": {
+  "q": "installing software computer",
+  "e": "💻"
+ },
+ "intikken": {
+  "q": "typing on keyboard",
+  "e": "⌨️"
+ },
+ "klikken": {
+  "q": "mouse click",
+  "e": "🖱️"
+ },
+ "storten": {
+  "q": "depositing money atm",
+  "e": "🏧"
+ },
+ "tanken": {
+  "q": "refuelling car at petrol station",
+  "e": "⛽"
+ },
+ "inbegrepen": {
+  "e": "✅"
+ },
+ "overdekt": {
+  "q": "covered roofed walkway",
+  "e": "🏛️"
+ },
+ "rechtstreekse": {
+  "e": "➡️"
+ },
+ "voordelig": {
+  "e": "💶"
+ },
+ "hartelijk": {
+  "e": "🤗"
+ },
+ "aparte": {
+  "e": "↔️"
+ },
+ "elke": {
+  "e": "👥"
+ },
+ "ergens": {
+  "e": "📍"
+ },
+ "geschikt": {
+  "e": "👌"
+ },
+ "naartoe": {
+  "e": "➡️"
+ },
+ "slechts": {
+  "e": "☝️"
+ },
+ "tussendoor": {
+  "e": "⏱️"
+ },
+ "verschillende": {
+  "e": "🔀"
+ },
+ "de activiteit, activiteiten": {
+  "q": "people doing outdoor activities",
+  "e": "🤸"
+ },
+ "het apparaat, apparaten": {
+  "q": "kitchen appliances",
+  "e": "🔌"
+ },
+ "het bad, baden": {
+  "q": "bathtub bath",
+  "e": "🛁"
+ },
+ "de droger, drogers": {
+  "q": "tumble dryer clothes",
+  "e": "🧺"
+ },
+ "het droomhuis, droomhuizen": {
+  "q": "dream house villa with garden",
+  "e": "🏡"
+ },
+ "de huur": {
+  "q": "for rent sign house",
+  "e": "🔑"
+ },
+ "de indeling, indelingen": {
+  "q": "floor plan layout",
+  "e": "📐"
+ },
+ "de kant, kanten": {
+  "e": "↔️"
+ },
+ "de kelder, kelders": {
+  "q": "cellar basement stairs",
+  "e": "🪜"
+ },
+ "de klas, klassen": {
+  "q": "school classroom with desks",
+  "e": "🏫"
+ },
+ "de kraan, kranen": {
+  "q": "water tap faucet",
+  "e": "🚰"
+ },
+ "de lamp, lampen": {
+  "q": "table lamp",
+  "e": "💡"
+ },
+ "de last": {
+  "e": "😩"
+ },
+ "de loopafstand": {
+  "q": "walking path pedestrians",
+  "e": "🚶"
+ },
+ "de nieuwbouw": {
+  "q": "new housing development",
+  "e": "🏘️"
+ },
+ "de plaats, plaatsen": {
+  "q": "village town view",
+  "e": "🏘️"
+ },
+ "de rente, rentes": {
+  "e": "📈"
+ },
+ "de schoorsteen, schoorstenen": {
+  "q": "house chimney",
+  "e": "🏠"
+ },
+ "de studeerkamer, studeerkamers": {
+  "q": "study room desk books",
+  "e": "📚"
+ },
+ "de studentenkamer": {
+  "q": "student room desk bed",
+  "e": "🛏️"
+ },
+ "de tafel, tafels": {
+  "q": "wooden dining table",
+  "e": "🪑"
+ },
+ "de twee-onder-een-kap woning": {
+  "q": "semi detached houses",
+  "e": "🏘️"
+ },
+ "het type, types": {
+  "e": "🔤"
+ },
+ "de uitbouw": {
+  "q": "house extension conservatory",
+  "e": "🏡"
+ },
+ "het uitzicht, uitzichten": {
+  "q": "view from window",
+  "e": "🏞️"
+ },
+ "de voorziening, voorzieningen": {
+  "e": "🏥"
+ },
+ "het warmtepompsysteem": {
+  "q": "heat pump outdoor unit",
+  "e": "♨️"
+ },
+ "aanzetten": {
+  "q": "light switch turning on",
+  "e": "💡"
+ },
+ "Begonnen, beginnen": {
+  "e": "🏁"
+ },
+ "beleven": {
+  "e": "🎢"
+ },
+ "dekken": {
+  "q": "set dining table plates",
+  "e": "🍽️"
+ },
+ "eruit zien": {
+  "e": "👀"
+ },
+ "ervaren": {
+  "e": "🎓"
+ },
+ "gebeurd, gebeuren": {
+  "e": "❗"
+ },
+ "gebleven, blijven": {
+  "e": "🪑"
+ },
+ "gedaald, dalen": {
+  "q": "downward chart arrow",
+  "e": "📉"
+ },
+ "gegaan, gaan": {
+  "q": "person walking",
+  "e": "🚶"
+ },
+ "gekomen, komen": {
+  "e": "🚶"
+ },
+ "genieten van": {
+  "e": "😌"
+ },
+ "geslaagd, slagen": {
+  "q": "graduation cap success",
+  "e": "🎓"
+ },
+ "gestegen, stijgen": {
+  "q": "upward chart arrow",
+  "e": "📈"
+ },
+ "gestopt, stoppen": {
+  "q": "red stop sign",
+  "e": "🛑"
+ },
+ "geworden, worden": {
+  "e": "🦋"
+ },
+ "hangt, hangen": {
+  "q": "picture hanging on the wall",
+  "e": "🖼️"
+ },
+ "isoleren": {
+  "q": "house insulation material",
+  "e": "🧱"
+ },
+ "klussen": {
+  "q": "diy hammer drill tools",
+  "e": "🔨"
+ },
+ "lappen": {
+  "q": "cleaning windows with squeegee",
+  "e": "🧽"
+ },
+ "ligt, liggen": {
+  "e": "🛏️"
+ },
+ "samenwonen": {
+  "q": "couple living together",
+  "e": "🏠"
+ },
+ "uitdoen": {
+  "q": "turning off the light switch",
+  "e": "💡"
+ },
+ "uitzetten": {
+  "q": "power button off",
+  "e": "🔌"
+ },
+ "veranderd, veranderen": {
+  "e": "🔄"
+ },
+ "verdienen": {
+  "q": "earning money salary",
+  "e": "💶"
+ },
+ "verhuisd, verhuizen": {
+  "q": "moving boxes",
+  "e": "📦"
+ },
+ "voorzien": {
+  "e": "📦"
+ },
+ "zich herinneren": {
+  "e": "🧠"
+ },
+ "via": {
+  "e": "➡️"
+ },
+ "gedeelde": {
+  "e": "🤝"
+ },
+ "rustige": {
+  "q": "quiet calm lake",
+  "e": "🏞️"
+ },
+ "enzovoort": {
+  "e": "…"
+ },
+ "extra": {
+  "e": "➕"
+ },
+ "hopelijk": {
+  "e": "🤞"
+ },
+ "de achtergrond": {
+  "e": "🖼️"
+ },
+ "de balans": {
+  "q": "balance scales",
+  "e": "⚖️"
+ },
+ "de bijwerking, bijwerkingen": {
+  "q": "medicine leaflet side effects",
+  "e": "💊"
+ },
+ "de eeuw, eeuwen": {
+  "q": "old historic building",
+  "e": "🏰"
+ },
+ "de gezondheid": {
+  "q": "healthy lifestyle fruit",
+  "e": "🍎"
+ },
+ "de huisartsenpraktijk": {
+  "q": "doctor's office waiting room",
+  "e": "🏥"
+ },
+ "de kappers, kappers": {
+  "q": "hairdresser salon",
+  "e": "💇"
+ },
+ "de klacht, klachten": {
+  "e": "🤒"
+ },
+ "de levensstijl": {
+  "q": "healthy active lifestyle jogging",
+  "e": "🏃"
+ },
+ "het lichaam, lichamen": {
+  "q": "human body anatomy",
+  "e": "🧍"
+ },
+ "de nagelvijl, nagelvijlen": {
+  "q": "nail file",
+  "e": "💅"
+ },
+ "de ontspanning": {
+  "q": "person relaxing yoga",
+  "e": "🧘"
+ },
+ "de praktijk": {
+  "q": "doctor's practice",
+  "e": "🏥"
+ },
+ "het recept": {
+  "q": "doctor prescription paper",
+  "e": "📋"
+ },
+ "de rust": {
+  "q": "calm peaceful nature",
+  "e": "🌿"
+ },
+ "de snee": {
+  "q": "cut finger bandage",
+  "e": "🩹"
+ },
+ "de verandering, veranderingen": {
+  "e": "🔄"
+ },
+ "de verblijfsvergunning": {
+  "q": "residence permit card",
+  "e": "🪪"
+ },
+ "de verhoging": {
+  "q": "thermometer fever",
+  "e": "🌡️"
+ },
+ "het voordeel, voordelen": {
+  "e": "➕"
+ },
+ "het zeer": {
+  "e": "🤕"
+ },
+ "de zorgverlener": {
+  "q": "nurse healthcare worker",
+  "e": "👩‍⚕️"
+ },
+ "achterlaten": {
+  "e": "👣"
+ },
+ "afzeggen": {
+  "q": "cancel button",
+  "e": "❌"
+ },
+ "betekenen": {
+  "e": "💭"
+ },
+ "bevatten": {
+  "e": "📦"
+ },
+ "genezen": {
+  "q": "healing recovery plaster",
+  "e": "🩹"
+ },
+ "heersen": {
+  "e": "👑"
+ },
+ "herstellen": {
+  "q": "repairing with tools",
+  "e": "🔧"
+ },
+ "overnemen": {
+  "e": "🤲"
+ },
+ "gebroken": {
+  "q": "broken bone cast arm",
+  "e": "🦴"
+ },
+ "verbrand": {
+  "q": "sunburn red skin",
+  "e": "🥵"
+ },
+ "kritisch": {
+  "e": "🧐"
+ },
+ "keihard": {
+  "e": "🪨"
+ },
+ "minstens": {
+  "e": "➕"
+ },
+ "toen": {
+  "e": "⏪"
  }
 }
