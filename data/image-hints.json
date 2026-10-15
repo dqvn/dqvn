@@ -3654,5 +3654,747 @@
  "zakenwereld, de": {
   "q": "city business district skyscrapers",
   "e": "🏙️"
+ },
+ "Excuseer": {
+  "e": "🙋"
+ },
+ "Het spijt me": {
+  "e": "😔"
+ },
+ "Goedenacht": {
+  "q": "moon and stars night sky",
+  "e": "🌙"
+ },
+ "Leuk je te ontmoeten": {
+  "e": "🤝"
+ },
+ "Hoe gaat het?": {
+  "e": "🙂"
+ },
+ "Ja": {
+  "e": "✅"
+ },
+ "Nee": {
+  "e": "❌"
+ },
+ "Ik ben...": {
+  "e": "🙋"
+ },
+ "Tot ziens": {
+  "e": "👋"
+ },
+ "uur": {
+  "q": "clock face showing time",
+  "e": "🕐"
+ },
+ "Heerlijk!": {
+  "e": "😋"
+ },
+ "lamsvlees": {
+  "e": "🍖"
+ },
+ "dokter": {
+  "q": "doctor with stethoscope",
+  "e": "👨‍⚕️"
+ },
+ "werknemer": {
+  "e": "🧑‍💼"
+ },
+ "manager": {
+  "e": "👔"
+ },
+ "kok": {
+  "e": "👨‍🍳"
+ },
+ "lichaam": {
+  "e": "🧍"
+ },
+ "neem": {
+  "e": "🤲"
+ },
+ "sinaasappel": {
+  "q": "orange fruit",
+  "e": "🍊"
+ },
+ "zeg": {
+  "e": "💬"
+ },
+ "bel": {
+  "e": "📞"
+ },
+ "schone": {
+  "e": "✨"
+ },
+ "zeehond": {
+  "e": "🦭"
+ },
+ "zonnig": {
+  "q": "sunny blue sky",
+  "e": "☀️"
+ },
+ "peuter": {
+  "q": "toddler child playing",
+  "e": "🧒"
+ },
+ "graad": {
+  "q": "thermometer degrees",
+  "e": "🌡️"
+ },
+ "vriendin": {
+  "e": "👭"
+ },
+ "volwassen": {
+  "e": "🧑"
+ },
+ "scooter": {
+  "q": "scooter motorbike",
+  "e": "🛵"
+ },
+ "rusten": {
+  "q": "person resting in hammock",
+  "e": "😴"
+ },
+ "afmaken": {
+  "e": "✅"
+ },
+ "boeiend": {
+  "e": "🤩"
+ },
+ "sleutel": {
+  "q": "door key",
+  "e": "🔑"
+ },
+ "printer": {
+  "e": "🖨️"
+ },
+ "viltstift": {
+  "q": "felt tip marker pen",
+  "e": "🖊️"
+ },
+ "handtas": {
+  "q": "handbag",
+  "e": "👜"
+ },
+ "bestelling": {
+  "e": "📦"
+ },
+ "veld": {
+  "q": "green field meadow",
+  "e": "🌾"
+ },
+ "baas": {
+  "e": "👔"
+ },
+ "collega": {
+  "e": "🧑‍💼"
+ },
+ "contract": {
+  "q": "signing a contract",
+  "e": "📃"
+ },
+ "deal": {
+  "e": "🤝"
+ },
+ "meerdere": {
+  "e": "⬆️"
+ },
+ "salaris": {
+  "q": "euro banknotes salary",
+  "e": "💶"
+ },
+ "musical": {
+  "q": "musical theatre stage",
+  "e": "🎭"
+ },
+ "toets": {
+  "q": "exam test paper pencil",
+  "e": "📝"
+ },
+ "voorkant": {
+  "e": "⬆️"
+ },
+ "baan": {
+  "e": "💼"
+ },
+ "president": {
+  "e": "🏛️"
+ },
+ "industrie": {
+  "q": "factory chimneys industry",
+  "e": "🏭"
+ },
+ "riem": {
+  "q": "leather belt",
+  "e": "👖"
+ },
+ "rekening": {
+  "q": "restaurant bill receipt",
+  "e": "🧾"
+ },
+ "promotie": {
+  "e": "📈"
+ },
+ "surfen op het internet": {
+  "q": "person browsing the internet laptop",
+  "e": "🌐"
+ },
+ "wakker worden": {
+  "e": "⏰"
+ },
+ "pendelen": {
+  "q": "commuters on a train",
+  "e": "🚆"
+ },
+ "antwoord": {
+  "e": "💬"
+ },
+ "lesgeven": {
+  "q": "teacher at whiteboard",
+  "e": "🧑‍🏫"
+ },
+ "aandoen": {
+  "e": "💡"
+ },
+ "uitschakelen": {
+  "e": "⏻"
+ },
+ "uit eten": {
+  "e": "🍽️"
+ },
+ "bijwonen": {
+  "e": "🙋"
+ },
+ "wassen": {
+  "q": "washing hands with soap",
+  "e": "🧼"
+ },
+ "cheque": {
+  "e": "🧾"
+ },
+ "openen": {
+  "e": "🚪"
+ },
+ "pensioneren": {
+  "e": "👴"
+ },
+ "binnenkant": {
+  "e": "⤵️"
+ },
+ "schrijver": {
+  "q": "writer with typewriter",
+  "e": "✍️"
+ },
+ "pan": {
+  "q": "cooking pot on stove",
+  "e": "🍲"
+ },
+ "ingang": {
+  "q": "building entrance door sign",
+  "e": "🚪"
+ },
+ "reservering": {
+  "q": "restaurant reservation booking",
+  "e": "📅"
+ },
+ "voelen": {
+  "e": "🫶"
+ },
+ "plan": {
+  "q": "planning notes on whiteboard",
+  "e": "🗓️"
+ },
+ "uitverkoop": {
+  "q": "sale sign shop window",
+  "e": "🏷️"
+ },
+ "conditioner": {
+  "q": "hair conditioner bottle",
+  "e": "🧴"
+ },
+ "winkel": {
+  "q": "small shop storefront",
+  "e": "🏪"
+ },
+ "markt": {
+  "q": "dutch open air market",
+  "e": "🛒"
+ },
+ "scheermes": {
+  "q": "razor blade shaving",
+  "e": "🪒"
+ },
+ "bord": {
+  "q": "empty white plate",
+  "e": "🍽️"
+ },
+ "ondernemer": {
+  "e": "💼"
+ },
+ "kortverhaal": {
+  "e": "📖"
+ },
+ "map": {
+  "q": "paper folder document",
+  "e": "📁"
+ },
+ "uitgang": {
+  "q": "exit sign door",
+  "e": "🚪"
+ },
+ "natuurkunde": {
+  "e": "⚛️"
+ },
+ "herinneren": {
+  "e": "🧠"
+ },
+ "dressoir": {
+  "q": "wooden sideboard dresser furniture",
+  "e": "🗄️"
+ },
+ "vegen": {
+  "e": "🧹"
+ },
+ "opbergen": {
+  "q": "storing boxes on shelf",
+  "e": "📦"
+ },
+ "winderig": {
+  "e": "🌬️"
+ },
+ "zwembad": {
+  "q": "swimming pool",
+  "e": "🏊"
+ },
+ "audioboek": {
+  "q": "headphones audiobook",
+  "e": "🎧"
+ },
+ "eng": {
+  "e": "😨"
+ },
+ "pond": {
+  "q": "pound sterling coins",
+  "e": "💷"
+ },
+ "alcohol": {
+  "q": "glasses of beer and wine",
+  "e": "🍺"
+ },
+ "ritprijs": {
+  "q": "bus fare ticket price",
+  "e": "🚌"
+ },
+ "drogen": {
+  "q": "clothes drying on a line",
+  "e": "👕"
+ },
+ "stofzuigen": {
+  "e": "🧹"
+ },
+ "weerbericht": {
+  "q": "weather forecast map",
+  "e": "🌦️"
+ },
+ "metro": {
+  "q": "subway train",
+  "e": "🚇"
+ },
+ "coffeeshop": {
+  "e": "☕"
+ },
+ "bar": {
+  "q": "bar counter drinks",
+  "e": "🍸"
+ },
+ "steen": {
+  "q": "rock stone",
+  "e": "🪨"
+ },
+ "lange mouwen": {
+  "q": "long sleeved shirt",
+  "e": "👔"
+ },
+ "korte mouwen": {
+  "e": "👕"
+ },
+ "nerveus": {
+  "e": "😬"
+ },
+ "opgewonden": {
+  "e": "🤩"
+ },
+ "föhnen": {
+  "e": "💇"
+ },
+ "vechtsport": {
+  "e": "🥋"
+ },
+ "tevreden": {
+  "e": "😊"
+ },
+ "kalm": {
+  "q": "calm lake still water",
+  "e": "🏞️"
+ },
+ "ontevreden": {
+  "e": "😒"
+ },
+ "ring": {
+  "q": "gold ring",
+  "e": "💍"
+ },
+ "fooi": {
+  "q": "tip money in a jar",
+  "e": "💶"
+ },
+ "Protestantisme": {
+  "q": "protestant church dutch",
+  "e": "⛪"
+ },
+ "enkel": {
+  "q": "human ankle foot",
+  "e": "🦶"
+ },
+ "scheren": {
+  "q": "man shaving with razor",
+  "e": "🪒"
+ },
+ "snee": {
+  "q": "cut finger bandage",
+  "e": "🩹"
+ },
+ "verstuiken": {
+  "e": "🤕"
+ },
+ "kamersleutel": {
+  "q": "hotel room key card",
+  "e": "🔑"
+ },
+ "wekoproep": {
+  "q": "hotel phone wake up call",
+  "e": "☎️"
+ },
+ "ventilator": {
+  "q": "electric fan",
+  "e": "🌀"
+ },
+ "schoolhoofd": {
+  "e": "🏫"
+ },
+ "fel": {
+  "e": "💡"
+ },
+ "speaker": {
+  "e": "🔊"
+ },
+ "romp": {
+  "e": "🧍"
+ },
+ "nauw": {
+  "q": "narrow alley between buildings",
+  "e": "↔️"
+ },
+ "hard": {
+  "e": "🪨"
+ },
+ "hoopvol": {
+  "e": "🌈"
+ },
+ "rijk": {
+  "e": "💰"
+ },
+ "beeldscherm": {
+  "q": "computer monitor screen",
+  "e": "🖥️"
+ },
+ "toetsenbord": {
+  "e": "⌨️"
+ },
+ "hikken": {
+  "e": "😮"
+ },
+ "beroemd": {
+  "e": "🌟"
+ },
+ "casual": {
+  "e": "👕"
+ },
+ "ademen": {
+  "e": "🌬️"
+ },
+ "spugen": {
+  "e": "🤮"
+ },
+ "gaatje": {
+  "e": "🦷"
+ },
+ "engels": {
+  "q": "union jack flag",
+  "e": "🇬🇧"
+ },
+ "recht": {
+  "q": "scales of justice",
+  "e": "⚖️"
+ },
+ "IT-afdeling": {
+  "e": "💻"
+ },
+ "boekhouding": {
+  "q": "accounting calculator ledger",
+  "e": "🧮"
+ },
+ "bonus": {
+  "e": "🎁"
+ },
+ "vertrek": {
+  "q": "departure board airport",
+  "e": "🛫"
+ },
+ "aankomst": {
+  "q": "arrival hall airport",
+  "e": "🛬"
+ },
+ "wetenschap": {
+  "q": "scientist microscope laboratory",
+  "e": "🔬"
+ },
+ "recept": {
+  "e": "📋"
+ },
+ "patiënt": {
+  "e": "🛏️"
+ },
+ "afdeling": {
+  "e": "🏢"
+ },
+ "boekhouder": {
+  "q": "accountant calculator desk",
+  "e": "🧮"
+ },
+ "economy class": {
+  "q": "airplane economy seats",
+  "e": "💺"
+ },
+ "verloven": {
+  "e": "💍"
+ },
+ "keyboard": {
+  "e": "⌨️"
+ },
+ "vacancy": {
+  "q": "vacancy sign hiring",
+  "e": "📢"
+ },
+ "nietje": {
+  "q": "stapler staples",
+  "e": "📎"
+ },
+ "lobby": {
+  "q": "hotel lobby reception",
+  "e": "🏨"
+ },
+ "wekdienst": {
+  "q": "alarm clock bell",
+  "e": "⏰"
+ },
+ "suite": {
+  "q": "luxury hotel suite",
+  "e": "🛏️"
+ },
+ "geboren worden": {
+  "q": "newborn baby",
+  "e": "👶"
+ },
+ "een baan vinden": {
+  "e": "💼"
+ },
+ "sterven": {
+  "e": "🥀"
+ },
+ "New York": {
+  "q": "new york skyline statue of liberty",
+  "e": "🗽"
+ },
+ "kaartje": {
+  "q": "train ticket",
+  "e": "🎫"
+ },
+ "rondreis": {
+  "q": "round trip road map",
+  "e": "🗺️"
+ },
+ "kaartcontrole": {
+  "q": "ticket inspector on train",
+  "e": "🎫"
+ },
+ "perron": {
+  "q": "railway platform station",
+  "e": "🚉"
+ },
+ "printen": {
+  "e": "🖨️"
+ },
+ "verzenden": {
+  "q": "sending a letter mailbox",
+  "e": "📤"
+ },
+ "inleveren": {
+  "e": "📥"
+ },
+ "televisiestation": {
+  "q": "tv studio camera",
+  "e": "📺"
+ },
+ "bewerken": {
+  "e": "✏️"
+ },
+ "zender": {
+  "e": "📺"
+ },
+ "media": {
+  "q": "newspapers and television media",
+  "e": "📰"
+ },
+ "station": {
+  "q": "dutch railway station",
+  "e": "🚉"
+ },
+ "tolk": {
+  "q": "interpreter with headset",
+  "e": "🎧"
+ },
+ "impressie": {
+  "e": "💭"
+ },
+ "manier van denken": {
+  "e": "🧠"
+ },
+ "bezwaar": {
+  "e": "✋"
+ },
+ "discussie": {
+  "q": "group discussion around table",
+  "e": "🗣️"
+ },
+ "oneens zijn": {
+  "e": "👎"
+ },
+ "zich verzetten": {
+  "e": "✊"
+ },
+ "eens zijn": {
+  "e": "👍"
+ },
+ "bekendmaken": {
+  "q": "announcement megaphone",
+  "e": "📢"
+ },
+ "bijeenkomst houden": {
+  "e": "👥"
+ },
+ "goedkeuren": {
+  "q": "approved stamp",
+  "e": "✅"
+ },
+ "opperen": {
+  "e": "💡"
+ },
+ "verzoek": {
+  "e": "🙏"
+ },
+ "herzien": {
+  "e": "🔁"
+ },
+ "directeur": {
+  "e": "👔"
+ },
+ "produktie": {
+  "q": "factory production line",
+  "e": "🏭"
+ },
+ "onderdeel": {
+  "e": "⚙️"
+ },
+ "invoer": {
+  "e": "⌨️"
+ },
+ "afnemen": {
+  "e": "📉"
+ },
+ "hanger": {
+  "q": "clothes hanger",
+  "e": "🧥"
+ },
+ "tweeëntwintig": {
+  "e": "2️⃣2️⃣"
+ },
+ "drieëndertig": {
+  "e": "3️⃣3️⃣"
+ },
+ "achtentachtig": {
+  "e": "8️⃣8️⃣"
+ },
+ "honderd": {
+  "e": "💯"
+ },
+ "zevenhonderd": {
+  "e": "7️⃣0️⃣0️⃣"
+ },
+ "achthonderd": {
+  "e": "8️⃣0️⃣0️⃣"
+ },
+ "tweehonderd": {
+  "e": "2️⃣0️⃣0️⃣"
+ },
+ "driehonderd": {
+  "e": "3️⃣0️⃣0️⃣"
+ },
+ "zeshonderd": {
+  "e": "6️⃣0️⃣0️⃣"
+ },
+ "vijfhonderd": {
+  "e": "5️⃣0️⃣0️⃣"
+ },
+ "negenhonderdnegenennegentig": {
+  "e": "9️⃣9️⃣9️⃣"
+ },
+ "honderdeen": {
+  "e": "1️⃣0️⃣1️⃣"
+ },
+ "vierhonderd": {
+  "e": "4️⃣0️⃣0️⃣"
+ },
+ "negenhonderd": {
+  "e": "9️⃣0️⃣0️⃣"
+ },
+ "duizend": {
+  "e": "1️⃣0️⃣0️⃣0️⃣"
+ },
+ "tweeduizend": {
+  "e": "2️⃣0️⃣0️⃣0️⃣"
+ },
+ "achtduizend": {
+  "e": "8️⃣0️⃣0️⃣0️⃣"
+ },
+ "tienduizend": {
+  "e": "1️⃣0️⃣0️⃣0️⃣0️⃣"
+ },
+ "vierduizend": {
+  "e": "4️⃣0️⃣0️⃣0️⃣"
+ },
+ "vijfduizend": {
+  "e": "5️⃣0️⃣0️⃣0️⃣"
+ },
+ "drieduizend": {
+  "e": "3️⃣0️⃣0️⃣0️⃣"
+ },
+ "zesduizend": {
+  "e": "6️⃣0️⃣0️⃣0️⃣"
+ },
+ "zevenduizend": {
+  "e": "7️⃣0️⃣0️⃣0️⃣"
+ },
+ "negenduizend": {
+  "e": "9️⃣0️⃣0️⃣0️⃣"
  }
 }
