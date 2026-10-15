@@ -16,6 +16,10 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+// Paths below are relative to the repo root, whatever folder you run this from.
+process.chdir(path.join(path.dirname(fileURLToPath(import.meta.url)), '..'));
 
 const VOC = 'data/vocabularies';
 const OUT = 'data/images.json';

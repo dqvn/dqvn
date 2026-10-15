@@ -1676,6 +1676,37 @@ initStatTips();
     }
   }
 
+  /* Image reports (from vanstart.html): show the reported picture next to the word.
+     item.img comes from an unauthenticated POST — only same-site word images are loaded. */
+  function _imgBlock(item, _e) {
+    if (item.type !== 'image' || !item.img) return '';
+    const f = item.img.file || '';
+    const src = /^assets\/img\/words\/[\w.-]+\.jpg$/.test(f) ? f : '';
+    return `<div class="fba-imgrow">
+      ${src ? `<img src="${_e(src)}" alt="" loading="lazy">` : `<span style="font-size:2rem">${item.img.kind === 'emoji' ? '😀' : '❔'}</span>`}
+      <div class="fba-imgtxt"><b>${_e(item.img.word || '')}</b> — ${_e(item.img.english || '')}<br>
+        <small>${_e(item.img.lesson || '')} · ${item.img.kind === 'emoji' ? 'emoji' : _e(f)}</small></div>
+    </div>`;
+  }
+
+  /* Copy the image reports as JSON, one row per word+picture with a report count,
+     most-reported first — to review them and pick replacement pictures later. */
+  function _copyImageReports() {
+    const by = new Map();
+    _allItems.filter(i => i.type === 'image' && i.img?.word).forEach(i => {
+      const k = i.img.word + '|' + (i.img.file || '');
+      const r = by.get(k) || { word: i.img.word, english: i.img.english || '', lesson: i.img.lesson || '', file: i.img.file || '', kind: i.img.kind || 'photo', reports: 0, firstReported: i.date };
+      r.reports++;
+      if (i.date && i.date < r.firstReported) r.firstReported = i.date;
+      by.set(k, r);
+    });
+    const rows = [...by.values()].sort((a, b) => b.reports - a.reports);
+    const text = JSON.stringify(rows, null, 1);
+    const done = () => { const b = _$('fba-copy'); if (b) b.textContent = `✓ ${rows.length} gekopieerd`; };
+    if (navigator.clipboard?.writeText) navigator.clipboard.writeText(text).then(done, () => prompt('Kopieer / Copy:', text));
+    else prompt('Kopieer / Copy:', text);
+  }
+
   function _filtered() {
     return _filter ? _allItems.filter(i => i.type === _filter) : _allItems;
   }
@@ -1685,7 +1716,7 @@ initStatTips();
     const total    = _allItems.length;
     const todayPfx = new Date().toISOString().slice(0, 10);
     const todayN   = _allItems.filter(i => (i.date || '').startsWith(todayPfx)).length;
-    const counts   = { bug: 0, idea: 0, general: 0 };
+    const counts   = { bug: 0, idea: 0, general: 0, image: 0 };
     _allItems.forEach(i => { if (counts[i.type] !== undefined) counts[i.type]++; });
 
     _$('fba-stats').innerHTML = [
@@ -1694,7 +1725,10 @@ initStatTips();
       `<span class="fba-st fba-bug">🐛 ${counts.bug}</span>`,
       `<span class="fba-st fba-idea">💡 ${counts.idea}</span>`,
       `<span class="fba-st fba-gen">💬 ${counts.general}</span>`,
+      `<span class="fba-st fba-img">🖼️ ${counts.image}</span>`,
+      _filter === 'image' && counts.image ? `<button class="fba-st fba-copy" id="fba-copy" title="Kopieer unieke woorden als JSON / Copy unique words as JSON">📋 Kopieer JSON</button>` : '',
     ].join('');
+    _$('fba-copy')?.addEventListener('click', _copyImageReports);
 
     const start = (_page - 1) * _PER;
     const page  = items.slice(start, start + _PER);
@@ -1706,7 +1740,7 @@ initStatTips();
     }
 
     _$('fba-list').innerHTML = page.map(item => {
-      const typeIcon  = item.type === 'bug' ? '🐛' : item.type === 'idea' ? '💡' : '💬';
+      const typeIcon  = item.type === 'bug' ? '🐛' : item.type === 'idea' ? '💡' : item.type === 'image' ? '🖼️' : '💬';
       const typeClass = `fba-card fba-${item.type}`;
       /* env comes from an unauthenticated POST — escape it, and only link same-site dialogue URLs */
       const _e = v => String(v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -1727,6 +1761,7 @@ initStatTips();
               <button class="fba-del" data-id="${_e(item.id || '')}" title="Dit bericht verwijderen / Delete this message" aria-label="Verwijderen">🗑 Verwijder</button>
             </span>
           </div>
+          ${_imgBlock(item, _e)}
           <p class="fba-msg">${item.message.replace(/</g, '&lt;')}</p>
           ${chips ? `<div class="fba-chips">${chips}</div>` : ''}
         </div>`;

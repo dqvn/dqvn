@@ -897,7 +897,11 @@ th {
 /* ── Word pictures (assets/js/vanstart-img.js) ── */
 .vs-thumb {
   display: block; margin-top: 6px;
-  width: 96px; height: 72px; object-fit: cover;
+  width: 96px; height: 72px;
+  /* Source images are 1:2 to 2:1: fill the box (crop a little) and bias toward
+     the upper-middle, where the subject usually is. The enlarged viewer shows
+     the whole picture uncropped. */
+  object-fit: cover; object-position: 50% 35%;
   border-radius: 8px; border: 1px solid var(--border, #e2e8f0);
   background: var(--card, #fff); cursor: zoom-in;
 }
@@ -909,10 +913,45 @@ th {
 #vs-img-overlay.on { display: flex; }
 #vs-img-overlay figure { margin: 0; text-align: center; max-width: 100%; }
 #vs-img-overlay img {
-  max-width: min(92vw, 640px); max-height: 75vh;
+  display: block; margin: 0 auto;
+  /* every picture is 256x192 (tools/resize-word-images.py); show it a bit larger */
+  width: min(92vw, 384px); height: auto; max-height: 75vh; object-fit: contain;
   border-radius: 12px; background: #fff; cursor: pointer;
 }
 #vs-img-overlay figcaption { margin-top: 10px; color: #fff; font-size: 1.1rem; }
 @media (max-width: 768px) {
   .vs-thumb { width: 80px; height: 60px; }
 }
+
+.vs-emoji { display: block; font-size: 2.2rem; line-height: 1.1; user-select: none; }
+@media (max-width: 768px) { .vs-emoji { font-size: 1.9rem; } }
+
+/* ── Report button on each picture/emoji ("this doesn't fit the word") ── */
+.vs-pic { position: relative; display: inline-block; margin-top: 6px; line-height: 0; }
+.vs-pic .vs-thumb { margin-top: 0; }
+.vs-pic--emoji { line-height: 1.1; padding-right: 22px; }
+.vs-pic .vs-emoji { margin-top: 0; }
+.vs-report {
+  position: absolute; top: 2px; right: 2px;
+  width: 22px; height: 22px; padding: 0; border: 0; border-radius: 50%;
+  background: rgba(0,0,0,.45); color: #fff; font-size: .75rem; line-height: 22px; text-align: center;
+  cursor: pointer; opacity: .55; transition: opacity .15s, background .15s;
+}
+.vs-pic--emoji .vs-report { top: 0; right: 0; background: rgba(100,100,100,.4); }
+.vs-pic:hover .vs-report, .vs-report:focus-visible { opacity: 1; }
+.vs-report:hover { background: #dc2626; opacity: 1; }
+.vs-report.done { background: #16a34a; opacity: .9; cursor: default; }
+@media (hover: none) { .vs-report { opacity: .8; } }   /* touch screens: always visible */
+#vs-img-overlay .vs-ov-actions { margin-top: 10px; }
+.vs-report--wide {
+  position: static; width: auto; height: auto; padding: 6px 14px; border-radius: 999px;
+  font-size: .9rem; line-height: 1.3; opacity: 1; background: rgba(255,255,255,.18);
+}
+.vs-report--wide.done { background: #16a34a; }
+#vs-img-toast {
+  position: fixed; left: 50%; bottom: max(24px, env(safe-area-inset-bottom, 0px));
+  transform: translate(-50%, 20px); opacity: 0; pointer-events: none; z-index: 10000;
+  background: #1e293b; color: #fff; padding: 10px 16px; border-radius: 10px; font-size: .9rem;
+  transition: opacity .2s, transform .2s; max-width: 90vw; text-align: center;
+}
+#vs-img-toast.on { opacity: 1; transform: translate(-50%, 0); }
