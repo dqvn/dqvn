@@ -926,6 +926,16 @@ th {
 .vs-emoji { display: block; font-size: 2.2rem; line-height: 1.1; user-select: none; }
 @media (max-width: 768px) { .vs-emoji { font-size: 1.9rem; } }
 
+/* Mobile: the picture sits in the English (meaning) cell, stacked under the English text.
+   style.css styles every span in that cell (.88rem, centred flex row), so restate the picture's
+   own sizes here with a selector that is at least as specific. */
+@media (max-width: 768px) {
+  #word-list td:nth-child(3) { flex-direction: column; gap: 6px; }
+  #word-list td:nth-child(3) .vs-pic { margin-top: 0; font-size: 1rem; line-height: 0; }
+  #word-list td:nth-child(3) .vs-pic--emoji { line-height: 1.1; }
+  #word-list td:nth-child(3) .vs-pic .vs-emoji { font-size: 1.9rem; line-height: 1.1; }
+}
+
 /* ── Report button on each picture/emoji ("this doesn't fit the word") ── */
 .vs-pic { position: relative; display: inline-block; margin-top: 6px; line-height: 0; }
 .vs-pic .vs-thumb { margin-top: 0; }

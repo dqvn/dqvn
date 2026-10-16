@@ -134,7 +134,8 @@
 
   /* Desktop (wider than the mobile-card breakpoint in style.css): pictures get their
    * own "Image" column right after "Dutch". On phones the card layout is written
-   * against fixed column positions, so there the picture stays inside the Dutch cell. */
+   * against fixed column positions, so there the picture goes inside the English (meaning)
+ * cell, under the English text. */
   const wide = window.matchMedia('(min-width: 769px)');
 
   /** Add/remove the header cell and give every body row (spacers too) its image cell. */
@@ -164,8 +165,8 @@
     data.forEach((entry, i) => {
       const urls = images[entry?.dutch];
       const row = tableBody?.rows[i];
-      // wide: the dedicated image cell; narrow: inside the Dutch cell
-      const host = wide.matches ? row?.querySelector('td.vs-imgcell') : row?.cells[1];
+      // wide: the dedicated image cell; narrow: inside the English (meaning) cell
+      const host = wide.matches ? row?.querySelector('td.vs-imgcell') : row?.cells[2];
       if (!host || host.querySelector('.vs-pic')) return;
 
       // one wrapper per word: the picture (or emoji) plus its ⚑ report button
