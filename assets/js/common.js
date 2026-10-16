@@ -666,16 +666,40 @@ function reloadTable(data) {
 
 function startSpelling() {
     isPlaying = true;
+    _pausedByEsc = false;
     _userScrolledAt = 0; // reset so first word always auto-scrolls into view
     if (playStopButton) playStopButton.innerHTML = '<div class="icon"></div><span>Stop</span>';
     spellNextWord();
 }
 
+let _sampleTimer = 0;   // pending "read the example sentence" timeout of the current word
+
 function stopSpelling() {
     isPlaying = false;
     if (playStopButton) playStopButton.innerHTML = '<div class="icon"></div><span>Play</span>';
     clearTimeout(currentInterval);   // was clearInterval in original — fixed
+    clearTimeout(_sampleTimer);      // don't read the queued sentence after Stop
+    window.speechSynthesis.cancel();
 }
+
+/* Esc = pause / resume reading. Esc while playing stops it (like the Stop button);
+   Esc again resumes — but only after an Esc pause, so Esc never starts playback
+   that was stopped with the button. Ignored while a popup that uses Esc itself is
+   open (app launcher, flashcards, word game, picture viewer) or while typing. */
+let _pausedByEsc = false;
+
+document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape' || e.repeat || (!isPlaying && !_pausedByEsc)) return;
+    const t = e.target;
+    if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return;
+    const open = (id, test) => { const el = document.getElementById(id); return !!el && test(el); };
+    if (open('app-launcher',    el => !el.classList.contains('al-hidden'))) return;
+    if (open('flashcard-popup', el => el.style.display !== 'none')) return;
+    if (open('popup',           el => el.style.display === 'flex')) return;
+    if (open('vs-img-overlay',  el => el.classList.contains('on'))) return;
+    if (isPlaying) { stopSpelling(); _pausedByEsc = true; }
+    else           { startSpelling(); }   // clears _pausedByEsc
+});
 
 function spellNextWord() {
     const idx     = getNewRandomNumberCSPRNG(0, wordList.length - 1, recentNumbers);
@@ -708,7 +732,8 @@ function spellNextWord() {
     rowMain.classList.add('highlighted-row');
 
     speakText(wordNL);
-    setTimeout(() => speakText(sample), 3500);
+    clearTimeout(_sampleTimer);
+    _sampleTimer = setTimeout(() => speakText(sample), 3500);
 
     if (isPlaying) currentInterval = setTimeout(spellNextWord, _intervalTime);
 }
