@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /* Try the Worker's POST /story with random vocabulary, the way game.js does.
  *
- *   node tools/story-test.mjs                  # 15 random words from a random lesson
+ *   node tools/story-test.mjs                  # 35 random words from a random lesson
  *   node tools/story-test.mjs thema03          # …from data/vocabularies/thema03.json
  *   node tools/story-test.mjs core01 10        # 10 words
  *   WORKER_URL=http://localhost:8787 node tools/story-test.mjs     # e.g. wrangler dev
@@ -20,7 +20,7 @@ const dir    = join(dirname(fileURLToPath(import.meta.url)), '..', 'data', 'voca
 
 const lessons = readdirSync(dir).filter(f => f.endsWith('.json')).map(f => f.slice(0, -5));
 const lesson  = process.argv[2] || lessons[Math.floor(Math.random() * lessons.length)];
-const count   = Number(process.argv[3]) || 15;
+const count   = Number(process.argv[3]) || 35;
 
 const list = JSON.parse(readFileSync(join(dir, lesson + '.json'), 'utf8')).filter(w => w?.dutch);
 const pick = [...list].sort(() => Math.random() - 0.5).slice(0, Math.min(count, list.length));

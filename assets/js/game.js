@@ -69,10 +69,25 @@ function _updateProgressHeader() {
 /* ═══════════════════════════════════════════════════════════
    AI STORY GENERATOR (Cloudflare Workers AI via the nl-sync Worker)
    ═══════════════════════════════════════════════════════════ */
+/* The story uses STORY_WORDS words: the words just played (they come first) topped up with
+   random other words from the same lesson. The game itself stays at 15 questions. */
+const STORY_WORDS = 35;
+
+function pickStoryWords(played) {
+    const head   = word => word.dutch.split(',')[0].trim();
+    const playedSet = new Set(played.map(w => w.dutch));
+    const extra  = (typeof wordList !== 'undefined' ? wordList : []).filter(
+        w => w && typeof w.dutch === 'string' && w.dutch.trim() && typeof w.english === 'string' &&
+             w.english.trim() && !playedSet.has(w.dutch)
+    );
+    shuffle(extra);
+    return played.map(head).concat(extra.slice(0, Math.max(0, STORY_WORDS - played.length)).map(head));
+}
+
 async function generateStory(dataObjects, questionDiv) {
     // Asks the nl-sync Worker (POST /story → Cloudflare Workers AI, free tier).
     // On any failure (limit reached, offline, …) the question area just stays empty.
-    const words   = dataObjects.map(item => item.dutch.split(',')[0].trim());
+    const words   = pickStoryWords(dataObjects);
     const workerUrl = (typeof SYNC_WORKER_URL !== 'undefined') ? SYNC_WORKER_URL : 'https://nl-sync.itho.workers.dev';
     try {
         const res = await fetch(workerUrl + '/story', {
