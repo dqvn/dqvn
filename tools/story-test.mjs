@@ -18,9 +18,12 @@ import { fileURLToPath } from 'node:url';
 const WORKER = process.env.WORKER_URL || 'https://nl-sync.itho.workers.dev';
 const dir    = join(dirname(fileURLToPath(import.meta.url)), '..', 'data', 'vocabularies');
 
-const lessons = readdirSync(dir).filter(f => f.endsWith('.json')).map(f => f.slice(0, -5));
-const lesson  = process.argv[2] || lessons[Math.floor(Math.random() * lessons.length)];
 const count   = Number(process.argv[3]) || 35;
+const size    = name => { try { return JSON.parse(readFileSync(join(dir, name + '.json'), 'utf8')).length; } catch { return 0; } };
+const lessons = readdirSync(dir).filter(f => f.endsWith('.json')).map(f => f.slice(0, -5));
+// a random lesson must have at least `count` words (the game's story set is 35 words)
+const big     = lessons.filter(l => size(l) >= count);
+const lesson  = process.argv[2] || (big.length ? big : lessons)[Math.floor(Math.random() * (big.length ? big : lessons).length)];
 
 const list = JSON.parse(readFileSync(join(dir, lesson + '.json'), 'utf8')).filter(w => w?.dutch);
 const pick = [...list].sort(() => Math.random() - 0.5).slice(0, Math.min(count, list.length));
@@ -49,4 +52,4 @@ for (const w of words) {
   (forms.some(f => story.includes(f)) ? used : missing).push(w);
 }
 console.log(`Words used: ${used.length}/${words.length}` + (missing.length ? `   missing: ${missing.join(' | ')}` : ''));
-console.log(`Story length: ${body.story.length} chars (cap 1600)`);
+console.log(`Story length: ${body.story.length} chars (cap 3600)`);
