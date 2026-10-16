@@ -19,6 +19,7 @@
   const WORD_SIZE_MAX        = 5.6;
   const WORD_SIZE_STEP       = 0.3;
   const WORD_SIZE_DEF        = 3.2;
+  const ENGLISH_SIZE_RATIO   = 0.6;  // English meaning is shown smaller than the Dutch word (3.2rem → ~1.9rem)
 
   /* ── State ────────────────────────────────────────────────────────────────-- */
   const fc = {
@@ -29,6 +30,7 @@
     ttsSeq: 0,
     touchStartX: 0, touchStartY: 0, isDragging: false,
     progressLoaded: false,   // true only after startGame() loads real data
+    busy: false,             // true while a rated card animates out (blocks double ratings / flips)
   };
 
   /* ── Word size ──────────────────────────────────────────────────────────── */
@@ -40,7 +42,7 @@
   function applyWordSize(size) {
     $id('fc-word').style.fontSize = size + 'rem';
     const engEl = $id('fc-english');
-    if (engEl) engEl.style.fontSize = size + 'rem';
+    if (engEl) engEl.style.fontSize = (Math.round(size * ENGLISH_SIZE_RATIO * 100) / 100) + 'rem';
     $id('fc-word-size-dec').disabled = size <= WORD_SIZE_MIN;
     $id('fc-word-size-inc').disabled = size >= WORD_SIZE_MAX;
   }
@@ -64,8 +66,13 @@
     return a;
   }
 
+  // Local calendar date (YYYY-MM-DD) — not UTC, so the daily limit and streak roll over at local midnight
+  function dateKey(d) {
+    return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+  }
+
   function getTodayDate() {
-    return new Date().toISOString().slice(0, 10);
+    return dateKey(new Date());
   }
 
   function blankState() {
@@ -154,7 +161,7 @@
         is_mastered: isMastered,
         total:       stats.total,
         seen:        seenCount,
-        date:        new Date().toISOString().slice(0, 10),
+        date:        getTodayDate(),
       };
       localStorage.setItem(PLAN_PROGRESS_KEY, JSON.stringify(prog));
     } catch { /* never interrupt the study session */ }
@@ -210,7 +217,8 @@
   function updateStreak() {
     const today     = getTodayDate();
     if (fc.meta.lastStudyDate === today) return; // already logged today
-    const yesterday = new Date(Date.now() - DAY).toISOString().slice(0, 10);
+    const yd = new Date(); yd.setDate(yd.getDate() - 1);
+    const yesterday = dateKey(yd);
     fc.meta.streak  = fc.meta.lastStudyDate === yesterday ? (fc.meta.streak || 0) + 1 : 1;
     fc.meta.lastStudyDate = today;
     if (fc.meta.todayDate !== today) { fc.meta.todayDate = today; fc.meta.newToday = 0; }
@@ -350,6 +358,7 @@
     fc.sessionRequeues = {};
     fc.index           = 0;
     fc.flipped         = false;
+    fc.busy            = false;
     fc.cards           = buildSession();
     updateStreak();
     applyWordSize(getWordSize());
@@ -382,6 +391,51 @@
     $id('fc-overall-pct').textContent = pct + '%';
   }
 
+  /* ── Word pictures ──────────────────────────────────────────────────────────
+     Same data as vanstart-img.js: data/images.json { "<dutch>": ["url", …] } and
+     data/image-hints.json { "<dutch>": { e: "emoji" } }. Shown on the back of
+     the card, above the English meaning; emoji when there is no photo (or the
+     file is missing); nothing when neither exists.                              */
+  const _jsonCache = {};
+  function loadJson(url) {
+    if (!_jsonCache[url]) {
+      _jsonCache[url] = fetch(url).then(r => r.ok ? r.json() : {}).catch(() => ({}));
+    }
+    return _jsonCache[url];
+  }
+
+  async function setCardPicture(card) {
+    const host = $id('fc-pic');
+    host.innerHTML = '';
+    host.style.display = 'none';
+    const [images, hints] = await Promise.all([loadJson('data/images.json'), loadJson('data/image-hints.json')]);
+    if (fc.cards[fc.index] !== card) return;   // user already moved on
+
+    const showEmoji = () => {
+      const emoji = hints[card.dutch]?.e;
+      host.innerHTML = '';
+      if (!emoji) { host.style.display = 'none'; return; }
+      const span = document.createElement('span');
+      span.className = 'fc-pic-emoji';
+      span.setAttribute('aria-hidden', 'true');
+      span.textContent = emoji;
+      host.appendChild(span);
+      host.style.display = '';
+    };
+
+    const url = images[card.dutch]?.[0];
+    if (!url) { showEmoji(); return; }
+    const img = document.createElement('img');
+    img.className = 'fc-pic-img';
+    img.alt = card.dutch;
+    img.referrerPolicy = 'no-referrer';
+    img.draggable = false;
+    img.addEventListener('error', showEmoji);   // dead link → emoji instead
+    img.src = url;
+    host.appendChild(img);
+    host.style.display = '';
+  }
+
   /* ── Card rendering ─────────────────────────────────────────────────────── */
   function renderCard() {
     const card = fc.cards[fc.index];
@@ -401,6 +455,7 @@
     $id('fc-ipa').textContent = card.pronunciation?.ipa ? `/${card.pronunciation.ipa}/` : '';
     $id('fc-phonetic').textContent = card.pronunciation?.phonetic || '';
     $id('fc-english').textContent = card.english || '';
+    setCardPicture(card);
     $id('fc-vietnamese').textContent = card.vietnamese || '';
     $id('fc-sentence-nl').textContent = card.dutchsentence || '';
     $id('fc-sentence-en').textContent = card.englishtranslate || '';
@@ -408,6 +463,7 @@
     $id('fc-front').style.display = '';
     $id('fc-back').classList.remove('fc-visible');
     fc.flipped = false;
+    fc.busy    = false;
     $id('fc-speak-btn').classList.remove('fc-speaking');
 
     const el = $id('fc-card');
@@ -430,7 +486,7 @@
 
   /* ── Flip ───────────────────────────────────────────────────────────────── */
   function flipCard() {
-    if (fc.flipped) return;
+    if (fc.flipped || fc.busy) return;
     const el = $id('fc-card');
     el.classList.add('fc-flip-out');
     setTimeout(() => {
@@ -470,7 +526,7 @@
   }
 
   function unflipCard() {
-    if (!fc.flipped) return;
+    if (!fc.flipped || fc.busy) return;
     fc.flipped = false;
     fc.ttsSeq++;
     const seq = fc.ttsSeq;
@@ -509,7 +565,8 @@
 
   /* ── Rating (SM-2) ──────────────────────────────────────────────────────── */
   function rateCard(rating) {
-    if (!fc.flipped) return;
+    if (!fc.flipped || fc.busy) return;
+    fc.busy = true;
     const card = fc.cards[fc.index];
     const key  = card.dutch;
 
@@ -930,6 +987,7 @@
               </button>
             </div>
             <div id="fc-back">
+              <div id="fc-pic" style="display:none"></div>
               <div id="fc-english"></div>
               <div id="fc-vietnamese"></div>
               <div class="fc-back-divider"></div>
