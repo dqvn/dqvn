@@ -1457,12 +1457,16 @@ button:hover {
     100% { transform: rotate(var(--a)) translateY(var(--dist))   scale(0.3); opacity: 0; }
 }
 
-/* The popup is a fixed full-screen layer, so content below the window edge was simply cut off.
-   10 answer options + the Continue button can be taller than a short window: let the game scroll. */
-#popup #game-container {
-    max-height: calc(100dvh - 40px);
-    overflow-y: auto;
-    overscroll-behavior: contain;
+/* Desktop: the popup is a fixed full-screen layer, so content below the window edge was simply cut
+   off. 10 answer options + the Continue button can be taller than a short window: let the game
+   scroll. Desktop only — on phones the popup itself scrolls, and a max-height on the (column,
+   wrapping) container would push the AI story into a second column off to the right. */
+@media (min-width: 769px) {
+    #popup #game-container {
+        max-height: calc(100dvh - 40px);
+        overflow-y: auto;
+        overscroll-behavior: contain;
+    }
 }
 
 /* ── Result text animations ── */
