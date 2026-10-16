@@ -67,17 +67,22 @@ function _updateProgressHeader() {
 }
 
 /* ═══════════════════════════════════════════════════════════
-   AI STORY GENERATOR
+   AI STORY GENERATOR (Cloudflare Workers AI via the nl-sync Worker)
    ═══════════════════════════════════════════════════════════ */
-async function generateStoryFromPuter(dataObjects, questionDiv) {
-    const words = dataObjects.map(item => item.dutch.split(',')[0].trim());
+async function generateStory(dataObjects, questionDiv) {
+    // Asks the nl-sync Worker (POST /story → Cloudflare Workers AI, free tier).
+    // On any failure (limit reached, offline, …) the question area just stays empty.
+    const words   = dataObjects.map(item => item.dutch.split(',')[0].trim());
+    const workerUrl = (typeof SYNC_WORKER_URL !== 'undefined') ? SYNC_WORKER_URL : 'https://nl-sync.itho.workers.dev';
     try {
-        const response = await puter.ai.chat(
-            `Schrijf een kort Nederlands verhaal van 5 zinnen met deze woorden: ${words.join(', ')}.
-                GEEF ALLEEN DE TEKST TERUG. GEEN MARKDOWN, GEEN TITEL, GEEN UITLEG EN GEEN QUOTES. Then end with translate the story to English and put in [ .. ].`,
-            { model: 'gpt-5.2' }
-        );
-        const raw = response.message.content;
+        const res = await fetch(workerUrl + '/story', {
+            method:  'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body:    JSON.stringify({ words }),
+        });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const raw = String((await res.json()).story || '');
+        if (!raw || data !== dataObjects) return;   // empty, or the game moved on to another word set
         const sep = raw.indexOf('[');
         if (sep > -1) {
             questionDiv.innerHTML = '';
@@ -89,7 +94,7 @@ async function generateStoryFromPuter(dataObjects, questionDiv) {
             questionDiv.textContent = raw;
         }
     } catch (error) {
-        console.error('[Game] AI story error:', error);
+        console.warn('[Game] AI story unavailable:', error.message);
     }
 }
 
@@ -125,7 +130,7 @@ async function showQuestion() {
         }
 
         _updateProgressHeader();
-        if (window.puter) generateStoryFromPuter(data, document.getElementById('question'));
+        generateStory(data, document.getElementById('question'));
     }
 
     if (currentWordIndex < maxNumber && currentWordIndex < data.length) {

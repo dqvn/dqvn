@@ -2,11 +2,12 @@
  * nl-sync — Cloudflare Worker
  * Deployed: https://nl-sync.itho.workers.dev
  *
- * Routes: GET /rss · GET /podcast · POST /sync
+ * Routes: GET /rss · GET /podcast · POST /sync · POST /story
  * Shared utilities and constants live in common.js.
  *
  * Secrets  : UPSTASH_URL, UPSTASH_TOKEN, OWNER_EMAIL  (wrangler secret put <NAME>)
- * Variables: GOOGLE_CLIENT_ID                         (wrangler.toml [vars])
+ * Variables: GOOGLE_CLIENT_ID, STORY_MODEL              (wrangler.toml [vars])
+ * Binding  : AI  (Workers AI, wrangler.toml [ai]) — used by POST /story
  */
 
 import {
@@ -486,6 +487,90 @@ async function handleAdminUsers(request, env) {
 
 // ── Main router ───────────────────────────────────────────────────────────────
 
+// ── AI story (Workers AI) ─────────────────────────────────────────────────────
+
+/**
+ * POST /story   body: { words: ["huis", "fiets", ...] }
+ * Writes a short Dutch story that uses the words, followed by an English
+ * translation in [ ... ] — the format game.js already renders.
+ * Returns: { story: "<dutch>\n\n[<english>]" }
+ *
+ * No login (the word game is open to everyone), so it is protected instead:
+ *   - input is sanitised and capped (STORY_WORDS_MAX words, STORY_WORD_LEN chars each)
+ *   - per-IP: one request per STORY_IP_RL_TTL s and STORY_IP_DAY_MAX per day
+ *   - global: STORY_GLOBAL_DAY_MAX per day, so strangers cannot burn the free
+ *     Workers AI allowance (10,000 Neurons/day) — on 429/503 the game simply
+ *     shows no story. Tune the caps to the model you choose.
+ * Cost (llama-3.1-8b-instruct: 25,608 Neurons/M input, 75,147 Neurons/M output):
+ *   input ~200 tok ≈ 5 Neurons + output <= STORY_MAX_TOKENS (400) ≈ 30 Neurons
+ *   → <= ~35 Neurons per story, so 150 stories/day <= ~5,300 of the 10,000 free.
+ * Counters are read-then-write on Upstash (not atomic) — fine for soft limits.
+ */
+const STORY_WORDS_MAX      = 20;
+const STORY_WORD_LEN       = 40;
+const STORY_IP_RL_TTL      = 10;     // seconds between requests per IP
+const STORY_IP_DAY_MAX     = 40;
+const STORY_GLOBAL_DAY_MAX = 150;
+const STORY_DAY_TTL        = 86400;
+const STORY_MAX_TOKENS     = 400;    // output ceiling; a normal story (NL + EN) is ~200-250 tokens
+const STORY_MAX_CHARS      = 1600;   // ~4 chars/token — trims anything the model still overshoots
+const STORY_DEFAULT_MODEL  = '@cf/meta/llama-3.1-8b-instruct';
+
+async function handleStory(request, env) {
+  const origin = request.headers.get('Origin') || '';
+  if (!env.AI) return reply({ error: 'AI not configured' }, 503, origin);
+
+  let body;
+  try { body = await request.json(); } catch { return reply({ error: 'Invalid JSON' }, 400, origin); }
+
+  const words = (Array.isArray(body.words) ? body.words : [])
+    .map(w => String(w ?? '').replace(/[^\p{L}\p{N} '\-]/gu, '').trim().slice(0, STORY_WORD_LEN))
+    .filter(Boolean)
+    .slice(0, STORY_WORDS_MAX);
+  if (!words.length) return reply({ error: 'words is required' }, 400, origin);
+
+  const redis = [env.UPSTASH_URL, env.UPSTASH_TOKEN];
+  const ip    = (request.headers.get('CF-Connecting-IP') || 'anon').replace(/[^a-zA-Z0-9]/g, '_');
+  const today = new Date().toISOString().slice(0, 10);
+  const rlKey = `story:rl:${ip}`, ipDayKey = `story:ipday:${ip}:${today}`, globalKey = `story:day:${today}`;
+
+  if (await redisGet(...redis, rlKey)) return reply({ error: 'Even wachten.' }, 429, origin);
+  const [ipDayN, globalN] = await Promise.all([
+    redisGet(...redis, ipDayKey), redisGet(...redis, globalKey),
+  ]).then(r => r.map(v => Number(v) || 0));
+  if (ipDayN >= STORY_IP_DAY_MAX)         return reply({ error: 'Te veel verhalen vandaag.' }, 429, origin);
+  if (globalN >= STORY_GLOBAL_DAY_MAX)    return reply({ error: 'Daily AI limit reached' }, 503, origin);
+
+  let raw;
+  try {
+    const out = await env.AI.run(env.STORY_MODEL || STORY_DEFAULT_MODEL, {
+      messages: [
+        { role: 'system', content:
+            'Je bent een Nederlandse taaldocent. Schrijf eenvoudig Nederlands (niveau A1-A2). ' +
+            'Geef ALLEEN de tekst terug: geen markdown, geen titel, geen uitleg en geen quotes.' },
+        { role: 'user', content:
+            `Schrijf een kort Nederlands verhaal van 5 korte zinnen (maximaal 12 woorden per zin) met deze woorden: ${words.join(', ')}.\n` +
+            'Zet daarna op een nieuwe regel de Engelse vertaling van het verhaal tussen [ ].' },
+      ],
+      max_tokens:  STORY_MAX_TOKENS,
+      temperature: 0.7,
+    });
+    raw = String(out?.response ?? '').trim().slice(0, STORY_MAX_CHARS);
+  } catch (e) {
+    return reply({ error: 'AI unavailable' }, 503, origin);   // e.g. free allowance used up
+  }
+  if (!raw) return reply({ error: 'Empty story' }, 502, origin);
+
+  // Count only successful generations
+  await Promise.all([
+    redisSet(...redis, rlKey,    1,           STORY_IP_RL_TTL),
+    redisSet(...redis, ipDayKey, ipDayN + 1,  STORY_DAY_TTL),
+    redisSet(...redis, globalKey, globalN + 1, STORY_DAY_TTL),
+  ]).catch(() => {});
+
+  return reply({ story: raw }, 200, origin);
+}
+
 /**
  * Entry point. Extracts the request origin once, handles CORS preflight,
  * then dispatches to the matching endpoint handler.
@@ -514,6 +599,11 @@ export default {
     if (url.pathname === '/sync') {
       if (request.method !== 'POST') return reply({ error: 'Method not allowed' }, 405, origin);
       return handleSync(request, env);
+    }
+
+    if (url.pathname === '/story') {
+      if (request.method !== 'POST') return reply({ error: 'Method not allowed' }, 405, origin);
+      return handleStory(request, env);
     }
 
     if (url.pathname === '/feedback') {

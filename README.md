@@ -139,7 +139,7 @@ All HTML files reference these subdirectory paths (e.g. `assets/css/style.css`, 
 
 | File | Role |
 |---|---|
-| `assets/js/common.js` | Shared: voice selector, table render, menu toggle, hamburger, word badges, font-size control, active-lesson highlight, lazy `puter.js` loader, `_getTTSRate()` helper. `initPage()` reads `?lesson=` (override last-saved position) and `?mode=review` (auto-triggers flashcard after XHR loads) |
+| `assets/js/common.js` | Shared: voice selector, table render, menu toggle, hamburger, word badges, font-size control, active-lesson highlight, `_getTTSRate()` helper. `initPage()` reads `?lesson=` (override last-saved position) and `?mode=review` (auto-triggers flashcard after XHR loads) |
 | `assets/js/sync.js` | Cloud sync — Google Sign-In (GIS), Upstash Redis via Cloudflare Worker, smart auto-sync; syncs 9 keys including `nl_sentence_v1` |
 | `assets/js/podcast.js` | Podcast page logic — loads episodes from Worker `/podcast`, localStorage cache (`nl_podcast_cache_v1`), audio player, listened tracking, word-tap translation popup |
 | `assets/js/sentence.js` | Sentence-building game — file selector, queue with session persistence (`nl_sentence_session_v1`), fuzzy 5-layer scorer (Levenshtein), pointer-event drag-and-drop with FLIP animation, daily streak + XP |
@@ -148,7 +148,7 @@ All HTML files reference these subdirectory paths (e.g. `assets/css/style.css`, 
 | `assets/js/ttsscript.js` | `initPage()` config for `startnl.html` (main courses) |
 | `assets/js/ttsvanstartscript.js` | `initPage()` config for `vanstart.html` |
 | `assets/js/tts4kscript.js` | `initPage()` config for `4000.html` |
-| `assets/js/game.js` | Multiple-choice vocabulary game (`#popup`) + Puter/GPT AI story generator |
+| `assets/js/game.js` | Multiple-choice vocabulary game (`#popup`) + AI story generator (Cloudflare Workers AI via the `nl-sync` Worker) |
 | `assets/js/flashcard.js` | SM-2 spaced repetition flashcard engine. Writes per-chapter mastery score to `nl_learning_progress_v1` via `_writePlanMastery()` after each card rating and on close |
 | `assets/js/dlgscript.js` | Dialogue app logic — discovery, render, TTS flow, AES-GCM cache |
 | `assets/js/kidsscript.js` | Kids lesson app — auto-discovers `lxx.json`, emoji tap-to-hear cards |
@@ -425,22 +425,15 @@ CSS: blue left accent bar (desktop) + light blue background tint (mobile).
 
 ---
 
-## Lazy Puter Loader — `assets/common.js`
+## AI Story Generator — `assets/js/game.js` + `worker/index.js`
 
-`loadPuter()` lazy-loads `puter.js` (AI SDK) only when the user first clicks **Start Game** or **Flashcards Game**. Keeps the page fast — the heavy CDN script is never fetched unless needed.
+When a word-game session starts, `generateStory()` POSTs the session's words to the `nl-sync` Worker (`POST /story`). The Worker asks **Cloudflare Workers AI** (model from `STORY_MODEL` in `worker/wrangler.toml`, default `@cf/meta/llama-3.1-8b-instruct`) for a 5-sentence Dutch story plus an English translation in `[ … ]`. Free plan: 10,000 Neurons/day, no API key (the `[ai]` binding). Replaces the old Puter integration.
 
-- Intercepts button clicks in capture phase, loads puter, then re-dispatches the click so `game.js` fires normally with `window.puter` available.
-- `_puterAvailable` flag (`null` / `true` / `false`) prevents an infinite loop when the corporate firewall blocks `js.puter.com` with `ERR_CERT_AUTHORITY_INVALID` — on failure the flag is set to `false` and subsequent clicks pass straight through to `game.js`.
-
----
-
-## AI Story Generator — `assets/game.js`
-
-After the multiple-choice game session, `generateStoryFromPuter()` calls `puter.ai.chat` (model `gpt-5.2`) to produce a 5-sentence Dutch story using the session's words, followed by an English translation in `[ … ]`.
-
-- Dutch and English blocks are split at the `[` bracket and rendered with two `<br>` elements between them (safe DOM text nodes, no `innerHTML` with AI content).
-- Falls back to plain `textContent` if the model omits the bracket.
-- Skipped entirely (`if (window.puter)` guard) when puter failed to load.
+- Dutch and English blocks are split at the `[` bracket and rendered with two `<br>` elements between them (safe DOM text nodes, no `innerHTML` with AI content). Falls back to plain `textContent` if the model omits the bracket.
+- On any failure (offline, 429/503 limits) the story area stays empty and the game works as normal. A story that arrives after the game moved on to a new word set is discarded.
+- Worker protection (no login needed): words sanitised and capped (20 × 40 chars); per-IP 1 request / 10 s and 40 / day; global 150 / day (`STORY_*` constants in `worker/index.js`) so the free allowance can't be burned by strangers. Only successful generations count.
+- Token budget: output capped at `STORY_MAX_TOKENS = 400` (reply trimmed to 1,600 chars) and the prompt asks for short sentences (≤ 12 words). For the default Llama 3.1 8B that is ≤ ~35 Neurons per story (25,608/M input, 75,147/M output), so the 150/day global cap uses ≤ ~5,300 of the 10,000 free Neurons.
+- **Deploy:** `cd worker && wrangler deploy` (the `[ai]` binding is picked up from `wrangler.toml`; no new secret). Tune the caps to the model you choose.
 
 ---
 
