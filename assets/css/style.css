@@ -1457,6 +1457,14 @@ button:hover {
     100% { transform: rotate(var(--a)) translateY(var(--dist))   scale(0.3); opacity: 0; }
 }
 
+/* The popup is a fixed full-screen layer, so content below the window edge was simply cut off.
+   10 answer options + the Continue button can be taller than a short window: let the game scroll. */
+#popup #game-container {
+    max-height: calc(100dvh - 40px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
 /* ── Result text animations ── */
 #result {
     text-align: center;
@@ -1475,6 +1483,26 @@ button:hover {
     font-weight: 600;
     animation: result-shake 0.45s ease both;
 }
+
+/* "Continue" shown after a wrong answer (see _waitForContinue in game.js) */
+#continue-btn {
+    display: block;
+    width: 100%;
+    margin: 0.6rem 0 0;
+    padding: 0.6rem 1rem;
+    min-height: 44px;
+    border: 0;
+    border-radius: 10px;
+    background: #667eea;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+#continue-btn:hover  { background: #5a6fd6; }
+#continue-btn:active { transform: scale(0.98); }
+#continue-btn:focus-visible { outline: 3px solid #c3cbff; outline-offset: 2px; }
 
 @keyframes result-pop {
     from { transform: scale(0.4); opacity: 0; }

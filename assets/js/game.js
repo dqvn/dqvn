@@ -168,6 +168,7 @@ async function showQuestion() {
         }
 
         document.getElementById('options').innerHTML  = '';
+        document.getElementById('continue-btn')?.remove();
         const resultEl = document.getElementById('result');
         resultEl.textContent = '';
         resultEl.className   = '';
@@ -199,6 +200,7 @@ async function showQuestion() {
 }
 
 async function checkAnswer(selectedOption, correctAnswer) {
+    const dataRef = data, indexRef = currentWordIndex;   // to detect a close/restart while waiting
     _ttsSeq++;
     window.speechSynthesis.cancel();
     await new Promise(r => setTimeout(r, 50));
@@ -222,10 +224,30 @@ async function checkAnswer(selectedOption, correctAnswer) {
     } else {
         resultEl.textContent = `❌ Incorrect — answer: ${correctAnswer}`;
         resultEl.className   = 'result-incorrect';
-        await speakEngTextAsync('Incorrect. The correct answer is ' + correctAnswer);
+        // The learner decides when to move on. Speech is not awaited, so the button works at once.
+        const proceed = _waitForContinue();
+        speakEngTextAsync('Incorrect. The correct answer is ' + correctAnswer);
+        await proceed;
+        window.speechSynthesis.cancel();
+        if (data !== dataRef || currentWordIndex !== indexRef) return;   // game was closed/restarted while waiting
     }
     currentWordIndex++;
     showQuestion();
+}
+
+/* After a wrong answer: show a "Continue" button; resolves when it is pressed. */
+function _waitForContinue() {
+    return new Promise(resolve => {
+        document.getElementById('continue-btn')?.remove();
+        const btn = document.createElement('button');
+        btn.id          = 'continue-btn';
+        btn.type        = 'button';
+        btn.textContent = 'Continue ▶';
+        btn.onclick     = () => { btn.remove(); resolve(); };
+        (document.getElementById('game-logic-wrapper') || document.getElementById('game-container')).appendChild(btn);
+        btn.focus({ preventScroll: true });   // Enter / Space also continue
+        btn.scrollIntoView({ block: 'nearest', behavior: 'smooth' });   // 10 options can push it below the fold
+    });
 }
 
 function showResult() {
@@ -467,6 +489,7 @@ _toast.addEventListener('click', _hideTranslationToast);
         if (recentGames.length > 0) _saveSeenWords(recentGames);
         document.body.classList.remove('game-active');
         document.getElementById('popup').style.display = 'none';
+        document.getElementById('continue-btn')?.remove();
         data             = [];
         correctAnswers   = 0;
         currentWordIndex = 0;
