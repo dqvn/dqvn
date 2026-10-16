@@ -69,19 +69,14 @@ function _updateProgressHeader() {
 /* ═══════════════════════════════════════════════════════════
    AI STORY GENERATOR (Cloudflare Workers AI via the nl-sync Worker)
    ═══════════════════════════════════════════════════════════ */
-/* The story uses STORY_WORDS words: the words just played (they come first) topped up with
-   random other words from the same lesson. The game itself stays at 15 questions. */
-const STORY_WORDS = 35;
+/* The story is written from STORY_WORDS of the words just played (a random pick, so each story
+   differs). The game itself stays at 15 questions. */
+const STORY_WORDS = 10;
 
 function pickStoryWords(played) {
-    const head   = word => word.dutch.split(',')[0].trim();
-    const playedSet = new Set(played.map(w => w.dutch));
-    const extra  = (typeof wordList !== 'undefined' ? wordList : []).filter(
-        w => w && typeof w.dutch === 'string' && w.dutch.trim() && typeof w.english === 'string' &&
-             w.english.trim() && !playedSet.has(w.dutch)
-    );
-    shuffle(extra);
-    return played.map(head).concat(extra.slice(0, Math.max(0, STORY_WORDS - played.length)).map(head));
+    const picks = played.slice();
+    shuffle(picks);
+    return picks.slice(0, STORY_WORDS).map(w => w.dutch.split(',')[0].trim());
 }
 
 async function generateStory(dataObjects, questionDiv) {
