@@ -729,6 +729,8 @@
 
   /* ── Session complete ───────────────────────────────────────────────────── */
   function showComplete() {
+    $id('fc-session-bar').style.width = '100%';   // renderCard() leaves it at (n-1)/n on the last card
+    $id('fc-session-count').textContent = `${fc.cards.length} / ${fc.cards.length}`;
     $id('fc-scene').style.display = 'none';
     $id('fc-actions').style.display = 'none';
 
