@@ -506,18 +506,18 @@ async function handleAdminUsers(request, env) {
  *   mistral-small 11/15 (ignores the 5-sentence limit), llama-3.1-8b-fp8 7/15. gemma-4 is a
  *   reasoning model (empty reply — all tokens spent thinking); eurollm-9b is not enabled
  *   on this account; llama-3.1-8b-instruct was deprecated 2026-05-30.
- * Cost: input ~200 tok ≈ 5 Neurons + output <= STORY_MAX_TOKENS (400) ≈ 31 Neurons
- *   → <= ~36 Neurons per story (typical ~24), so 150 stories/day <= ~5,400 of the 10,000 free.
+ * Cost (35 words, ~10 sentences): input ~250 tok ≈ 6 Neurons + output <= STORY_MAX_TOKENS (900)
+ *   ≈ 70 Neurons → <= ~76 per story (typical ~35), so 120 stories/day <= ~9,100 of the 10,000 free.
  * Counters are read-then-write on Upstash (not atomic) — fine for soft limits.
  */
-const STORY_WORDS_MAX      = 20;
+const STORY_WORDS_MAX      = 40;
 const STORY_WORD_LEN       = 40;
 const STORY_IP_RL_TTL      = 10;     // seconds between requests per IP
 const STORY_IP_DAY_MAX     = 40;
-const STORY_GLOBAL_DAY_MAX = 150;
+const STORY_GLOBAL_DAY_MAX = 120;
 const STORY_DAY_TTL        = 86400;
-const STORY_MAX_TOKENS     = 400;    // output ceiling; a normal story (NL + EN) is ~200-250 tokens
-const STORY_MAX_CHARS      = 1600;   // ~4 chars/token — trims anything the model still overshoots
+const STORY_MAX_TOKENS     = 900;    // output ceiling; a 35-word story (~10 sentences, NL + EN) is ~350-450 tokens
+const STORY_MAX_CHARS      = 3600;   // ~4 chars/token — trims anything the model still overshoots
 const STORY_DEFAULT_MODEL  = '@cf/meta/llama-4-scout-17b-16e-instruct';
 
 async function handleStory(request, env) {
@@ -545,6 +545,9 @@ async function handleStory(request, env) {
   if (ipDayN >= STORY_IP_DAY_MAX)         return reply({ error: 'Te veel verhalen vandaag.' }, 429, origin);
   if (globalN >= STORY_GLOBAL_DAY_MAX)    return reply({ error: 'Daily AI limit reached' }, 503, origin);
 
+  // ~1 sentence per 3.5 words: 15 words → 5 sentences, 35 words → 10 (never fewer than 5 or more than 12)
+  const sentences = Math.min(12, Math.max(5, Math.round(words.length / 3.5)));
+
   let raw, out;
   try {
     out = await env.AI.run(env.STORY_MODEL || STORY_DEFAULT_MODEL, {
@@ -553,7 +556,7 @@ async function handleStory(request, env) {
             'Je bent een Nederlandse taaldocent. Schrijf eenvoudig Nederlands (niveau A1-A2). ' +
             'Geef ALLEEN de tekst terug: geen markdown, geen titel, geen uitleg en geen quotes.' },
         { role: 'user', content:
-            `Schrijf een kort Nederlands verhaal van 5 korte zinnen (maximaal 12 woorden per zin) met deze woorden: ${words.join(', ')}.\n` +
+            `Schrijf een kort Nederlands verhaal van ${sentences} korte zinnen (maximaal 12 woorden per zin) met deze woorden: ${words.join(', ')}.\n` +
             'Zet daarna op een nieuwe regel de Engelse vertaling van het verhaal tussen [ ].' },
       ],
       max_tokens:  STORY_MAX_TOKENS,

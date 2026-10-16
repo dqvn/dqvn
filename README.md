@@ -427,13 +427,13 @@ CSS: blue left accent bar (desktop) + light blue background tint (mobile).
 
 ## AI Story Generator — `assets/js/game.js` + `worker/index.js`
 
-When a word-game session starts, `generateStory()` POSTs the session's words to the `nl-sync` Worker (`POST /story`). The Worker asks **Cloudflare Workers AI** (model from `STORY_MODEL` in `worker/wrangler.toml`, default `@cf/meta/llama-4-scout-17b-16e-instruct` — picked after comparing models on the same 15 words; see the comment above `handleStory`) for a 5-sentence Dutch story plus an English translation in `[ … ]`. Free plan: 10,000 Neurons/day, no API key (the `[ai]` binding). Replaces the old Puter integration.
+When a word-game session starts, `generateStory()` POSTs **35 words** to the `nl-sync` Worker (`POST /story`): the 15 words of the session plus 20 random others from the same lesson (`pickStoryWords()`; the game itself stays at 15 questions). The Worker asks **Cloudflare Workers AI** (model from `STORY_MODEL` in `worker/wrangler.toml`, default `@cf/meta/llama-4-scout-17b-16e-instruct` — picked after comparing models on the same 15 words; see the comment above `handleStory`) for a Dutch story (about 1 sentence per 3.5 words — 10 sentences for 35 words) plus an English translation in `[ … ]`. Free plan: 10,000 Neurons/day, no API key (the `[ai]` binding). Replaces the old Puter integration.
 
 - Dutch and English blocks are split at the `[` bracket and rendered with two `<br>` elements between them (safe DOM text nodes, no `innerHTML` with AI content). Falls back to plain `textContent` if the model omits the bracket.
 - On any failure (offline, 429/503 limits) the story area stays empty and the game works as normal. A story that arrives after the game moved on to a new word set is discarded.
-- Worker protection (no login needed): words sanitised and capped (20 × 40 chars); per-IP 1 request / 10 s and 40 / day; global 150 / day (`STORY_*` constants in `worker/index.js`) so the free allowance can't be burned by strangers. Only successful generations count.
-- Token budget: output capped at `STORY_MAX_TOKENS = 400` (reply trimmed to 1,600 chars) and the prompt asks for short sentences (≤ 12 words). For the default Llama 4 Scout ($0.27/M input, $0.85/M output; 1 Neuron = $0.000011) that is ≤ ~36 Neurons per story (typical ~24), so the 150/day global cap uses ≤ ~5,400 of the 10,000 free Neurons.
-- **Deploy:** `cd worker && wrangler deploy` (the `[ai]` binding is picked up from `wrangler.toml`; no new secret). Tune the caps to the model you choose.
+- Worker protection (no login needed): words sanitised and capped (40 × 40 chars); per-IP 1 request / 10 s and 40 / day; global 120 / day (`STORY_*` constants in `worker/index.js`) so the free allowance can't be burned by strangers. Only successful generations count.
+- Token budget: output capped at `STORY_MAX_TOKENS = 900` (reply trimmed to 3,600 chars) and the prompt asks for short sentences (≤ 12 words). For the default Llama 4 Scout ($0.27/M input, $0.85/M output; 1 Neuron = $0.000011) a 35-word story is ≤ ~76 Neurons (typical ~35), so the 120/day global cap uses ≤ ~9,100 of the 10,000 free Neurons.
+- **Deploy:** `cd worker && wrangler deploy` (the `[ai]` binding is picked up from `wrangler.toml`; no new secret). Try it with `node tools/story-test.mjs` (35 random words).
 
 ---
 
