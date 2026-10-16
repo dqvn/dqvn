@@ -478,13 +478,29 @@ function speakText(text) {
     try { window.speechSynthesis.speak(speech); } catch (e) { console.error('[TTS] speak failed:', e); }
 }
 
+/* English voice for the meaning/translation. Prefer natural online voices, then
+   any en-US, en-GB, other en-*; skip espeak-ng "+variants". Never fall back to a
+   non-English voice (voices[0] is alphabetical → e.g. an Afrikaans voice on Linux). */
+function getPreferredEnglishVoice() {
+    const en = window.speechSynthesis.getVoices()
+        .filter(v => /^en([-_]|$)/i.test(v.lang) && !v.name.includes('+'));
+    const lang = l => v => v.lang.replace('_', '-').toLowerCase() === l;
+    return en.find(v => /Microsoft (Aria|Jenny|Guy) Online/i.test(v.name) && lang('en-us')(v))
+        || en.find(v => /Google US English/i.test(v.name))
+        || en.find(v => /Online \(Natural\)/i.test(v.name) && lang('en-us')(v))
+        || en.find(lang('en-us'))
+        || en.find(lang('en-gb'))
+        || en[0]
+        || null;
+}
+
 function speakEngText(text) {
     if (!isTTSEnglishEnabled()) return;
     if (window.speechSynthesis.speaking) window.speechSynthesis.cancel();
     window.speechSynthesis.resume();
     const speech = _buildUtterance(text, TTSLangENG, 0.9, 1);
-    const voices = window.speechSynthesis.getVoices();
-    if (voices.length) speech.voice = voices[0];
+    const engVoice = getPreferredEnglishVoice();
+    if (engVoice) speech.voice = engVoice;
     speech.onerror = e => { if (e.error !== 'canceled') console.error('[TTS] error:', e.error); };
     try { window.speechSynthesis.speak(speech); } catch (e) { console.error('[TTS] speak failed:', e); }
 }
@@ -540,8 +556,8 @@ async function speakEngTextAsync(text) {
 
     return new Promise(resolve => {
         const speech = _buildUtterance(text, TTSLangENG, 0.9, 1);
-        const voices = window.speechSynthesis.getVoices();
-        if (voices.length) speech.voice = voices[0];
+        const engVoice = getPreferredEnglishVoice();
+        if (engVoice) speech.voice = engVoice;
 
         const guard = setTimeout(() => { window.speechSynthesis.cancel(); resolve(); }, TTS_MAX_MS);
         const done  = () => { clearTimeout(guard); resolve(); };
