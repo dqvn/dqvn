@@ -6,7 +6,7 @@ compatibility_date = "2024-11-01"
 [vars]
 GOOGLE_CLIENT_ID = "813394172048-mn81bvhivheomlm3453on49f5gbp31so.apps.googleusercontent.com"
 # Workers AI model for POST /story (see handleStory in index.js)
-STORY_MODEL      = "@cf/meta/llama-3.1-8b-instruct"
+STORY_MODEL      = "@cf/meta/llama-4-scout-17b-16e-instruct"
 
 # ── Workers AI (free: 10,000 Neurons/day) — no secret needed ─────────────
 [ai]
