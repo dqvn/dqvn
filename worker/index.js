@@ -507,7 +507,7 @@ async function handleAdminUsers(request, env) {
  *   reasoning model (empty reply — all tokens spent thinking); eurollm-9b is not enabled
  *   on this account; llama-3.1-8b-instruct was deprecated 2026-05-30.
  * Cost (35 words, ~10 sentences): input ~250 tok ≈ 6 Neurons + output <= STORY_MAX_TOKENS (900)
- *   ≈ 70 Neurons → <= ~76 per story (typical ~35), so 120 stories/day <= ~9,100 of the 10,000 free.
+ *   ≈ 70 Neurons → <= ~76 per story (typical ~45), so 120 stories/day <= ~9,100 of the 10,000 free.
  * Counters are read-then-write on Upstash (not atomic) — fine for soft limits.
  */
 const STORY_WORDS_MAX      = 40;
@@ -545,8 +545,11 @@ async function handleStory(request, env) {
   if (ipDayN >= STORY_IP_DAY_MAX)         return reply({ error: 'Te veel verhalen vandaag.' }, 429, origin);
   if (globalN >= STORY_GLOBAL_DAY_MAX)    return reply({ error: 'Daily AI limit reached' }, 503, origin);
 
-  // ~1 sentence per 3.5 words: 15 words → 5 sentences, 35 words → 10 (never fewer than 5 or more than 12)
+  // ~1 sentence per 3.5 words: 15 words → 5 sentences, 35 words → 10 (never fewer than 5 or more than 12).
+  // In practice the model often writes more, shorter sentences — the point is that it uses every word.
   const sentences = Math.min(12, Math.max(5, Math.round(words.length / 3.5)));
+
+  const perSentence = Math.ceil(words.length / sentences);   // words to pack into each sentence
 
   let raw, out;
   try {
@@ -556,7 +559,8 @@ async function handleStory(request, env) {
             'Je bent een Nederlandse taaldocent. Schrijf eenvoudig Nederlands (niveau A1-A2). ' +
             'Geef ALLEEN de tekst terug: geen markdown, geen titel, geen uitleg en geen quotes.' },
         { role: 'user', content:
-            `Schrijf een kort Nederlands verhaal van ${sentences} korte zinnen (maximaal 12 woorden per zin) met deze woorden: ${words.join(', ')}.\n` +
+            `Schrijf een kort Nederlands verhaal van ${sentences} zinnen (maximaal 20 woorden per zin). ` +
+            `Gebruik ALLE ${words.length} woorden uit de lijst, ongeveer ${perSentence} woorden per zin, zonder er een over te slaan: ${words.join(', ')}.\n` +
             'Zet daarna op een nieuwe regel de Engelse vertaling van het verhaal tussen [ ].' },
       ],
       max_tokens:  STORY_MAX_TOKENS,

@@ -432,7 +432,7 @@ When a word-game session starts, `generateStory()` POSTs **35 words** to the `nl
 - Dutch and English blocks are split at the `[` bracket and rendered with two `<br>` elements between them (safe DOM text nodes, no `innerHTML` with AI content). Falls back to plain `textContent` if the model omits the bracket.
 - On any failure (offline, 429/503 limits) the story area stays empty and the game works as normal. A story that arrives after the game moved on to a new word set is discarded.
 - Worker protection (no login needed): words sanitised and capped (40 × 40 chars); per-IP 1 request / 10 s and 40 / day; global 120 / day (`STORY_*` constants in `worker/index.js`) so the free allowance can't be burned by strangers. Only successful generations count.
-- Token budget: output capped at `STORY_MAX_TOKENS = 900` (reply trimmed to 3,600 chars) and the prompt asks for short sentences (≤ 12 words). For the default Llama 4 Scout ($0.27/M input, $0.85/M output; 1 Neuron = $0.000011) a 35-word story is ≤ ~76 Neurons (typical ~35), so the 120/day global cap uses ≤ ~9,100 of the 10,000 free Neurons.
+- Token budget: output capped at `STORY_MAX_TOKENS = 900` (reply trimmed to 3,600 chars) and the prompt asks for ~10 sentences (≤ 20 words each) that use ALL the words. For the default Llama 4 Scout ($0.27/M input, $0.85/M output; 1 Neuron = $0.000011) a 35-word story is ≤ ~76 Neurons (typical ~45), so the 120/day global cap uses ≤ ~9,100 of the 10,000 free Neurons.
 - **Deploy:** `cd worker && wrangler deploy` (the `[ai]` binding is picked up from `wrangler.toml`; no new secret). Try it with `node tools/story-test.mjs` (35 random words).
 
 ---
