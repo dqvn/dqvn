@@ -433,6 +433,7 @@ When a word-game session starts, `generateStory()` POSTs **10 words** to the `nl
 - On any failure (offline, 429/503 limits) the story area stays empty and the game works as normal. A story that arrives after the game moved on to a new word set is discarded.
 - Worker protection (no login needed): words sanitised and capped (15 × 40 chars); per-IP 1 request / 10 s and 40 / day; global 150 / day (`STORY_*` constants in `worker/index.js`) so the free allowance can't be burned by strangers. Only successful generations count.
 - Token budget: output capped at `STORY_MAX_TOKENS = 350` (reply trimmed to 1,200 chars). For the default Llama 4 Scout ($0.27/M input, $0.85/M output; 1 Neuron = $0.000011) a story is ≤ ~31 Neurons (typical ~15), so the 150/day global cap uses ≤ ~4,700 of the 10,000 free Neurons.
+- Model choice: Scout kept after comparing llama-3.3-70b and mistral-small-3.1-24b on the same word sets (see the comment above `handleStory`). Switch with `STORY_MODEL` in `worker/wrangler.toml`. `STORY_IP_DAY_MAX` (Worker variable) optionally overrides the per-IP daily limit, e.g. for testing.
 - **Deploy:** `cd worker && wrangler deploy` (the `[ai]` binding is picked up from `wrangler.toml`; no new secret). Try it with `node tools/story-test.mjs` (10 random words).
 
 ---

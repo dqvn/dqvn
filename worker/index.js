@@ -7,6 +7,7 @@
  *
  * Secrets  : UPSTASH_URL, UPSTASH_TOKEN, OWNER_EMAIL  (wrangler secret put <NAME>)
  * Variables: GOOGLE_CLIENT_ID, STORY_MODEL              (wrangler.toml [vars])
+ *            STORY_IP_DAY_MAX (optional override of the per-IP daily story limit)
  * Binding  : AI  (Workers AI, wrangler.toml [ai]) — used by POST /story
  */
 
@@ -502,7 +503,11 @@ async function handleAdminUsers(request, env) {
  *     Workers AI allowance (10,000 Neurons/day) — on 429/503 the game simply
  *     shows no story. Tune the caps to the model you choose.
  * Model: llama-4-scout-17b-16e-instruct ($0.27/M input, $0.85/M output; 1 Neuron = $0.000011).
- *   Compared on the same 15 words (Oct 2026): scout used 13/15, llama-3.3-70b 10/15,
+ *   Re-checked on the 10-word / 50-word prompt (3 word sets): scout stays under 50 words and uses the
+ *   words best; llama-3.3-70b-fp8-fast writes run-on, ungrammatical sentences; mistral-small-3.1-24b
+ *   has the nicest prose but drops words and went over 50 words once. Telling the model to conjugate
+ *   the words made grammar worse. A bigger model does not fix forcing 10 unrelated words into 50.
+ *   Compared on the same 15 words (Oct 2026), old prompt: scout used 13/15, llama-3.3-70b 10/15,
  *   mistral-small 11/15 (ignores the 5-sentence limit), llama-3.1-8b-fp8 7/15. gemma-4 is a
  *   reasoning model (empty reply — all tokens spent thinking); eurollm-9b is not enabled
  *   on this account; llama-3.1-8b-instruct was deprecated 2026-05-30.
@@ -544,7 +549,7 @@ async function handleStory(request, env) {
   const [ipDayN, globalN] = await Promise.all([
     redisGet(...redis, ipDayKey), redisGet(...redis, globalKey),
   ]).then(r => r.map(v => Number(v) || 0));
-  if (ipDayN >= STORY_IP_DAY_MAX)         return reply({ error: 'Te veel verhalen vandaag.' }, 429, origin);
+  if (ipDayN >= (Number(env.STORY_IP_DAY_MAX) || STORY_IP_DAY_MAX))         return reply({ error: 'Te veel verhalen vandaag.' }, 429, origin);
   if (globalN >= STORY_GLOBAL_DAY_MAX)    return reply({ error: 'Daily AI limit reached' }, 503, origin);
 
   let raw, out;
@@ -555,7 +560,7 @@ async function handleStory(request, env) {
             'Je bent een Nederlandse taaldocent. Schrijf eenvoudig Nederlands (niveau A1-A2). ' +
             'Geef ALLEEN de tekst terug: geen markdown, geen titel, geen uitleg en geen quotes.' },
         { role: 'user', content:
-            `Schrijf een kort, samenhangend Nederlands verhaal (maximaal ${STORY_TEXT_WORDS} woorden in totaal). ` +
+            `Schrijf een kort, samenhangend Nederlands verhaal van 5 tot 7 korte, grammaticaal correcte zinnen (maximaal ${STORY_TEXT_WORDS} woorden in totaal). ` +
             'Geef de hoofdpersoon een naam en een klein probleem dat aan het einde wordt opgelost. ' +
             `Gebruik ALLE ${words.length} woorden uit de lijst, zonder er een over te slaan: ${words.join(', ')}.\n` +
             'Zet daarna op een nieuwe regel de Engelse vertaling van het verhaal tussen [ ].' },
