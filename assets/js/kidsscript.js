@@ -137,7 +137,8 @@ function getPreferredVoice() {
 function _populateVoiceSelector() {
   const sel = document.getElementById('tts-voice-select');
   if (!sel) return;
-  const dutch = window.speechSynthesis.getVoices().filter(v => v.lang.startsWith('nl'));
+  // Skip espeak-ng "Dutch+Adam"-style variants (Linux lists ~100 of them)
+  const dutch = window.speechSynthesis.getVoices().filter(v => v.lang.startsWith('nl') && !v.name.includes('+'));
   const saved = localStorage.getItem(TTS_VOICE_KEY);
   sel.innerHTML = '';
   if (!dutch.length) {
