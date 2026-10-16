@@ -501,9 +501,13 @@ async function handleAdminUsers(request, env) {
  *   - global: STORY_GLOBAL_DAY_MAX per day, so strangers cannot burn the free
  *     Workers AI allowance (10,000 Neurons/day) — on 429/503 the game simply
  *     shows no story. Tune the caps to the model you choose.
- * Cost (llama-3.1-8b-instruct: 25,608 Neurons/M input, 75,147 Neurons/M output):
- *   input ~200 tok ≈ 5 Neurons + output <= STORY_MAX_TOKENS (400) ≈ 30 Neurons
- *   → <= ~35 Neurons per story, so 150 stories/day <= ~5,300 of the 10,000 free.
+ * Model: llama-4-scout-17b-16e-instruct ($0.27/M input, $0.85/M output; 1 Neuron = $0.000011).
+ *   Compared on the same 15 words (Oct 2026): scout used 13/15, llama-3.3-70b 10/15,
+ *   mistral-small 11/15 (ignores the 5-sentence limit), llama-3.1-8b-fp8 7/15. gemma-4 is a
+ *   reasoning model (empty reply — all tokens spent thinking); eurollm-9b is not enabled
+ *   on this account; llama-3.1-8b-instruct was deprecated 2026-05-30.
+ * Cost: input ~200 tok ≈ 5 Neurons + output <= STORY_MAX_TOKENS (400) ≈ 31 Neurons
+ *   → <= ~36 Neurons per story (typical ~24), so 150 stories/day <= ~5,400 of the 10,000 free.
  * Counters are read-then-write on Upstash (not atomic) — fine for soft limits.
  */
 const STORY_WORDS_MAX      = 20;
@@ -514,7 +518,7 @@ const STORY_GLOBAL_DAY_MAX = 150;
 const STORY_DAY_TTL        = 86400;
 const STORY_MAX_TOKENS     = 400;    // output ceiling; a normal story (NL + EN) is ~200-250 tokens
 const STORY_MAX_CHARS      = 1600;   // ~4 chars/token — trims anything the model still overshoots
-const STORY_DEFAULT_MODEL  = '@cf/meta/llama-3.1-8b-instruct';
+const STORY_DEFAULT_MODEL  = '@cf/meta/llama-4-scout-17b-16e-instruct';
 
 async function handleStory(request, env) {
   const origin = request.headers.get('Origin') || '';
@@ -541,9 +545,9 @@ async function handleStory(request, env) {
   if (ipDayN >= STORY_IP_DAY_MAX)         return reply({ error: 'Te veel verhalen vandaag.' }, 429, origin);
   if (globalN >= STORY_GLOBAL_DAY_MAX)    return reply({ error: 'Daily AI limit reached' }, 503, origin);
 
-  let raw;
+  let raw, out;
   try {
-    const out = await env.AI.run(env.STORY_MODEL || STORY_DEFAULT_MODEL, {
+    out = await env.AI.run(env.STORY_MODEL || STORY_DEFAULT_MODEL, {
       messages: [
         { role: 'system', content:
             'Je bent een Nederlandse taaldocent. Schrijf eenvoudig Nederlands (niveau A1-A2). ' +
@@ -555,11 +559,17 @@ async function handleStory(request, env) {
       max_tokens:  STORY_MAX_TOKENS,
       temperature: 0.7,
     });
-    raw = String(out?.response ?? '').trim().slice(0, STORY_MAX_CHARS);
+    // Older models answer { response }, newer ones OpenAI-style { choices: [{ message: { content } }] }
+    const text = out?.response ?? out?.choices?.[0]?.message?.content ?? '';
+    raw = String(text).trim().slice(0, STORY_MAX_CHARS);
   } catch (e) {
+    console.error('[story] AI error:', e?.message || e);
     return reply({ error: 'AI unavailable' }, 503, origin);   // e.g. free allowance used up
   }
-  if (!raw) return reply({ error: 'Empty story' }, 502, origin);
+  if (!raw) {
+    console.error('[story] empty reply, model output:', JSON.stringify(out).slice(0, 400));
+    return reply({ error: 'Empty story' }, 502, origin);
+  }
 
   // Count only successful generations
   await Promise.all([
