@@ -511,10 +511,10 @@ async function handleAdminUsers(request, env) {
  *   mistral-small 11/15 (ignores the 5-sentence limit), llama-3.1-8b-fp8 7/15. gemma-4 is a
  *   reasoning model (empty reply — all tokens spent thinking); eurollm-9b is not enabled
  *   on this account; llama-3.1-8b-instruct was deprecated 2026-05-30.
- * Story size: STORY_WORDS_MAX (15) learning words in, a Dutch story of at most STORY_TEXT_WORDS (50)
+ * Story size: STORY_WORDS_MAX (15) learning words in, a Dutch story of at most STORY_TEXT_WORDS (70)
  *   words + its English translation out (game.js sends 10 words).
- * Cost: input ~170 tok ≈ 4 Neurons + output <= STORY_MAX_TOKENS (350) ≈ 27 Neurons
- *   → <= ~31 Neurons per story (typical ~15), so 150 stories/day <= ~4,700 of the 10,000 free.
+ * Cost: input ~170 tok ≈ 4 Neurons + output <= STORY_MAX_TOKENS (450) ≈ 35 Neurons
+ *   → <= ~39 Neurons per story (typical ~20), so 150 stories/day <= ~5,900 of the 10,000 free.
  */
 const STORY_WORDS_MAX      = 15;
 const STORY_WORD_LEN       = 40;
@@ -522,9 +522,9 @@ const STORY_IP_RL_TTL      = 10;     // seconds between requests per IP
 const STORY_IP_DAY_MAX     = 40;
 const STORY_GLOBAL_DAY_MAX = 150;
 const STORY_DAY_TTL        = 86400;
-const STORY_TEXT_WORDS     = 50;     // the Dutch story may be at most this many words (asked in the prompt)
-const STORY_MAX_TOKENS     = 350;    // output ceiling; a 50-word story + English translation is ~150-250 tokens
-const STORY_MAX_CHARS      = 1200;   // 50 words NL + EN ≈ 700 chars — trims anything the model still overshoots
+const STORY_TEXT_WORDS     = 70;     // the Dutch story may be at most this many words (asked in the prompt)
+const STORY_MAX_TOKENS     = 450;    // output ceiling; a 70-word story + English translation is ~200-330 tokens
+const STORY_MAX_CHARS      = 1600;   // 70 words NL + EN ≈ 950 chars — trims anything the model still overshoots
 const STORY_DEFAULT_MODEL  = '@cf/meta/llama-4-scout-17b-16e-instruct';
 
 async function handleStory(request, env) {
@@ -560,7 +560,7 @@ async function handleStory(request, env) {
             'Je bent een Nederlandse taaldocent. Schrijf eenvoudig Nederlands (niveau A1-A2). ' +
             'Geef ALLEEN de tekst terug: geen markdown, geen titel, geen uitleg en geen quotes.' },
         { role: 'user', content:
-            `Schrijf een kort, samenhangend Nederlands verhaal van 5 tot 7 korte, grammaticaal correcte zinnen (maximaal ${STORY_TEXT_WORDS} woorden in totaal). ` +
+            `Schrijf een kort, samenhangend Nederlands verhaal van 7 tot 10 korte, grammaticaal correcte zinnen (maximaal ${STORY_TEXT_WORDS} woorden in totaal). ` +
             'Geef de hoofdpersoon een naam en een klein probleem dat aan het einde wordt opgelost. ' +
             `Gebruik ALLE ${words.length} woorden uit de lijst, zonder er een over te slaan: ${words.join(', ')}.\n` +
             'Zet daarna op een nieuwe regel de Engelse vertaling van het verhaal tussen [ ].' },
