@@ -159,6 +159,8 @@ button:focus-visible, select:focus-visible { outline: 3px solid var(--accent); o
   transition: transform .12s, background .15s, border-color .15s;
 }
 .w:active { transform: scale(.94); }
+.w .w-snd { flex: 0 0 auto; margin-left: .3em; font-size: .55em; line-height: 1; padding: 4px; border-radius: 8px; opacity: .65; cursor: pointer; letter-spacing: 0; }
+.w .w-snd:hover { opacity: 1; background: var(--accent-glow); }
 .w .chars { display: inline-flex; align-items: center; justify-content: center; flex-wrap: wrap; row-gap: 2px; }
 .w .ch.f { color: var(--accent); font-weight: 700; }
 .w .ch.on { background: var(--accent); color: #fff; border-radius: 6px; }
