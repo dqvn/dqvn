@@ -716,10 +716,11 @@ th {
   color: var(--accent) !important;
   font-size: var(--vocab-word-size, 23px) !important;
 }
-/* Mobile default stays close to style.css's original 1.15rem ≈ 18px */
+/* Mobile: the A−/A+ size scaled to 80% (default 23px → ≈18.4px) — the cards are only ~160px wide
+   for the Dutch word, so at the full desktop size long words like "abonnement" broke mid-word */
 @media (max-width: 768px) {
   .dutch-word {
-    font-size: var(--vocab-word-size, 1.15rem) !important;
+    font-size: calc(var(--vocab-word-size, 23px) * .8) !important;
   }
 }
 .dutch-word:hover { color: var(--accent-h, #c2410c) !important; }
@@ -1001,3 +1002,28 @@ th {
 /* English meaning (col 4) uses the same small size as the Vietnamese column
    (which has an inline font-size:.7em in common.js's reloadTable). */
 #word-list.vs-has-imgcol td:nth-child(4) > span { font-size: .7em; }
+
+/* ── Mobile cards: long words / meanings wrap inside their cell instead of breaking the card ──
+   The Dutch cell is flex:1 and the English cell a fixed 40%, but flex items default to
+   min-width:auto, so a long unbroken word (or a long "huis, huizen" list, IPA line or meaning)
+   pushed the card wider than the screen. Let both cells shrink and break long words. */
+@media (max-width: 768px) {
+  #word-list tr { max-width: 100%; }
+  #word-list td:nth-child(2) { padding: 13px 6px 13px 14px; }   /* more room for the word */
+  .dutch-word-row { gap: 4px; }
+  .spell-btn { margin-right: 2px; }
+  #word-list td:nth-child(2),
+  #word-list td:nth-child(3) {
+    min-width: 0;
+    overflow-wrap: break-word;
+  }
+  #word-list td:nth-child(3) { flex: 0 0 36%; max-width: 36%; }
+  #word-list td:nth-child(3) span { overflow-wrap: break-word; }
+  #word-list td:nth-child(3) .vs-pic { max-width: 100%; }
+  #word-list td:nth-child(3) .vs-thumb { max-width: 100%; height: auto; aspect-ratio: 4 / 3; }
+
+  /* Dutch word + 🔤 spell button: the word shrinks and wraps, the button stays put */
+  .dutch-word-row { min-width: 0; max-width: 100%; }
+  .dutch-word-row .dutch-word { min-width: 0; overflow-wrap: break-word; line-height: 1.2; }
+  #word-list td:nth-child(2) span[style] { overflow-wrap: break-word; line-height: 1.3; }
+}
