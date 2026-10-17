@@ -41,6 +41,7 @@
   function applyWordSize(size) {
     $id('fc-word').style.fontSize = size + 'rem';
     // Every other card text (English, Vietnamese, IPA, phonetic, sentences) scales via this CSS variable
+    $id('fc-scene').style.setProperty('--fc-word-size', size + 'rem');   // English meaning uses the same size as the Dutch word
     $id('fc-scene').style.setProperty('--fc-scale', Math.round(size / WORD_SIZE_DEF * 1000) / 1000);
     $id('fc-word-size-dec').disabled = size <= WORD_SIZE_MIN;
     $id('fc-word-size-inc').disabled = size >= WORD_SIZE_MAX;
