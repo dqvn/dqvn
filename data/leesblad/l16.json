@@ -1,0 +1,97 @@
+{
+  "id": "h",
+  "name": "h",
+  "title": "Leesblad h",
+  "source": "Groep 3 | leesblad anker 2 - h",
+  "focus": [
+    "h"
+  ],
+  "steps": [
+    {
+      "type": "words",
+      "title": "Lees de woorden",
+      "cols": 3,
+      "groups": [
+        [
+          "en",
+          "hen",
+          "haan"
+        ],
+        [
+          "hip",
+          "hik",
+          "haak"
+        ],
+        [
+          "hek",
+          "hoek",
+          "hoe"
+        ],
+        [
+          "hik",
+          "hek",
+          "heet"
+        ],
+        [
+          "hip",
+          "hoop",
+          "hoos"
+        ],
+        [
+          "hes",
+          "hees",
+          "hoes"
+        ]
+      ]
+    },
+    {
+      "type": "story",
+      "title": "Lees het verhaal",
+      "scene": "🍲🐈‍⬛👩‍🍳",
+      "lines": [
+        "ik kook soep.",
+        "soep met room.",
+        "ik roer in de soep.",
+        "maar... daar is een haar!",
+        "de haar is... saar!"
+      ]
+    },
+    {
+      "type": "words",
+      "title": "Lees meer woorden",
+      "cols": 3,
+      "groups": [
+        [
+          "soep",
+          "hoes",
+          "haas"
+        ],
+        [
+          "voer",
+          "daar",
+          "dit"
+        ],
+        [
+          "toer",
+          "zoek",
+          "boos"
+        ],
+        [
+          "beest",
+          "roest",
+          "toost"
+        ],
+        [
+          "proest",
+          "praat",
+          "prik"
+        ],
+        [
+          "hoest",
+          "haast",
+          "proost"
+        ]
+      ]
+    }
+  ]
+}

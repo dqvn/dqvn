@@ -2,8 +2,8 @@
 
 One `lNN.json` per photographed reading sheet (leesblad). `leesblad.html` auto-discovers
 `l01.json`, `l02.json`, … by probing until a 404 — drop the file in, nothing else to update.
-File order = learning order (Zoem Start 1-3, then Groep 3 anker 1: r, e, v, p, n, ee, b, oo).
-`l12.json` ("Alfabet") is a synthetic capstone lesson (not a scanned sheet) reviewing every
+File order = learning order (Zoem Start 1-3, then Groep 3 anker 1: r, e, v, p, n, ee, b, oo, then anker 2: t, z, oe, d, h, ij, u, a = l12–l19).
+`l20.json` ("Alfabet") is a synthetic capstone lesson (not a scanned sheet) reviewing every
 letter/klank taught so far — see its own note near the bottom of this file.
 
 ## Schema
@@ -52,10 +52,10 @@ Real audio is preferred over TTS everywhere a grapheme in this map is about to b
 
 A grapheme/word missing from the map (real multi-letter words, mostly) falls back to TTS as before. If a clip 404s (e.g. on a machine without `assets/audio/klanken-nl/`), that lookup fails silently and TTS is used instead — no change needed when adding new lessons unless the new focus grapheme should also get a clip.
 
-## `l12.json` — "Alfabet" (capstone lesson)
+## `l20.json` — "Alfabet" (capstone lesson)
 Not a scanned worksheet: a synthetic review lesson placed last (highest number) so it appears at the end of the tile list. Four `words` steps in academic order for groep 3 — klinkers (a e i o u) → lange klinkers (aa ee ie oo uu) → medeklinkers a-z (b…z) → bijzondere klanken (ch, ng, nk, sch, schr, ei/ij, eu, oe, ui, au/ou, uw). Each `group` = one grapheme **plus 3 real-word examples** (e.g. `["a", "bal", "kat", "tas"]`): the grapheme itself plays straight from `sounds.json` (no TTS), the 3 example words are ordinary vocabulary read by TTS (deliberately none of them equal a `sounds.json` key, and none repeats the grapheme itself — checked programmatically when authoring). The auto-generated 4th step ("Welk woord hoor je?") reviews the whole alphabet as a listening quiz.
 
-**`"highlightFirstOfGroup": true`** — a generic `renderWords()` option (any lesson can set it): instead of the usual lesson-wide `focus` list, each *column*'s own first item (`g[0]`, i.e. the grapheme) is used as that column's highlight target for every word rendered in it, via `wordEl(word, focusOverride)`'s optional 2nd parameter. So "circus" under grapheme "c" gets both its c's coloured, "vrijdag" under "ij" gets just the "ij" chunk coloured, etc. — this is what makes the target sound jump out inside each example word. Superseds `highlight`/`focus` for that lesson entirely (l12 no longer sets `highlight: false`, it's moot once `highlightFirstOfGroup` is on).
+**`"highlightFirstOfGroup": true`** — a generic `renderWords()` option (any lesson can set it): instead of the usual lesson-wide `focus` list, each *column*'s own first item (`g[0]`, i.e. the grapheme) is used as that column's highlight target for every word rendered in it, via `wordEl(word, focusOverride)`'s optional 2nd parameter. So "circus" under grapheme "c" gets both its c's coloured, "vrijdag" under "ij" gets just the "ij" chunk coloured, etc. — this is what makes the target sound jump out inside each example word. Superseds `highlight`/`focus` for that lesson entirely (l20 no longer sets `highlight: false`, it's moot once `highlightFirstOfGroup` is on).
 
 (Lessons 1–2 use the sibling mechanism `columnFocus` instead of this one, since their column's *first word* isn't always the bare target letter — see `columnFocus` above, under **Schema**. Both ultimately just set `wordEl()`'s `focusOverride` parameter; pick whichever matches how the lesson's columns are actually structured.)
 

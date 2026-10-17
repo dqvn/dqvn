@@ -1,0 +1,98 @@
+{
+  "id": "u",
+  "name": "u",
+  "title": "Leesblad u",
+  "source": "Groep 3 | leesblad anker 2 - u",
+  "focus": [
+    "u"
+  ],
+  "steps": [
+    {
+      "type": "words",
+      "title": "Lees de woorden",
+      "cols": 3,
+      "groups": [
+        [
+          "bus",
+          "mus",
+          "kus"
+        ],
+        [
+          "zus",
+          "dus",
+          "dun"
+        ],
+        [
+          "uk",
+          "ruk",
+          "tuk"
+        ],
+        [
+          "dun",
+          "hun",
+          "hup"
+        ],
+        [
+          "buk",
+          "bus",
+          "kus"
+        ],
+        [
+          "put",
+          "hut",
+          "hup"
+        ]
+      ]
+    },
+    {
+      "type": "story",
+      "title": "Lees het verhaal",
+      "scene": "🚌👶👧",
+      "lines": [
+        "daar is de bus!",
+        "de bus naar zus.",
+        "zus heet puk.",
+        "daar is uk ook.",
+        "ik kus zus.",
+        "en ik kus uk."
+      ]
+    },
+    {
+      "type": "words",
+      "title": "Lees meer woorden",
+      "cols": 3,
+      "groups": [
+        [
+          "puk",
+          "baan",
+          "bik"
+        ],
+        [
+          "neem",
+          "kaak",
+          "ver"
+        ],
+        [
+          "aan",
+          "been",
+          "baas"
+        ],
+        [
+          "rust",
+          "kust",
+          "sust"
+        ],
+        [
+          "stuk",
+          "stik",
+          "stook"
+        ],
+        [
+          "krijs",
+          "kreek",
+          "druk"
+        ]
+      ]
+    }
+  ]
+}

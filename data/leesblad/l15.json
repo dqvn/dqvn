@@ -1,0 +1,98 @@
+{
+  "id": "d",
+  "name": "d",
+  "title": "Leesblad d",
+  "source": "Groep 3 | leesblad anker 2 - d",
+  "focus": [
+    "d"
+  ],
+  "steps": [
+    {
+      "type": "words",
+      "title": "Lees de woorden",
+      "cols": 3,
+      "groups": [
+        [
+          "dit",
+          "dik",
+          "doek"
+        ],
+        [
+          "door",
+          "daar",
+          "daan"
+        ],
+        [
+          "dik",
+          "dek",
+          "dook"
+        ],
+        [
+          "doen",
+          "daan",
+          "daar"
+        ],
+        [
+          "dip",
+          "doop",
+          "dook"
+        ],
+        [
+          "daas",
+          "daar",
+          "daan"
+        ]
+      ]
+    },
+    {
+      "type": "story",
+      "title": "Lees het verhaal",
+      "scene": "📦🐈‍⬛👧",
+      "lines": [
+        "daar is een doos!",
+        "maar ik mis saar.",
+        "daar is saar!",
+        "saar dook in de doos.",
+        "saar doet raar.",
+        "dit is raar saar!"
+      ]
+    },
+    {
+      "type": "words",
+      "title": "Lees meer woorden",
+      "cols": 3,
+      "groups": [
+        [
+          "zoek",
+          "doen",
+          "voet"
+        ],
+        [
+          "boer",
+          "doos",
+          "zoet"
+        ],
+        [
+          "dik",
+          "roet",
+          "boen"
+        ],
+        [
+          "draak",
+          "droom",
+          "drap"
+        ],
+        [
+          "proest",
+          "pret",
+          "prik"
+        ],
+        [
+          "stroop",
+          "sproet",
+          "strik"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "oe",
+  "name": "oe",
+  "title": "Leesblad oe",
+  "source": "Groep 3 | leesblad anker 2 - oe",
+  "focus": [
+    "oe"
+  ],
+  "steps": [
+    {
+      "type": "words",
+      "title": "Lees de woorden",
+      "cols": 3,
+      "groups": [
+        [
+          "koe",
+          "moe",
+          "moer"
+        ],
+        [
+          "voer",
+          "roer",
+          "toer"
+        ],
+        [
+          "boek",
+          "koek",
+          "zoek"
+        ],
+        [
+          "zoet",
+          "voet",
+          "moet"
+        ],
+        [
+          "zoem",
+          "zoen",
+          "zoet"
+        ],
+        [
+          "zoek",
+          "boek",
+          "boen"
+        ]
+      ]
+    },
+    {
+      "type": "story",
+      "title": "Lees het verhaal",
+      "scene": "📖🐝🍯",
+      "lines": [
+        "toon zoekt een boek.",
+        "aa, een boek!",
+        "een boek met zoem.",
+        "zoem zoekt zoet.",
+        "zoem zoemt bzzz.",
+        "mmm zoet, zoem!"
+      ]
+    },
+    {
+      "type": "words",
+      "title": "Lees meer woorden",
+      "cols": 3,
+      "groups": [
+        [
+          "zes",
+          "toon",
+          "beek"
+        ],
+        [
+          "toen",
+          "soep",
+          "koe"
+        ],
+        [
+          "boer",
+          "boem",
+          "roep"
+        ],
+        [
+          "zoekt",
+          "zoemt",
+          "zeemt"
+        ],
+        [
+          "broek",
+          "troep",
+          "breek"
+        ],
+        [
+          "braak",
+          "zoekt",
+          "kraakt"
+        ]
+      ]
+    }
+  ]
+}
