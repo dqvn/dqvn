@@ -4,10 +4,13 @@
    Theme variables are provided by themes.css (last link).
    ══════════════════════════════════════════════════════ */
 
-/* ── Sidebar colour tokens (always dark navy) ── */
+/* ── Sidebar colour tokens (dark, tinted by the portal theme) ── */
 :root {
-  --vs-sb:     #12192c;
-  --vs-sb-h:   #1c2a42;
+  /* Dark base tinted with the portal theme's accent, so the sidebar follows the chosen theme */
+  --vs-sb:     color-mix(in srgb, var(--accent, #ea580c) 14%, #0d1220);
+  --vs-sb-h:   color-mix(in srgb, var(--accent, #ea580c) 26%, #0d1220);
+  --vs-sb-w:   272px;
+  --vs-sb-rail: 64px;
   --vs-nav-h:  52px;
 }
 
@@ -64,9 +67,9 @@ header#vs-header {
 }
 .vs-back-btn:hover { opacity: .7; }
 
-/* Hamburger — visible only on mobile */
+/* Hamburger — mobile: opens the drawer · desktop: collapses/expands the sidebar */
 .vs-hamburger {
-  display: none;
+  display: flex;
   width: 34px; height: 34px;
   background: rgba(255,255,255,.06);
   border: 1.5px solid var(--border);
@@ -154,13 +157,13 @@ header#vs-header #hide-meaning-btn.hdr-toggle-btn--active {
    4. Sidebar
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 #vs-sidebar {
-  width: 272px;
+  width: var(--vs-sb-w);
   flex-shrink: 0;
   background: var(--vs-sb);
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  transition: transform .32s cubic-bezier(.4,0,.2,1);
+  transition: transform .32s cubic-bezier(.4,0,.2,1), width .25s cubic-bezier(.4,0,.2,1);
 }
 
 /* Drag handle — shown only on mobile */
@@ -235,7 +238,7 @@ header#vs-header #hide-meaning-btn.hdr-toggle-btn--active {
   background: rgba(255,255,255,.1);
 }
 #vs-sidebar #tts-voice-select option {
-  background-color: #1c2a42;
+  background-color: var(--vs-sb-h);
   color: #e2e8f0;
 }
 
@@ -425,11 +428,11 @@ header#vs-header #hide-meaning-btn.hdr-toggle-btn--active {
   border: 1px solid rgba(255,255,255,.08);
 }
 #vs-sidebar .sync-card--busy {
-  background: rgba(234,88,12,.1);
-  border-color: rgba(234,88,12,.28);
+  background: var(--accent-glow);
+  border-color: color-mix(in srgb, var(--accent) 40%, transparent);
 }
 #vs-sidebar .sync-dropdown {
-  background: #1c2a42;
+  background: var(--vs-sb-h);
   border: 1px solid rgba(255,255,255,.1);
   box-shadow: 0 8px 28px rgba(0,0,0,.55);
 }
@@ -437,10 +440,10 @@ header#vs-header #hide-meaning-btn.hdr-toggle-btn--active {
 #vs-sidebar .sync-dd-item:hover { background: rgba(255,255,255,.06); }
 #vs-sidebar .sync-dd-item:disabled { opacity: .35; }
 #vs-sidebar .sync-dd-signout {
-  color: #ff7c38;
+  color: color-mix(in srgb, var(--accent) 70%, #fff);
   border-top-color: rgba(255,255,255,.08);
 }
-#vs-sidebar .sync-dd-signout:hover { background: rgba(234,88,12,.15); }
+#vs-sidebar .sync-dd-signout:hover { background: var(--accent-glow); }
 #vs-sidebar .sync-signin-row { width: 100%; }
 #vs-sidebar .sync-gis-wrap  { justify-content: flex-start; }
 
@@ -471,8 +474,8 @@ header#vs-header #hide-meaning-btn.hdr-toggle-btn--active {
 #vs-sidebar .lm-ft-email:hover { color: var(--accent); }
 #vs-sidebar .lm-ft-year  { color: rgba(255,255,255,.18); }
 #vs-sidebar .lm-ft-avatar {
-  background: linear-gradient(135deg, var(--accent), #c2410c);
-  box-shadow: 0 2px 8px rgba(234,88,12,.4);
+  background: linear-gradient(135deg, var(--accent), var(--accent-h));
+  box-shadow: 0 2px 8px var(--accent-glow);
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -661,14 +664,14 @@ header#vs-header #hide-meaning-btn.hdr-toggle-btn--active {
 
 /* Dropdown that opens from the pill */
 [data-theme="dark"] #vs-header .sync-dropdown {
-  background: #1c2a42;
+  background: var(--vs-sb-h);
   border: 1px solid rgba(255,255,255,.1);
   box-shadow: 0 8px 28px rgba(0,0,0,.55);
 }
 [data-theme="dark"] #vs-header .sync-dd-item       { color: rgba(255,255,255,.72); }
 [data-theme="dark"] #vs-header .sync-dd-item:hover { background: rgba(255,255,255,.07); }
 [data-theme="dark"] #vs-header .sync-dd-signout {
-  color: #ff7c38;
+  color: color-mix(in srgb, var(--accent) 70%, #fff);
   border-top-color: rgba(255,255,255,.08);
 }
 [data-theme="dark"] #vs-header .sync-dd-signout:hover { background: rgba(234,88,12,.15); }
@@ -761,8 +764,6 @@ th {
    9. Mobile (≤ 700px)
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 @media (max-width: 700px) {
-  /* Show hamburger */
-  .vs-hamburger { display: flex; }
 
   /* Sidebar becomes near-fullscreen bottom drawer */
   #vs-sidebar {
@@ -814,10 +815,30 @@ th {
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   10. Desktop: hide hamburger
+   10. Desktop: collapsible sidebar (expanded ↔ icon rail)
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 @media (min-width: 701px) {
-  .vs-hamburger { display: none !important; }
+  body.vs-collapsed #vs-sidebar { width: var(--vs-sb-rail); }
+
+  /* Rail: icons only */
+  body.vs-collapsed .vs-sb-logo { padding: 14px 0 10px; text-align: center; }
+  body.vs-collapsed .vs-sb-logo h2 { font-size: 1.3rem; }
+  body.vs-collapsed .vs-sb-logo h2 .vs-txt,
+  body.vs-collapsed .vs-sb-logo p,
+  body.vs-collapsed .vs-sb-lbl,
+  body.vs-collapsed .vs-sb-courses,
+  body.vs-collapsed #tts-voice-select,
+  body.vs-collapsed #volume-control,
+  body.vs-collapsed #volume-value,
+  body.vs-collapsed .vs-game-btn .vs-txt,
+  body.vs-collapsed #lm-footer .lm-ft-info,
+  body.vs-collapsed #lm-footer .lm-ft-year { display: none !important; }
+
+  body.vs-collapsed .vs-sb-tts { padding: 10px 0 8px; }
+  body.vs-collapsed .vs-vol-row { justify-content: center; }
+  body.vs-collapsed .vs-sb-games { flex-direction: column; padding: 8px; align-items: stretch; }
+  body.vs-collapsed .vs-game-btn { font-size: 1.15rem; padding: 8px 0; }
+  body.vs-collapsed #vs-sidebar #lm-footer { justify-content: center; padding: 10px 0; }
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

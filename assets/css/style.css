@@ -1457,16 +1457,27 @@ button:hover {
     100% { transform: rotate(var(--a)) translateY(var(--dist))   scale(0.3); opacity: 0; }
 }
 
-/* Desktop: the popup is a fixed full-screen layer, so content below the window edge was simply cut
-   off. 10 answer options + the Continue button can be taller than a short window: let the game
-   scroll. Desktop only — on phones the popup itself scrolls, and a max-height on the (column,
-   wrapping) container would push the AI story into a second column off to the right. */
+/* Desktop: the popup is a fixed full-screen layer, so anything below the window edge is cut off.
+   Keep the whole game on one screen with no scrollbar: the 10 answers sit in two columns (5 rows
+   instead of 10), and the container is wider. Desktop only — on phones the popup itself scrolls,
+   and a max-height on the (column, wrapping) container would push the AI story into a second
+   column off to the right. */
 @media (min-width: 769px) {
     #popup #game-container {
+        max-width: 1100px;
         max-height: calc(100dvh - 40px);
-        overflow-y: auto;
-        overscroll-behavior: contain;
+        overflow: visible;
     }
+    #popup #game-logic-wrapper { flex: 1 1 420px; min-width: 300px; }
+    #popup #options {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.4rem;
+        margin: 0.3rem 0;
+    }
+    #popup #options br { display: none; }
+    #popup #options button { padding: 0.35rem 0.6rem; font-size: 1rem; }
+    #popup #continue-btn { margin-top: 0.4rem; }
 }
 
 /* ── Result text animations ── */
