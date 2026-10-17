@@ -7,6 +7,7 @@
   const BASE      = 'data/leesblad/';
   const SND_BASE  = 'assets/audio/klanken-nl/';   // per-grapheme real-voice clips, see sounds.json
   const PROG_KEY  = 'nl_leesblad_v1';        // { <lesson.id>: { seen:[bool], stars:0-3 } }
+  const WORD_ICON_RATE = 0.6;                 // speed of the 🔊 button at the end of each word
   const PREF_KEY  = 'nl_leesblad_prefs';     // { rate, hak }
   const VOICE_KEY = 'nl_tts_voice_v1';       // shared with kids.html / vanstart.html (plain string)
   const RATES     = [0.35, 0.5, 0.75];
@@ -332,6 +333,12 @@
     // written for Vietnamese speakers). Most lessons don't define `hints`.
     const hint = lesson().hints && lesson().hints[word];
     if (hint) { b.classList.add('has-hint'); b.append(el('div', 'hint', hint)); }
+    // 🔊 at the end of the word: just the browser TTS for the whole word, slowly (no letter-by-letter, no clip)
+    const snd = el('span', 'w-snd', '🔊');
+    snd.setAttribute('role', 'button');
+    snd.setAttribute('aria-label', 'Hoor het woord: ' + word);
+    snd.addEventListener('click', e => { e.stopPropagation(); startRun(); utter(sayText(word), WORD_ICON_RATE); });
+    b.append(snd);
     b.addEventListener('click', () => readWord(b, startRun(), prefs.hak));
     return b;
   }
