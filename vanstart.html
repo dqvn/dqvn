@@ -23,7 +23,7 @@
   <header id="vs-header">
     <div class="vs-hdr-left">
       <a href="/dqvn/" class="vs-back-btn" title="Terug naar portaal" aria-label="Terug naar portaal">🏠</a>
-      <button class="vs-hamburger" id="mob-menu-btn" aria-label="Open menu">
+      <button class="vs-hamburger" id="mob-menu-btn" aria-label="Menu" title="Menu" aria-expanded="true">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
@@ -50,7 +50,7 @@
       <div class="sb-drag-handle"></div>
 
       <div class="vs-sb-logo">
-        <h2>🇳🇱 VanStart</h2>
+        <h2>🇳🇱<span class="vs-txt"> VanStart</span></h2>
         <p>NT2 Woordenschat</p>
       </div>
 
@@ -75,8 +75,8 @@
         <!-- Game buttons -->
         <div class="vs-sb-games">
           <div class="vs-sb-lbl">🎮</div>
-          <button id="start-button" class="vs-game-btn">🃏 Woordenspel</button>
-          <button id="flashcard-btn" class="vs-game-btn">📚 Flashcards</button>
+          <button id="start-button" class="vs-game-btn">🃏<span class="vs-txt"> Woordenspel</span></button>
+          <button id="flashcard-btn" class="vs-game-btn">📚<span class="vs-txt"> Flashcards</span></button>
         </div>
 
         <!-- Dutch courses list -->
@@ -140,6 +140,14 @@
 
   <!-- ── Sidebar open/close logic ── -->
   <script>
+    var VS_COLLAPSE_KEY = 'nl_vs_sidebar_collapsed';
+    function isVsMobile() { return window.innerWidth <= 700; }
+    function setVsCollapsed(on) {
+      document.body.classList.toggle('vs-collapsed', on);
+      document.getElementById('mob-menu-btn')?.setAttribute('aria-expanded', String(!on));
+      try { localStorage.setItem(VS_COLLAPSE_KEY, on ? '1' : '0'); } catch (e) {}
+    }
+    try { if (localStorage.getItem(VS_COLLAPSE_KEY) === '1') document.body.classList.add('vs-collapsed'); } catch (e) {}
     function openVsSidebar() {
       document.getElementById('vs-sidebar').classList.add('open');
       document.getElementById('vs-drawer-overlay').classList.add('on');
@@ -150,9 +158,12 @@
     }
 
     document.addEventListener('DOMContentLoaded', function () {
-      // Hamburger opens sidebar
+      // Menu button: opens the drawer on mobile, collapses/expands the sidebar on desktop
       document.getElementById('mob-menu-btn')
-        ?.addEventListener('click', openVsSidebar);
+        ?.addEventListener('click', function () {
+          if (isVsMobile()) openVsSidebar();
+          else setVsCollapsed(!document.body.classList.contains('vs-collapsed'));
+        });
 
       // Close sidebar after selecting a lesson on mobile
       document.getElementById('file-list')
