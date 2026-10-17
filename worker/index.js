@@ -557,7 +557,7 @@ async function handleStory(request, env) {
     out = await env.AI.run(env.STORY_MODEL || STORY_DEFAULT_MODEL, {
       messages: [
         { role: 'system', content:
-            'Je bent een Nederlandse taaldocent. Schrijf eenvoudig Nederlands (niveau A1-A2). ' +
+            'Je bent een Nederlandse taaldocent. Schrijf eenvoudig Nederlands (niveau A2-B1). ' +
             'Geef ALLEEN de tekst terug: geen markdown, geen titel, geen uitleg en geen quotes.' },
         { role: 'user', content:
             `Schrijf een kort, samenhangend Nederlands verhaal van 7 tot 10 korte, grammaticaal correcte zinnen (maximaal ${STORY_TEXT_WORDS} woorden in totaal). ` +
