@@ -2468,7 +2468,7 @@ button:hover {
 .fc-pic-emoji { font-size: clamp(2.6rem, 9vh, 4rem); line-height: 1.1; user-select: none; }
 
 #fc-english {
-    font-size: calc(clamp(1.4rem, 5vw, 3rem) * var(--fc-scale, 1));
+    font-size: var(--fc-word-size, 3.2rem);   /* same size as the Dutch word on the front */
     font-weight: 800;
     color: #16a34a;
     line-height: 1.2;
@@ -3072,7 +3072,6 @@ button:hover {
         overflow-y: auto;
     }
 
-    #fc-english      { font-size: calc(clamp(1.4rem, 8vw, 3rem) * var(--fc-scale, 1)); }
     #fc-vietnamese   { font-size: calc(1.1rem * var(--fc-scale, 1)); }
     #fc-sentence-nl  { font-size: calc(1.4rem * var(--fc-scale, 1)); }
     #fc-sentence-en  { font-size: calc(0.8rem * var(--fc-scale, 1)); }
