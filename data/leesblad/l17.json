@@ -1,0 +1,98 @@
+{
+  "id": "ij",
+  "name": "ij",
+  "title": "Leesblad ij",
+  "source": "Groep 3 | leesblad anker 2 - ij",
+  "focus": [
+    "ij"
+  ],
+  "steps": [
+    {
+      "type": "words",
+      "title": "Lees de woorden",
+      "cols": 3,
+      "groups": [
+        [
+          "rij",
+          "rijp",
+          "rijm"
+        ],
+        [
+          "zij",
+          "mij",
+          "hij"
+        ],
+        [
+          "mij",
+          "bij",
+          "bijt"
+        ],
+        [
+          "ijs",
+          "tijs",
+          "hijs"
+        ],
+        [
+          "rijm",
+          "rij",
+          "rijk"
+        ],
+        [
+          "zij",
+          "rij",
+          "rijp"
+        ]
+      ]
+    },
+    {
+      "type": "story",
+      "title": "Lees het verhaal",
+      "scene": "🍦☂️😎",
+      "lines": [
+        "kijk daar is tijs.",
+        "tijs is raar.",
+        "kijk maar!",
+        "maar tijs is ook rijk",
+        "tijs koopt ijs.",
+        "hij koopt ijs voor mij."
+      ]
+    },
+    {
+      "type": "words",
+      "title": "Lees meer woorden",
+      "cols": 3,
+      "groups": [
+        [
+          "koen",
+          "zijn",
+          "poes"
+        ],
+        [
+          "rijm",
+          "moes",
+          "rijp"
+        ],
+        [
+          "kaap",
+          "naar",
+          "reep"
+        ],
+        [
+          "spijt",
+          "smijt",
+          "smeek"
+        ],
+        [
+          "prijs",
+          "preek",
+          "sproet"
+        ],
+        [
+          "snij",
+          "snoep",
+          "snaar"
+        ]
+      ]
+    }
+  ]
+}

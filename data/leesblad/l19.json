@@ -1,0 +1,98 @@
+{
+  "id": "a",
+  "name": "a",
+  "title": "Leesblad a",
+  "source": "Groep 3 | leesblad anker 2 - a",
+  "focus": [
+    "a"
+  ],
+  "steps": [
+    {
+      "type": "words",
+      "title": "Lees de woorden",
+      "cols": 3,
+      "groups": [
+        [
+          "mam",
+          "sam",
+          "sap"
+        ],
+        [
+          "pas",
+          "pak",
+          "zak"
+        ],
+        [
+          "tas",
+          "das",
+          "pas"
+        ],
+        [
+          "nat",
+          "rat",
+          "zat"
+        ],
+        [
+          "man",
+          "pas",
+          "van"
+        ],
+        [
+          "hap",
+          "map",
+          "kap"
+        ]
+      ]
+    },
+    {
+      "type": "story",
+      "title": "Lees het verhaal",
+      "scene": "🐱🐭👧",
+      "lines": [
+        "mam roept sam",
+        "kijk sam, daar is het nat!",
+        "is dat van kat!",
+        "kan dat, sam?",
+        "ik ben het zat!",
+        "nee, het is van rat"
+      ]
+    },
+    {
+      "type": "words",
+      "title": "Lees meer woorden",
+      "cols": 3,
+      "groups": [
+        [
+          "moet",
+          "zus",
+          "rijp"
+        ],
+        [
+          "roer",
+          "put",
+          "kijk"
+        ],
+        [
+          "soep",
+          "pup",
+          "hij"
+        ],
+        [
+          "kras",
+          "krak",
+          "krat"
+        ],
+        [
+          "brak",
+          "krant",
+          "hark"
+        ],
+        [
+          "roept",
+          "trapt",
+          "strekt"
+        ]
+      ]
+    }
+  ]
+}

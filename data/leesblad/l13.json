@@ -1,0 +1,97 @@
+{
+  "id": "z",
+  "name": "z",
+  "title": "Leesblad z",
+  "source": "Groep 3 | leesblad anker 2 - z",
+  "focus": [
+    "z"
+  ],
+  "steps": [
+    {
+      "type": "words",
+      "title": "Lees de woorden",
+      "cols": 3,
+      "groups": [
+        [
+          "zit",
+          "zet",
+          "zes"
+        ],
+        [
+          "zin",
+          "zoon",
+          "zoom"
+        ],
+        [
+          "zeem",
+          "zeep",
+          "zee"
+        ],
+        [
+          "in",
+          "zin",
+          "zoon"
+        ],
+        [
+          "zes",
+          "zet",
+          "zit"
+        ],
+        [
+          "zaak",
+          "zeem",
+          "zeep"
+        ]
+      ]
+    },
+    {
+      "type": "story",
+      "title": "Lees het verhaal",
+      "scene": "⛺👧👦",
+      "lines": [
+        "kaat is in een tent.",
+        "saar is er ook.",
+        "kaat is zes.",
+        "saar ook.",
+        "kaat is met saar."
+      ]
+    },
+    {
+      "type": "words",
+      "title": "Lees meer woorden",
+      "cols": 3,
+      "groups": [
+        [
+          "zeep",
+          "sem",
+          "raar"
+        ],
+        [
+          "saar",
+          "maas",
+          "rik"
+        ],
+        [
+          "raas",
+          "rem",
+          "kaak"
+        ],
+        [
+          "zeemt",
+          "raakt",
+          "tikt"
+        ],
+        [
+          "staan",
+          "stip",
+          "steen"
+        ],
+        [
+          "maakt",
+          "smaakt",
+          "kraamt"
+        ]
+      ]
+    }
+  ]
+}
