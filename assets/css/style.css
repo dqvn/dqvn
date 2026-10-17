@@ -2402,12 +2402,12 @@ button:hover {
 }
 
 #fc-ipa {
-    font-size: 1.25rem;
+    font-size: calc(1.25rem * var(--fc-scale, 1));
     color: rgba(255,255,255,0.75);
     letter-spacing: 0.04em;
 }
 #fc-phonetic {
-    font-size: 1.1rem;
+    font-size: calc(1.1rem * var(--fc-scale, 1));
     color: rgba(255,255,255,0.6);
     font-style: italic;
 }
@@ -2457,7 +2457,7 @@ button:hover {
 .fc-pic-emoji { font-size: clamp(2.6rem, 9vh, 4rem); line-height: 1.1; user-select: none; }
 
 #fc-english {
-    font-size: clamp(1.4rem, 5vw, 3rem);
+    font-size: calc(clamp(1.4rem, 5vw, 3rem) * var(--fc-scale, 1));
     font-weight: 800;
     color: #16a34a;
     line-height: 1.2;
@@ -2468,7 +2468,7 @@ button:hover {
     hyphens: auto;
 }
 #fc-vietnamese {
-    font-size: 1.2rem;
+    font-size: calc(1.2rem * var(--fc-scale, 1));
     color: #6b7280;
     font-style: italic;
 }
@@ -2482,14 +2482,14 @@ button:hover {
 #fc-sentence-nl {
     font-family: 'Caveat', cursive;
     font-weight: 500;
-    font-size: 1.75rem;
+    font-size: calc(1.75rem * var(--fc-scale, 1));
     color: #0369a1;
     line-height: 1.5;
     width: 100%;
     text-align: center;
 }
 #fc-sentence-en {
-    font-size: 0.98rem;
+    font-size: calc(0.98rem * var(--fc-scale, 1));
     color: #6b7280;
     line-height: 1.4;
     font-style: italic;
@@ -3045,8 +3045,8 @@ button:hover {
     }
 
     #fc-word     { font-size: clamp(2.8rem, 12vw, 4.2rem); line-height: 1.05; }
-    #fc-ipa      { font-size: 1.2rem; }
-    #fc-phonetic { font-size: 1rem; }
+    #fc-ipa      { font-size: calc(1.2rem * var(--fc-scale, 1)); }
+    #fc-phonetic { font-size: calc(1rem * var(--fc-scale, 1)); }
     #fc-hint     { font-size: 0.92rem; margin-top: 20px; }
 
     /* ── Back face: fills the card, scrolls if needed ────────── */
@@ -3061,10 +3061,10 @@ button:hover {
         overflow-y: auto;
     }
 
-    #fc-english      { font-size: clamp(1.4rem, 8vw, 3rem); }
-    #fc-vietnamese   { font-size: 1.1rem; }
-    #fc-sentence-nl  { font-size: 1.4rem; }
-    #fc-sentence-en  { font-size: 0.8rem; }
+    #fc-english      { font-size: calc(clamp(1.4rem, 8vw, 3rem) * var(--fc-scale, 1)); }
+    #fc-vietnamese   { font-size: calc(1.1rem * var(--fc-scale, 1)); }
+    #fc-sentence-nl  { font-size: calc(1.4rem * var(--fc-scale, 1)); }
+    #fc-sentence-en  { font-size: calc(0.8rem * var(--fc-scale, 1)); }
 
     /* ── Action buttons: thumb zone at bottom ─────────────────── */
     #fc-actions {
