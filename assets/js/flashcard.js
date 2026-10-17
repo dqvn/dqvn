@@ -19,7 +19,6 @@
   const WORD_SIZE_MAX        = 5.6;
   const WORD_SIZE_STEP       = 0.3;
   const WORD_SIZE_DEF        = 3.2;
-  const ENGLISH_SIZE_RATIO   = 0.6;  // English meaning is shown smaller than the Dutch word (3.2rem → ~1.9rem)
 
   /* ── State ────────────────────────────────────────────────────────────────-- */
   const fc = {
@@ -41,8 +40,8 @@
 
   function applyWordSize(size) {
     $id('fc-word').style.fontSize = size + 'rem';
-    const engEl = $id('fc-english');
-    if (engEl) engEl.style.fontSize = (Math.round(size * ENGLISH_SIZE_RATIO * 100) / 100) + 'rem';
+    // Every other card text (English, Vietnamese, IPA, phonetic, sentences) scales via this CSS variable
+    $id('fc-scene').style.setProperty('--fc-scale', Math.round(size / WORD_SIZE_DEF * 1000) / 1000);
     $id('fc-word-size-dec').disabled = size <= WORD_SIZE_MIN;
     $id('fc-word-size-inc').disabled = size >= WORD_SIZE_MAX;
   }
