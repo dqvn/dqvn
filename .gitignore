@@ -131,3 +131,7 @@ dist
 
 # Cloudflare Wrangler local state / build output
 .wrangler/
+
+# local wrangler secrets (never commit)
+worker/.dev.vars
+.dev.vars
