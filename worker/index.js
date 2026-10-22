@@ -515,6 +515,8 @@ async function handleAdminUsers(request, env) {
  *   prompt asks for correct grammar and lets the model drop a word that does not fit — stories became coherent.
  *   Re-tested bigger models on the free plan: gpt-oss-120b (40 s, wrong words), qwen3.8/gemma-4 (empty reply,
  *   reasoning), llama-3.3-70b (3-sentence story); glm-5.3, deepseek-v4 need the paid plan. scout stays.
+ * Gemini: when the GEMINI_API_KEY secret is set (`wrangler secret put GEMINI_API_KEY`), /story asks
+ *   gemini-3.5-flash first (GEMINI_MODEL var overrides) and falls back to Workers AI on any error.
  * Story size: STORY_WORDS_MAX (15) learning words in, a Dutch story of at most STORY_TEXT_WORDS (70)
  *   words + its English translation out (game.js sends 10 words).
  * Cost: input ~170 tok ≈ 4 Neurons + output <= STORY_MAX_TOKENS (450) ≈ 35 Neurons
@@ -530,6 +532,27 @@ const STORY_TEXT_WORDS     = 70;     // the Dutch story may be at most this many
 const STORY_MAX_TOKENS     = 450;    // output ceiling; a 70-word story + English translation is ~200-330 tokens
 const STORY_MAX_CHARS      = 1600;   // 70 words NL + EN ≈ 950 chars — trims anything the model still overshoots
 const STORY_DEFAULT_MODEL  = '@cf/meta/llama-4-scout-17b-16e-instruct';
+
+const STORY_GEMINI_MODEL = 'gemini-3.5-flash';
+
+/** Gemini generateContent (free tier, API key in the GEMINI_API_KEY secret). Returns the trimmed story text. */
+async function geminiStory(env, system, user) {
+  const model = /^[\w.-]+$/.test(env.GEMINI_MODEL || '') && env.GEMINI_MODEL ? env.GEMINI_MODEL : STORY_GEMINI_MODEL;
+  const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'x-goog-api-key': env.GEMINI_API_KEY },
+    body: JSON.stringify({
+      systemInstruction: { parts: [{ text: system }] },
+      contents: [{ role: 'user', parts: [{ text: user }] }],
+      generationConfig: { temperature: 0.7, maxOutputTokens: 1500 },
+    }),
+    signal: AbortSignal.timeout(20000),
+  });
+  if (!res.ok) throw new Error(`Gemini HTTP ${res.status}: ${(await res.text()).slice(0, 200)}`);
+  const j = await res.json();
+  const text = (j.candidates?.[0]?.content?.parts || []).filter(p => !p.thought).map(p => p.text || '').join('');
+  return text.trim().slice(0, STORY_MAX_CHARS);
+}
 
 async function handleStory(request, env) {
   const origin = request.headers.get('Origin') || '';
@@ -560,25 +583,38 @@ async function handleStory(request, env) {
   if (ipDayN >= (Number(env.STORY_IP_DAY_MAX) || STORY_IP_DAY_MAX))         return reply({ error: 'Te veel verhalen vandaag.' }, 429, origin);
   if (globalN >= STORY_GLOBAL_DAY_MAX)    return reply({ error: 'Daily AI limit reached' }, 503, origin);
 
-  let raw, out;
-  try {
+  const system =
+    'Je bent een zorgvuldige Nederlandse taaldocent. Je schrijft eenvoudig, natuurlijk en foutloos Nederlands (niveau A2-B1). ' +
+    'Elke zin moet grammaticaal kloppen (werkwoordsvormen, woordvolgorde, de/het) en logisch zijn in het dagelijks leven. ' +
+    'Geef ALLEEN de tekst terug: geen markdown, geen titel, geen uitleg en geen quotes.';
+  const user =
+    `Schrijf een kort, samenhangend Nederlands verhaal van 6 tot 9 korte zinnen (maximaal ${STORY_TEXT_WORDS} woorden in totaal) ` +
+    'met een hoofdpersoon met een naam, een klein probleem en een logische oplossing aan het einde.
+' +
+    'Verwerk deze woorden, elk in precies de betekenis die tussen haakjes staat. Je mag een woord buigen ' +
+    '(meervoud, verleden tijd, enz.) zoals goed Nederlands dat vraagt. Past een woord echt niet logisch in het verhaal, ' +
+    'laat het dan weg: een correct verhaal is belangrijker dan alle woorden gebruiken.
+' +
+    items.map(x => x.en ? `- ${x.w} (${x.en})` : `- ${x.w}`).join('
+') + '
+' +
+    'Zet daarna op een nieuwe regel de Engelse vertaling van het verhaal tussen [ ].';
+
+  let raw = '', out, lastErr;
+  // 1) Gemini (better Dutch) when GEMINI_API_KEY is set; 2) Workers AI as the fallback
+  if (env.GEMINI_API_KEY) {
+    try {
+      raw = await geminiStory(env, system, user);
+    } catch (e) {
+      lastErr = e;
+      console.error('[story] Gemini error, falling back to Workers AI:', e?.message || e);
+    }
+  }
+  if (!raw) try {
     // body.model is honoured only when STORY_ALLOW_MODEL=1 (set with `wrangler dev --var`, never deployed) — used by tools/story-test.mjs to compare models
     const model = (env.STORY_ALLOW_MODEL === '1' && /^@cf\/[\w./-]+$/.test(body.model || '')) ? body.model : (env.STORY_MODEL || STORY_DEFAULT_MODEL);
     out = await env.AI.run(model, {
-      messages: [
-        { role: 'system', content:
-            'Je bent een zorgvuldige Nederlandse taaldocent. Je schrijft eenvoudig, natuurlijk en foutloos Nederlands (niveau A2-B1). ' +
-            'Elke zin moet grammaticaal kloppen (werkwoordsvormen, woordvolgorde, de/het) en logisch zijn in het dagelijks leven. ' +
-            'Geef ALLEEN de tekst terug: geen markdown, geen titel, geen uitleg en geen quotes.' },
-        { role: 'user', content:
-            `Schrijf een kort, samenhangend Nederlands verhaal van 6 tot 9 korte zinnen (maximaal ${STORY_TEXT_WORDS} woorden in totaal) ` +
-            'met een hoofdpersoon met een naam, een klein probleem en een logische oplossing aan het einde.\n' +
-            'Verwerk deze woorden, elk in precies de betekenis die tussen haakjes staat. Je mag een woord buigen ' +
-            '(meervoud, verleden tijd, enz.) zoals goed Nederlands dat vraagt. Past een woord echt niet logisch in het verhaal, ' +
-            'laat het dan weg: een correct verhaal is belangrijker dan alle woorden gebruiken.\n' +
-            items.map(x => x.en ? `- ${x.w} (${x.en})` : `- ${x.w}`).join('\n') + '\n' +
-            'Zet daarna op een nieuwe regel de Engelse vertaling van het verhaal tussen [ ].' },
-      ],
+      messages: [{ role: 'system', content: system }, { role: 'user', content: user }],
       max_tokens:  STORY_MAX_TOKENS,
       temperature: 0.7,
     });
@@ -587,7 +623,7 @@ async function handleStory(request, env) {
     raw = String(text).trim().slice(0, STORY_MAX_CHARS);
   } catch (e) {
     console.error('[story] AI error:', e?.message || e);
-    return reply({ error: 'AI unavailable', ...(env.STORY_ALLOW_MODEL === '1' ? { detail: String(e?.message || e).slice(0, 300) } : {}) }, 503, origin);   // e.g. free allowance used up
+    return reply({ error: 'AI unavailable', ...(env.STORY_ALLOW_MODEL === '1' ? { detail: String(e?.message || e).slice(0, 300), gemini: String(lastErr?.message || '').slice(0, 200) } : {}) }, 503, origin);   // e.g. free allowance used up
   }
   if (!raw) {
     console.error('[story] empty reply, model output:', JSON.stringify(out).slice(0, 400));
