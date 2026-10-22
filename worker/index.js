@@ -544,7 +544,7 @@ async function geminiStory(env, system, user) {
     body: JSON.stringify({
       systemInstruction: { parts: [{ text: system }] },
       contents: [{ role: 'user', parts: [{ text: user }] }],
-      generationConfig: { temperature: 0.7, maxOutputTokens: 1500 },
+      generationConfig: { temperature: 0.7, maxOutputTokens: 2500, thinkingConfig: { thinkingLevel: 'minimal' } },
     }),
     signal: AbortSignal.timeout(20000),
   });
@@ -591,8 +591,9 @@ async function handleStory(request, env) {
     `Schrijf een kort, samenhangend Nederlands verhaal van 6 tot 9 korte zinnen (maximaal ${STORY_TEXT_WORDS} woorden in totaal) ` +
     'met een hoofdpersoon met een naam, een klein probleem en een logische oplossing aan het einde.\n' +
     'Verwerk deze woorden, elk in precies de betekenis die tussen haakjes staat. Je mag een woord buigen ' +
-    '(meervoud, verleden tijd, enz.) zoals goed Nederlands dat vraagt. Past een woord echt niet logisch in het verhaal, ' +
-    'laat het dan weg: een correct verhaal is belangrijker dan alle woorden gebruiken.\n' +
+    '(meervoud, verleden tijd, enz.) zoals goed Nederlands dat vraagt. ' +
+    `Gebruik minstens ${Math.max(1, words.length - 2)} van de ${words.length} woorden; laat alleen een woord weg als het echt niet logisch past. ` +
+    'Een foutloos, logisch verhaal is belangrijker dan alle woorden gebruiken. Gebruik een voegwoord als want/omdat alleen op de juiste plek.' + String.fromCharCode(10) +
     items.map(x => x.en ? `- ${x.w} (${x.en})` : `- ${x.w}`).join('\n') + '\n' +
     'Zet daarna op een nieuwe regel de Engelse vertaling van het verhaal tussen [ ].';
 
