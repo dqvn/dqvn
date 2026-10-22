@@ -589,15 +589,11 @@ async function handleStory(request, env) {
     'Geef ALLEEN de tekst terug: geen markdown, geen titel, geen uitleg en geen quotes.';
   const user =
     `Schrijf een kort, samenhangend Nederlands verhaal van 6 tot 9 korte zinnen (maximaal ${STORY_TEXT_WORDS} woorden in totaal) ` +
-    'met een hoofdpersoon met een naam, een klein probleem en een logische oplossing aan het einde.
-' +
+    'met een hoofdpersoon met een naam, een klein probleem en een logische oplossing aan het einde.\n' +
     'Verwerk deze woorden, elk in precies de betekenis die tussen haakjes staat. Je mag een woord buigen ' +
     '(meervoud, verleden tijd, enz.) zoals goed Nederlands dat vraagt. Past een woord echt niet logisch in het verhaal, ' +
-    'laat het dan weg: een correct verhaal is belangrijker dan alle woorden gebruiken.
-' +
-    items.map(x => x.en ? `- ${x.w} (${x.en})` : `- ${x.w}`).join('
-') + '
-' +
+    'laat het dan weg: een correct verhaal is belangrijker dan alle woorden gebruiken.\n' +
+    items.map(x => x.en ? `- ${x.w} (${x.en})` : `- ${x.w}`).join('\n') + '\n' +
     'Zet daarna op een nieuwe regel de Engelse vertaling van het verhaal tussen [ ].';
 
   let raw = '', out, lastErr;
