@@ -511,6 +511,10 @@ async function handleAdminUsers(request, env) {
  *   mistral-small 11/15 (ignores the 5-sentence limit), llama-3.1-8b-fp8 7/15. gemma-4 is a
  *   reasoning model (empty reply — all tokens spent thinking); eurollm-9b is not enabled
  *   on this account; llama-3.1-8b-instruct was deprecated 2026-05-30.
+ * Oct 22 2026: the words are now sent WITH their English meaning (mug = mosquito, boer = farmer) and the
+ *   prompt asks for correct grammar and lets the model drop a word that does not fit — stories became coherent.
+ *   Re-tested bigger models on the free plan: gpt-oss-120b (40 s, wrong words), qwen3.8/gemma-4 (empty reply,
+ *   reasoning), llama-3.3-70b (3-sentence story); glm-5.3, deepseek-v4 need the paid plan. scout stays.
  * Story size: STORY_WORDS_MAX (15) learning words in, a Dutch story of at most STORY_TEXT_WORDS (70)
  *   words + its English translation out (game.js sends 10 words).
  * Cost: input ~170 tok ≈ 4 Neurons + output <= STORY_MAX_TOKENS (450) ≈ 35 Neurons
@@ -534,10 +538,14 @@ async function handleStory(request, env) {
   let body;
   try { body = await request.json(); } catch { return reply({ error: 'Invalid JSON' }, 400, origin); }
 
-  const words = (Array.isArray(body.words) ? body.words : [])
-    .map(w => String(w ?? '').replace(/[^\p{L}\p{N} '\-]/gu, '').trim().slice(0, STORY_WORD_LEN))
-    .filter(Boolean)
+  // words: ["huis", ...] or [{ w: "huis", en: "house" }, ...] — the English meaning tells the model
+  // which sense of an ambiguous word is meant (mug = mosquito, boer = farmer, ijs = ice cream/ice).
+  const clean = v => String(v ?? '').replace(/[^\p{L}\p{N} '\-,;/]/gu, '').trim().slice(0, STORY_WORD_LEN);
+  const items = (Array.isArray(body.words) ? body.words : [])
+    .map(x => (x && typeof x === 'object') ? { w: clean(x.w), en: clean(x.en) } : { w: clean(x), en: '' })
+    .filter(x => x.w)
     .slice(0, STORY_WORDS_MAX);
+  const words = items.map(x => x.w);
   if (!words.length) return reply({ error: 'words is required' }, 400, origin);
 
   const redis = [env.UPSTASH_URL, env.UPSTASH_TOKEN];
@@ -554,15 +562,21 @@ async function handleStory(request, env) {
 
   let raw, out;
   try {
-    out = await env.AI.run(env.STORY_MODEL || STORY_DEFAULT_MODEL, {
+    // body.model is honoured only when STORY_ALLOW_MODEL=1 (set with `wrangler dev --var`, never deployed) — used by tools/story-test.mjs to compare models
+    const model = (env.STORY_ALLOW_MODEL === '1' && /^@cf\/[\w./-]+$/.test(body.model || '')) ? body.model : (env.STORY_MODEL || STORY_DEFAULT_MODEL);
+    out = await env.AI.run(model, {
       messages: [
         { role: 'system', content:
-            'Je bent een Nederlandse taaldocent. Schrijf eenvoudig Nederlands (niveau A2-B1). ' +
+            'Je bent een zorgvuldige Nederlandse taaldocent. Je schrijft eenvoudig, natuurlijk en foutloos Nederlands (niveau A2-B1). ' +
+            'Elke zin moet grammaticaal kloppen (werkwoordsvormen, woordvolgorde, de/het) en logisch zijn in het dagelijks leven. ' +
             'Geef ALLEEN de tekst terug: geen markdown, geen titel, geen uitleg en geen quotes.' },
         { role: 'user', content:
-            `Schrijf een kort, samenhangend Nederlands verhaal van 7 tot 10 korte, grammaticaal correcte zinnen (maximaal ${STORY_TEXT_WORDS} woorden in totaal). ` +
-            'Geef de hoofdpersoon een naam en een klein probleem dat aan het einde wordt opgelost. ' +
-            `Gebruik ALLE ${words.length} woorden uit de lijst, zonder er een over te slaan: ${words.join(', ')}.\n` +
+            `Schrijf een kort, samenhangend Nederlands verhaal van 6 tot 9 korte zinnen (maximaal ${STORY_TEXT_WORDS} woorden in totaal) ` +
+            'met een hoofdpersoon met een naam, een klein probleem en een logische oplossing aan het einde.\n' +
+            'Verwerk deze woorden, elk in precies de betekenis die tussen haakjes staat. Je mag een woord buigen ' +
+            '(meervoud, verleden tijd, enz.) zoals goed Nederlands dat vraagt. Past een woord echt niet logisch in het verhaal, ' +
+            'laat het dan weg: een correct verhaal is belangrijker dan alle woorden gebruiken.\n' +
+            items.map(x => x.en ? `- ${x.w} (${x.en})` : `- ${x.w}`).join('\n') + '\n' +
             'Zet daarna op een nieuwe regel de Engelse vertaling van het verhaal tussen [ ].' },
       ],
       max_tokens:  STORY_MAX_TOKENS,
@@ -573,7 +587,7 @@ async function handleStory(request, env) {
     raw = String(text).trim().slice(0, STORY_MAX_CHARS);
   } catch (e) {
     console.error('[story] AI error:', e?.message || e);
-    return reply({ error: 'AI unavailable' }, 503, origin);   // e.g. free allowance used up
+    return reply({ error: 'AI unavailable', ...(env.STORY_ALLOW_MODEL === '1' ? { detail: String(e?.message || e).slice(0, 300) } : {}) }, 503, origin);   // e.g. free allowance used up
   }
   if (!raw) {
     console.error('[story] empty reply, model output:', JSON.stringify(out).slice(0, 400));

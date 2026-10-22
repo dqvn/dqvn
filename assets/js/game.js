@@ -76,7 +76,7 @@ const STORY_WORDS = 10;
 function pickStoryWords(played) {
     const picks = played.slice();
     shuffle(picks);
-    return picks.slice(0, STORY_WORDS).map(w => w.dutch.split(',')[0].trim());
+    return picks.slice(0, STORY_WORDS).map(w => ({ w: w.dutch.split(',')[0].trim(), en: String(w.english || '').split(/[;/]/)[0].trim() }));
 }
 
 async function generateStory(dataObjects, questionDiv) {

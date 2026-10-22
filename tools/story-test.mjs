@@ -30,13 +30,14 @@ const pick = [...list].sort(() => Math.random() - 0.5).slice(0, Math.min(count, 
 // same transform as game.js generateStory(); WORDS="a,b,c" overrides it (to compare models on the same input)
 const words = process.env.WORDS ? process.env.WORDS.split(',').map(w => w.trim()) : pick.map(w => w.dutch.split(',')[0].trim());
 
+const meaning = Object.fromEntries(list.map(e => [e.dutch.split(',')[0].trim(), String(e.english || '').split(/[;/]/)[0].trim()]));
 console.log(`Lesson ${lesson} — ${words.length} random words:\n  ${words.join(' | ')}\n`);
 
 const t0  = Date.now();
 const res = await fetch(WORKER + '/story', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ words }),
+  body: JSON.stringify({ words: words.map(w => ({ w, en: meaning[w] || '' })), ...(process.env.MODEL ? { model: process.env.MODEL } : {}) }),
 });
 const body = await res.json().catch(() => ({}));
 console.log(`POST ${WORKER}/story → HTTP ${res.status} in ${Date.now() - t0} ms`);
@@ -54,4 +55,4 @@ for (const w of words) {
 console.log(`Words used: ${used.length}/${words.length}` + (missing.length ? `   missing: ${missing.join(' | ')}` : ''));
 const dutch = body.story.split('[')[0];
 const nWords = dutch.trim().split(/\s+/).filter(Boolean).length;
-console.log(`Dutch story: ${nWords} words (max 50)${nWords > 50 ? '  ← TOO LONG' : ''} · total ${body.story.length} chars (cap 1200)`);
+console.log(`Dutch story: ${nWords} words (max 70)${nWords > 70 ? '  ← TOO LONG' : ''} · total ${body.story.length} chars (cap 1600)`);
