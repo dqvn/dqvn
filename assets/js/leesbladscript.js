@@ -68,30 +68,22 @@
   )];
 
   // ── TTS ──────────────────────────────────────────────────────────
-  // Voices offered in the dropdown: every Dutch voice the device exposes — nl-NL first, then nl-BE and any other
-  // nl-* — plus voices whose name says Dutch/Nederlands even when the lang tag is odd ("nl_NL", "nld-NLD"...).
-  const langOf = v => (v.lang || '').replace('_', '-');
-  const isDutch = v => /^nl|^nld/i.test(v.lang || '') || /dutch|nederlands|vlaams/i.test(v.name || '');
-  function dutchVoices() {
-    const rank = v => langOf(v) === 'nl-NL' ? 0 : langOf(v) === 'nl-BE' ? 1 : 2;
-    return window.speechSynthesis.getVoices().filter(isDutch)
-      .sort((x, y) => rank(x) - rank(y) || x.name.localeCompare(y.name));
-  }
-
   function pickVoice() {
-    const voices = dutchVoices();
+    const voices = window.speechSynthesis.getVoices();
     let saved = null;
     try { saved = localStorage.getItem(VOICE_KEY); } catch {}
     return (saved && voices.find(v => v.name === saved))
-        || voices.find(v => v.name.includes('Microsoft Colette Online'))
-        || voices.find(v => v.name.includes('Google Nederlands'))
-        || voices[0]
+        || voices.find(v => v.name.includes('Microsoft Colette Online') && v.lang === 'nl-NL')
+        || voices.find(v => v.name.includes('Google Nederlands') && v.lang === 'nl-NL')
+        || voices.find(v => v.lang === 'nl-NL')
+        || voices.find(v => v.lang === 'nl-BE')
+        || voices.find(v => v.lang.startsWith('nl'))
         || null;
   }
 
   function populateVoices() {
     const sel = $('tts-voice-select');
-    const dutch = dutchVoices();
+    const dutch = window.speechSynthesis.getVoices().filter(v => v.lang.startsWith('nl'));
     voice = pickVoice();
     sel.innerHTML = '';
     if (!dutch.length) {
@@ -99,7 +91,7 @@
       return;
     }
     dutch.forEach(v => {
-      const o = el('option', '', `${langOf(v) === 'nl-BE' ? '🇧🇪' : '🇳🇱'} ${v.localService ? '💻' : '☁️'} ${v.name} (${v.lang})`);
+      const o = el('option', '', `${v.lang === 'nl-BE' ? '🇧🇪' : '🇳🇱'} ${v.localService ? '💻' : '☁️'} ${v.name}`);
       o.value = v.name; sel.append(o);
     });
     if (voice) { sel.value = voice.name; $('tts-name').textContent = '🔊 ' + voice.name; }
@@ -113,7 +105,6 @@
   // "fixed" it. So: if the utterance hasn't started within START_TIMEOUT_MS,
   // reset the engine ourselves and speak it again (once).
   const START_TIMEOUT_MS = 1200;
-  let lastCancelAt = 0;  // when cancelAll() last called speechSynthesis.cancel()
   let curUtter = null;   // strong ref — Chrome can GC an in-flight utterance and then never fire onend
   function utter(text, rate) {
     return new Promise(resolve => {
@@ -153,7 +144,7 @@
         }, START_TIMEOUT_MS);
       };
       guard = setTimeout(fin, START_TIMEOUT_MS * 2 + 3000 + text.length * 250 / rate);   // some engines never fire onend
-      if (ss.speaking || ss.pending || Date.now() - lastCancelAt < 300) {   // stale/stuck queue, or cancelAll() just ran (the 🔊 icon / a word tap) — WebKit drops speak() right after cancel()
+      if (ss.speaking || ss.pending) {   // stale/stuck queue — clear it first
         ss.cancel();
         goLater();
       } else go();
@@ -169,7 +160,6 @@
       const ss = window.speechSynthesis;
       if (ss.speaking || ss.pending) lastTtsAt = Date.now();
       ss.cancel();
-      lastCancelAt = Date.now();
     }
     if (curAudio) { curAudio.pause(); if (curAudioDone) curAudioDone(false); curAudio = null; curAudioDone = null; }
     document.querySelectorAll('.speaking').forEach(n => n.classList.remove('speaking'));
@@ -195,9 +185,7 @@
   const WARM_IDLE_MS  = 15000;   // stop the silent keep-alive after this long without a clip
   let lastTtsAt = 0;
   let warmCtx = null, warmTimer = null;
-  const NO_WARM = /[?&]nowarm=1\b/.test(location.search);   // debug switch: skip the silent keep-alive stream (can mute speech on iOS)
   function warmOutput() {
-    if (NO_WARM) { if (window.lbDebug) window.lbDebug('warmOutput skipped (nowarm=1)'); return; }
     try {
       if (!warmCtx) {
         const AC = window.AudioContext || window.webkitAudioContext;
