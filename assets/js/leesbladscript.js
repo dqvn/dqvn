@@ -68,22 +68,30 @@
   )];
 
   // ── TTS ──────────────────────────────────────────────────────────
+  // Voices offered in the dropdown: every Dutch voice the device exposes — nl-NL first, then nl-BE and any other
+  // nl-* — plus voices whose name says Dutch/Nederlands even when the lang tag is odd ("nl_NL", "nld-NLD"...).
+  const langOf = v => (v.lang || '').replace('_', '-');
+  const isDutch = v => /^nl|^nld/i.test(v.lang || '') || /dutch|nederlands|vlaams/i.test(v.name || '');
+  function dutchVoices() {
+    const rank = v => langOf(v) === 'nl-NL' ? 0 : langOf(v) === 'nl-BE' ? 1 : 2;
+    return window.speechSynthesis.getVoices().filter(isDutch)
+      .sort((x, y) => rank(x) - rank(y) || x.name.localeCompare(y.name));
+  }
+
   function pickVoice() {
-    const voices = window.speechSynthesis.getVoices();
+    const voices = dutchVoices();
     let saved = null;
     try { saved = localStorage.getItem(VOICE_KEY); } catch {}
     return (saved && voices.find(v => v.name === saved))
-        || voices.find(v => v.name.includes('Microsoft Colette Online') && v.lang === 'nl-NL')
-        || voices.find(v => v.name.includes('Google Nederlands') && v.lang === 'nl-NL')
-        || voices.find(v => v.lang === 'nl-NL')
-        || voices.find(v => v.lang === 'nl-BE')
-        || voices.find(v => v.lang.startsWith('nl'))
+        || voices.find(v => v.name.includes('Microsoft Colette Online'))
+        || voices.find(v => v.name.includes('Google Nederlands'))
+        || voices[0]
         || null;
   }
 
   function populateVoices() {
     const sel = $('tts-voice-select');
-    const dutch = window.speechSynthesis.getVoices().filter(v => v.lang.startsWith('nl'));
+    const dutch = dutchVoices();
     voice = pickVoice();
     sel.innerHTML = '';
     if (!dutch.length) {
@@ -91,7 +99,7 @@
       return;
     }
     dutch.forEach(v => {
-      const o = el('option', '', `${v.lang === 'nl-BE' ? '🇧🇪' : '🇳🇱'} ${v.localService ? '💻' : '☁️'} ${v.name}`);
+      const o = el('option', '', `${langOf(v) === 'nl-BE' ? '🇧🇪' : '🇳🇱'} ${v.localService ? '💻' : '☁️'} ${v.name} (${v.lang})`);
       o.value = v.name; sel.append(o);
     });
     if (voice) { sel.value = voice.name; $('tts-name').textContent = '🔊 ' + voice.name; }
