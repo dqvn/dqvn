@@ -105,6 +105,7 @@
   // "fixed" it. So: if the utterance hasn't started within START_TIMEOUT_MS,
   // reset the engine ourselves and speak it again (once).
   const START_TIMEOUT_MS = 1200;
+  let lastCancelAt = 0;  // when cancelAll() last called speechSynthesis.cancel()
   let curUtter = null;   // strong ref — Chrome can GC an in-flight utterance and then never fire onend
   function utter(text, rate) {
     return new Promise(resolve => {
@@ -144,7 +145,7 @@
         }, START_TIMEOUT_MS);
       };
       guard = setTimeout(fin, START_TIMEOUT_MS * 2 + 3000 + text.length * 250 / rate);   // some engines never fire onend
-      if (ss.speaking || ss.pending) {   // stale/stuck queue — clear it first
+      if (ss.speaking || ss.pending || Date.now() - lastCancelAt < 300) {   // stale/stuck queue, or cancelAll() just ran (the 🔊 icon / a word tap) — WebKit drops speak() right after cancel()
         ss.cancel();
         goLater();
       } else go();
@@ -160,6 +161,7 @@
       const ss = window.speechSynthesis;
       if (ss.speaking || ss.pending) lastTtsAt = Date.now();
       ss.cancel();
+      lastCancelAt = Date.now();
     }
     if (curAudio) { curAudio.pause(); if (curAudioDone) curAudioDone(false); curAudio = null; curAudioDone = null; }
     document.querySelectorAll('.speaking').forEach(n => n.classList.remove('speaking'));
