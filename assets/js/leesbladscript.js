@@ -187,7 +187,9 @@
   const WARM_IDLE_MS  = 15000;   // stop the silent keep-alive after this long without a clip
   let lastTtsAt = 0;
   let warmCtx = null, warmTimer = null;
+  const NO_WARM = /[?&]nowarm=1\b/.test(location.search);   // debug switch: skip the silent keep-alive stream (can mute speech on iOS)
   function warmOutput() {
+    if (NO_WARM) { if (window.lbDebug) window.lbDebug('warmOutput skipped (nowarm=1)'); return; }
     try {
       if (!warmCtx) {
         const AC = window.AudioContext || window.webkitAudioContext;
