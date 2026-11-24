@@ -51,6 +51,13 @@ CARDS = {
     "tussenwoord": [L("*Ach", ", jammer!")],
     "artikel": [L("*de", " man"), L("*het", " huis")],
     "zin": [L("*Ik woon in Utrecht.")],
+    # question words
+    "wat": [L("*Wat", " is dit?")],
+    "wie": [L("*Wie", " is dat?")],
+    "waar": [L("*Waar", " woon je?")],
+    "hoe": [L("*Hoe", " heet je?")],
+    "welk": [L("*Welk", " boek?")],
+    "welke": [L("*Welke", " tafel?")],
 }
 
 
