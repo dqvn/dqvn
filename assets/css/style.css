@@ -2450,7 +2450,10 @@ button:hover {
     overflow-y: auto;
     touch-action: none;          /* our JS drag handler owns all gestures */
     overscroll-behavior: contain;
+    scrollbar-width: none;       /* hide the vertical scrollbar (still scrollable by wheel/touch) */
+    -ms-overflow-style: none;
 }
+#fc-back::-webkit-scrollbar { display: none; }
 #fc-back.fc-visible { display: flex; }
 
 /* Word picture on the back of the card (see setCardPicture in flashcard.js) */
