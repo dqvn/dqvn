@@ -24,36 +24,41 @@
     },
     {
       "role": "B",
-      "text": "Precies, perfect weer om buiten te zijn. Ga je vandaag nog iets doen?",
-      "translation": "Exactly, perfect weather to be outside. Are you going to do something today?"
+      "text": "Precies, perfect weer om buiten te zijn.",
+      "translation": "Exactly, perfect weather to be outside."
     },
     {
       "role": "A",
+      "text": "Ga je vandaag nog iets doen?",
+      "translation": "Are you going to do something today?"
+    },
+    {
+      "role": "B",
       "text": "Ja, ik ga straks een wandeling maken.",
       "translation": "Yes, I'm going to take a walk later."
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Goed idee. Ik denk dat ik ook naar het park ga.",
       "translation": "Good idea. I think I'll go to the park too."
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Dat klinkt leuk. Misschien zien we elkaar daar.",
       "translation": "That sounds nice. Maybe we'll see each other there."
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Ja, dat zou gezellig zijn.",
       "translation": "Yes, that would be nice."
     },
     {
-      "role": "A",
+      "role": "B",
       "text": "Geniet van het mooie weer.",
       "translation": "Enjoy the beautiful weather."
     },
     {
-      "role": "B",
+      "role": "A",
       "text": "Dank je, jij ook.",
       "translation": "Thank you, you too."
     }

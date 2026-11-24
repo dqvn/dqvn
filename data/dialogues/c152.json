@@ -8,19 +8,14 @@
   },
   "conversation": [
     {
-      "role": "A",
+      "role": "B",
       "text": "Wanneer gebruik je \"niet\" en wanneer \"geen\"?",
       "translation": "When do you use \"niet\" and when \"geen\"?"
     },
     {
-      "role": "B",
-      "text": "Veel mensen maken hier fouten mee, maar eigenlijk is het heel simpel.",
-      "translation": "Many people make mistakes with this, but it's actually very simple."
-    },
-    {
       "role": "A",
-      "text": "Gebruik \"geen\" bij een zelfstandig naamwoord.",
-      "translation": "Use \"geen\" with a noun."
+      "text": "Veel mensen maken hier fouten mee, maar eigenlijk is het heel simpel. Gebruik \"geen\" bij een zelfstandig naamwoord.",
+      "translation": "Many people make mistakes with this, but it's actually very simple. Use \"geen\" with a noun."
     },
     {
       "role": "B",
